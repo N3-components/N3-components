@@ -1,0 +1,32 @@
+@import "define.less";
+
+.@{prefix-cls}-badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: @whiteColor;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: @weightGrayColor;
+  border-radius: 10px;
+}
+.@{prefix-cls}-btn .@{prefix-cls}-badge {
+  position: relative;
+  top: -1px;
+}
+.@{prefix-cls}-btn-xs .@{prefix-cls}-badge {
+  top: 0;
+  padding: 1px 5px;
+}
+
+.@{prefix-cls}-nav-pills > .@{prefix-cls}-active > a > .@{prefix-cls}-badge {
+  color: @primaryColor;
+  background-color: @whiteColor;
+}
+.@{prefix-cls}-nav-pills > li > a > .@{prefix-cls}-badge {
+  margin-left: 3px;
+}

@@ -1,0 +1,62 @@
+@import "define.less";
+
+.@{prefix-cls}-timepicker{
+  display: inline-block;
+
+  &-slider{
+    margin-top: 20px;
+  }
+  &-popup{
+      position: absolute;
+      border: 1px solid @grayColor;
+      background: @whiteColor;
+      margin-top: 2px;
+      z-index: 1000;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+      padding: 10px 0px 0px;
+      .slider-sin-wrap:after{
+        top:5px;
+      }
+  }
+  
+  &-slider-sin-wrap {
+    float: left;
+    width: 20px;
+    height: 275px;
+    margin: 4px 14px;
+    position: relative;
+
+    &:before {
+      padding-left: 2px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+    &[data-role="hour"] {
+      z-index: 10;
+    }
+    &[data-role="hour"]:before {
+      content: "\65f6";
+    }
+    &[data-role="minute"] {
+      z-index: 9;
+    }
+    &[data-role="minute"]:before {
+      content: "\5206";
+    }
+    &[data-role="second"] {
+      z-index: 8;
+    }
+    &[data-role="second"]:before {
+      content: "\79d2";
+    }
+    &:after {
+      content: ":";
+      position: absolute;
+      top: 27px;
+      left: 32px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}

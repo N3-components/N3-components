@@ -1,0 +1,122 @@
+@import "define.less";
+
+.@{prefix-cls}-switch {
+  width: 68px;
+  height:27px;
+  display: inline-block;
+  direction: ltr;
+  cursor: pointer;
+  border-radius: 30px;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  line-height: 8px;
+  z-index: 0;
+  user-select: none;
+  vertical-align: middle;
+  transition: background ease-in-out 0.15s, box-shadow ease-in-out 0.15s, color ease-in-out 0.15s;
+  background: @primaryColor;
+  color: @whiteColor;
+
+  &-container {
+    width:102px;
+    margin-left: 0px;
+    display: inline-block;
+    top: 0;
+    border-radius: 4px;
+    transform: translate3d(0, 0, 0);
+  }
+  &-handle-on,
+  &-handle-off,
+  &-label {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 28px;
+    padding: 6px 2px 6px 10px;
+    font-size: 14px;
+    line-height: 16px;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+  }
+
+  &-handle-on:after,
+  &-handle-off:after {
+    content: " ";
+    width: 14px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    right: -14px;
+  }
+  &-handle-on {
+    width: 37px;
+    z-index: 98;
+  }
+  &-handle-off {
+    width: 37px;
+    z-index: 97;
+    padding: 6px 10px 6px 0px;
+  }
+  &-handle-off:after {
+    left: -14px;
+  }
+  &-label {
+    height: 28px;
+    padding: 0;
+    position: relative;
+    width: 28px !important;
+    z-index: 100;
+  }
+  &-label:after {
+    transition: 0.25s ease-out;
+    background-color: @whiteColor;
+    border-radius: 50%;
+    content: " ";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0 1px 2px @grayColor;
+  }
+
+  &-on &-handle-on{
+    margin-left:-5px
+  }
+  &-off &-handle-on{
+    margin-left:-43px
+  }
+
+  &-off {
+    background: @lightColor;
+    color: @whiteColor;
+  }
+  &-off &-handle-off&-default {
+    z-index: 99;
+    color: @weightGrayColor;
+  }
+  &-disabled{
+    cursor: default !important;
+  }
+  &-disabled &-handle-on,
+  &-disabled &-handle-off,
+  &-disabled &-label{
+    opacity: 0.5;
+    cursor: default !important;
+  }
+  &-animate &-handle-on {
+    transition: margin-left 0.5s;
+  }
+}
+
+
+
+
+
+
+
+
+

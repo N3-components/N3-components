@@ -1,0 +1,27 @@
+@import "define.less";
+
+.@{prefix-cls}-input-con{
+  .@{prefix-cls}-has-feedback .@{prefix-cls}-form-control-feedback {
+      right: 0px;
+      line-height: 34px;
+  }
+  .@{prefix-cls}-form-control[readonly]{
+    background-color: @whiteColor;
+  }
+  .@{prefix-cls}-form-control[disabled]{
+    background-color: @lightColor;
+  }
+
+  .@{prefix-cls}-form-control[readonly]{
+    cursor: pointer;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .@{prefix-cls}-form-control[disabled]{
+    cursor: not-allowed;
+    &:hover{
+      cursor: not-allowed;
+    }
+  }
+}

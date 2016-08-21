@@ -1,0 +1,111 @@
+@import "define.less";
+
+.@{prefix-cls}-modal-open {
+  overflow: hidden;
+}
+.@{prefix-cls}-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  transition: all 0.3s ease;
+
+  &-in {
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  &-zoom &-dialog {
+    transform: scale(0.1);
+    top: 300px;
+    opacity: 0;
+    transition: all 0.3s;
+	}
+	&-zoom&-in &-dialog {
+	    transform: scale(1);
+	    transform: translate3d(0, -300px, 0);
+	    opacity: 1;
+	}
+	&-fade &-dialog {
+	  transition: transform .3s ease-out;
+	  transform: translate(0, -25%);
+	}
+	&-in &-dialog {
+	  transform: translate(0, 0);
+	}
+	&-open & {
+	  overflow-x: hidden;
+	  overflow-y: auto;
+	}
+	&-dialog {
+	  position: relative;
+	  width: auto;
+	  margin: 30px auto;
+	}
+	&-content {
+	  position: relative;
+	  background-color: @whiteColor;
+	  background-clip: padding-box;
+	  border-radius: 6px;
+	  outline: 0;
+	  box-shadow: none;
+	  border: none;
+	}
+	7-backdrop {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  left: 0;
+	  background-color: @blackColor;
+	}
+	&-backdrop&-fade {
+	  opacity: 0;
+	}
+	&-backdrop&-in {
+	  opacity: .5;
+	}
+	&-header {
+	  min-height: 16.42857143px;
+	  padding: 15px;
+	  background: @primaryColor;
+	  color: @whiteColor;
+	  border-radius: 5px 5px 0 0;
+	  border-bottom: none;
+
+	}
+	&-header .@{prefix-cls}-close {
+	  margin-top: 0px;
+	}
+	&-title {
+	  margin: 0;
+	  line-height: 1.42857143;
+	}
+	&-body {
+	  position: relative;
+	  padding: 15px;
+	}
+	&-footer {
+	  padding: 15px;
+	  text-align: right;
+	  border-top: 1px solid @lightGrayColor;
+	}
+	&-footer .@{prefix-cls}-btn + .@{prefix-cls}-btn {
+	  margin-bottom: 0;
+	  margin-left: 5px;
+	}
+	&-footer .@{prefix-cls}-btn-group .@{prefix-cls}-btn + .@{prefix-cls}-btn {
+	  margin-left: -1px;
+	}
+	&-footer .@{prefix-cls}-btn-block + .@{prefix-cls}-btn-block {
+	  margin-left: 0;
+	}
+}
+
+
+
+

@@ -1,0 +1,120 @@
+@import "define.less";
+
+.@{prefix-cls}-tag-group {
+  margin: 0;
+  margin-bottom: 18px;
+
+  .@{prefix-cls}-tag {
+    display: inline-block;
+    font-weight: normal;
+    padding: 2px 1em;
+    font-size: 12px;
+    line-height: 1.5;
+    color: inherit;
+    border: 1px solid @weightGrayColor;
+    cursor: default;
+    user-select: none;
+    transition: all 0.2s linear;
+    position: relative;
+    margin: 0;
+
+    a[name] {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+  }
+
+  .@{prefix-cls}-tag + .@{prefix-cls}-tag {
+    margin-left: .5em;
+  }
+  .@{prefix-cls}-tag .fa {
+    cursor: pointer;
+    line-height: 100%;
+    position: relative;
+    right: -0.4em;
+    vertical-align: middle;
+    font-size: 120%;
+    font-weight: 100;
+    color: inherit;
+    opacity: .8;
+  }
+
+}
+
+.@{prefix-cls}-tag {
+
+  &-disabled {
+    opacity: .5;
+    cursor: not-allowed;
+    &:hover{
+      color: inherit;
+      border-color: @weightGrayColor;
+    }
+  }
+
+  &-sm &,
+  &-xs & {
+    padding: 0px 1em;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  &-lg &,
+  &-lg & {
+    padding: 4px 1em;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  &-xl &,
+  &-xl & {
+    padding: 5px 1em;
+    font-size: 14px;
+    line-height: 1.429;
+  }
+
+  &-default &,
+  &-default &:hover {
+    color: @weightGrayColor;
+  }
+
+  &-primary &,
+  &-primary &:hover {
+    background: @primaryColor;
+    border-color: @primaryColor;
+    color: white;
+  }
+  
+  &-success &,
+  &-success &:hover {
+    background: @successColor;
+    border-color: @successColor;
+    color: white;
+  }
+ 
+  &-info &,
+  &-info &:hover {
+    background: @infoColor;
+    border-color: @infoColor;
+    color: white;
+  }
+
+  &-warning &,
+  &-warning &:hover {
+    background: @warningColor;
+    border-color: @warningColor;
+    color: white;
+  }
+ 
+  &-danger &,
+  &-danger &:hover {
+    background: @dangerColor;
+    border-color: @dangerColor;
+    color: white;
+  }
+
+}
+
+
+
+

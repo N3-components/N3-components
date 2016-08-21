@@ -1,0 +1,82 @@
+@import "define.less";
+
+.@{prefix-cls}-tooltip {
+  position: absolute;
+  z-index: 1030;
+  display: block;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.4;
+  visibility: visible;
+  opacity: .9;
+
+  &-in {
+    opacity: 0.9;
+  }
+
+  &-top {
+    margin-top: -3px;
+    padding: 5px 0;
+
+    .@{prefix-cls}-tooltip-arrow {
+      bottom: 0;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px 5px 0;
+      border-top-color: @blackColor;
+    }
+  }
+  &-right {
+    margin-left: 3px;
+    padding: 0 5px;
+
+    .@{prefix-cls}-tooltip-arrow {
+      top: 50%;
+      left: 0;
+      margin-top: -5px;
+      border-width: 5px 5px 5px 0;
+      border-right-color: @blackColor;
+    }
+  }
+  &-bottom {
+    margin-top: 3px;
+    padding: 5px 0;
+
+    .@{prefix-cls}-tooltip-arrow {
+      top: 0;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 0 5px 5px;
+      border-bottom-color: @blackColor;
+    }
+  }
+  &-left {
+    margin-left: -3px;
+    padding: 0 5px;
+
+    .@{prefix-cls}-tooltip-arrow {
+      top: 50%;
+      right: 0;
+      margin-top: -5px;
+      border-width: 5px 0 5px 5px;
+      border-left-color: @blackColor;
+    }
+  }
+
+  &-inner {
+    max-width: 200px;
+    padding: 9px 11px;
+    color: @whiteColor;
+    text-align: left;
+    background-color: @blackColor;
+    border-radius: 4px;
+  }
+  &-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+}

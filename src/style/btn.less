@@ -1,0 +1,280 @@
+@import "define.less";
+
+.@{prefix-cls}-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  &:focus,
+  &:active:focus,
+  &-active:focus {
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  }
+
+  &:hover,
+  &:focus {
+    color: @fontColor;
+    text-decoration: none;
+  }
+  &:active,
+  &-active {
+    background-image: none;
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  }
+  &-disabled,
+  &[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: .65;
+  }
+
+  &-default {
+    color: @fontColor;
+    background-clip: padding-box;
+    background-color: @whiteColor;
+    border-color: rgba(150, 160, 180, 0.3);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.@{prefix-cls}-btn-active {
+      color: @weightGrayColor;
+    }
+
+    &:active,
+    &.@{prefix-cls}-btn-active {
+      background-image: none;
+    }
+
+    &.@{prefix-cls}-btn-disabled,
+    &[disabled],
+    &.@{prefix-cls}-btn-disabled:hover,
+    &[disabled]:hover,
+    &.@{prefix-cls}-btn-disabled:focus,
+    &[disabled]:focus,
+    &.@{prefix-cls}-btn-disabled:active,
+    &[disabled]:active,
+    &.@{prefix-cls}-btn-disabled.@{prefix-cls}-btn-active,
+    &[disabled].@{prefix-cls}-btn-active {
+      background-color: @lightGrayColor;
+      border-color: @lightGrayColor;
+    }
+    .@{prefix-cls}-badge {
+      color: @whiteColor;
+      background-color: @fontColor;
+    }
+  }
+
+  &-primary {
+    .btn-type(@whiteColor, @primaryColor, @whiteColor, @primaryColorhover, @primaryColor, @whiteColor)
+  }
+
+  &-success {
+    .btn-type(@whiteColor, @successColor, @whiteColor, @successColorhover, @successColor, @whiteColor)
+  }
+  &-info {
+    .btn-type(@whiteColor, @infoColor, @whiteColor, @infoColorhover, @infoColor, @whiteColor)
+  }
+
+  &-warning {
+    .btn-type(@whiteColor, @warningColor, @whiteColor, @warningColorhover, @warningColor, @whiteColor)
+  }
+
+  &-danger {
+    .btn-type(@whiteColor, @dangerColor, @whiteColor, @dangerColorhover, @dangerColor, @whiteColor)
+  }
+
+}
+
+.@{prefix-cls}-open > .@{prefix-cls}-dropdown-toggle.@{prefix-cls}-btn-default {
+  color: @fontColor;
+  background-image: none;
+}
+
+.btn-type (@c1, @c2, @c3, @c4, @c5, @c6) {
+  color: @c1;
+  background-color: @c2;
+  border-color: @c2;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.@{prefix-cls}-btn-active {
+    color: @c3;
+    background-color: @c4;
+    border-color: @c4;
+  }
+
+  &:active,
+  &.@{prefix-cls}-btn-active {
+    background-image: none;
+  }
+  .@{prefix-cls}-badge {
+    color: @c5;
+    background-color: @c6;
+  }
+}
+
+.btn-dropdown (@c) {
+  color: @whiteColor;
+  background-color: @c;
+  border-color: @c;
+  background-image: none;
+}
+
+.@{prefix-cls}-open > .@{prefix-cls}-dropdown-toggle.@{prefix-cls}-btn-primary {
+  .btn-dropdown (@primaryColor);
+}
+
+.@{prefix-cls}-open > .@{prefix-cls}-dropdown-toggle.@{prefix-cls}-btn-success {
+  .btn-dropdown (@successColor);
+}
+
+.@{prefix-cls}-open > .@{prefix-cls}-dropdown-toggle.@{prefix-cls}-btn-info {
+  .btn-dropdown (@infoColor);
+}
+
+.@{prefix-cls}-open > .@{prefix-cls}-dropdown-toggle.@{prefix-cls}-btn-warning {
+  .btn-dropdown (@warningColor);
+}
+
+.@{prefix-cls}-open > .@{prefix-cls}-dropdown-toggle.@{prefix-cls}-btn-danger {
+  .btn-dropdown (@dangerColor);
+}
+
+.@{prefix-cls}-btn-lg,
+.@{prefix-cls}-btn-group-lg > .@{prefix-cls}-btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.@{prefix-cls}-btn-sm,
+.@{prefix-cls}-btn-group-sm > .@{prefix-cls}-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.@{prefix-cls}-btn-xs,
+.@{prefix-cls}-btn-group-xs > .@{prefix-cls}-btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.@{prefix-cls}-btn-block {
+  display: block;
+  width: 100%;
+}
+.@{prefix-cls}-btn-block + .@{prefix-cls}-btn-block {
+  margin-top: 5px;
+}
+input[type="submit"].@{prefix-cls}-btn-block,
+input[type="reset"].@{prefix-cls}-btn-block,
+input[type="button"].@{prefix-cls}-btn-block {
+  width: 100%;
+}
+
+/*------------ btn-group -----------*/
+
+.@{prefix-cls}-btn-group,
+.@{prefix-cls}-btn-group-vertical {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+ }
+
+.@{prefix-cls}-checkbox-group, .@{prefix-cls}-radio-group{
+  padding-top: 7px;
+ }
+
+.@{prefix-cls}-btn-group > .@{prefix-cls}-btn,
+.@{prefix-cls}-btn-group-vertical > .@{prefix-cls}-btn {
+  position: relative;
+  float: left;
+}
+.@{prefix-cls}-btn-group > .@{prefix-cls}-btn:hover,
+.@{prefix-cls}-btn-group-vertical > .@{prefix-cls}-btn:hover,
+.@{prefix-cls}-btn-group > .@{prefix-cls}-btn:focus,
+.@{prefix-cls}-btn-group-vertical > .@{prefix-cls}-btn:focus,
+.@{prefix-cls}-btn-group > .@{prefix-cls}-btn:active,
+.@{prefix-cls}-btn-group-vertical > .@{prefix-cls}-btn:active,
+.@{prefix-cls}-btn-group > .@{prefix-cls}-btn.@{prefix-cls}-active,
+.@{prefix-cls}-btn-group-vertical > .@{prefix-cls}-btn.@{prefix-cls}-active {
+  z-index: 2;
+}
+
+.@{prefix-cls}-btn-group .@{prefix-cls}-btn + .@{prefix-cls}-btn,
+.@{prefix-cls}-btn-group .@{prefix-cls}-btn + .@{prefix-cls}-btn-group,
+.@{prefix-cls}-btn-group .@{prefix-cls}-btn-group + .@{prefix-cls}-btn,
+.@{prefix-cls}-btn-group .@{prefix-cls}-btn-group + .@{prefix-cls}-btn-group {
+  margin-left: -1px;
+}
+
+.@{prefix-cls}-btn-group {
+  > .@{prefix-cls}-btn:not(:first-child):not(:last-child):not(.@{prefix-cls}-dropdown-toggle) {
+    border-radius: 0;
+  }
+  > .@{prefix-cls}-btn:first-child {
+    margin-left: 0;
+  }
+  > .@{prefix-cls}-btn:first-child:not(:last-child):not(.@{prefix-cls}-dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  > .@{prefix-cls}-btn:last-child:not(:first-child),
+  > .@{prefix-cls}-dropdown-toggle:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  > .@{prefix-cls}-btn-group {
+    float: left;
+  }
+  > .@{prefix-cls}-btn-group:not(:first-child):not(:last-child) > .@{prefix-cls}-btn {
+    border-radius: 0;
+  }
+  > .@{prefix-cls}-btn-group:first-child:not(:last-child) > .@{prefix-cls}-btn:last-child,
+  > .@{prefix-cls}-btn-group:first-child:not(:last-child) > .@{prefix-cls}-dropdown-toggle {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  > .@{prefix-cls}-btn-group:last-child:not(:first-child) > .@{prefix-cls}-btn:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .@{prefix-cls}-dropdown-toggle:active,
+  &.@{prefix-cls}-open .@{prefix-cls}-dropdown-toggle {
+    outline: 0;
+  }
+  > .@{prefix-cls}-btn + .@{prefix-cls}-dropdown-toggle {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  > .@{prefix-cls}-btn-lg + .@{prefix-cls}-dropdown-toggle {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  &.@{prefix-cls}-open .@{prefix-cls}-dropdown-toggle {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  }
+}
+
+
+
+

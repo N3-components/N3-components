@@ -1,0 +1,134 @@
+@import "define.less";
+
+.@{prefix-cls}-alert {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1200;
+
+  h4 {
+    margin-top: 0;
+    color: inherit;
+  }
+
+  & > p,
+  & > ul {
+    margin-bottom: 0;
+  }
+  & > p + p {
+    margin-top: 5px;
+  }
+
+  hr {
+    border-top-color: @alertHrColor;
+  }
+
+  &-default {
+    color: @whiteColor;
+    background-color: @alertDefaultColor;
+    .@{prefix-cls}-close {
+      color:@whiteColor;
+    }
+  }
+
+  &-success {
+    color: @whiteColor;
+    background-color: @alertSuccessColor;
+  }
+
+  &-info {
+    color: @whiteColor;
+    background-color: @alertInfoColor;
+  }
+
+  &-warning {
+    color: @whiteColor;
+    background-color: @alertWarningColor;
+  }
+
+  &-danger {
+    color: @whiteColor;
+    background-color: @alertDangerColor;
+  }
+
+  &-icon {
+    float: left;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  &-content {
+    margin-left: 32px;
+  }
+
+  &-small {
+    padding: 2px 14px;
+    .close {
+      font-size: 20px;
+      top: 0;
+    }
+  }
+
+  &.@{prefix-cls}-center {
+    position: fixed;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+  }
+
+  &.@{prefix-cls}-top {
+    position: fixed;
+    top: 30px;
+    margin: 0 auto;
+    left: 50%;
+  }
+
+  &.@{prefix-cls}-bottom {
+    position: fixed;
+    bottom: 30px;
+    margin: 0 auto;
+    left: 50%;
+  }
+
+  &.@{prefix-cls}-top-right {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+  }
+
+  &.@{prefix-cls}-top-left {
+    position: fixed;
+    top: 30px;
+    left: 50px;
+  }
+
+  &.@{prefix-cls}-bottom-right {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+  }
+
+  &.@{prefix-cls}-bottom-left {
+    position: fixed;
+    bottom: 30px;
+    left: 50px;
+  }
+
+  &-dismissable,
+  &-dismissible {
+    padding-right: 35px;
+  }
+
+  &-dismissable .@{prefix-cls}-close,
+  &-dismissible .@{prefix-cls}-close {
+    position: relative;
+    top: -2px;
+    right: -21px;
+    color: inherit;
+  }
+}
+
+
+
+

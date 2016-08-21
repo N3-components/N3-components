@@ -1,0 +1,46 @@
+@import "define.less";
+
+.@{prefix-cls}-multiple-input{
+  font-size: 0px;
+  letter-spacing: 0px;
+  min-height: 34px;
+  height: auto;
+  padding: 6px 12px 0px;
+  display: flex;
+  flex-wrap:wrap;
+
+  &.@{prefix-cls}-padding-left-none{
+    padding-left: 0px !important;
+  }
+
+  .@{prefix-cls}-form-control{
+    border: 0px;
+    outline: none;
+    position: relative;
+    top: -2px;
+    margin: 0px;
+    padding: 0px;
+    height: 22px;
+  }
+  
+  .@{prefix-cls}-multiple-input-space{
+    display: inline-block;
+    width:8px;
+    height: 23px;
+    &:hover{
+      cursor: text;
+    }
+    &.@{prefix-cls}-multiple-input-long{
+      flex:1;
+    }
+  }
+  
+  .@{prefix-cls}-multiple-input-m-tag,input,.@{prefix-cls}-multiple-input-space{
+    vertical-align: top;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .@{prefix-cls}-multiple-input-m-tag:hover{
+    cursor: pointer;
+  }
+}

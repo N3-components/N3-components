@@ -1,0 +1,53 @@
+@import "define.less";
+
+.@{prefix-cls}-select-group{
+
+  .@{prefix-cls}-select-search input{
+    border: 0px;
+    border-bottom: 1px solid @lightGrayColor;
+  }
+
+  .@{prefix-cls}-dropdown-menu{
+    display: block;
+    overflow-y: auto;
+    
+    .@{prefix-cls}-notify {
+      position: absolute;
+      bottom: 5px;
+      width: 96%;
+      margin: 0 2%;
+      min-height: 26px;
+      padding: 3px 5px;
+      background: @lightColor;
+      border: 1px solid @lightGrayColor;
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+      pointer-events: none;
+    }
+    .fa-check {
+      position: absolute;
+      display: inline-block;
+      right: 15px;
+      margin-top: 5px;
+    }
+    .fa-plus-square-o {
+      font-size: 20px;
+      position: absolute;
+      top: 11px;
+      right: 15px;
+    }
+    .@{prefix-cls}-select-all{
+      border-bottom: 1px solid @lightGrayColor;
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .@{prefix-cls}-dropdown-toggle{
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+}

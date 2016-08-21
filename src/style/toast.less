@@ -1,0 +1,81 @@
+@import "define.less";
+
+.@{prefix-cls}-toast {
+  position: fixed;
+  border-radius: 25px;
+  padding: 2px 25px .3em;
+  transition-property: opacity;
+  transition-duration: 800ms;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+  color: @whiteColor;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  cursor: default;
+  z-index: 1500;
+
+  &.@{prefix-cls}-center {
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+  }
+
+  &.@{prefix-cls}-top {
+    top: 30px;
+    margin: 0 auto;
+    left: 50%;
+  }
+
+  &.@{prefix-cls}-bottom {
+    bottom: 30px;
+    margin: 0 auto;
+    left: 50%;
+    top:initial;
+  }
+
+  &.@{prefix-cls}-top-right {
+    top: 30px;
+    right: 50px;
+    left: initial;
+  }
+
+  &.@{prefix-cls}-top-left {
+    top: 30px;
+    left: 50px;
+  }
+
+  &.@{prefix-cls}-bottom-right {
+    bottom: 30px;
+    right: 50px;
+    left: initial;
+    top:initial;
+  }
+
+  &.@{prefix-cls}-bottom-left {
+    top: initial;
+    bottom: 30px;
+    left: 50px;
+  }
+
+  &-default {
+    background: @alertDefaultColor;
+  }
+  &-primary {
+    background: @primaryColor;
+  }
+  &-success {
+    background: @successColor;
+  }
+  &-info {
+    background: @infoColor;
+  }
+  &-warning {
+    background: @warningColor;
+  }
+  &-danger {
+    background: @dangerColor;
+  }
+}
+

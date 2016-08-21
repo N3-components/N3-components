@@ -1,0 +1,99 @@
+@import "define.less";
+
+.@{prefix-cls}-datepicker{
+    position: relative;
+    display: inline-block;
+
+    &-popup{
+        position: absolute;
+        border: 1px solid @grayColor;
+        background: @whiteColor;
+        margin-top: 2px;
+        z-index: 1000;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+    }
+    &-inner{
+        width: 268px;
+
+    }
+    &-ctrl p,
+    &-ctrl span,
+    &-body span{
+        display: inline-block;
+        width: 38px;
+        line-height: 38px;
+        height: 38px;
+    }
+    &-ctrl p {
+        width: 65%;
+    }
+    &-ctrl span {
+      position: absolute;
+    }
+    &-body span {
+      text-align: center;
+    }
+    &-mouthRange span{
+        width: 44px;
+        height: 44px;
+        line-height: 45px;
+    }
+    &-item-disable {
+      background-color: white!important;
+      cursor: not-allowed!important;
+    }
+    .@{prefix-cls}-datepicker-decadeRange span:first-child,
+    .@{prefix-cls}-datepicker-decadeRange span:last-child,
+    &-item-disable,
+    &-item-gray{
+        color: @grayColor;
+    }
+    
+    &-dateRange-item-active:hover,
+    &-dateRange-item-active {
+        background: @primaryColor !important;
+        color: white!important;
+    }
+    &-mouthRange {
+      margin-top: 10px
+    }
+    &-mouthRange span,
+    &-ctrl span,
+    &-ctrl p,
+    &-dateRange span {
+      transition: all .3s ease;
+      cursor: pointer;
+    }
+    &-mouthRange span:hover,
+    &-ctrl p:hover,
+    &-ctrl i:hover,
+    &-dateRange span:hover,
+    &-dateRange-item-hover {
+        background-color : @hoverColor;
+    }
+    &-weekRange{
+      border-bottom: 1px solid @lightGrayColor;
+      border-top:1px solid @lightGrayColor;
+    }
+
+    &-weekRange span{
+        font-weight: bold;
+    }
+    &-ctrl{
+        position: relative;
+        height: 38px;
+        line-height: 38px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .@{prefix-cls}-month-btn{
+      font-weight: bold;
+      user-select:none;
+    }
+    &-preBtn{
+        left: 2px;
+    }
+    &-nextBtn{
+        right: 2px;
+    }
+}

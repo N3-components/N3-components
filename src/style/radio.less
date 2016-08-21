@@ -1,0 +1,74 @@
+@import "define.less";
+
+.@{prefix-cls}-radio-con{
+    .@{prefix-cls}-radio-span{
+        white-space: nowrap;
+        outline: none;
+        display: inline-block;
+        position: relative;
+        line-height: 1;
+        vertical-align: middle;
+    }
+
+    .@{prefix-cls}-radio-inner {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 14px;
+        border-color: @lightGrayColor;
+        background-color: @whiteColor;
+        transition: all 0.3s ease;
+    }
+
+    .@{prefix-cls}-radio-input {
+        position: absolute!important;
+        left: 0;
+        z-index: 1;
+        cursor: pointer;
+        opacity: 0;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .@{prefix-cls}-radio-checked .@{prefix-cls}-radio-inner:after {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .@{prefix-cls}-radio-inner:after {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        left: 3px;
+        top: 3px;
+        border-radius: 6px;
+        display: table;
+        border-top: 0;
+        border-left: 0;
+        content: ' ';
+        background-color: @primaryColor;
+        transform: scale(0);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .@{prefix-cls}-radio-disabled .@{prefix-cls}-radio-inner {
+        border-color: @lightGrayColor;
+        background-color: @lightColor;
+    }
+}
+
+.@{prefix-cls}-radio-btn input[type=radio] {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}

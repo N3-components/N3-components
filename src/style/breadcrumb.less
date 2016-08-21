@@ -1,0 +1,20 @@
+@import "define.less";
+
+.@{prefix-cls}-breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  border-radius: 4px;
+
+  > li {
+    display: inline-block;
+  }
+  > li + li:before {
+    padding: 0 5px;
+    color: @grayColor;
+    content: "/\00a0";
+  }
+  > .@{prefix-cls}-breadcrumb-active {
+    color: @primaryColor;
+  }
+}

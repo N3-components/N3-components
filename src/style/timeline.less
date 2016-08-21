@@ -1,0 +1,49 @@
+@import "define.less";
+
+.@{prefix-cls}-timeline-con{
+	position: relative;
+
+	.@{prefix-cls}-timeline-item:last-child{
+		.@{prefix-cls}-timeline-item-tail{
+			display:none;
+		}
+	}
+
+	.@{prefix-cls}-timeline-item{
+		position: relative;
+    padding: 0 0 12px;
+    margin: 0;
+    display: block;
+
+    .@{prefix-cls}-timeline-item-tail{
+			position: absolute;
+	    left: 5px;
+	    top: 0;
+	    height: 100%;
+	    border-left: 2px solid @lightGrayColor;
+		}
+		.@{prefix-cls}-timeline-item-head {
+	    position: absolute;
+	    width: 12px;
+	    height: 12px;
+	    background-color: @whiteColor;
+	    border-radius: 100px;
+	    border: 2px solid transparent;
+	    z-index: 1;
+		}
+		.@{prefix-cls}-timeline-item-head.fa{
+			border: 0px;
+			top:-2px;
+			left: -1px;
+			font-size: 16px;
+		}
+		.@{prefix-cls}-timeline-item-content {
+		    padding: 0 0 10px 24px;
+		    font-size: 12px;
+		    position: relative;
+		    top: -3px;
+		}
+	}
+
+}
+

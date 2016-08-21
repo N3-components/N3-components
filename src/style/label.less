@@ -1,0 +1,77 @@
+@import "define.less";
+
+.@{prefix-cls}-label {
+  display: inline;
+  padding: 0.5em 0.8em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: @whiteColor;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  margin: 0px 5px 5px 0px;
+  background: @whiteColor;
+  transition: all .3s ease;
+
+  &-hover:hover{
+    color:@whiteColor;
+    cursor: pointer;
+  }
+
+  &-default&-hover:hover{
+    background:@weightGrayColor;
+  }
+
+  &-primary&-hover:hover{
+    background:@primaryColor;
+  }
+
+  &-success&-hover:hover{
+    background:@successColor;
+  }
+
+  &-info&-hover:hover{
+    background:@infoColor;
+  }
+
+  &-warning&-hover:hover{
+    background:@warningColor;
+  }
+
+  &-danger&-hover:hover{
+    background:@dangerColor;
+  }
+
+  &-default {
+    color:@weightGrayColor;
+    border:1px solid  @weightGrayColor;
+  }
+
+  &-primary {
+    color:@primaryColor;
+    border:1px solid  @primaryColor;
+  }
+
+  &-success {
+    color:@successColor;
+    border:1px solid  @successColor;
+  }
+
+  &-info {
+    color:@infoColor;
+    border:1px solid  @infoColor;
+  }
+
+  &-warning {
+    color:@warningColor;
+    border:1px solid  @warningColor;
+  }
+
+  &-danger {
+    color:@dangerColor;
+    border:1px solid  @dangerColor;
+  }
+}
+

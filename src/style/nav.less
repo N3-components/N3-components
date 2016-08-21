@@ -1,0 +1,162 @@
+@import "define.less";
+
+.@{prefix-cls}-navbar-collapse {
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+.@{prefix-cls}-navbar-nav > li:hover {
+  cursor: pointer;
+}
+
+.@{prefix-cls}-navbar-nav > li > a,.@{prefix-cls}-navbar-nav .@{prefix-cls}-sub-nav-trigger {
+  padding: 15px 20px;
+  line-height: 20px;
+  border-bottom:2px solid transparent;
+}
+
+.@{prefix-cls}-navbar-nav > li  .@{prefix-cls}-dropdown-menu {
+  top:96%!important;
+}
+
+ .@{prefix-cls}-navbar-nav {
+    margin: 0;
+}
+
+.@{prefix-cls}-navbar-vertical {
+
+  .@{prefix-cls}-navbar-nav > li > a,.@{prefix-cls}-navbar-nav .@{prefix-cls}-sub-nav-trigger {
+    padding: 10px 20px;
+  }
+
+
+  .@{prefix-cls}-navbar-nav {
+    float: none;
+
+    .@{prefix-cls}-dropdown-con{
+      width: 100%;
+      position: relative;
+      .@{prefix-cls}-sub-nav-trigger:hover{
+        background: @hoverColor;
+      }
+
+      .@{prefix-cls}-sub-nav-fa {
+        float: right;
+      }
+      >.@{prefix-cls}-dropdown-menu {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.1);
+        margin:0px;
+        padding: 0px;
+        border:0px;
+        > li{
+          padding: 5px 15px;
+          &:hover{
+            background:@hoverColor;
+          }
+          > a:hover{
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    .@{prefix-cls}-navbar-active{
+      border-left: 2px solid @primaryColor;
+    }
+
+    .@{prefix-cls}-navbar-active  a,
+    .@{prefix-cls}-navbar-active  a:hover,
+    .@{prefix-cls}-navbar-active  a:focus {
+      color: @primaryColor;
+    }
+
+    >li{
+      float: none;
+    }
+  }
+}
+.@{prefix-cls}-navbar-horizontal {
+  .@{prefix-cls}-navbar-nav {
+    float: left;
+    >li{
+      float: left;
+    }
+  }
+  .@{prefix-cls}-navbar-nav  .@{prefix-cls}-dropdown-con:hover{
+    background-color: @hoverColor;
+  }
+
+  .@{prefix-cls}-navbar-active  a,
+  .@{prefix-cls}-navbar-active  a:hover,
+  .@{prefix-cls}-navbar-active  a:focus {
+    color: @primaryColor;
+    border-bottom:2px solid @primaryColor;
+  }
+
+}
+
+.@{prefix-cls}-navbar-default {
+  background-color: transparent;
+
+  .@{prefix-cls}-navbar-nav {
+    > li > a {
+
+      &:hover,
+      &:focus {
+        color: @primaryColor;
+        background-color: @hoverColor;
+      }
+    }
+
+     .@{prefix-cls}-navbar-disabled  a,
+     .@{prefix-cls}-navbar-disabled  a:hover,
+     .@{prefix-cls}-navbar-disabled  a:focus {
+      color: @lightGrayColor;
+      cursor: not-allowed;
+      background-color: transparent;
+    }
+  }
+}
+
+.@{prefix-cls}-navbar-dark {
+  background-color: @lightBlackColor;
+
+  .@{prefix-cls}-navbar-nav {
+    > li .@{prefix-cls}-sub-nav-fa {
+      color: @whiteColor;
+    }
+    > li  a {
+      color: @whiteColor;
+
+      &:hover,
+      &:focus {
+        background-color: @hoverColor;
+      }
+    }
+
+    .@{prefix-cls}-dropdown-menu{
+      background-color: @lightBlackColor;
+    }
+
+     .@{prefix-cls}-navbar-disabled  a,
+     .@{prefix-cls}-navbar-disabled  a:hover,
+     .@{prefix-cls}-navbar-disabled  a:focus {
+      color: @weightGrayColor;
+      cursor: not-allowed;
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+
+
+
+
+

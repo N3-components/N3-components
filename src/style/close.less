@@ -1,0 +1,29 @@
+@import "define.less";
+
+.@{prefix-cls}-close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: @blackColor;
+  text-shadow: 0 1px 0 @whiteColor;
+  opacity: .2;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: @blackColor;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .5;
+  }
+
+}
+
+button.@{prefix-cls}-close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}

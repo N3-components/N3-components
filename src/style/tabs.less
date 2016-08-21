@@ -1,0 +1,195 @@
+@import "define.less";
+
+.@{prefix-cls}-nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    display: block;
+  }
+  > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    transition: all .3s ease;
+  }
+  > li > a:hover,
+  > li > a:focus {
+    color:@fontColor;
+    text-decoration: none;
+    background: @hoverColor;
+  }
+  & > li&-disabled > a {
+    color: @weightGrayColor;
+  }
+  & > li&-tabs-disabled > a:hover,
+  & > li&-tabs-disabled > a:focus {
+    color: @weightGrayColor;
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: transparent;
+  }
+  > li > a > img {
+    max-width: none;
+  }
+}
+
+.@{prefix-cls}-nav-tabs {
+  border-bottom: 1px solid @lightGrayColor;
+  margin-bottom: 15px;
+
+  > li {
+    float: left;
+    margin-bottom: -1px;
+  }
+  > li > a {
+    margin-right: 1px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+  }
+  > li > a:hover {
+    border-color: @lightColor @lightColor @lightGrayColor;
+  }
+  & > li&-active > a,
+  & > li&-active > a:hover,
+  & > li&-active > a:focus {
+    color: @fontColor;
+    cursor: default;
+    background-color: @whiteColor;
+    border: 1px solid @lightGrayColor;
+    border-bottom-color: transparent;
+  }
+
+  &-justified {
+    width: 100%;
+    border-bottom: 0;
+
+    > li {
+      float: none!important;
+      >a {
+        margin-bottom: 5px;
+        text-align: center;
+        margin-right: 0;
+        border-radius: 4px;
+      }
+    }
+
+    li:last-child > a:hover,
+    li.@{prefix-cls}-nav-tabsactive:last-child > a {
+      border-radius: 0 4px 0 0 !important;
+    }
+  }
+  &-justified > .@{prefix-cls}-dropdown .@{prefix-cls}-dropdown-menu {
+    top: auto;
+    left: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .@{prefix-cls}-nav-tabs-justified {
+    border-bottom: 0;
+
+    > li {
+      display: table-cell;
+      width: 1%;
+    }
+    > li > a {
+      margin-bottom: 0;
+      margin-right: 0;
+      border-bottom: 1px solid @lightGrayColor;
+      border-radius: 4px 4px 0 0;
+    }
+   
+    > .@{prefix-cls}-nav-tabs-active > a,
+    > .@{prefix-cls}-nav-tabs-active > a:hover,
+    > .@{prefix-cls}-nav-tabs-active > a:focus {
+      border: 1px solid @lightGrayColor;
+      border-bottom-color: @whiteColor;
+    }
+  }
+}
+
+
+.@{prefix-cls}-nav-tabs-pills {
+  > li {
+    float: left;
+  }
+  > li > a {
+    border-radius: 4px;
+  }
+  > li + li {
+    margin-left: 2px;
+  }
+  > li.@{prefix-cls}-nav-tabs-active > a,
+  > li.@{prefix-cls}-nav-tabs-active > a:hover,
+  > li.@{prefix-cls}-nav-tabs-active > a:focus {
+    color: @whiteColor;
+    background-color: @primaryColor;
+  }
+}
+
+.@{prefix-cls}-nav-tabs-stacked {
+  > li {
+    float: none;
+  }
+  > li + li {
+    margin-top: 2px;
+    margin-left: 0;
+  }
+}
+
+
+.@{prefix-cls}-tab-content {
+  > .@{prefix-cls}-tab-pane {
+    display: block;
+    visibility: visible !important;
+  }
+
+  .@{prefix-cls}-nav-tabs-active {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.@{prefix-cls}-nav-tabs {
+  .@{prefix-cls}-dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &-primary {
+    border-bottom: 2px solid @primaryColor;
+    li {
+      margin-bottom: 0;
+
+     
+    }
+
+    .@{prefix-cls}-nav-tabs-active > a,
+    .@{prefix-cls}-nav-tabs-active > a:hover,
+    .@{prefix-cls}-nav-tabs-active > a:focus {
+      background: @primaryColor;
+      border-color: @primaryColor!important;
+      color: white;
+      border-bottom: 0;
+    }
+
+  }
+}
+
+.@{prefix-cls}-nav-tabs-primary.@{prefix-cls}-nav-tabs-stacked {
+  border-bottom: 0;
+  border-right: 2px solid @primaryColor;
+  > li > a {
+    border-radius: 2px 0 0 2px;
+    margin-right: 0;
+  }
+}
+
+
+
+
