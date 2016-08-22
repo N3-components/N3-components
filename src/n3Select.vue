@@ -1,58 +1,57 @@
 <template>
   <div class="{{prefixCls}}-btn-group {{prefixCls}}-select-group" >
-    <div class="inline">
-      <n3-button  
-        :style="{width:width}"
-        :disabled="disabled"
-        :size="size"
-        class="{{prefixCls}}-dropdown-toggle"
-        @click="toggleDropdown">
+    <n3-button  
+      :style="{width:width}"
+      :disabled="disabled"
+      :size="size"
+      class="{{prefixCls}}-dropdown-toggle"
+      @click="toggleDropdown">
 
-        <span v-if="showPlaceholder || !showselected">{{placeholder}}</span>
-        <span v-if="showselected" >
-          <template v-for="item in selectedItems">
-            {{{format.call(this._context,item)}}}
-          </template>
-        </span>
-        <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
-        <n3-badge v-if="badge">{{badge}}</n3-badge>
-      </n3-button>
-      <ul 
-        :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
-        class="{{prefixCls}}-dropdown-menu" 
-        v-el:menu 
-        v-show="show" 
-        transition="fadeDown">
-          <li v-if="search">
-            <n3-input
-              class="{{prefixCls}}-select-search"
-              :placeholder="inputPlaceholder"
-              :value.sync="searchText"
-              @keydown.enter="addExtra"
-            ></n3-input>
-            <n3-icon type="plus-square-o" v-if="extra" @click="addExtra"></n3-icon>
-          </li>
-          <li v-if="multiple" class="{{prefixCls}}-select-all">
-            <a @click.prevent="selectAll">
-              全选
-             <n3-icon type="check" v-show="allSelected"></n3-icon>
+      <span  v-if="showPlaceholder || !showselected">{{placeholder}}</span>
+      <span  v-if="showselected" >
+        <template v-for="item in selectedItems">
+          {{{format.call(this._context,item)}}}
+        </template>
+      </span>
+      <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
+      <n3-badge v-if="badge">{{badge}}</n3-badge>
+    </n3-button>
+    <ul 
+      :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
+      class="{{prefixCls}}-dropdown-menu" 
+      v-el:menu 
+      v-show="show" 
+      transition="fadeDown">
+        <li v-if="search">
+          <n3-input
+            class="{{prefixCls}}-select-search"
+            :placeholder="inputPlaceholder"
+            :value.sync="searchText"
+            @keydown.enter="addExtra"
+          ></n3-input>
+          <n3-icon type="plus-square-o" v-if="extra" @click="addExtra"></n3-icon>
+        </li>
+        <li v-if="multiple" class="{{prefixCls}}-select-all">
+          <a @click.prevent="selectAll">
+            全选
+           <n3-icon type="check" v-show="allSelected"></n3-icon>
+          </a>
+        </li>
+
+        <template v-if="options.length">
+          <li v-for="option in options | filterSearch searchText " 
+              :value="option.value" 
+              style="position:relative">
+            <a @click.prevent="select(option)" >
+              {{{ option.label }}} 
+              <n3-icon type="check" v-show="findIndex(option.value) !== -1"></n3-icon>
             </a>
           </li>
-
-          <template v-if="options.length">
-            <li v-for="option in options | filterSearch searchText " 
-                :value="option.value" 
-                style="position:relative">
-              <a @click.prevent="select(option)" >
-                {{{ option.label }}} 
-                <n3-icon type="check" v-show="findIndex(option.value) !== -1"></n3-icon>
-              </a>
-            </li>
-          </template>
-          <slot v-else ></slot>
-        <div class="{{prefixCls}}-notify" v-show="showNotify" transition="fade">最多选择 {{limit}} 项</div>
-      </ul>
-    </div>
+        </template>
+        <slot v-else ></slot>
+      <div class="{{prefixCls}}-notify" v-show="showNotify" transition="fade">最多选择 {{limit}} 项</div>
+    </ul>
+    <div class="clearfix"></div>
     <validate
       :name="name"
       :rules="rules"
