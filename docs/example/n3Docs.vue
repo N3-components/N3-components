@@ -29,7 +29,7 @@
   </div>
   <footer class="bs-docs-footer">
     <n3-container >
-      <p>联系邮箱 904568523@qq.com</p>
+      <p>联系邮箱 zhangking520@gmail.com</p>
       <p>当前版本 Beta</p>
     </n3-container>
   </footer>

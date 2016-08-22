@@ -255,8 +255,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-f8a8d316&file=n3Docs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-f8a8d316&file=n3Docs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-74dae73a&file=n3Docs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-74dae73a&file=n3Docs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -790,7 +790,7 @@
 	//   </div>
 	//   <footer class="bs-docs-footer">
 	//     <n3-container >
-	//       <p>联系邮箱 904568523@qq.com</p>
+	//       <p>联系邮箱 zhangking520@gmail.com</p>
 	//       <p>当前版本 Beta</p>
 	//     </n3-container>
 	//   </footer>
@@ -1849,8 +1849,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8a326b82&file=n3LayoutDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8a326b82&file=n3LayoutDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-7485b344&file=n3LayoutDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-7485b344&file=n3LayoutDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2070,10 +2070,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-156f4d0e&file=n3IconDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs.vue"], function () {
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-494eb353&file=n3IconDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs.vue"], function () {
 	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-156f4d0e&file=n3IconDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-494eb353&file=n3IconDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -2095,8 +2095,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-156f4d0e&file=n3IconDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-156f4d0e&file=n3IconDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-494eb353&file=n3IconDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-494eb353&file=n3IconDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2114,7 +2114,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".row-ex div[_v-156f4d0e]{\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-156f4d0e]{\n    margin-right: 10px;\n  }\n  .row-ex span[_v-156f4d0e]{\n    color:gray;\n  }", ""]);
+	exports.push([module.id, ".row-ex div[_v-494eb353]{\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-494eb353]{\n    margin-right: 10px;\n  }\n  .row-ex span[_v-494eb353]{\n    color:gray;\n  }", ""]);
 	
 	// exports
 
@@ -2248,7 +2248,7 @@
 /* 157 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"图标\" _v-156f4d0e=\"\">\n    <h1 class=\"page-header\" _v-156f4d0e=\"\"><a href=\"#图标\" class=\"anchor\" _v-156f4d0e=\"\">图标</a><span class=\"author\" _v-156f4d0e=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-156f4d0e=\"\">\n    <h3 _v-156f4d0e=\"\">FontAwesome 4.0 图标列表</h3>  \n    <h4 _v-156f4d0e=\"\">11 New Icons in 4.0</h4>\n    <hr _v-156f4d0e=\"\">\n    <n3-container _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in newfont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n        <br _v-156f4d0e=\"\">\n      <h4 _v-156f4d0e=\"\">Web Application Icons</h4>\n      <hr _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in webfont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <h4 _v-156f4d0e=\"\">Form Control Icons</h4>\n      <hr _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in formfont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-156f4d0e=\"\">\n      <h4 _v-156f4d0e=\"\">Currency Icons</h4>\n      <hr _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-156f4d0e=\"\">\n      <h4 _v-156f4d0e=\"\">Text Edit Icons</h4>\n      <hr _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in textfont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-156f4d0e=\"\">\n      <h4 _v-156f4d0e=\"\">Directional Icons</h4>\n      <hr _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-156f4d0e=\"\">\n      <h4 _v-156f4d0e=\"\">Video Player Icons</h4>\n      <hr _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in videofont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-156f4d0e=\"\">\n      <h4 _v-156f4d0e=\"\">Brand Icons</h4>\n      <hr _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n       <br _v-156f4d0e=\"\">\n      <h4 _v-156f4d0e=\"\">Medical Icons</h4>\n      <hr _v-156f4d0e=\"\">\n      <n3-row class=\"row-ex\" _v-156f4d0e=\"\">\n        <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-156f4d0e=\"\"><n3-icon :type=\"font\" _v-156f4d0e=\"\"></n3-icon><span _v-156f4d0e=\"\">{{font}}</span></n3-column>\n      </n3-row>\n    </n3-container> \n    </div>\n    <pre _v-156f4d0e=\"\"><code class=\"language-markup\" _v-156f4d0e=\"\"><script type=\"language-mark-up\" _v-156f4d0e=\"\">\n      <n3-icon type=\"rub\"></n3-icon>\n    </script></code></pre>\n\n  <h2 _v-156f4d0e=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-156f4d0e=\"\">\n    <thead _v-156f4d0e=\"\">\n      <tr _v-156f4d0e=\"\">\n        <th _v-156f4d0e=\"\">参数名</th>\n        <th _v-156f4d0e=\"\">类型</th>\n        <th _v-156f4d0e=\"\">默认值</th>\n        <th _v-156f4d0e=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-156f4d0e=\"\">\n      <tr _v-156f4d0e=\"\">\n        <td _v-156f4d0e=\"\">type</td>\n        <td _v-156f4d0e=\"\"><code _v-156f4d0e=\"\">String</code></td>\n        <td _v-156f4d0e=\"\"><code _v-156f4d0e=\"\"></code></td>\n        <td _v-156f4d0e=\"\">图标类型名</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"图标\" _v-494eb353=\"\">\n    <h1 class=\"page-header\" _v-494eb353=\"\"><a href=\"#图标\" class=\"anchor\" _v-494eb353=\"\">图标</a><span class=\"author\" _v-494eb353=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-494eb353=\"\">\n    <h3 _v-494eb353=\"\">FontAwesome 4.0 图标列表</h3>  \n    <h4 _v-494eb353=\"\">11 New Icons in 4.0</h4>\n    <hr _v-494eb353=\"\">\n    <n3-container _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in newfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n        <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Web Application Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in webfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <h4 _v-494eb353=\"\">Form Control Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in formfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Currency Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Text Edit Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in textfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Directional Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Video Player Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in videofont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Brand Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n       <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Medical Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n    </n3-container> \n    </div>\n    <pre _v-494eb353=\"\"><code class=\"language-markup\" _v-494eb353=\"\"><script type=\"language-mark-up\" _v-494eb353=\"\">\n      <n3-icon type=\"rub\"></n3-icon>\n    </script></code></pre>\n\n  <h2 _v-494eb353=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-494eb353=\"\">\n    <thead _v-494eb353=\"\">\n      <tr _v-494eb353=\"\">\n        <th _v-494eb353=\"\">参数名</th>\n        <th _v-494eb353=\"\">类型</th>\n        <th _v-494eb353=\"\">默认值</th>\n        <th _v-494eb353=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-494eb353=\"\">\n      <tr _v-494eb353=\"\">\n        <td _v-494eb353=\"\">type</td>\n        <td _v-494eb353=\"\"><code _v-494eb353=\"\">String</code></td>\n        <td _v-494eb353=\"\"><code _v-494eb353=\"\"></code></td>\n        <td _v-494eb353=\"\">图标类型名</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
 /* 158 */
@@ -2482,8 +2482,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2702deed&file=n3AlertDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2702deed&file=n3AlertDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6f104148&file=n3AlertDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6f104148&file=n3AlertDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -5768,8 +5768,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-79476ad3&file=n3CascaderDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-79476ad3&file=n3CascaderDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-46d02698&file=n3CascaderDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-46d02698&file=n3CascaderDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -5975,10 +5975,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-483a7361&file=n3AffixDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs.vue"], function () {
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-df705488&file=n3AffixDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs.vue"], function () {
 	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-483a7361&file=n3AffixDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-df705488&file=n3AffixDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -6000,8 +6000,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-483a7361&file=n3AffixDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-483a7361&file=n3AffixDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-df705488&file=n3AffixDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-df705488&file=n3AffixDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -6019,7 +6019,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".sidebar[_v-483a7361]{\n  background-color: #fff;\n  border:1px solid #ddd;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px; \n}\npre[class*='language-'][_v-483a7361]{\n  position: static;\n}", ""]);
+	exports.push([module.id, ".sidebar[_v-df705488]{\n  background-color: #fff;\n  border:1px solid #ddd;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px; \n}\npre[class*='language-'][_v-df705488]{\n  position: static;\n}", ""]);
 	
 	// exports
 
@@ -6104,7 +6104,7 @@
 /* 200 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"固钉\" _v-483a7361=\"\">\n    <h1 class=\"page-header\" _v-483a7361=\"\"><a href=\"#固钉\" class=\"anchor\" _v-483a7361=\"\">固钉</a><span class=\"author\" _v-483a7361=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-483a7361=\"\">\n      <h3 _v-483a7361=\"\">\n        <n3-affix :offset=\"0\" _v-483a7361=\"\">\n          <nav class=\"sidebar\" _v-483a7361=\"\">\n            <ul _v-483a7361=\"\">\n              <li _v-483a7361=\"\">...</li>\n              <li _v-483a7361=\"\">...</li>\n              <li _v-483a7361=\"\">...</li>\n            </ul>\n          </nav>\n        </n3-affix>\n        \n      </h3>\n    </div>\n    <pre _v-483a7361=\"\"><code class=\"language-markup\" _v-483a7361=\"\"><script type=\"language-mark-up\" _v-483a7361=\"\">\n    <n3-affix :offset=\"0\">\n      <nav class=\"sidebar\">\n        <ul>\n          <li>...</li>\n          <li>...</li>\n          <li>...</li>\n        </ul>\n      </nav>\n    </n3-affix>\n    </script></code></pre>\n    <h2 _v-483a7361=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-483a7361=\"\">\n      <thead _v-483a7361=\"\">\n        <tr _v-483a7361=\"\">\n          <th _v-483a7361=\"\">参数名</th>\n          <th _v-483a7361=\"\">类型</th>\n          <th _v-483a7361=\"\">默认值</th>\n          <th _v-483a7361=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-483a7361=\"\">\n        <tr _v-483a7361=\"\">\n          <td _v-483a7361=\"\">offset</td>\n          <td _v-483a7361=\"\"><code _v-483a7361=\"\">Number</code></td>\n          <td _v-483a7361=\"\"><code _v-483a7361=\"\">0</code></td>\n          <td _v-483a7361=\"\">离屏幕顶部的像素值</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"固钉\" _v-df705488=\"\">\n    <h1 class=\"page-header\" _v-df705488=\"\"><a href=\"#固钉\" class=\"anchor\" _v-df705488=\"\">固钉</a><span class=\"author\" _v-df705488=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-df705488=\"\">\n      <h3 _v-df705488=\"\">\n        <n3-affix :offset=\"0\" _v-df705488=\"\">\n          <nav class=\"sidebar\" _v-df705488=\"\">\n            <ul _v-df705488=\"\">\n              <li _v-df705488=\"\">...</li>\n              <li _v-df705488=\"\">...</li>\n              <li _v-df705488=\"\">...</li>\n            </ul>\n          </nav>\n        </n3-affix>\n        \n      </h3>\n    </div>\n    <pre _v-df705488=\"\"><code class=\"language-markup\" _v-df705488=\"\"><script type=\"language-mark-up\" _v-df705488=\"\">\n    <n3-affix :offset=\"0\">\n      <nav class=\"sidebar\">\n        <ul>\n          <li>...</li>\n          <li>...</li>\n          <li>...</li>\n        </ul>\n      </nav>\n    </n3-affix>\n    </script></code></pre>\n    <h2 _v-df705488=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-df705488=\"\">\n      <thead _v-df705488=\"\">\n        <tr _v-df705488=\"\">\n          <th _v-df705488=\"\">参数名</th>\n          <th _v-df705488=\"\">类型</th>\n          <th _v-df705488=\"\">默认值</th>\n          <th _v-df705488=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-df705488=\"\">\n        <tr _v-df705488=\"\">\n          <td _v-df705488=\"\">offset</td>\n          <td _v-df705488=\"\"><code _v-df705488=\"\">Number</code></td>\n          <td _v-df705488=\"\"><code _v-df705488=\"\">0</code></td>\n          <td _v-df705488=\"\">离屏幕顶部的像素值</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 201 */
@@ -6276,10 +6276,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-c18a8c16&file=n3CarouselDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs.vue"], function () {
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6cc375ba&file=n3CarouselDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs.vue"], function () {
 	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-c18a8c16&file=n3CarouselDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6cc375ba&file=n3CarouselDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -6301,8 +6301,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-c18a8c16&file=n3CarouselDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-c18a8c16&file=n3CarouselDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6cc375ba&file=n3CarouselDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6cc375ba&file=n3CarouselDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -6320,7 +6320,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".slide-img[_v-c18a8c16]{\n  height:400px!important;\n}\n.carousel-caption[_v-c18a8c16] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-c18a8c16] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
+	exports.push([module.id, ".slide-img[_v-6cc375ba]{\n  height:400px!important;\n}\n.carousel-caption[_v-6cc375ba] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-6cc375ba] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
 	
 	// exports
 
@@ -6455,7 +6455,7 @@
 /* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"幻灯片\" _v-c18a8c16=\"\">\n    <h1 class=\"page-header\" _v-c18a8c16=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-c18a8c16=\"\">幻灯片</a><span class=\"author\" _v-c18a8c16=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-c18a8c16=\"\">\n      <n3-carousel _v-c18a8c16=\"\">\n        <n3-slide _v-c18a8c16=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(209) + "\" _v-c18a8c16=\"\">\n          <div class=\"carousel-caption\" _v-c18a8c16=\"\">\n           <h3 _v-c18a8c16=\"\">Slide #1</h3>\n           <p _v-c18a8c16=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-c18a8c16=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(210) + "\" _v-c18a8c16=\"\">\n          <div class=\"carousel-caption\" _v-c18a8c16=\"\">\n           <h3 _v-c18a8c16=\"\">Slide #2</h3>\n           <p _v-c18a8c16=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-c18a8c16=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(211) + "\" _v-c18a8c16=\"\">\n          <div class=\"carousel-caption\" _v-c18a8c16=\"\">\n           <h3 _v-c18a8c16=\"\">Slide #3</h3>\n           <p _v-c18a8c16=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n    <pre _v-c18a8c16=\"\"><code class=\"language-markup\" _v-c18a8c16=\"\"><script type=\"language-mark-up\" _v-c18a8c16=\"\">\n   <n3-carousel>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/1.jpg\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #1</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/2.jpg\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #2</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/3.png\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #3</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </script></code></pre>\n\n  <h2 _v-c18a8c16=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-c18a8c16=\"\">\n    <thead _v-c18a8c16=\"\">\n      <tr _v-c18a8c16=\"\">\n        <th _v-c18a8c16=\"\">参数名</th>\n        <th _v-c18a8c16=\"\">类型</th>\n        <th _v-c18a8c16=\"\">默认值</th>\n        <th _v-c18a8c16=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-c18a8c16=\"\">\n      <tr _v-c18a8c16=\"\">\n        <td _v-c18a8c16=\"\">indicators</td>\n        <td _v-c18a8c16=\"\"><code _v-c18a8c16=\"\">Boolean</code></td>\n        <td _v-c18a8c16=\"\"><code _v-c18a8c16=\"\">true</code></td>\n        <td _v-c18a8c16=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-c18a8c16=\"\">\n        <td _v-c18a8c16=\"\">controls</td>\n        <td _v-c18a8c16=\"\"><code _v-c18a8c16=\"\">Boolean</code></td>\n        <td _v-c18a8c16=\"\"><code _v-c18a8c16=\"\">true</code></td>\n        <td _v-c18a8c16=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-c18a8c16=\"\">\n        <td _v-c18a8c16=\"\">interval</td>\n        <td _v-c18a8c16=\"\"><code _v-c18a8c16=\"\">Number</code></td>\n        <td _v-c18a8c16=\"\"><code _v-c18a8c16=\"\">5000</code></td>\n        <td _v-c18a8c16=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"幻灯片\" _v-6cc375ba=\"\">\n    <h1 class=\"page-header\" _v-6cc375ba=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-6cc375ba=\"\">幻灯片</a><span class=\"author\" _v-6cc375ba=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-6cc375ba=\"\">\n      <n3-carousel _v-6cc375ba=\"\">\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(209) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #1</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(210) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #2</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(211) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #3</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n    <pre _v-6cc375ba=\"\"><code class=\"language-markup\" _v-6cc375ba=\"\"><script type=\"language-mark-up\" _v-6cc375ba=\"\">\n   <n3-carousel>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/1.jpg\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #1</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/2.jpg\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #2</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/3.png\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #3</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </script></code></pre>\n\n  <h2 _v-6cc375ba=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-6cc375ba=\"\">\n    <thead _v-6cc375ba=\"\">\n      <tr _v-6cc375ba=\"\">\n        <th _v-6cc375ba=\"\">参数名</th>\n        <th _v-6cc375ba=\"\">类型</th>\n        <th _v-6cc375ba=\"\">默认值</th>\n        <th _v-6cc375ba=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-6cc375ba=\"\">\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">indicators</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Boolean</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">true</code></td>\n        <td _v-6cc375ba=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">controls</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Boolean</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">true</code></td>\n        <td _v-6cc375ba=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">interval</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Number</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">5000</code></td>\n        <td _v-6cc375ba=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
 /* 209 */
@@ -10279,8 +10279,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-847375aa&file=n3MultipleInputDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3MultipleInputDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-847375aa&file=n3MultipleInputDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3MultipleInputDocs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-e0b5c6f4&file=n3MultipleInputDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3MultipleInputDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-e0b5c6f4&file=n3MultipleInputDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3MultipleInputDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11498,10 +11498,10 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-9d01b81c&file=n3AnimateDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs.vue"], function () {
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-2bbd5b8d&file=n3AnimateDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs.vue"], function () {
 	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-9d01b81c&file=n3AnimateDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-2bbd5b8d&file=n3AnimateDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11523,8 +11523,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-9d01b81c&file=n3AnimateDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-9d01b81c&file=n3AnimateDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2bbd5b8d&file=n3AnimateDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2bbd5b8d&file=n3AnimateDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11542,7 +11542,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".content[_v-9d01b81c] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px; \n  }", ""]);
+	exports.push([module.id, ".content[_v-2bbd5b8d] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px; \n  }", ""]);
 	
 	// exports
 
@@ -11648,7 +11648,7 @@
 /* 300 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"动画\" _v-9d01b81c=\"\">\n    <h1 class=\"page-header\" _v-9d01b81c=\"\">\n      <a href=\"#动画\" class=\"anchor\" _v-9d01b81c=\"\">动画</a><span class=\"author\" _v-9d01b81c=\"\"> </span>\n    </h1>\n    <div class=\"bs-example\" _v-9d01b81c=\"\">\n        <n3-button @click=\"show1=!show1\" _v-9d01b81c=\"\">fadeLeft</n3-button>\n        <div v-if=\"show1\" transition=\"fadeLeft\" class=\"content\" _v-9d01b81c=\"\">\n            <h4 _v-9d01b81c=\"\">Title</h4>\n            <p _v-9d01b81c=\"\">...</p>\n            <p _v-9d01b81c=\"\">...</p>\n            <p _v-9d01b81c=\"\">...</p>\n        </div>\n        <br _v-9d01b81c=\"\">\n        <br _v-9d01b81c=\"\">\n         <n3-button @click=\"show2=!show2\" _v-9d01b81c=\"\">fadeDown</n3-button>\n        <div v-if=\"show2\" transition=\"fadeDown\" class=\"content\" _v-9d01b81c=\"\">\n            <h4 _v-9d01b81c=\"\">Title</h4>\n            <p _v-9d01b81c=\"\">...</p>\n            <p _v-9d01b81c=\"\">...</p>\n            <p _v-9d01b81c=\"\">...</p>\n        </div>\n        <br _v-9d01b81c=\"\">\n        <br _v-9d01b81c=\"\">\n        <n3-button @click=\"show3=!show3\" _v-9d01b81c=\"\">bounce</n3-button>\n        <div v-if=\"show3\" transition=\"bounce\" style=\"width:100px\" _v-9d01b81c=\"\">\n            <p _v-9d01b81c=\"\">提示:作用于尺寸比较小的元素</p>\n        </div>\n    </div>\n\n<pre _v-9d01b81c=\"\"><code class=\"language-markup\" _v-9d01b81c=\"\">\n  <script type=\"language-mark-up\" _v-9d01b81c=\"\">     作用于( v-if , v-show , v-for) 等元素\n\n        <n3-button  @click=\"show=!show\">切换</n3-button>\n        <div v-if=\"show\" transition=\"fadeLeft\" >\n            <h4>Title</h4>\n            <p>...</p>\n            <p>...</p>\n            <p>...</p>\n        </div>\n    </script></code></pre>\n    <h2 _v-9d01b81c=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-9d01b81c=\"\">\n      <thead _v-9d01b81c=\"\">\n        <tr _v-9d01b81c=\"\">\n          <th _v-9d01b81c=\"\">参数名</th>\n          <th _v-9d01b81c=\"\">类型</th>\n          <th _v-9d01b81c=\"\">默认值</th>\n          <th _v-9d01b81c=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-9d01b81c=\"\">\n        <tr _v-9d01b81c=\"\">\n          <td _v-9d01b81c=\"\">transition</td>\n          <td _v-9d01b81c=\"\"><code _v-9d01b81c=\"\">String</code></td>\n          <td _v-9d01b81c=\"\"><code _v-9d01b81c=\"\"></code></td>\n          <td _v-9d01b81c=\"\"><code _v-9d01b81c=\"\">fade</code> \n              <code _v-9d01b81c=\"\">fadeLeft</code>\n              <code _v-9d01b81c=\"\">fadeDown</code>\n              <code _v-9d01b81c=\"\">bounce</code>\n              <code _v-9d01b81c=\"\">collapse</code>\n              <code _v-9d01b81c=\"\">scale</code>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"动画\" _v-2bbd5b8d=\"\">\n    <h1 class=\"page-header\" _v-2bbd5b8d=\"\">\n      <a href=\"#动画\" class=\"anchor\" _v-2bbd5b8d=\"\">动画</a><span class=\"author\" _v-2bbd5b8d=\"\"> </span>\n    </h1>\n    <div class=\"bs-example\" _v-2bbd5b8d=\"\">\n        <n3-button @click=\"show1=!show1\" _v-2bbd5b8d=\"\">fadeLeft</n3-button>\n        <div v-if=\"show1\" transition=\"fadeLeft\" class=\"content\" _v-2bbd5b8d=\"\">\n            <h4 _v-2bbd5b8d=\"\">Title</h4>\n            <p _v-2bbd5b8d=\"\">...</p>\n            <p _v-2bbd5b8d=\"\">...</p>\n            <p _v-2bbd5b8d=\"\">...</p>\n        </div>\n        <br _v-2bbd5b8d=\"\">\n        <br _v-2bbd5b8d=\"\">\n         <n3-button @click=\"show2=!show2\" _v-2bbd5b8d=\"\">fadeDown</n3-button>\n        <div v-if=\"show2\" transition=\"fadeDown\" class=\"content\" _v-2bbd5b8d=\"\">\n            <h4 _v-2bbd5b8d=\"\">Title</h4>\n            <p _v-2bbd5b8d=\"\">...</p>\n            <p _v-2bbd5b8d=\"\">...</p>\n            <p _v-2bbd5b8d=\"\">...</p>\n        </div>\n        <br _v-2bbd5b8d=\"\">\n        <br _v-2bbd5b8d=\"\">\n        <n3-button @click=\"show3=!show3\" _v-2bbd5b8d=\"\">bounce</n3-button>\n        <div v-if=\"show3\" transition=\"bounce\" style=\"width:100px\" _v-2bbd5b8d=\"\">\n            <p _v-2bbd5b8d=\"\">提示:作用于尺寸比较小的元素</p>\n        </div>\n    </div>\n\n<pre _v-2bbd5b8d=\"\"><code class=\"language-markup\" _v-2bbd5b8d=\"\">\n  <script type=\"language-mark-up\" _v-2bbd5b8d=\"\">     作用于( v-if , v-show , v-for) 等元素\n\n        <n3-button  @click=\"show=!show\">切换</n3-button>\n        <div v-if=\"show\" transition=\"fadeLeft\" >\n            <h4>Title</h4>\n            <p>...</p>\n            <p>...</p>\n            <p>...</p>\n        </div>\n    </script></code></pre>\n    <h2 _v-2bbd5b8d=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-2bbd5b8d=\"\">\n      <thead _v-2bbd5b8d=\"\">\n        <tr _v-2bbd5b8d=\"\">\n          <th _v-2bbd5b8d=\"\">参数名</th>\n          <th _v-2bbd5b8d=\"\">类型</th>\n          <th _v-2bbd5b8d=\"\">默认值</th>\n          <th _v-2bbd5b8d=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-2bbd5b8d=\"\">\n        <tr _v-2bbd5b8d=\"\">\n          <td _v-2bbd5b8d=\"\">transition</td>\n          <td _v-2bbd5b8d=\"\"><code _v-2bbd5b8d=\"\">String</code></td>\n          <td _v-2bbd5b8d=\"\"><code _v-2bbd5b8d=\"\"></code></td>\n          <td _v-2bbd5b8d=\"\"><code _v-2bbd5b8d=\"\">fade</code> \n              <code _v-2bbd5b8d=\"\">fadeLeft</code>\n              <code _v-2bbd5b8d=\"\">fadeDown</code>\n              <code _v-2bbd5b8d=\"\">bounce</code>\n              <code _v-2bbd5b8d=\"\">collapse</code>\n              <code _v-2bbd5b8d=\"\">scale</code>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 301 */
@@ -11678,7 +11678,7 @@
 /* 302 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(index,item) in list\">\n              <n3-sub-nav  :show.sync=\"item.show\" >\n                <a slot=\"title\">{{index}}</a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a>{{i.label}}</a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 904568523@qq.com</p>\n      <p>当前版本 Beta</p>\n    </n3-container>\n  </footer>\n</div>";
+	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(index,item) in list\">\n              <n3-sub-nav  :show.sync=\"item.show\" >\n                <a slot=\"title\">{{index}}</a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a>{{i.label}}</a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n      <p>当前版本 Beta</p>\n    </n3-container>\n  </footer>\n</div>";
 
 /***/ },
 /* 303 */
@@ -27707,59 +27707,58 @@
 	
 	// <template>
 	//   <div class="{{prefixCls}}-btn-group {{prefixCls}}-select-group" >
-	//     <div class="inline">
-	//       <n3-button  
-	//         :style="{width:width}"
-	//         :disabled="disabled"
-	//         :size="size"
-	//         class="{{prefixCls}}-dropdown-toggle"
-	//         @click="toggleDropdown">
+	//     <n3-button  
+	//       :style="{width:width}"
+	//       :disabled="disabled"
+	//       :size="size"
+	//       class="{{prefixCls}}-dropdown-toggle"
+	//       @click="toggleDropdown">
 	
-	//         <span v-if="showPlaceholder || !showselected">{{placeholder}}</span>
-	//         <span v-if="showselected" >
-	//           <template v-for="item in selectedItems">
-	//             {{{format.call(this._context,item)}}}
-	//           </template>
-	//         </span>
-	//         <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
-	//         <n3-badge v-if="badge">{{badge}}</n3-badge>
-	//       </n3-button>
-	//       <ul 
-	//         :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
-	//         class="{{prefixCls}}-dropdown-menu" 
-	//         v-el:menu 
-	//         v-show="show" 
-	//         transition="fadeDown">
-	//           <li v-if="search">
-	//             <n3-input
-	//               class="{{prefixCls}}-select-search"
-	//               :placeholder="inputPlaceholder"
-	//               :value.sync="searchText"
-	//               @keydown.enter="addExtra"
-	//             ></n3-input>
-	//             <n3-icon type="plus-square-o" v-if="extra" @click="addExtra"></n3-icon>
-	//           </li>
-	//           <li v-if="multiple" class="{{prefixCls}}-select-all">
-	//             <a @click.prevent="selectAll">
-	//               全选
-	//              <n3-icon type="check" v-show="allSelected"></n3-icon>
+	//       <span  v-if="showPlaceholder || !showselected">{{placeholder}}</span>
+	//       <span  v-if="showselected" >
+	//         <template v-for="item in selectedItems">
+	//           {{{format.call(this._context,item)}}}
+	//         </template>
+	//       </span>
+	//       <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
+	//       <n3-badge v-if="badge">{{badge}}</n3-badge>
+	//     </n3-button>
+	//     <ul 
+	//       :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
+	//       class="{{prefixCls}}-dropdown-menu" 
+	//       v-el:menu 
+	//       v-show="show" 
+	//       transition="fadeDown">
+	//         <li v-if="search">
+	//           <n3-input
+	//             class="{{prefixCls}}-select-search"
+	//             :placeholder="inputPlaceholder"
+	//             :value.sync="searchText"
+	//             @keydown.enter="addExtra"
+	//           ></n3-input>
+	//           <n3-icon type="plus-square-o" v-if="extra" @click="addExtra"></n3-icon>
+	//         </li>
+	//         <li v-if="multiple" class="{{prefixCls}}-select-all">
+	//           <a @click.prevent="selectAll">
+	//             全选
+	//            <n3-icon type="check" v-show="allSelected"></n3-icon>
+	//           </a>
+	//         </li>
+	
+	//         <template v-if="options.length">
+	//           <li v-for="option in options | filterSearch searchText " 
+	//               :value="option.value" 
+	//               style="position:relative">
+	//             <a @click.prevent="select(option)" >
+	//               {{{ option.label }}} 
+	//               <n3-icon type="check" v-show="findIndex(option.value) !== -1"></n3-icon>
 	//             </a>
 	//           </li>
-	
-	//           <template v-if="options.length">
-	//             <li v-for="option in options | filterSearch searchText " 
-	//                 :value="option.value" 
-	//                 style="position:relative">
-	//               <a @click.prevent="select(option)" >
-	//                 {{{ option.label }}} 
-	//                 <n3-icon type="check" v-show="findIndex(option.value) !== -1"></n3-icon>
-	//               </a>
-	//             </li>
-	//           </template>
-	//           <slot v-else ></slot>
-	//         <div class="{{prefixCls}}-notify" v-show="showNotify" transition="fade">最多选择 {{limit}} 项</div>
-	//       </ul>
-	//     </div>
+	//         </template>
+	//         <slot v-else ></slot>
+	//       <div class="{{prefixCls}}-notify" v-show="showNotify" transition="fade">最多选择 {{limit}} 项</div>
+	//     </ul>
+	//     <div class="clearfix"></div>
 	//     <validate
 	//       :name="name"
 	//       :rules="rules"
@@ -28064,7 +28063,7 @@
 /* 399 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-select-group\" >\n    <div class=\"inline\">\n      <n3-button  \n        :style=\"{width:width}\"\n        :disabled=\"disabled\"\n        :size=\"size\"\n        class=\"{{prefixCls}}-dropdown-toggle\"\n        @click=\"toggleDropdown\">\n\n        <span v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n        <span v-if=\"showselected\" >\n          <template v-for=\"item in selectedItems\">\n            {{{format.call(this._context,item)}}}\n          </template>\n        </span>\n        <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n        <n3-badge v-if=\"badge\">{{badge}}</n3-badge>\n      </n3-button>\n      <ul \n        :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n        class=\"{{prefixCls}}-dropdown-menu\" \n        v-el:menu \n        v-show=\"show\" \n        transition=\"fadeDown\">\n          <li v-if=\"search\">\n            <n3-input\n              class=\"{{prefixCls}}-select-search\"\n              :placeholder=\"inputPlaceholder\"\n              :value.sync=\"searchText\"\n              @keydown.enter=\"addExtra\"\n            ></n3-input>\n            <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\n          </li>\n          <li v-if=\"multiple\" class=\"{{prefixCls}}-select-all\">\n            <a @click.prevent=\"selectAll\">\n              全选\n             <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n            </a>\n          </li>\n\n          <template v-if=\"options.length\">\n            <li v-for=\"option in options | filterSearch searchText \" \n                :value=\"option.value\" \n                style=\"position:relative\">\n              <a @click.prevent=\"select(option)\" >\n                {{{ option.label }}} \n                <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n              </a>\n            </li>\n          </template>\n          <slot v-else ></slot>\n        <div class=\"{{prefixCls}}-notify\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n      </ul>\n    </div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-select-group\" >\n    <n3-button  \n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      class=\"{{prefixCls}}-dropdown-toggle\"\n      @click=\"toggleDropdown\">\n\n      <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n      <span  v-if=\"showselected\" >\n        <template v-for=\"item in selectedItems\">\n          {{{format.call(this._context,item)}}}\n        </template>\n      </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n      <n3-badge v-if=\"badge\">{{badge}}</n3-badge>\n    </n3-button>\n    <ul \n      :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n      class=\"{{prefixCls}}-dropdown-menu\" \n      v-el:menu \n      v-show=\"show\" \n      transition=\"fadeDown\">\n        <li v-if=\"search\">\n          <n3-input\n            class=\"{{prefixCls}}-select-search\"\n            :placeholder=\"inputPlaceholder\"\n            :value.sync=\"searchText\"\n            @keydown.enter=\"addExtra\"\n          ></n3-input>\n          <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\n        </li>\n        <li v-if=\"multiple\" class=\"{{prefixCls}}-select-all\">\n          <a @click.prevent=\"selectAll\">\n            全选\n           <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n          </a>\n        </li>\n\n        <template v-if=\"options.length\">\n          <li v-for=\"option in options | filterSearch searchText \" \n              :value=\"option.value\" \n              style=\"position:relative\">\n            <a @click.prevent=\"select(option)\" >\n              {{{ option.label }}} \n              <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n            </a>\n          </li>\n        </template>\n        <slot v-else ></slot>\n      <div class=\"{{prefixCls}}-notify\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n    </ul>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n  </div>";
 
 /***/ },
 /* 400 */
