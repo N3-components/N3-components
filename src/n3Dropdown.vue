@@ -3,7 +3,7 @@
     <span v-el:trigger> 
       <slot name="trigger" ></slot>
     </span>
-    <ul class="{{prefixCls}}-dropdown-menu" v-show="show" transition="fadeDown">
+    <ul class="{{prefixCls}}-dropdown-menu" v-show="show" :transition="effect">
       <slot></slot>
     </ul>
   </div>
@@ -24,6 +24,10 @@ export default {
     clickClose: {
       type: Boolean,
       default: false
+    },
+    effect: {
+      type: String,
+      default: 'fadeDown'
     },
     prefixCls: {
       type: String,

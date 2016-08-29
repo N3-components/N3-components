@@ -10,6 +10,7 @@
   <validate
     :name="name"
     :rules="rules"
+    :valid-status.sync="validStatus"
     :custom-validate="customValidate" 
     :value="value"
     :results.sync="validateResults">

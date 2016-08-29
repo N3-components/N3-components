@@ -7,10 +7,10 @@ import n3CheckboxGroup from './n3CheckboxGroup'
 import n3Checkbox from './n3Checkbox'
 import n3CheckboxBtn from './n3CheckboxBtn'
 import n3Cascader from './n3Cascader'
-import n3Toast from './n3Toast'
 import n3ToastMethod from './n3ToastMethod'
 import n3Label from './n3Label'
 import n3Input from './n3Input'
+import n3Textarea from './n3Textarea'
 import n3Datepicker from './n3Datepicker'
 import n3Timepicker from './n3Timepicker'
 import n3Datetimepicker from './n3Datetimepicker'
@@ -54,6 +54,8 @@ import n3Form from './n3Form'
 import n3FormItem from './n3FormItem'
 import n3Slider from './n3Slider'
 import n3Slide from './n3Slide'
+import n3Uploader from './n3Uploader'
+import transition from './transition'
 import './style/common.less'
 
 const Components = {
@@ -78,10 +80,11 @@ const Components = {
   n3Datepicker,
   n3Timepicker,
   n3Datetimepicker,
+  n3Uploader,
   n3Cascader,
   n3Label,
   n3Input,
-  n3Toast,
+  n3Textarea,
   n3Dropdown,
   n3Modal,
   n3Option,
@@ -117,6 +120,10 @@ const Components = {
 const install = function (Vue) {
   for (let i in Components) {
     Vue.component(i, Components[i])
+  }
+
+  for (let i in transition) {
+    Vue.transition(i, transition[i])
   }
 
   Vue.mixin({

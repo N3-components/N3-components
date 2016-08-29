@@ -2,21 +2,16 @@
   <div class="bs-docs-section" id="进度条"  >
     <h1 class="page-header"><a href="#进度条" class="anchor">进度条</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <h4>静态</h4>
+      <h4>高度</h4>
       <div class="row">
         <div class="col-md-4">
-          <n3-progress>
-            <n3-progressbar :now="20" type="success" ></n3-progressbar>
+          <n3-progress class="margin">
+            <n3-progressbar :now="20" type="success" height="10px"></n3-progressbar>
           </n3-progress>
         </div>
         <div class="col-md-4">
-          <n3-progress>
-            <n3-progressbar :now="40" type="info"></n3-progressbar>
-          </n3-progress>
-        </div>
-        <div class="col-md-4">
-          <n3-progress>
-            <n3-progressbar :now="60" type="primary"></n3-progressbar>
+          <n3-progress class="margin">
+            <n3-progressbar :now="40" type="success"></n3-progressbar>
           </n3-progress>
         </div>
       </div>
@@ -27,15 +22,15 @@
         动态
         <n3-button  @click="dynamicClick">随机变化</n3-button>
       </h4>
-      <n3-progress>
+      <n3-progress class="margin" >
         <n3-progressbar :now="dynamicData[0] * 2" type="info" ></n3-progressbar>
       </n3-progress>
-      <n3-progress>
+      <n3-progress class="margin">
         <n3-progressbar :now="dynamicData[1] * 2" type="warning"></n3-progressbar>
       </n3-progress>
-      <n3-progress>
+      <n3-progress class="margin">
         <n3-progressbar :now="dynamicData[2] * 2" type="danger"></n3-progressbar>
-      </n3-progress>
+      </n3-progress class="margin">
       <n3-progress>
         <n3-progressbar :now="dynamicData[3] * 2" type="success" striped></n3-progressbar>
       </n3-progress>
@@ -60,17 +55,12 @@
       <div class="row">
         <div class="col-md-4">
           <n3-progress>
-            <n3-progressbar :now="20" type="success"></n3-progressbar>
+            <n3-progressbar :now="20" type="success" height="10px"></n3-progressbar>
           </n3-progress>
         </div>
         <div class="col-md-4">
           <n3-progress>
             <n3-progressbar :now="40" type="info"></n3-progressbar>
-          </n3-progress>
-        </div>
-        <div class="col-md-4">
-          <n3-progress>
-            <n3-progressbar :now="60" type="primary"></n3-progressbar>
           </n3-progress>
         </div>
       </div>
@@ -126,6 +116,12 @@
           <td></td>
           <td>当前进度</td>
         </tr>
+         <tr>
+          <td>height</td>
+          <td><code>String</code></td>
+          <td>20px</td>
+          <td>高度</td>
+        </tr>
         <tr>
           <td>type</td>
           <td><code>String</code></td>
@@ -180,3 +176,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.margin{
+  margin-bottom:20px;
+}
+
+</style>

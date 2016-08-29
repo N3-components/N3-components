@@ -1,12 +1,3 @@
-.collapse-transition {
-  transform: scaleY(1);
-  transition: all .3s ease;
-  transform-origin:0 0;
-}
-.collapse-enter, .collapse-leave {
-   transform: scaleY(0);
-}
-
 .fadeLeft-transition {
   transition: all .3s ease;
   transform:translateX(0);
@@ -33,6 +24,11 @@
 .fadeDown-enter, .fadeDown-leave {
   transform:translateY(-10px);
   opacity: 0;
+}
+
+.collapse-transition {
+    transition: max-height .2s ease;
+    overflow: hidden;
 }
 
 .bounce-transition {

@@ -28,7 +28,7 @@
       </n3-tooltip>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-   ooltip  content="tooltip on left" placement="left" trigger="hover">
+   <n3-tooltip  content="tooltip on left" placement="left" trigger="hover">
         <n3-button >tooltip on left</n3-button>
       </n3-tooltip>
       <n3-tooltip   content="tooltip on right" placement="right" trigger="hover">
@@ -63,7 +63,7 @@
     <tbody>
       <tr>
         <td>trigger</td>
-        <td><code>String</code>, one of <code>hover</code>
+        <td><code>String</code>, 如:  <code>hover</code>
         <code>focus</code>
         <code>hover</code></td>
         <td><code>click</code></td>
@@ -71,7 +71,7 @@
       </tr>
       <tr>
         <td>effect</td>
-        <td><code>String</code>, one of <code>scale</code> <code>fadein</code></td>
+        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>
         <td><code>scale</code></td>
         <td></td>
       <tr>
@@ -81,7 +81,7 @@
         <td></td>
       </tr>
         <td>placement</td>
-        <td><code>String</code>, one of <code>top</code>
+        <td><code>String</code>, 如:  <code>top</code>
         <code>left</code>
         <code>right</code>
         <code>bottom</code></td>

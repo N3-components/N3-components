@@ -109,7 +109,7 @@ Select data : {{arr}}
       ]
     </script></code></pre>
     <h2>参数</h2>
-    <p>样式的参数和 <a href="#按钮组">按钮组</a> 相同</p>
+    <p>样式的参数和 <a href="#n3ButtonsDocs">按钮</a> 相同</p>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -226,7 +226,7 @@ Select data : {{arr}}
         </tr>
       </tbody>
     </table>
-
+    <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
   </div>
 </template>
 

@@ -9,10 +9,6 @@
   display: flex;
   flex-wrap:wrap;
 
-  &.@{prefix-cls}-padding-left-none{
-    padding-left: 0px !important;
-  }
-
   .@{prefix-cls}-form-control{
     border: 0px;
     outline: none;
@@ -27,6 +23,11 @@
     display: inline-block;
     width:8px;
     height: 23px;
+    
+    &:first-child{
+      margin-left:-8px;
+    }
+
     &:hover{
       cursor: text;
     }
@@ -42,5 +43,13 @@
   }
   .@{prefix-cls}-multiple-input-m-tag:hover{
     cursor: pointer;
+  }
+  .@{prefix-cls}-multiple-input-m-tag{
+    background: @lightColor;
+    padding: 0px 10px;
+    border-radius: 5px;
+   .@{prefix-cls}-multiple-close{
+      color:@grayColor;
+    }
   }
 }

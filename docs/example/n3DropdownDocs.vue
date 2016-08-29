@@ -48,7 +48,7 @@
         </tr>
         <tr>
           <td>trigger</td>
-          <td><code>String</code> one of <code>click</code><code>hover</code></td>
+          <td><code>String</code> 如:  <code>click</code><code>hover</code></td>
           <td>click</td>
           <td>触发方式</td>
         </tr>

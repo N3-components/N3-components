@@ -55,6 +55,7 @@
     <validate
       :name="name"
       :rules="rules"
+      :valid-status.sync="validStatus"
       :custom-validate="customValidate" 
       :value="value"
       :results.sync="validateResults">
@@ -167,7 +168,6 @@ export default {
   },
   watch: {
     value () {
-      this.$dispatch('change')
       if (type.isFunction(this.onChange)) {
         this.onChange()
       }

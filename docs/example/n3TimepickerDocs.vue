@@ -53,8 +53,8 @@
           <td>秒钟范围</td>
         </tr>
        <tr>
-          <td>hide</td>
-          <td><code>Event</code></td>
+          <td>on-hide</td>
+          <td><code>Function</code></td>
           <td></td>
           <td>隐藏时触发</td>
         </tr>

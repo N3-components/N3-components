@@ -1,6 +1,6 @@
 <template>
 <span>
-  <n3-dropdown :trigger="trigger" :show.sync="show" :click-close="true">
+  <n3-dropdown :trigger="trigger" :show.sync="show" :click-close="true" effect="collapse">
     <div slot="trigger"   class="{{prefixCls}}-sub-nav-trigger" >
       <slot name="title"></slot>
       <n3-icon class="{{prefixCls}}-sub-nav-fa" :type="show ? 'angle-up' : 'angle-down'" ></n3-icon>

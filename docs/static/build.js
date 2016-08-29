@@ -46,19 +46,19 @@
 
 	'use strict';
 	
-	var _n3Docs = __webpack_require__(138);
+	var _n3Docs = __webpack_require__(145);
 	
 	var _n3Docs2 = _interopRequireDefault(_n3Docs);
 	
-	var _headerDocs = __webpack_require__(145);
+	var _headerDocs = __webpack_require__(152);
 	
 	var _headerDocs2 = _interopRequireDefault(_headerDocs);
 	
-	var _vue = __webpack_require__(303);
+	var _vue = __webpack_require__(316);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
-	var _index = __webpack_require__(305);
+	var _index = __webpack_require__(318);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -215,14 +215,21 @@
 /* 135 */,
 /* 136 */,
 /* 137 */,
-/* 138 */
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(139)
-	module.exports = __webpack_require__(143)
+	__webpack_require__(146)
+	module.exports = __webpack_require__(150)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(302)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(315)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -240,16 +247,16 @@
 	}
 
 /***/ },
-/* 139 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(140);
+	var content = __webpack_require__(147);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -266,10 +273,10 @@
 	}
 
 /***/ },
-/* 140 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
@@ -280,7 +287,7 @@
 
 
 /***/ },
-/* 141 */
+/* 148 */
 /***/ function(module, exports) {
 
 	/*
@@ -336,7 +343,7 @@
 
 
 /***/ },
-/* 142 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -588,7 +595,7 @@
 
 
 /***/ },
-/* 143 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -597,163 +604,171 @@
 	  value: true
 	});
 	
-	var _prismjs = __webpack_require__(144);
+	var _prismjs = __webpack_require__(151);
 	
 	var _prismjs2 = _interopRequireDefault(_prismjs);
 	
-	var _headerDocs = __webpack_require__(145);
+	var _headerDocs = __webpack_require__(152);
 	
 	var _headerDocs2 = _interopRequireDefault(_headerDocs);
 	
-	var _n3LayoutDocs = __webpack_require__(148);
+	var _n3LayoutDocs = __webpack_require__(155);
 	
 	var _n3LayoutDocs2 = _interopRequireDefault(_n3LayoutDocs);
 	
-	var _n3IconDocs = __webpack_require__(153);
+	var _n3IconDocs = __webpack_require__(160);
 	
 	var _n3IconDocs2 = _interopRequireDefault(_n3IconDocs);
 	
-	var _n3TagsDocs = __webpack_require__(158);
+	var _n3TagsDocs = __webpack_require__(165);
 	
 	var _n3TagsDocs2 = _interopRequireDefault(_n3TagsDocs);
 	
-	var _n3AlertDocs = __webpack_require__(161);
+	var _n3AlertDocs = __webpack_require__(168);
 	
 	var _n3AlertDocs2 = _interopRequireDefault(_n3AlertDocs);
 	
-	var _n3AccordionDocs = __webpack_require__(188);
+	var _n3AccordionDocs = __webpack_require__(195);
 	
 	var _n3AccordionDocs2 = _interopRequireDefault(_n3AccordionDocs);
 	
-	var _n3CascaderDocs = __webpack_require__(191);
+	var _n3CascaderDocs = __webpack_require__(198);
 	
 	var _n3CascaderDocs2 = _interopRequireDefault(_n3CascaderDocs);
 	
-	var _n3AffixDocs = __webpack_require__(196);
+	var _n3AffixDocs = __webpack_require__(203);
 	
 	var _n3AffixDocs2 = _interopRequireDefault(_n3AffixDocs);
 	
-	var _n3AsideDocs = __webpack_require__(201);
+	var _n3AsideDocs = __webpack_require__(208);
 	
 	var _n3AsideDocs2 = _interopRequireDefault(_n3AsideDocs);
 	
-	var _n3CarouselDocs = __webpack_require__(204);
+	var _n3CarouselDocs = __webpack_require__(211);
 	
 	var _n3CarouselDocs2 = _interopRequireDefault(_n3CarouselDocs);
 	
-	var _n3ButtonsDocs = __webpack_require__(212);
+	var _n3ButtonsDocs = __webpack_require__(219);
 	
 	var _n3ButtonsDocs2 = _interopRequireDefault(_n3ButtonsDocs);
 	
-	var _n3ToastDocs = __webpack_require__(214);
+	var _n3ToastDocs = __webpack_require__(221);
 	
 	var _n3ToastDocs2 = _interopRequireDefault(_n3ToastDocs);
 	
-	var _n3DatepickerDocs = __webpack_require__(217);
+	var _n3DatepickerDocs = __webpack_require__(224);
 	
 	var _n3DatepickerDocs2 = _interopRequireDefault(_n3DatepickerDocs);
 	
-	var _n3TimepickerDocs = __webpack_require__(220);
+	var _n3TimepickerDocs = __webpack_require__(227);
 	
 	var _n3TimepickerDocs2 = _interopRequireDefault(_n3TimepickerDocs);
 	
-	var _n3DatetimepickerDocs = __webpack_require__(223);
+	var _n3DatetimepickerDocs = __webpack_require__(230);
 	
 	var _n3DatetimepickerDocs2 = _interopRequireDefault(_n3DatetimepickerDocs);
 	
-	var _n3DropdownDocs = __webpack_require__(226);
+	var _n3DropdownDocs = __webpack_require__(233);
 	
 	var _n3DropdownDocs2 = _interopRequireDefault(_n3DropdownDocs);
 	
-	var _n3ModalDocs = __webpack_require__(229);
+	var _n3ModalDocs = __webpack_require__(236);
 	
 	var _n3ModalDocs2 = _interopRequireDefault(_n3ModalDocs);
 	
-	var _n3NavDocs = __webpack_require__(232);
+	var _n3InputDocs = __webpack_require__(239);
+	
+	var _n3InputDocs2 = _interopRequireDefault(_n3InputDocs);
+	
+	var _n3TextareaDocs = __webpack_require__(242);
+	
+	var _n3TextareaDocs2 = _interopRequireDefault(_n3TextareaDocs);
+	
+	var _n3NavDocs = __webpack_require__(245);
 	
 	var _n3NavDocs2 = _interopRequireDefault(_n3NavDocs);
 	
-	var _n3PopoverDocs = __webpack_require__(235);
+	var _n3PopoverDocs = __webpack_require__(248);
 	
 	var _n3PopoverDocs2 = _interopRequireDefault(_n3PopoverDocs);
 	
-	var _n3ProgressbarDocs = __webpack_require__(238);
+	var _n3ProgressbarDocs = __webpack_require__(251);
 	
 	var _n3ProgressbarDocs2 = _interopRequireDefault(_n3ProgressbarDocs);
 	
-	var _n3SelectDocs = __webpack_require__(241);
+	var _n3SelectDocs = __webpack_require__(256);
 	
 	var _n3SelectDocs2 = _interopRequireDefault(_n3SelectDocs);
 	
-	var _n3SwitchDocs = __webpack_require__(244);
+	var _n3SwitchDocs = __webpack_require__(259);
 	
 	var _n3SwitchDocs2 = _interopRequireDefault(_n3SwitchDocs);
 	
-	var _n3TimelineDocs = __webpack_require__(247);
+	var _n3TimelineDocs = __webpack_require__(262);
 	
 	var _n3TimelineDocs2 = _interopRequireDefault(_n3TimelineDocs);
 	
-	var _n3TabsDocs = __webpack_require__(250);
+	var _n3TabsDocs = __webpack_require__(265);
 	
 	var _n3TabsDocs2 = _interopRequireDefault(_n3TabsDocs);
 	
-	var _n3TooltipDocs = __webpack_require__(253);
+	var _n3TooltipDocs = __webpack_require__(268);
 	
 	var _n3TooltipDocs2 = _interopRequireDefault(_n3TooltipDocs);
 	
-	var _n3TypeaheadDocs = __webpack_require__(256);
+	var _n3TypeaheadDocs = __webpack_require__(271);
 	
 	var _n3TypeaheadDocs2 = _interopRequireDefault(_n3TypeaheadDocs);
 	
-	var _n3StepDocs = __webpack_require__(259);
+	var _n3StepDocs = __webpack_require__(274);
 	
 	var _n3StepDocs2 = _interopRequireDefault(_n3StepDocs);
 	
-	var _n3SliderDocs = __webpack_require__(262);
+	var _n3SliderDocs = __webpack_require__(277);
 	
 	var _n3SliderDocs2 = _interopRequireDefault(_n3SliderDocs);
 	
-	var _n3LoadingDocs = __webpack_require__(265);
+	var _n3LoadingDocs = __webpack_require__(280);
 	
 	var _n3LoadingDocs2 = _interopRequireDefault(_n3LoadingDocs);
 	
-	var _n3SimplePaginationDocs = __webpack_require__(268);
+	var _n3SimplePaginationDocs = __webpack_require__(283);
 	
 	var _n3SimplePaginationDocs2 = _interopRequireDefault(_n3SimplePaginationDocs);
 	
-	var _n3DataTableDocs = __webpack_require__(271);
+	var _n3DataTableDocs = __webpack_require__(286);
 	
 	var _n3DataTableDocs2 = _interopRequireDefault(_n3DataTableDocs);
 	
-	var _n3BreadcrumbDocs = __webpack_require__(274);
+	var _n3BreadcrumbDocs = __webpack_require__(289);
 	
 	var _n3BreadcrumbDocs2 = _interopRequireDefault(_n3BreadcrumbDocs);
 	
-	var _n3MultipleInputDocs = __webpack_require__(276);
+	var _n3MultipleInputDocs = __webpack_require__(291);
 	
 	var _n3MultipleInputDocs2 = _interopRequireDefault(_n3MultipleInputDocs);
 	
-	var _n3TreeDocs = __webpack_require__(281);
+	var _n3TreeDocs = __webpack_require__(294);
 	
 	var _n3TreeDocs2 = _interopRequireDefault(_n3TreeDocs);
 	
-	var _n3UploaderDocs = __webpack_require__(284);
+	var _n3UploaderDocs = __webpack_require__(297);
 	
 	var _n3UploaderDocs2 = _interopRequireDefault(_n3UploaderDocs);
 	
-	var _n3FormDocs = __webpack_require__(287);
+	var _n3FormDocs = __webpack_require__(300);
 	
 	var _n3FormDocs2 = _interopRequireDefault(_n3FormDocs);
 	
-	var _n3CheckboxDocs = __webpack_require__(290);
+	var _n3CheckboxDocs = __webpack_require__(303);
 	
 	var _n3CheckboxDocs2 = _interopRequireDefault(_n3CheckboxDocs);
 	
-	var _n3RadioDocs = __webpack_require__(293);
+	var _n3RadioDocs = __webpack_require__(306);
 	
 	var _n3RadioDocs2 = _interopRequireDefault(_n3RadioDocs);
 	
-	var _n3AnimateDocs = __webpack_require__(296);
+	var _n3AnimateDocs = __webpack_require__(309);
 	
 	var _n3AnimateDocs2 = _interopRequireDefault(_n3AnimateDocs);
 	
@@ -797,7 +812,7 @@
 	// </div>
 	// </template>
 	// <script>
-	__webpack_require__(301);
+	__webpack_require__(314);
 	
 	exports.default = {
 	  props: {
@@ -817,7 +832,7 @@
 	          list: [{ label: '提示消息', value: 'n3AlertDocs' }, { label: '页面提示', value: 'n3ToastDocs' }, { label: '浮出提示', value: 'n3TooltipDocs' }, { label: '气泡框', value: 'n3PopoverDocs' }, { label: '加载提示', value: 'n3LoadingDocs' }] },
 	
 	        '表单': { show: true,
-	          list: [{ label: '级联选择', value: 'n3CascaderDocs' }, { label: '单选框', value: 'n3RadioDocs' }, { label: '多选框', value: 'n3CheckboxDocs' }, { label: '选择框', value: 'n3SelectDocs' }, { label: '滑块', value: 'n3SliderDocs' }, { label: '日期选择器', value: 'n3DatepickerDocs' }, { label: '时间选择器', value: 'n3TimepickerDocs' }, { label: '日期时间选择器', value: 'n3DatetimepickerDocs' }, { label: '开关', value: 'n3SwitchDocs' }, { label: '文件上传', value: 'n3UploaderDocs' }, { label: '自动补全', value: 'n3TypeaheadDocs' }, { label: '自定义输入', value: 'n3MultipleInputDocs' }, { label: '表单验证', value: 'n3FormDocs' }] },
+	          list: [{ label: '输入框', value: 'n3InputDocs' }, { label: '文本框', value: 'n3TextareaDocs' }, { label: '级联选择', value: 'n3CascaderDocs' }, { label: '单选框', value: 'n3RadioDocs' }, { label: '多选框', value: 'n3CheckboxDocs' }, { label: '选择框', value: 'n3SelectDocs' }, { label: '滑块', value: 'n3SliderDocs' }, { label: '日期选择器', value: 'n3DatepickerDocs' }, { label: '时间选择器', value: 'n3TimepickerDocs' }, { label: '日期时间选择器', value: 'n3DatetimepickerDocs' }, { label: '开关', value: 'n3SwitchDocs' }, { label: '文件上传', value: 'n3UploaderDocs' }, { label: '自动补全', value: 'n3TypeaheadDocs' }, { label: '自定义输入', value: 'n3MultipleInputDocs' }, { label: '表单验证', value: 'n3FormDocs' }] },
 	
 	        '展示': { show: true,
 	          list: [{ label: '折叠面板', value: 'n3AccordionDocs' }, { label: '侧边栏', value: 'n3AsideDocs' }, { label: '幻灯片', value: 'n3CarouselDocs' }, { label: '数据表格', value: 'n3DataTableDocs' }, { label: '下拉框', value: 'n3DropdownDocs' }, { label: '弹出框', value: 'n3ModalDocs' }, { label: '进度条', value: 'n3ProgressbarDocs' }, { label: '标签', value: 'n3TagsDocs' }, { label: '时间轴', value: 'n3TimelineDocs' }, { label: '树形', value: 'n3TreeDocs' }, { label: '步骤条', value: 'n3StepDocs' }] },
@@ -901,6 +916,8 @@
 	    n3AsideDocs: _n3AsideDocs2.default,
 	    n3ToastDocs: _n3ToastDocs2.default,
 	    n3CarouselDocs: _n3CarouselDocs2.default,
+	    n3InputDocs: _n3InputDocs2.default,
+	    n3TextareaDocs: _n3TextareaDocs2.default,
 	    n3ButtonsDocs: _n3ButtonsDocs2.default,
 	    n3DatepickerDocs: _n3DatepickerDocs2.default,
 	    n3TimepickerDocs: _n3TimepickerDocs2.default,
@@ -955,7 +972,7 @@
 	// </style>
 
 /***/ },
-/* 144 */
+/* 151 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -1743,13 +1760,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 145 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(146)
+	module.exports = __webpack_require__(153)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(147)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(154)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -1767,7 +1784,7 @@
 	}
 
 /***/ },
-/* 146 */
+/* 153 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1803,20 +1820,20 @@
 	// </script>
 
 /***/ },
-/* 147 */
+/* 154 */
 /***/ function(module, exports) {
 
 	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\n    <n3-container fluid style=\"width:92%\">\n      <n3-nav>\n        <n3-nav-item >\n          <a href=\"./index.html\" >N3</a>\n        </n3-nav-item>\n        <n3-nav-item :active=\"active==='base'\">\n          <a href=\"./component.html\" >组件</a>\n        </n3-nav-item>\n        <!--  <n3-nav-item :active=\"active==='usage'\">\n          <a href=\"./usage.html\" >使用</a>\n        </n3-nav-item> -->\n      </n3-nav>\n    </n3-container>\n  </header>";
 
 /***/ },
-/* 148 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(149)
-	module.exports = __webpack_require__(151)
+	__webpack_require__(156)
+	module.exports = __webpack_require__(158)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(152)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(159)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -1834,16 +1851,16 @@
 	}
 
 /***/ },
-/* 149 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(150);
+	var content = __webpack_require__(157);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -1860,10 +1877,10 @@
 	}
 
 /***/ },
-/* 150 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
@@ -1874,7 +1891,7 @@
 
 
 /***/ },
-/* 151 */
+/* 158 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2049,20 +2066,20 @@
 	// </style>
 
 /***/ },
-/* 152 */
+/* 159 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"布局\"  >\n\n    <h1 class=\"page-header\"><a href=\"#布局\" class=\"anchor\">布局</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-container fluid>\n          <n3-row>\n              <n3-column :col=\"8\" class=\"context\">\n                  :col=\"8\"\n              </n3-column>\n              <n3-column :col=\"4\" class=\"context\">\n                  :col=\"4\"\n              </n3-column>\n          </n3-row>\n          <n3-row>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n          </n3-row>\n        </n3-container>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     <n3-container fluid>\n          <n3-row>\n              <n3-column :col=\"8\" class=\"context\">\n                  :col=\"8\"\n              </n3-column>\n              <n3-column :col=\"4\" class=\"context\">\n                  :col=\"4\"\n              </n3-column>\n          </n3-row>\n          <n3-row>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n              <n3-column :col=\"1\" class=\"context\">\n                  1\n              </n3-column>\n          </n3-row>\n        </n3-container>\n    </script></code></pre>\n    <h2>n3-container参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>fluid</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否流式布局</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-column参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>col</td>\n          <td><code>Number</code></td>\n          <td><code>false</code></td>\n          <td>占的列数</td>\n        </tr>\n        <tr>\n          <td>mode</td>\n          <td><code>String</code></td>\n          <td><code>'md'</code></td>\n          <td>布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 153 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(154)
-	module.exports = __webpack_require__(156)
+	__webpack_require__(161)
+	module.exports = __webpack_require__(163)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(157)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(164)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -2080,16 +2097,16 @@
 	}
 
 /***/ },
-/* 154 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(155);
+	var content = __webpack_require__(162);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -2106,10 +2123,10 @@
 	}
 
 /***/ },
-/* 155 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
@@ -2120,7 +2137,7 @@
 
 
 /***/ },
-/* 156 */
+/* 163 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2209,6 +2226,12 @@
 	//         <td><code></code></td>
 	//         <td>图标类型名</td>
 	//       </tr>
+	//       <tr>
+	//         <td>size</td>
+	//         <td><code>String</code></td>
+	//         <td><code></code></td>
+	//         <td>图标尺寸</td>
+	//       </tr>
 	//     </tbody>
 	//   </table>
 	//   </div>
@@ -2245,19 +2268,19 @@
 	// </style>
 
 /***/ },
-/* 157 */
+/* 164 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"图标\" _v-494eb353=\"\">\n    <h1 class=\"page-header\" _v-494eb353=\"\"><a href=\"#图标\" class=\"anchor\" _v-494eb353=\"\">图标</a><span class=\"author\" _v-494eb353=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-494eb353=\"\">\n    <h3 _v-494eb353=\"\">FontAwesome 4.0 图标列表</h3>  \n    <h4 _v-494eb353=\"\">11 New Icons in 4.0</h4>\n    <hr _v-494eb353=\"\">\n    <n3-container _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in newfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n        <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Web Application Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in webfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <h4 _v-494eb353=\"\">Form Control Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in formfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Currency Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Text Edit Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in textfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Directional Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Video Player Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in videofont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Brand Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n       <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Medical Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n    </n3-container> \n    </div>\n    <pre _v-494eb353=\"\"><code class=\"language-markup\" _v-494eb353=\"\"><script type=\"language-mark-up\" _v-494eb353=\"\">\n      <n3-icon type=\"rub\"></n3-icon>\n    </script></code></pre>\n\n  <h2 _v-494eb353=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-494eb353=\"\">\n    <thead _v-494eb353=\"\">\n      <tr _v-494eb353=\"\">\n        <th _v-494eb353=\"\">参数名</th>\n        <th _v-494eb353=\"\">类型</th>\n        <th _v-494eb353=\"\">默认值</th>\n        <th _v-494eb353=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-494eb353=\"\">\n      <tr _v-494eb353=\"\">\n        <td _v-494eb353=\"\">type</td>\n        <td _v-494eb353=\"\"><code _v-494eb353=\"\">String</code></td>\n        <td _v-494eb353=\"\"><code _v-494eb353=\"\"></code></td>\n        <td _v-494eb353=\"\">图标类型名</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"图标\" _v-494eb353=\"\">\n    <h1 class=\"page-header\" _v-494eb353=\"\"><a href=\"#图标\" class=\"anchor\" _v-494eb353=\"\">图标</a><span class=\"author\" _v-494eb353=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-494eb353=\"\">\n    <h3 _v-494eb353=\"\">FontAwesome 4.0 图标列表</h3>  \n    <h4 _v-494eb353=\"\">11 New Icons in 4.0</h4>\n    <hr _v-494eb353=\"\">\n    <n3-container _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in newfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n        <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Web Application Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in webfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <h4 _v-494eb353=\"\">Form Control Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in formfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Currency Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Text Edit Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in textfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Directional Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Video Player Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in videofont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Brand Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n       <br _v-494eb353=\"\">\n      <h4 _v-494eb353=\"\">Medical Icons</h4>\n      <hr _v-494eb353=\"\">\n      <n3-row class=\"row-ex\" _v-494eb353=\"\">\n        <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-494eb353=\"\"><n3-icon :type=\"font\" _v-494eb353=\"\"></n3-icon><span _v-494eb353=\"\">{{font}}</span></n3-column>\n      </n3-row>\n    </n3-container> \n    </div>\n    <pre _v-494eb353=\"\"><code class=\"language-markup\" _v-494eb353=\"\"><script type=\"language-mark-up\" _v-494eb353=\"\">\n      <n3-icon type=\"rub\"></n3-icon>\n    </script></code></pre>\n\n  <h2 _v-494eb353=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-494eb353=\"\">\n    <thead _v-494eb353=\"\">\n      <tr _v-494eb353=\"\">\n        <th _v-494eb353=\"\">参数名</th>\n        <th _v-494eb353=\"\">类型</th>\n        <th _v-494eb353=\"\">默认值</th>\n        <th _v-494eb353=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-494eb353=\"\">\n      <tr _v-494eb353=\"\">\n        <td _v-494eb353=\"\">type</td>\n        <td _v-494eb353=\"\"><code _v-494eb353=\"\">String</code></td>\n        <td _v-494eb353=\"\"><code _v-494eb353=\"\"></code></td>\n        <td _v-494eb353=\"\">图标类型名</td>\n      </tr>\n      <tr _v-494eb353=\"\">\n        <td _v-494eb353=\"\">size</td>\n        <td _v-494eb353=\"\"><code _v-494eb353=\"\">String</code></td>\n        <td _v-494eb353=\"\"><code _v-494eb353=\"\"></code></td>\n        <td _v-494eb353=\"\">图标尺寸</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
-/* 158 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(159)
+	module.exports = __webpack_require__(166)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(160)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(167)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -2275,7 +2298,7 @@
 	}
 
 /***/ },
-/* 159 */
+/* 166 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2436,20 +2459,20 @@
 	// </script>
 
 /***/ },
-/* 160 */
+/* 167 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"标签\"  >\n    <h1 class=\"page-header\"><a href=\"#标签\" class=\"anchor\">标签</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-label>Default</n3-label>\n      <n3-label type=\"primary\">primary</n3-label>\n      <n3-label type=\"danger\">danger</n3-label>\n      <n3-label type=\"success\">success</n3-label>\n      <n3-label type=\"info\">info</n3-label>\n      <n3-label type=\"warning\">warning</n3-label>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-label>Default</n3-label>\n      <n3-label type=\"primary\">primary</n3-label>\n      <n3-label type=\"danger\">danger</n3-label>\n      <n3-label type=\"success\">success</n3-label>\n      <n3-label type=\"info\">info</n3-label>\n      <n3-label type=\"warning\">warning</n3-label>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>type</td>\n          <td><code>String</code></td>\n          <td><code>default</code></td>\n          <td>颜色</td>\n        </tr>\n         <tr>\n          <td>hover</td>\n          <td><code>Boolean</code></td>\n          <td><code>true</code></td>\n          <td></td>\n        </tr>\n      </tbody>\n    </table>\n\n\n    <div class=\"bs-example\">\n        <n3-tags :value.sync=\"list\"></n3-tags>\n        <n3-tags :value.sync=\"list\"  type=\"primary\"></n3-tags>\n        <n3-tags :value.sync=\"list\"  type=\"success\"></n3-tags>\n        <n3-tags :value.sync=\"list\"  type=\"danger\"></n3-tags>\n        <n3-tags :value.sync=\"list\"  type=\"warning\"></n3-tags>\n        <n3-tags :value.sync=\"list\" removable type=\"primary\"></n3-tags>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n        <n3-tags :value.sync=\"list\"></n3-tags>\n        <n3-tags :value.sync=\"list\"  type=\"primary\"></n3-tags>\n        <n3-tags :value.sync=\"list\"  type=\"success\"></n3-tags>\n        <n3-tags :value.sync=\"list\"  type=\"danger\"></n3-tags>\n        <n3-tags :value.sync=\"list\"  type=\"warning\"></n3-tags>\n\n        <n3-tags :value.sync=\"list\" removable type=\"primary\"></n3-tags>\n\n        <n3-tags :value.sync=\"list\" removable selectabled :result=\"result\" ></n3-tags>\n\n\n        new Vue({\n          data:{\n            list:[{\n              value:'1',\n              label:'1'\n            },{\n              value:'2',\n              label:'2'\n            },{\n              value:'3',\n              label:'3'\n            },{\n              value:'4',\n              label:'4',\n              disabled:true\n            }],\n            result:[{\n              value:'3',\n              label:'3'\n            }]\n          }\n        })\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>type</td>\n          <td><code>String</code></td>\n          <td><code>default</code></td>\n          <td>颜色</td>\n        </tr>\n         <tr>\n          <td>value</td>\n          <td><code>Array</code></td>\n          <td><code>[]</code></td>\n          <td>内容数组 需要<code>.sync</code></td>\n        </tr>\n         <tr>\n          <td>size</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>大小 sm,lg,xl</td>\n        </tr>\n         <tr>\n          <td>removable</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>可删除</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 161 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(162)
-	module.exports = __webpack_require__(164)
+	__webpack_require__(169)
+	module.exports = __webpack_require__(171)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(187)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(194)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -2467,16 +2490,16 @@
 	}
 
 /***/ },
-/* 162 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(163);
+	var content = __webpack_require__(170);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -2493,10 +2516,10 @@
 	}
 
 /***/ },
-/* 163 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
@@ -2507,7 +2530,7 @@
 
 
 /***/ },
-/* 164 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2516,11 +2539,11 @@
 	  value: true
 	});
 	
-	var _n3Alert = __webpack_require__(165);
+	var _n3Alert = __webpack_require__(172);
 	
 	var _n3Alert2 = _interopRequireDefault(_n3Alert);
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
@@ -2738,7 +2761,7 @@
 	//         </tr>
 	//         <tr>
 	//           <td>type</td>
-	//           <td><code>String</code>, one of
+	//           <td><code>String</code>, 如: 
 	//           <code>default</code>
 	//           <code>success</code>
 	//           <code>info</code>
@@ -2767,7 +2790,7 @@
 	//         </tr>
 	//         <tr>
 	//           <td>placement</td>
-	//           <td><code>String</code>. one of <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>
+	//           <td><code>String</code>. 如:  <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>
 	//           <td></td>
 	//           <td>组件位置</td>
 	//         </tr>
@@ -2824,13 +2847,13 @@
 	// </style>
 
 /***/ },
-/* 165 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(166)
+	module.exports = __webpack_require__(173)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(177)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(184)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -2848,7 +2871,7 @@
 	}
 
 /***/ },
-/* 166 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -2857,11 +2880,11 @@
 	  value: true
 	});
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
@@ -3001,11 +3024,11 @@
 	// </script>
 
 /***/ },
-/* 167 */
+/* 174 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var is = __webpack_require__(168);
-	is.isJSON = __webpack_require__(173).strict;
+	var is = __webpack_require__(175);
+	is.isJSON = __webpack_require__(180).strict;
 	
 	
 	module.exports = new Type();
@@ -3042,7 +3065,7 @@
 
 
 /***/ },
-/* 168 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer) {// Copyright Joyent, Inc. and other Node contributors.
@@ -3153,10 +3176,10 @@
 	  return Object.prototype.toString.call(o);
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(169).Buffer))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(176).Buffer))
 
 /***/ },
-/* 169 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Buffer, global) {/*!
@@ -3169,9 +3192,9 @@
 	
 	'use strict'
 	
-	var base64 = __webpack_require__(170)
-	var ieee754 = __webpack_require__(171)
-	var isArray = __webpack_require__(172)
+	var base64 = __webpack_require__(177)
+	var ieee754 = __webpack_require__(178)
+	var isArray = __webpack_require__(179)
 	
 	exports.Buffer = Buffer
 	exports.SlowBuffer = SlowBuffer
@@ -4949,10 +4972,10 @@
 	  return val !== val // eslint-disable-line no-self-compare
 	}
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(169).Buffer, (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(176).Buffer, (function() { return this; }())))
 
 /***/ },
-/* 170 */
+/* 177 */
 /***/ function(module, exports) {
 
 	'use strict'
@@ -5067,7 +5090,7 @@
 
 
 /***/ },
-/* 171 */
+/* 178 */
 /***/ function(module, exports) {
 
 	exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -5157,7 +5180,7 @@
 
 
 /***/ },
-/* 172 */
+/* 179 */
 /***/ function(module, exports) {
 
 	var toString = {}.toString;
@@ -5168,7 +5191,7 @@
 
 
 /***/ },
-/* 173 */
+/* 180 */
 /***/ function(module, exports) {
 
 	function isString (x) {
@@ -5217,13 +5240,13 @@
 
 
 /***/ },
-/* 174 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(175)
+	module.exports = __webpack_require__(182)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(176)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(183)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -5241,7 +5264,7 @@
 	}
 
 /***/ },
-/* 175 */
+/* 182 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -5250,12 +5273,15 @@
 	  value: true
 	});
 	// <template>
-	//   <i :class="['fa','fa-'+type]" ></i>
+	//   <i :class="['fa','fa-'+type]" :style="{fontSize:size}"></i>
 	// </template>
 	// <script>
 	exports.default = {
 	  props: {
 	    type: {
+	      type: String
+	    },
+	    size: {
 	      type: String
 	    }
 	  }
@@ -5263,25 +5289,25 @@
 	// </script>
 
 /***/ },
-/* 176 */
+/* 183 */
 /***/ function(module, exports) {
 
-	module.exports = "<i :class=\"['fa','fa-'+type]\" ></i>";
+	module.exports = "<i :class=\"['fa','fa-'+type]\" :style=\"{fontSize:size}\"></i>";
 
 /***/ },
-/* 177 */
+/* 184 */
 /***/ function(module, exports) {
 
 	module.exports = "<div\n   v-show=\"show\"\n   :class=\"classObj\"\n    transition=\"fade\"\n    :style=\"{width:width}\">\n\n    <n3-icon class=\"{{prefixCls}}-alert-icon\" :type=\"iconType\" ></n3-icon>\n\n    <button v-if=\"dismissable\" type=\"button\" class=\"{{prefixCls}}-close\"\n      @click=\"_handleClose\" >\n      <span>&times;</span>\n    </button>\n\n    <div v-if=\"description\" class=\"{{prefixCls}}-alert-content\">\n      <h4>{{message}}</h4>\n      <p><slot></slot></p>\n    </div>\n    <span v-else>\n        <slot></slot>\n    </span>\n  </div>";
 
 /***/ },
-/* 178 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(179)
+	module.exports = __webpack_require__(186)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(186)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(193)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -5299,7 +5325,7 @@
 	}
 
 /***/ },
-/* 179 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -5308,11 +5334,11 @@
 	  value: true
 	});
 	
-	var _n3Loading = __webpack_require__(180);
+	var _n3Loading = __webpack_require__(187);
 	
 	var _n3Loading2 = _interopRequireDefault(_n3Loading);
 	
-	var _n3Badge = __webpack_require__(183);
+	var _n3Badge = __webpack_require__(190);
 	
 	var _n3Badge2 = _interopRequireDefault(_n3Badge);
 	
@@ -5388,13 +5414,13 @@
 	// </script>
 
 /***/ },
-/* 180 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(181)
+	module.exports = __webpack_require__(188)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(182)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(189)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -5412,7 +5438,7 @@
 	}
 
 /***/ },
-/* 181 */
+/* 188 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -5485,19 +5511,19 @@
 	// </script>
 
 /***/ },
-/* 182 */
+/* 189 */
 /***/ function(module, exports) {
 
 	module.exports = "<span :class=\"classObj\">\n    <i :class=\"iclassObj\"></i>\n    <slot></slot>  \n  </span>";
 
 /***/ },
-/* 183 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(184)
+	module.exports = __webpack_require__(191)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(185)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(192)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -5515,7 +5541,7 @@
 	}
 
 /***/ },
-/* 184 */
+/* 191 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -5540,31 +5566,31 @@
 	// </script>
 
 /***/ },
-/* 185 */
+/* 192 */
 /***/ function(module, exports) {
 
 	module.exports = "<span class=\"{{prefixCls}}-badge\">\n\t\t<slot></slot>\t\n\t</span>";
 
 /***/ },
-/* 186 */
+/* 193 */
 /***/ function(module, exports) {
 
 	module.exports = "<a :class=\"classObj\">\n  \t<slot></slot>\t\n  \t<n3-loading v-if=\"loading\" size=\"xs\" style=\"position:relative;top:2px\"></n3-loading>\n    <n3-badge  v-if=\"badge\">{{badge}}</n3-badge>\n  </a>";
 
 /***/ },
-/* 187 */
+/* 194 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"提示消息\"  >\n    <h1 class=\"page-header\">\n      <a href=\"#提示消息\" class=\"anchor\">提示消息</a><span class=\"author\"> </span>\n    </h1>\n    <div class=\"bs-example\" >\n      <n3-button type='success'\n        @click=\"showRight = !showRight\">\n        点击出现在右边\n      </n3-button>\n\n      <n3-button type='danger'\n        @click=\"showTop = !showTop\">\n       点击出现在顶部\n      </n3-button>\n      <hr>\n\n       <n3-alert  dismissable>\n        <strong>default style</strong>\n        This is the default style.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"success\" >\n        <strong>Well Done!</strong>\n        You successfully read this important alert message.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"info\" >\n        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"danger\" dismissable>\n        <strong>Oh snap!</strong> Change a few things up and try submitting again.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"warning\" dismissable>\n        <strong>Warning!</strong> Better check yourself, you're not looking too good.\n        <hr>\n\n      </n3-alert>\n      <br>\n      <n3-alert\n        type=\"success\"\n        width=\"700px\"\n        message=\"信息提示\"\n        description>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      </n3-alert>\n      <br>\n      <n3-alert\n        type=\"danger\"\n        width=\"700px\"\n        message=\"错误提示\"\n        description\n        dismissable>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      </n3-alert>\n\n      <br>\n      <n3-alert\n        type=\"info\"\n        width=\"700px\"\n        message=\"错误提示\"\n        :on-close=\"close\"\n        description\n        dismissable>\n        点击关闭按钮的回调函数,打开控制台看看:)\n      </n3-alert>\n\n\n      <n3-alert\n        :show.sync=\"showRight\"\n        type=\"success\"\n        width=\"700px\"\n        placement=\"top-right\"\n        message=\"信息提示\"\n        description\n        dismissable>\n        <p>You successfully read this important alert message.</p>\n      </n3-alert>\n\n\n      <n3-alert\n        :show.sync=\"showTop\"\n        :duration=\"3000\"\n        type=\"danger\"\n        placement=\"top\"\n        message=\"警告\"\n        description\n        dismissable>\n        <strong>Heads up!</strong>\n        <p>This alert needs your attention.</p>\n      </n3-alert>\n    </div>\n\n\n<pre><code class=\"language-markup\">\n  <script type=\"language-mark-up\">\n   <n3-button type='success'\n        @click=\"showRight = !showRight\">\n        点击出现在右边\n      </n3-button>\n\n      <n3-button type='danger'\n        @click=\"showTop = !showTop\">\n       点击出现在顶部\n      </n3-button>\n      <hr>\n\n       <n3-alert  dismissable>\n        <strong>default style</strong>\n        This is the default style.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"success\" >\n        <strong>Well Done!</strong>\n        You successfully read this important alert message.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"info\" >\n        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"danger\" dismissable>\n        <strong>Oh snap!</strong> Change a few things up and try submitting again.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"warning\" dismissable>\n        <strong>Warning!</strong> Better check yourself, you're not looking too good.\n        <hr>\n\n      </n3-alert>\n      <br>\n      <n3-alert\n        type=\"success\"\n        width=\"700px\"\n        message=\"信息提示\"\n        description>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      </n3-alert>\n      <br>\n      <n3-alert\n        type=\"danger\"\n        width=\"700px\"\n        message=\"错误提示\"\n        description\n        dismissable>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      </n3-alert>\n\n      <br>\n      <n3-alert\n        type=\"info\"\n        width=\"700px\"\n        message=\"错误提示\"\n        :on-close=\"close\"\n        description\n        dismissable>\n        点击关闭按钮的回调函数,打开控制台看看:)\n      </n3-alert>\n\n\n      <n3-alert\n        :show.sync=\"showRight\"\n        type=\"success\"\n        width=\"700px\"\n        placement=\"top-right\"\n        message=\"信息提示\"\n        description\n        dismissable>\n        <p>You successfully read this important alert message.</p>\n      </n3-alert>\n\n\n      <n3-alert\n        :show.sync=\"showTop\"\n        :duration=\"3000\"\n        type=\"danger\"\n        placement=\"top\"\n        message=\"警告\"\n        description\n        dismissable>\n        <strong>Heads up!</strong>\n        <p>This alert needs your attention.</p>\n      </n3-alert>\n\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td><code>true</code></td>\n          <td>是否显示组件</td>\n        </tr>\n        <tr>\n          <td>dismissable</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否显示关闭按钮</td>\n        </tr>\n        <tr>\n          <td>type</td>\n          <td><code>String</code>, one of\n          <code>default</code>\n          <code>success</code>\n          <code>info</code>\n          <code>warning</code>\n          <code>danger</code></td>\n          <td><code>success</code></td>\n          <td>组件样式</td>\n        </tr>\n        <tr>\n          <td>duration</td>\n          <td><code>Number</code></td>\n          <td><code>0</code></td>\n          <td>自动关闭延时,设置 <code>0</code> 或者负数，表示不会自动关闭</td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code>例如\"700px\"</td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>small</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>缩小</td>\n        </tr>\n        <tr>\n          <td>placement</td>\n          <td><code>String</code>. one of <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>\n          <td></td>\n          <td>组件位置</td>\n        </tr>\n        <tr>\n          <td>description</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>警告提示</td>\n        </tr>\n              <tr>\n          <td>message</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>在设置description时有效</td>\n        </tr>\n        <tr>\n          <td>on-close</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>点击关闭按钮时触发</td>\n        </tr>\n\n\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"提示消息\"  >\n    <h1 class=\"page-header\">\n      <a href=\"#提示消息\" class=\"anchor\">提示消息</a><span class=\"author\"> </span>\n    </h1>\n    <div class=\"bs-example\" >\n      <n3-button type='success'\n        @click=\"showRight = !showRight\">\n        点击出现在右边\n      </n3-button>\n\n      <n3-button type='danger'\n        @click=\"showTop = !showTop\">\n       点击出现在顶部\n      </n3-button>\n      <hr>\n\n       <n3-alert  dismissable>\n        <strong>default style</strong>\n        This is the default style.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"success\" >\n        <strong>Well Done!</strong>\n        You successfully read this important alert message.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"info\" >\n        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"danger\" dismissable>\n        <strong>Oh snap!</strong> Change a few things up and try submitting again.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"warning\" dismissable>\n        <strong>Warning!</strong> Better check yourself, you're not looking too good.\n        <hr>\n\n      </n3-alert>\n      <br>\n      <n3-alert\n        type=\"success\"\n        width=\"700px\"\n        message=\"信息提示\"\n        description>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      </n3-alert>\n      <br>\n      <n3-alert\n        type=\"danger\"\n        width=\"700px\"\n        message=\"错误提示\"\n        description\n        dismissable>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      </n3-alert>\n\n      <br>\n      <n3-alert\n        type=\"info\"\n        width=\"700px\"\n        message=\"错误提示\"\n        :on-close=\"close\"\n        description\n        dismissable>\n        点击关闭按钮的回调函数,打开控制台看看:)\n      </n3-alert>\n\n\n      <n3-alert\n        :show.sync=\"showRight\"\n        type=\"success\"\n        width=\"700px\"\n        placement=\"top-right\"\n        message=\"信息提示\"\n        description\n        dismissable>\n        <p>You successfully read this important alert message.</p>\n      </n3-alert>\n\n\n      <n3-alert\n        :show.sync=\"showTop\"\n        :duration=\"3000\"\n        type=\"danger\"\n        placement=\"top\"\n        message=\"警告\"\n        description\n        dismissable>\n        <strong>Heads up!</strong>\n        <p>This alert needs your attention.</p>\n      </n3-alert>\n    </div>\n\n\n<pre><code class=\"language-markup\">\n  <script type=\"language-mark-up\">\n   <n3-button type='success'\n        @click=\"showRight = !showRight\">\n        点击出现在右边\n      </n3-button>\n\n      <n3-button type='danger'\n        @click=\"showTop = !showTop\">\n       点击出现在顶部\n      </n3-button>\n      <hr>\n\n       <n3-alert  dismissable>\n        <strong>default style</strong>\n        This is the default style.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"success\" >\n        <strong>Well Done!</strong>\n        You successfully read this important alert message.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"info\" >\n        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"danger\" dismissable>\n        <strong>Oh snap!</strong> Change a few things up and try submitting again.\n      </n3-alert>\n      <br>\n      <n3-alert type=\"warning\" dismissable>\n        <strong>Warning!</strong> Better check yourself, you're not looking too good.\n        <hr>\n\n      </n3-alert>\n      <br>\n      <n3-alert\n        type=\"success\"\n        width=\"700px\"\n        message=\"信息提示\"\n        description>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      </n3-alert>\n      <br>\n      <n3-alert\n        type=\"danger\"\n        width=\"700px\"\n        message=\"错误提示\"\n        description\n        dismissable>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      </n3-alert>\n\n      <br>\n      <n3-alert\n        type=\"info\"\n        width=\"700px\"\n        message=\"错误提示\"\n        :on-close=\"close\"\n        description\n        dismissable>\n        点击关闭按钮的回调函数,打开控制台看看:)\n      </n3-alert>\n\n\n      <n3-alert\n        :show.sync=\"showRight\"\n        type=\"success\"\n        width=\"700px\"\n        placement=\"top-right\"\n        message=\"信息提示\"\n        description\n        dismissable>\n        <p>You successfully read this important alert message.</p>\n      </n3-alert>\n\n\n      <n3-alert\n        :show.sync=\"showTop\"\n        :duration=\"3000\"\n        type=\"danger\"\n        placement=\"top\"\n        message=\"警告\"\n        description\n        dismissable>\n        <strong>Heads up!</strong>\n        <p>This alert needs your attention.</p>\n      </n3-alert>\n\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td><code>true</code></td>\n          <td>是否显示组件</td>\n        </tr>\n        <tr>\n          <td>dismissable</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否显示关闭按钮</td>\n        </tr>\n        <tr>\n          <td>type</td>\n          <td><code>String</code>, 如: \n          <code>default</code>\n          <code>success</code>\n          <code>info</code>\n          <code>warning</code>\n          <code>danger</code></td>\n          <td><code>success</code></td>\n          <td>组件样式</td>\n        </tr>\n        <tr>\n          <td>duration</td>\n          <td><code>Number</code></td>\n          <td><code>0</code></td>\n          <td>自动关闭延时,设置 <code>0</code> 或者负数，表示不会自动关闭</td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code>例如\"700px\"</td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>small</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>缩小</td>\n        </tr>\n        <tr>\n          <td>placement</td>\n          <td><code>String</code>. 如:  <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>\n          <td></td>\n          <td>组件位置</td>\n        </tr>\n        <tr>\n          <td>description</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>警告提示</td>\n        </tr>\n              <tr>\n          <td>message</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>在设置description时有效</td>\n        </tr>\n        <tr>\n          <td>on-close</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>点击关闭按钮时触发</td>\n        </tr>\n\n\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 188 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(189)
+	module.exports = __webpack_require__(196)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(190)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(197)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -5582,7 +5608,7 @@
 	}
 
 /***/ },
-/* 189 */
+/* 196 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -5663,7 +5689,13 @@
 	//           <td><code>false</code></td>
 	//           <td>控制当一个面板被打开时，其他面板是否关闭</td>
 	//         </tr>
-	//          <tr>
+	//         <tr>
+	//           <td>effect</td>
+	//           <td><code>String</code></td>
+	//           <td>collapse</td>
+	//           <td>切换动画 注意：加载动态内容时请不要使用collapse，建议 fadeDown</td>
+	//         </tr>
+	//         <tr>
 	//           <td>on-change</td>
 	//           <td><code>Function</code></td>
 	//           <td></td>
@@ -5722,20 +5754,20 @@
 	// </script>
 
 /***/ },
-/* 190 */
+/* 197 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"折叠面板\"  >\n    <h1 class=\"page-header\"><a href=\"#折叠面板\" class=\"anchor\">折叠面板</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <input type=\"checkbox\" v-model=\"checked\">\n        一次只打开一个\n      </p>\n      <n3-accordion :one-at-atime=\"checked\" :on-change=\"change\">\n        <n3-panel header=\"Panel #1\" :is-open=\"true\" index=\"1\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n        <n3-panel header=\"Panel #2\" index=\"2\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n          </n3-panel>\n        <n3-panel header=\"Panel #3\" index=\"3\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n        <n3-panel header=\"Panel #4\" index=\"4\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n      </n3-accordion>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <input type=\"checkbox\" v-model=\"checked\">\n      <label for=\"checked\">一次只打开一个</label>\n\n       <n3-accordion :one-at-atime=\"checked\" :on-change=\"change\">\n        <n3-panel header=\"Panel #1\" :is-open=\"true\" index=\"1\">\n          ...\n          \n        </n3-panel>\n        <n3-panel header=\"Panel #2\" index=\"2\">\n          ...\n\n        </n3-panel>\n        <n3-panel header=\"Panel #3\" index=\"3\">\n          ...\n\n        </n3-panel>\n        <n3-panel header=\"Panel #4\" index=\"4\">\n          ...\n          \n        </n3-panel>\n      </n3-accordion>\n    </script></code></pre>\n\n    <h2>n3-accordion参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>one-at-time</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>控制当一个面板被打开时，其他面板是否关闭</td>\n        </tr>\n         <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>改变时的回调函数,参数为panel的状态数组</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-panel参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>is-open</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>面板打开还是关闭</td>\n        </tr>\n        <tr>\n          <td>header</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>面板头部显示的内容，点击该内容进行面板的打开收缩</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>改变时的回调函数,参数为panel的状态</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"折叠面板\"  >\n    <h1 class=\"page-header\"><a href=\"#折叠面板\" class=\"anchor\">折叠面板</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <input type=\"checkbox\" v-model=\"checked\">\n        一次只打开一个\n      </p>\n      <n3-accordion :one-at-atime=\"checked\" :on-change=\"change\">\n        <n3-panel header=\"Panel #1\" :is-open=\"true\" index=\"1\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n        <n3-panel header=\"Panel #2\" index=\"2\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n          </n3-panel>\n        <n3-panel header=\"Panel #3\" index=\"3\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n        <n3-panel header=\"Panel #4\" index=\"4\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n      </n3-accordion>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <input type=\"checkbox\" v-model=\"checked\">\n      <label for=\"checked\">一次只打开一个</label>\n\n       <n3-accordion :one-at-atime=\"checked\" :on-change=\"change\">\n        <n3-panel header=\"Panel #1\" :is-open=\"true\" index=\"1\">\n          ...\n          \n        </n3-panel>\n        <n3-panel header=\"Panel #2\" index=\"2\">\n          ...\n\n        </n3-panel>\n        <n3-panel header=\"Panel #3\" index=\"3\">\n          ...\n\n        </n3-panel>\n        <n3-panel header=\"Panel #4\" index=\"4\">\n          ...\n          \n        </n3-panel>\n      </n3-accordion>\n    </script></code></pre>\n\n    <h2>n3-accordion参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>one-at-time</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>控制当一个面板被打开时，其他面板是否关闭</td>\n        </tr>\n        <tr>\n          <td>effect</td>\n          <td><code>String</code></td>\n          <td>collapse</td>\n          <td>切换动画 注意：加载动态内容时请不要使用collapse，建议 fadeDown</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>改变时的回调函数,参数为panel的状态数组</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-panel参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>is-open</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>面板打开还是关闭</td>\n        </tr>\n        <tr>\n          <td>header</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>面板头部显示的内容，点击该内容进行面板的打开收缩</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>改变时的回调函数,参数为panel的状态</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 191 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(192)
-	module.exports = __webpack_require__(194)
+	__webpack_require__(199)
+	module.exports = __webpack_require__(201)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(195)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(202)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -5753,16 +5785,16 @@
 	}
 
 /***/ },
-/* 192 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(193);
+	var content = __webpack_require__(200);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -5779,10 +5811,10 @@
 	}
 
 /***/ },
-/* 193 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
@@ -5793,7 +5825,7 @@
 
 
 /***/ },
-/* 194 */
+/* 201 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -5901,6 +5933,7 @@
 	//         </tr>
 	//       </tbody>
 	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	//   </div>
 	// </template>
 	
@@ -5954,20 +5987,20 @@
 	// </style>
 
 /***/ },
-/* 195 */
+/* 202 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"级联选择\"  >\n    <h1 class=\"page-header\"><a href=\"#级联选择\" class=\"anchor\">级联选择</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-cascader :options=\"options\" :on-change=\"selectChange\" :value.sync=\"value\" :select-change=\"true\"></n3-cascader>\n      {{value | json}}\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n    <n3-cascader :options=\"options\" :on-change=\"selectChange\" :value.sync=\"value\" :select-change=\"true\"></n3-cascader>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td><pre><code>\n            [{\n              value: 'zhejiang',\n              label: '浙江',\n              children: [{\n                value: 'hangzhou',\n                label: '杭州',\n                children: [{\n                  value: 'xihu',\n                  label: '西湖',\n                }],\n              }],\n            }, {\n              value: 'jiangsu',\n              label: '江苏',\n              disabled:true,\n              children: [{\n                value: 'nanjing',\n                label: '南京',\n                children: [{\n                  value: 'zhonghuamen',\n                  label: '中华门',\n                }],\n              }],\n            }]\n          </code></pre></td>\n        </tr>\n        <tr>\n          <td>value</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td><code>200px</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>placeholder</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>displayRender</td>\n          <td><code>Function</code></td>\n          <td><pre><code>\n            function(label){\n              return label.join(' / ')\n            }\n          </code></pre></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>select-change</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>选择值就改变</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化时候后触发</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"级联选择\"  >\n    <h1 class=\"page-header\"><a href=\"#级联选择\" class=\"anchor\">级联选择</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-cascader :options=\"options\" :on-change=\"selectChange\" :value.sync=\"value\" :select-change=\"true\"></n3-cascader>\n      {{value | json}}\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n    <n3-cascader :options=\"options\" :on-change=\"selectChange\" :value.sync=\"value\" :select-change=\"true\"></n3-cascader>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td><pre><code>\n            [{\n              value: 'zhejiang',\n              label: '浙江',\n              children: [{\n                value: 'hangzhou',\n                label: '杭州',\n                children: [{\n                  value: 'xihu',\n                  label: '西湖',\n                }],\n              }],\n            }, {\n              value: 'jiangsu',\n              label: '江苏',\n              disabled:true,\n              children: [{\n                value: 'nanjing',\n                label: '南京',\n                children: [{\n                  value: 'zhonghuamen',\n                  label: '中华门',\n                }],\n              }],\n            }]\n          </code></pre></td>\n        </tr>\n        <tr>\n          <td>value</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td><code>200px</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>placeholder</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>displayRender</td>\n          <td><code>Function</code></td>\n          <td><pre><code>\n            function(label){\n              return label.join(' / ')\n            }\n          </code></pre></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>select-change</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>选择值就改变</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化时候后触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
-/* 196 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(197)
-	module.exports = __webpack_require__(199)
+	__webpack_require__(204)
+	module.exports = __webpack_require__(206)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(200)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(207)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -5985,16 +6018,16 @@
 	}
 
 /***/ },
-/* 197 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(198);
+	var content = __webpack_require__(205);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -6011,10 +6044,10 @@
 	}
 
 /***/ },
-/* 198 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
@@ -6025,7 +6058,7 @@
 
 
 /***/ },
-/* 199 */
+/* 206 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6101,19 +6134,19 @@
 	// </style>
 
 /***/ },
-/* 200 */
+/* 207 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"固钉\" _v-df705488=\"\">\n    <h1 class=\"page-header\" _v-df705488=\"\"><a href=\"#固钉\" class=\"anchor\" _v-df705488=\"\">固钉</a><span class=\"author\" _v-df705488=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-df705488=\"\">\n      <h3 _v-df705488=\"\">\n        <n3-affix :offset=\"0\" _v-df705488=\"\">\n          <nav class=\"sidebar\" _v-df705488=\"\">\n            <ul _v-df705488=\"\">\n              <li _v-df705488=\"\">...</li>\n              <li _v-df705488=\"\">...</li>\n              <li _v-df705488=\"\">...</li>\n            </ul>\n          </nav>\n        </n3-affix>\n        \n      </h3>\n    </div>\n    <pre _v-df705488=\"\"><code class=\"language-markup\" _v-df705488=\"\"><script type=\"language-mark-up\" _v-df705488=\"\">\n    <n3-affix :offset=\"0\">\n      <nav class=\"sidebar\">\n        <ul>\n          <li>...</li>\n          <li>...</li>\n          <li>...</li>\n        </ul>\n      </nav>\n    </n3-affix>\n    </script></code></pre>\n    <h2 _v-df705488=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-df705488=\"\">\n      <thead _v-df705488=\"\">\n        <tr _v-df705488=\"\">\n          <th _v-df705488=\"\">参数名</th>\n          <th _v-df705488=\"\">类型</th>\n          <th _v-df705488=\"\">默认值</th>\n          <th _v-df705488=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-df705488=\"\">\n        <tr _v-df705488=\"\">\n          <td _v-df705488=\"\">offset</td>\n          <td _v-df705488=\"\"><code _v-df705488=\"\">Number</code></td>\n          <td _v-df705488=\"\"><code _v-df705488=\"\">0</code></td>\n          <td _v-df705488=\"\">离屏幕顶部的像素值</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 201 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(202)
+	module.exports = __webpack_require__(209)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(203)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(210)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -6131,7 +6164,7 @@
 	}
 
 /***/ },
-/* 202 */
+/* 209 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6210,7 +6243,7 @@
 	//         </tr>
 	//         <tr>
 	//           <td>placement</td>
-	//           <td><code>String</code>, one of <code>left</code>, <code>right</code></td>
+	//           <td><code>String</code>, 如:  <code>left</code>, <code>right</code></td>
 	//           <td><code>right</code></td>
 	//           <td>组件位置</td>
 	//         </tr>
@@ -6255,20 +6288,20 @@
 	// </script>
 
 /***/ },
-/* 203 */
+/* 210 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"侧边栏\"  >\n    <h1 class=\"page-header\"><a href=\"#侧边栏\" class=\"anchor\">侧边栏</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-button  @click=\"showLeft = true\">左侧栏</n3-button>\n\n      <n3-aside  :show.sync=\"showLeft\" placement=\"left\" header=\"Title\" width=\"350px\">\n        <h4>左侧侧边栏</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n        \n        <n3-button  @click=\"showLeft = close\">关闭</n3-button>\n      </n3-aside>\n      \n      <n3-button  @click=\"showRight = true\">右侧栏</n3-button>\n\n      <n3-aside :show.sync=\"showRight\" placement=\"right\" header=\"Title\" width=\"350px\">\n        <h4>右侧侧边栏</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n          \n        <n3-button  @click=\"showRight = false\">关闭</n3-button>\n      </n3-aside>\n      \n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button  @click=\"showLeft = true\">左侧栏</n3-button>\n\n      <n3-aside  :show.sync=\"showLeft\" placement=\"left\" header=\"Title\" width=\"350px\">\n        <h4>左侧侧边栏</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n        \n        <n3-button  @click=\"showLeft = close\">关闭</n3-button>\n      </n3-aside>\n      \n      <n3-button  @click=\"showRight = true\">右侧栏</n3-button>\n\n      <n3-aside :show.sync=\"showRight\" placement=\"right\" header=\"Title\" width=\"350px\">\n        <h4>右侧侧边栏</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n          \n        <n3-button  @click=\"showRight = false\">关闭</n3-button>\n      </n3-aside>\n      \n    </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>是否显示组件</td>\n        </tr>\n        <tr>\n          <td>placement</td>\n          <td><code>String</code>, one of <code>left</code>, <code>right</code></td>\n          <td><code>right</code></td>\n          <td>组件位置</td>\n        </tr>\n        <tr>\n          <td>header</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>组件头部文本</td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>on-show</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>侧边栏出现时候触发</td>\n        </tr>\n        <tr>\n          <td>on-hide</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>侧边栏隐藏时候触发</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"侧边栏\"  >\n    <h1 class=\"page-header\"><a href=\"#侧边栏\" class=\"anchor\">侧边栏</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-button  @click=\"showLeft = true\">左侧栏</n3-button>\n\n      <n3-aside  :show.sync=\"showLeft\" placement=\"left\" header=\"Title\" width=\"350px\">\n        <h4>左侧侧边栏</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n        \n        <n3-button  @click=\"showLeft = close\">关闭</n3-button>\n      </n3-aside>\n      \n      <n3-button  @click=\"showRight = true\">右侧栏</n3-button>\n\n      <n3-aside :show.sync=\"showRight\" placement=\"right\" header=\"Title\" width=\"350px\">\n        <h4>右侧侧边栏</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n          \n        <n3-button  @click=\"showRight = false\">关闭</n3-button>\n      </n3-aside>\n      \n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button  @click=\"showLeft = true\">左侧栏</n3-button>\n\n      <n3-aside  :show.sync=\"showLeft\" placement=\"left\" header=\"Title\" width=\"350px\">\n        <h4>左侧侧边栏</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n        \n        <n3-button  @click=\"showLeft = close\">关闭</n3-button>\n      </n3-aside>\n      \n      <n3-button  @click=\"showRight = true\">右侧栏</n3-button>\n\n      <n3-aside :show.sync=\"showRight\" placement=\"right\" header=\"Title\" width=\"350px\">\n        <h4>右侧侧边栏</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n          \n        <n3-button  @click=\"showRight = false\">关闭</n3-button>\n      </n3-aside>\n      \n    </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>是否显示组件</td>\n        </tr>\n        <tr>\n          <td>placement</td>\n          <td><code>String</code>, 如:  <code>left</code>, <code>right</code></td>\n          <td><code>right</code></td>\n          <td>组件位置</td>\n        </tr>\n        <tr>\n          <td>header</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>组件头部文本</td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>on-show</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>侧边栏出现时候触发</td>\n        </tr>\n        <tr>\n          <td>on-hide</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>侧边栏隐藏时候触发</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 204 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(205)
-	module.exports = __webpack_require__(207)
+	__webpack_require__(212)
+	module.exports = __webpack_require__(214)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(208)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(215)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -6286,16 +6319,16 @@
 	}
 
 /***/ },
-/* 205 */
+/* 212 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(206);
+	var content = __webpack_require__(213);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -6312,10 +6345,10 @@
 	}
 
 /***/ },
-/* 206 */
+/* 213 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
@@ -6326,7 +6359,7 @@
 
 
 /***/ },
-/* 207 */
+/* 214 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6452,34 +6485,34 @@
 	// </style>
 
 /***/ },
-/* 208 */
+/* 215 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"幻灯片\" _v-6cc375ba=\"\">\n    <h1 class=\"page-header\" _v-6cc375ba=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-6cc375ba=\"\">幻灯片</a><span class=\"author\" _v-6cc375ba=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-6cc375ba=\"\">\n      <n3-carousel _v-6cc375ba=\"\">\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(209) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #1</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(210) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #2</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(211) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #3</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n    <pre _v-6cc375ba=\"\"><code class=\"language-markup\" _v-6cc375ba=\"\"><script type=\"language-mark-up\" _v-6cc375ba=\"\">\n   <n3-carousel>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/1.jpg\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #1</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/2.jpg\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #2</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/3.png\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #3</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </script></code></pre>\n\n  <h2 _v-6cc375ba=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-6cc375ba=\"\">\n    <thead _v-6cc375ba=\"\">\n      <tr _v-6cc375ba=\"\">\n        <th _v-6cc375ba=\"\">参数名</th>\n        <th _v-6cc375ba=\"\">类型</th>\n        <th _v-6cc375ba=\"\">默认值</th>\n        <th _v-6cc375ba=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-6cc375ba=\"\">\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">indicators</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Boolean</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">true</code></td>\n        <td _v-6cc375ba=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">controls</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Boolean</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">true</code></td>\n        <td _v-6cc375ba=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">interval</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Number</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">5000</code></td>\n        <td _v-6cc375ba=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"幻灯片\" _v-6cc375ba=\"\">\n    <h1 class=\"page-header\" _v-6cc375ba=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-6cc375ba=\"\">幻灯片</a><span class=\"author\" _v-6cc375ba=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-6cc375ba=\"\">\n      <n3-carousel _v-6cc375ba=\"\">\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(216) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #1</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(217) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #2</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-6cc375ba=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(218) + "\" _v-6cc375ba=\"\">\n          <div class=\"carousel-caption\" _v-6cc375ba=\"\">\n           <h3 _v-6cc375ba=\"\">Slide #3</h3>\n           <p _v-6cc375ba=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n    <pre _v-6cc375ba=\"\"><code class=\"language-markup\" _v-6cc375ba=\"\"><script type=\"language-mark-up\" _v-6cc375ba=\"\">\n   <n3-carousel>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/1.jpg\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #1</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/2.jpg\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #2</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide>\n          <img class=\"slide-img\" src=\"/docs/assets/img/3.png\">\n          <div class=\"carousel-caption\">\n           <h3>Slide #3</h3>\n           <p>xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </script></code></pre>\n\n  <h2 _v-6cc375ba=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-6cc375ba=\"\">\n    <thead _v-6cc375ba=\"\">\n      <tr _v-6cc375ba=\"\">\n        <th _v-6cc375ba=\"\">参数名</th>\n        <th _v-6cc375ba=\"\">类型</th>\n        <th _v-6cc375ba=\"\">默认值</th>\n        <th _v-6cc375ba=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-6cc375ba=\"\">\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">indicators</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Boolean</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">true</code></td>\n        <td _v-6cc375ba=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">controls</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Boolean</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">true</code></td>\n        <td _v-6cc375ba=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-6cc375ba=\"\">\n        <td _v-6cc375ba=\"\">interval</td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">Number</code></td>\n        <td _v-6cc375ba=\"\"><code _v-6cc375ba=\"\">5000</code></td>\n        <td _v-6cc375ba=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
-/* 209 */
+/* 216 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/jpeg;base64,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"
 
 /***/ },
-/* 210 */
+/* 217 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQIASABIAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAQ4B4ADAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEG/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AplZcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k="
 
 /***/ },
-/* 211 */
+/* 218 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAADFBMVEX268317M346s356s1WCwrFAAABC0lEQVR4nO3UQQrCMBQA0fq9/50F0VohON0p8t4i0E9D0ll0G8L27Qv8PomSREmiJFGSKEmUJEoSJYmSRGm7EiRK90TzeJjnMofhbhazxXCWw9nn+yGvN2e1/fzwePeTp3z+onf+RUmiJFGSKG0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDfuxAkShIliZJESaIkUZIoSZQkShIliZJESaIkUZIoSZQkShIliZJESaIkUZIoSZQkShIliZJESaIkUZIoSZQkShIliZJESaIkUZIoSZQkShIliZJESaIkUZIoSZQkShIliZJESaIkUZIoSZQkShIliZJESaIkUZIoSZQkShIliZJESaJ0A65ofY+E3OWXAAAAAElFTkSuQmCC"
 
 /***/ },
-/* 212 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(213)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(220)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -6497,19 +6530,19 @@
 	}
 
 /***/ },
-/* 213 */
+/* 220 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"按钮\"  >\n    <h1 class=\"page-header\"><a href=\"#按钮\" class=\"anchor\">按钮</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Button</h4>\n      <n3-button loading >default</n3-button>\n      <n3-button badge=\"2\" >badge</n3-button>\n      <n3-button disabled>default</n3-button>\n      <n3-button active type=\"primary\" loading>primary</n3-button>\n      <n3-button type=\"success\">success</n3-button>\n      <n3-button type=\"info\">info</n3-button>\n      <n3-button type=\"warning\">warning</n3-button>\n      <n3-button type=\"danger\">danger</n3-button>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button loading >default</n3-button>\n      <n3-button badge=\"2\" >badge</n3-button>\n      <n3-button disabled>default</n3-button>\n      <n3-button type=\"primary\" loading>primary</n3-button>\n      <n3-button type=\"success\">success</n3-button>\n      <n3-button type=\"info\">info</n3-button>\n      <n3-button type=\"warning\">warning</n3-button>\n      <n3-button type=\"danger\">danger</n3-button>\n    </script></code></pre>\n\n      <n3-button type=\"primary\" size=\"lg\">primary lg</n3-button>\n      <n3-button type=\"primary\">primary default</n3-button>\n      <n3-button type=\"primary\" size=\"sm\">primary sm</n3-button>\n      <n3-button type=\"primary\" size=\"xs\">primary xs</n3-button>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button type=\"primary\" size=\"lg\">lg</n3-button>\n      <n3-button type=\"primary\">default</n3-button>\n      <n3-button type=\"primary\" size=\"sm\">sm</n3-button>\n      <n3-button type=\"primary\" size=\"xs\">xs</n3-button>\n    </script></code></pre>\n\n\n    <n3-button-group>\n      <n3-button >default</n3-button>\n      <n3-button >default</n3-button>\n      <n3-button type=\"primary\">primary</n3-button>\n      <n3-button >default</n3-button>\n    </n3-button-group>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button-group>\n      <n3-button >default</n3-button>\n      <n3-button >default</n3-button>\n      <n3-button type=\"primary\">primary</n3-button>\n      <n3-button >default</n3-button>\n    </n3-button-group>\n    </script></code></pre>\n\n    <h2>按钮参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>size</td>\n          <td>String</td>\n          <td></td>\n          <td> <code>lg</code> <code></code> <code>sm</code> <code>xs</code></td>\n        </tr>\n        <tr>\n          <td>loading</td>\n          <td>Boolean</td>\n          <td></td>\n          <td>加载状态</td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td>Boolean</td>\n          <td></td>\n          <td>禁用状态</td>\n        </tr>\n        <tr>\n          <td>active</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>激活状态</td>\n        </tr>\n        <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n        <tr>\n          <td>block</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否块级元素</td>\n        </tr>\n        <tr>\n          <td>type</td>\n          <td><code>String</code>, one of <code>default</code>\n          <code>primary</code>\n          <code>danger</code>\n          <code>info</code>\n          <code>warning</code>\n          <code>success</code></td>\n          <td><code>default</code></td>\n          <td></td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</template>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"按钮\"  >\n    <h1 class=\"page-header\"><a href=\"#按钮\" class=\"anchor\">按钮</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Button</h4>\n      <n3-button loading >default</n3-button>\n      <n3-button badge=\"2\" >badge</n3-button>\n      <n3-button disabled>default</n3-button>\n      <n3-button active type=\"primary\" loading>primary</n3-button>\n      <n3-button type=\"success\">success</n3-button>\n      <n3-button type=\"info\">info</n3-button>\n      <n3-button type=\"warning\">warning</n3-button>\n      <n3-button type=\"danger\">danger</n3-button>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button loading >default</n3-button>\n      <n3-button badge=\"2\" >badge</n3-button>\n      <n3-button disabled>default</n3-button>\n      <n3-button type=\"primary\" loading>primary</n3-button>\n      <n3-button type=\"success\">success</n3-button>\n      <n3-button type=\"info\">info</n3-button>\n      <n3-button type=\"warning\">warning</n3-button>\n      <n3-button type=\"danger\">danger</n3-button>\n    </script></code></pre>\n\n      <n3-button type=\"primary\" size=\"lg\">primary lg</n3-button>\n      <n3-button type=\"primary\">primary default</n3-button>\n      <n3-button type=\"primary\" size=\"sm\">primary sm</n3-button>\n      <n3-button type=\"primary\" size=\"xs\">primary xs</n3-button>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button type=\"primary\" size=\"lg\">lg</n3-button>\n      <n3-button type=\"primary\">default</n3-button>\n      <n3-button type=\"primary\" size=\"sm\">sm</n3-button>\n      <n3-button type=\"primary\" size=\"xs\">xs</n3-button>\n    </script></code></pre>\n\n\n    <n3-button-group>\n      <n3-button >default</n3-button>\n      <n3-button >default</n3-button>\n      <n3-button type=\"primary\">primary</n3-button>\n      <n3-button >default</n3-button>\n    </n3-button-group>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button-group>\n      <n3-button >default</n3-button>\n      <n3-button >default</n3-button>\n      <n3-button type=\"primary\">primary</n3-button>\n      <n3-button >default</n3-button>\n    </n3-button-group>\n    </script></code></pre>\n\n    <h2>按钮参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>size</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td> <code>lg</code> <code></code> <code>sm</code> <code>xs</code></td>\n        </tr>\n        <tr>\n          <td>loading</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td><code>加载状态</code></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>禁用状态</td>\n        </tr>\n        <tr>\n          <td>active</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>激活状态</td>\n        </tr>\n        <tr>\n          <td>badge</td>\n          <td><code>String</code>  <code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n        <tr>\n          <td>block</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否块级元素</td>\n        </tr>\n        <tr>\n          <td>type</td>\n          <td><code>String</code>, 如:  <code>default</code>\n          <code>primary</code>\n          <code>danger</code>\n          <code>info</code>\n          <code>warning</code>\n          <code>success</code></td>\n          <td><code>default</code></td>\n          <td></td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</template>";
 
 /***/ },
-/* 214 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(215)
+	module.exports = __webpack_require__(222)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(216)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(223)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -6527,7 +6560,7 @@
 	}
 
 /***/ },
-/* 215 */
+/* 222 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -6570,31 +6603,25 @@
 	//     <tbody>
 	//       <tr>
 	//         <td>placement</td>
-	//         <td>String</td>
-	//         <td><code>String</code>. one of <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code>默认在页面中间</td>
+	//         <td><code>String</code></td>
+	//         <td><code>String</code>. 如:  <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code>默认在页面中间</td>
 	//         <td>位置</td>
 	//       </tr>
 	//        <tr>
 	//         <td>type</td>
-	//         <td>String</td>
+	//         <td><code>String</code></td>
 	//         <td>default</td>
 	//         <td>颜色</td>
 	//       </tr>
 	//        <tr>
 	//         <td>duration</td>
-	//         <td>Number</td>
+	//         <td><code>Number</code></td>
 	//         <td>3000</td>
 	//         <td>0为不消失</td>
 	//       </tr>
 	//       <tr>
-	//         <td>width</td>
-	//         <td>String</td>
-	//         <td></td>
-	//         <td>宽度</td>
-	//       </tr>
-	//       <tr>
 	//         <td>close-on-click</td>
-	//         <td>Boolean</td>
+	//         <td><code>Boolean</code></td>
 	//         <td>true</td>
 	//         <td>点击消失</td>
 	//       </tr>
@@ -6620,19 +6647,19 @@
 	// </script>
 
 /***/ },
-/* 216 */
+/* 223 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"页面提示\"  >\n    <h1 class=\"page-header\"><a href=\"#页面提示\" class=\"anchor\">页面提示</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-button @click=\"showToast\">点击</n3-button>\n      <hr>\n     <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <a class=\"btn btn-default\" @click=\"showToast\">点击</a>\n\n      new Vue({\n        methods:{\n          showToast(){\n            this.n3Toast({\n                text: '成功',\n                type: 'success',\n                placement: 'top'\n            })\n          }\n        }\n      })\n    </script></code></pre>\n\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>placement</td>\n        <td>String</td>\n        <td><code>String</code>. one of <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code>默认在页面中间</td>\n        <td>位置</td>\n      </tr>\n       <tr>\n        <td>type</td>\n        <td>String</td>\n        <td>default</td>\n        <td>颜色</td>\n      </tr>\n       <tr>\n        <td>duration</td>\n        <td>Number</td>\n        <td>3000</td>\n        <td>0为不消失</td>\n      </tr>\n      <tr>\n        <td>width</td>\n        <td>String</td>\n        <td></td>\n        <td>宽度</td>\n      </tr>\n      <tr>\n        <td>close-on-click</td>\n        <td>Boolean</td>\n        <td>true</td>\n        <td>点击消失</td>\n      </tr>\n      \n    </tbody>\n  </table>\n  </div>\n</template>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"页面提示\"  >\n    <h1 class=\"page-header\"><a href=\"#页面提示\" class=\"anchor\">页面提示</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-button @click=\"showToast\">点击</n3-button>\n      <hr>\n     <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <a class=\"btn btn-default\" @click=\"showToast\">点击</a>\n\n      new Vue({\n        methods:{\n          showToast(){\n            this.n3Toast({\n                text: '成功',\n                type: 'success',\n                placement: 'top'\n            })\n          }\n        }\n      })\n    </script></code></pre>\n\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>placement</td>\n        <td><code>String</code></td>\n        <td><code>String</code>. 如:  <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code>默认在页面中间</td>\n        <td>位置</td>\n      </tr>\n       <tr>\n        <td>type</td>\n        <td><code>String</code></td>\n        <td>default</td>\n        <td>颜色</td>\n      </tr>\n       <tr>\n        <td>duration</td>\n        <td><code>Number</code></td>\n        <td>3000</td>\n        <td>0为不消失</td>\n      </tr>\n      <tr>\n        <td>close-on-click</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>点击消失</td>\n      </tr>\n      \n    </tbody>\n  </table>\n  </div>\n</template>";
 
 /***/ },
-/* 217 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(218)
+	module.exports = __webpack_require__(225)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(219)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(226)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -6650,7 +6677,7 @@
 	}
 
 /***/ },
-/* 218 */
+/* 225 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -6732,7 +6759,7 @@
 	//           <td>日期值,需要<code>.sync</code></td>
 	//         </tr>
 	//         <tr>
-	//           <td>Width</td>
+	//           <td>width</td>
 	//           <td><code>String</code></td>
 	//           <td>200px</td>
 	//           <td>输入框宽度</td>
@@ -6757,6 +6784,7 @@
 	//         </tr>
 	//       </tbody>
 	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	//   </div>
 	// </template>
 	
@@ -6786,19 +6814,19 @@
 	// </script>
 
 /***/ },
-/* 219 */
+/* 226 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"日期选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#日期选择器\" class=\"anchor\">日期选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\n          Selected date is: {{new Date(value).toString().slice(0, -23)}}\n        </pre>\n      </p>\n      <n3-datepicker v-ref:dp :value.sync=\"value\" :disabled-days-of-Week=\"disabled\"\n      :format=\"format.toString()\" @change=\"change\"></n3-datepicker>\n      <h4>一周内无法选择的日期</h4>\n\n      <n3-select multiple :value.sync=\"disabled\">\n        <n3-option value=\"0\">0</n3-option>\n        <n3-option value=\"1\">1</n3-option>\n        <n3-option value=\"2\">2</n3-option>\n        <n3-option value=\"3\">3</n3-option>\n        <n3-option value=\"4\">4</n3-option>\n        <n3-option value=\"5\">5</n3-option>\n        <n3-option value=\"6\">6</n3-option>\n      </n3-select>\n\n      <h4>Format</h4>\n      <n3-select :value.sync=\"format\" >\n        <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n        <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n        <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n        <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n        <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-datepicker\n        :value.sync=\"value\"\n        :disabled-days-of-Week=\"disabled\"\n        :format=\"format\">\n      </n3-datepicker>\n\n      <n3-select multiple :value.sync=\"disabled\" size=5>\n        <n3-option value=\"0\">0</n3-option>\n        <n3-option value=\"1\">1</n3-option>\n        <n3-option value=\"2\">2</n3-option>\n        <n3-option value=\"3\">3</n3-option>\n        <n3-option value=\"4\">4</n3-option>\n        <n3-option value=\"5\">5</n3-option>\n        <n3-option value=\"6\">6</n3-option>\n      </n3-select>\n      <n3-select  :value.sync=\"format\">\n        <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n        <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n        <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n        <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n        <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n      </n3-select>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>日期值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>Width</td>\n          <td><code>String</code></td>\n          <td>200px</td>\n          <td>输入框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td><code>yyyy-MM-dd</code></td>\n          <td>日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.</td>\n        </tr>\n        <tr>\n          <td>disabled-days-of-week</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>一周内无法选择的日期</td>\n        </tr>\n         <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化触发</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"日期选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#日期选择器\" class=\"anchor\">日期选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\n          Selected date is: {{new Date(value).toString().slice(0, -23)}}\n        </pre>\n      </p>\n      <n3-datepicker v-ref:dp :value.sync=\"value\" :disabled-days-of-Week=\"disabled\"\n      :format=\"format.toString()\" @change=\"change\"></n3-datepicker>\n      <h4>一周内无法选择的日期</h4>\n\n      <n3-select multiple :value.sync=\"disabled\">\n        <n3-option value=\"0\">0</n3-option>\n        <n3-option value=\"1\">1</n3-option>\n        <n3-option value=\"2\">2</n3-option>\n        <n3-option value=\"3\">3</n3-option>\n        <n3-option value=\"4\">4</n3-option>\n        <n3-option value=\"5\">5</n3-option>\n        <n3-option value=\"6\">6</n3-option>\n      </n3-select>\n\n      <h4>Format</h4>\n      <n3-select :value.sync=\"format\" >\n        <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n        <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n        <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n        <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n        <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-datepicker\n        :value.sync=\"value\"\n        :disabled-days-of-Week=\"disabled\"\n        :format=\"format\">\n      </n3-datepicker>\n\n      <n3-select multiple :value.sync=\"disabled\" size=5>\n        <n3-option value=\"0\">0</n3-option>\n        <n3-option value=\"1\">1</n3-option>\n        <n3-option value=\"2\">2</n3-option>\n        <n3-option value=\"3\">3</n3-option>\n        <n3-option value=\"4\">4</n3-option>\n        <n3-option value=\"5\">5</n3-option>\n        <n3-option value=\"6\">6</n3-option>\n      </n3-select>\n      <n3-select  :value.sync=\"format\">\n        <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n        <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n        <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n        <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n        <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n      </n3-select>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>日期值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td>200px</td>\n          <td>输入框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td><code>yyyy-MM-dd</code></td>\n          <td>日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.</td>\n        </tr>\n        <tr>\n          <td>disabled-days-of-week</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>一周内无法选择的日期</td>\n        </tr>\n         <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
-/* 220 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(221)
+	module.exports = __webpack_require__(228)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(222)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(229)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -6816,7 +6844,7 @@
 	}
 
 /***/ },
-/* 221 */
+/* 228 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -6879,8 +6907,8 @@
 	//           <td>秒钟范围</td>
 	//         </tr>
 	//        <tr>
-	//           <td>hide</td>
-	//           <td><code>Event</code></td>
+	//           <td>on-hide</td>
+	//           <td><code>Function</code></td>
 	//           <td></td>
 	//           <td>隐藏时触发</td>
 	//         </tr>
@@ -6907,19 +6935,19 @@
 	// </script>
 
 /***/ },
-/* 222 */
+/* 229 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"时间选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#时间选择器\" class=\"anchor\">时间选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n\n       <n3-timepicker :value.sync=\"value\"  format=\"hh:mm:ss\"></n3-timepicker>\n\n       <n3-timepicker :value.sync=\"value1\"  format=\"hh:mm:ss\"></n3-timepicker>\n     \n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-timepicker :value.sync=\"value\" ></n3-timepicker>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>时间值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td>hh:mm:ss</td>\n          <td>格式</td>\n        </tr>\n        <tr>\n          <td>hour-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>时钟范围</td>\n        </tr>\n        <tr>\n          <td>minute-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>分钟范围</td>\n        </tr>\n        <tr>\n          <td>second-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>秒钟范围</td>\n        </tr>\n       <tr>\n          <td>hide</td>\n          <td><code>Event</code></td>\n          <td></td>\n          <td>隐藏时触发</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"时间选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#时间选择器\" class=\"anchor\">时间选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n\n       <n3-timepicker :value.sync=\"value\"  format=\"hh:mm:ss\"></n3-timepicker>\n\n       <n3-timepicker :value.sync=\"value1\"  format=\"hh:mm:ss\"></n3-timepicker>\n     \n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-timepicker :value.sync=\"value\" ></n3-timepicker>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>时间值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td>hh:mm:ss</td>\n          <td>格式</td>\n        </tr>\n        <tr>\n          <td>hour-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>时钟范围</td>\n        </tr>\n        <tr>\n          <td>minute-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>分钟范围</td>\n        </tr>\n        <tr>\n          <td>second-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>秒钟范围</td>\n        </tr>\n       <tr>\n          <td>on-hide</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>隐藏时触发</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 223 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(224)
+	module.exports = __webpack_require__(231)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(225)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(232)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -6937,7 +6965,7 @@
 	}
 
 /***/ },
-/* 224 */
+/* 231 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -7019,6 +7047,7 @@
 	//         </tr>
 	//       </tbody>
 	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	//   </div>
 	// </template>
 	
@@ -7040,19 +7069,19 @@
 	// </script>
 
 /***/ },
-/* 225 */
+/* 232 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"日期时间选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#日期时间选择器\" class=\"anchor\">日期时间选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n     \n      <n3-datetimepicker :value.sync=\"value\" format=\"yyyy-MM-dd hh:mm\"></n3-datetimepicker>\n\n      <n3-datetimepicker :value.sync=\"value1\" ></n3-datetimepicker>\n\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-datetimepicker :value.sync=\"value\" ></n3-datetimepicker>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>时间值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td>200px</td>\n          <td>输入框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td><code>yyyy-MM-dd hh:mm:ss</code></td>\n          <td>日期格式</td>\n        </tr>\n        <tr>\n          <td>disabled-days-of-week</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>一周内无法选择的日期</td>\n        </tr>\n        <tr>\n          <td>hour-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>时钟范围</td>\n        </tr>\n        <tr>\n          <td>minute-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>分钟范围</td>\n        </tr>\n        <tr>\n          <td>second-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>秒钟范围</td>\n        </tr>\n       <tr>\n          <td>on-hide</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>隐藏时候触发</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"日期时间选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#日期时间选择器\" class=\"anchor\">日期时间选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n     \n      <n3-datetimepicker :value.sync=\"value\" format=\"yyyy-MM-dd hh:mm\"></n3-datetimepicker>\n\n      <n3-datetimepicker :value.sync=\"value1\" ></n3-datetimepicker>\n\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-datetimepicker :value.sync=\"value\" ></n3-datetimepicker>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>时间值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td>200px</td>\n          <td>输入框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td><code>yyyy-MM-dd hh:mm:ss</code></td>\n          <td>日期格式</td>\n        </tr>\n        <tr>\n          <td>disabled-days-of-week</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>一周内无法选择的日期</td>\n        </tr>\n        <tr>\n          <td>hour-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>时钟范围</td>\n        </tr>\n        <tr>\n          <td>minute-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>分钟范围</td>\n        </tr>\n        <tr>\n          <td>second-range</td>\n          <td><code>Array</code></td>\n          <td>[0,60]</td>\n          <td>秒钟范围</td>\n        </tr>\n       <tr>\n          <td>on-hide</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>隐藏时候触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
-/* 226 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(227)
+	module.exports = __webpack_require__(234)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(228)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(235)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -7070,7 +7099,7 @@
 	}
 
 /***/ },
-/* 227 */
+/* 234 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -7128,7 +7157,7 @@
 	//         </tr>
 	//         <tr>
 	//           <td>trigger</td>
-	//           <td><code>String</code> one of <code>click</code><code>hover</code></td>
+	//           <td><code>String</code> 如:  <code>click</code><code>hover</code></td>
 	//           <td>click</td>
 	//           <td>触发方式</td>
 	//         </tr>
@@ -7147,19 +7176,19 @@
 	// </script>
 
 /***/ },
-/* 228 */
+/* 235 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"下拉框\"  >\n    <h1 class=\"page-header\"><a href=\"#下拉框\" class=\"anchor\">下拉框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-dropdown :show.sync=\"show\">\n        <div slot=\"trigger\">\n          <n3-button>\n            点击\n            <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n          </n3-button>\n        </div>\n        <li><a href=\"#\">Action</a></li>\n        <li><a href=\"#\">Another action</a></li>\n        <li><a href=\"#\">Something else here</a></li>\n      </n3-dropdown>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-dropdown :show.sync=\"show\">\n        <div slot=\"trigger\">\n          <n3-button>\n            点击\n            <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n          </n3-button>\n        </div>\n        <li><a href=\"#\">Action</a></li>\n        <li><a href=\"#\">Another action</a></li>\n        <li><a href=\"#\">Something else here</a></li>\n      </n3-dropdown>\n      </script></code></pre>\n  </div>\n\n  <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>下拉菜单显示状态<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>trigger</td>\n          <td><code>String</code> one of <code>click</code><code>hover</code></td>\n          <td>click</td>\n          <td>触发方式</td>\n        </tr>\n      </tbody>\n    </table>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"下拉框\"  >\n    <h1 class=\"page-header\"><a href=\"#下拉框\" class=\"anchor\">下拉框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-dropdown :show.sync=\"show\">\n        <div slot=\"trigger\">\n          <n3-button>\n            点击\n            <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n          </n3-button>\n        </div>\n        <li><a href=\"#\">Action</a></li>\n        <li><a href=\"#\">Another action</a></li>\n        <li><a href=\"#\">Something else here</a></li>\n      </n3-dropdown>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-dropdown :show.sync=\"show\">\n        <div slot=\"trigger\">\n          <n3-button>\n            点击\n            <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n          </n3-button>\n        </div>\n        <li><a href=\"#\">Action</a></li>\n        <li><a href=\"#\">Another action</a></li>\n        <li><a href=\"#\">Something else here</a></li>\n      </n3-dropdown>\n      </script></code></pre>\n  </div>\n\n  <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>下拉菜单显示状态<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>trigger</td>\n          <td><code>String</code> 如:  <code>click</code><code>hover</code></td>\n          <td>click</td>\n          <td>触发方式</td>\n        </tr>\n      </tbody>\n    </table>";
 
 /***/ },
-/* 229 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(230)
+	module.exports = __webpack_require__(237)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(231)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(238)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -7177,7 +7206,7 @@
 	}
 
 /***/ },
-/* 230 */
+/* 237 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -7353,19 +7382,227 @@
 	// </script>
 
 /***/ },
-/* 231 */
+/* 238 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"弹出框\"  >\n    <h1 class=\"page-header\"><a href=\"#弹出框\" class=\"anchor\">弹出框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-button @click=\"showModal = true\">Show modal</n3-button>\n      <n3-modal title=\"Modal title\" :show.sync=\"showModal\" effect=\"fade\" width=\"400px\" \n      @show=\"show\" @confirm=\"confirm\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button class=\"btn btn-success\" @click=\"bigModal = true\">Big modal</n3-button>\n      <n3-modal title=\"Big Modal\" :show.sync=\"bigModal\" effect=\"fade\" width=\"800px\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button class=\"btn btn-primary\" @click=\"zoomModal = true\">Zoom modal</n3-button>\n      <n3-modal title=\"Zoom Modal\" :show.sync=\"zoomModal\" effect=\"zoom\" width=\"400px\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button @click=\"showCustomModal = true\">Show custom modal</n3-button>\n      <n3-modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"400px\">\n        <div slot=\"header\">\n        </div>\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n        <div slot=\"footer\">\n        </div>\n      </n3-modal>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-button @click=\"showModal = true\">Show modal</n3-button>\n      <n3-modal title=\"Modal title\" :show.sync=\"showModal\" effect=\"fade\" width=\"400px\" \n      @show=\"show\" @confirm=\"confirm\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button class=\"btn btn-success\" @click=\"bigModal = true\">Big modal</n3-button>\n      <n3-modal title=\"Big Modal\" :show.sync=\"bigModal\" effect=\"fade\" width=\"800px\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button class=\"btn btn-primary\" @click=\"zoomModal = true\">Zoom modal</n3-button>\n      <n3-modal title=\"Zoom Modal\" :show.sync=\"zoomModal\" effect=\"zoom\" width=\"400px\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button @click=\"showCustomModal = true\">Show custom modal</n3-button>\n      <n3-modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"400px\">\n        <div slot=\"header\">\n        </div>\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n        <div slot=\"footer\">\n        </div>\n      </n3-modal>\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>title</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>弹出框标题</td>\n      </tr>\n       <tr>\n        <td>show</td>\n        <td><code>Boolean</code></td>\n        <td></td>\n        <td>是否显示,需要<code>.sync</code></td>\n      </tr>\n       <tr>\n        <td>effect</td>\n        <td><code>String</code></td>\n        <td>'fade'</td>\n        <td><code>fade</code><code>zoom</code></td>\n      </tr>\n      <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td><code>600px</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>backdrop</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>点击遮罩层是否关闭弹出框</td>\n      </tr>\n      <tr>\n        <td>on-show</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>弹出框出现时触发</td>\n      </tr>\n      <tr>\n        <td>on-hide</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>弹出框隐藏时触发</td>\n      </tr>\n      <tr>\n        <td>on-confirm</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>点击弹出框确认按钮时触发</td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>用法</h2>\n  <p>\n    如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer. 但是如果你需要自己定制弹出框内容，你可以实现\n    <code>&lt;div slot=\"header\"&gt;...&lt;/div&gt;</code> ,\n    <code>&lt;div slot=\"body\"&gt;...&lt;/div&gt;</code>和\n    <code>&lt;div slot=\"footer\"&gt;...&lt;/div&gt;</code>.\n  </p>\n  </div>";
 
 /***/ },
-/* 232 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(233)
+	module.exports = __webpack_require__(240)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(234)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(241)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs.vue"], function () {
+	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 240 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// <template>
+	//   <div class="bs-docs-section" id="输入框"  >
+	//     <h1 class="page-header"><a href="#输入框" class="anchor">输入框</a><span class="author"> </span></h1>
+	//     <div class="bs-example">
+	//       <n3-input :value.sync="value" :focused.sync="focused"></n3-input>
+	//       <n3-button @click="focused=true">聚焦</n3-button>
+	//     </div>
+	
+	//     <pre><code class="language-markup"><script type="language-mark-up">
+	//       <n3-input :value.sync="value" :focused.sync="focused"></n3-input>
+	//       <n3-button @click="focused=true">聚焦</n3-button>
+	//     </script></code></pre>
+	//     <br>
+	//     <table class="table table-bordered">
+	//       <thead>
+	//         <tr>
+	//           <th>参数名</th>
+	//           <th>类型</th>
+	//           <th>默认值</th>
+	//           <th>说明</th>
+	//         </tr>
+	//       </thead>
+	//       <tbody>
+	//         <tr>
+	//           <td>value</td>
+	//           <td><code>String</code><code>Number</code></td>
+	//           <td></td>
+	//           <td>输入的值  <code>.sync</code></td>
+	//         </tr>
+	//         <tr>
+	//           <td>focused</td>
+	//           <td><code>Boolean</code></td>
+	//           <td></td>
+	//           <td>聚焦状态  <code>.sync</code></td>
+	//         </tr>
+	//         <tr>
+	//           <td>onBlur</td>
+	//           <td><code>Function</code></td>
+	//           <td></td>
+	//           <td>失去焦点触发函数</td>
+	//         </tr>
+	//         <tr>
+	//           <td>onFocus</td>
+	//           <td><code>Function</code></td>
+	//           <td></td>
+	//           <td>聚焦触发函数</td>
+	//         </tr>
+	//       </tbody>
+	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+	//   </div>
+	// </template>
+	
+	// <script>
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: '',
+	      focused: false
+	    };
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 241 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"bs-docs-section\" id=\"输入框\"  >\n    <h1 class=\"page-header\"><a href=\"#输入框\" class=\"anchor\">输入框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-input :value.sync=\"value\" :focused.sync=\"focused\"></n3-input>\n      <n3-button @click=\"focused=true\">聚焦</n3-button>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-input :value.sync=\"value\" :focused.sync=\"focused\"></n3-input>\n      <n3-button @click=\"focused=true\">聚焦</n3-button>\n    </script></code></pre>\n    <br>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>输入的值  <code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>focused</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>聚焦状态  <code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>onBlur</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>失去焦点触发函数</td>\n        </tr>\n        <tr>\n          <td>onFocus</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>聚焦触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(243)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(244)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs.vue"], function () {
+	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 243 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// <template>
+	//   <div class="bs-docs-section" id="文本框"  >
+	//     <h1 class="page-header"><a href="#文本框" class="anchor">文本框</a><span class="author"> </span></h1>
+	//     <div class="bs-example">
+	//      <n3-textarea :value.sync="value" ></n3-textarea>
+	//     </div>
+	
+	//     <pre><code class="language-markup"><script type="language-mark-up">
+	//       <n3-textarea :value.sync="value"></n3-textarea>
+	//     </script></code></pre>
+	//     <br>
+	//     <table class="table table-bordered">
+	//       <thead>
+	//         <tr>
+	//           <th>参数名</th>
+	//           <th>类型</th>
+	//           <th>默认值</th>
+	//           <th>说明</th>
+	//         </tr>
+	//       </thead>
+	//       <tbody>
+	//         <tr>
+	//           <td>resize</td>
+	//           <td><code>Boolean</code></td>
+	//           <td></td>
+	//           <td>是否支持拖动</td>
+	//         </tr>
+	//         <tr>
+	//           <td>max-length</td>
+	//           <td><code>Number</code></td>
+	//           <td></td>
+	//           <td>字符数限制</td>
+	//         </tr>
+	//         <tr>
+	//           <td>max-height</td>
+	//           <td><code>String</code></td>
+	//           <td></td>
+	//           <td>最大高度</td>
+	//         </tr>
+	//         <tr>
+	//           <td>min-height</td>
+	//           <td><code>String</code></td>
+	//           <td></td>
+	//           <td>最小高度</td>
+	//         </tr>
+	//         <tr>
+	//       </tbody>
+	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+	//   </div>
+	// </template>
+	
+	// <script>
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: ''
+	    };
+	  },
+	
+	  methods: {}
+	};
+	// </script>
+
+/***/ },
+/* 244 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"bs-docs-section\" id=\"文本框\"  >\n    <h1 class=\"page-header\"><a href=\"#文本框\" class=\"anchor\">文本框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n     <n3-textarea :value.sync=\"value\" ></n3-textarea>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-textarea :value.sync=\"value\"></n3-textarea>\n    </script></code></pre>\n    <br>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>resize</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>是否支持拖动</td>\n        </tr>\n        <tr>\n          <td>max-length</td>\n          <td><code>Number</code></td>\n          <td></td>\n          <td>字符数限制</td>\n        </tr>\n        <tr>\n          <td>max-height</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>最大高度</td>\n        </tr>\n        <tr>\n          <td>min-height</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>最小高度</td>\n        </tr>\n        <tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(246)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(247)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -7383,7 +7620,7 @@
 	}
 
 /***/ },
-/* 233 */
+/* 246 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -7508,7 +7745,7 @@
 	//       <tbody>
 	//         <tr>
 	//           <td>type</td>
-	//           <td><code>String</code> one of <code>horizontal</code><code>vertical</code></td>
+	//           <td><code>String</code> 如:  <code>horizontal</code><code>vertical</code></td>
 	//           <td>horizontal</td>
 	//           <td>水平,垂直</td>
 	//         </tr>
@@ -7533,7 +7770,7 @@
 	//       <tbody>
 	//         <tr>
 	//           <td>trigger</td>
-	//           <td><code>String</code> one of <code>click</code><code>hover</code></td>
+	//           <td><code>String</code> 如:  <code>click</code><code>hover</code></td>
 	//           <td>click</td>
 	//           <td>展开方式</td>
 	//         </tr>
@@ -7577,19 +7814,19 @@
 	// </script>
 
 /***/ },
-/* 234 */
+/* 247 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"导航\"  >\n    <h1 class=\"page-header\"><a href=\"#导航\" class=\"anchor\">导航</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-nav theme=\"default\" >\n          <n3-nav-item active>\n            <a>导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a >导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav trigger=\"hover\">\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item >\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a >子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n          </n3-nav-item>\n          </n3-nav>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-nav theme=\"default\" >\n          <n3-nav-item active>\n            <a >导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a >导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav>\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item >\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a >子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n          </n3-nav-item>\n        </n3-nav>\n      </script></code></pre>\n        <n3-nav theme=\"dark\" type=\"vertical\" style=\"width:300px;\">\n          <n3-nav-item active>\n            <a >导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a >导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav>\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item >\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a >子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n            </n3-nav-item>\n            <n3-nav-item >\n              <a>导航四</a>\n            </n3-nav-item>\n        </n3-nav>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-nav theme=\"dark\" type=\"vertical\" >\n          <n3-nav-item active>\n            <a >导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a >导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav>\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item >\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a >子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n            </n3-nav-item>\n            <n3-nav-item >\n              <a>导航四</a>\n          </n3-nav-item>\n        </n3-nav>\n      </script></code></pre>\n  </div>\n\n  <h2>n3-nav参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>type</td>\n          <td><code>String</code> one of <code>horizontal</code><code>vertical</code></td>\n          <td>horizontal</td>\n          <td>水平,垂直</td>\n        </tr>\n        <tr>\n          <td>theme</td>\n          <td><code>String</code> oneof <code>default</code><code>dark</code></td>\n          <td>default</td>\n          <td>颜色</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-sub-nav参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>trigger</td>\n          <td><code>String</code> one of <code>click</code><code>hover</code></td>\n          <td>click</td>\n          <td>展开方式</td>\n        </tr>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否展开</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-nav-item参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>active</td>\n          <td><code>Boolean</code> </td>\n          <td>false</td>\n          <td>是否激活</td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否不可用</td>\n        </tr>\n      </tbody>\n    </table>\n</template>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"导航\"  >\n    <h1 class=\"page-header\"><a href=\"#导航\" class=\"anchor\">导航</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-nav theme=\"default\" >\n          <n3-nav-item active>\n            <a>导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a >导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav trigger=\"hover\">\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item >\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a >子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n          </n3-nav-item>\n          </n3-nav>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-nav theme=\"default\" >\n          <n3-nav-item active>\n            <a >导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a >导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav>\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item >\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a >子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n          </n3-nav-item>\n        </n3-nav>\n      </script></code></pre>\n        <n3-nav theme=\"dark\" type=\"vertical\" style=\"width:300px;\">\n          <n3-nav-item active>\n            <a >导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a >导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav>\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item >\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a >子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n            </n3-nav-item>\n            <n3-nav-item >\n              <a>导航四</a>\n            </n3-nav-item>\n        </n3-nav>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-nav theme=\"dark\" type=\"vertical\" >\n          <n3-nav-item active>\n            <a >导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a >导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav>\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item >\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item >\n                <a >子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n            </n3-nav-item>\n            <n3-nav-item >\n              <a>导航四</a>\n          </n3-nav-item>\n        </n3-nav>\n      </script></code></pre>\n  </div>\n\n  <h2>n3-nav参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>type</td>\n          <td><code>String</code> 如:  <code>horizontal</code><code>vertical</code></td>\n          <td>horizontal</td>\n          <td>水平,垂直</td>\n        </tr>\n        <tr>\n          <td>theme</td>\n          <td><code>String</code> oneof <code>default</code><code>dark</code></td>\n          <td>default</td>\n          <td>颜色</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-sub-nav参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>trigger</td>\n          <td><code>String</code> 如:  <code>click</code><code>hover</code></td>\n          <td>click</td>\n          <td>展开方式</td>\n        </tr>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否展开</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-nav-item参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>active</td>\n          <td><code>Boolean</code> </td>\n          <td>false</td>\n          <td>是否激活</td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否不可用</td>\n        </tr>\n      </tbody>\n    </table>\n</template>";
 
 /***/ },
-/* 235 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(236)
+	module.exports = __webpack_require__(249)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(237)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(250)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -7607,7 +7844,7 @@
 	}
 
 /***/ },
-/* 236 */
+/* 249 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -7728,7 +7965,7 @@
 	//     <tbody>
 	//       <tr>
 	//         <td>trigger</td>
-	//         <td><code>String</code>, one of <code>click</code>
+	//         <td><code>String</code>, 如:  <code>click</code>
 	//         <code>focus</code>
 	//         <code>hover</code></td>
 	//         <td><code>click</code></td>
@@ -7736,7 +7973,7 @@
 	//       </tr>
 	//       <tr>
 	//         <td>effect</td>
-	//         <td><code>String</code>, one of <code>scale</code> <code>fade</code></td>
+	//         <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>
 	//         <td><code>scale</code></td>
 	//         <td></td>
 	//       </tr>
@@ -7754,7 +7991,7 @@
 	//       </tr>
 	//       <tr>
 	//         <td>placement</td>
-	//         <td><code>String</code>, one of <code>top</code>
+	//         <td><code>String</code>, 如:  <code>top</code>
 	//         <code>left</code>
 	//         <code>right</code>
 	//         <code>bottom</code></td>
@@ -7777,7 +8014,7 @@
 	//     <tbody>
 	//       <tr>
 	//         <td>effect</td>
-	//         <td><code>String</code>, one of <code>scale</code> <code>fade</code></td>
+	//         <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>
 	//         <td><code>fade</code></td>
 	//         <td></td>
 	//       </tr>
@@ -7789,7 +8026,7 @@
 	//       </tr>
 	//       <tr>
 	//         <td>placement</td>
-	//         <td><code>String</code>, one of <code>top</code>
+	//         <td><code>String</code>, 如:  <code>top</code>
 	//         <code>left</code>
 	//         <code>right</code>
 	//         <code>bottom</code></td>
@@ -7798,19 +8035,19 @@
 	//       </tr>
 	//       <tr>
 	//         <td>on-confirm</td>
-	//         <td>Function</td>
+	//         <td><code>Function</code></td>
 	//         <td></td>
 	//         <td>点击确定的回调函数</td>
 	//       </tr>
 	//       <tr>
 	//         <td>ok-text</td>
-	//         <td>String</td>
+	//         <td><code>String</code></td>
 	//         <td>确定</td>
 	//         <td>确定按钮的文案</td>
 	//       </tr>
 	//        <tr>
 	//         <td>cancel-text</td>
-	//         <td>String</td>
+	//         <td><code>String</code></td>
 	//         <td></td>
 	//         <td>取消按钮的文案</td>
 	//       </tr>
@@ -7846,19 +8083,20 @@
 	// </script>
 
 /***/ },
-/* 237 */
+/* 250 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"气泡框\"  >\n    <h1 class=\"page-header\"><a href=\"#气泡框\" class=\"anchor\">气泡框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\"  placement=\"top\">\n        <div slot=\"content\" >\n           从前有座山\n        </div>\n        <n3-button >Popover on top</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\"  placement=\"left\">\n         <div slot=\"content\">\n            山里有座庙\n        </div>\n        <n3-button >Popover on left</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\"  placement=\"right\">\n         <div slot=\"content\">\n            庙里有个老和尚\n        </div>\n        <n3-button >Popover on right</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" placement=\"bottom\" :header=\"true\" title=\"Title\" >\n         <div slot=\"content\" >\n            老和尚说从前有座山\n        </div>\n        <n3-button >Popover on bottom</n3-button>\n      </n3-popover>\n      <hr>\n      <h4>No title</h4>\n      <n3-popover effect=\"fade\"   :header =\"false\" title=\"Title\"  placement=\"top\">\n         <div slot=\"content\">\n            山里有座庙\n          </div>\n          <n3-button >Popover on top</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\"  :header =\"false\" title=\"Title\"  placement=\"left\">\n        <div slot=\"content\">\n            庙里有个老和尚\n        </div>\n        <n3-button >Popover on left</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\"  :header =\"false\" title=\"Title\"  placement=\"right\">\n        <div slot=\"content\">\n            老和尚说从前有座山\n        </div>\n        <n3-button >Popover on right</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header =\"false\" placement=\"bottom\"  title=\"Title\" >\n        <div slot=\"content\">\n            山里有座庙\n          </div>\n        <n3-button >Popover on bottom</n3-button>\n      </n3-popover>\n      <hr>\n      <h4>Triger</h4>\n        <n3-popover effect=\"scale\"  title=\"Title\"  placement=\"top\" trigger=\"hover\">\n            <div slot=\"content\">\n              庙里有个老和尚\n            </div>\n            <n3-button >Mouseenter</n3-button>\n        </n3-popover>\n       <hr>\n      <h4>Focus</h4>  \n      <n3-popover effect=\"scale\"\n      title=\"Title\"  placement=\"bottom\" trigger=\"focus\">\n        <div slot=\"content\">\n            老和尚很无聊\n        </div> \n        <n3-input placeholder=\"Focus\" ></n3-input>\n      </n3-popover>\n\n      <h4>气泡确认</h4>  \n      <n3-pop-confirm\n          content=\"确定删除么？\"\n          :on-confirm=\"del(item)\">\n          <n3-button >删除</n3-button>\n      </n3-pop-confirm>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n  <n3-popover effect=\"scale\" title=\"Title\" placement=\"bottom\" trigger=\"focus\">\n    <div slot=\"content\">\n      老和尚很无聊\n    </div>\n    <input type=\"text\" class=\"form-control\" placeholder=\"Focus\" style=\"width:200px;\">\n  </n3-popover>\n  <n3-pop-confirm content=\"确定删除么？\" :on-confirm=\"del(item)\">\n    <n3-n3-button>删除</n3-n3-button>\n  </n3-pop-confirm>\n\n  del(item){ \n    return function(popconfirm) { //popconfirm参数为组件引用 \n      setTimeout(function() {\n        alert('删除了' + item) popconfirm.show = false\n      },500)\n    }\n  }\n\n</script>\n</code></pre>\n  <h2>popover参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>trigger</td>\n        <td><code>String</code>, one of <code>click</code>\n        <code>focus</code>\n        <code>hover</code></td>\n        <td><code>click</code></td>\n        <td>触发方式</td>\n      </tr>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, one of <code>scale</code> <code>fade</code></td>\n        <td><code>scale</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>title</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>header</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>是否显示头部</td>\n      </tr>\n      <tr>\n        <td>placement</td>\n        <td><code>String</code>, one of <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位</td>\n      </tr>\n    </tbody>\n  </table>\n\n  <h2>popconfirm参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, one of <code>scale</code> <code>fade</code></td>\n        <td><code>fade</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>content</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>placement</td>\n        <td><code>String</code>, one of <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位</td>\n      </tr>\n      <tr>\n        <td>on-confirm</td>\n        <td>Function</td>\n        <td></td>\n        <td>点击确定的回调函数</td>\n      </tr>\n      <tr>\n        <td>ok-text</td>\n        <td>String</td>\n        <td>确定</td>\n        <td>确定按钮的文案</td>\n      </tr>\n       <tr>\n        <td>cancel-text</td>\n        <td>String</td>\n        <td></td>\n        <td>取消按钮的文案</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"气泡框\"  >\n    <h1 class=\"page-header\"><a href=\"#气泡框\" class=\"anchor\">气泡框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\"  placement=\"top\">\n        <div slot=\"content\" >\n           从前有座山\n        </div>\n        <n3-button >Popover on top</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\"  placement=\"left\">\n         <div slot=\"content\">\n            山里有座庙\n        </div>\n        <n3-button >Popover on left</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\"  placement=\"right\">\n         <div slot=\"content\">\n            庙里有个老和尚\n        </div>\n        <n3-button >Popover on right</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" placement=\"bottom\" :header=\"true\" title=\"Title\" >\n         <div slot=\"content\" >\n            老和尚说从前有座山\n        </div>\n        <n3-button >Popover on bottom</n3-button>\n      </n3-popover>\n      <hr>\n      <h4>No title</h4>\n      <n3-popover effect=\"fade\"   :header =\"false\" title=\"Title\"  placement=\"top\">\n         <div slot=\"content\">\n            山里有座庙\n          </div>\n          <n3-button >Popover on top</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\"  :header =\"false\" title=\"Title\"  placement=\"left\">\n        <div slot=\"content\">\n            庙里有个老和尚\n        </div>\n        <n3-button >Popover on left</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\"  :header =\"false\" title=\"Title\"  placement=\"right\">\n        <div slot=\"content\">\n            老和尚说从前有座山\n        </div>\n        <n3-button >Popover on right</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header =\"false\" placement=\"bottom\"  title=\"Title\" >\n        <div slot=\"content\">\n            山里有座庙\n          </div>\n        <n3-button >Popover on bottom</n3-button>\n      </n3-popover>\n      <hr>\n      <h4>Triger</h4>\n        <n3-popover effect=\"scale\"  title=\"Title\"  placement=\"top\" trigger=\"hover\">\n            <div slot=\"content\">\n              庙里有个老和尚\n            </div>\n            <n3-button >Mouseenter</n3-button>\n        </n3-popover>\n       <hr>\n      <h4>Focus</h4>  \n      <n3-popover effect=\"scale\"\n      title=\"Title\"  placement=\"bottom\" trigger=\"focus\">\n        <div slot=\"content\">\n            老和尚很无聊\n        </div> \n        <n3-input placeholder=\"Focus\" ></n3-input>\n      </n3-popover>\n\n      <h4>气泡确认</h4>  \n      <n3-pop-confirm\n          content=\"确定删除么？\"\n          :on-confirm=\"del(item)\">\n          <n3-button >删除</n3-button>\n      </n3-pop-confirm>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n  <n3-popover effect=\"scale\" title=\"Title\" placement=\"bottom\" trigger=\"focus\">\n    <div slot=\"content\">\n      老和尚很无聊\n    </div>\n    <input type=\"text\" class=\"form-control\" placeholder=\"Focus\" style=\"width:200px;\">\n  </n3-popover>\n  <n3-pop-confirm content=\"确定删除么？\" :on-confirm=\"del(item)\">\n    <n3-n3-button>删除</n3-n3-button>\n  </n3-pop-confirm>\n\n  del(item){ \n    return function(popconfirm) { //popconfirm参数为组件引用 \n      setTimeout(function() {\n        alert('删除了' + item) popconfirm.show = false\n      },500)\n    }\n  }\n\n</script>\n</code></pre>\n  <h2>popover参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>trigger</td>\n        <td><code>String</code>, 如:  <code>click</code>\n        <code>focus</code>\n        <code>hover</code></td>\n        <td><code>click</code></td>\n        <td>触发方式</td>\n      </tr>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>\n        <td><code>scale</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>title</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>header</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>是否显示头部</td>\n      </tr>\n      <tr>\n        <td>placement</td>\n        <td><code>String</code>, 如:  <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位</td>\n      </tr>\n    </tbody>\n  </table>\n\n  <h2>popconfirm参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>\n        <td><code>fade</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>content</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>placement</td>\n        <td><code>String</code>, 如:  <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位</td>\n      </tr>\n      <tr>\n        <td>on-confirm</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>点击确定的回调函数</td>\n      </tr>\n      <tr>\n        <td>ok-text</td>\n        <td><code>String</code></td>\n        <td>确定</td>\n        <td>确定按钮的文案</td>\n      </tr>\n       <tr>\n        <td>cancel-text</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>取消按钮的文案</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
-/* 238 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(239)
+	__webpack_require__(252)
+	module.exports = __webpack_require__(254)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(240)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(255)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -7866,17 +8104,57 @@
 	if (!hotAPI.compatible) return
 	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs.vue"], function () {
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-4a479df2&file=n3ProgressbarDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs.vue"], function () {
 	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-4a479df2&file=n3ProgressbarDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 239 */
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(253);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(149)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4a479df2&file=n3ProgressbarDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4a479df2&file=n3ProgressbarDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(148)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".margin[_v-4a479df2]{\n  margin-bottom:20px;\n}", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 254 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -7888,21 +8166,16 @@
 	//   <div class="bs-docs-section" id="进度条"  >
 	//     <h1 class="page-header"><a href="#进度条" class="anchor">进度条</a><span class="author"> </span></h1>
 	//     <div class="bs-example">
-	//       <h4>静态</h4>
+	//       <h4>高度</h4>
 	//       <div class="row">
 	//         <div class="col-md-4">
-	//           <n3-progress>
-	//             <n3-progressbar :now="20" type="success" ></n3-progressbar>
+	//           <n3-progress class="margin">
+	//             <n3-progressbar :now="20" type="success" height="10px"></n3-progressbar>
 	//           </n3-progress>
 	//         </div>
 	//         <div class="col-md-4">
-	//           <n3-progress>
-	//             <n3-progressbar :now="40" type="info"></n3-progressbar>
-	//           </n3-progress>
-	//         </div>
-	//         <div class="col-md-4">
-	//           <n3-progress>
-	//             <n3-progressbar :now="60" type="primary"></n3-progressbar>
+	//           <n3-progress class="margin">
+	//             <n3-progressbar :now="40" type="success"></n3-progressbar>
 	//           </n3-progress>
 	//         </div>
 	//       </div>
@@ -7913,15 +8186,15 @@
 	//         动态
 	//         <n3-button  @click="dynamicClick">随机变化</n3-button>
 	//       </h4>
-	//       <n3-progress>
+	//       <n3-progress class="margin" >
 	//         <n3-progressbar :now="dynamicData[0] * 2" type="info" ></n3-progressbar>
 	//       </n3-progress>
-	//       <n3-progress>
+	//       <n3-progress class="margin">
 	//         <n3-progressbar :now="dynamicData[1] * 2" type="warning"></n3-progressbar>
 	//       </n3-progress>
-	//       <n3-progress>
+	//       <n3-progress class="margin">
 	//         <n3-progressbar :now="dynamicData[2] * 2" type="danger"></n3-progressbar>
-	//       </n3-progress>
+	//       </n3-progress class="margin">
 	//       <n3-progress>
 	//         <n3-progressbar :now="dynamicData[3] * 2" type="success" striped></n3-progressbar>
 	//       </n3-progress>
@@ -7946,17 +8219,12 @@
 	//       <div class="row">
 	//         <div class="col-md-4">
 	//           <n3-progress>
-	//             <n3-progressbar :now="20" type="success"></n3-progressbar>
+	//             <n3-progressbar :now="20" type="success" height="10px"></n3-progressbar>
 	//           </n3-progress>
 	//         </div>
 	//         <div class="col-md-4">
 	//           <n3-progress>
 	//             <n3-progressbar :now="40" type="info"></n3-progressbar>
-	//           </n3-progress>
-	//         </div>
-	//         <div class="col-md-4">
-	//           <n3-progress>
-	//             <n3-progressbar :now="60" type="primary"></n3-progressbar>
 	//           </n3-progress>
 	//         </div>
 	//       </div>
@@ -8011,6 +8279,12 @@
 	//           <td><code>Number</code></td>
 	//           <td></td>
 	//           <td>当前进度</td>
+	//         </tr>
+	//          <tr>
+	//           <td>height</td>
+	//           <td><code>String</code></td>
+	//           <td>20px</td>
+	//           <td>高度</td>
 	//         </tr>
 	//         <tr>
 	//           <td>type</td>
@@ -8067,21 +8341,27 @@
 	  }
 	};
 	// </script>
+	// <style scoped>
+	// .margin{
+	//   margin-bottom:20px;
+	// }
+	
+	// </style>
 
 /***/ },
-/* 240 */
+/* 255 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"进度条\"  >\n    <h1 class=\"page-header\"><a href=\"#进度条\" class=\"anchor\">进度条</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>静态</h4>\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <n3-progress>\n            <n3-progressbar :now=\"20\" type=\"success\" ></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\">\n          <n3-progress>\n            <n3-progressbar :now=\"40\" type=\"info\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\">\n          <n3-progress>\n            <n3-progressbar :now=\"60\" type=\"primary\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n\n      <hr>\n\n      <h4>\n        动态\n        <n3-button  @click=\"dynamicClick\">随机变化</n3-button>\n      </h4>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" ></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped></n3-progressbar>\n      </n3-progress>\n\n      <hr>\n\n      <h4>\n        叠加\n        <n3-button  @click=\"stackedClick\">随机变化</n3-button>\n      </h4>\n\n      <n3-progress>\n        <n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[1]\" label type=\"success\" ></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped ></n3-progressbar>\n      </div>\n\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <h4>静态</h4>\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <n3-progress>\n            <n3-progressbar :now=\"20\" type=\"success\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\">\n          <n3-progress>\n            <n3-progressbar :now=\"40\" type=\"info\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\">\n          <n3-progress>\n            <n3-progressbar :now=\"60\" type=\"primary\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n\n      <hr>\n\n      <h4>\n        动态\n        <n3-button  @click=\"dynamicClick\">随机变化</n3-button>\n      </h4>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" ></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped></n3-progressbar>\n      </n3-progress>\n\n      <hr>\n\n      <h4>\n        叠加\n        <n3-button  @click=\"stackedClick\">随机变化</n3-button>\n      </h4>\n\n      <n3-progress>\n        <n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[1]\" label type=\"success\" ></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped ></n3-progressbar>\n      </div>\n    </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n         <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>now</td>\n          <td><code>Number</code></td>\n          <td></td>\n          <td>当前进度</td>\n        </tr>\n        <tr>\n          <td>type</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>样式 </td>\n        </tr>\n        <tr>\n          <td>label</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否显示进度提示</td>\n        </tr>\n        <tr>\n          <td>striped</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否显示条纹</td>\n        </tr>\n        <tr>\n          <td>animated</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>动画效果</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"进度条\" _v-4a479df2=\"\">\n    <h1 class=\"page-header\" _v-4a479df2=\"\"><a href=\"#进度条\" class=\"anchor\" _v-4a479df2=\"\">进度条</a><span class=\"author\" _v-4a479df2=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-4a479df2=\"\">\n      <h4 _v-4a479df2=\"\">高度</h4>\n      <div class=\"row\" _v-4a479df2=\"\">\n        <div class=\"col-md-4\" _v-4a479df2=\"\">\n          <n3-progress class=\"margin\" _v-4a479df2=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-4a479df2=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-4a479df2=\"\">\n          <n3-progress class=\"margin\" _v-4a479df2=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-4a479df2=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n\n      <hr _v-4a479df2=\"\">\n\n      <h4 _v-4a479df2=\"\">\n        动态\n        <n3-button @click=\"dynamicClick\" _v-4a479df2=\"\">随机变化</n3-button>\n      </h4>\n      <n3-progress class=\"margin\" _v-4a479df2=\"\">\n        <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-4a479df2=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-4a479df2=\"\">\n        <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-4a479df2=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-4a479df2=\"\">\n        <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-4a479df2=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress _v-4a479df2=\"\">\n        <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-4a479df2=\"\"></n3-progressbar>\n      </n3-progress>\n\n      <hr _v-4a479df2=\"\">\n\n      <h4 _v-4a479df2=\"\">\n        叠加\n        <n3-button @click=\"stackedClick\" _v-4a479df2=\"\">随机变化</n3-button>\n      </h4>\n\n      <n3-progress _v-4a479df2=\"\">\n        <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-4a479df2=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-4a479df2=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-4a479df2=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-4a479df2=\"\"></n3-progressbar>\n      </n3-progress></div>\n\n    </div>\n    <pre _v-4a479df2=\"\"><code class=\"language-markup\" _v-4a479df2=\"\"><script type=\"language-mark-up\" _v-4a479df2=\"\">\n      <h4>静态</h4>\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <n3-progress>\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\">\n          <n3-progress>\n            <n3-progressbar :now=\"40\" type=\"info\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n\n      <hr>\n\n      <h4>\n        动态\n        <n3-button  @click=\"dynamicClick\">随机变化</n3-button>\n      </h4>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" ></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress>\n        <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped></n3-progressbar>\n      </n3-progress>\n\n      <hr>\n\n      <h4>\n        叠加\n        <n3-button  @click=\"stackedClick\">随机变化</n3-button>\n      </h4>\n\n      <n3-progress>\n        <n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[1]\" label type=\"success\" ></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped ></n3-progressbar>\n      </div>\n    </script></code></pre>\n\n    <h2 _v-4a479df2=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-4a479df2=\"\">\n      <thead _v-4a479df2=\"\">\n        <tr _v-4a479df2=\"\">\n         <th _v-4a479df2=\"\">参数名</th>\n          <th _v-4a479df2=\"\">类型</th>\n          <th _v-4a479df2=\"\">默认值</th>\n          <th _v-4a479df2=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-4a479df2=\"\">\n        <tr _v-4a479df2=\"\">\n          <td _v-4a479df2=\"\">now</td>\n          <td _v-4a479df2=\"\"><code _v-4a479df2=\"\">Number</code></td>\n          <td _v-4a479df2=\"\"></td>\n          <td _v-4a479df2=\"\">当前进度</td>\n        </tr>\n         <tr _v-4a479df2=\"\">\n          <td _v-4a479df2=\"\">height</td>\n          <td _v-4a479df2=\"\"><code _v-4a479df2=\"\">String</code></td>\n          <td _v-4a479df2=\"\">20px</td>\n          <td _v-4a479df2=\"\">高度</td>\n        </tr>\n        <tr _v-4a479df2=\"\">\n          <td _v-4a479df2=\"\">type</td>\n          <td _v-4a479df2=\"\"><code _v-4a479df2=\"\">String</code></td>\n          <td _v-4a479df2=\"\"></td>\n          <td _v-4a479df2=\"\">样式 </td>\n        </tr>\n        <tr _v-4a479df2=\"\">\n          <td _v-4a479df2=\"\">label</td>\n          <td _v-4a479df2=\"\"><code _v-4a479df2=\"\">Boolean</code></td>\n          <td _v-4a479df2=\"\">false</td>\n          <td _v-4a479df2=\"\">是否显示进度提示</td>\n        </tr>\n        <tr _v-4a479df2=\"\">\n          <td _v-4a479df2=\"\">striped</td>\n          <td _v-4a479df2=\"\"><code _v-4a479df2=\"\">Boolean</code></td>\n          <td _v-4a479df2=\"\"><code _v-4a479df2=\"\">false</code></td>\n          <td _v-4a479df2=\"\">是否显示条纹</td>\n        </tr>\n        <tr _v-4a479df2=\"\">\n          <td _v-4a479df2=\"\">animated</td>\n          <td _v-4a479df2=\"\"><code _v-4a479df2=\"\">Boolean</code></td>\n          <td _v-4a479df2=\"\"><code _v-4a479df2=\"\">false</code></td>\n          <td _v-4a479df2=\"\">动画效果</td>\n        </tr>\n      </tbody>\n    </table>\n  ";
 
 /***/ },
-/* 241 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(242)
+	module.exports = __webpack_require__(257)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(243)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(258)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -8099,7 +8379,7 @@
 	}
 
 /***/ },
-/* 242 */
+/* 257 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8218,7 +8498,7 @@
 	//       ]
 	//     </script></code></pre>
 	//     <h2>参数</h2>
-	//     <p>样式的参数和 <a href="#按钮组">按钮组</a> 相同</p>
+	//     <p>样式的参数和 <a href="#n3ButtonsDocs">按钮</a> 相同</p>
 	//     <table class="table table-bordered">
 	//       <thead>
 	//         <tr>
@@ -8335,7 +8615,7 @@
 	//         </tr>
 	//       </tbody>
 	//     </table>
-	
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	//   </div>
 	// </template>
 	
@@ -8355,19 +8635,19 @@
 	// </script>
 
 /***/ },
-/* 243 */
+/* 258 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"选择框\"  >\n    <h1 class=\"page-header\"><a href=\"#选择框\" class=\"anchor\">选择框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\nSelect data : {{single}}\n        </pre>\n      </p>\n      <n3-select :value.sync=\"single\" :badge=\"5\" >\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选</h4>\n      <p>\n        <pre>\nSelect data : {{multiple.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :value.sync=\"multiple\" search>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选限制</h4>\n      <p>\n        <pre>\nSelect data : {{multipleLimit.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :limit=\"2\" :value.sync=\"multipleLimit\" search extra>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>自定义内容</h4>\n      <p>\n        <pre>\nSelect data : {{custom.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :value.sync=\"custom\" >\n        <n3-option value=\"Star\"><span  class=\"fa fa-star\"></span> Star</n3-option>\n        <n3-option value=\"Heart\"><span class=\"fa fa-heart\"></span> Heart</n3-option>\n        <n3-option value=\"Film\"><span  class=\"fa fa-film\"></span> Film</n3-option>\n        <n3-option value=\"Inbox\"><span class=\"fa fa-inbox\"></span> Inbox</n3-option>\n      </n3-select>\n      <hr />\n      <h4>传递数组，支持搜索</h4>\n      <p>\n        支持只传递接json数组，可以支持搜索\n        <pre>\nSelect data : {{arr}}\n        </pre>\n      </p>\n      <n3-select :value.sync=\"arr\" :options=\"fruitOptions\" :search=\"true\" multiple extra >\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-select>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <n3-select multiple>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <n3-select multiple :limit=\"2\">\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <n3-select multiple>\n        <n3-option value=\"Star\"><span slot=\"span\" class=\"fa fa-star\"></span> Star</n3-option>\n        <n3-option value=\"Heart\"><span slot=\"span\" class=\"fa fa-heart\"></span> Heart</n3-option>\n        <n3-option value=\"Film\"><span slot=\"span\" class=\"fa fa-film\"></span> Film</n3-option>\n        <n3-option value=\"Inbox\"><span slot=\"span\" class=\"fa fa-inbox\"></span> Inbox</n3-option>\n      </n3-select>\n\n      <n3-select :value.sync=\"arr\" :options=\"fruitOptions\" :search=\"true\" >\n      </n3-select>\n      fruitOptions = [\n        {value: 'apple', label: 'Apple'},\n        {value: 'banana', label: 'Banana'},\n        {value: 'cherry', label: 'Cherry'},\n        {value: 'orange', label: 'Orange'},\n        {value: 'grape', label: 'Grape'},\n      ]\n    </script></code></pre>\n    <h2>参数</h2>\n    <p>样式的参数和 <a href=\"#按钮组\">按钮组</a> 相同</p>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code></code></td>\n          <td><code></code></td>\n          <td>多选为数组，单选为单个数字或者字符串,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td><code>[]</code></td>\n          <td>json数组</td>\n        </tr>\n        <tr>\n          <td>placeholder</td>\n          <td><code>String</code></td>\n          <td>'请选择'</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>multiple</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>支持多选</td>\n        </tr>\n        <tr>\n          <td>limit</td>\n          <td><code>Number</code></td>\n          <td><code>1024</code></td>\n          <td>多选限制</td>\n        </tr>\n        <tr>\n          <td>search</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否支持搜索</td>\n        </tr>\n         <tr>\n          <td>extra</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>可支持在输入款内添加新的选项(需要search支持)</td>\n        </tr>\n        <tr>\n          <td>input-placeholder</td>\n          <td><code>String</code></td>\n          <td><code>请输入</code></td>\n          <td>输入框的placeholder</td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>选择框大小</td>\n        </tr>\n        <tr>\n          <td>menu-max-height</td>\n          <td><code>String</code></td>\n          <td><code>300px</code></td>\n          <td>下拉框最大高度</td>\n        </tr>\n        <tr>\n          <td>menu-width</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>下拉框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>Function</code></td>\n          <td><code>function(item){\n            return item.label\n          }</code></td>\n          <td>选中内容的格式化显示</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td><code></code></td>\n          <td>value改变回调函数</td>\n        </tr>\n         <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n         <tr>\n          <td>readonly</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n         <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n        <tr>\n          <td>cancelled</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>单选时，是否可撤销</td>\n        </tr>\n      </tbody>\n    </table>\n\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"选择框\"  >\n    <h1 class=\"page-header\"><a href=\"#选择框\" class=\"anchor\">选择框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\nSelect data : {{single}}\n        </pre>\n      </p>\n      <n3-select :value.sync=\"single\" :badge=\"5\" >\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选</h4>\n      <p>\n        <pre>\nSelect data : {{multiple.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :value.sync=\"multiple\" search>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选限制</h4>\n      <p>\n        <pre>\nSelect data : {{multipleLimit.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :limit=\"2\" :value.sync=\"multipleLimit\" search extra>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>自定义内容</h4>\n      <p>\n        <pre>\nSelect data : {{custom.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :value.sync=\"custom\" >\n        <n3-option value=\"Star\"><span  class=\"fa fa-star\"></span> Star</n3-option>\n        <n3-option value=\"Heart\"><span class=\"fa fa-heart\"></span> Heart</n3-option>\n        <n3-option value=\"Film\"><span  class=\"fa fa-film\"></span> Film</n3-option>\n        <n3-option value=\"Inbox\"><span class=\"fa fa-inbox\"></span> Inbox</n3-option>\n      </n3-select>\n      <hr />\n      <h4>传递数组，支持搜索</h4>\n      <p>\n        支持只传递接json数组，可以支持搜索\n        <pre>\nSelect data : {{arr}}\n        </pre>\n      </p>\n      <n3-select :value.sync=\"arr\" :options=\"fruitOptions\" :search=\"true\" multiple extra >\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-select>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <n3-select multiple>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <n3-select multiple :limit=\"2\">\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <n3-select multiple>\n        <n3-option value=\"Star\"><span slot=\"span\" class=\"fa fa-star\"></span> Star</n3-option>\n        <n3-option value=\"Heart\"><span slot=\"span\" class=\"fa fa-heart\"></span> Heart</n3-option>\n        <n3-option value=\"Film\"><span slot=\"span\" class=\"fa fa-film\"></span> Film</n3-option>\n        <n3-option value=\"Inbox\"><span slot=\"span\" class=\"fa fa-inbox\"></span> Inbox</n3-option>\n      </n3-select>\n\n      <n3-select :value.sync=\"arr\" :options=\"fruitOptions\" :search=\"true\" >\n      </n3-select>\n      fruitOptions = [\n        {value: 'apple', label: 'Apple'},\n        {value: 'banana', label: 'Banana'},\n        {value: 'cherry', label: 'Cherry'},\n        {value: 'orange', label: 'Orange'},\n        {value: 'grape', label: 'Grape'},\n      ]\n    </script></code></pre>\n    <h2>参数</h2>\n    <p>样式的参数和 <a href=\"#n3ButtonsDocs\">按钮</a> 相同</p>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code></code></td>\n          <td><code></code></td>\n          <td>多选为数组，单选为单个数字或者字符串,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td><code>[]</code></td>\n          <td>json数组</td>\n        </tr>\n        <tr>\n          <td>placeholder</td>\n          <td><code>String</code></td>\n          <td>'请选择'</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>multiple</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>支持多选</td>\n        </tr>\n        <tr>\n          <td>limit</td>\n          <td><code>Number</code></td>\n          <td><code>1024</code></td>\n          <td>多选限制</td>\n        </tr>\n        <tr>\n          <td>search</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否支持搜索</td>\n        </tr>\n         <tr>\n          <td>extra</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>可支持在输入款内添加新的选项(需要search支持)</td>\n        </tr>\n        <tr>\n          <td>input-placeholder</td>\n          <td><code>String</code></td>\n          <td><code>请输入</code></td>\n          <td>输入框的placeholder</td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>选择框大小</td>\n        </tr>\n        <tr>\n          <td>menu-max-height</td>\n          <td><code>String</code></td>\n          <td><code>300px</code></td>\n          <td>下拉框最大高度</td>\n        </tr>\n        <tr>\n          <td>menu-width</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>下拉框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>Function</code></td>\n          <td><code>function(item){\n            return item.label\n          }</code></td>\n          <td>选中内容的格式化显示</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td><code></code></td>\n          <td>value改变回调函数</td>\n        </tr>\n         <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n         <tr>\n          <td>readonly</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n         <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n        <tr>\n          <td>cancelled</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>单选时，是否可撤销</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
-/* 244 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(245)
+	module.exports = __webpack_require__(260)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(246)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(261)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -8385,7 +8665,7 @@
 	}
 
 /***/ },
-/* 245 */
+/* 260 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8454,6 +8734,7 @@
 	//         </tr>
 	//       </tbody>
 	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	//   </div>
 	// </template>
 	
@@ -8468,19 +8749,19 @@
 	// </script>
 
 /***/ },
-/* 246 */
+/* 261 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"开关\"  >\n    <h1 class=\"page-header\"><a href=\"#开关\" class=\"anchor\">开关</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      \n      <h3><n3-switch></n3-switch></h3>\n      \n      <h3><n3-switch ontext=\"开\" offtext=\"关\" @toggle=\"toggle\" ></n3-switch></h3>\n\n       <h3><n3-switch ontext=\"开\" offtext=\"关\" @toggle=\"toggle\" :disabled=\"true\"></n3-switch></h3>\n\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-switch></n3-switch>\n      <n3-switch ontext=\"开\" offtext=\"关\"></n3-switch>\n      <n3-switch ontext=\"开\" offtext=\"关\" @toggle=\"toggle\" :disabled=\"true\"></n3-switch>\n    </script></code></pre>\n    \n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>state</td>\n          <td><code>Boolean</code></td>\n          <td><code>true</code></td>\n          <td>开关状态</td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否禁用状态</td>\n        </tr>\n        <tr>\n          <td>ontext</td>\n          <td><code>String</code></td>\n          <td><code>ON</code></td>\n          <td>开状态的文本</td>\n        </tr>\n        <tr>\n          <td>offtext</td>\n          <td><code>String</code></td>\n          <td><code>OFF</code></td>\n          <td>关状态的文本</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td><code></code></td>\n          <td>开关状态变化时触发</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"开关\"  >\n    <h1 class=\"page-header\"><a href=\"#开关\" class=\"anchor\">开关</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      \n      <h3><n3-switch></n3-switch></h3>\n      \n      <h3><n3-switch ontext=\"开\" offtext=\"关\" @toggle=\"toggle\" ></n3-switch></h3>\n\n       <h3><n3-switch ontext=\"开\" offtext=\"关\" @toggle=\"toggle\" :disabled=\"true\"></n3-switch></h3>\n\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-switch></n3-switch>\n      <n3-switch ontext=\"开\" offtext=\"关\"></n3-switch>\n      <n3-switch ontext=\"开\" offtext=\"关\" @toggle=\"toggle\" :disabled=\"true\"></n3-switch>\n    </script></code></pre>\n    \n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>state</td>\n          <td><code>Boolean</code></td>\n          <td><code>true</code></td>\n          <td>开关状态</td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否禁用状态</td>\n        </tr>\n        <tr>\n          <td>ontext</td>\n          <td><code>String</code></td>\n          <td><code>ON</code></td>\n          <td>开状态的文本</td>\n        </tr>\n        <tr>\n          <td>offtext</td>\n          <td><code>String</code></td>\n          <td><code>OFF</code></td>\n          <td>关状态的文本</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td><code></code></td>\n          <td>开关状态变化时触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
-/* 247 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(248)
+	module.exports = __webpack_require__(263)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(249)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(264)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -8498,7 +8779,7 @@
 	}
 
 /***/ },
-/* 248 */
+/* 263 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8630,19 +8911,19 @@
 	// </script>
 
 /***/ },
-/* 249 */
+/* 264 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"时间轴\"  >\n    <h1 class=\"page-header\"><a href=\"#时间轴\" class=\"anchor\">时间轴</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-timeline >\n       <n3-timeline-item color='#2ecc71' icon=\"check-circle-o\">\n            创建成功\n        </n3-timeline-item>\n         <n3-timeline-item color='#3498db'>\n            通过审核\n        </n3-timeline-item>\n         <n3-timeline-item color='#e74c3c' icon=\"times-circle-o\">\n            出现异常\n        </n3-timeline-item>\n      </n3-timeline>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n    <n3-timeline>\n        <n3-timeline-item color='#2ecc71'>\n            创建成功\n        </n3-timeline-item>\n         <n3-timeline-item color='#3498db'>\n            通过审核\n        </n3-timeline-item>\n         <n3-timeline-item color='#e74c3c'>\n            出现异常\n        </n3-timeline-item>\n      </n3-timeline>\n\n      //或者 \n\n      <n3-timeline :value=\"value\">\n      </n3-timeline>\n\n      new Vue({\n        data:{\n           value: [{\n              icon: 'check-circle-o',\n              color: 'green',\n              content: `<a>创建成功</a>`\n            }, {\n              content: '通过审核'\n            }, {\n              content: '出现异常'\n            }]\n        }\n      })\n    </script></code></pre>\n    <h2>Timeline参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>内容数组</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>TimelineItem参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>color</td>\n          <td><code>String</code></td>\n          <td>#2db7f5</td>\n          <td>颜色</td>\n        </tr>\n        <tr>\n          <td>content</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>内容</td>\n        </tr>\n        <tr>\n          <td>icon</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>自定义图标</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 250 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(251)
+	module.exports = __webpack_require__(266)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(252)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(267)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -8660,7 +8941,7 @@
 	}
 
 /***/ },
-/* 251 */
+/* 266 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8850,19 +9131,19 @@
 	// </script>
 
 /***/ },
-/* 252 */
+/* 267 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"标签页\"  >\n    <h1 class=\"page-header\"><a href=\"#标签页\" class=\"anchor\">标签页</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-tabs :on-change=\"change\" :active-index=\"1\">\n        <n3-tab header=\"one\" badge=\"1\">\n          <p>.......</p>\n          <p>.......</p>\n          <p>.......</p>\n        </n3-tab>\n        <n3-tab header=\"two\">\n          <p>*********</p>\n          <p>*********</p>\n          <p>*********</p>\n        </n3-tab>\n        <n3-tab header=\"three\" disabled>\n          ...\n        </n3-tab>\n      </n3-tabs>\n      <p>胶囊样式 pills</p> \n      <n3-tabs pills>\n        <n3-tab header=\"one\">\n        </n3-tab>\n        <n3-tab header=\"two\">\n        </n3-tab>\n      </n3-tabs>\n      <p>垂直样式 stacked</p> \n      <n3-tabs pills stacked style=\"max-width: 300px;\" :on-change=\"change\">\n        <n3-tab header=\"one\" >\n        </n3-tab>\n        <n3-tab header=\"two\">\n        </n3-tab>\n      </n3-tabs>\n      <p>primary</p> \n      <n3-tabs primary pills stacked style=\"max-width: 300px;\">\n        <n3-tab header=\"one\">\n        </n3-tab>\n        <n3-tab header=\"two\">\n        </n3-tab>\n      </n3-tabs>\n      <p>自适应 justified</p> \n      <n3-tabs pills justified>\n        <n3-tab header=\"one\">\n        </n3-tab>\n        <n3-tab header=\"two\">\n        </n3-tab>\n      </n3-tabs>\n\n      \n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-tabs>\n        <n3-tab header=\"one\">\n          ...\n        </n3-tab>\n        <n3-tab header=\"two\">\n          ...\n        </n3-tab>\n        <n3-tab header=\"three\" disabled>\n          ...\n        </n3-tab>\n\n        <n3-tabs pills >\n          <n3-tab header=\"one\">\n          </n3-tab>\n          <n3-tab header=\"two\">\n          </n3-tab>\n        </n3-tabs>\n        <n3-tabs pills stacked>\n          <n3-tab header=\"one\">\n          </n3-tab>\n          <n3-tab header=\"two\">\n          </n3-tab>\n        </n3-tabs>\n        <n3-tabs primary pills stacked>\n          <n3-tab header=\"one\">\n          </n3-tab>\n          <n3-tab header=\"two\">\n          </n3-tab>\n        </n3-tabs>\n      </n3-tabs>\n      </script></code></pre>\n  <h2>tabs参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n     <tr>\n        <td>active-index</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>pills</td>\n        <td><code>Boolean</code></td>\n        <td></td>\n        <td>胶囊样式</td>\n      </tr>\n      <tr>\n        <td>stacked</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>竖直状态</td>\n      </tr>\n       <tr>\n        <td>primary</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>justified</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否自适应</td>\n      </tr>\n       <tr>\n        <td>size</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>尺寸</td>\n      </tr>\n       <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>tab参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>header</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>标签头文字</td>\n      </tr>\n      <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n      <tr>\n        <td>disabled</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否能被激活</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
-/* 253 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(254)
+	module.exports = __webpack_require__(269)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(255)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(270)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -8880,7 +9161,7 @@
 	}
 
 /***/ },
-/* 254 */
+/* 269 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -8918,7 +9199,7 @@
 	//       </n3-tooltip>
 	//     </div>
 	//     <pre><code class="language-markup"><script type="language-mark-up">
-	//    ooltip  content="tooltip on left" placement="left" trigger="hover">
+	//    <n3-tooltip  content="tooltip on left" placement="left" trigger="hover">
 	//         <n3-button >tooltip on left</n3-button>
 	//       </n3-tooltip>
 	//       <n3-tooltip   content="tooltip on right" placement="right" trigger="hover">
@@ -8953,7 +9234,7 @@
 	//     <tbody>
 	//       <tr>
 	//         <td>trigger</td>
-	//         <td><code>String</code>, one of <code>hover</code>
+	//         <td><code>String</code>, 如:  <code>hover</code>
 	//         <code>focus</code>
 	//         <code>hover</code></td>
 	//         <td><code>click</code></td>
@@ -8961,7 +9242,7 @@
 	//       </tr>
 	//       <tr>
 	//         <td>effect</td>
-	//         <td><code>String</code>, one of <code>scale</code> <code>fadein</code></td>
+	//         <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>
 	//         <td><code>scale</code></td>
 	//         <td></td>
 	//       <tr>
@@ -8971,7 +9252,7 @@
 	//         <td></td>
 	//       </tr>
 	//         <td>placement</td>
-	//         <td><code>String</code>, one of <code>top</code>
+	//         <td><code>String</code>, 如:  <code>top</code>
 	//         <code>left</code>
 	//         <code>right</code>
 	//         <code>bottom</code></td>
@@ -8996,19 +9277,19 @@
 	// </script>
 
 /***/ },
-/* 255 */
+/* 270 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"浮出提示\"  >\n    <h1 class=\"page-header\"><a href=\"#浮出提示\" class=\"anchor\">浮出提示</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-tooltip   content=\"tooltip on top\" placement=\"top\" trigger=\"hover\">\n        <n3-button>tooltip on top</n3-button>\n      </n3-tooltip>\n      <n3-tooltip  content=\"tooltip on left\" placement=\"left\" trigger=\"hover\">\n        <n3-button >tooltip on left</n3-button>\n      </n3-tooltip>\n      <n3-tooltip   content=\"tooltip on right\" placement=\"right\" trigger=\"hover\">\n        <n3-button >tooltip on right</n3-button>\n      </n3-tooltip>\n      <n3-tooltip   content=\"tooltip on bottom\" placement=\"bottom\" trigger=\"hover\">\n        <n3-button >tooltip on bottom</n3-button>\n      </n3-tooltip>\n      <hr>\n      <h4>Triger</h4>\n      <p>\n        <n3-tooltip trigger=\"click\"\n        effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\" >\n            <n3-button >Click</n3-button>\n        </n3-tooltip>\n      </p>\n      <n3-tooltip effect=\"scale\"\n    content=\"Lorem ipsum dolor sit amet\" placement=\"bottom\" trigger=\"focus\">\n        <n3-input  placeholder=\"Focus\"></n3-input>\n      </n3-tooltip>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n   ooltip  content=\"tooltip on left\" placement=\"left\" trigger=\"hover\">\n        <n3-button >tooltip on left</n3-button>\n      </n3-tooltip>\n      <n3-tooltip   content=\"tooltip on right\" placement=\"right\" trigger=\"hover\">\n        <n3-button >tooltip on right</n3-button>\n      </n3-tooltip>\n      <n3-tooltip   content=\"tooltip on bottom\" placement=\"bottom\" trigger=\"hover\">\n        <n3-button >tooltip on bottom</n3-button>\n      </n3-tooltip>\n      <hr>\n      <h4>Triger</h4>\n      <p>\n        <n3-tooltip trigger=\"click\"\n        effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\" >\n            <n3-button >Click</n3-button>\n        </n3-tooltip>\n      </p>\n      <n3-tooltip effect=\"scale\"\n    content=\"Lorem ipsum dolor sit amet\" placement=\"bottom\" trigger=\"focus\">\n        <input type=\"text\" class=\"form-control\" placeholder=\"Focus\">\n      </n3-tooltip>\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>trigger</td>\n        <td><code>String</code>, one of <code>hover</code>\n        <code>focus</code>\n        <code>hover</code></td>\n        <td><code>click</code></td>\n        <td>触发方式</td>\n      </tr>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, one of <code>scale</code> <code>fadein</code></td>\n        <td><code>scale</code></td>\n        <td></td>\n      <tr>\n        <td>content</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n        <td>placement</td>\n        <td><code>String</code>, one of <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位方式</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"浮出提示\"  >\n    <h1 class=\"page-header\"><a href=\"#浮出提示\" class=\"anchor\">浮出提示</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-tooltip   content=\"tooltip on top\" placement=\"top\" trigger=\"hover\">\n        <n3-button>tooltip on top</n3-button>\n      </n3-tooltip>\n      <n3-tooltip  content=\"tooltip on left\" placement=\"left\" trigger=\"hover\">\n        <n3-button >tooltip on left</n3-button>\n      </n3-tooltip>\n      <n3-tooltip   content=\"tooltip on right\" placement=\"right\" trigger=\"hover\">\n        <n3-button >tooltip on right</n3-button>\n      </n3-tooltip>\n      <n3-tooltip   content=\"tooltip on bottom\" placement=\"bottom\" trigger=\"hover\">\n        <n3-button >tooltip on bottom</n3-button>\n      </n3-tooltip>\n      <hr>\n      <h4>Triger</h4>\n      <p>\n        <n3-tooltip trigger=\"click\"\n        effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\" >\n            <n3-button >Click</n3-button>\n        </n3-tooltip>\n      </p>\n      <n3-tooltip effect=\"scale\"\n    content=\"Lorem ipsum dolor sit amet\" placement=\"bottom\" trigger=\"focus\">\n        <n3-input  placeholder=\"Focus\"></n3-input>\n      </n3-tooltip>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n   <n3-tooltip  content=\"tooltip on left\" placement=\"left\" trigger=\"hover\">\n        <n3-button >tooltip on left</n3-button>\n      </n3-tooltip>\n      <n3-tooltip   content=\"tooltip on right\" placement=\"right\" trigger=\"hover\">\n        <n3-button >tooltip on right</n3-button>\n      </n3-tooltip>\n      <n3-tooltip   content=\"tooltip on bottom\" placement=\"bottom\" trigger=\"hover\">\n        <n3-button >tooltip on bottom</n3-button>\n      </n3-tooltip>\n      <hr>\n      <h4>Triger</h4>\n      <p>\n        <n3-tooltip trigger=\"click\"\n        effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\" >\n            <n3-button >Click</n3-button>\n        </n3-tooltip>\n      </p>\n      <n3-tooltip effect=\"scale\"\n    content=\"Lorem ipsum dolor sit amet\" placement=\"bottom\" trigger=\"focus\">\n        <input type=\"text\" class=\"form-control\" placeholder=\"Focus\">\n      </n3-tooltip>\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>trigger</td>\n        <td><code>String</code>, 如:  <code>hover</code>\n        <code>focus</code>\n        <code>hover</code></td>\n        <td><code>click</code></td>\n        <td>触发方式</td>\n      </tr>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>\n        <td><code>scale</code></td>\n        <td></td>\n      <tr>\n        <td>content</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n        <td>placement</td>\n        <td><code>String</code>, 如:  <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位方式</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
-/* 256 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(257)
+	module.exports = __webpack_require__(272)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(258)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(273)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -9026,7 +9307,7 @@
 	}
 
 /***/ },
-/* 257 */
+/* 272 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -9216,6 +9497,7 @@
 	//         </tr>
 	//       </tbody>
 	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	//   </div>
 	// </template>
 	
@@ -9266,19 +9548,19 @@
 	// </script>
 
 /***/ },
-/* 258 */
+/* 273 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"自动补全\"  >\n    <h1 class=\"page-header\"><a href=\"#自动补全\" class=\"anchor\">自动补全</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>\n        本地数据\n      </h4>\n      <n3-typeahead \n        :query.sync = \"value\"\n        :data=\"USstate\" \n        placeholder=\" 发到\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      异步获取\n      <n3-tooltip trigger=\"click\" content=\"The suggestions via a Google Map API, are you behind a FireWall?\" placement=\"top\">\n        <small style=\"cursor:pointer\">(not working?)</small>\n      </n3-tooltip>\n      </h4>\n      <n3-typeahead \n        placeholder=\"CCCAddress, async via maps.googleapis.com\"\n        :on-change=\"getResult\"\n        :render=\"render\"\n        :items=\"items\"\n        :add-format=\"googleCallback\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      内容模版\n      </h4>\n      <n3-typeahead \n        placeholder=\"Github users, async via api.github.com\"\n        :on-change=\"getGitresults\"\n        :items=\"gitItems\"\n        :render=\"rendergit\"\n        :add-format=\"githubCallback\"\n      ></n3-typeahead>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <h4>\n        本地数据\n      </h4>\n      <n3-typeahead \n        :query.sync = \"value\"\n        :data=\"USstate\" \n        placeholder=\" 发到\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      异步获取\n      <n3-tooltip trigger=\"click\" content=\"The suggestions via a Google Map API, are you behind a FireWall?\" placement=\"top\">\n        <small style=\"cursor:pointer\">(not working?)</small>\n      </n3-tooltip>\n      </h4>\n      <n3-typeahead \n        placeholder=\"CCCAddress, async via maps.googleapis.com\"\n        :on-change=\"getResult\"\n        :render=\"render\"\n        :items=\"items\"\n        :add-format=\"googleCallback\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      内容模版\n      </h4>\n      <n3-typeahead \n        placeholder=\"Github users, async via api.github.com\"\n        :on-change=\"getGitresults\"\n        :items=\"gitItems\"\n        :render=\"rendergit\"\n        :add-format=\"githubCallback\"\n      ></n3-typeahead>\n    </div>\n  </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\n    new Vue({\n       data: {\n          value:'Alabama',\n          USstate: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']\n      },\n      methods: {\n        render (item) {\n          return item.formatted_address\n        },\n        getResult (query) {\n          let self = this\n          $.ajax({\n            url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,\n            success (ret) {\n              self.items = ret.results\n            }\n          })\n        },\n        getGitresults (query) {\n          let self = this\n          $.ajax({\n            url: 'https://api.github.com/search/users?q=' + query,\n            success (ret) {\n              self.gitItems = ret.items\n            }\n          })\n        },\n        rendergit (item) {\n          return `<img width=\"18px\" height=\"18px\" src=\"${item.avatar_url}\"/> <span>${item.login}</span>`\n        },\n        googleCallback (item) {\n          return item.formatted_address\n        },\n        githubCallback (item) {\n          return item.login\n        }\n      }\n    })\n    </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n       <tr>\n          <td>query</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>绑定的值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>本地数组</td>\n        </tr>\n        <tr>\n          <td>limit</td>\n          <td><code>Number</code></td>\n          <td><code>8</code></td>\n          <td>显示的条数</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>query变化的回调函数，用于异步请求</td>\n        </tr>\n         <tr>\n          <td>items</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td> 列表数组，用于异步请求</td>\n        </tr>\n        <tr>\n          <td>on-hit</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>当选择一项触发的回调</td>\n        </tr>\n        <tr>\n          <td>render</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>渲染函数</td>\n        </tr>\n        <tr>\n          <td>maxWidth</td>\n          <td><code>String</code></td>\n          <td>100%</td>\n          <td>下拉框最大宽度</td>\n        </tr>\n        <tr>\n          <td>maxHeight</td>\n          <td><code>String</code></td>\n          <td>300px</td>\n          <td>下拉框最大高度</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"自动补全\"  >\n    <h1 class=\"page-header\"><a href=\"#自动补全\" class=\"anchor\">自动补全</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>\n        本地数据\n      </h4>\n      <n3-typeahead \n        :query.sync = \"value\"\n        :data=\"USstate\" \n        placeholder=\" 发到\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      异步获取\n      <n3-tooltip trigger=\"click\" content=\"The suggestions via a Google Map API, are you behind a FireWall?\" placement=\"top\">\n        <small style=\"cursor:pointer\">(not working?)</small>\n      </n3-tooltip>\n      </h4>\n      <n3-typeahead \n        placeholder=\"CCCAddress, async via maps.googleapis.com\"\n        :on-change=\"getResult\"\n        :render=\"render\"\n        :items=\"items\"\n        :add-format=\"googleCallback\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      内容模版\n      </h4>\n      <n3-typeahead \n        placeholder=\"Github users, async via api.github.com\"\n        :on-change=\"getGitresults\"\n        :items=\"gitItems\"\n        :render=\"rendergit\"\n        :add-format=\"githubCallback\"\n      ></n3-typeahead>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <h4>\n        本地数据\n      </h4>\n      <n3-typeahead \n        :query.sync = \"value\"\n        :data=\"USstate\" \n        placeholder=\" 发到\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      异步获取\n      <n3-tooltip trigger=\"click\" content=\"The suggestions via a Google Map API, are you behind a FireWall?\" placement=\"top\">\n        <small style=\"cursor:pointer\">(not working?)</small>\n      </n3-tooltip>\n      </h4>\n      <n3-typeahead \n        placeholder=\"CCCAddress, async via maps.googleapis.com\"\n        :on-change=\"getResult\"\n        :render=\"render\"\n        :items=\"items\"\n        :add-format=\"googleCallback\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      内容模版\n      </h4>\n      <n3-typeahead \n        placeholder=\"Github users, async via api.github.com\"\n        :on-change=\"getGitresults\"\n        :items=\"gitItems\"\n        :render=\"rendergit\"\n        :add-format=\"githubCallback\"\n      ></n3-typeahead>\n    </div>\n  </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\n    new Vue({\n       data: {\n          value:'Alabama',\n          USstate: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']\n      },\n      methods: {\n        render (item) {\n          return item.formatted_address\n        },\n        getResult (query) {\n          let self = this\n          $.ajax({\n            url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,\n            success (ret) {\n              self.items = ret.results\n            }\n          })\n        },\n        getGitresults (query) {\n          let self = this\n          $.ajax({\n            url: 'https://api.github.com/search/users?q=' + query,\n            success (ret) {\n              self.gitItems = ret.items\n            }\n          })\n        },\n        rendergit (item) {\n          return `<img width=\"18px\" height=\"18px\" src=\"${item.avatar_url}\"/> <span>${item.login}</span>`\n        },\n        googleCallback (item) {\n          return item.formatted_address\n        },\n        githubCallback (item) {\n          return item.login\n        }\n      }\n    })\n    </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n       <tr>\n          <td>query</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>绑定的值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>本地数组</td>\n        </tr>\n        <tr>\n          <td>limit</td>\n          <td><code>Number</code></td>\n          <td><code>8</code></td>\n          <td>显示的条数</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>query变化的回调函数，用于异步请求</td>\n        </tr>\n         <tr>\n          <td>items</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td> 列表数组，用于异步请求</td>\n        </tr>\n        <tr>\n          <td>on-hit</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>当选择一项触发的回调</td>\n        </tr>\n        <tr>\n          <td>render</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>渲染函数</td>\n        </tr>\n        <tr>\n          <td>maxWidth</td>\n          <td><code>String</code></td>\n          <td>100%</td>\n          <td>下拉框最大宽度</td>\n        </tr>\n        <tr>\n          <td>maxHeight</td>\n          <td><code>String</code></td>\n          <td>300px</td>\n          <td>下拉框最大高度</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
-/* 259 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(260)
+	module.exports = __webpack_require__(275)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(261)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(276)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -9296,7 +9578,7 @@
 	}
 
 /***/ },
-/* 260 */
+/* 275 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9358,19 +9640,19 @@
 	// </script>
 
 /***/ },
-/* 261 */
+/* 276 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"步骤条\"  >\n    <h1 class=\"page-header\"><a href=\"#步骤条\" class=\"anchor\">步骤条</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-step :labels=\"['第一步 我的文案比较长','第二步','第三步']\" :current=\"2\" ></n3-step>\n      <hr></hr>\n       <h4>前台步骤条</h4>\n      <n3-step  round :labels=\"['第一步 我的文案比较长','第二步','第三步']\" :current=\"2\" ></n3-step>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-step :labels=\"['第一步 我的文案比较长','第二步','第三步']\" :current=\"2\" ></n3-step>\n\n      <n3-step round :labels=\"['第一步 我的文案比较长','第二步','第三步']\" :current=\"2\" ></n3-step>\n\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>labels</td>\n          <td><code>Array</code></td>\n          <td><code></code></td>\n          <td>文案数组</td>\n        </tr>\n        <tr>\n          <td>current</td>\n          <td><code>Number</code></td>\n          <td><code></code></td>\n          <td>当前步数</td>\n        </tr>\n        <tr>\n          <td>round</td>\n          <td><code>Boolean</code></td>\n          <td><code></code></td>\n          <td>是否是前台步骤条（原形）</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 262 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(263)
+	module.exports = __webpack_require__(278)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(264)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(279)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -9388,7 +9670,7 @@
 	}
 
 /***/ },
-/* 263 */
+/* 278 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9482,6 +9764,7 @@
 	//       </tr>
 	//     </tbody>
 	//   </table>
+	//   <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	//   </div>
 	// </template>
 	
@@ -9503,19 +9786,19 @@
 	// </script>
 
 /***/ },
-/* 264 */
+/* 279 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"滑块\"  >\n    <h1 class=\"page-header\"><a href=\"#滑块\" class=\"anchor\">滑块</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-slider :value.sync = \"value\" :on-change=\"change\" ></n3-slider>\n\n      <p>滑块的值{{value}}</p> \n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     <n3-slider :value.sync = \"value\" :on-change=\"change\"></n3-slider>\n    </script></code></pre>\n     \n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>value</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>滑块的值,需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>min</td>\n        <td><code>Number</code></td>\n        <td><code>0</code></td>\n        <td>最小值</td>\n      </tr>\n      <tr>\n        <td>max</td>\n        <td><code>Number</code></td>\n        <td><code>10</code></td>\n        <td>最大值</td>\n      </tr>\n      <tr>\n        <td>step</td>\n        <td><code>Number</code></td>\n        <td><code>1</code></td>\n        <td>单步增量</td>\n      </tr>\n      <tr>\n        <td>orientation</td>\n        <td><code>String</code></td>\n        <td><code>horizontal</code></td>\n        <td>horizontal(水平) vertical(垂直)</td>\n      </tr>\n      <tr>\n        <td>range</td>\n        <td><code>Boolean</code></td>\n        <td><code>false</code></td>\n        <td>是否范围选择</td>\n      </tr>\n      </tr>\n      <tr>\n        <td>tooltip</td>\n        <td><code>String</code></td>\n        <td><code>show</code></td>\n        <td>tooltip显示参数 'show' 'hide' 'always'</td>\n      </tr>\n      <tr>\n        <td>disabled</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>是否禁用</td>\n      </tr>\n      <tr>\n        <td>formatter</td>\n        <td><code>Function</code></td>\n        <td><code></code></td>\n        <td>格式化tooltip显示内容</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td><code></code></td>\n        <td>滑块值变化时触发</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"滑块\"  >\n    <h1 class=\"page-header\"><a href=\"#滑块\" class=\"anchor\">滑块</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-slider :value.sync = \"value\" :on-change=\"change\" ></n3-slider>\n\n      <p>滑块的值{{value}}</p> \n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     <n3-slider :value.sync = \"value\" :on-change=\"change\"></n3-slider>\n    </script></code></pre>\n     \n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>value</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>滑块的值,需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>min</td>\n        <td><code>Number</code></td>\n        <td><code>0</code></td>\n        <td>最小值</td>\n      </tr>\n      <tr>\n        <td>max</td>\n        <td><code>Number</code></td>\n        <td><code>10</code></td>\n        <td>最大值</td>\n      </tr>\n      <tr>\n        <td>step</td>\n        <td><code>Number</code></td>\n        <td><code>1</code></td>\n        <td>单步增量</td>\n      </tr>\n      <tr>\n        <td>orientation</td>\n        <td><code>String</code></td>\n        <td><code>horizontal</code></td>\n        <td>horizontal(水平) vertical(垂直)</td>\n      </tr>\n      <tr>\n        <td>range</td>\n        <td><code>Boolean</code></td>\n        <td><code>false</code></td>\n        <td>是否范围选择</td>\n      </tr>\n      </tr>\n      <tr>\n        <td>tooltip</td>\n        <td><code>String</code></td>\n        <td><code>show</code></td>\n        <td>tooltip显示参数 'show' 'hide' 'always'</td>\n      </tr>\n      <tr>\n        <td>disabled</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>是否禁用</td>\n      </tr>\n      <tr>\n        <td>formatter</td>\n        <td><code>Function</code></td>\n        <td><code></code></td>\n        <td>格式化tooltip显示内容</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td><code></code></td>\n        <td>滑块值变化时触发</td>\n      </tr>\n    </tbody>\n  </table>\n  <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
-/* 265 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(266)
+	module.exports = __webpack_require__(281)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(267)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(282)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -9533,7 +9816,7 @@
 	}
 
 /***/ },
-/* 266 */
+/* 281 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9607,19 +9890,19 @@
 	// </script>
 
 /***/ },
-/* 267 */
+/* 282 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"加载提示\"  >\n    <h1 class=\"page-header\"><a href=\"#加载提示\" class=\"anchor\">加载提示</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>大图标：<n3-loading size=\"lg\"></n3-loading></p>\n      <p>默认图标：<n3-loading ></n3-loading></p>\n      <p>刷新图标：<n3-loading type=\"refresh\"></n3-loading></p>\n      <p>颜色：<n3-loading color=\"primary\"></n3-loading></p>\n    </div>\n    <div class=\"bs-example\">\n       <p>居中：<n3-loading center></n3-loading></p>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     <p>大图标：<n3-loading size=\"lg\"></n3-loading></p>\n      <p>默认图标：<n3-loading ></n3-loading></p>\n      <p>刷新图标：<n3-loading type=\"refresh\"></n3-loading></p>\n      <p>颜色：<n3-loading color=\"primary\"></n3-loading></p>\n      <p>居中：<n3-loading center></n3-loading></p>\n    </script></code></pre>\n     \n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>size</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>图标大小`lg` `sm` `xs` 和默认</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>图标类型 `refresh`  和默认菊花</td>\n      </tr>\n      <tr>\n        <td>center</td>\n        <td><code>Boolean</code></td>\n        <td><code></code></td>\n        <td>居中</td>\n      </tr>\n      <tr>\n        <td>color</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>颜色</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
-/* 268 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(269)
+	module.exports = __webpack_require__(284)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(270)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(285)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -9637,7 +9920,7 @@
 	}
 
 /***/ },
-/* 269 */
+/* 284 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9706,19 +9989,19 @@
 	// </script>
 
 /***/ },
-/* 270 */
+/* 285 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"简易分页\"  >\n    <h1 class=\"page-header\"><a href=\"#简易分页\" class=\"anchor\">简易分页</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-simple-pagination :total=\"100\" :current.sync=\"1\" :pagesize=\"20\" :on-change = \"pagechange\"></n3-simple-pagination>\n      <hr></hr>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-simple-pagination :total=\"100\" :current.sync=\"1\" :pagesize=20 :on-change=\"changepage\"></n3-simple-pagination>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>total</td>\n          <td><code>Number</code></td>\n          <td><code></code></td>\n          <td>总条数</td>\n        </tr>\n        <tr>\n          <td>current</td>\n          <td><code>Number</code></td>\n          <td><code></code></td>\n          <td>当前页数,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>pagesize</td>\n          <td><code>Number</code></td>\n          <td><code></code></td>\n          <td>每页条数</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td><code></code></td>\n          <td>页数改变时的回调函数</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 271 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(272)
+	module.exports = __webpack_require__(287)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(273)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(288)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -9736,7 +10019,7 @@
 	}
 
 /***/ },
-/* 272 */
+/* 287 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10206,16 +10489,16 @@
 	// </script>
 
 /***/ },
-/* 273 */
+/* 288 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"数据表格\"  >\n    <h1 class=\"page-header\"><a href=\"#数据表格\" class=\"anchor\">数据表格</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n\n      <h4>Table</h4>\n      <n3-data-table  \n      key=\"key\"\n      :selection=\"selection\"\n      :source=\"source\" \n      :columns=\"columns\" \n      :refresh=\"refresh\"\n      ></n3-data-table>\n      <hr>\n     \n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n      <n3-data-table  \n      key=\"key\"\n      :selection=\"selection\"\n      :source=\"source\" \n      :columns=\"columns\" \n      :refresh=\"refresh\"\n      ></n3-data-table>\n      <hr>\n\n      new Vue({\n        el:'body',\n        data:{\n        selection:{\n          checkRows:[],\n          onSelect(a,b,c){},\n          onSelectAll(){},\n          getCheckboxProps(record){\n            if(record.key == 2){\n              return {\n                disabled:true\n              }\n            }else{\n              return {\n                disabled:false\n              }\n            }\n          }\n        },\n        columns: [{\n          title: '姓名',\n          dataIndex: 'name',\n          sort:true,\n          width:'100px'\n        }, {\n          title: '年龄',\n          dataIndex: 'age',\n          sort:true,\n          sortMethod:function(x,y){return x.age - y.age}, //自定义排序函数\n          sortType:'DESC',\n          render: (text, record) => {\n            return `<a href=\"javascript:;\">${text}</a>`\n          }\n        }, {\n          title: '部门',\n          dataIndex: 'department'\n        }, {\n          title: '操作',\n          dataIndex: '',\n          render: (text, record, index) => {\n              return `<span class=\"item\">\n                      <a href=\"javascript:;\" @click=\"del('${record.key}','${index}')\">删除</a>\n                    </span>`\n          }\n        }],\n        source: [{\n          key: '1',\n          name: '小白',\n          age: 25,\n          department: '技术1'\n        }, {\n          key: '2',\n          name: '小黑',\n          age: 33,\n          department: '技术2'\n        }, {\n          key: '3',\n          name: '小红',\n          age: 12,\n          department: '技术3'\n        },{\n          key: '4',\n          name: 'v白',\n          age: 25,\n          department: '技术1'\n        }, {\n          key: '5',\n          name: 'l黑',\n          age: 33,\n          department: '技术2'\n        }, {\n          key: '6',\n          name: 'i红',\n          age: 122,\n          department: '技术3'\n        },{\n          key: '7',\n          name: 'y白',\n          age: 2,\n          department: '技术1'\n        }, {\n          key: '8',\n          name: 'b黑',\n          age: 332,\n          department: '技术2'\n        }, {\n          key: '9',\n          name: 't红',\n          age: 124,\n          department: '技术3'\n        },{\n          key: '10',\n          name: 'f白',\n          age: 253,\n          department: '技术1'\n        }, {\n          key: '11',\n          name: 'a黑',\n          age: 31,\n          department: '技术2'\n        }, {\n          key: '12',\n          name: 'd红',\n          age: 31,\n          department: '技术3'\n        }]\n        },\n        method:{\n          del(key){\n            for(var i in this.source){\n              if(key == this.source[i]['key']){\n                  this.source.splice(i,1);\n              }\n            }\n          }\n        }\n      })\n\n  </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>merge-rule</td>\n          <td>Object</td>\n          <td></td>\n          <td><pre><code>{\n            name:{\n              '小白': {rowspan: 2},\n              'v白': {rowspan: 0}\n            }\n          }</code></pre>\n          </td>\n        </tr>\n         <tr>\n          <td>columns</td>\n          <td>Array</td>\n          <td></td>\n          <td>头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等</td>\n        </tr>\n        <tr>\n          <td>sort-column</td>\n          <td>Object</td>\n          <td></td>\n          <td>默认全局排序字段</td>\n        </tr>\n        <tr>\n          <td>source</td>\n          <td>Array</td>\n          <td></td>\n          <td>表格数组</td>\n        </tr>\n        <tr>\n          <td>page</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否分页</td>\n        </tr>\n        <tr>\n          <td>search</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持搜索</td>\n        </tr>\n        <tr>\n          <td>filter</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器</td>\n        </tr>\n        <tr>\n          <td>filter-list</td>\n          <td>Array</td>\n          <td></td>\n          <td>自定义过滤器如:\n          <pre><code>[{\n  title:'姓名',\n  dataIndex: 'name',\n  options:[{value:\"v白\",label:\"v白\"},{value:\"t红\",label:\"t红\"}],\n  value:[],\n  // multiple,search,extra\n}]</code></pre>\n          </td>\n        </tr>\n        <tr>\n          <td>select-col</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持选择显示列</td>\n        </tr>\n        <tr>\n          <td>pagination</td>\n          <td>Object</td>\n          <td></td>\n          <td>设置分页，例如\n          <pre><code>{\n  current:5,\n  total:10,\n  pagesize:10\n}</code></pre>\n          </td>\n        </tr>\n        <tr>\n          <td>loading</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td>设置表格的加载中状态</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td>Function</td>\n          <td></td>\n          <td>当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作，例如分页:\n          <pre><code>\n            function(pagination,query,sort,filter){\n              var data = {\n                start:(pagination.current - 1) * pagination.pagesize,\n                limit:pagination.pagesize\n              },\n              self = this;\n\n              //根据需要添加其他参数\n              this.loading = true\n              $.ajax({\n                url:'',\n                data:data,\n                success:function(result){\n                    self.loading = false\n                    self.source = result.list\n                    self.pagination.total = result.total\n                }\n              })\n            }\n          </code></pre>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 274 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(275)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(290)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -10233,20 +10516,19 @@
 	}
 
 /***/ },
-/* 275 */
+/* 290 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"面包屑\"  >\n\t\t<h1 class=\"page-header\"><a href=\"#面包屑\" class=\"anchor\">面包屑</a><span class=\"author\"> </span></h1>\n    \t<div class=\"bs-example\">\n    \t\t<n3-breadcrumb>\n    \t\t\t<n3-breadcrumb-item href=\"#\">Home</n3-breadcrumb-item>\n    \t\t\t<n3-breadcrumb-item href=\"#\">Library</n3-breadcrumb-item>\n    \t\t\t<n3-breadcrumb-item active>Data</n3-breadcrumb-item>\n    \t\t</n3-breadcrumb>\n    \t</div>\n \t\t<pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     \t\t<n3-breadcrumb>\n    \t\t\t<n3-breadcrumb-item href=\"#\">Home</n3-breadcrumb-item>\n    \t\t\t<n3-breadcrumb-item href=\"#\">Library</n3-breadcrumb-item>\n    \t\t\t<n3-breadcrumb-item active>Data</n3-breadcrumb-item>\n    \t\t</n3-breadcrumb>\n\t\t</script></code></pre>\n\t</div>";
 
 /***/ },
-/* 276 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(277)
-	module.exports = __webpack_require__(279)
+	module.exports = __webpack_require__(292)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(280)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(293)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -10264,47 +10546,7 @@
 	}
 
 /***/ },
-/* 277 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(278);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-e0b5c6f4&file=n3MultipleInputDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3MultipleInputDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-e0b5c6f4&file=n3MultipleInputDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3MultipleInputDocs.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 278 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(141)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".m-tag{\n  padding: 0px 5px;\n  height: 23px;\n  line-height: 23px;\n  margin-bottom: 0px;\n  background: #eee;\n  border-radius: 4px;\n}", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 279 */
+/* 292 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10407,7 +10649,7 @@
 	//        <tr>
 	//         <td>width</td>
 	//         <td><code>String</code></td>
-	//         <td>100%</td>
+	//         <td>220px</td>
 	//         <td>组件宽度</td>
 	//       </tr>
 	//        <tr>
@@ -10433,6 +10675,7 @@
 	//       </tr>
 	//     </tbody>
 	//   </table>
+	//   <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	//   </div>
 	// </template>
 	
@@ -10464,37 +10707,26 @@
 	    },
 	    format: function format(item, index) {
 	      var content = typeof item === 'string' ? item : item.formatted_address;
-	      return '<label class="m-tag">' + content + '</label>';
+	      return content;
 	    }
 	  }
 	};
 	// </script>
-	// <style>
-	// .m-tag{
-	//   padding: 0px 5px;
-	//   height: 23px;
-	//   line-height: 23px;
-	//   margin-bottom: 0px;
-	//   background: #eee;
-	//   border-radius: 4px;
-	// }
-	
-	// </style>
 
 /***/ },
-/* 280 */
+/* 293 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"自定义输入\"  >\n    <h1 class=\"page-header\"><a href=\"#自定义输入\" class=\"anchor\">自定义输入</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-multiple-input \n          :value.sync=\"a.list\" \n          :format=\"format\" \n          :on-inputchange=\"getResult\"\n          :render=\"render\"\n          :items=\"items\"\n          :query.sync=\"query\"\n          :on-hit=\"googleCallback\"\n        ></n3-multiple-input>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n       <n3-multiple-input \n          :value.sync=\"a.list\" \n          :format=\"format\" \n          :on-inputchange=\"getResult\"\n          :render=\"render\"\n          :items=\"items\"\n          :query.sync=\"query\"\n          :on-hit=\"googleCallback\"\n        ></n3-multiple-input>\n\n      new Vue({\n        data:{\n          list:[{\n            value:'tag1',\n            label:'tag1',\n          },{\n            value:'tag2',\n            label:'tag2',\n          },{\n            value:'tag3',\n            label:'tag3',\n          }]\n        },\n        methods:{\n          render (item) {\n            return item.formatted_address\n          },\n          getResult (query) {\n            let self = this\n            $.ajax({\n              url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,\n              success (ret) {\n                self.items = ret.results\n              }\n            })\n          },\n          del (item, index) {\n            this.list.splice(index, 1)\n          },\n          format (item, index) {\n            let content = typeof item === 'string' ? item : item.formatted_address\n            return `<label class=\"m-tag\" \">${content}</label>`\n          }\n        }\n      })\n       \n    </script></code></pre>\n  <h2>参数</h2>\n  <p>自动补全的参数请参考<a href=\"./component.html#n3TypeaheadDocs\" target=\"_blank\">自动补全组件</a></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>value</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td>需要<code>.sync</code></td>\n      </tr>\n       <tr>\n        <td>position</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td>输入框所在位置,需要<code>.sync</code></td>\n      </tr>\n       <tr>\n        <td>format</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>格式化显示函数</td>\n      </tr>\n       <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td>100%</td>\n        <td>组件宽度</td>\n      </tr>\n       <tr>\n        <td>inputWidth</td>\n        <td><code>String</code></td>\n        <td>50px</td>\n        <td>输入框宽度</td>\n      </tr>\n      <tr>\n        <td>add-format</td>\n        <td><code>Function</code></td>\n        <td><code>function(text){return {\n        value:text,\n        label:text\n        }}</code></td>\n        <td>通过输入添加的处理函数</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>value变化的回调函数</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"自定义输入\"  >\n    <h1 class=\"page-header\"><a href=\"#自定义输入\" class=\"anchor\">自定义输入</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-multiple-input \n          :value.sync=\"a.list\" \n          :format=\"format\" \n          :on-inputchange=\"getResult\"\n          :render=\"render\"\n          :items=\"items\"\n          :query.sync=\"query\"\n          :on-hit=\"googleCallback\"\n        ></n3-multiple-input>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n       <n3-multiple-input \n          :value.sync=\"a.list\" \n          :format=\"format\" \n          :on-inputchange=\"getResult\"\n          :render=\"render\"\n          :items=\"items\"\n          :query.sync=\"query\"\n          :on-hit=\"googleCallback\"\n        ></n3-multiple-input>\n\n      new Vue({\n        data:{\n          list:[{\n            value:'tag1',\n            label:'tag1',\n          },{\n            value:'tag2',\n            label:'tag2',\n          },{\n            value:'tag3',\n            label:'tag3',\n          }]\n        },\n        methods:{\n          render (item) {\n            return item.formatted_address\n          },\n          getResult (query) {\n            let self = this\n            $.ajax({\n              url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,\n              success (ret) {\n                self.items = ret.results\n              }\n            })\n          },\n          del (item, index) {\n            this.list.splice(index, 1)\n          },\n          format (item, index) {\n            let content = typeof item === 'string' ? item : item.formatted_address\n            return `<label class=\"m-tag\" \">${content}</label>`\n          }\n        }\n      })\n       \n    </script></code></pre>\n  <h2>参数</h2>\n  <p>自动补全的参数请参考<a href=\"./component.html#n3TypeaheadDocs\" target=\"_blank\">自动补全组件</a></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>value</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td>需要<code>.sync</code></td>\n      </tr>\n       <tr>\n        <td>position</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td>输入框所在位置,需要<code>.sync</code></td>\n      </tr>\n       <tr>\n        <td>format</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>格式化显示函数</td>\n      </tr>\n       <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td>220px</td>\n        <td>组件宽度</td>\n      </tr>\n       <tr>\n        <td>inputWidth</td>\n        <td><code>String</code></td>\n        <td>50px</td>\n        <td>输入框宽度</td>\n      </tr>\n      <tr>\n        <td>add-format</td>\n        <td><code>Function</code></td>\n        <td><code>function(text){return {\n        value:text,\n        label:text\n        }}</code></td>\n        <td>通过输入添加的处理函数</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>value变化的回调函数</td>\n      </tr>\n    </tbody>\n  </table>\n  <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
-/* 281 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(282)
+	module.exports = __webpack_require__(295)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(283)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(296)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -10512,7 +10744,7 @@
 	}
 
 /***/ },
-/* 282 */
+/* 295 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10530,19 +10762,19 @@
 	// </script>
 
 /***/ },
-/* 283 */
+/* 296 */
 /***/ function(module, exports) {
 
 	module.exports = "<n3-loading center fixed><span style=\"padding:10px;font-size:16px;\">实现中...</span></n3-loading>";
 
 /***/ },
-/* 284 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(285)
+	module.exports = __webpack_require__(298)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(286)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(299)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -10560,7 +10792,7 @@
 	}
 
 /***/ },
-/* 285 */
+/* 298 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10569,30 +10801,136 @@
 	  value: true
 	});
 	// <template>
+	//   <div class="bs-docs-section" id="文件上传"  >
+	//     <h1 class="page-header"><a href="#文件上传" class="anchor">文件上传</a><span class="author"> </span></h1>
+	//     <div class="bs-example">
+	//       <h4>点击</h4>
+	//       <n3-uploader url=""></n3-uploader>
+	//       <hr>
+	//        <h4>拖拽</h4>
+	//       <n3-uploader type="drag" ></n3-uploader>
+	//     </div>
+	//     <pre><code class="language-markup"><script type="language-mark-up">
+	//        <n3-uploader url="/upload"></n3-uploader>
 	
-	
-	// <n3-loading center fixed><span style="padding:10px;font-size:16px;">实现中...</span></n3-loading>
-	
-	
+	//        <n3-uploader url="/upload" typle="drag"></n3-uploader>
+	//     </script></code></pre>
+	//   <h2>参数</h2>
+	//   <table class="table table-bordered">
+	//     <thead>
+	//       <tr>
+	//          <th>参数名</th>
+	//         <th>类型</th>
+	//         <th>默认值</th>
+	//         <th>说明</th>
+	//       </tr>
+	//     </thead>
+	//     <tbody>
+	//       <tr>
+	//         <td>name</td>
+	//         <td><code>String</code></td>
+	//         <td>files</td>
+	//         <td>文件对象的name</td>
+	//       </tr>
+	//       <tr>
+	//         <td>type</td>
+	//         <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>
+	//         <td>click</td>
+	//         <td>拖拽或者点击</td>
+	//       </tr>
+	//       <tr>
+	//         <td>accept</td>
+	//         <td><code>String</code></td>
+	//         <td>'' (全支持)</td>
+	//         <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>
+	//       </tr>
+	//       <tr>
+	//         <td>url</td>
+	//         <td><code>String</code></td>
+	//         <td></td>
+	//         <td>上传地址</td>
+	//       </tr>
+	//       <tr>
+	//         <td>multiple</td>
+	//         <td><code>Boolean</code></td>
+	//         <td>true</td>
+	//         <td>支持多文件上传</td>
+	//       </tr>
+	//       <tr>
+	//         <td>multiple</td>
+	//         <td><code>Boolean</code></td>
+	//         <td>true</td>
+	//         <td>支持多文件上传</td>
+	//       </tr>
+	//       <tr>
+	//         <td>dragWidth</td>
+	//         <td><code>String</code></td>
+	//         <td>300px</td>
+	//         <td>拖拽框宽度</td>
+	//       </tr>
+	//       <tr>
+	//         <td>dragHeight</td>
+	//         <td><code>String</code></td>
+	//         <td>200px</td>
+	//         <td>拖拽框高度</td>
+	//       </tr>
+	//       <tr>
+	//         <td>on-error</td>
+	//         <td><code>Function</code></td>
+	//         <td><pre><code>
+	// function (data) {
+	//   this.n3Toast({
+	//     text: data.message
+	//   })
+	// } </code></pre></td>
+	//         <td>出错时触发函数</td>
+	//       </tr>
+	//       <tr>
+	//         <td>on-success</td>
+	//         <td><code>Function</code></td>
+	//         <td></td>
+	//         <td>成功时触发函数</td>
+	//       </tr>
+	//       <tr>
+	//         <td>on-delete</td>
+	//         <td><code>Function</code></td>
+	//         <td></td>
+	//         <td>文件删除时触发函数</td>
+	//       </tr>
+	//        <tr>
+	//         <td>max-length</td>
+	//         <td><code>Number</code></td>
+	//         <td></td>
+	//         <td>上传文件个数限制</td>
+	//       </tr>
+	//     </tbody>
+	//   </table>
+	//   </div>
 	// </template>
+	
 	// <script>
-	exports.default = {};
+	
+	exports.default = {
+	  data: function data() {
+	    return {};
+	  }
+	};
 	// </script>
 
 /***/ },
-/* 286 */
+/* 299 */
 /***/ function(module, exports) {
 
-	module.exports = "<n3-loading center fixed><span style=\"padding:10px;font-size:16px;\">实现中...</span></n3-loading>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"文件上传\"  >\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>点击</h4>\n      <n3-uploader url=\"\"></n3-uploader>\n      <hr>\n       <h4>拖拽</h4>\n      <n3-uploader type=\"drag\" ></n3-uploader>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n       <n3-uploader url=\"/upload\"></n3-uploader>\n\n       <n3-uploader url=\"/upload\" typle=\"drag\"></n3-uploader>\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>name</td>\n        <td><code>String</code></td>\n        <td>files</td>\n        <td>文件对象的name</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\n        <td>click</td>\n        <td>拖拽或者点击</td>\n      </tr>\n      <tr>\n        <td>accept</td>\n        <td><code>String</code></td>\n        <td>'' (全支持)</td>\n        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>\n      </tr>\n      <tr>\n        <td>url</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>上传地址</td>\n      </tr>\n      <tr>\n        <td>multiple</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>支持多文件上传</td>\n      </tr>\n      <tr>\n        <td>multiple</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>支持多文件上传</td>\n      </tr>\n      <tr>\n        <td>dragWidth</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>拖拽框宽度</td>\n      </tr>\n      <tr>\n        <td>dragHeight</td>\n        <td><code>String</code></td>\n        <td>200px</td>\n        <td>拖拽框高度</td>\n      </tr>\n      <tr>\n        <td>on-error</td>\n        <td><code>Function</code></td>\n        <td><pre><code>\nfunction (data) {\n  this.n3Toast({\n    text: data.message\n  })\n} </code></pre></td>\n        <td>出错时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-success</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>成功时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-delete</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>文件删除时触发函数</td>\n      </tr>\n       <tr>\n        <td>max-length</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td>上传文件个数限制</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
-/* 287 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(288)
+	module.exports = __webpack_require__(301)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(289)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(302)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -10610,7 +10948,7 @@
 	}
 
 /***/ },
-/* 288 */
+/* 301 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10622,15 +10960,12 @@
 	//     <div class="bs-docs-section" id="表单验证"  >
 	//         <h1 class="page-header"><a href="#表单验证" class="anchor">表单验证</a><span class="author"> </span></h1>
 	//         <div class="bs-example">
-	//             <pre><code>{{result | json}}</code></pre>
-	
-	//         	<n3-form  :validate="validate" :result.sync="result">
+	//         	<n3-form  :validate="validate" :result.sync="result" >
 	//                 <n3-form-item
 	//                     need
 	//                     label="姓名"
 	//                     :label-col="3">   
 	//                 <n3-input
-	//                     :valid-status="success"
 	//                     name="name"
 	//                     :value.sync="model.name" 
 	//                     :rules="[{type:'required'}]"
@@ -10750,6 +11085,16 @@
 	//                       :rules="[{type:'required'}]">
 	//                   </n3-multiple-input>
 	//                 </n3-form-item>
+	//                 <n3-form-item
+	//                     need
+	//                     label="想说的话"
+	//                     :label-col="3">   
+	//                   <n3-textarea
+	//                       name="suggestion"
+	//                       :value.sync = "model.suggestion"
+	//                       :rules="[{type:'required'}]">
+	//                   </n3-textarea>
+	//                 </n3-form-item>
 	
 	//                  <n3-form-item>
 	//                      <n3-button type="primary" @click="submit" >提交</n3-button>
@@ -10757,7 +11102,7 @@
 	//                 </n3-form-item>
 	//             </n3-form>
 	//         	<pre><code class="language-markup"><script type="language-mark-up">
-	//         		<n3-form :validate="validate" :result.sync="result">
+	//         		<n3-form  :validate="validate" :result.sync="result">
 	//                 <n3-form-item
 	//                     need
 	//                     label="姓名"
@@ -10801,7 +11146,7 @@
 	//                     :rules="[{type:'required'}]">
 	//                 </n3-datepicker>
 	//                 </n3-form-item>
-	//                  <n3-form-item
+	//                 <n3-form-item
 	//                     need
 	//                     label="学校"
 	//                     :label-col="3">   
@@ -10812,6 +11157,86 @@
 	//                     :rules="[{type:'required'}]">
 	//                 </n3-typeahead>
 	//                 </n3-form-item>
+	//                 <n3-form-item
+	//                     need
+	//                     label="爱好"
+	//                     :label-col="3">   
+	//                 <n3-checkbox-group
+	//                     name="hobby"
+	//                     :value.sync = "model.hobby"
+	//                     :rules="[{type:'required'}]">
+	//                     <n3-checkbox value="0">看书</n3-checkbox>
+	//                     <n3-checkbox value="1">运动</n3-checkbox>
+	//                     <n3-checkbox value="2">旅行</n3-checkbox>
+	//                 </n3-checkbox-group>
+	//                 </n3-form-item>
+	
+	//                 <n3-form-item
+	//                     need
+	//                     label="性别"
+	//                     :label-col="3">   
+	//                 <n3-radio-group
+	//                     name="sex"
+	//                     :value.sync = "model.sex"
+	//                     :rules="[{type:'required'}]">
+	//                     <n3-radio value="0">男</n3-radio>
+	//                     <n3-radio value="1">女</n3-radio>
+	//                 </n3-radio-group>
+	//                 </n3-form-item>
+	
+	//                 <n3-form-item
+	//                     need
+	//                     label="专业"
+	//                     :label-col="3">   
+	//                 <n3-select
+	//                     name="sex"
+	//                     :options='profession'
+	//                     :value.sync = "model.profession"
+	//                     :rules="[{type:'required'}]">
+	//                 </n3-select>
+	//                 </n3-form-item>
+	
+	//                 <n3-form-item
+	//                     need
+	//                     label="级别"
+	//                     :label-col="3">   
+	//                   <n3-slider
+	//                       name="level"
+	//                       :value.sync = "model.level"
+	//                       :rules="[{type:'required'}]">
+	//                   </n3-slider>
+	//                 </n3-form-item>
+	
+	//                 <n3-form-item
+	//                     need
+	//                     label="开启状态"
+	//                     :label-col="3">   
+	//                   <n3-switch
+	//                       name="state"
+	//                       :value.sync = "model.state"
+	//                       :rules="[{type:'required'}]">
+	//                   </n3-switch>
+	//                 </n3-form-item>
+	//                 <n3-form-item
+	//                     need
+	//                     label="喜欢的明星"
+	//                     :label-col="3">   
+	//                   <n3-multiple-input
+	//                       name="star"
+	//                       :value.sync = "model.star"
+	//                       :rules="[{type:'required'}]">
+	//                   </n3-multiple-input>
+	//                 </n3-form-item>
+	//                 <n3-form-item
+	//                     need
+	//                     label="想说的话"
+	//                     :label-col="3">   
+	//                   <n3-textarea
+	//                       name="suggestion"
+	//                       :value.sync = "model.suggestion"
+	//                       :rules="[{type:'required'}]">
+	//                   </n3-textarea>
+	//                 </n3-form-item>
 	
 	//                  <n3-form-item>
 	//                      <n3-button type="primary" @click="submit" >提交</n3-button>
@@ -10821,13 +11246,28 @@
 	
 	//             new Vue({
 	//               data: {
+	//                 profession: [{
+	//                   value: '学生',
+	//                   label: '学生'
+	//                 }, {
+	//                   value: '工程师',
+	//                   label: '工程师'
+	//                 }, {
+	//                   value: '医生',
+	//                   label: '医生'
+	//                 }],
 	//                 model: {
 	//                   name: '',
 	//                   age: '',
 	//                   address: [],
 	//                   birthday: '',
 	//                   sex: '',
-	//                   school: ''
+	//                   school: '',
+	//                   hobby: [],
+	//                   profession: '',
+	//                   state: false,
+	//                   star: [],
+	//                   suggestion: ''
 	//                 },
 	//                 schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],
 	//                 sexOptions: [{
@@ -10902,7 +11342,7 @@
 	//             <tbody>
 	//               <tr>
 	//                 <td>type</td>
-	//                 <td><code>String</code> one of <code>horizontal</code><code>inline</code></td>
+	//                 <td><code>String</code> 如:  <code>horizontal</code><code>inline</code></td>
 	//                 <td>horizontal</td>
 	//                 <td>布局方式</td>
 	//               </tr>
@@ -11038,7 +11478,7 @@
 	//                 <td>hasFeedback</td>
 	//                 <td><code>Boolean</code></td>
 	//                 <td></td>
-	//                 <td>示范显示状态icon</td>
+	//                 <td>是否显示状态icon</td>
 	//               </tr>
 	//             </tbody>
 	//           </table>
@@ -11069,7 +11509,8 @@
 	        hobby: [],
 	        profession: '',
 	        state: false,
-	        star: []
+	        star: [],
+	        suggestion: ''
 	      },
 	      schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],
 	      sexOptions: [{
@@ -11121,32 +11562,27 @@
 	      }
 	    },
 	    submit: function submit() {
-	      var _this = this;
-	
 	      this.validate = true;
-	
-	      this.$nextTick(function () {
-	        console.log(_this.result.isvalid);
-	      });
+	      console.log(this.result);
 	    }
 	  }
 	};
 	// </script>
 
 /***/ },
-/* 289 */
+/* 302 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"表单验证\"  >\n        <h1 class=\"page-header\"><a href=\"#表单验证\" class=\"anchor\">表单验证</a><span class=\"author\"> </span></h1>\n        <div class=\"bs-example\">\n            <pre><code>{{result | json}}</code></pre>\n\n        \t<n3-form  :validate=\"validate\" :result.sync=\"result\">\n                <n3-form-item\n                    need\n                    label=\"姓名\"\n                    :label-col=\"3\">   \n                <n3-input\n                    :valid-status=\"success\"\n                    name=\"name\"\n                    :value.sync=\"model.name\" \n                    :rules=\"[{type:'required'}]\"\n                    :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"年龄\"\n                    :label-col=\"3\">   \n                <n3-input\n                    name=\"age\"\n                    :value.sync=\"model.age\" \n                    :rules=\"[{type:'number'},{type:'required'}]\">\n                </n3-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"地址\"\n                    :label-col=\"3\">   \n                <n3-cascader\n                    name=\"address\"\n                    :options=\"options\"\n                    :value.sync=\"model.address\" \n                    :rules=\"[{type:'required'}]\">\n                </n3-cascader>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"生日\"\n                    :label-col=\"3\">   \n                <n3-datepicker\n                    name=\"birthday\"\n                    :value.sync=\"model.birthday\" \n                    :rules=\"[{type:'required'}]\">\n                </n3-datepicker>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"学校\"\n                    :label-col=\"3\">   \n                <n3-typeahead \n                    name=\"学校\"\n                    :query.sync = \"model.school\"\n                    :data=\"schoolData\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-typeahead>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"爱好\"\n                    :label-col=\"3\">   \n                <n3-checkbox-group\n                    name=\"hobby\"\n                    :value.sync = \"model.hobby\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-checkbox value=\"0\">看书</n3-checkbox>\n                    <n3-checkbox value=\"1\">运动</n3-checkbox>\n                    <n3-checkbox value=\"2\">旅行</n3-checkbox>\n                </n3-checkbox-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"性别\"\n                    :label-col=\"3\">   \n                <n3-radio-group\n                    name=\"sex\"\n                    :value.sync = \"model.sex\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-radio value=\"0\">男</n3-radio>\n                    <n3-radio value=\"1\">女</n3-radio>\n                </n3-radio-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"专业\"\n                    :label-col=\"3\">   \n                <n3-select\n                    name=\"sex\"\n                    :options='profession'\n                    :value.sync = \"model.profession\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-select>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"级别\"\n                    :label-col=\"3\">   \n                  <n3-slider\n                      name=\"level\"\n                      :value.sync = \"model.level\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-slider>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"开启状态\"\n                    :label-col=\"3\">   \n                  <n3-switch\n                      name=\"state\"\n                      :value.sync = \"model.state\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-switch>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"喜欢的明星\"\n                    :label-col=\"3\">   \n                  <n3-multiple-input\n                      name=\"star\"\n                      :value.sync = \"model.star\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-multiple-input>\n                </n3-form-item>\n\n                 <n3-form-item>\n                     <n3-button type=\"primary\" @click=\"submit\" >提交</n3-button>\n                     <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button>\n                </n3-form-item>\n            </n3-form>\n        \t<pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n        \t\t<n3-form :validate=\"validate\" :result.sync=\"result\">\n                <n3-form-item\n                    need\n                    label=\"姓名\"\n                    :label-col=\"3\">   \n                <n3-input\n                    name=\"name\"\n                    :value.sync=\"model.name\" \n                    :rules=\"[{type:'required'}]\"\n                    :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"年龄\"\n                    :label-col=\"3\">   \n                <n3-input\n                    name=\"age\"\n                    :value.sync=\"model.age\" \n                    :rules=\"[{type:'number'},{type:'required'}]\">\n                </n3-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"地址\"\n                    :label-col=\"3\">   \n                <n3-cascader\n                    name=\"address\"\n                    :options=\"options\"\n                    :value.sync=\"model.address\" \n                    :rules=\"[{type:'required'}]\">\n                </n3-cascader>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"生日\"\n                    :label-col=\"3\">   \n                <n3-datepicker\n                    name=\"birthday\"\n                    :value.sync=\"model.birthday\" \n                    :rules=\"[{type:'required'}]\">\n                </n3-datepicker>\n                </n3-form-item>\n                 <n3-form-item\n                    need\n                    label=\"学校\"\n                    :label-col=\"3\">   \n                <n3-typeahead \n                    name=\"学校\"\n                    :query.sync = \"model.school\"\n                    :data=\"schoolData\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-typeahead>\n                </n3-form-item>\n\n                 <n3-form-item>\n                     <n3-button type=\"primary\" @click=\"submit\" >提交</n3-button>\n                     <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button>\n                </n3-form-item>\n            </n3-form>\n\n            new Vue({\n              data: {\n                model: {\n                  name: '',\n                  age: '',\n                  address: [],\n                  birthday: '',\n                  sex: '',\n                  school: ''\n                },\n                schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],\n                sexOptions: [{\n                  value: '1',\n                  label: '男'\n                }, {\n                  value: '0',\n                  label: '女'\n                }],\n                options: [{\n                  value: 'zhejiang',\n                  label: '浙江',\n                  children: [{\n                    value: 'hangzhou',\n                    label: '杭州',\n                    children: [{\n                      value: 'xihu',\n                      label: '西湖'\n                    }]\n                  }]\n                }, {\n                  value: 'jiangsu',\n                  label: '江苏',\n                  children: [{\n                    value: 'nanjing',\n                    label: '南京',\n                    children: [{\n                      value: 'zhonghuamen',\n                      label: '中华门'\n                    }]\n                  }]\n                }],\n                validate: false,\n                result: {}\n              },\n              methods: {\n                nameValidate (val) {\n                  if (/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/.test(val)) {\n                    return {\n                      validStatus: 'success'\n                    }\n                  } else {\n                    return {\n                      validStatus: 'error',\n                      tips: '请输入中文名'\n                    }\n                  }\n                },\n                submit () {\n                  this.validate = true\n\n                  this.$nextTick(() => {\n                    console.log(this.result.isvalid)\n                  })\n                }\n              }\n\n            })\n        \t</script></code></pre>\n\n\n          <h2>n3-from参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>type</td>\n                <td><code>String</code> one of <code>horizontal</code><code>inline</code></td>\n                <td>horizontal</td>\n                <td>布局方式</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开验证</td>\n              </tr>\n              <tr>\n                <td>result</td>\n                <td><code>Object</code></td>\n                <td></td>\n                <td>验证结果</td>\n              </tr>\n            </tbody>\n          </table>\n\n          <h2>n3-from-item参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>label</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>label-col</td>\n                <td><code>Number</code></td>\n                <td>2</td>\n                <td>label所占栅格数</td>\n              </tr>\n               <tr>\n                <td>wrap-col</td>\n                <td><code>Number</code></td>\n                <td></td>\n                <td>item所占栅格数</td>\n              </tr>\n              <tr>\n                <td>need</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>红点标记</td>\n              </tr>\n            </tbody>\n          </table>\n\n\n          <h2>待验证组件参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>name</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td>标示输入项，与结果内的值对应</td>\n              </tr>\n              <tr>\n                <td>readonly</td>\n                <td><code>Boolean</code></td>\n                <td><code>false</code></td>\n                <td>只读，无法输入，级联，时间日期等组件默认无法手动输入</td>\n              </tr>\n              <tr>\n                <td>disabled</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>禁止改变值</td>\n              </tr>\n              <tr>\n                <td>width</td>\n                <td><code>String</code></td>\n                <td>220px</td>\n                <td>宽度</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开检验</td>\n              </tr>\n              <tr>\n                <td>placeholder</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>custom－validate</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>自定义检验器\n                <code>\n                function(value){\n                  if(value){\n                    return {\n                      validStatus: 'success'\n                    }\n                  }else{\n                    return {\n                      validStatus: 'error',\n                      tips: '出错啦'\n                    }\n                  }\n                }\n                </code>\n                </td>\n              </tr>\n              <tr>\n                <td>rules</td>\n                <td><code>Array</code></td>\n                <td>[]</td>\n                <td>规则数组 ,如[{type:'required'},{type:'maxLength=6'},{type:'minLength=3'},{type:'phone'},{type:'number'},{type:'telephone'},{type:'email'}]</td>\n              </tr>\n              <tr>\n                <td>hasFeedback</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>示范显示状态icon</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n    </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"表单验证\"  >\n        <h1 class=\"page-header\"><a href=\"#表单验证\" class=\"anchor\">表单验证</a><span class=\"author\"> </span></h1>\n        <div class=\"bs-example\">\n        \t<n3-form  :validate=\"validate\" :result.sync=\"result\" >\n                <n3-form-item\n                    need\n                    label=\"姓名\"\n                    :label-col=\"3\">   \n                <n3-input\n                    name=\"name\"\n                    :value.sync=\"model.name\" \n                    :rules=\"[{type:'required'}]\"\n                    :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"年龄\"\n                    :label-col=\"3\">   \n                <n3-input\n                    name=\"age\"\n                    :value.sync=\"model.age\" \n                    :rules=\"[{type:'number'},{type:'required'}]\">\n                </n3-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"地址\"\n                    :label-col=\"3\">   \n                <n3-cascader\n                    name=\"address\"\n                    :options=\"options\"\n                    :value.sync=\"model.address\" \n                    :rules=\"[{type:'required'}]\">\n                </n3-cascader>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"生日\"\n                    :label-col=\"3\">   \n                <n3-datepicker\n                    name=\"birthday\"\n                    :value.sync=\"model.birthday\" \n                    :rules=\"[{type:'required'}]\">\n                </n3-datepicker>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"学校\"\n                    :label-col=\"3\">   \n                <n3-typeahead \n                    name=\"学校\"\n                    :query.sync = \"model.school\"\n                    :data=\"schoolData\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-typeahead>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"爱好\"\n                    :label-col=\"3\">   \n                <n3-checkbox-group\n                    name=\"hobby\"\n                    :value.sync = \"model.hobby\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-checkbox value=\"0\">看书</n3-checkbox>\n                    <n3-checkbox value=\"1\">运动</n3-checkbox>\n                    <n3-checkbox value=\"2\">旅行</n3-checkbox>\n                </n3-checkbox-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"性别\"\n                    :label-col=\"3\">   \n                <n3-radio-group\n                    name=\"sex\"\n                    :value.sync = \"model.sex\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-radio value=\"0\">男</n3-radio>\n                    <n3-radio value=\"1\">女</n3-radio>\n                </n3-radio-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"专业\"\n                    :label-col=\"3\">   \n                <n3-select\n                    name=\"sex\"\n                    :options='profession'\n                    :value.sync = \"model.profession\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-select>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"级别\"\n                    :label-col=\"3\">   \n                  <n3-slider\n                      name=\"level\"\n                      :value.sync = \"model.level\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-slider>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"开启状态\"\n                    :label-col=\"3\">   \n                  <n3-switch\n                      name=\"state\"\n                      :value.sync = \"model.state\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-switch>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"喜欢的明星\"\n                    :label-col=\"3\">   \n                  <n3-multiple-input\n                      name=\"star\"\n                      :value.sync = \"model.star\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-multiple-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"想说的话\"\n                    :label-col=\"3\">   \n                  <n3-textarea\n                      name=\"suggestion\"\n                      :value.sync = \"model.suggestion\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-textarea>\n                </n3-form-item>\n\n                 <n3-form-item>\n                     <n3-button type=\"primary\" @click=\"submit\" >提交</n3-button>\n                     <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button>\n                </n3-form-item>\n            </n3-form>\n        \t<pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n        \t\t<n3-form  :validate=\"validate\" :result.sync=\"result\">\n                <n3-form-item\n                    need\n                    label=\"姓名\"\n                    :label-col=\"3\">   \n                <n3-input\n                    name=\"name\"\n                    :value.sync=\"model.name\" \n                    :rules=\"[{type:'required'}]\"\n                    :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"年龄\"\n                    :label-col=\"3\">   \n                <n3-input\n                    name=\"age\"\n                    :value.sync=\"model.age\" \n                    :rules=\"[{type:'number'},{type:'required'}]\">\n                </n3-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"地址\"\n                    :label-col=\"3\">   \n                <n3-cascader\n                    name=\"address\"\n                    :options=\"options\"\n                    :value.sync=\"model.address\" \n                    :rules=\"[{type:'required'}]\">\n                </n3-cascader>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"生日\"\n                    :label-col=\"3\">   \n                <n3-datepicker\n                    name=\"birthday\"\n                    :value.sync=\"model.birthday\" \n                    :rules=\"[{type:'required'}]\">\n                </n3-datepicker>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"学校\"\n                    :label-col=\"3\">   \n                <n3-typeahead \n                    name=\"学校\"\n                    :query.sync = \"model.school\"\n                    :data=\"schoolData\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-typeahead>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"爱好\"\n                    :label-col=\"3\">   \n                <n3-checkbox-group\n                    name=\"hobby\"\n                    :value.sync = \"model.hobby\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-checkbox value=\"0\">看书</n3-checkbox>\n                    <n3-checkbox value=\"1\">运动</n3-checkbox>\n                    <n3-checkbox value=\"2\">旅行</n3-checkbox>\n                </n3-checkbox-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"性别\"\n                    :label-col=\"3\">   \n                <n3-radio-group\n                    name=\"sex\"\n                    :value.sync = \"model.sex\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-radio value=\"0\">男</n3-radio>\n                    <n3-radio value=\"1\">女</n3-radio>\n                </n3-radio-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"专业\"\n                    :label-col=\"3\">   \n                <n3-select\n                    name=\"sex\"\n                    :options='profession'\n                    :value.sync = \"model.profession\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-select>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"级别\"\n                    :label-col=\"3\">   \n                  <n3-slider\n                      name=\"level\"\n                      :value.sync = \"model.level\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-slider>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"开启状态\"\n                    :label-col=\"3\">   \n                  <n3-switch\n                      name=\"state\"\n                      :value.sync = \"model.state\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-switch>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"喜欢的明星\"\n                    :label-col=\"3\">   \n                  <n3-multiple-input\n                      name=\"star\"\n                      :value.sync = \"model.star\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-multiple-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"想说的话\"\n                    :label-col=\"3\">   \n                  <n3-textarea\n                      name=\"suggestion\"\n                      :value.sync = \"model.suggestion\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-textarea>\n                </n3-form-item>\n\n                 <n3-form-item>\n                     <n3-button type=\"primary\" @click=\"submit\" >提交</n3-button>\n                     <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button>\n                </n3-form-item>\n            </n3-form>\n\n            new Vue({\n              data: {\n                profession: [{\n                  value: '学生',\n                  label: '学生'\n                }, {\n                  value: '工程师',\n                  label: '工程师'\n                }, {\n                  value: '医生',\n                  label: '医生'\n                }],\n                model: {\n                  name: '',\n                  age: '',\n                  address: [],\n                  birthday: '',\n                  sex: '',\n                  school: '',\n                  hobby: [],\n                  profession: '',\n                  state: false,\n                  star: [],\n                  suggestion: ''\n                },\n                schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],\n                sexOptions: [{\n                  value: '1',\n                  label: '男'\n                }, {\n                  value: '0',\n                  label: '女'\n                }],\n                options: [{\n                  value: 'zhejiang',\n                  label: '浙江',\n                  children: [{\n                    value: 'hangzhou',\n                    label: '杭州',\n                    children: [{\n                      value: 'xihu',\n                      label: '西湖'\n                    }]\n                  }]\n                }, {\n                  value: 'jiangsu',\n                  label: '江苏',\n                  children: [{\n                    value: 'nanjing',\n                    label: '南京',\n                    children: [{\n                      value: 'zhonghuamen',\n                      label: '中华门'\n                    }]\n                  }]\n                }],\n                validate: false,\n                result: {}\n              },\n              methods: {\n                nameValidate (val) {\n                  if (/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/.test(val)) {\n                    return {\n                      validStatus: 'success'\n                    }\n                  } else {\n                    return {\n                      validStatus: 'error',\n                      tips: '请输入中文名'\n                    }\n                  }\n                },\n                submit () {\n                  this.validate = true\n\n                  this.$nextTick(() => {\n                    console.log(this.result.isvalid)\n                  })\n                }\n              }\n\n            })\n        \t</script></code></pre>\n\n\n          <h2>n3-from参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>type</td>\n                <td><code>String</code> 如:  <code>horizontal</code><code>inline</code></td>\n                <td>horizontal</td>\n                <td>布局方式</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开验证</td>\n              </tr>\n              <tr>\n                <td>result</td>\n                <td><code>Object</code></td>\n                <td></td>\n                <td>验证结果</td>\n              </tr>\n            </tbody>\n          </table>\n\n          <h2>n3-from-item参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>label</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>label-col</td>\n                <td><code>Number</code></td>\n                <td>2</td>\n                <td>label所占栅格数</td>\n              </tr>\n               <tr>\n                <td>wrap-col</td>\n                <td><code>Number</code></td>\n                <td></td>\n                <td>item所占栅格数</td>\n              </tr>\n              <tr>\n                <td>need</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>红点标记</td>\n              </tr>\n            </tbody>\n          </table>\n\n\n          <h2>待验证组件参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>name</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td>标示输入项，与结果内的值对应</td>\n              </tr>\n              <tr>\n                <td>readonly</td>\n                <td><code>Boolean</code></td>\n                <td><code>false</code></td>\n                <td>只读，无法输入，级联，时间日期等组件默认无法手动输入</td>\n              </tr>\n              <tr>\n                <td>disabled</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>禁止改变值</td>\n              </tr>\n              <tr>\n                <td>width</td>\n                <td><code>String</code></td>\n                <td>220px</td>\n                <td>宽度</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开检验</td>\n              </tr>\n              <tr>\n                <td>placeholder</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>custom－validate</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>自定义检验器\n                <code>\n                function(value){\n                  if(value){\n                    return {\n                      validStatus: 'success'\n                    }\n                  }else{\n                    return {\n                      validStatus: 'error',\n                      tips: '出错啦'\n                    }\n                  }\n                }\n                </code>\n                </td>\n              </tr>\n              <tr>\n                <td>rules</td>\n                <td><code>Array</code></td>\n                <td>[]</td>\n                <td>规则数组 ,如[{type:'required'},{type:'maxLength=6'},{type:'minLength=3'},{type:'phone'},{type:'number'},{type:'telephone'},{type:'email'}]</td>\n              </tr>\n              <tr>\n                <td>hasFeedback</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>是否显示状态icon</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n    </div>";
 
 /***/ },
-/* 290 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(291)
+	module.exports = __webpack_require__(304)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(292)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(305)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -11164,7 +11600,7 @@
 	}
 
 /***/ },
-/* 291 */
+/* 304 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11230,7 +11666,7 @@
 	//         </tr>
 	//         <tr>
 	//           <td>color</td>
-	//           <td><code>String</code>, one of <code>default</code>
+	//           <td><code>String</code>, 如:  <code>default</code>
 	//           <code>primary</code>
 	//           <code>danger</code>
 	//           <code>info</code>
@@ -11259,6 +11695,7 @@
 	//         </tr>
 	//       </tbody>
 	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	
 	//     <h2>checkbox</h2>
 	//     <table class="table table-bordered">
@@ -11306,19 +11743,19 @@
 	// </script>
 
 /***/ },
-/* 292 */
+/* 305 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"按钮组\"  >\n    <h1 class=\"page-header\"><a href=\"#按钮组\" class=\"anchor\">按钮组</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      \n      <h4>Checkbox</h4>\n      <n3-checkbox-group :value.sync=\"checkboxValue\" >\n        <n3-checkbox-btn value=\"left\" disabled>Left</n3-checkbox-btn>\n        <n3-checkbox-btn value=\"middle\" checked>Middle</n3-checkbox-btn>\n        <n3-checkbox-btn value=\"right\">Right</n3-checkbox-btn>\n      </n3-checkbox-group>\n      <br>\n      <n3-checkbox-group :value.sync=\"checkboxValue\">\n        <n3-checkbox value=\"left\" disabled>Left</n3-checkbox>\n        <n3-checkbox value=\"middle\" checked>Middle</n3-checkbox>\n        <n3-checkbox value=\"right\">Right</n3-checkbox>\n      </n3-checkbox-group>\n\n      <p>\n        <pre>\nCheckbox value: {{checkboxValue | json}}\n        </pre>\n      </p>\n\n      <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     <n3-checkbox-group :value.sync=\"checkboxValue\" >\n        <n3-checkbox-btn value=\"left\" disabled>Left</n3-checkbox-btn>\n        <n3-checkbox-btn value=\"middle\" checked>Middle</n3-checkbox-btn>\n        <n3-checkbox-btn value=\"right\">Right</n3-checkbox-btn>\n      </n3-checkbox-group>\n      <br>\n      <n3-checkbox-group :value.sync=\"checkboxValue\">\n        <n3-checkbox value=\"left\" disabled>Left</n3-checkbox>\n        <n3-checkbox value=\"middle\" checked>Middle</n3-checkbox>\n        <n3-checkbox value=\"right\">Right</n3-checkbox>\n      </n3-checkbox-group>\n    </script></code></pre>\n     \n    <br>\n    <h2>group</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>color</td>\n          <td><code>String</code>, one of <code>default</code>\n          <code>primary</code>\n          <code>danger</code>\n          <code>info</code>\n          <code>warning</code>\n          <code>success</code></td>\n          <td><code>default</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>options</td>\n          <td>Array</td>\n          <td></td>\n          <td><code>[{value:'a',label:'a'}]</code></td>\n        </tr>\n         <tr>\n          <td>type</td>\n          <td>String</td>\n          <td></td>\n          <td>checkbox,button(checkbox)   radio,button(radio) 使用options时起作用</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td>Function</td>\n          <td></td>\n          <td>值变化时调用</td>\n        </tr>\n      </tbody>\n    </table>\n\n    <h2>checkbox</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td>String,Number</td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>checked</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td>初始化选中</td>\n        </tr>\n      </tbody>\n    </table>\n    \n  </div>\n</template>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"按钮组\"  >\n    <h1 class=\"page-header\"><a href=\"#按钮组\" class=\"anchor\">按钮组</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      \n      <h4>Checkbox</h4>\n      <n3-checkbox-group :value.sync=\"checkboxValue\" >\n        <n3-checkbox-btn value=\"left\" disabled>Left</n3-checkbox-btn>\n        <n3-checkbox-btn value=\"middle\" checked>Middle</n3-checkbox-btn>\n        <n3-checkbox-btn value=\"right\">Right</n3-checkbox-btn>\n      </n3-checkbox-group>\n      <br>\n      <n3-checkbox-group :value.sync=\"checkboxValue\">\n        <n3-checkbox value=\"left\" disabled>Left</n3-checkbox>\n        <n3-checkbox value=\"middle\" checked>Middle</n3-checkbox>\n        <n3-checkbox value=\"right\">Right</n3-checkbox>\n      </n3-checkbox-group>\n\n      <p>\n        <pre>\nCheckbox value: {{checkboxValue | json}}\n        </pre>\n      </p>\n\n      <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     <n3-checkbox-group :value.sync=\"checkboxValue\" >\n        <n3-checkbox-btn value=\"left\" disabled>Left</n3-checkbox-btn>\n        <n3-checkbox-btn value=\"middle\" checked>Middle</n3-checkbox-btn>\n        <n3-checkbox-btn value=\"right\">Right</n3-checkbox-btn>\n      </n3-checkbox-group>\n      <br>\n      <n3-checkbox-group :value.sync=\"checkboxValue\">\n        <n3-checkbox value=\"left\" disabled>Left</n3-checkbox>\n        <n3-checkbox value=\"middle\" checked>Middle</n3-checkbox>\n        <n3-checkbox value=\"right\">Right</n3-checkbox>\n      </n3-checkbox-group>\n    </script></code></pre>\n     \n    <br>\n    <h2>group</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>color</td>\n          <td><code>String</code>, 如:  <code>default</code>\n          <code>primary</code>\n          <code>danger</code>\n          <code>info</code>\n          <code>warning</code>\n          <code>success</code></td>\n          <td><code>default</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>options</td>\n          <td>Array</td>\n          <td></td>\n          <td><code>[{value:'a',label:'a'}]</code></td>\n        </tr>\n         <tr>\n          <td>type</td>\n          <td>String</td>\n          <td></td>\n          <td>checkbox,button(checkbox)   radio,button(radio) 使用options时起作用</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td>Function</td>\n          <td></td>\n          <td>值变化时调用</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n    \n    <h2>checkbox</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td>String,Number</td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>checked</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td>初始化选中</td>\n        </tr>\n      </tbody>\n    </table>\n    \n  </div>\n</template>";
 
 /***/ },
-/* 293 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(294)
+	module.exports = __webpack_require__(307)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(295)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(308)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -11336,7 +11773,7 @@
 	}
 
 /***/ },
-/* 294 */
+/* 307 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11400,7 +11837,7 @@
 	//         </tr>
 	//         <tr>
 	//           <td>color</td>
-	//           <td><code>String</code>, one of <code>default</code>
+	//           <td><code>String</code>, 如:  <code>default</code>
 	//           <code>primary</code>
 	//           <code>danger</code>
 	//           <code>info</code>
@@ -11411,24 +11848,25 @@
 	//         </tr>
 	//         <tr>
 	//           <td>options</td>
-	//           <td>Array</td>
+	//           <td><code>Array</code></td>
 	//           <td></td>
 	//           <td><code>[{value:'a',label:'a'}]</code></td>
 	//         </tr>
 	//          <tr>
 	//           <td>type</td>
-	//           <td>String</td>
+	//           <td><code>String</code></td>
 	//           <td></td>
 	//           <td>radio,button(radio) 使用options时起作用</td>
 	//         </tr>
 	//         <tr>
 	//           <td>on-change</td>
-	//           <td>Function</td>
+	//           <td><code>Function</code></td>
 	//           <td></td>
 	//           <td>值变化时调用</td>
 	//         </tr>
 	//       </tbody>
 	//     </table>
+	//     <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 	
 	//     <h2>radio</h2>
 	//     <table class="table table-bordered">
@@ -11443,19 +11881,19 @@
 	//       <tbody>
 	//         <tr>
 	//           <td>value</td>
-	//           <td>String,Number</td>
+	//           <td><code>String</code>  <code>Number</code></td>
 	//           <td></td>
 	//           <td></td>
 	//         </tr>
 	//         <tr>
 	//           <td>disabled</td>
-	//           <td>Boolean</td>
+	//           <td><code>Boolean</code></td>
 	//           <td>false</td>
 	//           <td></td>
 	//         </tr>
 	//         <tr>
 	//           <td>checked</td>
-	//           <td>Boolean</td>
+	//           <td><code>Boolean</code></td>
 	//           <td>false</td>
 	//           <td>初始化选中</td>
 	//         </tr>
@@ -11477,20 +11915,20 @@
 	// </script>
 
 /***/ },
-/* 295 */
+/* 308 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"单选框\"  >\n    <h1 class=\"page-header\"><a href=\"#单选框\" class=\"anchor\">单选框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Radio</h4>\n      <n3-radio-group :value.sync=\"radioValue\" type=\"primary\">\n        <n3-radio-btn value=\"left\" disabled>Left</n3-radio-btn>\n        <n3-radio-btn value=\"middle\" checked>Middle</n3-radio-btn>\n        <n3-radio-btn value=\"right\">Right</n3-radio-btn>\n      </n3-radio-group>\n\n      <n3-radio-group :value.sync=\"radioValue\" >\n        <n3-radio value=\"left\" disabled>Left</n3-radio>\n        <n3-radio value=\"middle\" checked>Middle</n3-radio>\n        <n3-radio value=\"right\">Right</n3-radio>\n      </n3-radio-group>\n      <p>\n        <pre>\nRadio value: {{radioValue}}\n        </pre>\n      </p>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     <n3-radio-group :value.sync=\"radioValue\" type=\"primary\">\n        <n3-radio-btn value=\"left\" disabled>Left</n3-radio-btn>\n        <n3-radio-btn value=\"middle\" checked>Middle</n3-radio-btn>\n        <n3-radio-btn value=\"right\">Right</n3-radio-btn>\n      </n3-radio-group>\n\n      <n3-radio-group :value.sync=\"radioValue\" >\n        <n3-radio value=\"left\" disabled>Left</n3-radio>\n        <n3-radio value=\"middle\" checked>Middle</n3-radio>\n        <n3-radio value=\"right\">Right</n3-radio>\n      </n3-radio-group>\n    </script></code></pre>\n    <br>\n    <h2>group</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String,Number</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>color</td>\n          <td><code>String</code>, one of <code>default</code>\n          <code>primary</code>\n          <code>danger</code>\n          <code>info</code>\n          <code>warning</code>\n          <code>success</code></td>\n          <td><code>default</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>options</td>\n          <td>Array</td>\n          <td></td>\n          <td><code>[{value:'a',label:'a'}]</code></td>\n        </tr>\n         <tr>\n          <td>type</td>\n          <td>String</td>\n          <td></td>\n          <td>radio,button(radio) 使用options时起作用</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td>Function</td>\n          <td></td>\n          <td>值变化时调用</td>\n        </tr>\n      </tbody>\n    </table>\n\n    <h2>radio</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td>String,Number</td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>checked</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td>初始化选中</td>\n        </tr>\n      </tbody>\n    </table>\n    \n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"单选框\"  >\n    <h1 class=\"page-header\"><a href=\"#单选框\" class=\"anchor\">单选框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Radio</h4>\n      <n3-radio-group :value.sync=\"radioValue\" type=\"primary\">\n        <n3-radio-btn value=\"left\" disabled>Left</n3-radio-btn>\n        <n3-radio-btn value=\"middle\" checked>Middle</n3-radio-btn>\n        <n3-radio-btn value=\"right\">Right</n3-radio-btn>\n      </n3-radio-group>\n\n      <n3-radio-group :value.sync=\"radioValue\" >\n        <n3-radio value=\"left\" disabled>Left</n3-radio>\n        <n3-radio value=\"middle\" checked>Middle</n3-radio>\n        <n3-radio value=\"right\">Right</n3-radio>\n      </n3-radio-group>\n      <p>\n        <pre>\nRadio value: {{radioValue}}\n        </pre>\n      </p>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n     <n3-radio-group :value.sync=\"radioValue\" type=\"primary\">\n        <n3-radio-btn value=\"left\" disabled>Left</n3-radio-btn>\n        <n3-radio-btn value=\"middle\" checked>Middle</n3-radio-btn>\n        <n3-radio-btn value=\"right\">Right</n3-radio-btn>\n      </n3-radio-group>\n\n      <n3-radio-group :value.sync=\"radioValue\" >\n        <n3-radio value=\"left\" disabled>Left</n3-radio>\n        <n3-radio value=\"middle\" checked>Middle</n3-radio>\n        <n3-radio value=\"right\">Right</n3-radio>\n      </n3-radio-group>\n    </script></code></pre>\n    <br>\n    <h2>group</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String,Number</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>color</td>\n          <td><code>String</code>, 如:  <code>default</code>\n          <code>primary</code>\n          <code>danger</code>\n          <code>info</code>\n          <code>warning</code>\n          <code>success</code></td>\n          <td><code>default</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td><code>[{value:'a',label:'a'}]</code></td>\n        </tr>\n         <tr>\n          <td>type</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>radio,button(radio) 使用options时起作用</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化时调用</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n\n    <h2>radio</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code>  <code>Number</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>checked</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>初始化选中</td>\n        </tr>\n      </tbody>\n    </table>\n    \n  </div>";
 
 /***/ },
-/* 296 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(297)
-	module.exports = __webpack_require__(299)
+	__webpack_require__(310)
+	module.exports = __webpack_require__(312)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(300)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(313)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -11508,16 +11946,16 @@
 	}
 
 /***/ },
-/* 297 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(298);
+	var content = __webpack_require__(311);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -11534,10 +11972,10 @@
 	}
 
 /***/ },
-/* 298 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
@@ -11548,7 +11986,7 @@
 
 
 /***/ },
-/* 299 */
+/* 312 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11645,13 +12083,13 @@
 	// </style>
 
 /***/ },
-/* 300 */
+/* 313 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"bs-docs-section\" id=\"动画\" _v-2bbd5b8d=\"\">\n    <h1 class=\"page-header\" _v-2bbd5b8d=\"\">\n      <a href=\"#动画\" class=\"anchor\" _v-2bbd5b8d=\"\">动画</a><span class=\"author\" _v-2bbd5b8d=\"\"> </span>\n    </h1>\n    <div class=\"bs-example\" _v-2bbd5b8d=\"\">\n        <n3-button @click=\"show1=!show1\" _v-2bbd5b8d=\"\">fadeLeft</n3-button>\n        <div v-if=\"show1\" transition=\"fadeLeft\" class=\"content\" _v-2bbd5b8d=\"\">\n            <h4 _v-2bbd5b8d=\"\">Title</h4>\n            <p _v-2bbd5b8d=\"\">...</p>\n            <p _v-2bbd5b8d=\"\">...</p>\n            <p _v-2bbd5b8d=\"\">...</p>\n        </div>\n        <br _v-2bbd5b8d=\"\">\n        <br _v-2bbd5b8d=\"\">\n         <n3-button @click=\"show2=!show2\" _v-2bbd5b8d=\"\">fadeDown</n3-button>\n        <div v-if=\"show2\" transition=\"fadeDown\" class=\"content\" _v-2bbd5b8d=\"\">\n            <h4 _v-2bbd5b8d=\"\">Title</h4>\n            <p _v-2bbd5b8d=\"\">...</p>\n            <p _v-2bbd5b8d=\"\">...</p>\n            <p _v-2bbd5b8d=\"\">...</p>\n        </div>\n        <br _v-2bbd5b8d=\"\">\n        <br _v-2bbd5b8d=\"\">\n        <n3-button @click=\"show3=!show3\" _v-2bbd5b8d=\"\">bounce</n3-button>\n        <div v-if=\"show3\" transition=\"bounce\" style=\"width:100px\" _v-2bbd5b8d=\"\">\n            <p _v-2bbd5b8d=\"\">提示:作用于尺寸比较小的元素</p>\n        </div>\n    </div>\n\n<pre _v-2bbd5b8d=\"\"><code class=\"language-markup\" _v-2bbd5b8d=\"\">\n  <script type=\"language-mark-up\" _v-2bbd5b8d=\"\">     作用于( v-if , v-show , v-for) 等元素\n\n        <n3-button  @click=\"show=!show\">切换</n3-button>\n        <div v-if=\"show\" transition=\"fadeLeft\" >\n            <h4>Title</h4>\n            <p>...</p>\n            <p>...</p>\n            <p>...</p>\n        </div>\n    </script></code></pre>\n    <h2 _v-2bbd5b8d=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-2bbd5b8d=\"\">\n      <thead _v-2bbd5b8d=\"\">\n        <tr _v-2bbd5b8d=\"\">\n          <th _v-2bbd5b8d=\"\">参数名</th>\n          <th _v-2bbd5b8d=\"\">类型</th>\n          <th _v-2bbd5b8d=\"\">默认值</th>\n          <th _v-2bbd5b8d=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-2bbd5b8d=\"\">\n        <tr _v-2bbd5b8d=\"\">\n          <td _v-2bbd5b8d=\"\">transition</td>\n          <td _v-2bbd5b8d=\"\"><code _v-2bbd5b8d=\"\">String</code></td>\n          <td _v-2bbd5b8d=\"\"><code _v-2bbd5b8d=\"\"></code></td>\n          <td _v-2bbd5b8d=\"\"><code _v-2bbd5b8d=\"\">fade</code> \n              <code _v-2bbd5b8d=\"\">fadeLeft</code>\n              <code _v-2bbd5b8d=\"\">fadeDown</code>\n              <code _v-2bbd5b8d=\"\">bounce</code>\n              <code _v-2bbd5b8d=\"\">collapse</code>\n              <code _v-2bbd5b8d=\"\">scale</code>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
-/* 301 */
+/* 314 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11675,13 +12113,13 @@
 	})();
 
 /***/ },
-/* 302 */
+/* 315 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(index,item) in list\">\n              <n3-sub-nav  :show.sync=\"item.show\" >\n                <a slot=\"title\">{{index}}</a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a>{{i.label}}</a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n      <p>当前版本 Beta</p>\n    </n3-container>\n  </footer>\n</div>";
 
 /***/ },
-/* 303 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, process) {/*!
@@ -21758,10 +22196,10 @@
 	}, 0);
 	
 	module.exports = Vue;
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(304)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(317)))
 
 /***/ },
-/* 304 */
+/* 317 */
 /***/ function(module, exports) {
 
 	// shim for using process in browser
@@ -21927,236 +22365,244 @@
 
 
 /***/ },
-/* 305 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _n3Alert = __webpack_require__(165);
+	var _n3Alert = __webpack_require__(172);
 	
 	var _n3Alert2 = _interopRequireDefault(_n3Alert);
 	
-	var _n3Carousel = __webpack_require__(306);
+	var _n3Carousel = __webpack_require__(319);
 	
 	var _n3Carousel2 = _interopRequireDefault(_n3Carousel);
 	
-	var _n3Accordion = __webpack_require__(310);
+	var _n3Accordion = __webpack_require__(323);
 	
 	var _n3Accordion2 = _interopRequireDefault(_n3Accordion);
 	
-	var _n3Affix = __webpack_require__(313);
+	var _n3Affix = __webpack_require__(326);
 	
 	var _n3Affix2 = _interopRequireDefault(_n3Affix);
 	
-	var _n3Aside = __webpack_require__(316);
+	var _n3Aside = __webpack_require__(329);
 	
 	var _n3Aside2 = _interopRequireDefault(_n3Aside);
 	
-	var _n3CheckboxGroup = __webpack_require__(320);
+	var _n3CheckboxGroup = __webpack_require__(333);
 	
 	var _n3CheckboxGroup2 = _interopRequireDefault(_n3CheckboxGroup);
 	
-	var _n3Checkbox = __webpack_require__(322);
+	var _n3Checkbox = __webpack_require__(335);
 	
 	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
 	
-	var _n3CheckboxBtn = __webpack_require__(325);
+	var _n3CheckboxBtn = __webpack_require__(338);
 	
 	var _n3CheckboxBtn2 = _interopRequireDefault(_n3CheckboxBtn);
 	
-	var _n3Cascader = __webpack_require__(333);
+	var _n3Cascader = __webpack_require__(346);
 	
 	var _n3Cascader2 = _interopRequireDefault(_n3Cascader);
 	
-	var _n3Toast = __webpack_require__(341);
-	
-	var _n3Toast2 = _interopRequireDefault(_n3Toast);
-	
-	var _n3ToastMethod = __webpack_require__(344);
+	var _n3ToastMethod = __webpack_require__(354);
 	
 	var _n3ToastMethod2 = _interopRequireDefault(_n3ToastMethod);
 	
-	var _n3Label = __webpack_require__(345);
+	var _n3Label = __webpack_require__(358);
 	
 	var _n3Label2 = _interopRequireDefault(_n3Label);
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _n3Datepicker = __webpack_require__(348);
+	var _n3Textarea = __webpack_require__(361);
+	
+	var _n3Textarea2 = _interopRequireDefault(_n3Textarea);
+	
+	var _n3Datepicker = __webpack_require__(364);
 	
 	var _n3Datepicker2 = _interopRequireDefault(_n3Datepicker);
 	
-	var _n3Timepicker = __webpack_require__(351);
+	var _n3Timepicker = __webpack_require__(367);
 	
 	var _n3Timepicker2 = _interopRequireDefault(_n3Timepicker);
 	
-	var _n3Datetimepicker = __webpack_require__(361);
+	var _n3Datetimepicker = __webpack_require__(377);
 	
 	var _n3Datetimepicker2 = _interopRequireDefault(_n3Datetimepicker);
 	
-	var _n3Dropdown = __webpack_require__(364);
+	var _n3Dropdown = __webpack_require__(380);
 	
 	var _n3Dropdown2 = _interopRequireDefault(_n3Dropdown);
 	
-	var _n3Modal = __webpack_require__(367);
+	var _n3Modal = __webpack_require__(383);
 	
 	var _n3Modal2 = _interopRequireDefault(_n3Modal);
 	
-	var _n3Option = __webpack_require__(370);
+	var _n3Option = __webpack_require__(386);
 	
 	var _n3Option2 = _interopRequireDefault(_n3Option);
 	
-	var _n3Panel = __webpack_require__(373);
+	var _n3Panel = __webpack_require__(389);
 	
 	var _n3Panel2 = _interopRequireDefault(_n3Panel);
 	
-	var _n3Popover = __webpack_require__(376);
+	var _n3Popover = __webpack_require__(392);
 	
 	var _n3Popover2 = _interopRequireDefault(_n3Popover);
 	
-	var _n3PopConfirm = __webpack_require__(379);
+	var _n3PopConfirm = __webpack_require__(395);
 	
 	var _n3PopConfirm2 = _interopRequireDefault(_n3PopConfirm);
 	
-	var _n3Progressbar = __webpack_require__(382);
+	var _n3Progressbar = __webpack_require__(398);
 	
 	var _n3Progressbar2 = _interopRequireDefault(_n3Progressbar);
 	
-	var _n3Progress = __webpack_require__(385);
+	var _n3Progress = __webpack_require__(401);
 	
 	var _n3Progress2 = _interopRequireDefault(_n3Progress);
 	
-	var _n3Radio = __webpack_require__(388);
+	var _n3Radio = __webpack_require__(404);
 	
 	var _n3Radio2 = _interopRequireDefault(_n3Radio);
 	
-	var _n3RadioBtn = __webpack_require__(391);
+	var _n3RadioBtn = __webpack_require__(407);
 	
 	var _n3RadioBtn2 = _interopRequireDefault(_n3RadioBtn);
 	
-	var _n3RadioGroup = __webpack_require__(394);
+	var _n3RadioGroup = __webpack_require__(410);
 	
 	var _n3RadioGroup2 = _interopRequireDefault(_n3RadioGroup);
 	
-	var _n3Select = __webpack_require__(397);
+	var _n3Select = __webpack_require__(413);
 	
 	var _n3Select2 = _interopRequireDefault(_n3Select);
 	
-	var _n3Tab = __webpack_require__(400);
+	var _n3Tab = __webpack_require__(416);
 	
 	var _n3Tab2 = _interopRequireDefault(_n3Tab);
 	
-	var _n3Tabs = __webpack_require__(403);
+	var _n3Tabs = __webpack_require__(419);
 	
 	var _n3Tabs2 = _interopRequireDefault(_n3Tabs);
 	
-	var _n3Tooltip = __webpack_require__(355);
+	var _n3Tooltip = __webpack_require__(371);
 	
 	var _n3Tooltip2 = _interopRequireDefault(_n3Tooltip);
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3ButtonGroup = __webpack_require__(406);
+	var _n3ButtonGroup = __webpack_require__(422);
 	
 	var _n3ButtonGroup2 = _interopRequireDefault(_n3ButtonGroup);
 	
-	var _n3Container = __webpack_require__(409);
+	var _n3Container = __webpack_require__(425);
 	
 	var _n3Container2 = _interopRequireDefault(_n3Container);
 	
-	var _n3Row = __webpack_require__(412);
+	var _n3Row = __webpack_require__(428);
 	
 	var _n3Row2 = _interopRequireDefault(_n3Row);
 	
-	var _n3Nav = __webpack_require__(415);
+	var _n3Nav = __webpack_require__(431);
 	
 	var _n3Nav2 = _interopRequireDefault(_n3Nav);
 	
-	var _n3SubNav = __webpack_require__(418);
+	var _n3SubNav = __webpack_require__(434);
 	
 	var _n3SubNav2 = _interopRequireDefault(_n3SubNav);
 	
-	var _n3NavItem = __webpack_require__(421);
+	var _n3NavItem = __webpack_require__(437);
 	
 	var _n3NavItem2 = _interopRequireDefault(_n3NavItem);
 	
-	var _n3Column = __webpack_require__(424);
+	var _n3Column = __webpack_require__(440);
 	
 	var _n3Column2 = _interopRequireDefault(_n3Column);
 	
-	var _n3Switch = __webpack_require__(427);
+	var _n3Switch = __webpack_require__(443);
 	
 	var _n3Switch2 = _interopRequireDefault(_n3Switch);
 	
-	var _n3MultipleInput = __webpack_require__(430);
+	var _n3MultipleInput = __webpack_require__(446);
 	
 	var _n3MultipleInput2 = _interopRequireDefault(_n3MultipleInput);
 	
-	var _n3SimplePagination = __webpack_require__(436);
+	var _n3SimplePagination = __webpack_require__(452);
 	
 	var _n3SimplePagination2 = _interopRequireDefault(_n3SimplePagination);
 	
-	var _n3Step = __webpack_require__(439);
+	var _n3Step = __webpack_require__(455);
 	
 	var _n3Step2 = _interopRequireDefault(_n3Step);
 	
-	var _n3DataTable = __webpack_require__(442);
+	var _n3DataTable = __webpack_require__(458);
 	
 	var _n3DataTable2 = _interopRequireDefault(_n3DataTable);
 	
-	var _n3Loading = __webpack_require__(180);
+	var _n3Loading = __webpack_require__(187);
 	
 	var _n3Loading2 = _interopRequireDefault(_n3Loading);
 	
-	var _n3Timeline = __webpack_require__(445);
+	var _n3Timeline = __webpack_require__(461);
 	
 	var _n3Timeline2 = _interopRequireDefault(_n3Timeline);
 	
-	var _n3TimelineItem = __webpack_require__(447);
+	var _n3TimelineItem = __webpack_require__(463);
 	
 	var _n3TimelineItem2 = _interopRequireDefault(_n3TimelineItem);
 	
-	var _n3Typeahead = __webpack_require__(432);
+	var _n3Typeahead = __webpack_require__(448);
 	
 	var _n3Typeahead2 = _interopRequireDefault(_n3Typeahead);
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Tags = __webpack_require__(451);
+	var _n3Tags = __webpack_require__(467);
 	
 	var _n3Tags2 = _interopRequireDefault(_n3Tags);
 	
-	var _n3Breadcrumb = __webpack_require__(454);
+	var _n3Breadcrumb = __webpack_require__(470);
 	
 	var _n3Breadcrumb2 = _interopRequireDefault(_n3Breadcrumb);
 	
-	var _n3BreadcrumbItem = __webpack_require__(457);
+	var _n3BreadcrumbItem = __webpack_require__(473);
 	
 	var _n3BreadcrumbItem2 = _interopRequireDefault(_n3BreadcrumbItem);
 	
-	var _n3Form = __webpack_require__(460);
+	var _n3Form = __webpack_require__(476);
 	
 	var _n3Form2 = _interopRequireDefault(_n3Form);
 	
-	var _n3FormItem = __webpack_require__(463);
+	var _n3FormItem = __webpack_require__(479);
 	
 	var _n3FormItem2 = _interopRequireDefault(_n3FormItem);
 	
-	var _n3Slider = __webpack_require__(353);
+	var _n3Slider = __webpack_require__(369);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Slide = __webpack_require__(466);
+	var _n3Slide = __webpack_require__(482);
 	
 	var _n3Slide2 = _interopRequireDefault(_n3Slide);
 	
-	__webpack_require__(469);
+	var _n3Uploader = __webpack_require__(485);
+	
+	var _n3Uploader2 = _interopRequireDefault(_n3Uploader);
+	
+	var _transition = __webpack_require__(488);
+	
+	var _transition2 = _interopRequireDefault(_transition);
+	
+	__webpack_require__(489);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22182,10 +22628,11 @@
 	  n3Datepicker: _n3Datepicker2.default,
 	  n3Timepicker: _n3Timepicker2.default,
 	  n3Datetimepicker: _n3Datetimepicker2.default,
+	  n3Uploader: _n3Uploader2.default,
 	  n3Cascader: _n3Cascader2.default,
 	  n3Label: _n3Label2.default,
 	  n3Input: _n3Input2.default,
-	  n3Toast: _n3Toast2.default,
+	  n3Textarea: _n3Textarea2.default,
 	  n3Dropdown: _n3Dropdown2.default,
 	  n3Modal: _n3Modal2.default,
 	  n3Option: _n3Option2.default,
@@ -22223,6 +22670,10 @@
 	    Vue.component(i, Components[i]);
 	  }
 	
+	  for (var _i in _transition2.default) {
+	    Vue.transition(_i, _transition2.default[_i]);
+	  }
+	
 	  Vue.mixin({
 	    methods: {
 	      n3Toast: _n3ToastMethod2.default
@@ -22239,13 +22690,13 @@
 	module.exports = Components;
 
 /***/ },
-/* 306 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(307)
+	module.exports = __webpack_require__(320)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(309)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(322)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -22263,7 +22714,7 @@
 	}
 
 /***/ },
-/* 307 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22272,11 +22723,11 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
@@ -22413,7 +22864,7 @@
 	// </script>
 
 /***/ },
-/* 308 */
+/* 321 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22452,19 +22903,19 @@
 	exports.default = EventListener;
 
 /***/ },
-/* 309 */
+/* 322 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-carousel {{prefixCls}}-slide\">\n  <ol class=\"{{prefixCls}}-carousel-indicators\" v-show=\"indicators\">\n    <li v-for=\"i in indicator\" \n      transition=\"fade\"\n      @click=\"handleIndicatorClick($index)\" \n      :class=\"[$index === activeIndex ? prefixCls + '-carousel-active'  : '']\">\n    </li>\n  </ol>\n  <div class=\"{{prefixCls}}-carousel-inner\">\n    <slot></slot>\n  </div>\n  <a v-show=\"controls\" class=\"{{prefixCls}}-carousel-left {{prefixCls}}-carousel-control\" @click=\"prevClick\">\n    <n3-icon type=\"chevron-left\"></n3-icon>\n  </a>\n  <a v-show=\"controls\" class=\"{{prefixCls}}-carousel-right {{prefixCls}}-carousel-control\" @click=\"nextClick\">\n    <n3-icon type=\"chevron-right\"></n3-icon>\n  </a>\n</div>";
 
 /***/ },
-/* 310 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(311)
+	module.exports = __webpack_require__(324)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(312)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(325)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -22482,7 +22933,7 @@
 	}
 
 /***/ },
-/* 311 */
+/* 324 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22491,7 +22942,7 @@
 	  value: true
 	});
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -22506,19 +22957,21 @@
 	    onChange: {
 	      type: Function
 	    },
+	    effect: {
+	      type: String,
+	      default: 'collapse'
+	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
 	    }
 	  },
-	  created: function created() {
-	    var _this = this;
-	
-	    this.$on('isOpenEvent', function (child) {
-	      var children = _this.$children;
+	  events: {
+	    'n3@paneltoggle': function n3Paneltoggle(child) {
+	      var children = this.$children;
 	      var ret = [];
 	
-	      if (_this.oneAtATime) {
+	      if (this.oneAtATime) {
 	        children.forEach(function (item) {
 	          if (child !== item) {
 	            item.isOpen = false;
@@ -22535,10 +22988,10 @@
 	          });
 	        }
 	      });
-	      if (_getType2.default.isFunction(_this.onChange)) {
-	        _this.onChange(ret);
+	      if (_getType2.default.isFunction(this.onChange)) {
+	        this.onChange(ret);
 	      }
-	    });
+	    }
 	  }
 	};
 	// </script>
@@ -22551,19 +23004,19 @@
 	// <script>
 
 /***/ },
-/* 312 */
+/* 325 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-panel-group\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 313 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(314)
+	module.exports = __webpack_require__(327)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(315)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(328)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -22581,7 +23034,7 @@
 	}
 
 /***/ },
-/* 314 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22590,7 +23043,7 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
@@ -22681,19 +23134,19 @@
 	// <script>
 
 /***/ },
-/* 315 */
+/* 328 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n<div :style=\"styles\">\n  <slot></slot>\n</div>\n</div>";
 
 /***/ },
-/* 316 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(317)
+	module.exports = __webpack_require__(330)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(319)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(332)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -22711,7 +23164,7 @@
 	}
 
 /***/ },
-/* 317 */
+/* 330 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22720,15 +23173,15 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _getScrollBarWidth = __webpack_require__(318);
+	var _getScrollBarWidth = __webpack_require__(331);
 	
 	var _getScrollBarWidth2 = _interopRequireDefault(_getScrollBarWidth);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -22840,7 +23293,7 @@
 	// <script>
 
 /***/ },
-/* 318 */
+/* 331 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22876,19 +23329,19 @@
 	};
 
 /***/ },
-/* 319 */
+/* 332 */
 /***/ function(module, exports) {
 
 	module.exports = "<div \n    :style=\"{width:width}\"\n    :class=\"classObj\"\n    v-show=\"show\"\n    :transition=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\n    <div class=\"{{prefixCls}}-aside-dialog\">\n      <div class=\"{{prefixCls}}-aside-content\">\n        <div class=\"{{prefixCls}}-aside-header\">\n          <button type=\"button\" class=\"{{prefixCls}}-close\" @click='close'><span>&times;</span></button>\n          <h4 class=\"{{prefixCls}}-aside-title\">{{header}}</h4>\n        </div>\n        <div class=\"{{prefixCls}}-aside-body\">\n          <slot></slot>\n        </div>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
-/* 320 */
+/* 333 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(321)
+	module.exports = __webpack_require__(334)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(332)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(345)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -22906,7 +23359,7 @@
 	}
 
 /***/ },
-/* 321 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22915,19 +23368,19 @@
 	  value: true
 	});
 	
-	var _n3Checkbox = __webpack_require__(322);
+	var _n3Checkbox = __webpack_require__(335);
 	
 	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
 	
-	var _n3CheckboxBtn = __webpack_require__(325);
+	var _n3CheckboxBtn = __webpack_require__(338);
 	
 	var _n3CheckboxBtn2 = _interopRequireDefault(_n3CheckboxBtn);
 	
-	var _valMixin = __webpack_require__(328);
+	var _valMixin = __webpack_require__(341);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(329);
+	var _validate = __webpack_require__(342);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -22962,6 +23415,7 @@
 	//     <validate
 	//       :name="name"
 	//       :rules="rules"
+	//       :valid-status.sync="validStatus"
 	//       :custom-validate="customValidate" 
 	//       :value="value"
 	//       :results.sync="validateResults">
@@ -23018,13 +23472,13 @@
 	// </script>
 
 /***/ },
-/* 322 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(323)
+	module.exports = __webpack_require__(336)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(324)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(337)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -23042,7 +23496,7 @@
 	}
 
 /***/ },
-/* 323 */
+/* 336 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -23127,19 +23581,19 @@
 	// </script>
 
 /***/ },
-/* 324 */
+/* 337 */
 /***/ function(module, exports) {
 
 	module.exports = "<label :class=\"wrapClass\">\n  <span>\n    <span class=\"{{prefixCls}}-checkbox-inner\"></span>\n    <input\n      type=\"checkbox\"\n      class=\"{{prefixCls}}-checkbox-input\"\n      :disabled=\"disabled\"\n      :checked=\"!!checked\"\n      @click=\"handleClick\"/>\n  </span>\n  <span><slot></slot></span>  \n</label>";
 
 /***/ },
-/* 325 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(326)
+	module.exports = __webpack_require__(339)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(327)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(340)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -23157,7 +23611,7 @@
 	}
 
 /***/ },
-/* 326 */
+/* 339 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23166,7 +23620,7 @@
 	  value: true
 	});
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
@@ -23248,16 +23702,16 @@
 	// <script>
 
 /***/ },
-/* 327 */
+/* 340 */
 /***/ function(module, exports) {
 
 	module.exports = "<n3-button \n    @click.prevent=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :active=\"active\"\n    :type=\"type\">\n    <slot></slot>\n  </n3-button>";
 
 /***/ },
-/* 328 */
+/* 341 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -23272,6 +23726,11 @@
 	    },
 	    rules: {
 	      type: Array
+	    },
+	    validStatus: {
+	      type: String,
+	      twoway: true,
+	      default: ''
 	    }
 	  },
 	  data: function data() {
@@ -23282,13 +23741,13 @@
 	};
 
 /***/ },
-/* 329 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(330)
+	module.exports = __webpack_require__(343)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(331)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(344)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -23306,7 +23765,7 @@
 	}
 
 /***/ },
-/* 330 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23322,7 +23781,7 @@
 	// <script>
 	
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -23593,25 +24052,25 @@
 	// </script>
 
 /***/ },
-/* 331 */
+/* 344 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-err-tip\" v-if=\"validate && tips\" >{{tips}}</div>";
 
 /***/ },
-/* 332 */
+/* 345 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-checkbox-group\">\n    <template v-if=\"options\">\n        <n3-checkbox \n          v-if=\"type==='checkbox'\" \n          v-for=\"item in options\"\n          :value=\"item.value\"\n          :checked=\"item.checked\"\n          :disabled=\"item.disabled\">\n          {{item.label}}\n        </n3-checkbox>\n\n         <n3-checkbox-btn \n         v-if=\"type==='button'\" \n         v-for=\"item in options\"\n         :value=\"item.value\"\n         :checked=\"item.checked\"\n         :disabled=\"item.disabled\">\n         {{item.label}}\n        </n3-checkbox-btn>\n\n    </template>\n    <template v-else>\n    <slot></slot>\n    </template>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-checkbox-group\">\n    <template v-if=\"options\">\n        <n3-checkbox \n          v-if=\"type==='checkbox'\" \n          v-for=\"item in options\"\n          :value=\"item.value\"\n          :checked=\"item.checked\"\n          :disabled=\"item.disabled\">\n          {{item.label}}\n        </n3-checkbox>\n\n         <n3-checkbox-btn \n         v-if=\"type==='button'\" \n         v-for=\"item in options\"\n         :value=\"item.value\"\n         :checked=\"item.checked\"\n         :disabled=\"item.disabled\">\n         {{item.label}}\n        </n3-checkbox-btn>\n\n    </template>\n    <template v-else>\n    <slot></slot>\n    </template>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :valid-status.sync=\"validStatus\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n\n  </div>";
 
 /***/ },
-/* 333 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(334)
+	module.exports = __webpack_require__(347)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(340)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(353)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -23629,7 +24088,7 @@
 	}
 
 /***/ },
-/* 334 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23638,19 +24097,19 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(337);
+	var _inputMixin = __webpack_require__(350);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -23855,13 +24314,13 @@
 	// </script>
 
 /***/ },
-/* 335 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(336)
+	module.exports = __webpack_require__(349)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(339)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(352)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -23879,7 +24338,7 @@
 	}
 
 /***/ },
-/* 336 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23888,23 +24347,23 @@
 	  value: true
 	});
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _inputMixin = __webpack_require__(337);
+	var _inputMixin = __webpack_require__(350);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _validate = __webpack_require__(329);
+	var _validate = __webpack_require__(342);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _vueFocus = __webpack_require__(338);
+	var _vueFocus = __webpack_require__(351);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -23938,9 +24397,7 @@
 	  },
 	  data: function data() {
 	    return {
-	      focused: false,
-	      validateResults: {},
-	      validStatus: ''
+	      validateResults: {}
 	    };
 	  },
 	
@@ -23963,12 +24420,6 @@
 	    }
 	  },
 	
-	  events: {
-	    'n3Input@focus': function n3InputFocus() {
-	      this.focused = true;
-	    }
-	  },
-	
 	  methods: {
 	    blur: function blur() {
 	      if (_getType2.default.isFunction(this.onBlur)) {
@@ -23986,11 +24437,11 @@
 	// <template>
 	// <div :class="classObj" >
 	//   <input  
+	//    class="{{prefixCls}}-form-control"  
 	//    :style="{'width':width}"
 	//    :readonly="readonly"
 	//    :disabled="disabled"
-	//    class="{{prefixCls}}-form-control"  
-	//    placeholder="{{placeholder}}" 
+	//    :placeholder="placeholder" 
 	//    @blur="blur"
 	//    @focus="focus"
 	//    v-focus-model="focused" 
@@ -24024,7 +24475,7 @@
 	// <script>
 
 /***/ },
-/* 337 */
+/* 350 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24051,23 +24502,33 @@
 	    customValidate: {
 	      type: Function
 	    },
+	    validStatus: {
+	      type: String,
+	      twoway: true,
+	      default: ''
+	    },
 	    rules: {
 	      type: Array
 	    },
 	    hasFeedback: {
 	      type: Boolean,
 	      default: true
+	    },
+	    focused: {
+	      type: Boolean,
+	      twoway: true,
+	      default: false
 	    }
 	  }
 	};
 
 /***/ },
-/* 338 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
 	
-	var Vue = __webpack_require__(303);
+	var Vue = __webpack_require__(316);
 	var Vue__default = 'default' in Vue ? Vue['default'] : Vue;
 	
 	// @NOTE: We have to use Vue.nextTick because the element might not be
@@ -24192,28 +24653,69 @@
 	exports.focusModel = focusModel;
 	exports.focusAuto = focusAuto;
 	exports.mixin = mixin;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(304)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(317)))
 
 /***/ },
-/* 339 */
+/* 352 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\n  <input  \n   :style=\"{'width':width}\"\n   :readonly=\"readonly\"\n   :disabled=\"disabled\"\n   class=\"{{prefixCls}}-form-control\"  \n   placeholder=\"{{placeholder}}\" \n   @blur=\"blur\"\n   @focus=\"focus\"\n   v-focus-model=\"focused\" \n   v-model=\"value\"  />\n  <n3-icon \n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"success\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon \n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"warning\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon \n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"error\" && hasFeedback'>\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    :valid-status.sync=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n   \n</div>";
+	module.exports = "<div :class=\"classObj\" >\n  <input  \n   class=\"{{prefixCls}}-form-control\"  \n   :style=\"{'width':width}\"\n   :readonly=\"readonly\"\n   :disabled=\"disabled\"\n   :placeholder=\"placeholder\" \n   @blur=\"blur\"\n   @focus=\"focus\"\n   v-focus-model=\"focused\" \n   v-model=\"value\"  />\n  <n3-icon \n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"success\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon \n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"warning\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon \n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"error\" && hasFeedback'>\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    :valid-status.sync=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n   \n</div>";
 
 /***/ },
-/* 340 */
+/* 353 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-cascader\">\n    <span class=\"{{prefixCls}}-cascader-picker\">\n      <n3-input \n        :width=\"width\"\n        :name=\"name\" \n        :rules=\"rules\" \n        :validate=\"validate\" \n        :has-feedback=\"hasFeedback\"\n        :placeholder=\"placeholder\"\n        :custom-validate=\"customValidate\"\n        :value.sync=\"displayValue\"\n        :readonly=\"true\"\n        :disabled=\"disabled\"\n        @click=\"toggleMenus\">\n      </n3-input>\n    </span>\n    <div class=\"{{prefixCls}}-cascader-menus\" v-show=\"show\" transition=\"fadeDown\">\n      <ul class=\"{{prefixCls}}-cascader-menu\" v-for=\"(index, menu) in menus\">\n        <li :class=\"itemClass(index,option)\" \n          v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n        </li>\n      </ul>\n    </div>\n  </div>";
 
 /***/ },
-/* 341 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(342)
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	exports.default = function (obj) {
+	  var instance = new n3Toast({
+	    el: document.createElement('div')
+	  });
+	
+	  instance.placement = obj.placement || 'center';
+	  instance.type = obj.type || 'default';
+	  instance.closeOnClick = obj.closeOnClick;
+	  instance.duration = obj.duration === undefined ? 3000 : obj.duration;
+	  instance.width = obj.width;
+	  instance.text = obj.text;
+	
+	  _vue2.default.nextTick(function () {
+	    instance.$appendTo(document.body);
+	    instance.show = true;
+	    if (instance.duration > 0) {
+	      setTimeout(function () {
+	        instance.$remove();
+	      }, instance.duration);
+	    }
+	  });
+	};
+	
+	var _vue = __webpack_require__(316);
+	
+	var _vue2 = _interopRequireDefault(_vue);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var n3Toast = _vue2.default.extend(__webpack_require__(355));
+
+/***/ },
+/* 355 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(356)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(343)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(357)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -24231,7 +24733,7 @@
 	}
 
 /***/ },
-/* 342 */
+/* 356 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24244,7 +24746,6 @@
 	//     v-el:dom
 	//     :class="classObj"
 	// 		transition="fade"
-	//     :style="{width:width}"
 	// 		@click="handleClick"
 	// 		v-if="show">
 	// 		<h5>{{text}}</h5>
@@ -24351,60 +24852,19 @@
 	// </script>
 
 /***/ },
-/* 343 */
+/* 357 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \n    v-el:dom\n    :class=\"classObj\"\n\t\ttransition=\"fade\"\n    :style=\"{width:width}\"\n\t\t@click=\"handleClick\"\n\t\tv-if=\"show\">\n\t\t<h5>{{text}}</h5>\n\t</div>";
+	module.exports = "<div \n    v-el:dom\n    :class=\"classObj\"\n\t\ttransition=\"fade\"\n\t\t@click=\"handleClick\"\n\t\tv-if=\"show\">\n\t\t<h5>{{text}}</h5>\n\t</div>";
 
 /***/ },
-/* 344 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	exports.default = function (obj) {
-	  var instance = new n3Toast({
-	    el: document.createElement('div')
-	  });
-	
-	  instance.placement = obj.placement || 'center';
-	  instance.type = obj.type || 'default';
-	  instance.closeOnClick = obj.closeOnClick;
-	  instance.duration = obj.duration === undefined ? 3000 : obj.duration;
-	  instance.width = obj.width;
-	  instance.text = obj.text;
-	
-	  _vue2.default.nextTick(function () {
-	    instance.$appendTo(document.body);
-	    instance.show = true;
-	    if (instance.duration > 0) {
-	      setTimeout(function () {
-	        instance.$remove();
-	      }, instance.duration);
-	    }
-	  });
-	};
-	
-	var _vue = __webpack_require__(303);
-	
-	var _vue2 = _interopRequireDefault(_vue);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var n3Toast = _vue2.default.extend(__webpack_require__(341));
-
-/***/ },
-/* 345 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(346)
+	module.exports = __webpack_require__(359)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(347)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(360)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -24422,7 +24882,7 @@
 	}
 
 /***/ },
-/* 346 */
+/* 359 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -24471,19 +24931,186 @@
 	// </script>
 
 /***/ },
-/* 347 */
+/* 360 */
 /***/ function(module, exports) {
 
 	module.exports = "<span :class=\"classObj\">\n\t\t<slot></slot>\n\t</span>";
 
 /***/ },
-/* 348 */
+/* 361 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(349)
+	module.exports = __webpack_require__(362)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(350)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(363)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 362 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _validate = __webpack_require__(342);
+	
+	var _validate2 = _interopRequireDefault(_validate);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	  props: {
+	    name: {
+	      type: String
+	    },
+	    disabled: {
+	      type: Boolean
+	    },
+	    readonly: {
+	      type: Boolean
+	    },
+	    placeholder: {
+	      type: String,
+	      default: ''
+	    },
+	    resize: {
+	      type: Boolean,
+	      default: true
+	    },
+	    width: {
+	      type: String,
+	      default: '220px'
+	    },
+	    maxLength: {
+	      type: Number
+	    },
+	    maxHeight: {
+	      type: String
+	    },
+	    minHeight: {
+	      type: String
+	    },
+	    value: {
+	      type: String,
+	      twoway: true
+	    },
+	    validStatus: {
+	      type: String,
+	      twoway: true,
+	      default: ''
+	    },
+	    customValidate: {
+	      type: Function
+	    },
+	    rules: {
+	      type: Array
+	    },
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  },
+	  data: function data() {
+	    return {
+	      validateResults: {}
+	    };
+	  },
+	
+	  components: {
+	    validate: _validate2.default
+	  },
+	  computed: {
+	    styleObj: function styleObj() {
+	      var resize = this.resize;
+	      var maxHeight = this.maxHeight;
+	      var minHeight = this.minHeight;
+	
+	      var style = {};
+	
+	      style['maxWidth'] = '100%';
+	      style['maxHeight'] = maxHeight;
+	      style['minHeight'] = minHeight;
+	      !resize ? style['resize'] = 'none' : '';
+	
+	      return style;
+	    },
+	    classObj: function classObj() {
+	      var prefixCls = this.prefixCls;
+	      var validStatus = this.validStatus;
+	
+	      var klass = {};
+	
+	      klass[prefixCls + '-has-error'] = validStatus === 'error';
+	      klass[prefixCls + '-has-success'] = validStatus === 'success';
+	      klass[prefixCls + '-has-warn'] = validStatus === 'warn';
+	
+	      klass[prefixCls + '-textarea-con'] = true;
+	      klass['inline'] = true;
+	
+	      return klass;
+	    }
+	  }
+	};
+	// </script>
+	// <template>
+	// <div :class="classObj" :style="{width:width}">
+	//   <textarea
+	//     class="{{prefixCls}}-form-control"  
+	//     :disabled="disabled"
+	//     :readonly="readonly"
+	//     :maxlength="maxLength"
+	//     :style="styleObj"
+	//     :name="name"
+	//     :placeholder="placeholder"
+	//     v-model="value">
+	//   </textarea>
+	
+	//   <validate
+	//     :name="name"
+	//     :valid-status.sync="validStatus"
+	//     :rules="rules"
+	//     :custom-validate="customValidate" 
+	//     :value="value"
+	//     :results.sync="validateResults">
+	//   </validate>
+	
+	// </div>
+	// </template>
+	
+	// <script>
+
+/***/ },
+/* 363 */
+/***/ function(module, exports) {
+
+	module.exports = "<div :class=\"classObj\" :style=\"{width:width}\">\n  <textarea\n    class=\"{{prefixCls}}-form-control\"  \n    :disabled=\"disabled\"\n    :readonly=\"readonly\"\n    :maxlength=\"maxLength\"\n    :style=\"styleObj\"\n    :name=\"name\"\n    :placeholder=\"placeholder\"\n    v-model=\"value\">\n  </textarea>\n\n  <validate\n    :name=\"name\"\n    :valid-status.sync=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n\n</div>";
+
+/***/ },
+/* 364 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(365)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(366)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -24501,7 +25128,7 @@
 	}
 
 /***/ },
-/* 349 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24510,19 +25137,19 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(337);
+	var _inputMixin = __webpack_require__(350);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -24669,8 +25296,6 @@
 	      this.getDateRange();
 	    },
 	    value: function value(val) {
-	      this.$dispatch('change', val);
-	
 	      if (_getType2.default.isFunction(this.onChange)) {
 	        this.onChange(this.value);
 	      }
@@ -24923,19 +25548,19 @@
 	// </script>
 
 /***/ },
-/* 350 */
+/* 366 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-datepicker\">\n    <n3-input \n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"true\"\n    :disabled=\"disabled\"\n    @click=\"inputClick\"\n    :value.sync=\"value\">\n    </n3-input>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayDayView\" transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\">\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span \n                        v-for=\"d in dateRange\" :class=\"d.sclass\" \n                        @click=\"daySelect(d.date,d.sclass)\">\n                        {{d.text}}\n                      </span>\n                  </div>\n              </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayMouthView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span   \n                          :class=\"monthClassObj(m)\"\n                          @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayYearView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span \n                      :class=\"yearClassObj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                 \t</span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
-/* 351 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(352)
+	module.exports = __webpack_require__(368)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(360)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(376)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -24953,7 +25578,7 @@
 	}
 
 /***/ },
-/* 352 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24962,71 +25587,28 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _getType = __webpack_require__(174);
+	
+	var _getType2 = _interopRequireDefault(_getType);
+	
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Slider = __webpack_require__(353);
+	var _n3Slider = __webpack_require__(369);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(337);
+	var _inputMixin = __webpack_require__(350);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	//   <div class="{{prefixCls}}-timepicker">
-	//     <n3-input 
-	//       :width="width"
-	//       :name="name" 
-	//       :rules="rules" 
-	//       :validate="validate" 
-	//       :has-feedback="hasFeedback"
-	//       :placeholder="placeholder"
-	//       :custom-validate="customValidate"
-	//       :readonly="true"
-	//       :disabled="disabled"
-	//       @click="inputClick"
-	//       :value.sync="value">
-	//     </n3-input>
-	//     <div class="{{prefixCls}}-timepicker-popup" v-show="show" transition="fadeDown">
-	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
-	//         <n3-slider 
-	//           :value.sync="time.hour" 
-	//           orientation="vertical" 
-	//           :max="hourRange[1]" :min="hourRange[0]"  
-	//           class="{{prefixCls}}-timepicker-slider">
-	//         </n3-slider>
-	//       </div>
-	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
-	//         <n3-slider 
-	//           :value.sync="time.minute" 
-	//           orientation="vertical" 
-	//           :max="minuteRange[1]" 
-	//           :min="minuteRange[0]"  
-	//           class="{{prefixCls}}-timepicker-slider">
-	//         </n3-slider>
-	//       </div>
-	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
-	//         <n3-slider 
-	//           :value.sync="time.second" 
-	//           orientation="vertical" 
-	//           :max="secondRange[1]" 
-	//           :min="secondRange[0]" 
-	//           class="{{prefixCls}}-timepicker-slider">
-	//         </n3-slider>
-	//       </div>
-	//     </div>
-	//   </div>
-	// </template>
-	
-	// <script>
 	exports.default = {
 	  mixins: [_inputMixin2.default],
 	  props: {
@@ -25056,6 +25638,9 @@
 	        return [0, 59];
 	      }
 	    },
+	    onHide: {
+	      type: Function
+	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -25073,7 +25658,7 @@
 	  },
 	  watch: {
 	    show: function show(val) {
-	      if (!val) this.$dispatch('hide', this.value);
+	      if (!val && _getType2.default.isFunction(this.onHide)) this.onHide(this.value);
 	    },
 	
 	    time: {
@@ -25173,15 +25758,62 @@
 	  }
 	};
 	// </script>
+	// <template>
+	//   <div class="{{prefixCls}}-timepicker">
+	//     <n3-input 
+	//       :width="width"
+	//       :name="name" 
+	//       :rules="rules" 
+	//       :validate="validate" 
+	//       :has-feedback="hasFeedback"
+	//       :placeholder="placeholder"
+	//       :custom-validate="customValidate"
+	//       :readonly="true"
+	//       :disabled="disabled"
+	//       @click="inputClick"
+	//       :value.sync="value">
+	//     </n3-input>
+	//     <div class="{{prefixCls}}-timepicker-popup" v-show="show" transition="fadeDown">
+	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
+	//         <n3-slider 
+	//           :value.sync="time.hour" 
+	//           orientation="vertical" 
+	//           :max="hourRange[1]" :min="hourRange[0]"  
+	//           class="{{prefixCls}}-timepicker-slider">
+	//         </n3-slider>
+	//       </div>
+	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
+	//         <n3-slider 
+	//           :value.sync="time.minute" 
+	//           orientation="vertical" 
+	//           :max="minuteRange[1]" 
+	//           :min="minuteRange[0]"  
+	//           class="{{prefixCls}}-timepicker-slider">
+	//         </n3-slider>
+	//       </div>
+	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
+	//         <n3-slider 
+	//           :value.sync="time.second" 
+	//           orientation="vertical" 
+	//           :max="secondRange[1]" 
+	//           :min="secondRange[0]" 
+	//           class="{{prefixCls}}-timepicker-slider">
+	//         </n3-slider>
+	//       </div>
+	//     </div>
+	//   </div>
+	// </template>
+	
+	// <script>
 
 /***/ },
-/* 353 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(354)
+	module.exports = __webpack_require__(370)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(359)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(375)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -25199,7 +25831,7 @@
 	}
 
 /***/ },
-/* 354 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25208,23 +25840,23 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Tooltip = __webpack_require__(355);
+	var _n3Tooltip = __webpack_require__(371);
 	
 	var _n3Tooltip2 = _interopRequireDefault(_n3Tooltip);
 	
-	var _valMixin = __webpack_require__(328);
+	var _valMixin = __webpack_require__(341);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(329);
+	var _validate = __webpack_require__(342);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -25529,6 +26161,7 @@
 	//   <validate
 	//     :name="name"
 	//     :rules="rules"
+	//     :valid-status.sync="validStatus"
 	//     :custom-validate="customValidate" 
 	//     :value="value"
 	//     :results.sync="validateResults">
@@ -25539,13 +26172,13 @@
 	// <script>
 
 /***/ },
-/* 355 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(356)
+	module.exports = __webpack_require__(372)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(358)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(374)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -25563,7 +26196,7 @@
 	}
 
 /***/ },
-/* 356 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25572,7 +26205,7 @@
 	  value: true
 	});
 	
-	var _popoverMixins = __webpack_require__(357);
+	var _popoverMixins = __webpack_require__(373);
 	
 	var _popoverMixins2 = _interopRequireDefault(_popoverMixins);
 	
@@ -25625,7 +26258,7 @@
 	// <script>
 
 /***/ },
-/* 357 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25634,11 +26267,11 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -25801,31 +26434,31 @@
 	exports.default = PopoverMixin;
 
 /***/ },
-/* 358 */
+/* 374 */
 /***/ function(module, exports) {
 
 	module.exports = "<span >\n  <span v-el:trigger >\n    <slot>\n    </slot>\n  </span>\n  <div :class=\"classObj\"\n    v-el:popover\n    v-show=\"show\"\n    :transition=\"effect\">\n    <div class=\"{{prefixCls}}-tooltip-arrow\"></div>\n    <div class=\"{{prefixCls}}-tooltip-inner\">\n      {{{content}}}\n    </div>\n  </div>\n</span>";
 
 /***/ },
-/* 359 */
+/* 375 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\n    <div :class=\"classObj\" v-el:slider>\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\n        <div class=\"{{prefixCls}}-slider-track\">\n          <div class=\"{{prefixCls}}-slider-track-low\"></div>\n          <div class=\"{{prefixCls}}-slider-selection\" v-el:selection></div>\n          <div class=\"{{prefixCls}}-slider-track-high\" v-el:no-selection></div>\n          <div class=\"{{prefixCls}}-slider-handle {{prefixCls}}-slider-min-slider-handle {{prefixCls}}-slider-round\" v-el:min-slider></div>\n          <div class=\"{{prefixCls}}-slider-handle {{prefixCls}}-slider-max-slider-handle {{prefixCls}}-slider-round\" v-el:max-slider></div>\n        </div>\n      </n3-tooltip>\n    </div>\n  <input type=\"hidden\" v-model=\"value\">\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
+	module.exports = "<div class=\"inline\">\n    <div :class=\"classObj\" v-el:slider>\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\n        <div class=\"{{prefixCls}}-slider-track\">\n          <div class=\"{{prefixCls}}-slider-track-low\"></div>\n          <div class=\"{{prefixCls}}-slider-selection\" v-el:selection></div>\n          <div class=\"{{prefixCls}}-slider-track-high\" v-el:no-selection></div>\n          <div class=\"{{prefixCls}}-slider-handle {{prefixCls}}-slider-min-slider-handle {{prefixCls}}-slider-round\" v-el:min-slider></div>\n          <div class=\"{{prefixCls}}-slider-handle {{prefixCls}}-slider-max-slider-handle {{prefixCls}}-slider-round\" v-el:max-slider></div>\n        </div>\n      </n3-tooltip>\n    </div>\n  <input type=\"hidden\" v-model=\"value\">\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
 
 /***/ },
-/* 360 */
+/* 376 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-timepicker\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n    <div class=\"{{prefixCls}}-timepicker-popup\" v-show=\"show\" transition=\"fadeDown\">\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n        <n3-slider \n          :value.sync=\"time.hour\" \n          orientation=\"vertical\" \n          :max=\"hourRange[1]\" :min=\"hourRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n        <n3-slider \n          :value.sync=\"time.minute\" \n          orientation=\"vertical\" \n          :max=\"minuteRange[1]\" \n          :min=\"minuteRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n        <n3-slider \n          :value.sync=\"time.second\" \n          orientation=\"vertical\" \n          :max=\"secondRange[1]\" \n          :min=\"secondRange[0]\" \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
-/* 361 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(362)
+	module.exports = __webpack_require__(378)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(363)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(379)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -25843,7 +26476,7 @@
 	}
 
 /***/ },
-/* 362 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25852,23 +26485,23 @@
 	  value: true
 	});
 	
-	var _n3Slider = __webpack_require__(353);
+	var _n3Slider = __webpack_require__(369);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(337);
+	var _inputMixin = __webpack_require__(350);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -26433,19 +27066,19 @@
 	// <script>
 
 /***/ },
-/* 363 */
+/* 379 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker\" v-el:datetimepicker>\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n      <div \n        class=\"{{prefixCls}}-datepicker-popup\" \n        v-show=\"displayDayView\" \n        :style=\"{width:popWidth}\" \n        transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\">\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span v-for=\"d in dateRange\" \n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                  </div>\n              </div>\n          </div>\n          <div class=\"{{prefixCls}}-timepicker-con\">\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n              <n3-slider \n                :value.sync=\"time.hour\" \n                orientation=\"vertical\" \n                :max=\"hourRange[1]\" \n                :min=\"hourRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n              <n3-slider \n                :value.sync=\"time.minute\" \n                orientation=\"vertical\" \n                :max=\"minuteRange[1]\" \n                :min=\"minuteRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n              <n3-slider \n                :value.sync=\"time.second\" \n                orientation=\"vertical\" \n                :max=\"secondRange[1]\" \n                :min=\"secondRange[0]\" >\n              </n3-slider>\n            </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayMouthView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayYearView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
-/* 364 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(365)
+	module.exports = __webpack_require__(381)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(366)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(382)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26463,7 +27096,7 @@
 	}
 
 /***/ },
-/* 365 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26472,7 +27105,7 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
@@ -26491,6 +27124,10 @@
 	    clickClose: {
 	      type: Boolean,
 	      default: false
+	    },
+	    effect: {
+	      type: String,
+	      default: 'fadeDown'
 	    },
 	    prefixCls: {
 	      type: String,
@@ -26534,7 +27171,7 @@
 	//     <span v-el:trigger> 
 	//       <slot name="trigger" ></slot>
 	//     </span>
-	//     <ul class="{{prefixCls}}-dropdown-menu" v-show="show" transition="fadeDown">
+	//     <ul class="{{prefixCls}}-dropdown-menu" v-show="show" :transition="effect">
 	//       <slot></slot>
 	//     </ul>
 	//   </div>
@@ -26542,19 +27179,19 @@
 	// <script>
 
 /***/ },
-/* 366 */
+/* 382 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-dropdown-con\">   \n    <span v-el:trigger> \n      <slot name=\"trigger\" ></slot>\n    </span>\n    <ul class=\"{{prefixCls}}-dropdown-menu\" v-show=\"show\" transition=\"fadeDown\">\n      <slot></slot>\n    </ul>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-dropdown-con\">   \n    <span v-el:trigger> \n      <slot name=\"trigger\" ></slot>\n    </span>\n    <ul class=\"{{prefixCls}}-dropdown-menu\" v-show=\"show\" :transition=\"effect\">\n      <slot></slot>\n    </ul>\n  </div>";
 
 /***/ },
-/* 367 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(368)
+	module.exports = __webpack_require__(384)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(369)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(385)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26572,7 +27209,7 @@
 	}
 
 /***/ },
-/* 368 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26581,19 +27218,19 @@
 	  value: true
 	});
 	
-	var _getScrollBarWidth = __webpack_require__(318);
+	var _getScrollBarWidth = __webpack_require__(331);
 	
 	var _getScrollBarWidth2 = _interopRequireDefault(_getScrollBarWidth);
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -26738,19 +27375,19 @@
 	// </script>
 
 /***/ },
-/* 369 */
+/* 385 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\">\n    <div class=\"{{prefixCls}}-modal-dialog\" \n      :style=\"{'width': width}\">\n      <div class=\"{{prefixCls}}-modal-content\">\n        <slot name=\"header\">\n          <div class=\"{{prefixCls}}-modal-header\">\n            <button type=\"button\" class=\"{{prefixCls}}-close\" @click=\"close\"><span>&times;</span></button>\n            <h4 class=\"{{prefixCls}}-modal-title\" >{{title}}</h4>\n          </div>\n        </slot>\n        \n        <div class=\"{{prefixCls}}-modal-body\">\n          <slot name=\"body\"></slot>\n        </div>\n        \n        \n        <slot name=\"footer\">\n          <div class=\"{{prefixCls}}-modal-footer\">\n            <n3-button  @click=\"close\">取消</n3-button>\n            <n3-button type=\"primary\" @click=\"confirm\">确定</n3-button>\n          </div>\n        </slot>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
-/* 370 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(371)
+	module.exports = __webpack_require__(387)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(372)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(388)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26768,7 +27405,7 @@
 	}
 
 /***/ },
-/* 371 */
+/* 387 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -26797,19 +27434,19 @@
 	// </script>
 
 /***/ },
-/* 372 */
+/* 388 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :value=\"value\" class=\"{{prefixCls}}-option\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 373 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(374)
+	module.exports = __webpack_require__(390)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(375)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(391)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26827,7 +27464,7 @@
 	}
 
 /***/ },
-/* 374 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26836,7 +27473,7 @@
 	  value: true
 	});
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -26869,8 +27506,7 @@
 	  methods: {
 	    toggleIsOpen: function toggleIsOpen() {
 	      this.isOpen = !this.isOpen;
-	      this.$dispatch('isOpenEvent', this);
-	      this.$dispatch('toggle', this.isOpen);
+	      this.$dispatch('n3@paneltoggle', this);
 	
 	      if (_getType2.default.isFunction(this.onChange)) {
 	        this.onChange({
@@ -26901,7 +27537,7 @@
 	//       class="{{prefixCls}}-panel-collapse"
 	//       v-el:panel
 	//       v-show="isOpen"
-	//       transition="fadeDown">
+	//       :transition="$parent.effect">
 	//       <div class="{{prefixCls}}-panel-body">
 	//         <slot></slot>
 	//       </div>
@@ -26912,19 +27548,19 @@
 	// <script>
 
 /***/ },
-/* 375 */
+/* 391 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-panel {{prefixCls}}-panel-default\">\n    <div class=\"{{prefixCls}}-panel-heading\">\n      <h4 class=\"{{prefixCls}}-panel-title\">\n        <a @click=\"toggleIsOpen()\">\n           {{ header }}\n        </a>\n      </h4>\n    </div>\n    <div \n      class=\"{{prefixCls}}-panel-collapse\"\n      v-el:panel\n      v-show=\"isOpen\"\n      transition=\"fadeDown\">\n      <div class=\"{{prefixCls}}-panel-body\">\n        <slot></slot>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-panel {{prefixCls}}-panel-default\">\n    <div class=\"{{prefixCls}}-panel-heading\">\n      <h4 class=\"{{prefixCls}}-panel-title\">\n        <a @click=\"toggleIsOpen()\">\n           {{ header }}\n        </a>\n      </h4>\n    </div>\n    <div \n      class=\"{{prefixCls}}-panel-collapse\"\n      v-el:panel\n      v-show=\"isOpen\"\n      :transition=\"$parent.effect\">\n      <div class=\"{{prefixCls}}-panel-body\">\n        <slot></slot>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
-/* 376 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(377)
+	module.exports = __webpack_require__(393)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(378)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(394)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26942,7 +27578,7 @@
 	}
 
 /***/ },
-/* 377 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26951,7 +27587,7 @@
 	  value: true
 	});
 	
-	var _popoverMixins = __webpack_require__(357);
+	var _popoverMixins = __webpack_require__(373);
 	
 	var _popoverMixins2 = _interopRequireDefault(_popoverMixins);
 	
@@ -27007,19 +27643,19 @@
 	// <script>
 
 /***/ },
-/* 378 */
+/* 394 */
 /***/ function(module, exports) {
 
 	module.exports = "<span >\n    <span v-el:trigger >\n      <slot>\n      </slot>\n    </span>\n    <div \n      style=\"max-width:none\"\n      :class=\"classObj\"\n      v-el:popover\n      v-show=\"show\"\n      :transition=\"effect\">\n        <div class=\"{{prefixCls}}-popover-arrow\"></div>\n        <h3 class=\"{{prefixCls}}-popover-title\" v-show=\"header\">{{title}}</h3>\n        <div class=\"{{prefixCls}}-popover-content\" v-el:content>\n         <slot name=\"content\"></slot>\n        </div>\n    </div>\n</span>";
 
 /***/ },
-/* 379 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(380)
+	module.exports = __webpack_require__(396)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(381)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(397)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27037,7 +27673,7 @@
 	}
 
 /***/ },
-/* 380 */
+/* 396 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27046,11 +27682,11 @@
 	  value: true
 	});
 	
-	var _n3Popover = __webpack_require__(376);
+	var _n3Popover = __webpack_require__(392);
 	
 	var _n3Popover2 = _interopRequireDefault(_n3Popover);
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
@@ -27123,19 +27759,19 @@
 	// </script>
 
 /***/ },
-/* 381 */
+/* 397 */
 /***/ function(module, exports) {
 
 	module.exports = "<n3-popover \n\t\t:show.sync=\"show\"\n        :effect=\"effect\"\n        :header=\"false\" \n        :placement=\"placement\" \n        trigger=\"click\">\n        <div slot=\"content\">\n            <p>{{content}}</p>\n            <div style=\"float:right;margin:10px;\">\n            <n3-button size=\"sm\"  @click=\"show=false\">{{cancelText}}</n3-button>\n            <n3-button size=\"sm\" type=\"primary\" @click=\"confirm\">{{okText}}</n3-button>\n            </div>\n        </div> \n        <slot></slot>\n      </n3-popover>";
 
 /***/ },
-/* 382 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(383)
+	module.exports = __webpack_require__(399)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(384)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(400)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27153,7 +27789,7 @@
 	}
 
 /***/ },
-/* 383 */
+/* 399 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27164,7 +27800,7 @@
 	// <template>
 	// 	<div 
 	// 	  :class="classObj"
-	// 	  :style="{width: now + '%'}">
+	// 	  :style="{width: now + '%',height: height}">
 	// 	  {{label ? now + '%':'' }}
 	// 	</div>
 	// </template>
@@ -27172,6 +27808,10 @@
 	// <script>
 	exports.default = {
 	  props: {
+	    height: {
+	      type: String,
+	      default: '20px'
+	    },
 	    now: {
 	      type: Number,
 	      require: true
@@ -27217,19 +27857,19 @@
 	// </script>
 
 /***/ },
-/* 384 */
+/* 400 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \n\t  :class=\"classObj\"\n\t  :style=\"{width: now + '%'}\">\n\t  {{label ? now + '%':'' }}\n\t</div>";
+	module.exports = "<div \n\t  :class=\"classObj\"\n\t  :style=\"{width: now + '%',height: height}\">\n\t  {{label ? now + '%':'' }}\n\t</div>";
 
 /***/ },
-/* 385 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(386)
+	module.exports = __webpack_require__(402)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(387)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(403)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27247,7 +27887,7 @@
 	}
 
 /***/ },
-/* 386 */
+/* 402 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27272,19 +27912,19 @@
 	// </script>
 
 /***/ },
-/* 387 */
+/* 403 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-progress\">\n\t\t<slot></slot>\n\t</div>";
 
 /***/ },
-/* 388 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(389)
+	module.exports = __webpack_require__(405)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(390)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(406)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27302,7 +27942,7 @@
 	}
 
 /***/ },
-/* 389 */
+/* 405 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27380,19 +28020,19 @@
 	// </script>
 
 /***/ },
-/* 390 */
+/* 406 */
 /***/ function(module, exports) {
 
 	module.exports = "<label class=\"{{prefixCls}}-radio-con\">\n  <span :class=\"wrapClasses\">\n    <span class=\"{{prefixCls}}-radio-inner\"></span> \n    <input \n    type=\"radio\" \n    :disabled=\"disabled\"\n    :checked=\"!!checked\"\n    class=\"{{prefixCls}}-radio-input\" \n    @click.prevent=\"handleClick\" >\n  </span>\n  <span><slot></slot></span>\n</label>";
 
 /***/ },
-/* 391 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(392)
+	module.exports = __webpack_require__(408)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(393)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(409)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27410,7 +28050,7 @@
 	}
 
 /***/ },
-/* 392 */
+/* 408 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27419,7 +28059,7 @@
 	  value: true
 	});
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
@@ -27493,19 +28133,19 @@
 	// <script>
 
 /***/ },
-/* 393 */
+/* 409 */
 /***/ function(module, exports) {
 
 	module.exports = "<n3-button \n    @click.prevent=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :active=\"active\"\n    :type=\"type\">\n    <slot></slot>\n  </n3-button>";
 
 /***/ },
-/* 394 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(395)
+	module.exports = __webpack_require__(411)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(396)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(412)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27523,7 +28163,7 @@
 	}
 
 /***/ },
-/* 395 */
+/* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27532,19 +28172,19 @@
 	  value: true
 	});
 	
-	var _n3Radio = __webpack_require__(388);
+	var _n3Radio = __webpack_require__(404);
 	
 	var _n3Radio2 = _interopRequireDefault(_n3Radio);
 	
-	var _n3RadioBtn = __webpack_require__(391);
+	var _n3RadioBtn = __webpack_require__(407);
 	
 	var _n3RadioBtn2 = _interopRequireDefault(_n3RadioBtn);
 	
-	var _valMixin = __webpack_require__(328);
+	var _valMixin = __webpack_require__(341);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(329);
+	var _validate = __webpack_require__(342);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -27579,6 +28219,7 @@
 	//     <validate
 	//       :name="name"
 	//       :rules="rules"
+	//       :valid-status.sync="validStatus"
 	//       :custom-validate="customValidate" 
 	//       :value="value"
 	//       :results.sync="validateResults">
@@ -27632,19 +28273,19 @@
 	// </script>
 
 /***/ },
-/* 396 */
+/* 412 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-radio-group\">\n    <template v-if=\"options\">\n        <n3-radio \n          v-if=\"type==='checkbox'\" \n          v-for=\"item in options\"\n          :value=\"item.value\"\n          :checked=\"item.checked\"\n          :disabled=\"item.disabled\">\n          {{item.label}}\n        </n3-radio>\n\n         <n3-radio-btn \n         v-if=\"type==='button'\" \n         v-for=\"item in options\"\n         :value=\"item.value\"\n         :checked=\"item.checked\"\n         :disabled=\"item.disabled\">\n         {{item.label}}\n        </n3-radio-btn>\n\n    </template>\n    <template v-else>\n    <slot></slot>\n    </template>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-radio-group\">\n    <template v-if=\"options\">\n        <n3-radio \n          v-if=\"type==='checkbox'\" \n          v-for=\"item in options\"\n          :value=\"item.value\"\n          :checked=\"item.checked\"\n          :disabled=\"item.disabled\">\n          {{item.label}}\n        </n3-radio>\n\n         <n3-radio-btn \n         v-if=\"type==='button'\" \n         v-for=\"item in options\"\n         :value=\"item.value\"\n         :checked=\"item.checked\"\n         :disabled=\"item.disabled\">\n         {{item.label}}\n        </n3-radio-btn>\n\n    </template>\n    <template v-else>\n    <slot></slot>\n    </template>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :valid-status.sync=\"validStatus\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n\n  </div>";
 
 /***/ },
-/* 397 */
+/* 413 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(398)
+	module.exports = __webpack_require__(414)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(399)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(415)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27662,7 +28303,7 @@
 	}
 
 /***/ },
-/* 398 */
+/* 414 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27671,35 +28312,35 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(308);
+	var _EventListener = __webpack_require__(321);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3Badge = __webpack_require__(183);
+	var _n3Badge = __webpack_require__(190);
 	
 	var _n3Badge2 = _interopRequireDefault(_n3Badge);
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _valMixin = __webpack_require__(328);
+	var _valMixin = __webpack_require__(341);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(329);
+	var _validate = __webpack_require__(342);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -27762,6 +28403,7 @@
 	//     <validate
 	//       :name="name"
 	//       :rules="rules"
+	//       :valid-status.sync="validStatus"
 	//       :custom-validate="customValidate" 
 	//       :value="value"
 	//       :results.sync="validateResults">
@@ -27866,7 +28508,6 @@
 	
 	  watch: {
 	    value: function value() {
-	      this.$dispatch('change');
 	      if (_getType2.default.isFunction(this.onChange)) {
 	        this.onChange();
 	      }
@@ -28060,19 +28701,19 @@
 	// </script>
 
 /***/ },
-/* 399 */
+/* 415 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-select-group\" >\n    <n3-button  \n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      class=\"{{prefixCls}}-dropdown-toggle\"\n      @click=\"toggleDropdown\">\n\n      <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n      <span  v-if=\"showselected\" >\n        <template v-for=\"item in selectedItems\">\n          {{{format.call(this._context,item)}}}\n        </template>\n      </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n      <n3-badge v-if=\"badge\">{{badge}}</n3-badge>\n    </n3-button>\n    <ul \n      :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n      class=\"{{prefixCls}}-dropdown-menu\" \n      v-el:menu \n      v-show=\"show\" \n      transition=\"fadeDown\">\n        <li v-if=\"search\">\n          <n3-input\n            class=\"{{prefixCls}}-select-search\"\n            :placeholder=\"inputPlaceholder\"\n            :value.sync=\"searchText\"\n            @keydown.enter=\"addExtra\"\n          ></n3-input>\n          <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\n        </li>\n        <li v-if=\"multiple\" class=\"{{prefixCls}}-select-all\">\n          <a @click.prevent=\"selectAll\">\n            全选\n           <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n          </a>\n        </li>\n\n        <template v-if=\"options.length\">\n          <li v-for=\"option in options | filterSearch searchText \" \n              :value=\"option.value\" \n              style=\"position:relative\">\n            <a @click.prevent=\"select(option)\" >\n              {{{ option.label }}} \n              <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n            </a>\n          </li>\n        </template>\n        <slot v-else ></slot>\n      <div class=\"{{prefixCls}}-notify\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n    </ul>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-select-group\" >\n    <n3-button  \n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      class=\"{{prefixCls}}-dropdown-toggle\"\n      @click=\"toggleDropdown\">\n\n      <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n      <span  v-if=\"showselected\" >\n        <template v-for=\"item in selectedItems\">\n          {{{format.call(this._context,item)}}}\n        </template>\n      </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n      <n3-badge v-if=\"badge\">{{badge}}</n3-badge>\n    </n3-button>\n    <ul \n      :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n      class=\"{{prefixCls}}-dropdown-menu\" \n      v-el:menu \n      v-show=\"show\" \n      transition=\"fadeDown\">\n        <li v-if=\"search\">\n          <n3-input\n            class=\"{{prefixCls}}-select-search\"\n            :placeholder=\"inputPlaceholder\"\n            :value.sync=\"searchText\"\n            @keydown.enter=\"addExtra\"\n          ></n3-input>\n          <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\n        </li>\n        <li v-if=\"multiple\" class=\"{{prefixCls}}-select-all\">\n          <a @click.prevent=\"selectAll\">\n            全选\n           <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n          </a>\n        </li>\n\n        <template v-if=\"options.length\">\n          <li v-for=\"option in options | filterSearch searchText \" \n              :value=\"option.value\" \n              style=\"position:relative\">\n            <a @click.prevent=\"select(option)\" >\n              {{{ option.label }}} \n              <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n            </a>\n          </li>\n        </template>\n        <slot v-else ></slot>\n      <div class=\"{{prefixCls}}-notify\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n    </ul>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :valid-status.sync=\"validStatus\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n  </div>";
 
 /***/ },
-/* 400 */
+/* 416 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(401)
+	module.exports = __webpack_require__(417)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(402)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(418)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28090,7 +28731,7 @@
 	}
 
 /***/ },
-/* 401 */
+/* 417 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28166,19 +28807,19 @@
 	// </script>
 
 /***/ },
-/* 402 */
+/* 418 */
 /***/ function(module, exports) {
 
 	module.exports = "<div \n    :class=\"classObj\"\n    v-show=\"show\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 403 */
+/* 419 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(404)
+	module.exports = __webpack_require__(420)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(405)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(421)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28196,7 +28837,7 @@
 	}
 
 /***/ },
-/* 404 */
+/* 420 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28205,11 +28846,11 @@
 	  value: true
 	});
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
-	var _n3Badge = __webpack_require__(183);
+	var _n3Badge = __webpack_require__(190);
 	
 	var _n3Badge2 = _interopRequireDefault(_n3Badge);
 	
@@ -28308,7 +28949,11 @@
 	      return klass;
 	    },
 	    handleTabListClick: function handleTabListClick(index, el) {
-	      if (!el.disabled) this.activeIndex = index;
+	      if (!el.disabled) {
+	        this.activeIndex = index;
+	      } else {
+	        return;
+	      }
 	      if (_getType2.default.isFunction(this.onChange)) {
 	        this.onChange(index, el);
 	      }
@@ -28318,19 +28963,19 @@
 	// </script>
 
 /***/ },
-/* 405 */
+/* 421 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <ul :class=\"classObj\" >\n      <li\n          v-for=\"r in renderData\"\n          :class=\"liclassObj($index,r)\"\n          @click.prevent=\"handleTabListClick($index, r)\"\n          :disabled=\"r.disabled\">\n          <a href=\"#\">\n            {{r.header}}\n            <n3-badge v-if=\"r.badge\">{{r.badge}}</n3-badge>\n          </a>\n      </li>\n    </ul>\n    <div class=\"{{prefixCls}}-tab-content\" v-el:tabContent>\n      <slot></slot>\n    </div>\n  </div>";
 
 /***/ },
-/* 406 */
+/* 422 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(407)
+	module.exports = __webpack_require__(423)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(408)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(424)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28348,7 +28993,7 @@
 	}
 
 /***/ },
-/* 407 */
+/* 423 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28374,19 +29019,19 @@
 	// </script>
 
 /***/ },
-/* 408 */
+/* 424 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-btn-group\">\n    <slot></slot>  \n  </div>";
 
 /***/ },
-/* 409 */
+/* 425 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(410)
+	module.exports = __webpack_require__(426)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(411)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(427)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28404,7 +29049,7 @@
 	}
 
 /***/ },
-/* 410 */
+/* 426 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28446,19 +29091,19 @@
 	// </script>
 
 /***/ },
-/* 411 */
+/* 427 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\" >\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
-/* 412 */
+/* 428 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(413)
+	module.exports = __webpack_require__(429)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(414)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(430)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28476,7 +29121,7 @@
 	}
 
 /***/ },
-/* 413 */
+/* 429 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28501,19 +29146,19 @@
 	// </script>
 
 /***/ },
-/* 414 */
+/* 430 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-row\">\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
-/* 415 */
+/* 431 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(416)
+	module.exports = __webpack_require__(432)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(417)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(433)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28531,7 +29176,7 @@
 	}
 
 /***/ },
-/* 416 */
+/* 432 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28566,19 +29211,19 @@
 	// </script>
 
 /***/ },
-/* 417 */
+/* 433 */
 /***/ function(module, exports) {
 
 	module.exports = "<nav class=\"{{prefixCls}}-collapse {{prefixCls}}-navbar-collapse {{prefixCls}}-navbar-{{theme}} {{prefixCls}}-navbar-{{type}} clearfix\">\n\t\t<ul class=\"{{prefixCls}}-nav {{prefixCls}}-navbar-nav\">\n\t\t\t<slot></slot>\t\n\t\t</ul>\n\t</nav>";
 
 /***/ },
-/* 418 */
+/* 434 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(419)
+	module.exports = __webpack_require__(435)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(420)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(436)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28596,7 +29241,7 @@
 	}
 
 /***/ },
-/* 419 */
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28605,11 +29250,11 @@
 	  value: true
 	});
 	
-	var _n3Dropdown = __webpack_require__(364);
+	var _n3Dropdown = __webpack_require__(380);
 	
 	var _n3Dropdown2 = _interopRequireDefault(_n3Dropdown);
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
@@ -28617,7 +29262,7 @@
 	
 	// <template>
 	// <span>
-	//   <n3-dropdown :trigger="trigger" :show.sync="show" :click-close="true">
+	//   <n3-dropdown :trigger="trigger" :show.sync="show" :click-close="true" effect="collapse">
 	//     <div slot="trigger"   class="{{prefixCls}}-sub-nav-trigger" >
 	//       <slot name="title"></slot>
 	//       <n3-icon class="{{prefixCls}}-sub-nav-fa" :type="show ? 'angle-up' : 'angle-down'" ></n3-icon>
@@ -28651,19 +29296,19 @@
 	// </script>
 
 /***/ },
-/* 420 */
+/* 436 */
 /***/ function(module, exports) {
 
-	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show.sync=\"show\" :click-close=\"true\">\n    <div slot=\"trigger\"   class=\"{{prefixCls}}-sub-nav-trigger\" >\n      <slot name=\"title\"></slot>\n      <n3-icon class=\"{{prefixCls}}-sub-nav-fa\" :type=\"show ? 'angle-up' : 'angle-down'\" ></n3-icon>\n    </div>\n    <slot></slot>  \n  </n3-dropdown>\n</span>";
+	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show.sync=\"show\" :click-close=\"true\" effect=\"collapse\">\n    <div slot=\"trigger\"   class=\"{{prefixCls}}-sub-nav-trigger\" >\n      <slot name=\"title\"></slot>\n      <n3-icon class=\"{{prefixCls}}-sub-nav-fa\" :type=\"show ? 'angle-up' : 'angle-down'\" ></n3-icon>\n    </div>\n    <slot></slot>  \n  </n3-dropdown>\n</span>";
 
 /***/ },
-/* 421 */
+/* 437 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(422)
+	module.exports = __webpack_require__(438)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(423)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(439)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28681,7 +29326,7 @@
 	}
 
 /***/ },
-/* 422 */
+/* 438 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28726,19 +29371,19 @@
 	// </script>
 
 /***/ },
-/* 423 */
+/* 439 */
 /***/ function(module, exports) {
 
 	module.exports = "<li :class=\"classObj\">\n\t\t<slot></slot>\n\t</li>";
 
 /***/ },
-/* 424 */
+/* 440 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(425)
+	module.exports = __webpack_require__(441)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(426)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(442)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28756,7 +29401,7 @@
 	}
 
 /***/ },
-/* 425 */
+/* 441 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28806,19 +29451,19 @@
 	// </script>
 
 /***/ },
-/* 426 */
+/* 442 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\" >\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
-/* 427 */
+/* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(428)
+	module.exports = __webpack_require__(444)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(429)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(445)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28836,7 +29481,7 @@
 	}
 
 /***/ },
-/* 428 */
+/* 444 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28845,15 +29490,15 @@
 	  value: true
 	});
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
-	var _valMixin = __webpack_require__(328);
+	var _valMixin = __webpack_require__(341);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(329);
+	var _validate = __webpack_require__(342);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -28932,6 +29577,7 @@
 	//   <validate
 	//     :name="name"
 	//     :rules="rules"
+	//     :valid-status.sync="validStatus"
 	//     :custom-validate="customValidate" 
 	//     :value="value"
 	//     :results.sync="validateResults">
@@ -28942,19 +29588,19 @@
 	// <script>
 
 /***/ },
-/* 429 */
+/* 445 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\n  <div  :class=\"classObj\" @click=\"toggle\">\n    <div class=\"{{prefixCls}}-switch-container {{prefixCls}}-switch-on-primary {{prefixCls}}-switch-off-default\">\n      <span class=\"{{prefixCls}}-switch-handle-on {{prefixCls}}-switch-primary\" >{{ontext}}</span>\n      <span class=\"{{prefixCls}}-switch-label\" >&nbsp;</span>\n      <span class=\"{{prefixCls}}-switch-handle-off {{prefixCls}}-switch-default\" >{{offtext}}</span>\n    </div>\n  </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n<div>\n</template>";
+	module.exports = "<div class=\"inline\">\n  <div  :class=\"classObj\" @click=\"toggle\">\n    <div class=\"{{prefixCls}}-switch-container {{prefixCls}}-switch-on-primary {{prefixCls}}-switch-off-default\">\n      <span class=\"{{prefixCls}}-switch-handle-on {{prefixCls}}-switch-primary\" >{{ontext}}</span>\n      <span class=\"{{prefixCls}}-switch-label\" >&nbsp;</span>\n      <span class=\"{{prefixCls}}-switch-handle-off {{prefixCls}}-switch-default\" >{{offtext}}</span>\n    </div>\n  </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n<div>\n</template>";
 
 /***/ },
-/* 430 */
+/* 446 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(431)
+	module.exports = __webpack_require__(447)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(435)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(451)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28972,7 +29618,7 @@
 	}
 
 /***/ },
-/* 431 */
+/* 447 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28981,87 +29627,28 @@
 	  value: true
 	});
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
-	var _n3Typeahead = __webpack_require__(432);
+	var _n3Typeahead = __webpack_require__(448);
 	
 	var _n3Typeahead2 = _interopRequireDefault(_n3Typeahead);
 	
-	var _valMixin = __webpack_require__(328);
+	var _n3Icon = __webpack_require__(181);
+	
+	var _n3Icon2 = _interopRequireDefault(_n3Icon);
+	
+	var _valMixin = __webpack_require__(341);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(329);
+	var _validate = __webpack_require__(342);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	// <div class="inline">
-	//   <div :class="classObj" :style="{width:width}" @click="focus">
-	//     <template v-for="(index,item) in value" track-by="$index">
-	//         <template v-if="index == position">
-	//             <n3-typeahead
-	//               :query.sync="query" 
-	//               :width='inputWidth'
-	//               :items="items"
-	//               :on-change="onInputchange"
-	//               :max-width="maxWidth"
-	//               :max-height="maxHeight"
-	//               :on-hit="add"
-	//               :match-case="matchCase"
-	//               :limit="limit"
-	//               :render="render"
-	//               :data="data"
-	//               @keydown.delete="del" 
-	//               @keydown.left="left" 
-	//               @keydown.right="right" 
-	//               @keydown.enter="add">
-	//             </n3-typeahead>
-	//         </template>
-	//          <template v-else>
-	//             <span class="{{prefixCls}}-multiple-input-space"  @click="setIndex(index)"></span>
-	//         </template>
-	//         <span class="{{prefixCls}}-multiple-input-m-tag" >{{{format.call(this._context,item,index)}}}</span>
-	//     </template>
-	
-	//     <template v-if="value && value.length == position">
-	//       <n3-typeahead
-	//         :query.sync="query" 
-	//         :width='inputWidth'
-	//         :items="items"
-	//         :on-change="onInputchange"
-	//         :max-width="maxWidth"
-	//         :max-height="maxHeight"
-	//         :on-hit="add"
-	//         :match-case="matchCase"
-	//         :limit="limit"
-	//         :render="render"
-	//         :data="data"
-	//         @keydown.delete="del" 
-	//         @keydown.left="left" 
-	//         @keydown.right="right" 
-	//         @keydown.enter="add">
-	//       </n3-typeahead>
-	//     </template>
-	//     <template v-else>
-	//       <span class="{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long"  @click="setIndex(value.length)"></span>
-	//     </template>
-	//   </div>
-	//    <validate
-	//     :name="name"
-	//     :rules="rules"
-	//     :custom-validate="customValidate" 
-	//     :value="value"
-	//     :results.sync="validateResults">
-	//   </validate>
-	// </div>
-	// </template>
-	
-	// <script>
 	exports.default = {
 	  mixins: [_valMixin2.default],
 	  props: {
@@ -29076,13 +29663,13 @@
 	    },
 	    format: {
 	      type: Function,
-	      default: function _default(item) {
+	      default: function _default(item, index) {
 	        return item;
 	      }
 	    },
 	    width: {
 	      type: String,
-	      default: '100%'
+	      default: '220px'
 	    },
 	    inputWidth: {
 	      type: String,
@@ -29148,6 +29735,7 @@
 	  },
 	  data: function data() {
 	    return {
+	      focused: false,
 	      empty: true,
 	      stopSecond: false
 	    };
@@ -29158,11 +29746,6 @@
 	    });
 	  },
 	
-	  events: {
-	    'n3MultipleInput@enter': function n3MultipleInputEnter() {
-	      this.add();
-	    }
-	  },
 	  watch: {
 	    query: function query(val) {
 	      if (val !== '') {
@@ -29190,18 +29773,22 @@
 	
 	      klass[prefixCls + '-form-control'] = true;
 	      klass[prefixCls + '-multiple-input'] = true;
-	      klass[prefixCls + '-padding-left-none'] = value && value.length > 0;
 	
 	      return klass;
 	    }
 	  },
 	  components: {
+	    n3Icon: _n3Icon2.default,
 	    n3Typeahead: _n3Typeahead2.default,
 	    validate: _validate2.default
 	  },
 	  methods: {
 	    focus: function focus() {
-	      this.$broadcast('n3Input@focus');
+	      var self = this;
+	      self.focused = false;
+	      setTimeout(function () {
+	        self.focused = true;
+	      }, 100);
 	    },
 	    setIndex: function setIndex(index) {
 	      if (this.query) {
@@ -29238,6 +29825,11 @@
 	        }
 	      }
 	    },
+	    clickDel: function clickDel(index) {
+	      var value = this.value.slice(0);
+	      value.splice(index, 1);
+	      this.value = value;
+	    },
 	    del: function del() {
 	      if (this.empty && this.position > 0) {
 	        var value = this.value.slice(0);
@@ -29261,15 +29853,86 @@
 	  }
 	};
 	// </script>
+	// <template>
+	// <div class="inline">
+	//   <div :class="classObj" :style="{width:width}" @click="focus">
+	//     <template v-for="(index,item) in value" track-by="$index">
+	//         <template v-if="index == position">
+	//             <n3-typeahead
+	//               :style="{margin:'0px 5px'}"
+	//               :query.sync="query" 
+	//               :width='inputWidth'
+	//               :items="items"
+	//               :on-change="onInputchange"
+	//               :max-width="maxWidth"
+	//               :max-height="maxHeight"
+	//               :on-hit="add"
+	//               :match-case="matchCase"
+	//               :limit="limit"
+	//               :render="render"
+	//               :focused.sync="focused"
+	//               :data="data"
+	//               @keydown.delete="del" 
+	//               @keydown.left="left" 
+	//               @keydown.right="right" 
+	//               @keydown.enter="add">
+	//             </n3-typeahead>
+	//         </template>
+	//          <template v-else>
+	//             <span class="{{prefixCls}}-multiple-input-space"  @click="setIndex(index)"></span>
+	//         </template>
+	//         <span class="{{prefixCls}}-multiple-input-m-tag" >
+	//         {{{format.call(this._context,item,index)}}}
+	//         <n3-icon type="times" class="{{prefixCls}}-multiple-close" @click="clickDel(index)"></n3-icon>
+	//         </span>
+	//     </template>
+	
+	//     <template v-if="value && value.length == position">
+	//       <n3-typeahead
+	//         :style="{margin:'0px 5px'}"
+	//         :query.sync="query" 
+	//         :width='inputWidth'
+	//         :items="items"
+	//         :on-change="onInputchange"
+	//         :max-width="maxWidth"
+	//         :max-height="maxHeight"
+	//         :on-hit="add"
+	//         :match-case="matchCase"
+	//         :limit="limit"
+	//         :render="render"
+	//         :focused.sync="focused"
+	//         :data="data"
+	//         @keydown.delete="del" 
+	//         @keydown.left="left" 
+	//         @keydown.right="right" 
+	//         @keydown.enter="add">
+	//       </n3-typeahead>
+	//     </template>
+	//     <template v-else>
+	//       <span class="{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long"  @click="setIndex(value.length)"></span>
+	//     </template>
+	//   </div>
+	//    <validate
+	//     :name="name"
+	//     :rules="rules"
+	//     :valid-status.sync="validStatus"
+	//     :custom-validate="customValidate" 
+	//     :value="value"
+	//     :results.sync="validateResults">
+	//   </validate>
+	// </div>
+	// </template>
+	
+	// <script>
 
 /***/ },
-/* 432 */
+/* 448 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(433)
+	module.exports = __webpack_require__(449)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(434)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(450)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -29287,7 +29950,7 @@
 	}
 
 /***/ },
-/* 433 */
+/* 449 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29296,15 +29959,15 @@
 	  value: true
 	});
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
-	var _inputMixin = __webpack_require__(337);
+	var _inputMixin = __webpack_require__(350);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -29466,8 +30129,10 @@
 	//     :readonly="readonly"
 	//     :disabled="disabled"
 	//     :value.sync="query"
+	//     :focused.sync="focused"
 	//     :on-blur="blur"
 	//     @input="update"
+	//     @keydown.esc="show=false"
 	//     @keydown.up="up"
 	//     @keydown.down="down"
 	//     @keydown.enter= "hit"
@@ -29487,25 +30152,25 @@
 	// <script>
 
 /***/ },
-/* 434 */
+/* 450 */
 /***/ function(module, exports) {
 
-	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :value.sync=\"query\"\n    :on-blur=\"blur\"\n    @input=\"update\"\n    @keydown.up=\"up\"\n    @keydown.down=\"down\"\n    @keydown.enter= \"hit\"\n    @keydown.esc=\"reset\"\n  ></n3-input>\n  <ul class=\"{{prefixCls}}-dropdown-menu\" :style=\"{maxWidth:maxWidth,maxHeight:maxHeight}\">\n    <li v-for=\"item in items\" :class=\"isActive($index)\">\n      <a @mousedown.prevent=\"hit\" @mousemove=\"setActive($index)\">\n        {{{render.call(this._context,item)}}}\n      </a>\n    </li> \n  </ul>\n</div>";
+	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :value.sync=\"query\"\n    :focused.sync=\"focused\"\n    :on-blur=\"blur\"\n    @input=\"update\"\n    @keydown.esc=\"show=false\"\n    @keydown.up=\"up\"\n    @keydown.down=\"down\"\n    @keydown.enter= \"hit\"\n    @keydown.esc=\"reset\"\n  ></n3-input>\n  <ul class=\"{{prefixCls}}-dropdown-menu\" :style=\"{maxWidth:maxWidth,maxHeight:maxHeight}\">\n    <li v-for=\"item in items\" :class=\"isActive($index)\">\n      <a @mousedown.prevent=\"hit\" @mousemove=\"setActive($index)\">\n        {{{render.call(this._context,item)}}}\n      </a>\n    </li> \n  </ul>\n</div>";
 
 /***/ },
-/* 435 */
+/* 451 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\n  <div :class=\"classObj\" :style=\"{width:width}\" @click=\"focus\">\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\n        <template v-if=\"index == position\">\n            <n3-typeahead\n              :query.sync=\"query\" \n              :width='inputWidth'\n              :items=\"items\"\n              :on-change=\"onInputchange\"\n              :max-width=\"maxWidth\"\n              :max-height=\"maxHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :data=\"data\"\n              @keydown.delete=\"del\" \n              @keydown.left=\"left\" \n              @keydown.right=\"right\" \n              @keydown.enter=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span class=\"{{prefixCls}}-multiple-input-space\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span class=\"{{prefixCls}}-multiple-input-m-tag\" >{{{format.call(this._context,item,index)}}}</span>\n    </template>\n\n    <template v-if=\"value && value.length == position\">\n      <n3-typeahead\n        :query.sync=\"query\" \n        :width='inputWidth'\n        :items=\"items\"\n        :on-change=\"onInputchange\"\n        :max-width=\"maxWidth\"\n        :max-height=\"maxHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :data=\"data\"\n        @keydown.delete=\"del\" \n        @keydown.left=\"left\" \n        @keydown.right=\"right\" \n        @keydown.enter=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span class=\"{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long\"  @click=\"setIndex(value.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
+	module.exports = "<div class=\"inline\">\n  <div :class=\"classObj\" :style=\"{width:width}\" @click=\"focus\">\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\n        <template v-if=\"index == position\">\n            <n3-typeahead\n              :style=\"{margin:'0px 5px'}\"\n              :query.sync=\"query\" \n              :width='inputWidth'\n              :items=\"items\"\n              :on-change=\"onInputchange\"\n              :max-width=\"maxWidth\"\n              :max-height=\"maxHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :focused.sync=\"focused\"\n              :data=\"data\"\n              @keydown.delete=\"del\" \n              @keydown.left=\"left\" \n              @keydown.right=\"right\" \n              @keydown.enter=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span class=\"{{prefixCls}}-multiple-input-space\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span class=\"{{prefixCls}}-multiple-input-m-tag\" >\n        {{{format.call(this._context,item,index)}}}\n        <n3-icon type=\"times\" class=\"{{prefixCls}}-multiple-close\" @click=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"value && value.length == position\">\n      <n3-typeahead\n        :style=\"{margin:'0px 5px'}\"\n        :query.sync=\"query\" \n        :width='inputWidth'\n        :items=\"items\"\n        :on-change=\"onInputchange\"\n        :max-width=\"maxWidth\"\n        :max-height=\"maxHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :focused.sync=\"focused\"\n        :data=\"data\"\n        @keydown.delete=\"del\" \n        @keydown.left=\"left\" \n        @keydown.right=\"right\" \n        @keydown.enter=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span class=\"{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long\"  @click=\"setIndex(value.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
 
 /***/ },
-/* 436 */
+/* 452 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(437)
+	module.exports = __webpack_require__(453)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(438)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(454)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -29523,7 +30188,7 @@
 	}
 
 /***/ },
-/* 437 */
+/* 453 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29532,19 +30197,19 @@
 	  value: true
 	});
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
@@ -29661,19 +30326,19 @@
 	// </script>
 
 /***/ },
-/* 438 */
+/* 454 */
 /***/ function(module, exports) {
 
 	module.exports = "<nav v-show=\"total>0\" class='{{prefixCls}}-simple-pagination'>\n        <div class=\"{{prefixCls}}-pagination\">\n            <n3-button v-show =\"havePrev\"  @click=\"prev\" class=\"{{prefixCls}}-simple-pagination-btn\">\n              <n3-icon type=\"chevron-left\"></n3-icon>\n            </n3-button>\n            <span> {{current}} / {{totalpage}}</span>\n            <n3-button v-show =\"haveNext\" @click=\"next\" class=\"{{prefixCls}}-simple-pagination-btn\">\n              <n3-icon type=\"chevron-right\"></n3-icon>\n            </n3-button>\n            <n3-input  \n              width=\"50px\"\n              class=\"{{prefixCls}}-simple-pagination-input\"\n              @keyup.enter=\"go\" \n              :value.sync=\"inputValue\"></n3-input>\n            <n3-button @click=\"go\" class=\"{{prefixCls}}-simple-pagination-btn\">跳转</n3-button>\n        </div>\n    </nav>";
 
 /***/ },
-/* 439 */
+/* 455 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(440)
+	module.exports = __webpack_require__(456)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(441)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(457)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -29691,7 +30356,7 @@
 	}
 
 /***/ },
-/* 440 */
+/* 456 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29765,19 +30430,19 @@
 	// </script>
 
 /***/ },
-/* 441 */
+/* 457 */
 /***/ function(module, exports) {
 
 	module.exports = "<ul v-if=\"round\" class=\"{{prefixCls}}-steps-round-con\">\n   <template v-for=\"label in labels\">\n      <li :class=\"[getClassFromIndex($index)]\">\n      <div class=\"{{prefixCls}}-steps-wrap\">\n        <div class=\"{{prefixCls}}-steps-round\">{{$index + 1}}</div>\n      </div>\n      <label>{{label}}</label>\n    </li>\n   </template>\n  </ul>\n\n  <div v-else class=\"{{prefixCls}}-steps clearfix\">\n        <template v-for=\"label in labels\">\n            <div class=\"{{prefixCls}}-steps-wrap\">\n                <div :class=\"getClassFromIndex($index)\">\n                    <label>\n                      <span class=\"{{prefixCls}}-steps-round\">{{$index + 1}}</span>\n                      <span>{{label}}</span>\n                    </label>\n                    <template v-if=\"$index < labels.length - 1\">\n                        <i class=\"{{prefixCls}}-steps-triangle-right-bg\"></i>\n                        <i class=\"{{prefixCls}}-steps-triangle-right\"></i>\n                    </template>\n                </div>\n            </div>\n        </template>\n    </div>";
 
 /***/ },
-/* 442 */
+/* 458 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(443)
+	module.exports = __webpack_require__(459)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(444)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(460)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -29795,7 +30460,7 @@
 	}
 
 /***/ },
-/* 443 */
+/* 459 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29804,31 +30469,31 @@
 	  value: true
 	});
 	
-	var _n3SimplePagination = __webpack_require__(436);
+	var _n3SimplePagination = __webpack_require__(452);
 	
 	var _n3SimplePagination2 = _interopRequireDefault(_n3SimplePagination);
 	
-	var _n3Select = __webpack_require__(397);
+	var _n3Select = __webpack_require__(413);
 	
 	var _n3Select2 = _interopRequireDefault(_n3Select);
 	
-	var _n3Button = __webpack_require__(178);
+	var _n3Button = __webpack_require__(185);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(335);
+	var _n3Input = __webpack_require__(348);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _n3Loading = __webpack_require__(180);
+	var _n3Loading = __webpack_require__(187);
 	
 	var _n3Loading2 = _interopRequireDefault(_n3Loading);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -30507,19 +31172,19 @@
 	// <script>
 
 /***/ },
-/* 444 */
+/* 460 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-data-table\">\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\n    <n3-select \n\t    class='pull-left'\n\t    style=\"margin-right:10px;\"\n\t    :multiple=\"true\"\n\t    :showselected=\"false\"\n\t    v-if=\"selectCol\"\n\t    placeholder = \"显示的列\"\n\t    :options=\"selectOptions\" \n\t    :value.sync=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\n      <template v-for=\"item in filterArr\">\n        <n3-select \n\t        :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n\t        :search = \"item.search === undefined?true:!!item.search\"\n\t        :extra = \"item.extra === undefined?true:!!item.extra\"\n\t        :showselected=\"false\"\n\t        :placeholder = \"item.title\"\n\t        :options=\"item.options\" \n\t        :value.sync=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\" \n        style=\"margin-left:10px;\"\n        @click=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right .@{prefix-cls}-data-table-search\" \n      placeholder=\"搜索\"\n      :value.sync=\"query\"\n      @keydown.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\n                  <input v-if=\"list && list.length\" \n                  \ttype=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                  \t@change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in initColumns\" \n                  v-if=\"col.show && col.colspan != 0\" \n                  :style=\"{width:col.width}\" \n                  :class=\"{'pointer':col.sort}\" \n                  @click=\"sort(col,col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                <span>{{col.title}} </span> \n                <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\n                  <n3-icon\n                    @click.stop=\"sort(col,col.sort,'ASC')\"\n                    :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                    type=\"caret-up\">\n                  </n3-icon>\n                   <n3-icon\n                    @click.stop=\"sort(col,col.sort,'DESC')\"\n                    :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                    type=\"caret-down\">\n                  </n3-icon>\n                </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\n                   <input type=\"checkbox\" \n                   \tv-model=\"checkedValues\"  \n                   \t:value=\"data[key]\" @change.stop=\"onCheckOne($event,data)\" \n                   \tv-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in initColumns\" v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\" :colspan=\"colspan(col,data)\" :rowspan=\"rowspan(col,data)\">\n                <template v-if=\"col.render\">\n                   {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\n                </template>\n                <template v-else>\n                  {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\n                </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div class='{{prefixCls}}-data-table-bar' v-if=\"page\" >\n    每页&nbsp;<n3-select \n      :cancelled=\"false\"\n      v-if=\"page\"\n      :options=\"options\" \n      class=\"{{prefixCls}}-data-table-page\" \n      :value.sync=\"pagesize\"></n3-select>&nbsp;条\n       共&nbsp;{{pagination.total}}&nbsp;条\n    <div class=\"pull-right\">  \n    <n3-simple-pagination v-if=\"page\" \n    :total=\"pagination.total\" \n    :current.sync=\"pagination.current\" \n    :pagesize=\"pagination.pagesize\" \n    :on-change=\"pageChange\"\n    ></n3-simple-pagination>\n    </div>\n  </div>\n  </div>";
 
 /***/ },
-/* 445 */
+/* 461 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(446)
+	module.exports = __webpack_require__(462)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(450)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(466)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30537,7 +31202,7 @@
 	}
 
 /***/ },
-/* 446 */
+/* 462 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30546,11 +31211,11 @@
 	  value: true
 	});
 	
-	var _n3TimelineItem = __webpack_require__(447);
+	var _n3TimelineItem = __webpack_require__(463);
 	
 	var _n3TimelineItem2 = _interopRequireDefault(_n3TimelineItem);
 	
-	var _getType = __webpack_require__(167);
+	var _getType = __webpack_require__(174);
 	
 	var _getType2 = _interopRequireDefault(_getType);
 	
@@ -30601,13 +31266,13 @@
 	// </script>
 
 /***/ },
-/* 447 */
+/* 463 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(448)
+	module.exports = __webpack_require__(464)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(449)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(465)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30625,7 +31290,7 @@
 	}
 
 /***/ },
-/* 448 */
+/* 464 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30650,7 +31315,7 @@
 	    },
 	    color: {
 	      type: String,
-	      default: '#41cac0'
+	      default: '#333'
 	    },
 	    content: {},
 	    prefixCls: {
@@ -30670,25 +31335,25 @@
 	// </script>
 
 /***/ },
-/* 449 */
+/* 465 */
 /***/ function(module, exports) {
 
 	module.exports = "<li class=\"{{prefixCls}}-timeline-item\">\n \t\t<div class=\"{{prefixCls}}-timeline-item-tail\"></div>\n \t\t<div :class=\"[prefixCls+'-timeline-item-head',icon?'fa fa-'+icon:'']\" :style=\"style\"></div>\n \t\t<div class=\"{{prefixCls}}-timeline-item-content\">\n\t \t\t<slot></slot>\n \t\t</div>\n \t</li>";
 
 /***/ },
-/* 450 */
+/* 466 */
 /***/ function(module, exports) {
 
 	module.exports = "<ul class=\"{{prefixCls}}-timeline-con\">\n \t\t<template v-if=\"value\">\n \t\t\t<n3-timeline-item v-for=\"i in value\" :color=\"i.color\" :icon=\"i.icon\" >\n \t\t\t\t{{{i.content}}}\n \t\t\t</n3-timeline-item>\n \t\t</template>\n \t\t<template v-else>\n \t\t\t<slot></slot>\n \t\t</template>\n \t</ul>";
 
 /***/ },
-/* 451 */
+/* 467 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(452)
+	module.exports = __webpack_require__(468)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(453)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(469)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30706,7 +31371,7 @@
 	}
 
 /***/ },
-/* 452 */
+/* 468 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30715,7 +31380,7 @@
 	  value: true
 	});
 	
-	var _n3Icon = __webpack_require__(174);
+	var _n3Icon = __webpack_require__(181);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
@@ -30810,19 +31475,19 @@
 	// <script>
 
 /***/ },
-/* 453 */
+/* 469 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\">\n\t<label \n  \tv-for=\"i in value\" \n\t  :class=\"tagClass(i)\">\n\t {{i.label}}\n\t<a name=\"remove\" v-if=\"removable\" @click=\"del(i)\"><n3-icon type=\"times\"></n3-icon></a>\n\t</label>\n</div>";
 
 /***/ },
-/* 454 */
+/* 470 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(455)
+	module.exports = __webpack_require__(471)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(456)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(472)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30840,7 +31505,7 @@
 	}
 
 /***/ },
-/* 455 */
+/* 471 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30865,19 +31530,19 @@
 	// </script>
 
 /***/ },
-/* 456 */
+/* 472 */
 /***/ function(module, exports) {
 
 	module.exports = "<ol class=\"{{prefixCls}}-breadcrumb\">\n\t\t<slot></slot>\n\t</ol>";
 
 /***/ },
-/* 457 */
+/* 473 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(458)
+	module.exports = __webpack_require__(474)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(459)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(475)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30895,7 +31560,7 @@
 	}
 
 /***/ },
-/* 458 */
+/* 474 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -30931,19 +31596,19 @@
 	// </script>
 
 /***/ },
-/* 459 */
+/* 475 */
 /***/ function(module, exports) {
 
 	module.exports = "<li :class=\"[active ? prefixCls + '-breadcrumb-active' : '']\">\n\t\t<a v-if='href' :href=\"href\" >\n    \t<slot></slot>\n  \t</a>\n  \t<span v-else>\n    \t<slot></slot>\n  \t</span>\n  \t</li>";
 
 /***/ },
-/* 460 */
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(461)
+	module.exports = __webpack_require__(477)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(462)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(478)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30961,7 +31626,7 @@
 	}
 
 /***/ },
-/* 461 */
+/* 477 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31067,19 +31732,19 @@
 	// </script>
 
 /***/ },
-/* 462 */
+/* 478 */
 /***/ function(module, exports) {
 
 	module.exports = "<form :class=\"classObj\"  @submit.prevent=\"noop\">\n      <slot></slot>\n  </form>";
 
 /***/ },
-/* 463 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(464)
+	module.exports = __webpack_require__(480)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(465)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(481)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -31097,7 +31762,7 @@
 	}
 
 /***/ },
-/* 464 */
+/* 480 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31160,19 +31825,19 @@
 	// </script>
 
 /***/ },
-/* 465 */
+/* 481 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\" >\n\t\t<label class=\"{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label\">\n      <em class=\"{{prefixCls}}-form-need\" v-if=\"need\" >*</em>\n      {{label}}\n      </label>\n\t\t<div class=\"{{prefixCls}}-col-sm-{{col}}\">\n\t\t\t<slot></slot>\n\t\t</div>\t\n\t</div>";
 
 /***/ },
-/* 466 */
+/* 482 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(467)
+	module.exports = __webpack_require__(483)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(468)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(484)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -31190,7 +31855,7 @@
 	}
 
 /***/ },
-/* 467 */
+/* 483 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31233,22 +31898,504 @@
 	// </script>
 
 /***/ },
-/* 468 */
+/* 484 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"{{prefixCls}}-carousel-item\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 469 */
+/* 485 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(486)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(487)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 486 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; }; // <template>
+	//   <div :class="[prefixCls + '-upload']" id="upload-{{uploadId}}">
+	//     <div v-if="type === 'click'">
+	//       <label>
+	//         <input
+	//           type="file"
+	//           :name="name"
+	//           :accept="accept"
+	//           :id="uploadId"
+	//           :multiple="multiple"
+	//           @change="onChange($event)" />
+	//         <slot>
+	//           <n3-button>
+	//             <n3-icon type="cloud-upload"></n3-icon>
+	//             点击上传
+	//           </n3-button>
+	//         </slot>
+	//       </label>
+	//       <div :class="[prefixCls + '-upload-list']">
+	//         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
+	//           <div :class="[prefixCls + '-upload-item-info']">
+	//             <n3-icon type="file-text-o"
+	//               :class="[prefixCls + '-upload-file-icon']">
+	//             </n3-icon>
+	//             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
+	//             <n3-icon type="times"
+	//               :class="[prefixCls + '-upload-del-info']"
+	//               @click="delFile($index)">
+	//             </n3-icon>
+	//           </div>
+	//           <n3-progress style="padding:0px 4px">
+	//             <n3-progressbar
+	//               type="success"
+	//               height='3px'
+	//               :now="progress[$index]"
+	//             ></n3-progressbar>
+	//           </n3-progress>
+	//         </div>
+	//       </div>
+	//     </div>
+	//     <div v-if="type === 'drag'"
+	//          :class="[prefixCls + '-upload-drag']">
+	//       <div 
+	//         :class="[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]"
+	//         :style="{width:dragWidth,height:dragHeight}">
+	//         <input type="file"
+	//           :name="name"
+	//           :id="uploadId"
+	//           :accept="accept"
+	//           :multiple="multiple"
+	//           @change="onChange($event)" />
+	//         <label :for="uploadId"
+	//             :class="[prefixCls + '-upload-drag-area']">
+	//         <n3-icon type="cloud-upload" size="60px" :class="[prefixCls + '-upload-drag-icon']"></n3-icon>
+	//         <span v-if="advanceDrag">点击或将文件拖拽到此区域上传</span>
+	//         <span v-if="!advanceDrag">当前环境不支持拖拽上传，请点此上传</span>
+	//       </label>
+	//       </div>
+	//       <div :class="[prefixCls + '-upload-list']">
+	//         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
+	//           <div :class="[prefixCls + '-upload-item-info']">
+	//             <n3-icon type="file-text-o"
+	//               :class="[prefixCls + '-upload-file-icon']">
+	//             </n3-icon>
+	//             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
+	//             <n3-icon type="times"
+	//               :class="[prefixCls + '-upload-del-info']"
+	//               @click="delFile($index)">
+	//             </n3-icon>
+	//           </div>
+	//           <n3-progress style="padding:0px 4px">
+	//             <n3-progressbar
+	//               type="success"
+	//               height='3px'
+	//               :now="progress[$index]"
+	//             ></n3-progressbar>
+	//           </n3-progress>
+	//         </div>
+	//       </div>
+	//     </div>
+	//   </div>
+	// </template>
+	// <script>
+	
+	
+	var _n3Icon = __webpack_require__(181);
+	
+	var _n3Icon2 = _interopRequireDefault(_n3Icon);
+	
+	var _n3Button = __webpack_require__(185);
+	
+	var _n3Button2 = _interopRequireDefault(_n3Button);
+	
+	var _n3Progress = __webpack_require__(401);
+	
+	var _n3Progress2 = _interopRequireDefault(_n3Progress);
+	
+	var _n3Progressbar = __webpack_require__(398);
+	
+	var _n3Progressbar2 = _interopRequireDefault(_n3Progressbar);
+	
+	var _n3ToastMethod = __webpack_require__(354);
+	
+	var _n3ToastMethod2 = _interopRequireDefault(_n3ToastMethod);
+	
+	var _getType = __webpack_require__(174);
+	
+	var _getType2 = _interopRequireDefault(_getType);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	  props: {
+	    name: {
+	      type: String,
+	      default: 'files'
+	    },
+	    type: {
+	      type: String,
+	      default: 'click'
+	    },
+	    accept: {
+	      type: String,
+	      default: ''
+	    },
+	    url: {
+	      type: String,
+	      default: ''
+	    },
+	    multiple: {
+	      type: Boolean,
+	      default: true
+	    },
+	    dragWidth: {
+	      type: String,
+	      default: '300px'
+	    },
+	    dragHeight: {
+	      type: String,
+	      default: '200px'
+	    },
+	    onError: {
+	      type: Function,
+	      default: function _default(data) {
+	        (0, _n3ToastMethod2.default)({
+	          text: data.message
+	        });
+	      }
+	    },
+	    onSuccess: {
+	      type: Function
+	    },
+	    onDelete: {
+	      type: Function
+	    },
+	    maxlength: Number,
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  },
+	  data: function data() {
+	    return {
+	      value: '',
+	      uploadId: 'upload' + new Date().getTime() + Math.floor(Math.random() * 100),
+	      percent: 0,
+	      xhr: 'FormData' in window,
+	      uploadList: [],
+	      progress: [],
+	      dragover: false
+	    };
+	  },
+	
+	  computed: {
+	    advanceDrag: function advanceDrag() {
+	      var div = document.createElement('div');
+	      return ('draggable' in div || 'ondragstart' in div && 'ondrop' in div) && 'FormData' in window && 'FileReader' in window;
+	    }
+	  },
+	  components: {
+	    n3Icon: _n3Icon2.default,
+	    n3Button: _n3Button2.default,
+	    n3Progressbar: _n3Progressbar2.default,
+	    n3Progress: _n3Progress2.default
+	  },
+	  ready: function ready() {
+	    this._input = document.querySelector('#' + this.uploadId);
+	    this.$el = document.querySelector('#upload-' + this.uploadId);
+	
+	    this.advanceDrag && this.addDragEvt();
+	  },
+	  beforeDestroy: function beforeDestroy() {
+	    var _this = this;
+	
+	    var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
+	    events.forEach(function (event) {
+	      _this.$el.removeEventListener(event, function () {
+	        return _this._eventHandler();
+	      });
+	    });
+	  },
+	
+	  methods: {
+	    onChange: function onChange(e) {
+	      var files = e.target.files;
+	      if (files) {
+	        for (var i in files) {
+	          if (_typeof(files[i]) === 'object' && files[i].name) {
+	            this.progress.push(0);
+	            this.uploadList.push(files[i]);
+	          }
+	        }
+	      } else {
+	        this.progress = [0];
+	        this.uploadList = [{ name: this._input.value.replace(/^.*\\/, '') }];
+	      }
+	
+	      if (this.maxlength && this.uploadList.length > this.maxlength) {
+	        this._input.value = '';
+	        this.uploadList = [];
+	        this.setError('超过上传数量限制，请先删除再进行上传');
+	      } else {
+	        this.submitForm();
+	      }
+	    },
+	    submitForm: function submitForm() {
+	      if (this.uploadList.length > 0) {
+	        if (this.url) {
+	          if (this.xhr) {
+	            this.xhrUpload();
+	          } else {
+	            this.iframeUpload();
+	          }
+	        }
+	      }
+	    },
+	    xhrUpload: function xhrUpload() {
+	      var self = this;
+	      var data = new window.FormData();
+	      var i = 0;
+	      var len = this.uploadList.length;
+	
+	      for (i = 0; i < len; i++) {
+	        (function (i, file) {
+	          if (file.type.match(self.accept)) {
+	            (function () {
+	              data.append(self.name, file, file.name);
+	
+	              var xhr = new window.XMLHttpRequest();
+	
+	              xhr.open('post', self.url, true);
+	
+	              xhr.onload = function () {
+	                self.parseResponse(xhr.responseText, i);
+	              };
+	
+	              xhr.upload.onprogress = function (e) {
+	                var loaded = e.loaded ? e.loaded : 0;
+	                var total = e.total ? e.total : 1;
+	
+	                self.$set('progress[' + i + ']', parseInt(loaded / total * 100, 10));
+	              };
+	
+	              xhr.onerror = function () {
+	                self.setError('上传失败了！');
+	              };
+	
+	              try {
+	                xhr.send(data);
+	              } catch (e) {
+	                self.setError('上传失败了！');
+	              }
+	            })();
+	          } else {
+	            self.setError('不支持该文件类型');
+	          }
+	        })(i, this.uploadList[i]);
+	      }
+	    },
+	    iframeUpload: function iframeUpload() {
+	      var _this2 = this;
+	
+	      var i = 0;
+	      var len = this.uploadList.length;
+	      if (this.testSameOrigin(this.url)) {
+	        var _loop = function _loop() {
+	          var iframeName = 'uploadiframe-' + i + '-' + new Date().getTime();
+	          var iframe = document.createElement('iframe');
+	          var form = document.createElement('form');
+	          var input = document.createElement('input');
+	
+	          input.setAttribute('type', 'file');
+	          input.setAttribute('value', _this2.uploadList[i].name);
+	          iframe.setAttribute('name', iframeName);
+	          iframe.style.display = 'none';
+	          form.setAttribute('method', 'post');
+	          form.setAttribute('action', _this2.url);
+	          form.setAttribute('target', iframeName);
+	          form.setAttribute('data-index', i);
+	
+	          document.body.appendChild(form);
+	          form.appendChild(iframe);
+	          form.appendChild(input);
+	
+	          iframe.addEventListener('load', function () {
+	            _this2.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));
+	            document.body.removeChild(form);
+	          });
+	          form.submit();
+	        };
+	
+	        for (i = 0; i < len; i++) {
+	          _loop();
+	        }
+	      } else {
+	        this.setError('iframe不支持跨域请求');
+	      }
+	    },
+	    testSameOrigin: function testSameOrigin(url) {
+	      var loc = window.location;
+	      var a = document.createElement('a');
+	      a.href = url;
+	      return a.hostname === loc.hostname && a.port === loc.port && a.protocol === loc.protocol;
+	    },
+	    parseResponse: function parseResponse(response, index) {
+	      var data = null;
+	
+	      if (!response) {
+	        this.setError('服务器没有响应', index);
+	      } else {
+	        try {
+	          data = JSON.parse(response);
+	        } catch (e) {
+	          this.setError('服务器响应数据格式有问题', index);
+	        }
+	        if (data) {
+	          if (data.success) {
+	            if (_getType2.default.isFunction(this.onSuccess)) {
+	              this.onSuccess({
+	                data: data,
+	                file: this.uploadList[index]
+	              });
+	            }
+	          } else if (data.error) {
+	            this.setError(data.error, index);
+	          }
+	        }
+	      }
+	    },
+	    setError: function setError(message, index) {
+	      if (_getType2.default.isFunction(this.onError)) {
+	        this.onError({
+	          message: message,
+	          file: index && this.uploadList[index] || null
+	        });
+	      }
+	
+	      index > -1 && this.uploadList.splice(index, 1);
+	    },
+	    delFile: function delFile(index) {
+	      if (_getType2.default.isFunction(this.onDelete)) {
+	        this.onDelete(this.uploadList[index]);
+	      }
+	      this.uploadList.splice(index, 1);
+	    },
+	    addDragEvt: function addDragEvt() {
+	      var _this3 = this;
+	
+	      var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
+	
+	      events.forEach(function (event) {
+	        _this3.$el.addEventListener(event, function (e) {
+	          return _this3.dragHandler(e);
+	        });
+	      });
+	    },
+	    dragHandler: function dragHandler(e) {
+	      var self = this;
+	      e.preventDefault();
+	      e.stopPropagation();
+	
+	      if (e.type === '') {}
+	
+	      if (e.type === 'dragover' || e.type === 'dragenter') {
+	        self.dragover = true;
+	      }
+	
+	      if (e.type === 'dragend' || e.type === 'dragleave' || e.type === 'drop') {
+	        self.dragover = false;
+	        if (e.type === 'drop') {
+	          var files = e.dataTransfer.files || {};
+	          for (var i in files) {
+	            if (files[i] && files[i].name && files[i].size) {
+	              self.progress.push(0);
+	              self.uploadList.push(files[i]);
+	            }
+	          }
+	          self.submitForm();
+	        }
+	      }
+	    }
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 487 */
+/***/ function(module, exports) {
+
+	module.exports = "<div :class=\"[prefixCls + '-upload']\" id=\"upload-{{uploadId}}\">\n    <div v-if=\"type === 'click'\">\n      <label>\n        <input\n          type=\"file\"\n          :name=\"name\"\n          :accept=\"accept\"\n          :id=\"uploadId\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <slot>\n          <n3-button>\n            <n3-icon type=\"cloud-upload\"></n3-icon>\n            点击上传\n          </n3-button>\n        </slot>\n      </label>\n      <div :class=\"[prefixCls + '-upload-list']\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n    <div v-if=\"type === 'drag'\"\n         :class=\"[prefixCls + '-upload-drag']\">\n      <div \n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\n        :style=\"{width:dragWidth,height:dragHeight}\">\n        <input type=\"file\"\n          :name=\"name\"\n          :id=\"uploadId\"\n          :accept=\"accept\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <label :for=\"uploadId\"\n            :class=\"[prefixCls + '-upload-drag-area']\">\n        <n3-icon type=\"cloud-upload\" size=\"60px\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\n      </label>\n      </div>\n      <div :class=\"[prefixCls + '-upload-list']\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n  </div>";
+
+/***/ },
+/* 488 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  collapse: {
+	    enter: function enter(el, done) {
+	      var h = void 0;
+	      el.style.maxHeight = '';
+	      el.style.display = 'block';
+	      h = el.offsetHeight;
+	      el.style.maxHeight = '0px';
+	
+	      setTimeout(function () {
+	        el.style.maxHeight = h + 'px';
+	        done();
+	      });
+	    },
+	    enterCancelled: function enterCancelled(el) {},
+	    leave: function leave(el, done) {
+	      el.style.maxHeight = el.offsetHeight + 'px';
+	      setTimeout(function () {
+	        el.style.maxHeight = '0px';
+	        setTimeout(function () {
+	          done();
+	        }, 200);
+	      }, 10);
+	    },
+	    leaveCancelled: function leaveCancelled() {}
+	  }
+	};
+
+/***/ },
+/* 489 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(470);
+	var content = __webpack_require__(490);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(142)(content, {});
+	var update = __webpack_require__(149)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -31265,15 +32412,15 @@
 	}
 
 /***/ },
-/* 470 */
+/* 490 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(141)();
+	exports = module.exports = __webpack_require__(148)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "/*!\n *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');\n  src: url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333333em;\n  line-height: 0.75em;\n  vertical-align: -15%;\n}\n.fa-2x {\n  font-size: 2em;\n}\n.fa-3x {\n  font-size: 3em;\n}\n.fa-4x {\n  font-size: 4em;\n}\n.fa-5x {\n  font-size: 5em;\n}\n.fa-fw {\n  width: 1.28571429em;\n  text-align: center;\n}\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14285714em;\n  list-style-type: none;\n}\n.fa-ul > li {\n  position: relative;\n}\n.fa-li {\n  position: absolute;\n  left: -2.14285714em;\n  width: 2.14285714em;\n  top: 0.14285714em;\n  text-align: center;\n}\n.fa-li.fa-lg {\n  left: -1.85714286em;\n}\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eeeeee;\n  border-radius: .1em;\n}\n.fa-pull-left {\n  float: left;\n}\n.fa-pull-right {\n  float: right;\n}\n.fa.fa-pull-left {\n  margin-right: .3em;\n}\n.fa.fa-pull-right {\n  margin-left: .3em;\n}\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right;\n}\n.pull-left {\n  float: left;\n}\n.fa.pull-left {\n  margin-right: .3em;\n}\n.fa.pull-right {\n  margin-left: .3em;\n}\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear;\n}\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8);\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n}\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg);\n}\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1);\n}\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1);\n}\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none;\n}\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle;\n}\n.fa-stack-1x,\n.fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center;\n}\n.fa-stack-1x {\n  line-height: inherit;\n}\n.fa-stack-2x {\n  font-size: 2em;\n}\n.fa-inverse {\n  color: #ffffff;\n}\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\";\n}\n.fa-music:before {\n  content: \"\\F001\";\n}\n.fa-search:before {\n  content: \"\\F002\";\n}\n.fa-envelope-o:before {\n  content: \"\\F003\";\n}\n.fa-heart:before {\n  content: \"\\F004\";\n}\n.fa-star:before {\n  content: \"\\F005\";\n}\n.fa-star-o:before {\n  content: \"\\F006\";\n}\n.fa-user:before {\n  content: \"\\F007\";\n}\n.fa-film:before {\n  content: \"\\F008\";\n}\n.fa-th-large:before {\n  content: \"\\F009\";\n}\n.fa-th:before {\n  content: \"\\F00A\";\n}\n.fa-th-list:before {\n  content: \"\\F00B\";\n}\n.fa-check:before {\n  content: \"\\F00C\";\n}\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\";\n}\n.fa-search-plus:before {\n  content: \"\\F00E\";\n}\n.fa-search-minus:before {\n  content: \"\\F010\";\n}\n.fa-power-off:before {\n  content: \"\\F011\";\n}\n.fa-signal:before {\n  content: \"\\F012\";\n}\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\";\n}\n.fa-trash-o:before {\n  content: \"\\F014\";\n}\n.fa-home:before {\n  content: \"\\F015\";\n}\n.fa-file-o:before {\n  content: \"\\F016\";\n}\n.fa-clock-o:before {\n  content: \"\\F017\";\n}\n.fa-road:before {\n  content: \"\\F018\";\n}\n.fa-download:before {\n  content: \"\\F019\";\n}\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\";\n}\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\";\n}\n.fa-inbox:before {\n  content: \"\\F01C\";\n}\n.fa-play-circle-o:before {\n  content: \"\\F01D\";\n}\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\";\n}\n.fa-refresh:before {\n  content: \"\\F021\";\n}\n.fa-list-alt:before {\n  content: \"\\F022\";\n}\n.fa-lock:before {\n  content: \"\\F023\";\n}\n.fa-flag:before {\n  content: \"\\F024\";\n}\n.fa-headphones:before {\n  content: \"\\F025\";\n}\n.fa-volume-off:before {\n  content: \"\\F026\";\n}\n.fa-volume-down:before {\n  content: \"\\F027\";\n}\n.fa-volume-up:before {\n  content: \"\\F028\";\n}\n.fa-qrcode:before {\n  content: \"\\F029\";\n}\n.fa-barcode:before {\n  content: \"\\F02A\";\n}\n.fa-tag:before {\n  content: \"\\F02B\";\n}\n.fa-tags:before {\n  content: \"\\F02C\";\n}\n.fa-book:before {\n  content: \"\\F02D\";\n}\n.fa-bookmark:before {\n  content: \"\\F02E\";\n}\n.fa-print:before {\n  content: \"\\F02F\";\n}\n.fa-camera:before {\n  content: \"\\F030\";\n}\n.fa-font:before {\n  content: \"\\F031\";\n}\n.fa-bold:before {\n  content: \"\\F032\";\n}\n.fa-italic:before {\n  content: \"\\F033\";\n}\n.fa-text-height:before {\n  content: \"\\F034\";\n}\n.fa-text-width:before {\n  content: \"\\F035\";\n}\n.fa-align-left:before {\n  content: \"\\F036\";\n}\n.fa-align-center:before {\n  content: \"\\F037\";\n}\n.fa-align-right:before {\n  content: \"\\F038\";\n}\n.fa-align-justify:before {\n  content: \"\\F039\";\n}\n.fa-list:before {\n  content: \"\\F03A\";\n}\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\";\n}\n.fa-indent:before {\n  content: \"\\F03C\";\n}\n.fa-video-camera:before {\n  content: \"\\F03D\";\n}\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\";\n}\n.fa-pencil:before {\n  content: \"\\F040\";\n}\n.fa-map-marker:before {\n  content: \"\\F041\";\n}\n.fa-adjust:before {\n  content: \"\\F042\";\n}\n.fa-tint:before {\n  content: \"\\F043\";\n}\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\";\n}\n.fa-share-square-o:before {\n  content: \"\\F045\";\n}\n.fa-check-square-o:before {\n  content: \"\\F046\";\n}\n.fa-arrows:before {\n  content: \"\\F047\";\n}\n.fa-step-backward:before {\n  content: \"\\F048\";\n}\n.fa-fast-backward:before {\n  content: \"\\F049\";\n}\n.fa-backward:before {\n  content: \"\\F04A\";\n}\n.fa-play:before {\n  content: \"\\F04B\";\n}\n.fa-pause:before {\n  content: \"\\F04C\";\n}\n.fa-stop:before {\n  content: \"\\F04D\";\n}\n.fa-forward:before {\n  content: \"\\F04E\";\n}\n.fa-fast-forward:before {\n  content: \"\\F050\";\n}\n.fa-step-forward:before {\n  content: \"\\F051\";\n}\n.fa-eject:before {\n  content: \"\\F052\";\n}\n.fa-chevron-left:before {\n  content: \"\\F053\";\n}\n.fa-chevron-right:before {\n  content: \"\\F054\";\n}\n.fa-plus-circle:before {\n  content: \"\\F055\";\n}\n.fa-minus-circle:before {\n  content: \"\\F056\";\n}\n.fa-times-circle:before {\n  content: \"\\F057\";\n}\n.fa-check-circle:before {\n  content: \"\\F058\";\n}\n.fa-question-circle:before {\n  content: \"\\F059\";\n}\n.fa-info-circle:before {\n  content: \"\\F05A\";\n}\n.fa-crosshairs:before {\n  content: \"\\F05B\";\n}\n.fa-times-circle-o:before {\n  content: \"\\F05C\";\n}\n.fa-check-circle-o:before {\n  content: \"\\F05D\";\n}\n.fa-ban:before {\n  content: \"\\F05E\";\n}\n.fa-arrow-left:before {\n  content: \"\\F060\";\n}\n.fa-arrow-right:before {\n  content: \"\\F061\";\n}\n.fa-arrow-up:before {\n  content: \"\\F062\";\n}\n.fa-arrow-down:before {\n  content: \"\\F063\";\n}\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\";\n}\n.fa-expand:before {\n  content: \"\\F065\";\n}\n.fa-compress:before {\n  content: \"\\F066\";\n}\n.fa-plus:before {\n  content: \"\\F067\";\n}\n.fa-minus:before {\n  content: \"\\F068\";\n}\n.fa-asterisk:before {\n  content: \"\\F069\";\n}\n.fa-exclamation-circle:before {\n  content: \"\\F06A\";\n}\n.fa-gift:before {\n  content: \"\\F06B\";\n}\n.fa-leaf:before {\n  content: \"\\F06C\";\n}\n.fa-fire:before {\n  content: \"\\F06D\";\n}\n.fa-eye:before {\n  content: \"\\F06E\";\n}\n.fa-eye-slash:before {\n  content: \"\\F070\";\n}\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\";\n}\n.fa-plane:before {\n  content: \"\\F072\";\n}\n.fa-calendar:before {\n  content: \"\\F073\";\n}\n.fa-random:before {\n  content: \"\\F074\";\n}\n.fa-comment:before {\n  content: \"\\F075\";\n}\n.fa-magnet:before {\n  content: \"\\F076\";\n}\n.fa-chevron-up:before {\n  content: \"\\F077\";\n}\n.fa-chevron-down:before {\n  content: \"\\F078\";\n}\n.fa-retweet:before {\n  content: \"\\F079\";\n}\n.fa-shopping-cart:before {\n  content: \"\\F07A\";\n}\n.fa-folder:before {\n  content: \"\\F07B\";\n}\n.fa-folder-open:before {\n  content: \"\\F07C\";\n}\n.fa-arrows-v:before {\n  content: \"\\F07D\";\n}\n.fa-arrows-h:before {\n  content: \"\\F07E\";\n}\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\";\n}\n.fa-twitter-square:before {\n  content: \"\\F081\";\n}\n.fa-facebook-square:before {\n  content: \"\\F082\";\n}\n.fa-camera-retro:before {\n  content: \"\\F083\";\n}\n.fa-key:before {\n  content: \"\\F084\";\n}\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\";\n}\n.fa-comments:before {\n  content: \"\\F086\";\n}\n.fa-thumbs-o-up:before {\n  content: \"\\F087\";\n}\n.fa-thumbs-o-down:before {\n  content: \"\\F088\";\n}\n.fa-star-half:before {\n  content: \"\\F089\";\n}\n.fa-heart-o:before {\n  content: \"\\F08A\";\n}\n.fa-sign-out:before {\n  content: \"\\F08B\";\n}\n.fa-linkedin-square:before {\n  content: \"\\F08C\";\n}\n.fa-thumb-tack:before {\n  content: \"\\F08D\";\n}\n.fa-external-link:before {\n  content: \"\\F08E\";\n}\n.fa-sign-in:before {\n  content: \"\\F090\";\n}\n.fa-trophy:before {\n  content: \"\\F091\";\n}\n.fa-github-square:before {\n  content: \"\\F092\";\n}\n.fa-upload:before {\n  content: \"\\F093\";\n}\n.fa-lemon-o:before {\n  content: \"\\F094\";\n}\n.fa-phone:before {\n  content: \"\\F095\";\n}\n.fa-square-o:before {\n  content: \"\\F096\";\n}\n.fa-bookmark-o:before {\n  content: \"\\F097\";\n}\n.fa-phone-square:before {\n  content: \"\\F098\";\n}\n.fa-twitter:before {\n  content: \"\\F099\";\n}\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\";\n}\n.fa-github:before {\n  content: \"\\F09B\";\n}\n.fa-unlock:before {\n  content: \"\\F09C\";\n}\n.fa-credit-card:before {\n  content: \"\\F09D\";\n}\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\";\n}\n.fa-hdd-o:before {\n  content: \"\\F0A0\";\n}\n.fa-bullhorn:before {\n  content: \"\\F0A1\";\n}\n.fa-bell:before {\n  content: \"\\F0F3\";\n}\n.fa-certificate:before {\n  content: \"\\F0A3\";\n}\n.fa-hand-o-right:before {\n  content: \"\\F0A4\";\n}\n.fa-hand-o-left:before {\n  content: \"\\F0A5\";\n}\n.fa-hand-o-up:before {\n  content: \"\\F0A6\";\n}\n.fa-hand-o-down:before {\n  content: \"\\F0A7\";\n}\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\";\n}\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\";\n}\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\";\n}\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\";\n}\n.fa-globe:before {\n  content: \"\\F0AC\";\n}\n.fa-wrench:before {\n  content: \"\\F0AD\";\n}\n.fa-tasks:before {\n  content: \"\\F0AE\";\n}\n.fa-filter:before {\n  content: \"\\F0B0\";\n}\n.fa-briefcase:before {\n  content: \"\\F0B1\";\n}\n.fa-arrows-alt:before {\n  content: \"\\F0B2\";\n}\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\";\n}\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\";\n}\n.fa-cloud:before {\n  content: \"\\F0C2\";\n}\n.fa-flask:before {\n  content: \"\\F0C3\";\n}\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\";\n}\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\";\n}\n.fa-paperclip:before {\n  content: \"\\F0C6\";\n}\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\";\n}\n.fa-square:before {\n  content: \"\\F0C8\";\n}\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\";\n}\n.fa-list-ul:before {\n  content: \"\\F0CA\";\n}\n.fa-list-ol:before {\n  content: \"\\F0CB\";\n}\n.fa-strikethrough:before {\n  content: \"\\F0CC\";\n}\n.fa-underline:before {\n  content: \"\\F0CD\";\n}\n.fa-table:before {\n  content: \"\\F0CE\";\n}\n.fa-magic:before {\n  content: \"\\F0D0\";\n}\n.fa-truck:before {\n  content: \"\\F0D1\";\n}\n.fa-pinterest:before {\n  content: \"\\F0D2\";\n}\n.fa-pinterest-square:before {\n  content: \"\\F0D3\";\n}\n.fa-google-plus-square:before {\n  content: \"\\F0D4\";\n}\n.fa-google-plus:before {\n  content: \"\\F0D5\";\n}\n.fa-money:before {\n  content: \"\\F0D6\";\n}\n.fa-caret-down:before {\n  content: \"\\F0D7\";\n}\n.fa-caret-up:before {\n  content: \"\\F0D8\";\n}\n.fa-caret-left:before {\n  content: \"\\F0D9\";\n}\n.fa-caret-right:before {\n  content: \"\\F0DA\";\n}\n.fa-columns:before {\n  content: \"\\F0DB\";\n}\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\";\n}\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\";\n}\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\";\n}\n.fa-envelope:before {\n  content: \"\\F0E0\";\n}\n.fa-linkedin:before {\n  content: \"\\F0E1\";\n}\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\";\n}\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\";\n}\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\";\n}\n.fa-comment-o:before {\n  content: \"\\F0E5\";\n}\n.fa-comments-o:before {\n  content: \"\\F0E6\";\n}\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\";\n}\n.fa-sitemap:before {\n  content: \"\\F0E8\";\n}\n.fa-umbrella:before {\n  content: \"\\F0E9\";\n}\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\";\n}\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\";\n}\n.fa-exchange:before {\n  content: \"\\F0EC\";\n}\n.fa-cloud-download:before {\n  content: \"\\F0ED\";\n}\n.fa-cloud-upload:before {\n  content: \"\\F0EE\";\n}\n.fa-user-md:before {\n  content: \"\\F0F0\";\n}\n.fa-stethoscope:before {\n  content: \"\\F0F1\";\n}\n.fa-suitcase:before {\n  content: \"\\F0F2\";\n}\n.fa-bell-o:before {\n  content: \"\\F0A2\";\n}\n.fa-coffee:before {\n  content: \"\\F0F4\";\n}\n.fa-cutlery:before {\n  content: \"\\F0F5\";\n}\n.fa-file-text-o:before {\n  content: \"\\F0F6\";\n}\n.fa-building-o:before {\n  content: \"\\F0F7\";\n}\n.fa-hospital-o:before {\n  content: \"\\F0F8\";\n}\n.fa-ambulance:before {\n  content: \"\\F0F9\";\n}\n.fa-medkit:before {\n  content: \"\\F0FA\";\n}\n.fa-fighter-jet:before {\n  content: \"\\F0FB\";\n}\n.fa-beer:before {\n  content: \"\\F0FC\";\n}\n.fa-h-square:before {\n  content: \"\\F0FD\";\n}\n.fa-plus-square:before {\n  content: \"\\F0FE\";\n}\n.fa-angle-double-left:before {\n  content: \"\\F100\";\n}\n.fa-angle-double-right:before {\n  content: \"\\F101\";\n}\n.fa-angle-double-up:before {\n  content: \"\\F102\";\n}\n.fa-angle-double-down:before {\n  content: \"\\F103\";\n}\n.fa-angle-left:before {\n  content: \"\\F104\";\n}\n.fa-angle-right:before {\n  content: \"\\F105\";\n}\n.fa-angle-up:before {\n  content: \"\\F106\";\n}\n.fa-angle-down:before {\n  content: \"\\F107\";\n}\n.fa-desktop:before {\n  content: \"\\F108\";\n}\n.fa-laptop:before {\n  content: \"\\F109\";\n}\n.fa-tablet:before {\n  content: \"\\F10A\";\n}\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\";\n}\n.fa-circle-o:before {\n  content: \"\\F10C\";\n}\n.fa-quote-left:before {\n  content: \"\\F10D\";\n}\n.fa-quote-right:before {\n  content: \"\\F10E\";\n}\n.fa-spinner:before {\n  content: \"\\F110\";\n}\n.fa-circle:before {\n  content: \"\\F111\";\n}\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\";\n}\n.fa-github-alt:before {\n  content: \"\\F113\";\n}\n.fa-folder-o:before {\n  content: \"\\F114\";\n}\n.fa-folder-open-o:before {\n  content: \"\\F115\";\n}\n.fa-smile-o:before {\n  content: \"\\F118\";\n}\n.fa-frown-o:before {\n  content: \"\\F119\";\n}\n.fa-meh-o:before {\n  content: \"\\F11A\";\n}\n.fa-gamepad:before {\n  content: \"\\F11B\";\n}\n.fa-keyboard-o:before {\n  content: \"\\F11C\";\n}\n.fa-flag-o:before {\n  content: \"\\F11D\";\n}\n.fa-flag-checkered:before {\n  content: \"\\F11E\";\n}\n.fa-terminal:before {\n  content: \"\\F120\";\n}\n.fa-code:before {\n  content: \"\\F121\";\n}\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\";\n}\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\";\n}\n.fa-location-arrow:before {\n  content: \"\\F124\";\n}\n.fa-crop:before {\n  content: \"\\F125\";\n}\n.fa-code-fork:before {\n  content: \"\\F126\";\n}\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\";\n}\n.fa-question:before {\n  content: \"\\F128\";\n}\n.fa-info:before {\n  content: \"\\F129\";\n}\n.fa-exclamation:before {\n  content: \"\\F12A\";\n}\n.fa-superscript:before {\n  content: \"\\F12B\";\n}\n.fa-subscript:before {\n  content: \"\\F12C\";\n}\n.fa-eraser:before {\n  content: \"\\F12D\";\n}\n.fa-puzzle-piece:before {\n  content: \"\\F12E\";\n}\n.fa-microphone:before {\n  content: \"\\F130\";\n}\n.fa-microphone-slash:before {\n  content: \"\\F131\";\n}\n.fa-shield:before {\n  content: \"\\F132\";\n}\n.fa-calendar-o:before {\n  content: \"\\F133\";\n}\n.fa-fire-extinguisher:before {\n  content: \"\\F134\";\n}\n.fa-rocket:before {\n  content: \"\\F135\";\n}\n.fa-maxcdn:before {\n  content: \"\\F136\";\n}\n.fa-chevron-circle-left:before {\n  content: \"\\F137\";\n}\n.fa-chevron-circle-right:before {\n  content: \"\\F138\";\n}\n.fa-chevron-circle-up:before {\n  content: \"\\F139\";\n}\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\";\n}\n.fa-html5:before {\n  content: \"\\F13B\";\n}\n.fa-css3:before {\n  content: \"\\F13C\";\n}\n.fa-anchor:before {\n  content: \"\\F13D\";\n}\n.fa-unlock-alt:before {\n  content: \"\\F13E\";\n}\n.fa-bullseye:before {\n  content: \"\\F140\";\n}\n.fa-ellipsis-h:before {\n  content: \"\\F141\";\n}\n.fa-ellipsis-v:before {\n  content: \"\\F142\";\n}\n.fa-rss-square:before {\n  content: \"\\F143\";\n}\n.fa-play-circle:before {\n  content: \"\\F144\";\n}\n.fa-ticket:before {\n  content: \"\\F145\";\n}\n.fa-minus-square:before {\n  content: \"\\F146\";\n}\n.fa-minus-square-o:before {\n  content: \"\\F147\";\n}\n.fa-level-up:before {\n  content: \"\\F148\";\n}\n.fa-level-down:before {\n  content: \"\\F149\";\n}\n.fa-check-square:before {\n  content: \"\\F14A\";\n}\n.fa-pencil-square:before {\n  content: \"\\F14B\";\n}\n.fa-external-link-square:before {\n  content: \"\\F14C\";\n}\n.fa-share-square:before {\n  content: \"\\F14D\";\n}\n.fa-compass:before {\n  content: \"\\F14E\";\n}\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\";\n}\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\";\n}\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\";\n}\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\";\n}\n.fa-gbp:before {\n  content: \"\\F154\";\n}\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\";\n}\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\";\n}\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\";\n}\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\";\n}\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\";\n}\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\";\n}\n.fa-file:before {\n  content: \"\\F15B\";\n}\n.fa-file-text:before {\n  content: \"\\F15C\";\n}\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\";\n}\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\";\n}\n.fa-sort-amount-asc:before {\n  content: \"\\F160\";\n}\n.fa-sort-amount-desc:before {\n  content: \"\\F161\";\n}\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\";\n}\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\";\n}\n.fa-thumbs-up:before {\n  content: \"\\F164\";\n}\n.fa-thumbs-down:before {\n  content: \"\\F165\";\n}\n.fa-youtube-square:before {\n  content: \"\\F166\";\n}\n.fa-youtube:before {\n  content: \"\\F167\";\n}\n.fa-xing:before {\n  content: \"\\F168\";\n}\n.fa-xing-square:before {\n  content: \"\\F169\";\n}\n.fa-youtube-play:before {\n  content: \"\\F16A\";\n}\n.fa-dropbox:before {\n  content: \"\\F16B\";\n}\n.fa-stack-overflow:before {\n  content: \"\\F16C\";\n}\n.fa-instagram:before {\n  content: \"\\F16D\";\n}\n.fa-flickr:before {\n  content: \"\\F16E\";\n}\n.fa-adn:before {\n  content: \"\\F170\";\n}\n.fa-bitbucket:before {\n  content: \"\\F171\";\n}\n.fa-bitbucket-square:before {\n  content: \"\\F172\";\n}\n.fa-tumblr:before {\n  content: \"\\F173\";\n}\n.fa-tumblr-square:before {\n  content: \"\\F174\";\n}\n.fa-long-arrow-down:before {\n  content: \"\\F175\";\n}\n.fa-long-arrow-up:before {\n  content: \"\\F176\";\n}\n.fa-long-arrow-left:before {\n  content: \"\\F177\";\n}\n.fa-long-arrow-right:before {\n  content: \"\\F178\";\n}\n.fa-apple:before {\n  content: \"\\F179\";\n}\n.fa-windows:before {\n  content: \"\\F17A\";\n}\n.fa-android:before {\n  content: \"\\F17B\";\n}\n.fa-linux:before {\n  content: \"\\F17C\";\n}\n.fa-dribbble:before {\n  content: \"\\F17D\";\n}\n.fa-skype:before {\n  content: \"\\F17E\";\n}\n.fa-foursquare:before {\n  content: \"\\F180\";\n}\n.fa-trello:before {\n  content: \"\\F181\";\n}\n.fa-female:before {\n  content: \"\\F182\";\n}\n.fa-male:before {\n  content: \"\\F183\";\n}\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\";\n}\n.fa-sun-o:before {\n  content: \"\\F185\";\n}\n.fa-moon-o:before {\n  content: \"\\F186\";\n}\n.fa-archive:before {\n  content: \"\\F187\";\n}\n.fa-bug:before {\n  content: \"\\F188\";\n}\n.fa-vk:before {\n  content: \"\\F189\";\n}\n.fa-weibo:before {\n  content: \"\\F18A\";\n}\n.fa-renren:before {\n  content: \"\\F18B\";\n}\n.fa-pagelines:before {\n  content: \"\\F18C\";\n}\n.fa-stack-exchange:before {\n  content: \"\\F18D\";\n}\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\";\n}\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\";\n}\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\";\n}\n.fa-dot-circle-o:before {\n  content: \"\\F192\";\n}\n.fa-wheelchair:before {\n  content: \"\\F193\";\n}\n.fa-vimeo-square:before {\n  content: \"\\F194\";\n}\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\";\n}\n.fa-plus-square-o:before {\n  content: \"\\F196\";\n}\n.fa-space-shuttle:before {\n  content: \"\\F197\";\n}\n.fa-slack:before {\n  content: \"\\F198\";\n}\n.fa-envelope-square:before {\n  content: \"\\F199\";\n}\n.fa-wordpress:before {\n  content: \"\\F19A\";\n}\n.fa-openid:before {\n  content: \"\\F19B\";\n}\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\";\n}\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\";\n}\n.fa-yahoo:before {\n  content: \"\\F19E\";\n}\n.fa-google:before {\n  content: \"\\F1A0\";\n}\n.fa-reddit:before {\n  content: \"\\F1A1\";\n}\n.fa-reddit-square:before {\n  content: \"\\F1A2\";\n}\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\";\n}\n.fa-stumbleupon:before {\n  content: \"\\F1A4\";\n}\n.fa-delicious:before {\n  content: \"\\F1A5\";\n}\n.fa-digg:before {\n  content: \"\\F1A6\";\n}\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\";\n}\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\";\n}\n.fa-drupal:before {\n  content: \"\\F1A9\";\n}\n.fa-joomla:before {\n  content: \"\\F1AA\";\n}\n.fa-language:before {\n  content: \"\\F1AB\";\n}\n.fa-fax:before {\n  content: \"\\F1AC\";\n}\n.fa-building:before {\n  content: \"\\F1AD\";\n}\n.fa-child:before {\n  content: \"\\F1AE\";\n}\n.fa-paw:before {\n  content: \"\\F1B0\";\n}\n.fa-spoon:before {\n  content: \"\\F1B1\";\n}\n.fa-cube:before {\n  content: \"\\F1B2\";\n}\n.fa-cubes:before {\n  content: \"\\F1B3\";\n}\n.fa-behance:before {\n  content: \"\\F1B4\";\n}\n.fa-behance-square:before {\n  content: \"\\F1B5\";\n}\n.fa-steam:before {\n  content: \"\\F1B6\";\n}\n.fa-steam-square:before {\n  content: \"\\F1B7\";\n}\n.fa-recycle:before {\n  content: \"\\F1B8\";\n}\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\";\n}\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\";\n}\n.fa-tree:before {\n  content: \"\\F1BB\";\n}\n.fa-spotify:before {\n  content: \"\\F1BC\";\n}\n.fa-deviantart:before {\n  content: \"\\F1BD\";\n}\n.fa-soundcloud:before {\n  content: \"\\F1BE\";\n}\n.fa-database:before {\n  content: \"\\F1C0\";\n}\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\";\n}\n.fa-file-word-o:before {\n  content: \"\\F1C2\";\n}\n.fa-file-excel-o:before {\n  content: \"\\F1C3\";\n}\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\";\n}\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\";\n}\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\";\n}\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\";\n}\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\";\n}\n.fa-file-code-o:before {\n  content: \"\\F1C9\";\n}\n.fa-vine:before {\n  content: \"\\F1CA\";\n}\n.fa-codepen:before {\n  content: \"\\F1CB\";\n}\n.fa-jsfiddle:before {\n  content: \"\\F1CC\";\n}\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\";\n}\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\";\n}\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\";\n}\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\";\n}\n.fa-git-square:before {\n  content: \"\\F1D2\";\n}\n.fa-git:before {\n  content: \"\\F1D3\";\n}\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\";\n}\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\";\n}\n.fa-qq:before {\n  content: \"\\F1D6\";\n}\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\";\n}\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\";\n}\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\";\n}\n.fa-history:before {\n  content: \"\\F1DA\";\n}\n.fa-circle-thin:before {\n  content: \"\\F1DB\";\n}\n.fa-header:before {\n  content: \"\\F1DC\";\n}\n.fa-paragraph:before {\n  content: \"\\F1DD\";\n}\n.fa-sliders:before {\n  content: \"\\F1DE\";\n}\n.fa-share-alt:before {\n  content: \"\\F1E0\";\n}\n.fa-share-alt-square:before {\n  content: \"\\F1E1\";\n}\n.fa-bomb:before {\n  content: \"\\F1E2\";\n}\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\";\n}\n.fa-tty:before {\n  content: \"\\F1E4\";\n}\n.fa-binoculars:before {\n  content: \"\\F1E5\";\n}\n.fa-plug:before {\n  content: \"\\F1E6\";\n}\n.fa-slideshare:before {\n  content: \"\\F1E7\";\n}\n.fa-twitch:before {\n  content: \"\\F1E8\";\n}\n.fa-yelp:before {\n  content: \"\\F1E9\";\n}\n.fa-newspaper-o:before {\n  content: \"\\F1EA\";\n}\n.fa-wifi:before {\n  content: \"\\F1EB\";\n}\n.fa-calculator:before {\n  content: \"\\F1EC\";\n}\n.fa-paypal:before {\n  content: \"\\F1ED\";\n}\n.fa-google-wallet:before {\n  content: \"\\F1EE\";\n}\n.fa-cc-visa:before {\n  content: \"\\F1F0\";\n}\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\";\n}\n.fa-cc-discover:before {\n  content: \"\\F1F2\";\n}\n.fa-cc-amex:before {\n  content: \"\\F1F3\";\n}\n.fa-cc-paypal:before {\n  content: \"\\F1F4\";\n}\n.fa-cc-stripe:before {\n  content: \"\\F1F5\";\n}\n.fa-bell-slash:before {\n  content: \"\\F1F6\";\n}\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\";\n}\n.fa-trash:before {\n  content: \"\\F1F8\";\n}\n.fa-copyright:before {\n  content: \"\\F1F9\";\n}\n.fa-at:before {\n  content: \"\\F1FA\";\n}\n.fa-eyedropper:before {\n  content: \"\\F1FB\";\n}\n.fa-paint-brush:before {\n  content: \"\\F1FC\";\n}\n.fa-birthday-cake:before {\n  content: \"\\F1FD\";\n}\n.fa-area-chart:before {\n  content: \"\\F1FE\";\n}\n.fa-pie-chart:before {\n  content: \"\\F200\";\n}\n.fa-line-chart:before {\n  content: \"\\F201\";\n}\n.fa-lastfm:before {\n  content: \"\\F202\";\n}\n.fa-lastfm-square:before {\n  content: \"\\F203\";\n}\n.fa-toggle-off:before {\n  content: \"\\F204\";\n}\n.fa-toggle-on:before {\n  content: \"\\F205\";\n}\n.fa-bicycle:before {\n  content: \"\\F206\";\n}\n.fa-bus:before {\n  content: \"\\F207\";\n}\n.fa-ioxhost:before {\n  content: \"\\F208\";\n}\n.fa-angellist:before {\n  content: \"\\F209\";\n}\n.fa-cc:before {\n  content: \"\\F20A\";\n}\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\";\n}\n.fa-meanpath:before {\n  content: \"\\F20C\";\n}\n.fa-buysellads:before {\n  content: \"\\F20D\";\n}\n.fa-connectdevelop:before {\n  content: \"\\F20E\";\n}\n.fa-dashcube:before {\n  content: \"\\F210\";\n}\n.fa-forumbee:before {\n  content: \"\\F211\";\n}\n.fa-leanpub:before {\n  content: \"\\F212\";\n}\n.fa-sellsy:before {\n  content: \"\\F213\";\n}\n.fa-shirtsinbulk:before {\n  content: \"\\F214\";\n}\n.fa-simplybuilt:before {\n  content: \"\\F215\";\n}\n.fa-skyatlas:before {\n  content: \"\\F216\";\n}\n.fa-cart-plus:before {\n  content: \"\\F217\";\n}\n.fa-cart-arrow-down:before {\n  content: \"\\F218\";\n}\n.fa-diamond:before {\n  content: \"\\F219\";\n}\n.fa-ship:before {\n  content: \"\\F21A\";\n}\n.fa-user-secret:before {\n  content: \"\\F21B\";\n}\n.fa-motorcycle:before {\n  content: \"\\F21C\";\n}\n.fa-street-view:before {\n  content: \"\\F21D\";\n}\n.fa-heartbeat:before {\n  content: \"\\F21E\";\n}\n.fa-venus:before {\n  content: \"\\F221\";\n}\n.fa-mars:before {\n  content: \"\\F222\";\n}\n.fa-mercury:before {\n  content: \"\\F223\";\n}\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\";\n}\n.fa-transgender-alt:before {\n  content: \"\\F225\";\n}\n.fa-venus-double:before {\n  content: \"\\F226\";\n}\n.fa-mars-double:before {\n  content: \"\\F227\";\n}\n.fa-venus-mars:before {\n  content: \"\\F228\";\n}\n.fa-mars-stroke:before {\n  content: \"\\F229\";\n}\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\";\n}\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\";\n}\n.fa-neuter:before {\n  content: \"\\F22C\";\n}\n.fa-genderless:before {\n  content: \"\\F22D\";\n}\n.fa-facebook-official:before {\n  content: \"\\F230\";\n}\n.fa-pinterest-p:before {\n  content: \"\\F231\";\n}\n.fa-whatsapp:before {\n  content: \"\\F232\";\n}\n.fa-server:before {\n  content: \"\\F233\";\n}\n.fa-user-plus:before {\n  content: \"\\F234\";\n}\n.fa-user-times:before {\n  content: \"\\F235\";\n}\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\";\n}\n.fa-viacoin:before {\n  content: \"\\F237\";\n}\n.fa-train:before {\n  content: \"\\F238\";\n}\n.fa-subway:before {\n  content: \"\\F239\";\n}\n.fa-medium:before {\n  content: \"\\F23A\";\n}\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\";\n}\n.fa-optin-monster:before {\n  content: \"\\F23C\";\n}\n.fa-opencart:before {\n  content: \"\\F23D\";\n}\n.fa-expeditedssl:before {\n  content: \"\\F23E\";\n}\n.fa-battery-4:before,\n.fa-battery-full:before {\n  content: \"\\F240\";\n}\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\";\n}\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\";\n}\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\";\n}\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\";\n}\n.fa-mouse-pointer:before {\n  content: \"\\F245\";\n}\n.fa-i-cursor:before {\n  content: \"\\F246\";\n}\n.fa-object-group:before {\n  content: \"\\F247\";\n}\n.fa-object-ungroup:before {\n  content: \"\\F248\";\n}\n.fa-sticky-note:before {\n  content: \"\\F249\";\n}\n.fa-sticky-note-o:before {\n  content: \"\\F24A\";\n}\n.fa-cc-jcb:before {\n  content: \"\\F24B\";\n}\n.fa-cc-diners-club:before {\n  content: \"\\F24C\";\n}\n.fa-clone:before {\n  content: \"\\F24D\";\n}\n.fa-balance-scale:before {\n  content: \"\\F24E\";\n}\n.fa-hourglass-o:before {\n  content: \"\\F250\";\n}\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\";\n}\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\";\n}\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\";\n}\n.fa-hourglass:before {\n  content: \"\\F254\";\n}\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\";\n}\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\";\n}\n.fa-hand-scissors-o:before {\n  content: \"\\F257\";\n}\n.fa-hand-lizard-o:before {\n  content: \"\\F258\";\n}\n.fa-hand-spock-o:before {\n  content: \"\\F259\";\n}\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\";\n}\n.fa-hand-peace-o:before {\n  content: \"\\F25B\";\n}\n.fa-trademark:before {\n  content: \"\\F25C\";\n}\n.fa-registered:before {\n  content: \"\\F25D\";\n}\n.fa-creative-commons:before {\n  content: \"\\F25E\";\n}\n.fa-gg:before {\n  content: \"\\F260\";\n}\n.fa-gg-circle:before {\n  content: \"\\F261\";\n}\n.fa-tripadvisor:before {\n  content: \"\\F262\";\n}\n.fa-odnoklassniki:before {\n  content: \"\\F263\";\n}\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\";\n}\n.fa-get-pocket:before {\n  content: \"\\F265\";\n}\n.fa-wikipedia-w:before {\n  content: \"\\F266\";\n}\n.fa-safari:before {\n  content: \"\\F267\";\n}\n.fa-chrome:before {\n  content: \"\\F268\";\n}\n.fa-firefox:before {\n  content: \"\\F269\";\n}\n.fa-opera:before {\n  content: \"\\F26A\";\n}\n.fa-internet-explorer:before {\n  content: \"\\F26B\";\n}\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\";\n}\n.fa-contao:before {\n  content: \"\\F26D\";\n}\n.fa-500px:before {\n  content: \"\\F26E\";\n}\n.fa-amazon:before {\n  content: \"\\F270\";\n}\n.fa-calendar-plus-o:before {\n  content: \"\\F271\";\n}\n.fa-calendar-minus-o:before {\n  content: \"\\F272\";\n}\n.fa-calendar-times-o:before {\n  content: \"\\F273\";\n}\n.fa-calendar-check-o:before {\n  content: \"\\F274\";\n}\n.fa-industry:before {\n  content: \"\\F275\";\n}\n.fa-map-pin:before {\n  content: \"\\F276\";\n}\n.fa-map-signs:before {\n  content: \"\\F277\";\n}\n.fa-map-o:before {\n  content: \"\\F278\";\n}\n.fa-map:before {\n  content: \"\\F279\";\n}\n.fa-commenting:before {\n  content: \"\\F27A\";\n}\n.fa-commenting-o:before {\n  content: \"\\F27B\";\n}\n.fa-houzz:before {\n  content: \"\\F27C\";\n}\n.fa-vimeo:before {\n  content: \"\\F27D\";\n}\n.fa-black-tie:before {\n  content: \"\\F27E\";\n}\n.fa-fonticons:before {\n  content: \"\\F280\";\n}\n.fa-reddit-alien:before {\n  content: \"\\F281\";\n}\n.fa-edge:before {\n  content: \"\\F282\";\n}\n.fa-credit-card-alt:before {\n  content: \"\\F283\";\n}\n.fa-codiepie:before {\n  content: \"\\F284\";\n}\n.fa-modx:before {\n  content: \"\\F285\";\n}\n.fa-fort-awesome:before {\n  content: \"\\F286\";\n}\n.fa-usb:before {\n  content: \"\\F287\";\n}\n.fa-product-hunt:before {\n  content: \"\\F288\";\n}\n.fa-mixcloud:before {\n  content: \"\\F289\";\n}\n.fa-scribd:before {\n  content: \"\\F28A\";\n}\n.fa-pause-circle:before {\n  content: \"\\F28B\";\n}\n.fa-pause-circle-o:before {\n  content: \"\\F28C\";\n}\n.fa-stop-circle:before {\n  content: \"\\F28D\";\n}\n.fa-stop-circle-o:before {\n  content: \"\\F28E\";\n}\n.fa-shopping-bag:before {\n  content: \"\\F290\";\n}\n.fa-shopping-basket:before {\n  content: \"\\F291\";\n}\n.fa-hashtag:before {\n  content: \"\\F292\";\n}\n.fa-bluetooth:before {\n  content: \"\\F293\";\n}\n.fa-bluetooth-b:before {\n  content: \"\\F294\";\n}\n.fa-percent:before {\n  content: \"\\F295\";\n}\n.fa-gitlab:before {\n  content: \"\\F296\";\n}\n.fa-wpbeginner:before {\n  content: \"\\F297\";\n}\n.fa-wpforms:before {\n  content: \"\\F298\";\n}\n.fa-envira:before {\n  content: \"\\F299\";\n}\n.fa-universal-access:before {\n  content: \"\\F29A\";\n}\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\";\n}\n.fa-question-circle-o:before {\n  content: \"\\F29C\";\n}\n.fa-blind:before {\n  content: \"\\F29D\";\n}\n.fa-audio-description:before {\n  content: \"\\F29E\";\n}\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\";\n}\n.fa-braille:before {\n  content: \"\\F2A1\";\n}\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\";\n}\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\";\n}\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\";\n}\n.fa-glide:before {\n  content: \"\\F2A5\";\n}\n.fa-glide-g:before {\n  content: \"\\F2A6\";\n}\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\";\n}\n.fa-low-vision:before {\n  content: \"\\F2A8\";\n}\n.fa-viadeo:before {\n  content: \"\\F2A9\";\n}\n.fa-viadeo-square:before {\n  content: \"\\F2AA\";\n}\n.fa-snapchat:before {\n  content: \"\\F2AB\";\n}\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\";\n}\n.fa-snapchat-square:before {\n  content: \"\\F2AD\";\n}\n.fa-pied-piper:before {\n  content: \"\\F2AE\";\n}\n.fa-first-order:before {\n  content: \"\\F2B0\";\n}\n.fa-yoast:before {\n  content: \"\\F2B1\";\n}\n.fa-themeisle:before {\n  content: \"\\F2B2\";\n}\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\";\n}\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\";\n}\n.n3-slider {\n  display: inline-block;\n  vertical-align: middle;\n  position: relative;\n}\n.n3-slider-horizontal {\n  width: 210px;\n  height: 20px;\n}\n.n3-slider-horizontal .n3-slider-track {\n  height: 8px;\n  width: 100%;\n  margin-top: -5px;\n  top: 50%;\n  left: 0;\n}\n.n3-slider-horizontal .n3-slider-selection,\n.n3-slider-horizontal .n3-slider-track-low,\n.n3-slider-horizontal .n3-slider-track-high {\n  height: 100%;\n  top: 0;\n  bottom: 0;\n}\n.n3-slider-horizontal .n3-slider-tick,\n.n3-slider-horizontal .n3-slider-handle {\n  margin-left: -10px;\n  margin-top: -5px;\n}\n.n3-slider-horizontal .n3-slider-tick-label-container {\n  white-space: nowrap;\n}\n.n3-slider-horizontal .n3-slider-tick-label-container .n3-slider-tick-label {\n  margin-top: 24px;\n  display: inline-block;\n  text-align: center;\n}\n.n3-slider-horizontal .n3-slider-tick-label-container .n3-slider-tick-label {\n  margin-top: 24px;\n  display: inline-block;\n  text-align: center;\n}\n.n3-slider-vertical {\n  height: 210px;\n  width: 20px;\n}\n.n3-slider-vertical .n3-slider-track {\n  width: 10px;\n  height: 100%;\n  margin-left: -5px;\n  left: 50%;\n  top: 0;\n}\n.n3-slider-vertical .n3-slider-selection {\n  width: 100%;\n  left: 0;\n  top: 0;\n  bottom: 0;\n}\n.n3-slider-vertical .n3-slider-track-low,\n.n3-slider-vertical .n3-slider-track-high {\n  width: 100%;\n  left: 0;\n  right: 0;\n}\n.n3-slider-vertical .n3-slider-tick,\n.n3-slider-vertical .n3-slider-handle {\n  margin-left: -5px;\n  margin-top: -10px;\n}\n.n3-slider-disabled .n3-slider-handle {\n  background-image: linear-gradient(to bottom, rgba(65, 202, 192, 0.1) 0%, #ddd 100%);\n  background-repeat: repeat-x;\n}\n.n3-slider-disabled .n3-slider-track {\n  background-image: linear-gradient(to bottom, rgba(65, 202, 192, 0.1) 0%, #ddd 100%);\n  background-repeat: repeat-x;\n  cursor: not-allowed;\n}\n.n3-slider input {\n  display: none;\n}\n.n3-slider .n3-tooltip.n3-tooltip-top {\n  margin-top: -46px;\n}\n.n3-slider .n3-tooltip-inner {\n  white-space: nowrap;\n}\n.n3-slider-hide {\n  display: none;\n}\n.n3-slider-track {\n  position: absolute;\n  cursor: pointer;\n  background: #f9f9f9;\n  border-radius: 4px;\n}\n.n3-slider-selection {\n  position: absolute;\n  background: #41cac0;\n  box-sizing: border-box;\n  border-radius: 4px;\n}\n.n3-slider-selection.n3-slider-tick-slider-selection {\n  background-image: linear-gradient(to bottom, #41cac0 0%, #39b2a9 100%);\n  background-repeat: repeat-x;\n}\n.n3-slider-track-low,\n.n3-slider-track-high {\n  position: absolute;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 4px;\n}\n.n3-slider-handle {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background-color: #fff;\n  border: 3px solid #41cac0;\n}\n.n3-slider-handle.n3-slider-round {\n  border-radius: 50%;\n}\n.n3-slider-tick {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background-image: linear-gradient(to bottom, #f9f9f9 0%, #ddd 100%);\n  background-repeat: repeat-x;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);\n  box-sizing: border-box;\n  filter: none;\n  opacity: 0.8;\n  border: 0px solid transparent;\n}\n.n3-slider-tick.n3-slider-round {\n  border-radius: 50%;\n}\n.n3-slider-vertical .n3-slider-selection {\n  height: 0%;\n}\n.n3-slider-vertical .n3-slider-track-high {\n  height: 100%;\n}\n.n3-slider-horizontal .n3-tooltip.n3-tooltip-top {\n  margin-left: -15px;\n}\n.n3-slider-vertical .n3-tooltip.n3-tooltip-right {\n  margin-top: -16px;\n  margin-left: 16px;\n}\n.n3-tooltip.n3-slider-slider-tooltip-always {\n  display: block!important;\n}\n.n3-tooltip.n3-slider-slider-tooltip-hide {\n  display: none!important;\n}\n.collapse-transition {\n  transform: scaleY(1);\n  transition: all .3s ease;\n  transform-origin: 0 0;\n}\n.collapse-enter,\n.collapse-leave {\n  transform: scaleY(0);\n}\n.fadeLeft-transition {\n  transition: all .3s ease;\n  transform: translateX(0);\n  opacity: 1;\n}\n.fadeLeft-enter,\n.fadeLeft-leave {\n  transform: translateX(-10px);\n  opacity: 0;\n}\n.fade-transition {\n  transition: opacity .3s ease;\n  opacity: 1;\n}\n.fade-enter,\n.fade-leave {\n  opacity: 0;\n}\n.fadeDown-transition {\n  transition: all .3s ease;\n  transform: translateY(0);\n  opacity: 1;\n}\n.fadeDown-enter,\n.fadeDown-leave {\n  transform: translateY(-10px);\n  opacity: 0;\n}\n.bounce-enter {\n  animation: bounce-in 0.5s;\n}\n.bounce-leave {\n  animation: bounce-out 0.5s;\n}\n@keyframes bounce-in {\n  0% {\n    transform: scale(0);\n  }\n  50% {\n    transform: scale(1.5);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n@keyframes bounce-out {\n  0% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.5);\n  }\n  100% {\n    transform: scale(0);\n  }\n}\n.scale-transition,\n.fade-transition {\n  display: block;\n}\n.scale-enter {\n  animation: scale-in 0.15s ease-in;\n}\n.scale-leave {\n  animation: scale-out 0.15s ease-out;\n}\n@keyframes scale-in {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n@keyframes scale-out {\n  0% {\n    transform: scale(1);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(0);\n    opacity: 0;\n  }\n}\n.n3-aside-open {\n  transition: transform 0.3s;\n}\n.n3-aside-open.has-push-right {\n  transform: translateX(-300px);\n}\n.n3-aside {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  z-index: 1049;\n  overflow: auto;\n  background: #fff;\n}\n.n3-aside-left {\n  left: 0;\n  right: auto;\n}\n.n3-aside-right {\n  left: auto;\n  right: 0;\n}\n.n3-aside:focus {\n  outline: 0;\n}\n.n3-aside-dialog .n3-aside-header {\n  min-height: 16.43px;\n  padding: 6px 15px;\n  background: #41cac0;\n  color: #fff;\n}\n.n3-aside-dialog .n3-aside-header .n3-close {\n  margin-right: -8px;\n  padding: 4px 8px;\n  color: #fff;\n  font-size: 25px;\n  opacity: .8;\n}\n.n3-aside-dialog .n3-aside-body {\n  position: relative;\n  padding: 15px;\n}\n.n3-aside-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1040;\n  opacity: 0;\n  transition: opacity .3s ease;\n  background-color: #000;\n}\n.n3-aside-in {\n  opacity: .5;\n}\n.slideleft-enter {\n  animation: slideleft-in 0.3s;\n}\n.slideleft-leave {\n  animation: slideleft-out 0.3s;\n}\n@keyframes slideleft-in {\n  0% {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes slideleft-out {\n  0% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n}\n.slideright-enter {\n  animation: slideright-in 0.3s;\n}\n.slideright-leave {\n  animation: slideright-out 0.3s;\n}\n@keyframes slideright-in {\n  0% {\n    transform: translateX(100%);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes slideright-out {\n  0% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    transform: translateX(100%);\n    opacity: 0;\n  }\n}\n.n3-data-table .n3-page-loading {\n  z-index: 1;\n}\n.n3-data-table-search {\n  margin-top: 0px;\n  width: 200px;\n  display: inline-block;\n}\n.n3-data-table-bar {\n  margin-bottom: 10px;\n}\n.n3-data-table-page {\n  display: inline-block;\n}\n.n3-data-table-inner-btn {\n  height: 34px;\n}\n.n3-data-table-inner-btn .fa {\n  margin-top: 3px;\n}\n.n3-data-table-sort {\n  font-size: 15px;\n}\n.n3-data-table-sort .fa:hover {\n  cursor: pointer;\n}\n.n3-data-table-sort .fa-caret-up {\n  position: relative;\n  top: -4px;\n  left: 6px;\n}\n.n3-data-table-sort .fa-caret-down {\n  position: relative;\n  top: 5px;\n  left: -7px;\n}\n.n3-data-table-loading {\n  filter: blur(3px);\n}\n.n3-data-table .n3-table-bordered {\n  border-collapse: collapse;\n}\n.n3-data-table-row-select {\n  width: 40px;\n  text-align: center;\n  vertical-align: middle;\n}\n.n3-datepicker {\n  position: relative;\n  display: inline-block;\n}\n.n3-datepicker-popup {\n  position: absolute;\n  border: 1px solid #ccc;\n  background: #fff;\n  margin-top: 2px;\n  z-index: 1000;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);\n}\n.n3-datepicker-inner {\n  width: 268px;\n}\n.n3-datepicker-ctrl p,\n.n3-datepicker-ctrl span,\n.n3-datepicker-body span {\n  display: inline-block;\n  width: 38px;\n  line-height: 38px;\n  height: 38px;\n}\n.n3-datepicker-ctrl p {\n  width: 65%;\n}\n.n3-datepicker-ctrl span {\n  position: absolute;\n}\n.n3-datepicker-body span {\n  text-align: center;\n}\n.n3-datepicker-mouthRange span {\n  width: 44px;\n  height: 44px;\n  line-height: 45px;\n}\n.n3-datepicker-item-disable {\n  background-color: white!important;\n  cursor: not-allowed !important;\n}\n.n3-datepicker .n3-datepicker-decadeRange span:first-child,\n.n3-datepicker .n3-datepicker-decadeRange span:last-child,\n.n3-datepicker-item-disable,\n.n3-datepicker-item-gray {\n  color: #ccc;\n}\n.n3-datepicker-dateRange-item-active:hover,\n.n3-datepicker-dateRange-item-active {\n  background: #41cac0 !important;\n  color: white!important;\n}\n.n3-datepicker-mouthRange {\n  margin-top: 10px;\n}\n.n3-datepicker-mouthRange span,\n.n3-datepicker-ctrl span,\n.n3-datepicker-ctrl p,\n.n3-datepicker-dateRange span {\n  transition: all .3s ease;\n  cursor: pointer;\n}\n.n3-datepicker-mouthRange span:hover,\n.n3-datepicker-ctrl p:hover,\n.n3-datepicker-ctrl i:hover,\n.n3-datepicker-dateRange span:hover,\n.n3-datepicker-dateRange-item-hover {\n  background-color: rgba(65, 202, 192, 0.1);\n}\n.n3-datepicker-weekRange {\n  border-bottom: 1px solid #ddd;\n  border-top: 1px solid #ddd;\n}\n.n3-datepicker-weekRange span {\n  font-weight: bold;\n}\n.n3-datepicker-ctrl {\n  position: relative;\n  height: 38px;\n  line-height: 38px;\n  font-weight: bold;\n  text-align: center;\n}\n.n3-datepicker .n3-month-btn {\n  font-weight: bold;\n  user-select: none;\n}\n.n3-datepicker-preBtn {\n  left: 2px;\n}\n.n3-datepicker-nextBtn {\n  right: 2px;\n}\n.n3-timepicker {\n  display: inline-block;\n}\n.n3-timepicker-slider {\n  margin-top: 20px;\n}\n.n3-timepicker-popup {\n  position: absolute;\n  border: 1px solid #ccc;\n  background: #fff;\n  margin-top: 2px;\n  z-index: 1000;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);\n  padding: 10px 0px 0px;\n}\n.n3-timepicker-popup .slider-sin-wrap:after {\n  top: 5px;\n}\n.n3-timepicker-slider-sin-wrap {\n  float: left;\n  width: 20px;\n  height: 275px;\n  margin: 4px 14px;\n  position: relative;\n}\n.n3-timepicker-slider-sin-wrap:before {\n  padding-left: 2px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"hour\"] {\n  z-index: 10;\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"hour\"]:before {\n  content: \"\\65F6\";\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"minute\"] {\n  z-index: 9;\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"minute\"]:before {\n  content: \"\\5206\";\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"second\"] {\n  z-index: 8;\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"second\"]:before {\n  content: \"\\79D2\";\n}\n.n3-timepicker-slider-sin-wrap:after {\n  content: \":\";\n  position: absolute;\n  top: 27px;\n  left: 32px;\n}\n.n3-timepicker-slider-sin-wrap:last-child:after {\n  display: none;\n}\n.n3-datetimepicker .n3-datepicker-inner {\n  width: 268px;\n  display: inline-block;\n  border-right: 1px solid #ddd;\n  vertical-align: top;\n}\n.n3-datetimepicker .n3-timepicker-con {\n  display: inline-block;\n  margin-top: 10px;\n}\n.n3-datetimepicker .n3-timepicker-slider-sin-wrap > div {\n  margin-top: 25px;\n}\n.n3-datetimepicker .n3-timepicker-con .n3-timepicker-slider-sin-wrap:after {\n  top: 3px;\n}\n.n3-dropdown-con {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n}\n.n3-dropdown-con .n3-dropdown-menu {\n  display: block;\n}\n.n3-dropdown {\n  position: relative;\n}\n.n3-dropdown-toggle:focus {\n  outline: 0;\n}\n.n3-dropdown-menu {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  z-index: 1000;\n  display: none;\n  float: left;\n  min-width: 160px;\n  padding: 5px 0;\n  margin: 2px 0 0;\n  font-size: 14px;\n  text-align: left;\n  list-style: none;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid rgba(0, 0, 0, 0.15);\n  border-radius: 4px;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);\n  overflow: auto;\n}\n.n3-dropdown-menu.pull-right {\n  right: 0;\n  left: auto;\n}\n.n3-dropdown-menu > li > a {\n  display: block;\n  padding: 5px 20px;\n  clear: both;\n  font-weight: normal;\n  line-height: 1.42857143;\n  color: #333;\n  font-size: 13px;\n  white-space: nowrap;\n  cursor: pointer;\n  transition: all .3s ease;\n}\n.n3-dropdown-menu > li > a:hover,\n.n3-dropdown-menu > li > a:focus {\n  background-color: rgba(65, 202, 192, 0.1);\n  color: #333;\n  text-decoration: none;\n}\n.n3-dropdown-menu > .n3-dropdown-active > a,\n.n3-dropdown-menu > .n3-dropdown-active > a:hover,\n.n3-dropdown-menu > .n3-dropdown-active > a:focus {\n  color: #fff;\n  text-decoration: none;\n  background-color: #41cac0;\n  outline: 0;\n}\n.n3-dropdown-menu > .n3-dropdown-disabled > a,\n.n3-dropdown-menu > .n3-dropdown-disabled > a:hover,\n.n3-dropdown-menu > .n3-dropdown-disabled > a:focus {\n  color: #999;\n}\n.n3-dropdown-menu > .n3-dropdown-disabled > a:hover,\n.n3-dropdown-menu > .n3-dropdown-disabled > a:focus {\n  text-decoration: none;\n  cursor: not-allowed;\n  background-color: transparent;\n  background-image: none;\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);\n}\n.n3-btn.n3-dropdown-toggle,\n.n3-btn-group.n3-open .n3-dropdown-toggle {\n  box-shadow: none;\n}\n.n3-open > .n3-dropdown-menu {\n  display: block;\n}\n.n3-open > a {\n  outline: 0;\n}\n.pull-right > .n3-dropdown-menu {\n  right: 0;\n  left: auto;\n}\n.n3-navbar-fixed-bottom .n3-dropdown .n3-dropdown-menu {\n  top: auto;\n  bottom: 100%;\n  margin-bottom: 2px;\n}\n@media (min-width: 768px) {\n  .n3-navbar-right .n3-dropdown-menu {\n    right: 0;\n    left: auto;\n  }\n  .n3-navbar-right .n3-dropdown-menu-left {\n    right: auto;\n    left: 0;\n  }\n}\n.n3-form-control {\n  display: block;\n  width: 100%;\n  height: 34px;\n  padding: 6px 12px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #333;\n  background-color: #fff;\n  background-image: none;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;\n}\n.n3-form-control:focus {\n  border: 1px solid #41cac0;\n  outline: 0;\n}\n.n3-form-control::-moz-placeholder {\n  color: #999;\n  opacity: 1;\n}\n.n3-form-control:-ms-input-placeholder {\n  color: #999;\n}\n.n3-form-control::-webkit-input-placeholder {\n  color: #999;\n}\n.n3-form-control[disabled],\n.n3-form-control[readonly] {\n  cursor: not-allowed;\n  background-color: #f9f9f9;\n  opacity: 1;\n}\ntextarea.n3-form-control {\n  height: auto;\n}\n.n3-err-tip {\n  color: #ff6c60;\n  font-size: 12px;\n  margin-top: 5px;\n}\n.n3-form-horizontal .n3-control-label {\n  font-weight: 300;\n  font-size: 14px;\n  text-align: left;\n}\n.n3-form-inline .n3-slider,\n.n3-form-horizontal .n3-slider {\n  margin: 17px 0px 0px 10px;\n}\n.n3-form-inline .n3-switch,\n.n3-form-horizontal .n3-switch {\n  margin-top: 5px;\n}\n.n3-form-group {\n  margin-bottom: 15px;\n  padding: 5px 0px;\n}\n.n3-has-feedback {\n  position: relative;\n}\n.n3-has-feedback .n3-form-control {\n  padding-right: 42.5px;\n}\n.n3-form-control-feedback {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 2;\n  display: block;\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n  pointer-events: none;\n}\n.n3-has-success .n3-control-label {\n  color: #2ecc71;\n}\n.n3-has-success .n3-form-control {\n  border-color: #2ecc71;\n}\n.n3-has-success .n3-form-control:focus {\n  border-color: #29b464;\n}\n.n3-has-success .n3-form-control-feedback {\n  color: #2ecc71;\n}\n.n3-has-warining .n3-control-label {\n  color: #f1c500;\n}\n.n3-has-warining .n3-form-control {\n  border-color: #f1c500;\n}\n.n3-has-warining .n3-form-control:focus {\n  border-color: #dbb509;\n}\n.n3-has-warining .n3-form-control-feedback {\n  color: #f1c500;\n}\n.n3-has-error .n3-control-label {\n  color: #ff6c60;\n}\n.n3-has-error .n3-form-control {\n  border-color: #ff6c60;\n}\n.n3-has-error .n3-form-control:focus {\n  border-color: #e74c3c;\n}\n.n3-has-error .n3-form-control-feedback {\n  color: #ff6c60;\n}\n.n3-has-feedback label ~ .n3-form-control-feedback {\n  top: 31px;\n}\n.n3-form-need {\n  color: red;\n  position: relative;\n  top: 2px;\n  left: 3px;\n  font-size: 14px;\n  font-weight: bold;\n  margin-right: 8px;\n}\n.n3-form-inline .n3-control-label {\n  padding-top: 7px;\n}\n@media (min-width: 768px) {\n  .n3-form-inline .n3-form-group {\n    display: inline-block;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .n3-form-inline .n3-form-control {\n    display: inline-block;\n    width: auto;\n    vertical-align: middle;\n  }\n  .n3-form-inline .n3-form-control-static {\n    display: inline-block;\n  }\n  .n3-form-inline .n3-control-label {\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .n3-form-inline .n3-has-feedback .n3-form-control-feedback {\n    top: 0;\n  }\n}\n.n3-form-horizontal .n3-form-group {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n@media (min-width: 768px) {\n  .n3-form-horizontal .n3-control-label {\n    padding-top: 7px;\n    margin-bottom: 0;\n    text-align: right;\n  }\n}\n/* loading */\n.n3-page-loading-con {\n  display: inline-block;\n  z-index: 1000;\n}\n.n3-page-loading {\n  animation: loading-spin 2s linear 0s infinite;\n  font-size: 28px;\n  float: left;\n}\n.n3-page-loading:before {\n  font-family: \"FontAwesome\";\n  content: \"\\F110\";\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n}\n.n3-page-loading.n3-loading-lg {\n  font-size: 40px;\n}\n.n3-page-loading.n3-loading-lg.n3-loading-center {\n  margin: -20px 0 0 -20px;\n}\n.n3-page-loading.n3-loading-sm {\n  font-size: 18px;\n}\n.n3-page-loading.n3-loading-sm.n3-loading-center {\n  margin: -9px 0 0 -9px;\n}\n.n3-page-loading.n3-loading-xs {\n  font-size: 12px;\n}\n.n3-page-loading.n3-loading-xs.n3-loading-center {\n  margin: -6px 0 0 -6px;\n}\n.n3-page-loading.n3-loading-refresh:before {\n  content: \"\\F021\";\n}\n.n3-loading-center {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin: -14px 0 0 -14px;\n}\n@keyframes loading-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n.n3-tooltip {\n  position: absolute;\n  z-index: 1030;\n  display: block;\n  font-size: 12px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: normal;\n  line-height: 1.4;\n  visibility: visible;\n  opacity: .9;\n}\n.n3-tooltip-in {\n  opacity: 0.9;\n}\n.n3-tooltip-top {\n  margin-top: -3px;\n  padding: 5px 0;\n}\n.n3-tooltip-top .n3-tooltip-arrow {\n  bottom: 0;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px 5px 0;\n  border-top-color: #000;\n}\n.n3-tooltip-right {\n  margin-left: 3px;\n  padding: 0 5px;\n}\n.n3-tooltip-right .n3-tooltip-arrow {\n  top: 50%;\n  left: 0;\n  margin-top: -5px;\n  border-width: 5px 5px 5px 0;\n  border-right-color: #000;\n}\n.n3-tooltip-bottom {\n  margin-top: 3px;\n  padding: 5px 0;\n}\n.n3-tooltip-bottom .n3-tooltip-arrow {\n  top: 0;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 0 5px 5px;\n  border-bottom-color: #000;\n}\n.n3-tooltip-left {\n  margin-left: -3px;\n  padding: 0 5px;\n}\n.n3-tooltip-left .n3-tooltip-arrow {\n  top: 50%;\n  right: 0;\n  margin-top: -5px;\n  border-width: 5px 0 5px 5px;\n  border-left-color: #000;\n}\n.n3-tooltip-inner {\n  max-width: 200px;\n  padding: 9px 11px;\n  color: #fff;\n  text-align: left;\n  background-color: #000;\n  border-radius: 4px;\n}\n.n3-tooltip-arrow {\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-color: transparent;\n  border-style: solid;\n}\n.n3-popover {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1060;\n  display: none;\n  max-width: 276px;\n  padding: 1px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: left;\n  white-space: normal;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  border-radius: 6px;\n  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);\n}\n.n3-popover-top {\n  margin-top: -10px;\n}\n.n3-popover-right {\n  margin-left: 10px;\n}\n.n3-popover-bottom {\n  margin-top: 10px;\n}\n.n3-popover-left {\n  margin-left: -10px;\n}\n.n3-popover-title {\n  padding: 8px 14px;\n  margin: 0;\n  font-size: 14px;\n  border-bottom: 1px solid #ddd;\n  border-radius: 5px 5px 0 0;\n}\n.n3-popover-content {\n  padding: 9px 14px;\n}\n.n3-popover-arrow,\n.n3-popover-arrow:after {\n  position: absolute;\n  display: block;\n  width: 0;\n  height: 0;\n  border-color: transparent;\n  border-style: solid;\n}\n.n3-popover-arrow:after {\n  content: \"\";\n  border-width: 10px;\n}\n.n3-popover-arrow {\n  border-width: 11px;\n}\n.n3-popover-top > .n3-popover-arrow {\n  bottom: -11px;\n  left: 50%;\n  margin-left: -11px;\n  border-top-color: rgba(0, 0, 0, 0.25);\n  border-bottom-width: 0;\n}\n.n3-popover-top > .n3-popover-arrow:after {\n  bottom: 1px;\n  margin-left: -10px;\n  content: \" \";\n  border-top-color: #fff;\n  border-bottom-width: 0;\n}\n.n3-popover-right > .n3-popover-arrow {\n  top: 50%;\n  left: -11px;\n  margin-top: -11px;\n  border-right-color: #999;\n  border-right-color: rgba(0, 0, 0, 0.25);\n  border-left-width: 0;\n}\n.n3-popover-right > .n3-popover-arrow:after {\n  bottom: -10px;\n  left: 1px;\n  content: \" \";\n  border-right-color: #fff;\n  border-left-width: 0;\n}\n.n3-popover-bottom > .n3-popover-arrow {\n  top: -11px;\n  left: 50%;\n  margin-left: -11px;\n  border-top-width: 0;\n  border-bottom-color: #999;\n  border-bottom-color: rgba(0, 0, 0, 0.25);\n}\n.n3-popover-bottom > .n3-popover-arrow:after {\n  top: 1px;\n  margin-left: -10px;\n  content: \" \";\n  border-top-width: 0;\n  border-bottom-color: #fff;\n}\n.n3-popover-left > .n3-popover-arrow {\n  top: 50%;\n  right: -11px;\n  margin-top: -11px;\n  border-right-width: 0;\n  border-left-color: #999;\n  border-left-color: rgba(0, 0, 0, 0.25);\n}\n.n3-popover-left > .n3-popover-arrow:after {\n  right: 1px;\n  bottom: -10px;\n  content: \" \";\n  border-right-width: 0;\n  border-left-color: #fff;\n}\n.n3-select-group .n3-select-search input {\n  border: 0px;\n  border-bottom: 1px solid #ddd;\n}\n.n3-select-group .n3-dropdown-menu {\n  display: block;\n  overflow-y: auto;\n}\n.n3-select-group .n3-dropdown-menu .n3-notify {\n  position: absolute;\n  bottom: 5px;\n  width: 96%;\n  margin: 0 2%;\n  min-height: 26px;\n  padding: 3px 5px;\n  background: #f9f9f9;\n  border: 1px solid #ddd;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);\n  pointer-events: none;\n}\n.n3-select-group .n3-dropdown-menu .fa-check {\n  position: absolute;\n  display: inline-block;\n  right: 15px;\n  margin-top: 5px;\n}\n.n3-select-group .n3-dropdown-menu .fa-plus-square-o {\n  font-size: 20px;\n  position: absolute;\n  top: 11px;\n  right: 15px;\n}\n.n3-select-group .n3-dropdown-menu .n3-select-all {\n  border-bottom: 1px solid #ddd;\n}\n.n3-select-group .n3-dropdown-menu .n3-select-all a {\n  cursor: pointer;\n}\n.n3-select-group .n3-dropdown-toggle {\n  overflow: hidden;\n  word-break: break-all;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n}\n.n3-simple-pagination .n3-pagination {\n  margin: 0px;\n}\n.n3-simple-pagination-input {\n  position: relative;\n  top: 1px;\n}\n.n3-simple-pagination-btn {\n  height: 33px;\n}\n.n3-simple-pagination-btn .fa {\n  margin-top: 2px;\n}\n.n3-timeline-con {\n  position: relative;\n}\n.n3-timeline-con .n3-timeline-item:last-child .n3-timeline-item-tail {\n  display: none;\n}\n.n3-timeline-con .n3-timeline-item {\n  position: relative;\n  padding: 0 0 12px;\n  margin: 0;\n  display: block;\n}\n.n3-timeline-con .n3-timeline-item .n3-timeline-item-tail {\n  position: absolute;\n  left: 5px;\n  top: 0;\n  height: 100%;\n  border-left: 2px solid #ddd;\n}\n.n3-timeline-con .n3-timeline-item .n3-timeline-item-head {\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  background-color: #fff;\n  border-radius: 100px;\n  border: 2px solid transparent;\n  z-index: 1;\n}\n.n3-timeline-con .n3-timeline-item .n3-timeline-item-head.fa {\n  border: 0px;\n  top: -2px;\n  left: -1px;\n  font-size: 16px;\n}\n.n3-timeline-con .n3-timeline-item .n3-timeline-item-content {\n  padding: 0 0 10px 24px;\n  font-size: 12px;\n  position: relative;\n  top: -3px;\n}\n.n3-steps {\n  font-size: 0px;\n  overflow: hidden;\n  line-height: 0px;\n  margin: 18px 0px;\n  display: flex;\n}\n.n3-steps * {\n  box-sizing: content-box;\n}\n.n3-steps-wrap {\n  padding: 0;\n  flex: 1;\n}\n.n3-steps-wrap > div {\n  width: 100%;\n  line-height: 32px;\n  vertical-align: top;\n  font-size: 12px;\n  position: relative;\n}\n.n3-steps-wrap > div > label {\n  margin: 0 0 0 26px;\n  cursor: default;\n}\n.n3-steps-triangle-right {\n  display: inline-block;\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 16px;\n  position: absolute;\n  right: -31px;\n  z-index: 1;\n}\n.n3-steps-triangle-right-bg {\n  display: inline-block;\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 16px;\n  position: absolute;\n  right: -31px;\n  z-index: 1;\n  border-width: 20px;\n  right: -40px;\n  border-color: transparent transparent transparent #fff;\n  top: -4px;\n}\n.n3-steps-round {\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n  text-align: center;\n  line-height: 16px;\n}\n.n3-steps-round + span:before {\n  content: '\\A0';\n}\n.n3-steps-finished {\n  background-color: #39b2a9;\n  color: #fff;\n}\n.n3-steps-finished .n3-steps-triangle-right {\n  border-color: transparent transparent transparent #39b2a9;\n}\n.n3-steps-finished .n3-steps-round {\n  background-color: fff;\n  color: #39b2a9;\n}\n.n3-steps-finished .n3-steps-round > i {\n  color: #39b2a9;\n  font-size: 12px;\n}\n.n3-steps-current {\n  background-color: #41cac0;\n  color: #fff;\n}\n.n3-steps-current .n3-steps-triangle-right {\n  border-color: transparent transparent transparent #41cac0;\n}\n.n3-steps-current .n3-steps-round {\n  background-color: #fff;\n  color: #41cac0;\n}\n.n3-steps-todo {\n  background-color: #f9f9f9;\n  color: #999;\n}\n.n3-steps-todo .n3-steps-triangle-right {\n  border-color: transparent transparent transparent #f9f9f9;\n}\n.n3-steps-todo .n3-steps-round {\n  background-color: #fff;\n}\n > :last-child .n3-steps-triangle-right,\n > :last-child .n3-steps-triangle-right-bg {\n  display: none;\n}\n.n3-steps-round-con {\n  list-style-type: none;\n  margin: 18px 0px;\n  padding: 0px;\n  display: flex;\n}\n.n3-steps-round-con > li .n3-steps-round {\n  color: #fff;\n  background-color: #ddd;\n}\n.n3-steps-round-con > .n3-steps-finished:before {\n  background-color: #39b2a9;\n}\n.n3-steps-round-con > .n3-steps-finished .n3-steps-round {\n  background-color: #39b2a9;\n  border: 4px #39b2a9 solid;\n}\n.n3-steps-round-con > .n3-steps-finished label {\n  color: #39b2a9;\n}\n.n3-steps-round-con > .n3-steps-current:before {\n  background-color: #41cac0;\n}\n.n3-steps-round-con > .n3-steps-current .n3-steps-round {\n  background-color: #41cac0;\n  border: 4px #41cac0 solid;\n}\n.n3-steps-round-con > .n3-steps-current label {\n  color: #41cac0;\n}\n.n3-steps-round-con > li {\n  padding: 0px;\n  position: relative;\n  flex: 1;\n  background-color: transparent;\n}\n.n3-steps-round-con:before,\n.n3-steps-round-con:after {\n  content: \" \";\n  display: table;\n  clear: both;\n}\n.n3-steps-round-con > li:before {\n  content: '';\n  width: 100%;\n  height: 6px;\n  margin: 12px 0px;\n  display: block;\n  float: left;\n  background-color: #f9f9f9;\n}\n.n3-steps-round-con > li:first-child:before {\n  border-bottom-left-radius: 4px;\n  border-top-left-radius: 4px;\n}\n.n3-steps-round-con > li:last-child:before {\n  border-bottom-right-radius: 4px;\n  border-top-right-radius: 4px;\n}\n.n3-steps-round-con > li .n3-steps-wrap {\n  position: absolute;\n  left: 50%;\n  margin-left: -25px;\n  width: 50px;\n  text-align: center;\n  background: #fff;\n  top: 0px;\n}\n.n3-steps-round-con > li .n3-steps-round {\n  width: 30px;\n  height: 30px;\n  border-radius: 15px;\n  display: inline-block;\n  vertical-align: middle;\n  font-size: 12px;\n  color: #fff;\n  line-height: 22px;\n  text-align: center;\n  border: 4px #ddd solid;\n  background-color: #fff;\n  color: #999;\n}\n.n3-steps-round-con > li .n3-steps-round > i {\n  color: #39b2a9;\n  font-size: 12px;\n}\n.n3-steps-round-con > li label {\n  width: 100%;\n  text-align: center;\n  color: #999;\n  margin: 10px 0px 0px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.n3-steps-round-con > .n3-steps-finished:before,\n.n3-steps-round-con .n3-steps-current:before {\n  background-color: #39b2a9;\n}\n.n3-steps-round-con > .n3-steps-finished .n3-steps-round,\n.n3-steps-round-con .n3-steps-current .n3-steps-round {\n  border: 4px #39b2a9 solid;\n  background-color: #39b2a9;\n  color: #fff;\n}\n.n3-steps-round-con > .n3-steps-finished label,\n.n3-steps-round-con .n3-steps-current label {\n  color: #39b2a9;\n}\n.n3-switch {\n  width: 68px;\n  height: 27px;\n  display: inline-block;\n  direction: ltr;\n  cursor: pointer;\n  border-radius: 30px;\n  position: relative;\n  text-align: left;\n  overflow: hidden;\n  line-height: 8px;\n  z-index: 0;\n  user-select: none;\n  vertical-align: middle;\n  transition: background ease-in-out 0.15s, box-shadow ease-in-out 0.15s, color ease-in-out 0.15s;\n  background: #41cac0;\n  color: #fff;\n}\n.n3-switch-container {\n  width: 102px;\n  margin-left: 0px;\n  display: inline-block;\n  top: 0;\n  border-radius: 4px;\n  transform: translate3d(0, 0, 0);\n}\n.n3-switch-handle-on,\n.n3-switch-handle-off,\n.n3-switch-label {\n  box-sizing: border-box;\n  cursor: pointer;\n  display: inline-block;\n  height: 28px;\n  padding: 6px 2px 6px 10px;\n  font-size: 14px;\n  line-height: 16px;\n  vertical-align: middle;\n  position: relative;\n  text-align: center;\n}\n.n3-switch-handle-on:after,\n.n3-switch-handle-off:after {\n  content: \" \";\n  width: 14px;\n  height: 28px;\n  position: absolute;\n  top: 0;\n  right: -14px;\n}\n.n3-switch-handle-on {\n  width: 37px;\n  z-index: 98;\n}\n.n3-switch-handle-off {\n  width: 37px;\n  z-index: 97;\n  padding: 6px 10px 6px 0px;\n}\n.n3-switch-handle-off:after {\n  left: -14px;\n}\n.n3-switch-label {\n  height: 28px;\n  padding: 0;\n  position: relative;\n  width: 28px !important;\n  z-index: 100;\n}\n.n3-switch-label:after {\n  transition: 0.25s ease-out;\n  background-color: #fff;\n  border-radius: 50%;\n  content: \" \";\n  position: absolute;\n  top: 4px;\n  left: 4px;\n  display: inline-block;\n  height: 20px;\n  width: 20px;\n  box-shadow: 0 1px 2px #ccc;\n}\n.n3-switch-on .n3-switch-handle-on {\n  margin-left: -5px;\n}\n.n3-switch-off .n3-switch-handle-on {\n  margin-left: -43px;\n}\n.n3-switch-off {\n  background: #f9f9f9;\n  color: #fff;\n}\n.n3-switch-off .n3-switch-handle-off.n3-switch-default {\n  z-index: 99;\n  color: #999;\n}\n.n3-switch-disabled {\n  cursor: default !important;\n}\n.n3-switch-disabled .n3-switch-handle-on,\n.n3-switch-disabled .n3-switch-handle-off,\n.n3-switch-disabled .n3-switch-label {\n  opacity: 0.5;\n  cursor: default !important;\n}\n.n3-switch-animate .n3-switch-handle-on {\n  transition: margin-left 0.5s;\n}\n.n3-multiple-input {\n  font-size: 0px;\n  letter-spacing: 0px;\n  min-height: 34px;\n  height: auto;\n  padding: 6px 12px 0px;\n  display: flex;\n  flex-wrap: wrap;\n}\n.n3-multiple-input.n3-padding-left-none {\n  padding-left: 0px !important;\n}\n.n3-multiple-input .n3-form-control {\n  border: 0px;\n  outline: none;\n  position: relative;\n  top: -2px;\n  margin: 0px;\n  padding: 0px;\n  height: 22px;\n}\n.n3-multiple-input .n3-multiple-input-space {\n  display: inline-block;\n  width: 8px;\n  height: 23px;\n}\n.n3-multiple-input .n3-multiple-input-space:hover {\n  cursor: text;\n}\n.n3-multiple-input .n3-multiple-input-space.n3-multiple-input-long {\n  flex: 1;\n}\n.n3-multiple-input .n3-multiple-input-m-tag,\n.n3-multiple-input input,\n.n3-multiple-input .n3-multiple-input-space {\n  vertical-align: top;\n  font-size: 14px;\n  margin-bottom: 6px;\n}\n.n3-multiple-input .n3-multiple-input-m-tag:hover {\n  cursor: pointer;\n}\n.n3-radio-con .n3-radio-span {\n  white-space: nowrap;\n  outline: none;\n  display: inline-block;\n  position: relative;\n  line-height: 1;\n  vertical-align: middle;\n}\n.n3-radio-con .n3-radio-inner {\n  position: relative;\n  top: 0;\n  left: 0;\n  display: inline-block;\n  width: 14px;\n  height: 14px;\n  border-width: 1px;\n  border-style: solid;\n  border-radius: 14px;\n  border-color: #ddd;\n  background-color: #fff;\n  transition: all 0.3s ease;\n}\n.n3-radio-con .n3-radio-input {\n  position: absolute!important;\n  left: 0;\n  z-index: 1;\n  cursor: pointer;\n  opacity: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n}\n.n3-radio-con .n3-radio-checked .n3-radio-inner:after {\n  transform: scale(1);\n  opacity: 1;\n}\n.n3-radio-con .n3-radio-inner:after {\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  left: 3px;\n  top: 3px;\n  border-radius: 6px;\n  display: table;\n  border-top: 0;\n  border-left: 0;\n  content: ' ';\n  background-color: #41cac0;\n  transform: scale(0);\n  opacity: 0;\n  transition: all 0.3s ease;\n}\n.n3-radio-con .n3-radio-disabled .n3-radio-inner {\n  border-color: #ddd;\n  background-color: #f9f9f9;\n}\n.n3-radio-btn input[type=radio] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n.n3-label {\n  display: inline;\n  padding: 0.5em 0.8em;\n  font-size: 75%;\n  font-weight: bold;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  margin: 0px 5px 5px 0px;\n  background: #fff;\n  transition: all .3s ease;\n}\n.n3-label-hover:hover {\n  color: #fff;\n  cursor: pointer;\n}\n.n3-label-default.n3-label-hover:hover {\n  background: #999;\n}\n.n3-label-primary.n3-label-hover:hover {\n  background: #41cac0;\n}\n.n3-label-success.n3-label-hover:hover {\n  background: #2ecc71;\n}\n.n3-label-info.n3-label-hover:hover {\n  background: #58c9f3;\n}\n.n3-label-warning.n3-label-hover:hover {\n  background: #f1c500;\n}\n.n3-label-danger.n3-label-hover:hover {\n  background: #ff6c60;\n}\n.n3-label-default {\n  color: #999;\n  border: 1px solid #999;\n}\n.n3-label-primary {\n  color: #41cac0;\n  border: 1px solid #41cac0;\n}\n.n3-label-success {\n  color: #2ecc71;\n  border: 1px solid #2ecc71;\n}\n.n3-label-info {\n  color: #58c9f3;\n  border: 1px solid #58c9f3;\n}\n.n3-label-warning {\n  color: #f1c500;\n  border: 1px solid #f1c500;\n}\n.n3-label-danger {\n  color: #ff6c60;\n  border: 1px solid #ff6c60;\n}\n.n3-checkbox-label {\n  white-space: nowrap;\n  cursor: pointer;\n  outline: none;\n  display: inline-block;\n  line-height: 1;\n  position: relative;\n  vertical-align: middle;\n}\n.n3-checkbox-inner {\n  margin-right: 5px;\n  position: relative;\n  top: 0;\n  left: 0;\n  display: inline-block;\n  width: 14px;\n  height: 14px;\n  border-width: 1px;\n  border-style: solid;\n  border-radius: 3px;\n  border-color: #ddd;\n  background-color: #fff;\n  transition: all 0.3s ease;\n}\n.n3-checkbox-inner:after {\n  transform: rotate(45deg) scale(1);\n  position: absolute;\n  left: 4px;\n  top: 1px;\n  display: table;\n  width: 5px;\n  height: 8px;\n  border: 2px solid #fff;\n  border-top: 0;\n  border-left: 0;\n  content: ' ';\n}\n.n3-checkbox-input {\n  position: absolute!important;\n  left: 0;\n  z-index: 1;\n  cursor: pointer;\n  opacity: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n}\n.n3-checkbox-checked .n3-checkbox-inner {\n  border-color: #41cac0;\n  background-color: #41cac0;\n}\n.n3-checkbox-disabled .n3-checkbox-inner {\n  border-color: #ddd;\n  background-color: #ddd;\n}\n.n3-checkbox-disabled .n3-checkbox-inner:after {\n  display: none;\n}\n.n3-checkbox-label span {\n  vertical-align: top;\n}\n.n3-checkbox-btn input[type=checkbox] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n.n3-cascader {\n  position: relative;\n  display: inline-block;\n}\n.n3-cascader-picker {\n  position: relative;\n  display: inline-block;\n  cursor: pointer;\n  vertical-align: middle;\n}\n.n3-cascader-menus {\n  z-index: 10010;\n  font-size: 12px;\n  background: #fff;\n  position: absolute;\n  border: 1px solid #ddd;\n  box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);\n  white-space: nowrap;\n}\n.n3-cascader-menu {\n  display: inline-block;\n  vertical-align: top;\n  min-width: 111px;\n  height: 180px;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  border-right: 1px solid #ddd;\n  overflow: auto;\n}\n.n3-cascader-menu:last-child {\n  border-right-color: transparent;\n  margin-right: -1px;\n}\n.n3-cascader-menu-item {\n  padding: 7px 16px;\n  cursor: pointer;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: all .3s ease;\n}\n.n3-cascader-menu-item-selected,\n.n3-cascader-menu-item-selected:hover {\n  background: rgba(65, 202, 192, 0.3) !important;\n}\n.n3-cascader-menu-item-disabled {\n  cursor: not-allowed;\n  color: #ccc;\n}\n.n3-cascader-menu-item-disabled:hover {\n  background: transparent;\n}\n.n3-cascader-menu-item:hover {\n  background: rgba(65, 202, 192, 0.1);\n}\n.n3-input-con .n3-has-feedback .n3-form-control-feedback {\n  right: 0px;\n  line-height: 34px;\n}\n.n3-input-con .n3-form-control[readonly] {\n  background-color: #fff;\n}\n.n3-input-con .n3-form-control[disabled] {\n  background-color: #f9f9f9;\n}\n.n3-input-con .n3-form-control[readonly] {\n  cursor: pointer;\n}\n.n3-input-con .n3-form-control[readonly]:hover {\n  cursor: pointer;\n}\n.n3-input-con .n3-form-control[disabled] {\n  cursor: not-allowed;\n}\n.n3-input-con .n3-form-control[disabled]:hover {\n  cursor: not-allowed;\n}\n.n3-toast {\n  position: fixed;\n  border-radius: 25px;\n  padding: 2px 25px .3em;\n  transition-property: opacity;\n  transition-duration: 800ms;\n  display: inline-block;\n  font-size: 16px;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  cursor: default;\n  z-index: 1500;\n}\n.n3-toast.n3-center {\n  margin: 0 auto;\n  left: 50%;\n  top: 50%;\n}\n.n3-toast.n3-top {\n  top: 30px;\n  margin: 0 auto;\n  left: 50%;\n}\n.n3-toast.n3-bottom {\n  bottom: 30px;\n  margin: 0 auto;\n  left: 50%;\n  top: initial;\n}\n.n3-toast.n3-top-right {\n  top: 30px;\n  right: 50px;\n  left: initial;\n}\n.n3-toast.n3-top-left {\n  top: 30px;\n  left: 50px;\n}\n.n3-toast.n3-bottom-right {\n  bottom: 30px;\n  right: 50px;\n  left: initial;\n  top: initial;\n}\n.n3-toast.n3-bottom-left {\n  top: initial;\n  bottom: 30px;\n  left: 50px;\n}\n.n3-toast-default {\n  background: rgba(51, 51, 51, 0.9);\n}\n.n3-toast-primary {\n  background: #41cac0;\n}\n.n3-toast-success {\n  background: #2ecc71;\n}\n.n3-toast-info {\n  background: #58c9f3;\n}\n.n3-toast-warning {\n  background: #f1c500;\n}\n.n3-toast-danger {\n  background: #ff6c60;\n}\n.n3-tag-group {\n  margin: 0;\n  margin-bottom: 18px;\n}\n.n3-tag-group .n3-tag {\n  display: inline-block;\n  font-weight: normal;\n  padding: 2px 1em;\n  font-size: 12px;\n  line-height: 1.5;\n  color: inherit;\n  border: 1px solid #999;\n  cursor: default;\n  user-select: none;\n  transition: all 0.2s linear;\n  position: relative;\n  margin: 0;\n}\n.n3-tag-group .n3-tag a[name] {\n  color: inherit;\n  text-decoration: none;\n  cursor: pointer;\n}\n.n3-tag-group .n3-tag + .n3-tag {\n  margin-left: .5em;\n}\n.n3-tag-group .n3-tag .fa {\n  cursor: pointer;\n  line-height: 100%;\n  position: relative;\n  right: -0.4em;\n  vertical-align: middle;\n  font-size: 120%;\n  font-weight: 100;\n  color: inherit;\n  opacity: .8;\n}\n.n3-tag-disabled {\n  opacity: .5;\n  cursor: not-allowed;\n}\n.n3-tag-disabled:hover {\n  color: inherit;\n  border-color: #999;\n}\n.n3-tag-sm .n3-tag,\n.n3-tag-xs .n3-tag {\n  padding: 0px 1em;\n  font-size: 12px;\n  line-height: 1.5;\n}\n.n3-tag-lg .n3-tag,\n.n3-tag-lg .n3-tag {\n  padding: 4px 1em;\n  font-size: 12px;\n  line-height: 1.5;\n}\n.n3-tag-xl .n3-tag,\n.n3-tag-xl .n3-tag {\n  padding: 5px 1em;\n  font-size: 14px;\n  line-height: 1.429;\n}\n.n3-tag-default .n3-tag,\n.n3-tag-default .n3-tag:hover {\n  color: #999;\n}\n.n3-tag-primary .n3-tag,\n.n3-tag-primary .n3-tag:hover {\n  background: #41cac0;\n  border-color: #41cac0;\n  color: white;\n}\n.n3-tag-success .n3-tag,\n.n3-tag-success .n3-tag:hover {\n  background: #2ecc71;\n  border-color: #2ecc71;\n  color: white;\n}\n.n3-tag-info .n3-tag,\n.n3-tag-info .n3-tag:hover {\n  background: #58c9f3;\n  border-color: #58c9f3;\n  color: white;\n}\n.n3-tag-warning .n3-tag,\n.n3-tag-warning .n3-tag:hover {\n  background: #f1c500;\n  border-color: #f1c500;\n  color: white;\n}\n.n3-tag-danger .n3-tag,\n.n3-tag-danger .n3-tag:hover {\n  background: #ff6c60;\n  border-color: #ff6c60;\n  color: white;\n}\n.n3-container {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n@media (min-width: 768px) {\n  .n3-container {\n    width: 750px;\n  }\n}\n@media (min-width: 992px) {\n  .n3-container {\n    width: 970px;\n  }\n}\n@media (min-width: 1200px) {\n  .n3-container {\n    width: 1170px;\n  }\n}\n.n3-container-fluid {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n.n3-row {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n.n3-col-xs-1,\n.n3-col-sm-1,\n.n3-col-md-1,\n.n3-col-lg-1,\n.n3-col-xs-2,\n.n3-col-sm-2,\n.n3-col-md-2,\n.n3-col-lg-2,\n.n3-col-xs-3,\n.n3-col-sm-3,\n.n3-col-md-3,\n.n3-col-lg-3,\n.n3-col-xs-4,\n.n3-col-sm-4,\n.n3-col-md-4,\n.n3-col-lg-4,\n.n3-col-xs-5,\n.n3-col-sm-5,\n.n3-col-md-5,\n.n3-col-lg-5,\n.n3-col-xs-6,\n.n3-col-sm-6,\n.n3-col-md-6,\n.n3-col-lg-6,\n.n3-col-xs-7,\n.n3-col-sm-7,\n.n3-col-md-7,\n.n3-col-lg-7,\n.n3-col-xs-8,\n.n3-col-sm-8,\n.n3-col-md-8,\n.n3-col-lg-8,\n.n3-col-xs-9,\n.n3-col-sm-9,\n.n3-col-md-9,\n.n3-col-lg-9,\n.n3-col-xs-10,\n.n3-col-sm-10,\n.n3-col-md-10,\n.n3-col-lg-10,\n.n3-col-xs-11,\n.n3-col-sm-11,\n.n3-col-md-11,\n.n3-col-lg-11,\n.n3-col-xs-12,\n.n3-col-sm-12,\n.n3-col-md-12,\n.n3-col-lg-12 {\n  position: relative;\n  min-height: 1px;\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.n3-col-xs-1,\n.n3-col-xs-2,\n.n3-col-xs-3,\n.n3-col-xs-4,\n.n3-col-xs-5,\n.n3-col-xs-6,\n.n3-col-xs-7,\n.n3-col-xs-8,\n.n3-col-xs-9,\n.n3-col-xs-10,\n.n3-col-xs-11,\n.n3-col-xs-12 {\n  float: left;\n}\n.n3-col-xs-12 {\n  width: 100%;\n}\n.n3-col-xs-11 {\n  width: 91.66666667%;\n}\n.n3-col-xs-10 {\n  width: 83.33333333%;\n}\n.n3-col-xs-9 {\n  width: 75%;\n}\n.n3-col-xs-8 {\n  width: 66.66666667%;\n}\n.n3-col-xs-7 {\n  width: 58.33333333%;\n}\n.n3-col-xs-6 {\n  width: 50%;\n}\n.n3-col-xs-5 {\n  width: 41.66666667%;\n}\n.n3-col-xs-4 {\n  width: 33.33333333%;\n}\n.n3-col-xs-3 {\n  width: 25%;\n}\n.n3-col-xs-2 {\n  width: 16.66666667%;\n}\n.n3-col-xs-1 {\n  width: 8.33333333%;\n}\n.n3-col-xs-pull-12 {\n  right: 100%;\n}\n.n3-col-xs-pull-11 {\n  right: 91.66666667%;\n}\n.n3-col-xs-pull-10 {\n  right: 83.33333333%;\n}\n.n3-col-xs-pull-9 {\n  right: 75%;\n}\n.n3-col-xs-pull-8 {\n  right: 66.66666667%;\n}\n.n3-col-xs-pull-7 {\n  right: 58.33333333%;\n}\n.n3-col-xs-pull-6 {\n  right: 50%;\n}\n.n3-col-xs-pull-5 {\n  right: 41.66666667%;\n}\n.n3-col-xs-pull-4 {\n  right: 33.33333333%;\n}\n.n3-col-xs-pull-3 {\n  right: 25%;\n}\n.n3-col-xs-pull-2 {\n  right: 16.66666667%;\n}\n.n3-col-xs-pull-1 {\n  right: 8.33333333%;\n}\n.n3-col-xs-pull-0 {\n  right: auto;\n}\n.n3-col-xs-push-12 {\n  left: 100%;\n}\n.n3-col-xs-push-11 {\n  left: 91.66666667%;\n}\n.n3-col-xs-push-10 {\n  left: 83.33333333%;\n}\n.n3-col-xs-push-9 {\n  left: 75%;\n}\n.n3-col-xs-push-8 {\n  left: 66.66666667%;\n}\n.n3-col-xs-push-7 {\n  left: 58.33333333%;\n}\n.n3-col-xs-push-6 {\n  left: 50%;\n}\n.n3-col-xs-push-5 {\n  left: 41.66666667%;\n}\n.n3-col-xs-push-4 {\n  left: 33.33333333%;\n}\n.n3-col-xs-push-3 {\n  left: 25%;\n}\n.n3-col-xs-push-2 {\n  left: 16.66666667%;\n}\n.n3-col-xs-push-1 {\n  left: 8.33333333%;\n}\n.n3-col-xs-push-0 {\n  left: auto;\n}\n.n3-col-xs-offset-12 {\n  margin-left: 100%;\n}\n.n3-col-xs-offset-11 {\n  margin-left: 91.66666667%;\n}\n.n3-col-xs-offset-10 {\n  margin-left: 83.33333333%;\n}\n.n3-col-xs-offset-9 {\n  margin-left: 75%;\n}\n.n3-col-xs-offset-8 {\n  margin-left: 66.66666667%;\n}\n.n3-col-xs-offset-7 {\n  margin-left: 58.33333333%;\n}\n.n3-col-xs-offset-6 {\n  margin-left: 50%;\n}\n.n3-col-xs-offset-5 {\n  margin-left: 41.66666667%;\n}\n.n3-col-xs-offset-4 {\n  margin-left: 33.33333333%;\n}\n.n3-col-xs-offset-3 {\n  margin-left: 25%;\n}\n.n3-col-xs-offset-2 {\n  margin-left: 16.66666667%;\n}\n.n3-col-xs-offset-1 {\n  margin-left: 8.33333333%;\n}\n.n3-col-xs-offset-0 {\n  margin-left: 0;\n}\n@media (min-width: 768px) {\n  .n3-col-sm-1,\n  .n3-col-sm-2,\n  .n3-col-sm-3,\n  .n3-col-sm-4,\n  .n3-col-sm-5,\n  .n3-col-sm-6,\n  .n3-col-sm-7,\n  .n3-col-sm-8,\n  .n3-col-sm-9,\n  .n3-col-sm-10,\n  .n3-col-sm-11,\n  .n3-col-sm-12 {\n    float: left;\n  }\n  .n3-col-sm-12 {\n    width: 100%;\n  }\n  .n3-col-sm-11 {\n    width: 91.66666667%;\n  }\n  .n3-col-sm-10 {\n    width: 83.33333333%;\n  }\n  .n3-col-sm-9 {\n    width: 75%;\n  }\n  .n3-col-sm-8 {\n    width: 66.66666667%;\n  }\n  .n3-col-sm-7 {\n    width: 58.33333333%;\n  }\n  .n3-col-sm-6 {\n    width: 50%;\n  }\n  .n3-col-sm-5 {\n    width: 41.66666667%;\n  }\n  .n3-col-sm-4 {\n    width: 33.33333333%;\n  }\n  .n3-col-sm-3 {\n    width: 25%;\n  }\n  .n3-col-sm-2 {\n    width: 16.66666667%;\n  }\n  .n3-col-sm-1 {\n    width: 8.33333333%;\n  }\n  .n3-col-sm-pull-12 {\n    right: 100%;\n  }\n  .n3-col-sm-pull-11 {\n    right: 91.66666667%;\n  }\n  .n3-col-sm-pull-10 {\n    right: 83.33333333%;\n  }\n  .n3-col-sm-pull-9 {\n    right: 75%;\n  }\n  .n3-col-sm-pull-8 {\n    right: 66.66666667%;\n  }\n  .n3-col-sm-pull-7 {\n    right: 58.33333333%;\n  }\n  .n3-col-sm-pull-6 {\n    right: 50%;\n  }\n  .n3-col-sm-pull-5 {\n    right: 41.66666667%;\n  }\n  .n3-col-sm-pull-4 {\n    right: 33.33333333%;\n  }\n  .n3-col-sm-pull-3 {\n    right: 25%;\n  }\n  .n3-col-sm-pull-2 {\n    right: 16.66666667%;\n  }\n  .n3-col-sm-pull-1 {\n    right: 8.33333333%;\n  }\n  .n3-col-sm-pull-0 {\n    right: auto;\n  }\n  .n3-col-sm-push-12 {\n    left: 100%;\n  }\n  .n3-col-sm-push-11 {\n    left: 91.66666667%;\n  }\n  .n3-col-sm-push-10 {\n    left: 83.33333333%;\n  }\n  .n3-col-sm-push-9 {\n    left: 75%;\n  }\n  .n3-col-sm-push-8 {\n    left: 66.66666667%;\n  }\n  .n3-col-sm-push-7 {\n    left: 58.33333333%;\n  }\n  .n3-col-sm-push-6 {\n    left: 50%;\n  }\n  .n3-col-sm-push-5 {\n    left: 41.66666667%;\n  }\n  .n3-col-sm-push-4 {\n    left: 33.33333333%;\n  }\n  .n3-col-sm-push-3 {\n    left: 25%;\n  }\n  .n3-col-sm-push-2 {\n    left: 16.66666667%;\n  }\n  .n3-col-sm-push-1 {\n    left: 8.33333333%;\n  }\n  .n3-col-sm-push-0 {\n    left: auto;\n  }\n  .n3-col-sm-offset-12 {\n    margin-left: 100%;\n  }\n  .n3-col-sm-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .n3-col-sm-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .n3-col-sm-offset-9 {\n    margin-left: 75%;\n  }\n  .n3-col-sm-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .n3-col-sm-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .n3-col-sm-offset-6 {\n    margin-left: 50%;\n  }\n  .n3-col-sm-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .n3-col-sm-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .n3-col-sm-offset-3 {\n    margin-left: 25%;\n  }\n  .n3-col-sm-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .n3-col-sm-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .n3-col-sm-offset-0 {\n    margin-left: 0;\n  }\n}\n@media (min-width: 992px) {\n  .n3-col-md-1,\n  .n3-col-md-2,\n  .n3-col-md-3,\n  .n3-col-md-4,\n  .n3-col-md-5,\n  .n3-col-md-6,\n  .n3-col-md-7,\n  .n3-col-md-8,\n  .n3-col-md-9,\n  .n3-col-md-10,\n  .n3-col-md-11,\n  .n3-col-md-12 {\n    float: left;\n  }\n  .n3-col-md-12 {\n    width: 100%;\n  }\n  .n3-col-md-11 {\n    width: 91.66666667%;\n  }\n  .n3-col-md-10 {\n    width: 83.33333333%;\n  }\n  .n3-col-md-9 {\n    width: 75%;\n  }\n  .n3-col-md-8 {\n    width: 66.66666667%;\n  }\n  .n3-col-md-7 {\n    width: 58.33333333%;\n  }\n  .n3-col-md-6 {\n    width: 50%;\n  }\n  .n3-col-md-5 {\n    width: 41.66666667%;\n  }\n  .n3-col-md-4 {\n    width: 33.33333333%;\n  }\n  .n3-col-md-3 {\n    width: 25%;\n  }\n  .n3-col-md-2 {\n    width: 16.66666667%;\n  }\n  .n3-col-md-1 {\n    width: 8.33333333%;\n  }\n  .n3-col-md-pull-12 {\n    right: 100%;\n  }\n  .n3-col-md-pull-11 {\n    right: 91.66666667%;\n  }\n  .n3-col-md-pull-10 {\n    right: 83.33333333%;\n  }\n  .n3-col-md-pull-9 {\n    right: 75%;\n  }\n  .n3-col-md-pull-8 {\n    right: 66.66666667%;\n  }\n  .n3-col-md-pull-7 {\n    right: 58.33333333%;\n  }\n  .n3-col-md-pull-6 {\n    right: 50%;\n  }\n  .n3-col-md-pull-5 {\n    right: 41.66666667%;\n  }\n  .n3-col-md-pull-4 {\n    right: 33.33333333%;\n  }\n  .n3-col-md-pull-3 {\n    right: 25%;\n  }\n  .n3-col-md-pull-2 {\n    right: 16.66666667%;\n  }\n  .n3-col-md-pull-1 {\n    right: 8.33333333%;\n  }\n  .n3-col-md-pull-0 {\n    right: auto;\n  }\n  .n3-col-md-push-12 {\n    left: 100%;\n  }\n  .n3-col-md-push-11 {\n    left: 91.66666667%;\n  }\n  .n3-col-md-push-10 {\n    left: 83.33333333%;\n  }\n  .n3-col-md-push-9 {\n    left: 75%;\n  }\n  .n3-col-md-push-8 {\n    left: 66.66666667%;\n  }\n  .n3-col-md-push-7 {\n    left: 58.33333333%;\n  }\n  .n3-col-md-push-6 {\n    left: 50%;\n  }\n  .n3-col-md-push-5 {\n    left: 41.66666667%;\n  }\n  .n3-col-md-push-4 {\n    left: 33.33333333%;\n  }\n  .n3-col-md-push-3 {\n    left: 25%;\n  }\n  .n3-col-md-push-2 {\n    left: 16.66666667%;\n  }\n  .n3-col-md-push-1 {\n    left: 8.33333333%;\n  }\n  .n3-col-md-push-0 {\n    left: auto;\n  }\n  .n3-col-md-offset-12 {\n    margin-left: 100%;\n  }\n  .n3-col-md-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .n3-col-md-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .n3-col-md-offset-9 {\n    margin-left: 75%;\n  }\n  .n3-col-md-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .n3-col-md-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .n3-col-md-offset-6 {\n    margin-left: 50%;\n  }\n  .n3-col-md-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .n3-col-md-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .n3-col-md-offset-3 {\n    margin-left: 25%;\n  }\n  .n3-col-md-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .n3-col-md-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .n3-col-md-offset-0 {\n    margin-left: 0;\n  }\n}\n@media (min-width: 1200px) {\n  .n3-col-lg-1,\n  .n3-col-lg-2,\n  .n3-col-lg-3,\n  .n3-col-lg-4,\n  .n3-col-lg-5,\n  .n3-col-lg-6,\n  .n3-col-lg-7,\n  .n3-col-lg-8,\n  .n3-col-lg-9,\n  .n3-col-lg-10,\n  .n3-col-lg-11,\n  .n3-col-lg-12 {\n    float: left;\n  }\n  .n3-col-lg-12 {\n    width: 100%;\n  }\n  .n3-col-lg-11 {\n    width: 91.66666667%;\n  }\n  .n3-col-lg-10 {\n    width: 83.33333333%;\n  }\n  .n3-col-lg-9 {\n    width: 75%;\n  }\n  .n3-col-lg-8 {\n    width: 66.66666667%;\n  }\n  .n3-col-lg-7 {\n    width: 58.33333333%;\n  }\n  .n3-col-lg-6 {\n    width: 50%;\n  }\n  .n3-col-lg-5 {\n    width: 41.66666667%;\n  }\n  .n3-col-lg-4 {\n    width: 33.33333333%;\n  }\n  .n3-col-lg-3 {\n    width: 25%;\n  }\n  .n3-col-lg-2 {\n    width: 16.66666667%;\n  }\n  .n3-col-lg-1 {\n    width: 8.33333333%;\n  }\n  .n3-col-lg-pull-12 {\n    right: 100%;\n  }\n  .n3-col-lg-pull-11 {\n    right: 91.66666667%;\n  }\n  .n3-col-lg-pull-10 {\n    right: 83.33333333%;\n  }\n  .n3-col-lg-pull-9 {\n    right: 75%;\n  }\n  .n3-col-lg-pull-8 {\n    right: 66.66666667%;\n  }\n  .n3-col-lg-pull-7 {\n    right: 58.33333333%;\n  }\n  .n3-col-lg-pull-6 {\n    right: 50%;\n  }\n  .n3-col-lg-pull-5 {\n    right: 41.66666667%;\n  }\n  .n3-col-lg-pull-4 {\n    right: 33.33333333%;\n  }\n  .n3-col-lg-pull-3 {\n    right: 25%;\n  }\n  .n3-col-lg-pull-2 {\n    right: 16.66666667%;\n  }\n  .n3-col-lg-pull-1 {\n    right: 8.33333333%;\n  }\n  .n3-col-lg-pull-0 {\n    right: auto;\n  }\n  .n3-col-lg-push-12 {\n    left: 100%;\n  }\n  .n3-col-lg-push-11 {\n    left: 91.66666667%;\n  }\n  .n3-col-lg-push-10 {\n    left: 83.33333333%;\n  }\n  .n3-col-lg-push-9 {\n    left: 75%;\n  }\n  .n3-col-lg-push-8 {\n    left: 66.66666667%;\n  }\n  .n3-col-lg-push-7 {\n    left: 58.33333333%;\n  }\n  .n3-col-lg-push-6 {\n    left: 50%;\n  }\n  .n3-col-lg-push-5 {\n    left: 41.66666667%;\n  }\n  .n3-col-lg-push-4 {\n    left: 33.33333333%;\n  }\n  .n3-col-lg-push-3 {\n    left: 25%;\n  }\n  .n3-col-lg-push-2 {\n    left: 16.66666667%;\n  }\n  .n3-col-lg-push-1 {\n    left: 8.33333333%;\n  }\n  .n3-col-lg-push-0 {\n    left: auto;\n  }\n  .n3-col-lg-offset-12 {\n    margin-left: 100%;\n  }\n  .n3-col-lg-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .n3-col-lg-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .n3-col-lg-offset-9 {\n    margin-left: 75%;\n  }\n  .n3-col-lg-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .n3-col-lg-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .n3-col-lg-offset-6 {\n    margin-left: 50%;\n  }\n  .n3-col-lg-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .n3-col-lg-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .n3-col-lg-offset-3 {\n    margin-left: 25%;\n  }\n  .n3-col-lg-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .n3-col-lg-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .n3-col-lg-offset-0 {\n    margin-left: 0;\n  }\n}\n.n3-table {\n  width: 100%;\n  max-width: 100%;\n  margin-bottom: 18px;\n}\n.n3-table > thead > tr > th,\n.n3-table > tbody > tr > th,\n.n3-table > tfoot > tr > th,\n.n3-table > thead > tr > td,\n.n3-table > tbody > tr > td,\n.n3-table > tfoot > tr > td {\n  padding: 6px 8px;\n  line-height: 1.5;\n  vertical-align: top;\n  border-top: 1px solid #ddd;\n}\n.n3-table > thead > tr > th {\n  vertical-align: bottom;\n  border-bottom: 1px solid #ddd;\n}\n.n3-table > caption + thead > tr:first-child > th,\n.n3-table > colgroup + thead > tr:first-child > th,\n.n3-table > thead:first-child > tr:first-child > th,\n.n3-table > caption + thead > tr:first-child > td,\n.n3-table > colgroup + thead > tr:first-child > td,\n.n3-table > thead:first-child > tr:first-child > td {\n  border-top: 0;\n}\n.n3-table > tbody + tbody {\n  border-top: 2px solid #ddd;\n}\n.n3-table-bordered {\n  border: 1px solid #ddd;\n  border-collapse: separate;\n  border-radius: 2px;\n  border-left: none;\n}\n.n3-table-bordered > thead > tr > th,\n.n3-table-bordered > tbody > tr > th,\n.n3-table-bordered > tfoot > tr > th,\n.n3-table-bordered > thead > tr > td,\n.n3-table-bordered > tbody > tr > td,\n.n3-table-bordered > tfoot > tr > td {\n  border-left: 1px solid #ddd;\n}\n.n3-table-bordered > thead > tr > th,\n.n3-table-bordered > thead > tr > td {\n  border-bottom-width: 1px;\n  background: #f9f9f9;\n}\n.n3-table-bordered > thead > tr:first-child > th,\n.n3-table-bordered > tbody > tr:first-child > th,\n.n3-table-bordered > tfoot > tr:first-child > th,\n.n3-table-bordered > thead > tr:first-child > td,\n.n3-table-bordered > tbody > tr:first-child > td,\n.n3-table-bordered > tfoot > tr:first-child > td {\n  border-top: 0;\n}\n.n3-table-bordered > thead:last-child tr:last-child > th:first-child,\n.n3-table-bordered > tbody:last-child tr:last-child > td:first-child,\n.n3-table-bordered > tbody:last-child tr:last-child > th:first-child,\n.n3-table-bordered > tfoot:last-child tr:last-child > td:first-child,\n.n3-table-bordered > tfoot:last-child tr:last-child > th:first-child {\n  border-bottom-left-radius: 2px;\n}\n.n3-table-striped > tbody > tr:nth-of-type(odd) {\n  background-color: #f9f9f9;\n}\n.n3-table-hover > tbody > tr:hover {\n  background-color: #f9f9f9;\n}\ntable col[class*=\"col-\"] {\n  position: static;\n  display: table-column;\n  float: none;\n}\ntable td[class*=\"col-\"],\ntable th[class*=\"col-\"] {\n  position: static;\n  display: table-cell;\n  float: none;\n}\n.n3-table-responsive {\n  min-height: .01%;\n  overflow-x: auto;\n}\n@media screen and (max-width: 767px) {\n  .n3-table-responsive {\n    width: 100%;\n    margin-bottom: 13.5px;\n    overflow-y: hidden;\n    -ms-overflow-style: -ms-autohiding-scrollbar;\n    border: 1px solid #ddd;\n  }\n}\n.n3-btn {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  touch-action: manipulation;\n  cursor: pointer;\n  user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.n3-btn:focus,\n.n3-btn:active:focus,\n.n3-btn-active:focus {\n  outline: 0;\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n.n3-btn:hover,\n.n3-btn:focus {\n  color: #333;\n  text-decoration: none;\n}\n.n3-btn:active,\n.n3-btn-active {\n  background-image: none;\n  outline: 0;\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n.n3-btn-disabled,\n.n3-btn[disabled] {\n  pointer-events: none;\n  cursor: not-allowed;\n  box-shadow: none;\n  opacity: .65;\n}\n.n3-btn-default {\n  color: #333;\n  background-clip: padding-box;\n  background-color: #fff;\n  border-color: rgba(150, 160, 180, 0.3);\n}\n.n3-btn-default:hover,\n.n3-btn-default:focus,\n.n3-btn-default:active,\n.n3-btn-default.n3-btn-active {\n  color: #999;\n}\n.n3-btn-default:active,\n.n3-btn-default.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-default.n3-btn-disabled,\n.n3-btn-default[disabled],\n.n3-btn-default.n3-btn-disabled:hover,\n.n3-btn-default[disabled]:hover,\n.n3-btn-default.n3-btn-disabled:focus,\n.n3-btn-default[disabled]:focus,\n.n3-btn-default.n3-btn-disabled:active,\n.n3-btn-default[disabled]:active,\n.n3-btn-default.n3-btn-disabled.n3-btn-active,\n.n3-btn-default[disabled].n3-btn-active {\n  background-color: #ddd;\n  border-color: #ddd;\n}\n.n3-btn-default .n3-badge {\n  color: #fff;\n  background-color: #333;\n}\n.n3-btn-primary {\n  color: #fff;\n  background-color: #41cac0;\n  border-color: #41cac0;\n}\n.n3-btn-primary:hover,\n.n3-btn-primary:focus,\n.n3-btn-primary:active,\n.n3-btn-primary.n3-btn-active {\n  color: #fff;\n  background-color: #39b2a9;\n  border-color: #39b2a9;\n}\n.n3-btn-primary:active,\n.n3-btn-primary.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-primary .n3-badge {\n  color: #41cac0;\n  background-color: #fff;\n}\n.n3-btn-success {\n  color: #fff;\n  background-color: #2ecc71;\n  border-color: #2ecc71;\n}\n.n3-btn-success:hover,\n.n3-btn-success:focus,\n.n3-btn-success:active,\n.n3-btn-success.n3-btn-active {\n  color: #fff;\n  background-color: #29b464;\n  border-color: #29b464;\n}\n.n3-btn-success:active,\n.n3-btn-success.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-success .n3-badge {\n  color: #2ecc71;\n  background-color: #fff;\n}\n.n3-btn-info {\n  color: #fff;\n  background-color: #58c9f3;\n  border-color: #58c9f3;\n}\n.n3-btn-info:hover,\n.n3-btn-info:focus,\n.n3-btn-info:active,\n.n3-btn-info.n3-btn-active {\n  color: #fff;\n  background-color: #38bef0;\n  border-color: #38bef0;\n}\n.n3-btn-info:active,\n.n3-btn-info.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-info .n3-badge {\n  color: #58c9f3;\n  background-color: #fff;\n}\n.n3-btn-warning {\n  color: #fff;\n  background-color: #f1c500;\n  border-color: #f1c500;\n}\n.n3-btn-warning:hover,\n.n3-btn-warning:focus,\n.n3-btn-warning:active,\n.n3-btn-warning.n3-btn-active {\n  color: #fff;\n  background-color: #dbb509;\n  border-color: #dbb509;\n}\n.n3-btn-warning:active,\n.n3-btn-warning.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-warning .n3-badge {\n  color: #f1c500;\n  background-color: #fff;\n}\n.n3-btn-danger {\n  color: #fff;\n  background-color: #ff6c60;\n  border-color: #ff6c60;\n}\n.n3-btn-danger:hover,\n.n3-btn-danger:focus,\n.n3-btn-danger:active,\n.n3-btn-danger.n3-btn-active {\n  color: #fff;\n  background-color: #e74c3c;\n  border-color: #e74c3c;\n}\n.n3-btn-danger:active,\n.n3-btn-danger.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-danger .n3-badge {\n  color: #ff6c60;\n  background-color: #fff;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-default {\n  color: #333;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-primary {\n  color: #fff;\n  background-color: #41cac0;\n  border-color: #41cac0;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-success {\n  color: #fff;\n  background-color: #2ecc71;\n  border-color: #2ecc71;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-info {\n  color: #fff;\n  background-color: #58c9f3;\n  border-color: #58c9f3;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-warning {\n  color: #fff;\n  background-color: #f1c500;\n  border-color: #f1c500;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-danger {\n  color: #fff;\n  background-color: #ff6c60;\n  border-color: #ff6c60;\n  background-image: none;\n}\n.n3-btn-lg,\n.n3-btn-group-lg > .n3-btn {\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\n.n3-btn-sm,\n.n3-btn-group-sm > .n3-btn {\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.n3-btn-xs,\n.n3-btn-group-xs > .n3-btn {\n  padding: 1px 5px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.n3-btn-block {\n  display: block;\n  width: 100%;\n}\n.n3-btn-block + .n3-btn-block {\n  margin-top: 5px;\n}\ninput[type=\"submit\"].n3-btn-block,\ninput[type=\"reset\"].n3-btn-block,\ninput[type=\"button\"].n3-btn-block {\n  width: 100%;\n}\n/*------------ btn-group -----------*/\n.n3-btn-group,\n.n3-btn-group-vertical {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n}\n.n3-checkbox-group,\n.n3-radio-group {\n  padding-top: 7px;\n}\n.n3-btn-group > .n3-btn,\n.n3-btn-group-vertical > .n3-btn {\n  position: relative;\n  float: left;\n}\n.n3-btn-group > .n3-btn:hover,\n.n3-btn-group-vertical > .n3-btn:hover,\n.n3-btn-group > .n3-btn:focus,\n.n3-btn-group-vertical > .n3-btn:focus,\n.n3-btn-group > .n3-btn:active,\n.n3-btn-group-vertical > .n3-btn:active,\n.n3-btn-group > .n3-btn.n3-active,\n.n3-btn-group-vertical > .n3-btn.n3-active {\n  z-index: 2;\n}\n.n3-btn-group .n3-btn + .n3-btn,\n.n3-btn-group .n3-btn + .n3-btn-group,\n.n3-btn-group .n3-btn-group + .n3-btn,\n.n3-btn-group .n3-btn-group + .n3-btn-group {\n  margin-left: -1px;\n}\n.n3-btn-group > .n3-btn:not(:first-child):not(:last-child):not(.n3-dropdown-toggle) {\n  border-radius: 0;\n}\n.n3-btn-group > .n3-btn:first-child {\n  margin-left: 0;\n}\n.n3-btn-group > .n3-btn:first-child:not(:last-child):not(.n3-dropdown-toggle) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.n3-btn-group > .n3-btn:last-child:not(:first-child),\n.n3-btn-group > .n3-dropdown-toggle:not(:first-child) {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.n3-btn-group > .n3-btn-group {\n  float: left;\n}\n.n3-btn-group > .n3-btn-group:not(:first-child):not(:last-child) > .n3-btn {\n  border-radius: 0;\n}\n.n3-btn-group > .n3-btn-group:first-child:not(:last-child) > .n3-btn:last-child,\n.n3-btn-group > .n3-btn-group:first-child:not(:last-child) > .n3-dropdown-toggle {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.n3-btn-group > .n3-btn-group:last-child:not(:first-child) > .n3-btn:first-child {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.n3-btn-group .n3-dropdown-toggle:active,\n.n3-btn-group.n3-open .n3-dropdown-toggle {\n  outline: 0;\n}\n.n3-btn-group > .n3-btn + .n3-dropdown-toggle {\n  padding-right: 8px;\n  padding-left: 8px;\n}\n.n3-btn-group > .n3-btn-lg + .n3-dropdown-toggle {\n  padding-right: 12px;\n  padding-left: 12px;\n}\n.n3-btn-group.n3-open .n3-dropdown-toggle {\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n.n3-modal-open {\n  overflow: hidden;\n}\n.n3-modal {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1040;\n  display: none;\n  overflow: hidden;\n  -webkit-overflow-scrolling: touch;\n  outline: 0;\n  transition: all 0.3s ease;\n}\n.n3-modal-in {\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.n3-modal-zoom .n3-modal-dialog {\n  transform: scale(0.1);\n  top: 300px;\n  opacity: 0;\n  transition: all 0.3s;\n}\n.n3-modal-zoom.n3-modal-in .n3-modal-dialog {\n  transform: scale(1);\n  transform: translate3d(0, -300px, 0);\n  opacity: 1;\n}\n.n3-modal-fade .n3-modal-dialog {\n  transition: transform 0.3s ease-out;\n  transform: translate(0, -25%);\n}\n.n3-modal-in .n3-modal-dialog {\n  transform: translate(0, 0);\n}\n.n3-modal-open .n3-modal {\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.n3-modal-dialog {\n  position: relative;\n  width: auto;\n  margin: 30px auto;\n}\n.n3-modal-content {\n  position: relative;\n  background-color: #fff;\n  background-clip: padding-box;\n  border-radius: 6px;\n  outline: 0;\n  box-shadow: none;\n  border: none;\n}\n.n3-modal 7-backdrop {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  background-color: #000;\n}\n.n3-modal-backdrop.n3-modal-fade {\n  opacity: 0;\n}\n.n3-modal-backdrop.n3-modal-in {\n  opacity: .5;\n}\n.n3-modal-header {\n  min-height: 16.42857143px;\n  padding: 15px;\n  background: #41cac0;\n  color: #fff;\n  border-radius: 5px 5px 0 0;\n  border-bottom: none;\n}\n.n3-modal-header .n3-close {\n  margin-top: 0px;\n}\n.n3-modal-title {\n  margin: 0;\n  line-height: 1.42857143;\n}\n.n3-modal-body {\n  position: relative;\n  padding: 15px;\n}\n.n3-modal-footer {\n  padding: 15px;\n  text-align: right;\n  border-top: 1px solid #ddd;\n}\n.n3-modal-footer .n3-btn + .n3-btn {\n  margin-bottom: 0;\n  margin-left: 5px;\n}\n.n3-modal-footer .n3-btn-group .n3-btn + .n3-btn {\n  margin-left: -1px;\n}\n.n3-modal-footer .n3-btn-block + .n3-btn-block {\n  margin-left: 0;\n}\n.n3-carousel {\n  position: relative;\n}\n.n3-carousel-inner {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n}\n.n3-carousel-inner > .n3-carousel-item {\n  position: relative;\n  display: none;\n  transition: 0.6s ease-in-out left;\n}\n.n3-carousel-inner > .n3-carousel-item > img,\n.n3-carousel-inner > .n3-carousel-item > a > img {\n  line-height: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.n3-carousel-inner > .n3-carousel-active,\n.n3-carousel-inner > .n3-carousel-next,\n.n3-carousel-inner > .n3-carousel-prev {\n  display: block;\n}\n.n3-carousel-inner > .n3-carousel-next,\n.n3-carousel-inner > .n3-carousel-prev {\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n.n3-carousel-inner > .n3-carousel-active,\n.n3-carousel-inner > .n3-carousel-next.n3-carousel-left,\n.n3-carousel-inner > .n3-carousel-prev.n3-carousel-right {\n  left: 0;\n  z-index: 1;\n}\n.n3-carousel-inner > .n3-carousel-prev,\n.n3-carousel-inner > .n3-carousel-active.n3-carousel-left {\n  left: -100%;\n  z-index: 2;\n}\n.n3-carousel-inner > .n3carousel--next,\n.n3-carousel-inner > .n3-carousel-active.n3-carousel-right {\n  left: 100%;\n  z-index: 2;\n}\n.n3-carousel-control {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 15%;\n  font-size: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);\n  opacity: .5;\n  z-index: 3;\n}\n.n3-carousel-control:hover {\n  cursor: pointer;\n}\n.n3-carousel-control.n3-carousel-left {\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);\n  background-repeat: repeat-x;\n}\n.n3-carousel-control.n3-carousel-right {\n  right: 0;\n  left: auto;\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);\n  background-repeat: repeat-x;\n}\n.n3-carousel-control:hover,\n.n3-carousel-control:focus {\n  color: #fff;\n  text-decoration: none;\n  outline: 0;\n  opacity: .9;\n}\n.n3-carousel-control .fa-chevron-left,\n.n3-carousel-control .fa-chevron-right {\n  position: absolute;\n  top: 50%;\n  z-index: 5;\n  display: inline-block;\n}\n.n3-carousel-control .fa-chevron-left {\n  left: 50%;\n  margin-left: -10px;\n}\n.n3-carousel-control .fa-chevron-right {\n  right: 50%;\n  margin-right: -10px;\n}\n.n3-carousel-indicators {\n  position: absolute;\n  bottom: 10px;\n  left: 50%;\n  z-index: 15;\n  width: 60%;\n  padding-left: 0;\n  margin-left: -30%;\n  text-align: center;\n  list-style: none;\n}\n.n3-carousel-indicators li {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  margin: 1px;\n  text-indent: -999px;\n  cursor: pointer;\n  background-color: rgba(0, 0, 0, 0);\n  border: 1px solid #fff;\n  border-radius: 10px;\n  margin: 0px 5px;\n}\n.n3-carousel-indicators .n3-carousel-active {\n  background-color: #fff;\n}\n@media screen and (min-width: 768px) {\n  .n3-carousel-control .fa-chevron-left,\n  .n3-carousel-control .fa-chevron-right {\n    width: 30px;\n    height: 30px;\n    margin-top: -15px;\n    font-size: 30px;\n  }\n  .n3-carousel-control .fa-chevron-left {\n    margin-left: -15px;\n  }\n  .n3-carousel-control .fa-chevron-right {\n    margin-right: -15px;\n  }\n  .n3-carousel-indicators {\n    bottom: 20px;\n  }\n}\n.n3-alert {\n  padding: 15px;\n  border: 1px solid transparent;\n  border-radius: 4px;\n  overflow: hidden;\n  z-index: 1200;\n}\n.n3-alert h4 {\n  margin-top: 0;\n  color: inherit;\n}\n.n3-alert > p,\n.n3-alert > ul {\n  margin-bottom: 0;\n}\n.n3-alert > p + p {\n  margin-top: 5px;\n}\n.n3-alert hr {\n  border-top-color: rgba(255, 255, 255, 0.5);\n}\n.n3-alert-default {\n  color: #fff;\n  background-color: rgba(51, 51, 51, 0.9);\n}\n.n3-alert-default .n3-close {\n  color: #fff;\n}\n.n3-alert-success {\n  color: #fff;\n  background-color: rgba(46, 204, 113, 0.9);\n}\n.n3-alert-info {\n  color: #fff;\n  background-color: rgba(52, 152, 219, 0.9);\n}\n.n3-alert-warning {\n  color: #fff;\n  background-color: rgba(241, 196, 15, 0.9);\n}\n.n3-alert-danger {\n  color: #fff;\n  background-color: rgba(231, 76, 60, 0.9);\n}\n.n3-alert-icon {\n  float: left;\n  font-size: 18px;\n  margin-right: 10px;\n}\n.n3-alert-content {\n  margin-left: 32px;\n}\n.n3-alert-small {\n  padding: 2px 14px;\n}\n.n3-alert-small .close {\n  font-size: 20px;\n  top: 0;\n}\n.n3-alert.n3-center {\n  position: fixed;\n  margin: 0 auto;\n  left: 50%;\n  top: 50%;\n}\n.n3-alert.n3-top {\n  position: fixed;\n  top: 30px;\n  margin: 0 auto;\n  left: 50%;\n}\n.n3-alert.n3-bottom {\n  position: fixed;\n  bottom: 30px;\n  margin: 0 auto;\n  left: 50%;\n}\n.n3-alert.n3-top-right {\n  position: fixed;\n  top: 30px;\n  right: 50px;\n}\n.n3-alert.n3-top-left {\n  position: fixed;\n  top: 30px;\n  left: 50px;\n}\n.n3-alert.n3-bottom-right {\n  position: fixed;\n  bottom: 30px;\n  right: 50px;\n}\n.n3-alert.n3-bottom-left {\n  position: fixed;\n  bottom: 30px;\n  left: 50px;\n}\n.n3-alert-dismissable,\n.n3-alert-dismissible {\n  padding-right: 35px;\n}\n.n3-alert-dismissable .n3-close,\n.n3-alert-dismissible .n3-close {\n  position: relative;\n  top: -2px;\n  right: -21px;\n  color: inherit;\n}\n.n3-panel-body {\n  padding: 15px;\n}\n.n3-panel-heading {\n  padding: 10px 15px;\n  border-bottom: 1px solid transparent;\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n  border-color: #f9f9f9;\n  font-size: 16px;\n  font-weight: 300;\n}\n.n3-panel-heading > .n3-dropdown .n3-dropdown-toggle {\n  color: inherit;\n}\n.n3-panel-heading + .n3-list-group .n3-list-group-item:first-child {\n  border-top-width: 0;\n}\n.n3-panel-title {\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 14px;\n  color: #333;\n  font-weight: 400;\n  font-family: 'Open Sans', sans-serif;\n}\n.n3-panel-title > a,\n.n3-panel-title > small,\n.n3-panel-title > .small,\n.n3-panel-title > small > a,\n.n3-panel-title > .small > a {\n  color: inherit;\n}\n.n3-panel-footer {\n  padding: 10px 15px;\n  background-color: #f9f9f9;\n  border-top: 1px solid #ddd;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.n3-panel {\n  margin-bottom: 20px;\n  background-color: #fff;\n  border-radius: 4px;\n}\n.n3-panel > .n3-list-group,\n.n3-panel > .n3-panel-collapse > .n3-list-group {\n  margin-bottom: 0;\n}\n.n3-panel > .n3-list-group .n3-list-group-item,\n.n3-panel > .n3-panel-collapse > .n3-list-group .n3-list-group-item {\n  border-width: 1px 0;\n  border-radius: 0;\n}\n.n3-panel > .n3-list-group:first-child .n3-list-group-item:first-child,\n.n3-panel > .n3-panel-collapse > .n3-list-group:first-child .n3-list-group-item:first-child {\n  border-top: 0;\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.n3-panel > .n3-list-group:last-child .n3-list-group-item:last-child,\n.n3-panel > .n3-panel-collapse > .n3-list-group:last-child .n3-list-group-item:last-child {\n  border-bottom: 0;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.n3-panel > .n3-table,\n.n3-panel > .n3-table-responsive > .n3-table,\n.n3-panel > .n3-panel-collapse > .n3-table {\n  margin-bottom: 0;\n}\n.n3-panel > .n3-table caption,\n.n3-panel > .n3-table-responsive > .n3-table caption,\n.n3-panel > .n3-panel-collapse > .n3-table caption {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.n3-panel > .n3-table:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child {\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child {\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child td:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child td:first-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child td:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child td:first-child,\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child th:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child th:first-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child th:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child th:first-child {\n  border-top-left-radius: 3px;\n}\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child td:last-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child td:last-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child td:last-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child td:last-child,\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child th:last-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child th:last-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child th:last-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child th:last-child {\n  border-top-right-radius: 3px;\n}\n.n3-panel > .n3-table:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child {\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child {\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child td:first-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child td:first-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child td:first-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child td:first-child,\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child th:first-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child th:first-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child th:first-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child th:first-child {\n  border-bottom-left-radius: 3px;\n}\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child td:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child td:last-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child td:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child td:last-child,\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child th:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child th:last-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child th:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child th:last-child {\n  border-bottom-right-radius: 3px;\n}\n.n3-panel > .n3-panel-body + .n3-table,\n.n3-panel > .n3-panel-body + .n3-table-responsive,\n.n3-panel > .n3-table + .n3-panel-body,\n.n3-panel > .n3-table-responsive + .n3-panel-body {\n  border-top: 1px solid #ddd;\n}\n.n3-panel > .n3-table > tbody:first-child > tr:first-child th,\n.n3-panel > .n3-table > tbody:first-child > tr:first-child td {\n  border-top: 0;\n}\n.n3-panel > .n3-table-bordered,\n.n3-panel > .n3-table-responsive > .n3-table-bordered {\n  border: 0;\n}\n.n3-panel > .n3-table-bordered > thead > tr > th:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr > th:first-child,\n.n3-panel > .n3-table-bordered > tbody > tr > th:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr > th:first-child,\n.n3-panel > .n3-table-bordered > tfoot > tr > th:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr > th:first-child,\n.n3-panel > .n3-table-bordered > thead > tr > td:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr > td:first-child,\n.n3-panel > .n3-table-bordered > tbody > tr > td:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr > td:first-child,\n.n3-panel > .n3-table-bordered > tfoot > tr > td:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr > td:first-child {\n  border-left: 0;\n}\n.n3-panel > .n3-table-bordered > thead > tr > th:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr > th:last-child,\n.n3-panel > .n3-table-bordered > tbody > tr > th:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr > th:last-child,\n.n3-panel > .n3-table-bordered > tfoot > tr > th:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr > th:last-child,\n.n3-panel > .n3-table-bordered > thead > tr > td:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr > td:last-child,\n.n3-panel > .n3-table-bordered > tbody > tr > td:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr > td:last-child,\n.n3-panel > .n3-table-bordered > tfoot > tr > td:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr > td:last-child {\n  border-right: 0;\n}\n.n3-panel > .n3-table-bordered > thead > tr:first-child > td,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr:first-child > td,\n.n3-panel > .n3-table-bordered > tbody > tr:first-child > td,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr:first-child > td,\n.n3-panel > .n3-table-bordered > thead > tr:first-child > th,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr:first-child > th,\n.n3-panel > .n3-table-bordered > tbody > tr:first-child > th,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr:first-child > th {\n  border-bottom: 0;\n}\n.n3-panel > .n3-table-bordered > tbody > tr:last-child > td,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr:last-child > td,\n.n3-panel > .n3-table-bordered > tfoot > tr:last-child > td,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr:last-child > td,\n.n3-panel > .n3-table-bordered > tbody > tr:last-child > th,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr:last-child > th,\n.n3-panel > .n3-table-bordered > tfoot > tr:last-child > th,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr:last-child > th {\n  border-bottom: 0;\n}\n.n3-panel > .n3-table-responsive {\n  margin-bottom: 0;\n  border: 0;\n}\n.n3-list-group + .n3-panel-footer {\n  border-top-width: 0;\n}\n.n3-panel-group {\n  margin-bottom: 20px;\n}\n.n3-panel-group .n3-panel {\n  margin-bottom: 0;\n  border-radius: 4px;\n}\n.n3-panel-group .n3-panel + .n3-panel {\n  margin-top: 5px;\n}\n.n3-panel-group .n3-panel-heading {\n  border-bottom: 0;\n}\n.n3-panel-group .n3-panel-heading + .n3-panel-collapse > .n3-panel-body,\n.n3-panel-group .n3-panel-heading + .n3-panel-collapse > .n3-list-group {\n  border-top: 1px solid #ddd;\n}\n.n3-panel-group .n3-panel-footer {\n  border-top: 0;\n}\n.n3-panel-group .n3-panel-footer + .n3-panel-collapse .n3-panel-body {\n  border-bottom: 1px solid #ddd;\n}\n.n3-panel-default {\n  border-color: #ddd;\n}\n.n3-panel-default > .n3-panel-heading {\n  background-color: #fff;\n  border-color: #ddd;\n  color: #333;\n}\n.n3-panel-default > .n3-panel-heading + .n3-panel-collapse > .n3-panel-body {\n  border-top-color: #ddd;\n}\n.n3-panel-default > .n3-panel-heading .n3-badge {\n  color: #f9f9f9;\n  background-color: #333;\n}\n.n3-panel-default > .n3-panel-footer + .n3-panel-collapse > .n3-panel-body {\n  border-bottom-color: #ddd;\n}\n@-webkit-keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@-o-keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@-webkit-keyframes loading-spin {\n  from {\n    -webkit-transform: rotate(0deg);\n  }\n  to {\n    -webkit-transform: rotate(360deg);\n  }\n}\n@-moz-keyframes loading-spin {\n  from {\n    -moz-transform: rotate(0deg);\n  }\n  to {\n    -moz-transform: rotate(360deg);\n  }\n}\n@-ms-keyframes loading-spin {\n  from {\n    -ms-transform: rotate(0deg);\n  }\n  to {\n    -ms-transform: rotate(360deg);\n  }\n}\n@keyframes loading-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n.n3-progress {\n  height: 20px;\n  margin-bottom: 20px;\n  overflow: hidden;\n  border-radius: 4px;\n  box-shadow: none;\n  background: #f9f9f9;\n}\n.n3-progress-bar {\n  float: left;\n  width: 0;\n  height: 100%;\n  font-size: 12px;\n  line-height: 20px;\n  color: #fff;\n  text-align: center;\n  background-color: #41cac0;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);\n  transition: width .6s ease;\n}\n.n3-progress-bar-striped {\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-size: 40px 40px;\n}\n.n3-progress-bar-animated {\n  animation: progress-bar-stripes 2s linear infinite;\n}\n.n3-progress-bar-success {\n  background-color: #2ecc71;\n}\n.n3-progress-bar-info {\n  background-color: #58c9f3;\n}\n.n3-progress-bar-warning {\n  background-color: #f1c500;\n}\n.n3-progress-bar-danger {\n  background-color: #ff6c60;\n}\n.n3-breadcrumb {\n  padding: 8px 15px;\n  margin-bottom: 20px;\n  list-style: none;\n  border-radius: 4px;\n}\n.n3-breadcrumb > li {\n  display: inline-block;\n}\n.n3-breadcrumb > li + li:before {\n  padding: 0 5px;\n  color: #ccc;\n  content: \"/\\A0\";\n}\n.n3-breadcrumb > .n3-breadcrumb-active {\n  color: #41cac0;\n}\n.n3-nav {\n  padding-left: 0;\n  margin-bottom: 0;\n  list-style: none;\n}\n.n3-nav li {\n  position: relative;\n  display: block;\n}\n.n3-nav > li > a {\n  position: relative;\n  display: block;\n  padding: 10px 15px;\n  transition: all .3s ease;\n}\n.n3-nav > li > a:hover,\n.n3-nav > li > a:focus {\n  color: #333;\n  text-decoration: none;\n  background: rgba(65, 202, 192, 0.1);\n}\n.n3-nav > li.n3-nav-disabled > a {\n  color: #999;\n}\n.n3-nav > li.n3-nav-tabs-disabled > a:hover,\n.n3-nav > li.n3-nav-tabs-disabled > a:focus {\n  color: #999;\n  text-decoration: none;\n  cursor: not-allowed;\n  background-color: transparent;\n}\n.n3-nav > li > a > img {\n  max-width: none;\n}\n.n3-nav-tabs {\n  border-bottom: 1px solid #ddd;\n  margin-bottom: 15px;\n}\n.n3-nav-tabs > li {\n  float: left;\n  margin-bottom: -1px;\n}\n.n3-nav-tabs > li > a {\n  margin-right: 1px;\n  line-height: 1.42857143;\n  border: 1px solid transparent;\n  border-radius: 4px 4px 0 0;\n}\n.n3-nav-tabs > li > a:hover {\n  border-color: #f9f9f9 #f9f9f9 #ddd;\n}\n.n3-nav-tabs > li.n3-nav-tabs-active > a,\n.n3-nav-tabs > li.n3-nav-tabs-active > a:hover,\n.n3-nav-tabs > li.n3-nav-tabs-active > a:focus {\n  color: #333;\n  cursor: default;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-bottom-color: transparent;\n}\n.n3-nav-tabs-justified {\n  width: 100%;\n  border-bottom: 0;\n}\n.n3-nav-tabs-justified > li {\n  float: none!important;\n}\n.n3-nav-tabs-justified > li > a {\n  margin-bottom: 5px;\n  text-align: center;\n  margin-right: 0;\n  border-radius: 4px;\n}\n.n3-nav-tabs-justified li:last-child > a:hover,\n.n3-nav-tabs-justified li.n3-nav-tabsactive:last-child > a {\n  border-radius: 0 4px 0 0 !important;\n}\n.n3-nav-tabs-justified > .n3-dropdown .n3-dropdown-menu {\n  top: auto;\n  left: auto;\n}\n@media (min-width: 768px) {\n  .n3-nav-tabs-justified {\n    border-bottom: 0;\n  }\n  .n3-nav-tabs-justified > li {\n    display: table-cell;\n    width: 1%;\n  }\n  .n3-nav-tabs-justified > li > a {\n    margin-bottom: 0;\n    margin-right: 0;\n    border-bottom: 1px solid #ddd;\n    border-radius: 4px 4px 0 0;\n  }\n  .n3-nav-tabs-justified > .n3-nav-tabs-active > a,\n  .n3-nav-tabs-justified > .n3-nav-tabs-active > a:hover,\n  .n3-nav-tabs-justified > .n3-nav-tabs-active > a:focus {\n    border: 1px solid #ddd;\n    border-bottom-color: #fff;\n  }\n}\n.n3-nav-tabs-pills > li {\n  float: left;\n}\n.n3-nav-tabs-pills > li > a {\n  border-radius: 4px;\n}\n.n3-nav-tabs-pills > li + li {\n  margin-left: 2px;\n}\n.n3-nav-tabs-pills > li.n3-nav-tabs-active > a,\n.n3-nav-tabs-pills > li.n3-nav-tabs-active > a:hover,\n.n3-nav-tabs-pills > li.n3-nav-tabs-active > a:focus {\n  color: #fff;\n  background-color: #41cac0;\n}\n.n3-nav-tabs-stacked > li {\n  float: none;\n}\n.n3-nav-tabs-stacked > li + li {\n  margin-top: 2px;\n  margin-left: 0;\n}\n.n3-tab-content > .n3-tab-pane {\n  display: block;\n  visibility: visible !important;\n}\n.n3-tab-content .n3-nav-tabs-active {\n  display: block;\n  visibility: visible;\n}\n.n3-nav-tabs .n3-dropdown-menu {\n  margin-top: -1px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.n3-nav-tabs-primary {\n  border-bottom: 2px solid #41cac0;\n}\n.n3-nav-tabs-primary li {\n  margin-bottom: 0;\n}\n.n3-nav-tabs-primary .n3-nav-tabs-active > a,\n.n3-nav-tabs-primary .n3-nav-tabs-active > a:hover,\n.n3-nav-tabs-primary .n3-nav-tabs-active > a:focus {\n  background: #41cac0;\n  border-color: #41cac0 !important;\n  color: white;\n  border-bottom: 0;\n}\n.n3-nav-tabs-primary.n3-nav-tabs-stacked {\n  border-bottom: 0;\n  border-right: 2px solid #41cac0;\n}\n.n3-nav-tabs-primary.n3-nav-tabs-stacked > li > a {\n  border-radius: 2px 0 0 2px;\n  margin-right: 0;\n}\n.n3-navbar-collapse {\n  overflow-x: visible;\n  -webkit-overflow-scrolling: touch;\n  border-top: 1px solid transparent;\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);\n}\n.n3-navbar-nav > li:hover {\n  cursor: pointer;\n}\n.n3-navbar-nav > li > a,\n.n3-navbar-nav .n3-sub-nav-trigger {\n  padding: 15px 20px;\n  line-height: 20px;\n  border-bottom: 2px solid transparent;\n}\n.n3-navbar-nav > li .n3-dropdown-menu {\n  top: 96%!important;\n}\n.n3-navbar-nav {\n  margin: 0;\n}\n.n3-navbar-vertical .n3-navbar-nav > li > a,\n.n3-navbar-vertical .n3-navbar-nav .n3-sub-nav-trigger {\n  padding: 10px 20px;\n}\n.n3-navbar-vertical .n3-navbar-nav {\n  float: none;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con {\n  width: 100%;\n  position: relative;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con .n3-sub-nav-trigger:hover {\n  background: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con .n3-sub-nav-fa {\n  float: right;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con > .n3-dropdown-menu {\n  position: relative;\n  width: 100%;\n  box-shadow: none;\n  background: rgba(255, 255, 255, 0.1);\n  margin: 0px;\n  padding: 0px;\n  border: 0px;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con > .n3-dropdown-menu > li {\n  padding: 5px 15px;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con > .n3-dropdown-menu > li:hover {\n  background: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con > .n3-dropdown-menu > li > a:hover {\n  background: transparent;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-navbar-active {\n  border-left: 2px solid #41cac0;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-navbar-active a,\n.n3-navbar-vertical .n3-navbar-nav .n3-navbar-active a:hover,\n.n3-navbar-vertical .n3-navbar-nav .n3-navbar-active a:focus {\n  color: #41cac0;\n}\n.n3-navbar-vertical .n3-navbar-nav > li {\n  float: none;\n}\n.n3-navbar-horizontal .n3-navbar-nav {\n  float: left;\n}\n.n3-navbar-horizontal .n3-navbar-nav > li {\n  float: left;\n}\n.n3-navbar-horizontal .n3-navbar-nav .n3-dropdown-con:hover {\n  background-color: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-horizontal .n3-navbar-active a,\n.n3-navbar-horizontal .n3-navbar-active a:hover,\n.n3-navbar-horizontal .n3-navbar-active a:focus {\n  color: #41cac0;\n  border-bottom: 2px solid #41cac0;\n}\n.n3-navbar-default {\n  background-color: transparent;\n}\n.n3-navbar-default .n3-navbar-nav > li > a:hover,\n.n3-navbar-default .n3-navbar-nav > li > a:focus {\n  color: #41cac0;\n  background-color: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-default .n3-navbar-nav .n3-navbar-disabled a,\n.n3-navbar-default .n3-navbar-nav .n3-navbar-disabled a:hover,\n.n3-navbar-default .n3-navbar-nav .n3-navbar-disabled a:focus {\n  color: #ddd;\n  cursor: not-allowed;\n  background-color: transparent;\n}\n.n3-navbar-dark {\n  background-color: #333;\n}\n.n3-navbar-dark .n3-navbar-nav > li .n3-sub-nav-fa {\n  color: #fff;\n}\n.n3-navbar-dark .n3-navbar-nav > li a {\n  color: #fff;\n}\n.n3-navbar-dark .n3-navbar-nav > li a:hover,\n.n3-navbar-dark .n3-navbar-nav > li a:focus {\n  background-color: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-dark .n3-navbar-nav .n3-dropdown-menu {\n  background-color: #333;\n}\n.n3-navbar-dark .n3-navbar-nav .n3-navbar-disabled a,\n.n3-navbar-dark .n3-navbar-nav .n3-navbar-disabled a:hover,\n.n3-navbar-dark .n3-navbar-nav .n3-navbar-disabled a:focus {\n  color: #999;\n  cursor: not-allowed;\n  background-color: transparent;\n}\n.n3-badge {\n  display: inline-block;\n  min-width: 10px;\n  padding: 3px 7px;\n  font-size: 12px;\n  font-weight: bold;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  background-color: #999;\n  border-radius: 10px;\n}\n.n3-btn .n3-badge {\n  position: relative;\n  top: -1px;\n}\n.n3-btn-xs .n3-badge {\n  top: 0;\n  padding: 1px 5px;\n}\n.n3-nav-pills > .n3-active > a > .n3-badge {\n  color: #41cac0;\n  background-color: #fff;\n}\n.n3-nav-pills > li > a > .n3-badge {\n  margin-left: 3px;\n}\n.n3-close {\n  float: right;\n  font-size: 21px;\n  font-weight: bold;\n  line-height: 1;\n  color: #000;\n  text-shadow: 0 1px 0 #fff;\n  opacity: .2;\n  outline: none;\n}\n.n3-close:hover,\n.n3-close:focus {\n  color: #000;\n  text-decoration: none;\n  cursor: pointer;\n  opacity: .5;\n}\nbutton.n3-close {\n  -webkit-appearance: none;\n  padding: 0;\n  cursor: pointer;\n  background: transparent;\n  border: 0;\n}\nhtml {\n  font-size: 10px;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;\n  -webkit-text-size-adjust: 100%;\n  -ms-text-size-adjust: 100%;\n}\nbody {\n  margin: 0;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #333;\n  background-color: #fff;\n  -webkit-font-smoothing: antialiased;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  vertical-align: baseline;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden],\ntemplate {\n  display: none;\n}\na {\n  background-color: transparent;\n  color: #333;\n  text-decoration: none;\n}\na:active,\na:hover {\n  outline: 0;\n  color: #41cac0;\n  text-decoration: none;\n}\na:hover {\n  cursor: pointer;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\nb,\nstrong {\n  font-weight: bold;\n}\ndfn {\n  font-style: italic;\n}\nh1 {\n  margin: .67em 0;\n  font-size: 2em;\n}\nmark {\n  color: #000;\n  background: #ff0;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  position: relative;\n  font-size: 75%;\n  line-height: 0;\n  vertical-align: baseline;\n}\nsup {\n  top: -0.5em;\n}\nsub {\n  bottom: -0.25em;\n}\nimg {\n  border: 0;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfigure {\n  margin: 1em 40px;\n}\nhr {\n  height: 0;\n  box-sizing: content-box;\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 1px solid #eee;\n}\npre {\n  overflow: auto;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  margin: 0;\n  font: inherit;\n  color: inherit;\n}\nbutton {\n  overflow: visible;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  padding: 0;\n  border: 0;\n}\ninput {\n  line-height: normal;\n}\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0;\n}\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\ninput[type=\"search\"] {\n  box-sizing: content-box;\n  -webkit-appearance: textfield;\n}\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\nfieldset {\n  padding: .35em .625em .75em;\n  margin: 0 2px;\n  border: 1px solid #c0c0c0;\n}\nlegend {\n  padding: 0;\n  border: 0;\n}\ntextarea {\n  overflow: auto;\n}\noptgroup {\n  font-weight: bold;\n}\ntable {\n  border-spacing: 0;\n  border-collapse: collapse;\n}\ntd,\nth {\n  padding: 0;\n}\nul li {\n  list-style: none;\n}\nul {\n  padding-left: 0px;\n}\n* {\n  box-sizing: border-box;\n}\n*:before,\n*:after {\n  box-sizing: border-box;\n}\ninput,\nbutton,\nselect,\ntextarea {\n  font-family: inherit;\n  font-size: inherit;\n  line-height: inherit;\n}\nfigure {\n  margin: 0;\n}\nimg {\n  vertical-align: middle;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\n.h1,\n.h2,\n.h3,\n.h4,\n.h5,\n.h6 {\n  font-family: inherit;\n  font-weight: 500;\n  line-height: 1.1;\n  color: inherit;\n}\nh1 small,\nh2 small,\nh3 small,\nh4 small,\nh5 small,\nh6 small,\n.h1 small,\n.h2 small,\n.h3 small,\n.h4 small,\n.h5 small,\n.h6 small,\nh1 .small,\nh2 .small,\nh3 .small,\nh4 .small,\nh5 .small,\nh6 .small,\n.h1 .small,\n.h2 .small,\n.h3 .small,\n.h4 .small,\n.h5 .small,\n.h6 .small {\n  font-weight: normal;\n  line-height: 1;\n  color: #777;\n}\nh1,\n.h1,\nh2,\n.h2,\nh3,\n.h3 {\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\nh1 small,\n.h1 small,\nh2 small,\n.h2 small,\nh3 small,\n.h3 small,\nh1 .small,\n.h1 .small,\nh2 .small,\n.h2 .small,\nh3 .small,\n.h3 .small {\n  font-size: 65%;\n}\nh4,\n.h4,\nh5,\n.h5,\nh6,\n.h6 {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\nh4 small,\n.h4 small,\nh5 small,\n.h5 small,\nh6 small,\n.h6 small,\nh4 .small,\n.h4 .small,\nh5 .small,\n.h5 .small,\nh6 .small,\n.h6 .small {\n  font-size: 75%;\n}\nh1,\n.h1 {\n  font-size: 36px;\n}\nh2,\n.h2 {\n  font-size: 30px;\n}\nh3,\n.h3 {\n  font-size: 24px;\n}\nh4,\n.h4 {\n  font-size: 18px;\n}\nh5,\n.h5 {\n  font-size: 14px;\n}\nh6,\n.h6 {\n  font-size: 12px;\n}\np {\n  margin: 0 0 10px;\n}\n.lead {\n  margin-bottom: 20px;\n  font-size: 16px;\n  font-weight: 300;\n  line-height: 1.4;\n}\n@media (min-width: 768px) {\n  .lead {\n    font-size: 21px;\n  }\n}\nsmall,\n.small {\n  font-size: 85%;\n}\nmark,\n.mark {\n  padding: .2em;\n  background-color: #fcf8e3;\n}\n.text-left {\n  text-align: left;\n}\n.text-right {\n  text-align: right;\n}\n.text-center {\n  text-align: center;\n}\n.text-justify {\n  text-align: justify;\n}\n.text-nowrap {\n  white-space: nowrap;\n}\n.text-lowercase {\n  text-transform: lowercase;\n}\n.text-uppercase {\n  text-transform: uppercase;\n}\n.text-capitalize {\n  text-transform: capitalize;\n}\n.text-muted {\n  color: #ccc;\n}\n.text-primary {\n  color: #41cac0;\n}\na.text-primary:hover {\n  color: #39b2a9;\n}\n.text-success {\n  color: #2ecc71;\n}\na.text-success:hover {\n  color: #29b464;\n}\n.text-info {\n  color: #58c9f3;\n}\na.text-info:hover {\n  color: #38bef0;\n}\n.text-warning {\n  color: #f1c500;\n}\na.text-warning:hover {\n  color: #dbb509;\n}\n.text-danger {\n  color: #ff6c60;\n}\na.text-danger:hover {\n  color: #e74c3c;\n}\n.bg-primary {\n  color: #fff;\n  background-color: #41cac0;\n}\na.bg-primary:hover {\n  background-color: #39b2a9;\n}\n.bg-success {\n  background-color: #2ecc71;\n}\na.bg-success:hover {\n  background-color: #29b464;\n}\n.bg-info {\n  background-color: #58c9f3;\n}\na.bg-info:hover {\n  background-color: #38bef0;\n}\n.bg-warning {\n  background-color: #f1c500;\n}\na.bg-warning:hover {\n  background-color: #dbb509;\n}\n.bg-danger {\n  background-color: #ff6c60;\n}\na.bg-danger:hover {\n  background-color: #e74c3c;\n}\n.page-header {\n  padding-bottom: 9px;\n  margin: 40px 0 20px;\n  border-bottom: 1px solid #eee;\n}\nul,\nol {\n  margin-top: 0;\n  margin-bottom: 10px;\n}\nul ul,\nol ul,\nul ol,\nol ol {\n  margin-bottom: 0;\n}\n.list-unstyled {\n  padding-left: 0;\n  list-style: none;\n}\n.list-inline {\n  padding-left: 0;\n  margin-left: -5px;\n  list-style: none;\n}\n.list-inline > li {\n  display: inline-block;\n  padding-right: 5px;\n  padding-left: 5px;\n}\ndl {\n  margin-top: 0;\n  margin-bottom: 20px;\n}\ndt,\ndd {\n  line-height: 1.42857143;\n}\ndt {\n  font-weight: bold;\n}\ndd {\n  margin-left: 0;\n}\n@media (min-width: 768px) {\n  .dl-horizontal dt {\n    float: left;\n    width: 160px;\n    overflow: hidden;\n    clear: left;\n    text-align: right;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n  }\n  .dl-horizontal dd {\n    margin-left: 180px;\n  }\n}\nabbr[title],\nabbr[data-original-title] {\n  cursor: help;\n  border-bottom: 1px dotted #777;\n}\n.initialism {\n  font-size: 90%;\n  text-transform: uppercase;\n}\nblockquote {\n  padding: 10px 20px;\n  margin: 0 0 20px;\n  font-size: 17.5px;\n  border-left: 5px solid #eee;\n}\nblockquote p:last-child,\nblockquote ul:last-child,\nblockquote ol:last-child {\n  margin-bottom: 0;\n}\nblockquote footer,\nblockquote small,\nblockquote .small {\n  display: block;\n  font-size: 80%;\n  line-height: 1.42857143;\n  color: #777;\n}\nblockquote footer:before,\nblockquote small:before,\nblockquote .small:before {\n  content: '\\2014   \\A0';\n}\n.blockquote-reverse,\nblockquote.pull-right {\n  padding-right: 15px;\n  padding-left: 0;\n  text-align: right;\n  border-right: 5px solid #eee;\n  border-left: 0;\n}\n.blockquote-reverse footer:before,\nblockquote.pull-right footer:before,\n.blockquote-reverse small:before,\nblockquote.pull-right small:before,\n.blockquote-reverse .small:before,\nblockquote.pull-right .small:before {\n  content: '';\n}\n.blockquote-reverse footer:after,\nblockquote.pull-right footer:after,\n.blockquote-reverse small:after,\nblockquote.pull-right small:after,\n.blockquote-reverse .small:after,\nblockquote.pull-right .small:after {\n  content: '\\A0   \\2014';\n}\naddress {\n  margin-bottom: 20px;\n  font-style: normal;\n  line-height: 1.42857143;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: Menlo, Monaco, Consolas, \"Courier New\", monospace;\n}\ncode {\n  padding: 2px 4px;\n  font-size: 90%;\n  color: #c7254e;\n  background-color: #f9f2f4;\n  border-radius: 4px;\n}\nkbd {\n  padding: 2px 4px;\n  font-size: 90%;\n  color: #fff;\n  background-color: #333;\n  border-radius: 3px;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);\n}\nkbd kbd {\n  padding: 0;\n  font-size: 100%;\n  font-weight: bold;\n  box-shadow: none;\n}\npre {\n  display: block;\n  padding: 9.5px;\n  margin: 0 0 10px;\n  font-size: 13px;\n  line-height: 1.42857143;\n  color: #333;\n  word-break: break-all;\n  word-wrap: break-word;\n  background-color: #f5f5f5;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n}\npre code {\n  padding: 0;\n  font-size: inherit;\n  color: inherit;\n  white-space: pre-wrap;\n  background-color: transparent;\n  border-radius: 0;\n}\n.pre-scrollable {\n  max-height: 340px;\n  overflow-y: scroll;\n}\ntable {\n  background-color: transparent;\n}\ncaption {\n  padding-top: 6px 8px;\n  padding-bottom: 6px 8px;\n  color: #777777;\n  text-align: left;\n}\nth {\n  text-align: left;\n}\nfieldset {\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n  border: 0;\n}\nlegend {\n  display: block;\n  width: 100%;\n  padding: 0;\n  margin-bottom: 20px;\n  font-size: 21px;\n  line-height: inherit;\n  color: #333;\n  border: 0;\n  border-bottom: 1px solid #e5e5e5;\n}\nlabel {\n  display: inline-block;\n  max-width: 100%;\n  margin-bottom: 5px;\n}\ninput[type=\"search\"] {\n  box-sizing: border-box;\n}\ninput[type=\"radio\"],\ninput[type=\"checkbox\"] {\n  margin: 4px 0 0;\n  margin-top: 1px \\9;\n  line-height: normal;\n}\ninput[type=\"file\"] {\n  display: block;\n}\ninput[type=\"range\"] {\n  display: block;\n  width: 100%;\n}\nselect[multiple],\nselect[size] {\n  height: auto;\n}\ninput[type=\"file\"]:focus,\ninput[type=\"radio\"]:focus,\ninput[type=\"checkbox\"]:focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\noutput {\n  display: block;\n  padding-top: 7px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #555;\n}\n.clearfix:before,\n.clearfix:after {\n  display: table;\n  content: \" \";\n}\n.clearfix:after {\n  clear: both;\n}\n.center-block {\n  display: block;\n  margin-right: auto;\n  margin-left: auto;\n}\n.pull-right {\n  float: right !important;\n}\n.pull-left {\n  float: left !important;\n}\n.hide {\n  display: none !important;\n}\n.show {\n  display: block !important;\n}\n.pointer:hover {\n  cursor: pointer;\n}\n.invisible {\n  visibility: hidden;\n}\n.text-hide {\n  font: 0/0 a;\n  color: transparent;\n  text-shadow: none;\n  background-color: transparent;\n  border: 0;\n}\n.hidden {\n  display: none !important;\n  visibility: hidden !important;\n}\n.affix {\n  position: fixed;\n}\n.inline {\n  display: inline-block;\n}\n", ""]);
+	exports.push([module.id, "/*!\n *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome\n *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)\n */\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?v=4.6.3');\n  src: url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3') format('embedded-opentype'), url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff2?v=4.6.3') format('woff2'), url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.woff?v=4.6.3') format('woff'), url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.ttf?v=4.6.3') format('truetype'), url('https://cdn.bootcss.com/font-awesome/4.6.3/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular') format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333333em;\n  line-height: 0.75em;\n  vertical-align: -15%;\n}\n.fa-2x {\n  font-size: 2em;\n}\n.fa-3x {\n  font-size: 3em;\n}\n.fa-4x {\n  font-size: 4em;\n}\n.fa-5x {\n  font-size: 5em;\n}\n.fa-fw {\n  width: 1.28571429em;\n  text-align: center;\n}\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14285714em;\n  list-style-type: none;\n}\n.fa-ul > li {\n  position: relative;\n}\n.fa-li {\n  position: absolute;\n  left: -2.14285714em;\n  width: 2.14285714em;\n  top: 0.14285714em;\n  text-align: center;\n}\n.fa-li.fa-lg {\n  left: -1.85714286em;\n}\n.fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eeeeee;\n  border-radius: .1em;\n}\n.fa-pull-left {\n  float: left;\n}\n.fa-pull-right {\n  float: right;\n}\n.fa.fa-pull-left {\n  margin-right: .3em;\n}\n.fa.fa-pull-right {\n  margin-left: .3em;\n}\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right;\n}\n.pull-left {\n  float: left;\n}\n.fa.pull-left {\n  margin-right: .3em;\n}\n.fa.pull-right {\n  margin-left: .3em;\n}\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear;\n}\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8);\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n}\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg);\n}\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1);\n}\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1);\n}\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none;\n}\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle;\n}\n.fa-stack-1x,\n.fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center;\n}\n.fa-stack-1x {\n  line-height: inherit;\n}\n.fa-stack-2x {\n  font-size: 2em;\n}\n.fa-inverse {\n  color: #ffffff;\n}\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\";\n}\n.fa-music:before {\n  content: \"\\F001\";\n}\n.fa-search:before {\n  content: \"\\F002\";\n}\n.fa-envelope-o:before {\n  content: \"\\F003\";\n}\n.fa-heart:before {\n  content: \"\\F004\";\n}\n.fa-star:before {\n  content: \"\\F005\";\n}\n.fa-star-o:before {\n  content: \"\\F006\";\n}\n.fa-user:before {\n  content: \"\\F007\";\n}\n.fa-film:before {\n  content: \"\\F008\";\n}\n.fa-th-large:before {\n  content: \"\\F009\";\n}\n.fa-th:before {\n  content: \"\\F00A\";\n}\n.fa-th-list:before {\n  content: \"\\F00B\";\n}\n.fa-check:before {\n  content: \"\\F00C\";\n}\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\";\n}\n.fa-search-plus:before {\n  content: \"\\F00E\";\n}\n.fa-search-minus:before {\n  content: \"\\F010\";\n}\n.fa-power-off:before {\n  content: \"\\F011\";\n}\n.fa-signal:before {\n  content: \"\\F012\";\n}\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\";\n}\n.fa-trash-o:before {\n  content: \"\\F014\";\n}\n.fa-home:before {\n  content: \"\\F015\";\n}\n.fa-file-o:before {\n  content: \"\\F016\";\n}\n.fa-clock-o:before {\n  content: \"\\F017\";\n}\n.fa-road:before {\n  content: \"\\F018\";\n}\n.fa-download:before {\n  content: \"\\F019\";\n}\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\";\n}\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\";\n}\n.fa-inbox:before {\n  content: \"\\F01C\";\n}\n.fa-play-circle-o:before {\n  content: \"\\F01D\";\n}\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\";\n}\n.fa-refresh:before {\n  content: \"\\F021\";\n}\n.fa-list-alt:before {\n  content: \"\\F022\";\n}\n.fa-lock:before {\n  content: \"\\F023\";\n}\n.fa-flag:before {\n  content: \"\\F024\";\n}\n.fa-headphones:before {\n  content: \"\\F025\";\n}\n.fa-volume-off:before {\n  content: \"\\F026\";\n}\n.fa-volume-down:before {\n  content: \"\\F027\";\n}\n.fa-volume-up:before {\n  content: \"\\F028\";\n}\n.fa-qrcode:before {\n  content: \"\\F029\";\n}\n.fa-barcode:before {\n  content: \"\\F02A\";\n}\n.fa-tag:before {\n  content: \"\\F02B\";\n}\n.fa-tags:before {\n  content: \"\\F02C\";\n}\n.fa-book:before {\n  content: \"\\F02D\";\n}\n.fa-bookmark:before {\n  content: \"\\F02E\";\n}\n.fa-print:before {\n  content: \"\\F02F\";\n}\n.fa-camera:before {\n  content: \"\\F030\";\n}\n.fa-font:before {\n  content: \"\\F031\";\n}\n.fa-bold:before {\n  content: \"\\F032\";\n}\n.fa-italic:before {\n  content: \"\\F033\";\n}\n.fa-text-height:before {\n  content: \"\\F034\";\n}\n.fa-text-width:before {\n  content: \"\\F035\";\n}\n.fa-align-left:before {\n  content: \"\\F036\";\n}\n.fa-align-center:before {\n  content: \"\\F037\";\n}\n.fa-align-right:before {\n  content: \"\\F038\";\n}\n.fa-align-justify:before {\n  content: \"\\F039\";\n}\n.fa-list:before {\n  content: \"\\F03A\";\n}\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\";\n}\n.fa-indent:before {\n  content: \"\\F03C\";\n}\n.fa-video-camera:before {\n  content: \"\\F03D\";\n}\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\";\n}\n.fa-pencil:before {\n  content: \"\\F040\";\n}\n.fa-map-marker:before {\n  content: \"\\F041\";\n}\n.fa-adjust:before {\n  content: \"\\F042\";\n}\n.fa-tint:before {\n  content: \"\\F043\";\n}\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\";\n}\n.fa-share-square-o:before {\n  content: \"\\F045\";\n}\n.fa-check-square-o:before {\n  content: \"\\F046\";\n}\n.fa-arrows:before {\n  content: \"\\F047\";\n}\n.fa-step-backward:before {\n  content: \"\\F048\";\n}\n.fa-fast-backward:before {\n  content: \"\\F049\";\n}\n.fa-backward:before {\n  content: \"\\F04A\";\n}\n.fa-play:before {\n  content: \"\\F04B\";\n}\n.fa-pause:before {\n  content: \"\\F04C\";\n}\n.fa-stop:before {\n  content: \"\\F04D\";\n}\n.fa-forward:before {\n  content: \"\\F04E\";\n}\n.fa-fast-forward:before {\n  content: \"\\F050\";\n}\n.fa-step-forward:before {\n  content: \"\\F051\";\n}\n.fa-eject:before {\n  content: \"\\F052\";\n}\n.fa-chevron-left:before {\n  content: \"\\F053\";\n}\n.fa-chevron-right:before {\n  content: \"\\F054\";\n}\n.fa-plus-circle:before {\n  content: \"\\F055\";\n}\n.fa-minus-circle:before {\n  content: \"\\F056\";\n}\n.fa-times-circle:before {\n  content: \"\\F057\";\n}\n.fa-check-circle:before {\n  content: \"\\F058\";\n}\n.fa-question-circle:before {\n  content: \"\\F059\";\n}\n.fa-info-circle:before {\n  content: \"\\F05A\";\n}\n.fa-crosshairs:before {\n  content: \"\\F05B\";\n}\n.fa-times-circle-o:before {\n  content: \"\\F05C\";\n}\n.fa-check-circle-o:before {\n  content: \"\\F05D\";\n}\n.fa-ban:before {\n  content: \"\\F05E\";\n}\n.fa-arrow-left:before {\n  content: \"\\F060\";\n}\n.fa-arrow-right:before {\n  content: \"\\F061\";\n}\n.fa-arrow-up:before {\n  content: \"\\F062\";\n}\n.fa-arrow-down:before {\n  content: \"\\F063\";\n}\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\";\n}\n.fa-expand:before {\n  content: \"\\F065\";\n}\n.fa-compress:before {\n  content: \"\\F066\";\n}\n.fa-plus:before {\n  content: \"\\F067\";\n}\n.fa-minus:before {\n  content: \"\\F068\";\n}\n.fa-asterisk:before {\n  content: \"\\F069\";\n}\n.fa-exclamation-circle:before {\n  content: \"\\F06A\";\n}\n.fa-gift:before {\n  content: \"\\F06B\";\n}\n.fa-leaf:before {\n  content: \"\\F06C\";\n}\n.fa-fire:before {\n  content: \"\\F06D\";\n}\n.fa-eye:before {\n  content: \"\\F06E\";\n}\n.fa-eye-slash:before {\n  content: \"\\F070\";\n}\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\";\n}\n.fa-plane:before {\n  content: \"\\F072\";\n}\n.fa-calendar:before {\n  content: \"\\F073\";\n}\n.fa-random:before {\n  content: \"\\F074\";\n}\n.fa-comment:before {\n  content: \"\\F075\";\n}\n.fa-magnet:before {\n  content: \"\\F076\";\n}\n.fa-chevron-up:before {\n  content: \"\\F077\";\n}\n.fa-chevron-down:before {\n  content: \"\\F078\";\n}\n.fa-retweet:before {\n  content: \"\\F079\";\n}\n.fa-shopping-cart:before {\n  content: \"\\F07A\";\n}\n.fa-folder:before {\n  content: \"\\F07B\";\n}\n.fa-folder-open:before {\n  content: \"\\F07C\";\n}\n.fa-arrows-v:before {\n  content: \"\\F07D\";\n}\n.fa-arrows-h:before {\n  content: \"\\F07E\";\n}\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\";\n}\n.fa-twitter-square:before {\n  content: \"\\F081\";\n}\n.fa-facebook-square:before {\n  content: \"\\F082\";\n}\n.fa-camera-retro:before {\n  content: \"\\F083\";\n}\n.fa-key:before {\n  content: \"\\F084\";\n}\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\";\n}\n.fa-comments:before {\n  content: \"\\F086\";\n}\n.fa-thumbs-o-up:before {\n  content: \"\\F087\";\n}\n.fa-thumbs-o-down:before {\n  content: \"\\F088\";\n}\n.fa-star-half:before {\n  content: \"\\F089\";\n}\n.fa-heart-o:before {\n  content: \"\\F08A\";\n}\n.fa-sign-out:before {\n  content: \"\\F08B\";\n}\n.fa-linkedin-square:before {\n  content: \"\\F08C\";\n}\n.fa-thumb-tack:before {\n  content: \"\\F08D\";\n}\n.fa-external-link:before {\n  content: \"\\F08E\";\n}\n.fa-sign-in:before {\n  content: \"\\F090\";\n}\n.fa-trophy:before {\n  content: \"\\F091\";\n}\n.fa-github-square:before {\n  content: \"\\F092\";\n}\n.fa-upload:before {\n  content: \"\\F093\";\n}\n.fa-lemon-o:before {\n  content: \"\\F094\";\n}\n.fa-phone:before {\n  content: \"\\F095\";\n}\n.fa-square-o:before {\n  content: \"\\F096\";\n}\n.fa-bookmark-o:before {\n  content: \"\\F097\";\n}\n.fa-phone-square:before {\n  content: \"\\F098\";\n}\n.fa-twitter:before {\n  content: \"\\F099\";\n}\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\";\n}\n.fa-github:before {\n  content: \"\\F09B\";\n}\n.fa-unlock:before {\n  content: \"\\F09C\";\n}\n.fa-credit-card:before {\n  content: \"\\F09D\";\n}\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\";\n}\n.fa-hdd-o:before {\n  content: \"\\F0A0\";\n}\n.fa-bullhorn:before {\n  content: \"\\F0A1\";\n}\n.fa-bell:before {\n  content: \"\\F0F3\";\n}\n.fa-certificate:before {\n  content: \"\\F0A3\";\n}\n.fa-hand-o-right:before {\n  content: \"\\F0A4\";\n}\n.fa-hand-o-left:before {\n  content: \"\\F0A5\";\n}\n.fa-hand-o-up:before {\n  content: \"\\F0A6\";\n}\n.fa-hand-o-down:before {\n  content: \"\\F0A7\";\n}\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\";\n}\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\";\n}\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\";\n}\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\";\n}\n.fa-globe:before {\n  content: \"\\F0AC\";\n}\n.fa-wrench:before {\n  content: \"\\F0AD\";\n}\n.fa-tasks:before {\n  content: \"\\F0AE\";\n}\n.fa-filter:before {\n  content: \"\\F0B0\";\n}\n.fa-briefcase:before {\n  content: \"\\F0B1\";\n}\n.fa-arrows-alt:before {\n  content: \"\\F0B2\";\n}\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\";\n}\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\";\n}\n.fa-cloud:before {\n  content: \"\\F0C2\";\n}\n.fa-flask:before {\n  content: \"\\F0C3\";\n}\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\";\n}\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\";\n}\n.fa-paperclip:before {\n  content: \"\\F0C6\";\n}\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\";\n}\n.fa-square:before {\n  content: \"\\F0C8\";\n}\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\";\n}\n.fa-list-ul:before {\n  content: \"\\F0CA\";\n}\n.fa-list-ol:before {\n  content: \"\\F0CB\";\n}\n.fa-strikethrough:before {\n  content: \"\\F0CC\";\n}\n.fa-underline:before {\n  content: \"\\F0CD\";\n}\n.fa-table:before {\n  content: \"\\F0CE\";\n}\n.fa-magic:before {\n  content: \"\\F0D0\";\n}\n.fa-truck:before {\n  content: \"\\F0D1\";\n}\n.fa-pinterest:before {\n  content: \"\\F0D2\";\n}\n.fa-pinterest-square:before {\n  content: \"\\F0D3\";\n}\n.fa-google-plus-square:before {\n  content: \"\\F0D4\";\n}\n.fa-google-plus:before {\n  content: \"\\F0D5\";\n}\n.fa-money:before {\n  content: \"\\F0D6\";\n}\n.fa-caret-down:before {\n  content: \"\\F0D7\";\n}\n.fa-caret-up:before {\n  content: \"\\F0D8\";\n}\n.fa-caret-left:before {\n  content: \"\\F0D9\";\n}\n.fa-caret-right:before {\n  content: \"\\F0DA\";\n}\n.fa-columns:before {\n  content: \"\\F0DB\";\n}\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\";\n}\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\";\n}\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\";\n}\n.fa-envelope:before {\n  content: \"\\F0E0\";\n}\n.fa-linkedin:before {\n  content: \"\\F0E1\";\n}\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\";\n}\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\";\n}\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\";\n}\n.fa-comment-o:before {\n  content: \"\\F0E5\";\n}\n.fa-comments-o:before {\n  content: \"\\F0E6\";\n}\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\";\n}\n.fa-sitemap:before {\n  content: \"\\F0E8\";\n}\n.fa-umbrella:before {\n  content: \"\\F0E9\";\n}\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\";\n}\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\";\n}\n.fa-exchange:before {\n  content: \"\\F0EC\";\n}\n.fa-cloud-download:before {\n  content: \"\\F0ED\";\n}\n.fa-cloud-upload:before {\n  content: \"\\F0EE\";\n}\n.fa-user-md:before {\n  content: \"\\F0F0\";\n}\n.fa-stethoscope:before {\n  content: \"\\F0F1\";\n}\n.fa-suitcase:before {\n  content: \"\\F0F2\";\n}\n.fa-bell-o:before {\n  content: \"\\F0A2\";\n}\n.fa-coffee:before {\n  content: \"\\F0F4\";\n}\n.fa-cutlery:before {\n  content: \"\\F0F5\";\n}\n.fa-file-text-o:before {\n  content: \"\\F0F6\";\n}\n.fa-building-o:before {\n  content: \"\\F0F7\";\n}\n.fa-hospital-o:before {\n  content: \"\\F0F8\";\n}\n.fa-ambulance:before {\n  content: \"\\F0F9\";\n}\n.fa-medkit:before {\n  content: \"\\F0FA\";\n}\n.fa-fighter-jet:before {\n  content: \"\\F0FB\";\n}\n.fa-beer:before {\n  content: \"\\F0FC\";\n}\n.fa-h-square:before {\n  content: \"\\F0FD\";\n}\n.fa-plus-square:before {\n  content: \"\\F0FE\";\n}\n.fa-angle-double-left:before {\n  content: \"\\F100\";\n}\n.fa-angle-double-right:before {\n  content: \"\\F101\";\n}\n.fa-angle-double-up:before {\n  content: \"\\F102\";\n}\n.fa-angle-double-down:before {\n  content: \"\\F103\";\n}\n.fa-angle-left:before {\n  content: \"\\F104\";\n}\n.fa-angle-right:before {\n  content: \"\\F105\";\n}\n.fa-angle-up:before {\n  content: \"\\F106\";\n}\n.fa-angle-down:before {\n  content: \"\\F107\";\n}\n.fa-desktop:before {\n  content: \"\\F108\";\n}\n.fa-laptop:before {\n  content: \"\\F109\";\n}\n.fa-tablet:before {\n  content: \"\\F10A\";\n}\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\";\n}\n.fa-circle-o:before {\n  content: \"\\F10C\";\n}\n.fa-quote-left:before {\n  content: \"\\F10D\";\n}\n.fa-quote-right:before {\n  content: \"\\F10E\";\n}\n.fa-spinner:before {\n  content: \"\\F110\";\n}\n.fa-circle:before {\n  content: \"\\F111\";\n}\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\";\n}\n.fa-github-alt:before {\n  content: \"\\F113\";\n}\n.fa-folder-o:before {\n  content: \"\\F114\";\n}\n.fa-folder-open-o:before {\n  content: \"\\F115\";\n}\n.fa-smile-o:before {\n  content: \"\\F118\";\n}\n.fa-frown-o:before {\n  content: \"\\F119\";\n}\n.fa-meh-o:before {\n  content: \"\\F11A\";\n}\n.fa-gamepad:before {\n  content: \"\\F11B\";\n}\n.fa-keyboard-o:before {\n  content: \"\\F11C\";\n}\n.fa-flag-o:before {\n  content: \"\\F11D\";\n}\n.fa-flag-checkered:before {\n  content: \"\\F11E\";\n}\n.fa-terminal:before {\n  content: \"\\F120\";\n}\n.fa-code:before {\n  content: \"\\F121\";\n}\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\";\n}\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\";\n}\n.fa-location-arrow:before {\n  content: \"\\F124\";\n}\n.fa-crop:before {\n  content: \"\\F125\";\n}\n.fa-code-fork:before {\n  content: \"\\F126\";\n}\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\";\n}\n.fa-question:before {\n  content: \"\\F128\";\n}\n.fa-info:before {\n  content: \"\\F129\";\n}\n.fa-exclamation:before {\n  content: \"\\F12A\";\n}\n.fa-superscript:before {\n  content: \"\\F12B\";\n}\n.fa-subscript:before {\n  content: \"\\F12C\";\n}\n.fa-eraser:before {\n  content: \"\\F12D\";\n}\n.fa-puzzle-piece:before {\n  content: \"\\F12E\";\n}\n.fa-microphone:before {\n  content: \"\\F130\";\n}\n.fa-microphone-slash:before {\n  content: \"\\F131\";\n}\n.fa-shield:before {\n  content: \"\\F132\";\n}\n.fa-calendar-o:before {\n  content: \"\\F133\";\n}\n.fa-fire-extinguisher:before {\n  content: \"\\F134\";\n}\n.fa-rocket:before {\n  content: \"\\F135\";\n}\n.fa-maxcdn:before {\n  content: \"\\F136\";\n}\n.fa-chevron-circle-left:before {\n  content: \"\\F137\";\n}\n.fa-chevron-circle-right:before {\n  content: \"\\F138\";\n}\n.fa-chevron-circle-up:before {\n  content: \"\\F139\";\n}\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\";\n}\n.fa-html5:before {\n  content: \"\\F13B\";\n}\n.fa-css3:before {\n  content: \"\\F13C\";\n}\n.fa-anchor:before {\n  content: \"\\F13D\";\n}\n.fa-unlock-alt:before {\n  content: \"\\F13E\";\n}\n.fa-bullseye:before {\n  content: \"\\F140\";\n}\n.fa-ellipsis-h:before {\n  content: \"\\F141\";\n}\n.fa-ellipsis-v:before {\n  content: \"\\F142\";\n}\n.fa-rss-square:before {\n  content: \"\\F143\";\n}\n.fa-play-circle:before {\n  content: \"\\F144\";\n}\n.fa-ticket:before {\n  content: \"\\F145\";\n}\n.fa-minus-square:before {\n  content: \"\\F146\";\n}\n.fa-minus-square-o:before {\n  content: \"\\F147\";\n}\n.fa-level-up:before {\n  content: \"\\F148\";\n}\n.fa-level-down:before {\n  content: \"\\F149\";\n}\n.fa-check-square:before {\n  content: \"\\F14A\";\n}\n.fa-pencil-square:before {\n  content: \"\\F14B\";\n}\n.fa-external-link-square:before {\n  content: \"\\F14C\";\n}\n.fa-share-square:before {\n  content: \"\\F14D\";\n}\n.fa-compass:before {\n  content: \"\\F14E\";\n}\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\";\n}\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\";\n}\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\";\n}\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\";\n}\n.fa-gbp:before {\n  content: \"\\F154\";\n}\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\";\n}\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\";\n}\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\";\n}\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\";\n}\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\";\n}\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\";\n}\n.fa-file:before {\n  content: \"\\F15B\";\n}\n.fa-file-text:before {\n  content: \"\\F15C\";\n}\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\";\n}\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\";\n}\n.fa-sort-amount-asc:before {\n  content: \"\\F160\";\n}\n.fa-sort-amount-desc:before {\n  content: \"\\F161\";\n}\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\";\n}\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\";\n}\n.fa-thumbs-up:before {\n  content: \"\\F164\";\n}\n.fa-thumbs-down:before {\n  content: \"\\F165\";\n}\n.fa-youtube-square:before {\n  content: \"\\F166\";\n}\n.fa-youtube:before {\n  content: \"\\F167\";\n}\n.fa-xing:before {\n  content: \"\\F168\";\n}\n.fa-xing-square:before {\n  content: \"\\F169\";\n}\n.fa-youtube-play:before {\n  content: \"\\F16A\";\n}\n.fa-dropbox:before {\n  content: \"\\F16B\";\n}\n.fa-stack-overflow:before {\n  content: \"\\F16C\";\n}\n.fa-instagram:before {\n  content: \"\\F16D\";\n}\n.fa-flickr:before {\n  content: \"\\F16E\";\n}\n.fa-adn:before {\n  content: \"\\F170\";\n}\n.fa-bitbucket:before {\n  content: \"\\F171\";\n}\n.fa-bitbucket-square:before {\n  content: \"\\F172\";\n}\n.fa-tumblr:before {\n  content: \"\\F173\";\n}\n.fa-tumblr-square:before {\n  content: \"\\F174\";\n}\n.fa-long-arrow-down:before {\n  content: \"\\F175\";\n}\n.fa-long-arrow-up:before {\n  content: \"\\F176\";\n}\n.fa-long-arrow-left:before {\n  content: \"\\F177\";\n}\n.fa-long-arrow-right:before {\n  content: \"\\F178\";\n}\n.fa-apple:before {\n  content: \"\\F179\";\n}\n.fa-windows:before {\n  content: \"\\F17A\";\n}\n.fa-android:before {\n  content: \"\\F17B\";\n}\n.fa-linux:before {\n  content: \"\\F17C\";\n}\n.fa-dribbble:before {\n  content: \"\\F17D\";\n}\n.fa-skype:before {\n  content: \"\\F17E\";\n}\n.fa-foursquare:before {\n  content: \"\\F180\";\n}\n.fa-trello:before {\n  content: \"\\F181\";\n}\n.fa-female:before {\n  content: \"\\F182\";\n}\n.fa-male:before {\n  content: \"\\F183\";\n}\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\";\n}\n.fa-sun-o:before {\n  content: \"\\F185\";\n}\n.fa-moon-o:before {\n  content: \"\\F186\";\n}\n.fa-archive:before {\n  content: \"\\F187\";\n}\n.fa-bug:before {\n  content: \"\\F188\";\n}\n.fa-vk:before {\n  content: \"\\F189\";\n}\n.fa-weibo:before {\n  content: \"\\F18A\";\n}\n.fa-renren:before {\n  content: \"\\F18B\";\n}\n.fa-pagelines:before {\n  content: \"\\F18C\";\n}\n.fa-stack-exchange:before {\n  content: \"\\F18D\";\n}\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\";\n}\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\";\n}\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\";\n}\n.fa-dot-circle-o:before {\n  content: \"\\F192\";\n}\n.fa-wheelchair:before {\n  content: \"\\F193\";\n}\n.fa-vimeo-square:before {\n  content: \"\\F194\";\n}\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\";\n}\n.fa-plus-square-o:before {\n  content: \"\\F196\";\n}\n.fa-space-shuttle:before {\n  content: \"\\F197\";\n}\n.fa-slack:before {\n  content: \"\\F198\";\n}\n.fa-envelope-square:before {\n  content: \"\\F199\";\n}\n.fa-wordpress:before {\n  content: \"\\F19A\";\n}\n.fa-openid:before {\n  content: \"\\F19B\";\n}\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\";\n}\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\";\n}\n.fa-yahoo:before {\n  content: \"\\F19E\";\n}\n.fa-google:before {\n  content: \"\\F1A0\";\n}\n.fa-reddit:before {\n  content: \"\\F1A1\";\n}\n.fa-reddit-square:before {\n  content: \"\\F1A2\";\n}\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\";\n}\n.fa-stumbleupon:before {\n  content: \"\\F1A4\";\n}\n.fa-delicious:before {\n  content: \"\\F1A5\";\n}\n.fa-digg:before {\n  content: \"\\F1A6\";\n}\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\";\n}\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\";\n}\n.fa-drupal:before {\n  content: \"\\F1A9\";\n}\n.fa-joomla:before {\n  content: \"\\F1AA\";\n}\n.fa-language:before {\n  content: \"\\F1AB\";\n}\n.fa-fax:before {\n  content: \"\\F1AC\";\n}\n.fa-building:before {\n  content: \"\\F1AD\";\n}\n.fa-child:before {\n  content: \"\\F1AE\";\n}\n.fa-paw:before {\n  content: \"\\F1B0\";\n}\n.fa-spoon:before {\n  content: \"\\F1B1\";\n}\n.fa-cube:before {\n  content: \"\\F1B2\";\n}\n.fa-cubes:before {\n  content: \"\\F1B3\";\n}\n.fa-behance:before {\n  content: \"\\F1B4\";\n}\n.fa-behance-square:before {\n  content: \"\\F1B5\";\n}\n.fa-steam:before {\n  content: \"\\F1B6\";\n}\n.fa-steam-square:before {\n  content: \"\\F1B7\";\n}\n.fa-recycle:before {\n  content: \"\\F1B8\";\n}\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\";\n}\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\";\n}\n.fa-tree:before {\n  content: \"\\F1BB\";\n}\n.fa-spotify:before {\n  content: \"\\F1BC\";\n}\n.fa-deviantart:before {\n  content: \"\\F1BD\";\n}\n.fa-soundcloud:before {\n  content: \"\\F1BE\";\n}\n.fa-database:before {\n  content: \"\\F1C0\";\n}\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\";\n}\n.fa-file-word-o:before {\n  content: \"\\F1C2\";\n}\n.fa-file-excel-o:before {\n  content: \"\\F1C3\";\n}\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\";\n}\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\";\n}\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\";\n}\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\";\n}\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\";\n}\n.fa-file-code-o:before {\n  content: \"\\F1C9\";\n}\n.fa-vine:before {\n  content: \"\\F1CA\";\n}\n.fa-codepen:before {\n  content: \"\\F1CB\";\n}\n.fa-jsfiddle:before {\n  content: \"\\F1CC\";\n}\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\";\n}\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\";\n}\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\";\n}\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\";\n}\n.fa-git-square:before {\n  content: \"\\F1D2\";\n}\n.fa-git:before {\n  content: \"\\F1D3\";\n}\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\";\n}\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\";\n}\n.fa-qq:before {\n  content: \"\\F1D6\";\n}\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\";\n}\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\";\n}\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\";\n}\n.fa-history:before {\n  content: \"\\F1DA\";\n}\n.fa-circle-thin:before {\n  content: \"\\F1DB\";\n}\n.fa-header:before {\n  content: \"\\F1DC\";\n}\n.fa-paragraph:before {\n  content: \"\\F1DD\";\n}\n.fa-sliders:before {\n  content: \"\\F1DE\";\n}\n.fa-share-alt:before {\n  content: \"\\F1E0\";\n}\n.fa-share-alt-square:before {\n  content: \"\\F1E1\";\n}\n.fa-bomb:before {\n  content: \"\\F1E2\";\n}\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\";\n}\n.fa-tty:before {\n  content: \"\\F1E4\";\n}\n.fa-binoculars:before {\n  content: \"\\F1E5\";\n}\n.fa-plug:before {\n  content: \"\\F1E6\";\n}\n.fa-slideshare:before {\n  content: \"\\F1E7\";\n}\n.fa-twitch:before {\n  content: \"\\F1E8\";\n}\n.fa-yelp:before {\n  content: \"\\F1E9\";\n}\n.fa-newspaper-o:before {\n  content: \"\\F1EA\";\n}\n.fa-wifi:before {\n  content: \"\\F1EB\";\n}\n.fa-calculator:before {\n  content: \"\\F1EC\";\n}\n.fa-paypal:before {\n  content: \"\\F1ED\";\n}\n.fa-google-wallet:before {\n  content: \"\\F1EE\";\n}\n.fa-cc-visa:before {\n  content: \"\\F1F0\";\n}\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\";\n}\n.fa-cc-discover:before {\n  content: \"\\F1F2\";\n}\n.fa-cc-amex:before {\n  content: \"\\F1F3\";\n}\n.fa-cc-paypal:before {\n  content: \"\\F1F4\";\n}\n.fa-cc-stripe:before {\n  content: \"\\F1F5\";\n}\n.fa-bell-slash:before {\n  content: \"\\F1F6\";\n}\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\";\n}\n.fa-trash:before {\n  content: \"\\F1F8\";\n}\n.fa-copyright:before {\n  content: \"\\F1F9\";\n}\n.fa-at:before {\n  content: \"\\F1FA\";\n}\n.fa-eyedropper:before {\n  content: \"\\F1FB\";\n}\n.fa-paint-brush:before {\n  content: \"\\F1FC\";\n}\n.fa-birthday-cake:before {\n  content: \"\\F1FD\";\n}\n.fa-area-chart:before {\n  content: \"\\F1FE\";\n}\n.fa-pie-chart:before {\n  content: \"\\F200\";\n}\n.fa-line-chart:before {\n  content: \"\\F201\";\n}\n.fa-lastfm:before {\n  content: \"\\F202\";\n}\n.fa-lastfm-square:before {\n  content: \"\\F203\";\n}\n.fa-toggle-off:before {\n  content: \"\\F204\";\n}\n.fa-toggle-on:before {\n  content: \"\\F205\";\n}\n.fa-bicycle:before {\n  content: \"\\F206\";\n}\n.fa-bus:before {\n  content: \"\\F207\";\n}\n.fa-ioxhost:before {\n  content: \"\\F208\";\n}\n.fa-angellist:before {\n  content: \"\\F209\";\n}\n.fa-cc:before {\n  content: \"\\F20A\";\n}\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\";\n}\n.fa-meanpath:before {\n  content: \"\\F20C\";\n}\n.fa-buysellads:before {\n  content: \"\\F20D\";\n}\n.fa-connectdevelop:before {\n  content: \"\\F20E\";\n}\n.fa-dashcube:before {\n  content: \"\\F210\";\n}\n.fa-forumbee:before {\n  content: \"\\F211\";\n}\n.fa-leanpub:before {\n  content: \"\\F212\";\n}\n.fa-sellsy:before {\n  content: \"\\F213\";\n}\n.fa-shirtsinbulk:before {\n  content: \"\\F214\";\n}\n.fa-simplybuilt:before {\n  content: \"\\F215\";\n}\n.fa-skyatlas:before {\n  content: \"\\F216\";\n}\n.fa-cart-plus:before {\n  content: \"\\F217\";\n}\n.fa-cart-arrow-down:before {\n  content: \"\\F218\";\n}\n.fa-diamond:before {\n  content: \"\\F219\";\n}\n.fa-ship:before {\n  content: \"\\F21A\";\n}\n.fa-user-secret:before {\n  content: \"\\F21B\";\n}\n.fa-motorcycle:before {\n  content: \"\\F21C\";\n}\n.fa-street-view:before {\n  content: \"\\F21D\";\n}\n.fa-heartbeat:before {\n  content: \"\\F21E\";\n}\n.fa-venus:before {\n  content: \"\\F221\";\n}\n.fa-mars:before {\n  content: \"\\F222\";\n}\n.fa-mercury:before {\n  content: \"\\F223\";\n}\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\";\n}\n.fa-transgender-alt:before {\n  content: \"\\F225\";\n}\n.fa-venus-double:before {\n  content: \"\\F226\";\n}\n.fa-mars-double:before {\n  content: \"\\F227\";\n}\n.fa-venus-mars:before {\n  content: \"\\F228\";\n}\n.fa-mars-stroke:before {\n  content: \"\\F229\";\n}\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\";\n}\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\";\n}\n.fa-neuter:before {\n  content: \"\\F22C\";\n}\n.fa-genderless:before {\n  content: \"\\F22D\";\n}\n.fa-facebook-official:before {\n  content: \"\\F230\";\n}\n.fa-pinterest-p:before {\n  content: \"\\F231\";\n}\n.fa-whatsapp:before {\n  content: \"\\F232\";\n}\n.fa-server:before {\n  content: \"\\F233\";\n}\n.fa-user-plus:before {\n  content: \"\\F234\";\n}\n.fa-user-times:before {\n  content: \"\\F235\";\n}\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\";\n}\n.fa-viacoin:before {\n  content: \"\\F237\";\n}\n.fa-train:before {\n  content: \"\\F238\";\n}\n.fa-subway:before {\n  content: \"\\F239\";\n}\n.fa-medium:before {\n  content: \"\\F23A\";\n}\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\";\n}\n.fa-optin-monster:before {\n  content: \"\\F23C\";\n}\n.fa-opencart:before {\n  content: \"\\F23D\";\n}\n.fa-expeditedssl:before {\n  content: \"\\F23E\";\n}\n.fa-battery-4:before,\n.fa-battery-full:before {\n  content: \"\\F240\";\n}\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\";\n}\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\";\n}\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\";\n}\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\";\n}\n.fa-mouse-pointer:before {\n  content: \"\\F245\";\n}\n.fa-i-cursor:before {\n  content: \"\\F246\";\n}\n.fa-object-group:before {\n  content: \"\\F247\";\n}\n.fa-object-ungroup:before {\n  content: \"\\F248\";\n}\n.fa-sticky-note:before {\n  content: \"\\F249\";\n}\n.fa-sticky-note-o:before {\n  content: \"\\F24A\";\n}\n.fa-cc-jcb:before {\n  content: \"\\F24B\";\n}\n.fa-cc-diners-club:before {\n  content: \"\\F24C\";\n}\n.fa-clone:before {\n  content: \"\\F24D\";\n}\n.fa-balance-scale:before {\n  content: \"\\F24E\";\n}\n.fa-hourglass-o:before {\n  content: \"\\F250\";\n}\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\";\n}\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\";\n}\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\";\n}\n.fa-hourglass:before {\n  content: \"\\F254\";\n}\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\";\n}\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\";\n}\n.fa-hand-scissors-o:before {\n  content: \"\\F257\";\n}\n.fa-hand-lizard-o:before {\n  content: \"\\F258\";\n}\n.fa-hand-spock-o:before {\n  content: \"\\F259\";\n}\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\";\n}\n.fa-hand-peace-o:before {\n  content: \"\\F25B\";\n}\n.fa-trademark:before {\n  content: \"\\F25C\";\n}\n.fa-registered:before {\n  content: \"\\F25D\";\n}\n.fa-creative-commons:before {\n  content: \"\\F25E\";\n}\n.fa-gg:before {\n  content: \"\\F260\";\n}\n.fa-gg-circle:before {\n  content: \"\\F261\";\n}\n.fa-tripadvisor:before {\n  content: \"\\F262\";\n}\n.fa-odnoklassniki:before {\n  content: \"\\F263\";\n}\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\";\n}\n.fa-get-pocket:before {\n  content: \"\\F265\";\n}\n.fa-wikipedia-w:before {\n  content: \"\\F266\";\n}\n.fa-safari:before {\n  content: \"\\F267\";\n}\n.fa-chrome:before {\n  content: \"\\F268\";\n}\n.fa-firefox:before {\n  content: \"\\F269\";\n}\n.fa-opera:before {\n  content: \"\\F26A\";\n}\n.fa-internet-explorer:before {\n  content: \"\\F26B\";\n}\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\";\n}\n.fa-contao:before {\n  content: \"\\F26D\";\n}\n.fa-500px:before {\n  content: \"\\F26E\";\n}\n.fa-amazon:before {\n  content: \"\\F270\";\n}\n.fa-calendar-plus-o:before {\n  content: \"\\F271\";\n}\n.fa-calendar-minus-o:before {\n  content: \"\\F272\";\n}\n.fa-calendar-times-o:before {\n  content: \"\\F273\";\n}\n.fa-calendar-check-o:before {\n  content: \"\\F274\";\n}\n.fa-industry:before {\n  content: \"\\F275\";\n}\n.fa-map-pin:before {\n  content: \"\\F276\";\n}\n.fa-map-signs:before {\n  content: \"\\F277\";\n}\n.fa-map-o:before {\n  content: \"\\F278\";\n}\n.fa-map:before {\n  content: \"\\F279\";\n}\n.fa-commenting:before {\n  content: \"\\F27A\";\n}\n.fa-commenting-o:before {\n  content: \"\\F27B\";\n}\n.fa-houzz:before {\n  content: \"\\F27C\";\n}\n.fa-vimeo:before {\n  content: \"\\F27D\";\n}\n.fa-black-tie:before {\n  content: \"\\F27E\";\n}\n.fa-fonticons:before {\n  content: \"\\F280\";\n}\n.fa-reddit-alien:before {\n  content: \"\\F281\";\n}\n.fa-edge:before {\n  content: \"\\F282\";\n}\n.fa-credit-card-alt:before {\n  content: \"\\F283\";\n}\n.fa-codiepie:before {\n  content: \"\\F284\";\n}\n.fa-modx:before {\n  content: \"\\F285\";\n}\n.fa-fort-awesome:before {\n  content: \"\\F286\";\n}\n.fa-usb:before {\n  content: \"\\F287\";\n}\n.fa-product-hunt:before {\n  content: \"\\F288\";\n}\n.fa-mixcloud:before {\n  content: \"\\F289\";\n}\n.fa-scribd:before {\n  content: \"\\F28A\";\n}\n.fa-pause-circle:before {\n  content: \"\\F28B\";\n}\n.fa-pause-circle-o:before {\n  content: \"\\F28C\";\n}\n.fa-stop-circle:before {\n  content: \"\\F28D\";\n}\n.fa-stop-circle-o:before {\n  content: \"\\F28E\";\n}\n.fa-shopping-bag:before {\n  content: \"\\F290\";\n}\n.fa-shopping-basket:before {\n  content: \"\\F291\";\n}\n.fa-hashtag:before {\n  content: \"\\F292\";\n}\n.fa-bluetooth:before {\n  content: \"\\F293\";\n}\n.fa-bluetooth-b:before {\n  content: \"\\F294\";\n}\n.fa-percent:before {\n  content: \"\\F295\";\n}\n.fa-gitlab:before {\n  content: \"\\F296\";\n}\n.fa-wpbeginner:before {\n  content: \"\\F297\";\n}\n.fa-wpforms:before {\n  content: \"\\F298\";\n}\n.fa-envira:before {\n  content: \"\\F299\";\n}\n.fa-universal-access:before {\n  content: \"\\F29A\";\n}\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\";\n}\n.fa-question-circle-o:before {\n  content: \"\\F29C\";\n}\n.fa-blind:before {\n  content: \"\\F29D\";\n}\n.fa-audio-description:before {\n  content: \"\\F29E\";\n}\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\";\n}\n.fa-braille:before {\n  content: \"\\F2A1\";\n}\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\";\n}\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\";\n}\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\";\n}\n.fa-glide:before {\n  content: \"\\F2A5\";\n}\n.fa-glide-g:before {\n  content: \"\\F2A6\";\n}\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\";\n}\n.fa-low-vision:before {\n  content: \"\\F2A8\";\n}\n.fa-viadeo:before {\n  content: \"\\F2A9\";\n}\n.fa-viadeo-square:before {\n  content: \"\\F2AA\";\n}\n.fa-snapchat:before {\n  content: \"\\F2AB\";\n}\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\";\n}\n.fa-snapchat-square:before {\n  content: \"\\F2AD\";\n}\n.fa-pied-piper:before {\n  content: \"\\F2AE\";\n}\n.fa-first-order:before {\n  content: \"\\F2B0\";\n}\n.fa-yoast:before {\n  content: \"\\F2B1\";\n}\n.fa-themeisle:before {\n  content: \"\\F2B2\";\n}\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\";\n}\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\";\n}\n.n3-slider {\n  display: inline-block;\n  vertical-align: middle;\n  position: relative;\n}\n.n3-slider-horizontal {\n  width: 210px;\n  height: 20px;\n}\n.n3-slider-horizontal .n3-slider-track {\n  height: 8px;\n  width: 100%;\n  margin-top: -5px;\n  top: 50%;\n  left: 0;\n}\n.n3-slider-horizontal .n3-slider-selection,\n.n3-slider-horizontal .n3-slider-track-low,\n.n3-slider-horizontal .n3-slider-track-high {\n  height: 100%;\n  top: 0;\n  bottom: 0;\n}\n.n3-slider-horizontal .n3-slider-tick,\n.n3-slider-horizontal .n3-slider-handle {\n  margin-left: -10px;\n  margin-top: -5px;\n}\n.n3-slider-horizontal .n3-slider-tick-label-container {\n  white-space: nowrap;\n}\n.n3-slider-horizontal .n3-slider-tick-label-container .n3-slider-tick-label {\n  margin-top: 24px;\n  display: inline-block;\n  text-align: center;\n}\n.n3-slider-horizontal .n3-slider-tick-label-container .n3-slider-tick-label {\n  margin-top: 24px;\n  display: inline-block;\n  text-align: center;\n}\n.n3-slider-vertical {\n  height: 210px;\n  width: 20px;\n}\n.n3-slider-vertical .n3-slider-track {\n  width: 10px;\n  height: 100%;\n  margin-left: -5px;\n  left: 50%;\n  top: 0;\n}\n.n3-slider-vertical .n3-slider-selection {\n  width: 100%;\n  left: 0;\n  top: 0;\n  bottom: 0;\n}\n.n3-slider-vertical .n3-slider-track-low,\n.n3-slider-vertical .n3-slider-track-high {\n  width: 100%;\n  left: 0;\n  right: 0;\n}\n.n3-slider-vertical .n3-slider-tick,\n.n3-slider-vertical .n3-slider-handle {\n  margin-left: -5px;\n  margin-top: -10px;\n}\n.n3-slider-disabled .n3-slider-handle {\n  background-image: linear-gradient(to bottom, rgba(65, 202, 192, 0.1) 0%, #ddd 100%);\n  background-repeat: repeat-x;\n}\n.n3-slider-disabled .n3-slider-track {\n  background-image: linear-gradient(to bottom, rgba(65, 202, 192, 0.1) 0%, #ddd 100%);\n  background-repeat: repeat-x;\n  cursor: not-allowed;\n}\n.n3-slider input {\n  display: none;\n}\n.n3-slider .n3-tooltip.n3-tooltip-top {\n  margin-top: -46px;\n}\n.n3-slider .n3-tooltip-inner {\n  white-space: nowrap;\n}\n.n3-slider-hide {\n  display: none;\n}\n.n3-slider-track {\n  position: absolute;\n  cursor: pointer;\n  background: #f9f9f9;\n  border-radius: 4px;\n}\n.n3-slider-selection {\n  position: absolute;\n  background: #41cac0;\n  box-sizing: border-box;\n  border-radius: 4px;\n}\n.n3-slider-selection.n3-slider-tick-slider-selection {\n  background-image: linear-gradient(to bottom, #41cac0 0%, #39b2a9 100%);\n  background-repeat: repeat-x;\n}\n.n3-slider-track-low,\n.n3-slider-track-high {\n  position: absolute;\n  background: transparent;\n  box-sizing: border-box;\n  border-radius: 4px;\n}\n.n3-slider-handle {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background-color: #fff;\n  border: 3px solid #41cac0;\n}\n.n3-slider-handle.n3-slider-round {\n  border-radius: 50%;\n}\n.n3-slider-tick {\n  position: absolute;\n  width: 20px;\n  height: 20px;\n  background-image: linear-gradient(to bottom, #f9f9f9 0%, #ddd 100%);\n  background-repeat: repeat-x;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);\n  box-sizing: border-box;\n  filter: none;\n  opacity: 0.8;\n  border: 0px solid transparent;\n}\n.n3-slider-tick.n3-slider-round {\n  border-radius: 50%;\n}\n.n3-slider-vertical .n3-slider-selection {\n  height: 0%;\n}\n.n3-slider-vertical .n3-slider-track-high {\n  height: 100%;\n}\n.n3-slider-horizontal .n3-tooltip.n3-tooltip-top {\n  margin-left: -15px;\n}\n.n3-slider-vertical .n3-tooltip.n3-tooltip-right {\n  margin-top: -16px;\n  margin-left: 16px;\n}\n.n3-tooltip.n3-slider-slider-tooltip-always {\n  display: block!important;\n}\n.n3-tooltip.n3-slider-slider-tooltip-hide {\n  display: none!important;\n}\n.fadeLeft-transition {\n  transition: all .3s ease;\n  transform: translateX(0);\n  opacity: 1;\n}\n.fadeLeft-enter,\n.fadeLeft-leave {\n  transform: translateX(-10px);\n  opacity: 0;\n}\n.fade-transition {\n  transition: opacity .3s ease;\n  opacity: 1;\n}\n.fade-enter,\n.fade-leave {\n  opacity: 0;\n}\n.fadeDown-transition {\n  transition: all .3s ease;\n  transform: translateY(0);\n  opacity: 1;\n}\n.fadeDown-enter,\n.fadeDown-leave {\n  transform: translateY(-10px);\n  opacity: 0;\n}\n.collapse-transition {\n  transition: max-height 0.2s ease;\n  overflow: hidden;\n}\n.bounce-enter {\n  animation: bounce-in 0.5s;\n}\n.bounce-leave {\n  animation: bounce-out 0.5s;\n}\n@keyframes bounce-in {\n  0% {\n    transform: scale(0);\n  }\n  50% {\n    transform: scale(1.5);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n@keyframes bounce-out {\n  0% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.5);\n  }\n  100% {\n    transform: scale(0);\n  }\n}\n.scale-transition,\n.fade-transition {\n  display: block;\n}\n.scale-enter {\n  animation: scale-in 0.15s ease-in;\n}\n.scale-leave {\n  animation: scale-out 0.15s ease-out;\n}\n@keyframes scale-in {\n  0% {\n    transform: scale(0);\n    opacity: 0;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n@keyframes scale-out {\n  0% {\n    transform: scale(1);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(0);\n    opacity: 0;\n  }\n}\n.n3-aside-open {\n  transition: transform 0.3s;\n}\n.n3-aside-open.has-push-right {\n  transform: translateX(-300px);\n}\n.n3-aside {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  z-index: 1049;\n  overflow: auto;\n  background: #fff;\n}\n.n3-aside-left {\n  left: 0;\n  right: auto;\n}\n.n3-aside-right {\n  left: auto;\n  right: 0;\n}\n.n3-aside:focus {\n  outline: 0;\n}\n.n3-aside-dialog .n3-aside-header {\n  min-height: 16.43px;\n  padding: 6px 15px;\n  background: #41cac0;\n  color: #fff;\n}\n.n3-aside-dialog .n3-aside-header .n3-close {\n  margin-right: -8px;\n  padding: 4px 8px;\n  color: #fff;\n  font-size: 25px;\n  opacity: .8;\n}\n.n3-aside-dialog .n3-aside-body {\n  position: relative;\n  padding: 15px;\n}\n.n3-aside-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1040;\n  opacity: 0;\n  transition: opacity .3s ease;\n  background-color: #000;\n}\n.n3-aside-in {\n  opacity: .5;\n}\n.slideleft-enter {\n  animation: slideleft-in 0.3s;\n}\n.slideleft-leave {\n  animation: slideleft-out 0.3s;\n}\n@keyframes slideleft-in {\n  0% {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes slideleft-out {\n  0% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    transform: translateX(-100%);\n    opacity: 0;\n  }\n}\n.slideright-enter {\n  animation: slideright-in 0.3s;\n}\n.slideright-leave {\n  animation: slideright-out 0.3s;\n}\n@keyframes slideright-in {\n  0% {\n    transform: translateX(100%);\n    opacity: 0;\n  }\n  100% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes slideright-out {\n  0% {\n    transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    transform: translateX(100%);\n    opacity: 0;\n  }\n}\n.n3-data-table .n3-page-loading {\n  z-index: 1;\n}\n.n3-data-table-search {\n  margin-top: 0px;\n  width: 200px;\n  display: inline-block;\n}\n.n3-data-table-bar {\n  margin-bottom: 10px;\n}\n.n3-data-table-page {\n  display: inline-block;\n}\n.n3-data-table-inner-btn {\n  height: 34px;\n}\n.n3-data-table-inner-btn .fa {\n  margin-top: 3px;\n}\n.n3-data-table-sort {\n  font-size: 15px;\n}\n.n3-data-table-sort .fa:hover {\n  cursor: pointer;\n}\n.n3-data-table-sort .fa-caret-up {\n  position: relative;\n  top: -4px;\n  left: 6px;\n}\n.n3-data-table-sort .fa-caret-down {\n  position: relative;\n  top: 5px;\n  left: -7px;\n}\n.n3-data-table-loading {\n  filter: blur(3px);\n}\n.n3-data-table .n3-table-bordered {\n  border-collapse: collapse;\n}\n.n3-data-table-row-select {\n  width: 30px;\n  text-align: center;\n  vertical-align: middle;\n}\n.n3-datepicker {\n  position: relative;\n  display: inline-block;\n}\n.n3-datepicker-popup {\n  position: absolute;\n  border: 1px solid #ccc;\n  background: #fff;\n  margin-top: 2px;\n  z-index: 1000;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);\n}\n.n3-datepicker-inner {\n  width: 268px;\n}\n.n3-datepicker-ctrl p,\n.n3-datepicker-ctrl span,\n.n3-datepicker-body span {\n  display: inline-block;\n  width: 38px;\n  line-height: 38px;\n  height: 38px;\n}\n.n3-datepicker-ctrl p {\n  width: 65%;\n}\n.n3-datepicker-ctrl span {\n  position: absolute;\n}\n.n3-datepicker-body span {\n  text-align: center;\n}\n.n3-datepicker-mouthRange span {\n  width: 44px;\n  height: 44px;\n  line-height: 45px;\n}\n.n3-datepicker-item-disable {\n  background-color: white!important;\n  cursor: not-allowed !important;\n}\n.n3-datepicker .n3-datepicker-decadeRange span:first-child,\n.n3-datepicker .n3-datepicker-decadeRange span:last-child,\n.n3-datepicker-item-disable,\n.n3-datepicker-item-gray {\n  color: #ccc;\n}\n.n3-datepicker-dateRange-item-active:hover,\n.n3-datepicker-dateRange-item-active {\n  background: #41cac0 !important;\n  color: white!important;\n}\n.n3-datepicker-mouthRange {\n  margin-top: 10px;\n}\n.n3-datepicker-mouthRange span,\n.n3-datepicker-ctrl span,\n.n3-datepicker-ctrl p,\n.n3-datepicker-dateRange span {\n  transition: all .3s ease;\n  cursor: pointer;\n}\n.n3-datepicker-mouthRange span:hover,\n.n3-datepicker-ctrl p:hover,\n.n3-datepicker-ctrl i:hover,\n.n3-datepicker-dateRange span:hover,\n.n3-datepicker-dateRange-item-hover {\n  background-color: rgba(65, 202, 192, 0.1);\n}\n.n3-datepicker-weekRange {\n  border-bottom: 1px solid #ddd;\n  border-top: 1px solid #ddd;\n}\n.n3-datepicker-weekRange span {\n  font-weight: bold;\n}\n.n3-datepicker-ctrl {\n  position: relative;\n  height: 38px;\n  line-height: 38px;\n  font-weight: bold;\n  text-align: center;\n}\n.n3-datepicker .n3-month-btn {\n  font-weight: bold;\n  user-select: none;\n}\n.n3-datepicker-preBtn {\n  left: 2px;\n}\n.n3-datepicker-nextBtn {\n  right: 2px;\n}\n.n3-timepicker {\n  display: inline-block;\n}\n.n3-timepicker-slider {\n  margin-top: 20px;\n}\n.n3-timepicker-popup {\n  position: absolute;\n  border: 1px solid #ccc;\n  background: #fff;\n  margin-top: 2px;\n  z-index: 1000;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);\n  padding: 10px 0px 0px;\n}\n.n3-timepicker-popup .slider-sin-wrap:after {\n  top: 5px;\n}\n.n3-timepicker-slider-sin-wrap {\n  float: left;\n  width: 20px;\n  height: 275px;\n  margin: 4px 14px;\n  position: relative;\n}\n.n3-timepicker-slider-sin-wrap:before {\n  padding-left: 2px;\n  font-size: 16px;\n  font-weight: 700;\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"hour\"] {\n  z-index: 10;\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"hour\"]:before {\n  content: \"\\65F6\";\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"minute\"] {\n  z-index: 9;\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"minute\"]:before {\n  content: \"\\5206\";\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"second\"] {\n  z-index: 8;\n}\n.n3-timepicker-slider-sin-wrap[data-role=\"second\"]:before {\n  content: \"\\79D2\";\n}\n.n3-timepicker-slider-sin-wrap:after {\n  content: \":\";\n  position: absolute;\n  top: 27px;\n  left: 32px;\n}\n.n3-timepicker-slider-sin-wrap:last-child:after {\n  display: none;\n}\n.n3-datetimepicker .n3-datepicker-inner {\n  width: 268px;\n  display: inline-block;\n  border-right: 1px solid #ddd;\n  vertical-align: top;\n}\n.n3-datetimepicker .n3-timepicker-con {\n  display: inline-block;\n  margin-top: 10px;\n}\n.n3-datetimepicker .n3-timepicker-slider-sin-wrap > div {\n  margin-top: 25px;\n}\n.n3-datetimepicker .n3-timepicker-con .n3-timepicker-slider-sin-wrap:after {\n  top: 3px;\n}\n.n3-dropdown-con {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n}\n.n3-dropdown-con .n3-dropdown-menu {\n  display: block;\n}\n.n3-dropdown {\n  position: relative;\n}\n.n3-dropdown-toggle:focus {\n  outline: 0;\n}\n.n3-dropdown-menu {\n  position: absolute;\n  top: 100%;\n  left: 0;\n  z-index: 1000;\n  display: none;\n  float: left;\n  min-width: 160px;\n  padding: 5px 0;\n  margin: 2px 0 0;\n  font-size: 14px;\n  text-align: left;\n  list-style: none;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid rgba(0, 0, 0, 0.15);\n  border-radius: 4px;\n  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);\n  overflow: auto;\n}\n.n3-dropdown-menu.pull-right {\n  right: 0;\n  left: auto;\n}\n.n3-dropdown-menu > li > a {\n  display: block;\n  padding: 5px 20px;\n  clear: both;\n  font-weight: normal;\n  line-height: 1.42857143;\n  color: #333;\n  font-size: 13px;\n  white-space: nowrap;\n  cursor: pointer;\n  transition: all .3s ease;\n}\n.n3-dropdown-menu > li > a:hover,\n.n3-dropdown-menu > li > a:focus {\n  background-color: rgba(65, 202, 192, 0.1);\n  color: #333;\n  text-decoration: none;\n}\n.n3-dropdown-menu > .n3-dropdown-active > a,\n.n3-dropdown-menu > .n3-dropdown-active > a:hover,\n.n3-dropdown-menu > .n3-dropdown-active > a:focus {\n  color: #fff;\n  text-decoration: none;\n  background-color: #41cac0;\n  outline: 0;\n}\n.n3-dropdown-menu > .n3-dropdown-disabled > a,\n.n3-dropdown-menu > .n3-dropdown-disabled > a:hover,\n.n3-dropdown-menu > .n3-dropdown-disabled > a:focus {\n  color: #999;\n}\n.n3-dropdown-menu > .n3-dropdown-disabled > a:hover,\n.n3-dropdown-menu > .n3-dropdown-disabled > a:focus {\n  text-decoration: none;\n  cursor: not-allowed;\n  background-color: transparent;\n  background-image: none;\n  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);\n}\n.n3-btn.n3-dropdown-toggle,\n.n3-btn-group.n3-open .n3-dropdown-toggle {\n  box-shadow: none;\n}\n.n3-open > .n3-dropdown-menu {\n  display: block;\n}\n.n3-open > a {\n  outline: 0;\n}\n.pull-right > .n3-dropdown-menu {\n  right: 0;\n  left: auto;\n}\n.n3-navbar-fixed-bottom .n3-dropdown .n3-dropdown-menu {\n  top: auto;\n  bottom: 100%;\n  margin-bottom: 2px;\n}\n@media (min-width: 768px) {\n  .n3-navbar-right .n3-dropdown-menu {\n    right: 0;\n    left: auto;\n  }\n  .n3-navbar-right .n3-dropdown-menu-left {\n    right: auto;\n    left: 0;\n  }\n}\n.n3-form-control {\n  display: block;\n  width: 100%;\n  height: 34px;\n  padding: 6px 12px;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #333;\n  background-color: #fff;\n  background-image: none;\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;\n}\n.n3-form-control:focus {\n  border: 1px solid #41cac0;\n  outline: 0;\n}\n.n3-form-control::-moz-placeholder {\n  color: #999;\n  opacity: 1;\n}\n.n3-form-control:-ms-input-placeholder {\n  color: #999;\n}\n.n3-form-control::-webkit-input-placeholder {\n  color: #999;\n}\n.n3-form-control[disabled],\n.n3-form-control[readonly] {\n  cursor: not-allowed;\n  background-color: #f9f9f9;\n  opacity: 1;\n}\ntextarea.n3-form-control {\n  height: auto;\n}\n.n3-err-tip {\n  color: #ff6c60;\n  font-size: 12px;\n  margin-top: 5px;\n}\n.n3-form-horizontal .n3-control-label {\n  font-weight: 300;\n  font-size: 14px;\n  text-align: left;\n}\n.n3-form-inline .n3-slider,\n.n3-form-horizontal .n3-slider {\n  margin: 17px 0px 0px 10px;\n}\n.n3-form-inline .n3-switch,\n.n3-form-horizontal .n3-switch {\n  margin-top: 5px;\n}\n.n3-form-group {\n  margin-bottom: 15px;\n  padding: 5px 0px;\n}\n.n3-has-feedback {\n  position: relative;\n}\n.n3-has-feedback .n3-form-control {\n  padding-right: 42.5px;\n}\n.n3-form-control-feedback {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 2;\n  display: block;\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n  pointer-events: none;\n}\n.n3-has-success .n3-control-label {\n  color: #2ecc71;\n}\n.n3-has-success .n3-form-control {\n  border-color: #2ecc71;\n}\n.n3-has-success .n3-form-control:focus {\n  border-color: #29b464;\n}\n.n3-has-success .n3-form-control-feedback {\n  color: #2ecc71;\n}\n.n3-has-warining .n3-control-label {\n  color: #f1c500;\n}\n.n3-has-warining .n3-form-control {\n  border-color: #f1c500;\n}\n.n3-has-warining .n3-form-control:focus {\n  border-color: #dbb509;\n}\n.n3-has-warining .n3-form-control-feedback {\n  color: #f1c500;\n}\n.n3-has-error .n3-control-label {\n  color: #ff6c60;\n}\n.n3-has-error .n3-form-control {\n  border-color: #ff6c60;\n}\n.n3-has-error .n3-form-control:focus {\n  border-color: #e74c3c;\n}\n.n3-has-error .n3-form-control-feedback {\n  color: #ff6c60;\n}\n.n3-has-feedback label ~ .n3-form-control-feedback {\n  top: 31px;\n}\n.n3-form-need {\n  color: red;\n  position: relative;\n  top: 2px;\n  left: 3px;\n  font-size: 14px;\n  font-weight: bold;\n  margin-right: 8px;\n}\n.n3-form-inline .n3-control-label {\n  padding-top: 7px;\n}\n@media (min-width: 768px) {\n  .n3-form-inline .n3-form-group {\n    display: inline-block;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .n3-form-inline .n3-form-control {\n    display: inline-block;\n    width: auto;\n    vertical-align: middle;\n  }\n  .n3-form-inline .n3-form-control-static {\n    display: inline-block;\n  }\n  .n3-form-inline .n3-control-label {\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .n3-form-inline .n3-has-feedback .n3-form-control-feedback {\n    top: 0;\n  }\n}\n.n3-form-horizontal .n3-form-group {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n@media (min-width: 768px) {\n  .n3-form-horizontal .n3-control-label {\n    padding-top: 7px;\n    margin-bottom: 0;\n    text-align: right;\n  }\n}\n/* loading */\n.n3-page-loading-con {\n  display: inline-block;\n  z-index: 1000;\n}\n.n3-page-loading {\n  animation: loading-spin 2s linear 0s infinite;\n  font-size: 28px;\n  float: left;\n}\n.n3-page-loading:before {\n  font-family: \"FontAwesome\";\n  content: \"\\F110\";\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n}\n.n3-page-loading.n3-loading-lg {\n  font-size: 40px;\n}\n.n3-page-loading.n3-loading-lg.n3-loading-center {\n  margin: -20px 0 0 -20px;\n}\n.n3-page-loading.n3-loading-sm {\n  font-size: 18px;\n}\n.n3-page-loading.n3-loading-sm.n3-loading-center {\n  margin: -9px 0 0 -9px;\n}\n.n3-page-loading.n3-loading-xs {\n  font-size: 12px;\n}\n.n3-page-loading.n3-loading-xs.n3-loading-center {\n  margin: -6px 0 0 -6px;\n}\n.n3-page-loading.n3-loading-refresh:before {\n  content: \"\\F021\";\n}\n.n3-loading-center {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin: -14px 0 0 -14px;\n}\n@keyframes loading-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n.n3-tooltip {\n  position: absolute;\n  z-index: 1030;\n  display: block;\n  font-size: 12px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: normal;\n  line-height: 1.4;\n  visibility: visible;\n  opacity: .9;\n}\n.n3-tooltip-in {\n  opacity: 0.9;\n}\n.n3-tooltip-top {\n  margin-top: -3px;\n  padding: 5px 0;\n}\n.n3-tooltip-top .n3-tooltip-arrow {\n  bottom: 0;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px 5px 0;\n  border-top-color: #000;\n}\n.n3-tooltip-right {\n  margin-left: 3px;\n  padding: 0 5px;\n}\n.n3-tooltip-right .n3-tooltip-arrow {\n  top: 50%;\n  left: 0;\n  margin-top: -5px;\n  border-width: 5px 5px 5px 0;\n  border-right-color: #000;\n}\n.n3-tooltip-bottom {\n  margin-top: 3px;\n  padding: 5px 0;\n}\n.n3-tooltip-bottom .n3-tooltip-arrow {\n  top: 0;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 0 5px 5px;\n  border-bottom-color: #000;\n}\n.n3-tooltip-left {\n  margin-left: -3px;\n  padding: 0 5px;\n}\n.n3-tooltip-left .n3-tooltip-arrow {\n  top: 50%;\n  right: 0;\n  margin-top: -5px;\n  border-width: 5px 0 5px 5px;\n  border-left-color: #000;\n}\n.n3-tooltip-inner {\n  max-width: 200px;\n  padding: 9px 11px;\n  color: #fff;\n  text-align: left;\n  background-color: #000;\n  border-radius: 4px;\n}\n.n3-tooltip-arrow {\n  position: absolute;\n  width: 0;\n  height: 0;\n  border-color: transparent;\n  border-style: solid;\n}\n.n3-popover {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 1060;\n  display: none;\n  max-width: 276px;\n  padding: 1px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: left;\n  white-space: normal;\n  background-color: #fff;\n  background-clip: padding-box;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  border-radius: 6px;\n  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);\n}\n.n3-popover-top {\n  margin-top: -10px;\n}\n.n3-popover-right {\n  margin-left: 10px;\n}\n.n3-popover-bottom {\n  margin-top: 10px;\n}\n.n3-popover-left {\n  margin-left: -10px;\n}\n.n3-popover-title {\n  padding: 8px 14px;\n  margin: 0;\n  font-size: 14px;\n  border-bottom: 1px solid #ddd;\n  border-radius: 5px 5px 0 0;\n}\n.n3-popover-content {\n  padding: 9px 14px;\n}\n.n3-popover-arrow,\n.n3-popover-arrow:after {\n  position: absolute;\n  display: block;\n  width: 0;\n  height: 0;\n  border-color: transparent;\n  border-style: solid;\n}\n.n3-popover-arrow:after {\n  content: \"\";\n  border-width: 10px;\n}\n.n3-popover-arrow {\n  border-width: 11px;\n}\n.n3-popover-top > .n3-popover-arrow {\n  bottom: -11px;\n  left: 50%;\n  margin-left: -11px;\n  border-top-color: rgba(0, 0, 0, 0.25);\n  border-bottom-width: 0;\n}\n.n3-popover-top > .n3-popover-arrow:after {\n  bottom: 1px;\n  margin-left: -10px;\n  content: \" \";\n  border-top-color: #fff;\n  border-bottom-width: 0;\n}\n.n3-popover-right > .n3-popover-arrow {\n  top: 50%;\n  left: -11px;\n  margin-top: -11px;\n  border-right-color: #999;\n  border-right-color: rgba(0, 0, 0, 0.25);\n  border-left-width: 0;\n}\n.n3-popover-right > .n3-popover-arrow:after {\n  bottom: -10px;\n  left: 1px;\n  content: \" \";\n  border-right-color: #fff;\n  border-left-width: 0;\n}\n.n3-popover-bottom > .n3-popover-arrow {\n  top: -11px;\n  left: 50%;\n  margin-left: -11px;\n  border-top-width: 0;\n  border-bottom-color: #999;\n  border-bottom-color: rgba(0, 0, 0, 0.25);\n}\n.n3-popover-bottom > .n3-popover-arrow:after {\n  top: 1px;\n  margin-left: -10px;\n  content: \" \";\n  border-top-width: 0;\n  border-bottom-color: #fff;\n}\n.n3-popover-left > .n3-popover-arrow {\n  top: 50%;\n  right: -11px;\n  margin-top: -11px;\n  border-right-width: 0;\n  border-left-color: #999;\n  border-left-color: rgba(0, 0, 0, 0.25);\n}\n.n3-popover-left > .n3-popover-arrow:after {\n  right: 1px;\n  bottom: -10px;\n  content: \" \";\n  border-right-width: 0;\n  border-left-color: #fff;\n}\n.n3-select-group .n3-select-search input {\n  border: 0px;\n  border-bottom: 1px solid #ddd;\n}\n.n3-select-group .n3-dropdown-menu {\n  display: block;\n  overflow-y: auto;\n}\n.n3-select-group .n3-dropdown-menu .n3-notify {\n  position: absolute;\n  bottom: 5px;\n  width: 96%;\n  margin: 0 2%;\n  min-height: 26px;\n  padding: 3px 5px;\n  background: #f9f9f9;\n  border: 1px solid #ddd;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);\n  pointer-events: none;\n}\n.n3-select-group .n3-dropdown-menu .fa-check {\n  position: absolute;\n  display: inline-block;\n  right: 15px;\n  margin-top: 5px;\n}\n.n3-select-group .n3-dropdown-menu .fa-plus-square-o {\n  font-size: 20px;\n  position: absolute;\n  top: 11px;\n  right: 15px;\n}\n.n3-select-group .n3-dropdown-menu .n3-select-all {\n  border-bottom: 1px solid #ddd;\n}\n.n3-select-group .n3-dropdown-menu .n3-select-all a {\n  cursor: pointer;\n}\n.n3-select-group .n3-dropdown-toggle {\n  overflow: hidden;\n  word-break: break-all;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n}\n.n3-simple-pagination .n3-pagination {\n  margin: 0px;\n}\n.n3-simple-pagination-input {\n  position: relative;\n  top: 1px;\n}\n.n3-simple-pagination-btn {\n  height: 33px;\n}\n.n3-simple-pagination-btn .fa {\n  margin-top: 2px;\n}\n.n3-timeline-con {\n  position: relative;\n}\n.n3-timeline-con .n3-timeline-item:last-child .n3-timeline-item-tail {\n  display: none;\n}\n.n3-timeline-con .n3-timeline-item {\n  position: relative;\n  padding: 0 0 12px;\n  margin: 0;\n  display: block;\n}\n.n3-timeline-con .n3-timeline-item .n3-timeline-item-tail {\n  position: absolute;\n  left: 5px;\n  top: 0;\n  height: 100%;\n  border-left: 2px solid #ddd;\n}\n.n3-timeline-con .n3-timeline-item .n3-timeline-item-head {\n  position: absolute;\n  width: 12px;\n  height: 12px;\n  background-color: #fff;\n  border-radius: 100px;\n  border: 2px solid transparent;\n  z-index: 1;\n}\n.n3-timeline-con .n3-timeline-item .n3-timeline-item-head.fa {\n  border: 0px;\n  top: -2px;\n  left: -1px;\n  font-size: 16px;\n}\n.n3-timeline-con .n3-timeline-item .n3-timeline-item-content {\n  padding: 0 0 10px 24px;\n  font-size: 12px;\n  position: relative;\n  top: -3px;\n}\n.n3-steps {\n  font-size: 0px;\n  overflow: hidden;\n  line-height: 0px;\n  margin: 18px 0px;\n  display: flex;\n}\n.n3-steps * {\n  box-sizing: content-box;\n}\n.n3-steps-wrap {\n  padding: 0;\n  flex: 1;\n}\n.n3-steps-wrap > div {\n  width: 100%;\n  line-height: 32px;\n  vertical-align: top;\n  font-size: 12px;\n  position: relative;\n}\n.n3-steps-wrap > div > label {\n  margin: 0 0 0 26px;\n  cursor: default;\n}\n.n3-steps-triangle-right {\n  display: inline-block;\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 16px;\n  position: absolute;\n  right: -31px;\n  z-index: 1;\n}\n.n3-steps-triangle-right-bg {\n  display: inline-block;\n  width: 0px;\n  height: 0px;\n  border-style: solid;\n  border-width: 16px;\n  position: absolute;\n  right: -31px;\n  z-index: 1;\n  border-width: 20px;\n  right: -40px;\n  border-color: transparent transparent transparent #fff;\n  top: -4px;\n}\n.n3-steps-round {\n  display: inline-block;\n  width: 16px;\n  height: 16px;\n  border-radius: 8px;\n  text-align: center;\n  line-height: 16px;\n}\n.n3-steps-round + span:before {\n  content: '\\A0';\n}\n.n3-steps-finished {\n  background-color: #39b2a9;\n  color: #fff;\n}\n.n3-steps-finished .n3-steps-triangle-right {\n  border-color: transparent transparent transparent #39b2a9;\n}\n.n3-steps-finished .n3-steps-round {\n  background-color: fff;\n  color: #39b2a9;\n}\n.n3-steps-finished .n3-steps-round > i {\n  color: #39b2a9;\n  font-size: 12px;\n}\n.n3-steps-current {\n  background-color: #41cac0;\n  color: #fff;\n}\n.n3-steps-current .n3-steps-triangle-right {\n  border-color: transparent transparent transparent #41cac0;\n}\n.n3-steps-current .n3-steps-round {\n  background-color: #fff;\n  color: #41cac0;\n}\n.n3-steps-todo {\n  background-color: #f9f9f9;\n  color: #999;\n}\n.n3-steps-todo .n3-steps-triangle-right {\n  border-color: transparent transparent transparent #f9f9f9;\n}\n.n3-steps-todo .n3-steps-round {\n  background-color: #fff;\n}\n > :last-child .n3-steps-triangle-right,\n > :last-child .n3-steps-triangle-right-bg {\n  display: none;\n}\n.n3-steps-round-con {\n  list-style-type: none;\n  margin: 18px 0px;\n  padding: 0px;\n  display: flex;\n}\n.n3-steps-round-con > li .n3-steps-round {\n  color: #fff;\n  background-color: #ddd;\n}\n.n3-steps-round-con > .n3-steps-finished:before {\n  background-color: #39b2a9;\n}\n.n3-steps-round-con > .n3-steps-finished .n3-steps-round {\n  background-color: #39b2a9;\n  border: 4px #39b2a9 solid;\n}\n.n3-steps-round-con > .n3-steps-finished label {\n  color: #39b2a9;\n}\n.n3-steps-round-con > .n3-steps-current:before {\n  background-color: #41cac0;\n}\n.n3-steps-round-con > .n3-steps-current .n3-steps-round {\n  background-color: #41cac0;\n  border: 4px #41cac0 solid;\n}\n.n3-steps-round-con > .n3-steps-current label {\n  color: #41cac0;\n}\n.n3-steps-round-con > li {\n  padding: 0px;\n  position: relative;\n  flex: 1;\n  background-color: transparent;\n}\n.n3-steps-round-con:before,\n.n3-steps-round-con:after {\n  content: \" \";\n  display: table;\n  clear: both;\n}\n.n3-steps-round-con > li:before {\n  content: '';\n  width: 100%;\n  height: 6px;\n  margin: 12px 0px;\n  display: block;\n  float: left;\n  background-color: #f9f9f9;\n}\n.n3-steps-round-con > li:first-child:before {\n  border-bottom-left-radius: 4px;\n  border-top-left-radius: 4px;\n}\n.n3-steps-round-con > li:last-child:before {\n  border-bottom-right-radius: 4px;\n  border-top-right-radius: 4px;\n}\n.n3-steps-round-con > li .n3-steps-wrap {\n  position: absolute;\n  left: 50%;\n  margin-left: -25px;\n  width: 50px;\n  text-align: center;\n  background: #fff;\n  top: 0px;\n}\n.n3-steps-round-con > li .n3-steps-round {\n  width: 30px;\n  height: 30px;\n  border-radius: 15px;\n  display: inline-block;\n  vertical-align: middle;\n  font-size: 12px;\n  color: #fff;\n  line-height: 22px;\n  text-align: center;\n  border: 4px #ddd solid;\n  background-color: #fff;\n  color: #999;\n}\n.n3-steps-round-con > li .n3-steps-round > i {\n  color: #39b2a9;\n  font-size: 12px;\n}\n.n3-steps-round-con > li label {\n  width: 100%;\n  text-align: center;\n  color: #999;\n  margin: 10px 0px 0px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n}\n.n3-steps-round-con > .n3-steps-finished:before,\n.n3-steps-round-con .n3-steps-current:before {\n  background-color: #39b2a9;\n}\n.n3-steps-round-con > .n3-steps-finished .n3-steps-round,\n.n3-steps-round-con .n3-steps-current .n3-steps-round {\n  border: 4px #39b2a9 solid;\n  background-color: #39b2a9;\n  color: #fff;\n}\n.n3-steps-round-con > .n3-steps-finished label,\n.n3-steps-round-con .n3-steps-current label {\n  color: #39b2a9;\n}\n.n3-switch {\n  width: 68px;\n  height: 27px;\n  display: inline-block;\n  direction: ltr;\n  cursor: pointer;\n  border-radius: 30px;\n  position: relative;\n  text-align: left;\n  overflow: hidden;\n  line-height: 8px;\n  z-index: 0;\n  user-select: none;\n  vertical-align: middle;\n  transition: background ease-in-out 0.15s, box-shadow ease-in-out 0.15s, color ease-in-out 0.15s;\n  background: #41cac0;\n  color: #fff;\n}\n.n3-switch-container {\n  width: 102px;\n  margin-left: 0px;\n  display: inline-block;\n  top: 0;\n  border-radius: 4px;\n  transform: translate3d(0, 0, 0);\n}\n.n3-switch-handle-on,\n.n3-switch-handle-off,\n.n3-switch-label {\n  box-sizing: border-box;\n  cursor: pointer;\n  display: inline-block;\n  height: 28px;\n  padding: 6px 2px 6px 10px;\n  font-size: 14px;\n  line-height: 16px;\n  vertical-align: middle;\n  position: relative;\n  text-align: center;\n}\n.n3-switch-handle-on:after,\n.n3-switch-handle-off:after {\n  content: \" \";\n  width: 14px;\n  height: 28px;\n  position: absolute;\n  top: 0;\n  right: -14px;\n}\n.n3-switch-handle-on {\n  width: 37px;\n  z-index: 98;\n}\n.n3-switch-handle-off {\n  width: 37px;\n  z-index: 97;\n  padding: 6px 10px 6px 0px;\n}\n.n3-switch-handle-off:after {\n  left: -14px;\n}\n.n3-switch-label {\n  height: 28px;\n  padding: 0;\n  position: relative;\n  width: 28px !important;\n  z-index: 100;\n}\n.n3-switch-label:after {\n  transition: 0.25s ease-out;\n  background-color: #fff;\n  border-radius: 50%;\n  content: \" \";\n  position: absolute;\n  top: 4px;\n  left: 4px;\n  display: inline-block;\n  height: 20px;\n  width: 20px;\n  box-shadow: 0 1px 2px #ccc;\n}\n.n3-switch-on .n3-switch-handle-on {\n  margin-left: -5px;\n}\n.n3-switch-off .n3-switch-handle-on {\n  margin-left: -43px;\n}\n.n3-switch-off {\n  background: #f9f9f9;\n  color: #fff;\n}\n.n3-switch-off .n3-switch-handle-off.n3-switch-default {\n  z-index: 99;\n  color: #999;\n}\n.n3-switch-disabled {\n  cursor: default !important;\n}\n.n3-switch-disabled .n3-switch-handle-on,\n.n3-switch-disabled .n3-switch-handle-off,\n.n3-switch-disabled .n3-switch-label {\n  opacity: 0.5;\n  cursor: default !important;\n}\n.n3-switch-animate .n3-switch-handle-on {\n  transition: margin-left 0.5s;\n}\n.n3-multiple-input {\n  font-size: 0px;\n  letter-spacing: 0px;\n  min-height: 34px;\n  height: auto;\n  padding: 6px 12px 0px;\n  display: flex;\n  flex-wrap: wrap;\n}\n.n3-multiple-input .n3-form-control {\n  border: 0px;\n  outline: none;\n  position: relative;\n  top: -2px;\n  margin: 0px;\n  padding: 0px;\n  height: 22px;\n}\n.n3-multiple-input .n3-multiple-input-space {\n  display: inline-block;\n  width: 8px;\n  height: 23px;\n}\n.n3-multiple-input .n3-multiple-input-space:first-child {\n  margin-left: -8px;\n}\n.n3-multiple-input .n3-multiple-input-space:hover {\n  cursor: text;\n}\n.n3-multiple-input .n3-multiple-input-space.n3-multiple-input-long {\n  flex: 1;\n}\n.n3-multiple-input .n3-multiple-input-m-tag,\n.n3-multiple-input input,\n.n3-multiple-input .n3-multiple-input-space {\n  vertical-align: top;\n  font-size: 14px;\n  margin-bottom: 6px;\n}\n.n3-multiple-input .n3-multiple-input-m-tag:hover {\n  cursor: pointer;\n}\n.n3-multiple-input .n3-multiple-input-m-tag {\n  background: #f9f9f9;\n  padding: 0px 10px;\n  border-radius: 5px;\n}\n.n3-multiple-input .n3-multiple-input-m-tag .n3-multiple-close {\n  color: #ccc;\n}\n.n3-radio-con:hover {\n  cursor: pointer;\n}\n.n3-radio-con .n3-radio-span {\n  white-space: nowrap;\n  outline: none;\n  display: inline-block;\n  position: relative;\n  line-height: 1;\n  vertical-align: middle;\n}\n.n3-radio-con .n3-radio-inner {\n  position: relative;\n  top: 0;\n  left: 0;\n  display: inline-block;\n  width: 14px;\n  height: 14px;\n  border-width: 1px;\n  border-style: solid;\n  border-radius: 14px;\n  border-color: #ddd;\n  background-color: #fff;\n  transition: all 0.3s ease;\n}\n.n3-radio-con .n3-radio-input {\n  position: absolute!important;\n  left: 0;\n  z-index: 1;\n  cursor: pointer;\n  opacity: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n}\n.n3-radio-con .n3-radio-checked .n3-radio-inner:after {\n  transform: scale(1);\n  opacity: 1;\n}\n.n3-radio-con .n3-radio-inner:after {\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  left: 3px;\n  top: 3px;\n  border-radius: 6px;\n  display: table;\n  border-top: 0;\n  border-left: 0;\n  content: ' ';\n  background-color: #41cac0;\n  transform: scale(0);\n  opacity: 0;\n  transition: all 0.3s ease;\n}\n.n3-radio-con .n3-radio-disabled .n3-radio-inner {\n  border-color: #ddd;\n  background-color: #f9f9f9;\n}\n.n3-radio-btn input[type=radio] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n.n3-label {\n  display: inline;\n  padding: 0.5em 0.8em;\n  font-size: 75%;\n  font-weight: bold;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  margin: 0px 5px 5px 0px;\n  background: #fff;\n  transition: all .3s ease;\n}\n.n3-label-hover:hover {\n  color: #fff;\n  cursor: pointer;\n}\n.n3-label-default.n3-label-hover:hover {\n  background: #999;\n}\n.n3-label-primary.n3-label-hover:hover {\n  background: #41cac0;\n}\n.n3-label-success.n3-label-hover:hover {\n  background: #2ecc71;\n}\n.n3-label-info.n3-label-hover:hover {\n  background: #58c9f3;\n}\n.n3-label-warning.n3-label-hover:hover {\n  background: #f1c500;\n}\n.n3-label-danger.n3-label-hover:hover {\n  background: #ff6c60;\n}\n.n3-label-default {\n  color: #999;\n  border: 1px solid #999;\n}\n.n3-label-primary {\n  color: #41cac0;\n  border: 1px solid #41cac0;\n}\n.n3-label-success {\n  color: #2ecc71;\n  border: 1px solid #2ecc71;\n}\n.n3-label-info {\n  color: #58c9f3;\n  border: 1px solid #58c9f3;\n}\n.n3-label-warning {\n  color: #f1c500;\n  border: 1px solid #f1c500;\n}\n.n3-label-danger {\n  color: #ff6c60;\n  border: 1px solid #ff6c60;\n}\n.n3-checkbox-label {\n  white-space: nowrap;\n  cursor: pointer;\n  outline: none;\n  display: inline-block;\n  line-height: 1;\n  position: relative;\n  vertical-align: middle;\n}\n.n3-checkbox-inner {\n  margin-right: 5px;\n  position: relative;\n  top: 0;\n  left: 0;\n  display: inline-block;\n  width: 14px;\n  height: 14px;\n  border-width: 1px;\n  border-style: solid;\n  border-radius: 3px;\n  border-color: #ddd;\n  background-color: #fff;\n  transition: all 0.3s ease;\n}\n.n3-checkbox-inner:after {\n  transform: rotate(45deg) scale(1);\n  position: absolute;\n  left: 4px;\n  top: 1px;\n  display: table;\n  width: 5px;\n  height: 8px;\n  border: 2px solid #fff;\n  border-top: 0;\n  border-left: 0;\n  content: ' ';\n}\n.n3-checkbox-input {\n  position: absolute!important;\n  left: 0;\n  z-index: 1;\n  cursor: pointer;\n  opacity: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 100%;\n  height: 100%;\n}\n.n3-checkbox-checked .n3-checkbox-inner {\n  border-color: #41cac0;\n  background-color: #41cac0;\n}\n.n3-checkbox-disabled .n3-checkbox-inner {\n  border-color: #ddd;\n  background-color: #ddd;\n}\n.n3-checkbox-disabled .n3-checkbox-inner:after {\n  display: none;\n}\n.n3-checkbox-label span {\n  vertical-align: top;\n}\n.n3-checkbox-btn input[type=checkbox] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n.n3-cascader {\n  position: relative;\n  display: inline-block;\n}\n.n3-cascader-picker {\n  position: relative;\n  display: inline-block;\n  cursor: pointer;\n  vertical-align: middle;\n}\n.n3-cascader-menus {\n  z-index: 10010;\n  font-size: 12px;\n  background: #fff;\n  position: absolute;\n  border: 1px solid #ddd;\n  box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);\n  white-space: nowrap;\n}\n.n3-cascader-menu {\n  display: inline-block;\n  vertical-align: top;\n  min-width: 111px;\n  height: 180px;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  border-right: 1px solid #ddd;\n  overflow: auto;\n}\n.n3-cascader-menu:last-child {\n  border-right-color: transparent;\n  margin-right: -1px;\n}\n.n3-cascader-menu-item {\n  padding: 7px 16px;\n  cursor: pointer;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  transition: all .3s ease;\n}\n.n3-cascader-menu-item-selected,\n.n3-cascader-menu-item-selected:hover {\n  background: rgba(65, 202, 192, 0.3) !important;\n}\n.n3-cascader-menu-item-disabled {\n  cursor: not-allowed;\n  color: #ccc;\n}\n.n3-cascader-menu-item-disabled:hover {\n  background: transparent;\n}\n.n3-cascader-menu-item:hover {\n  background: rgba(65, 202, 192, 0.1);\n}\n.n3-input-con .n3-has-feedback .n3-form-control-feedback {\n  right: 0px;\n  line-height: 34px;\n}\n.n3-input-con .n3-form-control[readonly] {\n  background-color: #fff;\n}\n.n3-input-con .n3-form-control[disabled] {\n  background-color: #f9f9f9;\n}\n.n3-input-con .n3-form-control[readonly] {\n  cursor: pointer;\n}\n.n3-input-con .n3-form-control[readonly]:hover {\n  cursor: pointer;\n}\n.n3-input-con .n3-form-control[disabled] {\n  cursor: not-allowed;\n}\n.n3-input-con .n3-form-control[disabled]:hover {\n  cursor: not-allowed;\n}\n.n3-toast {\n  position: fixed;\n  border-radius: 25px;\n  padding: 2px 25px .3em;\n  transition-property: opacity;\n  transition-duration: 800ms;\n  display: inline-block;\n  font-size: 16px;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  cursor: default;\n  z-index: 1500;\n}\n.n3-toast.n3-center {\n  margin: 0 auto;\n  left: 50%;\n  top: 50%;\n}\n.n3-toast.n3-top {\n  top: 30px;\n  margin: 0 auto;\n  left: 50%;\n}\n.n3-toast.n3-bottom {\n  bottom: 30px;\n  margin: 0 auto;\n  left: 50%;\n  top: initial;\n}\n.n3-toast.n3-top-right {\n  top: 30px;\n  right: 50px;\n  left: initial;\n}\n.n3-toast.n3-top-left {\n  top: 30px;\n  left: 50px;\n}\n.n3-toast.n3-bottom-right {\n  bottom: 30px;\n  right: 50px;\n  left: initial;\n  top: initial;\n}\n.n3-toast.n3-bottom-left {\n  top: initial;\n  bottom: 30px;\n  left: 50px;\n}\n.n3-toast-default {\n  background: rgba(51, 51, 51, 0.9);\n}\n.n3-toast-primary {\n  background: #41cac0;\n}\n.n3-toast-success {\n  background: #2ecc71;\n}\n.n3-toast-info {\n  background: #58c9f3;\n}\n.n3-toast-warning {\n  background: #f1c500;\n}\n.n3-toast-danger {\n  background: #ff6c60;\n}\n.n3-tag-group {\n  margin: 0;\n  margin-bottom: 18px;\n}\n.n3-tag-group .n3-tag {\n  display: inline-block;\n  font-weight: normal;\n  padding: 2px 1em;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 4px;\n  color: inherit;\n  border: 1px solid #999;\n  cursor: default;\n  user-select: none;\n  transition: all 0.2s linear;\n  position: relative;\n  margin: 0;\n}\n.n3-tag-group .n3-tag a[name] {\n  color: inherit;\n  text-decoration: none;\n  cursor: pointer;\n}\n.n3-tag-group .n3-tag + .n3-tag {\n  margin-left: .5em;\n}\n.n3-tag-group .n3-tag .fa {\n  cursor: pointer;\n  line-height: 100%;\n  position: relative;\n  right: -0.4em;\n  vertical-align: middle;\n  font-size: 120%;\n  font-weight: 100;\n  color: inherit;\n  opacity: .8;\n}\n.n3-tag-disabled {\n  opacity: .5;\n  cursor: not-allowed;\n}\n.n3-tag-disabled:hover {\n  color: inherit;\n  border-color: #999;\n}\n.n3-tag-sm .n3-tag,\n.n3-tag-xs .n3-tag {\n  padding: 0px 1em;\n  font-size: 12px;\n  line-height: 1.5;\n}\n.n3-tag-lg .n3-tag,\n.n3-tag-lg .n3-tag {\n  padding: 4px 1em;\n  font-size: 12px;\n  line-height: 1.5;\n}\n.n3-tag-xl .n3-tag,\n.n3-tag-xl .n3-tag {\n  padding: 5px 1em;\n  font-size: 14px;\n  line-height: 1.429;\n}\n.n3-tag-default .n3-tag,\n.n3-tag-default .n3-tag:hover {\n  color: #999;\n}\n.n3-tag-primary .n3-tag,\n.n3-tag-primary .n3-tag:hover {\n  background: #41cac0;\n  border-color: #41cac0;\n  color: white;\n}\n.n3-tag-success .n3-tag,\n.n3-tag-success .n3-tag:hover {\n  background: #2ecc71;\n  border-color: #2ecc71;\n  color: white;\n}\n.n3-tag-info .n3-tag,\n.n3-tag-info .n3-tag:hover {\n  background: #58c9f3;\n  border-color: #58c9f3;\n  color: white;\n}\n.n3-tag-warning .n3-tag,\n.n3-tag-warning .n3-tag:hover {\n  background: #f1c500;\n  border-color: #f1c500;\n  color: white;\n}\n.n3-tag-danger .n3-tag,\n.n3-tag-danger .n3-tag:hover {\n  background: #ff6c60;\n  border-color: #ff6c60;\n  color: white;\n}\n.n3-container {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n@media (min-width: 768px) {\n  .n3-container {\n    width: 750px;\n  }\n}\n@media (min-width: 992px) {\n  .n3-container {\n    width: 970px;\n  }\n}\n@media (min-width: 1200px) {\n  .n3-container {\n    width: 1170px;\n  }\n}\n.n3-container-fluid {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n.n3-row {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n.n3-col-xs-1,\n.n3-col-sm-1,\n.n3-col-md-1,\n.n3-col-lg-1,\n.n3-col-xs-2,\n.n3-col-sm-2,\n.n3-col-md-2,\n.n3-col-lg-2,\n.n3-col-xs-3,\n.n3-col-sm-3,\n.n3-col-md-3,\n.n3-col-lg-3,\n.n3-col-xs-4,\n.n3-col-sm-4,\n.n3-col-md-4,\n.n3-col-lg-4,\n.n3-col-xs-5,\n.n3-col-sm-5,\n.n3-col-md-5,\n.n3-col-lg-5,\n.n3-col-xs-6,\n.n3-col-sm-6,\n.n3-col-md-6,\n.n3-col-lg-6,\n.n3-col-xs-7,\n.n3-col-sm-7,\n.n3-col-md-7,\n.n3-col-lg-7,\n.n3-col-xs-8,\n.n3-col-sm-8,\n.n3-col-md-8,\n.n3-col-lg-8,\n.n3-col-xs-9,\n.n3-col-sm-9,\n.n3-col-md-9,\n.n3-col-lg-9,\n.n3-col-xs-10,\n.n3-col-sm-10,\n.n3-col-md-10,\n.n3-col-lg-10,\n.n3-col-xs-11,\n.n3-col-sm-11,\n.n3-col-md-11,\n.n3-col-lg-11,\n.n3-col-xs-12,\n.n3-col-sm-12,\n.n3-col-md-12,\n.n3-col-lg-12 {\n  position: relative;\n  min-height: 1px;\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.n3-col-xs-1,\n.n3-col-xs-2,\n.n3-col-xs-3,\n.n3-col-xs-4,\n.n3-col-xs-5,\n.n3-col-xs-6,\n.n3-col-xs-7,\n.n3-col-xs-8,\n.n3-col-xs-9,\n.n3-col-xs-10,\n.n3-col-xs-11,\n.n3-col-xs-12 {\n  float: left;\n}\n.n3-col-xs-12 {\n  width: 100%;\n}\n.n3-col-xs-11 {\n  width: 91.66666667%;\n}\n.n3-col-xs-10 {\n  width: 83.33333333%;\n}\n.n3-col-xs-9 {\n  width: 75%;\n}\n.n3-col-xs-8 {\n  width: 66.66666667%;\n}\n.n3-col-xs-7 {\n  width: 58.33333333%;\n}\n.n3-col-xs-6 {\n  width: 50%;\n}\n.n3-col-xs-5 {\n  width: 41.66666667%;\n}\n.n3-col-xs-4 {\n  width: 33.33333333%;\n}\n.n3-col-xs-3 {\n  width: 25%;\n}\n.n3-col-xs-2 {\n  width: 16.66666667%;\n}\n.n3-col-xs-1 {\n  width: 8.33333333%;\n}\n.n3-col-xs-pull-12 {\n  right: 100%;\n}\n.n3-col-xs-pull-11 {\n  right: 91.66666667%;\n}\n.n3-col-xs-pull-10 {\n  right: 83.33333333%;\n}\n.n3-col-xs-pull-9 {\n  right: 75%;\n}\n.n3-col-xs-pull-8 {\n  right: 66.66666667%;\n}\n.n3-col-xs-pull-7 {\n  right: 58.33333333%;\n}\n.n3-col-xs-pull-6 {\n  right: 50%;\n}\n.n3-col-xs-pull-5 {\n  right: 41.66666667%;\n}\n.n3-col-xs-pull-4 {\n  right: 33.33333333%;\n}\n.n3-col-xs-pull-3 {\n  right: 25%;\n}\n.n3-col-xs-pull-2 {\n  right: 16.66666667%;\n}\n.n3-col-xs-pull-1 {\n  right: 8.33333333%;\n}\n.n3-col-xs-pull-0 {\n  right: auto;\n}\n.n3-col-xs-push-12 {\n  left: 100%;\n}\n.n3-col-xs-push-11 {\n  left: 91.66666667%;\n}\n.n3-col-xs-push-10 {\n  left: 83.33333333%;\n}\n.n3-col-xs-push-9 {\n  left: 75%;\n}\n.n3-col-xs-push-8 {\n  left: 66.66666667%;\n}\n.n3-col-xs-push-7 {\n  left: 58.33333333%;\n}\n.n3-col-xs-push-6 {\n  left: 50%;\n}\n.n3-col-xs-push-5 {\n  left: 41.66666667%;\n}\n.n3-col-xs-push-4 {\n  left: 33.33333333%;\n}\n.n3-col-xs-push-3 {\n  left: 25%;\n}\n.n3-col-xs-push-2 {\n  left: 16.66666667%;\n}\n.n3-col-xs-push-1 {\n  left: 8.33333333%;\n}\n.n3-col-xs-push-0 {\n  left: auto;\n}\n.n3-col-xs-offset-12 {\n  margin-left: 100%;\n}\n.n3-col-xs-offset-11 {\n  margin-left: 91.66666667%;\n}\n.n3-col-xs-offset-10 {\n  margin-left: 83.33333333%;\n}\n.n3-col-xs-offset-9 {\n  margin-left: 75%;\n}\n.n3-col-xs-offset-8 {\n  margin-left: 66.66666667%;\n}\n.n3-col-xs-offset-7 {\n  margin-left: 58.33333333%;\n}\n.n3-col-xs-offset-6 {\n  margin-left: 50%;\n}\n.n3-col-xs-offset-5 {\n  margin-left: 41.66666667%;\n}\n.n3-col-xs-offset-4 {\n  margin-left: 33.33333333%;\n}\n.n3-col-xs-offset-3 {\n  margin-left: 25%;\n}\n.n3-col-xs-offset-2 {\n  margin-left: 16.66666667%;\n}\n.n3-col-xs-offset-1 {\n  margin-left: 8.33333333%;\n}\n.n3-col-xs-offset-0 {\n  margin-left: 0;\n}\n@media (min-width: 768px) {\n  .n3-col-sm-1,\n  .n3-col-sm-2,\n  .n3-col-sm-3,\n  .n3-col-sm-4,\n  .n3-col-sm-5,\n  .n3-col-sm-6,\n  .n3-col-sm-7,\n  .n3-col-sm-8,\n  .n3-col-sm-9,\n  .n3-col-sm-10,\n  .n3-col-sm-11,\n  .n3-col-sm-12 {\n    float: left;\n  }\n  .n3-col-sm-12 {\n    width: 100%;\n  }\n  .n3-col-sm-11 {\n    width: 91.66666667%;\n  }\n  .n3-col-sm-10 {\n    width: 83.33333333%;\n  }\n  .n3-col-sm-9 {\n    width: 75%;\n  }\n  .n3-col-sm-8 {\n    width: 66.66666667%;\n  }\n  .n3-col-sm-7 {\n    width: 58.33333333%;\n  }\n  .n3-col-sm-6 {\n    width: 50%;\n  }\n  .n3-col-sm-5 {\n    width: 41.66666667%;\n  }\n  .n3-col-sm-4 {\n    width: 33.33333333%;\n  }\n  .n3-col-sm-3 {\n    width: 25%;\n  }\n  .n3-col-sm-2 {\n    width: 16.66666667%;\n  }\n  .n3-col-sm-1 {\n    width: 8.33333333%;\n  }\n  .n3-col-sm-pull-12 {\n    right: 100%;\n  }\n  .n3-col-sm-pull-11 {\n    right: 91.66666667%;\n  }\n  .n3-col-sm-pull-10 {\n    right: 83.33333333%;\n  }\n  .n3-col-sm-pull-9 {\n    right: 75%;\n  }\n  .n3-col-sm-pull-8 {\n    right: 66.66666667%;\n  }\n  .n3-col-sm-pull-7 {\n    right: 58.33333333%;\n  }\n  .n3-col-sm-pull-6 {\n    right: 50%;\n  }\n  .n3-col-sm-pull-5 {\n    right: 41.66666667%;\n  }\n  .n3-col-sm-pull-4 {\n    right: 33.33333333%;\n  }\n  .n3-col-sm-pull-3 {\n    right: 25%;\n  }\n  .n3-col-sm-pull-2 {\n    right: 16.66666667%;\n  }\n  .n3-col-sm-pull-1 {\n    right: 8.33333333%;\n  }\n  .n3-col-sm-pull-0 {\n    right: auto;\n  }\n  .n3-col-sm-push-12 {\n    left: 100%;\n  }\n  .n3-col-sm-push-11 {\n    left: 91.66666667%;\n  }\n  .n3-col-sm-push-10 {\n    left: 83.33333333%;\n  }\n  .n3-col-sm-push-9 {\n    left: 75%;\n  }\n  .n3-col-sm-push-8 {\n    left: 66.66666667%;\n  }\n  .n3-col-sm-push-7 {\n    left: 58.33333333%;\n  }\n  .n3-col-sm-push-6 {\n    left: 50%;\n  }\n  .n3-col-sm-push-5 {\n    left: 41.66666667%;\n  }\n  .n3-col-sm-push-4 {\n    left: 33.33333333%;\n  }\n  .n3-col-sm-push-3 {\n    left: 25%;\n  }\n  .n3-col-sm-push-2 {\n    left: 16.66666667%;\n  }\n  .n3-col-sm-push-1 {\n    left: 8.33333333%;\n  }\n  .n3-col-sm-push-0 {\n    left: auto;\n  }\n  .n3-col-sm-offset-12 {\n    margin-left: 100%;\n  }\n  .n3-col-sm-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .n3-col-sm-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .n3-col-sm-offset-9 {\n    margin-left: 75%;\n  }\n  .n3-col-sm-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .n3-col-sm-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .n3-col-sm-offset-6 {\n    margin-left: 50%;\n  }\n  .n3-col-sm-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .n3-col-sm-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .n3-col-sm-offset-3 {\n    margin-left: 25%;\n  }\n  .n3-col-sm-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .n3-col-sm-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .n3-col-sm-offset-0 {\n    margin-left: 0;\n  }\n}\n@media (min-width: 992px) {\n  .n3-col-md-1,\n  .n3-col-md-2,\n  .n3-col-md-3,\n  .n3-col-md-4,\n  .n3-col-md-5,\n  .n3-col-md-6,\n  .n3-col-md-7,\n  .n3-col-md-8,\n  .n3-col-md-9,\n  .n3-col-md-10,\n  .n3-col-md-11,\n  .n3-col-md-12 {\n    float: left;\n  }\n  .n3-col-md-12 {\n    width: 100%;\n  }\n  .n3-col-md-11 {\n    width: 91.66666667%;\n  }\n  .n3-col-md-10 {\n    width: 83.33333333%;\n  }\n  .n3-col-md-9 {\n    width: 75%;\n  }\n  .n3-col-md-8 {\n    width: 66.66666667%;\n  }\n  .n3-col-md-7 {\n    width: 58.33333333%;\n  }\n  .n3-col-md-6 {\n    width: 50%;\n  }\n  .n3-col-md-5 {\n    width: 41.66666667%;\n  }\n  .n3-col-md-4 {\n    width: 33.33333333%;\n  }\n  .n3-col-md-3 {\n    width: 25%;\n  }\n  .n3-col-md-2 {\n    width: 16.66666667%;\n  }\n  .n3-col-md-1 {\n    width: 8.33333333%;\n  }\n  .n3-col-md-pull-12 {\n    right: 100%;\n  }\n  .n3-col-md-pull-11 {\n    right: 91.66666667%;\n  }\n  .n3-col-md-pull-10 {\n    right: 83.33333333%;\n  }\n  .n3-col-md-pull-9 {\n    right: 75%;\n  }\n  .n3-col-md-pull-8 {\n    right: 66.66666667%;\n  }\n  .n3-col-md-pull-7 {\n    right: 58.33333333%;\n  }\n  .n3-col-md-pull-6 {\n    right: 50%;\n  }\n  .n3-col-md-pull-5 {\n    right: 41.66666667%;\n  }\n  .n3-col-md-pull-4 {\n    right: 33.33333333%;\n  }\n  .n3-col-md-pull-3 {\n    right: 25%;\n  }\n  .n3-col-md-pull-2 {\n    right: 16.66666667%;\n  }\n  .n3-col-md-pull-1 {\n    right: 8.33333333%;\n  }\n  .n3-col-md-pull-0 {\n    right: auto;\n  }\n  .n3-col-md-push-12 {\n    left: 100%;\n  }\n  .n3-col-md-push-11 {\n    left: 91.66666667%;\n  }\n  .n3-col-md-push-10 {\n    left: 83.33333333%;\n  }\n  .n3-col-md-push-9 {\n    left: 75%;\n  }\n  .n3-col-md-push-8 {\n    left: 66.66666667%;\n  }\n  .n3-col-md-push-7 {\n    left: 58.33333333%;\n  }\n  .n3-col-md-push-6 {\n    left: 50%;\n  }\n  .n3-col-md-push-5 {\n    left: 41.66666667%;\n  }\n  .n3-col-md-push-4 {\n    left: 33.33333333%;\n  }\n  .n3-col-md-push-3 {\n    left: 25%;\n  }\n  .n3-col-md-push-2 {\n    left: 16.66666667%;\n  }\n  .n3-col-md-push-1 {\n    left: 8.33333333%;\n  }\n  .n3-col-md-push-0 {\n    left: auto;\n  }\n  .n3-col-md-offset-12 {\n    margin-left: 100%;\n  }\n  .n3-col-md-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .n3-col-md-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .n3-col-md-offset-9 {\n    margin-left: 75%;\n  }\n  .n3-col-md-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .n3-col-md-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .n3-col-md-offset-6 {\n    margin-left: 50%;\n  }\n  .n3-col-md-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .n3-col-md-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .n3-col-md-offset-3 {\n    margin-left: 25%;\n  }\n  .n3-col-md-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .n3-col-md-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .n3-col-md-offset-0 {\n    margin-left: 0;\n  }\n}\n@media (min-width: 1200px) {\n  .n3-col-lg-1,\n  .n3-col-lg-2,\n  .n3-col-lg-3,\n  .n3-col-lg-4,\n  .n3-col-lg-5,\n  .n3-col-lg-6,\n  .n3-col-lg-7,\n  .n3-col-lg-8,\n  .n3-col-lg-9,\n  .n3-col-lg-10,\n  .n3-col-lg-11,\n  .n3-col-lg-12 {\n    float: left;\n  }\n  .n3-col-lg-12 {\n    width: 100%;\n  }\n  .n3-col-lg-11 {\n    width: 91.66666667%;\n  }\n  .n3-col-lg-10 {\n    width: 83.33333333%;\n  }\n  .n3-col-lg-9 {\n    width: 75%;\n  }\n  .n3-col-lg-8 {\n    width: 66.66666667%;\n  }\n  .n3-col-lg-7 {\n    width: 58.33333333%;\n  }\n  .n3-col-lg-6 {\n    width: 50%;\n  }\n  .n3-col-lg-5 {\n    width: 41.66666667%;\n  }\n  .n3-col-lg-4 {\n    width: 33.33333333%;\n  }\n  .n3-col-lg-3 {\n    width: 25%;\n  }\n  .n3-col-lg-2 {\n    width: 16.66666667%;\n  }\n  .n3-col-lg-1 {\n    width: 8.33333333%;\n  }\n  .n3-col-lg-pull-12 {\n    right: 100%;\n  }\n  .n3-col-lg-pull-11 {\n    right: 91.66666667%;\n  }\n  .n3-col-lg-pull-10 {\n    right: 83.33333333%;\n  }\n  .n3-col-lg-pull-9 {\n    right: 75%;\n  }\n  .n3-col-lg-pull-8 {\n    right: 66.66666667%;\n  }\n  .n3-col-lg-pull-7 {\n    right: 58.33333333%;\n  }\n  .n3-col-lg-pull-6 {\n    right: 50%;\n  }\n  .n3-col-lg-pull-5 {\n    right: 41.66666667%;\n  }\n  .n3-col-lg-pull-4 {\n    right: 33.33333333%;\n  }\n  .n3-col-lg-pull-3 {\n    right: 25%;\n  }\n  .n3-col-lg-pull-2 {\n    right: 16.66666667%;\n  }\n  .n3-col-lg-pull-1 {\n    right: 8.33333333%;\n  }\n  .n3-col-lg-pull-0 {\n    right: auto;\n  }\n  .n3-col-lg-push-12 {\n    left: 100%;\n  }\n  .n3-col-lg-push-11 {\n    left: 91.66666667%;\n  }\n  .n3-col-lg-push-10 {\n    left: 83.33333333%;\n  }\n  .n3-col-lg-push-9 {\n    left: 75%;\n  }\n  .n3-col-lg-push-8 {\n    left: 66.66666667%;\n  }\n  .n3-col-lg-push-7 {\n    left: 58.33333333%;\n  }\n  .n3-col-lg-push-6 {\n    left: 50%;\n  }\n  .n3-col-lg-push-5 {\n    left: 41.66666667%;\n  }\n  .n3-col-lg-push-4 {\n    left: 33.33333333%;\n  }\n  .n3-col-lg-push-3 {\n    left: 25%;\n  }\n  .n3-col-lg-push-2 {\n    left: 16.66666667%;\n  }\n  .n3-col-lg-push-1 {\n    left: 8.33333333%;\n  }\n  .n3-col-lg-push-0 {\n    left: auto;\n  }\n  .n3-col-lg-offset-12 {\n    margin-left: 100%;\n  }\n  .n3-col-lg-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .n3-col-lg-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .n3-col-lg-offset-9 {\n    margin-left: 75%;\n  }\n  .n3-col-lg-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .n3-col-lg-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .n3-col-lg-offset-6 {\n    margin-left: 50%;\n  }\n  .n3-col-lg-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .n3-col-lg-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .n3-col-lg-offset-3 {\n    margin-left: 25%;\n  }\n  .n3-col-lg-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .n3-col-lg-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .n3-col-lg-offset-0 {\n    margin-left: 0;\n  }\n}\n.n3-table {\n  width: 100%;\n  max-width: 100%;\n  margin-bottom: 18px;\n}\n.n3-table > thead > tr > th,\n.n3-table > tbody > tr > th,\n.n3-table > tfoot > tr > th,\n.n3-table > thead > tr > td,\n.n3-table > tbody > tr > td,\n.n3-table > tfoot > tr > td {\n  padding: 6px 8px;\n  line-height: 1.5;\n  vertical-align: top;\n  border-top: 1px solid #ddd;\n}\n.n3-table > thead > tr > th {\n  vertical-align: bottom;\n  border-bottom: 1px solid #ddd;\n}\n.n3-table > caption + thead > tr:first-child > th,\n.n3-table > colgroup + thead > tr:first-child > th,\n.n3-table > thead:first-child > tr:first-child > th,\n.n3-table > caption + thead > tr:first-child > td,\n.n3-table > colgroup + thead > tr:first-child > td,\n.n3-table > thead:first-child > tr:first-child > td {\n  border-top: 0;\n}\n.n3-table > tbody + tbody {\n  border-top: 2px solid #ddd;\n}\n.n3-table-bordered {\n  border: 1px solid #ddd;\n  border-collapse: separate;\n  border-radius: 2px;\n  border-left: none;\n}\n.n3-table-bordered > thead > tr > th,\n.n3-table-bordered > tbody > tr > th,\n.n3-table-bordered > tfoot > tr > th,\n.n3-table-bordered > thead > tr > td,\n.n3-table-bordered > tbody > tr > td,\n.n3-table-bordered > tfoot > tr > td {\n  border-left: 1px solid #ddd;\n}\n.n3-table-bordered > thead > tr > th,\n.n3-table-bordered > thead > tr > td {\n  border-bottom-width: 1px;\n  background: #f9f9f9;\n}\n.n3-table-bordered > thead > tr:first-child > th,\n.n3-table-bordered > tbody > tr:first-child > th,\n.n3-table-bordered > tfoot > tr:first-child > th,\n.n3-table-bordered > thead > tr:first-child > td,\n.n3-table-bordered > tbody > tr:first-child > td,\n.n3-table-bordered > tfoot > tr:first-child > td {\n  border-top: 0;\n}\n.n3-table-bordered > thead:last-child tr:last-child > th:first-child,\n.n3-table-bordered > tbody:last-child tr:last-child > td:first-child,\n.n3-table-bordered > tbody:last-child tr:last-child > th:first-child,\n.n3-table-bordered > tfoot:last-child tr:last-child > td:first-child,\n.n3-table-bordered > tfoot:last-child tr:last-child > th:first-child {\n  border-bottom-left-radius: 2px;\n}\n.n3-table-striped > tbody > tr:nth-of-type(odd) {\n  background-color: #f9f9f9;\n}\n.n3-table-hover > tbody > tr:hover {\n  background-color: #f9f9f9;\n}\ntable col[class*=\"col-\"] {\n  position: static;\n  display: table-column;\n  float: none;\n}\ntable td[class*=\"col-\"],\ntable th[class*=\"col-\"] {\n  position: static;\n  display: table-cell;\n  float: none;\n}\n.n3-table-responsive {\n  min-height: .01%;\n  overflow-x: auto;\n}\n@media screen and (max-width: 767px) {\n  .n3-table-responsive {\n    width: 100%;\n    margin-bottom: 13.5px;\n    overflow-y: hidden;\n    -ms-overflow-style: -ms-autohiding-scrollbar;\n    border: 1px solid #ddd;\n  }\n}\n.n3-btn {\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: 14px;\n  font-weight: normal;\n  line-height: 1.42857143;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  touch-action: manipulation;\n  cursor: pointer;\n  user-select: none;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n}\n.n3-btn:focus,\n.n3-btn:active:focus,\n.n3-btn-active:focus {\n  outline: 0;\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n.n3-btn:hover,\n.n3-btn:focus {\n  color: #333;\n  text-decoration: none;\n}\n.n3-btn:active,\n.n3-btn-active {\n  background-image: none;\n  outline: 0;\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n.n3-btn-disabled,\n.n3-btn[disabled] {\n  pointer-events: none;\n  cursor: not-allowed;\n  box-shadow: none;\n  opacity: .65;\n}\n.n3-btn-default {\n  color: #333;\n  background-clip: padding-box;\n  background-color: #fff;\n  border-color: rgba(150, 160, 180, 0.3);\n}\n.n3-btn-default:hover,\n.n3-btn-default:focus,\n.n3-btn-default:active,\n.n3-btn-default.n3-btn-active {\n  color: #999;\n}\n.n3-btn-default:active,\n.n3-btn-default.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-default.n3-btn-disabled,\n.n3-btn-default[disabled],\n.n3-btn-default.n3-btn-disabled:hover,\n.n3-btn-default[disabled]:hover,\n.n3-btn-default.n3-btn-disabled:focus,\n.n3-btn-default[disabled]:focus,\n.n3-btn-default.n3-btn-disabled:active,\n.n3-btn-default[disabled]:active,\n.n3-btn-default.n3-btn-disabled.n3-btn-active,\n.n3-btn-default[disabled].n3-btn-active {\n  background-color: #ddd;\n  border-color: #ddd;\n}\n.n3-btn-default .n3-badge {\n  color: #fff;\n  background-color: #333;\n}\n.n3-btn-primary {\n  color: #fff;\n  background-color: #41cac0;\n  border-color: #41cac0;\n}\n.n3-btn-primary:hover,\n.n3-btn-primary:focus,\n.n3-btn-primary:active,\n.n3-btn-primary.n3-btn-active {\n  color: #fff;\n  background-color: #39b2a9;\n  border-color: #39b2a9;\n}\n.n3-btn-primary:active,\n.n3-btn-primary.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-primary .n3-badge {\n  color: #41cac0;\n  background-color: #fff;\n}\n.n3-btn-success {\n  color: #fff;\n  background-color: #2ecc71;\n  border-color: #2ecc71;\n}\n.n3-btn-success:hover,\n.n3-btn-success:focus,\n.n3-btn-success:active,\n.n3-btn-success.n3-btn-active {\n  color: #fff;\n  background-color: #29b464;\n  border-color: #29b464;\n}\n.n3-btn-success:active,\n.n3-btn-success.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-success .n3-badge {\n  color: #2ecc71;\n  background-color: #fff;\n}\n.n3-btn-info {\n  color: #fff;\n  background-color: #58c9f3;\n  border-color: #58c9f3;\n}\n.n3-btn-info:hover,\n.n3-btn-info:focus,\n.n3-btn-info:active,\n.n3-btn-info.n3-btn-active {\n  color: #fff;\n  background-color: #38bef0;\n  border-color: #38bef0;\n}\n.n3-btn-info:active,\n.n3-btn-info.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-info .n3-badge {\n  color: #58c9f3;\n  background-color: #fff;\n}\n.n3-btn-warning {\n  color: #fff;\n  background-color: #f1c500;\n  border-color: #f1c500;\n}\n.n3-btn-warning:hover,\n.n3-btn-warning:focus,\n.n3-btn-warning:active,\n.n3-btn-warning.n3-btn-active {\n  color: #fff;\n  background-color: #dbb509;\n  border-color: #dbb509;\n}\n.n3-btn-warning:active,\n.n3-btn-warning.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-warning .n3-badge {\n  color: #f1c500;\n  background-color: #fff;\n}\n.n3-btn-danger {\n  color: #fff;\n  background-color: #ff6c60;\n  border-color: #ff6c60;\n}\n.n3-btn-danger:hover,\n.n3-btn-danger:focus,\n.n3-btn-danger:active,\n.n3-btn-danger.n3-btn-active {\n  color: #fff;\n  background-color: #e74c3c;\n  border-color: #e74c3c;\n}\n.n3-btn-danger:active,\n.n3-btn-danger.n3-btn-active {\n  background-image: none;\n}\n.n3-btn-danger .n3-badge {\n  color: #ff6c60;\n  background-color: #fff;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-default {\n  color: #333;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-primary {\n  color: #fff;\n  background-color: #41cac0;\n  border-color: #41cac0;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-success {\n  color: #fff;\n  background-color: #2ecc71;\n  border-color: #2ecc71;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-info {\n  color: #fff;\n  background-color: #58c9f3;\n  border-color: #58c9f3;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-warning {\n  color: #fff;\n  background-color: #f1c500;\n  border-color: #f1c500;\n  background-image: none;\n}\n.n3-open > .n3-dropdown-toggle.n3-btn-danger {\n  color: #fff;\n  background-color: #ff6c60;\n  border-color: #ff6c60;\n  background-image: none;\n}\n.n3-btn-lg,\n.n3-btn-group-lg > .n3-btn {\n  padding: 10px 16px;\n  font-size: 18px;\n  line-height: 1.3333333;\n  border-radius: 6px;\n}\n.n3-btn-sm,\n.n3-btn-group-sm > .n3-btn {\n  padding: 5px 10px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.n3-btn-xs,\n.n3-btn-group-xs > .n3-btn {\n  padding: 1px 5px;\n  font-size: 12px;\n  line-height: 1.5;\n  border-radius: 3px;\n}\n.n3-btn-block {\n  display: block;\n  width: 100%;\n}\n.n3-btn-block + .n3-btn-block {\n  margin-top: 5px;\n}\ninput[type=\"submit\"].n3-btn-block,\ninput[type=\"reset\"].n3-btn-block,\ninput[type=\"button\"].n3-btn-block {\n  width: 100%;\n}\n/*------------ btn-group -----------*/\n.n3-btn-group,\n.n3-btn-group-vertical {\n  position: relative;\n  display: inline-block;\n  vertical-align: middle;\n}\n.n3-checkbox-group,\n.n3-radio-group {\n  padding-top: 7px;\n}\n.n3-btn-group > .n3-btn,\n.n3-btn-group-vertical > .n3-btn {\n  position: relative;\n  float: left;\n}\n.n3-btn-group > .n3-btn:hover,\n.n3-btn-group-vertical > .n3-btn:hover,\n.n3-btn-group > .n3-btn:focus,\n.n3-btn-group-vertical > .n3-btn:focus,\n.n3-btn-group > .n3-btn:active,\n.n3-btn-group-vertical > .n3-btn:active,\n.n3-btn-group > .n3-btn.n3-active,\n.n3-btn-group-vertical > .n3-btn.n3-active {\n  z-index: 2;\n}\n.n3-btn-group .n3-btn + .n3-btn,\n.n3-btn-group .n3-btn + .n3-btn-group,\n.n3-btn-group .n3-btn-group + .n3-btn,\n.n3-btn-group .n3-btn-group + .n3-btn-group {\n  margin-left: -1px;\n}\n.n3-btn-group > .n3-btn:not(:first-child):not(:last-child):not(.n3-dropdown-toggle) {\n  border-radius: 0;\n}\n.n3-btn-group > .n3-btn:first-child {\n  margin-left: 0;\n}\n.n3-btn-group > .n3-btn:first-child:not(:last-child):not(.n3-dropdown-toggle) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.n3-btn-group > .n3-btn:last-child:not(:first-child),\n.n3-btn-group > .n3-dropdown-toggle:not(:first-child) {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.n3-btn-group > .n3-btn-group {\n  float: left;\n}\n.n3-btn-group > .n3-btn-group:not(:first-child):not(:last-child) > .n3-btn {\n  border-radius: 0;\n}\n.n3-btn-group > .n3-btn-group:first-child:not(:last-child) > .n3-btn:last-child,\n.n3-btn-group > .n3-btn-group:first-child:not(:last-child) > .n3-dropdown-toggle {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.n3-btn-group > .n3-btn-group:last-child:not(:first-child) > .n3-btn:first-child {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.n3-btn-group .n3-dropdown-toggle:active,\n.n3-btn-group.n3-open .n3-dropdown-toggle {\n  outline: 0;\n}\n.n3-btn-group > .n3-btn + .n3-dropdown-toggle {\n  padding-right: 8px;\n  padding-left: 8px;\n}\n.n3-btn-group > .n3-btn-lg + .n3-dropdown-toggle {\n  padding-right: 12px;\n  padding-left: 12px;\n}\n.n3-btn-group.n3-open .n3-dropdown-toggle {\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n}\n.n3-modal-open {\n  overflow: hidden;\n}\n.n3-modal {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1040;\n  display: none;\n  overflow: hidden;\n  -webkit-overflow-scrolling: touch;\n  outline: 0;\n  transition: all 0.3s ease;\n}\n.n3-modal-in {\n  background-color: rgba(0, 0, 0, 0.5);\n}\n.n3-modal-zoom .n3-modal-dialog {\n  transform: scale(0.1);\n  top: 300px;\n  opacity: 0;\n  transition: all 0.3s;\n}\n.n3-modal-zoom.n3-modal-in .n3-modal-dialog {\n  transform: scale(1);\n  transform: translate3d(0, -300px, 0);\n  opacity: 1;\n}\n.n3-modal-fade .n3-modal-dialog {\n  transition: transform 0.3s ease-out;\n  transform: translate(0, -25%);\n}\n.n3-modal-in .n3-modal-dialog {\n  transform: translate(0, 0);\n}\n.n3-modal-open .n3-modal {\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n.n3-modal-dialog {\n  position: relative;\n  width: auto;\n  margin: 30px auto;\n}\n.n3-modal-content {\n  position: relative;\n  background-color: #fff;\n  background-clip: padding-box;\n  border-radius: 6px;\n  outline: 0;\n  box-shadow: none;\n  border: none;\n}\n.n3-modal 7-backdrop {\n  position: absolute;\n  top: 0;\n  right: 0;\n  left: 0;\n  background-color: #000;\n}\n.n3-modal-backdrop.n3-modal-fade {\n  opacity: 0;\n}\n.n3-modal-backdrop.n3-modal-in {\n  opacity: .5;\n}\n.n3-modal-header {\n  min-height: 16.42857143px;\n  padding: 15px;\n  background: #41cac0;\n  color: #fff;\n  border-radius: 5px 5px 0 0;\n  border-bottom: none;\n}\n.n3-modal-header .n3-close {\n  margin-top: 0px;\n}\n.n3-modal-title {\n  margin: 0;\n  line-height: 1.42857143;\n}\n.n3-modal-body {\n  position: relative;\n  padding: 15px;\n}\n.n3-modal-footer {\n  padding: 15px;\n  text-align: right;\n  border-top: 1px solid #ddd;\n}\n.n3-modal-footer .n3-btn + .n3-btn {\n  margin-bottom: 0;\n  margin-left: 5px;\n}\n.n3-modal-footer .n3-btn-group .n3-btn + .n3-btn {\n  margin-left: -1px;\n}\n.n3-modal-footer .n3-btn-block + .n3-btn-block {\n  margin-left: 0;\n}\n.n3-carousel {\n  position: relative;\n}\n.n3-carousel-inner {\n  position: relative;\n  width: 100%;\n  overflow: hidden;\n}\n.n3-carousel-inner > .n3-carousel-item {\n  position: relative;\n  display: none;\n  transition: 0.6s ease-in-out left;\n}\n.n3-carousel-inner > .n3-carousel-item > img,\n.n3-carousel-inner > .n3-carousel-item > a > img {\n  line-height: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n}\n.n3-carousel-inner > .n3-carousel-active,\n.n3-carousel-inner > .n3-carousel-next,\n.n3-carousel-inner > .n3-carousel-prev {\n  display: block;\n}\n.n3-carousel-inner > .n3-carousel-next,\n.n3-carousel-inner > .n3-carousel-prev {\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n.n3-carousel-inner > .n3-carousel-active,\n.n3-carousel-inner > .n3-carousel-next.n3-carousel-left,\n.n3-carousel-inner > .n3-carousel-prev.n3-carousel-right {\n  left: 0;\n  z-index: 1;\n}\n.n3-carousel-inner > .n3-carousel-prev,\n.n3-carousel-inner > .n3-carousel-active.n3-carousel-left {\n  left: -100%;\n  z-index: 2;\n}\n.n3-carousel-inner > .n3carousel--next,\n.n3-carousel-inner > .n3-carousel-active.n3-carousel-right {\n  left: 100%;\n  z-index: 2;\n}\n.n3-carousel-control {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 15%;\n  font-size: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);\n  opacity: .5;\n  z-index: 3;\n}\n.n3-carousel-control:hover {\n  cursor: pointer;\n}\n.n3-carousel-control.n3-carousel-left {\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);\n  background-repeat: repeat-x;\n}\n.n3-carousel-control.n3-carousel-right {\n  right: 0;\n  left: auto;\n  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);\n  background-repeat: repeat-x;\n}\n.n3-carousel-control:hover,\n.n3-carousel-control:focus {\n  color: #fff;\n  text-decoration: none;\n  outline: 0;\n  opacity: .9;\n}\n.n3-carousel-control .fa-chevron-left,\n.n3-carousel-control .fa-chevron-right {\n  position: absolute;\n  top: 50%;\n  z-index: 5;\n  display: inline-block;\n}\n.n3-carousel-control .fa-chevron-left {\n  left: 50%;\n  margin-left: -10px;\n}\n.n3-carousel-control .fa-chevron-right {\n  right: 50%;\n  margin-right: -10px;\n}\n.n3-carousel-indicators {\n  position: absolute;\n  bottom: 10px;\n  left: 50%;\n  z-index: 15;\n  width: 60%;\n  padding-left: 0;\n  margin-left: -30%;\n  text-align: center;\n  list-style: none;\n}\n.n3-carousel-indicators li {\n  display: inline-block;\n  width: 10px;\n  height: 10px;\n  margin: 1px;\n  text-indent: -999px;\n  cursor: pointer;\n  background-color: rgba(0, 0, 0, 0);\n  border: 1px solid #fff;\n  border-radius: 10px;\n  margin: 0px 5px;\n}\n.n3-carousel-indicators .n3-carousel-active {\n  background-color: #fff;\n}\n@media screen and (min-width: 768px) {\n  .n3-carousel-control .fa-chevron-left,\n  .n3-carousel-control .fa-chevron-right {\n    width: 30px;\n    height: 30px;\n    margin-top: -15px;\n    font-size: 30px;\n  }\n  .n3-carousel-control .fa-chevron-left {\n    margin-left: -15px;\n  }\n  .n3-carousel-control .fa-chevron-right {\n    margin-right: -15px;\n  }\n  .n3-carousel-indicators {\n    bottom: 20px;\n  }\n}\n.n3-alert {\n  padding: 15px;\n  border: 1px solid transparent;\n  border-radius: 4px;\n  overflow: hidden;\n  z-index: 1200;\n}\n.n3-alert h4 {\n  margin-top: 0;\n  color: inherit;\n}\n.n3-alert > p,\n.n3-alert > ul {\n  margin-bottom: 0;\n}\n.n3-alert > p + p {\n  margin-top: 5px;\n}\n.n3-alert hr {\n  border-top-color: rgba(255, 255, 255, 0.5);\n}\n.n3-alert-default {\n  color: #fff;\n  background-color: rgba(51, 51, 51, 0.9);\n}\n.n3-alert-default .n3-close {\n  color: #fff;\n}\n.n3-alert-success {\n  color: #fff;\n  background-color: rgba(46, 204, 113, 0.9);\n}\n.n3-alert-info {\n  color: #fff;\n  background-color: rgba(52, 152, 219, 0.9);\n}\n.n3-alert-warning {\n  color: #fff;\n  background-color: rgba(241, 196, 15, 0.9);\n}\n.n3-alert-danger {\n  color: #fff;\n  background-color: rgba(231, 76, 60, 0.9);\n}\n.n3-alert-icon {\n  float: left;\n  font-size: 18px;\n  margin-right: 10px;\n}\n.n3-alert-content {\n  margin-left: 32px;\n}\n.n3-alert-small {\n  padding: 2px 14px;\n}\n.n3-alert-small .close {\n  font-size: 20px;\n  top: 0;\n}\n.n3-alert.n3-center {\n  position: fixed;\n  margin: 0 auto;\n  left: 50%;\n  top: 50%;\n}\n.n3-alert.n3-top {\n  position: fixed;\n  top: 30px;\n  margin: 0 auto;\n  left: 50%;\n}\n.n3-alert.n3-bottom {\n  position: fixed;\n  bottom: 30px;\n  margin: 0 auto;\n  left: 50%;\n}\n.n3-alert.n3-top-right {\n  position: fixed;\n  top: 30px;\n  right: 50px;\n}\n.n3-alert.n3-top-left {\n  position: fixed;\n  top: 30px;\n  left: 50px;\n}\n.n3-alert.n3-bottom-right {\n  position: fixed;\n  bottom: 30px;\n  right: 50px;\n}\n.n3-alert.n3-bottom-left {\n  position: fixed;\n  bottom: 30px;\n  left: 50px;\n}\n.n3-alert-dismissable,\n.n3-alert-dismissible {\n  padding-right: 35px;\n}\n.n3-alert-dismissable .n3-close,\n.n3-alert-dismissible .n3-close {\n  position: relative;\n  top: -2px;\n  right: -21px;\n  color: inherit;\n}\n.n3-panel-body {\n  padding: 15px;\n}\n.n3-panel-heading {\n  padding: 10px 15px;\n  border-bottom: 1px solid transparent;\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n  border-color: #f9f9f9;\n  font-size: 16px;\n  font-weight: 300;\n}\n.n3-panel-heading > .n3-dropdown .n3-dropdown-toggle {\n  color: inherit;\n}\n.n3-panel-heading + .n3-list-group .n3-list-group-item:first-child {\n  border-top-width: 0;\n}\n.n3-panel-title {\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 14px;\n  color: #333;\n  font-weight: 400;\n  font-family: 'Open Sans', sans-serif;\n}\n.n3-panel-title > a,\n.n3-panel-title > small,\n.n3-panel-title > .small,\n.n3-panel-title > small > a,\n.n3-panel-title > .small > a {\n  color: inherit;\n}\n.n3-panel-footer {\n  padding: 10px 15px;\n  background-color: #f9f9f9;\n  border-top: 1px solid #ddd;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.n3-panel {\n  margin-bottom: 20px;\n  background-color: #fff;\n  border-radius: 4px;\n}\n.n3-panel > .n3-list-group,\n.n3-panel > .n3-panel-collapse > .n3-list-group {\n  margin-bottom: 0;\n}\n.n3-panel > .n3-list-group .n3-list-group-item,\n.n3-panel > .n3-panel-collapse > .n3-list-group .n3-list-group-item {\n  border-width: 1px 0;\n  border-radius: 0;\n}\n.n3-panel > .n3-list-group:first-child .n3-list-group-item:first-child,\n.n3-panel > .n3-panel-collapse > .n3-list-group:first-child .n3-list-group-item:first-child {\n  border-top: 0;\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.n3-panel > .n3-list-group:last-child .n3-list-group-item:last-child,\n.n3-panel > .n3-panel-collapse > .n3-list-group:last-child .n3-list-group-item:last-child {\n  border-bottom: 0;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.n3-panel > .n3-table,\n.n3-panel > .n3-table-responsive > .n3-table,\n.n3-panel > .n3-panel-collapse > .n3-table {\n  margin-bottom: 0;\n}\n.n3-panel > .n3-table caption,\n.n3-panel > .n3-table-responsive > .n3-table caption,\n.n3-panel > .n3-panel-collapse > .n3-table caption {\n  padding-right: 15px;\n  padding-left: 15px;\n}\n.n3-panel > .n3-table:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child {\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child {\n  border-top-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child td:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child td:first-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child td:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child td:first-child,\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child th:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child th:first-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child th:first-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child th:first-child {\n  border-top-left-radius: 3px;\n}\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child td:last-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child td:last-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child td:last-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child td:last-child,\n.n3-panel > .n3-table:first-child > thead:first-child > tr:first-child th:last-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > thead:first-child > tr:first-child th:last-child,\n.n3-panel > .n3-table:first-child > tbody:first-child > tr:first-child th:last-child,\n.n3-panel > .n3-table-responsive:first-child > .n3-table:first-child > tbody:first-child > tr:first-child th:last-child {\n  border-top-right-radius: 3px;\n}\n.n3-panel > .n3-table:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child {\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child {\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n}\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child td:first-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child td:first-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child td:first-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child td:first-child,\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child th:first-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child th:first-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child th:first-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child th:first-child {\n  border-bottom-left-radius: 3px;\n}\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child td:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child td:last-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child td:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child td:last-child,\n.n3-panel > .n3-table:last-child > tbody:last-child > tr:last-child th:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tbody:last-child > tr:last-child th:last-child,\n.n3-panel > .n3-table:last-child > tfoot:last-child > tr:last-child th:last-child,\n.n3-panel > .n3-table-responsive:last-child > .n3-table:last-child > tfoot:last-child > tr:last-child th:last-child {\n  border-bottom-right-radius: 3px;\n}\n.n3-panel > .n3-panel-body + .n3-table,\n.n3-panel > .n3-panel-body + .n3-table-responsive,\n.n3-panel > .n3-table + .n3-panel-body,\n.n3-panel > .n3-table-responsive + .n3-panel-body {\n  border-top: 1px solid #ddd;\n}\n.n3-panel > .n3-table > tbody:first-child > tr:first-child th,\n.n3-panel > .n3-table > tbody:first-child > tr:first-child td {\n  border-top: 0;\n}\n.n3-panel > .n3-table-bordered,\n.n3-panel > .n3-table-responsive > .n3-table-bordered {\n  border: 0;\n}\n.n3-panel > .n3-table-bordered > thead > tr > th:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr > th:first-child,\n.n3-panel > .n3-table-bordered > tbody > tr > th:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr > th:first-child,\n.n3-panel > .n3-table-bordered > tfoot > tr > th:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr > th:first-child,\n.n3-panel > .n3-table-bordered > thead > tr > td:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr > td:first-child,\n.n3-panel > .n3-table-bordered > tbody > tr > td:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr > td:first-child,\n.n3-panel > .n3-table-bordered > tfoot > tr > td:first-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr > td:first-child {\n  border-left: 0;\n}\n.n3-panel > .n3-table-bordered > thead > tr > th:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr > th:last-child,\n.n3-panel > .n3-table-bordered > tbody > tr > th:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr > th:last-child,\n.n3-panel > .n3-table-bordered > tfoot > tr > th:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr > th:last-child,\n.n3-panel > .n3-table-bordered > thead > tr > td:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr > td:last-child,\n.n3-panel > .n3-table-bordered > tbody > tr > td:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr > td:last-child,\n.n3-panel > .n3-table-bordered > tfoot > tr > td:last-child,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr > td:last-child {\n  border-right: 0;\n}\n.n3-panel > .n3-table-bordered > thead > tr:first-child > td,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr:first-child > td,\n.n3-panel > .n3-table-bordered > tbody > tr:first-child > td,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr:first-child > td,\n.n3-panel > .n3-table-bordered > thead > tr:first-child > th,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > thead > tr:first-child > th,\n.n3-panel > .n3-table-bordered > tbody > tr:first-child > th,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr:first-child > th {\n  border-bottom: 0;\n}\n.n3-panel > .n3-table-bordered > tbody > tr:last-child > td,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr:last-child > td,\n.n3-panel > .n3-table-bordered > tfoot > tr:last-child > td,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr:last-child > td,\n.n3-panel > .n3-table-bordered > tbody > tr:last-child > th,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tbody > tr:last-child > th,\n.n3-panel > .n3-table-bordered > tfoot > tr:last-child > th,\n.n3-panel > .n3-table-responsive > .n3-table-bordered > tfoot > tr:last-child > th {\n  border-bottom: 0;\n}\n.n3-panel > .n3-table-responsive {\n  margin-bottom: 0;\n  border: 0;\n}\n.n3-list-group + .n3-panel-footer {\n  border-top-width: 0;\n}\n.n3-panel-group {\n  margin-bottom: 20px;\n}\n.n3-panel-group .n3-panel {\n  margin-bottom: 0;\n  border-radius: 4px;\n}\n.n3-panel-group .n3-panel + .n3-panel {\n  margin-top: 5px;\n}\n.n3-panel-group .n3-panel-heading {\n  border-bottom: 0;\n}\n.n3-panel-group .n3-panel-heading + .n3-panel-collapse > .n3-panel-body,\n.n3-panel-group .n3-panel-heading + .n3-panel-collapse > .n3-list-group {\n  border-top: 1px solid #ddd;\n}\n.n3-panel-group .n3-panel-footer {\n  border-top: 0;\n}\n.n3-panel-group .n3-panel-footer + .n3-panel-collapse .n3-panel-body {\n  border-bottom: 1px solid #ddd;\n}\n.n3-panel-default {\n  border-color: #ddd;\n}\n.n3-panel-default > .n3-panel-heading {\n  background-color: #fff;\n  border-color: #ddd;\n  color: #333;\n}\n.n3-panel-default > .n3-panel-heading + .n3-panel-collapse > .n3-panel-body {\n  border-top-color: #ddd;\n}\n.n3-panel-default > .n3-panel-heading .n3-badge {\n  color: #f9f9f9;\n  background-color: #333;\n}\n.n3-panel-default > .n3-panel-footer + .n3-panel-collapse > .n3-panel-body {\n  border-bottom-color: #ddd;\n}\n@-webkit-keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@-o-keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@keyframes progress-bar-stripes {\n  from {\n    background-position: 40px 0;\n  }\n  to {\n    background-position: 0 0;\n  }\n}\n@-webkit-keyframes loading-spin {\n  from {\n    -webkit-transform: rotate(0deg);\n  }\n  to {\n    -webkit-transform: rotate(360deg);\n  }\n}\n@-moz-keyframes loading-spin {\n  from {\n    -moz-transform: rotate(0deg);\n  }\n  to {\n    -moz-transform: rotate(360deg);\n  }\n}\n@-ms-keyframes loading-spin {\n  from {\n    -ms-transform: rotate(0deg);\n  }\n  to {\n    -ms-transform: rotate(360deg);\n  }\n}\n@keyframes loading-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}\n.n3-progress {\n  overflow: hidden;\n  border-radius: 4px;\n  box-shadow: none;\n  background: #f9f9f9;\n}\n.n3-progress-bar {\n  float: left;\n  width: 0;\n  height: 100%;\n  font-size: 12px;\n  line-height: 20px;\n  color: #fff;\n  text-align: center;\n  background-color: #41cac0;\n  transition: width .6s ease;\n}\n.n3-progress-bar-striped {\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-size: 40px 40px;\n}\n.n3-progress-bar-animated {\n  animation: progress-bar-stripes 2s linear infinite;\n}\n.n3-progress-bar-success {\n  background-color: #2ecc71;\n}\n.n3-progress-bar-info {\n  background-color: #58c9f3;\n}\n.n3-progress-bar-warning {\n  background-color: #f1c500;\n}\n.n3-progress-bar-danger {\n  background-color: #ff6c60;\n}\n.n3-breadcrumb {\n  padding: 8px 15px;\n  margin-bottom: 20px;\n  list-style: none;\n  border-radius: 4px;\n}\n.n3-breadcrumb a {\n  color: #333;\n}\n.n3-breadcrumb > li {\n  display: inline-block;\n}\n.n3-breadcrumb > li + li:before {\n  padding: 0 5px;\n  color: #ccc;\n  content: \"/\\A0\";\n}\n.n3-breadcrumb > .n3-breadcrumb-active {\n  color: #41cac0;\n}\n.n3-nav {\n  padding-left: 0;\n  margin-bottom: 0;\n  list-style: none;\n}\n.n3-nav li {\n  position: relative;\n  display: block;\n}\n.n3-nav > li > a {\n  position: relative;\n  display: block;\n  padding: 10px 15px;\n  transition: all .3s ease;\n}\n.n3-nav > li > a:hover,\n.n3-nav > li > a:focus {\n  color: #333;\n  text-decoration: none;\n  background: rgba(65, 202, 192, 0.1);\n}\n.n3-nav > li.n3-nav-disabled > a {\n  color: #999;\n}\n.n3-nav > li.n3-nav-tabs-disabled > a:hover,\n.n3-nav > li.n3-nav-tabs-disabled > a:focus {\n  color: #999;\n  text-decoration: none;\n  cursor: not-allowed;\n  background-color: transparent;\n}\n.n3-nav > li > a > img {\n  max-width: none;\n}\n.n3-nav-tabs {\n  border-bottom: 1px solid #ddd;\n  margin-bottom: 15px;\n}\n.n3-nav-tabs > li {\n  float: left;\n  margin-bottom: -1px;\n}\n.n3-nav-tabs > li > a {\n  margin-right: 1px;\n  line-height: 1.42857143;\n  border: 1px solid transparent;\n  border-radius: 4px 4px 0 0;\n}\n.n3-nav-tabs > li > a:hover {\n  border-color: #f9f9f9 #f9f9f9 #ddd;\n}\n.n3-nav-tabs > li.n3-nav-tabs-active > a,\n.n3-nav-tabs > li.n3-nav-tabs-active > a:hover,\n.n3-nav-tabs > li.n3-nav-tabs-active > a:focus {\n  color: #333;\n  cursor: default;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  border-bottom-color: transparent;\n}\n.n3-nav-tabs-justified {\n  width: 100%;\n  border-bottom: 0;\n}\n.n3-nav-tabs-justified > li {\n  float: none!important;\n}\n.n3-nav-tabs-justified > li > a {\n  margin-bottom: 5px;\n  text-align: center;\n  margin-right: 0;\n  border-radius: 4px;\n}\n.n3-nav-tabs-justified li:last-child > a:hover,\n.n3-nav-tabs-justified li.n3-nav-tabsactive:last-child > a {\n  border-radius: 0 4px 0 0 !important;\n}\n.n3-nav-tabs-justified > .n3-dropdown .n3-dropdown-menu {\n  top: auto;\n  left: auto;\n}\n@media (min-width: 768px) {\n  .n3-nav-tabs-justified {\n    border-bottom: 0;\n  }\n  .n3-nav-tabs-justified > li {\n    display: table-cell;\n    width: 1%;\n  }\n  .n3-nav-tabs-justified > li > a {\n    margin-bottom: 0;\n    margin-right: 0;\n    border-bottom: 1px solid #ddd;\n    border-radius: 4px 4px 0 0;\n  }\n  .n3-nav-tabs-justified > .n3-nav-tabs-active > a,\n  .n3-nav-tabs-justified > .n3-nav-tabs-active > a:hover,\n  .n3-nav-tabs-justified > .n3-nav-tabs-active > a:focus {\n    border: 1px solid #ddd;\n    border-bottom-color: #fff;\n  }\n}\n.n3-nav-tabs-pills > li {\n  float: left;\n}\n.n3-nav-tabs-pills > li > a {\n  border-radius: 4px;\n}\n.n3-nav-tabs-pills > li + li {\n  margin-left: 2px;\n}\n.n3-nav-tabs-pills > li.n3-nav-tabs-active > a,\n.n3-nav-tabs-pills > li.n3-nav-tabs-active > a:hover,\n.n3-nav-tabs-pills > li.n3-nav-tabs-active > a:focus {\n  color: #fff;\n  background-color: #41cac0;\n}\n.n3-nav-tabs-stacked > li {\n  float: none;\n}\n.n3-nav-tabs-stacked > li + li {\n  margin-top: 2px;\n  margin-left: 0;\n}\n.n3-tab-content > .n3-tab-pane {\n  display: block;\n  visibility: visible !important;\n}\n.n3-tab-content .n3-nav-tabs-active {\n  display: block;\n  visibility: visible;\n}\n.n3-nav-tabs .n3-dropdown-menu {\n  margin-top: -1px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.n3-nav-tabs-primary {\n  border-bottom: 2px solid #41cac0;\n}\n.n3-nav-tabs-primary li {\n  margin-bottom: 0;\n}\n.n3-nav-tabs-primary .n3-nav-tabs-active > a,\n.n3-nav-tabs-primary .n3-nav-tabs-active > a:hover,\n.n3-nav-tabs-primary .n3-nav-tabs-active > a:focus {\n  background: #41cac0;\n  border-color: #41cac0 !important;\n  color: white;\n  border-bottom: 0;\n}\n.n3-nav-tabs-primary.n3-nav-tabs-stacked {\n  border-bottom: 0;\n  border-right: 2px solid #41cac0;\n}\n.n3-nav-tabs-primary.n3-nav-tabs-stacked > li > a {\n  border-radius: 2px 0 0 2px;\n  margin-right: 0;\n}\n.n3-navbar-collapse {\n  overflow-x: visible;\n  -webkit-overflow-scrolling: touch;\n  border-top: 1px solid transparent;\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);\n}\n.n3-navbar-nav > li:hover {\n  cursor: pointer;\n}\n.n3-navbar-nav > li > a,\n.n3-navbar-nav .n3-sub-nav-trigger {\n  padding: 15px 20px;\n  line-height: 20px;\n  border-bottom: 2px solid transparent;\n}\n.n3-navbar-nav > li .n3-dropdown-menu {\n  top: 96%!important;\n}\n.n3-navbar-nav {\n  margin: 0;\n}\n.n3-navbar-vertical .n3-navbar-nav > li > a,\n.n3-navbar-vertical .n3-navbar-nav .n3-sub-nav-trigger {\n  padding: 10px 20px;\n}\n.n3-navbar-vertical .n3-navbar-nav {\n  float: none;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con {\n  width: 100%;\n  position: relative;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con .n3-sub-nav-trigger:hover {\n  background: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con .n3-sub-nav-fa {\n  float: right;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con > .n3-dropdown-menu {\n  position: relative;\n  width: 100%;\n  box-shadow: none;\n  background: rgba(255, 255, 255, 0.1);\n  margin: 0px;\n  padding: 0px;\n  border: 0px;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con > .n3-dropdown-menu > li {\n  padding: 5px 15px;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con > .n3-dropdown-menu > li:hover {\n  background: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-dropdown-con > .n3-dropdown-menu > li > a:hover {\n  background: transparent;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-navbar-active {\n  border-left: 2px solid #41cac0;\n}\n.n3-navbar-vertical .n3-navbar-nav .n3-navbar-active a,\n.n3-navbar-vertical .n3-navbar-nav .n3-navbar-active a:hover,\n.n3-navbar-vertical .n3-navbar-nav .n3-navbar-active a:focus {\n  color: #41cac0;\n}\n.n3-navbar-vertical .n3-navbar-nav > li {\n  float: none;\n}\n.n3-navbar-horizontal .n3-navbar-nav {\n  float: left;\n}\n.n3-navbar-horizontal .n3-navbar-nav > li {\n  float: left;\n}\n.n3-navbar-horizontal .n3-navbar-nav .n3-dropdown-con:hover {\n  background-color: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-horizontal .n3-navbar-active a,\n.n3-navbar-horizontal .n3-navbar-active a:hover,\n.n3-navbar-horizontal .n3-navbar-active a:focus {\n  color: #41cac0;\n  border-bottom: 2px solid #41cac0;\n}\n.n3-navbar-default {\n  background-color: transparent;\n}\n.n3-navbar-default .n3-navbar-nav > li > a:hover,\n.n3-navbar-default .n3-navbar-nav > li > a:focus {\n  color: #41cac0;\n  background-color: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-default .n3-navbar-nav .n3-navbar-disabled a,\n.n3-navbar-default .n3-navbar-nav .n3-navbar-disabled a:hover,\n.n3-navbar-default .n3-navbar-nav .n3-navbar-disabled a:focus {\n  color: #ddd;\n  cursor: not-allowed;\n  background-color: transparent;\n}\n.n3-navbar-dark {\n  background-color: #333;\n}\n.n3-navbar-dark .n3-navbar-nav > li .n3-sub-nav-fa {\n  color: #fff;\n}\n.n3-navbar-dark .n3-navbar-nav > li a {\n  color: #fff;\n}\n.n3-navbar-dark .n3-navbar-nav > li a:hover,\n.n3-navbar-dark .n3-navbar-nav > li a:focus {\n  background-color: rgba(65, 202, 192, 0.1);\n}\n.n3-navbar-dark .n3-navbar-nav .n3-dropdown-menu {\n  background-color: #333;\n}\n.n3-navbar-dark .n3-navbar-nav .n3-navbar-disabled a,\n.n3-navbar-dark .n3-navbar-nav .n3-navbar-disabled a:hover,\n.n3-navbar-dark .n3-navbar-nav .n3-navbar-disabled a:focus {\n  color: #999;\n  cursor: not-allowed;\n  background-color: transparent;\n}\n.n3-badge {\n  display: inline-block;\n  min-width: 10px;\n  padding: 3px 7px;\n  font-size: 12px;\n  font-weight: bold;\n  line-height: 1;\n  color: #fff;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  background-color: #999;\n  border-radius: 10px;\n}\n.n3-btn .n3-badge {\n  position: relative;\n  top: -1px;\n}\n.n3-btn-xs .n3-badge {\n  top: 0;\n  padding: 1px 5px;\n}\n.n3-nav-pills > .n3-active > a > .n3-badge {\n  color: #41cac0;\n  background-color: #fff;\n}\n.n3-nav-pills > li > a > .n3-badge {\n  margin-left: 3px;\n}\n.n3-close {\n  float: right;\n  font-size: 21px;\n  font-weight: bold;\n  line-height: 1;\n  color: #000;\n  text-shadow: 0 1px 0 #fff;\n  opacity: .2;\n  outline: none;\n}\n.n3-close:hover,\n.n3-close:focus {\n  color: #000;\n  text-decoration: none;\n  cursor: pointer;\n  opacity: .5;\n}\nbutton.n3-close {\n  -webkit-appearance: none;\n  padding: 0;\n  cursor: pointer;\n  background: transparent;\n  border: 0;\n}\n.n3-upload {\n  display: inline-block;\n}\n.n3-upload input[type=\"file\"] {\n  width: 0;\n  height: 0;\n  opacity: 0;\n  overflow: hidden;\n  z-index: -1;\n  outline: none;\n}\n.n3-upload-item-info {\n  position: relative;\n  height: 25px;\n  line-height: 25px;\n  padding: 0 4px;\n  transition: background-color 0.3s ease;\n  zoom: 1;\n}\n.n3-upload-drag-area {\n  outline: none;\n}\n.n3-upload-drag-area span {\n  color: #333;\n  font-size: 14px;\n}\n.n3-upload-drag-icon {\n  position: absolute;\n  color: #41cac0;\n  top: 50%;\n  left: 50%;\n  margin-top: -10px;\n  margin-left: -30px;\n}\n.n3-upload-file-icon {\n  margin-right: 4px;\n  color: #999;\n}\n.n3-upload-file-name {\n  padding-right: 20px;\n}\n.n3-upload-del-info {\n  position: absolute;\n  right: 5px;\n  top: 0;\n  color: #999;\n  line-height: 25px;\n  cursor: pointer;\n}\n.n3-upload-item-progress {\n  padding: 0px;\n  margin: 5px;\n  font-size: 12px;\n}\n.n3-upload-item-progress .n3-upload-hide {\n  display: none;\n}\n.n3-upload-progress {\n  display: inline-block;\n}\n.n3-upload-progress-line {\n  position: relative;\n  width: 100%;\n  font-size: 12px;\n  zoom: 1;\n}\n.n3-upload-progress-inner {\n  width: 100%;\n  background-color: #f9f9f9;\n  vertical-align: middle;\n}\n.n3-upload-progress-bg {\n  height: 3px;\n  background-color: #41cac0;\n  -webkit-transition: all .3s linear 0s;\n  transition: all .3s linear 0s;\n  border-radius: 100px;\n}\n.n3-upload-progress-status-success .at-progress-bg {\n  background-color: #2ecc71;\n}\n.n3-upload-drag-container {\n  position: relative;\n  padding: 20px 0;\n  cursor: pointer;\n  border: 1px dashed #ccc;\n  border-radius: 6px;\n  text-align: center;\n  transition: border-color 0.3s ease;\n}\n.n3-upload-drag-container.n3-upload-is-dragover {\n  border-color: #41cac0;\n}\n.n3-upload-drag-container:hover {\n  border-color: #999;\n  background: #f9f9f9;\n}\nhtml {\n  font-size: 10px;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;\n  -webkit-text-size-adjust: 100%;\n  -ms-text-size-adjust: 100%;\n}\nbody {\n  margin: 0;\n  font-size: 14px;\n  line-height: 1.42857143;\n  color: #333;\n  -webkit-font-smoothing: antialiased;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  vertical-align: baseline;\n}\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n[hidden],\ntemplate {\n  display: none;\n}\na {\n  background-color: transparent;\n  color: #41cac0;\n  text-decoration: none;\n}\na:active,\na:hover {\n  outline: 0;\n  color: #39b2a9;\n  text-decoration: none;\n}\na:hover {\n  cursor: pointer;\n}\nabbr[title] {\n  border-bottom: 1px dotted;\n}\nb,\nstrong {\n  font-weight: bold;\n}\ndfn {\n  font-style: italic;\n}\nh1 {\n  margin: .67em 0;\n  font-size: 2em;\n}\nmark {\n  background: rgba(65, 202, 192, 0.1);\n  padding: .2em;\n}\nsmall {\n  font-size: 80%;\n}\nsub,\nsup {\n  position: relative;\n  font-size: 75%;\n  line-height: 0;\n  vertical-align: baseline;\n}\nsup {\n  top: -0.5em;\n}\nsub {\n  bottom: -0.25em;\n}\nimg {\n  border: 0;\n}\nsvg:not(:root) {\n  overflow: hidden;\n}\nfigure {\n  margin: 1em 40px;\n}\nhr {\n  height: 0;\n  box-sizing: content-box;\n  margin-top: 20px;\n  margin-bottom: 20px;\n  border: 0;\n  border-top: 1px solid #f9f9f9;\n}\npre {\n  overflow: auto;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  margin: 0;\n  font: inherit;\n  color: inherit;\n}\nbutton {\n  overflow: visible;\n}\nbutton,\nselect {\n  text-transform: none;\n}\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer;\n}\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  padding: 0;\n  border: 0;\n}\ninput {\n  line-height: normal;\n}\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 4px 0 0;\n  margin-top: 1px \\9;\n  line-height: normal;\n}\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\ninput[type=\"search\"] {\n  box-sizing: border-box;\n  -webkit-appearance: textfield;\n}\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\ninput[type=\"file\"] {\n  display: block;\n}\ninput[type=\"range\"] {\n  display: block;\n  width: 100%;\n}\nselect[multiple],\nselect[size] {\n  height: auto;\n}\ninput[type=\"file\"]:focus,\ninput[type=\"radio\"]:focus,\ninput[type=\"checkbox\"]:focus {\n  outline: thin dotted;\n  outline: 5px auto -webkit-focus-ring-color;\n  outline-offset: -2px;\n}\nfieldset {\n  min-width: 0;\n  padding: 0;\n  margin: 0;\n  border: 0;\n}\nlegend {\n  display: block;\n  width: 100%;\n  padding: 0;\n  margin-bottom: 20px;\n  font-size: 21px;\n  line-height: inherit;\n  color: #333;\n  border: 0;\n  border-bottom: 1px solid #ddd;\n}\ntextarea {\n  overflow: auto;\n}\noptgroup {\n  font-weight: bold;\n}\ntable {\n  border-spacing: 0;\n  border-collapse: collapse;\n}\ntd,\nth {\n  padding: 0;\n}\nul li {\n  list-style: none;\n}\nul {\n  padding-left: 0px;\n}\n* {\n  box-sizing: border-box;\n}\n*:before,\n*:after {\n  box-sizing: border-box;\n}\ninput,\nbutton,\nselect,\ntextarea {\n  font-family: inherit;\n  font-size: inherit;\n  line-height: inherit;\n}\nfigure {\n  margin: 0;\n}\nimg {\n  vertical-align: middle;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: inherit;\n  font-weight: 500;\n  line-height: 1.1;\n  color: inherit;\n}\nh1 small,\nh2 small,\nh3 small,\nh4 small,\nh5 small,\nh6 small {\n  font-weight: normal;\n  line-height: 1;\n  color: #999;\n}\nh1,\nh2,\nh3 {\n  margin-top: 20px;\n  margin-bottom: 10px;\n}\nh1 small,\nh2 small,\nh3 small {\n  font-size: 65%;\n}\nh4,\nh5,\nh6 {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\nh4 small,\nh5 small,\nh6 small {\n  font-size: 75%;\n}\nh1 {\n  font-size: 36px;\n}\nh2 {\n  font-size: 30px;\n}\nh3 {\n  font-size: 24px;\n}\nh4 {\n  font-size: 18px;\n}\nh5 {\n  font-size: 14px;\n}\nh6 {\n  font-size: 12px;\n}\np {\n  margin: 0 0 10px;\n}\nul ul,\nol ul,\nul ol,\nol ol {\n  margin-bottom: 0;\n}\ndl {\n  margin-top: 0;\n  margin-bottom: 20px;\n}\ndt,\ndd {\n  line-height: 1.42857143;\n}\ndt {\n  font-weight: bold;\n}\ndd {\n  margin-left: 0;\n}\nabbr[title],\nabbr[data-original-title] {\n  cursor: help;\n  border-bottom: 1px dotted #999;\n}\nblockquote {\n  padding: 10px 20px;\n  margin: 0 0 20px;\n  font-size: 17.5px;\n  border-left: 5px solid #f9f9f9;\n}\nblockquote p:last-child,\nblockquote ul:last-child,\nblockquote ol:last-child {\n  margin-bottom: 0;\n}\nblockquote footer,\nblockquote small {\n  display: block;\n  font-size: 80%;\n  line-height: 1.42857143;\n  color: #999;\n}\nblockquote footer:before,\nblockquote small:before {\n  content: '\\2014   \\A0';\n}\nblockquote.pull-right {\n  padding-right: 15px;\n  padding-left: 0;\n  text-align: right;\n  border-right: 5px solid #f9f9f9;\n  border-left: 0;\n}\nblockquote.pull-right footer:before,\nblockquote.pull-right small:before {\n  content: '';\n}\nblockquote.pull-right footer:after,\nblockquote.pull-right small:after {\n  content: '\\A0   \\2014';\n}\naddress {\n  margin-bottom: 20px;\n  font-style: normal;\n  line-height: 1.42857143;\n}\ncode,\nkbd,\npre,\nsamp {\n  font-family: Menlo, Monaco, Consolas, \"Courier New\", monospace;\n}\ncode {\n  padding: 2px 4px;\n  font-size: 90%;\n  background-color: #f9f9f9;\n  border-radius: 4px;\n}\nkbd {\n  padding: 2px 4px;\n  font-size: 90%;\n  color: #fff;\n  background-color: #333;\n  border-radius: 3px;\n  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);\n}\nkbd kbd {\n  padding: 0;\n  font-size: 100%;\n  font-weight: bold;\n  box-shadow: none;\n}\npre {\n  display: block;\n  padding: 9.5px;\n  margin: 0 0 10px;\n  font-size: 13px;\n  line-height: 1.42857143;\n  color: #333;\n  word-break: break-all;\n  word-wrap: break-word;\n  background-color: #f9f9f9;\n  border-radius: 4px;\n}\npre code {\n  padding: 0;\n  font-size: inherit;\n  color: inherit;\n  white-space: pre-wrap;\n  background-color: transparent;\n  border-radius: 0;\n}\ntable {\n  background-color: transparent;\n}\ncaption {\n  padding-top: 6px 8px;\n  padding-bottom: 6px 8px;\n  color: #999;\n  text-align: left;\n}\nth {\n  text-align: left;\n}\nlabel {\n  display: inline-block;\n  max-width: 100%;\n  margin-bottom: 5px;\n}\noutput {\n  display: block;\n  padding-top: 7px;\n  font-size: 14px;\n  line-height: 1.42857143;\n}\n.clearfix:before,\n.clearfix:after {\n  display: table;\n  content: \" \";\n}\n.clearfix:after {\n  clear: both;\n}\n.center-block {\n  display: block;\n  margin-right: auto;\n  margin-left: auto;\n}\n.pull-right {\n  float: right !important;\n}\n.pull-left {\n  float: left !important;\n}\n.hide {\n  display: none !important;\n}\n.show {\n  display: block !important;\n}\n.pointer:hover {\n  cursor: pointer;\n}\n.invisible {\n  visibility: hidden;\n}\n.text-hide {\n  font: 0/0 a;\n  color: transparent;\n  text-shadow: none;\n  background-color: transparent;\n  border: 0;\n}\n.hidden {\n  display: none !important;\n  visibility: hidden !important;\n}\n.affix {\n  position: fixed;\n}\n.inline {\n  display: inline-block;\n}\n.list-unstyled {\n  padding-left: 0;\n  list-style: none;\n}\n.list-inline {\n  padding-left: 0;\n  margin-left: -5px;\n  list-style: none;\n}\n.list-inline > li {\n  display: inline-block;\n  padding-right: 5px;\n  padding-left: 5px;\n}\n.initialism {\n  font-size: 90%;\n  text-transform: uppercase;\n}\n.text-left {\n  text-align: left;\n}\n.text-right {\n  text-align: right;\n}\n.text-center {\n  text-align: center;\n}\n.text-justify {\n  text-align: justify;\n}\n.text-nowrap {\n  white-space: nowrap;\n}\n.text-lowercase {\n  text-transform: lowercase;\n}\n.text-uppercase {\n  text-transform: uppercase;\n}\n.text-capitalize {\n  text-transform: capitalize;\n}\n.text-muted {\n  color: #ccc;\n}\n.text-primary {\n  color: #41cac0;\n}\na.text-primary:hover {\n  color: #39b2a9;\n}\n.text-success {\n  color: #2ecc71;\n}\na.text-success:hover {\n  color: #29b464;\n}\n.text-info {\n  color: #58c9f3;\n}\na.text-info:hover {\n  color: #38bef0;\n}\n.text-warning {\n  color: #f1c500;\n}\na.text-warning:hover {\n  color: #dbb509;\n}\n.text-danger {\n  color: #ff6c60;\n}\na.text-danger:hover {\n  color: #e74c3c;\n}\n.bg-primary {\n  color: #fff;\n  background-color: #41cac0;\n}\na.bg-primary:hover {\n  background-color: #39b2a9;\n}\n.bg-success {\n  background-color: #2ecc71;\n}\na.bg-success:hover {\n  background-color: #29b464;\n}\n.bg-info {\n  background-color: #58c9f3;\n}\na.bg-info:hover {\n  background-color: #38bef0;\n}\n.bg-warning {\n  background-color: #f1c500;\n}\na.bg-warning:hover {\n  background-color: #dbb509;\n}\n.bg-danger {\n  background-color: #ff6c60;\n}\na.bg-danger:hover {\n  background-color: #e74c3c;\n}\n", ""]);
 	
 	// exports
 

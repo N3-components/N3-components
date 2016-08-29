@@ -1,0 +1,157 @@
+@import "define.less";
+
+.clearfix:before,
+.clearfix:after{
+  display: table;
+  content: " ";
+}
+.clearfix:after{
+  clear: both;
+}
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.pointer:hover{
+  cursor: pointer;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+.affix {
+  position: fixed;
+}
+.inline{
+  display: inline-block;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-muted {
+  color: @grayColor;
+}
+.text-primary {
+  color: @primaryColor;
+}
+a.text-primary:hover {
+  color: @primaryColorhover;
+}
+.text-success {
+  color: @successColor;
+}
+a.text-success:hover {
+  color: @successColorhover;
+}
+.text-info {
+  color: @infoColor;
+}
+a.text-info:hover {
+  color: @infoColorhover;
+}
+.text-warning {
+  color: @warningColor;
+}
+a.text-warning:hover {
+  color: @warningColorhover;
+}
+.text-danger {
+  color: @dangerColor;
+}
+a.text-danger:hover {
+  color: @dangerColorhover;
+}
+.bg-primary {
+  color: @whiteColor;
+  background-color: @primaryColor;
+}
+a.bg-primary:hover {
+  background-color: @primaryColorhover;
+}
+.bg-success {
+  background-color: @successColor;
+}
+a.bg-success:hover {
+  background-color: @successColorhover;
+}
+.bg-info {
+  background-color: @infoColor;
+}
+a.bg-info:hover {
+  background-color: @infoColorhover;
+}
+.bg-warning {
+  background-color: @warningColor;
+}
+a.bg-warning:hover {
+  background-color: @warningColorhover;
+}
+.bg-danger {
+  background-color: @dangerColor;
+}
+a.bg-danger:hover {
+  background-color: @dangerColorhover;
+}

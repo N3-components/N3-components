@@ -64,19 +64,19 @@
       <tbody>
         <tr>
           <td>size</td>
-          <td>String</td>
+          <td><code>String</code></td>
           <td></td>
           <td> <code>lg</code> <code></code> <code>sm</code> <code>xs</code></td>
         </tr>
         <tr>
           <td>loading</td>
-          <td>Boolean</td>
+          <td><code>Boolean</code></td>
           <td></td>
-          <td>加载状态</td>
+          <td><code>加载状态</code></td>
         </tr>
         <tr>
           <td>disabled</td>
-          <td>Boolean</td>
+          <td><code>Boolean</code></td>
           <td></td>
           <td>禁用状态</td>
         </tr>
@@ -88,7 +88,7 @@
         </tr>
         <tr>
           <td>badge</td>
-          <td><code>String</code><code>Number</code></td>
+          <td><code>String</code>  <code>Number</code></td>
           <td></td>
           <td>徽标</td>
         </tr>
@@ -100,7 +100,7 @@
         </tr>
         <tr>
           <td>type</td>
-          <td><code>String</code>, one of <code>default</code>
+          <td><code>String</code>, 如:  <code>default</code>
           <code>primary</code>
           <code>danger</code>
           <code>info</code>

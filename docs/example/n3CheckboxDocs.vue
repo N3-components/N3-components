@@ -56,7 +56,7 @@ Checkbox value: {{checkboxValue | json}}
         </tr>
         <tr>
           <td>color</td>
-          <td><code>String</code>, one of <code>default</code>
+          <td><code>String</code>, 如:  <code>default</code>
           <code>primary</code>
           <code>danger</code>
           <code>info</code>
@@ -85,7 +85,8 @@ Checkbox value: {{checkboxValue | json}}
         </tr>
       </tbody>
     </table>
-
+    <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+    
     <h2>checkbox</h2>
     <table class="table table-bordered">
       <thead>

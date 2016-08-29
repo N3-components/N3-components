@@ -2,15 +2,12 @@
     <div class="bs-docs-section" id="表单验证"  >
         <h1 class="page-header"><a href="#表单验证" class="anchor">表单验证</a><span class="author"> </span></h1>
         <div class="bs-example">
-            <pre><code>{{result | json}}</code></pre>
-
-        	<n3-form  :validate="validate" :result.sync="result">
+        	<n3-form  :validate="validate" :result.sync="result" >
                 <n3-form-item
                     need
                     label="姓名"
                     :label-col="3">   
                 <n3-input
-                    :valid-status="success"
                     name="name"
                     :value.sync="model.name" 
                     :rules="[{type:'required'}]"
@@ -130,6 +127,16 @@
                       :rules="[{type:'required'}]">
                   </n3-multiple-input>
                 </n3-form-item>
+                <n3-form-item
+                    need
+                    label="想说的话"
+                    :label-col="3">   
+                  <n3-textarea
+                      name="suggestion"
+                      :value.sync = "model.suggestion"
+                      :rules="[{type:'required'}]">
+                  </n3-textarea>
+                </n3-form-item>
 
                  <n3-form-item>
                      <n3-button type="primary" @click="submit" >提交</n3-button>
@@ -137,7 +144,7 @@
                 </n3-form-item>
             </n3-form>
         	<pre><code class="language-markup"><script type="language-mark-up">
-        		<n3-form :validate="validate" :result.sync="result">
+        		<n3-form  :validate="validate" :result.sync="result">
                 <n3-form-item
                     need
                     label="姓名"
@@ -181,7 +188,7 @@
                     :rules="[{type:'required'}]">
                 </n3-datepicker>
                 </n3-form-item>
-                 <n3-form-item
+                <n3-form-item
                     need
                     label="学校"
                     :label-col="3">   
@@ -192,6 +199,86 @@
                     :rules="[{type:'required'}]">
                 </n3-typeahead>
                 </n3-form-item>
+                <n3-form-item
+                    need
+                    label="爱好"
+                    :label-col="3">   
+                <n3-checkbox-group
+                    name="hobby"
+                    :value.sync = "model.hobby"
+                    :rules="[{type:'required'}]">
+                    <n3-checkbox value="0">看书</n3-checkbox>
+                    <n3-checkbox value="1">运动</n3-checkbox>
+                    <n3-checkbox value="2">旅行</n3-checkbox>
+                </n3-checkbox-group>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="性别"
+                    :label-col="3">   
+                <n3-radio-group
+                    name="sex"
+                    :value.sync = "model.sex"
+                    :rules="[{type:'required'}]">
+                    <n3-radio value="0">男</n3-radio>
+                    <n3-radio value="1">女</n3-radio>
+                </n3-radio-group>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="专业"
+                    :label-col="3">   
+                <n3-select
+                    name="sex"
+                    :options='profession'
+                    :value.sync = "model.profession"
+                    :rules="[{type:'required'}]">
+                </n3-select>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="级别"
+                    :label-col="3">   
+                  <n3-slider
+                      name="level"
+                      :value.sync = "model.level"
+                      :rules="[{type:'required'}]">
+                  </n3-slider>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="开启状态"
+                    :label-col="3">   
+                  <n3-switch
+                      name="state"
+                      :value.sync = "model.state"
+                      :rules="[{type:'required'}]">
+                  </n3-switch>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="喜欢的明星"
+                    :label-col="3">   
+                  <n3-multiple-input
+                      name="star"
+                      :value.sync = "model.star"
+                      :rules="[{type:'required'}]">
+                  </n3-multiple-input>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="想说的话"
+                    :label-col="3">   
+                  <n3-textarea
+                      name="suggestion"
+                      :value.sync = "model.suggestion"
+                      :rules="[{type:'required'}]">
+                  </n3-textarea>
+                </n3-form-item>
 
                  <n3-form-item>
                      <n3-button type="primary" @click="submit" >提交</n3-button>
@@ -201,13 +288,28 @@
 
             new Vue({
               data: {
+                profession: [{
+                  value: '学生',
+                  label: '学生'
+                }, {
+                  value: '工程师',
+                  label: '工程师'
+                }, {
+                  value: '医生',
+                  label: '医生'
+                }],
                 model: {
                   name: '',
                   age: '',
                   address: [],
                   birthday: '',
                   sex: '',
-                  school: ''
+                  school: '',
+                  hobby: [],
+                  profession: '',
+                  state: false,
+                  star: [],
+                  suggestion: ''
                 },
                 schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],
                 sexOptions: [{
@@ -282,7 +384,7 @@
             <tbody>
               <tr>
                 <td>type</td>
-                <td><code>String</code> one of <code>horizontal</code><code>inline</code></td>
+                <td><code>String</code> 如:  <code>horizontal</code><code>inline</code></td>
                 <td>horizontal</td>
                 <td>布局方式</td>
               </tr>
@@ -418,7 +520,7 @@
                 <td>hasFeedback</td>
                 <td><code>Boolean</code></td>
                 <td></td>
-                <td>示范显示状态icon</td>
+                <td>是否显示状态icon</td>
               </tr>
             </tbody>
           </table>
@@ -449,7 +551,8 @@ export default {
         hobby: [],
         profession: '',
         state: false,
-        star: []
+        star: [],
+        suggestion: ''
       },
       schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],
       sexOptions: [{
@@ -501,11 +604,8 @@ export default {
     },
     submit () {
       this.validate = true
-
-      this.$nextTick(() => {
-        console.log(this.result.isvalid)
-      })
+      console.log(this.result)
     }
-  },
+  }
 }
 </script>

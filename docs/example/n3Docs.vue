@@ -56,6 +56,8 @@ import n3TimepickerDocs from './n3TimepickerDocs.vue'
 import n3DatetimepickerDocs from './n3DatetimepickerDocs.vue'
 import n3DropdownDocs from './n3DropdownDocs.vue'
 import n3ModalDocs from './n3ModalDocs.vue'
+import n3InputDocs from './n3InputDocs.vue'
+import n3TextareaDocs from './n3TextareaDocs.vue'
 import n3NavDocs from './n3NavDocs.vue'
 import n3PopoverDocs from './n3PopoverDocs.vue'
 import n3ProgressbarDocs from './n3ProgressbarDocs.vue'
@@ -104,7 +106,9 @@ export default{
                 {label: '加载提示', value: 'n3LoadingDocs'}]},
 
         '表单': {show: true,
-                list: [{label: '级联选择', value: 'n3CascaderDocs'},
+                list: [{label: '输入框', value: 'n3InputDocs'},
+                {label: '文本框', value: 'n3TextareaDocs'},
+                {label: '级联选择', value: 'n3CascaderDocs'},
                 {label: '单选框', value: 'n3RadioDocs'},
                 {label: '多选框', value: 'n3CheckboxDocs'},
                 {label: '选择框', value: 'n3SelectDocs'},
@@ -212,6 +216,8 @@ export default{
     n3AsideDocs,
     n3ToastDocs,
     n3CarouselDocs,
+    n3InputDocs,
+    n3TextareaDocs,
     n3ButtonsDocs,
     n3DatepickerDocs,
     n3TimepickerDocs,

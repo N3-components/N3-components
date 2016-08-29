@@ -54,7 +54,7 @@ Radio value: {{radioValue}}
         </tr>
         <tr>
           <td>color</td>
-          <td><code>String</code>, one of <code>default</code>
+          <td><code>String</code>, 如:  <code>default</code>
           <code>primary</code>
           <code>danger</code>
           <code>info</code>
@@ -65,24 +65,25 @@ Radio value: {{radioValue}}
         </tr>
         <tr>
           <td>options</td>
-          <td>Array</td>
+          <td><code>Array</code></td>
           <td></td>
           <td><code>[{value:'a',label:'a'}]</code></td>
         </tr>
          <tr>
           <td>type</td>
-          <td>String</td>
+          <td><code>String</code></td>
           <td></td>
           <td>radio,button(radio) 使用options时起作用</td>
         </tr>
         <tr>
           <td>on-change</td>
-          <td>Function</td>
+          <td><code>Function</code></td>
           <td></td>
           <td>值变化时调用</td>
         </tr>
       </tbody>
     </table>
+    <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 
     <h2>radio</h2>
     <table class="table table-bordered">
@@ -97,19 +98,19 @@ Radio value: {{radioValue}}
       <tbody>
         <tr>
           <td>value</td>
-          <td>String,Number</td>
+          <td><code>String</code>  <code>Number</code></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
           <td>disabled</td>
-          <td>Boolean</td>
+          <td><code>Boolean</code></td>
           <td>false</td>
           <td></td>
         </tr>
         <tr>
           <td>checked</td>
-          <td>Boolean</td>
+          <td><code>Boolean</code></td>
           <td>false</td>
           <td>初始化选中</td>
         </tr>

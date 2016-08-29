@@ -71,7 +71,13 @@
           <td><code>false</code></td>
           <td>控制当一个面板被打开时，其他面板是否关闭</td>
         </tr>
-         <tr>
+        <tr>
+          <td>effect</td>
+          <td><code>String</code></td>
+          <td>collapse</td>
+          <td>切换动画 注意：加载动态内容时请不要使用collapse，建议 fadeDown</td>
+        </tr>
+        <tr>
           <td>on-change</td>
           <td><code>Function</code></td>
           <td></td>

@@ -4,6 +4,7 @@
     <template v-for="(index,item) in value" track-by="$index">
         <template v-if="index == position">
             <n3-typeahead
+              :style="{margin:'0px 5px'}"
               :query.sync="query" 
               :width='inputWidth'
               :items="items"
@@ -14,6 +15,7 @@
               :match-case="matchCase"
               :limit="limit"
               :render="render"
+              :focused.sync="focused"
               :data="data"
               @keydown.delete="del" 
               @keydown.left="left" 
@@ -24,11 +26,15 @@
          <template v-else>
             <span class="{{prefixCls}}-multiple-input-space"  @click="setIndex(index)"></span>
         </template>
-        <span class="{{prefixCls}}-multiple-input-m-tag" >{{{format.call(this._context,item,index)}}}</span>
+        <span class="{{prefixCls}}-multiple-input-m-tag" >
+        {{{format.call(this._context,item,index)}}}
+        <n3-icon type="times" class="{{prefixCls}}-multiple-close" @click="clickDel(index)"></n3-icon>
+        </span>
     </template>
 
     <template v-if="value && value.length == position">
       <n3-typeahead
+        :style="{margin:'0px 5px'}"
         :query.sync="query" 
         :width='inputWidth'
         :items="items"
@@ -39,6 +45,7 @@
         :match-case="matchCase"
         :limit="limit"
         :render="render"
+        :focused.sync="focused"
         :data="data"
         @keydown.delete="del" 
         @keydown.left="left" 
@@ -53,6 +60,7 @@
    <validate
     :name="name"
     :rules="rules"
+    :valid-status.sync="validStatus"
     :custom-validate="customValidate" 
     :value="value"
     :results.sync="validateResults">
@@ -63,6 +71,7 @@
 <script>
 import type from 'get-type'
 import n3Typeahead from './n3Typeahead'
+import n3Icon from './n3Icon'
 import valMixin from './valMixin'
 import validate from './validate'
 
@@ -80,13 +89,13 @@ export default {
     },
     format: {
       type: Function,
-      default (item) {
+      default (item, index) {
         return item
       }
     },
     width: {
       type: String,
-      default: '100%'
+      default: '220px'
     },
     inputWidth: {
       type: String,
@@ -152,6 +161,7 @@ export default {
   },
   data () {
     return {
+      focused: false,
       empty: true,
       stopSecond: false
     }
@@ -160,11 +170,6 @@ export default {
     this.$nextTick(function () {
       this._context.$compile(this.$el)
     })
-  },
-  events: {
-    'n3MultipleInput@enter': function () {
-      this.add()
-    }
   },
   watch: {
     query (val) {
@@ -191,18 +196,22 @@ export default {
 
       klass[prefixCls + '-form-control'] = true
       klass[prefixCls + '-multiple-input'] = true
-      klass[prefixCls + '-padding-left-none'] = value && value.length > 0
 
       return klass
     }
   },
   components: {
+    n3Icon,
     n3Typeahead,
     validate
   },
   methods: {
     focus () {
-      this.$broadcast('n3Input@focus')
+      let self = this
+      self.focused = false
+      setTimeout(() => {
+        self.focused = true
+      },100)
     },
     setIndex (index) {
       if (this.query) {
@@ -234,6 +243,11 @@ export default {
           this.position++
         }
       }
+    },
+    clickDel (index) {
+      let value = this.value.slice(0)
+      value.splice(index, 1)
+      this.value = value
     },
     del () {
       if (this.empty && this.position > 0) {

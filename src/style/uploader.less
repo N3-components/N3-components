@@ -1,0 +1,119 @@
+@import "define.less";
+
+.@{prefix-cls}-upload {
+  display: inline-block;
+
+  input[type="file"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+    outline: none;
+  }
+}
+
+.@{prefix-cls}-upload-item-info {
+  position: relative;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 4px;
+  transition: background-color .3s ease;
+  zoom: 1;
+}
+
+.@{prefix-cls}-upload-drag-area {
+  outline: none;
+
+  span {
+    color: @fontColor;
+    font-size: 14px;
+  }
+}
+
+.@{prefix-cls}-upload-drag-icon {
+  position: absolute;
+  color:@primaryColor;
+  top:50%;
+  left:50%;
+  margin-top: -10px;
+  margin-left: -30px;
+}
+
+.@{prefix-cls}-upload-file-icon {
+  margin-right: 4px;
+  color: @weightGrayColor;
+}
+
+.@{prefix-cls}-upload-file-name {
+  padding-right: 20px;
+}
+
+.@{prefix-cls}-upload-del-info {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: @weightGrayColor;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.@{prefix-cls}-upload-item-progress {
+  padding: 0px;
+  margin: 5px;
+  font-size: 12px;
+
+  .@{prefix-cls}-upload-hide {
+    display: none;
+  }
+}
+
+.@{prefix-cls}-upload-progress {
+  display: inline-block;
+}
+
+.@{prefix-cls}-upload-progress-line {
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  zoom: 1;
+}
+
+.@{prefix-cls}-upload-progress-inner {
+  width: 100%;
+  background-color: @lightColor;
+  vertical-align: middle;
+}
+
+.@{prefix-cls}-upload-progress-bg {
+  height: 3px;
+  background-color: @primaryColor;
+  -webkit-transition: all .3s linear 0s;
+  transition: all .3s linear 0s;
+  border-radius: 100px;
+}
+
+.@{prefix-cls}-upload-progress-status-success {
+  .at-progress-bg {
+    background-color: @successColor;
+  }
+}
+
+.@{prefix-cls}-upload-drag-container {
+  position: relative;
+  padding: 20px 0;
+  cursor: pointer;
+  border: 1px dashed @grayColor;
+  border-radius: 6px;
+  text-align: center;
+  transition: border-color .3s ease;
+
+  &.@{prefix-cls}-upload-is-dragover {
+    border-color: @primaryColor;
+  }
+
+  &:hover {
+    border-color: @weightGrayColor;
+    background: @lightColor;
+  }
+}
