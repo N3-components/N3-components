@@ -8,6 +8,11 @@ export default {
     },
     rules: {
       type: Array
+    },
+    validStatus: {
+      type: String,
+      twoway: true,
+      default: ''
     }
   },
   data () {

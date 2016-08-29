@@ -146,8 +146,6 @@ export default {
       this.getDateRange()
     },
     value (val) {
-      this.$dispatch('change', val)
-
       if (type.isFunction(this.onChange)) {
         this.onChange(this.value)
       }

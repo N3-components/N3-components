@@ -210,7 +210,7 @@
         </tr>
         <tr>
           <td>type</td>
-          <td><code>String</code>, one of
+          <td><code>String</code>, 如: 
           <code>default</code>
           <code>success</code>
           <code>info</code>
@@ -239,7 +239,7 @@
         </tr>
         <tr>
           <td>placement</td>
-          <td><code>String</code>. one of <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>
+          <td><code>String</code>. 如:  <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>
           <td></td>
           <td>组件位置</td>
         </tr>

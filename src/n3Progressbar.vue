@@ -1,7 +1,7 @@
 <template>
 	<div 
 	  :class="classObj"
-	  :style="{width: now + '%'}">
+	  :style="{width: now + '%',height: height}">
 	  {{label ? now + '%':'' }}
 	</div>
 </template>
@@ -9,6 +9,10 @@
 <script>
   export default {
     props: {
+      height: {
+        type: String,
+        default: '20px'
+      },
       now: {
         type: Number,
         require: true

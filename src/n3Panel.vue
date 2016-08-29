@@ -11,7 +11,7 @@
       class="{{prefixCls}}-panel-collapse"
       v-el:panel
       v-show="isOpen"
-      transition="fadeDown">
+      :transition="$parent.effect">
       <div class="{{prefixCls}}-panel-body">
         <slot></slot>
       </div>
@@ -49,8 +49,7 @@ export default {
   methods: {
     toggleIsOpen () {
       this.isOpen = !this.isOpen
-      this.$dispatch('isOpenEvent', this)
-      this.$dispatch('toggle', this.isOpen)
+      this.$dispatch('n3@paneltoggle', this)
 
       if (type.isFunction(this.onChange)) {
         this.onChange({

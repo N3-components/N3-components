@@ -15,7 +15,7 @@ export default{
     },
     color: {
       type: String,
-      default: '#41cac0'
+      default: '#333'
     },
     content: {
     },

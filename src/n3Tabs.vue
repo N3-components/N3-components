@@ -86,7 +86,11 @@ export default {
       return klass
     },
     handleTabListClick (index, el) {
-      if (!el.disabled) this.activeIndex = index
+      if (!el.disabled) {
+        this.activeIndex = index
+      } else {
+        return
+      }
       if (type.isFunction(this.onChange)) {
         this.onChange(index, el)
       }

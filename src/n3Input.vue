@@ -1,11 +1,11 @@
 <template>
 <div :class="classObj" >
   <input  
+   class="{{prefixCls}}-form-control"  
    :style="{'width':width}"
    :readonly="readonly"
    :disabled="disabled"
-   class="{{prefixCls}}-form-control"  
-   placeholder="{{placeholder}}" 
+   :placeholder="placeholder" 
    @blur="blur"
    @focus="focus"
    v-focus-model="focused" 
@@ -73,9 +73,7 @@ export default {
   },
   data () {
     return {
-      focused: false,
-      validateResults: {},
-      validStatus: ''
+      validateResults: {}
     }
   },
   computed: {
@@ -91,12 +89,6 @@ export default {
       klass['inline'] = true
 
       return klass
-    }
-  },
-
-  events: {
-    'n3Input@focus' () {
-      this.focused = true
     }
   },
 

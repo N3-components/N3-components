@@ -33,31 +33,25 @@
     <tbody>
       <tr>
         <td>placement</td>
-        <td>String</td>
-        <td><code>String</code>. one of <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code>默认在页面中间</td>
+        <td><code>String</code></td>
+        <td><code>String</code>. 如:  <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code>默认在页面中间</td>
         <td>位置</td>
       </tr>
        <tr>
         <td>type</td>
-        <td>String</td>
+        <td><code>String</code></td>
         <td>default</td>
         <td>颜色</td>
       </tr>
        <tr>
         <td>duration</td>
-        <td>Number</td>
+        <td><code>Number</code></td>
         <td>3000</td>
         <td>0为不消失</td>
       </tr>
       <tr>
-        <td>width</td>
-        <td>String</td>
-        <td></td>
-        <td>宽度</td>
-      </tr>
-      <tr>
         <td>close-on-click</td>
-        <td>Boolean</td>
+        <td><code>Boolean</code></td>
         <td>true</td>
         <td>点击消失</td>
       </tr>

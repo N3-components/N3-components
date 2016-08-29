@@ -93,7 +93,7 @@
        <tr>
         <td>width</td>
         <td><code>String</code></td>
-        <td>100%</td>
+        <td>220px</td>
         <td>组件宽度</td>
       </tr>
        <tr>
@@ -119,6 +119,7 @@
       </tr>
     </tbody>
   </table>
+  <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
   </div>
 </template>
 
@@ -149,19 +150,8 @@ export default {
     },
     format (item, index) {
       let content = typeof item === 'string' ? item : item.formatted_address
-      return `<label class="m-tag">${content}</label>`
+      return content
     }
   }
 }
 </script>
-<style>
-.m-tag{
-  padding: 0px 5px;
-  height: 23px;
-  line-height: 23px;
-  margin-bottom: 0px;
-  background: #eee;
-  border-radius: 4px;
-}
-
-</style>

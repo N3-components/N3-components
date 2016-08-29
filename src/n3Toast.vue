@@ -3,7 +3,6 @@
     v-el:dom
     :class="classObj"
 		transition="fade"
-    :style="{width:width}"
 		@click="handleClick"
 		v-if="show">
 		<h5>{{text}}</h5>

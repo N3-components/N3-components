@@ -111,7 +111,7 @@
     <tbody>
       <tr>
         <td>trigger</td>
-        <td><code>String</code>, one of <code>click</code>
+        <td><code>String</code>, 如:  <code>click</code>
         <code>focus</code>
         <code>hover</code></td>
         <td><code>click</code></td>
@@ -119,7 +119,7 @@
       </tr>
       <tr>
         <td>effect</td>
-        <td><code>String</code>, one of <code>scale</code> <code>fade</code></td>
+        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>
         <td><code>scale</code></td>
         <td></td>
       </tr>
@@ -137,7 +137,7 @@
       </tr>
       <tr>
         <td>placement</td>
-        <td><code>String</code>, one of <code>top</code>
+        <td><code>String</code>, 如:  <code>top</code>
         <code>left</code>
         <code>right</code>
         <code>bottom</code></td>
@@ -160,7 +160,7 @@
     <tbody>
       <tr>
         <td>effect</td>
-        <td><code>String</code>, one of <code>scale</code> <code>fade</code></td>
+        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>
         <td><code>fade</code></td>
         <td></td>
       </tr>
@@ -172,7 +172,7 @@
       </tr>
       <tr>
         <td>placement</td>
-        <td><code>String</code>, one of <code>top</code>
+        <td><code>String</code>, 如:  <code>top</code>
         <code>left</code>
         <code>right</code>
         <code>bottom</code></td>
@@ -181,19 +181,19 @@
       </tr>
       <tr>
         <td>on-confirm</td>
-        <td>Function</td>
+        <td><code>Function</code></td>
         <td></td>
         <td>点击确定的回调函数</td>
       </tr>
       <tr>
         <td>ok-text</td>
-        <td>String</td>
+        <td><code>String</code></td>
         <td>确定</td>
         <td>确定按钮的文案</td>
       </tr>
        <tr>
         <td>cancel-text</td>
-        <td>String</td>
+        <td><code>String</code></td>
         <td></td>
         <td>取消按钮的文案</td>
       </tr>

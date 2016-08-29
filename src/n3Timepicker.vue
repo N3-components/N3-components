@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import type from 'get-type'
 import EventListener from './utils/EventListener'
 import n3Slider from './n3Slider'
 import n3Input from './n3Input'
@@ -79,6 +80,9 @@ export default {
         return [0, 59]
       }
     },
+    onHide: {
+      type: Function
+    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -96,7 +100,7 @@ export default {
   },
   watch: {
     show (val) {
-      if (!val) this.$dispatch('hide', this.value)
+      if (!val && type.isFunction(this.onHide)) this.onHide(this.value)
     },
     time: {
       deep: true,

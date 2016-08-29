@@ -72,7 +72,7 @@
           <td>日期值,需要<code>.sync</code></td>
         </tr>
         <tr>
-          <td>Width</td>
+          <td>width</td>
           <td><code>String</code></td>
           <td>200px</td>
           <td>输入框宽度</td>
@@ -97,6 +97,7 @@
         </tr>
       </tbody>
     </table>
+    <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
   </div>
 </template>
 

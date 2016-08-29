@@ -115,7 +115,7 @@
       <tbody>
         <tr>
           <td>type</td>
-          <td><code>String</code> one of <code>horizontal</code><code>vertical</code></td>
+          <td><code>String</code> 如:  <code>horizontal</code><code>vertical</code></td>
           <td>horizontal</td>
           <td>水平,垂直</td>
         </tr>
@@ -140,7 +140,7 @@
       <tbody>
         <tr>
           <td>trigger</td>
-          <td><code>String</code> one of <code>click</code><code>hover</code></td>
+          <td><code>String</code> 如:  <code>click</code><code>hover</code></td>
           <td>click</td>
           <td>展开方式</td>
         </tr>

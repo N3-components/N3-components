@@ -69,7 +69,7 @@
         </tr>
         <tr>
           <td>placement</td>
-          <td><code>String</code>, one of <code>left</code>, <code>right</code></td>
+          <td><code>String</code>, 如:  <code>left</code>, <code>right</code></td>
           <td><code>right</code></td>
           <td>组件位置</td>
         </tr>

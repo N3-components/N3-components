@@ -79,6 +79,12 @@
         <td><code></code></td>
         <td>图标类型名</td>
       </tr>
+      <tr>
+        <td>size</td>
+        <td><code>String</code></td>
+        <td><code></code></td>
+        <td>图标尺寸</td>
+      </tr>
     </tbody>
   </table>
   </div>

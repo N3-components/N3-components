@@ -16,15 +16,19 @@ export default {
     onChange: {
       type: Function
     },
+    effect: {
+      type: String,
+      default: 'collapse'
+    },
     prefixCls: {
       type: String,
       default: 'n3'
     }
   },
-  created () {
-    this.$on('isOpenEvent', (child) => {
-      var children = this.$children
-      var ret = []
+  events: {
+    'n3@paneltoggle' (child) {
+      let children = this.$children
+      let ret = []
 
       if (this.oneAtATime) {
         children.forEach((item) => {
@@ -46,7 +50,7 @@ export default {
       if (type.isFunction(this.onChange)) {
         this.onChange(ret)
       }
-    })
+    }
   }
 }
 </script>
