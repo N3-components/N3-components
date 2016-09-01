@@ -2,12 +2,12 @@
   <div class="{{prefixCls}}-treeview">
     <div class="node-data" v-for="(index, node) in model">
       <div class="node">
-        <!--<span class="select-box">
-          <input type="checkbox" v-model="node['isChecked']" @change="checkHandler(node)">
-        </span>-->
+        <span class="select-box" v-if="checkable">
+          <input type="checkbox" v-model="node['isChecked']" @change="checkHandler(index, node[valuename])">
+        </span>
         <span class="meta-data" :class="{'active': isSelected(index)}" @click.prevent="clickHandler(index, node[valuename])">
           <template v-if="node[children] || node['tree']">
-            <n3-icon :type="isOpened(index) ? treeOpenIcon : treeIcon"></n3-icon>
+            <n3-icon :type="isOpened(index) && areValidNodes(node[children]) ? treeOpenIcon : treeIcon"></n3-icon>
             <span class="loading-box" v-show="loading > -1 && loading == index">
               <n3-loading color="primary" size="xs"></n3-loading>
             </span>
@@ -20,8 +20,7 @@
       <div v-if="areValidNodes(node[children])" class="children" v-show="isOpened(index)">
         <div class="margin"></div>
         <div class="nodes">
-          <n3-treeview :id="id" :value.sync="value" :labelname="labelname" :valuename="valuename" :children="children"
-             :model.sync="node[children]" :parent.once="index" class="inner" :load-data="loadData" :default-expand-all="defaultExpandAll"></n3-treeview>
+          <n3-treeview  class="inner" :id="id" :value.sync="value" :labelname="labelname" :valuename="valuename" :children="children" :model.sync="node[children]" :parent.once="node[valuename]" :load-data="loadData" :default-expand-all="defaultExpandAll" :checkable="checkable" :on-check="onCheck"></n3-treeview>
         </div>
       </div>
     </div>
@@ -153,7 +152,7 @@
        * @param {Number} index Tree index selected.
        * @param {Mixed} value Value selected.
        */
-      clickHandler: function(index, value) {
+      clickHandler(index, value) {
         let self = this
         let node = self.model[index]
         // Firstly Select Node
@@ -180,32 +179,26 @@
        * @param {Number} index Tree index selected.
        * @param {Mixed} value Value selected.
        */
-      select: function(index, value) {
+      select(index, value) {
         if (type.isFunction(this.onSelect)) {
           try {
-            this.onSelect()
+            this.onSelect(this.model[index])
           } catch (error) {
             console.error(error)
           }
         }
         // Unselect from current level, children and parents
         this.$set('value', value)
-        
-        // Call to event.
-        this.$dispatch('treeview_click', {
-          label: this.model[index][this.labelname],
-          value: this.model[index][this.valuename],
-        })
       },
 
       /**
        * Toggles open / close node.
        * @param {Number} index
        */
-      toggleOpen: function(index) {
+      toggleOpen(index) {
         if (type.isFunction(this.onExpand)) {
           try {
-            this.onExpand()
+            this.onExpand(this.model[index])
           } catch (error) {
             console.error(error)
           }
@@ -226,7 +219,7 @@
        * Returns flag indicating if nodes are valid or not.
        * @param {Array} nodes
        */
-      areValidNodes: function(nodes) {
+      areValidNodes(nodes) {
         return nodes != undefined && Object.prototype.toString.call(nodes) === '[object Array]' && nodes.length > 0
       },
 
@@ -234,7 +227,7 @@
        * Returns flag indicating if tree view has a node selected.
        * @return {Boolean}
        */
-      hasSelected: function() {
+      hasSelected() {
         for (var i in this.model) {
           if (this.isSelected(i) || this.hasSelectedChild(i)) {
             return true
@@ -248,12 +241,12 @@
        * @param {Number} index
        * @return {Boolean}
        */
-      hasSelectedChild: function(index) {
+      hasSelectedChild(index) {
         for (var i in this.$children) {
           if (this.$children[i].parent == index && this.$children[i].hasSelected())
-            return true;
+            return true
         }
-        return false;
+        return false
       },
 
       /**
@@ -261,7 +254,7 @@
        * @param {Number} index
        * @return {Boolean}
        */
-      isSelected: function(index) {
+      isSelected(index) {
         return this.value && this.model[index][this.valuename] == this.value
       },
 
@@ -270,11 +263,42 @@
        * @param {Number} index
        * @return {Boolean}
        */
-      isOpened: function(index) {
+      isOpened(index) {
         return (this.model[index].isOpened != undefined && this.model[index].isOpened) || this.hasSelectedChild(
           index)
       },
 
+      /**
+       * CheckHandler
+       * @param {Number} index Tree index selected.
+       * @param {Mixed} value Value selected.
+       */
+      checkHandler(index, value) {
+        let flag = this.model[index].isChecked
+        this.$broadcast('changeChildChecked', value, flag)
+        this.$dispatch('changeParentChecked', this.parent)
+        if (type.isFunction(this.onCheck)) {
+          try {
+            this.onCheck()
+          } catch (error) {
+            console.error(error)
+          }
+        }
+      },
+      
+      /**
+       * Check All
+       * @param {Boolean} flag
+       */
+      checkAll(flag) {
+        let value
+        for (let index = 0; index < this.model.length; index++) {
+          value = this.model[index][this.valuename]
+          this.$set('model[' + index + '].isChecked', flag)
+          this.$broadcast('changeChildChecked', value, flag)
+        }
+        this.$dispatch('changeParentChecked', this.parent)
+      },
 
       /**
        * Expand Some Nodes
@@ -297,6 +321,44 @@
         this.model = this.model.sort((a, b) => {
           return (b[self.children] || b['tree']) && !(a[self.children] || a['tree'])
         })
+      }
+    },
+
+    events: {
+      /**
+       * Refresh Children Checked
+       */
+      changeChildChecked(parent, value) {
+        if (this.parent == parent) {
+          this.checkAll(value)
+        }
+      },
+
+      /**
+       * Refresh Parent Checked
+       */
+      changeParentChecked(parent) {
+        let node
+        let children
+        for (let index = 0; index < this.model.length; index++) {
+          node = this.model[index]
+          children = node[this.children]
+          if (parent == node[this.valuename]) {
+            let j 
+            for (j = 0; j < children.length; j++) {
+              if (!children[j].isChecked) {
+                this.$set('model[' + index + '].isChecked', false)
+                this.$dispatch('changeParentChecked', this.parent)
+                break
+              }
+            }
+            if (j === children.length) {
+              this.$set('model[' + index + '].isChecked', true)
+              this.$dispatch('changeParentChecked', this.parent)
+            }
+            break
+          }
+        }
       }
     },
 

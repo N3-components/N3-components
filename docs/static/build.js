@@ -14780,7 +14780,7 @@
 	//   </div>
 	
 	
-	//     <h1 class="page-header">
+	//     <h1 class="page-header">    
 	
 	//       <a href="#勾选节点" class="anchor">勾选节点</a>
 	
@@ -14790,7 +14790,9 @@
 	
 	//     <div class="bs-example">
 	
-	//       <n3-treeview :value.sync="id" :model="files3" class="form-control" labelname="name" valuename="id" children="children" :default-expand-all="true"></n3-treeview>
+	//       <n3-treeview :value.sync="id" :model="files3" class="form-control" labelname="name" valuename="id" children="children" 
+	
+	//         :default-expand-all="true" :checkable="true" :on-check="onCheck"></n3-treeview>
 	
 	//     </div>
 	
@@ -14987,6 +14989,9 @@
 	            resolve(res);
 	          }, 1000);
 	        });
+	      },
+	      onCheck: function onCheck() {
+	        console.log('onCheck');
 	      }
 	    };
 	  }
@@ -14997,7 +15002,7 @@
 /* 297 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"树形视图\">\r\n    <h1 class=\"page-header\">\r\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\r\n      <span class=\"author\"></span>\r\n    </h1>\r\n    <div class=\"bs-example\">\r\n      <n3-treeview :value.sync=\"id\" :model=\"files1\" class=\"form-control\" labelname=\"name\" valuename=\"id\" children=\"children\"></n3-treeview>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-treeview :value.sync=\"id\"\r\n    :model=\"files1\"\r\n    class=\"form-control\"\r\n    labelname=\"name\"\r\n    valuename=\"id\"\r\n    children=\"children\"\r\n></n3-treeview>\r\n\r\nnew Vue({\r\n    data: {\r\n        files1: [\r\n            {\r\n                name: '新建文件夹1',\r\n                id: 1,\r\n                tree: true\r\n            },\r\n            {\r\n                name: '我的文档2',\r\n                id: 2,\r\n                tree: false\r\n            },\r\n            {\r\n                name: '新建文件夹3',\r\n                id: 3,\r\n                children: [\r\n                    {\r\n                        name: '我的文档1',\r\n                        id: 4\r\n                    },\r\n                    {\r\n                        name: '新建文件夹4',\r\n                        id: 5,\r\n                        children: [\r\n                        {\r\n                            name: '我的文档3',\r\n                            id: 6\r\n                        },\r\n                        {\r\n                            name: '我的文档4',\r\n                            id: 7\r\n                        }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n})\r\n\r\n        </script> </code></pre>\r\n  </div>\r\n  <h1 class=\"page-header\">\r\n    <a href=\"#异步加载\" class=\"anchor\">异步加载</a>\r\n    <span class=\"author\"></span>\r\n  </h1>\r\n  <div class=\"bs-example\">\r\n    <n3-treeview :value.sync=\"id\" :model=\"files2\" class=\"form-control\" labelname=\"name\" valuename=\"id\" children=\"children\" :load-data=\"loadList\"></n3-treeview>\r\n  </div>\r\n  <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-treeview :value.sync=\"id\"\r\n    :model=\"files2\"\r\n    class=\"form-control\"\r\n    labelname=\"name\"\r\n    valuename=\"id\"\r\n    children=\"children\"\r\n    :load-data=\"loadList\"\r\n></n3-treeview>\r\n\r\nnew Vue({\r\n    data: {\r\n        files2: [\r\n            {\r\n                name: '新建文件夹1',\r\n                id: 1,\r\n                tree: true\r\n            },\r\n            {\r\n                name: '我的文档2',\r\n                id: 2,\r\n                tree: false\r\n            },\r\n            {\r\n                name: '新建文件夹3',\r\n                id: 3,\r\n                tree: true\r\n            }\r\n        ],\r\n        loadList(value) {\r\n            return new Promise((resolve, reject) => {\r\n                setTimeout(() => {\r\n                    var res = [{\r\n                        name: '我的文档' + Math.ceil(Math.random() * 100000),\r\n                        id: Math.ceil(Math.random() * 100000)\r\n                    }, {\r\n                        name: '新建文件夹' + Math.ceil(Math.random() * 100000),\r\n                        id: Math.ceil(Math.random() * 100000),\r\n                        tree: true\r\n                    }]\r\n                    resolve(res)\r\n                }, 1000)\r\n            })\r\n        }\r\n    }\r\n})\r\n\r\n      </script></code></pre>\r\n  </div>\r\n\r\n    <h1 class=\"page-header\">\r\n      <a href=\"#勾选节点\" class=\"anchor\">勾选节点</a>\r\n      <span class=\"author\"></span>\r\n    </h1>\r\n    <div class=\"bs-example\">\r\n      <n3-treeview :value.sync=\"id\" :model=\"files3\" class=\"form-control\" labelname=\"name\" valuename=\"id\" children=\"children\" :default-expand-all=\"true\"></n3-treeview>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-treeview :value.sync=\"id\"\r\n    :model=\"files3\"\r\n    class=\"form-control\"\r\n    labelname=\"name\"\r\n    valuename=\"id\"\r\n    children=\"children\"\r\n    checkable=\"true\"\r\n></n3-treeview>\r\n\r\nnew Vue({\r\n    data: {\r\n        files3: [\r\n            {\r\n                name: '新建文件夹1',\r\n                id: 1,\r\n                tree: true\r\n            },\r\n            {\r\n                name: '我的文档2',\r\n                id: 2,\r\n                tree: false\r\n            },\r\n            {\r\n                name: '新建文件夹3',\r\n                id: 3,\r\n                children: [\r\n                    {\r\n                        name: '我的文档1',\r\n                        id: 4\r\n                    },\r\n                    {\r\n                        name: '新建文件夹4',\r\n                        id: 5,\r\n                        children: [\r\n                        {\r\n                            name: '我的文档3',\r\n                            id: 6\r\n                        },\r\n                        {\r\n                            name: '我的文档4',\r\n                            id: 7\r\n                        }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n})\r\n\r\n        </script> </code></pre>\r\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"树形视图\">\r\n    <h1 class=\"page-header\">\r\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\r\n      <span class=\"author\"></span>\r\n    </h1>\r\n    <div class=\"bs-example\">\r\n      <n3-treeview :value.sync=\"id\" :model=\"files1\" class=\"form-control\" labelname=\"name\" valuename=\"id\" children=\"children\"></n3-treeview>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-treeview :value.sync=\"id\"\r\n    :model=\"files1\"\r\n    class=\"form-control\"\r\n    labelname=\"name\"\r\n    valuename=\"id\"\r\n    children=\"children\"\r\n></n3-treeview>\r\n\r\nnew Vue({\r\n    data: {\r\n        files1: [\r\n            {\r\n                name: '新建文件夹1',\r\n                id: 1,\r\n                tree: true\r\n            },\r\n            {\r\n                name: '我的文档2',\r\n                id: 2,\r\n                tree: false\r\n            },\r\n            {\r\n                name: '新建文件夹3',\r\n                id: 3,\r\n                children: [\r\n                    {\r\n                        name: '我的文档1',\r\n                        id: 4\r\n                    },\r\n                    {\r\n                        name: '新建文件夹4',\r\n                        id: 5,\r\n                        children: [\r\n                        {\r\n                            name: '我的文档3',\r\n                            id: 6\r\n                        },\r\n                        {\r\n                            name: '我的文档4',\r\n                            id: 7\r\n                        }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n})\r\n\r\n        </script> </code></pre>\r\n  </div>\r\n  <h1 class=\"page-header\">\r\n    <a href=\"#异步加载\" class=\"anchor\">异步加载</a>\r\n    <span class=\"author\"></span>\r\n  </h1>\r\n  <div class=\"bs-example\">\r\n    <n3-treeview :value.sync=\"id\" :model=\"files2\" class=\"form-control\" labelname=\"name\" valuename=\"id\" children=\"children\" :load-data=\"loadList\"></n3-treeview>\r\n  </div>\r\n  <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-treeview :value.sync=\"id\"\r\n    :model=\"files2\"\r\n    class=\"form-control\"\r\n    labelname=\"name\"\r\n    valuename=\"id\"\r\n    children=\"children\"\r\n    :load-data=\"loadList\"\r\n></n3-treeview>\r\n\r\nnew Vue({\r\n    data: {\r\n        files2: [\r\n            {\r\n                name: '新建文件夹1',\r\n                id: 1,\r\n                tree: true\r\n            },\r\n            {\r\n                name: '我的文档2',\r\n                id: 2,\r\n                tree: false\r\n            },\r\n            {\r\n                name: '新建文件夹3',\r\n                id: 3,\r\n                tree: true\r\n            }\r\n        ],\r\n        loadList(value) {\r\n            return new Promise((resolve, reject) => {\r\n                setTimeout(() => {\r\n                    var res = [{\r\n                        name: '我的文档' + Math.ceil(Math.random() * 100000),\r\n                        id: Math.ceil(Math.random() * 100000)\r\n                    }, {\r\n                        name: '新建文件夹' + Math.ceil(Math.random() * 100000),\r\n                        id: Math.ceil(Math.random() * 100000),\r\n                        tree: true\r\n                    }]\r\n                    resolve(res)\r\n                }, 1000)\r\n            })\r\n        }\r\n    }\r\n})\r\n\r\n      </script></code></pre>\r\n  </div>\r\n\r\n    <h1 class=\"page-header\">    \r\n      <a href=\"#勾选节点\" class=\"anchor\">勾选节点</a>\r\n      <span class=\"author\"></span>\r\n    </h1>\r\n    <div class=\"bs-example\">\r\n      <n3-treeview :value.sync=\"id\" :model=\"files3\" class=\"form-control\" labelname=\"name\" valuename=\"id\" children=\"children\" \r\n        :default-expand-all=\"true\" :checkable=\"true\" :on-check=\"onCheck\"></n3-treeview>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-treeview :value.sync=\"id\"\r\n    :model=\"files3\"\r\n    class=\"form-control\"\r\n    labelname=\"name\"\r\n    valuename=\"id\"\r\n    children=\"children\"\r\n    checkable=\"true\"\r\n></n3-treeview>\r\n\r\nnew Vue({\r\n    data: {\r\n        files3: [\r\n            {\r\n                name: '新建文件夹1',\r\n                id: 1,\r\n                tree: true\r\n            },\r\n            {\r\n                name: '我的文档2',\r\n                id: 2,\r\n                tree: false\r\n            },\r\n            {\r\n                name: '新建文件夹3',\r\n                id: 3,\r\n                children: [\r\n                    {\r\n                        name: '我的文档1',\r\n                        id: 4\r\n                    },\r\n                    {\r\n                        name: '新建文件夹4',\r\n                        id: 5,\r\n                        children: [\r\n                        {\r\n                            name: '我的文档3',\r\n                            id: 6\r\n                        },\r\n                        {\r\n                            name: '我的文档4',\r\n                            id: 7\r\n                        }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n})\r\n\r\n        </script> </code></pre>\r\n  </div>";
 
 /***/ },
 /* 298 */
@@ -27363,40 +27368,25 @@
 	var cachedSetTimeout;
 	var cachedClearTimeout;
 	
-	function defaultSetTimout() {
-	    throw new Error('setTimeout has not been defined');
-	}
-	function defaultClearTimeout () {
-	    throw new Error('clearTimeout has not been defined');
-	}
 	(function () {
 	    try {
-	        if (typeof setTimeout === 'function') {
-	            cachedSetTimeout = setTimeout;
-	        } else {
-	            cachedSetTimeout = defaultSetTimout;
-	        }
+	        cachedSetTimeout = setTimeout;
 	    } catch (e) {
-	        cachedSetTimeout = defaultSetTimout;
+	        cachedSetTimeout = function () {
+	            throw new Error('setTimeout is not defined');
+	        }
 	    }
 	    try {
-	        if (typeof clearTimeout === 'function') {
-	            cachedClearTimeout = clearTimeout;
-	        } else {
-	            cachedClearTimeout = defaultClearTimeout;
-	        }
+	        cachedClearTimeout = clearTimeout;
 	    } catch (e) {
-	        cachedClearTimeout = defaultClearTimeout;
+	        cachedClearTimeout = function () {
+	            throw new Error('clearTimeout is not defined');
+	        }
 	    }
 	} ())
 	function runTimeout(fun) {
 	    if (cachedSetTimeout === setTimeout) {
 	        //normal enviroments in sane situations
-	        return setTimeout(fun, 0);
-	    }
-	    // if setTimeout wasn't available but was latter defined
-	    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-	        cachedSetTimeout = setTimeout;
 	        return setTimeout(fun, 0);
 	    }
 	    try {
@@ -27417,11 +27407,6 @@
 	function runClearTimeout(marker) {
 	    if (cachedClearTimeout === clearTimeout) {
 	        //normal enviroments in sane situations
-	        return clearTimeout(marker);
-	    }
-	    // if clearTimeout wasn't available but was latter defined
-	    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-	        cachedClearTimeout = clearTimeout;
 	        return clearTimeout(marker);
 	    }
 	    try {
@@ -35125,6 +35110,7 @@
 	      }
 	    },
 	
+	
 	    /**
 	     * Selects a node from tree view
 	     * @param {Number} index Tree index selected.
@@ -35133,20 +35119,15 @@
 	    select: function select(index, value) {
 	      if (_getType2.default.isFunction(this.onSelect)) {
 	        try {
-	          this.onSelect();
+	          this.onSelect(this.model[index]);
 	        } catch (error) {
 	          console.error(error);
 	        }
 	      }
 	      // Unselect from current level, children and parents
 	      this.$set('value', value);
-	
-	      // Call to event.
-	      this.$dispatch('treeview_click', {
-	        label: this.model[index][this.labelname],
-	        value: this.model[index][this.valuename]
-	      });
 	    },
+	
 	
 	    /**
 	     * Toggles open / close node.
@@ -35155,7 +35136,7 @@
 	    toggleOpen: function toggleOpen(index) {
 	      if (_getType2.default.isFunction(this.onExpand)) {
 	        try {
-	          this.onExpand();
+	          this.onExpand(this.model[index]);
 	        } catch (error) {
 	          console.error(error);
 	        }
@@ -35172,6 +35153,7 @@
 	      this.$set('model[' + index + '].isOpened', !this.model[index].isOpened);
 	    },
 	
+	
 	    /**
 	     * Returns flag indicating if nodes are valid or not.
 	     * @param {Array} nodes
@@ -35179,6 +35161,7 @@
 	    areValidNodes: function areValidNodes(nodes) {
 	      return nodes != undefined && Object.prototype.toString.call(nodes) === '[object Array]' && nodes.length > 0;
 	    },
+	
 	
 	    /**
 	     * Returns flag indicating if tree view has a node selected.
@@ -35193,6 +35176,7 @@
 	      return false;
 	    },
 	
+	
 	    /**
 	     * Returns flag indicating if node at specified index has a child selcted or not.
 	     * @param {Number} index
@@ -35205,6 +35189,7 @@
 	      return false;
 	    },
 	
+	
 	    /**
 	     * Returns flag indicating if node at specified index is selected or not.
 	     * @param {Number} index
@@ -35214,6 +35199,7 @@
 	      return this.value && this.model[index][this.valuename] == this.value;
 	    },
 	
+	
 	    /**
 	     * Returns flag indicating if node is opened or not.
 	     * @param {Number} index
@@ -35222,6 +35208,41 @@
 	    isOpened: function isOpened(index) {
 	      return this.model[index].isOpened != undefined && this.model[index].isOpened || this.hasSelectedChild(index);
 	    },
+	
+	
+	    /**
+	     * CheckHandler
+	     * @param {Number} index Tree index selected.
+	     * @param {Mixed} value Value selected.
+	     */
+	    checkHandler: function checkHandler(index, value) {
+	      var flag = this.model[index].isChecked;
+	      this.$broadcast('changeChildChecked', value, flag);
+	      this.$dispatch('changeParentChecked', this.parent);
+	      if (_getType2.default.isFunction(this.onCheck)) {
+	        try {
+	          this.onCheck();
+	        } catch (error) {
+	          console.error(error);
+	        }
+	      }
+	    },
+	
+	
+	    /**
+	     * Check All
+	     * @param {Boolean} flag
+	     */
+	    checkAll: function checkAll(flag) {
+	      var value = void 0;
+	      for (var index = 0; index < this.model.length; index++) {
+	        value = this.model[index][this.valuename];
+	        this.$set('model[' + index + '].isChecked', flag);
+	        this.$broadcast('changeChildChecked', value, flag);
+	      }
+	      this.$dispatch('changeParentChecked', this.parent);
+	    },
+	
 	
 	    /**
 	     * Expand Some Nodes
@@ -35248,6 +35269,45 @@
 	    }
 	  },
 	
+	  events: {
+	    /**
+	     * Refresh Children Checked
+	     */
+	    changeChildChecked: function changeChildChecked(parent, value) {
+	      if (this.parent == parent) {
+	        this.checkAll(value);
+	      }
+	    },
+	
+	
+	    /**
+	     * Refresh Parent Checked
+	     */
+	    changeParentChecked: function changeParentChecked(parent) {
+	      var node = void 0;
+	      var children = void 0;
+	      for (var index = 0; index < this.model.length; index++) {
+	        node = this.model[index];
+	        children = node[this.children];
+	        if (parent == node[this.valuename]) {
+	          var j = void 0;
+	          for (j = 0; j < children.length; j++) {
+	            if (!children[j].isChecked) {
+	              this.$set('model[' + index + '].isChecked', false);
+	              this.$dispatch('changeParentChecked', this.parent);
+	              break;
+	            }
+	          }
+	          if (j === children.length) {
+	            this.$set('model[' + index + '].isChecked', true);
+	            this.$dispatch('changeParentChecked', this.parent);
+	          }
+	          break;
+	        }
+	      }
+	    }
+	  },
+	
 	  ready: function ready() {
 	    this.sort();
 	    this.expand();
@@ -35262,17 +35322,17 @@
 	
 	//       <div class="node">
 	
-	//         <!--<span class="select-box">
+	//         <span class="select-box" v-if="checkable">
 	
-	//           <input type="checkbox" v-model="node['isChecked']" @change="checkHandler(node)">
+	//           <input type="checkbox" v-model="node['isChecked']" @change="checkHandler(index, node[valuename])">
 	
-	//         </span>-->
+	//         </span>
 	
 	//         <span class="meta-data" :class="{'active': isSelected(index)}" @click.prevent="clickHandler(index, node[valuename])">
 	
 	//           <template v-if="node[children] || node['tree']">
 	
-	//             <n3-icon :type="isOpened(index) ? treeOpenIcon : treeIcon"></n3-icon>
+	//             <n3-icon :type="isOpened(index) && areValidNodes(node[children]) ? treeOpenIcon : treeIcon"></n3-icon>
 	
 	//             <span class="loading-box" v-show="loading > -1 && loading == index">
 	
@@ -35298,9 +35358,7 @@
 	
 	//         <div class="nodes">
 	
-	//           <n3-treeview :id="id" :value.sync="value" :labelname="labelname" :valuename="valuename" :children="children"
-	
-	//              :model.sync="node[children]" :parent.once="index" class="inner" :load-data="loadData" :default-expand-all="defaultExpandAll"></n3-treeview>
+	//           <n3-treeview  class="inner" :id="id" :value.sync="value" :labelname="labelname" :valuename="valuename" :children="children" :model.sync="node[children]" :parent.once="node[valuename]" :load-data="loadData" :default-expand-all="defaultExpandAll" :checkable="checkable" :on-check="onCheck"></n3-treeview>
 	
 	//         </div>
 	
@@ -35337,7 +35395,7 @@
 /* 427 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-treeview\">\r\n    <div class=\"node-data\" v-for=\"(index, node) in model\">\r\n      <div class=\"node\">\r\n        <!--<span class=\"select-box\">\r\n          <input type=\"checkbox\" v-model=\"node['isChecked']\" @change=\"checkHandler(node)\">\r\n        </span>-->\r\n        <span class=\"meta-data\" :class=\"{'active': isSelected(index)}\" @click.prevent=\"clickHandler(index, node[valuename])\">\r\n          <template v-if=\"node[children] || node['tree']\">\r\n            <n3-icon :type=\"isOpened(index) ? treeOpenIcon : treeIcon\"></n3-icon>\r\n            <span class=\"loading-box\" v-show=\"loading > -1 && loading == index\">\r\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\r\n            </span>\r\n          </template>\r\n          <template v-else>\r\n            <n3-icon :type=\"nodeIcon\"></n3-icon>\r\n          </template>\r\n          <label>{{{node[labelname]}}}</label></span>\r\n      </div>\r\n      <div v-if=\"areValidNodes(node[children])\" class=\"children\" v-show=\"isOpened(index)\">\r\n        <div class=\"margin\"></div>\r\n        <div class=\"nodes\">\r\n          <n3-treeview :id=\"id\" :value.sync=\"value\" :labelname=\"labelname\" :valuename=\"valuename\" :children=\"children\"\r\n             :model.sync=\"node[children]\" :parent.once=\"index\" class=\"inner\" :load-data=\"loadData\" :default-expand-all=\"defaultExpandAll\"></n3-treeview>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-treeview\">\r\n    <div class=\"node-data\" v-for=\"(index, node) in model\">\r\n      <div class=\"node\">\r\n        <span class=\"select-box\" v-if=\"checkable\">\r\n          <input type=\"checkbox\" v-model=\"node['isChecked']\" @change=\"checkHandler(index, node[valuename])\">\r\n        </span>\r\n        <span class=\"meta-data\" :class=\"{'active': isSelected(index)}\" @click.prevent=\"clickHandler(index, node[valuename])\">\r\n          <template v-if=\"node[children] || node['tree']\">\r\n            <n3-icon :type=\"isOpened(index) && areValidNodes(node[children]) ? treeOpenIcon : treeIcon\"></n3-icon>\r\n            <span class=\"loading-box\" v-show=\"loading > -1 && loading == index\">\r\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\r\n            </span>\r\n          </template>\r\n          <template v-else>\r\n            <n3-icon :type=\"nodeIcon\"></n3-icon>\r\n          </template>\r\n          <label>{{{node[labelname]}}}</label></span>\r\n      </div>\r\n      <div v-if=\"areValidNodes(node[children])\" class=\"children\" v-show=\"isOpened(index)\">\r\n        <div class=\"margin\"></div>\r\n        <div class=\"nodes\">\r\n          <n3-treeview  class=\"inner\" :id=\"id\" :value.sync=\"value\" :labelname=\"labelname\" :valuename=\"valuename\" :children=\"children\" :model.sync=\"node[children]\" :parent.once=\"node[valuename]\" :load-data=\"loadData\" :default-expand-all=\"defaultExpandAll\" :checkable=\"checkable\" :on-check=\"onCheck\"></n3-treeview>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 428 */
