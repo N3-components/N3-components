@@ -29,6 +29,7 @@ import n3Select from './n3Select'
 import n3Tab from './n3Tab'
 import n3Tabs from './n3Tabs'
 import n3Tooltip from './n3Tooltip'
+import n3Treeview from './n3Treeview'
 import n3Button from './n3Button'
 import n3ButtonGroup from './n3ButtonGroup'
 import n3Container from './n3Container'
@@ -105,6 +106,7 @@ const Components = {
   n3Tab,
   n3TimelineItem,
   n3Timeline,
+  n3Treeview,
   n3MultipleInput,
   n3Tabs,
   n3Tooltip,
