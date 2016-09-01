@@ -116,12 +116,13 @@ new Vue({
       </script></code></pre>
   </div>
 
-    <h1 class="page-header">
+    <h1 class="page-header">    
       <a href="#勾选节点" class="anchor">勾选节点</a>
       <span class="author"></span>
     </h1>
     <div class="bs-example">
-      <n3-treeview :value.sync="id" :model="files3" class="form-control" labelname="name" valuename="id" children="children" :default-expand-all="true"></n3-treeview>
+      <n3-treeview :value.sync="id" :model="files3" class="form-control" labelname="name" valuename="id" children="children" 
+        :default-expand-all="true" :checkable="true" :on-check="onCheck"></n3-treeview>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 <n3-treeview :value.sync="id"
@@ -264,6 +265,9 @@ new Vue({
               resolve(res)
             }, 1000)
           })
+        },
+        onCheck() {
+            console.log('onCheck')
         }
       }
     }
