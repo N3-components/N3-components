@@ -1,27 +1,38 @@
+import velocity from 'velocity-animate'
+
+function animate (node, show, transitionName, done) {
+  let ok
+
+  function complete () {
+    if (!ok) {
+      ok = true
+      done()
+    }
+  }
+
+  node.style.display = show ? 'block' : 'none'
+  velocity(node, transitionName, {
+    duration: 200,
+    complete: complete,
+    easing: 'easeInOutQuad'
+  })
+  return {
+    stop () {
+      velocity(node, 'finish')
+      complete()
+    }
+  }
+}
+
 export default {
   collapse: {
     enter (el, done) {
-      let h
-      el.style.maxHeight = ''
-      el.style.display = 'block'
-      h = el.offsetHeight
-      el.style.maxHeight = '0px'
-
-      setTimeout(() => {
-        el.style.maxHeight = h + 'px'
-        done()
-      })
+      return animate(el, false, 'slideDown', done)
     },
     enterCancelled (el) {
     },
     leave (el, done) {
-      el.style.maxHeight = el.offsetHeight + 'px'
-      setTimeout(() => {
-        el.style.maxHeight = '0px'
-        setTimeout(() => {
-          done()
-        }, 200)
-      }, 10)
+      return animate(el, true, 'slideUp', done)
     },
     leaveCancelled () {
     }

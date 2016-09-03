@@ -1,10 +1,9 @@
 @import "define.less";
 
 .@{prefix-cls}-breadcrumb {
-  padding: 8px 15px;
-  margin-bottom: 20px;
+  padding: 8px 0px;
   list-style: none;
-  border-radius: 4px;
+  margin: 0px;
 
   a {
     color:@fontColor;
@@ -12,6 +11,9 @@
 
   > li {
     display: inline-block;
+    &:hover{
+      cursor:pointer;
+    }
   }
   > li + li:before {
     padding: 0 5px;

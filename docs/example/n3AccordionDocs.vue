@@ -75,7 +75,7 @@
           <td>effect</td>
           <td><code>String</code></td>
           <td>collapse</td>
-          <td>切换动画 注意：加载动态内容时请不要使用collapse，建议 fadeDown</td>
+          <td>切换动画</td>
         </tr>
         <tr>
           <td>on-change</td>

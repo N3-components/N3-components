@@ -78,25 +78,31 @@
         <td></td>
         <td>需要<code>.sync</code></td>
       </tr>
-       <tr>
+      <tr>
         <td>position</td>
         <td><code>Number</code></td>
         <td></td>
         <td>输入框所在位置,需要<code>.sync</code></td>
       </tr>
-       <tr>
+      <tr>
         <td>format</td>
         <td><code>Function</code></td>
         <td></td>
         <td>格式化显示函数</td>
       </tr>
-       <tr>
+      <tr>
         <td>width</td>
         <td><code>String</code></td>
         <td>220px</td>
         <td>组件宽度</td>
       </tr>
-       <tr>
+      <tr>
+        <td>height</td>
+        <td><code>String</code></td>
+        <td></td>
+        <td>组件高度</td>
+      </tr>
+      <tr>
         <td>inputWidth</td>
         <td><code>String</code></td>
         <td>50px</td>

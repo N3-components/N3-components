@@ -1,5 +1,5 @@
 <template>
-  <i :class="['fa','fa-'+type]" :style="{fontSize:size}"></i>
+  <i :class="['fa','fa-'+type]" :style="{fontSize:size,color:color}"></i>
 </template>
 <script>
 export default{
@@ -8,6 +8,9 @@ export default{
       type: String
     },
     size: {
+      type: String
+    },
+    color: {
       type: String
     }
   }

@@ -92,6 +92,7 @@
         let style = {}
 
         style['maxWidth'] = '100%'
+        style['width'] = '100%'
         style['maxHeight'] = maxHeight
         style['minHeight'] = minHeight
         !resize ? style['resize'] = 'none' : ''
