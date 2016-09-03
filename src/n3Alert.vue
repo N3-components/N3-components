@@ -24,7 +24,7 @@
 
 <script>
 import type from 'get-type'
-import n3Icon from 'src/n3Icon'
+import n3Icon from './n3Icon'
 
 export default {
   props: {

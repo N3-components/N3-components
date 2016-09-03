@@ -25,7 +25,7 @@
 
 <script>
 import EventListener from './utils/EventListener'
-import n3Tooltip from 'src/n3Tooltip'
+import n3Tooltip from './n3Tooltip'
 import valMixin from './valMixin'
 import validate from './validate'
 import type from 'get-type'

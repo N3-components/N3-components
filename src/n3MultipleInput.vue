@@ -1,6 +1,6 @@
 <template>
-<div class="inline">
-  <div :class="classObj" :style="{width:width}" @click="focus">
+<div class="inline" >
+  <div :class="classObj" :style="{width:width,height:height}" @click="focus">
     <template v-for="(index,item) in value" track-by="$index">
         <template v-if="index == position">
             <n3-typeahead
@@ -96,6 +96,10 @@ export default {
     width: {
       type: String,
       default: '220px'
+    },
+    height: {
+      type: String,
+      default: ''
     },
     inputWidth: {
       type: String,

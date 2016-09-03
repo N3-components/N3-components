@@ -29,7 +29,6 @@ import n3Select from './n3Select'
 import n3Tab from './n3Tab'
 import n3Tabs from './n3Tabs'
 import n3Tooltip from './n3Tooltip'
-import n3Treeview from './n3Treeview'
 import n3Button from './n3Button'
 import n3ButtonGroup from './n3ButtonGroup'
 import n3Container from './n3Container'
@@ -55,6 +54,7 @@ import n3Form from './n3Form'
 import n3FormItem from './n3FormItem'
 import n3Slider from './n3Slider'
 import n3Slide from './n3Slide'
+import n3Tree from './n3Tree'
 import n3Uploader from './n3Uploader'
 import transition from './transition'
 import './style/common.less'
@@ -102,11 +102,11 @@ const Components = {
   n3RadioBtn,
   n3Select,
   n3Icon,
+  n3Tree,
   n3Slider,
   n3Tab,
   n3TimelineItem,
   n3Timeline,
-  n3Treeview,
   n3MultipleInput,
   n3Tabs,
   n3Tooltip,
