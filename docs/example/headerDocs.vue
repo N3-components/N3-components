@@ -8,9 +8,12 @@
         <n3-nav-item :active="active==='base'">
           <a href="./component.html" >组件</a>
         </n3-nav-item>
-        <!--  <n3-nav-item :active="active==='usage'">
-          <a href="./usage.html" >使用</a>
-        </n3-nav-item> -->
+         <n3-nav-item disabled>
+          <a >图表</a>
+        </n3-nav-item>
+        <n3-nav-item disabled>
+          <a >工具</a>
+        </n3-nav-item>
       </n3-nav>
     </n3-container>
   </header>
