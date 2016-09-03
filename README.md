@@ -2,7 +2,7 @@
 
 N3 components built with Vue.js.
 
-docs http://groups.alidemo.cn/ais-fed/N3-components-ky/docs/index.html
+docs https://n3-components.github.io/N3-components/
 
 usage 
 ```js
