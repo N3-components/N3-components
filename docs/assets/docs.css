@@ -77,7 +77,7 @@ body {
   background:#fff!important;
 }
 
-.bs-docs-nav .n3-navbar-nav a{
+.bs-docs-nav .n3-navbar-nav li:not(.n3-navbar-disabled) a{
   color:#009190!important;
 }
 

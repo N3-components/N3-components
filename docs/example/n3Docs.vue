@@ -30,6 +30,7 @@
   <footer class="bs-docs-footer">
     <n3-container >
       <p>联系邮箱 zhangking520@gmail.com</p>
+      <p>当前版本正处于测试阶段，建议不要使用于生产环境</p>
     </n3-container>
   </footer>
 </div>

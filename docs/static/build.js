@@ -808,6 +808,7 @@
 	//   <footer class="bs-docs-footer">
 	//     <n3-container >
 	//       <p>联系邮箱 zhangking520@gmail.com</p>
+	//       <p>当前版本正处于测试阶段，建议不要使用于生产环境</p>
 	//     </n3-container>
 	//   </footer>
 	// </div>
@@ -1803,9 +1804,12 @@
 	//         <n3-nav-item :active="active==='base'">
 	//           <a href="./component.html" >组件</a>
 	//         </n3-nav-item>
-	//         <!--  <n3-nav-item :active="active==='usage'">
-	//           <a href="./usage.html" >使用</a>
-	//         </n3-nav-item> -->
+	//          <n3-nav-item disabled>
+	//           <a >图表</a>
+	//         </n3-nav-item>
+	//         <n3-nav-item disabled>
+	//           <a >工具</a>
+	//         </n3-nav-item>
 	//       </n3-nav>
 	//     </n3-container>
 	//   </header>
@@ -1824,7 +1828,7 @@
 /* 156 */
 /***/ function(module, exports) {
 
-	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\n    <n3-container fluid style=\"width:92%\">\n      <n3-nav>\n        <n3-nav-item >\n          <a href=\"./index.html\" >N3</a>\n        </n3-nav-item>\n        <n3-nav-item :active=\"active==='base'\">\n          <a href=\"./component.html\" >组件</a>\n        </n3-nav-item>\n        <!--  <n3-nav-item :active=\"active==='usage'\">\n          <a href=\"./usage.html\" >使用</a>\n        </n3-nav-item> -->\n      </n3-nav>\n    </n3-container>\n  </header>";
+	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\n    <n3-container fluid style=\"width:92%\">\n      <n3-nav>\n        <n3-nav-item >\n          <a href=\"./index.html\" >N3</a>\n        </n3-nav-item>\n        <n3-nav-item :active=\"active==='base'\">\n          <a href=\"./component.html\" >组件</a>\n        </n3-nav-item>\n         <n3-nav-item disabled>\n          <a >图表</a>\n        </n3-nav-item>\n        <n3-nav-item disabled>\n          <a >工具</a>\n        </n3-nav-item>\n      </n3-nav>\n    </n3-container>\n  </header>";
 
 /***/ },
 /* 157 */
@@ -12458,7 +12462,7 @@
 /* 317 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(index,item) in list\">\n              <n3-sub-nav  :show.sync=\"item.show\" >\n                <a slot=\"title\" style=\"color:#333\">{{index}}</a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a>{{i.label}}</a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n    </n3-container>\n  </footer>\n</div>";
+	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(index,item) in list\">\n              <n3-sub-nav  :show.sync=\"item.show\" >\n                <a slot=\"title\" style=\"color:#333\">{{index}}</a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a>{{i.label}}</a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n      <p>当前版本正处于测试阶段，建议不要使用于生产环境</p>\n    </n3-container>\n  </footer>\n</div>";
 
 /***/ },
 /* 318 */
