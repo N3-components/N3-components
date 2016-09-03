@@ -55,6 +55,7 @@ export default {
 
       klass[prefixCls + '-form-horizontal'] = type === 'horizontal'
       klass[prefixCls + '-form-inline'] = type === 'inline'
+      klass['clearfix'] = true
 
       return klass
     }

@@ -45,7 +45,7 @@
         <n3-icon type="refresh"></n3-icon>
       </n3-button>
     <n3-input
-      class="pull-right .@{prefix-cls}-data-table-search" 
+      class="pull-right" 
       placeholder="搜索"
       :value.sync="query"
       @keydown.enter="gosearch"

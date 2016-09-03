@@ -144,6 +144,12 @@
           <td><code>'md'</code></td>
           <td>布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>
         </tr>
+        <tr>
+          <td>offset</td>
+          <td><code>Number</code></td>
+          <td></td>
+          <td>便宜值</td>
+        </tr>
       </tbody>
     </table>
   </div>

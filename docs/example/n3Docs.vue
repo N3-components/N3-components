@@ -9,7 +9,7 @@
           <n3-nav type="vertical" >
              <n3-nav-item v-for="(index,item) in list">
               <n3-sub-nav  :show.sync="item.show" >
-                <a slot="title">{{index}}</a>
+                <a slot="title" style="color:#333">{{index}}</a>
                 <n3-nav-item v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
                   <a>{{i.label}}</a>
                 </n3-nav-item>
@@ -30,7 +30,6 @@
   <footer class="bs-docs-footer">
     <n3-container >
       <p>联系邮箱 zhangking520@gmail.com</p>
-      <p>当前版本 Beta</p>
     </n3-container>
   </footer>
 </div>

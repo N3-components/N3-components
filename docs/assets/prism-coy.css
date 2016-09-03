@@ -102,20 +102,10 @@ pre[class*="language-"] {
 pre[class*="language-"] {
     position: relative;
     margin: .5em 0;
-    -webkit-box-shadow: -1px 0px 0px 0px #009190, 0px 0px 0px 1px #dfdfdf;
-    -moz-box-shadow: -1px 0px 0px 0px #009190, 0px 0px 0px 1px #dfdfdf;
-    box-shadow: -1px 0px 0px 0px #009190, 0px 0px 0px 1px #dfdfdf;
-    border-left: 5px solid #009190;
     background-color: #fdfdfd;
-    background-image: -webkit-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-    background-image: -moz-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-    background-image: -ms-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-    background-image: -o-linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-    background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-    background-size: 3em 3em;
-    background-origin: content-box;
     overflow: visible;
     max-height: 30em;
+    background: url('./img/code.png');
 }
 
 code[class*="language"] {

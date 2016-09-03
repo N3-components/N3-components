@@ -1,9 +1,9 @@
 {
-  "name": "n3",
-  "version": "2.0.0",
-  "description": "N3 2.0 built with Vue.js",
-  "main": "dist/n3.js",
-  "homepage": "",
+  "name": "N3-components",
+  "version": "1.0.0",
+  "description": "N3 built with Vue.js",
+  "main": "src/index.js",
+  "homepage": "https://n3-components.github.io/N3-components/index.html",
   "directories": {
     "src": "src/"
   },
@@ -13,7 +13,11 @@
       "node": true
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "get-type": "^1.1.0",
+    "velocity-animate": "^1.2.3",
+    "vue-focus": "^0.1.1"
+  },
   "files": [
     "LICENSE",
     "README.md",
@@ -33,7 +37,6 @@
     "babel-plugin-transform-runtime": "^6.1.18",
     "babel-preset-es2015": "^6.1.18",
     "css-loader": "^0.21.0",
-    "deepmerge": "^0.2.10",
     "eslint": "^2.0.0",
     "eslint-config-standard": "^5.1.0",
     "eslint-friendly-formatter": "^1.2.2",
@@ -43,14 +46,12 @@
     "eslint-plugin-standard": "^1.3.2",
     "extract-text-webpack-plugin": "~1.0.1",
     "file-loader": "~0.9.0",
-    "get-type": "^1.1.0",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
     "prismjs": "^1.3.0",
     "style-loader": "^0.13.0",
     "url-loader": "~0.5.7",
     "vue": "^1.0.24",
-    "vue-focus": "^0.1.1",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
     "vue-loader": "7.1.7",
@@ -70,6 +71,6 @@
     "build": "webpack --progress --hide-modules --config  webpack.build.min.js && webpack --progress --hide-modules --config  webpack.build.js",
     "lint": "eslint --ext .js,.vue src"
   },
-  "author": "AISUED",
+  "author": "zhangking",
   "license": "MIT"
 }

@@ -2,11 +2,19 @@
 
 N3 components built with Vue.js.
 
-运行 `npm install`
+docs http://groups.alidemo.cn/ais-fed/N3-components-ky/docs/index.html
 
-运行 `npm run docs`
+usage 
+```js
+import Vue from 'vue'
+import N3Components from 'N3-Components'
+N3Components.install(Vue)
+```
+or 
 
-...
-
-https://n3-components.github.io/N3-components/
+```js
+import Vue from 'vue'
+import N3Components from 'N3-Components'
+import {n3Alert} from N3Components
+```
 
