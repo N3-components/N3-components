@@ -529,28 +529,48 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//   <div
+	
 	//    v-show="show"
+	
 	//    :class="classObj"
+	
 	//     transition="fade"
+	
 	//     :style="{width:width}">
+	
 	
 	//     <n3-icon class="{{prefixCls}}-alert-icon" :type="iconType" ></n3-icon>
 	
+	
 	//     <button v-if="dismissable" type="button" class="{{prefixCls}}-close"
+	
 	//       @click="_handleClose" >
+	
 	//       <span>&times;</span>
+	
 	//     </button>
 	
+	
 	//     <div v-if="description" class="{{prefixCls}}-alert-content">
+	
 	//       <h4>{{message}}</h4>
+	
 	//       <p><slot></slot></p>
+	
 	//     </div>
+	
 	//     <span v-else>
+	
 	//         <slot></slot>
+	
 	//     </span>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -2911,8 +2931,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <i :class="['fa','fa-'+type]" :style="{fontSize:size,color:color}"></i>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -2939,7 +2962,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 117 */
 /***/ function(module, exports) {
 
-	module.exports = "<div\n   v-show=\"show\"\n   :class=\"classObj\"\n    transition=\"fade\"\n    :style=\"{width:width}\">\n\n    <n3-icon class=\"{{prefixCls}}-alert-icon\" :type=\"iconType\" ></n3-icon>\n\n    <button v-if=\"dismissable\" type=\"button\" class=\"{{prefixCls}}-close\"\n      @click=\"_handleClose\" >\n      <span>&times;</span>\n    </button>\n\n    <div v-if=\"description\" class=\"{{prefixCls}}-alert-content\">\n      <h4>{{message}}</h4>\n      <p><slot></slot></p>\n    </div>\n    <span v-else>\n        <slot></slot>\n    </span>\n  </div>";
+	module.exports = "<div\r\n   v-show=\"show\"\r\n   :class=\"classObj\"\r\n    transition=\"fade\"\r\n    :style=\"{width:width}\">\r\n\r\n    <n3-icon class=\"{{prefixCls}}-alert-icon\" :type=\"iconType\" ></n3-icon>\r\n\r\n    <button v-if=\"dismissable\" type=\"button\" class=\"{{prefixCls}}-close\"\r\n      @click=\"_handleClose\" >\r\n      <span>&times;</span>\r\n    </button>\r\n\r\n    <div v-if=\"description\" class=\"{{prefixCls}}-alert-content\">\r\n      <h4>{{message}}</h4>\r\n      <p><slot></slot></p>\r\n    </div>\r\n    <span v-else>\r\n        <slot></slot>\r\n    </span>\r\n  </div>";
 
 /***/ },
 /* 118 */
@@ -2986,25 +3009,45 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } // <template>
+	
 	// <div class="{{prefixCls}}-carousel {{prefixCls}}-slide">
+	
 	//   <ol class="{{prefixCls}}-carousel-indicators" v-show="indicators">
+	
 	//     <li v-for="i in indicator" 
+	
 	//       transition="fade"
+	
 	//       @click="handleIndicatorClick($index)" 
+	
 	//       :class="[$index === activeIndex ? prefixCls + '-carousel-active'  : '']">
+	
 	//     </li>
+	
 	//   </ol>
+	
 	//   <div class="{{prefixCls}}-carousel-inner">
+	
 	//     <slot></slot>
+	
 	//   </div>
+	
 	//   <a v-show="controls" class="{{prefixCls}}-carousel-left {{prefixCls}}-carousel-control" @click="prevClick">
+	
 	//     <n3-icon type="chevron-left"></n3-icon>
+	
 	//   </a>
+	
 	//   <a v-show="controls" class="{{prefixCls}}-carousel-right {{prefixCls}}-carousel-control" @click="nextClick">
+	
 	//     <n3-icon type="chevron-right"></n3-icon>
+	
 	//   </a>
+	
 	// </div>
+	
 	// </template>
+	
 	
 	// <script>
 	
@@ -3158,7 +3201,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 121 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-carousel {{prefixCls}}-slide\">\n  <ol class=\"{{prefixCls}}-carousel-indicators\" v-show=\"indicators\">\n    <li v-for=\"i in indicator\" \n      transition=\"fade\"\n      @click=\"handleIndicatorClick($index)\" \n      :class=\"[$index === activeIndex ? prefixCls + '-carousel-active'  : '']\">\n    </li>\n  </ol>\n  <div class=\"{{prefixCls}}-carousel-inner\">\n    <slot></slot>\n  </div>\n  <a v-show=\"controls\" class=\"{{prefixCls}}-carousel-left {{prefixCls}}-carousel-control\" @click=\"prevClick\">\n    <n3-icon type=\"chevron-left\"></n3-icon>\n  </a>\n  <a v-show=\"controls\" class=\"{{prefixCls}}-carousel-right {{prefixCls}}-carousel-control\" @click=\"nextClick\">\n    <n3-icon type=\"chevron-right\"></n3-icon>\n  </a>\n</div>";
+	module.exports = "<div class=\"{{prefixCls}}-carousel {{prefixCls}}-slide\">\r\n  <ol class=\"{{prefixCls}}-carousel-indicators\" v-show=\"indicators\">\r\n    <li v-for=\"i in indicator\" \r\n      transition=\"fade\"\r\n      @click=\"handleIndicatorClick($index)\" \r\n      :class=\"[$index === activeIndex ? prefixCls + '-carousel-active'  : '']\">\r\n    </li>\r\n  </ol>\r\n  <div class=\"{{prefixCls}}-carousel-inner\">\r\n    <slot></slot>\r\n  </div>\r\n  <a v-show=\"controls\" class=\"{{prefixCls}}-carousel-left {{prefixCls}}-carousel-control\" @click=\"prevClick\">\r\n    <n3-icon type=\"chevron-left\"></n3-icon>\r\n  </a>\r\n  <a v-show=\"controls\" class=\"{{prefixCls}}-carousel-right {{prefixCls}}-carousel-control\" @click=\"nextClick\">\r\n    <n3-icon type=\"chevron-right\"></n3-icon>\r\n  </a>\r\n</div>";
 
 /***/ },
 /* 122 */
@@ -3248,10 +3291,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <div class="{{prefixCls}}-panel-group">
+	
 	//     <slot></slot>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -3259,7 +3307,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 124 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-panel-group\">\n    <slot></slot>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-panel-group\">\r\n    <slot></slot>\r\n  </div>";
 
 /***/ },
 /* 125 */
@@ -3377,19 +3425,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div>
+	
 	// <div :style="styles">
+	
 	//   <slot></slot>
+	
 	// </div>
+	
 	// </div>
+	
 	// </template>
+	
 	// <script>
 
 /***/ },
 /* 127 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n<div :style=\"styles\">\n  <slot></slot>\n</div>\n</div>";
+	module.exports = "<div>\r\n<div :style=\"styles\">\r\n  <slot></slot>\r\n</div>\r\n</div>";
 
 /***/ },
 /* 128 */
@@ -3523,24 +3578,43 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <div 
+	
 	//     :style="{width:width}"
+	
 	//     :class="classObj"
+	
 	//     v-show="show"
+	
 	//     :transition="(this.placement === 'left') ? 'slideleft' : 'slideright'">
+	
 	//     <div class="{{prefixCls}}-aside-dialog">
+	
 	//       <div class="{{prefixCls}}-aside-content">
+	
 	//         <div class="{{prefixCls}}-aside-header">
+	
 	//           <button type="button" class="{{prefixCls}}-close" @click='close'><span>&times;</span></button>
+	
 	//           <h4 class="{{prefixCls}}-aside-title">{{header}}</h4>
+	
 	//         </div>
+	
 	//         <div class="{{prefixCls}}-aside-body">
+	
 	//           <slot></slot>
+	
 	//         </div>
+	
 	//       </div>
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -3584,7 +3658,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 131 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \n    :style=\"{width:width}\"\n    :class=\"classObj\"\n    v-show=\"show\"\n    :transition=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\n    <div class=\"{{prefixCls}}-aside-dialog\">\n      <div class=\"{{prefixCls}}-aside-content\">\n        <div class=\"{{prefixCls}}-aside-header\">\n          <button type=\"button\" class=\"{{prefixCls}}-close\" @click='close'><span>&times;</span></button>\n          <h4 class=\"{{prefixCls}}-aside-title\">{{header}}</h4>\n        </div>\n        <div class=\"{{prefixCls}}-aside-body\">\n          <slot></slot>\n        </div>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div \r\n    :style=\"{width:width}\"\r\n    :class=\"classObj\"\r\n    v-show=\"show\"\r\n    :transition=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\r\n    <div class=\"{{prefixCls}}-aside-dialog\">\r\n      <div class=\"{{prefixCls}}-aside-content\">\r\n        <div class=\"{{prefixCls}}-aside-header\">\r\n          <button type=\"button\" class=\"{{prefixCls}}-close\" @click='close'><span>&times;</span></button>\r\n          <h4 class=\"{{prefixCls}}-aside-title\">{{header}}</h4>\r\n        </div>\r\n        <div class=\"{{prefixCls}}-aside-body\">\r\n          <slot></slot>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 132 */
@@ -3639,42 +3713,75 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//   <div class="{{prefixCls}}-btn-group {{prefixCls}}-checkbox-group">
+	
 	//     <template v-if="options">
+	
 	//         <n3-checkbox 
+	
 	//           v-if="type==='checkbox'" 
+	
 	//           v-for="item in options"
+	
 	//           :value="item.value"
+	
 	//           :checked="item.checked"
+	
 	//           :disabled="item.disabled">
+	
 	//           {{item.label}}
+	
 	//         </n3-checkbox>
 	
+	
 	//          <n3-checkbox-btn 
+	
 	//          v-if="type==='button'" 
+	
 	//          v-for="item in options"
+	
 	//          :value="item.value"
+	
 	//          :checked="item.checked"
+	
 	//          :disabled="item.disabled">
+	
 	//          {{item.label}}
+	
 	//         </n3-checkbox-btn>
 	
+	
 	//     </template>
+	
 	//     <template v-else>
+	
 	//     <slot></slot>
+	
 	//     </template>
+	
 	
 	//     <validate
+	
 	//       :name="name"
+	
 	//       :rules="rules"
+	
 	//       :valid-status.sync="validStatus"
+	
 	//       :custom-validate="customValidate" 
+	
 	//       :value="value"
+	
 	//       :results.sync="validateResults">
+	
 	//     </validate>
 	
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script> 
 	exports.default = {
@@ -3757,19 +3864,33 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <label :class="wrapClass">
+	
 	//   <span>
+	
 	//     <span class="{{prefixCls}}-checkbox-inner"></span>
+	
 	//     <input
+	
 	//       type="checkbox"
+	
 	//       class="{{prefixCls}}-checkbox-input"
+	
 	//       :disabled="disabled"
+	
 	//       :checked="!!checked"
+	
 	//       @click="handleClick"/>
+	
 	//   </span>
+	
 	//   <span><slot></slot></span>  
+	
 	// </label>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -3836,7 +3957,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 136 */
 /***/ function(module, exports) {
 
-	module.exports = "<label :class=\"wrapClass\">\n  <span>\n    <span class=\"{{prefixCls}}-checkbox-inner\"></span>\n    <input\n      type=\"checkbox\"\n      class=\"{{prefixCls}}-checkbox-input\"\n      :disabled=\"disabled\"\n      :checked=\"!!checked\"\n      @click=\"handleClick\"/>\n  </span>\n  <span><slot></slot></span>  \n</label>";
+	module.exports = "<label :class=\"wrapClass\">\r\n  <span>\r\n    <span class=\"{{prefixCls}}-checkbox-inner\"></span>\r\n    <input\r\n      type=\"checkbox\"\r\n      class=\"{{prefixCls}}-checkbox-input\"\r\n      :disabled=\"disabled\"\r\n      :checked=\"!!checked\"\r\n      @click=\"handleClick\"/>\r\n  </span>\r\n  <span><slot></slot></span>  \r\n</label>";
 
 /***/ },
 /* 137 */
@@ -3941,15 +4062,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <n3-button 
+	
 	//     @click.prevent="handleClick"
+	
 	//     :class="classObj" 
+	
 	//     :disabled="disabled"
+	
 	//     :active="active"
+	
 	//     :type="type">
+	
 	//     <slot></slot>
+	
 	//   </n3-button>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -3998,12 +4129,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//   <a :class="classObj">
+	
 	//   	<slot></slot>	
+	
 	//   	<n3-loading v-if="loading" size="xs" style="position:relative;top:2px"></n3-loading>
+	
 	//     <n3-badge  v-if="badge">{{badge}}</n3-badge>
+	
 	//   </a>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -4100,11 +4238,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <span :class="classObj">
+	
 	//     <i :class="iclassObj"></i>
+	
 	//     <slot></slot>  
+	
 	//   </span>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -4167,7 +4311,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 143 */
 /***/ function(module, exports) {
 
-	module.exports = "<span :class=\"classObj\">\n    <i :class=\"iclassObj\"></i>\n    <slot></slot>  \n  </span>";
+	module.exports = "<span :class=\"classObj\">\r\n    <i :class=\"iclassObj\"></i>\r\n    <slot></slot>  \r\n  </span>";
 
 /***/ },
 /* 144 */
@@ -4203,10 +4347,15 @@ return /******/ (function(modules) { // webpackBootstrap
 		value: true
 	});
 	// <template>
+	
 	// 	<span class="{{prefixCls}}-badge">
+	
 	// 		<slot></slot>	
+	
 	// 	</span>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 		props: {
@@ -4222,19 +4371,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 146 */
 /***/ function(module, exports) {
 
-	module.exports = "<span class=\"{{prefixCls}}-badge\">\n\t\t<slot></slot>\t\n\t</span>";
+	module.exports = "<span class=\"{{prefixCls}}-badge\">\r\n\t\t<slot></slot>\t\r\n\t</span>";
 
 /***/ },
 /* 147 */
 /***/ function(module, exports) {
 
-	module.exports = "<a :class=\"classObj\">\n  \t<slot></slot>\t\n  \t<n3-loading v-if=\"loading\" size=\"xs\" style=\"position:relative;top:2px\"></n3-loading>\n    <n3-badge  v-if=\"badge\">{{badge}}</n3-badge>\n  </a>";
+	module.exports = "<a :class=\"classObj\">\r\n  \t<slot></slot>\t\r\n  \t<n3-loading v-if=\"loading\" size=\"xs\" style=\"position:relative;top:2px\"></n3-loading>\r\n    <n3-badge  v-if=\"badge\">{{badge}}</n3-badge>\r\n  </a>";
 
 /***/ },
 /* 148 */
 /***/ function(module, exports) {
 
-	module.exports = "<n3-button \n    @click.prevent=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :active=\"active\"\n    :type=\"type\">\n    <slot></slot>\n  </n3-button>";
+	module.exports = "<n3-button \r\n    @click.prevent=\"handleClick\"\r\n    :class=\"classObj\" \r\n    :disabled=\"disabled\"\r\n    :active=\"active\"\r\n    :type=\"type\">\r\n    <slot></slot>\r\n  </n3-button>";
 
 /***/ },
 /* 149 */
@@ -4304,8 +4453,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; }; // <template>
+	
 	// 	<div class="{{prefixCls}}-err-tip" v-if="validate && tips" >{{tips}}</div>
+	
 	// </template>
+	
 	
 	// <script>
 	
@@ -4590,7 +4742,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 153 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-checkbox-group\">\n    <template v-if=\"options\">\n        <n3-checkbox \n          v-if=\"type==='checkbox'\" \n          v-for=\"item in options\"\n          :value=\"item.value\"\n          :checked=\"item.checked\"\n          :disabled=\"item.disabled\">\n          {{item.label}}\n        </n3-checkbox>\n\n         <n3-checkbox-btn \n         v-if=\"type==='button'\" \n         v-for=\"item in options\"\n         :value=\"item.value\"\n         :checked=\"item.checked\"\n         :disabled=\"item.disabled\">\n         {{item.label}}\n        </n3-checkbox-btn>\n\n    </template>\n    <template v-else>\n    <slot></slot>\n    </template>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :valid-status.sync=\"validStatus\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-checkbox-group\">\r\n    <template v-if=\"options\">\r\n        <n3-checkbox \r\n          v-if=\"type==='checkbox'\" \r\n          v-for=\"item in options\"\r\n          :value=\"item.value\"\r\n          :checked=\"item.checked\"\r\n          :disabled=\"item.disabled\">\r\n          {{item.label}}\r\n        </n3-checkbox>\r\n\r\n         <n3-checkbox-btn \r\n         v-if=\"type==='button'\" \r\n         v-for=\"item in options\"\r\n         :value=\"item.value\"\r\n         :checked=\"item.checked\"\r\n         :disabled=\"item.disabled\">\r\n         {{item.label}}\r\n        </n3-checkbox-btn>\r\n\r\n    </template>\r\n    <template v-else>\r\n    <slot></slot>\r\n    </template>\r\n\r\n    <validate\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :valid-status.sync=\"validStatus\"\r\n      :custom-validate=\"customValidate\" \r\n      :value=\"value\"\r\n      :results.sync=\"validateResults\">\r\n    </validate>\r\n\r\n  </div>";
 
 /***/ },
 /* 154 */
@@ -4645,31 +4797,57 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//   <div class="{{prefixCls}}-cascader">
+	
 	//     <span class="{{prefixCls}}-cascader-picker">
+	
 	//       <n3-input 
+	
 	//         :width="width"
+	
 	//         :name="name" 
+	
 	//         :rules="rules" 
+	
 	//         :validate="validate" 
+	
 	//         :has-feedback="hasFeedback"
+	
 	//         :placeholder="placeholder"
+	
 	//         :custom-validate="customValidate"
+	
 	//         :value.sync="displayValue"
+	
 	//         :readonly="true"
+	
 	//         :disabled="disabled"
+	
 	//         @click="toggleMenus">
+	
 	//       </n3-input>
+	
 	//     </span>
+	
 	//     <div class="{{prefixCls}}-cascader-menus" v-show="show" transition="fadeDown">
+	
 	//       <ul class="{{prefixCls}}-cascader-menu" v-for="(index, menu) in menus">
+	
 	//         <li :class="itemClass(index,option)" 
+	
 	//           v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
+	
 	//         </li>
+	
 	//       </ul>
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  mixins: [_inputMixin2.default],
@@ -4964,43 +5142,77 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div :class="classObj" >
+	
 	//   <input  
+	
 	//    class="{{prefixCls}}-form-control"  
+	
 	//    :style="{'width':width}"
+	
 	//    :readonly="readonly"
+	
 	//    :disabled="disabled"
+	
 	//    :placeholder="placeholder" 
+	
 	//    @blur="blur"
+	
 	//    @focus="focus"
+	
 	//    v-focus-model="focused" 
+	
 	//    v-model="value"  />
+	
 	//   <n3-icon 
+	
 	//     type="check" class="{{prefixCls}}-form-control-feedback" 
+	
 	//     v-if='validStatus=="success" && hasFeedback'>
+	
 	//   </n3-icon>
 	
+	
 	//   <n3-icon 
+	
 	//     type="warning" class="{{prefixCls}}-form-control-feedback" 
+	
 	//     v-if='validStatus=="warning" && hasFeedback'>
+	
 	//   </n3-icon>
 	
+	
 	//   <n3-icon 
+	
 	//     type="times" class="{{prefixCls}}-form-control-feedback" 
+	
 	//     v-if='validStatus=="error" && hasFeedback'>
+	
 	//   </n3-icon>
+	
 	
 	//   <validate
+	
 	//     :name="name"
+	
 	//     :valid-status.sync="validStatus"
+	
 	//     :rules="rules"
+	
 	//     :custom-validate="customValidate" 
+	
 	//     :value="value"
+	
 	//     :results.sync="validateResults">
+	
 	//   </validate>
 	
+	
 	// </div>
+	
 	// </template>
+	
 	// <script>
 
 /***/ },
@@ -15434,13 +15646,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 162 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\n  <input  \n   class=\"{{prefixCls}}-form-control\"  \n   :style=\"{'width':width}\"\n   :readonly=\"readonly\"\n   :disabled=\"disabled\"\n   :placeholder=\"placeholder\" \n   @blur=\"blur\"\n   @focus=\"focus\"\n   v-focus-model=\"focused\" \n   v-model=\"value\"  />\n  <n3-icon \n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"success\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon \n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"warning\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon \n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\" \n    v-if='validStatus==\"error\" && hasFeedback'>\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    :valid-status.sync=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n   \n</div>";
+	module.exports = "<div :class=\"classObj\" >\r\n  <input  \r\n   class=\"{{prefixCls}}-form-control\"  \r\n   :style=\"{'width':width}\"\r\n   :readonly=\"readonly\"\r\n   :disabled=\"disabled\"\r\n   :placeholder=\"placeholder\" \r\n   @blur=\"blur\"\r\n   @focus=\"focus\"\r\n   v-focus-model=\"focused\" \r\n   v-model=\"value\"  />\r\n  <n3-icon \r\n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\" \r\n    v-if='validStatus==\"success\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <n3-icon \r\n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\" \r\n    v-if='validStatus==\"warning\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <n3-icon \r\n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\" \r\n    v-if='validStatus==\"error\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <validate\r\n    :name=\"name\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :value=\"value\"\r\n    :results.sync=\"validateResults\">\r\n  </validate>\r\n   \r\n</div>";
 
 /***/ },
 /* 163 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-cascader\">\n    <span class=\"{{prefixCls}}-cascader-picker\">\n      <n3-input \n        :width=\"width\"\n        :name=\"name\" \n        :rules=\"rules\" \n        :validate=\"validate\" \n        :has-feedback=\"hasFeedback\"\n        :placeholder=\"placeholder\"\n        :custom-validate=\"customValidate\"\n        :value.sync=\"displayValue\"\n        :readonly=\"true\"\n        :disabled=\"disabled\"\n        @click=\"toggleMenus\">\n      </n3-input>\n    </span>\n    <div class=\"{{prefixCls}}-cascader-menus\" v-show=\"show\" transition=\"fadeDown\">\n      <ul class=\"{{prefixCls}}-cascader-menu\" v-for=\"(index, menu) in menus\">\n        <li :class=\"itemClass(index,option)\" \n          v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n        </li>\n      </ul>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-cascader\">\r\n    <span class=\"{{prefixCls}}-cascader-picker\">\r\n      <n3-input \r\n        :width=\"width\"\r\n        :name=\"name\" \r\n        :rules=\"rules\" \r\n        :validate=\"validate\" \r\n        :has-feedback=\"hasFeedback\"\r\n        :placeholder=\"placeholder\"\r\n        :custom-validate=\"customValidate\"\r\n        :value.sync=\"displayValue\"\r\n        :readonly=\"true\"\r\n        :disabled=\"disabled\"\r\n        @click=\"toggleMenus\">\r\n      </n3-input>\r\n    </span>\r\n    <div class=\"{{prefixCls}}-cascader-menus\" v-show=\"show\" transition=\"fadeDown\">\r\n      <ul class=\"{{prefixCls}}-cascader-menu\" v-for=\"(index, menu) in menus\">\r\n        <li :class=\"itemClass(index,option)\" \r\n          v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 164 */
@@ -15517,15 +15729,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	// 	<div 
+	
 	//     v-el:dom
+	
 	//     :class="classObj"
+	
 	// 		transition="fade"
+	
 	// 		@click="handleClick"
+	
 	// 		v-if="show">
+	
 	// 		<h5>{{text}}</h5>
+	
 	// 	</div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -15630,7 +15852,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 167 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \n    v-el:dom\n    :class=\"classObj\"\n\t\ttransition=\"fade\"\n\t\t@click=\"handleClick\"\n\t\tv-if=\"show\">\n\t\t<h5>{{text}}</h5>\n\t</div>";
+	module.exports = "<div \r\n    v-el:dom\r\n    :class=\"classObj\"\r\n\t\ttransition=\"fade\"\r\n\t\t@click=\"handleClick\"\r\n\t\tv-if=\"show\">\r\n\t\t<h5>{{text}}</h5>\r\n\t</div>";
 
 /***/ },
 /* 168 */
@@ -15666,10 +15888,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	// 	<span :class="classObj">
+	
 	// 		<slot></slot>
+	
 	// 	</span>
+	
 	// </template>
+	
 	// <script>
 	
 	exports.default = {
@@ -15709,7 +15936,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 170 */
 /***/ function(module, exports) {
 
-	module.exports = "<span :class=\"classObj\">\n\t\t<slot></slot>\n\t</span>";
+	module.exports = "<span :class=\"classObj\">\r\n\t\t<slot></slot>\r\n\t</span>";
 
 /***/ },
 /* 171 */
@@ -15847,29 +16074,51 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div :class="classObj" :style="{width:width}">
+	
 	//   <textarea
+	
 	//     class="{{prefixCls}}-form-control"  
+	
 	//     :disabled="disabled"
+	
 	//     :readonly="readonly"
+	
 	//     :maxlength="maxLength"
+	
 	//     :style="styleObj"
+	
 	//     :name="name"
+	
 	//     :placeholder="placeholder"
+	
 	//     v-model="value">
+	
 	//   </textarea>
 	
+	
 	//   <validate
+	
 	//     :name="name"
+	
 	//     :valid-status.sync="validStatus"
+	
 	//     :rules="rules"
+	
 	//     :custom-validate="customValidate" 
+	
 	//     :value="value"
+	
 	//     :results.sync="validateResults">
+	
 	//   </validate>
 	
+	
 	// </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -15877,7 +16126,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 173 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" :style=\"{width:width}\">\n  <textarea\n    class=\"{{prefixCls}}-form-control\"  \n    :disabled=\"disabled\"\n    :readonly=\"readonly\"\n    :maxlength=\"maxLength\"\n    :style=\"styleObj\"\n    :name=\"name\"\n    :placeholder=\"placeholder\"\n    v-model=\"value\">\n  </textarea>\n\n  <validate\n    :name=\"name\"\n    :valid-status.sync=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n\n</div>";
+	module.exports = "<div :class=\"classObj\" :style=\"{width:width}\">\r\n  <textarea\r\n    class=\"{{prefixCls}}-form-control\"  \r\n    :disabled=\"disabled\"\r\n    :readonly=\"readonly\"\r\n    :maxlength=\"maxLength\"\r\n    :style=\"styleObj\"\r\n    :name=\"name\"\r\n    :placeholder=\"placeholder\"\r\n    v-model=\"value\">\r\n  </textarea>\r\n\r\n  <validate\r\n    :name=\"name\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :value=\"value\"\r\n    :results.sync=\"validateResults\">\r\n  </validate>\r\n\r\n</div>";
 
 /***/ },
 /* 174 */
@@ -15932,101 +16181,197 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//   <div class="{{prefixCls}}-datepicker">
+	
 	//     <n3-input 
+	
 	//     :width="width"
+	
 	//     :name="name" 
+	
 	//     :rules="rules" 
+	
 	//     :validate="validate" 
+	
 	//     :has-feedback="hasFeedback"
+	
 	//     :placeholder="placeholder"
+	
 	//     :custom-validate="customValidate"
+	
 	//     :readonly="true"
+	
 	//     :disabled="disabled"
+	
 	//     @click="inputClick"
+	
 	//     :value.sync="value">
+	
 	//     </n3-input>
+	
 	//       <div class="{{prefixCls}}-datepicker-popup" v-show ="displayDayView" transition="fadeDown">
+	
 	//           <div class="{{prefixCls}}-datepicker-inner">
+	
 	//               <div class="{{prefixCls}}-datepicker-body">
+	
 	//                   <div class="{{prefixCls}}-datepicker-ctrl">
+	
 	//                       <span 
+	
 	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	
 	//                         @click="preNextMonthClick(0)">&lt;</span>
+	
 	//                       <span 
+	
 	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	
 	//                         @click="preNextMonthClick(1)">&gt;</span>
+	
 	//                       <p @click="switchMouthView">
+	
 	//                       {{stringifyDayHeader(currDate)}}
+	
 	//                       </p>
+	
 	//                   </div>
+	
 	//                   <div class="{{prefixCls}}-datepicker-weekRange">
+	
 	//                       <span v-for="w in weekRange">{{w}}</span>
+	
 	//                   </div>
+	
 	//                   <div class="{{prefixCls}}-datepicker-dateRange">
+	
 	//                       <span 
+	
 	//                         v-for="d in dateRange" :class="d.sclass" 
+	
 	//                         @click="daySelect(d.date,d.sclass)">
+	
 	//                         {{d.text}}
+	
 	//                       </span>
+	
 	//                   </div>
+	
 	//               </div>
+	
 	//           </div>
+	
 	//       </div>
+	
 	//       <div class="{{prefixCls}}-datepicker-popup" v-show ="displayMouthView" >
+	
 	//         <div class="{{prefixCls}}-datepicker-inner">
+	
 	//             <div class="{{prefixCls}}-datepicker-body">
+	
 	//                 <div class="{{prefixCls}}-datepicker-ctrl">
+	
 	//                     <span 
+	
 	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	
 	//                       @click="preNextYearClick(0)">&lt;</span>
+	
 	//                     <span 
+	
 	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	
 	//                       @click="preNextYearClick(1)">&gt;</span>
+	
 	//                     <p @click="switchDecadeView">
+	
 	//                     {{stringifyYearHeader(currDate)}}
+	
 	//                     </p>
+	
 	//                 </div>
+	
 	//                 <div class="{{prefixCls}}-datepicker-mouthRange">
+	
 	//                 	<template v-for="m in mouthNames">
+	
 	// 	                    <span   
+	
 	//                           :class="monthClassObj(m)"
+	
 	//                           @click="mouthSelect($index)">
+	
 	// 	                      {{m.substr(0,3)}}
+	
 	// 	                    </span>
+	
 	//                     </template>
+	
 	//                 </div>
+	
 	//             </div>
+	
 	//         </div>
+	
 	//       </div>
+	
 	//       <div class="{{prefixCls}}-datepicker-popup" v-show ="displayYearView" >
+	
 	//         <div class="{{prefixCls}}-datepicker-inner">
+	
 	//             <div class="{{prefixCls}}-datepicker-body">
+	
 	//                 <div class="{{prefixCls}}-datepicker-ctrl">
+	
 	//                     <span 
+	
 	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	
 	//                       @click="preNextDecadeClick(0)">&lt;</span>
+	
 	//                     <span 
+	
 	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	
 	//                       @click="preNextDecadeClick(1)">&gt;</span>
+	
 	//                     <p>
+	
 	//                     {{stringifyDecadeHeader(currDate)}}
+	
 	//                     </p>
+	
 	//                 </div>
+	
 	//                 <div class="{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange">
+	
 	//                 	<template v-for="decade in decadeRange">
+	
 	//                 		<span 
+	
 	//                       :class="yearClassObj(decade)"
+	
 	// 	                    @click.stop="yearSelect(decade.text)">
+	
 	// 	                      {{decade.text}}
+	
 	// 	                 	</span>
+	
 	// 					        </template>
+	
 	//                 </div>
+	
 	//             </div>
+	
 	//         </div>
+	
 	//       </div>
+	
 	// </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -16327,7 +16672,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 176 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-datepicker\">\n    <n3-input \n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"true\"\n    :disabled=\"disabled\"\n    @click=\"inputClick\"\n    :value.sync=\"value\">\n    </n3-input>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayDayView\" transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\">\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span \n                        v-for=\"d in dateRange\" :class=\"d.sclass\" \n                        @click=\"daySelect(d.date,d.sclass)\">\n                        {{d.text}}\n                      </span>\n                  </div>\n              </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayMouthView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span   \n                          :class=\"monthClassObj(m)\"\n                          @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayYearView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span \n                      :class=\"yearClassObj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                 \t</span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
+	module.exports = "<div class=\"{{prefixCls}}-datepicker\">\r\n    <n3-input \r\n    :width=\"width\"\r\n    :name=\"name\" \r\n    :rules=\"rules\" \r\n    :validate=\"validate\" \r\n    :has-feedback=\"hasFeedback\"\r\n    :placeholder=\"placeholder\"\r\n    :custom-validate=\"customValidate\"\r\n    :readonly=\"true\"\r\n    :disabled=\"disabled\"\r\n    @click=\"inputClick\"\r\n    :value.sync=\"value\">\r\n    </n3-input>\r\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayDayView\" transition=\"fadeDown\">\r\n          <div class=\"{{prefixCls}}-datepicker-inner\">\r\n              <div class=\"{{prefixCls}}-datepicker-body\">\r\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\r\n                      <span \r\n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \r\n                        @click=\"preNextMonthClick(0)\">&lt;</span>\r\n                      <span \r\n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \r\n                        @click=\"preNextMonthClick(1)\">&gt;</span>\r\n                      <p @click=\"switchMouthView\">\r\n                      {{stringifyDayHeader(currDate)}}\r\n                      </p>\r\n                  </div>\r\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\r\n                      <span v-for=\"w in weekRange\">{{w}}</span>\r\n                  </div>\r\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\r\n                      <span \r\n                        v-for=\"d in dateRange\" :class=\"d.sclass\" \r\n                        @click=\"daySelect(d.date,d.sclass)\">\r\n                        {{d.text}}\r\n                      </span>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayMouthView\" >\r\n        <div class=\"{{prefixCls}}-datepicker-inner\">\r\n            <div class=\"{{prefixCls}}-datepicker-body\">\r\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\r\n                    <span \r\n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \r\n                      @click=\"preNextYearClick(0)\">&lt;</span>\r\n                    <span \r\n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \r\n                      @click=\"preNextYearClick(1)\">&gt;</span>\r\n                    <p @click=\"switchDecadeView\">\r\n                    {{stringifyYearHeader(currDate)}}\r\n                    </p>\r\n                </div>\r\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\r\n                \t<template v-for=\"m in mouthNames\">\r\n\t                    <span   \r\n                          :class=\"monthClassObj(m)\"\r\n                          @click=\"mouthSelect($index)\">\r\n\t                      {{m.substr(0,3)}}\r\n\t                    </span>\r\n                    </template>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayYearView\" >\r\n        <div class=\"{{prefixCls}}-datepicker-inner\">\r\n            <div class=\"{{prefixCls}}-datepicker-body\">\r\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\r\n                    <span \r\n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \r\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\r\n                    <span \r\n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \r\n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\r\n                    <p>\r\n                    {{stringifyDecadeHeader(currDate)}}\r\n                    </p>\r\n                </div>\r\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\r\n                \t<template v-for=\"decade in decadeRange\">\r\n                \t\t<span \r\n                      :class=\"yearClassObj(decade)\"\r\n\t                    @click.stop=\"yearSelect(decade.text)\">\r\n\t                      {{decade.text}}\r\n\t                 \t</span>\r\n\t\t\t\t\t        </template>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n</div>";
 
 /***/ },
 /* 177 */
@@ -16535,50 +16880,95 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <div class="{{prefixCls}}-timepicker">
+	
 	//     <n3-input 
+	
 	//       :width="width"
+	
 	//       :name="name" 
+	
 	//       :rules="rules" 
+	
 	//       :validate="validate" 
+	
 	//       :has-feedback="hasFeedback"
+	
 	//       :placeholder="placeholder"
+	
 	//       :custom-validate="customValidate"
+	
 	//       :readonly="true"
+	
 	//       :disabled="disabled"
+	
 	//       @click="inputClick"
+	
 	//       :value.sync="value">
+	
 	//     </n3-input>
+	
 	//     <div class="{{prefixCls}}-timepicker-popup" v-show="show" transition="fadeDown">
+	
 	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
+	
 	//         <n3-slider 
+	
 	//           :value.sync="time.hour" 
+	
 	//           orientation="vertical" 
+	
 	//           :max="hourRange[1]" :min="hourRange[0]"  
+	
 	//           class="{{prefixCls}}-timepicker-slider">
+	
 	//         </n3-slider>
+	
 	//       </div>
+	
 	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
+	
 	//         <n3-slider 
+	
 	//           :value.sync="time.minute" 
+	
 	//           orientation="vertical" 
+	
 	//           :max="minuteRange[1]" 
+	
 	//           :min="minuteRange[0]"  
+	
 	//           class="{{prefixCls}}-timepicker-slider">
+	
 	//         </n3-slider>
+	
 	//       </div>
+	
 	//       <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
+	
 	//         <n3-slider 
+	
 	//           :value.sync="time.second" 
+	
 	//           orientation="vertical" 
+	
 	//           :max="secondRange[1]" 
+	
 	//           :min="secondRange[0]" 
+	
 	//           class="{{prefixCls}}-timepicker-slider">
+	
 	//         </n3-slider>
+	
 	//       </div>
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -16921,29 +17311,53 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div class="inline">
+	
 	//     <div :class="classObj" v-el:slider>
+	
 	//       <n3-tooltip  :placement="orientation === 'horizontal' ? 'top' : 'right'" :noresize="true" trigger="mouse">
+	
 	//         <div class="{{prefixCls}}-slider-track">
+	
 	//           <div class="{{prefixCls}}-slider-track-low"></div>
+	
 	//           <div class="{{prefixCls}}-slider-selection" v-el:selection></div>
+	
 	//           <div class="{{prefixCls}}-slider-track-high" v-el:no-selection></div>
+	
 	//           <div class="{{prefixCls}}-slider-handle {{prefixCls}}-slider-min-slider-handle {{prefixCls}}-slider-round" v-el:min-slider></div>
+	
 	//           <div class="{{prefixCls}}-slider-handle {{prefixCls}}-slider-max-slider-handle {{prefixCls}}-slider-round" v-el:max-slider></div>
+	
 	//         </div>
+	
 	//       </n3-tooltip>
+	
 	//     </div>
+	
 	//   <input type="hidden" v-model="value">
+	
 	//   <validate
+	
 	//     :name="name"
+	
 	//     :rules="rules"
+	
 	//     :valid-status.sync="validStatus"
+	
 	//     :custom-validate="customValidate" 
+	
 	//     :value="value"
+	
 	//     :results.sync="validateResults">
+	
 	//   </validate>
+	
 	// </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -17014,22 +17428,39 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <span >
+	
 	//   <span v-el:trigger >
+	
 	//     <slot>
+	
 	//     </slot>
+	
 	//   </span>
+	
 	//   <div :class="classObj"
+	
 	//     v-el:popover
+	
 	//     v-show="show"
+	
 	//     :transition="effect">
+	
 	//     <div class="{{prefixCls}}-tooltip-arrow"></div>
+	
 	//     <div class="{{prefixCls}}-tooltip-inner">
+	
 	//       {{{content}}}
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </span>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -17213,19 +17644,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 184 */
 /***/ function(module, exports) {
 
-	module.exports = "<span >\n  <span v-el:trigger >\n    <slot>\n    </slot>\n  </span>\n  <div :class=\"classObj\"\n    v-el:popover\n    v-show=\"show\"\n    :transition=\"effect\">\n    <div class=\"{{prefixCls}}-tooltip-arrow\"></div>\n    <div class=\"{{prefixCls}}-tooltip-inner\">\n      {{{content}}}\n    </div>\n  </div>\n</span>";
+	module.exports = "<span >\r\n  <span v-el:trigger >\r\n    <slot>\r\n    </slot>\r\n  </span>\r\n  <div :class=\"classObj\"\r\n    v-el:popover\r\n    v-show=\"show\"\r\n    :transition=\"effect\">\r\n    <div class=\"{{prefixCls}}-tooltip-arrow\"></div>\r\n    <div class=\"{{prefixCls}}-tooltip-inner\">\r\n      {{{content}}}\r\n    </div>\r\n  </div>\r\n</span>";
 
 /***/ },
 /* 185 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\n    <div :class=\"classObj\" v-el:slider>\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\n        <div class=\"{{prefixCls}}-slider-track\">\n          <div class=\"{{prefixCls}}-slider-track-low\"></div>\n          <div class=\"{{prefixCls}}-slider-selection\" v-el:selection></div>\n          <div class=\"{{prefixCls}}-slider-track-high\" v-el:no-selection></div>\n          <div class=\"{{prefixCls}}-slider-handle {{prefixCls}}-slider-min-slider-handle {{prefixCls}}-slider-round\" v-el:min-slider></div>\n          <div class=\"{{prefixCls}}-slider-handle {{prefixCls}}-slider-max-slider-handle {{prefixCls}}-slider-round\" v-el:max-slider></div>\n        </div>\n      </n3-tooltip>\n    </div>\n  <input type=\"hidden\" v-model=\"value\">\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
+	module.exports = "<div class=\"inline\">\r\n    <div :class=\"classObj\" v-el:slider>\r\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\r\n        <div class=\"{{prefixCls}}-slider-track\">\r\n          <div class=\"{{prefixCls}}-slider-track-low\"></div>\r\n          <div class=\"{{prefixCls}}-slider-selection\" v-el:selection></div>\r\n          <div class=\"{{prefixCls}}-slider-track-high\" v-el:no-selection></div>\r\n          <div class=\"{{prefixCls}}-slider-handle {{prefixCls}}-slider-min-slider-handle {{prefixCls}}-slider-round\" v-el:min-slider></div>\r\n          <div class=\"{{prefixCls}}-slider-handle {{prefixCls}}-slider-max-slider-handle {{prefixCls}}-slider-round\" v-el:max-slider></div>\r\n        </div>\r\n      </n3-tooltip>\r\n    </div>\r\n  <input type=\"hidden\" v-model=\"value\">\r\n  <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :custom-validate=\"customValidate\" \r\n    :value=\"value\"\r\n    :results.sync=\"validateResults\">\r\n  </validate>\r\n</div>";
 
 /***/ },
 /* 186 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-timepicker\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n    <div class=\"{{prefixCls}}-timepicker-popup\" v-show=\"show\" transition=\"fadeDown\">\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n        <n3-slider \n          :value.sync=\"time.hour\" \n          orientation=\"vertical\" \n          :max=\"hourRange[1]\" :min=\"hourRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n        <n3-slider \n          :value.sync=\"time.minute\" \n          orientation=\"vertical\" \n          :max=\"minuteRange[1]\" \n          :min=\"minuteRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n        <n3-slider \n          :value.sync=\"time.second\" \n          orientation=\"vertical\" \n          :max=\"secondRange[1]\" \n          :min=\"secondRange[0]\" \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-timepicker\">\r\n    <n3-input \r\n      :width=\"width\"\r\n      :name=\"name\" \r\n      :rules=\"rules\" \r\n      :validate=\"validate\" \r\n      :has-feedback=\"hasFeedback\"\r\n      :placeholder=\"placeholder\"\r\n      :custom-validate=\"customValidate\"\r\n      :readonly=\"true\"\r\n      :disabled=\"disabled\"\r\n      @click=\"inputClick\"\r\n      :value.sync=\"value\">\r\n    </n3-input>\r\n    <div class=\"{{prefixCls}}-timepicker-popup\" v-show=\"show\" transition=\"fadeDown\">\r\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\r\n        <n3-slider \r\n          :value.sync=\"time.hour\" \r\n          orientation=\"vertical\" \r\n          :max=\"hourRange[1]\" :min=\"hourRange[0]\"  \r\n          class=\"{{prefixCls}}-timepicker-slider\">\r\n        </n3-slider>\r\n      </div>\r\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\r\n        <n3-slider \r\n          :value.sync=\"time.minute\" \r\n          orientation=\"vertical\" \r\n          :max=\"minuteRange[1]\" \r\n          :min=\"minuteRange[0]\"  \r\n          class=\"{{prefixCls}}-timepicker-slider\">\r\n        </n3-slider>\r\n      </div>\r\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\r\n        <n3-slider \r\n          :value.sync=\"time.second\" \r\n          orientation=\"vertical\" \r\n          :max=\"secondRange[1]\" \r\n          :min=\"secondRange[0]\" \r\n          class=\"{{prefixCls}}-timepicker-slider\">\r\n        </n3-slider>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 187 */
@@ -17715,129 +18146,253 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <div class="{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker" v-el:datetimepicker>
+	
 	//     <n3-input
+	
 	//       :width="width"
+	
 	//       :name="name" 
+	
 	//       :rules="rules" 
+	
 	//       :validate="validate" 
+	
 	//       :has-feedback="hasFeedback"
+	
 	//       :placeholder="placeholder"
+	
 	//       :custom-validate="customValidate"
+	
 	//       :readonly="true"
+	
 	//       :disabled="disabled"
+	
 	//       @click="inputClick"
+	
 	//       :value.sync="value">
+	
 	//     </n3-input>
+	
 	//       <div 
+	
 	//         class="{{prefixCls}}-datepicker-popup" 
+	
 	//         v-show="displayDayView" 
+	
 	//         :style="{width:popWidth}" 
+	
 	//         transition="fadeDown">
+	
 	//           <div class="{{prefixCls}}-datepicker-inner">
+	
 	//               <div class="{{prefixCls}}-datepicker-body">
+	
 	//                   <div class="{{prefixCls}}-datepicker-ctrl">
+	
 	//                       <span 
+	
 	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	
 	//                         @click="preNextMonthClick(0)">&lt;</span>
+	
 	//                       <span 
+	
 	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	
 	//                         @click="preNextMonthClick(1)">&gt;</span>
+	
 	//                       <p @click="switchMouthView">
+	
 	//                       {{stringifyDayHeader(currDate)}}
+	
 	//                       </p>
+	
 	//                   </div>
+	
 	//                   <div class="{{prefixCls}}-datepicker-weekRange">
+	
 	//                       <span v-for="w in weekRange">{{w}}</span>
+	
 	//                   </div>
+	
 	//                   <div class="{{prefixCls}}-datepicker-dateRange">
+	
 	//                       <span v-for="d in dateRange" 
+	
 	//                       :class="[d.sclass,prefixCls + '-datetimepicker-date-span']" 
+	
 	//                       @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
+	
 	//                   </div>
+	
 	//               </div>
+	
 	//           </div>
+	
 	//           <div class="{{prefixCls}}-timepicker-con">
+	
 	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
+	
 	//               <n3-slider 
+	
 	//                 :value.sync="time.hour" 
+	
 	//                 orientation="vertical" 
+	
 	//                 :max="hourRange[1]" 
+	
 	//                 :min="hourRange[0]" >
+	
 	//               </n3-slider>
+	
 	//             </div>
+	
 	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
+	
 	//               <n3-slider 
+	
 	//                 :value.sync="time.minute" 
+	
 	//                 orientation="vertical" 
+	
 	//                 :max="minuteRange[1]" 
+	
 	//                 :min="minuteRange[0]" >
+	
 	//               </n3-slider>
+	
 	//             </div>
+	
 	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
+	
 	//               <n3-slider 
+	
 	//                 :value.sync="time.second" 
+	
 	//                 orientation="vertical" 
+	
 	//                 :max="secondRange[1]" 
+	
 	//                 :min="secondRange[0]" >
+	
 	//               </n3-slider>
+	
 	//             </div>
+	
 	//           </div>
+	
 	//       </div>
+	
 	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayMouthView">
+	
 	//         <div class="{{prefixCls}}-datepicker-inner">
+	
 	//             <div class="{{prefixCls}}-datepicker-body">
+	
 	//                 <div class="{{prefixCls}}-datepicker-ctrl">
+	
 	//                     <span 
+	
 	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	
 	//                       @click="preNextYearClick(0)">&lt;</span>
+	
 	//                     <span 
+	
 	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	
 	//                       @click="preNextYearClick(1)">&gt;</span>
+	
 	//                     <p @click="switchDecadeView">
+	
 	//                     {{stringifyYearHeader(currDate)}}
+	
 	//                     </p>
+	
 	//                 </div>
+	
 	//                 <div class="{{prefixCls}}-datepicker-mouthRange">
+	
 	//                 	<template v-for="m in mouthNames">
+	
 	// 	                    <span 
+	
 	//                         :class="monthClassobj(m)"
+	
 	//                         @click="mouthSelect($index)">
+	
 	// 	                      {{m.substr(0,3)}}
+	
 	// 	                    </span>
+	
 	//                     </template>
+	
 	//                 </div>
+	
 	//             </div>
+	
 	//         </div>
+	
 	//       </div>
+	
 	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayYearView">
+	
 	//         <div class="{{prefixCls}}-datepicker-inner">
+	
 	//             <div class="{{prefixCls}}-datepicker-body">
+	
 	//                 <div class="{{prefixCls}}-datepicker-ctrl">
+	
 	//                     <span 
+	
 	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn"
+	
 	//                       @click="preNextDecadeClick(0)">&lt;</span>
+	
 	//                     <span 
+	
 	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	
 	//                       @click="preNextDecadeClick(1)">&gt;</span>
+	
 	//                     <p>
+	
 	//                     {{stringifyDecadeHeader(currDate)}}
+	
 	//                     </p>
+	
 	//                 </div>
+	
 	//                 <div class="{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange">
+	
 	//                 	<template v-for="decade in decadeRange">
+	
 	//                 		<span
+	
 	//                       :class="yearClassobj(decade)"
+	
 	// 	                    @click.stop="yearSelect(decade.text)">
+	
 	// 	                      {{decade.text}}
+	
 	// 	                  </span>
+	
 	// 					        </template>
+	
 	//                 </div>
+	
 	//             </div>
+	
 	//         </div>
+	
 	//       </div>
+	
 	// </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -17845,7 +18400,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 189 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker\" v-el:datetimepicker>\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n      <div \n        class=\"{{prefixCls}}-datepicker-popup\" \n        v-show=\"displayDayView\" \n        :style=\"{width:popWidth}\" \n        transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\">\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span v-for=\"d in dateRange\" \n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                  </div>\n              </div>\n          </div>\n          <div class=\"{{prefixCls}}-timepicker-con\">\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n              <n3-slider \n                :value.sync=\"time.hour\" \n                orientation=\"vertical\" \n                :max=\"hourRange[1]\" \n                :min=\"hourRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n              <n3-slider \n                :value.sync=\"time.minute\" \n                orientation=\"vertical\" \n                :max=\"minuteRange[1]\" \n                :min=\"minuteRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n              <n3-slider \n                :value.sync=\"time.second\" \n                orientation=\"vertical\" \n                :max=\"secondRange[1]\" \n                :min=\"secondRange[0]\" >\n              </n3-slider>\n            </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayMouthView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayYearView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
+	module.exports = "<div class=\"{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker\" v-el:datetimepicker>\r\n    <n3-input\r\n      :width=\"width\"\r\n      :name=\"name\" \r\n      :rules=\"rules\" \r\n      :validate=\"validate\" \r\n      :has-feedback=\"hasFeedback\"\r\n      :placeholder=\"placeholder\"\r\n      :custom-validate=\"customValidate\"\r\n      :readonly=\"true\"\r\n      :disabled=\"disabled\"\r\n      @click=\"inputClick\"\r\n      :value.sync=\"value\">\r\n    </n3-input>\r\n      <div \r\n        class=\"{{prefixCls}}-datepicker-popup\" \r\n        v-show=\"displayDayView\" \r\n        :style=\"{width:popWidth}\" \r\n        transition=\"fadeDown\">\r\n          <div class=\"{{prefixCls}}-datepicker-inner\">\r\n              <div class=\"{{prefixCls}}-datepicker-body\">\r\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\r\n                      <span \r\n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \r\n                        @click=\"preNextMonthClick(0)\">&lt;</span>\r\n                      <span \r\n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \r\n                        @click=\"preNextMonthClick(1)\">&gt;</span>\r\n                      <p @click=\"switchMouthView\">\r\n                      {{stringifyDayHeader(currDate)}}\r\n                      </p>\r\n                  </div>\r\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\r\n                      <span v-for=\"w in weekRange\">{{w}}</span>\r\n                  </div>\r\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\r\n                      <span v-for=\"d in dateRange\" \r\n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \r\n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\r\n                  </div>\r\n              </div>\r\n          </div>\r\n          <div class=\"{{prefixCls}}-timepicker-con\">\r\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\r\n              <n3-slider \r\n                :value.sync=\"time.hour\" \r\n                orientation=\"vertical\" \r\n                :max=\"hourRange[1]\" \r\n                :min=\"hourRange[0]\" >\r\n              </n3-slider>\r\n            </div>\r\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\r\n              <n3-slider \r\n                :value.sync=\"time.minute\" \r\n                orientation=\"vertical\" \r\n                :max=\"minuteRange[1]\" \r\n                :min=\"minuteRange[0]\" >\r\n              </n3-slider>\r\n            </div>\r\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\r\n              <n3-slider \r\n                :value.sync=\"time.second\" \r\n                orientation=\"vertical\" \r\n                :max=\"secondRange[1]\" \r\n                :min=\"secondRange[0]\" >\r\n              </n3-slider>\r\n            </div>\r\n          </div>\r\n      </div>\r\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayMouthView\">\r\n        <div class=\"{{prefixCls}}-datepicker-inner\">\r\n            <div class=\"{{prefixCls}}-datepicker-body\">\r\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\r\n                    <span \r\n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \r\n                      @click=\"preNextYearClick(0)\">&lt;</span>\r\n                    <span \r\n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \r\n                      @click=\"preNextYearClick(1)\">&gt;</span>\r\n                    <p @click=\"switchDecadeView\">\r\n                    {{stringifyYearHeader(currDate)}}\r\n                    </p>\r\n                </div>\r\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\r\n                \t<template v-for=\"m in mouthNames\">\r\n\t                    <span \r\n                        :class=\"monthClassobj(m)\"\r\n                        @click=\"mouthSelect($index)\">\r\n\t                      {{m.substr(0,3)}}\r\n\t                    </span>\r\n                    </template>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayYearView\">\r\n        <div class=\"{{prefixCls}}-datepicker-inner\">\r\n            <div class=\"{{prefixCls}}-datepicker-body\">\r\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\r\n                    <span \r\n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\"\r\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\r\n                    <span \r\n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \r\n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\r\n                    <p>\r\n                    {{stringifyDecadeHeader(currDate)}}\r\n                    </p>\r\n                </div>\r\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\r\n                \t<template v-for=\"decade in decadeRange\">\r\n                \t\t<span\r\n                      :class=\"yearClassobj(decade)\"\r\n\t                    @click.stop=\"yearSelect(decade.text)\">\r\n\t                      {{decade.text}}\r\n\t                  </span>\r\n\t\t\t\t\t        </template>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n</div>";
 
 /***/ },
 /* 190 */
@@ -17943,22 +18498,32 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <div class="{{prefixCls}}-dropdown-con">   
+	
 	//     <span v-el:trigger> 
+	
 	//       <slot name="trigger" ></slot>
+	
 	//     </span>
+	
 	//     <ul class="{{prefixCls}}-dropdown-menu" v-show="show" :transition="effect">
+	
 	//       <slot></slot>
+	
 	//     </ul>
+	
 	//   </div>
+	
 	// </template>
+	
 	// <script>
 
 /***/ },
 /* 192 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-dropdown-con\">   \n    <span v-el:trigger> \n      <slot name=\"trigger\" ></slot>\n    </span>\n    <ul class=\"{{prefixCls}}-dropdown-menu\" v-show=\"show\" :transition=\"effect\">\n      <slot></slot>\n    </ul>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-dropdown-con\">   \r\n    <span v-el:trigger> \r\n      <slot name=\"trigger\" ></slot>\r\n    </span>\r\n    <ul class=\"{{prefixCls}}-dropdown-menu\" v-show=\"show\" :transition=\"effect\">\r\n      <slot></slot>\r\n    </ul>\r\n  </div>";
 
 /***/ },
 /* 193 */
@@ -18013,32 +18578,55 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//   <div :class="classObj">
+	
 	//     <div class="{{prefixCls}}-modal-dialog" 
+	
 	//       :style="{'width': width}">
+	
 	//       <div class="{{prefixCls}}-modal-content">
+	
 	//         <slot name="header">
+	
 	//           <div class="{{prefixCls}}-modal-header">
+	
 	//             <button type="button" class="{{prefixCls}}-close" @click="close"><span>&times;</span></button>
+	
 	//             <h4 class="{{prefixCls}}-modal-title" >{{title}}</h4>
+	
 	//           </div>
+	
 	//         </slot>
 	
+	
 	//         <div class="{{prefixCls}}-modal-body">
+	
 	//           <slot name="body"></slot>
+	
 	//         </div>
 	
 	
 	//         <slot name="footer">
+	
 	//           <div class="{{prefixCls}}-modal-footer">
+	
 	//             <n3-button  @click="close">取消</n3-button>
+	
 	//             <n3-button type="primary" @click="confirm">确定</n3-button>
+	
 	//           </div>
+	
 	//         </slot>
+	
 	//       </div>
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -18154,7 +18742,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 195 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\">\n    <div class=\"{{prefixCls}}-modal-dialog\" \n      :style=\"{'width': width}\">\n      <div class=\"{{prefixCls}}-modal-content\">\n        <slot name=\"header\">\n          <div class=\"{{prefixCls}}-modal-header\">\n            <button type=\"button\" class=\"{{prefixCls}}-close\" @click=\"close\"><span>&times;</span></button>\n            <h4 class=\"{{prefixCls}}-modal-title\" >{{title}}</h4>\n          </div>\n        </slot>\n        \n        <div class=\"{{prefixCls}}-modal-body\">\n          <slot name=\"body\"></slot>\n        </div>\n        \n        \n        <slot name=\"footer\">\n          <div class=\"{{prefixCls}}-modal-footer\">\n            <n3-button  @click=\"close\">取消</n3-button>\n            <n3-button type=\"primary\" @click=\"confirm\">确定</n3-button>\n          </div>\n        </slot>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div :class=\"classObj\">\r\n    <div class=\"{{prefixCls}}-modal-dialog\" \r\n      :style=\"{'width': width}\">\r\n      <div class=\"{{prefixCls}}-modal-content\">\r\n        <slot name=\"header\">\r\n          <div class=\"{{prefixCls}}-modal-header\">\r\n            <button type=\"button\" class=\"{{prefixCls}}-close\" @click=\"close\"><span>&times;</span></button>\r\n            <h4 class=\"{{prefixCls}}-modal-title\" >{{title}}</h4>\r\n          </div>\r\n        </slot>\r\n        \r\n        <div class=\"{{prefixCls}}-modal-body\">\r\n          <slot name=\"body\"></slot>\r\n        </div>\r\n        \r\n        \r\n        <slot name=\"footer\">\r\n          <div class=\"{{prefixCls}}-modal-footer\">\r\n            <n3-button  @click=\"close\">取消</n3-button>\r\n            <n3-button type=\"primary\" @click=\"confirm\">确定</n3-button>\r\n          </div>\r\n        </slot>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 196 */
@@ -18190,10 +18778,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <div :value="value" class="{{prefixCls}}-option">
+	
 	//     <slot></slot>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -18213,7 +18806,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 198 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :value=\"value\" class=\"{{prefixCls}}-option\">\n    <slot></slot>\n  </div>";
+	module.exports = "<div :value=\"value\" class=\"{{prefixCls}}-option\">\r\n    <slot></slot>\r\n  </div>";
 
 /***/ },
 /* 199 */
@@ -18301,25 +18894,45 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div class="{{prefixCls}}-panel {{prefixCls}}-panel-default">
+	
 	//     <div class="{{prefixCls}}-panel-heading">
+	
 	//       <h4 class="{{prefixCls}}-panel-title">
+	
 	//         <a @click="toggleIsOpen()">
+	
 	//            {{ header }}
+	
 	//         </a>
+	
 	//       </h4>
+	
 	//     </div>
+	
 	//     <div 
+	
 	//       class="{{prefixCls}}-panel-collapse"
+	
 	//       v-el:panel
+	
 	//       v-show="isOpen"
+	
 	//       :transition="$parent.effect">
+	
 	//       <div class="{{prefixCls}}-panel-body">
+	
 	//         <slot></slot>
+	
 	//       </div>
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -18327,7 +18940,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 201 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-panel {{prefixCls}}-panel-default\">\n    <div class=\"{{prefixCls}}-panel-heading\">\n      <h4 class=\"{{prefixCls}}-panel-title\">\n        <a @click=\"toggleIsOpen()\">\n           {{ header }}\n        </a>\n      </h4>\n    </div>\n    <div \n      class=\"{{prefixCls}}-panel-collapse\"\n      v-el:panel\n      v-show=\"isOpen\"\n      :transition=\"$parent.effect\">\n      <div class=\"{{prefixCls}}-panel-body\">\n        <slot></slot>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-panel {{prefixCls}}-panel-default\">\r\n    <div class=\"{{prefixCls}}-panel-heading\">\r\n      <h4 class=\"{{prefixCls}}-panel-title\">\r\n        <a @click=\"toggleIsOpen()\">\r\n           {{ header }}\r\n        </a>\r\n      </h4>\r\n    </div>\r\n    <div \r\n      class=\"{{prefixCls}}-panel-collapse\"\r\n      v-el:panel\r\n      v-show=\"isOpen\"\r\n      :transition=\"$parent.effect\">\r\n      <div class=\"{{prefixCls}}-panel-body\">\r\n        <slot></slot>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 202 */
@@ -18396,25 +19009,45 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <span >
+	
 	//     <span v-el:trigger >
+	
 	//       <slot>
+	
 	//       </slot>
+	
 	//     </span>
+	
 	//     <div 
+	
 	//       style="max-width:none"
+	
 	//       :class="classObj"
+	
 	//       v-el:popover
+	
 	//       v-show="show"
+	
 	//       :transition="effect">
+	
 	//         <div class="{{prefixCls}}-popover-arrow"></div>
+	
 	//         <h3 class="{{prefixCls}}-popover-title" v-show="header">{{title}}</h3>
+	
 	//         <div class="{{prefixCls}}-popover-content" v-el:content>
+	
 	//          <slot name="content"></slot>
+	
 	//         </div>
+	
 	//     </div>
+	
 	// </span>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -18422,7 +19055,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 204 */
 /***/ function(module, exports) {
 
-	module.exports = "<span >\n    <span v-el:trigger >\n      <slot>\n      </slot>\n    </span>\n    <div \n      style=\"max-width:none\"\n      :class=\"classObj\"\n      v-el:popover\n      v-show=\"show\"\n      :transition=\"effect\">\n        <div class=\"{{prefixCls}}-popover-arrow\"></div>\n        <h3 class=\"{{prefixCls}}-popover-title\" v-show=\"header\">{{title}}</h3>\n        <div class=\"{{prefixCls}}-popover-content\" v-el:content>\n         <slot name=\"content\"></slot>\n        </div>\n    </div>\n</span>";
+	module.exports = "<span >\r\n    <span v-el:trigger >\r\n      <slot>\r\n      </slot>\r\n    </span>\r\n    <div \r\n      style=\"max-width:none\"\r\n      :class=\"classObj\"\r\n      v-el:popover\r\n      v-show=\"show\"\r\n      :transition=\"effect\">\r\n        <div class=\"{{prefixCls}}-popover-arrow\"></div>\r\n        <h3 class=\"{{prefixCls}}-popover-title\" v-show=\"header\">{{title}}</h3>\r\n        <div class=\"{{prefixCls}}-popover-content\" v-el:content>\r\n         <slot name=\"content\"></slot>\r\n        </div>\r\n    </div>\r\n</span>";
 
 /***/ },
 /* 205 */
@@ -18469,22 +19102,39 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	// 	<n3-popover 
+	
 	// 		:show.sync="show"
+	
 	//         :effect="effect"
+	
 	//         :header="false" 
+	
 	//         :placement="placement" 
+	
 	//         trigger="click">
+	
 	//         <div slot="content">
+	
 	//             <p>{{content}}</p>
+	
 	//             <div style="float:right;margin:10px;">
+	
 	//             <n3-button size="sm"  @click="show=false">{{cancelText}}</n3-button>
+	
 	//             <n3-button size="sm" type="primary" @click="confirm">{{okText}}</n3-button>
+	
 	//             </div>
+	
 	//         </div> 
+	
 	//         <slot></slot>
+	
 	//       </n3-popover>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -18538,7 +19188,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 207 */
 /***/ function(module, exports) {
 
-	module.exports = "<n3-popover \n\t\t:show.sync=\"show\"\n        :effect=\"effect\"\n        :header=\"false\" \n        :placement=\"placement\" \n        trigger=\"click\">\n        <div slot=\"content\">\n            <p>{{content}}</p>\n            <div style=\"float:right;margin:10px;\">\n            <n3-button size=\"sm\"  @click=\"show=false\">{{cancelText}}</n3-button>\n            <n3-button size=\"sm\" type=\"primary\" @click=\"confirm\">{{okText}}</n3-button>\n            </div>\n        </div> \n        <slot></slot>\n      </n3-popover>";
+	module.exports = "<n3-popover \r\n\t\t:show.sync=\"show\"\r\n        :effect=\"effect\"\r\n        :header=\"false\" \r\n        :placement=\"placement\" \r\n        trigger=\"click\">\r\n        <div slot=\"content\">\r\n            <p>{{content}}</p>\r\n            <div style=\"float:right;margin:10px;\">\r\n            <n3-button size=\"sm\"  @click=\"show=false\">{{cancelText}}</n3-button>\r\n            <n3-button size=\"sm\" type=\"primary\" @click=\"confirm\">{{okText}}</n3-button>\r\n            </div>\r\n        </div> \r\n        <slot></slot>\r\n      </n3-popover>";
 
 /***/ },
 /* 208 */
@@ -18574,12 +19224,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	// 	<div 
+	
 	// 	  :class="classObj"
+	
 	// 	  :style="{width: now + '%',height: height}">
+	
 	// 	  {{label ? now + '%':'' }}
+	
 	// 	</div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -18636,7 +19293,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 210 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \n\t  :class=\"classObj\"\n\t  :style=\"{width: now + '%',height: height}\">\n\t  {{label ? now + '%':'' }}\n\t</div>";
+	module.exports = "<div \r\n\t  :class=\"classObj\"\r\n\t  :style=\"{width: now + '%',height: height}\">\r\n\t  {{label ? now + '%':'' }}\r\n\t</div>";
 
 /***/ },
 /* 211 */
@@ -18672,10 +19329,15 @@ return /******/ (function(modules) { // webpackBootstrap
 		value: true
 	});
 	// <template>
+	
 	// 	<div class="{{prefixCls}}-progress">
+	
 	// 		<slot></slot>
+	
 	// 	</div>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 		props: {
@@ -18691,7 +19353,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 213 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-progress\">\n\t\t<slot></slot>\n\t</div>";
+	module.exports = "<div class=\"{{prefixCls}}-progress\">\r\n\t\t<slot></slot>\r\n\t</div>";
 
 /***/ },
 /* 214 */
@@ -18727,19 +19389,33 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	// <label class="{{prefixCls}}-radio-con">
+	
 	//   <span :class="wrapClasses">
+	
 	//     <span class="{{prefixCls}}-radio-inner"></span> 
+	
 	//     <input 
+	
 	//     type="radio" 
+	
 	//     :disabled="disabled"
+	
 	//     :checked="!!checked"
+	
 	//     class="{{prefixCls}}-radio-input" 
+	
 	//     @click.prevent="handleClick" >
+	
 	//   </span>
+	
 	//   <span><slot></slot></span>
+	
 	// </label>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -18799,7 +19475,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 216 */
 /***/ function(module, exports) {
 
-	module.exports = "<label class=\"{{prefixCls}}-radio-con\">\n  <span :class=\"wrapClasses\">\n    <span class=\"{{prefixCls}}-radio-inner\"></span> \n    <input \n    type=\"radio\" \n    :disabled=\"disabled\"\n    :checked=\"!!checked\"\n    class=\"{{prefixCls}}-radio-input\" \n    @click.prevent=\"handleClick\" >\n  </span>\n  <span><slot></slot></span>\n</label>";
+	module.exports = "<label class=\"{{prefixCls}}-radio-con\">\r\n  <span :class=\"wrapClasses\">\r\n    <span class=\"{{prefixCls}}-radio-inner\"></span> \r\n    <input \r\n    type=\"radio\" \r\n    :disabled=\"disabled\"\r\n    :checked=\"!!checked\"\r\n    class=\"{{prefixCls}}-radio-input\" \r\n    @click.prevent=\"handleClick\" >\r\n  </span>\r\n  <span><slot></slot></span>\r\n</label>";
 
 /***/ },
 /* 217 */
@@ -18896,15 +19572,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <n3-button 
+	
 	//     @click.prevent="handleClick"
+	
 	//     :class="classObj" 
+	
 	//     :disabled="disabled"
+	
 	//     :active="active"
+	
 	//     :type="type">
+	
 	//     <slot></slot>
+	
 	//   </n3-button>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -18912,7 +19598,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 219 */
 /***/ function(module, exports) {
 
-	module.exports = "<n3-button \n    @click.prevent=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :active=\"active\"\n    :type=\"type\">\n    <slot></slot>\n  </n3-button>";
+	module.exports = "<n3-button \r\n    @click.prevent=\"handleClick\"\r\n    :class=\"classObj\" \r\n    :disabled=\"disabled\"\r\n    :active=\"active\"\r\n    :type=\"type\">\r\n    <slot></slot>\r\n  </n3-button>";
 
 /***/ },
 /* 220 */
@@ -18967,42 +19653,75 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	// <div class="{{prefixCls}}-btn-group {{prefixCls}}-radio-group">
+	
 	//     <template v-if="options">
+	
 	//         <n3-radio 
+	
 	//           v-if="type==='checkbox'" 
+	
 	//           v-for="item in options"
+	
 	//           :value="item.value"
+	
 	//           :checked="item.checked"
+	
 	//           :disabled="item.disabled">
+	
 	//           {{item.label}}
+	
 	//         </n3-radio>
 	
+	
 	//          <n3-radio-btn 
+	
 	//          v-if="type==='button'" 
+	
 	//          v-for="item in options"
+	
 	//          :value="item.value"
+	
 	//          :checked="item.checked"
+	
 	//          :disabled="item.disabled">
+	
 	//          {{item.label}}
+	
 	//         </n3-radio-btn>
 	
+	
 	//     </template>
+	
 	//     <template v-else>
+	
 	//     <slot></slot>
+	
 	//     </template>
+	
 	
 	//     <validate
+	
 	//       :name="name"
+	
 	//       :rules="rules"
+	
 	//       :valid-status.sync="validStatus"
+	
 	//       :custom-validate="customValidate" 
+	
 	//       :value="value"
+	
 	//       :results.sync="validateResults">
+	
 	//     </validate>
 	
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -19052,7 +19771,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 222 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-radio-group\">\n    <template v-if=\"options\">\n        <n3-radio \n          v-if=\"type==='checkbox'\" \n          v-for=\"item in options\"\n          :value=\"item.value\"\n          :checked=\"item.checked\"\n          :disabled=\"item.disabled\">\n          {{item.label}}\n        </n3-radio>\n\n         <n3-radio-btn \n         v-if=\"type==='button'\" \n         v-for=\"item in options\"\n         :value=\"item.value\"\n         :checked=\"item.checked\"\n         :disabled=\"item.disabled\">\n         {{item.label}}\n        </n3-radio-btn>\n\n    </template>\n    <template v-else>\n    <slot></slot>\n    </template>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :valid-status.sync=\"validStatus\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-radio-group\">\r\n    <template v-if=\"options\">\r\n        <n3-radio \r\n          v-if=\"type==='checkbox'\" \r\n          v-for=\"item in options\"\r\n          :value=\"item.value\"\r\n          :checked=\"item.checked\"\r\n          :disabled=\"item.disabled\">\r\n          {{item.label}}\r\n        </n3-radio>\r\n\r\n         <n3-radio-btn \r\n         v-if=\"type==='button'\" \r\n         v-for=\"item in options\"\r\n         :value=\"item.value\"\r\n         :checked=\"item.checked\"\r\n         :disabled=\"item.disabled\">\r\n         {{item.label}}\r\n        </n3-radio-btn>\r\n\r\n    </template>\r\n    <template v-else>\r\n    <slot></slot>\r\n    </template>\r\n\r\n    <validate\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :valid-status.sync=\"validStatus\"\r\n      :custom-validate=\"customValidate\" \r\n      :value=\"value\"\r\n      :results.sync=\"validateResults\">\r\n    </validate>\r\n\r\n  </div>";
 
 /***/ },
 /* 223 */
@@ -19123,69 +19842,131 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//   <div class="{{prefixCls}}-btn-group {{prefixCls}}-select-group" >
+	
 	//     <n3-button  
+	
 	//       :style="{width:width}"
+	
 	//       :disabled="disabled"
+	
 	//       :size="size"
+	
 	//       class="{{prefixCls}}-dropdown-toggle"
+	
 	//       @click="toggleDropdown">
 	
+	
 	//       <span  v-if="showPlaceholder || !showselected">{{placeholder}}</span>
+	
 	//       <span  v-if="showselected" >
+	
 	//         <template v-for="item in selectedItems">
+	
 	//           {{{format.call(this._context,item)}}}
+	
 	//         </template>
+	
 	//       </span>
+	
 	//       <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
+	
 	//       <n3-badge v-if="badge">{{badge}}</n3-badge>
+	
 	//     </n3-button>
+	
 	//     <ul 
+	
 	//       :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
+	
 	//       class="{{prefixCls}}-dropdown-menu" 
+	
 	//       v-el:menu 
+	
 	//       v-show="show" 
+	
 	//       transition="fadeDown">
+	
 	//         <li v-if="search">
+	
 	//           <n3-input
+	
 	//             class="{{prefixCls}}-select-search"
+	
 	//             :placeholder="inputPlaceholder"
+	
 	//             :value.sync="searchText"
+	
 	//             @keydown.enter="addExtra"
+	
 	//           ></n3-input>
+	
 	//           <n3-icon type="plus-square-o" v-if="extra" @click="addExtra"></n3-icon>
-	//         </li>
-	//         <li v-if="multiple" class="{{prefixCls}}-select-all">
-	//           <a @click.prevent="selectAll">
-	//             全选
-	//            <n3-icon type="check" v-show="allSelected"></n3-icon>
-	//           </a>
+	
 	//         </li>
 	
+	//         <li v-if="multiple" class="{{prefixCls}}-select-all">
+	
+	//           <a @click.prevent="selectAll">
+	
+	//             全选
+	
+	//            <n3-icon type="check" v-show="allSelected"></n3-icon>
+	
+	//           </a>
+	
+	//         </li>
+	
+	
 	//         <template v-if="options.length">
+	
 	//           <li v-for="option in options | filterSearch searchText " 
+	
 	//               :value="option.value" 
+	
 	//               style="position:relative">
+	
 	//             <a @click.prevent="select(option)" >
+	
 	//               {{{ option.label }}} 
+	
 	//               <n3-icon type="check" v-show="findIndex(option.value) !== -1"></n3-icon>
+	
 	//             </a>
+	
 	//           </li>
+	
 	//         </template>
+	
 	//         <slot v-else ></slot>
+	
 	//       <div class="{{prefixCls}}-notify" v-show="showNotify" transition="fade">最多选择 {{limit}} 项</div>
+	
 	//     </ul>
+	
 	//     <div class="clearfix"></div>
+	
 	//     <validate
+	
 	//       :name="name"
+	
 	//       :rules="rules"
+	
 	//       :valid-status.sync="validStatus"
+	
 	//       :custom-validate="customValidate" 
+	
 	//       :value="value"
+	
 	//       :results.sync="validateResults">
+	
 	//     </validate>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -19480,7 +20261,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 225 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-select-group\" >\n    <n3-button  \n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      class=\"{{prefixCls}}-dropdown-toggle\"\n      @click=\"toggleDropdown\">\n\n      <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n      <span  v-if=\"showselected\" >\n        <template v-for=\"item in selectedItems\">\n          {{{format.call(this._context,item)}}}\n        </template>\n      </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n      <n3-badge v-if=\"badge\">{{badge}}</n3-badge>\n    </n3-button>\n    <ul \n      :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n      class=\"{{prefixCls}}-dropdown-menu\" \n      v-el:menu \n      v-show=\"show\" \n      transition=\"fadeDown\">\n        <li v-if=\"search\">\n          <n3-input\n            class=\"{{prefixCls}}-select-search\"\n            :placeholder=\"inputPlaceholder\"\n            :value.sync=\"searchText\"\n            @keydown.enter=\"addExtra\"\n          ></n3-input>\n          <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\n        </li>\n        <li v-if=\"multiple\" class=\"{{prefixCls}}-select-all\">\n          <a @click.prevent=\"selectAll\">\n            全选\n           <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n          </a>\n        </li>\n\n        <template v-if=\"options.length\">\n          <li v-for=\"option in options | filterSearch searchText \" \n              :value=\"option.value\" \n              style=\"position:relative\">\n            <a @click.prevent=\"select(option)\" >\n              {{{ option.label }}} \n              <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n            </a>\n          </li>\n        </template>\n        <slot v-else ></slot>\n      <div class=\"{{prefixCls}}-notify\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n    </ul>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :valid-status.sync=\"validStatus\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-btn-group {{prefixCls}}-select-group\" >\r\n    <n3-button  \r\n      :style=\"{width:width}\"\r\n      :disabled=\"disabled\"\r\n      :size=\"size\"\r\n      class=\"{{prefixCls}}-dropdown-toggle\"\r\n      @click=\"toggleDropdown\">\r\n\r\n      <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\r\n      <span  v-if=\"showselected\" >\r\n        <template v-for=\"item in selectedItems\">\r\n          {{{format.call(this._context,item)}}}\r\n        </template>\r\n      </span>\r\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\r\n      <n3-badge v-if=\"badge\">{{badge}}</n3-badge>\r\n    </n3-button>\r\n    <ul \r\n      :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \r\n      class=\"{{prefixCls}}-dropdown-menu\" \r\n      v-el:menu \r\n      v-show=\"show\" \r\n      transition=\"fadeDown\">\r\n        <li v-if=\"search\">\r\n          <n3-input\r\n            class=\"{{prefixCls}}-select-search\"\r\n            :placeholder=\"inputPlaceholder\"\r\n            :value.sync=\"searchText\"\r\n            @keydown.enter=\"addExtra\"\r\n          ></n3-input>\r\n          <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\r\n        </li>\r\n        <li v-if=\"multiple\" class=\"{{prefixCls}}-select-all\">\r\n          <a @click.prevent=\"selectAll\">\r\n            全选\r\n           <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\r\n          </a>\r\n        </li>\r\n\r\n        <template v-if=\"options.length\">\r\n          <li v-for=\"option in options | filterSearch searchText \" \r\n              :value=\"option.value\" \r\n              style=\"position:relative\">\r\n            <a @click.prevent=\"select(option)\" >\r\n              {{{ option.label }}} \r\n              <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\r\n            </a>\r\n          </li>\r\n        </template>\r\n        <slot v-else ></slot>\r\n      <div class=\"{{prefixCls}}-notify\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\r\n    </ul>\r\n    <div class=\"clearfix\"></div>\r\n    <validate\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :valid-status.sync=\"validStatus\"\r\n      :custom-validate=\"customValidate\" \r\n      :value=\"value\"\r\n      :results.sync=\"validateResults\">\r\n    </validate>\r\n  </div>";
 
 /***/ },
 /* 226 */
@@ -19516,12 +20297,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <div 
+	
 	//     :class="classObj"
+	
 	//     v-show="show">
+	
 	//     <slot></slot>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -19586,7 +20374,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 228 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \n    :class=\"classObj\"\n    v-show=\"show\">\n    <slot></slot>\n  </div>";
+	module.exports = "<div \r\n    :class=\"classObj\"\r\n    v-show=\"show\">\r\n    <slot></slot>\r\n  </div>";
 
 /***/ },
 /* 229 */
@@ -19633,24 +20421,43 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//   <div>
+	
 	//     <ul :class="classObj" >
+	
 	//       <li
+	
 	//           v-for="r in renderData"
+	
 	//           :class="liclassObj($index,r)"
+	
 	//           @click.prevent="handleTabListClick($index, r)"
+	
 	//           :disabled="r.disabled">
+	
 	//           <a href="#">
+	
 	//             {{r.header}}
+	
 	//             <n3-badge v-if="r.badge">{{r.badge}}</n3-badge>
+	
 	//           </a>
+	
 	//       </li>
+	
 	//     </ul>
+	
 	//     <div class="{{prefixCls}}-tab-content" v-el:tabContent>
+	
 	//       <slot></slot>
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -19742,7 +20549,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 231 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n    <ul :class=\"classObj\" >\n      <li\n          v-for=\"r in renderData\"\n          :class=\"liclassObj($index,r)\"\n          @click.prevent=\"handleTabListClick($index, r)\"\n          :disabled=\"r.disabled\">\n          <a href=\"#\">\n            {{r.header}}\n            <n3-badge v-if=\"r.badge\">{{r.badge}}</n3-badge>\n          </a>\n      </li>\n    </ul>\n    <div class=\"{{prefixCls}}-tab-content\" v-el:tabContent>\n      <slot></slot>\n    </div>\n  </div>";
+	module.exports = "<div>\r\n    <ul :class=\"classObj\" >\r\n      <li\r\n          v-for=\"r in renderData\"\r\n          :class=\"liclassObj($index,r)\"\r\n          @click.prevent=\"handleTabListClick($index, r)\"\r\n          :disabled=\"r.disabled\">\r\n          <a href=\"#\">\r\n            {{r.header}}\r\n            <n3-badge v-if=\"r.badge\">{{r.badge}}</n3-badge>\r\n          </a>\r\n      </li>\r\n    </ul>\r\n    <div class=\"{{prefixCls}}-tab-content\" v-el:tabContent>\r\n      <slot></slot>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 232 */
@@ -19778,10 +20585,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <div class="{{prefixCls}}-btn-group">
+	
 	//     <slot></slot>  
+	
 	//   </div>
+	
 	// </template>
+	
 	// <script>
 	
 	exports.default = {
@@ -19798,7 +20610,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 234 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-btn-group\">\n    <slot></slot>  \n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-btn-group\">\r\n    <slot></slot>  \r\n  </div>";
 
 /***/ },
 /* 235 */
@@ -19834,10 +20646,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <div :class="classObj" >
+	
 	//   	<slot></slot>		
+	
 	//   </div>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -19870,7 +20687,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 237 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\n  \t<slot></slot>\t\t\n  </div>";
+	module.exports = "<div :class=\"classObj\" >\r\n  \t<slot></slot>\t\t\r\n  </div>";
 
 /***/ },
 /* 238 */
@@ -19906,10 +20723,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <div class="{{prefixCls}}-row">
+	
 	//   	<slot></slot>		
+	
 	//   </div>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -19925,7 +20747,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 240 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-row\">\n  \t<slot></slot>\t\t\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-row\">\r\n  \t<slot></slot>\t\t\r\n  </div>";
 
 /***/ },
 /* 241 */
@@ -19961,12 +20783,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	// 	<nav class="{{prefixCls}}-collapse {{prefixCls}}-navbar-collapse {{prefixCls}}-navbar-{{theme}} {{prefixCls}}-navbar-{{type}} clearfix">
+	
 	// 		<ul class="{{prefixCls}}-nav {{prefixCls}}-navbar-nav">
+	
 	// 			<slot></slot>	
+	
 	// 		</ul>
+	
 	// 	</nav>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -19990,7 +20819,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 243 */
 /***/ function(module, exports) {
 
-	module.exports = "<nav class=\"{{prefixCls}}-collapse {{prefixCls}}-navbar-collapse {{prefixCls}}-navbar-{{theme}} {{prefixCls}}-navbar-{{type}} clearfix\">\n\t\t<ul class=\"{{prefixCls}}-nav {{prefixCls}}-navbar-nav\">\n\t\t\t<slot></slot>\t\n\t\t</ul>\n\t</nav>";
+	module.exports = "<nav class=\"{{prefixCls}}-collapse {{prefixCls}}-navbar-collapse {{prefixCls}}-navbar-{{theme}} {{prefixCls}}-navbar-{{type}} clearfix\">\r\n\t\t<ul class=\"{{prefixCls}}-nav {{prefixCls}}-navbar-nav\">\r\n\t\t\t<slot></slot>\t\r\n\t\t</ul>\r\n\t</nav>";
 
 /***/ },
 /* 244 */
@@ -20037,16 +20866,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	// <span>
+	
 	//   <n3-dropdown :trigger="trigger" :show.sync="show" :click-close="true" effect="collapse">
+	
 	//     <div slot="trigger"   class="{{prefixCls}}-sub-nav-trigger" >
+	
 	//       <slot name="title"></slot>
+	
 	//       <n3-icon class="{{prefixCls}}-sub-nav-fa" :type="show ? 'angle-up' : 'angle-down'" ></n3-icon>
+	
 	//     </div>
+	
 	//     <slot></slot>  
+	
 	//   </n3-dropdown>
+	
 	// </span>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -20075,7 +20915,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 246 */
 /***/ function(module, exports) {
 
-	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show.sync=\"show\" :click-close=\"true\" effect=\"collapse\">\n    <div slot=\"trigger\"   class=\"{{prefixCls}}-sub-nav-trigger\" >\n      <slot name=\"title\"></slot>\n      <n3-icon class=\"{{prefixCls}}-sub-nav-fa\" :type=\"show ? 'angle-up' : 'angle-down'\" ></n3-icon>\n    </div>\n    <slot></slot>  \n  </n3-dropdown>\n</span>";
+	module.exports = "<span>\r\n  <n3-dropdown :trigger=\"trigger\" :show.sync=\"show\" :click-close=\"true\" effect=\"collapse\">\r\n    <div slot=\"trigger\"   class=\"{{prefixCls}}-sub-nav-trigger\" >\r\n      <slot name=\"title\"></slot>\r\n      <n3-icon class=\"{{prefixCls}}-sub-nav-fa\" :type=\"show ? 'angle-up' : 'angle-down'\" ></n3-icon>\r\n    </div>\r\n    <slot></slot>  \r\n  </n3-dropdown>\r\n</span>";
 
 /***/ },
 /* 247 */
@@ -20111,10 +20951,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	// 	<li :class="classObj">
+	
 	// 		<slot></slot>
+	
 	// 	</li>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -20150,7 +20995,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 249 */
 /***/ function(module, exports) {
 
-	module.exports = "<li :class=\"classObj\">\n\t\t<slot></slot>\n\t</li>";
+	module.exports = "<li :class=\"classObj\">\r\n\t\t<slot></slot>\r\n\t</li>";
 
 /***/ },
 /* 250 */
@@ -20186,10 +21031,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <div :class="classObj" >
+	
 	//   	<slot></slot>		
+	
 	//   </div>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -20230,7 +21080,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 252 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\n  \t<slot></slot>\t\t\n  </div>";
+	module.exports = "<div :class=\"classObj\" >\r\n  \t<slot></slot>\t\t\r\n  </div>";
 
 /***/ },
 /* 253 */
@@ -20342,24 +21192,43 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div class="inline">
+	
 	//   <div  :class="classObj" @click="toggle">
+	
 	//     <div class="{{prefixCls}}-switch-container {{prefixCls}}-switch-on-primary {{prefixCls}}-switch-off-default">
+	
 	//       <span class="{{prefixCls}}-switch-handle-on {{prefixCls}}-switch-primary" >{{ontext}}</span>
+	
 	//       <span class="{{prefixCls}}-switch-label" >&nbsp;</span>
+	
 	//       <span class="{{prefixCls}}-switch-handle-off {{prefixCls}}-switch-default" >{{offtext}}</span>
+	
 	//     </div>
+	
 	//   </div>
+	
 	//   <validate
+	
 	//     :name="name"
+	
 	//     :rules="rules"
+	
 	//     :valid-status.sync="validStatus"
+	
 	//     :custom-validate="customValidate" 
+	
 	//     :value="value"
+	
 	//     :results.sync="validateResults">
+	
 	//   </validate>
+	
 	// <div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -20367,7 +21236,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 255 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\n  <div  :class=\"classObj\" @click=\"toggle\">\n    <div class=\"{{prefixCls}}-switch-container {{prefixCls}}-switch-on-primary {{prefixCls}}-switch-off-default\">\n      <span class=\"{{prefixCls}}-switch-handle-on {{prefixCls}}-switch-primary\" >{{ontext}}</span>\n      <span class=\"{{prefixCls}}-switch-label\" >&nbsp;</span>\n      <span class=\"{{prefixCls}}-switch-handle-off {{prefixCls}}-switch-default\" >{{offtext}}</span>\n    </div>\n  </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n<div>\n</template>";
+	module.exports = "<div class=\"inline\">\r\n  <div  :class=\"classObj\" @click=\"toggle\">\r\n    <div class=\"{{prefixCls}}-switch-container {{prefixCls}}-switch-on-primary {{prefixCls}}-switch-off-default\">\r\n      <span class=\"{{prefixCls}}-switch-handle-on {{prefixCls}}-switch-primary\" >{{ontext}}</span>\r\n      <span class=\"{{prefixCls}}-switch-label\" >&nbsp;</span>\r\n      <span class=\"{{prefixCls}}-switch-handle-off {{prefixCls}}-switch-default\" >{{offtext}}</span>\r\n    </div>\r\n  </div>\r\n  <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :custom-validate=\"customValidate\" \r\n    :value=\"value\"\r\n    :results.sync=\"validateResults\">\r\n  </validate>\r\n<div>\r\n</template>";
 
 /***/ },
 /* 256 */
@@ -20634,74 +21503,142 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div class="inline" >
+	
 	//   <div :class="classObj" :style="{width:width,height:height}" @click="focus">
+	
 	//     <template v-for="(index,item) in value" track-by="$index">
+	
 	//         <template v-if="index == position">
+	
 	//             <n3-typeahead
+	
 	//               :style="{margin:'0px 5px'}"
+	
 	//               :query.sync="query" 
+	
 	//               :width='inputWidth'
+	
 	//               :items="items"
+	
 	//               :on-change="onInputchange"
+	
 	//               :max-width="maxWidth"
+	
 	//               :max-height="maxHeight"
+	
 	//               :on-hit="add"
+	
 	//               :match-case="matchCase"
+	
 	//               :limit="limit"
+	
 	//               :render="render"
+	
 	//               :focused.sync="focused"
+	
 	//               :data="data"
+	
 	//               @keydown.delete="del" 
+	
 	//               @keydown.left="left" 
+	
 	//               @keydown.right="right" 
+	
 	//               @keydown.enter="add">
+	
 	//             </n3-typeahead>
+	
 	//         </template>
+	
 	//          <template v-else>
+	
 	//             <span class="{{prefixCls}}-multiple-input-space"  @click="setIndex(index)"></span>
+	
 	//         </template>
+	
 	//         <span class="{{prefixCls}}-multiple-input-m-tag" >
+	
 	//         {{{format.call(this._context,item,index)}}}
+	
 	//         <n3-icon type="times" class="{{prefixCls}}-multiple-close" @click="clickDel(index)"></n3-icon>
+	
 	//         </span>
+	
 	//     </template>
 	
+	
 	//     <template v-if="value && value.length == position">
+	
 	//       <n3-typeahead
+	
 	//         :style="{margin:'0px 5px'}"
+	
 	//         :query.sync="query" 
+	
 	//         :width='inputWidth'
+	
 	//         :items="items"
+	
 	//         :on-change="onInputchange"
+	
 	//         :max-width="maxWidth"
+	
 	//         :max-height="maxHeight"
+	
 	//         :on-hit="add"
+	
 	//         :match-case="matchCase"
+	
 	//         :limit="limit"
+	
 	//         :render="render"
+	
 	//         :focused.sync="focused"
+	
 	//         :data="data"
+	
 	//         @keydown.delete="del" 
+	
 	//         @keydown.left="left" 
+	
 	//         @keydown.right="right" 
+	
 	//         @keydown.enter="add">
+	
 	//       </n3-typeahead>
+	
 	//     </template>
+	
 	//     <template v-else>
+	
 	//       <span class="{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long"  @click="setIndex(value.length)"></span>
+	
 	//     </template>
+	
 	//   </div>
+	
 	//    <validate
+	
 	//     :name="name"
+	
 	//     :rules="rules"
+	
 	//     :valid-status.sync="validStatus"
+	
 	//     :custom-validate="customValidate" 
+	
 	//     :value="value"
+	
 	//     :results.sync="validateResults">
+	
 	//   </validate>
+	
 	// </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -20896,38 +21833,70 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div style="position: relative;display:inline-block"
+	
 	//      :class="[show ? prefixCls +'-open' : '']">
+	
 	//   <n3-input
+	
 	//     :width="width"
+	
 	//     :name="name" 
+	
 	//     :rules="rules" 
+	
 	//     :validate="validate" 
+	
 	//     :has-feedback="hasFeedback"
+	
 	//     :placeholder="placeholder"
+	
 	//     :custom-validate="customValidate"
+	
 	//     :readonly="readonly"
+	
 	//     :disabled="disabled"
+	
 	//     :value.sync="query"
+	
 	//     :focused.sync="focused"
+	
 	//     :on-blur="blur"
+	
 	//     @input="update"
+	
 	//     @keydown.esc="show=false"
+	
 	//     @keydown.up="up"
+	
 	//     @keydown.down="down"
+	
 	//     @keydown.enter= "hit"
+	
 	//     @keydown.esc="reset"
+	
 	//   ></n3-input>
+	
 	//   <ul class="{{prefixCls}}-dropdown-menu" :style="{maxWidth:maxWidth,maxHeight:maxHeight}">
+	
 	//     <li v-for="item in items" :class="isActive($index)">
+	
 	//       <a @mousedown.prevent="hit" @mousemove="setActive($index)">
+	
 	//         {{{render.call(this._context,item)}}}
+	
 	//       </a>
+	
 	//     </li> 
+	
 	//   </ul>
+	
 	// </div>
 	
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -20935,13 +21904,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 260 */
 /***/ function(module, exports) {
 
-	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :value.sync=\"query\"\n    :focused.sync=\"focused\"\n    :on-blur=\"blur\"\n    @input=\"update\"\n    @keydown.esc=\"show=false\"\n    @keydown.up=\"up\"\n    @keydown.down=\"down\"\n    @keydown.enter= \"hit\"\n    @keydown.esc=\"reset\"\n  ></n3-input>\n  <ul class=\"{{prefixCls}}-dropdown-menu\" :style=\"{maxWidth:maxWidth,maxHeight:maxHeight}\">\n    <li v-for=\"item in items\" :class=\"isActive($index)\">\n      <a @mousedown.prevent=\"hit\" @mousemove=\"setActive($index)\">\n        {{{render.call(this._context,item)}}}\n      </a>\n    </li> \n  </ul>\n</div>";
+	module.exports = "<div style=\"position: relative;display:inline-block\"\r\n     :class=\"[show ? prefixCls +'-open' : '']\">\r\n  <n3-input\r\n    :width=\"width\"\r\n    :name=\"name\" \r\n    :rules=\"rules\" \r\n    :validate=\"validate\" \r\n    :has-feedback=\"hasFeedback\"\r\n    :placeholder=\"placeholder\"\r\n    :custom-validate=\"customValidate\"\r\n    :readonly=\"readonly\"\r\n    :disabled=\"disabled\"\r\n    :value.sync=\"query\"\r\n    :focused.sync=\"focused\"\r\n    :on-blur=\"blur\"\r\n    @input=\"update\"\r\n    @keydown.esc=\"show=false\"\r\n    @keydown.up=\"up\"\r\n    @keydown.down=\"down\"\r\n    @keydown.enter= \"hit\"\r\n    @keydown.esc=\"reset\"\r\n  ></n3-input>\r\n  <ul class=\"{{prefixCls}}-dropdown-menu\" :style=\"{maxWidth:maxWidth,maxHeight:maxHeight}\">\r\n    <li v-for=\"item in items\" :class=\"isActive($index)\">\r\n      <a @mousedown.prevent=\"hit\" @mousemove=\"setActive($index)\">\r\n        {{{render.call(this._context,item)}}}\r\n      </a>\r\n    </li> \r\n  </ul>\r\n</div>";
 
 /***/ },
 /* 261 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\n        <template v-if=\"index == position\">\n            <n3-typeahead\n              :style=\"{margin:'0px 5px'}\"\n              :query.sync=\"query\" \n              :width='inputWidth'\n              :items=\"items\"\n              :on-change=\"onInputchange\"\n              :max-width=\"maxWidth\"\n              :max-height=\"maxHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :focused.sync=\"focused\"\n              :data=\"data\"\n              @keydown.delete=\"del\" \n              @keydown.left=\"left\" \n              @keydown.right=\"right\" \n              @keydown.enter=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span class=\"{{prefixCls}}-multiple-input-space\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span class=\"{{prefixCls}}-multiple-input-m-tag\" >\n        {{{format.call(this._context,item,index)}}}\n        <n3-icon type=\"times\" class=\"{{prefixCls}}-multiple-close\" @click=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"value && value.length == position\">\n      <n3-typeahead\n        :style=\"{margin:'0px 5px'}\"\n        :query.sync=\"query\" \n        :width='inputWidth'\n        :items=\"items\"\n        :on-change=\"onInputchange\"\n        :max-width=\"maxWidth\"\n        :max-height=\"maxHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :focused.sync=\"focused\"\n        :data=\"data\"\n        @keydown.delete=\"del\" \n        @keydown.left=\"left\" \n        @keydown.right=\"right\" \n        @keydown.enter=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span class=\"{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long\"  @click=\"setIndex(value.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
+	module.exports = "<div class=\"inline\" >\r\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\r\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\r\n        <template v-if=\"index == position\">\r\n            <n3-typeahead\r\n              :style=\"{margin:'0px 5px'}\"\r\n              :query.sync=\"query\" \r\n              :width='inputWidth'\r\n              :items=\"items\"\r\n              :on-change=\"onInputchange\"\r\n              :max-width=\"maxWidth\"\r\n              :max-height=\"maxHeight\"\r\n              :on-hit=\"add\"\r\n              :match-case=\"matchCase\"\r\n              :limit=\"limit\"\r\n              :render=\"render\"\r\n              :focused.sync=\"focused\"\r\n              :data=\"data\"\r\n              @keydown.delete=\"del\" \r\n              @keydown.left=\"left\" \r\n              @keydown.right=\"right\" \r\n              @keydown.enter=\"add\">\r\n            </n3-typeahead>\r\n        </template>\r\n         <template v-else>\r\n            <span class=\"{{prefixCls}}-multiple-input-space\"  @click=\"setIndex(index)\"></span>\r\n        </template>\r\n        <span class=\"{{prefixCls}}-multiple-input-m-tag\" >\r\n        {{{format.call(this._context,item,index)}}}\r\n        <n3-icon type=\"times\" class=\"{{prefixCls}}-multiple-close\" @click=\"clickDel(index)\"></n3-icon>\r\n        </span>\r\n    </template>\r\n\r\n    <template v-if=\"value && value.length == position\">\r\n      <n3-typeahead\r\n        :style=\"{margin:'0px 5px'}\"\r\n        :query.sync=\"query\" \r\n        :width='inputWidth'\r\n        :items=\"items\"\r\n        :on-change=\"onInputchange\"\r\n        :max-width=\"maxWidth\"\r\n        :max-height=\"maxHeight\"\r\n        :on-hit=\"add\"\r\n        :match-case=\"matchCase\"\r\n        :limit=\"limit\"\r\n        :render=\"render\"\r\n        :focused.sync=\"focused\"\r\n        :data=\"data\"\r\n        @keydown.delete=\"del\" \r\n        @keydown.left=\"left\" \r\n        @keydown.right=\"right\" \r\n        @keydown.enter=\"add\">\r\n      </n3-typeahead>\r\n    </template>\r\n    <template v-else>\r\n      <span class=\"{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long\"  @click=\"setIndex(value.length)\"></span>\r\n    </template>\r\n  </div>\r\n   <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :custom-validate=\"customValidate\" \r\n    :value=\"value\"\r\n    :results.sync=\"validateResults\">\r\n  </validate>\r\n</div>";
 
 /***/ },
 /* 262 */
@@ -20996,24 +21965,43 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	// 	<nav v-show="total>0" class='{{prefixCls}}-simple-pagination'>
+	
 	//         <div class="{{prefixCls}}-pagination">
+	
 	//             <n3-button v-show ="havePrev"  @click="prev" class="{{prefixCls}}-simple-pagination-btn">
+	
 	//               <n3-icon type="chevron-left"></n3-icon>
+	
 	//             </n3-button>
+	
 	//             <span> {{current}} / {{totalpage}}</span>
+	
 	//             <n3-button v-show ="haveNext" @click="next" class="{{prefixCls}}-simple-pagination-btn">
+	
 	//               <n3-icon type="chevron-right"></n3-icon>
+	
 	//             </n3-button>
+	
 	//             <n3-input  
+	
 	//               width="50px"
+	
 	//               class="{{prefixCls}}-simple-pagination-input"
+	
 	//               @keyup.enter="go" 
+	
 	//               :value.sync="inputValue"></n3-input>
+	
 	//             <n3-button @click="go" class="{{prefixCls}}-simple-pagination-btn">跳转</n3-button>
+	
 	//         </div>
+	
 	//     </nav>
+	
 	// </template>
+	
 	// <script>  
 	exports.default = {
 	  props: {
@@ -21109,7 +22097,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 264 */
 /***/ function(module, exports) {
 
-	module.exports = "<nav v-show=\"total>0\" class='{{prefixCls}}-simple-pagination'>\n        <div class=\"{{prefixCls}}-pagination\">\n            <n3-button v-show =\"havePrev\"  @click=\"prev\" class=\"{{prefixCls}}-simple-pagination-btn\">\n              <n3-icon type=\"chevron-left\"></n3-icon>\n            </n3-button>\n            <span> {{current}} / {{totalpage}}</span>\n            <n3-button v-show =\"haveNext\" @click=\"next\" class=\"{{prefixCls}}-simple-pagination-btn\">\n              <n3-icon type=\"chevron-right\"></n3-icon>\n            </n3-button>\n            <n3-input  \n              width=\"50px\"\n              class=\"{{prefixCls}}-simple-pagination-input\"\n              @keyup.enter=\"go\" \n              :value.sync=\"inputValue\"></n3-input>\n            <n3-button @click=\"go\" class=\"{{prefixCls}}-simple-pagination-btn\">跳转</n3-button>\n        </div>\n    </nav>";
+	module.exports = "<nav v-show=\"total>0\" class='{{prefixCls}}-simple-pagination'>\r\n        <div class=\"{{prefixCls}}-pagination\">\r\n            <n3-button v-show =\"havePrev\"  @click=\"prev\" class=\"{{prefixCls}}-simple-pagination-btn\">\r\n              <n3-icon type=\"chevron-left\"></n3-icon>\r\n            </n3-button>\r\n            <span> {{current}} / {{totalpage}}</span>\r\n            <n3-button v-show =\"haveNext\" @click=\"next\" class=\"{{prefixCls}}-simple-pagination-btn\">\r\n              <n3-icon type=\"chevron-right\"></n3-icon>\r\n            </n3-button>\r\n            <n3-input  \r\n              width=\"50px\"\r\n              class=\"{{prefixCls}}-simple-pagination-input\"\r\n              @keyup.enter=\"go\" \r\n              :value.sync=\"inputValue\"></n3-input>\r\n            <n3-button @click=\"go\" class=\"{{prefixCls}}-simple-pagination-btn\">跳转</n3-button>\r\n        </div>\r\n    </nav>";
 
 /***/ },
 /* 265 */
@@ -21145,35 +22133,63 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//    <ul v-if="round" class="{{prefixCls}}-steps-round-con">
+	
 	//    <template v-for="label in labels">
+	
 	//       <li :class="[getClassFromIndex($index)]">
+	
 	//       <div class="{{prefixCls}}-steps-wrap">
+	
 	//         <div class="{{prefixCls}}-steps-round">{{$index + 1}}</div>
+	
 	//       </div>
+	
 	//       <label>{{label}}</label>
+	
 	//     </li>
+	
 	//    </template>
+	
 	//   </ul>
 	
+	
 	//   <div v-else class="{{prefixCls}}-steps clearfix">
+	
 	//         <template v-for="label in labels">
+	
 	//             <div class="{{prefixCls}}-steps-wrap">
+	
 	//                 <div :class="getClassFromIndex($index)">
+	
 	//                     <label>
+	
 	//                       <span class="{{prefixCls}}-steps-round">{{$index + 1}}</span>
+	
 	//                       <span>{{label}}</span>
+	
 	//                     </label>
+	
 	//                     <template v-if="$index < labels.length - 1">
+	
 	//                         <i class="{{prefixCls}}-steps-triangle-right-bg"></i>
+	
 	//                         <i class="{{prefixCls}}-steps-triangle-right"></i>
+	
 	//                     </template>
+	
 	//                 </div>
+	
 	//             </div>
+	
 	//         </template>
+	
 	//     </div>
 	
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -21213,7 +22229,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 267 */
 /***/ function(module, exports) {
 
-	module.exports = "<ul v-if=\"round\" class=\"{{prefixCls}}-steps-round-con\">\n   <template v-for=\"label in labels\">\n      <li :class=\"[getClassFromIndex($index)]\">\n      <div class=\"{{prefixCls}}-steps-wrap\">\n        <div class=\"{{prefixCls}}-steps-round\">{{$index + 1}}</div>\n      </div>\n      <label>{{label}}</label>\n    </li>\n   </template>\n  </ul>\n\n  <div v-else class=\"{{prefixCls}}-steps clearfix\">\n        <template v-for=\"label in labels\">\n            <div class=\"{{prefixCls}}-steps-wrap\">\n                <div :class=\"getClassFromIndex($index)\">\n                    <label>\n                      <span class=\"{{prefixCls}}-steps-round\">{{$index + 1}}</span>\n                      <span>{{label}}</span>\n                    </label>\n                    <template v-if=\"$index < labels.length - 1\">\n                        <i class=\"{{prefixCls}}-steps-triangle-right-bg\"></i>\n                        <i class=\"{{prefixCls}}-steps-triangle-right\"></i>\n                    </template>\n                </div>\n            </div>\n        </template>\n    </div>";
+	module.exports = "<ul v-if=\"round\" class=\"{{prefixCls}}-steps-round-con\">\r\n   <template v-for=\"label in labels\">\r\n      <li :class=\"[getClassFromIndex($index)]\">\r\n      <div class=\"{{prefixCls}}-steps-wrap\">\r\n        <div class=\"{{prefixCls}}-steps-round\">{{$index + 1}}</div>\r\n      </div>\r\n      <label>{{label}}</label>\r\n    </li>\r\n   </template>\r\n  </ul>\r\n\r\n  <div v-else class=\"{{prefixCls}}-steps clearfix\">\r\n        <template v-for=\"label in labels\">\r\n            <div class=\"{{prefixCls}}-steps-wrap\">\r\n                <div :class=\"getClassFromIndex($index)\">\r\n                    <label>\r\n                      <span class=\"{{prefixCls}}-steps-round\">{{$index + 1}}</span>\r\n                      <span>{{label}}</span>\r\n                    </label>\r\n                    <template v-if=\"$index < labels.length - 1\">\r\n                        <i class=\"{{prefixCls}}-steps-triangle-right-bg\"></i>\r\n                        <i class=\"{{prefixCls}}-steps-triangle-right\"></i>\r\n                    </template>\r\n                </div>\r\n            </div>\r\n        </template>\r\n    </div>";
 
 /***/ },
 /* 268 */
@@ -21823,139 +22839,266 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <div class="{{prefixCls}}-data-table">
+	
 	//   <div class="{{prefixCls}}-data-table-bar clearfix">
+	
 	//     <n3-select 
+	
 	// 	    class='pull-left'
+	
 	// 	    style="margin-right:10px;"
+	
 	// 	    :multiple="true"
+	
 	// 	    :showselected="false"
+	
 	// 	    v-if="selectCol"
+	
 	// 	    placeholder = "显示的列"
+	
 	// 	    :options="selectOptions" 
+	
 	// 	    :value.sync="selectdCols">
+	
 	//     </n3-select>
+	
 	//     <div v-if="filter && filterArr.length" class='pull-left {{prefixCls}}-btn-group'>
+	
 	//       <template v-for="item in filterArr">
+	
 	//         <n3-select 
+	
 	// 	        :multiple = "item.multiple === undefined?true:!!item.multiple"
+	
 	// 	        :search = "item.search === undefined?true:!!item.search"
+	
 	// 	        :extra = "item.extra === undefined?true:!!item.extra"
+	
 	// 	        :showselected="false"
+	
 	// 	        :placeholder = "item.title"
+	
 	// 	        :options="item.options" 
+	
 	// 	        :value.sync="item.value">
+	
 	//         </n3-select>
+	
 	//       </template>  
+	
 	//       <n3-button
+	
 	//         class="{{prefixCls}}-data-table-inner-btn"
+	
 	//         @click="resetFilter" 
+	
 	//         type="primary">
+	
 	//         <n3-icon type="reply"></n3-icon>
+	
 	//       </n3-button>
+	
 	//        <n3-button
+	
 	//         class="{{prefixCls}}-data-table-inner-btn"
+	
 	//         @click="goFilter" 
+	
 	//         type="primary">
+	
 	//         <n3-icon type="filter"></n3-icon>
+	
 	//       </n3-button>
+	
 	//     </div>
+	
 	//       <n3-button
+	
 	//         class="{{prefixCls}}-data-table-inner-btn" 
+	
 	//         style="margin-left:10px;"
+	
 	//         @click="refresh"
+	
 	//         v-if="refresh"  
+	
 	//         type="primary">
+	
 	//         <n3-icon type="refresh"></n3-icon>
+	
 	//       </n3-button>
+	
 	//     <n3-input
+	
 	//       class="pull-right" 
+	
 	//       placeholder="搜索"
+	
 	//       :value.sync="query"
+	
 	//       @keydown.enter="gosearch"
+	
 	//       v-if="search">
+	
 	//     </n3-input>
+	
 	//   </div>
+	
 	//   <div>
+	
 	//     <n3-loading center size="lg" v-if="loading"></n3-loading>
+	
 	//     <div :class="[loading ? prefixCls + '-data-table-loading':'']">
+	
 	//       <table :class="classObj" >
+	
 	//           <thead>
+	
 	//             <tr>
+	
 	//               <th v-if="selection" class="{{prefixCls}}-data-table-row-select">
+	
 	//                   <input v-if="list && list.length" 
+	
 	//                   	type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
+	
 	//                   	@change="onCheckAll"/>
+	
 	//               </th>
+	
 	//               <th v-for="col in initColumns" 
+	
 	//                   v-if="col.show && col.colspan != 0" 
+	
 	//                   :style="{width:col.width}" 
+	
 	//                   :class="{'pointer':col.sort}" 
+	
 	//                   @click="sort(col,col.sort)" 
+	
 	//                   :colspan="col.colspan === undefined ? 1 : col.colspan"> 
+	
 	//                 <span>{{col.title}} </span> 
+	
 	//                 <div class="{{prefixCls}}-data-table-sort pull-right" v-if="col.sort" >
+	
 	//                   <n3-icon
+	
 	//                     @click.stop="sort(col,col.sort,'ASC')"
+	
 	//                     :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
+	
 	//                     type="caret-up">
+	
 	//                   </n3-icon>
+	
 	//                    <n3-icon
+	
 	//                     @click.stop="sort(col,col.sort,'DESC')"
+	
 	//                     :style="{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}"
+	
 	//                     type="caret-down">
+	
 	//                   </n3-icon>
+	
 	//                 </div>
+	
 	//               </th>
+	
 	//             </tr>
+	
 	//           </thead>
+	
 	//           <tbody>
+	
 	//             <tr v-for="(index,data) in list" track-by="n3Key">
+	
 	//                 <td v-if="selection" class="{{prefixCls}}-row-select">
+	
 	//                    <input type="checkbox" 
+	
 	//                    	v-model="checkedValues"  
+	
 	//                    	:value="data[key]" @change.stop="onCheckOne($event,data)" 
+	
 	//                    	v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
+	
 	//                 </td>
+	
 	//                 <td v-for="col in initColumns" v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0" :colspan="colspan(col,data)" :rowspan="rowspan(col,data)">
+	
 	//                 <template v-if="col.render">
+	
 	//                    {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}
+	
 	//                 </template>
+	
 	//                 <template v-else>
+	
 	//                   {{{ col.dataIndex ? data[col.dataIndex] : ''}}}
+	
 	//                 </template>
+	
 	//                 </td>
+	
 	//             </tr>
+	
 	//           </tbody>
+	
 	//       </table>
+	
 	//     </div>
+	
 	//   </div>
+	
 	//   <div class='{{prefixCls}}-data-table-bar' v-if="page" >
+	
 	//     每页&nbsp;<n3-select 
+	
 	//       :cancelled="false"
+	
 	//       v-if="page"
+	
 	//       :options="options" 
+	
 	//       class="{{prefixCls}}-data-table-page" 
+	
 	//       :value.sync="pagesize"></n3-select>&nbsp;条
+	
 	//        共&nbsp;{{pagination.total}}&nbsp;条
+	
 	//     <div class="pull-right">  
+	
 	//     <n3-simple-pagination v-if="page" 
+	
 	//     :total="pagination.total" 
+	
 	//     :current.sync="pagination.current" 
+	
 	//     :pagesize="pagination.pagesize" 
+	
 	//     :on-change="pageChange"
+	
 	//     ></n3-simple-pagination>
+	
 	//     </div>
+	
 	//   </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	// <script>
 
 /***/ },
 /* 270 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-data-table\">\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\n    <n3-select \n\t    class='pull-left'\n\t    style=\"margin-right:10px;\"\n\t    :multiple=\"true\"\n\t    :showselected=\"false\"\n\t    v-if=\"selectCol\"\n\t    placeholder = \"显示的列\"\n\t    :options=\"selectOptions\" \n\t    :value.sync=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\n      <template v-for=\"item in filterArr\">\n        <n3-select \n\t        :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n\t        :search = \"item.search === undefined?true:!!item.search\"\n\t        :extra = \"item.extra === undefined?true:!!item.extra\"\n\t        :showselected=\"false\"\n\t        :placeholder = \"item.title\"\n\t        :options=\"item.options\" \n\t        :value.sync=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\" \n        style=\"margin-left:10px;\"\n        @click=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      :value.sync=\"query\"\n      @keydown.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\n                  <input v-if=\"list && list.length\" \n                  \ttype=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                  \t@change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in initColumns\" \n                  v-if=\"col.show && col.colspan != 0\" \n                  :style=\"{width:col.width}\" \n                  :class=\"{'pointer':col.sort}\" \n                  @click=\"sort(col,col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                <span>{{col.title}} </span> \n                <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\n                  <n3-icon\n                    @click.stop=\"sort(col,col.sort,'ASC')\"\n                    :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                    type=\"caret-up\">\n                  </n3-icon>\n                   <n3-icon\n                    @click.stop=\"sort(col,col.sort,'DESC')\"\n                    :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                    type=\"caret-down\">\n                  </n3-icon>\n                </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\n                   <input type=\"checkbox\" \n                   \tv-model=\"checkedValues\"  \n                   \t:value=\"data[key]\" @change.stop=\"onCheckOne($event,data)\" \n                   \tv-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in initColumns\" v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\" :colspan=\"colspan(col,data)\" :rowspan=\"rowspan(col,data)\">\n                <template v-if=\"col.render\">\n                   {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\n                </template>\n                <template v-else>\n                  {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\n                </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div class='{{prefixCls}}-data-table-bar' v-if=\"page\" >\n    每页&nbsp;<n3-select \n      :cancelled=\"false\"\n      v-if=\"page\"\n      :options=\"options\" \n      class=\"{{prefixCls}}-data-table-page\" \n      :value.sync=\"pagesize\"></n3-select>&nbsp;条\n       共&nbsp;{{pagination.total}}&nbsp;条\n    <div class=\"pull-right\">  \n    <n3-simple-pagination v-if=\"page\" \n    :total=\"pagination.total\" \n    :current.sync=\"pagination.current\" \n    :pagesize=\"pagination.pagesize\" \n    :on-change=\"pageChange\"\n    ></n3-simple-pagination>\n    </div>\n  </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-data-table\">\r\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\r\n    <n3-select \r\n\t    class='pull-left'\r\n\t    style=\"margin-right:10px;\"\r\n\t    :multiple=\"true\"\r\n\t    :showselected=\"false\"\r\n\t    v-if=\"selectCol\"\r\n\t    placeholder = \"显示的列\"\r\n\t    :options=\"selectOptions\" \r\n\t    :value.sync=\"selectdCols\">\r\n    </n3-select>\r\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\r\n      <template v-for=\"item in filterArr\">\r\n        <n3-select \r\n\t        :multiple = \"item.multiple === undefined?true:!!item.multiple\"\r\n\t        :search = \"item.search === undefined?true:!!item.search\"\r\n\t        :extra = \"item.extra === undefined?true:!!item.extra\"\r\n\t        :showselected=\"false\"\r\n\t        :placeholder = \"item.title\"\r\n\t        :options=\"item.options\" \r\n\t        :value.sync=\"item.value\">\r\n        </n3-select>\r\n      </template>  \r\n      <n3-button\r\n        class=\"{{prefixCls}}-data-table-inner-btn\"\r\n        @click=\"resetFilter\" \r\n        type=\"primary\">\r\n        <n3-icon type=\"reply\"></n3-icon>\r\n      </n3-button>\r\n       <n3-button\r\n        class=\"{{prefixCls}}-data-table-inner-btn\"\r\n        @click=\"goFilter\" \r\n        type=\"primary\">\r\n        <n3-icon type=\"filter\"></n3-icon>\r\n      </n3-button>\r\n    </div>\r\n      <n3-button\r\n        class=\"{{prefixCls}}-data-table-inner-btn\" \r\n        style=\"margin-left:10px;\"\r\n        @click=\"refresh\"\r\n        v-if=\"refresh\"  \r\n        type=\"primary\">\r\n        <n3-icon type=\"refresh\"></n3-icon>\r\n      </n3-button>\r\n    <n3-input\r\n      class=\"pull-right\" \r\n      placeholder=\"搜索\"\r\n      :value.sync=\"query\"\r\n      @keydown.enter=\"gosearch\"\r\n      v-if=\"search\">\r\n    </n3-input>\r\n  </div>\r\n  <div>\r\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\r\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\r\n      <table :class=\"classObj\" >\r\n          <thead>\r\n            <tr>\r\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\r\n                  <input v-if=\"list && list.length\" \r\n                  \ttype=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \r\n                  \t@change=\"onCheckAll\"/>\r\n              </th>\r\n              <th v-for=\"col in initColumns\" \r\n                  v-if=\"col.show && col.colspan != 0\" \r\n                  :style=\"{width:col.width}\" \r\n                  :class=\"{'pointer':col.sort}\" \r\n                  @click=\"sort(col,col.sort)\" \r\n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \r\n                <span>{{col.title}} </span> \r\n                <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\r\n                  <n3-icon\r\n                    @click.stop=\"sort(col,col.sort,'ASC')\"\r\n                    :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \r\n                    type=\"caret-up\">\r\n                  </n3-icon>\r\n                   <n3-icon\r\n                    @click.stop=\"sort(col,col.sort,'DESC')\"\r\n                    :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\r\n                    type=\"caret-down\">\r\n                  </n3-icon>\r\n                </div>\r\n              </th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\r\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\r\n                   <input type=\"checkbox\" \r\n                   \tv-model=\"checkedValues\"  \r\n                   \t:value=\"data[key]\" @change.stop=\"onCheckOne($event,data)\" \r\n                   \tv-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\r\n                </td>\r\n                <td v-for=\"col in initColumns\" v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\" :colspan=\"colspan(col,data)\" :rowspan=\"rowspan(col,data)\">\r\n                <template v-if=\"col.render\">\r\n                   {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\r\n                </template>\r\n                <template v-else>\r\n                  {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\r\n                </template>\r\n                </td>\r\n            </tr>\r\n          </tbody>\r\n      </table>\r\n    </div>\r\n  </div>\r\n  <div class='{{prefixCls}}-data-table-bar' v-if=\"page\" >\r\n    每页&nbsp;<n3-select \r\n      :cancelled=\"false\"\r\n      v-if=\"page\"\r\n      :options=\"options\" \r\n      class=\"{{prefixCls}}-data-table-page\" \r\n      :value.sync=\"pagesize\"></n3-select>&nbsp;条\r\n       共&nbsp;{{pagination.total}}&nbsp;条\r\n    <div class=\"pull-right\">  \r\n    <n3-simple-pagination v-if=\"page\" \r\n    :total=\"pagination.total\" \r\n    :current.sync=\"pagination.current\" \r\n    :pagesize=\"pagination.pagesize\" \r\n    :on-change=\"pageChange\"\r\n    ></n3-simple-pagination>\r\n    </div>\r\n  </div>\r\n  </div>";
 
 /***/ },
 /* 271 */
@@ -22002,17 +23145,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
+	
 	//  	<ul class="{{prefixCls}}-timeline-con">
+	
 	//  		<template v-if="value">
+	
 	//  			<n3-timeline-item v-for="i in value" :color="i.color" :icon="i.icon" >
+	
 	//  				{{{i.content}}}
+	
 	//  			</n3-timeline-item>
+	
 	//  		</template>
+	
 	//  		<template v-else>
+	
 	//  			<slot></slot>
+	
 	//  		</template>
+	
 	//  	</ul>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -22079,14 +23234,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//  	<li class="{{prefixCls}}-timeline-item">
+	
 	//  		<div class="{{prefixCls}}-timeline-item-tail"></div>
+	
 	//  		<div :class="[prefixCls+'-timeline-item-head',icon?'fa fa-'+icon:'']" :style="style"></div>
+	
 	//  		<div class="{{prefixCls}}-timeline-item-content">
+	
 	// 	 		<slot></slot>
+	
 	//  		</div>
+	
 	//  	</li>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -22118,13 +23282,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 275 */
 /***/ function(module, exports) {
 
-	module.exports = "<li class=\"{{prefixCls}}-timeline-item\">\n \t\t<div class=\"{{prefixCls}}-timeline-item-tail\"></div>\n \t\t<div :class=\"[prefixCls+'-timeline-item-head',icon?'fa fa-'+icon:'']\" :style=\"style\"></div>\n \t\t<div class=\"{{prefixCls}}-timeline-item-content\">\n\t \t\t<slot></slot>\n \t\t</div>\n \t</li>";
+	module.exports = "<li class=\"{{prefixCls}}-timeline-item\">\r\n \t\t<div class=\"{{prefixCls}}-timeline-item-tail\"></div>\r\n \t\t<div :class=\"[prefixCls+'-timeline-item-head',icon?'fa fa-'+icon:'']\" :style=\"style\"></div>\r\n \t\t<div class=\"{{prefixCls}}-timeline-item-content\">\r\n\t \t\t<slot></slot>\r\n \t\t</div>\r\n \t</li>";
 
 /***/ },
 /* 276 */
 /***/ function(module, exports) {
 
-	module.exports = "<ul class=\"{{prefixCls}}-timeline-con\">\n \t\t<template v-if=\"value\">\n \t\t\t<n3-timeline-item v-for=\"i in value\" :color=\"i.color\" :icon=\"i.icon\" >\n \t\t\t\t{{{i.content}}}\n \t\t\t</n3-timeline-item>\n \t\t</template>\n \t\t<template v-else>\n \t\t\t<slot></slot>\n \t\t</template>\n \t</ul>";
+	module.exports = "<ul class=\"{{prefixCls}}-timeline-con\">\r\n \t\t<template v-if=\"value\">\r\n \t\t\t<n3-timeline-item v-for=\"i in value\" :color=\"i.color\" :icon=\"i.icon\" >\r\n \t\t\t\t{{{i.content}}}\r\n \t\t\t</n3-timeline-item>\r\n \t\t</template>\r\n \t\t<template v-else>\r\n \t\t\t<slot></slot>\r\n \t\t</template>\r\n \t</ul>";
 
 /***/ },
 /* 277 */
@@ -22242,15 +23406,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	// <div :class="classObj">
+	
 	// 	<label 
+	
 	//   	v-for="i in value" 
+	
 	// 	  :class="tagClass(i)">
+	
 	// 	 {{i.label}}
+	
 	// 	<a name="remove" v-if="removable" @click="del(i)"><n3-icon type="times"></n3-icon></a>
+	
 	// 	</label>
+	
 	// </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -22258,7 +23432,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 279 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\">\n\t<label \n  \tv-for=\"i in value\" \n\t  :class=\"tagClass(i)\">\n\t {{i.label}}\n\t<a name=\"remove\" v-if=\"removable\" @click=\"del(i)\"><n3-icon type=\"times\"></n3-icon></a>\n\t</label>\n</div>";
+	module.exports = "<div :class=\"classObj\">\r\n\t<label \r\n  \tv-for=\"i in value\" \r\n\t  :class=\"tagClass(i)\">\r\n\t {{i.label}}\r\n\t<a name=\"remove\" v-if=\"removable\" @click=\"del(i)\"><n3-icon type=\"times\"></n3-icon></a>\r\n\t</label>\r\n</div>";
 
 /***/ },
 /* 280 */
@@ -22294,10 +23468,15 @@ return /******/ (function(modules) { // webpackBootstrap
 		value: true
 	});
 	// <template>
+	
 	// 	<ol class="{{prefixCls}}-breadcrumb">
+	
 	// 		<slot></slot>
+	
 	// 	</ol>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 		props: {
@@ -22313,7 +23492,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 282 */
 /***/ function(module, exports) {
 
-	module.exports = "<ol class=\"{{prefixCls}}-breadcrumb\">\n\t\t<slot></slot>\n\t</ol>";
+	module.exports = "<ol class=\"{{prefixCls}}-breadcrumb\">\r\n\t\t<slot></slot>\r\n\t</ol>";
 
 /***/ },
 /* 283 */
@@ -22349,15 +23528,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//  	<li :class="[active ? prefixCls + '-breadcrumb-active' : '']">
+	
 	// 		<a v-if='href' :href="href" >
+	
 	//     	<slot></slot>
+	
 	//   	</a>
+	
 	//   	<span v-else>
+	
 	//     	<slot></slot>
+	
 	//   	</span>
+	
 	//   	</li>
+	
 	// </template>
+	
 	// <script>
 	exports.default = {
 	  props: {
@@ -22379,7 +23568,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 285 */
 /***/ function(module, exports) {
 
-	module.exports = "<li :class=\"[active ? prefixCls + '-breadcrumb-active' : '']\">\n\t\t<a v-if='href' :href=\"href\" >\n    \t<slot></slot>\n  \t</a>\n  \t<span v-else>\n    \t<slot></slot>\n  \t</span>\n  \t</li>";
+	module.exports = "<li :class=\"[active ? prefixCls + '-breadcrumb-active' : '']\">\r\n\t\t<a v-if='href' :href=\"href\" >\r\n    \t<slot></slot>\r\n  \t</a>\r\n  \t<span v-else>\r\n    \t<slot></slot>\r\n  \t</span>\r\n  \t</li>";
 
 /***/ },
 /* 286 */
@@ -22415,10 +23604,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <form :class="classObj"  @submit.prevent="noop">
+	
 	//       <slot></slot>
+	
 	//   </form>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -22516,7 +23710,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 288 */
 /***/ function(module, exports) {
 
-	module.exports = "<form :class=\"classObj\"  @submit.prevent=\"noop\">\n      <slot></slot>\n  </form>";
+	module.exports = "<form :class=\"classObj\"  @submit.prevent=\"noop\">\r\n      <slot></slot>\r\n  </form>";
 
 /***/ },
 /* 289 */
@@ -22552,16 +23746,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	// 	<div :class="classObj" >
+	
 	// 		<label class="{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label">
+	
 	//       <em class="{{prefixCls}}-form-need" v-if="need" >*</em>
+	
 	//       {{label}}
+	
 	//       </label>
+	
 	// 		<div class="{{prefixCls}}-col-sm-{{col}}">
+	
 	// 			<slot></slot>
+	
 	// 		</div>	
+	
 	// 	</div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -22609,7 +23814,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 291 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\n\t\t<label class=\"{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label\">\n      <em class=\"{{prefixCls}}-form-need\" v-if=\"need\" >*</em>\n      {{label}}\n      </label>\n\t\t<div class=\"{{prefixCls}}-col-sm-{{col}}\">\n\t\t\t<slot></slot>\n\t\t</div>\t\n\t</div>";
+	module.exports = "<div :class=\"classObj\" >\r\n\t\t<label class=\"{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label\">\r\n      <em class=\"{{prefixCls}}-form-need\" v-if=\"need\" >*</em>\r\n      {{label}}\r\n      </label>\r\n\t\t<div class=\"{{prefixCls}}-col-sm-{{col}}\">\r\n\t\t\t<slot></slot>\r\n\t\t</div>\t\r\n\t</div>";
 
 /***/ },
 /* 292 */
@@ -22645,10 +23850,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
+	
 	//   <div class="{{prefixCls}}-carousel-item">
+	
 	//     <slot></slot>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 	exports.default = {
@@ -22682,7 +23892,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 294 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-carousel-item\">\n    <slot></slot>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-carousel-item\">\r\n    <slot></slot>\r\n  </div>";
 
 /***/ },
 /* 295 */
@@ -23035,57 +24245,109 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
+	
 	//   <div class="{{prefixCls}}-tree">
+	
 	//     <div class="{{prefixCls}}-tree-node-data" v-for="(index, node) in data">
+	
 	//       <div class="{{prefixCls}}-tree-node">
+	
 	//         <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '',prefixCls + '-tree-meta-data']" 
+	
 	//               @click.prevent="clickHandler(index, node.value)">
+	
 	//           <template v-if="node.children">
+	
 	//             <n3-icon
+	
 	//               class="{{prefixCls}}-tree-select-icon"
+	
 	//               :type="isOpened(index) ? treeOpenIcon : treeIcon">
+	
 	//             </n3-icon>
+	
 	//             <span class="{{prefixCls}}-tree-loading-box" v-show="loading > -1 && loading == index">
+	
 	//               <n3-loading color="primary" size="xs"></n3-loading>
+	
 	//             </span>
+	
 	//           </template>
+	
 	//           <span class="{{prefixCls}}-tree-select-box" v-if="checkable">
+	
 	//             <input 
+	
 	//               @click.stop="" 
+	
 	//               type="checkbox" 
+	
 	//               v-model="checkedKeys" 
+	
 	//               :value="node.value"
+	
 	//               @change="checkHandler(index, node.value)"/>
+	
 	//           </span>
+	
 	//           <label class="{{prefixCls}}-tree-loading-box">
+	
 	//           <n3-icon :type="node['icon'] || icon"></n3-icon>
+	
 	//           {{{node.label}}}
+	
 	//           </label>
+	
 	//         </span>
+	
 	//       </div>
+	
 	//       <div 
+	
 	//         :transition="transition"
+	
 	//         v-if="areValidNodes(node.children)" 
+	
 	//         class="{{prefixCls}}-tree-children" 
+	
 	//         v-show="isOpened(index)">
+	
 	//         <div class="{{prefixCls}}-tree-nodes">
+	
 	//           <n3-tree  
+	
 	//             class="inner" 
+	
 	//             :id="id" 
+	
 	//             :selected-key.sync="selectedKey"
+	
 	//             :data.sync="node.children" 
+	
 	//             :parent.once="node.value" 
+	
 	//             :load-data="loadData" 
+	
 	//             :expand-all="expandAll" 
+	
 	//             :checkable="checkable"
+	
 	//             :checked-keys.sync="checkedKeys" 
+	
 	//             :on-check="onCheck">
+	
 	//           </n3-tree>
+	
 	//         </div>
+	
 	//       </div>
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	
 	// <script>
 
@@ -23093,7 +24355,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 297 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-tree\">\n    <div class=\"{{prefixCls}}-tree-node-data\" v-for=\"(index, node) in data\">\n      <div class=\"{{prefixCls}}-tree-node\">\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '',prefixCls + '-tree-meta-data']\" \n              @click.prevent=\"clickHandler(index, node.value)\">\n          <template v-if=\"node.children\">\n            <n3-icon\n              class=\"{{prefixCls}}-tree-select-icon\"\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\n            </n3-icon>\n            <span class=\"{{prefixCls}}-tree-loading-box\" v-show=\"loading > -1 && loading == index\">\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </template>\n          <span class=\"{{prefixCls}}-tree-select-box\" v-if=\"checkable\">\n            <input \n              @click.stop=\"\" \n              type=\"checkbox\" \n              v-model=\"checkedKeys\" \n              :value=\"node.value\"\n              @change=\"checkHandler(index, node.value)\"/>\n          </span>\n          <label class=\"{{prefixCls}}-tree-loading-box\">\n          <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\n          {{{node.label}}}\n          </label>\n        </span>\n      </div>\n      <div \n        :transition=\"transition\"\n        v-if=\"areValidNodes(node.children)\" \n        class=\"{{prefixCls}}-tree-children\" \n        v-show=\"isOpened(index)\">\n        <div class=\"{{prefixCls}}-tree-nodes\">\n          <n3-tree  \n            class=\"inner\" \n            :id=\"id\" \n            :selected-key.sync=\"selectedKey\"\n            :data.sync=\"node.children\" \n            :parent.once=\"node.value\" \n            :load-data=\"loadData\" \n            :expand-all=\"expandAll\" \n            :checkable=\"checkable\"\n            :checked-keys.sync=\"checkedKeys\" \n            :on-check=\"onCheck\">\n          </n3-tree>\n        </div>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-tree\">\r\n    <div class=\"{{prefixCls}}-tree-node-data\" v-for=\"(index, node) in data\">\r\n      <div class=\"{{prefixCls}}-tree-node\">\r\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '',prefixCls + '-tree-meta-data']\" \r\n              @click.prevent=\"clickHandler(index, node.value)\">\r\n          <template v-if=\"node.children\">\r\n            <n3-icon\r\n              class=\"{{prefixCls}}-tree-select-icon\"\r\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\r\n            </n3-icon>\r\n            <span class=\"{{prefixCls}}-tree-loading-box\" v-show=\"loading > -1 && loading == index\">\r\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\r\n            </span>\r\n          </template>\r\n          <span class=\"{{prefixCls}}-tree-select-box\" v-if=\"checkable\">\r\n            <input \r\n              @click.stop=\"\" \r\n              type=\"checkbox\" \r\n              v-model=\"checkedKeys\" \r\n              :value=\"node.value\"\r\n              @change=\"checkHandler(index, node.value)\"/>\r\n          </span>\r\n          <label class=\"{{prefixCls}}-tree-loading-box\">\r\n          <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\r\n          {{{node.label}}}\r\n          </label>\r\n        </span>\r\n      </div>\r\n      <div \r\n        :transition=\"transition\"\r\n        v-if=\"areValidNodes(node.children)\" \r\n        class=\"{{prefixCls}}-tree-children\" \r\n        v-show=\"isOpened(index)\">\r\n        <div class=\"{{prefixCls}}-tree-nodes\">\r\n          <n3-tree  \r\n            class=\"inner\" \r\n            :id=\"id\" \r\n            :selected-key.sync=\"selectedKey\"\r\n            :data.sync=\"node.children\" \r\n            :parent.once=\"node.value\" \r\n            :load-data=\"loadData\" \r\n            :expand-all=\"expandAll\" \r\n            :checkable=\"checkable\"\r\n            :checked-keys.sync=\"checkedKeys\" \r\n            :on-check=\"onCheck\">\r\n          </n3-tree>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 298 */
@@ -23130,87 +24392,169 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; }; // <template>
+	
 	//   <div :class="[prefixCls + '-upload']" id="upload-{{uploadId}}">
+	
 	//     <div v-if="type === 'click'">
+	
 	//       <label>
+	
 	//         <input
+	
 	//           type="file"
+	
 	//           :name="name"
+	
 	//           :accept="accept"
+	
 	//           :id="uploadId"
+	
 	//           :multiple="multiple"
+	
 	//           @change="onChange($event)" />
+	
 	//         <slot>
+	
 	//           <n3-button>
+	
 	//             <n3-icon type="cloud-upload"></n3-icon>
+	
 	//             点击上传
+	
 	//           </n3-button>
+	
 	//         </slot>
+	
 	//       </label>
+	
 	//       <div :class="[prefixCls + '-upload-list']">
+	
 	//         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
+	
 	//           <div :class="[prefixCls + '-upload-item-info']">
+	
 	//             <n3-icon type="file-text-o"
+	
 	//               :class="[prefixCls + '-upload-file-icon']">
+	
 	//             </n3-icon>
+	
 	//             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
+	
 	//             <n3-icon type="times"
+	
 	//               :class="[prefixCls + '-upload-del-info']"
+	
 	//               @click="delFile($index)">
+	
 	//             </n3-icon>
+	
 	//           </div>
+	
 	//           <n3-progress style="padding:0px 4px">
+	
 	//             <n3-progressbar
+	
 	//               type="success"
+	
 	//               height='3px'
+	
 	//               :now="progress[$index]"
+	
 	//             ></n3-progressbar>
+	
 	//           </n3-progress>
+	
 	//         </div>
+	
 	//       </div>
+	
 	//     </div>
+	
 	//     <div v-if="type === 'drag'"
+	
 	//          :class="[prefixCls + '-upload-drag']">
+	
 	//       <div 
+	
 	//         :class="[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]"
+	
 	//         :style="{width:dragWidth,height:dragHeight}">
+	
 	//         <input type="file"
+	
 	//           :name="name"
+	
 	//           :id="uploadId"
+	
 	//           :accept="accept"
+	
 	//           :multiple="multiple"
+	
 	//           @change="onChange($event)" />
+	
 	//         <label :for="uploadId"
+	
 	//             :class="[prefixCls + '-upload-drag-area']">
+	
 	//         <n3-icon type="cloud-upload" size="60px" :class="[prefixCls + '-upload-drag-icon']"></n3-icon>
+	
 	//         <span v-if="advanceDrag">点击或将文件拖拽到此区域上传</span>
+	
 	//         <span v-if="!advanceDrag">当前环境不支持拖拽上传，请点此上传</span>
+	
 	//       </label>
+	
 	//       </div>
+	
 	//       <div :class="[prefixCls + '-upload-list']">
+	
 	//         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
+	
 	//           <div :class="[prefixCls + '-upload-item-info']">
+	
 	//             <n3-icon type="file-text-o"
+	
 	//               :class="[prefixCls + '-upload-file-icon']">
+	
 	//             </n3-icon>
+	
 	//             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
+	
 	//             <n3-icon type="times"
+	
 	//               :class="[prefixCls + '-upload-del-info']"
+	
 	//               @click="delFile($index)">
+	
 	//             </n3-icon>
+	
 	//           </div>
+	
 	//           <n3-progress style="padding:0px 4px">
+	
 	//             <n3-progressbar
+	
 	//               type="success"
+	
 	//               height='3px'
+	
 	//               :now="progress[$index]"
+	
 	//             ></n3-progressbar>
+	
 	//           </n3-progress>
+	
 	//         </div>
+	
 	//       </div>
+	
 	//     </div>
+	
 	//   </div>
+	
 	// </template>
+	
 	// <script>
 	
 	
@@ -23538,7 +24882,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 300 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"[prefixCls + '-upload']\" id=\"upload-{{uploadId}}\">\n    <div v-if=\"type === 'click'\">\n      <label>\n        <input\n          type=\"file\"\n          :name=\"name\"\n          :accept=\"accept\"\n          :id=\"uploadId\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <slot>\n          <n3-button>\n            <n3-icon type=\"cloud-upload\"></n3-icon>\n            点击上传\n          </n3-button>\n        </slot>\n      </label>\n      <div :class=\"[prefixCls + '-upload-list']\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n    <div v-if=\"type === 'drag'\"\n         :class=\"[prefixCls + '-upload-drag']\">\n      <div \n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\n        :style=\"{width:dragWidth,height:dragHeight}\">\n        <input type=\"file\"\n          :name=\"name\"\n          :id=\"uploadId\"\n          :accept=\"accept\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <label :for=\"uploadId\"\n            :class=\"[prefixCls + '-upload-drag-area']\">\n        <n3-icon type=\"cloud-upload\" size=\"60px\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\n      </label>\n      </div>\n      <div :class=\"[prefixCls + '-upload-list']\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div :class=\"[prefixCls + '-upload']\" id=\"upload-{{uploadId}}\">\r\n    <div v-if=\"type === 'click'\">\r\n      <label>\r\n        <input\r\n          type=\"file\"\r\n          :name=\"name\"\r\n          :accept=\"accept\"\r\n          :id=\"uploadId\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\" />\r\n        <slot>\r\n          <n3-button>\r\n            <n3-icon type=\"cloud-upload\"></n3-icon>\r\n            点击上传\r\n          </n3-button>\r\n        </slot>\r\n      </label>\r\n      <div :class=\"[prefixCls + '-upload-list']\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click=\"delFile($index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[$index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div v-if=\"type === 'drag'\"\r\n         :class=\"[prefixCls + '-upload-drag']\">\r\n      <div \r\n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\r\n        :style=\"{width:dragWidth,height:dragHeight}\">\r\n        <input type=\"file\"\r\n          :name=\"name\"\r\n          :id=\"uploadId\"\r\n          :accept=\"accept\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\" />\r\n        <label :for=\"uploadId\"\r\n            :class=\"[prefixCls + '-upload-drag-area']\">\r\n        <n3-icon type=\"cloud-upload\" size=\"60px\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\r\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\r\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\r\n      </label>\r\n      </div>\r\n      <div :class=\"[prefixCls + '-upload-list']\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click=\"delFile($index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[$index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 301 */
