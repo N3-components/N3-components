@@ -5,15 +5,15 @@
       
       <h3><n3-switch></n3-switch></h3>
       
-      <h3><n3-switch ontext="开" offtext="关" @toggle="toggle" ></n3-switch></h3>
+      <h3><n3-switch ontext="开" offtext="关" :on-change="toggle" ></n3-switch></h3>
 
-       <h3><n3-switch ontext="开" offtext="关" @toggle="toggle" :disabled="true"></n3-switch></h3>
+       <h3><n3-switch ontext="开" offtext="关 :disabled="true"></n3-switch></h3>
 
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
       <n3-switch></n3-switch>
-      <n3-switch ontext="开" offtext="关"></n3-switch>
-      <n3-switch ontext="开" offtext="关" @toggle="toggle" :disabled="true"></n3-switch>
+      <n3-switch ontext="开" offtext="关" :on-change="toggle" ></n3-switch>
+      <n3-switch ontext="开" offtext="关" :disabled="true"></n3-switch>
     </script></code></pre>
     
     <h2>参数</h2>
@@ -28,7 +28,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>state</td>
+          <td>value</td>
           <td><code>Boolean</code></td>
           <td><code>true</code></td>
           <td>开关状态</td>
@@ -66,8 +66,8 @@
 <script>
 export default {
   methods: {
-    toggle (state) {
-      console.log(state)
+    toggle (value) {
+      console.log(value)
     }
   }
 }

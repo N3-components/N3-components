@@ -1,6 +1,6 @@
 <template>
 <div class="inline">
-  <div  :class="classObj" @click="toggle">
+  <div :class="classObj" @click="toggle">
     <div class="{{prefixCls}}-switch-container {{prefixCls}}-switch-on-primary {{prefixCls}}-switch-off-default">
       <span class="{{prefixCls}}-switch-handle-on {{prefixCls}}-switch-primary" >{{ontext}}</span>
       <span class="{{prefixCls}}-switch-label" >&nbsp;</span>
@@ -75,7 +75,7 @@ export default {
       if (this.disabled) return
       this.value = !this.value
       if (type.isFunction(this.onChange)) {
-        this.onChange()
+        this.onChange(this.value)
       }
     }
   }
