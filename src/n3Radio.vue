@@ -5,23 +5,37 @@
     <input 
     type="radio" 
     :disabled="disabled"
-    :checked="!!checked"
+    :checked="checked"
     class="{{prefixCls}}-radio-input" 
     @click.prevent="handleClick" >
   </span>
   <span><slot></slot></span>
+  <validate
+    :name="name"
+    :rules="rules"
+    :valid-status.sync="validStatus"
+    :custom-validate="customValidate" 
+    :value="checked"
+    :results.sync="validateResults">
+  </validate>
 </label>
 </template>
 
 <script>
+import type from './utils/type'
+import valMixin from './valMixin'
+import validate from './validate'
+
 export default {
+  mixins: [valMixin],
   props: {
     value: {
       type: String
     },
     checked: {
       type: Boolean,
-      default: false
+      default: false,
+      twoway: true
     },
     disabled: {
       type: Boolean,
@@ -35,31 +49,35 @@ export default {
       default: 'n3'
     }
   },
+  components: {
+    validate
+  },
+  events: {
+    'n3@radiogroupChange' (val) {
+      this.checked = val === this.value
+    }
+  },
   computed: {
     wrapClasses () {
       let klass = {}
-      let {prefixCls, active, disabled} = this
+      let {prefixCls, checked, disabled} = this
 
       klass[prefixCls + '-radio-span'] = true
-      klass[prefixCls + '-radio-checked'] = active
+      klass[prefixCls + '-radio-checked'] = checked
       klass[prefixCls + '-radio-disabled'] = disabled
 
       return klass
-    },
-    active () {
-      return this.$parent.value === this.value
     }
   },
   methods: {
     handleClick () {
-      this.$parent.value = this.value
-      if (typeof this.onChange === 'function') {
+      if (this.checked) return
+      this.checked = true
+      this.$dispatch('n3@radioChange', this.value)
+      if (type.isFunction(this.onChange)) {
         this.onChange(this.checked)
       }
     }
-  },
-  created () {
-    if (this.checked) this.$parent.value = this.value
   }
 }
 </script>

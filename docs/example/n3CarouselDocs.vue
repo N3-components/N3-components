@@ -27,29 +27,29 @@
       </n3-carousel>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-   <n3-carousel>
-        <n3-slide>
-          <img class="slide-img" src="/docs/assets/img/1.jpg">
-          <div class="carousel-caption">
-           <h3>Slide #1</h3>
-           <p>xxxxxxxxxxxx</p>
-         </div>
-        </n3-slide>
-        <n3-slide>
-          <img class="slide-img" src="/docs/assets/img/2.jpg">
-          <div class="carousel-caption">
-           <h3>Slide #2</h3>
-           <p>xxxxxxxxxxxx</p>
-         </div>
-        </n3-slide>
-        <n3-slide>
-          <img class="slide-img" src="/docs/assets/img/3.png">
-          <div class="carousel-caption">
-           <h3>Slide #3</h3>
-           <p>xxxxxxxxxxxx</p>
-         </div>
-        </n3-slide>
-      </n3-carousel>
+<n3-carousel>
+  <n3-slide>
+    <img class="slide-img" src="/docs/assets/img/1.jpg">
+    <div class="carousel-caption">
+     <h3>Slide #1</h3>
+     <p>xxxxxxxxxxxx</p>
+   </div>
+  </n3-slide>
+  <n3-slide>
+    <img class="slide-img" src="/docs/assets/img/2.jpg">
+    <div class="carousel-caption">
+     <h3>Slide #2</h3>
+     <p>xxxxxxxxxxxx</p>
+   </div>
+  </n3-slide>
+  <n3-slide>
+    <img class="slide-img" src="/docs/assets/img/3.png">
+    <div class="carousel-caption">
+     <h3>Slide #3</h3>
+     <p>xxxxxxxxxxxx</p>
+   </div>
+  </n3-slide>
+</n3-carousel>
     </script></code></pre>
 
   <h2>参数</h2>

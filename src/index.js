@@ -10,6 +10,7 @@ import n3Cascader from './n3Cascader'
 import n3ToastMethod from './n3ToastMethod'
 import n3Label from './n3Label'
 import n3Input from './n3Input'
+import n3InputNumber from './n3InputNumber'
 import n3Textarea from './n3Textarea'
 import n3Datepicker from './n3Datepicker'
 import n3Timepicker from './n3Timepicker'
@@ -93,6 +94,7 @@ const Components = {
   n3SubNav,
   n3NavItem,
   n3Panel,
+  n3InputNumber,
   n3Popover,
   n3PopConfirm,
   n3Progressbar,

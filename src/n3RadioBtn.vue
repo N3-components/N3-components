@@ -3,14 +3,14 @@
     @click.prevent="handleClick"
     :class="classObj" 
     :disabled="disabled"
-    :active="active"
-    :type="type">
+    :type="checked ? 'primary' : 'default'">
     <slot></slot>
   </n3-button>
 </template>
 
 <script>
 import n3Button from './n3Button'
+import type from './utils/type'
 
 export default {
   props: {
@@ -19,7 +19,8 @@ export default {
     },
     checked: {
       type: Boolean,
-      default: false
+      default: false,
+      twoway: true
     },
     disabled: {
       type: Boolean,
@@ -33,15 +34,14 @@ export default {
       default: 'n3'
     }
   },
+  events: {
+    'n3@radiogroupChange' (val) {
+      this.checked = val === this.value
+    }
+  },
   computed: {
-    type () {
-      return this.$parent.type
-    },
-    active () {
-      return this.$parent.value === this.value
-    },
     classObj () {
-      let {prefixCls, active} = this
+      let {prefixCls} = this
       let klass = {}
       klass[prefixCls + '-radio-btn'] = true
 
@@ -50,17 +50,16 @@ export default {
   },
   methods: {
     handleClick () {
-      this.$parent.value = this.value
-      if (typeof this.onChange === 'function') {
+      if (this.checked) return
+      this.checked = true
+      this.$dispatch('n3@radioChange', this.value)
+      if (type.isFunction(this.onChange)) {
         this.onChange(this.value)
       }
     }
   },
   components: {
     n3Button
-  },
-  created () {
-    if (this.checked) this.$parent.value = this.value
   }
 }
 </script>

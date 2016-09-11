@@ -53,54 +53,54 @@
         </n3-container>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-     <n3-container fluid>
-          <n3-row>
-              <n3-column :col="8" class="context">
-                  :col="8"
-              </n3-column>
-              <n3-column :col="4" class="context">
-                  :col="4"
-              </n3-column>
-          </n3-row>
-          <n3-row>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-              <n3-column :col="1" class="context">
-                  1
-              </n3-column>
-          </n3-row>
-        </n3-container>
+<n3-container fluid>
+  <n3-row>
+      <n3-column :col="8" class="context">
+          :col="8"
+      </n3-column>
+      <n3-column :col="4" class="context">
+          :col="4"
+      </n3-column>
+  </n3-row>
+  <n3-row>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+      <n3-column :col="1" class="context">
+          1
+      </n3-column>
+  </n3-row>
+</n3-container>
     </script></code></pre>
     <h2>n3-container参数</h2>
     <table class="table table-bordered">

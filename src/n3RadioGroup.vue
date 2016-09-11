@@ -41,6 +41,7 @@ import n3Radio from './n3Radio'
 import n3RadioBtn from './n3RadioBtn'
 import valMixin from './valMixin'
 import validate from './validate'
+import type from './utils/type'
 
 export default {
   mixins: [valMixin],
@@ -48,10 +49,6 @@ export default {
     value: {
       type: String,
       twoWay: true
-    },
-    color: {
-      type: String,
-      default: 'default'
     },
     type: {
       type: String,
@@ -68,13 +65,40 @@ export default {
       default: 'n3'
     }
   },
+  methods: {
+    init (val) {
+      if (!type.isUndefined(val)) {
+        this.value = val
+      } else {
+        let children = this.$children
+        let ret
+        children.forEach((item) => {
+          item.checked ? ret = item.value : ''
+        })
+        this.value = ret
+      }
+    }
+  },
+  events: {
+    'n3@radioChange' (val) {
+      this.init(val)
+    }
+  },
 
   watch: {
     value () {
-      if (typeof this.onChange === 'function') {
+      this.$broadcast('n3@radiogroupChange', this.value)
+      if (type.isFunction(this.onChange)) {
         this.onChange(this.value)
       }
+    },
+    options () {
+      this.init()
     }
+  },
+
+  ready () {
+    this.init()
   },
 
   components: {

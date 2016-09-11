@@ -6,7 +6,7 @@
       {{value | json}}
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-    <n3-cascader :options="options" :on-change="selectChange" :value.sync="value" :select-change="true"></n3-cascader>
+<n3-cascader :options="options" :on-change="selectChange" :value.sync="value" :select-change="true"></n3-cascader>
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">
@@ -23,31 +23,31 @@
           <td>options</td>
           <td><code>Array</code></td>
           <td></td>
-          <td><pre><code>
-            [{
-              value: 'zhejiang',
-              label: '浙江',
-              children: [{
-                value: 'hangzhou',
-                label: '杭州',
-                children: [{
-                  value: 'xihu',
-                  label: '西湖',
-                }],
-              }],
-            }, {
-              value: 'jiangsu',
-              label: '江苏',
-              disabled:true,
-              children: [{
-                value: 'nanjing',
-                label: '南京',
-                children: [{
-                  value: 'zhonghuamen',
-                  label: '中华门',
-                }],
-              }],
-            }]
+          <td><pre><code class="language-javascript">
+[{
+  value: 'zhejiang',
+  label: '浙江',
+  children: [{
+    value: 'hangzhou',
+    label: '杭州',
+    children: [{
+      value: 'xihu',
+      label: '西湖',
+    }],
+  }],
+}, {
+  value: 'jiangsu',
+  label: '江苏',
+  disabled:true,
+  children: [{
+    value: 'nanjing',
+    label: '南京',
+    children: [{
+      value: 'zhonghuamen',
+      label: '中华门',
+    }],
+  }],
+}]
           </code></pre></td>
         </tr>
         <tr>
@@ -77,10 +77,10 @@
         <tr>
           <td>displayRender</td>
           <td><code>Function</code></td>
-          <td><pre><code>
-            function(label){
-              return label.join(' / ')
-            }
+          <td><pre><code class="language-javascript">
+function(label){
+  return label.join(' / ')
+}
           </code></pre></td>
           <td></td>
         </tr>

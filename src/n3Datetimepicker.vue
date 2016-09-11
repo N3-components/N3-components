@@ -128,7 +128,7 @@ import n3Slider from './n3Slider'
 import n3Input from './n3Input'
 import inputMixin from './inputMixin'
 import EventListener from './utils/EventListener'
-import type from 'get-type'
+import type from './utils/type'
 
 export default {
   mixins: [inputMixin],

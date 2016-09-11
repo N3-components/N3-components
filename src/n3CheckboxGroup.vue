@@ -1,24 +1,23 @@
 <template>
   <div class="{{prefixCls}}-btn-group {{prefixCls}}-checkbox-group">
     <template v-if="options">
-        <n3-checkbox 
-          v-if="type==='checkbox'" 
-          v-for="item in options"
-          :value="item.value"
-          :checked="item.checked"
-          :disabled="item.disabled">
-          {{item.label}}
-        </n3-checkbox>
+      <n3-checkbox
+        v-if="type==='checkbox'" 
+        v-for="item in options"
+        :value="item.value"
+        :checked="item.checked"
+        :disabled="item.disabled">
+        {{item.label}}
+      </n3-checkbox>
 
-         <n3-checkbox-btn 
-         v-if="type==='button'" 
-         v-for="item in options"
-         :value="item.value"
-         :checked="item.checked"
-         :disabled="item.disabled">
-         {{item.label}}
-        </n3-checkbox-btn>
-
+       <n3-checkbox-btn
+        v-if="type==='button'" 
+        v-for="item in options"
+        :value="item.value"
+        :checked="item.checked"
+        :disabled="item.disabled">
+       {{item.label}}
+      </n3-checkbox-btn>
     </template>
     <template v-else>
     <slot></slot>
@@ -41,6 +40,7 @@ import n3Checkbox from './n3Checkbox'
 import n3CheckboxBtn from './n3CheckboxBtn'
 import valMixin from './valMixin'
 import validate from './validate'
+import type from './utils/type'
 
 export default {
   mixins: [valMixin],
@@ -50,10 +50,6 @@ export default {
       default () {
         return []
       }
-    },
-    color: {
-      type: String,
-      default: 'default'
     },
     type: {
       type: String,
@@ -71,12 +67,36 @@ export default {
     }
   },
 
+  methods: {
+    init () {
+      let children = this.$children
+      let ret = []
+      children.forEach((item) => {
+        item.checked ? ret.push(item.value) : ''
+      })
+      this.value = ret
+    }
+  },
+  events: {
+    'n3@checkboxChange' (val) {
+      this.init()
+    }
+  },
+
   watch: {
     value () {
-      if (typeof this.onChange === 'function') {
+      this.$broadcast('n3@checkboxgroupChange', this.value)
+      if (type.isFunction(this.onChange)) {
         this.onChange(this.value)
       }
+    },
+    options () {
+      this.init()
     }
+  },
+
+  ready () {
+    this.init()
   },
 
   components: {

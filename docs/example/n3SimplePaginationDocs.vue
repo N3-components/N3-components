@@ -6,7 +6,7 @@
       <hr></hr>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-simple-pagination :total="100" :current.sync="1" :pagesize=20 :on-change="changepage"></n3-simple-pagination>
+<n3-simple-pagination :total="100" :current.sync="1" :pagesize=20 :on-change="changepage"></n3-simple-pagination>
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">

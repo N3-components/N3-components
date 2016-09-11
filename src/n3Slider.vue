@@ -28,7 +28,7 @@ import EventListener from './utils/EventListener'
 import n3Tooltip from './n3Tooltip'
 import valMixin from './valMixin'
 import validate from './validate'
-import type from 'get-type'
+import type from './utils/type'
 
 export default {
   mixins: [valMixin],

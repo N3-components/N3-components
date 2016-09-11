@@ -3,14 +3,14 @@
     @click.prevent="handleClick"
     :class="classObj" 
     :disabled="disabled"
-    :active="active"
-    :type="type">
+    :type="checked ? 'primary' : 'default'">
     <slot></slot>
   </n3-button>
 </template>
 
 <script>
 import n3Button from './n3Button'
+import type from './utils/type'
 
 export default {
   props: {
@@ -19,7 +19,8 @@ export default {
     },
     checked: {
       type: Boolean,
-      default: false
+      default: false,
+      twoway: true
     },
     disabled: {
       type: Boolean,
@@ -33,17 +34,14 @@ export default {
       default: 'n3'
     }
   },
+  events: {
+    'n3@checkboxgroupChange' (val) {
+      this.checked = val.indexOf(this.value) > -1
+    }
+  },
   computed: {
-    color () {
-      return this.$parent.color
-    },
-    active () {
-      let parent = this.$parent
-      let index = parent.value.indexOf(this.value)
-      return index > -1
-    },
     classObj () {
-      let {prefixCls, active} = this
+      let {prefixCls} = this
       let klass = {}
       klass[prefixCls + '-checked-btn'] = true
 
@@ -52,19 +50,12 @@ export default {
   },
   methods: {
     handleClick () {
-      let parent = this.$parent
-      let index = parent.value.indexOf(this.value)
-      index === -1 ? parent.value.push(this.value) : parent.value.splice(index, 1)
       this.checked = !this.checked
-      if (typeof this.onChange === 'function') {
+      this.$dispatch('n3@checkboxChange', this)
+      if (type.isFunction(this.onChange)) {
         this.onChange(this.checked)
       }
     }
-  },
-  created () {
-    let parent = this.$parent
-    let index = parent.value.indexOf(this.value)
-    if (this.checked && index === -1) this.$parent.value.push(this.value)
   },
   components: {
     n3Button

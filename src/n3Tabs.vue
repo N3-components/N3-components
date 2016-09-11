@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import type from 'get-type'
+import type from './utils/type'
 import n3Badge from './n3Badge'
 
 export default {

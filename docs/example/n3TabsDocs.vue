@@ -49,36 +49,36 @@
       
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-tabs>
-        <n3-tab header="one">
-          ...
-        </n3-tab>
-        <n3-tab header="two">
-          ...
-        </n3-tab>
-        <n3-tab header="three" disabled>
-          ...
-        </n3-tab>
+<n3-tabs>
+  <n3-tab header="one">
+    ...
+  </n3-tab>
+  <n3-tab header="two">
+    ...
+  </n3-tab>
+  <n3-tab header="three" disabled>
+    ...
+  </n3-tab>
 
-        <n3-tabs pills >
-          <n3-tab header="one">
-          </n3-tab>
-          <n3-tab header="two">
-          </n3-tab>
-        </n3-tabs>
-        <n3-tabs pills stacked>
-          <n3-tab header="one">
-          </n3-tab>
-          <n3-tab header="two">
-          </n3-tab>
-        </n3-tabs>
-        <n3-tabs primary pills stacked>
-          <n3-tab header="one">
-          </n3-tab>
-          <n3-tab header="two">
-          </n3-tab>
-        </n3-tabs>
-      </n3-tabs>
+  <n3-tabs pills >
+    <n3-tab header="one">
+    </n3-tab>
+    <n3-tab header="two">
+    </n3-tab>
+  </n3-tabs>
+  <n3-tabs pills stacked>
+    <n3-tab header="one">
+    </n3-tab>
+    <n3-tab header="two">
+    </n3-tab>
+  </n3-tabs>
+  <n3-tabs primary pills stacked>
+    <n3-tab header="one">
+    </n3-tab>
+    <n3-tab header="two">
+    </n3-tab>
+  </n3-tabs>
+</n3-tabs>
       </script></code></pre>
   <h2>tabs参数</h2>
   <table class="table table-bordered">
