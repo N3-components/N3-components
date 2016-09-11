@@ -8,10 +8,9 @@
       <n3-step  round :labels="['第一步 我的文案比较长','第二步','第三步']" :current="2" ></n3-step>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-step :labels="['第一步 我的文案比较长','第二步','第三步']" :current="2" ></n3-step>
+<n3-step :labels="['第一步 我的文案比较长','第二步','第三步']" :current="2" ></n3-step>
 
-      <n3-step round :labels="['第一步 我的文案比较长','第二步','第三步']" :current="2" ></n3-step>
-
+<n3-step round :labels="['第一步 我的文案比较长','第二步','第三步']" :current="2" ></n3-step>
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">

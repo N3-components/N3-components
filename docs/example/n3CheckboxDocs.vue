@@ -1,9 +1,12 @@
 <template>
-  <div class="bs-docs-section" id="按钮组"  >
-    <h1 class="page-header"><a href="#按钮组" class="anchor">按钮组</a><span class="author"> </span></h1>
+  <div class="bs-docs-section" id="多选框"  >
+    <h1 class="page-header"><a href="#多选框" class="anchor">多选框</a><span class="author"> </span></h1>
     <div class="bs-example">
       
       <h4>Checkbox</h4>
+      <n3-checkbox value="left" :checked.sync="single">single</n3-checkbox>
+      <br>
+      <br>
       <n3-checkbox-group :value.sync="checkboxValue" >
         <n3-checkbox-btn value="left" disabled>Left</n3-checkbox-btn>
         <n3-checkbox-btn value="middle" checked>Middle</n3-checkbox-btn>
@@ -23,17 +26,18 @@ Checkbox value: {{checkboxValue | json}}
       </p>
 
       <pre><code class="language-markup"><script type="language-mark-up">
-     <n3-checkbox-group :value.sync="checkboxValue" >
-        <n3-checkbox-btn value="left" disabled>Left</n3-checkbox-btn>
-        <n3-checkbox-btn value="middle" checked>Middle</n3-checkbox-btn>
-        <n3-checkbox-btn value="right">Right</n3-checkbox-btn>
-      </n3-checkbox-group>
-      <br>
-      <n3-checkbox-group :value.sync="checkboxValue">
-        <n3-checkbox value="left" disabled>Left</n3-checkbox>
-        <n3-checkbox value="middle" checked>Middle</n3-checkbox>
-        <n3-checkbox value="right">Right</n3-checkbox>
-      </n3-checkbox-group>
+<n3-checkbox value="left" :checked.sync="single">single</n3-checkbox>
+<n3-checkbox-group :value.sync="checkboxValue" >
+  <n3-checkbox-btn value="left" disabled>Left</n3-checkbox-btn>
+  <n3-checkbox-btn value="middle" checked>Middle</n3-checkbox-btn>
+  <n3-checkbox-btn value="right">Right</n3-checkbox-btn>
+</n3-checkbox-group>
+<br>
+<n3-checkbox-group :value.sync="checkboxValue">
+  <n3-checkbox value="left" disabled>Left</n3-checkbox>
+  <n3-checkbox value="middle" checked>Middle</n3-checkbox>
+  <n3-checkbox value="right">Right</n3-checkbox>
+</n3-checkbox-group>
     </script></code></pre>
      
     <br>
@@ -55,17 +59,6 @@ Checkbox value: {{checkboxValue | json}}
           <td></td>
         </tr>
         <tr>
-          <td>color</td>
-          <td><code>String</code>, 如:  <code>default</code>
-          <code>primary</code>
-          <code>danger</code>
-          <code>info</code>
-          <code>warning</code>
-          <code>success</code></td>
-          <td><code>default</code></td>
-          <td></td>
-        </tr>
-        <tr>
           <td>options</td>
           <td>Array</td>
           <td></td>
@@ -75,7 +68,7 @@ Checkbox value: {{checkboxValue | json}}
           <td>type</td>
           <td>String</td>
           <td></td>
-          <td>checkbox,button(checkbox)   radio,button(radio) 使用options时起作用</td>
+          <td><code>checkbox,button</code> 使用options时起作用</td>
         </tr>
         <tr>
           <td>on-change</td>
@@ -85,7 +78,7 @@ Checkbox value: {{checkboxValue | json}}
         </tr>
       </tbody>
     </table>
-    <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+    
     
     <h2>checkbox</h2>
     <table class="table table-bordered">
@@ -114,11 +107,19 @@ Checkbox value: {{checkboxValue | json}}
           <td>checked</td>
           <td>Boolean</td>
           <td>false</td>
-          <td>初始化选中</td>
+          <td>是否选中 <code>.sync</code></td>
+        </tr>
+        <tr>
+          <td>on-change</td>
+          <td>Function</td>
+          <td></td>
+          <td>值改变回调</td>
         </tr>
       </tbody>
     </table>
     
+    <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+    <p><code>n3-checkbox-btn</code>不建议单独使用</p>
   </div>
 </template>
 
@@ -126,6 +127,7 @@ Checkbox value: {{checkboxValue | json}}
 export default {
   data () {
     return {
+      single: false,
       checkboxValue: []
     }
   }

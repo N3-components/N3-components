@@ -11,7 +11,7 @@
     <pre><code class="language-markup"><script type="language-mark-up">
        <n3-uploader url="/upload"></n3-uploader>
 
-       <n3-uploader url="/upload" typle="drag"></n3-uploader>
+       <n3-uploader url="/upload" type="drag"></n3-uploader>
     </script></code></pre>
   <h2>参数</h2>
   <table class="table table-bordered">
@@ -55,19 +55,13 @@
         <td>支持多文件上传</td>
       </tr>
       <tr>
-        <td>multiple</td>
-        <td><code>Boolean</code></td>
-        <td>true</td>
-        <td>支持多文件上传</td>
-      </tr>
-      <tr>
-        <td>dragWidth</td>
+        <td>drag-width</td>
         <td><code>String</code></td>
         <td>300px</td>
         <td>拖拽框宽度</td>
       </tr>
       <tr>
-        <td>dragHeight</td>
+        <td>drag-height</td>
         <td><code>String</code></td>
         <td>200px</td>
         <td>拖拽框高度</td>
@@ -75,7 +69,7 @@
       <tr>
         <td>on-error</td>
         <td><code>Function</code></td>
-        <td><pre><code>
+        <td><pre><code class="language-javascript">
 function (data) {
   this.n3Toast({
     text: data.message

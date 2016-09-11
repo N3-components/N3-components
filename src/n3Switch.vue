@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import type from 'get-type'
+import type from './utils/type'
 import valMixin from './valMixin'
 import validate from './validate'
 
@@ -75,7 +75,7 @@ export default {
       if (this.disabled) return
       this.value = !this.value
       if (type.isFunction(this.onChange)) {
-        this.onChange()
+        this.onChange(this.value)
       }
     }
   }

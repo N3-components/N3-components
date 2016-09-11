@@ -7,9 +7,9 @@
         trigger="click">
         <div slot="content">
             <p>{{content}}</p>
-            <div style="float:right;margin:10px;">
-            <n3-button size="sm"  @click="show=false">{{cancelText}}</n3-button>
-            <n3-button size="sm" type="primary" @click="confirm">{{okText}}</n3-button>
+            <div style="float:right; margin:10px;">
+              <n3-button size="sm" @click="show = false">{{cancelText}}</n3-button>
+              <n3-button size="sm" type="primary" @click="confirm">{{okText}}</n3-button>
             </div>
         </div> 
         <slot></slot>
@@ -19,6 +19,7 @@
 <script>
 import n3Popover from './n3Popover'
 import n3Button from './n3Button'
+import type from './utils/type'
 
 export default {
   props: {
@@ -53,8 +54,20 @@ export default {
 
   methods: {
     confirm () {
-      if (typeof this.onConfirm === 'function') {
-        this.onConfirm(this)
+      let self = this
+      if (type.isFunction(this.onConfirm)) {
+        let promise = this.onConfirm()
+        if (type.isPromise(promise)) {
+          promise.then((...args) => {
+            self.show = false
+            return args
+          }).catch((...args) => {
+            self.show = false
+            return Promise.reject(args)
+          })
+        } else {
+          self.show = false
+        }
       }
     }
   },

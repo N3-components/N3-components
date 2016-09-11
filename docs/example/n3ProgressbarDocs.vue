@@ -51,52 +51,52 @@
 
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <h4>静态</h4>
-      <div class="row">
-        <div class="col-md-4">
-          <n3-progress>
-            <n3-progressbar :now="20" type="success" height="10px"></n3-progressbar>
-          </n3-progress>
-        </div>
-        <div class="col-md-4">
-          <n3-progress>
-            <n3-progressbar :now="40" type="info"></n3-progressbar>
-          </n3-progress>
-        </div>
-      </div>
+<h4>静态</h4>
+<div class="row">
+  <div class="col-md-4">
+    <n3-progress>
+      <n3-progressbar :now="20" type="success" height="10px"></n3-progressbar>
+    </n3-progress>
+  </div>
+  <div class="col-md-4">
+    <n3-progress>
+      <n3-progressbar :now="40" type="info"></n3-progressbar>
+    </n3-progress>
+  </div>
+</div>
 
-      <hr>
+<hr>
 
-      <h4>
-        动态
-        <n3-button  @click="dynamicClick">随机变化</n3-button>
-      </h4>
-      <n3-progress>
-        <n3-progressbar :now="dynamicData[0] * 2" type="info" ></n3-progressbar>
-      </n3-progress>
-      <n3-progress>
-        <n3-progressbar :now="dynamicData[1] * 2" type="warning"></n3-progressbar>
-      </n3-progress>
-      <n3-progress>
-        <n3-progressbar :now="dynamicData[2] * 2" type="danger"></n3-progressbar>
-      </n3-progress>
-      <n3-progress>
-        <n3-progressbar :now="dynamicData[3] * 2" type="success" striped></n3-progressbar>
-      </n3-progress>
+<h4>
+  动态
+  <n3-button  @click="dynamicClick">随机变化</n3-button>
+</h4>
+<n3-progress>
+  <n3-progressbar :now="dynamicData[0] * 2" type="info" ></n3-progressbar>
+</n3-progress>
+<n3-progress>
+  <n3-progressbar :now="dynamicData[1] * 2" type="warning"></n3-progressbar>
+</n3-progress>
+<n3-progress>
+  <n3-progressbar :now="dynamicData[2] * 2" type="danger"></n3-progressbar>
+</n3-progress>
+<n3-progress>
+  <n3-progressbar :now="dynamicData[3] * 2" type="success" striped></n3-progressbar>
+</n3-progress>
 
-      <hr>
+<hr>
 
-      <h4>
-        叠加
-        <n3-button  @click="stackedClick">随机变化</n3-button>
-      </h4>
+<h4>
+  叠加
+  <n3-button  @click="stackedClick">随机变化</n3-button>
+</h4>
 
-      <n3-progress>
-        <n3-progressbar :now="stackedData[0]" label type="warning" striped></n3-progressbar>
-        <n3-progressbar :now="stackedData[1]" label type="success" ></n3-progressbar>
-        <n3-progressbar :now="stackedData[2]" label type="danger"></n3-progressbar>
-        <n3-progressbar :now="stackedData[3]" label type="primary" striped ></n3-progressbar>
-      </div>
+<n3-progress>
+  <n3-progressbar :now="stackedData[0]" label type="warning" striped></n3-progressbar>
+  <n3-progressbar :now="stackedData[1]" label type="success" ></n3-progressbar>
+  <n3-progressbar :now="stackedData[2]" label type="danger"></n3-progressbar>
+  <n3-progressbar :now="stackedData[3]" label type="primary" striped ></n3-progressbar>
+</div>
     </script></code></pre>
 
     <h2>参数</h2>

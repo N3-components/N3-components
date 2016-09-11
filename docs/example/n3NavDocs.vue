@@ -25,28 +25,28 @@
           </n3-nav-item>
           </n3-nav>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-nav theme="default" >
-          <n3-nav-item active>
-            <a >导航一</a>
-          </n3-nav-item>
-          <n3-nav-item disabled>
-            <a >导航二</a>
-          </n3-nav-item>
-          <n3-nav-item>
-            <n3-sub-nav>
-              <a slot="title">导航三</a>
-              <n3-nav-item >
-                <a>子导航一</a>
-              </n3-nav-item>
-              <n3-nav-item >
-                <a>子导航二</a>
-              </n3-nav-item>
-              <n3-nav-item >
-                <a >子导航三</a>
-              </n3-nav-item>
-            </n3-sub-nav>
-          </n3-nav-item>
-        </n3-nav>
+<n3-nav theme="default" >
+  <n3-nav-item active>
+    <a >导航一</a>
+  </n3-nav-item>
+  <n3-nav-item disabled>
+    <a >导航二</a>
+  </n3-nav-item>
+  <n3-nav-item>
+    <n3-sub-nav>
+      <a slot="title">导航三</a>
+      <n3-nav-item >
+        <a>子导航一</a>
+      </n3-nav-item>
+      <n3-nav-item >
+        <a>子导航二</a>
+      </n3-nav-item>
+      <n3-nav-item >
+        <a >子导航三</a>
+      </n3-nav-item>
+    </n3-sub-nav>
+  </n3-nav-item>
+</n3-nav>
       </script></code></pre>
         <n3-nav theme="dark" type="vertical" style="width:300px;">
           <n3-nav-item active>
@@ -74,31 +74,31 @@
             </n3-nav-item>
         </n3-nav>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-nav theme="dark" type="vertical" >
-          <n3-nav-item active>
-            <a >导航一</a>
-          </n3-nav-item>
-          <n3-nav-item disabled>
-            <a >导航二</a>
-          </n3-nav-item>
-          <n3-nav-item>
-            <n3-sub-nav>
-              <a slot="title">导航三</a>
-              <n3-nav-item >
-                <a>子导航一</a>
-              </n3-nav-item>
-              <n3-nav-item >
-                <a>子导航二</a>
-              </n3-nav-item>
-              <n3-nav-item >
-                <a >子导航三</a>
-              </n3-nav-item>
-            </n3-sub-nav>
-            </n3-nav-item>
-            <n3-nav-item >
-              <a>导航四</a>
-          </n3-nav-item>
-        </n3-nav>
+<n3-nav theme="dark" type="vertical" >
+  <n3-nav-item active>
+    <a >导航一</a>
+  </n3-nav-item>
+  <n3-nav-item disabled>
+    <a >导航二</a>
+  </n3-nav-item>
+  <n3-nav-item>
+    <n3-sub-nav>
+      <a slot="title">导航三</a>
+      <n3-nav-item >
+        <a>子导航一</a>
+      </n3-nav-item>
+      <n3-nav-item >
+        <a>子导航二</a>
+      </n3-nav-item>
+      <n3-nav-item >
+        <a >子导航三</a>
+      </n3-nav-item>
+    </n3-sub-nav>
+    </n3-nav-item>
+    <n3-nav-item >
+      <a>导航四</a>
+  </n3-nav-item>
+</n3-nav>
       </script></code></pre>
   </div>
 

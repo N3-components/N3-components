@@ -2,18 +2,18 @@
   <div class="bs-docs-section" id="侧边栏"  >
     <h1 class="page-header"><a href="#侧边栏" class="anchor">侧边栏</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-button  @click="showLeft = true">左侧栏</n3-button>
+      <n3-button @click="showLeft = true">左侧栏</n3-button>
 
-      <n3-aside  :show.sync="showLeft" placement="left" header="Title" width="350px">
+      <n3-aside :show.sync="showLeft" placement="left" header="Title" width="350px">
         <h4>左侧侧边栏</h4>
         <p>...</p>
         <p>...</p>
         <p>...</p>
         
-        <n3-button  @click="showLeft = close">关闭</n3-button>
+        <n3-button @click="showLeft = close">关闭</n3-button>
       </n3-aside>
       
-      <n3-button  @click="showRight = true">右侧栏</n3-button>
+      <n3-button @click="showRight = true">右侧栏</n3-button>
 
       <n3-aside :show.sync="showRight" placement="right" header="Title" width="350px">
         <h4>右侧侧边栏</h4>
@@ -21,33 +21,31 @@
         <p>...</p>
         <p>...</p>
           
-        <n3-button  @click="showRight = false">关闭</n3-button>
+        <n3-button @click="showRight = false">关闭</n3-button>
       </n3-aside>
       
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-button  @click="showLeft = true">左侧栏</n3-button>
+<n3-button @click="showLeft = true">左侧栏</n3-button>
+<n3-aside :show.sync="showLeft" placement="left" header="Title" width="350px">
+  <h4>左侧侧边栏</h4>
+  <p>...</p>
+  <p>...</p>
+  <p>...</p>
+  
+  <n3-button @click="showLeft = close">关闭</n3-button>
+</n3-aside>
 
-      <n3-aside  :show.sync="showLeft" placement="left" header="Title" width="350px">
-        <h4>左侧侧边栏</h4>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        
-        <n3-button  @click="showLeft = close">关闭</n3-button>
-      </n3-aside>
-      
-      <n3-button  @click="showRight = true">右侧栏</n3-button>
+<n3-button @click="showRight = true">右侧栏</n3-button>
 
-      <n3-aside :show.sync="showRight" placement="right" header="Title" width="350px">
-        <h4>右侧侧边栏</h4>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-          
-        <n3-button  @click="showRight = false">关闭</n3-button>
-      </n3-aside>
-      
+<n3-aside :show.sync="showRight" placement="right" header="Title" width="350px">
+  <h4>右侧侧边栏</h4>
+  <p>...</p>
+  <p>...</p>
+  <p>...</p>
+    
+  <n3-button  @click="showRight = false">关闭</n3-button>
+</n3-aside>
     </script></code></pre>
 
     <h2>参数</h2>

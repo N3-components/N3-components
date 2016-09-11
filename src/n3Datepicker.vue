@@ -99,7 +99,7 @@
 import EventListener from './utils/EventListener'
 import n3Input from './n3Input'
 import inputMixin from './inputMixin'
-import type from 'get-type'
+import type from './utils/type'
 
 export default {
   mixins: [inputMixin],

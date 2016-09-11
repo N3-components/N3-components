@@ -31,28 +31,28 @@
       </n3-select>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-datepicker
-        :value.sync="value"
-        :disabled-days-of-Week="disabled"
-        :format="format">
-      </n3-datepicker>
+<n3-datepicker
+  :value.sync="value"
+  :disabled-days-of-Week="disabled"
+  :format="format">
+</n3-datepicker>
 
-      <n3-select multiple :value.sync="disabled" size=5>
-        <n3-option value="0">0</n3-option>
-        <n3-option value="1">1</n3-option>
-        <n3-option value="2">2</n3-option>
-        <n3-option value="3">3</n3-option>
-        <n3-option value="4">4</n3-option>
-        <n3-option value="5">5</n3-option>
-        <n3-option value="6">6</n3-option>
-      </n3-select>
-      <n3-select  :value.sync="format">
-        <n3-option value="yyyy,MM,dd">yyyy,MM,dd</n3-option>
-        <n3-option value="yyyy-MM-dd">yyyy-MM-dd</n3-option>
-        <n3-option value="yyyy.MM.dd">yyyy.MM.dd</n3-option>
-        <n3-option value="MMM/dd/yyyy">MMM/dd/yyyy</n3-option>
-        <n3-option value="MMMM/dd/yyyy">MMMM/dd/yyyy</n3-option>
-      </n3-select>
+<n3-select multiple :value.sync="disabled" size=5>
+  <n3-option value="0">0</n3-option>
+  <n3-option value="1">1</n3-option>
+  <n3-option value="2">2</n3-option>
+  <n3-option value="3">3</n3-option>
+  <n3-option value="4">4</n3-option>
+  <n3-option value="5">5</n3-option>
+  <n3-option value="6">6</n3-option>
+</n3-select>
+<n3-select  :value.sync="format">
+  <n3-option value="yyyy,MM,dd">yyyy,MM,dd</n3-option>
+  <n3-option value="yyyy-MM-dd">yyyy-MM-dd</n3-option>
+  <n3-option value="yyyy.MM.dd">yyyy.MM.dd</n3-option>
+  <n3-option value="MMM/dd/yyyy">MMM/dd/yyyy</n3-option>
+  <n3-option value="MMMM/dd/yyyy">MMMM/dd/yyyy</n3-option>
+</n3-select>
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">

@@ -5,7 +5,7 @@ config.entry = {
 }
 
 config.output = {
-  path: './build',
+  path: './dist',
   filename: '[name].js',
   libraryTarget: 'umd'
 }

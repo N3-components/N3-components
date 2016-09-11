@@ -18,7 +18,7 @@
     </nav>
 </template>
 <script>  
-import type from 'get-type'
+import type from './utils/type'
 import n3Input from './n3Input'
 import n3Button from './n3Button'
 import n3Icon from './n3Icon'

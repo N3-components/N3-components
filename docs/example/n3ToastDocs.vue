@@ -4,21 +4,22 @@
     <div class="bs-example">
       <n3-button @click="showToast">点击</n3-button>
       <hr>
-     <pre><code class="language-markup"><script type="language-mark-up">
-      <a class="btn btn-default" @click="showToast">点击</a>
-
-      new Vue({
-        methods:{
-          showToast(){
-            this.n3Toast({
-                text: '成功',
-                type: 'success',
-                placement: 'top'
-            })
-          }
-        }
+      <pre><code class="language-markup"><script type="language-mark-up">
+<a class="btn btn-default" @click="showToast">点击</a>
+      </script></code></pre>
+      <pre><code class="language-javascript"><script type="language-javascript">
+new Vue({
+  methods:{
+    showToast(){
+      this.n3Toast({
+          text: '成功',
+          type: 'success',
+          placement: 'top'
       })
-    </script></code></pre>
+    }
+  }
+})
+      </script></code></pre>
 
   <h2>参数</h2>
   <table class="table table-bordered">

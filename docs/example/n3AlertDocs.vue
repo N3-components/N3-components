@@ -15,7 +15,7 @@
       </n3-button>
       <hr>
 
-       <n3-alert  dismissable>
+      <n3-alert  dismissable>
         <strong>default style</strong>
         This is the default style.
       </n3-alert>
@@ -36,7 +36,6 @@
       <n3-alert type="warning" dismissable>
         <strong>Warning!</strong> Better check yourself, you're not looking too good.
         <hr>
-
       </n3-alert>
       <br>
       <n3-alert
@@ -55,7 +54,6 @@
         dismissable>
         这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
       </n3-alert>
-
       <br>
       <n3-alert
         type="info"
@@ -66,8 +64,6 @@
         dismissable>
         点击关闭按钮的回调函数,打开控制台看看:)
       </n3-alert>
-
-
       <n3-alert
         :show.sync="showRight"
         type="success"
@@ -78,8 +74,6 @@
         dismissable>
         <p>You successfully read this important alert message.</p>
       </n3-alert>
-
-
       <n3-alert
         :show.sync="showTop"
         :duration="3000"
@@ -93,97 +87,89 @@
       </n3-alert>
     </div>
 
-
 <pre><code class="language-markup">
   <script type="language-mark-up">
-   <n3-button type='success'
-        @click="showRight = !showRight">
-        点击出现在右边
-      </n3-button>
+<n3-button type='success'
+  @click="showRight = !showRight">
+  点击出现在右边
+</n3-button>
 
-      <n3-button type='danger'
-        @click="showTop = !showTop">
-       点击出现在顶部
-      </n3-button>
-      <hr>
+<n3-button type='danger'
+  @click="showTop = !showTop">
+ 点击出现在顶部
+</n3-button>
 
-       <n3-alert  dismissable>
-        <strong>default style</strong>
-        This is the default style.
-      </n3-alert>
-      <br>
-      <n3-alert type="success" >
-        <strong>Well Done!</strong>
-        You successfully read this important alert message.
-      </n3-alert>
-      <br>
-      <n3-alert type="info" >
-        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-      </n3-alert>
-      <br>
-      <n3-alert type="danger" dismissable>
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-      </n3-alert>
-      <br>
-      <n3-alert type="warning" dismissable>
-        <strong>Warning!</strong> Better check yourself, you're not looking too good.
-        <hr>
+<n3-alert  dismissable>
+  <strong>default style</strong>
+  This is the default style.
+</n3-alert>
 
-      </n3-alert>
-      <br>
-      <n3-alert
-        type="success"
-        width="700px"
-        message="信息提示"
-        description>
-        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
-      </n3-alert>
-      <br>
-      <n3-alert
-        type="danger"
-        width="700px"
-        message="错误提示"
-        description
-        dismissable>
-        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
-      </n3-alert>
+<n3-alert type="success" >
+  <strong>Well Done!</strong>
+  You successfully read this important alert message.
+</n3-alert>
 
-      <br>
-      <n3-alert
-        type="info"
-        width="700px"
-        message="错误提示"
-        :on-close="close"
-        description
-        dismissable>
-        点击关闭按钮的回调函数,打开控制台看看:)
-      </n3-alert>
+<n3-alert type="info" >
+  <strong>Heads up!</strong> This alert needs your attention, but it is not super important.
+</n3-alert>
 
+<n3-alert type="danger" dismissable>
+  <strong>Oh snap!</strong> Change a few things up and try submitting again.
+</n3-alert>
 
-      <n3-alert
-        :show.sync="showRight"
-        type="success"
-        width="700px"
-        placement="top-right"
-        message="信息提示"
-        description
-        dismissable>
-        <p>You successfully read this important alert message.</p>
-      </n3-alert>
+<n3-alert type="warning" dismissable>
+  <strong>Warning!</strong> Better check yourself, you are not looking too good.
+</n3-alert>
 
+<n3-alert
+  type="success"
+  width="700px"
+  message="信息提示"
+  description>
+  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
+</n3-alert>
 
-      <n3-alert
-        :show.sync="showTop"
-        :duration="3000"
-        type="danger"
-        placement="top"
-        message="警告"
-        description
-        dismissable>
-        <strong>Heads up!</strong>
-        <p>This alert needs your attention.</p>
-      </n3-alert>
+<n3-alert
+  type="danger"
+  width="700px"
+  message="错误提示"
+  description
+  dismissable>
+  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
+</n3-alert>
 
+<n3-alert
+  type="info"
+  width="700px"
+  message="错误提示"
+  :on-close="close"
+  description
+  dismissable>
+  点击关闭按钮的回调函数,打开控制台看看:)
+</n3-alert>
+
+<n3-alert
+  :show.sync="showRight"
+  type="success"
+  width="700px"
+  placement="top-right"
+  message="信息提示"
+  description
+  dismissable>
+  <p>You successfully read this important alert message.</p>
+</n3-alert>
+
+<n3-alert
+  :show.sync="showTop"
+  :duration="3000"
+  type="danger"
+  placement="top"
+  message="警告"
+  description
+  dismissable>
+  <strong>Heads up!</strong>
+  <p>This alert needs your attention.</p>
+</n3-alert>
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">
@@ -249,7 +235,7 @@
           <td>false</td>
           <td>警告提示</td>
         </tr>
-              <tr>
+        <tr>
           <td>message</td>
           <td><code>String</code></td>
           <td></td>
@@ -261,8 +247,6 @@
           <td></td>
           <td>点击关闭按钮时触发</td>
         </tr>
-
-
       </tbody>
     </table>
   </div>
