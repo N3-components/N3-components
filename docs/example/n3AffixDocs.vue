@@ -16,15 +16,15 @@
       </h3>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-    <n3-affix :offset="0">
-      <nav class="sidebar">
-        <ul>
-          <li>...</li>
-          <li>...</li>
-          <li>...</li>
-        </ul>
-      </nav>
-    </n3-affix>
+<n3-affix :offset="0">
+  <nav class="sidebar">
+    <ul>
+      <li>...</li>
+      <li>...</li>
+      <li>...</li>
+    </ul>
+  </nav>
+</n3-affix>
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">

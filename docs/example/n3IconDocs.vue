@@ -59,7 +59,7 @@
     </n3-container> 
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-icon type="rub"></n3-icon>
+<n3-icon type="rub"></n3-icon>
     </script></code></pre>
 
   <h2>参数</h2>

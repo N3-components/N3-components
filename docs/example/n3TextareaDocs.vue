@@ -6,7 +6,7 @@
     </div>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-textarea :value.sync="value"></n3-textarea>
+<n3-textarea :value.sync="value"></n3-textarea>
     </script></code></pre>
     <br>
     <table class="table table-bordered">

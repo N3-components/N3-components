@@ -18,12 +18,12 @@
     @keydown.esc="show=false"
     @keydown.up="up"
     @keydown.down="down"
-    @keydown.enter= "hit"
+    @keydown.enter= "hit(null)"
     @keydown.esc="reset"
   ></n3-input>
-  <ul class="{{prefixCls}}-dropdown-menu" :style="{maxWidth:maxWidth,maxHeight:maxHeight}">
+  <ul class="{{prefixCls}}-dropdown-menu" :style="{width:dropdownWidth,maxHeight:dropdownHeight}">
     <li v-for="item in items" :class="isActive($index)">
-      <a @mousedown.prevent="hit" @mousemove="setActive($index)">
+      <a @mousedown.prevent="hit($index)" >
         {{{render.call(this._context,item)}}}
       </a>
     </li> 
@@ -34,7 +34,7 @@
 
 <script>
 import n3Input from './n3Input'
-import type from 'get-type'
+import type from './utils/type'
 import inputMixin from './inputMixin'
 
 export default {
@@ -81,11 +81,11 @@ export default {
         this.query = this.addFormat(item)
       }
     },
-    maxWidth: {
+    dropdownWidth: {
       type: String,
-      default: '100%'
+      default: '220px'
     },
-    maxHeight: {
+    dropdownHeight: {
       type: String,
       default: '300px'
     },
@@ -153,16 +153,13 @@ export default {
       this.loading = false
       this.show = false
     },
-    setActive (index) {
-      this.current = index
-    },
     isActive (index) {
       let klass = this.prefixCls + '-dropdown-active'
       return this.current === index ? klass : ''
     },
-    hit (e) {
-      e.preventDefault()
+    hit (index) {
       if (this.items && this.items.length) {
+        index ? this.current = index : ''
         this.onHit(this.items[this.current], this)
       }
     },

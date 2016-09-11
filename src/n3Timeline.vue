@@ -12,7 +12,7 @@
 </template>
 <script>
 import n3TimelineItem from './n3TimelineItem'
-import type from 'get-type'
+import type from './utils/type'
 
 export default{
   props: {

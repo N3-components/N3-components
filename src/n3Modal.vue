@@ -30,7 +30,7 @@
 import getScrollBarWidth from './utils/getScrollBarWidth'
 import EventListener from './utils/EventListener'
 import n3Button from './n3Button'
-import type from 'get-type'
+import type from './utils/type'
 
 export default {
   props: {

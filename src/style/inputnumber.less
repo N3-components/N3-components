@@ -1,0 +1,107 @@
+@import "define.less";
+
+.@{prefix-cls}-input-number {
+  display: inline-block;
+  position: relative;
+
+
+  .@{prefix-cls}-form-control {
+    padding-right: 30px;
+  }
+
+  &-handler {
+    text-align: center;
+    line-height: 0;
+    height: 15px;
+    overflow: hidden;
+    color: @fontColor;
+    position: relative;
+    transition: all 0.1s linear;
+    display: block;
+    width: 100%;
+    &:hover &-up-inner,
+    &:hover &-down-inner {
+      color: @primaryColor;
+    }
+  }
+
+  &-handler-up-inner,
+  &-handler-down-inner {
+    line-height: 12px;
+    user-select: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transition: all 0.1s linear;
+    right: 4px;
+    color: @fontColor;
+  }
+
+  &-handler-wrap {
+    border-left: 1px solid @lightGrayColor;
+    width: 22px;
+    height: 31px;
+    background: @whiteColor;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.24s linear 0.1s;
+  }
+
+  &:hover &-handler-wrap {
+    opacity: 1;
+  }
+
+  &-handler-up {
+    cursor: pointer;
+    &-inner {
+      top: 1px;
+      &:before {
+        text-align: center;
+      }
+    }
+    &:hover {
+      height: 16px;
+    }
+    &:hover &-inner {
+      margin-top: 2px;
+    }
+  }
+
+  &-handler-down {
+    border-top: 1px solid  @lightGrayColor;
+    top: -1px;
+    cursor: pointer;
+    &-inner {
+      &:before {
+        text-align: center;
+      }
+    }
+    &:hover {
+      height: 16px;
+      margin-top: -2px;
+    }
+  }
+
+  &-handler-down-disabled,
+  &-handler-up-disabled,
+  &-disabled,
+  &-readonly {
+    .@{prefix-cls}-input-number-handler-down-inner,
+    .@{prefix-cls}-input-number-handler-up-inner {
+      cursor: not-allowed;
+    }
+  }
+
+  &-disabled,
+  &-readonly {
+     .@{prefix-cls}-input-number-handler-wrap {
+      display: none;
+    }
+     .@{prefix-cls}-input-number-handler {
+      cursor: not-allowed;
+    }
+  }
+}

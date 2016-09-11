@@ -30,7 +30,6 @@
   <footer class="bs-docs-footer">
     <n3-container >
       <p>联系邮箱 zhangking520@gmail.com</p>
-      <p>当前版本正处于测试阶段，建议不要使用于生产环境</p>
     </n3-container>
   </footer>
 </div>
@@ -57,6 +56,7 @@ import n3DatetimepickerDocs from './n3DatetimepickerDocs.vue'
 import n3DropdownDocs from './n3DropdownDocs.vue'
 import n3ModalDocs from './n3ModalDocs.vue'
 import n3InputDocs from './n3InputDocs.vue'
+import n3InputNumberDocs from './n3InputNumberDocs.vue'
 import n3TextareaDocs from './n3TextareaDocs.vue'
 import n3NavDocs from './n3NavDocs.vue'
 import n3PopoverDocs from './n3PopoverDocs.vue'
@@ -107,6 +107,7 @@ export default{
 
         '表单': {show: true,
                 list: [{label: '输入框', value: 'n3InputDocs'},
+                {label: '数字输入框', value: 'n3InputNumberDocs'},
                 {label: '文本框', value: 'n3TextareaDocs'},
                 {label: '级联选择', value: 'n3CascaderDocs'},
                 {label: '单选框', value: 'n3RadioDocs'},
@@ -222,6 +223,7 @@ export default{
     n3DatepickerDocs,
     n3TimepickerDocs,
     n3DatetimepickerDocs,
+    n3InputNumberDocs,
     n3UploaderDocs,
     n3TreeDocs,
     n3DropdownDocs,

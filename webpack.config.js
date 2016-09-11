@@ -9,7 +9,7 @@ module.exports = {
     filename: 'build.js'
   },
   resolve: {
-    extensions: ['', '.js', '.vue'],
+    extensions: ['', '.js', '.vue', '.css'],
     root: path.resolve('./')
   },
   module: {

@@ -22,17 +22,17 @@ Radio value: {{radioValue}}
     </div>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-     <n3-radio-group :value.sync="radioValue" type="primary">
-        <n3-radio-btn value="left" disabled>Left</n3-radio-btn>
-        <n3-radio-btn value="middle" checked>Middle</n3-radio-btn>
-        <n3-radio-btn value="right">Right</n3-radio-btn>
-      </n3-radio-group>
+<n3-radio-group :value.sync="radioValue" type="primary">
+  <n3-radio-btn value="left" disabled>Left</n3-radio-btn>
+  <n3-radio-btn value="middle" checked>Middle</n3-radio-btn>
+  <n3-radio-btn value="right">Right</n3-radio-btn>
+</n3-radio-group>
 
-      <n3-radio-group :value.sync="radioValue" >
-        <n3-radio value="left" disabled>Left</n3-radio>
-        <n3-radio value="middle" checked>Middle</n3-radio>
-        <n3-radio value="right">Right</n3-radio>
-      </n3-radio-group>
+<n3-radio-group :value.sync="radioValue" >
+  <n3-radio value="left" disabled>Left</n3-radio>
+  <n3-radio value="middle" checked>Middle</n3-radio>
+  <n3-radio value="right">Right</n3-radio>
+</n3-radio-group>
     </script></code></pre>
     <br>
     <h2>group</h2>
@@ -53,17 +53,6 @@ Radio value: {{radioValue}}
           <td></td>
         </tr>
         <tr>
-          <td>color</td>
-          <td><code>String</code>, 如:  <code>default</code>
-          <code>primary</code>
-          <code>danger</code>
-          <code>info</code>
-          <code>warning</code>
-          <code>success</code></td>
-          <td><code>default</code></td>
-          <td></td>
-        </tr>
-        <tr>
           <td>options</td>
           <td><code>Array</code></td>
           <td></td>
@@ -73,7 +62,7 @@ Radio value: {{radioValue}}
           <td>type</td>
           <td><code>String</code></td>
           <td></td>
-          <td>radio,button(radio) 使用options时起作用</td>
+          <td><code>radio,button</code> 使用options时起作用</td>
         </tr>
         <tr>
           <td>on-change</td>
@@ -112,7 +101,13 @@ Radio value: {{radioValue}}
           <td>checked</td>
           <td><code>Boolean</code></td>
           <td>false</td>
-          <td>初始化选中</td>
+          <td>是否选中 <code>.sync</code></td>
+        </tr>
+        <tr>
+          <td>on-change</td>
+          <td>Function</td>
+          <td></td>
+          <td>值改变回调</td>
         </tr>
       </tbody>
     </table>

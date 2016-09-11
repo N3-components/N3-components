@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import type from 'get-type'
+import type from './utils/type'
 import n3Icon from './n3Icon'
 
 export default {

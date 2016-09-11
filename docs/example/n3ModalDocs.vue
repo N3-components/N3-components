@@ -37,39 +37,39 @@
       </n3-modal>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-button @click="showModal = true">Show modal</n3-button>
-      <n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px" 
-      @show="show" @confirm="confirm">
-        <div slot="body">
-          What's in a name? That which we call a rose 
-          By any other name would smell as sweet. 
-        </div>
-      </n3-modal>
-      <n3-button class="btn btn-success" @click="bigModal = true">Big modal</n3-button>
-      <n3-modal title="Big Modal" :show.sync="bigModal" effect="fade" width="800px">
-        <div slot="body">
-          What's in a name? That which we call a rose 
-          By any other name would smell as sweet. 
-        </div>
-      </n3-modal>
-      <n3-button class="btn btn-primary" @click="zoomModal = true">Zoom modal</n3-button>
-      <n3-modal title="Zoom Modal" :show.sync="zoomModal" effect="zoom" width="400px">
-        <div slot="body">
-          What's in a name? That which we call a rose 
-          By any other name would smell as sweet. 
-        </div>
-      </n3-modal>
-      <n3-button @click="showCustomModal = true">Show custom modal</n3-button>
-      <n3-modal :show.sync="showCustomModal" effect="fade" width="400px">
-        <div slot="header">
-        </div>
-        <div slot="body">
-          What's in a name? That which we call a rose 
-          By any other name would smell as sweet. 
-        </div>
-        <div slot="footer">
-        </div>
-      </n3-modal>
+<n3-button @click="showModal = true">Show modal</n3-button>
+<n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px" 
+@show="show" @confirm="confirm">
+  <div slot="body">
+    What's in a name? That which we call a rose 
+    By any other name would smell as sweet. 
+  </div>
+</n3-modal>
+<n3-button class="btn btn-success" @click="bigModal = true">Big modal</n3-button>
+<n3-modal title="Big Modal" :show.sync="bigModal" effect="fade" width="800px">
+  <div slot="body">
+    What's in a name? That which we call a rose 
+    By any other name would smell as sweet. 
+  </div>
+</n3-modal>
+<n3-button class="btn btn-primary" @click="zoomModal = true">Zoom modal</n3-button>
+<n3-modal title="Zoom Modal" :show.sync="zoomModal" effect="zoom" width="400px">
+  <div slot="body">
+    What's in a name? That which we call a rose 
+    By any other name would smell as sweet. 
+  </div>
+</n3-modal>
+<n3-button @click="showCustomModal = true">Show custom modal</n3-button>
+<n3-modal :show.sync="showCustomModal" effect="fade" width="400px">
+  <div slot="header">
+  </div>
+  <div slot="body">
+    What's in a name? That which we call a rose 
+    By any other name would smell as sweet. 
+  </div>
+  <div slot="footer">
+  </div>
+</n3-modal>
     </script></code></pre>
   <h2>参数</h2>
   <table class="table table-bordered">

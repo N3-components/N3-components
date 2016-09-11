@@ -11,7 +11,7 @@
     <pre><code class="language-markup"><script type="language-mark-up">
        <n3-uploader url="/upload"></n3-uploader>
 
-       <n3-uploader url="/upload" typle="drag"></n3-uploader>
+       <n3-uploader url="/upload" type="drag"></n3-uploader>
     </script></code></pre>
   <h2>参数</h2>
   <table class="table table-bordered">
@@ -75,7 +75,7 @@
       <tr>
         <td>on-error</td>
         <td><code>Function</code></td>
-        <td><pre><code>
+        <td><pre><code class="language-javascript">
 function (data) {
   this.n3Toast({
     text: data.message

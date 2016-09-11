@@ -167,13 +167,13 @@
           <td>渲染函数</td>
         </tr>
         <tr>
-          <td>maxWidth</td>
+          <td>dropdow-width</td>
           <td><code>String</code></td>
-          <td>100%</td>
-          <td>下拉框最大宽度</td>
+          <td>220px</td>
+          <td>下拉框宽度</td>
         </tr>
         <tr>
-          <td>maxHeight</td>
+          <td>dropdown-height</td>
           <td><code>String</code></td>
           <td>300px</td>
           <td>下拉框最大高度</td>

@@ -1,15 +1,16 @@
 <template>
 <div :class="classObj" >
   <input  
-   class="{{prefixCls}}-form-control"  
-   :style="{'width':width}"
-   :readonly="readonly"
-   :disabled="disabled"
-   :placeholder="placeholder" 
-   @blur="blur"
-   @focus="focus"
-   v-focus-model="focused" 
-   v-model="value"  />
+    autoComplete="off"
+    class="{{prefixCls}}-form-control"  
+    :style="{'width':width}"
+    :readonly="readonly"
+    :disabled="disabled"
+    :placeholder="placeholder" 
+    @blur="blur"
+    @focus="focus"
+    v-focus-model="focused" 
+    v-model="value"  />
   <n3-icon 
     type="check" class="{{prefixCls}}-form-control-feedback" 
     v-if='validStatus=="success" && hasFeedback'>
@@ -37,7 +38,7 @@
 </div>
 </template>
 <script>
-import type from 'get-type'
+import type from './utils/type'
 import n3Icon from './n3Icon'
 import inputMixin from './inputMixin'
 import validate from './validate'
@@ -49,15 +50,12 @@ export default {
     readonly: {
       type: Boolean
     },
-    onBlur: {
-      type: Function
-    },
-    onFocus: {
-      type: Function
-    },
     value: {
       type: [String, Number],
       twoway: true
+    },
+    onChange: {
+      type: Function
     },
     prefixCls: {
       type: String,
@@ -74,6 +72,13 @@ export default {
   data () {
     return {
       validateResults: {}
+    }
+  },
+  watch: {
+    value (val) {
+      if (type.isFunction(this.onChange)) {
+        this.onChange(val)
+      }
     }
   },
   computed: {

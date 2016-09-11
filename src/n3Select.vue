@@ -71,7 +71,7 @@ import n3Icon from './n3Icon'
 import n3Input from './n3Input'
 import valMixin from './valMixin'
 import validate from './validate'
-import type from 'get-type'
+import type from './utils/type'
 
 export default {
   mixins: [valMixin],

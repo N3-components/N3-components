@@ -132,7 +132,7 @@ import n3Button from './n3Button'
 import n3Icon from './n3Icon'
 import n3Input from './n3Input'
 import n3Loading from './n3Loading'
-import type from 'get-type'
+import type from './utils/type'
 
 export default {
   props: {

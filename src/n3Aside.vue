@@ -21,7 +21,7 @@
 <script>
 import EventListener from './utils/EventListener'
 import getScrollBarWidth from './utils/getScrollBarWidth'
-import type from 'get-type'
+import type from './utils/type'
 
 export default {
   props: {

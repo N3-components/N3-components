@@ -86,7 +86,7 @@
   import n3Progress from './n3Progress'
   import n3Progressbar from './n3Progressbar'
   import n3Toast from './n3ToastMethod'
-  import type from 'get-type'
+  import type from './utils/type'
 
   export default {
     props: {

@@ -11,11 +11,11 @@
        <p>居中：<n3-loading center></n3-loading></p>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-     <p>大图标：<n3-loading size="lg"></n3-loading></p>
-      <p>默认图标：<n3-loading ></n3-loading></p>
-      <p>刷新图标：<n3-loading type="refresh"></n3-loading></p>
-      <p>颜色：<n3-loading color="primary"></n3-loading></p>
-      <p>居中：<n3-loading center></n3-loading></p>
+<p>大图标：<n3-loading size="lg"></n3-loading></p>
+<p>默认图标：<n3-loading ></n3-loading></p>
+<p>刷新图标：<n3-loading type="refresh"></n3-loading></p>
+<p>颜色：<n3-loading color="primary"></n3-loading></p>
+<p>居中：<n3-loading center></n3-loading></p>
     </script></code></pre>
      
   <h2>参数</h2>

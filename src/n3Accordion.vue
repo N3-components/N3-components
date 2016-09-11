@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import type from 'get-type'
+import type from './utils/type'
 
 export default {
   props: {

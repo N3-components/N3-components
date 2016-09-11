@@ -9,7 +9,7 @@
      
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-timepicker :value.sync="value" ></n3-timepicker>
+<n3-timepicker :value.sync="value" ></n3-timepicker>
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">

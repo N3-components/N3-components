@@ -9,8 +9,8 @@
               :width='inputWidth'
               :items="items"
               :on-change="onInputchange"
-              :max-width="maxWidth"
-              :max-height="maxHeight"
+              :dropdown-width="dropdownWidth"
+              :dropdown-height="dropdownHeight"
               :on-hit="add"
               :match-case="matchCase"
               :limit="limit"
@@ -39,8 +39,8 @@
         :width='inputWidth'
         :items="items"
         :on-change="onInputchange"
-        :max-width="maxWidth"
-        :max-height="maxHeight"
+        :dropdown-width="dropdownWidth"
+        :dropdown-height="dropdownHeight"
         :on-hit="add"
         :match-case="matchCase"
         :limit="limit"
@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import type from 'get-type'
+import type from './utils/type'
 import n3Typeahead from './n3Typeahead'
 import n3Icon from './n3Icon'
 import valMixin from './valMixin'
@@ -144,11 +144,11 @@ export default {
     onEnter: {
       type: Function
     },
-    maxWidth: {
+    dropdownWidth: {
       type: String,
-      default: '100%'
+      default: '220px'
     },
-    maxHeight: {
+    dropdownHeight: {
       type: String,
       default: '300px'
     },

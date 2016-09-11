@@ -67,46 +67,48 @@ Select data : {{arr}}
       </n3-select>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-select>
-        <n3-option value="Apple">Apple</n3-option>
-        <n3-option value="Banana">Banana</n3-option>
-        <n3-option value="Cherry">Cherry</n3-option>
-        <n3-option value="Orange">Orange</n3-option>
-        <n3-option value="Grape">Grape</n3-option>
-      </n3-select>
-      <hr>
-      <n3-select multiple>
-        <n3-option value="Apple">Apple</n3-option>
-        <n3-option value="Banana">Banana</n3-option>
-        <n3-option value="Cherry">Cherry</n3-option>
-        <n3-option value="Orange">Orange</n3-option>
-        <n3-option value="Grape">Grape</n3-option>
-      </n3-select>
-      <hr>
-      <n3-select multiple :limit="2">
-        <n3-option value="Apple">Apple</n3-option>
-        <n3-option value="Banana">Banana</n3-option>
-        <n3-option value="Cherry">Cherry</n3-option>
-        <n3-option value="Orange">Orange</n3-option>
-        <n3-option value="Grape">Grape</n3-option>
-      </n3-select>
-      <hr>
-      <n3-select multiple>
-        <n3-option value="Star"><span slot="span" class="fa fa-star"></span> Star</n3-option>
-        <n3-option value="Heart"><span slot="span" class="fa fa-heart"></span> Heart</n3-option>
-        <n3-option value="Film"><span slot="span" class="fa fa-film"></span> Film</n3-option>
-        <n3-option value="Inbox"><span slot="span" class="fa fa-inbox"></span> Inbox</n3-option>
-      </n3-select>
+<n3-select>
+  <n3-option value="Apple">Apple</n3-option>
+  <n3-option value="Banana">Banana</n3-option>
+  <n3-option value="Cherry">Cherry</n3-option>
+  <n3-option value="Orange">Orange</n3-option>
+  <n3-option value="Grape">Grape</n3-option>
+</n3-select>
+<hr>
+<n3-select multiple>
+  <n3-option value="Apple">Apple</n3-option>
+  <n3-option value="Banana">Banana</n3-option>
+  <n3-option value="Cherry">Cherry</n3-option>
+  <n3-option value="Orange">Orange</n3-option>
+  <n3-option value="Grape">Grape</n3-option>
+</n3-select>
+<hr>
+<n3-select multiple :limit="2">
+  <n3-option value="Apple">Apple</n3-option>
+  <n3-option value="Banana">Banana</n3-option>
+  <n3-option value="Cherry">Cherry</n3-option>
+  <n3-option value="Orange">Orange</n3-option>
+  <n3-option value="Grape">Grape</n3-option>
+</n3-select>
+<hr>
+<n3-select multiple>
+  <n3-option value="Star"><span slot="span" class="fa fa-star"></span> Star</n3-option>
+  <n3-option value="Heart"><span slot="span" class="fa fa-heart"></span> Heart</n3-option>
+  <n3-option value="Film"><span slot="span" class="fa fa-film"></span> Film</n3-option>
+  <n3-option value="Inbox"><span slot="span" class="fa fa-inbox"></span> Inbox</n3-option>
+</n3-select>
 
-      <n3-select :value.sync="arr" :options="fruitOptions" :search="true" >
-      </n3-select>
-      fruitOptions = [
-        {value: 'apple', label: 'Apple'},
-        {value: 'banana', label: 'Banana'},
-        {value: 'cherry', label: 'Cherry'},
-        {value: 'orange', label: 'Orange'},
-        {value: 'grape', label: 'Grape'},
-      ]
+<n3-select :value.sync="arr" :options="fruitOptions" :search="true" >
+</n3-select>
+    </script></code></pre>
+    <pre><code class="language-javascript"><script type="language-javascript">
+fruitOptions = [
+  {value: 'apple', label: 'Apple'},
+  {value: 'banana', label: 'Banana'},
+  {value: 'cherry', label: 'Cherry'},
+  {value: 'orange', label: 'Orange'},
+  {value: 'grape', label: 'Grape'},
+]
     </script></code></pre>
     <h2>参数</h2>
     <p>样式的参数和 <a href="#n3ButtonsDocs">按钮</a> 相同</p>

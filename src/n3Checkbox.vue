@@ -6,22 +6,36 @@
       type="checkbox"
       class="{{prefixCls}}-checkbox-input"
       :disabled="disabled"
-      :checked="!!checked"
+      :checked="checked"
       @click="handleClick"/>
   </span>
   <span><slot></slot></span>  
-</label>
+  <validate
+    :name="name"
+    :rules="rules"
+    :valid-status.sync="validStatus"
+    :custom-validate="customValidate" 
+    :value="checked"
+    :results.sync="validateResults">
+  </validate>
+  </label>
 </template>
 
 <script>
+import type from './utils/type'
+import valMixin from './valMixin'
+import validate from './validate'
+
 export default {
+  mixins: [valMixin],
   props: {
     value: {
       type: String
     },
     checked: {
       type: Boolean,
-      default: false
+      default: false,
+      twoway: true
     },
     disabled: {
       type: Boolean,
@@ -35,38 +49,34 @@ export default {
       default: 'n3'
     }
   },
+  components: {
+    validate
+  },
+  events: {
+    'n3@checkboxgroupChange' (val) {
+      this.checked = val.indexOf(this.value) > -1
+    }
+  },
   computed: {
     wrapClass () {
       let klass = {}
-      let {prefixCls, active, disabled} = this
+      let {prefixCls, checked, disabled} = this
 
       klass[prefixCls + '-checkbox-label'] = true
-      klass[prefixCls + '-checkbox-checked'] = active
+      klass[prefixCls + '-checkbox-checked'] = checked
       klass[prefixCls + '-checkbox-disabled'] = disabled
 
       return klass
-    },
-    active () {
-      let parent = this.$parent
-      let index = parent.value.indexOf(this.value)
-      return index > -1
     }
   },
   methods: {
     handleClick () {
-      let parent = this.$parent
-      let index = parent.value.indexOf(this.value)
-      index === -1 ? parent.value.push(this.value) : parent.value.splice(index, 1)
       this.checked = !this.checked
-      if (typeof this.onChange === 'function') {
+      this.$dispatch('n3@checkboxChange', this)
+      if (type.isFunction(this.onChange)) {
         this.onChange(this.checked)
       }
     }
-  },
-  created () {
-    let parent = this.$parent
-    let index = parent.value.indexOf(this.value)
-    if (this.checked && index === -1) this.$parent.value.push(this.value)
   }
 }
 </script>
