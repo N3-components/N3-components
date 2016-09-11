@@ -109,7 +109,7 @@ new Vue({
         <td>输入框宽度</td>
       </tr>
       <tr>
-        <td>dropdow-width</td>
+        <td>dropdown-width</td>
         <td><code>String</code></td>
         <td>220px</td>
         <td>下拉框宽度</td>
