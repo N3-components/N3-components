@@ -28,17 +28,16 @@
         </div>
     </div>
 
-<pre><code class="language-markup">
-  <script type="language-mark-up">     作用于( v-if , v-show , v-for) 等元素
-
-        <n3-button  @click="show=!show">切换</n3-button>
-        <div v-if="show" transition="fadeLeft" >
-            <h4>Title</h4>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-        </div>
-    </script></code></pre>
+<pre><code class="language-markup"><script type="language-mark-up">
+<!--作用于( v-if , v-show , v-for) 等元素-->
+<n3-button  @click="show=!show">切换</n3-button>
+<div v-if="show" transition="fadeLeft" >
+    <h4>Title</h4>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+</div>
+</script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">
       <thead>

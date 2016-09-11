@@ -9,7 +9,8 @@
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 <n3-tree :value.sync="id":data="files1"></n3-tree>
-
+        </script></code></pre>
+    <pre><code class="language-javascript"><script type="language-javascript">
 new Vue({
     data: {
         files1: [
@@ -65,7 +66,8 @@ new Vue({
   </div>
   <pre><code class="language-markup"><script type="language-mark-up">
 <n3-tree :data="files2" :load-data="loadList"></n3-tree>
-
+  </script> </code></pre>
+  <pre><code class="language-javascript"><script type="language-javascript">
 new Vue({
     data: {
         files2: [
@@ -115,7 +117,9 @@ new Vue({
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
     <n3-tree :value.sync="id" :data="files3" checkable="true"></n3-tree>
+    </script> </code></pre>
 
+    <pre><code class="language-javascript"><script type="language-javascript">
 new Vue({
     data: {
         files3: [
@@ -155,7 +159,6 @@ new Vue({
         ]
     }
 })
-
         </script> </code></pre>
 
   <h2>参数</h2>
@@ -194,7 +197,7 @@ new Vue({
           <td>选中的节点的value<code>.sync</code></td>
         </tr>
         <tr>
-          <td>tree-icon</td>
+          <td>treeIcon</td>
           <td><code>String</code></td>
           <td>angle-right</td>
           <td></td>
@@ -248,6 +251,9 @@ new Vue({
     data () {
       return {
         files1: [{
+          label: '我的文档2',
+          value: 2
+        }, {
           label: '新建文件夹1',
           value: 1,
           children: [],
@@ -258,23 +264,20 @@ new Vue({
           isOpened: true,
           icon: 'folder',
           children: [{
-            label: '新建文件夹4',
-            value: 5,
-            icon: 'folder',
-            children: [{
-              label: '我的文档3',
-              value: 6
+              label: '我的文档1',
+              value: 4
+            }, {
+              label: '新建文件夹4',
+              value: 5,
+              icon: 'folder',
+              children: [{
+                label: '我的文档3',
+                value: 6
             }, {
               label: '我的文档4',
               value: 7
             }]
-          }, {
-            label: '我的文档1',
-            value: 4
           }]
-        }, {
-          label: '我的文档2',
-          value: 2
         }],
 
         files2: [{

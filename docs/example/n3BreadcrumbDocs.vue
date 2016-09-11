@@ -9,11 +9,11 @@
     		</n3-breadcrumb>
     	</div>
  		<pre><code class="language-markup"><script type="language-mark-up">
-     		<n3-breadcrumb>
-    			<n3-breadcrumb-item href="#">Home</n3-breadcrumb-item>
-    			<n3-breadcrumb-item href="#">Library</n3-breadcrumb-item>
-    			<n3-breadcrumb-item active>Data</n3-breadcrumb-item>
-    		</n3-breadcrumb>
+<n3-breadcrumb>
+    <n3-breadcrumb-item href="#">Home</n3-breadcrumb-item>
+    <n3-breadcrumb-item href="#">Library</n3-breadcrumb-item>
+    <n3-breadcrumb-item active>Data</n3-breadcrumb-item>
+</n3-breadcrumb>
 		</script></code></pre>
 	</div>
 </template>

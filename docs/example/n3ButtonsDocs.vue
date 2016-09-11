@@ -13,14 +13,14 @@
       <n3-button type="danger">danger</n3-button>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-button loading >default</n3-button>
-      <n3-button badge="2" >badge</n3-button>
-      <n3-button disabled>default</n3-button>
-      <n3-button type="primary" loading>primary</n3-button>
-      <n3-button type="success">success</n3-button>
-      <n3-button type="info">info</n3-button>
-      <n3-button type="warning">warning</n3-button>
-      <n3-button type="danger">danger</n3-button>
+<n3-button loading >default</n3-button>
+<n3-button badge="2" >badge</n3-button>
+<n3-button disabled>default</n3-button>
+<n3-button type="primary" loading>primary</n3-button>
+<n3-button type="success">success</n3-button>
+<n3-button type="info">info</n3-button>
+<n3-button type="warning">warning</n3-button>
+<n3-button type="danger">danger</n3-button>
     </script></code></pre>
 
       <n3-button type="primary" size="lg">primary lg</n3-button>
@@ -29,12 +29,11 @@
       <n3-button type="primary" size="xs">primary xs</n3-button>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-button type="primary" size="lg">lg</n3-button>
-      <n3-button type="primary">default</n3-button>
-      <n3-button type="primary" size="sm">sm</n3-button>
-      <n3-button type="primary" size="xs">xs</n3-button>
+<n3-button type="primary" size="lg">lg</n3-button>
+<n3-button type="primary">default</n3-button>
+<n3-button type="primary" size="sm">sm</n3-button>
+<n3-button type="primary" size="xs">xs</n3-button>
     </script></code></pre>
-
 
     <n3-button-group>
       <n3-button >default</n3-button>
@@ -43,12 +42,12 @@
       <n3-button >default</n3-button>
     </n3-button-group>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-button-group>
-      <n3-button >default</n3-button>
-      <n3-button >default</n3-button>
-      <n3-button type="primary">primary</n3-button>
-      <n3-button >default</n3-button>
-    </n3-button-group>
+<n3-button-group>
+  <n3-button >default</n3-button>
+  <n3-button >default</n3-button>
+  <n3-button type="primary">primary</n3-button>
+  <n3-button >default</n3-button>
+</n3-button-group>
     </script></code></pre>
 
     <h2>按钮参数</h2>

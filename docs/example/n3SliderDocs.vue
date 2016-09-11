@@ -7,7 +7,7 @@
       <p>滑块的值{{value}}</p> 
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-     <n3-slider :value.sync = "value" :on-change="change"></n3-slider>
+<n3-slider :value.sync = "value" :on-change="change"></n3-slider>
     </script></code></pre>
      
   <h2>参数</h2>

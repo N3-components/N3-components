@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import type from 'get-type'
+import type from './utils/type'
 import EventListener from './utils/EventListener'
 import n3Slider from './n3Slider'
 import n3Input from './n3Input'

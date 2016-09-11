@@ -1,5 +1,5 @@
 import EventListener from './utils/EventListener'
-import type from 'get-type'
+import type from './utils/type'
 
 const PopoverMixin = {
   props: {

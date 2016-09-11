@@ -13,52 +13,52 @@
         ></n3-multiple-input>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-       <n3-multiple-input 
-          :value.sync="a.list" 
-          :format="format" 
-          :on-inputchange="getResult"
-          :render="render"
-          :items="items"
-          :query.sync="query"
-          :on-hit="googleCallback"
-        ></n3-multiple-input>
-
-      new Vue({
-        data:{
-          list:[{
-            value:'tag1',
-            label:'tag1',
-          },{
-            value:'tag2',
-            label:'tag2',
-          },{
-            value:'tag3',
-            label:'tag3',
-          }]
-        },
-        methods:{
-          render (item) {
-            return item.formatted_address
-          },
-          getResult (query) {
-            let self = this
-            $.ajax({
-              url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
-              success (ret) {
-                self.items = ret.results
-              }
-            })
-          },
-          del (item, index) {
-            this.list.splice(index, 1)
-          },
-          format (item, index) {
-            let content = typeof item === 'string' ? item : item.formatted_address
-            return `<label class="m-tag" ">${content}</label>`
-          }
+<n3-multiple-input 
+  :value.sync="a.list" 
+  :format="format" 
+  :on-inputchange="getResult"
+  :render="render"
+  :items="items"
+  :query.sync="query"
+  :on-hit="googleCallback"
+></n3-multiple-input>
+    </script></code></pre>
+    <pre><code class="language-javascript"><script type="language-javascript">
+new Vue({
+  data:{
+    list:[{
+      value:'tag1',
+      label:'tag1',
+    },{
+      value:'tag2',
+      label:'tag2',
+    },{
+      value:'tag3',
+      label:'tag3',
+    }]
+  },
+  methods:{
+    render (item) {
+      return item.formatted_address
+    },
+    getResult (query) {
+      let self = this
+      $.ajax({
+        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
+        success (ret) {
+          self.items = ret.results
         }
       })
-       
+    },
+    del (item, index) {
+      this.list.splice(index, 1)
+    },
+    format (item, index) {
+      let content = typeof item === 'string' ? item : item.formatted_address
+      return `<label class="m-tag" ">${content}</label>`
+    }
+  }
+})
     </script></code></pre>
   <h2>参数</h2>
   <p>自动补全的参数请参考<a href="./component.html#n3TypeaheadDocs" target="_blank">自动补全组件</a></p>
@@ -103,10 +103,22 @@
         <td>组件高度</td>
       </tr>
       <tr>
-        <td>inputWidth</td>
+        <td>input-width</td>
         <td><code>String</code></td>
         <td>50px</td>
         <td>输入框宽度</td>
+      </tr>
+      <tr>
+        <td>dropdow-width</td>
+        <td><code>String</code></td>
+        <td>220px</td>
+        <td>下拉框宽度</td>
+      </tr>
+      <tr>
+        <td>dropdown-height</td>
+        <td><code>String</code></td>
+        <td>300px</td>
+        <td>下拉框最大高度</td>
       </tr>
       <tr>
         <td>add-format</td>

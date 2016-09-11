@@ -7,8 +7,8 @@
     </div>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-input :value.sync="value" :focused.sync="focused"></n3-input>
-      <n3-button @click="focused=true">聚焦</n3-button>
+<n3-input :value.sync="value" :focused.sync="focused"></n3-input>
+<n3-button @click="focused=true">聚焦</n3-button>
     </script></code></pre>
     <br>
     <table class="table table-bordered">
@@ -34,16 +34,22 @@
           <td>聚焦状态  <code>.sync</code></td>
         </tr>
         <tr>
-          <td>onBlur</td>
+          <td>on-blur</td>
           <td><code>Function</code></td>
           <td></td>
           <td>失去焦点触发函数</td>
         </tr>
         <tr>
-          <td>onFocus</td>
+          <td>on-focus</td>
           <td><code>Function</code></td>
           <td></td>
           <td>聚焦触发函数</td>
+        </tr>
+        <tr>
+          <td>on-change</td>
+          <td><code>Function</code></td>
+          <td></td>
+          <td>值变化触发函数</td>
         </tr>
       </tbody>
     </table>

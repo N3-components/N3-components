@@ -52,102 +52,108 @@
 </template>
 
 <script>
-  import type from 'get-type'
+import type from './utils/type'
 
-  export default {
-    props: {
-      id: {
-        type: Number,
-        default: ''
-      },
-      data: {
-        type: Array,
-        default () {
-          return []
-        }
-      },
-      prefixCls: {
-        type: String,
-        default: 'n3'
-      },
-      selectedKey: {
-        type: [String, Number]
-      },
-      checkable: {
-        type: Boolean,
-        default: false
-      },
-      checkedKeys: {
-        type: Array,
-        twoway: true,
-        default () {
-          return []
-        }
-      },
-      parent: {
-        type: Number,
-        default: undefined
-      },
-      treeIcon: {
-        type: String,
-        default: 'angle-right'
-      },
-      treeOpenIcon: {
-        type: String,
-        default: 'angle-down'
-      },
-      expandAll: {
-        type: Boolean,
-        default: false
-      },
-      icon: {
-        type: String,
-        default: 'file'
-      },
-      transition: {
-        type: String,
-        default: 'collapse'
-      },
-      loadData: {
-        type: Function,
-        default: null
-      },
-      onRightClick: {
-        type: Function,
-        default: null
-      },
-      onSelect: {
-        type: Function,
-        default: null
-      },
-      onExpand: {
-        type: Function,
-        default: null
-      },
-      onCheck: {
-        type: Function,
-        default: null
+export default {
+  props: {
+    id: {
+      type: Number,
+      default: ''
+    },
+    data: {
+      type: Array,
+      default () {
+        return []
       }
     },
-    data () {
-      return {
-        loading: -1
+    sort: {
+      type: Boolean,
+      default: true
+    },
+    prefixCls: {
+      type: String,
+      default: 'n3'
+    },
+    selectedKey: {
+      type: [String, Number]
+    },
+    checkable: {
+      type: Boolean,
+      default: false
+    },
+    checkedKeys: {
+      type: Array,
+      twoway: true,
+      default () {
+        return []
       }
     },
-    methods: {
-      /**
-       * Click Handler
-       * @param {Number} index Tree index selected.
-       * @param {Mixed} value Value selected.
-       */
-      clickHandler (index, value) {
-        let self = this
-        let node = self.data[index]
-        // Firstly Select Node
-        self.select.apply(self, arguments)
-        if (type.isFunction(self.loadData) && !node.isOpened && node.children && node.children.length === 0) {
-          self.loading = index
-          self.loadData(value).then(res => {
+    parent: {
+      type: Number,
+      default: undefined
+    },
+    treeIcon: {
+      type: String,
+      default: 'angle-right'
+    },
+    treeOpenIcon: {
+      type: String,
+      default: 'angle-down'
+    },
+    expandAll: {
+      type: Boolean,
+      default: false
+    },
+    icon: {
+      type: String,
+      default: 'file'
+    },
+    transition: {
+      type: String,
+      default: 'collapse'
+    },
+    loadData: {
+      type: Function,
+      default: null
+    },
+    onRightClick: {
+      type: Function,
+      default: null
+    },
+    onSelect: {
+      type: Function,
+      default: null
+    },
+    onExpand: {
+      type: Function,
+      default: null
+    },
+    onCheck: {
+      type: Function,
+      default: null
+    }
+  },
+  data () {
+    return {
+      loading: -1
+    }
+  },
+  methods: {
+    /**
+     * Click Handler
+     * @param {Number} index Tree index selected.
+     * @param {Mixed} value Value selected.
+     */
+    clickHandler (index, value) {
+      let self = this
+      let node = self.data[index]
+      // Firstly Select Node
+      self.select.apply(self, arguments)
+      if (type.isFunction(self.loadData) && !node.isOpened && node.children && node.children.length === 0) {
+        self.loading = index
+        let promise = self.loadData(value)
+        if (type.isPromise(promise)) {
+          promise.then(res => {
             if (!type.isArray(res)) {
               console.error(`Loaded Data should be an array: ${res}`)
               return
@@ -157,201 +163,210 @@
             // Secondly Open Node
             self.toggleOpen(index)
           })
-        } else {
-          self.toggleOpen(index)
         }
-      },
+      } else {
+        self.toggleOpen(index)
+      }
+    },
 
-      /**
-       * Selects a node from tree view
-       * @param {Number} index Tree index selected.
-       * @param {Mixed} value Value selected.
-       */
-      select (index, value) {
-        this.selectedKey = value
-        if (type.isFunction(this.onSelect)) {
-          try {
-            this.onSelect(this.selectedKey)
-          } catch (error) {
-            console.error(error)
-          }
-        }
-      },
-
-      /**
-       * Toggles open / close node.
-       * @param {Number} index
-       */
-      toggleOpen (index) {
-        if (type.isFunction(this.onExpand)) {
-          try {
-            this.onExpand(this.data[index])
-          } catch (error) {
-            console.error(error)
-          }
-        }
-        // Init
-        if (this.data[index].isOpened === undefined) {
-          this.$set('data[' + index + '].isOpened', this.hasSelectedChild(index))
-        }
-        // General
-        this.$set('data[' + index + '].isOpened', !this.data[index].isOpened)
-      },
-
-      /**
-       * Returns flag indicating if nodes are valid or not.
-       * @param {Array} nodes
-       */
-      areValidNodes (nodes) {
-        return nodes !== undefined && type.isArray(nodes) && nodes.length > 0
-      },
-
-      /**
-       * Returns flag indicating if tree view has a node selected.
-       * @return {Boolean}
-       */
-      hasSelected () {
-        for (let i in this.data) {
-          if (this.isSelected(this.data[i].value) || this.hasSelectedChild(i)) {
-            return true
-          }
-        }
-        return false
-      },
-
-      /**
-       * Returns flag indicating if node at specified index has a child selcted or not.
-       * @param {Number} index
-       * @return {Boolean}
-       */
-      hasSelectedChild (index) {
-        for (var i in this.$children) {
-
-          if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected())
-            return true
-        }
-        return false
-      },
-
-      /**
-       * Returns flag indicating if node at specified index is selected or not.
-       * @param {Number} index
-       * @return {Boolean}
-       */
-      isSelected (value) {
-        return this.selectedKey === value
-      },
-
-      /**
-       * Returns flag indicating if node is opened or not.
-       * @param {Number} index
-       * @return {Boolean}
-       */
-      isOpened (index) {
-        return (this.data[index].isOpened !== undefined && this.data[index].isOpened) || this.hasSelectedChild(
-          index)
-      },
-
-      /**
-       * CheckHandler
-       * @param {Number} index Tree index selected.
-       * @param {Mixed} value Value selected.
-       */
-      checkHandler (index, value) {
-        let flag = this.checkedKeys.indexOf(value) > -1
-        this.$broadcast('n3@changeChildChecked', value, flag)
-        this.$dispatch('n3@changeParentChecked', this.parent)
-        if (type.isFunction(this.onCheck)) {
-          try {
-            this.onCheck(this.checkedKeys)
-          } catch (error) {
-            console.error(error)
-          }
-        }
-      },
-      /**
-       * Check All
-       * @param {Boolean} flag
-       */
-      checkAll (flag) {
-        let value
-        let checkedKeys = this.checkedKeys
-        for (let index = 0; index < this.data.length; index++) {
-          value = this.data[index]['value']
-          if (checkedKeys.indexOf(value) === -1 && flag) {
-            checkedKeys.push(value)
-          }
-
-          if (!flag) {
-            checkedKeys.$remove(value)
-          }
-          this.$broadcast('n3@changeChildChecked', value, flag)
-        }
-        this.$dispatch('n3@changeParentChecked', this.parent)
-      },
-
-      /**
-       * Expand Some Nodes
-       */
-      expand () {
-        let self = this
-        // Async load doesn't support expanding all
-        if (self.expandAll && !type.isFunction(self.loadData)) {
-          self.data.forEach((item, index) => {
-            self.$set('data[' + index + '].isOpened', true)
-          })
+    /**
+     * Selects a node from tree view
+     * @param {Number} index Tree index selected.
+     * @param {Mixed} value Value selected.
+     */
+    select (index, value) {
+      this.selectedKey = value
+      if (type.isFunction(this.onSelect)) {
+        try {
+          this.onSelect(this.selectedKey)
+        } catch (error) {
+          console.error(error)
         }
       }
     },
 
-    events: {
-      /**
-       * Refresh Children Checked
-       */
-      'n3@changeChildChecked' (parent, value) {
-        if (this.parent === parent) {
-          this.checkAll(value)
+    /**
+     * Toggles open / close node.
+     * @param {Number} index
+     */
+    toggleOpen (index) {
+      if (type.isFunction(this.onExpand)) {
+        try {
+          this.onExpand(this.data[index])
+        } catch (error) {
+          console.error(error)
         }
-      },
+      }
+      // Init
+      if (this.data[index].isOpened === undefined) {
+        this.$set('data[' + index + '].isOpened', this.hasSelectedChild(index))
+      }
+      // General
+      this.$set('data[' + index + '].isOpened', !this.data[index].isOpened)
+    },
 
-      /**
-       * Refresh Parent Checked
-       */
-      'n3@changeParentChecked' (parent) {
-        let node
-        let children
-        let checkedKeys = this.checkedKeys
+    /**
+     * Returns flag indicating if nodes are valid or not.
+     * @param {Array} nodes
+     */
+    areValidNodes (nodes) {
+      return nodes !== undefined && type.isArray(nodes) && nodes.length > 0
+    },
 
-        for (let index = 0; index < this.data.length; index++) {
-          node = this.data[index]
-          children = node.children
-          if (parent === node.value) {
-            let j
-            for (j = 0; j < children.length; j++) {
-              if (checkedKeys.indexOf(children[j].value) === -1) {
-                if (checkedKeys.indexOf(node.value) !== -1) {
-                  checkedKeys.$remove(node.value)
-                  this.$dispatch('n3@changeParentChecked', this.parent)
-                }
-                break
-              }
-            }
-            if (j === children.length && checkedKeys.indexOf(node.value) === -1) {
-              checkedKeys.push(node.value)
-              this.$dispatch('n3@changeParentChecked', this.parent)
-            }
-            break
-          }
+    /**
+     * Returns flag indicating if tree view has a node selected.
+     * @return {Boolean}
+     */
+    hasSelected () {
+      for (let i in this.data) {
+        if (this.isSelected(this.data[i].value) || this.hasSelectedChild(i)) {
+          return true
+        }
+      }
+      return false
+    },
+
+    /**
+     * Returns flag indicating if node at specified index has a child selcted or not.
+     * @param {Number} index
+     * @return {Boolean}
+     */
+    hasSelectedChild (index) {
+      for (var i in this.$children) {
+
+        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected())
+          return true
+      }
+      return false
+    },
+
+    /**
+     * Returns flag indicating if node at specified index is selected or not.
+     * @param {Number} index
+     * @return {Boolean}
+     */
+    isSelected (value) {
+      return this.selectedKey === value
+    },
+
+    /**
+     * Returns flag indicating if node is opened or not.
+     * @param {Number} index
+     * @return {Boolean}
+     */
+    isOpened (index) {
+      return (this.data[index].isOpened !== undefined && this.data[index].isOpened) || this.hasSelectedChild(
+        index)
+    },
+
+    /**
+     * CheckHandler
+     * @param {Number} index Tree index selected.
+     * @param {Mixed} value Value selected.
+     */
+    checkHandler (index, value) {
+      let flag = this.checkedKeys.indexOf(value) > -1
+      this.$broadcast('n3@changeChildChecked', value, flag)
+      this.$dispatch('n3@changeParentChecked', this.parent)
+      if (type.isFunction(this.onCheck)) {
+        try {
+          this.onCheck(this.checkedKeys)
+        } catch (error) {
+          console.error(error)
         }
       }
     },
+    /**
+     * Check All
+     * @param {Boolean} flag
+     */
+    checkAll (flag) {
+      let value
+      let checkedKeys = this.checkedKeys
+      for (let index = 0; index < this.data.length; index++) {
+        value = this.data[index]['value']
+        if (checkedKeys.indexOf(value) === -1 && flag) {
+          checkedKeys.push(value)
+        }
 
-    created () {
-      if (!this.id) this.id = this._uid
+        if (!flag) {
+          checkedKeys.$remove(value)
+        }
+      }
+      this.$dispatch('n3@changeParentChecked', this.parent)
     },
 
-    ready () {
-      this.expand()
+    _sort () {
+      this.data = this.data.sort((a, b) => {
+        return !a.children || b.children
+      })
+    },
+
+    /**
+     * Expand Some Nodes
+     */
+    expand () {
+      let self = this
+      // Async load doesn't support expanding all
+      if (self.expandAll && !type.isFunction(self.loadData)) {
+        self.data.forEach((item, index) => {
+          self.$set('data[' + index + '].isOpened', true)
+        })
+      }
     }
+  },
+
+  events: {
+    /**
+     * Refresh Children Checked
+     */
+    'n3@changeChildChecked' (parent, value) {
+      if (this.parent === parent) {
+        this.checkAll(value)
+      }
+    },
+
+    /**
+     * Refresh Parent Checked
+     */
+    'n3@changeParentChecked' (parent) {
+      let node
+      let children
+      let checkedKeys = this.checkedKeys
+
+      for (let index = 0; index < this.data.length; index++) {
+        node = this.data[index]
+        children = node.children
+        if (parent === node.value) {
+          let j
+          for (j = 0; j < children.length; j++) {
+            if (checkedKeys.indexOf(children[j].value) === -1) {
+              if (checkedKeys.indexOf(node.value) !== -1) {
+                checkedKeys.$remove(node.value)
+                this.$dispatch('n3@changeParentChecked', this.parent)
+              }
+              break
+            }
+          }
+          if (j === children.length && checkedKeys.indexOf(node.value) === -1) {
+            checkedKeys.push(node.value)
+            this.$dispatch('n3@changeParentChecked', this.parent)
+          }
+          break
+        }
+      }
+    }
+  },
+
+  created () {
+    if (!this.id) this.id = this._uid
+  },
+
+  ready () {
+    if (this.sort) {
+      this._sort()
+    }
+    this.expand()
   }
+}
 </script>

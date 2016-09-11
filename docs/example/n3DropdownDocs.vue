@@ -15,17 +15,17 @@
       </n3-dropdown>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <n3-dropdown :show.sync="show">
-        <div slot="trigger">
-          <n3-button>
-            点击
-            <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
-          </n3-button>
-        </div>
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-      </n3-dropdown>
+<n3-dropdown :show.sync="show">
+  <div slot="trigger">
+    <n3-button>
+      点击
+      <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
+    </n3-button>
+  </div>
+  <li><a href="#">Action</a></li>
+  <li><a href="#">Another action</a></li>
+  <li><a href="#">Something else here</a></li>
+</n3-dropdown>
       </script></code></pre>
   </div>
 
