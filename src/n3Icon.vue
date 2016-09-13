@@ -1,5 +1,5 @@
 <template>
-  <i :class="['fa','fa-'+type]" :style="{fontSize:size,color:color}"></i>
+  <i :class="[prefixCls + '-fa',prefixCls +'-fa-'+type]" :style="{fontSize:size,color:color}"></i>
 </template>
 <script>
 export default{
@@ -12,6 +12,10 @@ export default{
     },
     color: {
       type: String
+    },
+    prefixCls: {
+      type: String,
+      default: 'n3'
     }
   }
 }

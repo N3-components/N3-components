@@ -85,6 +85,12 @@
         <td><code></code></td>
         <td>图标尺寸</td>
       </tr>
+      <tr>
+        <td>color</td>
+        <td><code>String</code></td>
+        <td><code></code></td>
+        <td>颜色</td>
+      </tr>
     </tbody>
   </table>
   </div>
