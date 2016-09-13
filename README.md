@@ -13,7 +13,7 @@ N3 components built with Vue.js, is a powerful library for frontend or full-stac
 Introduction
 ------------
 
-![logo](./docs/static/img/logo.png)
+![logo](https://n3-components.github.io/N3-components/static/img/logo.png)
 
 N3 components applys oneself to structure a great ecological circle of developers using Vue.js. Supporting as follows:
 
