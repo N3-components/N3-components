@@ -1,4 +1,4 @@
-N3-components - Powerful Vue Library.
+N3-components - 强大的Vue组件库。
 =========================
 
 [![Shippable branch](https://img.shields.io/shippable/5444c5ecb904a4b21567b0ff/master.svg?maxAge=2592000)]()
@@ -6,29 +6,29 @@ N3-components - Powerful Vue Library.
 [![Code Climate](https://codeclimate.com/github/N3-components/N3-components/badges/gpa.svg)](https://codeclimate.com/github/N3-components/N3-components)
 [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)]()
 
-N3 components built with Vue.js, is a powerful library for frontend or full-stack engineers to build web pages quickly.
+N3组件库是基于Vue.js构建的，让前端工程师和全栈工程师能快速构建页面和应用。
 
-[Home Page](https://n3-components.github.io/N3-components/) | [中文说明](./README-zh.md) | [Documents](https://n3-components.github.io/N3-components/component.html)
+[官方主页](https://n3-components.github.io/N3-components/) | [English Introduction](./README.md) | [文档](https://n3-components.github.io/N3-components/component.html)
 
-Introduction
+相关介绍
 ------------
 
 ![logo](./docs/static/img/logo.png)
 
-N3 components applys oneself to structure a great ecological circle of developers using Vue.js. Supporting as follows:
+N3组件库致力于构建良好的Vue开发者生态圈，提供良好的开发体验。下面是其中的一些特色：
 
-* More than 60 components. [See Here](./src)
+* 超过60个组件 [组件列表](./src)
 
-* Personality Of Style.
+* 自定义样式
 
-* UMD.
+* 支持多种模块化范式（UMD）
 
-* Using ES6.
+* 使用ES6进行开发
 
-Quick Start
+快速上手
 ------------
 
-You can install components for your global environment.
+您可以把N3组件安装到全局的Vue上，示例代码如下：
 
 ```javascript
 import Vue from 'vue'
@@ -36,7 +36,7 @@ import N3Components from 'N3-Components'
 N3Components.install(Vue)
 ```
 
-You can also import single component when needed.
+也可以在需要的时候引入该组件，示例代码如下：
 
 ```javascript
 import Vue from 'vue'
@@ -44,20 +44,20 @@ import N3Components from 'N3-Components'
 import {n3Alert} from N3Components
 ```
 
-Requirements
+依赖的项目
 ------------
 
 * vue
 * vue-focus
 * velocity-animate
 
-To Do List
+TODO 列表
 ----------
 
-- Tree View
-- Drawer Menu
+- 树状视图
+- 抽屉菜单
 
-Discussing
+讨论区
 ----------
-- [submit issue](https://github.com/N3-components/N3-components/issues/new)
+- [提交ISSUE](https://github.com/N3-components/N3-components/issues/new) : bug反馈，建议提交等
 - email: zhangking520@gmail.com

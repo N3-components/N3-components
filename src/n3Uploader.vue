@@ -132,7 +132,10 @@
       onDelete: {
         type: Function
       },
-      maxlength: Number,
+      maxlength: {
+        type: Number,
+        default: 10
+      },
       prefixCls: {
         type: String,
         default: 'n3'
@@ -141,7 +144,7 @@
     data () {
       return {
         value: '',
-        uploadId: 'upload' + (new Date()).getTime() + Math.floor(Math.random() * 100),
+        uploadId: 'upload' + Date.now() + Math.floor(Math.random() * 100),
         percent: 0,
         xhr: 'FormData' in window,
         uploadList: [],
@@ -211,13 +214,13 @@
 
       xhrUpload () {
         let self = this
-        let data = new window.FormData()
         let i = 0
         let len = this.uploadList.length
-
+        let data
         for (i = 0; i < len; i++) {
           (function (i, file) {
             if (file.type.match(self.accept)) {
+              data = new window.FormData()
               data.append(self.name, file, file.name)
 
               let xhr = new window.XMLHttpRequest()
@@ -305,17 +308,11 @@
           } catch (e) {
             this.setError('服务器响应数据格式有问题', index)
           }
-          if (data) {
-            if (data.success) {
-              if (type.isFunction(this.onSuccess)) {
-                this.onSuccess({
-                  data: data,
-                  file: this.uploadList[index]
-                })
-              }
-            } else if (data.error) {
-              this.setError(data.error, index)
-            }
+          if (data && type.isFunction(this.onSuccess)) {
+            this.onSuccess({
+              data: data,
+              file: this.uploadList[index]
+            })
           }
         }
       },
