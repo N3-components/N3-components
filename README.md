@@ -25,6 +25,14 @@ N3 components applys oneself to structure a great ecological circle of developer
 
 * Using ES6.
 
+NPM
+------------
+Link：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
+
+```bash
+npm install N3-Components
+```
+
 Quick Start
 ------------
 
