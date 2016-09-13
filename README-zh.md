@@ -25,6 +25,14 @@ N3组件库致力于构建良好的Vue开发者生态圈，提供良好的开发
 
 * 使用ES6进行开发
 
+NPM
+------------
+链接：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
+
+```bash
+npm install N3-Components
+```
+
 快速上手
 ------------
 
