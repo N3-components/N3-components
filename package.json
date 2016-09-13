@@ -1,6 +1,6 @@
 {
   "name": "N3-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "N3 built with Vue.js",
   "main": "dist/N3Components.min.js",
   "homepage": "https://n3-components.github.io/N3-components/index.html",
@@ -13,7 +13,10 @@
       "node": true
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "velocity-animate": "^1.2.3",
+    "vue-focus": "^0.1.1"
+  },
   "files": [
     "LICENSE",
     "README.md",
@@ -47,9 +50,7 @@
     "prismjs": "^1.3.0",
     "style-loader": "^0.13.0",
     "url-loader": "~0.5.7",
-    "velocity-animate": "^1.2.3",
     "vue": "^1.0.24",
-    "vue-focus": "^0.1.1",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
     "vue-loader": "7.1.7",
@@ -69,6 +70,6 @@
     "build": "webpack --progress --hide-modules --config  webpack.build.min.js && webpack --progress --hide-modules --config  webpack.build.js",
     "lint": "eslint --ext .js,.vue src"
   },
-  "author": "yunshuo",
+  "author": "zhangking",
   "license": "MIT"
 }
