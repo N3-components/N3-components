@@ -31413,7 +31413,10 @@
 	    onDelete: {
 	      type: Function
 	    },
-	    maxlength: Number,
+	    maxlength: {
+	      type: Number,
+	      default: 10
+	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -31422,7 +31425,7 @@
 	  data: function data() {
 	    return {
 	      value: '',
-	      uploadId: 'upload' + new Date().getTime() + Math.floor(Math.random() * 100),
+	      uploadId: 'upload' + Date.now() + Math.floor(Math.random() * 100),
 	      percent: 0,
 	      xhr: 'FormData' in window,
 	      uploadList: [],
@@ -31496,14 +31499,14 @@
 	    },
 	    xhrUpload: function xhrUpload() {
 	      var self = this;
-	      var data = new window.FormData();
 	      var i = 0;
 	      var len = this.uploadList.length;
-	
+	      var data = void 0;
 	      for (i = 0; i < len; i++) {
 	        (function (i, file) {
 	          if (file.type.match(self.accept)) {
 	            (function () {
+	              data = new window.FormData();
 	              data.append(self.name, file, file.name);
 	
 	              var xhr = new window.XMLHttpRequest();
@@ -31593,17 +31596,11 @@
 	        } catch (e) {
 	          this.setError('服务器响应数据格式有问题', index);
 	        }
-	        if (data) {
-	          if (data.success) {
-	            if (_type2.default.isFunction(this.onSuccess)) {
-	              this.onSuccess({
-	                data: data,
-	                file: this.uploadList[index]
-	              });
-	            }
-	          } else if (data.error) {
-	            this.setError(data.error, index);
-	          }
+	        if (data && _type2.default.isFunction(this.onSuccess)) {
+	          this.onSuccess({
+	            data: data,
+	            file: this.uploadList[index]
+	          });
 	        }
 	      }
 	    },
