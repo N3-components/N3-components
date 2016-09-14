@@ -6,7 +6,7 @@ N3-components - Powerful Vue Library.
 [![Code Climate](https://codeclimate.com/github/N3-components/N3-components/badges/gpa.svg)](https://codeclimate.com/github/N3-components/N3-components)
 [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)]()
 
-N3 components built with Vue.js, is a powerful library for frontend or full-stack engineers to build web pages quickly.
+N3 components library is built with Vue.js, is a powerful library for frontend or full-stack engineers to build web pages quickly.
 
 [Home Page](https://n3-components.github.io/N3-components/) | [中文说明](./README-zh.md) | [Documents](https://n3-components.github.io/N3-components/component.html)
 
