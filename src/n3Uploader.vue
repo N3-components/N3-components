@@ -308,6 +308,8 @@
 
         if (!response) {
           this.states[index] = false
+
+        if (!response) {
           this.setError('服务器没有响应', index)
         } else {
           try {
@@ -329,6 +331,13 @@
         }
         if (Object.keys(this.states).length === len && type.isFunction(this.onFinish)) {
           this.onFinish()
+        }
+          if (data && type.isFunction(this.onSuccess)) {
+            this.onSuccess({
+              data: data,
+              file: this.uploadList[index]
+            })
+          }
         }
       },
 
