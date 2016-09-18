@@ -7,7 +7,7 @@
 Select data : {{single}}
         </pre>
       </p>
-      <n3-select :value.sync="single" :badge="5" >
+      <n3-select :value.sync="single" :badge="5">
         <n3-option value="Apple">Apple</n3-option>
         <n3-option value="Banana">Banana</n3-option>
         <n3-option value="Cherry">Cherry</n3-option>

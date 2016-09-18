@@ -129,6 +129,9 @@
       onSuccess: {
         type: Function
       },
+      onFinish: {
+        type: Function
+      },
       onDelete: {
         type: Function
       },
@@ -149,7 +152,8 @@
         xhr: 'FormData' in window,
         uploadList: [],
         progress: [],
-        dragover: false
+        dragover: false,
+        states: []
       }
     },
     computed: {
@@ -239,6 +243,7 @@
               }
 
               xhr.onerror = () => {
+                self.states[i] = false
                 self.setError('上传失败了！')
               }
 
@@ -299,6 +304,10 @@
 
       parseResponse (response, index) {
         let data = null
+        let len = this.uploadList.length
+
+        if (!response) {
+          this.states[index] = false
 
         if (!response) {
           this.setError('服务器没有响应', index)
@@ -308,6 +317,21 @@
           } catch (e) {
             this.setError('服务器响应数据格式有问题', index)
           }
+          if (data) {
+            this.states[index] = true
+            if (type.isFunction(this.onSuccess)) {
+              this.onSuccess({
+                data: data,
+                file: this.uploadList[index]
+              })
+            }
+          } else {
+            this.states[index] = false
+          }
+        }
+        if (Object.keys(this.states).length === len && type.isFunction(this.onFinish)) {
+          this.onFinish()
+        }
           if (data && type.isFunction(this.onSuccess)) {
             this.onSuccess({
               data: data,
@@ -333,6 +357,8 @@
           this.onDelete(this.uploadList[index])
         }
         this.uploadList.splice(index, 1)
+        this.states.splice(index, 1)
+        this.progress.splice(index, 1)
       },
 
       addDragEvt () {
@@ -347,10 +373,6 @@
         let self = this
         e.preventDefault()
         e.stopPropagation()
-
-        if (e.type === '') {
-
-        }
 
         if (e.type === 'dragover' || e.type === 'dragenter') {
           self.dragover = true

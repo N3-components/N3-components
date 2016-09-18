@@ -3,6 +3,7 @@ N3-components - 强大的Vue组件库。
 
 [![Shippable branch](https://img.shields.io/shippable/5444c5ecb904a4b21567b0ff/master.svg?maxAge=2592000)]()
 [![Test Coverage](https://codeclimate.com/github/N3-components/N3-components/badges/coverage.svg)](https://codeclimate.com/github/N3-components/N3-components/coverage)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/N3-components/chinese?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [![Code Climate](https://codeclimate.com/github/N3-components/N3-components/badges/gpa.svg)](https://codeclimate.com/github/N3-components/N3-components)
 [![npm](https://img.shields.io/npm/l/express.svg?maxAge=2592000)]()
 
@@ -69,3 +70,4 @@ TODO 列表
 ----------
 - [提交ISSUE](https://github.com/N3-components/N3-components/issues/new) : bug反馈，建议提交等
 - email: zhangking520@gmail.com
+- gitter: [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/N3-components/chinese?utm_source=share-link&utm_medium=link&utm_campaign=share-link)

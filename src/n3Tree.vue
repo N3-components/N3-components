@@ -2,7 +2,7 @@
   <div class="{{prefixCls}}-tree">
     <div class="{{prefixCls}}-tree-node-data" v-for="(index, node) in data">
       <div class="{{prefixCls}}-tree-node">
-        <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '',prefixCls + '-tree-meta-data']" 
+        <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" 
               @click.prevent="clickHandler(index, node.value)">
           <template v-if="node.children">
             <n3-icon
@@ -43,6 +43,7 @@
             :expand-all="expandAll" 
             :checkable="checkable"
             :checked-keys.sync="checkedKeys" 
+            :on-select="onSelect"
             :on-check="onCheck">
           </n3-tree>
         </div>

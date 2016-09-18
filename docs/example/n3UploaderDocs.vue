@@ -89,10 +89,16 @@ function (data) {
         <td></td>
         <td>文件删除时触发函数</td>
       </tr>
-       <tr>
+      <tr>
+        <td>on-finish</td>
+        <td><code>Function</code></td>
+        <td></td>
+        <td>所有上传任务结束时触发函数</td>
+      </tr>
+      <tr>
         <td>max-length</td>
         <td><code>Number</code></td>
-        <td></td>
+        <td>10</td>
         <td>上传文件个数限制</td>
       </tr>
     </tbody>

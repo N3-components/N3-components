@@ -6484,7 +6484,7 @@
 	// Select data : {{single}}
 	//         </pre>
 	//       </p>
-	//       <n3-select :value.sync="single" :badge="5" >
+	//       <n3-select :value.sync="single" :badge="5">
 	//         <n3-option value="Apple">Apple</n3-option>
 	//         <n3-option value="Banana">Banana</n3-option>
 	//         <n3-option value="Cherry">Cherry</n3-option>
@@ -6728,7 +6728,7 @@
 /* 260 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"选择框\"  >\n    <h1 class=\"page-header\"><a href=\"#选择框\" class=\"anchor\">选择框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\nSelect data : {{single}}\n        </pre>\n      </p>\n      <n3-select :value.sync=\"single\" :badge=\"5\" >\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选</h4>\n      <p>\n        <pre>\nSelect data : {{multiple.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :value.sync=\"multiple\" search>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选限制</h4>\n      <p>\n        <pre>\nSelect data : {{multipleLimit.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :limit=\"2\" :value.sync=\"multipleLimit\" search extra>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>自定义内容</h4>\n      <p>\n        <pre>\nSelect data : {{custom.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :value.sync=\"custom\" >\n        <n3-option value=\"Star\"><span  class=\"fa fa-star\"></span> Star</n3-option>\n        <n3-option value=\"Heart\"><span class=\"fa fa-heart\"></span> Heart</n3-option>\n        <n3-option value=\"Film\"><span  class=\"fa fa-film\"></span> Film</n3-option>\n        <n3-option value=\"Inbox\"><span class=\"fa fa-inbox\"></span> Inbox</n3-option>\n      </n3-select>\n      <hr />\n      <h4>传递数组，支持搜索</h4>\n      <p>\n        支持只传递接json数组，可以支持搜索\n        <pre>\nSelect data : {{arr}}\n        </pre>\n      </p>\n      <n3-select :value.sync=\"arr\" :options=\"fruitOptions\" :search=\"true\" multiple extra >\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-select>\n  <n3-option value=\"Apple\">Apple</n3-option>\n  <n3-option value=\"Banana\">Banana</n3-option>\n  <n3-option value=\"Cherry\">Cherry</n3-option>\n  <n3-option value=\"Orange\">Orange</n3-option>\n  <n3-option value=\"Grape\">Grape</n3-option>\n</n3-select>\n<hr>\n<n3-select multiple>\n  <n3-option value=\"Apple\">Apple</n3-option>\n  <n3-option value=\"Banana\">Banana</n3-option>\n  <n3-option value=\"Cherry\">Cherry</n3-option>\n  <n3-option value=\"Orange\">Orange</n3-option>\n  <n3-option value=\"Grape\">Grape</n3-option>\n</n3-select>\n<hr>\n<n3-select multiple :limit=\"2\">\n  <n3-option value=\"Apple\">Apple</n3-option>\n  <n3-option value=\"Banana\">Banana</n3-option>\n  <n3-option value=\"Cherry\">Cherry</n3-option>\n  <n3-option value=\"Orange\">Orange</n3-option>\n  <n3-option value=\"Grape\">Grape</n3-option>\n</n3-select>\n<hr>\n<n3-select multiple>\n  <n3-option value=\"Star\"><span slot=\"span\" class=\"fa fa-star\"></span> Star</n3-option>\n  <n3-option value=\"Heart\"><span slot=\"span\" class=\"fa fa-heart\"></span> Heart</n3-option>\n  <n3-option value=\"Film\"><span slot=\"span\" class=\"fa fa-film\"></span> Film</n3-option>\n  <n3-option value=\"Inbox\"><span slot=\"span\" class=\"fa fa-inbox\"></span> Inbox</n3-option>\n</n3-select>\n\n<n3-select :value.sync=\"arr\" :options=\"fruitOptions\" :search=\"true\" >\n</n3-select>\n    </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nfruitOptions = [\n  {value: 'apple', label: 'Apple'},\n  {value: 'banana', label: 'Banana'},\n  {value: 'cherry', label: 'Cherry'},\n  {value: 'orange', label: 'Orange'},\n  {value: 'grape', label: 'Grape'},\n]\n    </script></code></pre>\n    <h2>参数</h2>\n    <p>样式的参数和 <a href=\"#n3ButtonsDocs\">按钮</a> 相同</p>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code></code></td>\n          <td><code></code></td>\n          <td>多选为数组，单选为单个数字或者字符串,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td><code>[]</code></td>\n          <td>json数组</td>\n        </tr>\n        <tr>\n          <td>placeholder</td>\n          <td><code>String</code></td>\n          <td>'请选择'</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>multiple</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>支持多选</td>\n        </tr>\n        <tr>\n          <td>limit</td>\n          <td><code>Number</code></td>\n          <td><code>1024</code></td>\n          <td>多选限制</td>\n        </tr>\n        <tr>\n          <td>search</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否支持搜索</td>\n        </tr>\n         <tr>\n          <td>extra</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>可支持在输入款内添加新的选项(需要search支持)</td>\n        </tr>\n        <tr>\n          <td>input-placeholder</td>\n          <td><code>String</code></td>\n          <td><code>请输入</code></td>\n          <td>输入框的placeholder</td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>选择框大小</td>\n        </tr>\n        <tr>\n          <td>menu-max-height</td>\n          <td><code>String</code></td>\n          <td><code>300px</code></td>\n          <td>下拉框最大高度</td>\n        </tr>\n        <tr>\n          <td>menu-width</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>下拉框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>Function</code></td>\n          <td><code>function(item){\n            return item.label\n          }</code></td>\n          <td>选中内容的格式化显示</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td><code></code></td>\n          <td>value改变回调函数</td>\n        </tr>\n         <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n         <tr>\n          <td>readonly</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n         <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n        <tr>\n          <td>cancelled</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>单选时，是否可撤销</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"选择框\"  >\n    <h1 class=\"page-header\"><a href=\"#选择框\" class=\"anchor\">选择框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\nSelect data : {{single}}\n        </pre>\n      </p>\n      <n3-select :value.sync=\"single\" :badge=\"5\">\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选</h4>\n      <p>\n        <pre>\nSelect data : {{multiple.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :value.sync=\"multiple\" search>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选限制</h4>\n      <p>\n        <pre>\nSelect data : {{multipleLimit.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :limit=\"2\" :value.sync=\"multipleLimit\" search extra>\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>自定义内容</h4>\n      <p>\n        <pre>\nSelect data : {{custom.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :value.sync=\"custom\" >\n        <n3-option value=\"Star\"><span  class=\"fa fa-star\"></span> Star</n3-option>\n        <n3-option value=\"Heart\"><span class=\"fa fa-heart\"></span> Heart</n3-option>\n        <n3-option value=\"Film\"><span  class=\"fa fa-film\"></span> Film</n3-option>\n        <n3-option value=\"Inbox\"><span class=\"fa fa-inbox\"></span> Inbox</n3-option>\n      </n3-select>\n      <hr />\n      <h4>传递数组，支持搜索</h4>\n      <p>\n        支持只传递接json数组，可以支持搜索\n        <pre>\nSelect data : {{arr}}\n        </pre>\n      </p>\n      <n3-select :value.sync=\"arr\" :options=\"fruitOptions\" :search=\"true\" multiple extra >\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-select>\n  <n3-option value=\"Apple\">Apple</n3-option>\n  <n3-option value=\"Banana\">Banana</n3-option>\n  <n3-option value=\"Cherry\">Cherry</n3-option>\n  <n3-option value=\"Orange\">Orange</n3-option>\n  <n3-option value=\"Grape\">Grape</n3-option>\n</n3-select>\n<hr>\n<n3-select multiple>\n  <n3-option value=\"Apple\">Apple</n3-option>\n  <n3-option value=\"Banana\">Banana</n3-option>\n  <n3-option value=\"Cherry\">Cherry</n3-option>\n  <n3-option value=\"Orange\">Orange</n3-option>\n  <n3-option value=\"Grape\">Grape</n3-option>\n</n3-select>\n<hr>\n<n3-select multiple :limit=\"2\">\n  <n3-option value=\"Apple\">Apple</n3-option>\n  <n3-option value=\"Banana\">Banana</n3-option>\n  <n3-option value=\"Cherry\">Cherry</n3-option>\n  <n3-option value=\"Orange\">Orange</n3-option>\n  <n3-option value=\"Grape\">Grape</n3-option>\n</n3-select>\n<hr>\n<n3-select multiple>\n  <n3-option value=\"Star\"><span slot=\"span\" class=\"fa fa-star\"></span> Star</n3-option>\n  <n3-option value=\"Heart\"><span slot=\"span\" class=\"fa fa-heart\"></span> Heart</n3-option>\n  <n3-option value=\"Film\"><span slot=\"span\" class=\"fa fa-film\"></span> Film</n3-option>\n  <n3-option value=\"Inbox\"><span slot=\"span\" class=\"fa fa-inbox\"></span> Inbox</n3-option>\n</n3-select>\n\n<n3-select :value.sync=\"arr\" :options=\"fruitOptions\" :search=\"true\" >\n</n3-select>\n    </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nfruitOptions = [\n  {value: 'apple', label: 'Apple'},\n  {value: 'banana', label: 'Banana'},\n  {value: 'cherry', label: 'Cherry'},\n  {value: 'orange', label: 'Orange'},\n  {value: 'grape', label: 'Grape'},\n]\n    </script></code></pre>\n    <h2>参数</h2>\n    <p>样式的参数和 <a href=\"#n3ButtonsDocs\">按钮</a> 相同</p>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code></code></td>\n          <td><code></code></td>\n          <td>多选为数组，单选为单个数字或者字符串,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td><code>[]</code></td>\n          <td>json数组</td>\n        </tr>\n        <tr>\n          <td>placeholder</td>\n          <td><code>String</code></td>\n          <td>'请选择'</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>multiple</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>支持多选</td>\n        </tr>\n        <tr>\n          <td>limit</td>\n          <td><code>Number</code></td>\n          <td><code>1024</code></td>\n          <td>多选限制</td>\n        </tr>\n        <tr>\n          <td>search</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>是否支持搜索</td>\n        </tr>\n         <tr>\n          <td>extra</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>可支持在输入款内添加新的选项(需要search支持)</td>\n        </tr>\n        <tr>\n          <td>input-placeholder</td>\n          <td><code>String</code></td>\n          <td><code>请输入</code></td>\n          <td>输入框的placeholder</td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>选择框大小</td>\n        </tr>\n        <tr>\n          <td>menu-max-height</td>\n          <td><code>String</code></td>\n          <td><code>300px</code></td>\n          <td>下拉框最大高度</td>\n        </tr>\n        <tr>\n          <td>menu-width</td>\n          <td><code>String</code></td>\n          <td><code></code></td>\n          <td>下拉框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>Function</code></td>\n          <td><code>function(item){\n            return item.label\n          }</code></td>\n          <td>选中内容的格式化显示</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td><code></code></td>\n          <td>value改变回调函数</td>\n        </tr>\n         <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n         <tr>\n          <td>readonly</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n         <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n        <tr>\n          <td>cancelled</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>单选时，是否可撤销</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
 /* 261 */
@@ -9347,10 +9347,16 @@
 	//         <td></td>
 	//         <td>文件删除时触发函数</td>
 	//       </tr>
-	//        <tr>
+	//       <tr>
+	//         <td>on-finish</td>
+	//         <td><code>Function</code></td>
+	//         <td></td>
+	//         <td>所有上传任务结束时触发函数</td>
+	//       </tr>
+	//       <tr>
 	//         <td>max-length</td>
 	//         <td><code>Number</code></td>
-	//         <td></td>
+	//         <td>10</td>
 	//         <td>上传文件个数限制</td>
 	//       </tr>
 	//     </tbody>
@@ -9371,7 +9377,7 @@
 /* 301 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"文件上传\"  >\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>点击</h4>\n      <n3-uploader url=\"\"></n3-uploader>\n      <hr>\n       <h4>拖拽</h4>\n      <n3-uploader type=\"drag\" ></n3-uploader>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n       <n3-uploader url=\"/upload\"></n3-uploader>\n\n       <n3-uploader url=\"/upload\" type=\"drag\"></n3-uploader>\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>name</td>\n        <td><code>String</code></td>\n        <td>files</td>\n        <td>文件对象的name</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\n        <td>click</td>\n        <td>拖拽或者点击</td>\n      </tr>\n      <tr>\n        <td>accept</td>\n        <td><code>String</code></td>\n        <td>'' (全支持)</td>\n        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>\n      </tr>\n      <tr>\n        <td>url</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>上传地址</td>\n      </tr>\n      <tr>\n        <td>multiple</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>支持多文件上传</td>\n      </tr>\n      <tr>\n        <td>drag-width</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>拖拽框宽度</td>\n      </tr>\n      <tr>\n        <td>drag-height</td>\n        <td><code>String</code></td>\n        <td>200px</td>\n        <td>拖拽框高度</td>\n      </tr>\n      <tr>\n        <td>on-error</td>\n        <td><code>Function</code></td>\n        <td><pre><code class=\"language-javascript\">\nfunction (data) {\n  this.n3Toast({\n    text: data.message\n  })\n} </code></pre></td>\n        <td>出错时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-success</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>成功时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-delete</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>文件删除时触发函数</td>\n      </tr>\n       <tr>\n        <td>max-length</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td>上传文件个数限制</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"文件上传\"  >\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>点击</h4>\n      <n3-uploader url=\"\"></n3-uploader>\n      <hr>\n       <h4>拖拽</h4>\n      <n3-uploader type=\"drag\" ></n3-uploader>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n       <n3-uploader url=\"/upload\"></n3-uploader>\n\n       <n3-uploader url=\"/upload\" type=\"drag\"></n3-uploader>\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>name</td>\n        <td><code>String</code></td>\n        <td>files</td>\n        <td>文件对象的name</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\n        <td>click</td>\n        <td>拖拽或者点击</td>\n      </tr>\n      <tr>\n        <td>accept</td>\n        <td><code>String</code></td>\n        <td>'' (全支持)</td>\n        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>\n      </tr>\n      <tr>\n        <td>url</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>上传地址</td>\n      </tr>\n      <tr>\n        <td>multiple</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>支持多文件上传</td>\n      </tr>\n      <tr>\n        <td>drag-width</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>拖拽框宽度</td>\n      </tr>\n      <tr>\n        <td>drag-height</td>\n        <td><code>String</code></td>\n        <td>200px</td>\n        <td>拖拽框高度</td>\n      </tr>\n      <tr>\n        <td>on-error</td>\n        <td><code>Function</code></td>\n        <td><pre><code class=\"language-javascript\">\nfunction (data) {\n  this.n3Toast({\n    text: data.message\n  })\n} </code></pre></td>\n        <td>出错时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-success</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>成功时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-delete</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>文件删除时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-finish</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>所有上传任务结束时触发函数</td>\n      </tr>\n      <tr>\n        <td>max-length</td>\n        <td><code>Number</code></td>\n        <td>10</td>\n        <td>上传文件个数限制</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
 /* 302 */
@@ -31165,7 +31171,7 @@
 	//   <div class="{{prefixCls}}-tree">
 	//     <div class="{{prefixCls}}-tree-node-data" v-for="(index, node) in data">
 	//       <div class="{{prefixCls}}-tree-node">
-	//         <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '',prefixCls + '-tree-meta-data']" 
+	//         <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" 
 	//               @click.prevent="clickHandler(index, node.value)">
 	//           <template v-if="node.children">
 	//             <n3-icon
@@ -31206,6 +31212,7 @@
 	//             :expand-all="expandAll" 
 	//             :checkable="checkable"
 	//             :checked-keys.sync="checkedKeys" 
+	//             :on-select="onSelect"
 	//             :on-check="onCheck">
 	//           </n3-tree>
 	//         </div>
@@ -31220,7 +31227,7 @@
 /* 492 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-tree\">\n    <div class=\"{{prefixCls}}-tree-node-data\" v-for=\"(index, node) in data\">\n      <div class=\"{{prefixCls}}-tree-node\">\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '',prefixCls + '-tree-meta-data']\" \n              @click.prevent=\"clickHandler(index, node.value)\">\n          <template v-if=\"node.children\">\n            <n3-icon\n              class=\"{{prefixCls}}-tree-select-icon\"\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\n            </n3-icon>\n            <span class=\"{{prefixCls}}-tree-loading-box\" v-show=\"loading > -1 && loading == index\">\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </template>\n          <span class=\"{{prefixCls}}-tree-select-box\" v-if=\"checkable\">\n            <input \n              @click.stop=\"\" \n              type=\"checkbox\" \n              v-model=\"checkedKeys\" \n              :value=\"node.value\"\n              @change=\"checkHandler(index, node.value)\"/>\n          </span>\n          <label class=\"{{prefixCls}}-tree-loading-box\">\n          <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\n          {{{node.label}}}\n          </label>\n        </span>\n      </div>\n      <div \n        :transition=\"transition\"\n        v-if=\"areValidNodes(node.children)\" \n        class=\"{{prefixCls}}-tree-children\" \n        v-show=\"isOpened(index)\">\n        <div class=\"{{prefixCls}}-tree-nodes\">\n          <n3-tree  \n            class=\"inner\" \n            :id=\"id\" \n            :selected-key.sync=\"selectedKey\"\n            :data.sync=\"node.children\" \n            :parent.once=\"node.value\" \n            :load-data=\"loadData\" \n            :expand-all=\"expandAll\" \n            :checkable=\"checkable\"\n            :checked-keys.sync=\"checkedKeys\" \n            :on-check=\"onCheck\">\n          </n3-tree>\n        </div>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-tree\">\n    <div class=\"{{prefixCls}}-tree-node-data\" v-for=\"(index, node) in data\">\n      <div class=\"{{prefixCls}}-tree-node\">\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\" \n              @click.prevent=\"clickHandler(index, node.value)\">\n          <template v-if=\"node.children\">\n            <n3-icon\n              class=\"{{prefixCls}}-tree-select-icon\"\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\n            </n3-icon>\n            <span class=\"{{prefixCls}}-tree-loading-box\" v-show=\"loading > -1 && loading == index\">\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </template>\n          <span class=\"{{prefixCls}}-tree-select-box\" v-if=\"checkable\">\n            <input \n              @click.stop=\"\" \n              type=\"checkbox\" \n              v-model=\"checkedKeys\" \n              :value=\"node.value\"\n              @change=\"checkHandler(index, node.value)\"/>\n          </span>\n          <label class=\"{{prefixCls}}-tree-loading-box\">\n          <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\n          {{{node.label}}}\n          </label>\n        </span>\n      </div>\n      <div \n        :transition=\"transition\"\n        v-if=\"areValidNodes(node.children)\" \n        class=\"{{prefixCls}}-tree-children\" \n        v-show=\"isOpened(index)\">\n        <div class=\"{{prefixCls}}-tree-nodes\">\n          <n3-tree  \n            class=\"inner\" \n            :id=\"id\" \n            :selected-key.sync=\"selectedKey\"\n            :data.sync=\"node.children\" \n            :parent.once=\"node.value\" \n            :load-data=\"loadData\" \n            :expand-all=\"expandAll\" \n            :checkable=\"checkable\"\n            :checked-keys.sync=\"checkedKeys\" \n            :on-select=\"onSelect\"\n            :on-check=\"onCheck\">\n          </n3-tree>\n        </div>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 493 */
@@ -31408,6 +31415,9 @@
 	    onSuccess: {
 	      type: Function
 	    },
+	    onFinish: {
+	      type: Function
+	    },
 	    onDelete: {
 	      type: Function
 	    },
@@ -31428,7 +31438,8 @@
 	      xhr: 'FormData' in window,
 	      uploadList: [],
 	      progress: [],
-	      dragover: false
+	      dragover: false,
+	      states: []
 	    };
 	  },
 	
@@ -31523,6 +31534,7 @@
 	              };
 	
 	              xhr.onerror = function () {
+	                self.states[i] = false;
 	                self.setError('上传失败了！');
 	              };
 	
@@ -31585,14 +31597,33 @@
 	    },
 	    parseResponse: function parseResponse(response, index) {
 	      var data = null;
+	      var len = this.uploadList.length;
 	
 	      if (!response) {
-	        this.setError('服务器没有响应', index);
-	      } else {
-	        try {
-	          data = JSON.parse(response);
-	        } catch (e) {
-	          this.setError('服务器响应数据格式有问题', index);
+	        this.states[index] = false;
+	
+	        if (!response) {
+	          this.setError('服务器没有响应', index);
+	        } else {
+	          try {
+	            data = JSON.parse(response);
+	          } catch (e) {
+	            this.setError('服务器响应数据格式有问题', index);
+	          }
+	          if (data) {
+	            this.states[index] = true;
+	            if (_type2.default.isFunction(this.onSuccess)) {
+	              this.onSuccess({
+	                data: data,
+	                file: this.uploadList[index]
+	              });
+	            }
+	          } else {
+	            this.states[index] = false;
+	          }
+	        }
+	        if (Object.keys(this.states).length === len && _type2.default.isFunction(this.onFinish)) {
+	          this.onFinish();
 	        }
 	        if (data && _type2.default.isFunction(this.onSuccess)) {
 	          this.onSuccess({
@@ -31617,6 +31648,8 @@
 	        this.onDelete(this.uploadList[index]);
 	      }
 	      this.uploadList.splice(index, 1);
+	      this.states.splice(index, 1);
+	      this.progress.splice(index, 1);
 	    },
 	    addDragEvt: function addDragEvt() {
 	      var _this3 = this;
@@ -31633,8 +31666,6 @@
 	      var self = this;
 	      e.preventDefault();
 	      e.stopPropagation();
-	
-	      if (e.type === '') {}
 	
 	      if (e.type === 'dragover' || e.type === 'dragenter') {
 	        self.dragover = true;
