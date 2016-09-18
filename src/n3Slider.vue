@@ -29,6 +29,7 @@ import n3Tooltip from './n3Tooltip'
 import valMixin from './valMixin'
 import validate from './validate'
 import type from './utils/type'
+import element from './utils/element'
 
 export default {
   mixins: [valMixin],
@@ -127,10 +128,10 @@ export default {
     setTempValue () {
       var val = this.value
       if (type.isArray(val) && this.range) {
-        this.$els.maxSlider.classList.remove(this.prefixCls + '-slider-hide')
+        element.removeClass(this.$els.maxSlider, this.prefixCls + '-slider-hide')
         this.tempValue = val
       } else {
-        this.$els.maxSlider.classList.add(this.prefixCls + '-slider-hide')
+        element.addClass(this.$els.maxSlider, this.prefixCls + '-slider-hide')
         this.tempValue = [this.min, val]
       }
     },
@@ -180,7 +181,7 @@ export default {
       var self = this
 
       if (!self.disabled) {
-        rangeSlider.classList.remove(this.prefixCls + '-slider-disabled')
+        element.removeClass(rangeSlider, this.prefixCls + '-slider-disabled')
         this._mousedownEvent = EventListener.listen(rangeSlider, 'mousedown', (event) => {
           self.flag = true
           if (!event) {
@@ -251,7 +252,7 @@ export default {
           self.tempFlag = 0
         })
       } else {
-        rangeSlider.classList.add(this.prefixCls + '-slider-disabled')
+        element.addClass(rangeSlider, this.prefixCls + '-slider-disabled')
       }
     },
     tooltipInit () {
@@ -262,18 +263,18 @@ export default {
       tooltip.querySelectorAll('.' + this.prefixCls + '-tooltip-inner')[0].innerHTML = this.formatter(this.value)
 
       if (this.orientation === 'horizontal') {
-        tooltip.classList.add(this.prefixCls + '-slider-top')
-        tooltip.classList.remove(this.prefixCls + '-slider-right')
+        element.addClass(tooltip, this.prefixCls + '-slider-top')
+        element.removeClass(tooltip, this.prefixCls + '-slider-right')
       } else if (this.orientation === 'vertical') {
-        tooltip.classList.add(this.prefixCls + '-slider-right')
-        tooltip.classList.remove(this.prefixCls + '-slider-top')
+        element.addClass(tooltip, this.prefixCls + '-slider-right')
+        element.removeClass(tooltip, this.prefixCls + '-slider-top')
       }
       if (this.tooltip === 'always') {
-        tooltip.classList.add(this.prefixCls + '-slider-tooltip-always')
-        tooltip.classList.remove(this.prefixCls + '-slider-tooltip-hide')
+        element.addClass(tooltip, this.prefixCls + '-slider-tooltip-always')
+        element.removeClass(tooltip, this.prefixCls + '-slider-tooltip-hide')
       } else if (this.tooltip === 'hide') {
-        tooltip.classList.add(this.prefixCls + '-slider-tooltip-hide')
-        tooltip.classList.remove(this.prefixCls + '-slider-tooltip-always')
+        element.addClass(tooltip, this.prefixCls + '-slider-tooltip-hide')
+        element.removeClass(tooltip, this.prefixCls + '-slider-tooltip-always')
       }
     },
     init () {

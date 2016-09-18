@@ -31,6 +31,7 @@ import getScrollBarWidth from './utils/getScrollBarWidth'
 import EventListener from './utils/EventListener'
 import n3Button from './n3Button'
 import type from './utils/type'
+import element from './utils/element'
 
 export default {
   props: {
@@ -101,8 +102,8 @@ export default {
       if (val) {
         el.querySelector('.' + this.prefixCls + '-modal-content').focus()
         el.style.display = 'block'
-        setTimeout(() => el.classList.add(this.prefixCls + '-modal-in'), 0)
-        body.classList.add(this.prefixCls + '-modal-open')
+        setTimeout(() => element.addClass(el, this.prefixCls + '-modal-in'), 0)
+        element.addClass(body, prefixCls + '-modal-open')
         if (scrollBarWidth !== 0) {
           body.style.paddingRight = scrollBarWidth + 'px'
         }
@@ -113,10 +114,10 @@ export default {
         }
       } else {
         if (this._blurModalContentEvent) this._blurModalContentEvent.remove()
-        el.classList.remove(this.prefixCls + '-modal-in')
+        element.removeClass(el, this.prefixCls + '-modal-in')
         setTimeout(() => {
           el.style.display = 'none'
-          body.classList.remove(this.prefixCls + '-modal-open')
+          element.removeClass(body, this.prefixCls + '-modal-open')
           body.style.paddingRight = '0'
         }, 300)
       }

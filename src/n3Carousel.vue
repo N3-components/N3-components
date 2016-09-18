@@ -22,6 +22,7 @@
 <script>
 import EventListener from './utils/EventListener'
 import n3Icon from './n3Icon'
+import element from './utils/element'
 
 export default {
   props: {
@@ -77,16 +78,16 @@ export default {
       let selectedEl = this.slider[selected]
       let transitionendFn = () => {
         [...this.slider].forEach((el) => el.className = this.prefixCls + '-carousel-item')
-        selectedEl.classList.add(this.prefixCls + '-carousel-active')
+        element.addClass(selectedEl, this.prefixCls + '-carousel-active')
         this.isAnimating = false
       }
 
-      direction === 'left' ? selectedEl.classList.add(this.prefixCls + '-carousel-next') : selectedEl.classList.add(this.prefixCls + '-carousel-prev')
+      direction === 'left' ? element.addClass(selectedEl, this.prefixCls + '-carousel-next') : element.addClass(selectedEl, this.prefixCls + '-carousel-prev')
 
       this._prevSelectedEvent = EventListener.listen(prevSelectedEl, 'transitionend', transitionendFn)
       this._selectedEvent = EventListener.listen(selectedEl, 'transitionend', transitionendFn)
-      prevSelectedEl.classList.add(this.prefixCls + '-carousel-' + direction)
-      selectedEl.classList.add(this.prefixCls + '-carousel-' + direction)
+      element.addClass(prevSelectedEl, this.prefixCls + '-carousel-' + direction)
+      element.addClass(selectedEl, this.prefixCls + '-carousel-' + direction)
     },
     nextClick () {
       if (this.isAnimating) return false

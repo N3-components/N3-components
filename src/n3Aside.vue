@@ -22,6 +22,7 @@
 import EventListener from './utils/EventListener'
 import getScrollBarWidth from './utils/getScrollBarWidth'
 import type from './utils/type'
+import element from './utils/element'
 
 export default {
   props: {
@@ -73,7 +74,7 @@ export default {
       const scrollBarWidth = getScrollBarWidth()
       if (val) {
         body.appendChild(backdrop)
-        body.classList.add(prefixCls + '-modal-open')
+        element.addClass(body, prefixCls + '-modal-open')
         if (scrollBarWidth !== 0) {
           body.style.paddingRight = scrollBarWidth + 'px'
         }
@@ -87,7 +88,7 @@ export default {
         backdrop = document.querySelector('.' + prefixCls + '-aside-backdrop')
         backdrop.className = prefixCls + '-aside-backdrop'
         setTimeout(() => {
-          body.classList.remove(prefixCls + '-modal-open')
+          element.removeClass(body, prefixCls + '-modal-open')
           body.style.paddingRight = '0'
           body.removeChild(backdrop)
         }, 300)

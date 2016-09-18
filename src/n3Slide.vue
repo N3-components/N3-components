@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import element from './utils/element'
+
 export default {
   props: {
     prefixCls: {
@@ -26,7 +28,7 @@ export default {
     }
     this.$parent.indicator.push(this.index)
     if (this.index == 0) {
-      this.$el.classList.add(this.prefixCls + '-carousel-active')
+      element.addClass(this.$el, this.prefixCls + '-carousel-active')
     }
   }
 }
