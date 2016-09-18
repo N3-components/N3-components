@@ -13327,6 +13327,18 @@
 	
 	//         <tr>
 	
+	//           <td>expand-all</td>
+	
+	//           <td><code>Boolean</code></td>
+	
+	//           <td>false</td>
+	
+	//           <td>全部展开（异步加载时不支持全部展开）</td>
+	
+	//         </tr>
+	
+	//         <tr>
+	
 	//           <td>on-check</td>
 	
 	//           <td><code>Function</code></td>
@@ -13443,7 +13455,7 @@
 /* 298 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"树形视图\">\r\n    <h1 class=\"page-header\">\r\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\r\n      <span class=\"author\"></span>\r\n    </h1>\r\n    <div class=\"bs-example\">\r\n      <n3-tree :value.sync=\"id\" :data=\"files1\" ></n3-tree>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-tree :value.sync=\"id\":data=\"files1\"></n3-tree>\r\n        </script></code></pre>\r\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\r\nnew Vue({\r\n    data: {\r\n        files1: [\r\n            {\r\n                label: '新建文件夹1',\r\n                value: 1,\r\n                icon: 'folder',\r\n                children:[]\r\n            },\r\n            {\r\n                label: '新建文件夹3',\r\n                value: 3,\r\n                isOpened: true,\r\n                icon: 'folder',\r\n                children: [\r\n                    {\r\n                        label: '我的文档1',\r\n                        value: 4\r\n                    },\r\n                    {\r\n                        label: '新建文件夹4',\r\n                        value: 5,\r\n                        icon: 'folder',\r\n                        children: [\r\n                        {\r\n                            label: '我的文档3',\r\n                            value: 6\r\n                        },\r\n                        {\r\n                            label: '我的文档4',\r\n                            value: 7\r\n                        }\r\n                        ]\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                label: '我的文档2',\r\n                value: 2,\r\n            }\r\n        ]\r\n    }\r\n})\r\n\r\n        </script> </code></pre>\r\n  </div>\r\n  <h1 class=\"page-header\">\r\n    <a href=\"#异步加载\" class=\"anchor\">异步加载</a>\r\n    <span class=\"author\"></span>\r\n  </h1>\r\n  <div class=\"bs-example\">\r\n    <n3-tree  :data=\"files2\" :load-data=\"loadList\"></n3-tree>\r\n  </div>\r\n  <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-tree :data=\"files2\" :load-data=\"loadList\"></n3-tree>\r\n  </script> </code></pre>\r\n  <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\r\nnew Vue({\r\n    data: {\r\n        files2: [\r\n            {\r\n                label: '根目录',\r\n                value: 1,\r\n                children: [],\r\n                icon: 'folder'\r\n            }\r\n        ],\r\n        loadList(value) {\r\n            return new Promise((resolve, reject) => {\r\n                setTimeout(() => {\r\n                    var res = [{\r\n                        label: '我的文档' + Math.ceil(Math.random() * 100000),\r\n                        value: Math.ceil(Math.random() * 100000)\r\n                    }, {\r\n                        label: '新建文件夹' + Math.ceil(Math.random() * 100000),\r\n                        value: Math.ceil(Math.random() * 100000),\r\n                        children: [],\r\n                        icon: 'folder'\r\n                    }]\r\n                    resolve(res)\r\n                }, 1000)\r\n            })\r\n        }\r\n    }\r\n})\r\n\r\n      </script></code></pre>\r\n  </div>\r\n\r\n    <h1 class=\"page-header\">    \r\n      <a href=\"#勾选节点\" class=\"anchor\">勾选节点</a>\r\n      <span class=\"author\"></span>\r\n    </h1>\r\n    <div class=\"bs-example\">\r\n      {{checkedKeys | json}}\r\n      <n3-tree \r\n        :value.sync=\"id\" \r\n        :data=\"files3\" \r\n        :default-expand-all=\"true\" \r\n        :checkable=\"true\" \r\n        :on-check=\"onCheck\"\r\n        :checked-keys.sync=\"checkedKeys\">\r\n      </n3-tree>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n    <n3-tree :value.sync=\"id\" :data=\"files3\" checkable=\"true\"></n3-tree>\r\n    </script> </code></pre>\r\n\r\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\r\nnew Vue({\r\n    data: {\r\n        files3: [\r\n            {\r\n                label: '新建文件夹1',\r\n                value: 1,\r\n                children: []\r\n            },\r\n            {\r\n                label: '我的文档2',\r\n                value: 2\r\n            },\r\n            {\r\n                label: '新建文件夹3',\r\n                value: 3,\r\n                children: [\r\n                    {\r\n                        label: '我的文档1',\r\n                        value: 4\r\n                    },\r\n                    {\r\n                        label: '新建文件夹4',\r\n                        value: 5,\r\n                        children: [\r\n                        {\r\n                            label: '我的文档3',\r\n                            value: 6\r\n                        },\r\n                        {\r\n                            label: '我的文档4',\r\n                            value: 7\r\n                        }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n})\r\n        </script> </code></pre>\r\n\r\n  <h2>参数</h2>\r\n    <table class=\"table table-bordered\">\r\n      <thead>\r\n        <tr>\r\n          <th>参数名</th>\r\n          <th>类型</th>\r\n          <th>默认值</th>\r\n          <th>说明</th>\r\n        </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr>\r\n          <td>data</td>\r\n          <td><code>Array</code></td>\r\n          <td>[]</td>\r\n          <td>树形数据<code>.sync</code></td>\r\n        </tr>\r\n         <tr>\r\n          <td>selected-key</td>\r\n          <td><code>String</code><code>Number</code></td>\r\n          <td></td>\r\n          <td>选中节点的value</td>\r\n        </tr>\r\n        <tr>\r\n          <td>checkable</td>\r\n          <td><code>Boolean</code></td>\r\n          <td>false</td>\r\n          <td>是否支持checkbox可选</td>\r\n        </tr>\r\n        <tr>\r\n          <td>checked-keys</td>\r\n          <td><code>Array</code></td>\r\n          <td>[]</td>\r\n          <td>选中的节点的value<code>.sync</code></td>\r\n        </tr>\r\n        <tr>\r\n          <td>treeIcon</td>\r\n          <td><code>String</code></td>\r\n          <td>angle-right</td>\r\n          <td></td>\r\n        </tr>\r\n        <tr>\r\n          <td>tree-open-icon</td>\r\n          <td><code>String</code></td>\r\n          <td>angle-down</td>\r\n          <td></td>\r\n        </tr>\r\n        <tr>\r\n          <td>icon</td>\r\n          <td><code>String</code></td>\r\n          <td></td>\r\n          <td>图标</td>\r\n        </tr>\r\n        <tr>\r\n          <td>load-data</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>异步加载函数</td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-select</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>选择触发函数</td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-expand</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>展开触发函数</td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-check</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>checkbox选中触发函数</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"树形视图\">\r\n    <h1 class=\"page-header\">\r\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\r\n      <span class=\"author\"></span>\r\n    </h1>\r\n    <div class=\"bs-example\">\r\n      <n3-tree :value.sync=\"id\" :data=\"files1\" ></n3-tree>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-tree :value.sync=\"id\":data=\"files1\"></n3-tree>\r\n        </script></code></pre>\r\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\r\nnew Vue({\r\n    data: {\r\n        files1: [\r\n            {\r\n                label: '新建文件夹1',\r\n                value: 1,\r\n                icon: 'folder',\r\n                children:[]\r\n            },\r\n            {\r\n                label: '新建文件夹3',\r\n                value: 3,\r\n                isOpened: true,\r\n                icon: 'folder',\r\n                children: [\r\n                    {\r\n                        label: '我的文档1',\r\n                        value: 4\r\n                    },\r\n                    {\r\n                        label: '新建文件夹4',\r\n                        value: 5,\r\n                        icon: 'folder',\r\n                        children: [\r\n                        {\r\n                            label: '我的文档3',\r\n                            value: 6\r\n                        },\r\n                        {\r\n                            label: '我的文档4',\r\n                            value: 7\r\n                        }\r\n                        ]\r\n                    }\r\n                ]\r\n            },\r\n            {\r\n                label: '我的文档2',\r\n                value: 2,\r\n            }\r\n        ]\r\n    }\r\n})\r\n\r\n        </script> </code></pre>\r\n  </div>\r\n  <h1 class=\"page-header\">\r\n    <a href=\"#异步加载\" class=\"anchor\">异步加载</a>\r\n    <span class=\"author\"></span>\r\n  </h1>\r\n  <div class=\"bs-example\">\r\n    <n3-tree  :data=\"files2\" :load-data=\"loadList\"></n3-tree>\r\n  </div>\r\n  <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-tree :data=\"files2\" :load-data=\"loadList\"></n3-tree>\r\n  </script> </code></pre>\r\n  <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\r\nnew Vue({\r\n    data: {\r\n        files2: [\r\n            {\r\n                label: '根目录',\r\n                value: 1,\r\n                children: [],\r\n                icon: 'folder'\r\n            }\r\n        ],\r\n        loadList(value) {\r\n            return new Promise((resolve, reject) => {\r\n                setTimeout(() => {\r\n                    var res = [{\r\n                        label: '我的文档' + Math.ceil(Math.random() * 100000),\r\n                        value: Math.ceil(Math.random() * 100000)\r\n                    }, {\r\n                        label: '新建文件夹' + Math.ceil(Math.random() * 100000),\r\n                        value: Math.ceil(Math.random() * 100000),\r\n                        children: [],\r\n                        icon: 'folder'\r\n                    }]\r\n                    resolve(res)\r\n                }, 1000)\r\n            })\r\n        }\r\n    }\r\n})\r\n\r\n      </script></code></pre>\r\n  </div>\r\n\r\n    <h1 class=\"page-header\">    \r\n      <a href=\"#勾选节点\" class=\"anchor\">勾选节点</a>\r\n      <span class=\"author\"></span>\r\n    </h1>\r\n    <div class=\"bs-example\">\r\n      {{checkedKeys | json}}\r\n      <n3-tree \r\n        :value.sync=\"id\" \r\n        :data=\"files3\" \r\n        :default-expand-all=\"true\" \r\n        :checkable=\"true\" \r\n        :on-check=\"onCheck\"\r\n        :checked-keys.sync=\"checkedKeys\">\r\n      </n3-tree>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n    <n3-tree :value.sync=\"id\" :data=\"files3\" checkable=\"true\"></n3-tree>\r\n    </script> </code></pre>\r\n\r\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\r\nnew Vue({\r\n    data: {\r\n        files3: [\r\n            {\r\n                label: '新建文件夹1',\r\n                value: 1,\r\n                children: []\r\n            },\r\n            {\r\n                label: '我的文档2',\r\n                value: 2\r\n            },\r\n            {\r\n                label: '新建文件夹3',\r\n                value: 3,\r\n                children: [\r\n                    {\r\n                        label: '我的文档1',\r\n                        value: 4\r\n                    },\r\n                    {\r\n                        label: '新建文件夹4',\r\n                        value: 5,\r\n                        children: [\r\n                        {\r\n                            label: '我的文档3',\r\n                            value: 6\r\n                        },\r\n                        {\r\n                            label: '我的文档4',\r\n                            value: 7\r\n                        }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n    }\r\n})\r\n        </script> </code></pre>\r\n\r\n  <h2>参数</h2>\r\n    <table class=\"table table-bordered\">\r\n      <thead>\r\n        <tr>\r\n          <th>参数名</th>\r\n          <th>类型</th>\r\n          <th>默认值</th>\r\n          <th>说明</th>\r\n        </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr>\r\n          <td>data</td>\r\n          <td><code>Array</code></td>\r\n          <td>[]</td>\r\n          <td>树形数据<code>.sync</code></td>\r\n        </tr>\r\n         <tr>\r\n          <td>selected-key</td>\r\n          <td><code>String</code><code>Number</code></td>\r\n          <td></td>\r\n          <td>选中节点的value</td>\r\n        </tr>\r\n        <tr>\r\n          <td>checkable</td>\r\n          <td><code>Boolean</code></td>\r\n          <td>false</td>\r\n          <td>是否支持checkbox可选</td>\r\n        </tr>\r\n        <tr>\r\n          <td>checked-keys</td>\r\n          <td><code>Array</code></td>\r\n          <td>[]</td>\r\n          <td>选中的节点的value<code>.sync</code></td>\r\n        </tr>\r\n        <tr>\r\n          <td>treeIcon</td>\r\n          <td><code>String</code></td>\r\n          <td>angle-right</td>\r\n          <td></td>\r\n        </tr>\r\n        <tr>\r\n          <td>tree-open-icon</td>\r\n          <td><code>String</code></td>\r\n          <td>angle-down</td>\r\n          <td></td>\r\n        </tr>\r\n        <tr>\r\n          <td>icon</td>\r\n          <td><code>String</code></td>\r\n          <td></td>\r\n          <td>图标</td>\r\n        </tr>\r\n        <tr>\r\n          <td>load-data</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>异步加载函数</td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-select</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>选择触发函数</td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-expand</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>展开触发函数</td>\r\n        </tr>\r\n        <tr>\r\n          <td>expand-all</td>\r\n          <td><code>Boolean</code></td>\r\n          <td>false</td>\r\n          <td>全部展开（异步加载时不支持全部展开）</td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-check</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>checkbox选中触发函数</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n  </div>";
 
 /***/ },
 /* 299 */
@@ -13629,6 +13641,8 @@
 	
 	//   })
 	
+	//   console.log(data.file)
+	
 	// } </code></pre></td>
 	
 	//         <td>出错时触发函数</td>
@@ -13655,7 +13669,21 @@
 	
 	//         <td></td>
 	
-	//         <td>文件删除时触发函数</td>
+	//         <td>文件删除时触发函数，举个栗子：<pre><code class="language-javascript">
+	
+	// function (data) {
+	
+	//   if (data.response.success) {
+	
+	//     this.n3Toast({
+	
+	//       text: data.file.name
+	
+	//     })
+	
+	//   }
+	
+	// }</code></pre></td>
 	
 	//       </tr>
 	
@@ -13667,7 +13695,13 @@
 	
 	//         <td></td>
 	
-	//         <td>所有上传任务结束时触发函数</td>
+	//         <td>所有上传任务结束时触发函数，举个栗子：<pre><code class="language-javascript">
+	
+	// function () {
+	
+	//   this.render()
+	
+	// }</code></pre></td>
 	
 	//       </tr>
 	
@@ -13705,7 +13739,7 @@
 /* 301 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"文件上传\"  >\r\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\r\n    <div class=\"bs-example\">\r\n      <h4>点击</h4>\r\n      <n3-uploader url=\"\"></n3-uploader>\r\n      <hr>\r\n       <h4>拖拽</h4>\r\n      <n3-uploader type=\"drag\" ></n3-uploader>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n       <n3-uploader url=\"/upload\"></n3-uploader>\r\n\r\n       <n3-uploader url=\"/upload\" type=\"drag\"></n3-uploader>\r\n    </script></code></pre>\r\n  <h2>参数</h2>\r\n  <table class=\"table table-bordered\">\r\n    <thead>\r\n      <tr>\r\n         <th>参数名</th>\r\n        <th>类型</th>\r\n        <th>默认值</th>\r\n        <th>说明</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <tr>\r\n        <td>name</td>\r\n        <td><code>String</code></td>\r\n        <td>files</td>\r\n        <td>文件对象的name</td>\r\n      </tr>\r\n      <tr>\r\n        <td>type</td>\r\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\r\n        <td>click</td>\r\n        <td>拖拽或者点击</td>\r\n      </tr>\r\n      <tr>\r\n        <td>accept</td>\r\n        <td><code>String</code></td>\r\n        <td>'' (全支持)</td>\r\n        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>\r\n      </tr>\r\n      <tr>\r\n        <td>url</td>\r\n        <td><code>String</code></td>\r\n        <td></td>\r\n        <td>上传地址</td>\r\n      </tr>\r\n      <tr>\r\n        <td>multiple</td>\r\n        <td><code>Boolean</code></td>\r\n        <td>true</td>\r\n        <td>支持多文件上传</td>\r\n      </tr>\r\n      <tr>\r\n        <td>drag-width</td>\r\n        <td><code>String</code></td>\r\n        <td>300px</td>\r\n        <td>拖拽框宽度</td>\r\n      </tr>\r\n      <tr>\r\n        <td>drag-height</td>\r\n        <td><code>String</code></td>\r\n        <td>200px</td>\r\n        <td>拖拽框高度</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-error</td>\r\n        <td><code>Function</code></td>\r\n        <td><pre><code class=\"language-javascript\">\r\nfunction (data) {\r\n  this.n3Toast({\r\n    text: data.message\r\n  })\r\n} </code></pre></td>\r\n        <td>出错时触发函数</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-success</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>成功时触发函数</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-delete</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>文件删除时触发函数</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-finish</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>所有上传任务结束时触发函数</td>\r\n      </tr>\r\n      <tr>\r\n        <td>max-length</td>\r\n        <td><code>Number</code></td>\r\n        <td>10</td>\r\n        <td>上传文件个数限制</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"文件上传\"  >\r\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\r\n    <div class=\"bs-example\">\r\n      <h4>点击</h4>\r\n      <n3-uploader url=\"\"></n3-uploader>\r\n      <hr>\r\n       <h4>拖拽</h4>\r\n      <n3-uploader type=\"drag\" ></n3-uploader>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n       <n3-uploader url=\"/upload\"></n3-uploader>\r\n\r\n       <n3-uploader url=\"/upload\" type=\"drag\"></n3-uploader>\r\n    </script></code></pre>\r\n  <h2>参数</h2>\r\n  <table class=\"table table-bordered\">\r\n    <thead>\r\n      <tr>\r\n         <th>参数名</th>\r\n        <th>类型</th>\r\n        <th>默认值</th>\r\n        <th>说明</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <tr>\r\n        <td>name</td>\r\n        <td><code>String</code></td>\r\n        <td>files</td>\r\n        <td>文件对象的name</td>\r\n      </tr>\r\n      <tr>\r\n        <td>type</td>\r\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\r\n        <td>click</td>\r\n        <td>拖拽或者点击</td>\r\n      </tr>\r\n      <tr>\r\n        <td>accept</td>\r\n        <td><code>String</code></td>\r\n        <td>'' (全支持)</td>\r\n        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>\r\n      </tr>\r\n      <tr>\r\n        <td>url</td>\r\n        <td><code>String</code></td>\r\n        <td></td>\r\n        <td>上传地址</td>\r\n      </tr>\r\n      <tr>\r\n        <td>multiple</td>\r\n        <td><code>Boolean</code></td>\r\n        <td>true</td>\r\n        <td>支持多文件上传</td>\r\n      </tr>\r\n      <tr>\r\n        <td>drag-width</td>\r\n        <td><code>String</code></td>\r\n        <td>300px</td>\r\n        <td>拖拽框宽度</td>\r\n      </tr>\r\n      <tr>\r\n        <td>drag-height</td>\r\n        <td><code>String</code></td>\r\n        <td>200px</td>\r\n        <td>拖拽框高度</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-error</td>\r\n        <td><code>Function</code></td>\r\n        <td><pre><code class=\"language-javascript\">\r\nfunction (data) {\r\n  this.n3Toast({\r\n    text: data.message\r\n  })\r\n  console.log(data.file)\r\n} </code></pre></td>\r\n        <td>出错时触发函数</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-success</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>成功时触发函数</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-delete</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>文件删除时触发函数，举个栗子：<pre><code class=\"language-javascript\">\r\nfunction (data) {\r\n  if (data.response.success) {\r\n    this.n3Toast({\r\n      text: data.file.name\r\n    })\r\n  }\r\n}</code></pre></td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-finish</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>所有上传任务结束时触发函数，举个栗子：<pre><code class=\"language-javascript\">\r\nfunction () {\r\n  this.render()\r\n}</code></pre></td>\r\n      </tr>\r\n      <tr>\r\n        <td>max-length</td>\r\n        <td><code>Number</code></td>\r\n        <td>10</td>\r\n        <td>上传文件个数限制</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  </div>";
 
 /***/ },
 /* 302 */
@@ -37309,7 +37343,12 @@
 	      var node = self.data[index];
 	      // Firstly Select Node
 	      self.select.apply(self, arguments);
-	      if (_type2.default.isFunction(self.loadData) && !node.isOpened && node.children && node.children.length === 0) {
+	      /**
+	       * lazy load
+	       * @require loadData isNotOpened isTreeNode
+	       */
+	      var isLazyLoadd = _type2.default.isFunction(self.loadData) && !node.isOpened && node.children && node.children.length === 0;
+	      if (isLazyLoadd) {
 	        self.loading = index;
 	        var promise = self.loadData(value);
 	        if (_type2.default.isPromise(promise)) {
@@ -37397,8 +37436,10 @@
 	     * @return {Boolean}
 	     */
 	    hasSelectedChild: function hasSelectedChild(index) {
+	      if (!this.checkable) {
+	        return false;
+	      }
 	      for (var i in this.$children) {
-	
 	        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) return true;
 	      }
 	      return false;
@@ -37442,6 +37483,7 @@
 	        }
 	      }
 	    },
+	
 	
 	    /**
 	     * Check All
@@ -37532,8 +37574,8 @@
 	  ready: function ready() {
 	    if (this.sort) {
 	      this._sort();
+	      this.expand();
 	    }
-	    this.expand();
 	  }
 	};
 	// </script>
@@ -38103,39 +38145,26 @@
 	    parseResponse: function parseResponse(response, index) {
 	      var data = null;
 	      var len = this.uploadList.length;
-	
 	      if (!response) {
-	        this.states[index] = false;
-	
-	        if (!response) {
-	          this.setError('服务器没有响应', index);
-	        } else {
-	          try {
-	            data = JSON.parse(response);
-	          } catch (e) {
-	            this.setError('服务器响应数据格式有问题', index);
-	          }
-	          if (data) {
-	            this.states[index] = true;
-	            if (_type2.default.isFunction(this.onSuccess)) {
-	              this.onSuccess({
-	                data: data,
-	                file: this.uploadList[index]
-	              });
-	            }
-	          } else {
-	            this.states[index] = false;
+	        this.setError('服务器没有响应', index);
+	      } else {
+	        try {
+	          data = JSON.parse(response);
+	        } catch (e) {
+	          this.setError('服务器响应数据格式有问题', index);
+	        }
+	        if (data) {
+	          this.states[index] = true;
+	          if (_type2.default.isFunction(this.onSuccess)) {
+	            this.onSuccess({
+	              response: data,
+	              file: this.uploadList[index]
+	            });
 	          }
 	        }
-	        if (Object.keys(this.states).length === len && _type2.default.isFunction(this.onFinish)) {
-	          this.onFinish();
-	        }
-	        if (data && _type2.default.isFunction(this.onSuccess)) {
-	          this.onSuccess({
-	            data: data,
-	            file: this.uploadList[index]
-	          });
-	        }
+	      }
+	      if (Object.keys(this.states).length === len && _type2.default.isFunction(this.onFinish)) {
+	        this.onFinish();
 	      }
 	    },
 	    setError: function setError(message, index) {
@@ -38145,7 +38174,7 @@
 	          file: index && this.uploadList[index] || null
 	        });
 	      }
-	
+	      this.states[index] = false;
 	      index > -1 && this.uploadList.splice(index, 1);
 	    },
 	    delFile: function delFile(index) {

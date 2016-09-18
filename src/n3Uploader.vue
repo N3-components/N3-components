@@ -305,10 +305,6 @@
       parseResponse (response, index) {
         let data = null
         let len = this.uploadList.length
-
-        if (!response) {
-          this.states[index] = false
-
         if (!response) {
           this.setError('服务器没有响应', index)
         } else {
@@ -321,23 +317,14 @@
             this.states[index] = true
             if (type.isFunction(this.onSuccess)) {
               this.onSuccess({
-                data: data,
+                response: data,
                 file: this.uploadList[index]
               })
             }
-          } else {
-            this.states[index] = false
           }
         }
         if (Object.keys(this.states).length === len && type.isFunction(this.onFinish)) {
           this.onFinish()
-        }
-          if (data && type.isFunction(this.onSuccess)) {
-            this.onSuccess({
-              data: data,
-              file: this.uploadList[index]
-            })
-          }
         }
       },
 
@@ -348,7 +335,7 @@
             file: index && this.uploadList[index] || null
           })
         }
-
+        this.states[index] = false
         index > -1 && this.uploadList.splice(index, 1)
       },
 

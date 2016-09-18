@@ -233,6 +233,12 @@ new Vue({
           <td>展开触发函数</td>
         </tr>
         <tr>
+          <td>expand-all</td>
+          <td><code>Boolean</code></td>
+          <td>false</td>
+          <td>全部展开（异步加载时不支持全部展开）</td>
+        </tr>
+        <tr>
           <td>on-check</td>
           <td><code>Function</code></td>
           <td></td>

@@ -150,7 +150,12 @@ export default {
       let node = self.data[index]
       // Firstly Select Node
       self.select.apply(self, arguments)
-      if (type.isFunction(self.loadData) && !node.isOpened && node.children && node.children.length === 0) {
+      /**
+       * lazy load
+       * @require loadData isNotOpened isTreeNode
+       */
+      let isLazyLoadd = type.isFunction(self.loadData) && !node.isOpened && node.children && node.children.length === 0
+      if (isLazyLoadd) {
         self.loading = index
         let promise = self.loadData(value)
         if (type.isPromise(promise)) {
@@ -233,8 +238,10 @@ export default {
      * @return {Boolean}
      */
     hasSelectedChild (index) {
-      for (var i in this.$children) {
-
+      if (!this.checkable) {
+        return false
+      }
+      for (let i in this.$children) {
         if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected())
           return true
       }
@@ -277,6 +284,7 @@ export default {
         }
       }
     },
+
     /**
      * Check All
      * @param {Boolean} flag
@@ -366,8 +374,8 @@ export default {
   ready () {
     if (this.sort) {
       this._sort()
+      this.expand()
     }
-    this.expand()
   }
 }
 </script>

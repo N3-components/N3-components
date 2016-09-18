@@ -74,6 +74,7 @@ function (data) {
   this.n3Toast({
     text: data.message
   })
+  console.log(data.file)
 } </code></pre></td>
         <td>出错时触发函数</td>
       </tr>
@@ -87,13 +88,23 @@ function (data) {
         <td>on-delete</td>
         <td><code>Function</code></td>
         <td></td>
-        <td>文件删除时触发函数</td>
+        <td>文件删除时触发函数，举个栗子：<pre><code class="language-javascript">
+function (data) {
+  if (data.response.success) {
+    this.n3Toast({
+      text: data.file.name
+    })
+  }
+}</code></pre></td>
       </tr>
       <tr>
         <td>on-finish</td>
         <td><code>Function</code></td>
         <td></td>
-        <td>所有上传任务结束时触发函数</td>
+        <td>所有上传任务结束时触发函数，举个栗子：<pre><code class="language-javascript">
+function () {
+  this.render()
+}</code></pre></td>
       </tr>
       <tr>
         <td>max-length</td>
