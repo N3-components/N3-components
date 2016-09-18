@@ -167,9 +167,9 @@ export default {
     }
   },
   watch: {
-    value () {
+    value (val) {
       if (type.isFunction(this.onChange)) {
-        this.onChange()
+        this.onChange(val)
       }
     }
   },
@@ -208,7 +208,6 @@ export default {
             this.value = ret
           }
         } else {
-          this.$dispatch('change')
           this.value = value[0] ? value[0].value : ''
         }
       }

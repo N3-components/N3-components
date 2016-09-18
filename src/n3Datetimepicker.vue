@@ -271,7 +271,6 @@ export default {
     dispatchHide () {
       var show = this.displayDayView || this.displayMouthView || this.displayYearView
       if (!show) {
-        this.$dispatch('hide', this.value)
         if (type.isFunction(this.onHide)) {
           this.onHide()
         }

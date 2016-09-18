@@ -2771,7 +2771,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        self.inner = true;
 	        self.value = self.selectedValue;
 	        if (_type2.default.isFunction(self.onChange) && !this.init) {
-	          self.onChange();
+	          self.onChange(self.value);
 	        }
 	      }
 	
@@ -15691,7 +15691,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    dispatchHide: function dispatchHide() {
 	      var show = this.displayDayView || this.displayMouthView || this.displayYearView;
 	      if (!show) {
-	        this.$dispatch('hide', this.value);
 	        if (_type2.default.isFunction(this.onHide)) {
 	          this.onHide();
 	        }
@@ -17629,9 +17628,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	
 	  watch: {
-	    value: function value() {
+	    value: function value(val) {
 	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange();
+	        this.onChange(val);
 	      }
 	    }
 	  },
@@ -17672,7 +17671,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	            this.value = ret;
 	          }
 	        } else {
-	          this.$dispatch('change');
 	          this.value = value[0] ? value[0].value : '';
 	        }
 	      }
@@ -18883,9 +18881,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    position: function position() {
 	      this.focus();
 	    },
-	    value: function value() {
+	    value: function value(val) {
 	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange();
+	        this.onChange(val);
 	      }
 	      this.focus();
 	    }
