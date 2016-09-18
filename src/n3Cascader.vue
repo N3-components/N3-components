@@ -182,7 +182,7 @@ export default {
         self.inner = true
         self.value = self.selectedValue
         if (type.isFunction(self.onChange) && !this.init) {
-          self.onChange()
+          self.onChange(self.value)
         }
       }
 

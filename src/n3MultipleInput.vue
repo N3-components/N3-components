@@ -186,9 +186,9 @@ export default {
     position () {
       this.focus()
     },
-    value () {
+    value (val) {
       if (type.isFunction(this.onChange)) {
-        this.onChange()
+        this.onChange(val)
       }
       this.focus()
     }
