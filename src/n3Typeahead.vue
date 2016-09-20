@@ -21,7 +21,7 @@
     @keydown.enter= "hit(null)"
     @keydown.esc="reset"
   ></n3-input>
-  <ul class="{{prefixCls}}-dropdown-menu" :style="{width:dropdownWidth,maxHeight:dropdownHeight}">
+  <ul class="{{prefixCls}}-dropdown-menu" :style="{width: dropdownWidth, maxHeight: dropdownHeight}">
     <li v-for="item in items" :class="isActive($index)">
       <a @mousedown.prevent="hit($index)" >
         {{{render.call(this._context,item)}}}

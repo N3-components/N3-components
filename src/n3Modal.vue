@@ -13,8 +13,7 @@
         <div class="{{prefixCls}}-modal-body">
           <slot name="body"></slot>
         </div>
-        
-        
+      
         <slot name="footer">
           <div class="{{prefixCls}}-modal-footer">
             <n3-button  @click="close">取消</n3-button>
@@ -103,7 +102,7 @@ export default {
         el.querySelector('.' + this.prefixCls + '-modal-content').focus()
         el.style.display = 'block'
         setTimeout(() => element.addClass(el, this.prefixCls + '-modal-in'), 0)
-        element.addClass(body, prefixCls + '-modal-open')
+        element.addClass(body, this.prefixCls + '-modal-open')
         if (scrollBarWidth !== 0) {
           body.style.paddingRight = scrollBarWidth + 'px'
         }

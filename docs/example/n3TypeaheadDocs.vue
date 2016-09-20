@@ -37,80 +37,80 @@
       ></n3-typeahead>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-      <h4>
-        本地数据
-      </h4>
-      <n3-typeahead 
-        :query.sync = "value"
-        :data="USstate" 
-        placeholder=" 发到"
-      ></n3-typeahead>
-      <hr>
-      <h4>
-      异步获取
-      <n3-tooltip trigger="click" content="The suggestions via a Google Map API, are you behind a FireWall?" placement="top">
-        <small style="cursor:pointer">(not working?)</small>
-      </n3-tooltip>
-      </h4>
-      <n3-typeahead 
-        placeholder="CCCAddress, async via maps.googleapis.com"
-        :on-change="getResult"
-        :render="render"
-        :items="items"
-        :add-format="googleCallback"
-      ></n3-typeahead>
-      <hr>
-      <h4>
-      内容模版
-      </h4>
-      <n3-typeahead 
-        placeholder="Github users, async via api.github.com"
-        :on-change="getGitresults"
-        :items="gitItems"
-        :render="rendergit"
-        :add-format="githubCallback"
-      ></n3-typeahead>
-    </div>
-  </script></code></pre>
+<h4>
+  本地数据
+</h4>
+<n3-typeahead 
+  :query.sync = "value"
+  :data="USstate" 
+  placeholder=" 发到"
+></n3-typeahead>
+<hr>
+<h4>
+异步获取
+<n3-tooltip trigger="click" content="The suggestions via a Google Map API, are you behind a FireWall?" placement="top">
+  <small style="cursor:pointer">(not working?)</small>
+</n3-tooltip>
+</h4>
+<n3-typeahead 
+  placeholder="CCCAddress, async via maps.googleapis.com"
+  :on-change="getResult"
+  :render="render"
+  :items="items"
+  :add-format="googleCallback"
+></n3-typeahead>
+<hr>
+<h4>
+内容模版
+</h4>
+<n3-typeahead 
+  placeholder="Github users, async via api.github.com"
+  :on-change="getGitresults"
+  :items="gitItems"
+  :render="rendergit"
+  :add-format="githubCallback"
+></n3-typeahead>
+</div>
+    </script></code></pre>
     <pre><code class="language-javascript"><script type="language-javascript">
-    new Vue({
-       data: {
-          value:'Alabama',
-          USstate: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
-      },
-      methods: {
-        render (item) {
-          return item.formatted_address
-        },
-        getResult (query) {
-          let self = this
-          $.ajax({
-            url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
-            success (ret) {
-              self.items = ret.results
-            }
-          })
-        },
-        getGitresults (query) {
-          let self = this
-          $.ajax({
-            url: 'https://api.github.com/search/users?q=' + query,
-            success (ret) {
-              self.gitItems = ret.items
-            }
-          })
-        },
-        rendergit (item) {
-          return `<img width="18px" height="18px" src="${item.avatar_url}"/> <span>${item.login}</span>`
-        },
-        googleCallback (item) {
-          return item.formatted_address
-        },
-        githubCallback (item) {
-          return item.login
+new Vue({
+   data: {
+      value:'Alabama',
+      USstate: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
+  },
+  methods: {
+    render (item) {
+      return item.formatted_address
+    },
+    getResult (query) {
+      let self = this
+      $.ajax({
+        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
+        success (ret) {
+          self.items = ret.results
         }
-      }
-    })
+      })
+    },
+    getGitresults (query) {
+      let self = this
+      $.ajax({
+        url: 'https://api.github.com/search/users?q=' + query,
+        success (ret) {
+          self.gitItems = ret.items
+        }
+      })
+    },
+    rendergit (item) {
+      return `<img width="18px" height="18px" src="${item.avatar_url}"/> <span>${item.login}</span>`
+    },
+    googleCallback (item) {
+      return item.formatted_address
+    },
+    githubCallback (item) {
+      return item.login
+    }
+  }
+})
     </script></code></pre>
 
     <h2>参数</h2>

@@ -6,54 +6,54 @@
     <h4>11 New Icons in 4.0</h4>
     <hr></hr>
     <n3-container>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in newfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
         <br>
       <h4>Web Application Icons</h4>
       <hr></hr>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in webfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
       <h4>Form Control Icons</h4>
       <hr></hr>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in formfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
       <br>
       <h4>Currency Icons</h4>
       <hr></hr>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in currencyfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
       <br>
       <h4>Text Edit Icons</h4>
       <hr></hr>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in textfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
       <br>
       <h4>Directional Icons</h4>
       <hr></hr>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in directionalfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
       <br>
       <h4>Video Player Icons</h4>
       <hr></hr>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in videofont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
       <br>
       <h4>Brand Icons</h4>
       <hr></hr>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in brandfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
-       <br>
+      <br>
       <h4>Medical Icons</h4>
       <hr></hr>
-      <n3-row class="row-ex">
+      <n3-row class="row-ex clearfix">
         <n3-column v-for="font in medicalfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
     </n3-container> 
@@ -114,14 +114,14 @@ export default {
 }
 </script>
 <style scoped>
-  .row-ex div{
+  .row-ex div {
     text-align: left;
     margin-top: 10px;
   }
-  .row-ex i{
+  .row-ex i {
     margin-right: 10px;
   }
-  .row-ex span{
+  .row-ex span {
     color:gray;
   }
 </style>
