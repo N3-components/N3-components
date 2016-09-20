@@ -23,7 +23,6 @@ new Vue({
             {
                 label: '新建文件夹3',
                 value: 3,
-                isOpened: true,
                 icon: 'folder',
                 children: [
                     {
@@ -267,7 +266,6 @@ new Vue({
         }, {
           label: '新建文件夹3',
           value: 3,
-          isOpened: true,
           icon: 'folder',
           children: [{
               label: '我的文档1',

@@ -27,7 +27,7 @@
           </label>
         </span>
       </div>
-      <div 
+      <div
         :transition="transition"
         v-if="areValidNodes(node.children)" 
         class="{{prefixCls}}-tree-children" 
@@ -205,7 +205,7 @@ export default {
       }
       // Init
       if (this.data[index].isOpened === undefined) {
-        this.$set('data[' + index + '].isOpened', this.hasSelectedChild(index))
+        this.$set('data[' + index + '].isOpened', this.expandAll && this.hasSelectedChild(index))
       }
       // General
       this.$set('data[' + index + '].isOpened', !this.data[index].isOpened)
