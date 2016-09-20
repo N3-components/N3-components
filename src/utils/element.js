@@ -85,5 +85,8 @@ export default {
   getClass,
   removeClass,
   addClass,
-  setClass
+  setClass,
+  inBrowser,
+  UA,
+  isIE9
 }

@@ -77,7 +77,9 @@ export default {
       let prevSelectedEl = this.slider[prev]
       let selectedEl = this.slider[selected]
       let transitionendFn = () => {
-        [...this.slider].forEach((el) => el.className = this.prefixCls + '-carousel-item')
+        [...this.slider].forEach(el => {
+          element.setClass(el, this.prefixCls + '-carousel-item')
+        })
         element.addClass(selectedEl, this.prefixCls + '-carousel-active')
         this.isAnimating = false
       }
@@ -86,6 +88,12 @@ export default {
 
       this._prevSelectedEvent = EventListener.listen(prevSelectedEl, 'transitionend', transitionendFn)
       this._selectedEvent = EventListener.listen(selectedEl, 'transitionend', transitionendFn)
+      // remove animation for IE9
+      if (element.isIE9) {
+        setTimeout(() => {
+          transitionendFn()
+        })
+      }
       element.addClass(prevSelectedEl, this.prefixCls + '-carousel-' + direction)
       element.addClass(selectedEl, this.prefixCls + '-carousel-' + direction)
     },
