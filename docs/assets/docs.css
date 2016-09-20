@@ -1702,3 +1702,9 @@ h1[id] {
             transform: translateY(-1000px) rotate(600deg);
   }
 }
+
+#wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}

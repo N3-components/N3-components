@@ -10,36 +10,36 @@
   <script type="text/javascript" src="./assets/jquery.js" ></script>
 </head>
 <body>
-  <div id="wrapper"> </div>
+  <div id="wrapper"></div>
 </body>
 <template id='template'>
   <div>
     <header-docs></header-docs>
     <div class="bs-docs-header">
-        <n3-container>
-            <h1 >N3 <span class="small">components</span></h1>
-            <p>数据驱动，快速开发<span style="font-size:20px">( 基于 <a target="_blank" href="http://cn.vuejs.org/">Vue.js </a>)</span>.</p>
-            <n3-button href="./component.html" class="btn-outline" size="lg">Get Started</n3-button>
-            <n3-button href="https://github.com/N3-components/N3-components" target="_blank" style="color:#1B9D9C;">
-              <n3-icon type="github"></n3-icon>star</n3-button>
-        </n3-container> 
-          <ul class="bg-bubbles">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul> 
+      <n3-container>
+          <h1 >N3 <span class="small">components</span></h1>
+          <p>数据驱动，快速开发<span style="font-size:20px">( 基于 <a target="_blank" href="http://cn.vuejs.org/">Vue.js </a>)</span>.</p>
+          <n3-button href="./component.html" class="btn-outline" size="lg">Get Started</n3-button>
+          <n3-button href="https://github.com/N3-components/N3-components" target="_blank" style="color:#1B9D9C;">
+            <n3-icon type="github"></n3-icon>star</n3-button>
+      </n3-container> 
+      <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> 
     </div>
   </div>
 </template>
 <script>
-window.requestAnimFrame = (function(){
+window.requestAnimationFrame = (function(){
   return  window.requestAnimationFrame       ||
           window.webkitRequestAnimationFrame ||
           window.mozRequestAnimationFrame    ||
@@ -47,7 +47,9 @@ window.requestAnimFrame = (function(){
             window.setTimeout(callback, 1000 / 60);
           };
 })();
-console.log(requestAnimFrame)
 </script>
 <script src="./static/build.js"></script>
+<script>
+  
+</script>
 </html>
