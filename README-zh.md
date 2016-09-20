@@ -71,3 +71,6 @@ TODO 列表
 - [提交ISSUE](https://github.com/N3-components/N3-components/issues/new) : bug反馈，建议提交等
 - email: zhangking520@gmail.com
 - gitter: [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/N3-components/chinese?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+- QQ群: 556286036 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=ae2b542ef32e8595664c746572d9a48187167e269ef5b6c80d8ed326fce5efdd"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="N3-components交流群" title="N3-components交流群"></a>
+- QQ群二维码:
+![qrcode](https://n3-components.github.io/N3-components/static/img/N3-QQ.png)
