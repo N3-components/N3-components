@@ -103,8 +103,8 @@ export default {
         el.style.display = 'block'
         setTimeout(() => element.addClass(el, this.prefixCls + '-modal-in'), 0)
         element.addClass(body, this.prefixCls + '-modal-open')
-        if (scrollBarWidth !== 0) {
-          body.style.paddingRight = scrollBarWidth + 'px'
+        if (!scrollBarWidth) {
+          element.addClass(body, this.prefixCls + '-modal-hide-y')
         }
         if (this.backdrop) {
           this._blurModalContentEvent = EventListener.listen(this.$el, 'click', (e) => {
@@ -117,6 +117,7 @@ export default {
         setTimeout(() => {
           el.style.display = 'none'
           element.removeClass(body, this.prefixCls + '-modal-open')
+          element.removeClass(body, this.prefixCls + '-modal-hide-y')
           body.style.paddingRight = '0'
         }, 300)
       }
