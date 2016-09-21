@@ -31032,12 +31032,12 @@
 	  methods: {
 	    blur: function blur() {
 	      if (_type2.default.isFunction(this.onBlur)) {
-	        this.onBlur();
+	        this.onBlur(this.value);
 	      }
 	    },
 	    focus: function focus() {
 	      if (_type2.default.isFunction(this.onFocus)) {
-	        this.onFocus();
+	        this.onFocus(this.value);
 	      }
 	    }
 	  }

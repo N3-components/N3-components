@@ -100,12 +100,12 @@ export default {
   methods: {
     blur () {
       if (type.isFunction(this.onBlur)) {
-        this.onBlur()
+        this.onBlur(this.value)
       }
     },
     focus () {
       if (type.isFunction(this.onFocus)) {
-        this.onFocus()
+        this.onFocus(this.value)
       }
     }
   }
