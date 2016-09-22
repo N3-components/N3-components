@@ -1,28 +1,29 @@
 <template>
 <div :class="classObj" >
-  <input  
+  <input
     autoComplete="off"
-    class="{{prefixCls}}-form-control"  
+    class="{{prefixCls}}-form-control"
     :style="{'width':width}"
     :readonly="readonly"
     :disabled="disabled"
-    :placeholder="placeholder" 
+    :placeholder="placeholder"
+		:type="type"
     @blur="blur"
     @focus="focus"
-    v-focus-model="focused" 
+    v-focus-model="focused"
     v-model="value"  />
-  <n3-icon 
-    type="check" class="{{prefixCls}}-form-control-feedback" 
+  <n3-icon
+    type="check" class="{{prefixCls}}-form-control-feedback"
     v-if='validStatus=="success" && hasFeedback'>
   </n3-icon>
 
-  <n3-icon 
-    type="warning" class="{{prefixCls}}-form-control-feedback" 
+  <n3-icon
+    type="warning" class="{{prefixCls}}-form-control-feedback"
     v-if='validStatus=="warning" && hasFeedback'>
   </n3-icon>
 
-  <n3-icon 
-    type="times" class="{{prefixCls}}-form-control-feedback" 
+  <n3-icon
+    type="times" class="{{prefixCls}}-form-control-feedback"
     v-if='validStatus=="error" && hasFeedback'>
   </n3-icon>
 
@@ -30,11 +31,11 @@
     :name="name"
     :valid-status.sync="validStatus"
     :rules="rules"
-    :custom-validate="customValidate" 
+    :custom-validate="customValidate"
     :value="value"
     :results.sync="validateResults">
   </validate>
-   
+
 </div>
 </template>
 <script>
@@ -60,7 +61,11 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
-    }
+    },
+		type: {
+			type: String,
+			default: 'text'
+		},
   },
   components: {
     n3Icon,
