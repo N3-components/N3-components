@@ -222,6 +222,9 @@
         let len = this.uploadList.length
         let data
         for (i = 0; i < len; i++) {
+          if (this.states[i]) {
+            continue
+          }
           (function (i, file) {
             if (file.type.match(self.accept)) {
               data = new window.FormData()
