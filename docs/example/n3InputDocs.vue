@@ -2,7 +2,7 @@
   <div class="bs-docs-section" id="输入框"  >
     <h1 class="page-header"><a href="#输入框" class="anchor">输入框</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-input :value.sync="value" :focused.sync="focused"></n3-input>
+      <n3-input :value.sync="value" :focused.sync="focused" ></n3-input>
       <n3-button @click="focused=true">聚焦</n3-button>
     </div>
 
@@ -26,6 +26,12 @@
           <td><code>String</code><code>Number</code></td>
           <td></td>
           <td>输入的值  <code>.sync</code></td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td><code>String</code></td>
+          <td>text</td>
+          <td>输入框类型</td>
         </tr>
         <tr>
           <td>focused</td>
