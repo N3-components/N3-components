@@ -127,11 +127,11 @@ export default {
   },
   data () {
     return {
-      today: this.stringify(new Date),
+      today: this.stringify(new Date()),
       weekRange: ['日', '一', '二', '三', '四', '五', '六'],
       dateRange: [],
       decadeRange: [],
-      currDate: new Date,
+      currDate: new Date(),
       displayDayView: false,
       displayMouthView: false,
       displayYearView: false,
@@ -157,7 +157,7 @@ export default {
       let klass = {}
 
       klass[prefixCls + '-datepicker-dateRange-item-active'] =
-      value && parse(value) && mouthNames[parse(value).getMonth()] === m && currDate.getFullYear() === parse(value).getFullYear() 
+      value && parse(value) && mouthNames[parse(value).getMonth()] === m && currDate.getFullYear() === parse(value).getFullYear()
 
       return klass
     },
@@ -339,7 +339,7 @@ export default {
         const date = new Date(time.year, time.month, i)
         const week = date.getDay()
         let sclass = ''
-        this.disabledDaysOfWeek.forEach((el)=> {
+        this.disabledDaysOfWeek.forEach((el) => {
           if (week === parseInt(el, 10)) sclass = this.prefixCls + '-datepicker-item-disable'
         })
 

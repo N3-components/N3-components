@@ -94,17 +94,29 @@ const PopoverMixin = {
     let popover = this.$els.popover
     let triger = this.$els.trigger.children[0]
     if (this.trigger === 'hover') {
-      this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => this.show = true)
-      this._mouseleaveEvent = EventListener.listen(triger, 'mouseleave', () => this.show = false)
+      this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
+        this.show = true
+      })
+      this._mouseleaveEvent = EventListener.listen(triger, 'mouseleave', () => {
+        this.show = false
+      })
     } else if (this.trigger === 'focus') {
       let input = this.$els.trigger.querySelector('input')
       if (input) {
-        this._focusEvent = EventListener.listen(input, 'focus', () => this.show = true)
-        this._blurEvent = EventListener.listen(input, 'blur', () => this.show = false)
+        this._focusEvent = EventListener.listen(input, 'focus', () => {
+          this.show = true
+        })
+        this._blurEvent = EventListener.listen(input, 'blur', () => {
+          this.show = false
+        })
       }
     } else if (this.trigger === 'mouse') {
-      this._mousedownEvent = EventListener.listen(triger, 'mousedown', () => this.show = true)
-      this._mouseupEvent = EventListener.listen(window, 'mouseup', () => this.show = false)
+      this._mousedownEvent = EventListener.listen(triger, 'mousedown', () => {
+        this.show = true
+      })
+      this._mouseupEvent = EventListener.listen(window, 'mouseup', () => {
+        this.show = false
+      })
     } else {
       this._clickEvent = EventListener.listen(triger, 'click', this.toggle)
       this._closeEvent = EventListener.listen(window, 'click', (e) => {
@@ -137,5 +149,4 @@ const PopoverMixin = {
     }
   }
 }
-
 export default PopoverMixin

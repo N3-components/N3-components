@@ -228,7 +228,7 @@ export default {
     numberValid (value, tip) {
       let rule = /^\d*$/
 
-      if(rule.test(value) || value === '') {
+      if (rule.test(value) || value === '') {
         this.$set('results.isNumberValid', {
           validStatus: 'success',
           tips: ''
@@ -272,6 +272,6 @@ export default {
         })
       }
     }
-	}
+  }
 }
 </script>

@@ -11846,17 +11846,17 @@
 	
 	      if (val) {
 	        if (this.placement === 'top' || this.placement === 'bottom') {
-	          this.$el.style.marginLeft = -this.$el.offsetWidth / 2 + 'px';
+	          this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px';
 	        } else if (this.placement === 'center') {
-	          this.$el.style.marginLeft = -this.$el.offsetWidth / 2 + 'px';
-	          this.$el.style.marginTop = -this.$el.offsetHeight / 2 + 'px';
+	          this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px';
+	          this.$el.style.marginTop = -1 * (this.$el.offsetHeight / 2) + 'px';
 	        }
 	      }
 	
 	      if (this._timeout) clearTimeout(this._timeout);
 	      if (val && !!this.duration) {
 	        this._timeout = setTimeout(function () {
-	          return _this.show = false;
+	          _this.show = false;
 	        }, this.duration);
 	      }
 	    }
@@ -34480,7 +34480,7 @@
 	    function intervalManager(flag, func, time) {
 	      flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID);
 	    }
-	    if (!!this.interval) {
+	    if (this.interval) {
 	      intervalManager(true, this.nextClick, this.interval);
 	      el.addEventListener('mouseenter', function () {
 	        return intervalManager(false);
@@ -36286,6 +36286,10 @@
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
+	    },
+	    type: {
+	      type: String,
+	      default: 'text'
 	    }
 	  },
 	  components: {
@@ -36345,11 +36349,11 @@
 	
 	// <div :class="classObj" >
 	
-	//   <input  
+	//   <input
 	
 	//     autoComplete="off"
 	
-	//     class="{{prefixCls}}-form-control"  
+	//     class="{{prefixCls}}-form-control"
 	
 	//     :style="{'width':width}"
 	
@@ -36357,37 +36361,39 @@
 	
 	//     :disabled="disabled"
 	
-	//     :placeholder="placeholder" 
+	//     :placeholder="placeholder"
+	
+	// 		:type="type"
 	
 	//     @blur="blur"
 	
 	//     @focus="focus"
 	
-	//     v-focus-model="focused" 
+	//     v-focus-model="focused"
 	
 	//     v-model="value"  />
 	
-	//   <n3-icon 
+	//   <n3-icon
 	
-	//     type="check" class="{{prefixCls}}-form-control-feedback" 
+	//     type="check" class="{{prefixCls}}-form-control-feedback"
 	
 	//     v-if='validStatus=="success" && hasFeedback'>
 	
 	//   </n3-icon>
 	
 	
-	//   <n3-icon 
+	//   <n3-icon
 	
-	//     type="warning" class="{{prefixCls}}-form-control-feedback" 
+	//     type="warning" class="{{prefixCls}}-form-control-feedback"
 	
 	//     v-if='validStatus=="warning" && hasFeedback'>
 	
 	//   </n3-icon>
 	
 	
-	//   <n3-icon 
+	//   <n3-icon
 	
-	//     type="times" class="{{prefixCls}}-form-control-feedback" 
+	//     type="times" class="{{prefixCls}}-form-control-feedback"
 	
 	//     v-if='validStatus=="error" && hasFeedback'>
 	
@@ -36402,7 +36408,7 @@
 	
 	//     :rules="rules"
 	
-	//     :custom-validate="customValidate" 
+	//     :custom-validate="customValidate"
 	
 	//     :value="value"
 	
@@ -36608,7 +36614,7 @@
 /* 652 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\r\n  <input  \r\n    autoComplete=\"off\"\r\n    class=\"{{prefixCls}}-form-control\"  \r\n    :style=\"{'width':width}\"\r\n    :readonly=\"readonly\"\r\n    :disabled=\"disabled\"\r\n    :placeholder=\"placeholder\" \r\n    @blur=\"blur\"\r\n    @focus=\"focus\"\r\n    v-focus-model=\"focused\" \r\n    v-model=\"value\"  />\r\n  <n3-icon \r\n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\" \r\n    v-if='validStatus==\"success\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <n3-icon \r\n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\" \r\n    v-if='validStatus==\"warning\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <n3-icon \r\n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\" \r\n    v-if='validStatus==\"error\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <validate\r\n    :name=\"name\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :value=\"value\"\r\n    :results.sync=\"validateResults\">\r\n  </validate>\r\n   \r\n</div>";
+	module.exports = "<div :class=\"classObj\" >\r\n  <input\r\n    autoComplete=\"off\"\r\n    class=\"{{prefixCls}}-form-control\"\r\n    :style=\"{'width':width}\"\r\n    :readonly=\"readonly\"\r\n    :disabled=\"disabled\"\r\n    :placeholder=\"placeholder\"\r\n\t\t:type=\"type\"\r\n    @blur=\"blur\"\r\n    @focus=\"focus\"\r\n    v-focus-model=\"focused\"\r\n    v-model=\"value\"  />\r\n  <n3-icon\r\n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\"\r\n    v-if='validStatus==\"success\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <n3-icon\r\n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\"\r\n    v-if='validStatus==\"warning\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <n3-icon\r\n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\"\r\n    v-if='validStatus==\"error\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <validate\r\n    :name=\"name\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\"\r\n    :value=\"value\"\r\n    :results.sync=\"validateResults\">\r\n  </validate>\r\n\r\n</div>";
 
 /***/ },
 /* 653 */
@@ -36790,10 +36796,10 @@
 	
 	        if (val) {
 	          if (this.placement === 'top' || this.placement === 'bottom') {
-	            this.$els.dom.style.marginLeft = -this.$els.dom.offsetWidth / 2 + 'px';
+	            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px';
 	          } else if (this.placement === 'center') {
-	            this.$els.dom.style.marginLeft = -this.$els.dom.offsetWidth / 2 + 'px';
-	            this.$els.dom.style.marginTop = -this.$els.dom.offsetHeight / 2 + 'px';
+	            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px';
+	            this.$els.dom.style.marginTop = -1 * this.$els.dom.offsetHeight / 2 + 'px';
 	          }
 	        }
 	
@@ -36859,8 +36865,8 @@
 	
 	// </template>
 	
-	// <script>
 	
+	// <script>
 	exports.default = {
 	  props: {
 	    type: {
@@ -38539,7 +38545,7 @@
 	              return false;
 	            };
 	          }
-	          var e = event ? event : window.event;
+	          var e = event || window.event;
 	          var mousedownPositionPercent;
 	
 	          if (self.orientation === 'horizontal') {
@@ -38574,7 +38580,7 @@
 	        });
 	
 	        this._mousemoveEvent = _EventListener2.default.listen(document, 'mousemove', function (event) {
-	          var e = event ? event : window.event;
+	          var e = event || window.event;
 	          if (self.flag) {
 	            var mousedownPositionPercent;
 	            if (self.orientation === 'horizontal') {
@@ -38881,27 +38887,27 @@
 	    var triger = this.$els.trigger.children[0];
 	    if (this.trigger === 'hover') {
 	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
-	        return _this2.show = true;
+	        _this2.show = true;
 	      });
 	      this._mouseleaveEvent = _EventListener2.default.listen(triger, 'mouseleave', function () {
-	        return _this2.show = false;
+	        _this2.show = false;
 	      });
 	    } else if (this.trigger === 'focus') {
 	      var input = this.$els.trigger.querySelector('input');
 	      if (input) {
 	        this._focusEvent = _EventListener2.default.listen(input, 'focus', function () {
-	          return _this2.show = true;
+	          _this2.show = true;
 	        });
 	        this._blurEvent = _EventListener2.default.listen(input, 'blur', function () {
-	          return _this2.show = false;
+	          _this2.show = false;
 	        });
 	      }
 	    } else if (this.trigger === 'mouse') {
 	      this._mousedownEvent = _EventListener2.default.listen(triger, 'mousedown', function () {
-	        return _this2.show = true;
+	        _this2.show = true;
 	      });
 	      this._mouseupEvent = _EventListener2.default.listen(window, 'mouseup', function () {
-	        return _this2.show = false;
+	        _this2.show = false;
 	      });
 	    } else {
 	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggle);
@@ -38935,7 +38941,6 @@
 	    }
 	  }
 	};
-	
 	exports.default = PopoverMixin;
 
 /***/ },
@@ -39189,7 +39194,7 @@
 	    },
 	    fix: function fix(num, length) {
 	      num = parseInt(num);
-	      num = num == NaN ? 0 : num;
+	      num = isNaN(num) ? 0 : num;
 	      return ('' + num).length < length ? (new Array(length + 1).join('0') + num).slice(-length) : '' + num;
 	    },
 	    inputClick: function inputClick() {
@@ -39780,10 +39785,10 @@
 	      });
 	    } else if (this.trigger === 'hover') {
 	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
-	        return _this.show = true;
+	        _this.show = true;
 	      });
 	      this._closeEvent = _EventListener2.default.listen(this.$el, 'mouseleave', function () {
-	        return _this.show = false;
+	        _this.show = false;
 	      });
 	    }
 	  },
@@ -40652,26 +40657,27 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-		value: true
+	  value: true
 	});
 	// <template>
 	
-	// 	<div class="{{prefixCls}}-progress">
+	//   <div class="{{prefixCls}}-progress">
 	
-	// 		<slot></slot>
+	//     <slot></slot>
 	
-	// 	</div>
+	//   </div>
 	
 	// </template>
 	
+	
 	// <script>
 	exports.default = {
-		props: {
-			prefixCls: {
-				type: String,
-				default: 'n3'
-			}
-		}
+	  props: {
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  }
 	};
 	// </script>
 
@@ -40679,7 +40685,7 @@
 /* 706 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-progress\">\r\n\t\t<slot></slot>\r\n\t</div>";
+	module.exports = "<div class=\"{{prefixCls}}-progress\">\r\n    <slot></slot>\r\n  </div>";
 
 /***/ },
 /* 707 */
@@ -41492,7 +41498,7 @@
 	            this.showNotify = true;
 	            this.remove(value, this.limit);
 	            timeout = setTimeout(function () {
-	              return self.showNotify = false;
+	              self.showNotify = false;
 	            }, 1000);
 	          } else {
 	            this.value = ret;
@@ -41984,8 +41990,8 @@
 	
 	// </template>
 	
-	// <script>
 	
+	// <script>
 	exports.default = {
 	  props: {
 	    prefixCls: {
@@ -42806,7 +42812,6 @@
 	  computed: {
 	    classObj: function classObj() {
 	      var prefixCls = this.prefixCls;
-	      var value = this.value;
 	
 	      var klass = {};
 	
@@ -42877,7 +42882,7 @@
 	        this.position--;
 	        this.focus();
 	      }
-	      this.empty = this.query === '' ? true : false;
+	      this.empty = this.query === '';
 	    },
 	    left: function left() {
 	      if (this.position > 0 && this.query === '') {
@@ -43146,7 +43151,7 @@
 	  },
 	  watch: {
 	    items: function items(val) {
-	      this.show = val && val.length ? true : false;
+	      this.show = val && !!val.length;
 	    },
 	    query: function query(val) {
 	      if (val.value === '') {
@@ -43389,7 +43394,8 @@
 	
 	// </template>
 	
-	// <script>  
+	
+	// <script>
 	exports.default = {
 	  props: {
 	    total: {
@@ -43452,8 +43458,8 @@
 	      this.checkHave();
 	    },
 	    checkHave: function checkHave() {
-	      this.havePrev = this.current > 1 ? true : false;
-	      this.haveNext = this.current < this.totalpage ? true : false;
+	      this.havePrev = this.current > 1;
+	      this.haveNext = this.current < this.totalpage;
 	    },
 	    prev: function prev() {
 	      this.go(1 * this.current - 1);
@@ -43962,12 +43968,12 @@
 	    },
 	    sort: function sort(col, s, t) {
 	      var dataIndex = col.dataIndex;
-	      var type = t ? t : 'DESC';
+	      var type = t || 'DESC';
 	
 	      if (!s) return;
 	
 	      if (dataIndex === this.sortInfo.index) {
-	        type = t ? t : this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC';
+	        type = t || (this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC');
 	      }
 	
 	      this.sortInfo = {
@@ -45521,7 +45527,9 @@
 	        return false;
 	      }
 	      for (var i in this.$children) {
-	        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) return true;
+	        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) {
+	          return true;
+	        }
 	      }
 	      return false;
 	    },

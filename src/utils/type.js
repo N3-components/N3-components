@@ -22,89 +22,89 @@
 // NOTE: These type checking functions intentionally don't use `instanceof`
 // because it is fragile and can be easily faked with `Object.create()`.
 
-function isArray(arg) {
+function isArray (arg) {
   if (Array.isArray) {
-    return Array.isArray(arg);
+    return Array.isArray(arg)
   }
-  return objectToString(arg) === '[object Array]';
+  return objectToString(arg) === '[object Array]'
 }
-exports.isArray = isArray;
+exports.isArray = isArray
 
-function isBoolean(arg) {
-  return typeof arg === 'boolean';
+function isBoolean (arg) {
+  return typeof arg === 'boolean'
 }
-exports.isBoolean = isBoolean;
+exports.isBoolean = isBoolean
 
-function isNull(arg) {
-  return arg === null;
+function isNull (arg) {
+  return arg === null
 }
-exports.isNull = isNull;
+exports.isNull = isNull
 
-function isNullOrUndefined(arg) {
-  return arg == null;
+function isNullOrUndefined (arg) {
+  return arg == null
 }
-exports.isNullOrUndefined = isNullOrUndefined;
+exports.isNullOrUndefined = isNullOrUndefined
 
-function isNumber(arg) {
-  return typeof arg === 'number';
+function isNumber (arg) {
+  return typeof arg === 'number'
 }
-exports.isNumber = isNumber;
+exports.isNumber = isNumber
 
-function isString(arg) {
-  return typeof arg === 'string';
+function isString (arg) {
+  return typeof arg === 'string'
 }
-exports.isString = isString;
+exports.isString = isString
 
-function isSymbol(arg) {
-  return typeof arg === 'symbol';
+function isSymbol (arg) {
+  return typeof arg === 'symbol'
 }
-exports.isSymbol = isSymbol;
+exports.isSymbol = isSymbol
 
-function isUndefined(arg) {
-  return arg === void 0;
+function isUndefined (arg) {
+  return arg === void 0
 }
-exports.isUndefined = isUndefined;
+exports.isUndefined = isUndefined
 
-function isRegExp(re) {
-  return objectToString(re) === '[object RegExp]';
+function isRegExp (re) {
+  return objectToString(re) === '[object RegExp]'
 }
-exports.isRegExp = isRegExp;
+exports.isRegExp = isRegExp
 
-function isObject(arg) {
-  return typeof arg === 'object' && arg !== null;
+function isObject (arg) {
+  return typeof arg === 'object' && arg !== null
 }
-exports.isObject = isObject;
+exports.isObject = isObject
 
-function isDate(d) {
-  return objectToString(d) === '[object Date]';
+function isDate (d) {
+  return objectToString(d) === '[object Date]'
 }
-exports.isDate = isDate;
+exports.isDate = isDate
 
-function isError(e) {
-  return (objectToString(e) === '[object Error]' || e instanceof Error);
+function isError (e) {
+  return (objectToString(e) === '[object Error]' || e instanceof Error)
 }
-exports.isError = isError;
+exports.isError = isError
 
-function isFunction(arg) {
-  return typeof arg === 'function';
+function isFunction (arg) {
+  return typeof arg === 'function'
 }
-exports.isFunction = isFunction;
+exports.isFunction = isFunction
 
-function isPrimitive(arg) {
+function isPrimitive (arg) {
   return arg === null ||
          typeof arg === 'boolean' ||
          typeof arg === 'number' ||
          typeof arg === 'string' ||
          typeof arg === 'symbol' ||  // ES6 symbol
-         typeof arg === 'undefined';
+         typeof arg === 'undefined'
 }
-exports.isPrimitive = isPrimitive;
+exports.isPrimitive = isPrimitive
 
-function objectToString(o) {
-  return Object.prototype.toString.call(o);
+function objectToString (o) {
+  return Object.prototype.toString.call(o)
 }
 
-function isPromise(promise) {
-  return isObject(promise) && isFunction(promise.then) && isFunction(promise.catch); 
+function isPromise (promise) {
+  return isObject(promise) && isFunction(promise.then) && isFunction(promise.catch)
 }
-exports.isPromise = isPromise;
+exports.isPromise = isPromise

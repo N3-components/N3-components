@@ -190,7 +190,7 @@ export default {
               return false
             }
           }
-          var e = event ? event : window.event
+          var e = event || window.event
           var mousedownPositionPercent
 
           if (self.orientation === 'horizontal') {
@@ -225,7 +225,7 @@ export default {
         })
 
         this._mousemoveEvent = EventListener.listen(document, 'mousemove', (event) => {
-          var e = event ? event : window.event
+          var e = event || window.event
           if (self.flag) {
             var mousedownPositionPercent
             if (self.orientation === 'horizontal') {
@@ -241,7 +241,7 @@ export default {
             if (self.tempValue[0] < value && self.tempValue[1] < value) {
               self.tempFlag = 2
             }
-            self.tempValue[(self.tempFlag-1)] = value
+            self.tempValue[(self.tempFlag - 1)] = value
             self.tempValue[(self.tempFlag === 1 ? 1 : 0)] = self.btnValue
             self.eValue = value
           }

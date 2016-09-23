@@ -3,8 +3,8 @@
 		<slot></slot>
 	</span>
 </template>
-<script>
 
+<script>
 export default{
   props: {
     type: {

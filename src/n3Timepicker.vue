@@ -125,7 +125,7 @@ export default {
           ret += this.fix(this.time.second, 2) + ':'
         }
 
-        ret = ret.substr(0, ret.length-1)
+        ret = ret.substr(0, ret.length - 1)
 
         this.value = ret
       }

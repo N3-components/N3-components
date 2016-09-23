@@ -17,7 +17,8 @@
         </div>
     </nav>
 </template>
-<script>  
+
+<script>
 import type from './utils/type'
 import n3Input from './n3Input'
 import n3Button from './n3Button'
@@ -83,8 +84,8 @@ export default {
       this.checkHave()
     },
     checkHave () {
-      this.havePrev = this.current > 1 ? true : false
-      this.haveNext = this.current < this.totalpage ? true : false
+      this.havePrev = this.current > 1
+      this.haveNext = this.current < this.totalpage
     },
     prev () {
       this.go(1 * this.current - 1)

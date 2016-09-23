@@ -242,8 +242,9 @@ export default {
         return false
       }
       for (let i in this.$children) {
-        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected())
+        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) {
           return true
+        }
       }
       return false
     },

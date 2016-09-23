@@ -3,8 +3,8 @@
     <slot></slot>  
   </div>
 </template>
-<script>
 
+<script>
 export default{
   props: {
     prefixCls: {

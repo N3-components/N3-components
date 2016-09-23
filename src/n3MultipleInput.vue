@@ -195,7 +195,7 @@ export default {
   },
   computed: {
     classObj () {
-      let {prefixCls, value} = this
+      let {prefixCls} = this
       let klass = {}
 
       klass[prefixCls + '-form-control'] = true
@@ -215,7 +215,7 @@ export default {
       self.focused = false
       setTimeout(() => {
         self.focused = true
-      },100)
+      }, 100)
     },
     setIndex (index) {
       if (this.query) {
@@ -256,12 +256,12 @@ export default {
     del () {
       if (this.empty && this.position > 0) {
         let value = this.value.slice(0)
-        value.splice(this.position-1, 1)
+        value.splice(this.position - 1, 1)
         this.value = value
         this.position--
         this.focus()
       }
-      this.empty = this.query === '' ? true : false
+      this.empty = this.query === ''
     },
     left () {
       if (this.position > 0 && this.query === '') {

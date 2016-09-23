@@ -203,7 +203,9 @@ export default {
           if (ret.length > this.limit) {
             this.showNotify = true
             this.remove(value, this.limit)
-            timeout = setTimeout(() => self.showNotify = false, 1000)
+            timeout = setTimeout(() => {
+              self.showNotify = false
+            }, 1000)
           } else {
             this.value = ret
           }

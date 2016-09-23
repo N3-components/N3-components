@@ -410,12 +410,12 @@ export default {
     },
     sort (col, s, t) {
       let dataIndex = col.dataIndex
-      let type = t ? t : 'DESC'
+      let type = t || 'DESC'
 
       if (!s) return
 
       if (dataIndex === this.sortInfo.index) {
-        type = t ? t : this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC'
+        type = t || (this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC')
       }
 
       this.sortInfo = {
@@ -450,7 +450,7 @@ export default {
         this.filterArr[i].value = []
       }
       this.pagination.current = 1
-      if (this.filter && typeof this.onChange === 'function'){
+      if (this.filter && typeof this.onChange === 'function') {
         this.tableChange()
       } else {
         this.render()
@@ -458,7 +458,7 @@ export default {
     },
     goFilter () {
       this.pagination.current = 1
-      if (this.filter && typeof this.onChange === 'function'){
+      if (this.filter && typeof this.onChange === 'function') {
         this.tableChange()
       } else {
         this.render()
@@ -494,7 +494,7 @@ export default {
         }
       }
 
-      for (let k = 0; k < this.filterArr.length; k++){
+      for (let k = 0; k < this.filterArr.length; k++) {
         this.filterMap[this.filterArr[k]['dataIndex']] = {filter: this.filterArr[k], values: {}}
       }
     },
@@ -622,7 +622,7 @@ export default {
         for (let j in item) {
           let filter = this.getFilter(j)
           if (filter && filter['value'].length && !this.inArray(item[j], filter['value'])) {
-						pass = false
+            pass = false
           }
         }
         if (pass) {
@@ -652,7 +652,7 @@ export default {
 
       if (this.page && typeof this.onChange !== 'function') {
         this.pagination.total = ret.length
-        ret = ret.slice((this.pagination.current-1) * this.pagination.pagesize, (this.pagination.current-1) * this.pagination.pagesize + this.pagination.pagesize)
+        ret = ret.slice((this.pagination.current - 1) * this.pagination.pagesize, (this.pagination.current - 1) * this.pagination.pagesize + this.pagination.pagesize)
       }
 
       this.list = ret
