@@ -6,10 +6,10 @@
                 <n3-form-item
                     need
                     label="姓名"
-                    :label-col="3">   
+                    :label-col="3">
                 <n3-input
                     name="name"
-                    :value.sync="model.name" 
+                    :value.sync="model.name"
                     :rules="[{type:'required'}]"
                     :custom-validate="nameValidate">
                 </n3-input>
@@ -18,8 +18,8 @@
                 <n3-form-item
                     need
                     label="年龄"
-                    :label-col="3">   
-                <n3-input-number 
+                    :label-col="3">
+                <n3-input-number
                     name="age"
                     :value.sync="model.age"
                     :rules="[{type:'number'},{type:'required'}]">
@@ -29,29 +29,29 @@
                 <n3-form-item
                     need
                     label="地址"
-                    :label-col="3">   
+                    :label-col="3">
                 <n3-cascader
                     name="address"
                     :options="options"
-                    :value.sync="model.address" 
+                    :value.sync="model.address"
                     :rules="[{type:'required'}]">
                 </n3-cascader>
                 </n3-form-item>
                 <n3-form-item
                     need
                     label="生日"
-                    :label-col="3">   
+                    :label-col="3">
                 <n3-datepicker
                     name="birthday"
-                    :value.sync="model.birthday" 
+                    :value.sync="model.birthday"
                     :rules="[{type:'required'}]">
                 </n3-datepicker>
                 </n3-form-item>
                 <n3-form-item
                     need
                     label="学校"
-                    :label-col="3">   
-                <n3-typeahead 
+                    :label-col="3">
+                <n3-typeahead
                     name="学校"
                     :query.sync = "model.school"
                     :data="schoolData"
@@ -61,7 +61,7 @@
                 <n3-form-item
                     need
                     label="爱好"
-                    :label-col="3">   
+                    :label-col="3">
                 <n3-checkbox-group
                     name="hobby"
                     :value.sync = "model.hobby"
@@ -75,7 +75,7 @@
                 <n3-form-item
                     need
                     label="性别"
-                    :label-col="3">   
+                    :label-col="3">
                 <n3-radio-group
                     name="sex"
                     :value.sync = "model.sex"
@@ -88,7 +88,7 @@
                 <n3-form-item
                     need
                     label="专业"
-                    :label-col="3">   
+                    :label-col="3">
                 <n3-select
                     name="sex"
                     :options='profession'
@@ -100,7 +100,7 @@
                 <n3-form-item
                     need
                     label="级别"
-                    :label-col="3">   
+                    :label-col="3">
                   <n3-slider
                       name="level"
                       :value.sync = "model.level"
@@ -111,7 +111,7 @@
                 <n3-form-item
                     need
                     label="开启状态"
-                    :label-col="3">   
+                    :label-col="3">
                   <n3-switch
                       name="state"
                       :value.sync = "model.state"
@@ -121,7 +121,7 @@
                 <n3-form-item
                     need
                     label="喜欢的明星"
-                    :label-col="3">   
+                    :label-col="3">
                   <n3-multiple-input
                       name="star"
                       :value.sync = "model.star"
@@ -131,7 +131,7 @@
                 <n3-form-item
                     need
                     label="想说的话"
-                    :label-col="3">   
+                    :label-col="3">
                   <n3-textarea
                       name="suggestion"
                       :value.sync = "model.suggestion"
@@ -149,10 +149,10 @@
     <n3-form-item
         need
         label="姓名"
-        :label-col="3">   
+        :label-col="3">
     <n3-input
         name="name"
-        :value.sync="model.name" 
+        :value.sync="model.name"
         :rules="[{type:'required'}]"
         :custom-validate="nameValidate">
     </n3-input>
@@ -161,39 +161,39 @@
     <n3-form-item
         need
         label="年龄"
-        :label-col="3">   
+        :label-col="3">
     <n3-input
         name="age"
-        :value.sync="model.age" 
+        :value.sync="model.age"
         :rules="[{type:'number'},{type:'required'}]">
     </n3-input>
     </n3-form-item>
     <n3-form-item
         need
         label="地址"
-        :label-col="3">   
+        :label-col="3">
     <n3-cascader
         name="address"
         :options="options"
-        :value.sync="model.address" 
+        :value.sync="model.address"
         :rules="[{type:'required'}]">
     </n3-cascader>
     </n3-form-item>
     <n3-form-item
         need
         label="生日"
-        :label-col="3">   
+        :label-col="3">
     <n3-datepicker
         name="birthday"
-        :value.sync="model.birthday" 
+        :value.sync="model.birthday"
         :rules="[{type:'required'}]">
     </n3-datepicker>
     </n3-form-item>
     <n3-form-item
         need
         label="学校"
-        :label-col="3">   
-    <n3-typeahead 
+        :label-col="3">
+    <n3-typeahead
         name="学校"
         :query.sync = "model.school"
         :data="schoolData"
@@ -203,7 +203,7 @@
     <n3-form-item
         need
         label="爱好"
-        :label-col="3">   
+        :label-col="3">
     <n3-checkbox-group
         name="hobby"
         :value.sync = "model.hobby"
@@ -217,7 +217,7 @@
     <n3-form-item
         need
         label="性别"
-        :label-col="3">   
+        :label-col="3">
     <n3-radio-group
         name="sex"
         :value.sync = "model.sex"
@@ -230,7 +230,7 @@
     <n3-form-item
         need
         label="专业"
-        :label-col="3">   
+        :label-col="3">
     <n3-select
         name="sex"
         :options='profession'
@@ -242,7 +242,7 @@
     <n3-form-item
         need
         label="级别"
-        :label-col="3">   
+        :label-col="3">
       <n3-slider
           name="level"
           :value.sync = "model.level"
@@ -253,7 +253,7 @@
     <n3-form-item
         need
         label="开启状态"
-        :label-col="3">   
+        :label-col="3">
       <n3-switch
           name="state"
           :value.sync = "model.state"
@@ -263,7 +263,7 @@
     <n3-form-item
         need
         label="喜欢的明星"
-        :label-col="3">   
+        :label-col="3">
       <n3-multiple-input
           name="star"
           :value.sync = "model.star"
@@ -273,7 +273,7 @@
     <n3-form-item
         need
         label="想说的话"
-        :label-col="3">   
+        :label-col="3">
       <n3-textarea
           name="suggestion"
           :value.sync = "model.suggestion"
@@ -515,7 +515,10 @@ new Vue({
                 <td>rules</td>
                 <td><code>Array</code></td>
                 <td>[]</td>
-                <td>规则数组 ,如[{type:'required'},{type:'maxLength=6'},{type:'minLength=3'},{type:'phone'},{type:'number'},{type:'telephone'},{type:'email'}]</td>
+                <td>规则数组 ,如
+									<code>
+									[{type: 'required' }, {type: 'maxlength=6' }, {type: 'minlength=3' }, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code>
+								</td>
               </tr>
               <tr>
                 <td>hasFeedback</td>
@@ -527,7 +530,7 @@ new Vue({
           </table>
         </div>
     </div>
-</template>   
+</template>
 <script>
 export default {
   data () {
