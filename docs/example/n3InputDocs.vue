@@ -5,7 +5,6 @@
       <n3-input :value.sync="value" :focused.sync="focused" ></n3-input>
       <n3-button @click="focused=true">聚焦</n3-button>
     </div>
-
     <pre><code class="language-markup"><script type="language-mark-up">
 <n3-input :value.sync="value" :focused.sync="focused"></n3-input>
 <n3-button @click="focused=true">聚焦</n3-button>
