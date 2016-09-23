@@ -62,10 +62,10 @@ export default {
       type: String,
       default: 'n3'
     },
-		type: {
-			type: String,
-			default: 'text'
-		},
+    type: {
+      type: String,
+      default: 'text'
+    }
   },
   components: {
     n3Icon,

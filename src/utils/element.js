@@ -13,7 +13,7 @@ var isIE9 = UA && UA.indexOf('msie 9.0') > 0
  * @return {String}
  */
 
-function getClass(el) {
+function getClass (el) {
   var classname = el.className
   if (typeof classname === 'object') {
     classname = classname.baseVal || ''
@@ -31,7 +31,7 @@ function getClass(el) {
  * @param {String} cls
  */
 
-function setClass(el, cls) {
+function setClass (el, cls) {
   /* istanbul ignore if */
   if (isIE9 && !/svg$/.test(el.namespaceURI)) {
     el.className = cls
@@ -47,11 +47,11 @@ function setClass(el, cls) {
  * @param {String} cls
  */
 
-function addClass(el, cls) {
+function addClass (el, cls) {
   if (el.classList) {
     el.classList.add(cls)
   } else {
-    var cur = ' ' + getClass(el) + ' ';
+    var cur = ' ' + getClass(el) + ' '
     if (cur.indexOf(' ' + cls + ' ') < 0) {
       setClass(el, (cur + cls).trim())
     }
@@ -65,7 +65,7 @@ function addClass(el, cls) {
  * @param {String} cls
  */
 
-function removeClass(el, cls) {
+function removeClass (el, cls) {
   if (el.classList) {
     el.classList.remove(cls)
   } else {

@@ -49,8 +49,12 @@ export default {
         if (!this.clickClose && !el.contains(e.target)) this.show = false
       })
     } else if (this.trigger === 'hover') {
-      this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => this.show = true)
-      this._closeEvent = EventListener.listen(this.$el, 'mouseleave', () => this.show = false)
+      this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
+        this.show = true
+      })
+      this._closeEvent = EventListener.listen(this.$el, 'mouseleave', () => {
+        this.show = false
+      })
     }
   },
   beforeDestroy () {

@@ -1,5 +1,4 @@
 import Vue from 'vue'
-
 const n3Toast = Vue.extend(require('./n3Toast'))
 
 export default function (obj) {

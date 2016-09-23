@@ -50,7 +50,7 @@ export default{
       klass[prefixCls + '-btn'] = true
       klass[prefixCls + '-btn-block'] = block
       klass[prefixCls + '-btn-active'] = active
-      klass[prefixCls + '-btn-disabled'] =disabled
+      klass[prefixCls + '-btn-disabled'] = disabled
       size ? klass[prefixCls + '-btn-' + size] = true : ''
       type ? klass[prefixCls + '-btn-' + type] = true : ''
 

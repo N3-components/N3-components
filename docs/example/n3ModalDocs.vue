@@ -3,8 +3,7 @@
     <h1 class="page-header"><a href="#弹出框" class="anchor">弹出框</a><span class="author"> </span></h1>
     <div class="bs-example">
       <n3-button @click="showModal = true">Show modal</n3-button>
-      <n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px" 
-      @show="show" @confirm="confirm">
+      <n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px">
         <div slot="body">
           What's in a name? That which we call a rose 
           By any other name would smell as sweet. 
@@ -38,8 +37,7 @@
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 <n3-button @click="showModal = true">Show modal</n3-button>
-<n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px" 
-@show="show" @confirm="confirm">
+<n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px" >
   <div slot="body">
     What's in a name? That which we call a rose 
     By any other name would smell as sweet. 

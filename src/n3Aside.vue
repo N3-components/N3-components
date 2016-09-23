@@ -57,7 +57,7 @@ export default {
     classObj () {
       let {prefixCls, placement} = this
       let klass = {}
-      
+
       klass[prefixCls + '-aside'] = true
       klass[prefixCls + '-aside-left'] = placement === 'left'
       klass[prefixCls + '-aside-right'] = placement === 'right'

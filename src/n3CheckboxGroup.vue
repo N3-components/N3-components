@@ -35,7 +35,7 @@
   </div>
 </template>
 
-<script> 
+<script>
 import n3Checkbox from './n3Checkbox'
 import n3CheckboxBtn from './n3CheckboxBtn'
 import valMixin from './valMixin'

@@ -83,16 +83,18 @@ export default {
     show (val) {
       if (val) {
         if (this.placement === 'top' || this.placement === 'bottom') {
-          this.$el.style.marginLeft = - this.$el.offsetWidth / 2 + 'px'
+          this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
         } else if (this.placement === 'center') {
-          this.$el.style.marginLeft = - this.$el.offsetWidth / 2 + 'px'
-          this.$el.style.marginTop = - this.$el.offsetHeight / 2 + 'px'
+          this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
+          this.$el.style.marginTop = -1 * (this.$el.offsetHeight / 2) + 'px'
         }
       }
 
       if (this._timeout) clearTimeout(this._timeout)
       if (val && !!this.duration) {
-        this._timeout = setTimeout(() => this.show = false, this.duration)
+        this._timeout = setTimeout(() => {
+          this.show = false
+        }, this.duration)
       }
     }
   },

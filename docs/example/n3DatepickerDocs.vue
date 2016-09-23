@@ -8,7 +8,7 @@
         </pre>
       </p>
       <n3-datepicker v-ref:dp :value.sync="value" :disabled-days-of-Week="disabled"
-      :format="format.toString()" @change="change"></n3-datepicker>
+      :format="format.toString()" ></n3-datepicker>
       <h4>一周内无法选择的日期</h4>
 
       <n3-select multiple :value.sync="disabled">

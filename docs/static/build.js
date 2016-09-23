@@ -11116,17 +11116,17 @@
 	
 	      if (val) {
 	        if (this.placement === 'top' || this.placement === 'bottom') {
-	          this.$el.style.marginLeft = -this.$el.offsetWidth / 2 + 'px';
+	          this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px';
 	        } else if (this.placement === 'center') {
-	          this.$el.style.marginLeft = -this.$el.offsetWidth / 2 + 'px';
-	          this.$el.style.marginTop = -this.$el.offsetHeight / 2 + 'px';
+	          this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px';
+	          this.$el.style.marginTop = -1 * (this.$el.offsetHeight / 2) + 'px';
 	        }
 	      }
 	
 	      if (this._timeout) clearTimeout(this._timeout);
 	      if (val && !!this.duration) {
 	        this._timeout = setTimeout(function () {
-	          return _this.show = false;
+	          _this.show = false;
 	        }, this.duration);
 	      }
 	    }
@@ -12742,7 +12742,13 @@
 	//         </pre>
 	//       </p>
 	//       <n3-datepicker v-ref:dp :value.sync="value" :disabled-days-of-Week="disabled"
+<<<<<<< HEAD
 	//       :format="format.toString()" @change="change"></n3-datepicker>
+=======
+	
+	//       :format="format.toString()" ></n3-datepicker>
+	
+>>>>>>> upstream/master
 	//       <h4>一周内无法选择的日期</h4>
 	
 	//       <n3-select multiple :value.sync="disabled">
@@ -12864,7 +12870,11 @@
 /* 523 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	module.exports = "<div class=\"bs-docs-section\" id=\"日期选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#日期选择器\" class=\"anchor\">日期选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\n          Selected date is: {{new Date(value).toString().slice(0, -23)}}\n        </pre>\n      </p>\n      <n3-datepicker v-ref:dp :value.sync=\"value\" :disabled-days-of-Week=\"disabled\"\n      :format=\"format.toString()\" @change=\"change\"></n3-datepicker>\n      <h4>一周内无法选择的日期</h4>\n\n      <n3-select multiple :value.sync=\"disabled\">\n        <n3-option value=\"0\">0</n3-option>\n        <n3-option value=\"1\">1</n3-option>\n        <n3-option value=\"2\">2</n3-option>\n        <n3-option value=\"3\">3</n3-option>\n        <n3-option value=\"4\">4</n3-option>\n        <n3-option value=\"5\">5</n3-option>\n        <n3-option value=\"6\">6</n3-option>\n      </n3-select>\n\n      <h4>Format</h4>\n      <n3-select :value.sync=\"format\" >\n        <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n        <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n        <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n        <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n        <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-datepicker\n  :value.sync=\"value\"\n  :disabled-days-of-Week=\"disabled\"\n  :format=\"format\">\n</n3-datepicker>\n\n<n3-select multiple :value.sync=\"disabled\" size=5>\n  <n3-option value=\"0\">0</n3-option>\n  <n3-option value=\"1\">1</n3-option>\n  <n3-option value=\"2\">2</n3-option>\n  <n3-option value=\"3\">3</n3-option>\n  <n3-option value=\"4\">4</n3-option>\n  <n3-option value=\"5\">5</n3-option>\n  <n3-option value=\"6\">6</n3-option>\n</n3-select>\n<n3-select  :value.sync=\"format\">\n  <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n  <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n  <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n  <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n  <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n</n3-select>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>日期值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td>200px</td>\n          <td>输入框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td><code>yyyy-MM-dd</code></td>\n          <td>日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.</td>\n        </tr>\n        <tr>\n          <td>disabled-days-of-week</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>一周内无法选择的日期</td>\n        </tr>\n         <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+=======
+	module.exports = "<div class=\"bs-docs-section\" id=\"日期选择器\"  >\r\n    <h1 class=\"page-header\"><a href=\"#日期选择器\" class=\"anchor\">日期选择器</a><span class=\"author\"> </span></h1>\r\n    <div class=\"bs-example\">\r\n      <p>\r\n        <pre>\r\n          Selected date is: {{new Date(value).toString().slice(0, -23)}}\r\n        </pre>\r\n      </p>\r\n      <n3-datepicker v-ref:dp :value.sync=\"value\" :disabled-days-of-Week=\"disabled\"\r\n      :format=\"format.toString()\" ></n3-datepicker>\r\n      <h4>一周内无法选择的日期</h4>\r\n\r\n      <n3-select multiple :value.sync=\"disabled\">\r\n        <n3-option value=\"0\">0</n3-option>\r\n        <n3-option value=\"1\">1</n3-option>\r\n        <n3-option value=\"2\">2</n3-option>\r\n        <n3-option value=\"3\">3</n3-option>\r\n        <n3-option value=\"4\">4</n3-option>\r\n        <n3-option value=\"5\">5</n3-option>\r\n        <n3-option value=\"6\">6</n3-option>\r\n      </n3-select>\r\n\r\n      <h4>Format</h4>\r\n      <n3-select :value.sync=\"format\" >\r\n        <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\r\n        <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\r\n        <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\r\n        <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\r\n        <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\r\n      </n3-select>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-datepicker\r\n  :value.sync=\"value\"\r\n  :disabled-days-of-Week=\"disabled\"\r\n  :format=\"format\">\r\n</n3-datepicker>\r\n\r\n<n3-select multiple :value.sync=\"disabled\" size=5>\r\n  <n3-option value=\"0\">0</n3-option>\r\n  <n3-option value=\"1\">1</n3-option>\r\n  <n3-option value=\"2\">2</n3-option>\r\n  <n3-option value=\"3\">3</n3-option>\r\n  <n3-option value=\"4\">4</n3-option>\r\n  <n3-option value=\"5\">5</n3-option>\r\n  <n3-option value=\"6\">6</n3-option>\r\n</n3-select>\r\n<n3-select  :value.sync=\"format\">\r\n  <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\r\n  <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\r\n  <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\r\n  <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\r\n  <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\r\n</n3-select>\r\n    </script></code></pre>\r\n    <h2>参数</h2>\r\n    <table class=\"table table-bordered\">\r\n      <thead>\r\n        <tr>\r\n          <th>参数名</th>\r\n          <th>类型</th>\r\n          <th>默认值</th>\r\n          <th>说明</th>\r\n        </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr>\r\n          <td>value</td>\r\n          <td><code>String</code></td>\r\n          <td></td>\r\n          <td>日期值,需要<code>.sync</code></td>\r\n        </tr>\r\n        <tr>\r\n          <td>width</td>\r\n          <td><code>String</code></td>\r\n          <td>200px</td>\r\n          <td>输入框宽度</td>\r\n        </tr>\r\n        <tr>\r\n          <td>format</td>\r\n          <td><code>String</code></td>\r\n          <td><code>yyyy-MM-dd</code></td>\r\n          <td>日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.</td>\r\n        </tr>\r\n        <tr>\r\n          <td>disabled-days-of-week</td>\r\n          <td><code>Array</code></td>\r\n          <td></td>\r\n          <td>一周内无法选择的日期</td>\r\n        </tr>\r\n         <tr>\r\n          <td>on-change</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>值变化触发</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\r\n  </div>";
+>>>>>>> upstream/master
 
 /***/ },
 /* 524 */
@@ -13266,8 +13276,14 @@
 	//     <h1 class="page-header"><a href="#弹出框" class="anchor">弹出框</a><span class="author"> </span></h1>
 	//     <div class="bs-example">
 	//       <n3-button @click="showModal = true">Show modal</n3-button>
+<<<<<<< HEAD
 	//       <n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px" 
 	//       @show="show" @confirm="confirm">
+=======
+	
+	//       <n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px">
+	
+>>>>>>> upstream/master
 	//         <div slot="body">
 	//           What's in a name? That which we call a rose 
 	//           By any other name would smell as sweet. 
@@ -13301,8 +13317,14 @@
 	//     </div>
 	//     <pre><code class="language-markup"><script type="language-mark-up">
 	// <n3-button @click="showModal = true">Show modal</n3-button>
+<<<<<<< HEAD
 	// <n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px" 
 	// @show="show" @confirm="confirm">
+=======
+	
+	// <n3-modal title="Modal title" :show.sync="showModal" effect="fade" width="400px" >
+	
+>>>>>>> upstream/master
 	//   <div slot="body">
 	//     What's in a name? That which we call a rose 
 	//     By any other name would smell as sweet. 
@@ -13432,7 +13454,11 @@
 /* 535 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	module.exports = "<div class=\"bs-docs-section\" id=\"弹出框\"  >\n    <h1 class=\"page-header\"><a href=\"#弹出框\" class=\"anchor\">弹出框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-button @click=\"showModal = true\">Show modal</n3-button>\n      <n3-modal title=\"Modal title\" :show.sync=\"showModal\" effect=\"fade\" width=\"400px\" \n      @show=\"show\" @confirm=\"confirm\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button class=\"btn btn-success\" @click=\"bigModal = true\">Big modal</n3-button>\n      <n3-modal title=\"Big Modal\" :show.sync=\"bigModal\" effect=\"fade\" width=\"800px\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button class=\"btn btn-primary\" @click=\"zoomModal = true\">Zoom modal</n3-button>\n      <n3-modal title=\"Zoom Modal\" :show.sync=\"zoomModal\" effect=\"zoom\" width=\"400px\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n      <n3-button @click=\"showCustomModal = true\">Show custom modal</n3-button>\n      <n3-modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"400px\">\n        <div slot=\"header\">\n        </div>\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n        <div slot=\"footer\">\n        </div>\n      </n3-modal>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-button @click=\"showModal = true\">Show modal</n3-button>\n<n3-modal title=\"Modal title\" :show.sync=\"showModal\" effect=\"fade\" width=\"400px\" \n@show=\"show\" @confirm=\"confirm\">\n  <div slot=\"body\">\n    What's in a name? That which we call a rose \n    By any other name would smell as sweet. \n  </div>\n</n3-modal>\n<n3-button class=\"btn btn-success\" @click=\"bigModal = true\">Big modal</n3-button>\n<n3-modal title=\"Big Modal\" :show.sync=\"bigModal\" effect=\"fade\" width=\"800px\">\n  <div slot=\"body\">\n    What's in a name? That which we call a rose \n    By any other name would smell as sweet. \n  </div>\n</n3-modal>\n<n3-button class=\"btn btn-primary\" @click=\"zoomModal = true\">Zoom modal</n3-button>\n<n3-modal title=\"Zoom Modal\" :show.sync=\"zoomModal\" effect=\"zoom\" width=\"400px\">\n  <div slot=\"body\">\n    What's in a name? That which we call a rose \n    By any other name would smell as sweet. \n  </div>\n</n3-modal>\n<n3-button @click=\"showCustomModal = true\">Show custom modal</n3-button>\n<n3-modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"400px\">\n  <div slot=\"header\">\n  </div>\n  <div slot=\"body\">\n    What's in a name? That which we call a rose \n    By any other name would smell as sweet. \n  </div>\n  <div slot=\"footer\">\n  </div>\n</n3-modal>\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>title</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>弹出框标题</td>\n      </tr>\n       <tr>\n        <td>show</td>\n        <td><code>Boolean</code></td>\n        <td></td>\n        <td>是否显示,需要<code>.sync</code></td>\n      </tr>\n       <tr>\n        <td>effect</td>\n        <td><code>String</code></td>\n        <td>'fade'</td>\n        <td><code>fade</code><code>zoom</code></td>\n      </tr>\n      <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td><code>600px</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>backdrop</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>点击遮罩层是否关闭弹出框</td>\n      </tr>\n      <tr>\n        <td>on-show</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>弹出框出现时触发</td>\n      </tr>\n      <tr>\n        <td>on-hide</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>弹出框隐藏时触发</td>\n      </tr>\n      <tr>\n        <td>on-confirm</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>点击弹出框确认按钮时触发</td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>用法</h2>\n  <p>\n    如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer. 但是如果你需要自己定制弹出框内容，你可以实现\n    <code>&lt;div slot=\"header\"&gt;...&lt;/div&gt;</code> ,\n    <code>&lt;div slot=\"body\"&gt;...&lt;/div&gt;</code>和\n    <code>&lt;div slot=\"footer\"&gt;...&lt;/div&gt;</code>.\n  </p>\n  </div>";
+=======
+	module.exports = "<div class=\"bs-docs-section\" id=\"弹出框\"  >\r\n    <h1 class=\"page-header\"><a href=\"#弹出框\" class=\"anchor\">弹出框</a><span class=\"author\"> </span></h1>\r\n    <div class=\"bs-example\">\r\n      <n3-button @click=\"showModal = true\">Show modal</n3-button>\r\n      <n3-modal title=\"Modal title\" :show.sync=\"showModal\" effect=\"fade\" width=\"400px\">\r\n        <div slot=\"body\">\r\n          What's in a name? That which we call a rose \r\n          By any other name would smell as sweet. \r\n        </div>\r\n      </n3-modal>\r\n      <n3-button class=\"btn btn-success\" @click=\"bigModal = true\">Big modal</n3-button>\r\n      <n3-modal title=\"Big Modal\" :show.sync=\"bigModal\" effect=\"fade\" width=\"800px\">\r\n        <div slot=\"body\">\r\n          What's in a name? That which we call a rose \r\n          By any other name would smell as sweet. \r\n        </div>\r\n      </n3-modal>\r\n      <n3-button class=\"btn btn-primary\" @click=\"zoomModal = true\">Zoom modal</n3-button>\r\n      <n3-modal title=\"Zoom Modal\" :show.sync=\"zoomModal\" effect=\"zoom\" width=\"400px\">\r\n        <div slot=\"body\">\r\n          What's in a name? That which we call a rose \r\n          By any other name would smell as sweet. \r\n        </div>\r\n      </n3-modal>\r\n      <n3-button @click=\"showCustomModal = true\">Show custom modal</n3-button>\r\n      <n3-modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"400px\">\r\n        <div slot=\"header\">\r\n        </div>\r\n        <div slot=\"body\">\r\n          What's in a name? That which we call a rose \r\n          By any other name would smell as sweet. \r\n        </div>\r\n        <div slot=\"footer\">\r\n        </div>\r\n      </n3-modal>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-button @click=\"showModal = true\">Show modal</n3-button>\r\n<n3-modal title=\"Modal title\" :show.sync=\"showModal\" effect=\"fade\" width=\"400px\" >\r\n  <div slot=\"body\">\r\n    What's in a name? That which we call a rose \r\n    By any other name would smell as sweet. \r\n  </div>\r\n</n3-modal>\r\n<n3-button class=\"btn btn-success\" @click=\"bigModal = true\">Big modal</n3-button>\r\n<n3-modal title=\"Big Modal\" :show.sync=\"bigModal\" effect=\"fade\" width=\"800px\">\r\n  <div slot=\"body\">\r\n    What's in a name? That which we call a rose \r\n    By any other name would smell as sweet. \r\n  </div>\r\n</n3-modal>\r\n<n3-button class=\"btn btn-primary\" @click=\"zoomModal = true\">Zoom modal</n3-button>\r\n<n3-modal title=\"Zoom Modal\" :show.sync=\"zoomModal\" effect=\"zoom\" width=\"400px\">\r\n  <div slot=\"body\">\r\n    What's in a name? That which we call a rose \r\n    By any other name would smell as sweet. \r\n  </div>\r\n</n3-modal>\r\n<n3-button @click=\"showCustomModal = true\">Show custom modal</n3-button>\r\n<n3-modal :show.sync=\"showCustomModal\" effect=\"fade\" width=\"400px\">\r\n  <div slot=\"header\">\r\n  </div>\r\n  <div slot=\"body\">\r\n    What's in a name? That which we call a rose \r\n    By any other name would smell as sweet. \r\n  </div>\r\n  <div slot=\"footer\">\r\n  </div>\r\n</n3-modal>\r\n    </script></code></pre>\r\n  <h2>参数</h2>\r\n  <table class=\"table table-bordered\">\r\n    <thead>\r\n      <tr>\r\n        <th>参数名</th>\r\n        <th>类型</th>\r\n        <th>默认值</th>\r\n        <th>说明</th>\r\n      </tr>\r\n    </thead>\r\n    <tbody>\r\n      <tr>\r\n        <td>title</td>\r\n        <td><code>String</code></td>\r\n        <td></td>\r\n        <td>弹出框标题</td>\r\n      </tr>\r\n       <tr>\r\n        <td>show</td>\r\n        <td><code>Boolean</code></td>\r\n        <td></td>\r\n        <td>是否显示,需要<code>.sync</code></td>\r\n      </tr>\r\n       <tr>\r\n        <td>effect</td>\r\n        <td><code>String</code></td>\r\n        <td>'fade'</td>\r\n        <td><code>fade</code><code>zoom</code></td>\r\n      </tr>\r\n      <tr>\r\n        <td>width</td>\r\n        <td><code>String</code></td>\r\n        <td><code>600px</code></td>\r\n        <td></td>\r\n      </tr>\r\n      <tr>\r\n        <td>backdrop</td>\r\n        <td><code>Boolean</code></td>\r\n        <td><code>true</code></td>\r\n        <td>点击遮罩层是否关闭弹出框</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-show</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>弹出框出现时触发</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-hide</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>弹出框隐藏时触发</td>\r\n      </tr>\r\n      <tr>\r\n        <td>on-confirm</td>\r\n        <td><code>Function</code></td>\r\n        <td></td>\r\n        <td>点击弹出框确认按钮时触发</td>\r\n      </tr>\r\n    </tbody>\r\n  </table>\r\n  <h2>用法</h2>\r\n  <p>\r\n    如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer. 但是如果你需要自己定制弹出框内容，你可以实现\r\n    <code>&lt;div slot=\"header\"&gt;...&lt;/div&gt;</code> ,\r\n    <code>&lt;div slot=\"body\"&gt;...&lt;/div&gt;</code>和\r\n    <code>&lt;div slot=\"footer\"&gt;...&lt;/div&gt;</code>.\r\n  </p>\r\n  </div>";
+>>>>>>> upstream/master
 
 /***/ },
 /* 536 */
@@ -13471,7 +13497,13 @@
 	//   <div class="bs-docs-section" id="输入框"  >
 	//     <h1 class="page-header"><a href="#输入框" class="anchor">输入框</a><span class="author"> </span></h1>
 	//     <div class="bs-example">
+<<<<<<< HEAD
 	//       <n3-input :value.sync="value" :focused.sync="focused"></n3-input>
+=======
+	
+	//       <n3-input :value.sync="value" :focused.sync="focused" ></n3-input>
+	
+>>>>>>> upstream/master
 	//       <n3-button @click="focused=true">聚焦</n3-button>
 	//     </div>
 	
@@ -13497,6 +13529,22 @@
 	//           <td>输入的值  <code>.sync</code></td>
 	//         </tr>
 	//         <tr>
+<<<<<<< HEAD
+=======
+	
+	//           <td>type</td>
+	
+	//           <td><code>String</code></td>
+	
+	//           <td>text</td>
+	
+	//           <td>输入框类型</td>
+	
+	//         </tr>
+	
+	//         <tr>
+	
+>>>>>>> upstream/master
 	//           <td>focused</td>
 	//           <td><code>Boolean</code></td>
 	//           <td></td>
@@ -13542,7 +13590,11 @@
 /* 538 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	module.exports = "<div class=\"bs-docs-section\" id=\"输入框\"  >\n    <h1 class=\"page-header\"><a href=\"#输入框\" class=\"anchor\">输入框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-input :value.sync=\"value\" :focused.sync=\"focused\"></n3-input>\n      <n3-button @click=\"focused=true\">聚焦</n3-button>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-input :value.sync=\"value\" :focused.sync=\"focused\"></n3-input>\n<n3-button @click=\"focused=true\">聚焦</n3-button>\n    </script></code></pre>\n    <br>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>输入的值  <code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>focused</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>聚焦状态  <code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>on-blur</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>失去焦点触发函数</td>\n        </tr>\n        <tr>\n          <td>on-focus</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>聚焦触发函数</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+=======
+	module.exports = "<div class=\"bs-docs-section\" id=\"输入框\"  >\r\n    <h1 class=\"page-header\"><a href=\"#输入框\" class=\"anchor\">输入框</a><span class=\"author\"> </span></h1>\r\n    <div class=\"bs-example\">\r\n      <n3-input :value.sync=\"value\" :focused.sync=\"focused\" ></n3-input>\r\n      <n3-button @click=\"focused=true\">聚焦</n3-button>\r\n    </div>\r\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\r\n<n3-input :value.sync=\"value\" :focused.sync=\"focused\"></n3-input>\r\n<n3-button @click=\"focused=true\">聚焦</n3-button>\r\n    </script></code></pre>\r\n    <br>\r\n    <table class=\"table table-bordered\">\r\n      <thead>\r\n        <tr>\r\n          <th>参数名</th>\r\n          <th>类型</th>\r\n          <th>默认值</th>\r\n          <th>说明</th>\r\n        </tr>\r\n      </thead>\r\n      <tbody>\r\n        <tr>\r\n          <td>value</td>\r\n          <td><code>String</code><code>Number</code></td>\r\n          <td></td>\r\n          <td>输入的值  <code>.sync</code></td>\r\n        </tr>\r\n        <tr>\r\n          <td>type</td>\r\n          <td><code>String</code></td>\r\n          <td>text</td>\r\n          <td>输入框类型</td>\r\n        </tr>\r\n        <tr>\r\n          <td>focused</td>\r\n          <td><code>Boolean</code></td>\r\n          <td></td>\r\n          <td>聚焦状态  <code>.sync</code></td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-blur</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>失去焦点触发函数</td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-focus</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>聚焦触发函数</td>\r\n        </tr>\r\n        <tr>\r\n          <td>on-change</td>\r\n          <td><code>Function</code></td>\r\n          <td></td>\r\n          <td>值变化触发函数</td>\r\n        </tr>\r\n      </tbody>\r\n    </table>\r\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\r\n  </div>";
+>>>>>>> upstream/master
 
 /***/ },
 /* 539 */
@@ -29309,7 +29361,7 @@
 	    function intervalManager(flag, func, time) {
 	      flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID);
 	    }
-	    if (!!this.interval) {
+	    if (this.interval) {
 	      intervalManager(true, this.nextClick, this.interval);
 	      el.addEventListener('mouseenter', function () {
 	        return intervalManager(false);
@@ -31052,30 +31104,76 @@
 	// </script>
 	// <template>
 	// <div :class="classObj" >
+<<<<<<< HEAD
 	//   <input
 	//     autoComplete="off"
 	//     class="{{prefixCls}}-form-control"
+=======
+	
+	//   <input
+	
+	//     autoComplete="off"
+	
+	//     class="{{prefixCls}}-form-control"
+	
+>>>>>>> upstream/master
 	//     :style="{'width':width}"
 	//     :readonly="readonly"
 	//     :disabled="disabled"
+<<<<<<< HEAD
 	//     :placeholder="placeholder"
 	// 		:type="type"
+=======
+	
+	//     :placeholder="placeholder"
+	
+	// 		:type="type"
+	
+>>>>>>> upstream/master
 	//     @blur="blur"
 	//     @focus="focus"
+<<<<<<< HEAD
 	//     v-focus-model="focused"
 	//     v-model="value"  />
 	//   <n3-icon
 	//     type="check" class="{{prefixCls}}-form-control-feedback"
+=======
+	
+	//     v-focus-model="focused"
+	
+	//     v-model="value"  />
+	
+	//   <n3-icon
+	
+	//     type="check" class="{{prefixCls}}-form-control-feedback"
+	
+>>>>>>> upstream/master
 	//     v-if='validStatus=="success" && hasFeedback'>
 	//   </n3-icon>
 	
+<<<<<<< HEAD
 	//   <n3-icon
 	//     type="warning" class="{{prefixCls}}-form-control-feedback"
+=======
+	
+	//   <n3-icon
+	
+	//     type="warning" class="{{prefixCls}}-form-control-feedback"
+	
+>>>>>>> upstream/master
 	//     v-if='validStatus=="warning" && hasFeedback'>
 	//   </n3-icon>
 	
+<<<<<<< HEAD
 	//   <n3-icon
 	//     type="times" class="{{prefixCls}}-form-control-feedback"
+=======
+	
+	//   <n3-icon
+	
+	//     type="times" class="{{prefixCls}}-form-control-feedback"
+	
+>>>>>>> upstream/master
 	//     v-if='validStatus=="error" && hasFeedback'>
 	//   </n3-icon>
 	
@@ -31083,7 +31181,13 @@
 	//     :name="name"
 	//     :valid-status.sync="validStatus"
 	//     :rules="rules"
+<<<<<<< HEAD
 	//     :custom-validate="customValidate"
+=======
+	
+	//     :custom-validate="customValidate"
+	
+>>>>>>> upstream/master
 	//     :value="value"
 	//     :results.sync="validateResults">
 	//   </validate>
@@ -31283,7 +31387,11 @@
 /* 652 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	module.exports = "<div :class=\"classObj\" >\n  <input\n    autoComplete=\"off\"\n    class=\"{{prefixCls}}-form-control\"\n    :style=\"{'width':width}\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :placeholder=\"placeholder\"\n\t\t:type=\"type\"\n    @blur=\"blur\"\n    @focus=\"focus\"\n    v-focus-model=\"focused\"\n    v-model=\"value\"  />\n  <n3-icon\n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"success\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon\n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"warning\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon\n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"error\" && hasFeedback'>\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    :valid-status.sync=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\"\n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n\n</div>";
+=======
+	module.exports = "<div :class=\"classObj\" >\r\n  <input\r\n    autoComplete=\"off\"\r\n    class=\"{{prefixCls}}-form-control\"\r\n    :style=\"{'width':width}\"\r\n    :readonly=\"readonly\"\r\n    :disabled=\"disabled\"\r\n    :placeholder=\"placeholder\"\r\n\t\t:type=\"type\"\r\n    @blur=\"blur\"\r\n    @focus=\"focus\"\r\n    v-focus-model=\"focused\"\r\n    v-model=\"value\"  />\r\n  <n3-icon\r\n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\"\r\n    v-if='validStatus==\"success\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <n3-icon\r\n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\"\r\n    v-if='validStatus==\"warning\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <n3-icon\r\n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\"\r\n    v-if='validStatus==\"error\" && hasFeedback'>\r\n  </n3-icon>\r\n\r\n  <validate\r\n    :name=\"name\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\"\r\n    :value=\"value\"\r\n    :results.sync=\"validateResults\">\r\n  </validate>\r\n\r\n</div>";
+>>>>>>> upstream/master
 
 /***/ },
 /* 653 */
@@ -31455,10 +31563,10 @@
 	
 	        if (val) {
 	          if (this.placement === 'top' || this.placement === 'bottom') {
-	            this.$els.dom.style.marginLeft = -this.$els.dom.offsetWidth / 2 + 'px';
+	            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px';
 	          } else if (this.placement === 'center') {
-	            this.$els.dom.style.marginLeft = -this.$els.dom.offsetWidth / 2 + 'px';
-	            this.$els.dom.style.marginTop = -this.$els.dom.offsetHeight / 2 + 'px';
+	            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px';
+	            this.$els.dom.style.marginTop = -1 * this.$els.dom.offsetHeight / 2 + 'px';
 	          }
 	        }
 	
@@ -31519,8 +31627,13 @@
 	// 		<slot></slot>
 	// 	</span>
 	// </template>
+<<<<<<< HEAD
 	// <script>
+=======
 	
+>>>>>>> upstream/master
+	
+	// <script>
 	exports.default = {
 	  props: {
 	    type: {
@@ -32966,7 +33079,7 @@
 	              return false;
 	            };
 	          }
-	          var e = event ? event : window.event;
+	          var e = event || window.event;
 	          var mousedownPositionPercent;
 	
 	          if (self.orientation === 'horizontal') {
@@ -33001,7 +33114,7 @@
 	        });
 	
 	        this._mousemoveEvent = _EventListener2.default.listen(document, 'mousemove', function (event) {
-	          var e = event ? event : window.event;
+	          var e = event || window.event;
 	          if (self.flag) {
 	            var mousedownPositionPercent;
 	            if (self.orientation === 'horizontal') {
@@ -33291,27 +33404,27 @@
 	    var triger = this.$els.trigger.children[0];
 	    if (this.trigger === 'hover') {
 	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
-	        return _this2.show = true;
+	        _this2.show = true;
 	      });
 	      this._mouseleaveEvent = _EventListener2.default.listen(triger, 'mouseleave', function () {
-	        return _this2.show = false;
+	        _this2.show = false;
 	      });
 	    } else if (this.trigger === 'focus') {
 	      var input = this.$els.trigger.querySelector('input');
 	      if (input) {
 	        this._focusEvent = _EventListener2.default.listen(input, 'focus', function () {
-	          return _this2.show = true;
+	          _this2.show = true;
 	        });
 	        this._blurEvent = _EventListener2.default.listen(input, 'blur', function () {
-	          return _this2.show = false;
+	          _this2.show = false;
 	        });
 	      }
 	    } else if (this.trigger === 'mouse') {
 	      this._mousedownEvent = _EventListener2.default.listen(triger, 'mousedown', function () {
-	        return _this2.show = true;
+	        _this2.show = true;
 	      });
 	      this._mouseupEvent = _EventListener2.default.listen(window, 'mouseup', function () {
-	        return _this2.show = false;
+	        _this2.show = false;
 	      });
 	    } else {
 	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggle);
@@ -33345,7 +33458,6 @@
 	    }
 	  }
 	};
-	
 	exports.default = PopoverMixin;
 
 /***/ },
@@ -33599,7 +33711,7 @@
 	    },
 	    fix: function fix(num, length) {
 	      num = parseInt(num);
-	      num = num == NaN ? 0 : num;
+	      num = isNaN(num) ? 0 : num;
 	      return ('' + num).length < length ? (new Array(length + 1).join('0') + num).slice(-length) : '' + num;
 	    },
 	    inputClick: function inputClick() {
@@ -34066,10 +34178,10 @@
 	      });
 	    } else if (this.trigger === 'hover') {
 	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
-	        return _this.show = true;
+	        _this.show = true;
 	      });
 	      this._closeEvent = _EventListener2.default.listen(this.$el, 'mouseleave', function () {
-	        return _this.show = false;
+	        _this.show = false;
 	      });
 	    }
 	  },
@@ -34835,21 +34947,34 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-		value: true
+	  value: true
 	});
 	// <template>
+<<<<<<< HEAD
 	// 	<div class="{{prefixCls}}-progress">
 	// 		<slot></slot>
 	// 	</div>
 	// </template>
+=======
+	
+	//   <div class="{{prefixCls}}-progress">
+	
+	//     <slot></slot>
+	
+	//   </div>
+	
+	// </template>
+	
+	
+>>>>>>> upstream/master
 	// <script>
 	exports.default = {
-		props: {
-			prefixCls: {
-				type: String,
-				default: 'n3'
-			}
-		}
+	  props: {
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  }
 	};
 	// </script>
 
@@ -34857,7 +34982,11 @@
 /* 706 */
 /***/ function(module, exports) {
 
+<<<<<<< HEAD
 	module.exports = "<div class=\"{{prefixCls}}-progress\">\n\t\t<slot></slot>\n\t</div>";
+=======
+	module.exports = "<div class=\"{{prefixCls}}-progress\">\r\n    <slot></slot>\r\n  </div>";
+>>>>>>> upstream/master
 
 /***/ },
 /* 707 */
@@ -35544,7 +35673,7 @@
 	            this.showNotify = true;
 	            this.remove(value, this.limit);
 	            timeout = setTimeout(function () {
-	              return self.showNotify = false;
+	              self.showNotify = false;
 	            }, 1000);
 	          } else {
 	            this.value = ret;
@@ -36005,8 +36134,13 @@
 	//     <slot></slot>  
 	//   </div>
 	// </template>
+<<<<<<< HEAD
 	// <script>
+=======
 	
+>>>>>>> upstream/master
+	
+	// <script>
 	exports.default = {
 	  props: {
 	    prefixCls: {
@@ -36770,7 +36904,6 @@
 	  computed: {
 	    classObj: function classObj() {
 	      var prefixCls = this.prefixCls;
-	      var value = this.value;
 	
 	      var klass = {};
 	
@@ -36841,7 +36974,7 @@
 	        this.position--;
 	        this.focus();
 	      }
-	      this.empty = this.query === '' ? true : false;
+	      this.empty = this.query === '';
 	    },
 	    left: function left() {
 	      if (this.position > 0 && this.query === '') {
@@ -37042,7 +37175,7 @@
 	  },
 	  watch: {
 	    items: function items(val) {
-	      this.show = val && val.length ? true : false;
+	      this.show = val && !!val.length;
 	    },
 	    query: function query(val) {
 	      if (val.value === '') {
@@ -37234,7 +37367,13 @@
 	//         </div>
 	//     </nav>
 	// </template>
+<<<<<<< HEAD
 	// <script>  
+=======
+	
+	
+	// <script>
+>>>>>>> upstream/master
 	exports.default = {
 	  props: {
 	    total: {
@@ -37297,8 +37436,8 @@
 	      this.checkHave();
 	    },
 	    checkHave: function checkHave() {
-	      this.havePrev = this.current > 1 ? true : false;
-	      this.haveNext = this.current < this.totalpage ? true : false;
+	      this.havePrev = this.current > 1;
+	      this.haveNext = this.current < this.totalpage;
 	    },
 	    prev: function prev() {
 	      this.go(1 * this.current - 1);
@@ -37779,12 +37918,12 @@
 	    },
 	    sort: function sort(col, s, t) {
 	      var dataIndex = col.dataIndex;
-	      var type = t ? t : 'DESC';
+	      var type = t || 'DESC';
 	
 	      if (!s) return;
 	
 	      if (dataIndex === this.sortInfo.index) {
-	        type = t ? t : this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC';
+	        type = t || (this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC');
 	      }
 	
 	      this.sortInfo = {
@@ -39144,7 +39283,9 @@
 	        return false;
 	      }
 	      for (var i in this.$children) {
-	        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) return true;
+	        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) {
+	          return true;
+	        }
 	      }
 	      return false;
 	    },
@@ -39628,6 +39769,9 @@
 	      var len = this.uploadList.length;
 	      var data = void 0;
 	      for (i = 0; i < len; i++) {
+	        if (this.states[i]) {
+	          continue;
+	        }
 	        (function (i, file) {
 	          if (file.type.match(self.accept)) {
 	            (function () {

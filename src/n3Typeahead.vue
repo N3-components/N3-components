@@ -102,7 +102,7 @@ export default {
   },
   watch: {
     items (val) {
-      this.show = val && val.length ? true : false
+      this.show = val && !!val.length
     },
     query (val) {
       if (val.value === '') {

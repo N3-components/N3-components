@@ -177,7 +177,7 @@ export default {
       weekRange: ['日', '一', '二', '三', '四', '五', '六'],
       dateRange: [],
       decadeRange: [],
-      currDate: new Date,
+      currDate: new Date(),
       displayDayView: false,
       displayMouthView: false,
       displayYearView: false,
@@ -188,11 +188,11 @@ export default {
       },
       date: '',
       mouthNames: [
-                    '一月', '二月', '三月',
-                    '四月', '五月', '六月',
-                    '七月', '八月', '九月',
-                    '十月', '十一月', '十二月'
-                  ]
+        '一月', '二月', '三月',
+        '四月', '五月', '六月',
+        '七月', '八月', '九月',
+        '十月', '十一月', '十二月'
+      ]
     }
   },
   watch: {
@@ -223,7 +223,7 @@ export default {
       let width = 293
       this.hour ? width += 44 : 0
       this.minute ? width += 44 : 0
-      this.second ? width +=  44 : 0
+      this.second ? width += 44 : 0
 
       return width + 'px'
     },
@@ -281,12 +281,12 @@ export default {
     },
     handTime () {
       var ret = ''
-      this.time.hour > this.hourRange[1] ? this.time.hour = this.hourRange[1]:0
-      this.time.minute > this.minuteRange[1] ? this.time.minute = this.minuteRange[1]:0
-      this.time.second > this.secondRange[1] ? this.time.second = this.secondRange[1]:0
-      this.time.hour < this.hourRange[0] ? this.time.hour = this.hourRange[0]:0
-      this.time.minute < this.minuteRange[0] ? this.time.minute = this.minuteRange[0]:0
-      this.time.second < this.secondRange[0] ? this.time.second = this.secondRange[0]:0
+      this.time.hour > this.hourRange[1] ? this.time.hour = this.hourRange[1] : 0
+      this.time.minute > this.minuteRange[1] ? this.time.minute = this.minuteRange[1] : 0
+      this.time.second > this.secondRange[1] ? this.time.second = this.secondRange[1] : 0
+      this.time.hour < this.hourRange[0] ? this.time.hour = this.hourRange[0] : 0
+      this.time.minute < this.minuteRange[0] ? this.time.minute = this.minuteRange[0] : 0
+      this.time.second < this.secondRange[0] ? this.time.second = this.secondRange[0] : 0
 
       if (this.hour) {
         ret += this.fix(this.time.hour, 2) + ':'
@@ -300,11 +300,11 @@ export default {
         ret += this.fix(this.time.second, 2) + ':'
       }
 
-      return ret.substr(0, ret.length -1)
+      return ret.substr(0, ret.length - 1)
     },
     fix (num, length) {
       num = parseInt(num)
-      num = num == NaN ? 0 : num
+      num = isNaN(num) ? 0 : num
       return ('' + num).length < length ? ((new Array(length + 1)).join('0') + num).slice(-length) : '' + num
     },
     inputClick () {
@@ -437,7 +437,7 @@ export default {
       const dict = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
       if (month === 1) {
-        if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0) ) {
+        if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
           return 29
         }
         return 28
