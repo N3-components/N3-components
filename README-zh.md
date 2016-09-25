@@ -31,7 +31,7 @@ NPM
 链接：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
 
 ```bash
-npm install N3-Components
+npm install N3-components
 ```
 
 快速上手
@@ -41,7 +41,7 @@ npm install N3-Components
 
 ```javascript
 import Vue from 'vue'
-import N3Components from 'N3-Components'
+import N3Components from 'N3-components'
 N3Components.install(Vue)
 ```
 
@@ -49,7 +49,7 @@ N3Components.install(Vue)
 
 ```javascript
 import Vue from 'vue'
-import N3Components from 'N3-Components'
+import N3Components from 'N3-components'
 import {n3Alert} from N3Components
 ```
 
