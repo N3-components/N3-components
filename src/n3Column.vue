@@ -27,7 +27,7 @@ export default{
       let klass = {}
 
       klass[prefixCls + '-col-' + mode + '-' + col] = true
-      offset ? klass[prefixCls + '-col-offset-' + offset] = true : ''
+      offset ? klass[prefixCls + '-col-' + mode + '-offset-' + offset] = true : ''
 
       return klass
     }
