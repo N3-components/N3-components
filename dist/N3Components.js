@@ -21883,6 +21883,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var len = this.uploadList.length;
 	      var data = void 0;
 	      for (i = 0; i < len; i++) {
+	        if (this.states[i]) {
+	          continue;
+	        }
 	        (function (i, file) {
 	          if (file.type.match(self.accept)) {
 	            (function () {

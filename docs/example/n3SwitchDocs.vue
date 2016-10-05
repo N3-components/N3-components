@@ -28,7 +28,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>state</td>
+          <td>value</td>
           <td><code>Boolean</code></td>
           <td><code>true</code></td>
           <td>开关状态</td>
