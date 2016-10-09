@@ -2,8 +2,7 @@
   <div class="{{prefixCls}}-tree">
     <div class="{{prefixCls}}-tree-node-data" v-for="(index, node) in data">
       <div class="{{prefixCls}}-tree-node">
-        <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" 
-              @click.prevent="clickHandler(index, node.value)">
+        <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" @click.prevent="clickHandler(index, node.value)">
           <template v-if="node.children">
             <n3-icon
               class="{{prefixCls}}-tree-select-icon"
@@ -12,8 +11,8 @@
             <span class="{{prefixCls}}-tree-loading-box" v-show="loading > -1 && loading == index">
               <n3-loading color="primary" size="xs"></n3-loading>
             </span>
-          </template>
-          <span class="{{prefixCls}}-tree-select-box" v-if="checkable">
+</template>
+<span class="{{prefixCls}}-tree-select-box" v-if="checkable">
             <input 
               @click.stop="" 
               type="checkbox" 
@@ -21,35 +20,21 @@
               :value="node.value"
               @change="checkHandler(index, node.value)"/>
           </span>
-          <label class="{{prefixCls}}-tree-loading-box">
+<label class="{{prefixCls}}-tree-loading-box">
           <n3-icon :type="node['icon'] || icon"></n3-icon>
           {{{node.label}}}
           </label>
-        </span>
-      </div>
-      <div
-        :transition="transition"
-        v-if="areValidNodes(node.children)" 
-        class="{{prefixCls}}-tree-children" 
-        v-show="isOpened(index)">
-        <div class="{{prefixCls}}-tree-nodes">
-          <n3-tree  
-            class="inner" 
-            :id="id" 
-            :selected-key.sync="selectedKey"
-            :data.sync="node.children" 
-            :parent.once="node.value" 
-            :load-data="loadData" 
-            :expand-all="expandAll" 
-            :checkable="checkable"
-            :checked-keys.sync="checkedKeys" 
-            :on-select="onSelect"
-            :on-check="onCheck">
-          </n3-tree>
-        </div>
-      </div>
-    </div>
+</span>
+</div>
+<div :transition="transition" v-if="areValidNodes(node.children)" class="{{prefixCls}}-tree-children" v-show="isOpened(index)">
+  <div class="{{prefixCls}}-tree-nodes">
+    <n3-tree class="inner" :id="id" :selected-key.sync="selectedKey" :data.sync="node.children" :parent.once="node.value" :load-data="loadData"
+      :expand-all="expandAll" :checkable="checkable" :checked-keys.sync="checkedKeys" :on-select="onSelect" :on-check="onCheck">
+    </n3-tree>
   </div>
+</div>
+</div>
+</div>
 </template>
 
 <script>
@@ -146,32 +131,36 @@ export default {
      * @param {Mixed} value Value selected.
      */
     clickHandler (index, value) {
-      let self = this
-      let node = self.data[index]
-      // Firstly Select Node
-      self.select.apply(self, arguments)
-      /**
-       * lazy load
-       * @require loadData isNotOpened isTreeNode
-       */
-      let isLazyLoadd = type.isFunction(self.loadData) && !node.isOpened && node.children && node.children.length === 0
-      if (isLazyLoadd) {
-        self.loading = index
-        let promise = self.loadData(value)
-        if (type.isPromise(promise)) {
-          promise.then(res => {
-            if (!type.isArray(res)) {
-              console.error(`Loaded Data should be an array: ${res}`)
-              return
-            }
-            self.$set(`data[${index}]['children']`, res)
-            self.loading = -1
-            // Secondly Open Node
-            self.toggleOpen(index)
-          })
-        }
+      // Select Node
+      this.select(index, value)
+
+      let node = this.data[index]
+      // lazyLoadFlag：节点未打开，节点无子节点
+      let lazyLoadFlag = !node.isOpened && node.children && node.children.length === 0 && type.isFunction(this.loadData)
+      if (lazyLoadFlag) {
+        this.lazyLoadHandler(index, value)
       } else {
-        self.toggleOpen(index)
+        this.toggleOpen(index)
+      }
+    },
+
+    lazyLoadHandler(index, value) {
+      let self = this
+      this.loading = index
+      let promise = this.loadData(value)
+      if (type.isPromise(promise)) {
+        promise.then(res => {
+          if (!type.isArray(res)) {
+            console.error(`Loaded Data should be an array: ${res}`)
+            return
+          }
+          self.$set(`data[${index}].children`, res)
+          if (self.checkable && self.isChecked(value)) {
+            [].push.apply(self.checkedKeys, res.map(item => item.value).filter(item => item !== undefined))
+          }
+          self.loading = -1
+          self.toggleOpen(index)
+        })
       }
     },
 
@@ -274,7 +263,7 @@ export default {
      * @param {Mixed} value Value selected.
      */
     checkHandler (index, value) {
-      let flag = this.checkedKeys.indexOf(value) > -1
+      let flag = this.isChecked(value)
       this.$broadcast('n3@changeChildChecked', value, flag)
       this.$dispatch('n3@changeParentChecked', this.parent)
       if (type.isFunction(this.onCheck)) {
@@ -287,23 +276,23 @@ export default {
     },
 
     /**
-     * Check All
+     * Check All Node
      * @param {Boolean} flag
      */
     checkAll (flag) {
       let value
       let checkedKeys = this.checkedKeys
       for (let index = 0; index < this.data.length; index++) {
-        value = this.data[index]['value']
-        if (checkedKeys.indexOf(value) === -1 && flag) {
+        value = this.data[index].value
+        if (!this.isChecked(value) && flag) {
           checkedKeys.push(value)
+          this.$broadcast('n3@changeChildChecked', value, true)
         }
-
-        if (!flag) {
+        if (this.isChecked(value) && !flag) {
           checkedKeys.$remove(value)
+          this.$broadcast('n3@changeChildChecked', value, false)
         }
       }
-      this.$dispatch('n3@changeParentChecked', this.parent)
     },
 
     _sort () {
@@ -323,12 +312,19 @@ export default {
           self.$set('data[' + index + '].isOpened', true)
         })
       }
+    },
+
+    /**
+     * Check Node Checked
+     */
+    isChecked(value) {
+      return this.checkedKeys.indexOf(value) > -1
     }
   },
 
   events: {
     /**
-     * Refresh Children Checked
+     * Refresh Children Checked(向下广播)
      */
     'n3@changeChildChecked' (parent, value) {
       if (this.parent === parent) {
@@ -337,28 +333,32 @@ export default {
     },
 
     /**
-     * Refresh Parent Checked
+     * Refresh Parent Checked(向上冒泡)
+     * @param {Mixed} parent 源节点的parent value
      */
     'n3@changeParentChecked' (parent) {
       let node
       let children
+      let j
       let checkedKeys = this.checkedKeys
 
       for (let index = 0; index < this.data.length; index++) {
         node = this.data[index]
         children = node.children
+        // 当前节点为源节点的父节点时
         if (parent === node.value) {
-          let j
           for (j = 0; j < children.length; j++) {
-            if (checkedKeys.indexOf(children[j].value) === -1) {
-              if (checkedKeys.indexOf(node.value) !== -1) {
+            // 子节点未全部选中，父节点改为未选中状态
+            if (!this.isChecked(children[j].value)) {
+              if (this.isChecked(node.value)) {
                 checkedKeys.$remove(node.value)
                 this.$dispatch('n3@changeParentChecked', this.parent)
               }
               break
             }
           }
-          if (j === children.length && checkedKeys.indexOf(node.value) === -1) {
+          // 子节点全部被选中，父节点改为选中状态
+          if (j === children.length && !this.isChecked(node.value)) {
             checkedKeys.push(node.value)
             this.$dispatch('n3@changeParentChecked', this.parent)
           }
