@@ -11,8 +11,8 @@
             <span class="{{prefixCls}}-tree-loading-box" v-show="loading > -1 && loading == index">
               <n3-loading color="primary" size="xs"></n3-loading>
             </span>
-</template>
-<span class="{{prefixCls}}-tree-select-box" v-if="checkable">
+          </template>
+          <span class="{{prefixCls}}-tree-select-box" v-if="checkable">
             <input 
               @click.stop="" 
               type="checkbox" 
@@ -20,21 +20,21 @@
               :value="node.value"
               @change="checkHandler(index, node.value)"/>
           </span>
-<label class="{{prefixCls}}-tree-loading-box">
-          <n3-icon :type="node['icon'] || icon"></n3-icon>
-          {{{node.label}}}
+          <label class="{{prefixCls}}-tree-loading-box">
+            <n3-icon :type="node['icon'] || icon"></n3-icon>
+            {{{node.label}}}
           </label>
-</span>
-</div>
-<div :transition="transition" v-if="areValidNodes(node.children)" class="{{prefixCls}}-tree-children" v-show="isOpened(index)">
-  <div class="{{prefixCls}}-tree-nodes">
-    <n3-tree class="inner" :id="id" :selected-key.sync="selectedKey" :data.sync="node.children" :parent.once="node.value" :load-data="loadData"
-      :expand-all="expandAll" :checkable="checkable" :checked-keys.sync="checkedKeys" :on-select="onSelect" :on-check="onCheck">
-    </n3-tree>
+        </span>
+      </div>
+      <div :transition="transition" v-if="areValidNodes(node.children)" class="{{prefixCls}}-tree-children" v-show="isOpened(index)">
+        <div class="{{prefixCls}}-tree-nodes">
+          <n3-tree class="inner" :id="id" :selected-key.sync="selectedKey" :data.sync="node.children" :parent.once="node.value" :load-data="loadData"
+            :expand-all="expandAll" :checkable="checkable" :checked-keys.sync="checkedKeys" :on-select="onSelect" :on-check="onCheck">
+          </n3-tree>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
 </template>
 
 <script>

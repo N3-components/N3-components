@@ -45897,9 +45897,9 @@
 	
 	//             </span>
 	
-	// </template>
+	//           </template>
 	
-	// <span class="{{prefixCls}}-tree-select-box" v-if="checkable">
+	//           <span class="{{prefixCls}}-tree-select-box" v-if="checkable">
 	
 	//             <input 
 	
@@ -45915,35 +45915,35 @@
 	
 	//           </span>
 	
-	// <label class="{{prefixCls}}-tree-loading-box">
+	//           <label class="{{prefixCls}}-tree-loading-box">
 	
-	//           <n3-icon :type="node['icon'] || icon"></n3-icon>
+	//             <n3-icon :type="node['icon'] || icon"></n3-icon>
 	
-	//           {{{node.label}}}
+	//             {{{node.label}}}
 	
 	//           </label>
 	
-	// </span>
+	//         </span>
 	
-	// </div>
+	//       </div>
 	
-	// <div :transition="transition" v-if="areValidNodes(node.children)" class="{{prefixCls}}-tree-children" v-show="isOpened(index)">
+	//       <div :transition="transition" v-if="areValidNodes(node.children)" class="{{prefixCls}}-tree-children" v-show="isOpened(index)">
 	
-	//   <div class="{{prefixCls}}-tree-nodes">
+	//         <div class="{{prefixCls}}-tree-nodes">
 	
-	//     <n3-tree class="inner" :id="id" :selected-key.sync="selectedKey" :data.sync="node.children" :parent.once="node.value" :load-data="loadData"
+	//           <n3-tree class="inner" :id="id" :selected-key.sync="selectedKey" :data.sync="node.children" :parent.once="node.value" :load-data="loadData"
 	
-	//       :expand-all="expandAll" :checkable="checkable" :checked-keys.sync="checkedKeys" :on-select="onSelect" :on-check="onCheck">
+	//             :expand-all="expandAll" :checkable="checkable" :checked-keys.sync="checkedKeys" :on-select="onSelect" :on-check="onCheck">
 	
-	//     </n3-tree>
+	//           </n3-tree>
+	
+	//         </div>
+	
+	//       </div>
+	
+	//     </div>
 	
 	//   </div>
-	
-	// </div>
-	
-	// </div>
-	
-	// </div>
 	
 	// </template>
 	
@@ -45954,7 +45954,7 @@
 /* 790 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-tree\">\r\n    <div class=\"{{prefixCls}}-tree-node-data\" v-for=\"(index, node) in data\">\r\n      <div class=\"{{prefixCls}}-tree-node\">\r\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\" @click.prevent=\"clickHandler(index, node.value)\">\r\n          <template v-if=\"node.children\">\r\n            <n3-icon\r\n              class=\"{{prefixCls}}-tree-select-icon\"\r\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\r\n            </n3-icon>\r\n            <span class=\"{{prefixCls}}-tree-loading-box\" v-show=\"loading > -1 && loading == index\">\r\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\r\n            </span>\r\n</template>\r\n<span class=\"{{prefixCls}}-tree-select-box\" v-if=\"checkable\">\r\n            <input \r\n              @click.stop=\"\" \r\n              type=\"checkbox\" \r\n              v-model=\"checkedKeys\" \r\n              :value=\"node.value\"\r\n              @change=\"checkHandler(index, node.value)\"/>\r\n          </span>\r\n<label class=\"{{prefixCls}}-tree-loading-box\">\r\n          <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\r\n          {{{node.label}}}\r\n          </label>\r\n</span>\r\n</div>\r\n<div :transition=\"transition\" v-if=\"areValidNodes(node.children)\" class=\"{{prefixCls}}-tree-children\" v-show=\"isOpened(index)\">\r\n  <div class=\"{{prefixCls}}-tree-nodes\">\r\n    <n3-tree class=\"inner\" :id=\"id\" :selected-key.sync=\"selectedKey\" :data.sync=\"node.children\" :parent.once=\"node.value\" :load-data=\"loadData\"\r\n      :expand-all=\"expandAll\" :checkable=\"checkable\" :checked-keys.sync=\"checkedKeys\" :on-select=\"onSelect\" :on-check=\"onCheck\">\r\n    </n3-tree>\r\n  </div>\r\n</div>\r\n</div>\r\n</div>";
+	module.exports = "<div class=\"{{prefixCls}}-tree\">\r\n    <div class=\"{{prefixCls}}-tree-node-data\" v-for=\"(index, node) in data\">\r\n      <div class=\"{{prefixCls}}-tree-node\">\r\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\" @click.prevent=\"clickHandler(index, node.value)\">\r\n          <template v-if=\"node.children\">\r\n            <n3-icon\r\n              class=\"{{prefixCls}}-tree-select-icon\"\r\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\r\n            </n3-icon>\r\n            <span class=\"{{prefixCls}}-tree-loading-box\" v-show=\"loading > -1 && loading == index\">\r\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\r\n            </span>\r\n          </template>\r\n          <span class=\"{{prefixCls}}-tree-select-box\" v-if=\"checkable\">\r\n            <input \r\n              @click.stop=\"\" \r\n              type=\"checkbox\" \r\n              v-model=\"checkedKeys\" \r\n              :value=\"node.value\"\r\n              @change=\"checkHandler(index, node.value)\"/>\r\n          </span>\r\n          <label class=\"{{prefixCls}}-tree-loading-box\">\r\n            <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\r\n            {{{node.label}}}\r\n          </label>\r\n        </span>\r\n      </div>\r\n      <div :transition=\"transition\" v-if=\"areValidNodes(node.children)\" class=\"{{prefixCls}}-tree-children\" v-show=\"isOpened(index)\">\r\n        <div class=\"{{prefixCls}}-tree-nodes\">\r\n          <n3-tree class=\"inner\" :id=\"id\" :selected-key.sync=\"selectedKey\" :data.sync=\"node.children\" :parent.once=\"node.value\" :load-data=\"loadData\"\r\n            :expand-all=\"expandAll\" :checkable=\"checkable\" :checked-keys.sync=\"checkedKeys\" :on-select=\"onSelect\" :on-check=\"onCheck\">\r\n          </n3-tree>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 791 */
