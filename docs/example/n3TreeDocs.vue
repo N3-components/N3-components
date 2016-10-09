@@ -53,7 +53,6 @@ new Vue({
         ]
     }
 })
-
         </script> </code></pre>
   </div>
   <h1 class="page-header">
@@ -61,7 +60,11 @@ new Vue({
     <span class="author"></span>
   </h1>
   <div class="bs-example">
-    <n3-tree  :data="files2" :load-data="loadList"></n3-tree>
+    <n3-tree 
+      :data="files2"
+      :checkable="true" 
+      :load-data="loadList"
+    ></n3-tree>
   </div>
   <pre><code class="language-markup"><script type="language-mark-up">
 <n3-tree :data="files2" :load-data="loadList"></n3-tree>
@@ -177,7 +180,7 @@ new Vue({
           <td>[]</td>
           <td>树形数据<code>.sync</code></td>
         </tr>
-         <tr>
+        <tr>
           <td>selected-key</td>
           <td><code>String</code><code>Number</code></td>
           <td></td>

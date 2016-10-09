@@ -17095,7 +17095,6 @@
 	//         ]
 	//     }
 	// })
-	
 	//         </script> </code></pre>
 	//   </div>
 	//   <h1 class="page-header">
@@ -17103,7 +17102,11 @@
 	//     <span class="author"></span>
 	//   </h1>
 	//   <div class="bs-example">
-	//     <n3-tree  :data="files2" :load-data="loadList"></n3-tree>
+	//     <n3-tree 
+	//       :data="files2"
+	//       :checkable="true" 
+	//       :load-data="loadList"
+	//     ></n3-tree>
 	//   </div>
 	//   <pre><code class="language-markup"><script type="language-mark-up">
 	// <n3-tree :data="files2" :load-data="loadList"></n3-tree>
@@ -17219,7 +17222,7 @@
 	//           <td>[]</td>
 	//           <td>树形数据<code>.sync</code></td>
 	//         </tr>
-	//          <tr>
+	//         <tr>
 	//           <td>selected-key</td>
 	//           <td><code>String</code><code>Number</code></td>
 	//           <td></td>
@@ -17392,7 +17395,7 @@
 /* 596 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"树形视图\">\n    <h1 class=\"page-header\">\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <n3-tree :value.sync=\"id\" :data=\"files1\" ></n3-tree>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-tree :value.sync=\"id\":data=\"files1\"></n3-tree>\n        </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files1: [\n            {\n                label: '新建文件夹1',\n                value: 1,\n                icon: 'folder',\n                children:[]\n            },\n            {\n                label: '新建文件夹3',\n                value: 3,\n                icon: 'folder',\n                children: [\n                    {\n                        label: '我的文档1',\n                        value: 4\n                    },\n                    {\n                        label: '新建文件夹4',\n                        value: 5,\n                        icon: 'folder',\n                        children: [\n                        {\n                            label: '我的文档3',\n                            value: 6\n                        },\n                        {\n                            label: '我的文档4',\n                            value: 7\n                        }\n                        ]\n                    }\n                ]\n            },\n            {\n                label: '我的文档2',\n                value: 2,\n            }\n        ]\n    }\n})\n\n        </script> </code></pre>\n  </div>\n  <h1 class=\"page-header\">\n    <a href=\"#异步加载\" class=\"anchor\">异步加载</a>\n    <span class=\"author\"></span>\n  </h1>\n  <div class=\"bs-example\">\n    <n3-tree  :data=\"files2\" :load-data=\"loadList\"></n3-tree>\n  </div>\n  <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-tree :data=\"files2\" :load-data=\"loadList\"></n3-tree>\n  </script> </code></pre>\n  <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files2: [\n            {\n                label: '根目录',\n                value: 1,\n                children: [],\n                icon: 'folder'\n            }\n        ],\n        loadList(value) {\n            return new Promise((resolve, reject) => {\n                setTimeout(() => {\n                    var res = [{\n                        label: '我的文档' + Math.ceil(Math.random() * 100000),\n                        value: Math.ceil(Math.random() * 100000)\n                    }, {\n                        label: '新建文件夹' + Math.ceil(Math.random() * 100000),\n                        value: Math.ceil(Math.random() * 100000),\n                        children: [],\n                        icon: 'folder'\n                    }]\n                    resolve(res)\n                }, 1000)\n            })\n        }\n    }\n})\n\n      </script></code></pre>\n  </div>\n\n    <h1 class=\"page-header\">    \n      <a href=\"#勾选节点\" class=\"anchor\">勾选节点</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      {{checkedKeys | json}}\n      <n3-tree \n        :value.sync=\"id\" \n        :data=\"files3\" \n        :default-expand-all=\"true\" \n        :checkable=\"true\" \n        :on-check=\"onCheck\"\n        :checked-keys.sync=\"checkedKeys\">\n      </n3-tree>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n    <n3-tree :value.sync=\"id\" :data=\"files3\" checkable=\"true\"></n3-tree>\n    </script> </code></pre>\n\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files3: [\n            {\n                label: '新建文件夹1',\n                value: 1,\n                children: []\n            },\n            {\n                label: '我的文档2',\n                value: 2\n            },\n            {\n                label: '新建文件夹3',\n                value: 3,\n                children: [\n                    {\n                        label: '我的文档1',\n                        value: 4\n                    },\n                    {\n                        label: '新建文件夹4',\n                        value: 5,\n                        children: [\n                        {\n                            label: '我的文档3',\n                            value: 6\n                        },\n                        {\n                            label: '我的文档4',\n                            value: 7\n                        }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n})\n        </script> </code></pre>\n\n  <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>树形数据<code>.sync</code></td>\n        </tr>\n         <tr>\n          <td>selected-key</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>选中节点的value</td>\n        </tr>\n        <tr>\n          <td>checkable</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否支持checkbox可选</td>\n        </tr>\n        <tr>\n          <td>checked-keys</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>选中的节点的value<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>treeIcon</td>\n          <td><code>String</code></td>\n          <td>angle-right</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>tree-open-icon</td>\n          <td><code>String</code></td>\n          <td>angle-down</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>icon</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>图标</td>\n        </tr>\n        <tr>\n          <td>load-data</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>异步加载函数</td>\n        </tr>\n        <tr>\n          <td>on-select</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>选择触发函数</td>\n        </tr>\n        <tr>\n          <td>on-expand</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>展开触发函数</td>\n        </tr>\n        <tr>\n          <td>expand-all</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>全部展开（异步加载时不支持全部展开）</td>\n        </tr>\n        <tr>\n          <td>sort</td>\n          <td><code>Boolean</code></td>\n          <td>true</td>\n          <td>有子节点的排在没有的前面</td>\n        </tr>\n        <tr>\n          <td>on-check</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>checkbox选中触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"树形视图\">\n    <h1 class=\"page-header\">\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <n3-tree :value.sync=\"id\" :data=\"files1\" ></n3-tree>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-tree :value.sync=\"id\":data=\"files1\"></n3-tree>\n        </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files1: [\n            {\n                label: '新建文件夹1',\n                value: 1,\n                icon: 'folder',\n                children:[]\n            },\n            {\n                label: '新建文件夹3',\n                value: 3,\n                icon: 'folder',\n                children: [\n                    {\n                        label: '我的文档1',\n                        value: 4\n                    },\n                    {\n                        label: '新建文件夹4',\n                        value: 5,\n                        icon: 'folder',\n                        children: [\n                        {\n                            label: '我的文档3',\n                            value: 6\n                        },\n                        {\n                            label: '我的文档4',\n                            value: 7\n                        }\n                        ]\n                    }\n                ]\n            },\n            {\n                label: '我的文档2',\n                value: 2,\n            }\n        ]\n    }\n})\n        </script> </code></pre>\n  </div>\n  <h1 class=\"page-header\">\n    <a href=\"#异步加载\" class=\"anchor\">异步加载</a>\n    <span class=\"author\"></span>\n  </h1>\n  <div class=\"bs-example\">\n    <n3-tree \n      :data=\"files2\"\n      :checkable=\"true\" \n      :load-data=\"loadList\"\n    ></n3-tree>\n  </div>\n  <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-tree :data=\"files2\" :load-data=\"loadList\"></n3-tree>\n  </script> </code></pre>\n  <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files2: [\n            {\n                label: '根目录',\n                value: 1,\n                children: [],\n                icon: 'folder'\n            }\n        ],\n        loadList(value) {\n            return new Promise((resolve, reject) => {\n                setTimeout(() => {\n                    var res = [{\n                        label: '我的文档' + Math.ceil(Math.random() * 100000),\n                        value: Math.ceil(Math.random() * 100000)\n                    }, {\n                        label: '新建文件夹' + Math.ceil(Math.random() * 100000),\n                        value: Math.ceil(Math.random() * 100000),\n                        children: [],\n                        icon: 'folder'\n                    }]\n                    resolve(res)\n                }, 1000)\n            })\n        }\n    }\n})\n\n      </script></code></pre>\n  </div>\n\n    <h1 class=\"page-header\">    \n      <a href=\"#勾选节点\" class=\"anchor\">勾选节点</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      {{checkedKeys | json}}\n      <n3-tree \n        :value.sync=\"id\" \n        :data=\"files3\" \n        :default-expand-all=\"true\" \n        :checkable=\"true\" \n        :on-check=\"onCheck\"\n        :checked-keys.sync=\"checkedKeys\">\n      </n3-tree>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n    <n3-tree :value.sync=\"id\" :data=\"files3\" checkable=\"true\"></n3-tree>\n    </script> </code></pre>\n\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files3: [\n            {\n                label: '新建文件夹1',\n                value: 1,\n                children: []\n            },\n            {\n                label: '我的文档2',\n                value: 2\n            },\n            {\n                label: '新建文件夹3',\n                value: 3,\n                children: [\n                    {\n                        label: '我的文档1',\n                        value: 4\n                    },\n                    {\n                        label: '新建文件夹4',\n                        value: 5,\n                        children: [\n                        {\n                            label: '我的文档3',\n                            value: 6\n                        },\n                        {\n                            label: '我的文档4',\n                            value: 7\n                        }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n})\n        </script> </code></pre>\n\n  <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>树形数据<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>selected-key</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>选中节点的value</td>\n        </tr>\n        <tr>\n          <td>checkable</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否支持checkbox可选</td>\n        </tr>\n        <tr>\n          <td>checked-keys</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>选中的节点的value<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>treeIcon</td>\n          <td><code>String</code></td>\n          <td>angle-right</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>tree-open-icon</td>\n          <td><code>String</code></td>\n          <td>angle-down</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>icon</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>图标</td>\n        </tr>\n        <tr>\n          <td>load-data</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>异步加载函数</td>\n        </tr>\n        <tr>\n          <td>on-select</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>选择触发函数</td>\n        </tr>\n        <tr>\n          <td>on-expand</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>展开触发函数</td>\n        </tr>\n        <tr>\n          <td>expand-all</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>全部展开（异步加载时不支持全部展开）</td>\n        </tr>\n        <tr>\n          <td>sort</td>\n          <td><code>Boolean</code></td>\n          <td>true</td>\n          <td>有子节点的排在没有的前面</td>\n        </tr>\n        <tr>\n          <td>on-check</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>checkbox选中触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 597 */
@@ -39122,32 +39125,39 @@
 	     * @param {Mixed} value Value selected.
 	     */
 	    clickHandler: function clickHandler(index, value) {
-	      var self = this;
-	      var node = self.data[index];
-	      // Firstly Select Node
-	      self.select.apply(self, arguments);
-	      /**
-	       * lazy load
-	       * @require loadData isNotOpened isTreeNode
-	       */
-	      var isLazyLoadd = _type2.default.isFunction(self.loadData) && !node.isOpened && node.children && node.children.length === 0;
-	      if (isLazyLoadd) {
-	        self.loading = index;
-	        var promise = self.loadData(value);
-	        if (_type2.default.isPromise(promise)) {
-	          promise.then(function (res) {
-	            if (!_type2.default.isArray(res)) {
-	              console.error('Loaded Data should be an array: ' + res);
-	              return;
-	            }
-	            self.$set('data[' + index + '][\'children\']', res);
-	            self.loading = -1;
-	            // Secondly Open Node
-	            self.toggleOpen(index);
-	          });
-	        }
+	      // Select Node
+	      this.select(index, value);
+	
+	      var node = this.data[index];
+	      // lazyLoadFlag：节点未打开，节点无子节点
+	      var lazyLoadFlag = !node.isOpened && node.children && node.children.length === 0 && _type2.default.isFunction(this.loadData);
+	      if (lazyLoadFlag) {
+	        this.lazyLoadHandler(index, value);
 	      } else {
-	        self.toggleOpen(index);
+	        this.toggleOpen(index);
+	      }
+	    },
+	    lazyLoadHandler: function lazyLoadHandler(index, value) {
+	      var self = this;
+	      this.loading = index;
+	      var promise = this.loadData(value);
+	      if (_type2.default.isPromise(promise)) {
+	        promise.then(function (res) {
+	          if (!_type2.default.isArray(res)) {
+	            console.error('Loaded Data should be an array: ' + res);
+	            return;
+	          }
+	          self.$set('data[' + index + '].children', res);
+	          if (self.checkable && self.isChecked(value)) {
+	            [].push.apply(self.checkedKeys, res.map(function (item) {
+	              return item.value;
+	            }).filter(function (item) {
+	              return item !== undefined;
+	            }));
+	          }
+	          self.loading = -1;
+	          self.toggleOpen(index);
+	        });
 	      }
 	    },
 	
@@ -39257,7 +39267,7 @@
 	     * @param {Mixed} value Value selected.
 	     */
 	    checkHandler: function checkHandler(index, value) {
-	      var flag = this.checkedKeys.indexOf(value) > -1;
+	      var flag = this.isChecked(value);
 	      this.$broadcast('n3@changeChildChecked', value, flag);
 	      this.$dispatch('n3@changeParentChecked', this.parent);
 	      if (_type2.default.isFunction(this.onCheck)) {
@@ -39271,23 +39281,23 @@
 	
 	
 	    /**
-	     * Check All
+	     * Check All Node
 	     * @param {Boolean} flag
 	     */
 	    checkAll: function checkAll(flag) {
 	      var value = void 0;
 	      var checkedKeys = this.checkedKeys;
 	      for (var index = 0; index < this.data.length; index++) {
-	        value = this.data[index]['value'];
-	        if (checkedKeys.indexOf(value) === -1 && flag) {
+	        value = this.data[index].value;
+	        if (!this.isChecked(value) && flag) {
 	          checkedKeys.push(value);
+	          this.$broadcast('n3@changeChildChecked', value, true);
 	        }
-	
-	        if (!flag) {
+	        if (this.isChecked(value) && !flag) {
 	          checkedKeys.$remove(value);
+	          this.$broadcast('n3@changeChildChecked', value, false);
 	        }
 	      }
-	      this.$dispatch('n3@changeParentChecked', this.parent);
 	    },
 	    _sort: function _sort() {
 	      this.data = this.data.sort(function (a, b) {
@@ -39307,12 +39317,20 @@
 	          self.$set('data[' + index + '].isOpened', true);
 	        });
 	      }
+	    },
+	
+	
+	    /**
+	     * Check Node Checked
+	     */
+	    isChecked: function isChecked(value) {
+	      return this.checkedKeys.indexOf(value) > -1;
 	    }
 	  },
 	
 	  events: {
 	    /**
-	     * Refresh Children Checked
+	     * Refresh Children Checked(向下广播)
 	     */
 	    'n3@changeChildChecked': function n3ChangeChildChecked(parent, value) {
 	      if (this.parent === parent) {
@@ -39322,28 +39340,32 @@
 	
 	
 	    /**
-	     * Refresh Parent Checked
+	     * Refresh Parent Checked(向上冒泡)
+	     * @param {Mixed} parent 源节点的parent value
 	     */
 	    'n3@changeParentChecked': function n3ChangeParentChecked(parent) {
 	      var node = void 0;
 	      var children = void 0;
+	      var j = void 0;
 	      var checkedKeys = this.checkedKeys;
 	
 	      for (var index = 0; index < this.data.length; index++) {
 	        node = this.data[index];
 	        children = node.children;
+	        // 当前节点为源节点的父节点时
 	        if (parent === node.value) {
-	          var j = void 0;
 	          for (j = 0; j < children.length; j++) {
-	            if (checkedKeys.indexOf(children[j].value) === -1) {
-	              if (checkedKeys.indexOf(node.value) !== -1) {
+	            // 子节点未全部选中，父节点改为未选中状态
+	            if (!this.isChecked(children[j].value)) {
+	              if (this.isChecked(node.value)) {
 	                checkedKeys.$remove(node.value);
 	                this.$dispatch('n3@changeParentChecked', this.parent);
 	              }
 	              break;
 	            }
 	          }
-	          if (j === children.length && checkedKeys.indexOf(node.value) === -1) {
+	          // 子节点全部被选中，父节点改为选中状态
+	          if (j === children.length && !this.isChecked(node.value)) {
 	            checkedKeys.push(node.value);
 	            this.$dispatch('n3@changeParentChecked', this.parent);
 	          }
@@ -39368,8 +39390,7 @@
 	//   <div class="{{prefixCls}}-tree">
 	//     <div class="{{prefixCls}}-tree-node-data" v-for="(index, node) in data">
 	//       <div class="{{prefixCls}}-tree-node">
-	//         <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" 
-	//               @click.prevent="clickHandler(index, node.value)">
+	//         <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" @click.prevent="clickHandler(index, node.value)">
 	//           <template v-if="node.children">
 	//             <n3-icon
 	//               class="{{prefixCls}}-tree-select-icon"
@@ -39388,29 +39409,27 @@
 	//               @change="checkHandler(index, node.value)"/>
 	//           </span>
 	//           <label class="{{prefixCls}}-tree-loading-box">
-	//           <n3-icon :type="node['icon'] || icon"></n3-icon>
-	//           {{{node.label}}}
+	//             <n3-icon :type="node['icon'] || icon"></n3-icon>
+	//             {{{node.label}}}
 	//           </label>
 	//         </span>
 	//       </div>
-	//       <div
-	//         :transition="transition"
-	//         v-if="areValidNodes(node.children)" 
-	//         class="{{prefixCls}}-tree-children" 
-	//         v-show="isOpened(index)">
+	//       <div :transition="transition" v-if="areValidNodes(node.children)" class="{{prefixCls}}-tree-children" v-show="isOpened(index)">
 	//         <div class="{{prefixCls}}-tree-nodes">
-	//           <n3-tree  
+	//           <n3-tree 
 	//             class="inner" 
-	//             :id="id" 
+	//             :id="id"
 	//             :selected-key.sync="selectedKey"
-	//             :data.sync="node.children" 
-	//             :parent.once="node.value" 
-	//             :load-data="loadData" 
-	//             :expand-all="expandAll" 
+	//             :data.sync="node.children"
+	//             :parent.once="node.value"
+	//             :load-data="loadData"
+	//             :expand-all="expandAll"
 	//             :checkable="checkable"
-	//             :checked-keys.sync="checkedKeys" 
+	//             :checked-keys.sync="checkedKeys"
 	//             :on-select="onSelect"
-	//             :on-check="onCheck">
+	//             :on-check="onCheck"
+	//             :sort="sort"
+	//           >
 	//           </n3-tree>
 	//         </div>
 	//       </div>
@@ -39424,7 +39443,7 @@
 /* 790 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-tree\">\n    <div class=\"{{prefixCls}}-tree-node-data\" v-for=\"(index, node) in data\">\n      <div class=\"{{prefixCls}}-tree-node\">\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\" \n              @click.prevent=\"clickHandler(index, node.value)\">\n          <template v-if=\"node.children\">\n            <n3-icon\n              class=\"{{prefixCls}}-tree-select-icon\"\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\n            </n3-icon>\n            <span class=\"{{prefixCls}}-tree-loading-box\" v-show=\"loading > -1 && loading == index\">\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </template>\n          <span class=\"{{prefixCls}}-tree-select-box\" v-if=\"checkable\">\n            <input \n              @click.stop=\"\" \n              type=\"checkbox\" \n              v-model=\"checkedKeys\" \n              :value=\"node.value\"\n              @change=\"checkHandler(index, node.value)\"/>\n          </span>\n          <label class=\"{{prefixCls}}-tree-loading-box\">\n          <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\n          {{{node.label}}}\n          </label>\n        </span>\n      </div>\n      <div\n        :transition=\"transition\"\n        v-if=\"areValidNodes(node.children)\" \n        class=\"{{prefixCls}}-tree-children\" \n        v-show=\"isOpened(index)\">\n        <div class=\"{{prefixCls}}-tree-nodes\">\n          <n3-tree  \n            class=\"inner\" \n            :id=\"id\" \n            :selected-key.sync=\"selectedKey\"\n            :data.sync=\"node.children\" \n            :parent.once=\"node.value\" \n            :load-data=\"loadData\" \n            :expand-all=\"expandAll\" \n            :checkable=\"checkable\"\n            :checked-keys.sync=\"checkedKeys\" \n            :on-select=\"onSelect\"\n            :on-check=\"onCheck\">\n          </n3-tree>\n        </div>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-tree\">\n    <div class=\"{{prefixCls}}-tree-node-data\" v-for=\"(index, node) in data\">\n      <div class=\"{{prefixCls}}-tree-node\">\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\" @click.prevent=\"clickHandler(index, node.value)\">\n          <template v-if=\"node.children\">\n            <n3-icon\n              class=\"{{prefixCls}}-tree-select-icon\"\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\n            </n3-icon>\n            <span class=\"{{prefixCls}}-tree-loading-box\" v-show=\"loading > -1 && loading == index\">\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </template>\n          <span class=\"{{prefixCls}}-tree-select-box\" v-if=\"checkable\">\n            <input \n              @click.stop=\"\" \n              type=\"checkbox\" \n              v-model=\"checkedKeys\" \n              :value=\"node.value\"\n              @change=\"checkHandler(index, node.value)\"/>\n          </span>\n          <label class=\"{{prefixCls}}-tree-loading-box\">\n            <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\n            {{{node.label}}}\n          </label>\n        </span>\n      </div>\n      <div :transition=\"transition\" v-if=\"areValidNodes(node.children)\" class=\"{{prefixCls}}-tree-children\" v-show=\"isOpened(index)\">\n        <div class=\"{{prefixCls}}-tree-nodes\">\n          <n3-tree \n            class=\"inner\" \n            :id=\"id\"\n            :selected-key.sync=\"selectedKey\"\n            :data.sync=\"node.children\"\n            :parent.once=\"node.value\"\n            :load-data=\"loadData\"\n            :expand-all=\"expandAll\"\n            :checkable=\"checkable\"\n            :checked-keys.sync=\"checkedKeys\"\n            :on-select=\"onSelect\"\n            :on-check=\"onCheck\"\n            :sort=\"sort\"\n          >\n          </n3-tree>\n        </div>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 791 */
