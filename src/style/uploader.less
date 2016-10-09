@@ -15,8 +15,8 @@
 
 .@{prefix-cls}-upload-item-info {
   position: relative;
-  height: 25px;
-  line-height: 25px;
+  height: @uploaderHeight;
+  line-height: @uploaderHeight;
   padding: 0 4px;
   transition: background-color .3s ease;
   zoom: 1;
@@ -37,7 +37,8 @@
   top:50%;
   left:50%;
   margin-top: -10px;
-  margin-left: -30px;
+  margin-left: -@uploaderIconSize/2;
+  font-size: @uploaderIconSize;
 }
 
 .@{prefix-cls}-upload-file-icon {

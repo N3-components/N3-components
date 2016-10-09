@@ -51,7 +51,7 @@
           @change="onChange($event)" />
         <label :for="uploadId"
             :class="[prefixCls + '-upload-drag-area']">
-        <n3-icon type="cloud-upload" size="60px" :class="[prefixCls + '-upload-drag-icon']"></n3-icon>
+        <n3-icon type="cloud-upload" :class="[prefixCls + '-upload-drag-icon']"></n3-icon>
         <span v-if="advanceDrag">点击或将文件拖拽到此区域上传</span>
         <span v-if="!advanceDrag">当前环境不支持拖拽上传，请点此上传</span>
       </label>

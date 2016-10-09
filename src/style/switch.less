@@ -1,16 +1,19 @@
 @import "define.less";
 
+@switchOffset: @switchHeight - @switchRoundSize;
+@labelSize: @switchHeight;
+@switchLabel: @switchWidth - @labelSize;
+
 .@{prefix-cls}-switch {
-  width: 68px;
-  height:27px;
+  width: @switchWidth;
+  height: @switchHeight;
   display: inline-block;
   direction: ltr;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: @switchRadius;
   position: relative;
   text-align: left;
   overflow: hidden;
-  line-height: 8px;
   z-index: 0;
   user-select: none;
   vertical-align: middle;
@@ -19,11 +22,9 @@
   color: @whiteColor;
 
   &-container {
-    width:102px;
-    margin-left: 0px;
+    width:@switchLabel + @switchLabel + @labelSize;
+    font-size: 0px;
     display: inline-block;
-    top: 0;
-    border-radius: 4px;
     transform: translate3d(0, 0, 0);
   }
   &-handle-on,
@@ -32,42 +33,32 @@
     box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
-    height: 28px;
-    padding: 6px 2px 6px 10px;
+    height: @switchHeight;
+    line-height: @switchHeight;
     font-size: 14px;
-    line-height: 16px;
     vertical-align: middle;
     position: relative;
     text-align: center;
   }
-
-  &-handle-on:after,
-  &-handle-off:after {
-    content: " ";
-    width: 14px;
-    height: 28px;
-    position: absolute;
-    top: 0;
-    right: -14px;
-  }
   &-handle-on {
-    width: 37px;
+    width:@switchLabel;
     z-index: 98;
+    line-height: @switchHeight;
+    vertical-align: top;
   }
   &-handle-off {
-    width: 37px;
+    width:@switchLabel;
     z-index: 97;
-    padding: 6px 10px 6px 0px;
-  }
-  &-handle-off:after {
-    left: -14px;
+    line-height: @switchHeight;
+    vertical-align: top;
   }
   &-label {
-    height: 28px;
+    height: @switchHeight;
     padding: 0;
     position: relative;
-    width: 28px !important;
+    width: @labelSize !important;
     z-index: 100;
+    vertical-align: top;
   }
   &-label:after {
     transition: 0.25s ease-out;
@@ -75,19 +66,16 @@
     border-radius: 50%;
     content: " ";
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: @switchOffset/2;
+    left: @switchOffset/2;
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: @switchRoundSize;
+    width: @switchRoundSize;
     box-shadow: 0 1px 2px @grayColor;
   }
 
-  &-on &-handle-on{
-    margin-left:-5px
-  }
   &-off &-handle-on{
-    margin-left:-43px
+    margin-left:-@switchLabel;
   }
 
   &-off {

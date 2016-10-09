@@ -6,12 +6,11 @@
   position: relative;
 
   &-horizontal {
-    width: 210px;
-    height: 20px;
+    height: @sliderHorizontalHeight;
   }
 
   &-horizontal &-track {
-    height: 8px;
+    height: @sliderHeight;
     width: 100%;
     margin-top: -5px;
     top: 50%;
@@ -26,33 +25,16 @@
     bottom: 0;
   }
 
-  &-horizontal &-tick,
   &-horizontal &-handle {
-    margin-left: -10px;
-    margin-top: -5px;
+    margin-left: @sliderHandlerLeft;
+    margin-top: @sliderHandlerTop;
   }
 
-  &-horizontal &-tick-label-container {
-    white-space: nowrap;
-  }
-
-  &-horizontal &-tick-label-container &-tick-label {
-    margin-top: 24px;
-    display: inline-block;
-    text-align: center;
-  }
-
-  &-horizontal &-tick-label-container &-tick-label {
-    margin-top: 24px;
-    display: inline-block;
-    text-align: center;
-  }
   &-vertical {
-    height: 210px;
-    width: 20px;
+    width: @sliderVerticalWidth;
   }
   &-vertical &-track {
-    width: 10px;
+    width: @sliderWidth;
     height: 100%;
     margin-left: -5px;
     left: 50%;
@@ -70,10 +52,9 @@
     left: 0;
     right: 0;
   }
-  &-vertical &-tick,
   &-vertical &-handle {
-    margin-left: -5px;
-    margin-top: -10px;
+    margin-left: @sliderVerticalHandlerLeft;
+    margin-top: @sliderVerticalHandlerTop;
   }
   
   &-disabled &-handle {
@@ -88,9 +69,7 @@
   input {
     display: none;
   }
-  .@{prefix-cls}-tooltip.@{prefix-cls}-tooltip-top {
-    margin-top: -46px;
-  }
+  
   .@{prefix-cls}-tooltip-inner {
     white-space: nowrap;
   }
@@ -109,10 +88,7 @@
     box-sizing: border-box;
     border-radius: 4px;
   }
-  &-selection&-tick-slider-selection {
-    background-image: linear-gradient(to bottom, @primaryColor 0%, @primaryColorhover 100%);
-    background-repeat: repeat-x;
-  }
+ 
   &-track-low,
   &-track-high {
     position: absolute;
@@ -122,41 +98,30 @@
   }
   &-handle {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: @sliderHandler;
+    height: @sliderHandler;
     background-color: @whiteColor;
-    border: 3px solid @primaryColor;
+    border: @sliderHandlerBorder solid @primaryColor;
   }
   &-handle&-round {
     border-radius: 50%;
   }
-  &-tick {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-image: linear-gradient(to bottom, @lightColor 0%, @lightGrayColor 100%);
-    background-repeat: repeat-x;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-    filter: none;
-    opacity: 0.8;
-    border: 0px solid transparent;
-  }
-  &-tick&-round {
-    border-radius: 50%;
-  }
+
   &-vertical &-selection{
     height: 0%;
   }
   &-vertical &-track-high{
     height: 100%;
   }
+  .@{prefix-cls}-tooltip.@{prefix-cls}-tooltip-top {
+    margin-top: @sliderHorizontalTipTop;
+  }
   &-horizontal .@{prefix-cls}-tooltip.@{prefix-cls}-tooltip-top{
-    margin-left: -15px;
+    margin-left: @sliderHorizontalTipLeft;
   }
   &-vertical .@{prefix-cls}-tooltip.@{prefix-cls}-tooltip-right{
-    margin-top: -16px;
-    margin-left: 16px;
+    margin-top: @sliderVerticalTipTop;
+    margin-left: @sliderVerticalTipLeft;
   }
   .@{prefix-cls}-tooltip&-slider-tooltip-always{
       display: block!important;

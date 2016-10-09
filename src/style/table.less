@@ -11,8 +11,8 @@
   > thead > tr > td,
   > tbody > tr > td,
   > tfoot > tr > td {
-    padding: 6px 8px;
-    line-height: 1.5;
+    padding:@tableTdPadding;
+    line-height: @tableTdLineHeight;
     vertical-align: top;
     border-top: 1px solid @lightGrayColor;
   }
@@ -45,7 +45,7 @@
   > thead > tr > td,
   > tbody > tr > td,
   > tfoot > tr > td {
-   border-left: 1px solid @lightGrayColor;
+   border-left: @tableTdBorderLeft;
   }
   > thead > tr > th,
   > thead > tr > td {

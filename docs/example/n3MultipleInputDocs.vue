@@ -2,7 +2,8 @@
   <div class="bs-docs-section" id="自定义输入"  >
     <h1 class="page-header"><a href="#自定义输入" class="anchor">自定义输入</a><span class="author"> </span></h1>
     <div class="bs-example">
-        <n3-multiple-input 
+        <n3-multiple-input
+          :on-focus="focus" 
           :value.sync="a.list" 
           :format="format" 
           :on-inputchange="getResult"
@@ -151,6 +152,9 @@ export default {
     }
   },
   methods: {
+    focus () {
+      console.log(1)
+    },
     render (item) {
       return item.formatted_address
     },

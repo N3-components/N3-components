@@ -12,7 +12,7 @@
   > li > a {
     position: relative;
     display: block;
-    padding: 10px 15px;
+    padding: @tabPadding;
     transition: all .3s ease;
   }
   > li > a:hover,
@@ -164,8 +164,6 @@
     border-bottom: 2px solid @primaryColor;
     li {
       margin-bottom: 0;
-
-     
     }
 
     .@{prefix-cls}-nav-tabs-active > a,

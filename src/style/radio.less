@@ -19,11 +19,11 @@
         top: 0;
         left: 0;
         display: inline-block;
-        width: 14px;
-        height: 14px;
+        width: @radioSize;
+        height: @radioSize;
         border-width: 1px;
         border-style: solid;
-        border-radius: 14px;
+        border-radius: @radioSize;
         border-color: @lightGrayColor;
         background-color: @whiteColor;
         transition: all 0.3s ease;
@@ -50,11 +50,11 @@
 
     .@{prefix-cls}-radio-inner:after {
         position: absolute;
-        width: 6px;
-        height: 6px;
-        left: 3px;
-        top: 3px;
-        border-radius: 6px;
+        width: @radioPointerSize;
+        height: @radioPointerSize;
+        left: (@radioSize - @radioPointerSize)/2-1;
+        top: (@radioSize - @radioPointerSize)/2-1;
+        border-radius: @radioPointerSize;
         display: table;
         border-top: 0;
         border-left: 0;

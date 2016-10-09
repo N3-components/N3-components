@@ -4,6 +4,8 @@
     <template v-for="(index,item) in value" track-by="$index">
         <template v-if="index == position">
             <n3-typeahead
+              :on-focus="onFocus"
+              :on-blur="onBlur"
               :style="{margin:'0px 5px'}"
               :query.sync="query" 
               :width='inputWidth'
@@ -34,6 +36,8 @@
 
     <template v-if="value && value.length == position">
       <n3-typeahead
+        :on-focus="onFocus"
+        :on-blur="onBlur"
         :style="{margin:'0px 5px'}"
         :query.sync="query" 
         :width='inputWidth'
@@ -161,6 +165,12 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    onFocus: {
+      type: Function
+    },
+    onBlur: {
+      type: Function
     }
   },
   data () {
@@ -214,7 +224,9 @@ export default {
       let self = this
       self.focused = false
       setTimeout(() => {
-        self.focused = true
+        if (!self.focused) {
+          self.focused = true
+        }
       }, 100)
     },
     setIndex (index) {

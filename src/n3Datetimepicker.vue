@@ -44,6 +44,7 @@
           <div class="{{prefixCls}}-timepicker-con">
             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
               <n3-slider 
+                class="{{prefixCls}}-timepicker-slider"
                 :value.sync="time.hour" 
                 orientation="vertical" 
                 :max="hourRange[1]" 
@@ -51,7 +52,8 @@
               </n3-slider>
             </div>
             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
-              <n3-slider 
+              <n3-slider
+                class="{{prefixCls}}-timepicker-slider" 
                 :value.sync="time.minute" 
                 orientation="vertical" 
                 :max="minuteRange[1]" 
@@ -60,6 +62,7 @@
             </div>
             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
               <n3-slider 
+                class="{{prefixCls}}-timepicker-slider"
                 :value.sync="time.second" 
                 orientation="vertical" 
                 :max="secondRange[1]" 

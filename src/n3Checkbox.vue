@@ -1,7 +1,9 @@
 <template>
   <label :class="wrapClass">
   <span>
-    <span class="{{prefixCls}}-checkbox-inner"></span>
+    <span class="{{prefixCls}}-checkbox-inner">
+      <n3-icon type="check" color="#fff" class="{{prefixCls}}-checkbox-inner-check"></n3-icon>
+    </span>
     <input
       type="checkbox"
       class="{{prefixCls}}-checkbox-input"
@@ -23,6 +25,7 @@
 
 <script>
 import type from './utils/type'
+import n3Icon from './n3Icon'
 import valMixin from './valMixin'
 import validate from './validate'
 
@@ -50,7 +53,8 @@ export default {
     }
   },
   components: {
-    validate
+    validate,
+    n3Icon
   },
   events: {
     'n3@checkboxgroupChange' (val) {

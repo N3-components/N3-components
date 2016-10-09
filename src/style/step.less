@@ -17,13 +17,13 @@
   }
   &-wrap > div {
     width: 100%;
-    line-height: 32px;
+    line-height: @stepHeight;
     vertical-align: top;
     font-size: 12px;
     position: relative;
   }
   &-wrap > div > label {
-    margin: 0 0 0 26px;
+    margin: @stepLabelMargin;
     cursor: default;
   }
   &-triangle-right {
@@ -31,9 +31,9 @@
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 16px;
+    border-width: @stepHeight/2;
     position: absolute;
-    right: -31px;
+    right: -@stepHeight+1;
     z-index: 1;
   }
   &-triangle-right-bg {
@@ -41,14 +41,12 @@
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 16px;
+    border-width: @stepHeight/2;
     position: absolute;
-    right: -31px;
     z-index: 1;
-    border-width: 20px;
-    right: -40px;
+    border-width: @stepHeight/2;
+    right: -(@stepHeight+2);
     border-color: transparent transparent transparent @whiteColor;
-    top: -4px;
   }
   &-round {
     display: inline-block;
@@ -131,6 +129,7 @@
   > .@{prefix-cls}-steps-current .@{prefix-cls}-steps-round {
     background-color: @primaryColor;
     border: 4px @primaryColor solid;
+    color:@whiteColor;
   }
   > .@{prefix-cls}-steps-current label {
     color: @primaryColor;
@@ -152,8 +151,8 @@
   > li:before {
     content: '';
     width: 100%;
-    height: 6px;
-    margin: 12px 0px;
+    height: @stepRoundLineHeight;
+    margin: @stepRoundLineMargin;
     display: block;
     float: left;
     background-color: @lightColor;
@@ -176,9 +175,9 @@
     top: 0px;
   }
   > li .@{prefix-cls}-steps-round {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    width: @stepRoundSize;
+    height: @stepRoundSize;
+    border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
     font-size: 12px;
@@ -208,8 +207,7 @@
     background-color: @primaryColorhover;
   }
 
-  > .@{prefix-cls}-steps-finished .@{prefix-cls}-steps-round,
-  .@{prefix-cls}-steps-current .@{prefix-cls}-steps-round {
+  > .@{prefix-cls}-steps-finished .@{prefix-cls}-steps-round {
     border: 4px @primaryColorhover solid;
     background-color: @primaryColorhover;
     color: @whiteColor;

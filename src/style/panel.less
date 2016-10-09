@@ -1,16 +1,15 @@
 @import "define.less";
 
 .@{prefix-cls}-panel-body {
-  padding: 15px;
+  padding: @panelBodyPadding;
 }
 .@{prefix-cls}-panel-heading {
-  padding: 10px 15px;
+  padding: @panelHeaderPadding;
   border-bottom: 1px solid transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
   border-color: @lightColor ;
   font-size: 16px;
   font-weight: 300;
+  background: @panelHeadingColor;
 
   > .@{prefix-cls}-dropdown .@{prefix-cls}-dropdown-toggle {
     color: inherit;
@@ -36,14 +35,6 @@
   > .small > a {
     color: inherit;
   }
-}
-
-.@{prefix-cls}-panel-footer {
-  padding: 10px 15px;
-  background-color: @lightColor;
-  border-top: 1px solid @lightGrayColor;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
 }
 
 .@{prefix-cls}-panel {

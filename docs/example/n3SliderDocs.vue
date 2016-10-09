@@ -4,10 +4,13 @@
     <div class="bs-example">
       <n3-slider :value.sync = "value" :on-change="change" ></n3-slider>
 
+      <n3-slider :value.sync = "value" :on-change="change" orientation="vertical"></n3-slider>
+
       <p>滑块的值{{value}}</p> 
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 <n3-slider :value.sync = "value" :on-change="change"></n3-slider>
+<n3-slider :value.sync = "value" :on-change="change" orientation="vertical"></n3-slider>
     </script></code></pre>
      
   <h2>参数</h2>
@@ -75,6 +78,18 @@
         <td><code>Function</code></td>
         <td><code></code></td>
         <td>格式化tooltip显示内容</td>
+      </tr>
+       <tr>
+        <td>width</td>
+        <td><code>String</code></td>
+        <td><code>220px</code></td>
+        <td>水平显示的宽度</td>
+      </tr>
+       <tr>
+        <td>height</td>
+        <td><code>String</code></td>
+        <td><code>220px</code></td>
+        <td>垂直显示的高度</td>
       </tr>
       <tr>
         <td>on-change</td>

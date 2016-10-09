@@ -16,29 +16,23 @@
     top: 0;
     left: 0;
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: @checkboxSize;
+    height: @checkboxSize;
     border-width: 1px;
     border-style: solid;
-    border-radius: 3px;
+    border-radius: @checkboxRadius;
     border-color: @lightGrayColor;
     background-color: @whiteColor;
     transition: all 0.3s ease;
+
+    &-check{
+     font-size: @checkboxCheckSize;
+     position: relative;
+     top: @checkboxCheckOffset;
+     left: @checkboxCheckOffset;   
+    }
 }
 
-.@{prefix-cls}-checkbox-inner:after{
-    transform: rotate(45deg) scale(1);
-    position: absolute;
-    left: 4px;
-    top: 1px;
-    display: table;
-    width: 5px;
-    height: 8px;
-    border: 2px solid @whiteColor;
-    border-top: 0;
-    border-left: 0;
-    content: ' ';
-}
 .@{prefix-cls}-checkbox-input {
     position: absolute!important;
     left: 0;

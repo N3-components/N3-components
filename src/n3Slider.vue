@@ -1,6 +1,6 @@
 <template>
 <div class="inline">
-    <div :class="classObj" v-el:slider>
+    <div :class="classObj" v-el:slider :style="styleObj">
       <n3-tooltip  :placement="orientation === 'horizontal' ? 'top' : 'right'" :noresize="true" trigger="mouse">
         <div class="{{prefixCls}}-slider-track">
           <div class="{{prefixCls}}-slider-track-low"></div>
@@ -69,6 +69,14 @@ export default {
     onChange: {
       type: Function
     },
+    width: {
+      type: String,
+      default: '220px'
+    },
+    height: {
+      type: String,
+      default: '220px'
+    },
     formatter: {
       type: Function,
       default (val) {
@@ -93,6 +101,18 @@ export default {
     }
   },
   computed: {
+    styleObj () {
+      if (this.orientation == 'horizontal') {
+        return {
+          width: this.width
+        }
+      } else {
+        return {
+          height: this.height
+        }
+      }
+
+    },
     classObj () {
       let {prefixCls, orientation} = this
       let klass = {}

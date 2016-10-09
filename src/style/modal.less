@@ -45,7 +45,7 @@
 	&-dialog {
 	  position: relative;
 	  width: auto;
-	  margin: 30px auto;
+	  margin: @modalMargin;
 	}
 	&-content {
 	  position: relative;
@@ -71,9 +71,9 @@
 	}
 	&-header {
 	  min-height: 16.42857143px;
-	  padding: 15px;
-	  background: @primaryColor;
-	  color: @whiteColor;
+	  padding: @modalPadding;
+	  background: @modalHeaderColor;
+	  color: @modalHeaderFontColor;
 	  border-radius: 5px 5px 0 0;
 	  border-bottom: none;
 	}
@@ -86,12 +86,12 @@
 	}
 	&-body {
 	  position: relative;
-	  padding: 15px;
+	  padding: @modalPadding;
 	}
 	&-footer {
-	  padding: 15px;
+	  padding: @modalPadding;
 	  text-align: right;
-	  border-top: 1px solid @lightGrayColor;
+	  border-top: @modalFooterBorderTop;
 	}
 	&-footer .@{prefix-cls}-btn + .@{prefix-cls}-btn {
 	  margin-bottom: 0;

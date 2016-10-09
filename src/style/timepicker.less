@@ -12,19 +12,21 @@
       background: @whiteColor;
       margin-top: 2px;
       z-index: 1000;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-      padding: 10px 0px 0px;
+      box-shadow: @dateShadow;
+      padding: @timepickerPadding;
       .slider-sin-wrap:after{
         top:5px;
       }
   }
-  
+  &-slider{
+    padding: @timepickerSlierPadding;
+  }
   &-slider-sin-wrap {
     float: left;
-    width: 20px;
-    height: 275px;
-    margin: 4px 14px;
+    height: @timepickerSliderHeight;
+    margin: @timepickerSliderMargin;
     position: relative;
+
 
     &:before {
       padding-left: 2px;
@@ -36,18 +38,21 @@
     }
     &[data-role="hour"]:before {
       content: "\65f6";
+      display: block;
     }
     &[data-role="minute"] {
       z-index: 9;
     }
     &[data-role="minute"]:before {
       content: "\5206";
+      display: block;
     }
     &[data-role="second"] {
       z-index: 8;
     }
     &[data-role="second"]:before {
       content: "\79d2";
+      display: block;
     }
     &:after {
       content: ":";
@@ -55,6 +60,9 @@
       top: 1px;
       left: 32px;
     }
+    &:last-child:after{
+      content: '';
+    };
     &:last-child:after {
       display: none;
     }

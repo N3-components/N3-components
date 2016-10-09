@@ -27,7 +27,9 @@
     </a>
   </div>
   <div :class="prefixCls + '-input-number-input-wrap'">
-    <n3-input 
+    <n3-input
+      :on-focus="onFocus"
+      :on-blur="onBlur" 
       :width="width"
       :rules="rules" 
       :validate="validate"

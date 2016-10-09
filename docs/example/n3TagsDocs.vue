@@ -45,7 +45,7 @@
 
 
     <div class="bs-example">
-        <n3-tags :value.sync="list"></n3-tags>
+        <n3-tags :value.sync="list" ></n3-tags>
         <n3-tags :value.sync="list"  type="primary"></n3-tags>
         <n3-tags :value.sync="list"  type="success"></n3-tags>
         <n3-tags :value.sync="list"  type="danger"></n3-tags>

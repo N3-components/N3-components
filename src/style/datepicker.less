@@ -10,22 +10,24 @@
         background: @whiteColor;
         margin-top: 2px;
         z-index: 1000;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        box-shadow: @dateShadow;
     }
     &-inner{
-        width: 268px;
+        width: @datepickerWidth;
 
     }
     &-ctrl p,
     &-ctrl span,
     &-body span{
         display: inline-block;
-        width: 38px;
-        line-height: 38px;
-        height: 38px;
+        width: @datepickerSpanSize;
+        line-height: @datepickerSpanSize;
+        height: @datepickerSpanSize;
+        border-radius: @datepickerSpanRadius;
     }
     &-ctrl p {
         width: 65%;
+        margin: 0px;
     }
     &-ctrl span {
       position: absolute;
@@ -34,9 +36,9 @@
       text-align: center;
     }
     &-mouthRange span{
-        width: 44px;
-        height: 44px;
-        line-height: 45px;
+        width: @datepickerRangeSize;
+        height: @datepickerRangeSize;
+        line-height: @datepickerRangeSize;
     }
     &-item-disable {
       background-color: white!important;
@@ -55,7 +57,7 @@
         color: white!important;
     }
     &-mouthRange {
-      margin-top: 10px
+      margin-bottom: 10px
     }
     &-mouthRange span,
     &-ctrl span,
@@ -81,8 +83,8 @@
     }
     &-ctrl{
         position: relative;
-        height: 38px;
-        line-height: 38px;
+        height: @datepicerCtrlHeight;
+        line-height: @datepicerCtrlHeight;
         font-weight: bold;
         text-align: center;
     }

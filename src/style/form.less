@@ -44,7 +44,7 @@
 .@{prefix-cls}-err-tip{
   color:@dangerColor;
   font-size:12px;
-  margin-top: 5px;
+  height: 20px;
 }
 
 .@{prefix-cls}-form-horizontal .@{prefix-cls}-control-label {
@@ -53,23 +53,11 @@
     text-align: left;
 }
 .@{prefix-cls}-form-inline .@{prefix-cls}-slider, .@{prefix-cls}-form-horizontal .@{prefix-cls}-slider{
-  margin: 17px 0px 0px 10px;
-}
-
-.@{prefix-cls}-form-inline .@{prefix-cls}-switch, .@{prefix-cls}-form-horizontal .@{prefix-cls}-switch{
-  margin-top: 5px;
+  margin: 20px 0px 0px 10px;
 }
 
 .@{prefix-cls}-form-group {
-  margin-bottom: 15px;
-  padding: 5px 0px;
-
-  .@{prefix-cls}-radio-con{
-    margin-top: 7px;
-  }
-  .@{prefix-cls}-checkbox-label{
-    margin-top: 9px;
-  }
+  margin: @formGroupMargin;
 }
 
 
@@ -87,9 +75,9 @@
   right: 0;
   z-index: 2;
   display: block;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: @inputHeight;
+  height: @inputHeight;
+  line-height: @inputHeight;
   text-align: center;
   pointer-events: none;
 }
@@ -153,9 +141,6 @@
     margin-right: 8px;
 }
 
-.@{prefix-cls}-form-inline .@{prefix-cls}-control-label{
-   padding-top: 7px;
-}
 
 @media (min-width: 768px) {
   .@{prefix-cls}-form-inline {
@@ -183,13 +168,12 @@
 }
 
 .@{prefix-cls}-form-horizontal .@{prefix-cls}-form-group {
-  margin-right: -15px;
-  margin-left: -15px;
+  min-height: @formGroupMinHeight;
+  line-height: @formGroupMinHeight;
 }
 
 @media (min-width: 768px) {
   .@{prefix-cls}-form-horizontal .@{prefix-cls}-control-label {
-    padding-top: 7px;
     margin-bottom: 0;
     text-align: right;
   }

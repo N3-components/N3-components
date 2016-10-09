@@ -13,6 +13,7 @@
     :disabled="disabled"
     :value.sync="query"
     :focused.sync="focused"
+    :on-focus="onFocus"
     :on-blur="blur"
     @input="update"
     @keydown.esc="show=false"
@@ -133,6 +134,9 @@ export default {
   methods: {
     blur () {
       this.show = false
+      if(type.isFunction(this.onBlur)){
+        this.onBlur()
+      }
     },
     update () {
       if (this.readonly || this.disabled) return

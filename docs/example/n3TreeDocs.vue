@@ -238,6 +238,12 @@ new Vue({
           <td>全部展开（异步加载时不支持全部展开）</td>
         </tr>
         <tr>
+          <td>sort</td>
+          <td><code>Boolean</code></td>
+          <td>true</td>
+          <td>有子节点的排在没有的前面</td>
+        </tr>
+        <tr>
           <td>on-check</td>
           <td><code>Function</code></td>
           <td></td>
