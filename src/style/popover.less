@@ -18,7 +18,7 @@
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: @popoverShadow;
 
   &-top {
     margin-top: -10px;
@@ -60,13 +60,13 @@
     border-width: 10px;   
   }
   &-arrow {
-    border-width: 11px;
+    border-width: @popoverArrow;
   }
  
   &-top > &-arrow {
-    bottom: -11px;
+    bottom: -@popoverArrow;
     left: 50%;
-    margin-left: -11px;
+    margin-left: -@popoverArrow;
     border-top-color: rgba(0, 0, 0, 0.25);
     border-bottom-width: 0;
 
@@ -82,8 +82,8 @@
   
   &-right > &-arrow {
     top: 50%;
-    left: -11px;
-    margin-top: -11px;
+    left: -@popoverArrow;
+    margin-top: -@popoverArrow;
     border-right-color: @weightGrayColor;
     border-right-color: rgba(0, 0, 0, 0.25);
     border-left-width: 0;
@@ -99,9 +99,9 @@
   }
   
   &-bottom > &-arrow {
-    top: -11px;
+    top: -@popoverArrow;
     left: 50%;
-    margin-left: -11px;
+    margin-left: -@popoverArrow;
     border-top-width: 0;
     border-bottom-color: @weightGrayColor;
     border-bottom-color: rgba(0, 0, 0, 0.25);
@@ -117,8 +117,8 @@
   
   &-left > &-arrow {
     top: 50%;
-    right: -11px;
-    margin-top: -11px;
+    right: -@popoverArrow;
+    margin-top: -@popoverArrow;
     border-right-width: 0;
     border-left-color: @weightGrayColor;
     border-left-color: rgba(0, 0, 0, 0.25);

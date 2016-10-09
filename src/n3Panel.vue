@@ -3,11 +3,13 @@
     <div class="{{prefixCls}}-panel-heading">
       <h4 class="{{prefixCls}}-panel-title">
         <a @click="toggleIsOpen()">
-           {{ header }}
+           <slot name="header">
+            {{header}}
+           </slot>
         </a>
       </h4>
     </div>
-    <div 
+    <div
       class="{{prefixCls}}-panel-collapse"
       v-el:panel
       v-show="isOpen"

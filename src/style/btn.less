@@ -2,11 +2,8 @@
 
 .@{prefix-cls}-btn {
   display: inline-block;
-  padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
   font-weight: normal;
-  line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -15,7 +12,6 @@
   user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
   transition:all 0.2s ease;
 
   &:focus,
@@ -158,26 +154,21 @@
   .btn-dropdown (@dangerColor);
 }
 
+.@{prefix-cls}-btn {
+  .defaultBtnSize()
+}
+
 .@{prefix-cls}-btn-lg,
 .@{prefix-cls}-btn-group-lg > .@{prefix-cls}-btn {
-  padding: 10px 16px;
-  font-size: 18px;
-  line-height: 1.3333333;
-  border-radius: 6px;
+  .lgBtnSize()
 }
 .@{prefix-cls}-btn-sm,
 .@{prefix-cls}-btn-group-sm > .@{prefix-cls}-btn {
-  padding: 5px 10px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
+  .smBtnSize()
 }
 .@{prefix-cls}-btn-xs,
 .@{prefix-cls}-btn-group-xs > .@{prefix-cls}-btn {
-  padding: 1px 5px;
-  font-size: 12px;
-  line-height: 1.5;
-  border-radius: 3px;
+  .xsBtnSize()
 }
 .@{prefix-cls}-btn-block {
   display: block;

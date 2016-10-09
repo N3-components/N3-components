@@ -31,7 +31,7 @@ NPM
 Link：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
 
 ```bash
-npm install N3-Components
+npm install N3-components
 ```
 
 Quick Start
@@ -41,7 +41,7 @@ You can install components for your global environment.
 
 ```javascript
 import Vue from 'vue'
-import N3Components from 'N3-Components'
+import N3Components from 'N3-components'
 N3Components.install(Vue)
 ```
 
@@ -49,7 +49,7 @@ You can also import single component when needed.
 
 ```javascript
 import Vue from 'vue'
-import N3Components from 'N3-Components'
+import N3Components from 'N3-components'
 import {n3Alert} from N3Components
 ```
 

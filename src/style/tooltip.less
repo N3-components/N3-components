@@ -22,8 +22,8 @@
     .@{prefix-cls}-tooltip-arrow {
       bottom: 0;
       left: 50%;
-      margin-left: -5px;
-      border-width: 5px 5px 0;
+      margin-left: -@tooltipArrow;
+      border-width: @tooltipArrow @tooltipArrow 0;
       border-top-color: @blackColor;
     }
   }
@@ -34,8 +34,8 @@
     .@{prefix-cls}-tooltip-arrow {
       top: 50%;
       left: 0;
-      margin-top: -5px;
-      border-width: 5px 5px 5px 0;
+      margin-top: -@tooltipArrow;
+      border-width: @tooltipArrow @tooltipArrow @tooltipArrow 0;
       border-right-color: @blackColor;
     }
   }
@@ -46,8 +46,8 @@
     .@{prefix-cls}-tooltip-arrow {
       top: 0;
       left: 50%;
-      margin-left: -5px;
-      border-width: 0 5px 5px;
+      margin-left: -@tooltipArrow;
+      border-width: 0 @tooltipArrow @tooltipArrow;
       border-bottom-color: @blackColor;
     }
   }
@@ -58,8 +58,8 @@
     .@{prefix-cls}-tooltip-arrow {
       top: 50%;
       right: 0;
-      margin-top: -5px;
-      border-width: 5px 0 5px 5px;
+      margin-top: -@tooltipArrow;
+      border-width: @tooltipArrow 0 @tooltipArrow @tooltipArrow;
       border-left-color: @blackColor;
     }
   }

@@ -16,14 +16,14 @@
     background: @whiteColor;
     position: absolute;
     border: 1px solid @lightGrayColor;
-    box-shadow: 0 0 4px rgba(0,0,0,0.17);
+    box-shadow: @cascaderShadow;
     white-space: nowrap
   }
   &-menu {
     display: inline-block;
     vertical-align: top;
-    min-width: 111px;
-    height: 180px;
+    min-width: @cascaderMinWidth;
+    height: @cascaderHeight;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@
     }
 
     &-item {
-      padding: 7px 16px;
+      padding: @cascaderPadding;
       cursor: pointer;
       white-space: nowrap;
       overflow: hidden;
