@@ -28,8 +28,20 @@
       </div>
       <div :transition="transition" v-if="areValidNodes(node.children)" class="{{prefixCls}}-tree-children" v-show="isOpened(index)">
         <div class="{{prefixCls}}-tree-nodes">
-          <n3-tree class="inner" :id="id" :selected-key.sync="selectedKey" :data.sync="node.children" :parent.once="node.value" :load-data="loadData"
-            :expand-all="expandAll" :checkable="checkable" :checked-keys.sync="checkedKeys" :on-select="onSelect" :on-check="onCheck">
+          <n3-tree 
+            class="inner" 
+            :id="id"
+            :selected-key.sync="selectedKey"
+            :data.sync="node.children"
+            :parent.once="node.value"
+            :load-data="loadData"
+            :expand-all="expandAll"
+            :checkable="checkable"
+            :checked-keys.sync="checkedKeys"
+            :on-select="onSelect"
+            :on-check="onCheck"
+            :sort="sort"
+          >
           </n3-tree>
         </div>
       </div>
