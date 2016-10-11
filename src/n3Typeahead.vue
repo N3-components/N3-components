@@ -139,17 +139,20 @@ export default {
       }
     },
     update () {
+      let self = this
       if (this.readonly || this.disabled) return
-      if (!this.query) {
-        this.reset()
-        return false
-      }
+      setTimeout(()=>{
+        if (!self.query) {
+          self.reset()
+          return false
+        }
 
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.query)
-      } else if (this.data) {
-        this.items = this.primitiveData
-      }
+        if (type.isFunction(self.onChange)) {
+          self.onChange(self.query)
+        } else if (self.data) {
+          self.items = self.primitiveData
+        }
+      },100)
     },
     reset () {
       this.items = []

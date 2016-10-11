@@ -37158,17 +37158,20 @@
 	      }
 	    },
 	    update: function update() {
+	      var self = this;
 	      if (this.readonly || this.disabled) return;
-	      if (!this.query) {
-	        this.reset();
-	        return false;
-	      }
+	      setTimeout(function () {
+	        if (!self.query) {
+	          self.reset();
+	          return false;
+	        }
 	
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(this.query);
-	      } else if (this.data) {
-	        this.items = this.primitiveData;
-	      }
+	        if (_type2.default.isFunction(self.onChange)) {
+	          self.onChange(self.query);
+	        } else if (self.data) {
+	          self.items = self.primitiveData;
+	        }
+	      }, 100);
 	    },
 	    reset: function reset() {
 	      this.items = [];
