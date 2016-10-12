@@ -90,7 +90,7 @@
                 <td v-if="selection" class="{{prefixCls}}-row-select">
                    <input type="checkbox" 
                    	v-model="checkedValues"  
-                   	:value="data[key]" @change.stop="onCheckOne($event,data)" 
+                   	:value="stringify(data)" @change.stop="onCheckOne($event,data)" 
                    	v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
                 </td>
                 <td v-for="col in initColumns" v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0" :colspan="colspan(col,data)" :rowspan="rowspan(col,data)">
@@ -215,7 +215,6 @@ export default {
       key: 'n3Key',
       mergeMap: {},
       isDisabledAll: false,
-      checkedRows: [],
       pagesizeFirst: true,
       filterArr: [],
       filterMap: {},
@@ -236,9 +235,6 @@ export default {
     }
   },
   watch: {
-    checkedRows (val) {
-      this.selection.checkRows = val
-    },
     selectdCols (val) {
       let copy = []
       for (let i = 0; i < this.initColumns.length; i++) {
@@ -293,6 +289,19 @@ export default {
     n3Loading
   },
   computed: {
+    checkedRows: {
+      get () {
+        return  this.selection.checkRows
+      },
+      set (val) {
+        let self = this
+        this.selection.checkRows = val.map(i => {
+          let a = Object.assign({},i)
+          delete a[self.key]
+          return a
+        })
+      }
+    },
     classObj () {
       let {prefixCls, striped, bordered, hover, responsive} = this
       let klass = {}
@@ -308,7 +317,7 @@ export default {
     isCheckedAll () {
       let self = this
       let rows = this.checkebleRows.filter((record) => {
-        return self.checkedValues.indexOf(record[self.key]) > -1
+        return self.checkedValues.indexOf(JSON.stringify(record)) > -1
       })
 
       return this.checkebleRows.length === rows.length
@@ -326,7 +335,7 @@ export default {
     checkedValues () {
       let self = this
       let checkedKeys = self.checkedRows.map((record) => {
-        return record[self.key]
+        return JSON.stringify(record)
       })
       return checkedKeys
     },
@@ -345,6 +354,22 @@ export default {
     }
   },
   methods: {
+    stringify (val) {
+      let a = Object.assign({},val)
+      delete a[this.key]
+
+      return JSON.stringify(a)
+    },
+    compare (a,b) {
+      let e = true
+      for (let i in a) {
+        if (a[i] != b[i]) {
+          e = false
+          return false
+        }
+      }
+      return e
+    },
     colspan (col, data) {
       let m = this.mergeRule
       if (!m) return 1
@@ -360,16 +385,18 @@ export default {
       return ret ? ret.rowspan : 1
     },
     onCheckOne (event, record) {
-      const self = this
+      let self = this
       let input = event.srcElement || event.target
-      const checked = input.checked
+      let checked = input.checked
       if (checked) {
-        if (self.checkedRows.indexOf(record) === -1) {
-          self.checkedRows.push(record)
+        let array = self.checkedRows
+        if (self.checkedRows.findIndex(item => {return self.compare(item,record)}) === -1) {
+         array.push(record)
         }
+        self.checkedRows = array
       } else {
         self.checkedRows = self.checkedRows.filter((item) => {
-          return record[self.key] !== item[self.key]
+          return self.compare(item,record)
         })
       }
       if (self.selection.onSelect) {
@@ -378,24 +405,28 @@ export default {
     },
     onCheckAll (event) {
       let self = this
-      const changeRows = []
+      let changeRows = []
       let input = event.srcElement || event.target
-      const checked = input.checked
+      let checked = input.checked
       if (checked) {
+        let array = self.checkedRows
         self.checkebleRows.forEach((record, i) => {
-          if (self.checkedRows.indexOf(record) < 0) {
-            self.checkedRows.push(record)
+          if (self.checkedRows.findIndex(item => {return self.compare(item,record)}) < 0) {
+            array.push(record)
             changeRows.push(record)
           }
         })
+        self.checkedRows = array
       } else {
+        let array = self.checkedRows
         self.checkebleRows.forEach((record, i) => {
-          let index = self.checkedRows.indexOf(record)
+          let index = self.checkedRows.findIndex(item => {return self.compare(item,record)})
           if (index >= 0) {
-            self.checkedRows.splice(index, 1)
+            array.splice(index, 1)
             changeRows.push(record)
           }
         })
+        self.checkedRows = array
       }
       if (self.selection.onSelectAll) {
         self.selection.onSelectAll(checked, self.checkedRows, changeRows)
@@ -424,7 +455,7 @@ export default {
         method: col.sortMethod
       }
 
-      if (this.sort && typeof this.onChange === 'function') {
+      if (this.sort && type.isFunction(this.onChange)) {
         this.tableChange()
       } else {
         this.render()
@@ -432,14 +463,14 @@ export default {
     },
     gosearch () {
       this.pagination.current = 1
-      if (this.search && typeof this.onChange === 'function') {
+      if (this.search && type.isFunction(this.onChange)) {
         this.tableChange()
       } else {
         this.render()
       }
     },
     pageChange () {
-      if (this.page && typeof this.onChange === 'function') {
+      if (this.page && type.isFunction(this.onChange)) {
         this.tableChange()
       } else {
         this.render()
@@ -450,7 +481,7 @@ export default {
         this.filterArr[i].value = []
       }
       this.pagination.current = 1
-      if (this.filter && typeof this.onChange === 'function') {
+      if (this.filter && type.isFunction(this.onChange)) {
         this.tableChange()
       } else {
         this.render()
@@ -458,7 +489,7 @@ export default {
     },
     goFilter () {
       this.pagination.current = 1
-      if (this.filter && typeof this.onChange === 'function') {
+      if (this.filter && type.isFunction(this.onChange)) {
         this.tableChange()
       } else {
         this.render()
@@ -553,14 +584,6 @@ export default {
         ret[i] = Object.assign({}, s[i], {n3Key: i})
       }
       
-      if (this.selection) {
-        this.checkedRows = s.filter((record) => {
-          if (this.checkedValues) {
-            return this.checkedValues.indexOf(record[this.key]) >= 0
-          }
-        })
-      }
-
       this.initSource = ret
     },
 
@@ -635,22 +658,22 @@ export default {
       let s = this.initSource
       let ret = this.initSource.slice(0)
 
-      if (this.filter && typeof this.onChange !== 'function' && this.filterArr.length > 0 && !this.isFilterEmpty()) {
+      if (this.filter && !type.isFunction(this.onChange) && this.filterArr.length > 0 && !this.isFilterEmpty()) {
         ret = this.filterRet(ret)
       }
 
-      if (this.search && typeof this.onChange !== 'function' && this.query) {
+      if (this.search && !type.isFunction(this.onChange) && this.query) {
         ret = []
         for (let i = 0; i < s.length; i++) {
           this.searchMap[s[i][this.key]].indexOf(this.query) !== -1 ? ret.push(s[i]) : 0
         }
       }
 
-      if (this.sortInfo.index && typeof this.onChange !== 'function') {
+      if (this.sortInfo.index && !type.isFunction(this.onChange)) {
         this.listSort(ret, this.sortInfo.index, this.sortInfo.type, this.sortInfo.method)
       }
 
-      if (this.page && typeof this.onChange !== 'function') {
+      if (this.page && !type.isFunction(this.onChange)) {
         this.pagination.total = ret.length
         ret = ret.slice((this.pagination.current - 1) * this.pagination.pagesize, (this.pagination.current - 1) * this.pagination.pagesize + this.pagination.pagesize)
       }
@@ -666,7 +689,7 @@ export default {
         if (this.selection) {
           self.isDisabledAll = !self.checkebleRows.length
         }
-        if (typeof self.onComplete === 'function') {
+        if (type.isFunction(self.onComplete)) {
           self.onComplete()
         }
       })

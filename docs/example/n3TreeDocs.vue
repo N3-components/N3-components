@@ -262,6 +262,7 @@ new Vue({
     computed: {
       id: Date.now()
     },
+    
     data () {
       return {
         files1: [{

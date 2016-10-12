@@ -3,7 +3,7 @@
     <h1 class="page-header"><a href="#数据表格" class="anchor">数据表格</a><span class="author"> </span></h1>
     <div class="bs-example">
       <h4>Table</h4>
-
+      {{selection.checkRows | json}}
       <n3-data-table  
         :selection="selection"
         :source="source" 
