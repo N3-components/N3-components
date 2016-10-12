@@ -296,9 +296,7 @@ export default {
       set (val) {
         let self = this
         this.selection.checkRows = val.map(i => {
-          let a = Object.assign({},i)
-          delete a[self.key]
-          return a
+          return self.delkey(i)
         })
       }
     },
@@ -355,10 +353,13 @@ export default {
   },
   methods: {
     stringify (val) {
-      let a = Object.assign({},val)
+      return JSON.stringify(this.delkey(val))
+    },
+    delkey (val) {
+       let a = Object.assign({},val)
       delete a[this.key]
 
-      return JSON.stringify(a)
+      return a
     },
     compare (a,b) {
       let e = true
@@ -413,7 +414,7 @@ export default {
         self.checkebleRows.forEach((record, i) => {
           if (self.checkedRows.findIndex(item => {return self.compare(item,record)}) < 0) {
             array.push(record)
-            changeRows.push(record)
+            changeRows.push(self.delkey(record))
           }
         })
         self.checkedRows = array
@@ -423,7 +424,7 @@ export default {
           let index = self.checkedRows.findIndex(item => {return self.compare(item,record)})
           if (index >= 0) {
             array.splice(index, 1)
-            changeRows.push(record)
+            changeRows.push(self.delkey(record))
           }
         })
         self.checkedRows = array

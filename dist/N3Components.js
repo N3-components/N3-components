@@ -19966,9 +19966,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      set: function set(val) {
 	        var self = this;
 	        this.selection.checkRows = val.map(function (i) {
-	          var a = Object.assign({}, i);
-	          delete a[self.key];
-	          return a;
+	          return self.delkey(i);
 	        });
 	      }
 	    },
@@ -20030,10 +20028,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	  methods: {
 	    stringify: function stringify(val) {
+	      return JSON.stringify(this.delkey(val));
+	    },
+	    delkey: function delkey(val) {
 	      var a = Object.assign({}, val);
 	      delete a[this.key];
 	
-	      return JSON.stringify(a);
+	      return a;
 	    },
 	    compare: function compare(a, b) {
 	      var e = true;
@@ -20093,7 +20094,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              return self.compare(item, record);
 	            }) < 0) {
 	              array.push(record);
-	              changeRows.push(record);
+	              changeRows.push(self.delkey(record));
 	            }
 	          });
 	          self.checkedRows = array;
@@ -20107,7 +20108,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            });
 	            if (index >= 0) {
 	              array.splice(index, 1);
-	              changeRows.push(record);
+	              changeRows.push(self.delkey(record));
 	            }
 	          });
 	          self.checkedRows = array;
