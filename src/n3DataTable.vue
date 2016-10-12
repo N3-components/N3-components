@@ -237,7 +237,7 @@ export default {
   },
   watch: {
     checkedRows (val) {
-      this.selection.checkedRows = val
+      this.selection.checkRows = val
     },
     selectdCols (val) {
       let copy = []
@@ -552,7 +552,7 @@ export default {
         }
         ret[i] = Object.assign({}, s[i], {n3Key: i})
       }
-
+      
       if (this.selection) {
         this.checkedRows = s.filter((record) => {
           if (this.checkedValues) {

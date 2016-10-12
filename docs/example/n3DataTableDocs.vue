@@ -3,6 +3,7 @@
     <h1 class="page-header"><a href="#数据表格" class="anchor">数据表格</a><span class="author"> </span></h1>
     <div class="bs-example">
       <h4>Table</h4>
+
       <n3-data-table  
         :selection="selection"
         :source="source" 
@@ -177,8 +178,8 @@ new Vue({
           <td><pre><code class="language-javascript">
 {
   checkRows:[],
-  onSelect (record, checked, checkedRows) {},
-  onSelectAll (checked, checkedRows, changeRows) {},
+  onSelect (record, checked, checkRows) {},
+  onSelectAll (checked, checkRows, changeRows) {},
   getCheckboxProps(record){
     if(record.key == 2){
       return {
@@ -356,8 +357,8 @@ export default {
     return {
       selection: {
         checkRows: [],
-        onSelect (record, checked, checkedRows) {},
-        onSelectAll (checked, checkedRows, changeRows) {},
+        onSelect (record, checked, checkRows) {},
+        onSelectAll (checked, checkRows, changeRows) {},
         getCheckboxProps (record) {
           if (record.key == 2) {
             return {
