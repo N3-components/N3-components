@@ -262,7 +262,7 @@ export default {
       this.init()
     },
     filterList () {
-      this.handlerFilter(true)
+      this.handlerFilter()
     }
   },
   created () {
@@ -509,14 +509,14 @@ export default {
       }
     },
 
-    handlerFilter (force) {
+    handlerFilter () {
       let s = this.columns
 
       if (!this.filter) return
 
       this.filterMap = {}
 
-      if (force) {
+      if (type.isArray(this.filterList)) {
         this.filterArr = this.filterList
       } else {
         for (let i = 0; i < s.length; i++) {
@@ -555,20 +555,22 @@ export default {
       this.handlerFilter()
       this.selectdCols = selectdCols
       this.initColumns = ret
-      this.selectOptions = ret
+      this.selectOptions = ret    
     },
 
     handlerSource () {
       let s = this.source
       let ret = []
       let filterValue = {}
-
-      for (let i in this.filterMap) {
-        var filter = this.filterMap[i]
-        filterValue[i] = filter['filter']['value'].slice(0)
-        filter['values'] = {}
-        filter['filter']['options'] = []
-        filter['filter']['value'] = []
+      
+      if (!type.isArray(this.filterList)) {
+        for (let i in this.filterMap) {
+          var filter = this.filterMap[i]
+          filterValue[i] = filter['filter']['value'].slice(0)
+          filter['values'] = {}
+          filter['filter']['options'] = []
+          filter['filter']['value'] = []
+        }
       }
 
       for (let i = 0; i < s.length; i++) {

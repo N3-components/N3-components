@@ -79,6 +79,7 @@ import n3UploaderDocs from './n3UploaderDocs.vue'
 import n3FormDocs from './n3FormDocs.vue'
 import n3CheckboxDocs from './n3CheckboxDocs.vue'
 import n3RadioDocs from './n3RadioDocs.vue'
+import n3CardDocs from './n3CardDocs.vue'
 import n3AnimateDocs from './n3AnimateDocs.vue'
 
 export default{
@@ -125,6 +126,7 @@ export default{
 
         '展示': {show: true,
                 list: [{label: '折叠面板', value: 'n3AccordionDocs'},
+                 {label: '卡片', value: 'n3CardDocs'},
                  {label: '侧边栏', value: 'n3AsideDocs'},
                  {label: '幻灯片', value: 'n3CarouselDocs'},
                  {label: '数据表格', value: 'n3DataTableDocs'},
@@ -227,6 +229,7 @@ export default{
     n3UploaderDocs,
     n3TreeDocs,
     n3DropdownDocs,
+    n3CardDocs,
     n3ModalDocs,
     n3PopoverDocs,
     n3SelectDocs,

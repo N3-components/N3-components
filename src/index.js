@@ -56,6 +56,7 @@ import n3FormItem from './n3FormItem'
 import n3Slider from './n3Slider'
 import n3Slide from './n3Slide'
 import n3Tree from './n3Tree'
+import n3Card from './n3Card'
 import n3Uploader from './n3Uploader'
 import transition from './transition'
 import './style/common.less'
@@ -99,6 +100,7 @@ const Components = {
   n3PopConfirm,
   n3Progressbar,
   n3Progress,
+  n3Card,
   n3RadioGroup,
   n3Radio,
   n3RadioBtn,

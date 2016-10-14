@@ -57,7 +57,6 @@ export default {
 <style scoped>
 .sidebar{
   background-color: #fff;
-  border:1px solid #ddd;
   box-shadow: 1px 1px 10px #ddd;
   z-index: 10000;
   padding:10px; 
