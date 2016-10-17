@@ -3,6 +3,7 @@
         <h1 class="page-header"><a href="#表单验证" class="anchor">表单验证</a><span class="author"> </span></h1>
         <div class="bs-example">
         	<n3-form v-ref:form>
+          {{ivalidate}}
                 <n3-form-item
                     need
                     label="姓名"
@@ -141,7 +142,7 @@
 
                  <n3-form-item>
                      <n3-button type="primary" @click="submit" >提交</n3-button>
-                     <n3-button type="primary" @click="validate = false" >关闭验证</n3-button>
+                     <!-- <n3-button type="primary" @click="validate = false" >关闭验证</n3-button> -->
                 </n3-form-item>
             </n3-form>
         	<pre><code class="language-markup"><script type="language-mark-up">
@@ -283,7 +284,6 @@
 
      <n3-form-item>
          <n3-button type="primary" @click="submit" >提交</n3-button>
-         <n3-button type="primary" @click="validate = false" >关闭验证</n3-button>
     </n3-form-item>
 </n3-form>
           </script></code></pre>
@@ -482,12 +482,12 @@ new Vue({
                 <td>220px</td>
                 <td>宽度</td>
               </tr>
-              <tr>
+             <!--  <tr>
                 <td>validate</td>
                 <td><code>Boolean</code></td>
                 <td>false</td>
                 <td>是否打开检验</td>
-              </tr>
+              </tr> -->
               <tr>
                 <td>placeholder</td>
                 <td><code>String</code></td>
