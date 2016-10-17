@@ -7,7 +7,7 @@
         一次只打开一个
       </p>
       <n3-accordion :one-at-atime="checked" :on-change="change">
-        <n3-panel  :is-open="true" index="1">
+        <n3-panel  :is-open="true" index="1" :on-change="change">
           <div slot="header">Panel #1</div>
           <p>...</p>
           <p>...</p>

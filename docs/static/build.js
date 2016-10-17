@@ -11681,7 +11681,7 @@
 	//         一次只打开一个
 	//       </p>
 	//       <n3-accordion :one-at-atime="checked" :on-change="change">
-	//         <n3-panel  :is-open="true" index="1">
+	//         <n3-panel  :is-open="true" index="1" :on-change="change">
 	//           <div slot="header">Panel #1</div>
 	//           <p>...</p>
 	//           <p>...</p>
@@ -11815,7 +11815,7 @@
 /* 497 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"折叠面板\"  >\n    <h1 class=\"page-header\"><a href=\"#折叠面板\" class=\"anchor\">折叠面板</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <input type=\"checkbox\" v-model=\"checked\">\n        一次只打开一个\n      </p>\n      <n3-accordion :one-at-atime=\"checked\" :on-change=\"change\">\n        <n3-panel  :is-open=\"true\" index=\"1\">\n          <div slot=\"header\">Panel #1</div>\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n        <n3-panel header=\"Panel #2\" index=\"2\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n          </n3-panel>\n        <n3-panel header=\"Panel #3\" index=\"3\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n        <n3-panel header=\"Panel #4\" index=\"4\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n      </n3-accordion>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<input type=\"checkbox\" v-model=\"checked\">\n<label for=\"checked\">一次只打开一个</label>\n\n <n3-accordion :one-at-atime=\"checked\" :on-change=\"change\">\n  <n3-panel header=\"Panel #1\" :is-open=\"true\" index=\"1\">\n    <div slot=\"header\">Panel #1</div>\n    ...\n    \n  </n3-panel>\n  <n3-panel header=\"Panel #2\" index=\"2\">\n    ...\n\n  </n3-panel>\n  <n3-panel header=\"Panel #3\" index=\"3\">\n    ...\n\n  </n3-panel>\n  <n3-panel header=\"Panel #4\" index=\"4\">\n    ...\n    \n  </n3-panel>\n</n3-accordion>\n    </script></code></pre>\n\n    <h2>n3-accordion参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>one-at-time</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>控制当一个面板被打开时，其他面板是否关闭</td>\n        </tr>\n        <tr>\n          <td>effect</td>\n          <td><code>String</code></td>\n          <td>collapse</td>\n          <td>切换动画</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>改变时的回调函数,参数为panel的状态数组</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-panel参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>is-open</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>面板打开还是关闭</td>\n        </tr>\n        <tr>\n          <td>header</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>面板头部显示的内容，点击该内容进行面板的打开收缩</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>改变时的回调函数,参数为panel的状态</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"折叠面板\"  >\n    <h1 class=\"page-header\"><a href=\"#折叠面板\" class=\"anchor\">折叠面板</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <input type=\"checkbox\" v-model=\"checked\">\n        一次只打开一个\n      </p>\n      <n3-accordion :one-at-atime=\"checked\" :on-change=\"change\">\n        <n3-panel  :is-open=\"true\" index=\"1\" :on-change=\"change\">\n          <div slot=\"header\">Panel #1</div>\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n        <n3-panel header=\"Panel #2\" index=\"2\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n          </n3-panel>\n        <n3-panel header=\"Panel #3\" index=\"3\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n        <n3-panel header=\"Panel #4\" index=\"4\">\n          <p>...</p>\n          <p>...</p>\n          <p>...</p>\n        </n3-panel>\n      </n3-accordion>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<input type=\"checkbox\" v-model=\"checked\">\n<label for=\"checked\">一次只打开一个</label>\n\n <n3-accordion :one-at-atime=\"checked\" :on-change=\"change\">\n  <n3-panel header=\"Panel #1\" :is-open=\"true\" index=\"1\">\n    <div slot=\"header\">Panel #1</div>\n    ...\n    \n  </n3-panel>\n  <n3-panel header=\"Panel #2\" index=\"2\">\n    ...\n\n  </n3-panel>\n  <n3-panel header=\"Panel #3\" index=\"3\">\n    ...\n\n  </n3-panel>\n  <n3-panel header=\"Panel #4\" index=\"4\">\n    ...\n    \n  </n3-panel>\n</n3-accordion>\n    </script></code></pre>\n\n    <h2>n3-accordion参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>one-at-time</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>控制当一个面板被打开时，其他面板是否关闭</td>\n        </tr>\n        <tr>\n          <td>effect</td>\n          <td><code>String</code></td>\n          <td>collapse</td>\n          <td>切换动画</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>改变时的回调函数,参数为panel的状态数组</td>\n        </tr>\n      </tbody>\n    </table>\n    <h2>n3-panel参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>is-open</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>面板打开还是关闭</td>\n        </tr>\n        <tr>\n          <td>header</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>面板头部显示的内容，点击该内容进行面板的打开收缩</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>改变时的回调函数,参数为panel的状态</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 498 */
@@ -17608,7 +17608,7 @@
 	//     <div class="bs-docs-section" id="表单验证"  >
 	//         <h1 class="page-header"><a href="#表单验证" class="anchor">表单验证</a><span class="author"> </span></h1>
 	//         <div class="bs-example">
-	//         	<n3-form  :validate="validate" :result.sync="result" >
+	//         	<n3-form v-ref:form>
 	//                 <n3-form-item
 	//                     need
 	//                     label="姓名"
@@ -17751,7 +17751,7 @@
 	//                 </n3-form-item>
 	//             </n3-form>
 	//         	<pre><code class="language-markup"><script type="language-mark-up">
-	// <n3-form :validate="validate" :result.sync="result">
+	// <n3-form v-ref:form>
 	//     <n3-form-item
 	//         need
 	//         label="姓名"
@@ -17967,14 +17967,11 @@
 	//       }
 	//     },
 	//     submit () {
-	//       this.validate = true
-	
-	//       this.$nextTick(() => {
-	//         console.log(this.result.isvalid)
-	//       })
+	//      this.$refs.form.validateFields(result=>{
+	//         console.log(result)
+	//      })
 	//     }
 	//   }
-	
 	// })
 	//         	</script></code></pre>
 	
@@ -18007,8 +18004,15 @@
 	//                 <td></td>
 	//                 <td>验证结果</td>
 	//               </tr>
+	//               <tr>
+	//                 <td>on-validate-change</td>
+	//                 <td><code>Function</code></td>
+	//                 <td></td>
+	//                 <td>验证结果变化</td>
+	//               </tr>
 	//             </tbody>
 	//           </table>
+	//           <p>验证建议直接调用组件的<code style="color:red">validateFields</code> 方法，具体可查看样例</p>
 	
 	//           <h2>n3-from-item参数</h2>
 	//           <table class="table table-bordered">
@@ -18214,8 +18218,9 @@
 	      }
 	    },
 	    submit: function submit() {
-	      this.validate = true;
-	      console.log(this.result);
+	      this.$refs.form.validateFields(function (result) {
+	        console.log(result);
+	      });
 	    }
 	  }
 	};
@@ -18225,7 +18230,7 @@
 /* 605 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"表单验证\"  >\n        <h1 class=\"page-header\"><a href=\"#表单验证\" class=\"anchor\">表单验证</a><span class=\"author\"> </span></h1>\n        <div class=\"bs-example\">\n        \t<n3-form  :validate=\"validate\" :result.sync=\"result\" >\n                <n3-form-item\n                    need\n                    label=\"姓名\"\n                    :label-col=\"3\">\n                <n3-input\n                    name=\"name\"\n                    :value.sync=\"model.name\"\n                    :rules=\"[{type:'required'}]\"\n                    :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"年龄\"\n                    :label-col=\"3\">\n                <n3-input-number\n                    name=\"age\"\n                    :value.sync=\"model.age\"\n                    :rules=\"[{type:'number'},{type:'required'}]\">\n                </n3-input-number>\n                </n3-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"地址\"\n                    :label-col=\"3\">\n                <n3-cascader\n                    name=\"address\"\n                    :options=\"options\"\n                    :value.sync=\"model.address\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-cascader>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"生日\"\n                    :label-col=\"3\">\n                <n3-datepicker\n                    name=\"birthday\"\n                    :value.sync=\"model.birthday\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-datepicker>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"学校\"\n                    :label-col=\"3\">\n                <n3-typeahead\n                    name=\"学校\"\n                    :query.sync = \"model.school\"\n                    :data=\"schoolData\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-typeahead>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"爱好\"\n                    :label-col=\"3\">\n                <n3-checkbox-group\n                    name=\"hobby\"\n                    :value.sync = \"model.hobby\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-checkbox value=\"0\">看书</n3-checkbox>\n                    <n3-checkbox value=\"1\">运动</n3-checkbox>\n                    <n3-checkbox value=\"2\">旅行</n3-checkbox>\n                </n3-checkbox-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"性别\"\n                    :label-col=\"3\">\n                <n3-radio-group\n                    name=\"sex\"\n                    :value.sync = \"model.sex\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-radio value=\"0\">男</n3-radio>\n                    <n3-radio value=\"1\">女</n3-radio>\n                </n3-radio-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"专业\"\n                    :label-col=\"3\">\n                <n3-select\n                    name=\"sex\"\n                    :options='profession'\n                    :value.sync = \"model.profession\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-select>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"级别\"\n                    :label-col=\"3\">\n                  <n3-slider\n                      name=\"level\"\n                      :value.sync = \"model.level\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-slider>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"开启状态\"\n                    :label-col=\"3\">\n                  <n3-switch\n                      name=\"state\"\n                      :value.sync = \"model.state\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-switch>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"喜欢的明星\"\n                    :label-col=\"3\">\n                  <n3-multiple-input\n                      name=\"star\"\n                      :value.sync = \"model.star\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-multiple-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"想说的话\"\n                    :label-col=\"3\">\n                  <n3-textarea\n                      name=\"suggestion\"\n                      :value.sync = \"model.suggestion\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-textarea>\n                </n3-form-item>\n\n                 <n3-form-item>\n                     <n3-button type=\"primary\" @click=\"submit\" >提交</n3-button>\n                     <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button>\n                </n3-form-item>\n            </n3-form>\n        \t<pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-form :validate=\"validate\" :result.sync=\"result\">\n    <n3-form-item\n        need\n        label=\"姓名\"\n        :label-col=\"3\">\n    <n3-input\n        name=\"name\"\n        :value.sync=\"model.name\"\n        :rules=\"[{type:'required'}]\"\n        :custom-validate=\"nameValidate\">\n    </n3-input>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"年龄\"\n        :label-col=\"3\">\n    <n3-input\n        name=\"age\"\n        :value.sync=\"model.age\"\n        :rules=\"[{type:'number'},{type:'required'}]\">\n    </n3-input>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"地址\"\n        :label-col=\"3\">\n    <n3-cascader\n        name=\"address\"\n        :options=\"options\"\n        :value.sync=\"model.address\"\n        :rules=\"[{type:'required'}]\">\n    </n3-cascader>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"生日\"\n        :label-col=\"3\">\n    <n3-datepicker\n        name=\"birthday\"\n        :value.sync=\"model.birthday\"\n        :rules=\"[{type:'required'}]\">\n    </n3-datepicker>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"学校\"\n        :label-col=\"3\">\n    <n3-typeahead\n        name=\"学校\"\n        :query.sync = \"model.school\"\n        :data=\"schoolData\"\n        :rules=\"[{type:'required'}]\">\n    </n3-typeahead>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"爱好\"\n        :label-col=\"3\">\n    <n3-checkbox-group\n        name=\"hobby\"\n        :value.sync = \"model.hobby\"\n        :rules=\"[{type:'required'}]\">\n        <n3-checkbox value=\"0\">看书</n3-checkbox>\n        <n3-checkbox value=\"1\">运动</n3-checkbox>\n        <n3-checkbox value=\"2\">旅行</n3-checkbox>\n    </n3-checkbox-group>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"性别\"\n        :label-col=\"3\">\n    <n3-radio-group\n        name=\"sex\"\n        :value.sync = \"model.sex\"\n        :rules=\"[{type:'required'}]\">\n        <n3-radio value=\"0\">男</n3-radio>\n        <n3-radio value=\"1\">女</n3-radio>\n    </n3-radio-group>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"专业\"\n        :label-col=\"3\">\n    <n3-select\n        name=\"sex\"\n        :options='profession'\n        :value.sync = \"model.profession\"\n        :rules=\"[{type:'required'}]\">\n    </n3-select>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"级别\"\n        :label-col=\"3\">\n      <n3-slider\n          name=\"level\"\n          :value.sync = \"model.level\"\n          :rules=\"[{type:'required'}]\">\n      </n3-slider>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"开启状态\"\n        :label-col=\"3\">\n      <n3-switch\n          name=\"state\"\n          :value.sync = \"model.state\"\n          :rules=\"[{type:'required'}]\">\n      </n3-switch>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"喜欢的明星\"\n        :label-col=\"3\">\n      <n3-multiple-input\n          name=\"star\"\n          :value.sync = \"model.star\"\n          :rules=\"[{type:'required'}]\">\n      </n3-multiple-input>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"想说的话\"\n        :label-col=\"3\">\n      <n3-textarea\n          name=\"suggestion\"\n          :value.sync = \"model.suggestion\"\n          :rules=\"[{type:'required'}]\">\n      </n3-textarea>\n    </n3-form-item>\n\n     <n3-form-item>\n         <n3-button type=\"primary\" @click=\"submit\" >提交</n3-button>\n         <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button>\n    </n3-form-item>\n</n3-form>\n          </script></code></pre>\n          <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n  data: {\n    profession: [{\n      value: '学生',\n      label: '学生'\n    }, {\n      value: '工程师',\n      label: '工程师'\n    }, {\n      value: '医生',\n      label: '医生'\n    }],\n    model: {\n      name: '',\n      age: '',\n      address: [],\n      birthday: '',\n      sex: '',\n      school: '',\n      hobby: [],\n      profession: '',\n      state: false,\n      star: [],\n      suggestion: ''\n    },\n    schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],\n    sexOptions: [{\n      value: '1',\n      label: '男'\n    }, {\n      value: '0',\n      label: '女'\n    }],\n    options: [{\n      value: 'zhejiang',\n      label: '浙江',\n      children: [{\n        value: 'hangzhou',\n        label: '杭州',\n        children: [{\n          value: 'xihu',\n          label: '西湖'\n        }]\n      }]\n    }, {\n      value: 'jiangsu',\n      label: '江苏',\n      children: [{\n        value: 'nanjing',\n        label: '南京',\n        children: [{\n          value: 'zhonghuamen',\n          label: '中华门'\n        }]\n      }]\n    }],\n    validate: false,\n    result: {}\n  },\n  methods: {\n    nameValidate (val) {\n      if (/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/.test(val)) {\n        return {\n          validStatus: 'success'\n        }\n      } else {\n        return {\n          validStatus: 'error',\n          tips: '请输入中文名'\n        }\n      }\n    },\n    submit () {\n      this.validate = true\n\n      this.$nextTick(() => {\n        console.log(this.result.isvalid)\n      })\n    }\n  }\n\n})\n        \t</script></code></pre>\n\n          <h2>n3-from参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>type</td>\n                <td><code>String</code> 如:  <code>horizontal</code><code>inline</code></td>\n                <td>horizontal</td>\n                <td>布局方式</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开验证</td>\n              </tr>\n              <tr>\n                <td>result</td>\n                <td><code>Object</code></td>\n                <td></td>\n                <td>验证结果</td>\n              </tr>\n            </tbody>\n          </table>\n\n          <h2>n3-from-item参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>label</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>label-col</td>\n                <td><code>Number</code></td>\n                <td>2</td>\n                <td>label所占栅格数</td>\n              </tr>\n               <tr>\n                <td>wrap-col</td>\n                <td><code>Number</code></td>\n                <td></td>\n                <td>item所占栅格数</td>\n              </tr>\n              <tr>\n                <td>need</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>红点标记</td>\n              </tr>\n            </tbody>\n          </table>\n\n\n          <h2>待验证组件参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>name</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td>标示输入项，与结果内的值对应</td>\n              </tr>\n              <tr>\n                <td>readonly</td>\n                <td><code>Boolean</code></td>\n                <td><code>false</code></td>\n                <td>只读，无法输入，级联，时间日期等组件默认无法手动输入</td>\n              </tr>\n              <tr>\n                <td>disabled</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>禁止改变值</td>\n              </tr>\n              <tr>\n                <td>width</td>\n                <td><code>String</code></td>\n                <td>220px</td>\n                <td>宽度</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开检验</td>\n              </tr>\n              <tr>\n                <td>placeholder</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>custom－validate</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>自定义检验器\n                <code>\n                function(value){\n                  if(value){\n                    return {\n                      validStatus: 'success'\n                    }\n                  }else{\n                    return {\n                      validStatus: 'error',\n                      tips: '出错啦'\n                    }\n                  }\n                }\n                </code>\n                </td>\n              </tr>\n              <tr>\n                <td>rules</td>\n                <td><code>Array</code></td>\n                <td>[]</td>\n                <td>规则数组 ,如\n\t\t\t\t\t\t\t\t\t<code>\n\t\t\t\t\t\t\t\t\t[{type: 'required' }, {type: 'maxlength=6' }, {type: 'minlength=3' }, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code>\n\t\t\t\t\t\t\t\t</td>\n              </tr>\n              <tr>\n                <td>hasFeedback</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>是否显示状态icon</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n    </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"表单验证\"  >\n        <h1 class=\"page-header\"><a href=\"#表单验证\" class=\"anchor\">表单验证</a><span class=\"author\"> </span></h1>\n        <div class=\"bs-example\">\n        \t<n3-form v-ref:form>\n                <n3-form-item\n                    need\n                    label=\"姓名\"\n                    :label-col=\"3\">\n                <n3-input\n                    name=\"name\"\n                    :value.sync=\"model.name\"\n                    :rules=\"[{type:'required'}]\"\n                    :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"年龄\"\n                    :label-col=\"3\">\n                <n3-input-number\n                    name=\"age\"\n                    :value.sync=\"model.age\"\n                    :rules=\"[{type:'number'},{type:'required'}]\">\n                </n3-input-number>\n                </n3-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"地址\"\n                    :label-col=\"3\">\n                <n3-cascader\n                    name=\"address\"\n                    :options=\"options\"\n                    :value.sync=\"model.address\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-cascader>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"生日\"\n                    :label-col=\"3\">\n                <n3-datepicker\n                    name=\"birthday\"\n                    :value.sync=\"model.birthday\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-datepicker>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"学校\"\n                    :label-col=\"3\">\n                <n3-typeahead\n                    name=\"学校\"\n                    :query.sync = \"model.school\"\n                    :data=\"schoolData\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-typeahead>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"爱好\"\n                    :label-col=\"3\">\n                <n3-checkbox-group\n                    name=\"hobby\"\n                    :value.sync = \"model.hobby\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-checkbox value=\"0\">看书</n3-checkbox>\n                    <n3-checkbox value=\"1\">运动</n3-checkbox>\n                    <n3-checkbox value=\"2\">旅行</n3-checkbox>\n                </n3-checkbox-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"性别\"\n                    :label-col=\"3\">\n                <n3-radio-group\n                    name=\"sex\"\n                    :value.sync = \"model.sex\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-radio value=\"0\">男</n3-radio>\n                    <n3-radio value=\"1\">女</n3-radio>\n                </n3-radio-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"专业\"\n                    :label-col=\"3\">\n                <n3-select\n                    name=\"sex\"\n                    :options='profession'\n                    :value.sync = \"model.profession\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-select>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"级别\"\n                    :label-col=\"3\">\n                  <n3-slider\n                      name=\"level\"\n                      :value.sync = \"model.level\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-slider>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"开启状态\"\n                    :label-col=\"3\">\n                  <n3-switch\n                      name=\"state\"\n                      :value.sync = \"model.state\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-switch>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"喜欢的明星\"\n                    :label-col=\"3\">\n                  <n3-multiple-input\n                      name=\"star\"\n                      :value.sync = \"model.star\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-multiple-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"想说的话\"\n                    :label-col=\"3\">\n                  <n3-textarea\n                      name=\"suggestion\"\n                      :value.sync = \"model.suggestion\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-textarea>\n                </n3-form-item>\n\n                 <n3-form-item>\n                     <n3-button type=\"primary\" @click=\"submit\" >提交</n3-button>\n                     <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button>\n                </n3-form-item>\n            </n3-form>\n        \t<pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-form v-ref:form>\n    <n3-form-item\n        need\n        label=\"姓名\"\n        :label-col=\"3\">\n    <n3-input\n        name=\"name\"\n        :value.sync=\"model.name\"\n        :rules=\"[{type:'required'}]\"\n        :custom-validate=\"nameValidate\">\n    </n3-input>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"年龄\"\n        :label-col=\"3\">\n    <n3-input\n        name=\"age\"\n        :value.sync=\"model.age\"\n        :rules=\"[{type:'number'},{type:'required'}]\">\n    </n3-input>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"地址\"\n        :label-col=\"3\">\n    <n3-cascader\n        name=\"address\"\n        :options=\"options\"\n        :value.sync=\"model.address\"\n        :rules=\"[{type:'required'}]\">\n    </n3-cascader>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"生日\"\n        :label-col=\"3\">\n    <n3-datepicker\n        name=\"birthday\"\n        :value.sync=\"model.birthday\"\n        :rules=\"[{type:'required'}]\">\n    </n3-datepicker>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"学校\"\n        :label-col=\"3\">\n    <n3-typeahead\n        name=\"学校\"\n        :query.sync = \"model.school\"\n        :data=\"schoolData\"\n        :rules=\"[{type:'required'}]\">\n    </n3-typeahead>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"爱好\"\n        :label-col=\"3\">\n    <n3-checkbox-group\n        name=\"hobby\"\n        :value.sync = \"model.hobby\"\n        :rules=\"[{type:'required'}]\">\n        <n3-checkbox value=\"0\">看书</n3-checkbox>\n        <n3-checkbox value=\"1\">运动</n3-checkbox>\n        <n3-checkbox value=\"2\">旅行</n3-checkbox>\n    </n3-checkbox-group>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"性别\"\n        :label-col=\"3\">\n    <n3-radio-group\n        name=\"sex\"\n        :value.sync = \"model.sex\"\n        :rules=\"[{type:'required'}]\">\n        <n3-radio value=\"0\">男</n3-radio>\n        <n3-radio value=\"1\">女</n3-radio>\n    </n3-radio-group>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"专业\"\n        :label-col=\"3\">\n    <n3-select\n        name=\"sex\"\n        :options='profession'\n        :value.sync = \"model.profession\"\n        :rules=\"[{type:'required'}]\">\n    </n3-select>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"级别\"\n        :label-col=\"3\">\n      <n3-slider\n          name=\"level\"\n          :value.sync = \"model.level\"\n          :rules=\"[{type:'required'}]\">\n      </n3-slider>\n    </n3-form-item>\n\n    <n3-form-item\n        need\n        label=\"开启状态\"\n        :label-col=\"3\">\n      <n3-switch\n          name=\"state\"\n          :value.sync = \"model.state\"\n          :rules=\"[{type:'required'}]\">\n      </n3-switch>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"喜欢的明星\"\n        :label-col=\"3\">\n      <n3-multiple-input\n          name=\"star\"\n          :value.sync = \"model.star\"\n          :rules=\"[{type:'required'}]\">\n      </n3-multiple-input>\n    </n3-form-item>\n    <n3-form-item\n        need\n        label=\"想说的话\"\n        :label-col=\"3\">\n      <n3-textarea\n          name=\"suggestion\"\n          :value.sync = \"model.suggestion\"\n          :rules=\"[{type:'required'}]\">\n      </n3-textarea>\n    </n3-form-item>\n\n     <n3-form-item>\n         <n3-button type=\"primary\" @click=\"submit\" >提交</n3-button>\n         <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button>\n    </n3-form-item>\n</n3-form>\n          </script></code></pre>\n          <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n  data: {\n    profession: [{\n      value: '学生',\n      label: '学生'\n    }, {\n      value: '工程师',\n      label: '工程师'\n    }, {\n      value: '医生',\n      label: '医生'\n    }],\n    model: {\n      name: '',\n      age: '',\n      address: [],\n      birthday: '',\n      sex: '',\n      school: '',\n      hobby: [],\n      profession: '',\n      state: false,\n      star: [],\n      suggestion: ''\n    },\n    schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],\n    sexOptions: [{\n      value: '1',\n      label: '男'\n    }, {\n      value: '0',\n      label: '女'\n    }],\n    options: [{\n      value: 'zhejiang',\n      label: '浙江',\n      children: [{\n        value: 'hangzhou',\n        label: '杭州',\n        children: [{\n          value: 'xihu',\n          label: '西湖'\n        }]\n      }]\n    }, {\n      value: 'jiangsu',\n      label: '江苏',\n      children: [{\n        value: 'nanjing',\n        label: '南京',\n        children: [{\n          value: 'zhonghuamen',\n          label: '中华门'\n        }]\n      }]\n    }],\n    validate: false,\n    result: {}\n  },\n  methods: {\n    nameValidate (val) {\n      if (/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/.test(val)) {\n        return {\n          validStatus: 'success'\n        }\n      } else {\n        return {\n          validStatus: 'error',\n          tips: '请输入中文名'\n        }\n      }\n    },\n    submit () {\n     this.$refs.form.validateFields(result=>{\n        console.log(result)\n     })\n    }\n  }\n})\n        \t</script></code></pre>\n\n          <h2>n3-from参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>type</td>\n                <td><code>String</code> 如:  <code>horizontal</code><code>inline</code></td>\n                <td>horizontal</td>\n                <td>布局方式</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开验证</td>\n              </tr>\n              <tr>\n                <td>result</td>\n                <td><code>Object</code></td>\n                <td></td>\n                <td>验证结果</td>\n              </tr>\n              <tr>\n                <td>on-validate-change</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>验证结果变化</td>\n              </tr>\n            </tbody>\n          </table>\n          <p>验证建议直接调用组件的<code style=\"color:red\">validateFields</code> 方法，具体可查看样例</p>\n\n          <h2>n3-from-item参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>label</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>label-col</td>\n                <td><code>Number</code></td>\n                <td>2</td>\n                <td>label所占栅格数</td>\n              </tr>\n               <tr>\n                <td>wrap-col</td>\n                <td><code>Number</code></td>\n                <td></td>\n                <td>item所占栅格数</td>\n              </tr>\n              <tr>\n                <td>need</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>红点标记</td>\n              </tr>\n            </tbody>\n          </table>\n\n\n          <h2>待验证组件参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>name</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td>标示输入项，与结果内的值对应</td>\n              </tr>\n              <tr>\n                <td>readonly</td>\n                <td><code>Boolean</code></td>\n                <td><code>false</code></td>\n                <td>只读，无法输入，级联，时间日期等组件默认无法手动输入</td>\n              </tr>\n              <tr>\n                <td>disabled</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>禁止改变值</td>\n              </tr>\n              <tr>\n                <td>width</td>\n                <td><code>String</code></td>\n                <td>220px</td>\n                <td>宽度</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开检验</td>\n              </tr>\n              <tr>\n                <td>placeholder</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>custom－validate</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>自定义检验器\n                <code>\n                function(value){\n                  if(value){\n                    return {\n                      validStatus: 'success'\n                    }\n                  }else{\n                    return {\n                      validStatus: 'error',\n                      tips: '出错啦'\n                    }\n                  }\n                }\n                </code>\n                </td>\n              </tr>\n              <tr>\n                <td>rules</td>\n                <td><code>Array</code></td>\n                <td>[]</td>\n                <td>规则数组 ,如\n\t\t\t\t\t\t\t\t\t<code>\n\t\t\t\t\t\t\t\t\t[{type: 'required' }, {type: 'maxlength=6' }, {type: 'minlength=3' }, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code>\n\t\t\t\t\t\t\t\t</td>\n              </tr>\n              <tr>\n                <td>hasFeedback</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>是否显示状态icon</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n    </div>";
 
 /***/ },
 /* 606 */
@@ -30404,13 +30409,6 @@
 	  value: true
 	});
 	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; }; // <template>
-	// 	<div class="{{prefixCls}}-err-tip" v-if="validate && tips" >{{tips}}</div>
-	// </template>
-	
-	// <script>
-	
-	
 	var _type = __webpack_require__(480);
 	
 	var _type2 = _interopRequireDefault(_type);
@@ -30450,23 +30448,19 @@
 	    };
 	  },
 	
-	  watch: {
-	    value: {
-	      handler: function handler(newVal, oldVal) {
-	        this.valid(newVal);
+	  computed: {
+	    _results: {
+	      get: function get() {
+	        return this.results;
 	      },
-	
-	      immediate: true
-	    },
-	    results: {
-	      handler: function handler(val, oldVal) {
+	      set: function set(val, oldVal) {
 	        var self = this;
 	        var tips = '';
 	        var status = '';
 	
 	        for (var key in val) {
 	          var obj = val[key];
-	          if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === 'object' && obj) {
+	          if (_type2.default.isObject(obj)) {
 	            obj.tips ? tips += obj.tips + '  ' : '';
 	            if (obj.validStatus !== 'success') {
 	              status = 'error';
@@ -30482,23 +30476,39 @@
 	          self.validStatus = self.status;
 	        }
 	
+	        var isvalid = true;
 	        self.tips = tips;
-	        self.results['isvalid'] = true;
 	
-	        for (var i in self.results) {
-	          var validStatus = self.results[i]['validStatus'];
+	        for (var i in val) {
+	          var validStatus = val[i]['validStatus'];
 	          if (validStatus === 'error') {
-	            self.results['isvalid'] = false;
+	            isvalid = false;
 	            break;
 	          }
 	        }
+	
+	        var newVal = Object.assign({}, val);
+	        newVal.isvalid = isvalid;
+	
+	        if (this.isEqual(newVal, this.results)) {
+	          return;
+	        }
+	
+	        this.results = newVal;
+	
 	        self.$dispatch('n3@validateChange', {
 	          name: self.name,
 	          result: self.results
 	        });
+	      }
+	    }
+	  },
+	  watch: {
+	    value: {
+	      handler: function handler(newVal, oldVal) {
+	        this.valid(newVal);
 	      },
 	
-	      deep: true,
 	      immediate: true
 	    }
 	  },
@@ -30509,6 +30519,29 @@
 	    }
 	  },
 	  methods: {
+	    isEqual: function isEqual(a, b) {
+	      var e = true;
+	      var propsA = Object.keys(a);
+	      var propsB = Object.keys(b);
+	
+	      if (propsA.length != propsB.length) {
+	        return false;
+	      }
+	
+	      propsA.forEach(function (i) {
+	        if (a[i]['validStatus'] != b[i]['validStatus']) {
+	          e = false;
+	          return false;
+	        }
+	      });
+	
+	      return e;
+	    },
+	    setResult: function setResult(key, value) {
+	      var o = Object.assign({}, this.results);
+	      o[key] = value;
+	      this._results = o;
+	    },
 	    valid: function valid(val) {
 	      if (this.rules || _type2.default.isFunction(this.customValidate)) {
 	        this.rulesValid(val);
@@ -30547,20 +30580,20 @@
 	      }
 	    },
 	    customValid: function customValid(val) {
-	      this.$set('results.customValidate', this.customValidate(val));
+	      this.setResult('customValidate', this.customValidate(val));
 	    },
 	    requiredValid: function requiredValid(val, tip) {
 	      var self = this;
 	
-	      self.results = self.results || {};
+	      self._results = self._results || {};
 	
 	      if (!val || val.length === 0) {
-	        self.$set('results.requiredValid', {
+	        self.setResult('requiredValid', {
 	          validStatus: 'error',
 	          tips: tip || '不能为空'
 	        });
 	      } else {
-	        self.$set('results.requiredValid', {
+	        self.setResult('requiredValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
@@ -30570,16 +30603,16 @@
 	      var self = this;
 	      var maxlength = type.split('=')[1] - 0;
 	
-	      self.results = self.results || {};
+	      self._results = self._results || {};
 	
 	      if (val) {
 	        if (val.length > maxlength) {
-	          self.$set('results.maxlengthValid', {
+	          self.setResult('maxlengthValid', {
 	            validStatus: 'error',
 	            tips: tip || '输入字符数不能大于' + maxlength
 	          });
 	        } else {
-	          self.$set('results.maxlengthValid', {
+	          self.setResult('maxlengthValid', {
 	            validStatus: 'success',
 	            tips: ''
 	          });
@@ -30590,16 +30623,16 @@
 	      var self = this;
 	      var minlength = type.split('=')[1] - 0;
 	
-	      self.results = self.results || {};
+	      self._results = self._results || {};
 	
 	      if (val) {
 	        if (val.length < minlength) {
-	          self.$set('results.minlengthValid', {
+	          self.setResult('minlengthValid', {
 	            validStatus: 'error',
 	            tips: tip || '输入字符数不能小于' + minlength
 	          });
 	        } else {
-	          self.$set('results.minlengthValid', {
+	          self.setResult('minlengthValid', {
 	            validStatus: 'success',
 	            tips: ''
 	          });
@@ -30621,12 +30654,12 @@
 	      var rule = /^1\d{10}$/;
 	
 	      if (rule.test(value) || value === '') {
-	        this.$set('results.isPhoneValid', {
+	        this.setResult('isPhoneValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
 	      } else {
-	        this.$set('results.isPhoneValid', {
+	        this.setResult('isPhoneValid', {
 	          validStatus: 'error',
 	          tips: tip || '请输入正确的手机号码'
 	        });
@@ -30636,12 +30669,12 @@
 	      var rule = /^\d*$/;
 	
 	      if (rule.test(value) || value === '') {
-	        this.$set('results.isNumberValid', {
+	        this.setResult('isNumberValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
 	      } else {
-	        this.$set('results.isNumberValid', {
+	        this.setResult('isNumberValid', {
 	          validStatus: 'error',
 	          tips: tip || '请输入数字'
 	        });
@@ -30651,12 +30684,12 @@
 	      var rule = /^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/;
 	
 	      if (rule.test(value) || value === '') {
-	        this.$set('results.isTelValid', {
+	        this.setResult('isTelValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
 	      } else {
-	        this.$set('results.isTelValid', {
+	        this.setResult('isTelValid', {
 	          validStatus: 'error',
 	          tips: tip || '输入固话格式错误，固话请用-'
 	        });
@@ -30666,12 +30699,12 @@
 	      var rule = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
 	
 	      if (rule.test(value) || value === '') {
-	        this.$set('results.isEmailValid', {
+	        this.setResult('isEmailValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
 	      } else {
-	        this.$set('results.isEmailValid', {
+	        this.setResult('isEmailValid', {
 	          validStatus: 'error',
 	          tips: tip || '请输入正确的email'
 	        });
@@ -30680,6 +30713,11 @@
 	  }
 	};
 	// </script>
+	// <template>
+	// 	<div class="{{prefixCls}}-err-tip" v-if="validate && tips" >{{tips}}</div>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 646 */
@@ -38847,20 +38885,20 @@
 
 /***/ },
 /* 786 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	// <template>
-	//   <form :class="classObj"  @submit.prevent="noop">
-	//       <slot></slot>
-	//   </form>
-	// </template>
 	
-	// <script>
+	var _type = __webpack_require__(480);
+	
+	var _type2 = _interopRequireDefault(_type);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	exports.default = {
 	  props: {
 	    type: {
@@ -38875,6 +38913,9 @@
 	      type: Object,
 	      twoWay: true
 	    },
+	    onValidateChange: {
+	      type: Function
+	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -38882,7 +38923,17 @@
 	  },
 	
 	  methods: {
-	    noop: function noop() {}
+	    noop: function noop() {},
+	    validateFields: function validateFields(cb) {
+	      var _this = this;
+	
+	      this.validate = true;
+	      this.$nextTick(function () {
+	        if (_type2.default.isFunction(cb)) {
+	          cb(_this.result);
+	        }
+	      });
+	    }
 	  },
 	
 	  watch: {
@@ -38892,6 +38943,11 @@
 	        this.result = this._result;
 	      } else {
 	        this.result = { results: {}, isvaild: true };
+	      }
+	    },
+	    result: function result(val) {
+	      if (this.validate && _type2.default.isFunction(this.onValidateChange)) {
+	        this.onValidateChange(val);
 	      }
 	    }
 	  },
@@ -38951,6 +39007,13 @@
 	  }
 	};
 	// </script>
+	// <template>
+	//   <form :class="classObj"  @submit.prevent="noop">
+	//       <slot></slot>
+	//   </form>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 787 */

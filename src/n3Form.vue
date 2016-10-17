@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import type from './utils/type'
+
 export default {
   props: {
     type: {
@@ -19,6 +21,9 @@ export default {
       type: Object,
       twoWay: true
     },
+    onValidateChange: {
+      type: Function
+    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -27,6 +32,14 @@ export default {
 
   methods: {
     noop () {
+    },
+    validateFields (cb) {
+      this.validate = true
+      this.$nextTick(()=>{
+        if (type.isFunction(cb)) {
+          cb(this.result)
+        }
+      })
     }
   },
 
@@ -37,6 +50,11 @@ export default {
         this.result = this._result
       } else {
         this.result = {results: {}, isvaild: true}
+      }
+    },
+    result (val) {
+      if (this.validate && type.isFunction(this.onValidateChange)) {
+        this.onValidateChange(val)
       }
     }
   },

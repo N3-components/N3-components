@@ -2,7 +2,7 @@
     <div class="bs-docs-section" id="表单验证"  >
         <h1 class="page-header"><a href="#表单验证" class="anchor">表单验证</a><span class="author"> </span></h1>
         <div class="bs-example">
-        	<n3-form  :validate="validate" :result.sync="result" >
+        	<n3-form v-ref:form>
                 <n3-form-item
                     need
                     label="姓名"
@@ -145,7 +145,7 @@
                 </n3-form-item>
             </n3-form>
         	<pre><code class="language-markup"><script type="language-mark-up">
-<n3-form :validate="validate" :result.sync="result">
+<n3-form v-ref:form>
     <n3-form-item
         need
         label="姓名"
@@ -361,14 +361,11 @@ new Vue({
       }
     },
     submit () {
-      this.validate = true
-
-      this.$nextTick(() => {
-        console.log(this.result.isvalid)
-      })
+     this.$refs.form.validateFields(result=>{
+        console.log(result)
+     })
     }
   }
-
 })
         	</script></code></pre>
 
@@ -401,8 +398,15 @@ new Vue({
                 <td></td>
                 <td>验证结果</td>
               </tr>
+              <tr>
+                <td>on-validate-change</td>
+                <td><code>Function</code></td>
+                <td></td>
+                <td>验证结果变化</td>
+              </tr>
             </tbody>
           </table>
+          <p>验证建议直接调用组件的<code style="color:red">validateFields</code> 方法，具体可查看样例</p>
 
           <h2>n3-from-item参数</h2>
           <table class="table table-bordered">
@@ -607,8 +611,9 @@ export default {
       }
     },
     submit () {
-      this.validate = true
-      console.log(this.result)
+      this.$refs.form.validateFields(result=>{
+        console.log(result)
+     })
     }
   }
 }

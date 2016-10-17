@@ -1987,13 +1987,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; }; // <template>
-	// 	<div class="{{prefixCls}}-err-tip" v-if="validate && tips" >{{tips}}</div>
-	// </template>
-	
-	// <script>
-	
-	
 	var _type = __webpack_require__(111);
 	
 	var _type2 = _interopRequireDefault(_type);
@@ -2033,23 +2026,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	  },
 	
-	  watch: {
-	    value: {
-	      handler: function handler(newVal, oldVal) {
-	        this.valid(newVal);
+	  computed: {
+	    _results: {
+	      get: function get() {
+	        return this.results;
 	      },
-	
-	      immediate: true
-	    },
-	    results: {
-	      handler: function handler(val, oldVal) {
+	      set: function set(val, oldVal) {
 	        var self = this;
 	        var tips = '';
 	        var status = '';
 	
 	        for (var key in val) {
 	          var obj = val[key];
-	          if ((typeof obj === 'undefined' ? 'undefined' : _typeof(obj)) === 'object' && obj) {
+	          if (_type2.default.isObject(obj)) {
 	            obj.tips ? tips += obj.tips + '  ' : '';
 	            if (obj.validStatus !== 'success') {
 	              status = 'error';
@@ -2065,23 +2054,39 @@ return /******/ (function(modules) { // webpackBootstrap
 	          self.validStatus = self.status;
 	        }
 	
+	        var isvalid = true;
 	        self.tips = tips;
-	        self.results['isvalid'] = true;
 	
-	        for (var i in self.results) {
-	          var validStatus = self.results[i]['validStatus'];
+	        for (var i in val) {
+	          var validStatus = val[i]['validStatus'];
 	          if (validStatus === 'error') {
-	            self.results['isvalid'] = false;
+	            isvalid = false;
 	            break;
 	          }
 	        }
+	
+	        var newVal = Object.assign({}, val);
+	        newVal.isvalid = isvalid;
+	
+	        if (this.isEqual(newVal, this.results)) {
+	          return;
+	        }
+	
+	        this.results = newVal;
+	
 	        self.$dispatch('n3@validateChange', {
 	          name: self.name,
 	          result: self.results
 	        });
+	      }
+	    }
+	  },
+	  watch: {
+	    value: {
+	      handler: function handler(newVal, oldVal) {
+	        this.valid(newVal);
 	      },
 	
-	      deep: true,
 	      immediate: true
 	    }
 	  },
@@ -2092,6 +2097,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  methods: {
+	    isEqual: function isEqual(a, b) {
+	      var e = true;
+	      var propsA = Object.keys(a);
+	      var propsB = Object.keys(b);
+	
+	      if (propsA.length != propsB.length) {
+	        return false;
+	      }
+	
+	      propsA.forEach(function (i) {
+	        if (a[i]['validStatus'] != b[i]['validStatus']) {
+	          e = false;
+	          return false;
+	        }
+	      });
+	
+	      return e;
+	    },
+	    setResult: function setResult(key, value) {
+	      var o = Object.assign({}, this.results);
+	      o[key] = value;
+	      this._results = o;
+	    },
 	    valid: function valid(val) {
 	      if (this.rules || _type2.default.isFunction(this.customValidate)) {
 	        this.rulesValid(val);
@@ -2130,20 +2158,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    },
 	    customValid: function customValid(val) {
-	      this.$set('results.customValidate', this.customValidate(val));
+	      this.setResult('customValidate', this.customValidate(val));
 	    },
 	    requiredValid: function requiredValid(val, tip) {
 	      var self = this;
 	
-	      self.results = self.results || {};
+	      self._results = self._results || {};
 	
 	      if (!val || val.length === 0) {
-	        self.$set('results.requiredValid', {
+	        self.setResult('requiredValid', {
 	          validStatus: 'error',
 	          tips: tip || '不能为空'
 	        });
 	      } else {
-	        self.$set('results.requiredValid', {
+	        self.setResult('requiredValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
@@ -2153,16 +2181,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var self = this;
 	      var maxlength = type.split('=')[1] - 0;
 	
-	      self.results = self.results || {};
+	      self._results = self._results || {};
 	
 	      if (val) {
 	        if (val.length > maxlength) {
-	          self.$set('results.maxlengthValid', {
+	          self.setResult('maxlengthValid', {
 	            validStatus: 'error',
 	            tips: tip || '输入字符数不能大于' + maxlength
 	          });
 	        } else {
-	          self.$set('results.maxlengthValid', {
+	          self.setResult('maxlengthValid', {
 	            validStatus: 'success',
 	            tips: ''
 	          });
@@ -2173,16 +2201,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var self = this;
 	      var minlength = type.split('=')[1] - 0;
 	
-	      self.results = self.results || {};
+	      self._results = self._results || {};
 	
 	      if (val) {
 	        if (val.length < minlength) {
-	          self.$set('results.minlengthValid', {
+	          self.setResult('minlengthValid', {
 	            validStatus: 'error',
 	            tips: tip || '输入字符数不能小于' + minlength
 	          });
 	        } else {
-	          self.$set('results.minlengthValid', {
+	          self.setResult('minlengthValid', {
 	            validStatus: 'success',
 	            tips: ''
 	          });
@@ -2204,12 +2232,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var rule = /^1\d{10}$/;
 	
 	      if (rule.test(value) || value === '') {
-	        this.$set('results.isPhoneValid', {
+	        this.setResult('isPhoneValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
 	      } else {
-	        this.$set('results.isPhoneValid', {
+	        this.setResult('isPhoneValid', {
 	          validStatus: 'error',
 	          tips: tip || '请输入正确的手机号码'
 	        });
@@ -2219,12 +2247,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var rule = /^\d*$/;
 	
 	      if (rule.test(value) || value === '') {
-	        this.$set('results.isNumberValid', {
+	        this.setResult('isNumberValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
 	      } else {
-	        this.$set('results.isNumberValid', {
+	        this.setResult('isNumberValid', {
 	          validStatus: 'error',
 	          tips: tip || '请输入数字'
 	        });
@@ -2234,12 +2262,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var rule = /^(([0\+]\d{2,3}-)?(0\d{2,3})-)(\d{7,8})(-(\d{3,}))?$/;
 	
 	      if (rule.test(value) || value === '') {
-	        this.$set('results.isTelValid', {
+	        this.setResult('isTelValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
 	      } else {
-	        this.$set('results.isTelValid', {
+	        this.setResult('isTelValid', {
 	          validStatus: 'error',
 	          tips: tip || '输入固话格式错误，固话请用-'
 	        });
@@ -2249,12 +2277,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var rule = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
 	
 	      if (rule.test(value) || value === '') {
-	        this.$set('results.isEmailValid', {
+	        this.setResult('isEmailValid', {
 	          validStatus: 'success',
 	          tips: ''
 	        });
 	      } else {
-	        this.$set('results.isEmailValid', {
+	        this.setResult('isEmailValid', {
 	          validStatus: 'error',
 	          tips: tip || '请输入正确的email'
 	        });
@@ -2263,6 +2291,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 	// </script>
+	// <template>
+	// 	<div class="{{prefixCls}}-err-tip" v-if="validate && tips" >{{tips}}</div>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 138 */
@@ -20973,20 +21006,20 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 289 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	// <template>
-	//   <form :class="classObj"  @submit.prevent="noop">
-	//       <slot></slot>
-	//   </form>
-	// </template>
 	
-	// <script>
+	var _type = __webpack_require__(111);
+	
+	var _type2 = _interopRequireDefault(_type);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
 	exports.default = {
 	  props: {
 	    type: {
@@ -21001,6 +21034,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      type: Object,
 	      twoWay: true
 	    },
+	    onValidateChange: {
+	      type: Function
+	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -21008,7 +21044,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	
 	  methods: {
-	    noop: function noop() {}
+	    noop: function noop() {},
+	    validateFields: function validateFields(cb) {
+	      var _this = this;
+	
+	      this.validate = true;
+	      this.$nextTick(function () {
+	        if (_type2.default.isFunction(cb)) {
+	          cb(_this.result);
+	        }
+	      });
+	    }
 	  },
 	
 	  watch: {
@@ -21018,6 +21064,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.result = this._result;
 	      } else {
 	        this.result = { results: {}, isvaild: true };
+	      }
+	    },
+	    result: function result(val) {
+	      if (this.validate && _type2.default.isFunction(this.onValidateChange)) {
+	        this.onValidateChange(val);
 	      }
 	    }
 	  },
@@ -21077,6 +21128,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 	// </script>
+	// <template>
+	//   <form :class="classObj"  @submit.prevent="noop">
+	//       <slot></slot>
+	//   </form>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 290 */
