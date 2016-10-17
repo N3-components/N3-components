@@ -2,6 +2,8 @@
   <div class="bs-docs-section" id="标签页"  >
     <h1 class="page-header"><a href="#标签页" class="anchor">标签页</a><span class="author"> </span></h1>
     <div class="bs-example">
+      <n3-tabs :on-change="change" :list="list"></n3-tabs>
+
       <n3-tabs :on-change="change" :active-index="1">
         <n3-tab header="one" badge="1">
           <p>.......</p>
@@ -49,6 +51,8 @@
       
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
+<n3-tabs :on-change="change" :list="list"></n3-tabs>
+
 <n3-tabs>
   <n3-tab header="one">
     ...
@@ -96,6 +100,22 @@
         <td><code>Number</code></td>
         <td></td>
         <td></td>
+      </tr>
+       <tr>
+        <td>list</td>
+        <td><code>Array</code></td>
+        <td></td>
+        <td><pre><code>
+list: [{
+  header: 'first',
+  badge: 12,
+  content: 'xxx'
+},{
+  header: 'seacond',
+  badge: 12,
+  content: 'xxxx'
+}]
+        </code></pre></td>
       </tr>
       <tr>
         <td>pills</td>
@@ -171,6 +191,19 @@
 
 <script>
 export default {
+  data () {
+    return {
+      list: [{
+        header: 'first',
+        badge: 12,
+        content: 'xxx'
+      },{
+        header: 'seacond',
+        badge: 12,
+        content: 'xxxx'
+      }]
+    }
+  },
   methods: {
     change (index, el) {
       console.log(index, el)

@@ -45,11 +45,13 @@ export default {
     }
   },
   created () {
-    this.$parent.renderData.push({
-      header: this.header,
-      disabled: this.disabled,
-      badge: this.badge
-    })
+    if (!this.$parent.list && this.$parent.renderData) {
+      this.$parent.renderData.push({
+        header: this.header,
+        disabled: this.disabled,
+        badge: this.badge
+      })
+    }
   },
   ready () {
     for (var c in this.$parent.$children) {

@@ -12,8 +12,11 @@
           </a>
       </li>
     </ul>
-    <div class="{{prefixCls}}-tab-content" v-el:tabContent>
-      <slot></slot>
+    <div class="{{prefixCls}}-tab-content">
+      <div v-if="list">
+          {{{renderData[activeIndex].content}}}
+      </div>
+      <slot v-else></slot>
     </div>
   </div>
 </template>
@@ -46,6 +49,9 @@ export default {
     onChange: {
       type: Function
     },
+    list: {
+      type: Array
+    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -73,6 +79,16 @@ export default {
       klass[prefixCls + '-nav-tabs-justified'] = justified
 
       return klass
+    }
+  },
+  watch: {
+    list:{
+      handler () {
+        if (this.list) {
+          this.renderData = this.list
+        }
+      },
+      immediate: true
     }
   },
   methods: {
