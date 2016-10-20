@@ -564,6 +564,7 @@ export default {
       let s = this.source
       let ret = []
       let filterValue = {}
+      let checkedRows = []
       
       if (!type.isArray(this.filterList)) {
         for (let i in this.filterMap) {
@@ -586,7 +587,21 @@ export default {
         if (this.search) {
           this.searchMap[i] = search
         }
+       
         ret[i] = Object.assign({}, s[i], {n3Key: i})
+
+        if (this.selection) {
+          let p = this.selection.getCheckboxProps
+          p = p ? p(ret[i]) : null
+
+          if (p && p.checked) {
+            checkedRows.push(ret[i])
+          }
+        }
+      }
+
+      if (this.selection) {
+        this.checkedRows = checkedRows
       }
       
       this.initSource = ret

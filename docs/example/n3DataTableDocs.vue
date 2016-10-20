@@ -175,7 +175,9 @@ new Vue({
           <td>selection</td>
           <td>Object</td>
           <td></td>
-          <td><pre><code class="language-javascript">
+          <td>
+<code style="color:red">使用getCheckboxProps来初始化状态</code>
+<pre><code class="language-javascript">
 {
   checkRows:[],
   onSelect (record, checked, checkRows) {},
@@ -183,6 +185,7 @@ new Vue({
   getCheckboxProps(record){
     if(record.key == 2){
       return {
+        checked: true,
         disabled:true
       }
     }else{
@@ -362,6 +365,7 @@ export default {
         getCheckboxProps (record) {
           if (record.key == 2) {
             return {
+              checked: true,
               disabled: true
             }
           } else {

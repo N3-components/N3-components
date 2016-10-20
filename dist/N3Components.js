@@ -20304,6 +20304,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var s = this.source;
 	      var ret = [];
 	      var filterValue = {};
+	      var checkedRows = [];
 	
 	      if (!_type2.default.isArray(this.filterList)) {
 	        for (var i in this.filterMap) {
@@ -20326,7 +20327,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (this.search) {
 	          this.searchMap[_i] = search;
 	        }
+	
 	        ret[_i] = Object.assign({}, s[_i], { n3Key: _i });
+	
+	        if (this.selection) {
+	          var p = this.selection.getCheckboxProps;
+	          p = p ? p(ret[_i]) : null;
+	
+	          if (p && p.checked) {
+	            checkedRows.push(ret[_i]);
+	          }
+	        }
+	      }
+	
+	      if (this.selection) {
+	        this.checkedRows = checkedRows;
 	      }
 	
 	      this.initSource = ret;
