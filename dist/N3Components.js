@@ -20069,6 +20069,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var checkedKeys = self.checkedRows.map(function (record) {
 	        return JSON.stringify(record);
 	      });
+	
 	      return checkedKeys;
 	    },
 	    checkebleRows: function checkebleRows() {
@@ -20123,6 +20124,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var self = this;
 	      var input = event.srcElement || event.target;
 	      var checked = input.checked;
+	
 	      if (checked) {
 	        var array = self.checkedRows;
 	        if (self.checkedRows.findIndex(function (item) {
@@ -20133,7 +20135,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        self.checkedRows = array;
 	      } else {
 	        self.checkedRows = self.checkedRows.filter(function (item) {
-	          return self.compare(item, record);
+	          return !self.compare(item, record);
 	        });
 	      }
 	      if (self.selection.onSelect) {
@@ -21588,7 +21590,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @return {Boolean}
 	     */
 	    isSelected: function isSelected(value) {
-	      return this.selectedKey === value;
+	      return this.selectedKey !== undefined && this.selectedKey === value;
 	    },
 	
 	

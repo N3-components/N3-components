@@ -256,7 +256,7 @@ export default {
      * @return {Boolean}
      */
     isSelected (value) {
-      return this.selectedKey === value
+      return this.selectedKey !== undefined && this.selectedKey === value
     },
 
     /**

@@ -335,6 +335,7 @@ export default {
       let checkedKeys = self.checkedRows.map((record) => {
         return JSON.stringify(record)
       })
+
       return checkedKeys
     },
     checkebleRows () {
@@ -389,6 +390,7 @@ export default {
       let self = this
       let input = event.srcElement || event.target
       let checked = input.checked
+
       if (checked) {
         let array = self.checkedRows
         if (self.checkedRows.findIndex(item => {return self.compare(item,record)}) === -1) {
@@ -397,7 +399,7 @@ export default {
         self.checkedRows = array
       } else {
         self.checkedRows = self.checkedRows.filter((item) => {
-          return self.compare(item,record)
+          return !self.compare(item,record)
         })
       }
       if (self.selection.onSelect) {
