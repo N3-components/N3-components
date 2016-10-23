@@ -3085,7 +3085,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
-	// <div :class="classObj" >
+	// <div :class="classObj"  :style="{'width':width}">
 	//   <input
 	//     autoComplete="off"
 	//     class="{{prefixCls}}-form-control"
@@ -13583,7 +13583,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 161 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\n  <input\n    autoComplete=\"off\"\n    class=\"{{prefixCls}}-form-control\"\n    :style=\"{'width':width}\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :placeholder=\"placeholder\"\n\t\t:type=\"type\"\n    @blur=\"blur\"\n    @focus=\"focus\"\n    v-focus-model=\"focused\"\n    v-model=\"value\"  />\n  <n3-icon\n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"success\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon\n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"warning\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon\n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"error\" && hasFeedback'>\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    :valid-status.sync=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\"\n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n\n</div>";
+	module.exports = "<div :class=\"classObj\"  :style=\"{'width':width}\">\n  <input\n    autoComplete=\"off\"\n    class=\"{{prefixCls}}-form-control\"\n    :style=\"{'width':width}\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :placeholder=\"placeholder\"\n\t\t:type=\"type\"\n    @blur=\"blur\"\n    @focus=\"focus\"\n    v-focus-model=\"focused\"\n    v-model=\"value\"  />\n  <n3-icon\n    type=\"check\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"success\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon\n    type=\"warning\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"warning\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon\n    type=\"times\" class=\"{{prefixCls}}-form-control-feedback\"\n    v-if='validStatus==\"error\" && hasFeedback'>\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    :valid-status.sync=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\"\n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n\n</div>";
 
 /***/ },
 /* 162 */
@@ -21236,6 +21236,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    wrapCol: {
 	      type: Number
 	    },
+	    formCol: {
+	      type: Number
+	    },
 	    need: {
 	      type: Boolean,
 	      default: false
@@ -21247,17 +21250,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	  computed: {
 	    col: function col() {
-	      return 12 - this.labelCol;
+	      if (this.formCol) {
+	        return this.formCol;
+	      }
+	      return this.wrapCol - this.labelCol;
 	    },
 	    classObj: function classObj() {
 	      var prefixCls = this.prefixCls;
 	      var wrapCol = this.wrapCol;
 	
 	      var klass = {};
+	      wrapCol = wrapCol ? wrapCol : 12;
 	
 	      klass['clearfix'] = true;
 	      klass[prefixCls + '-form-group'] = true;
-	      wrapCol ? klass[prefixCls + '-col-sm-' + wrapCol] = true : '';
+	      klass[prefixCls + '-col-sm-' + wrapCol] = true;
 	
 	      return klass;
 	    }

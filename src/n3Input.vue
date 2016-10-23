@@ -1,5 +1,5 @@
 <template>
-<div :class="classObj" >
+<div :class="classObj"  :style="{'width':width}">
   <input
     autoComplete="off"
     class="{{prefixCls}}-form-control"

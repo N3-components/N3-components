@@ -161,7 +161,7 @@
 
 <n3-alert
   :show.sync="showTop"
-  :duration="3000"
+  // :duration="3000"
   type="danger"
   placement="top"
   message="警告"

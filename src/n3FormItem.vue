@@ -23,6 +23,9 @@ export default {
     wrapCol: {
       type: Number
     },
+    formCol: {
+      type: Number
+    },
     need: {
       type: Boolean,
       default: false
@@ -34,15 +37,19 @@ export default {
   },
   computed: {
     col () {
-      return 12 - this.labelCol
+      if (this.formCol) {
+        return this.formCol
+      }
+      return this.wrapCol - this.labelCol
     },
     classObj () {
       let {prefixCls, wrapCol} = this
       let klass = {}
+      wrapCol = wrapCol ? wrapCol : 12
 
       klass['clearfix'] = true
       klass[prefixCls + '-form-group'] = true
-      wrapCol ? klass[prefixCls + '-col-sm-' + wrapCol] = true : ''
+      klass[prefixCls + '-col-sm-' + wrapCol] = true 
 
       return klass
     }

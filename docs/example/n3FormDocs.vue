@@ -431,11 +431,17 @@ new Vue({
                 <td>2</td>
                 <td>label所占栅格数</td>
               </tr>
-               <tr>
+              <tr>
                 <td>wrap-col</td>
                 <td><code>Number</code></td>
-                <td></td>
+                <td>12</td>
                 <td>item所占栅格数</td>
+              </tr>
+              <tr>
+                <td>form-col</td>
+                <td><code>Number</code></td>
+                <td></td>
+                <td>表单元素所占栅格数</td>
               </tr>
               <tr>
                 <td>need</td>
