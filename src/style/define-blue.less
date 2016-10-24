@@ -1,0 +1,234 @@
+/*prefix string*/
+@prefix-cls: n3;
+
+/*-------color ------*/
+
+/*base color*/
+@whiteColor: #fff;
+@blackColor: #000;
+@lightBlackColor: #333;
+@grayColor: #ccc;
+@weightGrayColor: #999;
+@lightGrayColor: #ddd; 
+@lightColor: #f9f9f9; 
+
+/*font color*/
+@fontColor: #666;
+
+
+/*theme color*/
+@primaryColor: #2db7f5;
+@primaryColorhover: #57c5f7;
+@hoverColor:#eaf8fe;
+
+
+/*extend color*/
+@successColor: #2ecc71;
+@successColorhover:#29b464;
+
+@infoColor: #58c9f3;
+@infoColorhover: #38bef0;
+
+@dangerColor: #ff6c60;
+@dangerColorhover: #e74c3c;
+
+@warningColor: #f1c500;
+@warningColorhover: #dbb509;
+
+/*alert color*/
+@alertDefaultColor: rgba(51,51,51,0.9);
+@alertSuccessColor: rgba(46, 204, 113, 0.9);
+@alertDangerColor: rgba(231,76,60,0.9);
+@alertInfoColor: rgba(52,152,219,0.9);
+@alertWarningColor: rgba(241,196,15,0.9);
+@alertHrColor: rgba(255,255,255,0.5);
+
+/*cascader color*/
+@cascaderColor:rgba(65, 202, 192, 0.3);
+
+/*popover */
+@popoverShadow:0 3px 10px rgba(0, 0, 0, 0.2);
+
+/*cascader*/
+@cascaderShadow: 0 0 4px rgba(0,0,0,0.17);
+
+/*datepicker shadow*/
+@dateShadow:0 6px 12px rgba(0,0,0,0.175);
+
+/*panel*/
+@panelHeadingColor:transparent;
+
+/*modal*/
+@modalHeaderColor: @primaryColor;
+@modalHeaderFontColor: @whiteColor;
+
+
+/*----------size-----------*/
+/*btn size*/
+.btn-size(@p,@f,@l,@b){
+	padding: @p;
+  font-size: @f;
+  line-height: @l;
+  border-radius: @b;
+}
+
+.defaultBtnSize(){
+	.btn-size(6px 12px,14px,1.42857143,4px)
+}
+.lgBtnSize(){
+	.btn-size(10px 16px,18px,1.3333333,6px)
+}
+.smBtnSize(){
+	.btn-size(5px 10px,12px,1.5,3px)
+}
+.xsBtnSize(){
+	.btn-size(1px 5px,12px,1.5,3px)
+}
+
+/*alert pos*/
+@alertTop:30px;
+@alertBottom:30px;
+@alertLeft:50px;
+@alertRight:50px;
+
+/*toast pos*/
+@toastTop:30px;
+@toastBottom:30px;
+@toastLeft:50px;
+@toastRight:50px;
+
+/*popover */
+@popoverArrow:6px;
+
+
+/*tooltip*/
+@tooltipArrow:5px;
+
+/*input*/
+@inputPadding:6px 12px;
+@inputHeight:34px;
+@inputLineHeight:1.42857143;
+@inputRadius:4px;
+
+/*cascader*/
+@cascaderPadding:7px 16px;
+@cascaderItemLineHeight:18px;
+@cascaderHeight:180px;
+@cascaderMinWidth:110px;
+
+/*radio*/
+@radioSize:14px;
+@radioPointerSize:6px;
+
+/*checkbox*/
+@checkboxSize:14px;
+@checkboxRadius:3px;
+@checkboxCheckSize:12px;
+@checkboxCheckOffset:0px;
+
+/*dropdown*/
+@dropdownMinWidth:160px;
+@dropdownLiPadding:5px 20px;
+@dropdownLineHeight:1.42857143;
+
+/*slider*/
+@sliderHeight:4px;
+@sliderWidth:4px;
+@sliderHandler:15px;
+@sliderHandlerBorder:2px;
+@sliderHandlerTop:-5px;
+@sliderHandlerLeft:-10px;
+@sliderVerticalHandlerTop:-5px;
+@sliderVerticalHandlerLeft:-5px;
+@sliderHorizontalHeight:20px;
+@sliderVerticalWidth:20px;
+@sliderVerticalTipTop:-15px;
+@sliderVerticalTipLeft:17px;
+@sliderHorizontalTipTop:-55px;
+@sliderHorizontalTipLeft:-16px;
+
+/*datepicker*/
+@datepickerWidth:268px;
+@datepickerSpanSize:38px;
+@datepickerSpanRadius:38px;
+@datepicerCtrlHeight:38px;
+@datepickerRangeSize:44px;
+
+/*timepicker*/	
+@timepickerPadding:10px 0px 0px;
+@timepickerSliderMargin:4px 14px;
+@timepickerSliderHeight:275px;
+@timepickerSlierPadding:0px 0px 0px 2px;
+
+/*datetimepicker*/
+@datetimepickerWidth:268px;
+
+/*switch*/
+@switchWidth:65px;
+@switchHeight:28px;
+@switchRadius:30px;
+@switchRoundSize:20px;
+
+/*uploader*/
+@uploaderHeight:25px;
+@uploaderIconSize:60px;
+
+/*multipleinput*/
+@multipleinputPadding: 6px 12px 0px;
+@multipleinputMinHeight:34px;
+
+/*form*/
+@formGroupMargin:0 0 15px 0;
+@formGroupMinHeight: 34px;
+
+/*panel*/
+@panelHeaderPadding:10px 15px;
+@panelBodyPadding:15px;
+
+/*table*/
+@tableTdPadding: 6px 8px;
+@tableTdLineHeight: 1.5;
+@tableTdBorderLeft: 1px solid @lightGrayColor;
+
+/*modal*/
+@modalMargin:30px auto;
+@modalPadding:15px;
+@modalFooterBorderTop:1px solid @lightGrayColor;
+
+/*label*/
+@labelPadding: 0.5em 0.8em;
+@labelMargin: 0px 5px 5px 0px;
+
+/*timeline*/
+@timelineItemPadding:0 0 12px;
+@timelineItemSize: 12px;
+@timelineIconSize: 16px;
+@timelineContentPadding:0 0 10px 24px;
+@timelineTailLeft:5px; 
+
+/*tree*/
+@treeNodeMargin:10px;
+@treeFontSize:13px;
+
+/*step round*/
+@stepRoundSize: 30px;
+@stepRoundLineHeight: 6px;
+@stepRoundLineMargin:12px 0px;
+
+/*step*/
+@stepHeight: 32px;
+@stepLabelMargin: 0 0 0 26px;
+
+/*nav */
+@navPadding: 15px 20px;
+@navLineHeight: 20px;
+
+/*nav vertical*/
+@navVerticalPadding: 10px 20px;
+
+/*breadcrumb*/
+@breadcrumbPadding:8px 0px;
+
+/*tab*/
+@tabPadding: 10px 15px;
+

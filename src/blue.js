@@ -1,3 +1,3 @@
 import Components from './components'
-import './style/default.less'
+import './style/blue.less'
 module.exports = Components

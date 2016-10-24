@@ -2,11 +2,14 @@ var webpack = require('webpack')
 var path = require('path')
 
 module.exports = {
-  entry: ['babel-polyfill', './docs/index.js'],
+  entry: {
+    default: ['babel-polyfill', './docs/index.js'],
+    blue: ['babel-polyfill', './docs/blue.js']
+  },
   output: {
     path: './docs/static',
     publicPath: './docs/static/',
-    filename: 'build.js'
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['', '.js', '.vue', '.css'],
