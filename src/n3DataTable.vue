@@ -444,17 +444,17 @@ export default {
     },
     sort (col, s, t) {
       let dataIndex = col.dataIndex
-      let type = t || 'DESC'
+      let _type = t || 'DESC'
 
       if (!s) return
 
       if (dataIndex === this.sortInfo.index) {
-        type = t || (this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC')
+        _type = t || (this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC')
       }
 
       this.sortInfo = {
         index: dataIndex,
-        type: type,
+        type: _type,
         method: col.sortMethod
       }
 

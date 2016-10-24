@@ -23,31 +23,49 @@
   }
 
   &-default {
-    color: @whiteColor;
+    color: @alertFontColor;
     background-color: @alertDefaultColor;
+    border:@alertDefaultBorder;
     .@{prefix-cls}-close {
       color:@whiteColor;
     }
   }
 
   &-success {
-    color: @whiteColor;
+    color: @alertFontColor;
     background-color: @alertSuccessColor;
+    border:@alertSuccessBorder;
+    .@{prefix-cls}-alert-icon{
+      color:@alertSuccessIcon;
+    }
   }
 
   &-info {
-    color: @whiteColor;
+    color: @alertFontColor;
     background-color: @alertInfoColor;
+    border:@alertInfoBorder;
+    .@{prefix-cls}-alert-icon{
+      color:@alertInfoIcon;
+    }
+
   }
 
   &-warning {
-    color: @whiteColor;
+    color: @alertFontColor;
     background-color: @alertWarningColor;
+    border:@alertWarningBorder;
+    .@{prefix-cls}-alert-icon{
+      color:@alertWarningIcon;
+    }
   }
 
   &-danger {
-    color: @whiteColor;
+    color: @alertFontColor;
     background-color: @alertDangerColor;
+    border:@alertDangerBorder;
+    .@{prefix-cls}-alert-icon{
+      color:@alertDangerIcon;
+    }
   }
 
   &-icon {

@@ -32,7 +32,7 @@
 }
 
 .@{prefix-cls}-table-bordered {
-  border: 1px solid @lightGrayColor;
+  border: @tableBorder;
   border-collapse: separate;
   border-radius: 2px;
   border-left: none;
@@ -71,8 +71,11 @@
 .@{prefix-cls}-table-striped > tbody > tr:nth-of-type(odd) {
   background-color: @lightColor;
 }
+.@{prefix-cls}-table-hover > tbody > tr {
+  transition: all .3s ease;
+}
 .@{prefix-cls}-table-hover > tbody > tr:hover {
-  background-color: @lightColor;
+  background-color: @hoverColor;
 }
 
 

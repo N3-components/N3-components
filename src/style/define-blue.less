@@ -9,7 +9,7 @@
 @lightBlackColor: #333;
 @grayColor: #ccc;
 @weightGrayColor: #999;
-@lightGrayColor: #ddd; 
+@lightGrayColor: #eee; 
 @lightColor: #f9f9f9; 
 
 /*font color*/
@@ -19,32 +19,46 @@
 /*theme color*/
 @primaryColor: #2db7f5;
 @primaryColorhover: #57c5f7;
-@hoverColor:#eaf8fe;
+@hoverColor:rgba(87,197,247,0.15);
 
 
 /*extend color*/
-@successColor: #2ecc71;
-@successColorhover:#29b464;
+@successColor: #87d068;
+@successColorhover: #91d873;
 
-@infoColor: #58c9f3;
-@infoColorhover: #38bef0;
+@infoColor: #2db7f5;
+@infoColorhover: #43bcf3;
 
-@dangerColor: #ff6c60;
-@dangerColorhover: #e74c3c;
+@dangerColor: #f50;
+@dangerColorhover: #f9702b;
 
-@warningColor: #f1c500;
-@warningColorhover: #dbb509;
+@warningColor: #fa0;
+@warningColorhover: #f5b73b;
 
 /*alert color*/
-@alertDefaultColor: rgba(51,51,51,0.9);
-@alertSuccessColor: rgba(46, 204, 113, 0.9);
-@alertDangerColor: rgba(231,76,60,0.9);
-@alertInfoColor: rgba(52,152,219,0.9);
-@alertWarningColor: rgba(241,196,15,0.9);
-@alertHrColor: rgba(255,255,255,0.5);
+@alertDefaultColor: @whiteColor;
+@alertSuccessColor: #f3faf0;
+@alertDangerColor: #ffeee6;
+@alertInfoColor: #eaf8fe;
+@alertWarningColor: #fff7e6;
+@alertHrColor: @lightGrayColor;
+@alertFontColor:@fontColor;
+@alertDefaultBorder:1px solid @lightGrayColor;
+@alertSuccessBorder:1px solid #e7f6e1;
+@alertInfoBorder:1px solid #d5f1fd;
+@alertDangerBorder:1px solid #fdc;
+@alertWarningBorder: 1px solid #fec;
+@alertDangerIcon:@dangerColor;
+@alertSuccessIcon:@successColor;
+@alertInfoIcon:@infoColor;
+@alertWarningIcon:@warningColor;
+
+
+
+
 
 /*cascader color*/
-@cascaderColor:rgba(65, 202, 192, 0.3);
+@cascaderColor:rgba(87, 197, 247, 0.5);
 
 /*popover */
 @popoverShadow:0 3px 10px rgba(0, 0, 0, 0.2);
@@ -59,8 +73,8 @@
 @panelHeadingColor:transparent;
 
 /*modal*/
-@modalHeaderColor: @primaryColor;
-@modalHeaderFontColor: @whiteColor;
+@modalHeaderColor: @whiteColor;
+@modalHeaderFontColor: @fontColor;
 
 
 /*----------size-----------*/
@@ -186,9 +200,10 @@
 @panelBodyPadding:15px;
 
 /*table*/
-@tableTdPadding: 6px 8px;
+@tableTdPadding: 8px 8px;
 @tableTdLineHeight: 1.5;
-@tableTdBorderLeft: 1px solid @lightGrayColor;
+@tableTdBorderLeft: 0px;
+@tableBorder:0px;
 
 /*modal*/
 @modalMargin:30px auto;
@@ -196,7 +211,7 @@
 @modalFooterBorderTop:1px solid @lightGrayColor;
 
 /*label*/
-@labelPadding: 0.5em 0.8em;
+@labelPadding: 0.3em 0.6em;
 @labelMargin: 0px 5px 5px 0px;
 
 /*timeline*/
