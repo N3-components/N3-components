@@ -9,7 +9,7 @@ N3-components - Powerful Vue Library.
 
 N3 components library is built with Vue.js, is a powerful library for frontend or full-stack engineers to build web pages quickly.
 
-[Home Page](https://n3-components.github.io/N3-components/) | [中文说明](./README-zh.md) | [Documents](https://n3-components.github.io/N3-components/component.html)
+[Home Page](https://n3-components.github.io/N3-components/) | [中文说明](https://github.com/N3-components/N3-components/blob/master/README-zh.md) | [Documents](https://n3-components.github.io/N3-components/component.html)
 
 Introduction
 ------------
@@ -18,7 +18,7 @@ Introduction
 
 N3 components applys oneself to structure a great ecological circle of developers using Vue.js. Supporting as follows:
 
-* More than 60 components. [See Here](./src)
+* More than 60 components. [See Here](https://github.com/N3-components/N3-components/tree/master/src)
 
 * Personality Of Style.
 
@@ -74,3 +74,14 @@ Discussing
 - QQ Group: 556286036 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=ae2b542ef32e8595664c746572d9a48187167e269ef5b6c80d8ed326fce5efdd"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="N3-components交流群" title="N3-components交流群"></a>
 - QQ Group Qrcode:
 ![qrcode](https://n3-components.github.io/N3-components/static/img/N3-QQ.png)
+
+
+Contribute
+---------
+
+[Contribute](https://github.com/N3-components/N3-components/blob/master/contribute.md)
+
+Change logo
+--------
+
+[Change Log](https://github.com/N3-components/N3-components/blob/master/log.md)
