@@ -387,8 +387,8 @@ export default {
   ready () {
     if (this.sort) {
       this._sort()
-      this.expand()
     }
+    this.expand()
   }
 }
 </script>
