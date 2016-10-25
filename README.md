@@ -42,6 +42,8 @@ You can install components for your global environment.
 ```javascript
 import Vue from 'vue'
 import N3Components from 'N3-components'
+// or ant 风格
+//import N3Components from 'N3-components/dist/blue.min.js'
 N3Components.install(Vue)
 ```
 
