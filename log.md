@@ -7,4 +7,6 @@ v1.1.x
 
 + 修复tree组件expand-all无效的问题
 
+#### v1.2.0
+
 + 添加ant风格主题 import N3Components from 'N3-components/dist/blue.min.js'
