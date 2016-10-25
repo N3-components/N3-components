@@ -15971,7 +15971,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	    if (val) {
 	      this.$nextTick(function () {
-	        var width = _this.$els.datepicker.offsetWidth * 1 + 25;
+	        var width = _this.$els.datepicker.offsetWidth * 1 + 30;
 	        console.log(_this.$els.datepicker.offsetWidth);
 	        _this.hour ? width += 42 : 0;
 	        _this.minute ? width += 42 : 0;
@@ -17986,6 +17986,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.extra && this.searchText.replace(/\s+$|^\s+/g, '')) {
 	        this.options.push({ value: this.searchText, label: this.searchText });
 	        this.add({ value: this.searchText, label: this.searchText });
+	        this.searchText = '';
 	      }
 	    },
 	    findInOptions: function findInOptions(a) {
@@ -20546,24 +20547,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	//                   	@change="onCheckAll"/>
 	//               </th>
 	//               <th v-for="col in initColumns" 
-	//                   v-if="col.show && col.colspan != 0" 
-	//                   :style="{width:col.width}" 
-	//                   :class="{'pointer':col.sort}" 
-	//                   @click="sort(col,col.sort)" 
+	//                   :style="{width: col.width}" 
+	//                   :class="{'pointer': col.sort}" 
+	//                   @click="sort(col, col.sort)" 
 	//                   :colspan="col.colspan === undefined ? 1 : col.colspan"> 
-	//                 <span>{{col.title}} </span> 
-	//                 <div class="{{prefixCls}}-data-table-sort pull-right" v-if="col.sort" >
-	//                   <n3-icon
-	//                     @click.stop="sort(col,col.sort,'ASC')"
-	//                     :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
-	//                     type="caret-up">
-	//                   </n3-icon>
-	//                    <n3-icon
-	//                     @click.stop="sort(col,col.sort,'DESC')"
-	//                     :style="{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}"
-	//                     type="caret-down">
-	//                   </n3-icon>
-	//                 </div>
+	//                   <template v-if="col.show && col.colspan != 0">
+	//                     <span>{{col.title}} </span> 
+	//                     <div class="{{prefixCls}}-data-table-sort pull-right" v-if="col.sort" >
+	//                       <n3-icon
+	//                         @click.stop="sort(col,col.sort,'ASC')"
+	//                         :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
+	//                         type="caret-up">
+	//                       </n3-icon>
+	//                       <n3-icon
+	//                         @click.stop="sort(col,col.sort,'DESC')"
+	//                         :style="{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}"
+	//                         type="caret-down">
+	//                       </n3-icon>
+	//                     </div>
+	//                   </template>
 	//               </th>
 	//             </tr>
 	//           </thead>
@@ -20575,13 +20577,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	//                    	:value="stringify(data)" @change.stop="onCheckOne($event,data)" 
 	//                    	v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
 	//                 </td>
-	//                 <td v-for="col in initColumns" v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0" :colspan="colspan(col,data)" :rowspan="rowspan(col,data)">
-	//                 <template v-if="col.render">
-	//                    {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}
-	//                 </template>
-	//                 <template v-else>
-	//                   {{{ col.dataIndex ? data[col.dataIndex] : ''}}}
-	//                 </template>
+	//                 <td v-for="col in initColumns"
+	//                   :colspan="colspan(col,data)"
+	//                   :rowspan="rowspan(col,data)">
+	//                   <template v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0">
+	//                     <template v-if="col.render">
+	//                       {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}
+	//                     </template>
+	//                     <template v-else>
+	//                       {{{ col.dataIndex ? data[col.dataIndex] : ''}}}
+	//                     </template>
+	//                   </template>
 	//                 </td>
 	//             </tr>
 	//           </tbody>
@@ -20613,7 +20619,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 275 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-data-table\">\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\n    <n3-select \n\t    class='pull-left'\n\t    style=\"margin-right:10px;\"\n\t    :multiple=\"true\"\n\t    :showselected=\"false\"\n\t    v-if=\"selectCol\"\n\t    placeholder = \"显示的列\"\n\t    :options=\"selectOptions\" \n\t    :value.sync=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\n      <template v-for=\"item in filterArr\">\n        <n3-select \n\t        :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n\t        :search = \"item.search === undefined?true:!!item.search\"\n\t        :extra = \"item.extra === undefined?true:!!item.extra\"\n\t        :showselected=\"false\"\n\t        :placeholder = \"item.title\"\n\t        :options=\"item.options\" \n\t        :value.sync=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\" \n        style=\"margin-left:10px;\"\n        @click=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      :value.sync=\"query\"\n      @keydown.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\n                  <input v-if=\"list && list.length\" \n                  \ttype=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                  \t@change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in initColumns\" \n                  v-if=\"col.show && col.colspan != 0\" \n                  :style=\"{width:col.width}\" \n                  :class=\"{'pointer':col.sort}\" \n                  @click=\"sort(col,col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                <span>{{col.title}} </span> \n                <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\n                  <n3-icon\n                    @click.stop=\"sort(col,col.sort,'ASC')\"\n                    :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                    type=\"caret-up\">\n                  </n3-icon>\n                   <n3-icon\n                    @click.stop=\"sort(col,col.sort,'DESC')\"\n                    :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                    type=\"caret-down\">\n                  </n3-icon>\n                </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\n                   <input type=\"checkbox\" \n                   \tv-model=\"checkedValues\"  \n                   \t:value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                   \tv-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in initColumns\" v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\" :colspan=\"colspan(col,data)\" :rowspan=\"rowspan(col,data)\">\n                <template v-if=\"col.render\">\n                   {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\n                </template>\n                <template v-else>\n                  {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\n                </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div class='{{prefixCls}}-data-table-bar' v-if=\"page\" >\n    每页&nbsp;<n3-select \n      :cancelled=\"false\"\n      v-if=\"page\"\n      :options=\"options\" \n      class=\"{{prefixCls}}-data-table-page\" \n      :value.sync=\"pagesize\"></n3-select>&nbsp;条\n       共&nbsp;{{pagination.total}}&nbsp;条\n    <div class=\"pull-right\">  \n    <n3-simple-pagination v-if=\"page\" \n    :total=\"pagination.total\" \n    :current.sync=\"pagination.current\" \n    :pagesize=\"pagination.pagesize\" \n    :on-change=\"pageChange\"\n    ></n3-simple-pagination>\n    </div>\n  </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-data-table\">\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\n    <n3-select \n\t    class='pull-left'\n\t    style=\"margin-right:10px;\"\n\t    :multiple=\"true\"\n\t    :showselected=\"false\"\n\t    v-if=\"selectCol\"\n\t    placeholder = \"显示的列\"\n\t    :options=\"selectOptions\" \n\t    :value.sync=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\n      <template v-for=\"item in filterArr\">\n        <n3-select \n\t        :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n\t        :search = \"item.search === undefined?true:!!item.search\"\n\t        :extra = \"item.extra === undefined?true:!!item.extra\"\n\t        :showselected=\"false\"\n\t        :placeholder = \"item.title\"\n\t        :options=\"item.options\" \n\t        :value.sync=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\" \n        style=\"margin-left:10px;\"\n        @click=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      :value.sync=\"query\"\n      @keydown.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\n                  <input v-if=\"list && list.length\" \n                  \ttype=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                  \t@change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in initColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                  <template v-if=\"col.show && col.colspan != 0\">\n                    <span>{{col.title}} </span> \n                    <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n                  </template>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\n                   <input type=\"checkbox\" \n                   \tv-model=\"checkedValues\"  \n                   \t:value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                   \tv-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in initColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\n                    </template>\n                    <template v-else>\n                      {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div class='{{prefixCls}}-data-table-bar' v-if=\"page\" >\n    每页&nbsp;<n3-select \n      :cancelled=\"false\"\n      v-if=\"page\"\n      :options=\"options\" \n      class=\"{{prefixCls}}-data-table-page\" \n      :value.sync=\"pagesize\"></n3-select>&nbsp;条\n       共&nbsp;{{pagination.total}}&nbsp;条\n    <div class=\"pull-right\">  \n    <n3-simple-pagination v-if=\"page\" \n    :total=\"pagination.total\" \n    :current.sync=\"pagination.current\" \n    :pagesize=\"pagination.pagesize\" \n    :on-change=\"pageChange\"\n    ></n3-simple-pagination>\n    </div>\n  </div>\n  </div>";
 
 /***/ },
 /* 276 */
@@ -21770,8 +21776,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  ready: function ready() {
 	    if (this.sort) {
 	      this._sort();
-	      this.expand();
 	    }
+	    this.expand();
 	  }
 	};
 	// </script>

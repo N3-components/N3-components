@@ -294,6 +294,7 @@ export default {
       if (this.extra && this.searchText.replace(/\s+$|^\s+/g, '')) {
         this.options.push({value: this.searchText, label: this.searchText})
         this.add({value: this.searchText, label: this.searchText})
+        this.searchText = ''
       }
     },
     findInOptions (a) {

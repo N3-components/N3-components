@@ -5,7 +5,7 @@
       <span class="author"></span>
     </h1>
     <div class="bs-example">
-      <n3-tree :value.sync="id" :data="files1" ></n3-tree>
+      <n3-tree :value.sync="id" :data="files1" :expand-all="true"></n3-tree>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 <n3-tree :value.sync="id":data="files1"></n3-tree>

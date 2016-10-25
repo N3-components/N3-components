@@ -6,7 +6,10 @@
           <a href="./index.html" >N3</a>
         </n3-nav-item>
         <n3-nav-item :active="active==='base'">
-          <a href="./component.html" >组件</a>
+          <a href="./component.html" >经典</a>
+        </n3-nav-item>
+         <n3-nav-item :active="active==='ant'">
+          <a href="./component_blue.html" >ant</a>
         </n3-nav-item>
         <!--  <n3-nav-item :active="active==='usage'">
           <a href="./usage.html" >使用</a>

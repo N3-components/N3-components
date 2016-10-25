@@ -64,24 +64,25 @@
                   	@change="onCheckAll"/>
               </th>
               <th v-for="col in initColumns" 
-                  v-if="col.show && col.colspan != 0" 
-                  :style="{width:col.width}" 
-                  :class="{'pointer':col.sort}" 
-                  @click="sort(col,col.sort)" 
+                  :style="{width: col.width}" 
+                  :class="{'pointer': col.sort}" 
+                  @click="sort(col, col.sort)" 
                   :colspan="col.colspan === undefined ? 1 : col.colspan"> 
-                <span>{{col.title}} </span> 
-                <div class="{{prefixCls}}-data-table-sort pull-right" v-if="col.sort" >
-                  <n3-icon
-                    @click.stop="sort(col,col.sort,'ASC')"
-                    :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
-                    type="caret-up">
-                  </n3-icon>
-                   <n3-icon
-                    @click.stop="sort(col,col.sort,'DESC')"
-                    :style="{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}"
-                    type="caret-down">
-                  </n3-icon>
-                </div>
+                  <template v-if="col.show && col.colspan != 0">
+                    <span>{{col.title}} </span> 
+                    <div class="{{prefixCls}}-data-table-sort pull-right" v-if="col.sort" >
+                      <n3-icon
+                        @click.stop="sort(col,col.sort,'ASC')"
+                        :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
+                        type="caret-up">
+                      </n3-icon>
+                      <n3-icon
+                        @click.stop="sort(col,col.sort,'DESC')"
+                        :style="{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}"
+                        type="caret-down">
+                      </n3-icon>
+                    </div>
+                  </template>
               </th>
             </tr>
           </thead>
@@ -93,13 +94,17 @@
                    	:value="stringify(data)" @change.stop="onCheckOne($event,data)" 
                    	v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
                 </td>
-                <td v-for="col in initColumns" v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0" :colspan="colspan(col,data)" :rowspan="rowspan(col,data)">
-                <template v-if="col.render">
-                   {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}
-                </template>
-                <template v-else>
-                  {{{ col.dataIndex ? data[col.dataIndex] : ''}}}
-                </template>
+                <td v-for="col in initColumns"
+                  :colspan="colspan(col,data)"
+                  :rowspan="rowspan(col,data)">
+                  <template v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0">
+                    <template v-if="col.render">
+                      {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}
+                    </template>
+                    <template v-else>
+                      {{{ col.dataIndex ? data[col.dataIndex] : ''}}}
+                    </template>
+                  </template>
                 </td>
             </tr>
           </tbody>
