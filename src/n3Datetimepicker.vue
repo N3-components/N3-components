@@ -18,7 +18,7 @@
         v-show="displayDayView" 
         :style="{width:popWidth}" 
         transition="fadeDown">
-          <div class="{{prefixCls}}-datepicker-inner">
+          <div class="{{prefixCls}}-datepicker-inner" v-el:datepicker>
               <div class="{{prefixCls}}-datepicker-body">
                   <div class="{{prefixCls}}-datepicker-ctrl">
                       <span 
@@ -189,6 +189,7 @@ export default {
         minute: 0,
         second: 0
       },
+      popWidth:'',
       date: '',
       mouthNames: [
         '一月', '二月', '三月',
@@ -211,6 +212,18 @@ export default {
     currDate () {
       this.getDateRange()
     },
+    displayDayView (val) {
+      if (val) {
+        this.$nextTick(()=>{
+          let width = this.$els.datepicker.offsetWidth * 1 + 25
+          console.log(this.$els.datepicker.offsetWidth)
+          this.hour ? width += 42 : 0
+          this.minute ? width += 42 : 0
+          this.second ? width += 42 : 0
+          this.popWidth = width + 'px'
+        })
+      }
+    },
     date () {
       this.value = this.date + ' ' + this.handTime()
     },
@@ -222,14 +235,6 @@ export default {
     }
   },
   computed: {
-    popWidth () {
-      let width = 293
-      this.hour ? width += 44 : 0
-      this.minute ? width += 44 : 0
-      this.second ? width += 44 : 0
-
-      return width + 'px'
-    },
     hour () {
       if (this.format.indexOf('hh') > -1) {
         return true

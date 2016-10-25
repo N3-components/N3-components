@@ -21,7 +21,8 @@ export default {
       default: 2
     },
     wrapCol: {
-      type: Number
+      type: Number,
+      default: 12
     },
     formCol: {
       type: Number
