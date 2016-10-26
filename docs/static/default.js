@@ -51028,8 +51028,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	_index2.default.install(_vue2.default);
-	
+	// N3Components.install(Vue)
+	_vue2.default.use(_index2.default);
 	_vue2.default.config.debug = true;
 	
 	new _vue2.default({

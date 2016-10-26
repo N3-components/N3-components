@@ -41,8 +41,14 @@ npm install N3-components
 
 ```javascript
 import Vue from 'vue'
+// default css style
 import N3Components from 'N3-components'
+// ant design css style
+// import N3Components from 'N3-components/dist/blue.min.js' 
+
 N3Components.install(Vue)
+// or
+// Vue.use(N3Components)
 ```
 
 也可以在需要的时候引入该组件，示例代码如下：
