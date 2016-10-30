@@ -39167,15 +39167,15 @@
 	  value: true
 	});
 	// <template>
-	// 	<div :class="classObj" >
-	// 		<label class="{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label">
+	//   <div :class="classObj" >
+	//     <label class="{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label">
 	//       <em class="{{prefixCls}}-form-need" v-if="need" >*</em>
 	//       {{label}}
 	//       </label>
-	// 		<div class="{{prefixCls}}-col-sm-{{col}}">
-	// 			<slot></slot>
-	// 		</div>	
-	// 	</div>
+	//     <div class="{{prefixCls}}-col-sm-{{col}}">
+	//       <slot></slot>
+	//     </div>  
+	//   </div>
 	// </template>
 	
 	// <script>
@@ -39232,7 +39232,7 @@
 /* 793 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\n\t\t<label class=\"{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label\">\n      <em class=\"{{prefixCls}}-form-need\" v-if=\"need\" >*</em>\n      {{label}}\n      </label>\n\t\t<div class=\"{{prefixCls}}-col-sm-{{col}}\">\n\t\t\t<slot></slot>\n\t\t</div>\t\n\t</div>";
+	module.exports = "<div :class=\"classObj\" >\n    <label class=\"{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label\">\n      <em class=\"{{prefixCls}}-form-need\" v-if=\"need\" >*</em>\n      {{label}}\n      </label>\n    <div class=\"{{prefixCls}}-col-sm-{{col}}\">\n      <slot></slot>\n    </div>  \n  </div>";
 
 /***/ },
 /* 794 */
@@ -40130,9 +40130,10 @@
 	            (function () {
 	              data = new window.FormData();
 	              data.append(self.name, file, file.name);
-	
+	              // 跨域时 添加身份凭证信息
+	              xhr.withCredentials = true;
 	              var xhr = new window.XMLHttpRequest();
-	
+	              xhr.with;
 	              xhr.open('post', self.url, true);
 	
 	              xhr.onload = function () {

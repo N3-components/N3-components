@@ -229,9 +229,10 @@
             if (file.type.match(self.accept)) {
               data = new window.FormData()
               data.append(self.name, file, file.name)
-
+              // 跨域时 添加身份凭证信息
+              xhr.withCredentials = true
               let xhr = new window.XMLHttpRequest()
-
+              xhr.with
               xhr.open('post', self.url, true)
 
               xhr.onload = () => {
