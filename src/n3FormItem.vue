@@ -1,10 +1,10 @@
 <template>
   <div :class="classObj" >
-    <label class="{{prefixCls}}-col-sm-{{labelCol}} {{prefixCls}}-control-label">
+    <label class="{{prefixCls}}-col-sm-{{label_col}} {{prefixCls}}-control-label">
       <em class="{{prefixCls}}-form-need" v-if="need" >*</em>
       {{label}}
       </label>
-    <div class="{{prefixCls}}-col-sm-{{col}}">
+    <div class="{{prefixCls}}-col-sm-{{col}} inline">
       <slot></slot>
     </div>  
   </div>
@@ -18,11 +18,9 @@ export default {
     },
     labelCol: {
       type: Number,
-      default: 2
     },
     wrapCol: {
       type: Number,
-      default: 12
     },
     formCol: {
       type: Number
@@ -37,20 +35,33 @@ export default {
     }
   },
   computed: {
+    inline () {
+      return this.$parent.type == 'inline'
+    },
+    label_col () {
+      let defaultCol = this.inline ? 0 : 2
+      return this.labelCol ? this.labelCol : defaultCol
+    },
     col () {
+      if (this.inline && !this.formCol) {
+        return 0
+      }
+
       if (this.formCol) {
         return this.formCol
       }
-      return this.wrapCol - this.labelCol
+
+      let wrapCol = this.wrapCol ? this.wrapCol : 12 
+      return wrapCol - this.labelCol
     },
     classObj () {
       let {prefixCls, wrapCol} = this
       let klass = {}
-      wrapCol = wrapCol ? wrapCol : 12
+      let defaultCol = this.inline ? wrapCol ? wrapCol : 0 : 12
 
       klass['clearfix'] = true
       klass[prefixCls + '-form-group'] = true
-      klass[prefixCls + '-col-sm-' + wrapCol] = true 
+      klass[prefixCls + '-col-sm-' + defaultCol] = true 
 
       return klass
     }

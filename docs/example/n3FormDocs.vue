@@ -144,6 +144,151 @@
                      <!-- <n3-button type="primary" @click="validate = false" >关闭验证</n3-button> -->
                 </n3-form-item>
             </n3-form>
+
+            <h3>inline</h3>  
+
+            <n3-form v-ref:form type="inline">
+                <n3-form-item
+                    need
+                    label="姓名"
+                    :wrap-col="4">
+                <n3-input
+                    name="name"
+                    :value.sync="model.name"
+                    :rules="[{type:'required'}]"
+                    :custom-validate="nameValidate">
+                </n3-input>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="年龄"
+                    :wrap-col="4">
+                <n3-input-number
+                    name="age"
+                    :value.sync="model.age"
+                    :rules="[{type:'number'},{type:'required'}]">
+                </n3-input-number>
+                </n3-input>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="地址"
+                    :wrap-col="4">
+                <n3-cascader
+                    name="address"
+                    :options="options"
+                    :value.sync="model.address"
+                    :rules="[{type:'required'}]">
+                </n3-cascader>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="生日"
+                    :wrap-col="4">
+                <n3-datepicker
+                    name="birthday"
+                    :value.sync="model.birthday"
+                    :rules="[{type:'required'}]">
+                </n3-datepicker>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="学校"
+                    :wrap-col="4">
+                <n3-typeahead
+                    name="学校"
+                    :query.sync = "model.school"
+                    :data="schoolData"
+                    :rules="[{type:'required'}]">
+                </n3-typeahead>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="爱好"
+                    :wrap-col="4">
+                <n3-checkbox-group
+                    name="hobby"
+                    :value.sync = "model.hobby"
+                    :rules="[{type:'required'}]">
+                    <n3-checkbox value="0">看书</n3-checkbox>
+                    <n3-checkbox value="1">运动</n3-checkbox>
+                    <n3-checkbox value="2">旅行</n3-checkbox>
+                </n3-checkbox-group>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="性别"
+                    :wrap-col="4">
+                <n3-radio-group
+                    name="sex"
+                    :value.sync = "model.sex"
+                    :rules="[{type:'required'}]">
+                    <n3-radio value="0">男</n3-radio>
+                    <n3-radio value="1">女</n3-radio>
+                </n3-radio-group>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="专业"
+                    :wrap-col="4">
+                <n3-select
+                    name="sex"
+                    :options='profession'
+                    :value.sync = "model.profession"
+                    :rules="[{type:'required'}]">
+                </n3-select>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="级别"
+                    :wrap-col="4">
+                  <n3-slider
+                      name="level"
+                      :value.sync = "model.level"
+                      :rules="[{type:'required'}]">
+                  </n3-slider>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="开启状态"
+                    :wrap-col="4">
+                  <n3-switch
+                      name="state"
+                      :value.sync = "model.state"
+                      :rules="[{type:'required'}]">
+                  </n3-switch>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="喜欢的明星"
+                    :wrap-col="4">
+                  <n3-multiple-input
+                      name="star"
+                      :value.sync = "model.star"
+                      :rules="[{type:'required'}]">
+                  </n3-multiple-input>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="想说的话"
+                    :wrap-col="4">
+                  <n3-textarea
+                      name="suggestion"
+                      :value.sync = "model.suggestion"
+                      :rules="[{type:'required'}]">
+                  </n3-textarea>
+                </n3-form-item>
+
+                 <n3-form-item>
+                     <n3-button type="primary" @click="submit" >提交</n3-button>
+                     <!-- <n3-button type="primary" @click="validate = false" >关闭验证</n3-button> -->
+                </n3-form-item>
+            </n3-form>
           <pre><code class="language-markup"><script type="language-mark-up">
 <n3-form v-ref:form>
     <n3-form-item
@@ -285,6 +430,152 @@
          <n3-button type="primary" @click="submit" >提交</n3-button>
     </n3-form-item>
 </n3-form>
+
+<h3>inline</h3>
+
+<n3-form v-ref:form type="inline">
+                <n3-form-item
+                    need
+                    label="姓名"
+                    :wrap-col="4">
+                <n3-input
+                    name="name"
+                    :value.sync="model.name"
+                    :rules="[{type:'required'}]"
+                    :custom-validate="nameValidate">
+                </n3-input>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="年龄"
+                    :wrap-col="4">
+                <n3-input-number
+                    name="age"
+                    :value.sync="model.age"
+                    :rules="[{type:'number'},{type:'required'}]">
+                </n3-input-number>
+                </n3-input>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="地址"
+                    :wrap-col="4">
+                <n3-cascader
+                    name="address"
+                    :options="options"
+                    :value.sync="model.address"
+                    :rules="[{type:'required'}]">
+                </n3-cascader>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="生日"
+                    :wrap-col="4">
+                <n3-datepicker
+                    name="birthday"
+                    :value.sync="model.birthday"
+                    :rules="[{type:'required'}]">
+                </n3-datepicker>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="学校"
+                    :wrap-col="4">
+                <n3-typeahead
+                    name="学校"
+                    :query.sync = "model.school"
+                    :data="schoolData"
+                    :rules="[{type:'required'}]">
+                </n3-typeahead>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="爱好"
+                    :wrap-col="4">
+                <n3-checkbox-group
+                    name="hobby"
+                    :value.sync = "model.hobby"
+                    :rules="[{type:'required'}]">
+                    <n3-checkbox value="0">看书</n3-checkbox>
+                    <n3-checkbox value="1">运动</n3-checkbox>
+                    <n3-checkbox value="2">旅行</n3-checkbox>
+                </n3-checkbox-group>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="性别"
+                    :wrap-col="4">
+                <n3-radio-group
+                    name="sex"
+                    :value.sync = "model.sex"
+                    :rules="[{type:'required'}]">
+                    <n3-radio value="0">男</n3-radio>
+                    <n3-radio value="1">女</n3-radio>
+                </n3-radio-group>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="专业"
+                    :wrap-col="4">
+                <n3-select
+                    name="sex"
+                    :options='profession'
+                    :value.sync = "model.profession"
+                    :rules="[{type:'required'}]">
+                </n3-select>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="级别"
+                    :wrap-col="4">
+                  <n3-slider
+                      name="level"
+                      :value.sync = "model.level"
+                      :rules="[{type:'required'}]">
+                  </n3-slider>
+                </n3-form-item>
+
+                <n3-form-item
+                    need
+                    label="开启状态"
+                    :wrap-col="4">
+                  <n3-switch
+                      name="state"
+                      :value.sync = "model.state"
+                      :rules="[{type:'required'}]">
+                  </n3-switch>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="喜欢的明星"
+                    :wrap-col="4">
+                  <n3-multiple-input
+                      name="star"
+                      :value.sync = "model.star"
+                      :rules="[{type:'required'}]">
+                  </n3-multiple-input>
+                </n3-form-item>
+                <n3-form-item
+                    need
+                    label="想说的话"
+                    :wrap-col="4">
+                  <n3-textarea
+                      name="suggestion"
+                      :value.sync = "model.suggestion"
+                      :rules="[{type:'required'}]">
+                  </n3-textarea>
+                </n3-form-item>
+
+                 <n3-form-item>
+                     <n3-button type="primary" @click="submit" >提交</n3-button>
+                     <!-- <n3-button type="primary" @click="validate = false" >关闭验证</n3-button> -->
+                </n3-form-item>
+            </n3-form>
+
           </script></code></pre>
           <pre><code class="language-javascript"><script type="language-javascript">
 new Vue({
