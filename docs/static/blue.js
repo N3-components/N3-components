@@ -17008,6 +17008,18 @@
 	//         <td></td>
 	//         <td>value变化的回调函数</td>
 	//       </tr>
+	//       <tr>
+	//         <td>position-move</td>
+	//         <td><code>Boolean</code></td>
+	//         <td>true</td>
+	//         <td>是否允许用户改变输入框的位置</td>
+	//       </tr>
+	//       <tr>
+	//         <td>placeholder</td>
+	//         <td><code>String</code></td>
+	//         <td></td>
+	//         <td></td>
+	//       </tr>
 	//     </tbody>
 	//   </table>
 	//   <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
@@ -17055,7 +17067,7 @@
 /* 598 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"自定义输入\"  >\n    <h1 class=\"page-header\"><a href=\"#自定义输入\" class=\"anchor\">自定义输入</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-multiple-input\n          :on-focus=\"focus\" \n          :value.sync=\"a.list\" \n          :format=\"format\" \n          :on-inputchange=\"getResult\"\n          :render=\"render\"\n          :items=\"items\"\n          :query.sync=\"query\"\n          :on-hit=\"googleCallback\"\n        ></n3-multiple-input>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-multiple-input \n  :value.sync=\"a.list\" \n  :format=\"format\" \n  :on-inputchange=\"getResult\"\n  :render=\"render\"\n  :items=\"items\"\n  :query.sync=\"query\"\n  :on-hit=\"googleCallback\"\n></n3-multiple-input>\n    </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n  data:{\n    list:[{\n      value:'tag1',\n      label:'tag1',\n    },{\n      value:'tag2',\n      label:'tag2',\n    },{\n      value:'tag3',\n      label:'tag3',\n    }]\n  },\n  methods:{\n    render (item) {\n      return item.formatted_address\n    },\n    getResult (query) {\n      let self = this\n      $.ajax({\n        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,\n        success (ret) {\n          self.items = ret.results\n        }\n      })\n    },\n    del (item, index) {\n      this.list.splice(index, 1)\n    },\n    format (item, index) {\n      let content = typeof item === 'string' ? item : item.formatted_address\n      return `<label class=\"m-tag\" \">${content}</label>`\n    }\n  }\n})\n    </script></code></pre>\n  <h2>参数</h2>\n  <p>自动补全的参数请参考<a href=\"./component.html#n3TypeaheadDocs\" target=\"_blank\">自动补全组件</a></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>value</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td>需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>position</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td>输入框所在位置,需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>format</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>格式化显示函数</td>\n      </tr>\n      <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td>220px</td>\n        <td>组件宽度</td>\n      </tr>\n      <tr>\n        <td>height</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>组件高度</td>\n      </tr>\n      <tr>\n        <td>input-width</td>\n        <td><code>String</code></td>\n        <td>50px</td>\n        <td>输入框宽度</td>\n      </tr>\n      <tr>\n        <td>dropdown-width</td>\n        <td><code>String</code></td>\n        <td>220px</td>\n        <td>下拉框宽度</td>\n      </tr>\n      <tr>\n        <td>dropdown-height</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>下拉框最大高度</td>\n      </tr>\n      <tr>\n        <td>add-format</td>\n        <td><code>Function</code></td>\n        <td><code>function(text){return {\n        value:text,\n        label:text\n        }}</code></td>\n        <td>通过输入添加的处理函数</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>value变化的回调函数</td>\n      </tr>\n    </tbody>\n  </table>\n  <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"自定义输入\"  >\n    <h1 class=\"page-header\"><a href=\"#自定义输入\" class=\"anchor\">自定义输入</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-multiple-input\n          :on-focus=\"focus\" \n          :value.sync=\"a.list\" \n          :format=\"format\" \n          :on-inputchange=\"getResult\"\n          :render=\"render\"\n          :items=\"items\"\n          :query.sync=\"query\"\n          :on-hit=\"googleCallback\"\n        ></n3-multiple-input>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-multiple-input \n  :value.sync=\"a.list\" \n  :format=\"format\" \n  :on-inputchange=\"getResult\"\n  :render=\"render\"\n  :items=\"items\"\n  :query.sync=\"query\"\n  :on-hit=\"googleCallback\"\n></n3-multiple-input>\n    </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n  data:{\n    list:[{\n      value:'tag1',\n      label:'tag1',\n    },{\n      value:'tag2',\n      label:'tag2',\n    },{\n      value:'tag3',\n      label:'tag3',\n    }]\n  },\n  methods:{\n    render (item) {\n      return item.formatted_address\n    },\n    getResult (query) {\n      let self = this\n      $.ajax({\n        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,\n        success (ret) {\n          self.items = ret.results\n        }\n      })\n    },\n    del (item, index) {\n      this.list.splice(index, 1)\n    },\n    format (item, index) {\n      let content = typeof item === 'string' ? item : item.formatted_address\n      return `<label class=\"m-tag\" \">${content}</label>`\n    }\n  }\n})\n    </script></code></pre>\n  <h2>参数</h2>\n  <p>自动补全的参数请参考<a href=\"./component.html#n3TypeaheadDocs\" target=\"_blank\">自动补全组件</a></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>value</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td>需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>position</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td>输入框所在位置,需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>format</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>格式化显示函数</td>\n      </tr>\n      <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td>220px</td>\n        <td>组件宽度</td>\n      </tr>\n      <tr>\n        <td>height</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>组件高度</td>\n      </tr>\n      <tr>\n        <td>input-width</td>\n        <td><code>String</code></td>\n        <td>50px</td>\n        <td>输入框宽度</td>\n      </tr>\n      <tr>\n        <td>dropdown-width</td>\n        <td><code>String</code></td>\n        <td>220px</td>\n        <td>下拉框宽度</td>\n      </tr>\n      <tr>\n        <td>dropdown-height</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>下拉框最大高度</td>\n      </tr>\n      <tr>\n        <td>add-format</td>\n        <td><code>Function</code></td>\n        <td><code>function(text){return {\n        value:text,\n        label:text\n        }}</code></td>\n        <td>通过输入添加的处理函数</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>value变化的回调函数</td>\n      </tr>\n      <tr>\n        <td>position-move</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>是否允许用户改变输入框的位置</td>\n      </tr>\n      <tr>\n        <td>placeholder</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n  <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
 /* 599 */
@@ -30650,7 +30662,7 @@
 	
 	      self._results = self._results || {};
 	
-	      if (!val || val.length === 0) {
+	      if (_type2.default.isNullOrUndefined(val) || val.length === 0) {
 	        self.setResult('requiredValid', {
 	          validStatus: 'error',
 	          tips: tip || '不能为空'
@@ -36989,6 +37001,13 @@
 	        return '';
 	      }
 	    },
+	    placeholder: {
+	      type: String
+	    },
+	    positionMove: {
+	      type: Boolean,
+	      default: true
+	    },
 	    data: {
 	      type: Array
 	    },
@@ -37096,6 +37115,7 @@
 	      }, 100);
 	    },
 	    setIndex: function setIndex(index) {
+	      if (!this.positionMove) return;
 	      if (this.query) {
 	        this.addquery();
 	      }
@@ -37146,11 +37166,13 @@
 	      this.empty = this.query === '';
 	    },
 	    left: function left() {
+	      if (!this.positionMove) return;
 	      if (this.position > 0 && this.query === '') {
 	        this.position--;
 	      }
 	    },
 	    right: function right() {
+	      if (!this.positionMove) return;
 	      if (this.value && this.position < this.value.length && this.query === '') {
 	        this.position++;
 	      }
@@ -37164,6 +37186,7 @@
 	//     <template v-for="(index,item) in value" track-by="$index">
 	//         <template v-if="index == position">
 	//             <n3-typeahead
+	//               :placeholder="placeholder"
 	//               :on-focus="onFocus"
 	//               :on-blur="onBlur"
 	//               :style="{margin:'0px 5px'}"
@@ -37196,6 +37219,7 @@
 	
 	//     <template v-if="value && value.length == position">
 	//       <n3-typeahead
+	//         :placeholder="placeholder"
 	//         :on-focus="onFocus"
 	//         :on-blur="onBlur"
 	//         :style="{margin:'0px 5px'}"
@@ -37474,7 +37498,7 @@
 /* 763 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\n        <template v-if=\"index == position\">\n            <n3-typeahead\n              :on-focus=\"onFocus\"\n              :on-blur=\"onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              :query.sync=\"query\" \n              :width='inputWidth'\n              :items=\"items\"\n              :on-change=\"onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :focused.sync=\"focused\"\n              :data=\"data\"\n              @keydown.delete=\"del\" \n              @keydown.left=\"left\" \n              @keydown.right=\"right\" \n              @keydown.enter=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span class=\"{{prefixCls}}-multiple-input-space\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span class=\"{{prefixCls}}-multiple-input-m-tag\" >\n        {{{format.call(this._context,item,index)}}}\n        <n3-icon type=\"times\" class=\"{{prefixCls}}-multiple-close\" @click=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"value && value.length == position\">\n      <n3-typeahead\n        :on-focus=\"onFocus\"\n        :on-blur=\"onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        :query.sync=\"query\" \n        :width='inputWidth'\n        :items=\"items\"\n        :on-change=\"onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :focused.sync=\"focused\"\n        :data=\"data\"\n        @keydown.delete=\"del\" \n        @keydown.left=\"left\" \n        @keydown.right=\"right\" \n        @keydown.enter=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span class=\"{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long\"  @click=\"setIndex(value.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
+	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\n        <template v-if=\"index == position\">\n            <n3-typeahead\n              :placeholder=\"placeholder\"\n              :on-focus=\"onFocus\"\n              :on-blur=\"onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              :query.sync=\"query\" \n              :width='inputWidth'\n              :items=\"items\"\n              :on-change=\"onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :focused.sync=\"focused\"\n              :data=\"data\"\n              @keydown.delete=\"del\" \n              @keydown.left=\"left\" \n              @keydown.right=\"right\" \n              @keydown.enter=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span class=\"{{prefixCls}}-multiple-input-space\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span class=\"{{prefixCls}}-multiple-input-m-tag\" >\n        {{{format.call(this._context,item,index)}}}\n        <n3-icon type=\"times\" class=\"{{prefixCls}}-multiple-close\" @click=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"value && value.length == position\">\n      <n3-typeahead\n        :placeholder=\"placeholder\"\n        :on-focus=\"onFocus\"\n        :on-blur=\"onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        :query.sync=\"query\" \n        :width='inputWidth'\n        :items=\"items\"\n        :on-change=\"onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :focused.sync=\"focused\"\n        :data=\"data\"\n        @keydown.delete=\"del\" \n        @keydown.left=\"left\" \n        @keydown.right=\"right\" \n        @keydown.enter=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span class=\"{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long\"  @click=\"setIndex(value.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
 
 /***/ },
 /* 764 */
@@ -40131,9 +40155,8 @@
 	              data = new window.FormData();
 	              data.append(self.name, file, file.name);
 	              // 跨域时 添加身份凭证信息
-	              xhr.withCredentials = true;
 	              var xhr = new window.XMLHttpRequest();
-	              xhr.with;
+	              xhr.withCredentials = true;
 	              xhr.open('post', self.url, true);
 	
 	              xhr.onload = function () {

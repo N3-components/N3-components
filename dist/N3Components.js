@@ -2181,7 +2181,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	      self._results = self._results || {};
 	
-	      if (!val || val.length === 0) {
+	      if (_type2.default.isNullOrUndefined(val) || val.length === 0) {
 	        self.setResult('requiredValid', {
 	          validStatus: 'error',
 	          tips: tip || '不能为空'
@@ -19063,6 +19063,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return '';
 	      }
 	    },
+	    placeholder: {
+	      type: String
+	    },
+	    positionMove: {
+	      type: Boolean,
+	      default: true
+	    },
 	    data: {
 	      type: Array
 	    },
@@ -19170,6 +19177,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }, 100);
 	    },
 	    setIndex: function setIndex(index) {
+	      if (!this.positionMove) return;
 	      if (this.query) {
 	        this.addquery();
 	      }
@@ -19220,11 +19228,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.empty = this.query === '';
 	    },
 	    left: function left() {
+	      if (!this.positionMove) return;
 	      if (this.position > 0 && this.query === '') {
 	        this.position--;
 	      }
 	    },
 	    right: function right() {
+	      if (!this.positionMove) return;
 	      if (this.value && this.position < this.value.length && this.query === '') {
 	        this.position++;
 	      }
@@ -19238,6 +19248,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//     <template v-for="(index,item) in value" track-by="$index">
 	//         <template v-if="index == position">
 	//             <n3-typeahead
+	//               :placeholder="placeholder"
 	//               :on-focus="onFocus"
 	//               :on-blur="onBlur"
 	//               :style="{margin:'0px 5px'}"
@@ -19270,6 +19281,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	//     <template v-if="value && value.length == position">
 	//       <n3-typeahead
+	//         :placeholder="placeholder"
 	//         :on-focus="onFocus"
 	//         :on-blur="onBlur"
 	//         :style="{margin:'0px 5px'}"
@@ -19548,7 +19560,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 266 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\n        <template v-if=\"index == position\">\n            <n3-typeahead\n              :on-focus=\"onFocus\"\n              :on-blur=\"onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              :query.sync=\"query\" \n              :width='inputWidth'\n              :items=\"items\"\n              :on-change=\"onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :focused.sync=\"focused\"\n              :data=\"data\"\n              @keydown.delete=\"del\" \n              @keydown.left=\"left\" \n              @keydown.right=\"right\" \n              @keydown.enter=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span class=\"{{prefixCls}}-multiple-input-space\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span class=\"{{prefixCls}}-multiple-input-m-tag\" >\n        {{{format.call(this._context,item,index)}}}\n        <n3-icon type=\"times\" class=\"{{prefixCls}}-multiple-close\" @click=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"value && value.length == position\">\n      <n3-typeahead\n        :on-focus=\"onFocus\"\n        :on-blur=\"onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        :query.sync=\"query\" \n        :width='inputWidth'\n        :items=\"items\"\n        :on-change=\"onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :focused.sync=\"focused\"\n        :data=\"data\"\n        @keydown.delete=\"del\" \n        @keydown.left=\"left\" \n        @keydown.right=\"right\" \n        @keydown.enter=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span class=\"{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long\"  @click=\"setIndex(value.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
+	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\n        <template v-if=\"index == position\">\n            <n3-typeahead\n              :placeholder=\"placeholder\"\n              :on-focus=\"onFocus\"\n              :on-blur=\"onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              :query.sync=\"query\" \n              :width='inputWidth'\n              :items=\"items\"\n              :on-change=\"onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :focused.sync=\"focused\"\n              :data=\"data\"\n              @keydown.delete=\"del\" \n              @keydown.left=\"left\" \n              @keydown.right=\"right\" \n              @keydown.enter=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span class=\"{{prefixCls}}-multiple-input-space\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span class=\"{{prefixCls}}-multiple-input-m-tag\" >\n        {{{format.call(this._context,item,index)}}}\n        <n3-icon type=\"times\" class=\"{{prefixCls}}-multiple-close\" @click=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"value && value.length == position\">\n      <n3-typeahead\n        :placeholder=\"placeholder\"\n        :on-focus=\"onFocus\"\n        :on-blur=\"onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        :query.sync=\"query\" \n        :width='inputWidth'\n        :items=\"items\"\n        :on-change=\"onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :focused.sync=\"focused\"\n        :data=\"data\"\n        @keydown.delete=\"del\" \n        @keydown.left=\"left\" \n        @keydown.right=\"right\" \n        @keydown.enter=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span class=\"{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long\"  @click=\"setIndex(value.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
 
 /***/ },
 /* 267 */
@@ -22204,9 +22216,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            (function () {
 	              data = new window.FormData();
 	              data.append(self.name, file, file.name);
-	
+	              // 跨域时 添加身份凭证信息
 	              var xhr = new window.XMLHttpRequest();
-	
+	              xhr.withCredentials = true;
 	              xhr.open('post', self.url, true);
 	
 	              xhr.onload = function () {

@@ -178,7 +178,7 @@ export default {
 
       self._results = self._results || {}
 
-      if (!val || val.length === 0) {
+      if (type.isNullOrUndefined(val) || val.length === 0) {
         self.setResult('requiredValid', {
           validStatus: 'error',
           tips: tip || '不能为空'

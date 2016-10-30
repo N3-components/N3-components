@@ -4,6 +4,7 @@
     <template v-for="(index,item) in value" track-by="$index">
         <template v-if="index == position">
             <n3-typeahead
+              :placeholder="placeholder"
               :on-focus="onFocus"
               :on-blur="onBlur"
               :style="{margin:'0px 5px'}"
@@ -36,6 +37,7 @@
 
     <template v-if="value && value.length == position">
       <n3-typeahead
+        :placeholder="placeholder"
         :on-focus="onFocus"
         :on-blur="onBlur"
         :style="{margin:'0px 5px'}"
@@ -124,6 +126,13 @@ export default {
       default () {
         return ''
       }
+    },
+    placeholder: {
+      type: String
+    },  
+    positionMove: {
+      type: Boolean,
+      default: true
     },
     data: {
       type: Array
@@ -230,6 +239,7 @@ export default {
       }, 100)
     },
     setIndex (index) {
+      if (!this.positionMove) return
       if (this.query) {
         this.addquery()
       }
@@ -276,11 +286,13 @@ export default {
       this.empty = this.query === ''
     },
     left () {
+      if (!this.positionMove) return
       if (this.position > 0 && this.query === '') {
         this.position--
       }
     },
     right () {
+      if (!this.positionMove) return
       if (this.value && this.position < this.value.length && this.query === '') {
         this.position++
       }

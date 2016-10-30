@@ -136,6 +136,18 @@ new Vue({
         <td></td>
         <td>value变化的回调函数</td>
       </tr>
+      <tr>
+        <td>position-move</td>
+        <td><code>Boolean</code></td>
+        <td>true</td>
+        <td>是否允许用户改变输入框的位置</td>
+      </tr>
+      <tr>
+        <td>placeholder</td>
+        <td><code>String</code></td>
+        <td></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
