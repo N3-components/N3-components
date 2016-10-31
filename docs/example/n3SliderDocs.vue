@@ -2,7 +2,7 @@
   <div class="bs-docs-section" id="滑块"  >
     <h1 class="page-header"><a href="#滑块" class="anchor">滑块</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-slider :value.sync = "value" :on-change="change" ></n3-slider>
+      <n3-slider :value.sync = "value" :on-change="change" style="margin-right:20px"></n3-slider>
 
       <n3-slider :value.sync = "value" :on-change="change" orientation="vertical"></n3-slider>
 

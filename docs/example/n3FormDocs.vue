@@ -147,7 +147,7 @@
 
             <h3>inline</h3>  
 
-            <n3-form v-ref:form type="inline">
+            <n3-form  type="inline">
                 <n3-form-item
                     need
                     label="姓名"
@@ -282,11 +282,6 @@
                       :value.sync = "model.suggestion"
                       :rules="[{type:'required'}]">
                   </n3-textarea>
-                </n3-form-item>
-
-                 <n3-form-item>
-                     <n3-button type="primary" @click="submit" >提交</n3-button>
-                     <!-- <n3-button type="primary" @click="validate = false" >关闭验证</n3-button> -->
                 </n3-form-item>
             </n3-form>
           <pre><code class="language-markup"><script type="language-mark-up">
@@ -570,10 +565,6 @@
                   </n3-textarea>
                 </n3-form-item>
 
-                 <n3-form-item>
-                     <n3-button type="primary" @click="submit" >提交</n3-button>
-                     <!-- <n3-button type="primary" @click="validate = false" >关闭验证</n3-button> -->
-                </n3-form-item>
             </n3-form>
 
           </script></code></pre>
