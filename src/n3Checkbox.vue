@@ -1,12 +1,12 @@
 <template>
   <label :class="wrapClass">
   <span>
-    <span class="{{prefixCls}}-checkbox-inner">
-      <n3-icon type="check" color="#fff" class="{{prefixCls}}-checkbox-inner-check"></n3-icon>
+    <span :class="`${prefixCls}-checkbox-inner`">
+      <n3-icon type="check" color="#fff" :class="`${prefixCls}-checkbox-inner-check`"></n3-icon>
     </span>
     <input
       type="checkbox"
-      class="{{prefixCls}}-checkbox-input"
+      :class="`${prefixCls}-checkbox-input`"
       :disabled="disabled"
       :checked="checked"
       @click="handleClick"/>

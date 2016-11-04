@@ -1,6 +1,6 @@
 <template>
-  <div class="{{prefixCls}}-data-table">
-  <div class="{{prefixCls}}-data-table-bar clearfix">
+  <div :class="`${prefixCls}-data-table`">
+  <div :class="`${prefixCls}-data-table-bar clearfix`">
     <n3-select 
 	    class='pull-left'
 	    style="margin-right:10px;"
@@ -11,7 +11,7 @@
 	    :options="selectOptions" 
 	    :value.sync="selectdCols">
     </n3-select>
-    <div v-if="filter && filterArr.length" class='pull-left {{prefixCls}}-btn-group'>
+    <div v-if="filter && filterArr.length" :class='pull-left ${prefixCls}-btn-group`'>
       <template v-for="item in filterArr">
         <n3-select 
 	        :multiple = "item.multiple === undefined?true:!!item.multiple"
@@ -24,20 +24,20 @@
         </n3-select>
       </template>  
       <n3-button
-        class="{{prefixCls}}-data-table-inner-btn"
+        :class="`${prefixCls}-data-table-inner-btn`"
         @click="resetFilter" 
         type="primary">
         <n3-icon type="reply"></n3-icon>
       </n3-button>
        <n3-button
-        class="{{prefixCls}}-data-table-inner-btn"
+        :class="`${prefixCls}-data-table-inner-btn`"
         @click="goFilter" 
         type="primary">
         <n3-icon type="filter"></n3-icon>
       </n3-button>
     </div>
       <n3-button
-        class="{{prefixCls}}-data-table-inner-btn" 
+        :class="`${prefixCls}-data-table-inner-btn`" 
         style="margin-left:10px;"
         @click="refresh"
         v-if="refresh"  
@@ -58,7 +58,7 @@
       <table :class="classObj" >
           <thead>
             <tr>
-              <th v-if="selection" class="{{prefixCls}}-data-table-row-select">
+              <th v-if="selection" :class="`${prefixCls}-data-table-row-select`">
                   <input v-if="list && list.length" 
                   	type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
                   	@change="onCheckAll"/>
@@ -70,7 +70,7 @@
                   :colspan="col.colspan === undefined ? 1 : col.colspan"> 
                   <template v-if="col.show && col.colspan != 0">
                     <span>{{col.title}} </span> 
-                    <div class="{{prefixCls}}-data-table-sort pull-right" v-if="col.sort" >
+                    <div :class="`${prefixCls}-data-table-sort pull-right`" v-if="col.sort" >
                       <n3-icon
                         @click.stop="sort(col,col.sort,'ASC')"
                         :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
@@ -88,7 +88,7 @@
           </thead>
           <tbody>
             <tr v-for="(index,data) in list" track-by="n3Key">
-                <td v-if="selection" class="{{prefixCls}}-row-select">
+                <td v-if="selection" :class="`${prefixCls}-row-select`">
                    <input type="checkbox" 
                    	v-model="checkedValues"  
                    	:value="stringify(data)" @change.stop="onCheckOne($event,data)" 
@@ -111,12 +111,12 @@
       </table>
     </div>
   </div>
-  <div class='{{prefixCls}}-data-table-bar' v-if="page" >
+  <div :class='${prefixCls}-data-table-bar' v-if="page" >
     每页&nbsp;<n3-select 
       :cancelled="false"
       v-if="page"
       :options="options" 
-      class="{{prefixCls}}-data-table-page" 
+      :class="`${prefixCls}-data-table-page" 
       :value.sync="pagesize"></n3-select>&nbsp;条
        共&nbsp;{{pagination.total}}&nbsp;条
     <div class="pull-right">  

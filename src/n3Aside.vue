@@ -4,13 +4,13 @@
     :class="classObj"
     v-show="show"
     :transition="(this.placement === 'left') ? 'slideleft' : 'slideright'">
-    <div class="{{prefixCls}}-aside-dialog">
-      <div class="{{prefixCls}}-aside-content">
-        <div class="{{prefixCls}}-aside-header">
-          <button type="button" class="{{prefixCls}}-close" @click='close'><span>&times;</span></button>
-          <h4 class="{{prefixCls}}-aside-title">{{header}}</h4>
+    <div :class="`${prefixCls}-aside-dialog`">
+      <div :class="`${prefixCls}-aside-content`">
+        <div :class="`${prefixCls}-aside-header`">
+          <button type="button" :class="`${prefixCls}-close`" @click='close'><span>&times;</span></button>
+          <h4 :class="`${prefixCls}-aside-title`">{{header}}</h4>
         </div>
-        <div class="{{prefixCls}}-aside-body">
+        <div :class="`${prefixCls}-aside-body`">
           <slot></slot>
         </div>
       </div>

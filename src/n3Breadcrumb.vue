@@ -1,5 +1,5 @@
 <template>
-	<ol class="{{prefixCls}}-breadcrumb">
+	<ol :class="`${prefixCls}-breadcrumb`">
 		<slot></slot>
 	</ol>
 </template>

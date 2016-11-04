@@ -1,5 +1,5 @@
 <template>
-  <div class="{{prefixCls}}-carousel-item">
+  <div :class="`${prefixCls}-carousel-item`">
     <slot></slot>
   </div>
 </template>

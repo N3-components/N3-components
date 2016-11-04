@@ -1,5 +1,5 @@
 <template>
-  <div class="{{prefixCls}}-btn-group {{prefixCls}}-checkbox-group">
+  <div :class="`${prefixCls}-btn-group ${prefixCls}-checkbox-group`">
     <template v-if="options">
       <n3-checkbox
         v-if="type==='checkbox'" 

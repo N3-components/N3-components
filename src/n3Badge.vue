@@ -1,5 +1,5 @@
 <template>
-	<span class="{{prefixCls}}-badge">
+	<span :class="`${prefixCls}-badge`">
 		<slot></slot>	
 	</span>
 </template>

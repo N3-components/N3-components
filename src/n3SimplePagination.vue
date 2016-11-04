@@ -1,19 +1,19 @@
 <template>
-	<nav v-show="total>0" class='{{prefixCls}}-simple-pagination'>
-        <div class="{{prefixCls}}-pagination">
-            <n3-button v-show ="havePrev"  @click="prev" class="{{prefixCls}}-simple-pagination-btn">
+	<nav v-show="total>0" :class='`${prefixCls}-simple-pagination`'>
+        <div :class="`${prefixCls}-pagination">
+            <n3-button v-show ="havePrev"  @click="prev" :class="`${prefixCls}-simple-pagination-btn`">
               <n3-icon type="chevron-left"></n3-icon>
             </n3-button>
             <span> {{current}} / {{totalpage}}</span>
-            <n3-button v-show ="haveNext" @click="next" class="{{prefixCls}}-simple-pagination-btn">
+            <n3-button v-show ="haveNext" @click="next" :class="`${prefixCls}-simple-pagination-btn`">
               <n3-icon type="chevron-right"></n3-icon>
             </n3-button>
             <n3-input  
               width="50px"
-              class="{{prefixCls}}-simple-pagination-input"
+              :class="`${prefixCls}-simple-pagination-input`"
               @keyup.enter="go" 
               :value.sync="inputValue"></n3-input>
-            <n3-button @click="go" class="{{prefixCls}}-simple-pagination-btn">跳转</n3-button>
+            <n3-button @click="go" :class="`${prefixCls}-simple-pagination-btn`">跳转</n3-button>
         </div>
     </nav>
 </template>

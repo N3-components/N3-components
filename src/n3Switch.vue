@@ -1,10 +1,10 @@
 <template>
 <div class="inline">
   <div  :class="classObj" @click="toggle">
-    <div class="{{prefixCls}}-switch-container {{prefixCls}}-switch-on-primary {{prefixCls}}-switch-off-default">
-      <span class="{{prefixCls}}-switch-handle-on {{prefixCls}}-switch-primary" >{{ontext}}</span>
-      <span class="{{prefixCls}}-switch-label" >&nbsp;</span>
-      <span class="{{prefixCls}}-switch-handle-off {{prefixCls}}-switch-default" >{{offtext}}</span>
+    <div :class="`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`">
+      <span :class="`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`" >{{ontext}}</span>
+      <span :class="`${prefixCls}-switch-label`" >&nbsp;</span>
+      <span :class="`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`" >{{offtext}}</span>
     </div>
   </div>
   <validate

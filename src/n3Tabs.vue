@@ -12,7 +12,7 @@
           </a>
       </li>
     </ul>
-    <div class="{{prefixCls}}-tab-content">
+    <div :class="`${prefixCls}-tab-content`">
       <div v-if="list">
           {{{renderData[activeIndex].content}}}
       </div>

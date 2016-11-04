@@ -1,6 +1,6 @@
 <template>
-	<nav class="{{prefixCls}}-collapse {{prefixCls}}-navbar-collapse {{prefixCls}}-navbar-{{theme}} {{prefixCls}}-navbar-{{type}} clearfix">
-		<ul class="{{prefixCls}}-nav {{prefixCls}}-navbar-nav">
+	<nav :class="`${prefixCls}-collapse ${prefixCls}-navbar-collapse ${prefixCls}-navbar-${theme} ${prefixCls}-navbar-${type} clearfix`">
+		<ul :class="`${prefixCls}-nav ${prefixCls}-navbar-nav`">
 			<slot></slot>	
 		</ul>
 	</nav>

@@ -2,7 +2,7 @@
 <div :class="classObj"  :style="{'width':width}">
   <input
     autoComplete="off"
-    class="{{prefixCls}}-form-control"
+    :class="`${prefixCls}-form-control`"
     :style="{'width':width}"
     :readonly="readonly"
     :disabled="disabled"
@@ -13,17 +13,17 @@
     v-focus-model="focused"
     v-model="value"  />
   <n3-icon
-    type="check" class="{{prefixCls}}-form-control-feedback"
+    type="check" :class="`${prefixCls}-form-control-feedback`"
     v-if='validStatus=="success" && hasFeedback'>
   </n3-icon>
 
   <n3-icon
-    type="warning" class="{{prefixCls}}-form-control-feedback"
+    type="warning" :class="`${prefixCls}-form-control-feedback`"
     v-if='validStatus=="warning" && hasFeedback'>
   </n3-icon>
 
   <n3-icon
-    type="times" class="{{prefixCls}}-form-control-feedback"
+    type="times" :class="`${prefixCls}-form-control-feedback`"
     v-if='validStatus=="error" && hasFeedback'>
   </n3-icon>
 

@@ -10,9 +10,9 @@
       v-el:popover
       v-show="show"
       :transition="effect">
-        <div class="{{prefixCls}}-popover-arrow"></div>
-        <h3 class="{{prefixCls}}-popover-title" v-show="header">{{title}}</h3>
-        <div class="{{prefixCls}}-popover-content" v-el:content>
+        <div :class="`${prefixCls}-popover-arrow`"></div>
+        <h3 :class="`${prefixCls}-popover-title`" v-show="header">{{title}}</h3>
+        <div :class="`${prefixCls}-popover-content`" v-el:content>
          <slot name="content"></slot>
         </div>
     </div>

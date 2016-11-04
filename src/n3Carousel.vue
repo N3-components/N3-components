@@ -1,19 +1,19 @@
 <template>
-<div class="{{prefixCls}}-carousel {{prefixCls}}-slide">
-  <ol class="{{prefixCls}}-carousel-indicators" v-show="indicators">
+<div :class="`${prefixCls}-carousel ${prefixCls}-slide`">
+  <ol :class="`${prefixCls}-carousel-indicators`" v-show="indicators">
     <li v-for="i in indicator" 
       transition="fade"
       @click="handleIndicatorClick($index)" 
       :class="[$index === activeIndex ? prefixCls + '-carousel-active'  : '']">
     </li>
   </ol>
-  <div class="{{prefixCls}}-carousel-inner">
+  <div :class="`${prefixCls}-carousel-inner`">
     <slot></slot>
   </div>
-  <a v-show="controls" class="{{prefixCls}}-carousel-left {{prefixCls}}-carousel-control" @click="prevClick">
+  <a v-show="controls" :class="`${prefixCls}-carousel-left ${prefixCls}-carousel-control`" @click="prevClick">
     <n3-icon type="chevron-left"></n3-icon>
   </a>
-  <a v-show="controls" class="{{prefixCls}}-carousel-right {{prefixCls}}-carousel-control" @click="nextClick">
+  <a v-show="controls" :class="`${prefixCls}-carousel-right ${prefixCls}-carousel-control`" @click="nextClick">
     <n3-icon type="chevron-right"></n3-icon>
   </a>
 </div>

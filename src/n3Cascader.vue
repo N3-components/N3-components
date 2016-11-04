@@ -1,6 +1,6 @@
 <template>
-  <div class="{{prefixCls}}-cascader">
-    <span class="{{prefixCls}}-cascader-picker">
+  <div :class="`${prefixCls}-cascader`">
+    <span :class="`${prefixCls}-cascader-picker`">
       <n3-input 
         :width="width"
         :name="name" 
@@ -15,8 +15,8 @@
         @click="toggleMenus">
       </n3-input>
     </span>
-    <div class="{{prefixCls}}-cascader-menus" v-show="show" transition="fadeDown">
-      <ul class="{{prefixCls}}-cascader-menu" v-for="(index, menu) in menus">
+    <div :class="`${prefixCls}-cascader-menus`" v-show="show" transition="fadeDown">
+      <ul :class="`${prefixCls}-cascader-menu`" v-for="(index, menu) in menus">
         <li :class="itemClass(index,option)" 
           v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
         </li>

@@ -1,10 +1,10 @@
 <template>
-  <div class="{{prefixCls}}-btn-group {{prefixCls}}-select-group" >
+  <div :class="`${prefixCls}-btn-group ${prefixCls}-select-group`" >
     <n3-button  
       :style="{width:width}"
       :disabled="disabled"
       :size="size"
-      class="{{prefixCls}}-dropdown-toggle"
+      :class="`${prefixCls}-dropdown-toggle`"
       @click="toggleDropdown">
 
       <span  v-if="showPlaceholder || !showselected">{{placeholder}}</span>
@@ -18,20 +18,20 @@
     </n3-button>
     <ul 
       :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
-      class="{{prefixCls}}-dropdown-menu" 
+      :class="`${prefixCls}-dropdown-menu`" 
       v-el:menu 
       v-show="show" 
       transition="fadeDown">
         <li v-if="search">
           <n3-input
-            class="{{prefixCls}}-select-search"
+            :class="`${prefixCls}-select-search`"
             :placeholder="inputPlaceholder"
             :value.sync="searchText"
             @keydown.enter="addExtra"
           ></n3-input>
           <n3-icon type="plus-square-o" v-if="extra" @click="addExtra"></n3-icon>
         </li>
-        <li v-if="multiple" class="{{prefixCls}}-select-all">
+        <li v-if="multiple" :class="`${prefixCls}-select-all`">
           <a @click.prevent="selectAll">
             全选
            <n3-icon type="check" v-show="allSelected"></n3-icon>
@@ -49,7 +49,7 @@
           </li>
         </template>
         <slot v-else ></slot>
-      <div class="{{prefixCls}}-notify" v-show="showNotify" transition="fade">最多选择 {{limit}} 项</div>
+      <div :class="`${prefixCls}-notify`" v-show="showNotify" transition="fade">最多选择 {{limit}} 项</div>
     </ul>
     <div class="clearfix"></div>
     <validate

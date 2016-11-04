@@ -1,7 +1,7 @@
 <template>
-<div class="{{prefixCls}}-panel {{prefixCls}}-panel-default">
-    <div class="{{prefixCls}}-panel-heading">
-      <h4 class="{{prefixCls}}-panel-title">
+<div :class="`${prefixCls}-panel ${prefixCls}-panel-default`">
+    <div :class="`${prefixCls}-panel-heading`">
+      <h4 :class="`${prefixCls}-panel-title`">
         <a @click="toggleIsOpen()">
            <slot name="header">
             {{header}}
@@ -10,11 +10,11 @@
       </h4>
     </div>
     <div
-      class="{{prefixCls}}-panel-collapse"
+      :class="`${prefixCls}-panel-collapse`"
       v-el:panel
       v-show="isOpen"
       :transition="$parent.effect">
-      <div class="{{prefixCls}}-panel-body">
+      <div :class="`${prefixCls}-panel-body`">
         <slot></slot>
       </div>
     </div>

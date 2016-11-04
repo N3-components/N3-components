@@ -5,14 +5,14 @@
     transition="fade"
     :style="{width:width}">
 
-    <n3-icon class="{{prefixCls}}-alert-icon" :type="iconType" ></n3-icon>
+    <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
 
-    <button v-if="dismissable" type="button" class="{{prefixCls}}-close"
+    <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
       @click="_handleClose" >
       <span>&times;</span>
     </button>
 
-    <div v-if="description" class="{{prefixCls}}-alert-content">
+    <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
       <h4>{{message}}</h4>
       <p><slot></slot></p>
     </div>

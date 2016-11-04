@@ -1,5 +1,5 @@
 <template>
-  <div class="{{prefixCls}}-row">
+  <div :class="`${prefixCls}-row`">
   	<slot></slot>		
   </div>
 </template>

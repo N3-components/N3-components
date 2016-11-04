@@ -1,8 +1,8 @@
 <template>
- 	<li class="{{prefixCls}}-timeline-item">
- 		<div class="{{prefixCls}}-timeline-item-tail"></div>
+ 	<li :class="`${prefixCls}-timeline-item`">
+ 		<div :class="`${prefixCls}-timeline-item-tail`"></div>
  		<div :class="[prefixCls+'-timeline-item-head',icon?prefixCls+'-fa '+prefixCls+'-fa-'+icon:'']" :style="style"></div>
- 		<div class="{{prefixCls}}-timeline-item-content">
+ 		<div :class="`${prefixCls}-timeline-item-content`">
 	 		<slot></slot>
  		</div>
  	</li>

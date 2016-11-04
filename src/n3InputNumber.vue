@@ -1,13 +1,13 @@
 <template>
 <div :class="classObj" :style="{width: width}">
-  <div class="{{prefixCls}}-input-number-handler-wrap">
+  <div :class="`${prefixCls}-input-number-handler-wrap`">
     <a unselectable="unselectable"
       ref="up"
       @click="_up"
       @mouse.down="preventDefault"
       :class="[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]">
         <n3-icon
-          class="{{prefixCls}}-input-number-handler-up-inner" 
+          :class="`${prefixCls}-input-number-handler-up-inner`" 
           type="angle-up" 
           @click="preventDefault" 
           unselectable="unselectable">
@@ -19,7 +19,7 @@
        @click="_down"
        :class="[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]">
        <n3-icon
-          class="{{prefixCls}}-input-number-handler-down-inner" 
+          :class="`${prefixCls}-input-number-handler-down-inner`" 
           type="angle-down" 
           @click="preventDefault" 
           unselectable="unselectable">

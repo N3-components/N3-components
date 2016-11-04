@@ -1,5 +1,5 @@
 <template>
-  <div class="{{prefixCls}}-progress">
+  <div :class="`${prefixCls}-progress`">
     <slot></slot>	
   </div>
 </template>

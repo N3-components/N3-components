@@ -13,7 +13,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.vue', '.css'],
-    root: path.resolve('./')
+    root: path.resolve('./'),
+    alias: {
+      vue: 'vue/dist/vue.js'
+    }
   },
   module: {
     loaders: [{ test: /\.vue$/, loader: 'vue' },

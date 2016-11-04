@@ -1,7 +1,7 @@
 <template>
 <div :class="classObj" :style="{width:width}">
   <textarea
-    class="{{prefixCls}}-form-control"  
+    :class="`${prefixCls}-form-control`"  
     :disabled="disabled"
     :readonly="readonly"
     :maxlength="maxLength"

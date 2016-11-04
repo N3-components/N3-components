@@ -1,5 +1,5 @@
 <template>
- 	<ul class="{{prefixCls}}-timeline-con">
+ 	<ul :class="`${prefixCls}-timeline-con`">
  		<template v-if="value">
  			<n3-timeline-item v-for="i in value" :color="i.color" :icon="i.icon" >
  				{{{i.content}}}

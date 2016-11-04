@@ -27,11 +27,11 @@
             </n3-typeahead>
         </template>
          <template v-else>
-            <span class="{{prefixCls}}-multiple-input-space"  @click="setIndex(index)"></span>
+            <span :class="`${prefixCls}-multiple-input-space`"  @click="setIndex(index)"></span>
         </template>
-        <span class="{{prefixCls}}-multiple-input-m-tag" >
+        <span :class="`${prefixCls}-multiple-input-m-tag`" >
         {{{format.call(this._context,item,index)}}}
-        <n3-icon type="times" class="{{prefixCls}}-multiple-close" @click="clickDel(index)"></n3-icon>
+        <n3-icon type="times" :class="`${prefixCls}-multiple-close`" @click="clickDel(index)"></n3-icon>
         </span>
     </template>
 
@@ -60,7 +60,7 @@
       </n3-typeahead>
     </template>
     <template v-else>
-      <span class="{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long"  @click="setIndex(value.length)"></span>
+      <span :class="`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`"  @click="setIndex(value.length)"></span>
     </template>
   </div>
    <validate

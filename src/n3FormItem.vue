@@ -1,10 +1,10 @@
 <template>
   <div :class="classObj" >
-    <label class="{{prefixCls}}-col-sm-{{label_col}} {{prefixCls}}-control-label">
-      <em class="{{prefixCls}}-form-need" v-if="need" >*</em>
+    <label :class="`${prefixCls}-col-sm-${label_col} ${prefixCls}-control-label">
+      <em :class="`${prefixCls}-form-need" v-if="need" >*</em>
       {{label}}
       </label>
-    <div class="{{prefixCls}}-col-sm-{{col}} inline">
+    <div :class="`${prefixCls}-col-sm-${col} inline">
       <slot></slot>
     </div>  
   </div>

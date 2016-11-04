@@ -1,5 +1,5 @@
 <template>
-  <div class="{{prefixCls}}-panel-group">
+  <div :class="`${prefixCls}-panel-group`">
     <slot></slot>
   </div>
 </template>

@@ -1,12 +1,12 @@
 <template>
-<label class="{{prefixCls}}-radio-con">
+<label :class="`${prefixCls}-radio-con`">
   <span :class="wrapClasses">
-    <span class="{{prefixCls}}-radio-inner"></span> 
+    <span :class="`${prefixCls}-radio-inner`"></span> 
     <input 
     type="radio" 
     :disabled="disabled"
     :checked="checked"
-    class="{{prefixCls}}-radio-input" 
+    :class="`${prefixCls}-radio-input`" 
     @click.prevent="handleClick" >
   </span>
   <span><slot></slot></span>

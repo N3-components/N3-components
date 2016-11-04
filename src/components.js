@@ -126,10 +126,10 @@ const install = function (Vue) {
   for (let i in Components) {
     Vue.component(i, Components[i])
   }
-
-  for (let i in transition) {
-    Vue.transition(i, transition[i])
-  }
+  
+  // for (let i in transition) {
+  //   Vue.transition(i, transition[i])
+  // }
 
   Vue.mixin({
     methods: {

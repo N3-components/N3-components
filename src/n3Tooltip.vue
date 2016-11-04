@@ -8,8 +8,8 @@
     v-el:popover
     v-show="show"
     :transition="effect">
-    <div class="{{prefixCls}}-tooltip-arrow"></div>
-    <div class="{{prefixCls}}-tooltip-inner">
+    <div :class="`${prefixCls}-tooltip-arrow`"></div>
+    <div :class="`${prefixCls}-tooltip-inner`">
       {{{content}}}
     </div>
   </div>

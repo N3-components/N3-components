@@ -1,21 +1,21 @@
 <template>
   <div :class="classObj">
-    <div class="{{prefixCls}}-modal-dialog" 
+    <div :class="`${prefixCls}-modal-dialog`" 
       :style="{'width': width}">
-      <div class="{{prefixCls}}-modal-content">
+      <div :class="`${prefixCls}-modal-content`">
         <slot name="header">
-          <div class="{{prefixCls}}-modal-header">
-            <button type="button" class="{{prefixCls}}-close" @click="close"><span>&times;</span></button>
-            <h4 class="{{prefixCls}}-modal-title" >{{title}}</h4>
+          <div :class="`${prefixCls}-modal-header`">
+            <button type="button" :class="`${prefixCls}-close`" @click="close"><span>&times;</span></button>
+            <h4 :class="`${prefixCls}-modal-title`" >{{title}}</h4>
           </div>
         </slot>
         
-        <div class="{{prefixCls}}-modal-body">
+        <div :class="`${prefixCls}-modal-body`">
           <slot name="body"></slot>
         </div>
       
         <slot name="footer">
-          <div class="{{prefixCls}}-modal-footer">
+          <div :class="`${prefixCls}-modal-footer`">
             <n3-button  @click="close">取消</n3-button>
             <n3-button type="primary" @click="confirm">确定</n3-button>
           </div>

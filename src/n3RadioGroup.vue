@@ -1,5 +1,5 @@
 <template>
-<div class="{{prefixCls}}-btn-group {{prefixCls}}-radio-group">
+<div :class="`${prefixCls}-btn-group ${prefixCls}-radio-group`">
     <template v-if="options">
         <n3-radio 
           v-if="type==='checkbox'" 

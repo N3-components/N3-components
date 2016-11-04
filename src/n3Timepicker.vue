@@ -1,5 +1,5 @@
 <template>
-  <div class="{{prefixCls}}-timepicker">
+  <div :class="`${prefixCls}-timepicker`">
     <n3-input 
       :width="width"
       :name="name" 
@@ -13,31 +13,31 @@
       @click="inputClick"
       :value.sync="value">
     </n3-input>
-    <div class="{{prefixCls}}-timepicker-popup" v-show="show" transition="fadeDown">
-      <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
+    <div :class="`${prefixCls}-timepicker-popup`" v-show="show" transition="fadeDown">
+      <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
         <n3-slider 
           :value.sync="time.hour" 
           orientation="vertical" 
           :max="hourRange[1]" :min="hourRange[0]"  
-          class="{{prefixCls}}-timepicker-slider">
+          :class="`${prefixCls}-timepicker-slider`">
         </n3-slider>
       </div>
-      <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
+      <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
         <n3-slider 
           :value.sync="time.minute" 
           orientation="vertical" 
           :max="minuteRange[1]" 
           :min="minuteRange[0]"  
-          class="{{prefixCls}}-timepicker-slider">
+          :class="`${prefixCls}-timepicker-slider`">
         </n3-slider>
       </div>
-      <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
+      <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
         <n3-slider 
           :value.sync="time.second" 
           orientation="vertical" 
           :max="secondRange[1]" 
           :min="secondRange[0]" 
-          class="{{prefixCls}}-timepicker-slider">
+          :class="`${prefixCls}-timepicker-slider`">
         </n3-slider>
       </div>
     </div>

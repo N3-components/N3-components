@@ -2,12 +2,12 @@
 <div class="inline">
     <div :class="classObj" v-el:slider :style="styleObj">
       <n3-tooltip  :placement="orientation === 'horizontal' ? 'top' : 'right'" :noresize="true" trigger="mouse">
-        <div class="{{prefixCls}}-slider-track">
-          <div class="{{prefixCls}}-slider-track-low"></div>
-          <div class="{{prefixCls}}-slider-selection" v-el:selection></div>
-          <div class="{{prefixCls}}-slider-track-high" v-el:no-selection></div>
-          <div class="{{prefixCls}}-slider-handle {{prefixCls}}-slider-min-slider-handle {{prefixCls}}-slider-round" v-el:min-slider></div>
-          <div class="{{prefixCls}}-slider-handle {{prefixCls}}-slider-max-slider-handle {{prefixCls}}-slider-round" v-el:max-slider></div>
+        <div :class="`${prefixCls}-slider-track`">
+          <div :class="`${prefixCls}-slider-track-low`"></div>
+          <div :class="`${prefixCls}-slider-selection`" v-el:selection></div>
+          <div :class="`${prefixCls}-slider-track-high`" v-el:no-selection></div>
+          <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`" v-el:min-slider></div>
+          <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`" v-el:max-slider></div>
         </div>
       </n3-tooltip>
     </div>

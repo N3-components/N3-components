@@ -1,5 +1,5 @@
 <template>
-  <div class="{{prefixCls}}-btn-group">
+  <div :class="`${prefixCls}-btn-group`">
     <slot></slot>  
   </div>
 </template>

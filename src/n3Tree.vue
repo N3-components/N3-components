@@ -1,18 +1,18 @@
 <template>
-  <div class="{{prefixCls}}-tree">
-    <div class="{{prefixCls}}-tree-node-data" v-for="(index, node) in data">
-      <div class="{{prefixCls}}-tree-node">
+  <div :class="`${prefixCls}-tree`">
+    <div :class="`${prefixCls}-tree-node-data`" v-for="(index, node) in data">
+      <div :class="`${prefixCls}-tree-node`">
         <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" @click.prevent="clickHandler(index, node.value)">
           <template v-if="node.children">
             <n3-icon
-              class="{{prefixCls}}-tree-select-icon"
+              :class="`${prefixCls}-tree-select-icon`"
               :type="isOpened(index) ? treeOpenIcon : treeIcon">
             </n3-icon>
-            <span class="{{prefixCls}}-tree-loading-box" v-show="loading > -1 && loading == index">
+            <span :class="`${prefixCls}-tree-loading-box`" v-show="loading > -1 && loading == index">
               <n3-loading color="primary" size="xs"></n3-loading>
             </span>
           </template>
-          <span class="{{prefixCls}}-tree-select-box" v-if="checkable">
+          <span :class="`${prefixCls}-tree-select-box`" v-if="checkable">
             <input 
               @click.stop="" 
               type="checkbox" 
@@ -20,14 +20,14 @@
               :value="node.value"
               @change="checkHandler(index, node.value)"/>
           </span>
-          <label class="{{prefixCls}}-tree-loading-box">
+          <label :class="`${prefixCls}-tree-loading-box`">
             <n3-icon :type="node['icon'] || icon"></n3-icon>
             {{{node.label}}}
           </label>
         </span>
       </div>
-      <div :transition="transition" v-if="areValidNodes(node.children)" class="{{prefixCls}}-tree-children" v-show="isOpened(index)">
-        <div class="{{prefixCls}}-tree-nodes">
+      <div :transition="transition" v-if="areValidNodes(node.children)" :class="`${prefixCls}-tree-children`" v-show="isOpened(index)">
+        <div :class="`${prefixCls}-tree-nodes`">
           <n3-tree 
             class="inner" 
             :id="id"
