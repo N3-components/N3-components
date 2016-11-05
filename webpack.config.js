@@ -1,4 +1,5 @@
 var webpack = require('webpack')
+var autoprefixer = require('autoprefixer')
 var path = require('path')
 
 module.exports = {
@@ -29,13 +30,14 @@ module.exports = {
       exclude: /node_modules|vue\/src|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
       loader: 'babel'
     },
-    {test: /\.less$/, loader: 'style-loader!css-loader!less-loader!autoprefixer'},
-    {test: /\.css$/, loader: 'style-loader!css-loader!autoprefixer'}
+    {test: /\.less$/, loader: 'style-loader!css-loader!postcss!less-loader'},
+    {test: /\.css$/, loader: 'style-loader!css-loader!postcss'}
     ]
   },
   babel: {
     presets: ['es2015']
   },
+  postcss: [autoprefixer],
   devtool: 'source-map'
 }
 
