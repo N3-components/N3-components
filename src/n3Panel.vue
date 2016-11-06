@@ -11,7 +11,7 @@
     </div>
     <div
       :class="`${prefixCls}-panel-collapse`"
-      v-el:panel
+      ref="panel"
       v-show="isOpen"
       :transition="$parent.effect">
       <div :class="`${prefixCls}-panel-body`">
@@ -63,7 +63,7 @@ export default {
     }
   },
   ready () {
-    const panel = this.$els.panel
+    const panel = this.$refs.panel
     panel.style.display = 'block'
     if (!this.isOpen) panel.style.display = 'none'
   }

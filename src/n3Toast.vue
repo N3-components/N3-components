@@ -1,6 +1,6 @@
 <template>
 	<div 
-    v-el:dom
+    ref="dom"
     :class="classObj"
 		transition="fade"
 		@click="handleClick"
@@ -84,10 +84,10 @@ export default {
 
         if (val) {
           if (this.placement === 'top' || this.placement === 'bottom') {
-            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px'
+            this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px'
           } else if (this.placement === 'center') {
-            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px'
-            this.$els.dom.style.marginTop = -1 * this.$els.dom.offsetHeight / 2 + 'px'
+            this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px'
+            this.$refs.dom.style.marginTop = -1 * this.$refs.dom.offsetHeight / 2 + 'px'
           }
         }
 

@@ -10931,10 +10931,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	        if (val) {
 	          if (this.placement === 'top' || this.placement === 'bottom') {
-	            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px';
+	            this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px';
 	          } else if (this.placement === 'center') {
-	            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px';
-	            this.$els.dom.style.marginTop = -1 * this.$els.dom.offsetHeight / 2 + 'px';
+	            this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px';
+	            this.$refs.dom.style.marginTop = -1 * this.$refs.dom.offsetHeight / 2 + 'px';
 	          }
 	        }
 	
@@ -12401,18 +12401,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    setTempValue: function setTempValue() {
 	      var val = this.value;
 	      if (_type2.default.isArray(val) && this.range) {
-	        _element2.default.removeClass(this.$els.maxSlider, this.prefixCls + '-slider-hide');
+	        _element2.default.removeClass(this.$refs.maxSlider, this.prefixCls + '-slider-hide');
 	        this.tempValue = val;
 	      } else {
-	        _element2.default.addClass(this.$els.maxSlider, this.prefixCls + '-slider-hide');
+	        _element2.default.addClass(this.$refs.maxSlider, this.prefixCls + '-slider-hide');
 	        this.tempValue = [this.min, val];
 	      }
 	    },
 	    setPosition: function setPosition() {
-	      var selection = this.$els.selection;
-	      var bar = this.$els.minSlider;
-	      var maxBar = this.$els.maxSlider;
-	      var rangeSlider = this.$els.slider;
+	      var selection = this.$refs.selection;
+	      var bar = this.$refs.minSlider;
+	      var maxBar = this.$refs.maxSlider;
+	      var rangeSlider = this.$refs.slider;
 	      var tooltip = bar.parentNode.parentNode.nextElementSibling;
 	
 	      if (this.orientation === 'horizontal') {
@@ -12529,7 +12529,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    },
 	    tooltipInit: function tooltipInit() {
-	      var tooltip = this.$els.minSlider.parentNode.parentNode.nextElementSibling;
+	      var tooltip = this.$refs.minSlider.parentNode.parentNode.nextElementSibling;
 	
 	      tooltip.style.left = 0;
 	      tooltip.style.top = 0;
@@ -12551,9 +12551,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    },
 	    init: function init() {
-	      var bar = this.$els.minSlider;
-	      var rangeSlider = this.$els.slider;
-	      var maxBar = this.$els.maxSlider;
+	      var bar = this.$refs.minSlider;
+	      var rangeSlider = this.$refs.slider;
+	      var maxBar = this.$refs.maxSlider;
 	
 	      this.startDrag(bar, maxBar, rangeSlider);
 	      this.tooltipInit();
@@ -12751,8 +12751,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.show = !this.show;
 	    },
 	    resize: function resize() {
-	      var popover = this.$els.popover;
-	      var triger = this.$els.trigger.children[0];
+	      var popover = this.$refs.popover;
+	      var triger = this.$refs.trigger.children[0];
 	      popover.style.display = 'block';
 	      triger.style.position = 'relative';
 	
@@ -12783,9 +12783,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  ready: function ready() {
 	    var _this2 = this;
 	
-	    if (!this.$els.popover) return;
-	    var popover = this.$els.popover;
-	    var triger = this.$els.trigger.children[0];
+	    if (!this.$refs.popover) return;
+	    var popover = this.$refs.popover;
+	    var triger = this.$refs.trigger.children[0];
 	    if (this.trigger === 'hover') {
 	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
 	        _this2.show = true;
@@ -12794,7 +12794,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _this2.show = false;
 	      });
 	    } else if (this.trigger === 'focus') {
-	      var input = this.$els.trigger.querySelector('input');
+	      var input = this.$refs.trigger.querySelector('input');
 	      if (input) {
 	        this._focusEvent = _EventListener2.default.listen(input, 'focus', function () {
 	          _this2.show = true;
@@ -12814,7 +12814,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggle);
 	      this._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
 	        if (!_this2.$el.contains(e.target)) _this2.show = false;
-	        if (_this2.$els.content && _this2.$els.content.contains(e.target) && _type2.default.isFunction(_this2.onClick)) {
+	        if (_this2.$refs.content && _this2.$refs.content.contains(e.target) && _type2.default.isFunction(_this2.onClick)) {
 	          _this2.onClick(e, _this2);
 	        }
 	      });
@@ -13131,8 +13131,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	    if (val) {
 	      this.$nextTick(function () {
-	        var width = _this.$els.datepicker.offsetWidth * 1 + 30;
-	        console.log(_this.$els.datepicker.offsetWidth);
+	        var width = _this.$refs.datepicker.offsetWidth * 1 + 30;
+	        console.log(_this.$refs.datepicker.offsetWidth);
 	        _this.hour ? width += 42 : 0;
 	        _this.minute ? width += 42 : 0;
 	        _this.second ? width += 42 : 0;
@@ -13563,7 +13563,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var _this = this;
 	
 	    var el = this.$el;
-	    var triger = this.$els.trigger.children[0];
+	    var triger = this.$refs.trigger.children[0];
 	
 	    if (this.trigger === 'click') {
 	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggleDropdown);
@@ -13942,7 +13942,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  ready: function ready() {
-	    var panel = this.$els.panel;
+	    var panel = this.$refs.panel;
 	    panel.style.display = 'block';
 	    if (!this.isOpen) panel.style.display = 'none';
 	  }
@@ -15100,7 +15100,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var _this = this;
 	
 	    if (!this.options.length) {
-	      var options = this.$els.menu.querySelectorAll('.' + this.prefixCls + '-option');
+	      var options = this.$refs.menu.querySelectorAll('.' + this.prefixCls + '-option');
 	      var ret = [];
 	
 	      for (var i = 0, l = options.length; i < l; i++) {

@@ -1,5 +1,5 @@
 <template>
-  <div :class="`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`" v-el:datetimepicker>
+  <div :class="`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`" ref="datetimepicker">
     <n3-input
       :width="width"
       :name="name" 
@@ -18,7 +18,7 @@
         v-show="displayDayView" 
         :style="{width:popWidth}" 
         transition="fadeDown">
-          <div :class="`${prefixCls}-datepicker-inner`" v-el:datepicker>
+          <div :class="`${prefixCls}-datepicker-inner`" ref="datepicker">
               <div :class="`${prefixCls}-datepicker-body`">
                   <div :class="`${prefixCls}-datepicker-ctrl`">
                       <span 
@@ -215,8 +215,8 @@ export default {
     displayDayView (val) {
       if (val) {
         this.$nextTick(()=>{
-          let width = this.$els.datepicker.offsetWidth * 1 + 30
-          console.log(this.$els.datepicker.offsetWidth)
+          let width = this.$refs.datepicker.offsetWidth * 1 + 30
+          console.log(this.$refs.datepicker.offsetWidth)
           this.hour ? width += 42 : 0
           this.minute ? width += 42 : 0
           this.second ? width += 42 : 0

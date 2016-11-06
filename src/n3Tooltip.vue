@@ -1,11 +1,11 @@
 <template>
 <span >
-  <span v-el:trigger >
+  <span ref="trigger">
     <slot>
     </slot>
   </span>
   <div :class="classObj"
-    v-el:popover
+    ref="popover"
     v-show="show"
     :transition="effect">
     <div :class="`${prefixCls}-tooltip-arrow`"></div>

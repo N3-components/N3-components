@@ -19,7 +19,7 @@
     <ul 
       :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
       :class="`${prefixCls}-dropdown-menu`" 
-      v-el:menu 
+      ref="menu" 
       v-show="show" 
       transition="fadeDown">
         <li v-if="search">
@@ -249,7 +249,7 @@ export default {
   },
   ready () {
     if (!this.options.length) {
-      var options = this.$els.menu.querySelectorAll('.' + this.prefixCls + '-option')
+      var options = this.$refs.menu.querySelectorAll('.' + this.prefixCls + '-option')
       var ret = []
 
       for (var i = 0, l = options.length; i < l; i++) {

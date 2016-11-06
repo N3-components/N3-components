@@ -1,6 +1,6 @@
 <template>
   <div :class="`${prefixCls}-dropdown-con`">   
-    <span v-el:trigger> 
+    <span ref="trigger"> 
       <slot name="trigger" ></slot>
     </span>
     <ul :class="`${prefixCls}-dropdown-menu`" v-show="show" :transition="effect">
@@ -41,7 +41,7 @@ export default {
   },
   ready () {
     let el = this.$el
-    let triger = this.$els.trigger.children[0]
+    let triger = this.$refs.trigger.children[0]
 
     if (this.trigger === 'click') {
       this._clickEvent = EventListener.listen(triger, 'click', this.toggleDropdown)

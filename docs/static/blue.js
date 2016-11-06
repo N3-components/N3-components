@@ -29245,7 +29245,7 @@
 	});
 	// <template>
 	// 	<div 
-	//     v-el:dom
+	//     ref="dom"
 	//     :class="classObj"
 	// 		transition="fade"
 	// 		@click="handleClick"
@@ -29333,10 +29333,10 @@
 	
 	        if (val) {
 	          if (this.placement === 'top' || this.placement === 'bottom') {
-	            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px';
+	            this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px';
 	          } else if (this.placement === 'center') {
-	            this.$els.dom.style.marginLeft = -1 * this.$els.dom.offsetWidth / 2 + 'px';
-	            this.$els.dom.style.marginTop = -1 * this.$els.dom.offsetHeight / 2 + 'px';
+	            this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px';
+	            this.$refs.dom.style.marginTop = -1 * this.$refs.dom.offsetHeight / 2 + 'px';
 	          }
 	        }
 	
@@ -29357,7 +29357,7 @@
 /* 666 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \n    v-el:dom\n    :class=\"classObj\"\n\t\ttransition=\"fade\"\n\t\t@click=\"handleClick\"\n\t\tv-if=\"show\">\n\t\t<h5>{{text}}</h5>\n\t</div>";
+	module.exports = "<div \n    ref=\"dom\"\n    :class=\"classObj\"\n\t\ttransition=\"fade\"\n\t\t@click=\"handleClick\"\n\t\tv-if=\"show\">\n\t\t<h5>{{text}}</h5>\n\t</div>";
 
 /***/ },
 /* 667 */
@@ -30659,14 +30659,14 @@
 	
 	// <template>
 	// <div class="inline">
-	//     <div :class="classObj" v-el:slider :style="styleObj">
+	//     <div :class="classObj" ref="slider" :style="styleObj">
 	//       <n3-tooltip  :placement="orientation === 'horizontal' ? 'top' : 'right'" :noresize="true" trigger="mouse">
 	//         <div :class="`${prefixCls}-slider-track`">
 	//           <div :class="`${prefixCls}-slider-track-low`"></div>
-	//           <div :class="`${prefixCls}-slider-selection`" v-el:selection></div>
-	//           <div :class="`${prefixCls}-slider-track-high`" v-el:no-selection></div>
-	//           <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`" v-el:min-slider></div>
-	//           <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`" v-el:max-slider></div>
+	//           <div :class="`${prefixCls}-slider-selection`" ref="selection"></div>
+	//           <div :class="`${prefixCls}-slider-track-high`" ref="no-selection"></div>
+	//           <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`" ref="min-slider"></div>
+	//           <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`" ref="max-slider"></div>
 	//         </div>
 	//       </n3-tooltip>
 	//     </div>
@@ -30803,18 +30803,18 @@
 	    setTempValue: function setTempValue() {
 	      var val = this.value;
 	      if (_type2.default.isArray(val) && this.range) {
-	        _element2.default.removeClass(this.$els.maxSlider, this.prefixCls + '-slider-hide');
+	        _element2.default.removeClass(this.$refs.maxSlider, this.prefixCls + '-slider-hide');
 	        this.tempValue = val;
 	      } else {
-	        _element2.default.addClass(this.$els.maxSlider, this.prefixCls + '-slider-hide');
+	        _element2.default.addClass(this.$refs.maxSlider, this.prefixCls + '-slider-hide');
 	        this.tempValue = [this.min, val];
 	      }
 	    },
 	    setPosition: function setPosition() {
-	      var selection = this.$els.selection;
-	      var bar = this.$els.minSlider;
-	      var maxBar = this.$els.maxSlider;
-	      var rangeSlider = this.$els.slider;
+	      var selection = this.$refs.selection;
+	      var bar = this.$refs.minSlider;
+	      var maxBar = this.$refs.maxSlider;
+	      var rangeSlider = this.$refs.slider;
 	      var tooltip = bar.parentNode.parentNode.nextElementSibling;
 	
 	      if (this.orientation === 'horizontal') {
@@ -30931,7 +30931,7 @@
 	      }
 	    },
 	    tooltipInit: function tooltipInit() {
-	      var tooltip = this.$els.minSlider.parentNode.parentNode.nextElementSibling;
+	      var tooltip = this.$refs.minSlider.parentNode.parentNode.nextElementSibling;
 	
 	      tooltip.style.left = 0;
 	      tooltip.style.top = 0;
@@ -30953,9 +30953,9 @@
 	      }
 	    },
 	    init: function init() {
-	      var bar = this.$els.minSlider;
-	      var rangeSlider = this.$els.slider;
-	      var maxBar = this.$els.maxSlider;
+	      var bar = this.$refs.minSlider;
+	      var rangeSlider = this.$refs.slider;
+	      var maxBar = this.$refs.maxSlider;
 	
 	      this.startDrag(bar, maxBar, rangeSlider);
 	      this.tooltipInit();
@@ -31053,12 +31053,12 @@
 	// </script>
 	// <template>
 	// <span >
-	//   <span v-el:trigger >
+	//   <span ref="trigger">
 	//     <slot>
 	//     </slot>
 	//   </span>
 	//   <div :class="classObj"
-	//     v-el:popover
+	//     ref="popover"
 	//     v-show="show"
 	//     :transition="effect">
 	//     <div :class="`${prefixCls}-tooltip-arrow`"></div>
@@ -31153,8 +31153,8 @@
 	      this.show = !this.show;
 	    },
 	    resize: function resize() {
-	      var popover = this.$els.popover;
-	      var triger = this.$els.trigger.children[0];
+	      var popover = this.$refs.popover;
+	      var triger = this.$refs.trigger.children[0];
 	      popover.style.display = 'block';
 	      triger.style.position = 'relative';
 	
@@ -31185,9 +31185,9 @@
 	  ready: function ready() {
 	    var _this2 = this;
 	
-	    if (!this.$els.popover) return;
-	    var popover = this.$els.popover;
-	    var triger = this.$els.trigger.children[0];
+	    if (!this.$refs.popover) return;
+	    var popover = this.$refs.popover;
+	    var triger = this.$refs.trigger.children[0];
 	    if (this.trigger === 'hover') {
 	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
 	        _this2.show = true;
@@ -31196,7 +31196,7 @@
 	        _this2.show = false;
 	      });
 	    } else if (this.trigger === 'focus') {
-	      var input = this.$els.trigger.querySelector('input');
+	      var input = this.$refs.trigger.querySelector('input');
 	      if (input) {
 	        this._focusEvent = _EventListener2.default.listen(input, 'focus', function () {
 	          _this2.show = true;
@@ -31216,7 +31216,7 @@
 	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggle);
 	      this._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
 	        if (!_this2.$el.contains(e.target)) _this2.show = false;
-	        if (_this2.$els.content && _this2.$els.content.contains(e.target) && _type2.default.isFunction(_this2.onClick)) {
+	        if (_this2.$refs.content && _this2.$refs.content.contains(e.target) && _type2.default.isFunction(_this2.onClick)) {
 	          _this2.onClick(e, _this2);
 	        }
 	      });
@@ -31250,13 +31250,13 @@
 /* 686 */
 /***/ function(module, exports) {
 
-	module.exports = "<span >\n  <span v-el:trigger >\n    <slot>\n    </slot>\n  </span>\n  <div :class=\"classObj\"\n    v-el:popover\n    v-show=\"show\"\n    :transition=\"effect\">\n    <div :class=\"`${prefixCls}-tooltip-arrow`\"></div>\n    <div :class=\"`${prefixCls}-tooltip-inner`\">\n      {{{content}}}\n    </div>\n  </div>\n</span>";
+	module.exports = "<span >\n  <span ref=\"trigger\">\n    <slot>\n    </slot>\n  </span>\n  <div :class=\"classObj\"\n    ref=\"popover\"\n    v-show=\"show\"\n    :transition=\"effect\">\n    <div :class=\"`${prefixCls}-tooltip-arrow`\"></div>\n    <div :class=\"`${prefixCls}-tooltip-inner`\">\n      {{{content}}}\n    </div>\n  </div>\n</span>";
 
 /***/ },
 /* 687 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\n    <div :class=\"classObj\" v-el:slider :style=\"styleObj\">\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\n        <div :class=\"`${prefixCls}-slider-track`\">\n          <div :class=\"`${prefixCls}-slider-track-low`\"></div>\n          <div :class=\"`${prefixCls}-slider-selection`\" v-el:selection></div>\n          <div :class=\"`${prefixCls}-slider-track-high`\" v-el:no-selection></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`\" v-el:min-slider></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`\" v-el:max-slider></div>\n        </div>\n      </n3-tooltip>\n    </div>\n  <input type=\"hidden\" v-model=\"value\">\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
+	module.exports = "<div class=\"inline\">\n    <div :class=\"classObj\" ref=\"slider\" :style=\"styleObj\">\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\n        <div :class=\"`${prefixCls}-slider-track`\">\n          <div :class=\"`${prefixCls}-slider-track-low`\"></div>\n          <div :class=\"`${prefixCls}-slider-selection`\" ref=\"selection\"></div>\n          <div :class=\"`${prefixCls}-slider-track-high`\" ref=\"no-selection\"></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`\" ref=\"min-slider\"></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`\" ref=\"max-slider\"></div>\n        </div>\n      </n3-tooltip>\n    </div>\n  <input type=\"hidden\" v-model=\"value\">\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
 
 /***/ },
 /* 688 */
@@ -31323,7 +31323,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } // <template>
-	//   <div :class="`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`" v-el:datetimepicker>
+	//   <div :class="`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`" ref="datetimepicker">
 	//     <n3-input
 	//       :width="width"
 	//       :name="name" 
@@ -31342,7 +31342,7 @@
 	//         v-show="displayDayView" 
 	//         :style="{width:popWidth}" 
 	//         transition="fadeDown">
-	//           <div :class="`${prefixCls}-datepicker-inner`" v-el:datepicker>
+	//           <div :class="`${prefixCls}-datepicker-inner`" ref="datepicker">
 	//               <div :class="`${prefixCls}-datepicker-body`">
 	//                   <div :class="`${prefixCls}-datepicker-ctrl`">
 	//                       <span 
@@ -31533,8 +31533,8 @@
 	
 	    if (val) {
 	      this.$nextTick(function () {
-	        var width = _this.$els.datepicker.offsetWidth * 1 + 30;
-	        console.log(_this.$els.datepicker.offsetWidth);
+	        var width = _this.$refs.datepicker.offsetWidth * 1 + 30;
+	        console.log(_this.$refs.datepicker.offsetWidth);
 	        _this.hour ? width += 42 : 0;
 	        _this.minute ? width += 42 : 0;
 	        _this.second ? width += 42 : 0;
@@ -31891,7 +31891,7 @@
 /* 691 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`\" v-el:datetimepicker>\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n      <div \n        :class=\"`${prefixCls}-datepicker-popup`\" \n        v-show=\"displayDayView\" \n        :style=\"{width:popWidth}\" \n        transition=\"fadeDown\">\n          <div :class=\"`${prefixCls}-datepicker-inner`\" v-el:datepicker>\n              <div :class=\"`${prefixCls}-datepicker-body`\">\n                  <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                      <span \n                        :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                      <span v-for=\"d in dateRange\" \n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                  </div>\n              </div>\n          </div>\n          <div :class=\"`${prefixCls}-timepicker-con`\">\n            <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n              <n3-slider \n                :class=\"`${prefixCls}-timepicker-slider`\"\n                :value.sync=\"time.hour\" \n                orientation=\"vertical\" \n                :max=\"hourRange[1]\" \n                :min=\"hourRange[0]\" >\n              </n3-slider>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n              <n3-slider\n                :class=\"`${prefixCls}-timepicker-slider`\" \n                :value.sync=\"time.minute\" \n                orientation=\"vertical\" \n                :max=\"minuteRange[1]\" \n                :min=\"minuteRange[0]\" >\n              </n3-slider>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n              <n3-slider \n                :class=\"`${prefixCls}-timepicker-slider`\"\n                :value.sync=\"time.second\" \n                orientation=\"vertical\" \n                :max=\"secondRange[1]\" \n                :min=\"secondRange[0]\" >\n              </n3-slider>\n            </div>\n          </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayMouthView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayYearView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
+	module.exports = "<div :class=\"`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`\" ref=\"datetimepicker\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n      <div \n        :class=\"`${prefixCls}-datepicker-popup`\" \n        v-show=\"displayDayView\" \n        :style=\"{width:popWidth}\" \n        transition=\"fadeDown\">\n          <div :class=\"`${prefixCls}-datepicker-inner`\" ref=\"datepicker\">\n              <div :class=\"`${prefixCls}-datepicker-body`\">\n                  <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                      <span \n                        :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                      <span v-for=\"d in dateRange\" \n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                  </div>\n              </div>\n          </div>\n          <div :class=\"`${prefixCls}-timepicker-con`\">\n            <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n              <n3-slider \n                :class=\"`${prefixCls}-timepicker-slider`\"\n                :value.sync=\"time.hour\" \n                orientation=\"vertical\" \n                :max=\"hourRange[1]\" \n                :min=\"hourRange[0]\" >\n              </n3-slider>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n              <n3-slider\n                :class=\"`${prefixCls}-timepicker-slider`\" \n                :value.sync=\"time.minute\" \n                orientation=\"vertical\" \n                :max=\"minuteRange[1]\" \n                :min=\"minuteRange[0]\" >\n              </n3-slider>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n              <n3-slider \n                :class=\"`${prefixCls}-timepicker-slider`\"\n                :value.sync=\"time.second\" \n                orientation=\"vertical\" \n                :max=\"secondRange[1]\" \n                :min=\"secondRange[0]\" >\n              </n3-slider>\n            </div>\n          </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayMouthView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayYearView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
 /* 692 */
@@ -31965,7 +31965,7 @@
 	    var _this = this;
 	
 	    var el = this.$el;
-	    var triger = this.$els.trigger.children[0];
+	    var triger = this.$refs.trigger.children[0];
 	
 	    if (this.trigger === 'click') {
 	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggleDropdown);
@@ -31990,7 +31990,7 @@
 	// </script>
 	// <template>
 	//   <div :class="`${prefixCls}-dropdown-con`">   
-	//     <span v-el:trigger> 
+	//     <span ref="trigger"> 
 	//       <slot name="trigger" ></slot>
 	//     </span>
 	//     <ul :class="`${prefixCls}-dropdown-menu`" v-show="show" :transition="effect">
@@ -32004,7 +32004,7 @@
 /* 694 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-dropdown-con`\">   \n    <span v-el:trigger> \n      <slot name=\"trigger\" ></slot>\n    </span>\n    <ul :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"show\" :transition=\"effect\">\n      <slot></slot>\n    </ul>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-dropdown-con`\">   \n    <span ref=\"trigger\"> \n      <slot name=\"trigger\" ></slot>\n    </span>\n    <ul :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"show\" :transition=\"effect\">\n      <slot></slot>\n    </ul>\n  </div>";
 
 /***/ },
 /* 695 */
@@ -32344,7 +32344,7 @@
 	    }
 	  },
 	  ready: function ready() {
-	    var panel = this.$els.panel;
+	    var panel = this.$refs.panel;
 	    panel.style.display = 'block';
 	    if (!this.isOpen) panel.style.display = 'none';
 	  }
@@ -32363,7 +32363,7 @@
 	//     </div>
 	//     <div
 	//       :class="`${prefixCls}-panel-collapse`"
-	//       v-el:panel
+	//       ref="panel"
 	//       v-show="isOpen"
 	//       :transition="$parent.effect">
 	//       <div :class="`${prefixCls}-panel-body`">
@@ -32379,7 +32379,7 @@
 /* 703 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-panel ${prefixCls}-panel-default`\">\n    <div :class=\"`${prefixCls}-panel-heading`\">\n      <h4 :class=\"`${prefixCls}-panel-title`\">\n        <a @click=\"toggleIsOpen()\">\n           <slot name=\"header\">\n            {{header}}\n           </slot>\n        </a>\n      </h4>\n    </div>\n    <div\n      :class=\"`${prefixCls}-panel-collapse`\"\n      v-el:panel\n      v-show=\"isOpen\"\n      :transition=\"$parent.effect\">\n      <div :class=\"`${prefixCls}-panel-body`\">\n        <slot></slot>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-panel ${prefixCls}-panel-default`\">\n    <div :class=\"`${prefixCls}-panel-heading`\">\n      <h4 :class=\"`${prefixCls}-panel-title`\">\n        <a @click=\"toggleIsOpen()\">\n           <slot name=\"header\">\n            {{header}}\n           </slot>\n        </a>\n      </h4>\n    </div>\n    <div\n      :class=\"`${prefixCls}-panel-collapse`\"\n      ref=\"panel\"\n      v-show=\"isOpen\"\n      :transition=\"$parent.effect\">\n      <div :class=\"`${prefixCls}-panel-body`\">\n        <slot></slot>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 704 */
@@ -32449,19 +32449,19 @@
 	// </script>
 	// <template>
 	// <span >
-	//     <span v-el:trigger >
+	//     <span ref="trigger">
 	//       <slot>
 	//       </slot>
 	//     </span>
 	//     <div 
 	//       style="max-width:none"
 	//       :class="classObj"
-	//       v-el:popover
+	//       ref="popover"
 	//       v-show="show"
 	//       :transition="effect">
 	//         <div :class="`${prefixCls}-popover-arrow`"></div>
 	//         <h3 :class="`${prefixCls}-popover-title`" v-show="header">{{title}}</h3>
-	//         <div :class="`${prefixCls}-popover-content`" v-el:content>
+	//         <div :class="`${prefixCls}-popover-content`" ref="content">
 	//          <slot name="content"></slot>
 	//         </div>
 	//     </div>
@@ -32474,7 +32474,7 @@
 /* 706 */
 /***/ function(module, exports) {
 
-	module.exports = "<span >\n    <span v-el:trigger >\n      <slot>\n      </slot>\n    </span>\n    <div \n      style=\"max-width:none\"\n      :class=\"classObj\"\n      v-el:popover\n      v-show=\"show\"\n      :transition=\"effect\">\n        <div :class=\"`${prefixCls}-popover-arrow`\"></div>\n        <h3 :class=\"`${prefixCls}-popover-title`\" v-show=\"header\">{{title}}</h3>\n        <div :class=\"`${prefixCls}-popover-content`\" v-el:content>\n         <slot name=\"content\"></slot>\n        </div>\n    </div>\n</span>";
+	module.exports = "<span >\n    <span ref=\"trigger\">\n      <slot>\n      </slot>\n    </span>\n    <div \n      style=\"max-width:none\"\n      :class=\"classObj\"\n      ref=\"popover\"\n      v-show=\"show\"\n      :transition=\"effect\">\n        <div :class=\"`${prefixCls}-popover-arrow`\"></div>\n        <h3 :class=\"`${prefixCls}-popover-title`\" v-show=\"header\">{{title}}</h3>\n        <div :class=\"`${prefixCls}-popover-content`\" ref=\"content\">\n         <slot name=\"content\"></slot>\n        </div>\n    </div>\n</span>";
 
 /***/ },
 /* 707 */
@@ -33278,7 +33278,7 @@
 	//     <ul 
 	//       :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
 	//       :class="`${prefixCls}-dropdown-menu`" 
-	//       v-el:menu 
+	//       ref="menu" 
 	//       v-show="show" 
 	//       transition="fadeDown">
 	//         <li v-if="search">
@@ -33502,7 +33502,7 @@
 	    var _this = this;
 	
 	    if (!this.options.length) {
-	      var options = this.$els.menu.querySelectorAll('.' + this.prefixCls + '-option');
+	      var options = this.$refs.menu.querySelectorAll('.' + this.prefixCls + '-option');
 	      var ret = [];
 	
 	      for (var i = 0, l = options.length; i < l; i++) {
@@ -33615,7 +33615,7 @@
 /* 727 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-select-group`\" >\n    <n3-button  \n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      :class=\"`${prefixCls}-dropdown-toggle`\"\n      @click=\"toggleDropdown\">\n\n      <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n      <span  v-if=\"showselected\" >\n        <template v-for=\"item in selectedItems\">\n          {{{format.call(this._context,item)}}}\n        </template>\n      </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n      <n3-badge v-if=\"badge\">{{badge}}</n3-badge>\n    </n3-button>\n    <ul \n      :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n      :class=\"`${prefixCls}-dropdown-menu`\" \n      v-el:menu \n      v-show=\"show\" \n      transition=\"fadeDown\">\n        <li v-if=\"search\">\n          <n3-input\n            :class=\"`${prefixCls}-select-search`\"\n            :placeholder=\"inputPlaceholder\"\n            :value.sync=\"searchText\"\n            @keydown.enter=\"addExtra\"\n          ></n3-input>\n          <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\n        </li>\n        <li v-if=\"multiple\" :class=\"`${prefixCls}-select-all`\">\n          <a @click.prevent=\"selectAll\">\n            全选\n           <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n          </a>\n        </li>\n\n        <template v-if=\"options.length\">\n          <li v-for=\"option in options | filterSearch searchText \" \n              :value=\"option.value\" \n              style=\"position:relative\">\n            <a @click.prevent=\"select(option)\" >\n              {{{ option.label }}} \n              <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n            </a>\n          </li>\n        </template>\n        <slot v-else ></slot>\n      <div :class=\"`${prefixCls}-notify`\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n    </ul>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :valid-status.sync=\"validStatus\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-select-group`\" >\n    <n3-button  \n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      :class=\"`${prefixCls}-dropdown-toggle`\"\n      @click=\"toggleDropdown\">\n\n      <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n      <span  v-if=\"showselected\" >\n        <template v-for=\"item in selectedItems\">\n          {{{format.call(this._context,item)}}}\n        </template>\n      </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n      <n3-badge v-if=\"badge\">{{badge}}</n3-badge>\n    </n3-button>\n    <ul \n      :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n      :class=\"`${prefixCls}-dropdown-menu`\" \n      ref=\"menu\" \n      v-show=\"show\" \n      transition=\"fadeDown\">\n        <li v-if=\"search\">\n          <n3-input\n            :class=\"`${prefixCls}-select-search`\"\n            :placeholder=\"inputPlaceholder\"\n            :value.sync=\"searchText\"\n            @keydown.enter=\"addExtra\"\n          ></n3-input>\n          <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\n        </li>\n        <li v-if=\"multiple\" :class=\"`${prefixCls}-select-all`\">\n          <a @click.prevent=\"selectAll\">\n            全选\n           <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n          </a>\n        </li>\n\n        <template v-if=\"options.length\">\n          <li v-for=\"option in options | filterSearch searchText \" \n              :value=\"option.value\" \n              style=\"position:relative\">\n            <a @click.prevent=\"select(option)\" >\n              {{{ option.label }}} \n              <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n            </a>\n          </li>\n        </template>\n        <slot v-else ></slot>\n      <div :class=\"`${prefixCls}-notify`\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n    </ul>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :valid-status.sync=\"validStatus\"\n      :custom-validate=\"customValidate\" \n      :value=\"value\"\n      :results.sync=\"validateResults\">\n    </validate>\n  </div>";
 
 /***/ },
 /* 728 */

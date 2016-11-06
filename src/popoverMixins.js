@@ -60,8 +60,8 @@ const PopoverMixin = {
       this.show = !this.show
     },
     resize () {
-      let popover = this.$els.popover
-      let triger = this.$els.trigger.children[0]
+      let popover = this.$refs.popover
+      let triger = this.$refs.trigger.children[0]
       popover.style.display = 'block'
       triger.style.position = 'relative'
 
@@ -90,9 +90,9 @@ const PopoverMixin = {
     }
   },
   ready () {
-    if (!this.$els.popover) return
-    let popover = this.$els.popover
-    let triger = this.$els.trigger.children[0]
+    if (!this.$refs.popover) return
+    let popover = this.$refs.popover
+    let triger = this.$refs.trigger.children[0]
     if (this.trigger === 'hover') {
       this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
         this.show = true
@@ -101,7 +101,7 @@ const PopoverMixin = {
         this.show = false
       })
     } else if (this.trigger === 'focus') {
-      let input = this.$els.trigger.querySelector('input')
+      let input = this.$refs.trigger.querySelector('input')
       if (input) {
         this._focusEvent = EventListener.listen(input, 'focus', () => {
           this.show = true
@@ -121,7 +121,7 @@ const PopoverMixin = {
       this._clickEvent = EventListener.listen(triger, 'click', this.toggle)
       this._closeEvent = EventListener.listen(window, 'click', (e) => {
         if (!this.$el.contains(e.target)) this.show = false
-        if (this.$els.content && this.$els.content.contains(e.target) && type.isFunction(this.onClick)) {
+        if (this.$refs.content && this.$refs.content.contains(e.target) && type.isFunction(this.onClick)) {
           this.onClick(e, this)
         }
       })

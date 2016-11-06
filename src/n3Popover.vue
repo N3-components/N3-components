@@ -1,18 +1,18 @@
 <template>
 <span >
-    <span v-el:trigger >
+    <span ref="trigger">
       <slot>
       </slot>
     </span>
     <div 
       style="max-width:none"
       :class="classObj"
-      v-el:popover
+      ref="popover"
       v-show="show"
       :transition="effect">
         <div :class="`${prefixCls}-popover-arrow`"></div>
         <h3 :class="`${prefixCls}-popover-title`" v-show="header">{{title}}</h3>
-        <div :class="`${prefixCls}-popover-content`" v-el:content>
+        <div :class="`${prefixCls}-popover-content`" ref="content">
          <slot name="content"></slot>
         </div>
     </div>
