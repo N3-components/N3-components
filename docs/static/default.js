@@ -31938,11 +31938,11 @@
 	};
 	// </script>
 	// <template>
-	//   <div :class="`${prefixCls}-dropdown-con">   
+	//   <div :class="`${prefixCls}-dropdown-con`">   
 	//     <span v-el:trigger> 
 	//       <slot name="trigger" ></slot>
 	//     </span>
-	//     <ul :class="`${prefixCls}-dropdown-menu" v-show="show" :transition="effect">
+	//     <ul :class="`${prefixCls}-dropdown-menu`" v-show="show" :transition="effect">
 	//       <slot></slot>
 	//     </ul>
 	//   </div>
@@ -31953,7 +31953,7 @@
 /* 694 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-dropdown-con\">   \n    <span v-el:trigger> \n      <slot name=\"trigger\" ></slot>\n    </span>\n    <ul :class=\"`${prefixCls}-dropdown-menu\" v-show=\"show\" :transition=\"effect\">\n      <slot></slot>\n    </ul>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-dropdown-con`\">   \n    <span v-el:trigger> \n      <slot name=\"trigger\" ></slot>\n    </span>\n    <ul :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"show\" :transition=\"effect\">\n      <slot></slot>\n    </ul>\n  </div>";
 
 /***/ },
 /* 695 */

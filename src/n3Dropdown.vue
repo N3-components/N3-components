@@ -1,9 +1,9 @@
 <template>
-  <div :class="`${prefixCls}-dropdown-con">   
+  <div :class="`${prefixCls}-dropdown-con`">   
     <span v-el:trigger> 
       <slot name="trigger" ></slot>
     </span>
-    <ul :class="`${prefixCls}-dropdown-menu" v-show="show" :transition="effect">
+    <ul :class="`${prefixCls}-dropdown-menu`" v-show="show" :transition="effect">
       <slot></slot>
     </ul>
   </div>
