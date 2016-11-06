@@ -52,7 +52,7 @@ export default {
       }
 
       let wrapCol = this.wrapCol ? this.wrapCol : 12 
-      return wrapCol - this.labelCol
+      return wrapCol - this.label_col
     },
     classObj () {
       let {prefixCls, wrapCol} = this

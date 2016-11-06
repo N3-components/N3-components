@@ -51,8 +51,8 @@ new Vue({
     title: '年龄',
     dataIndex: 'age',
     sort:true,
-    sortMethod:function(x,y){return x.age - y.age}, //自定义排序函数
-    sortType:'DESC',
+    sortMethod:function(x,y){return x.age - y.age}, //自定义排序函数，会使sortType失效
+    sortType:'DESC',//排序方式 
     render: (text, record) => {
       return `<a href="javascript:;">${text}</a>`
     }
@@ -397,7 +397,7 @@ export default {
         dataIndex: 'age',
         sort: true,
         sortType: 'DESC',
-        sortMethod (x, y) { return x.age - y.age },
+        sortMethod (x, y) {return x.age - y.age },
         filter: true,
         render: (text, record) => {
           return `<a href="javascript:;">${text}</a>`

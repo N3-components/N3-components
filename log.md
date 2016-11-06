@@ -18,3 +18,10 @@ v1.2.x
 
 + 自定义输入添加position-move，placeholder参数 
 + 修复表单验证0判断为空的问题
+
+#### v1.2.3
+
+#### v1.2.4
+
++ datatable排序bug修复
+

@@ -554,7 +554,7 @@ export default {
           selectdCols.push(t['value'])
         }
 
-        t['sortType'] ? this.sortInfo = {index: t['dataIndex'], type: t['sortType']} : 0
+        t['sortType'] ? this.sortInfo = {index: t['dataIndex'], type: t['sortType'],method:t['sortMethod']} : 0
 
         ret[i] = t
       }
@@ -693,7 +693,6 @@ export default {
           this.searchMap[s[i][this.key]].indexOf(this.query) !== -1 ? ret.push(s[i]) : 0
         }
       }
-
       if (this.sortInfo.index && !type.isFunction(this.onChange)) {
         this.listSort(ret, this.sortInfo.index, this.sortInfo.type, this.sortInfo.method)
       }

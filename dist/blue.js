@@ -20326,7 +20326,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          selectdCols.push(t['value']);
 	        }
 	
-	        t['sortType'] ? this.sortInfo = { index: t['dataIndex'], type: t['sortType'] } : 0;
+	        t['sortType'] ? this.sortInfo = { index: t['dataIndex'], type: t['sortType'], method: t['sortMethod'] } : 0;
 	
 	        ret[i] = t;
 	      }
@@ -20462,7 +20462,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	          this.searchMap[s[i][this.key]].indexOf(this.query) !== -1 ? ret.push(s[i]) : 0;
 	        }
 	      }
-	
 	      if (this.sortInfo.index && !_type3.default.isFunction(this.onChange)) {
 	        this.listSort(ret, this.sortInfo.index, this.sortInfo.type, this.sortInfo.method);
 	      }
@@ -21306,7 +21305,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	
 	      var wrapCol = this.wrapCol ? this.wrapCol : 12;
-	      return wrapCol - this.labelCol;
+	      return wrapCol - this.label_col;
 	    },
 	    classObj: function classObj() {
 	      var prefixCls = this.prefixCls;
