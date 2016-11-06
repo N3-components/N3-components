@@ -16683,7 +16683,6 @@
 	        title: '年龄',
 	        dataIndex: 'age',
 	        sort: true,
-	        sortType: 'DESC',
 	        sortMethod: function sortMethod(x, y) {
 	          return x.age - y.age;
 	        },
@@ -38495,7 +38494,7 @@
 	          selectdCols.push(t['value']);
 	        }
 	
-	        t['sortType'] ? this.sortInfo = { index: t['dataIndex'], type: t['sortType'], method: t['sortMethod'] } : 0;
+	        t['sortType'] || t['sortMethod'] ? this.sortInfo = { index: t['dataIndex'], type: t['sortType'], method: t['sortMethod'] } : 0;
 	
 	        ret[i] = t;
 	      }

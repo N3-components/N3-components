@@ -396,7 +396,6 @@ export default {
         title: '年龄',
         dataIndex: 'age',
         sort: true,
-        sortType: 'DESC',
         sortMethod (x, y) {return x.age - y.age },
         filter: true,
         render: (text, record) => {
