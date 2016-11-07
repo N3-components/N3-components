@@ -8,7 +8,7 @@
           <input placeholder="搜索" v-model="search" class="searchCom" ></input>
           <n3-nav type="vertical" >
              <n3-nav-item v-for="(item, index) in list">
-              <n3-sub-nav :show="item.show" >
+              <n3-sub-nav :show="item.show" @toggle="handleToggle(item)">
                 <a slot="title" style="color:#333" v-text="index"></a>
                 <n3-nav-item v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
                   <a v-text="i.label"></a>
@@ -17,7 +17,6 @@
             </n3-nav-item>
           </n3-nav>
         </n3-column>
-        
         <n3-column :col="10">
           <component :is="component" ></component>
         </n3-column>
@@ -158,23 +157,19 @@ export default{
       search: ''
     }
   },
-  computed: {
-    list () {
-      const ret = {}
-      const map = this.map
-      const val = this.search
+  watch: {
+    search (val) {
+      let ret = {}
+      let map = this.map
       for (let i in map) {
         let show = map[i].show
         let list = map[i].list
-
         let t = list.filter((i)=>{
           let v = val.toLowerCase()
           let label = i.label
           let value = i.value.toLowerCase().replace('Docs', '').replace('n3', '')
-
           return label.indexOf(v) > -1 || value.indexOf(v) > -1
         })
-
         if (t.length) {
           ret[i] = {
             show: show,
@@ -182,10 +177,13 @@ export default{
           }
         }
       }
-      return ret
+      this.list = ret
     }
   },
   methods: {
+    handleToggle (item) {
+      item.show = !item.show
+    },
     change (value) {
       this.component = value
       window.location.hash = value
@@ -201,7 +199,7 @@ export default{
       }
     }
   },
-  ready () {
+  mounted () {
     this.list = this.map
     this.init()
     window.onhashchange = this.init

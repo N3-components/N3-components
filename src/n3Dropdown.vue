@@ -34,25 +34,34 @@ export default {
     }
   },
   methods: {
+    handleShow () {
+      this.$emit('show')
+    },
+    handleHide () {
+      this.$emit('hide')
+    },
     toggleDropdown () {
-      this.show = !this.show
+      this.$emit('toggle')
+      this.show ? this.handleHide() : this.handleShow()
+      // this.show = !this.show
     }
   },
-  ready () {
+  mounted () {
     let el = this.$el
     let triger = this.$refs.trigger.children[0]
-
     if (this.trigger === 'click') {
       this._clickEvent = EventListener.listen(triger, 'click', this.toggleDropdown)
       this._closeEvent = EventListener.listen(window, 'click', (e) => {
-        if (!this.clickClose && !el.contains(e.target)) this.show = false
+        if (!this.clickClose && !el.contains(e.target)) {
+          this.handleHide()
+        }
       })
     } else if (this.trigger === 'hover') {
       this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
-        this.show = true
+        this.handleShow()
       })
       this._closeEvent = EventListener.listen(this.$el, 'mouseleave', () => {
-        this.show = false
+        this.handleHide()
       })
     }
   },

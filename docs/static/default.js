@@ -8899,7 +8899,7 @@
 	//           <input placeholder="搜索" v-model="search" class="searchCom" ></input>
 	//           <n3-nav type="vertical" >
 	//              <n3-nav-item v-for="(item, index) in list">
-	//               <n3-sub-nav :show="item.show" >
+	//               <n3-sub-nav :show="item.show" @toggle="handleToggle(item)">
 	//                 <a slot="title" style="color:#333" v-text="index"></a>
 	//                 <n3-nav-item v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
 	//                   <a v-text="i.label"></a>
@@ -8908,7 +8908,6 @@
 	//             </n3-nav-item>
 	//           </n3-nav>
 	//         </n3-column>
-	
 	//         <n3-column :col="10">
 	//           <component :is="component" ></component>
 	//         </n3-column>
@@ -8969,23 +8968,19 @@
 	    };
 	  },
 	
-	  computed: {
-	    list: function list() {
+	  watch: {
+	    search: function search(val) {
 	      var ret = {};
 	      var map = this.map;
-	      var val = this.search;
 	      for (var i in map) {
 	        var show = map[i].show;
 	        var list = map[i].list;
-	
 	        var t = list.filter(function (i) {
 	          var v = val.toLowerCase();
 	          var label = i.label;
 	          var value = i.value.toLowerCase().replace('Docs', '').replace('n3', '');
-	
 	          return label.indexOf(v) > -1 || value.indexOf(v) > -1;
 	        });
-	
 	        if (t.length) {
 	          ret[i] = {
 	            show: show,
@@ -8993,10 +8988,13 @@
 	          };
 	        }
 	      }
-	      return ret;
+	      this.list = ret;
 	    }
 	  },
 	  methods: {
+	    handleToggle: function handleToggle(item) {
+	      item.show = !item.show;
+	    },
 	    change: function change(value) {
 	      this.component = value;
 	      window.location.hash = value;
@@ -9012,7 +9010,7 @@
 	      }
 	    }
 	  },
-	  ready: function ready() {
+	  mounted: function mounted() {
 	    this.list = this.map;
 	    this.init();
 	    window.onhashchange = this.init;
@@ -19160,7 +19158,7 @@
 /* 623 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base' || type === 'ant'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(item, index) in list\">\n              <n3-sub-nav :show=\"item.show\" >\n                <a slot=\"title\" style=\"color:#333\" v-text=\"index\"></a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a v-text=\"i.label\"></a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n    </n3-container>\n  </footer>\n</div>";
+	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base' || type === 'ant'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(item, index) in list\">\n              <n3-sub-nav :show=\"item.show\" @toggle=\"handleToggle(item)\">\n                <a slot=\"title\" style=\"color:#333\" v-text=\"index\"></a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a v-text=\"i.label\"></a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n    </n3-container>\n  </footer>\n</div>";
 
 /***/ },
 /* 624 */
@@ -31904,27 +31902,36 @@
 	    }
 	  },
 	  methods: {
+	    handleShow: function handleShow() {
+	      this.$emit('show');
+	    },
+	    handleHide: function handleHide() {
+	      this.$emit('hide');
+	    },
 	    toggleDropdown: function toggleDropdown() {
-	      this.show = !this.show;
+	      this.$emit('toggle');
+	      this.show ? this.handleHide() : this.handleShow();
+	      // this.show = !this.show
 	    }
 	  },
-	  ready: function ready() {
+	  mounted: function mounted() {
 	    var _this = this;
 	
 	    var el = this.$el;
 	    var triger = this.$refs.trigger.children[0];
-	
 	    if (this.trigger === 'click') {
 	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggleDropdown);
 	      this._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
-	        if (!_this.clickClose && !el.contains(e.target)) _this.show = false;
+	        if (!_this.clickClose && !el.contains(e.target)) {
+	          _this.handleHide();
+	        }
 	      });
 	    } else if (this.trigger === 'hover') {
 	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
-	        _this.show = true;
+	        _this.handleShow();
 	      });
 	      this._closeEvent = _EventListener2.default.listen(this.$el, 'mouseleave', function () {
-	        _this.show = false;
+	        _this.handleHide();
 	      });
 	    }
 	  },
@@ -34139,10 +34146,10 @@
 	
 	// <template>
 	// <span>
-	//   <n3-dropdown :trigger="trigger" :show="show" :click-close="true" effect="collapse">
+	//   <n3-dropdown :trigger="trigger" :show="show" :click-close="true" effect="collapse" @show="$emit('show')" @hide="$emit('hide')" @toggle="$emit('toggle')">
 	//     <div slot="trigger" :class="`${prefixCls}-sub-nav-trigger`" >
 	//       <slot name="title"></slot>
-	//       <n3-icon :class="`${prefixCls}-sub-nav-fa`" :type="show ? 'angle-up' : 'angle-down'" ></n3-icon>
+	//       <n3-icon :class="`${prefixCls}-sub-nav-fa`" :type="show ? 'angle-up' : 'angle-down'"></n3-icon>
 	//     </div>
 	//     <slot></slot>
 	//   </n3-dropdown>
@@ -34175,7 +34182,7 @@
 /* 748 */
 /***/ function(module, exports) {
 
-	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show=\"show\" :click-close=\"true\" effect=\"collapse\">\n    <div slot=\"trigger\" :class=\"`${prefixCls}-sub-nav-trigger`\" >\n      <slot name=\"title\"></slot>\n      <n3-icon :class=\"`${prefixCls}-sub-nav-fa`\" :type=\"show ? 'angle-up' : 'angle-down'\" ></n3-icon>\n    </div>\n    <slot></slot>\n  </n3-dropdown>\n</span>";
+	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show=\"show\" :click-close=\"true\" effect=\"collapse\" @show=\"$emit('show')\" @hide=\"$emit('hide')\" @toggle=\"$emit('toggle')\">\n    <div slot=\"trigger\" :class=\"`${prefixCls}-sub-nav-trigger`\" >\n      <slot name=\"title\"></slot>\n      <n3-icon :class=\"`${prefixCls}-sub-nav-fa`\" :type=\"show ? 'angle-up' : 'angle-down'\"></n3-icon>\n    </div>\n    <slot></slot>\n  </n3-dropdown>\n</span>";
 
 /***/ },
 /* 749 */
