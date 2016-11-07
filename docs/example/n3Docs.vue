@@ -185,6 +185,7 @@ export default{
       item.show = !item.show
     },
     change (value) {
+      // console.log(value, this.component)
       this.component = value
       window.location.hash = value
     },
