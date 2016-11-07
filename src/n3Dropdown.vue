@@ -14,8 +14,7 @@ import EventListener from './utils/EventListener'
 export default {
   props: {
     show: {
-      type: Boolean,
-      twoWay: true
+      type: Boolean
     },
     trigger: {
       type: String,

@@ -8934,11 +8934,11 @@
 	//         <n3-column :col="2">
 	//           <input placeholder="搜索" v-model="search" class="searchCom" ></input>
 	//           <n3-nav type="vertical" >
-	//              <n3-nav-item v-for="(index,item) in list">
-	//               <n3-sub-nav  :show.sync="item.show" >
-	//                 <a slot="title" style="color:#333">{{index}}</a>
+	//              <n3-nav-item v-for="(item, index) in list">
+	//               <n3-sub-nav :show="item.show" >
+	//                 <a slot="title" style="color:#333" v-text="index"></a>
 	//                 <n3-nav-item v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
-	//                   <a>{{i.label}}</a>
+	//                   <a v-text="i.label"></a>
 	//                 </n3-nav-item>
 	//               </n3-sub-nav>
 	//             </n3-nav-item>
@@ -9005,11 +9005,11 @@
 	    };
 	  },
 	
-	  watch: {
-	    search: function search(val) {
+	  computed: {
+	    list: function list() {
 	      var ret = {};
 	      var map = this.map;
-	
+	      var val = this.search;
 	      for (var i in map) {
 	        var show = map[i].show;
 	        var list = map[i].list;
@@ -9029,8 +9029,7 @@
 	          };
 	        }
 	      }
-	
-	      this.list = ret;
+	      return ret;
 	    }
 	  },
 	  methods: {
@@ -19197,7 +19196,7 @@
 /* 623 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base' || type === 'ant'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(index,item) in list\">\n              <n3-sub-nav  :show.sync=\"item.show\" >\n                <a slot=\"title\" style=\"color:#333\">{{index}}</a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a>{{i.label}}</a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n    </n3-container>\n  </footer>\n</div>";
+	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base' || type === 'ant'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(item, index) in list\">\n              <n3-sub-nav :show=\"item.show\" >\n                <a slot=\"title\" style=\"color:#333\" v-text=\"index\"></a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a v-text=\"i.label\"></a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n    </n3-container>\n  </footer>\n</div>";
 
 /***/ },
 /* 624 */
@@ -31936,8 +31935,7 @@
 	exports.default = {
 	  props: {
 	    show: {
-	      type: Boolean,
-	      twoWay: true
+	      type: Boolean
 	    },
 	    trigger: {
 	      type: String,
@@ -34192,12 +34190,12 @@
 	
 	// <template>
 	// <span>
-	//   <n3-dropdown :trigger="trigger" :show.sync="show" :click-close="true" effect="collapse">
-	//     <div slot="trigger"   :class="`${prefixCls}-sub-nav-trigger`" >
+	//   <n3-dropdown :trigger="trigger" :show="show" :click-close="true" effect="collapse">
+	//     <div slot="trigger" :class="`${prefixCls}-sub-nav-trigger`" >
 	//       <slot name="title"></slot>
 	//       <n3-icon :class="`${prefixCls}-sub-nav-fa`" :type="show ? 'angle-up' : 'angle-down'" ></n3-icon>
 	//     </div>
-	//     <slot></slot>  
+	//     <slot></slot>
 	//   </n3-dropdown>
 	// </span>
 	// </template>
@@ -34210,7 +34208,6 @@
 	    },
 	    show: {
 	      type: Boolean,
-	      twoWay: true,
 	      default: false
 	    },
 	    prefixCls: {
@@ -34229,7 +34226,7 @@
 /* 748 */
 /***/ function(module, exports) {
 
-	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show.sync=\"show\" :click-close=\"true\" effect=\"collapse\">\n    <div slot=\"trigger\"   :class=\"`${prefixCls}-sub-nav-trigger`\" >\n      <slot name=\"title\"></slot>\n      <n3-icon :class=\"`${prefixCls}-sub-nav-fa`\" :type=\"show ? 'angle-up' : 'angle-down'\" ></n3-icon>\n    </div>\n    <slot></slot>  \n  </n3-dropdown>\n</span>";
+	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show=\"show\" :click-close=\"true\" effect=\"collapse\">\n    <div slot=\"trigger\" :class=\"`${prefixCls}-sub-nav-trigger`\" >\n      <slot name=\"title\"></slot>\n      <n3-icon :class=\"`${prefixCls}-sub-nav-fa`\" :type=\"show ? 'angle-up' : 'angle-down'\" ></n3-icon>\n    </div>\n    <slot></slot>\n  </n3-dropdown>\n</span>";
 
 /***/ },
 /* 749 */

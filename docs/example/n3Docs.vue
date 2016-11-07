@@ -7,11 +7,11 @@
         <n3-column :col="2">
           <input placeholder="搜索" v-model="search" class="searchCom" ></input>
           <n3-nav type="vertical" >
-             <n3-nav-item v-for="(index,item) in list">
-              <n3-sub-nav  :show.sync="item.show" >
-                <a slot="title" style="color:#333">{{index}}</a>
+             <n3-nav-item v-for="(item, index) in list">
+              <n3-sub-nav :show="item.show" >
+                <a slot="title" style="color:#333" v-text="index"></a>
                 <n3-nav-item v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
-                  <a>{{i.label}}</a>
+                  <a v-text="i.label"></a>
                 </n3-nav-item>
               </n3-sub-nav>
             </n3-nav-item>
@@ -158,11 +158,11 @@ export default{
       search: ''
     }
   },
-  watch: {
-    search (val) {
-      let ret = {}
-      let map = this.map
-
+  computed: {
+    list () {
+      const ret = {}
+      const map = this.map
+      const val = this.search
       for (let i in map) {
         let show = map[i].show
         let list = map[i].list
@@ -182,9 +182,7 @@ export default{
           }
         }
       }
-
-      this.list = ret
-
+      return ret
     }
   },
   methods: {
