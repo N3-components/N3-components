@@ -2,7 +2,7 @@
   <div class="bs-docs-section" id="页面提示"  >
     <h1 class="page-header"><a href="#页面提示" class="anchor">页面提示</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-button @click="showToast">点击</n3-button>
+      <n3-button @click.native="showToast">点击</n3-button>
       <hr>
       <pre><code class="language-markup"><script type="language-mark-up">
 <a class="btn btn-default" @click="showToast">点击</a>
