@@ -68,7 +68,7 @@ export default {
       }
     }
   },
-  ready () {
+  mounted () {
     this._scrollEvent = EventListener.listen(window, 'scroll', this.scrolling)
     this._resizeEvent = EventListener.listen(window, 'resize', this.scrolling)
   },
