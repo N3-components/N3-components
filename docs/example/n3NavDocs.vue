@@ -10,7 +10,7 @@
             <a >导航二</a>
           </n3-nav-item>
           <n3-nav-item>
-            <n3-sub-nav trigger="hover">
+            <n3-sub-nav trigger="hover" :show="show1" @show="show1 = true" @hide="show1 = false">
               <a slot="title">导航三</a>
               <n3-nav-item >
                 <a>子导航一</a>
@@ -56,7 +56,7 @@
             <a >导航二</a>
           </n3-nav-item>
           <n3-nav-item>
-            <n3-sub-nav>
+            <n3-sub-nav :show="show2" @toggle="show2 = !show2">
               <a slot="title">导航三</a>
               <n3-nav-item >
                 <a>子导航一</a>
@@ -181,5 +181,11 @@
 
 <script>
 export default {
+  data () {
+    return {
+      show1: false,
+      show2: false
+    }
+  }
 }
 </script>
