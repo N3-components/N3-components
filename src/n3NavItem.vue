@@ -1,5 +1,5 @@
 <template>
-	<li :class="classObj" @click="$emit('click')">
+	<li :class="classObj">
 		<slot></slot>
 	</li>
 </template>

@@ -10,7 +10,7 @@
              <n3-nav-item v-for="(item, index) in list">
               <n3-sub-nav :show="item.show" @toggle="handleToggle(item)">
                 <a slot="title" style="color:#333" v-text="index"></a>
-                <n3-nav-item v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
+                <n3-nav-item v-for="i in item.list" :active="component == i.value" @click.native="change(i.value)">
                   <a v-text="i.label"></a>
                 </n3-nav-item>
               </n3-sub-nav>
