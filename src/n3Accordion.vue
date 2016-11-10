@@ -1,6 +1,6 @@
 <template>
   <div :class="`${prefixCls}-panel-group`">
-    <slot></slot>
+      <slot></slot>
   </div>
 </template>
 
@@ -9,7 +9,7 @@ import type from './utils/type'
 
 export default {
   props: {
-    oneAtATime: {
+    oneAtTime: {
       type: Boolean,
       default: false
     },
@@ -25,15 +25,14 @@ export default {
       default: 'n3'
     }
   },
-  events: {
-    'n3@paneltoggle' (child) {
+  methods: {
+    change (child) {
       let children = this.$children
       let ret = []
-
-      if (this.oneAtATime) {
+      if (this.oneAtTime) {
         children.forEach((item) => {
           if (child !== item) {
-            item.isOpen = false
+            item.open = false
           }
         })
       }
@@ -42,7 +41,7 @@ export default {
         if (item.index) {
           ret.push({
             index: item.index,
-            isOpen: item.isOpen,
+            isOpen: item.open,
             header: item.header
           })
         }

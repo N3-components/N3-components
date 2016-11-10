@@ -9,15 +9,16 @@
         </a>
       </h4>
     </div>
-    <div
-      :class="`${prefixCls}-panel-collapse`"
-      ref="panel"
-      v-show="isOpen"
-      :transition="$parent.effect">
-      <div :class="`${prefixCls}-panel-body`">
-        <slot></slot>
+    <transition :name="$parent.effect">
+      <div
+        :class="`${prefixCls}-panel-collapse`"
+        ref="panel"
+        v-show="open">
+        <div :class="`${prefixCls}-panel-body`">
+          <slot></slot>
+        </div>
       </div>
-    </div>
+    <transition>
   </div>
 </template>
 
@@ -44,28 +45,36 @@ export default {
     }
   },
   data () {
+    let open = this.isOpen
     return {
-      height: 0
+      height: 0,
+      open: open
+    }
+  },
+  watch: {
+    isOpen (val) {
+      this.open = this.isOpen
     }
   },
   methods: {
     toggleIsOpen () {
-      this.isOpen = !this.isOpen
-      this.$dispatch('n3@paneltoggle', this)
+      this.open = !this.open
+      let item = {
+        index: this.index,
+        header: this.header,
+        isOpen: this.open
+      }
 
+      this.$parent.change(this)
       if (type.isFunction(this.onChange)) {
-        this.onChange({
-          index: this.index,
-          header: this.header,
-          isOpen: this.isOpen
-        })
+        this.onChange(item)
       }
     }
   },
   ready () {
     const panel = this.$refs.panel
     panel.style.display = 'block'
-    if (!this.isOpen) panel.style.display = 'none'
+    if (!this.open) panel.style.display = 'none'
   }
 }
 </script>
