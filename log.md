@@ -25,3 +25,7 @@ v1.2.x
 
 + datatable排序bug修复
 
+
+#### v1.2.6
+
++ slider 样式问题
