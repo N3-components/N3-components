@@ -1,14 +1,14 @@
 <template>
   <transition name="fade">
     <div
-     v-show="show"
+     v-show="isShow"
      :class="classObj"
       :style="{width:width}">
 
       <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
 
       <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
-        @click="_handleClose" >
+         @click="handleClose" >
         <span>&times;</span>
       </button>
 
@@ -29,6 +29,10 @@ import n3Icon from './n3Icon'
 
 export default {
   props: {
+    show: {
+      type: Boolean,
+      default: false
+    },
     type: {
       type: String,
       default: 'default'
@@ -36,11 +40,6 @@ export default {
     dismissable: {
       type: Boolean,
       default: false
-    },
-    show: {
-      type: Boolean,
-      default: true,
-      twoWay: true
     },
     duration: {
       type: Number,
@@ -72,16 +71,28 @@ export default {
       default: 'n3'
     }
   },
+  data () {
+    let show = this.show
+    return {
+      isShow: show
+    }
+  },
   methods: {
-    _handleClose (e) {
-      this.show = false
+    open () {
+      this.isShow = true
+    },
+    close () {
+      this.isShow = false
+    },
+    handleClose (e) {
+      this.isShow = false
       if (type.isFunction(this.onClose)) {
         this.onClose()
       }
     }
   },
   watch: {
-    show (val) {
+    isShow (val) {
       if (val) {
         if (this.placement === 'top' || this.placement === 'bottom') {
           this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
@@ -94,7 +105,7 @@ export default {
       if (this._timeout) clearTimeout(this._timeout)
       if (val && !!this.duration) {
         this._timeout = setTimeout(() => {
-          this.show = false
+          this.isShow = false
         }, this.duration)
       }
     }

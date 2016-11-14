@@ -1,11 +1,13 @@
 <template>
 <div :class="`${prefixCls}-carousel ${prefixCls}-slide`">
   <ol :class="`${prefixCls}-carousel-indicators`" v-show="indicators">
-    <li v-for="i in indicator" 
-      transition="fade"
-      @click="handleIndicatorClick($index)" 
-      :class="[$index === activeIndex ? prefixCls + '-carousel-active'  : '']">
+    <transition-group name="fade">
+    <li v-for="(i,index) in indicator" 
+      :key="index"
+      @click="handleIndicatorClick(index)" 
+      :class="[index === activeIndex ? prefixCls + '-carousel-active'  : '']">
     </li>
+    </transition-group>
   </ol>
   <div :class="`${prefixCls}-carousel-inner`">
     <slot></slot>
@@ -108,10 +110,10 @@ export default {
       this.activeIndex === 0 ? this.activeIndex = this.slider.length - 1 : this.activeIndex -= 1
     }
   },
-  ready () {
+  mounted () {
     let el = this.$el
     let self = this
-
+    
     function intervalManager (flag, func, time) {
       flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID)
     }

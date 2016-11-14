@@ -30,15 +30,16 @@ const PopoverMixin = {
     },
     show: {
       type: Boolean,
-      twoWay: true,
-      default: true
+      default: false
     },
     onClick: {
       type: Function
     }
   },
   data () {
+    let show = this.show
     return {
+      isShow: show,
       position: {
         top: 0,
         left: 0
@@ -46,7 +47,7 @@ const PopoverMixin = {
     }
   },
   watch: {
-    show (val) {
+    isisShow (val) {
       if (val && !this.noresize) {
         this.$nextTick(() => {
           this.resize()
@@ -57,7 +58,7 @@ const PopoverMixin = {
 
   methods: {
     toggle () {
-      this.show = !this.show
+      this.isShow = !this.isShow
     },
     resize () {
       let popover = this.$refs.popover
@@ -95,32 +96,32 @@ const PopoverMixin = {
     let triger = this.$refs.trigger.children[0]
     if (this.trigger === 'hover') {
       this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
-        this.show = true
+        this.isShow = true
       })
       this._mouseleaveEvent = EventListener.listen(triger, 'mouseleave', () => {
-        this.show = false
+        this.isShow = false
       })
     } else if (this.trigger === 'focus') {
       let input = this.$refs.trigger.querySelector('input')
       if (input) {
         this._focusEvent = EventListener.listen(input, 'focus', () => {
-          this.show = true
+          this.isShow = true
         })
         this._blurEvent = EventListener.listen(input, 'blur', () => {
-          this.show = false
+          this.isShow = false
         })
       }
     } else if (this.trigger === 'mouse') {
       this._mousedownEvent = EventListener.listen(triger, 'mousedown', () => {
-        this.show = true
+        this.isShow = true
       })
       this._mouseupEvent = EventListener.listen(window, 'mouseup', () => {
-        this.show = false
+        this.isShow = false
       })
     } else {
       this._clickEvent = EventListener.listen(triger, 'click', this.toggle)
       this._closeEvent = EventListener.listen(window, 'click', (e) => {
-        if (!this.$el.contains(e.target)) this.show = false
+        if (!this.$el.contains(e.target)) this.isShow = false
         if (this.$refs.content && this.$refs.content.contains(e.target) && type.isFunction(this.onClick)) {
           this.onClick(e, this)
         }
@@ -128,7 +129,7 @@ const PopoverMixin = {
     }
     this.resize()
     popover.style.display = 'none'
-    this.show = false
+    this.isShow = false
   },
   beforeDestroy () {
     if (this._blurEvent) {

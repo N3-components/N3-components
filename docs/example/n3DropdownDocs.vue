@@ -2,20 +2,20 @@
   <div class="bs-docs-section" id="下拉框"  >
     <h1 class="page-header"><a href="#下拉框" class="anchor">下拉框</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-dropdown :show.sync="show">
+      <n3-dropdown>
         <div slot="trigger">
           <n3-button>
             点击
             <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
           </n3-button>
         </div>
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
+        <li ><a href="#">Action</a></li>
+        <li ><a href="#">Another action</a></li>
+        <li ><a href="#">Something else here</a></li>
       </n3-dropdown>
     </div>
-    <pre><code class="language-markup"><script type="language-mark-up">
-<n3-dropdown :show.sync="show">
+    <!-- <pre><code class="language-markup"><script type="language-mark-up">
+<n3-dropdown>
   <div slot="trigger">
     <n3-button>
       点击
@@ -26,8 +26,7 @@
   <li><a href="#">Another action</a></li>
   <li><a href="#">Something else here</a></li>
 </n3-dropdown>
-      </script></code></pre>
-  </div>
+      </script></code></pre> -->
 
   <h2>参数</h2>
     <table class="table table-bordered">
@@ -40,11 +39,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+         <tr>
           <td>show</td>
           <td><code>Boolean</code></td>
-          <td></td>
-          <td>下拉菜单显示状态<code>.sync</code></td>
+          <td><code>false</code></td>
+          <td>是否显示</td>
         </tr>
         <tr>
           <td>trigger</td>
@@ -54,6 +53,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 </template>
 
 <script>

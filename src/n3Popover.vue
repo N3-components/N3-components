@@ -4,18 +4,19 @@
       <slot>
       </slot>
     </span>
+    <transition :name="effect">
     <div 
       style="max-width:none"
       :class="classObj"
       ref="popover"
-      v-show="show"
-      :transition="effect">
+      v-show="isShow">
         <div :class="`${prefixCls}-popover-arrow`"></div>
         <h3 :class="`${prefixCls}-popover-title`" v-show="header">{{title}}</h3>
         <div :class="`${prefixCls}-popover-content`" ref="content">
          <slot name="content"></slot>
         </div>
     </div>
+    </transition>
 </span>
 </template>
 
