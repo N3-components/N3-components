@@ -9,7 +9,7 @@
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 <n3-tree :value.sync="id":data="files1"></n3-tree>
-        </script></code></pre>
+  </script></code></pre>
     <pre><code class="language-javascript"><script type="language-javascript">
 new Vue({
     data: {
@@ -53,8 +53,8 @@ new Vue({
         ]
     }
 })
-        </script> </code></pre>
-  </div>
+   </script> </code></pre>
+
   <h1 class="page-header">
     <a href="#异步加载" class="anchor">异步加载</a>
     <span class="author"></span>
@@ -99,15 +99,13 @@ new Vue({
     }
 })
 
-      </script></code></pre>
-  </div>
+  </script></code></pre>
 
     <h1 class="page-header">    
       <a href="#勾选节点" class="anchor">勾选节点</a>
       <span class="author"></span>
     </h1>
     <div class="bs-example">
-      {{checkedKeys | json}}
       <n3-tree 
         :value.sync="id" 
         :data="files3" 

@@ -47,7 +47,7 @@ const PopoverMixin = {
     }
   },
   watch: {
-    isisShow (val) {
+    isShow (val) {
       if (val && !this.noresize) {
         this.$nextTick(() => {
           this.resize()
@@ -90,7 +90,7 @@ const PopoverMixin = {
       popover.style.left = this.position.left + 'px'
     }
   },
-  ready () {
+  mounted () {
     if (!this.$refs.popover) return
     let popover = this.$refs.popover
     let triger = this.$refs.trigger.children[0]

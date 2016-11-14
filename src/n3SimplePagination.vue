@@ -1,21 +1,22 @@
 <template>
-	<nav v-show="total>0" :class='`${prefixCls}-simple-pagination`'>
-        <div :class="`${prefixCls}-pagination">
-            <n3-button v-show ="havePrev"  @click="prev" :class="`${prefixCls}-simple-pagination-btn`">
-              <n3-icon type="chevron-left"></n3-icon>
-            </n3-button>
-            <span> {{current}} / {{totalpage}}</span>
-            <n3-button v-show ="haveNext" @click="next" :class="`${prefixCls}-simple-pagination-btn`">
-              <n3-icon type="chevron-right"></n3-icon>
-            </n3-button>
-            <n3-input  
-              width="50px"
-              :class="`${prefixCls}-simple-pagination-input`"
-              @keyup.enter="go" 
-              :value.sync="inputValue"></n3-input>
-            <n3-button @click="go" :class="`${prefixCls}-simple-pagination-btn`">跳转</n3-button>
-        </div>
-    </nav>
+	<nav v-show="total>0" :class="prefixCls+'-simple-pagination'">
+    <div :class="prefixCls+'-pagination'">
+      <n3-button v-show ="havePrev"  @click.native="prev" :class="prefixCls+'-simple-pagination-btn'">
+        <n3-icon type="chevron-left"></n3-icon>
+      </n3-button>
+      <span> {{currentPage}} / {{totalpage}}</span>
+      <n3-button v-show ="haveNext" @click.native="next" :class="prefixCls+'-simple-pagination-btn'">
+        <n3-icon type="chevron-right"></n3-icon>
+      </n3-button>
+      <n3-input  
+        width="50px"
+        :class="prefixCls+'-simple-pagination-input'"
+        @keyup.enter="go" 
+        v-model="inputValue">
+      </n3-input>
+      <n3-button @click.native="go" :class="prefixCls+'-simple-pagination-btn'">跳转</n3-button>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -31,7 +32,6 @@ export default {
     },
     current: {
       type: Number,
-      twoway: true,
       default: 1
     },
     pagesize: {
@@ -46,7 +46,9 @@ export default {
     }
   },
   data () {
+    let current = this.current
     return {
+      currentPage: current,
       inputValue: '',
       havePrev: true,
       haveNext: true,
@@ -59,12 +61,12 @@ export default {
     n3Button
   },
   watch: {
-    current (val) {
+    currentPage (val) {
       this.inputValue = ''
       this.checkHave()
 
       if (type.isFunction(this.onChange)) {
-        this.onChange(this.current)
+        this.onChange(this.currentPage)
       }
     },
     total () {
@@ -74,24 +76,24 @@ export default {
       this.init()
     }
   },
-  ready () {
+  mounted () {
     this.init()
   },
   methods: {
     init () {
-      this.current = 1
+      this.currentPage = 1
       this.totalpage = Math.ceil(this.total / this.pagesize * 1)
       this.checkHave()
     },
     checkHave () {
-      this.havePrev = this.current > 1
-      this.haveNext = this.current < this.totalpage
+      this.havePrev = this.currentPage > 1
+      this.haveNext = this.currentPage < this.totalpage
     },
     prev () {
-      this.go(1 * this.current - 1)
+      this.go(1 * this.currentPage - 1)
     },
     next () {
-      this.go(1 * this.current + 1)
+      this.go(1 * this.currentPage + 1)
     },
     go (page) {
       if (isNaN(page)) page = this.inputValue
@@ -102,9 +104,9 @@ export default {
         if (page < 1) {
           this.curret = 1
         } else if (page > this.totalpage) {
-          this.current = this.totalpage
+          this.currentPage = this.totalpage
         } else {
-          this.current = page
+          this.currentPage = page
         }
       }
     }

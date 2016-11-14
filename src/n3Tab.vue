@@ -41,7 +41,7 @@ export default {
       return klass
     },
     show () {
-      return (this.$parent.activeIndex == this.index)
+      return (this.$parent.aIndex == this.index)
     }
   },
   created () {
@@ -53,7 +53,7 @@ export default {
       })
     }
   },
-  ready () {
+  mounted () {
     for (var c in this.$parent.$children) {
       if (this.$parent.$children[c].$el == this.$el) {
         this.index = c

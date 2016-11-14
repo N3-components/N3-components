@@ -1,12 +1,13 @@
 <template>
-	<div 
-    ref="dom"
-    :class="classObj"
-		transition="fade"
-		@click="handleClick"
-		v-if="show">
-		<h5 v-text="text"></h5>
-	</div>
+  <transition name="fade">
+  	<div 
+      ref="dom"
+      :class="classObj"
+  		@click="handleClick"
+  		v-if="show">
+  		<h5 v-text="text"></h5>
+  	</div>
+  </transition>
 </template>
 
 <script>

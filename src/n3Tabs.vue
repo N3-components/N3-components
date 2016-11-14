@@ -2,9 +2,9 @@
   <div>
     <ul :class="classObj" >
       <li
-          v-for="r in renderData"
-          :class="liclassObj($index,r)"
-          @click.prevent="handleTabListClick($index, r)"
+          v-for="(r,index) in renderData"
+          :class="liclassObj(index,r)"
+          @click.prevent="handleTabListClick(index, r)"
           :disabled="r.disabled">
           <a href="#">
             {{r.header}}
@@ -14,7 +14,7 @@
     </ul>
     <div :class="`${prefixCls}-tab-content`">
       <div v-if="list">
-          {{{renderData[activeIndex].content}}}
+          <span v-html='renderData[aIndex].content'></span>
       </div>
       <slot v-else></slot>
     </div>
@@ -58,8 +58,10 @@ export default {
     }
   },
   data () {
+    let activeIndex = this.activeIndex
     return {
-      renderData: []
+      renderData: [],
+      aIndex: activeIndex
     }
   },
   components: {
@@ -82,7 +84,7 @@ export default {
     }
   },
   watch: {
-    list:{
+    list: {
       handler () {
         if (this.list) {
           this.renderData = this.list
@@ -93,17 +95,17 @@ export default {
   },
   methods: {
     liclassObj (index, r) {
-      let {prefixCls, activeIndex} = this
+      let {prefixCls, aIndex} = this
       let klass = {}
 
-      klass[prefixCls + '-nav-tabs-active'] = index === activeIndex
+      klass[prefixCls + '-nav-tabs-active'] = index === aIndex
       klass[prefixCls + '-nav-tabs-disabled'] = r.disabled
 
       return klass
     },
     handleTabListClick (index, el) {
       if (!el.disabled) {
-        this.activeIndex = index
+        this.aIndex = index
       } else {
         return
       }

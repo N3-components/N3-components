@@ -22,7 +22,7 @@
           </span>
           <label :class="`${prefixCls}-tree-loading-box`">
             <n3-icon :type="node['icon'] || icon"></n3-icon>
-            {{{node.label}}}
+            <span v-html="node.label"></span>
           </label>
         </span>
       </div>

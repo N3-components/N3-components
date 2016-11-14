@@ -2,11 +2,11 @@
   <div class="bs-docs-section" id="简易分页"  >
     <h1 class="page-header"><a href="#简易分页" class="anchor">简易分页</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-simple-pagination :total="100" :current.sync="1" :pagesize="20" :on-change = "pagechange"></n3-simple-pagination>
+      <n3-simple-pagination :total="100" :current="1" :pagesize="20" :on-change="pagechange"></n3-simple-pagination>
       <hr></hr>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-simple-pagination :total="100" :current.sync="1" :pagesize=20 :on-change="changepage"></n3-simple-pagination>
+<n3-simple-pagination :total="100" :current="1" :pagesize=20 :on-change="changepage"></n3-simple-pagination>
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">
@@ -29,7 +29,7 @@
           <td>current</td>
           <td><code>Number</code></td>
           <td><code></code></td>
-          <td>当前页数,需要<code>.sync</code></td>
+          <td>当前页数</td>
         </tr>
         <tr>
           <td>pagesize</td>

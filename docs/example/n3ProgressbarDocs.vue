@@ -46,10 +46,9 @@
         <n3-progressbar :now="stackedData[0]" label type="warning" striped></n3-progressbar>
         <n3-progressbar :now="stackedData[1]" label type="success" ></n3-progressbar>
         <n3-progressbar :now="stackedData[2]" label type="danger"></n3-progressbar>
-        <n3-progressbar :now="stackedData[3]" label type="primary" striped ></n3-progressbar>
+        <n3-progressbar :now="stackedData[3]" label type="primary" striped >
+      </n3-progressbar>
       </div>
-
-    </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 <h4>静态</h4>
 <div class="row">
@@ -95,8 +94,8 @@
   <n3-progressbar :now="stackedData[0]" label type="warning" striped></n3-progressbar>
   <n3-progressbar :now="stackedData[1]" label type="success" ></n3-progressbar>
   <n3-progressbar :now="stackedData[2]" label type="danger"></n3-progressbar>
-  <n3-progressbar :now="stackedData[3]" label type="primary" striped ></n3-progressbar>
-</div>
+  <n3-progressbar :now="stackedData[3]" label type="primary" striped >
+</n3-progressbar>
     </script></code></pre>
 
     <h2>参数</h2>

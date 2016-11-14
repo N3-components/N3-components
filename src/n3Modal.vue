@@ -39,9 +39,8 @@ export default {
       default: ''
     },
     show: {
-      require: true,
       type: Boolean,
-      twoWay: true
+      default: false
     },
     width: {
       type: String,
@@ -83,8 +82,14 @@ export default {
       return klass
     }
   },
+  data () {
+    let show = this.show
+    return {
+      isShow: show
+    }
+  },
   watch: {
-    show (val) {
+    isShow (val) {
       if (val) {
         if (type.isFunction(this.onShow)) {
           this.onShow()
@@ -108,7 +113,7 @@ export default {
         }
         if (this.backdrop) {
           this._blurModalContentEvent = EventListener.listen(this.$el, 'click', (e) => {
-            if (e.target === el) this.show = false
+            if (e.target === el) this.isShow = false
           })
         }
       } else {
@@ -125,7 +130,10 @@ export default {
   },
   methods: {
     close () {
-      this.show = false
+      this.isShow = false
+    },
+    open () {
+      this.isShow = true
     },
     confirm () {
       if (type.isFunction(this.onConfirm)) {

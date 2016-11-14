@@ -32,28 +32,28 @@
     </div>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-<input type="checkbox" v-model="checked">
-<label for="checked">一次只打开一个</label>
+      <input type="checkbox" v-model="checked">
+      <label for="checked">一次只打开一个</label>
 
- <n3-accordion :one-at-atime="checked" :on-change="change">
-  <n3-panel header="Panel #1" :is-open="true" index="1">
-    <div slot="header">Panel #1</div>
-    ...
-    
-  </n3-panel>
-  <n3-panel header="Panel #2" index="2">
-    ...
+       <n3-accordion :one-at-atime="checked" :on-change="change">
+        <n3-panel header="Panel #1" :is-open="true" index="1">
+          <div slot="header">Panel #1</div>
+          ...
+          
+        </n3-panel>
+        <n3-panel header="Panel #2" index="2">
+          ...
 
-  </n3-panel>
-  <n3-panel header="Panel #3" index="3">
-    ...
+        </n3-panel>
+        <n3-panel header="Panel #3" index="3">
+          ...
 
-  </n3-panel>
-  <n3-panel header="Panel #4" index="4">
-    ...
-    
-  </n3-panel>
-</n3-accordion>
+        </n3-panel>
+        <n3-panel header="Panel #4" index="4">
+          ...
+          
+        </n3-panel>
+      </n3-accordion>
     </script></code></pre>
 
     <h2>n3-accordion参数</h2>

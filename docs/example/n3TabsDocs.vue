@@ -19,6 +19,9 @@
           ...
         </n3-tab>
       </n3-tabs>
+
+
+      
       <p>胶囊样式 pills</p> 
       <n3-tabs pills>
         <n3-tab header="one">

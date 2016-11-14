@@ -1,19 +1,20 @@
 <template>
-<span >
+<div class="inline">
   <span ref="trigger">
     <slot>
     </slot>
   </span>
-  <div :class="classObj"
-    ref="popover"
-    v-show="show"
-    :transition="effect">
-    <div :class="`${prefixCls}-tooltip-arrow`"></div>
-    <div :class="`${prefixCls}-tooltip-inner`">
-      {{{content}}}
+  <transition :name="effect">
+    <div :class="classObj"
+      ref="popover"
+      v-show="isShow">
+      <div :class="`${prefixCls}-tooltip-arrow`"></div>
+      <div :class="`${prefixCls}-tooltip-inner`">
+        <span v-html="content"></span>
+      </div>
     </div>
-  </div>
-</span>
+  </transition>
+</div>
 </template>
 
 <script>

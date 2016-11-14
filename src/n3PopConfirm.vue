@@ -1,19 +1,19 @@
 <template>
-	<n3-popover 
-		:show.sync="show"
-        :effect="effect"
-        :header="false" 
-        :placement="placement" 
-        trigger="click">
-        <div slot="content">
-            <p>{{content}}</p>
-            <div style="float:right; margin:10px;">
-              <n3-button size="sm" @click="show = false">{{cancelText}}</n3-button>
-              <n3-button size="sm" type="primary" @click="confirm">{{okText}}</n3-button>
-            </div>
-        </div> 
-        <slot></slot>
-      </n3-popover>
+	<n3-popover
+    ref="popover" 
+    :effect="effect"
+    :header="false" 
+    :placement="placement" 
+    trigger="click">
+    <div slot="content">
+        <p>{{content}}</p>
+        <div style="float:right; margin:10px;">
+          <n3-button size="sm" @click.native="$refs.popover.isShow = false">{{cancelText}}</n3-button>
+          <n3-button size="sm" type="primary" @click.native="confirm">{{okText}}</n3-button>
+        </div>
+    </div> 
+    <slot></slot>
+  </n3-popover>
 </template>
 
 <script>
@@ -46,11 +46,6 @@ export default {
       default: '取消'
     }
   },
-  data () {
-    return {
-      show: true
-    }
-  },
 
   methods: {
     confirm () {
@@ -59,14 +54,14 @@ export default {
         let promise = this.onConfirm()
         if (type.isPromise(promise)) {
           promise.then((...args) => {
-            self.show = false
+            self.$refs.popover.isShow = false
             return args
           }).catch((...args) => {
-            self.show = false
+            self.$refs.popover.isShow = false
             return Promise.reject(args)
           })
         } else {
-          self.show = false
+          self.$refs.popover.isShow = false
         }
       }
     }
