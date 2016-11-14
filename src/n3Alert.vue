@@ -1,25 +1,26 @@
 <template>
-  <div
-   v-show="show"
-   :class="classObj"
-    transition="fade"
-    :style="{width:width}">
+  <transition name="fade">
+    <div
+     v-show="show"
+     :class="classObj"
+      :style="{width:width}">
 
-    <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
+      <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
 
-    <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
-      @click="_handleClose" >
-      <span>&times;</span>
-    </button>
+      <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
+        @click="_handleClose" >
+        <span>&times;</span>
+      </button>
 
-    <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
-      <h4>{{message}}</h4>
-      <p><slot></slot></p>
+      <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
+        <h4>{{message}}</h4>
+        <p><slot></slot></p>
+      </div>
+      <span v-else>
+          <slot></slot>
+      </span>
     </div>
-    <span v-else>
-        <slot></slot>
-    </span>
-  </div>
+  </transition>
 </template>
 
 <script>

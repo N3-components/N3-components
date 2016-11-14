@@ -2,50 +2,69 @@
   <div class="bs-docs-section" id="侧边栏"  >
     <h1 class="page-header"><a href="#侧边栏" class="anchor">侧边栏</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-button @click="showLeft = true">左侧栏</n3-button>
+      <n3-button @click.native="openLeft">左侧栏</n3-button>
 
-      <n3-aside :show.sync="showLeft" placement="left" header="Title" width="350px">
+      <n3-aside  placement="left" header="Title" width="350px" ref="asideLeft">
         <h4>左侧侧边栏</h4>
         <p>...</p>
         <p>...</p>
         <p>...</p>
         
-        <n3-button @click="showLeft = close">关闭</n3-button>
+        <n3-button @click.native="closeLeft">关闭</n3-button>
       </n3-aside>
       
-      <n3-button @click="showRight = true">右侧栏</n3-button>
+      <n3-button @click.native="openRight">右侧栏</n3-button>
 
-      <n3-aside :show.sync="showRight" placement="right" header="Title" width="350px">
+      <n3-aside  placement="right" header="Title" width="350px" ref="asideRight">
         <h4>右侧侧边栏</h4>
         <p>...</p>
         <p>...</p>
         <p>...</p>
           
-        <n3-button @click="showRight = false">关闭</n3-button>
+        <n3-button @click.native="closeRight">关闭</n3-button>
       </n3-aside>
       
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-button @click="showLeft = true">左侧栏</n3-button>
-<n3-aside :show.sync="showLeft" placement="left" header="Title" width="350px">
-  <h4>左侧侧边栏</h4>
-  <p>...</p>
-  <p>...</p>
-  <p>...</p>
-  
-  <n3-button @click="showLeft = close">关闭</n3-button>
-</n3-aside>
-
-<n3-button @click="showRight = true">右侧栏</n3-button>
-
-<n3-aside :show.sync="showRight" placement="right" header="Title" width="350px">
-  <h4>右侧侧边栏</h4>
-  <p>...</p>
-  <p>...</p>
-  <p>...</p>
+  <n3-button @click.native="openLeft">左侧栏</n3-button>
+  <n3-aside  placement="left" header="Title" width="350px" ref="asideLeft">
+    <h4>左侧侧边栏</h4>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
     
-  <n3-button  @click="showRight = false">关闭</n3-button>
-</n3-aside>
+    <n3-button @click.native="closeLeft">关闭</n3-button>
+  </n3-aside>
+  
+  <n3-button @click.native="openRight">右侧栏</n3-button>
+
+  <n3-aside  placement="right" header="Title" width="350px" ref="asideRight">
+    <h4>右侧侧边栏</h4>
+    <p>...</p>
+    <p>...</p>
+    <p>...</p>
+      
+    <n3-button @click.native="closeRight">关闭</n3-button>
+  </n3-aside>
+    </script></code></pre>
+
+    <pre><code class="language-markup"><script type="language-mark-up">
+    new Vue({
+      methods: {
+      openLeft () {
+        this.$refs.asideLeft.open()
+      },
+      openRight () {
+        this.$refs.asideRight.open()
+      },
+      closeLeft () {
+        this.$refs.asideLeft.close()
+      },
+      closeRight () {
+        this.$refs.asideRight.close()
+      }
+    }
+    })
     </script></code></pre>
 
     <h2>参数</h2>
@@ -59,12 +78,6 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>show</td>
-          <td><code>Boolean</code></td>
-          <td></td>
-          <td>是否显示组件</td>
-        </tr>
         <tr>
           <td>placement</td>
           <td><code>String</code>, 如:  <code>left</code>, <code>right</code></td>
@@ -102,10 +115,18 @@
 
 <script>
   export default {
-    data () {
-      return {
-        showLeft: false,
-        showRight: false
+    methods: {
+      openLeft () {
+        this.$refs.asideLeft.open()
+      },
+      openRight () {
+        this.$refs.asideRight.open()
+      },
+      closeLeft () {
+        this.$refs.asideLeft.close()
+      },
+      closeRight () {
+        this.$refs.asideRight.close()
       }
     }
   }

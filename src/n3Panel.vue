@@ -9,21 +9,21 @@
         </a>
       </h4>
     </div>
-    <transition :name="$parent.effect">
+    <n3-collapse-transition>
       <div
         :class="`${prefixCls}-panel-collapse`"
-        ref="panel"
-        v-show="open">
+        v-if="open">
         <div :class="`${prefixCls}-panel-body`">
           <slot></slot>
         </div>
       </div>
-    <transition>
+    <n3-collapse-transition>
   </div>
 </template>
 
 <script>
 import type from './utils/type'
+import n3CollapseTransition from './n3CollapseTransition'
 
 export default {
   props: {
@@ -71,10 +71,8 @@ export default {
       }
     }
   },
-  ready () {
-    const panel = this.$refs.panel
-    panel.style.display = 'block'
-    if (!this.open) panel.style.display = 'none'
+  components: {
+    n3CollapseTransition
   }
 }
 </script>

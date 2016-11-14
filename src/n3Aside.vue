@@ -1,21 +1,22 @@
 <template>
-  <div 
-    :style="{width:width}"
-    :class="classObj"
-    v-show="show"
-    :transition="(this.placement === 'left') ? 'slideleft' : 'slideright'">
-    <div :class="`${prefixCls}-aside-dialog`">
-      <div :class="`${prefixCls}-aside-content`">
-        <div :class="`${prefixCls}-aside-header`">
-          <button type="button" :class="`${prefixCls}-close`" @click='close'><span>&times;</span></button>
-          <h4 :class="`${prefixCls}-aside-title`">{{header}}</h4>
-        </div>
-        <div :class="`${prefixCls}-aside-body`">
-          <slot></slot>
+  <transition :name="(this.placement === 'left') ? 'slideleft' : 'slideright'">
+    <div 
+      :style="{width:width}"
+      :class="classObj"
+      v-show="show">
+      <div :class="`${prefixCls}-aside-dialog`">
+        <div :class="`${prefixCls}-aside-content`">
+          <div :class="`${prefixCls}-aside-header`">
+            <button type="button" :class="`${prefixCls}-close`" @click='close'><span>&times;</span></button>
+            <h4 :class="`${prefixCls}-aside-title`">{{header}}</h4>
+          </div>
+          <div :class="`${prefixCls}-aside-body`">
+            <slot></slot>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -26,11 +27,6 @@ import element from './utils/element'
 
 export default {
   props: {
-    show: {
-      type: Boolean,
-      require: true,
-      twoWay: true
-    },
     placement: {
       type: String,
       default: 'right'
@@ -51,6 +47,11 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    }
+  },
+  data () {
+    return {
+      show: false
     }
   },
   computed: {
@@ -99,6 +100,9 @@ export default {
     }
   },
   methods: {
+    open () {
+      this.show = true
+    },
     close () {
       this.show = false
     }

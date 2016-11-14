@@ -58,7 +58,7 @@ import n3Slide from './n3Slide'
 import n3Tree from './n3Tree'
 import n3Card from './n3Card'
 import n3Uploader from './n3Uploader'
-import transition from './transition'
+import n3CollapseTransition from './n3CollapseTransition'
 
 const Components = {
   n3FormItem,
@@ -119,17 +119,14 @@ const Components = {
   n3Tags,
   n3DataTable,
   n3Breadcrumb,
-  n3BreadcrumbItem
+  n3BreadcrumbItem,
+  n3CollapseTransition
 }
 
 const install = function (Vue) {
   for (let i in Components) {
     Vue.component(i, Components[i])
   }
-  
-  // for (let i in transition) {
-  //   Vue.transition(i, transition[i])
-  // }
 
   Vue.mixin({
     methods: {

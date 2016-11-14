@@ -4,39 +4,48 @@
       <a href="#动画" class="anchor">动画</a><span class="author"> </span>
     </h1>
     <div class="bs-example" >
-        <n3-button  @click="show1=!show1">fadeLeft</n3-button>
-        <div v-if="show1" transition="fadeLeft" class="content">
+        <n3-button  @click.native="show1=!show1">fadeLeft</n3-button>
+        <transition name="fadeLeft">
+          <div v-if="show1"  class="content">
+              <h4>Title</h4>
+              <p>...</p>
+              <p>...</p>
+              <p>...</p>
+          </div>
+        </transition>
+
+        <br>
+        <br>
+         <n3-button  @click.native="show2=!show2">fadeDown</n3-button>
+          <transition name="fadeDown">
+            <div v-if="show2" class="content">
             <h4>Title</h4>
             <p>...</p>
             <p>...</p>
             <p>...</p>
-        </div>
+          </div>
+          </transition>
         <br>
         <br>
-         <n3-button  @click="show2=!show2">fadeDown</n3-button>
-        <div v-if="show2" transition="fadeDown" class="content">
-            <h4>Title</h4>
-            <p>...</p>
-            <p>...</p>
-            <p>...</p>
-        </div>
-        <br>
-        <br>
-        <n3-button  @click="show3=!show3">bounce</n3-button>
-        <div v-if="show3" transition="bounce" style="width:100px">
-            <p>提示:作用于尺寸比较小的元素</p>
-        </div>
+        <n3-button  @click.native="show3=!show3">bounce</n3-button>
+        <transition name="bounce">
+          <div v-if="show3" style="width:100px">
+              <p>提示:作用于尺寸比较小的元素</p>
+          </div>
+        </transition>
     </div>
 
 <pre><code class="language-markup"><script type="language-mark-up">
 <!--作用于( v-if , v-show , v-for) 等元素-->
-<n3-button  @click="show=!show">切换</n3-button>
-<div v-if="show" transition="fadeLeft" >
-    <h4>Title</h4>
-    <p>...</p>
-    <p>...</p>
-    <p>...</p>
-</div>
+<n3-button  @click.native="show1=!show1">fadeLeft</n3-button>
+<transition name="fadeLeft">
+  <div v-if="show1"  class="content">
+      <h4>Title</h4>
+      <p>...</p>
+      <p>...</p>
+      <p>...</p>
+  </div>
+</transition>
 </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">
@@ -82,5 +91,6 @@
   .content {
     box-shadow: 1px 1px 10px #ddd;
     padding:10px; 
+    margin-top: 10px;
   }
 </style>

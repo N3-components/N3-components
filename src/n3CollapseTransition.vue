@@ -1,8 +1,17 @@
+<template>
+  <transition
+    name="n3CollapseTransition"
+    @enter="enter"
+    @leave="leave"
+  >
+    <slot></slot>
+  </transition>
+</template>
+<script>
 import velocity from 'velocity-animate'
 
 function animate (node, show, transitionName, done) {
   let ok
-
   function complete () {
     if (!ok) {
       ok = true
@@ -25,16 +34,16 @@ function animate (node, show, transitionName, done) {
 }
 
 export default {
-  collapse: {
+  methods: {
     enter (el, done) {
+      console.log(el, 1)
       return animate(el, false, 'slideDown', done)
     },
-    enterCancelled (el) {
-    },
     leave (el, done) {
+      console.log(el, 2)
       return animate(el, true, 'slideUp', done)
-    },
-    leaveCancelled () {
     }
   }
 }
+</script>
+
