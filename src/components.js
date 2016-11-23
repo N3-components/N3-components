@@ -41,6 +41,7 @@ import n3Column from './n3Column'
 import n3Switch from './n3Switch'
 import n3MultipleInput from './n3MultipleInput'
 import n3SimplePagination from './n3SimplePagination'
+import n3Page from './n3Page'
 import n3Step from './n3Step'
 import n3DataTable from './n3DataTable'
 import n3Loading from './n3Loading'
@@ -84,6 +85,7 @@ const Components = {
   n3Datetimepicker,
   n3Uploader,
   n3Cascader,
+  n3Page,
   n3Label,
   n3Input,
   n3Textarea,

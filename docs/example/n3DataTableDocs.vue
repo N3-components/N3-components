@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div class="bs-docs-section" id="数据表格"  >
     <h1 class="page-header"><a href="#数据表格" class="anchor">数据表格</a><span class="author"> </span></h1>
     <div class="bs-example">
@@ -190,7 +190,7 @@ new Vue({
       }
     }else{
       return {
-        disabled:false
+        disabled:false  
       }
     }
   }
@@ -254,7 +254,8 @@ new Vue({
           <pre><code class="language-javascript">{
   current:5,
   total:10,
-  pagesize:10
+  pagesize:10,
+  pagesizeOpts:[10,20,30,40]
 }</code></pre>
           </td>
         </tr>
@@ -379,7 +380,8 @@ export default {
       pagination: {
         current: 1,
         total: 10,
-        pagesize: 10
+        pagesize: 10,
+        pagesizeOpts: [10,20,25,45]
       },
       filterList: [{
         title: '姓名',

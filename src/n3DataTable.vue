@@ -2,25 +2,25 @@
   <div class="{{prefixCls}}-data-table">
   <div class="{{prefixCls}}-data-table-bar clearfix">
     <n3-select 
-	    class='pull-left'
-	    style="margin-right:10px;"
-	    :multiple="true"
-	    :showselected="false"
-	    v-if="selectCol"
-	    placeholder = "显示的列"
-	    :options="selectOptions" 
-	    :value.sync="selectdCols">
+      class='pull-left'
+      style="margin-right:10px;"
+      :multiple="true"
+      :showselected="false"
+      v-if="selectCol"
+      placeholder = "显示的列"
+      :options="selectOptions" 
+      :value.sync="selectdCols">
     </n3-select>
     <div v-if="filter && filterArr.length" class='pull-left {{prefixCls}}-btn-group'>
       <template v-for="item in filterArr">
         <n3-select 
-	        :multiple = "item.multiple === undefined?true:!!item.multiple"
-	        :search = "item.search === undefined?true:!!item.search"
-	        :extra = "item.extra === undefined?true:!!item.extra"
-	        :showselected="false"
-	        :placeholder = "item.title"
-	        :options="item.options" 
-	        :value.sync="item.value">
+          :multiple = "item.multiple === undefined?true:!!item.multiple"
+          :search = "item.search === undefined?true:!!item.search"
+          :extra = "item.extra === undefined?true:!!item.extra"
+          :showselected="false"
+          :placeholder = "item.title"
+          :options="item.options" 
+          :value.sync="item.value">
         </n3-select>
       </template>  
       <n3-button
@@ -60,8 +60,8 @@
             <tr>
               <th v-if="selection" class="{{prefixCls}}-data-table-row-select">
                   <input v-if="list && list.length" 
-                  	type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
-                  	@change="onCheckAll"/>
+                    type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
+                    @change="onCheckAll"/>
               </th>
               <th v-for="col in initColumns" 
                   :style="{width: col.width}" 
@@ -90,9 +90,9 @@
             <tr v-for="(index,data) in list" track-by="n3Key">
                 <td v-if="selection" class="{{prefixCls}}-row-select">
                    <input type="checkbox" 
-                   	v-model="checkedValues"  
-                   	:value="stringify(data)" @change.stop="onCheckOne($event,data)" 
-                   	v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
+                    v-model="checkedValues"  
+                    :value="stringify(data)" @change.stop="onCheckOne($event,data)" 
+                    v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
                 </td>
                 <td v-for="col in initColumns"
                   :colspan="colspan(col,data)"
@@ -111,27 +111,23 @@
       </table>
     </div>
   </div>
-  <div class='{{prefixCls}}-data-table-bar' v-if="page" >
-    每页&nbsp;<n3-select 
-      :cancelled="false"
-      v-if="page"
-      :options="options" 
-      class="{{prefixCls}}-data-table-page" 
-      :value.sync="pagesize"></n3-select>&nbsp;条
-       共&nbsp;{{pagination.total}}&nbsp;条
-    <div class="pull-right">  
-    <n3-simple-pagination v-if="page" 
-    :total="pagination.total" 
-    :current.sync="pagination.current" 
-    :pagesize="pagination.pagesize" 
-    :on-change="pageChange"
-    ></n3-simple-pagination>
+  <div class='{{prefixCls}}-data-table-bar {{prefixCls}}-data-table-page' v-if="page" >
+    <n3-page
+      v-if="page" 
+      :total="pagination.total" 
+      :current.sync="pagination.current" 
+      :pagesize.sync="pagination.pagesize" 
+      :on-change="pageChange"
+      :show-sizer="true"
+      :show-total="true"
+      :pagesize-opts="pagination.pagesizeOpts">
+    </n3-page>
     </div>
   </div>
   </div>
 </template>
 <script>
-import n3SimplePagination from './n3SimplePagination'
+import n3Page from './n3Page'
 import n3Select from './n3Select'
 import n3Button from './n3Button'
 import n3Icon from './n3Icon'
@@ -193,7 +189,8 @@ export default {
         return {
           total: 0,
           current: 1,
-          pagesize: 10
+          pagesize: 10,
+          pagesizeOpts: [10, 20, 30, 40]
         }
       }
     },
@@ -220,15 +217,8 @@ export default {
       key: 'n3Key',
       mergeMap: {},
       isDisabledAll: false,
-      pagesizeFirst: true,
       filterArr: [],
       filterMap: {},
-      options: [{value: 10, label: 10},
-                {value: 15, label: 15},
-                {value: 25, label: 25},
-                {value: 50, label: 50},
-                {value: 100, label: 100}],
-      pagesize: '',
       query: '',
       searchMap: {},
       list: [],
@@ -250,15 +240,6 @@ export default {
       this.initColumns = copy
       this.compileRender()
     },
-    pagesize (val) {
-      if (this.pagesizeFirst) {
-        this.pagesizeFirst = false
-        return
-      }
-      this.pagination.current = 1
-      this.pagination.pagesize = val
-      this.pageChange()
-    },
     source (val) {
       this.handlerSource()
       this.render()
@@ -270,23 +251,11 @@ export default {
       this.handlerFilter()
     }
   },
-  created () {
-    let a = [10, 15, 25, 50, 100]
-    this.pagesize = this.pagination.pagesize
-
-    if (a.indexOf(this.pagesize) === -1) {
-      a.push(this.pagesize)
-      a = a.sort((a, b) => { return a - b })
-      this.options = a.map((e) => {
-        return {value: e, label: e}
-      })
-    }
-  },
   ready () {
     this.init()
   },
   components: {
-    n3SimplePagination,
+    n3Page,
     n3Select,
     n3Button,
     n3Icon,
@@ -296,7 +265,7 @@ export default {
   computed: {
     checkedRows: {
       get () {
-        return  this.selection.checkRows
+        return this.selection.checkRows
       },
       set (val) {
         let self = this
@@ -362,7 +331,7 @@ export default {
       return JSON.stringify(this.delkey(val))
     },
     delkey (val) {
-       let a = Object.assign({},val)
+      let a = Object.assign({}, val)
       delete a[this.key]
 
       return a
@@ -562,7 +531,7 @@ export default {
       this.handlerFilter()
       this.selectdCols = selectdCols
       this.initColumns = ret
-      this.selectOptions = ret    
+      this.selectOptions = ret  
     },
 
     handlerSource () {
