@@ -250,7 +250,7 @@ new Vue({
           <td>pagination</td>
           <td>Object</td>
           <td></td>
-          <td>设置分页，例如
+          <td>设置分页，<code>.sync</code>例如
           <pre><code class="language-javascript">{
   current:5,
   total:10,

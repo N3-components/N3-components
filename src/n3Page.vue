@@ -221,7 +221,7 @@
           this.current = page
           this.currentPage = page
           if (type.isFunction(this.onChange)) {
-            this.onChange(page)
+            this.onChange(page, this.pagesize)
           }
         }
       },

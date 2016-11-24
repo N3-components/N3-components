@@ -20162,7 +20162,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.current = page;
 	        this.currentPage = page;
 	        if (_type2.default.isFunction(this.onChange)) {
-	          this.onChange(page);
+	          this.onChange(page, this.pagesize);
 	        }
 	      }
 	    },
