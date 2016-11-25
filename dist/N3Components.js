@@ -494,7 +494,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  n3Tags: _n3Tags2.default,
 	  n3DataTable: _n3DataTable2.default,
 	  n3Breadcrumb: _n3Breadcrumb2.default,
-	  n3BreadcrumbItem: _n3BreadcrumbItem2.default
+	  n3BreadcrumbItem: _n3BreadcrumbItem2.default,
+	  transition: _transition2.default
 	};
 	
 	var install = function install(Vue) {

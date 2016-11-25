@@ -121,7 +121,8 @@ const Components = {
   n3Tags,
   n3DataTable,
   n3Breadcrumb,
-  n3BreadcrumbItem
+  n3BreadcrumbItem,
+  transition
 }
 
 const install = function (Vue) {
