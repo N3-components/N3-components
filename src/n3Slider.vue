@@ -5,13 +5,12 @@
         <div :class="`${prefixCls}-slider-track`">
           <div :class="`${prefixCls}-slider-track-low`"></div>
           <div :class="`${prefixCls}-slider-selection`" ref="selection"></div>
-          <div :class="`${prefixCls}-slider-track-high`" ref="no-selection"></div>
-          <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`" ref="min-slider"></div>
-          <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`" ref="max-slider"></div>
+          <div :class="`${prefixCls}-slider-track-high`" ref="noSelection"></div>
+          <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`" ref="minSlider"></div>
+          <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`" ref="maxSlider"></div>
         </div>
       </n3-tooltip>
     </div>
-  <input type="hidden" v-model="value">
   <validate
     :name="name"
     :rules="rules"
@@ -43,7 +42,6 @@ export default {
       default: 'show'
     },
     value: {
-      twoway: true,
       default: 0
     },
     min: {
@@ -97,12 +95,13 @@ export default {
       flag: false,
       tempValue: [0, 0],
       tempFlag: 0,
-      btnValue: 0
+      btnValue: 0,
+      currentValue: this.value
     }
   },
   computed: {
     styleObj () {
-      if (this.orientation == 'horizontal') {
+      if (this.orientation === 'horizontal') {
         return {
           width: this.width
         }
@@ -111,7 +110,6 @@ export default {
           height: this.height
         }
       }
-
     },
     classObj () {
       let {prefixCls, orientation} = this
@@ -127,26 +125,30 @@ export default {
         return this.eValue
       },
       set (val) {
-        if (type.isArray(this.value) && this.range) {
-          this.value = [(Math.min(this.tempValue[0], this.tempValue[1])), (Math.max(this.tempValue[0], this.tempValue[1]))]
+        if (type.isArray(this.currentValue) && this.range) {
+          this.currentValue = [(Math.min(this.tempValue[0], this.tempValue[1])), (Math.max(this.tempValue[0], this.tempValue[1]))]
         } else {
-          this.value = this.tempValue[1]
+          this.currentValue = this.tempValue[1]
         }
       }
     }
   },
   watch: {
     value (val) {
+      this.currentValue = val
+    },
+    currentValue (val) {
       this.setTempValue()
       this.setPosition()
+      this.$emit('input', val)
       if (type.isFunction(this.onChange)) {
-        this.onChange(this.value)
+        this.onChange(val)
       }
     }
   },
   methods: {
     setTempValue () {
-      var val = this.value
+      var val = this.currentValue
       if (type.isArray(val) && this.range) {
         element.removeClass(this.$refs.maxSlider, this.prefixCls + '-slider-hide')
         this.tempValue = val
@@ -168,7 +170,7 @@ export default {
         selection.style.width = Math.abs(this.tempValue[1] - this.tempValue[0]) / (this.max - this.min) * 100 + '%'
         selection.style.left = (Math.min(this.tempValue[0], this.tempValue[1]) - this.min) / (this.max - this.min) * 100 + '%'
 
-        if (type.isArray(this.value) && this.range) {
+        if (type.isArray(this.currentValue) && this.range) {
           tooltip.style.left = (this.tempValue[1] + this.tempValue[0] - 2 * this.min) / ((this.max - this.min) * 2) * rangeSlider.offsetWidth + 'px'
         } else {
           tooltip.style.left = (this.tempValue[1] - this.min) / (this.max - this.min) * rangeSlider.offsetWidth + 'px'
@@ -180,7 +182,7 @@ export default {
         selection.style.height = Math.abs(this.tempValue[1] - this.tempValue[0]) / (this.max - this.min) * 100 + '%'
         selection.style.top = (Math.min(this.tempValue[0], this.tempValue[1]) - this.min) / (this.max - this.min) * 100 + '%'
 
-        if (type.isArray(this.value) && this.range) {
+        if (type.isArray(this.currentValue) && this.range) {
           tooltip.style.top = (this.tempValue[1] + this.tempValue[0] - 2 * this.min) / ((this.max - this.min) * 2) * rangeSlider.offsetHeight + 'px'
         } else {
           tooltip.style.top = (this.tempValue[1] - this.min) / (this.max - this.min) * rangeSlider.offsetHeight + 'px'
@@ -189,7 +191,7 @@ export default {
         tooltip.style.left = 0
       }
 
-      tooltip.querySelectorAll('.' + this.prefixCls + '-tooltip-inner')[0].innerHTML = this.formatter(this.value)
+      tooltip.querySelectorAll('.' + this.prefixCls + '-tooltip-inner')[0].innerHTML = this.formatter(this.currentValue)
     },
     setRange (now, range) {
       return (now < 0) ? 0 : ((now > range) ? range : now)
@@ -280,7 +282,7 @@ export default {
 
       tooltip.style.left = 0
       tooltip.style.top = 0
-      tooltip.querySelectorAll('.' + this.prefixCls + '-tooltip-inner')[0].innerHTML = this.formatter(this.value)
+      tooltip.querySelectorAll('.' + this.prefixCls + '-tooltip-inner')[0].innerHTML = this.formatter(this.currentValue)
 
       if (this.orientation === 'horizontal') {
         element.addClass(tooltip, this.prefixCls + '-slider-top')
@@ -308,8 +310,10 @@ export default {
       this.setPosition()
     }
   },
-  ready () {
-    this.init()
+  mounted () {
+    this.$nextTick(() => {
+      this.init()
+    })
   },
   beforeDestroy () {
     if (this._mousemoveEvent) {

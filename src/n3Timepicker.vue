@@ -4,43 +4,44 @@
       :width="width"
       :name="name" 
       :rules="rules" 
-      :validate="validate" 
       :has-feedback="hasFeedback"
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :readonly="true"
       :disabled="disabled"
-      @click="inputClick"
-      :value.sync="value">
+      @click.native="inputClick"
+      :value="currentValue">
     </n3-input>
-    <div :class="`${prefixCls}-timepicker-popup`" v-show="show" transition="fadeDown">
-      <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
-        <n3-slider 
-          :value.sync="time.hour" 
-          orientation="vertical" 
-          :max="hourRange[1]" :min="hourRange[0]"  
-          :class="`${prefixCls}-timepicker-slider`">
-        </n3-slider>
+    <transition name="fadeDown">
+      <div :class="`${prefixCls}-timepicker-popup`" v-show="show" >
+        <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
+          <n3-slider 
+            v-model="time.hour" 
+            orientation="vertical" 
+            :max="hourRange[1]" :min="hourRange[0]"  
+            :class="`${prefixCls}-timepicker-slider`">
+          </n3-slider>
+        </div>
+        <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
+          <n3-slider 
+            v-model="time.minute" 
+            orientation="vertical" 
+            :max="minuteRange[1]" 
+            :min="minuteRange[0]"  
+            :class="`${prefixCls}-timepicker-slider`">
+          </n3-slider>
+        </div>
+        <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
+          <n3-slider 
+            v-model="time.second" 
+            orientation="vertical" 
+            :max="secondRange[1]" 
+            :min="secondRange[0]" 
+            :class="`${prefixCls}-timepicker-slider`">
+          </n3-slider>
+        </div>
       </div>
-      <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
-        <n3-slider 
-          :value.sync="time.minute" 
-          orientation="vertical" 
-          :max="minuteRange[1]" 
-          :min="minuteRange[0]"  
-          :class="`${prefixCls}-timepicker-slider`">
-        </n3-slider>
-      </div>
-      <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
-        <n3-slider 
-          :value.sync="time.second" 
-          orientation="vertical" 
-          :max="secondRange[1]" 
-          :min="secondRange[0]" 
-          :class="`${prefixCls}-timepicker-slider`">
-        </n3-slider>
-      </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -55,8 +56,7 @@ export default {
   mixins: [inputMixin],
   props: {
     value: {
-      type: String,
-      twoWay: true
+      type: String
     },
     format: {
       type: String,
@@ -100,7 +100,13 @@ export default {
   },
   watch: {
     show (val) {
-      if (!val && type.isFunction(this.onHide)) this.onHide(this.value)
+      if (!val && type.isFunction(this.onHide)) this.onHide(this.currentValue)
+    },
+    value (val) {
+      this.currentValue = val
+    },
+    currentValue (val) {
+      this.$emit('input', val)
     },
     time: {
       deep: true,
@@ -127,7 +133,7 @@ export default {
 
         ret = ret.substr(0, ret.length - 1)
 
-        this.value = ret
+        this.currentValue = ret
       }
     }
   },
@@ -176,13 +182,14 @@ export default {
         hour: 0,
         minute: 0,
         second: 0
-      }
+      },
+      currentValue: this.value
     }
   },
   created () {
-    this._format(this.value)
+    this._format(this.currentValue)
   },
-  ready () {
+  mounted () {
     this._closeEvent = EventListener.listen(window, 'click', (e) => {
       if (!this.$el.contains(e.target)) this.close()
     })

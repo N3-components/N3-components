@@ -3,9 +3,9 @@
     <h1 class="page-header"><a href="#时间选择器" class="anchor">时间选择器</a><span class="author"> </span></h1>
     <div class="bs-example">
 
-       <n3-timepicker :value.sync="value"  format="hh:mm:ss"></n3-timepicker>
+       <n3-timepicker v-model="value"  format="hh:mm:ss"></n3-timepicker>
 
-       <n3-timepicker :value.sync="value1"  format="hh:mm:ss"></n3-timepicker>
+       <n3-timepicker v-model="value1"  format="hh:mm:ss"></n3-timepicker>
      
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">

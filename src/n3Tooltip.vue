@@ -1,5 +1,5 @@
 <template>
-<div class="inline">
+<span>
   <span ref="trigger">
     <slot>
     </slot>
@@ -14,7 +14,7 @@
       </div>
     </div>
   </transition>
-</div>
+</span>
 </template>
 
 <script>
