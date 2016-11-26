@@ -1,43 +1,43 @@
 <template>
-  <div :class="`${prefixCls}-data-table`">
-  <div :class="`${prefixCls}-data-table-bar clearfix`">
+  <div class="{{prefixCls}}-data-table">
+  <div class="{{prefixCls}}-data-table-bar clearfix">
     <n3-select 
-	    class='pull-left'
-	    style="margin-right:10px;"
-	    :multiple="true"
-	    :showselected="false"
-	    v-if="selectCol"
-	    placeholder = "显示的列"
-	    :options="selectOptions" 
-	    :value.sync="selectdCols">
+      class='pull-left'
+      style="margin-right:10px;"
+      :multiple="true"
+      :showselected="false"
+      v-if="selectCol"
+      placeholder = "显示的列"
+      :options="selectOptions" 
+      :value.sync="selectdCols">
     </n3-select>
-    <div v-if="filter && filterArr.length" :class='pull-left ${prefixCls}-btn-group`'>
+    <div v-if="filter && filterArr.length" class='pull-left {{prefixCls}}-btn-group'>
       <template v-for="item in filterArr">
         <n3-select 
-	        :multiple = "item.multiple === undefined?true:!!item.multiple"
-	        :search = "item.search === undefined?true:!!item.search"
-	        :extra = "item.extra === undefined?true:!!item.extra"
-	        :showselected="false"
-	        :placeholder = "item.title"
-	        :options="item.options" 
-	        :value.sync="item.value">
+          :multiple = "item.multiple === undefined?true:!!item.multiple"
+          :search = "item.search === undefined?true:!!item.search"
+          :extra = "item.extra === undefined?true:!!item.extra"
+          :showselected="false"
+          :placeholder = "item.title"
+          :options="item.options" 
+          :value.sync="item.value">
         </n3-select>
       </template>  
       <n3-button
-        :class="`${prefixCls}-data-table-inner-btn`"
+        class="{{prefixCls}}-data-table-inner-btn"
         @click="resetFilter" 
         type="primary">
         <n3-icon type="reply"></n3-icon>
       </n3-button>
        <n3-button
-        :class="`${prefixCls}-data-table-inner-btn`"
+        class="{{prefixCls}}-data-table-inner-btn"
         @click="goFilter" 
         type="primary">
         <n3-icon type="filter"></n3-icon>
       </n3-button>
     </div>
       <n3-button
-        :class="`${prefixCls}-data-table-inner-btn`" 
+        class="{{prefixCls}}-data-table-inner-btn" 
         style="margin-left:10px;"
         @click="refresh"
         v-if="refresh"  
@@ -58,10 +58,10 @@
       <table :class="classObj" >
           <thead>
             <tr>
-              <th v-if="selection" :class="`${prefixCls}-data-table-row-select`">
+              <th v-if="selection" class="{{prefixCls}}-data-table-row-select">
                   <input v-if="list && list.length" 
-                  	type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
-                  	@change="onCheckAll"/>
+                    type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
+                    @change="onCheckAll"/>
               </th>
               <th v-for="col in initColumns" 
                   :style="{width: col.width}" 
@@ -70,7 +70,7 @@
                   :colspan="col.colspan === undefined ? 1 : col.colspan"> 
                   <template v-if="col.show && col.colspan != 0">
                     <span>{{col.title}} </span> 
-                    <div :class="`${prefixCls}-data-table-sort pull-right`" v-if="col.sort" >
+                    <div class="{{prefixCls}}-data-table-sort pull-right" v-if="col.sort" >
                       <n3-icon
                         @click.stop="sort(col,col.sort,'ASC')"
                         :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
@@ -88,11 +88,11 @@
           </thead>
           <tbody>
             <tr v-for="(index,data) in list" track-by="n3Key">
-                <td v-if="selection" :class="`${prefixCls}-row-select`">
+                <td v-if="selection" class="{{prefixCls}}-row-select">
                    <input type="checkbox" 
-                   	v-model="checkedValues"  
-                   	:value="stringify(data)" @change.stop="onCheckOne($event,data)" 
-                   	v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
+                    v-model="checkedValues"  
+                    :value="stringify(data)" @change.stop="onCheckOne($event,data)" 
+                    v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
                 </td>
                 <td v-for="col in initColumns"
                   :colspan="colspan(col,data)"
@@ -111,34 +111,29 @@
       </table>
     </div>
   </div>
-  <div :class='${prefixCls}-data-table-bar' v-if="page" >
-    每页&nbsp;<n3-select 
-      :cancelled="false"
-      v-if="page"
-      :options="options" 
-      :class="`${prefixCls}-data-table-page" 
-      :value.sync="pagesize"></n3-select>&nbsp;条
-       共&nbsp;{{pagination.total}}&nbsp;条
-    <div class="pull-right">  
-    <n3-simple-pagination v-if="page" 
-    :total="pagination.total" 
-    :current.sync="pagination.current" 
-    :pagesize="pagination.pagesize" 
-    :on-change="pageChange"
-    ></n3-simple-pagination>
+  <div class='{{prefixCls}}-data-table-bar {{prefixCls}}-data-table-page' v-if="page" >
+    <n3-page
+      v-if="page" 
+      :total="pagination.total" 
+      :current.sync="pagination.current" 
+      :pagesize.sync="pagination.pagesize" 
+      :on-change="pageChange"
+      :show-sizer="true"
+      :show-total="true"
+      :pagesize-opts="pagination.pagesizeOpts">
+    </n3-page>
     </div>
   </div>
   </div>
 </template>
 <script>
-import n3SimplePagination from './n3SimplePagination'
+import n3Page from './n3Page'
 import n3Select from './n3Select'
 import n3Button from './n3Button'
 import n3Icon from './n3Icon'
 import n3Input from './n3Input'
 import n3Loading from './n3Loading'
 import type from './utils/type'
-
 export default {
   props: {
     selection: {
@@ -193,7 +188,8 @@ export default {
         return {
           total: 0,
           current: 1,
-          pagesize: 10
+          pagesize: 10,
+          pagesizeOpts: [10, 20, 30, 40]
         }
       }
     },
@@ -220,15 +216,8 @@ export default {
       key: 'n3Key',
       mergeMap: {},
       isDisabledAll: false,
-      pagesizeFirst: true,
       filterArr: [],
       filterMap: {},
-      options: [{value: 10, label: 10},
-                {value: 15, label: 15},
-                {value: 25, label: 25},
-                {value: 50, label: 50},
-                {value: 100, label: 100}],
-      pagesize: '',
       query: '',
       searchMap: {},
       list: [],
@@ -250,15 +239,6 @@ export default {
       this.initColumns = copy
       this.compileRender()
     },
-    pagesize (val) {
-      if (this.pagesizeFirst) {
-        this.pagesizeFirst = false
-        return
-      }
-      this.pagination.current = 1
-      this.pagination.pagesize = val
-      this.pageChange()
-    },
     source (val) {
       this.handlerSource()
       this.render()
@@ -270,23 +250,11 @@ export default {
       this.handlerFilter()
     }
   },
-  created () {
-    let a = [10, 15, 25, 50, 100]
-    this.pagesize = this.pagination.pagesize
-
-    if (a.indexOf(this.pagesize) === -1) {
-      a.push(this.pagesize)
-      a = a.sort((a, b) => { return a - b })
-      this.options = a.map((e) => {
-        return {value: e, label: e}
-      })
-    }
-  },
   ready () {
     this.init()
   },
   components: {
-    n3SimplePagination,
+    n3Page,
     n3Select,
     n3Button,
     n3Icon,
@@ -296,7 +264,7 @@ export default {
   computed: {
     checkedRows: {
       get () {
-        return  this.selection.checkRows
+        return this.selection.checkRows
       },
       set (val) {
         let self = this
@@ -308,13 +276,11 @@ export default {
     classObj () {
       let {prefixCls, striped, bordered, hover, responsive} = this
       let klass = {}
-
       klass[prefixCls + '-table'] = true
       klass[prefixCls + '-table-striped'] = striped
       klass[prefixCls + '-table-bordered'] = bordered
       klass[prefixCls + '-table-hover'] = hover
       klass[prefixCls + '-table-responsive'] = responsive
-
       return klass
     },
     isCheckedAll () {
@@ -322,7 +288,6 @@ export default {
       let rows = this.checkebleRows.filter((record) => {
         return self.checkedValues.indexOf(JSON.stringify(record)) > -1
       })
-
       return this.checkebleRows.length === rows.length
     },
     filters () {
@@ -340,13 +305,11 @@ export default {
       let checkedKeys = self.checkedRows.map((record) => {
         return JSON.stringify(record)
       })
-
       return checkedKeys
     },
     checkebleRows () {
       let self = this
       let rows = []
-
       if (self.list && self.list.length) {
         rows = self.list.filter((record) => {
           if (self.selection) {
@@ -362,9 +325,8 @@ export default {
       return JSON.stringify(this.delkey(val))
     },
     delkey (val) {
-       let a = Object.assign({},val)
+      let a = Object.assign({}, val)
       delete a[this.key]
-
       return a
     },
     compare (a,b) {
@@ -380,14 +342,12 @@ export default {
     colspan (col, data) {
       let m = this.mergeRule
       if (!m) return 1
-
       let ret = m[col.dataIndex] && m[col.dataIndex][data[col.dataIndex]]
       return ret ? ret.colspan : 1
     },
     rowspan (col, data) {
       let m = this.mergeRule
       if (!m) return 1
-
       let ret = m[col.dataIndex] && m[col.dataIndex][data[col.dataIndex]]
       return ret ? ret.rowspan : 1
     },
@@ -395,7 +355,6 @@ export default {
       let self = this
       let input = event.srcElement || event.target
       let checked = input.checked
-
       if (checked) {
         let array = self.checkedRows
         if (self.checkedRows.findIndex(item => {return self.compare(item,record)}) === -1) {
@@ -440,7 +399,6 @@ export default {
         self.selection.onSelectAll(checked, self.checkedRows, changeRows)
       }
     },
-
     sortStatus (dataIndex, type) {
       return this.sortInfo.index === dataIndex && this.sortInfo.type === type
     },
@@ -450,19 +408,15 @@ export default {
     sort (col, s, t) {
       let dataIndex = col.dataIndex
       let _type = t || 'DESC'
-
       if (!s) return
-
       if (dataIndex === this.sortInfo.index) {
         _type = t || (this.sortInfo.type === 'DESC' ? 'ASC' : 'DESC')
       }
-
       this.sortInfo = {
         index: dataIndex,
         type: _type,
         method: col.sortMethod
       }
-
       if (this.sort && type.isFunction(this.onChange)) {
         this.tableChange()
       } else {
@@ -506,7 +460,6 @@ export default {
     addFilter (index, value, filterValue) {
       let values = this.filterMap[index] && this.filterMap[index]['values']
       let filter = this.filterMap[index] && this.filterMap[index]['filter']
-
       if (!values[value]) {
         filter['options'].push({value: value, label: value})
         values[value] = true
@@ -515,14 +468,10 @@ export default {
         }
       }
     },
-
     handlerFilter () {
       let s = this.columns
-
       if (!this.filter) return
-
       this.filterMap = {}
-
       if (type.isArray(this.filterList)) {
         this.filterArr = this.filterList
       } else {
@@ -532,19 +481,15 @@ export default {
           }
         }
       }
-
       for (let k = 0; k < this.filterArr.length; k++) {
         this.filterMap[this.filterArr[k]['dataIndex']] = {filter: this.filterArr[k], values: {}}
       }
     },
-
     handlerColumns () {
       let s = this.columns
       let selectdCols = []
       let ret = []
-
       this.filterArr = []
-
       for (let i = 0; i < s.length; i++) {
         let t = Object.assign({}, s[i])
         t['value'] = t['dataIndex']
@@ -553,18 +498,14 @@ export default {
           t['show'] = true
           selectdCols.push(t['value'])
         }
-
-        t['sortType'] || t['sortMethod']? this.sortInfo = {index: t['dataIndex'], type: t['sortType'],method:['sortMethod']} : 0
-
+        t['sortType'] || t['sortMethod'] ? this.sortInfo = {index: t['dataIndex'], type: t['sortType'],method:t['sortMethod']} : 0
         ret[i] = t
       }
-
       this.handlerFilter()
       this.selectdCols = selectdCols
       this.initColumns = ret
-      this.selectOptions = ret    
+      this.selectOptions = ret  
     },
-
     handlerSource () {
       let s = this.source
       let ret = []
@@ -580,7 +521,6 @@ export default {
           filter['filter']['value'] = []
         }
       }
-
       for (let i = 0; i < s.length; i++) {
         let search = ''
         for (let j in s[i]) {
@@ -594,34 +534,28 @@ export default {
         }
        
         ret[i] = Object.assign({}, s[i], {n3Key: i})
-
         if (this.selection) {
           let p = this.selection.getCheckboxProps
           p = p ? p(ret[i]) : null
-
           if (p && p.checked) {
             checkedRows.push(ret[i])
           }
         }
       }
-
       if (this.selection) {
         this.checkedRows = checkedRows
       }
       
       this.initSource = ret
     },
-
     init () {
       this.handlerColumns()
       this.handlerSource()
       this.render()
     },
-
     listSort (arr, field, order, method) {
       let type = 'number'
       order = order === 'ASC' ? 'ASC' : 'DESC'
-
       if (!method) {
         for (let i = 0; i < arr.length; i++) {
           if (typeof arr[i][field] !== 'number') {
@@ -629,14 +563,12 @@ export default {
             break
           }
         }
-
         arr.sort((x, y) => {
           return type === 'string' ? String(x[field]).localeCompare(y[field]) : x[field] - y[field]
         })
       } else {
         arr.sort(method)
       }
-
       if (order === 'DESC') arr.reverse()
     },
     getFilter (index) {
@@ -648,7 +580,6 @@ export default {
           return true
         }
       }
-
       return false
     },
     isFilterEmpty () {
@@ -662,11 +593,9 @@ export default {
     },
     filterRet (a) {
       let ret = []
-
       for (let i = 0; i < a.length; i++) {
         let item = a[i]
         let pass = true
-
         for (let j in item) {
           let filter = this.getFilter(j)
           if (filter && filter['value'].length && !this.inArray(item[j], filter['value'])) {
@@ -682,29 +611,23 @@ export default {
     render () {
       let s = this.initSource
       let ret = this.initSource.slice(0)
-
       if (this.filter && !type.isFunction(this.onChange) && this.filterArr.length > 0 && !this.isFilterEmpty()) {
         ret = this.filterRet(ret)
       }
-
       if (this.search && !type.isFunction(this.onChange) && this.query) {
         ret = []
         for (let i = 0; i < s.length; i++) {
           this.searchMap[s[i][this.key]].indexOf(this.query) !== -1 ? ret.push(s[i]) : 0
         }
       }
-
       if (this.sortInfo.index && !type.isFunction(this.onChange)) {
         this.listSort(ret, this.sortInfo.index, this.sortInfo.type, this.sortInfo.method)
       }
-
       if (this.page && !type.isFunction(this.onChange)) {
         this.pagination.total = ret.length
         ret = ret.slice((this.pagination.current - 1) * this.pagination.pagesize, (this.pagination.current - 1) * this.pagination.pagesize + this.pagination.pagesize)
       }
-
       this.list = ret
-
       this.compileRender()
     },
     compileRender () {

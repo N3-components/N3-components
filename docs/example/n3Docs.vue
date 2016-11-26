@@ -69,7 +69,7 @@ import n3TypeaheadDocs from './n3TypeaheadDocs.vue'
 import n3StepDocs from './n3StepDocs.vue'
 import n3SliderDocs from './n3SliderDocs.vue'
 import n3LoadingDocs from './n3LoadingDocs.vue'
-import n3SimplePaginationDocs from './n3SimplePaginationDocs.vue'
+import n3PageDocs from './n3PageDocs.vue'
 import n3DataTableDocs from './n3DataTableDocs.vue'
 import n3BreadcrumbDocs from './n3BreadcrumbDocs.vue'
 import n3MultipleInputDocs from './n3MultipleInputDocs.vue'
@@ -140,7 +140,7 @@ export default{
         '导航': {show: true,
                 list: [{label: '导航', value: 'n3NavDocs'},
                  {label: '面包屑', value: 'n3BreadcrumbDocs'},
-                 {label: '简易分页', value: 'n3SimplePaginationDocs'},
+                 {label: '分页', value: 'n3PageDocs'},
                  {label: '标签页', value: 'n3TabsDocs'}]},
 
         '其他': {show: true,
@@ -239,7 +239,7 @@ export default{
     n3ProgressbarDocs,
     n3TimelineDocs,
     n3LoadingDocs,
-    n3SimplePaginationDocs,
+    n3PageDocs,
     n3SliderDocs,
     n3CascaderDocs,
     n3MultipleInputDocs,

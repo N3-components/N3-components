@@ -2,11 +2,11 @@
   <div class="bs-docs-section" id="输入框"  >
     <h1 class="page-header"><a href="#输入框" class="anchor">输入框</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-input :value.sync="value" :focused.sync="focused" ></n3-input>
-      <n3-button @click="focused=true">聚焦</n3-button>
+      <n3-input v-model="value" ref="input" ></n3-input>
+      <n3-button @click.native="$refs.input.focused=true">聚焦</n3-button>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-input :value.sync="value" :focused.sync="focused"></n3-input>
+
 <n3-button @click="focused=true">聚焦</n3-button>
     </script></code></pre>
     <br>
@@ -21,22 +21,10 @@
       </thead>
       <tbody>
         <tr>
-          <td>value</td>
-          <td><code>String</code><code>Number</code></td>
-          <td></td>
-          <td>输入的值  <code>.sync</code></td>
-        </tr>
-        <tr>
-          <td>type</td>
+          <td>password</td>
           <td><code>String</code></td>
-          <td>text</td>
-          <td>输入框类型</td>
-        </tr>
-        <tr>
-          <td>focused</td>
-          <td><code>Boolean</code></td>
-          <td></td>
-          <td>聚焦状态  <code>.sync</code></td>
+          <td>false</td>
+          <td>密码输入框</td>
         </tr>
         <tr>
           <td>on-blur</td>
@@ -63,12 +51,10 @@
 </template>
 
 <script>
-
 export default {
   data () {
     return {
-      value: '',
-      focused: false
+      value: 'ds'
     }
   }
 }

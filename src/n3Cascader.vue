@@ -5,23 +5,24 @@
         :width="width"
         :name="name" 
         :rules="rules" 
-        :validate="validate" 
         :has-feedback="hasFeedback"
         :placeholder="placeholder"
         :custom-validate="customValidate"
-        :value.sync="displayValue"
+        :value="displayValue"
         :readonly="true"
         :disabled="disabled"
-        @click="toggleMenus">
+        @click.native="toggleMenus">
       </n3-input>
     </span>
-    <div :class="`${prefixCls}-cascader-menus`" v-show="show" transition="fadeDown">
-      <ul :class="`${prefixCls}-cascader-menu`" v-for="(index, menu) in menus">
-        <li :class="itemClass(index,option)" 
-          v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
-        </li>
-      </ul>
-    </div>
+    <transition name="fadeDown">
+      <div :class="`${prefixCls}-cascader-menus`" v-show="show" >
+        <ul :class="`${prefixCls}-cascader-menu`" v-for="(menu, index) in menus">
+          <li :class="itemClass(index,option)" 
+            v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
+          </li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 <script>
@@ -49,8 +50,7 @@ export default {
       default: 'click'
     },
     value: {
-      type: Array,
-      twoWay: true
+      type: Array
     },
     onChange: {
       type: Function
@@ -74,7 +74,8 @@ export default {
       displayValue: '',
       show: false,
       init: true,
-      inner: false
+      inner: false,
+      currentValue: this.value
     }
   },
   computed: {
@@ -94,7 +95,7 @@ export default {
   created () {
     this.setMenu()
   },
-  ready () {
+  mounted () {
     const el = this.$el
     let self = this
     self._closeEvent = EventListener.listen(window, 'click', (e) => {
@@ -107,7 +108,7 @@ export default {
     options () {
       this.setMenu()
     },
-    value () {
+    currentValue (val) {
       if (this.inner) {
         this.inner = false
         return
@@ -132,8 +133,8 @@ export default {
       self.displayValue = ''
       self.selectedOptions = []
 
-      if (self.value) {
-        self.value.forEach((value, i) => {
+      if (self.currentValue) {
+        self.currentValue.forEach((value, i) => {
           if (self.menus[i] && self.menus[i].length) {
             let option = self.menus[i].filter((option) => {
               return option.value === value
@@ -180,9 +181,9 @@ export default {
       if (this.selectChange || !option.children) {
         self.displayValue = self.displayRender(self.selectedLabel)
         self.inner = true
-        self.value = self.selectedValue
+        self.currentValue = self.selectedValue
         if (type.isFunction(self.onChange) && !this.init) {
-          self.onChange(self.value)
+          self.onChange(self.currentValue)
         }
       }
 

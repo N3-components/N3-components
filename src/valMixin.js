@@ -11,7 +11,6 @@ export default {
     },
     validStatus: {
       type: String,
-      twoway: true,
       default: ''
     }
   },

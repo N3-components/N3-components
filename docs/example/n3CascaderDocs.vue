@@ -2,11 +2,10 @@
   <div class="bs-docs-section" id="级联选择"  >
     <h1 class="page-header"><a href="#级联选择" class="anchor">级联选择</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-cascader :options="options" :on-change="selectChange" :value.sync="value" :select-change="true"></n3-cascader>
-      {{value | json}}
+      <n3-cascader :options="options" :on-change="selectChange" :value="value" :select-change="true"></n3-cascader>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-cascader :options="options" :on-change="selectChange" :value.sync="value" :select-change="true"></n3-cascader>
+
     </script></code></pre>
     <h2>参数</h2>
     <table class="table table-bordered">
@@ -111,24 +110,24 @@ const options = [{
     label: '杭州',
     children: [{
       value: 'xihu',
-      label: '西湖',
-    }],
-  }],
+      label: '西湖'
+    }]
+  }]
 }, {
   value: 'jiangsu',
   label: '江苏',
-  disabled:true,
+  disabled: true,
   children: [{
     value: 'nanjing',
     label: '南京',
     children: [{
       value: 'zhonghuamen',
-      label: '中华门',
-    }],
-  }],
+      label: '中华门'
+    }]
+  }]
 }]
 
-const value = ['zhejiang', 'hangzhou', 'xihu']
+const value = ['zhejiang', 'hangzhou']
 
 export default {
   data () {
@@ -140,8 +139,8 @@ export default {
   ready () {
   },
   methods: {
-    selectChange (selectedValue, option) {
-      console.log(this.value)
+    selectChange (selectedValue) {
+      console.log(selectedValue)
     }
   }
 }

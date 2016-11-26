@@ -1,5 +1,9 @@
 <template>
 <div class="inline">
+  <input 
+    v-show="false"
+    type="checkbox"
+    v-model="currentValue"/>   
   <div  :class="classObj" @click="toggle">
     <div :class="`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`">
       <span :class="`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`" >{{ontext}}</span>
@@ -53,6 +57,11 @@ export default {
   components: {
     validate
   },
+  data () {
+    return {
+      currentValue: this.value
+    }
+  },
   computed: {
     classObj () {
       let {prefixCls, value, disabled} = this
@@ -73,9 +82,10 @@ export default {
   methods: {
     toggle () {
       if (this.disabled) return
-      this.value = !this.value
+      this.currentValue = !this.currentValue
+      this.$emit('input', this.currentValue)
       if (type.isFunction(this.onChange)) {
-        this.onChange(this.value)
+        this.onChange(this.currentValue)
       }
     }
   }

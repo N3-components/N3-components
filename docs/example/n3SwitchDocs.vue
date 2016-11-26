@@ -2,8 +2,8 @@
   <div class="bs-docs-section" id="开关"  >
     <h1 class="page-header"><a href="#开关" class="anchor">开关</a><span class="author"> </span></h1>
     <div class="bs-example">
-      
-      <h3><n3-switch></n3-switch></h3>
+
+      <h3><n3-switch v-model="value"></n3-switch></h3>
       
       <h3><n3-switch ontext="开" offtext="关" :on-change="toggle" ></n3-switch></h3>
 
@@ -65,6 +65,11 @@
 
 <script>
 export default {
+  data () {
+    return {
+      value: false
+    }
+  },
   methods: {
     toggle (state) {
       console.log(state)

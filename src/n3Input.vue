@@ -1,6 +1,7 @@
 <template>
 <div :class="classObj"  :style="{'width':width}">
   <input
+    ref="input"
     autoComplete="off"
     :class="`${prefixCls}-form-control`"
     :style="{'width':width}"
@@ -10,8 +11,10 @@
 		:type="type"
     @blur="blur"
     @focus="focus"
-    v-focus-model="focused"
-    v-model="value"  />
+    @input="update($event.target.value)"
+    v-focus="focused" 
+    :value="value" />
+
   <n3-icon
     type="check" :class="`${prefixCls}-form-control-feedback`"
     v-if='validStatus=="success" && hasFeedback'>
@@ -29,11 +32,11 @@
 
   <validate
     :name="name"
-    :valid-status.sync="validStatus"
+    :valid-status="validStatus"
     :rules="rules"
     :custom-validate="customValidate"
     :value="value"
-    :results.sync="validateResults">
+    :results="validateResults">
   </validate>
 
 </div>
@@ -43,17 +46,16 @@ import type from './utils/type'
 import n3Icon from './n3Icon'
 import inputMixin from './inputMixin'
 import validate from './validate'
-import { focusModel } from 'vue-focus'
+import { focus } from 'vue-focus'
 
 export default {
   mixins: [inputMixin],
   props: {
+    value: {
+      type: [String, Number]
+    },
     readonly: {
       type: Boolean
-    },
-    value: {
-      type: [String, Number],
-      twoway: true
     },
     onChange: {
       type: Function
@@ -72,18 +74,12 @@ export default {
     validate
   },
   directives: {
-    focusModel: focusModel
+    focus: focus
   },
   data () {
     return {
-      validateResults: {}
-    }
-  },
-  watch: {
-    value (val) {
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+      validateResults: {},
+      focused: false
     }
   },
   computed: {
@@ -103,12 +99,20 @@ export default {
   },
 
   methods: {
+    update (val) {
+      this.$emit('input', val)
+      if (type.isFunction(this.onChange)) {
+        this.onChange(val)
+      }
+    },
     blur () {
+      this.focused = false
       if (type.isFunction(this.onBlur)) {
         this.onBlur(this.value)
       }
     },
     focus () {
+      this.focused = true
       if (type.isFunction(this.onFocus)) {
         this.onFocus(this.value)
       }

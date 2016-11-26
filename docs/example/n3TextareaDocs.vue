@@ -2,11 +2,12 @@
   <div class="bs-docs-section" id="文本框"  >
     <h1 class="page-header"><a href="#文本框" class="anchor">文本框</a><span class="author"> </span></h1>
     <div class="bs-example">
-     <n3-textarea :value.sync="value" ></n3-textarea>
+      {{value}}
+     <n3-textarea v-model="value" ></n3-textarea>
     </div>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-textarea :value.sync="value"></n3-textarea>
+
     </script></code></pre>
     <br>
     <table class="table table-bordered">

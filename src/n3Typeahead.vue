@@ -5,27 +5,24 @@
     :width="width"
     :name="name" 
     :rules="rules" 
-    :validate="validate" 
     :has-feedback="hasFeedback"
     :placeholder="placeholder"
     :custom-validate="customValidate"
     :readonly="readonly"
     :disabled="disabled"
-    :value.sync="query"
-    :focused.sync="focused"
+    v-model="query"
     :on-focus="onFocus"
     :on-blur="blur"
-    @input="update"
-    @keydown.esc="show=false"
-    @keydown.up="up"
-    @keydown.down="down"
-    @keydown.enter= "hit(null)"
-    @keydown.esc="reset"
+    @input.native="update"
+    @keydown.native.up="up"
+    @keydown.native.down="down"
+    @keydown.native.enter= "hit(null)"
+    @keydown.native.esc="reset"
   ></n3-input>
   <ul :class="`${prefixCls}-dropdown-menu`" :style="{width: dropdownWidth, maxHeight: dropdownHeight}">
-    <li v-for="item in items" :class="isActive($index)">
-      <a @mousedown.prevent="hit($index)" >
-        {{{render.call(this._context,item)}}}
+    <li v-for="(item,index) in citems" :class="isActive(index)">
+      <a @mousedown.prevent="hit(index)" >
+        <span v-html="render.call(this._context,item)"></span>
       </a>
     </li> 
   </ul>
@@ -40,16 +37,15 @@ import inputMixin from './inputMixin'
 
 export default {
   created () {
-    this.items = this.primitiveData
+    this.citems = this.primitiveData
   },
   mixins: [inputMixin],
   props: {
     readonly: {
       type: Boolean
     },
-    query: {
+    value: {
       type: String,
-      twoway: true,
       default: ''
     },
     data: {
@@ -103,9 +99,13 @@ export default {
   },
   watch: {
     items (val) {
+      this.citems = val
+    },
+    citems (val) {
       this.show = val && !!val.length
     },
     query (val) {
+      this.$emit('input', val)
       if (val.value === '') {
         this.items = []
       }
@@ -115,7 +115,9 @@ export default {
     return {
       show: false,
       noResults: true,
-      current: 0
+      current: 0,
+      query: this.value,
+      citems: this.items
     }
   },
   computed: {
@@ -134,14 +136,14 @@ export default {
   methods: {
     blur () {
       this.show = false
-      if(type.isFunction(this.onBlur)){
+      if (type.isFunction(this.onBlur)) {
         this.onBlur()
       }
     },
     update () {
       let self = this
       if (this.readonly || this.disabled) return
-      setTimeout(()=>{
+      setTimeout(() => {
         if (!self.query) {
           self.reset()
           return false
@@ -150,12 +152,13 @@ export default {
         if (type.isFunction(self.onChange)) {
           self.onChange(self.query)
         } else if (self.data) {
-          self.items = self.primitiveData
+          console.log(self.primitiveData)
+          self.citems = self.primitiveData
         }
-      },100)
+      }, 100)
     },
     reset () {
-      this.items = []
+      this.citems = []
       this.query = ''
       this.loading = false
       this.show = false
@@ -165,16 +168,16 @@ export default {
       return this.current === index ? klass : ''
     },
     hit (index) {
-      if (this.items && this.items.length) {
+      if (this.citems && this.citems.length) {
         index ? this.current = index : ''
-        this.onHit(this.items[this.current], this)
+        this.onHit(this.citems[this.current], this)
       }
     },
     up () {
       if (this.current > 0) this.current--
     },
     down () {
-      if (this.current < this.items.length - 1) this.current++
+      if (this.current < this.citems.length - 1) this.current++
     }
   }
 }

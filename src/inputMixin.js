@@ -25,7 +25,6 @@ export default {
     },
     validStatus: {
       type: String,
-      twoway: true,
       default: ''
     },
     rules: {
@@ -34,11 +33,6 @@ export default {
     hasFeedback: {
       type: Boolean,
       default: true
-    },
-    focused: {
-      type: Boolean,
-      twoway: true,
-      default: false
     }
   }
 }

@@ -7,17 +7,18 @@
     :maxlength="maxLength"
     :style="styleObj"
     :name="name"
+    @input="update($event.target.value)"
     :placeholder="placeholder"
-    v-model="value">
+    :value="value">
   </textarea>
 
   <validate
     :name="name"
-    :valid-status.sync="validStatus"
+    :valid-status="validStatus"
     :rules="rules"
     :custom-validate="customValidate" 
     :value="value"
-    :results.sync="validateResults">
+    :results="validateResults">
   </validate>
 
 </div>
@@ -25,12 +26,12 @@
 
 <script>
   import validate from './validate'
+  import valMixin from './valMixin'
+  import type from './utils/type'
 
   export default {
+    mixins: [valMixin],
     props: {
-      name: {
-        type: String
-      },
       disabled: {
         type: Boolean
       },
@@ -59,32 +60,26 @@
         type: String
       },
       value: {
-        type: String,
-        twoway: true
-      },
-      validStatus: {
-        type: String,
-        twoway: true,
-        default: ''
-      },
-      customValidate: {
-        type: Function
-      },
-      rules: {
-        type: Array
+        type: String
       },
       prefixCls: {
         type: String,
         default: 'n3'
-      }
-    },
-    data () {
-      return {
-        validateResults: {}
+      },
+      onChange: {
+        type: String
       }
     },
     components: {
       validate
+    },
+    methods: {
+      update (val) {
+        this.$emit('input', val)
+        if (type.isFunction(this.onChange)) {
+          this.onChange(val)
+        }
+      }
     },
     computed: {
       styleObj () {
@@ -100,12 +95,8 @@
         return style
       },
       classObj () {
-        let {prefixCls, validStatus} = this
+        let {prefixCl} = this
         let klass = {}
-
-        klass[prefixCls + '-has-error'] = validStatus === 'error'
-        klass[prefixCls + '-has-success'] = validStatus === 'success'
-        klass[prefixCls + '-has-warn'] = validStatus === 'warn'
 
         klass[prefixCls + '-textarea-con'] = true
         klass['inline'] = true

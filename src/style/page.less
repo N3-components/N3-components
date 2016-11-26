@@ -1,0 +1,166 @@
+.@{prefix-cls}-page {
+    &:after {
+        content: '';
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    .@{prefix-cls}-select-group {
+        margin-left: 5px;
+    }
+    input {
+        position: relative;
+        top:1px;
+    }
+    &-item {
+        float: left;
+        min-width: @pageBtnSize;
+        height: @pageBtnSize;
+        line-height: @pageBtnSize - 2px;
+        margin-right: 4px;
+        text-align: center;
+        list-style: none;
+        background-color: @whiteColor;
+        cursor: pointer;
+        font-family: Arial;
+        border: 1px solid @grayColor;
+        border-radius: 4px;
+        transition:all .24s ease;
+
+        a {
+            margin: 0 6px;
+            text-decoration: none;
+            color: @fontColor;
+        }
+
+        &:hover {
+            border-color: @primaryColor;
+            a {
+                color: @primaryColor;
+            }
+        }
+
+        &-active {
+            background-color: @primaryColor;
+            border-color: @primaryColor;
+
+            a, &:hover a {
+                color: @whiteColor;
+            }
+        }
+    }
+
+    &-prev{
+        margin-right: 8px;
+    }
+
+    &-item-jump-prev,
+    &-item-jump-next{
+        margin-right: 4px;
+        i{
+            line-height: @pageBtnSize - 2px;
+        }
+    }
+
+    &-next{
+        margin-left: 4px;
+    }
+
+    &-prev,
+    &-next,
+    &-item-jump-prev,
+    &-item-jump-next {
+        display: inline-block;
+        float: left;
+        min-width: @pageBtnSize;
+        height: @pageBtnSize;
+        line-height: @pageBtnSize - 2px;
+        list-style: none;
+        text-align: center;
+        cursor: pointer;
+        color: @weightGrayColor;
+        font-family: Arial;
+        transition:all .24s ease;
+    }
+
+    &-prev,
+    &-next {
+        background-color: @whiteColor;
+        border:1px solid @grayColor;
+        border-radius: 4px;
+        i {
+            line-height: @pageBtnSize - 2px;
+        }
+        a {
+            color: #666;
+            font-size: 14px;
+        }
+
+        &:hover {
+            border-color: @primaryColor;
+
+            a {
+                color: @primaryColor;
+            }
+        }
+    }
+
+    &-disabled {
+        cursor: not-allowed;
+        i {
+            color: @grayColor;
+        }
+        a {
+            color: @grayColor;
+        }
+        &:hover {
+            border-color: @grayColor;
+            a {
+                color: @grayColor;
+                cursor: not-allowed;
+            }
+        }
+    }
+
+    &-options {
+        float: left;
+        margin-left: 15px;
+        &-sizer {
+            float: left;
+            margin-right: 10px;
+        }
+
+        &-elevator {
+            float: left;
+            height: @pageBtnSize;
+            line-height: @pageBtnSize - 2px;
+        }
+    }
+
+    &-total {
+        float: left;
+        height: @pageBtnSize;
+        line-height: @pageBtnSize - 2px;
+        margin-right: 10px;
+    }
+
+    &-simple &-prev,
+    &-simple &-next {
+        margin: 0;
+        border: 0;
+        height: 24px;
+        line-height: 24px;
+        font-size: 18px;
+    }
+
+    &-simple &-simple-pager {
+        float: left;
+        margin-right: 8px;
+
+        span{
+            padding: 0 8px 0 2px;
+        }
+    }
+}

@@ -2,11 +2,11 @@
   <div class="bs-docs-section" id="数字输入框"  >
     <h1 class="page-header"><a href="#数字输入框" class="anchor">数字输入框</a><span class="author"> </span></h1>
     <div class="bs-example">
-      <n3-input-number :value.sync="value"></n3-input-number>
+      <n3-input-number v-model="value"></n3-input-number>
     </div>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-input-number :value.sync="value"></n3-input-number>
+
     </script></code></pre>
     <br>
     <table class="table table-bordered">
@@ -23,7 +23,7 @@
           <td>value</td>
           <td><code>String</code><code>Number</code></td>
           <td></td>
-          <td>输入的值  <code>.sync</code></td>
+          <td>输入的值</td>
         </tr>
         <tr>
           <td>max</td>

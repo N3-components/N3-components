@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "velocity-animate": "^1.2.3",
-    "vue-focus": "^2.0.0"
+    "vue-focus": "^2.1.0"
   },
   "files": [
     "LICENSE",

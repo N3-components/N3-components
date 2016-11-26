@@ -6,7 +6,7 @@
         本地数据
       </h4>
       <n3-typeahead 
-        :query.sync = "value"
+        v-model="value"
         :data="USstate" 
         placeholder=" 发到"
       ></n3-typeahead>
@@ -41,7 +41,7 @@
   本地数据
 </h4>
 <n3-typeahead 
-  :query.sync = "value"
+  :query = "value"
   :data="USstate" 
   placeholder=" 发到"
 ></n3-typeahead>

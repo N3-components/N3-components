@@ -1,95 +1,94 @@
 <template>
-  <div :class="`${prefixCls}-datepicker">
+  <div :class="`${prefixCls}-datepicker`">
     <n3-input 
-    :width="width"
-    :name="name" 
-    :rules="rules" 
-    :validate="validate" 
-    :has-feedback="hasFeedback"
-    :placeholder="placeholder"
-    :custom-validate="customValidate"
-    :readonly="true"
-    :disabled="disabled"
-    @click="inputClick"
-    :value.sync="value">
+      :width="width"
+      :name="name" 
+      :rules="rules" 
+      :has-feedback="hasFeedback"
+      :placeholder="placeholder"
+      :custom-validate="customValidate"
+      :readonly="true"
+      :disabled="disabled"
+      @click.native="inputClick"
+      :value="currentValue">
     </n3-input>
       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" transition="fadeDown">
-          <div :class="`${prefixCls}-datepicker-inner`">
-              <div :class="`${prefixCls}-datepicker-body`">
-                  <div :class="`${prefixCls}-datepicker-ctrl`">
-                      <span 
-                        :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
-                        @click="preNextMonthClick(0)">&lt;</span>
-                      <span 
-                        :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
-                        @click="preNextMonthClick(1)">&gt;</span>
-                      <p @click="switchMouthView">
-                      {{stringifyDayHeader(currDate)}}
-                      </p>
-                  </div>
-                  <div :class="`${prefixCls}-datepicker-weekRange`">
-                      <span v-for="w in weekRange">{{w}}</span>
-                  </div>
-                  <div :class="`${prefixCls}-datepicker-dateRange`">
-                      <span 
-                        v-for="d in dateRange" :class="d.sclass" 
-                        @click="daySelect(d.date,d.sclass)">
-                        {{d.text}}
-                      </span>
-                  </div>
-              </div>
+        <div :class="`${prefixCls}-datepicker-inner`">
+          <div :class="`${prefixCls}-datepicker-body`">
+            <div :class="`${prefixCls}-datepicker-ctrl`">
+              <span 
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+                @click="preNextMonthClick(0)">&lt;</span>
+              <span 
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+                @click="preNextMonthClick(1)">&gt;</span>
+              <p @click="switchMouthView">
+              {{stringifyDayHeader(currDate)}}
+              </p>
+            </div>
+            <div :class="`${prefixCls}-datepicker-weekRange`">
+              <span v-for="w in weekRange">{{w}}</span>
+            </div>
+            <div :class="`${prefixCls}-datepicker-dateRange`">
+              <span 
+                v-for="d in dateRange" :class="d.sclass" 
+                @click="daySelect(d.date,d.sclass)">
+                {{d.text}}
+              </span>
+            </div>
           </div>
+        </div>
       </div>
       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayMouthView" >
         <div :class="`${prefixCls}-datepicker-inner`">
-            <div :class="`${prefixCls}-datepicker-body`">
-                <div :class="`${prefixCls}-datepicker-ctrl`">
-                    <span 
-                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
-                      @click="preNextYearClick(0)">&lt;</span>
-                    <span 
-                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
-                      @click="preNextYearClick(1)">&gt;</span>
-                    <p @click="switchDecadeView">
-                    {{stringifyYearHeader(currDate)}}
-                    </p>
-                </div>
-                <div :class="`${prefixCls}-datepicker-mouthRange`">
-                	<template v-for="m in mouthNames">
-	                    <span   
-                          :class="monthClassObj(m)"
-                          @click="mouthSelect($index)">
-	                      {{m.substr(0,3)}}
-	                    </span>
-                    </template>
-                </div>
+          <div :class="`${prefixCls}-datepicker-body`">
+            <div :class="`${prefixCls}-datepicker-ctrl`">
+              <span 
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+                @click="preNextYearClick(0)">&lt;</span>
+              <span 
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+                @click="preNextYearClick(1)">&gt;</span>
+              <p @click="switchDecadeView">
+              {{stringifyYearHeader(currDate)}}
+              </p>
             </div>
+            <div :class="`${prefixCls}-datepicker-mouthRange`">
+            	<template v-for="m in mouthNames">
+                <span   
+                  :class="monthClassObj(m)"
+                  @click="mouthSelect($index)">
+                  {{m.substr(0,3)}}
+                </span>
+              </template>
+            </div>
+          </div>
         </div>
       </div>
       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayYearView" >
         <div :class="`${prefixCls}-datepicker-inner`">
-            <div :class="`${prefixCls}-datepicker-body`">
-                <div :class="`${prefixCls}-datepicker-ctrl`">
-                    <span 
-                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
-                      @click="preNextDecadeClick(0)">&lt;</span>
-                    <span 
-                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
-                      @click="preNextDecadeClick(1)">&gt;</span>
-                    <p>
-                    {{stringifyDecadeHeader(currDate)}}
-                    </p>
-                </div>
-                <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
-                	<template v-for="decade in decadeRange">
-                		<span 
-                      :class="yearClassObj(decade)"
-	                    @click.stop="yearSelect(decade.text)">
-	                      {{decade.text}}
-	                 	</span>
-					        </template>
-                </div>
+          <div :class="`${prefixCls}-datepicker-body`">
+            <div :class="`${prefixCls}-datepicker-ctrl`">
+              <span 
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+                @click="preNextDecadeClick(0)">&lt;</span>
+              <span 
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+                @click="preNextDecadeClick(1)">&gt;</span>
+              <p>
+              {{stringifyDecadeHeader(currDate)}}
+              </p>
             </div>
+            <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
+            	<template v-for="decade in decadeRange">
+            		<span 
+                  :class="yearClassObj(decade)"
+                  @click.stop="yearSelect(decade.text)">
+                  {{decade.text}}
+               	</span>
+			        </template>
+            </div>
+          </div>
         </div>
       </div>
 </div>
@@ -105,8 +104,7 @@ export default {
   mixins: [inputMixin],
   props: {
     value: {
-      type: String,
-      twoWay: true
+      type: String
     },
     format: {
       default: 'yyyy-MM-dd'
@@ -127,7 +125,8 @@ export default {
   },
   data () {
     return {
-      today: this.stringify(new Date()),
+      currentValue: this.value,
+      today: '',
       weekRange: ['日', '一', '二', '三', '四', '五', '六'],
       dateRange: [],
       decadeRange: [],
@@ -145,28 +144,29 @@ export default {
     currDate () {
       this.getDateRange()
     },
-    value (val) {
+    currentValue (val) {
+      this.$emit('input', val)
       if (type.isFunction(this.onChange)) {
-        this.onChange(this.value)
+        this.onChange(this.currentValue)
       }
     }
   },
   methods: {
     monthClassObj (m) {
-      let {prefixCls, value, mouthNames, parse, currDate} = this
+      let {prefixCls, currentValue, mouthNames, parse, currDate} = this
       let klass = {}
 
       klass[prefixCls + '-datepicker-dateRange-item-active'] =
-      value && parse(value) && mouthNames[parse(value).getMonth()] === m && currDate.getFullYear() === parse(value).getFullYear()
+      currentValue && parse(currentValue) && mouthNames[parse(currentValue).getMonth()] === m && currDate.getFullYear() === parse(currentValue).getFullYear()
 
       return klass
     },
     yearClassObj (decade) {
-      let {prefixCls, value, parse} = this
+      let {prefixCls, currentValue, parse} = this
       let klass = {}
 
       klass[prefixCls + '-datepicker-dateRange-item-active'] =
-      value && parse(value) && parse(value).getFullYear() === decade.text
+      currentValue && parse(currentValue) && parse(currentValue).getFullYear() === decade.text
 
       return klass
     },
@@ -226,7 +226,7 @@ export default {
         return false
       } else {
         this.currDate = date
-        this.value = this.stringify(this.currDate)
+        this.currentValue = this.stringify(this.currDate)
         this.displayDayView = false
       }
     },
@@ -344,8 +344,8 @@ export default {
         })
 
         if (i === time.day) {
-          if (this.value) {
-            const valueDate = this.parse(this.value)
+          if (this.currentValue) {
+            const valueDate = this.parse(this.currentValue)
             if (valueDate) {
               if (valueDate.getFullYear() === time.year && valueDate.getMonth() === time.month) {
                 sclass = this.prefixCls + '-datepicker-dateRange-item-active'
@@ -377,8 +377,11 @@ export default {
   components: {
     n3Input
   },
-  ready () {
-    this.currDate = this.parse(this.value) || this.parse(new Date())
+  created () {
+    this.today = this.stringify(new Date())
+  },
+  mounted () {
+    this.currDate = this.parse(this.currentValue) || this.parse(new Date())
     this._closeEvent = EventListener.listen(window, 'click', (e) => {
       if (!this.$el.contains(e.target)) this.close()
     })

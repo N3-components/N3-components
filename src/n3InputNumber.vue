@@ -29,19 +29,17 @@
   <div :class="prefixCls + '-input-number-input-wrap'">
     <n3-input
       :on-focus="onFocus"
-      :on-blur="onBlur" 
       :width="width"
       :rules="rules" 
-      :validate="validate"
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :on-blur="_onBlur"
-      @keydown.stop="_onKeyDown"
+      @keydown.native.stop="_onKeyDown"
       :on-change="_onChange"
       :readonly="readonly"
       :disabled="disabled"
       :name="name"
-      :value.sync="value">
+      :value="currentValue">
     </n3-input> 
   </div>
 </div>
@@ -97,8 +95,7 @@ export default {
       type: Number
     },
     value: {
-      type: [Number, String],
-      twoway: true
+      type: [Number, String]
     },
     step: {
       type: Number,
@@ -114,11 +111,22 @@ export default {
   },
 
   data () {
+    let value = this.value
+    if (value < this.min) {
+      this.$emit('input', this.min)
+      value = this.min
+    }
+    if (value > this.max) {
+      this.$emit('input', this.max)
+      value = this.max
+    }
+
     return {
       noop: () => {},
       preventDefault: preventDefault,
       upDisabledClass: '',
-      downDisabledClass: ''
+      downDisabledClass: '',
+      currentValue: value
     }
   },
 
@@ -142,6 +150,9 @@ export default {
   },
 
   watch: {
+    currentValue (val) {
+      this.$emit('input',val)
+    },
     value (val) {
       if (isValueNumber(val)) {
         val = Number(val)
@@ -162,7 +173,7 @@ export default {
 
   methods: {
     _setValue (value) {
-      this.value = value
+      this.currentValue = value
       if (type.isFunction(this.onChange)) {
         this.onChange(value)
       }
@@ -180,7 +191,7 @@ export default {
         this._setValue(val)
       } else if (val === '-') {
         if (this.min >= 0) return
-        this.value = val
+        this.currentValue = val
       }
     },
 
@@ -195,6 +206,9 @@ export default {
     _onBlur () {
       if (this.value === '-') {
         this._setValue('')
+      }
+      if (type.isFunction(this.onBlur)) {
+        this.onBlur()
       }
     },
 

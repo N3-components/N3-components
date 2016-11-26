@@ -20,26 +20,26 @@
         This is the default style.
       </n3-alert>
       <br>
-      <n3-alert type="success" show="true">
+      <n3-alert type="success" :show="true">
         <strong>Well Done!</strong>
         You successfully read this important alert message.
       </n3-alert>
       <br>
-      <n3-alert type="info" show="true">
+      <n3-alert type="info" :show="true">
         <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
       </n3-alert>
       <br>
-      <n3-alert type="danger" dismissable show="true">
+      <n3-alert type="danger" dismissable :show="true">
         <strong>Oh snap!</strong> Change a few things up and try submitting again.
       </n3-alert>
       <br>
-      <n3-alert type="warning" dismissable show="true">
+      <n3-alert type="warning" dismissable :show="true">
         <strong>Warning!</strong> Better check yourself, you're not looking too good.
         <hr>
       </n3-alert>
       <br>
       <n3-alert
-        show="true"
+        :show="true"
         type="success"
         width="700px"
         message="信息提示"
@@ -48,7 +48,7 @@
       </n3-alert>
       <br>
       <n3-alert
-        show="true"
+        :show="true"
         type="danger"
         width="700px"
         message="错误提示"
@@ -58,7 +58,7 @@
       </n3-alert>
       <br>
       <n3-alert
-        show="true"
+        :show="true"
         type="info"
         width="700px"
         message="错误提示"
@@ -127,7 +127,7 @@
       </n3-alert>
       <br>
       <n3-alert
-        show="true"
+        :show="true"
         type="success"
         width="700px"
         message="信息提示"
@@ -136,7 +136,7 @@
       </n3-alert>
       <br>
       <n3-alert
-        show="true"
+        :show="true"
         type="danger"
         width="700px"
         message="错误提示"
