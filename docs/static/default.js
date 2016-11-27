@@ -11896,7 +11896,10 @@
 	//   <div class="bs-docs-section" id="级联选择"  >
 	//     <h1 class="page-header"><a href="#级联选择" class="anchor">级联选择</a><span class="author"> </span></h1>
 	//     <div class="bs-example">
-	//       <n3-cascader :options="options" :on-change="selectChange" :value="value" :select-change="true"></n3-cascader>
+	//     {{value | json}}
+	//       <n3-cascader :options="options" :on-change="selectChange" v-model="value" :select-change="true"></n3-cascader>
+	//     }
+	//     }
 	//     </div>
 	//     <pre><code class="language-markup"><script type="language-mark-up">
 	
@@ -12034,7 +12037,7 @@
 	
 	  methods: {
 	    selectChange: function selectChange(selectedValue) {
-	      console.log(selectedValue);
+	      console.log(this.value);
 	    }
 	  }
 	};
@@ -12048,7 +12051,7 @@
 /* 505 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"级联选择\"  >\n    <h1 class=\"page-header\"><a href=\"#级联选择\" class=\"anchor\">级联选择</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-cascader :options=\"options\" :on-change=\"selectChange\" :value=\"value\" :select-change=\"true\"></n3-cascader>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td><pre><code class=\"language-javascript\">\n[{\n  value: 'zhejiang',\n  label: '浙江',\n  children: [{\n    value: 'hangzhou',\n    label: '杭州',\n    children: [{\n      value: 'xihu',\n      label: '西湖',\n    }],\n  }],\n}, {\n  value: 'jiangsu',\n  label: '江苏',\n  disabled:true,\n  children: [{\n    value: 'nanjing',\n    label: '南京',\n    children: [{\n      value: 'zhonghuamen',\n      label: '中华门',\n    }],\n  }],\n}]\n          </code></pre></td>\n        </tr>\n        <tr>\n          <td>value</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td><code>200px</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>placeholder</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>display-render</td>\n          <td><code>Function</code></td>\n          <td><pre><code class=\"language-javascript\">\nfunction(label){\n  return label.join(' / ')\n}\n          </code></pre></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>select-change</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>选择值就改变</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化时候后触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"级联选择\"  >\n    <h1 class=\"page-header\"><a href=\"#级联选择\" class=\"anchor\">级联选择</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n    {{value | json}}\n      <n3-cascader :options=\"options\" :on-change=\"selectChange\" v-model=\"value\" :select-change=\"true\"></n3-cascader>\n    }\n    }\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>options</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td><pre><code class=\"language-javascript\">\n[{\n  value: 'zhejiang',\n  label: '浙江',\n  children: [{\n    value: 'hangzhou',\n    label: '杭州',\n    children: [{\n      value: 'xihu',\n      label: '西湖',\n    }],\n  }],\n}, {\n  value: 'jiangsu',\n  label: '江苏',\n  disabled:true,\n  children: [{\n    value: 'nanjing',\n    label: '南京',\n    children: [{\n      value: 'zhonghuamen',\n      label: '中华门',\n    }],\n  }],\n}]\n          </code></pre></td>\n        </tr>\n        <tr>\n          <td>value</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td><code>200px</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>disabled</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>placeholder</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>display-render</td>\n          <td><code>Function</code></td>\n          <td><pre><code class=\"language-javascript\">\nfunction(label){\n  return label.join(' / ')\n}\n          </code></pre></td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>select-change</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>选择值就改变</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化时候后触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
 /* 506 */
@@ -29401,11 +29404,16 @@
 	    options: function options() {
 	      this.setMenu();
 	    },
+	    value: function value(val) {
+	      this.currentValue = val;
+	    },
 	    currentValue: function currentValue(val) {
 	      if (this.inner) {
 	        this.inner = false;
 	        return;
 	      }
+	      console.log(val);
+	      this.$emit('input', val);
 	      this.setResult();
 	    }
 	  },

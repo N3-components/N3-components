@@ -108,11 +108,16 @@ export default {
     options () {
       this.setMenu()
     },
+    value (val) {
+      this.currentValue = val
+    },
     currentValue (val) {
       if (this.inner) {
         this.inner = false
         return
       }
+      console.log(val)
+      this.$emit('input', val)
       this.setResult()
     }
   },
