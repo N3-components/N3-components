@@ -2,10 +2,8 @@
   <div class="bs-docs-section" id="级联选择"  >
     <h1 class="page-header"><a href="#级联选择" class="anchor">级联选择</a><span class="author"> </span></h1>
     <div class="bs-example">
-    {{value | json}}
+    {{value}}
       <n3-cascader :options="options" :on-change="selectChange" v-model="value" :select-change="true"></n3-cascader>
-    }
-    }
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 

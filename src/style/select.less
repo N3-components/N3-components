@@ -1,5 +1,22 @@
 .@{prefix-cls}-select-group{
 
+  .@{prefix-cls}-selected-tag {
+    background: @lightColor;
+    padding: 3px 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    &:after{
+      content: "\F00D";
+      font: normal normal normal 14px/1 FontAwesome;
+      margin-left: 5px;
+      color: @grayColor;
+    }
+  }
+   .@{prefix-cls}-select-btn:hover {
+    color:@fontColor!important;
+  }
+
   .@{prefix-cls}-select-search input{
     border: 0px;
     border-bottom: 1px solid @lightGrayColor;
@@ -42,10 +59,19 @@
   }
 
   .@{prefix-cls}-dropdown-toggle{
-    overflow: hidden;
-    word-break: break-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    text-align: left;
+    display: flex;
+    align-items: center; 
+    & > i {
+      position: relative;
+      left: 5px;
+    }
+    & > span{
+      display: flex; 
+      flex-wrap: wrap; 
+      align-items: flex-start; 
+      align-content: flex-start; 
+    }
   }
   
 }

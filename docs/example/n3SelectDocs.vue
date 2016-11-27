@@ -7,7 +7,7 @@
 Select data : {{single}}
         </pre>
       </p>
-      <n3-select :value.sync="single" :badge="5">
+      <n3-select v-model="single" :badge="5">
         <n3-option value="Apple">Apple</n3-option>
         <n3-option value="Banana">Banana</n3-option>
         <n3-option value="Cherry">Cherry</n3-option>
@@ -21,7 +21,7 @@ Select data : {{single}}
 Select data : {{multiple.join(', ')}}
         </pre>
       </p>
-      <n3-select multiple :value.sync="multiple" search>
+      <n3-select multiple v-model="multiple" search>
         <n3-option value="Apple">Apple</n3-option>
         <n3-option value="Banana">Banana</n3-option>
         <n3-option value="Cherry">Cherry</n3-option>
@@ -35,7 +35,7 @@ Select data : {{multiple.join(', ')}}
 Select data : {{multipleLimit.join(', ')}}
         </pre>
       </p>
-      <n3-select multiple :limit="2" :value.sync="multipleLimit" search extra>
+      <n3-select multiple :limit="2" v-model="multipleLimit" search extra>
         <n3-option value="Apple">Apple</n3-option>
         <n3-option value="Banana">Banana</n3-option>
         <n3-option value="Cherry">Cherry</n3-option>
@@ -49,11 +49,11 @@ Select data : {{multipleLimit.join(', ')}}
 Select data : {{custom.join(', ')}}
         </pre>
       </p>
-      <n3-select multiple :value.sync="custom" >
-        <n3-option value="Star"><span  class="fa fa-star"></span> Star</n3-option>
-        <n3-option value="Heart"><span class="fa fa-heart"></span> Heart</n3-option>
-        <n3-option value="Film"><span  class="fa fa-film"></span> Film</n3-option>
-        <n3-option value="Inbox"><span class="fa fa-inbox"></span> Inbox</n3-option>
+      <n3-select multiple v-model="custom" >
+        <n3-option value="Star"><span  class="n3-fa n3-fa-star"></span> Star</n3-option>
+        <n3-option value="Heart"><span class="n3-fa n3-fa-heart"></span> Heart</n3-option>
+        <n3-option value="Film"><span  class="n3-fa n3-fa-film"></span> Film</n3-option>
+        <n3-option value="Inbox"><span class="n3-fa n3-fa-inbox"></span> Inbox</n3-option>
       </n3-select>
       <hr />
       <h4>传递数组，支持搜索</h4>
@@ -63,43 +63,11 @@ Select data : {{custom.join(', ')}}
 Select data : {{arr}}
         </pre>
       </p>
-      <n3-select :value.sync="arr" :options="fruitOptions" :search="true" multiple extra >
+      <n3-select :value.sync="arr" :options="fruitOptions" :search="true" multiple extra width="200px">
       </n3-select>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-select>
-  <n3-option value="Apple">Apple</n3-option>
-  <n3-option value="Banana">Banana</n3-option>
-  <n3-option value="Cherry">Cherry</n3-option>
-  <n3-option value="Orange">Orange</n3-option>
-  <n3-option value="Grape">Grape</n3-option>
-</n3-select>
-<hr>
-<n3-select multiple>
-  <n3-option value="Apple">Apple</n3-option>
-  <n3-option value="Banana">Banana</n3-option>
-  <n3-option value="Cherry">Cherry</n3-option>
-  <n3-option value="Orange">Orange</n3-option>
-  <n3-option value="Grape">Grape</n3-option>
-</n3-select>
-<hr>
-<n3-select multiple :limit="2">
-  <n3-option value="Apple">Apple</n3-option>
-  <n3-option value="Banana">Banana</n3-option>
-  <n3-option value="Cherry">Cherry</n3-option>
-  <n3-option value="Orange">Orange</n3-option>
-  <n3-option value="Grape">Grape</n3-option>
-</n3-select>
-<hr>
-<n3-select multiple>
-  <n3-option value="Star"><span slot="span" class="fa fa-star"></span> Star</n3-option>
-  <n3-option value="Heart"><span slot="span" class="fa fa-heart"></span> Heart</n3-option>
-  <n3-option value="Film"><span slot="span" class="fa fa-film"></span> Film</n3-option>
-  <n3-option value="Inbox"><span slot="span" class="fa fa-inbox"></span> Inbox</n3-option>
-</n3-select>
 
-<n3-select :value.sync="arr" :options="fruitOptions" :search="true" >
-</n3-select>
     </script></code></pre>
     <pre><code class="language-javascript"><script type="language-javascript">
 fruitOptions = [

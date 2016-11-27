@@ -116,8 +116,6 @@ export default {
         this.inner = false
         return
       }
-      console.log(val)
-      this.$emit('input', val)
       this.setResult()
     }
   },
@@ -187,6 +185,7 @@ export default {
         self.displayValue = self.displayRender(self.selectedLabel)
         self.inner = true
         self.currentValue = self.selectedValue
+        this.$emit('input', self.currentValue)
         if (type.isFunction(self.onChange) && !this.init) {
           self.onChange(self.currentValue)
         }

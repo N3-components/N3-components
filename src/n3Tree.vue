@@ -239,9 +239,9 @@ export default {
      * @return {Boolean}
      */
     hasSelectedChild (index) {
-      if (!this.checkable) {
-        return false
-      }
+      // if (!this.checkable) {
+      //   return false
+      // }
       for (let i in this.$children) {
         if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) {
           return true
