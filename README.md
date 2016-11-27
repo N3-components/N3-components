@@ -87,7 +87,7 @@ Contribute
 
 [Contribute](https://github.com/N3-components/N3-components/blob/master/contribute.md)
 
-Change logo
+Change log
 --------
 
 [Change Log](https://github.com/N3-components/N3-components/blob/master/log.md)
