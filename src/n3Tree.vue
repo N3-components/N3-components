@@ -73,7 +73,8 @@ export default {
       default: 'n3'
     },
     selectedKey: {
-      type: [String, Number]
+      type: [String, Number],
+      twoway: true
     },
     checkable: {
       type: Boolean,
@@ -239,9 +240,9 @@ export default {
      * @return {Boolean}
      */
     hasSelectedChild (index) {
-      if (!this.checkable) {
-        return false
-      }
+      // if (!this.checkable) {
+      //   return false
+      // }
       for (let i in this.$children) {
         if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) {
           return true
@@ -256,7 +257,7 @@ export default {
      * @return {Boolean}
      */
     isSelected (value) {
-      return this.selectedKey !== undefined && this.selectedKey === value
+      return this.selectedKey !== undefined && this.selectedKey == value
     },
 
     /**
@@ -265,8 +266,7 @@ export default {
      * @return {Boolean}
      */
     isOpened (index) {
-      return (this.data[index].isOpened !== undefined && this.data[index].isOpened) || this.hasSelectedChild(
-        index)
+      return (this.data[index].isOpened !== undefined && this.data[index].isOpened) || this.hasSelectedChild(index)
     },
 
     /**

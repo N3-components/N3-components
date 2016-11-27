@@ -21925,7 +21925,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      default: 'n3'
 	    },
 	    selectedKey: {
-	      type: [String, Number]
+	      type: [String, Number],
+	      twoway: true
 	    },
 	    checkable: {
 	      type: Boolean,
@@ -22100,9 +22101,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @return {Boolean}
 	     */
 	    hasSelectedChild: function hasSelectedChild(index) {
-	      if (!this.checkable) {
-	        return false;
-	      }
+	      // if (!this.checkable) {
+	      //   return false
+	      // }
 	      for (var i in this.$children) {
 	        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) {
 	          return true;
@@ -22118,7 +22119,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @return {Boolean}
 	     */
 	    isSelected: function isSelected(value) {
-	      return this.selectedKey !== undefined && this.selectedKey === value;
+	      return this.selectedKey !== undefined && this.selectedKey == value;
 	    },
 	
 	

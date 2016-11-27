@@ -35,4 +35,8 @@ v1.2.x
 + 新增page组件
 + datatable 分页部分升级
 
+#### v1.2.8
+
++ 修复tree选择bug
++ exports transition
 
