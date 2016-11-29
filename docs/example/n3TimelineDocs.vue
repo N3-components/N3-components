@@ -13,6 +13,11 @@
             出现异常
         </n3-timeline-item>
       </n3-timeline>
+
+      <n3-timeline
+        :value="value">
+      </n3-timeline>  
+
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 <n3-timeline>
@@ -108,15 +113,18 @@ export default {
       value: [{
         icon: 'check-circle-o',
         color: 'green',
-        content: `<a>创建成功</a>`
+        content: `<a @click="del">创建成功</a>`
       }, {
-        content: '通过审核'
+        content: '<span>通过审核</span>'
       }, {
-        content: '出现异常'
+        content: '<span>出现异常</span>'
       }]
     }
   },
   methods: {
+    del () {
+      alert(2)
+    }
   },
   watch: {
 

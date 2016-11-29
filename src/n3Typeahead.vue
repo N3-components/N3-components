@@ -20,9 +20,9 @@
     @keydown.native.esc="reset"
   ></n3-input>
   <ul :class="`${prefixCls}-dropdown-menu`" :style="{width: dropdownWidth, maxHeight: dropdownHeight}">
-    <li v-for="(item,index) in citems" :class="isActive(index)">
+    <li v-for="(item,index) in citems" :class="isActive(index)" >
       <a @mousedown.prevent="hit(index)" >
-        <span v-html="render.call(this._context,item)"></span>
+        <render :context="context || $parent._self" :template="render(item)"></render>
       </a>
     </li> 
   </ul>
@@ -32,6 +32,7 @@
 
 <script>
 import n3Input from './n3Input'
+import render from './render'
 import type from './utils/type'
 import inputMixin from './inputMixin'
 
@@ -50,6 +51,8 @@ export default {
     },
     data: {
       type: Array
+    },
+    context: {
     },
     render: {
       type: Function,
@@ -131,7 +134,8 @@ export default {
     }
   },
   components: {
-    n3Input
+    n3Input,
+    render
   },
   methods: {
     blur () {

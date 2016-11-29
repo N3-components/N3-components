@@ -7,11 +7,11 @@
         @click="prev">
         <n3-icon type="angle-left"></n3-icon>
       </li>
-      <div :class="simplePagerClasses" :title="current + '/' + allPages">
+      <div :class="simplePagerClasses" :title="currentPage + '/' + allPages">
         <n3-input
           width="50px"
-          @keyup.enter="goPage" 
-          :value.sync="currentPage">
+          @keyup.native.enter="goPage" 
+          v-model="currentPage">
         </n3-input>  
         <span>/</span>
         {{ allPages }}
@@ -34,13 +34,13 @@
           <n3-icon type="angle-left"></n3-icon>
       </li>
       <li title="第一页" :class="firstPageClasses" @click="changePage(1)"><a>1</a></li>
-      <li title="向前 5 页" v-if="current - 3 > 1" :class="[prefixCls + '-page-item-jump-prev']" @click="fastPrev"><a><n3-icon type="ellipsis-h" @mouseenter="preventer" @mouseleave="leave" ></n3-icon></a></li>
-      <li :title="current - 2" v-if="current - 2 > 1" :class="[prefixCls + '-page-item']" @click="changePage(current - 2)"><a>{{ current - 2 }}</a></li>
-      <li :title="current - 1" v-if="current - 1 > 1" :class="[prefixCls + '-page-item']" @click="changePage(current - 1)"><a>{{ current - 1 }}</a></li>
-      <li :title="current" v-if="current != 1 && current != allPages" :class="[prefixCls + '-page-item',prefixCls + '-page-item-active']"><a>{{ current }}</a></li>
-      <li :title="current + 1" v-if="current + 1 < allPages" :class="[prefixCls + '-page-item']" @click="changePage(current + 1)"><a>{{ current + 1 }}</a></li>
-      <li :title="current + 2" v-if="current + 2 < allPages" :class="[prefixCls + '-page-item']" @click="changePage(current + 2)"><a>{{ current + 2 }}</a></li>
-      <li title="向后 5 页" v-if="current + 3 < allPages" :class="[prefixCls + '-page-item-jump-next']" @click="fastNext"><a><n3-icon type="ellipsis-h" @mouseenter="nextenter" @mouseleave="leave" ></n3-icon></a></li>
+      <li title="向前 5 页" v-if="currentPage - 3 > 1" :class="[prefixCls + '-page-item-jump-prev']" @click="fastPrev"><a><n3-icon type="ellipsis-h" @mouseenter.native="preventer" @mouseleave.native="leave" ></n3-icon></a></li>
+      <li :title="currentPage - 2" v-if="currentPage - 2 > 1" :class="[prefixCls + '-page-item']" @click="changePage(currentPage - 2)"><a>{{ currentPage - 2 }}</a></li>
+      <li :title="currentPage - 1" v-if="currentPage - 1 > 1" :class="[prefixCls + '-page-item']" @click="changePage(currentPage - 1)"><a>{{ currentPage - 1 }}</a></li>
+      <li :title="currentPage" v-if="currentPage != 1 && currentPage != allPages" :class="[prefixCls + '-page-item',prefixCls + '-page-item-active']"><a>{{ currentPage }}</a></li>
+      <li :title="currentPage + 1" v-if="currentPage + 1 < allPages" :class="[prefixCls + '-page-item']" @click="changePage(currentPage + 1)"><a>{{ currentPage + 1 }}</a></li>
+      <li :title="currentPage + 2" v-if="currentPage + 2 < allPages" :class="[prefixCls + '-page-item']" @click="changePage(currentPage + 2)"><a>{{ currentPage + 2 }}</a></li>
+      <li title="向后 5 页" v-if="currentPage + 3 < allPages" :class="[prefixCls + '-page-item-jump-next']" @click="fastNext"><a><n3-icon type="ellipsis-h" @mouseenter.native="nextenter" @mouseleave.native="leave" ></n3-icon></a></li>
       <li :title="'最后一页:' + allPages" v-if="allPages > 1" :class="lastPageClasses" @click="changePage(allPages)"><a>{{ allPages }}</a></li>
       <li
           title="下一页"
@@ -50,17 +50,17 @@
       </li>
       <n3-select
         v-if="showSizer"
-        :value.sync="pagesize"
+        v-model="currentPagesize"
         :options="pagesizeOptsCom"
         :on-change="onSize">
       </n3-select>
       <div class="inline" v-if="showElevator">
         <n3-input
           width="50px"
-          @keyup.enter="goPage" 
-          :value.sync="currentPage">
+          @keyup.native.enter="goPage" 
+          v-model="currentPage">
         </n3-input>
-        <n3-button @click="goPage">跳转</n3-button>
+        <n3-button @click.native="goPage">跳转</n3-button>
       </div>
     </ul>
   </div>
@@ -79,8 +79,7 @@
       },
       current: {
         type: Number,
-        default: 1,
-        twoway: true
+        default: 1
       },
       total: {
         type: Number,
@@ -89,7 +88,6 @@
       pagesize: {
         type: Number,
         default: 10,
-        twoway: true
       },
       pagesizeOpts: {
         type: Array,
@@ -117,9 +115,18 @@
         type: Function
       }
     },
+    watch: {
+      current (val) {
+        this.currentPage = val
+      },
+      pagesize (val) {
+        this.currentPagesize = val
+      }
+    },
     data () {
       return {
-        currentPage: this.current
+        currentPage: this.current,
+        currentPagesize: this.pagesize
       }
     },
     computed: {
@@ -132,7 +139,7 @@
         })
       },
       allPages () {
-        const allPage = Math.ceil(this.total / this.pagesize)
+        const allPage = Math.ceil(this.total / this.currentPagesize)
         return (allPage === 0) ? 1 : allPage
       },
       simpleWrapClasses () {
@@ -155,7 +162,7 @@
         return [
           `${prefixCls}-page-prev`,
           {
-            [`${prefixCls}-page-disabled`]: this.current === 1
+            [`${prefixCls}-page-disabled`]: this.currentPage === 1
           }
         ]
       },
@@ -164,7 +171,7 @@
         return [
           `${prefixCls}-page-next`,
           {
-            [`${prefixCls}-page-disabled`]: this.current === this.allPages
+            [`${prefixCls}-page-disabled`]: this.currentPage === this.allPages
           }
         ]
       },
@@ -173,7 +180,7 @@
         return [
           `${prefixCls}-page-item`,
           {
-            [`${prefixCls}-page-item-active`]: this.current === 1
+            [`${prefixCls}-page-item-active`]: this.currentPage === 1
           }
         ]
       },
@@ -182,7 +189,7 @@
         return [
           `${prefixCls}-page-item`,
           {
-            [`${prefixCls}-page-item-active`]: this.current === this.allPages
+            [`${prefixCls}-page-item-active`]: this.currentPage === this.allPages
           }
         ]
       }
@@ -215,24 +222,23 @@
       },
       changePage (page, force) {
         page = page * 1
-        page = isNaN(page) ? this.current : page
-        if (force || (type.isNumber(page) && this.current !== page && (page >= 1 && page <= this.allPages))) {
-          this.current = page
+        page = isNaN(page) ? this.currentPage : page
+        if (force || (type.isNumber(page) && this.currentPage !== page && (page >= 1 && page <= this.allPages))) {
           this.currentPage = page
           if (type.isFunction(this.onChange)) {
-            this.onChange(page, this.pagesize)
+            this.onChange(page, this.currentPagesize)
           }
         }
       },
       prev () {
-        const current = this.current
+        const current = this.currentPage
         if (current <= 1) {
           return false
         }
         this.changePage(current - 1)
       },
       next () {
-        const current = this.current
+        const current = this.currentPage
         if (current >= this.allPages) {
           return false
         }
@@ -247,7 +253,7 @@
         }
       },
       fastNext () {
-        const page = this.current + 5
+        const page = this.currentPage + 5
         if (page > this.allPages) {
           this.changePage(this.allPages)
         } else {
@@ -255,7 +261,7 @@
         }
       },
       onSize (pagesize) {
-        this.pagesize = pagesize * 1
+        this.currentPagesize = pagesize * 1
         this.changePage(1, true)
       },
       onPage (page) {
