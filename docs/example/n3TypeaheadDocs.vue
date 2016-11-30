@@ -8,7 +8,6 @@
       <n3-typeahead 
         v-model="value"
         :data="USstate" 
-        :render="render"
         placeholder=" 发到"
       ></n3-typeahead>
       <hr>
@@ -128,11 +127,8 @@ export default {
   },
   methods: {
     render (item) {
-      return `<div><a>${item}</a></div>`
+      return item.formatted_address
     },
-    // render (item) {
-    //   return item.formatted_address
-    // },
     getResult (query) {
       let self = this
       $.ajax({

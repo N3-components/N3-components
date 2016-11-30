@@ -22,7 +22,8 @@
   <ul :class="`${prefixCls}-dropdown-menu`" :style="{width: dropdownWidth, maxHeight: dropdownHeight}">
     <li v-for="(item,index) in citems" :class="isActive(index)" >
       <a @mousedown.prevent="hit(index)" >
-        <render :context="context || $parent._self" :template="render(item)"></render>
+        <render :context="context || $parent._self" :template="render(item)">
+        </render>
       </a>
     </li> 
   </ul>

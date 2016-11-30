@@ -15549,7 +15549,6 @@
 	//       <n3-typeahead 
 	//         v-model="value"
 	//         :data="USstate" 
-	//         :render="render"
 	//         placeholder=" 发到"
 	//       ></n3-typeahead>
 	//       <hr>
@@ -15670,12 +15669,8 @@
 	
 	  methods: {
 	    render: function render(item) {
-	      return '<div><a>' + item + '</a></div>';
+	      return item.formatted_address;
 	    },
-	
-	    // render (item) {
-	    //   return item.formatted_address
-	    // },
 	    getResult: function getResult(query) {
 	      var self = this;
 	      $.ajax({
@@ -15711,7 +15706,7 @@
 /* 577 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"自动补全\"  >\n    <h1 class=\"page-header\"><a href=\"#自动补全\" class=\"anchor\">自动补全</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>\n        本地数据\n      </h4>\n      <n3-typeahead \n        v-model=\"value\"\n        :data=\"USstate\" \n        :render=\"render\"\n        placeholder=\" 发到\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      异步获取\n      <n3-tooltip trigger=\"click\" content=\"The suggestions via a Google Map API, are you behind a FireWall?\" placement=\"top\">\n        <small style=\"cursor:pointer\">(not working?)</small>\n      </n3-tooltip>\n      </h4>\n      <n3-typeahead \n        placeholder=\"CCCAddress, async via maps.googleapis.com\"\n        :on-change=\"getResult\"\n        :render=\"render\"\n        :items=\"items\"\n        :add-format=\"googleCallback\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      内容模版\n      </h4>\n      <n3-typeahead \n        :context=\"_self\"\n        placeholder=\"Github users, async via api.github.com\"\n        :on-change=\"getGitresults\"\n        :items=\"gitItems\"\n        :render=\"rendergit\"\n        :add-format=\"githubCallback\"\n      ></n3-typeahead>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n\n    </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\n\n    </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n       <tr>\n          <td>query</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>绑定的值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>本地数组</td>\n        </tr>\n        <tr>\n          <td>limit</td>\n          <td><code>Number</code></td>\n          <td><code>8</code></td>\n          <td>显示的条数</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>query变化的回调函数，用于异步请求</td>\n        </tr>\n         <tr>\n          <td>items</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td> 列表数组，用于异步请求</td>\n        </tr>\n        <tr>\n          <td>on-hit</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>当选择一项触发的回调</td>\n        </tr>\n        <tr>\n          <td>render</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>渲染函数</td>\n        </tr>\n        <tr>\n          <td>dropdow-width</td>\n          <td><code>String</code></td>\n          <td>220px</td>\n          <td>下拉框宽度</td>\n        </tr>\n        <tr>\n          <td>dropdown-height</td>\n          <td><code>String</code></td>\n          <td>300px</td>\n          <td>下拉框最大高度</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"自动补全\"  >\n    <h1 class=\"page-header\"><a href=\"#自动补全\" class=\"anchor\">自动补全</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>\n        本地数据\n      </h4>\n      <n3-typeahead \n        v-model=\"value\"\n        :data=\"USstate\" \n        placeholder=\" 发到\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      异步获取\n      <n3-tooltip trigger=\"click\" content=\"The suggestions via a Google Map API, are you behind a FireWall?\" placement=\"top\">\n        <small style=\"cursor:pointer\">(not working?)</small>\n      </n3-tooltip>\n      </h4>\n      <n3-typeahead \n        placeholder=\"CCCAddress, async via maps.googleapis.com\"\n        :on-change=\"getResult\"\n        :render=\"render\"\n        :items=\"items\"\n        :add-format=\"googleCallback\"\n      ></n3-typeahead>\n      <hr>\n      <h4>\n      内容模版\n      </h4>\n      <n3-typeahead \n        :context=\"_self\"\n        placeholder=\"Github users, async via api.github.com\"\n        :on-change=\"getGitresults\"\n        :items=\"gitItems\"\n        :render=\"rendergit\"\n        :add-format=\"githubCallback\"\n      ></n3-typeahead>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n\n    </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\n\n    </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n       <tr>\n          <td>query</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>绑定的值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>本地数组</td>\n        </tr>\n        <tr>\n          <td>limit</td>\n          <td><code>Number</code></td>\n          <td><code>8</code></td>\n          <td>显示的条数</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>query变化的回调函数，用于异步请求</td>\n        </tr>\n         <tr>\n          <td>items</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td> 列表数组，用于异步请求</td>\n        </tr>\n        <tr>\n          <td>on-hit</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>当选择一项触发的回调</td>\n        </tr>\n        <tr>\n          <td>render</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>渲染函数</td>\n        </tr>\n        <tr>\n          <td>dropdow-width</td>\n          <td><code>String</code></td>\n          <td>220px</td>\n          <td>下拉框宽度</td>\n        </tr>\n        <tr>\n          <td>dropdown-height</td>\n          <td><code>String</code></td>\n          <td>300px</td>\n          <td>下拉框最大高度</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
 /* 578 */
@@ -27299,15 +27294,15 @@
 	
 	var _n3MultipleInput2 = _interopRequireDefault(_n3MultipleInput);
 	
-	var _n3Page = __webpack_require__(767);
+	var _n3Page = __webpack_require__(769);
 	
 	var _n3Page2 = _interopRequireDefault(_n3Page);
 	
-	var _n3Step = __webpack_require__(770);
+	var _n3Step = __webpack_require__(772);
 	
 	var _n3Step2 = _interopRequireDefault(_n3Step);
 	
-	var _n3DataTable = __webpack_require__(773);
+	var _n3DataTable = __webpack_require__(775);
 	
 	var _n3DataTable2 = _interopRequireDefault(_n3DataTable);
 	
@@ -39014,7 +39009,7 @@
 	module.exports = __webpack_require__(762)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(766)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(768)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -39373,7 +39368,7 @@
 	module.exports = __webpack_require__(764)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(765)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(767)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -39404,7 +39399,7 @@
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _render = __webpack_require__(775);
+	var _render = __webpack_require__(765);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
@@ -39442,7 +39437,8 @@
 	//   <ul :class="`${prefixCls}-dropdown-menu`" :style="{width: dropdownWidth, maxHeight: dropdownHeight}">
 	//     <li v-for="(item,index) in citems" :class="isActive(index)" >
 	//       <a @mousedown.prevent="hit(index)" >
-	//         <render :context="context || $parent._self" :template="render(item)"></render>
+	//         <render :context="context || $parent._self" :template="render(item)">
+	//         </render>
 	//       </a>
 	//     </li> 
 	//   </ul>
@@ -39607,24 +39603,81 @@
 
 /***/ },
 /* 765 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    v-model=\"query\"\n    :on-focus=\"onFocus\"\n    :on-blur=\"blur\"\n    @input.native=\"update\"\n    @keydown.native.up=\"up\"\n    @keydown.native.down=\"down\"\n    @keydown.native.enter= \"hit(null)\"\n    @keydown.native.esc=\"reset\"\n  ></n3-input>\n  <ul :class=\"`${prefixCls}-dropdown-menu`\" :style=\"{width: dropdownWidth, maxHeight: dropdownHeight}\">\n    <li v-for=\"(item,index) in citems\" :class=\"isActive(index)\" >\n      <a @mousedown.prevent=\"hit(index)\" >\n        <render :context=\"context || $parent._self\" :template=\"render(item)\"></render>\n      </a>\n    </li> \n  </ul>\n</div>";
+	module.exports = __webpack_require__(766)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = null
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
 
 /***/ },
 /* 766 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _vue = __webpack_require__(623);
+	
+	var _vue2 = _interopRequireDefault(_vue);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = {
+	  props: {
+	    context: {},
+	    template: {}
+	  },
+	  render: function render(h) {
+	    var template = '<div>' + this.template + '</div>';
+	    var render = _vue2.default.compile(template).staticRenderFns[0];
+	    if (!render) {
+	      render = _vue2.default.compile(template).render;
+	    }
+	    var ret = render.call(this.context, h);
+	    return h('div', [ret]);
+	  }
+	};
+	// </script>
+	// <script>
+
+/***/ },
+/* 767 */
+/***/ function(module, exports) {
+
+	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    v-model=\"query\"\n    :on-focus=\"onFocus\"\n    :on-blur=\"blur\"\n    @input.native=\"update\"\n    @keydown.native.up=\"up\"\n    @keydown.native.down=\"down\"\n    @keydown.native.enter= \"hit(null)\"\n    @keydown.native.esc=\"reset\"\n  ></n3-input>\n  <ul :class=\"`${prefixCls}-dropdown-menu`\" :style=\"{width: dropdownWidth, maxHeight: dropdownHeight}\">\n    <li v-for=\"(item,index) in citems\" :class=\"isActive(index)\" >\n      <a @mousedown.prevent=\"hit(index)\" >\n        <render :context=\"context || $parent._self\" :template=\"render(item)\">\n        </render>\n      </a>\n    </li> \n  </ul>\n</div>";
+
+/***/ },
+/* 768 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(index,item) in value\" track-by=\"$index\">\n        <template v-if=\"index == position\">\n            <n3-typeahead\n              :placeholder=\"placeholder\"\n              :on-focus=\"onFocus\"\n              :on-blur=\"onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              :query.sync=\"query\" \n              :width='inputWidth'\n              :items=\"items\"\n              :on-change=\"onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :focused.sync=\"focused\"\n              :data=\"data\"\n              @keydown.delete=\"del\" \n              @keydown.left=\"left\" \n              @keydown.right=\"right\" \n              @keydown.enter=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span :class=\"`${prefixCls}-multiple-input-space`\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span :class=\"`${prefixCls}-multiple-input-m-tag`\" >\n        {{{format.call(this._context,item,index)}}}\n        <n3-icon type=\"times\" :class=\"`${prefixCls}-multiple-close`\" @click=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"value && value.length == position\">\n      <n3-typeahead\n        :placeholder=\"placeholder\"\n        :on-focus=\"onFocus\"\n        :on-blur=\"onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        :query.sync=\"query\" \n        :width='inputWidth'\n        :items=\"items\"\n        :on-change=\"onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :focused.sync=\"focused\"\n        :data=\"data\"\n        @keydown.delete=\"del\" \n        @keydown.left=\"left\" \n        @keydown.right=\"right\" \n        @keydown.enter=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span :class=\"`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`\"  @click=\"setIndex(value.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"value\"\n    :results.sync=\"validateResults\">\n  </validate>\n</div>";
 
 /***/ },
-/* 767 */
+/* 769 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(768)
+	module.exports = __webpack_require__(770)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(769)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(771)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -39642,7 +39695,7 @@
 	}
 
 /***/ },
-/* 768 */
+/* 770 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39929,19 +39982,19 @@
 	// </script>
 
 /***/ },
-/* 769 */
+/* 771 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"inline\">\n    <ul :class=\"simpleWrapClasses\" v-if=\"simple\">\n      <li\n        title=\"上一页\"\n        :class=\"prevClasses\"\n        @click=\"prev\">\n        <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <div :class=\"simplePagerClasses\" :title=\"currentPage + '/' + allPages\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>  \n        <span>/</span>\n        {{ allPages }}\n      </div>\n      <li\n        title=\"下一页\"\n        :class=\"nextClasses\"\n        @click=\"next\">\n        <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n    </ul>\n    <ul :class=\"wrapClasses\" v-else>\n      <span :class=\"[prefixCls + '-page-total']\" v-if=\"showTotal\">\n          <slot>共 {{ total }} 条</slot>\n      </span>\n      <li\n          title=\"上一页\"\n          :class=\"prevClasses\"\n          @click=\"prev\">\n          <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <li title=\"第一页\" :class=\"firstPageClasses\" @click=\"changePage(1)\"><a>1</a></li>\n      <li title=\"向前 5 页\" v-if=\"currentPage - 3 > 1\" :class=\"[prefixCls + '-page-item-jump-prev']\" @click=\"fastPrev\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"preventer\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"currentPage - 2\" v-if=\"currentPage - 2 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 2)\"><a>{{ currentPage - 2 }}</a></li>\n      <li :title=\"currentPage - 1\" v-if=\"currentPage - 1 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 1)\"><a>{{ currentPage - 1 }}</a></li>\n      <li :title=\"currentPage\" v-if=\"currentPage != 1 && currentPage != allPages\" :class=\"[prefixCls + '-page-item',prefixCls + '-page-item-active']\"><a>{{ currentPage }}</a></li>\n      <li :title=\"currentPage + 1\" v-if=\"currentPage + 1 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 1)\"><a>{{ currentPage + 1 }}</a></li>\n      <li :title=\"currentPage + 2\" v-if=\"currentPage + 2 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 2)\"><a>{{ currentPage + 2 }}</a></li>\n      <li title=\"向后 5 页\" v-if=\"currentPage + 3 < allPages\" :class=\"[prefixCls + '-page-item-jump-next']\" @click=\"fastNext\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"nextenter\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"'最后一页:' + allPages\" v-if=\"allPages > 1\" :class=\"lastPageClasses\" @click=\"changePage(allPages)\"><a>{{ allPages }}</a></li>\n      <li\n          title=\"下一页\"\n          :class=\"nextClasses\"\n          @click=\"next\">\n          <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n      <n3-select\n        v-if=\"showSizer\"\n        v-model=\"currentPagesize\"\n        :options=\"pagesizeOptsCom\"\n        :on-change=\"onSize\">\n      </n3-select>\n      <div class=\"inline\" v-if=\"showElevator\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>\n        <n3-button @click.native=\"goPage\">跳转</n3-button>\n      </div>\n    </ul>\n  </div>";
 
 /***/ },
-/* 770 */
+/* 772 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(771)
+	module.exports = __webpack_require__(773)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(772)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(774)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -39959,7 +40012,7 @@
 	}
 
 /***/ },
-/* 771 */
+/* 773 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40033,16 +40086,16 @@
 	// </script>
 
 /***/ },
-/* 772 */
+/* 774 */
 /***/ function(module, exports) {
 
 	module.exports = "<ul v-if=\"round\" :class=\"`${prefixCls}-steps-round-con`\">\n   <template v-for=\"(label,index) in labels\">\n      <li :class=\"[getClassFromIndex(index)]\">\n      <div :class=\"`${prefixCls}-steps-wrap`\">\n        <div :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</div>\n      </div>\n      <label>{{label}}</label>\n    </li>\n   </template>\n  </ul>\n\n  <div v-else :class=\"`${prefixCls}-steps clearfix`\">\n        <template v-for=\"(label,index) in labels\">\n            <div :class=\"`${prefixCls}-steps-wrap`\">\n                <div :class=\"getClassFromIndex(index)\">\n                    <label>\n                      <span :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</span>\n                      <span>{{label}}</span>\n                    </label>\n                    <template v-if=\"index < labels.length - 1\">\n                        <i :class=\"`${prefixCls}-steps-triangle-right-bg`\"></i>\n                        <i :class=\"`${prefixCls}-steps-triangle-right`\"></i>\n                    </template>\n                </div>\n            </div>\n        </template>\n    </div>";
 
 /***/ },
-/* 773 */
+/* 775 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(774)
+	module.exports = __webpack_require__(776)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
 	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(777)
@@ -40063,7 +40116,7 @@
 	}
 
 /***/ },
-/* 774 */
+/* 776 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40072,11 +40125,11 @@
 	  value: true
 	});
 	
-	var _render = __webpack_require__(775);
+	var _render = __webpack_require__(765);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _n3Page = __webpack_require__(767);
+	var _n3Page = __webpack_require__(769);
 	
 	var _n3Page2 = _interopRequireDefault(_n3Page);
 	
@@ -40779,59 +40832,6 @@
 	// </script>
 
 /***/ },
-/* 775 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(776)
-	
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (false) {
-	(function () {
-	var hotAPI = require("vue-hot-reload-api")
-	hotAPI.install(require("vue"))
-	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue"
-	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue")
-	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = null
-	hotAPI.update(id, newOptions, newTemplate)
-	})
-	})()
-	}
-
-/***/ },
-/* 776 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _vue = __webpack_require__(623);
-	
-	var _vue2 = _interopRequireDefault(_vue);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = {
-		props: {
-			context: {},
-			template: {}
-		},
-		render: function render(h) {
-			console.log(_vue2.default.compile(this.template).render + '', this.template);
-			var ret = _vue2.default.compile(this.template).render.call(this.context, h);
-			return h('div', [ret]);
-		}
-	};
-	// </script>
-	// <script>
-
-/***/ },
 /* 777 */
 /***/ function(module, exports) {
 
@@ -40875,7 +40875,7 @@
 	
 	var _n3TimelineItem2 = _interopRequireDefault(_n3TimelineItem);
 	
-	var _render = __webpack_require__(775);
+	var _render = __webpack_require__(765);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
