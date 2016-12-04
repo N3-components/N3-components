@@ -23,6 +23,7 @@
 <script>
 import PopoverMixin from './popoverMixins'
 export default {
+  name: 'n3Popover',
   props: {
     prefixCls: {
       type: String,

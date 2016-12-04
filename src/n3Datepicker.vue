@@ -101,6 +101,7 @@ import inputMixin from './inputMixin'
 import type from './utils/type'
 
 export default {
+  name: 'n3Datepicker',
   mixins: [inputMixin],
   props: {
     value: {

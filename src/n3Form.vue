@@ -8,6 +8,7 @@
 import type from './utils/type'
 
 export default {
+  name: 'n3Form',
   props: {
     type: {
       type: String,

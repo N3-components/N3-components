@@ -45,23 +45,18 @@
 
 
     <div class="bs-example">
-        <n3-tags :value.sync="list" ></n3-tags>
-        <n3-tags :value.sync="list"  type="primary"></n3-tags>
-        <n3-tags :value.sync="list"  type="success"></n3-tags>
-        <n3-tags :value.sync="list"  type="danger"></n3-tags>
-        <n3-tags :value.sync="list"  type="warning"></n3-tags>
-        <n3-tags :value.sync="list" removable type="primary"></n3-tags>
+        <n3-tags v-model="list" ></n3-tags>
+        <n3-tags v-model="list"  type="primary"></n3-tags>
+        <n3-tags v-model="list"  type="success"></n3-tags>
+        <n3-tags v-model="list"  type="danger"></n3-tags>
+        <n3-tags v-model="list"  type="warning"></n3-tags>
+        <n3-tags v-model="list" removable type="primary"></n3-tags>
     </div>
+
+    {{list}}
+    
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-tags :value.sync="list"></n3-tags>
-<n3-tags :value.sync="list"  type="primary"></n3-tags>
-<n3-tags :value.sync="list"  type="success"></n3-tags>
-<n3-tags :value.sync="list"  type="danger"></n3-tags>
-<n3-tags :value.sync="list"  type="warning"></n3-tags>
 
-<n3-tags :value.sync="list" removable type="primary"></n3-tags>
-
-<n3-tags :value.sync="list" removable selectabled :result="result" ></n3-tags>
     </script></code></pre>
     <pre><code class="language-jvascript"><script type="language-jvascript">
 new Vue({

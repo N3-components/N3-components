@@ -7,6 +7,7 @@
 </template>
 <script>
 export default{
+  name: 'n3Nav',
   props: {
     type: {
       type: String,

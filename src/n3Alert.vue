@@ -28,6 +28,7 @@ import type from './utils/type'
 import n3Icon from './n3Icon'
 
 export default {
+  name: 'n3Alert',
   props: {
     show: {
       type: Boolean,

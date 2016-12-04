@@ -31,6 +31,7 @@
 
 <script>
 export default {
+  name: 'n3Step',
   props: {
     labels: {
       type: Array

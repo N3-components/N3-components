@@ -8,6 +8,7 @@
 import type from './utils/type'
 
 export default {
+  name: 'n3Accordion',
   props: {
     oneAtTime: {
       type: Boolean,

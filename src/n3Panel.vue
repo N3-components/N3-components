@@ -26,6 +26,7 @@ import type from './utils/type'
 import n3CollapseTransition from './n3CollapseTransition'
 
 export default {
+  name: 'n3Panel',
   props: {
     isOpen: {
       type: Boolean,

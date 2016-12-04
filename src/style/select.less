@@ -2,10 +2,14 @@
 
   .@{prefix-cls}-selected-tag {
     background: @lightColor;
-    padding: 3px 5px;
+    padding: @selectTag;
     margin-right: 5px;
     border-radius: 4px;
     margin-bottom: 3px;
+    transition: all .24s ease;
+    &:hover{
+      background: @lightGrayColor;
+    }
     &:after{
       content: "\F00D";
       font: normal normal normal 14px/1 FontAwesome;
@@ -13,7 +17,10 @@
       color: @grayColor;
     }
   }
-   .@{prefix-cls}-select-btn:hover {
+  .@{prefix-cls}-select-multiple {
+    padding: @selectMultiple!important;
+  }
+  .@{prefix-cls}-select-btn:hover {
     color:@fontColor!important;
   }
 

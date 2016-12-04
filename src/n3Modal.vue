@@ -33,6 +33,7 @@ import type from './utils/type'
 import element from './utils/element'
 
 export default {
+  name: 'n3Modal',
   props: {
     title: {
       type: String,

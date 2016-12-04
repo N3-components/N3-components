@@ -134,6 +134,7 @@ import EventListener from './utils/EventListener'
 import type from './utils/type'
 
 export default {
+  name: 'n3Datetimepicker',
   mixins: [inputMixin],
   props: {
     value: {

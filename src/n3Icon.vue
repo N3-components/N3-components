@@ -3,6 +3,7 @@
 </template>
 <script>
 export default{
+  name: 'n3Icon',
   props: {
     type: {
       type: String

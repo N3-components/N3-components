@@ -136,6 +136,7 @@ import n3Input from './n3Input'
 import n3Loading from './n3Loading'
 import type from './utils/type'
 export default {
+  name: 'n3DataTable',
   props: {
     context: {
     },

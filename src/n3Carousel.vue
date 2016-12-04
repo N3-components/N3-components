@@ -27,6 +27,7 @@ import n3Icon from './n3Icon'
 import element from './utils/element'
 
 export default {
+  name: 'n3Carousel',
   props: {
     indicators: {
       type: Boolean,

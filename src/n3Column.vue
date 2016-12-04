@@ -5,6 +5,7 @@
 </template>
 <script>
 export default{
+  name: 'n3Column',
   props: {
     col: {
       type: Number

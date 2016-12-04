@@ -22,6 +22,7 @@ import n3Button from './n3Button'
 import type from './utils/type'
 
 export default {
+  name: 'n3PopConfirm',
   props: {
     effect: {
       type: String,

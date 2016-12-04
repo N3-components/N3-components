@@ -53,6 +53,7 @@ import n3Input from './n3Input'
 import inputMixin from './inputMixin'
 
 export default {
+  name: 'n3Timepicker',
   mixins: [inputMixin],
   props: {
     value: {

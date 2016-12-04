@@ -30,6 +30,7 @@
   import type from './utils/type'
 
   export default {
+    name: 'n3Textarea',
     mixins: [valMixin],
     props: {
       disabled: {

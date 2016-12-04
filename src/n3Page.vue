@@ -71,6 +71,7 @@
   import n3Input from './n3Input.vue'
   import type from './utils/type'
   export default {
+    name: 'n3Page',
     components: {n3Select, n3Icon, n3Input},
     props: {
       prefixCls: {
@@ -87,7 +88,7 @@
       },
       pagesize: {
         type: Number,
-        default: 10,
+        default: 10
       },
       pagesizeOpts: {
         type: Array,

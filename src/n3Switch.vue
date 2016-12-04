@@ -28,6 +28,7 @@ import valMixin from './valMixin'
 import validate from './validate'
 
 export default {
+  name: 'n3Switch',
   mixins: [valMixin],
   props: {
     value: {

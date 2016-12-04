@@ -22,6 +22,7 @@ import EventListener from './utils/EventListener'
 import n3CollapseTransition from './n3CollapseTransition'
 
 export default {
+  name: 'n3Dropdown',
   props: {
     show: {
       type: Boolean,

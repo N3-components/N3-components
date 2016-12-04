@@ -1,21 +1,28 @@
 <template>
   <n3-button 
-    @click.prevent="handleClick"
+    @click.prevent.native="handleClick"
     :class="classObj" 
     :disabled="disabled"
-    :type="checked ? 'primary' : 'default'">
+    :type="currentChecked ? 'primary' : 'default'">
     <slot></slot>
   </n3-button>
 </template>
 
 <script>
 import n3Button from './n3Button'
+import events from './utils/events'
+import valMixin from './valMixin'
 import type from './utils/type'
 
 export default {
+  name: 'n3RadioBtn',
+  mixins: [valMixin, events],
   props: {
     value: {
       type: String
+    },
+    label: {
+      type: [String, Number]
     },
     checked: {
       type: Boolean,
@@ -34,9 +41,27 @@ export default {
       default: 'n3'
     }
   },
-  events: {
-    'n3@radiogroupChange' (val) {
-      this.checked = val === this.value
+  watch: {
+    value (val) {
+      this.currentChecked = val
+    },
+    checked (val) {
+      this.currentChecked = val
+    },
+    currentChecked (val) {
+      this.$emit('input', val)
+    }
+  },
+  data () {
+    let checked = this.checked
+    if (checked !== undefined) {
+      this.$emit('input', checked)
+    } else {
+      checked = !!this.value
+    }
+
+    return {
+      currentChecked: checked
     }
   },
   computed: {
@@ -48,13 +73,18 @@ export default {
       return klass
     }
   },
+  created () {
+    this.$on('n3@radiogroupChange', (val) => {
+      this.currentChecked = val === this.label
+    })
+  },
   methods: {
     handleClick () {
-      if (this.checked) return
-      this.checked = true
-      this.$dispatch('n3@radioChange', this.value)
+      if (this.currentChecked) return
+      this.currentChecked = true
+      this.dispatch('n3RadioGroup', 'n3@radioChange', this.label)
       if (type.isFunction(this.onChange)) {
-        this.onChange(this.value)
+        this.onChange(this.currentChecked)
       }
     }
   },

@@ -4,7 +4,7 @@
     <div class="bs-example">
       <n3-tabs :on-change="change" :list="list"></n3-tabs>
 
-      <n3-tabs :on-change="change" :active-index="1">
+      <n3-tabs :on-change="change" :value="1">
         <n3-tab header="one" badge="1">
           <p>.......</p>
           <p>.......</p>

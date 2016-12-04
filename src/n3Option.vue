@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name: 'n3Option',
   props: {
     value: {
       type: String

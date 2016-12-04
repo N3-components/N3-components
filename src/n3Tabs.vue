@@ -14,7 +14,7 @@
     </ul>
     <div :class="`${prefixCls}-tab-content`">
       <div v-if="list">
-          <span v-html='renderData[aIndex].content'></span>
+          <span v-html='renderData[activeIndex].content'></span>
       </div>
       <slot v-else></slot>
     </div>
@@ -26,6 +26,7 @@ import type from './utils/type'
 import n3Badge from './n3Badge'
 
 export default {
+  name: 'n3Tabs',
   props: {
     pills: {
       type: Boolean
@@ -39,10 +40,7 @@ export default {
     justified: {
       type: Boolean
     },
-    size: {
-      type: String
-    },
-    activeIndex: {
+    value: {
       type: Number,
       default: 0
     },
@@ -58,10 +56,10 @@ export default {
     }
   },
   data () {
-    let activeIndex = this.activeIndex
+    let activeIndex = this.value
     return {
       renderData: [],
-      aIndex: activeIndex
+      activeIndex: activeIndex
     }
   },
   components: {
@@ -95,17 +93,17 @@ export default {
   },
   methods: {
     liclassObj (index, r) {
-      let {prefixCls, aIndex} = this
+      let {prefixCls, activeIndex} = this
       let klass = {}
 
-      klass[prefixCls + '-nav-tabs-active'] = index === aIndex
+      klass[prefixCls + '-nav-tabs-active'] = index === activeIndex
       klass[prefixCls + '-nav-tabs-disabled'] = r.disabled
 
       return klass
     },
     handleTabListClick (index, el) {
       if (!el.disabled) {
-        this.aIndex = index
+        this.activeIndex = index
       } else {
         return
       }

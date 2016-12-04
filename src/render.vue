@@ -7,7 +7,7 @@
  		template: {}
  	},
  	render (h) {
- 		let template = '<div>' + this.template + '</div>'
+ 		let template = '<div class="inline">' + this.template + '</div>'
  		let render = Vue.compile(template).staticRenderFns[0]
  		if (!render) {
  			render = Vue.compile(template).render

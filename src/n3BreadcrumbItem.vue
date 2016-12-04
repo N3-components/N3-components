@@ -10,6 +10,7 @@
 </template>
 <script>
 export default {
+  name: 'n3BreadcrumbItem',
   props: {
     href: {
       type: String

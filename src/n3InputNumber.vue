@@ -82,6 +82,7 @@ function preventDefault (e) {
 }
 
 export default {
+  name: 'n3InputNumber',
   mixins: [inputMixin],
   props: {
     prefixCls: {

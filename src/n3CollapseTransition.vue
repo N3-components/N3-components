@@ -34,6 +34,7 @@ function animate (node, show, transitionName, done) {
 }
 
 export default {
+  name: 'n3CollapseTransition',
   methods: {
     enter (el, done) {
       console.log(el, 1)

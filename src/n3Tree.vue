@@ -53,6 +53,7 @@
 import type from './utils/type'
 
 export default {
+  name: 'n3Tree',
   props: {
     id: {
       type: Number,

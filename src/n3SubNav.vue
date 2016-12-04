@@ -14,6 +14,7 @@ import n3Dropdown from './n3Dropdown'
 import n3Icon from './n3Icon'
 
 export default{
+  name: 'n3SubNav',
   props: {
     trigger: {
       type: String,

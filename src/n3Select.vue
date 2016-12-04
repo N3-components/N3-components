@@ -4,7 +4,7 @@
       :style="{width:width}"
       :disabled="disabled"
       :size="size"
-      :class="`${prefixCls}-dropdown-toggle ${prefixCls}-select-btn`"
+      :class="[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,multiple&&value.length ? `${prefixCls}-select-multiple` : '']"
       @click.native="toggleDropdown">
         <span  v-if="showPlaceholder || !showselected">{{placeholder}}</span>
         <span  v-if="showselected" >
@@ -80,6 +80,7 @@ import validate from './validate'
 import type from './utils/type'
 
 export default {
+  name: 'n3Select',
   mixins: [valMixin],
   props: {
     readonly: {

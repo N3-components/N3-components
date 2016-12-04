@@ -4,25 +4,16 @@
     <div class="bs-example">
         <n3-multiple-input
           :on-focus="focus" 
-          :value.sync="a.list" 
+          v-model="a.list" 
           :format="format" 
           :on-inputchange="getResult"
           :render="render"
           :items="items"
-          :query.sync="query"
-          :on-hit="googleCallback"
         ></n3-multiple-input>
     </div>
+    {{a.list}}
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-multiple-input 
-  :value.sync="a.list" 
-  :format="format" 
-  :on-inputchange="getResult"
-  :render="render"
-  :items="items"
-  :query.sync="query"
-  :on-hit="googleCallback"
-></n3-multiple-input>
+
     </script></code></pre>
     <pre><code class="language-javascript"><script type="language-javascript">
 new Vue({

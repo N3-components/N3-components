@@ -9,6 +9,7 @@
 </template>
 <script>
 export default{
+  name: 'n3TimelineItem',
   props: {
     icon: {
       type: String

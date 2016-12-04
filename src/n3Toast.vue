@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  name: 'n3Toast',
   props: {
     top: {
       type: Boolean,

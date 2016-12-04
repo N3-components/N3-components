@@ -16,6 +16,7 @@ import render from './render'
 import type from './utils/type'
 
 export default{
+  name: 'n3Timeline',
   props: {
     value: {
       type: Array

@@ -8,6 +8,7 @@
 import element from './utils/element'
 
 export default {
+  name: 'n3Slide',
   props: {
     prefixCls: {
       type: String,

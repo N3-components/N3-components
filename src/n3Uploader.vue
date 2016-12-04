@@ -1,5 +1,5 @@
 <template>
-  <div :class="[prefixCls + '-upload']" id="upload-{{uploadId}}">
+  <div :class="[prefixCls + '-upload']" :id="`upload-${uploadId}`">
     <div v-if="type === 'click'">
       <label>
         <input
@@ -89,6 +89,7 @@
   import type from './utils/type'
 
   export default {
+    name: 'n3Uploader',
     props: {
       name: {
         type: String,

@@ -20,6 +20,7 @@
 <script>
 import PopoverMixin from './popoverMixins'
 export default {
+  name: 'n3Tooltip',
   props: {
     prefixCls: {
       type: String,

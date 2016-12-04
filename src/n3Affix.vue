@@ -9,6 +9,7 @@
 import EventListener from './utils/EventListener'
 
 export default {
+  name: 'n3Affix',
   props: {
     offset: {
       type: Number,

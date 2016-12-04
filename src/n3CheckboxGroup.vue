@@ -1,49 +1,26 @@
 <template>
   <div :class="`${prefixCls}-btn-group ${prefixCls}-checkbox-group`">
-    <template v-if="options">
-      <n3-checkbox
-        v-if="type==='checkbox'" 
-        v-for="item in options"
-        :value="item.value"
-        :checked="item.checked"
-        :disabled="item.disabled">
-        {{item.label}}
-      </n3-checkbox>
-
-       <n3-checkbox-btn
-        v-if="type==='button'" 
-        v-for="item in options"
-        :value="item.value"
-        :checked="item.checked"
-        :disabled="item.disabled">
-       {{item.label}}
-      </n3-checkbox-btn>
-    </template>
-    <template v-else>
     <slot></slot>
-    </template>
-
-    <validate
+    <!-- <validate
       :name="name"
       :rules="rules"
       :valid-status.sync="validStatus"
       :custom-validate="customValidate" 
-      :value="value"
+      :value="currentValue"
       :results.sync="validateResults">
-    </validate>
-
+    </validate> -->
   </div>
 </template>
 
 <script>
-import n3Checkbox from './n3Checkbox'
-import n3CheckboxBtn from './n3CheckboxBtn'
 import valMixin from './valMixin'
 import validate from './validate'
+import events from './utils/events'
 import type from './utils/type'
 
 export default {
-  mixins: [valMixin],
+  name: 'n3CheckboxGroup',
+  mixins: [valMixin, events],
   props: {
     value: {
       type: Array,
@@ -55,9 +32,6 @@ export default {
       type: String,
       default: 'checkbox'
     },
-    options: {
-      type: Array
-    },
     onChange: {
       type: Function
     },
@@ -67,41 +41,50 @@ export default {
     }
   },
 
+  data () {
+    return {
+      currentValue: this.value
+    }
+  },
+
   methods: {
     init () {
       let children = this.$children
       let ret = []
       children.forEach((item) => {
-        item.checked ? ret.push(item.value) : ''
+        item.currentChecked ? ret.push(item.label) : ''
       })
-      this.value = ret
-    }
-  },
-  events: {
-    'n3@checkboxChange' (val) {
-      this.init()
+      this.currentValue = ret
     }
   },
 
   watch: {
-    value () {
-      this.$broadcast('n3@checkboxgroupChange', this.value)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.value)
-      }
+    value (val) {
+      this.currentValue = val
     },
-    options () {
-      this.init()
+    currentValue (val) {
+      this.broadcast('n3Checkbox', 'n3@checkboxgroupChange', val)
+      this.broadcast('n3CheckboxBtn', 'n3@checkboxgroupChange', val)
+      this.$emit('input', val)
+      if (type.isFunction(this.onChange)) {
+        this.onChange(val)
+      }
     }
   },
 
-  ready () {
-    this.init()
+  created () {
+    this.$on('n3@checkboxChange', () => {
+      this.init()
+    })
+  },
+
+  mounted () {
+    this.$nextTick(() => {
+      this.init()
+    })
   },
 
   components: {
-    n3Checkbox,
-    n3CheckboxBtn,
     validate
   }
 

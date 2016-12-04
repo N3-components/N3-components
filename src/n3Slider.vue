@@ -31,6 +31,7 @@ import type from './utils/type'
 import element from './utils/element'
 
 export default {
+  name: 'n3Silder',
   mixins: [valMixin],
   props: {
     orientation: {

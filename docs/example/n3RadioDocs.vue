@@ -3,16 +3,16 @@
     <h1 class="page-header"><a href="#单选框" class="anchor">单选框</a><span class="author"> </span></h1>
     <div class="bs-example">
       <h4>Radio</h4>
-      <n3-radio-group :value.sync="radioValue" type="primary">
-        <n3-radio-btn value="left" disabled>Left</n3-radio-btn>
-        <n3-radio-btn value="middle" checked>Middle</n3-radio-btn>
-        <n3-radio-btn value="right">Right</n3-radio-btn>
+      <n3-radio-group v-model="radioValue" type="primary">
+        <n3-radio-btn label="left" disabled>Left</n3-radio-btn>
+        <n3-radio-btn label="middle" checked>Middle</n3-radio-btn>
+        <n3-radio-btn label="right">Right</n3-radio-btn>
       </n3-radio-group>
 
-      <n3-radio-group :value.sync="radioValue" >
-        <n3-radio value="left" disabled>Left</n3-radio>
-        <n3-radio value="middle" checked>Middle</n3-radio>
-        <n3-radio value="right">Right</n3-radio>
+      <n3-radio-group v-model="radioValue" >
+        <n3-radio label="left" disabled>Left</n3-radio>
+        <n3-radio label="middle" checked>Middle</n3-radio>
+        <n3-radio label="right">Right</n3-radio>
       </n3-radio-group>
       <p>
         <pre>
@@ -22,17 +22,6 @@ Radio value: {{radioValue}}
     </div>
 
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-radio-group :value.sync="radioValue" type="primary">
-  <n3-radio-btn value="left" disabled>Left</n3-radio-btn>
-  <n3-radio-btn value="middle" checked>Middle</n3-radio-btn>
-  <n3-radio-btn value="right">Right</n3-radio-btn>
-</n3-radio-group>
-
-<n3-radio-group :value.sync="radioValue" >
-  <n3-radio value="left" disabled>Left</n3-radio>
-  <n3-radio value="middle" checked>Middle</n3-radio>
-  <n3-radio value="right">Right</n3-radio>
-</n3-radio-group>
     </script></code></pre>
     <br>
     <h2>group</h2>

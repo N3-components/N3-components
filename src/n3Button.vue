@@ -10,6 +10,7 @@ import n3Loading from './n3Loading'
 import n3Badge from './n3Badge'
 
 export default{
+  name: 'n3Button',
   props: {
     size: {
       type: String

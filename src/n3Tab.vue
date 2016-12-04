@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: 'n3Tab',
   props: {
     header: {
       type: String
@@ -41,7 +42,7 @@ export default {
       return klass
     },
     show () {
-      return (this.$parent.aIndex == this.index)
+      return (this.$parent.activeIndex == this.index)
     }
   },
   created () {

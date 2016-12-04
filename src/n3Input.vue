@@ -49,6 +49,7 @@ import validate from './validate'
 import { focus } from 'vue-focus'
 
 export default {
+  name: 'n3Input',
   mixins: [inputMixin],
   props: {
     value: {
@@ -96,6 +97,15 @@ export default {
 
       return klass
     }
+  },
+
+  created () {
+    this.$on('focus', () => {
+      this.focus()
+    })
+    this.$on('blur', () => {
+      this.blur()
+    })
   },
 
   methods: {

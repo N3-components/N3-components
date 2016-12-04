@@ -1,10 +1,10 @@
 <template>
   <div :class="classObj" >
-    <label :class="`${prefixCls}-col-sm-${label_col} ${prefixCls}-control-label">
-      <em :class="`${prefixCls}-form-need" v-if="need" >*</em>
+    <label :class="`${prefixCls}-col-sm-${label_col} ${prefixCls}-control-label`">
+      <em :class="`${prefixCls}-form-need`" v-if="need" >*</em>
       {{label}}
       </label>
-    <div :class="`${prefixCls}-col-sm-${col} inline">
+    <div :class="`${prefixCls}-col-sm-${col} inline`">
       <slot></slot>
     </div>  
   </div>
@@ -12,15 +12,16 @@
 
 <script>
 export default {
+  name: 'n3FormItem',
   props: {
     label: {
       type: String
     },
     labelCol: {
-      type: Number,
+      type: Number
     },
     wrapCol: {
-      type: Number,
+      type: Number
     },
     formCol: {
       type: Number
@@ -36,7 +37,7 @@ export default {
   },
   computed: {
     inline () {
-      return this.$parent.type == 'inline'
+      return this.$parent.type === 'inline'
     },
     label_col () {
       let defaultCol = this.inline ? 0 : 2
@@ -51,7 +52,7 @@ export default {
         return this.formCol
       }
 
-      let wrapCol = this.wrapCol ? this.wrapCol : 12 
+      let wrapCol = this.wrapCol ? this.wrapCol : 12
       return wrapCol - this.label_col
     },
     classObj () {
@@ -61,7 +62,7 @@ export default {
 
       klass['clearfix'] = true
       klass[prefixCls + '-form-group'] = true
-      klass[prefixCls + '-col-sm-' + defaultCol] = true 
+      klass[prefixCls + '-col-sm-' + defaultCol] = true
 
       return klass
     }

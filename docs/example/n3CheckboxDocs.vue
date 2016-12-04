@@ -4,24 +4,24 @@
     <div class="bs-example">
       
       <h4>Checkbox</h4>
-      <n3-checkbox value="left" :checked.sync="single">single</n3-checkbox>
+      <n3-checkbox  label="single">single</n3-checkbox>
       <br>
       <br>
-      <n3-checkbox-group :value.sync="checkboxValue" >
-        <n3-checkbox-btn value="left" disabled>Left</n3-checkbox-btn>
-        <n3-checkbox-btn value="middle" checked>Middle</n3-checkbox-btn>
-        <n3-checkbox-btn value="right">Right</n3-checkbox-btn>
+      <n3-checkbox-group v-model="checkboxValue" >
+        <n3-checkbox-btn label="left" disabled>Left</n3-checkbox-btn>
+        <n3-checkbox-btn label="middle" checked>Middle</n3-checkbox-btn>
+        <n3-checkbox-btn label="right">Right</n3-checkbox-btn>
       </n3-checkbox-group>
       <br>
-      <n3-checkbox-group :value.sync="checkboxValue">
-        <n3-checkbox value="left" disabled>Left</n3-checkbox>
-        <n3-checkbox value="middle" checked>Middle</n3-checkbox>
-        <n3-checkbox value="right">Right</n3-checkbox>
+      <n3-checkbox-group v-model="checkboxValue">
+        <n3-checkbox label="left" disabled>Left</n3-checkbox>
+        <n3-checkbox label="middle" checked>Middle</n3-checkbox>
+        <n3-checkbox label="right">Right</n3-checkbox>
       </n3-checkbox-group>
 
       <p>
         <pre>
-Checkbox value: {{checkboxValue | json}}
+Checkbox value: {{checkboxValuec}}
         </pre>
       </p>
 
@@ -125,6 +125,11 @@ Checkbox value: {{checkboxValue | json}}
 
 <script>
 export default {
+  computed: {
+    checkboxValuec () {
+      return JSON.stringify(this.checkboxValue)
+    }
+  },
   data () {
     return {
       single: false,

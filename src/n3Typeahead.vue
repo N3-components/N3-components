@@ -2,6 +2,7 @@
 <div style="position: relative;display:inline-block"
      :class="[show ? prefixCls +'-open' : '']">
   <n3-input
+    ref="input"
     :width="width"
     :name="name" 
     :rules="rules" 
@@ -28,7 +29,6 @@
     </li> 
   </ul>
 </div>
-
 </template>
 
 <script>
@@ -38,8 +38,15 @@ import type from './utils/type'
 import inputMixin from './inputMixin'
 
 export default {
+  name: 'n3Typeahead',
   created () {
     this.citems = this.primitiveData
+    this.$on('focus', () => {
+      this.$refs.input.$emit('focus')
+    })
+    this.$on('blur', () => {
+      this.$refs.input.$emit('blur')
+    })
   },
   mixins: [inputMixin],
   props: {
@@ -108,6 +115,9 @@ export default {
     citems (val) {
       this.show = val && !!val.length
     },
+    value (val) {
+      this.query = val
+    },
     query (val) {
       this.$emit('input', val)
       if (val.value === '') {
@@ -157,7 +167,6 @@ export default {
         if (type.isFunction(self.onChange)) {
           self.onChange(self.query)
         } else if (self.data) {
-          console.log(self.primitiveData)
           self.citems = self.primitiveData
         }
       }, 100)

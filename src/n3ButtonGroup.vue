@@ -6,6 +6,7 @@
 
 <script>
 export default{
+	name: 'n3ButtonGroup',
   props: {
     prefixCls: {
       type: String,

@@ -5,6 +5,7 @@
 </template>
 <script>
 	export default{
+		name: 'n3Badge',
 	  props: {
 	    prefixCls: {
 	      type: String,
