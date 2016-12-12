@@ -4,7 +4,7 @@
     <n3-select 
       class='pull-left'
       style="margin-right:10px;"
-      :multiple="true"
+      multiple
       :showselected="false"
       v-if="selectCol"
       placeholder = "显示的列"
@@ -520,7 +520,7 @@ export default {
       this.handlerFilter()
       this.selectdCols = selectdCols
       this.initColumns = ret
-      this.selectOptions = ret
+      this.selectOptions = ret.map((i) => { return {label: i.label, value: i.value} })
     },
     handlerSource () {
       let s = this.source

@@ -1,14 +1,12 @@
 <template>
   <div :class="`${prefixCls}-btn-group ${prefixCls}-checkbox-group`">
     <slot></slot>
-    <!-- <validate
+    <validate
       :name="name"
       :rules="rules"
-      :valid-status.sync="validStatus"
       :custom-validate="customValidate" 
-      :value="currentValue"
-      :results.sync="validateResults">
-    </validate> -->
+      :current="currentValue">
+    </validate>
   </div>
 </template>
 

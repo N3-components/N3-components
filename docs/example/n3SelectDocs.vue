@@ -63,7 +63,7 @@ Select data : {{custom.join(', ')}}
 Select data : {{arr}}
         </pre>
       </p>
-      <n3-select :value.sync="arr" :options="fruitOptions" :search="true" multiple extra width="200px">
+      <n3-select v-model="arr" :options="fruitOptions" :search="true" multiple extra width="200px">
       </n3-select>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
@@ -94,7 +94,7 @@ fruitOptions = [
           <td>value</td>
           <td><code></code></td>
           <td><code></code></td>
-          <td>多选为数组，单选为单个数字或者字符串,需要<code>.sync</code></td>
+          <td>多选为数组，单选为单个数字或者字符串</td>
         </tr>
         <tr>
           <td>options</td>

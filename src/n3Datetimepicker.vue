@@ -223,7 +223,6 @@ export default {
       if (val) {
         this.$nextTick(() => {
           let width = this.$refs.datepicker.offsetWidth * 1 + 30
-          console.log(this.$refs.datepicker.offsetWidth)
           this.hour ? width += 42 : 0
           this.minute ? width += 42 : 0
           this.second ? width += 42 : 0

@@ -74,6 +74,7 @@ import n3DataTableDocs from './n3DataTableDocs.vue'
 import n3BreadcrumbDocs from './n3BreadcrumbDocs.vue'
 import n3MultipleInputDocs from './n3MultipleInputDocs.vue'
 import n3TreeDocs from './n3TreeDocs.vue'
+import n3RateDocs from './n3RateDocs.vue'
 import n3UploaderDocs from './n3UploaderDocs.vue'
 import n3FormDocs from './n3FormDocs.vue'
 import n3CheckboxDocs from './n3CheckboxDocs.vue'
@@ -130,6 +131,7 @@ export default{
                  {label: '幻灯片', value: 'n3CarouselDocs'},
                  {label: '数据表格', value: 'n3DataTableDocs'},
                  {label: '下拉框', value: 'n3DropdownDocs'},
+                 {label: '评分', value: 'n3RateDocs'},
                  {label: '弹出框', value: 'n3ModalDocs'},
                  {label: '进度条', value: 'n3ProgressbarDocs'},
                  {label: '标签', value: 'n3TagsDocs'},
@@ -164,7 +166,7 @@ export default{
       for (let i in map) {
         let show = map[i].show
         let list = map[i].list
-        let t = list.filter((i)=>{
+        let t = list.filter((i) => {
           let v = val.toLowerCase()
           let label = i.label
           let value = i.value.toLowerCase().replace('Docs', '').replace('n3', '')
@@ -220,6 +222,7 @@ export default{
     n3ButtonsDocs,
     n3DatepickerDocs,
     n3TimepickerDocs,
+    n3RateDocs,
     n3DatetimepickerDocs,
     n3InputNumberDocs,
     n3UploaderDocs,

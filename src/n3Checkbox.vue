@@ -15,10 +15,8 @@
   <validate
     :name="name"
     :rules="rules"
-    :valid-status.sync="validStatus"
     :custom-validate="customValidate" 
-    :value="currentChecked"
-    :results.sync="validateResults">
+    :current="currentChecked">
   </validate>
   </label>
 </template>

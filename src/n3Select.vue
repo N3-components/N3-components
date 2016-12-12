@@ -4,19 +4,20 @@
       :style="{width:width}"
       :disabled="disabled"
       :size="size"
-      :class="[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,multiple&&value.length ? `${prefixCls}-select-multiple` : '']"
+      :class="[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,showselected&&multiple&&value.length ? `${prefixCls}-select-multiple` : '']"
       @click.native="toggleDropdown">
         <span  v-if="showPlaceholder || !showselected">{{placeholder}}</span>
         <span  v-if="showselected" >
           <template v-for="item in selectedItems" v-if="multiple">
-            <span
-              @click.prevent.stop="del(item)"
+            <render 
+              @click.native.prevent.stop="del(item)"
               :class="`${prefixCls}-selected-tag`" 
-              v-html="format.call(this._context,item)">
-            </span>
+              :context="context || $parent._self"
+              :template="format(item)">
+            </render>
           </template>
           <template v-else>
-            <span v-html="format.call(this._context,selectedItems[0])"></span>
+            <render :context="context || $parent._self" :template="format(selectedItems[0])"></render>
           </template>
         </span>
       <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
@@ -61,10 +62,8 @@
     <validate
       :name="name"
       :rules="rules"
-      :valid-status="validStatus"
       :custom-validate="customValidate" 
-      :value="value"
-      :results="validateResults">
+      :current="value">
     </validate>
   </div>
 </template>
@@ -76,6 +75,7 @@ import n3Badge from './n3Badge'
 import n3Icon from './n3Icon'
 import n3Input from './n3Input'
 import valMixin from './valMixin'
+import render from './render'
 import validate from './validate'
 import type from './utils/type'
 
@@ -101,6 +101,9 @@ export default {
     },
     size: {
       type: String
+    },
+    context: {
+
     },
     type: {
       type: String,
@@ -172,6 +175,12 @@ export default {
     }
   },
   watch: {
+    value (val) {
+      this.currentValue = val
+    },
+    options (val) {
+      this.currentOptions = val
+    },
     currentValue (val) {
       this.$emit('input', val)
       if (type.isFunction(this.onChange)) {
@@ -184,6 +193,7 @@ export default {
     n3Badge,
     n3Icon,
     n3Input,
+    render,
     validate
   },
   computed: {
@@ -293,7 +303,7 @@ export default {
       if (this.allSelected) {
         this.valueArray = []
       } else {
-        this.valueArray = this.filter(this.options, this.searchText)
+        this.valueArray = this.filter(this.currentOptions, this.searchText)
       }
     },
     addExtra () {

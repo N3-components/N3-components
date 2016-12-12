@@ -12,33 +12,35 @@
       @click.native="inputClick"
       :value="currentValue">
     </n3-input>
-      <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" transition="fadeDown">
-        <div :class="`${prefixCls}-datepicker-inner`">
-          <div :class="`${prefixCls}-datepicker-body`">
-            <div :class="`${prefixCls}-datepicker-ctrl`">
-              <span 
-                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
-                @click="preNextMonthClick(0)">&lt;</span>
-              <span 
-                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
-                @click="preNextMonthClick(1)">&gt;</span>
-              <p @click="switchMouthView">
-              {{stringifyDayHeader(currDate)}}
-              </p>
-            </div>
-            <div :class="`${prefixCls}-datepicker-weekRange`">
-              <span v-for="w in weekRange">{{w}}</span>
-            </div>
-            <div :class="`${prefixCls}-datepicker-dateRange`">
-              <span 
-                v-for="d in dateRange" :class="d.sclass" 
-                @click="daySelect(d.date,d.sclass)">
-                {{d.text}}
-              </span>
+      <transition name="fadeDown">
+        <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" >
+          <div :class="`${prefixCls}-datepicker-inner`">
+            <div :class="`${prefixCls}-datepicker-body`">
+              <div :class="`${prefixCls}-datepicker-ctrl`">
+                <span 
+                  :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+                  @click="preNextMonthClick(0)">&lt;</span>
+                <span 
+                  :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+                  @click="preNextMonthClick(1)">&gt;</span>
+                <p @click="switchMouthView">
+                {{stringifyDayHeader(currDate)}}
+                </p>
+              </div>
+              <div :class="`${prefixCls}-datepicker-weekRange`">
+                <span v-for="w in weekRange">{{w}}</span>
+              </div>
+              <div :class="`${prefixCls}-datepicker-dateRange`">
+                <span 
+                  v-for="d in dateRange" :class="d.sclass" 
+                  @click="daySelect(d.date,d.sclass)">
+                  {{d.text}}
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </transition>
       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayMouthView" >
         <div :class="`${prefixCls}-datepicker-inner`">
           <div :class="`${prefixCls}-datepicker-body`">

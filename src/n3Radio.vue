@@ -10,14 +10,12 @@
     @click.prevent="handleClick" >
   </span>
   <span><slot></slot></span>
- <!--  <validate
+  <validate
     :name="name"
     :rules="rules"
-    :valid-status.sync="validStatus"
     :custom-validate="customValidate" 
-    :value="checked"
-    :results.sync="validateResults">
-  </validate> -->
+    :current="checked">
+  </validate>
 </label>
 </template>
 
@@ -89,13 +87,11 @@ export default {
       this.currentChecked = val
     },
     currentChecked (val) {
-      console.log(val)
       this.$emit('input', val)
     }
   },
   created () {
     this.$on('n3@radiogroupChange', (val) => {
-      console.log(val, this.label)
       this.currentChecked = val === this.label
     })
   },

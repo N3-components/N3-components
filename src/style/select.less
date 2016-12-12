@@ -68,16 +68,18 @@
   .@{prefix-cls}-dropdown-toggle{
     text-align: left;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    padding: @selectPadding; 
     & > i {
-      position: relative;
-      left: 5px;
+      position: absolute;
+      right: @selectArrowLeft;
+      top: 50%;
+      margin-top: -7px;
     }
     & > span{
       display: flex; 
       flex-wrap: wrap; 
       align-items: flex-start; 
-      align-content: flex-start; 
     }
   }
   

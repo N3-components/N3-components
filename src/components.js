@@ -57,6 +57,7 @@ import n3Slider from './n3Slider'
 import n3Slide from './n3Slide'
 import n3Tree from './n3Tree'
 import n3Card from './n3Card'
+import n3Rate from './n3Rate'
 import n3Uploader from './n3Uploader'
 import n3CollapseTransition from './n3CollapseTransition'
 
@@ -85,6 +86,7 @@ const Components = {
   n3Uploader,
   n3Cascader,
   n3Label,
+  n3Rate,
   n3Input,
   n3Textarea,
   n3Dropdown,

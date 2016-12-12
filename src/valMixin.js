@@ -8,15 +8,6 @@ export default {
     },
     rules: {
       type: Array
-    },
-    validStatus: {
-      type: String,
-      default: ''
-    }
-  },
-  data () {
-    return {
-      validateResults: {}
     }
   }
 }

@@ -32,11 +32,10 @@
 
   <validate
     :name="name"
-    :valid-status="validStatus"
+    v-model="validStatus"
     :rules="rules"
     :custom-validate="customValidate"
-    :value="value"
-    :results="validateResults">
+    :current="value">
   </validate>
 
 </div>
@@ -79,7 +78,6 @@ export default {
   },
   data () {
     return {
-      validateResults: {},
       focused: false
     }
   },

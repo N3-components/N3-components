@@ -23,16 +23,17 @@ export default {
     customValidate: {
       type: Function
     },
-    validStatus: {
-      type: String,
-      default: ''
-    },
     rules: {
       type: Array
     },
     hasFeedback: {
       type: Boolean,
       default: true
+    }
+  },
+  data () {
+    return {
+      validStatus: ''
     }
   }
 }

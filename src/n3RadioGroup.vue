@@ -2,14 +2,12 @@
 <div :class="`${prefixCls}-btn-group ${prefixCls}-radio-group`">
     <slot></slot>
 
-    <!-- <validate
+    <validate
       :name="name"
       :rules="rules"
-      :valid-status.sync="validStatus"
       :custom-validate="customValidate" 
-      :value="value"
-      :results.sync="validateResults">
-    </validate> -->
+      :current="value">
+    </validate>
 
   </div>
 </template>

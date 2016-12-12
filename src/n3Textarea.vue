@@ -14,11 +14,9 @@
 
   <validate
     :name="name"
-    :valid-status="validStatus"
     :rules="rules"
     :custom-validate="customValidate" 
-    :value="value"
-    :results="validateResults">
+    :current="value">
   </validate>
 
 </div>
@@ -96,7 +94,7 @@
         return style
       },
       classObj () {
-        let {prefixCl} = this
+        let {prefixCls} = this
         let klass = {}
 
         klass[prefixCls + '-textarea-con'] = true

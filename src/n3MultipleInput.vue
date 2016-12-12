@@ -1,7 +1,7 @@
 <template>
 <div class="inline" >
   <div :class="classObj" :style="{width:width,height:height}" @click="focus">
-    <template v-for="(item, index) in currentValue" track-by="index">
+    <template v-for="(item, index) in currentValue">
         <template v-if="index == currentPosition">
             <n3-typeahead
               ref="typeahead"
@@ -63,14 +63,12 @@
       <span :class="`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`"  @click="setIndex(currentValue.length)"></span>
     </template>
   </div>
-   <!-- <validate
+   <validate
     :name="name"
     :rules="rules"
-    :valid-status.sync="validStatus"
     :custom-validate="customValidate" 
-    :value="value"
-    :results.sync="validateResults">
-  </validate> -->
+    :current="value">
+  </validate>
 </div>
 </template>
 

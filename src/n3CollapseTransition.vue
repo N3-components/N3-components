@@ -37,11 +37,9 @@ export default {
   name: 'n3CollapseTransition',
   methods: {
     enter (el, done) {
-      console.log(el, 1)
       return animate(el, false, 'slideDown', done)
     },
     leave (el, done) {
-      console.log(el, 2)
       return animate(el, true, 'slideUp', done)
     }
   }

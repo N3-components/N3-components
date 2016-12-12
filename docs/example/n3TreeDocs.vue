@@ -5,66 +5,22 @@
       <span class="author"></span>
     </h1>
     <div class="bs-example">
-      <n3-tree :value.sync="id" :data="files1" :expand-all="true"></n3-tree>
+      <n3-tree  v-model="files1" :expand-all="true"></n3-tree>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
-<n3-tree :value.sync="id":data="files1"></n3-tree>
   </script></code></pre>
-    <pre><code class="language-javascript"><script type="language-javascript">
-new Vue({
-    data: {
-        files1: [
-            {
-                label: '新建文件夹1',
-                value: 1,
-                icon: 'folder',
-                children:[]
-            },
-            {
-                label: '新建文件夹3',
-                value: 3,
-                icon: 'folder',
-                children: [
-                    {
-                        label: '我的文档1',
-                        value: 4
-                    },
-                    {
-                        label: '新建文件夹4',
-                        value: 5,
-                        icon: 'folder',
-                        children: [
-                        {
-                            label: '我的文档3',
-                            value: 6
-                        },
-                        {
-                            label: '我的文档4',
-                            value: 7
-                        }
-                        ]
-                    }
-                ]
-            },
-            {
-                label: '我的文档2',
-                value: 2,
-            }
-        ]
-    }
-})
-   </script> </code></pre>
+
 
   <h1 class="page-header">
     <a href="#异步加载" class="anchor">异步加载</a>
     <span class="author"></span>
   </h1>
   <div class="bs-example">
-    <n3-tree 
-      :data="files2"
+    <!-- <n3-tree 
+      v-model="files2"
       :checkable="true" 
       :load-data="loadList"
-    ></n3-tree>
+    ></n3-tree> -->
   </div>
   <pre><code class="language-markup"><script type="language-mark-up">
 <n3-tree :data="files2" :load-data="loadList"></n3-tree>
@@ -106,14 +62,13 @@ new Vue({
       <span class="author"></span>
     </h1>
     <div class="bs-example">
-      <n3-tree 
-        :value.sync="id" 
-        :data="files3" 
+      <!-- <n3-tree 
+        v-model="files3" 
         :default-expand-all="true" 
         :checkable="true" 
         :on-check="onCheck"
         :checked-keys.sync="checkedKeys">
-      </n3-tree>
+      </n3-tree> -->
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
     <n3-tree :value.sync="id" :data="files3" checkable="true"></n3-tree>

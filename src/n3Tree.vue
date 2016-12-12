@@ -1,6 +1,6 @@
 <template>
   <div :class="`${prefixCls}-tree`">
-    <div :class="`${prefixCls}-tree-node-data`" v-for="(index, node) in data">
+    <div :class="`${prefixCls}-tree-node-data`" v-for="(node, index) in data">
       <div :class="`${prefixCls}-tree-node`">
         <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" @click.prevent="clickHandler(index, node.value)">
           <template v-if="node.children">
@@ -26,44 +26,40 @@
           </label>
         </span>
       </div>
-      <div :transition="transition" v-if="areValidNodes(node.children)" :class="`${prefixCls}-tree-children`" v-show="isOpened(index)">
-        <div :class="`${prefixCls}-tree-nodes`">
-          <n3-tree 
-            class="inner" 
-            :id="id"
-            :selected-key.sync="selectedKey"
-            :data.sync="node.children"
-            :parent.once="node.value"
-            :load-data="loadData"
-            :expand-all="expandAll"
-            :checkable="checkable"
-            :checked-keys.sync="checkedKeys"
-            :on-select="onSelect"
-            :on-check="onCheck"
-            :sort="sort"
-          >
-          </n3-tree>
+      <n3-collapse-transition>
+        <div v-if="areValidNodes(node.children)" :class="`${prefixCls}-tree-children`" v-show="isOpened(index)">
+          <div :class="`${prefixCls}-tree-nodes`">
+            <n3-tree 
+              class="inner" 
+              :selected-key="selectedKey"
+              v-model="node.children"
+              :parent="node.value"
+              :load-data="loadData"
+              :expand-all="expandAll"
+              :checkable="checkable"
+              :checked-keys="checkedKeys"
+              :on-select="onSelect"
+              :on-check="onCheck"
+              :sort="sort"
+            >
+            </n3-tree>
+          </div>
         </div>
-      </div>
+      </n3-collapse-transition>
     </div>
   </div>
 </template>
 
 <script>
 import type from './utils/type'
+import events from './utils/events'
+import n3CollapseTransition from './n3CollapseTransition'
 
 export default {
   name: 'n3Tree',
+  mixins: [events],
   props: {
-    id: {
-      type: Number,
-      default: ''
-    },
-    data: {
-      type: Array,
-      default () {
-        return []
-      }
+    value: {
     },
     sort: {
       type: Boolean,
@@ -107,10 +103,6 @@ export default {
       type: String,
       default: 'file'
     },
-    transition: {
-      type: String,
-      default: 'collapse'
-    },
     loadData: {
       type: Function,
       default: null
@@ -134,9 +126,23 @@ export default {
   },
   data () {
     return {
-      loading: -1
+      loading: -1,
+      data: this.value,
+      sKey: this.selectedKey,
+      cKey: this.checkedKeys
     }
   },
+
+  components: {
+    n3CollapseTransition
+  },
+
+  watch: {
+    data (val) {
+      this.$emit('input', val)
+    }
+  },
+
   methods: {
     /**
      * Click Handler
@@ -157,7 +163,7 @@ export default {
       }
     },
 
-    lazyLoadHandler(index, value) {
+    lazyLoadHandler (index, value) {
       let self = this
       this.loading = index
       let promise = this.loadData(value)
@@ -167,7 +173,7 @@ export default {
             console.error(`Loaded Data should be an array: ${res}`)
             return
           }
-          self.$set(`data[${index}].children`, res)
+          self.$set(this.data[index], 'children', res)
           if (self.checkable && self.isChecked(value)) {
             [].push.apply(self.checkedKeys, res.map(item => item.value).filter(item => item !== undefined))
           }
@@ -207,10 +213,10 @@ export default {
       }
       // Init
       if (this.data[index].isOpened === undefined) {
-        this.$set('data[' + index + '].isOpened', this.expandAll && this.hasSelectedChild(index))
+        this.$set(this.data[index], 'isOpened', this.expandAll && this.hasSelectedChild(index))
       }
       // General
-      this.$set('data[' + index + '].isOpened', !this.data[index].isOpened)
+      this.$set(this.data[index], 'isOpened', !this.data[index].isOpened)
     },
 
     /**
@@ -277,8 +283,8 @@ export default {
      */
     checkHandler (index, value) {
       let flag = this.isChecked(value)
-      this.$broadcast('n3@changeChildChecked', value, flag)
-      this.$dispatch('n3@changeParentChecked', this.parent)
+      this.broadcast('n3Tree', 'n3@changeChildChecked', value, flag)
+      this.dispatch('n3Tree', 'n3@changeParentChecked', this.parent)
       if (type.isFunction(this.onCheck)) {
         try {
           this.onCheck(this.checkedKeys)
@@ -299,11 +305,11 @@ export default {
         value = this.data[index].value
         if (!this.isChecked(value) && flag) {
           checkedKeys.push(value)
-          this.$broadcast('n3@changeChildChecked', value, true)
+          this.broadcast('n3Tree', 'n3@changeChildChecked', value, true)
         }
         if (this.isChecked(value) && !flag) {
           checkedKeys.$remove(value)
-          this.$broadcast('n3@changeChildChecked', value, false)
+          this.broadcast('n3Tree', 'n3@changeChildChecked', value, false)
         }
       }
     },
@@ -322,7 +328,7 @@ export default {
       // Async load doesn't support expanding all
       if (self.expandAll && !type.isFunction(self.loadData)) {
         self.data.forEach((item, index) => {
-          self.$set('data[' + index + '].isOpened', true)
+          self.$set(this.data[index], 'isOpened', true)
         })
       }
     },
@@ -330,26 +336,19 @@ export default {
     /**
      * Check Node Checked
      */
-    isChecked(value) {
+    isChecked (value) {
       return this.checkedKeys.indexOf(value) > -1
     }
   },
 
-  events: {
-    /**
-     * Refresh Children Checked(向下广播)
-     */
-    'n3@changeChildChecked' (parent, value) {
+  created () {
+    this.$on('n3@changeChildChecked', (parent, value) => {
       if (this.parent === parent) {
         this.checkAll(value)
       }
-    },
+    })
 
-    /**
-     * Refresh Parent Checked(向上冒泡)
-     * @param {Mixed} parent 源节点的parent value
-     */
-    'n3@changeParentChecked' (parent) {
+    this.$on('n3@changeParentChecked', (parent) => {
       let node
       let children
       let j
@@ -365,7 +364,7 @@ export default {
             if (!this.isChecked(children[j].value)) {
               if (this.isChecked(node.value)) {
                 checkedKeys.$remove(node.value)
-                this.$dispatch('n3@changeParentChecked', this.parent)
+                this.dispatch('n3@changeParentChecked', this.parent)
               }
               break
             }
@@ -373,23 +372,21 @@ export default {
           // 子节点全部被选中，父节点改为选中状态
           if (j === children.length && !this.isChecked(node.value)) {
             checkedKeys.push(node.value)
-            this.$dispatch('n3@changeParentChecked', this.parent)
+            this.dispatch('n3@changeParentChecked', this.parent)
           }
           break
         }
       }
-    }
+    })
   },
 
-  created () {
-    if (!this.id) this.id = this._uid
-  },
-
-  ready () {
-    if (this.sort) {
-      this._sort()
-    }
-    this.expand()
+  mounted () {
+    this.$nextTick(() => {
+      if (this.sort) {
+        this._sort()
+      }
+      this.expand()
+    })
   }
 }
 </script>
