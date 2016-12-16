@@ -3,7 +3,7 @@
     <h1 class="page-header"><a href="#文件上传" class="anchor">文件上传</a><span class="author"> </span></h1>
     <div class="bs-example">
       <h4>点击</h4>
-      <n3-uploader url=""></n3-uploader>
+      <n3-uploader url="" ></n3-uploader>
       <hr>
        <h4>拖拽</h4>
       <n3-uploader type="drag" ></n3-uploader>
@@ -59,6 +59,20 @@
         <td><code>String</code></td>
         <td>300px</td>
         <td>拖拽框宽度</td>
+      </tr>
+      </tr>
+      <tr>
+        <td>show-list</td>
+        <td><code>Boolean</code></td>
+        <td>true</td>
+        <td>是否显示上传文件列表</td>
+      </tr>
+      </tr>
+      <tr>
+        <td>upload-list</td>
+        <td><code>Array</code></td>
+        <td></td>
+        <td>上传文件列表 <code>.sync</code></td>
       </tr>
       <tr>
         <td>drag-height</td>
@@ -122,6 +136,7 @@ function () {
 export default {
   data () {
     return {
+      list: []
     }
   }
 }
