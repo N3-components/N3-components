@@ -5,7 +5,7 @@
       <span class="author"></span>
     </h1>
     <div class="bs-example">
-      <n3-tree  v-model="files1" :expand-all="true"></n3-tree>
+      <n3-tree v-model="files1" :expand-all="true"></n3-tree>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
   </script></code></pre>
@@ -16,11 +16,11 @@
     <span class="author"></span>
   </h1>
   <div class="bs-example">
-    <!-- <n3-tree 
+     <n3-tree 
       v-model="files2"
       :checkable="true" 
       :load-data="loadList"
-    ></n3-tree> -->
+    ></n3-tree> 
   </div>
   <pre><code class="language-markup"><script type="language-mark-up">
 <n3-tree :data="files2" :load-data="loadList"></n3-tree>
@@ -72,7 +72,7 @@ new Vue({
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
     <n3-tree :value.sync="id" :data="files3" checkable="true"></n3-tree>
-    </script> </code></pre>
+    </script></code></pre>
 
     <pre><code class="language-javascript"><script type="language-javascript">
 new Vue({
