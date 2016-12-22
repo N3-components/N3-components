@@ -16,7 +16,7 @@
           </n3-button>
         </slot>
       </label>
-      <div :class="[prefixCls + '-upload-list']">
+      <div :class="[prefixCls + '-upload-list']" v-if="showList">
         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
           <div :class="[prefixCls + '-upload-item-info']">
             <n3-icon type="file-text-o"
@@ -56,7 +56,7 @@
         <span v-if="!advanceDrag">当前环境不支持拖拽上传，请点此上传</span>
       </label>
       </div>
-      <div :class="[prefixCls + '-upload-list']">
+      <div :class="[prefixCls + '-upload-list']" v-if="showList">
         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
           <div :class="[prefixCls + '-upload-item-info']">
             <n3-icon type="file-text-o"
@@ -118,6 +118,10 @@
       dragHeight: {
         type: String,
         default: '200px'
+      },
+      showList: {
+        type: Boolean,
+        default: true
       },
       onError: {
         type: Function,

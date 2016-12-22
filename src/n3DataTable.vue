@@ -64,6 +64,7 @@
                     @change="onCheckAll"/>
               </th>
               <th v-for="col in initColumns" 
+                  v-if="col.show && col.colspan != 0"
                   :style="{width: col.width}" 
                   :class="{'pointer': col.sort}" 
                   @click="sort(col, col.sort)" 
@@ -95,6 +96,7 @@
                     v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
                 </td>
                 <td v-for="col in initColumns"
+                  v-if="col.show && col.colspan != 0"
                   :colspan="colspan(col,data)"
                   :rowspan="rowspan(col,data)">
                   <template v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0">
