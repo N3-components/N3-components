@@ -63,13 +63,11 @@
                     type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
                     @change="onCheckAll"/>
               </th>
-              <th v-for="col in initColumns" 
-                  v-if="col.show && col.colspan != 0"
+              <th v-for="col in showColumns" 
                   :style="{width: col.width}" 
                   :class="{'pointer': col.sort}" 
                   @click="sort(col, col.sort)" 
                   :colspan="col.colspan === undefined ? 1 : col.colspan"> 
-                  <template v-if="col.show && col.colspan != 0">
                     <span>{{col.title}} </span> 
                     <div :class="`${prefixCls}-data-table-sort pull-right`" v-if="col.sort" >
                       <n3-icon
@@ -83,7 +81,6 @@
                         type="caret-down">
                       </n3-icon>
                     </div>
-                  </template>
               </th>
             </tr>
           </thead>
@@ -95,8 +92,7 @@
                     :value="stringify(data)" @change.stop="onCheckOne($event,data)" 
                     v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
                 </td>
-                <td v-for="col in initColumns"
-                  v-if="col.show && col.colspan != 0"
+                <td v-for="col in showColumns"
                   :colspan="colspan(col,data)"
                   :rowspan="rowspan(col,data)">
                   <template v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0">
@@ -280,6 +276,11 @@ export default {
     render
   },
   computed: {
+    showColumns () {
+      return this.initColumns.filter(i => {
+        return i.show && i.colspan != 0     
+      })
+    },
     checkedRows: {
       get () {
         return this.selection.checkRows
