@@ -69,23 +69,25 @@ export default {
     n3CollapseTransition
   },
   mounted () {
-    let el = this.$el
-    let triger = this.$refs.trigger.children[0]
-    if (this.trigger === 'click') {
-      this._clickEvent = EventListener.listen(triger, 'click', this.toggleDropdown)
-      this._closeEvent = EventListener.listen(window, 'click', (e) => {
-        if (!this.clickClose && !el.contains(e.target)) {
+    this.$nextTick(() => {
+      let el = this.$el
+      let triger = this.$refs.trigger.children[0]
+      if (this.trigger === 'click') {
+        this._clickEvent = EventListener.listen(triger, 'click', this.toggleDropdown)
+        this._closeEvent = EventListener.listen(window, 'click', (e) => {
+          if (!this.clickClose && !el.contains(e.target)) {
+            this.close()
+          }
+        })
+      } else if (this.trigger === 'hover') {
+        this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
+          this.open()
+        })
+        this._closeEvent = EventListener.listen(this.$el, 'mouseleave', () => {
           this.close()
-        }
-      })
-    } else if (this.trigger === 'hover') {
-      this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
-        this.open()
-      })
-      this._closeEvent = EventListener.listen(this.$el, 'mouseleave', () => {
-        this.close()
-      })
-    }
+        })
+      }
+    })
   },
   beforeDestroy () {
     if (this._closeEvent) this._closeEvent.remove()

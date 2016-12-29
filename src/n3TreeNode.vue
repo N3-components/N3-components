@@ -12,7 +12,7 @@
               <n3-loading color="primary" size="xs"></n3-loading>
             </span>
           </template>
-          <span :class="`${prefixCls}-tree-select-box`" v-if="checkable && false">
+          <span :class="`${prefixCls}-tree-select-box`" v-if="checkable">
             <input 
               type="checkbox"
               v-model="cKey"
@@ -28,7 +28,7 @@
       <n3-collapse-transition>
         <div v-if="areValidNodes(node.children)" :class="`${prefixCls}-tree-children`" v-show="isOpened(index)">
           <div :class="`${prefixCls}-tree-nodes`">
-            <n3-tree 
+            <n3-tree-node
               class="inner"
               :selected-key="selectedKey"
               v-model="node.children"
@@ -41,7 +41,7 @@
               :on-check="onCheck"
               :sort="sort"
             >
-            </n3-tree>
+            </n3-tree-node>
           </div>
         </div>
       </n3-collapse-transition>
@@ -55,7 +55,7 @@ import events from './utils/events'
 import n3CollapseTransition from './n3CollapseTransition'
 
 export default {
-  name: 'n3Tree',
+  name: 'n3TreeNode',
   mixins: [events],
   props: {
     value: {},
@@ -293,7 +293,6 @@ export default {
      * @param {Mixed} value Value selected.
      */
     checkHandler (index, value) {
-      return false
       let flag = this.isChecked(value)
       this.broadcast('n3Tree', 'n3@changeChildChecked', value, flag)
       this.dispatch('n3Tree', 'n3@changeParentChecked', this.parent)

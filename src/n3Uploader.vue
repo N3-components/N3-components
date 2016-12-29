@@ -25,7 +25,7 @@
             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
             <n3-icon type="times"
               :class="[prefixCls + '-upload-del-info']"
-              @click="delFile($index)">
+              @click.native="delFile($index)">
             </n3-icon>
           </div>
           <n3-progress style="padding:0px 4px">
@@ -173,11 +173,13 @@
       n3Progressbar,
       n3Progress
     },
-    ready () {
-      this._input = document.querySelector('#' + this.uploadId)
-      this.$el = document.querySelector('#upload-' + this.uploadId)
+    mounted () {
+      this.$nextTick(() => {
+        this._input = document.querySelector('#' + this.uploadId)
+        this.$el = document.querySelector('#upload-' + this.uploadId)
 
-      this.advanceDrag && this.addDragEvt()
+        this.advanceDrag && this.addDragEvt()
+      })
     },
     beforeDestroy () {
       let events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter']

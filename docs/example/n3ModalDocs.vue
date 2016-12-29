@@ -119,10 +119,6 @@
 export default {
   data () {
     return {
-      showModal: false,
-      bigModal: false,
-      zoomModal: false,
-      showCustomModal: false
     }
   },
   methods: {

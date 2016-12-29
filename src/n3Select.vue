@@ -35,7 +35,7 @@
               v-model="searchText"
               @keydown.native.enter="addExtra"
             ></n3-input>
-            <n3-icon type="plus-square-o" v-if="extra" @click="addExtra"></n3-icon>
+            <n3-icon type="plus-square-o" v-if="extra" @click.native="addExtra"></n3-icon>
           </li>
           <li v-if="multiple" :class="`${prefixCls}-select-all`">
             <a @click.prevent="selectAll">

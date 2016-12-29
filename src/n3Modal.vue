@@ -16,8 +16,8 @@
       
         <slot name="footer">
           <div :class="`${prefixCls}-modal-footer`">
-            <n3-button  @click="close">取消</n3-button>
-            <n3-button type="primary" @click="confirm">确定</n3-button>
+            <n3-button  @click.native="close">取消</n3-button>
+            <n3-button type="primary" @click.native="confirm">确定</n3-button>
           </div>
         </slot>
       </div>

@@ -55,12 +55,14 @@ export default {
     }
   },
   mounted () {
-    for (var c in this.$parent.$children) {
-      if (this.$parent.$children[c].$el == this.$el) {
-        this.index = c
-        break
+    this.$nextTick(() => {
+      for (var c in this.$parent.$children) {
+        if (this.$parent.$children[c].$el == this.$el) {
+          this.index = c
+          break
+        }
       }
-    }
+    })
   }
 }
 </script>

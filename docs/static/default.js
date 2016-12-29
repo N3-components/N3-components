@@ -11129,19 +11129,21 @@
 	      var _this = this;
 	
 	      if (val) {
-	        if (this.placement === 'top' || this.placement === 'bottom') {
-	          this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px';
-	        } else if (this.placement === 'center') {
-	          this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px';
-	          this.$el.style.marginTop = -1 * (this.$el.offsetHeight / 2) + 'px';
-	        }
-	      }
+	        this.$nextTick(function () {
+	          if (_this.placement === 'top' || _this.placement === 'bottom') {
+	            _this.$el.style.marginLeft = -1 * (_this.$el.offsetWidth / 2) + 'px';
+	          } else if (_this.placement === 'center') {
+	            _this.$el.style.marginLeft = -1 * (_this.$el.offsetWidth / 2) + 'px';
+	            _this.$el.style.marginTop = -1 * (_this.$el.offsetHeight / 2) + 'px';
+	          }
 	
-	      if (this._timeout) clearTimeout(this._timeout);
-	      if (val && !!this.duration) {
-	        this._timeout = setTimeout(function () {
-	          _this.isShow = false;
-	        }, this.duration);
+	          if (_this._timeout) clearTimeout(_this._timeout);
+	          if (val && !!_this.duration) {
+	            _this._timeout = setTimeout(function () {
+	              _this.isShow = false;
+	            }, _this.duration);
+	          }
+	        });
 	      }
 	    }
 	  },
@@ -13385,12 +13387,7 @@
 	
 	exports.default = {
 	  data: function data() {
-	    return {
-	      showModal: false,
-	      bigModal: false,
-	      zoomModal: false,
-	      showCustomModal: false
-	    };
+	    return {};
 	  },
 	
 	  methods: {
@@ -13462,11 +13459,7 @@
 	//       <n3-input v-model="value" ref="input" ></n3-input>
 	//       <n3-button @click.native="$refs.input.$emit('focus')">聚焦</n3-button>
 	//     </div>
-	//     <pre><code class="language-markup"><script type="language-mark-up">
 	
-	// <n3-button @click="focused=true">聚焦</n3-button>
-	//     </script></code></pre>
-	//     <br>
 	//     <table class="table table-bordered">
 	//       <thead>
 	//         <tr>
@@ -13521,7 +13514,7 @@
 /* 545 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"输入框\"  >\n    <h1 class=\"page-header\"><a href=\"#输入框\" class=\"anchor\">输入框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-input v-model=\"value\" ref=\"input\" ></n3-input>\n      <n3-button @click.native=\"$refs.input.$emit('focus')\">聚焦</n3-button>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n\n<n3-button @click=\"focused=true\">聚焦</n3-button>\n    </script></code></pre>\n    <br>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>password</td>\n          <td><code>String</code></td>\n          <td>false</td>\n          <td>密码输入框</td>\n        </tr>\n        <tr>\n          <td>on-blur</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>失去焦点触发函数</td>\n        </tr>\n        <tr>\n          <td>on-focus</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>聚焦触发函数</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"输入框\"  >\n    <h1 class=\"page-header\"><a href=\"#输入框\" class=\"anchor\">输入框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-input v-model=\"value\" ref=\"input\" ></n3-input>\n      <n3-button @click.native=\"$refs.input.$emit('focus')\">聚焦</n3-button>\n    </div>\n\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>password</td>\n          <td><code>String</code></td>\n          <td>false</td>\n          <td>密码输入框</td>\n        </tr>\n        <tr>\n          <td>on-blur</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>失去焦点触发函数</td>\n        </tr>\n        <tr>\n          <td>on-focus</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>聚焦触发函数</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
 /* 546 */
@@ -14396,7 +14389,7 @@
 	
 	//       <h4>
 	//         动态
-	//         <n3-button  @click="dynamicClick">随机变化</n3-button>
+	//         <n3-button  @click.native="dynamicClick">随机变化</n3-button>
 	//       </h4>
 	//       <n3-progress class="margin" >
 	//         <n3-progressbar :now="dynamicData[0] * 2" type="info" ></n3-progressbar>
@@ -14415,7 +14408,7 @@
 	
 	//       <h4>
 	//         叠加
-	//         <n3-button  @click="stackedClick">随机变化</n3-button>
+	//         <n3-button  @click.native="stackedClick">随机变化</n3-button>
 	//       </h4>
 	
 	//       <n3-progress>
@@ -14426,52 +14419,7 @@
 	//       </n3-progressbar>
 	//       </div>
 	//     <pre><code class="language-markup"><script type="language-mark-up">
-	// <h4>静态</h4>
-	// <div class="row">
-	//   <div class="col-md-4">
-	//     <n3-progress>
-	//       <n3-progressbar :now="20" type="success" height="10px"></n3-progressbar>
-	//     </n3-progress>
-	//   </div>
-	//   <div class="col-md-4">
-	//     <n3-progress>
-	//       <n3-progressbar :now="40" type="info"></n3-progressbar>
-	//     </n3-progress>
-	//   </div>
-	// </div>
 	
-	// <hr>
-	
-	// <h4>
-	//   动态
-	//   <n3-button  @click="dynamicClick">随机变化</n3-button>
-	// </h4>
-	// <n3-progress>
-	//   <n3-progressbar :now="dynamicData[0] * 2" type="info" ></n3-progressbar>
-	// </n3-progress>
-	// <n3-progress>
-	//   <n3-progressbar :now="dynamicData[1] * 2" type="warning"></n3-progressbar>
-	// </n3-progress>
-	// <n3-progress>
-	//   <n3-progressbar :now="dynamicData[2] * 2" type="danger"></n3-progressbar>
-	// </n3-progress>
-	// <n3-progress>
-	//   <n3-progressbar :now="dynamicData[3] * 2" type="success" striped></n3-progressbar>
-	// </n3-progress>
-	
-	// <hr>
-	
-	// <h4>
-	//   叠加
-	//   <n3-button  @click="stackedClick">随机变化</n3-button>
-	// </h4>
-	
-	// <n3-progress>
-	//   <n3-progressbar :now="stackedData[0]" label type="warning" striped></n3-progressbar>
-	//   <n3-progressbar :now="stackedData[1]" label type="success" ></n3-progressbar>
-	//   <n3-progressbar :now="stackedData[2]" label type="danger"></n3-progressbar>
-	//   <n3-progressbar :now="stackedData[3]" label type="primary" striped >
-	// </n3-progressbar>
 	//     </script></code></pre>
 	
 	//     <h2>参数</h2>
@@ -14563,7 +14511,7 @@
 /* 562 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"进度条\" _v-30f6f100=\"\">\n    <h1 class=\"page-header\" _v-30f6f100=\"\"><a href=\"#进度条\" class=\"anchor\" _v-30f6f100=\"\">进度条</a><span class=\"author\" _v-30f6f100=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-30f6f100=\"\">\n      <h4 _v-30f6f100=\"\">高度</h4>\n      <div class=\"row\" _v-30f6f100=\"\">\n        <div class=\"col-md-4\" _v-30f6f100=\"\">\n          <n3-progress class=\"margin\" _v-30f6f100=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-30f6f100=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-30f6f100=\"\">\n          <n3-progress class=\"margin\" _v-30f6f100=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-30f6f100=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n\n      <hr _v-30f6f100=\"\">\n\n      <h4 _v-30f6f100=\"\">\n        动态\n        <n3-button @click=\"dynamicClick\" _v-30f6f100=\"\">随机变化</n3-button>\n      </h4>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n\n      <hr _v-30f6f100=\"\">\n\n      <h4 _v-30f6f100=\"\">\n        叠加\n        <n3-button @click=\"stackedClick\" _v-30f6f100=\"\">随机变化</n3-button>\n      </h4>\n\n      <n3-progress _v-30f6f100=\"\">\n        <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-30f6f100=\"\">\n      </n3-progressbar>\n      </n3-progress></div>\n    <pre _v-30f6f100=\"\"><code class=\"language-markup\" _v-30f6f100=\"\"><script type=\"language-mark-up\" _v-30f6f100=\"\">\n<h4>静态</h4>\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <n3-progress>\n      <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n    </n3-progress>\n  </div>\n  <div class=\"col-md-4\">\n    <n3-progress>\n      <n3-progressbar :now=\"40\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n  </div>\n</div>\n\n<hr>\n\n<h4>\n  动态\n  <n3-button  @click=\"dynamicClick\">随机变化</n3-button>\n</h4>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" ></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped></n3-progressbar>\n</n3-progress>\n\n<hr>\n\n<h4>\n  叠加\n  <n3-button  @click=\"stackedClick\">随机变化</n3-button>\n</h4>\n\n<n3-progress>\n  <n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[1]\" label type=\"success\" ></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped >\n</n3-progressbar>\n    </script></code></pre>\n\n    <h2 _v-30f6f100=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-30f6f100=\"\">\n      <thead _v-30f6f100=\"\">\n        <tr _v-30f6f100=\"\">\n         <th _v-30f6f100=\"\">参数名</th>\n          <th _v-30f6f100=\"\">类型</th>\n          <th _v-30f6f100=\"\">默认值</th>\n          <th _v-30f6f100=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-30f6f100=\"\">\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">now</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Number</code></td>\n          <td _v-30f6f100=\"\"></td>\n          <td _v-30f6f100=\"\">当前进度</td>\n        </tr>\n         <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">height</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">String</code></td>\n          <td _v-30f6f100=\"\">20px</td>\n          <td _v-30f6f100=\"\">高度</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">type</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">String</code></td>\n          <td _v-30f6f100=\"\"></td>\n          <td _v-30f6f100=\"\">样式 </td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">label</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\">false</td>\n          <td _v-30f6f100=\"\">是否显示进度提示</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">striped</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">false</code></td>\n          <td _v-30f6f100=\"\">是否显示条纹</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">animated</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">false</code></td>\n          <td _v-30f6f100=\"\">动画效果</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"进度条\" _v-30f6f100=\"\">\n    <h1 class=\"page-header\" _v-30f6f100=\"\"><a href=\"#进度条\" class=\"anchor\" _v-30f6f100=\"\">进度条</a><span class=\"author\" _v-30f6f100=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-30f6f100=\"\">\n      <h4 _v-30f6f100=\"\">高度</h4>\n      <div class=\"row\" _v-30f6f100=\"\">\n        <div class=\"col-md-4\" _v-30f6f100=\"\">\n          <n3-progress class=\"margin\" _v-30f6f100=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-30f6f100=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-30f6f100=\"\">\n          <n3-progress class=\"margin\" _v-30f6f100=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-30f6f100=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n\n      <hr _v-30f6f100=\"\">\n\n      <h4 _v-30f6f100=\"\">\n        动态\n        <n3-button @click.native=\"dynamicClick\" _v-30f6f100=\"\">随机变化</n3-button>\n      </h4>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n\n      <hr _v-30f6f100=\"\">\n\n      <h4 _v-30f6f100=\"\">\n        叠加\n        <n3-button @click.native=\"stackedClick\" _v-30f6f100=\"\">随机变化</n3-button>\n      </h4>\n\n      <n3-progress _v-30f6f100=\"\">\n        <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-30f6f100=\"\">\n      </n3-progressbar>\n      </n3-progress></div>\n    <pre _v-30f6f100=\"\"><code class=\"language-markup\" _v-30f6f100=\"\"><script type=\"language-mark-up\" _v-30f6f100=\"\">\n\n    </script></code></pre>\n\n    <h2 _v-30f6f100=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-30f6f100=\"\">\n      <thead _v-30f6f100=\"\">\n        <tr _v-30f6f100=\"\">\n         <th _v-30f6f100=\"\">参数名</th>\n          <th _v-30f6f100=\"\">类型</th>\n          <th _v-30f6f100=\"\">默认值</th>\n          <th _v-30f6f100=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-30f6f100=\"\">\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">now</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Number</code></td>\n          <td _v-30f6f100=\"\"></td>\n          <td _v-30f6f100=\"\">当前进度</td>\n        </tr>\n         <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">height</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">String</code></td>\n          <td _v-30f6f100=\"\">20px</td>\n          <td _v-30f6f100=\"\">高度</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">type</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">String</code></td>\n          <td _v-30f6f100=\"\"></td>\n          <td _v-30f6f100=\"\">样式 </td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">label</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\">false</td>\n          <td _v-30f6f100=\"\">是否显示进度提示</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">striped</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">false</code></td>\n          <td _v-30f6f100=\"\">是否显示条纹</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">animated</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">false</code></td>\n          <td _v-30f6f100=\"\">动画效果</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 563 */
@@ -16892,7 +16840,7 @@
 	//       <span class="author"></span>
 	//     </h1>
 	//     <div class="bs-example">
-	//       <n3-tree  v-model="files1" :expand-all="true"></n3-tree>
+	//       <n3-tree v-model="files1" :expand-all="true"></n3-tree>
 	//     </div>
 	//     <pre><code class="language-markup"><script type="language-mark-up">
 	//   </script></code></pre>
@@ -16903,11 +16851,11 @@
 	//     <span class="author"></span>
 	//   </h1>
 	//   <div class="bs-example">
-	//     <!-- <n3-tree 
+	//      <n3-tree 
 	//       v-model="files2"
 	//       :checkable="true" 
 	//       :load-data="loadList"
-	//     ></n3-tree> -->
+	//     ></n3-tree> 
 	//   </div>
 	//   <pre><code class="language-markup"><script type="language-mark-up">
 	// <n3-tree :data="files2" :load-data="loadList"></n3-tree>
@@ -16959,7 +16907,7 @@
 	//     </div>
 	//     <pre><code class="language-markup"><script type="language-mark-up">
 	//     <n3-tree :value.sync="id" :data="files3" checkable="true"></n3-tree>
-	//     </script> </code></pre>
+	//     </script></code></pre>
 	
 	//     <pre><code class="language-javascript"><script type="language-javascript">
 	// new Vue({
@@ -17194,7 +17142,7 @@
 /* 603 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"树形视图\">\n    <h1 class=\"page-header\">\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <n3-tree  v-model=\"files1\" :expand-all=\"true\"></n3-tree>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n  </script></code></pre>\n\n\n  <h1 class=\"page-header\">\n    <a href=\"#异步加载\" class=\"anchor\">异步加载</a>\n    <span class=\"author\"></span>\n  </h1>\n  <div class=\"bs-example\">\n    <!-- <n3-tree \n      v-model=\"files2\"\n      :checkable=\"true\" \n      :load-data=\"loadList\"\n    ></n3-tree> -->\n  </div>\n  <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-tree :data=\"files2\" :load-data=\"loadList\"></n3-tree>\n  </script> </code></pre>\n  <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files2: [\n            {\n                label: '根目录',\n                value: 1,\n                children: [],\n                icon: 'folder'\n            }\n        ],\n        loadList(value) {\n            return new Promise((resolve, reject) => {\n                setTimeout(() => {\n                    var res = [{\n                        label: '我的文档' + Math.ceil(Math.random() * 100000),\n                        value: Math.ceil(Math.random() * 100000)\n                    }, {\n                        label: '新建文件夹' + Math.ceil(Math.random() * 100000),\n                        value: Math.ceil(Math.random() * 100000),\n                        children: [],\n                        icon: 'folder'\n                    }]\n                    resolve(res)\n                }, 1000)\n            })\n        }\n    }\n})\n\n  </script></code></pre>\n\n    <h1 class=\"page-header\">    \n      <a href=\"#勾选节点\" class=\"anchor\">勾选节点</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <!-- <n3-tree \n        v-model=\"files3\" \n        :default-expand-all=\"true\" \n        :checkable=\"true\" \n        :on-check=\"onCheck\"\n        :checked-keys.sync=\"checkedKeys\">\n      </n3-tree> -->\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n    <n3-tree :value.sync=\"id\" :data=\"files3\" checkable=\"true\"></n3-tree>\n    </script> </code></pre>\n\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files3: [\n            {\n                label: '新建文件夹1',\n                value: 1,\n                children: []\n            },\n            {\n                label: '我的文档2',\n                value: 2\n            },\n            {\n                label: '新建文件夹3',\n                value: 3,\n                children: [\n                    {\n                        label: '我的文档1',\n                        value: 4\n                    },\n                    {\n                        label: '新建文件夹4',\n                        value: 5,\n                        children: [\n                        {\n                            label: '我的文档3',\n                            value: 6\n                        },\n                        {\n                            label: '我的文档4',\n                            value: 7\n                        }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n})\n        </script> </code></pre>\n\n  <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>树形数据<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>selected-key</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>选中节点的value</td>\n        </tr>\n        <tr>\n          <td>checkable</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否支持checkbox可选</td>\n        </tr>\n        <tr>\n          <td>checked-keys</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>选中的节点的value<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>treeIcon</td>\n          <td><code>String</code></td>\n          <td>angle-right</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>tree-open-icon</td>\n          <td><code>String</code></td>\n          <td>angle-down</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>icon</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>图标</td>\n        </tr>\n        <tr>\n          <td>load-data</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>异步加载函数</td>\n        </tr>\n        <tr>\n          <td>on-select</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>选择触发函数</td>\n        </tr>\n        <tr>\n          <td>on-expand</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>展开触发函数</td>\n        </tr>\n        <tr>\n          <td>expand-all</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>全部展开（异步加载时不支持全部展开）</td>\n        </tr>\n        <tr>\n          <td>sort</td>\n          <td><code>Boolean</code></td>\n          <td>true</td>\n          <td>有子节点的排在没有的前面</td>\n        </tr>\n        <tr>\n          <td>on-check</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>checkbox选中触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"树形视图\">\n    <h1 class=\"page-header\">\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <n3-tree v-model=\"files1\" :expand-all=\"true\"></n3-tree>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n  </script></code></pre>\n\n\n  <h1 class=\"page-header\">\n    <a href=\"#异步加载\" class=\"anchor\">异步加载</a>\n    <span class=\"author\"></span>\n  </h1>\n  <div class=\"bs-example\">\n     <n3-tree \n      v-model=\"files2\"\n      :checkable=\"true\" \n      :load-data=\"loadList\"\n    ></n3-tree> \n  </div>\n  <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-tree :data=\"files2\" :load-data=\"loadList\"></n3-tree>\n  </script> </code></pre>\n  <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files2: [\n            {\n                label: '根目录',\n                value: 1,\n                children: [],\n                icon: 'folder'\n            }\n        ],\n        loadList(value) {\n            return new Promise((resolve, reject) => {\n                setTimeout(() => {\n                    var res = [{\n                        label: '我的文档' + Math.ceil(Math.random() * 100000),\n                        value: Math.ceil(Math.random() * 100000)\n                    }, {\n                        label: '新建文件夹' + Math.ceil(Math.random() * 100000),\n                        value: Math.ceil(Math.random() * 100000),\n                        children: [],\n                        icon: 'folder'\n                    }]\n                    resolve(res)\n                }, 1000)\n            })\n        }\n    }\n})\n\n  </script></code></pre>\n\n    <h1 class=\"page-header\">    \n      <a href=\"#勾选节点\" class=\"anchor\">勾选节点</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <!-- <n3-tree \n        v-model=\"files3\" \n        :default-expand-all=\"true\" \n        :checkable=\"true\" \n        :on-check=\"onCheck\"\n        :checked-keys.sync=\"checkedKeys\">\n      </n3-tree> -->\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n    <n3-tree :value.sync=\"id\" :data=\"files3\" checkable=\"true\"></n3-tree>\n    </script></code></pre>\n\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n    data: {\n        files3: [\n            {\n                label: '新建文件夹1',\n                value: 1,\n                children: []\n            },\n            {\n                label: '我的文档2',\n                value: 2\n            },\n            {\n                label: '新建文件夹3',\n                value: 3,\n                children: [\n                    {\n                        label: '我的文档1',\n                        value: 4\n                    },\n                    {\n                        label: '新建文件夹4',\n                        value: 5,\n                        children: [\n                        {\n                            label: '我的文档3',\n                            value: 6\n                        },\n                        {\n                            label: '我的文档4',\n                            value: 7\n                        }\n                        ]\n                    }\n                ]\n            }\n        ]\n    }\n})\n        </script> </code></pre>\n\n  <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>树形数据<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>selected-key</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>选中节点的value</td>\n        </tr>\n        <tr>\n          <td>checkable</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否支持checkbox可选</td>\n        </tr>\n        <tr>\n          <td>checked-keys</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>选中的节点的value<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>treeIcon</td>\n          <td><code>String</code></td>\n          <td>angle-right</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>tree-open-icon</td>\n          <td><code>String</code></td>\n          <td>angle-down</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>icon</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>图标</td>\n        </tr>\n        <tr>\n          <td>load-data</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>异步加载函数</td>\n        </tr>\n        <tr>\n          <td>on-select</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>选择触发函数</td>\n        </tr>\n        <tr>\n          <td>on-expand</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>展开触发函数</td>\n        </tr>\n        <tr>\n          <td>expand-all</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>全部展开（异步加载时不支持全部展开）</td>\n        </tr>\n        <tr>\n          <td>sort</td>\n          <td><code>Boolean</code></td>\n          <td>true</td>\n          <td>有子节点的排在没有的前面</td>\n        </tr>\n        <tr>\n          <td>on-check</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>checkbox选中触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 604 */
@@ -17617,7 +17565,6 @@
 	
 	//                  <n3-form-item>
 	//                      <n3-button type="primary" @click.native="submit" >提交</n3-button>
-	//                      <!-- <n3-button type="primary" @click="validate = false" >关闭验证</n3-button> -->
 	//                 </n3-form-item>
 	//             </n3-form>
 	
@@ -17892,7 +17839,7 @@
 /* 612 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"表单验证\"  >\n        <h1 class=\"page-header\"><a href=\"#表单验证\" class=\"anchor\">表单验证</a><span class=\"author\"> </span></h1>\n        <div class=\"bs-example\">\n          <n3-form ref='form' >\n                <n3-form-item\n                    need\n                    label=\"姓名\"\n                    :label-col=\"3\">\n                <n3-input\n                    name=\"name\"\n                    v-model=\"model.name\"\n                    :rules=\"[{type:'required'}]\"\n                    :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"年龄\"\n                    :label-col=\"3\">\n                <n3-input-number\n                    name=\"age\"\n                    v-model=\"model.age\"\n                    :rules=\"[{type:'number'},{type:'required'}]\">\n                </n3-input-number>\n                </n3-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"地址\"\n                    :label-col=\"3\">\n                <n3-cascader\n                    name=\"address\"\n                    :options=\"options\"\n                    v-model=\"model.address\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-cascader>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"生日\"\n                    :label-col=\"3\">\n                <n3-datepicker\n                    name=\"birthday\"\n                    v-model=\"model.birthday\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-datepicker>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"学校\"\n                    :label-col=\"3\">\n                <n3-typeahead\n                    name=\"学校\"\n                    v-model = \"model.school\"\n                    :data=\"schoolData\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-typeahead>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"爱好\"\n                    :label-col=\"3\">\n                <n3-checkbox-group\n                    name=\"hobby\"\n                    v-model = \"model.hobby\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-checkbox label=\"0\">看书</n3-checkbox>\n                    <n3-checkbox label=\"1\">运动</n3-checkbox>\n                    <n3-checkbox value=\"2\">旅行</n3-checkbox>\n                </n3-checkbox-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"性别\"\n                    :label-col=\"3\">\n                <n3-radio-group\n                    name=\"sex\"\n                    v-model = \"model.sex\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-radio label=\"0\">男</n3-radio>\n                    <n3-radio label=\"1\">女</n3-radio>\n                </n3-radio-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"专业\"\n                    :label-col=\"3\">\n                <n3-select\n                    name=\"sex\"\n                    :options='profession'\n                    v-model = \"model.profession\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-select>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"级别\"\n                    :label-col=\"3\">\n                  <n3-slider\n                      name=\"level\"\n                      v-model=\"model.level\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-slider>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"开启状态\"\n                    :label-col=\"3\">\n                  <n3-switch\n                      name=\"state\"\n                      v-model = \"model.state\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-switch>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"喜欢的明星\"\n                    :label-col=\"3\">\n                  <n3-multiple-input\n                      name=\"star\"\n                      v-model = \"model.star\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-multiple-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"想说的话\"\n                    :label-col=\"3\">\n                  <n3-textarea\n                      name=\"suggestion\"\n                      v-model = \"model.suggestion\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-textarea>\n                </n3-form-item>\n\n                 <n3-form-item>\n                     <n3-button type=\"primary\" @click.native=\"submit\" >提交</n3-button>\n                     <!-- <n3-button type=\"primary\" @click=\"validate = false\" >关闭验证</n3-button> -->\n                </n3-form-item>\n            </n3-form>\n\n            <h3>inline</h3>  \n\n          <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n\n\n\n          </script></code></pre>\n          <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\n\n          </script></code></pre>\n\n          <h2>n3-from参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>type</td>\n                <td><code>String</code> 如:  <code>horizontal</code><code>inline</code></td>\n                <td>horizontal</td>\n                <td>布局方式</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开验证</td>\n              </tr>\n              <tr>\n                <td>result</td>\n                <td><code>Object</code></td>\n                <td></td>\n                <td>验证结果</td>\n              </tr>\n              <tr>\n                <td>on-validate-change</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>验证结果变化</td>\n              </tr>\n            </tbody>\n          </table>\n          <p>验证建议直接调用组件的<code style=\"color:red\">validateFields</code> 方法，具体可查看样例</p>\n\n          <h2>n3-from-item参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>label</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>label-col</td>\n                <td><code>Number</code></td>\n                <td>2</td>\n                <td>label所占栅格数</td>\n              </tr>\n              <tr>\n                <td>wrap-col</td>\n                <td><code>Number</code></td>\n                <td>12</td>\n                <td>item所占栅格数</td>\n              </tr>\n              <tr>\n                <td>form-col</td>\n                <td><code>Number</code></td>\n                <td></td>\n                <td>表单元素所占栅格数</td>\n              </tr>\n              <tr>\n                <td>need</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>红点标记</td>\n              </tr>\n            </tbody>\n          </table>\n\n\n          <h2>待验证组件参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>name</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td>标示输入项，与结果内的值对应</td>\n              </tr>\n              <tr>\n                <td>readonly</td>\n                <td><code>Boolean</code></td>\n                <td><code>false</code></td>\n                <td>只读，无法输入，级联，时间日期等组件默认无法手动输入</td>\n              </tr>\n              <tr>\n                <td>disabled</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>禁止改变值</td>\n              </tr>\n              <tr>\n                <td>width</td>\n                <td><code>String</code></td>\n                <td>220px</td>\n                <td>宽度</td>\n              </tr>\n             <!--  <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开检验</td>\n              </tr> -->\n              <tr>\n                <td>placeholder</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>custom－validate</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>自定义检验器\n                <code>\n                function(value){\n                  if(value){\n                    return {\n                      validStatus: 'success'\n                    }\n                  }else{\n                    return {\n                      validStatus: 'error',\n                      tips: '出错啦'\n                    }\n                  }\n                }\n                </code>\n                </td>\n              </tr>\n              <tr>\n                <td>rules</td>\n                <td><code>Array</code></td>\n                <td>[]</td>\n                <td>规则数组 ,如\n                  <code>\n                  [{type: 'required' }, {type: 'maxlength=6' }, {type: 'minlength=3' }, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code>\n                </td>\n              </tr>\n              <tr>\n                <td>hasFeedback</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>是否显示状态icon</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n    </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"表单验证\"  >\n        <h1 class=\"page-header\"><a href=\"#表单验证\" class=\"anchor\">表单验证</a><span class=\"author\"> </span></h1>\n        <div class=\"bs-example\">\n          <n3-form ref='form' >\n                <n3-form-item\n                    need\n                    label=\"姓名\"\n                    :label-col=\"3\">\n                <n3-input\n                    name=\"name\"\n                    v-model=\"model.name\"\n                    :rules=\"[{type:'required'}]\"\n                    :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"年龄\"\n                    :label-col=\"3\">\n                <n3-input-number\n                    name=\"age\"\n                    v-model=\"model.age\"\n                    :rules=\"[{type:'number'},{type:'required'}]\">\n                </n3-input-number>\n                </n3-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"地址\"\n                    :label-col=\"3\">\n                <n3-cascader\n                    name=\"address\"\n                    :options=\"options\"\n                    v-model=\"model.address\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-cascader>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"生日\"\n                    :label-col=\"3\">\n                <n3-datepicker\n                    name=\"birthday\"\n                    v-model=\"model.birthday\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-datepicker>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"学校\"\n                    :label-col=\"3\">\n                <n3-typeahead\n                    name=\"学校\"\n                    v-model = \"model.school\"\n                    :data=\"schoolData\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-typeahead>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"爱好\"\n                    :label-col=\"3\">\n                <n3-checkbox-group\n                    name=\"hobby\"\n                    v-model = \"model.hobby\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-checkbox label=\"0\">看书</n3-checkbox>\n                    <n3-checkbox label=\"1\">运动</n3-checkbox>\n                    <n3-checkbox value=\"2\">旅行</n3-checkbox>\n                </n3-checkbox-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"性别\"\n                    :label-col=\"3\">\n                <n3-radio-group\n                    name=\"sex\"\n                    v-model = \"model.sex\"\n                    :rules=\"[{type:'required'}]\">\n                    <n3-radio label=\"0\">男</n3-radio>\n                    <n3-radio label=\"1\">女</n3-radio>\n                </n3-radio-group>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"专业\"\n                    :label-col=\"3\">\n                <n3-select\n                    name=\"sex\"\n                    :options='profession'\n                    v-model = \"model.profession\"\n                    :rules=\"[{type:'required'}]\">\n                </n3-select>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"级别\"\n                    :label-col=\"3\">\n                  <n3-slider\n                      name=\"level\"\n                      v-model=\"model.level\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-slider>\n                </n3-form-item>\n\n                <n3-form-item\n                    need\n                    label=\"开启状态\"\n                    :label-col=\"3\">\n                  <n3-switch\n                      name=\"state\"\n                      v-model = \"model.state\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-switch>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"喜欢的明星\"\n                    :label-col=\"3\">\n                  <n3-multiple-input\n                      name=\"star\"\n                      v-model = \"model.star\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-multiple-input>\n                </n3-form-item>\n                <n3-form-item\n                    need\n                    label=\"想说的话\"\n                    :label-col=\"3\">\n                  <n3-textarea\n                      name=\"suggestion\"\n                      v-model = \"model.suggestion\"\n                      :rules=\"[{type:'required'}]\">\n                  </n3-textarea>\n                </n3-form-item>\n\n                 <n3-form-item>\n                     <n3-button type=\"primary\" @click.native=\"submit\" >提交</n3-button>\n                </n3-form-item>\n            </n3-form>\n\n            <h3>inline</h3>  \n\n          <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n\n\n\n          </script></code></pre>\n          <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\n\n          </script></code></pre>\n\n          <h2>n3-from参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>type</td>\n                <td><code>String</code> 如:  <code>horizontal</code><code>inline</code></td>\n                <td>horizontal</td>\n                <td>布局方式</td>\n              </tr>\n              <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开验证</td>\n              </tr>\n              <tr>\n                <td>result</td>\n                <td><code>Object</code></td>\n                <td></td>\n                <td>验证结果</td>\n              </tr>\n              <tr>\n                <td>on-validate-change</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>验证结果变化</td>\n              </tr>\n            </tbody>\n          </table>\n          <p>验证建议直接调用组件的<code style=\"color:red\">validateFields</code> 方法，具体可查看样例</p>\n\n          <h2>n3-from-item参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>label</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>label-col</td>\n                <td><code>Number</code></td>\n                <td>2</td>\n                <td>label所占栅格数</td>\n              </tr>\n              <tr>\n                <td>wrap-col</td>\n                <td><code>Number</code></td>\n                <td>12</td>\n                <td>item所占栅格数</td>\n              </tr>\n              <tr>\n                <td>form-col</td>\n                <td><code>Number</code></td>\n                <td></td>\n                <td>表单元素所占栅格数</td>\n              </tr>\n              <tr>\n                <td>need</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>红点标记</td>\n              </tr>\n            </tbody>\n          </table>\n\n\n          <h2>待验证组件参数</h2>\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>参数名</th>\n                <th>类型</th>\n                <th>默认值</th>\n                <th>说明</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>name</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td>标示输入项，与结果内的值对应</td>\n              </tr>\n              <tr>\n                <td>readonly</td>\n                <td><code>Boolean</code></td>\n                <td><code>false</code></td>\n                <td>只读，无法输入，级联，时间日期等组件默认无法手动输入</td>\n              </tr>\n              <tr>\n                <td>disabled</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>禁止改变值</td>\n              </tr>\n              <tr>\n                <td>width</td>\n                <td><code>String</code></td>\n                <td>220px</td>\n                <td>宽度</td>\n              </tr>\n             <!--  <tr>\n                <td>validate</td>\n                <td><code>Boolean</code></td>\n                <td>false</td>\n                <td>是否打开检验</td>\n              </tr> -->\n              <tr>\n                <td>placeholder</td>\n                <td><code>String</code></td>\n                <td></td>\n                <td></td>\n              </tr>\n              <tr>\n                <td>custom－validate</td>\n                <td><code>Function</code></td>\n                <td></td>\n                <td>自定义检验器\n                <code>\n                function(value){\n                  if(value){\n                    return {\n                      validStatus: 'success'\n                    }\n                  }else{\n                    return {\n                      validStatus: 'error',\n                      tips: '出错啦'\n                    }\n                  }\n                }\n                </code>\n                </td>\n              </tr>\n              <tr>\n                <td>rules</td>\n                <td><code>Array</code></td>\n                <td>[]</td>\n                <td>规则数组 ,如\n                  <code>\n                  [{type: 'required' }, {type: 'maxlength=6' }, {type: 'minlength=3' }, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code>\n                </td>\n              </tr>\n              <tr>\n                <td>hasFeedback</td>\n                <td><code>Boolean</code></td>\n                <td></td>\n                <td>是否显示状态icon</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n    </div>";
 
 /***/ },
 /* 613 */
@@ -27365,21 +27312,22 @@
 	  mounted: function mounted() {
 	    var _this2 = this;
 	
-	    var el = this.$el;
-	    var self = this;
-	
-	    function intervalManager(flag, func, time) {
-	      flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID);
-	    }
-	    if (this.interval) {
-	      intervalManager(true, this.nextClick, this.interval);
-	      el.addEventListener('mouseenter', function () {
-	        return intervalManager(false);
-	      });
-	      el.addEventListener('mouseleave', function () {
-	        return intervalManager(true, _this2.nextClick, _this2.interval);
-	      });
-	    }
+	    this.$nextTick(function () {
+	      var el = _this2.$el;
+	      var self = _this2;
+	      function intervalManager(flag, func, time) {
+	        flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID);
+	      }
+	      if (_this2.interval) {
+	        intervalManager(true, _this2.nextClick, _this2.interval);
+	        el.addEventListener('mouseenter', function () {
+	          return intervalManager(false);
+	        });
+	        el.addEventListener('mouseleave', function () {
+	          return intervalManager(true, _this2.nextClick, _this2.interval);
+	        });
+	      }
+	    });
 	  },
 	  beforeDestroy: function beforeDestroy() {
 	    if (this.intervalID) clearInterval(this.intervalID);
@@ -29035,12 +28983,16 @@
 	    this.setMenu();
 	  },
 	  mounted: function mounted() {
-	    var el = this.$el;
-	    var self = this;
-	    self._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
-	      if (!el.contains(e.target)) {
-	        self.show = false;
-	      }
+	    var _this = this;
+	
+	    this.$nextTick(function () {
+	      var el = _this.$el;
+	      var self = _this;
+	      self._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
+	        if (!el.contains(e.target)) {
+	          self.show = false;
+	        }
+	      });
 	    });
 	  },
 	
@@ -31486,44 +31438,47 @@
 	    var _this2 = this;
 	
 	    if (!this.$refs.popover) return;
-	    var popover = this.$refs.popover;
-	    var triger = this.$refs.trigger.children[0];
-	    if (this.trigger === 'hover') {
-	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
-	        _this2.isShow = true;
-	      });
-	      this._mouseleaveEvent = _EventListener2.default.listen(triger, 'mouseleave', function () {
-	        _this2.isShow = false;
-	      });
-	    } else if (this.trigger === 'focus') {
-	      var input = this.$refs.trigger.querySelector('input');
-	      if (input) {
-	        this._focusEvent = _EventListener2.default.listen(input, 'focus', function () {
+	
+	    this.$nextTick(function () {
+	      var popover = _this2.$refs.popover;
+	      var triger = _this2.$refs.trigger.children[0];
+	      if (_this2.trigger === 'hover') {
+	        _this2._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
 	          _this2.isShow = true;
 	        });
-	        this._blurEvent = _EventListener2.default.listen(input, 'blur', function () {
+	        _this2._mouseleaveEvent = _EventListener2.default.listen(triger, 'mouseleave', function () {
 	          _this2.isShow = false;
 	        });
-	      }
-	    } else if (this.trigger === 'mouse') {
-	      this._mousedownEvent = _EventListener2.default.listen(triger, 'mousedown', function () {
-	        _this2.isShow = true;
-	      });
-	      this._mouseupEvent = _EventListener2.default.listen(window, 'mouseup', function () {
-	        _this2.isShow = false;
-	      });
-	    } else {
-	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggle);
-	      this._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
-	        if (!_this2.$el.contains(e.target)) _this2.isShow = false;
-	        if (_this2.$refs.content && _this2.$refs.content.contains(e.target) && _type2.default.isFunction(_this2.onClick)) {
-	          _this2.onClick(e, _this2);
+	      } else if (_this2.trigger === 'focus') {
+	        var input = _this2.$refs.trigger.querySelector('input');
+	        if (input) {
+	          _this2._focusEvent = _EventListener2.default.listen(input, 'focus', function () {
+	            _this2.isShow = true;
+	          });
+	          _this2._blurEvent = _EventListener2.default.listen(input, 'blur', function () {
+	            _this2.isShow = false;
+	          });
 	        }
-	      });
-	    }
-	    this.resize();
-	    popover.style.display = 'none';
-	    this.isShow = false;
+	      } else if (_this2.trigger === 'mouse') {
+	        _this2._mousedownEvent = _EventListener2.default.listen(triger, 'mousedown', function () {
+	          _this2.isShow = true;
+	        });
+	        _this2._mouseupEvent = _EventListener2.default.listen(window, 'mouseup', function () {
+	          _this2.isShow = false;
+	        });
+	      } else {
+	        _this2._clickEvent = _EventListener2.default.listen(triger, 'click', _this2.toggle);
+	        _this2._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
+	          if (!_this2.$el.contains(e.target)) _this2.isShow = false;
+	          if (_this2.$refs.content && _this2.$refs.content.contains(e.target) && _type2.default.isFunction(_this2.onClick)) {
+	            _this2.onClick(e, _this2);
+	          }
+	        });
+	      }
+	      _this2.resize();
+	      popover.style.display = 'none';
+	      _this2.isShow = false;
+	    });
 	  },
 	  beforeDestroy: function beforeDestroy() {
 	    if (this._blurEvent) {
@@ -32314,23 +32269,25 @@
 	  mounted: function mounted() {
 	    var _this = this;
 	
-	    var el = this.$el;
-	    var triger = this.$refs.trigger.children[0];
-	    if (this.trigger === 'click') {
-	      this._clickEvent = _EventListener2.default.listen(triger, 'click', this.toggleDropdown);
-	      this._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
-	        if (!_this.clickClose && !el.contains(e.target)) {
+	    this.$nextTick(function () {
+	      var el = _this.$el;
+	      var triger = _this.$refs.trigger.children[0];
+	      if (_this.trigger === 'click') {
+	        _this._clickEvent = _EventListener2.default.listen(triger, 'click', _this.toggleDropdown);
+	        _this._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
+	          if (!_this.clickClose && !el.contains(e.target)) {
+	            _this.close();
+	          }
+	        });
+	      } else if (_this.trigger === 'hover') {
+	        _this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
+	          _this.open();
+	        });
+	        _this._closeEvent = _EventListener2.default.listen(_this.$el, 'mouseleave', function () {
 	          _this.close();
-	        }
-	      });
-	    } else if (this.trigger === 'hover') {
-	      this._mouseenterEvent = _EventListener2.default.listen(triger, 'mouseenter', function () {
-	        _this.open();
-	      });
-	      this._closeEvent = _EventListener2.default.listen(this.$el, 'mouseleave', function () {
-	        _this.close();
-	      });
-	    }
+	        });
+	      }
+	    });
 	  },
 	  beforeDestroy: function beforeDestroy() {
 	    if (this._closeEvent) this._closeEvent.remove();
@@ -36520,8 +36477,8 @@
 	
 	//         <slot name="footer">
 	//           <div :class="`${prefixCls}-modal-footer`">
-	//             <n3-button  @click="close">取消</n3-button>
-	//             <n3-button type="primary" @click="confirm">确定</n3-button>
+	//             <n3-button  @click.native="close">取消</n3-button>
+	//             <n3-button type="primary" @click.native="confirm">确定</n3-button>
 	//           </div>
 	//         </slot>
 	//       </div>
@@ -36535,7 +36492,7 @@
 /* 707 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\">\n    <div :class=\"`${prefixCls}-modal-dialog`\" \n      :style=\"{'width': width}\">\n      <div :class=\"`${prefixCls}-modal-content`\">\n        <slot name=\"header\">\n          <div :class=\"`${prefixCls}-modal-header`\">\n            <button type=\"button\" :class=\"`${prefixCls}-close`\" @click=\"close\"><span>&times;</span></button>\n            <h4 :class=\"`${prefixCls}-modal-title`\" >{{title}}</h4>\n          </div>\n        </slot>\n        \n        <div :class=\"`${prefixCls}-modal-body`\">\n          <slot name=\"body\"></slot>\n        </div>\n      \n        <slot name=\"footer\">\n          <div :class=\"`${prefixCls}-modal-footer`\">\n            <n3-button  @click=\"close\">取消</n3-button>\n            <n3-button type=\"primary\" @click=\"confirm\">确定</n3-button>\n          </div>\n        </slot>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div :class=\"classObj\">\n    <div :class=\"`${prefixCls}-modal-dialog`\" \n      :style=\"{'width': width}\">\n      <div :class=\"`${prefixCls}-modal-content`\">\n        <slot name=\"header\">\n          <div :class=\"`${prefixCls}-modal-header`\">\n            <button type=\"button\" :class=\"`${prefixCls}-close`\" @click=\"close\"><span>&times;</span></button>\n            <h4 :class=\"`${prefixCls}-modal-title`\" >{{title}}</h4>\n          </div>\n        </slot>\n        \n        <div :class=\"`${prefixCls}-modal-body`\">\n          <slot name=\"body\"></slot>\n        </div>\n      \n        <slot name=\"footer\">\n          <div :class=\"`${prefixCls}-modal-footer`\">\n            <n3-button  @click.native=\"close\">取消</n3-button>\n            <n3-button type=\"primary\" @click.native=\"confirm\">确定</n3-button>\n          </div>\n        </slot>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 708 */
@@ -38003,7 +37960,7 @@
 	//               v-model="searchText"
 	//               @keydown.native.enter="addExtra"
 	//             ></n3-input>
-	//             <n3-icon type="plus-square-o" v-if="extra" @click="addExtra"></n3-icon>
+	//             <n3-icon type="plus-square-o" v-if="extra" @click.native="addExtra"></n3-icon>
 	//           </li>
 	//           <li v-if="multiple" :class="`${prefixCls}-select-all`">
 	//             <a @click.prevent="selectAll">
@@ -38099,7 +38056,7 @@
 /* 739 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-select-group`\" >\n    <n3-button\n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      :class=\"[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,showselected&&multiple&&value.length ? `${prefixCls}-select-multiple` : '']\"\n      @click.native=\"toggleDropdown\">\n        <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n        <span  v-if=\"showselected\" >\n          <template v-for=\"item in selectedItems\" v-if=\"multiple\">\n            <render \n              @click.native.prevent.stop=\"del(item)\"\n              :class=\"`${prefixCls}-selected-tag`\" \n              :context=\"context || $parent._self\"\n              :template=\"format(item)\">\n            </render>\n          </template>\n          <template v-else>\n            <render :context=\"context || $parent._self\" :template=\"format(selectedItems[0])\"></render>\n          </template>\n        </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n    </n3-button>\n    <transition name=\"fadeDown\">\n      <ul \n        :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n        :class=\"`${prefixCls}-dropdown-menu`\" \n        ref=\"menu\" \n        v-show=\"show\">\n          <li v-if=\"search\">\n            <n3-input\n              :class=\"`${prefixCls}-select-search`\"\n              :placeholder=\"inputPlaceholder\"\n              v-model=\"searchText\"\n              @keydown.native.enter=\"addExtra\"\n            ></n3-input>\n            <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click=\"addExtra\"></n3-icon>\n          </li>\n          <li v-if=\"multiple\" :class=\"`${prefixCls}-select-all`\">\n            <a @click.prevent=\"selectAll\">\n              全选\n             <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n            </a>\n          </li>\n\n          <template v-if=\"currentOptions.length\">\n            <li v-for=\"option in filterOptions\" \n                :value=\"option.value\" \n                style=\"position:relative\">\n              <a @click.prevent=\"select(option)\" >\n                <span v-html=\"option.label\"></span>\n                <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n              </a>\n            </li>\n          </template>\n          <slot v-else ></slot>\n        <div :class=\"`${prefixCls}-notify`\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n      </ul>\n    </transition>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"value\">\n    </validate>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-select-group`\" >\n    <n3-button\n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      :class=\"[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,showselected&&multiple&&value.length ? `${prefixCls}-select-multiple` : '']\"\n      @click.native=\"toggleDropdown\">\n        <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n        <span  v-if=\"showselected\" >\n          <template v-for=\"item in selectedItems\" v-if=\"multiple\">\n            <render \n              @click.native.prevent.stop=\"del(item)\"\n              :class=\"`${prefixCls}-selected-tag`\" \n              :context=\"context || $parent._self\"\n              :template=\"format(item)\">\n            </render>\n          </template>\n          <template v-else>\n            <render :context=\"context || $parent._self\" :template=\"format(selectedItems[0])\"></render>\n          </template>\n        </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n    </n3-button>\n    <transition name=\"fadeDown\">\n      <ul \n        :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n        :class=\"`${prefixCls}-dropdown-menu`\" \n        ref=\"menu\" \n        v-show=\"show\">\n          <li v-if=\"search\">\n            <n3-input\n              :class=\"`${prefixCls}-select-search`\"\n              :placeholder=\"inputPlaceholder\"\n              v-model=\"searchText\"\n              @keydown.native.enter=\"addExtra\"\n            ></n3-input>\n            <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click.native=\"addExtra\"></n3-icon>\n          </li>\n          <li v-if=\"multiple\" :class=\"`${prefixCls}-select-all`\">\n            <a @click.prevent=\"selectAll\">\n              全选\n             <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n            </a>\n          </li>\n\n          <template v-if=\"currentOptions.length\">\n            <li v-for=\"option in filterOptions\" \n                :value=\"option.value\" \n                style=\"position:relative\">\n              <a @click.prevent=\"select(option)\" >\n                <span v-html=\"option.label\"></span>\n                <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n              </a>\n            </li>\n          </template>\n          <slot v-else ></slot>\n        <div :class=\"`${prefixCls}-notify`\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n      </ul>\n    </transition>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"value\">\n    </validate>\n  </div>";
 
 /***/ },
 /* 740 */
@@ -38194,12 +38151,16 @@
 	    }
 	  },
 	  mounted: function mounted() {
-	    for (var c in this.$parent.$children) {
-	      if (this.$parent.$children[c].$el == this.$el) {
-	        this.index = c;
-	        break;
+	    var _this = this;
+	
+	    this.$nextTick(function () {
+	      for (var c in _this.$parent.$children) {
+	        if (_this.$parent.$children[c].$el == _this.$el) {
+	          _this.index = c;
+	          break;
+	        }
 	      }
-	    }
+	    });
 	  }
 	};
 	// </script>
@@ -41594,17 +41555,21 @@
 	    };
 	  },
 	  mounted: function mounted() {
-	    for (var c in this.$parent.$children) {
-	      if (this.$parent.$children[c].$el == this.$el) {
-	        this.index = c;
-	        break;
-	      }
-	    }
+	    var _this = this;
 	
-	    this.$parent.indicator.push(this.index);
-	    if (this.index == 1) {
-	      _element2.default.addClass(this.$el, this.prefixCls + '-carousel-active');
-	    }
+	    this.$nextTick(function () {
+	      for (var c in _this.$parent.$children) {
+	        if (_this.$parent.$children[c].$el == _this.$el) {
+	          _this.index = c;
+	          break;
+	        }
+	      }
+	
+	      _this.$parent.indicator.push(_this.index);
+	      if (_this.index == 1) {
+	        _element2.default.addClass(_this.$el, _this.prefixCls + '-carousel-active');
+	      }
+	    });
 	  }
 	};
 	// </script>
@@ -41675,20 +41640,43 @@
 	  mixins: [_events2.default],
 	  props: {
 	    value: {},
-	    sort: {
-	      type: Boolean,
-	      default: true
-	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
 	    },
+	    // 节点文本前的图标
+	    icon: {
+	      type: String,
+	      default: 'file'
+	    },
+	    // 收起树时的图标
+	    closedIcon: {
+	      type: String,
+	      default: 'angle-right'
+	    },
+	    // 打开树时的图标
+	    openedIcon: {
+	      type: String,
+	      default: 'angle-down'
+	    },
+	    // 是否按照类型排序
+	    sort: {
+	      type: Boolean,
+	      default: true
+	    },
+	    // value 属性名
 	    selectedKey: {
 	      type: [String, Number]
 	    },
+	    // 是否支持选中
 	    checkable: {
 	      type: Boolean,
 	      default: false
+	    },
+	    // 父节点ID
+	    parent: {
+	      type: Number,
+	      default: undefined
 	    },
 	    checkedKeys: {
 	      type: Array,
@@ -41697,25 +41685,9 @@
 	        return [];
 	      }
 	    },
-	    parent: {
-	      type: Number,
-	      default: undefined
-	    },
-	    treeIcon: {
-	      type: String,
-	      default: 'angle-right'
-	    },
-	    treeOpenIcon: {
-	      type: String,
-	      default: 'angle-down'
-	    },
 	    expandAll: {
 	      type: Boolean,
 	      default: false
-	    },
-	    icon: {
-	      type: String,
-	      default: 'file'
 	    },
 	    loadData: {
 	      type: Function,
@@ -41742,7 +41714,6 @@
 	    return {
 	      loading: -1,
 	      data: this.value,
-	      sKey: this.selectedKey,
 	      cKey: this.checkedKeys
 	    };
 	  },
@@ -41791,7 +41762,7 @@
 	          }
 	          self.$set(_this.data[index], 'children', res);
 	          if (self.checkable && self.isChecked(value)) {
-	            [].push.apply(self.checkedKeys, res.map(function (item) {
+	            [].push.apply(self.cKey, res.map(function (item) {
 	              return item.value;
 	            }).filter(function (item) {
 	              return item !== undefined;
@@ -41810,10 +41781,10 @@
 	     * @param {Mixed} value Value selected.
 	     */
 	    select: function select(index, value) {
-	      this.selectedKey = value;
+	      this.sKey = value;
 	      if (_type2.default.isFunction(this.onSelect)) {
 	        try {
-	          this.onSelect(this.selectedKey);
+	          this.onSelect(this.sKey);
 	        } catch (error) {
 	          console.error(error);
 	        }
@@ -41889,7 +41860,7 @@
 	     * @return {Boolean}
 	     */
 	    isSelected: function isSelected(value) {
-	      return this.selectedKey !== undefined && this.selectedKey === value;
+	      return this.sKey !== undefined && this.sKey === value;
 	    },
 	
 	
@@ -41904,17 +41875,26 @@
 	
 	
 	    /**
+	     * Check Node Checked
+	     */
+	    isChecked: function isChecked(value) {
+	      return this.cKey.indexOf(value) > -1;
+	    },
+	
+	
+	    /**
 	     * CheckHandler
 	     * @param {Number} index Tree index selected.
 	     * @param {Mixed} value Value selected.
 	     */
 	    checkHandler: function checkHandler(index, value) {
+	      return false;
 	      var flag = this.isChecked(value);
 	      this.broadcast('n3Tree', 'n3@changeChildChecked', value, flag);
 	      this.dispatch('n3Tree', 'n3@changeParentChecked', this.parent);
 	      if (_type2.default.isFunction(this.onCheck)) {
 	        try {
-	          this.onCheck(this.checkedKeys);
+	          this.onCheck(this.cKey);
 	        } catch (error) {
 	          console.error(error);
 	        }
@@ -41928,7 +41908,8 @@
 	     */
 	    checkAll: function checkAll(flag) {
 	      var value = void 0;
-	      var checkedKeys = this.checkedKeys;
+	      var checkedKeys = this.cKey;
+	      console.log(this.cKey);
 	      for (var index = 0; index < this.data.length; index++) {
 	        value = this.data[index].value;
 	        if (!this.isChecked(value) && flag) {
@@ -41936,7 +41917,10 @@
 	          this.broadcast('n3Tree', 'n3@changeChildChecked', value, true);
 	        }
 	        if (this.isChecked(value) && !flag) {
-	          checkedKeys.$remove(value);
+	          var _index = checkedKeys.findIndex(function (item) {
+	            return value === item;
+	          });
+	          _index > -1 && this.cKey.splice(_index, 1);
 	          this.broadcast('n3Tree', 'n3@changeChildChecked', value, false);
 	        }
 	      }
@@ -41961,14 +41945,6 @@
 	          self.$set(_this2.data[index], 'isOpened', true);
 	        });
 	      }
-	    },
-	
-	
-	    /**
-	     * Check Node Checked
-	     */
-	    isChecked: function isChecked(value) {
-	      return this.checkedKeys.indexOf(value) > -1;
 	    }
 	  },
 	
@@ -41985,7 +41961,7 @@
 	      var node = void 0;
 	      var children = void 0;
 	      var j = void 0;
-	      var checkedKeys = _this3.checkedKeys;
+	      var checkedKeys = _this3.cKey;
 	
 	      for (var index = 0; index < _this3.data.length; index++) {
 	        node = _this3.data[index];
@@ -41996,7 +41972,10 @@
 	            // 子节点未全部选中，父节点改为未选中状态
 	            if (!_this3.isChecked(children[j].value)) {
 	              if (_this3.isChecked(node.value)) {
-	                checkedKeys.$remove(node.value);
+	                var _index = checkedKeys.findIndex(function (item) {
+	                  return node.value === item;
+	                });
+	                _index > -1 && _this3.cKey.splice(_index, 1);
 	                _this3.dispatch('n3@changeParentChecked', _this3.parent);
 	              }
 	              break;
@@ -42032,22 +42011,21 @@
 	//           <template v-if="node.children">
 	//             <n3-icon
 	//               :class="`${prefixCls}-tree-select-icon`"
-	//               :type="isOpened(index) ? treeOpenIcon : treeIcon">
+	//               :type="isOpened(index) ? openedIcon : closedIcon">
 	//             </n3-icon>
 	//             <span :class="`${prefixCls}-tree-loading-box`" v-show="loading > -1 && loading == index">
 	//               <n3-loading color="primary" size="xs"></n3-loading>
 	//             </span>
 	//           </template>
-	//           <span :class="`${prefixCls}-tree-select-box`" v-if="checkable">
+	//           <span :class="`${prefixCls}-tree-select-box`" v-if="checkable && false">
 	//             <input 
-	//               @click.stop="" 
-	//               type="checkbox" 
-	//               v-model="checkedKeys" 
+	//               type="checkbox"
+	//               v-model="cKey"
 	//               :value="node.value"
-	//               @change="checkHandler(index, node.value)"/>
+	//               @change="checkHandler(index, node.value)" />
 	//           </span>
 	//           <label :class="`${prefixCls}-tree-loading-box`">
-	//             <n3-icon :type="node['icon'] || icon"></n3-icon>
+	//             <n3-icon :type="node.icon || icon"></n3-icon>
 	//             <span v-html="node.label"></span>
 	//           </label>
 	//         </span>
@@ -42056,14 +42034,14 @@
 	//         <div v-if="areValidNodes(node.children)" :class="`${prefixCls}-tree-children`" v-show="isOpened(index)">
 	//           <div :class="`${prefixCls}-tree-nodes`">
 	//             <n3-tree 
-	//               class="inner" 
+	//               class="inner"
 	//               :selected-key="selectedKey"
 	//               v-model="node.children"
 	//               :parent="node.value"
 	//               :load-data="loadData"
 	//               :expand-all="expandAll"
 	//               :checkable="checkable"
-	//               :checked-keys="checkedKeys"
+	//               :checked-keys="cKey"
 	//               :on-select="onSelect"
 	//               :on-check="onCheck"
 	//               :sort="sort"
@@ -42082,7 +42060,7 @@
 /* 811 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-tree`\">\n    <div :class=\"`${prefixCls}-tree-node-data`\" v-for=\"(node, index) in data\">\n      <div :class=\"`${prefixCls}-tree-node`\">\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\" @click.prevent=\"clickHandler(index, node.value)\">\n          <template v-if=\"node.children\">\n            <n3-icon\n              :class=\"`${prefixCls}-tree-select-icon`\"\n              :type=\"isOpened(index) ? treeOpenIcon : treeIcon\">\n            </n3-icon>\n            <span :class=\"`${prefixCls}-tree-loading-box`\" v-show=\"loading > -1 && loading == index\">\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </template>\n          <span :class=\"`${prefixCls}-tree-select-box`\" v-if=\"checkable\">\n            <input \n              @click.stop=\"\" \n              type=\"checkbox\" \n              v-model=\"checkedKeys\" \n              :value=\"node.value\"\n              @change=\"checkHandler(index, node.value)\"/>\n          </span>\n          <label :class=\"`${prefixCls}-tree-loading-box`\">\n            <n3-icon :type=\"node['icon'] || icon\"></n3-icon>\n            <span v-html=\"node.label\"></span>\n          </label>\n        </span>\n      </div>\n      <n3-collapse-transition>\n        <div v-if=\"areValidNodes(node.children)\" :class=\"`${prefixCls}-tree-children`\" v-show=\"isOpened(index)\">\n          <div :class=\"`${prefixCls}-tree-nodes`\">\n            <n3-tree \n              class=\"inner\" \n              :selected-key=\"selectedKey\"\n              v-model=\"node.children\"\n              :parent=\"node.value\"\n              :load-data=\"loadData\"\n              :expand-all=\"expandAll\"\n              :checkable=\"checkable\"\n              :checked-keys=\"checkedKeys\"\n              :on-select=\"onSelect\"\n              :on-check=\"onCheck\"\n              :sort=\"sort\"\n            >\n            </n3-tree>\n          </div>\n        </div>\n      </n3-collapse-transition>\n    </div>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-tree`\">\n    <div :class=\"`${prefixCls}-tree-node-data`\" v-for=\"(node, index) in data\">\n      <div :class=\"`${prefixCls}-tree-node`\">\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\" @click.prevent=\"clickHandler(index, node.value)\">\n          <template v-if=\"node.children\">\n            <n3-icon\n              :class=\"`${prefixCls}-tree-select-icon`\"\n              :type=\"isOpened(index) ? openedIcon : closedIcon\">\n            </n3-icon>\n            <span :class=\"`${prefixCls}-tree-loading-box`\" v-show=\"loading > -1 && loading == index\">\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </template>\n          <span :class=\"`${prefixCls}-tree-select-box`\" v-if=\"checkable && false\">\n            <input \n              type=\"checkbox\"\n              v-model=\"cKey\"\n              :value=\"node.value\"\n              @change=\"checkHandler(index, node.value)\" />\n          </span>\n          <label :class=\"`${prefixCls}-tree-loading-box`\">\n            <n3-icon :type=\"node.icon || icon\"></n3-icon>\n            <span v-html=\"node.label\"></span>\n          </label>\n        </span>\n      </div>\n      <n3-collapse-transition>\n        <div v-if=\"areValidNodes(node.children)\" :class=\"`${prefixCls}-tree-children`\" v-show=\"isOpened(index)\">\n          <div :class=\"`${prefixCls}-tree-nodes`\">\n            <n3-tree \n              class=\"inner\"\n              :selected-key=\"selectedKey\"\n              v-model=\"node.children\"\n              :parent=\"node.value\"\n              :load-data=\"loadData\"\n              :expand-all=\"expandAll\"\n              :checkable=\"checkable\"\n              :checked-keys=\"cKey\"\n              :on-select=\"onSelect\"\n              :on-check=\"onCheck\"\n              :sort=\"sort\"\n            >\n            </n3-tree>\n          </div>\n        </div>\n      </n3-collapse-transition>\n    </div>\n  </div>";
 
 /***/ },
 /* 812 */
@@ -42542,7 +42520,7 @@
 	//             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
 	//             <n3-icon type="times"
 	//               :class="[prefixCls + '-upload-del-info']"
-	//               @click="delFile($index)">
+	//               @click.native="delFile($index)">
 	//             </n3-icon>
 	//           </div>
 	//           <n3-progress style="padding:0px 4px">
@@ -42712,19 +42690,23 @@
 	    n3Progressbar: _n3Progressbar2.default,
 	    n3Progress: _n3Progress2.default
 	  },
-	  ready: function ready() {
-	    this._input = document.querySelector('#' + this.uploadId);
-	    this.$el = document.querySelector('#upload-' + this.uploadId);
+	  mounted: function mounted() {
+	    var _this = this;
 	
-	    this.advanceDrag && this.addDragEvt();
+	    this.$nextTick(function () {
+	      _this._input = document.querySelector('#' + _this.uploadId);
+	      _this.$el = document.querySelector('#upload-' + _this.uploadId);
+	
+	      _this.advanceDrag && _this.addDragEvt();
+	    });
 	  },
 	  beforeDestroy: function beforeDestroy() {
-	    var _this = this;
+	    var _this2 = this;
 	
 	    var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
 	    events.forEach(function (event) {
-	      _this.$el.removeEventListener(event, function () {
-	        return _this._eventHandler();
+	      _this2.$el.removeEventListener(event, function () {
+	        return _this2._eventHandler();
 	      });
 	    });
 	  },
@@ -42811,7 +42793,7 @@
 	      }
 	    },
 	    iframeUpload: function iframeUpload() {
-	      var _this2 = this;
+	      var _this3 = this;
 	
 	      var i = 0;
 	      var len = this.uploadList.length;
@@ -42823,11 +42805,11 @@
 	          var input = document.createElement('input');
 	
 	          input.setAttribute('type', 'file');
-	          input.setAttribute('value', _this2.uploadList[i].name);
+	          input.setAttribute('value', _this3.uploadList[i].name);
 	          iframe.setAttribute('name', iframeName);
 	          iframe.style.display = 'none';
 	          form.setAttribute('method', 'post');
-	          form.setAttribute('action', _this2.url);
+	          form.setAttribute('action', _this3.url);
 	          form.setAttribute('target', iframeName);
 	          form.setAttribute('data-index', i);
 	
@@ -42836,7 +42818,7 @@
 	          form.appendChild(input);
 	
 	          iframe.addEventListener('load', function () {
-	            _this2.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));
+	            _this3.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));
 	            document.body.removeChild(form);
 	          });
 	          form.submit();
@@ -42899,13 +42881,13 @@
 	      this.progress.splice(index, 1);
 	    },
 	    addDragEvt: function addDragEvt() {
-	      var _this3 = this;
+	      var _this4 = this;
 	
 	      var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
 	
 	      events.forEach(function (event) {
-	        _this3.$el.addEventListener(event, function (e) {
-	          return _this3.dragHandler(e);
+	        _this4.$el.addEventListener(event, function (e) {
+	          return _this4.dragHandler(e);
 	        });
 	      });
 	    },
@@ -42940,7 +42922,7 @@
 /* 820 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"[prefixCls + '-upload']\" :id=\"`upload-${uploadId}`\">\n    <div v-if=\"type === 'click'\">\n      <label>\n        <input\n          type=\"file\"\n          :name=\"name\"\n          :accept=\"accept\"\n          :id=\"uploadId\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <slot>\n          <n3-button>\n            <n3-icon type=\"cloud-upload\"></n3-icon>\n            点击上传\n          </n3-button>\n        </slot>\n      </label>\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n    <div v-if=\"type === 'drag'\"\n         :class=\"[prefixCls + '-upload-drag']\">\n      <div \n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\n        :style=\"{width:dragWidth,height:dragHeight}\">\n        <input type=\"file\"\n          :name=\"name\"\n          :id=\"uploadId\"\n          :accept=\"accept\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <label :for=\"uploadId\"\n            :class=\"[prefixCls + '-upload-drag-area']\">\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\n      </label>\n      </div>\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div :class=\"[prefixCls + '-upload']\" :id=\"`upload-${uploadId}`\">\n    <div v-if=\"type === 'click'\">\n      <label>\n        <input\n          type=\"file\"\n          :name=\"name\"\n          :accept=\"accept\"\n          :id=\"uploadId\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <slot>\n          <n3-button>\n            <n3-icon type=\"cloud-upload\"></n3-icon>\n            点击上传\n          </n3-button>\n        </slot>\n      </label>\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click.native=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n    <div v-if=\"type === 'drag'\"\n         :class=\"[prefixCls + '-upload-drag']\">\n      <div \n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\n        :style=\"{width:dragWidth,height:dragHeight}\">\n        <input type=\"file\"\n          :name=\"name\"\n          :id=\"uploadId\"\n          :accept=\"accept\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <label :for=\"uploadId\"\n            :class=\"[prefixCls + '-upload-drag-area']\">\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\n      </label>\n      </div>\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 821 */,

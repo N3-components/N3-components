@@ -97,12 +97,14 @@ export default {
     this.setMenu()
   },
   mounted () {
-    const el = this.$el
-    let self = this
-    self._closeEvent = EventListener.listen(window, 'click', (e) => {
-      if (!el.contains(e.target)) {
-        self.show = false
-      }
+    this.$nextTick(() => {
+      let el = this.$el
+      let self = this
+      self._closeEvent = EventListener.listen(window, 'click', (e) => {
+        if (!el.contains(e.target)) {
+          self.show = false
+        }
+      })
     })
   },
   watch: {

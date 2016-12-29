@@ -141,7 +141,6 @@
 
                  <n3-form-item>
                      <n3-button type="primary" @click.native="submit" >提交</n3-button>
-                     <!-- <n3-button type="primary" @click="validate = false" >关闭验证</n3-button> -->
                 </n3-form-item>
             </n3-form>
 

@@ -92,44 +92,47 @@ const PopoverMixin = {
   },
   mounted () {
     if (!this.$refs.popover) return
-    let popover = this.$refs.popover
-    let triger = this.$refs.trigger.children[0]
-    if (this.trigger === 'hover') {
-      this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
-        this.isShow = true
-      })
-      this._mouseleaveEvent = EventListener.listen(triger, 'mouseleave', () => {
-        this.isShow = false
-      })
-    } else if (this.trigger === 'focus') {
-      let input = this.$refs.trigger.querySelector('input')
-      if (input) {
-        this._focusEvent = EventListener.listen(input, 'focus', () => {
+
+    this.$nextTick(() => {
+      let popover = this.$refs.popover
+      let triger = this.$refs.trigger.children[0]
+      if (this.trigger === 'hover') {
+        this._mouseenterEvent = EventListener.listen(triger, 'mouseenter', () => {
           this.isShow = true
         })
-        this._blurEvent = EventListener.listen(input, 'blur', () => {
+        this._mouseleaveEvent = EventListener.listen(triger, 'mouseleave', () => {
           this.isShow = false
         })
-      }
-    } else if (this.trigger === 'mouse') {
-      this._mousedownEvent = EventListener.listen(triger, 'mousedown', () => {
-        this.isShow = true
-      })
-      this._mouseupEvent = EventListener.listen(window, 'mouseup', () => {
-        this.isShow = false
-      })
-    } else {
-      this._clickEvent = EventListener.listen(triger, 'click', this.toggle)
-      this._closeEvent = EventListener.listen(window, 'click', (e) => {
-        if (!this.$el.contains(e.target)) this.isShow = false
-        if (this.$refs.content && this.$refs.content.contains(e.target) && type.isFunction(this.onClick)) {
-          this.onClick(e, this)
+      } else if (this.trigger === 'focus') {
+        let input = this.$refs.trigger.querySelector('input')
+        if (input) {
+          this._focusEvent = EventListener.listen(input, 'focus', () => {
+            this.isShow = true
+          })
+          this._blurEvent = EventListener.listen(input, 'blur', () => {
+            this.isShow = false
+          })
         }
-      })
-    }
-    this.resize()
-    popover.style.display = 'none'
-    this.isShow = false
+      } else if (this.trigger === 'mouse') {
+        this._mousedownEvent = EventListener.listen(triger, 'mousedown', () => {
+          this.isShow = true
+        })
+        this._mouseupEvent = EventListener.listen(window, 'mouseup', () => {
+          this.isShow = false
+        })
+      } else {
+        this._clickEvent = EventListener.listen(triger, 'click', this.toggle)
+        this._closeEvent = EventListener.listen(window, 'click', (e) => {
+          if (!this.$el.contains(e.target)) this.isShow = false
+          if (this.$refs.content && this.$refs.content.contains(e.target) && type.isFunction(this.onClick)) {
+            this.onClick(e, this)
+          }
+        })
+      }
+      this.resize()
+      popover.style.display = 'none'
+      this.isShow = false
+    })
   },
   beforeDestroy () {
     if (this._blurEvent) {

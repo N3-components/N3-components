@@ -5,11 +5,7 @@
       <n3-input v-model="value" ref="input" ></n3-input>
       <n3-button @click.native="$refs.input.$emit('focus')">聚焦</n3-button>
     </div>
-    <pre><code class="language-markup"><script type="language-mark-up">
 
-<n3-button @click="focused=true">聚焦</n3-button>
-    </script></code></pre>
-    <br>
     <table class="table table-bordered">
       <thead>
         <tr>

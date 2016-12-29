@@ -21,17 +21,19 @@ export default {
     }
   },
   mounted () {
-    for (let c in this.$parent.$children) {
-      if (this.$parent.$children[c].$el == this.$el) {
-        this.index = c
-        break
+    this.$nextTick(() => {
+      for (let c in this.$parent.$children) {
+        if (this.$parent.$children[c].$el == this.$el) {
+          this.index = c
+          break
+        }
       }
-    }
 
-    this.$parent.indicator.push(this.index)
-    if (this.index == 1) {
-      element.addClass(this.$el, this.prefixCls + '-carousel-active')
-    }
+      this.$parent.indicator.push(this.index)
+      if (this.index == 1) {
+        element.addClass(this.$el, this.prefixCls + '-carousel-active')
+      }
+    })
   }
 }
 </script>

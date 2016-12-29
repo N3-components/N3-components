@@ -112,17 +112,18 @@ export default {
     }
   },
   mounted () {
-    let el = this.$el
-    let self = this
-    
-    function intervalManager (flag, func, time) {
-      flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID)
-    }
-    if (this.interval) {
-      intervalManager(true, this.nextClick, this.interval)
-      el.addEventListener('mouseenter', () => intervalManager(false))
-      el.addEventListener('mouseleave', () => intervalManager(true, this.nextClick, this.interval))
-    }
+    this.$nextTick(() => {
+      let el = this.$el
+      let self = this
+      function intervalManager (flag, func, time) {
+        flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID)
+      }
+      if (this.interval) {
+        intervalManager(true, this.nextClick, this.interval)
+        el.addEventListener('mouseenter', () => intervalManager(false))
+        el.addEventListener('mouseleave', () => intervalManager(true, this.nextClick, this.interval))
+      }
+    })
   },
   beforeDestroy () {
     if (this.intervalID) clearInterval(this.intervalID)
