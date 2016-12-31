@@ -13,7 +13,7 @@
 @lightColor: #f9f9f9; 
 
 /*font color*/
-@fontColor: #333;
+@fontColor: #666;
 
 
 /*theme color*/
@@ -23,56 +23,57 @@
 
 
 /*extend color*/
-@successColor: #2ecc71;
-@successColorhover:#29b464;
+@successColor: #87d068;
+@successColorhover: #91d873;
 
-@infoColor: #58c9f3;
-@infoColorhover: #38bef0;
+@infoColor: #2db7f5;
+@infoColorhover: #43bcf3;
 
-@dangerColor: #ff6c60;
-@dangerColorhover: #e74c3c;
+@dangerColor: #f50;
+@dangerColorhover: #f9702b;
 
-@warningColor: #f1c500;
-@warningColorhover: #dbb509;
+@warningColor: #fa0;
+@warningColorhover: #f5b73b;
 
 /*alert color*/
-@alertDefaultColor: rgba(51,51,51,0.9);
-@alertSuccessColor: rgba(46, 204, 113, 0.9);
-@alertDangerColor: rgba(231,76,60,0.9);
-@alertInfoColor: rgba(52,152,219,0.9);
-@alertWarningColor: rgba(241,196,15,0.9);
-@alertHrColor: rgba(255,255,255,0.5);
-@alertFontColor:@whiteColor;
-@alertDefaultBorder: 0px;
-@alertSuccessBorder: 0px;
-@alertInfoBorder: 0px;
-@alertDangerBorder: 0px;
-@alertWarningBorder: 0px;
-@alertDangerIcon:@whiteColor;
-@alertSuccessIcon:@whiteColor;
-@alertInfoIcon:@whiteColor;
-@alertWarningIcon:@whiteColor;
+@alertDefaultColor: @whiteColor;
+@alertSuccessColor: #f3faf0;
+@alertDangerColor: #ffeee6;
+@alertInfoColor: #eaf8fe;
+@alertWarningColor: #fff7e6;
+@alertHrColor: @lightGrayColor;
+@alertFontColor:@fontColor;
+@alertDefaultBorder:1px solid @lightGrayColor;
+@alertSuccessBorder:1px solid #e7f6e1;
+@alertInfoBorder:1px solid #d5f1fd;
+@alertDangerBorder:1px solid #fdc;
+@alertWarningBorder: 1px solid #fec;
+@alertDangerIcon:@dangerColor;
+@alertSuccessIcon:@successColor;
+@alertInfoIcon:@infoColor;
+@alertWarningIcon:@warningColor;
 
 
 /*cascader color*/
-@cascaderColor:rgba(65, 202, 192, 0.3);
+@cascaderColor:@lightGrayColor;
 
 /*popover */
-@popoverShadow:0 3px 10px rgba(0, 0, 0, 0.2);
-@popoverBorder:1px solid rgba(0, 0, 0, 0.2);
+@popoverShadow:0 1px 6px rgba(0,0,0,.2);
+@popoverBorder:0px;
 
 /*cascader*/
 @cascaderShadow: 0 0 4px rgba(0,0,0,0.17);
 
 /*datepicker shadow*/
-@dateShadow:0 6px 12px rgba(0,0,0,0.175);
-@dateBorder:1px solid @grayColor;
+@dateShadow:0 1px 6px rgba(0,0,0,.2);
+@dateBorder:0px;
+
 /*panel*/
 @panelHeadingColor:transparent;
 
 /*modal*/
-@modalHeaderColor: @primaryColor;
-@modalHeaderFontColor: @whiteColor;
+@modalHeaderColor: @whiteColor;
+@modalHeaderFontColor: @fontColor;
 
 
 /*----------size-----------*/
@@ -148,8 +149,8 @@
 @dropdownMinWidth:160px;
 @dropdownLiPadding:5px 20px;
 @dropdownLineHeight:1.42857143;
-@dropBorder:1px solid rgba(0, 0, 0, 0.15);
-@dropShadow:0 6px 12px rgba(0, 0, 0, 0.175);
+@dropBorder:0px;
+@dropShadow:0 1px 6px rgba(0,0,0,.2);
 
 /*slider*/
 @sliderHeight:4px;
@@ -206,15 +207,15 @@
 @panelBodyPadding:15px;
 
 /*table*/
-@tableTdPadding: 6px 8px;
+@tableTdPadding: 8px 8px;
 @tableTdLineHeight: 1.5;
-@tableTdBorderLeft: 1px solid @lightGrayColor;
-@tableBorder:1px solid @lightGrayColor;
+@tableTdBorderLeft: 0px;
+@tableBorder:0px;
 
 /*modal*/
 @modalMargin:30px auto;
 @modalPadding:15px;
-@modalFooterBorderTop:1px solid @lightGrayColor;
+@modalFooterBorderTop:0px;
 
 /*label*/
 @labelPadding: 0.5em 0.8em;

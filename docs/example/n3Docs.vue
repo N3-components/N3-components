@@ -2,7 +2,7 @@
 <div>
   <div>
     <header-docs class="freeze" :active="type"></header-docs>
-    <n3-container class="bs-docs-container" v-if="type === 'base' || type === 'ant'">
+    <n3-container class="bs-docs-container" v-if="type === 'base'">
       <n3-row >
         <n3-column :col="2">
           <input placeholder="搜索" v-model="search" class="searchCom" ></input>
@@ -91,7 +91,7 @@ export default{
   data () {
     var map, component
 
-    if (this.type === 'base' || this.type === 'ant') {
+    if (this.type === 'base') {
       map = {
         '基本': {show: true,
                 list: [{label: '布局', value: 'n3LayoutDocs'},
