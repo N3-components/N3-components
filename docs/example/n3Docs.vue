@@ -39,48 +39,48 @@ require('../js/showLanguage')
 import prismjs from 'prismjs'
 import headerDocs from './headerDocs.vue'
 import n3LayoutDocs from './n3LayoutDocs.md'
-import n3IconDocs from './n3IconDocs.vue'
-import n3TagsDocs from './n3TagsDocs.vue'
-import n3AlertDocs from './n3AlertDocs.vue'
-import n3AccordionDocs from './n3AccordionDocs.vue'
-import n3CascaderDocs from './n3CascaderDocs.vue'
-import n3AffixDocs from './n3AffixDocs.vue'
-import n3AsideDocs from './n3AsideDocs.vue'
-import n3CarouselDocs from './n3CarouselDocs.vue'
-import n3ButtonsDocs from './n3ButtonsDocs.vue'
-import n3ToastDocs from './n3ToastDocs.vue'
-import n3DatepickerDocs from './n3DatepickerDocs.vue'
-import n3TimepickerDocs from './n3TimepickerDocs.vue'
-import n3DatetimepickerDocs from './n3DatetimepickerDocs.vue'
-import n3DropdownDocs from './n3DropdownDocs.vue'
-import n3ModalDocs from './n3ModalDocs.vue'
-import n3InputDocs from './n3InputDocs.vue'
-import n3InputNumberDocs from './n3InputNumberDocs.vue'
-import n3TextareaDocs from './n3TextareaDocs.vue'
-import n3NavDocs from './n3NavDocs.vue'
-import n3PopoverDocs from './n3PopoverDocs.vue'
-import n3ProgressbarDocs from './n3ProgressbarDocs.vue'
-import n3SelectDocs from './n3SelectDocs.vue'
-import n3SwitchDocs from './n3SwitchDocs.vue'
-import n3TimelineDocs from './n3TimelineDocs.vue'
-import n3TabsDocs from './n3TabsDocs.vue'
-import n3TooltipDocs from './n3TooltipDocs.vue'
-import n3TypeaheadDocs from './n3TypeaheadDocs.vue'
-import n3StepDocs from './n3StepDocs.vue'
-import n3SliderDocs from './n3SliderDocs.vue'
-import n3LoadingDocs from './n3LoadingDocs.vue'
-import n3PageDocs from './n3PageDocs.vue'
-import n3DataTableDocs from './n3DataTableDocs.vue'
-import n3BreadcrumbDocs from './n3BreadcrumbDocs.vue'
-import n3MultipleInputDocs from './n3MultipleInputDocs.vue'
-import n3TreeDocs from './n3TreeDocs.vue'
-import n3RateDocs from './n3RateDocs.vue'
-import n3UploaderDocs from './n3UploaderDocs.vue'
-import n3FormDocs from './n3FormDocs.vue'
-import n3CheckboxDocs from './n3CheckboxDocs.vue'
-import n3RadioDocs from './n3RadioDocs.vue'
-import n3CardDocs from './n3CardDocs.vue'
-import n3AnimateDocs from './n3AnimateDocs.vue'
+import n3IconDocs from './n3IconDocs.md'
+import n3TagsDocs from './n3TagsDocs.md'
+import n3AlertDocs from './n3AlertDocs.md'
+import n3AccordionDocs from './n3AccordionDocs.md'
+import n3CascaderDocs from './n3CascaderDocs.md'
+import n3AffixDocs from './n3AffixDocs.md'
+import n3AsideDocs from './n3AsideDocs.md'
+import n3CarouselDocs from './n3CarouselDocs.md'
+import n3ButtonsDocs from './n3ButtonsDocs.md'
+import n3ToastDocs from './n3ToastDocs.md'
+import n3DatepickerDocs from './n3DatepickerDocs.md'
+import n3TimepickerDocs from './n3TimepickerDocs.md'
+import n3DatetimepickerDocs from './n3DatetimepickerDocs.md'
+import n3DropdownDocs from './n3DropdownDocs.md'
+import n3ModalDocs from './n3ModalDocs.md'
+import n3InputDocs from './n3InputDocs.md'
+import n3InputNumberDocs from './n3InputNumberDocs.md'
+import n3TextareaDocs from './n3TextareaDocs.md'
+import n3NavDocs from './n3NavDocs.md'
+import n3PopoverDocs from './n3PopoverDocs.md'
+import n3ProgressbarDocs from './n3ProgressbarDocs.md'
+import n3SelectDocs from './n3SelectDocs.md'
+import n3SwitchDocs from './n3SwitchDocs.md'
+import n3TimelineDocs from './n3TimelineDocs.md'
+import n3TabsDocs from './n3TabsDocs.md'
+import n3TooltipDocs from './n3TooltipDocs.md'
+import n3TypeaheadDocs from './n3TypeaheadDocs.md'
+import n3StepDocs from './n3StepDocs.md'
+import n3SliderDocs from './n3SliderDocs.md'
+import n3LoadingDocs from './n3LoadingDocs.md'
+import n3PageDocs from './n3PageDocs.md'
+import n3DataTableDocs from './n3DataTableDocs.md'
+import n3BreadcrumbDocs from './n3BreadcrumbDocs.md'
+import n3MultipleInputDocs from './n3MultipleInputDocs.md'
+import n3TreeDocs from './n3TreeDocs.md'
+import n3RateDocs from './n3RateDocs.md'
+import n3UploaderDocs from './n3UploaderDocs.md'
+import n3FormDocs from './n3FormDocs.md'
+import n3CheckboxDocs from './n3CheckboxDocs.md'
+import n3RadioDocs from './n3RadioDocs.md'
+import n3CardDocs from './n3CardDocs.md'
+import n3AnimateDocs from './n3AnimateDocs.md'
 
 export default{
   props: {
@@ -190,12 +190,12 @@ export default{
       this.component = value
       window.location.hash = value
     },
-    init () {
+    init () {      
       var hash = window.location.hash
       hash = hash.substr(1, hash.length)
       if (hash) {
         this.component = hash
-        this.$nextTick(() => {
+        setTimeout(() => {
           prismjs.highlightAll()
           document.querySelectorAll('table').forEach(i => {
             i.classList.add('table', 'table-bordered')
@@ -208,6 +208,13 @@ export default{
     this.list = this.map
     this.init()
     window.onhashchange = this.init
+
+    setTimeout(() => {
+      prismjs.highlightAll()
+      document.querySelectorAll('table').forEach(i => {
+        i.classList.add('table', 'table-bordered')
+      })
+    })
   },
   components: {
     headerDocs,
