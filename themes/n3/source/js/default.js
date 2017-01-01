@@ -8540,7 +8540,7 @@
 	
 	var _n3Slide2 = _interopRequireDefault(_n3Slide);
 	
-	var _n3Tree = __webpack_require__(607);
+	var _n3Tree = __webpack_require__(625);
 	
 	var _n3Tree2 = _interopRequireDefault(_n3Tree);
 	
@@ -32079,481 +32079,9 @@
 	module.exports = "<div :class=\"`${prefixCls}-carousel-item`\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 607 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(608)
-	
-	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(609)
-	if (false) {
-	(function () {
-	var hotAPI = require("vue-hot-reload-api")
-	hotAPI.install(require("vue"))
-	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue"
-	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue")
-	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue")
-	hotAPI.update(id, newOptions, newTemplate)
-	})
-	})()
-	}
-
-/***/ },
-/* 608 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _type = __webpack_require__(415);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
-	var _events = __webpack_require__(440);
-	
-	var _events2 = _interopRequireDefault(_events);
-	
-	var _n3CollapseTransition = __webpack_require__(498);
-	
-	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = {
-	  name: 'n3Tree',
-	  mixins: [_events2.default],
-	  props: {
-	    value: {},
-	    prefixCls: {
-	      type: String,
-	      default: 'n3'
-	    },
-	    // 节点文本前的图标
-	    icon: {
-	      type: String,
-	      default: 'file'
-	    },
-	    // 收起树时的图标
-	    closedIcon: {
-	      type: String,
-	      default: 'angle-right'
-	    },
-	    // 打开树时的图标
-	    openedIcon: {
-	      type: String,
-	      default: 'angle-down'
-	    },
-	    // 是否按照类型排序
-	    sort: {
-	      type: Boolean,
-	      default: true
-	    },
-	    // value 属性名
-	    selectedKey: {
-	      type: [String, Number]
-	    },
-	    // 是否支持选中
-	    checkable: {
-	      type: Boolean,
-	      default: false
-	    },
-	    // 父节点ID
-	    parent: {
-	      type: Number,
-	      default: undefined
-	    },
-	    checkedKeys: {
-	      type: Array,
-	      twoway: true,
-	      default: function _default() {
-	        return [];
-	      }
-	    },
-	    expandAll: {
-	      type: Boolean,
-	      default: false
-	    },
-	    loadData: {
-	      type: Function,
-	      default: null
-	    },
-	    onRightClick: {
-	      type: Function,
-	      default: null
-	    },
-	    onSelect: {
-	      type: Function,
-	      default: null
-	    },
-	    onExpand: {
-	      type: Function,
-	      default: null
-	    },
-	    onCheck: {
-	      type: Function,
-	      default: null
-	    }
-	  },
-	  data: function data() {
-	    return {
-	      loading: -1,
-	      data: this.value,
-	      cKey: this.checkedKeys
-	    };
-	  },
-	
-	
-	  components: {
-	    n3CollapseTransition: _n3CollapseTransition2.default
-	  },
-	
-	  watch: {
-	    data: function data(val) {
-	      this.$emit('input', val);
-	    }
-	  },
-	
-	  methods: {
-	    /**
-	     * Click Handler
-	     * @param {Number} index Tree index selected.
-	     * @param {Mixed} value Value selected.
-	     */
-	    clickHandler: function clickHandler(index, value) {
-	      // Select Node
-	      this.select(index, value);
-	
-	      var node = this.data[index];
-	      // lazyLoadFlag：节点未打开，节点无子节点
-	      var lazyLoadFlag = !node.isOpened && node.children && node.children.length === 0 && _type2.default.isFunction(this.loadData);
-	      if (lazyLoadFlag) {
-	        this.lazyLoadHandler(index, value);
-	      } else {
-	        this.toggleOpen(index);
-	      }
-	    },
-	    lazyLoadHandler: function lazyLoadHandler(index, value) {
-	      var _this = this;
-	
-	      var self = this;
-	      this.loading = index;
-	      var promise = this.loadData(value);
-	      if (_type2.default.isPromise(promise)) {
-	        promise.then(function (res) {
-	          if (!_type2.default.isArray(res)) {
-	            console.error('Loaded Data should be an array: ' + res);
-	            return;
-	          }
-	          self.$set(_this.data[index], 'children', res);
-	          if (self.checkable && self.isChecked(value)) {
-	            [].push.apply(self.cKey, res.map(function (item) {
-	              return item.value;
-	            }).filter(function (item) {
-	              return item !== undefined;
-	            }));
-	          }
-	          self.loading = -1;
-	          self.toggleOpen(index);
-	        });
-	      }
-	    },
-	
-	
-	    /**
-	     * Selects a node from tree view
-	     * @param {Number} index Tree index selected.
-	     * @param {Mixed} value Value selected.
-	     */
-	    select: function select(index, value) {
-	      this.sKey = value;
-	      if (_type2.default.isFunction(this.onSelect)) {
-	        try {
-	          this.onSelect(this.sKey);
-	        } catch (error) {
-	          console.error(error);
-	        }
-	      }
-	    },
-	
-	
-	    /**
-	     * Toggles open / close node.
-	     * @param {Number} index
-	     */
-	    toggleOpen: function toggleOpen(index) {
-	      if (_type2.default.isFunction(this.onExpand)) {
-	        try {
-	          this.onExpand(this.data[index]);
-	        } catch (error) {
-	          console.error(error);
-	        }
-	      }
-	      // Init
-	      if (this.data[index].isOpened === undefined) {
-	        this.$set(this.data[index], 'isOpened', this.expandAll && this.hasSelectedChild(index));
-	      }
-	      // General
-	      this.$set(this.data[index], 'isOpened', !this.data[index].isOpened);
-	    },
-	
-	
-	    /**
-	     * Returns flag indicating if nodes are valid or not.
-	     * @param {Array} nodes
-	     */
-	    areValidNodes: function areValidNodes(nodes) {
-	      return nodes !== undefined && _type2.default.isArray(nodes) && nodes.length > 0;
-	    },
-	
-	
-	    /**
-	     * Returns flag indicating if tree view has a node selected.
-	     * @return {Boolean}
-	     */
-	    hasSelected: function hasSelected() {
-	      for (var i in this.data) {
-	        if (this.isSelected(this.data[i].value) || this.hasSelectedChild(i)) {
-	          return true;
-	        }
-	      }
-	      return false;
-	    },
-	
-	
-	    /**
-	     * Returns flag indicating if node at specified index has a child selcted or not.
-	     * @param {Number} index
-	     * @return {Boolean}
-	     */
-	    hasSelectedChild: function hasSelectedChild(index) {
-	      // if (!this.checkable) {
-	      //   return false
-	      // }
-	      for (var i in this.$children) {
-	        if (this.$children[i].parent === this.data[index].value && this.$children[i].hasSelected && this.$children[i].hasSelected()) {
-	          return true;
-	        }
-	      }
-	      return false;
-	    },
-	
-	
-	    /**
-	     * Returns flag indicating if node at specified index is selected or not.
-	     * @param {Number} index
-	     * @return {Boolean}
-	     */
-	    isSelected: function isSelected(value) {
-	      return this.sKey !== undefined && this.sKey === value;
-	    },
-	
-	
-	    /**
-	     * Returns flag indicating if node is opened or not.
-	     * @param {Number} index
-	     * @return {Boolean}
-	     */
-	    isOpened: function isOpened(index) {
-	      return this.data[index].isOpened !== undefined && this.data[index].isOpened || this.hasSelectedChild(index);
-	    },
-	
-	
-	    /**
-	     * Check Node Checked
-	     */
-	    isChecked: function isChecked(value) {
-	      return this.cKey.indexOf(value) > -1;
-	    },
-	
-	
-	    /**
-	     * CheckHandler
-	     * @param {Number} index Tree index selected.
-	     * @param {Mixed} value Value selected.
-	     */
-	    checkHandler: function checkHandler(index, value) {
-	      return false;
-	      var flag = this.isChecked(value);
-	      this.broadcast('n3Tree', 'n3@changeChildChecked', value, flag);
-	      this.dispatch('n3Tree', 'n3@changeParentChecked', this.parent);
-	      if (_type2.default.isFunction(this.onCheck)) {
-	        try {
-	          this.onCheck(this.cKey);
-	        } catch (error) {
-	          console.error(error);
-	        }
-	      }
-	    },
-	
-	
-	    /**
-	     * Check All Node
-	     * @param {Boolean} flag
-	     */
-	    checkAll: function checkAll(flag) {
-	      var value = void 0;
-	      var checkedKeys = this.cKey;
-	      console.log(this.cKey);
-	      for (var index = 0; index < this.data.length; index++) {
-	        value = this.data[index].value;
-	        if (!this.isChecked(value) && flag) {
-	          checkedKeys.push(value);
-	          this.broadcast('n3Tree', 'n3@changeChildChecked', value, true);
-	        }
-	        if (this.isChecked(value) && !flag) {
-	          var _index = checkedKeys.findIndex(function (item) {
-	            return value === item;
-	          });
-	          _index > -1 && this.cKey.splice(_index, 1);
-	          this.broadcast('n3Tree', 'n3@changeChildChecked', value, false);
-	        }
-	      }
-	    },
-	    _sort: function _sort() {
-	      this.data = this.data.sort(function (a, b) {
-	        return !a.children || b.children;
-	      });
-	    },
-	
-	
-	    /**
-	     * Expand Some Nodes
-	     */
-	    expand: function expand() {
-	      var _this2 = this;
-	
-	      var self = this;
-	      // Async load doesn't support expanding all
-	      if (self.expandAll && !_type2.default.isFunction(self.loadData)) {
-	        self.data.forEach(function (item, index) {
-	          self.$set(_this2.data[index], 'isOpened', true);
-	        });
-	      }
-	    }
-	  },
-	
-	  created: function created() {
-	    var _this3 = this;
-	
-	    this.$on('n3@changeChildChecked', function (parent, value) {
-	      if (_this3.parent === parent) {
-	        _this3.checkAll(value);
-	      }
-	    });
-	
-	    this.$on('n3@changeParentChecked', function (parent) {
-	      var node = void 0;
-	      var children = void 0;
-	      var j = void 0;
-	      var checkedKeys = _this3.cKey;
-	
-	      for (var index = 0; index < _this3.data.length; index++) {
-	        node = _this3.data[index];
-	        children = node.children;
-	        // 当前节点为源节点的父节点时
-	        if (parent === node.value) {
-	          for (j = 0; j < children.length; j++) {
-	            // 子节点未全部选中，父节点改为未选中状态
-	            if (!_this3.isChecked(children[j].value)) {
-	              if (_this3.isChecked(node.value)) {
-	                var _index = checkedKeys.findIndex(function (item) {
-	                  return node.value === item;
-	                });
-	                _index > -1 && _this3.cKey.splice(_index, 1);
-	                _this3.dispatch('n3@changeParentChecked', _this3.parent);
-	              }
-	              break;
-	            }
-	          }
-	          // 子节点全部被选中，父节点改为选中状态
-	          if (j === children.length && !_this3.isChecked(node.value)) {
-	            checkedKeys.push(node.value);
-	            _this3.dispatch('n3@changeParentChecked', _this3.parent);
-	          }
-	          break;
-	        }
-	      }
-	    });
-	  },
-	  mounted: function mounted() {
-	    var _this4 = this;
-	
-	    this.$nextTick(function () {
-	      if (_this4.sort) {
-	        _this4._sort();
-	      }
-	      _this4.expand();
-	    });
-	  }
-	};
-	// </script>
-	// <template>
-	//   <div :class="`${prefixCls}-tree`">
-	//     <div :class="`${prefixCls}-tree-node-data`" v-for="(node, index) in data">
-	//       <div :class="`${prefixCls}-tree-node`">
-	//         <span :class="[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']" @click.prevent="clickHandler(index, node.value)">
-	//           <template v-if="node.children">
-	//             <n3-icon
-	//               :class="`${prefixCls}-tree-select-icon`"
-	//               :type="isOpened(index) ? openedIcon : closedIcon">
-	//             </n3-icon>
-	//             <span :class="`${prefixCls}-tree-loading-box`" v-show="loading > -1 && loading == index">
-	//               <n3-loading color="primary" size="xs"></n3-loading>
-	//             </span>
-	//           </template>
-	//           <span :class="`${prefixCls}-tree-select-box`" v-if="checkable && false">
-	//             <input 
-	//               type="checkbox"
-	//               v-model="cKey"
-	//               :value="node.value"
-	//               @change="checkHandler(index, node.value)" />
-	//           </span>
-	//           <label :class="`${prefixCls}-tree-loading-box`">
-	//             <n3-icon :type="node.icon || icon"></n3-icon>
-	//             <span v-html="node.label"></span>
-	//           </label>
-	//         </span>
-	//       </div>
-	//       <n3-collapse-transition>
-	//         <div v-if="areValidNodes(node.children)" :class="`${prefixCls}-tree-children`" v-show="isOpened(index)">
-	//           <div :class="`${prefixCls}-tree-nodes`">
-	//             <n3-tree 
-	//               class="inner"
-	//               :selected-key="selectedKey"
-	//               v-model="node.children"
-	//               :parent="node.value"
-	//               :load-data="loadData"
-	//               :expand-all="expandAll"
-	//               :checkable="checkable"
-	//               :checked-keys="cKey"
-	//               :on-select="onSelect"
-	//               :on-check="onCheck"
-	//               :sort="sort"
-	//             >
-	//             </n3-tree>
-	//           </div>
-	//         </div>
-	//       </n3-collapse-transition>
-	//     </div>
-	//   </div>
-	// </template>
-	
-	// <script>
-
-/***/ },
-/* 609 */
-/***/ function(module, exports) {
-
-	module.exports = "<div :class=\"`${prefixCls}-tree`\">\n    <div :class=\"`${prefixCls}-tree-node-data`\" v-for=\"(node, index) in data\">\n      <div :class=\"`${prefixCls}-tree-node`\">\n        <span :class=\"[isSelected(node.value) ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\" @click.prevent=\"clickHandler(index, node.value)\">\n          <template v-if=\"node.children\">\n            <n3-icon\n              :class=\"`${prefixCls}-tree-select-icon`\"\n              :type=\"isOpened(index) ? openedIcon : closedIcon\">\n            </n3-icon>\n            <span :class=\"`${prefixCls}-tree-loading-box`\" v-show=\"loading > -1 && loading == index\">\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </template>\n          <span :class=\"`${prefixCls}-tree-select-box`\" v-if=\"checkable && false\">\n            <input \n              type=\"checkbox\"\n              v-model=\"cKey\"\n              :value=\"node.value\"\n              @change=\"checkHandler(index, node.value)\" />\n          </span>\n          <label :class=\"`${prefixCls}-tree-loading-box`\">\n            <n3-icon :type=\"node.icon || icon\"></n3-icon>\n            <span v-html=\"node.label\"></span>\n          </label>\n        </span>\n      </div>\n      <n3-collapse-transition>\n        <div v-if=\"areValidNodes(node.children)\" :class=\"`${prefixCls}-tree-children`\" v-show=\"isOpened(index)\">\n          <div :class=\"`${prefixCls}-tree-nodes`\">\n            <n3-tree \n              class=\"inner\"\n              :selected-key=\"selectedKey\"\n              v-model=\"node.children\"\n              :parent=\"node.value\"\n              :load-data=\"loadData\"\n              :expand-all=\"expandAll\"\n              :checkable=\"checkable\"\n              :checked-keys=\"cKey\"\n              :on-select=\"onSelect\"\n              :on-check=\"onCheck\"\n              :sort=\"sort\"\n            >\n            </n3-tree>\n          </div>\n        </div>\n      </n3-collapse-transition>\n    </div>\n  </div>";
-
-/***/ },
+/* 607 */,
+/* 608 */,
+/* 609 */,
 /* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -33762,6 +33290,492 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 623 */,
+/* 624 */,
+/* 625 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(626)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(631)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue"], function () {
+	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 626 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _store = __webpack_require__(627);
+	
+	var _store2 = _interopRequireDefault(_store);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var emptyText = 'Empty Content.'; // <template>
+	//   <div class="n3-tree">
+	//     <n3-tree-node
+	//       v-for="child in data"
+	//       :node="child"
+	//     >
+	//     </n3-tree-node>
+	//     <div v-if="isValidTree">
+	//       <span>{{ emptyText }}</span>
+	//     </div>
+	//   </div>
+	// </template>
+	
+	// <script>
+	exports.default = {
+	  name: 'n3-tree',
+	
+	  props: {
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    },
+	    data: {
+	      type: Array,
+	      default: function _default() {
+	        return [];
+	      }
+	    },
+	    emptyText: {
+	      type: String,
+	      default: function _default() {
+	        return '';
+	      }
+	    },
+	    // 节点文本前的图标
+	    icon: {
+	      type: String,
+	      default: 'file'
+	    },
+	    // 收起树时的图标
+	    closedIcon: {
+	      type: String,
+	      default: 'angle-right'
+	    },
+	    // 打开树时的图标
+	    openedIcon: {
+	      type: String,
+	      default: 'angle-down'
+	    },
+	    // 是否按照类型排序
+	    sort: {
+	      type: Boolean,
+	      default: true
+	    },
+	    // value 属性名
+	    selectedKey: {
+	      type: [String, Number]
+	    },
+	    // 是否支持选中
+	    checkable: {
+	      type: Boolean,
+	      default: false
+	    },
+	    // 点击展开子节点
+	    expandOnClickNode: {
+	      type: Boolean,
+	      default: false
+	    }
+	  },
+	
+	  created: function created() {
+	    this.isTree = true;
+	
+	    this.store = new _store2.default({
+	      instance: this
+	    });
+	  },
+	  data: function data() {
+	    return {
+	      currentNode: null,
+	      currentNodeKey: ''
+	    };
+	  },
+	
+	
+	  components: {
+	    N3TreeNode: __webpack_require__(628)
+	  },
+	
+	  computed: {
+	    isValidTree: function isValidTree() {
+	      return this.data.length;
+	    }
+	  },
+	
+	  watch: {
+	    currentNodeKey: function currentNodeKey(newVal) {
+	      this.store.setCurrentNodeKey(newVal);
+	    },
+	    data: function data(newVal) {
+	      this.store.setData(newVal);
+	    }
+	  },
+	
+	  methods: {
+	    getCheckedKeys: function getCheckedKeys() {
+	      return this.store.getCheckedKeys();
+	    },
+	    setCheckedKeys: function setCheckedKeys(keys) {
+	      this.store.setCheckedKeys(keys);
+	    }
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 627 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _type = __webpack_require__(415);
+	
+	var _type2 = _interopRequireDefault(_type);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var Store = function () {
+	  function Store(options) {
+	    _classCallCheck(this, Store);
+	
+	    this.currentNode = null;
+	    this.currentNodeKey = '';
+	    this.checkedMap = {};
+	
+	    this.data = {};
+	    this.root = options.instance;
+	  }
+	
+	  _createClass(Store, [{
+	    key: 'setData',
+	    value: function setData(data) {
+	      this.data = data;
+	      this.root.setData(data);
+	    }
+	  }, {
+	    key: 'getNodeKey',
+	    value: function getNodeKey(node) {
+	      return node.value;
+	    }
+	  }, {
+	    key: 'setCurrentNodeKey',
+	    value: function setCurrentNodeKey(val) {
+	      this.currentNodeKey = val;
+	    }
+	  }, {
+	    key: 'setCurrentNode',
+	    value: function setCurrentNode(node) {
+	      this.currentNode = node;
+	      this.currentNodeKey = node.value;
+	    }
+	  }, {
+	    key: 'getCheckedKeys',
+	    value: function getCheckedKeys() {
+	      return Object.keys(this.checkedMap);
+	    }
+	  }, {
+	    key: 'setCheckedMap',
+	    value: function setCheckedMap(keys) {
+	      var _this = this;
+	
+	      keys.forEach(function (item) {
+	        _this.checkedMap[item] = true;
+	      });
+	    }
+	  }, {
+	    key: 'setCheckedKeys',
+	    value: function setCheckedKeys(keys) {
+	      var _this2 = this;
+	
+	      !_type2.default.isArray(keys) && (keys = [keys]);
+	      keys.forEach(function (key) {
+	        if (!_this2.checkedMap[key]) {
+	          _this2.checkedMap[key] = true;
+	        }
+	      });
+	    }
+	  }, {
+	    key: 'unsetChecked',
+	    value: function unsetChecked(keys) {
+	      var _this3 = this;
+	
+	      !_type2.default.isArray(keys) && (keys = [keys]);
+	      keys.forEach(function (key) {
+	        if (_this3.checkedMap[key]) {
+	          delete _this3.checkedMap[key];
+	        }
+	      });
+	    }
+	  }]);
+	
+	  return Store;
+	}();
+	
+	exports.default = Store;
+
+/***/ },
+/* 628 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(629)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(630)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TreeNode.vue"], function () {
+	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TreeNode.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 629 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _type = __webpack_require__(415);
+	
+	var _type2 = _interopRequireDefault(_type);
+	
+	var _events = __webpack_require__(440);
+	
+	var _events2 = _interopRequireDefault(_events);
+	
+	var _n3CollapseTransition = __webpack_require__(498);
+	
+	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
+	
+	var _n3Checkbox = __webpack_require__(443);
+	
+	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// <template>
+	//   <div>
+	//     <div :class="`${prefixCls}-tree-node`">
+	//       <div :class="`${prefixCls}-tree-node-data`"></div>
+	//         <span
+	//           :class="[true ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']"
+	//           @click.prevent="clickHandler(node.value)">
+	//           <span v-if="node.children">
+	//             <n3-icon
+	//               :class="`${prefixCls}-tree-select-icon`"
+	//               :type="expanded ? tree.openedIcon : tree.closedIcon"
+	//               @click.stop="expandIconClickHanlder"
+	//               >
+	//             </n3-icon>
+	//             <span
+	//               :class="`${prefixCls}-tree-loading-box`"
+	//               v-show="loading"
+	//             >
+	//               <n3-loading color="primary" size="xs"></n3-loading>
+	//             </span>
+	//           </span>
+	//           <span :class="`${prefixCls}-tree-select-box`" v-if="!tree.checkable">
+	//             <n3-checkbox :checked="node.value" :on-change="checkChangeHanlder"></n3-checkbox>
+	//           </span>
+	//           <label :class="`${prefixCls}-tree-loading-box`">
+	//             <n3-icon :type="node.icon || tree.icon"></n3-icon>
+	//             <span>{{node.label}}</span>
+	//           </label>
+	//         </span>
+	//       </div>
+	//       <n3-collapse-transition>
+	//         <div :class="`${prefixCls}-tree-children`" v-show="expanded">
+	//           <div :class="`${prefixCls}-tree-nodes`" v-for="child in node.children">
+	//             <n3-tree-node
+	//               class="inner"
+	//               :node="child"
+	//               >
+	//             </n3-tree-node>
+	//           </div>
+	//         </div>
+	//       </n3-collapse-transition>
+	//     </div>
+	//   </div>
+	// </template>
+	
+	// <script>
+	exports.default = {
+	  name: 'n3TreeNode',
+	  mixins: [_events2.default],
+	  props: {
+	    value: {},
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    },
+	    node: {
+	      type: Object,
+	      default: function _default() {
+	        return {};
+	      }
+	    },
+	    checkedKeys: {
+	      type: Array,
+	      twoway: true,
+	      default: function _default() {
+	        return [];
+	      }
+	    },
+	    expandAll: {
+	      type: Boolean,
+	      default: false
+	    },
+	    loadData: {
+	      type: Function,
+	      default: null
+	    },
+	    onRightClick: {
+	      type: Function,
+	      default: null
+	    },
+	    onSelect: {
+	      type: Function,
+	      default: null
+	    },
+	    onExpand: {
+	      type: Function,
+	      default: null
+	    },
+	    onCheck: {
+	      type: Function,
+	      default: null
+	    }
+	  },
+	  data: function data() {
+	    return {
+	      loading: false,
+	      expanded: false,
+	      checkable: false
+	    };
+	  },
+	
+	
+	  components: {
+	    n3CollapseTransition: _n3CollapseTransition2.default,
+	    n3Checkbox: _n3Checkbox2.default
+	  },
+	
+	  computed: {
+	    checkable: function checkable() {
+	      return this.tree.checkable;
+	    }
+	  },
+	
+	  methods: {
+	    /**
+	     * Click Handler
+	     * @param {Number} index Tree index selected.
+	     * @param {Mixed} value Value selected.
+	     */
+	    clickHandler: function clickHandler(index, value) {
+	      var store = this.tree.store;
+	      store.setCurrentNode(this.node);
+	
+	      this.tree.$emit('current-change', store.currentNode ? store.currentNode.data : null, store.currentNode);
+	      this.tree.currentNode = this;
+	
+	      if (this.tree.expandOnClickNode) {
+	        this.expandIconClickHanlder();
+	      }
+	      this.tree.$emit('node-click', this.node.data, this.node, this);
+	    },
+	    expandIconClickHanlder: function expandIconClickHanlder() {
+	      if (this.expanded) {
+	        this.node.collapse();
+	      } else {
+	        this.node.expand();
+	      }
+	    },
+	    checkChangeHanlder: function checkChangeHanlder(checked) {
+	      if (!this.node.indeterminate) {
+	        this.node.setChecked(checked, !this.tree.checkStrictly);
+	      }
+	    }
+	  },
+	
+	  created: function created() {
+	    var parent = this.$parent;
+	
+	    if (parent.isTree) {
+	      this.tree = parent;
+	    } else {
+	      this.tree = parent.$parent.tree;
+	    }
+	
+	    var tree = this.tree;
+	    if (!tree) {
+	      console.warn('Can not find node\'s tree.');
+	    }
+	
+	    if (this.node.expanded) {
+	      this.expanded = true;
+	    }
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 630 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>\n    <div :class=\"`${prefixCls}-tree-node`\">\n      <div :class=\"`${prefixCls}-tree-node-data`\"></div>\n        <span\n          :class=\"[true ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\"\n          @click.prevent=\"clickHandler(node.value)\">\n          <span v-if=\"node.children\">\n            <n3-icon\n              :class=\"`${prefixCls}-tree-select-icon`\"\n              :type=\"expanded ? tree.openedIcon : tree.closedIcon\"\n              @click.stop=\"expandIconClickHanlder\"\n              >\n            </n3-icon>\n            <span\n              :class=\"`${prefixCls}-tree-loading-box`\"\n              v-show=\"loading\"\n            >\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </span>\n          <span :class=\"`${prefixCls}-tree-select-box`\" v-if=\"!tree.checkable\">\n            <n3-checkbox :checked=\"node.value\" :on-change=\"checkChangeHanlder\"></n3-checkbox>\n          </span>\n          <label :class=\"`${prefixCls}-tree-loading-box`\">\n            <n3-icon :type=\"node.icon || tree.icon\"></n3-icon>\n            <span>{{node.label}}</span>\n          </label>\n        </span>\n      </div>\n      <n3-collapse-transition>\n        <div :class=\"`${prefixCls}-tree-children`\" v-show=\"expanded\">\n          <div :class=\"`${prefixCls}-tree-nodes`\" v-for=\"child in node.children\">\n            <n3-tree-node\n              class=\"inner\"\n              :node=\"child\"\n              >\n            </n3-tree-node>\n          </div>\n        </div>\n      </n3-collapse-transition>\n    </div>\n  </div>";
+
+/***/ },
+/* 631 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"n3-tree\">\n    <n3-tree-node\n      v-for=\"child in data\"\n      :node=\"child\"\n    >\n    </n3-tree-node>\n    <div v-if=\"isValidTree\">\n      <span>{{ emptyText }}</span>\n    </div>\n  </div>";
 
 /***/ }
 /******/ ]);

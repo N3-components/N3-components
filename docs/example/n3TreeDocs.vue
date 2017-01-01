@@ -5,118 +5,9 @@
       <span class="author"></span>
     </h1>
     <div class="bs-example">
-      <n3-tree v-model="files1" :expand-all="true"></n3-tree>
+      <n3-tree :data="files1" :expand-all="true"></n3-tree>
     </div>
-    <pre><code class="language-markup"><script type="language-mark-up">
-  </script></code></pre>
-
-
-  <h1 class="page-header">
-    <a href="#异步加载" class="anchor">异步加载</a>
-    <span class="author"></span>
-  </h1>
-  <div class="bs-example">
-     <n3-tree 
-      v-model="files2"
-      :checkable="true" 
-      :load-data="loadList"
-    ></n3-tree> 
-  </div>
-  <pre><code class="language-markup"><script type="language-mark-up">
-<n3-tree :data="files2" :load-data="loadList"></n3-tree>
-  </script> </code></pre>
-  <pre><code class="language-javascript"><script type="language-javascript">
-new Vue({
-    data: {
-        files2: [
-            {
-                label: '根目录',
-                value: 1,
-                children: [],
-                icon: 'folder'
-            }
-        ],
-        loadList(value) {
-            return new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    var res = [{
-                        label: '我的文档' + Math.ceil(Math.random() * 100000),
-                        value: Math.ceil(Math.random() * 100000)
-                    }, {
-                        label: '新建文件夹' + Math.ceil(Math.random() * 100000),
-                        value: Math.ceil(Math.random() * 100000),
-                        children: [],
-                        icon: 'folder'
-                    }]
-                    resolve(res)
-                }, 1000)
-            })
-        }
-    }
-})
-
-  </script></code></pre>
-
-    <h1 class="page-header">    
-      <a href="#勾选节点" class="anchor">勾选节点</a>
-      <span class="author"></span>
-    </h1>
-    <div class="bs-example">
-      <!-- <n3-tree 
-        v-model="files3" 
-        :default-expand-all="true" 
-        :checkable="true" 
-        :on-check="onCheck"
-        :checked-keys.sync="checkedKeys">
-      </n3-tree> -->
-    </div>
-    <pre><code class="language-markup"><script type="language-mark-up">
-    <n3-tree :value.sync="id" :data="files3" checkable="true"></n3-tree>
-    </script></code></pre>
-
-    <pre><code class="language-javascript"><script type="language-javascript">
-new Vue({
-    data: {
-        files3: [
-            {
-                label: '新建文件夹1',
-                value: 1,
-                children: []
-            },
-            {
-                label: '我的文档2',
-                value: 2
-            },
-            {
-                label: '新建文件夹3',
-                value: 3,
-                children: [
-                    {
-                        label: '我的文档1',
-                        value: 4
-                    },
-                    {
-                        label: '新建文件夹4',
-                        value: 5,
-                        children: [
-                        {
-                            label: '我的文档3',
-                            value: 6
-                        },
-                        {
-                            label: '我的文档4',
-                            value: 7
-                        }
-                        ]
-                    }
-                ]
-            }
-        ]
-    }
-})
-        </script> </code></pre>
-
-  <h2>参数</h2>
+    <h2>参数</h2>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -215,8 +106,8 @@ new Vue({
     computed: {
       id: Date.now()
     },
-    
-    data () {
+
+    data() {
       return {
         files1: [{
           label: '我的文档2',
@@ -231,15 +122,15 @@ new Vue({
           value: 3,
           icon: 'folder',
           children: [{
-              label: '我的文档1',
-              value: 4
-            }, {
-              label: '新建文件夹4',
-              value: 5,
-              icon: 'folder',
-              children: [{
-                label: '我的文档3',
-                value: 6
+            label: '我的文档1',
+            value: 4
+          }, {
+            label: '新建文件夹4',
+            value: 5,
+            icon: 'folder',
+            children: [{
+              label: '我的文档3',
+              value: 6
             }, {
               label: '我的文档4',
               value: 7
@@ -279,7 +170,7 @@ new Vue({
             }]
           }]
         }],
-        loadList (value) {
+        loadList(value) {
           return new Promise((resolve, reject) => {
             setTimeout(() => {
               var res = [{
@@ -295,7 +186,7 @@ new Vue({
             }, 1000)
           })
         },
-        onCheck () {
+        onCheck() {
           console.log('onCheck')
         }
       }
