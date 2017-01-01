@@ -25,6 +25,10 @@ module.exports = {
       loader: 'url-loader'
     },
     {
+      test: /\.md/,
+      loader: 'vue-markdown-loader'
+    },
+    {
       test: /\.js$/,
       exclude: /node_modules|vue\/src|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
       loader: 'babel'

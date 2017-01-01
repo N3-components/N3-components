@@ -38,7 +38,7 @@ require('../js/showLanguage')
 
 import prismjs from 'prismjs'
 import headerDocs from './headerDocs.vue'
-import n3LayoutDocs from './n3LayoutDocs.vue'
+import n3LayoutDocs from './n3LayoutDocs.md'
 import n3IconDocs from './n3IconDocs.vue'
 import n3TagsDocs from './n3TagsDocs.vue'
 import n3AlertDocs from './n3AlertDocs.vue'
@@ -197,6 +197,9 @@ export default{
         this.component = hash
         this.$nextTick(() => {
           prismjs.highlightAll()
+          document.querySelectorAll('table').forEach(i => {
+            i.classList.add('table', 'table-bordered')
+          })
         })
       }
     }

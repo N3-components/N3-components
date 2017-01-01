@@ -137,8 +137,6 @@ export default {
       value: value
     }
   },
-  ready () {
-  },
   methods: {
     selectChange (selectedValue) {
       console.log(this.value)
