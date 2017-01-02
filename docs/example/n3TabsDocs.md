@@ -1,59 +1,127 @@
 <template>
-  <div class="bs-docs-section" id="标签页"  >
-    <h1 class="page-header"><a href="#标签页" class="anchor">标签页</a><span class="author"> </span></h1>
-    <div class="bs-example">
-      <n3-tabs :on-change="change" :list="list"></n3-tabs>
 
-      <n3-tabs :on-change="change" :value="1">
-        <n3-tab header="one" badge="1">
-          <p>.......</p>
-          <p>.......</p>
-          <p>.......</p>
-        </n3-tab>
-        <n3-tab header="two">
-          <p>*********</p>
-          <p>*********</p>
-          <p>*********</p>
-        </n3-tab>
-        <n3-tab header="three" disabled>
-          ...
-        </n3-tab>
-      </n3-tabs>
+### 标签页
+
+<div class="bs-docs-section" >
+<div class="bs-example">
+
+#### 使用list
+
+<n3-tabs :on-change="change" :list="list"></n3-tabs>
+```html
+<n3-tabs :on-change="change" :list="list"></n3-tabs>
+```
+
+```javascript
+data () {
+  return {
+    list: [{
+      header: 'first',
+      badge: 12,
+      content: 'first的内容'
+    }, {
+      header: 'seacond',
+      badge: 12,
+      content: 'seacond的内容'
+    }]
+  }
+}
+```
+
+---
+
+#### 使用tab
+
+<n3-tabs :on-change="change" :value="1">
+  <n3-tab header="one" badge="1">
+    <p>.......</p>
+    <p>.......</p>
+    <p>.......</p>
+  </n3-tab>
+  <n3-tab header="two">
+    <p>*********</p>
+    <p>*********</p>
+    <p>*********</p>
+  </n3-tab>
+  <n3-tab header="three" disabled>
+    ...
+  </n3-tab>
+</n3-tabs>
+
+```html
+<n3-tabs :on-change="change" :value="1">
+  <n3-tab header="one" badge="1">
+    <p>.......</p>
+    <p>.......</p>
+    <p>.......</p>
+  </n3-tab>
+  <n3-tab header="two">
+    <p>*********</p>
+    <p>*********</p>
+    <p>*********</p>
+  </n3-tab>
+  <n3-tab header="three" disabled>
+    ...
+  </n3-tab>
+</n3-tabs>
+```
+
+---
 
 
-      
-      <p>胶囊样式 pills</p> 
-      <n3-tabs pills>
-        <n3-tab header="one">
-        </n3-tab>
-        <n3-tab header="two">
-        </n3-tab>
-      </n3-tabs>
-      <p>垂直样式 stacked</p> 
-      <n3-tabs pills stacked style="max-width: 300px;" :on-change="change">
-        <n3-tab header="one" >
-        </n3-tab>
-        <n3-tab header="two">
-        </n3-tab>
-      </n3-tabs>
-      <p>primary</p> 
-      <n3-tabs primary pills stacked style="max-width: 300px;">
-        <n3-tab header="one">
-        </n3-tab>
-        <n3-tab header="two">
-        </n3-tab>
-      </n3-tabs>
-      <p>自适应 justified</p> 
-      <n3-tabs pills justified>
-        <n3-tab header="one">
-        </n3-tab>
-        <n3-tab header="two">
-        </n3-tab>
-      </n3-tabs>
+#### 胶囊样式 pills
 
-      
-    </div>
-    
+<n3-tabs pills>
+  <n3-tab header="one">
+  </n3-tab>
+  <n3-tab header="two">
+  </n3-tab>
+</n3-tabs>
+
+---
+
+#### 垂直样式 stacked
+
+<n3-tabs pills stacked style="max-width: 300px;" :on-change="change">
+  <n3-tab header="one" >
+  </n3-tab>
+  <n3-tab header="two">
+  </n3-tab>
+</n3-tabs>
+
+---
+
+#### 垂直样式 stacked
+
+<n3-tabs primary pills stacked style="max-width: 300px;">
+  <n3-tab header="one">
+  </n3-tab>
+  <n3-tab header="two">
+  </n3-tab>
+</n3-tabs>
+
+---
+
+#### 自适应 justified
+
+<n3-tabs pills justified>
+  <n3-tab header="one">
+  </n3-tab>
+  <n3-tab header="two">
+  </n3-tab>
+</n3-tabs>
+</div>
+
+
+
+### n3-column参数
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| col          | Number     |    -         |     占的列数     |
+| mode          | String     |    md          |     布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)    |
+| offset          | Number     |    -          |     偏移值    |
+
+
   <h2>tabs参数</h2>
   <table class="table table-bordered">
     <thead>
@@ -166,11 +234,11 @@ export default {
       list: [{
         header: 'first',
         badge: 12,
-        content: 'xxx'
-      },{
+        content: 'first的内容'
+      }, {
         header: 'seacond',
         badge: 12,
-        content: 'xxxx'
+        content: 'seacond的内容'
       }]
     }
   },

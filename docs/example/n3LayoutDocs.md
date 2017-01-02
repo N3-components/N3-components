@@ -2,56 +2,56 @@
 
 ## 布局
 
-<div class="bs-docs-section" id="布局"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
-    <n3-container fluid>
-      <n3-row>
-          <n3-column :col="8" class="context">
-              :col="8"
-          </n3-column>
-          <n3-column :col="4" class="context">
-              :col="4"
-          </n3-column>
-      </n3-row>
-      <n3-row>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-          <n3-column :col="1" class="context">
-              1
-          </n3-column>
-      </n3-row>
-    </n3-container>
+  <n3-container fluid>
+    <n3-row>
+        <n3-column :col="8" class="context">
+            :col="8"
+        </n3-column>
+        <n3-column :col="4" class="context">
+            :col="4"
+        </n3-column>
+    </n3-row>
+    <n3-row>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+        <n3-column :col="1" class="context">
+            1
+        </n3-column>
+    </n3-row>
+  </n3-container>
 </div>
 
 ```html

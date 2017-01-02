@@ -4,6 +4,19 @@
  * Based on the Bootstrap Documentation styles and overridden as necessary.
  */
 
+.docs-n3{
+  width: 350px;
+}
+.docs-title{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.docs-center{
+ text-align: center;
+ color:#555;
+}
+
 .bs-docs-section h1 {
   font-size: 42px
 }
@@ -41,7 +54,7 @@ iframe{
 
 
 .bs-docs-header a {
-  color: white;
+  color: #41cac0;
   font-weight: normal;
 }
 .btn-outline-inverse {
@@ -68,7 +81,6 @@ iframe{
 }
 
 .bs-docs-header p {
-  color: #ffffff;
 }
 
 a.back-to-top {

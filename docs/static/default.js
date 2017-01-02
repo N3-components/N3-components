@@ -8350,11 +8350,11 @@
 	
 	var _headerDocs2 = _interopRequireDefault(_headerDocs);
 	
-	var _vue = __webpack_require__(651);
+	var _vue = __webpack_require__(671);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
-	var _index = __webpack_require__(652);
+	var _index = __webpack_require__(672);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -8381,7 +8381,7 @@
 	module.exports = __webpack_require__(463)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(650)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(670)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -8780,159 +8780,159 @@
 	
 	var _n3AlertDocs2 = _interopRequireDefault(_n3AlertDocs);
 	
-	var _n3AccordionDocs = __webpack_require__(485);
+	var _n3AccordionDocs = __webpack_require__(505);
 	
 	var _n3AccordionDocs2 = _interopRequireDefault(_n3AccordionDocs);
 	
-	var _n3CascaderDocs = __webpack_require__(489);
+	var _n3CascaderDocs = __webpack_require__(509);
 	
 	var _n3CascaderDocs2 = _interopRequireDefault(_n3CascaderDocs);
 	
-	var _n3AffixDocs = __webpack_require__(495);
+	var _n3AffixDocs = __webpack_require__(515);
 	
 	var _n3AffixDocs2 = _interopRequireDefault(_n3AffixDocs);
 	
-	var _n3AsideDocs = __webpack_require__(501);
+	var _n3AsideDocs = __webpack_require__(521);
 	
 	var _n3AsideDocs2 = _interopRequireDefault(_n3AsideDocs);
 	
-	var _n3CarouselDocs = __webpack_require__(505);
+	var _n3CarouselDocs = __webpack_require__(525);
 	
 	var _n3CarouselDocs2 = _interopRequireDefault(_n3CarouselDocs);
 	
-	var _n3ButtonsDocs = __webpack_require__(511);
+	var _n3ButtonsDocs = __webpack_require__(531);
 	
 	var _n3ButtonsDocs2 = _interopRequireDefault(_n3ButtonsDocs);
 	
-	var _n3ToastDocs = __webpack_require__(514);
+	var _n3ToastDocs = __webpack_require__(534);
 	
 	var _n3ToastDocs2 = _interopRequireDefault(_n3ToastDocs);
 	
-	var _n3DatepickerDocs = __webpack_require__(518);
+	var _n3DatepickerDocs = __webpack_require__(538);
 	
 	var _n3DatepickerDocs2 = _interopRequireDefault(_n3DatepickerDocs);
 	
-	var _n3TimepickerDocs = __webpack_require__(522);
+	var _n3TimepickerDocs = __webpack_require__(542);
 	
 	var _n3TimepickerDocs2 = _interopRequireDefault(_n3TimepickerDocs);
 	
-	var _n3DatetimepickerDocs = __webpack_require__(526);
+	var _n3DatetimepickerDocs = __webpack_require__(546);
 	
 	var _n3DatetimepickerDocs2 = _interopRequireDefault(_n3DatetimepickerDocs);
 	
-	var _n3DropdownDocs = __webpack_require__(530);
+	var _n3DropdownDocs = __webpack_require__(550);
 	
 	var _n3DropdownDocs2 = _interopRequireDefault(_n3DropdownDocs);
 	
-	var _n3ModalDocs = __webpack_require__(534);
+	var _n3ModalDocs = __webpack_require__(554);
 	
 	var _n3ModalDocs2 = _interopRequireDefault(_n3ModalDocs);
 	
-	var _n3InputDocs = __webpack_require__(538);
+	var _n3InputDocs = __webpack_require__(558);
 	
 	var _n3InputDocs2 = _interopRequireDefault(_n3InputDocs);
 	
-	var _n3InputNumberDocs = __webpack_require__(542);
+	var _n3InputNumberDocs = __webpack_require__(562);
 	
 	var _n3InputNumberDocs2 = _interopRequireDefault(_n3InputNumberDocs);
 	
-	var _n3TextareaDocs = __webpack_require__(546);
+	var _n3TextareaDocs = __webpack_require__(566);
 	
 	var _n3TextareaDocs2 = _interopRequireDefault(_n3TextareaDocs);
 	
-	var _n3NavDocs = __webpack_require__(550);
+	var _n3NavDocs = __webpack_require__(570);
 	
 	var _n3NavDocs2 = _interopRequireDefault(_n3NavDocs);
 	
-	var _n3PopoverDocs = __webpack_require__(554);
+	var _n3PopoverDocs = __webpack_require__(574);
 	
 	var _n3PopoverDocs2 = _interopRequireDefault(_n3PopoverDocs);
 	
-	var _n3ProgressbarDocs = __webpack_require__(558);
+	var _n3ProgressbarDocs = __webpack_require__(578);
 	
 	var _n3ProgressbarDocs2 = _interopRequireDefault(_n3ProgressbarDocs);
 	
-	var _n3SelectDocs = __webpack_require__(564);
+	var _n3SelectDocs = __webpack_require__(584);
 	
 	var _n3SelectDocs2 = _interopRequireDefault(_n3SelectDocs);
 	
-	var _n3SwitchDocs = __webpack_require__(568);
+	var _n3SwitchDocs = __webpack_require__(588);
 	
 	var _n3SwitchDocs2 = _interopRequireDefault(_n3SwitchDocs);
 	
-	var _n3TimelineDocs = __webpack_require__(572);
+	var _n3TimelineDocs = __webpack_require__(592);
 	
 	var _n3TimelineDocs2 = _interopRequireDefault(_n3TimelineDocs);
 	
-	var _n3TabsDocs = __webpack_require__(576);
+	var _n3TabsDocs = __webpack_require__(596);
 	
 	var _n3TabsDocs2 = _interopRequireDefault(_n3TabsDocs);
 	
-	var _n3TooltipDocs = __webpack_require__(580);
+	var _n3TooltipDocs = __webpack_require__(600);
 	
 	var _n3TooltipDocs2 = _interopRequireDefault(_n3TooltipDocs);
 	
-	var _n3TypeaheadDocs = __webpack_require__(584);
+	var _n3TypeaheadDocs = __webpack_require__(604);
 	
 	var _n3TypeaheadDocs2 = _interopRequireDefault(_n3TypeaheadDocs);
 	
-	var _n3StepDocs = __webpack_require__(588);
+	var _n3StepDocs = __webpack_require__(608);
 	
 	var _n3StepDocs2 = _interopRequireDefault(_n3StepDocs);
 	
-	var _n3SliderDocs = __webpack_require__(592);
+	var _n3SliderDocs = __webpack_require__(612);
 	
 	var _n3SliderDocs2 = _interopRequireDefault(_n3SliderDocs);
 	
-	var _n3LoadingDocs = __webpack_require__(596);
+	var _n3LoadingDocs = __webpack_require__(616);
 	
 	var _n3LoadingDocs2 = _interopRequireDefault(_n3LoadingDocs);
 	
-	var _n3PageDocs = __webpack_require__(600);
+	var _n3PageDocs = __webpack_require__(620);
 	
 	var _n3PageDocs2 = _interopRequireDefault(_n3PageDocs);
 	
-	var _n3DataTableDocs = __webpack_require__(604);
+	var _n3DataTableDocs = __webpack_require__(624);
 	
 	var _n3DataTableDocs2 = _interopRequireDefault(_n3DataTableDocs);
 	
-	var _n3BreadcrumbDocs = __webpack_require__(608);
+	var _n3BreadcrumbDocs = __webpack_require__(628);
 	
 	var _n3BreadcrumbDocs2 = _interopRequireDefault(_n3BreadcrumbDocs);
 	
-	var _n3MultipleInputDocs = __webpack_require__(611);
+	var _n3MultipleInputDocs = __webpack_require__(631);
 	
 	var _n3MultipleInputDocs2 = _interopRequireDefault(_n3MultipleInputDocs);
 	
-	var _n3TreeDocs = __webpack_require__(615);
+	var _n3TreeDocs = __webpack_require__(635);
 	
 	var _n3TreeDocs2 = _interopRequireDefault(_n3TreeDocs);
 	
-	var _n3RateDocs = __webpack_require__(619);
+	var _n3RateDocs = __webpack_require__(639);
 	
 	var _n3RateDocs2 = _interopRequireDefault(_n3RateDocs);
 	
-	var _n3UploaderDocs = __webpack_require__(623);
+	var _n3UploaderDocs = __webpack_require__(643);
 	
 	var _n3UploaderDocs2 = _interopRequireDefault(_n3UploaderDocs);
 	
-	var _n3FormDocs = __webpack_require__(627);
+	var _n3FormDocs = __webpack_require__(647);
 	
 	var _n3FormDocs2 = _interopRequireDefault(_n3FormDocs);
 	
-	var _n3CheckboxDocs = __webpack_require__(631);
+	var _n3CheckboxDocs = __webpack_require__(651);
 	
 	var _n3CheckboxDocs2 = _interopRequireDefault(_n3CheckboxDocs);
 	
-	var _n3RadioDocs = __webpack_require__(635);
+	var _n3RadioDocs = __webpack_require__(655);
 	
 	var _n3RadioDocs2 = _interopRequireDefault(_n3RadioDocs);
 	
-	var _n3CardDocs = __webpack_require__(639);
+	var _n3CardDocs = __webpack_require__(659);
 	
 	var _n3CardDocs2 = _interopRequireDefault(_n3CardDocs);
 	
-	var _n3AnimateDocs = __webpack_require__(643);
+	var _n3AnimateDocs = __webpack_require__(663);
 	
 	var _n3AnimateDocs2 = _interopRequireDefault(_n3AnimateDocs);
 	
@@ -8974,7 +8974,7 @@
 	// </div>
 	// </template>
 	// <script>
-	__webpack_require__(649);
+	__webpack_require__(669);
 	
 	exports.default = {
 	  props: {
@@ -9973,7 +9973,7 @@
 	//           <a href="./index.html" >N3</a>
 	//         </n3-nav-item>
 	//         <n3-nav-item :active="active==='base'">
-	//           <a href="./component.html" >经典</a>
+	//           <a href="./component.html" >组件</a>
 	//         </n3-nav-item>
 	//         <!--  <n3-nav-item :active="active==='usage'">
 	//           <a href="./usage.html" >使用</a>
@@ -9996,7 +9996,7 @@
 /* 467 */
 /***/ function(module, exports) {
 
-	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\n    <n3-container fluid style=\"width:92%\">\n      <n3-nav>\n        <n3-nav-item >\n          <a href=\"./index.html\" >N3</a>\n        </n3-nav-item>\n        <n3-nav-item :active=\"active==='base'\">\n          <a href=\"./component.html\" >经典</a>\n        </n3-nav-item>\n        <!--  <n3-nav-item :active=\"active==='usage'\">\n          <a href=\"./usage.html\" >使用</a>\n        </n3-nav-item> -->\n      </n3-nav>\n    </n3-container>\n  </header>";
+	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\n    <n3-container fluid style=\"width:92%\">\n      <n3-nav>\n        <n3-nav-item >\n          <a href=\"./index.html\" >N3</a>\n        </n3-nav-item>\n        <n3-nav-item :active=\"active==='base'\">\n          <a href=\"./component.html\" >组件</a>\n        </n3-nav-item>\n        <!--  <n3-nav-item :active=\"active==='usage'\">\n          <a href=\"./usage.html\" >使用</a>\n        </n3-nav-item> -->\n      </n3-nav>\n    </n3-container>\n  </header>";
 
 /***/ },
 /* 468 */
@@ -10015,12 +10015,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-428d62dd&file=n3LayoutDocs-2.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-2.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-428d62dd&file=n3LayoutDocs-2.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-2.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-428d62dd&file=n3LayoutDocs-2.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-2.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10042,8 +10042,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-428d62dd&file=n3LayoutDocs-2.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-2.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-428d62dd&file=n3LayoutDocs-2.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-2.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-1.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-1.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10061,7 +10061,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".context[_v-428d62dd]{\n    padding-top: 10px;\n    padding-bottom: 10px;\n    background-color: #eee;\n    border: 1px solid #ddd;\n    text-align: center;\n    font-size:14\n  }", ""]);
+	exports.push([module.id, ".context[_v-427f4b5c]{\n    padding-top: 10px;\n    padding-bottom: 10px;\n    background-color: #eee;\n    border: 1px solid #ddd;\n    text-align: center;\n    font-size:14\n  }", ""]);
 	
 	// exports
 
@@ -10070,7 +10070,7 @@
 /* 472 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-428d62dd=\"\"><template _v-428d62dd=\"\">\n<h2 _v-428d62dd=\"\">布局</h2>\n<div class=\"bs-docs-section\" id=\"布局\" _v-428d62dd=\"\">\n<div class=\"bs-example\" _v-428d62dd=\"\">\n    <n3-container fluid=\"\" _v-428d62dd=\"\">\n      <n3-row _v-428d62dd=\"\">\n          <n3-column :col=\"8\" class=\"context\" _v-428d62dd=\"\">\n              :col=\"8\"\n          </n3-column>\n          <n3-column :col=\"4\" class=\"context\" _v-428d62dd=\"\">\n              :col=\"4\"\n          </n3-column>\n      </n3-row>\n      <n3-row _v-428d62dd=\"\">\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n          <n3-column :col=\"1\" class=\"context\" _v-428d62dd=\"\">\n              1\n          </n3-column>\n      </n3-row>\n    </n3-container>\n</div>\n<pre _v-428d62dd=\"\"><code class=\"language-html\" _v-428d62dd=\"\"><span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-container</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"8\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"4\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">:col</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-428d62dd=\"\">class</span>=<span class=\"hljs-string\" _v-428d62dd=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\" _v-428d62dd=\"\">&lt;/<span class=\"hljs-name\" _v-428d62dd=\"\">n3-container</span>&gt;</span>\n</code></pre>\n<h3 _v-428d62dd=\"\">n3-container参数</h3>\n<table _v-428d62dd=\"\">\n<thead _v-428d62dd=\"\">\n<tr _v-428d62dd=\"\">\n<th _v-428d62dd=\"\">参数</th>\n<th _v-428d62dd=\"\">类型</th>\n<th _v-428d62dd=\"\">默认值</th>\n<th _v-428d62dd=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-428d62dd=\"\">\n<tr _v-428d62dd=\"\">\n<td _v-428d62dd=\"\">fluid</td>\n<td _v-428d62dd=\"\">Boolean</td>\n<td _v-428d62dd=\"\">false</td>\n<td _v-428d62dd=\"\">是否流式布局</td>\n</tr>\n</tbody>\n</table>\n<h3 _v-428d62dd=\"\">n3-column参数</h3>\n<table _v-428d62dd=\"\">\n<thead _v-428d62dd=\"\">\n<tr _v-428d62dd=\"\">\n<th _v-428d62dd=\"\">参数</th>\n<th _v-428d62dd=\"\">类型</th>\n<th _v-428d62dd=\"\">默认值</th>\n<th _v-428d62dd=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-428d62dd=\"\">\n<tr _v-428d62dd=\"\">\n<td _v-428d62dd=\"\">col</td>\n<td _v-428d62dd=\"\">Number</td>\n<td _v-428d62dd=\"\">-</td>\n<td _v-428d62dd=\"\">占的列数</td>\n</tr>\n<tr _v-428d62dd=\"\">\n<td _v-428d62dd=\"\">mode</td>\n<td _v-428d62dd=\"\">String</td>\n<td _v-428d62dd=\"\">md</td>\n<td _v-428d62dd=\"\">布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>\n</tr>\n<tr _v-428d62dd=\"\">\n<td _v-428d62dd=\"\">offset</td>\n<td _v-428d62dd=\"\">Number</td>\n<td _v-428d62dd=\"\">-</td>\n<td _v-428d62dd=\"\">偏移值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
+	module.exports = "<section _v-427f4b5c=\"\"><template _v-427f4b5c=\"\">\n<h2 _v-427f4b5c=\"\">布局</h2>\n<div class=\"bs-docs-section\" _v-427f4b5c=\"\">\n<div class=\"bs-example\" _v-427f4b5c=\"\">\n  <n3-container fluid=\"\" _v-427f4b5c=\"\">\n    <n3-row _v-427f4b5c=\"\">\n        <n3-column :col=\"8\" class=\"context\" _v-427f4b5c=\"\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\" _v-427f4b5c=\"\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row _v-427f4b5c=\"\">\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre _v-427f4b5c=\"\"><code class=\"language-html\" _v-427f4b5c=\"\"><span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-container</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"8\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"4\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-container</span>&gt;</span>\n</code></pre>\n<h3 _v-427f4b5c=\"\">n3-container参数</h3>\n<table _v-427f4b5c=\"\">\n<thead _v-427f4b5c=\"\">\n<tr _v-427f4b5c=\"\">\n<th _v-427f4b5c=\"\">参数</th>\n<th _v-427f4b5c=\"\">类型</th>\n<th _v-427f4b5c=\"\">默认值</th>\n<th _v-427f4b5c=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-427f4b5c=\"\">\n<tr _v-427f4b5c=\"\">\n<td _v-427f4b5c=\"\">fluid</td>\n<td _v-427f4b5c=\"\">Boolean</td>\n<td _v-427f4b5c=\"\">false</td>\n<td _v-427f4b5c=\"\">是否流式布局</td>\n</tr>\n</tbody>\n</table>\n<h3 _v-427f4b5c=\"\">n3-column参数</h3>\n<table _v-427f4b5c=\"\">\n<thead _v-427f4b5c=\"\">\n<tr _v-427f4b5c=\"\">\n<th _v-427f4b5c=\"\">参数</th>\n<th _v-427f4b5c=\"\">类型</th>\n<th _v-427f4b5c=\"\">默认值</th>\n<th _v-427f4b5c=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-427f4b5c=\"\">\n<tr _v-427f4b5c=\"\">\n<td _v-427f4b5c=\"\">col</td>\n<td _v-427f4b5c=\"\">Number</td>\n<td _v-427f4b5c=\"\">-</td>\n<td _v-427f4b5c=\"\">占的列数</td>\n</tr>\n<tr _v-427f4b5c=\"\">\n<td _v-427f4b5c=\"\">mode</td>\n<td _v-427f4b5c=\"\">String</td>\n<td _v-427f4b5c=\"\">md</td>\n<td _v-427f4b5c=\"\">布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>\n</tr>\n<tr _v-427f4b5c=\"\">\n<td _v-427f4b5c=\"\">offset</td>\n<td _v-427f4b5c=\"\">Number</td>\n<td _v-427f4b5c=\"\">-</td>\n<td _v-427f4b5c=\"\">偏移值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
 /* 473 */
@@ -10092,12 +10092,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-5.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-3.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-5.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-cdfba2a2&file=n3IconDocs-5.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-5.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-5.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-3.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-ce3400a6&file=n3IconDocs-3.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-3.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-3.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-cdfba2a2&file=n3IconDocs-5.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-5.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-ce3400a6&file=n3IconDocs-3.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-3.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10119,8 +10119,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-cdfba2a2&file=n3IconDocs-5.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-5.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-cdfba2a2&file=n3IconDocs-5.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-5.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-ce3400a6&file=n3IconDocs-3.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-3.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-ce3400a6&file=n3IconDocs-3.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-3.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10138,7 +10138,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".row-ex div[_v-cdfba2a2] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-cdfba2a2] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-cdfba2a2] {\n    color:gray;\n  }", ""]);
+	exports.push([module.id, ".row-ex div[_v-ce3400a6] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-ce3400a6] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-ce3400a6] {\n    color:gray;\n  }", ""]);
 	
 	// exports
 
@@ -10284,7 +10284,7 @@
 /* 478 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-cdfba2a2=\"\"><template _v-cdfba2a2=\"\">\n  <div class=\"bs-docs-section\" id=\"图标\" _v-cdfba2a2=\"\">\n    <h1 class=\"page-header\" _v-cdfba2a2=\"\"><a href=\"#图标\" class=\"anchor\" _v-cdfba2a2=\"\">图标</a><span class=\"author\" _v-cdfba2a2=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-cdfba2a2=\"\">\n    <h3 _v-cdfba2a2=\"\">FontAwesome 4.0 图标列表</h3>  \n    <h4 _v-cdfba2a2=\"\">11 New Icons in 4.0</h4>\n    <hr _v-cdfba2a2=\"\">\n    <n3-container _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in newfont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n        <br _v-cdfba2a2=\"\">\n      <h4 _v-cdfba2a2=\"\">Web Application Icons</h4>\n      <hr _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in webfont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <h4 _v-cdfba2a2=\"\">Form Control Icons</h4>\n      <hr _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in formfont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-cdfba2a2=\"\">\n      <h4 _v-cdfba2a2=\"\">Currency Icons</h4>\n      <hr _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-cdfba2a2=\"\">\n      <h4 _v-cdfba2a2=\"\">Text Edit Icons</h4>\n      <hr _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in textfont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-cdfba2a2=\"\">\n      <h4 _v-cdfba2a2=\"\">Directional Icons</h4>\n      <hr _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-cdfba2a2=\"\">\n      <h4 _v-cdfba2a2=\"\">Video Player Icons</h4>\n      <hr _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in videofont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-cdfba2a2=\"\">\n      <h4 _v-cdfba2a2=\"\">Brand Icons</h4>\n      <hr _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-cdfba2a2=\"\">\n      <h4 _v-cdfba2a2=\"\">Medical Icons</h4>\n      <hr _v-cdfba2a2=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-cdfba2a2=\"\">\n        <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-cdfba2a2=\"\"><n3-icon :type=\"font\" _v-cdfba2a2=\"\"></n3-icon><span _v-cdfba2a2=\"\">{{font}}</span></n3-column>\n      </n3-row>\n    </n3-container> \n    </div>\n```html\n<n3-icon type=\"rub\" _v-cdfba2a2=\"\"></n3-icon>\n```\n<p _v-cdfba2a2=\"\"></p><h2 _v-cdfba2a2=\"\">参数</h2><p _v-cdfba2a2=\"\"></p>\n  <table class=\"table table-bordered\" _v-cdfba2a2=\"\">\n    <thead _v-cdfba2a2=\"\">\n      <tr _v-cdfba2a2=\"\">\n        <th _v-cdfba2a2=\"\">参数名</th>\n        <th _v-cdfba2a2=\"\">类型</th>\n        <th _v-cdfba2a2=\"\">默认值</th>\n        <th _v-cdfba2a2=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-cdfba2a2=\"\">\n      <tr _v-cdfba2a2=\"\">\n        <td _v-cdfba2a2=\"\">type</td>\n        <td _v-cdfba2a2=\"\"><code _v-cdfba2a2=\"\">String</code></td>\n        <td _v-cdfba2a2=\"\"><code _v-cdfba2a2=\"\"></code></td>\n        <td _v-cdfba2a2=\"\">图标类型名</td>\n      </tr>\n      <tr _v-cdfba2a2=\"\">\n        <td _v-cdfba2a2=\"\">size</td>\n        <td _v-cdfba2a2=\"\"><code _v-cdfba2a2=\"\">String</code></td>\n        <td _v-cdfba2a2=\"\"><code _v-cdfba2a2=\"\"></code></td>\n        <td _v-cdfba2a2=\"\">图标尺寸</td>\n      </tr>\n      <tr _v-cdfba2a2=\"\">\n        <td _v-cdfba2a2=\"\">color</td>\n        <td _v-cdfba2a2=\"\"><code _v-cdfba2a2=\"\">String</code></td>\n        <td _v-cdfba2a2=\"\"><code _v-cdfba2a2=\"\"></code></td>\n        <td _v-cdfba2a2=\"\">颜色</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
+	module.exports = "<section _v-ce3400a6=\"\"><template _v-ce3400a6=\"\">\n  <div class=\"bs-docs-section\" id=\"图标\" _v-ce3400a6=\"\">\n    <h1 class=\"page-header\" _v-ce3400a6=\"\"><a href=\"#图标\" class=\"anchor\" _v-ce3400a6=\"\">图标</a><span class=\"author\" _v-ce3400a6=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-ce3400a6=\"\">\n    <h3 _v-ce3400a6=\"\">FontAwesome 4.0 图标列表</h3>  \n    <h4 _v-ce3400a6=\"\">11 New Icons in 4.0</h4>\n    <hr _v-ce3400a6=\"\">\n    <n3-container _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in newfont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n        <br _v-ce3400a6=\"\">\n      <h4 _v-ce3400a6=\"\">Web Application Icons</h4>\n      <hr _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in webfont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <h4 _v-ce3400a6=\"\">Form Control Icons</h4>\n      <hr _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in formfont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-ce3400a6=\"\">\n      <h4 _v-ce3400a6=\"\">Currency Icons</h4>\n      <hr _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-ce3400a6=\"\">\n      <h4 _v-ce3400a6=\"\">Text Edit Icons</h4>\n      <hr _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in textfont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-ce3400a6=\"\">\n      <h4 _v-ce3400a6=\"\">Directional Icons</h4>\n      <hr _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-ce3400a6=\"\">\n      <h4 _v-ce3400a6=\"\">Video Player Icons</h4>\n      <hr _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in videofont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-ce3400a6=\"\">\n      <h4 _v-ce3400a6=\"\">Brand Icons</h4>\n      <hr _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-ce3400a6=\"\">\n      <h4 _v-ce3400a6=\"\">Medical Icons</h4>\n      <hr _v-ce3400a6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-ce3400a6=\"\">\n        <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-ce3400a6=\"\"><n3-icon :type=\"font\" _v-ce3400a6=\"\"></n3-icon><span _v-ce3400a6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n    </n3-container> \n    </div>\n```html\n<n3-icon type=\"rub\" _v-ce3400a6=\"\"></n3-icon>\n```\n<p _v-ce3400a6=\"\"></p><h2 _v-ce3400a6=\"\">参数</h2><p _v-ce3400a6=\"\"></p>\n  <table class=\"table table-bordered\" _v-ce3400a6=\"\">\n    <thead _v-ce3400a6=\"\">\n      <tr _v-ce3400a6=\"\">\n        <th _v-ce3400a6=\"\">参数名</th>\n        <th _v-ce3400a6=\"\">类型</th>\n        <th _v-ce3400a6=\"\">默认值</th>\n        <th _v-ce3400a6=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-ce3400a6=\"\">\n      <tr _v-ce3400a6=\"\">\n        <td _v-ce3400a6=\"\">type</td>\n        <td _v-ce3400a6=\"\"><code _v-ce3400a6=\"\">String</code></td>\n        <td _v-ce3400a6=\"\"><code _v-ce3400a6=\"\"></code></td>\n        <td _v-ce3400a6=\"\">图标类型名</td>\n      </tr>\n      <tr _v-ce3400a6=\"\">\n        <td _v-ce3400a6=\"\">size</td>\n        <td _v-ce3400a6=\"\"><code _v-ce3400a6=\"\">String</code></td>\n        <td _v-ce3400a6=\"\"><code _v-ce3400a6=\"\"></code></td>\n        <td _v-ce3400a6=\"\">图标尺寸</td>\n      </tr>\n      <tr _v-ce3400a6=\"\">\n        <td _v-ce3400a6=\"\">color</td>\n        <td _v-ce3400a6=\"\"><code _v-ce3400a6=\"\">String</code></td>\n        <td _v-ce3400a6=\"\"><code _v-ce3400a6=\"\"></code></td>\n        <td _v-ce3400a6=\"\">颜色</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
 /* 479 */
@@ -10305,12 +10305,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-8.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-4.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-8.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-8.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-8.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-4.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-4.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-4.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-8.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-4.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10457,22 +10457,22 @@
 /* 484 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(865)
-	module.exports = __webpack_require__(867)
+	__webpack_require__(485)
+	module.exports = __webpack_require__(487)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(868)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(504)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-1.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-2.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-1.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-1.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-1.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-2.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-2.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-2.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-1.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-2.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10482,34 +10482,1055 @@
 /* 485 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(486);
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(486);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(462)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-37efc279&file=n3AlertDocs-2.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-2.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-37efc279&file=n3AlertDocs-2.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-2.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
 
 /***/ },
 /* 486 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(487)
+	exports = module.exports = __webpack_require__(461)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".alert-icon-float-left {\n  font-size:32px;float:left;margin-right:5px;\n}", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 487 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _n3Alert = __webpack_require__(488);
+	
+	var _n3Alert2 = _interopRequireDefault(_n3Alert);
+	
+	var _n3Button = __webpack_require__(495);
+	
+	var _n3Button2 = _interopRequireDefault(_n3Button);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// <template><section><template>
+	//   <div class="bs-docs-section" id="提示消息">
+	//     <h1 class="page-header">
+	//       <a href="#提示消息" class="anchor">提示消息</a><span class="author"> </span>
+	//     </h1>
+	//     <div class="bs-example">
+	//       <n3-button type="success" @click.native="openRight">
+	//         点击出现在右边
+	//       </n3-button>
+	// <pre><code>  &lt;n3-button type='danger'
+	//     @click.native=&quot;openTop&quot;&gt;
+	//    点击出现在顶部
+	//   &lt;/n3-button&gt;
+	//   &lt;hr&gt;
+	
+	//   &lt;n3-alert  dismissable :show=&quot;true&quot;&gt;
+	//     &lt;strong&gt;default style&lt;/strong&gt;
+	//     This is the default style.
+	//   &lt;/n3-alert&gt;
+	//   &lt;br&gt;
+	//   &lt;n3-alert type=&quot;success&quot; :show=&quot;true&quot;&gt;
+	//     &lt;strong&gt;Well Done!&lt;/strong&gt;
+	//     You successfully read this important alert message.
+	//   &lt;/n3-alert&gt;
+	//   &lt;br&gt;
+	//   &lt;n3-alert type=&quot;info&quot; :show=&quot;true&quot;&gt;
+	//     &lt;strong&gt;Heads up!&lt;/strong&gt; This alert needs your attention, but it's not super important.
+	//   &lt;/n3-alert&gt;
+	//   &lt;br&gt;
+	//   &lt;n3-alert type=&quot;danger&quot; dismissable :show=&quot;true&quot;&gt;
+	//     &lt;strong&gt;Oh snap!&lt;/strong&gt; Change a few things up and try submitting again.
+	//   &lt;/n3-alert&gt;
+	//   &lt;br&gt;
+	//   &lt;n3-alert type=&quot;warning&quot; dismissable :show=&quot;true&quot;&gt;
+	//     &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you're not looking too good.
+	//     &lt;hr&gt;
+	//   &lt;/n3-alert&gt;
+	//   &lt;br&gt;
+	//   &lt;n3-alert
+	//     :show=&quot;true&quot;
+	//     type=&quot;success&quot;
+	//     width=&quot;700px&quot;
+	//     message=&quot;信息提示&quot;
+	//     description&gt;
+	//     这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
+	//   &lt;/n3-alert&gt;
+	//   &lt;br&gt;
+	//   &lt;n3-alert
+	//     :show=&quot;true&quot;
+	//     type=&quot;danger&quot;
+	//     width=&quot;700px&quot;
+	//     message=&quot;错误提示&quot;
+	//     description
+	//     dismissable&gt;
+	//     这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
+	//   &lt;/n3-alert&gt;
+	//   &lt;br&gt;
+	//   &lt;n3-alert
+	//     :show=&quot;true&quot;
+	//     type=&quot;info&quot;
+	//     width=&quot;700px&quot;
+	//     message=&quot;错误提示&quot;
+	//     :on-close=&quot;close&quot;
+	//     description
+	//     dismissable&gt;
+	//     点击关闭按钮的回调函数,打开控制台看看:)
+	//   &lt;/n3-alert&gt;
+	//   &lt;n3-alert
+	//     ref=&quot;alertRight&quot;
+	//     type=&quot;success&quot;
+	//     width=&quot;700px&quot;
+	//     placement=&quot;top-right&quot;
+	//     message=&quot;信息提示&quot;
+	//     description
+	//     dismissable&gt;
+	//     &lt;p&gt;You successfully read this important alert message.&lt;/p&gt;
+	//   &lt;/n3-alert&gt;
+	//   &lt;n3-alert
+	//     ref=&quot;alertTop&quot;
+	//     :duration=&quot;3000&quot;
+	//     type=&quot;danger&quot;
+	//     placement=&quot;top&quot;
+	//     message=&quot;警告&quot;
+	//     description
+	//     dismissable&gt;
+	//     &lt;strong&gt;Heads up!&lt;/strong&gt;
+	//     &lt;p&gt;This alert needs your attention.&lt;/p&gt;
+	//   &lt;/n3-alert&gt;
+	// &lt;/div&gt;
+	// </code></pre>
+	// <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">n3-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">'success'</span>
+	//         <span class="hljs-attr">@click.native</span>=<span class="hljs-string">"openRight"</span>&gt;</span>
+	//         点击出现在右边
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-button</span>&gt;</span>
+	
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">'danger'</span>
+	//         <span class="hljs-attr">@click.native</span>=<span class="hljs-string">"openTop"</span>&gt;</span>
+	//        点击出现在顶部
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-button</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+	
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>  <span class="hljs-attr">dismissable</span> <span class="hljs-attr">:show</span>=<span class="hljs-string">"true"</span>&gt;</span>
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>default style<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+	//         This is the default style.
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span> <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>&gt;</span>
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Well Done!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+	//         You successfully read this important alert message.
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span> <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>&gt;</span>
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Heads up!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> This alert needs your attention, but it's not super important.
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"danger"</span> <span class="hljs-attr">dismissable</span> <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>&gt;</span>
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Oh snap!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Change a few things up and try submitting again.
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warning"</span> <span class="hljs-attr">dismissable</span> <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>&gt;</span>
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Warning!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Better check yourself, you're not looking too good.
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
+	//         <span class="hljs-attr">:show</span>=<span class="hljs-string">"true"</span>
+	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>
+	//         <span class="hljs-attr">width</span>=<span class="hljs-string">"700px"</span>
+	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"信息提示"</span>
+	//         <span class="hljs-attr">description</span>&gt;</span>
+	//         这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
+	//         <span class="hljs-attr">:show</span>=<span class="hljs-string">"true"</span>
+	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"danger"</span>
+	//         <span class="hljs-attr">width</span>=<span class="hljs-string">"700px"</span>
+	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"错误提示"</span>
+	//         <span class="hljs-attr">description</span>
+	//         <span class="hljs-attr">dismissable</span>&gt;</span>
+	//         这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
+	//         <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>
+	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span>
+	//         <span class="hljs-attr">width</span>=<span class="hljs-string">"700px"</span>
+	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"错误提示"</span>
+	//         <span class="hljs-attr">:on-close</span>=<span class="hljs-string">"close"</span>
+	//         <span class="hljs-attr">description</span>
+	//         <span class="hljs-attr">dismissable</span>&gt;</span>
+	//         点击关闭按钮的回调函数,打开控制台看看:)
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
+	//         <span class="hljs-attr">ref</span>=<span class="hljs-string">"alertRight"</span>
+	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>
+	//         <span class="hljs-attr">width</span>=<span class="hljs-string">"700px"</span>
+	//         <span class="hljs-attr">placement</span>=<span class="hljs-string">"top-right"</span>
+	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"信息提示"</span>
+	//         <span class="hljs-attr">description</span>
+	//         <span class="hljs-attr">dismissable</span>&gt;</span>
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You successfully read this important alert message.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
+	//         <span class="hljs-attr">ref</span>=<span class="hljs-string">"alertTop"</span>
+	//         <span class="hljs-attr">:duration</span>=<span class="hljs-string">"3000"</span>
+	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"danger"</span>
+	//         <span class="hljs-attr">placement</span>=<span class="hljs-string">"top"</span>
+	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"警告"</span>
+	//         <span class="hljs-attr">description</span>
+	//         <span class="hljs-attr">dismissable</span>&gt;</span>
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Heads up!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+	//         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This alert needs your attention.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
+	// </code></pre>
+	// <pre><code class="language-javascript">    methods: {
+	//       openRight () {
+	//         <span class="hljs-keyword">this</span>.$refs.alertRight.open()
+	//       },
+	//       openTop () {
+	//         <span class="hljs-keyword">this</span>.$refs.alertTop.open()
+	//       },
+	//       close () {
+	//         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'你点击了关闭按钮'</span>)
+	//       }
+	//     }
+	// </code></pre>
+	// <pre><code>&lt;h2&gt;参数&lt;/h2&gt;
+	// &lt;table class=&quot;table table-bordered&quot;&gt;
+	//   &lt;thead&gt;
+	//     &lt;tr&gt;
+	//       &lt;th&gt;参数名&lt;/th&gt;
+	//       &lt;th&gt;类型&lt;/th&gt;
+	//       &lt;th&gt;默认值&lt;/th&gt;
+	//       &lt;th&gt;说明&lt;/th&gt;
+	//     &lt;/tr&gt;
+	//   &lt;/thead&gt;
+	//   &lt;tbody&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;show&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;是否显示&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;dismissable&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;是否显示关闭按钮&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;type&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;, 如: 
+	//       &lt;code&gt;default&lt;/code&gt;
+	//       &lt;code&gt;success&lt;/code&gt;
+	//       &lt;code&gt;info&lt;/code&gt;
+	//       &lt;code&gt;warning&lt;/code&gt;
+	//       &lt;code&gt;danger&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;success&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;组件样式&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;duration&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;自动关闭延时,设置 &lt;code&gt;0&lt;/code&gt; 或者负数，表示不会自动关闭&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;width&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;例如&quot;700px&quot;&lt;/td&gt;
+	//       &lt;td&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;small&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;/td&gt;
+	//       &lt;td&gt;缩小&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;placement&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;. 如:  &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;top-right&lt;/code&gt;,&lt;code&gt;top-left&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;,&lt;code&gt;bottom-left&lt;/code&gt;, &lt;code&gt;bottom-right&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;/td&gt;
+	//       &lt;td&gt;组件位置&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;description&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;false&lt;/td&gt;
+	//       &lt;td&gt;警告提示&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;message&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;/td&gt;
+	//       &lt;td&gt;在设置description时有效&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//     &lt;tr&gt;
+	//       &lt;td&gt;on-close&lt;/td&gt;
+	//       &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;
+	//       &lt;td&gt;&lt;/td&gt;
+	//       &lt;td&gt;点击关闭按钮时触发&lt;/td&gt;
+	//     &lt;/tr&gt;
+	//   &lt;/tbody&gt;
+	// &lt;/table&gt;
+	// </code></pre>
+	//   </div>
+	// </div></template>
+	
+	
+	// </section></template>
+	// <style>
+	// .alert-icon-float-left {
+	//   font-size:32px;float:left;margin-right:5px;
+	// }
+	// </style>
+	// <script>
+	exports.default = {
+	  methods: {
+	    openRight: function openRight() {
+	      this.$refs.alertRight.open();
+	    },
+	    openTop: function openTop() {
+	      this.$refs.alertTop.open();
+	    },
+	    close: function close() {
+	      console.log('你点击了关闭按钮');
+	    }
+	  },
+	  components: {
+	    n3Alert: _n3Alert2.default,
+	    n3Button: _n3Button2.default
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 488 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(489)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(488)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(494)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-4.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-4.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-4.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-4.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-4.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 487 */
+/* 489 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _type = __webpack_require__(490);
+	
+	var _type2 = _interopRequireDefault(_type);
+	
+	var _n3Icon = __webpack_require__(491);
+	
+	var _n3Icon2 = _interopRequireDefault(_n3Icon);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// <template>
+	//   <transition name="fade">
+	//     <div
+	//      v-show="isShow"
+	//      :class="classObj"
+	//       :style="{width:width}">
+	
+	//       <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
+	
+	//       <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
+	//          @click="handleClose" >
+	//         <span>&times;</span>
+	//       </button>
+	
+	//       <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
+	//         <h4>{{message}}</h4>
+	//         <p><slot></slot></p>
+	//       </div>
+	//       <span v-else>
+	//           <slot></slot>
+	//       </span>
+	//     </div>
+	//   </transition>
+	// </template>
+	
+	// <script>
+	exports.default = {
+	  name: 'n3Alert',
+	  props: {
+	    show: {
+	      type: Boolean,
+	      default: false
+	    },
+	    type: {
+	      type: String,
+	      default: 'default'
+	    },
+	    dismissable: {
+	      type: Boolean,
+	      default: false
+	    },
+	    duration: {
+	      type: Number,
+	      default: 0
+	    },
+	    width: {
+	      type: String
+	    },
+	    small: {
+	      type: Boolean,
+	      default: false
+	    },
+	    placement: {
+	      type: String,
+	      default: ''
+	    },
+	    message: {
+	      type: String
+	    },
+	    description: {
+	      type: Boolean,
+	      default: false
+	    },
+	    onClose: {
+	      type: Function
+	    },
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  },
+	  data: function data() {
+	    var show = this.show;
+	    return {
+	      isShow: show
+	    };
+	  },
+	
+	  methods: {
+	    open: function open() {
+	      this.isShow = true;
+	    },
+	    close: function close() {
+	      this.isShow = false;
+	    },
+	    handleClose: function handleClose(e) {
+	      this.isShow = false;
+	      if (_type2.default.isFunction(this.onClose)) {
+	        this.onClose();
+	      }
+	    }
+	  },
+	  watch: {
+	    isShow: function isShow(val) {
+	      var _this = this;
+	
+	      if (val) {
+	        this.$nextTick(function () {
+	          if (_this.placement === 'top' || _this.placement === 'bottom') {
+	            _this.$el.style.marginLeft = -1 * (_this.$el.offsetWidth / 2) + 'px';
+	          } else if (_this.placement === 'center') {
+	            _this.$el.style.marginLeft = -1 * (_this.$el.offsetWidth / 2) + 'px';
+	            _this.$el.style.marginTop = -1 * (_this.$el.offsetHeight / 2) + 'px';
+	          }
+	
+	          if (_this._timeout) clearTimeout(_this._timeout);
+	          if (val && !!_this.duration) {
+	            _this._timeout = setTimeout(function () {
+	              _this.isShow = false;
+	            }, _this.duration);
+	          }
+	        });
+	      }
+	    }
+	  },
+	  computed: {
+	    iconType: function iconType() {
+	      var type = this.type;
+	
+	      var map = {
+	        success: 'check-circle-o',
+	        danger: 'times-circle-o',
+	        warning: 'exclamation-circle',
+	        info: 'info-circle'
+	      };
+	      return map[type];
+	    },
+	    classObj: function classObj() {
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
+	      var placement = this.placement;
+	      var small = this.small;
+	
+	      var klass = {};
+	
+	      klass[prefixCls + '-alert-small'] = small;
+	      klass[prefixCls + '-alert'] = true;
+	      klass[prefixCls + '-alert-' + type] = true;
+	      klass[prefixCls + '-' + placement] = true;
+	
+	      return klass;
+	    }
+	  },
+	  components: {
+	    n3Icon: _n3Icon2.default
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 490 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+	
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	// NOTE: These type checking functions intentionally don't use `instanceof`
+	// because it is fragile and can be easily faked with `Object.create()`.
+	
+	function isArray(arg) {
+	  if (Array.isArray) {
+	    return Array.isArray(arg);
+	  }
+	  return objectToString(arg) === '[object Array]';
+	}
+	exports.isArray = isArray;
+	
+	function isBoolean(arg) {
+	  return typeof arg === 'boolean';
+	}
+	exports.isBoolean = isBoolean;
+	
+	function isNull(arg) {
+	  return arg === null;
+	}
+	exports.isNull = isNull;
+	
+	function isNullOrUndefined(arg) {
+	  return arg == null;
+	}
+	exports.isNullOrUndefined = isNullOrUndefined;
+	
+	function isNumber(arg) {
+	  return typeof arg === 'number';
+	}
+	exports.isNumber = isNumber;
+	
+	function isString(arg) {
+	  return typeof arg === 'string';
+	}
+	exports.isString = isString;
+	
+	function isSymbol(arg) {
+	  return (typeof arg === 'undefined' ? 'undefined' : _typeof(arg)) === 'symbol';
+	}
+	exports.isSymbol = isSymbol;
+	
+	function isUndefined(arg) {
+	  return arg === void 0;
+	}
+	exports.isUndefined = isUndefined;
+	
+	function isRegExp(re) {
+	  return objectToString(re) === '[object RegExp]';
+	}
+	exports.isRegExp = isRegExp;
+	
+	function isObject(arg) {
+	  return (typeof arg === 'undefined' ? 'undefined' : _typeof(arg)) === 'object' && arg !== null;
+	}
+	exports.isObject = isObject;
+	
+	function isDate(d) {
+	  return objectToString(d) === '[object Date]';
+	}
+	exports.isDate = isDate;
+	
+	function isError(e) {
+	  return objectToString(e) === '[object Error]' || e instanceof Error;
+	}
+	exports.isError = isError;
+	
+	function isFunction(arg) {
+	  return typeof arg === 'function';
+	}
+	exports.isFunction = isFunction;
+	
+	function isPrimitive(arg) {
+	  return arg === null || typeof arg === 'boolean' || typeof arg === 'number' || typeof arg === 'string' || (typeof arg === 'undefined' ? 'undefined' : _typeof(arg)) === 'symbol' || // ES6 symbol
+	  typeof arg === 'undefined';
+	}
+	exports.isPrimitive = isPrimitive;
+	
+	function objectToString(o) {
+	  return Object.prototype.toString.call(o);
+	}
+	
+	function isPromise(promise) {
+	  return isObject(promise) && isFunction(promise.then) && isFunction(promise.catch);
+	}
+	exports.isPromise = isPromise;
+
+/***/ },
+/* 491 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(492)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(493)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 492 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// <template>
+	//   <i :class="[prefixCls + '-fa',prefixCls +'-fa-'+type]" :style="{fontSize:size,color:color}">
+	//     <slot></slot>
+	//   </i>
+	// </template>
+	// <script>
+	exports.default = {
+	  name: 'n3Icon',
+	  props: {
+	    type: {
+	      type: String
+	    },
+	    size: {
+	      type: String
+	    },
+	    color: {
+	      type: String
+	    },
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 493 */
+/***/ function(module, exports) {
+
+	module.exports = "<i :class=\"[prefixCls + '-fa',prefixCls +'-fa-'+type]\" :style=\"{fontSize:size,color:color}\">\n    <slot></slot>\n  </i>";
+
+/***/ },
+/* 494 */
+/***/ function(module, exports) {
+
+	module.exports = "<transition name=\"fade\">\n    <div\n     v-show=\"isShow\"\n     :class=\"classObj\"\n      :style=\"{width:width}\">\n\n      <n3-icon :class=\"`${prefixCls}-alert-icon`\" :type=\"iconType\" ></n3-icon>\n\n      <button v-if=\"dismissable\" type=\"button\" :class=\"`${prefixCls}-close`\"\n         @click=\"handleClose\" >\n        <span>&times;</span>\n      </button>\n\n      <div v-if=\"description\" :class=\"`${prefixCls}prefixCls}}-alert-content`\">\n        <h4>{{message}}</h4>\n        <p><slot></slot></p>\n      </div>\n      <span v-else>\n          <slot></slot>\n      </span>\n    </div>\n  </transition>";
+
+/***/ },
+/* 495 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(496)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(503)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 496 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _n3Loading = __webpack_require__(497);
+	
+	var _n3Loading2 = _interopRequireDefault(_n3Loading);
+	
+	var _n3Badge = __webpack_require__(500);
+	
+	var _n3Badge2 = _interopRequireDefault(_n3Badge);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	// <template>
+	//   <a :class="classObj">
+	//   	<slot></slot>	
+	//   	<n3-loading v-if="loading" size="xs" style="position:relative;top:2px"></n3-loading>
+	//     <n3-badge  v-if="badge">{{badge}}</n3-badge>
+	//   </a>
+	// </template>
+	// <script>
+	exports.default = {
+	  name: 'n3Button',
+	  props: {
+	    size: {
+	      type: String
+	    },
+	    type: {
+	      type: String,
+	      default: 'default'
+	    },
+	    badge: {
+	      type: [String, Number]
+	    },
+	    active: {
+	      type: Boolean,
+	      default: false
+	    },
+	    disabled: {
+	      type: Boolean,
+	      default: false
+	    },
+	    block: {
+	      type: Boolean,
+	      default: false
+	    },
+	    loading: {
+	      type: Boolean,
+	      default: false
+	    },
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  },
+	  computed: {
+	    classObj: function classObj() {
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
+	      var size = this.size;
+	      var block = this.block;
+	      var active = this.active;
+	      var disabled = this.disabled;
+	
+	      var klass = {};
+	
+	      klass[prefixCls + '-btn'] = true;
+	      klass[prefixCls + '-btn-block'] = block;
+	      klass[prefixCls + '-btn-active'] = active;
+	      klass[prefixCls + '-btn-disabled'] = disabled;
+	      size ? klass[prefixCls + '-btn-' + size] = true : '';
+	      type ? klass[prefixCls + '-btn-' + type] = true : '';
+	
+	      return klass;
+	    }
+	  },
+	  components: {
+	    n3Loading: _n3Loading2.default,
+	    n3Badge: _n3Badge2.default
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 497 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(498)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(499)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 498 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	// <template>
+	//   <span :class="classObj">
+	//     <i :class="iclassObj"></i>
+	//     <slot></slot>  
+	//   </span>
+	// </template>
+	// <script>
+	exports.default = {
+	  name: 'n3Loading',
+	  props: {
+	    type: {
+	      type: String
+	    },
+	    size: {
+	      type: String
+	    },
+	    center: {
+	      type: Boolean
+	    },
+	    fixed: {
+	      type: Boolean,
+	      default: false
+	    },
+	    color: {
+	      type: String
+	    },
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  },
+	  computed: {
+	    classObj: function classObj() {
+	      var prefixCls = this.prefixCls;
+	      var center = this.center;
+	      var fixed = this.fixed;
+	
+	      var klass = {};
+	
+	      klass['affix'] = fixed;
+	      klass[prefixCls + '-page-loading-con'] = true;
+	      klass[prefixCls + '-page-loading-con'] = true;
+	      klass[prefixCls + '-loading-center'] = center;
+	
+	      return klass;
+	    },
+	    iclassObj: function iclassObj() {
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
+	      var size = this.size;
+	      var color = this.color;
+	
+	      var klass = {};
+	
+	      klass[prefixCls + '-page-loading'] = true;
+	      type ? klass[prefixCls + '-loading-' + type] = true : '';
+	      size ? klass[prefixCls + '-loading-' + size] = true : '';
+	      color ? klass['text-' + color] = true : '';
+	
+	      return klass;
+	    }
+	  }
+	};
+	// </script>
+
+/***/ },
+/* 499 */
+/***/ function(module, exports) {
+
+	module.exports = "<span :class=\"classObj\">\n    <i :class=\"iclassObj\"></i>\n    <slot></slot>  \n  </span>";
+
+/***/ },
+/* 500 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(501)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(502)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 501 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	// <template>
+	// 	<span :class="`${prefixCls}-badge`">
+	// 		<slot></slot>	
+	// 	</span>
+	// </template>
+	// <script>
+	exports.default = {
+		name: 'n3Badge',
+		props: {
+			prefixCls: {
+				type: String,
+				default: 'n3'
+			}
+		}
+	};
+	// </script>
+
+/***/ },
+/* 502 */
+/***/ function(module, exports) {
+
+	module.exports = "<span :class=\"`${prefixCls}-badge`\">\n\t\t<slot></slot>\t\n\t</span>";
+
+/***/ },
+/* 503 */
+/***/ function(module, exports) {
+
+	module.exports = "<a :class=\"classObj\">\n  \t<slot></slot>\t\n  \t<n3-loading v-if=\"loading\" size=\"xs\" style=\"position:relative;top:2px\"></n3-loading>\n    <n3-badge  v-if=\"badge\">{{badge}}</n3-badge>\n  </a>";
+
+/***/ },
+/* 504 */
+/***/ function(module, exports) {
+
+	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"提示消息\">\n    <h1 class=\"page-header\">\n      <a href=\"#提示消息\" class=\"anchor\">提示消息</a><span class=\"author\"> </span>\n    </h1>\n    <div class=\"bs-example\">\n      <n3-button type=\"success\" @click.native=\"openRight\">\n        点击出现在右边\n      </n3-button>\n<pre><code>  &lt;n3-button type='danger'\n    @click.native=&quot;openTop&quot;&gt;\n   点击出现在顶部\n  &lt;/n3-button&gt;\n  &lt;hr&gt;\n\n  &lt;n3-alert  dismissable :show=&quot;true&quot;&gt;\n    &lt;strong&gt;default style&lt;/strong&gt;\n    This is the default style.\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert type=&quot;success&quot; :show=&quot;true&quot;&gt;\n    &lt;strong&gt;Well Done!&lt;/strong&gt;\n    You successfully read this important alert message.\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert type=&quot;info&quot; :show=&quot;true&quot;&gt;\n    &lt;strong&gt;Heads up!&lt;/strong&gt; This alert needs your attention, but it's not super important.\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert type=&quot;danger&quot; dismissable :show=&quot;true&quot;&gt;\n    &lt;strong&gt;Oh snap!&lt;/strong&gt; Change a few things up and try submitting again.\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert type=&quot;warning&quot; dismissable :show=&quot;true&quot;&gt;\n    &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you're not looking too good.\n    &lt;hr&gt;\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert\n    :show=&quot;true&quot;\n    type=&quot;success&quot;\n    width=&quot;700px&quot;\n    message=&quot;信息提示&quot;\n    description&gt;\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert\n    :show=&quot;true&quot;\n    type=&quot;danger&quot;\n    width=&quot;700px&quot;\n    message=&quot;错误提示&quot;\n    description\n    dismissable&gt;\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert\n    :show=&quot;true&quot;\n    type=&quot;info&quot;\n    width=&quot;700px&quot;\n    message=&quot;错误提示&quot;\n    :on-close=&quot;close&quot;\n    description\n    dismissable&gt;\n    点击关闭按钮的回调函数,打开控制台看看:)\n  &lt;/n3-alert&gt;\n  &lt;n3-alert\n    ref=&quot;alertRight&quot;\n    type=&quot;success&quot;\n    width=&quot;700px&quot;\n    placement=&quot;top-right&quot;\n    message=&quot;信息提示&quot;\n    description\n    dismissable&gt;\n    &lt;p&gt;You successfully read this important alert message.&lt;/p&gt;\n  &lt;/n3-alert&gt;\n  &lt;n3-alert\n    ref=&quot;alertTop&quot;\n    :duration=&quot;3000&quot;\n    type=&quot;danger&quot;\n    placement=&quot;top&quot;\n    message=&quot;警告&quot;\n    description\n    dismissable&gt;\n    &lt;strong&gt;Heads up!&lt;/strong&gt;\n    &lt;p&gt;This alert needs your attention.&lt;/p&gt;\n  &lt;/n3-alert&gt;\n&lt;/div&gt;\n</code></pre>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'success'</span>\n        <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openRight\"</span>&gt;</span>\n        点击出现在右边\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'danger'</span>\n        <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openTop\"</span>&gt;</span>\n       点击出现在顶部\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>  <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>default style<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n        This is the default style.\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Well Done!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n        You successfully read this important alert message.\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> This alert needs your attention, but it's not super important.\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Oh snap!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Change a few things up and try submitting again.\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Warning!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Better check yourself, you're not looking too good.\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n        <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n        <span class=\"hljs-attr\">description</span>&gt;</span>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n        <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n        <span class=\"hljs-attr\">description</span>\n        <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span>\n        <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n        <span class=\"hljs-attr\">:on-close</span>=<span class=\"hljs-string\">\"close\"</span>\n        <span class=\"hljs-attr\">description</span>\n        <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n        点击关闭按钮的回调函数,打开控制台看看:)\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertRight\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n        <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n        <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top-right\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n        <span class=\"hljs-attr\">description</span>\n        <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>You successfully read this important alert message.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertTop\"</span>\n        <span class=\"hljs-attr\">:duration</span>=<span class=\"hljs-string\">\"3000\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n        <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"警告\"</span>\n        <span class=\"hljs-attr\">description</span>\n        <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>This alert needs your attention.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">    methods: {\n      openRight () {\n        <span class=\"hljs-keyword\">this</span>.$refs.alertRight.open()\n      },\n      openTop () {\n        <span class=\"hljs-keyword\">this</span>.$refs.alertTop.open()\n      },\n      close () {\n        <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'你点击了关闭按钮'</span>)\n      }\n    }\n</code></pre>\n<pre><code>&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;show&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;dismissable&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示关闭按钮&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;, 如: \n      &lt;code&gt;default&lt;/code&gt;\n      &lt;code&gt;success&lt;/code&gt;\n      &lt;code&gt;info&lt;/code&gt;\n      &lt;code&gt;warning&lt;/code&gt;\n      &lt;code&gt;danger&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;success&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;组件样式&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;duration&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;自动关闭延时,设置 &lt;code&gt;0&lt;/code&gt; 或者负数，表示不会自动关闭&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;例如&quot;700px&quot;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;small&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;缩小&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;placement&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;. 如:  &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;top-right&lt;/code&gt;,&lt;code&gt;top-left&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;,&lt;code&gt;bottom-left&lt;/code&gt;, &lt;code&gt;bottom-right&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;组件位置&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;description&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;警告提示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;message&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;在设置description时有效&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-close&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;点击关闭按钮时触发&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
+
+/***/ },
+/* 505 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(506);
+
+/***/ },
+/* 506 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(507)
+	
+	if (module.exports.__esModule) module.exports = module.exports.default
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(508)
+	if (false) {
+	(function () {
+	var hotAPI = require("vue-hot-reload-api")
+	hotAPI.install(require("vue"))
+	if (!hotAPI.compatible) return
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-8.vue"
+	hotAPI.createRecord(id, module.exports)
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-8.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-8.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-8.vue")
+	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-8.vue")
+	hotAPI.update(id, newOptions, newTemplate)
+	})
+	})()
+	}
+
+/***/ },
+/* 507 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10656,50 +11677,50 @@
 	// </script>
 
 /***/ },
-/* 488 */
+/* 508 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n### 折叠面板\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <p>\n      <input type=\"checkbox\" v-model=\"checked\">\n      一次只打开一个\n    </p>\n    <n3-accordion :one-at-time=\"checked\" :on-change=\"change\">\n      <n3-panel :is-open=\"true\" index=\"1\" :on-change=\"change\">\n        <div slot=\"header\">Panel #1</div>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n      </n3-panel>\n      <n3-panel header=\"Panel #2\" index=\"2\">\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n        </n3-panel>\n      <n3-panel header=\"Panel #3\" index=\"3\">\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n      </n3-panel>\n      <n3-panel header=\"Panel #4\" index=\"4\">\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n      </n3-panel>\n    </n3-accordion>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">input</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"checkbox\"</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"checked\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">label</span> <span class=\"hljs-attr\">for</span>=<span class=\"hljs-string\">\"checked\"</span>&gt;</span>一次只打开一个<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">label</span>&gt;</span>\n\n <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-accordion</span> <span class=\"hljs-attr\">:one-at-atime</span>=<span class=\"hljs-string\">\"checked\"</span> <span class=\"hljs-attr\">:on-change</span>=<span class=\"hljs-string\">\"change\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-panel</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Panel #1\"</span> <span class=\"hljs-attr\">:is-open</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"header\"</span>&gt;</span>Panel #1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n    ...\n    \n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-panel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-panel</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Panel #2\"</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span>\n    ...\n\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-panel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-panel</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Panel #3\"</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    ...\n\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-panel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-panel</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Panel #4\"</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"4\"</span>&gt;</span>\n    ...\n    \n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-panel</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-accordion</span>&gt;</span>\n</code></pre>\n<p></p><h2>n3-accordion参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>one-at-time</td>\n        <td><code>Boolean</code></td>\n        <td><code>false</code></td>\n        <td>控制当一个面板被打开时，其他面板是否关闭</td>\n      </tr>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code></td>\n        <td>collapse</td>\n        <td>切换动画</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>改变时的回调函数,参数为panel的状态数组</td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>n3-panel参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>is-open</td>\n        <td><code>Boolean</code></td>\n        <td><code>false</code></td>\n        <td>面板打开还是关闭</td>\n      </tr>\n      <tr>\n        <td>header</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>面板头部显示的内容，点击该内容进行面板的打开收缩</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>改变时的回调函数,参数为panel的状态</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 489 */
+/* 509 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(490);
+	module.exports = __webpack_require__(510);
 
 /***/ },
-/* 490 */
+/* 510 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(491)
-	module.exports = __webpack_require__(493)
+	__webpack_require__(511)
+	module.exports = __webpack_require__(513)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(494)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(514)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-3.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-5.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-3.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-5.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 491 */
+/* 511 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(492);
+	var content = __webpack_require__(512);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(462)(content, {});
@@ -10708,8 +11729,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-07745bb2&file=n3CascaderDocs-3.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs-3.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-07745bb2&file=n3CascaderDocs-3.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs-3.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-07908ab4&file=n3CascaderDocs-5.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs-5.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-07908ab4&file=n3CascaderDocs-5.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs-5.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10719,7 +11740,7 @@
 	}
 
 /***/ },
-/* 492 */
+/* 512 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(461)();
@@ -10733,7 +11754,7 @@
 
 
 /***/ },
-/* 493 */
+/* 513 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -10897,50 +11918,50 @@
 	// </script>
 
 /***/ },
-/* 494 */
+/* 514 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"级联选择\">\n    <h1 class=\"page-header\"><a href=\"#级联选择\" class=\"anchor\">级联选择</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n    {{value}}\n      <n3-cascader :options=\"options\" :on-change=\"selectChange\" v-model=\"value\" :select-change=\"true\"></n3-cascader>\n    </div>\n<pre><code>&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;options&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;\n      ```javascript\n      [{\n        value: 'zhejiang',\n        label: '浙江',\n        children: [{\n          value: 'hangzhou',\n          label: '杭州',\n          children: [{\n            value: 'xihu',\n            label: '西湖',\n          }],\n        }],\n      }, {\n        value: 'jiangsu',\n        label: '江苏',\n        disabled:true,\n        children: [{\n          value: 'nanjing',\n          label: '南京',\n          children: [{\n            value: 'zhonghuamen',\n            label: '中华门',\n          }],\n        }],\n      }]\n      ```\n      &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;需要&lt;code&gt;.sync&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;200px&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;disabled&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;placeholder&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;display-render&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;\n        ```javascript\n        function(label){\n          return label.join(' / ')\n        }\n        ```\n      &lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;select-change&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;选择值就改变&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;值变化时候后触发&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n</code></pre>\n  </div>\n</template>\n\n\n</section>";
 
 /***/ },
-/* 495 */
+/* 515 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(496);
+	module.exports = __webpack_require__(516);
 
 /***/ },
-/* 496 */
+/* 516 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(497)
-	module.exports = __webpack_require__(499)
+	__webpack_require__(517)
+	module.exports = __webpack_require__(519)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(500)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(520)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-9.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-6.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-9.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c12a318&file=n3AffixDocs-9.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-9.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-9.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-6.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c67301e&file=n3AffixDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-6.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-6.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c12a318&file=n3AffixDocs-9.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-9.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c67301e&file=n3AffixDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-6.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 497 */
+/* 517 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(498);
+	var content = __webpack_require__(518);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(462)(content, {});
@@ -10949,8 +11970,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c12a318&file=n3AffixDocs-9.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-9.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c12a318&file=n3AffixDocs-9.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-9.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c67301e&file=n3AffixDocs-6.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-6.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c67301e&file=n3AffixDocs-6.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-6.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10960,7 +11981,7 @@
 	}
 
 /***/ },
-/* 498 */
+/* 518 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(461)();
@@ -10968,13 +11989,13 @@
 	
 	
 	// module
-	exports.push([module.id, ".sidebar[_v-2c12a318]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px; \n}\npre[class*='language-'][_v-2c12a318]{\n  position: static;\n}", ""]);
+	exports.push([module.id, ".sidebar[_v-2c67301e]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px; \n}\npre[class*='language-'][_v-2c67301e]{\n  position: static;\n}", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 499 */
+/* 519 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11049,43 +12070,43 @@
 	// </script>
 
 /***/ },
-/* 500 */
+/* 520 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-2c12a318=\"\"><template _v-2c12a318=\"\">\n<h3 _v-2c12a318=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-2c12a318=\"\">\n  <div class=\"bs-example\" _v-2c12a318=\"\">\n    <h3 _v-2c12a318=\"\">\n      <n3-affix :offset=\"0\" _v-2c12a318=\"\">\n        <nav class=\"sidebar\" _v-2c12a318=\"\">\n          <ul _v-2c12a318=\"\">\n            <li _v-2c12a318=\"\">...</li>\n            <li _v-2c12a318=\"\">...</li>\n            <li _v-2c12a318=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-2c12a318=\"\"><code class=\"language-html\" _v-2c12a318=\"\"><span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;<span class=\"hljs-name\" _v-2c12a318=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-2c12a318=\"\">:offset</span>=<span class=\"hljs-string\" _v-2c12a318=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;<span class=\"hljs-name\" _v-2c12a318=\"\">nav</span> <span class=\"hljs-attr\" _v-2c12a318=\"\">class</span>=<span class=\"hljs-string\" _v-2c12a318=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;<span class=\"hljs-name\" _v-2c12a318=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;<span class=\"hljs-name\" _v-2c12a318=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;/<span class=\"hljs-name\" _v-2c12a318=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;<span class=\"hljs-name\" _v-2c12a318=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;/<span class=\"hljs-name\" _v-2c12a318=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;<span class=\"hljs-name\" _v-2c12a318=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;/<span class=\"hljs-name\" _v-2c12a318=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;/<span class=\"hljs-name\" _v-2c12a318=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;/<span class=\"hljs-name\" _v-2c12a318=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-2c12a318=\"\">&lt;/<span class=\"hljs-name\" _v-2c12a318=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<pre _v-2c12a318=\"\"><code _v-2c12a318=\"\">&lt;!-- &lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;offset&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;离屏幕顶部的像素值&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt; --&gt;\n</code></pre>\n  </div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-2c67301e=\"\"><template _v-2c67301e=\"\">\n<h3 _v-2c67301e=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-2c67301e=\"\">\n  <div class=\"bs-example\" _v-2c67301e=\"\">\n    <h3 _v-2c67301e=\"\">\n      <n3-affix :offset=\"0\" _v-2c67301e=\"\">\n        <nav class=\"sidebar\" _v-2c67301e=\"\">\n          <ul _v-2c67301e=\"\">\n            <li _v-2c67301e=\"\">...</li>\n            <li _v-2c67301e=\"\">...</li>\n            <li _v-2c67301e=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-2c67301e=\"\"><code class=\"language-html\" _v-2c67301e=\"\"><span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-2c67301e=\"\">:offset</span>=<span class=\"hljs-string\" _v-2c67301e=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">nav</span> <span class=\"hljs-attr\" _v-2c67301e=\"\">class</span>=<span class=\"hljs-string\" _v-2c67301e=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<pre _v-2c67301e=\"\"><code _v-2c67301e=\"\">&lt;!-- &lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;offset&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;离屏幕顶部的像素值&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt; --&gt;\n</code></pre>\n  </div>\n</template>\n\n\n</section>";
 
 /***/ },
-/* 501 */
+/* 521 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(502);
+	module.exports = __webpack_require__(522);
 
 /***/ },
-/* 502 */
+/* 522 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(503)
+	module.exports = __webpack_require__(523)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(504)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(524)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-6.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-7.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-6.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-6.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-6.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-7.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-7.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-7.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-6.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-7.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 503 */
+/* 523 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11225,50 +12246,50 @@
 	// </script>
 
 /***/ },
-/* 504 */
+/* 524 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n### 侧边栏\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <n3-button @click.native=\"openLeft\">左侧栏</n3-button>\n<pre><code>&lt;n3-aside  placement=&quot;left&quot; header=&quot;Title&quot; width=&quot;350px&quot; ref=&quot;asideLeft&quot;&gt;\n  &lt;h4&gt;左侧侧边栏&lt;/h4&gt;\n  &lt;p&gt;...&lt;/p&gt;\n  &lt;p&gt;...&lt;/p&gt;\n  &lt;p&gt;...&lt;/p&gt;\n  \n  &lt;n3-button @click.native=&quot;closeLeft&quot;&gt;关闭&lt;/n3-button&gt;\n&lt;/n3-aside&gt;\n\n&lt;n3-button @click.native=&quot;openRight&quot;&gt;右侧栏&lt;/n3-button&gt;\n\n&lt;n3-aside  placement=&quot;right&quot; header=&quot;Title&quot; width=&quot;350px&quot; ref=&quot;asideRight&quot;&gt;\n  &lt;h4&gt;右侧侧边栏&lt;/h4&gt;\n  &lt;p&gt;...&lt;/p&gt;\n  &lt;p&gt;...&lt;/p&gt;\n  &lt;p&gt;...&lt;/p&gt;\n    \n  &lt;n3-button @click.native=&quot;closeRight&quot;&gt;关闭&lt;/n3-button&gt;\n&lt;/n3-aside&gt;\n</code></pre>\n  </div>\n<pre><code class=\"language-html\">  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openLeft\"</span>&gt;</span>左侧栏<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-aside</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"350px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"asideLeft\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>左侧侧边栏<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    \n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"closeLeft\"</span>&gt;</span>关闭<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-aside</span>&gt;</span>\n  \n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openRight\"</span>&gt;</span>右侧栏<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-aside</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"350px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"asideRight\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>右侧侧边栏<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      \n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"closeRight\"</span>&gt;</span>关闭<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-aside</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">    <span class=\"hljs-keyword\">new</span> Vue({\n      <span class=\"hljs-attr\">methods</span>: {\n      openLeft () {\n        <span class=\"hljs-keyword\">this</span>.$refs.asideLeft.open()\n      },\n      openRight () {\n        <span class=\"hljs-keyword\">this</span>.$refs.asideRight.open()\n      },\n      closeLeft () {\n        <span class=\"hljs-keyword\">this</span>.$refs.asideLeft.close()\n      },\n      closeRight () {\n        <span class=\"hljs-keyword\">this</span>.$refs.asideRight.close()\n      }\n    }\n    })\n</code></pre>\n<pre><code>&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;placement&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;, 如:  &lt;code&gt;left&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;right&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;组件位置&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;header&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;组件头部文本&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-show&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;侧边栏出现时候触发&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-hide&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;侧边栏隐藏时候触发&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</template>\n</section>";
 
 /***/ },
-/* 505 */
+/* 525 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(506);
+	module.exports = __webpack_require__(526);
 
 /***/ },
-/* 506 */
+/* 526 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(507)
-	module.exports = __webpack_require__(509)
+	__webpack_require__(527)
+	module.exports = __webpack_require__(529)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(510)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(530)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-7.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-7.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7e08c858&file=n3CarouselDocs-7.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-7.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-7.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7e24f75a&file=n3CarouselDocs-9.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7e08c858&file=n3CarouselDocs-7.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-7.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7e24f75a&file=n3CarouselDocs-9.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 507 */
+/* 527 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(508);
+	var content = __webpack_require__(528);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(462)(content, {});
@@ -11277,8 +12298,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7e08c858&file=n3CarouselDocs-7.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-7.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7e08c858&file=n3CarouselDocs-7.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-7.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7e24f75a&file=n3CarouselDocs-9.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7e24f75a&file=n3CarouselDocs-9.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11288,7 +12309,7 @@
 	}
 
 /***/ },
-/* 508 */
+/* 528 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(461)();
@@ -11296,13 +12317,13 @@
 	
 	
 	// module
-	exports.push([module.id, ".slide-img[_v-7e08c858]{\n  height:400px!important;\n}\n.carousel-caption[_v-7e08c858] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-7e08c858] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
+	exports.push([module.id, ".slide-img[_v-7e24f75a]{\n  height:400px!important;\n}\n.carousel-caption[_v-7e24f75a] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-7e24f75a] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 509 */
+/* 529 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11403,76 +12424,76 @@
 	// </script>
 
 /***/ },
-/* 510 */
+/* 530 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-7e08c858=\"\">  <template _v-7e08c858=\"\">\n  <div class=\"bs-docs-section\" id=\"幻灯片\" _v-7e08c858=\"\">\n    <h1 class=\"page-header\" _v-7e08c858=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-7e08c858=\"\">幻灯片</a><span class=\"author\" _v-7e08c858=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-7e08c858=\"\">\n      <n3-carousel _v-7e08c858=\"\">\n        <n3-slide _v-7e08c858=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e08c858=\"\">\n          <div class=\"carousel-caption\" _v-7e08c858=\"\">\n           <h3 _v-7e08c858=\"\">Slide #1</h3>\n           <p _v-7e08c858=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-7e08c858=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e08c858=\"\">\n          <div class=\"carousel-caption\" _v-7e08c858=\"\">\n           <h3 _v-7e08c858=\"\">Slide #2</h3>\n           <p _v-7e08c858=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-7e08c858=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e08c858=\"\">\n          <div class=\"carousel-caption\" _v-7e08c858=\"\">\n           <h3 _v-7e08c858=\"\">Slide #3</h3>\n           <p _v-7e08c858=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n<p _v-7e08c858=\"\"></p><h2 _v-7e08c858=\"\">参数</h2><p _v-7e08c858=\"\"></p>\n  <table class=\"table table-bordered\" _v-7e08c858=\"\">\n    <thead _v-7e08c858=\"\">\n      <tr _v-7e08c858=\"\">\n        <th _v-7e08c858=\"\">参数名</th>\n        <th _v-7e08c858=\"\">类型</th>\n        <th _v-7e08c858=\"\">默认值</th>\n        <th _v-7e08c858=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-7e08c858=\"\">\n      <tr _v-7e08c858=\"\">\n        <td _v-7e08c858=\"\">indicators</td>\n        <td _v-7e08c858=\"\"><code _v-7e08c858=\"\">Boolean</code></td>\n        <td _v-7e08c858=\"\"><code _v-7e08c858=\"\">true</code></td>\n        <td _v-7e08c858=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-7e08c858=\"\">\n        <td _v-7e08c858=\"\">controls</td>\n        <td _v-7e08c858=\"\"><code _v-7e08c858=\"\">Boolean</code></td>\n        <td _v-7e08c858=\"\"><code _v-7e08c858=\"\">true</code></td>\n        <td _v-7e08c858=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-7e08c858=\"\">\n        <td _v-7e08c858=\"\">interval</td>\n        <td _v-7e08c858=\"\"><code _v-7e08c858=\"\">Number</code></td>\n        <td _v-7e08c858=\"\"><code _v-7e08c858=\"\">5000</code></td>\n        <td _v-7e08c858=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
+	module.exports = "<section _v-7e24f75a=\"\">  <template _v-7e24f75a=\"\">\n  <div class=\"bs-docs-section\" id=\"幻灯片\" _v-7e24f75a=\"\">\n    <h1 class=\"page-header\" _v-7e24f75a=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-7e24f75a=\"\">幻灯片</a><span class=\"author\" _v-7e24f75a=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-7e24f75a=\"\">\n      <n3-carousel _v-7e24f75a=\"\">\n        <n3-slide _v-7e24f75a=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e24f75a=\"\">\n          <div class=\"carousel-caption\" _v-7e24f75a=\"\">\n           <h3 _v-7e24f75a=\"\">Slide #1</h3>\n           <p _v-7e24f75a=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-7e24f75a=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e24f75a=\"\">\n          <div class=\"carousel-caption\" _v-7e24f75a=\"\">\n           <h3 _v-7e24f75a=\"\">Slide #2</h3>\n           <p _v-7e24f75a=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-7e24f75a=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e24f75a=\"\">\n          <div class=\"carousel-caption\" _v-7e24f75a=\"\">\n           <h3 _v-7e24f75a=\"\">Slide #3</h3>\n           <p _v-7e24f75a=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n<p _v-7e24f75a=\"\"></p><h2 _v-7e24f75a=\"\">参数</h2><p _v-7e24f75a=\"\"></p>\n  <table class=\"table table-bordered\" _v-7e24f75a=\"\">\n    <thead _v-7e24f75a=\"\">\n      <tr _v-7e24f75a=\"\">\n        <th _v-7e24f75a=\"\">参数名</th>\n        <th _v-7e24f75a=\"\">类型</th>\n        <th _v-7e24f75a=\"\">默认值</th>\n        <th _v-7e24f75a=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-7e24f75a=\"\">\n      <tr _v-7e24f75a=\"\">\n        <td _v-7e24f75a=\"\">indicators</td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">Boolean</code></td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">true</code></td>\n        <td _v-7e24f75a=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-7e24f75a=\"\">\n        <td _v-7e24f75a=\"\">controls</td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">Boolean</code></td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">true</code></td>\n        <td _v-7e24f75a=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-7e24f75a=\"\">\n        <td _v-7e24f75a=\"\">interval</td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">Number</code></td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">5000</code></td>\n        <td _v-7e24f75a=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 511 */
+/* 531 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(512);
+	module.exports = __webpack_require__(532);
 
 /***/ },
-/* 512 */
+/* 532 */
 /***/ function(module, exports, __webpack_require__) {
 
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(513)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(533)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-12.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-11.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-12.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-11.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-12.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-11.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 513 */
+/* 533 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"按钮\">\n    <h1 class=\"page-header\"><a href=\"#按钮\" class=\"anchor\">按钮</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Button</h4>\n      <n3-button loading=\"\">default</n3-button>\n      <n3-button badge=\"2\">badge</n3-button>\n      <n3-button disabled>default</n3-button>\n      <n3-button active=\"\" type=\"primary\" loading=\"\">primary</n3-button>\n      <n3-button type=\"success\">success</n3-button>\n      <n3-button type=\"info\">info</n3-button>\n      <n3-button type=\"warning\">warning</n3-button>\n      <n3-button type=\"danger\">danger</n3-button>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">loading</span> &gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">badge</span>=<span class=\"hljs-string\">\"2\"</span> &gt;</span>badge<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">loading</span>&gt;</span>primary<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span>success<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span>&gt;</span>info<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span>warning<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span>danger<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<pre><code>  &lt;n3-button type=&quot;primary&quot; size=&quot;lg&quot;&gt;primary lg&lt;/n3-button&gt;\n  &lt;n3-button type=&quot;primary&quot;&gt;primary default&lt;/n3-button&gt;\n  &lt;n3-button type=&quot;primary&quot; size=&quot;sm&quot;&gt;primary sm&lt;/n3-button&gt;\n  &lt;n3-button type=&quot;primary&quot; size=&quot;xs&quot;&gt;primary xs&lt;/n3-button&gt;\n</code></pre>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">size</span>=<span class=\"hljs-string\">\"lg\"</span>&gt;</span>lg<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">size</span>=<span class=\"hljs-string\">\"sm\"</span>&gt;</span>sm<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">size</span>=<span class=\"hljs-string\">\"xs\"</span>&gt;</span>xs<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<pre><code>&lt;n3-button-group&gt;\n  &lt;n3-button &gt;default&lt;/n3-button&gt;\n  &lt;n3-button &gt;default&lt;/n3-button&gt;\n  &lt;n3-button type=&quot;primary&quot;&gt;primary&lt;/n3-button&gt;\n  &lt;n3-button &gt;default&lt;/n3-button&gt;\n&lt;/n3-button-group&gt;\n</code></pre>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button-group</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span>primary<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button-group</span>&gt;</span>\n</code></pre>\n<pre><code>&lt;h2&gt;按钮参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;size&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt; &lt;code&gt;lg&lt;/code&gt; &lt;code&gt;&lt;/code&gt; &lt;code&gt;sm&lt;/code&gt; &lt;code&gt;xs&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;loading&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;加载状态&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;disabled&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;禁用状态&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;active&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;激活状态&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;badge&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;  &lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;徽标&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;block&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否块级元素&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;, 如:  &lt;code&gt;default&lt;/code&gt;\n      &lt;code&gt;primary&lt;/code&gt;\n      &lt;code&gt;danger&lt;/code&gt;\n      &lt;code&gt;info&lt;/code&gt;\n      &lt;code&gt;warning&lt;/code&gt;\n      &lt;code&gt;success&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;default&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template></section>";
 
 /***/ },
-/* 514 */
+/* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(515);
+	module.exports = __webpack_require__(535);
 
 /***/ },
-/* 515 */
+/* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(516)
+	module.exports = __webpack_require__(536)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(517)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(537)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-10.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-12.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-10.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-12.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 516 */
+/* 536 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11545,43 +12566,43 @@
 	// </script>
 
 /***/ },
-/* 517 */
+/* 537 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"页面提示\">\n    <h1 class=\"page-header\"><a href=\"#页面提示\" class=\"anchor\">页面提示</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-button @click.native=\"showToast\">点击</n3-button>\n      <hr>\n<p></p><h2>参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>placement</td>\n        <td><code>String</code></td>\n        <td><code>String</code>. 如:  <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code>默认在页面中间</td>\n        <td>位置</td>\n      </tr>\n       <tr>\n        <td>type</td>\n        <td><code>String</code></td>\n        <td>default</td>\n        <td>颜色</td>\n      </tr>\n       <tr>\n        <td>duration</td>\n        <td><code>Number</code></td>\n        <td>3000</td>\n        <td>0为不消失</td>\n      </tr>\n      <tr>\n        <td>close-on-click</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>点击消失</td>\n      </tr>\n<pre><code>&lt;/tbody&gt;\n</code></pre>\n  </tbody></table>\n  </div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 518 */
+/* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(519);
+	module.exports = __webpack_require__(539);
 
 /***/ },
-/* 519 */
+/* 539 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(520)
+	module.exports = __webpack_require__(540)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(521)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(541)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-13.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-10.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-13.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-13.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-13.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-10.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-10.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-10.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-13.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-10.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 520 */
+/* 540 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11720,43 +12741,43 @@
 	// </script>
 
 /***/ },
-/* 521 */
+/* 541 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"日期选择器\">\n    <h1 class=\"page-header\"><a href=\"#日期选择器\" class=\"anchor\">日期选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\n          Selected date is: {{new Date(value).toString().slice(0, -23)}}\n        </pre>\n      </p>\n      <n3-datepicker ref=\"dp\" v-model=\"value\" :disabled-days-of-Week=\"disabled\" :format=\"format.toString()\">\n      </n3-datepicker>\n      <h4>一周内无法选择的日期</h4>\n<pre><code>  &lt;!-- &lt;n3-select multiple :value.sync=&quot;disabled&quot;&gt;\n    &lt;n3-option value=&quot;0&quot;&gt;0&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;1&quot;&gt;1&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;2&quot;&gt;2&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;3&quot;&gt;3&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;4&quot;&gt;4&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;5&quot;&gt;5&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;6&quot;&gt;6&lt;/n3-option&gt;\n  &lt;/n3-select&gt;\n\n  &lt;h4&gt;Format&lt;/h4&gt;\n  &lt;n3-select :value.sync=&quot;format&quot; &gt;\n    &lt;n3-option value=&quot;yyyy,MM,dd&quot;&gt;yyyy,MM,dd&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;yyyy-MM-dd&quot;&gt;yyyy-MM-dd&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;yyyy.MM.dd&quot;&gt;yyyy.MM.dd&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;MMM/dd/yyyy&quot;&gt;MMM/dd/yyyy&lt;/n3-option&gt;\n    &lt;n3-option value=&quot;MMMM/dd/yyyy&quot;&gt;MMMM/dd/yyyy&lt;/n3-option&gt;\n  &lt;/n3-select&gt; --&gt;\n&lt;/div&gt;\n</code></pre>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-datepicker</span>\n  <span class=\"hljs-attr\">:value.sync</span>=<span class=\"hljs-string\">\"value\"</span>\n  <span class=\"hljs-attr\">:disabled-days-of-Week</span>=<span class=\"hljs-string\">\"disabled\"</span>\n  <span class=\"hljs-attr\">:format</span>=<span class=\"hljs-string\">\"format\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-datepicker</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span> <span class=\"hljs-attr\">multiple</span> <span class=\"hljs-attr\">:value.sync</span>=<span class=\"hljs-string\">\"disabled\"</span> <span class=\"hljs-attr\">size</span>=<span class=\"hljs-string\">5</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>0<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span>2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"4\"</span>&gt;</span>4<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"5\"</span>&gt;</span>5<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"6\"</span>&gt;</span>6<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span>  <span class=\"hljs-attr\">:value.sync</span>=<span class=\"hljs-string\">\"format\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"yyyy,MM,dd\"</span>&gt;</span>yyyy,MM,dd<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"yyyy-MM-dd\"</span>&gt;</span>yyyy-MM-dd<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"yyyy.MM.dd\"</span>&gt;</span>yyyy.MM.dd<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"MMM/dd/yyyy\"</span>&gt;</span>MMM/dd/yyyy<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"MMMM/dd/yyyy\"</span>&gt;</span>MMMM/dd/yyyy<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n</code></pre>\n<pre><code>&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;日期值,需要&lt;code&gt;.sync&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;200px&lt;/td&gt;\n      &lt;td&gt;输入框宽度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;format&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;yyyy-MM-dd&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;disabled-days-of-week&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;一周内无法选择的日期&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;值变化触发&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n</code></pre>\n  </div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 522 */
+/* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(523);
+	module.exports = __webpack_require__(543);
 
 /***/ },
-/* 523 */
+/* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(524)
+	module.exports = __webpack_require__(544)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(525)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(545)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-11.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-14.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-11.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-11.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-11.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-14.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-14.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-14.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-11.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-14.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 524 */
+/* 544 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11846,43 +12867,43 @@
 	// </script>
 
 /***/ },
-/* 525 */
+/* 545 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"时间选择器\">\n    <h1 class=\"page-header\"><a href=\"#时间选择器\" class=\"anchor\">时间选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n<pre><code>   &lt;n3-timepicker v-model=&quot;value&quot;  format=&quot;hh:mm:ss&quot;&gt;&lt;/n3-timepicker&gt;\n\n   &lt;n3-timepicker v-model=&quot;value1&quot;  format=&quot;hh:mm:ss&quot;&gt;&lt;/n3-timepicker&gt;\n \n&lt;/div&gt;\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;时间值,需要&lt;code&gt;.sync&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;format&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;hh:mm:ss&lt;/td&gt;\n      &lt;td&gt;格式&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;hour-range&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;[0,60]&lt;/td&gt;\n      &lt;td&gt;时钟范围&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;minute-range&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;[0,60]&lt;/td&gt;\n      &lt;td&gt;分钟范围&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;second-range&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;[0,60]&lt;/td&gt;\n      &lt;td&gt;秒钟范围&lt;/td&gt;\n    &lt;/tr&gt;\n   &lt;tr&gt;\n      &lt;td&gt;on-hide&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;隐藏时触发&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 526 */
+/* 546 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(527);
+	module.exports = __webpack_require__(547);
 
 /***/ },
-/* 527 */
+/* 547 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(528)
+	module.exports = __webpack_require__(548)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(529)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(549)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-15.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-15.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-15.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-15.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-16.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-15.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-16.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 528 */
+/* 548 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11986,43 +13007,43 @@
 	// </script>
 
 /***/ },
-/* 529 */
+/* 549 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"日期时间选择器\">\n    <h1 class=\"page-header\"><a href=\"#日期时间选择器\" class=\"anchor\">日期时间选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n<pre><code>  &lt;n3-datetimepicker v-model=&quot;value&quot; format=&quot;yyyy-MM-dd hh:mm&quot;&gt;&lt;/n3-datetimepicker&gt;\n\n  &lt;n3-datetimepicker v-model=&quot;value1&quot; &gt;&lt;/n3-datetimepicker&gt;\n\n&lt;/div&gt;\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;时间值,需要&lt;code&gt;.sync&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;200px&lt;/td&gt;\n      &lt;td&gt;输入框宽度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;format&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;yyyy-MM-dd hh:mm:ss&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;日期格式&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;disabled-days-of-week&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;一周内无法选择的日期&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;hour-range&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;[0,60]&lt;/td&gt;\n      &lt;td&gt;时钟范围&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;minute-range&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;[0,60]&lt;/td&gt;\n      &lt;td&gt;分钟范围&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;second-range&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;[0,60]&lt;/td&gt;\n      &lt;td&gt;秒钟范围&lt;/td&gt;\n    &lt;/tr&gt;\n   &lt;tr&gt;\n      &lt;td&gt;on-hide&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;隐藏时候触发&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n</code></pre>\n  </div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 530 */
+/* 550 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(531);
+	module.exports = __webpack_require__(551);
 
 /***/ },
-/* 531 */
+/* 551 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(532)
+	module.exports = __webpack_require__(552)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(533)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(553)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-14.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-14.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-14.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-14.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-14.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 532 */
+/* 552 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12087,43 +13108,43 @@
 	// </script>
 
 /***/ },
-/* 533 */
+/* 553 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"下拉框\">\n    <h1 class=\"page-header\"><a href=\"#下拉框\" class=\"anchor\">下拉框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-dropdown>\n        <div slot=\"trigger\">\n          <n3-button>\n            点击\n            <n3-icon :type=\"show?'angle-up' : 'angle-down'\"></n3-icon>\n          </n3-button>\n        </div>\n        <li><a href=\"#\">Action</a></li>\n        <li><a href=\"#\">Another action</a></li>\n        <li><a href=\"#\">Something else here</a></li>\n      </n3-dropdown>\n    </div>\n<p></p><h2>参数</h2>\n<table class=\"table table-bordered\">\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示</td>\n</tr>\n<tr>\n<td>trigger</td>\n<td><code>String</code> 如:  <code>click</code><code>hover</code></td>\n<td>click</td>\n<td>触发方式</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template><p></p>\n\n</section>";
 
 /***/ },
-/* 534 */
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(535);
+	module.exports = __webpack_require__(555);
 
 /***/ },
-/* 535 */
+/* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(536)
+	module.exports = __webpack_require__(556)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(537)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(557)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-17.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-17.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-17.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-17.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-13.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-17.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-13.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 536 */
+/* 556 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -12276,43 +13297,43 @@
 	// </script>
 
 /***/ },
-/* 537 */
+/* 557 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"弹出框\">\n    <h1 class=\"page-header\"><a href=\"#弹出框\" class=\"anchor\">弹出框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-button @click.native=\"showModal\">Show modal</n3-button>\n      <n3-modal title=\"Modal title\" effect=\"fade\" width=\"400px\" ref=\"modal\">\n        <div slot=\"body\">\n          What's in a name? That which we call a rose \n          By any other name would smell as sweet. \n        </div>\n      </n3-modal>\n<pre><code>  &lt;n3-button class=&quot;btn btn-success&quot; @click.native=&quot;showBigModal&quot;&gt;Big modal&lt;/n3-button&gt;\n  &lt;n3-modal title=&quot;Big Modal&quot;  effect=&quot;fade&quot; width=&quot;800px&quot; ref=&quot;bigModal&quot;&gt;\n    &lt;div slot=&quot;body&quot;&gt;\n      What's in a name? That which we call a rose \n      By any other name would smell as sweet. \n    &lt;/div&gt;\n  &lt;/n3-modal&gt;\n\n\n  &lt;n3-button class=&quot;btn btn-primary&quot; @click.native=&quot;showZoomModal&quot;&gt;Zoom modal&lt;/n3-button&gt;\n  &lt;n3-modal title=&quot;Zoom Modal&quot; effect=&quot;zoom&quot; width=&quot;400px&quot; ref=&quot;zoomModal&quot;&gt;\n    &lt;div slot=&quot;body&quot;&gt;\n      What's in a name? That which we call a rose \n      By any other name would smell as sweet. \n    &lt;/div&gt;\n  &lt;/n3-modal&gt;\n\n\n  &lt;n3-button @click.native=&quot;showCustomModal&quot;&gt;Show custom modal&lt;/n3-button&gt;\n  &lt;n3-modal  effect=&quot;fade&quot; width=&quot;400px&quot; ref=&quot;customModal&quot;&gt;\n    &lt;div slot=&quot;header&quot;&gt;\n    &lt;/div&gt;\n    &lt;div slot=&quot;body&quot;&gt;\n      What's in a name? That which we call a rose \n      By any other name would smell as sweet. \n    &lt;/div&gt;\n    &lt;div slot=&quot;footer&quot;&gt;\n    &lt;/div&gt;\n  &lt;/n3-modal&gt;\n&lt;/div&gt;\n</code></pre>\n<p></p><h2>参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>title</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>弹出框标题</td>\n      </tr>\n       <tr>\n        <td>show</td>\n        <td><code>Boolean</code></td>\n        <td></td>\n        <td>是否显示,需要<code>.sync</code></td>\n      </tr>\n       <tr>\n        <td>effect</td>\n        <td><code>String</code></td>\n        <td>'fade'</td>\n        <td><code>fade</code><code>zoom</code></td>\n      </tr>\n      <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td><code>600px</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>backdrop</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>点击遮罩层是否关闭弹出框</td>\n      </tr>\n      <tr>\n        <td>on-show</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>弹出框出现时触发</td>\n      </tr>\n      <tr>\n        <td>on-hide</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>弹出框隐藏时触发</td>\n      </tr>\n      <tr>\n        <td>on-confirm</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>点击弹出框确认按钮时触发</td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>用法</h2>\n  <p>\n    如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer. 但是如果你需要自己定制弹出框内容，你可以实现\n    <code>&lt;div slot=\"header\"&gt;...&lt;/div&gt;</code> ,\n    <code>&lt;div slot=\"body\"&gt;...&lt;/div&gt;</code>和\n    <code>&lt;div slot=\"footer\"&gt;...&lt;/div&gt;</code>.\n  </p>\n  </div>\n</div></template>\n</section>";
 
 /***/ },
-/* 538 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(539);
+	module.exports = __webpack_require__(559);
 
 /***/ },
-/* 539 */
+/* 559 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(540)
+	module.exports = __webpack_require__(560)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(541)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(561)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-19.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-20.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-19.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-19.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-19.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-20.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-20.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-20.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-19.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-20.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 540 */
+/* 560 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -12381,25 +13402,25 @@
 	// </script>
 
 /***/ },
-/* 541 */
+/* 561 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"输入框\">\n    <h1 class=\"page-header\"><a href=\"#输入框\" class=\"anchor\">输入框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-input v-model=\"value\" ref=\"input\"></n3-input>\n      <n3-button @click.native=\"$refs.input.$emit('focus')\">聚焦</n3-button>\n    </div>\n<pre><code>&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;password&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;密码输入框&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-blur&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;失去焦点触发函数&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-focus&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;聚焦触发函数&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;值变化触发函数&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n</code></pre>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 542 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(543);
+	module.exports = __webpack_require__(563);
 
 /***/ },
-/* 543 */
+/* 563 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(544)
+	module.exports = __webpack_require__(564)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(545)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(565)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -12417,7 +13438,7 @@
 	}
 
 /***/ },
-/* 544 */
+/* 564 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -12493,43 +13514,43 @@
 	// </script>
 
 /***/ },
-/* 545 */
+/* 565 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"数字输入框\">\n    <h1 class=\"page-header\"><a href=\"#数字输入框\" class=\"anchor\">数字输入框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-input-number v-model=\"value\"></n3-input-number>\n    </div>\n    <br>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>输入的值</td>\n        </tr>\n        <tr>\n          <td>max</td>\n          <td><code>Number</code></td>\n          <td></td>\n          <td>最大值</td>\n        </tr>\n        <tr>\n          <td>min</td>\n          <td><code>Number</code></td>\n          <td></td>\n          <td>最小值</td>\n        </tr>\n        <tr>\n          <td>step</td>\n          <td><code>Number</code></td>\n          <td></td>\n          <td>增减量值</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化回调函数</td>\n        </tr>\n<pre><code>  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n</code></pre>\n  </tbody></table></div>\n</template>\n\n</section>";
 
 /***/ },
-/* 546 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(547);
+	module.exports = __webpack_require__(567);
 
 /***/ },
-/* 547 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(548)
+	module.exports = __webpack_require__(568)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(549)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(569)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-16.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-16.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-16.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-16.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-17.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-16.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-17.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 548 */
+/* 568 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -12602,43 +13623,43 @@
 	// </script>
 
 /***/ },
-/* 549 */
+/* 569 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"文本框\">\n    <h1 class=\"page-header\"><a href=\"#文本框\" class=\"anchor\">文本框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      {{value}}\n     <n3-textarea v-model=\"value\"></n3-textarea>\n    </div>\n    <br>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>resize</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>是否支持拖动</td>\n        </tr>\n        <tr>\n          <td>max-length</td>\n          <td><code>Number</code></td>\n          <td></td>\n          <td>字符数限制</td>\n        </tr>\n        <tr>\n          <td>max-height</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>最大高度</td>\n        </tr>\n        <tr>\n          <td>min-height</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>最小高度</td>\n        </tr>\n        <tr>\n      </tr></tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 550 */
+/* 570 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(551);
+	module.exports = __webpack_require__(571);
 
 /***/ },
-/* 551 */
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(552)
+	module.exports = __webpack_require__(572)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(553)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(573)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-21.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-19.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-21.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-21.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-21.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-19.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-19.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-19.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-21.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-19.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 552 */
+/* 572 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12840,43 +13861,43 @@
 	// </script>
 
 /***/ },
-/* 553 */
+/* 573 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"导航\">\n    <h1 class=\"page-header\"><a href=\"#导航\" class=\"anchor\">导航</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-nav theme=\"default\">\n          <n3-nav-item active=\"\">\n            <a>导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a>导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav trigger=\"hover\" :show=\"show1\" @show=\"show1 = true\" @hide=\"show1 = false\">\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item>\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item>\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item>\n                <a>子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n          </n3-nav-item>\n          </n3-nav>\n```html\n<n3-nav theme=\"default\">\n  <n3-nav-item active=\"\">\n    <a>导航一</a>\n  </n3-nav-item>\n  <n3-nav-item disabled>\n    <a>导航二</a>\n  </n3-nav-item>\n  <n3-nav-item>\n    <n3-sub-nav>\n      <a slot=\"title\">导航三</a>\n      <n3-nav-item>\n        <a>子导航一</a>\n      </n3-nav-item>\n      <n3-nav-item>\n        <a>子导航二</a>\n      </n3-nav-item>\n      <n3-nav-item>\n        <a>子导航三</a>\n      </n3-nav-item>\n    </n3-sub-nav>\n  </n3-nav-item>\n</n3-nav>\n```\n        <n3-nav theme=\"dark\" type=\"vertical\" style=\"width:300px;\">\n          <n3-nav-item active=\"\">\n            <a>导航一</a>\n          </n3-nav-item>\n          <n3-nav-item disabled>\n            <a>导航二</a>\n          </n3-nav-item>\n          <n3-nav-item>\n            <n3-sub-nav :show=\"show2\" @toggle=\"show2 = !show2\">\n              <a slot=\"title\">导航三</a>\n              <n3-nav-item>\n                <a>子导航一</a>\n              </n3-nav-item>\n              <n3-nav-item>\n                <a>子导航二</a>\n              </n3-nav-item>\n              <n3-nav-item>\n                <a>子导航三</a>\n              </n3-nav-item>\n            </n3-sub-nav>\n            </n3-nav-item>\n            <n3-nav-item>\n              <a>导航四</a>\n            </n3-nav-item>\n        </n3-nav>\n```html\n<n3-nav theme=\"dark\" type=\"vertical\">\n  <n3-nav-item active=\"\">\n    <a>导航一</a>\n  </n3-nav-item>\n  <n3-nav-item disabled>\n    <a>导航二</a>\n  </n3-nav-item>\n  <n3-nav-item>\n    <n3-sub-nav>\n      <a slot=\"title\">导航三</a>\n      <n3-nav-item>\n        <a>子导航一</a>\n      </n3-nav-item>\n      <n3-nav-item>\n        <a>子导航二</a>\n      </n3-nav-item>\n      <n3-nav-item>\n        <a>子导航三</a>\n      </n3-nav-item>\n    </n3-sub-nav>\n    </n3-nav-item>\n    <n3-nav-item>\n      <a>导航四</a>\n  </n3-nav-item>\n</n3-nav>\n```\n  </div>\n<p></p><h2>n3-nav参数</h2>\n<table class=\"table table-bordered\">\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td><code>String</code> 如:  <code>horizontal</code><code>vertical</code></td>\n<td>horizontal</td>\n<td>水平,垂直</td>\n</tr>\n<tr>\n<td>theme</td>\n<td><code>String</code> oneof <code>default</code><code>dark</code></td>\n<td>default</td>\n<td>颜色</td>\n</tr>\n</tbody>\n</table>\n<h2>n3-sub-nav参数</h2>\n<table class=\"table table-bordered\">\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>trigger</td>\n<td><code>String</code> 如:  <code>click</code><code>hover</code></td>\n<td>click</td>\n<td>展开方式</td>\n</tr>\n<tr>\n<td>show</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>是否展开</td>\n</tr>\n</tbody>\n</table>\n<h2>n3-nav-item参数</h2>\n<table class=\"table table-bordered\">\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>active</td>\n<td><code>Boolean</code> </td>\n<td>false</td>\n<td>是否激活</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>是否不可用</td>\n</tr>\n</tbody>\n</table>\n</div></template><p></p>\n\n</section>";
 
 /***/ },
-/* 554 */
+/* 574 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(555);
+	module.exports = __webpack_require__(575);
 
 /***/ },
-/* 555 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(556)
+	module.exports = __webpack_require__(576)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(557)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(577)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-20.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-20.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-20.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-20.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-23.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-20.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-23.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 556 */
+/* 576 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -13176,50 +14197,50 @@
 	// </script>
 
 /***/ },
-/* 557 */
+/* 577 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"气泡框\">\n    <h1 class=\"page-header\"><a href=\"#气泡框\" class=\"anchor\">气泡框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\" placement=\"top\">\n        <div slot=\"content\">\n           从前有座山\n        </div>\n        <n3-button>Popover on top</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\" placement=\"left\">\n         <div slot=\"content\">\n            山里有座庙\n        </div>\n        <n3-button>Popover on left</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\" placement=\"right\">\n         <div slot=\"content\">\n            庙里有个老和尚\n        </div>\n        <n3-button>Popover on right</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" placement=\"bottom\" :header=\"true\" title=\"Title\">\n         <div slot=\"content\">\n            老和尚说从前有座山\n        </div>\n        <n3-button>Popover on bottom</n3-button>\n      </n3-popover>\n      <hr>\n      <h4>No title</h4>\n      <n3-popover effect=\"fade\" :header=\"false\" title=\"Title\" placement=\"top\">\n         <div slot=\"content\">\n            山里有座庙\n          </div>\n          <n3-button>Popover on top</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"false\" title=\"Title\" placement=\"left\">\n        <div slot=\"content\">\n            庙里有个老和尚\n        </div>\n        <n3-button>Popover on left</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"false\" title=\"Title\" placement=\"right\">\n        <div slot=\"content\">\n            老和尚说从前有座山\n        </div>\n        <n3-button>Popover on right</n3-button>\n      </n3-popover>\n      <n3-popover effect=\"fade\" :header=\"false\" placement=\"bottom\" title=\"Title\">\n        <div slot=\"content\">\n            山里有座庙\n          </div>\n        <n3-button>Popover on bottom</n3-button>\n      </n3-popover>\n      <hr>\n      <h4>Triger</h4>\n        <n3-popover effect=\"scale\" title=\"Title\" placement=\"top\" trigger=\"hover\">\n            <div slot=\"content\">\n              庙里有个老和尚\n            </div>\n            <n3-button>Mouseenter</n3-button>\n        </n3-popover>\n       <hr>\n      <h4>Focus</h4>  \n      <n3-popover effect=\"scale\" title=\"Title\" placement=\"bottom\" trigger=\"focus\">\n        <div slot=\"content\">\n            老和尚很无聊\n        </div> \n        <n3-input placeholder=\"Focus\"></n3-input>\n      </n3-popover>\n<pre><code>  &lt;h4&gt;气泡确认&lt;/h4&gt;  \n  &lt;n3-pop-confirm\n      content=&quot;确定删除么？&quot;\n      :on-confirm=&quot;del(item)&quot;&gt;\n      &lt;n3-button &gt;删除&lt;/n3-button&gt;\n  &lt;/n3-pop-confirm&gt;\n&lt;/div&gt;\n</code></pre>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span> &gt;</span>\n     从前有座山\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on top<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span>&gt;</span>\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      山里有座庙\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      庙里有个老和尚\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"bottom\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> &gt;</span>\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span> &gt;</span>\n      老和尚说从前有座山\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on bottom<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>No title<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span>   <span class=\"hljs-attr\">:header</span> =<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>&gt;</span>\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      山里有座庙\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on top<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span>  <span class=\"hljs-attr\">:header</span> =<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      庙里有个老和尚\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span>  <span class=\"hljs-attr\">:header</span> =<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      老和尚说从前有座山\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span> =<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"bottom\"</span>  <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      山里有座庙\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on bottom<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Triger<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"scale\"</span>  <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"hover\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n        庙里有个老和尚\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>Mouseenter<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Focus<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>  \n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"scale\"</span>\n<span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"bottom\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"focus\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      老和尚很无聊\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span> \n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span> <span class=\"hljs-attr\">placeholder</span>=<span class=\"hljs-string\">\"Focus\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>气泡确认<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>  \n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-pop-confirm</span>\n    <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">\"确定删除么？\"</span>\n    <span class=\"hljs-attr\">:on-confirm</span>=<span class=\"hljs-string\">\"del(item)\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>删除<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-pop-confirm</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">del(item){ \n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-built_in\">Promise</span>(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">resolve, reject</span>) </span>{\n    setTimeout(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\"></span>) </span>{\n      alert(<span class=\"hljs-string\">'删除了'</span> +  item)\n      resolve()\n    },<span class=\"hljs-number\">500</span>);\n  });\n}\n</code></pre>\n<p></p><h2>popover参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>trigger</td>\n        <td><code>String</code>, 如:  <code>click</code>\n        <code>focus</code>\n        <code>hover</code></td>\n        <td><code>click</code></td>\n        <td>触发方式</td>\n      </tr>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>\n        <td><code>scale</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>title</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>header</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>是否显示头部</td>\n      </tr>\n      <tr>\n        <td>placement</td>\n        <td><code>String</code>, 如:  <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位</td>\n      </tr>\n    </tbody>\n  </table>\n<p></p><h2>popconfirm参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>\n        <td><code>fade</code></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>content</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n      <tr>\n        <td>placement</td>\n        <td><code>String</code>, 如:  <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位</td>\n      </tr>\n      <tr>\n        <td>on-confirm</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>点击确定的回调函数</td>\n      </tr>\n      <tr>\n        <td>ok-text</td>\n        <td><code>String</code></td>\n        <td>确定</td>\n        <td>确定按钮的文案</td>\n      </tr>\n       <tr>\n        <td>cancel-text</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>取消按钮的文案</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</div></template>\n</section>";
 
 /***/ },
-/* 558 */
+/* 578 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(559);
+	module.exports = __webpack_require__(579);
 
 /***/ },
-/* 559 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(560)
-	module.exports = __webpack_require__(562)
+	__webpack_require__(580)
+	module.exports = __webpack_require__(582)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(563)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(583)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-26.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-25.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-26.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-52189823&file=n3ProgressbarDocs-26.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-26.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-26.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-25.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-520a80a2&file=n3ProgressbarDocs-25.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-25.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-25.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-52189823&file=n3ProgressbarDocs-26.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-26.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-520a80a2&file=n3ProgressbarDocs-25.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-25.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 560 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(561);
+	var content = __webpack_require__(581);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(462)(content, {});
@@ -13228,8 +14249,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-52189823&file=n3ProgressbarDocs-26.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-26.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-52189823&file=n3ProgressbarDocs-26.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-26.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-520a80a2&file=n3ProgressbarDocs-25.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-25.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-520a80a2&file=n3ProgressbarDocs-25.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-25.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -13239,7 +14260,7 @@
 	}
 
 /***/ },
-/* 561 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(461)();
@@ -13247,13 +14268,13 @@
 	
 	
 	// module
-	exports.push([module.id, ".margin[_v-52189823]{\n  margin-bottom:20px;\n}", ""]);
+	exports.push([module.id, ".margin[_v-520a80a2]{\n  margin-bottom:20px;\n}", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 562 */
+/* 582 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13402,43 +14423,43 @@
 	// </script>
 
 /***/ },
-/* 563 */
+/* 583 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-52189823=\"\"><template _v-52189823=\"\">\n  <div class=\"bs-docs-section\" id=\"进度条\" _v-52189823=\"\">\n    <h1 class=\"page-header\" _v-52189823=\"\"><a href=\"#进度条\" class=\"anchor\" _v-52189823=\"\">进度条</a><span class=\"author\" _v-52189823=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-52189823=\"\">\n      <h4 _v-52189823=\"\">高度</h4>\n      <div class=\"row\" _v-52189823=\"\">\n        <div class=\"col-md-4\" _v-52189823=\"\">\n          <n3-progress class=\"margin\" _v-52189823=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-52189823=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-52189823=\"\">\n          <n3-progress class=\"margin\" _v-52189823=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-52189823=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n<pre _v-52189823=\"\"><code _v-52189823=\"\">  &lt;hr&gt;\n\n  &lt;h4&gt;\n    动态\n    &lt;n3-button  @click.native=\"dynamicClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n  &lt;n3-progress class=\"margin\" &gt;\n    &lt;n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" &gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress class=\"margin\"&gt;\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n\n  &lt;hr&gt;\n\n  &lt;h4&gt;\n    叠加\n    &lt;n3-button  @click.native=\"stackedClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[1]\" label type=\"success\" &gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped &gt;\n  &lt;/n3-progressbar&gt;\n  &lt;/div&gt;\n\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n     &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;now&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;当前进度&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;height&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;20px&lt;/td&gt;\n      &lt;td&gt;高度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;样式 &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;label&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否显示进度提示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;striped&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示条纹&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;animated&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;动画效果&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
+	module.exports = "<section _v-520a80a2=\"\"><template _v-520a80a2=\"\">\n  <div class=\"bs-docs-section\" id=\"进度条\" _v-520a80a2=\"\">\n    <h1 class=\"page-header\" _v-520a80a2=\"\"><a href=\"#进度条\" class=\"anchor\" _v-520a80a2=\"\">进度条</a><span class=\"author\" _v-520a80a2=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-520a80a2=\"\">\n      <h4 _v-520a80a2=\"\">高度</h4>\n      <div class=\"row\" _v-520a80a2=\"\">\n        <div class=\"col-md-4\" _v-520a80a2=\"\">\n          <n3-progress class=\"margin\" _v-520a80a2=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-520a80a2=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-520a80a2=\"\">\n          <n3-progress class=\"margin\" _v-520a80a2=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-520a80a2=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n<pre _v-520a80a2=\"\"><code _v-520a80a2=\"\">  &lt;hr&gt;\n\n  &lt;h4&gt;\n    动态\n    &lt;n3-button  @click.native=\"dynamicClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n  &lt;n3-progress class=\"margin\" &gt;\n    &lt;n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" &gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress class=\"margin\"&gt;\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n\n  &lt;hr&gt;\n\n  &lt;h4&gt;\n    叠加\n    &lt;n3-button  @click.native=\"stackedClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[1]\" label type=\"success\" &gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped &gt;\n  &lt;/n3-progressbar&gt;\n  &lt;/div&gt;\n\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n     &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;now&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;当前进度&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;height&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;20px&lt;/td&gt;\n      &lt;td&gt;高度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;样式 &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;label&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否显示进度提示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;striped&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示条纹&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;animated&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;动画效果&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
 
 /***/ },
-/* 564 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(565);
+	module.exports = __webpack_require__(585);
 
 /***/ },
-/* 565 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(566)
+	module.exports = __webpack_require__(586)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(567)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(587)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-29.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-29.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-29.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-29.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-22.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-29.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-22.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 566 */
+/* 586 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -13655,43 +14676,43 @@
 	// </script>
 
 /***/ },
-/* 567 */
+/* 587 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"选择框\">\n    <h1 class=\"page-header\"><a href=\"#选择框\" class=\"anchor\">选择框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\nSelect data : {{single}}\n        </pre>\n      </p>\n      <n3-select v-model=\"single\" :badge=\"5\">\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选</h4>\n      <p>\n        <pre>\nSelect data : {{multiple.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple v-model=\"multiple\" search=\"\">\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>多选限制</h4>\n      <p>\n        <pre>\nSelect data : {{multipleLimit.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple :limit=\"2\" v-model=\"multipleLimit\" search=\"\" extra=\"\">\n        <n3-option value=\"Apple\">Apple</n3-option>\n        <n3-option value=\"Banana\">Banana</n3-option>\n        <n3-option value=\"Cherry\">Cherry</n3-option>\n        <n3-option value=\"Orange\">Orange</n3-option>\n        <n3-option value=\"Grape\">Grape</n3-option>\n      </n3-select>\n      <hr>\n      <h4>自定义内容</h4>\n      <p>\n        <pre>\nSelect data : {{custom.join(', ')}}\n        </pre>\n      </p>\n      <n3-select multiple v-model=\"custom\">\n        <n3-option value=\"Star\"><span class=\"n3-fa n3-fa-star\"></span> Star</n3-option>\n        <n3-option value=\"Heart\"><span class=\"n3-fa n3-fa-heart\"></span> Heart</n3-option>\n        <n3-option value=\"Film\"><span class=\"n3-fa n3-fa-film\"></span> Film</n3-option>\n        <n3-option value=\"Inbox\"><span class=\"n3-fa n3-fa-inbox\"></span> Inbox</n3-option>\n      </n3-select>\n      <hr>\n      <h4>传递数组，支持搜索</h4>\n      <p>\n        支持只传递接json数组，可以支持搜索\n        <pre>\nSelect data : {{arr}}\n        </pre>\n      </p>\n      <n3-select v-model=\"arr\" :options=\"fruitOptions\" :search=\"true\" multiple extra=\"\" width=\"200px\">\n      </n3-select>\n    </div>\n<pre><code>&lt;h2&gt;参数&lt;/h2&gt;\n&lt;p&gt;样式的参数和 &lt;a href=&quot;#n3ButtonsDocs&quot;&gt;按钮&lt;/a&gt; 相同&lt;/p&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;多选为数组，单选为单个数字或者字符串&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;options&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;[]&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;json数组&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;placeholder&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;'请选择'&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;multiple&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;支持多选&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;limit&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;1024&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;多选限制&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;search&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否支持搜索&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;extra&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;可支持在输入款内添加新的选项(需要search支持)&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;input-placeholder&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;请输入&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;输入框的placeholder&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;选择框大小&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;menu-max-height&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;300px&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;下拉框最大高度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;menu-width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;下拉框宽度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;format&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;function(item){\n        return item.label\n      }&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;选中内容的格式化显示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;value改变回调函数&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;disabled&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;readonly&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;badge&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;徽标&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;cancelled&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;单选时，是否可撤销&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n</code></pre>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 568 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(569);
+	module.exports = __webpack_require__(589);
 
 /***/ },
-/* 569 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(570)
+	module.exports = __webpack_require__(590)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(571)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(591)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-28.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-21.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-28.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-28.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-28.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-21.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-21.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-21.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-28.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-21.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 570 */
+/* 590 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13778,43 +14799,43 @@
 	// </script>
 
 /***/ },
-/* 571 */
+/* 591 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"开关\">\n    <h1 class=\"page-header\"><a href=\"#开关\" class=\"anchor\">开关</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n<pre><code>  &lt;h3&gt;&lt;n3-switch v-model=&quot;value&quot;&gt;&lt;/n3-switch&gt;&lt;/h3&gt;\n  \n  &lt;h3&gt;&lt;n3-switch ontext=&quot;开&quot; offtext=&quot;关&quot; :on-change=&quot;toggle&quot; v-model=&quot;value&quot;&gt;&lt;/n3-switch&gt;&lt;/h3&gt;\n\n  &lt;h3&gt;&lt;n3-switch ontext=&quot;开&quot; offtext=&quot;关&quot; :on-change=&quot;toggle&quot; :disabled=&quot;true&quot;&gt;&lt;/n3-switch&gt;&lt;/h3&gt;\n\n&lt;/div&gt;\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;true&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;开关状态&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;disabled&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否禁用状态&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;ontext&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;ON&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;开状态的文本&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;offtext&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;OFF&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;关状态的文本&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;开关状态变化时触发&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n</code></pre>\n  </div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 572 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(573);
+	module.exports = __webpack_require__(593);
 
 /***/ },
-/* 573 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(574)
+	module.exports = __webpack_require__(594)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(575)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(595)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-22.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-29.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-22.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-22.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-22.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-29.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-29.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-29.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-22.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-29.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 574 */
+/* 594 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -13926,43 +14947,43 @@
 	// </script>
 
 /***/ },
-/* 575 */
+/* 595 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"时间轴\">\n    <h1 class=\"page-header\"><a href=\"#时间轴\" class=\"anchor\">时间轴</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-timeline>\n       <n3-timeline-item color=\"#2ecc71\" icon=\"check-circle-o\">\n            创建成功\n        </n3-timeline-item>\n         <n3-timeline-item color=\"#3498db\">\n            通过审核\n        </n3-timeline-item>\n         <n3-timeline-item color=\"#e74c3c\" icon=\"times-circle-o\">\n            出现异常\n        </n3-timeline-item>\n      </n3-timeline>\n<pre><code>  &lt;n3-timeline\n    :value=&quot;value&quot;&gt;\n  &lt;/n3-timeline&gt;  \n\n&lt;/div&gt;\n\n&lt;h2&gt;Timeline参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;内容数组&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;h2&gt;TimelineItem参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;color&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;#2db7f5&lt;/td&gt;\n      &lt;td&gt;颜色&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;content&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;内容&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;icon&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;自定义图标&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 576 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(577);
+	module.exports = __webpack_require__(597);
 
 /***/ },
-/* 577 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(578)
+	module.exports = __webpack_require__(598)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(579)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(599)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-23.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-23.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-23.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-23.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-24.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-23.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-24.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 578 */
+/* 598 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -13971,59 +14992,124 @@
 	  value: true
 	});
 	// <template><section><template>
-	//   <div class="bs-docs-section" id="标签页">
-	//     <h1 class="page-header"><a href="#标签页" class="anchor">标签页</a><span class="author"> </span></h1>
-	//     <div class="bs-example">
-	//       <n3-tabs :on-change="change" :list="list"></n3-tabs>
-	// <pre><code>  &lt;n3-tabs :on-change=&quot;change&quot; :value=&quot;1&quot;&gt;
-	//     &lt;n3-tab header=&quot;one&quot; badge=&quot;1&quot;&gt;
-	//       &lt;p&gt;.......&lt;/p&gt;
-	//       &lt;p&gt;.......&lt;/p&gt;
-	//       &lt;p&gt;.......&lt;/p&gt;
-	//     &lt;/n3-tab&gt;
-	//     &lt;n3-tab header=&quot;two&quot;&gt;
-	//       &lt;p&gt;*********&lt;/p&gt;
-	//       &lt;p&gt;*********&lt;/p&gt;
-	//       &lt;p&gt;*********&lt;/p&gt;
-	//     &lt;/n3-tab&gt;
-	//     &lt;n3-tab header=&quot;three&quot; disabled&gt;
-	//       ...
-	//     &lt;/n3-tab&gt;
-	//   &lt;/n3-tabs&gt;
-	
-	
-	//   &lt;p&gt;胶囊样式 pills&lt;/p&gt; 
-	//   &lt;n3-tabs pills&gt;
-	//     &lt;n3-tab header=&quot;one&quot;&gt;
-	//     &lt;/n3-tab&gt;
-	//     &lt;n3-tab header=&quot;two&quot;&gt;
-	//     &lt;/n3-tab&gt;
-	//   &lt;/n3-tabs&gt;
-	//   &lt;p&gt;垂直样式 stacked&lt;/p&gt; 
-	//   &lt;n3-tabs pills stacked style=&quot;max-width: 300px;&quot; :on-change=&quot;change&quot;&gt;
-	//     &lt;n3-tab header=&quot;one&quot; &gt;
-	//     &lt;/n3-tab&gt;
-	//     &lt;n3-tab header=&quot;two&quot;&gt;
-	//     &lt;/n3-tab&gt;
-	//   &lt;/n3-tabs&gt;
-	//   &lt;p&gt;primary&lt;/p&gt; 
-	//   &lt;n3-tabs primary pills stacked style=&quot;max-width: 300px;&quot;&gt;
-	//     &lt;n3-tab header=&quot;one&quot;&gt;
-	//     &lt;/n3-tab&gt;
-	//     &lt;n3-tab header=&quot;two&quot;&gt;
-	//     &lt;/n3-tab&gt;
-	//   &lt;/n3-tabs&gt;
-	//   &lt;p&gt;自适应 justified&lt;/p&gt; 
-	//   &lt;n3-tabs pills justified&gt;
-	//     &lt;n3-tab header=&quot;one&quot;&gt;
-	//     &lt;/n3-tab&gt;
-	//     &lt;n3-tab header=&quot;two&quot;&gt;
-	//     &lt;/n3-tab&gt;
-	//   &lt;/n3-tabs&gt;
-	
-	
-	// &lt;/div&gt;
+	// <h3>标签页</h3>
+	// <div class="bs-docs-section">
+	// <div class="bs-example">
+	// <h4>使用list</h4>
+	// <p><n3-tabs :on-change="change" :list="list"></n3-tabs></p>
+	// <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">n3-tabs</span> <span class="hljs-attr">:on-change</span>=<span class="hljs-string">"change"</span> <span class="hljs-attr">:list</span>=<span class="hljs-string">"list"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-tabs</span>&gt;</span>
 	// </code></pre>
+	// <pre><code class="language-javascript">data () {
+	//   <span class="hljs-keyword">return</span> {
+	//     <span class="hljs-attr">list</span>: [{
+	//       <span class="hljs-attr">header</span>: <span class="hljs-string">'first'</span>,
+	//       <span class="hljs-attr">badge</span>: <span class="hljs-number">12</span>,
+	//       <span class="hljs-attr">content</span>: <span class="hljs-string">'first的内容'</span>
+	//     }, {
+	//       <span class="hljs-attr">header</span>: <span class="hljs-string">'seacond'</span>,
+	//       <span class="hljs-attr">badge</span>: <span class="hljs-number">12</span>,
+	//       <span class="hljs-attr">content</span>: <span class="hljs-string">'seacond的内容'</span>
+	//     }]
+	//   }
+	// }
+	// </code></pre>
+	// <hr>
+	// <h4>使用tab</h4>
+	// <n3-tabs :on-change="change" :value="1">
+	//   <n3-tab header="one" badge="1">
+	//     <p>.......</p>
+	//     <p>.......</p>
+	//     <p>.......</p>
+	//   </n3-tab>
+	//   <n3-tab header="two">
+	//     <p>*********</p>
+	//     <p>*********</p>
+	//     <p>*********</p>
+	//   </n3-tab>
+	//   <n3-tab header="three" disabled>
+	//     ...
+	//   </n3-tab>
+	// </n3-tabs>
+	// <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">n3-tabs</span> <span class="hljs-attr">:on-change</span>=<span class="hljs-string">"change"</span> <span class="hljs-attr">:value</span>=<span class="hljs-string">"1"</span>&gt;</span>
+	//   <span class="hljs-tag">&lt;<span class="hljs-name">n3-tab</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"one"</span> <span class="hljs-attr">badge</span>=<span class="hljs-string">"1"</span>&gt;</span>
+	//     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>.......<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	//     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>.......<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	//     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>.......<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	//   <span class="hljs-tag">&lt;/<span class="hljs-name">n3-tab</span>&gt;</span>
+	//   <span class="hljs-tag">&lt;<span class="hljs-name">n3-tab</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"two"</span>&gt;</span>
+	//     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>*********<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	//     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>*********<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	//     <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>*********<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	//   <span class="hljs-tag">&lt;/<span class="hljs-name">n3-tab</span>&gt;</span>
+	//   <span class="hljs-tag">&lt;<span class="hljs-name">n3-tab</span> <span class="hljs-attr">header</span>=<span class="hljs-string">"three"</span> <span class="hljs-attr">disabled</span>&gt;</span>
+	//     ...
+	//   <span class="hljs-tag">&lt;/<span class="hljs-name">n3-tab</span>&gt;</span>
+	// <span class="hljs-tag">&lt;/<span class="hljs-name">n3-tabs</span>&gt;</span>
+	// </code></pre>
+	// <hr>
+	// <h4>胶囊样式 pills</h4>
+	// <n3-tabs pills="">
+	//   <n3-tab header="one">
+	//   </n3-tab>
+	//   <n3-tab header="two">
+	//   </n3-tab>
+	// </n3-tabs>
+	// <hr>
+	// <h4>垂直样式 stacked</h4>
+	// <n3-tabs pills="" stacked="" style="max-width: 300px;" :on-change="change">
+	//   <n3-tab header="one">
+	//   </n3-tab>
+	//   <n3-tab header="two">
+	//   </n3-tab>
+	// </n3-tabs>
+	// <hr>
+	// <h4>垂直样式 stacked</h4>
+	// <n3-tabs primary="" pills="" stacked="" style="max-width: 300px;">
+	//   <n3-tab header="one">
+	//   </n3-tab>
+	//   <n3-tab header="two">
+	//   </n3-tab>
+	// </n3-tabs>
+	// <hr>
+	// <h4>自适应 justified</h4>
+	// <n3-tabs pills="" justified="">
+	//   <n3-tab header="one">
+	//   </n3-tab>
+	//   <n3-tab header="two">
+	//   </n3-tab>
+	// </n3-tabs>
+	// </div>
+	// <h3>n3-column参数</h3>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>参数</th>
+	// <th>类型</th>
+	// <th>默认值</th>
+	// <th>说明</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>col</td>
+	// <td>Number</td>
+	// <td>-</td>
+	// <td>占的列数</td>
+	// </tr>
+	// <tr>
+	// <td>mode</td>
+	// <td>String</td>
+	// <td>md</td>
+	// <td>布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>
+	// </tr>
+	// <tr>
+	// <td>offset</td>
+	// <td>Number</td>
+	// <td>-</td>
+	// <td>偏移值</td>
+	// </tr>
+	// </tbody>
+	// </table>
 	// <p></p><h2>tabs参数</h2><p></p>
 	//   <table class="table table-bordered">
 	//     <thead>
@@ -14127,7 +15213,7 @@
 	//     </tbody>
 	//   </table>
 	//   </div>
-	// </div></template>
+	// </template>
 	
 	// </section></template>
 	
@@ -14138,11 +15224,11 @@
 	      list: [{
 	        header: 'first',
 	        badge: 12,
-	        content: 'xxx'
+	        content: 'first的内容'
 	      }, {
 	        header: 'seacond',
 	        badge: 12,
-	        content: 'xxxx'
+	        content: 'seacond的内容'
 	      }]
 	    };
 	  },
@@ -14156,43 +15242,43 @@
 	// </script>
 
 /***/ },
-/* 579 */
+/* 599 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"标签页\">\n    <h1 class=\"page-header\"><a href=\"#标签页\" class=\"anchor\">标签页</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-tabs :on-change=\"change\" :list=\"list\"></n3-tabs>\n<pre><code>  &lt;n3-tabs :on-change=&quot;change&quot; :value=&quot;1&quot;&gt;\n    &lt;n3-tab header=&quot;one&quot; badge=&quot;1&quot;&gt;\n      &lt;p&gt;.......&lt;/p&gt;\n      &lt;p&gt;.......&lt;/p&gt;\n      &lt;p&gt;.......&lt;/p&gt;\n    &lt;/n3-tab&gt;\n    &lt;n3-tab header=&quot;two&quot;&gt;\n      &lt;p&gt;*********&lt;/p&gt;\n      &lt;p&gt;*********&lt;/p&gt;\n      &lt;p&gt;*********&lt;/p&gt;\n    &lt;/n3-tab&gt;\n    &lt;n3-tab header=&quot;three&quot; disabled&gt;\n      ...\n    &lt;/n3-tab&gt;\n  &lt;/n3-tabs&gt;\n\n\n  \n  &lt;p&gt;胶囊样式 pills&lt;/p&gt; \n  &lt;n3-tabs pills&gt;\n    &lt;n3-tab header=&quot;one&quot;&gt;\n    &lt;/n3-tab&gt;\n    &lt;n3-tab header=&quot;two&quot;&gt;\n    &lt;/n3-tab&gt;\n  &lt;/n3-tabs&gt;\n  &lt;p&gt;垂直样式 stacked&lt;/p&gt; \n  &lt;n3-tabs pills stacked style=&quot;max-width: 300px;&quot; :on-change=&quot;change&quot;&gt;\n    &lt;n3-tab header=&quot;one&quot; &gt;\n    &lt;/n3-tab&gt;\n    &lt;n3-tab header=&quot;two&quot;&gt;\n    &lt;/n3-tab&gt;\n  &lt;/n3-tabs&gt;\n  &lt;p&gt;primary&lt;/p&gt; \n  &lt;n3-tabs primary pills stacked style=&quot;max-width: 300px;&quot;&gt;\n    &lt;n3-tab header=&quot;one&quot;&gt;\n    &lt;/n3-tab&gt;\n    &lt;n3-tab header=&quot;two&quot;&gt;\n    &lt;/n3-tab&gt;\n  &lt;/n3-tabs&gt;\n  &lt;p&gt;自适应 justified&lt;/p&gt; \n  &lt;n3-tabs pills justified&gt;\n    &lt;n3-tab header=&quot;one&quot;&gt;\n    &lt;/n3-tab&gt;\n    &lt;n3-tab header=&quot;two&quot;&gt;\n    &lt;/n3-tab&gt;\n  &lt;/n3-tabs&gt;\n\n  \n&lt;/div&gt;\n</code></pre>\n<p></p><h2>tabs参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n     <tr>\n        <td>active-index</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>list</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td><pre><code>\nlist: [{\n  header: 'first',\n  badge: 12,\n  content: 'xxx'\n},{\n  header: 'seacond',\n  badge: 12,\n  content: 'xxxx'\n}]\n        </code></pre></td>\n      </tr>\n      <tr>\n        <td>pills</td>\n        <td><code>Boolean</code></td>\n        <td></td>\n        <td>胶囊样式</td>\n      </tr>\n      <tr>\n        <td>stacked</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>竖直状态</td>\n      </tr>\n       <tr>\n        <td>primary</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>justified</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否自适应</td>\n      </tr>\n       <tr>\n        <td>size</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>尺寸</td>\n      </tr>\n       <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>tab参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>header</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>标签头文字</td>\n      </tr>\n      <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n      <tr>\n        <td>disabled</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否能被激活</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</div></template>\n\n</section>";
+	module.exports = "<section><template>\n<h3>标签页</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h4>使用list</h4>\n<p><n3-tabs :on-change=\"change\" :list=\"list\"></n3-tabs></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">:on-change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:list</span>=<span class=\"hljs-string\">\"list\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">data () {\n  <span class=\"hljs-keyword\">return</span> {\n    <span class=\"hljs-attr\">list</span>: [{\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'first'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'first的内容'</span>\n    }, {\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'seacond'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'seacond的内容'</span>\n    }]\n  }\n}\n</code></pre>\n<hr>\n<h4>使用tab</h4>\n<n3-tabs :on-change=\"change\" :value=\"1\">\n  <n3-tab header=\"one\" badge=\"1\">\n    <p>.......</p>\n    <p>.......</p>\n    <p>.......</p>\n  </n3-tab>\n  <n3-tab header=\"two\">\n    <p>*********</p>\n    <p>*********</p>\n    <p>*********</p>\n  </n3-tab>\n  <n3-tab header=\"three\" disabled>\n    ...\n  </n3-tab>\n</n3-tabs>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">:on-change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:value</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"one\"</span> <span class=\"hljs-attr\">badge</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"two\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"three\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>\n    ...\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<hr>\n<h4>胶囊样式 pills</h4>\n<n3-tabs pills=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>垂直样式 stacked</h4>\n<n3-tabs pills=\"\" stacked=\"\" style=\"max-width: 300px;\" :on-change=\"change\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>垂直样式 stacked</h4>\n<n3-tabs primary=\"\" pills=\"\" stacked=\"\" style=\"max-width: 300px;\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>自适应 justified</h4>\n<n3-tabs pills=\"\" justified=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n</div>\n<h3>n3-column参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>col</td>\n<td>Number</td>\n<td>-</td>\n<td>占的列数</td>\n</tr>\n<tr>\n<td>mode</td>\n<td>String</td>\n<td>md</td>\n<td>布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>\n</tr>\n<tr>\n<td>offset</td>\n<td>Number</td>\n<td>-</td>\n<td>偏移值</td>\n</tr>\n</tbody>\n</table>\n<p></p><h2>tabs参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n     <tr>\n        <td>active-index</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>list</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td><pre><code>\nlist: [{\n  header: 'first',\n  badge: 12,\n  content: 'xxx'\n},{\n  header: 'seacond',\n  badge: 12,\n  content: 'xxxx'\n}]\n        </code></pre></td>\n      </tr>\n      <tr>\n        <td>pills</td>\n        <td><code>Boolean</code></td>\n        <td></td>\n        <td>胶囊样式</td>\n      </tr>\n      <tr>\n        <td>stacked</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>竖直状态</td>\n      </tr>\n       <tr>\n        <td>primary</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>justified</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否自适应</td>\n      </tr>\n       <tr>\n        <td>size</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>尺寸</td>\n      </tr>\n       <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>tab参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>header</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>标签头文字</td>\n      </tr>\n      <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n      <tr>\n        <td>disabled</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否能被激活</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 580 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(581);
+	module.exports = __webpack_require__(601);
 
 /***/ },
-/* 581 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(582)
+	module.exports = __webpack_require__(602)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(583)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(603)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-24.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-26.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-24.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-24.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-24.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-26.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-26.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-26.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-24.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-26.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 582 */
+/* 602 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -14285,43 +15371,43 @@
 	// </script>
 
 /***/ },
-/* 583 */
+/* 603 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"浮出提示\">\n    <h1 class=\"page-header\"><a href=\"#浮出提示\" class=\"anchor\">浮出提示</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-tooltip content=\"tooltip on top\" placement=\"top\" trigger=\"hover\">\n        <n3-button>tooltip on top</n3-button>\n      </n3-tooltip>\n      <n3-tooltip content=\"tooltip on left\" placement=\"left\" trigger=\"hover\">\n        <n3-button>tooltip on left</n3-button>\n      </n3-tooltip>\n      <n3-tooltip content=\"tooltip on right\" placement=\"right\" trigger=\"hover\">\n        <n3-button>tooltip on right</n3-button>\n      </n3-tooltip>\n      <n3-tooltip content=\"tooltip on bottom\" placement=\"bottom\" trigger=\"hover\">\n        <n3-button>tooltip on bottom</n3-button>\n      </n3-tooltip>\n      <hr>\n      <h4>Triger</h4>\n      <p>\n        <n3-tooltip trigger=\"click\" effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\">\n          <n3-button>Click</n3-button>\n        </n3-tooltip>\n      </p>\n      <n3-tooltip effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"bottom\" trigger=\"focus\">\n        <n3-input placeholder=\"Focus\"></n3-input>\n      </n3-tooltip>\n    </div>\n<p></p><h2>参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>trigger</td>\n        <td><code>String</code>, 如:  <code>hover</code>\n        <code>focus</code>\n        <code>hover</code></td>\n        <td><code>click</code></td>\n        <td>触发方式</td>\n      </tr>\n      <tr>\n        <td>effect</td>\n        <td><code>String</code>, 如:  <code>scale</code> <code>fade</code></td>\n        <td><code>scale</code></td>\n        <td></td>\n      </tr><tr>\n        <td>content</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n        <td>placement</td>\n        <td><code>String</code>, 如:  <code>top</code>\n        <code>left</code>\n        <code>right</code>\n        <code>bottom</code></td>\n        <td></td>\n        <td>定位方式</td>\n      \n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 584 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(585);
+	module.exports = __webpack_require__(605);
 
 /***/ },
-/* 585 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(586)
+	module.exports = __webpack_require__(606)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(587)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(607)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-25.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-25.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-25.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-25.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-28.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-25.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-28.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 586 */
+/* 606 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -14472,25 +15558,25 @@
 	// </script>
 
 /***/ },
-/* 587 */
+/* 607 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"自动补全\">\n    <h1 class=\"page-header\"><a href=\"#自动补全\" class=\"anchor\">自动补全</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>\n        本地数据\n      </h4>\n      <n3-typeahead v-model=\"value\" :data=\"USstate\" placeholder=\" 发到\"></n3-typeahead>\n      <hr>\n      <h4>\n      异步获取\n      <n3-tooltip trigger=\"click\" content=\"The suggestions via a Google Map API, are you behind a FireWall?\" placement=\"top\">\n        <small style=\"cursor:pointer\">(not working?)</small>\n      </n3-tooltip>\n      </h4>\n      <n3-typeahead placeholder=\"CCCAddress, async via maps.googleapis.com\" :on-change=\"getResult\" :render=\"render\" :items=\"items\" :add-format=\"googleCallback\"></n3-typeahead>\n      <hr>\n      <h4>\n      内容模版\n      </h4>\n      <n3-typeahead :context=\"_self\" placeholder=\"Github users, async via api.github.com\" :on-change=\"getGitresults\" :items=\"gitItems\" :render=\"rendergit\" :add-format=\"githubCallback\"></n3-typeahead>\n    </div>\n<pre><code>&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n   &lt;tr&gt;\n      &lt;td&gt;query&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;绑定的值,需要&lt;code&gt;.sync&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;data&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;本地数组&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;limit&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;8&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;显示的条数&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;query变化的回调函数，用于异步请求&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;items&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;[]&lt;/td&gt;\n      &lt;td&gt; 列表数组，用于异步请求&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-hit&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;当选择一项触发的回调&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;render&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;渲染函数&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;dropdow-width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;220px&lt;/td&gt;\n      &lt;td&gt;下拉框宽度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;dropdown-height&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;300px&lt;/td&gt;\n      &lt;td&gt;下拉框最大高度&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n</code></pre>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 588 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(589);
+	module.exports = __webpack_require__(609);
 
 /***/ },
-/* 589 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(590)
+	module.exports = __webpack_require__(610)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(591)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(611)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -14508,7 +15594,7 @@
 	}
 
 /***/ },
-/* 590 */
+/* 610 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14566,43 +15652,43 @@
 	// </script>
 
 /***/ },
-/* 591 */
+/* 611 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"步骤条\">\n    <h1 class=\"page-header\"><a href=\"#步骤条\" class=\"anchor\">步骤条</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-step :labels=\"['第一步 我的文案比较长','第二步','第三步']\" :current=\"2\"></n3-step>\n      <hr>\n       <h4>前台步骤条</h4>\n      <n3-step round=\"\" :labels=\"['第一步 我的文案比较长','第二步','第三步']\" :current=\"2\"></n3-step>\n    </div>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>labels</td>\n          <td><code>Array</code></td>\n          <td><code></code></td>\n          <td>文案数组</td>\n        </tr>\n        <tr>\n          <td>current</td>\n          <td><code>Number</code></td>\n          <td><code></code></td>\n          <td>当前步数</td>\n        </tr>\n        <tr>\n          <td>round</td>\n          <td><code>Boolean</code></td>\n          <td><code></code></td>\n          <td>是否是前台步骤条（原形）</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 592 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(593);
+	module.exports = __webpack_require__(613);
 
 /***/ },
-/* 593 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(594)
+	module.exports = __webpack_require__(614)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(595)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(615)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-31.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-31.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-31.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-31.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-31.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 594 */
+/* 614 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14730,43 +15816,43 @@
 	// </script>
 
 /***/ },
-/* 595 */
+/* 615 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"滑块\">\n    <h1 class=\"page-header\"><a href=\"#滑块\" class=\"anchor\">滑块</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-slider v-model=\"value\" :on-change=\"change\"></n3-slider>\n<pre><code>  &lt;n3-slider v-model=&quot;value&quot; :on-change=&quot;change&quot; orientation=&quot;vertical&quot;&gt;&lt;/n3-slider&gt;\n\n  &lt;p&gt;滑块的值: {{value}}&lt;/p&gt; \n&lt;/div&gt;\n</code></pre>\n<p></p><h2>参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>value</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>滑块的值,需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>min</td>\n        <td><code>Number</code></td>\n        <td><code>0</code></td>\n        <td>最小值</td>\n      </tr>\n      <tr>\n        <td>max</td>\n        <td><code>Number</code></td>\n        <td><code>10</code></td>\n        <td>最大值</td>\n      </tr>\n      <tr>\n        <td>step</td>\n        <td><code>Number</code></td>\n        <td><code>1</code></td>\n        <td>单步增量</td>\n      </tr>\n      <tr>\n        <td>orientation</td>\n        <td><code>String</code></td>\n        <td><code>horizontal</code></td>\n        <td>horizontal(水平) vertical(垂直)</td>\n      </tr>\n      <tr>\n        <td>range</td>\n        <td><code>Boolean</code></td>\n        <td><code>false</code></td>\n        <td>是否范围选择</td>\n      </tr>\n      \n      <tr>\n        <td>tooltip</td>\n        <td><code>String</code></td>\n        <td><code>show</code></td>\n        <td>tooltip显示参数 'show' 'hide' 'always'</td>\n      </tr>\n      <tr>\n        <td>disabled</td>\n        <td><code>Boolean</code></td>\n        <td><code>true</code></td>\n        <td>是否禁用</td>\n      </tr>\n      <tr>\n        <td>formatter</td>\n        <td><code>Function</code></td>\n        <td><code></code></td>\n        <td>格式化tooltip显示内容</td>\n      </tr>\n       <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td><code>220px</code></td>\n        <td>水平显示的宽度</td>\n      </tr>\n       <tr>\n        <td>height</td>\n        <td><code>String</code></td>\n        <td><code>220px</code></td>\n        <td>垂直显示的高度</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td><code></code></td>\n        <td>滑块值变化时触发</td>\n      </tr>\n    </tbody>\n  </table>\n  <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n  </div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 596 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(597);
+	module.exports = __webpack_require__(617);
 
 /***/ },
-/* 597 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(598)
+	module.exports = __webpack_require__(618)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(599)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(619)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-30.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-31.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-30.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-30.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-30.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-31.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-31.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-30.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 598 */
+/* 618 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14841,25 +15927,25 @@
 	// </script>
 
 /***/ },
-/* 599 */
+/* 619 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"加载提示\">\n    <h1 class=\"page-header\"><a href=\"#加载提示\" class=\"anchor\">加载提示</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>大图标：<n3-loading size=\"lg\"></n3-loading></p>\n      <p>默认图标：<n3-loading></n3-loading></p>\n      <p>刷新图标：<n3-loading type=\"refresh\"></n3-loading></p>\n      <p>颜色：<n3-loading color=\"primary\"></n3-loading></p>\n    </div>\n    <div class=\"bs-example\">\n       <p>居中：<n3-loading center=\"\"></n3-loading></p>\n    </div>\n```html\n<p>大图标：<n3-loading size=\"lg\"></n3-loading></p>\n<p>默认图标：<n3-loading></n3-loading></p>\n<p>刷新图标：<n3-loading type=\"refresh\"></n3-loading></p>\n<p>颜色：<n3-loading color=\"primary\"></n3-loading></p>\n<p>居中：<n3-loading center=\"\"></n3-loading></p>\n```\n<p></p><h2>参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>size</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>图标大小`lg` `sm` `xs` 和默认</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>图标类型 `refresh`  和默认菊花</td>\n      </tr>\n      <tr>\n        <td>center</td>\n        <td><code>Boolean</code></td>\n        <td><code></code></td>\n        <td>居中</td>\n      </tr>\n      <tr>\n        <td>color</td>\n        <td><code>String</code></td>\n        <td><code></code></td>\n        <td>颜色</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 600 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(601);
+	module.exports = __webpack_require__(621);
 
 /***/ },
-/* 601 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(602)
+	module.exports = __webpack_require__(622)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(603)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(623)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -14877,7 +15963,7 @@
 	}
 
 /***/ },
-/* 602 */
+/* 622 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14980,25 +16066,25 @@
 	// </script>
 
 /***/ },
-/* 603 */
+/* 623 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"分页\">\n    <h1 class=\"page-header\"><a href=\"#分页\" class=\"anchor\">分页</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-page :total=\"100\" :on-change=\"pagechange\" :show-total=\"true\" :show-sizer=\"true\" :show-elevator=\"true\"></n3-page>\n      <hr>\n      <n3-page :total=\"100\" simple=\"\"></n3-page>\n    </div>\n```html\n      <n3-page :total=\"100\" :on-change=\"pagechange\" :show-total=\"true\" :show-sizer=\"true\" :show-elevator=\"true\"></n3-page>\n      <n3-page :total=\"100\" simple=\"\"></n3-page>\n```\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>total</td>\n          <td><code>Number</code></td>\n          <td><code></code></td>\n          <td>总条数</td>\n        </tr>\n        <tr>\n          <td>current</td>\n          <td><code>Number</code></td>\n          <td><code></code></td>\n          <td>当前页数,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>pagesize</td>\n          <td><code>Number</code></td>\n          <td><code></code></td>\n          <td>每页条数,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>pagesize-opts</td>\n          <td><code>Array</code></td>\n          <td><code>[10, 20, 30, 40]</code></td>\n          <td>每页条数选项</td>\n        </tr>\n        <tr>\n          <td>simple</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>简单分页</td>\n        </tr>\n        <tr>\n          <td>show-total</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>显示全部</td>\n        </tr>\n        <tr>\n          <td>show-elevator</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>显示跳转</td>\n        </tr>\n        <tr>\n          <td>show-sizer</td>\n          <td><code>Boolean</code></td>\n          <td><code>false</code></td>\n          <td>显示分页选项</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td><code></code></td>\n          <td>页数改变时的回调函数</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 604 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(605);
+	module.exports = __webpack_require__(625);
 
 /***/ },
-/* 605 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(606)
+	module.exports = __webpack_require__(626)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(607)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(627)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -15016,7 +16102,7 @@
 	}
 
 /***/ },
-/* 606 */
+/* 626 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -15361,76 +16447,76 @@
 	// </script>
 
 /***/ },
-/* 607 */
+/* 627 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"数据表格\">\n    <h1 class=\"page-header\"><a href=\"#数据表格\" class=\"anchor\">数据表格</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Table</h4>\n<pre><code>  &lt;n3-data-table\n    :selection=&quot;selection&quot;\n    :source=&quot;source&quot; \n    :columns=&quot;columns&quot; \n    :refresh=&quot;refresh&quot;\n  &gt;&lt;/n3-data-table&gt;\n  &lt;hr&gt;\n&lt;/div&gt;\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;merge-rule&lt;/td&gt;\n      &lt;td&gt;Object&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;{\n</code></pre>\n<p>name:{\n'小白': {rowspan: 2},\n'v白': {rowspan: 0}\n}\n}\n\n\n<tr>\n<td>columns</td>\n<td>Array</td>\n<td></td>\n<td>头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等</td>\n</tr>\n<tr>\n<td>selection</td>\n<td>Object</td>\n<td></td>\n<td>\n<code style=\"color:red\">使用getCheckboxProps来初始化状态</code>\n<code>javascript { checkRows:[], onSelect (record, checked, checkRows) {}, onSelectAll (checked, checkRows, changeRows) {}, getCheckboxProps(record){ if(record.key == 2){ return { checked: true, disabled:true } }else{ return { disabled:false } } } }</code>\n</td>\n</tr>\n<tr>\n<td>sort-column</td>\n<td>Object</td>\n<td></td>\n<td>默认全局排序字段</td>\n</tr>\n<tr>\n<td>source</td>\n<td>Array</td>\n<td></td>\n<td>表格数组</td>\n</tr>\n<tr>\n<td>page</td>\n<td>Boolean</td>\n<td>true</td>\n<td>是否分页</td>\n</tr>\n<tr>\n<td>search</td>\n<td>Boolean</td>\n<td>true</td>\n<td>是否支持搜索</td>\n</tr>\n<tr>\n<td>filter</td>\n<td>Boolean</td>\n<td>true</td>\n<td>是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器</td>\n</tr>\n<tr>\n<td>filter-list</td>\n<td>Array</td>\n<td></td>\n<td>自定义过滤器如:\n<pre><code class=\"language-javascript\">[{\ntitle:'姓名',\ndataIndex: 'name',\noptions:[{value:&quot;v白&quot;,label:&quot;v白&quot;},{value:&quot;t红&quot;,label:&quot;t红&quot;}],\nvalue:[],\n// multiple,search,extra\n}]</code></pre>\n</td>\n</tr>\n<tr>\n<td>select-col</td>\n<td>Boolean</td>\n<td>true</td>\n<td>是否支持选择显示列</td>\n</tr>\n<tr>\n<td>pagination</td>\n<td>Object</td>\n<td></td>\n<td>设置分页，例如\n<pre><code class=\"language-javascript\">{\ncurrent:5,\ntotal:10,\npagesize:10\n}</code></pre>\n</td>\n</tr>\n<tr>\n<td>loading</td>\n<td>Boolean</td>\n<td>false</td>\n<td>设置表格的加载中状态</td>\n</tr>\n<tr>\n<td>on-change</td>\n<td>Function</td>\n<td></td>\n<td>当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作，例如分页:\n<pre><code class=\"language-javascript\">\nfunction(pagination,query,sort,filter){\nvar data = {\nstart:(pagination.current - 1) * pagination.pagesize,\nlimit:pagination.pagesize\n},\nself = this;</code></pre></td></tr></p>\n<p>//根据需要添加其他参数\nthis.loading = true\n$.ajax({\nurl:'',\ndata:data,\nsuccess:function(result){\nself.loading = false\nself.source = result.list\nself.pagination.total = result.total\n}\n})\n}\n\n\n\n\n</p>\n  </div>\n</div></template>\n</section>";
 
 /***/ },
-/* 608 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(609);
+	module.exports = __webpack_require__(629);
 
 /***/ },
-/* 609 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(610)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(630)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-36.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-36.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-36.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 610 */
+/* 630 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n\t<div class=\"bs-docs-section\" id=\"面包屑\">\n\t\t<h1 class=\"page-header\"><a href=\"#面包屑\" class=\"anchor\">面包屑</a><span class=\"author\"> </span></h1>\n    \t<div class=\"bs-example\">\n    \t\t<n3-breadcrumb>\n    \t\t\t<n3-breadcrumb-item href=\"#\">Home</n3-breadcrumb-item>\n    \t\t\t<n3-breadcrumb-item href=\"#\">Library</n3-breadcrumb-item>\n    \t\t\t<n3-breadcrumb-item active=\"\">Data</n3-breadcrumb-item>\n    \t\t</n3-breadcrumb>\n    \t</div>\n```html\n<n3-breadcrumb>\n    <n3-breadcrumb-item href=\"#\">Home</n3-breadcrumb-item>\n    <n3-breadcrumb-item href=\"#\">Library</n3-breadcrumb-item>\n    <n3-breadcrumb-item active=\"\">Data</n3-breadcrumb-item>\n</n3-breadcrumb>\n```\n\t</div>\n</template>\n</section>";
 
 /***/ },
-/* 611 */
+/* 631 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(612);
+	module.exports = __webpack_require__(632);
 
 /***/ },
-/* 612 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(613)
+	module.exports = __webpack_require__(633)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(614)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(634)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-38.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-38.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-38.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-38.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-36.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-38.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-36.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 613 */
+/* 633 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -15614,43 +16700,43 @@
 	// </script>
 
 /***/ },
-/* 614 */
+/* 634 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"自定义输入\">\n    <h1 class=\"page-header\"><a href=\"#自定义输入\" class=\"anchor\">自定义输入</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n        <n3-multiple-input :on-focus=\"focus\" v-model=\"a.list\" :format=\"format\" :on-inputchange=\"getResult\" :render=\"render\" :items=\"items\"></n3-multiple-input>\n    </div>\n    {{a.list}}\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">new</span> Vue({\n  <span class=\"hljs-attr\">data</span>:{\n    <span class=\"hljs-attr\">list</span>:[{\n      <span class=\"hljs-attr\">value</span>:<span class=\"hljs-string\">'tag1'</span>,\n      <span class=\"hljs-attr\">label</span>:<span class=\"hljs-string\">'tag1'</span>,\n    },{\n      <span class=\"hljs-attr\">value</span>:<span class=\"hljs-string\">'tag2'</span>,\n      <span class=\"hljs-attr\">label</span>:<span class=\"hljs-string\">'tag2'</span>,\n    },{\n      <span class=\"hljs-attr\">value</span>:<span class=\"hljs-string\">'tag3'</span>,\n      <span class=\"hljs-attr\">label</span>:<span class=\"hljs-string\">'tag3'</span>,\n    }]\n  },\n  <span class=\"hljs-attr\">methods</span>:{\n    render (item) {\n      <span class=\"hljs-keyword\">return</span> item.formatted_address\n    },\n    getResult (query) {\n      <span class=\"hljs-keyword\">let</span> self = <span class=\"hljs-keyword\">this</span>\n      $.ajax({\n        <span class=\"hljs-attr\">url</span>: <span class=\"hljs-string\">'https://maps.googleapis.com/maps/api/geocode/json?address='</span> + query,\n        success (ret) {\n          self.items = ret.results\n        }\n      })\n    },\n    del (item, index) {\n      <span class=\"hljs-keyword\">this</span>.list.splice(index, <span class=\"hljs-number\">1</span>)\n    },\n    format (item, index) {\n      <span class=\"hljs-keyword\">let</span> content = <span class=\"hljs-keyword\">typeof</span> item === <span class=\"hljs-string\">'string'</span> ? item : item.formatted_address\n      <span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">`&lt;label class=\"m-tag\" \"&gt;<span class=\"hljs-subst\">${content}</span>&lt;/label&gt;`</span>\n    }\n  }\n})\n</code></pre>\n<p></p><h2>参数</h2><p></p>\n  <p>自动补全的参数请参考<a href=\"./component.html#n3TypeaheadDocs\" target=\"_blank\">自动补全组件</a></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>value</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td>需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>position</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td>输入框所在位置,需要<code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>format</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>格式化显示函数</td>\n      </tr>\n      <tr>\n        <td>width</td>\n        <td><code>String</code></td>\n        <td>220px</td>\n        <td>组件宽度</td>\n      </tr>\n      <tr>\n        <td>height</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>组件高度</td>\n      </tr>\n      <tr>\n        <td>input-width</td>\n        <td><code>String</code></td>\n        <td>50px</td>\n        <td>输入框宽度</td>\n      </tr>\n      <tr>\n        <td>dropdown-width</td>\n        <td><code>String</code></td>\n        <td>220px</td>\n        <td>下拉框宽度</td>\n      </tr>\n      <tr>\n        <td>dropdown-height</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>下拉框最大高度</td>\n      </tr>\n      <tr>\n        <td>add-format</td>\n        <td><code>Function</code></td>\n        <td><code>function(text){return {\n        value:text,\n        label:text\n        }}</code></td>\n        <td>通过输入添加的处理函数</td>\n      </tr>\n      <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>value变化的回调函数</td>\n      </tr>\n      <tr>\n        <td>position-move</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>是否允许用户改变输入框的位置</td>\n      </tr>\n      <tr>\n        <td>placeholder</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n  <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 615 */
+/* 635 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(616);
+	module.exports = __webpack_require__(636);
 
 /***/ },
-/* 616 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(617)
+	module.exports = __webpack_require__(637)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(618)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(638)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-34.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-34.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-34.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-34.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-35.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-34.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-35.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 617 */
+/* 637 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -15856,25 +16942,25 @@
 	// </script>
 
 /***/ },
-/* 618 */
+/* 638 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"树形视图\">\n    <h1 class=\"page-header\">\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <n3-tree :data=\"files1\" :expand-all=\"true\"></n3-tree>\n    </div>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>data</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>树形数据<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>selected-key</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>选中节点的value</td>\n        </tr>\n        <tr>\n          <td>checkable</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>是否支持checkbox可选</td>\n        </tr>\n        <tr>\n          <td>checked-keys</td>\n          <td><code>Array</code></td>\n          <td>[]</td>\n          <td>选中的节点的value<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>treeIcon</td>\n          <td><code>String</code></td>\n          <td>angle-right</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>tree-open-icon</td>\n          <td><code>String</code></td>\n          <td>angle-down</td>\n          <td></td>\n        </tr>\n        <tr>\n          <td>icon</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>图标</td>\n        </tr>\n        <tr>\n          <td>load-data</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>异步加载函数</td>\n        </tr>\n        <tr>\n          <td>on-select</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>选择触发函数</td>\n        </tr>\n        <tr>\n          <td>on-expand</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>展开触发函数</td>\n        </tr>\n        <tr>\n          <td>expand-all</td>\n          <td><code>Boolean</code></td>\n          <td>false</td>\n          <td>全部展开（异步加载时不支持全部展开）</td>\n        </tr>\n        <tr>\n          <td>sort</td>\n          <td><code>Boolean</code></td>\n          <td>true</td>\n          <td>有子节点的排在没有的前面</td>\n        </tr>\n        <tr>\n          <td>on-check</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>checkbox选中触发函数</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</template>\n</section>";
 
 /***/ },
-/* 619 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(620);
+	module.exports = __webpack_require__(640);
 
 /***/ },
-/* 620 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(621)
+	module.exports = __webpack_require__(641)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(622)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(642)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -15892,7 +16978,7 @@
 	}
 
 /***/ },
-/* 621 */
+/* 641 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -15939,43 +17025,43 @@
 	// </script>
 
 /***/ },
-/* 622 */
+/* 642 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"评分\">\n    <h1 class=\"page-header\"><a href=\"#评分\" class=\"anchor\">评分</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n<pre><code>&lt;n3-rate v-model=&quot;value&quot; :allow-half=&quot;true&quot;&gt;&lt;/n3-rate&gt;\n\n&lt;/div&gt;\n\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n   \n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n</section>";
 
 /***/ },
-/* 623 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(624);
+	module.exports = __webpack_require__(644);
 
 /***/ },
-/* 624 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(625)
+	module.exports = __webpack_require__(645)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(626)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(646)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-35.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-38.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-35.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-38.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 625 */
+/* 645 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16109,25 +17195,25 @@
 	// </script>
 
 /***/ },
-/* 626 */
+/* 646 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"文件上传\">\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>点击</h4>\n      <n3-uploader url=\"\"></n3-uploader>\n      <hr>\n       <h4>拖拽</h4>\n      <n3-uploader type=\"drag\"></n3-uploader>\n    </div>\n<p></p><h2>参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>name</td>\n        <td><code>String</code></td>\n        <td>files</td>\n        <td>文件对象的name</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\n        <td>click</td>\n        <td>拖拽或者点击</td>\n      </tr>\n      <tr>\n        <td>accept</td>\n        <td><code>String</code></td>\n        <td>'' (全支持)</td>\n        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>\n      </tr>\n      <tr>\n        <td>url</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>上传地址</td>\n      </tr>\n      <tr>\n        <td>multiple</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>支持多文件上传</td>\n      </tr>\n      <tr>\n        <td>drag-width</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>拖拽框宽度</td>\n      </tr>\n      <tr>\n        <td>drag-height</td>\n        <td><code>String</code></td>\n        <td>200px</td>\n        <td>拖拽框高度</td>\n      </tr>\n      <tr>\n        <td>on-error</td>\n        <td><code>Function</code></td>\n        <td><pre><code class=\"language-javascript\">\nfunction (data) {\n  this.n3Toast({\n    text: data.message\n  })\n  console.log(data.file)\n} </code></pre></td>\n        <td>出错时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-success</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>成功时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-delete</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>文件删除时触发函数，举个栗子：<pre><code class=\"language-javascript\">\nfunction (data) {\n  if (data.response.success) {\n    this.n3Toast({\n      text: data.file.name\n    })\n  }\n}</code></pre></td>\n      </tr>\n      <tr>\n        <td>on-finish</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>所有上传任务结束时触发函数，举个栗子：<pre><code class=\"language-javascript\">\nfunction () {\n  this.render()\n}</code></pre></td>\n      </tr>\n      <tr>\n        <td>max-length</td>\n        <td><code>Number</code></td>\n        <td>10</td>\n        <td>上传文件个数限制</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 627 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(628);
+	module.exports = __webpack_require__(648);
 
 /***/ },
-/* 628 */
+/* 648 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(629)
+	module.exports = __webpack_require__(649)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(630)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(650)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -16145,7 +17231,7 @@
 	}
 
 /***/ },
-/* 629 */
+/* 649 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16555,43 +17641,43 @@
 	// </script>
 
 /***/ },
-/* 630 */
+/* 650 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n    <div class=\"bs-docs-section\" id=\"表单验证\">\n        <h1 class=\"page-header\"><a href=\"#表单验证\" class=\"anchor\">表单验证</a><span class=\"author\"> </span></h1>\n        <div class=\"bs-example\">\n          <n3-form ref=\"form\">\n                <n3-form-item need=\"\" label=\"姓名\" :label-col=\"3\">\n                <n3-input name=\"name\" v-model=\"model.name\" :rules=\"[{type:'required'}]\" :custom-validate=\"nameValidate\">\n                </n3-input>\n                </n3-form-item>\n<pre><code>            &lt;n3-form-item\n                need\n                label=&quot;年龄&quot;\n                :label-col=&quot;3&quot;&gt;\n            &lt;n3-input-number\n                name=&quot;age&quot;\n                v-model=&quot;model.age&quot;\n                :rules=&quot;[{type:'number'},{type:'required'}]&quot;&gt;\n            &lt;/n3-input-number&gt;\n            &lt;/n3-input&gt;\n            &lt;/n3-form-item&gt;\n            &lt;n3-form-item\n                need\n                label=&quot;地址&quot;\n                :label-col=&quot;3&quot;&gt;\n            &lt;n3-cascader\n                name=&quot;address&quot;\n                :options=&quot;options&quot;\n                v-model=&quot;model.address&quot;\n                :rules=&quot;[{type:'required'}]&quot;&gt;\n            &lt;/n3-cascader&gt;\n            &lt;/n3-form-item&gt;\n            &lt;n3-form-item\n                need\n                label=&quot;生日&quot;\n                :label-col=&quot;3&quot;&gt;\n            &lt;n3-datepicker\n                name=&quot;birthday&quot;\n                v-model=&quot;model.birthday&quot;\n                :rules=&quot;[{type:'required'}]&quot;&gt;\n            &lt;/n3-datepicker&gt;\n            &lt;/n3-form-item&gt;\n            &lt;n3-form-item\n                need\n                label=&quot;学校&quot;\n                :label-col=&quot;3&quot;&gt;\n            &lt;n3-typeahead\n                name=&quot;学校&quot;\n                v-model = &quot;model.school&quot;\n                :data=&quot;schoolData&quot;\n                :rules=&quot;[{type:'required'}]&quot;&gt;\n            &lt;/n3-typeahead&gt;\n            &lt;/n3-form-item&gt;\n            &lt;n3-form-item\n                need\n                label=&quot;爱好&quot;\n                :label-col=&quot;3&quot;&gt;\n            &lt;n3-checkbox-group\n                name=&quot;hobby&quot;\n                v-model = &quot;model.hobby&quot;\n                :rules=&quot;[{type:'required'}]&quot;&gt;\n                &lt;n3-checkbox label=&quot;0&quot;&gt;看书&lt;/n3-checkbox&gt;\n                &lt;n3-checkbox label=&quot;1&quot;&gt;运动&lt;/n3-checkbox&gt;\n                &lt;n3-checkbox value=&quot;2&quot;&gt;旅行&lt;/n3-checkbox&gt;\n            &lt;/n3-checkbox-group&gt;\n            &lt;/n3-form-item&gt;\n\n            &lt;n3-form-item\n                need\n                label=&quot;性别&quot;\n                :label-col=&quot;3&quot;&gt;\n            &lt;n3-radio-group\n                name=&quot;sex&quot;\n                v-model = &quot;model.sex&quot;\n                :rules=&quot;[{type:'required'}]&quot;&gt;\n                &lt;n3-radio label=&quot;0&quot;&gt;男&lt;/n3-radio&gt;\n                &lt;n3-radio label=&quot;1&quot;&gt;女&lt;/n3-radio&gt;\n            &lt;/n3-radio-group&gt;\n            &lt;/n3-form-item&gt;\n\n            &lt;n3-form-item\n                need\n                label=&quot;专业&quot;\n                :label-col=&quot;3&quot;&gt;\n            &lt;n3-select\n                name=&quot;sex&quot;\n                :options='profession'\n                v-model = &quot;model.profession&quot;\n                :rules=&quot;[{type:'required'}]&quot;&gt;\n            &lt;/n3-select&gt;\n            &lt;/n3-form-item&gt;\n\n            &lt;n3-form-item\n                need\n                label=&quot;级别&quot;\n                :label-col=&quot;3&quot;&gt;\n              &lt;n3-slider\n                  name=&quot;level&quot;\n                  v-model=&quot;model.level&quot;\n                  :rules=&quot;[{type:'required'}]&quot;&gt;\n              &lt;/n3-slider&gt;\n            &lt;/n3-form-item&gt;\n\n            &lt;n3-form-item\n                need\n                label=&quot;开启状态&quot;\n                :label-col=&quot;3&quot;&gt;\n              &lt;n3-switch\n                  name=&quot;state&quot;\n                  v-model = &quot;model.state&quot;\n                  :rules=&quot;[{type:'required'}]&quot;&gt;\n              &lt;/n3-switch&gt;\n            &lt;/n3-form-item&gt;\n            &lt;n3-form-item\n                need\n                label=&quot;喜欢的明星&quot;\n                :label-col=&quot;3&quot;&gt;\n              &lt;n3-multiple-input\n                  name=&quot;star&quot;\n                  v-model = &quot;model.star&quot;\n                  :rules=&quot;[{type:'required'}]&quot;&gt;\n              &lt;/n3-multiple-input&gt;\n            &lt;/n3-form-item&gt;\n            &lt;n3-form-item\n                need\n                label=&quot;想说的话&quot;\n                :label-col=&quot;3&quot;&gt;\n              &lt;n3-textarea\n                  name=&quot;suggestion&quot;\n                  v-model = &quot;model.suggestion&quot;\n                  :rules=&quot;[{type:'required'}]&quot;&gt;\n              &lt;/n3-textarea&gt;\n            &lt;/n3-form-item&gt;\n\n             &lt;n3-form-item&gt;\n                 &lt;n3-button type=&quot;primary&quot; @click.native=&quot;submit&quot; &gt;提交&lt;/n3-button&gt;\n            &lt;/n3-form-item&gt;\n        &lt;/n3-form&gt;\n\n        &lt;h3&gt;inline&lt;/h3&gt;  \n\n      &lt;h2&gt;n3-from参数&lt;/h2&gt;\n      &lt;table class=&quot;table table-bordered&quot;&gt;\n        &lt;thead&gt;\n          &lt;tr&gt;\n            &lt;th&gt;参数名&lt;/th&gt;\n            &lt;th&gt;类型&lt;/th&gt;\n            &lt;th&gt;默认值&lt;/th&gt;\n            &lt;th&gt;说明&lt;/th&gt;\n          &lt;/tr&gt;\n        &lt;/thead&gt;\n        &lt;tbody&gt;\n          &lt;tr&gt;\n            &lt;td&gt;type&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;String&lt;/code&gt; 如:  &lt;code&gt;horizontal&lt;/code&gt;&lt;code&gt;inline&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;horizontal&lt;/td&gt;\n            &lt;td&gt;布局方式&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;validate&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;false&lt;/td&gt;\n            &lt;td&gt;是否打开验证&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;result&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Object&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;验证结果&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;on-validate-change&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;验证结果变化&lt;/td&gt;\n          &lt;/tr&gt;\n        &lt;/tbody&gt;\n      &lt;/table&gt;\n      &lt;p&gt;验证建议直接调用组件的&lt;code style=&quot;color:red&quot;&gt;validateFields&lt;/code&gt; 方法，具体可查看样例&lt;/p&gt;\n\n      &lt;h2&gt;n3-from-item参数&lt;/h2&gt;\n      &lt;table class=&quot;table table-bordered&quot;&gt;\n        &lt;thead&gt;\n          &lt;tr&gt;\n            &lt;th&gt;参数名&lt;/th&gt;\n            &lt;th&gt;类型&lt;/th&gt;\n            &lt;th&gt;默认值&lt;/th&gt;\n            &lt;th&gt;说明&lt;/th&gt;\n          &lt;/tr&gt;\n        &lt;/thead&gt;\n        &lt;tbody&gt;\n          &lt;tr&gt;\n            &lt;td&gt;label&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;label-col&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;2&lt;/td&gt;\n            &lt;td&gt;label所占栅格数&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;wrap-col&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;12&lt;/td&gt;\n            &lt;td&gt;item所占栅格数&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;form-col&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;表单元素所占栅格数&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;need&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;false&lt;/td&gt;\n            &lt;td&gt;红点标记&lt;/td&gt;\n          &lt;/tr&gt;\n        &lt;/tbody&gt;\n      &lt;/table&gt;\n\n\n      &lt;h2&gt;待验证组件参数&lt;/h2&gt;\n      &lt;table class=&quot;table table-bordered&quot;&gt;\n        &lt;thead&gt;\n          &lt;tr&gt;\n            &lt;th&gt;参数名&lt;/th&gt;\n            &lt;th&gt;类型&lt;/th&gt;\n            &lt;th&gt;默认值&lt;/th&gt;\n            &lt;th&gt;说明&lt;/th&gt;\n          &lt;/tr&gt;\n        &lt;/thead&gt;\n        &lt;tbody&gt;\n          &lt;tr&gt;\n            &lt;td&gt;name&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;标示输入项，与结果内的值对应&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;readonly&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;只读，无法输入，级联，时间日期等组件默认无法手动输入&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;disabled&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;禁止改变值&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;width&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;220px&lt;/td&gt;\n            &lt;td&gt;宽度&lt;/td&gt;\n          &lt;/tr&gt;\n         &lt;!--  &lt;tr&gt;\n            &lt;td&gt;validate&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;false&lt;/td&gt;\n            &lt;td&gt;是否打开检验&lt;/td&gt;\n          &lt;/tr&gt; --&gt;\n          &lt;tr&gt;\n            &lt;td&gt;placeholder&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;custom－validate&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;自定义检验器\n            &lt;code&gt;\n            function(value){\n              if(value){\n                return {\n                  validStatus: 'success'\n                }\n              }else{\n                return {\n                  validStatus: 'error',\n                  tips: '出错啦'\n                }\n              }\n            }\n            &lt;/code&gt;\n            &lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;rules&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;[]&lt;/td&gt;\n            &lt;td&gt;规则数组 ,如\n              &lt;code&gt;\n              [{type: 'required' }, {type: 'maxlength=6' }, {type: 'minlength=3' }, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]&lt;/code&gt;\n            &lt;/td&gt;\n          &lt;/tr&gt;\n          &lt;tr&gt;\n            &lt;td&gt;hasFeedback&lt;/td&gt;\n            &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n            &lt;td&gt;&lt;/td&gt;\n            &lt;td&gt;是否显示状态icon&lt;/td&gt;\n          &lt;/tr&gt;\n        &lt;/tbody&gt;\n      &lt;/table&gt;\n    &lt;/div&gt;\n&lt;/div&gt;\n</code></pre>\n</n3-form></div></div></template>\n\n</section>";
 
 /***/ },
-/* 631 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(632);
+	module.exports = __webpack_require__(652);
 
 /***/ },
-/* 632 */
+/* 652 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(633)
+	module.exports = __webpack_require__(653)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(634)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(654)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-41.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-41.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-41.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-41.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-39.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-41.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-39.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 633 */
+/* 653 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16741,43 +17827,43 @@
 	// </script>
 
 /***/ },
-/* 634 */
+/* 654 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"多选框\">\n    <h1 class=\"page-header\"><a href=\"#多选框\" class=\"anchor\">多选框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n<pre><code>  &lt;h4&gt;Checkbox&lt;/h4&gt;\n  &lt;n3-checkbox  label=&quot;single&quot;&gt;single&lt;/n3-checkbox&gt;\n  &lt;br&gt;\n  &lt;br&gt;\n  &lt;n3-checkbox-group v-model=&quot;checkboxValue&quot; &gt;\n    &lt;n3-checkbox-btn label=&quot;left&quot; disabled&gt;Left&lt;/n3-checkbox-btn&gt;\n    &lt;n3-checkbox-btn label=&quot;middle&quot; checked&gt;Middle&lt;/n3-checkbox-btn&gt;\n    &lt;n3-checkbox-btn label=&quot;right&quot;&gt;Right&lt;/n3-checkbox-btn&gt;\n  &lt;/n3-checkbox-group&gt;\n  &lt;br&gt;\n  &lt;n3-checkbox-group v-model=&quot;checkboxValue&quot;&gt;\n    &lt;n3-checkbox label=&quot;left&quot; disabled&gt;Left&lt;/n3-checkbox&gt;\n    &lt;n3-checkbox label=&quot;middle&quot; checked&gt;Middle&lt;/n3-checkbox&gt;\n    &lt;n3-checkbox label=&quot;right&quot;&gt;Right&lt;/n3-checkbox&gt;\n  &lt;/n3-checkbox-group&gt;\n\n  &lt;p&gt;\n    &lt;pre&gt;\n</code></pre>\n<p>Checkbox value: {{checkboxValuec}}\n\n</p><p></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">:checked.sync</span>=<span class=\"hljs-string\">\"single\"</span>&gt;</span>single<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-group</span> <span class=\"hljs-attr\">:value.sync</span>=<span class=\"hljs-string\">\"checkboxValue\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-btn</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>Left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-btn</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-btn</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"middle\"</span> <span class=\"hljs-attr\">checked</span>&gt;</span>Middle<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-btn</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-btn</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>Right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-btn</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-group</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-group</span> <span class=\"hljs-attr\">:value.sync</span>=<span class=\"hljs-string\">\"checkboxValue\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>Left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"middle\"</span> <span class=\"hljs-attr\">checked</span>&gt;</span>Middle<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>Right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-group</span>&gt;</span>\n</code></pre>\n<pre><code>&lt;br&gt;\n&lt;h2&gt;group&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;options&lt;/td&gt;\n      &lt;td&gt;Array&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;[{value:'a',label:'a'}]&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;String&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;checkbox,button&lt;/code&gt; 使用options时起作用&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;Function&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;值变化时调用&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n\n\n&lt;h2&gt;checkbox&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;String,Number&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;disabled&lt;/td&gt;\n      &lt;td&gt;Boolean&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;checked&lt;/td&gt;\n      &lt;td&gt;Boolean&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否选中 &lt;code&gt;.sync&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;Function&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;值改变回调&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n&lt;p&gt;&lt;code&gt;n3-checkbox-btn&lt;/code&gt;不建议单独使用&lt;/p&gt;\n</code></pre>\n  </div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 635 */
+/* 655 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(636);
+	module.exports = __webpack_require__(656);
 
 /***/ },
-/* 636 */
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(637)
+	module.exports = __webpack_require__(657)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(638)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(658)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-42.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-41.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-42.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-41.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 637 */
+/* 657 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -16902,43 +17988,43 @@
 	// </script>
 
 /***/ },
-/* 638 */
+/* 658 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"单选框\">\n    <h1 class=\"page-header\"><a href=\"#单选框\" class=\"anchor\">单选框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Radio</h4>\n      <n3-radio-group v-model=\"radioValue\" type=\"primary\">\n        <n3-radio-btn label=\"left\" disabled>Left</n3-radio-btn>\n        <n3-radio-btn label=\"middle\" checked>Middle</n3-radio-btn>\n        <n3-radio-btn label=\"right\">Right</n3-radio-btn>\n      </n3-radio-group>\n<pre><code>  &lt;n3-radio-group v-model=&quot;radioValue&quot; &gt;\n    &lt;n3-radio label=&quot;left&quot; disabled&gt;Left&lt;/n3-radio&gt;\n    &lt;n3-radio label=&quot;middle&quot; checked&gt;Middle&lt;/n3-radio&gt;\n    &lt;n3-radio label=&quot;right&quot;&gt;Right&lt;/n3-radio&gt;\n  &lt;/n3-radio-group&gt;\n  &lt;p&gt;\n    &lt;pre&gt;\n</code></pre>\n<p>Radio value: {{radioValue}}\n\n</p>\n</div><p></p>\n<pre><code>&lt;br&gt;\n&lt;h2&gt;group&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String,Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;options&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Array&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;[{value:'a',label:'a'}]&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;radio,button&lt;/code&gt; 使用options时起作用&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;值变化时调用&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;其他表单相关参数，请移步 &lt;a href=&quot;#n3FormDocs&quot; &gt;表单验证&lt;/a&gt; 待验证组件参数&lt;/p&gt;\n\n&lt;h2&gt;radio&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;value&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;  &lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;disabled&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;checked&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否选中 &lt;code&gt;.sync&lt;/code&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-change&lt;/td&gt;\n      &lt;td&gt;Function&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;值改变回调&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
-/* 639 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(640);
+	module.exports = __webpack_require__(660);
 
 /***/ },
-/* 640 */
+/* 660 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(641)
+	module.exports = __webpack_require__(661)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(642)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(662)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-39.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-39.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-39.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-39.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-42.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-39.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-42.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
 	}
 
 /***/ },
-/* 641 */
+/* 661 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -16997,26 +18083,26 @@
 	// </script>
 
 /***/ },
-/* 642 */
+/* 662 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"卡片\">\n    <h1 class=\"page-header\"><a href=\"#卡片\" class=\"anchor\">卡片</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-card style=\"padding:20px\">\n        <p>xxxxx</p>\n        <p>xxxxx</p>\n        <p>xxxxx</p>\n      </n3-card> \n<pre><code>&lt;/div&gt;\n</code></pre>\n<pre><code class=\"language-html\">      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-card</span> <span class=\"hljs-attr\">style</span>=<span class=\"hljs-string\">\"padding:20px\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-card</span>&gt;</span> \n</code></pre>\n<pre><code>&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;hover&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;是否hover效果&lt;/td&gt;\n    &lt;/tr&gt;\n    \n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n</section>";
 
 /***/ },
-/* 643 */
+/* 663 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(644);
+	module.exports = __webpack_require__(664);
 
 /***/ },
-/* 644 */
+/* 664 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(645)
-	module.exports = __webpack_require__(647)
+	__webpack_require__(665)
+	module.exports = __webpack_require__(667)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(648)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(668)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -17034,13 +18120,13 @@
 	}
 
 /***/ },
-/* 645 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(646);
+	var content = __webpack_require__(666);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(462)(content, {});
@@ -17060,7 +18146,7 @@
 	}
 
 /***/ },
-/* 646 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(461)();
@@ -17074,7 +18160,7 @@
 
 
 /***/ },
-/* 647 */
+/* 667 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17083,41 +18169,34 @@
 	  value: true
 	});
 	// <template><section><template>
-	//   <div class="bs-docs-section" id="动画">
-	//     <h1 class="page-header">
-	//       <a href="#动画" class="anchor">动画</a><span class="author"> </span>
-	//     </h1>
-	//     <div class="bs-example">
-	//         <n3-button @click.native="show1=!show1">fadeLeft</n3-button>
-	//         <transition name="fadeLeft">
-	//           <div v-if="show1" class="content">
-	//               <h4>Title</h4>
-	//               <p>...</p>
-	//               <p>...</p>
-	//               <p>...</p>
-	//           </div>
-	//         </transition>
-	// <pre><code>    &lt;br&gt;
-	//     &lt;br&gt;
-	//      &lt;n3-button  @click.native=&quot;show2=!show2&quot;&gt;fadeDown&lt;/n3-button&gt;
-	//       &lt;transition name=&quot;fadeDown&quot;&gt;
-	//         &lt;div v-if=&quot;show2&quot; class=&quot;content&quot;&gt;
-	//         &lt;h4&gt;Title&lt;/h4&gt;
-	//         &lt;p&gt;...&lt;/p&gt;
-	//         &lt;p&gt;...&lt;/p&gt;
-	//         &lt;p&gt;...&lt;/p&gt;
-	//       &lt;/div&gt;
-	//       &lt;/transition&gt;
-	//     &lt;br&gt;
-	//     &lt;br&gt;
-	//     &lt;n3-button  @click.native=&quot;show3=!show3&quot;&gt;bounce&lt;/n3-button&gt;
-	//     &lt;transition name=&quot;bounce&quot;&gt;
-	//       &lt;div v-if=&quot;show3&quot; style=&quot;width:100px&quot;&gt;
-	//           &lt;p&gt;提示:作用于尺寸比较小的元素&lt;/p&gt;
-	//       &lt;/div&gt;
-	//     &lt;/transition&gt;
-	// &lt;/div&gt;
-	// </code></pre>
+	// <h2>动画</h2>
+	// <div class="bs-docs-section">
+	// <div class="bs-example">
+	//   <n3-button @click.native="show1=!show1">fadeLeft</n3-button>
+	//   <transition name="fadeLeft">
+	//     <div v-if="show1" class="content">
+	//         <h4>Title</h4>
+	//         <p>...</p>
+	//         <p>...</p>
+	//         <p>...</p>
+	//     </div>
+	//   </transition>
+	// <p><n3-button @click.native="show2=!show2">fadeDown</n3-button>
+	// <transition name="fadeDown">
+	// <div v-if="show2" class="content">
+	// <h4>Title</h4>
+	// <p>...</p>
+	// <p>...</p>
+	// <p>...</p>
+	// </div>
+	// </transition></p>
+	// <p><n3-button @click.native="show3=!show3">bounce</n3-button>
+	// <transition name="bounce">
+	// <div v-if="show3" style="width:100px">
+	// <p>提示:作用于尺寸比较小的元素</p>
+	// </div>
+	// </transition></p>
+	// </div>
 	// <pre><code class="language-html"><span class="hljs-comment">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>
 	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-button</span>  <span class="hljs-attr">@click.native</span>=<span class="hljs-string">"show1=!show1"</span>&gt;</span>fadeLeft<span class="hljs-tag">&lt;/<span class="hljs-name">n3-button</span>&gt;</span>
 	// <span class="hljs-tag">&lt;<span class="hljs-name">transition</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"fadeLeft"</span>&gt;</span>
@@ -17129,34 +18208,27 @@
 	//   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	// <span class="hljs-tag">&lt;/<span class="hljs-name">transition</span>&gt;</span>
 	// </code></pre>
-	// <pre><code>&lt;h2&gt;参数&lt;/h2&gt;
-	// &lt;table class=&quot;table table-bordered&quot;&gt;
-	//   &lt;thead&gt;
-	//     &lt;tr&gt;
-	//       &lt;th&gt;参数名&lt;/th&gt;
-	//       &lt;th&gt;类型&lt;/th&gt;
-	//       &lt;th&gt;默认值&lt;/th&gt;
-	//       &lt;th&gt;说明&lt;/th&gt;
-	//     &lt;/tr&gt;
-	//   &lt;/thead&gt;
-	//   &lt;tbody&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;transition&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;fade&lt;/code&gt; 
-	//           &lt;code&gt;fadeLeft&lt;/code&gt;
-	//           &lt;code&gt;fadeDown&lt;/code&gt;
-	//           &lt;code&gt;bounce&lt;/code&gt;
-	//           &lt;code&gt;collapse&lt;/code&gt;
-	//           &lt;code&gt;scale&lt;/code&gt;
-	//       &lt;/td&gt;
-	//     &lt;/tr&gt;
-	//   &lt;/tbody&gt;
-	// &lt;/table&gt;
-	// </code></pre>
-	//   </div>
-	// </div></template>
+	// <h3>参数</h3>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>参数</th>
+	// <th>类型</th>
+	// <th>默认值</th>
+	// <th>说明</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>name</td>
+	// <td>String</td>
+	// <td>-</td>
+	// <td><code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code></td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// </div>
+	// </template>
 	
 	
 	// </section></template>
@@ -17180,13 +18252,13 @@
 	// </script>
 
 /***/ },
-/* 648 */
+/* 668 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-cdcc153a=\"\"><template _v-cdcc153a=\"\">\n  <div class=\"bs-docs-section\" id=\"动画\" _v-cdcc153a=\"\">\n    <h1 class=\"page-header\" _v-cdcc153a=\"\">\n      <a href=\"#动画\" class=\"anchor\" _v-cdcc153a=\"\">动画</a><span class=\"author\" _v-cdcc153a=\"\"> </span>\n    </h1>\n    <div class=\"bs-example\" _v-cdcc153a=\"\">\n        <n3-button @click.native=\"show1=!show1\" _v-cdcc153a=\"\">fadeLeft</n3-button>\n        <transition name=\"fadeLeft\" _v-cdcc153a=\"\">\n          <div v-if=\"show1\" class=\"content\" _v-cdcc153a=\"\">\n              <h4 _v-cdcc153a=\"\">Title</h4>\n              <p _v-cdcc153a=\"\">...</p>\n              <p _v-cdcc153a=\"\">...</p>\n              <p _v-cdcc153a=\"\">...</p>\n          </div>\n        </transition>\n<pre _v-cdcc153a=\"\"><code _v-cdcc153a=\"\">    &lt;br&gt;\n    &lt;br&gt;\n     &lt;n3-button  @click.native=\"show2=!show2\"&gt;fadeDown&lt;/n3-button&gt;\n      &lt;transition name=\"fadeDown\"&gt;\n        &lt;div v-if=\"show2\" class=\"content\"&gt;\n        &lt;h4&gt;Title&lt;/h4&gt;\n        &lt;p&gt;...&lt;/p&gt;\n        &lt;p&gt;...&lt;/p&gt;\n        &lt;p&gt;...&lt;/p&gt;\n      &lt;/div&gt;\n      &lt;/transition&gt;\n    &lt;br&gt;\n    &lt;br&gt;\n    &lt;n3-button  @click.native=\"show3=!show3\"&gt;bounce&lt;/n3-button&gt;\n    &lt;transition name=\"bounce\"&gt;\n      &lt;div v-if=\"show3\" style=\"width:100px\"&gt;\n          &lt;p&gt;提示:作用于尺寸比较小的元素&lt;/p&gt;\n      &lt;/div&gt;\n    &lt;/transition&gt;\n&lt;/div&gt;\n</code></pre>\n<pre _v-cdcc153a=\"\"><code class=\"language-html\" _v-cdcc153a=\"\"><span class=\"hljs-comment\" _v-cdcc153a=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-cdcc153a=\"\">@click.native</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"show1=!show1\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">transition</span> <span class=\"hljs-attr\" _v-cdcc153a=\"\">name</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">div</span> <span class=\"hljs-attr\" _v-cdcc153a=\"\">v-if</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"show1\"</span>  <span class=\"hljs-attr\" _v-cdcc153a=\"\">class</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">transition</span>&gt;</span>\n</code></pre>\n<pre _v-cdcc153a=\"\"><code _v-cdcc153a=\"\">&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;transition&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;fade&lt;/code&gt; \n          &lt;code&gt;fadeLeft&lt;/code&gt;\n          &lt;code&gt;fadeDown&lt;/code&gt;\n          &lt;code&gt;bounce&lt;/code&gt;\n          &lt;code&gt;collapse&lt;/code&gt;\n          &lt;code&gt;scale&lt;/code&gt;\n      &lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
+	module.exports = "<section _v-cdcc153a=\"\"><template _v-cdcc153a=\"\">\n<h2 _v-cdcc153a=\"\">动画</h2>\n<div class=\"bs-docs-section\" _v-cdcc153a=\"\">\n<div class=\"bs-example\" _v-cdcc153a=\"\">\n  <n3-button @click.native=\"show1=!show1\" _v-cdcc153a=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-cdcc153a=\"\">\n    <div v-if=\"show1\" class=\"content\" _v-cdcc153a=\"\">\n        <h4 _v-cdcc153a=\"\">Title</h4>\n        <p _v-cdcc153a=\"\">...</p>\n        <p _v-cdcc153a=\"\">...</p>\n        <p _v-cdcc153a=\"\">...</p>\n    </div>\n  </transition>\n<p _v-cdcc153a=\"\"><n3-button @click.native=\"show2=!show2\" _v-cdcc153a=\"\">fadeDown</n3-button>\n<transition name=\"fadeDown\" _v-cdcc153a=\"\">\n</transition></p><div v-if=\"show2\" class=\"content\" _v-cdcc153a=\"\">\n<h4 _v-cdcc153a=\"\">Title</h4>\n<p _v-cdcc153a=\"\">...</p>\n<p _v-cdcc153a=\"\">...</p>\n<p _v-cdcc153a=\"\">...</p>\n</div>\n<p _v-cdcc153a=\"\"></p>\n<p _v-cdcc153a=\"\"><n3-button @click.native=\"show3=!show3\" _v-cdcc153a=\"\">bounce</n3-button>\n<transition name=\"bounce\" _v-cdcc153a=\"\">\n</transition></p><div v-if=\"show3\" style=\"width:100px\" _v-cdcc153a=\"\">\n<p _v-cdcc153a=\"\">提示:作用于尺寸比较小的元素</p>\n</div>\n<p _v-cdcc153a=\"\"></p>\n</div>\n<pre _v-cdcc153a=\"\"><code class=\"language-html\" _v-cdcc153a=\"\"><span class=\"hljs-comment\" _v-cdcc153a=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-cdcc153a=\"\">@click.native</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"show1=!show1\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">transition</span> <span class=\"hljs-attr\" _v-cdcc153a=\"\">name</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">div</span> <span class=\"hljs-attr\" _v-cdcc153a=\"\">v-if</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"show1\"</span>  <span class=\"hljs-attr\" _v-cdcc153a=\"\">class</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-cdcc153a=\"\">参数</h3>\n<table _v-cdcc153a=\"\">\n<thead _v-cdcc153a=\"\">\n<tr _v-cdcc153a=\"\">\n<th _v-cdcc153a=\"\">参数</th>\n<th _v-cdcc153a=\"\">类型</th>\n<th _v-cdcc153a=\"\">默认值</th>\n<th _v-cdcc153a=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-cdcc153a=\"\">\n<tr _v-cdcc153a=\"\">\n<td _v-cdcc153a=\"\">name</td>\n<td _v-cdcc153a=\"\">String</td>\n<td _v-cdcc153a=\"\">-</td>\n<td _v-cdcc153a=\"\"><code _v-cdcc153a=\"\">fade</code> <code _v-cdcc153a=\"\">fadeLeft</code><code _v-cdcc153a=\"\">fadeDown</code><code _v-cdcc153a=\"\">bounce</code><code _v-cdcc153a=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
-/* 649 */
+/* 669 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -17210,13 +18282,13 @@
 	})();
 
 /***/ },
-/* 650 */
+/* 670 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(item, index) in list\">\n              <n3-sub-nav :show=\"item.show\" @toggle=\"handleToggle(item)\">\n                <a slot=\"title\" style=\"color:#333\" v-text=\"index\"></a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click.native=\"change(i.value)\">\n                  <a v-text=\"i.label\"></a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n    </n3-container>\n  </footer>\n</div>";
 
 /***/ },
-/* 651 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -25549,272 +26621,272 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 652 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _components = __webpack_require__(653);
+	var _components = __webpack_require__(673);
 	
 	var _components2 = _interopRequireDefault(_components);
 	
-	__webpack_require__(863);
+	__webpack_require__(867);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	module.exports = _components2.default;
 
 /***/ },
-/* 653 */
+/* 673 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _n3Alert = __webpack_require__(654);
+	var _n3Alert = __webpack_require__(488);
 	
 	var _n3Alert2 = _interopRequireDefault(_n3Alert);
 	
-	var _n3Carousel = __webpack_require__(661);
+	var _n3Carousel = __webpack_require__(674);
 	
 	var _n3Carousel2 = _interopRequireDefault(_n3Carousel);
 	
-	var _n3Accordion = __webpack_require__(666);
+	var _n3Accordion = __webpack_require__(679);
 	
 	var _n3Accordion2 = _interopRequireDefault(_n3Accordion);
 	
-	var _n3Affix = __webpack_require__(669);
+	var _n3Affix = __webpack_require__(682);
 	
 	var _n3Affix2 = _interopRequireDefault(_n3Affix);
 	
-	var _n3Aside = __webpack_require__(672);
+	var _n3Aside = __webpack_require__(685);
 	
 	var _n3Aside2 = _interopRequireDefault(_n3Aside);
 	
-	var _n3CheckboxGroup = __webpack_require__(676);
+	var _n3CheckboxGroup = __webpack_require__(689);
 	
 	var _n3CheckboxGroup2 = _interopRequireDefault(_n3CheckboxGroup);
 	
-	var _n3Checkbox = __webpack_require__(684);
+	var _n3Checkbox = __webpack_require__(697);
 	
 	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
 	
-	var _n3CheckboxBtn = __webpack_require__(687);
+	var _n3CheckboxBtn = __webpack_require__(700);
 	
 	var _n3CheckboxBtn2 = _interopRequireDefault(_n3CheckboxBtn);
 	
-	var _n3Cascader = __webpack_require__(699);
+	var _n3Cascader = __webpack_require__(703);
 	
 	var _n3Cascader2 = _interopRequireDefault(_n3Cascader);
 	
-	var _n3ToastMethod = __webpack_require__(707);
+	var _n3ToastMethod = __webpack_require__(711);
 	
 	var _n3ToastMethod2 = _interopRequireDefault(_n3ToastMethod);
 	
-	var _n3Label = __webpack_require__(711);
+	var _n3Label = __webpack_require__(715);
 	
 	var _n3Label2 = _interopRequireDefault(_n3Label);
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _n3InputNumber = __webpack_require__(714);
+	var _n3InputNumber = __webpack_require__(718);
 	
 	var _n3InputNumber2 = _interopRequireDefault(_n3InputNumber);
 	
-	var _n3Textarea = __webpack_require__(717);
+	var _n3Textarea = __webpack_require__(721);
 	
 	var _n3Textarea2 = _interopRequireDefault(_n3Textarea);
 	
-	var _n3Datepicker = __webpack_require__(720);
+	var _n3Datepicker = __webpack_require__(724);
 	
 	var _n3Datepicker2 = _interopRequireDefault(_n3Datepicker);
 	
-	var _n3Timepicker = __webpack_require__(723);
+	var _n3Timepicker = __webpack_require__(727);
 	
 	var _n3Timepicker2 = _interopRequireDefault(_n3Timepicker);
 	
-	var _n3Datetimepicker = __webpack_require__(733);
+	var _n3Datetimepicker = __webpack_require__(737);
 	
 	var _n3Datetimepicker2 = _interopRequireDefault(_n3Datetimepicker);
 	
-	var _n3Dropdown = __webpack_require__(736);
+	var _n3Dropdown = __webpack_require__(740);
 	
 	var _n3Dropdown2 = _interopRequireDefault(_n3Dropdown);
 	
-	var _n3Modal = __webpack_require__(743);
+	var _n3Modal = __webpack_require__(747);
 	
 	var _n3Modal2 = _interopRequireDefault(_n3Modal);
 	
-	var _n3Option = __webpack_require__(746);
+	var _n3Option = __webpack_require__(750);
 	
 	var _n3Option2 = _interopRequireDefault(_n3Option);
 	
-	var _n3Panel = __webpack_require__(749);
+	var _n3Panel = __webpack_require__(753);
 	
 	var _n3Panel2 = _interopRequireDefault(_n3Panel);
 	
-	var _n3Popover = __webpack_require__(752);
+	var _n3Popover = __webpack_require__(756);
 	
 	var _n3Popover2 = _interopRequireDefault(_n3Popover);
 	
-	var _n3PopConfirm = __webpack_require__(755);
+	var _n3PopConfirm = __webpack_require__(759);
 	
 	var _n3PopConfirm2 = _interopRequireDefault(_n3PopConfirm);
 	
-	var _n3Progressbar = __webpack_require__(758);
+	var _n3Progressbar = __webpack_require__(762);
 	
 	var _n3Progressbar2 = _interopRequireDefault(_n3Progressbar);
 	
-	var _n3Progress = __webpack_require__(761);
+	var _n3Progress = __webpack_require__(765);
 	
 	var _n3Progress2 = _interopRequireDefault(_n3Progress);
 	
-	var _n3Radio = __webpack_require__(764);
+	var _n3Radio = __webpack_require__(768);
 	
 	var _n3Radio2 = _interopRequireDefault(_n3Radio);
 	
-	var _n3RadioBtn = __webpack_require__(767);
+	var _n3RadioBtn = __webpack_require__(771);
 	
 	var _n3RadioBtn2 = _interopRequireDefault(_n3RadioBtn);
 	
-	var _n3RadioGroup = __webpack_require__(770);
+	var _n3RadioGroup = __webpack_require__(774);
 	
 	var _n3RadioGroup2 = _interopRequireDefault(_n3RadioGroup);
 	
-	var _n3Select = __webpack_require__(773);
+	var _n3Select = __webpack_require__(777);
 	
 	var _n3Select2 = _interopRequireDefault(_n3Select);
 	
-	var _n3Tab = __webpack_require__(778);
+	var _n3Tab = __webpack_require__(782);
 	
 	var _n3Tab2 = _interopRequireDefault(_n3Tab);
 	
-	var _n3Tabs = __webpack_require__(781);
+	var _n3Tabs = __webpack_require__(785);
 	
 	var _n3Tabs2 = _interopRequireDefault(_n3Tabs);
 	
-	var _n3Tooltip = __webpack_require__(727);
+	var _n3Tooltip = __webpack_require__(731);
 	
 	var _n3Tooltip2 = _interopRequireDefault(_n3Tooltip);
 	
-	var _n3Button = __webpack_require__(689);
+	var _n3Button = __webpack_require__(495);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3ButtonGroup = __webpack_require__(784);
+	var _n3ButtonGroup = __webpack_require__(788);
 	
 	var _n3ButtonGroup2 = _interopRequireDefault(_n3ButtonGroup);
 	
-	var _n3Container = __webpack_require__(787);
+	var _n3Container = __webpack_require__(791);
 	
 	var _n3Container2 = _interopRequireDefault(_n3Container);
 	
-	var _n3Row = __webpack_require__(790);
+	var _n3Row = __webpack_require__(794);
 	
 	var _n3Row2 = _interopRequireDefault(_n3Row);
 	
-	var _n3Nav = __webpack_require__(793);
+	var _n3Nav = __webpack_require__(797);
 	
 	var _n3Nav2 = _interopRequireDefault(_n3Nav);
 	
-	var _n3SubNav = __webpack_require__(796);
+	var _n3SubNav = __webpack_require__(800);
 	
 	var _n3SubNav2 = _interopRequireDefault(_n3SubNav);
 	
-	var _n3NavItem = __webpack_require__(799);
+	var _n3NavItem = __webpack_require__(803);
 	
 	var _n3NavItem2 = _interopRequireDefault(_n3NavItem);
 	
-	var _n3Column = __webpack_require__(802);
+	var _n3Column = __webpack_require__(806);
 	
 	var _n3Column2 = _interopRequireDefault(_n3Column);
 	
-	var _n3Switch = __webpack_require__(805);
+	var _n3Switch = __webpack_require__(809);
 	
 	var _n3Switch2 = _interopRequireDefault(_n3Switch);
 	
-	var _n3MultipleInput = __webpack_require__(808);
+	var _n3MultipleInput = __webpack_require__(812);
 	
 	var _n3MultipleInput2 = _interopRequireDefault(_n3MultipleInput);
 	
-	var _n3Page = __webpack_require__(814);
+	var _n3Page = __webpack_require__(818);
 	
 	var _n3Page2 = _interopRequireDefault(_n3Page);
 	
-	var _n3Step = __webpack_require__(817);
+	var _n3Step = __webpack_require__(821);
 	
 	var _n3Step2 = _interopRequireDefault(_n3Step);
 	
-	var _n3DataTable = __webpack_require__(820);
+	var _n3DataTable = __webpack_require__(824);
 	
 	var _n3DataTable2 = _interopRequireDefault(_n3DataTable);
 	
-	var _n3Loading = __webpack_require__(691);
+	var _n3Loading = __webpack_require__(497);
 	
 	var _n3Loading2 = _interopRequireDefault(_n3Loading);
 	
-	var _n3Timeline = __webpack_require__(823);
+	var _n3Timeline = __webpack_require__(827);
 	
 	var _n3Timeline2 = _interopRequireDefault(_n3Timeline);
 	
-	var _n3TimelineItem = __webpack_require__(825);
+	var _n3TimelineItem = __webpack_require__(829);
 	
 	var _n3TimelineItem2 = _interopRequireDefault(_n3TimelineItem);
 	
-	var _n3Typeahead = __webpack_require__(810);
+	var _n3Typeahead = __webpack_require__(814);
 	
 	var _n3Typeahead2 = _interopRequireDefault(_n3Typeahead);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Tags = __webpack_require__(829);
+	var _n3Tags = __webpack_require__(833);
 	
 	var _n3Tags2 = _interopRequireDefault(_n3Tags);
 	
-	var _n3Breadcrumb = __webpack_require__(832);
+	var _n3Breadcrumb = __webpack_require__(836);
 	
 	var _n3Breadcrumb2 = _interopRequireDefault(_n3Breadcrumb);
 	
-	var _n3BreadcrumbItem = __webpack_require__(835);
+	var _n3BreadcrumbItem = __webpack_require__(839);
 	
 	var _n3BreadcrumbItem2 = _interopRequireDefault(_n3BreadcrumbItem);
 	
-	var _n3Form = __webpack_require__(838);
+	var _n3Form = __webpack_require__(842);
 	
 	var _n3Form2 = _interopRequireDefault(_n3Form);
 	
-	var _n3FormItem = __webpack_require__(841);
+	var _n3FormItem = __webpack_require__(845);
 	
 	var _n3FormItem2 = _interopRequireDefault(_n3FormItem);
 	
-	var _n3Slider = __webpack_require__(725);
+	var _n3Slider = __webpack_require__(729);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Slide = __webpack_require__(844);
+	var _n3Slide = __webpack_require__(848);
 	
 	var _n3Slide2 = _interopRequireDefault(_n3Slide);
 	
-	var _n3Tree = __webpack_require__(847);
+	var _n3Tree = __webpack_require__(851);
 	
 	var _n3Tree2 = _interopRequireDefault(_n3Tree);
 	
-	var _n3Card = __webpack_require__(854);
+	var _n3Card = __webpack_require__(858);
 	
 	var _n3Card2 = _interopRequireDefault(_n3Card);
 	
-	var _n3Rate = __webpack_require__(857);
+	var _n3Rate = __webpack_require__(861);
 	
 	var _n3Rate2 = _interopRequireDefault(_n3Rate);
 	
-	var _n3Uploader = __webpack_require__(860);
+	var _n3Uploader = __webpack_require__(864);
 	
 	var _n3Uploader2 = _interopRequireDefault(_n3Uploader);
 	
-	var _n3CollapseTransition = __webpack_require__(738);
+	var _n3CollapseTransition = __webpack_require__(742);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -25905,392 +26977,13 @@
 	module.exports = Components;
 
 /***/ },
-/* 654 */
+/* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(655)
+	module.exports = __webpack_require__(675)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(660)
-	if (false) {
-	(function () {
-	var hotAPI = require("vue-hot-reload-api")
-	hotAPI.install(require("vue"))
-	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue"
-	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue")
-	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue")
-	hotAPI.update(id, newOptions, newTemplate)
-	})
-	})()
-	}
-
-/***/ },
-/* 655 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _type = __webpack_require__(656);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
-	var _n3Icon = __webpack_require__(657);
-	
-	var _n3Icon2 = _interopRequireDefault(_n3Icon);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// <template>
-	//   <transition name="fade">
-	//     <div
-	//      v-show="isShow"
-	//      :class="classObj"
-	//       :style="{width:width}">
-	
-	//       <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
-	
-	//       <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
-	//          @click="handleClose" >
-	//         <span>&times;</span>
-	//       </button>
-	
-	//       <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
-	//         <h4>{{message}}</h4>
-	//         <p><slot></slot></p>
-	//       </div>
-	//       <span v-else>
-	//           <slot></slot>
-	//       </span>
-	//     </div>
-	//   </transition>
-	// </template>
-	
-	// <script>
-	exports.default = {
-	  name: 'n3Alert',
-	  props: {
-	    show: {
-	      type: Boolean,
-	      default: false
-	    },
-	    type: {
-	      type: String,
-	      default: 'default'
-	    },
-	    dismissable: {
-	      type: Boolean,
-	      default: false
-	    },
-	    duration: {
-	      type: Number,
-	      default: 0
-	    },
-	    width: {
-	      type: String
-	    },
-	    small: {
-	      type: Boolean,
-	      default: false
-	    },
-	    placement: {
-	      type: String,
-	      default: ''
-	    },
-	    message: {
-	      type: String
-	    },
-	    description: {
-	      type: Boolean,
-	      default: false
-	    },
-	    onClose: {
-	      type: Function
-	    },
-	    prefixCls: {
-	      type: String,
-	      default: 'n3'
-	    }
-	  },
-	  data: function data() {
-	    var show = this.show;
-	    return {
-	      isShow: show
-	    };
-	  },
-	
-	  methods: {
-	    open: function open() {
-	      this.isShow = true;
-	    },
-	    close: function close() {
-	      this.isShow = false;
-	    },
-	    handleClose: function handleClose(e) {
-	      this.isShow = false;
-	      if (_type2.default.isFunction(this.onClose)) {
-	        this.onClose();
-	      }
-	    }
-	  },
-	  watch: {
-	    isShow: function isShow(val) {
-	      var _this = this;
-	
-	      if (val) {
-	        this.$nextTick(function () {
-	          if (_this.placement === 'top' || _this.placement === 'bottom') {
-	            _this.$el.style.marginLeft = -1 * (_this.$el.offsetWidth / 2) + 'px';
-	          } else if (_this.placement === 'center') {
-	            _this.$el.style.marginLeft = -1 * (_this.$el.offsetWidth / 2) + 'px';
-	            _this.$el.style.marginTop = -1 * (_this.$el.offsetHeight / 2) + 'px';
-	          }
-	
-	          if (_this._timeout) clearTimeout(_this._timeout);
-	          if (val && !!_this.duration) {
-	            _this._timeout = setTimeout(function () {
-	              _this.isShow = false;
-	            }, _this.duration);
-	          }
-	        });
-	      }
-	    }
-	  },
-	  computed: {
-	    iconType: function iconType() {
-	      var type = this.type;
-	
-	      var map = {
-	        success: 'check-circle-o',
-	        danger: 'times-circle-o',
-	        warning: 'exclamation-circle',
-	        info: 'info-circle'
-	      };
-	      return map[type];
-	    },
-	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls;
-	      var type = this.type;
-	      var placement = this.placement;
-	      var small = this.small;
-	
-	      var klass = {};
-	
-	      klass[prefixCls + '-alert-small'] = small;
-	      klass[prefixCls + '-alert'] = true;
-	      klass[prefixCls + '-alert-' + type] = true;
-	      klass[prefixCls + '-' + placement] = true;
-	
-	      return klass;
-	    }
-	  },
-	  components: {
-	    n3Icon: _n3Icon2.default
-	  }
-	};
-	// </script>
-
-/***/ },
-/* 656 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-	
-	// Copyright Joyent, Inc. and other Node contributors.
-	//
-	// Permission is hereby granted, free of charge, to any person obtaining a
-	// copy of this software and associated documentation files (the
-	// "Software"), to deal in the Software without restriction, including
-	// without limitation the rights to use, copy, modify, merge, publish,
-	// distribute, sublicense, and/or sell copies of the Software, and to permit
-	// persons to whom the Software is furnished to do so, subject to the
-	// following conditions:
-	//
-	// The above copyright notice and this permission notice shall be included
-	// in all copies or substantial portions of the Software.
-	//
-	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-	// USE OR OTHER DEALINGS IN THE SOFTWARE.
-	
-	// NOTE: These type checking functions intentionally don't use `instanceof`
-	// because it is fragile and can be easily faked with `Object.create()`.
-	
-	function isArray(arg) {
-	  if (Array.isArray) {
-	    return Array.isArray(arg);
-	  }
-	  return objectToString(arg) === '[object Array]';
-	}
-	exports.isArray = isArray;
-	
-	function isBoolean(arg) {
-	  return typeof arg === 'boolean';
-	}
-	exports.isBoolean = isBoolean;
-	
-	function isNull(arg) {
-	  return arg === null;
-	}
-	exports.isNull = isNull;
-	
-	function isNullOrUndefined(arg) {
-	  return arg == null;
-	}
-	exports.isNullOrUndefined = isNullOrUndefined;
-	
-	function isNumber(arg) {
-	  return typeof arg === 'number';
-	}
-	exports.isNumber = isNumber;
-	
-	function isString(arg) {
-	  return typeof arg === 'string';
-	}
-	exports.isString = isString;
-	
-	function isSymbol(arg) {
-	  return (typeof arg === 'undefined' ? 'undefined' : _typeof(arg)) === 'symbol';
-	}
-	exports.isSymbol = isSymbol;
-	
-	function isUndefined(arg) {
-	  return arg === void 0;
-	}
-	exports.isUndefined = isUndefined;
-	
-	function isRegExp(re) {
-	  return objectToString(re) === '[object RegExp]';
-	}
-	exports.isRegExp = isRegExp;
-	
-	function isObject(arg) {
-	  return (typeof arg === 'undefined' ? 'undefined' : _typeof(arg)) === 'object' && arg !== null;
-	}
-	exports.isObject = isObject;
-	
-	function isDate(d) {
-	  return objectToString(d) === '[object Date]';
-	}
-	exports.isDate = isDate;
-	
-	function isError(e) {
-	  return objectToString(e) === '[object Error]' || e instanceof Error;
-	}
-	exports.isError = isError;
-	
-	function isFunction(arg) {
-	  return typeof arg === 'function';
-	}
-	exports.isFunction = isFunction;
-	
-	function isPrimitive(arg) {
-	  return arg === null || typeof arg === 'boolean' || typeof arg === 'number' || typeof arg === 'string' || (typeof arg === 'undefined' ? 'undefined' : _typeof(arg)) === 'symbol' || // ES6 symbol
-	  typeof arg === 'undefined';
-	}
-	exports.isPrimitive = isPrimitive;
-	
-	function objectToString(o) {
-	  return Object.prototype.toString.call(o);
-	}
-	
-	function isPromise(promise) {
-	  return isObject(promise) && isFunction(promise.then) && isFunction(promise.catch);
-	}
-	exports.isPromise = isPromise;
-
-/***/ },
-/* 657 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(658)
-	
-	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(659)
-	if (false) {
-	(function () {
-	var hotAPI = require("vue-hot-reload-api")
-	hotAPI.install(require("vue"))
-	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue"
-	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue")
-	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue")
-	hotAPI.update(id, newOptions, newTemplate)
-	})
-	})()
-	}
-
-/***/ },
-/* 658 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	// <template>
-	//   <i :class="[prefixCls + '-fa',prefixCls +'-fa-'+type]" :style="{fontSize:size,color:color}">
-	//     <slot></slot>
-	//   </i>
-	// </template>
-	// <script>
-	exports.default = {
-	  name: 'n3Icon',
-	  props: {
-	    type: {
-	      type: String
-	    },
-	    size: {
-	      type: String
-	    },
-	    color: {
-	      type: String
-	    },
-	    prefixCls: {
-	      type: String,
-	      default: 'n3'
-	    }
-	  }
-	};
-	// </script>
-
-/***/ },
-/* 659 */
-/***/ function(module, exports) {
-
-	module.exports = "<i :class=\"[prefixCls + '-fa',prefixCls +'-fa-'+type]\" :style=\"{fontSize:size,color:color}\">\n    <slot></slot>\n  </i>";
-
-/***/ },
-/* 660 */
-/***/ function(module, exports) {
-
-	module.exports = "<transition name=\"fade\">\n    <div\n     v-show=\"isShow\"\n     :class=\"classObj\"\n      :style=\"{width:width}\">\n\n      <n3-icon :class=\"`${prefixCls}-alert-icon`\" :type=\"iconType\" ></n3-icon>\n\n      <button v-if=\"dismissable\" type=\"button\" :class=\"`${prefixCls}-close`\"\n         @click=\"handleClose\" >\n        <span>&times;</span>\n      </button>\n\n      <div v-if=\"description\" :class=\"`${prefixCls}prefixCls}}-alert-content`\">\n        <h4>{{message}}</h4>\n        <p><slot></slot></p>\n      </div>\n      <span v-else>\n          <slot></slot>\n      </span>\n    </div>\n  </transition>";
-
-/***/ },
-/* 661 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(662)
-	
-	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(665)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(678)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26308,7 +27001,7 @@
 	}
 
 /***/ },
-/* 662 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26317,15 +27010,15 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _element = __webpack_require__(664);
+	var _element = __webpack_require__(677);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -26472,7 +27165,7 @@
 	// </script>
 
 /***/ },
-/* 663 */
+/* 676 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -26511,7 +27204,7 @@
 	exports.default = EventListener;
 
 /***/ },
-/* 664 */
+/* 677 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -26616,19 +27309,19 @@
 	};
 
 /***/ },
-/* 665 */
+/* 678 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-carousel ${prefixCls}-slide`\">\n  <ol :class=\"`${prefixCls}-carousel-indicators`\" v-show=\"indicators\">\n    <transition-group name=\"fade\">\n    <li v-for=\"(i,index) in indicator\" \n      :key=\"index\"\n      @click=\"handleIndicatorClick(index)\" \n      :class=\"[index === activeIndex ? prefixCls + '-carousel-active'  : '']\">\n    </li>\n    </transition-group>\n  </ol>\n  <div :class=\"`${prefixCls}-carousel-inner`\">\n    <slot></slot>\n  </div>\n  <a v-show=\"controls\" :class=\"`${prefixCls}-carousel-left ${prefixCls}-carousel-control`\" @click=\"prevClick\">\n    <n3-icon type=\"chevron-left\"></n3-icon>\n  </a>\n  <a v-show=\"controls\" :class=\"`${prefixCls}-carousel-right ${prefixCls}-carousel-control`\" @click=\"nextClick\">\n    <n3-icon type=\"chevron-right\"></n3-icon>\n  </a>\n</div>";
 
 /***/ },
-/* 666 */
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(667)
+	module.exports = __webpack_require__(680)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(668)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(681)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26646,7 +27339,7 @@
 	}
 
 /***/ },
-/* 667 */
+/* 680 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26655,7 +27348,7 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -26717,19 +27410,19 @@
 	// <script>
 
 /***/ },
-/* 668 */
+/* 681 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-panel-group`\">\n      <slot></slot>\n  </div>";
 
 /***/ },
-/* 669 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(670)
+	module.exports = __webpack_require__(683)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(671)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(684)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26747,7 +27440,7 @@
 	}
 
 /***/ },
-/* 670 */
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26756,7 +27449,7 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
@@ -26848,19 +27541,19 @@
 	// <script>
 
 /***/ },
-/* 671 */
+/* 684 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n<div :style=\"styles\">\n  <slot></slot>\n</div>\n</div>";
 
 /***/ },
-/* 672 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(673)
+	module.exports = __webpack_require__(686)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(675)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(688)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -26878,7 +27571,7 @@
 	}
 
 /***/ },
-/* 673 */
+/* 686 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26887,19 +27580,19 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _getScrollBarWidth = __webpack_require__(674);
+	var _getScrollBarWidth = __webpack_require__(687);
 	
 	var _getScrollBarWidth2 = _interopRequireDefault(_getScrollBarWidth);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _element = __webpack_require__(664);
+	var _element = __webpack_require__(677);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -27017,7 +27710,7 @@
 	// </script>
 
 /***/ },
-/* 674 */
+/* 687 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -27053,19 +27746,19 @@
 	};
 
 /***/ },
-/* 675 */
+/* 688 */
 /***/ function(module, exports) {
 
 	module.exports = "<transition :name=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\n    <div \n      :style=\"{width:width}\"\n      :class=\"classObj\"\n      v-show=\"show\">\n      <div :class=\"`${prefixCls}-aside-dialog`\">\n        <div :class=\"`${prefixCls}-aside-content`\">\n          <div :class=\"`${prefixCls}-aside-header`\">\n            <button type=\"button\" :class=\"`${prefixCls}-close`\" @click='close'><span>&times;</span></button>\n            <h4 :class=\"`${prefixCls}-aside-title`\">{{header}}</h4>\n          </div>\n          <div :class=\"`${prefixCls}-aside-body`\">\n            <slot></slot>\n          </div>\n        </div>\n      </div>\n    </div>\n  </transition>";
 
 /***/ },
-/* 676 */
+/* 689 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(677)
+	module.exports = __webpack_require__(690)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(683)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(696)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27083,7 +27776,7 @@
 	}
 
 /***/ },
-/* 677 */
+/* 690 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27092,19 +27785,19 @@
 	  value: true
 	});
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -27202,7 +27895,7 @@
 	// </script>
 
 /***/ },
-/* 678 */
+/* 691 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -27225,13 +27918,13 @@
 	};
 
 /***/ },
-/* 679 */
+/* 692 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(680)
+	module.exports = __webpack_require__(693)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(682)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(695)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27249,7 +27942,7 @@
 	}
 
 /***/ },
-/* 680 */
+/* 693 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27258,11 +27951,11 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
@@ -27578,7 +28271,7 @@
 	// </script>
 
 /***/ },
-/* 681 */
+/* 694 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -27621,25 +28314,25 @@
 	};
 
 /***/ },
-/* 682 */
+/* 695 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-err-tip`\" v-if=\"validate && tips\" >{{tips}}</div>";
 
 /***/ },
-/* 683 */
+/* 696 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-checkbox-group`\">\n    <slot></slot>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"currentValue\">\n    </validate>\n  </div>";
 
 /***/ },
-/* 684 */
+/* 697 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(685)
+	module.exports = __webpack_require__(698)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(686)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(699)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27657,7 +28350,7 @@
 	}
 
 /***/ },
-/* 685 */
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27666,23 +28359,23 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -27802,19 +28495,19 @@
 	// <script>
 
 /***/ },
-/* 686 */
+/* 699 */
 /***/ function(module, exports) {
 
 	module.exports = "<label :class=\"wrapClass\">\n  <span>\n    <span :class=\"`${prefixCls}-checkbox-inner`\">\n      <n3-icon type=\"check\" color=\"#fff\" :class=\"`${prefixCls}-checkbox-inner-check`\"></n3-icon>\n    </span>\n    <input\n      type=\"checkbox\"\n      :class=\"`${prefixCls}-checkbox-input`\"\n      :disabled=\"disabled\"\n      :checked=\"currentChecked\"\n      @click=\"handleClick\"/>\n  </span>\n  <span><slot></slot></span>  \n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"currentChecked\">\n  </validate>\n  </label>";
 
 /***/ },
-/* 687 */
+/* 700 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(688)
+	module.exports = __webpack_require__(701)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(698)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(702)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -27832,7 +28525,7 @@
 	}
 
 /***/ },
-/* 688 */
+/* 701 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27841,23 +28534,23 @@
 	  value: true
 	});
 	
-	var _n3Button = __webpack_require__(689);
+	var _n3Button = __webpack_require__(495);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -27967,299 +28660,19 @@
 	// <script>
 
 /***/ },
-/* 689 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(690)
-	
-	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(697)
-	if (false) {
-	(function () {
-	var hotAPI = require("vue-hot-reload-api")
-	hotAPI.install(require("vue"))
-	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue"
-	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue")
-	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue")
-	hotAPI.update(id, newOptions, newTemplate)
-	})
-	})()
-	}
-
-/***/ },
-/* 690 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _n3Loading = __webpack_require__(691);
-	
-	var _n3Loading2 = _interopRequireDefault(_n3Loading);
-	
-	var _n3Badge = __webpack_require__(694);
-	
-	var _n3Badge2 = _interopRequireDefault(_n3Badge);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// <template>
-	//   <a :class="classObj">
-	//   	<slot></slot>	
-	//   	<n3-loading v-if="loading" size="xs" style="position:relative;top:2px"></n3-loading>
-	//     <n3-badge  v-if="badge">{{badge}}</n3-badge>
-	//   </a>
-	// </template>
-	// <script>
-	exports.default = {
-	  name: 'n3Button',
-	  props: {
-	    size: {
-	      type: String
-	    },
-	    type: {
-	      type: String,
-	      default: 'default'
-	    },
-	    badge: {
-	      type: [String, Number]
-	    },
-	    active: {
-	      type: Boolean,
-	      default: false
-	    },
-	    disabled: {
-	      type: Boolean,
-	      default: false
-	    },
-	    block: {
-	      type: Boolean,
-	      default: false
-	    },
-	    loading: {
-	      type: Boolean,
-	      default: false
-	    },
-	    prefixCls: {
-	      type: String,
-	      default: 'n3'
-	    }
-	  },
-	  computed: {
-	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls;
-	      var type = this.type;
-	      var size = this.size;
-	      var block = this.block;
-	      var active = this.active;
-	      var disabled = this.disabled;
-	
-	      var klass = {};
-	
-	      klass[prefixCls + '-btn'] = true;
-	      klass[prefixCls + '-btn-block'] = block;
-	      klass[prefixCls + '-btn-active'] = active;
-	      klass[prefixCls + '-btn-disabled'] = disabled;
-	      size ? klass[prefixCls + '-btn-' + size] = true : '';
-	      type ? klass[prefixCls + '-btn-' + type] = true : '';
-	
-	      return klass;
-	    }
-	  },
-	  components: {
-	    n3Loading: _n3Loading2.default,
-	    n3Badge: _n3Badge2.default
-	  }
-	};
-	// </script>
-
-/***/ },
-/* 691 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(692)
-	
-	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(693)
-	if (false) {
-	(function () {
-	var hotAPI = require("vue-hot-reload-api")
-	hotAPI.install(require("vue"))
-	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue"
-	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue")
-	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue")
-	hotAPI.update(id, newOptions, newTemplate)
-	})
-	})()
-	}
-
-/***/ },
-/* 692 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	// <template>
-	//   <span :class="classObj">
-	//     <i :class="iclassObj"></i>
-	//     <slot></slot>  
-	//   </span>
-	// </template>
-	// <script>
-	exports.default = {
-	  name: 'n3Loading',
-	  props: {
-	    type: {
-	      type: String
-	    },
-	    size: {
-	      type: String
-	    },
-	    center: {
-	      type: Boolean
-	    },
-	    fixed: {
-	      type: Boolean,
-	      default: false
-	    },
-	    color: {
-	      type: String
-	    },
-	    prefixCls: {
-	      type: String,
-	      default: 'n3'
-	    }
-	  },
-	  computed: {
-	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls;
-	      var center = this.center;
-	      var fixed = this.fixed;
-	
-	      var klass = {};
-	
-	      klass['affix'] = fixed;
-	      klass[prefixCls + '-page-loading-con'] = true;
-	      klass[prefixCls + '-page-loading-con'] = true;
-	      klass[prefixCls + '-loading-center'] = center;
-	
-	      return klass;
-	    },
-	    iclassObj: function iclassObj() {
-	      var prefixCls = this.prefixCls;
-	      var type = this.type;
-	      var size = this.size;
-	      var color = this.color;
-	
-	      var klass = {};
-	
-	      klass[prefixCls + '-page-loading'] = true;
-	      type ? klass[prefixCls + '-loading-' + type] = true : '';
-	      size ? klass[prefixCls + '-loading-' + size] = true : '';
-	      color ? klass['text-' + color] = true : '';
-	
-	      return klass;
-	    }
-	  }
-	};
-	// </script>
-
-/***/ },
-/* 693 */
-/***/ function(module, exports) {
-
-	module.exports = "<span :class=\"classObj\">\n    <i :class=\"iclassObj\"></i>\n    <slot></slot>  \n  </span>";
-
-/***/ },
-/* 694 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(695)
-	
-	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(696)
-	if (false) {
-	(function () {
-	var hotAPI = require("vue-hot-reload-api")
-	hotAPI.install(require("vue"))
-	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue"
-	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue")
-	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue")
-	hotAPI.update(id, newOptions, newTemplate)
-	})
-	})()
-	}
-
-/***/ },
-/* 695 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	// <template>
-	// 	<span :class="`${prefixCls}-badge`">
-	// 		<slot></slot>	
-	// 	</span>
-	// </template>
-	// <script>
-	exports.default = {
-		name: 'n3Badge',
-		props: {
-			prefixCls: {
-				type: String,
-				default: 'n3'
-			}
-		}
-	};
-	// </script>
-
-/***/ },
-/* 696 */
-/***/ function(module, exports) {
-
-	module.exports = "<span :class=\"`${prefixCls}-badge`\">\n\t\t<slot></slot>\t\n\t</span>";
-
-/***/ },
-/* 697 */
-/***/ function(module, exports) {
-
-	module.exports = "<a :class=\"classObj\">\n  \t<slot></slot>\t\n  \t<n3-loading v-if=\"loading\" size=\"xs\" style=\"position:relative;top:2px\"></n3-loading>\n    <n3-badge  v-if=\"badge\">{{badge}}</n3-badge>\n  </a>";
-
-/***/ },
-/* 698 */
+/* 702 */
 /***/ function(module, exports) {
 
 	module.exports = "<n3-button \n    @click.prevent.native=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :type=\"currentChecked ? 'primary' : 'default'\">\n    <slot></slot>\n  </n3-button>\n<!--   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"currentChecked\"\n    :results.sync=\"validateResults\">\n  </validate> -->";
 
 /***/ },
-/* 699 */
+/* 703 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(700)
+	module.exports = __webpack_require__(704)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(706)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(710)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28277,7 +28690,7 @@
 	}
 
 /***/ },
-/* 700 */
+/* 704 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28286,19 +28699,19 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(703);
+	var _inputMixin = __webpack_require__(707);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -28513,13 +28926,13 @@
 	// </script>
 
 /***/ },
-/* 701 */
+/* 705 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(702)
+	module.exports = __webpack_require__(706)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(705)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(709)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28537,7 +28950,7 @@
 	}
 
 /***/ },
-/* 702 */
+/* 706 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28546,23 +28959,23 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _inputMixin = __webpack_require__(703);
+	var _inputMixin = __webpack_require__(707);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _vueFocus = __webpack_require__(704);
+	var _vueFocus = __webpack_require__(708);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -28699,7 +29112,7 @@
 	// <script>
 
 /***/ },
-/* 703 */
+/* 707 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28748,12 +29161,12 @@
 	};
 
 /***/ },
-/* 704 */
+/* 708 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Vue = __webpack_require__(651);
+	var Vue = __webpack_require__(671);
 	Vue = 'default' in Vue ? Vue['default'] : Vue;
 	
 	var version = '2.1.0';
@@ -28792,19 +29205,19 @@
 	exports.mixin = mixin;
 
 /***/ },
-/* 705 */
+/* 709 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\"  :style=\"{'width':width}\">\n  <input\n    ref=\"input\"\n    autoComplete=\"off\"\n    :class=\"`${prefixCls}-form-control`\"\n    :style=\"{'width':width}\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :placeholder=\"placeholder\"\n\t\t:type=\"type\"\n    @blur=\"blur\"\n    @focus=\"focus\"\n    @input=\"update($event.target.value)\"\n    v-focus=\"focused\" \n    :value=\"value\" />\n\n  <n3-icon\n    type=\"check\" :class=\"`${prefixCls}-form-control-feedback`\"\n    v-if='validStatus==\"success\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon\n    type=\"warning\" :class=\"`${prefixCls}-form-control-feedback`\"\n    v-if='validStatus==\"warning\" && hasFeedback'>\n  </n3-icon>\n\n  <n3-icon\n    type=\"times\" :class=\"`${prefixCls}-form-control-feedback`\"\n    v-if='validStatus==\"error\" && hasFeedback'>\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    v-model=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\"\n    :current=\"value\">\n  </validate>\n\n</div>";
 
 /***/ },
-/* 706 */
+/* 710 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-cascader`\">\n    <span :class=\"`${prefixCls}-cascader-picker`\">\n      <n3-input \n        :width=\"width\"\n        :name=\"name\" \n        :rules=\"rules\" \n        :has-feedback=\"hasFeedback\"\n        :placeholder=\"placeholder\"\n        :custom-validate=\"customValidate\"\n        :value=\"displayValue\"\n        :readonly=\"true\"\n        :disabled=\"disabled\"\n        @click.native=\"toggleMenus\">\n      </n3-input>\n    </span>\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-cascader-menus`\" v-show=\"show\" >\n        <ul :class=\"`${prefixCls}-cascader-menu`\" v-for=\"(menu, index) in menus\">\n          <li :class=\"itemClass(index,option)\" \n            v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n          </li>\n        </ul>\n      </div>\n    </transition>\n  </div>";
 
 /***/ },
-/* 707 */
+/* 711 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -28839,22 +29252,22 @@
 	  }
 	};
 	
-	var _vue = __webpack_require__(651);
+	var _vue = __webpack_require__(671);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var n3Toast = _vue2.default.extend(__webpack_require__(708));
+	var n3Toast = _vue2.default.extend(__webpack_require__(712));
 
 /***/ },
-/* 708 */
+/* 712 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(709)
+	module.exports = __webpack_require__(713)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(710)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(714)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -28872,7 +29285,7 @@
 	}
 
 /***/ },
-/* 709 */
+/* 713 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -28989,19 +29402,19 @@
 	// </script>
 
 /***/ },
-/* 710 */
+/* 714 */
 /***/ function(module, exports) {
 
 	module.exports = "<transition name=\"fade\">\n  \t<div \n      ref=\"dom\"\n      :class=\"classObj\"\n  \t\t@click=\"handleClick\"\n  \t\tv-if=\"show\">\n  \t\t<h5 v-text=\"text\"></h5>\n  \t</div>\n  </transition>";
 
 /***/ },
-/* 711 */
+/* 715 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(712)
+	module.exports = __webpack_require__(716)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(713)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(717)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -29019,7 +29432,7 @@
 	}
 
 /***/ },
-/* 712 */
+/* 716 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -29069,19 +29482,19 @@
 	// </script>
 
 /***/ },
-/* 713 */
+/* 717 */
 /***/ function(module, exports) {
 
 	module.exports = "<span :class=\"classObj\">\n\t\t<slot></slot>\n\t</span>";
 
 /***/ },
-/* 714 */
+/* 718 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(715)
+	module.exports = __webpack_require__(719)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(716)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(720)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -29099,7 +29512,7 @@
 	}
 
 /***/ },
-/* 715 */
+/* 719 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29108,19 +29521,19 @@
 	  value: true
 	});
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _inputMixin = __webpack_require__(703);
+	var _inputMixin = __webpack_require__(707);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -29372,19 +29785,19 @@
 	// </script>
 
 /***/ },
-/* 716 */
+/* 720 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\" :style=\"{width: width}\">\n  <div :class=\"`${prefixCls}-input-number-handler-wrap`\">\n    <a unselectable=\"unselectable\"\n      ref=\"up\"\n      @click=\"_up\"\n      @mouse.down=\"preventDefault\"\n      :class=\"[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]\">\n        <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-up-inner`\" \n          type=\"angle-up\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n    <a unselectable=\"unselectable\"\n       ref=\"down\"\n       @mouse.down=\"preventDefault\"\n       @click=\"_down\"\n       :class=\"[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]\">\n       <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-down-inner`\" \n          type=\"angle-down\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n  </div>\n  <div :class=\"prefixCls + '-input-number-input-wrap'\">\n    <n3-input\n      :on-focus=\"onFocus\"\n      :width=\"width\"\n      :rules=\"rules\" \n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :on-blur=\"_onBlur\"\n      @keydown.native.stop=\"_onKeyDown\"\n      :on-change=\"_onChange\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      :name=\"name\"\n      :value=\"currentValue\">\n    </n3-input> \n  </div>\n</div>";
 
 /***/ },
-/* 717 */
+/* 721 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(718)
+	module.exports = __webpack_require__(722)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(719)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(723)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -29402,7 +29815,7 @@
 	}
 
 /***/ },
-/* 718 */
+/* 722 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29411,15 +29824,15 @@
 	  value: true
 	});
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -29534,19 +29947,19 @@
 	// <script>
 
 /***/ },
-/* 719 */
+/* 723 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\" :style=\"{width:width}\">\n  <textarea\n    :class=\"`${prefixCls}-form-control`\"  \n    :disabled=\"disabled\"\n    :readonly=\"readonly\"\n    :maxlength=\"maxLength\"\n    :style=\"styleObj\"\n    :name=\"name\"\n    @input=\"update($event.target.value)\"\n    :placeholder=\"placeholder\"\n    :value=\"value\">\n  </textarea>\n\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n\n</div>";
 
 /***/ },
-/* 720 */
+/* 724 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(721)
+	module.exports = __webpack_require__(725)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(722)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(726)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -29564,7 +29977,7 @@
 	}
 
 /***/ },
-/* 721 */
+/* 725 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29573,19 +29986,19 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(703);
+	var _inputMixin = __webpack_require__(707);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -29990,19 +30403,19 @@
 	// </script>
 
 /***/ },
-/* 722 */
+/* 726 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-datepicker`\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click.native=\"inputClick\"\n      :value=\"currentValue\">\n    </n3-input>\n      <transition name=\"fadeDown\">\n        <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayDayView\" >\n          <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n              <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                <span \n                  :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                  @click=\"preNextMonthClick(0)\">&lt;</span>\n                <span \n                  :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                  @click=\"preNextMonthClick(1)\">&gt;</span>\n                <p @click=\"switchMouthView\">\n                {{stringifyDayHeader(currDate)}}\n                </p>\n              </div>\n              <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                <span v-for=\"w in weekRange\">{{w}}</span>\n              </div>\n              <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                <span \n                  v-for=\"d in dateRange\" :class=\"d.sclass\" \n                  @click=\"daySelect(d.date,d.sclass)\">\n                  {{d.text}}\n                </span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </transition>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayMouthView\" >\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n          <div :class=\"`${prefixCls}-datepicker-body`\">\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n              <span \n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                @click=\"preNextYearClick(0)\">&lt;</span>\n              <span \n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                @click=\"preNextYearClick(1)\">&gt;</span>\n              <p @click=\"switchDecadeView\">\n              {{stringifyYearHeader(currDate)}}\n              </p>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n            \t<template v-for=\"m in mouthNames\">\n                <span   \n                  :class=\"monthClassObj(m)\"\n                  @click=\"mouthSelect($index)\">\n                  {{m.substr(0,3)}}\n                </span>\n              </template>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayYearView\" >\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n          <div :class=\"`${prefixCls}-datepicker-body`\">\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n              <span \n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                @click=\"preNextDecadeClick(0)\">&lt;</span>\n              <span \n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                @click=\"preNextDecadeClick(1)\">&gt;</span>\n              <p>\n              {{stringifyDecadeHeader(currDate)}}\n              </p>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n            \t<template v-for=\"decade in decadeRange\">\n            \t\t<span \n                  :class=\"yearClassObj(decade)\"\n                  @click.stop=\"yearSelect(decade.text)\">\n                  {{decade.text}}\n               \t</span>\n\t\t\t        </template>\n            </div>\n          </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
-/* 723 */
+/* 727 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(724)
+	module.exports = __webpack_require__(728)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(732)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(736)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30020,7 +30433,7 @@
 	}
 
 /***/ },
-/* 724 */
+/* 728 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30029,23 +30442,23 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Slider = __webpack_require__(725);
+	var _n3Slider = __webpack_require__(729);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(703);
+	var _inputMixin = __webpack_require__(707);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -30257,13 +30670,13 @@
 	// <script>
 
 /***/ },
-/* 725 */
+/* 729 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(726)
+	module.exports = __webpack_require__(730)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(731)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(735)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30281,7 +30694,7 @@
 	}
 
 /***/ },
-/* 726 */
+/* 730 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30290,27 +30703,27 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Tooltip = __webpack_require__(727);
+	var _n3Tooltip = __webpack_require__(731);
 	
 	var _n3Tooltip2 = _interopRequireDefault(_n3Tooltip);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _element = __webpack_require__(664);
+	var _element = __webpack_require__(677);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -30651,13 +31064,13 @@
 	// </script>
 
 /***/ },
-/* 727 */
+/* 731 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(728)
+	module.exports = __webpack_require__(732)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(730)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(734)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30675,7 +31088,7 @@
 	}
 
 /***/ },
-/* 728 */
+/* 732 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30684,7 +31097,7 @@
 	  value: true
 	});
 	
-	var _popoverMixins = __webpack_require__(729);
+	var _popoverMixins = __webpack_require__(733);
 	
 	var _popoverMixins2 = _interopRequireDefault(_popoverMixins);
 	
@@ -30739,7 +31152,7 @@
 	// <script>
 
 /***/ },
-/* 729 */
+/* 733 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30748,11 +31161,11 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -30918,31 +31331,31 @@
 	exports.default = PopoverMixin;
 
 /***/ },
-/* 730 */
+/* 734 */
 /***/ function(module, exports) {
 
 	module.exports = "<span>\n  <span ref=\"trigger\">\n    <slot>\n    </slot>\n  </span>\n  <transition :name=\"effect\">\n    <div :class=\"classObj\"\n      ref=\"popover\"\n      v-show=\"isShow\">\n      <div :class=\"`${prefixCls}-tooltip-arrow`\"></div>\n      <div :class=\"`${prefixCls}-tooltip-inner`\">\n        <span v-html=\"content\"></span>\n      </div>\n    </div>\n  </transition>\n</span>";
 
 /***/ },
-/* 731 */
+/* 735 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"inline\">\n    <div :class=\"classObj\" ref=\"slider\" :style=\"styleObj\">\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\n        <div :class=\"`${prefixCls}-slider-track`\">\n          <div :class=\"`${prefixCls}-slider-track-low`\"></div>\n          <div :class=\"`${prefixCls}-slider-selection`\" ref=\"selection\"></div>\n          <div :class=\"`${prefixCls}-slider-track-high`\" ref=\"noSelection\"></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`\" ref=\"minSlider\"></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`\" ref=\"maxSlider\"></div>\n        </div>\n      </n3-tooltip>\n    </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>";
 
 /***/ },
-/* 732 */
+/* 736 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-timepicker`\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click.native=\"inputClick\"\n      :value=\"currentValue\">\n    </n3-input>\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-timepicker-popup`\" v-show=\"show\" >\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n          <n3-slider \n            v-model=\"time.hour\" \n            orientation=\"vertical\" \n            :max=\"hourRange[1]\" :min=\"hourRange[0]\"  \n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n          <n3-slider \n            v-model=\"time.minute\" \n            orientation=\"vertical\" \n            :max=\"minuteRange[1]\" \n            :min=\"minuteRange[0]\"  \n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n          <n3-slider \n            v-model=\"time.second\" \n            orientation=\"vertical\" \n            :max=\"secondRange[1]\" \n            :min=\"secondRange[0]\" \n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n      </div>\n    </transition>\n  </div>";
 
 /***/ },
-/* 733 */
+/* 737 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(734)
+	module.exports = __webpack_require__(738)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(735)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(739)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -30960,7 +31373,7 @@
 	}
 
 /***/ },
-/* 734 */
+/* 738 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30971,23 +31384,23 @@
 	
 	var _watch;
 	
-	var _n3Slider = __webpack_require__(725);
+	var _n3Slider = __webpack_require__(729);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(703);
+	var _inputMixin = __webpack_require__(707);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -31565,19 +31978,19 @@
 	// </script>
 
 /***/ },
-/* 735 */
+/* 739 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`\" ref=\"datetimepicker\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click.native=\"inputClick\"\n      :value=\"currentValue\">\n    </n3-input>\n      <transition name=\"fadeDown\">\n        <div \n          :class=\"`${prefixCls}-datepicker-popup`\" \n          v-show=\"displayDayView\" \n          :style=\"{width:popWidth}\">\n            <div :class=\"`${prefixCls}-datepicker-inner`\" ref=\"datepicker\">\n                <div :class=\"`${prefixCls}-datepicker-body`\">\n                    <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                        <span \n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                          @click=\"preNextMonthClick(0)\">&lt;</span>\n                        <span \n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                          @click=\"preNextMonthClick(1)\">&gt;</span>\n                        <p @click=\"switchMouthView\">\n                        {{stringifyDayHeader(currDate)}}\n                        </p>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                        <span v-for=\"w in weekRange\">{{w}}</span>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                        <span v-for=\"d in dateRange\" \n                        :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                        @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                    </div>\n                </div>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-con`\">\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n                <n3-slider \n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.hour\" \n                  orientation=\"vertical\" \n                  :max=\"hourRange[1]\" \n                  :min=\"hourRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\" \n                  v-model=\"time.minute\" \n                  orientation=\"vertical\" \n                  :max=\"minuteRange[1]\" \n                  :min=\"minuteRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n                <n3-slider \n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.second\" \n                  orientation=\"vertical\" \n                  :max=\"secondRange[1]\" \n                  :min=\"secondRange[0]\" >\n                </n3-slider>\n              </div>\n            </div>\n        </div>\n      </transition>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayMouthView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n                \t<template v-for=\"(m,index) in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect(index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayYearView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
-/* 736 */
+/* 740 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(737)
+	module.exports = __webpack_require__(741)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(742)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(746)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -31595,7 +32008,7 @@
 	}
 
 /***/ },
-/* 737 */
+/* 741 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31604,11 +32017,11 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3CollapseTransition = __webpack_require__(738);
+	var _n3CollapseTransition = __webpack_require__(742);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -31714,13 +32127,13 @@
 	// </script>
 
 /***/ },
-/* 738 */
+/* 742 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(739)
+	module.exports = __webpack_require__(743)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(741)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(745)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -31738,7 +32151,7 @@
 	}
 
 /***/ },
-/* 739 */
+/* 743 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31747,7 +32160,7 @@
 	  value: true
 	});
 	
-	var _velocityAnimate = __webpack_require__(740);
+	var _velocityAnimate = __webpack_require__(744);
 	
 	var _velocityAnimate2 = _interopRequireDefault(_velocityAnimate);
 	
@@ -31798,7 +32211,7 @@
 	// </script>
 
 /***/ },
-/* 740 */
+/* 744 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.2.3). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
@@ -35689,25 +36102,25 @@
 	will produce an inaccurate conversion value. The same issue exists with the cx/cy attributes of SVG circles and ellipses. */
 
 /***/ },
-/* 741 */
+/* 745 */
 /***/ function(module, exports) {
 
 	module.exports = "<transition\n    name=\"n3CollapseTransition\"\n    @enter=\"enter\"\n    @leave=\"leave\"\n  >\n    <slot></slot>\n  </transition>";
 
 /***/ },
-/* 742 */
+/* 746 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-dropdown-con`\">   \n    <span ref=\"trigger\"> \n      <slot name=\"trigger\" ></slot>\n    </span>\n\n    <transition :name=\"effect\" v-if=\"effect!='collapse'\">\n      <ul :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"isShow\" >\n          <slot></slot>\n      </ul>\n    </transition>\n    <n3-collapse-transition v-if=\"effect=='collapse'\">\n      <ul :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"isShow\" >\n          <slot></slot>\n      </ul>\n    </n3-collapse-transition>\n\n  </div>";
 
 /***/ },
-/* 743 */
+/* 747 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(744)
+	module.exports = __webpack_require__(748)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(745)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(749)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -35725,7 +36138,7 @@
 	}
 
 /***/ },
-/* 744 */
+/* 748 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35734,23 +36147,23 @@
 	  value: true
 	});
 	
-	var _getScrollBarWidth = __webpack_require__(674);
+	var _getScrollBarWidth = __webpack_require__(687);
 	
 	var _getScrollBarWidth2 = _interopRequireDefault(_getScrollBarWidth);
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Button = __webpack_require__(689);
+	var _n3Button = __webpack_require__(495);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _element = __webpack_require__(664);
+	var _element = __webpack_require__(677);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -35905,19 +36318,19 @@
 	// <script>
 
 /***/ },
-/* 745 */
+/* 749 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\">\n    <div :class=\"`${prefixCls}-modal-dialog`\" \n      :style=\"{'width': width}\">\n      <div :class=\"`${prefixCls}-modal-content`\">\n        <slot name=\"header\">\n          <div :class=\"`${prefixCls}-modal-header`\">\n            <button type=\"button\" :class=\"`${prefixCls}-close`\" @click=\"close\"><span>&times;</span></button>\n            <h4 :class=\"`${prefixCls}-modal-title`\" >{{title}}</h4>\n          </div>\n        </slot>\n        \n        <div :class=\"`${prefixCls}-modal-body`\">\n          <slot name=\"body\"></slot>\n        </div>\n      \n        <slot name=\"footer\">\n          <div :class=\"`${prefixCls}-modal-footer`\">\n            <n3-button  @click.native=\"close\">取消</n3-button>\n            <n3-button type=\"primary\" @click.native=\"confirm\">确定</n3-button>\n          </div>\n        </slot>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
-/* 746 */
+/* 750 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(747)
+	module.exports = __webpack_require__(751)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(748)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(752)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -35935,7 +36348,7 @@
 	}
 
 /***/ },
-/* 747 */
+/* 751 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35965,19 +36378,19 @@
 	// </script>
 
 /***/ },
-/* 748 */
+/* 752 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :value=\"value\" :class=\"`${prefixCls}-option`\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 749 */
+/* 753 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(750)
+	module.exports = __webpack_require__(754)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(751)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(755)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -35995,7 +36408,7 @@
 	}
 
 /***/ },
-/* 750 */
+/* 754 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36004,11 +36417,11 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _n3CollapseTransition = __webpack_require__(738);
+	var _n3CollapseTransition = __webpack_require__(742);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -36092,19 +36505,19 @@
 	// </script>
 
 /***/ },
-/* 751 */
+/* 755 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-panel ${prefixCls}-panel-default`\">\n    <div :class=\"`${prefixCls}-panel-heading`\">\n      <h4 :class=\"`${prefixCls}-panel-title`\">\n        <a @click=\"toggleIsOpen()\">\n           <slot name=\"header\">\n            {{header}}\n           </slot>\n        </a>\n      </h4>\n    </div>\n    <n3-collapse-transition>\n      <div\n        :class=\"`${prefixCls}-panel-collapse`\"\n        v-if=\"open\">\n        <div :class=\"`${prefixCls}-panel-body`\">\n          <slot></slot>\n        </div>\n      </div>\n    <n3-collapse-transition>\n  </div>";
 
 /***/ },
-/* 752 */
+/* 756 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(753)
+	module.exports = __webpack_require__(757)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(754)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(758)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -36122,7 +36535,7 @@
 	}
 
 /***/ },
-/* 753 */
+/* 757 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36131,7 +36544,7 @@
 	  value: true
 	});
 	
-	var _popoverMixins = __webpack_require__(729);
+	var _popoverMixins = __webpack_require__(733);
 	
 	var _popoverMixins2 = _interopRequireDefault(_popoverMixins);
 	
@@ -36189,19 +36602,19 @@
 	// <script>
 
 /***/ },
-/* 754 */
+/* 758 */
 /***/ function(module, exports) {
 
 	module.exports = "<span >\n    <span ref=\"trigger\">\n      <slot>\n      </slot>\n    </span>\n    <transition :name=\"effect\">\n      <div \n        style=\"max-width:none\"\n        :class=\"classObj\"\n        ref=\"popover\"\n        v-show=\"isShow\">\n          <div :class=\"`${prefixCls}-popover-arrow`\"></div>\n          <h3 :class=\"`${prefixCls}-popover-title`\" v-show=\"header\">{{title}}</h3>\n          <div :class=\"`${prefixCls}-popover-content`\" ref=\"content\">\n           <slot name=\"content\"></slot>\n          </div>\n      </div>\n    </transition>\n</span>";
 
 /***/ },
-/* 755 */
+/* 759 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(756)
+	module.exports = __webpack_require__(760)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(757)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(761)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -36219,7 +36632,7 @@
 	}
 
 /***/ },
-/* 756 */
+/* 760 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36228,15 +36641,15 @@
 	  value: true
 	});
 	
-	var _n3Popover = __webpack_require__(752);
+	var _n3Popover = __webpack_require__(756);
 	
 	var _n3Popover2 = _interopRequireDefault(_n3Popover);
 	
-	var _n3Button = __webpack_require__(689);
+	var _n3Button = __webpack_require__(495);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -36324,19 +36737,19 @@
 	// <script>
 
 /***/ },
-/* 757 */
+/* 761 */
 /***/ function(module, exports) {
 
 	module.exports = "<n3-popover\n    ref=\"popover\" \n    :effect=\"effect\"\n    :header=\"false\" \n    :placement=\"placement\" \n    trigger=\"click\">\n    <div slot=\"content\">\n        <p>{{content}}</p>\n        <div style=\"float:right; margin:10px;\">\n          <n3-button size=\"sm\" @click.native=\"$refs.popover.isShow = false\">{{cancelText}}</n3-button>\n          <n3-button size=\"sm\" type=\"primary\" @click.native=\"confirm\">{{okText}}</n3-button>\n        </div>\n    </div> \n    <slot></slot>\n  </n3-popover>";
 
 /***/ },
-/* 758 */
+/* 762 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(759)
+	module.exports = __webpack_require__(763)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(760)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(764)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -36354,7 +36767,7 @@
 	}
 
 /***/ },
-/* 759 */
+/* 763 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36423,19 +36836,19 @@
 	// </script>
 
 /***/ },
-/* 760 */
+/* 764 */
 /***/ function(module, exports) {
 
 	module.exports = "<div \n\t  :class=\"classObj\"\n\t  :style=\"{width: now + '%',height: height}\">\n\t  {{label ? now + '%':'' }}\n\t</div>";
 
 /***/ },
-/* 761 */
+/* 765 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(762)
+	module.exports = __webpack_require__(766)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(763)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(767)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -36453,7 +36866,7 @@
 	}
 
 /***/ },
-/* 762 */
+/* 766 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36479,19 +36892,19 @@
 	// </script>
 
 /***/ },
-/* 763 */
+/* 767 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-progress`\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 764 */
+/* 768 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(765)
+	module.exports = __webpack_require__(769)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(766)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(770)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -36509,7 +36922,7 @@
 	}
 
 /***/ },
-/* 765 */
+/* 769 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36518,19 +36931,19 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -36649,19 +37062,19 @@
 	// </script>
 
 /***/ },
-/* 766 */
+/* 770 */
 /***/ function(module, exports) {
 
 	module.exports = "<label :class=\"`${prefixCls}-radio-con`\">\n  <span :class=\"wrapClasses\">\n    <span :class=\"`${prefixCls}-radio-inner`\"></span> \n    <input \n    type=\"radio\" \n    :disabled=\"disabled\"\n    :checked=\"currentChecked\"\n    :class=\"`${prefixCls}-radio-input`\" \n    @click.prevent=\"handleClick\" >\n  </span>\n  <span><slot></slot></span>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"checked\">\n  </validate>\n</label>";
 
 /***/ },
-/* 767 */
+/* 771 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(768)
+	module.exports = __webpack_require__(772)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(769)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(773)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -36679,7 +37092,7 @@
 	}
 
 /***/ },
-/* 768 */
+/* 772 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36688,19 +37101,19 @@
 	  value: true
 	});
 	
-	var _n3Button = __webpack_require__(689);
+	var _n3Button = __webpack_require__(495);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -36803,19 +37216,19 @@
 	// </script>
 
 /***/ },
-/* 769 */
+/* 773 */
 /***/ function(module, exports) {
 
 	module.exports = "<n3-button \n    @click.prevent.native=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :type=\"currentChecked ? 'primary' : 'default'\">\n    <slot></slot>\n  </n3-button>";
 
 /***/ },
-/* 770 */
+/* 774 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(771)
+	module.exports = __webpack_require__(775)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(772)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(776)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -36833,7 +37246,7 @@
 	}
 
 /***/ },
-/* 771 */
+/* 775 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36842,27 +37255,27 @@
 	  value: true
 	});
 	
-	var _n3Radio = __webpack_require__(764);
+	var _n3Radio = __webpack_require__(768);
 	
 	var _n3Radio2 = _interopRequireDefault(_n3Radio);
 	
-	var _n3RadioBtn = __webpack_require__(767);
+	var _n3RadioBtn = __webpack_require__(771);
 	
 	var _n3RadioBtn2 = _interopRequireDefault(_n3RadioBtn);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -36963,19 +37376,19 @@
 	// </script>
 
 /***/ },
-/* 772 */
+/* 776 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-radio-group`\">\n    <slot></slot>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"value\">\n    </validate>\n\n  </div>";
 
 /***/ },
-/* 773 */
+/* 777 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(774)
+	module.exports = __webpack_require__(778)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(777)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(781)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -36993,7 +37406,7 @@
 	}
 
 /***/ },
-/* 774 */
+/* 778 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37002,39 +37415,39 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(663);
+	var _EventListener = __webpack_require__(676);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Button = __webpack_require__(689);
+	var _n3Button = __webpack_require__(495);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3Badge = __webpack_require__(694);
+	var _n3Badge = __webpack_require__(500);
 	
 	var _n3Badge2 = _interopRequireDefault(_n3Badge);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _render = __webpack_require__(775);
+	var _render = __webpack_require__(779);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -37412,10 +37825,10 @@
 	// <script>
 
 /***/ },
-/* 775 */
+/* 779 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(776)
+	module.exports = __webpack_require__(780)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (false) {
@@ -37435,7 +37848,7 @@
 	}
 
 /***/ },
-/* 776 */
+/* 780 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37444,7 +37857,7 @@
 	  value: true
 	});
 	
-	var _vue = __webpack_require__(651);
+	var _vue = __webpack_require__(671);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
@@ -37469,19 +37882,19 @@
 	// <script>
 
 /***/ },
-/* 777 */
+/* 781 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-select-group`\" >\n    <n3-button\n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      :class=\"[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,showselected&&multiple&&value.length ? `${prefixCls}-select-multiple` : '']\"\n      @click.native=\"toggleDropdown\">\n        <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n        <span  v-if=\"showselected\" >\n          <template v-for=\"item in selectedItems\" v-if=\"multiple\">\n            <render \n              @click.native.prevent.stop=\"del(item)\"\n              :class=\"`${prefixCls}-selected-tag`\" \n              :context=\"context || $parent._self\"\n              :template=\"format(item)\">\n            </render>\n          </template>\n          <template v-else>\n            <render :context=\"context || $parent._self\" :template=\"format(selectedItems[0])\"></render>\n          </template>\n        </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n    </n3-button>\n    <transition name=\"fadeDown\">\n      <ul \n        :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n        :class=\"`${prefixCls}-dropdown-menu`\" \n        ref=\"menu\" \n        v-show=\"show\">\n          <li v-if=\"search\">\n            <n3-input\n              :class=\"`${prefixCls}-select-search`\"\n              :placeholder=\"inputPlaceholder\"\n              v-model=\"searchText\"\n              @keydown.native.enter=\"addExtra\"\n            ></n3-input>\n            <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click.native=\"addExtra\"></n3-icon>\n          </li>\n          <li v-if=\"multiple\" :class=\"`${prefixCls}-select-all`\">\n            <a @click.prevent=\"selectAll\">\n              全选\n             <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n            </a>\n          </li>\n\n          <template v-if=\"currentOptions.length\">\n            <li v-for=\"option in filterOptions\" \n                :value=\"option.value\" \n                style=\"position:relative\">\n              <a @click.prevent=\"select(option)\" >\n                <span v-html=\"option.label\"></span>\n                <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n              </a>\n            </li>\n          </template>\n          <slot v-else ></slot>\n        <div :class=\"`${prefixCls}-notify`\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n      </ul>\n    </transition>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"value\">\n    </validate>\n  </div>";
 
 /***/ },
-/* 778 */
+/* 782 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(779)
+	module.exports = __webpack_require__(783)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(780)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(784)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -37499,7 +37912,7 @@
 	}
 
 /***/ },
-/* 779 */
+/* 783 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37582,19 +37995,19 @@
 	// </script>
 
 /***/ },
-/* 780 */
+/* 784 */
 /***/ function(module, exports) {
 
 	module.exports = "<div \n    :class=\"classObj\"\n    v-show=\"show\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 781 */
+/* 785 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(782)
+	module.exports = __webpack_require__(786)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(783)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(787)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -37612,7 +38025,7 @@
 	}
 
 /***/ },
-/* 782 */
+/* 786 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37621,11 +38034,11 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _n3Badge = __webpack_require__(694);
+	var _n3Badge = __webpack_require__(500);
 	
 	var _n3Badge2 = _interopRequireDefault(_n3Badge);
 	
@@ -37755,19 +38168,19 @@
 	// </script>
 
 /***/ },
-/* 783 */
+/* 787 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <ul :class=\"classObj\" >\n      <li\n          v-for=\"(r,index) in renderData\"\n          :class=\"liclassObj(index,r)\"\n          @click.prevent=\"handleTabListClick(index, r)\"\n          :disabled=\"r.disabled\">\n          <a href=\"#\">\n            {{r.header}}\n            <n3-badge v-if=\"r.badge\">{{r.badge}}</n3-badge>\n          </a>\n      </li>\n    </ul>\n    <div :class=\"`${prefixCls}-tab-content`\">\n      <div v-if=\"list\">\n          <span v-html='renderData[activeIndex].content'></span>\n      </div>\n      <slot v-else></slot>\n    </div>\n  </div>";
 
 /***/ },
-/* 784 */
+/* 788 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(785)
+	module.exports = __webpack_require__(789)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(786)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(790)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -37785,7 +38198,7 @@
 	}
 
 /***/ },
-/* 785 */
+/* 789 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37812,19 +38225,19 @@
 	// </script>
 
 /***/ },
-/* 786 */
+/* 790 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-btn-group`\">\n    <slot></slot>  \n  </div>";
 
 /***/ },
-/* 787 */
+/* 791 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(788)
+	module.exports = __webpack_require__(792)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(789)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(793)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -37842,7 +38255,7 @@
 	}
 
 /***/ },
-/* 788 */
+/* 792 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37885,19 +38298,19 @@
 	// </script>
 
 /***/ },
-/* 789 */
+/* 793 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\" >\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
-/* 790 */
+/* 794 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(791)
+	module.exports = __webpack_require__(795)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(792)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(796)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -37915,7 +38328,7 @@
 	}
 
 /***/ },
-/* 791 */
+/* 795 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -37941,19 +38354,19 @@
 	// </script>
 
 /***/ },
-/* 792 */
+/* 796 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-row`\">\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
-/* 793 */
+/* 797 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(794)
+	module.exports = __webpack_require__(798)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(795)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(799)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -37971,7 +38384,7 @@
 	}
 
 /***/ },
-/* 794 */
+/* 798 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38007,19 +38420,19 @@
 	// </script>
 
 /***/ },
-/* 795 */
+/* 799 */
 /***/ function(module, exports) {
 
 	module.exports = "<nav :class=\"`${prefixCls}-collapse ${prefixCls}-navbar-collapse ${prefixCls}-navbar-${theme} ${prefixCls}-navbar-${type} clearfix`\">\n\t\t<ul :class=\"`${prefixCls}-nav ${prefixCls}-navbar-nav`\">\n\t\t\t<slot></slot>\t\n\t\t</ul>\n\t</nav>";
 
 /***/ },
-/* 796 */
+/* 800 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(797)
+	module.exports = __webpack_require__(801)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(798)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(802)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -38037,7 +38450,7 @@
 	}
 
 /***/ },
-/* 797 */
+/* 801 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38046,11 +38459,11 @@
 	  value: true
 	});
 	
-	var _n3Dropdown = __webpack_require__(736);
+	var _n3Dropdown = __webpack_require__(740);
 	
 	var _n3Dropdown2 = _interopRequireDefault(_n3Dropdown);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
@@ -38092,19 +38505,19 @@
 	// </script>
 
 /***/ },
-/* 798 */
+/* 802 */
 /***/ function(module, exports) {
 
 	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show=\"show\" :click-close=\"true\" effect=\"collapse\" @show=\"$emit('show')\" @hide=\"$emit('hide')\" @toggle=\"$emit('toggle')\">\n    <div slot=\"trigger\" :class=\"`${prefixCls}-sub-nav-trigger`\" >\n      <slot name=\"title\"></slot>\n      <n3-icon :class=\"`${prefixCls}-sub-nav-fa`\" :type=\"show ? 'angle-up' : 'angle-down'\"></n3-icon>\n    </div>\n    <slot></slot>\n  </n3-dropdown>\n</span>";
 
 /***/ },
-/* 799 */
+/* 803 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(800)
+	module.exports = __webpack_require__(804)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(801)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(805)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -38122,7 +38535,7 @@
 	}
 
 /***/ },
-/* 800 */
+/* 804 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38168,19 +38581,19 @@
 	// </script>
 
 /***/ },
-/* 801 */
+/* 805 */
 /***/ function(module, exports) {
 
 	module.exports = "<li :class=\"classObj\">\n\t\t<slot></slot>\n\t</li>";
 
 /***/ },
-/* 802 */
+/* 806 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(803)
+	module.exports = __webpack_require__(807)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(804)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(808)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -38198,7 +38611,7 @@
 	}
 
 /***/ },
-/* 803 */
+/* 807 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38249,19 +38662,19 @@
 	// </script>
 
 /***/ },
-/* 804 */
+/* 808 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\" >\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
-/* 805 */
+/* 809 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(806)
+	module.exports = __webpack_require__(810)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(807)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(811)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -38279,7 +38692,7 @@
 	}
 
 /***/ },
-/* 806 */
+/* 810 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38288,15 +38701,15 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -38396,19 +38809,19 @@
 	// <script>
 
 /***/ },
-/* 807 */
+/* 811 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"inline\">\n  <input \n    v-show=\"false\"\n    type=\"checkbox\"\n    v-model=\"currentValue\"/>   \n  <div  :class=\"classObj\" @click=\"toggle\">\n    <div :class=\"`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`\">\n      <span :class=\"`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`\" >{{ontext}}</span>\n      <span :class=\"`${prefixCls}-switch-label`\" >&nbsp;</span>\n      <span :class=\"`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`\" >{{offtext}}</span>\n    </div>\n  </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n<div>\n</template>";
 
 /***/ },
-/* 808 */
+/* 812 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(809)
+	module.exports = __webpack_require__(813)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(813)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(817)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -38426,7 +38839,7 @@
 	}
 
 /***/ },
-/* 809 */
+/* 813 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38435,27 +38848,27 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _n3Typeahead = __webpack_require__(810);
+	var _n3Typeahead = __webpack_require__(814);
 	
 	var _n3Typeahead2 = _interopRequireDefault(_n3Typeahead);
 	
-	var _render = __webpack_require__(775);
+	var _render = __webpack_require__(779);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _valMixin = __webpack_require__(678);
+	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(679);
+	var _validate = __webpack_require__(692);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -38765,13 +39178,13 @@
 	// </script>
 
 /***/ },
-/* 810 */
+/* 814 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(811)
+	module.exports = __webpack_require__(815)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(812)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(816)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -38789,7 +39202,7 @@
 	}
 
 /***/ },
-/* 811 */
+/* 815 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38798,19 +39211,19 @@
 	  value: true
 	});
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _render = __webpack_require__(775);
+	var _render = __webpack_require__(779);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _inputMixin = __webpack_require__(703);
+	var _inputMixin = __webpack_require__(707);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -39016,25 +39429,25 @@
 	// </script>
 
 /***/ },
-/* 812 */
+/* 816 */
 /***/ function(module, exports) {
 
 	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    ref=\"input\"\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    v-model=\"query\"\n    :on-focus=\"onFocus\"\n    :on-blur=\"blur\"\n    @input.native=\"update\"\n    @keydown.native.up=\"up\"\n    @keydown.native.down=\"down\"\n    @keydown.native.enter= \"hit(null)\"\n    @keydown.native.esc=\"reset\"\n  ></n3-input>\n  <ul :class=\"`${prefixCls}-dropdown-menu`\" :style=\"{width: dropdownWidth, maxHeight: dropdownHeight}\">\n    <li v-for=\"(item,index) in citems\" :class=\"isActive(index)\" >\n      <a @mousedown.prevent=\"hit(index)\" >\n        <render :context=\"context || $parent._self\" :template=\"render(item)\">\n        </render>\n      </a>\n    </li> \n  </ul>\n</div>";
 
 /***/ },
-/* 813 */
+/* 817 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(item, index) in currentValue\">\n        <template v-if=\"index == currentPosition\">\n            <n3-typeahead\n              ref=\"typeahead\"\n              :placeholder=\"placeholder\"\n              :on-focus=\"onFocus\"\n              :on-blur=\"onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              v-model=\"currentQuery\" \n              :width='inputWidth'\n              :items=\"citems\"\n              :on-change=\"onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :data=\"data\"\n              @keydown.delete.native=\"del\" \n              @keydown.left.native=\"left\" \n              @keydown.right.native=\"right\" \n              @keydown.enter.native=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span :class=\"`${prefixCls}-multiple-input-space`\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span :class=\"`${prefixCls}-multiple-input-m-tag`\" >\n        <render class=\"inline\" :context=\"context || $parent._self\" :template=\"format(item, index)\"></render>\n        <n3-icon type=\"times\" :class=\"`${prefixCls}-multiple-close`\" @click.native=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"currentValue && currentValue.length == currentPosition\">\n      <n3-typeahead\n        ref=\"typeahead\"\n        :placeholder=\"placeholder\"\n        :on-focus=\"onFocus\"\n        :on-blur=\"onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        v-model=\"currentQuery\" \n        :width='inputWidth'\n        :items=\"citems\"\n        :on-change=\"onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :data=\"data\"\n        @keydown.delete.native=\"del\" \n        @keydown.left.native=\"left\" \n        @keydown.right.native=\"right\" \n        @keydown.enter.native=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span :class=\"`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`\"  @click=\"setIndex(currentValue.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>";
 
 /***/ },
-/* 814 */
+/* 818 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(815)
+	module.exports = __webpack_require__(819)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(816)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(820)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -39052,7 +39465,7 @@
 	}
 
 /***/ },
-/* 815 */
+/* 819 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39061,19 +39474,19 @@
 	  value: true
 	});
 	
-	var _n3Select = __webpack_require__(773);
+	var _n3Select = __webpack_require__(777);
 	
 	var _n3Select2 = _interopRequireDefault(_n3Select);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -39340,19 +39753,19 @@
 	// </script>
 
 /***/ },
-/* 816 */
+/* 820 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"inline\">\n    <ul :class=\"simpleWrapClasses\" v-if=\"simple\">\n      <li\n        title=\"上一页\"\n        :class=\"prevClasses\"\n        @click=\"prev\">\n        <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <div :class=\"simplePagerClasses\" :title=\"currentPage + '/' + allPages\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>  \n        <span>/</span>\n        {{ allPages }}\n      </div>\n      <li\n        title=\"下一页\"\n        :class=\"nextClasses\"\n        @click=\"next\">\n        <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n    </ul>\n    <ul :class=\"wrapClasses\" v-else>\n      <span :class=\"[prefixCls + '-page-total']\" v-if=\"showTotal\">\n          <slot>共 {{ total }} 条</slot>\n      </span>\n      <li\n          title=\"上一页\"\n          :class=\"prevClasses\"\n          @click=\"prev\">\n          <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <li title=\"第一页\" :class=\"firstPageClasses\" @click=\"changePage(1)\"><a>1</a></li>\n      <li title=\"向前 5 页\" v-if=\"currentPage - 3 > 1\" :class=\"[prefixCls + '-page-item-jump-prev']\" @click=\"fastPrev\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"preventer\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"currentPage - 2\" v-if=\"currentPage - 2 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 2)\"><a>{{ currentPage - 2 }}</a></li>\n      <li :title=\"currentPage - 1\" v-if=\"currentPage - 1 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 1)\"><a>{{ currentPage - 1 }}</a></li>\n      <li :title=\"currentPage\" v-if=\"currentPage != 1 && currentPage != allPages\" :class=\"[prefixCls + '-page-item',prefixCls + '-page-item-active']\"><a>{{ currentPage }}</a></li>\n      <li :title=\"currentPage + 1\" v-if=\"currentPage + 1 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 1)\"><a>{{ currentPage + 1 }}</a></li>\n      <li :title=\"currentPage + 2\" v-if=\"currentPage + 2 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 2)\"><a>{{ currentPage + 2 }}</a></li>\n      <li title=\"向后 5 页\" v-if=\"currentPage + 3 < allPages\" :class=\"[prefixCls + '-page-item-jump-next']\" @click=\"fastNext\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"nextenter\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"'最后一页:' + allPages\" v-if=\"allPages > 1\" :class=\"lastPageClasses\" @click=\"changePage(allPages)\"><a>{{ allPages }}</a></li>\n      <li\n          title=\"下一页\"\n          :class=\"nextClasses\"\n          @click=\"next\">\n          <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n      <n3-select\n        v-if=\"showSizer\"\n        v-model=\"currentPagesize\"\n        :options=\"pagesizeOptsCom\"\n        :on-change=\"onSize\">\n      </n3-select>\n      <div class=\"inline\" v-if=\"showElevator\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>\n        <n3-button @click.native=\"goPage\">跳转</n3-button>\n      </div>\n    </ul>\n  </div>";
 
 /***/ },
-/* 817 */
+/* 821 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(818)
+	module.exports = __webpack_require__(822)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(819)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(823)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -39370,7 +39783,7 @@
 	}
 
 /***/ },
-/* 818 */
+/* 822 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39445,19 +39858,19 @@
 	// </script>
 
 /***/ },
-/* 819 */
+/* 823 */
 /***/ function(module, exports) {
 
 	module.exports = "<ul v-if=\"round\" :class=\"`${prefixCls}-steps-round-con`\">\n   <template v-for=\"(label,index) in labels\">\n      <li :class=\"[getClassFromIndex(index)]\">\n      <div :class=\"`${prefixCls}-steps-wrap`\">\n        <div :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</div>\n      </div>\n      <label>{{label}}</label>\n    </li>\n   </template>\n  </ul>\n\n  <div v-else :class=\"`${prefixCls}-steps clearfix`\">\n        <template v-for=\"(label,index) in labels\">\n            <div :class=\"`${prefixCls}-steps-wrap`\">\n                <div :class=\"getClassFromIndex(index)\">\n                    <label>\n                      <span :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</span>\n                      <span>{{label}}</span>\n                    </label>\n                    <template v-if=\"index < labels.length - 1\">\n                        <i :class=\"`${prefixCls}-steps-triangle-right-bg`\"></i>\n                        <i :class=\"`${prefixCls}-steps-triangle-right`\"></i>\n                    </template>\n                </div>\n            </div>\n        </template>\n    </div>";
 
 /***/ },
-/* 820 */
+/* 824 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(821)
+	module.exports = __webpack_require__(825)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(822)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(826)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -39475,7 +39888,7 @@
 	}
 
 /***/ },
-/* 821 */
+/* 825 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39484,35 +39897,35 @@
 	  value: true
 	});
 	
-	var _render = __webpack_require__(775);
+	var _render = __webpack_require__(779);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _n3Page = __webpack_require__(814);
+	var _n3Page = __webpack_require__(818);
 	
 	var _n3Page2 = _interopRequireDefault(_n3Page);
 	
-	var _n3Select = __webpack_require__(773);
+	var _n3Select = __webpack_require__(777);
 	
 	var _n3Select2 = _interopRequireDefault(_n3Select);
 	
-	var _n3Button = __webpack_require__(689);
+	var _n3Button = __webpack_require__(495);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(701);
+	var _n3Input = __webpack_require__(705);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _n3Loading = __webpack_require__(691);
+	var _n3Loading = __webpack_require__(497);
 	
 	var _n3Loading2 = _interopRequireDefault(_n3Loading);
 	
-	var _type2 = __webpack_require__(656);
+	var _type2 = __webpack_require__(490);
 	
 	var _type3 = _interopRequireDefault(_type2);
 	
@@ -40198,19 +40611,19 @@
 	// </script>
 
 /***/ },
-/* 822 */
+/* 826 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-data-table`\">\n  <div :class=\"`${prefixCls}-data-table-bar clearfix`\">\n    <n3-select \n      class='pull-left'\n      style=\"margin-right:10px;\"\n      multiple\n      :showselected=\"false\"\n      v-if=\"selectCol\"\n      placeholder = \"显示的列\"\n      :options=\"selectOptions\" \n      v-model=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" :class=\"`pull-left ${prefixCls}-btn-group`\">\n      <template v-for=\"item in filterArr\">\n        <n3-select \n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n          :search = \"item.search === undefined?true:!!item.search\"\n          :extra = \"item.extra === undefined?true:!!item.extra\"\n          :showselected=\"false\"\n          :placeholder = \"item.title\"\n          :options=\"item.options\" \n          v-model=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\n        @click.native=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\n        @click.native=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\" \n        style=\"margin-left:10px;\"\n        @click.native=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      v-model=\"query\"\n      @keydown.native.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" :class=\"`${prefixCls}-data-table-row-select`\">\n                  <input v-if=\"list && list.length\" \n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                    @change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in showColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                    <span>{{col.title}} </span> \n                    <div :class=\"`${prefixCls}-data-table-sort pull-right`\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.native.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.native.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(data,index) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" :class=\"`${prefixCls}-row-select`\">\n                   <input type=\"checkbox\" \n                    v-model=\"checkedValues\"  \n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in showColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      <render :context=\"context || $parent._self\" :template=\"col.render(data[col.dataIndex],data,index)\"></render>\n                    </template>\n                    <template v-else>\n                      <span v-html=\"col.dataIndex ? data[col.dataIndex] : ''\"></span>\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div :class=\"`${prefixCls}-data-table-bar ${prefixCls}-data-table-page`\" v-if=\"page\" >\n    <n3-page\n      v-if=\"page\" \n      :total=\"cpage.total\" \n      :current=\"cpage.current\" \n      :pagesize=\"cpage.pagesize\" \n      :on-change=\"pageChange\"\n      :show-sizer=\"true\"\n      :show-total=\"true\"\n      :pagesize-opts=\"cpage.pagesizeOpts\">\n    </n3-page>\n    </div>\n  </div>\n  </div>";
 
 /***/ },
-/* 823 */
+/* 827 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(824)
+	module.exports = __webpack_require__(828)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(828)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(832)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -40228,7 +40641,7 @@
 	}
 
 /***/ },
-/* 824 */
+/* 828 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40237,15 +40650,15 @@
 	  value: true
 	});
 	
-	var _n3TimelineItem = __webpack_require__(825);
+	var _n3TimelineItem = __webpack_require__(829);
 	
 	var _n3TimelineItem2 = _interopRequireDefault(_n3TimelineItem);
 	
-	var _render = __webpack_require__(775);
+	var _render = __webpack_require__(779);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -40284,13 +40697,13 @@
 	// <script>
 
 /***/ },
-/* 825 */
+/* 829 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(826)
+	module.exports = __webpack_require__(830)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(827)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(831)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -40308,7 +40721,7 @@
 	}
 
 /***/ },
-/* 826 */
+/* 830 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40354,25 +40767,25 @@
 	// </script>
 
 /***/ },
-/* 827 */
+/* 831 */
 /***/ function(module, exports) {
 
 	module.exports = "<li :class=\"`${prefixCls}-timeline-item`\">\n \t\t<div :class=\"`${prefixCls}-timeline-item-tail`\"></div>\n \t\t<div :class=\"[prefixCls+'-timeline-item-head',icon?prefixCls+'-fa '+prefixCls+'-fa-'+icon:'']\" :style=\"style\"></div>\n \t\t<div :class=\"`${prefixCls}-timeline-item-content`\">\n\t \t\t<slot></slot>\n \t\t</div>\n \t</li>";
 
 /***/ },
-/* 828 */
+/* 832 */
 /***/ function(module, exports) {
 
 	module.exports = "<ul :class=\"`${prefixCls}-timeline-con`\">\n \t\t<template v-if=\"value\">\n \t\t\t<n3-timeline-item v-for=\"i in value\" :color=\"i.color\" :icon=\"i.icon\" >\n \t\t\t\t<render :context=\"context || $parent._self\" :template=\"i.content\"></render>\n \t\t\t</n3-timeline-item>\n \t\t</template>\n \t\t<template v-else>\n \t\t\t<slot></slot>\n \t\t</template>\n \t</ul>";
 
 /***/ },
-/* 829 */
+/* 833 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(830)
+	module.exports = __webpack_require__(834)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(831)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(835)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -40390,7 +40803,7 @@
 	}
 
 /***/ },
-/* 830 */
+/* 834 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40399,7 +40812,7 @@
 	  value: true
 	});
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
@@ -40505,19 +40918,19 @@
 	// <script>
 
 /***/ },
-/* 831 */
+/* 835 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\">\n\t<label \n  \tv-for=\"i in currentValue\" \n\t  :class=\"tagClass(i)\">\n\t {{i.label}}\n\t<a name=\"remove\" v-if=\"removable\" @click=\"del(i)\"><n3-icon type=\"times\"></n3-icon></a>\n\t</label>\n</div>";
 
 /***/ },
-/* 832 */
+/* 836 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(833)
+	module.exports = __webpack_require__(837)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(834)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(838)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -40535,7 +40948,7 @@
 	}
 
 /***/ },
-/* 833 */
+/* 837 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40561,19 +40974,19 @@
 	// </script>
 
 /***/ },
-/* 834 */
+/* 838 */
 /***/ function(module, exports) {
 
 	module.exports = "<ol :class=\"`${prefixCls}-breadcrumb`\">\n\t\t<slot></slot>\n\t</ol>";
 
 /***/ },
-/* 835 */
+/* 839 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(836)
+	module.exports = __webpack_require__(840)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(837)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(841)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -40591,7 +41004,7 @@
 	}
 
 /***/ },
-/* 836 */
+/* 840 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40628,19 +41041,19 @@
 	// </script>
 
 /***/ },
-/* 837 */
+/* 841 */
 /***/ function(module, exports) {
 
 	module.exports = "<li :class=\"[active ? prefixCls + '-breadcrumb-active' : '']\">\n\t\t<a v-if='href' :href=\"href\" >\n    \t<slot></slot>\n  \t</a>\n  \t<span v-else>\n    \t<slot></slot>\n  \t</span>\n  \t</li>";
 
 /***/ },
-/* 838 */
+/* 842 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(839)
+	module.exports = __webpack_require__(843)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(840)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(844)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -40658,7 +41071,7 @@
 	}
 
 /***/ },
-/* 839 */
+/* 843 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40667,11 +41080,11 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
@@ -40799,19 +41212,19 @@
 	// </script>
 
 /***/ },
-/* 840 */
+/* 844 */
 /***/ function(module, exports) {
 
 	module.exports = "<form :class=\"classObj\"  @submit.prevent=\"noop\">\n      <slot></slot>\n  </form>";
 
 /***/ },
-/* 841 */
+/* 845 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(842)
+	module.exports = __webpack_require__(846)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(843)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(847)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -40829,7 +41242,7 @@
 	}
 
 /***/ },
-/* 842 */
+/* 846 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40912,19 +41325,19 @@
 	// </script>
 
 /***/ },
-/* 843 */
+/* 847 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\" >\n    <label :class=\"`${prefixCls}-col-sm-${label_col} ${prefixCls}-control-label`\">\n      <em :class=\"`${prefixCls}-form-need`\" v-if=\"need\" >*</em>\n      {{label}}\n      </label>\n    <div :class=\"`${prefixCls}-col-sm-${col} inline`\">\n      <slot></slot>\n    </div>  \n  </div>";
 
 /***/ },
-/* 844 */
+/* 848 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(845)
+	module.exports = __webpack_require__(849)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(846)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(850)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -40942,7 +41355,7 @@
 	}
 
 /***/ },
-/* 845 */
+/* 849 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40951,7 +41364,7 @@
 	  value: true
 	});
 	
-	var _element = __webpack_require__(664);
+	var _element = __webpack_require__(677);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -40998,19 +41411,19 @@
 	// <script>
 
 /***/ },
-/* 846 */
+/* 850 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-carousel-item`\">\n    <slot></slot>\n  </div>";
 
 /***/ },
-/* 847 */
+/* 851 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(848)
+	module.exports = __webpack_require__(852)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(853)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(857)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -41028,7 +41441,7 @@
 	}
 
 /***/ },
-/* 848 */
+/* 852 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41037,7 +41450,7 @@
 	  value: true
 	});
 	
-	var _store = __webpack_require__(849);
+	var _store = __webpack_require__(853);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -41129,7 +41542,7 @@
 	
 	
 	  components: {
-	    N3TreeNode: __webpack_require__(850)
+	    N3TreeNode: __webpack_require__(854)
 	  },
 	
 	  computed: {
@@ -41159,7 +41572,7 @@
 	// </script>
 
 /***/ },
-/* 849 */
+/* 853 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41170,7 +41583,7 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -41258,13 +41671,13 @@
 	exports.default = Store;
 
 /***/ },
-/* 850 */
+/* 854 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(851)
+	module.exports = __webpack_require__(855)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(852)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(856)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -41282,7 +41695,7 @@
 	}
 
 /***/ },
-/* 851 */
+/* 855 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41291,19 +41704,19 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _events = __webpack_require__(681);
+	var _events = __webpack_require__(694);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _n3CollapseTransition = __webpack_require__(738);
+	var _n3CollapseTransition = __webpack_require__(742);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
-	var _n3Checkbox = __webpack_require__(684);
+	var _n3Checkbox = __webpack_require__(697);
 	
 	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
 	
@@ -41476,25 +41889,25 @@
 	// </script>
 
 /***/ },
-/* 852 */
+/* 856 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <div :class=\"`${prefixCls}-tree-node`\">\n      <div :class=\"`${prefixCls}-tree-node-data`\"></div>\n        <span\n          :class=\"[true ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']\"\n          @click.prevent=\"clickHandler(node.value)\">\n          <span v-if=\"node.children\">\n            <n3-icon\n              :class=\"`${prefixCls}-tree-select-icon`\"\n              :type=\"expanded ? tree.openedIcon : tree.closedIcon\"\n              @click.stop=\"expandIconClickHanlder\"\n              >\n            </n3-icon>\n            <span\n              :class=\"`${prefixCls}-tree-loading-box`\"\n              v-show=\"loading\"\n            >\n              <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n            </span>\n          </span>\n          <span :class=\"`${prefixCls}-tree-select-box`\" v-if=\"!tree.checkable\">\n            <n3-checkbox :checked=\"node.value\" :on-change=\"checkChangeHanlder\"></n3-checkbox>\n          </span>\n          <label :class=\"`${prefixCls}-tree-loading-box`\">\n            <n3-icon :type=\"node.icon || tree.icon\"></n3-icon>\n            <span>{{node.label}}</span>\n          </label>\n        </span>\n      </div>\n      <n3-collapse-transition>\n        <div :class=\"`${prefixCls}-tree-children`\" v-show=\"expanded\">\n          <div :class=\"`${prefixCls}-tree-nodes`\" v-for=\"child in node.children\">\n            <n3-tree-node\n              class=\"inner\"\n              :node=\"child\"\n              >\n            </n3-tree-node>\n          </div>\n        </div>\n      </n3-collapse-transition>\n    </div>\n  </div>";
 
 /***/ },
-/* 853 */
+/* 857 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"n3-tree\">\n    <n3-tree-node\n      v-for=\"child in data\"\n      :node=\"child\"\n    >\n    </n3-tree-node>\n    <div v-if=\"isValidTree\">\n      <span>{{ emptyText }}</span>\n    </div>\n  </div>";
 
 /***/ },
-/* 854 */
+/* 858 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(855)
+	module.exports = __webpack_require__(859)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(856)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(860)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -41512,7 +41925,7 @@
 	}
 
 /***/ },
-/* 855 */
+/* 859 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -41556,19 +41969,19 @@
 	// </script>
 
 /***/ },
-/* 856 */
+/* 860 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"classObj\">\n\t\t<slot></slot>\n\t</div>";
 
 /***/ },
-/* 857 */
+/* 861 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(858)
+	module.exports = __webpack_require__(862)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(859)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(863)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -41586,7 +41999,7 @@
 	}
 
 /***/ },
-/* 858 */
+/* 862 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41595,7 +42008,7 @@
 	  value: true
 	});
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
@@ -41879,19 +42292,19 @@
 	// <script>
 
 /***/ },
-/* 859 */
+/* 863 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"`${prefixCls}-rate`\">\n    <span\n      v-for=\"item in max\"\n      :class=\"`${prefixCls}-rate-item`\"\n      @mousemove=\"setCurrentValue(item, $event)\"\n      @mouseleave=\"resetCurrentValue\"\n      @click=\"selectValue(item)\"\n      :style=\"{ cursor: disabled ? 'auto' : 'pointer' }\">\n      \n      <n3-icon\n        :type=\"classes[item - 1]\"\n        :class=\"[{ 'hover': hoverIndex === item }, `${prefixCls}-rate-icon`]\"\n        :style=\"getIconStyle(item)\">\n        <n3-icon\n          :type=\"decimalIconClass\"\n          v-if=\"showDecimalIcon(item)\"\n          :class=\"`${prefixCls}-rate-decimal`\"\n          :style=\"decimalStyle\">\n        </n3-icon>\n      </n3-icon>\n\n    </span>\n    <span v-if=\"showText\" :class=\"`${prefixCls}-rate-text`\" :style=\"{ color: textColor }\">{{ text }}</span>\n  </div>";
 
 /***/ },
-/* 860 */
+/* 864 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(861)
+	module.exports = __webpack_require__(865)
 	
 	if (module.exports.__esModule) module.exports = module.exports.default
-	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(862)
+	;(typeof module.exports === "function" ? module.exports.options : module.exports).template = __webpack_require__(866)
 	if (false) {
 	(function () {
 	var hotAPI = require("vue-hot-reload-api")
@@ -41909,7 +42322,7 @@
 	}
 
 /***/ },
-/* 861 */
+/* 865 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42003,27 +42416,27 @@
 	// <script>
 	
 	
-	var _n3Icon = __webpack_require__(657);
+	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Button = __webpack_require__(689);
+	var _n3Button = __webpack_require__(495);
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3Progress = __webpack_require__(761);
+	var _n3Progress = __webpack_require__(765);
 	
 	var _n3Progress2 = _interopRequireDefault(_n3Progress);
 	
-	var _n3Progressbar = __webpack_require__(758);
+	var _n3Progressbar = __webpack_require__(762);
 	
 	var _n3Progressbar2 = _interopRequireDefault(_n3Progressbar);
 	
-	var _n3ToastMethod = __webpack_require__(707);
+	var _n3ToastMethod = __webpack_require__(711);
 	
 	var _n3ToastMethod2 = _interopRequireDefault(_n3ToastMethod);
 	
-	var _type = __webpack_require__(656);
+	var _type = __webpack_require__(490);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -42344,19 +42757,19 @@
 	// </script>
 
 /***/ },
-/* 862 */
+/* 866 */
 /***/ function(module, exports) {
 
 	module.exports = "<div :class=\"[prefixCls + '-upload']\" :id=\"`upload-${uploadId}`\">\n    <div v-if=\"type === 'click'\">\n      <label>\n        <input\n          type=\"file\"\n          :name=\"name\"\n          :accept=\"accept\"\n          :id=\"uploadId\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <slot>\n          <n3-button>\n            <n3-icon type=\"cloud-upload\"></n3-icon>\n            点击上传\n          </n3-button>\n        </slot>\n      </label>\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click.native=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n    <div v-if=\"type === 'drag'\"\n         :class=\"[prefixCls + '-upload-drag']\">\n      <div \n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\n        :style=\"{width:dragWidth,height:dragHeight}\">\n        <input type=\"file\"\n          :name=\"name\"\n          :id=\"uploadId\"\n          :accept=\"accept\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <label :for=\"uploadId\"\n            :class=\"[prefixCls + '-upload-drag-area']\">\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\n      </label>\n      </div>\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
-/* 863 */
+/* 867 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(864);
+	var content = __webpack_require__(868);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(462)(content, {});
@@ -42376,7 +42789,7 @@
 	}
 
 /***/ },
-/* 864 */
+/* 868 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(461)();
@@ -42388,368 +42801,6 @@
 	
 	// exports
 
-
-/***/ },
-/* 865 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(866);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(462)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-37e1aaf8&file=n3AlertDocs-1.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-1.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-37e1aaf8&file=n3AlertDocs-1.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-1.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 866 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(461)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".alert-icon-float-left {\n  font-size:32px;float:left;margin-right:5px;\n}", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 867 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _n3Alert = __webpack_require__(654);
-	
-	var _n3Alert2 = _interopRequireDefault(_n3Alert);
-	
-	var _n3Button = __webpack_require__(689);
-	
-	var _n3Button2 = _interopRequireDefault(_n3Button);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	// <template><section><template>
-	//   <div class="bs-docs-section" id="提示消息">
-	//     <h1 class="page-header">
-	//       <a href="#提示消息" class="anchor">提示消息</a><span class="author"> </span>
-	//     </h1>
-	//     <div class="bs-example">
-	//       <n3-button type="success" @click.native="openRight">
-	//         点击出现在右边
-	//       </n3-button>
-	// <pre><code>  &lt;n3-button type='danger'
-	//     @click.native=&quot;openTop&quot;&gt;
-	//    点击出现在顶部
-	//   &lt;/n3-button&gt;
-	//   &lt;hr&gt;
-	
-	//   &lt;n3-alert  dismissable :show=&quot;true&quot;&gt;
-	//     &lt;strong&gt;default style&lt;/strong&gt;
-	//     This is the default style.
-	//   &lt;/n3-alert&gt;
-	//   &lt;br&gt;
-	//   &lt;n3-alert type=&quot;success&quot; :show=&quot;true&quot;&gt;
-	//     &lt;strong&gt;Well Done!&lt;/strong&gt;
-	//     You successfully read this important alert message.
-	//   &lt;/n3-alert&gt;
-	//   &lt;br&gt;
-	//   &lt;n3-alert type=&quot;info&quot; :show=&quot;true&quot;&gt;
-	//     &lt;strong&gt;Heads up!&lt;/strong&gt; This alert needs your attention, but it's not super important.
-	//   &lt;/n3-alert&gt;
-	//   &lt;br&gt;
-	//   &lt;n3-alert type=&quot;danger&quot; dismissable :show=&quot;true&quot;&gt;
-	//     &lt;strong&gt;Oh snap!&lt;/strong&gt; Change a few things up and try submitting again.
-	//   &lt;/n3-alert&gt;
-	//   &lt;br&gt;
-	//   &lt;n3-alert type=&quot;warning&quot; dismissable :show=&quot;true&quot;&gt;
-	//     &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you're not looking too good.
-	//     &lt;hr&gt;
-	//   &lt;/n3-alert&gt;
-	//   &lt;br&gt;
-	//   &lt;n3-alert
-	//     :show=&quot;true&quot;
-	//     type=&quot;success&quot;
-	//     width=&quot;700px&quot;
-	//     message=&quot;信息提示&quot;
-	//     description&gt;
-	//     这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
-	//   &lt;/n3-alert&gt;
-	//   &lt;br&gt;
-	//   &lt;n3-alert
-	//     :show=&quot;true&quot;
-	//     type=&quot;danger&quot;
-	//     width=&quot;700px&quot;
-	//     message=&quot;错误提示&quot;
-	//     description
-	//     dismissable&gt;
-	//     这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
-	//   &lt;/n3-alert&gt;
-	//   &lt;br&gt;
-	//   &lt;n3-alert
-	//     :show=&quot;true&quot;
-	//     type=&quot;info&quot;
-	//     width=&quot;700px&quot;
-	//     message=&quot;错误提示&quot;
-	//     :on-close=&quot;close&quot;
-	//     description
-	//     dismissable&gt;
-	//     点击关闭按钮的回调函数,打开控制台看看:)
-	//   &lt;/n3-alert&gt;
-	//   &lt;n3-alert
-	//     ref=&quot;alertRight&quot;
-	//     type=&quot;success&quot;
-	//     width=&quot;700px&quot;
-	//     placement=&quot;top-right&quot;
-	//     message=&quot;信息提示&quot;
-	//     description
-	//     dismissable&gt;
-	//     &lt;p&gt;You successfully read this important alert message.&lt;/p&gt;
-	//   &lt;/n3-alert&gt;
-	//   &lt;n3-alert
-	//     ref=&quot;alertTop&quot;
-	//     :duration=&quot;3000&quot;
-	//     type=&quot;danger&quot;
-	//     placement=&quot;top&quot;
-	//     message=&quot;警告&quot;
-	//     description
-	//     dismissable&gt;
-	//     &lt;strong&gt;Heads up!&lt;/strong&gt;
-	//     &lt;p&gt;This alert needs your attention.&lt;/p&gt;
-	//   &lt;/n3-alert&gt;
-	// &lt;/div&gt;
-	// </code></pre>
-	// <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">n3-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">'success'</span>
-	//         <span class="hljs-attr">@click.native</span>=<span class="hljs-string">"openRight"</span>&gt;</span>
-	//         点击出现在右边
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-button</span>&gt;</span>
-	
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">'danger'</span>
-	//         <span class="hljs-attr">@click.native</span>=<span class="hljs-string">"openTop"</span>&gt;</span>
-	//        点击出现在顶部
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-button</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
-	
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>  <span class="hljs-attr">dismissable</span> <span class="hljs-attr">:show</span>=<span class="hljs-string">"true"</span>&gt;</span>
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>default style<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
-	//         This is the default style.
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span> <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>&gt;</span>
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Well Done!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
-	//         You successfully read this important alert message.
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span> <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>&gt;</span>
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Heads up!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> This alert needs your attention, but it's not super important.
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"danger"</span> <span class="hljs-attr">dismissable</span> <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>&gt;</span>
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Oh snap!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Change a few things up and try submitting again.
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"warning"</span> <span class="hljs-attr">dismissable</span> <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>&gt;</span>
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Warning!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> Better check yourself, you're not looking too good.
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
-	//         <span class="hljs-attr">:show</span>=<span class="hljs-string">"true"</span>
-	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>
-	//         <span class="hljs-attr">width</span>=<span class="hljs-string">"700px"</span>
-	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"信息提示"</span>
-	//         <span class="hljs-attr">description</span>&gt;</span>
-	//         这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
-	//         <span class="hljs-attr">:show</span>=<span class="hljs-string">"true"</span>
-	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"danger"</span>
-	//         <span class="hljs-attr">width</span>=<span class="hljs-string">"700px"</span>
-	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"错误提示"</span>
-	//         <span class="hljs-attr">description</span>
-	//         <span class="hljs-attr">dismissable</span>&gt;</span>
-	//         这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
-	//         <span class="hljs-attr">show</span>=<span class="hljs-string">"true"</span>
-	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"info"</span>
-	//         <span class="hljs-attr">width</span>=<span class="hljs-string">"700px"</span>
-	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"错误提示"</span>
-	//         <span class="hljs-attr">:on-close</span>=<span class="hljs-string">"close"</span>
-	//         <span class="hljs-attr">description</span>
-	//         <span class="hljs-attr">dismissable</span>&gt;</span>
-	//         点击关闭按钮的回调函数,打开控制台看看:)
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
-	//         <span class="hljs-attr">ref</span>=<span class="hljs-string">"alertRight"</span>
-	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"success"</span>
-	//         <span class="hljs-attr">width</span>=<span class="hljs-string">"700px"</span>
-	//         <span class="hljs-attr">placement</span>=<span class="hljs-string">"top-right"</span>
-	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"信息提示"</span>
-	//         <span class="hljs-attr">description</span>
-	//         <span class="hljs-attr">dismissable</span>&gt;</span>
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>You successfully read this important alert message.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;<span class="hljs-name">n3-alert</span>
-	//         <span class="hljs-attr">ref</span>=<span class="hljs-string">"alertTop"</span>
-	//         <span class="hljs-attr">:duration</span>=<span class="hljs-string">"3000"</span>
-	//         <span class="hljs-attr">type</span>=<span class="hljs-string">"danger"</span>
-	//         <span class="hljs-attr">placement</span>=<span class="hljs-string">"top"</span>
-	//         <span class="hljs-attr">message</span>=<span class="hljs-string">"警告"</span>
-	//         <span class="hljs-attr">description</span>
-	//         <span class="hljs-attr">dismissable</span>&gt;</span>
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Heads up!<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
-	//         <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This alert needs your attention.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-	//       <span class="hljs-tag">&lt;/<span class="hljs-name">n3-alert</span>&gt;</span>
-	// </code></pre>
-	// <pre><code class="language-javascript">    methods: {
-	//       openRight () {
-	//         <span class="hljs-keyword">this</span>.$refs.alertRight.open()
-	//       },
-	//       openTop () {
-	//         <span class="hljs-keyword">this</span>.$refs.alertTop.open()
-	//       },
-	//       close () {
-	//         <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'你点击了关闭按钮'</span>)
-	//       }
-	//     }
-	// </code></pre>
-	// <pre><code>&lt;h2&gt;参数&lt;/h2&gt;
-	// &lt;table class=&quot;table table-bordered&quot;&gt;
-	//   &lt;thead&gt;
-	//     &lt;tr&gt;
-	//       &lt;th&gt;参数名&lt;/th&gt;
-	//       &lt;th&gt;类型&lt;/th&gt;
-	//       &lt;th&gt;默认值&lt;/th&gt;
-	//       &lt;th&gt;说明&lt;/th&gt;
-	//     &lt;/tr&gt;
-	//   &lt;/thead&gt;
-	//   &lt;tbody&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;show&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;是否显示&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;dismissable&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;是否显示关闭按钮&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;type&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;, 如: 
-	//       &lt;code&gt;default&lt;/code&gt;
-	//       &lt;code&gt;success&lt;/code&gt;
-	//       &lt;code&gt;info&lt;/code&gt;
-	//       &lt;code&gt;warning&lt;/code&gt;
-	//       &lt;code&gt;danger&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;success&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;组件样式&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;duration&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;自动关闭延时,设置 &lt;code&gt;0&lt;/code&gt; 或者负数，表示不会自动关闭&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;width&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;例如&quot;700px&quot;&lt;/td&gt;
-	//       &lt;td&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;small&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;/td&gt;
-	//       &lt;td&gt;缩小&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;placement&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;. 如:  &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;top-right&lt;/code&gt;,&lt;code&gt;top-left&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;,&lt;code&gt;bottom-left&lt;/code&gt;, &lt;code&gt;bottom-right&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;/td&gt;
-	//       &lt;td&gt;组件位置&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;description&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;false&lt;/td&gt;
-	//       &lt;td&gt;警告提示&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;message&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;/td&gt;
-	//       &lt;td&gt;在设置description时有效&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//     &lt;tr&gt;
-	//       &lt;td&gt;on-close&lt;/td&gt;
-	//       &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;
-	//       &lt;td&gt;&lt;/td&gt;
-	//       &lt;td&gt;点击关闭按钮时触发&lt;/td&gt;
-	//     &lt;/tr&gt;
-	//   &lt;/tbody&gt;
-	// &lt;/table&gt;
-	// </code></pre>
-	//   </div>
-	// </div></template>
-	
-	
-	// </section></template>
-	// <style>
-	// .alert-icon-float-left {
-	//   font-size:32px;float:left;margin-right:5px;
-	// }
-	// </style>
-	// <script>
-	exports.default = {
-	  methods: {
-	    openRight: function openRight() {
-	      this.$refs.alertRight.open();
-	    },
-	    openTop: function openTop() {
-	      this.$refs.alertTop.open();
-	    },
-	    close: function close() {
-	      console.log('你点击了关闭按钮');
-	    }
-	  },
-	  components: {
-	    n3Alert: _n3Alert2.default,
-	    n3Button: _n3Button2.default
-	  }
-	};
-	// </script>
-
-/***/ },
-/* 868 */
-/***/ function(module, exports) {
-
-	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"提示消息\">\n    <h1 class=\"page-header\">\n      <a href=\"#提示消息\" class=\"anchor\">提示消息</a><span class=\"author\"> </span>\n    </h1>\n    <div class=\"bs-example\">\n      <n3-button type=\"success\" @click.native=\"openRight\">\n        点击出现在右边\n      </n3-button>\n<pre><code>  &lt;n3-button type='danger'\n    @click.native=&quot;openTop&quot;&gt;\n   点击出现在顶部\n  &lt;/n3-button&gt;\n  &lt;hr&gt;\n\n  &lt;n3-alert  dismissable :show=&quot;true&quot;&gt;\n    &lt;strong&gt;default style&lt;/strong&gt;\n    This is the default style.\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert type=&quot;success&quot; :show=&quot;true&quot;&gt;\n    &lt;strong&gt;Well Done!&lt;/strong&gt;\n    You successfully read this important alert message.\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert type=&quot;info&quot; :show=&quot;true&quot;&gt;\n    &lt;strong&gt;Heads up!&lt;/strong&gt; This alert needs your attention, but it's not super important.\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert type=&quot;danger&quot; dismissable :show=&quot;true&quot;&gt;\n    &lt;strong&gt;Oh snap!&lt;/strong&gt; Change a few things up and try submitting again.\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert type=&quot;warning&quot; dismissable :show=&quot;true&quot;&gt;\n    &lt;strong&gt;Warning!&lt;/strong&gt; Better check yourself, you're not looking too good.\n    &lt;hr&gt;\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert\n    :show=&quot;true&quot;\n    type=&quot;success&quot;\n    width=&quot;700px&quot;\n    message=&quot;信息提示&quot;\n    description&gt;\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert\n    :show=&quot;true&quot;\n    type=&quot;danger&quot;\n    width=&quot;700px&quot;\n    message=&quot;错误提示&quot;\n    description\n    dismissable&gt;\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  &lt;/n3-alert&gt;\n  &lt;br&gt;\n  &lt;n3-alert\n    :show=&quot;true&quot;\n    type=&quot;info&quot;\n    width=&quot;700px&quot;\n    message=&quot;错误提示&quot;\n    :on-close=&quot;close&quot;\n    description\n    dismissable&gt;\n    点击关闭按钮的回调函数,打开控制台看看:)\n  &lt;/n3-alert&gt;\n  &lt;n3-alert\n    ref=&quot;alertRight&quot;\n    type=&quot;success&quot;\n    width=&quot;700px&quot;\n    placement=&quot;top-right&quot;\n    message=&quot;信息提示&quot;\n    description\n    dismissable&gt;\n    &lt;p&gt;You successfully read this important alert message.&lt;/p&gt;\n  &lt;/n3-alert&gt;\n  &lt;n3-alert\n    ref=&quot;alertTop&quot;\n    :duration=&quot;3000&quot;\n    type=&quot;danger&quot;\n    placement=&quot;top&quot;\n    message=&quot;警告&quot;\n    description\n    dismissable&gt;\n    &lt;strong&gt;Heads up!&lt;/strong&gt;\n    &lt;p&gt;This alert needs your attention.&lt;/p&gt;\n  &lt;/n3-alert&gt;\n&lt;/div&gt;\n</code></pre>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'success'</span>\n        <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openRight\"</span>&gt;</span>\n        点击出现在右边\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'danger'</span>\n        <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openTop\"</span>&gt;</span>\n       点击出现在顶部\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>  <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>default style<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n        This is the default style.\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Well Done!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n        You successfully read this important alert message.\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> This alert needs your attention, but it's not super important.\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Oh snap!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Change a few things up and try submitting again.\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Warning!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Better check yourself, you're not looking too good.\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n        <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n        <span class=\"hljs-attr\">description</span>&gt;</span>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n        <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n        <span class=\"hljs-attr\">description</span>\n        <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">br</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span>\n        <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n        <span class=\"hljs-attr\">:on-close</span>=<span class=\"hljs-string\">\"close\"</span>\n        <span class=\"hljs-attr\">description</span>\n        <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n        点击关闭按钮的回调函数,打开控制台看看:)\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertRight\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n        <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n        <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top-right\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n        <span class=\"hljs-attr\">description</span>\n        <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>You successfully read this important alert message.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n        <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertTop\"</span>\n        <span class=\"hljs-attr\">:duration</span>=<span class=\"hljs-string\">\"3000\"</span>\n        <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n        <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>\n        <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"警告\"</span>\n        <span class=\"hljs-attr\">description</span>\n        <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n        <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>This alert needs your attention.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">    methods: {\n      openRight () {\n        <span class=\"hljs-keyword\">this</span>.$refs.alertRight.open()\n      },\n      openTop () {\n        <span class=\"hljs-keyword\">this</span>.$refs.alertTop.open()\n      },\n      close () {\n        <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'你点击了关闭按钮'</span>)\n      }\n    }\n</code></pre>\n<pre><code>&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=&quot;table table-bordered&quot;&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;show&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;dismissable&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示关闭按钮&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;, 如: \n      &lt;code&gt;default&lt;/code&gt;\n      &lt;code&gt;success&lt;/code&gt;\n      &lt;code&gt;info&lt;/code&gt;\n      &lt;code&gt;warning&lt;/code&gt;\n      &lt;code&gt;danger&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;success&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;组件样式&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;duration&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;自动关闭延时,设置 &lt;code&gt;0&lt;/code&gt; 或者负数，表示不会自动关闭&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;width&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;例如&quot;700px&quot;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;small&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;缩小&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;placement&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;. 如:  &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;top-right&lt;/code&gt;,&lt;code&gt;top-left&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt;,&lt;code&gt;bottom-left&lt;/code&gt;, &lt;code&gt;bottom-right&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;组件位置&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;description&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;警告提示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;message&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;在设置description时有效&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;on-close&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Function&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;点击关闭按钮时触发&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
 
 /***/ }
 /******/ ]);
