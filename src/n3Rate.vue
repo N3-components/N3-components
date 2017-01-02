@@ -31,7 +31,7 @@
   export default {
     name: 'n3Rate',
 
-    data() {
+    data () {
       return {
         classMap: {},
         colorMap: {},
@@ -39,7 +39,7 @@
         pointerAtLeftHalf: false,
         currentValue: this.value,
         hoverIndex: -1
-      };
+      }
     },
 
     props: {
@@ -61,8 +61,8 @@
       },
       colors: {
         type: Array,
-        default() {
-          return ['#F7BA2A', '#F7BA2A', '#F7BA2A'];
+        default () {
+          return ['#F7BA2A', '#F7BA2A', '#F7BA2A']
         }
       },
       voidColor: {
@@ -75,8 +75,8 @@
       },
       icons: {
         type: Array,
-        default() {
-          return ['star', 'star', 'star'];
+        default () {
+          return ['star', 'star', 'star']
         }
       },
       voidIcon: {
@@ -109,8 +109,8 @@
       },
       texts: {
         type: Array,
-        default() {
-          return ['极差', '失望', '一般', '满意', '惊喜'];
+        default () {
+          return ['极差', '失望', '一般', '满意', '惊喜']
         }
       },
       textTemplate: {
@@ -124,150 +124,150 @@
     },
 
     computed: {
-      text() {
-        let result = '';
+      text () {
+        let result = ''
         if (this.disabled) {
-          result = this.textTemplate.replace(/\{\s*value\s*\}/, this.value);
+          result = this.textTemplate.replace(/\{\s*value\s*\}/, this.value)
         } else {
-          result = this.texts[Math.ceil(this.currentValue) - 1];
+          result = this.texts[Math.ceil(this.currentValue) - 1]
         }
-        return result;
+        return result
       },
 
-      decimalStyle() {
-        let width = '';
+      decimalStyle () {
+        let width = ''
         if (this.disabled) {
-          width = `${ this.valueDecimal < 50 ? 0 : 50 }%`;
+          width = `${ this.valueDecimal < 50 ? 0 : 50 }%`
         }
         if (this.allowHalf) {
-          width = '50%';
+          width = '50%'
         }
         return {
           color: this.activeColor,
           width
-        };
+        }
       },
 
-      valueDecimal() {
-        return this.value * 100 - Math.floor(this.value) * 100;
+      valueDecimal () {
+        return this.value * 100 - Math.floor(this.value) * 100
       },
 
-      decimalIconClass() {
-        return this.getValueFromMap(this.value, this.classMap);
+      decimalIconClass () {
+        return this.getValueFromMap(this.value, this.classMap)
       },
 
-      voidClass() {
-        return this.disabled ? this.classMap.disabledVoidClass : this.classMap.voidClass;
+      voidClass () {
+        return this.disabled ? this.classMap.disabledVoidClass : this.classMap.voidClass
       },
 
-      activeClass() {
-        return this.getValueFromMap(this.currentValue, this.classMap);
+      activeClass () {
+        return this.getValueFromMap(this.currentValue, this.classMap)
       },
 
-      activeColor() {
-        return this.getValueFromMap(this.currentValue, this.colorMap);
+      activeColor () {
+        return this.getValueFromMap(this.currentValue, this.colorMap)
       },
 
-      classes() {
-        let result = [];
-        let i = 0;
-        let threshold = this.currentValue;
+      classes () {
+        let result = []
+        let i = 0
+        let threshold = this.currentValue
         if (this.allowHalf && this.currentValue !== Math.floor(this.currentValue)) {
-          threshold--;
+          threshold--
         }
         for (; i < threshold; i++) {
-          result.push(this.activeClass);
+          result.push(this.activeClass)
         }
         for (; i < this.max; i++) {
-          result.push(this.voidClass);
+          result.push(this.voidClass)
         }
-        return result;
+        return result
       }
     },
 
     watch: {
-      value(val) {
-        this.$emit('change', val);
-        this.currentValue = val;
+      value (val) {
+        this.$emit('change', val)
+        this.currentValue = val
       }
     },
 
     methods: {
-      getValueFromMap(value, map) {
-        let result = '';
+      getValueFromMap (value, map) {
+        let result = ''
         if (value <= this.lowThreshold) {
-          result = map.lowColor || map.lowClass;
+          result = map.lowColor || map.lowClass
         } else if (value >= this.highThreshold) {
-          result = map.highColor || map.highClass;
+          result = map.highColor || map.highClass
         } else {
-          result = map.mediumColor || map.mediumClass;
+          result = map.mediumColor || map.mediumClass
         }
-        return result;
+        return result
       },
 
-      showDecimalIcon(item) {
-        let showWhenDisabled = this.disabled && this.valueDecimal > 0 && item - 1 < this.value && item > this.value;
+      showDecimalIcon (item) {
+        let showWhenDisabled = this.disabled && this.valueDecimal > 0 && item - 1 < this.value && item > this.value
         /* istanbul ignore next */
-        let showWhenAllowHalf = this.allowHalf && this.pointerAtLeftHalf && ((item - 0.5).toFixed(1) === this.currentValue.toFixed(1));
+        let showWhenAllowHalf = this.allowHalf && this.pointerAtLeftHalf && ((item - 0.5).toFixed(1) === this.currentValue.toFixed(1))
 
-        return showWhenDisabled || showWhenAllowHalf;
+        return showWhenDisabled || showWhenAllowHalf
       },
 
-      getIconStyle(item) {
-        const voidColor = this.disabled ? this.colorMap.disabledVoidColor : this.colorMap.voidColor;
+      getIconStyle (item) {
+        const voidColor = this.disabled ? this.colorMap.disabledVoidColor : this.colorMap.voidColor
         return {
           color: item <= this.currentValue ? this.activeColor : voidColor
-        };
+        }
       },
 
-      selectValue(value) {
+      selectValue (value) {
         if (this.disabled) {
-          return;
+          return
         }
         if (this.allowHalf && this.pointerAtLeftHalf) {
-          this.$emit('input', this.currentValue);
+          this.$emit('input', this.currentValue)
         } else {
-          this.$emit('input', value);
+          this.$emit('input', value)
         }
       },
 
-      setCurrentValue(value, event) {
+      setCurrentValue (value, event) {
         let {prefixCls} = this
         if (this.disabled) {
-          return;
+          return
         }
         /* istanbul ignore if */
         if (this.allowHalf) {
-          let target = event.target;
+          let target = event.target
           if (target.classList.contains(`${prefixCls}-rate-item`)) {
-            target = target.querySelector(`.${prefixCls}-rate-icon`);
+            target = target.querySelector(`.${prefixCls}-rate-icon`)
           }
           if (target.classList.contains(`${prefixCls}-rate-decimal`)) {
-            target = target.parentNode;
+            target = target.parentNode
           }
-          this.pointerAtLeftHalf = event.offsetX * 2 <= target.clientWidth;
-          this.currentValue = this.pointerAtLeftHalf ? value - 0.5 : value;
+          this.pointerAtLeftHalf = event.offsetX * 2 <= target.clientWidth
+          this.currentValue = this.pointerAtLeftHalf ? value - 0.5 : value
         } else {
-          this.currentValue = value;
+          this.currentValue = value
         }
-        this.hoverIndex = value;
+        this.hoverIndex = value
       },
 
-      resetCurrentValue() {
+      resetCurrentValue () {
         if (this.disabled) {
-          return;
+          return
         }
         if (this.allowHalf) {
           this.pointerAtLeftHalf = this.value !== Math.floor(this.value);
         }
-        this.currentValue = this.value;
-        this.hoverIndex = -1;
+        this.currentValue = this.value
+        this.hoverIndex = -1
       }
     },
 
-    created() {
+    created () {
       if (!this.value) {
-        this.$emit('input', 0);
+        this.$emit('input', 0)
       }
       this.classMap = {
         lowClass: this.icons[0],
@@ -275,14 +275,14 @@
         highClass: this.icons[2],
         voidClass: this.voidIcon,
         disabledVoidClass: this.disabledVoidIcon
-      };
+      }
       this.colorMap = {
         lowColor: this.colors[0],
         mediumColor: this.colors[1],
         highColor: this.colors[2],
         voidColor: this.voidColor,
         disabledVoidColor: this.disabledVoidColor
-      };
+      }
     }
-  };
+  }
 </script>

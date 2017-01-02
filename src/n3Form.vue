@@ -16,9 +16,6 @@ export default {
       type: String,
       default: 'horizontal'
     },
-    onValidateChange: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -48,8 +45,8 @@ export default {
       }
     },
     result (val) {
-      if (this.validate && type.isFunction(this.onValidateChange)) {
-        this.onValidateChange(val)
+      if (this.validate) {
+        this.$emit('change', val)
       }
     }
   },

@@ -10,12 +10,6 @@ export default {
       type: String,
       default: ''
     },
-    onBlur: {
-      type: Function
-    },
-    onFocus: {
-      type: Function
-    },
     width: {
       type: String,
       default: '220px'

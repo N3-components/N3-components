@@ -81,9 +81,6 @@ export default {
         return [0, 59]
       }
     },
-    onHide: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -101,7 +98,7 @@ export default {
   },
   watch: {
     show (val) {
-      if (!val && type.isFunction(this.onHide)) this.onHide(this.currentValue)
+      if (!val) this.$emit('hide', this.currentValue)
     },
     value (val) {
       this.currentValue = val

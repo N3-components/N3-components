@@ -109,21 +109,15 @@ export default {
   methods: {
     update (val) {
       this.$emit('input', val)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+      this.$emit('change', val)
     },
     blur () {
       this.focused = false
-      if (type.isFunction(this.onBlur)) {
-        this.onBlur(this.value)
-      }
+      this.$emit('blur', this.value)
     },
     focus () {
       this.focused = true
-      if (type.isFunction(this.onFocus)) {
-        this.onFocus(this.value)
-      }
+      this.$emit('focus', this.value)
     }
   }
 }

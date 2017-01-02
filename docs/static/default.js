@@ -10868,42 +10868,12 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	//   <transition name="fade">
-	//     <div
-	//      v-show="isShow"
-	//      :class="classObj"
-	//       :style="{width:width}">
-	
-	//       <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
-	
-	//       <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
-	//          @click="handleClose" >
-	//         <span>&times;</span>
-	//       </button>
-	
-	//       <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
-	//         <h4>{{message}}</h4>
-	//         <p><slot></slot></p>
-	//       </div>
-	//       <span v-else>
-	//           <slot></slot>
-	//       </span>
-	//     </div>
-	//   </transition>
-	// </template>
-	
-	// <script>
 	exports.default = {
 	  name: 'n3Alert',
 	  props: {
@@ -10941,9 +10911,6 @@
 	      type: Boolean,
 	      default: false
 	    },
-	    onClose: {
-	      type: Function
-	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -10965,9 +10932,7 @@
 	    },
 	    handleClose: function handleClose(e) {
 	      this.isShow = false;
-	      if (_type2.default.isFunction(this.onClose)) {
-	        this.onClose();
-	      }
+	      this.$emit('close');
 	    }
 	  },
 	  watch: {
@@ -11026,6 +10991,32 @@
 	  }
 	};
 	// </script>
+	// <template>
+	//   <transition name="fade">
+	//     <div
+	//      v-show="isShow"
+	//      :class="classObj"
+	//       :style="{width:width}">
+	
+	//       <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
+	
+	//       <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
+	//          @click="handleClose" >
+	//         <span>&times;</span>
+	//       </button>
+	
+	//       <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
+	//         <h4>{{message}}</h4>
+	//         <p><slot></slot></p>
+	//       </div>
+	//       <span v-else>
+	//           <slot></slot>
+	//       </span>
+	//     </div>
+	//   </transition>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 490 */
@@ -11518,12 +11509,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-8.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-43.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-8.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-8.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-8.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-43.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-43.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-43.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-8.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-43.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11702,12 +11693,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-8.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-5.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-8.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-8.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-8.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-5.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-8.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11729,8 +11720,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-07908ab4&file=n3CascaderDocs-5.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs-5.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-07908ab4&file=n3CascaderDocs-5.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs-5.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-07bad137&file=n3CascaderDocs-8.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs-8.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-07bad137&file=n3CascaderDocs-8.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs-8.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11943,12 +11934,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-6.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-6.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c67301e&file=n3AffixDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-6.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-6.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c4b011c&file=n3AffixDocs-7.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-7.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c67301e&file=n3AffixDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-6.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c4b011c&file=n3AffixDocs-7.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-7.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11970,8 +11961,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c67301e&file=n3AffixDocs-6.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-6.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c67301e&file=n3AffixDocs-6.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-6.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c4b011c&file=n3AffixDocs-7.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c4b011c&file=n3AffixDocs-7.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11989,7 +11980,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".sidebar[_v-2c67301e]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px; \n}\npre[class*='language-'][_v-2c67301e]{\n  position: static;\n}", ""]);
+	exports.push([module.id, ".sidebar[_v-2c4b011c]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px; \n}\npre[class*='language-'][_v-2c4b011c]{\n  position: static;\n}", ""]);
 	
 	// exports
 
@@ -12073,7 +12064,7 @@
 /* 520 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-2c67301e=\"\"><template _v-2c67301e=\"\">\n<h3 _v-2c67301e=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-2c67301e=\"\">\n  <div class=\"bs-example\" _v-2c67301e=\"\">\n    <h3 _v-2c67301e=\"\">\n      <n3-affix :offset=\"0\" _v-2c67301e=\"\">\n        <nav class=\"sidebar\" _v-2c67301e=\"\">\n          <ul _v-2c67301e=\"\">\n            <li _v-2c67301e=\"\">...</li>\n            <li _v-2c67301e=\"\">...</li>\n            <li _v-2c67301e=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-2c67301e=\"\"><code class=\"language-html\" _v-2c67301e=\"\"><span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-2c67301e=\"\">:offset</span>=<span class=\"hljs-string\" _v-2c67301e=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">nav</span> <span class=\"hljs-attr\" _v-2c67301e=\"\">class</span>=<span class=\"hljs-string\" _v-2c67301e=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-2c67301e=\"\">&lt;/<span class=\"hljs-name\" _v-2c67301e=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<pre _v-2c67301e=\"\"><code _v-2c67301e=\"\">&lt;!-- &lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;offset&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;离屏幕顶部的像素值&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt; --&gt;\n</code></pre>\n  </div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-2c4b011c=\"\"><template _v-2c4b011c=\"\">\n<h3 _v-2c4b011c=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-2c4b011c=\"\">\n  <div class=\"bs-example\" _v-2c4b011c=\"\">\n    <h3 _v-2c4b011c=\"\">\n      <n3-affix :offset=\"0\" _v-2c4b011c=\"\">\n        <nav class=\"sidebar\" _v-2c4b011c=\"\">\n          <ul _v-2c4b011c=\"\">\n            <li _v-2c4b011c=\"\">...</li>\n            <li _v-2c4b011c=\"\">...</li>\n            <li _v-2c4b011c=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-2c4b011c=\"\"><code class=\"language-html\" _v-2c4b011c=\"\"><span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-2c4b011c=\"\">:offset</span>=<span class=\"hljs-string\" _v-2c4b011c=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">nav</span> <span class=\"hljs-attr\" _v-2c4b011c=\"\">class</span>=<span class=\"hljs-string\" _v-2c4b011c=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<pre _v-2c4b011c=\"\"><code _v-2c4b011c=\"\">&lt;!-- &lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n      &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;offset&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;0&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;离屏幕顶部的像素值&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt; --&gt;\n</code></pre>\n  </div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 521 */
@@ -12094,12 +12085,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-7.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-5.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-7.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-7.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-7.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-5.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-5.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-5.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-7.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-5.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12271,12 +12262,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-6.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7e24f75a&file=n3CarouselDocs-9.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-6.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-6.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-6.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7e24f75a&file=n3CarouselDocs-9.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-6.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12298,8 +12289,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7e24f75a&file=n3CarouselDocs-9.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7e24f75a&file=n3CarouselDocs-9.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-6.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-6.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12317,7 +12308,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".slide-img[_v-7e24f75a]{\n  height:400px!important;\n}\n.carousel-caption[_v-7e24f75a] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-7e24f75a] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
+	exports.push([module.id, ".slide-img[_v-7dfab0d7]{\n  height:400px!important;\n}\n.carousel-caption[_v-7dfab0d7] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-7dfab0d7] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
 	
 	// exports
 
@@ -12427,7 +12418,7 @@
 /* 530 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-7e24f75a=\"\">  <template _v-7e24f75a=\"\">\n  <div class=\"bs-docs-section\" id=\"幻灯片\" _v-7e24f75a=\"\">\n    <h1 class=\"page-header\" _v-7e24f75a=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-7e24f75a=\"\">幻灯片</a><span class=\"author\" _v-7e24f75a=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-7e24f75a=\"\">\n      <n3-carousel _v-7e24f75a=\"\">\n        <n3-slide _v-7e24f75a=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e24f75a=\"\">\n          <div class=\"carousel-caption\" _v-7e24f75a=\"\">\n           <h3 _v-7e24f75a=\"\">Slide #1</h3>\n           <p _v-7e24f75a=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-7e24f75a=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e24f75a=\"\">\n          <div class=\"carousel-caption\" _v-7e24f75a=\"\">\n           <h3 _v-7e24f75a=\"\">Slide #2</h3>\n           <p _v-7e24f75a=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-7e24f75a=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7e24f75a=\"\">\n          <div class=\"carousel-caption\" _v-7e24f75a=\"\">\n           <h3 _v-7e24f75a=\"\">Slide #3</h3>\n           <p _v-7e24f75a=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n<p _v-7e24f75a=\"\"></p><h2 _v-7e24f75a=\"\">参数</h2><p _v-7e24f75a=\"\"></p>\n  <table class=\"table table-bordered\" _v-7e24f75a=\"\">\n    <thead _v-7e24f75a=\"\">\n      <tr _v-7e24f75a=\"\">\n        <th _v-7e24f75a=\"\">参数名</th>\n        <th _v-7e24f75a=\"\">类型</th>\n        <th _v-7e24f75a=\"\">默认值</th>\n        <th _v-7e24f75a=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-7e24f75a=\"\">\n      <tr _v-7e24f75a=\"\">\n        <td _v-7e24f75a=\"\">indicators</td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">Boolean</code></td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">true</code></td>\n        <td _v-7e24f75a=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-7e24f75a=\"\">\n        <td _v-7e24f75a=\"\">controls</td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">Boolean</code></td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">true</code></td>\n        <td _v-7e24f75a=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-7e24f75a=\"\">\n        <td _v-7e24f75a=\"\">interval</td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">Number</code></td>\n        <td _v-7e24f75a=\"\"><code _v-7e24f75a=\"\">5000</code></td>\n        <td _v-7e24f75a=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
+	module.exports = "<section _v-7dfab0d7=\"\">  <template _v-7dfab0d7=\"\">\n  <div class=\"bs-docs-section\" id=\"幻灯片\" _v-7dfab0d7=\"\">\n    <h1 class=\"page-header\" _v-7dfab0d7=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-7dfab0d7=\"\">幻灯片</a><span class=\"author\" _v-7dfab0d7=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-7dfab0d7=\"\">\n      <n3-carousel _v-7dfab0d7=\"\">\n        <n3-slide _v-7dfab0d7=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7dfab0d7=\"\">\n          <div class=\"carousel-caption\" _v-7dfab0d7=\"\">\n           <h3 _v-7dfab0d7=\"\">Slide #1</h3>\n           <p _v-7dfab0d7=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-7dfab0d7=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7dfab0d7=\"\">\n          <div class=\"carousel-caption\" _v-7dfab0d7=\"\">\n           <h3 _v-7dfab0d7=\"\">Slide #2</h3>\n           <p _v-7dfab0d7=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-7dfab0d7=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7dfab0d7=\"\">\n          <div class=\"carousel-caption\" _v-7dfab0d7=\"\">\n           <h3 _v-7dfab0d7=\"\">Slide #3</h3>\n           <p _v-7dfab0d7=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n<p _v-7dfab0d7=\"\"></p><h2 _v-7dfab0d7=\"\">参数</h2><p _v-7dfab0d7=\"\"></p>\n  <table class=\"table table-bordered\" _v-7dfab0d7=\"\">\n    <thead _v-7dfab0d7=\"\">\n      <tr _v-7dfab0d7=\"\">\n        <th _v-7dfab0d7=\"\">参数名</th>\n        <th _v-7dfab0d7=\"\">类型</th>\n        <th _v-7dfab0d7=\"\">默认值</th>\n        <th _v-7dfab0d7=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-7dfab0d7=\"\">\n      <tr _v-7dfab0d7=\"\">\n        <td _v-7dfab0d7=\"\">indicators</td>\n        <td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">Boolean</code></td>\n        <td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">true</code></td>\n        <td _v-7dfab0d7=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-7dfab0d7=\"\">\n        <td _v-7dfab0d7=\"\">controls</td>\n        <td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">Boolean</code></td>\n        <td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">true</code></td>\n        <td _v-7dfab0d7=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-7dfab0d7=\"\">\n        <td _v-7dfab0d7=\"\">interval</td>\n        <td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">Number</code></td>\n        <td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">5000</code></td>\n        <td _v-7dfab0d7=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
 /* 531 */
@@ -12445,12 +12436,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-11.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-11.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-11.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12481,12 +12472,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-12.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-11.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-12.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-11.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12590,12 +12581,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-10.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-9.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-10.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-10.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-10.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-9.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-9.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-9.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-10.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-9.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12765,12 +12756,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-14.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-12.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-14.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-14.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-14.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-12.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-12.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-12.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-14.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-12.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12891,12 +12882,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-13.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-16.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-13.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-13.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-13.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-16.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-13.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13031,12 +13022,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-16.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-16.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-16.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-16.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-16.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13132,12 +13123,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-14.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-13.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-14.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-14.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-14.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-13.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-14.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13321,12 +13312,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-20.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-15.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-20.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-20.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-20.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-15.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-15.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-15.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-20.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-15.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13426,12 +13417,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-19.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-18.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-19.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-19.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-19.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-18.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-19.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13538,12 +13529,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-42.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-17.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-42.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-42.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-42.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-17.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-42.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13647,12 +13638,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-19.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-17.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-19.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-19.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-19.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-17.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-17.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-17.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-19.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-17.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13885,12 +13876,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-18.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-23.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-18.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-18.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-18.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-23.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-18.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14222,12 +14213,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-25.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-20.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-25.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-520a80a2&file=n3ProgressbarDocs-25.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-25.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-25.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-20.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-51c40b1d&file=n3ProgressbarDocs-20.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-20.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-20.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-520a80a2&file=n3ProgressbarDocs-25.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-25.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-51c40b1d&file=n3ProgressbarDocs-20.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-20.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14249,8 +14240,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-520a80a2&file=n3ProgressbarDocs-25.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-25.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-520a80a2&file=n3ProgressbarDocs-25.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-25.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-51c40b1d&file=n3ProgressbarDocs-20.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-20.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-51c40b1d&file=n3ProgressbarDocs-20.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-20.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -14268,7 +14259,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".margin[_v-520a80a2]{\n  margin-bottom:20px;\n}", ""]);
+	exports.push([module.id, ".margin[_v-51c40b1d]{\n  margin-bottom:20px;\n}", ""]);
 	
 	// exports
 
@@ -14426,7 +14417,7 @@
 /* 583 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-520a80a2=\"\"><template _v-520a80a2=\"\">\n  <div class=\"bs-docs-section\" id=\"进度条\" _v-520a80a2=\"\">\n    <h1 class=\"page-header\" _v-520a80a2=\"\"><a href=\"#进度条\" class=\"anchor\" _v-520a80a2=\"\">进度条</a><span class=\"author\" _v-520a80a2=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-520a80a2=\"\">\n      <h4 _v-520a80a2=\"\">高度</h4>\n      <div class=\"row\" _v-520a80a2=\"\">\n        <div class=\"col-md-4\" _v-520a80a2=\"\">\n          <n3-progress class=\"margin\" _v-520a80a2=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-520a80a2=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-520a80a2=\"\">\n          <n3-progress class=\"margin\" _v-520a80a2=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-520a80a2=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n<pre _v-520a80a2=\"\"><code _v-520a80a2=\"\">  &lt;hr&gt;\n\n  &lt;h4&gt;\n    动态\n    &lt;n3-button  @click.native=\"dynamicClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n  &lt;n3-progress class=\"margin\" &gt;\n    &lt;n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" &gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress class=\"margin\"&gt;\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n\n  &lt;hr&gt;\n\n  &lt;h4&gt;\n    叠加\n    &lt;n3-button  @click.native=\"stackedClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[1]\" label type=\"success\" &gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped &gt;\n  &lt;/n3-progressbar&gt;\n  &lt;/div&gt;\n\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n     &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;now&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;当前进度&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;height&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;20px&lt;/td&gt;\n      &lt;td&gt;高度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;样式 &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;label&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否显示进度提示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;striped&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示条纹&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;animated&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;动画效果&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
+	module.exports = "<section _v-51c40b1d=\"\"><template _v-51c40b1d=\"\">\n  <div class=\"bs-docs-section\" id=\"进度条\" _v-51c40b1d=\"\">\n    <h1 class=\"page-header\" _v-51c40b1d=\"\"><a href=\"#进度条\" class=\"anchor\" _v-51c40b1d=\"\">进度条</a><span class=\"author\" _v-51c40b1d=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-51c40b1d=\"\">\n      <h4 _v-51c40b1d=\"\">高度</h4>\n      <div class=\"row\" _v-51c40b1d=\"\">\n        <div class=\"col-md-4\" _v-51c40b1d=\"\">\n          <n3-progress class=\"margin\" _v-51c40b1d=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-51c40b1d=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-51c40b1d=\"\">\n          <n3-progress class=\"margin\" _v-51c40b1d=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-51c40b1d=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n<pre _v-51c40b1d=\"\"><code _v-51c40b1d=\"\">  &lt;hr&gt;\n\n  &lt;h4&gt;\n    动态\n    &lt;n3-button  @click.native=\"dynamicClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n  &lt;n3-progress class=\"margin\" &gt;\n    &lt;n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" &gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress class=\"margin\"&gt;\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n\n  &lt;hr&gt;\n\n  &lt;h4&gt;\n    叠加\n    &lt;n3-button  @click.native=\"stackedClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[1]\" label type=\"success\" &gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped &gt;\n  &lt;/n3-progressbar&gt;\n  &lt;/div&gt;\n\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n     &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;now&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;当前进度&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;height&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;20px&lt;/td&gt;\n      &lt;td&gt;高度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;样式 &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;label&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否显示进度提示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;striped&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示条纹&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;animated&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;动画效果&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
 
 /***/ },
 /* 584 */
@@ -14447,12 +14438,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-24.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-22.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-24.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-24.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-24.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-22.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-24.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14823,12 +14814,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-29.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-23.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-29.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-29.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-29.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-23.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-23.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-23.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-29.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-23.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14971,12 +14962,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-22.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-24.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-22.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-22.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-22.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-24.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-22.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15091,25 +15082,34 @@
 	// </thead>
 	// <tbody>
 	// <tr>
-	// <td>col</td>
+	// <td>active-index</td>
 	// <td>Number</td>
 	// <td>-</td>
 	// <td>占的列数</td>
 	// </tr>
 	// <tr>
-	// <td>mode</td>
-	// <td>String</td>
-	// <td>md</td>
-	// <td>布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>
-	// </tr>
-	// <tr>
-	// <td>offset</td>
-	// <td>Number</td>
+	// <td>list</td>
+	// <td>Array</td>
 	// <td>-</td>
-	// <td>偏移值</td>
+	// <td></td>
 	// </tr>
 	// </tbody>
 	// </table>
+	// <p>list: [{
+	// header: 'first',
+	// badge: 12,
+	// content: 'xxx'
+	// },{
+	// header: 'seacond',
+	// badge: 12,
+	// content: 'xxxx'
+	// }]
+	
+	// | pills          | Boolean     |    false         |     胶囊样式    |
+	// | stacked          | Boolean     |    false         |     竖直状态    |
+	// | primary          | Boolean     |    false         |     胶囊样式    |
+	// | justified          | Boolean     |    false         |     是否自适应    |
+	// | on-change          | Function     |    -         |     是否自适应    |</p>
 	// <p></p><h2>tabs参数</h2><p></p>
 	//   <table class="table table-bordered">
 	//     <thead>
@@ -15245,7 +15245,7 @@
 /* 599 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n<h3>标签页</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h4>使用list</h4>\n<p><n3-tabs :on-change=\"change\" :list=\"list\"></n3-tabs></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">:on-change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:list</span>=<span class=\"hljs-string\">\"list\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">data () {\n  <span class=\"hljs-keyword\">return</span> {\n    <span class=\"hljs-attr\">list</span>: [{\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'first'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'first的内容'</span>\n    }, {\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'seacond'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'seacond的内容'</span>\n    }]\n  }\n}\n</code></pre>\n<hr>\n<h4>使用tab</h4>\n<n3-tabs :on-change=\"change\" :value=\"1\">\n  <n3-tab header=\"one\" badge=\"1\">\n    <p>.......</p>\n    <p>.......</p>\n    <p>.......</p>\n  </n3-tab>\n  <n3-tab header=\"two\">\n    <p>*********</p>\n    <p>*********</p>\n    <p>*********</p>\n  </n3-tab>\n  <n3-tab header=\"three\" disabled>\n    ...\n  </n3-tab>\n</n3-tabs>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">:on-change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:value</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"one\"</span> <span class=\"hljs-attr\">badge</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"two\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"three\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>\n    ...\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<hr>\n<h4>胶囊样式 pills</h4>\n<n3-tabs pills=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>垂直样式 stacked</h4>\n<n3-tabs pills=\"\" stacked=\"\" style=\"max-width: 300px;\" :on-change=\"change\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>垂直样式 stacked</h4>\n<n3-tabs primary=\"\" pills=\"\" stacked=\"\" style=\"max-width: 300px;\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>自适应 justified</h4>\n<n3-tabs pills=\"\" justified=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n</div>\n<h3>n3-column参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>col</td>\n<td>Number</td>\n<td>-</td>\n<td>占的列数</td>\n</tr>\n<tr>\n<td>mode</td>\n<td>String</td>\n<td>md</td>\n<td>布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>\n</tr>\n<tr>\n<td>offset</td>\n<td>Number</td>\n<td>-</td>\n<td>偏移值</td>\n</tr>\n</tbody>\n</table>\n<p></p><h2>tabs参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n     <tr>\n        <td>active-index</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>list</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td><pre><code>\nlist: [{\n  header: 'first',\n  badge: 12,\n  content: 'xxx'\n},{\n  header: 'seacond',\n  badge: 12,\n  content: 'xxxx'\n}]\n        </code></pre></td>\n      </tr>\n      <tr>\n        <td>pills</td>\n        <td><code>Boolean</code></td>\n        <td></td>\n        <td>胶囊样式</td>\n      </tr>\n      <tr>\n        <td>stacked</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>竖直状态</td>\n      </tr>\n       <tr>\n        <td>primary</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>justified</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否自适应</td>\n      </tr>\n       <tr>\n        <td>size</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>尺寸</td>\n      </tr>\n       <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>tab参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>header</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>标签头文字</td>\n      </tr>\n      <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n      <tr>\n        <td>disabled</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否能被激活</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
+	module.exports = "<section><template>\n<h3>标签页</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h4>使用list</h4>\n<p><n3-tabs :on-change=\"change\" :list=\"list\"></n3-tabs></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">:on-change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:list</span>=<span class=\"hljs-string\">\"list\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">data () {\n  <span class=\"hljs-keyword\">return</span> {\n    <span class=\"hljs-attr\">list</span>: [{\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'first'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'first的内容'</span>\n    }, {\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'seacond'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'seacond的内容'</span>\n    }]\n  }\n}\n</code></pre>\n<hr>\n<h4>使用tab</h4>\n<n3-tabs :on-change=\"change\" :value=\"1\">\n  <n3-tab header=\"one\" badge=\"1\">\n    <p>.......</p>\n    <p>.......</p>\n    <p>.......</p>\n  </n3-tab>\n  <n3-tab header=\"two\">\n    <p>*********</p>\n    <p>*********</p>\n    <p>*********</p>\n  </n3-tab>\n  <n3-tab header=\"three\" disabled>\n    ...\n  </n3-tab>\n</n3-tabs>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">:on-change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:value</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"one\"</span> <span class=\"hljs-attr\">badge</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"two\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"three\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>\n    ...\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<hr>\n<h4>胶囊样式 pills</h4>\n<n3-tabs pills=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>垂直样式 stacked</h4>\n<n3-tabs pills=\"\" stacked=\"\" style=\"max-width: 300px;\" :on-change=\"change\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>垂直样式 stacked</h4>\n<n3-tabs primary=\"\" pills=\"\" stacked=\"\" style=\"max-width: 300px;\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<h4>自适应 justified</h4>\n<n3-tabs pills=\"\" justified=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n</div>\n<h3>n3-column参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>active-index</td>\n<td>Number</td>\n<td>-</td>\n<td>占的列数</td>\n</tr>\n<tr>\n<td>list</td>\n<td>Array</td>\n<td>-</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>list: [{\nheader: 'first',\nbadge: 12,\ncontent: 'xxx'\n},{\nheader: 'seacond',\nbadge: 12,\ncontent: 'xxxx'\n}]\n\n| pills          | Boolean     |    false         |     胶囊样式    |\n| stacked          | Boolean     |    false         |     竖直状态    |\n| primary          | Boolean     |    false         |     胶囊样式    |\n| justified          | Boolean     |    false         |     是否自适应    |\n| on-change          | Function     |    -         |     是否自适应    |</p>\n<p></p><h2>tabs参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n     <tr>\n        <td>active-index</td>\n        <td><code>Number</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>list</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td><pre><code>\nlist: [{\n  header: 'first',\n  badge: 12,\n  content: 'xxx'\n},{\n  header: 'seacond',\n  badge: 12,\n  content: 'xxxx'\n}]\n        </code></pre></td>\n      </tr>\n      <tr>\n        <td>pills</td>\n        <td><code>Boolean</code></td>\n        <td></td>\n        <td>胶囊样式</td>\n      </tr>\n      <tr>\n        <td>stacked</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>竖直状态</td>\n      </tr>\n       <tr>\n        <td>primary</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td></td>\n      </tr>\n       <tr>\n        <td>justified</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否自适应</td>\n      </tr>\n       <tr>\n        <td>size</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>尺寸</td>\n      </tr>\n       <tr>\n        <td>on-change</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td></td>\n      </tr>\n    </tbody>\n  </table>\n  <h2>tab参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n        <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>header</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>标签头文字</td>\n      </tr>\n      <tr>\n          <td>badge</td>\n          <td><code>String</code><code>Number</code></td>\n          <td></td>\n          <td>徽标</td>\n        </tr>\n      <tr>\n        <td>disabled</td>\n        <td><code>Boolean</code></td>\n        <td>false</td>\n        <td>是否能被激活</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
 /* 600 */
@@ -15266,12 +15266,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-26.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-26.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-26.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-26.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-27.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-26.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-27.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15395,12 +15395,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-25.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-28.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-25.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-25.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-25.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-28.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-25.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15582,12 +15582,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-27.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-26.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-27.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-27.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-27.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-26.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-26.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-26.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-27.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-26.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15676,12 +15676,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-28.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-28.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-28.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-28.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-28.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15840,12 +15840,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-31.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-29.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-31.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-31.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-29.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-29.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs-29.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-29.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15951,12 +15951,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-30.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-32.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-30.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-30.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-30.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-32.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-30.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16090,12 +16090,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-32.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-33.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-32.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-32.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-32.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-33.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-32.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16468,12 +16468,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-31.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-31.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-31.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16504,12 +16504,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-33.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-36.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-33.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-33.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-33.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-36.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-33.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16724,12 +16724,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-34.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-35.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-34.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-34.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-34.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-35.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-34.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16966,12 +16966,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-37.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-36.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-37.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-37.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-37.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-36.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-36.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-36.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-37.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-36.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17049,12 +17049,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-38.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-35.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-38.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-35.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17219,12 +17219,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-40.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-39.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-40.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-40.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-40.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-39.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-39.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-39.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-40.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-39.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17665,12 +17665,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-37.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-39.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-37.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-37.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-37.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-39.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-37.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18012,12 +18012,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-38.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-42.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-38.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-38.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-38.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-42.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-38.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18108,12 +18108,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-40.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-cdcc153a&file=n3AnimateDocs-43.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-43.vue"], function () {
-	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-40.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-ce20a240&file=n3AnimateDocs-40.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-40.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-40.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-cdcc153a&file=n3AnimateDocs-43.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-43.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-ce20a240&file=n3AnimateDocs-40.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-40.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18135,8 +18135,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-cdcc153a&file=n3AnimateDocs-43.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-43.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-cdcc153a&file=n3AnimateDocs-43.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-43.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-ce20a240&file=n3AnimateDocs-40.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-40.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-ce20a240&file=n3AnimateDocs-40.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-40.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -18154,7 +18154,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".content[_v-cdcc153a] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px; \n    margin-top: 10px;\n  }", ""]);
+	exports.push([module.id, ".content[_v-ce20a240] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px; \n    margin-top: 10px;\n  }", ""]);
 	
 	// exports
 
@@ -18255,7 +18255,7 @@
 /* 668 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-cdcc153a=\"\"><template _v-cdcc153a=\"\">\n<h2 _v-cdcc153a=\"\">动画</h2>\n<div class=\"bs-docs-section\" _v-cdcc153a=\"\">\n<div class=\"bs-example\" _v-cdcc153a=\"\">\n  <n3-button @click.native=\"show1=!show1\" _v-cdcc153a=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-cdcc153a=\"\">\n    <div v-if=\"show1\" class=\"content\" _v-cdcc153a=\"\">\n        <h4 _v-cdcc153a=\"\">Title</h4>\n        <p _v-cdcc153a=\"\">...</p>\n        <p _v-cdcc153a=\"\">...</p>\n        <p _v-cdcc153a=\"\">...</p>\n    </div>\n  </transition>\n<p _v-cdcc153a=\"\"><n3-button @click.native=\"show2=!show2\" _v-cdcc153a=\"\">fadeDown</n3-button>\n<transition name=\"fadeDown\" _v-cdcc153a=\"\">\n</transition></p><div v-if=\"show2\" class=\"content\" _v-cdcc153a=\"\">\n<h4 _v-cdcc153a=\"\">Title</h4>\n<p _v-cdcc153a=\"\">...</p>\n<p _v-cdcc153a=\"\">...</p>\n<p _v-cdcc153a=\"\">...</p>\n</div>\n<p _v-cdcc153a=\"\"></p>\n<p _v-cdcc153a=\"\"><n3-button @click.native=\"show3=!show3\" _v-cdcc153a=\"\">bounce</n3-button>\n<transition name=\"bounce\" _v-cdcc153a=\"\">\n</transition></p><div v-if=\"show3\" style=\"width:100px\" _v-cdcc153a=\"\">\n<p _v-cdcc153a=\"\">提示:作用于尺寸比较小的元素</p>\n</div>\n<p _v-cdcc153a=\"\"></p>\n</div>\n<pre _v-cdcc153a=\"\"><code class=\"language-html\" _v-cdcc153a=\"\"><span class=\"hljs-comment\" _v-cdcc153a=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-cdcc153a=\"\">@click.native</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"show1=!show1\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">transition</span> <span class=\"hljs-attr\" _v-cdcc153a=\"\">name</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">div</span> <span class=\"hljs-attr\" _v-cdcc153a=\"\">v-if</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"show1\"</span>  <span class=\"hljs-attr\" _v-cdcc153a=\"\">class</span>=<span class=\"hljs-string\" _v-cdcc153a=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-cdcc153a=\"\">&lt;/<span class=\"hljs-name\" _v-cdcc153a=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-cdcc153a=\"\">参数</h3>\n<table _v-cdcc153a=\"\">\n<thead _v-cdcc153a=\"\">\n<tr _v-cdcc153a=\"\">\n<th _v-cdcc153a=\"\">参数</th>\n<th _v-cdcc153a=\"\">类型</th>\n<th _v-cdcc153a=\"\">默认值</th>\n<th _v-cdcc153a=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-cdcc153a=\"\">\n<tr _v-cdcc153a=\"\">\n<td _v-cdcc153a=\"\">name</td>\n<td _v-cdcc153a=\"\">String</td>\n<td _v-cdcc153a=\"\">-</td>\n<td _v-cdcc153a=\"\"><code _v-cdcc153a=\"\">fade</code> <code _v-cdcc153a=\"\">fadeLeft</code><code _v-cdcc153a=\"\">fadeDown</code><code _v-cdcc153a=\"\">bounce</code><code _v-cdcc153a=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-ce20a240=\"\"><template _v-ce20a240=\"\">\n<h2 _v-ce20a240=\"\">动画</h2>\n<div class=\"bs-docs-section\" _v-ce20a240=\"\">\n<div class=\"bs-example\" _v-ce20a240=\"\">\n  <n3-button @click.native=\"show1=!show1\" _v-ce20a240=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-ce20a240=\"\">\n    <div v-if=\"show1\" class=\"content\" _v-ce20a240=\"\">\n        <h4 _v-ce20a240=\"\">Title</h4>\n        <p _v-ce20a240=\"\">...</p>\n        <p _v-ce20a240=\"\">...</p>\n        <p _v-ce20a240=\"\">...</p>\n    </div>\n  </transition>\n<p _v-ce20a240=\"\"><n3-button @click.native=\"show2=!show2\" _v-ce20a240=\"\">fadeDown</n3-button>\n<transition name=\"fadeDown\" _v-ce20a240=\"\">\n</transition></p><div v-if=\"show2\" class=\"content\" _v-ce20a240=\"\">\n<h4 _v-ce20a240=\"\">Title</h4>\n<p _v-ce20a240=\"\">...</p>\n<p _v-ce20a240=\"\">...</p>\n<p _v-ce20a240=\"\">...</p>\n</div>\n<p _v-ce20a240=\"\"></p>\n<p _v-ce20a240=\"\"><n3-button @click.native=\"show3=!show3\" _v-ce20a240=\"\">bounce</n3-button>\n<transition name=\"bounce\" _v-ce20a240=\"\">\n</transition></p><div v-if=\"show3\" style=\"width:100px\" _v-ce20a240=\"\">\n<p _v-ce20a240=\"\">提示:作用于尺寸比较小的元素</p>\n</div>\n<p _v-ce20a240=\"\"></p>\n</div>\n<pre _v-ce20a240=\"\"><code class=\"language-html\" _v-ce20a240=\"\"><span class=\"hljs-comment\" _v-ce20a240=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-ce20a240=\"\">@click.native</span>=<span class=\"hljs-string\" _v-ce20a240=\"\">\"show1=!show1\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">transition</span> <span class=\"hljs-attr\" _v-ce20a240=\"\">name</span>=<span class=\"hljs-string\" _v-ce20a240=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">div</span> <span class=\"hljs-attr\" _v-ce20a240=\"\">v-if</span>=<span class=\"hljs-string\" _v-ce20a240=\"\">\"show1\"</span>  <span class=\"hljs-attr\" _v-ce20a240=\"\">class</span>=<span class=\"hljs-string\" _v-ce20a240=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-ce20a240=\"\">参数</h3>\n<table _v-ce20a240=\"\">\n<thead _v-ce20a240=\"\">\n<tr _v-ce20a240=\"\">\n<th _v-ce20a240=\"\">参数</th>\n<th _v-ce20a240=\"\">类型</th>\n<th _v-ce20a240=\"\">默认值</th>\n<th _v-ce20a240=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-ce20a240=\"\">\n<tr _v-ce20a240=\"\">\n<td _v-ce20a240=\"\">name</td>\n<td _v-ce20a240=\"\">String</td>\n<td _v-ce20a240=\"\">-</td>\n<td _v-ce20a240=\"\"><code _v-ce20a240=\"\">fade</code> <code _v-ce20a240=\"\">fadeLeft</code><code _v-ce20a240=\"\">fadeDown</code><code _v-ce20a240=\"\">bounce</code><code _v-ce20a240=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 669 */
@@ -27340,29 +27340,26 @@
 
 /***/ },
 /* 680 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	// <template>
+	//   <div :class="`${prefixCls}-panel-group`">
+	//       <slot></slot>
+	//   </div>
+	// </template>
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
+	// <script>
 	exports.default = {
 	  name: 'n3Accordion',
 	  props: {
 	    oneAtTime: {
 	      type: Boolean,
 	      default: false
-	    },
-	    onChange: {
-	      type: Function
 	    },
 	    effect: {
 	      type: String,
@@ -27394,20 +27391,11 @@
 	          });
 	        }
 	      });
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(ret);
-	      }
+	      this.$emit('change');
 	    }
 	  }
 	};
 	// </script>
-	// <template>
-	//   <div :class="`${prefixCls}-panel-group`">
-	//       <slot></slot>
-	//   </div>
-	// </template>
-	
-	// <script>
 
 /***/ },
 /* 681 */
@@ -27588,38 +27576,12 @@
 	
 	var _getScrollBarWidth2 = _interopRequireDefault(_getScrollBarWidth);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _element = __webpack_require__(677);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	//   <transition :name="(this.placement === 'left') ? 'slideleft' : 'slideright'">
-	//     <div 
-	//       :style="{width:width}"
-	//       :class="classObj"
-	//       v-show="show">
-	//       <div :class="`${prefixCls}-aside-dialog`">
-	//         <div :class="`${prefixCls}-aside-content`">
-	//           <div :class="`${prefixCls}-aside-header`">
-	//             <button type="button" :class="`${prefixCls}-close`" @click='close'><span>&times;</span></button>
-	//             <h4 :class="`${prefixCls}-aside-title`">{{header}}</h4>
-	//           </div>
-	//           <div :class="`${prefixCls}-aside-body`">
-	//             <slot></slot>
-	//           </div>
-	//         </div>
-	//       </div>
-	//     </div>
-	//   </transition>
-	// </template>
-	
-	// <script>
 	exports.default = {
 	  name: 'n3Aside',
 	  props: {
@@ -27680,9 +27642,7 @@
 	        }
 	        backdrop.className += ' ' + prefixCls + '-aside-in';
 	        this._clickEvent = _EventListener2.default.listen(backdrop, 'click', this.close);
-	        if (_type2.default.isFunction(this.onShow)) {
-	          this.onShow();
-	        }
+	        this.$emit('show');
 	      } else {
 	        if (this._clickEvent) this._clickEvent.remove();
 	        backdrop = document.querySelector('.' + prefixCls + '-aside-backdrop');
@@ -27692,9 +27652,7 @@
 	          body.style.paddingRight = '0';
 	          body.removeChild(backdrop);
 	        }, 300);
-	        if (_type2.default.isFunction(this.onHide)) {
-	          this.onHide();
-	        }
+	        this.$emit('hide');
 	      }
 	    }
 	  },
@@ -27708,6 +27666,28 @@
 	  }
 	};
 	// </script>
+	// <template>
+	//   <transition :name="(this.placement === 'left') ? 'slideleft' : 'slideright'">
+	//     <div 
+	//       :style="{width:width}"
+	//       :class="classObj"
+	//       v-show="show">
+	//       <div :class="`${prefixCls}-aside-dialog`">
+	//         <div :class="`${prefixCls}-aside-content`">
+	//           <div :class="`${prefixCls}-aside-header`">
+	//             <button type="button" :class="`${prefixCls}-close`" @click='close'><span>&times;</span></button>
+	//             <h4 :class="`${prefixCls}-aside-title`">{{header}}</h4>
+	//           </div>
+	//           <div :class="`${prefixCls}-aside-body`">
+	//             <slot></slot>
+	//           </div>
+	//         </div>
+	//       </div>
+	//     </div>
+	//   </transition>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 687 */
@@ -27797,25 +27777,8 @@
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	//   <div :class="`${prefixCls}-btn-group ${prefixCls}-checkbox-group`">
-	//     <slot></slot>
-	//     <validate
-	//       :name="name"
-	//       :rules="rules"
-	//       :custom-validate="customValidate" 
-	//       :current="currentValue">
-	//     </validate>
-	//   </div>
-	// </template>
-	
-	// <script>
 	exports.default = {
 	  name: 'n3CheckboxGroup',
 	  mixins: [_valMixin2.default, _events2.default],
@@ -27829,9 +27792,6 @@
 	    type: {
 	      type: String,
 	      default: 'checkbox'
-	    },
-	    onChange: {
-	      type: Function
 	    },
 	    prefixCls: {
 	      type: String,
@@ -27865,9 +27825,7 @@
 	      this.broadcast('n3Checkbox', 'n3@checkboxgroupChange', val);
 	      this.broadcast('n3CheckboxBtn', 'n3@checkboxgroupChange', val);
 	      this.$emit('input', val);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(val);
-	      }
+	      this.$emit('change', val);
 	    }
 	  },
 	
@@ -27893,6 +27851,19 @@
 	
 	};
 	// </script>
+	// <template>
+	//   <div :class="`${prefixCls}-btn-group ${prefixCls}-checkbox-group`">
+	//     <slot></slot>
+	//     <validate
+	//       :name="name"
+	//       :rules="rules"
+	//       :custom-validate="customValidate" 
+	//       :current="currentValue">
+	//     </validate>
+	//   </div>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 691 */
@@ -28359,10 +28330,6 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _n3Icon = __webpack_require__(491);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
@@ -28381,6 +28348,30 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// <template>
+	//   <label :class="wrapClass">
+	//   <span>
+	//     <span :class="`${prefixCls}-checkbox-inner`">
+	//       <n3-icon type="check" color="#fff" :class="`${prefixCls}-checkbox-inner-check`"></n3-icon>
+	//     </span>
+	//     <input
+	//       type="checkbox"
+	//       :class="`${prefixCls}-checkbox-input`"
+	//       :disabled="disabled"
+	//       :checked="currentChecked"
+	//       @click="handleClick"/>
+	//   </span>
+	//   <span><slot></slot></span>  
+	//   <validate
+	//     :name="name"
+	//     :rules="rules"
+	//     :custom-validate="customValidate" 
+	//     :current="currentChecked">
+	//   </validate>
+	//   </label>
+	// </template>
+	
+	// <script>
 	exports.default = {
 	  name: 'n3Checkbox',
 	  mixins: [_valMixin2.default, _events2.default],
@@ -28398,9 +28389,6 @@
 	    disabled: {
 	      type: Boolean,
 	      default: false
-	    },
-	    onChange: {
-	      type: Function
 	    },
 	    prefixCls: {
 	      type: String,
@@ -28462,37 +28450,11 @@
 	    handleClick: function handleClick() {
 	      this.currentChecked = !this.currentChecked;
 	      this.dispatch('n3CheckboxGroup', 'n3@checkboxChange', this);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(this.currentChecked);
-	      }
+	      this.$emit('change', this.currentChecked);
 	    }
 	  }
 	};
 	// </script>
-	// <template>
-	//   <label :class="wrapClass">
-	//   <span>
-	//     <span :class="`${prefixCls}-checkbox-inner`">
-	//       <n3-icon type="check" color="#fff" :class="`${prefixCls}-checkbox-inner-check`"></n3-icon>
-	//     </span>
-	//     <input
-	//       type="checkbox"
-	//       :class="`${prefixCls}-checkbox-input`"
-	//       :disabled="disabled"
-	//       :checked="currentChecked"
-	//       @click="handleClick"/>
-	//   </span>
-	//   <span><slot></slot></span>  
-	//   <validate
-	//     :name="name"
-	//     :rules="rules"
-	//     :custom-validate="customValidate" 
-	//     :current="currentChecked">
-	//   </validate>
-	//   </label>
-	// </template>
-	
-	// <script>
 
 /***/ },
 /* 699 */
@@ -28550,12 +28512,27 @@
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// <template>
+	//   <n3-button 
+	//     @click.prevent.native="handleClick"
+	//     :class="classObj" 
+	//     :disabled="disabled"
+	//     :type="currentChecked ? 'primary' : 'default'">
+	//     <slot></slot>
+	//   </n3-button>
+	// <!--   <validate
+	//     :name="name"
+	//     :rules="rules"
+	//     :valid-status.sync="validStatus"
+	//     :custom-validate="customValidate" 
+	//     :value="currentChecked"
+	//     :results.sync="validateResults">
+	//   </validate> -->
+	// </template>
+	
+	// <script>
 	exports.default = {
 	  name: 'n3CheckboxBtn',
 	  mixins: [_valMixin2.default, _events2.default],
@@ -28573,9 +28550,6 @@
 	    disabled: {
 	      type: Boolean,
 	      default: false
-	    },
-	    onChange: {
-	      type: Function
 	    },
 	    prefixCls: {
 	      type: String,
@@ -28620,9 +28594,7 @@
 	    handleClick: function handleClick() {
 	      this.currentChecked = !this.currentChecked;
 	      this.dispatch('n3CheckboxGroup', 'n3@checkboxChange', this);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(this.currentChecked);
-	      }
+	      this.$emit('change', this.currentChecked);
 	    }
 	  },
 	  created: function created() {
@@ -28639,25 +28611,6 @@
 	  }
 	};
 	// </script>
-	// <template>
-	//   <n3-button 
-	//     @click.prevent.native="handleClick"
-	//     :class="classObj" 
-	//     :disabled="disabled"
-	//     :type="currentChecked ? 'primary' : 'default'">
-	//     <slot></slot>
-	//   </n3-button>
-	// <!--   <validate
-	//     :name="name"
-	//     :rules="rules"
-	//     :valid-status.sync="validStatus"
-	//     :custom-validate="customValidate" 
-	//     :value="currentChecked"
-	//     :results.sync="validateResults">
-	//   </validate> -->
-	// </template>
-	
-	// <script>
 
 /***/ },
 /* 702 */
@@ -28711,40 +28664,8 @@
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	//   <div :class="`${prefixCls}-cascader`">
-	//     <span :class="`${prefixCls}-cascader-picker`">
-	//       <n3-input 
-	//         :width="width"
-	//         :name="name" 
-	//         :rules="rules" 
-	//         :has-feedback="hasFeedback"
-	//         :placeholder="placeholder"
-	//         :custom-validate="customValidate"
-	//         :value="displayValue"
-	//         :readonly="true"
-	//         :disabled="disabled"
-	//         @click.native="toggleMenus">
-	//       </n3-input>
-	//     </span>
-	//     <transition name="fadeDown">
-	//       <div :class="`${prefixCls}-cascader-menus`" v-show="show" >
-	//         <ul :class="`${prefixCls}-cascader-menu`" v-for="(menu, index) in menus">
-	//           <li :class="itemClass(index,option)" 
-	//             v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
-	//           </li>
-	//         </ul>
-	//       </div>
-	//     </transition>
-	//   </div>
-	// </template>
-	// <script>
 	exports.default = {
 	  name: 'n3Cascader',
 	  mixins: [_inputMixin2.default],
@@ -28906,8 +28827,8 @@
 	        self.inner = true;
 	        self.currentValue = self.selectedValue;
 	        this.$emit('input', self.currentValue);
-	        if (_type2.default.isFunction(self.onChange) && !this.init) {
-	          self.onChange(self.currentValue);
+	        if (!this.init) {
+	          self.$emit('change', self.currentValue);
 	        }
 	      }
 	
@@ -28924,6 +28845,34 @@
 	  }
 	};
 	// </script>
+	// <template>
+	//   <div :class="`${prefixCls}-cascader`">
+	//     <span :class="`${prefixCls}-cascader-picker`">
+	//       <n3-input 
+	//         :width="width"
+	//         :name="name" 
+	//         :rules="rules" 
+	//         :has-feedback="hasFeedback"
+	//         :placeholder="placeholder"
+	//         :custom-validate="customValidate"
+	//         :value="displayValue"
+	//         :readonly="true"
+	//         :disabled="disabled"
+	//         @click.native="toggleMenus">
+	//       </n3-input>
+	//     </span>
+	//     <transition name="fadeDown">
+	//       <div :class="`${prefixCls}-cascader-menus`" v-show="show" >
+	//         <ul :class="`${prefixCls}-cascader-menu`" v-for="(menu, index) in menus">
+	//           <li :class="itemClass(index,option)" 
+	//             v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
+	//           </li>
+	//         </ul>
+	//       </div>
+	//     </transition>
+	//   </div>
+	// </template>
+	// <script>
 
 /***/ },
 /* 705 */
@@ -29048,21 +28997,15 @@
 	  methods: {
 	    update: function update(val) {
 	      this.$emit('input', val);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(val);
-	      }
+	      this.$emit('change', val);
 	    },
 	    blur: function blur() {
 	      this.focused = false;
-	      if (_type2.default.isFunction(this.onBlur)) {
-	        this.onBlur(this.value);
-	      }
+	      this.$emit('blur', this.value);
 	    },
 	    focus: function focus() {
 	      this.focused = true;
-	      if (_type2.default.isFunction(this.onFocus)) {
-	        this.onFocus(this.value);
-	      }
+	      this.$emit('focus', this.value);
 	    }
 	  }
 	};
@@ -29131,12 +29074,6 @@
 	    placeholder: {
 	      type: String,
 	      default: ''
-	    },
-	    onBlur: {
-	      type: Function
-	    },
-	    onFocus: {
-	      type: Function
 	    },
 	    width: {
 	      type: String,
@@ -29533,13 +29470,11 @@
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
+	function isValueNumber(value) {
+	  return !isNaN(Number(value));
+	} // <template>
 	// <div :class="classObj" :style="{width: width}">
 	//   <div :class="`${prefixCls}-input-number-handler-wrap`">
 	//     <a unselectable="unselectable"
@@ -29569,14 +29504,14 @@
 	//   </div>
 	//   <div :class="prefixCls + '-input-number-input-wrap'">
 	//     <n3-input
-	//       :on-focus="onFocus"
+	//       @focus="onFocus"
 	//       :width="width"
 	//       :rules="rules" 
 	//       :placeholder="placeholder"
 	//       :custom-validate="customValidate"
-	//       :on-blur="_onBlur"
+	//       @blur="_onBlur"
 	//       @keydown.native.stop="_onKeyDown"
-	//       :on-change="_onChange"
+	//       @change="_onChange"
 	//       :readonly="readonly"
 	//       :disabled="disabled"
 	//       :name="name"
@@ -29587,9 +29522,7 @@
 	// </template>
 	
 	// <script>
-	function isValueNumber(value) {
-	  return !isNaN(Number(value));
-	}
+	
 	
 	function calNum(num1, num2, symb) {
 	  var sq1 = void 0,
@@ -29716,9 +29649,7 @@
 	  methods: {
 	    _setValue: function _setValue(value) {
 	      this.currentValue = value;
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(value);
-	      }
+	      this.$emit('change', value);
 	    },
 	    _onChange: function _onChange(value) {
 	      var val = String(value).trim();
@@ -29746,9 +29677,7 @@
 	      if (this.value === '-') {
 	        this._setValue('');
 	      }
-	      if (_type2.default.isFunction(this.onBlur)) {
-	        this.onBlur();
-	      }
+	      this.$emit('blur');
 	    },
 	    _step: function _step(type, e) {
 	      var _this = this;
@@ -29788,7 +29717,7 @@
 /* 720 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" :style=\"{width: width}\">\n  <div :class=\"`${prefixCls}-input-number-handler-wrap`\">\n    <a unselectable=\"unselectable\"\n      ref=\"up\"\n      @click=\"_up\"\n      @mouse.down=\"preventDefault\"\n      :class=\"[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]\">\n        <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-up-inner`\" \n          type=\"angle-up\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n    <a unselectable=\"unselectable\"\n       ref=\"down\"\n       @mouse.down=\"preventDefault\"\n       @click=\"_down\"\n       :class=\"[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]\">\n       <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-down-inner`\" \n          type=\"angle-down\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n  </div>\n  <div :class=\"prefixCls + '-input-number-input-wrap'\">\n    <n3-input\n      :on-focus=\"onFocus\"\n      :width=\"width\"\n      :rules=\"rules\" \n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :on-blur=\"_onBlur\"\n      @keydown.native.stop=\"_onKeyDown\"\n      :on-change=\"_onChange\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      :name=\"name\"\n      :value=\"currentValue\">\n    </n3-input> \n  </div>\n</div>";
+	module.exports = "<div :class=\"classObj\" :style=\"{width: width}\">\n  <div :class=\"`${prefixCls}-input-number-handler-wrap`\">\n    <a unselectable=\"unselectable\"\n      ref=\"up\"\n      @click=\"_up\"\n      @mouse.down=\"preventDefault\"\n      :class=\"[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]\">\n        <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-up-inner`\" \n          type=\"angle-up\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n    <a unselectable=\"unselectable\"\n       ref=\"down\"\n       @mouse.down=\"preventDefault\"\n       @click=\"_down\"\n       :class=\"[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]\">\n       <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-down-inner`\" \n          type=\"angle-down\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n  </div>\n  <div :class=\"prefixCls + '-input-number-input-wrap'\">\n    <n3-input\n      @focus=\"onFocus\"\n      :width=\"width\"\n      :rules=\"rules\" \n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      @blur=\"_onBlur\"\n      @keydown.native.stop=\"_onKeyDown\"\n      @change=\"_onChange\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      :name=\"name\"\n      :value=\"currentValue\">\n    </n3-input> \n  </div>\n</div>";
 
 /***/ },
 /* 721 */
@@ -29875,9 +29804,6 @@
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
-	    },
-	    onChange: {
-	      type: String
 	    }
 	  },
 	  components: {
@@ -29886,9 +29812,7 @@
 	  methods: {
 	    update: function update(val) {
 	      this.$emit('input', val);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(val);
-	      }
+	      this.$emit('change', val);
 	    }
 	  },
 	  computed: {
@@ -29998,111 +29922,8 @@
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	//   <div :class="`${prefixCls}-datepicker`">
-	//     <n3-input 
-	//       :width="width"
-	//       :name="name" 
-	//       :rules="rules" 
-	//       :has-feedback="hasFeedback"
-	//       :placeholder="placeholder"
-	//       :custom-validate="customValidate"
-	//       :readonly="true"
-	//       :disabled="disabled"
-	//       @click.native="inputClick"
-	//       :value="currentValue">
-	//     </n3-input>
-	//       <transition name="fadeDown">
-	//         <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" >
-	//           <div :class="`${prefixCls}-datepicker-inner`">
-	//             <div :class="`${prefixCls}-datepicker-body`">
-	//               <div :class="`${prefixCls}-datepicker-ctrl`">
-	//                 <span 
-	//                   :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
-	//                   @click="preNextMonthClick(0)">&lt;</span>
-	//                 <span 
-	//                   :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
-	//                   @click="preNextMonthClick(1)">&gt;</span>
-	//                 <p @click="switchMouthView">
-	//                 {{stringifyDayHeader(currDate)}}
-	//                 </p>
-	//               </div>
-	//               <div :class="`${prefixCls}-datepicker-weekRange`">
-	//                 <span v-for="w in weekRange">{{w}}</span>
-	//               </div>
-	//               <div :class="`${prefixCls}-datepicker-dateRange`">
-	//                 <span 
-	//                   v-for="d in dateRange" :class="d.sclass" 
-	//                   @click="daySelect(d.date,d.sclass)">
-	//                   {{d.text}}
-	//                 </span>
-	//               </div>
-	//             </div>
-	//           </div>
-	//         </div>
-	//       </transition>
-	//       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayMouthView" >
-	//         <div :class="`${prefixCls}-datepicker-inner`">
-	//           <div :class="`${prefixCls}-datepicker-body`">
-	//             <div :class="`${prefixCls}-datepicker-ctrl`">
-	//               <span 
-	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
-	//                 @click="preNextYearClick(0)">&lt;</span>
-	//               <span 
-	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
-	//                 @click="preNextYearClick(1)">&gt;</span>
-	//               <p @click="switchDecadeView">
-	//               {{stringifyYearHeader(currDate)}}
-	//               </p>
-	//             </div>
-	//             <div :class="`${prefixCls}-datepicker-mouthRange`">
-	//             	<template v-for="m in mouthNames">
-	//                 <span   
-	//                   :class="monthClassObj(m)"
-	//                   @click="mouthSelect($index)">
-	//                   {{m.substr(0,3)}}
-	//                 </span>
-	//               </template>
-	//             </div>
-	//           </div>
-	//         </div>
-	//       </div>
-	//       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayYearView" >
-	//         <div :class="`${prefixCls}-datepicker-inner`">
-	//           <div :class="`${prefixCls}-datepicker-body`">
-	//             <div :class="`${prefixCls}-datepicker-ctrl`">
-	//               <span 
-	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
-	//                 @click="preNextDecadeClick(0)">&lt;</span>
-	//               <span 
-	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
-	//                 @click="preNextDecadeClick(1)">&gt;</span>
-	//               <p>
-	//               {{stringifyDecadeHeader(currDate)}}
-	//               </p>
-	//             </div>
-	//             <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
-	//             	<template v-for="decade in decadeRange">
-	//             		<span 
-	//                   :class="yearClassObj(decade)"
-	//                   @click.stop="yearSelect(decade.text)">
-	//                   {{decade.text}}
-	//                	</span>
-	// 			        </template>
-	//             </div>
-	//           </div>
-	//         </div>
-	//       </div>
-	// </div>
-	// </template>
-	
-	// <script>
 	exports.default = {
 	  name: 'n3Datepicker',
 	  mixins: [_inputMixin2.default],
@@ -30118,9 +29939,6 @@
 	      default: function _default() {
 	        return [];
 	      }
-	    },
-	    onChange: {
-	      type: Function
 	    },
 	    prefixCls: {
 	      type: String,
@@ -30148,9 +29966,7 @@
 	    },
 	    currentValue: function currentValue(val) {
 	      this.$emit('input', val);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(this.currentValue);
-	      }
+	      this.$emit('change', this.currentValue);
 	    }
 	  },
 	  methods: {
@@ -30401,6 +30217,105 @@
 	  }
 	};
 	// </script>
+	// <template>
+	//   <div :class="`${prefixCls}-datepicker`">
+	//     <n3-input 
+	//       :width="width"
+	//       :name="name" 
+	//       :rules="rules" 
+	//       :has-feedback="hasFeedback"
+	//       :placeholder="placeholder"
+	//       :custom-validate="customValidate"
+	//       :readonly="true"
+	//       :disabled="disabled"
+	//       @click.native="inputClick"
+	//       :value="currentValue">
+	//     </n3-input>
+	//       <transition name="fadeDown">
+	//         <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" >
+	//           <div :class="`${prefixCls}-datepicker-inner`">
+	//             <div :class="`${prefixCls}-datepicker-body`">
+	//               <div :class="`${prefixCls}-datepicker-ctrl`">
+	//                 <span 
+	//                   :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+	//                   @click="preNextMonthClick(0)">&lt;</span>
+	//                 <span 
+	//                   :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+	//                   @click="preNextMonthClick(1)">&gt;</span>
+	//                 <p @click="switchMouthView">
+	//                 {{stringifyDayHeader(currDate)}}
+	//                 </p>
+	//               </div>
+	//               <div :class="`${prefixCls}-datepicker-weekRange`">
+	//                 <span v-for="w in weekRange">{{w}}</span>
+	//               </div>
+	//               <div :class="`${prefixCls}-datepicker-dateRange`">
+	//                 <span 
+	//                   v-for="d in dateRange" :class="d.sclass" 
+	//                   @click="daySelect(d.date,d.sclass)">
+	//                   {{d.text}}
+	//                 </span>
+	//               </div>
+	//             </div>
+	//           </div>
+	//         </div>
+	//       </transition>
+	//       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayMouthView" >
+	//         <div :class="`${prefixCls}-datepicker-inner`">
+	//           <div :class="`${prefixCls}-datepicker-body`">
+	//             <div :class="`${prefixCls}-datepicker-ctrl`">
+	//               <span 
+	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+	//                 @click="preNextYearClick(0)">&lt;</span>
+	//               <span 
+	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+	//                 @click="preNextYearClick(1)">&gt;</span>
+	//               <p @click="switchDecadeView">
+	//               {{stringifyYearHeader(currDate)}}
+	//               </p>
+	//             </div>
+	//             <div :class="`${prefixCls}-datepicker-mouthRange`">
+	//             	<template v-for="m in mouthNames">
+	//                 <span   
+	//                   :class="monthClassObj(m)"
+	//                   @click="mouthSelect($index)">
+	//                   {{m.substr(0,3)}}
+	//                 </span>
+	//               </template>
+	//             </div>
+	//           </div>
+	//         </div>
+	//       </div>
+	//       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayYearView" >
+	//         <div :class="`${prefixCls}-datepicker-inner`">
+	//           <div :class="`${prefixCls}-datepicker-body`">
+	//             <div :class="`${prefixCls}-datepicker-ctrl`">
+	//               <span 
+	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+	//                 @click="preNextDecadeClick(0)">&lt;</span>
+	//               <span 
+	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+	//                 @click="preNextDecadeClick(1)">&gt;</span>
+	//               <p>
+	//               {{stringifyDecadeHeader(currDate)}}
+	//               </p>
+	//             </div>
+	//             <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
+	//             	<template v-for="decade in decadeRange">
+	//             		<span 
+	//                   :class="yearClassObj(decade)"
+	//                   @click.stop="yearSelect(decade.text)">
+	//                   {{decade.text}}
+	//                	</span>
+	// 			        </template>
+	//             </div>
+	//           </div>
+	//         </div>
+	//       </div>
+	// </div>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 726 */
@@ -30493,9 +30408,6 @@
 	        return [0, 59];
 	      }
 	    },
-	    onHide: {
-	      type: Function
-	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -30513,7 +30425,7 @@
 	  },
 	  watch: {
 	    show: function show(val) {
-	      if (!val && _type2.default.isFunction(this.onHide)) this.onHide(this.currentValue);
+	      if (!val) this.$emit('hide', this.currentValue);
 	    },
 	    value: function value(val) {
 	      this.currentValue = val;
@@ -30787,9 +30699,6 @@
 	      type: Boolean,
 	      default: false
 	    },
-	    onChange: {
-	      type: Function
-	    },
 	    width: {
 	      type: String,
 	      default: '220px'
@@ -30868,9 +30777,7 @@
 	      this.setTempValue();
 	      this.setPosition();
 	      this.$emit('input', val);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(val);
-	      }
+	      this.$emit('change');
 	    }
 	  },
 	  methods: {
@@ -31400,10 +31307,6 @@
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } // <template>
@@ -31571,9 +31474,6 @@
 	        return [0, 59];
 	      }
 	    },
-	    onHide: {
-	      type: Function
-	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -31690,9 +31590,7 @@
 	    dispatchHide: function dispatchHide() {
 	      var show = this.displayDayView || this.displayMouthView || this.displayYearView;
 	      if (!show) {
-	        if (_type2.default.isFunction(this.onHide)) {
-	          this.onHide();
-	        }
+	        this.$emit('hide', this.value);
 	      }
 	    },
 	    close: function close() {
@@ -36159,16 +36057,40 @@
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _element = __webpack_require__(677);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// <template>
+	//   <div :class="classObj">
+	//     <div :class="`${prefixCls}-modal-dialog`" 
+	//       :style="{'width': width}">
+	//       <div :class="`${prefixCls}-modal-content`">
+	//         <slot name="header">
+	//           <div :class="`${prefixCls}-modal-header`">
+	//             <button type="button" :class="`${prefixCls}-close`" @click="close"><span>&times;</span></button>
+	//             <h4 :class="`${prefixCls}-modal-title`" >{{title}}</h4>
+	//           </div>
+	//         </slot>
+	
+	//         <div :class="`${prefixCls}-modal-body`">
+	//           <slot name="body"></slot>
+	//         </div>
+	
+	//         <slot name="footer">
+	//           <div :class="`${prefixCls}-modal-footer`">
+	//             <n3-button  @click.native="close">取消</n3-button>
+	//             <n3-button type="primary" @click.native="confirm">确定</n3-button>
+	//           </div>
+	//         </slot>
+	//       </div>
+	//     </div>
+	//   </div>
+	// </template>
+	
+	// <script>
 	exports.default = {
 	  name: 'n3Modal',
 	  props: {
@@ -36191,15 +36113,6 @@
 	    backdrop: {
 	      type: Boolean,
 	      default: true
-	    },
-	    onShow: {
-	      type: Function
-	    },
-	    onHide: {
-	      type: Function
-	    },
-	    onConfirm: {
-	      type: Function
 	    },
 	    prefixCls: {
 	      type: String,
@@ -36234,13 +36147,9 @@
 	      var _this = this;
 	
 	      if (val) {
-	        if (_type2.default.isFunction(this.onShow)) {
-	          this.onShow();
-	        }
+	        this.$emit('show');
 	      } else {
-	        if (_type2.default.isFunction(this.onHide)) {
-	          this.onHide();
-	        }
+	        this.$emit('hide');
 	      }
 	
 	      var el = this.$el;
@@ -36281,41 +36190,11 @@
 	      this.isShow = true;
 	    },
 	    confirm: function confirm() {
-	      if (_type2.default.isFunction(this.onConfirm)) {
-	        this.onConfirm();
-	      }
+	      this.$emit('confirm');
 	    }
 	  }
 	};
 	// </script>
-	// <template>
-	//   <div :class="classObj">
-	//     <div :class="`${prefixCls}-modal-dialog`" 
-	//       :style="{'width': width}">
-	//       <div :class="`${prefixCls}-modal-content`">
-	//         <slot name="header">
-	//           <div :class="`${prefixCls}-modal-header`">
-	//             <button type="button" :class="`${prefixCls}-close`" @click="close"><span>&times;</span></button>
-	//             <h4 :class="`${prefixCls}-modal-title`" >{{title}}</h4>
-	//           </div>
-	//         </slot>
-	
-	//         <div :class="`${prefixCls}-modal-body`">
-	//           <slot name="body"></slot>
-	//         </div>
-	
-	//         <slot name="footer">
-	//           <div :class="`${prefixCls}-modal-footer`">
-	//             <n3-button  @click.native="close">取消</n3-button>
-	//             <n3-button type="primary" @click.native="confirm">确定</n3-button>
-	//           </div>
-	//         </slot>
-	//       </div>
-	//     </div>
-	//   </div>
-	// </template>
-	
-	// <script>
 
 /***/ },
 /* 749 */
@@ -36931,10 +36810,6 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _valMixin = __webpack_require__(691);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
@@ -36949,28 +36824,6 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	// <label :class="`${prefixCls}-radio-con`">
-	//   <span :class="wrapClasses">
-	//     <span :class="`${prefixCls}-radio-inner`"></span> 
-	//     <input 
-	//     type="radio" 
-	//     :disabled="disabled"
-	//     :checked="currentChecked"
-	//     :class="`${prefixCls}-radio-input`" 
-	//     @click.prevent="handleClick" >
-	//   </span>
-	//   <span><slot></slot></span>
-	//   <validate
-	//     :name="name"
-	//     :rules="rules"
-	//     :custom-validate="customValidate" 
-	//     :current="checked">
-	//   </validate>
-	// </label>
-	// </template>
-	
-	// <script>
 	exports.default = {
 	  name: 'n3Radio',
 	  mixins: [_valMixin2.default, _events2.default],
@@ -36989,9 +36842,6 @@
 	    disabled: {
 	      type: Boolean,
 	      default: false
-	    },
-	    onChange: {
-	      type: Function
 	    },
 	    prefixCls: {
 	      type: String,
@@ -37053,13 +36903,33 @@
 	      if (this.currentChecked) return;
 	      this.currentChecked = true;
 	      this.dispatch('n3RadioGroup', 'n3@radioChange', this.label);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(this.currentChecked);
-	      }
+	      this.$emit('change', this.currentChecked);
 	    }
 	  }
 	};
 	// </script>
+	// <template>
+	// <label :class="`${prefixCls}-radio-con`">
+	//   <span :class="wrapClasses">
+	//     <span :class="`${prefixCls}-radio-inner`"></span> 
+	//     <input 
+	//     type="radio" 
+	//     :disabled="disabled"
+	//     :checked="currentChecked"
+	//     :class="`${prefixCls}-radio-input`" 
+	//     @click.prevent="handleClick" >
+	//   </span>
+	//   <span><slot></slot></span>
+	//   <validate
+	//     :name="name"
+	//     :rules="rules"
+	//     :custom-validate="customValidate" 
+	//     :current="checked">
+	//   </validate>
+	// </label>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 770 */
@@ -37113,23 +36983,8 @@
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	//   <n3-button 
-	//     @click.prevent.native="handleClick"
-	//     :class="classObj" 
-	//     :disabled="disabled"
-	//     :type="currentChecked ? 'primary' : 'default'">
-	//     <slot></slot>
-	//   </n3-button>
-	// </template>
-	
-	// <script>
 	exports.default = {
 	  name: 'n3RadioBtn',
 	  mixins: [_valMixin2.default, _events2.default],
@@ -37148,9 +37003,6 @@
 	    disabled: {
 	      type: Boolean,
 	      default: false
-	    },
-	    onChange: {
-	      type: Function
 	    },
 	    prefixCls: {
 	      type: String,
@@ -37204,9 +37056,7 @@
 	      if (this.currentChecked) return;
 	      this.currentChecked = true;
 	      this.dispatch('n3RadioGroup', 'n3@radioChange', this.label);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(this.currentChecked);
-	      }
+	      this.$emit('change', this.currentChecked);
 	    }
 	  },
 	  components: {
@@ -37214,6 +37064,17 @@
 	  }
 	};
 	// </script>
+	// <template>
+	//   <n3-button 
+	//     @click.prevent.native="handleClick"
+	//     :class="classObj" 
+	//     :disabled="disabled"
+	//     :type="currentChecked ? 'primary' : 'default'">
+	//     <slot></slot>
+	//   </n3-button>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 773 */
@@ -37308,9 +37169,6 @@
 	      type: String,
 	      default: 'checkbox'
 	    },
-	    onChange: {
-	      type: Function
-	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -37345,9 +37203,7 @@
 	      this.broadcast('n3Radio', 'n3@radiogroupChange', val);
 	      this.broadcast('n3RadioBtn', 'n3@radiogroupChange', val);
 	      this.$emit('input', val);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(val);
-	      }
+	      this.$emit('change', val);
 	    }
 	  },
 	
@@ -37518,9 +37374,6 @@
 	    menuWidth: {
 	      type: String
 	    },
-	    onChange: {
-	      type: Function
-	    },
 	    format: {
 	      type: Function,
 	      default: function _default(item) {
@@ -37555,9 +37408,7 @@
 	    },
 	    currentValue: function currentValue(val) {
 	      this.$emit('input', val);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(val);
-	      }
+	      this.$emit('change');
 	    }
 	  },
 	  components: {
@@ -38087,9 +37938,6 @@
 	      type: Number,
 	      default: 0
 	    },
-	    onChange: {
-	      type: Function
-	    },
 	    list: {
 	      type: Array
 	    },
@@ -38159,9 +38007,7 @@
 	      } else {
 	        return;
 	      }
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(index, el);
-	      }
+	      this.$emit('change', el);
 	    }
 	  }
 	};
@@ -38735,9 +38581,6 @@
 	      type: String,
 	      default: 'OFF'
 	    },
-	    onChange: {
-	      type: Function
-	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -38777,9 +38620,7 @@
 	      if (this.disabled) return;
 	      this.currentValue = !this.currentValue;
 	      this.$emit('input', this.currentValue);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(this.currentValue);
-	      }
+	      this.$emit('change');
 	    }
 	  }
 	};
@@ -38882,13 +38723,13 @@
 	//             <n3-typeahead
 	//               ref="typeahead"
 	//               :placeholder="placeholder"
-	//               :on-focus="onFocus"
-	//               :on-blur="onBlur"
+	//               @focus="onFocus"
+	//               @blur="onBlur"
 	//               :style="{margin:'0px 5px'}"
 	//               v-model="currentQuery" 
 	//               :width='inputWidth'
 	//               :items="citems"
-	//               :on-change="onInputchange"
+	//               @change="onInputchange"
 	//               :dropdown-width="dropdownWidth"
 	//               :dropdown-height="dropdownHeight"
 	//               :on-hit="add"
@@ -38915,13 +38756,13 @@
 	//       <n3-typeahead
 	//         ref="typeahead"
 	//         :placeholder="placeholder"
-	//         :on-focus="onFocus"
-	//         :on-blur="onBlur"
+	//         @focus="onFocus"
+	//         @blur="onBlur"
 	//         :style="{margin:'0px 5px'}"
 	//         v-model="currentQuery" 
 	//         :width='inputWidth'
 	//         :items="citems"
-	//         :on-change="onInputchange"
+	//         @change="onInputchange"
 	//         :dropdown-width="dropdownWidth"
 	//         :dropdown-height="dropdownHeight"
 	//         :on-hit="add"
@@ -38960,9 +38801,6 @@
 	      type: Number,
 	      default: 0
 	    },
-	    onPositionChange: {
-	      type: Function
-	    },
 	    format: {
 	      type: Function,
 	      default: function _default(item, index) {
@@ -38986,9 +38824,6 @@
 	      default: function _default(item) {
 	        return item;
 	      }
-	    },
-	    onChange: {
-	      type: Function
 	    },
 	    query: {
 	      type: String,
@@ -39020,9 +38855,6 @@
 	    matchCase: {
 	      type: Boolean,
 	      default: false
-	    },
-	    onHit: {
-	      type: Function
 	    },
 	    onEnter: {
 	      type: Function
@@ -39075,16 +38907,12 @@
 	      }
 	    },
 	    currentPosition: function currentPosition(val) {
-	      if (_type2.default.isFunction(this.onPositionChange)) {
-	        this.onPositionChange(val);
-	      }
+	      this.$emit('positionChange', val);
 	      this.focus();
 	    },
 	    currentValue: function currentValue(val) {
 	      this.$emit('input', val);
-	      if (_type2.default.isFunction(this.onChange)) {
-	        this.onChange(val);
-	      }
+	      this.$emit('change', val);
 	      this.focus();
 	    }
 	  },
@@ -39108,7 +38936,7 @@
 	  },
 	  methods: {
 	    focus: function focus() {
-	      this.$refs.typeahead.$emit('focus');
+	      this.$refs.typeahead.focusInput();
 	    },
 	    setIndex: function setIndex(index) {
 	      if (!this.positionMove) return;
@@ -39243,8 +39071,8 @@
 	//     :readonly="readonly"
 	//     :disabled="disabled"
 	//     v-model="query"
-	//     :on-focus="onFocus"
-	//     :on-blur="blur"
+	//     @focus="onFocus"
+	//     @blur="blur"
 	//     @input.native="update"
 	//     @keydown.native.up="up"
 	//     @keydown.native.down="down"
@@ -39266,15 +39094,7 @@
 	exports.default = {
 	  name: 'n3Typeahead',
 	  created: function created() {
-	    var _this = this;
-	
 	    this.citems = this.primitiveData;
-	    this.$on('focus', function () {
-	      _this.$refs.input.$emit('focus');
-	    });
-	    this.$on('blur', function () {
-	      _this.$refs.input.$emit('blur');
-	    });
 	  },
 	
 	  mixins: [_inputMixin2.default],
@@ -39325,8 +39145,8 @@
 	      type: String,
 	      default: '300px'
 	    },
-	    onChange: {
-	      type: Function
+	    async: {
+	      type: Boolean
 	    },
 	    items: {
 	      type: Array
@@ -39365,12 +39185,12 @@
 	
 	  computed: {
 	    primitiveData: function primitiveData() {
-	      var _this2 = this;
+	      var _this = this;
 	
 	      if (this.data && this.query) {
 	        return this.data.filter(function (value) {
-	          value = _this2.matchCase ? value : value.toLowerCase();
-	          return value.indexOf(_this2.query) !== -1;
+	          value = _this.matchCase ? value : value.toLowerCase();
+	          return value.indexOf(_this.query) !== -1;
 	        }).slice(0, this.limit);
 	      }
 	    }
@@ -39380,11 +39200,15 @@
 	    render: _render2.default
 	  },
 	  methods: {
+	    focusInput: function focusInput() {
+	      this.$refs.input.$emit('focus');
+	    },
+	    onFocus: function onFocus() {
+	      this.$emit('focus');
+	    },
 	    blur: function blur() {
 	      this.show = false;
-	      if (_type2.default.isFunction(this.onBlur)) {
-	        this.onBlur();
-	      }
+	      this.$emit('blur');
 	    },
 	    update: function update() {
 	      var self = this;
@@ -39395,8 +39219,8 @@
 	          return false;
 	        }
 	
-	        if (_type2.default.isFunction(self.onChange)) {
-	          self.onChange(self.query);
+	        if (self.async) {
+	          self.$emit('change', self.query);
 	        } else if (self.data) {
 	          self.citems = self.primitiveData;
 	        }
@@ -39432,13 +39256,13 @@
 /* 816 */
 /***/ function(module, exports) {
 
-	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    ref=\"input\"\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    v-model=\"query\"\n    :on-focus=\"onFocus\"\n    :on-blur=\"blur\"\n    @input.native=\"update\"\n    @keydown.native.up=\"up\"\n    @keydown.native.down=\"down\"\n    @keydown.native.enter= \"hit(null)\"\n    @keydown.native.esc=\"reset\"\n  ></n3-input>\n  <ul :class=\"`${prefixCls}-dropdown-menu`\" :style=\"{width: dropdownWidth, maxHeight: dropdownHeight}\">\n    <li v-for=\"(item,index) in citems\" :class=\"isActive(index)\" >\n      <a @mousedown.prevent=\"hit(index)\" >\n        <render :context=\"context || $parent._self\" :template=\"render(item)\">\n        </render>\n      </a>\n    </li> \n  </ul>\n</div>";
+	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    ref=\"input\"\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    v-model=\"query\"\n    @focus=\"onFocus\"\n    @blur=\"blur\"\n    @input.native=\"update\"\n    @keydown.native.up=\"up\"\n    @keydown.native.down=\"down\"\n    @keydown.native.enter= \"hit(null)\"\n    @keydown.native.esc=\"reset\"\n  ></n3-input>\n  <ul :class=\"`${prefixCls}-dropdown-menu`\" :style=\"{width: dropdownWidth, maxHeight: dropdownHeight}\">\n    <li v-for=\"(item,index) in citems\" :class=\"isActive(index)\" >\n      <a @mousedown.prevent=\"hit(index)\" >\n        <render :context=\"context || $parent._self\" :template=\"render(item)\">\n        </render>\n      </a>\n    </li> \n  </ul>\n</div>";
 
 /***/ },
 /* 817 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(item, index) in currentValue\">\n        <template v-if=\"index == currentPosition\">\n            <n3-typeahead\n              ref=\"typeahead\"\n              :placeholder=\"placeholder\"\n              :on-focus=\"onFocus\"\n              :on-blur=\"onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              v-model=\"currentQuery\" \n              :width='inputWidth'\n              :items=\"citems\"\n              :on-change=\"onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :data=\"data\"\n              @keydown.delete.native=\"del\" \n              @keydown.left.native=\"left\" \n              @keydown.right.native=\"right\" \n              @keydown.enter.native=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span :class=\"`${prefixCls}-multiple-input-space`\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span :class=\"`${prefixCls}-multiple-input-m-tag`\" >\n        <render class=\"inline\" :context=\"context || $parent._self\" :template=\"format(item, index)\"></render>\n        <n3-icon type=\"times\" :class=\"`${prefixCls}-multiple-close`\" @click.native=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"currentValue && currentValue.length == currentPosition\">\n      <n3-typeahead\n        ref=\"typeahead\"\n        :placeholder=\"placeholder\"\n        :on-focus=\"onFocus\"\n        :on-blur=\"onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        v-model=\"currentQuery\" \n        :width='inputWidth'\n        :items=\"citems\"\n        :on-change=\"onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :data=\"data\"\n        @keydown.delete.native=\"del\" \n        @keydown.left.native=\"left\" \n        @keydown.right.native=\"right\" \n        @keydown.enter.native=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span :class=\"`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`\"  @click=\"setIndex(currentValue.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>";
+	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(item, index) in currentValue\">\n        <template v-if=\"index == currentPosition\">\n            <n3-typeahead\n              ref=\"typeahead\"\n              :placeholder=\"placeholder\"\n              @focus=\"onFocus\"\n              @blur=\"onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              v-model=\"currentQuery\" \n              :width='inputWidth'\n              :items=\"citems\"\n              @change=\"onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :data=\"data\"\n              @keydown.delete.native=\"del\" \n              @keydown.left.native=\"left\" \n              @keydown.right.native=\"right\" \n              @keydown.enter.native=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span :class=\"`${prefixCls}-multiple-input-space`\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span :class=\"`${prefixCls}-multiple-input-m-tag`\" >\n        <render class=\"inline\" :context=\"context || $parent._self\" :template=\"format(item, index)\"></render>\n        <n3-icon type=\"times\" :class=\"`${prefixCls}-multiple-close`\" @click.native=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"currentValue && currentValue.length == currentPosition\">\n      <n3-typeahead\n        ref=\"typeahead\"\n        :placeholder=\"placeholder\"\n        @focus=\"onFocus\"\n        @blur=\"onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        v-model=\"currentQuery\" \n        :width='inputWidth'\n        :items=\"citems\"\n        @change=\"onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :data=\"data\"\n        @keydown.delete.native=\"del\" \n        @keydown.left.native=\"left\" \n        @keydown.right.native=\"right\" \n        @keydown.enter.native=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span :class=\"`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`\"  @click=\"setIndex(currentValue.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>";
 
 /***/ },
 /* 818 */
@@ -39546,7 +39370,7 @@
 	//         v-if="showSizer"
 	//         v-model="currentPagesize"
 	//         :options="pagesizeOptsCom"
-	//         :on-change="onSize">
+	//         @change="onSize">
 	//       </n3-select>
 	//       <div class="inline" v-if="showElevator">
 	//         <n3-input
@@ -39603,9 +39427,6 @@
 	    showSizer: {
 	      type: Boolean,
 	      default: false
-	    },
-	    onChange: {
-	      type: Function
 	    }
 	  },
 	  watch: {
@@ -39706,9 +39527,7 @@
 	      page = isNaN(page) ? this.currentPage : page;
 	      if (force || _type2.default.isNumber(page) && this.currentPage !== page && page >= 1 && page <= this.allPages) {
 	        this.currentPage = page;
-	        if (_type2.default.isFunction(this.onChange)) {
-	          this.onChange(page, this.currentPagesize);
-	        }
+	        this.$emit('change', page, this.currentPagesize);
 	      }
 	    },
 	    prev: function prev() {
@@ -39756,7 +39575,7 @@
 /* 820 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\n    <ul :class=\"simpleWrapClasses\" v-if=\"simple\">\n      <li\n        title=\"上一页\"\n        :class=\"prevClasses\"\n        @click=\"prev\">\n        <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <div :class=\"simplePagerClasses\" :title=\"currentPage + '/' + allPages\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>  \n        <span>/</span>\n        {{ allPages }}\n      </div>\n      <li\n        title=\"下一页\"\n        :class=\"nextClasses\"\n        @click=\"next\">\n        <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n    </ul>\n    <ul :class=\"wrapClasses\" v-else>\n      <span :class=\"[prefixCls + '-page-total']\" v-if=\"showTotal\">\n          <slot>共 {{ total }} 条</slot>\n      </span>\n      <li\n          title=\"上一页\"\n          :class=\"prevClasses\"\n          @click=\"prev\">\n          <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <li title=\"第一页\" :class=\"firstPageClasses\" @click=\"changePage(1)\"><a>1</a></li>\n      <li title=\"向前 5 页\" v-if=\"currentPage - 3 > 1\" :class=\"[prefixCls + '-page-item-jump-prev']\" @click=\"fastPrev\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"preventer\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"currentPage - 2\" v-if=\"currentPage - 2 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 2)\"><a>{{ currentPage - 2 }}</a></li>\n      <li :title=\"currentPage - 1\" v-if=\"currentPage - 1 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 1)\"><a>{{ currentPage - 1 }}</a></li>\n      <li :title=\"currentPage\" v-if=\"currentPage != 1 && currentPage != allPages\" :class=\"[prefixCls + '-page-item',prefixCls + '-page-item-active']\"><a>{{ currentPage }}</a></li>\n      <li :title=\"currentPage + 1\" v-if=\"currentPage + 1 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 1)\"><a>{{ currentPage + 1 }}</a></li>\n      <li :title=\"currentPage + 2\" v-if=\"currentPage + 2 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 2)\"><a>{{ currentPage + 2 }}</a></li>\n      <li title=\"向后 5 页\" v-if=\"currentPage + 3 < allPages\" :class=\"[prefixCls + '-page-item-jump-next']\" @click=\"fastNext\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"nextenter\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"'最后一页:' + allPages\" v-if=\"allPages > 1\" :class=\"lastPageClasses\" @click=\"changePage(allPages)\"><a>{{ allPages }}</a></li>\n      <li\n          title=\"下一页\"\n          :class=\"nextClasses\"\n          @click=\"next\">\n          <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n      <n3-select\n        v-if=\"showSizer\"\n        v-model=\"currentPagesize\"\n        :options=\"pagesizeOptsCom\"\n        :on-change=\"onSize\">\n      </n3-select>\n      <div class=\"inline\" v-if=\"showElevator\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>\n        <n3-button @click.native=\"goPage\">跳转</n3-button>\n      </div>\n    </ul>\n  </div>";
+	module.exports = "<div class=\"inline\">\n    <ul :class=\"simpleWrapClasses\" v-if=\"simple\">\n      <li\n        title=\"上一页\"\n        :class=\"prevClasses\"\n        @click=\"prev\">\n        <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <div :class=\"simplePagerClasses\" :title=\"currentPage + '/' + allPages\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>  \n        <span>/</span>\n        {{ allPages }}\n      </div>\n      <li\n        title=\"下一页\"\n        :class=\"nextClasses\"\n        @click=\"next\">\n        <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n    </ul>\n    <ul :class=\"wrapClasses\" v-else>\n      <span :class=\"[prefixCls + '-page-total']\" v-if=\"showTotal\">\n          <slot>共 {{ total }} 条</slot>\n      </span>\n      <li\n          title=\"上一页\"\n          :class=\"prevClasses\"\n          @click=\"prev\">\n          <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <li title=\"第一页\" :class=\"firstPageClasses\" @click=\"changePage(1)\"><a>1</a></li>\n      <li title=\"向前 5 页\" v-if=\"currentPage - 3 > 1\" :class=\"[prefixCls + '-page-item-jump-prev']\" @click=\"fastPrev\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"preventer\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"currentPage - 2\" v-if=\"currentPage - 2 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 2)\"><a>{{ currentPage - 2 }}</a></li>\n      <li :title=\"currentPage - 1\" v-if=\"currentPage - 1 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 1)\"><a>{{ currentPage - 1 }}</a></li>\n      <li :title=\"currentPage\" v-if=\"currentPage != 1 && currentPage != allPages\" :class=\"[prefixCls + '-page-item',prefixCls + '-page-item-active']\"><a>{{ currentPage }}</a></li>\n      <li :title=\"currentPage + 1\" v-if=\"currentPage + 1 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 1)\"><a>{{ currentPage + 1 }}</a></li>\n      <li :title=\"currentPage + 2\" v-if=\"currentPage + 2 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 2)\"><a>{{ currentPage + 2 }}</a></li>\n      <li title=\"向后 5 页\" v-if=\"currentPage + 3 < allPages\" :class=\"[prefixCls + '-page-item-jump-next']\" @click=\"fastNext\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"nextenter\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"'最后一页:' + allPages\" v-if=\"allPages > 1\" :class=\"lastPageClasses\" @click=\"changePage(allPages)\"><a>{{ allPages }}</a></li>\n      <li\n          title=\"下一页\"\n          :class=\"nextClasses\"\n          @click=\"next\">\n          <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n      <n3-select\n        v-if=\"showSizer\"\n        v-model=\"currentPagesize\"\n        :options=\"pagesizeOptsCom\"\n        @change=\"onSize\">\n      </n3-select>\n      <div class=\"inline\" v-if=\"showElevator\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>\n        <n3-button @click.native=\"goPage\">跳转</n3-button>\n      </div>\n    </ul>\n  </div>";
 
 /***/ },
 /* 821 */
@@ -39804,20 +39623,20 @@
 	//   </ul>
 	
 	//   <div v-else :class="`${prefixCls}-steps clearfix`">
-	//         <template v-for="(label,index) in labels">
-	//             <div :class="`${prefixCls}-steps-wrap`">
-	//                 <div :class="getClassFromIndex(index)">
-	//                     <label>
-	//                       <span :class="`${prefixCls}-steps-round`">{{index + 1}}</span>
-	//                       <span>{{label}}</span>
-	//                     </label>
-	//                     <template v-if="index < labels.length - 1">
-	//                         <i :class="`${prefixCls}-steps-triangle-right-bg`"></i>
-	//                         <i :class="`${prefixCls}-steps-triangle-right`"></i>
-	//                     </template>
-	//                 </div>
-	//             </div>
-	//         </template>
+	//       <template v-for="(label,index) in labels">
+	//         <div :class="`${prefixCls}-steps-wrap`">
+	//           <div :class="getClassFromIndex(index)">
+	//             <label>
+	//               <span :class="`${prefixCls}-steps-round`">{{index + 1}}</span>
+	//               <span>{{label}}</span>
+	//             </label>
+	//             <template v-if="index < labels.length - 1">
+	//               <i :class="`${prefixCls}-steps-triangle-right-bg`"></i>
+	//               <i :class="`${prefixCls}-steps-triangle-right`"></i>
+	//             </template>
+	//           </div>
+	//         </div>
+	//       </template>
 	//     </div>
 	
 	// </template>
@@ -39861,7 +39680,7 @@
 /* 823 */
 /***/ function(module, exports) {
 
-	module.exports = "<ul v-if=\"round\" :class=\"`${prefixCls}-steps-round-con`\">\n   <template v-for=\"(label,index) in labels\">\n      <li :class=\"[getClassFromIndex(index)]\">\n      <div :class=\"`${prefixCls}-steps-wrap`\">\n        <div :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</div>\n      </div>\n      <label>{{label}}</label>\n    </li>\n   </template>\n  </ul>\n\n  <div v-else :class=\"`${prefixCls}-steps clearfix`\">\n        <template v-for=\"(label,index) in labels\">\n            <div :class=\"`${prefixCls}-steps-wrap`\">\n                <div :class=\"getClassFromIndex(index)\">\n                    <label>\n                      <span :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</span>\n                      <span>{{label}}</span>\n                    </label>\n                    <template v-if=\"index < labels.length - 1\">\n                        <i :class=\"`${prefixCls}-steps-triangle-right-bg`\"></i>\n                        <i :class=\"`${prefixCls}-steps-triangle-right`\"></i>\n                    </template>\n                </div>\n            </div>\n        </template>\n    </div>";
+	module.exports = "<ul v-if=\"round\" :class=\"`${prefixCls}-steps-round-con`\">\n   <template v-for=\"(label,index) in labels\">\n      <li :class=\"[getClassFromIndex(index)]\">\n      <div :class=\"`${prefixCls}-steps-wrap`\">\n        <div :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</div>\n      </div>\n      <label>{{label}}</label>\n    </li>\n   </template>\n  </ul>\n\n  <div v-else :class=\"`${prefixCls}-steps clearfix`\">\n      <template v-for=\"(label,index) in labels\">\n        <div :class=\"`${prefixCls}-steps-wrap`\">\n          <div :class=\"getClassFromIndex(index)\">\n            <label>\n              <span :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</span>\n              <span>{{label}}</span>\n            </label>\n            <template v-if=\"index < labels.length - 1\">\n              <i :class=\"`${prefixCls}-steps-triangle-right-bg`\"></i>\n              <i :class=\"`${prefixCls}-steps-triangle-right`\"></i>\n            </template>\n          </div>\n        </div>\n      </template>\n    </div>";
 
 /***/ },
 /* 824 */
@@ -40048,7 +39867,7 @@
 	//       :total="cpage.total" 
 	//       :current="cpage.current" 
 	//       :pagesize="cpage.pagesize" 
-	//       :on-change="pageChange"
+	//       @change="pageChange"
 	//       :show-sizer="true"
 	//       :show-total="true"
 	//       :pagesize-opts="cpage.pagesizeOpts">
@@ -40107,6 +39926,9 @@
 	    source: {
 	      type: Array
 	    },
+	    async: {
+	      boolean: false
+	    },
 	    pagination: {
 	      type: Object,
 	      default: function _default() {
@@ -40121,12 +39943,6 @@
 	    loading: {
 	      type: Boolean,
 	      default: false
-	    },
-	    onChange: {
-	      type: Function
-	    },
-	    onComplete: {
-	      type: Function
 	    },
 	    mergeRule: {
 	      type: Object
@@ -40364,7 +40180,7 @@
 	      return this.sortInfo.index === dataIndex && this.sortInfo.type === type;
 	    },
 	    tableChange: function tableChange() {
-	      this.onChange(this.page ? this.cpage : null, this.search ? this.query : null, this.sort ? this.sortInfo : null, this.filter ? this.filters : null);
+	      this.$emit('change', this.page ? this.cpage : null, this.search ? this.query : null, this.sort ? this.sortInfo : null, this.filter ? this.filters : null);
 	    },
 	    sort: function sort(col, s, t) {
 	      var dataIndex = col.dataIndex;
@@ -40378,7 +40194,7 @@
 	        type: _type,
 	        method: col.sortMethod
 	      };
-	      if (this.sort && _type3.default.isFunction(this.onChange)) {
+	      if (this.sort && this.async) {
 	        this.tableChange();
 	      } else {
 	        this.render();
@@ -40386,14 +40202,14 @@
 	    },
 	    gosearch: function gosearch() {
 	      this.cpage.current = 1;
-	      if (this.search && _type3.default.isFunction(this.onChange)) {
+	      if (this.search && this.async) {
 	        this.tableChange();
 	      } else {
 	        this.render();
 	      }
 	    },
 	    pageChange: function pageChange(current, pagesize) {
-	      if (this.page && _type3.default.isFunction(this.onChange)) {
+	      if (this.page && this.async) {
 	        this.tableChange();
 	      } else {
 	        this.render();
@@ -40404,7 +40220,7 @@
 	        this.filterArr[i].value = [];
 	      }
 	      this.cpage.current = 1;
-	      if (this.filter && _type3.default.isFunction(this.onChange)) {
+	      if (this.filter && this.async) {
 	        this.tableChange();
 	      } else {
 	        this.render();
@@ -40412,7 +40228,7 @@
 	    },
 	    goFilter: function goFilter() {
 	      this.cpage.current = 1;
-	      if (this.filter && _type3.default.isFunction(this.onChange)) {
+	      if (this.filter && this.async) {
 	        this.tableChange();
 	      } else {
 	        this.render();
@@ -40474,7 +40290,6 @@
 	      var ret = [];
 	      var filterValue = {};
 	      var checkedRows = [];
-	
 	      if (!_type3.default.isArray(this.filterList)) {
 	        for (var i in this.filterMap) {
 	          var filter = this.filterMap[i];
@@ -40508,7 +40323,6 @@
 	      if (this.selection) {
 	        this.checkedRows = checkedRows;
 	      }
-	
 	      this.initSource = ret;
 	    },
 	    init: function init() {
@@ -40574,19 +40388,19 @@
 	    render: function render() {
 	      var s = this.initSource;
 	      var ret = this.initSource.slice(0);
-	      if (this.filter && !_type3.default.isFunction(this.onChange) && this.filterArr.length > 0 && !this.isFilterEmpty()) {
+	      if (this.filter && !this.async && this.filterArr.length > 0 && !this.isFilterEmpty()) {
 	        ret = this.filterRet(ret);
 	      }
-	      if (this.search && !_type3.default.isFunction(this.onChange) && this.query) {
+	      if (this.search && !this.async && this.query) {
 	        ret = [];
 	        for (var i = 0; i < s.length; i++) {
 	          this.searchMap[s[i][this.key]].indexOf(this.query) !== -1 ? ret.push(s[i]) : 0;
 	        }
 	      }
-	      if (this.sortInfo.index && !_type3.default.isFunction(this.onChange)) {
+	      if (this.sortInfo.index && !this.async) {
 	        this.listSort(ret, this.sortInfo.index, this.sortInfo.type, this.sortInfo.method);
 	      }
-	      if (this.page && !_type3.default.isFunction(this.onChange)) {
+	      if (this.page && !this.async) {
 	        this.cpage.total = ret.length;
 	        ret = ret.slice((this.cpage.current - 1) * this.cpage.pagesize, (this.cpage.current - 1) * this.cpage.pagesize + this.cpage.pagesize);
 	      }
@@ -40601,9 +40415,7 @@
 	        if (_this.selection) {
 	          self.isDisabledAll = !self.checkebleRows.length;
 	        }
-	        if (_type3.default.isFunction(self.onComplete)) {
-	          self.onComplete();
-	        }
+	        _this.$emit('complete');
 	      });
 	    }
 	  }
@@ -40614,7 +40426,7 @@
 /* 826 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-data-table`\">\n  <div :class=\"`${prefixCls}-data-table-bar clearfix`\">\n    <n3-select \n      class='pull-left'\n      style=\"margin-right:10px;\"\n      multiple\n      :showselected=\"false\"\n      v-if=\"selectCol\"\n      placeholder = \"显示的列\"\n      :options=\"selectOptions\" \n      v-model=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" :class=\"`pull-left ${prefixCls}-btn-group`\">\n      <template v-for=\"item in filterArr\">\n        <n3-select \n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n          :search = \"item.search === undefined?true:!!item.search\"\n          :extra = \"item.extra === undefined?true:!!item.extra\"\n          :showselected=\"false\"\n          :placeholder = \"item.title\"\n          :options=\"item.options\" \n          v-model=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\n        @click.native=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\n        @click.native=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\" \n        style=\"margin-left:10px;\"\n        @click.native=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      v-model=\"query\"\n      @keydown.native.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" :class=\"`${prefixCls}-data-table-row-select`\">\n                  <input v-if=\"list && list.length\" \n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                    @change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in showColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                    <span>{{col.title}} </span> \n                    <div :class=\"`${prefixCls}-data-table-sort pull-right`\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.native.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.native.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(data,index) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" :class=\"`${prefixCls}-row-select`\">\n                   <input type=\"checkbox\" \n                    v-model=\"checkedValues\"  \n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in showColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      <render :context=\"context || $parent._self\" :template=\"col.render(data[col.dataIndex],data,index)\"></render>\n                    </template>\n                    <template v-else>\n                      <span v-html=\"col.dataIndex ? data[col.dataIndex] : ''\"></span>\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div :class=\"`${prefixCls}-data-table-bar ${prefixCls}-data-table-page`\" v-if=\"page\" >\n    <n3-page\n      v-if=\"page\" \n      :total=\"cpage.total\" \n      :current=\"cpage.current\" \n      :pagesize=\"cpage.pagesize\" \n      :on-change=\"pageChange\"\n      :show-sizer=\"true\"\n      :show-total=\"true\"\n      :pagesize-opts=\"cpage.pagesizeOpts\">\n    </n3-page>\n    </div>\n  </div>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-data-table`\">\n  <div :class=\"`${prefixCls}-data-table-bar clearfix`\">\n    <n3-select \n      class='pull-left'\n      style=\"margin-right:10px;\"\n      multiple\n      :showselected=\"false\"\n      v-if=\"selectCol\"\n      placeholder = \"显示的列\"\n      :options=\"selectOptions\" \n      v-model=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" :class=\"`pull-left ${prefixCls}-btn-group`\">\n      <template v-for=\"item in filterArr\">\n        <n3-select \n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n          :search = \"item.search === undefined?true:!!item.search\"\n          :extra = \"item.extra === undefined?true:!!item.extra\"\n          :showselected=\"false\"\n          :placeholder = \"item.title\"\n          :options=\"item.options\" \n          v-model=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\n        @click.native=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\n        @click.native=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\" \n        style=\"margin-left:10px;\"\n        @click.native=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      v-model=\"query\"\n      @keydown.native.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" :class=\"`${prefixCls}-data-table-row-select`\">\n                  <input v-if=\"list && list.length\" \n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                    @change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in showColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                    <span>{{col.title}} </span> \n                    <div :class=\"`${prefixCls}-data-table-sort pull-right`\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.native.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.native.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(data,index) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" :class=\"`${prefixCls}-row-select`\">\n                   <input type=\"checkbox\" \n                    v-model=\"checkedValues\"  \n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in showColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      <render :context=\"context || $parent._self\" :template=\"col.render(data[col.dataIndex],data,index)\"></render>\n                    </template>\n                    <template v-else>\n                      <span v-html=\"col.dataIndex ? data[col.dataIndex] : ''\"></span>\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div :class=\"`${prefixCls}-data-table-bar ${prefixCls}-data-table-page`\" v-if=\"page\" >\n    <n3-page\n      v-if=\"page\" \n      :total=\"cpage.total\" \n      :current=\"cpage.current\" \n      :pagesize=\"cpage.pagesize\" \n      @change=\"pageChange\"\n      :show-sizer=\"true\"\n      :show-total=\"true\"\n      :pagesize-opts=\"cpage.pagesizeOpts\">\n    </n3-page>\n    </div>\n  </div>\n  </div>";
 
 /***/ },
 /* 827 */
@@ -40658,12 +40470,21 @@
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// <template>
+	//  	<ul :class="`${prefixCls}-timeline-con`">
+	//  		<template v-if="value">
+	//  			<n3-timeline-item v-for="i in value" :color="i.color" :icon="i.icon" >
+	//  				<render :context="context || $parent._self" :template="i.content"></render>
+	//  			</n3-timeline-item>
+	//  		</template>
+	//  		<template v-else>
+	//  			<slot></slot>
+	//  		</template>
+	//  	</ul>
+	// </template>
+	// <script>
 	exports.default = {
 	  name: 'n3Timeline',
 	  props: {
@@ -40682,19 +40503,6 @@
 	  }
 	};
 	// </script>
-	// <template>
-	//  	<ul :class="`${prefixCls}-timeline-con`">
-	//  		<template v-if="value">
-	//  			<n3-timeline-item v-for="i in value" :color="i.color" :icon="i.icon" >
-	//  				<render :context="context || $parent._self" :template="i.content"></render>
-	//  			</n3-timeline-item>
-	//  		</template>
-	//  		<template v-else>
-	//  			<slot></slot>
-	//  		</template>
-	//  	</ul>
-	// </template>
-	// <script>
 
 /***/ },
 /* 829 */
@@ -40899,6 +40707,7 @@
 	
 	      if (index > -1) {
 	        this.currentValue.splice(index, 1);
+	        this.$emit('remove');
 	      }
 	    }
 	  }
@@ -41105,9 +40914,6 @@
 	      type: String,
 	      default: 'horizontal'
 	    },
-	    onValidateChange: {
-	      type: Function
-	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -41138,8 +40944,8 @@
 	      }
 	    },
 	    result: function result(val) {
-	      if (this.validate && _type2.default.isFunction(this.onValidateChange)) {
-	        this.onValidateChange(val);
+	      if (this.validate) {
+	        this.$emit('change', val);
 	      }
 	    }
 	  },
@@ -42432,14 +42238,6 @@
 	
 	var _n3Progressbar2 = _interopRequireDefault(_n3Progressbar);
 	
-	var _n3ToastMethod = __webpack_require__(711);
-	
-	var _n3ToastMethod2 = _interopRequireDefault(_n3ToastMethod);
-	
-	var _type = __webpack_require__(490);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = {
@@ -42476,23 +42274,6 @@
 	    showList: {
 	      type: Boolean,
 	      default: true
-	    },
-	    onError: {
-	      type: Function,
-	      default: function _default(data) {
-	        (0, _n3ToastMethod2.default)({
-	          text: data.message
-	        });
-	      }
-	    },
-	    onSuccess: {
-	      type: Function
-	    },
-	    onFinish: {
-	      type: Function
-	    },
-	    onDelete: {
-	      type: Function
 	    },
 	    maxlength: {
 	      type: Number,
@@ -42688,32 +42469,26 @@
 	        }
 	        if (data) {
 	          this.states[index] = true;
-	          if (_type2.default.isFunction(this.onSuccess)) {
-	            this.onSuccess({
-	              response: data,
-	              file: this.uploadList[index]
-	            });
-	          }
+	          this.$emit('success', {
+	            response: data,
+	            file: this.uploadList[index]
+	          });
 	        }
 	      }
-	      if (Object.keys(this.states).length === len && _type2.default.isFunction(this.onFinish)) {
-	        this.onFinish();
+	      if (Object.keys(this.states).length === len) {
+	        this.$emit('finish');
 	      }
 	    },
 	    setError: function setError(message, index) {
-	      if (_type2.default.isFunction(this.onError)) {
-	        this.onError({
-	          message: message,
-	          file: index && this.uploadList[index] || null
-	        });
-	      }
+	      this.$emit('error', {
+	        message: message,
+	        file: index && this.uploadList[index] || null
+	      });
 	      this.states[index] = false;
 	      index > -1 && this.uploadList.splice(index, 1);
 	    },
 	    delFile: function delFile(index) {
-	      if (_type2.default.isFunction(this.onDelete)) {
-	        this.onDelete(this.uploadList[index]);
-	      }
+	      this.$emit('delete', this.uploadList[index]);
 	      this.uploadList.splice(index, 1);
 	      this.states.splice(index, 1);
 	      this.progress.splice(index, 1);

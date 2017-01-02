@@ -64,9 +64,6 @@
       prefixCls: {
         type: String,
         default: 'n3'
-      },
-      onChange: {
-        type: String
       }
     },
     components: {
@@ -75,9 +72,7 @@
     methods: {
       update (val) {
         this.$emit('input', val)
-        if (type.isFunction(this.onChange)) {
-          this.onChange(val)
-        }
+        this.$emit('change', val)
       }
     },
     computed: {

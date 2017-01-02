@@ -24,7 +24,6 @@
 </template>
 
 <script>
-import type from './utils/type'
 import n3Icon from './n3Icon'
 
 export default {
@@ -64,9 +63,6 @@ export default {
       type: Boolean,
       default: false
     },
-    onClose: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -87,9 +83,7 @@ export default {
     },
     handleClose (e) {
       this.isShow = false
-      if (type.isFunction(this.onClose)) {
-        this.onClose()
-      }
+      this.$emit('close')
     }
   },
   watch: {

@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import type from './utils/type'
 import valMixin from './valMixin'
 import events from './utils/events'
 import validate from './validate'
@@ -43,9 +42,6 @@ export default {
     disabled: {
       type: Boolean,
       default: false
-    },
-    onChange: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -100,9 +96,7 @@ export default {
       if (this.currentChecked) return
       this.currentChecked = true
       this.dispatch('n3RadioGroup', 'n3@radioChange', this.label)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.currentChecked)
-      }
+      this.$emit('change', this.currentChecked)
     }
   }
 }

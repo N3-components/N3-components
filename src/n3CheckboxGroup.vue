@@ -14,7 +14,6 @@
 import valMixin from './valMixin'
 import validate from './validate'
 import events from './utils/events'
-import type from './utils/type'
 
 export default {
   name: 'n3CheckboxGroup',
@@ -29,9 +28,6 @@ export default {
     type: {
       type: String,
       default: 'checkbox'
-    },
-    onChange: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -64,9 +60,7 @@ export default {
       this.broadcast('n3Checkbox', 'n3@checkboxgroupChange', val)
       this.broadcast('n3CheckboxBtn', 'n3@checkboxgroupChange', val)
       this.$emit('input', val)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+      this.$emit('change', val)
     }
   },
 

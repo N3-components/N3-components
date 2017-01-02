@@ -44,9 +44,6 @@ export default {
       type: Number,
       default: 0
     },
-    onChange: {
-      type: Function
-    },
     list: {
       type: Array
     },
@@ -107,9 +104,7 @@ export default {
       } else {
         return
       }
-      if (type.isFunction(this.onChange)) {
-        this.onChange(index, el)
-      }
+      this.$emit('change', el)
     }
   }
 }

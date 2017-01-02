@@ -88,6 +88,7 @@ export default{
 
       if (index > -1) {
         this.currentValue.splice(index, 1)
+        this.$emit('remove')
       }
     }
   }

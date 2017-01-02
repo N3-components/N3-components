@@ -147,9 +147,6 @@ export default {
     menuWidth: {
       type: String
     },
-    onChange: {
-      type: Function
-    },
     format: {
       type: Function,
       default (item) {
@@ -183,9 +180,7 @@ export default {
     },
     currentValue (val) {
       this.$emit('input', val)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+      this.$emit('change')
     }
   },
   components: {

@@ -6,13 +6,13 @@
             <n3-typeahead
               ref="typeahead"
               :placeholder="placeholder"
-              :on-focus="onFocus"
-              :on-blur="onBlur"
+              @focus="onFocus"
+              @blur="onBlur"
               :style="{margin:'0px 5px'}"
               v-model="currentQuery" 
               :width='inputWidth'
               :items="citems"
-              :on-change="onInputchange"
+              @change="onInputchange"
               :dropdown-width="dropdownWidth"
               :dropdown-height="dropdownHeight"
               :on-hit="add"
@@ -39,13 +39,13 @@
       <n3-typeahead
         ref="typeahead"
         :placeholder="placeholder"
-        :on-focus="onFocus"
-        :on-blur="onBlur"
+        @focus="onFocus"
+        @blur="onBlur"
         :style="{margin:'0px 5px'}"
         v-model="currentQuery" 
         :width='inputWidth'
         :items="citems"
-        :on-change="onInputchange"
+        @change="onInputchange"
         :dropdown-width="dropdownWidth"
         :dropdown-height="dropdownHeight"
         :on-hit="add"
@@ -91,9 +91,6 @@ export default {
       type: Number,
       default: 0
     },
-    onPositionChange: {
-      type: Function
-    },
     format: {
       type: Function,
       default (item, index) {
@@ -117,9 +114,6 @@ export default {
       default (item) {
         return item
       }
-    },
-    onChange: {
-      type: Function
     },
     query: {
       type: String,
@@ -152,9 +146,6 @@ export default {
     matchCase: {
       type: Boolean,
       default: false
-    },
-    onHit: {
-      type: Function
     },
     onEnter: {
       type: Function
@@ -206,16 +197,12 @@ export default {
       }
     },
     currentPosition (val) {
-      if (type.isFunction(this.onPositionChange)) {
-        this.onPositionChange(val)
-      }
+      this.$emit('positionChange', val)
       this.focus()
     },
     currentValue (val) {
       this.$emit('input', val)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+      this.$emit('change', val)
       this.focus()
     }
   },
@@ -238,7 +225,7 @@ export default {
   },
   methods: {
     focus () {
-      this.$refs.typeahead.$emit('focus')
+      this.$refs.typeahead.focusInput()
     },
     setIndex (index) {
       if (!this.positionMove) return

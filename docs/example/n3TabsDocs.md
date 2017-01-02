@@ -117,9 +117,23 @@ data () {
 ### n3-column参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| col          | Number     |    -         |     占的列数     |
-| mode          | String     |    md          |     布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)    |
-| offset          | Number     |    -          |     偏移值    |
+| active-index          | Number     |    -         |     占的列数     |
+| list          | Array     |    -          |        | <pre><code>
+list: [{
+  header: 'first',
+  badge: 12,
+  content: 'xxx'
+},{
+  header: 'seacond',
+  badge: 12,
+  content: 'xxxx'
+}]
+        </code></pre>
+| pills          | Boolean     |    false         |     胶囊样式    |
+| stacked          | Boolean     |    false         |     竖直状态    |
+| primary          | Boolean     |    false         |     胶囊样式    |
+| justified          | Boolean     |    false         |     是否自适应    |
+| on-change          | Function     |    -         |     是否自适应    |
 
 
   <h2>tabs参数</h2>

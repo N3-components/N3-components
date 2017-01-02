@@ -22,7 +22,6 @@
 </template>
 
 <script>
-import type from './utils/type'
 import n3Icon from './n3Icon'
 import events from './utils/events'
 import valMixin from './valMixin'
@@ -45,9 +44,6 @@ export default {
     disabled: {
       type: Boolean,
       default: false
-    },
-    onChange: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -102,9 +98,7 @@ export default {
     handleClick () {
       this.currentChecked = !this.currentChecked
       this.dispatch('n3CheckboxGroup', 'n3@checkboxChange', this)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.currentChecked)
-      }
+      this.$emit('change', this.currentChecked)
     }
   }
 }

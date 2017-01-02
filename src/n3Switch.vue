@@ -45,9 +45,6 @@ export default {
       type: String,
       default: 'OFF'
     },
-    onChange: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -83,9 +80,7 @@ export default {
       if (this.disabled) return
       this.currentValue = !this.currentValue
       this.$emit('input', this.currentValue)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.currentValue)
-      }
+      this.$emit('change')
     }
   }
 }

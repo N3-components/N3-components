@@ -29,7 +29,6 @@
 import getScrollBarWidth from './utils/getScrollBarWidth'
 import EventListener from './utils/EventListener'
 import n3Button from './n3Button'
-import type from './utils/type'
 import element from './utils/element'
 
 export default {
@@ -54,15 +53,6 @@ export default {
     backdrop: {
       type: Boolean,
       default: true
-    },
-    onShow: {
-      type: Function
-    },
-    onHide: {
-      type: Function
-    },
-    onConfirm: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -92,13 +82,9 @@ export default {
   watch: {
     isShow (val) {
       if (val) {
-        if (type.isFunction(this.onShow)) {
-          this.onShow()
-        }
+        this.$emit('show')
       } else {
-        if (type.isFunction(this.onHide)) {
-          this.onHide()
-        }
+        this.$emit('hide')
       }
 
       const el = this.$el
@@ -137,9 +123,7 @@ export default {
       this.isShow = true
     },
     confirm () {
-      if (type.isFunction(this.onConfirm)) {
-        this.onConfirm()
-      }
+      this.$emit('confirm')
     }
   }
 }

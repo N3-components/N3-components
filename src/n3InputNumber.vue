@@ -28,14 +28,14 @@
   </div>
   <div :class="prefixCls + '-input-number-input-wrap'">
     <n3-input
-      :on-focus="onFocus"
+      @focus="onFocus"
       :width="width"
       :rules="rules" 
       :placeholder="placeholder"
       :custom-validate="customValidate"
-      :on-blur="_onBlur"
+      @blur="_onBlur"
       @keydown.native.stop="_onKeyDown"
-      :on-change="_onChange"
+      @change="_onChange"
       :readonly="readonly"
       :disabled="disabled"
       :name="name"
@@ -49,7 +49,6 @@
 import n3Input from './n3Input'
 import n3Icon from './n3Icon'
 import inputMixin from './inputMixin'
-import type from './utils/type'
 
 function isValueNumber (value) {
   return !isNaN(Number(value))
@@ -175,9 +174,7 @@ export default {
   methods: {
     _setValue (value) {
       this.currentValue = value
-      if (type.isFunction(this.onChange)) {
-        this.onChange(value)
-      }
+      this.$emit('change', value)
     },
 
     _onChange (value) {
@@ -208,9 +205,7 @@ export default {
       if (this.value === '-') {
         this._setValue('')
       }
-      if (type.isFunction(this.onBlur)) {
-        this.onBlur()
-      }
+      this.$emit('blur')
     },
 
     _step (type, e) {

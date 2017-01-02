@@ -21,7 +21,6 @@ import n3Button from './n3Button'
 import events from './utils/events'
 import valMixin from './valMixin'
 import validate from './validate'
-import type from './utils/type'
 
 export default {
   name: 'n3CheckboxBtn',
@@ -40,9 +39,6 @@ export default {
     disabled: {
       type: Boolean,
       default: false
-    },
-    onChange: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -85,9 +81,7 @@ export default {
     handleClick () {
       this.currentChecked = !this.currentChecked
       this.dispatch('n3CheckboxGroup', 'n3@checkboxChange', this)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.currentChecked)
-      }
+      this.$emit('change', this.currentChecked)
     }
   },
   created () {

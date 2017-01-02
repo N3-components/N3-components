@@ -5,17 +5,12 @@
 </template>
 
 <script>
-import type from './utils/type'
-
 export default {
   name: 'n3Accordion',
   props: {
     oneAtTime: {
       type: Boolean,
       default: false
-    },
-    onChange: {
-      type: Function
     },
     effect: {
       type: String,
@@ -47,9 +42,7 @@ export default {
           })
         }
       })
-      if (type.isFunction(this.onChange)) {
-        this.onChange(ret)
-      }
+      this.$emit('change')
     }
   }
 }

@@ -22,7 +22,6 @@
 <script>
 import EventListener from './utils/EventListener'
 import getScrollBarWidth from './utils/getScrollBarWidth'
-import type from './utils/type'
 import element from './utils/element'
 
 export default {
@@ -82,9 +81,7 @@ export default {
         }
         backdrop.className += ' ' + prefixCls + '-aside-in'
         this._clickEvent = EventListener.listen(backdrop, 'click', this.close)
-        if (type.isFunction(this.onShow)) {
-          this.onShow()
-        }
+        this.$emit('show')
       } else {
         if (this._clickEvent) this._clickEvent.remove()
         backdrop = document.querySelector('.' + prefixCls + '-aside-backdrop')
@@ -94,9 +91,7 @@ export default {
           body.style.paddingRight = '0'
           body.removeChild(backdrop)
         }, 300)
-        if (type.isFunction(this.onHide)) {
-          this.onHide()
-        }
+        this.$emit('hide')
       }
     }
   },

@@ -131,7 +131,6 @@ import n3Slider from './n3Slider'
 import n3Input from './n3Input'
 import inputMixin from './inputMixin'
 import EventListener from './utils/EventListener'
-import type from './utils/type'
 
 export default {
   name: 'n3Datetimepicker',
@@ -166,9 +165,6 @@ export default {
       default () {
         return [0, 59]
       }
-    },
-    onHide: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -283,11 +279,9 @@ export default {
       return klass
     },
     dispatchHide () {
-      var show = this.displayDayView || this.displayMouthView || this.displayYearView
+      let show = this.displayDayView || this.displayMouthView || this.displayYearView
       if (!show) {
-        if (type.isFunction(this.onHide)) {
-          this.onHide()
-        }
+        this.$emit('hide', this.value)
       }
     },
     close () {

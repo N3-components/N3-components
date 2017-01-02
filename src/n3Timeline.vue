@@ -13,7 +13,6 @@
 <script>
 import n3TimelineItem from './n3TimelineItem'
 import render from './render'
-import type from './utils/type'
 
 export default{
   name: 'n3Timeline',

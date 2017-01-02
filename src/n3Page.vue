@@ -52,7 +52,7 @@
         v-if="showSizer"
         v-model="currentPagesize"
         :options="pagesizeOptsCom"
-        :on-change="onSize">
+        @change="onSize">
       </n3-select>
       <div class="inline" v-if="showElevator">
         <n3-input
@@ -112,9 +112,6 @@
         type: Boolean,
         default: false
       },
-      onChange: {
-        type: Function
-      }
     },
     watch: {
       current (val) {
@@ -226,9 +223,7 @@
         page = isNaN(page) ? this.currentPage : page
         if (force || (type.isNumber(page) && this.currentPage !== page && (page >= 1 && page <= this.allPages))) {
           this.currentPage = page
-          if (type.isFunction(this.onChange)) {
-            this.onChange(page, this.currentPagesize)
-          }
+          this.$emit('change', page, this.currentPagesize)
         }
       },
       prev () {

@@ -29,7 +29,6 @@
 import EventListener from './utils/EventListener'
 import n3Input from './n3Input'
 import inputMixin from './inputMixin'
-import type from './utils/type'
 
 export default {
   name: 'n3Cascader',
@@ -189,8 +188,8 @@ export default {
         self.inner = true
         self.currentValue = self.selectedValue
         this.$emit('input', self.currentValue)
-        if (type.isFunction(self.onChange) && !this.init) {
-          self.onChange(self.currentValue)
+        if (!this.init) {
+          self.$emit('change', self.currentValue)
         }
       }
 

@@ -100,7 +100,6 @@
 import EventListener from './utils/EventListener'
 import n3Input from './n3Input'
 import inputMixin from './inputMixin'
-import type from './utils/type'
 
 export default {
   name: 'n3Datepicker',
@@ -117,9 +116,6 @@ export default {
       default () {
         return []
       }
-    },
-    onChange: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -149,9 +145,7 @@ export default {
     },
     currentValue (val) {
       this.$emit('input', val)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.currentValue)
-      }
+      this.$emit('change', this.currentValue)
     }
   },
   methods: {

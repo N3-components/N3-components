@@ -85,8 +85,6 @@
   import n3Button from './n3Button'
   import n3Progress from './n3Progress'
   import n3Progressbar from './n3Progressbar'
-  import n3Toast from './n3ToastMethod'
-  import type from './utils/type'
 
   export default {
     name: 'n3Uploader',
@@ -122,23 +120,6 @@
       showList: {
         type: Boolean,
         default: true
-      },
-      onError: {
-        type: Function,
-        default (data) {
-          n3Toast({
-            text: data.message
-          })
-        }
-      },
-      onSuccess: {
-        type: Function
-      },
-      onFinish: {
-        type: Function
-      },
-      onDelete: {
-        type: Function
       },
       maxlength: {
         type: Number,
@@ -325,34 +306,28 @@
           }
           if (data) {
             this.states[index] = true
-            if (type.isFunction(this.onSuccess)) {
-              this.onSuccess({
-                response: data,
-                file: this.uploadList[index]
-              })
-            }
+            this.$emit('success', {
+              response: data,
+              file: this.uploadList[index]
+            })
           }
         }
-        if (Object.keys(this.states).length === len && type.isFunction(this.onFinish)) {
-          this.onFinish()
+        if (Object.keys(this.states).length === len) {
+          this.$emit('finish')
         }
       },
 
       setError (message, index) {
-        if (type.isFunction(this.onError)) {
-          this.onError({
-            message: message,
-            file: index && this.uploadList[index] || null
-          })
-        }
+        this.$emit('error', {
+          message: message,
+          file: index && this.uploadList[index] || null
+        })
         this.states[index] = false
         index > -1 && this.uploadList.splice(index, 1)
       },
 
       delFile (index) {
-        if (type.isFunction(this.onDelete)) {
-          this.onDelete(this.uploadList[index])
-        }
+        this.$emit('delete', this.uploadList[index])
         this.uploadList.splice(index, 1)
         this.states.splice(index, 1)
         this.progress.splice(index, 1)

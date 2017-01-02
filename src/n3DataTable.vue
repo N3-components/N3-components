@@ -115,7 +115,7 @@
       :total="cpage.total" 
       :current="cpage.current" 
       :pagesize="cpage.pagesize" 
-      :on-change="pageChange"
+      @change="pageChange"
       :show-sizer="true"
       :show-total="true"
       :pagesize-opts="cpage.pagesizeOpts">
@@ -183,6 +183,9 @@ export default {
     source: {
       type: Array
     },
+    async: {
+      boolean: false
+    },
     pagination: {
       type: Object,
       default () {
@@ -197,12 +200,6 @@ export default {
     loading: {
       type: Boolean,
       default: false
-    },
-    onChange: {
-      type: Function
-    },
-    onComplete: {
-      type: Function
     },
     mergeRule: {
       type: Object
@@ -278,7 +275,7 @@ export default {
   computed: {
     showColumns () {
       return this.initColumns.filter(i => {
-        return i.show && i.colspan != 0     
+        return i.show && i.colspan != 0    
       })
     },
     checkedRows: {
@@ -397,7 +394,7 @@ export default {
       if (checked) {
         let array = self.checkedRows
         self.checkebleRows.forEach((record, i) => {
-          if (self.checkedRows.findIndex(item => {return self.compare(item,record)}) < 0) {
+          if (self.checkedRows.findIndex(item => { return self.compare(item, record) }) < 0) {
             array.push(record)
             changeRows.push(self.delkey(record))
           }
@@ -406,7 +403,7 @@ export default {
       } else {
         let array = self.checkedRows
         self.checkebleRows.forEach((record, i) => {
-          let index = self.checkedRows.findIndex(item => {return self.compare(item,record)})
+          let index = self.checkedRows.findIndex(item => { return self.compare(item, record) })
           if (index >= 0) {
             array.splice(index, 1)
             changeRows.push(self.delkey(record))
@@ -422,7 +419,7 @@ export default {
       return this.sortInfo.index === dataIndex && this.sortInfo.type === type
     },
     tableChange () {
-      this.onChange(this.page ? this.cpage : null, this.search ? this.query : null, this.sort ? this.sortInfo : null, this.filter ? this.filters : null)
+      this.$emit('change', this.page ? this.cpage : null, this.search ? this.query : null, this.sort ? this.sortInfo : null, this.filter ? this.filters : null)
     },
     sort (col, s, t) {
       let dataIndex = col.dataIndex
@@ -436,7 +433,7 @@ export default {
         type: _type,
         method: col.sortMethod
       }
-      if (this.sort && type.isFunction(this.onChange)) {
+      if (this.sort && this.async) {
         this.tableChange()
       } else {
         this.render()
@@ -444,14 +441,14 @@ export default {
     },
     gosearch () {
       this.cpage.current = 1
-      if (this.search && type.isFunction(this.onChange)) {
+      if (this.search && this.async) {
         this.tableChange()
       } else {
         this.render()
       }
     },
     pageChange (current, pagesize) {
-      if (this.page && type.isFunction(this.onChange)) {
+      if (this.page && this.async) {
         this.tableChange()
       } else {
         this.render()
@@ -462,7 +459,7 @@ export default {
         this.filterArr[i].value = []
       }
       this.cpage.current = 1
-      if (this.filter && type.isFunction(this.onChange)) {
+      if (this.filter && this.async) {
         this.tableChange()
       } else {
         this.render()
@@ -470,7 +467,7 @@ export default {
     },
     goFilter () {
       this.cpage.current = 1
-      if (this.filter && type.isFunction(this.onChange)) {
+      if (this.filter && this.async) {
         this.tableChange()
       } else {
         this.render()
@@ -517,7 +514,7 @@ export default {
           t['show'] = true
           selectdCols.push(t['value'])
         }
-        t['sortType'] || t['sortMethod'] ? this.sortInfo = {index: t['dataIndex'], type: t['sortType'],method: t['sortMethod']} : 0
+        t['sortType'] || t['sortMethod'] ? this.sortInfo = {index: t['dataIndex'], type: t['sortType'], method: t['sortMethod']} : 0
         ret[i] = t
       }
       this.handlerFilter()
@@ -530,7 +527,6 @@ export default {
       let ret = []
       let filterValue = {}
       let checkedRows = []
-     
       if (!type.isArray(this.filterList)) {
         for (let i in this.filterMap) {
           var filter = this.filterMap[i]
@@ -564,7 +560,6 @@ export default {
       if (this.selection) {
         this.checkedRows = checkedRows
       }
-  
       this.initSource = ret
     },
     init () {
@@ -630,19 +625,19 @@ export default {
     render () {
       let s = this.initSource
       let ret = this.initSource.slice(0)
-      if (this.filter && !type.isFunction(this.onChange) && this.filterArr.length > 0 && !this.isFilterEmpty()) {
+      if (this.filter && !this.async && this.filterArr.length > 0 && !this.isFilterEmpty()) {
         ret = this.filterRet(ret)
       }
-      if (this.search && !type.isFunction(this.onChange) && this.query) {
+      if (this.search && !this.async && this.query) {
         ret = []
         for (let i = 0; i < s.length; i++) {
           this.searchMap[s[i][this.key]].indexOf(this.query) !== -1 ? ret.push(s[i]) : 0
         }
       }
-      if (this.sortInfo.index && !type.isFunction(this.onChange)) {
+      if (this.sortInfo.index && !this.async) {
         this.listSort(ret, this.sortInfo.index, this.sortInfo.type, this.sortInfo.method)
       }
-      if (this.page && !type.isFunction(this.onChange)) {
+      if (this.page && !this.async) {
         this.cpage.total = ret.length
         ret = ret.slice((this.cpage.current - 1) * this.cpage.pagesize, (this.cpage.current - 1) * this.cpage.pagesize + this.cpage.pagesize)
       }
@@ -655,9 +650,7 @@ export default {
         if (this.selection) {
           self.isDisabledAll = !self.checkebleRows.length
         }
-        if (type.isFunction(self.onComplete)) {
-          self.onComplete()
-        }
+        this.$emit('complete')
       })
     }
   }

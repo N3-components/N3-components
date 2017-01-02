@@ -12,8 +12,8 @@
     :readonly="readonly"
     :disabled="disabled"
     v-model="query"
-    :on-focus="onFocus"
-    :on-blur="blur"
+    @focus="onFocus"
+    @blur="blur"
     @input.native="update"
     @keydown.native.up="up"
     @keydown.native.down="down"
@@ -41,12 +41,6 @@ export default {
   name: 'n3Typeahead',
   created () {
     this.citems = this.primitiveData
-    this.$on('focus', () => {
-      this.$refs.input.$emit('focus')
-    })
-    this.$on('blur', () => {
-      this.$refs.input.$emit('blur')
-    })
   },
   mixins: [inputMixin],
   props: {
@@ -97,8 +91,8 @@ export default {
       type: String,
       default: '300px'
     },
-    onChange: {
-      type: Function
+    async: {
+      type: Boolean
     },
     items: {
       type: Array
@@ -149,11 +143,15 @@ export default {
     render
   },
   methods: {
+    focusInput () {
+      this.$refs.input.$emit('focus')
+    },
+    onFocus () {
+      this.$emit('focus')
+    },
     blur () {
       this.show = false
-      if (type.isFunction(this.onBlur)) {
-        this.onBlur()
-      }
+      this.$emit('blur')
     },
     update () {
       let self = this
@@ -164,8 +162,8 @@ export default {
           return false
         }
 
-        if (type.isFunction(self.onChange)) {
-          self.onChange(self.query)
+        if (self.async) {
+          self.$emit('change', self.query)
         } else if (self.data) {
           self.citems = self.primitiveData
         }

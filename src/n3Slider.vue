@@ -63,9 +63,6 @@ export default {
       type: Boolean,
       default: false
     },
-    onChange: {
-      type: Function
-    },
     width: {
       type: String,
       default: '220px'
@@ -140,9 +137,7 @@ export default {
       this.setTempValue()
       this.setPosition()
       this.$emit('input', val)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+      this.$emit('change')
     }
   },
   methods: {

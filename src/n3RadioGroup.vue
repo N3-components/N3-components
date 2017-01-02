@@ -32,9 +32,6 @@ export default {
       type: String,
       default: 'checkbox'
     },
-    onChange: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -68,9 +65,7 @@ export default {
       this.broadcast('n3Radio', 'n3@radiogroupChange', val)
       this.broadcast('n3RadioBtn', 'n3@radiogroupChange', val)
       this.$emit('input', val)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+      this.$emit('change', val)
     }
   },
 
