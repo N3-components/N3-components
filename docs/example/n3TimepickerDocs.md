@@ -1,63 +1,32 @@
 <template>
-  <div class="bs-docs-section" id="时间选择器"  >
-    <h1 class="page-header"><a href="#时间选择器" class="anchor">时间选择器</a><span class="author"> </span></h1>
-    <div class="bs-example">
 
-       <n3-timepicker v-model="value"  format="hh:mm:ss"></n3-timepicker>
+## 时间选择器
 
-       <n3-timepicker v-model="value1"  format="hh:mm:ss"></n3-timepicker>
-     
-    </div>
-    <h2>参数</h2>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>参数名</th>
-          <th>类型</th>
-          <th>默认值</th>
-          <th>说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>value</td>
-          <td><code>String</code></td>
-          <td></td>
-          <td>时间值,需要<code>.sync</code></td>
-        </tr>
-        <tr>
-          <td>format</td>
-          <td><code>String</code></td>
-          <td>hh:mm:ss</td>
-          <td>格式</td>
-        </tr>
-        <tr>
-          <td>hour-range</td>
-          <td><code>Array</code></td>
-          <td>[0,60]</td>
-          <td>时钟范围</td>
-        </tr>
-        <tr>
-          <td>minute-range</td>
-          <td><code>Array</code></td>
-          <td>[0,60]</td>
-          <td>分钟范围</td>
-        </tr>
-        <tr>
-          <td>second-range</td>
-          <td><code>Array</code></td>
-          <td>[0,60]</td>
-          <td>秒钟范围</td>
-        </tr>
-       <tr>
-          <td>on-hide</td>
-          <td><code>Function</code></td>
-          <td></td>
-          <td>隐藏时触发</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="bs-docs-section"  >
+<div class="bs-example">
+<n3-timepicker v-model="value"  format="hh:mm:ss"></n3-timepicker>
+</div>
+
+```html
+<n3-timepicker v-model="value"  format="hh:mm:ss"></n3-timepicker>
+```
+
+
+### 参数
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| format          | String     |    hh:mm:ss        |     格式     |
+| hour-range          | String     |    [0,60]      |     小时范围     |
+| minute-range          | String     |    [0,60]      |     分钟范围     |
+| second-range          | String     |    [0,60]       |     秒范围     |
+
+### 事件
+
+| 名称          |   说明          |        
+|-------------  |---------------- |
+| hide | 隐藏 |
+
+</div>
 </template>
 
 <script>

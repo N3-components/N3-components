@@ -80,7 +80,7 @@ export default {
       if (this.disabled) return
       this.currentValue = !this.currentValue
       this.$emit('input', this.currentValue)
-      this.$emit('change')
+      this.$emit('change', this.currentValue)
     }
   }
 }

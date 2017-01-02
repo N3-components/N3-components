@@ -1,17 +1,31 @@
 <template>
-  <div class="bs-docs-section" id="自定义输入"  >
-    <h1 class="page-header"><a href="#自定义输入" class="anchor">自定义输入</a><span class="author"> </span></h1>
-    <div class="bs-example">
-        <n3-multiple-input
-          :on-focus="focus" 
-          v-model="a.list" 
-          :format="format" 
-          :on-inputchange="getResult"
-          :render="render"
-          :items="items"
-        ></n3-multiple-input>
-    </div>
-    {{a.list}}
+
+## 自定义输入
+
+<div class="bs-docs-section" >
+<div class="bs-example">
+<n3-multiple-input
+  @focus="focus" 
+  @inputChange="getResult"
+  v-model="a.list" 
+  :format="format" 
+  :render="render"
+  :items="items" >
+</n3-multiple-input>
+</div>
+
+
+```html
+<n3-multiple-input
+  @focus="focus" 
+  @inputChange="getResult"
+  v-model="a.list" 
+  :format="format" 
+  :render="render"
+  :items="items" >
+</n3-multiple-input>
+```
+
 
 ```javascript
 new Vue({

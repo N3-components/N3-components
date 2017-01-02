@@ -6,13 +6,13 @@
             <n3-typeahead
               ref="typeahead"
               :placeholder="placeholder"
-              @focus="onFocus"
-              @blur="onBlur"
+              @focus="_onFocus"
+              @blur="_onBlur"
               :style="{margin:'0px 5px'}"
               v-model="currentQuery" 
               :width='inputWidth'
               :items="citems"
-              @change="onInputchange"
+              @change="_onInputchange"
               :dropdown-width="dropdownWidth"
               :dropdown-height="dropdownHeight"
               :on-hit="add"
@@ -39,13 +39,13 @@
       <n3-typeahead
         ref="typeahead"
         :placeholder="placeholder"
-        @focus="onFocus"
-        @blur="onBlur"
+        @focus="_onFocus"
+        @blur="_onBlur"
         :style="{margin:'0px 5px'}"
         v-model="currentQuery" 
         :width='inputWidth'
         :items="citems"
-        @change="onInputchange"
+        @change="_onInputchange"
         :dropdown-width="dropdownWidth"
         :dropdown-height="dropdownHeight"
         :on-hit="add"
@@ -73,7 +73,6 @@
 </template>
 
 <script>
-import type from './utils/type'
 import n3Typeahead from './n3Typeahead'
 import render from './render'
 import n3Icon from './n3Icon'
@@ -158,21 +157,12 @@ export default {
       type: String,
       default: '300px'
     },
-    onInputchange: {
-      type: Function
-    },
     items: {
       type: Array
     },
     prefixCls: {
       type: String,
       default: 'n3'
-    },
-    onFocus: {
-      type: Function
-    },
-    onBlur: {
-      type: Function
     }
   },
   data () {
@@ -224,8 +214,17 @@ export default {
     render
   },
   methods: {
+    _onInputchange () {
+      this.$emit('inputChange')
+    },
+    _onFocus () {
+      this.$emit('focus')
+    },
+    _onBlur () {
+      this.$emit('blur')
+    },
     focus () {
-      this.$refs.typeahead.focusInput()
+      this.$refs.typeahead && this.$refs.typeahead.focusInput()
     },
     setIndex (index) {
       if (!this.positionMove) return

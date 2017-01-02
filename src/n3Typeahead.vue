@@ -12,8 +12,8 @@
     :readonly="readonly"
     :disabled="disabled"
     v-model="query"
-    @focus="onFocus"
-    @blur="blur"
+    @focus="_onFocus"
+    @blur="_onBlur"
     @input.native="update"
     @keydown.native.up="up"
     @keydown.native.down="down"
@@ -34,7 +34,6 @@
 <script>
 import n3Input from './n3Input'
 import render from './render'
-import type from './utils/type'
 import inputMixin from './inputMixin'
 
 export default {
@@ -146,10 +145,10 @@ export default {
     focusInput () {
       this.$refs.input.$emit('focus')
     },
-    onFocus () {
+    _onFocus () {
       this.$emit('focus')
     },
-    blur () {
+    _onBlur () {
       this.show = false
       this.$emit('blur')
     },

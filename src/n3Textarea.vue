@@ -8,6 +8,8 @@
     :style="styleObj"
     :name="name"
     @input="update($event.target.value)"
+    @focus="_onFocus"
+    @blur="_onBlur"
     :placeholder="placeholder"
     :value="value">
   </textarea>
@@ -25,7 +27,6 @@
 <script>
   import validate from './validate'
   import valMixin from './valMixin'
-  import type from './utils/type'
 
   export default {
     name: 'n3Textarea',
@@ -73,6 +74,12 @@
       update (val) {
         this.$emit('input', val)
         this.$emit('change', val)
+      },
+      _onFocus () {
+        this.$emit('focus')
+      },
+      _onBlur () {
+        this.$emit('blur')
       }
     },
     computed: {

@@ -28,7 +28,7 @@
   </div>
   <div :class="prefixCls + '-input-number-input-wrap'">
     <n3-input
-      @focus="onFocus"
+      @focus="_onFocus"
       :width="width"
       :rules="rules" 
       :placeholder="placeholder"
@@ -151,7 +151,7 @@ export default {
 
   watch: {
     currentValue (val) {
-      this.$emit('input',val)
+      this.$emit('input', val)
     },
     value (val) {
       if (isValueNumber(val)) {
@@ -201,6 +201,10 @@ export default {
       }
     },
 
+    _onFocus () {
+      this.$emit('focus')
+    },
+
     _onBlur () {
       if (this.value === '-') {
         this._setValue('')
@@ -220,9 +224,7 @@ export default {
 
       if (value > this.max || value < this.min) return
 
-      this._setValue(value, () => {
-        this.focused = true
-      })
+      this._setValue(value)
     },
 
     _down (e) {

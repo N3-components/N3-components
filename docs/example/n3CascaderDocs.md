@@ -1,107 +1,62 @@
 <template>
-  <div class="bs-docs-section" id="级联选择"  >
-    <h1 class="page-header"><a href="#级联选择" class="anchor">级联选择</a><span class="author"> </span></h1>
-    <div class="bs-example">
-    {{value}}
-      <n3-cascader :options="options" :on-change="selectChange" v-model="value" :select-change="true"></n3-cascader>
-    </div>
 
-    <h2>参数</h2>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>参数名</th>
-          <th>类型</th>
-          <th>默认值</th>
-          <th>说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>options</td>
-          <td><code>Array</code></td>
-          <td></td>
-          <td>
-          ```javascript
-          [{
-            value: 'zhejiang',
-            label: '浙江',
-            children: [{
-              value: 'hangzhou',
-              label: '杭州',
-              children: [{
-                value: 'xihu',
-                label: '西湖',
-              }],
-            }],
-          }, {
-            value: 'jiangsu',
-            label: '江苏',
-            disabled:true,
-            children: [{
-              value: 'nanjing',
-              label: '南京',
-              children: [{
-                value: 'zhonghuamen',
-                label: '中华门',
-              }],
-            }],
-          }]
-          ```
-          </td>
-        </tr>
-        <tr>
-          <td>value</td>
-          <td><code>Array</code></td>
-          <td></td>
-          <td>需要<code>.sync</code></td>
-        </tr>
-        <tr>
-          <td>width</td>
-          <td><code>String</code></td>
-          <td><code>200px</code></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>disabled</td>
-          <td><code>Boolean</code></td>
-          <td><code>false</code></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>placeholder</td>
-          <td><code>String</code></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>display-render</td>
-          <td><code>Function</code></td>
-          <td>
-            ```javascript
-            function(label){
-              return label.join(' / ')
-            }
-            ```
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>select-change</td>
-          <td><code>Boolean</code></td>
-          <td></td>
-          <td>选择值就改变</td>
-        </tr>
-        <tr>
-          <td>on-change</td>
-          <td><code>Function</code></td>
-          <td></td>
-          <td>值变化时候后触发</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+## 级联选择
+
+<div class="bs-docs-section" >
+  <div class="bs-example">
+    <n3-cascader :options="options" :on-change="selectChange" v-model="value" :select-change="true"></n3-cascader>
   </div>
+
+```html
+<n3-cascader :options="options" @change="selectChange" v-model="value" :select-change="true"></n3-cascader>
+```
+```javascript
+  [{
+    value: 'zhejiang',
+    label: '浙江',
+    children: [{
+      value: 'hangzhou',
+      label: '杭州',
+      children: [{
+        value: 'xihu',
+        label: '西湖',
+      }],
+    }],
+  }, {
+    value: 'jiangsu',
+    label: '江苏',
+    disabled:true,
+    children: [{
+      value: 'nanjing',
+      label: '南京',
+      children: [{
+        value: 'zhonghuamen',
+        label: '中华门',
+      }],
+    }],
+  }]
+```   
+
+### 参数
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| options          | Array     |    -        |       |
+|width | String| 200px |宽度 |
+|disabled | Boolean| false | 禁用 |
+| placeholder | String| - | |
+| display-render |Function | - | |
+|select-change  | Boolean | - | 选择值就改变 |
+
+
+### 事件
+
+| 名称          |   说明          |        
+|-------------  |---------------- |
+| change | 值变化 |
+
+    
+<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+</div>
 </template>
 
 <script>

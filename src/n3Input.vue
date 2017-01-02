@@ -97,15 +97,6 @@ export default {
     }
   },
 
-  created () {
-    this.$on('focus', () => {
-      this.focus()
-    })
-    this.$on('blur', () => {
-      this.blur()
-    })
-  },
-
   methods: {
     update (val) {
       this.$emit('input', val)
