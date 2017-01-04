@@ -111,7 +111,7 @@
       showSizer: {
         type: Boolean,
         default: false
-      },
+      }
     },
     watch: {
       current (val) {

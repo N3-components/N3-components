@@ -275,7 +275,7 @@ export default {
   computed: {
     showColumns () {
       return this.initColumns.filter(i => {
-        return i.show && i.colspan != 0    
+        return i.show && i.colspan != 0
       })
     },
     checkedRows: {

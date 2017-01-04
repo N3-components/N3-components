@@ -1,140 +1,150 @@
 <template>
-  <div>
-    <div :class="`${prefixCls}-tree-node`">
-      <div :class="`${prefixCls}-tree-node-data`"></div>
+  <div :class="`${prefixCls}-tree-node`">
+    <div 
+      @click.stop="handleClick"
+      v-show="node.visible"
+      :class="[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']">
+      <div :class="`${prefixCls}-tree-node__content`"
+        :style="{ 'padding-left': (node.level - 1) * 16 + 'px' }">
+        <n3-icon
+          v-show="!node.isLeaf"
+          :class="`${prefixCls}-tree-select-icon`"
+          :type="(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon"
+          @click.stop="handleExpandIconClick">
+        </n3-icon>
+        <n3-checkbox
+          v-if="showCheckbox"
+          :checked="node.checked"
+          @change="handleCheckChange"
+          @click.stop="handleUserClick">
+        </n3-checkbox>
         <span
-          :class="[true ? prefixCls + '-tree-active' : '', prefixCls + '-tree-meta-data']"
-          @click.prevent="clickHandler(node.value)">
-          <span v-if="node.children">
-            <n3-icon
-              :class="`${prefixCls}-tree-select-icon`"
-              :type="expanded ? tree.openedIcon : tree.closedIcon"
-              @click.stop="expandIconClickHanlder"
-              >
-            </n3-icon>
-            <span
-              :class="`${prefixCls}-tree-loading-box`"
-              v-show="loading"
-            >
-              <n3-loading color="primary" size="xs"></n3-loading>
-            </span>
-          </span>
-          <span :class="`${prefixCls}-tree-select-box`" v-if="!tree.checkable">
-            <n3-checkbox :checked="node.value" :on-change="checkChangeHanlder"></n3-checkbox>
-          </span>
-          <label :class="`${prefixCls}-tree-loading-box`">
-            <n3-icon :type="node.icon || tree.icon"></n3-icon>
-            <span>{{node.label}}</span>
-          </label>
+          :class="`${prefixCls}-tree-loading-box`"
+          v-if="node.loading"
+        >
+          <n3-loading color="primary" size="xs"></n3-loading>
         </span>
+        <n3-icon :type="node.isLeaf ? tree.leafIcon : tree.childIcon"></n3-icon>
+        <node-content :node="node"></node-content>
       </div>
       <n3-collapse-transition>
-        <div :class="`${prefixCls}-tree-children`" v-show="expanded">
-          <div :class="`${prefixCls}-tree-nodes`" v-for="child in node.children">
-            <n3-tree-node
-              class="inner"
-              :node="child"
-              >
-            </n3-tree-node>
-          </div>
+        <div
+          :class="`${prefixCls}-tree-children`"
+          v-show="expanded">
+          <n3-tree-node
+            :render-content="renderContent"
+            v-for="child in node.childNodes"
+            :key="getNodeKey(child)"
+            :node="child">
+          </n3-tree-node>
         </div>
       </n3-collapse-transition>
     </div>
   </div>
 </template>
 
-<script>
-  import type from '../utils/type'
-  import events from '../utils/events'
+<script type="text/jsx">
   import n3CollapseTransition from '../n3CollapseTransition'
   import n3Checkbox from '../n3Checkbox'
 
   export default {
     name: 'n3TreeNode',
-    mixins: [events],
+
     props: {
-      value: {},
-      prefixCls: {
-        type: String,
-        default: 'n3'
-      },
       node: {
-        type: Object,
         default() {
           return {}
         }
       },
-      checkedKeys: {
-        type: Array,
-        twoway: true,
-        default() {
-          return []
-        }
+      prefixCls: {
+        type: String,
+        default: 'n3'
       },
-      expandAll: {
-        type: Boolean,
-        default: false
-      },
-      loadData: {
-        type: Function,
-        default: null
-      },
-      onRightClick: {
-        type: Function,
-        default: null
-      },
-      onSelect: {
-        type: Function,
-        default: null
-      },
-      onExpand: {
-        type: Function,
-        default: null
-      },
-      onCheck: {
-        type: Function,
-        default: null
-      }
-    },
-    data() {
-      return {
-        loading: false,
-        expanded: false,
-        checkable: false
-      }
+      props: {},
+      renderContent: Function
     },
 
     components: {
+      n3Checkbox,
       n3CollapseTransition,
-      n3Checkbox
+      NodeContent: {
+        props: {
+          node: {
+            required: true
+          }
+        },
+        render(h) {
+          const parent = this.$parent
+          const node = this.node
+          const data = node.data
+          const store = node.store
+          return (
+            parent.renderContent
+              ? parent.renderContent.call(parent._renderProxy, h, { _self: parent.tree.$vnode.context, node, data, store })
+              : <span>{ this.node.label }</span>
+          )
+        }
+      }
     },
 
-    computed: {
-      checkable() {
-        return this.tree.checkable
+    data() {
+      return {
+        tree: null,
+        expanded: false,
+        childNodeRendered: false,
+        showCheckbox: false,
+        oldChecked: null,
+        oldIndeterminate: null
+      }
+    },
+
+    watch: {
+      'node.indeterminate'(val) {
+        this.handleSelectChange(this.node.checked, val)
+      },
+
+      'node.checked'(val) {
+        this.handleSelectChange(val, this.node.indeterminate)
+      },
+
+      'node.expanded'(val) {
+        this.expanded = val
+        if (val) {
+          this.childNodeRendered = true
+        }
       }
     },
 
     methods: {
-      /**
-       * Click Handler
-       * @param {Number} index Tree index selected.
-       * @param {Mixed} value Value selected.
-       */
-      clickHandler(index, value) {
-        const store = this.tree.store
-        store.setCurrentNode(this.node)
-
-        this.tree.$emit('current-change', store.currentNode ? store.currentNode.data : null, store.currentNode);
-        this.tree.currentNode = this;
-
-        if (this.tree.expandOnClickNode) {
-          this.expandIconClickHanlder();
+      getNodeKey(node, index) {
+        const nodeKey = this.tree.nodeKey
+        if (nodeKey && node) {
+          return node.data[nodeKey]
         }
-        this.tree.$emit('node-click', this.node.data, this.node, this);
+        return index
       },
 
-      expandIconClickHanlder() {
+      handleSelectChange(checked, indeterminate) {
+        if (this.oldChecked !== checked && this.oldIndeterminate !== indeterminate) {
+          this.tree.$emit('check-change', this.node.data, checked, indeterminate)
+        }
+        this.oldChecked = checked
+        this.indeterminate = indeterminate
+      },
+
+      handleClick() {
+        const store = this.tree.store
+        store.setCurrentNode(this.node)
+        console.log('click')
+        this.tree.$emit('current-change', store.currentNode ? store.currentNode.data : null, store.currentNode)
+        this.tree.currentNode = this
+        if (this.tree.expandOnClickNode) {
+          this.handleExpandIconClick()
+        }
+        this.tree.$emit('node-click', this.node.data, this.node, this)
+      },
+
+      handleExpandIconClick() {
         if (this.expanded) {
           this.node.collapse()
         } else {
@@ -142,9 +152,15 @@
         }
       },
 
-      checkChangeHanlder(checked) {
+      handleUserClick() {
+        if (this.node.indeterminate) {
+          this.node.setChecked(this.node.checked, !this.tree.checkStrictly)
+        }
+      },
+
+      handleCheckChange(checked) {
         if (!this.node.indeterminate) {
-          this.node.setChecked(checked, !this.tree.checkStrictly);
+          this.node.setChecked(checked, !this.tree.checkStrictly)
         }
       }
     },
@@ -163,8 +179,20 @@
         console.warn('Can not find node\'s tree.')
       }
 
+      const props = tree.props || {}
+      this.prefixCls = tree.prefixCls
+      
+      const childrenKey = props['children'] || 'children'
+
+      this.$watch(`node.data.${childrenKey}`, () => {
+        this.node.updateChildren()
+      })
+
+      this.showCheckbox = tree.showCheckbox
+
       if (this.node.expanded) {
         this.expanded = true
+        this.childNodeRendered = true
       }
     }
   }

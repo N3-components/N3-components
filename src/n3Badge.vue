@@ -1,10 +1,10 @@
 <template>
-	<span :class="`${prefixCls}-badge`">
+  <span :class="`${prefixCls}-badge`">
 		<slot></slot>	
 	</span>
 </template>
 <script>
-	export default{
+	export default {
 		name: 'n3Badge',
 	  props: {
 	    prefixCls: {

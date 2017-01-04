@@ -58,7 +58,7 @@ export default {
     classObj () {
       let {prefixCls, wrapCol} = this
       let klass = {}
-      let defaultCol = this.inline ? wrapCol ? wrapCol : 0 : 12
+      let defaultCol = this.inline ? (wrapCol || 0) : 12
 
       klass['clearfix'] = true
       klass[prefixCls + '-form-group'] = true
