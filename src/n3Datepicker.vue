@@ -56,10 +56,10 @@
               </p>
             </div>
             <div :class="`${prefixCls}-datepicker-mouthRange`">
-            	<template v-for="m in mouthNames">
+            	<template v-for="(m, index) in mouthNames">
                 <span   
                   :class="monthClassObj(m)"
-                  @click="mouthSelect($index)">
+                  @click="mouthSelect(index)">
                   {{m.substr(0,3)}}
                 </span>
               </template>
