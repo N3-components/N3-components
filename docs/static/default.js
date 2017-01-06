@@ -12281,12 +12281,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-10.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-9.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-10.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-507e8948&file=n3CarouselDocs-10.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-10.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs-10.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-507e8948&file=n3CarouselDocs-10.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-10.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12308,8 +12308,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-507e8948&file=n3CarouselDocs-10.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-10.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-507e8948&file=n3CarouselDocs-10.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-10.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12327,7 +12327,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".slide-img[_v-4d5c3020]{\n  height:400px!important;\n}\n.carousel-caption[_v-4d5c3020] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-4d5c3020] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
+	exports.push([module.id, ".slide-img[_v-507e8948]{\n  height:400px!important;\n}\n.carousel-caption[_v-507e8948] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-507e8948] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
 	
 	// exports
 
@@ -12437,7 +12437,7 @@
 /* 529 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-4d5c3020=\"\">  <template _v-4d5c3020=\"\">\n  <div class=\"bs-docs-section\" id=\"幻灯片\" _v-4d5c3020=\"\">\n    <h1 class=\"page-header\" _v-4d5c3020=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-4d5c3020=\"\">幻灯片</a><span class=\"author\" _v-4d5c3020=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-4d5c3020=\"\">\n      <n3-carousel _v-4d5c3020=\"\">\n        <n3-slide _v-4d5c3020=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d5c3020=\"\">\n          <div class=\"carousel-caption\" _v-4d5c3020=\"\">\n           <h3 _v-4d5c3020=\"\">Slide #1</h3>\n           <p _v-4d5c3020=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-4d5c3020=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d5c3020=\"\">\n          <div class=\"carousel-caption\" _v-4d5c3020=\"\">\n           <h3 _v-4d5c3020=\"\">Slide #2</h3>\n           <p _v-4d5c3020=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-4d5c3020=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d5c3020=\"\">\n          <div class=\"carousel-caption\" _v-4d5c3020=\"\">\n           <h3 _v-4d5c3020=\"\">Slide #3</h3>\n           <p _v-4d5c3020=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n<p _v-4d5c3020=\"\"></p><h2 _v-4d5c3020=\"\">参数</h2><p _v-4d5c3020=\"\"></p>\n  <table class=\"table table-bordered\" _v-4d5c3020=\"\">\n    <thead _v-4d5c3020=\"\">\n      <tr _v-4d5c3020=\"\">\n        <th _v-4d5c3020=\"\">参数名</th>\n        <th _v-4d5c3020=\"\">类型</th>\n        <th _v-4d5c3020=\"\">默认值</th>\n        <th _v-4d5c3020=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-4d5c3020=\"\">\n      <tr _v-4d5c3020=\"\">\n        <td _v-4d5c3020=\"\">indicators</td>\n        <td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">Boolean</code></td>\n        <td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">true</code></td>\n        <td _v-4d5c3020=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-4d5c3020=\"\">\n        <td _v-4d5c3020=\"\">controls</td>\n        <td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">Boolean</code></td>\n        <td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">true</code></td>\n        <td _v-4d5c3020=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-4d5c3020=\"\">\n        <td _v-4d5c3020=\"\">interval</td>\n        <td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">Number</code></td>\n        <td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">5000</code></td>\n        <td _v-4d5c3020=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
+	module.exports = "<section _v-507e8948=\"\">  <template _v-507e8948=\"\">\n  <div class=\"bs-docs-section\" id=\"幻灯片\" _v-507e8948=\"\">\n    <h1 class=\"page-header\" _v-507e8948=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-507e8948=\"\">幻灯片</a><span class=\"author\" _v-507e8948=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-507e8948=\"\">\n      <n3-carousel _v-507e8948=\"\">\n        <n3-slide _v-507e8948=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-507e8948=\"\">\n          <div class=\"carousel-caption\" _v-507e8948=\"\">\n           <h3 _v-507e8948=\"\">Slide #1</h3>\n           <p _v-507e8948=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-507e8948=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-507e8948=\"\">\n          <div class=\"carousel-caption\" _v-507e8948=\"\">\n           <h3 _v-507e8948=\"\">Slide #2</h3>\n           <p _v-507e8948=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-507e8948=\"\">\n          <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-507e8948=\"\">\n          <div class=\"carousel-caption\" _v-507e8948=\"\">\n           <h3 _v-507e8948=\"\">Slide #3</h3>\n           <p _v-507e8948=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n<p _v-507e8948=\"\"></p><h2 _v-507e8948=\"\">参数</h2><p _v-507e8948=\"\"></p>\n  <table class=\"table table-bordered\" _v-507e8948=\"\">\n    <thead _v-507e8948=\"\">\n      <tr _v-507e8948=\"\">\n        <th _v-507e8948=\"\">参数名</th>\n        <th _v-507e8948=\"\">类型</th>\n        <th _v-507e8948=\"\">默认值</th>\n        <th _v-507e8948=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-507e8948=\"\">\n      <tr _v-507e8948=\"\">\n        <td _v-507e8948=\"\">indicators</td>\n        <td _v-507e8948=\"\"><code _v-507e8948=\"\">Boolean</code></td>\n        <td _v-507e8948=\"\"><code _v-507e8948=\"\">true</code></td>\n        <td _v-507e8948=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-507e8948=\"\">\n        <td _v-507e8948=\"\">controls</td>\n        <td _v-507e8948=\"\"><code _v-507e8948=\"\">Boolean</code></td>\n        <td _v-507e8948=\"\"><code _v-507e8948=\"\">true</code></td>\n        <td _v-507e8948=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-507e8948=\"\">\n        <td _v-507e8948=\"\">interval</td>\n        <td _v-507e8948=\"\"><code _v-507e8948=\"\">Number</code></td>\n        <td _v-507e8948=\"\"><code _v-507e8948=\"\">5000</code></td>\n        <td _v-507e8948=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
 
 /***/ },
 /* 530 */
@@ -12455,12 +12455,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-9.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-9.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-9.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12600,12 +12600,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-13.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-13.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-13.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-13.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-12.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-13.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-12.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12799,12 +12799,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-12.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-12.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-12.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-12.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-13.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-12.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-13.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14286,12 +14286,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-22.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-64a09134&file=n3ProgressbarDocs-23.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-23.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-22.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-64bcc036&file=n3ProgressbarDocs-22.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-22.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-22.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-64a09134&file=n3ProgressbarDocs-23.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-23.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-64bcc036&file=n3ProgressbarDocs-22.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-22.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14313,8 +14313,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-64a09134&file=n3ProgressbarDocs-23.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-23.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-64a09134&file=n3ProgressbarDocs-23.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-23.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-64bcc036&file=n3ProgressbarDocs-22.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-22.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-64bcc036&file=n3ProgressbarDocs-22.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-22.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -14332,7 +14332,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".margin[_v-64a09134]{\n  margin-bottom:20px;\n}", ""]);
+	exports.push([module.id, ".margin[_v-64bcc036]{\n  margin-bottom:20px;\n}", ""]);
 	
 	// exports
 
@@ -14490,7 +14490,7 @@
 /* 582 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-64a09134=\"\"><template _v-64a09134=\"\">\n  <div class=\"bs-docs-section\" id=\"进度条\" _v-64a09134=\"\">\n    <h1 class=\"page-header\" _v-64a09134=\"\"><a href=\"#进度条\" class=\"anchor\" _v-64a09134=\"\">进度条</a><span class=\"author\" _v-64a09134=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-64a09134=\"\">\n      <h4 _v-64a09134=\"\">高度</h4>\n      <div class=\"row\" _v-64a09134=\"\">\n        <div class=\"col-md-4\" _v-64a09134=\"\">\n          <n3-progress class=\"margin\" _v-64a09134=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-64a09134=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-64a09134=\"\">\n          <n3-progress class=\"margin\" _v-64a09134=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-64a09134=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n<pre _v-64a09134=\"\"><code _v-64a09134=\"\">  &lt;hr&gt;\n\n  &lt;h4&gt;\n    动态\n    &lt;n3-button  @click.native=\"dynamicClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n  &lt;n3-progress class=\"margin\" &gt;\n    &lt;n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" &gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress class=\"margin\"&gt;\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n\n  &lt;hr&gt;\n\n  &lt;h4&gt;\n    叠加\n    &lt;n3-button  @click.native=\"stackedClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[1]\" label type=\"success\" &gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped &gt;\n  &lt;/n3-progressbar&gt;\n  &lt;/div&gt;\n\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n     &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;now&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;当前进度&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;height&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;20px&lt;/td&gt;\n      &lt;td&gt;高度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;样式 &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;label&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否显示进度提示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;striped&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示条纹&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;animated&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;动画效果&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
+	module.exports = "<section _v-64bcc036=\"\"><template _v-64bcc036=\"\">\n  <div class=\"bs-docs-section\" id=\"进度条\" _v-64bcc036=\"\">\n    <h1 class=\"page-header\" _v-64bcc036=\"\"><a href=\"#进度条\" class=\"anchor\" _v-64bcc036=\"\">进度条</a><span class=\"author\" _v-64bcc036=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-64bcc036=\"\">\n      <h4 _v-64bcc036=\"\">高度</h4>\n      <div class=\"row\" _v-64bcc036=\"\">\n        <div class=\"col-md-4\" _v-64bcc036=\"\">\n          <n3-progress class=\"margin\" _v-64bcc036=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-64bcc036=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-64bcc036=\"\">\n          <n3-progress class=\"margin\" _v-64bcc036=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-64bcc036=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n<pre _v-64bcc036=\"\"><code _v-64bcc036=\"\">  &lt;hr&gt;\n\n  &lt;h4&gt;\n    动态\n    &lt;n3-button  @click.native=\"dynamicClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n  &lt;n3-progress class=\"margin\" &gt;\n    &lt;n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" &gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n  &lt;n3-progress class=\"margin\"&gt;\n    &lt;n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress class=\"margin\"&gt;\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped&gt;&lt;/n3-progressbar&gt;\n  &lt;/n3-progress&gt;\n\n  &lt;hr&gt;\n\n  &lt;h4&gt;\n    叠加\n    &lt;n3-button  @click.native=\"stackedClick\"&gt;随机变化&lt;/n3-button&gt;\n  &lt;/h4&gt;\n\n  &lt;n3-progress&gt;\n    &lt;n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[1]\" label type=\"success\" &gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"&gt;&lt;/n3-progressbar&gt;\n    &lt;n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped &gt;\n  &lt;/n3-progressbar&gt;\n  &lt;/div&gt;\n\n\n&lt;h2&gt;参数&lt;/h2&gt;\n&lt;table class=\"table table-bordered\"&gt;\n  &lt;thead&gt;\n    &lt;tr&gt;\n     &lt;th&gt;参数名&lt;/th&gt;\n      &lt;th&gt;类型&lt;/th&gt;\n      &lt;th&gt;默认值&lt;/th&gt;\n      &lt;th&gt;说明&lt;/th&gt;\n    &lt;/tr&gt;\n  &lt;/thead&gt;\n  &lt;tbody&gt;\n    &lt;tr&gt;\n      &lt;td&gt;now&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Number&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;当前进度&lt;/td&gt;\n    &lt;/tr&gt;\n     &lt;tr&gt;\n      &lt;td&gt;height&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;20px&lt;/td&gt;\n      &lt;td&gt;高度&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;type&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;String&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;/td&gt;\n      &lt;td&gt;样式 &lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;label&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;false&lt;/td&gt;\n      &lt;td&gt;是否显示进度提示&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;striped&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;是否显示条纹&lt;/td&gt;\n    &lt;/tr&gt;\n    &lt;tr&gt;\n      &lt;td&gt;animated&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;Boolean&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;&lt;code&gt;false&lt;/code&gt;&lt;/td&gt;\n      &lt;td&gt;动画效果&lt;/td&gt;\n    &lt;/tr&gt;\n  &lt;/tbody&gt;\n&lt;/table&gt;\n</code></pre>\n  </div>\n</div></template>\n\n\n</section>";
 
 /***/ },
 /* 583 */
@@ -14511,12 +14511,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-22.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-22.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-23.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-22.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-23.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15704,12 +15704,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-29.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-30.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-29.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-29.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-29.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-30.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-30.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs-30.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-29.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-30.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15798,12 +15798,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-29.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-29.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-29.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-29.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-29.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16590,12 +16590,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-35.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-35.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-35.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16626,12 +16626,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-34.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-35.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-34.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-34.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-34.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-35.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-35.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-35.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-34.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-35.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16882,11 +16882,265 @@
 	//       <span class="author"></span>
 	//     </h1>
 	//     <div class="bs-example">
+	//       <h3>普通的树</h3>
 	//       <n3-tree :data="data" :props="defaultProps" @node-click="handleNodeClick"></n3-tree>
 	//     </div>
 	//     <div class="bs-example">
+	//       <h3>可选、动态加载</h3>
 	//       <n3-tree :data="regions" :props="props" :load="loadNode" lazy="" show-checkbox="" @check-change="handleCheckChange"></n3-tree>
 	//     </div>
+	// <h3>组件Props</h3>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>参数</th>
+	// <th>说明</th>
+	// <th>类型</th>
+	// <th>可选值</th>
+	// <th>默认值</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>data</td>
+	// <td>展示数据</td>
+	// <td>array</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>empty-text</td>
+	// <td>内容为空的时候展示的文本</td>
+	// <td>String</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>node-key</td>
+	// <td>每个树节点用来作为唯一标识的属性，整颗树应该是唯一的</td>
+	// <td>String</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>props</td>
+	// <td>配置选项，具体看下表</td>
+	// <td>object</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>leaf-icon</td>
+	// <td>叶子节点图标</td>
+	// <td>String</td>
+	// <td>-</td>
+	// <td>file</td>
+	// </tr>
+	// <tr>
+	// <td>child-icon</td>
+	// <td>子节点图标</td>
+	// <td>String</td>
+	// <td>-</td>
+	// <td>folder</td>
+	// </tr>
+	// <tr>
+	// <td>closed-icon</td>
+	// <td>关闭时箭头图标</td>
+	// <td>String</td>
+	// <td>-</td>
+	// <td>angle-right</td>
+	// </tr>
+	// <tr>
+	// <td>opened-icon</td>
+	// <td>打开时的箭头图标</td>
+	// <td>String</td>
+	// <td>-</td>
+	// <td>angle-down</td>
+	// </tr>
+	// <tr>
+	// <td>load</td>
+	// <td>加载子树数据的方法</td>
+	// <td>function(node, resolve)</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>render-content</td>
+	// <td>树节点的内容区的渲染 Function</td>
+	// <td>Function(h, { node }</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>highlight-current</td>
+	// <td>是否高亮当前选中节点，默认值是 false。</td>
+	// <td>boolean</td>
+	// <td>—</td>
+	// <td>false</td>
+	// </tr>
+	// <tr>
+	// <td>current-node-key</td>
+	// <td>当前选中节点的 key，只写属性</td>
+	// <td>string, number</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>default-expand-all</td>
+	// <td>是否默认展开所有节点</td>
+	// <td>boolean</td>
+	// <td>—</td>
+	// <td>false</td>
+	// </tr>
+	// <tr>
+	// <td>expand-on-click-node</td>
+	// <td>是否在点击节点的时候展开或者收缩节点， 默认值为 true，如果为 false，则只有点箭头图标的时候才会展开或者收缩节点。</td>
+	// <td>boolean</td>
+	// <td>—</td>
+	// <td>true</td>
+	// </tr>
+	// <tr>
+	// <td>auto-expand-parent</td>
+	// <td>展开子节点的时候是否自动展开父节点</td>
+	// <td>boolean</td>
+	// <td>—</td>
+	// <td>true</td>
+	// </tr>
+	// <tr>
+	// <td>default-expanded-keys</td>
+	// <td>默认展开的节点的 key 的数组</td>
+	// <td>array</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>show-checkbox</td>
+	// <td>节点是否可被选择</td>
+	// <td>boolean</td>
+	// <td>—</td>
+	// <td>false</td>
+	// </tr>
+	// <tr>
+	// <td>check-strictly</td>
+	// <td>在显示复选框的情况下，是否严格的遵循父子不互相关联的做法，默认为 false</td>
+	// <td>boolean</td>
+	// <td>—</td>
+	// <td>false</td>
+	// </tr>
+	// <tr>
+	// <td>default-checked-keys</td>
+	// <td>默认勾选的节点的 key 的数组</td>
+	// <td>array</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>filter-node-method</td>
+	// <td>对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示，返回 false 则表示这个节点会被隐藏</td>
+	// <td>Function(value, data, node)</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// <h3>数据属性props</h3>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>参数</th>
+	// <th>说明</th>
+	// <th>类型</th>
+	// <th>可选值</th>
+	// <th>默认值</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>label</td>
+	// <td>指定节点标签为节点对象的某个属性值</td>
+	// <td>string</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// <tr>
+	// <td>children</td>
+	// <td>指定子树为节点对象的某个属性值</td>
+	// <td>string</td>
+	// <td>—</td>
+	// <td>—</td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// <h3>API方法</h3>
+	// <p><code>Tree</code> 拥有如下方法，返回目前被选中的节点数组：</p>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>方法名</th>
+	// <th>说明</th>
+	// <th>参数</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>filter</td>
+	// <td>对树节点进行筛选操作</td>
+	// <td>接收一个任意类型的参数，该参数会在 filter-node-method 中作为第一个参数</td>
+	// </tr>
+	// <tr>
+	// <td>getCheckedNodes</td>
+	// <td>若节点可被选择（即 <code>show-checkbox</code> 为 <code>true</code>），则返回目前被选中的节点所组成的数组</td>
+	// <td>(leafOnly) 接收一个 boolean 类型的参数，若为 <code>true</code> 则仅返回被选中的叶子节点，默认值为 <code>false</code></td>
+	// </tr>
+	// <tr>
+	// <td>setCheckedNodes</td>
+	// <td>设置目前勾选的节点，使用此方法必须设置 node-key 属性</td>
+	// <td>(nodes) 接收勾选节点数据的数组</td>
+	// </tr>
+	// <tr>
+	// <td>getCheckedKeys</td>
+	// <td>若节点可被选择（即 <code>show-checkbox</code> 为 <code>true</code>），则返回目前被选中的节点所组成的数组</td>
+	// <td>(leafOnly) 接收一个 boolean 类型的参数，若为 <code>true</code> 则仅返回被选中的叶子节点的 keys，默认值为 <code>true</code></td>
+	// </tr>
+	// <tr>
+	// <td>setCheckedKeys</td>
+	// <td>通过 keys 设置目前勾选的节点，使用此方法必须设置 node-key 属性</td>
+	// <td>(keys, leafOnly) 接收两个参数，1. 勾选节点的 key 的数组 2. boolean 类型的参数，若为 <code>true</code> 则仅设置叶子节点的选中状态，默认值为 <code>true</code></td>
+	// </tr>
+	// <tr>
+	// <td>setChecked</td>
+	// <td>通过 key / data 设置某个节点的勾选状态，使用此方法必须设置 node-key 属性</td>
+	// <td>(key/data, checked, deep) 接收三个参数，1. 勾选节点的 key 或者 data 2. boolean 类型，节点是否选中  3. boolean 类型，是否设置子节点 ，默认为 false</td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// <h3>Events</h3>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>事件名称</th>
+	// <th>说明</th>
+	// <th>回调参数</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>node-click</td>
+	// <td>节点被点击时的回调</td>
+	// <td>共三个参数，依次为：传递给 <code>data</code> 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。</td>
+	// </tr>
+	// <tr>
+	// <td>check-change</td>
+	// <td>节点选中状态发生变化时的回调</td>
+	// <td>共三个参数，依次为：传递给 <code>data</code> 属性的数组中该节点所对应的对象、节点本身是否被选中、节点的子树中是否有被选中的节点</td>
+	// </tr>
+	// <tr>
+	// <td>current-change</td>
+	// <td>当前选中节点变化时触发的事件</td>
+	// <td>共两个参数，依次为：当前节点的数据，当前节点的 Node 对象</td>
+	// </tr>
+	// </tbody>
+	// </table>
 	//   </div>
 	// </template>
 	// </section></template>
@@ -16979,7 +17233,7 @@
 /* 637 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"树形视图\">\n    <h1 class=\"page-header\">\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <n3-tree :data=\"data\" :props=\"defaultProps\" @node-click=\"handleNodeClick\"></n3-tree>\n    </div>\n    <div class=\"bs-example\">\n      <n3-tree :data=\"regions\" :props=\"props\" :load=\"loadNode\" lazy=\"\" show-checkbox=\"\" @check-change=\"handleCheckChange\"></n3-tree>\n    </div>\n  </div>\n</template>\n</section>";
+	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"树形视图\">\n    <h1 class=\"page-header\">\n      <a href=\"#树形视图\" class=\"anchor\">树形视图</a>\n      <span class=\"author\"></span>\n    </h1>\n    <div class=\"bs-example\">\n      <h3>普通的树</h3>\n      <n3-tree :data=\"data\" :props=\"defaultProps\" @node-click=\"handleNodeClick\"></n3-tree>\n    </div>\n    <div class=\"bs-example\">\n      <h3>可选、动态加载</h3>\n      <n3-tree :data=\"regions\" :props=\"props\" :load=\"loadNode\" lazy=\"\" show-checkbox=\"\" @check-change=\"handleCheckChange\"></n3-tree>\n    </div>\n<h3>组件Props</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>说明</th>\n<th>类型</th>\n<th>可选值</th>\n<th>默认值</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>data</td>\n<td>展示数据</td>\n<td>array</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>empty-text</td>\n<td>内容为空的时候展示的文本</td>\n<td>String</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>node-key</td>\n<td>每个树节点用来作为唯一标识的属性，整颗树应该是唯一的</td>\n<td>String</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>props</td>\n<td>配置选项，具体看下表</td>\n<td>object</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>leaf-icon</td>\n<td>叶子节点图标</td>\n<td>String</td>\n<td>-</td>\n<td>file</td>\n</tr>\n<tr>\n<td>child-icon</td>\n<td>子节点图标</td>\n<td>String</td>\n<td>-</td>\n<td>folder</td>\n</tr>\n<tr>\n<td>closed-icon</td>\n<td>关闭时箭头图标</td>\n<td>String</td>\n<td>-</td>\n<td>angle-right</td>\n</tr>\n<tr>\n<td>opened-icon</td>\n<td>打开时的箭头图标</td>\n<td>String</td>\n<td>-</td>\n<td>angle-down</td>\n</tr>\n<tr>\n<td>load</td>\n<td>加载子树数据的方法</td>\n<td>function(node, resolve)</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>render-content</td>\n<td>树节点的内容区的渲染 Function</td>\n<td>Function(h, { node }</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>highlight-current</td>\n<td>是否高亮当前选中节点，默认值是 false。</td>\n<td>boolean</td>\n<td>—</td>\n<td>false</td>\n</tr>\n<tr>\n<td>current-node-key</td>\n<td>当前选中节点的 key，只写属性</td>\n<td>string, number</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>default-expand-all</td>\n<td>是否默认展开所有节点</td>\n<td>boolean</td>\n<td>—</td>\n<td>false</td>\n</tr>\n<tr>\n<td>expand-on-click-node</td>\n<td>是否在点击节点的时候展开或者收缩节点， 默认值为 true，如果为 false，则只有点箭头图标的时候才会展开或者收缩节点。</td>\n<td>boolean</td>\n<td>—</td>\n<td>true</td>\n</tr>\n<tr>\n<td>auto-expand-parent</td>\n<td>展开子节点的时候是否自动展开父节点</td>\n<td>boolean</td>\n<td>—</td>\n<td>true</td>\n</tr>\n<tr>\n<td>default-expanded-keys</td>\n<td>默认展开的节点的 key 的数组</td>\n<td>array</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>show-checkbox</td>\n<td>节点是否可被选择</td>\n<td>boolean</td>\n<td>—</td>\n<td>false</td>\n</tr>\n<tr>\n<td>check-strictly</td>\n<td>在显示复选框的情况下，是否严格的遵循父子不互相关联的做法，默认为 false</td>\n<td>boolean</td>\n<td>—</td>\n<td>false</td>\n</tr>\n<tr>\n<td>default-checked-keys</td>\n<td>默认勾选的节点的 key 的数组</td>\n<td>array</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>filter-node-method</td>\n<td>对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示，返回 false 则表示这个节点会被隐藏</td>\n<td>Function(value, data, node)</td>\n<td>—</td>\n<td>—</td>\n</tr>\n</tbody>\n</table>\n<h3>数据属性props</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>说明</th>\n<th>类型</th>\n<th>可选值</th>\n<th>默认值</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>label</td>\n<td>指定节点标签为节点对象的某个属性值</td>\n<td>string</td>\n<td>—</td>\n<td>—</td>\n</tr>\n<tr>\n<td>children</td>\n<td>指定子树为节点对象的某个属性值</td>\n<td>string</td>\n<td>—</td>\n<td>—</td>\n</tr>\n</tbody>\n</table>\n<h3>API方法</h3>\n<p><code>Tree</code> 拥有如下方法，返回目前被选中的节点数组：</p>\n<table>\n<thead>\n<tr>\n<th>方法名</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>filter</td>\n<td>对树节点进行筛选操作</td>\n<td>接收一个任意类型的参数，该参数会在 filter-node-method 中作为第一个参数</td>\n</tr>\n<tr>\n<td>getCheckedNodes</td>\n<td>若节点可被选择（即 <code>show-checkbox</code> 为 <code>true</code>），则返回目前被选中的节点所组成的数组</td>\n<td>(leafOnly) 接收一个 boolean 类型的参数，若为 <code>true</code> 则仅返回被选中的叶子节点，默认值为 <code>false</code></td>\n</tr>\n<tr>\n<td>setCheckedNodes</td>\n<td>设置目前勾选的节点，使用此方法必须设置 node-key 属性</td>\n<td>(nodes) 接收勾选节点数据的数组</td>\n</tr>\n<tr>\n<td>getCheckedKeys</td>\n<td>若节点可被选择（即 <code>show-checkbox</code> 为 <code>true</code>），则返回目前被选中的节点所组成的数组</td>\n<td>(leafOnly) 接收一个 boolean 类型的参数，若为 <code>true</code> 则仅返回被选中的叶子节点的 keys，默认值为 <code>true</code></td>\n</tr>\n<tr>\n<td>setCheckedKeys</td>\n<td>通过 keys 设置目前勾选的节点，使用此方法必须设置 node-key 属性</td>\n<td>(keys, leafOnly) 接收两个参数，1. 勾选节点的 key 的数组 2. boolean 类型的参数，若为 <code>true</code> 则仅设置叶子节点的选中状态，默认值为 <code>true</code></td>\n</tr>\n<tr>\n<td>setChecked</td>\n<td>通过 key / data 设置某个节点的勾选状态，使用此方法必须设置 node-key 属性</td>\n<td>(key/data, checked, deep) 接收三个参数，1. 勾选节点的 key 或者 data 2. boolean 类型，节点是否选中  3. boolean 类型，是否设置子节点 ，默认为 false</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>node-click</td>\n<td>节点被点击时的回调</td>\n<td>共三个参数，依次为：传递给 <code>data</code> 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。</td>\n</tr>\n<tr>\n<td>check-change</td>\n<td>节点选中状态发生变化时的回调</td>\n<td>共三个参数，依次为：传递给 <code>data</code> 属性的数组中该节点所对应的对象、节点本身是否被选中、节点的子树中是否有被选中的节点</td>\n</tr>\n<tr>\n<td>current-change</td>\n<td>当前选中节点变化时触发的事件</td>\n<td>共两个参数，依次为：当前节点的数据，当前节点的 Node 对象</td>\n</tr>\n</tbody>\n</table>\n  </div>\n</template>\n</section>";
 
 /***/ },
 /* 638 */
