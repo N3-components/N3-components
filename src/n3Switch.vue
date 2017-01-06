@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import type from './utils/type'
 import valMixin from './valMixin'
 import validate from './validate'
 

@@ -5,8 +5,8 @@
 </template>
 
 <script>
-export default{
-	name: 'n3ButtonGroup',
+export default {
+  name: 'n3ButtonGroup',
   props: {
     prefixCls: {
       type: String,

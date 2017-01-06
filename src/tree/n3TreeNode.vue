@@ -53,7 +53,7 @@
     props: {
       node: {
         default() {
-          return {};
+          return {}
         }
       },
       prefixCls: {
@@ -74,15 +74,15 @@
           }
         },
         render(h) {
-          const parent = this.$parent;
-          const node = this.node;
-          const data = node.data;
-          const store = node.store;
+          const parent = this.$parent
+          const node = this.node
+          const data = node.data
+          const store = node.store
           return (
             parent.renderContent
               ? parent.renderContent.call(parent._renderProxy, h, { _self: parent.tree.$vnode.context, node, data, store })
               : <span>{ this.node.label }</span>
-          );
+          )
         }
       }
     },
@@ -95,105 +95,105 @@
         showCheckbox: false,
         oldChecked: null,
         oldIndeterminate: null
-      };
+      }
     },
 
     watch: {
       'node.indeterminate'(val) {
-        this.handleSelectChange(this.node.checked, val);
+        this.handleSelectChange(this.node.checked, val)
       },
 
       'node.checked'(val) {
-        this.handleSelectChange(val, this.node.indeterminate);
+        this.handleSelectChange(val, this.node.indeterminate)
       },
 
       'node.expanded'(val) {
-        this.expanded = val;
+        this.expanded = val
         if (val) {
-          this.childNodeRendered = true;
+          this.childNodeRendered = true
         }
       }
     },
 
     methods: {
       getNodeKey(node, index) {
-        const nodeKey = this.tree.nodeKey;
+        const nodeKey = this.tree.nodeKey
         if (nodeKey && node) {
-          return node.data[nodeKey];
+          return node.data[nodeKey]
         }
-        return index;
+        return index
       },
 
       handleSelectChange(checked, indeterminate) {
         if (this.oldChecked !== checked && this.oldIndeterminate !== indeterminate) {
-          this.tree.$emit('check-change', this.node.data, checked, indeterminate);
+          this.tree.$emit('check-change', this.node.data, checked, indeterminate)
         }
-        this.oldChecked = checked;
-        this.indeterminate = indeterminate;
+        this.oldChecked = checked
+        this.indeterminate = indeterminate
       },
 
       handleClick() {
-        const store = this.tree.store;
-        store.setCurrentNode(this.node);
+        const store = this.tree.store
+        store.setCurrentNode(this.node)
         console.log('click')
-        this.tree.$emit('current-change', store.currentNode ? store.currentNode.data : null, store.currentNode);
-        this.tree.currentNode = this;
+        this.tree.$emit('current-change', store.currentNode ? store.currentNode.data : null, store.currentNode)
+        this.tree.currentNode = this
         if (this.tree.expandOnClickNode) {
-          this.handleExpandIconClick();
+          this.handleExpandIconClick()
         }
-        this.tree.$emit('node-click', this.node.data, this.node, this);
+        this.tree.$emit('node-click', this.node.data, this.node, this)
       },
 
       handleExpandIconClick() {
         if (this.expanded) {
-          this.node.collapse();
+          this.node.collapse()
         } else {
-          this.node.expand();
+          this.node.expand()
         }
       },
 
       handleUserClick() {
         if (this.node.indeterminate) {
-          this.node.setChecked(this.node.checked, !this.tree.checkStrictly);
+          this.node.setChecked(this.node.checked, !this.tree.checkStrictly)
         }
       },
 
       handleCheckChange(checked) {
         if (!this.node.indeterminate) {
-          this.node.setChecked(checked, !this.tree.checkStrictly);
+          this.node.setChecked(checked, !this.tree.checkStrictly)
         }
       }
     },
 
     created() {
-      const parent = this.$parent;
+      const parent = this.$parent
 
       if (parent.isTree) {
-        this.tree = parent;
+        this.tree = parent
       } else {
-        this.tree = parent.$parent.tree;
+        this.tree = parent.$parent.tree
       }
 
-      const tree = this.tree;
+      const tree = this.tree
       if (!tree) {
-        console.warn('Can not find node\'s tree.');
+        console.warn('Can not find node\'s tree.')
       }
 
-      const props = tree.props || {};
-      this.prefixCls = tree.prefixCls;
+      const props = tree.props || {}
+      this.prefixCls = tree.prefixCls
       
-      const childrenKey = props['children'] || 'children';
+      const childrenKey = props['children'] || 'children'
 
       this.$watch(`node.data.${childrenKey}`, () => {
-        this.node.updateChildren();
-      });
+        this.node.updateChildren()
+      })
 
-      this.showCheckbox = tree.showCheckbox;
+      this.showCheckbox = tree.showCheckbox
 
       if (this.node.expanded) {
-        this.expanded = true;
-        this.childNodeRendered = true;
+        this.expanded = true
+        this.childNodeRendered = true
       }
     }
-  };
+  }
 </script>

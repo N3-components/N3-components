@@ -11476,7 +11476,7 @@
 	});
 	// <template>
 	
-	// 	<span :class="`${prefixCls}-badge`">
+	//   <span :class="`${prefixCls}-badge`">
 	
 	// 		<slot></slot>	
 	
@@ -28925,7 +28925,7 @@
 	    var name = child.$options.name;
 	
 	    if (name === componentName) {
-	      child.$emit.call(child, eventName, params);
+	      child.$emit(eventName, params);
 	    } else {
 	      _broadcast.call(child, componentName, eventName, params);
 	    }
@@ -28945,7 +28945,7 @@
 	        }
 	      }
 	      if (parent) {
-	        parent.$emit.call(parent, eventName, params);
+	        parent.$emit(eventName, params);
 	      }
 	    },
 	    broadcast: function broadcast(componentName, eventName, params) {
@@ -29644,10 +29644,6 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(693);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _n3Icon = __webpack_require__(490);
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
@@ -29664,76 +29660,6 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	exports.default = {
-	  name: 'n3Input',
-	  mixins: [_inputMixin2.default],
-	  props: {
-	    value: {
-	      type: [String, Number]
-	    },
-	    readonly: {
-	      type: Boolean
-	    },
-	    onChange: {
-	      type: Function
-	    },
-	    prefixCls: {
-	      type: String,
-	      default: 'n3'
-	    },
-	    type: {
-	      type: String,
-	      default: 'text'
-	    }
-	  },
-	  components: {
-	    n3Icon: _n3Icon2.default,
-	    validate: _validate2.default
-	  },
-	  directives: {
-	    focus: _vueFocus.focus
-	  },
-	  data: function data() {
-	    return {
-	      focused: false
-	    };
-	  },
-	
-	  computed: {
-	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          validStatus = this.validStatus,
-	          hasFeedback = this.hasFeedback;
-	
-	      var klass = {};
-	
-	      klass[prefixCls + '-has-error'] = validStatus === 'error';
-	      klass[prefixCls + '-has-success'] = validStatus === 'success';
-	      klass[prefixCls + '-has-warn'] = validStatus === 'warn';
-	      klass[prefixCls + '-has-feedback'] = validStatus && hasFeedback;
-	      klass[prefixCls + '-input-con'] = true;
-	      klass['inline'] = true;
-	
-	      return klass;
-	    }
-	  },
-	
-	  methods: {
-	    update: function update(val) {
-	      this.$emit('input', val);
-	      this.$emit('change', val);
-	    },
-	    blur: function blur() {
-	      this.focused = false;
-	      this.$emit('blur', this.value);
-	    },
-	    focus: function focus() {
-	      this.focused = true;
-	      this.$emit('focus', this.value);
-	    }
-	  }
-	};
-	// </script>
 	// <template>
 	
 	// <div :class="classObj"  :style="{'width':width}">
@@ -29814,6 +29740,76 @@
 	// </template>
 	
 	// <script>
+	exports.default = {
+	  name: 'n3Input',
+	  mixins: [_inputMixin2.default],
+	  props: {
+	    value: {
+	      type: [String, Number]
+	    },
+	    readonly: {
+	      type: Boolean
+	    },
+	    onChange: {
+	      type: Function
+	    },
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    },
+	    type: {
+	      type: String,
+	      default: 'text'
+	    }
+	  },
+	  components: {
+	    n3Icon: _n3Icon2.default,
+	    validate: _validate2.default
+	  },
+	  directives: {
+	    focus: _vueFocus.focus
+	  },
+	  data: function data() {
+	    return {
+	      focused: false
+	    };
+	  },
+	
+	  computed: {
+	    classObj: function classObj() {
+	      var prefixCls = this.prefixCls,
+	          validStatus = this.validStatus,
+	          hasFeedback = this.hasFeedback;
+	
+	      var klass = {};
+	
+	      klass[prefixCls + '-has-error'] = validStatus === 'error';
+	      klass[prefixCls + '-has-success'] = validStatus === 'success';
+	      klass[prefixCls + '-has-warn'] = validStatus === 'warn';
+	      klass[prefixCls + '-has-feedback'] = validStatus && hasFeedback;
+	      klass[prefixCls + '-input-con'] = true;
+	      klass['inline'] = true;
+	
+	      return klass;
+	    }
+	  },
+	
+	  methods: {
+	    update: function update(val) {
+	      this.$emit('input', val);
+	      this.$emit('change', val);
+	    },
+	    blur: function blur() {
+	      this.focused = false;
+	      this.$emit('blur', this.value);
+	    },
+	    focus: function focus() {
+	      this.focused = true;
+	      this.$emit('focus', this.value);
+	    }
+	  }
+	};
+	// </script>
 
 /***/ },
 /* 707 */
@@ -30085,7 +30081,6 @@
 	  watch: {
 	    show: {
 	      handler: function handler(val, newVal) {
-	        var self = this;
 	        this.setT = window.clearTimeout(this.setT);
 	        if (val) {
 	          this.$nextTick(function () {
@@ -30097,11 +30092,11 @@
 	            }
 	          });
 	        }
-	        /*if (val && this.duration) {
+	        /* if (val && this.duration) {
 	          this.setT = window.setTimeout(() => {
 	            self.show = false
 	          }, this.duration)
-	        }*/
+	        } */
 	      },
 	
 	      immediate: true
@@ -31303,10 +31298,6 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(693);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _EventListener = __webpack_require__(675);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
@@ -31325,6 +31316,100 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// <template>
+	
+	//   <div :class="`${prefixCls}-timepicker`">
+	
+	//     <n3-input 
+	
+	//       :width="width"
+	
+	//       :name="name" 
+	
+	//       :rules="rules" 
+	
+	//       :has-feedback="hasFeedback"
+	
+	//       :placeholder="placeholder"
+	
+	//       :custom-validate="customValidate"
+	
+	//       :readonly="true"
+	
+	//       :disabled="disabled"
+	
+	//       @click.native="inputClick"
+	
+	//       :value="currentValue">
+	
+	//     </n3-input>
+	
+	//     <transition name="fadeDown">
+	
+	//       <div :class="`${prefixCls}-timepicker-popup`" v-show="show" >
+	
+	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
+	
+	//           <n3-slider 
+	
+	//             v-model="time.hour" 
+	
+	//             orientation="vertical" 
+	
+	//             :max="hourRange[1]" :min="hourRange[0]"  
+	
+	//             :class="`${prefixCls}-timepicker-slider`">
+	
+	//           </n3-slider>
+	
+	//         </div>
+	
+	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
+	
+	//           <n3-slider 
+	
+	//             v-model="time.minute" 
+	
+	//             orientation="vertical" 
+	
+	//             :max="minuteRange[1]" 
+	
+	//             :min="minuteRange[0]"  
+	
+	//             :class="`${prefixCls}-timepicker-slider`">
+	
+	//           </n3-slider>
+	
+	//         </div>
+	
+	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
+	
+	//           <n3-slider 
+	
+	//             v-model="time.second" 
+	
+	//             orientation="vertical" 
+	
+	//             :max="secondRange[1]" 
+	
+	//             :min="secondRange[0]" 
+	
+	//             :class="`${prefixCls}-timepicker-slider`">
+	
+	//           </n3-slider>
+	
+	//         </div>
+	
+	//       </div>
+	
+	//     </transition>
+	
+	//   </div>
+	
+	// </template>
+	
+	
+	// <script>
 	exports.default = {
 	  name: 'n3Timepicker',
 	  mixins: [_inputMixin2.default],
@@ -31478,100 +31563,6 @@
 	  }
 	};
 	// </script>
-	// <template>
-	
-	//   <div :class="`${prefixCls}-timepicker`">
-	
-	//     <n3-input 
-	
-	//       :width="width"
-	
-	//       :name="name" 
-	
-	//       :rules="rules" 
-	
-	//       :has-feedback="hasFeedback"
-	
-	//       :placeholder="placeholder"
-	
-	//       :custom-validate="customValidate"
-	
-	//       :readonly="true"
-	
-	//       :disabled="disabled"
-	
-	//       @click.native="inputClick"
-	
-	//       :value="currentValue">
-	
-	//     </n3-input>
-	
-	//     <transition name="fadeDown">
-	
-	//       <div :class="`${prefixCls}-timepicker-popup`" v-show="show" >
-	
-	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
-	
-	//           <n3-slider 
-	
-	//             v-model="time.hour" 
-	
-	//             orientation="vertical" 
-	
-	//             :max="hourRange[1]" :min="hourRange[0]"  
-	
-	//             :class="`${prefixCls}-timepicker-slider`">
-	
-	//           </n3-slider>
-	
-	//         </div>
-	
-	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
-	
-	//           <n3-slider 
-	
-	//             v-model="time.minute" 
-	
-	//             orientation="vertical" 
-	
-	//             :max="minuteRange[1]" 
-	
-	//             :min="minuteRange[0]"  
-	
-	//             :class="`${prefixCls}-timepicker-slider`">
-	
-	//           </n3-slider>
-	
-	//         </div>
-	
-	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
-	
-	//           <n3-slider 
-	
-	//             v-model="time.second" 
-	
-	//             orientation="vertical" 
-	
-	//             :max="secondRange[1]" 
-	
-	//             :min="secondRange[0]" 
-	
-	//             :class="`${prefixCls}-timepicker-slider`">
-	
-	//           </n3-slider>
-	
-	//         </div>
-	
-	//       </div>
-	
-	//     </transition>
-	
-	//   </div>
-	
-	// </template>
-	
-	
-	// <script>
 
 /***/ },
 /* 729 */
@@ -32320,8 +32311,6 @@
 	  value: true
 	});
 	
-	var _watch;
-	
 	var _n3Slider = __webpack_require__(729);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
@@ -32340,7 +32329,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } // <template>
+	// <template>
 	
 	//   <div :class="`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`" ref="datetimepicker">
 	
@@ -32596,8 +32585,6 @@
 	
 	
 	// <script>
-	
-	
 	exports.default = {
 	  name: 'n3Datetimepicker',
 	  mixins: [_inputMixin2.default],
@@ -32658,15 +32645,12 @@
 	    };
 	  },
 	
-	  watch: (_watch = {
+	  watch: {
 	    value: function value(val) {
 	      this.currentValue = val;
 	    },
 	    currentValue: function currentValue(val) {
 	      this.$emit('input', val);
-	    },
-	    displayDayView: function displayDayView() {
-	      this.dispatchHide();
 	    },
 	    displayMouthView: function displayMouthView() {
 	      this.dispatchHide();
@@ -32676,27 +32660,32 @@
 	    },
 	    currDate: function currDate() {
 	      this.getDateRange();
-	    }
-	  }, _defineProperty(_watch, 'displayDayView', function displayDayView(val) {
-	    var _this = this;
+	    },
+	    displayDayView: function displayDayView(val) {
+	      var _this = this;
 	
-	    if (val) {
-	      this.$nextTick(function () {
-	        var width = _this.$refs.datepicker.offsetWidth * 1 + 30;
-	        _this.hour ? width += 42 : 0;
-	        _this.minute ? width += 42 : 0;
-	        _this.second ? width += 42 : 0;
-	        _this.popWidth = width + 'px';
-	      });
-	    }
-	  }), _defineProperty(_watch, 'date', function date() {
-	    this.currentValue = this.date + ' ' + this.handTime();
-	  }), _defineProperty(_watch, 'time', {
-	    deep: true,
-	    handler: function handler(val) {
+	      this.dispatchHide();
+	      if (val) {
+	        this.$nextTick(function () {
+	          var width = _this.$refs.datepicker.offsetWidth * 1 + 30;
+	          _this.hour ? width += 42 : 0;
+	          _this.minute ? width += 42 : 0;
+	          _this.second ? width += 42 : 0;
+	          _this.popWidth = width + 'px';
+	        });
+	      }
+	    },
+	    date: function date() {
 	      this.currentValue = this.date + ' ' + this.handTime();
+	    },
+	
+	    time: {
+	      deep: true,
+	      handler: function handler(val) {
+	        this.currentValue = this.date + ' ' + this.handTime();
+	      }
 	    }
-	  }), _watch),
+	  },
 	  computed: {
 	    hour: function hour() {
 	      if (this.format.indexOf('hh') > -1) {
@@ -40083,62 +40072,12 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(693);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _n3Badge = __webpack_require__(499);
 	
 	var _n3Badge2 = _interopRequireDefault(_n3Badge);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	
-	//   <div>
-	
-	//     <ul :class="classObj" >
-	
-	//       <li
-	
-	//           v-for="(r,index) in renderData"
-	
-	//           :class="liclassObj(index,r)"
-	
-	//           @click.prevent="handleTabListClick(index, r)"
-	
-	//           :disabled="r.disabled">
-	
-	//           <a href="#">
-	
-	//             {{r.header}}
-	
-	//             <n3-badge v-if="r.badge">{{r.badge}}</n3-badge>
-	
-	//           </a>
-	
-	//       </li>
-	
-	//     </ul>
-	
-	//     <div :class="`${prefixCls}-tab-content`">
-	
-	//       <div v-if="list">
-	
-	//           <span v-html='renderData[activeIndex].content'></span>
-	
-	//       </div>
-	
-	//       <slot v-else></slot>
-	
-	//     </div>
-	
-	//   </div>
-	
-	// </template>
-	
-	
-	// <script>
 	exports.default = {
 	  name: 'n3Tabs',
 	  props: {
@@ -40232,6 +40171,52 @@
 	  }
 	};
 	// </script>
+	// <template>
+	
+	//   <div>
+	
+	//     <ul :class="classObj" >
+	
+	//       <li
+	
+	//           v-for="(r,index) in renderData"
+	
+	//           :class="liclassObj(index,r)"
+	
+	//           @click.prevent="handleTabListClick(index, r)"
+	
+	//           :disabled="r.disabled">
+	
+	//           <a href="#">
+	
+	//             {{r.header}}
+	
+	//             <n3-badge v-if="r.badge">{{r.badge}}</n3-badge>
+	
+	//           </a>
+	
+	//       </li>
+	
+	//     </ul>
+	
+	//     <div :class="`${prefixCls}-tab-content`">
+	
+	//       <div v-if="list">
+	
+	//           <span v-html='renderData[activeIndex].content'></span>
+	
+	//       </div>
+	
+	//       <slot v-else></slot>
+	
+	//     </div>
+	
+	//   </div>
+	
+	// </template>
+	
+	
+	// <script>
 
 /***/ },
 /* 787 */
@@ -40810,10 +40795,6 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(693);
-	
-	var _type2 = _interopRequireDefault(_type);
-	
 	var _valMixin = __webpack_require__(690);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
@@ -40824,6 +40805,50 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// <template>
+	
+	// <div class="inline">
+	
+	//   <input 
+	
+	//     v-show="false"
+	
+	//     type="checkbox"
+	
+	//     v-model="currentValue"/>   
+	
+	//   <div  :class="classObj" @click="toggle">
+	
+	//     <div :class="`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`">
+	
+	//       <span :class="`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`" >{{ontext}}</span>
+	
+	//       <span :class="`${prefixCls}-switch-label`" >&nbsp;</span>
+	
+	//       <span :class="`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`" >{{offtext}}</span>
+	
+	//     </div>
+	
+	//   </div>
+	
+	//   <validate
+	
+	//     :name="name"
+	
+	//     :rules="rules"
+	
+	//     :custom-validate="customValidate" 
+	
+	//     :current="value">
+	
+	//   </validate>
+	
+	// <div>
+	
+	// </template>
+	
+	
+	// <script>
 	exports.default = {
 	  name: 'n3Switch',
 	  mixins: [_valMixin2.default],
@@ -40888,50 +40913,6 @@
 	  }
 	};
 	// </script>
-	// <template>
-	
-	// <div class="inline">
-	
-	//   <input 
-	
-	//     v-show="false"
-	
-	//     type="checkbox"
-	
-	//     v-model="currentValue"/>   
-	
-	//   <div  :class="classObj" @click="toggle">
-	
-	//     <div :class="`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`">
-	
-	//       <span :class="`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`" >{{ontext}}</span>
-	
-	//       <span :class="`${prefixCls}-switch-label`" >&nbsp;</span>
-	
-	//       <span :class="`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`" >{{offtext}}</span>
-	
-	//     </div>
-	
-	//   </div>
-	
-	//   <validate
-	
-	//     :name="name"
-	
-	//     :rules="rules"
-	
-	//     :custom-validate="customValidate" 
-	
-	//     :current="value">
-	
-	//   </validate>
-	
-	// <div>
-	
-	// </template>
-	
-	
-	// <script>
 
 /***/ },
 /* 811 */
@@ -43781,7 +43762,7 @@
 	          wrapCol = this.wrapCol;
 	
 	      var klass = {};
-	      var defaultCol = this.inline ? wrapCol ? wrapCol : 0 : 12;
+	      var defaultCol = this.inline ? wrapCol || 0 : 12;
 	
 	      klass['clearfix'] = true;
 	      klass[prefixCls + '-form-group'] = true;
@@ -44448,7 +44429,6 @@
 	}();
 	
 	exports.default = Store;
-	;
 
 /***/ },
 /* 854 */

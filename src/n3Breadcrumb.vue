@@ -4,7 +4,7 @@
 	</ol>
 </template>
 <script>
-	export default{
+	export default {
 		name: 'n3Breadcrumb',
 	  props: {
 	    prefixCls: {

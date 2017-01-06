@@ -78,7 +78,7 @@
             children: 'children',
             label: 'label',
             icon: 'icon'
-          };
+          }
         }
       },
       lazy: {
@@ -92,7 +92,7 @@
     },
 
     created() {
-      this.isTree = true;
+      this.isTree = true
 
       this.store = new Store({
         key: this.nodeKey,
@@ -107,9 +107,9 @@
         autoExpandParent: this.autoExpandParent,
         defaultExpandAll: this.defaultExpandAll,
         filterNodeMethod: this.filterNodeMethod
-      });
+      })
 
-      this.root = this.store.root;
+      this.root = this.store.root
     },
 
     data() {
@@ -117,7 +117,7 @@
         store: null,
         root: null,
         currentNode: null
-      };
+      }
     },
 
     components: {
@@ -127,60 +127,60 @@
     computed: {
       children: {
         set(value) {
-          this.data = value;
+          this.data = value
         },
         get() {
-          return this.data;
+          return this.data
         }
       }
     },
 
     watch: {
       defaultCheckedKeys(newVal) {
-        this.store.defaultCheckedKeys = newVal;
-        this.store.setDefaultCheckedKey(newVal);
+        this.store.defaultCheckedKeys = newVal
+        this.store.setDefaultCheckedKey(newVal)
       },
       defaultExpandedKeys(newVal) {
-        this.store.defaultExpandedKeys = newVal;
-        this.store.setDefaultExpandedKeys(newVal);
+        this.store.defaultExpandedKeys = newVal
+        this.store.setDefaultExpandedKeys(newVal)
       },
       currentNodeKey(newVal) {
-        this.store.setCurrentNodeKey(newVal);
+        this.store.setCurrentNodeKey(newVal)
       },
       data(newVal) {
-        this.store.setData(newVal);
+        this.store.setData(newVal)
       }
     },
 
     methods: {
       filter(value) {
-        if (!this.filterNodeMethod) throw new Error('[Tree] filterNodeMethod is required when filter');
-        this.store.filter(value);
+        if (!this.filterNodeMethod) throw new Error('[Tree] filterNodeMethod is required when filter')
+        this.store.filter(value)
       },
       getNodeKey(node, index) {
-        const nodeKey = this.nodeKey;
+        const nodeKey = this.nodeKey
         if (nodeKey && node) {
-          return node.data[nodeKey];
+          return node.data[nodeKey]
         }
-        return index;
+        return index
       },
       getCheckedNodes(leafOnly) {
-        return this.store.getCheckedNodes(leafOnly);
+        return this.store.getCheckedNodes(leafOnly)
       },
       getCheckedKeys(leafOnly) {
-        return this.store.getCheckedKeys(leafOnly);
+        return this.store.getCheckedKeys(leafOnly)
       },
       setCheckedNodes(nodes, leafOnly) {
-        if (!this.nodeKey) throw new Error('[Tree] nodeKey is required in setCheckedNodes');
-        this.store.setCheckedNodes(nodes, leafOnly);
+        if (!this.nodeKey) throw new Error('[Tree] nodeKey is required in setCheckedNodes')
+        this.store.setCheckedNodes(nodes, leafOnly)
       },
       setCheckedKeys(keys, leafOnly) {
-        if (!this.nodeKey) throw new Error('[Tree] nodeKey is required in setCheckedNodes');
-        this.store.setCheckedKeys(keys, leafOnly);
+        if (!this.nodeKey) throw new Error('[Tree] nodeKey is required in setCheckedNodes')
+        this.store.setCheckedKeys(keys, leafOnly)
       },
       setChecked(data, checked, deep) {
-        this.store.setChecked(data, checked, deep);
+        this.store.setChecked(data, checked, deep)
       }
     }
-  };
+  }
 </script>

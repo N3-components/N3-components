@@ -41,7 +41,6 @@
 </div>
 </template>
 <script>
-import type from './utils/type'
 import n3Icon from './n3Icon'
 import inputMixin from './inputMixin'
 import validate from './validate'
