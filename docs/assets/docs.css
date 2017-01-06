@@ -55,7 +55,7 @@ body {
   border-radius: 5px;
   box-shadow: 1px 1px 10px #ddd;
   margin: 20px auto;
-  padding-bottom:20px; 
+  padding-bottom:20px;
 }
 .bs-docs-header .n3-container h1 {
   font-size:70px;
@@ -70,7 +70,7 @@ body {
 
 .btn-outline {
   background: transparent !important;
-  border: 1px solid #fff !important;
+  box-shadow: 0px 0px 0px 1px #fff inset !important;
 }
 
 .btn-outline:hover{
@@ -162,7 +162,7 @@ body {
   border: 1px solid #ddd;
   border-collapse: separate;
   border-radius: 2px;
-  border-left: none;  
+  border-left: none;
 }
 
 .table-bordered > thead > tr > th,
