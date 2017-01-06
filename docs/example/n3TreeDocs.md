@@ -5,190 +5,90 @@
       <span class="author"></span>
     </h1>
     <div class="bs-example">
-      <n3-tree :data="files1" :expand-all="true"></n3-tree>
+      <n3-tree :data="data" :props="defaultProps" @node-click="handleNodeClick"></n3-tree>
     </div>
-    <h2>参数</h2>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>参数名</th>
-          <th>类型</th>
-          <th>默认值</th>
-          <th>说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>data</td>
-          <td><code>Array</code></td>
-          <td>[]</td>
-          <td>树形数据<code>.sync</code></td>
-        </tr>
-        <tr>
-          <td>selected-key</td>
-          <td><code>String</code><code>Number</code></td>
-          <td></td>
-          <td>选中节点的value</td>
-        </tr>
-        <tr>
-          <td>checkable</td>
-          <td><code>Boolean</code></td>
-          <td>false</td>
-          <td>是否支持checkbox可选</td>
-        </tr>
-        <tr>
-          <td>checked-keys</td>
-          <td><code>Array</code></td>
-          <td>[]</td>
-          <td>选中的节点的value<code>.sync</code></td>
-        </tr>
-        <tr>
-          <td>treeIcon</td>
-          <td><code>String</code></td>
-          <td>angle-right</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>tree-open-icon</td>
-          <td><code>String</code></td>
-          <td>angle-down</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>icon</td>
-          <td><code>String</code></td>
-          <td></td>
-          <td>图标</td>
-        </tr>
-        <tr>
-          <td>load-data</td>
-          <td><code>Function</code></td>
-          <td></td>
-          <td>异步加载函数</td>
-        </tr>
-        <tr>
-          <td>on-select</td>
-          <td><code>Function</code></td>
-          <td></td>
-          <td>选择触发函数</td>
-        </tr>
-        <tr>
-          <td>on-expand</td>
-          <td><code>Function</code></td>
-          <td></td>
-          <td>展开触发函数</td>
-        </tr>
-        <tr>
-          <td>expand-all</td>
-          <td><code>Boolean</code></td>
-          <td>false</td>
-          <td>全部展开（异步加载时不支持全部展开）</td>
-        </tr>
-        <tr>
-          <td>sort</td>
-          <td><code>Boolean</code></td>
-          <td>true</td>
-          <td>有子节点的排在没有的前面</td>
-        </tr>
-        <tr>
-          <td>on-check</td>
-          <td><code>Function</code></td>
-          <td></td>
-          <td>checkbox选中触发函数</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="bs-example">
+      <n3-tree :data="regions" :props="props" :load="loadNode" lazy show-checkbox @check-change="handleCheckChange"></n3-tree>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
-    computed: {
-      id: Date.now()
-    },
-
     data() {
       return {
-        files1: [{
-          label: '我的文档2',
-          value: 2
-        }, {
-          label: '新建文件夹1',
-          value: 1,
-          children: [],
-          icon: 'folder'
-        }, {
-          label: '新建文件夹3',
-          value: 3,
-          icon: 'folder',
+        data: [{
+          label: '一级 1',
           children: [{
-            label: '我的文档1',
-            value: 4
+            label: '二级 1-1'
+          }]
+        }, {
+          label: '一级 2',
+          children: [{
+            label: '二级 2-1'
           }, {
-            label: '新建文件夹4',
-            value: 5,
-            icon: 'folder',
-            children: [{
-              label: '我的文档3',
-              value: 6
-            }, {
-              label: '我的文档4',
-              value: 7
-            }]
+            label: '二级 2-2'
+          }]
+        }, {
+          label: '一级 3',
+          children: [{
+            label: '二级 3-1'
+          }, {
+            label: '二级 3-2'
           }]
         }],
-
-        files2: [{
-          label: '根目录',
-          value: 1,
-          children: [],
-          icon: 'folder'
-        }],
-        checkedKeys: [],
-        files3: [{
-          label: '新建文件夹1',
-          value: 1,
-          children: []
-        }, {
-          label: '我的文档2',
-          value: 2
-        }, {
-          label: '新建文件夹3',
-          value: 3,
-          children: [{
-            label: '我的文档1',
-            value: 4
-          }, {
-            label: '新建文件夹4',
-            value: 5,
-            children: [{
-              label: '我的文档3',
-              value: 6
-            }, {
-              label: '我的文档4',
-              value: 7
-            }]
-          }]
-        }],
-        loadList(value) {
-          return new Promise((resolve, reject) => {
-            setTimeout(() => {
-              var res = [{
-                label: '我的文档' + Math.ceil(Math.random() * 100000),
-                value: Math.ceil(Math.random() * 100000)
-              }, {
-                label: '新建文件夹' + Math.ceil(Math.random() * 100000),
-                value: Math.ceil(Math.random() * 100000),
-                children: [],
-                icon: 'folder'
-              }]
-              resolve(res)
-            }, 1000)
-          })
+        defaultProps: {
+          children: 'children',
+          label: 'label'
         },
-        onCheck() {
-          console.log('onCheck')
+        regions: [{
+          'name': 'region1'
+        }, {
+          'name': 'region2'
+        }],
+        props: {
+          label: 'name',
+          children: 'zones'
+        },
+        count: 1
+      }
+    },
+    methods: {
+      handleCheckChange(data, checked, indeterminate) {
+        console.log(data, checked, indeterminate)
+      },
+      handleNodeClick(data) {
+        console.log(data)
+      },
+      loadNode(node, resolve) {
+        if (node.level === 0) {
+          return resolve([{ name: 'region1' }, { name: 'region2' }])
         }
+        if (node.level > 3) return resolve([])
+
+        var hasChild
+        if (node.data.name === 'region1') {
+          hasChild = true
+        } else if (node.data.name === 'region2') {
+          hasChild = false
+        } else {
+          hasChild = Math.random() > 0.5
+        }
+
+        setTimeout(() => {
+          var data
+          if (hasChild) {
+            data = [{
+              name: 'zone' + this.count++
+            }, {
+              name: 'zone' + this.count++
+            }]
+          } else {
+            data = []
+          }
+
+          resolve(data)
+        }, 500)
       }
     }
   }
