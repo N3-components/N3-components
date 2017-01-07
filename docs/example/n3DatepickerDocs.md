@@ -9,9 +9,9 @@
 Selected date is: {{new Date(value).toString().slice(0, -23)}}
 </pre>
 </p>
-<n3-datepicker 
-ref="dp" 
-v-model="value" 
+<n3-datepicker
+ref="dp"
+v-model="value"
 :disabled-days-of-Week="disabled"
 :format="format.toString()" >
 </n3-datepicker>
@@ -72,13 +72,14 @@ v-model="value"
 | hour-range          | String     |    [0,60]      |     小时范围     |
 | minute-range          | String     |    [0,60]      |     分钟范围     |
 | second-range          | String     |    [0,60]       |     秒范围     |
+| manual          | Boolean     |    false       |     是否允许手动输入     |
 
 ### 事件
 
 | 名称          |   说明          |        
 |-------------  |---------------- |
 | change | 值变化 |
-    
+
 <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 </div>
 </template>
