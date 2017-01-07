@@ -1,13 +1,12 @@
 <template>
   <div :class="`${prefixCls}-datepicker`">
-    <n3-input 
+    <n3-input
       :width="width"
-      :name="name" 
-      :rules="rules" 
+      :name="name"
+      :rules="rules"
       :has-feedback="hasFeedback"
       :placeholder="placeholder"
       :custom-validate="customValidate"
-      :readonly="true"
       :disabled="disabled"
       @click.native="inputClick"
       :value="currentValue">
@@ -17,11 +16,11 @@
           <div :class="`${prefixCls}-datepicker-inner`">
             <div :class="`${prefixCls}-datepicker-body`">
               <div :class="`${prefixCls}-datepicker-ctrl`">
-                <span 
-                  :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+                <span
+                  :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
                   @click="preNextMonthClick(0)">&lt;</span>
-                <span 
-                  :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+                <span
+                  :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
                   @click="preNextMonthClick(1)">&gt;</span>
                 <p @click="switchMouthView">
                 {{stringifyDayHeader(currDate)}}
@@ -31,8 +30,8 @@
                 <span v-for="w in weekRange">{{w}}</span>
               </div>
               <div :class="`${prefixCls}-datepicker-dateRange`">
-                <span 
-                  v-for="d in dateRange" :class="d.sclass" 
+                <span
+                  v-for="d in dateRange" :class="d.sclass"
                   @click="daySelect(d.date,d.sclass)">
                   {{d.text}}
                 </span>
@@ -45,11 +44,11 @@
         <div :class="`${prefixCls}-datepicker-inner`">
           <div :class="`${prefixCls}-datepicker-body`">
             <div :class="`${prefixCls}-datepicker-ctrl`">
-              <span 
-                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+              <span
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
                 @click="preNextYearClick(0)">&lt;</span>
-              <span 
-                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+              <span
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
                 @click="preNextYearClick(1)">&gt;</span>
               <p @click="switchDecadeView">
               {{stringifyYearHeader(currDate)}}
@@ -57,7 +56,7 @@
             </div>
             <div :class="`${prefixCls}-datepicker-mouthRange`">
             	<template v-for="(m, index) in mouthNames">
-                <span   
+                <span
                   :class="monthClassObj(m)"
                   @click="mouthSelect(index)">
                   {{m.substr(0,3)}}
@@ -71,11 +70,11 @@
         <div :class="`${prefixCls}-datepicker-inner`">
           <div :class="`${prefixCls}-datepicker-body`">
             <div :class="`${prefixCls}-datepicker-ctrl`">
-              <span 
-                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+              <span
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
                 @click="preNextDecadeClick(0)">&lt;</span>
-              <span 
-                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+              <span
+                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
                 @click="preNextDecadeClick(1)">&gt;</span>
               <p>
               {{stringifyDecadeHeader(currDate)}}
@@ -83,7 +82,7 @@
             </div>
             <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
             	<template v-for="decade in decadeRange">
-            		<span 
+            		<span
                   :class="yearClassObj(decade)"
                   @click.stop="yearSelect(decade.text)">
                   {{decade.text}}
@@ -120,6 +119,10 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    manual: {
+      type: Boolean,
+      default: false
     }
   },
   data () {

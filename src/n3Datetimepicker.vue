@@ -2,29 +2,29 @@
   <div :class="`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`" ref="datetimepicker">
     <n3-input
       :width="width"
-      :name="name" 
-      :rules="rules" 
+      :name="name"
+      :rules="rules"
       :has-feedback="hasFeedback"
       :placeholder="placeholder"
       :custom-validate="customValidate"
-      :readonly="true"
       :disabled="disabled"
+      :readonly="manual"
       @click.native="inputClick"
       :value="currentValue">
     </n3-input>
       <transition name="fadeDown">
-        <div 
-          :class="`${prefixCls}-datepicker-popup`" 
-          v-show="displayDayView" 
+        <div
+          :class="`${prefixCls}-datepicker-popup`"
+          v-show="displayDayView"
           :style="{width:popWidth}">
             <div :class="`${prefixCls}-datepicker-inner`" ref="datepicker">
                 <div :class="`${prefixCls}-datepicker-body`">
                     <div :class="`${prefixCls}-datepicker-ctrl`">
-                        <span 
-                          :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+                        <span
+                          :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
                           @click="preNextMonthClick(0)">&lt;</span>
-                        <span 
-                          :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+                        <span
+                          :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
                           @click="preNextMonthClick(1)">&gt;</span>
                         <p @click="switchMouthView">
                         {{stringifyDayHeader(currDate)}}
@@ -34,37 +34,37 @@
                         <span v-for="w in weekRange">{{w}}</span>
                     </div>
                     <div :class="`${prefixCls}-datepicker-dateRange`">
-                        <span v-for="d in dateRange" 
-                        :class="[d.sclass,prefixCls + '-datetimepicker-date-span']" 
+                        <span v-for="d in dateRange"
+                        :class="[d.sclass,prefixCls + '-datetimepicker-date-span']"
                         @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
                     </div>
                 </div>
             </div>
             <div :class="`${prefixCls}-timepicker-con`">
               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
-                <n3-slider 
+                <n3-slider
                   :class="`${prefixCls}-timepicker-slider`"
-                  v-model="time.hour" 
-                  orientation="vertical" 
-                  :max="hourRange[1]" 
+                  v-model="time.hour"
+                  orientation="vertical"
+                  :max="hourRange[1]"
                   :min="hourRange[0]" >
                 </n3-slider>
               </div>
               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
                 <n3-slider
-                  :class="`${prefixCls}-timepicker-slider`" 
-                  v-model="time.minute" 
-                  orientation="vertical" 
-                  :max="minuteRange[1]" 
+                  :class="`${prefixCls}-timepicker-slider`"
+                  v-model="time.minute"
+                  orientation="vertical"
+                  :max="minuteRange[1]"
                   :min="minuteRange[0]" >
                 </n3-slider>
               </div>
               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
-                <n3-slider 
+                <n3-slider
                   :class="`${prefixCls}-timepicker-slider`"
-                  v-model="time.second" 
-                  orientation="vertical" 
-                  :max="secondRange[1]" 
+                  v-model="time.second"
+                  orientation="vertical"
+                  :max="secondRange[1]"
                   :min="secondRange[0]" >
                 </n3-slider>
               </div>
@@ -75,11 +75,11 @@
         <div :class="`${prefixCls}-datepicker-inner`">
             <div :class="`${prefixCls}-datepicker-body`">
                 <div :class="`${prefixCls}-datepicker-ctrl`">
-                    <span 
-                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`" 
+                    <span
+                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
                       @click="preNextYearClick(0)">&lt;</span>
-                    <span 
-                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+                    <span
+                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
                       @click="preNextYearClick(1)">&gt;</span>
                     <p @click="switchDecadeView">
                     {{stringifyYearHeader(currDate)}}
@@ -87,7 +87,7 @@
                 </div>
                 <div :class="`${prefixCls}-datepicker-mouthRange`">
                 	<template v-for="(m,index) in mouthNames">
-	                    <span 
+	                    <span
                         :class="monthClassobj(m)"
                         @click="mouthSelect(index)">
 	                      {{m.substr(0,3)}}
@@ -101,11 +101,11 @@
         <div :class="`${prefixCls}-datepicker-inner`">
             <div :class="`${prefixCls}-datepicker-body`">
                 <div :class="`${prefixCls}-datepicker-ctrl`">
-                    <span 
+                    <span
                       :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
                       @click="preNextDecadeClick(0)">&lt;</span>
-                    <span 
-                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`" 
+                    <span
+                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
                       @click="preNextDecadeClick(1)">&gt;</span>
                     <p>
                     {{stringifyDecadeHeader(currDate)}}
@@ -169,6 +169,10 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    manual: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
