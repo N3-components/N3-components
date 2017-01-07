@@ -143,7 +143,7 @@ export default {
   },
   methods: {
     focusInput () {
-      this.$refs.input.$emit('focus')
+      this.$refs.input.focus()
     },
     _onFocus () {
       this.$emit('focus')

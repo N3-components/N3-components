@@ -7,6 +7,7 @@
 <n3-multiple-input
   @focus="focus" 
   @inputChange="getResult"
+  :async="true"
   v-model="a.list" 
   :format="format" 
   :render="render"
@@ -28,133 +29,58 @@
 
 
 ```javascript
-new Vue({
-  data:{
-    list:[{
-      value:'tag1',
-      label:'tag1',
-    },{
-      value:'tag2',
-      label:'tag2',
-    },{
-      value:'tag3',
-      label:'tag3',
-    }]
+methods: {
+  focus () {
+    console.log(1)
   },
-  methods:{
-    render (item) {
-      return item.formatted_address
-    },
-    getResult (query) {
-      let self = this
-      $.ajax({
-        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
-        success (ret) {
-          self.items = ret.results
-        }
-      })
-    },
-    del (item, index) {
-      this.list.splice(index, 1)
-    },
-    format (item, index) {
-      let content = typeof item === 'string' ? item : item.formatted_address
-      return `<label class="m-tag" ">${content}</label>`
-    }
+  render (item) {
+    return item.formatted_address
+  },
+  getResult (query) {
+    console.log(query, 1)
+    let self = this
+    $.ajax({
+      url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
+      success (ret) {
+        self.items = ret.results
+      }
+    })
+  },
+  format (item, index) {
+    let content = item.formatted_address
+    return content
   }
-})
+}
 ```
-  <h2>参数</h2>
-  <p>自动补全的参数请参考<a href="./component.html#n3TypeaheadDocs" target="_blank">自动补全组件</a></p>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>参数名</th>
-        <th>类型</th>
-        <th>默认值</th>
-        <th>说明</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>value</td>
-        <td><code>Array</code></td>
-        <td></td>
-        <td>需要<code>.sync</code></td>
-      </tr>
-      <tr>
-        <td>position</td>
-        <td><code>Number</code></td>
-        <td></td>
-        <td>输入框所在位置,需要<code>.sync</code></td>
-      </tr>
-      <tr>
-        <td>format</td>
-        <td><code>Function</code></td>
-        <td></td>
-        <td>格式化显示函数</td>
-      </tr>
-      <tr>
-        <td>width</td>
-        <td><code>String</code></td>
-        <td>220px</td>
-        <td>组件宽度</td>
-      </tr>
-      <tr>
-        <td>height</td>
-        <td><code>String</code></td>
-        <td></td>
-        <td>组件高度</td>
-      </tr>
-      <tr>
-        <td>input-width</td>
-        <td><code>String</code></td>
-        <td>50px</td>
-        <td>输入框宽度</td>
-      </tr>
-      <tr>
-        <td>dropdown-width</td>
-        <td><code>String</code></td>
-        <td>220px</td>
-        <td>下拉框宽度</td>
-      </tr>
-      <tr>
-        <td>dropdown-height</td>
-        <td><code>String</code></td>
-        <td>300px</td>
-        <td>下拉框最大高度</td>
-      </tr>
-      <tr>
-        <td>add-format</td>
-        <td><code>Function</code></td>
-        <td><code>function(text){return {
-        value:text,
-        label:text
-        }}</code></td>
-        <td>通过输入添加的处理函数</td>
-      </tr>
-      <tr>
-        <td>on-change</td>
-        <td><code>Function</code></td>
-        <td></td>
-        <td>value变化的回调函数</td>
-      </tr>
-      <tr>
-        <td>position-move</td>
-        <td><code>Boolean</code></td>
-        <td>true</td>
-        <td>是否允许用户改变输入框的位置</td>
-      </tr>
-      <tr>
-        <td>placeholder</td>
-        <td><code>String</code></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
-  </div>
+
+### 参数
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| data          | Array     |    -        |     本地数组     |
+| format          | Function     |    -        |     显示格式化函数     |
+| limit          | Number     |    8       |     显示的条数     |
+| items          | Array     |    []        |     列表数组，用于异步请求     |
+| positionMove          | Boolean     |    true        |     输入框位置是否能控制移动     |
+| async          | Boolean     |    false       |     异步     |
+| render          | Function     |    -       |     渲染函数     |
+| add-format          | Function     |    -       |     获取需要的值     |
+| dropdow-width          | String     |    220px       |     下拉宽度     |
+| dropdown-height          | String     |    300px       |     下拉框最大高度     |
+
+
+### 事件
+
+| 名称          |   说明          |        
+|-------------  |---------------- |
+| blur          | 失焦     |  
+| focus          | 聚焦     |  
+| change | 值变化 |
+| positionChange | 位置变化 |
+| inputChange | 输入值变化 |
+
+
+<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+</div>
 </template>
 
 <script>
@@ -174,6 +100,7 @@ export default {
       return item.formatted_address
     },
     getResult (query) {
+      console.log(query, 1)
       let self = this
       $.ajax({
         url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
@@ -181,9 +108,6 @@ export default {
           self.items = ret.results
         }
       })
-    },
-    del (item, index) {
-      this.list.splice(index, 1)
     },
     format (item, index) {
       let content = typeof item === 'string' ? item : item.formatted_address

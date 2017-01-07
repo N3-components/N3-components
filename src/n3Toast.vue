@@ -77,7 +77,6 @@ export default {
   watch: {
     show: {
       handler (val, newVal) {
-        var self = this
         this.setT = window.clearTimeout(this.setT)
         if (val) {
           this.$nextTick(function () {
@@ -89,11 +88,11 @@ export default {
             }
           })
         }
-        /*if (val && this.duration) {
-          this.setT = window.setTimeout(() => {
-            self.show = false
-          }, this.duration)
-        }*/
+      /* if (val && this.duration) {
+        this.setT = window.setTimeout(() => {
+          self.show = false
+        }, this.duration)
+      } */
       },
       immediate: true
     }

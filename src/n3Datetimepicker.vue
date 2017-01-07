@@ -203,9 +203,6 @@ export default {
     currentValue (val) {
       this.$emit('input', val)
     },
-    displayDayView () {
-      this.dispatchHide()
-    },
     displayMouthView () {
       this.dispatchHide()
     },
@@ -216,6 +213,7 @@ export default {
       this.getDateRange()
     },
     displayDayView (val) {
+      this.dispatchHide()
       if (val) {
         this.$nextTick(() => {
           let width = this.$refs.datepicker.offsetWidth * 1 + 30

@@ -1,11 +1,13 @@
 <template>
   <div class="n3-tree">
     <n3-tree-node
-      v-for="child in data"
+      v-for="child in root.childNodes"
       :node="child"
-    >
+      :props="props"
+      :key="getNodeKey(child)"
+      :render-content="renderContent">
     </n3-tree-node>
-    <div v-if="isValidTree">
+    <div v-if="!root.childNodes || root.childNodes.length === 0">
       <span>{{ emptyText }}</span>
     </div>
   </div>
@@ -16,29 +18,31 @@
   const emptyText = 'Empty Content.'
 
   export default {
-    name: 'n3-tree',
+    name: 'n3Tree',
 
     props: {
+      data: {
+        type: Array
+      },
       prefixCls: {
         type: String,
         default: 'n3'
       },
-      data: {
-        type: Array,
-        default() {
-          return []
-        }
-      },
       emptyText: {
         type: String,
         default() {
-          return ''
+          return emptyText
         }
       },
-      // 节点文本前的图标
-      icon: {
+      // 叶子节点图标
+      leafIcon: {
         type: String,
         default: 'file'
+      },
+      // 子节点图标
+      childIcon: {
+        type: String,
+        default: 'folder'
       },
       // 收起树时的图标
       closedIcon: {
@@ -50,53 +54,96 @@
         type: String,
         default: 'angle-down'
       },
-      // 是否按照类型排序
-      sort: {
+      nodeKey: String,
+      checkStrictly: Boolean,
+      defaultExpandAll: Boolean,
+      expandOnClickNode: {
         type: Boolean,
         default: true
       },
-      // value 属性名
-      selectedKey: {
-        type: [String, Number]
+      autoExpandParent: {
+        type: Boolean,
+        default: true
       },
-      // 是否支持选中
-      checkable: {
+      defaultCheckedKeys: Array,
+      defaultExpandedKeys: Array,
+      renderContent: Function,
+      showCheckbox: {
         type: Boolean,
         default: false
       },
-      // 点击展开子节点
-      expandOnClickNode: {
+      props: {
+        default() {
+          return {
+            children: 'children',
+            label: 'label',
+            icon: 'icon'
+          }
+        }
+      },
+      lazy: {
         type: Boolean,
         default: false
-      }
+      },
+      highlightCurrent: Boolean,
+      currentNodeKey: [String, Number],
+      load: Function,
+      filterNodeMethod: Function
     },
 
     created() {
       this.isTree = true
 
       this.store = new Store({
-        instance: this
+        key: this.nodeKey,
+        data: this.data,
+        lazy: this.lazy,
+        props: this.props,
+        load: this.load,
+        currentNodeKey: this.currentNodeKey,
+        checkStrictly: this.checkStrictly,
+        defaultCheckedKeys: this.defaultCheckedKeys,
+        defaultExpandedKeys: this.defaultExpandedKeys,
+        autoExpandParent: this.autoExpandParent,
+        defaultExpandAll: this.defaultExpandAll,
+        filterNodeMethod: this.filterNodeMethod
       })
+
+      this.root = this.store.root
     },
 
     data() {
       return {
-        currentNode: null,
-        currentNodeKey: ''
-      };
+        store: null,
+        root: null,
+        currentNode: null
+      }
     },
 
     components: {
-      N3TreeNode: require('./n3TreeNode')
+      n3TreeNode: require('./n3TreeNode')
     },
 
     computed: {
-      isValidTree() {
-        return this.data.length
+      children: {
+        set(value) {
+          this.data = value
+        },
+        get() {
+          return this.data
+        }
       }
     },
 
     watch: {
+      defaultCheckedKeys(newVal) {
+        this.store.defaultCheckedKeys = newVal
+        this.store.setDefaultCheckedKey(newVal)
+      },
+      defaultExpandedKeys(newVal) {
+        this.store.defaultExpandedKeys = newVal
+        this.store.setDefaultExpandedKeys(newVal)
+      },
       currentNodeKey(newVal) {
         this.store.setCurrentNodeKey(newVal)
       },
@@ -106,12 +153,34 @@
     },
 
     methods: {
-      getCheckedKeys() {
-        return this.store.getCheckedKeys()
+      filter(value) {
+        if (!this.filterNodeMethod) throw new Error('[Tree] filterNodeMethod is required when filter')
+        this.store.filter(value)
       },
-      setCheckedKeys(keys) {
-        this.store.setCheckedKeys(keys)
+      getNodeKey(node, index) {
+        const nodeKey = this.nodeKey
+        if (nodeKey && node) {
+          return node.data[nodeKey]
+        }
+        return index
+      },
+      getCheckedNodes(leafOnly) {
+        return this.store.getCheckedNodes(leafOnly)
+      },
+      getCheckedKeys(leafOnly) {
+        return this.store.getCheckedKeys(leafOnly)
+      },
+      setCheckedNodes(nodes, leafOnly) {
+        if (!this.nodeKey) throw new Error('[Tree] nodeKey is required in setCheckedNodes')
+        this.store.setCheckedNodes(nodes, leafOnly)
+      },
+      setCheckedKeys(keys, leafOnly) {
+        if (!this.nodeKey) throw new Error('[Tree] nodeKey is required in setCheckedNodes')
+        this.store.setCheckedKeys(keys, leafOnly)
+      },
+      setChecked(data, checked, deep) {
+        this.store.setChecked(data, checked, deep)
       }
     }
-   }
+  }
 </script>

@@ -6,6 +6,7 @@
             <n3-typeahead
               ref="typeahead"
               :placeholder="placeholder"
+              :async="async"
               @focus="_onFocus"
               @blur="_onBlur"
               :style="{margin:'0px 5px'}"
@@ -39,6 +40,7 @@
       <n3-typeahead
         ref="typeahead"
         :placeholder="placeholder"
+        :async="async"
         @focus="_onFocus"
         @blur="_onBlur"
         :style="{margin:'0px 5px'}"
@@ -73,6 +75,7 @@
 </template>
 
 <script>
+import type from './utils/type'
 import n3Typeahead from './n3Typeahead'
 import render from './render'
 import n3Icon from './n3Icon'
@@ -86,9 +89,9 @@ export default {
     value: {
       type: Array
     },
-    position: {
-      type: Number,
-      default: 0
+    async: {
+      type: Boolean,
+      default: false
     },
     format: {
       type: Function,
@@ -146,9 +149,6 @@ export default {
       type: Boolean,
       default: false
     },
-    onEnter: {
-      type: Function
-    },
     dropdownWidth: {
       type: String,
       default: '220px'
@@ -170,7 +170,7 @@ export default {
       empty: true,
       stopSecond: false,
       currentValue: this.value,
-      currentPosition: this.position,
+      currentPosition: 0,
       currentQuery: this.query,
       citems: this.items
     }
@@ -214,8 +214,8 @@ export default {
     render
   },
   methods: {
-    _onInputchange () {
-      this.$emit('inputChange')
+    _onInputchange (query) {
+      this.$emit('inputChange', query)
     },
     _onFocus () {
       this.$emit('focus')
@@ -224,7 +224,10 @@ export default {
       this.$emit('blur')
     },
     focus () {
-      this.$refs.typeahead && this.$refs.typeahead.focusInput()
+      this.$nextTick(() => {
+        let typeahead = type.isArray(this.$refs.typeahead) ? this.$refs.typeahead[0] : this.$refs.typeahead
+        typeahead.focusInput()
+      })
     },
     setIndex (index) {
       if (!this.positionMove) return

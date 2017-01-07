@@ -137,7 +137,7 @@
       decimalStyle () {
         let width = ''
         if (this.disabled) {
-          width = `${ this.valueDecimal < 50 ? 0 : 50 }%`
+          width = `${this.valueDecimal < 50 ? 0 : 50}%`
         }
         if (this.allowHalf) {
           width = '50%'
@@ -258,7 +258,7 @@
           return
         }
         if (this.allowHalf) {
-          this.pointerAtLeftHalf = this.value !== Math.floor(this.value);
+          this.pointerAtLeftHalf = this.value !== Math.floor(this.value)
         }
         this.currentValue = this.value
         this.hoverIndex = -1
