@@ -10,6 +10,7 @@
     <div class="bs-example">
        <p>居中：<n3-loading center></n3-loading></p>
     </div>
+
 ```html
 <p>大图标：<n3-loading size="lg"></n3-loading></p>
 <p>默认图标：<n3-loading ></n3-loading></p>
@@ -17,7 +18,8 @@
 <p>颜色：<n3-loading color="primary"></n3-loading></p>
 <p>居中：<n3-loading center></n3-loading></p>
 ```
-     
+
+<div>
   <h2>参数</h2>
   <table class="table table-bordered">
     <thead>

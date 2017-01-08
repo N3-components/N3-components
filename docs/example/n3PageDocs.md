@@ -6,10 +6,14 @@
       <hr></hr>
       <n3-page :total="100"  simple></n3-page>
     </div>
+
+
 ```html
-      <n3-page :total="100"  :on-change="pagechange" :show-total="true" :show-sizer="true" :show-elevator="true"></n3-page>
-      <n3-page :total="100"  simple></n3-page>
+<n3-page :total="100"  :on-change="pagechange" :show-total="true" :show-sizer="true" :show-elevator="true"></n3-page>
+<n3-page :total="100"  simple></n3-page>
 ```
+
+<div>
     <h2>参数</h2>
     <table class="table table-bordered">
       <thead>

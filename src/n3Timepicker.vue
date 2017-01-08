@@ -1,42 +1,42 @@
 <template>
   <div :class="`${prefixCls}-timepicker`">
-    <n3-input 
+    <n3-input
       :width="width"
-      :name="name" 
-      :rules="rules" 
+      :name="name"
+      :rules="rules"
       :has-feedback="hasFeedback"
       :placeholder="placeholder"
       :custom-validate="customValidate"
-      :readonly="true"
       :disabled="disabled"
+      :readonly="manual"
       @click.native="inputClick"
       :value="currentValue">
     </n3-input>
     <transition name="fadeDown">
       <div :class="`${prefixCls}-timepicker-popup`" v-show="show" >
         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
-          <n3-slider 
-            v-model="time.hour" 
-            orientation="vertical" 
-            :max="hourRange[1]" :min="hourRange[0]"  
+          <n3-slider
+            v-model="time.hour"
+            orientation="vertical"
+            :max="hourRange[1]" :min="hourRange[0]"
             :class="`${prefixCls}-timepicker-slider`">
           </n3-slider>
         </div>
         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
-          <n3-slider 
-            v-model="time.minute" 
-            orientation="vertical" 
-            :max="minuteRange[1]" 
-            :min="minuteRange[0]"  
+          <n3-slider
+            v-model="time.minute"
+            orientation="vertical"
+            :max="minuteRange[1]"
+            :min="minuteRange[0]"
             :class="`${prefixCls}-timepicker-slider`">
           </n3-slider>
         </div>
         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
-          <n3-slider 
-            v-model="time.second" 
-            orientation="vertical" 
-            :max="secondRange[1]" 
-            :min="secondRange[0]" 
+          <n3-slider
+            v-model="time.second"
+            orientation="vertical"
+            :max="secondRange[1]"
+            :min="secondRange[0]"
             :class="`${prefixCls}-timepicker-slider`">
           </n3-slider>
         </div>
@@ -83,6 +83,10 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    manual: {
+      type: Boolean,
+      default: false
     }
   },
   filters: {

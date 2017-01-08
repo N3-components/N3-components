@@ -8,13 +8,11 @@
         @click.native="openRight">
         点击出现在右边
       </n3-button>
-
       <n3-button type='danger'
         @click.native="openTop">
        点击出现在顶部
       </n3-button>
       <hr>
-
       <n3-alert  dismissable :show="true">
         <strong>default style</strong>
         This is the default style.
@@ -92,91 +90,88 @@
 
 ```html
 <n3-button type='success'
-        @click.native="openRight">
-        点击出现在右边
-      </n3-button>
-
-      <n3-button type='danger'
-        @click.native="openTop">
-       点击出现在顶部
-      </n3-button>
-      <hr>
-
-      <n3-alert  dismissable :show="true">
-        <strong>default style</strong>
-        This is the default style.
-      </n3-alert>
-      <br>
-      <n3-alert type="success" show="true">
-        <strong>Well Done!</strong>
-        You successfully read this important alert message.
-      </n3-alert>
-      <br>
-      <n3-alert type="info" show="true">
-        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-      </n3-alert>
-      <br>
-      <n3-alert type="danger" dismissable show="true">
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-      </n3-alert>
-      <br>
-      <n3-alert type="warning" dismissable show="true">
-        <strong>Warning!</strong> Better check yourself, you're not looking too good.
-        <hr>
-      </n3-alert>
-      <br>
-      <n3-alert
-        :show="true"
-        type="success"
-        width="700px"
-        message="信息提示"
-        description>
-        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
-      </n3-alert>
-      <br>
-      <n3-alert
-        :show="true"
-        type="danger"
-        width="700px"
-        message="错误提示"
-        description
-        dismissable>
-        这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
-      </n3-alert>
-      <br>
-      <n3-alert
-        show="true"
-        type="info"
-        width="700px"
-        message="错误提示"
-        :on-close="close"
-        description
-        dismissable>
-        点击关闭按钮的回调函数,打开控制台看看:)
-      </n3-alert>
-      <n3-alert
-        ref="alertRight"
-        type="success"
-        width="700px"
-        placement="top-right"
-        message="信息提示"
-        description
-        dismissable>
-        <p>You successfully read this important alert message.</p>
-      </n3-alert>
-      <n3-alert
-        ref="alertTop"
-        :duration="3000"
-        type="danger"
-        placement="top"
-        message="警告"
-        description
-        dismissable>
-        <strong>Heads up!</strong>
-        <p>This alert needs your attention.</p>
-      </n3-alert>
+  @click.native="openRight">
+  点击出现在右边
+</n3-button>
+<n3-button type='danger'
+  @click.native="openTop">
+ 点击出现在顶部
+</n3-button>
+<hr>
+<n3-alert  dismissable :show="true">
+  <strong>default style</strong>
+  This is the default style.
+</n3-alert>
+<br>
+<n3-alert type="success" show="true">
+  <strong>Well Done!</strong>
+  You successfully read this important alert message.
+</n3-alert>
+<br>
+<n3-alert type="info" show="true">
+  <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</n3-alert>
+<br>
+<n3-alert type="danger" dismissable show="true">
+  <strong>Oh snap!</strong> Change a few things up and try submitting again.
+</n3-alert>
+<br>
+<n3-alert type="warning" dismissable show="true">
+  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  <hr>
+</n3-alert>
+<br>
+<n3-alert
+  :show="true"
+  type="success"
+  width="700px"
+  message="信息提示"
+  description>
+  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
+</n3-alert>
+<br>
+<n3-alert
+  :show="true"
+  type="danger"
+  width="700px"
+  message="错误提示"
+  description
+  dismissable>
+  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示
+</n3-alert>
+<br>
+<n3-alert
+  show="true"
+  type="info"
+  width="700px"
+  message="错误提示"
+  :on-close="close"
+  description
+  dismissable>
+  点击关闭按钮的回调函数,打开控制台看看:)
+</n3-alert>
+<n3-alert
+  ref="alertRight"
+  type="success"
+  width="700px"
+  placement="top-right"
+  message="信息提示"
+  description
+  dismissable>
+  <p>You successfully read this important alert message.</p>
+</n3-alert>
+<n3-alert
+  ref="alertTop"
+  :duration="3000"
+  type="danger"
+  placement="top"
+  message="警告"
+  description
+  dismissable>
+  <strong>Heads up!</strong>
+  <p>This alert needs your attention.</p>
+</n3-alert>
 ```
-
 
 ```javascript
     methods: {
@@ -191,6 +186,8 @@
       }
     }
 ```
+
+<div>
     <h2>参数</h2>
     <table class="table table-bordered">
       <thead>
@@ -216,7 +213,7 @@
         </tr>
         <tr>
           <td>type</td>
-          <td><code>String</code>, 如: 
+          <td><code>String</code>, 如:
           <code>default</code>
           <code>success</code>
           <code>info</code>
@@ -269,8 +266,8 @@
         </tr>
       </tbody>
     </table>
-  </div>
 </template>
+</div>
 
 <script >
   import n3Alert from 'src/n3Alert.vue'

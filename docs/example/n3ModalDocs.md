@@ -5,42 +5,38 @@
       <n3-button @click.native="showModal">Show modal</n3-button>
       <n3-modal title="Modal title" effect="fade" width="400px" ref="modal">
         <div slot="body">
-          What's in a name? That which we call a rose 
-          By any other name would smell as sweet. 
+          What's in a name? That which we call a rose
+          By any other name would smell as sweet.
         </div>
       </n3-modal>
-
       <n3-button class="btn btn-success" @click.native="showBigModal">Big modal</n3-button>
       <n3-modal title="Big Modal"  effect="fade" width="800px" ref="bigModal">
         <div slot="body">
-          What's in a name? That which we call a rose 
-          By any other name would smell as sweet. 
+          What's in a name? That which we call a rose
+          By any other name would smell as sweet.
         </div>
       </n3-modal>
-
-
       <n3-button class="btn btn-primary" @click.native="showZoomModal">Zoom modal</n3-button>
       <n3-modal title="Zoom Modal" effect="zoom" width="400px" ref="zoomModal">
         <div slot="body">
-          What's in a name? That which we call a rose 
-          By any other name would smell as sweet. 
+          What's in a name? That which we call a rose
+          By any other name would smell as sweet.
         </div>
       </n3-modal>
-
-
       <n3-button @click.native="showCustomModal">Show custom modal</n3-button>
       <n3-modal  effect="fade" width="400px" ref="customModal">
         <div slot="header">
         </div>
         <div slot="body">
-          What's in a name? That which we call a rose 
-          By any other name would smell as sweet. 
+          What's in a name? That which we call a rose
+          By any other name would smell as sweet.
         </div>
         <div slot="footer">
         </div>
       </n3-modal>
     </div>
 
+<div>
   <h2>参数</h2>
   <table class="table table-bordered">
     <thead>
@@ -104,11 +100,14 @@
   </table>
   <h2>用法</h2>
   <p>
-    如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer. 但是如果你需要自己定制弹出框内容，你可以实现
-    <code>&lt;div slot="header"&gt;...&lt;/div&gt;</code> ,
-    <code>&lt;div slot="body"&gt;...&lt;/div&gt;</code>和
-    <code>&lt;div slot="footer"&gt;...&lt;/div&gt;</code>.
-  </p>
+    如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer. </p>
+  <p>但是如果你需要自己定制弹出框内容，你可以实现</p>
+
+```html
+<div slot="header">...</div>
+<div slot="body">...</div>
+<div slot="footer">...</div>
+```
   </div>
 </template>
 

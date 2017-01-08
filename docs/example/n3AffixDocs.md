@@ -28,7 +28,7 @@
   </nav>
 </n3-affix>
 ```
-    <!-- <h2>参数</h2>
+ <h2>参数</h2>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -46,13 +46,13 @@
           <td>离屏幕顶部的像素值</td>
         </tr>
       </tbody>
-    </table> -->
+    </table>
   </div>
 </template>
 
 <script>
 export default {
- 
+
 }
 </script>
 
@@ -61,7 +61,7 @@ export default {
   background-color: #fff;
   box-shadow: 1px 1px 10px #ddd;
   z-index: 10000;
-  padding:10px; 
+  padding:10px;
 }
 pre[class*='language-']{
   position: static;

@@ -19,6 +19,7 @@
 | hour-range          | String     |    [0,60]      |     小时范围     |
 | minute-range          | String     |    [0,60]      |     分钟范围     |
 | second-range          | String     |    [0,60]       |     秒范围     |
+| manual          | Boolean     |    false       |     是否允许手动输入     |
 
 ### 事件
 

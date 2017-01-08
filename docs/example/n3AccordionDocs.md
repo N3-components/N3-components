@@ -40,7 +40,7 @@
   <n3-panel header="Panel #1" :is-open="true" index="1">
     <div slot="header">Panel #1</div>
     ...
-    
+
   </n3-panel>
   <n3-panel header="Panel #2" index="2">
     ...
@@ -52,7 +52,7 @@
   </n3-panel>
   <n3-panel header="Panel #4" index="4">
     ...
-    
+
   </n3-panel>
 </n3-accordion>
 ```
