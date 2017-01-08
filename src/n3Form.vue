@@ -100,6 +100,7 @@ export default {
 
       if (this.validate) {
         this.result = this._result
+        this.$emit('validateChange', this.result)
       }
     })
   },

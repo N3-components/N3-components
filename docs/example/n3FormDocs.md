@@ -1,322 +1,364 @@
 <template>
-    <div class="bs-docs-section" id="表单验证"  >
-        <h1 class="page-header"><a href="#表单验证" class="anchor">表单验证</a><span class="author"> </span></h1>
-        <div class="bs-example">
-          <n3-form ref='form' >
-                <n3-form-item
-                    need
-                    label="姓名"
-                    :label-col="3">
-                <n3-input
-                    name="name"
-                    v-model="model.name"
-                    :rules="[{type:'required'}]"
-                    :custom-validate="nameValidate">
-                </n3-input>
-                </n3-form-item>
 
-                <n3-form-item
-                    need
-                    label="年龄"
-                    :label-col="3">
-                <n3-input-number
-                    name="age"
-                    v-model="model.age"
-                    :rules="[{type:'number'},{type:'required'}]">
-                </n3-input-number>
-                </n3-input>
-                </n3-form-item>
-                <n3-form-item
-                    need
-                    label="地址"
-                    :label-col="3">
-                <n3-cascader
-                    name="address"
-                    :options="options"
-                    v-model="model.address"
-                    :rules="[{type:'required'}]">
-                </n3-cascader>
-                </n3-form-item>
-                <n3-form-item
-                    need
-                    label="生日"
-                    :label-col="3">
-                <n3-datepicker
-                    name="birthday"
-                    v-model="model.birthday"
-                    :rules="[{type:'required'}]">
-                </n3-datepicker>
-                </n3-form-item>
-                <n3-form-item
-                    need
-                    label="学校"
-                    :label-col="3">
-                <n3-typeahead
-                    name="学校"
-                    v-model = "model.school"
-                    :data="schoolData"
-                    :rules="[{type:'required'}]">
-                </n3-typeahead>
-                </n3-form-item>
-                <n3-form-item
-                    need
-                    label="爱好"
-                    :label-col="3">
-                <n3-checkbox-group
-                    name="hobby"
-                    v-model = "model.hobby"
-                    :rules="[{type:'required'}]">
-                    <n3-checkbox label="0">看书</n3-checkbox>
-                    <n3-checkbox label="1">运动</n3-checkbox>
-                    <n3-checkbox value="2">旅行</n3-checkbox>
-                </n3-checkbox-group>
-                </n3-form-item>
+## 表单
 
-                <n3-form-item
-                    need
-                    label="性别"
-                    :label-col="3">
-                <n3-radio-group
-                    name="sex"
-                    v-model = "model.sex"
-                    :rules="[{type:'required'}]">
-                    <n3-radio label="0">男</n3-radio>
-                    <n3-radio label="1">女</n3-radio>
-                </n3-radio-group>
-                </n3-form-item>
+<div class="bs-docs-section" >
+<div class="bs-example">
+<n3-form ref='form' >
+<n3-form-item
+    need
+    label="姓名"
+    :label-col="3">
+<n3-input
+    name="name"
+    v-model="model.name"
+    :rules="[{type:'required'}]"
+    :custom-validate="nameValidate">
+</n3-input>
+</n3-form-item>
 
-                <n3-form-item
-                    need
-                    label="专业"
-                    :label-col="3">
-                <n3-select
-                    name="sex"
-                    :options='profession'
-                    v-model = "model.profession"
-                    :rules="[{type:'required'}]">
-                </n3-select>
-                </n3-form-item>
+<n3-form-item
+    need
+    label="年龄"
+    :label-col="3">
+<n3-input-number
+    name="age"
+    v-model="model.age"
+    :rules="[{type:'number'},{type:'required'}]">
+</n3-input-number>
+</n3-input>
+</n3-form-item>
+<n3-form-item
+    need
+    label="地址"
+    :label-col="3">
+<n3-cascader
+    name="address"
+    :options="options"
+    v-model="model.address"
+    :rules="[{type:'required'}]">
+</n3-cascader>
+</n3-form-item>
+<n3-form-item
+    need
+    label="生日"
+    :label-col="3">
+<n3-datepicker
+    name="birthday"
+    v-model="model.birthday"
+    :rules="[{type:'required'}]">
+</n3-datepicker>
+</n3-form-item>
+<n3-form-item
+    need
+    label="学校"
+    :label-col="3">
+<n3-typeahead
+    name="学校"
+    v-model = "model.school"
+    :data="schoolData"
+    :rules="[{type:'required'}]">
+</n3-typeahead>
+</n3-form-item>
+<n3-form-item
+    need
+    label="爱好"
+    :label-col="3">
+<n3-checkbox-group
+    name="hobby"
+    v-model = "model.hobby"
+    :rules="[{type:'required'}]">
+    <n3-checkbox label="0">看书</n3-checkbox>
+    <n3-checkbox label="1">运动</n3-checkbox>
+    <n3-checkbox value="2">旅行</n3-checkbox>
+</n3-checkbox-group>
+</n3-form-item>
 
-                <n3-form-item
-                    need
-                    label="级别"
-                    :label-col="3">
-                  <n3-slider
-                      name="level"
-                      v-model="model.level"
-                      :rules="[{type:'required'}]">
-                  </n3-slider>
-                </n3-form-item>
+<n3-form-item
+    need
+    label="性别"
+    :label-col="3">
+<n3-radio-group
+    name="sex"
+    v-model = "model.sex"
+    :rules="[{type:'required'}]">
+    <n3-radio label="0">男</n3-radio>
+    <n3-radio label="1">女</n3-radio>
+</n3-radio-group>
+</n3-form-item>
 
-                <n3-form-item
-                    need
-                    label="开启状态"
-                    :label-col="3">
-                  <n3-switch
-                      name="state"
-                      v-model = "model.state"
-                      :rules="[{type:'required'}]">
-                  </n3-switch>
-                </n3-form-item>
-                <n3-form-item
-                    need
-                    label="喜欢的明星"
-                    :label-col="3">
-                  <n3-multiple-input
-                      name="star"
-                      v-model = "model.star"
-                      :rules="[{type:'required'}]">
-                  </n3-multiple-input>
-                </n3-form-item>
-                <n3-form-item
-                    need
-                    label="想说的话"
-                    :label-col="3">
-                  <n3-textarea
-                      name="suggestion"
-                      v-model = "model.suggestion"
-                      :rules="[{type:'required'}]">
-                  </n3-textarea>
-                </n3-form-item>
+<n3-form-item
+    need
+    label="专业"
+    :label-col="3">
+<n3-select
+    name="sex"
+    :options='profession'
+    v-model = "model.profession"
+    :rules="[{type:'required'}]">
+</n3-select>
+</n3-form-item>
 
-                 <n3-form-item>
-                     <n3-button type="primary" @click.native="submit" >提交</n3-button>
-                </n3-form-item>
-            </n3-form>
+<n3-form-item
+    need
+    label="级别"
+    :label-col="3">
+  <n3-slider
+      name="level"
+      v-model="model.level"
+      :rules="[{type:'required'}]">
+  </n3-slider>
+</n3-form-item>
 
-            <h3>inline</h3>  
+<n3-form-item
+    need
+    label="开启状态"
+    :label-col="3">
+  <n3-switch
+      name="state"
+      v-model = "model.state"
+      :rules="[{type:'required'}]">
+  </n3-switch>
+</n3-form-item>
+<n3-form-item
+    need
+    label="喜欢的明星"
+    :label-col="3">
+  <n3-multiple-input
+      name="star"
+      v-model = "model.star"
+      :rules="[{type:'required'}]">
+  </n3-multiple-input>
+</n3-form-item>
+<n3-form-item
+    need
+    label="想说的话"
+    :label-col="3">
+  <n3-textarea
+      name="suggestion"
+      v-model = "model.suggestion"
+      :rules="[{type:'required'}]">
+  </n3-textarea>
+</n3-form-item>
 
-          <h2>n3-from参数</h2>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>参数名</th>
-                <th>类型</th>
-                <th>默认值</th>
-                <th>说明</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>type</td>
-                <td><code>String</code> 如:  <code>horizontal</code><code>inline</code></td>
-                <td>horizontal</td>
-                <td>布局方式</td>
-              </tr>
-              <tr>
-                <td>validate</td>
-                <td><code>Boolean</code></td>
-                <td>false</td>
-                <td>是否打开验证</td>
-              </tr>
-              <tr>
-                <td>result</td>
-                <td><code>Object</code></td>
-                <td></td>
-                <td>验证结果</td>
-              </tr>
-              <tr>
-                <td>on-validate-change</td>
-                <td><code>Function</code></td>
-                <td></td>
-                <td>验证结果变化</td>
-              </tr>
-            </tbody>
-          </table>
-          <p>验证建议直接调用组件的<code style="color:red">validateFields</code> 方法，具体可查看样例</p>
+ <n3-form-item>
+     <n3-button type="primary" @click.native="submit" >提交</n3-button>
+</n3-form-item>
+</n3-form>
 
-          <h2>n3-from-item参数</h2>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>参数名</th>
-                <th>类型</th>
-                <th>默认值</th>
-                <th>说明</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>label</td>
-                <td><code>String</code></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>label-col</td>
-                <td><code>Number</code></td>
-                <td>2</td>
-                <td>label所占栅格数</td>
-              </tr>
-              <tr>
-                <td>wrap-col</td>
-                <td><code>Number</code></td>
-                <td>12</td>
-                <td>item所占栅格数</td>
-              </tr>
-              <tr>
-                <td>form-col</td>
-                <td><code>Number</code></td>
-                <td></td>
-                <td>表单元素所占栅格数</td>
-              </tr>
-              <tr>
-                <td>need</td>
-                <td><code>Boolean</code></td>
-                <td>false</td>
-                <td>红点标记</td>
-              </tr>
-            </tbody>
-          </table>
+```html
+<n3-form ref='form' >
+  <n3-form-item
+      need
+      label="姓名"
+      :label-col="3">
+  <n3-input
+      name="name"
+      v-model="model.name"
+      :rules="[{type:'required'}]"
+      :custom-validate="nameValidate">
+  </n3-input>
+  </n3-form-item>
+
+  <n3-form-item
+      need
+      label="年龄"
+      :label-col="3">
+  <n3-input-number
+      name="age"
+      v-model="model.age"
+      :rules="[{type:'number'},{type:'required'}]">
+  </n3-input-number>
+  </n3-input>
+  </n3-form-item>
+  <n3-form-item
+      need
+      label="地址"
+      :label-col="3">
+  <n3-cascader
+      name="address"
+      :options="options"
+      v-model="model.address"
+      :rules="[{type:'required'}]">
+  </n3-cascader>
+  </n3-form-item>
+  <n3-form-item
+      need
+      label="生日"
+      :label-col="3">
+  <n3-datepicker
+      name="birthday"
+      v-model="model.birthday"
+      :rules="[{type:'required'}]">
+  </n3-datepicker>
+  </n3-form-item>
+  <n3-form-item
+      need
+      label="学校"
+      :label-col="3">
+  <n3-typeahead
+      name="学校"
+      v-model = "model.school"
+      :data="schoolData"
+      :rules="[{type:'required'}]">
+  </n3-typeahead>
+  </n3-form-item>
+  <n3-form-item
+      need
+      label="爱好"
+      :label-col="3">
+  <n3-checkbox-group
+      name="hobby"
+      v-model = "model.hobby"
+      :rules="[{type:'required'}]">
+      <n3-checkbox label="0">看书</n3-checkbox>
+      <n3-checkbox label="1">运动</n3-checkbox>
+      <n3-checkbox value="2">旅行</n3-checkbox>
+  </n3-checkbox-group>
+  </n3-form-item>
+
+  <n3-form-item
+      need
+      label="性别"
+      :label-col="3">
+  <n3-radio-group
+      name="sex"
+      v-model = "model.sex"
+      :rules="[{type:'required'}]">
+      <n3-radio label="0">男</n3-radio>
+      <n3-radio label="1">女</n3-radio>
+  </n3-radio-group>
+  </n3-form-item>
+
+  <n3-form-item
+      need
+      label="专业"
+      :label-col="3">
+  <n3-select
+      name="sex"
+      :options='profession'
+      v-model = "model.profession"
+      :rules="[{type:'required'}]">
+  </n3-select>
+  </n3-form-item>
+
+  <n3-form-item
+      need
+      label="级别"
+      :label-col="3">
+    <n3-slider
+        name="level"
+        v-model="model.level"
+        :rules="[{type:'required'}]">
+    </n3-slider>
+  </n3-form-item>
+
+  <n3-form-item
+      need
+      label="开启状态"
+      :label-col="3">
+    <n3-switch
+        name="state"
+        v-model = "model.state"
+        :rules="[{type:'required'}]">
+    </n3-switch>
+  </n3-form-item>
+  <n3-form-item
+      need
+      label="喜欢的明星"
+      :label-col="3">
+    <n3-multiple-input
+        name="star"
+        v-model = "model.star"
+        :rules="[{type:'required'}]">
+    </n3-multiple-input>
+  </n3-form-item>
+  <n3-form-item
+      need
+      label="想说的话"
+      :label-col="3">
+    <n3-textarea
+        name="suggestion"
+        v-model = "model.suggestion"
+        :rules="[{type:'required'}]">
+    </n3-textarea>
+  </n3-form-item>
+
+   <n3-form-item>
+       <n3-button type="primary" @click.native="submit" >提交</n3-button>
+  </n3-form-item>
+</n3-form>
+```
+
+```javascript
+  methods: {
+    nameValidate (val) {
+      if (/[\u4E00-\u9FA5\uF900-\uFA2D]/.test(val)) {
+        return {
+          validStatus: 'success'
+        }
+      } else {
+        return {
+          validStatus: 'error',
+          tips: '请输入中文名'
+        }
+      }
+    },
+    submit () {
+      this.$refs.form.validateFields(result => {
+        console.log(result)
+     })
+    }
+  }
+}
+```
 
 
-          <h2>待验证组件参数</h2>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>参数名</th>
-                <th>类型</th>
-                <th>默认值</th>
-                <th>说明</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>name</td>
-                <td><code>String</code></td>
-                <td></td>
-                <td>标示输入项，与结果内的值对应</td>
-              </tr>
-              <tr>
-                <td>readonly</td>
-                <td><code>Boolean</code></td>
-                <td><code>false</code></td>
-                <td>只读，无法输入，级联，时间日期等组件默认无法手动输入</td>
-              </tr>
-              <tr>
-                <td>disabled</td>
-                <td><code>Boolean</code></td>
-                <td></td>
-                <td>禁止改变值</td>
-              </tr>
-              <tr>
-                <td>width</td>
-                <td><code>String</code></td>
-                <td>220px</td>
-                <td>宽度</td>
-              </tr>
-             <!--  <tr>
-                <td>validate</td>
-                <td><code>Boolean</code></td>
-                <td>false</td>
-                <td>是否打开检验</td>
-              </tr> -->
-              <tr>
-                <td>placeholder</td>
-                <td><code>String</code></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>custom－validate</td>
-                <td><code>Function</code></td>
-                <td></td>
-                <td>自定义检验器
-                <code>
-                function(value){
-                  if(value){
-                    return {
-                      validStatus: 'success'
-                    }
-                  }else{
-                    return {
-                      validStatus: 'error',
-                      tips: '出错啦'
-                    }
-                  }
-                }
-                </code>
-                </td>
-              </tr>
-              <tr>
-                <td>rules</td>
-                <td><code>Array</code></td>
-                <td>[]</td>
-                <td>规则数组 ,如
-                  <code>
-                  [{type: 'required' }, {type: 'maxlength=6' }, {type: 'minlength=3' }, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code>
-                </td>
-              </tr>
-              <tr>
-                <td>hasFeedback</td>
-                <td><code>Boolean</code></td>
-                <td></td>
-                <td>是否显示状态icon</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-    </div>
+
+### n3-from参数
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| type          | String     |    horizontal        |     布局方式  horizontal,inline   |
+| validate          | Boolean     |    false       |     是否打开验证     |
+
+
+### 事件
+
+| 名称          |   说明          |        
+|-------------  |---------------- |
+| validateChange    | 校验结果变化     |  
+
+
+### 方法
+
+| 名称          |   说明          |        
+|-------------  |---------------- |
+| validateFields    | 校验     |  
+
+
+### n3-from-item参数
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| label          | String     |    －        |     表单项说明   |
+| label-col          | Number     |    2       |   表单项说明所占栅格数     |
+| wrap-col         | Number     |    12        |   表单项所占栅格数     |
+| form-col        | Number     |    10       |     表单元素所占栅格数     |
+| need       | Boolean     |    false       |     必填标示红点     |
+
+### 待验证组件参数
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| name          | String     |    －        |     标示输入项，与结果内的值对应   |
+| readonly          | Boolean     |    false        |   只读    |
+| disabled          | Boolean     |    false       |    禁止改变值    |
+| width          | String     |    220px        |   宽度    |
+| placeholder          | String     |    －        |  placeholder      |
+| custom－validate          | Function     |     |  自定义校验器     |
+| name           | String     |    －        |        |
+| rules          | Array     |    －        |   验证规则,如 ``` [{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }] ```  |
+| has-feedback    | Boolean     |    true        |    是否显示状态icon    |
+      
+</div>
 </template>
 <script>
 export default {
