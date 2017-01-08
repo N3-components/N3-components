@@ -30,6 +30,7 @@
         <p>提示:作用于尺寸比较小的元素</p>
     </div>
   </transition>
+
 </div>
 
 ```html
@@ -68,7 +69,7 @@
 <style scoped>
   .content {
     box-shadow: 1px 1px 10px #ddd;
-    padding:10px; 
+    padding:10px;
     margin-top: 10px;
   }
 </style>

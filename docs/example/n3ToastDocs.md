@@ -4,8 +4,9 @@
     <div class="bs-example">
       <n3-button @click.native="showToast">点击</n3-button>
       <hr>
-     
 
+
+<div>
   <h2>参数</h2>
   <table class="table table-bordered">
     <thead>
@@ -41,10 +42,10 @@
         <td>true</td>
         <td>点击消失</td>
       </tr>
-      
     </tbody>
   </table>
   </div>
+
 </template>
 
 <script>

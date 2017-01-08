@@ -26,7 +26,8 @@
         <n3-input  placeholder="Focus"></n3-input>
       </n3-tooltip>
     </div>
-    
+
+ <div>
   <h2>参数</h2>
   <table class="table table-bordered">
     <thead>
@@ -57,6 +58,7 @@
         <td></td>
         <td></td>
       </tr>
+      <tr>
         <td>placement</td>
         <td><code>String</code>, 如:  <code>top</code>
         <code>left</code>
@@ -65,9 +67,9 @@
         <td></td>
         <td>定位方式</td>
       </tr>
-    </tbody>
+   	</tbody>
   </table>
-  </div>
+ </div>
 </template>
 
 <script>

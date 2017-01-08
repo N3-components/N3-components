@@ -61,22 +61,22 @@
             <n3-button>Mouseenter</n3-button>
         </n3-popover>
        <hr>
-      <h4>Focus</h4>  
+      <h4>Focus</h4>
       <n3-popover effect="scale"
       title="Title"  placement="bottom" trigger="focus">
         <div slot="content">
             老和尚很无聊
-        </div> 
+        </div>
         <n3-input placeholder="Focus" ></n3-input>
       </n3-popover>
-
-      <h4>气泡确认</h4>  
+      <h4>气泡确认</h4>
       <n3-pop-confirm
           content="确定删除么？"
           :on-confirm="del(item)">
           <n3-button >删除</n3-button>
       </n3-pop-confirm>
     </div>
+
 ```html
 <n3-popover effect="fade" :header="true" title="Title"  placement="top">
   <div slot="content" >
@@ -137,16 +137,16 @@
       <n3-button >Mouseenter</n3-button>
   </n3-popover>
  <hr>
-<h4>Focus</h4>  
+<h4>Focus</h4>
 <n3-popover effect="scale"
 title="Title"  placement="bottom" trigger="focus">
   <div slot="content">
       老和尚很无聊
-  </div> 
+  </div>
   <n3-input placeholder="Focus" ></n3-input>
 </n3-popover>
 
-<h4>气泡确认</h4>  
+<h4>气泡确认</h4>
 <n3-pop-confirm
     content="确定删除么？"
     :on-confirm="del(item)">
@@ -154,7 +154,7 @@ title="Title"  placement="bottom" trigger="focus">
 </n3-pop-confirm>
 ```
 ```javascript
-del(item){ 
+del(item){
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
       alert('删除了' +  item)

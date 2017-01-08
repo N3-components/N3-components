@@ -2,7 +2,7 @@
   <div class="bs-docs-section" id="图标"  >
     <h1 class="page-header"><a href="#图标" class="anchor">图标</a><span class="author"> </span></h1>
     <div class="bs-example">
-    <h3>FontAwesome 4.0 图标列表</h3>  
+    <h3>FontAwesome 4.0 图标列表</h3>
     <h4>11 New Icons in 4.0</h4>
     <hr></hr>
     <n3-container>
@@ -56,12 +56,12 @@
       <n3-row class="row-ex clearfix">
         <n3-column v-for="font in medicalfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
       </n3-row>
-    </n3-container> 
+    </n3-container>
     </div>
+
 ```html
 <n3-icon type="rub"></n3-icon>
 ```
-
   <h2>参数</h2>
   <table class="table table-bordered">
     <thead>
