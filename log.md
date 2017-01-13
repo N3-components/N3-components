@@ -40,3 +40,7 @@ v1.2.x
 + 修复tree选择bug
 + exports transition
 
+#### v1.2.9
+#### v1.3.0
+
++ datatable bug fix
