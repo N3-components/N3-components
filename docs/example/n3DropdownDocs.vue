@@ -47,6 +47,12 @@
           <td>下拉菜单显示状态<code>.sync</code></td>
         </tr>
         <tr>
+          <td>click-close</td>
+          <td><code>Boolean</code></td>
+          <td></td>
+          <td>是否点击关闭</td>
+        </tr>
+        <tr>
           <td>trigger</td>
           <td><code>String</code> 如:  <code>click</code><code>hover</code></td>
           <td>click</td>

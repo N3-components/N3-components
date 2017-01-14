@@ -2793,7 +2793,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//         :placeholder="placeholder"
 	//         :custom-validate="customValidate"
 	//         :value.sync="displayValue"
-	//         :readonly="true"
+	//         :readonly="readonly"
 	//         :disabled="disabled"
 	//         @click="toggleMenus">
 	//       </n3-input>
@@ -3036,9 +3036,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	  mixins: [_inputMixin2.default],
 	  props: {
-	    readonly: {
-	      type: Boolean
-	    },
 	    value: {
 	      type: [String, Number],
 	      twoway: true
@@ -3195,6 +3192,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    hasFeedback: {
 	      type: Boolean,
 	      default: true
+	    },
+	    readonly: {
+	      type: Boolean,
+	      default: false
 	    },
 	    focused: {
 	      type: Boolean,
@@ -13777,7 +13778,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 167 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-cascader\">\n    <span class=\"{{prefixCls}}-cascader-picker\">\n      <n3-input \n        :width=\"width\"\n        :name=\"name\" \n        :rules=\"rules\" \n        :validate=\"validate\" \n        :has-feedback=\"hasFeedback\"\n        :placeholder=\"placeholder\"\n        :custom-validate=\"customValidate\"\n        :value.sync=\"displayValue\"\n        :readonly=\"true\"\n        :disabled=\"disabled\"\n        @click=\"toggleMenus\">\n      </n3-input>\n    </span>\n    <div class=\"{{prefixCls}}-cascader-menus\" v-show=\"show\" transition=\"fadeDown\">\n      <ul class=\"{{prefixCls}}-cascader-menu\" v-for=\"(index, menu) in menus\">\n        <li :class=\"itemClass(index,option)\" \n          v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n        </li>\n      </ul>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-cascader\">\n    <span class=\"{{prefixCls}}-cascader-picker\">\n      <n3-input \n        :width=\"width\"\n        :name=\"name\" \n        :rules=\"rules\" \n        :validate=\"validate\" \n        :has-feedback=\"hasFeedback\"\n        :placeholder=\"placeholder\"\n        :custom-validate=\"customValidate\"\n        :value.sync=\"displayValue\"\n        :readonly=\"readonly\"\n        :disabled=\"disabled\"\n        @click=\"toggleMenus\">\n      </n3-input>\n    </span>\n    <div class=\"{{prefixCls}}-cascader-menus\" v-show=\"show\" transition=\"fadeDown\">\n      <ul class=\"{{prefixCls}}-cascader-menu\" v-for=\"(index, menu) in menus\">\n        <li :class=\"itemClass(index,option)\" \n          v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n        </li>\n      </ul>\n    </div>\n  </div>";
 
 /***/ },
 /* 168 */
@@ -14205,10 +14206,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    onChange: {
 	      type: Function
-	    },
-	    readonly: {
-	      type: Boolean,
-	      default: false
 	    }
 	  },
 	
@@ -14382,9 +14379,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      type: String
 	    },
 	    disabled: {
-	      type: Boolean
-	    },
-	    readonly: {
 	      type: Boolean
 	    },
 	    placeholder: {
@@ -14566,7 +14560,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//     :has-feedback="hasFeedback"
 	//     :placeholder="placeholder"
 	//     :custom-validate="customValidate"
-	//     :readonly="true"
+	//     :readonly="readonly"
 	//     :disabled="disabled"
 	//     @click="inputClick"
 	//     :value.sync="value">
@@ -14952,7 +14946,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 183 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-datepicker\">\n    <n3-input \n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"true\"\n    :disabled=\"disabled\"\n    @click=\"inputClick\"\n    :value.sync=\"value\">\n    </n3-input>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayDayView\" transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\">\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span \n                        v-for=\"d in dateRange\" :class=\"d.sclass\" \n                        @click=\"daySelect(d.date,d.sclass)\">\n                        {{d.text}}\n                      </span>\n                  </div>\n              </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayMouthView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span   \n                          :class=\"monthClassObj(m)\"\n                          @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayYearView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span \n                      :class=\"yearClassObj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                 \t</span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
+	module.exports = "<div class=\"{{prefixCls}}-datepicker\">\n    <n3-input \n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    @click=\"inputClick\"\n    :value.sync=\"value\">\n    </n3-input>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayDayView\" transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\">\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span \n                        v-for=\"d in dateRange\" :class=\"d.sclass\" \n                        @click=\"daySelect(d.date,d.sclass)\">\n                        {{d.text}}\n                      </span>\n                  </div>\n              </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayMouthView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span   \n                          :class=\"monthClassObj(m)\"\n                          @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayYearView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span \n                      :class=\"yearClassObj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                 \t</span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
 /* 184 */
@@ -15169,7 +15163,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//       :has-feedback="hasFeedback"
 	//       :placeholder="placeholder"
 	//       :custom-validate="customValidate"
-	//       :readonly="true"
+	//       :readonly="readonly"
 	//       :disabled="disabled"
 	//       @click="inputClick"
 	//       :value.sync="value">
@@ -15872,7 +15866,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 193 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-timepicker\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n    <div class=\"{{prefixCls}}-timepicker-popup\" v-show=\"show\" transition=\"fadeDown\">\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n        <n3-slider \n          :value.sync=\"time.hour\" \n          orientation=\"vertical\" \n          :max=\"hourRange[1]\" :min=\"hourRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n        <n3-slider \n          :value.sync=\"time.minute\" \n          orientation=\"vertical\" \n          :max=\"minuteRange[1]\" \n          :min=\"minuteRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n        <n3-slider \n          :value.sync=\"time.second\" \n          orientation=\"vertical\" \n          :max=\"secondRange[1]\" \n          :min=\"secondRange[0]\" \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-timepicker\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n    <div class=\"{{prefixCls}}-timepicker-popup\" v-show=\"show\" transition=\"fadeDown\">\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n        <n3-slider \n          :value.sync=\"time.hour\" \n          orientation=\"vertical\" \n          :max=\"hourRange[1]\" :min=\"hourRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n        <n3-slider \n          :value.sync=\"time.minute\" \n          orientation=\"vertical\" \n          :max=\"minuteRange[1]\" \n          :min=\"minuteRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n        <n3-slider \n          :value.sync=\"time.second\" \n          orientation=\"vertical\" \n          :max=\"secondRange[1]\" \n          :min=\"secondRange[0]\" \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 194 */
@@ -15908,8 +15902,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	
-	var _watch;
-	
 	var _n3Slider = __webpack_require__(186);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
@@ -15931,137 +15923,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _type2 = _interopRequireDefault(_type);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } // <template>
-	//   <div class="{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker" v-el:datetimepicker>
-	//     <n3-input
-	//       :width="width"
-	//       :name="name" 
-	//       :rules="rules" 
-	//       :validate="validate" 
-	//       :has-feedback="hasFeedback"
-	//       :placeholder="placeholder"
-	//       :custom-validate="customValidate"
-	//       :readonly="true"
-	//       :disabled="disabled"
-	//       @click="inputClick"
-	//       :value.sync="value">
-	//     </n3-input>
-	//       <div 
-	//         class="{{prefixCls}}-datepicker-popup" 
-	//         v-show="displayDayView" 
-	//         :style="{width:popWidth}" 
-	//         transition="fadeDown">
-	//           <div class="{{prefixCls}}-datepicker-inner" v-el:datepicker>
-	//               <div class="{{prefixCls}}-datepicker-body">
-	//                   <div class="{{prefixCls}}-datepicker-ctrl">
-	//                       <span 
-	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
-	//                         @click="preNextMonthClick(0)">&lt;</span>
-	//                       <span 
-	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
-	//                         @click="preNextMonthClick(1)">&gt;</span>
-	//                       <p @click="switchMouthView">
-	//                       {{stringifyDayHeader(currDate)}}
-	//                       </p>
-	//                   </div>
-	//                   <div class="{{prefixCls}}-datepicker-weekRange">
-	//                       <span v-for="w in weekRange">{{w}}</span>
-	//                   </div>
-	//                   <div class="{{prefixCls}}-datepicker-dateRange">
-	//                       <span v-for="d in dateRange" 
-	//                       :class="[d.sclass,prefixCls + '-datetimepicker-date-span']" 
-	//                       @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
-	//                   </div>
-	//               </div>
-	//           </div>
-	//           <div class="{{prefixCls}}-timepicker-con">
-	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
-	//               <n3-slider 
-	//                 class="{{prefixCls}}-timepicker-slider"
-	//                 :value.sync="time.hour" 
-	//                 orientation="vertical" 
-	//                 :max="hourRange[1]" 
-	//                 :min="hourRange[0]" >
-	//               </n3-slider>
-	//             </div>
-	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
-	//               <n3-slider
-	//                 class="{{prefixCls}}-timepicker-slider" 
-	//                 :value.sync="time.minute" 
-	//                 orientation="vertical" 
-	//                 :max="minuteRange[1]" 
-	//                 :min="minuteRange[0]" >
-	//               </n3-slider>
-	//             </div>
-	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
-	//               <n3-slider 
-	//                 class="{{prefixCls}}-timepicker-slider"
-	//                 :value.sync="time.second" 
-	//                 orientation="vertical" 
-	//                 :max="secondRange[1]" 
-	//                 :min="secondRange[0]" >
-	//               </n3-slider>
-	//             </div>
-	//           </div>
-	//       </div>
-	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayMouthView">
-	//         <div class="{{prefixCls}}-datepicker-inner">
-	//             <div class="{{prefixCls}}-datepicker-body">
-	//                 <div class="{{prefixCls}}-datepicker-ctrl">
-	//                     <span 
-	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
-	//                       @click="preNextYearClick(0)">&lt;</span>
-	//                     <span 
-	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
-	//                       @click="preNextYearClick(1)">&gt;</span>
-	//                     <p @click="switchDecadeView">
-	//                     {{stringifyYearHeader(currDate)}}
-	//                     </p>
-	//                 </div>
-	//                 <div class="{{prefixCls}}-datepicker-mouthRange">
-	//                 	<template v-for="m in mouthNames">
-	// 	                    <span 
-	//                         :class="monthClassobj(m)"
-	//                         @click="mouthSelect($index)">
-	// 	                      {{m.substr(0,3)}}
-	// 	                    </span>
-	//                     </template>
-	//                 </div>
-	//             </div>
-	//         </div>
-	//       </div>
-	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayYearView">
-	//         <div class="{{prefixCls}}-datepicker-inner">
-	//             <div class="{{prefixCls}}-datepicker-body">
-	//                 <div class="{{prefixCls}}-datepicker-ctrl">
-	//                     <span 
-	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn"
-	//                       @click="preNextDecadeClick(0)">&lt;</span>
-	//                     <span 
-	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
-	//                       @click="preNextDecadeClick(1)">&gt;</span>
-	//                     <p>
-	//                     {{stringifyDecadeHeader(currDate)}}
-	//                     </p>
-	//                 </div>
-	//                 <div class="{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange">
-	//                 	<template v-for="decade in decadeRange">
-	//                 		<span
-	//                       :class="yearClassobj(decade)"
-	// 	                    @click.stop="yearSelect(decade.text)">
-	// 	                      {{decade.text}}
-	// 	                  </span>
-	// 					        </template>
-	//                 </div>
-	//             </div>
-	//         </div>
-	//       </div>
-	// </div>
-	// </template>
-	
-	// <script>
-	
 	
 	exports.default = {
 	  mixins: [_inputMixin2.default],
@@ -16125,10 +15986,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	  },
 	
-	  watch: (_watch = {
-	    displayDayView: function displayDayView() {
-	      this.dispatchHide();
-	    },
+	  watch: {
 	    displayMouthView: function displayMouthView() {
 	      this.dispatchHide();
 	    },
@@ -16137,28 +15995,32 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    currDate: function currDate() {
 	      this.getDateRange();
-	    }
-	  }, _defineProperty(_watch, 'displayDayView', function displayDayView(val) {
-	    var _this = this;
+	    },
+	    displayDayView: function displayDayView(val) {
+	      var _this = this;
 	
-	    if (val) {
-	      this.$nextTick(function () {
-	        var width = _this.$els.datepicker.offsetWidth * 1 + 30;
-	        console.log(_this.$els.datepicker.offsetWidth);
-	        _this.hour ? width += 42 : 0;
-	        _this.minute ? width += 42 : 0;
-	        _this.second ? width += 42 : 0;
-	        _this.popWidth = width + 'px';
-	      });
-	    }
-	  }), _defineProperty(_watch, 'date', function date() {
-	    this.value = this.date + ' ' + this.handTime();
-	  }), _defineProperty(_watch, 'time', {
-	    deep: true,
-	    handler: function handler(val) {
+	      if (val) {
+	        this.$nextTick(function () {
+	          var width = _this.$els.datepicker.offsetWidth * 1 + 30;
+	          _this.hour ? width += 42 : 0;
+	          _this.minute ? width += 42 : 0;
+	          _this.second ? width += 42 : 0;
+	          _this.popWidth = width + 'px';
+	        });
+	      }
+	      this.dispatchHide();
+	    },
+	    date: function date() {
 	      this.value = this.date + ' ' + this.handTime();
+	    },
+	
+	    time: {
+	      deep: true,
+	      handler: function handler(val) {
+	        this.value = this.date + ' ' + this.handTime();
+	      }
 	    }
-	  }), _watch),
+	  },
 	  computed: {
 	    hour: function hour() {
 	      if (this.format.indexOf('hh') > -1) {
@@ -16496,12 +16358,141 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	};
 	// </script>
+	// <template>
+	//   <div class="{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker" v-el:datetimepicker>
+	//     <n3-input
+	//       :width="width"
+	//       :name="name" 
+	//       :rules="rules" 
+	//       :validate="validate" 
+	//       :has-feedback="hasFeedback"
+	//       :placeholder="placeholder"
+	//       :custom-validate="customValidate"
+	//       :readonly="readonly"
+	//       :disabled="disabled"
+	//       @click="inputClick"
+	//       :value.sync="value">
+	//     </n3-input>
+	//       <div 
+	//         class="{{prefixCls}}-datepicker-popup" 
+	//         v-show="displayDayView" 
+	//         :style="{width:popWidth}" 
+	//         transition="fadeDown">
+	//           <div class="{{prefixCls}}-datepicker-inner" v-el:datepicker>
+	//               <div class="{{prefixCls}}-datepicker-body">
+	//                   <div class="{{prefixCls}}-datepicker-ctrl">
+	//                       <span 
+	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	//                         @click="preNextMonthClick(0)">&lt;</span>
+	//                       <span 
+	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	//                         @click="preNextMonthClick(1)">&gt;</span>
+	//                       <p @click="switchMouthView">
+	//                       {{stringifyDayHeader(currDate)}}
+	//                       </p>
+	//                   </div>
+	//                   <div class="{{prefixCls}}-datepicker-weekRange">
+	//                       <span v-for="w in weekRange">{{w}}</span>
+	//                   </div>
+	//                   <div class="{{prefixCls}}-datepicker-dateRange">
+	//                       <span v-for="d in dateRange" 
+	//                       :class="[d.sclass,prefixCls + '-datetimepicker-date-span']" 
+	//                       @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
+	//                   </div>
+	//               </div>
+	//           </div>
+	//           <div class="{{prefixCls}}-timepicker-con">
+	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
+	//               <n3-slider 
+	//                 class="{{prefixCls}}-timepicker-slider"
+	//                 :value.sync="time.hour" 
+	//                 orientation="vertical" 
+	//                 :max="hourRange[1]" 
+	//                 :min="hourRange[0]" >
+	//               </n3-slider>
+	//             </div>
+	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
+	//               <n3-slider
+	//                 class="{{prefixCls}}-timepicker-slider" 
+	//                 :value.sync="time.minute" 
+	//                 orientation="vertical" 
+	//                 :max="minuteRange[1]" 
+	//                 :min="minuteRange[0]" >
+	//               </n3-slider>
+	//             </div>
+	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
+	//               <n3-slider 
+	//                 class="{{prefixCls}}-timepicker-slider"
+	//                 :value.sync="time.second" 
+	//                 orientation="vertical" 
+	//                 :max="secondRange[1]" 
+	//                 :min="secondRange[0]" >
+	//               </n3-slider>
+	//             </div>
+	//           </div>
+	//       </div>
+	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayMouthView">
+	//         <div class="{{prefixCls}}-datepicker-inner">
+	//             <div class="{{prefixCls}}-datepicker-body">
+	//                 <div class="{{prefixCls}}-datepicker-ctrl">
+	//                     <span 
+	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	//                       @click="preNextYearClick(0)">&lt;</span>
+	//                     <span 
+	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	//                       @click="preNextYearClick(1)">&gt;</span>
+	//                     <p @click="switchDecadeView">
+	//                     {{stringifyYearHeader(currDate)}}
+	//                     </p>
+	//                 </div>
+	//                 <div class="{{prefixCls}}-datepicker-mouthRange">
+	//                 	<template v-for="m in mouthNames">
+	// 	                    <span 
+	//                         :class="monthClassobj(m)"
+	//                         @click="mouthSelect($index)">
+	// 	                      {{m.substr(0,3)}}
+	// 	                    </span>
+	//                     </template>
+	//                 </div>
+	//             </div>
+	//         </div>
+	//       </div>
+	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayYearView">
+	//         <div class="{{prefixCls}}-datepicker-inner">
+	//             <div class="{{prefixCls}}-datepicker-body">
+	//                 <div class="{{prefixCls}}-datepicker-ctrl">
+	//                     <span 
+	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn"
+	//                       @click="preNextDecadeClick(0)">&lt;</span>
+	//                     <span 
+	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	//                       @click="preNextDecadeClick(1)">&gt;</span>
+	//                     <p>
+	//                     {{stringifyDecadeHeader(currDate)}}
+	//                     </p>
+	//                 </div>
+	//                 <div class="{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange">
+	//                 	<template v-for="decade in decadeRange">
+	//                 		<span
+	//                       :class="yearClassobj(decade)"
+	// 	                    @click.stop="yearSelect(decade.text)">
+	// 	                      {{decade.text}}
+	// 	                  </span>
+	// 					        </template>
+	//                 </div>
+	//             </div>
+	//         </div>
+	//       </div>
+	// </div>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 196 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker\" v-el:datetimepicker>\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n      <div \n        class=\"{{prefixCls}}-datepicker-popup\" \n        v-show=\"displayDayView\" \n        :style=\"{width:popWidth}\" \n        transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\" v-el:datepicker>\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span v-for=\"d in dateRange\" \n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                  </div>\n              </div>\n          </div>\n          <div class=\"{{prefixCls}}-timepicker-con\">\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n              <n3-slider \n                class=\"{{prefixCls}}-timepicker-slider\"\n                :value.sync=\"time.hour\" \n                orientation=\"vertical\" \n                :max=\"hourRange[1]\" \n                :min=\"hourRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n              <n3-slider\n                class=\"{{prefixCls}}-timepicker-slider\" \n                :value.sync=\"time.minute\" \n                orientation=\"vertical\" \n                :max=\"minuteRange[1]\" \n                :min=\"minuteRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n              <n3-slider \n                class=\"{{prefixCls}}-timepicker-slider\"\n                :value.sync=\"time.second\" \n                orientation=\"vertical\" \n                :max=\"secondRange[1]\" \n                :min=\"secondRange[0]\" >\n              </n3-slider>\n            </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayMouthView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayYearView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
+	module.exports = "<div class=\"{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker\" v-el:datetimepicker>\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n      <div \n        class=\"{{prefixCls}}-datepicker-popup\" \n        v-show=\"displayDayView\" \n        :style=\"{width:popWidth}\" \n        transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\" v-el:datepicker>\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span v-for=\"d in dateRange\" \n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                  </div>\n              </div>\n          </div>\n          <div class=\"{{prefixCls}}-timepicker-con\">\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n              <n3-slider \n                class=\"{{prefixCls}}-timepicker-slider\"\n                :value.sync=\"time.hour\" \n                orientation=\"vertical\" \n                :max=\"hourRange[1]\" \n                :min=\"hourRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n              <n3-slider\n                class=\"{{prefixCls}}-timepicker-slider\" \n                :value.sync=\"time.minute\" \n                orientation=\"vertical\" \n                :max=\"minuteRange[1]\" \n                :min=\"minuteRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n              <n3-slider \n                class=\"{{prefixCls}}-timepicker-slider\"\n                :value.sync=\"time.second\" \n                orientation=\"vertical\" \n                :max=\"secondRange[1]\" \n                :min=\"secondRange[0]\" >\n              </n3-slider>\n            </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayMouthView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayYearView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
 /* 197 */
@@ -17936,10 +17927,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	  mixins: [_valMixin2.default],
 	  props: {
-	    readonly: {
-	      type: Boolean,
-	      default: false
-	    },
 	    disabled: {
 	      type: Boolean,
 	      default: false
@@ -19547,9 +19534,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  mixins: [_inputMixin2.default],
 	  props: {
-	    readonly: {
-	      type: Boolean
-	    },
 	    query: {
 	      type: String,
 	      twoway: true,
@@ -21003,6 +20987,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//         type="primary">
 	//         <n3-icon type="refresh"></n3-icon>
 	//       </n3-button>
+	//       <slot ></slot>
 	//     <n3-input
 	//       class="pull-right" 
 	//       placeholder="搜索"
@@ -21089,7 +21074,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 280 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-data-table\">\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\n    <n3-select \n      class='pull-left'\n      style=\"margin-right:10px;\"\n      :multiple=\"true\"\n      :showselected=\"false\"\n      v-if=\"selectCol\"\n      placeholder = \"显示的列\"\n      :options=\"selectOptions\" \n      :value.sync=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\n      <template v-for=\"item in filterArr\">\n        <n3-select \n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n          :search = \"item.search === undefined?true:!!item.search\"\n          :extra = \"item.extra === undefined?true:!!item.extra\"\n          :showselected=\"false\"\n          :placeholder = \"item.title\"\n          :options=\"item.options\" \n          :value.sync=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\" \n        style=\"margin-left:10px;\"\n        @click=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      :value.sync=\"query\"\n      @keydown.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\n                  <input v-if=\"list && list.length\" \n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                    @change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in showColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                    <span>{{col.title}} </span> \n                    <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\n                   <input type=\"checkbox\" \n                    v-model=\"checkedValues\"  \n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in showColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\n                    </template>\n                    <template v-else>\n                      {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div class='{{prefixCls}}-data-table-bar {{prefixCls}}-data-table-page' v-if=\"page\" >\n    <n3-page\n      v-if=\"page\" \n      :total=\"pagination.total\" \n      :current.sync=\"pagination.current\" \n      :pagesize.sync=\"pagination.pagesize\" \n      :on-change=\"pageChange\"\n      :show-sizer=\"true\"\n      :show-total=\"true\"\n      :pagesize-opts=\"pagination.pagesizeOpts\">\n    </n3-page>\n    </div>\n  </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-data-table\">\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\n    <n3-select \n      class='pull-left'\n      style=\"margin-right:10px;\"\n      :multiple=\"true\"\n      :showselected=\"false\"\n      v-if=\"selectCol\"\n      placeholder = \"显示的列\"\n      :options=\"selectOptions\" \n      :value.sync=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\n      <template v-for=\"item in filterArr\">\n        <n3-select \n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n          :search = \"item.search === undefined?true:!!item.search\"\n          :extra = \"item.extra === undefined?true:!!item.extra\"\n          :showselected=\"false\"\n          :placeholder = \"item.title\"\n          :options=\"item.options\" \n          :value.sync=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\" \n        style=\"margin-left:10px;\"\n        @click=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n      <slot ></slot>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      :value.sync=\"query\"\n      @keydown.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\n                  <input v-if=\"list && list.length\" \n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                    @change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in showColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                    <span>{{col.title}} </span> \n                    <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\n                   <input type=\"checkbox\" \n                    v-model=\"checkedValues\"  \n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in showColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\n                    </template>\n                    <template v-else>\n                      {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div class='{{prefixCls}}-data-table-bar {{prefixCls}}-data-table-page' v-if=\"page\" >\n    <n3-page\n      v-if=\"page\" \n      :total=\"pagination.total\" \n      :current.sync=\"pagination.current\" \n      :pagesize.sync=\"pagination.pagesize\" \n      :on-change=\"pageChange\"\n      :show-sizer=\"true\"\n      :show-total=\"true\"\n      :pagesize-opts=\"pagination.pagesizeOpts\">\n    </n3-page>\n    </div>\n  </div>\n  </div>";
 
 /***/ },
 /* 281 */
@@ -21945,7 +21930,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    },
 	    parent: {
-	      type: Number,
+	      type: [Number, String],
 	      default: undefined
 	    },
 	    treeIcon: {
@@ -22002,10 +21987,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @param {Mixed} value Value selected.
 	     */
 	    clickHandler: function clickHandler(index, value) {
-	      // Select Node
-	      this.select(index, value);
-	
 	      var node = this.data[index];
+	
+	      // Select Node
+	      this.select(index, value, node);
+	
 	      // lazyLoadFlag：节点未打开，节点无子节点
 	      var lazyLoadFlag = !node.isOpened && node.children && node.children.length === 0 && _type2.default.isFunction(this.loadData);
 	      if (lazyLoadFlag) {
@@ -22044,11 +22030,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @param {Number} index Tree index selected.
 	     * @param {Mixed} value Value selected.
 	     */
-	    select: function select(index, value) {
+	    select: function select(index, value, node) {
 	      this.selectedKey = value;
 	      if (_type2.default.isFunction(this.onSelect)) {
 	        try {
-	          this.onSelect(this.selectedKey);
+	          this.onSelect(this.selectedKey, node);
 	        } catch (error) {
 	          console.error(error);
 	        }
@@ -22602,6 +22588,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return [];
 	      }
 	    },
+	    params: {
+	      type: Object
+	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -22696,6 +22685,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	            (function () {
 	              data = new window.FormData();
 	              data.append(self.name, file, file.name);
+	
+	              if (self.params) {
+	                for (var name in self.params) {
+	                  data.append(name, self.params[name]);
+	                }
+	              }
+	
 	              // 跨域时 添加身份凭证信息
 	              var xhr = new window.XMLHttpRequest();
 	              xhr.withCredentials = true;
@@ -22734,6 +22730,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	      var i = 0;
 	      var len = this.uploadList.length;
+	      var self = this;
 	      if (this.testSameOrigin(this.url)) {
 	        var _loop = function _loop() {
 	          var iframeName = 'uploadiframe-' + i + '-' + new Date().getTime();
@@ -22753,6 +22750,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	          document.body.appendChild(form);
 	          form.appendChild(iframe);
 	          form.appendChild(input);
+	
+	          if (self.params) {
+	            for (var name in self.params) {
+	              var _input = document.createElement('input');
+	              _input.setAttribute('type', 'text');
+	              _input.setAttribute('name', name);
+	              _input.setAttribute('value', self.params[name]);
+	            }
+	          }
 	
 	          iframe.addEventListener('load', function () {
 	            _this2.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));

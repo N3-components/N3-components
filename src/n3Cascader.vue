@@ -10,7 +10,7 @@
         :placeholder="placeholder"
         :custom-validate="customValidate"
         :value.sync="displayValue"
-        :readonly="true"
+        :readonly="readonly"
         :disabled="disabled"
         @click="toggleMenus">
       </n3-input>

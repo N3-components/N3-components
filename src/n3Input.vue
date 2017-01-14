@@ -48,9 +48,6 @@ import { focusModel } from 'vue-focus'
 export default {
   mixins: [inputMixin],
   props: {
-    readonly: {
-      type: Boolean
-    },
     value: {
       type: [String, Number],
       twoway: true

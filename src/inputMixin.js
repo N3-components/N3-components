@@ -35,6 +35,10 @@ export default {
       type: Boolean,
       default: true
     },
+    readonly: {
+      type: Boolean,
+      default: false
+    },
     focused: {
       type: Boolean,
       twoway: true,

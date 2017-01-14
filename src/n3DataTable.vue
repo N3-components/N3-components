@@ -44,6 +44,7 @@
         type="primary">
         <n3-icon type="refresh"></n3-icon>
       </n3-button>
+      <slot ></slot>
     <n3-input
       class="pull-right" 
       placeholder="搜索"

@@ -44,9 +44,6 @@ export default {
   },
   mixins: [inputMixin],
   props: {
-    readonly: {
-      type: Boolean
-    },
     query: {
       type: String,
       twoway: true,

@@ -150,6 +150,9 @@
           return []
         }
       },
+      params: {
+        type: Object
+      },
       prefixCls: {
         type: String,
         default: 'n3'
@@ -239,6 +242,13 @@
             if (file.type.match(self.accept)) {
               data = new window.FormData()
               data.append(self.name, file, file.name)
+
+              if (self.params) {
+                for (let name in self.params) {
+                  data.append(name, self.params[name])
+                }
+              }
+
               // 跨域时 添加身份凭证信息
               let xhr = new window.XMLHttpRequest()
               xhr.withCredentials = true
@@ -275,6 +285,7 @@
       iframeUpload () {
         let i = 0
         let len = this.uploadList.length
+        let self = this
         if (this.testSameOrigin(this.url)) {
           for (i = 0; i < len; i++) {
             let iframeName = 'uploadiframe-' + i + '-' + new Date().getTime()
@@ -294,6 +305,15 @@
             document.body.appendChild(form)
             form.appendChild(iframe)
             form.appendChild(input)
+
+            if (self.params) {
+              for (let name in self.params) {
+                let input = document.createElement('input')
+                input.setAttribute('type', 'text')
+                input.setAttribute('name', name)
+                input.setAttribute('value', self.params[name])
+              }
+            }
 
             iframe.addEventListener('load', () => {
               this.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'))

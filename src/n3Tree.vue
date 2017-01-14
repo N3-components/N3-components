@@ -144,10 +144,11 @@ export default {
      * @param {Mixed} value Value selected.
      */
     clickHandler (index, value) {
-      // Select Node
-      this.select(index, value)
-
       let node = this.data[index]
+
+      // Select Node
+      this.select(index, value, node)
+
       // lazyLoadFlag：节点未打开，节点无子节点
       let lazyLoadFlag = !node.isOpened && node.children && node.children.length === 0 && type.isFunction(this.loadData)
       if (lazyLoadFlag) {
@@ -182,11 +183,11 @@ export default {
      * @param {Number} index Tree index selected.
      * @param {Mixed} value Value selected.
      */
-    select (index, value) {
+    select (index, value, node) {
       this.selectedKey = value
       if (type.isFunction(this.onSelect)) {
         try {
-          this.onSelect(this.selectedKey)
+          this.onSelect(this.selectedKey, node)
         } catch (error) {
           console.error(error)
         }

@@ -8,7 +8,7 @@
     :has-feedback="hasFeedback"
     :placeholder="placeholder"
     :custom-validate="customValidate"
-    :readonly="true"
+    :readonly="readonly"
     :disabled="disabled"
     @click="inputClick"
     :value.sync="value">

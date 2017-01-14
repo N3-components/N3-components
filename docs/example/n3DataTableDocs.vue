@@ -8,8 +8,12 @@
         :selection="selection"
         :source="source" 
         :columns="columns" 
-        :refresh="refresh"
-      ></n3-data-table>
+        :refresh="refresh">
+
+          <n3-button >自定义功能按钮</n3-button>
+          <n3-button >自定义功能按钮</n3-button>
+      
+      </n3-data-table>
       <hr>
     </div>
 

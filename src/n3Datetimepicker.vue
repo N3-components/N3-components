@@ -8,7 +8,7 @@
       :has-feedback="hasFeedback"
       :placeholder="placeholder"
       :custom-validate="customValidate"
-      :readonly="true"
+      :readonly="readonly"
       :disabled="disabled"
       @click="inputClick"
       :value.sync="value">
@@ -200,9 +200,6 @@ export default {
     }
   },
   watch: {
-    displayDayView () {
-      this.dispatchHide()
-    },
     displayMouthView () {
       this.dispatchHide()
     },
@@ -214,15 +211,15 @@ export default {
     },
     displayDayView (val) {
       if (val) {
-        this.$nextTick(()=>{
+        this.$nextTick(() => {
           let width = this.$els.datepicker.offsetWidth * 1 + 30
-          console.log(this.$els.datepicker.offsetWidth)
           this.hour ? width += 42 : 0
           this.minute ? width += 42 : 0
           this.second ? width += 42 : 0
           this.popWidth = width + 'px'
         })
       }
+      this.dispatchHide()
     },
     date () {
       this.value = this.date + ' ' + this.handTime()

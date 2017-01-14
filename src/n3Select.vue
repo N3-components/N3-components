@@ -76,10 +76,6 @@ import type from './utils/type'
 export default {
   mixins: [valMixin],
   props: {
-    readonly: {
-      type: Boolean,
-      default: false
-    },
     disabled: {
       type: Boolean,
       default: false

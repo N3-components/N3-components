@@ -44,3 +44,11 @@ v1.2.x
 #### v1.3.0
 
 + datatable bug fix
+
+#### v1.3.1
+
++ 文件上传文档完善，添加参数params
++ 输入相关组件的readonly参数开放 
++ 下拉框组件添加是否点击关闭参数
++ 树形组件on-select回调参数带上选中的value，以及选中的node
++ datatable添加自定义按钮占位

@@ -34,9 +34,6 @@
       disabled: {
         type: Boolean
       },
-      readonly: {
-        type: Boolean
-      },
       placeholder: {
         type: String,
         default: ''

@@ -13214,6 +13214,12 @@
 	//           <td>下拉菜单显示状态<code>.sync</code></td>
 	//         </tr>
 	//         <tr>
+	//           <td>click-close</td>
+	//           <td><code>Boolean</code></td>
+	//           <td></td>
+	//           <td>是否点击关闭</td>
+	//         </tr>
+	//         <tr>
 	//           <td>trigger</td>
 	//           <td><code>String</code> 如:  <code>click</code><code>hover</code></td>
 	//           <td>click</td>
@@ -13237,7 +13243,7 @@
 /* 540 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"下拉框\"  >\n    <h1 class=\"page-header\"><a href=\"#下拉框\" class=\"anchor\">下拉框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-dropdown :show.sync=\"show\">\n        <div slot=\"trigger\">\n          <n3-button>\n            点击\n            <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n          </n3-button>\n        </div>\n        <li><a href=\"#\">Action</a></li>\n        <li><a href=\"#\">Another action</a></li>\n        <li><a href=\"#\">Something else here</a></li>\n      </n3-dropdown>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-dropdown :show.sync=\"show\">\n  <div slot=\"trigger\">\n    <n3-button>\n      点击\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n    </n3-button>\n  </div>\n  <li><a href=\"#\">Action</a></li>\n  <li><a href=\"#\">Another action</a></li>\n  <li><a href=\"#\">Something else here</a></li>\n</n3-dropdown>\n      </script></code></pre>\n  </div>\n\n  <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>下拉菜单显示状态<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>trigger</td>\n          <td><code>String</code> 如:  <code>click</code><code>hover</code></td>\n          <td>click</td>\n          <td>触发方式</td>\n        </tr>\n      </tbody>\n    </table>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"下拉框\"  >\n    <h1 class=\"page-header\"><a href=\"#下拉框\" class=\"anchor\">下拉框</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <n3-dropdown :show.sync=\"show\">\n        <div slot=\"trigger\">\n          <n3-button>\n            点击\n            <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n          </n3-button>\n        </div>\n        <li><a href=\"#\">Action</a></li>\n        <li><a href=\"#\">Another action</a></li>\n        <li><a href=\"#\">Something else here</a></li>\n      </n3-dropdown>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-dropdown :show.sync=\"show\">\n  <div slot=\"trigger\">\n    <n3-button>\n      点击\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n    </n3-button>\n  </div>\n  <li><a href=\"#\">Action</a></li>\n  <li><a href=\"#\">Another action</a></li>\n  <li><a href=\"#\">Something else here</a></li>\n</n3-dropdown>\n      </script></code></pre>\n  </div>\n\n  <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>show</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>下拉菜单显示状态<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>click-close</td>\n          <td><code>Boolean</code></td>\n          <td></td>\n          <td>是否点击关闭</td>\n        </tr>\n        <tr>\n          <td>trigger</td>\n          <td><code>String</code> 如:  <code>click</code><code>hover</code></td>\n          <td>click</td>\n          <td>触发方式</td>\n        </tr>\n      </tbody>\n    </table>";
 
 /***/ },
 /* 541 */
@@ -16460,8 +16466,12 @@
 	//         :selection="selection"
 	//         :source="source" 
 	//         :columns="columns" 
-	//         :refresh="refresh"
-	//       ></n3-data-table>
+	//         :refresh="refresh">
+	
+	//           <n3-button >自定义功能按钮</n3-button>
+	//           <n3-button >自定义功能按钮</n3-button>
+	
+	//       </n3-data-table>
 	//       <hr>
 	//     </div>
 	
@@ -16938,7 +16948,7 @@
 /* 599 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"数据表格\"  >\n    <h1 class=\"page-header\"><a href=\"#数据表格\" class=\"anchor\">数据表格</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Table</h4>\n\n      <n3-data-table\n        :selection=\"selection\"\n        :source=\"source\" \n        :columns=\"columns\" \n        :refresh=\"refresh\"\n      ></n3-data-table>\n      <hr>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-data-table  \nkey=\"key\"\n:selection=\"selection\"\n:source=\"source\" \n:columns=\"columns\" \n:refresh=\"refresh\"\n></n3-data-table>\n    </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n  el:'body',\n  data:{\n  selection:{\n    checkRows:[],\n    onSelect(a,b,c){},\n    onSelectAll(){},\n    getCheckboxProps(record){\n      if(record.key == 2){\n        return {\n          disabled:true\n        }\n      }else{\n        return {\n          disabled:false\n        }\n      }\n    }\n  },\n  columns: [{\n    title: '姓名',\n    dataIndex: 'name',\n    sort:true,\n    width:'100px'\n  }, {\n    title: '年龄',\n    dataIndex: 'age',\n    sort:true,\n    sortMethod:function(x,y){return x.age - y.age}, //自定义排序函数，会使sortType失效\n    sortType:'DESC',//排序方式 \n    render: (text, record) => {\n      return `<a href=\"javascript:;\">${text}</a>`\n    }\n  }, {\n    title: '部门',\n    dataIndex: 'department'\n  }, {\n    title: '操作',\n    dataIndex: '',\n    render: (text, record, index) => {\n        return `<span class=\"item\">\n                <a href=\"javascript:;\" @click=\"del('${record.key}','${index}')\">删除</a>\n              </span>`\n    }\n  }],\n  source: [{\n    key: '1',\n    name: '小白',\n    age: 25,\n    department: '技术1'\n  }, {\n    key: '2',\n    name: '小黑',\n    age: 33,\n    department: '技术2'\n  }, {\n    key: '3',\n    name: '小红',\n    age: 12,\n    department: '技术3'\n  },{\n    key: '4',\n    name: 'v白',\n    age: 25,\n    department: '技术1'\n  }, {\n    key: '5',\n    name: 'l黑',\n    age: 33,\n    department: '技术2'\n  }, {\n    key: '6',\n    name: 'i红',\n    age: 122,\n    department: '技术3'\n  },{\n    key: '7',\n    name: 'y白',\n    age: 2,\n    department: '技术1'\n  }, {\n    key: '8',\n    name: 'b黑',\n    age: 332,\n    department: '技术2'\n  }, {\n    key: '9',\n    name: 't红',\n    age: 124,\n    department: '技术3'\n  },{\n    key: '10',\n    name: 'f白',\n    age: 253,\n    department: '技术1'\n  }, {\n    key: '11',\n    name: 'a黑',\n    age: 31,\n    department: '技术2'\n  }, {\n    key: '12',\n    name: 'd红',\n    age: 31,\n    department: '技术3'\n  }]\n  },\n  method:{\n    del(key){\n      for(var i in this.source){\n        if(key == this.source[i]['key']){\n            this.source.splice(i,1);\n        }\n      }\n    }\n  }\n})\n  </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>merge-rule</td>\n          <td>Object</td>\n          <td></td>\n          <td><pre><code class=\"language-javascript\">{\n  name:{\n    '小白': {rowspan: 2},\n    'v白': {rowspan: 0}\n  }\n}</code></pre>\n          </td>\n        </tr>\n         <tr>\n          <td>columns</td>\n          <td>Array</td>\n          <td></td>\n          <td>头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等</td>\n        </tr>\n         <tr>\n          <td>selection</td>\n          <td>Object</td>\n          <td></td>\n          <td>\n<code style=\"color:red\">使用getCheckboxProps来初始化状态</code>\n<pre><code class=\"language-javascript\">\n{\n  checkRows:[],\n  onSelect (record, checked, checkRows) {},\n  onSelectAll (checked, checkRows, changeRows) {},\n  getCheckboxProps(record){\n    if(record.key == 2){\n      return {\n        checked: true,\n        disabled:true\n      }\n    }else{\n      return {\n        disabled:false  \n      }\n    }\n  }\n}</code></pre></td>\n        </tr>\n        <tr>\n          <td>sort-column</td>\n          <td>Object</td>\n          <td></td>\n          <td>默认全局排序字段</td>\n        </tr>\n        <tr>\n          <td>source</td>\n          <td>Array</td>\n          <td></td>\n          <td>表格数组</td>\n        </tr>\n        <tr>\n          <td>page</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否分页</td>\n        </tr>\n        <tr>\n          <td>search</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持搜索</td>\n        </tr>\n        <tr>\n          <td>filter</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器</td>\n        </tr>\n        <tr>\n          <td>filter-list</td>\n          <td>Array</td>\n          <td></td>\n          <td>自定义过滤器如:\n          <pre><code class=\"language-javascript\">[{\n  title:'姓名',\n  dataIndex: 'name',\n  options:[{value:\"v白\",label:\"v白\"},{value:\"t红\",label:\"t红\"}],\n  value:[],\n  // multiple,search,extra\n}]</code></pre>\n          </td>\n        </tr>\n        <tr>\n          <td>select-col</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持选择显示列</td>\n        </tr>\n        <tr>\n          <td>pagination</td>\n          <td>Object</td>\n          <td></td>\n          <td>设置分页，<code>.sync</code>例如\n          <pre><code class=\"language-javascript\">{\n  current:5,\n  total:10,\n  pagesize:10,\n  pagesizeOpts:[10,20,30,40]\n}</code></pre>\n          </td>\n        </tr>\n        <tr>\n          <td>loading</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td>设置表格的加载中状态</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td>Function</td>\n          <td></td>\n          <td>当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作，例如分页:\n          <pre><code class=\"language-javascript\">\nfunction(pagination,query,sort,filter){\n  var data = {\n    start:(pagination.current - 1) * pagination.pagesize,\n    limit:pagination.pagesize\n  },\n  self = this;\n\n  //根据需要添加其他参数\n  this.loading = true\n  $.ajax({\n    url:'',\n    data:data,\n    success:function(result){\n        self.loading = false\n        self.source = result.list\n        self.pagination.total = result.total\n    }\n  })\n}\n          </code></pre>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"数据表格\"  >\n    <h1 class=\"page-header\"><a href=\"#数据表格\" class=\"anchor\">数据表格</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>Table</h4>\n\n      <n3-data-table\n        :selection=\"selection\"\n        :source=\"source\" \n        :columns=\"columns\" \n        :refresh=\"refresh\">\n\n          <n3-button >自定义功能按钮</n3-button>\n          <n3-button >自定义功能按钮</n3-button>\n      \n      </n3-data-table>\n      <hr>\n    </div>\n\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-data-table  \nkey=\"key\"\n:selection=\"selection\"\n:source=\"source\" \n:columns=\"columns\" \n:refresh=\"refresh\"\n></n3-data-table>\n    </script></code></pre>\n    <pre><code class=\"language-javascript\"><script type=\"language-javascript\">\nnew Vue({\n  el:'body',\n  data:{\n  selection:{\n    checkRows:[],\n    onSelect(a,b,c){},\n    onSelectAll(){},\n    getCheckboxProps(record){\n      if(record.key == 2){\n        return {\n          disabled:true\n        }\n      }else{\n        return {\n          disabled:false\n        }\n      }\n    }\n  },\n  columns: [{\n    title: '姓名',\n    dataIndex: 'name',\n    sort:true,\n    width:'100px'\n  }, {\n    title: '年龄',\n    dataIndex: 'age',\n    sort:true,\n    sortMethod:function(x,y){return x.age - y.age}, //自定义排序函数，会使sortType失效\n    sortType:'DESC',//排序方式 \n    render: (text, record) => {\n      return `<a href=\"javascript:;\">${text}</a>`\n    }\n  }, {\n    title: '部门',\n    dataIndex: 'department'\n  }, {\n    title: '操作',\n    dataIndex: '',\n    render: (text, record, index) => {\n        return `<span class=\"item\">\n                <a href=\"javascript:;\" @click=\"del('${record.key}','${index}')\">删除</a>\n              </span>`\n    }\n  }],\n  source: [{\n    key: '1',\n    name: '小白',\n    age: 25,\n    department: '技术1'\n  }, {\n    key: '2',\n    name: '小黑',\n    age: 33,\n    department: '技术2'\n  }, {\n    key: '3',\n    name: '小红',\n    age: 12,\n    department: '技术3'\n  },{\n    key: '4',\n    name: 'v白',\n    age: 25,\n    department: '技术1'\n  }, {\n    key: '5',\n    name: 'l黑',\n    age: 33,\n    department: '技术2'\n  }, {\n    key: '6',\n    name: 'i红',\n    age: 122,\n    department: '技术3'\n  },{\n    key: '7',\n    name: 'y白',\n    age: 2,\n    department: '技术1'\n  }, {\n    key: '8',\n    name: 'b黑',\n    age: 332,\n    department: '技术2'\n  }, {\n    key: '9',\n    name: 't红',\n    age: 124,\n    department: '技术3'\n  },{\n    key: '10',\n    name: 'f白',\n    age: 253,\n    department: '技术1'\n  }, {\n    key: '11',\n    name: 'a黑',\n    age: 31,\n    department: '技术2'\n  }, {\n    key: '12',\n    name: 'd红',\n    age: 31,\n    department: '技术3'\n  }]\n  },\n  method:{\n    del(key){\n      for(var i in this.source){\n        if(key == this.source[i]['key']){\n            this.source.splice(i,1);\n        }\n      }\n    }\n  }\n})\n  </script></code></pre>\n\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>merge-rule</td>\n          <td>Object</td>\n          <td></td>\n          <td><pre><code class=\"language-javascript\">{\n  name:{\n    '小白': {rowspan: 2},\n    'v白': {rowspan: 0}\n  }\n}</code></pre>\n          </td>\n        </tr>\n         <tr>\n          <td>columns</td>\n          <td>Array</td>\n          <td></td>\n          <td>头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等</td>\n        </tr>\n         <tr>\n          <td>selection</td>\n          <td>Object</td>\n          <td></td>\n          <td>\n<code style=\"color:red\">使用getCheckboxProps来初始化状态</code>\n<pre><code class=\"language-javascript\">\n{\n  checkRows:[],\n  onSelect (record, checked, checkRows) {},\n  onSelectAll (checked, checkRows, changeRows) {},\n  getCheckboxProps(record){\n    if(record.key == 2){\n      return {\n        checked: true,\n        disabled:true\n      }\n    }else{\n      return {\n        disabled:false  \n      }\n    }\n  }\n}</code></pre></td>\n        </tr>\n        <tr>\n          <td>sort-column</td>\n          <td>Object</td>\n          <td></td>\n          <td>默认全局排序字段</td>\n        </tr>\n        <tr>\n          <td>source</td>\n          <td>Array</td>\n          <td></td>\n          <td>表格数组</td>\n        </tr>\n        <tr>\n          <td>page</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否分页</td>\n        </tr>\n        <tr>\n          <td>search</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持搜索</td>\n        </tr>\n        <tr>\n          <td>filter</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器</td>\n        </tr>\n        <tr>\n          <td>filter-list</td>\n          <td>Array</td>\n          <td></td>\n          <td>自定义过滤器如:\n          <pre><code class=\"language-javascript\">[{\n  title:'姓名',\n  dataIndex: 'name',\n  options:[{value:\"v白\",label:\"v白\"},{value:\"t红\",label:\"t红\"}],\n  value:[],\n  // multiple,search,extra\n}]</code></pre>\n          </td>\n        </tr>\n        <tr>\n          <td>select-col</td>\n          <td>Boolean</td>\n          <td>true</td>\n          <td>是否支持选择显示列</td>\n        </tr>\n        <tr>\n          <td>pagination</td>\n          <td>Object</td>\n          <td></td>\n          <td>设置分页，<code>.sync</code>例如\n          <pre><code class=\"language-javascript\">{\n  current:5,\n  total:10,\n  pagesize:10,\n  pagesizeOpts:[10,20,30,40]\n}</code></pre>\n          </td>\n        </tr>\n        <tr>\n          <td>loading</td>\n          <td>Boolean</td>\n          <td>false</td>\n          <td>设置表格的加载中状态</td>\n        </tr>\n        <tr>\n          <td>on-change</td>\n          <td>Function</td>\n          <td></td>\n          <td>当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作，例如分页:\n          <pre><code class=\"language-javascript\">\nfunction(pagination,query,sort,filter){\n  var data = {\n    start:(pagination.current - 1) * pagination.pagesize,\n    limit:pagination.pagesize\n  },\n  self = this;\n\n  //根据需要添加其他参数\n  this.loading = true\n  $.ajax({\n    url:'',\n    data:data,\n    success:function(result){\n        self.loading = false\n        self.source = result.list\n        self.pagination.total = result.total\n    }\n  })\n}\n          </code></pre>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 600 */
@@ -17628,15 +17638,17 @@
 	//     <h1 class="page-header"><a href="#文件上传" class="anchor">文件上传</a><span class="author"> </span></h1>
 	//     <div class="bs-example">
 	//       <h4>点击</h4>
-	//       <n3-uploader url="" ></n3-uploader>
+	//       <n3-uploader url="/" :show-list="true" ></n3-uploader>
 	//       <hr>
 	//        <h4>拖拽</h4>
 	//       <n3-uploader type="drag" ></n3-uploader>
 	//     </div>
 	//     <pre><code class="language-markup"><script type="language-mark-up">
+	
 	//        <n3-uploader url="/upload"></n3-uploader>
 	
 	//        <n3-uploader url="/upload" type="drag"></n3-uploader>
+	
 	//     </script></code></pre>
 	//   <h2>参数</h2>
 	//   <table class="table table-bordered">
@@ -17698,6 +17710,12 @@
 	//         <td><code>Array</code></td>
 	//         <td></td>
 	//         <td>上传文件列表 <code>.sync</code></td>
+	//       </tr>
+	//       <tr>
+	//         <td>params</td>
+	//         <td><code>Object</code></td>
+	//         <td></td>
+	//         <td>上传参数</td>
 	//       </tr>
 	//       <tr>
 	//         <td>drag-height</td>
@@ -17771,7 +17789,7 @@
 /* 610 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"文件上传\"  >\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>点击</h4>\n      <n3-uploader url=\"\" ></n3-uploader>\n      <hr>\n       <h4>拖拽</h4>\n      <n3-uploader type=\"drag\" ></n3-uploader>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n       <n3-uploader url=\"/upload\"></n3-uploader>\n\n       <n3-uploader url=\"/upload\" type=\"drag\"></n3-uploader>\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>name</td>\n        <td><code>String</code></td>\n        <td>files</td>\n        <td>文件对象的name</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\n        <td>click</td>\n        <td>拖拽或者点击</td>\n      </tr>\n      <tr>\n        <td>accept</td>\n        <td><code>String</code></td>\n        <td>'' (全支持)</td>\n        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>\n      </tr>\n      <tr>\n        <td>url</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>上传地址</td>\n      </tr>\n      <tr>\n        <td>multiple</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>支持多文件上传</td>\n      </tr>\n      <tr>\n        <td>drag-width</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>拖拽框宽度</td>\n      </tr>\n      </tr>\n      <tr>\n        <td>show-list</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>是否显示上传文件列表</td>\n      </tr>\n      </tr>\n      <tr>\n        <td>upload-list</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td>上传文件列表 <code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>drag-height</td>\n        <td><code>String</code></td>\n        <td>200px</td>\n        <td>拖拽框高度</td>\n      </tr>\n      <tr>\n        <td>on-error</td>\n        <td><code>Function</code></td>\n        <td><pre><code class=\"language-javascript\">\nfunction (data) {\n  this.n3Toast({\n    text: data.message\n  })\n  console.log(data.file)\n} </code></pre></td>\n        <td>出错时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-success</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>成功时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-delete</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>文件删除时触发函数，举个栗子：<pre><code class=\"language-javascript\">\nfunction (data) {\n  if (data.response.success) {\n    this.n3Toast({\n      text: data.file.name\n    })\n  }\n}</code></pre></td>\n      </tr>\n      <tr>\n        <td>on-finish</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>所有上传任务结束时触发函数，举个栗子：<pre><code class=\"language-javascript\">\nfunction () {\n  this.render()\n}</code></pre></td>\n      </tr>\n      <tr>\n        <td>max-length</td>\n        <td><code>Number</code></td>\n        <td>10</td>\n        <td>上传文件个数限制</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"文件上传\"  >\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>点击</h4>\n      <n3-uploader url=\"/\" :show-list=\"true\" ></n3-uploader>\n      <hr>\n       <h4>拖拽</h4>\n      <n3-uploader type=\"drag\" ></n3-uploader>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n\n       <n3-uploader url=\"/upload\"></n3-uploader>\n\n       <n3-uploader url=\"/upload\" type=\"drag\"></n3-uploader>\n\n    </script></code></pre>\n  <h2>参数</h2>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>name</td>\n        <td><code>String</code></td>\n        <td>files</td>\n        <td>文件对象的name</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\n        <td>click</td>\n        <td>拖拽或者点击</td>\n      </tr>\n      <tr>\n        <td>accept</td>\n        <td><code>String</code></td>\n        <td>'' (全支持)</td>\n        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>\n      </tr>\n      <tr>\n        <td>url</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>上传地址</td>\n      </tr>\n      <tr>\n        <td>multiple</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>支持多文件上传</td>\n      </tr>\n      <tr>\n        <td>drag-width</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>拖拽框宽度</td>\n      </tr>\n      </tr>\n      <tr>\n        <td>show-list</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>是否显示上传文件列表</td>\n      </tr>\n      </tr>\n      <tr>\n        <td>upload-list</td>\n        <td><code>Array</code></td>\n        <td></td>\n        <td>上传文件列表 <code>.sync</code></td>\n      </tr>\n      <tr>\n        <td>params</td>\n        <td><code>Object</code></td>\n        <td></td>\n        <td>上传参数</td>\n      </tr>\n      <tr>\n        <td>drag-height</td>\n        <td><code>String</code></td>\n        <td>200px</td>\n        <td>拖拽框高度</td>\n      </tr>\n      <tr>\n        <td>on-error</td>\n        <td><code>Function</code></td>\n        <td><pre><code class=\"language-javascript\">\nfunction (data) {\n  this.n3Toast({\n    text: data.message\n  })\n  console.log(data.file)\n} </code></pre></td>\n        <td>出错时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-success</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>成功时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-delete</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>文件删除时触发函数，举个栗子：<pre><code class=\"language-javascript\">\nfunction (data) {\n  if (data.response.success) {\n    this.n3Toast({\n      text: data.file.name\n    })\n  }\n}</code></pre></td>\n      </tr>\n      <tr>\n        <td>on-finish</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>所有上传任务结束时触发函数，举个栗子：<pre><code class=\"language-javascript\">\nfunction () {\n  this.render()\n}</code></pre></td>\n      </tr>\n      <tr>\n        <td>max-length</td>\n        <td><code>Number</code></td>\n        <td>10</td>\n        <td>上传文件个数限制</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
 /* 611 */
@@ -31572,7 +31590,7 @@
 	//         :placeholder="placeholder"
 	//         :custom-validate="customValidate"
 	//         :value.sync="displayValue"
-	//         :readonly="true"
+	//         :readonly="readonly"
 	//         :disabled="disabled"
 	//         @click="toggleMenus">
 	//       </n3-input>
@@ -31815,9 +31833,6 @@
 	exports.default = {
 	  mixins: [_inputMixin2.default],
 	  props: {
-	    readonly: {
-	      type: Boolean
-	    },
 	    value: {
 	      type: [String, Number],
 	      twoway: true
@@ -31975,6 +31990,10 @@
 	      type: Boolean,
 	      default: true
 	    },
+	    readonly: {
+	      type: Boolean,
+	      default: false
+	    },
 	    focused: {
 	      type: Boolean,
 	      twoway: true,
@@ -32126,7 +32145,7 @@
 /* 668 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-cascader\">\n    <span class=\"{{prefixCls}}-cascader-picker\">\n      <n3-input \n        :width=\"width\"\n        :name=\"name\" \n        :rules=\"rules\" \n        :validate=\"validate\" \n        :has-feedback=\"hasFeedback\"\n        :placeholder=\"placeholder\"\n        :custom-validate=\"customValidate\"\n        :value.sync=\"displayValue\"\n        :readonly=\"true\"\n        :disabled=\"disabled\"\n        @click=\"toggleMenus\">\n      </n3-input>\n    </span>\n    <div class=\"{{prefixCls}}-cascader-menus\" v-show=\"show\" transition=\"fadeDown\">\n      <ul class=\"{{prefixCls}}-cascader-menu\" v-for=\"(index, menu) in menus\">\n        <li :class=\"itemClass(index,option)\" \n          v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n        </li>\n      </ul>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-cascader\">\n    <span class=\"{{prefixCls}}-cascader-picker\">\n      <n3-input \n        :width=\"width\"\n        :name=\"name\" \n        :rules=\"rules\" \n        :validate=\"validate\" \n        :has-feedback=\"hasFeedback\"\n        :placeholder=\"placeholder\"\n        :custom-validate=\"customValidate\"\n        :value.sync=\"displayValue\"\n        :readonly=\"readonly\"\n        :disabled=\"disabled\"\n        @click=\"toggleMenus\">\n      </n3-input>\n    </span>\n    <div class=\"{{prefixCls}}-cascader-menus\" v-show=\"show\" transition=\"fadeDown\">\n      <ul class=\"{{prefixCls}}-cascader-menu\" v-for=\"(index, menu) in menus\">\n        <li :class=\"itemClass(index,option)\" \n          v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n        </li>\n      </ul>\n    </div>\n  </div>";
 
 /***/ },
 /* 669 */
@@ -32554,10 +32573,6 @@
 	    },
 	    onChange: {
 	      type: Function
-	    },
-	    readonly: {
-	      type: Boolean,
-	      default: false
 	    }
 	  },
 	
@@ -32731,9 +32746,6 @@
 	      type: String
 	    },
 	    disabled: {
-	      type: Boolean
-	    },
-	    readonly: {
 	      type: Boolean
 	    },
 	    placeholder: {
@@ -32915,7 +32927,7 @@
 	//     :has-feedback="hasFeedback"
 	//     :placeholder="placeholder"
 	//     :custom-validate="customValidate"
-	//     :readonly="true"
+	//     :readonly="readonly"
 	//     :disabled="disabled"
 	//     @click="inputClick"
 	//     :value.sync="value">
@@ -33301,7 +33313,7 @@
 /* 684 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-datepicker\">\n    <n3-input \n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"true\"\n    :disabled=\"disabled\"\n    @click=\"inputClick\"\n    :value.sync=\"value\">\n    </n3-input>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayDayView\" transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\">\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span \n                        v-for=\"d in dateRange\" :class=\"d.sclass\" \n                        @click=\"daySelect(d.date,d.sclass)\">\n                        {{d.text}}\n                      </span>\n                  </div>\n              </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayMouthView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span   \n                          :class=\"monthClassObj(m)\"\n                          @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayYearView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span \n                      :class=\"yearClassObj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                 \t</span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
+	module.exports = "<div class=\"{{prefixCls}}-datepicker\">\n    <n3-input \n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :validate=\"validate\" \n    :has-feedback=\"hasFeedback\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    @click=\"inputClick\"\n    :value.sync=\"value\">\n    </n3-input>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayDayView\" transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\">\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span \n                        v-for=\"d in dateRange\" :class=\"d.sclass\" \n                        @click=\"daySelect(d.date,d.sclass)\">\n                        {{d.text}}\n                      </span>\n                  </div>\n              </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayMouthView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span   \n                          :class=\"monthClassObj(m)\"\n                          @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show =\"displayYearView\" >\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span \n                      :class=\"yearClassObj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                 \t</span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
 /* 685 */
@@ -33518,7 +33530,7 @@
 	//       :has-feedback="hasFeedback"
 	//       :placeholder="placeholder"
 	//       :custom-validate="customValidate"
-	//       :readonly="true"
+	//       :readonly="readonly"
 	//       :disabled="disabled"
 	//       @click="inputClick"
 	//       :value.sync="value">
@@ -34221,7 +34233,7 @@
 /* 694 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-timepicker\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n    <div class=\"{{prefixCls}}-timepicker-popup\" v-show=\"show\" transition=\"fadeDown\">\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n        <n3-slider \n          :value.sync=\"time.hour\" \n          orientation=\"vertical\" \n          :max=\"hourRange[1]\" :min=\"hourRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n        <n3-slider \n          :value.sync=\"time.minute\" \n          orientation=\"vertical\" \n          :max=\"minuteRange[1]\" \n          :min=\"minuteRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n        <n3-slider \n          :value.sync=\"time.second\" \n          orientation=\"vertical\" \n          :max=\"secondRange[1]\" \n          :min=\"secondRange[0]\" \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-timepicker\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n    <div class=\"{{prefixCls}}-timepicker-popup\" v-show=\"show\" transition=\"fadeDown\">\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n        <n3-slider \n          :value.sync=\"time.hour\" \n          orientation=\"vertical\" \n          :max=\"hourRange[1]\" :min=\"hourRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n        <n3-slider \n          :value.sync=\"time.minute\" \n          orientation=\"vertical\" \n          :max=\"minuteRange[1]\" \n          :min=\"minuteRange[0]\"  \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n      <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n        <n3-slider \n          :value.sync=\"time.second\" \n          orientation=\"vertical\" \n          :max=\"secondRange[1]\" \n          :min=\"secondRange[0]\" \n          class=\"{{prefixCls}}-timepicker-slider\">\n        </n3-slider>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 695 */
@@ -34257,8 +34269,6 @@
 	  value: true
 	});
 	
-	var _watch;
-	
 	var _n3Slider = __webpack_require__(687);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
@@ -34280,137 +34290,6 @@
 	var _type2 = _interopRequireDefault(_type);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } // <template>
-	//   <div class="{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker" v-el:datetimepicker>
-	//     <n3-input
-	//       :width="width"
-	//       :name="name" 
-	//       :rules="rules" 
-	//       :validate="validate" 
-	//       :has-feedback="hasFeedback"
-	//       :placeholder="placeholder"
-	//       :custom-validate="customValidate"
-	//       :readonly="true"
-	//       :disabled="disabled"
-	//       @click="inputClick"
-	//       :value.sync="value">
-	//     </n3-input>
-	//       <div 
-	//         class="{{prefixCls}}-datepicker-popup" 
-	//         v-show="displayDayView" 
-	//         :style="{width:popWidth}" 
-	//         transition="fadeDown">
-	//           <div class="{{prefixCls}}-datepicker-inner" v-el:datepicker>
-	//               <div class="{{prefixCls}}-datepicker-body">
-	//                   <div class="{{prefixCls}}-datepicker-ctrl">
-	//                       <span 
-	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
-	//                         @click="preNextMonthClick(0)">&lt;</span>
-	//                       <span 
-	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
-	//                         @click="preNextMonthClick(1)">&gt;</span>
-	//                       <p @click="switchMouthView">
-	//                       {{stringifyDayHeader(currDate)}}
-	//                       </p>
-	//                   </div>
-	//                   <div class="{{prefixCls}}-datepicker-weekRange">
-	//                       <span v-for="w in weekRange">{{w}}</span>
-	//                   </div>
-	//                   <div class="{{prefixCls}}-datepicker-dateRange">
-	//                       <span v-for="d in dateRange" 
-	//                       :class="[d.sclass,prefixCls + '-datetimepicker-date-span']" 
-	//                       @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
-	//                   </div>
-	//               </div>
-	//           </div>
-	//           <div class="{{prefixCls}}-timepicker-con">
-	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
-	//               <n3-slider 
-	//                 class="{{prefixCls}}-timepicker-slider"
-	//                 :value.sync="time.hour" 
-	//                 orientation="vertical" 
-	//                 :max="hourRange[1]" 
-	//                 :min="hourRange[0]" >
-	//               </n3-slider>
-	//             </div>
-	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
-	//               <n3-slider
-	//                 class="{{prefixCls}}-timepicker-slider" 
-	//                 :value.sync="time.minute" 
-	//                 orientation="vertical" 
-	//                 :max="minuteRange[1]" 
-	//                 :min="minuteRange[0]" >
-	//               </n3-slider>
-	//             </div>
-	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
-	//               <n3-slider 
-	//                 class="{{prefixCls}}-timepicker-slider"
-	//                 :value.sync="time.second" 
-	//                 orientation="vertical" 
-	//                 :max="secondRange[1]" 
-	//                 :min="secondRange[0]" >
-	//               </n3-slider>
-	//             </div>
-	//           </div>
-	//       </div>
-	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayMouthView">
-	//         <div class="{{prefixCls}}-datepicker-inner">
-	//             <div class="{{prefixCls}}-datepicker-body">
-	//                 <div class="{{prefixCls}}-datepicker-ctrl">
-	//                     <span 
-	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
-	//                       @click="preNextYearClick(0)">&lt;</span>
-	//                     <span 
-	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
-	//                       @click="preNextYearClick(1)">&gt;</span>
-	//                     <p @click="switchDecadeView">
-	//                     {{stringifyYearHeader(currDate)}}
-	//                     </p>
-	//                 </div>
-	//                 <div class="{{prefixCls}}-datepicker-mouthRange">
-	//                 	<template v-for="m in mouthNames">
-	// 	                    <span 
-	//                         :class="monthClassobj(m)"
-	//                         @click="mouthSelect($index)">
-	// 	                      {{m.substr(0,3)}}
-	// 	                    </span>
-	//                     </template>
-	//                 </div>
-	//             </div>
-	//         </div>
-	//       </div>
-	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayYearView">
-	//         <div class="{{prefixCls}}-datepicker-inner">
-	//             <div class="{{prefixCls}}-datepicker-body">
-	//                 <div class="{{prefixCls}}-datepicker-ctrl">
-	//                     <span 
-	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn"
-	//                       @click="preNextDecadeClick(0)">&lt;</span>
-	//                     <span 
-	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
-	//                       @click="preNextDecadeClick(1)">&gt;</span>
-	//                     <p>
-	//                     {{stringifyDecadeHeader(currDate)}}
-	//                     </p>
-	//                 </div>
-	//                 <div class="{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange">
-	//                 	<template v-for="decade in decadeRange">
-	//                 		<span
-	//                       :class="yearClassobj(decade)"
-	// 	                    @click.stop="yearSelect(decade.text)">
-	// 	                      {{decade.text}}
-	// 	                  </span>
-	// 					        </template>
-	//                 </div>
-	//             </div>
-	//         </div>
-	//       </div>
-	// </div>
-	// </template>
-	
-	// <script>
-	
 	
 	exports.default = {
 	  mixins: [_inputMixin2.default],
@@ -34474,10 +34353,7 @@
 	    };
 	  },
 	
-	  watch: (_watch = {
-	    displayDayView: function displayDayView() {
-	      this.dispatchHide();
-	    },
+	  watch: {
 	    displayMouthView: function displayMouthView() {
 	      this.dispatchHide();
 	    },
@@ -34486,28 +34362,32 @@
 	    },
 	    currDate: function currDate() {
 	      this.getDateRange();
-	    }
-	  }, _defineProperty(_watch, 'displayDayView', function displayDayView(val) {
-	    var _this = this;
+	    },
+	    displayDayView: function displayDayView(val) {
+	      var _this = this;
 	
-	    if (val) {
-	      this.$nextTick(function () {
-	        var width = _this.$els.datepicker.offsetWidth * 1 + 30;
-	        console.log(_this.$els.datepicker.offsetWidth);
-	        _this.hour ? width += 42 : 0;
-	        _this.minute ? width += 42 : 0;
-	        _this.second ? width += 42 : 0;
-	        _this.popWidth = width + 'px';
-	      });
-	    }
-	  }), _defineProperty(_watch, 'date', function date() {
-	    this.value = this.date + ' ' + this.handTime();
-	  }), _defineProperty(_watch, 'time', {
-	    deep: true,
-	    handler: function handler(val) {
+	      if (val) {
+	        this.$nextTick(function () {
+	          var width = _this.$els.datepicker.offsetWidth * 1 + 30;
+	          _this.hour ? width += 42 : 0;
+	          _this.minute ? width += 42 : 0;
+	          _this.second ? width += 42 : 0;
+	          _this.popWidth = width + 'px';
+	        });
+	      }
+	      this.dispatchHide();
+	    },
+	    date: function date() {
 	      this.value = this.date + ' ' + this.handTime();
+	    },
+	
+	    time: {
+	      deep: true,
+	      handler: function handler(val) {
+	        this.value = this.date + ' ' + this.handTime();
+	      }
 	    }
-	  }), _watch),
+	  },
 	  computed: {
 	    hour: function hour() {
 	      if (this.format.indexOf('hh') > -1) {
@@ -34845,12 +34725,141 @@
 	  }
 	};
 	// </script>
+	// <template>
+	//   <div class="{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker" v-el:datetimepicker>
+	//     <n3-input
+	//       :width="width"
+	//       :name="name" 
+	//       :rules="rules" 
+	//       :validate="validate" 
+	//       :has-feedback="hasFeedback"
+	//       :placeholder="placeholder"
+	//       :custom-validate="customValidate"
+	//       :readonly="readonly"
+	//       :disabled="disabled"
+	//       @click="inputClick"
+	//       :value.sync="value">
+	//     </n3-input>
+	//       <div 
+	//         class="{{prefixCls}}-datepicker-popup" 
+	//         v-show="displayDayView" 
+	//         :style="{width:popWidth}" 
+	//         transition="fadeDown">
+	//           <div class="{{prefixCls}}-datepicker-inner" v-el:datepicker>
+	//               <div class="{{prefixCls}}-datepicker-body">
+	//                   <div class="{{prefixCls}}-datepicker-ctrl">
+	//                       <span 
+	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	//                         @click="preNextMonthClick(0)">&lt;</span>
+	//                       <span 
+	//                         class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	//                         @click="preNextMonthClick(1)">&gt;</span>
+	//                       <p @click="switchMouthView">
+	//                       {{stringifyDayHeader(currDate)}}
+	//                       </p>
+	//                   </div>
+	//                   <div class="{{prefixCls}}-datepicker-weekRange">
+	//                       <span v-for="w in weekRange">{{w}}</span>
+	//                   </div>
+	//                   <div class="{{prefixCls}}-datepicker-dateRange">
+	//                       <span v-for="d in dateRange" 
+	//                       :class="[d.sclass,prefixCls + '-datetimepicker-date-span']" 
+	//                       @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
+	//                   </div>
+	//               </div>
+	//           </div>
+	//           <div class="{{prefixCls}}-timepicker-con">
+	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
+	//               <n3-slider 
+	//                 class="{{prefixCls}}-timepicker-slider"
+	//                 :value.sync="time.hour" 
+	//                 orientation="vertical" 
+	//                 :max="hourRange[1]" 
+	//                 :min="hourRange[0]" >
+	//               </n3-slider>
+	//             </div>
+	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
+	//               <n3-slider
+	//                 class="{{prefixCls}}-timepicker-slider" 
+	//                 :value.sync="time.minute" 
+	//                 orientation="vertical" 
+	//                 :max="minuteRange[1]" 
+	//                 :min="minuteRange[0]" >
+	//               </n3-slider>
+	//             </div>
+	//             <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
+	//               <n3-slider 
+	//                 class="{{prefixCls}}-timepicker-slider"
+	//                 :value.sync="time.second" 
+	//                 orientation="vertical" 
+	//                 :max="secondRange[1]" 
+	//                 :min="secondRange[0]" >
+	//               </n3-slider>
+	//             </div>
+	//           </div>
+	//       </div>
+	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayMouthView">
+	//         <div class="{{prefixCls}}-datepicker-inner">
+	//             <div class="{{prefixCls}}-datepicker-body">
+	//                 <div class="{{prefixCls}}-datepicker-ctrl">
+	//                     <span 
+	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+	//                       @click="preNextYearClick(0)">&lt;</span>
+	//                     <span 
+	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	//                       @click="preNextYearClick(1)">&gt;</span>
+	//                     <p @click="switchDecadeView">
+	//                     {{stringifyYearHeader(currDate)}}
+	//                     </p>
+	//                 </div>
+	//                 <div class="{{prefixCls}}-datepicker-mouthRange">
+	//                 	<template v-for="m in mouthNames">
+	// 	                    <span 
+	//                         :class="monthClassobj(m)"
+	//                         @click="mouthSelect($index)">
+	// 	                      {{m.substr(0,3)}}
+	// 	                    </span>
+	//                     </template>
+	//                 </div>
+	//             </div>
+	//         </div>
+	//       </div>
+	//       <div class="{{prefixCls}}-datepicker-popup" v-show="displayYearView">
+	//         <div class="{{prefixCls}}-datepicker-inner">
+	//             <div class="{{prefixCls}}-datepicker-body">
+	//                 <div class="{{prefixCls}}-datepicker-ctrl">
+	//                     <span 
+	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn"
+	//                       @click="preNextDecadeClick(0)">&lt;</span>
+	//                     <span 
+	//                       class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+	//                       @click="preNextDecadeClick(1)">&gt;</span>
+	//                     <p>
+	//                     {{stringifyDecadeHeader(currDate)}}
+	//                     </p>
+	//                 </div>
+	//                 <div class="{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange">
+	//                 	<template v-for="decade in decadeRange">
+	//                 		<span
+	//                       :class="yearClassobj(decade)"
+	// 	                    @click.stop="yearSelect(decade.text)">
+	// 	                      {{decade.text}}
+	// 	                  </span>
+	// 					        </template>
+	//                 </div>
+	//             </div>
+	//         </div>
+	//       </div>
+	// </div>
+	// </template>
+	
+	// <script>
 
 /***/ },
 /* 697 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker\" v-el:datetimepicker>\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"true\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n      <div \n        class=\"{{prefixCls}}-datepicker-popup\" \n        v-show=\"displayDayView\" \n        :style=\"{width:popWidth}\" \n        transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\" v-el:datepicker>\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span v-for=\"d in dateRange\" \n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                  </div>\n              </div>\n          </div>\n          <div class=\"{{prefixCls}}-timepicker-con\">\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n              <n3-slider \n                class=\"{{prefixCls}}-timepicker-slider\"\n                :value.sync=\"time.hour\" \n                orientation=\"vertical\" \n                :max=\"hourRange[1]\" \n                :min=\"hourRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n              <n3-slider\n                class=\"{{prefixCls}}-timepicker-slider\" \n                :value.sync=\"time.minute\" \n                orientation=\"vertical\" \n                :max=\"minuteRange[1]\" \n                :min=\"minuteRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n              <n3-slider \n                class=\"{{prefixCls}}-timepicker-slider\"\n                :value.sync=\"time.second\" \n                orientation=\"vertical\" \n                :max=\"secondRange[1]\" \n                :min=\"secondRange[0]\" >\n              </n3-slider>\n            </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayMouthView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayYearView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
+	module.exports = "<div class=\"{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker\" v-el:datetimepicker>\n    <n3-input\n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :validate=\"validate\" \n      :has-feedback=\"hasFeedback\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      @click=\"inputClick\"\n      :value.sync=\"value\">\n    </n3-input>\n      <div \n        class=\"{{prefixCls}}-datepicker-popup\" \n        v-show=\"displayDayView\" \n        :style=\"{width:popWidth}\" \n        transition=\"fadeDown\">\n          <div class=\"{{prefixCls}}-datepicker-inner\" v-el:datepicker>\n              <div class=\"{{prefixCls}}-datepicker-body\">\n                  <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                        @click=\"preNextMonthClick(0)\">&lt;</span>\n                      <span \n                        class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                        @click=\"preNextMonthClick(1)\">&gt;</span>\n                      <p @click=\"switchMouthView\">\n                      {{stringifyDayHeader(currDate)}}\n                      </p>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-weekRange\">\n                      <span v-for=\"w in weekRange\">{{w}}</span>\n                  </div>\n                  <div class=\"{{prefixCls}}-datepicker-dateRange\">\n                      <span v-for=\"d in dateRange\" \n                      :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\" \n                      @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                  </div>\n              </div>\n          </div>\n          <div class=\"{{prefixCls}}-timepicker-con\">\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"hour\" data-role=\"hour\">\n              <n3-slider \n                class=\"{{prefixCls}}-timepicker-slider\"\n                :value.sync=\"time.hour\" \n                orientation=\"vertical\" \n                :max=\"hourRange[1]\" \n                :min=\"hourRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"minute\" data-role=\"minute\">\n              <n3-slider\n                class=\"{{prefixCls}}-timepicker-slider\" \n                :value.sync=\"time.minute\" \n                orientation=\"vertical\" \n                :max=\"minuteRange[1]\" \n                :min=\"minuteRange[0]\" >\n              </n3-slider>\n            </div>\n            <div class=\"{{prefixCls}}-timepicker-slider-sin-wrap\" v-if=\"second\" data-role=\"second\">\n              <n3-slider \n                class=\"{{prefixCls}}-timepicker-slider\"\n                :value.sync=\"time.second\" \n                orientation=\"vertical\" \n                :max=\"secondRange[1]\" \n                :min=\"secondRange[0]\" >\n              </n3-slider>\n            </div>\n          </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayMouthView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\" \n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange\">\n                \t<template v-for=\"m in mouthNames\">\n\t                    <span \n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect($index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div class=\"{{prefixCls}}-datepicker-popup\" v-show=\"displayYearView\">\n        <div class=\"{{prefixCls}}-datepicker-inner\">\n            <div class=\"{{prefixCls}}-datepicker-body\">\n                <div class=\"{{prefixCls}}-datepicker-ctrl\">\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span \n                      class=\"{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn\" \n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div class=\"{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
 /* 698 */
@@ -36285,10 +36294,6 @@
 	exports.default = {
 	  mixins: [_valMixin2.default],
 	  props: {
-	    readonly: {
-	      type: Boolean,
-	      default: false
-	    },
 	    disabled: {
 	      type: Boolean,
 	      default: false
@@ -37896,9 +37901,6 @@
 	
 	  mixins: [_inputMixin2.default],
 	  props: {
-	    readonly: {
-	      type: Boolean
-	    },
 	    query: {
 	      type: String,
 	      twoway: true,
@@ -39352,6 +39354,7 @@
 	//         type="primary">
 	//         <n3-icon type="refresh"></n3-icon>
 	//       </n3-button>
+	//       <slot ></slot>
 	//     <n3-input
 	//       class="pull-right" 
 	//       placeholder="搜索"
@@ -39438,7 +39441,7 @@
 /* 781 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"{{prefixCls}}-data-table\">\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\n    <n3-select \n      class='pull-left'\n      style=\"margin-right:10px;\"\n      :multiple=\"true\"\n      :showselected=\"false\"\n      v-if=\"selectCol\"\n      placeholder = \"显示的列\"\n      :options=\"selectOptions\" \n      :value.sync=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\n      <template v-for=\"item in filterArr\">\n        <n3-select \n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n          :search = \"item.search === undefined?true:!!item.search\"\n          :extra = \"item.extra === undefined?true:!!item.extra\"\n          :showselected=\"false\"\n          :placeholder = \"item.title\"\n          :options=\"item.options\" \n          :value.sync=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\" \n        style=\"margin-left:10px;\"\n        @click=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      :value.sync=\"query\"\n      @keydown.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\n                  <input v-if=\"list && list.length\" \n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                    @change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in showColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                    <span>{{col.title}} </span> \n                    <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\n                   <input type=\"checkbox\" \n                    v-model=\"checkedValues\"  \n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in showColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\n                    </template>\n                    <template v-else>\n                      {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div class='{{prefixCls}}-data-table-bar {{prefixCls}}-data-table-page' v-if=\"page\" >\n    <n3-page\n      v-if=\"page\" \n      :total=\"pagination.total\" \n      :current.sync=\"pagination.current\" \n      :pagesize.sync=\"pagination.pagesize\" \n      :on-change=\"pageChange\"\n      :show-sizer=\"true\"\n      :show-total=\"true\"\n      :pagesize-opts=\"pagination.pagesizeOpts\">\n    </n3-page>\n    </div>\n  </div>\n  </div>";
+	module.exports = "<div class=\"{{prefixCls}}-data-table\">\n  <div class=\"{{prefixCls}}-data-table-bar clearfix\">\n    <n3-select \n      class='pull-left'\n      style=\"margin-right:10px;\"\n      :multiple=\"true\"\n      :showselected=\"false\"\n      v-if=\"selectCol\"\n      placeholder = \"显示的列\"\n      :options=\"selectOptions\" \n      :value.sync=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" class='pull-left {{prefixCls}}-btn-group'>\n      <template v-for=\"item in filterArr\">\n        <n3-select \n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n          :search = \"item.search === undefined?true:!!item.search\"\n          :extra = \"item.extra === undefined?true:!!item.extra\"\n          :showselected=\"false\"\n          :placeholder = \"item.title\"\n          :options=\"item.options\" \n          :value.sync=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\"\n        @click=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        class=\"{{prefixCls}}-data-table-inner-btn\" \n        style=\"margin-left:10px;\"\n        @click=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n      <slot ></slot>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      :value.sync=\"query\"\n      @keydown.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" class=\"{{prefixCls}}-data-table-row-select\">\n                  <input v-if=\"list && list.length\" \n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                    @change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in showColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                    <span>{{col.title}} </span> \n                    <div class=\"{{prefixCls}}-data-table-sort pull-right\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(index,data) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" class=\"{{prefixCls}}-row-select\">\n                   <input type=\"checkbox\" \n                    v-model=\"checkedValues\"  \n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in showColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      {{{col.render.call(this._context,data[col.dataIndex],data,index)}}}\n                    </template>\n                    <template v-else>\n                      {{{ col.dataIndex ? data[col.dataIndex] : ''}}}\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div class='{{prefixCls}}-data-table-bar {{prefixCls}}-data-table-page' v-if=\"page\" >\n    <n3-page\n      v-if=\"page\" \n      :total=\"pagination.total\" \n      :current.sync=\"pagination.current\" \n      :pagesize.sync=\"pagination.pagesize\" \n      :on-change=\"pageChange\"\n      :show-sizer=\"true\"\n      :show-total=\"true\"\n      :pagesize-opts=\"pagination.pagesizeOpts\">\n    </n3-page>\n    </div>\n  </div>\n  </div>";
 
 /***/ },
 /* 782 */
@@ -40294,7 +40297,7 @@
 	      }
 	    },
 	    parent: {
-	      type: Number,
+	      type: [Number, String],
 	      default: undefined
 	    },
 	    treeIcon: {
@@ -40351,10 +40354,11 @@
 	     * @param {Mixed} value Value selected.
 	     */
 	    clickHandler: function clickHandler(index, value) {
-	      // Select Node
-	      this.select(index, value);
-	
 	      var node = this.data[index];
+	
+	      // Select Node
+	      this.select(index, value, node);
+	
 	      // lazyLoadFlag：节点未打开，节点无子节点
 	      var lazyLoadFlag = !node.isOpened && node.children && node.children.length === 0 && _type2.default.isFunction(this.loadData);
 	      if (lazyLoadFlag) {
@@ -40393,11 +40397,11 @@
 	     * @param {Number} index Tree index selected.
 	     * @param {Mixed} value Value selected.
 	     */
-	    select: function select(index, value) {
+	    select: function select(index, value, node) {
 	      this.selectedKey = value;
 	      if (_type2.default.isFunction(this.onSelect)) {
 	        try {
-	          this.onSelect(this.selectedKey);
+	          this.onSelect(this.selectedKey, node);
 	        } catch (error) {
 	          console.error(error);
 	        }
@@ -40951,6 +40955,9 @@
 	        return [];
 	      }
 	    },
+	    params: {
+	      type: Object
+	    },
 	    prefixCls: {
 	      type: String,
 	      default: 'n3'
@@ -41045,6 +41052,13 @@
 	            (function () {
 	              data = new window.FormData();
 	              data.append(self.name, file, file.name);
+	
+	              if (self.params) {
+	                for (var name in self.params) {
+	                  data.append(name, self.params[name]);
+	                }
+	              }
+	
 	              // 跨域时 添加身份凭证信息
 	              var xhr = new window.XMLHttpRequest();
 	              xhr.withCredentials = true;
@@ -41083,6 +41097,7 @@
 	
 	      var i = 0;
 	      var len = this.uploadList.length;
+	      var self = this;
 	      if (this.testSameOrigin(this.url)) {
 	        var _loop = function _loop() {
 	          var iframeName = 'uploadiframe-' + i + '-' + new Date().getTime();
@@ -41102,6 +41117,15 @@
 	          document.body.appendChild(form);
 	          form.appendChild(iframe);
 	          form.appendChild(input);
+	
+	          if (self.params) {
+	            for (var name in self.params) {
+	              var _input = document.createElement('input');
+	              _input.setAttribute('type', 'text');
+	              _input.setAttribute('name', name);
+	              _input.setAttribute('value', self.params[name]);
+	            }
+	          }
 	
 	          iframe.addEventListener('load', function () {
 	            _this2.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));
