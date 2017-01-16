@@ -69,7 +69,6 @@ Requirements
 To Do List
 ----------
 
-- Tree View
 - Drawer Menu
 
 Discussing
