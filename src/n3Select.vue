@@ -27,6 +27,7 @@
         :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
         :class="`${prefixCls}-dropdown-menu`" 
         ref="menu" 
+        v-n3-position="show"
         v-show="show">
           <li v-if="search">
             <n3-input
@@ -180,7 +181,7 @@ export default {
     },
     currentValue (val) {
       this.$emit('input', val)
-      this.$emit('change')
+      this.$emit('change',val)
     }
   },
   components: {

@@ -4,16 +4,16 @@
       :width="width"
       :name="name"
       :rules="rules"
-      :has-feedback="hasFeedback"
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :disabled="disabled"
-      :readonly="manual"
+      :readonly="true"
       @click.native="inputClick"
-      :value="currentValue">
+      :show-clean="true"
+      v-model="currentValue">
     </n3-input>
     <transition name="fadeDown">
-      <div :class="`${prefixCls}-timepicker-popup`" v-show="show" >
+      <div :class="`${prefixCls}-timepicker-popup`" v-show="show"  v-n3-position="show">
         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
           <n3-slider
             v-model="time.hour"
@@ -83,10 +83,6 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
-    },
-    manual: {
-      type: Boolean,
-      default: false
     }
   },
   filters: {

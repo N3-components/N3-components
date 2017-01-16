@@ -36,13 +36,19 @@
         <td>accept</td>
         <td><code>String</code></td>
         <td>'' (全支持)</td>
-        <td>支持的文件类型 例如: 'image/jpeg' 或者 'image'支持所有图片格式</td>
+       <td>支持的文件类型 例如: <code>'image/jpeg'</code> 或者 <code>'image'</code>支持所有图片格式,多个如 <code>'txt|image|mp3'</code></td>
       </tr>
       <tr>
         <td>url</td>
         <td><code>String</code></td>
         <td></td>
         <td>上传地址</td>
+      </tr>
+      <tr>
+        <td>params</td>
+        <td><code>Object</code></td>
+        <td></td>
+        <td>上传参数</td>
       </tr>
       <tr>
         <td>multiple</td>

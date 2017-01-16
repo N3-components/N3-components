@@ -448,6 +448,8 @@ export default {
       }
     },
     pageChange (current, pagesize) {
+      this.cpage.current = current
+      this.cpage.pagesize = pagesize
       if (this.page && this.async) {
         this.tableChange()
       } else {

@@ -38,6 +38,12 @@
           <td>click</td>
           <td>触发方式</td>
         </tr>
+        <tr>
+          <td>click-close</td>
+          <td><code>Boolean</code></td>
+          <td>false</td>
+          <td>点击关闭</td>
+        </tr>
       </tbody>
     </table>
     </div>

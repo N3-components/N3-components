@@ -20,9 +20,9 @@ export default {
     rules: {
       type: Array
     },
-    hasFeedback: {
+    readonly: {
       type: Boolean,
-      default: true
+      default: false
     }
   },
   data () {

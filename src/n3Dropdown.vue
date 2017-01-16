@@ -5,7 +5,7 @@
     </span>
 
     <transition :name="effect" v-if="effect!='collapse'">
-      <ul :class="`${prefixCls}-dropdown-menu`" v-show="isShow" >
+      <ul v-n3-position="isShow" :class="`${prefixCls}-dropdown-menu`" v-show="isShow" >
           <slot></slot>
       </ul>
     </transition>

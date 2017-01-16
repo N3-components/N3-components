@@ -5,7 +5,7 @@
       v-show="node.visible"
       :class="[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']">
       <div :class="`${prefixCls}-tree-node__content`"
-        :style="{ 'padding-left': (node.level - 1) * 16 + 'px' }">
+        :style="{ 'padding-left': (node.level - 1) * 20 + 'px' }">
         <n3-icon
           v-show="!node.isLeaf"
           :class="`${prefixCls}-tree-select-icon`"

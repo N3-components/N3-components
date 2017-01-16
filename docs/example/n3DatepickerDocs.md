@@ -17,7 +17,7 @@ v-model="value"
 </n3-datepicker>
 <h4>一周内无法选择的日期</h4>
 
-<n3-select multiple :value.sync="disabled">
+<n3-select multiple v-model="disabled">
 <n3-option value="0">0</n3-option>
 <n3-option value="1">1</n3-option>
 <n3-option value="2">2</n3-option>
@@ -28,7 +28,7 @@ v-model="value"
 </n3-select>
 
 <h4>Format</h4>
-<n3-select :value.sync="format" >
+<n3-select v-model="format" >
 <n3-option value="yyyy,MM,dd">yyyy,MM,dd</n3-option>
 <n3-option value="yyyy-MM-dd">yyyy-MM-dd</n3-option>
 <n3-option value="yyyy.MM.dd">yyyy.MM.dd</n3-option>
@@ -39,12 +39,12 @@ v-model="value"
 
 ```html
 <n3-datepicker
-  :value.sync="value"
+  v-model="value"
   :disabled-days-of-Week="disabled"
   :format="format">
 </n3-datepicker>
 
-<n3-select multiple :value.sync="disabled" size=5>
+<n3-select multiple v-model="disabled" >
   <n3-option value="0">0</n3-option>
   <n3-option value="1">1</n3-option>
   <n3-option value="2">2</n3-option>
@@ -53,7 +53,7 @@ v-model="value"
   <n3-option value="5">5</n3-option>
   <n3-option value="6">6</n3-option>
 </n3-select>
-<n3-select  :value.sync="format">
+<n3-select  v-model="format">
   <n3-option value="yyyy,MM,dd">yyyy,MM,dd</n3-option>
   <n3-option value="yyyy-MM-dd">yyyy-MM-dd</n3-option>
   <n3-option value="yyyy.MM.dd">yyyy.MM.dd</n3-option>

@@ -1,148 +1,97 @@
 <template>
-  <div class="bs-docs-section" id="数据表格"  >
-    <h1 class="page-header"><a href="#数据表格" class="anchor">数据表格</a><span class="author"> </span></h1>
-    <div class="bs-example">
-      <h4>Table</h4>
 
-      <n3-data-table
-        :selection="selection"
-        :source="source" 
-        :columns="columns" 
-        :refresh="refresh"
-      ></n3-data-table>
-      <hr>
-    </div>
+## 数据表格
 
-    <h2>参数</h2>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>参数名</th>
-          <th>类型</th>
-          <th>默认值</th>
-          <th>说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>merge-rule</td>
-          <td>Object</td>
-          <td></td>
-          <td><pre><code class="language-javascript">{
-  name:{
-    '小白': {rowspan: 2},
-    'v白': {rowspan: 0}
+<div class="bs-docs-section" id="数据表格"  >
+<div class="bs-example">
+<h4>Table</h4>
+
+<n3-data-table
+  :selection="selection"
+  :source="source" 
+  :columns="columns" 
+  :refresh="refresh">
+</n3-data-table>
+
+</div>
+
+
+```html
+
+<n3-data-table
+  :selection="selection"
+  :source="source" 
+  :columns="columns" 
+  :refresh="refresh"
+></n3-data-table>
+
+```
+
+
+#### selection
+
+```javascript
+{
+  checkRows:[],
+  onSelect (record, checked, checkRows) {},
+  onSelectAll (checked, checkRows, changeRows) {},
+  getCheckboxProps(record){
+    if(record.key == 2){
+      return {
+        checked: true,
+        disabled:true
+      }
+    }else{
+      return {
+        disabled:false
+      }
+    }
   }
-}</code></pre>
-          </td>
-        </tr>
-         <tr>
-          <td>columns</td>
-          <td>Array</td>
-          <td></td>
-          <td>头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等</td>
-        </tr>
-         <tr>
-          <td>selection</td>
-          <td>Object</td>
-          <td></td>
-          <td>
-          <code style="color:red">使用getCheckboxProps来初始化状态</code>
-          ```javascript
-          {
-            checkRows:[],
-            onSelect (record, checked, checkRows) {},
-            onSelectAll (checked, checkRows, changeRows) {},
-            getCheckboxProps(record){
-              if(record.key == 2){
-                return {
-                  checked: true,
-                  disabled:true
-                }
-              }else{
-                return {
-                  disabled:false
-                }
-              }
-            }
-          }
-          ```
-          </td>
-        </tr>
-        <tr>
-          <td>sort-column</td>
-          <td>Object</td>
-          <td></td>
-          <td>默认全局排序字段</td>
-        </tr>
-        <tr>
-          <td>source</td>
-          <td>Array</td>
-          <td></td>
-          <td>表格数组</td>
-        </tr>
-        <tr>
-          <td>page</td>
-          <td>Boolean</td>
-          <td>true</td>
-          <td>是否分页</td>
-        </tr>
-        <tr>
-          <td>search</td>
-          <td>Boolean</td>
-          <td>true</td>
-          <td>是否支持搜索</td>
-        </tr>
-        <tr>
-          <td>filter</td>
-          <td>Boolean</td>
-          <td>true</td>
-          <td>是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器</td>
-        </tr>
-        <tr>
-          <td>filter-list</td>
-          <td>Array</td>
-          <td></td>
-          <td>自定义过滤器如:
-          <pre><code class="language-javascript">[{
+}
+
+```
+
+#### filter-list
+
+```javascript
+
+[{
   title:'姓名',
   dataIndex: 'name',
   options:[{value:"v白",label:"v白"},{value:"t红",label:"t红"}],
   value:[],
   // multiple,search,extra
-}]</code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>select-col</td>
-          <td>Boolean</td>
-          <td>true</td>
-          <td>是否支持选择显示列</td>
-        </tr>
-        <tr>
-          <td>pagination</td>
-          <td>Object</td>
-          <td></td>
-          <td>设置分页，例如
-          <pre><code class="language-javascript">{
+}]
+
+```
+
+#### merge-rule
+
+```javascript
+
+{
+  name:{
+    '小白': {rowspan: 2},
+    'v白': {rowspan: 0}
+  }
+}
+
+```
+#### pagination
+
+```javascript
+
+{
   current:5,
   total:10,
   pagesize:10
-}</code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>loading</td>
-          <td>Boolean</td>
-          <td>false</td>
-          <td>设置表格的加载中状态</td>
-        </tr>
-        <tr>
-          <td>on-change</td>
-          <td>Function</td>
-          <td></td>
-          <td>当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作，例如分页:
-          <pre><code class="language-javascript">
+}
+
+```
+#### @change
+
+```javascript
+
 function(pagination,query,sort,filter){
   var data = {
     start:(pagination.current - 1) * pagination.pagesize,
@@ -162,12 +111,33 @@ function(pagination,query,sort,filter){
     }
   })
 }
-          </code></pre>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+```
+
+
+### 参数
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| async         | Boolean     |    false       |  异步加载，配合change事件来请求服务端数据    |
+| merge-rule          | Object     |    -        |  合并规则    |
+| columns          | Array     |    -        |     头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等     |
+| selection| Object| - | <code style="color:red">使用getCheckboxProps来初始化状态</code>|
+|sort-column|Object|-|默认全局排序字段|
+|source   | Array  |  -  |表格数组 |
+| page  |  Boolean |  true |是否分页 | 
+|  search |  Boolean | true  |是否支持搜索 | 
+|  filter |  Boolean | true  | 是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器|
+| filter-list | Array |  - |自定义过滤器|
+|  select-col |  Boolean |  true |  是否支持选择显示列  |      
+ | pagination  |  Object |  - |  设置分页|     
+|  loading |  Boolean |  false |  设置表格的加载中状态 |      
+        
+### 事件
+
+| 名称          |   说明          |        
+|-------------  |---------------- |
+| change          |    当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作 |  
+</div>
 </template>
 
 <script>
@@ -175,7 +145,7 @@ function(pagination,query,sort,filter){
 export default {
   methods: {
     change (p, q, s, f) {
-      this.pagination.total = 22
+      console.log(p, q, s, f)
     },
     refresh () {
       this.source = [{

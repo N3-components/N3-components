@@ -356,7 +356,6 @@
 | custom－validate          | Function     |     |  自定义校验器     |
 | name           | String     |    －        |        |
 | rules          | Array     |    －        |   验证规则,如 ``` [{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }] ```  |
-| has-feedback    | Boolean     |    true        |    是否显示状态icon    |
       
 </div>
 </template>
