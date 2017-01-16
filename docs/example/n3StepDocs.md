@@ -29,8 +29,8 @@
 | 参数名 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | labels | `Array` |  | 文案数组 |
-| current | `Number` | 1 | 当前步数 |
-| round | `Boolean` | false | 是否为前台步骤条 |
+| current | `Number` | `1` | 当前步数 |
+| round | `Boolean` | `false` | 是否为前台步骤条 |
 
 </div>
 </template>

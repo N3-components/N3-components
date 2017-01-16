@@ -1,12 +1,10 @@
 <template>
-<div :class="classObj">
-	<label 
-  	v-for="i in currentValue" 
-	  :class="tagClass(i)">
+  <div :class="classObj">
+    <label v-for="i in currentValue" :class="tagClass(i)">
 	 {{i.label}}
 	<a name="remove" v-if="removable" @click="del(i)"><n3-icon type="times"></n3-icon></a>
 	</label>
-</div>
+  </div>
 </template>
 
 <script>
