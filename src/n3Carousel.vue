@@ -118,7 +118,7 @@ export default {
       function intervalManager (flag, func, time) {
         flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID)
       }
-      if (this.interval) {
+      if (this.interval > 0) {
         intervalManager(true, this.nextClick, this.interval)
         el.addEventListener('mouseenter', () => intervalManager(false))
         el.addEventListener('mouseleave', () => intervalManager(true, this.nextClick, this.interval))

@@ -6,18 +6,22 @@
       :class="[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']">
       <div :class="`${prefixCls}-tree-node__content`"
         :style="{ 'padding-left': (node.level - 1) * 20 + 'px' }">
-        <n3-icon
-          v-show="!node.isLeaf"
-          :class="`${prefixCls}-tree-select-icon`"
-          :type="(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon"
-          @click.stop="handleExpandIconClick">
-        </n3-icon>
-        <n3-checkbox
-          v-if="showCheckbox"
-          :checked="node.checked"
-          @change="handleCheckChange"
-          @click.stop="handleUserClick">
-        </n3-checkbox>
+        <span @click.stop="handleExpandIconClick">
+          <n3-icon
+            v-show="!node.isLeaf"
+            :class="`${prefixCls}-tree-select-icon`"
+            :type="(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon"
+          >
+          </n3-icon>
+        </span>
+        <span @click.stop="handleUserClick">
+          <n3-checkbox
+            v-if="showCheckbox"
+            :checked="node.checked"
+            @change="handleCheckChange"
+          >
+          </n3-checkbox>
+        </span>
         <span
           :class="`${prefixCls}-tree-loading-box`"
           v-if="node.loading"
@@ -27,18 +31,20 @@
         <n3-icon :type="node.isLeaf ? tree.leafIcon : tree.childIcon"></n3-icon>
         <node-content :node="node"></node-content>
       </div>
-      <n3-collapse-transition>
-        <div
-          :class="`${prefixCls}-tree-children`"
-          v-show="expanded">
-          <n3-tree-node
-            :render-content="renderContent"
-            v-for="child in node.childNodes"
-            :key="getNodeKey(child)"
-            :node="child">
-          </n3-tree-node>
-        </div>
-      </n3-collapse-transition>
+      <template v-show="expanded">
+        <n3-collapse-transition>
+          <div
+            :class="`${prefixCls}-tree-children`"
+            >
+            <n3-tree-node
+              :render-content="renderContent"
+              v-for="child in node.childNodes"
+              :key="getNodeKey(child)"
+              :node="child">
+            </n3-tree-node>
+          </div>
+        </n3-collapse-transition>
+      </template>
     </div>
   </div>
 </template>
@@ -135,7 +141,6 @@
       handleClick() {
         const store = this.tree.store
         store.setCurrentNode(this.node)
-        console.log('click')
         this.tree.$emit('current-change', store.currentNode ? store.currentNode.data : null, store.currentNode)
         this.tree.currentNode = this
         if (this.tree.expandOnClickNode) {

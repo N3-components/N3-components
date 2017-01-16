@@ -15,7 +15,6 @@
 
 </div>
 
-
 ```html
 
 <n3-data-table
@@ -26,7 +25,6 @@
 ></n3-data-table>
 
 ```
-
 
 #### selection
 
@@ -114,7 +112,6 @@ function(pagination,query,sort,filter){
 
 ```
 
-
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
@@ -141,7 +138,6 @@ function(pagination,query,sort,filter){
 </template>
 
 <script>
-
 export default {
   methods: {
     change (p, q, s, f) {

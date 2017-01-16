@@ -1,13 +1,13 @@
 const getTop = function (e) {
-	let offset = e.offsetTop
-	if (e.offsetParent != null) offset += getTop(e.offsetParent)
-	return offset
+  let offset = e.offsetTop
+  if (e.offsetParent != null) offset += getTop(e.offsetParent)
+  return offset
 }
 const getLeft = function (e) {
-	let offset = e.offsetLeft
-	if (e.offsetParent != null) offset += getLeft(e.offsetParent)
-	return offset
-} 
+  let offset = e.offsetLeft
+  if (e.offsetParent != null) offset += getLeft(e.offsetParent)
+  return offset
+}
 
 const calPosition = function (el) {
 	let w = el.offsetWidth
@@ -54,3 +54,4 @@ export default {
 		}
 	}
 }
+

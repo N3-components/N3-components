@@ -257,7 +257,7 @@
         }
       },
       onSize (pagesize) {
-        console.log(pagesize,1)
+        console.log(pagesize, 1)
         this.currentPagesize = pagesize * 1
         this.changePage(1, true)
       },
