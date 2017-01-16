@@ -112,12 +112,6 @@ export default {
     format: {
       default: 'yyyy-MM-dd'
     },
-    disabledDaysOfWeek: {
-      type: Array,
-      default () {
-        return []
-      }
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -341,9 +335,6 @@ export default {
         const date = new Date(time.year, time.month, i)
         const week = date.getDay()
         let sclass = ''
-        this.disabledDaysOfWeek.forEach((el) => {
-          if (week === parseInt(el, 10)) sclass = this.prefixCls + '-datepicker-item-disable'
-        })
 
         if (i === time.day) {
           if (this.currentValue) {

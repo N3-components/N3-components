@@ -16,7 +16,6 @@ const calPosition = function (el) {
 	let y = getTop(el) - document.body.scrollTop
 	let ww = document.body.clientWidth
 	let wh = document.body.clientHeight
-	console.log(y)
 	if (w && h) {
 		let position1 = 'right'
 		let position2 = 'bottom'
@@ -41,16 +40,17 @@ const calPosition = function (el) {
 import Vue from 'vue'
 
 export default {
-	update (el, binding, vnode) {
-		if (!vnode.context[binding.expression]) {
+	componentUpdated (el, binding) {
+		if (!binding.value) {
 			setTimeout(() => {
 				el.classList.remove('position-right-bottom', 'position-right-top', 'position-left-bottom', 'position-left-top')
 			},500)
 			return
 		}
-
-		Vue.nextTick(() => {
-			calPosition(el)
-		})
+		if (binding.value !== binding.oldValue) {
+			Vue.nextTick(() => {
+				calPosition(el)
+			})
+		}
 	}
 }

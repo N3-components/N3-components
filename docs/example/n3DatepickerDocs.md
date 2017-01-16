@@ -10,38 +10,16 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 </pre>
 </p>
 <n3-datepicker
-ref="dp"
-v-model="value"
-:disabled-days-of-Week="disabled"
-:format="format.toString()" >
+  v-model="value"
+  format="yyyy-MM-dd" >
 </n3-datepicker>
-<h4>一周内无法选择的日期</h4>
 
-<n3-select multiple v-model="disabled">
-<n3-option value="0">0</n3-option>
-<n3-option value="1">1</n3-option>
-<n3-option value="2">2</n3-option>
-<n3-option value="3">3</n3-option>
-<n3-option value="4">4</n3-option>
-<n3-option value="5">5</n3-option>
-<n3-option value="6">6</n3-option>
-</n3-select>
-
-<h4>Format</h4>
-<n3-select v-model="format" >
-<n3-option value="yyyy,MM,dd">yyyy,MM,dd</n3-option>
-<n3-option value="yyyy-MM-dd">yyyy-MM-dd</n3-option>
-<n3-option value="yyyy.MM.dd">yyyy.MM.dd</n3-option>
-<n3-option value="MMM/dd/yyyy">MMM/dd/yyyy</n3-option>
-<n3-option value="MMMM/dd/yyyy">MMMM/dd/yyyy</n3-option>
-</n3-select>
 </div>
 
 ```html
 <n3-datepicker
   v-model="value"
-  :disabled-days-of-Week="disabled"
-  :format="format">
+  format="yyyy-MM-dd">
 </n3-datepicker>
 
 <n3-select multiple v-model="disabled" >
@@ -53,13 +31,6 @@ v-model="value"
   <n3-option value="5">5</n3-option>
   <n3-option value="6">6</n3-option>
 </n3-select>
-<n3-select  v-model="format">
-  <n3-option value="yyyy,MM,dd">yyyy,MM,dd</n3-option>
-  <n3-option value="yyyy-MM-dd">yyyy-MM-dd</n3-option>
-  <n3-option value="yyyy.MM.dd">yyyy.MM.dd</n3-option>
-  <n3-option value="MMM/dd/yyyy">MMM/dd/yyyy</n3-option>
-  <n3-option value="MMMM/dd/yyyy">MMMM/dd/yyyy</n3-option>
-</n3-select>
 ```
 
 ### 参数
@@ -67,12 +38,6 @@ v-model="value"
 |-------------  |---------------- |----------------  |-------- |
 | width          | String     |    200px        |     输入框宽度     |
 | format          | String     |    yyyy-MM-dd        |     日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.     |
-| disabled-days-of-week          | Array     |    200px        |     一周内无法选择的日期     |
-| width          | String     |    200px        |     输入框宽度     |
-| hour-range          | String     |    [0,60]      |     小时范围     |
-| minute-range          | String     |    [0,60]      |     分钟范围     |
-| second-range          | String     |    [0,60]       |     秒范围     |
-| manual          | Boolean     |    false       |     是否允许手动输入     |
 
 ### 事件
 
@@ -89,21 +54,11 @@ v-model="value"
 export default {
   data () {
     return {
-      disabled: [],
-      value: '2016-03-25',
-      format: ['MMM/dd/yyyy']
+      value: '2016-03-25'
     }
   },
   methods: {
     change (val) {
-    }
-  },
-  watch: {
-    disabled () {
-      this.$refs.dp.getDateRange()
-    },
-    format (newV) {
-      this.value = this.$refs.dp.stringify(new Date(this.value))
     }
   }
 }
