@@ -1,6 +1,6 @@
 <template>
 
-### 进度条
+## 进度条
 
 <div class="bs-docs-section" id="进度条"  >
 
