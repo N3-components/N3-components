@@ -61,7 +61,7 @@
 | --- | --- | --- | --- |
 | indicators | `Boolean` | `true` | 是否显示控制点 |
 | controls | `Boolean` | `true` | 是否显示箭头 |
-| interval | `Number` | `5000` | 自动切换时间 |
+| interval | `Number` | `5000` | 自动切换时间(小于等于0时不自动切换) |
 
 </div>
 </template>
