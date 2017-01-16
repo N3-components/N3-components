@@ -17501,123 +17501,121 @@
 	  value: true
 	});
 	// <template><section><template>
-	//   <div class="bs-docs-section" id="文件上传">
-	//     <h1 class="page-header"><a href="#文件上传" class="anchor">文件上传</a><span class="author"> </span></h1>
-	//     <div class="bs-example">
-	//       <h4>点击</h4>
-	//       <n3-uploader url=""></n3-uploader>
-	//       <hr>
-	//        <h4>拖拽</h4>
-	//       <n3-uploader type="drag"></n3-uploader>
-	//     </div>
-	// <p></p><h2>参数</h2><p></p>
-	//   <table class="table table-bordered">
-	//     <thead>
-	//       <tr>
-	//          <th>参数名</th>
-	//         <th>类型</th>
-	//         <th>默认值</th>
-	//         <th>说明</th>
-	//       </tr>
-	//     </thead>
-	//     <tbody>
-	//       <tr>
-	//         <td>name</td>
-	//         <td><code>String</code></td>
-	//         <td>files</td>
-	//         <td>文件对象的name</td>
-	//       </tr>
-	//       <tr>
-	//         <td>type</td>
-	//         <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>
-	//         <td>click</td>
-	//         <td>拖拽或者点击</td>
-	//       </tr>
-	//       <tr>
-	//         <td>accept</td>
-	//         <td><code>String</code></td>
-	//         <td>'' (全支持)</td>
-	//        <td>支持的文件类型 例如: <code>'image/jpeg'</code> 或者 <code>'image'</code>支持所有图片格式,多个如 <code>'txt|image|mp3'</code></td>
-	//       </tr>
-	//       <tr>
-	//         <td>url</td>
-	//         <td><code>String</code></td>
-	//         <td></td>
-	//         <td>上传地址</td>
-	//       </tr>
-	//       <tr>
-	//         <td>params</td>
-	//         <td><code>Object</code></td>
-	//         <td></td>
-	//         <td>上传参数</td>
-	//       </tr>
-	//       <tr>
-	//         <td>multiple</td>
-	//         <td><code>Boolean</code></td>
-	//         <td>true</td>
-	//         <td>支持多文件上传</td>
-	//       </tr>
-	//       <tr>
-	//         <td>drag-width</td>
-	//         <td><code>String</code></td>
-	//         <td>300px</td>
-	//         <td>拖拽框宽度</td>
-	//       </tr>
-	//       <tr>
-	//         <td>drag-height</td>
-	//         <td><code>String</code></td>
-	//         <td>200px</td>
-	//         <td>拖拽框高度</td>
-	//       </tr>
-	//       <tr>
-	//         <td>on-error</td>
-	//         <td><code>Function</code></td>
-	//         <td><pre><code class="language-javascript">
-	// function (data) {
-	//   this.n3Toast({
-	//     text: data.message
-	//   })
-	//   console.log(data.file)
-	// } </code></pre></td>
-	//         <td>出错时触发函数</td>
-	//       </tr>
-	//       <tr>
-	//         <td>on-success</td>
-	//         <td><code>Function</code></td>
-	//         <td></td>
-	//         <td>成功时触发函数</td>
-	//       </tr>
-	//       <tr>
-	//         <td>on-delete</td>
-	//         <td><code>Function</code></td>
-	//         <td></td>
-	//         <td>文件删除时触发函数，举个栗子：<pre><code class="language-javascript">
-	// function (data) {
-	//   if (data.response.success) {
-	//     this.n3Toast({
-	//       text: data.file.name
-	//     })
-	//   }
-	// }</code></pre></td>
-	//       </tr>
-	//       <tr>
-	//         <td>on-finish</td>
-	//         <td><code>Function</code></td>
-	//         <td></td>
-	//         <td>所有上传任务结束时触发函数，举个栗子：<pre><code class="language-javascript">
-	// function () {
-	//   this.render()
-	// }</code></pre></td>
-	//       </tr>
-	//       <tr>
-	//         <td>max-length</td>
-	//         <td><code>Number</code></td>
-	//         <td>10</td>
-	//         <td>上传文件个数限制</td>
-	//       </tr>
-	//     </tbody>
-	//   </table>
-	//   </div>
+	// <h2>文件上传</h2>
+	// <div class="bs-docs-section" id="文件上传">
+	// <div class="bs-example">
+	//   <h4>点击</h4>
+	//   <n3-uploader url=""></n3-uploader>
+	//   <hr>
+	// <p></p><h4>拖拽</h4>
+	// <n3-uploader type="drag"></n3-uploader><p></p>
+	// </div>
+	// <pre><code class="language-html"><span class="hljs-comment">&lt;!-- 点击上传 --&gt;</span>
+	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-uploader</span> <span class="hljs-attr">url</span>=<span class="hljs-string">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-uploader</span>&gt;</span>
+	
+	// <span class="hljs-comment">&lt;!-- 拖拽上传 --&gt;</span>
+	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-uploader</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"drag"</span> &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-uploader</span>&gt;</span>
+	// </code></pre>
+	// <h3>参数</h3>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>参数名</th>
+	// <th>类型</th>
+	// <th>默认值</th>
+	// <th>说明</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>name</td>
+	// <td><code>String</code></td>
+	// <td>files</td>
+	// <td>文件对象的name</td>
+	// </tr>
+	// <tr>
+	// <td>type</td>
+	// <td><code>String</code>：<code>click</code> 或 <code>drag</code></td>
+	// <td>click</td>
+	// <td>拖拽或者点击</td>
+	// </tr>
+	// <tr>
+	// <td>accept</td>
+	// <td><code>String</code></td>
+	// <td>'' (全支持)</td>
+	// <td>支持的文件类型 例如: <code>'image/jpeg'</code> 或者 <code>'image'</code>支持所有图片格式,多个如 <code>'txt|image|mp3'</code></td>
+	// </tr>
+	// <tr>
+	// <td>url</td>
+	// <td><code>String</code></td>
+	// <td></td>
+	// <td>上传地址</td>
+	// </tr>
+	// <tr>
+	// <td>params</td>
+	// <td><code>Object</code></td>
+	// <td></td>
+	// <td>上传参数</td>
+	// </tr>
+	// <tr>
+	// <td>multiple</td>
+	// <td><code>Boolean</code></td>
+	// <td>true</td>
+	// <td>支持多文件上传</td>
+	// </tr>
+	// <tr>
+	// <td>drag-width</td>
+	// <td><code>String</code></td>
+	// <td>300px</td>
+	// <td>拖拽框宽度</td>
+	// </tr>
+	// <tr>
+	// <td>drag-height</td>
+	// <td><code>String</code></td>
+	// <td>200px</td>
+	// <td>拖拽框高度</td>
+	// </tr>
+	// <tr>
+	// <td>max-length</td>
+	// <td><code>Number</code></td>
+	// <td>10</td>
+	// <td>上传文件个数限制</td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// <h3>Events</h3>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>事件名称</th>
+	// <th>说明</th>
+	// <th>回调参数</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>success</td>
+	// <td>成功上传回调时</td>
+	// <td>({response, file})</td>
+	// </tr>
+	// <tr>
+	// <td>finish</td>
+	// <td>完成所有上传任务时</td>
+	// <td>()</td>
+	// </tr>
+	// <tr>
+	// <td>delete</td>
+	// <td>删除一个上传的项目时</td>
+	// <td>(uploadItem)</td>
+	// </tr>
+	// <tr>
+	// <td>error</td>
+	// <td>发生错误时</td>
+	// <td>({message, file})</td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// </div>
 	// </template>
 	
 	// </section></template>
@@ -17635,7 +17633,7 @@
 /* 643 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n  <div class=\"bs-docs-section\" id=\"文件上传\">\n    <h1 class=\"page-header\"><a href=\"#文件上传\" class=\"anchor\">文件上传</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <h4>点击</h4>\n      <n3-uploader url=\"\"></n3-uploader>\n      <hr>\n       <h4>拖拽</h4>\n      <n3-uploader type=\"drag\"></n3-uploader>\n    </div>\n<p></p><h2>参数</h2><p></p>\n  <table class=\"table table-bordered\">\n    <thead>\n      <tr>\n         <th>参数名</th>\n        <th>类型</th>\n        <th>默认值</th>\n        <th>说明</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>name</td>\n        <td><code>String</code></td>\n        <td>files</td>\n        <td>文件对象的name</td>\n      </tr>\n      <tr>\n        <td>type</td>\n        <td><code>String</code> oneof <code>click</code> <code>drag</code> </td>\n        <td>click</td>\n        <td>拖拽或者点击</td>\n      </tr>\n      <tr>\n        <td>accept</td>\n        <td><code>String</code></td>\n        <td>'' (全支持)</td>\n       <td>支持的文件类型 例如: <code>'image/jpeg'</code> 或者 <code>'image'</code>支持所有图片格式,多个如 <code>'txt|image|mp3'</code></td>\n      </tr>\n      <tr>\n        <td>url</td>\n        <td><code>String</code></td>\n        <td></td>\n        <td>上传地址</td>\n      </tr>\n      <tr>\n        <td>params</td>\n        <td><code>Object</code></td>\n        <td></td>\n        <td>上传参数</td>\n      </tr>\n      <tr>\n        <td>multiple</td>\n        <td><code>Boolean</code></td>\n        <td>true</td>\n        <td>支持多文件上传</td>\n      </tr>\n      <tr>\n        <td>drag-width</td>\n        <td><code>String</code></td>\n        <td>300px</td>\n        <td>拖拽框宽度</td>\n      </tr>\n      <tr>\n        <td>drag-height</td>\n        <td><code>String</code></td>\n        <td>200px</td>\n        <td>拖拽框高度</td>\n      </tr>\n      <tr>\n        <td>on-error</td>\n        <td><code>Function</code></td>\n        <td><pre><code class=\"language-javascript\">\nfunction (data) {\n  this.n3Toast({\n    text: data.message\n  })\n  console.log(data.file)\n} </code></pre></td>\n        <td>出错时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-success</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>成功时触发函数</td>\n      </tr>\n      <tr>\n        <td>on-delete</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>文件删除时触发函数，举个栗子：<pre><code class=\"language-javascript\">\nfunction (data) {\n  if (data.response.success) {\n    this.n3Toast({\n      text: data.file.name\n    })\n  }\n}</code></pre></td>\n      </tr>\n      <tr>\n        <td>on-finish</td>\n        <td><code>Function</code></td>\n        <td></td>\n        <td>所有上传任务结束时触发函数，举个栗子：<pre><code class=\"language-javascript\">\nfunction () {\n  this.render()\n}</code></pre></td>\n      </tr>\n      <tr>\n        <td>max-length</td>\n        <td><code>Number</code></td>\n        <td>10</td>\n        <td>上传文件个数限制</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>\n</template>\n\n</section>";
+	module.exports = "<section><template>\n<h2>文件上传</h2>\n<div class=\"bs-docs-section\" id=\"文件上传\">\n<div class=\"bs-example\">\n  <h4>点击</h4>\n  <n3-uploader url=\"\"></n3-uploader>\n  <hr>\n<p></p><h4>拖拽</h4>\n<n3-uploader type=\"drag\"></n3-uploader><p></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- 点击上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">url</span>=<span class=\"hljs-string\">\"\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 拖拽上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"drag\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>files</td>\n<td>文件对象的name</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code>：<code>click</code> 或 <code>drag</code></td>\n<td>click</td>\n<td>拖拽或者点击</td>\n</tr>\n<tr>\n<td>accept</td>\n<td><code>String</code></td>\n<td>'' (全支持)</td>\n<td>支持的文件类型 例如: <code>'image/jpeg'</code> 或者 <code>'image'</code>支持所有图片格式,多个如 <code>'txt|image|mp3'</code></td>\n</tr>\n<tr>\n<td>url</td>\n<td><code>String</code></td>\n<td></td>\n<td>上传地址</td>\n</tr>\n<tr>\n<td>params</td>\n<td><code>Object</code></td>\n<td></td>\n<td>上传参数</td>\n</tr>\n<tr>\n<td>multiple</td>\n<td><code>Boolean</code></td>\n<td>true</td>\n<td>支持多文件上传</td>\n</tr>\n<tr>\n<td>drag-width</td>\n<td><code>String</code></td>\n<td>300px</td>\n<td>拖拽框宽度</td>\n</tr>\n<tr>\n<td>drag-height</td>\n<td><code>String</code></td>\n<td>200px</td>\n<td>拖拽框高度</td>\n</tr>\n<tr>\n<td>max-length</td>\n<td><code>Number</code></td>\n<td>10</td>\n<td>上传文件个数限制</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>success</td>\n<td>成功上传回调时</td>\n<td>({response, file})</td>\n</tr>\n<tr>\n<td>finish</td>\n<td>完成所有上传任务时</td>\n<td>()</td>\n</tr>\n<tr>\n<td>delete</td>\n<td>删除一个上传的项目时</td>\n<td>(uploadItem)</td>\n</tr>\n<tr>\n<td>error</td>\n<td>发生错误时</td>\n<td>({message, file})</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
 /* 644 */
@@ -45215,29 +45213,33 @@
 	
 	//       </div>
 	
-	//       <n3-collapse-transition>
+	//       <template v-show="expanded">
 	
-	//         <div
+	//         <n3-collapse-transition>
 	
-	//           :class="`${prefixCls}-tree-children`"
+	//           <div
 	
-	//           v-show="expanded">
+	//             :class="`${prefixCls}-tree-children`"
 	
-	//           <n3-tree-node
+	//             >
 	
-	//             :render-content="renderContent"
+	//             <n3-tree-node
 	
-	//             v-for="child in node.childNodes"
+	//               :render-content="renderContent"
 	
-	//             :key="getNodeKey(child)"
+	//               v-for="child in node.childNodes"
 	
-	//             :node="child">
+	//               :key="getNodeKey(child)"
 	
-	//           </n3-tree-node>
+	//               :node="child">
 	
-	//         </div>
+	//             </n3-tree-node>
 	
-	//       </n3-collapse-transition>
+	//           </div>
+	
+	//         </n3-collapse-transition>
+	
+	//       </template>
 	
 	//     </div>
 	
@@ -45332,7 +45334,6 @@
 	    handleClick: function handleClick() {
 	      var store = this.tree.store;
 	      store.setCurrentNode(this.node);
-	      console.log('click');
 	      this.tree.$emit('current-change', store.currentNode ? store.currentNode.data : null, store.currentNode);
 	      this.tree.currentNode = this;
 	      if (this.tree.expandOnClickNode) {
@@ -45398,7 +45399,7 @@
 /* 856 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-tree-node`\">\r\n    <div \r\n      @click.stop=\"handleClick\"\r\n      v-show=\"node.visible\"\r\n      :class=\"[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']\">\r\n      <div :class=\"`${prefixCls}-tree-node__content`\"\r\n        :style=\"{ 'padding-left': (node.level - 1) * 20 + 'px' }\">\r\n        <span @click.stop=\"handleExpandIconClick\">\r\n          <n3-icon\r\n            v-show=\"!node.isLeaf\"\r\n            :class=\"`${prefixCls}-tree-select-icon`\"\r\n            :type=\"(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon\"\r\n          >\r\n          </n3-icon>\r\n        </span>\r\n        <span @click.stop=\"handleUserClick\">\r\n          <n3-checkbox\r\n            v-if=\"showCheckbox\"\r\n            :checked=\"node.checked\"\r\n            @change=\"handleCheckChange\"\r\n          >\r\n          </n3-checkbox>\r\n        </span>\r\n        <span\r\n          :class=\"`${prefixCls}-tree-loading-box`\"\r\n          v-if=\"node.loading\"\r\n        >\r\n          <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\r\n        </span>\r\n        <n3-icon :type=\"node.isLeaf ? tree.leafIcon : tree.childIcon\"></n3-icon>\r\n        <node-content :node=\"node\"></node-content>\r\n      </div>\r\n      <n3-collapse-transition>\r\n        <div\r\n          :class=\"`${prefixCls}-tree-children`\"\r\n          v-show=\"expanded\">\r\n          <n3-tree-node\r\n            :render-content=\"renderContent\"\r\n            v-for=\"child in node.childNodes\"\r\n            :key=\"getNodeKey(child)\"\r\n            :node=\"child\">\r\n          </n3-tree-node>\r\n        </div>\r\n      </n3-collapse-transition>\r\n    </div>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-tree-node`\">\r\n    <div \r\n      @click.stop=\"handleClick\"\r\n      v-show=\"node.visible\"\r\n      :class=\"[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']\">\r\n      <div :class=\"`${prefixCls}-tree-node__content`\"\r\n        :style=\"{ 'padding-left': (node.level - 1) * 20 + 'px' }\">\r\n        <span @click.stop=\"handleExpandIconClick\">\r\n          <n3-icon\r\n            v-show=\"!node.isLeaf\"\r\n            :class=\"`${prefixCls}-tree-select-icon`\"\r\n            :type=\"(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon\"\r\n          >\r\n          </n3-icon>\r\n        </span>\r\n        <span @click.stop=\"handleUserClick\">\r\n          <n3-checkbox\r\n            v-if=\"showCheckbox\"\r\n            :checked=\"node.checked\"\r\n            @change=\"handleCheckChange\"\r\n          >\r\n          </n3-checkbox>\r\n        </span>\r\n        <span\r\n          :class=\"`${prefixCls}-tree-loading-box`\"\r\n          v-if=\"node.loading\"\r\n        >\r\n          <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\r\n        </span>\r\n        <n3-icon :type=\"node.isLeaf ? tree.leafIcon : tree.childIcon\"></n3-icon>\r\n        <node-content :node=\"node\"></node-content>\r\n      </div>\r\n      <template v-show=\"expanded\">\r\n        <n3-collapse-transition>\r\n          <div\r\n            :class=\"`${prefixCls}-tree-children`\"\r\n            >\r\n            <n3-tree-node\r\n              :render-content=\"renderContent\"\r\n              v-for=\"child in node.childNodes\"\r\n              :key=\"getNodeKey(child)\"\r\n              :node=\"child\">\r\n            </n3-tree-node>\r\n          </div>\r\n        </n3-collapse-transition>\r\n      </template>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 857 */

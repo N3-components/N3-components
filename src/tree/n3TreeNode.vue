@@ -31,18 +31,20 @@
         <n3-icon :type="node.isLeaf ? tree.leafIcon : tree.childIcon"></n3-icon>
         <node-content :node="node"></node-content>
       </div>
-      <n3-collapse-transition>
-        <div
-          :class="`${prefixCls}-tree-children`"
-          v-show="expanded">
-          <n3-tree-node
-            :render-content="renderContent"
-            v-for="child in node.childNodes"
-            :key="getNodeKey(child)"
-            :node="child">
-          </n3-tree-node>
-        </div>
-      </n3-collapse-transition>
+      <template v-show="expanded">
+        <n3-collapse-transition>
+          <div
+            :class="`${prefixCls}-tree-children`"
+            >
+            <n3-tree-node
+              :render-content="renderContent"
+              v-for="child in node.childNodes"
+              :key="getNodeKey(child)"
+              :node="child">
+            </n3-tree-node>
+          </div>
+        </n3-collapse-transition>
+      </template>
     </div>
   </div>
 </template>
@@ -139,7 +141,6 @@
       handleClick() {
         const store = this.tree.store
         store.setCurrentNode(this.node)
-        console.log('click')
         this.tree.$emit('current-change', store.currentNode ? store.currentNode.data : null, store.currentNode)
         this.tree.currentNode = this
         if (this.tree.expandOnClickNode) {
