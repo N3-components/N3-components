@@ -35,7 +35,6 @@
       return {
         classMap: {},
         colorMap: {},
-        classes: null,
         pointerAtLeftHalf: false,
         currentValue: this.value,
         hoverIndex: -1

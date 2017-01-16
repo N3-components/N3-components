@@ -17,15 +17,13 @@
 |-------------  |---------------- |----------------  |-------- |
 | width          | String     |    200px        |     输入框宽度     |
 | format          | String     |    yyyy-MM-dd hh:mm:ss       |     日期格式   |
-| disabled-days-of-week          | Array     |    200px        |     一周内无法选择的日期     |
-| width          | String     |    200px        |     输入框宽度     |
-| manual          | Boolean     |    false       |     是否允许手动输入     |
 
 ### 事件
 
 | 名称          |   说明          |        
 |-------------  |---------------- |
 | hide | 隐藏 |
+| change | 改变 |
 
 
 <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>

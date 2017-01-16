@@ -10,47 +10,48 @@ const getLeft = function (e) {
 }
 
 const calPosition = function (el) {
-  let w = el.offsetWidth
-  let h = el.offsetHeight
-  let x = getLeft(el) - document.body.scrollLeft
-  let y = getTop(el) - document.body.scrollTop
-  let ww = document.body.clientWidth
-  let wh = document.body.clientHeight
-  console.log(y)
-  if (w && h) {
-    let position1 = 'right'
-    let position2 = 'bottom'
+	let w = el.offsetWidth
+	let h = el.offsetHeight
+	let x = getLeft(el) - document.body.scrollLeft
+	let y = getTop(el) - document.body.scrollTop
+	let ww = document.body.clientWidth
+	let wh = document.body.clientHeight
+	if (w && h) {
+		let position1 = 'right'
+		let position2 = 'bottom'
 
-    el.classList.remove('position-right-bottom', 'position-right-top', 'position-left-bottom', 'position-left-top')
+		el.classList.remove('position-right-bottom', 'position-right-top', 'position-left-bottom', 'position-left-top')
+		
+		if (w + x > ww) {
+			position1 = 'left'
+		}
 
-    if (w + x > ww) {
-      position1 = 'left'
-    }
+		if (h + y  > wh) {
+			position2 = 'top'
+		}
 
-    if (h + y > wh) {
-      position2 = 'top'
-    }
-
-    if (y - h < 0) {
-      position2 = 'bottom'
-    }
-    el.classList.add('position-' + position1 + '-' + position2)
-  }
+		if (y - h < 0) {
+			position2 = 'bottom'
+		}
+		el.classList.add('position-' + position1 + '-' + position2)
+	}
 }
 
 import Vue from 'vue'
 
 export default {
-  update(el, binding, vnode) {
-    if (!vnode.context[binding.expression]) {
-      setTimeout(() => {
-        el.classList.remove('position-right-bottom', 'position-right-top', 'position-left-bottom', 'position-left-top')
-      }, 500)
-      return
-    }
-
-    Vue.nextTick(() => {
-      calPosition(el)
-    })
-  }
+	componentUpdated (el, binding) {
+		if (!binding.value) {
+			setTimeout(() => {
+				el.classList.remove('position-right-bottom', 'position-right-top', 'position-left-bottom', 'position-left-top')
+			},500)
+			return
+		}
+		if (binding.value !== binding.oldValue) {
+			Vue.nextTick(() => {
+				calPosition(el)
+			})
+		}
+	}
 }
+

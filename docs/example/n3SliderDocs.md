@@ -4,20 +4,16 @@
 
 <div class="bs-docs-section" id="滑块"  >
 <div class="bs-example">
-
-<n3-slider v-model="value" @change="change" orientation="vertical"></n3-slider>
-
-<n3-slider v-model="value" @change="change"></n3-slider>
-
+<n3-slider v-model="value" @change="change" orientation="vertical" ></n3-slider>
 <p>滑块的值: {{value}}</p> 
+
+<n3-slider v-model="value1" @change="change" :range="true"></n3-slider>
+<p>滑块的值: {{value1}}</p> 
 </div>
 
 ```html
-<n3-slider v-model="value" :on-change="change" orientation="vertical"></n3-slider>
-
-<n3-slider v-model="value" :on-change="change" ></n3-slider>
-
-<p>滑块的值: {{value}}</p>
+<n3-slider v-model="value" :@change="change" orientation="vertical"></n3-slider>
+<n3-slider v-model="value1" @change="change" :range="true"></n3-slider>
 ```
 
 ```javascript
@@ -36,6 +32,7 @@ export default {
 ```
 
 ### 参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | min          | Number     |    0        |     最小值    |
@@ -64,7 +61,8 @@ export default {
 export default {
   data () {
     return {
-      value: 2
+      value:1,
+      value1: [1, 2]
     }
   },
   methods: {
