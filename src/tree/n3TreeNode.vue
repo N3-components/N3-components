@@ -6,18 +6,22 @@
       :class="[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']">
       <div :class="`${prefixCls}-tree-node__content`"
         :style="{ 'padding-left': (node.level - 1) * 20 + 'px' }">
-        <n3-icon
-          v-show="!node.isLeaf"
-          :class="`${prefixCls}-tree-select-icon`"
-          :type="(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon"
-          @click.stop="handleExpandIconClick">
-        </n3-icon>
-        <n3-checkbox
-          v-if="showCheckbox"
-          :checked="node.checked"
-          @change="handleCheckChange"
-          @click.stop="handleUserClick">
-        </n3-checkbox>
+        <span @click.stop="handleExpandIconClick">
+          <n3-icon
+            v-show="!node.isLeaf"
+            :class="`${prefixCls}-tree-select-icon`"
+            :type="(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon"
+          >
+          </n3-icon>
+        </span>
+        <span @click.stop="handleUserClick">
+          <n3-checkbox
+            v-if="showCheckbox"
+            :checked="node.checked"
+            @change="handleCheckChange"
+          >
+          </n3-checkbox>
+        </span>
         <span
           :class="`${prefixCls}-tree-loading-box`"
           v-if="node.loading"
