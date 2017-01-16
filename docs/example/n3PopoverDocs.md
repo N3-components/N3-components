@@ -80,21 +80,21 @@
 </div>
 
 ```html
-<n3-popover effect="fade" :header="true" title="Title"  placement="top">
+<n3-popover effect="fade" :header="true" title="Title" placement="top">
   <div slot="content" >
      从前有座山
   </div>
   <n3-button>Popover on top</n3-button>
 </n3-popover>
 
-<n3-popover effect="fade" :header="true" title="Title"  placement="left">
+<n3-popover effect="fade" :header="true" title="Title" placement="left">
    <div slot="content">
       山里有座庙
   </div>
   <n3-button>Popover on left</n3-button>
 </n3-popover>
 
-<n3-popover effect="fade" :header="true" title="Title"  placement="right">
+<n3-popover effect="fade" :header="true" title="Title" placement="right">
    <div slot="content">
       庙里有个老和尚
   </div>
@@ -109,32 +109,36 @@
 </n3-popover>
 
 <!-- No title  -->
-<n3-popover effect="fade"   :header ="false" title="Title"  placement="top">
+<n3-popover effect="fade" :header ="false" title="Title" placement="top">
    <div slot="content">
       山里有座庙
     </div>
     <n3-button>Popover on top</n3-button>
 </n3-popover>
-<n3-popover effect="fade"  :header ="false" title="Title"  placement="left">
+
+<n3-popover effect="fade" :header ="false" title="Title" placement="left">
   <div slot="content">
       庙里有个老和尚
   </div>
   <n3-button>Popover on left</n3-button>
 </n3-popover>
-<n3-popover effect="fade"  :header ="false" title="Title"  placement="right">
+
+<n3-popover effect="fade" :header ="false" title="Title" placement="right">
   <div slot="content">
       老和尚说从前有座山
   </div>
   <n3-button>Popover on right</n3-button>
 </n3-popover>
-<n3-popover effect="fade" :header ="false" placement="bottom"  title="Title" >
+
+<n3-popover effect="fade" :header ="false" placement="bottom" title="Title" >
   <div slot="content">
       山里有座庙
     </div>
   <n3-button>Popover on bottom</n3-button>
 </n3-popover>
+
 <!-- Trigger  -->
-<n3-popover effect="scale"  title="Title"  placement="top" trigger="hover">
+<n3-popover effect="scale" title="Title" placement="top" trigger="hover">
   <div slot="content">
     庙里有个老和尚
   </div>
@@ -142,8 +146,7 @@
 </n3-popover>
 
 <!-- Focus  -->
-<n3-popover effect="scale"
-title="Title"  placement="bottom" trigger="focus">
+<n3-popover effect="scale" title="Title" placement="bottom" trigger="focus">
   <div slot="content">
       老和尚很无聊
   </div>
