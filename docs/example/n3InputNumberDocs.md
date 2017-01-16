@@ -3,9 +3,9 @@
 ## 数字输入框
 
 <div class="bs-docs-section">
-  <div class="bs-example">
-    <n3-input-number v-model="value" ></n3-input-number>
-  </div>
+<div class="bs-example">
+  <n3-input-number v-model="value" ></n3-input-number>
+</div>
 
 ```html
 <n3-input-number v-model="value"></n3-input-number>

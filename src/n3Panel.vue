@@ -37,9 +37,6 @@ export default {
     },
     index: {
     },
-    onChange: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -67,9 +64,7 @@ export default {
       }
 
       this.$parent.change(this)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(item)
-      }
+      this.$emit('change', item)
     }
   },
   components: {

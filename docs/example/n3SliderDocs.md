@@ -9,22 +9,31 @@
 
 <n3-slider v-model="value" @change="change"></n3-slider>
 
-
 <p>滑块的值: {{value}}</p> 
 </div>
 
 ```html
-
 <n3-slider v-model="value" :on-change="change" orientation="vertical"></n3-slider>
-
 
 <n3-slider v-model="value" :on-change="change" ></n3-slider>
 
-
-<p>滑块的值: {{value}}</p> 
-
+<p>滑块的值: {{value}}</p>
 ```
 
+```javascript
+export default {
+  data () {
+    return {
+      value: 2
+    }
+  },
+  methods: {
+    change (val) {
+      console.log(val)
+    }
+  }
+}
+```
 
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
@@ -40,18 +49,18 @@
 | width          | String     |    220px      |     水平显示的宽度    |
 | height          | String     |    220px      |     水平显示的宽度    |
 
-### 事件
+### Events
 
 | 名称          |   说明          |        
 |-------------  |---------------- |
 | change | 值变化 |
 
-<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
+
 </div>
 </template>
 
 <script>
-
 export default {
   data () {
     return {

@@ -11,9 +11,9 @@
         <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
       </n3-button>
     </div>
-    <li><a href="#Action">Action</a></li>
-    <li><a href="#Another action">Another action</a></li>
-    <li><a href="#Something else here">Something else here</a></li>
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
   </n3-dropdown>
 </div>
 
@@ -26,9 +26,9 @@
       <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
     </n3-button>
   </div>
-  <li><a href="#Action">Action</a></li>
-  <li><a href="#Another action">Another action</a></li>
-  <li><a href="#Something else here">Something else here</a></li>
+  <li><a href="#">Action</a></li>
+  <li><a href="#">Another action</a></li>
+  <li><a href="#">Something else here</a></li>
 </n3-dropdown>
 ```
 

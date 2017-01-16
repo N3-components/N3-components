@@ -27,7 +27,6 @@
 </n3-nav-item>
 </n3-nav>
 
-
 ```html
 <n3-nav theme="default" >
   <n3-nav-item active>
@@ -79,7 +78,6 @@
 </n3-nav-item>
 </n3-nav>
 
-
 ```html
 <n3-nav theme="dark" type="vertical" >
   <n3-nav-item active>
@@ -109,8 +107,8 @@
 ```
 </div>
 
-
 ### n3-nav参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | type          | String     |    horizontal        |     水平,垂直     |
@@ -118,6 +116,7 @@
 
 
 ### n3-sub-nav参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | trigger          | String     |    click        |     展开方式   <code>click</code><code>hover</code>  |
@@ -125,6 +124,7 @@
 
 
 ### n3-nav-item参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | active          | Boolean     |    false        |     是否激活 |

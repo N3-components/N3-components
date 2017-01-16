@@ -15,7 +15,6 @@
 </n3-multiple-input>
 </div>
 
-
 ```html
 <n3-multiple-input
   @focus="focus" 
@@ -26,7 +25,6 @@
   :items="items" >
 </n3-multiple-input>
 ```
-
 
 ```javascript
 methods: {
@@ -54,6 +52,7 @@ methods: {
 ```
 
 ### 参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | data          | Array     |    -        |     本地数组     |
@@ -68,7 +67,7 @@ methods: {
 | dropdown-height          | String     |    300px       |     下拉框最大高度     |
 
 
-### 事件
+### Events
 
 | 名称          |   说明          |        
 |-------------  |---------------- |

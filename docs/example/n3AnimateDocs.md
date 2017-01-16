@@ -13,7 +13,6 @@
         <p>...</p>
     </div>
   </transition>
-
 </div>
 
 ```html
