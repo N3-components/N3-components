@@ -219,10 +219,14 @@
 	
 	__webpack_require__(454);
 	
+	/* eslint max-len: 0 */
+	
 	if (global._babelPolyfill) {
 	  throw new Error("only one instance of babel-polyfill is allowed");
 	}
 	global._babelPolyfill = true;
+	
+	// Should be removed in the next major release:
 	
 	var DEFINE_PROPERTY = "defineProperty";
 	function define(O, key, value) {
@@ -7457,8 +7461,7 @@
 	!(function(global) {
 	  "use strict";
 	
-	  var Op = Object.prototype;
-	  var hasOwn = Op.hasOwnProperty;
+	  var hasOwn = Object.prototype.hasOwnProperty;
 	  var undefined; // More compressible than void 0.
 	  var $Symbol = typeof Symbol === "function" ? Symbol : {};
 	  var iteratorSymbol = $Symbol.iterator || "@@iterator";
@@ -7482,9 +7485,8 @@
 	  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
 	
 	  function wrap(innerFn, outerFn, self, tryLocsList) {
-	    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
-	    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
-	    var generator = Object.create(protoGenerator.prototype);
+	    // If outerFn provided, then outerFn.prototype instanceof Generator.
+	    var generator = Object.create((outerFn || Generator).prototype);
 	    var context = new Context(tryLocsList || []);
 	
 	    // The ._invoke method unifies the implementations of the .next,
@@ -7530,29 +7532,10 @@
 	  function GeneratorFunction() {}
 	  function GeneratorFunctionPrototype() {}
 	
-	  // This is a polyfill for %IteratorPrototype% for environments that
-	  // don't natively support it.
-	  var IteratorPrototype = {};
-	  IteratorPrototype[iteratorSymbol] = function () {
-	    return this;
-	  };
-	
-	  var getProto = Object.getPrototypeOf;
-	  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
-	  if (NativeIteratorPrototype &&
-	      NativeIteratorPrototype !== Op &&
-	      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
-	    // This environment has a native %IteratorPrototype%; use it instead
-	    // of the polyfill.
-	    IteratorPrototype = NativeIteratorPrototype;
-	  }
-	
-	  var Gp = GeneratorFunctionPrototype.prototype =
-	    Generator.prototype = Object.create(IteratorPrototype);
+	  var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype;
 	  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
 	  GeneratorFunctionPrototype.constructor = GeneratorFunction;
-	  GeneratorFunctionPrototype[toStringTagSymbol] =
-	    GeneratorFunction.displayName = "GeneratorFunction";
+	  GeneratorFunctionPrototype[toStringTagSymbol] = GeneratorFunction.displayName = "GeneratorFunction";
 	
 	  // Helper for defining the .next, .throw, and .return methods of the
 	  // Iterator interface in terms of a single ._invoke method.
@@ -7589,11 +7572,16 @@
 	
 	  // Within the body of any async function, `await x` is transformed to
 	  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
-	  // `hasOwn.call(value, "__await")` to determine if the yielded value is
-	  // meant to be awaited.
+	  // `value instanceof AwaitArgument` to determine if the yielded value is
+	  // meant to be awaited. Some may consider the name of this method too
+	  // cutesy, but they are curmudgeons.
 	  runtime.awrap = function(arg) {
-	    return { __await: arg };
+	    return new AwaitArgument(arg);
 	  };
+	
+	  function AwaitArgument(arg) {
+	    this.arg = arg;
+	  }
 	
 	  function AsyncIterator(generator) {
 	    function invoke(method, arg, resolve, reject) {
@@ -7603,10 +7591,8 @@
 	      } else {
 	        var result = record.arg;
 	        var value = result.value;
-	        if (value &&
-	            typeof value === "object" &&
-	            hasOwn.call(value, "__await")) {
-	          return Promise.resolve(value.__await).then(function(value) {
+	        if (value instanceof AwaitArgument) {
+	          return Promise.resolve(value.arg).then(function(value) {
 	            invoke("next", value, resolve, reject);
 	          }, function(err) {
 	            invoke("throw", err, resolve, reject);
@@ -7675,7 +7661,6 @@
 	  }
 	
 	  defineIteratorMethods(AsyncIterator.prototype);
-	  runtime.AsyncIterator = AsyncIterator;
 	
 	  // Note that simple async functions are implemented on top of
 	  // AsyncIterator objects; they just return a Promise for the value of
@@ -7835,6 +7820,10 @@
 	  // Define Generator.prototype.{next,throw,return} in terms of the
 	  // unified ._invoke helper method.
 	  defineIteratorMethods(Gp);
+	
+	  Gp[iteratorSymbol] = function() {
+	    return this;
+	  };
 	
 	  Gp[toStringTagSymbol] = "Generator";
 	
@@ -8398,12 +8387,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue"
+	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue","-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Docs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue")
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Docs.vue"], function () {
+	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Docs.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Docs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -8425,8 +8414,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.21.0@css-loader/index.js!./../../node_modules/.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-6d6c14ef&file=n3Docs.vue!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue", function() {
-				var newContent = require("!!./../../node_modules/.0.21.0@css-loader/index.js!./../../node_modules/.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-6d6c14ef&file=n3Docs.vue!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-ca7e1e28&file=n3Docs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-ca7e1e28&file=n3Docs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -8444,7 +8433,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".bs-docs-sidenav a:hover{\r\n    cursor: pointer;\r\n  }\r\n  .version{\r\n    position: absolute;\r\n    top: 10px;\r\n    left: 52px;\r\n  }\r\n  .searchCom{\r\n    width: 100%;\r\n    border: 0px;\r\n    border-bottom: 1px solid #ddd;\r\n    padding: 5px 10px;\r\n    margin-top: 10px;\r\n    outline: none;\r\n  }", ""]);
+	exports.push([module.id, ".bs-docs-sidenav a:hover{\n    cursor: pointer;\n  }\n  .version{\n    position: absolute;\n    top: 10px;\n    left: 52px;\n  }\n  .searchCom{\n    width: 100%;\n    border: 0px;\n    border-bottom: 1px solid #ddd;\n    padding: 5px 10px;\n    margin-top: 10px;\n    outline: none;\n  }", ""]);
 	
 	// exports
 
@@ -8950,75 +8939,40 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div>
-	
 	//   <div>
-	
 	//     <header-docs class="freeze" :active="type"></header-docs>
-	
 	//     <n3-container class="bs-docs-container" v-if="type === 'base'">
-	
 	//       <n3-row >
-	
 	//         <n3-column :col="2">
-	
 	//           <input placeholder="搜索" v-model="search" class="searchCom" ></input>
-	
 	//           <n3-nav type="vertical" >
-	
 	//              <n3-nav-item v-for="(item, index) in list">
-	
 	//               <n3-sub-nav :show="item.show" @toggle="handleToggle(item)">
-	
 	//                 <a slot="title" style="color:#333" v-text="index"></a>
-	
 	//                 <n3-nav-item v-for="i in item.list" :active="component == i.value" @click.native="change(i.value)">
-	
 	//                   <a v-text="i.label"></a>
-	
 	//                 </n3-nav-item>
-	
 	//               </n3-sub-nav>
-	
 	//             </n3-nav-item>
-	
 	//           </n3-nav>
-	
 	//         </n3-column>
-	
 	//         <n3-column :col="10">
-	
 	//           <component :is="component" ></component>
-	
 	//         </n3-column>
-	
 	//       <n3-row>
-	
 	//     </n3-container>
-	
 	//     <template v-else>
-	
 	//       <slot></slot>
-	
 	//     </template>
-	
 	//   </div>
-	
 	//   <footer class="bs-docs-footer">
-	
 	//     <n3-container >
-	
 	//       <p>联系邮箱 zhangking520@gmail.com</p>
-	
 	//     </n3-container>
-	
 	//   </footer>
-	
 	// </div>
-	
 	// </template>
-	
 	// <script>
 	__webpack_require__(663);
 	
@@ -9170,41 +9124,23 @@
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//   .bs-docs-sidenav a:hover{
-	
 	//     cursor: pointer;
-	
 	//   }
-	
 	//   .version{
-	
 	//     position: absolute;
-	
 	//     top: 10px;
-	
 	//     left: 52px;
-	
 	//   }
-	
 	//   .searchCom{
-	
 	//     width: 100%;
-	
 	//     border: 0px;
-	
 	//     border-bottom: 1px solid #ddd;
-	
 	//     padding: 5px 10px;
-	
 	//     margin-top: 10px;
-	
 	//     outline: none;
-	
 	//   }
-	
 	
 	// </style>
 
@@ -9422,9 +9358,6 @@
 			_.hooks.run('before-sanity-check', env);
 	
 			if (!env.code || !env.grammar) {
-				if (env.code) {
-					env.element.textContent = env.code;
-				}
 				_.hooks.run('complete', env);
 				return;
 			}
@@ -9502,16 +9435,9 @@
 						lookbehindLength = 0,
 						alias = pattern.alias;
 	
-					if (greedy && !pattern.pattern.global) {
-						// Without the global flag, lastIndex won't work
-						var flags = pattern.pattern.toString().match(/[imuy]*$/)[0];
-						pattern.pattern = RegExp(pattern.pattern.source, flags + "g");
-					}
-	
 					pattern = pattern.pattern || pattern;
 	
-					// Don’t cache length as it changes during the loop
-					for (var i=0, pos = 0; i<strarr.length; pos += strarr[i].length, ++i) {
+					for (var i=0; i<strarr.length; i++) { // Don’t cache length as it changes during the loop
 	
 						var str = strarr[i];
 	
@@ -9531,38 +9457,40 @@
 	
 						// Greedy patterns can override/remove up to two previously matched tokens
 						if (!match && greedy && i != strarr.length - 1) {
-							pattern.lastIndex = pos;
-							match = pattern.exec(text);
+							// Reconstruct the original text using the next two tokens
+							var nextToken = strarr[i + 1].matchedStr || strarr[i + 1],
+							    combStr = str + nextToken;
+	
+							if (i < strarr.length - 2) {
+								combStr += strarr[i + 2].matchedStr || strarr[i + 2];
+							}
+	
+							// Try the pattern again on the reconstructed text
+							pattern.lastIndex = 0;
+							match = pattern.exec(combStr);
 							if (!match) {
-								break;
-							}
-	
-							var from = match.index + (lookbehind ? match[1].length : 0),
-							    to = match.index + match[0].length,
-							    k = i,
-							    p = pos;
-	
-							for (var len = strarr.length; k < len && p < to; ++k) {
-								p += strarr[k].length;
-								// Move the index i to the element in strarr that is closest to from
-								if (from >= p) {
-									++i;
-									pos = p;
-								}
-							}
-	
-							/*
-							 * If strarr[i] is a Token, then the match starts inside another Token, which is invalid
-							 * If strarr[k - 1] is greedy we are in conflict with another greedy pattern
-							 */
-							if (strarr[i] instanceof Token || strarr[k - 1].greedy) {
 								continue;
 							}
 	
+							var from = match.index + (lookbehind ? match[1].length : 0);
+							// To be a valid candidate, the new match has to start inside of str
+							if (from >= str.length) {
+								continue;
+							}
+							var to = match.index + match[0].length,
+							    len = str.length + nextToken.length;
+	
 							// Number of tokens to delete and replace with the new match
-							delNum = k - i;
-							str = text.slice(pos, p);
-							match.index -= pos;
+							delNum = 3;
+	
+							if (to <= len) {
+								if (strarr[i + 1].greedy) {
+									continue;
+								}
+								delNum = 2;
+								combStr = combStr.slice(0, len);
+							}
+							str = combStr;
 						}
 	
 						if (!match) {
@@ -9631,7 +9559,7 @@
 		this.content = content;
 		this.alias = alias;
 		// Copy of the full string this token was created from
-		this.length = (matchedStr || "").length|0;
+		this.matchedStr = matchedStr || null;
 		this.greedy = !!greedy;
 	};
 	
@@ -9667,11 +9595,13 @@
 	
 		_.hooks.run('wrap', env);
 	
-		var attributes = Object.keys(env.attributes).map(function(name) {
-			return name + '="' + (env.attributes[name] || '').replace(/"/g, '&quot;') + '"';
-		}).join(' ');
+		var attributes = '';
 	
-		return '<' + env.tag + ' class="' + env.classes.join(' ') + '"' + (attributes ? ' ' + attributes : '') + '>' + env.content + '</' + env.tag + '>';
+		for (var name in env.attributes) {
+			attributes += (attributes ? ' ' : '') + name + '="' + (env.attributes[name] || '') + '"';
+		}
+	
+		return '<' + env.tag + ' class="' + env.classes.join(' ') + '" ' + attributes + '>' + env.content + '</' + env.tag + '>';
 	
 	};
 	
@@ -9704,11 +9634,7 @@
 	
 		if (document.addEventListener && !script.hasAttribute('data-manual')) {
 			if(document.readyState !== "loading") {
-				if (window.requestAnimationFrame) {
-					window.requestAnimationFrame(_.highlightAll);
-				} else {
-					window.setTimeout(_.highlightAll, 16);
-				}
+				requestAnimationFrame(_.highlightAll, 0);
 			}
 			else {
 				document.addEventListener('DOMContentLoaded', _.highlightAll);
@@ -9737,10 +9663,10 @@
 	Prism.languages.markup = {
 		'comment': /<!--[\w\W]*?-->/,
 		'prolog': /<\?[\w\W]+?\?>/,
-		'doctype': /<!DOCTYPE[\w\W]+?>/i,
+		'doctype': /<!DOCTYPE[\w\W]+?>/,
 		'cdata': /<!\[CDATA\[[\w\W]*?]]>/i,
 		'tag': {
-			pattern: /<\/?(?!\d)[^\s>\/=$<]+(?:\s+[^\s>\/=]+(?:=(?:("|')(?:\\\1|\\?(?!\1)[\w\W])*\1|[^\s'">=]+))?)*\s*\/?>/i,
+			pattern: /<\/?(?!\d)[^\s>\/=.$<]+(?:\s+[^\s>\/=]+(?:=(?:("|')(?:\\\1|\\?(?!\1)[\w\W])*\1|[^\s'">=]+))?)*\s*\/?>/i,
 			inside: {
 				'tag': {
 					pattern: /^<\/?[^\s>\/]+/i,
@@ -9797,10 +9723,7 @@
 		},
 		'url': /url\((?:(["'])(\\(?:\r\n|[\w\W])|(?!\1)[^\\\r\n])*\1|.*?)\)/i,
 		'selector': /[^\{\}\s][^\{\};]*?(?=\s*\{)/,
-		'string': {
-			pattern: /("|')(\\(?:\r\n|[\w\W])|(?!\1)[^\\\r\n])*\1/,
-			greedy: true
-		},
+		'string': /("|')(\\(?:\r\n|[\w\W])|(?!\1)[^\\\r\n])*\1/,
 		'property': /(\b|\B)[\w-]+(?=\s*:)/i,
 		'important': /\B!important\b/i,
 		'function': /[-a-z0-9]+(?=\()/i,
@@ -9881,8 +9804,7 @@
 		'keyword': /\b(as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|var|void|while|with|yield)\b/,
 		'number': /\b-?(0x[\dA-Fa-f]+|0b[01]+|0o[0-7]+|\d*\.?\d+([Ee][+-]?\d+)?|NaN|Infinity)\b/,
 		// Allow for all non-ASCII characters (See http://stackoverflow.com/a/2008444)
-		'function': /[_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*(?=\()/i,
-		'operator': /--?|\+\+?|!=?=?|<=?|>=?|==?=?|&&?|\|\|?|\?|\*\*?|\/|~|\^|%|\.{3}/
+		'function': /[_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*(?=\()/i
 	});
 	
 	Prism.languages.insertBefore('javascript', 'keyword', {
@@ -10023,12 +9945,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue"
+	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue","-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./headerDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue")
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./headerDocs.vue"], function () {
+	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./headerDocs.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./headerDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10044,39 +9966,22 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <header class="bs-docs-nav" id="top" >
-	
 	//     <n3-container fluid style="width:92%">
-	
 	//       <n3-nav>
-	
 	//         <n3-nav-item >
-	
 	//           <a href="./index.html" >N3</a>
-	
 	//         </n3-nav-item>
-	
 	//         <n3-nav-item :active="active==='base'">
-	
 	//           <a href="./component.html" >组件</a>
-	
 	//         </n3-nav-item>
-	
 	//         <!--  <n3-nav-item :active="active==='usage'">
-	
 	//           <a href="./usage.html" >使用</a>
-	
 	//         </n3-nav-item> -->
-	
 	//       </n3-nav>
-	
 	//     </n3-container>
-	
 	//   </header>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  props: {
@@ -10091,7 +9996,7 @@
 /* 467 */
 /***/ function(module, exports) {
 
-	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\r\n    <n3-container fluid style=\"width:92%\">\r\n      <n3-nav>\r\n        <n3-nav-item >\r\n          <a href=\"./index.html\" >N3</a>\r\n        </n3-nav-item>\r\n        <n3-nav-item :active=\"active==='base'\">\r\n          <a href=\"./component.html\" >组件</a>\r\n        </n3-nav-item>\r\n        <!--  <n3-nav-item :active=\"active==='usage'\">\r\n          <a href=\"./usage.html\" >使用</a>\r\n        </n3-nav-item> -->\r\n      </n3-nav>\r\n    </n3-container>\r\n  </header>";
+	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\n    <n3-container fluid style=\"width:92%\">\n      <n3-nav>\n        <n3-nav-item >\n          <a href=\"./index.html\" >N3</a>\n        </n3-nav-item>\n        <n3-nav-item :active=\"active==='base'\">\n          <a href=\"./component.html\" >组件</a>\n        </n3-nav-item>\n        <!--  <n3-nav-item :active=\"active==='usage'\">\n          <a href=\"./usage.html\" >使用</a>\n        </n3-nav-item> -->\n      </n3-nav>\n    </n3-container>\n  </header>";
 
 /***/ },
 /* 468 */
@@ -10110,12 +10015,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-547c3f1f&file=n3LayoutDocs-1.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-547c3f1f&file=n3LayoutDocs-1.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-547c3f1f&file=n3LayoutDocs-1.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs-1.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10137,8 +10042,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-547c3f1f&file=n3LayoutDocs-1.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-1.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-547c3f1f&file=n3LayoutDocs-1.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-1.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-1.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-427f4b5c&file=n3LayoutDocs-1.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-1.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10156,7 +10061,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".context[_v-547c3f1f]{\n    padding-top: 10px;\n    padding-bottom: 10px;\n    background-color: #eee;\n    border: 1px solid #ddd;\n    text-align: center;\n    font-size:14\n  }", ""]);
+	exports.push([module.id, ".context[_v-427f4b5c]{\n    padding-top: 10px;\n    padding-bottom: 10px;\n    background-color: #eee;\n    border: 1px solid #ddd;\n    text-align: center;\n    font-size:14\n  }", ""]);
 	
 	// exports
 
@@ -10165,7 +10070,7 @@
 /* 472 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-547c3f1f=\"\"><template _v-547c3f1f=\"\">\n<h2 _v-547c3f1f=\"\">布局</h2>\n<div class=\"bs-docs-section\" _v-547c3f1f=\"\">\n<div class=\"bs-example\" _v-547c3f1f=\"\">\n  <n3-container fluid=\"\" _v-547c3f1f=\"\">\n    <n3-row _v-547c3f1f=\"\">\n        <n3-column :col=\"8\" class=\"context\" _v-547c3f1f=\"\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\" _v-547c3f1f=\"\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row _v-547c3f1f=\"\">\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-547c3f1f=\"\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre _v-547c3f1f=\"\"><code class=\"language-html\" _v-547c3f1f=\"\"><span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-container</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"8\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"4\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">:col</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-547c3f1f=\"\">class</span>=<span class=\"hljs-string\" _v-547c3f1f=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\" _v-547c3f1f=\"\">&lt;/<span class=\"hljs-name\" _v-547c3f1f=\"\">n3-container</span>&gt;</span>\n</code></pre>\n<h3 _v-547c3f1f=\"\">n3-container参数</h3>\n<table _v-547c3f1f=\"\">\n<thead _v-547c3f1f=\"\">\n<tr _v-547c3f1f=\"\">\n<th _v-547c3f1f=\"\">参数</th>\n<th _v-547c3f1f=\"\">类型</th>\n<th _v-547c3f1f=\"\">默认值</th>\n<th _v-547c3f1f=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-547c3f1f=\"\">\n<tr _v-547c3f1f=\"\">\n<td _v-547c3f1f=\"\">fluid</td>\n<td _v-547c3f1f=\"\">Boolean</td>\n<td _v-547c3f1f=\"\">false</td>\n<td _v-547c3f1f=\"\">是否流式布局</td>\n</tr>\n</tbody>\n</table>\n<h3 _v-547c3f1f=\"\">n3-column参数</h3>\n<table _v-547c3f1f=\"\">\n<thead _v-547c3f1f=\"\">\n<tr _v-547c3f1f=\"\">\n<th _v-547c3f1f=\"\">参数</th>\n<th _v-547c3f1f=\"\">类型</th>\n<th _v-547c3f1f=\"\">默认值</th>\n<th _v-547c3f1f=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-547c3f1f=\"\">\n<tr _v-547c3f1f=\"\">\n<td _v-547c3f1f=\"\">col</td>\n<td _v-547c3f1f=\"\">Number</td>\n<td _v-547c3f1f=\"\">-</td>\n<td _v-547c3f1f=\"\">占的列数</td>\n</tr>\n<tr _v-547c3f1f=\"\">\n<td _v-547c3f1f=\"\">mode</td>\n<td _v-547c3f1f=\"\">String</td>\n<td _v-547c3f1f=\"\">md</td>\n<td _v-547c3f1f=\"\">布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>\n</tr>\n<tr _v-547c3f1f=\"\">\n<td _v-547c3f1f=\"\">offset</td>\n<td _v-547c3f1f=\"\">Number</td>\n<td _v-547c3f1f=\"\">-</td>\n<td _v-547c3f1f=\"\">偏移值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
+	module.exports = "<section _v-427f4b5c=\"\"><template _v-427f4b5c=\"\">\n<h2 _v-427f4b5c=\"\">布局</h2>\n<div class=\"bs-docs-section\" _v-427f4b5c=\"\">\n<div class=\"bs-example\" _v-427f4b5c=\"\">\n  <n3-container fluid=\"\" _v-427f4b5c=\"\">\n    <n3-row _v-427f4b5c=\"\">\n        <n3-column :col=\"8\" class=\"context\" _v-427f4b5c=\"\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\" _v-427f4b5c=\"\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row _v-427f4b5c=\"\">\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-427f4b5c=\"\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre _v-427f4b5c=\"\"><code class=\"language-html\" _v-427f4b5c=\"\"><span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-container</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"8\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"4\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">:col</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-427f4b5c=\"\">class</span>=<span class=\"hljs-string\" _v-427f4b5c=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\" _v-427f4b5c=\"\">&lt;/<span class=\"hljs-name\" _v-427f4b5c=\"\">n3-container</span>&gt;</span>\n</code></pre>\n<h3 _v-427f4b5c=\"\">n3-container参数</h3>\n<table _v-427f4b5c=\"\">\n<thead _v-427f4b5c=\"\">\n<tr _v-427f4b5c=\"\">\n<th _v-427f4b5c=\"\">参数</th>\n<th _v-427f4b5c=\"\">类型</th>\n<th _v-427f4b5c=\"\">默认值</th>\n<th _v-427f4b5c=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-427f4b5c=\"\">\n<tr _v-427f4b5c=\"\">\n<td _v-427f4b5c=\"\">fluid</td>\n<td _v-427f4b5c=\"\">Boolean</td>\n<td _v-427f4b5c=\"\">false</td>\n<td _v-427f4b5c=\"\">是否流式布局</td>\n</tr>\n</tbody>\n</table>\n<h3 _v-427f4b5c=\"\">n3-column参数</h3>\n<table _v-427f4b5c=\"\">\n<thead _v-427f4b5c=\"\">\n<tr _v-427f4b5c=\"\">\n<th _v-427f4b5c=\"\">参数</th>\n<th _v-427f4b5c=\"\">类型</th>\n<th _v-427f4b5c=\"\">默认值</th>\n<th _v-427f4b5c=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-427f4b5c=\"\">\n<tr _v-427f4b5c=\"\">\n<td _v-427f4b5c=\"\">col</td>\n<td _v-427f4b5c=\"\">Number</td>\n<td _v-427f4b5c=\"\">-</td>\n<td _v-427f4b5c=\"\">占的列数</td>\n</tr>\n<tr _v-427f4b5c=\"\">\n<td _v-427f4b5c=\"\">mode</td>\n<td _v-427f4b5c=\"\">String</td>\n<td _v-427f4b5c=\"\">md</td>\n<td _v-427f4b5c=\"\">布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)</td>\n</tr>\n<tr _v-427f4b5c=\"\">\n<td _v-427f4b5c=\"\">offset</td>\n<td _v-427f4b5c=\"\">Number</td>\n<td _v-427f4b5c=\"\">-</td>\n<td _v-427f4b5c=\"\">偏移值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
 /* 473 */
@@ -10187,12 +10092,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-3.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-2.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-3.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-7e030830&file=n3IconDocs-3.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-3.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-3.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-2.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-ce502fa8&file=n3IconDocs-2.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-2.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-2.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-7e030830&file=n3IconDocs-3.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-3.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-ce502fa8&file=n3IconDocs-2.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-2.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10214,8 +10119,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-7e030830&file=n3IconDocs-3.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-3.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-7e030830&file=n3IconDocs-3.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-3.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-ce502fa8&file=n3IconDocs-2.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-2.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-ce502fa8&file=n3IconDocs-2.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-2.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10233,7 +10138,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".row-ex div[_v-7e030830] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-7e030830] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-7e030830] {\n    color:gray;\n  }", ""]);
+	exports.push([module.id, ".row-ex div[_v-ce502fa8] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-ce502fa8] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-ce502fa8] {\n    color:gray;\n  }", ""]);
 	
 	// exports
 
@@ -10379,7 +10284,7 @@
 /* 478 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-7e030830=\"\"><template _v-7e030830=\"\">\n<h2 _v-7e030830=\"\">图标</h2>\n<div class=\"bs-docs-section\" id=\"图标\" _v-7e030830=\"\">\n<div class=\"bs-example\" _v-7e030830=\"\">\n<h3 _v-7e030830=\"\">FontAwesome 4.0 图标列表</h3>\n<h4 _v-7e030830=\"\">11 New Icons in 4.0</h4>\n<hr _v-7e030830=\"\">\n<n3-container _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-7e030830=\"\">\n  <h4 _v-7e030830=\"\">Web Application Icons</h4>\n  <hr _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-7e030830=\"\">Form Control Icons</h4>\n  <hr _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-7e030830=\"\">\n  <h4 _v-7e030830=\"\">Currency Icons</h4>\n  <hr _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-7e030830=\"\">\n  <h4 _v-7e030830=\"\">Text Edit Icons</h4>\n  <hr _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-7e030830=\"\">\n  <h4 _v-7e030830=\"\">Directional Icons</h4>\n  <hr _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-7e030830=\"\">\n  <h4 _v-7e030830=\"\">Video Player Icons</h4>\n  <hr _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-7e030830=\"\">\n  <h4 _v-7e030830=\"\">Brand Icons</h4>\n  <hr _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-7e030830=\"\">\n  <h4 _v-7e030830=\"\">Medical Icons</h4>\n  <hr _v-7e030830=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-7e030830=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-7e030830=\"\"><n3-icon :type=\"font\" _v-7e030830=\"\"></n3-icon><span _v-7e030830=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-7e030830=\"\"><code class=\"language-html\" _v-7e030830=\"\"><span class=\"hljs-tag\" _v-7e030830=\"\">&lt;<span class=\"hljs-name\" _v-7e030830=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-7e030830=\"\">type</span>=<span class=\"hljs-string\" _v-7e030830=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-7e030830=\"\">&lt;/<span class=\"hljs-name\" _v-7e030830=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-7e030830=\"\">参数</h3>\n<table _v-7e030830=\"\">\n<thead _v-7e030830=\"\">\n<tr _v-7e030830=\"\">\n<th _v-7e030830=\"\">参数名</th>\n<th _v-7e030830=\"\">类型</th>\n<th _v-7e030830=\"\">默认值</th>\n<th _v-7e030830=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-7e030830=\"\">\n<tr _v-7e030830=\"\">\n<td _v-7e030830=\"\">type</td>\n<td _v-7e030830=\"\"><code _v-7e030830=\"\">String</code></td>\n<td _v-7e030830=\"\"></td>\n<td _v-7e030830=\"\">图标类型名</td>\n</tr>\n<tr _v-7e030830=\"\">\n<td _v-7e030830=\"\">size</td>\n<td _v-7e030830=\"\"><code _v-7e030830=\"\">String</code></td>\n<td _v-7e030830=\"\"></td>\n<td _v-7e030830=\"\">图标尺寸</td>\n</tr>\n<tr _v-7e030830=\"\">\n<td _v-7e030830=\"\">color</td>\n<td _v-7e030830=\"\"><code _v-7e030830=\"\">String</code></td>\n<td _v-7e030830=\"\"></td>\n<td _v-7e030830=\"\">颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-ce502fa8=\"\"><template _v-ce502fa8=\"\">\n<h2 _v-ce502fa8=\"\">图标</h2>\n<div class=\"bs-docs-section\" id=\"图标\" _v-ce502fa8=\"\">\n<div class=\"bs-example\" _v-ce502fa8=\"\">\n<h3 _v-ce502fa8=\"\">FontAwesome 4.0 图标列表</h3>\n<h4 _v-ce502fa8=\"\">11 New Icons in 4.0</h4>\n<hr _v-ce502fa8=\"\">\n<n3-container _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-ce502fa8=\"\">\n  <h4 _v-ce502fa8=\"\">Web Application Icons</h4>\n  <hr _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-ce502fa8=\"\">Form Control Icons</h4>\n  <hr _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-ce502fa8=\"\">\n  <h4 _v-ce502fa8=\"\">Currency Icons</h4>\n  <hr _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-ce502fa8=\"\">\n  <h4 _v-ce502fa8=\"\">Text Edit Icons</h4>\n  <hr _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-ce502fa8=\"\">\n  <h4 _v-ce502fa8=\"\">Directional Icons</h4>\n  <hr _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-ce502fa8=\"\">\n  <h4 _v-ce502fa8=\"\">Video Player Icons</h4>\n  <hr _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-ce502fa8=\"\">\n  <h4 _v-ce502fa8=\"\">Brand Icons</h4>\n  <hr _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-ce502fa8=\"\">\n  <h4 _v-ce502fa8=\"\">Medical Icons</h4>\n  <hr _v-ce502fa8=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-ce502fa8=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-ce502fa8=\"\"><n3-icon :type=\"font\" _v-ce502fa8=\"\"></n3-icon><span _v-ce502fa8=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-ce502fa8=\"\"><code class=\"language-html\" _v-ce502fa8=\"\"><span class=\"hljs-tag\" _v-ce502fa8=\"\">&lt;<span class=\"hljs-name\" _v-ce502fa8=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-ce502fa8=\"\">type</span>=<span class=\"hljs-string\" _v-ce502fa8=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-ce502fa8=\"\">&lt;/<span class=\"hljs-name\" _v-ce502fa8=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-ce502fa8=\"\">参数</h3>\n<table _v-ce502fa8=\"\">\n<thead _v-ce502fa8=\"\">\n<tr _v-ce502fa8=\"\">\n<th _v-ce502fa8=\"\">参数名</th>\n<th _v-ce502fa8=\"\">类型</th>\n<th _v-ce502fa8=\"\">默认值</th>\n<th _v-ce502fa8=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-ce502fa8=\"\">\n<tr _v-ce502fa8=\"\">\n<td _v-ce502fa8=\"\">type</td>\n<td _v-ce502fa8=\"\"><code _v-ce502fa8=\"\">String</code></td>\n<td _v-ce502fa8=\"\"></td>\n<td _v-ce502fa8=\"\">图标类型名</td>\n</tr>\n<tr _v-ce502fa8=\"\">\n<td _v-ce502fa8=\"\">size</td>\n<td _v-ce502fa8=\"\"><code _v-ce502fa8=\"\">String</code></td>\n<td _v-ce502fa8=\"\"></td>\n<td _v-ce502fa8=\"\">图标尺寸</td>\n</tr>\n<tr _v-ce502fa8=\"\">\n<td _v-ce502fa8=\"\">color</td>\n<td _v-ce502fa8=\"\"><code _v-ce502fa8=\"\">String</code></td>\n<td _v-ce502fa8=\"\"></td>\n<td _v-ce502fa8=\"\">颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 479 */
@@ -10400,12 +10305,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-2.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-11.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-2.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-2.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-2.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-11.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-11.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-11.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-2.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-11.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10596,12 +10501,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-3.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-4.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-3.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-3.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-3.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-4.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-3.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10623,8 +10528,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-12e00d50&file=n3AlertDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-4.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-12e00d50&file=n3AlertDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-4.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-37fdd9fa&file=n3AlertDocs-3.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-3.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-37fdd9fa&file=n3AlertDocs-3.vue!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-3.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10947,12 +10852,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11071,10 +10976,10 @@
 	      return map[type];
 	    },
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          type = this.type,
-	          placement = this.placement,
-	          small = this.small;
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
+	      var placement = this.placement;
+	      var small = this.small;
 	
 	      var klass = {};
 	
@@ -11092,50 +10997,29 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <transition name="fade">
-	
 	//     <div
-	
 	//      v-show="isShow"
-	
 	//      :class="classObj"
-	
 	//       :style="{width:width}">
-	
 	
 	//       <n3-icon :class="`${prefixCls}-alert-icon`" :type="iconType" ></n3-icon>
 	
-	
 	//       <button v-if="dismissable" type="button" :class="`${prefixCls}-close`"
-	
 	//          @click="handleClose" >
-	
 	//         <span>&times;</span>
-	
 	//       </button>
 	
-	
 	//       <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
-	
 	//         <h4>{{message}}</h4>
-	
 	//         <p><slot></slot></p>
-	
 	//       </div>
-	
 	//       <span v-else>
-	
 	//           <slot></slot>
-	
 	//       </span>
-	
 	//     </div>
-	
 	//   </transition>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -11152,12 +11036,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11173,15 +11057,10 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <i :class="[prefixCls + '-fa',prefixCls +'-fa-'+type]" :style="{fontSize:size,color:color}">
-	
 	//     <slot></slot>
-	
 	//   </i>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Icon',
@@ -11207,13 +11086,13 @@
 /* 492 */
 /***/ function(module, exports) {
 
-	module.exports = "<i :class=\"[prefixCls + '-fa',prefixCls +'-fa-'+type]\" :style=\"{fontSize:size,color:color}\">\r\n    <slot></slot>\r\n  </i>";
+	module.exports = "<i :class=\"[prefixCls + '-fa',prefixCls +'-fa-'+type]\" :style=\"{fontSize:size,color:color}\">\n    <slot></slot>\n  </i>";
 
 /***/ },
 /* 493 */
 /***/ function(module, exports) {
 
-	module.exports = "<transition name=\"fade\">\r\n    <div\r\n     v-show=\"isShow\"\r\n     :class=\"classObj\"\r\n      :style=\"{width:width}\">\r\n\r\n      <n3-icon :class=\"`${prefixCls}-alert-icon`\" :type=\"iconType\" ></n3-icon>\r\n\r\n      <button v-if=\"dismissable\" type=\"button\" :class=\"`${prefixCls}-close`\"\r\n         @click=\"handleClose\" >\r\n        <span>&times;</span>\r\n      </button>\r\n\r\n      <div v-if=\"description\" :class=\"`${prefixCls}prefixCls}}-alert-content`\">\r\n        <h4>{{message}}</h4>\r\n        <p><slot></slot></p>\r\n      </div>\r\n      <span v-else>\r\n          <slot></slot>\r\n      </span>\r\n    </div>\r\n  </transition>";
+	module.exports = "<transition name=\"fade\">\n    <div\n     v-show=\"isShow\"\n     :class=\"classObj\"\n      :style=\"{width:width}\">\n\n      <n3-icon :class=\"`${prefixCls}-alert-icon`\" :type=\"iconType\" ></n3-icon>\n\n      <button v-if=\"dismissable\" type=\"button\" :class=\"`${prefixCls}-close`\"\n         @click=\"handleClose\" >\n        <span>&times;</span>\n      </button>\n\n      <div v-if=\"description\" :class=\"`${prefixCls}prefixCls}}-alert-content`\">\n        <h4>{{message}}</h4>\n        <p><slot></slot></p>\n      </div>\n      <span v-else>\n          <slot></slot>\n      </span>\n    </div>\n  </transition>";
 
 /***/ },
 /* 494 */
@@ -11228,12 +11107,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11260,19 +11139,12 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <a :class="classObj">
-	
 	//   	<slot></slot>	
-	
 	//   	<n3-loading v-if="loading" size="xs" style="position:relative;top:2px"></n3-loading>
-	
 	//     <n3-badge  v-if="badge">{{badge}}</n3-badge>
-	
 	//   </a>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Button',
@@ -11310,12 +11182,12 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          type = this.type,
-	          size = this.size,
-	          block = this.block,
-	          active = this.active,
-	          disabled = this.disabled;
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
+	      var size = this.size;
+	      var block = this.block;
+	      var active = this.active;
+	      var disabled = this.disabled;
 	
 	      var klass = {};
 	
@@ -11349,12 +11221,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11370,17 +11242,11 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <span :class="classObj">
-	
 	//     <i :class="iclassObj"></i>
-	
 	//     <slot></slot>  
-	
 	//   </span>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Loading',
@@ -11408,9 +11274,9 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          center = this.center,
-	          fixed = this.fixed;
+	      var prefixCls = this.prefixCls;
+	      var center = this.center;
+	      var fixed = this.fixed;
 	
 	      var klass = {};
 	
@@ -11422,10 +11288,10 @@
 	      return klass;
 	    },
 	    iclassObj: function iclassObj() {
-	      var prefixCls = this.prefixCls,
-	          type = this.type,
-	          size = this.size,
-	          color = this.color;
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
+	      var size = this.size;
+	      var color = this.color;
 	
 	      var klass = {};
 	
@@ -11444,7 +11310,7 @@
 /* 498 */
 /***/ function(module, exports) {
 
-	module.exports = "<span :class=\"classObj\">\r\n    <i :class=\"iclassObj\"></i>\r\n    <slot></slot>  \r\n  </span>";
+	module.exports = "<span :class=\"classObj\">\n    <i :class=\"iclassObj\"></i>\n    <slot></slot>  \n  </span>";
 
 /***/ },
 /* 499 */
@@ -11459,12 +11325,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11480,15 +11346,10 @@
 		value: true
 	});
 	// <template>
-	
 	//   <span :class="`${prefixCls}-badge`">
-	
 	// 		<slot></slot>	
-	
 	// 	</span>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 		name: 'n3Badge',
@@ -11505,13 +11366,13 @@
 /* 501 */
 /***/ function(module, exports) {
 
-	module.exports = "<span :class=\"`${prefixCls}-badge`\">\r\n\t\t<slot></slot>\t\r\n\t</span>";
+	module.exports = "<span :class=\"`${prefixCls}-badge`\">\n\t\t<slot></slot>\t\n\t</span>";
 
 /***/ },
 /* 502 */
 /***/ function(module, exports) {
 
-	module.exports = "<a :class=\"classObj\">\r\n  \t<slot></slot>\t\r\n  \t<n3-loading v-if=\"loading\" size=\"xs\" style=\"position:relative;top:2px\"></n3-loading>\r\n    <n3-badge  v-if=\"badge\">{{badge}}</n3-badge>\r\n  </a>";
+	module.exports = "<a :class=\"classObj\">\n  \t<slot></slot>\t\n  \t<n3-loading v-if=\"loading\" size=\"xs\" style=\"position:relative;top:2px\"></n3-loading>\n    <n3-badge  v-if=\"badge\">{{badge}}</n3-badge>\n  </a>";
 
 /***/ },
 /* 503 */
@@ -11538,12 +11399,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-5.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-4.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-5.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-5.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-5.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-4.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-4.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-4.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-5.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-4.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11757,12 +11618,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-6.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-5.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-5.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-6.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-5.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11952,12 +11813,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-af42f162&file=n3AffixDocs-7.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-7.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c4b011c&file=n3AffixDocs-7.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-7.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-af42f162&file=n3AffixDocs-7.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-7.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-2c4b011c&file=n3AffixDocs-7.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-7.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11979,8 +11840,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-af42f162&file=n3AffixDocs-7.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-af42f162&file=n3AffixDocs-7.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c4b011c&file=n3AffixDocs-7.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-2c4b011c&file=n3AffixDocs-7.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11998,7 +11859,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".sidebar[_v-af42f162]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-af42f162]{\n  position: static;\n}", ""]);
+	exports.push([module.id, ".sidebar[_v-2c4b011c]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-2c4b011c]{\n  position: static;\n}", ""]);
 	
 	// exports
 
@@ -12081,7 +11942,7 @@
 /* 517 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-af42f162=\"\"><template _v-af42f162=\"\">\n<h3 _v-af42f162=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-af42f162=\"\">\n  <div class=\"bs-example\" _v-af42f162=\"\">\n    <h3 _v-af42f162=\"\">\n      <n3-affix :offset=\"0\" _v-af42f162=\"\">\n        <nav class=\"sidebar\" _v-af42f162=\"\">\n          <ul _v-af42f162=\"\">\n            <li _v-af42f162=\"\">...</li>\n            <li _v-af42f162=\"\">...</li>\n            <li _v-af42f162=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-af42f162=\"\"><code class=\"language-html\" _v-af42f162=\"\"><span class=\"hljs-tag\" _v-af42f162=\"\">&lt;<span class=\"hljs-name\" _v-af42f162=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-af42f162=\"\">:offset</span>=<span class=\"hljs-string\" _v-af42f162=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-af42f162=\"\">&lt;<span class=\"hljs-name\" _v-af42f162=\"\">nav</span> <span class=\"hljs-attr\" _v-af42f162=\"\">class</span>=<span class=\"hljs-string\" _v-af42f162=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-af42f162=\"\">&lt;<span class=\"hljs-name\" _v-af42f162=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-af42f162=\"\">&lt;<span class=\"hljs-name\" _v-af42f162=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-af42f162=\"\">&lt;/<span class=\"hljs-name\" _v-af42f162=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-af42f162=\"\">&lt;<span class=\"hljs-name\" _v-af42f162=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-af42f162=\"\">&lt;/<span class=\"hljs-name\" _v-af42f162=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-af42f162=\"\">&lt;<span class=\"hljs-name\" _v-af42f162=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-af42f162=\"\">&lt;/<span class=\"hljs-name\" _v-af42f162=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-af42f162=\"\">&lt;/<span class=\"hljs-name\" _v-af42f162=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-af42f162=\"\">&lt;/<span class=\"hljs-name\" _v-af42f162=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-af42f162=\"\">&lt;/<span class=\"hljs-name\" _v-af42f162=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<p _v-af42f162=\"\"></p><h2 _v-af42f162=\"\">参数</h2>\n<table class=\"table table-bordered\" _v-af42f162=\"\">\n<thead _v-af42f162=\"\">\n<tr _v-af42f162=\"\">\n<th _v-af42f162=\"\">参数名</th>\n<th _v-af42f162=\"\">类型</th>\n<th _v-af42f162=\"\">默认值</th>\n<th _v-af42f162=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-af42f162=\"\">\n<tr _v-af42f162=\"\">\n<td _v-af42f162=\"\">offset</td>\n<td _v-af42f162=\"\"><code _v-af42f162=\"\">Number</code></td>\n<td _v-af42f162=\"\"><code _v-af42f162=\"\">0</code></td>\n<td _v-af42f162=\"\">离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table><p _v-af42f162=\"\"></p>\n  </div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-2c4b011c=\"\"><template _v-2c4b011c=\"\">\n<h3 _v-2c4b011c=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-2c4b011c=\"\">\n  <div class=\"bs-example\" _v-2c4b011c=\"\">\n    <h3 _v-2c4b011c=\"\">\n      <n3-affix :offset=\"0\" _v-2c4b011c=\"\">\n        <nav class=\"sidebar\" _v-2c4b011c=\"\">\n          <ul _v-2c4b011c=\"\">\n            <li _v-2c4b011c=\"\">...</li>\n            <li _v-2c4b011c=\"\">...</li>\n            <li _v-2c4b011c=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-2c4b011c=\"\"><code class=\"language-html\" _v-2c4b011c=\"\"><span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-2c4b011c=\"\">:offset</span>=<span class=\"hljs-string\" _v-2c4b011c=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">nav</span> <span class=\"hljs-attr\" _v-2c4b011c=\"\">class</span>=<span class=\"hljs-string\" _v-2c4b011c=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-2c4b011c=\"\">&lt;/<span class=\"hljs-name\" _v-2c4b011c=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<p _v-2c4b011c=\"\"></p><h2 _v-2c4b011c=\"\">参数</h2>\n<table class=\"table table-bordered\" _v-2c4b011c=\"\">\n<thead _v-2c4b011c=\"\">\n<tr _v-2c4b011c=\"\">\n<th _v-2c4b011c=\"\">参数名</th>\n<th _v-2c4b011c=\"\">类型</th>\n<th _v-2c4b011c=\"\">默认值</th>\n<th _v-2c4b011c=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-2c4b011c=\"\">\n<tr _v-2c4b011c=\"\">\n<td _v-2c4b011c=\"\">offset</td>\n<td _v-2c4b011c=\"\"><code _v-2c4b011c=\"\">Number</code></td>\n<td _v-2c4b011c=\"\"><code _v-2c4b011c=\"\">0</code></td>\n<td _v-2c4b011c=\"\">离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table><p _v-2c4b011c=\"\"></p>\n  </div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 518 */
@@ -12102,12 +11963,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-8.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-8.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-8.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-8.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12267,12 +12128,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-04b4065d&file=n3CarouselDocs-9.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-6.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-04b4065d&file=n3CarouselDocs-9.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-6.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-04b4065d&file=n3CarouselDocs-9.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-6.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12294,8 +12155,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-04b4065d&file=n3CarouselDocs-9.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-04b4065d&file=n3CarouselDocs-9.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-6.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-7dfab0d7&file=n3CarouselDocs-6.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-6.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12313,7 +12174,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".slide-img[_v-04b4065d]{\n  height:400px!important;\n}\n.carousel-caption[_v-04b4065d] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-04b4065d] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
+	exports.push([module.id, ".slide-img[_v-7dfab0d7]{\n  height:400px!important;\n}\n.carousel-caption[_v-7dfab0d7] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-7dfab0d7] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
 	
 	// exports
 
@@ -12322,7 +12183,7 @@
 /* 526 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-04b4065d=\"\"><template _v-04b4065d=\"\">\n<h2 _v-04b4065d=\"\">幻灯片</h2>\n<div class=\"bs-docs-section\" id=\"幻灯片\" _v-04b4065d=\"\">\n<div class=\"bs-example\" _v-04b4065d=\"\">\n  <n3-carousel _v-04b4065d=\"\">\n    <n3-slide _v-04b4065d=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-04b4065d=\"\">\n      <div class=\"carousel-caption\" _v-04b4065d=\"\">\n        <h3 _v-04b4065d=\"\">Slide #1</h3>\n        <p _v-04b4065d=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-04b4065d=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-04b4065d=\"\">\n      <div class=\"carousel-caption\" _v-04b4065d=\"\">\n        <h3 _v-04b4065d=\"\">Slide #2</h3>\n        <p _v-04b4065d=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-04b4065d=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-04b4065d=\"\">\n      <div class=\"carousel-caption\" _v-04b4065d=\"\">\n        <h3 _v-04b4065d=\"\">Slide #3</h3>\n        <p _v-04b4065d=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-04b4065d=\"\"><code class=\"language-html\" _v-04b4065d=\"\"><span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">img</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">class</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">src</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">div</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">class</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">img</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">class</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">src</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">div</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">class</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">img</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">class</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">src</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">div</span> <span class=\"hljs-attr\" _v-04b4065d=\"\">class</span>=<span class=\"hljs-string\" _v-04b4065d=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;<span class=\"hljs-name\" _v-04b4065d=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-04b4065d=\"\">&lt;/<span class=\"hljs-name\" _v-04b4065d=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-04b4065d=\"\">参数</h3>\n<table _v-04b4065d=\"\">\n<thead _v-04b4065d=\"\">\n<tr _v-04b4065d=\"\">\n<th _v-04b4065d=\"\">参数名</th>\n<th _v-04b4065d=\"\">类型</th>\n<th _v-04b4065d=\"\">默认值</th>\n<th _v-04b4065d=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-04b4065d=\"\">\n<tr _v-04b4065d=\"\">\n<td _v-04b4065d=\"\">indicators</td>\n<td _v-04b4065d=\"\"><code _v-04b4065d=\"\">Boolean</code></td>\n<td _v-04b4065d=\"\"><code _v-04b4065d=\"\">true</code></td>\n<td _v-04b4065d=\"\">是否显示控制点</td>\n</tr>\n<tr _v-04b4065d=\"\">\n<td _v-04b4065d=\"\">controls</td>\n<td _v-04b4065d=\"\"><code _v-04b4065d=\"\">Boolean</code></td>\n<td _v-04b4065d=\"\"><code _v-04b4065d=\"\">true</code></td>\n<td _v-04b4065d=\"\">是否显示箭头</td>\n</tr>\n<tr _v-04b4065d=\"\">\n<td _v-04b4065d=\"\">interval</td>\n<td _v-04b4065d=\"\"><code _v-04b4065d=\"\">Number</code></td>\n<td _v-04b4065d=\"\"><code _v-04b4065d=\"\">5000</code></td>\n<td _v-04b4065d=\"\">自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
+	module.exports = "<section _v-7dfab0d7=\"\"><template _v-7dfab0d7=\"\">\n<h2 _v-7dfab0d7=\"\">幻灯片</h2>\n<div class=\"bs-docs-section\" id=\"幻灯片\" _v-7dfab0d7=\"\">\n<div class=\"bs-example\" _v-7dfab0d7=\"\">\n  <n3-carousel _v-7dfab0d7=\"\">\n    <n3-slide _v-7dfab0d7=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7dfab0d7=\"\">\n      <div class=\"carousel-caption\" _v-7dfab0d7=\"\">\n        <h3 _v-7dfab0d7=\"\">Slide #1</h3>\n        <p _v-7dfab0d7=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-7dfab0d7=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7dfab0d7=\"\">\n      <div class=\"carousel-caption\" _v-7dfab0d7=\"\">\n        <h3 _v-7dfab0d7=\"\">Slide #2</h3>\n        <p _v-7dfab0d7=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-7dfab0d7=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-7dfab0d7=\"\">\n      <div class=\"carousel-caption\" _v-7dfab0d7=\"\">\n        <h3 _v-7dfab0d7=\"\">Slide #3</h3>\n        <p _v-7dfab0d7=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-7dfab0d7=\"\"><code class=\"language-html\" _v-7dfab0d7=\"\"><span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">img</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">class</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">src</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">div</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">class</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">img</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">class</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">src</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">div</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">class</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">img</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">class</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">src</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">div</span> <span class=\"hljs-attr\" _v-7dfab0d7=\"\">class</span>=<span class=\"hljs-string\" _v-7dfab0d7=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;<span class=\"hljs-name\" _v-7dfab0d7=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-7dfab0d7=\"\">&lt;/<span class=\"hljs-name\" _v-7dfab0d7=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-7dfab0d7=\"\">参数</h3>\n<table _v-7dfab0d7=\"\">\n<thead _v-7dfab0d7=\"\">\n<tr _v-7dfab0d7=\"\">\n<th _v-7dfab0d7=\"\">参数名</th>\n<th _v-7dfab0d7=\"\">类型</th>\n<th _v-7dfab0d7=\"\">默认值</th>\n<th _v-7dfab0d7=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-7dfab0d7=\"\">\n<tr _v-7dfab0d7=\"\">\n<td _v-7dfab0d7=\"\">indicators</td>\n<td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">Boolean</code></td>\n<td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">true</code></td>\n<td _v-7dfab0d7=\"\">是否显示控制点</td>\n</tr>\n<tr _v-7dfab0d7=\"\">\n<td _v-7dfab0d7=\"\">controls</td>\n<td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">Boolean</code></td>\n<td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">true</code></td>\n<td _v-7dfab0d7=\"\">是否显示箭头</td>\n</tr>\n<tr _v-7dfab0d7=\"\">\n<td _v-7dfab0d7=\"\">interval</td>\n<td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">Number</code></td>\n<td _v-7dfab0d7=\"\"><code _v-7dfab0d7=\"\">5000</code></td>\n<td _v-7dfab0d7=\"\">自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
 /* 527 */
@@ -12340,12 +12201,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12376,12 +12237,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-9.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-11.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-9.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-9.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-9.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-11.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-9.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12497,12 +12358,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-19.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-12.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-19.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-19.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-19.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-12.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-19.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12630,12 +12491,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-18.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-13.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-18.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-18.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-18.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-13.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-18.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12761,12 +12622,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-14.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-14.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-14.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-14.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-16.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-16.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-14.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-16.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12881,12 +12742,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-12.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-12.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-12.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-12.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-12.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13008,12 +12869,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-16.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-13.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-16.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-13.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13235,12 +13096,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-17.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-14.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-17.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-17.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-17.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-14.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-14.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-14.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-17.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-14.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13348,12 +13209,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-15.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-18.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-15.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-15.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-15.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-18.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-15.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13472,12 +13333,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-19.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-20.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-19.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-19.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-19.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-20.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-20.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-20.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-19.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-20.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13602,12 +13463,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-20.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-17.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-20.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-20.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-20.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-17.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-17.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs-17.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-20.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs-17.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13839,12 +13700,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-21.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-28.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-21.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-21.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-21.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-28.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-28.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-28.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-21.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-28.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14171,12 +14032,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-22.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-22.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-670be0bc&file=n3ProgressbarDocs-22.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-22.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-22.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-51ee51a0&file=n3ProgressbarDocs-23.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-23.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-670be0bc&file=n3ProgressbarDocs-22.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-22.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-51ee51a0&file=n3ProgressbarDocs-23.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-23.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14198,8 +14059,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-670be0bc&file=n3ProgressbarDocs-22.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-22.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-670be0bc&file=n3ProgressbarDocs-22.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-22.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-51ee51a0&file=n3ProgressbarDocs-23.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-23.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-51ee51a0&file=n3ProgressbarDocs-23.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-23.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -14217,7 +14078,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".margin[_v-670be0bc]{\n  margin-bottom:20px;\n}", ""]);
+	exports.push([module.id, ".margin[_v-51ee51a0]{\n  margin-bottom:20px;\n}", ""]);
 	
 	// exports
 
@@ -14431,7 +14292,7 @@
 /* 579 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-670be0bc=\"\"><template _v-670be0bc=\"\">\n<h2 _v-670be0bc=\"\">进度条</h2>\n<div class=\"bs-docs-section\" id=\"进度条\" _v-670be0bc=\"\">\n<blockquote _v-670be0bc=\"\">\n<p _v-670be0bc=\"\">高度</p>\n</blockquote>\n<div class=\"bs-example\" _v-670be0bc=\"\">\n  <div class=\"row\" _v-670be0bc=\"\">\n    <div class=\"col-md-4\" _v-670be0bc=\"\">\n      <n3-progress class=\"margin\" _v-670be0bc=\"\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-670be0bc=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\" _v-670be0bc=\"\">\n      <n3-progress class=\"margin\" _v-670be0bc=\"\">\n        <n3-progressbar :now=\"40\" type=\"success\" _v-670be0bc=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre _v-670be0bc=\"\"><code class=\"language-html\" _v-670be0bc=\"\"><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">class</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"20\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">height</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">class</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"40\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"success\"</span>&gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote _v-670be0bc=\"\">\n<p _v-670be0bc=\"\">动态变化 <n3-button @click.native=\"dynamicClick\" _v-670be0bc=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-670be0bc=\"\">\n  <n3-progress class=\"margin\" _v-670be0bc=\"\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-670be0bc=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-670be0bc=\"\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-670be0bc=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-670be0bc=\"\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-670be0bc=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress _v-670be0bc=\"\">\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-670be0bc=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre _v-670be0bc=\"\"><code class=\"language-html\" _v-670be0bc=\"\"><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">class</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"info\"</span> &gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">class</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">class</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">class</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre _v-670be0bc=\"\"><code class=\"language-javascript\" _v-670be0bc=\"\"><span class=\"hljs-keyword\" _v-670be0bc=\"\">export</span> <span class=\"hljs-keyword\" _v-670be0bc=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-670be0bc=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-670be0bc=\"\">dynamicData</span>: [<span class=\"hljs-number\" _v-670be0bc=\"\">5</span>, <span class=\"hljs-number\" _v-670be0bc=\"\">15</span>, <span class=\"hljs-number\" _v-670be0bc=\"\">25</span>, <span class=\"hljs-number\" _v-670be0bc=\"\">35</span>, <span class=\"hljs-number\" _v-670be0bc=\"\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-670be0bc=\"\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\" _v-670be0bc=\"\">this</span>.dynamicData = <span class=\"hljs-keyword\" _v-670be0bc=\"\">this</span>.dynamicData.map(<span class=\"hljs-function\" _v-670be0bc=\"\"><span class=\"hljs-params\" _v-670be0bc=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-670be0bc=\"\">return</span> <span class=\"hljs-built_in\" _v-670be0bc=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-670be0bc=\"\">Math</span>.random() * <span class=\"hljs-number\" _v-670be0bc=\"\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote _v-670be0bc=\"\">\n<p _v-670be0bc=\"\">叠加 <n3-button @click.native=\"stackedClick\" _v-670be0bc=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-670be0bc=\"\">\n  <n3-progress _v-670be0bc=\"\">\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-670be0bc=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-670be0bc=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-670be0bc=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-670be0bc=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre _v-670be0bc=\"\"><code class=\"language-html\" _v-670be0bc=\"\"><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"stackedData[0]\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">label</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"warning\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"stackedData[1]\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">label</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"success\"</span> &gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"stackedData[2]\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">label</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">:now</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"stackedData[3]\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">label</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">type</span>=<span class=\"hljs-string\" _v-670be0bc=\"\">\"primary\"</span> <span class=\"hljs-attr\" _v-670be0bc=\"\">striped</span> &gt;</span>\n<span class=\"hljs-tag\" _v-670be0bc=\"\">&lt;/<span class=\"hljs-name\" _v-670be0bc=\"\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre _v-670be0bc=\"\"><code class=\"language-javascript\" _v-670be0bc=\"\"><span class=\"hljs-keyword\" _v-670be0bc=\"\">export</span> <span class=\"hljs-keyword\" _v-670be0bc=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-670be0bc=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-670be0bc=\"\">stackedData</span>: [<span class=\"hljs-number\" _v-670be0bc=\"\">10</span>, <span class=\"hljs-number\" _v-670be0bc=\"\">20</span>, <span class=\"hljs-number\" _v-670be0bc=\"\">30</span>, <span class=\"hljs-number\" _v-670be0bc=\"\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-670be0bc=\"\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\" _v-670be0bc=\"\">let</span> i = <span class=\"hljs-number\" _v-670be0bc=\"\">100</span>\n      <span class=\"hljs-keyword\" _v-670be0bc=\"\">this</span>.stackedData = <span class=\"hljs-keyword\" _v-670be0bc=\"\">this</span>.stackedData.map(<span class=\"hljs-function\" _v-670be0bc=\"\"><span class=\"hljs-params\" _v-670be0bc=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-670be0bc=\"\">const</span> random = <span class=\"hljs-built_in\" _v-670be0bc=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-670be0bc=\"\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\" _v-670be0bc=\"\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3 _v-670be0bc=\"\">参数</h3>\n<table _v-670be0bc=\"\">\n<thead _v-670be0bc=\"\">\n<tr _v-670be0bc=\"\">\n<th _v-670be0bc=\"\">参数名</th>\n<th _v-670be0bc=\"\">类型</th>\n<th _v-670be0bc=\"\">默认值</th>\n<th _v-670be0bc=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-670be0bc=\"\">\n<tr _v-670be0bc=\"\">\n<td _v-670be0bc=\"\">now</td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">Number</code></td>\n<td _v-670be0bc=\"\"></td>\n<td _v-670be0bc=\"\">当前进度</td>\n</tr>\n<tr _v-670be0bc=\"\">\n<td _v-670be0bc=\"\">height</td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">String</code></td>\n<td _v-670be0bc=\"\">20px</td>\n<td _v-670be0bc=\"\">高度</td>\n</tr>\n<tr _v-670be0bc=\"\">\n<td _v-670be0bc=\"\">type</td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">String</code></td>\n<td _v-670be0bc=\"\"></td>\n<td _v-670be0bc=\"\">样式</td>\n</tr>\n<tr _v-670be0bc=\"\">\n<td _v-670be0bc=\"\">label</td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">Boolean</code></td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">false</code></td>\n<td _v-670be0bc=\"\">是否显示进度提示</td>\n</tr>\n<tr _v-670be0bc=\"\">\n<td _v-670be0bc=\"\">striped</td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">Boolean</code></td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">false</code></td>\n<td _v-670be0bc=\"\">是否显示条纹</td>\n</tr>\n<tr _v-670be0bc=\"\">\n<td _v-670be0bc=\"\">animated</td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">Boolean</code></td>\n<td _v-670be0bc=\"\"><code _v-670be0bc=\"\">false</code></td>\n<td _v-670be0bc=\"\">动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-51ee51a0=\"\"><template _v-51ee51a0=\"\">\n<h2 _v-51ee51a0=\"\">进度条</h2>\n<div class=\"bs-docs-section\" id=\"进度条\" _v-51ee51a0=\"\">\n<blockquote _v-51ee51a0=\"\">\n<p _v-51ee51a0=\"\">高度</p>\n</blockquote>\n<div class=\"bs-example\" _v-51ee51a0=\"\">\n  <div class=\"row\" _v-51ee51a0=\"\">\n    <div class=\"col-md-4\" _v-51ee51a0=\"\">\n      <n3-progress class=\"margin\" _v-51ee51a0=\"\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-51ee51a0=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\" _v-51ee51a0=\"\">\n      <n3-progress class=\"margin\" _v-51ee51a0=\"\">\n        <n3-progressbar :now=\"40\" type=\"success\" _v-51ee51a0=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre _v-51ee51a0=\"\"><code class=\"language-html\" _v-51ee51a0=\"\"><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">class</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"20\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">height</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">class</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"40\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"success\"</span>&gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote _v-51ee51a0=\"\">\n<p _v-51ee51a0=\"\">动态变化 <n3-button @click.native=\"dynamicClick\" _v-51ee51a0=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-51ee51a0=\"\">\n  <n3-progress class=\"margin\" _v-51ee51a0=\"\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-51ee51a0=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-51ee51a0=\"\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-51ee51a0=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-51ee51a0=\"\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-51ee51a0=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress _v-51ee51a0=\"\">\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-51ee51a0=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre _v-51ee51a0=\"\"><code class=\"language-html\" _v-51ee51a0=\"\"><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">class</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"info\"</span> &gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">class</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">class</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">class</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre _v-51ee51a0=\"\"><code class=\"language-javascript\" _v-51ee51a0=\"\"><span class=\"hljs-keyword\" _v-51ee51a0=\"\">export</span> <span class=\"hljs-keyword\" _v-51ee51a0=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-51ee51a0=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-51ee51a0=\"\">dynamicData</span>: [<span class=\"hljs-number\" _v-51ee51a0=\"\">5</span>, <span class=\"hljs-number\" _v-51ee51a0=\"\">15</span>, <span class=\"hljs-number\" _v-51ee51a0=\"\">25</span>, <span class=\"hljs-number\" _v-51ee51a0=\"\">35</span>, <span class=\"hljs-number\" _v-51ee51a0=\"\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-51ee51a0=\"\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\" _v-51ee51a0=\"\">this</span>.dynamicData = <span class=\"hljs-keyword\" _v-51ee51a0=\"\">this</span>.dynamicData.map(<span class=\"hljs-function\" _v-51ee51a0=\"\"><span class=\"hljs-params\" _v-51ee51a0=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-51ee51a0=\"\">return</span> <span class=\"hljs-built_in\" _v-51ee51a0=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-51ee51a0=\"\">Math</span>.random() * <span class=\"hljs-number\" _v-51ee51a0=\"\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote _v-51ee51a0=\"\">\n<p _v-51ee51a0=\"\">叠加 <n3-button @click.native=\"stackedClick\" _v-51ee51a0=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-51ee51a0=\"\">\n  <n3-progress _v-51ee51a0=\"\">\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-51ee51a0=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-51ee51a0=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-51ee51a0=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-51ee51a0=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre _v-51ee51a0=\"\"><code class=\"language-html\" _v-51ee51a0=\"\"><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"stackedData[0]\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">label</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"warning\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"stackedData[1]\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">label</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"success\"</span> &gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"stackedData[2]\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">label</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">:now</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"stackedData[3]\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">label</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">type</span>=<span class=\"hljs-string\" _v-51ee51a0=\"\">\"primary\"</span> <span class=\"hljs-attr\" _v-51ee51a0=\"\">striped</span> &gt;</span>\n<span class=\"hljs-tag\" _v-51ee51a0=\"\">&lt;/<span class=\"hljs-name\" _v-51ee51a0=\"\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre _v-51ee51a0=\"\"><code class=\"language-javascript\" _v-51ee51a0=\"\"><span class=\"hljs-keyword\" _v-51ee51a0=\"\">export</span> <span class=\"hljs-keyword\" _v-51ee51a0=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-51ee51a0=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-51ee51a0=\"\">stackedData</span>: [<span class=\"hljs-number\" _v-51ee51a0=\"\">10</span>, <span class=\"hljs-number\" _v-51ee51a0=\"\">20</span>, <span class=\"hljs-number\" _v-51ee51a0=\"\">30</span>, <span class=\"hljs-number\" _v-51ee51a0=\"\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-51ee51a0=\"\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\" _v-51ee51a0=\"\">let</span> i = <span class=\"hljs-number\" _v-51ee51a0=\"\">100</span>\n      <span class=\"hljs-keyword\" _v-51ee51a0=\"\">this</span>.stackedData = <span class=\"hljs-keyword\" _v-51ee51a0=\"\">this</span>.stackedData.map(<span class=\"hljs-function\" _v-51ee51a0=\"\"><span class=\"hljs-params\" _v-51ee51a0=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-51ee51a0=\"\">const</span> random = <span class=\"hljs-built_in\" _v-51ee51a0=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-51ee51a0=\"\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\" _v-51ee51a0=\"\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3 _v-51ee51a0=\"\">参数</h3>\n<table _v-51ee51a0=\"\">\n<thead _v-51ee51a0=\"\">\n<tr _v-51ee51a0=\"\">\n<th _v-51ee51a0=\"\">参数名</th>\n<th _v-51ee51a0=\"\">类型</th>\n<th _v-51ee51a0=\"\">默认值</th>\n<th _v-51ee51a0=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-51ee51a0=\"\">\n<tr _v-51ee51a0=\"\">\n<td _v-51ee51a0=\"\">now</td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">Number</code></td>\n<td _v-51ee51a0=\"\"></td>\n<td _v-51ee51a0=\"\">当前进度</td>\n</tr>\n<tr _v-51ee51a0=\"\">\n<td _v-51ee51a0=\"\">height</td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">String</code></td>\n<td _v-51ee51a0=\"\">20px</td>\n<td _v-51ee51a0=\"\">高度</td>\n</tr>\n<tr _v-51ee51a0=\"\">\n<td _v-51ee51a0=\"\">type</td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">String</code></td>\n<td _v-51ee51a0=\"\"></td>\n<td _v-51ee51a0=\"\">样式</td>\n</tr>\n<tr _v-51ee51a0=\"\">\n<td _v-51ee51a0=\"\">label</td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">Boolean</code></td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">false</code></td>\n<td _v-51ee51a0=\"\">是否显示进度提示</td>\n</tr>\n<tr _v-51ee51a0=\"\">\n<td _v-51ee51a0=\"\">striped</td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">Boolean</code></td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">false</code></td>\n<td _v-51ee51a0=\"\">是否显示条纹</td>\n</tr>\n<tr _v-51ee51a0=\"\">\n<td _v-51ee51a0=\"\">animated</td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">Boolean</code></td>\n<td _v-51ee51a0=\"\"><code _v-51ee51a0=\"\">false</code></td>\n<td _v-51ee51a0=\"\">动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 580 */
@@ -14452,12 +14313,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-26.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-23.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-26.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-26.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-26.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-23.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-26.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14762,12 +14623,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-24.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-21.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-24.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-24.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-24.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-21.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-21.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-21.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-24.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-21.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14895,12 +14756,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-22.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-25.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-22.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-22.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-22.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-25.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-22.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15028,7 +14889,7 @@
 	      value: [{
 	        icon: 'check-circle-o',
 	        color: 'green',
-	        content: '<a @click="del">\u521B\u5EFA\u6210\u529F</a>'
+	        content: '<a @click="del">创建成功</a>'
 	      }, {
 	        content: '<span>通过审核</span>'
 	      }, {
@@ -15070,12 +14931,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-26.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-26.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-26.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-26.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-24.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-24.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-26.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-24.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15356,12 +15217,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-25.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-27.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-25.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-25.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-25.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-27.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-25.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15514,12 +15375,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-29.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-39.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-29.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-29.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-29.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-39.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-39.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-39.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-29.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-39.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15735,12 +15596,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-28.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-36.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-28.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-36.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-28.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-36.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15771,12 +15632,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-27.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-27.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-27.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-27.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-27.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15949,12 +15810,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-29.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-29.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-29.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15985,12 +15846,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-30.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-32.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-30.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-30.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-30.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-32.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-30.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16142,12 +16003,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-31.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-33.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-31.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-31.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-31.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-33.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-31.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16476,7 +16337,7 @@
 	        title: '操作',
 	        dataIndex: '',
 	        render: function render(text, record, index) {
-	          return '<span class="item">\n                    <a href="javascript:;" @click="del(\'' + record.key + '\',\'' + index + '\')">\u5220\u9664</a>\n                  </span>';
+	          return '<span class="item">\n                    <a href="javascript:;" @click="del(\'' + record.key + '\',\'' + index + '\')">删除</a>\n                  </span>';
 	        }
 	      }],
 	      source: [{
@@ -16567,12 +16428,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"
+	var id = "-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-32.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-32.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-32.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16603,12 +16464,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-37.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-33.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-37.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-37.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-37.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-33.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-33.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-33.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-37.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-33.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16832,12 +16693,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-35.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-35.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-37.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-35.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-37.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17313,12 +17174,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-36.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-34.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-36.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-36.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-36.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-34.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-34.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-34.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-36.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-34.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17393,12 +17254,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-39.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-39.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-39.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-39.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-35.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-39.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-35.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17567,12 +17428,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-38.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-42.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-38.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-38.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-38.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-42.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-42.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-42.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-38.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-42.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18087,12 +17948,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-40.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-38.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-40.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-40.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-40.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-38.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-38.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-38.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-40.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-38.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18270,12 +18131,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-41.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-41.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-41.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-41.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-41.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18447,12 +18308,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-43.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-42.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-42.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-43.vue","-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-43.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-43.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-42.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-43.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18540,12 +18401,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue"
+	var id = "-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-40.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-1fa90466&file=n3AnimateDocs-43.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-43.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue")
+	module.hot.accept(["-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-40.vue","-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-ce20a240&file=n3AnimateDocs-40.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-40.vue"], function () {
+	var newOptions = require("-!babel!./../../vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-40.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-1fa90466&file=n3AnimateDocs-43.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-43.vue")
+	var newTemplate = require("-!vue-html-loader!./../../vue-loader/lib/template-rewriter.js?id=_v-ce20a240&file=n3AnimateDocs-40.vue!./../../vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-40.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18567,8 +18428,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-1fa90466&file=n3AnimateDocs-43.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-43.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-1fa90466&file=n3AnimateDocs-43.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-43.vue");
+			module.hot.accept("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-ce20a240&file=n3AnimateDocs-40.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-40.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js!./../../vue-loader/lib/style-rewriter.js?id=_v-ce20a240&file=n3AnimateDocs-40.vue&scoped=true!./../../vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-40.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -18586,7 +18447,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".content[_v-1fa90466] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }", ""]);
+	exports.push([module.id, ".content[_v-ce20a240] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }", ""]);
 	
 	// exports
 
@@ -18670,7 +18531,7 @@
 /* 662 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-1fa90466=\"\"><template _v-1fa90466=\"\">\n<h2 _v-1fa90466=\"\">动画</h2>\n<div class=\"bs-docs-section\" _v-1fa90466=\"\">\n<div class=\"bs-example\" _v-1fa90466=\"\">\n  <n3-button @click.native=\"show=!show\" _v-1fa90466=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-1fa90466=\"\">\n    <div v-if=\"show\" class=\"content\" _v-1fa90466=\"\">\n        <h4 _v-1fa90466=\"\">Title</h4>\n        <p _v-1fa90466=\"\">...</p>\n        <p _v-1fa90466=\"\">...</p>\n        <p _v-1fa90466=\"\">...</p>\n    </div>\n  </transition>\n</div>\n<pre _v-1fa90466=\"\"><code class=\"language-html\" _v-1fa90466=\"\"><span class=\"hljs-comment\" _v-1fa90466=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;<span class=\"hljs-name\" _v-1fa90466=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-1fa90466=\"\">@click.native</span>=<span class=\"hljs-string\" _v-1fa90466=\"\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;/<span class=\"hljs-name\" _v-1fa90466=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;<span class=\"hljs-name\" _v-1fa90466=\"\">transition</span> <span class=\"hljs-attr\" _v-1fa90466=\"\">name</span>=<span class=\"hljs-string\" _v-1fa90466=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;<span class=\"hljs-name\" _v-1fa90466=\"\">div</span> <span class=\"hljs-attr\" _v-1fa90466=\"\">v-if</span>=<span class=\"hljs-string\" _v-1fa90466=\"\">\"show\"</span>  <span class=\"hljs-attr\" _v-1fa90466=\"\">class</span>=<span class=\"hljs-string\" _v-1fa90466=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;<span class=\"hljs-name\" _v-1fa90466=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;/<span class=\"hljs-name\" _v-1fa90466=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;<span class=\"hljs-name\" _v-1fa90466=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;/<span class=\"hljs-name\" _v-1fa90466=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;<span class=\"hljs-name\" _v-1fa90466=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;/<span class=\"hljs-name\" _v-1fa90466=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;<span class=\"hljs-name\" _v-1fa90466=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;/<span class=\"hljs-name\" _v-1fa90466=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;/<span class=\"hljs-name\" _v-1fa90466=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-1fa90466=\"\">&lt;/<span class=\"hljs-name\" _v-1fa90466=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-1fa90466=\"\">参数</h3>\n<table _v-1fa90466=\"\">\n<thead _v-1fa90466=\"\">\n<tr _v-1fa90466=\"\">\n<th _v-1fa90466=\"\">参数</th>\n<th _v-1fa90466=\"\">类型</th>\n<th _v-1fa90466=\"\">默认值</th>\n<th _v-1fa90466=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-1fa90466=\"\">\n<tr _v-1fa90466=\"\">\n<td _v-1fa90466=\"\">name</td>\n<td _v-1fa90466=\"\">String</td>\n<td _v-1fa90466=\"\">-</td>\n<td _v-1fa90466=\"\"><code _v-1fa90466=\"\">fade</code> <code _v-1fa90466=\"\">fadeLeft</code><code _v-1fa90466=\"\">fadeDown</code><code _v-1fa90466=\"\">bounce</code><code _v-1fa90466=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-ce20a240=\"\"><template _v-ce20a240=\"\">\n<h2 _v-ce20a240=\"\">动画</h2>\n<div class=\"bs-docs-section\" _v-ce20a240=\"\">\n<div class=\"bs-example\" _v-ce20a240=\"\">\n  <n3-button @click.native=\"show=!show\" _v-ce20a240=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-ce20a240=\"\">\n    <div v-if=\"show\" class=\"content\" _v-ce20a240=\"\">\n        <h4 _v-ce20a240=\"\">Title</h4>\n        <p _v-ce20a240=\"\">...</p>\n        <p _v-ce20a240=\"\">...</p>\n        <p _v-ce20a240=\"\">...</p>\n    </div>\n  </transition>\n</div>\n<pre _v-ce20a240=\"\"><code class=\"language-html\" _v-ce20a240=\"\"><span class=\"hljs-comment\" _v-ce20a240=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-ce20a240=\"\">@click.native</span>=<span class=\"hljs-string\" _v-ce20a240=\"\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">transition</span> <span class=\"hljs-attr\" _v-ce20a240=\"\">name</span>=<span class=\"hljs-string\" _v-ce20a240=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">div</span> <span class=\"hljs-attr\" _v-ce20a240=\"\">v-if</span>=<span class=\"hljs-string\" _v-ce20a240=\"\">\"show\"</span>  <span class=\"hljs-attr\" _v-ce20a240=\"\">class</span>=<span class=\"hljs-string\" _v-ce20a240=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-ce20a240=\"\">&lt;/<span class=\"hljs-name\" _v-ce20a240=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-ce20a240=\"\">参数</h3>\n<table _v-ce20a240=\"\">\n<thead _v-ce20a240=\"\">\n<tr _v-ce20a240=\"\">\n<th _v-ce20a240=\"\">参数</th>\n<th _v-ce20a240=\"\">类型</th>\n<th _v-ce20a240=\"\">默认值</th>\n<th _v-ce20a240=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-ce20a240=\"\">\n<tr _v-ce20a240=\"\">\n<td _v-ce20a240=\"\">name</td>\n<td _v-ce20a240=\"\">String</td>\n<td _v-ce20a240=\"\">-</td>\n<td _v-ce20a240=\"\"><code _v-ce20a240=\"\">fade</code> <code _v-ce20a240=\"\">fadeLeft</code><code _v-ce20a240=\"\">fadeDown</code><code _v-ce20a240=\"\">bounce</code><code _v-ce20a240=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 663 */
@@ -18700,14 +18561,14 @@
 /* 664 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\r\n  <div>\r\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\r\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\r\n      <n3-row >\r\n        <n3-column :col=\"2\">\r\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\r\n          <n3-nav type=\"vertical\" >\r\n             <n3-nav-item v-for=\"(item, index) in list\">\r\n              <n3-sub-nav :show=\"item.show\" @toggle=\"handleToggle(item)\">\r\n                <a slot=\"title\" style=\"color:#333\" v-text=\"index\"></a>\r\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click.native=\"change(i.value)\">\r\n                  <a v-text=\"i.label\"></a>\r\n                </n3-nav-item>\r\n              </n3-sub-nav>\r\n            </n3-nav-item>\r\n          </n3-nav>\r\n        </n3-column>\r\n        <n3-column :col=\"10\">\r\n          <component :is=\"component\" ></component>\r\n        </n3-column>\r\n      <n3-row>\r\n    </n3-container>\r\n    <template v-else>\r\n      <slot></slot>\r\n    </template>\r\n  </div>\r\n  <footer class=\"bs-docs-footer\">\r\n    <n3-container >\r\n      <p>联系邮箱 zhangking520@gmail.com</p>\r\n    </n3-container>\r\n  </footer>\r\n</div>";
+	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(item, index) in list\">\n              <n3-sub-nav :show=\"item.show\" @toggle=\"handleToggle(item)\">\n                <a slot=\"title\" style=\"color:#333\" v-text=\"index\"></a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click.native=\"change(i.value)\">\n                  <a v-text=\"i.label\"></a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n    </n3-container>\n  </footer>\n</div>";
 
 /***/ },
 /* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*!
-	 * Vue.js v2.1.8
+	 * Vue.js v2.1.6
 	 * (c) 2014-2016 Evan You
 	 * Released under the MIT License.
 	 */
@@ -18794,10 +18655,10 @@
 	 */
 	function cached (fn) {
 	  var cache = Object.create(null);
-	  return (function cachedFn (str) {
+	  return function cachedFn (str) {
 	    var hit = cache[str];
 	    return hit || (cache[str] = fn(str))
-	  })
+	  }
 	}
 	
 	/**
@@ -18927,15 +18788,13 @@
 	 * if they are plain objects, do they have the same shape?
 	 */
 	function looseEqual (a, b) {
-	  var isObjectA = isObject(a);
-	  var isObjectB = isObject(b);
-	  if (isObjectA && isObjectB) {
-	    return JSON.stringify(a) === JSON.stringify(b)
-	  } else if (!isObjectA && !isObjectB) {
-	    return String(a) === String(b)
-	  } else {
-	    return false
-	  }
+	  /* eslint-disable eqeqeq */
+	  return a == b || (
+	    isObject(a) && isObject(b)
+	      ? JSON.stringify(a) === JSON.stringify(b)
+	      : false
+	  )
+	  /* eslint-enable eqeqeq */
 	}
 	
 	function looseIndexOf (arr, val) {
@@ -18971,7 +18830,7 @@
 	  /**
 	   * Ignore certain custom elements
 	   */
-	  ignoredElements: [],
+	  ignoredElements: null,
 	
 	  /**
 	   * Custom user key aliases for v-on
@@ -19444,7 +19303,7 @@
 	 * returns the new observer if successfully observed,
 	 * or the existing observer if the value already has one.
 	 */
-	function observe (value, asRootData) {
+	function observe (value) {
 	  if (!isObject(value)) {
 	    return
 	  }
@@ -19459,9 +19318,6 @@
 	    !value._isVue
 	  ) {
 	    ob = new Observer(value);
-	  }
-	  if (asRootData && ob) {
-	    ob.vmCount++;
 	  }
 	  return ob
 	}
@@ -19929,10 +19785,10 @@
 	  var absent = !hasOwn(propsData, key);
 	  var value = propsData[key];
 	  // handle boolean props
-	  if (isType(Boolean, prop.type)) {
+	  if (isBooleanType(prop.type)) {
 	    if (absent && !hasOwn(prop, 'default')) {
 	      value = false;
-	    } else if (!isType(String, prop.type) && (value === '' || value === hyphenate(key))) {
+	    } else if (value === '' || value === hyphenate(key)) {
 	      value = true;
 	    }
 	  }
@@ -20012,7 +19868,7 @@
 	    }
 	    for (var i = 0; i < type.length && !valid; i++) {
 	      var assertedType = assertType(value, type[i]);
-	      expectedTypes.push(assertedType.expectedType || '');
+	      expectedTypes.push(assertedType.expectedType);
 	      valid = assertedType.valid;
 	    }
 	  }
@@ -20073,12 +19929,12 @@
 	  return match && match[1]
 	}
 	
-	function isType (type, fn) {
+	function isBooleanType (fn) {
 	  if (!Array.isArray(fn)) {
-	    return getType(fn) === getType(type)
+	    return getType(fn) === 'Boolean'
 	  }
 	  for (var i = 0, len = fn.length; i < len; i++) {
-	    if (getType(fn[i]) === getType(type)) {
+	    if (getType(fn[i]) === 'Boolean') {
 	      return true
 	    }
 	  }
@@ -20323,17 +20179,16 @@
 	  cb,
 	  options
 	) {
+	  if ( options === void 0 ) options = {};
+	
 	  this.vm = vm;
 	  vm._watchers.push(this);
 	  // options
-	  if (options) {
-	    this.deep = !!options.deep;
-	    this.user = !!options.user;
-	    this.lazy = !!options.lazy;
-	    this.sync = !!options.sync;
-	  } else {
-	    this.deep = this.user = this.lazy = this.sync = false;
-	  }
+	  this.deep = !!options.deep;
+	  this.user = !!options.user;
+	  this.lazy = !!options.lazy;
+	  this.sync = !!options.sync;
+	  this.expression = expOrFn.toString();
 	  this.cb = cb;
 	  this.id = ++uid$2; // uid for batching
 	  this.active = true;
@@ -20342,7 +20197,6 @@
 	  this.newDeps = [];
 	  this.depIds = new _Set();
 	  this.newDepIds = new _Set();
-	  this.expression = expOrFn.toString();
 	  // parse expression for getter
 	  if (typeof expOrFn === 'function') {
 	    this.getter = expOrFn;
@@ -20438,8 +20292,8 @@
 	Watcher.prototype.run = function run () {
 	  if (this.active) {
 	    var value = this.get();
-	    if (
-	      value !== this.value ||
+	      if (
+	        value !== this.value ||
 	      // Deep watchers and watchers on Object/Arrays should fire even
 	      // when the value is the same, because the value may
 	      // have mutated.
@@ -20501,8 +20355,9 @@
 	  if (this.active) {
 	    // remove self from vm's watcher list
 	    // this is a somewhat expensive operation so we skip it
-	    // if the vm is being destroyed.
-	    if (!this.vm._isBeingDestroyed) {
+	    // if the vm is being destroyed or is performing a v-for
+	    // re-render (the watcher list is then filtered by v-for).
+	    if (!this.vm._isBeingDestroyed && !this.vm._vForRemoving) {
 	      remove$1(this.vm._watchers, this);
 	    }
 	    var i = this.deps.length;
@@ -20551,52 +20406,50 @@
 	
 	function initState (vm) {
 	  vm._watchers = [];
-	  var opts = vm.$options;
-	  if (opts.props) { initProps(vm, opts.props); }
-	  if (opts.methods) { initMethods(vm, opts.methods); }
-	  if (opts.data) {
-	    initData(vm);
-	  } else {
-	    observe(vm._data = {}, true /* asRootData */);
-	  }
-	  if (opts.computed) { initComputed(vm, opts.computed); }
-	  if (opts.watch) { initWatch(vm, opts.watch); }
+	  initProps(vm);
+	  initMethods(vm);
+	  initData(vm);
+	  initComputed(vm);
+	  initWatch(vm);
 	}
 	
 	var isReservedProp = { key: 1, ref: 1, slot: 1 };
 	
-	function initProps (vm, props) {
-	  var propsData = vm.$options.propsData || {};
-	  var keys = vm.$options._propKeys = Object.keys(props);
-	  var isRoot = !vm.$parent;
-	  // root instance props should be converted
-	  observerState.shouldConvert = isRoot;
-	  var loop = function ( i ) {
-	    var key = keys[i];
-	    /* istanbul ignore else */
-	    {
-	      if (isReservedProp[key]) {
-	        warn(
-	          ("\"" + key + "\" is a reserved attribute and cannot be used as component prop."),
-	          vm
-	        );
-	      }
-	      defineReactive$$1(vm, key, validateProp(key, props, propsData, vm), function () {
-	        if (vm.$parent && !observerState.isSettingProps) {
+	function initProps (vm) {
+	  var props = vm.$options.props;
+	  if (props) {
+	    var propsData = vm.$options.propsData || {};
+	    var keys = vm.$options._propKeys = Object.keys(props);
+	    var isRoot = !vm.$parent;
+	    // root instance props should be converted
+	    observerState.shouldConvert = isRoot;
+	    var loop = function ( i ) {
+	      var key = keys[i];
+	      /* istanbul ignore else */
+	      {
+	        if (isReservedProp[key]) {
 	          warn(
-	            "Avoid mutating a prop directly since the value will be " +
-	            "overwritten whenever the parent component re-renders. " +
-	            "Instead, use a data or computed property based on the prop's " +
-	            "value. Prop being mutated: \"" + key + "\"",
+	            ("\"" + key + "\" is a reserved attribute and cannot be used as component prop."),
 	            vm
 	          );
 	        }
-	      });
-	    }
-	  };
+	        defineReactive$$1(vm, key, validateProp(key, props, propsData, vm), function () {
+	          if (vm.$parent && !observerState.isSettingProps) {
+	            warn(
+	              "Avoid mutating a prop directly since the value will be " +
+	              "overwritten whenever the parent component re-renders. " +
+	              "Instead, use a data or computed property based on the prop's " +
+	              "value. Prop being mutated: \"" + key + "\"",
+	              vm
+	            );
+	          }
+	        });
+	      }
+	    };
 	
-	  for (var i = 0; i < keys.length; i++) loop( i );
-	  observerState.shouldConvert = true;
+	    for (var i = 0; i < keys.length; i++) loop( i );
+	    observerState.shouldConvert = true;
+	  }
 	}
 	
 	function initData (vm) {
@@ -20628,7 +20481,8 @@
 	    }
 	  }
 	  // observe data
-	  observe(data, true /* asRootData */);
+	  observe(data);
+	  data.__ob__ && data.__ob__.vmCount++;
 	}
 	
 	var computedSharedDefinition = {
@@ -20638,31 +20492,26 @@
 	  set: noop
 	};
 	
-	function initComputed (vm, computed) {
-	  for (var key in computed) {
-	    /* istanbul ignore if */
-	    if ("development" !== 'production' && key in vm) {
-	      warn(
-	        "existing instance property \"" + key + "\" will be " +
-	        "overwritten by a computed property with the same name.",
-	        vm
-	      );
+	function initComputed (vm) {
+	  var computed = vm.$options.computed;
+	  if (computed) {
+	    for (var key in computed) {
+	      var userDef = computed[key];
+	      if (typeof userDef === 'function') {
+	        computedSharedDefinition.get = makeComputedGetter(userDef, vm);
+	        computedSharedDefinition.set = noop;
+	      } else {
+	        computedSharedDefinition.get = userDef.get
+	          ? userDef.cache !== false
+	            ? makeComputedGetter(userDef.get, vm)
+	            : bind$1(userDef.get, vm)
+	          : noop;
+	        computedSharedDefinition.set = userDef.set
+	          ? bind$1(userDef.set, vm)
+	          : noop;
+	      }
+	      Object.defineProperty(vm, key, computedSharedDefinition);
 	    }
-	    var userDef = computed[key];
-	    if (typeof userDef === 'function') {
-	      computedSharedDefinition.get = makeComputedGetter(userDef, vm);
-	      computedSharedDefinition.set = noop;
-	    } else {
-	      computedSharedDefinition.get = userDef.get
-	        ? userDef.cache !== false
-	          ? makeComputedGetter(userDef.get, vm)
-	          : bind$1(userDef.get, vm)
-	        : noop;
-	      computedSharedDefinition.set = userDef.set
-	        ? bind$1(userDef.set, vm)
-	        : noop;
-	    }
-	    Object.defineProperty(vm, key, computedSharedDefinition);
 	  }
 	}
 	
@@ -20681,28 +20530,34 @@
 	  }
 	}
 	
-	function initMethods (vm, methods) {
-	  for (var key in methods) {
-	    vm[key] = methods[key] == null ? noop : bind$1(methods[key], vm);
-	    if ("development" !== 'production' && methods[key] == null) {
-	      warn(
-	        "method \"" + key + "\" has an undefined value in the component definition. " +
-	        "Did you reference the function correctly?",
-	        vm
-	      );
+	function initMethods (vm) {
+	  var methods = vm.$options.methods;
+	  if (methods) {
+	    for (var key in methods) {
+	      vm[key] = methods[key] == null ? noop : bind$1(methods[key], vm);
+	      if ("development" !== 'production' && methods[key] == null) {
+	        warn(
+	          "method \"" + key + "\" has an undefined value in the component definition. " +
+	          "Did you reference the function correctly?",
+	          vm
+	        );
+	      }
 	    }
 	  }
 	}
 	
-	function initWatch (vm, watch) {
-	  for (var key in watch) {
-	    var handler = watch[key];
-	    if (Array.isArray(handler)) {
-	      for (var i = 0; i < handler.length; i++) {
-	        createWatcher(vm, key, handler[i]);
+	function initWatch (vm) {
+	  var watch = vm.$options.watch;
+	  if (watch) {
+	    for (var key in watch) {
+	      var handler = watch[key];
+	      if (Array.isArray(handler)) {
+	        for (var i = 0; i < handler.length; i++) {
+	          createWatcher(vm, key, handler[i]);
+	        }
+	      } else {
+	        createWatcher(vm, key, handler);
 	      }
-	    } else {
-	      createWatcher(vm, key, handler);
 	    }
 	  }
 	}
@@ -20843,273 +20698,6 @@
 	    res[i] = cloneVNode(vnodes[i]);
 	  }
 	  return res
-	}
-	
-	/*  */
-	
-	function mergeVNodeHook (def, hookKey, hook, key) {
-	  key = key + hookKey;
-	  var injectedHash = def.__injected || (def.__injected = {});
-	  if (!injectedHash[key]) {
-	    injectedHash[key] = true;
-	    var oldHook = def[hookKey];
-	    if (oldHook) {
-	      def[hookKey] = function () {
-	        oldHook.apply(this, arguments);
-	        hook.apply(this, arguments);
-	      };
-	    } else {
-	      def[hookKey] = hook;
-	    }
-	  }
-	}
-	
-	/*  */
-	
-	function updateListeners (
-	  on,
-	  oldOn,
-	  add,
-	  remove$$1,
-	  vm
-	) {
-	  var name, cur, old, fn, event, capture, once;
-	  for (name in on) {
-	    cur = on[name];
-	    old = oldOn[name];
-	    if (!cur) {
-	      "development" !== 'production' && warn(
-	        "Invalid handler for event \"" + name + "\": got " + String(cur),
-	        vm
-	      );
-	    } else if (!old) {
-	      once = name.charAt(0) === '~'; // Prefixed last, checked first
-	      event = once ? name.slice(1) : name;
-	      capture = event.charAt(0) === '!';
-	      event = capture ? event.slice(1) : event;
-	      if (Array.isArray(cur)) {
-	        add(event, (cur.invoker = arrInvoker(cur)), once, capture);
-	      } else {
-	        if (!cur.invoker) {
-	          fn = cur;
-	          cur = on[name] = {};
-	          cur.fn = fn;
-	          cur.invoker = fnInvoker(cur);
-	        }
-	        add(event, cur.invoker, once, capture);
-	      }
-	    } else if (cur !== old) {
-	      if (Array.isArray(old)) {
-	        old.length = cur.length;
-	        for (var i = 0; i < old.length; i++) { old[i] = cur[i]; }
-	        on[name] = old;
-	      } else {
-	        old.fn = cur;
-	        on[name] = old;
-	      }
-	    }
-	  }
-	  for (name in oldOn) {
-	    if (!on[name]) {
-	      once = name.charAt(0) === '~'; // Prefixed last, checked first
-	      event = once ? name.slice(1) : name;
-	      capture = event.charAt(0) === '!';
-	      event = capture ? event.slice(1) : event;
-	      remove$$1(event, oldOn[name].invoker, capture);
-	    }
-	  }
-	}
-	
-	function arrInvoker (arr) {
-	  return function (ev) {
-	    var arguments$1 = arguments;
-	
-	    var single = arguments.length === 1;
-	    for (var i = 0; i < arr.length; i++) {
-	      single ? arr[i](ev) : arr[i].apply(null, arguments$1);
-	    }
-	  }
-	}
-	
-	function fnInvoker (o) {
-	  return function (ev) {
-	    var single = arguments.length === 1;
-	    single ? o.fn(ev) : o.fn.apply(null, arguments);
-	  }
-	}
-	
-	/*  */
-	
-	// The template compiler attempts to minimize the need for normalization by
-	// statically analyzing the template at compile time.
-	//
-	// For plain HTML markup, normalization can be completely skipped because the
-	// generated render function is guaranteed to return Array<VNode>. There are
-	// two cases where extra normalization is needed:
-	
-	// 1. When the children contains components - because a functional component
-	// may return an Array instead of a single root. In this case, just a simple
-	// nomralization is needed - if any child is an Array, we flatten the whole
-	// thing with Array.prototype.concat. It is guaranteed to be only 1-level deep
-	// because functional components already normalize their own children.
-	function simpleNormalizeChildren (children) {
-	  for (var i = 0; i < children.length; i++) {
-	    if (Array.isArray(children[i])) {
-	      return Array.prototype.concat.apply([], children)
-	    }
-	  }
-	  return children
-	}
-	
-	// 2. When the children contains constrcuts that always generated nested Arrays,
-	// e.g. <template>, <slot>, v-for, or when the children is provided by user
-	// with hand-written render functions / JSX. In such cases a full normalization
-	// is needed to cater to all possible types of children values.
-	function normalizeChildren (children) {
-	  return isPrimitive(children)
-	    ? [createTextVNode(children)]
-	    : Array.isArray(children)
-	      ? normalizeArrayChildren(children)
-	      : undefined
-	}
-	
-	function normalizeArrayChildren (children, nestedIndex) {
-	  var res = [];
-	  var i, c, last;
-	  for (i = 0; i < children.length; i++) {
-	    c = children[i];
-	    if (c == null || typeof c === 'boolean') { continue }
-	    last = res[res.length - 1];
-	    //  nested
-	    if (Array.isArray(c)) {
-	      res.push.apply(res, normalizeArrayChildren(c, ((nestedIndex || '') + "_" + i)));
-	    } else if (isPrimitive(c)) {
-	      if (last && last.text) {
-	        last.text += String(c);
-	      } else if (c !== '') {
-	        // convert primitive to vnode
-	        res.push(createTextVNode(c));
-	      }
-	    } else {
-	      if (c.text && last && last.text) {
-	        res[res.length - 1] = createTextVNode(last.text + c.text);
-	      } else {
-	        // default key for nested array children (likely generated by v-for)
-	        if (c.tag && c.key == null && nestedIndex != null) {
-	          c.key = "__vlist" + nestedIndex + "_" + i + "__";
-	        }
-	        res.push(c);
-	      }
-	    }
-	  }
-	  return res
-	}
-	
-	/*  */
-	
-	function getFirstComponentChild (children) {
-	  return children && children.filter(function (c) { return c && c.componentOptions; })[0]
-	}
-	
-	/*  */
-	
-	function initEvents (vm) {
-	  vm._events = Object.create(null);
-	  vm._hasHookEvent = false;
-	  // init parent attached events
-	  var listeners = vm.$options._parentListeners;
-	  if (listeners) {
-	    updateComponentListeners(vm, listeners);
-	  }
-	}
-	
-	var target;
-	
-	function add$1 (event, fn, once) {
-	  if (once) {
-	    target.$once(event, fn);
-	  } else {
-	    target.$on(event, fn);
-	  }
-	}
-	
-	function remove$2 (event, fn) {
-	  target.$off(event, fn);
-	}
-	
-	function updateComponentListeners (
-	  vm,
-	  listeners,
-	  oldListeners
-	) {
-	  target = vm;
-	  updateListeners(listeners, oldListeners || {}, add$1, remove$2, vm);
-	}
-	
-	function eventsMixin (Vue) {
-	  var hookRE = /^hook:/;
-	  Vue.prototype.$on = function (event, fn) {
-	    var vm = this;(vm._events[event] || (vm._events[event] = [])).push(fn);
-	    // optimize hook:event cost by using a boolean flag marked at registration
-	    // instead of a hash lookup
-	    if (hookRE.test(event)) {
-	      vm._hasHookEvent = true;
-	    }
-	    return vm
-	  };
-	
-	  Vue.prototype.$once = function (event, fn) {
-	    var vm = this;
-	    function on () {
-	      vm.$off(event, on);
-	      fn.apply(vm, arguments);
-	    }
-	    on.fn = fn;
-	    vm.$on(event, on);
-	    return vm
-	  };
-	
-	  Vue.prototype.$off = function (event, fn) {
-	    var vm = this;
-	    // all
-	    if (!arguments.length) {
-	      vm._events = Object.create(null);
-	      return vm
-	    }
-	    // specific event
-	    var cbs = vm._events[event];
-	    if (!cbs) {
-	      return vm
-	    }
-	    if (arguments.length === 1) {
-	      vm._events[event] = null;
-	      return vm
-	    }
-	    // specific handler
-	    var cb;
-	    var i = cbs.length;
-	    while (i--) {
-	      cb = cbs[i];
-	      if (cb === fn || cb.fn === fn) {
-	        cbs.splice(i, 1);
-	        break
-	      }
-	    }
-	    return vm
-	  };
-	
-	  Vue.prototype.$emit = function (event) {
-	    var vm = this;
-	    var cbs = vm._events[event];
-	    if (cbs) {
-	      cbs = cbs.length > 1 ? toArray(cbs) : cbs;
-	      var args = toArray(arguments, 1);
-	      for (var i = 0, l = cbs.length; i < l; i++) {
-	        cbs[i].apply(vm, args);
-	      }
-	    }
-	    return vm
-	  };
 	}
 	
 	/*  */
@@ -21256,7 +20844,7 @@
 	    if (listeners) {
 	      var oldListeners = vm.$options._parentListeners;
 	      vm.$options._parentListeners = listeners;
-	      updateComponentListeners(vm, listeners, oldListeners);
+	      vm._updateListeners(listeners, oldListeners);
 	    }
 	    // resolve slots + force update if has children
 	    if (hasChildren) {
@@ -21318,9 +20906,7 @@
 	      handlers[i].call(vm);
 	    }
 	  }
-	  if (vm._hasHookEvent) {
-	    vm.$emit('hook:' + hook);
-	  }
+	  vm.$emit('hook:' + hook);
 	}
 	
 	/*  */
@@ -21643,8 +21229,146 @@
 	
 	/*  */
 	
-	var SIMPLE_NORMALIZE = 1;
-	var ALWAYS_NORMALIZE = 2;
+	function mergeVNodeHook (def, hookKey, hook, key) {
+	  key = key + hookKey;
+	  var injectedHash = def.__injected || (def.__injected = {});
+	  if (!injectedHash[key]) {
+	    injectedHash[key] = true;
+	    var oldHook = def[hookKey];
+	    if (oldHook) {
+	      def[hookKey] = function () {
+	        oldHook.apply(this, arguments);
+	        hook.apply(this, arguments);
+	      };
+	    } else {
+	      def[hookKey] = hook;
+	    }
+	  }
+	}
+	
+	/*  */
+	
+	function updateListeners (
+	  on,
+	  oldOn,
+	  add,
+	  remove$$1,
+	  vm
+	) {
+	  var name, cur, old, fn, event, capture, once;
+	  for (name in on) {
+	    cur = on[name];
+	    old = oldOn[name];
+	    if (!cur) {
+	      "development" !== 'production' && warn(
+	        "Invalid handler for event \"" + name + "\": got " + String(cur),
+	        vm
+	      );
+	    } else if (!old) {
+	      once = name.charAt(0) === '~'; // Prefixed last, checked first
+	      event = once ? name.slice(1) : name;
+	      capture = event.charAt(0) === '!';
+	      event = capture ? event.slice(1) : event;
+	      if (Array.isArray(cur)) {
+	        add(event, (cur.invoker = arrInvoker(cur)), once, capture);
+	      } else {
+	        if (!cur.invoker) {
+	          fn = cur;
+	          cur = on[name] = {};
+	          cur.fn = fn;
+	          cur.invoker = fnInvoker(cur);
+	        }
+	        add(event, cur.invoker, once, capture);
+	      }
+	    } else if (cur !== old) {
+	      if (Array.isArray(old)) {
+	        old.length = cur.length;
+	        for (var i = 0; i < old.length; i++) { old[i] = cur[i]; }
+	        on[name] = old;
+	      } else {
+	        old.fn = cur;
+	        on[name] = old;
+	      }
+	    }
+	  }
+	  for (name in oldOn) {
+	    if (!on[name]) {
+	      once = name.charAt(0) === '~'; // Prefixed last, checked first
+	      event = once ? name.slice(1) : name;
+	      capture = event.charAt(0) === '!';
+	      event = capture ? event.slice(1) : event;
+	      remove$$1(event, oldOn[name].invoker, capture);
+	    }
+	  }
+	}
+	
+	function arrInvoker (arr) {
+	  return function (ev) {
+	    var arguments$1 = arguments;
+	
+	    var single = arguments.length === 1;
+	    for (var i = 0; i < arr.length; i++) {
+	      single ? arr[i](ev) : arr[i].apply(null, arguments$1);
+	    }
+	  }
+	}
+	
+	function fnInvoker (o) {
+	  return function (ev) {
+	    var single = arguments.length === 1;
+	    single ? o.fn(ev) : o.fn.apply(null, arguments);
+	  }
+	}
+	
+	/*  */
+	
+	function normalizeChildren (children) {
+	  return isPrimitive(children)
+	    ? [createTextVNode(children)]
+	    : Array.isArray(children)
+	      ? normalizeArrayChildren(children)
+	      : undefined
+	}
+	
+	function normalizeArrayChildren (children, nestedIndex) {
+	  var res = [];
+	  var i, c, last;
+	  for (i = 0; i < children.length; i++) {
+	    c = children[i];
+	    if (c == null || typeof c === 'boolean') { continue }
+	    last = res[res.length - 1];
+	    //  nested
+	    if (Array.isArray(c)) {
+	      res.push.apply(res, normalizeArrayChildren(c, ((nestedIndex || '') + "_" + i)));
+	    } else if (isPrimitive(c)) {
+	      if (last && last.text) {
+	        last.text += String(c);
+	      } else if (c !== '') {
+	        // convert primitive to vnode
+	        res.push(createTextVNode(c));
+	      }
+	    } else {
+	      if (c.text && last && last.text) {
+	        res[res.length - 1] = createTextVNode(last.text + c.text);
+	      } else {
+	        // default key for nested array children (likely generated by v-for)
+	        if (c.tag && c.key == null && nestedIndex != null) {
+	          c.key = "__vlist" + nestedIndex + "_" + i + "__";
+	        }
+	        res.push(c);
+	      }
+	    }
+	  }
+	  return res
+	}
+	
+	/*  */
+	
+	function getFirstComponentChild (children) {
+	  return children && children.filter(function (c) { return c && c.componentOptions; })[0]
+	}
+	
+	/*  */
 	
 	// wrapper function for providing a more flexible interface
 	// without getting yelled at by flow
@@ -21653,16 +21377,16 @@
 	  tag,
 	  data,
 	  children,
-	  normalizationType,
+	  needNormalization,
 	  alwaysNormalize
 	) {
 	  if (Array.isArray(data) || isPrimitive(data)) {
-	    normalizationType = children;
+	    needNormalization = children;
 	    children = data;
 	    data = undefined;
 	  }
-	  if (alwaysNormalize) { normalizationType = ALWAYS_NORMALIZE; }
-	  return _createElement(context, tag, data, children, normalizationType)
+	  if (alwaysNormalize) { needNormalization = true; }
+	  return _createElement(context, tag, data, children, needNormalization)
 	}
 	
 	function _createElement (
@@ -21670,7 +21394,7 @@
 	  tag,
 	  data,
 	  children,
-	  normalizationType
+	  needNormalization
 	) {
 	  if (data && data.__ob__) {
 	    "development" !== 'production' && warn(
@@ -21691,10 +21415,8 @@
 	    data.scopedSlots = { default: children[0] };
 	    children.length = 0;
 	  }
-	  if (normalizationType === ALWAYS_NORMALIZE) {
+	  if (needNormalization) {
 	    children = normalizeChildren(children);
-	  } else if (normalizationType === SIMPLE_NORMALIZE) {
-	    children = simpleNormalizeChildren(children);
 	  }
 	  var vnode, ns;
 	  if (typeof tag === 'string') {
@@ -21713,6 +21435,7 @@
 	      // unknown or unlisted namespaced elements
 	      // check at runtime because it may get assigned a namespace when its
 	      // parent normalizes children
+	      ns = tag === 'foreignObject' ? 'xhtml' : ns;
 	      vnode = new VNode(
 	        tag, data, children,
 	        undefined, undefined, context
@@ -21732,10 +21455,6 @@
 	
 	function applyNS (vnode, ns) {
 	  vnode.ns = ns;
-	  if (vnode.tag === 'foreignObject') {
-	    // use default namespace inside foreignObject
-	    return
-	  }
 	  if (vnode.children) {
 	    for (var i = 0, l = vnode.children.length; i < l; i++) {
 	      var child = vnode.children[i];
@@ -21758,7 +21477,7 @@
 	  vm.$scopedSlots = {};
 	  // bind the createElement fn to this instance
 	  // so that we get proper render context inside it.
-	  // args order: tag, data, children, normalizationType, alwaysNormalize
+	  // args order: tag, data, children, needNormalization, alwaysNormalize
 	  // internal version is used by render functions compiled from templates
 	  vm._c = function (a, b, c, d) { return createElement(vm, a, b, c, d, false); };
 	  // normalization is always applied for the public version, used in
@@ -21902,7 +21621,7 @@
 	    render
 	  ) {
 	    var ret, i, l, keys, key;
-	    if (Array.isArray(val) || typeof val === 'string') {
+	    if (Array.isArray(val)) {
 	      ret = new Array(val.length);
 	      for (i = 0, l = val.length; i < l; i++) {
 	        ret[i] = render(val[i], i);
@@ -21927,16 +21646,11 @@
 	  Vue.prototype._t = function (
 	    name,
 	    fallback,
-	    props,
-	    bindObject
+	    props
 	  ) {
 	    var scopedSlotFn = this.$scopedSlots[name];
 	    if (scopedSlotFn) { // scoped slot
-	      props = props || {};
-	      if (bindObject) {
-	        extend(props, bindObject);
-	      }
-	      return scopedSlotFn(props) || fallback
+	      return scopedSlotFn(props || {}) || fallback
 	    } else {
 	      var slotNodes = this.$slots[name];
 	      // warn duplicate slot usage
@@ -22033,6 +21747,84 @@
 	    slots.default = defaultSlot;
 	  }
 	  return slots
+	}
+	
+	/*  */
+	
+	function initEvents (vm) {
+	  vm._events = Object.create(null);
+	  // init parent attached events
+	  var listeners = vm.$options._parentListeners;
+	  var add = function (event, fn, once) {
+	    once ? vm.$once(event, fn) : vm.$on(event, fn);
+	  };
+	  var remove$$1 = bind$1(vm.$off, vm);
+	  vm._updateListeners = function (listeners, oldListeners) {
+	    updateListeners(listeners, oldListeners || {}, add, remove$$1, vm);
+	  };
+	  if (listeners) {
+	    vm._updateListeners(listeners);
+	  }
+	}
+	
+	function eventsMixin (Vue) {
+	  Vue.prototype.$on = function (event, fn) {
+	    var vm = this;(vm._events[event] || (vm._events[event] = [])).push(fn);
+	    return vm
+	  };
+	
+	  Vue.prototype.$once = function (event, fn) {
+	    var vm = this;
+	    function on () {
+	      vm.$off(event, on);
+	      fn.apply(vm, arguments);
+	    }
+	    on.fn = fn;
+	    vm.$on(event, on);
+	    return vm
+	  };
+	
+	  Vue.prototype.$off = function (event, fn) {
+	    var vm = this;
+	    // all
+	    if (!arguments.length) {
+	      vm._events = Object.create(null);
+	      return vm
+	    }
+	    // specific event
+	    var cbs = vm._events[event];
+	    if (!cbs) {
+	      return vm
+	    }
+	    if (arguments.length === 1) {
+	      vm._events[event] = null;
+	      return vm
+	    }
+	    // specific handler
+	    var cb;
+	    var i = cbs.length;
+	    while (i--) {
+	      cb = cbs[i];
+	      if (cb === fn || cb.fn === fn) {
+	        cbs.splice(i, 1);
+	        break
+	      }
+	    }
+	    return vm
+	  };
+	
+	  Vue.prototype.$emit = function (event) {
+	    var vm = this;
+	    var cbs = vm._events[event];
+	    if (cbs) {
+	      cbs = cbs.length > 1 ? toArray(cbs) : cbs;
+	      var args = toArray(arguments, 1);
+	      for (var i = 0, l = cbs.length; i < l; i++) {
+	        cbs[i].apply(vm, args);
+	      }
+	    }
+	    return vm
+	  };
 	}
 	
 	/*  */
@@ -22364,7 +22156,7 @@
 	  get: isServerRendering
 	});
 	
-	Vue$3.version = '2.1.8';
+	Vue$3.version = '2.1.6';
 	
 	/*  */
 	
@@ -22480,7 +22272,8 @@
 	
 	var namespaceMap = {
 	  svg: 'http://www.w3.org/2000/svg',
-	  math: 'http://www.w3.org/1998/Math/MathML'
+	  math: 'http://www.w3.org/1998/Math/MathML',
+	  xhtml: 'http://www.w3.org/1999/xhtml'
 	};
 	
 	var isHTMLTag = makeMap(
@@ -22750,16 +22543,16 @@
 	  function createRmCb (childElm, listeners) {
 	    function remove$$1 () {
 	      if (--remove$$1.listeners === 0) {
-	        removeNode(childElm);
+	        removeElement(childElm);
 	      }
 	    }
 	    remove$$1.listeners = listeners;
 	    return remove$$1
 	  }
 	
-	  function removeNode (el) {
+	  function removeElement (el) {
 	    var parent = nodeOps.parentNode(el);
-	    // element may have already been removed due to v-html / v-text
+	    // element may have already been removed due to v-html
 	    if (parent) {
 	      nodeOps.removeChild(parent, el);
 	    }
@@ -22783,7 +22576,7 @@
 	        if (
 	          !inPre &&
 	          !vnode.ns &&
-	          !(config.ignoredElements.length && config.ignoredElements.indexOf(tag) > -1) &&
+	          !(config.ignoredElements && config.ignoredElements.indexOf(tag) > -1) &&
 	          config.isUnknownElement(tag)
 	        ) {
 	          warn(
@@ -22961,7 +22754,7 @@
 	          removeAndInvokeRemoveHook(ch);
 	          invokeDestroyHook(ch);
 	        } else { // Text node
-	          removeNode(ch.elm);
+	          nodeOps.removeChild(parentElm, ch.elm);
 	        }
 	      }
 	    }
@@ -22991,7 +22784,7 @@
 	        rm();
 	      }
 	    } else {
-	      removeNode(vnode.elm);
+	      removeElement(vnode.elm);
 	    }
 	  }
 	
@@ -23191,8 +22984,6 @@
 	          }
 	        }
 	      }
-	    } else if (elm.data !== vnode.text) {
-	      elm.data = vnode.text;
 	    }
 	    return true
 	  }
@@ -23204,7 +22995,7 @@
 	        vnode.tag.toLowerCase() === (node.tagName && node.tagName.toLowerCase())
 	      )
 	    } else {
-	      return node.nodeType === (vnode.isComment ? 8 : 3)
+	      return _toString(vnode.text) === node.data
 	    }
 	  }
 	
@@ -23254,6 +23045,7 @@
 	          // create an empty node and replace it
 	          oldVnode = emptyNodeAt(oldVnode);
 	        }
+	
 	        // replacing existing element
 	        elm = oldVnode.elm;
 	        parent = nodeOps.parentNode(elm);
@@ -23305,7 +23097,6 @@
 	
 	function _update (oldVnode, vnode) {
 	  var isCreate = oldVnode === emptyNode;
-	  var isDestroy = vnode === emptyNode;
 	  var oldDirs = normalizeDirectives$1(oldVnode.data.directives, oldVnode.context);
 	  var newDirs = normalizeDirectives$1(vnode.data.directives, vnode.context);
 	
@@ -23357,7 +23148,7 @@
 	    for (key in oldDirs) {
 	      if (!newDirs[key]) {
 	        // no longer present, unbind
-	        callHook$1(oldDirs[key], 'unbind', oldVnode, oldVnode, isDestroy);
+	        callHook$1(oldDirs[key], 'unbind', oldVnode);
 	      }
 	    }
 	  }
@@ -23389,10 +23180,10 @@
 	  return dir.rawName || ((dir.name) + "." + (Object.keys(dir.modifiers || {}).join('.')))
 	}
 	
-	function callHook$1 (dir, hook, vnode, oldVnode, isDestroy) {
+	function callHook$1 (dir, hook, vnode, oldVnode) {
 	  var fn = dir.def && dir.def[hook];
 	  if (fn) {
-	    fn(vnode.elm, dir, vnode, oldVnode, isDestroy);
+	    fn(vnode.elm, dir, vnode, oldVnode);
 	  }
 	}
 	
@@ -23503,23 +23294,23 @@
 	
 	/*  */
 	
-	var target$1;
+	var target;
 	
-	function add$2 (event, handler, once, capture) {
+	function add$1 (event, handler, once, capture) {
 	  if (once) {
 	    var oldHandler = handler;
 	    handler = function (ev) {
-	      remove$3(event, handler, capture);
+	      remove$2(event, handler, capture);
 	      arguments.length === 1
 	        ? oldHandler(ev)
 	        : oldHandler.apply(null, arguments);
 	    };
 	  }
-	  target$1.addEventListener(event, handler, capture);
+	  target.addEventListener(event, handler, capture);
 	}
 	
-	function remove$3 (event, handler, capture) {
-	  target$1.removeEventListener(event, handler, capture);
+	function remove$2 (event, handler, capture) {
+	  target.removeEventListener(event, handler, capture);
 	}
 	
 	function updateDOMListeners (oldVnode, vnode) {
@@ -23528,8 +23319,8 @@
 	  }
 	  var on = vnode.data.on || {};
 	  var oldOn = oldVnode.data.on || {};
-	  target$1 = vnode.elm;
-	  updateListeners(on, oldOn, add$2, remove$3, vnode.context);
+	  target = vnode.elm;
+	  updateListeners(on, oldOn, add$1, remove$2, vnode.context);
 	}
 	
 	var events = {
@@ -23566,20 +23357,16 @@
 	      if (vnode.children) { vnode.children.length = 0; }
 	      if (cur === oldProps[key]) { continue }
 	    }
-	    // #4521: if a click event triggers update before the change event is
-	    // dispatched on a checkbox/radio input, the input's checked state will
-	    // be reset and fail to trigger another update.
-	    /* istanbul ignore next */
-	    if (key === 'checked' && !isDirty(elm, cur)) {
-	      continue
-	    }
 	    if (key === 'value') {
 	      // store value as _value as well since
 	      // non-string values will be stringified
 	      elm._value = cur;
 	      // avoid resetting cursor position when value is the same
 	      var strCur = cur == null ? '' : String(cur);
-	      if (shouldUpdateValue(elm, vnode, strCur)) {
+	      if (!elm.composing && (
+	        (document.activeElement !== elm && elm.value !== strCur) ||
+	        isValueChanged(vnode, strCur)
+	      )) {
 	        elm.value = strCur;
 	      }
 	    } else {
@@ -23588,29 +23375,7 @@
 	  }
 	}
 	
-	// check platforms/web/util/attrs.js acceptValue
-	
-	
-	function shouldUpdateValue (
-	  elm,
-	  vnode,
-	  checkVal
-	) {
-	  if (!elm.composing && (
-	    vnode.tag === 'option' ||
-	    isDirty(elm, checkVal) ||
-	    isInputChanged(vnode, checkVal)
-	  )) {
-	    return true
-	  }
-	  return false
-	}
-	
-	function isDirty (elm, checkVal) {
-	  return document.activeElement !== elm && elm.value !== checkVal
-	}
-	
-	function isInputChanged (vnode, newVal) {
+	function isValueChanged (vnode, newVal) {
 	  var value = vnode.elm.value;
 	  var modifiers = vnode.elm._vModifiers; // injected by v-model runtime
 	  if ((modifiers && modifiers.number) || vnode.elm.type === 'number') {
@@ -23988,10 +23753,8 @@
 	  var css = data.css;
 	  var type = data.type;
 	  var enterClass = data.enterClass;
-	  var enterToClass = data.enterToClass;
 	  var enterActiveClass = data.enterActiveClass;
 	  var appearClass = data.appearClass;
-	  var appearToClass = data.appearToClass;
 	  var appearActiveClass = data.appearActiveClass;
 	  var beforeEnter = data.beforeEnter;
 	  var enter = data.enter;
@@ -24021,7 +23784,6 @@
 	
 	  var startClass = isAppear ? appearClass : enterClass;
 	  var activeClass = isAppear ? appearActiveClass : enterActiveClass;
-	  var toClass = isAppear ? appearToClass : enterToClass;
 	  var beforeEnterHook = isAppear ? (beforeAppear || beforeEnter) : beforeEnter;
 	  var enterHook = isAppear ? (typeof appear === 'function' ? appear : enter) : enter;
 	  var afterEnterHook = isAppear ? (afterAppear || afterEnter) : afterEnter;
@@ -24036,7 +23798,6 @@
 	
 	  var cb = el._enterCb = once(function () {
 	    if (expectsCSS) {
-	      removeTransitionClass(el, toClass);
 	      removeTransitionClass(el, activeClass);
 	    }
 	    if (cb.cancelled) {
@@ -24071,7 +23832,6 @@
 	    addTransitionClass(el, startClass);
 	    addTransitionClass(el, activeClass);
 	    nextFrame(function () {
-	      addTransitionClass(el, toClass);
 	      removeTransitionClass(el, startClass);
 	      if (!cb.cancelled && !userWantsControl) {
 	        whenTransitionEnds(el, type, cb);
@@ -24111,7 +23871,6 @@
 	  var css = data.css;
 	  var type = data.type;
 	  var leaveClass = data.leaveClass;
-	  var leaveToClass = data.leaveToClass;
 	  var leaveActiveClass = data.leaveActiveClass;
 	  var beforeLeave = data.beforeLeave;
 	  var leave = data.leave;
@@ -24131,7 +23890,6 @@
 	      el.parentNode._pending[vnode.key] = null;
 	    }
 	    if (expectsCSS) {
-	      removeTransitionClass(el, leaveToClass);
 	      removeTransitionClass(el, leaveActiveClass);
 	    }
 	    if (cb.cancelled) {
@@ -24166,7 +23924,6 @@
 	      addTransitionClass(el, leaveClass);
 	      addTransitionClass(el, leaveActiveClass);
 	      nextFrame(function () {
-	        addTransitionClass(el, leaveToClass);
 	        removeTransitionClass(el, leaveClass);
 	        if (!cb.cancelled && !userWantsControl) {
 	          whenTransitionEnds(el, type, cb);
@@ -24202,9 +23959,6 @@
 	    enterClass: (name + "-enter"),
 	    leaveClass: (name + "-leave"),
 	    appearClass: (name + "-enter"),
-	    enterToClass: (name + "-enter-to"),
-	    leaveToClass: (name + "-leave-to"),
-	    appearToClass: (name + "-enter-to"),
 	    enterActiveClass: (name + "-enter-active"),
 	    leaveActiveClass: (name + "-leave-active"),
 	    appearActiveClass: (name + "-enter-active")
@@ -24416,7 +24170,6 @@
 	      el.style.display = value ? originalDisplay : 'none';
 	    }
 	  },
-	
 	  update: function update (el, ref, vnode) {
 	    var value = ref.value;
 	    var oldValue = ref.oldValue;
@@ -24439,18 +24192,6 @@
 	    } else {
 	      el.style.display = value ? el.__vOriginalDisplay : 'none';
 	    }
-	  },
-	
-	  unbind: function unbind (
-	    el,
-	    binding,
-	    vnode,
-	    oldVnode,
-	    isDestroy
-	  ) {
-	    if (!isDestroy) {
-	      el.style.display = el.__vOriginalDisplay;
-	    }
 	  }
 	};
 	
@@ -24472,13 +24213,10 @@
 	  type: String,
 	  enterClass: String,
 	  leaveClass: String,
-	  enterToClass: String,
-	  leaveToClass: String,
 	  enterActiveClass: String,
 	  leaveActiveClass: String,
 	  appearClass: String,
-	  appearActiveClass: String,
-	  appearToClass: String
+	  appearActiveClass: String
 	};
 	
 	// in case the child is also an abstract component, e.g. <keep-alive>
@@ -24520,10 +24258,6 @@
 	      return true
 	    }
 	  }
-	}
-	
-	function isSameChild (child, oldChild) {
-	  return oldChild.key === child.key && oldChild.tag === child.tag
 	}
 	
 	var Transition = {
@@ -24598,10 +24332,11 @@
 	      child.data.show = true;
 	    }
 	
-	    if (oldChild && oldChild.data && !isSameChild(child, oldChild)) {
+	    if (oldChild && oldChild.data && oldChild.key !== key) {
 	      // replace old child transition data with fresh one
 	      // important for dynamic transitions!
-	      var oldData = oldChild && (oldChild.data.transition = extend({}, data));
+	      var oldData = oldChild.data.transition = extend({}, data);
+	
 	      // handle transition mode
 	      if (mode === 'out-in') {
 	        // return placeholder node and queue update when leave finishes
@@ -24812,15 +24547,6 @@
 	  return this._mount(el, hydrating)
 	};
 	
-	if ("development" !== 'production' &&
-	    inBrowser && typeof console !== 'undefined') {
-	  console[console.info ? 'info' : 'log'](
-	    "You are running Vue in development mode.\n" +
-	    "Make sure to turn on production mode when deploying for production.\n" +
-	    "See more tips at https://vuejs.org/guide/deployment.html"
-	  );
-	}
-	
 	// devtools global hook
 	/* istanbul ignore next */
 	setTimeout(function () {
@@ -24831,8 +24557,8 @@
 	      "development" !== 'production' &&
 	      inBrowser && !isEdge && /Chrome\/\d+/.test(window.navigator.userAgent)
 	    ) {
-	      console[console.info ? 'info' : 'log'](
-	        'Download the Vue Devtools extension for a better development experience:\n' +
+	      console.log(
+	        'Download the Vue Devtools for a better development experience:\n' +
 	        'https://github.com/vuejs/vue-devtools'
 	      );
 	    }
@@ -25601,7 +25327,7 @@
 	        "development" !== 'production' && warn$1(
 	          'Templates should only be responsible for mapping the state to the ' +
 	          'UI. Avoid placing tags with side-effects in your templates, such as ' +
-	          "<" + tag + ">" + ', as they will not be parsed.'
+	          "<" + tag + ">."
 	        );
 	      }
 	
@@ -25738,20 +25464,19 @@
 	          currentParent.attrsMap.placeholder === text) {
 	        return
 	      }
-	      var children = currentParent.children;
 	      text = inPre || text.trim()
 	        ? decodeHTMLCached(text)
 	        // only preserve whitespace if its not right after a starting tag
-	        : preserveWhitespace && children.length ? ' ' : '';
+	        : preserveWhitespace && currentParent.children.length ? ' ' : '';
 	      if (text) {
 	        var expression;
 	        if (!inVPre && text !== ' ' && (expression = parseText(text, delimiters))) {
-	          children.push({
+	          currentParent.children.push({
 	            type: 2,
 	            expression: expression,
 	            text: text
 	          });
-	        } else if (text !== ' ' || children[children.length - 1].text !== ' ') {
+	        } else {
 	          currentParent.children.push({
 	            type: 3,
 	            text: text
@@ -25862,23 +25587,6 @@
 	  }
 	}
 	
-	function findPrevElement (children) {
-	  var i = children.length;
-	  while (i--) {
-	    if (children[i].type === 1) {
-	      return children[i]
-	    } else {
-	      if ("development" !== 'production' && children[i].text !== ' ') {
-	        warn$1(
-	          "text \"" + (children[i].text.trim()) + "\" between v-if and v-else(-if) " +
-	          "will be ignored."
-	        );
-	      }
-	      children.pop();
-	    }
-	  }
-	}
-	
 	function addIfCondition (el, condition) {
 	  if (!el.ifConditions) {
 	    el.ifConditions = [];
@@ -25986,15 +25694,6 @@
 	        }
 	      }
 	      addAttr(el, name, JSON.stringify(value));
-	      // #4530 also bind special attributes as props even if they are static
-	      // so that patches between dynamic/static are consistent
-	      if (platformMustUseProp(el.tag, name)) {
-	        if (name === 'value') {
-	          addProp(el, name, JSON.stringify(value));
-	        } else {
-	          addProp(el, name, 'true');
-	        }
-	      }
 	    }
 	  }
 	}
@@ -26028,6 +25727,13 @@
 	    map[attrs[i].name] = attrs[i].value;
 	  }
 	  return map
+	}
+	
+	function findPrevElement (children) {
+	  var i = children.length;
+	  while (i--) {
+	    if (children[i].tag) { return children[i] }
+	  }
 	}
 	
 	function isForbiddenTag (el) {
@@ -26283,8 +25989,6 @@
 	  };
 	}
 	
-	/*  */
-	
 	var baseDirectives = {
 	  bind: bind$2,
 	  cloak: noop
@@ -26297,7 +26001,6 @@
 	var transforms$1;
 	var dataGenFns;
 	var platformDirectives$1;
-	var isPlatformReservedTag$1;
 	var staticRenderFns;
 	var onceCount;
 	var currentOptions;
@@ -26316,7 +26019,6 @@
 	  transforms$1 = pluckModuleFunction(options.modules, 'transformCode');
 	  dataGenFns = pluckModuleFunction(options.modules, 'genData');
 	  platformDirectives$1 = options.directives || {};
-	  isPlatformReservedTag$1 = options.isReservedTag || no;
 	  var code = ast ? genElement(ast) : '_c("div")';
 	  staticRenderFns = prevStaticRenderFns;
 	  onceCount = prevOnceCount;
@@ -26556,40 +26258,25 @@
 	        el$1.tag !== 'slot') {
 	      return genElement(el$1)
 	    }
-	    var normalizationType = getNormalizationType(children);
 	    return ("[" + (children.map(genNode).join(',')) + "]" + (checkSkip
-	        ? normalizationType ? ("," + normalizationType) : ''
+	        ? canSkipNormalization(children) ? '' : ',true'
 	        : ''))
 	  }
 	}
 	
-	// determine the normalization needed for the children array.
-	// 0: no normalization needed
-	// 1: simple normalization needed (possible 1-level deep nested array)
-	// 2: full normalization needed
-	function getNormalizationType (children) {
-	  var res = 0;
+	function canSkipNormalization (children) {
 	  for (var i = 0; i < children.length; i++) {
 	    var el = children[i];
 	    if (needsNormalization(el) ||
 	        (el.if && el.ifConditions.some(function (c) { return needsNormalization(c.block); }))) {
-	      res = 2;
-	      break
-	    }
-	    if (maybeComponent(el) ||
-	        (el.if && el.ifConditions.some(function (c) { return maybeComponent(c.block); }))) {
-	      res = 1;
+	      return false
 	    }
 	  }
-	  return res
+	  return true
 	}
 	
 	function needsNormalization (el) {
 	  return el.for || el.tag === 'template' || el.tag === 'slot'
-	}
-	
-	function maybeComponent (el) {
-	  return el.type === 1 && !isPlatformReservedTag$1(el.tag)
 	}
 	
 	function genNode (node) {
@@ -26609,19 +26296,7 @@
 	function genSlot (el) {
 	  var slotName = el.slotName || '"default"';
 	  var children = genChildren(el);
-	  var res = "_t(" + slotName + (children ? ("," + children) : '');
-	  var attrs = el.attrs && ("{" + (el.attrs.map(function (a) { return ((camelize(a.name)) + ":" + (a.value)); }).join(',')) + "}");
-	  var bind$$1 = el.attrsMap['v-bind'];
-	  if ((attrs || bind$$1) && !children) {
-	    res += ",null";
-	  }
-	  if (attrs) {
-	    res += "," + attrs;
-	  }
-	  if (bind$$1) {
-	    res += (attrs ? '' : ',null') + "," + bind$$1;
-	  }
-	  return res + ')'
+	  return ("_t(" + slotName + (children ? ("," + children) : '') + (el.attrs ? ((children ? '' : ',null') + ",{" + (el.attrs.map(function (a) { return ((camelize(a.name)) + ":" + (a.value)); }).join(',')) + "}") : '') + ")")
 	}
 	
 	// componentName is el.component, take it as argument to shun flow's pessimistic refinement
@@ -26886,11 +26561,8 @@
 	  var falseValueBinding = getBindingAttr(el, 'false-value') || 'false';
 	  addProp(el, 'checked',
 	    "Array.isArray(" + value + ")" +
-	      "?_i(" + value + "," + valueBinding + ")>-1" + (
-	        trueValueBinding === 'true'
-	          ? (":(" + value + ")")
-	          : (":_q(" + value + "," + trueValueBinding + ")")
-	      )
+	      "?_i(" + value + "," + valueBinding + ")>-1" +
+	      ":_q(" + value + "," + trueValueBinding + ")"
 	  );
 	  addHandler(el, 'change',
 	    "var $$a=" + value + "," +
@@ -27599,12 +27271,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Carousel.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Carousel.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Carousel.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Carousel.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -27635,49 +27307,27 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } } // <template>
-	
 	// <div :class="`${prefixCls}-carousel ${prefixCls}-slide`">
-	
 	//   <ol :class="`${prefixCls}-carousel-indicators`" v-show="indicators">
-	
 	//     <transition-group name="fade">
-	
 	//     <li v-for="(i,index) in indicator" 
-	
 	//       :key="index"
-	
 	//       @click="handleIndicatorClick(index)" 
-	
 	//       :class="[index === activeIndex ? prefixCls + '-carousel-active'  : '']">
-	
 	//     </li>
-	
 	//     </transition-group>
-	
 	//   </ol>
-	
 	//   <div :class="`${prefixCls}-carousel-inner`">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	//   <a v-show="controls" :class="`${prefixCls}-carousel-left ${prefixCls}-carousel-control`" @click="prevClick">
-	
 	//     <n3-icon type="chevron-left"></n3-icon>
-	
 	//   </a>
-	
 	//   <a v-show="controls" :class="`${prefixCls}-carousel-right ${prefixCls}-carousel-control`" @click="nextClick">
-	
 	//     <n3-icon type="chevron-right"></n3-icon>
-	
 	//   </a>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 	
@@ -27845,7 +27495,7 @@
 	  value: true
 	});
 	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
 	// Browser environment sniffing
 	var inBrowser = typeof window !== 'undefined' && Object.prototype.toString.call(window) !== '[object Object]';
@@ -27944,7 +27594,7 @@
 /* 672 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-carousel ${prefixCls}-slide`\">\r\n  <ol :class=\"`${prefixCls}-carousel-indicators`\" v-show=\"indicators\">\r\n    <transition-group name=\"fade\">\r\n    <li v-for=\"(i,index) in indicator\" \r\n      :key=\"index\"\r\n      @click=\"handleIndicatorClick(index)\" \r\n      :class=\"[index === activeIndex ? prefixCls + '-carousel-active'  : '']\">\r\n    </li>\r\n    </transition-group>\r\n  </ol>\r\n  <div :class=\"`${prefixCls}-carousel-inner`\">\r\n    <slot></slot>\r\n  </div>\r\n  <a v-show=\"controls\" :class=\"`${prefixCls}-carousel-left ${prefixCls}-carousel-control`\" @click=\"prevClick\">\r\n    <n3-icon type=\"chevron-left\"></n3-icon>\r\n  </a>\r\n  <a v-show=\"controls\" :class=\"`${prefixCls}-carousel-right ${prefixCls}-carousel-control`\" @click=\"nextClick\">\r\n    <n3-icon type=\"chevron-right\"></n3-icon>\r\n  </a>\r\n</div>";
+	module.exports = "<div :class=\"`${prefixCls}-carousel ${prefixCls}-slide`\">\n  <ol :class=\"`${prefixCls}-carousel-indicators`\" v-show=\"indicators\">\n    <transition-group name=\"fade\">\n    <li v-for=\"(i,index) in indicator\" \n      :key=\"index\"\n      @click=\"handleIndicatorClick(index)\" \n      :class=\"[index === activeIndex ? prefixCls + '-carousel-active'  : '']\">\n    </li>\n    </transition-group>\n  </ol>\n  <div :class=\"`${prefixCls}-carousel-inner`\">\n    <slot></slot>\n  </div>\n  <a v-show=\"controls\" :class=\"`${prefixCls}-carousel-left ${prefixCls}-carousel-control`\" @click=\"prevClick\">\n    <n3-icon type=\"chevron-left\"></n3-icon>\n  </a>\n  <a v-show=\"controls\" :class=\"`${prefixCls}-carousel-right ${prefixCls}-carousel-control`\" @click=\"nextClick\">\n    <n3-icon type=\"chevron-right\"></n3-icon>\n  </a>\n</div>";
 
 /***/ },
 /* 673 */
@@ -27959,12 +27609,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Accordion.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Accordion.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Accordion.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Accordion.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -27980,15 +27630,10 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div :class="`${prefixCls}-panel-group`">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -28038,7 +27683,7 @@
 /* 675 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-panel-group`\">\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-panel-group`\">\n    <slot></slot>\n  </div>";
 
 /***/ },
 /* 676 */
@@ -28053,12 +27698,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Affix.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Affix.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Affix.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Affix.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -28157,26 +27802,19 @@
 	};
 	// </script>
 	// <template>
-	
 	// <div>
-	
 	// <div :style="styles">
-	
 	//   <slot></slot>
-	
 	// </div>
-	
 	// </div>
-	
 	// </template>
-	
 	// <script>
 
 /***/ },
 /* 678 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\r\n<div :style=\"styles\">\r\n  <slot></slot>\r\n</div>\r\n</div>";
+	module.exports = "<div>\n<div :style=\"styles\">\n  <slot></slot>\n</div>\n</div>";
 
 /***/ },
 /* 679 */
@@ -28191,12 +27829,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Aside.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Aside.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Aside.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Aside.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -28259,8 +27897,8 @@
 	
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          placement = this.placement;
+	      var prefixCls = this.prefixCls;
+	      var placement = this.placement;
 	
 	      var klass = {};
 	
@@ -28311,45 +27949,25 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <transition :name="(this.placement === 'left') ? 'slideleft' : 'slideright'">
-	
 	//     <div 
-	
 	//       :style="{width:width}"
-	
 	//       :class="classObj"
-	
 	//       v-show="show">
-	
 	//       <div :class="`${prefixCls}-aside-dialog`">
-	
 	//         <div :class="`${prefixCls}-aside-content`">
-	
 	//           <div :class="`${prefixCls}-aside-header`">
-	
 	//             <button type="button" :class="`${prefixCls}-close`" @click='close'><span>&times;</span></button>
-	
 	//             <h4 :class="`${prefixCls}-aside-title`">{{header}}</h4>
-	
 	//           </div>
-	
 	//           <div :class="`${prefixCls}-aside-body`">
-	
 	//             <slot></slot>
-	
 	//           </div>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </transition>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -28393,7 +28011,7 @@
 /* 682 */
 /***/ function(module, exports) {
 
-	module.exports = "<transition :name=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\r\n    <div \r\n      :style=\"{width:width}\"\r\n      :class=\"classObj\"\r\n      v-show=\"show\">\r\n      <div :class=\"`${prefixCls}-aside-dialog`\">\r\n        <div :class=\"`${prefixCls}-aside-content`\">\r\n          <div :class=\"`${prefixCls}-aside-header`\">\r\n            <button type=\"button\" :class=\"`${prefixCls}-close`\" @click='close'><span>&times;</span></button>\r\n            <h4 :class=\"`${prefixCls}-aside-title`\">{{header}}</h4>\r\n          </div>\r\n          <div :class=\"`${prefixCls}-aside-body`\">\r\n            <slot></slot>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </transition>";
+	module.exports = "<transition :name=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\n    <div \n      :style=\"{width:width}\"\n      :class=\"classObj\"\n      v-show=\"show\">\n      <div :class=\"`${prefixCls}-aside-dialog`\">\n        <div :class=\"`${prefixCls}-aside-content`\">\n          <div :class=\"`${prefixCls}-aside-header`\">\n            <button type=\"button\" :class=\"`${prefixCls}-close`\" @click='close'><span>&times;</span></button>\n            <h4 :class=\"`${prefixCls}-aside-title`\">{{header}}</h4>\n          </div>\n          <div :class=\"`${prefixCls}-aside-body`\">\n            <slot></slot>\n          </div>\n        </div>\n      </div>\n    </div>\n  </transition>";
 
 /***/ },
 /* 683 */
@@ -28408,12 +28026,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxGroup.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxGroup.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxGroup.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxGroup.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -28516,27 +28134,16 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div :class="`${prefixCls}-btn-group ${prefixCls}-checkbox-group`">
-	
 	//     <slot></slot>
-	
 	//     <validate
-	
 	//       :name="name"
-	
 	//       :rules="rules"
-	
 	//       :custom-validate="customValidate" 
-	
 	//       :current="currentValue">
-	
 	//     </validate>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -28576,12 +28183,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./validate.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./validate.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./validate.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./validate.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./validate.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./validate.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./validate.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -28608,11 +28215,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// 	<div :class="`${prefixCls}-err-tip`" v-if="validate && tips" >{{tips}}</div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -28925,7 +28529,7 @@
 
 	'use strict';
 	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
 	// Copyright Joyent, Inc. and other Node contributors.
 	//
@@ -29087,7 +28691,7 @@
 /* 691 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-checkbox-group`\">\r\n    <slot></slot>\r\n    <validate\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :custom-validate=\"customValidate\" \r\n      :current=\"currentValue\">\r\n    </validate>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-checkbox-group`\">\n    <slot></slot>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"currentValue\">\n    </validate>\n  </div>";
 
 /***/ },
 /* 692 */
@@ -29102,12 +28706,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Checkbox.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Checkbox.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Checkbox.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Checkbox.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -29142,49 +28746,27 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <label :class="wrapClass">
-	
 	//   <span>
-	
 	//     <span :class="`${prefixCls}-checkbox-inner`">
-	
 	//       <n3-icon type="check" color="#fff" :class="`${prefixCls}-checkbox-inner-check`"></n3-icon>
-	
 	//     </span>
-	
 	//     <input
-	
 	//       type="checkbox"
-	
 	//       :class="`${prefixCls}-checkbox-input`"
-	
 	//       :disabled="disabled"
-	
 	//       :checked="currentChecked"
-	
 	//       @click="handleClick"/>
-	
 	//   </span>
-	
 	//   <span><slot></slot></span>  
-	
 	//   <validate
-	
 	//     :name="name"
-	
 	//     :rules="rules"
-	
 	//     :custom-validate="customValidate" 
-	
 	//     :current="currentChecked">
-	
 	//   </validate>
-	
 	//   </label>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -29241,9 +28823,9 @@
 	  computed: {
 	    wrapClass: function wrapClass() {
 	      var klass = {};
-	      var prefixCls = this.prefixCls,
-	          currentChecked = this.currentChecked,
-	          disabled = this.disabled;
+	      var prefixCls = this.prefixCls;
+	      var currentChecked = this.currentChecked;
+	      var disabled = this.disabled;
 	
 	
 	      klass[prefixCls + '-checkbox-label'] = true;
@@ -29275,7 +28857,7 @@
 /* 694 */
 /***/ function(module, exports) {
 
-	module.exports = "<label :class=\"wrapClass\">\r\n  <span>\r\n    <span :class=\"`${prefixCls}-checkbox-inner`\">\r\n      <n3-icon type=\"check\" color=\"#fff\" :class=\"`${prefixCls}-checkbox-inner-check`\"></n3-icon>\r\n    </span>\r\n    <input\r\n      type=\"checkbox\"\r\n      :class=\"`${prefixCls}-checkbox-input`\"\r\n      :disabled=\"disabled\"\r\n      :checked=\"currentChecked\"\r\n      @click=\"handleClick\"/>\r\n  </span>\r\n  <span><slot></slot></span>  \r\n  <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :current=\"currentChecked\">\r\n  </validate>\r\n  </label>";
+	module.exports = "<label :class=\"wrapClass\">\n  <span>\n    <span :class=\"`${prefixCls}-checkbox-inner`\">\n      <n3-icon type=\"check\" color=\"#fff\" :class=\"`${prefixCls}-checkbox-inner-check`\"></n3-icon>\n    </span>\n    <input\n      type=\"checkbox\"\n      :class=\"`${prefixCls}-checkbox-input`\"\n      :disabled=\"disabled\"\n      :checked=\"currentChecked\"\n      @click=\"handleClick\"/>\n  </span>\n  <span><slot></slot></span>  \n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"currentChecked\">\n  </validate>\n  </label>";
 
 /***/ },
 /* 695 */
@@ -29290,12 +28872,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxBtn.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxBtn.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxBtn.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxBtn.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -29330,39 +28912,22 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <n3-button 
-	
 	//     @click.prevent.native="handleClick"
-	
 	//     :class="classObj" 
-	
 	//     :disabled="disabled"
-	
 	//     :type="currentChecked ? 'primary' : 'default'">
-	
 	//     <slot></slot>
-	
 	//   </n3-button>
-	
 	// <!--   <validate
-	
 	//     :name="name"
-	
 	//     :rules="rules"
-	
 	//     :valid-status.sync="validStatus"
-	
 	//     :custom-validate="customValidate" 
-	
 	//     :value="currentChecked"
-	
 	//     :results.sync="validateResults">
-	
 	//   </validate> -->
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -29448,7 +29013,7 @@
 /* 697 */
 /***/ function(module, exports) {
 
-	module.exports = "<n3-button \r\n    @click.prevent.native=\"handleClick\"\r\n    :class=\"classObj\" \r\n    :disabled=\"disabled\"\r\n    :type=\"currentChecked ? 'primary' : 'default'\">\r\n    <slot></slot>\r\n  </n3-button>\r\n<!--   <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :valid-status.sync=\"validStatus\"\r\n    :custom-validate=\"customValidate\" \r\n    :value=\"currentChecked\"\r\n    :results.sync=\"validateResults\">\r\n  </validate> -->";
+	module.exports = "<n3-button \n    @click.prevent.native=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :type=\"currentChecked ? 'primary' : 'default'\">\n    <slot></slot>\n  </n3-button>\n<!--   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"currentChecked\"\n    :results.sync=\"validateResults\">\n  </validate> -->";
 
 /***/ },
 /* 698 */
@@ -29463,12 +29028,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Cascader.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Cascader.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Cascader.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Cascader.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -29688,59 +29253,32 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div :class="`${prefixCls}-cascader`">
-	
 	//     <span :class="`${prefixCls}-cascader-picker`">
-	
 	//       <n3-input 
-	
 	//         :width="width"
-	
 	//         :name="name" 
-	
 	//         :rules="rules" 
-	
 	//         :placeholder="placeholder"
-	
 	//         :custom-validate="customValidate"
-	
 	//         v-model="displayValue"
-	
 	//         :readonly="true"
-	
 	//         :show-clean="true"
-	
 	//         :disabled="disabled"
-	
 	//         @click.native="toggleMenus">
-	
 	//       </n3-input>
-	
 	//     </span>
-	
 	//     <transition name="fadeDown">
-	
 	//       <div :class="`${prefixCls}-cascader-menus`" v-show="show" v-n3-position="show">
-	
 	//         <ul :class="`${prefixCls}-cascader-menu`" v-for="(menu, index) in menus">
-	
 	//           <li :class="itemClass(index,option)" 
-	
 	//             v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
-	
 	//           </li>
-	
 	//         </ul>
-	
 	//       </div>
-	
 	//     </transition>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 
 /***/ },
@@ -29756,12 +29294,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Input.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Input.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Input.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Input.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -29794,70 +29332,39 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div :class="classObj"  :style="{'width':width}">
-	
 	//   <input
-	
 	//     ref="input"
-	
 	//     autoComplete="off"
-	
 	//     :class="`${prefixCls}-form-control`"
-	
 	//     :style="{'width':width}"
-	
 	//     :readonly="readonly"
-	
 	//     :disabled="disabled"
-	
 	//     :placeholder="placeholder"
-	
 	// 		:type="type"
-	
 	//     @blur="blur"
-	
 	//     @focus="focus"
-	
 	//     @input="update($event.target.value)"
-	
 	//     v-focus="focused" 
-	
 	//     :value="value" />
 	
-	
 	//   <n3-icon 
-	
 	//     type="times-circle" 
-	
 	//     v-if="showClean"  
-	
 	//     :class="`${prefixCls}-input-show-clean`" 
-	
 	//     @click.native.stop="clean">
-	
 	//   </n3-icon>
 	
-	
 	//   <validate
-	
 	//     :name="name"
-	
 	//     v-model="validStatus"
-	
 	//     :rules="rules"
-	
 	//     :custom-validate="customValidate"
-	
 	//     :current="value">
-	
 	//   </validate>
 	
-	
 	// </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Input',
@@ -29897,9 +29404,9 @@
 	
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          validStatus = this.validStatus,
-	          showClean = this.showClean;
+	      var prefixCls = this.prefixCls;
+	      var validStatus = this.validStatus;
+	      var showClean = this.showClean;
 	
 	      var klass = {};
 	
@@ -30025,13 +29532,13 @@
 /* 704 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\"  :style=\"{'width':width}\">\r\n  <input\r\n    ref=\"input\"\r\n    autoComplete=\"off\"\r\n    :class=\"`${prefixCls}-form-control`\"\r\n    :style=\"{'width':width}\"\r\n    :readonly=\"readonly\"\r\n    :disabled=\"disabled\"\r\n    :placeholder=\"placeholder\"\r\n\t\t:type=\"type\"\r\n    @blur=\"blur\"\r\n    @focus=\"focus\"\r\n    @input=\"update($event.target.value)\"\r\n    v-focus=\"focused\" \r\n    :value=\"value\" />\r\n\r\n  <n3-icon \r\n    type=\"times-circle\" \r\n    v-if=\"showClean\"  \r\n    :class=\"`${prefixCls}-input-show-clean`\" \r\n    @click.native.stop=\"clean\">\r\n  </n3-icon>\r\n\r\n  <validate\r\n    :name=\"name\"\r\n    v-model=\"validStatus\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\"\r\n    :current=\"value\">\r\n  </validate>\r\n\r\n</div>";
+	module.exports = "<div :class=\"classObj\"  :style=\"{'width':width}\">\n  <input\n    ref=\"input\"\n    autoComplete=\"off\"\n    :class=\"`${prefixCls}-form-control`\"\n    :style=\"{'width':width}\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :placeholder=\"placeholder\"\n\t\t:type=\"type\"\n    @blur=\"blur\"\n    @focus=\"focus\"\n    @input=\"update($event.target.value)\"\n    v-focus=\"focused\" \n    :value=\"value\" />\n\n  <n3-icon \n    type=\"times-circle\" \n    v-if=\"showClean\"  \n    :class=\"`${prefixCls}-input-show-clean`\" \n    @click.native.stop=\"clean\">\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    v-model=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\"\n    :current=\"value\">\n  </validate>\n\n</div>";
 
 /***/ },
 /* 705 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-cascader`\">\r\n    <span :class=\"`${prefixCls}-cascader-picker`\">\r\n      <n3-input \r\n        :width=\"width\"\r\n        :name=\"name\" \r\n        :rules=\"rules\" \r\n        :placeholder=\"placeholder\"\r\n        :custom-validate=\"customValidate\"\r\n        v-model=\"displayValue\"\r\n        :readonly=\"true\"\r\n        :show-clean=\"true\"\r\n        :disabled=\"disabled\"\r\n        @click.native=\"toggleMenus\">\r\n      </n3-input>\r\n    </span>\r\n    <transition name=\"fadeDown\">\r\n      <div :class=\"`${prefixCls}-cascader-menus`\" v-show=\"show\" v-n3-position=\"show\">\r\n        <ul :class=\"`${prefixCls}-cascader-menu`\" v-for=\"(menu, index) in menus\">\r\n          <li :class=\"itemClass(index,option)\" \r\n            v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\r\n          </li>\r\n        </ul>\r\n      </div>\r\n    </transition>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-cascader`\">\n    <span :class=\"`${prefixCls}-cascader-picker`\">\n      <n3-input \n        :width=\"width\"\n        :name=\"name\" \n        :rules=\"rules\" \n        :placeholder=\"placeholder\"\n        :custom-validate=\"customValidate\"\n        v-model=\"displayValue\"\n        :readonly=\"true\"\n        :show-clean=\"true\"\n        :disabled=\"disabled\"\n        @click.native=\"toggleMenus\">\n      </n3-input>\n    </span>\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-cascader-menus`\" v-show=\"show\" v-n3-position=\"show\">\n        <ul :class=\"`${prefixCls}-cascader-menu`\" v-for=\"(menu, index) in menus\">\n          <li :class=\"itemClass(index,option)\" \n            v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n          </li>\n        </ul>\n      </div>\n    </transition>\n  </div>";
 
 /***/ },
 /* 706 */
@@ -30090,12 +29597,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Toast.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Toast.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Toast.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Toast.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30111,27 +29618,16 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <transition name="fade">
-	
 	//   	<div 
-	
 	//       ref="dom"
-	
 	//       :class="classObj"
-	
 	//   		@click="handleClick"
-	
 	//   		v-if="show">
-	
 	//   		<h5 v-text="text"></h5>
-	
 	//   	</div>
-	
 	//   </transition>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -30179,9 +29675,9 @@
 	
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          placement = this.placement,
-	          type = this.type;
+	      var prefixCls = this.prefixCls;
+	      var placement = this.placement;
+	      var type = this.type;
 	
 	      var klass = {};
 	
@@ -30232,7 +29728,7 @@
 /* 709 */
 /***/ function(module, exports) {
 
-	module.exports = "<transition name=\"fade\">\r\n  \t<div \r\n      ref=\"dom\"\r\n      :class=\"classObj\"\r\n  \t\t@click=\"handleClick\"\r\n  \t\tv-if=\"show\">\r\n  \t\t<h5 v-text=\"text\"></h5>\r\n  \t</div>\r\n  </transition>";
+	module.exports = "<transition name=\"fade\">\n  \t<div \n      ref=\"dom\"\n      :class=\"classObj\"\n  \t\t@click=\"handleClick\"\n  \t\tv-if=\"show\">\n  \t\t<h5 v-text=\"text\"></h5>\n  \t</div>\n  </transition>";
 
 /***/ },
 /* 710 */
@@ -30247,12 +29743,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Label.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Label.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Label.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Label.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30268,15 +29764,10 @@
 	  value: true
 	});
 	// <template>
-	
 	// 	<span :class="classObj">
-	
 	// 		<slot></slot>
-	
 	// 	</span>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -30297,9 +29788,9 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          type = this.type,
-	          hover = this.hover;
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
+	      var hover = this.hover;
 	
 	      var klass = {};
 	
@@ -30317,7 +29808,7 @@
 /* 712 */
 /***/ function(module, exports) {
 
-	module.exports = "<span :class=\"classObj\">\r\n\t\t<slot></slot>\r\n\t</span>";
+	module.exports = "<span :class=\"classObj\">\n\t\t<slot></slot>\n\t</span>";
 
 /***/ },
 /* 713 */
@@ -30332,12 +29823,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumber.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumber.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumber.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumber.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30370,97 +29861,51 @@
 	function isValueNumber(value) {
 	  return !isNaN(Number(value));
 	} // <template>
-	
 	// <div :class="classObj" :style="{width: width}">
-	
 	//   <div :class="`${prefixCls}-input-number-handler-wrap`">
-	
 	//     <a unselectable="unselectable"
-	
 	//       ref="up"
-	
 	//       @click="_up"
-	
 	//       @mouse.down="preventDefault"
-	
 	//       :class="[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]">
-	
 	//         <n3-icon
-	
 	//           :class="`${prefixCls}-input-number-handler-up-inner`" 
-	
 	//           type="angle-up" 
-	
 	//           @click="preventDefault" 
-	
 	//           unselectable="unselectable">
-	
 	//         </n3-icon>
-	
 	//     </a>
-	
 	//     <a unselectable="unselectable"
-	
 	//        ref="down"
-	
 	//        @mouse.down="preventDefault"
-	
 	//        @click="_down"
-	
 	//        :class="[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]">
-	
 	//        <n3-icon
-	
 	//           :class="`${prefixCls}-input-number-handler-down-inner`" 
-	
 	//           type="angle-down" 
-	
 	//           @click="preventDefault" 
-	
 	//           unselectable="unselectable">
-	
 	//         </n3-icon>
-	
 	//     </a>
-	
 	//   </div>
-	
 	//   <div :class="prefixCls + '-input-number-input-wrap'">
-	
 	//     <n3-input
-	
 	//       @focus="_onFocus"
-	
 	//       :width="width"
-	
 	//       :rules="rules" 
-	
 	//       :placeholder="placeholder"
-	
 	//       :custom-validate="customValidate"
-	
 	//       @blur="_onBlur"
-	
 	//       @keydown.native.stop="_onKeyDown"
-	
 	//       @change="_onChange"
-	
 	//       :readonly="readonly"
-	
 	//       :disabled="disabled"
-	
 	//       :name="name"
-	
 	//       :value="currentValue">
-	
 	//     </n3-input> 
-	
 	//   </div>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 	
@@ -30551,9 +29996,9 @@
 	
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          disabled = this.disabled,
-	          readonly = this.readonly;
+	      var prefixCls = this.prefixCls;
+	      var disabled = this.disabled;
+	      var readonly = this.readonly;
 	
 	      var klass = {};
 	
@@ -30657,7 +30102,7 @@
 /* 715 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" :style=\"{width: width}\">\r\n  <div :class=\"`${prefixCls}-input-number-handler-wrap`\">\r\n    <a unselectable=\"unselectable\"\r\n      ref=\"up\"\r\n      @click=\"_up\"\r\n      @mouse.down=\"preventDefault\"\r\n      :class=\"[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]\">\r\n        <n3-icon\r\n          :class=\"`${prefixCls}-input-number-handler-up-inner`\" \r\n          type=\"angle-up\" \r\n          @click=\"preventDefault\" \r\n          unselectable=\"unselectable\">\r\n        </n3-icon>\r\n    </a>\r\n    <a unselectable=\"unselectable\"\r\n       ref=\"down\"\r\n       @mouse.down=\"preventDefault\"\r\n       @click=\"_down\"\r\n       :class=\"[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]\">\r\n       <n3-icon\r\n          :class=\"`${prefixCls}-input-number-handler-down-inner`\" \r\n          type=\"angle-down\" \r\n          @click=\"preventDefault\" \r\n          unselectable=\"unselectable\">\r\n        </n3-icon>\r\n    </a>\r\n  </div>\r\n  <div :class=\"prefixCls + '-input-number-input-wrap'\">\r\n    <n3-input\r\n      @focus=\"_onFocus\"\r\n      :width=\"width\"\r\n      :rules=\"rules\" \r\n      :placeholder=\"placeholder\"\r\n      :custom-validate=\"customValidate\"\r\n      @blur=\"_onBlur\"\r\n      @keydown.native.stop=\"_onKeyDown\"\r\n      @change=\"_onChange\"\r\n      :readonly=\"readonly\"\r\n      :disabled=\"disabled\"\r\n      :name=\"name\"\r\n      :value=\"currentValue\">\r\n    </n3-input> \r\n  </div>\r\n</div>";
+	module.exports = "<div :class=\"classObj\" :style=\"{width: width}\">\n  <div :class=\"`${prefixCls}-input-number-handler-wrap`\">\n    <a unselectable=\"unselectable\"\n      ref=\"up\"\n      @click=\"_up\"\n      @mouse.down=\"preventDefault\"\n      :class=\"[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]\">\n        <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-up-inner`\" \n          type=\"angle-up\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n    <a unselectable=\"unselectable\"\n       ref=\"down\"\n       @mouse.down=\"preventDefault\"\n       @click=\"_down\"\n       :class=\"[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]\">\n       <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-down-inner`\" \n          type=\"angle-down\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n  </div>\n  <div :class=\"prefixCls + '-input-number-input-wrap'\">\n    <n3-input\n      @focus=\"_onFocus\"\n      :width=\"width\"\n      :rules=\"rules\" \n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      @blur=\"_onBlur\"\n      @keydown.native.stop=\"_onKeyDown\"\n      @change=\"_onChange\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      :name=\"name\"\n      :value=\"currentValue\">\n    </n3-input> \n  </div>\n</div>";
 
 /***/ },
 /* 716 */
@@ -30672,12 +30117,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30704,53 +30149,30 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div :class="classObj" :style="{width:width}">
-	
 	//   <textarea
-	
 	//     :class="`${prefixCls}-form-control`"  
-	
 	//     :disabled="disabled"
-	
 	//     :readonly="readonly"
-	
 	//     :maxlength="maxLength"
-	
 	//     :style="styleObj"
-	
 	//     :name="name"
-	
 	//     @input="update($event.target.value)"
-	
 	//     @focus="_onFocus"
-	
 	//     @blur="_onBlur"
-	
 	//     :placeholder="placeholder"
-	
 	//     :value="value">
-	
 	//   </textarea>
 	
-	
 	//   <validate
-	
 	//     :name="name"
-	
 	//     :rules="rules"
-	
 	//     :custom-validate="customValidate" 
-	
 	//     :current="value">
-	
 	//   </validate>
 	
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -30809,9 +30231,9 @@
 	  },
 	  computed: {
 	    styleObj: function styleObj() {
-	      var resize = this.resize,
-	          maxHeight = this.maxHeight,
-	          minHeight = this.minHeight;
+	      var resize = this.resize;
+	      var maxHeight = this.maxHeight;
+	      var minHeight = this.minHeight;
 	
 	      var style = {};
 	
@@ -30841,7 +30263,7 @@
 /* 718 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" :style=\"{width:width}\">\r\n  <textarea\r\n    :class=\"`${prefixCls}-form-control`\"  \r\n    :disabled=\"disabled\"\r\n    :readonly=\"readonly\"\r\n    :maxlength=\"maxLength\"\r\n    :style=\"styleObj\"\r\n    :name=\"name\"\r\n    @input=\"update($event.target.value)\"\r\n    @focus=\"_onFocus\"\r\n    @blur=\"_onBlur\"\r\n    :placeholder=\"placeholder\"\r\n    :value=\"value\">\r\n  </textarea>\r\n\r\n  <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :current=\"value\">\r\n  </validate>\r\n\r\n</div>";
+	module.exports = "<div :class=\"classObj\" :style=\"{width:width}\">\n  <textarea\n    :class=\"`${prefixCls}-form-control`\"  \n    :disabled=\"disabled\"\n    :readonly=\"readonly\"\n    :maxlength=\"maxLength\"\n    :style=\"styleObj\"\n    :name=\"name\"\n    @input=\"update($event.target.value)\"\n    @focus=\"_onFocus\"\n    @blur=\"_onBlur\"\n    :placeholder=\"placeholder\"\n    :value=\"value\">\n  </textarea>\n\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n\n</div>";
 
 /***/ },
 /* 719 */
@@ -30856,12 +30278,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Datepicker.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datepicker.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Datepicker.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datepicker.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30936,11 +30358,11 @@
 	  },
 	  methods: {
 	    monthClassObj: function monthClassObj(m) {
-	      var prefixCls = this.prefixCls,
-	          currentValue = this.currentValue,
-	          mouthNames = this.mouthNames,
-	          parse = this.parse,
-	          currDate = this.currDate;
+	      var prefixCls = this.prefixCls;
+	      var currentValue = this.currentValue;
+	      var mouthNames = this.mouthNames;
+	      var parse = this.parse;
+	      var currDate = this.currDate;
 	
 	      var klass = {};
 	
@@ -30949,9 +30371,9 @@
 	      return klass;
 	    },
 	    yearClassObj: function yearClassObj(decade) {
-	      var prefixCls = this.prefixCls,
-	          currentValue = this.currentValue,
-	          parse = this.parse;
+	      var prefixCls = this.prefixCls;
+	      var currentValue = this.currentValue;
+	      var parse = this.parse;
 	
 	      var klass = {};
 	
@@ -31058,7 +30480,7 @@
 	      return date.getFullYear();
 	    },
 	    stringify: function stringify(date) {
-	      var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.format;
+	      var format = arguments.length <= 1 || arguments[1] === undefined ? this.format : arguments[1];
 	
 	      if (isNaN(date.getFullYear())) return '';
 	      var year = date.getFullYear();
@@ -31174,200 +30596,103 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div :class="`${prefixCls}-datepicker`">
-	
 	//     <n3-input
-	
 	//       :width="width"
-	
 	//       :name="name"
-	
 	//       :rules="rules"
-	
 	//       :placeholder="placeholder"
-	
 	//       :custom-validate="customValidate"
-	
 	//       :disabled="disabled"
-	
 	//       :readonly="true"
-	
 	//       :show-clean="true"
-	
 	//       @click.native="inputClick"
-	
 	//       v-model="currentValue">
-	
 	//     </n3-input>
 	
-	
 	//       <transition name="fadeDown">
-	
 	//         <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" v-n3-position="displayDayView">
-	
 	//           <div :class="`${prefixCls}-datepicker-inner`">
-	
 	//             <div :class="`${prefixCls}-datepicker-body`">
-	
 	//               <div :class="`${prefixCls}-datepicker-ctrl`">
-	
 	//                 <span
-	
 	//                   :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-	
 	//                   @click="preNextMonthClick(0)">&lt;</span>
-	
 	//                 <span
-	
 	//                   :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-	
 	//                   @click="preNextMonthClick(1)">&gt;</span>
-	
 	//                 <p @click="switchMouthView">
-	
 	//                 {{stringifyDayHeader(currDate)}}
-	
 	//                 </p>
-	
 	//               </div>
-	
 	//               <div :class="`${prefixCls}-datepicker-weekRange`">
-	
 	//                 <span v-for="w in weekRange">{{w}}</span>
-	
 	//               </div>
-	
 	//               <div :class="`${prefixCls}-datepicker-dateRange`">
-	
 	//                 <span
-	
 	//                   v-for="d in dateRange" :class="d.sclass"
-	
 	//                   @click="daySelect(d.date,d.sclass)">
-	
 	//                   {{d.text}}
-	
 	//                 </span>
-	
 	//               </div>
-	
 	//             </div>
-	
 	//           </div>
-	
 	//         </div>
-	
 	//       </transition>
-	
 	//       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayMouthView" >
-	
 	//         <div :class="`${prefixCls}-datepicker-inner`">
-	
 	//           <div :class="`${prefixCls}-datepicker-body`">
-	
 	//             <div :class="`${prefixCls}-datepicker-ctrl`">
-	
 	//               <span
-	
 	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-	
 	//                 @click="preNextYearClick(0)">&lt;</span>
-	
 	//               <span
-	
 	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-	
 	//                 @click="preNextYearClick(1)">&gt;</span>
-	
 	//               <p @click="switchDecadeView">
-	
 	//               {{stringifyYearHeader(currDate)}}
-	
 	//               </p>
-	
 	//             </div>
-	
 	//             <div :class="`${prefixCls}-datepicker-mouthRange`">
-	
 	//             	<template v-for="(m, index) in mouthNames">
-	
 	//                 <span
-	
 	//                   :class="monthClassObj(m)"
-	
 	//                   @click="mouthSelect(index)">
-	
 	//                   {{m.substr(0,3)}}
-	
 	//                 </span>
-	
 	//               </template>
-	
 	//             </div>
-	
 	//           </div>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//       <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayYearView">
-	
 	//         <div :class="`${prefixCls}-datepicker-inner`">
-	
 	//           <div :class="`${prefixCls}-datepicker-body`">
-	
 	//             <div :class="`${prefixCls}-datepicker-ctrl`">
-	
 	//               <span
-	
 	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-	
 	//                 @click="preNextDecadeClick(0)">&lt;</span>
-	
 	//               <span
-	
 	//                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-	
 	//                 @click="preNextDecadeClick(1)">&gt;</span>
-	
 	//               <p>
-	
 	//               {{stringifyDecadeHeader(currDate)}}
-	
 	//               </p>
-	
 	//             </div>
-	
 	//             <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
-	
 	//             	<template v-for="decade in decadeRange">
-	
 	//             		<span
-	
 	//                   :class="yearClassObj(decade)"
-	
 	//                   @click.stop="yearSelect(decade.text)">
-	
 	//                   {{decade.text}}
-	
 	//                	</span>
-	
 	// 			        </template>
-	
 	//             </div>
-	
 	//           </div>
-	
 	//         </div>
-	
 	//       </div>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -31375,7 +30700,7 @@
 /* 721 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-datepicker`\">\r\n    <n3-input\r\n      :width=\"width\"\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :placeholder=\"placeholder\"\r\n      :custom-validate=\"customValidate\"\r\n      :disabled=\"disabled\"\r\n      :readonly=\"true\"\r\n      :show-clean=\"true\"\r\n      @click.native=\"inputClick\"\r\n      v-model=\"currentValue\">\r\n    </n3-input>\r\n\r\n      <transition name=\"fadeDown\">\r\n        <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayDayView\" v-n3-position=\"displayDayView\">\r\n          <div :class=\"`${prefixCls}-datepicker-inner`\">\r\n            <div :class=\"`${prefixCls}-datepicker-body`\">\r\n              <div :class=\"`${prefixCls}-datepicker-ctrl`\">\r\n                <span\r\n                  :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\r\n                  @click=\"preNextMonthClick(0)\">&lt;</span>\r\n                <span\r\n                  :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\r\n                  @click=\"preNextMonthClick(1)\">&gt;</span>\r\n                <p @click=\"switchMouthView\">\r\n                {{stringifyDayHeader(currDate)}}\r\n                </p>\r\n              </div>\r\n              <div :class=\"`${prefixCls}-datepicker-weekRange`\">\r\n                <span v-for=\"w in weekRange\">{{w}}</span>\r\n              </div>\r\n              <div :class=\"`${prefixCls}-datepicker-dateRange`\">\r\n                <span\r\n                  v-for=\"d in dateRange\" :class=\"d.sclass\"\r\n                  @click=\"daySelect(d.date,d.sclass)\">\r\n                  {{d.text}}\r\n                </span>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </transition>\r\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayMouthView\" >\r\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\r\n          <div :class=\"`${prefixCls}-datepicker-body`\">\r\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\r\n              <span\r\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\r\n                @click=\"preNextYearClick(0)\">&lt;</span>\r\n              <span\r\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\r\n                @click=\"preNextYearClick(1)\">&gt;</span>\r\n              <p @click=\"switchDecadeView\">\r\n              {{stringifyYearHeader(currDate)}}\r\n              </p>\r\n            </div>\r\n            <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\r\n            \t<template v-for=\"(m, index) in mouthNames\">\r\n                <span\r\n                  :class=\"monthClassObj(m)\"\r\n                  @click=\"mouthSelect(index)\">\r\n                  {{m.substr(0,3)}}\r\n                </span>\r\n              </template>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayYearView\">\r\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\r\n          <div :class=\"`${prefixCls}-datepicker-body`\">\r\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\r\n              <span\r\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\r\n                @click=\"preNextDecadeClick(0)\">&lt;</span>\r\n              <span\r\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\r\n                @click=\"preNextDecadeClick(1)\">&gt;</span>\r\n              <p>\r\n              {{stringifyDecadeHeader(currDate)}}\r\n              </p>\r\n            </div>\r\n            <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\r\n            \t<template v-for=\"decade in decadeRange\">\r\n            \t\t<span\r\n                  :class=\"yearClassObj(decade)\"\r\n                  @click.stop=\"yearSelect(decade.text)\">\r\n                  {{decade.text}}\r\n               \t</span>\r\n\t\t\t        </template>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n</div>";
+	module.exports = "<div :class=\"`${prefixCls}-datepicker`\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      :show-clean=\"true\"\n      @click.native=\"inputClick\"\n      v-model=\"currentValue\">\n    </n3-input>\n\n      <transition name=\"fadeDown\">\n        <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayDayView\" v-n3-position=\"displayDayView\">\n          <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n              <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                <span\n                  :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                  @click=\"preNextMonthClick(0)\">&lt;</span>\n                <span\n                  :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                  @click=\"preNextMonthClick(1)\">&gt;</span>\n                <p @click=\"switchMouthView\">\n                {{stringifyDayHeader(currDate)}}\n                </p>\n              </div>\n              <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                <span v-for=\"w in weekRange\">{{w}}</span>\n              </div>\n              <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                <span\n                  v-for=\"d in dateRange\" :class=\"d.sclass\"\n                  @click=\"daySelect(d.date,d.sclass)\">\n                  {{d.text}}\n                </span>\n              </div>\n            </div>\n          </div>\n        </div>\n      </transition>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayMouthView\" >\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n          <div :class=\"`${prefixCls}-datepicker-body`\">\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                @click=\"preNextYearClick(0)\">&lt;</span>\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                @click=\"preNextYearClick(1)\">&gt;</span>\n              <p @click=\"switchDecadeView\">\n              {{stringifyYearHeader(currDate)}}\n              </p>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n            \t<template v-for=\"(m, index) in mouthNames\">\n                <span\n                  :class=\"monthClassObj(m)\"\n                  @click=\"mouthSelect(index)\">\n                  {{m.substr(0,3)}}\n                </span>\n              </template>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayYearView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n          <div :class=\"`${prefixCls}-datepicker-body`\">\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                @click=\"preNextDecadeClick(0)\">&lt;</span>\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                @click=\"preNextDecadeClick(1)\">&gt;</span>\n              <p>\n              {{stringifyDecadeHeader(currDate)}}\n              </p>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n            \t<template v-for=\"decade in decadeRange\">\n            \t\t<span\n                  :class=\"yearClassObj(decade)\"\n                  @click.stop=\"yearSelect(decade.text)\">\n                  {{decade.text}}\n               \t</span>\n\t\t\t        </template>\n            </div>\n          </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
 /* 722 */
@@ -31390,12 +30715,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Timepicker.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timepicker.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Timepicker.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timepicker.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31430,97 +30755,51 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div :class="`${prefixCls}-timepicker`">
-	
 	//     <n3-input
-	
 	//       :width="width"
-	
 	//       :name="name"
-	
 	//       :rules="rules"
-	
 	//       :placeholder="placeholder"
-	
 	//       :custom-validate="customValidate"
-	
 	//       :disabled="disabled"
-	
 	//       :readonly="true"
-	
 	//       @click.native="inputClick"
-	
 	//       :show-clean="true"
-	
 	//       v-model="currentValue">
-	
 	//     </n3-input>
-	
 	//     <transition name="fadeDown">
-	
 	//       <div :class="`${prefixCls}-timepicker-popup`" v-show="show"  v-n3-position="show">
-	
 	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
-	
 	//           <n3-slider
-	
 	//             v-model="time.hour"
-	
 	//             orientation="vertical"
-	
 	//             :max="hourRange[1]" :min="hourRange[0]"
-	
 	//             :class="`${prefixCls}-timepicker-slider`">
-	
 	//           </n3-slider>
-	
 	//         </div>
-	
 	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
-	
 	//           <n3-slider
-	
 	//             v-model="time.minute"
-	
 	//             orientation="vertical"
-	
 	//             :max="minuteRange[1]"
-	
 	//             :min="minuteRange[0]"
-	
 	//             :class="`${prefixCls}-timepicker-slider`">
-	
 	//           </n3-slider>
-	
 	//         </div>
-	
 	//         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
-	
 	//           <n3-slider
-	
 	//             v-model="time.second"
-	
 	//             orientation="vertical"
-	
 	//             :max="secondRange[1]"
-	
 	//             :min="secondRange[0]"
-	
 	//             :class="`${prefixCls}-timepicker-slider`">
-	
 	//           </n3-slider>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//     </transition>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31691,12 +30970,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Slider.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slider.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Slider.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slider.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31739,47 +31018,26 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div class="inline">
-	
 	//     <div :class="classObj" ref="slider" :style="styleObj">
-	
 	//       <n3-tooltip  :placement="orientation === 'horizontal' ? 'top' : 'right'" :noresize="true" trigger="mouse">
-	
 	//         <div :class="`${prefixCls}-slider-track`">
-	
 	//           <div :class="`${prefixCls}-slider-track-low`"></div>
-	
 	//           <div :class="`${prefixCls}-slider-selection`" ref="selection"></div>
-	
 	//           <div :class="`${prefixCls}-slider-track-high`" ref="noSelection"></div>
-	
 	//           <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`" ref="minSlider"></div>
-	
 	//           <div :class="`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`" ref="maxSlider"></div>
-	
 	//         </div>
-	
 	//       </n3-tooltip>
-	
 	//     </div>
-	
 	//   <validate
-	
 	//     :name="name"
-	
 	//     :rules="rules"
-	
 	//     :custom-validate="customValidate" 
-	
 	//     :current="value">
-	
 	//   </validate>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31863,8 +31121,8 @@
 	      }
 	    },
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          orientation = this.orientation;
+	      var prefixCls = this.prefixCls;
+	      var orientation = this.orientation;
 	
 	      var klass = {};
 	
@@ -32101,12 +31359,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tooltip.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tooltip.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tooltip.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tooltip.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -32139,8 +31397,8 @@
 	  mixins: [_popoverMixins2.default],
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          placement = this.placement;
+	      var prefixCls = this.prefixCls;
+	      var placement = this.placement;
 	
 	      var klass = {};
 	
@@ -32156,41 +31414,23 @@
 	};
 	// </script>
 	// <template>
-	
 	// <span>
-	
 	//   <span ref="trigger">
-	
 	//     <slot>
-	
 	//     </slot>
-	
 	//   </span>
-	
 	//   <transition :name="effect">
-	
 	//     <div :class="classObj"
-	
 	//       ref="popover"
-	
 	//       v-show="isShow">
-	
 	//       <div :class="`${prefixCls}-tooltip-arrow`"></div>
-	
 	//       <div :class="`${prefixCls}-tooltip-inner`">
-	
 	//         <span v-html="content"></span>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </transition>
-	
 	// </span>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -32377,19 +31617,19 @@
 /* 729 */
 /***/ function(module, exports) {
 
-	module.exports = "<span>\r\n  <span ref=\"trigger\">\r\n    <slot>\r\n    </slot>\r\n  </span>\r\n  <transition :name=\"effect\">\r\n    <div :class=\"classObj\"\r\n      ref=\"popover\"\r\n      v-show=\"isShow\">\r\n      <div :class=\"`${prefixCls}-tooltip-arrow`\"></div>\r\n      <div :class=\"`${prefixCls}-tooltip-inner`\">\r\n        <span v-html=\"content\"></span>\r\n      </div>\r\n    </div>\r\n  </transition>\r\n</span>";
+	module.exports = "<span>\n  <span ref=\"trigger\">\n    <slot>\n    </slot>\n  </span>\n  <transition :name=\"effect\">\n    <div :class=\"classObj\"\n      ref=\"popover\"\n      v-show=\"isShow\">\n      <div :class=\"`${prefixCls}-tooltip-arrow`\"></div>\n      <div :class=\"`${prefixCls}-tooltip-inner`\">\n        <span v-html=\"content\"></span>\n      </div>\n    </div>\n  </transition>\n</span>";
 
 /***/ },
 /* 730 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\r\n    <div :class=\"classObj\" ref=\"slider\" :style=\"styleObj\">\r\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\r\n        <div :class=\"`${prefixCls}-slider-track`\">\r\n          <div :class=\"`${prefixCls}-slider-track-low`\"></div>\r\n          <div :class=\"`${prefixCls}-slider-selection`\" ref=\"selection\"></div>\r\n          <div :class=\"`${prefixCls}-slider-track-high`\" ref=\"noSelection\"></div>\r\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`\" ref=\"minSlider\"></div>\r\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`\" ref=\"maxSlider\"></div>\r\n        </div>\r\n      </n3-tooltip>\r\n    </div>\r\n  <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :current=\"value\">\r\n  </validate>\r\n</div>";
+	module.exports = "<div class=\"inline\">\n    <div :class=\"classObj\" ref=\"slider\" :style=\"styleObj\">\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\n        <div :class=\"`${prefixCls}-slider-track`\">\n          <div :class=\"`${prefixCls}-slider-track-low`\"></div>\n          <div :class=\"`${prefixCls}-slider-selection`\" ref=\"selection\"></div>\n          <div :class=\"`${prefixCls}-slider-track-high`\" ref=\"noSelection\"></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`\" ref=\"minSlider\"></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`\" ref=\"maxSlider\"></div>\n        </div>\n      </n3-tooltip>\n    </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>";
 
 /***/ },
 /* 731 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-timepicker`\">\r\n    <n3-input\r\n      :width=\"width\"\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :placeholder=\"placeholder\"\r\n      :custom-validate=\"customValidate\"\r\n      :disabled=\"disabled\"\r\n      :readonly=\"true\"\r\n      @click.native=\"inputClick\"\r\n      :show-clean=\"true\"\r\n      v-model=\"currentValue\">\r\n    </n3-input>\r\n    <transition name=\"fadeDown\">\r\n      <div :class=\"`${prefixCls}-timepicker-popup`\" v-show=\"show\"  v-n3-position=\"show\">\r\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\r\n          <n3-slider\r\n            v-model=\"time.hour\"\r\n            orientation=\"vertical\"\r\n            :max=\"hourRange[1]\" :min=\"hourRange[0]\"\r\n            :class=\"`${prefixCls}-timepicker-slider`\">\r\n          </n3-slider>\r\n        </div>\r\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\r\n          <n3-slider\r\n            v-model=\"time.minute\"\r\n            orientation=\"vertical\"\r\n            :max=\"minuteRange[1]\"\r\n            :min=\"minuteRange[0]\"\r\n            :class=\"`${prefixCls}-timepicker-slider`\">\r\n          </n3-slider>\r\n        </div>\r\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\r\n          <n3-slider\r\n            v-model=\"time.second\"\r\n            orientation=\"vertical\"\r\n            :max=\"secondRange[1]\"\r\n            :min=\"secondRange[0]\"\r\n            :class=\"`${prefixCls}-timepicker-slider`\">\r\n          </n3-slider>\r\n        </div>\r\n      </div>\r\n    </transition>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-timepicker`\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      @click.native=\"inputClick\"\n      :show-clean=\"true\"\n      v-model=\"currentValue\">\n    </n3-input>\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-timepicker-popup`\" v-show=\"show\"  v-n3-position=\"show\">\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n          <n3-slider\n            v-model=\"time.hour\"\n            orientation=\"vertical\"\n            :max=\"hourRange[1]\" :min=\"hourRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n          <n3-slider\n            v-model=\"time.minute\"\n            orientation=\"vertical\"\n            :max=\"minuteRange[1]\"\n            :min=\"minuteRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n          <n3-slider\n            v-model=\"time.second\"\n            orientation=\"vertical\"\n            :max=\"secondRange[1]\"\n            :min=\"secondRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n      </div>\n    </transition>\n  </div>";
 
 /***/ },
 /* 732 */
@@ -32404,12 +31644,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Datetimepicker.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datetimepicker.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Datetimepicker.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datetimepicker.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -32444,261 +31684,133 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div :class="`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`" ref="datetimepicker">
-	
 	//     <n3-input
-	
 	//       :width="width"
-	
 	//       :name="name"
-	
 	//       :rules="rules"
-	
 	//       :placeholder="placeholder"
-	
 	//       :custom-validate="customValidate"
-	
 	//       :disabled="disabled"
-	
 	//       :readonly="true"
-	
 	//       @click.native="inputClick"
-	
 	//       :show-clean="true"
-	
 	//       v-model="currentValue">
-	
 	//     </n3-input>
-	
 	//       <transition name="fadeDown">
-	
 	//         <div
-	
 	//           v-n3-position="displayDayView"
-	
 	//           :class="`${prefixCls}-datepicker-popup`"
-	
 	//           v-show="displayDayView"
-	
 	//           :style="{width:popWidth}">
-	
 	//             <div :class="`${prefixCls}-datepicker-inner`" ref="datepicker">
-	
 	//                 <div :class="`${prefixCls}-datepicker-body`">
-	
 	//                     <div :class="`${prefixCls}-datepicker-ctrl`">
-	
 	//                         <span
-	
 	//                           :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-	
 	//                           @click="preNextMonthClick(0)">&lt;</span>
-	
 	//                         <span
-	
 	//                           :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-	
 	//                           @click="preNextMonthClick(1)">&gt;</span>
-	
 	//                         <p @click="switchMouthView">
-	
 	//                         {{stringifyDayHeader(currDate)}}
-	
 	//                         </p>
-	
 	//                     </div>
-	
 	//                     <div :class="`${prefixCls}-datepicker-weekRange`">
-	
 	//                         <span v-for="w in weekRange">{{w}}</span>
-	
 	//                     </div>
-	
 	//                     <div :class="`${prefixCls}-datepicker-dateRange`">
-	
 	//                         <span v-for="d in dateRange"
-	
 	//                         :class="[d.sclass,prefixCls + '-datetimepicker-date-span']"
-	
 	//                         @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
-	
 	//                     </div>
-	
 	//                 </div>
-	
 	//             </div>
-	
 	//             <div :class="`${prefixCls}-timepicker-con`">
-	
 	//               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
-	
 	//                 <n3-slider
-	
 	//                   :class="`${prefixCls}-timepicker-slider`"
-	
 	//                   v-model="time.hour"
-	
 	//                   orientation="vertical"
-	
 	//                   :max="hourRange[1]"
-	
 	//                   :min="hourRange[0]" >
-	
 	//                 </n3-slider>
-	
 	//               </div>
-	
 	//               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
-	
 	//                 <n3-slider
-	
 	//                   :class="`${prefixCls}-timepicker-slider`"
-	
 	//                   v-model="time.minute"
-	
 	//                   orientation="vertical"
-	
 	//                   :max="minuteRange[1]"
-	
 	//                   :min="minuteRange[0]" >
-	
 	//                 </n3-slider>
-	
 	//               </div>
-	
 	//               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
-	
 	//                 <n3-slider
-	
 	//                   :class="`${prefixCls}-timepicker-slider`"
-	
 	//                   v-model="time.second"
-	
 	//                   orientation="vertical"
-	
 	//                   :max="secondRange[1]"
-	
 	//                   :min="secondRange[0]" >
-	
 	//                 </n3-slider>
-	
 	//               </div>
-	
 	//             </div>
-	
 	//         </div>
-	
 	//       </transition>
-	
 	//       <div :class="`${prefixCls}-datepicker-popup`" v-show="displayMouthView">
-	
 	//         <div :class="`${prefixCls}-datepicker-inner`">
-	
 	//             <div :class="`${prefixCls}-datepicker-body`">
-	
 	//                 <div :class="`${prefixCls}-datepicker-ctrl`">
-	
 	//                     <span
-	
 	//                       :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-	
 	//                       @click="preNextYearClick(0)">&lt;</span>
-	
 	//                     <span
-	
 	//                       :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-	
 	//                       @click="preNextYearClick(1)">&gt;</span>
-	
 	//                     <p @click="switchDecadeView">
-	
 	//                     {{stringifyYearHeader(currDate)}}
-	
 	//                     </p>
-	
 	//                 </div>
-	
 	//                 <div :class="`${prefixCls}-datepicker-mouthRange`">
-	
 	//                 	<template v-for="(m,index) in mouthNames">
-	
 	// 	                    <span
-	
 	//                         :class="monthClassobj(m)"
-	
 	//                         @click="mouthSelect(index)">
-	
 	// 	                      {{m.substr(0,3)}}
-	
 	// 	                    </span>
-	
 	//                     </template>
-	
 	//                 </div>
-	
 	//             </div>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//       <div :class="`${prefixCls}-datepicker-popup`" v-show="displayYearView">
-	
 	//         <div :class="`${prefixCls}-datepicker-inner`">
-	
 	//             <div :class="`${prefixCls}-datepicker-body`">
-	
 	//                 <div :class="`${prefixCls}-datepicker-ctrl`">
-	
 	//                     <span
-	
 	//                       :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-	
 	//                       @click="preNextDecadeClick(0)">&lt;</span>
-	
 	//                     <span
-	
 	//                       :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-	
 	//                       @click="preNextDecadeClick(1)">&gt;</span>
-	
 	//                     <p>
-	
 	//                     {{stringifyDecadeHeader(currDate)}}
-	
 	//                     </p>
-	
 	//                 </div>
-	
 	//                 <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
-	
 	//                 	<template v-for="decade in decadeRange">
-	
 	//                 		<span
-	
 	//                       :class="yearClassobj(decade)"
-	
 	// 	                    @click.stop="yearSelect(decade.text)">
-	
 	// 	                      {{decade.text}}
-	
 	// 	                  </span>
-	
 	// 					        </template>
-	
 	//                 </div>
-	
 	//             </div>
-	
 	//         </div>
-	
 	//       </div>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -32828,11 +31940,11 @@
 	  },
 	  methods: {
 	    monthClassobj: function monthClassobj(m) {
-	      var prefixCls = this.prefixCls,
-	          date = this.date,
-	          mouthNames = this.mouthNames,
-	          parse = this.parse,
-	          currDate = this.currDate;
+	      var prefixCls = this.prefixCls;
+	      var date = this.date;
+	      var mouthNames = this.mouthNames;
+	      var parse = this.parse;
+	      var currDate = this.currDate;
 	
 	      var klass = {};
 	
@@ -32841,9 +31953,9 @@
 	      return klass;
 	    },
 	    yearClassobj: function yearClassobj(decade) {
-	      var prefixCls = this.prefixCls,
-	          date = this.date,
-	          parse = this.parse;
+	      var prefixCls = this.prefixCls;
+	      var date = this.date;
+	      var parse = this.parse;
 	
 	      var klass = {};
 	
@@ -32994,7 +32106,7 @@
 	      };
 	    },
 	    stringify: function stringify(date) {
-	      var format = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.format;
+	      var format = arguments.length <= 1 || arguments[1] === undefined ? this.format : arguments[1];
 	
 	      if (isNaN(date.getFullYear())) return '';
 	      var dateFormat = format.split(/\s+/)[0];
@@ -33143,7 +32255,7 @@
 /* 734 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`\" ref=\"datetimepicker\">\r\n    <n3-input\r\n      :width=\"width\"\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :placeholder=\"placeholder\"\r\n      :custom-validate=\"customValidate\"\r\n      :disabled=\"disabled\"\r\n      :readonly=\"true\"\r\n      @click.native=\"inputClick\"\r\n      :show-clean=\"true\"\r\n      v-model=\"currentValue\">\r\n    </n3-input>\r\n      <transition name=\"fadeDown\">\r\n        <div\r\n          v-n3-position=\"displayDayView\"\r\n          :class=\"`${prefixCls}-datepicker-popup`\"\r\n          v-show=\"displayDayView\"\r\n          :style=\"{width:popWidth}\">\r\n            <div :class=\"`${prefixCls}-datepicker-inner`\" ref=\"datepicker\">\r\n                <div :class=\"`${prefixCls}-datepicker-body`\">\r\n                    <div :class=\"`${prefixCls}-datepicker-ctrl`\">\r\n                        <span\r\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\r\n                          @click=\"preNextMonthClick(0)\">&lt;</span>\r\n                        <span\r\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\r\n                          @click=\"preNextMonthClick(1)\">&gt;</span>\r\n                        <p @click=\"switchMouthView\">\r\n                        {{stringifyDayHeader(currDate)}}\r\n                        </p>\r\n                    </div>\r\n                    <div :class=\"`${prefixCls}-datepicker-weekRange`\">\r\n                        <span v-for=\"w in weekRange\">{{w}}</span>\r\n                    </div>\r\n                    <div :class=\"`${prefixCls}-datepicker-dateRange`\">\r\n                        <span v-for=\"d in dateRange\"\r\n                        :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\"\r\n                        @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div :class=\"`${prefixCls}-timepicker-con`\">\r\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\r\n                <n3-slider\r\n                  :class=\"`${prefixCls}-timepicker-slider`\"\r\n                  v-model=\"time.hour\"\r\n                  orientation=\"vertical\"\r\n                  :max=\"hourRange[1]\"\r\n                  :min=\"hourRange[0]\" >\r\n                </n3-slider>\r\n              </div>\r\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\r\n                <n3-slider\r\n                  :class=\"`${prefixCls}-timepicker-slider`\"\r\n                  v-model=\"time.minute\"\r\n                  orientation=\"vertical\"\r\n                  :max=\"minuteRange[1]\"\r\n                  :min=\"minuteRange[0]\" >\r\n                </n3-slider>\r\n              </div>\r\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\r\n                <n3-slider\r\n                  :class=\"`${prefixCls}-timepicker-slider`\"\r\n                  v-model=\"time.second\"\r\n                  orientation=\"vertical\"\r\n                  :max=\"secondRange[1]\"\r\n                  :min=\"secondRange[0]\" >\r\n                </n3-slider>\r\n              </div>\r\n            </div>\r\n        </div>\r\n      </transition>\r\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayMouthView\">\r\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\r\n            <div :class=\"`${prefixCls}-datepicker-body`\">\r\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\r\n                    <span\r\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\r\n                      @click=\"preNextYearClick(0)\">&lt;</span>\r\n                    <span\r\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\r\n                      @click=\"preNextYearClick(1)\">&gt;</span>\r\n                    <p @click=\"switchDecadeView\">\r\n                    {{stringifyYearHeader(currDate)}}\r\n                    </p>\r\n                </div>\r\n                <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\r\n                \t<template v-for=\"(m,index) in mouthNames\">\r\n\t                    <span\r\n                        :class=\"monthClassobj(m)\"\r\n                        @click=\"mouthSelect(index)\">\r\n\t                      {{m.substr(0,3)}}\r\n\t                    </span>\r\n                    </template>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayYearView\">\r\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\r\n            <div :class=\"`${prefixCls}-datepicker-body`\">\r\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\r\n                    <span\r\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\r\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\r\n                    <span\r\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\r\n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\r\n                    <p>\r\n                    {{stringifyDecadeHeader(currDate)}}\r\n                    </p>\r\n                </div>\r\n                <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\r\n                \t<template v-for=\"decade in decadeRange\">\r\n                \t\t<span\r\n                      :class=\"yearClassobj(decade)\"\r\n\t                    @click.stop=\"yearSelect(decade.text)\">\r\n\t                      {{decade.text}}\r\n\t                  </span>\r\n\t\t\t\t\t        </template>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n</div>";
+	module.exports = "<div :class=\"`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`\" ref=\"datetimepicker\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      @click.native=\"inputClick\"\n      :show-clean=\"true\"\n      v-model=\"currentValue\">\n    </n3-input>\n      <transition name=\"fadeDown\">\n        <div\n          v-n3-position=\"displayDayView\"\n          :class=\"`${prefixCls}-datepicker-popup`\"\n          v-show=\"displayDayView\"\n          :style=\"{width:popWidth}\">\n            <div :class=\"`${prefixCls}-datepicker-inner`\" ref=\"datepicker\">\n                <div :class=\"`${prefixCls}-datepicker-body`\">\n                    <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                        <span\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                          @click=\"preNextMonthClick(0)\">&lt;</span>\n                        <span\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                          @click=\"preNextMonthClick(1)\">&gt;</span>\n                        <p @click=\"switchMouthView\">\n                        {{stringifyDayHeader(currDate)}}\n                        </p>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                        <span v-for=\"w in weekRange\">{{w}}</span>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                        <span v-for=\"d in dateRange\"\n                        :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\"\n                        @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                    </div>\n                </div>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-con`\">\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.hour\"\n                  orientation=\"vertical\"\n                  :max=\"hourRange[1]\"\n                  :min=\"hourRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.minute\"\n                  orientation=\"vertical\"\n                  :max=\"minuteRange[1]\"\n                  :min=\"minuteRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.second\"\n                  orientation=\"vertical\"\n                  :max=\"secondRange[1]\"\n                  :min=\"secondRange[0]\" >\n                </n3-slider>\n              </div>\n            </div>\n        </div>\n      </transition>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayMouthView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n                \t<template v-for=\"(m,index) in mouthNames\">\n\t                    <span\n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect(index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayYearView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
 /* 735 */
@@ -33158,12 +32270,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Dropdown.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Dropdown.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Dropdown.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Dropdown.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -33190,41 +32302,24 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div :class="`${prefixCls}-dropdown-con`">   
-	
 	//     <span ref="trigger"> 
-	
 	//       <slot name="trigger" ></slot>
-	
 	//     </span>
 	
-	
 	//     <transition :name="effect" v-if="effect!='collapse'">
-	
 	//       <ul v-n3-position="isShow" :class="`${prefixCls}-dropdown-menu`" v-show="isShow" >
-	
 	//           <slot></slot>
-	
 	//       </ul>
-	
 	//     </transition>
-	
 	//     <n3-collapse-transition v-if="effect=='collapse'">
-	
 	//       <ul :class="`${prefixCls}-dropdown-menu`" v-show="isShow" >
-	
 	//           <slot></slot>
-	
 	//       </ul>
-	
 	//     </n3-collapse-transition>
 	
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Dropdown',
@@ -33318,12 +32413,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CollapseTransition.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CollapseTransition.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CollapseTransition.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CollapseTransition.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CollapseTransition.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CollapseTransition.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CollapseTransition.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CollapseTransition.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CollapseTransition.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CollapseTransition.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -33367,23 +32462,14 @@
 	    }
 	  };
 	} // <template>
-	
 	//   <transition
-	
 	//     name="n3CollapseTransition"
-	
 	//     @enter="enter"
-	
 	//     @leave="leave"
-	
 	//   >
-	
 	//     <slot></slot>
-	
 	//   </transition>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3CollapseTransition',
@@ -33402,11 +32488,11 @@
 /* 739 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.4.0). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.2.3). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 	
 	/*************************
-	 Velocity jQuery Shim
-	 *************************/
+	   Velocity jQuery Shim
+	*************************/
 	
 	/*! VelocityJS.org jQuery Shim (1.0.1). (C) 2014 The jQuery Foundation. MIT @license: en.wikipedia.org/wiki/MIT_License. */
 	
@@ -33414,4690 +32500,3892 @@
 	/* These shimmed functions are only used if jQuery isn't present. If both this shim and jQuery are loaded, Velocity defaults to jQuery proper. */
 	/* Browser support: Using this shim instead of jQuery proper removes support for IE8. */
 	
-	(function(window) {
-		"use strict";
-		/***************
-		 Setup
-		 ***************/
-	
-		/* If jQuery is already loaded, there's no point in loading this shim. */
-		if (window.jQuery) {
-			return;
-		}
-	
-		/* jQuery base. */
-		var $ = function(selector, context) {
-			return new $.fn.init(selector, context);
-		};
-	
-		/********************
-		 Private Methods
-		 ********************/
-	
-		/* jQuery */
-		$.isWindow = function(obj) {
-			/* jshint eqeqeq: false */
-			return obj && obj === obj.window;
-		};
-	
-		/* jQuery */
-		$.type = function(obj) {
-			if (!obj) {
-				return obj + "";
-			}
-	
-			return typeof obj === "object" || typeof obj === "function" ?
-					class2type[toString.call(obj)] || "object" :
-					typeof obj;
-		};
-	
-		/* jQuery */
-		$.isArray = Array.isArray || function(obj) {
-			return $.type(obj) === "array";
-		};
-	
-		/* jQuery */
-		function isArraylike(obj) {
-			var length = obj.length,
-					type = $.type(obj);
-	
-			if (type === "function" || $.isWindow(obj)) {
-				return false;
-			}
-	
-			if (obj.nodeType === 1 && length) {
-				return true;
-			}
-	
-			return type === "array" || length === 0 || typeof length === "number" && length > 0 && (length - 1) in obj;
-		}
-	
-		/***************
-		 $ Methods
-		 ***************/
-	
-		/* jQuery: Support removed for IE<9. */
-		$.isPlainObject = function(obj) {
-			var key;
-	
-			if (!obj || $.type(obj) !== "object" || obj.nodeType || $.isWindow(obj)) {
-				return false;
-			}
-	
-			try {
-				if (obj.constructor &&
-						!hasOwn.call(obj, "constructor") &&
-						!hasOwn.call(obj.constructor.prototype, "isPrototypeOf")) {
-					return false;
-				}
-			} catch (e) {
-				return false;
-			}
-	
-			for (key in obj) {
-			}
-	
-			return key === undefined || hasOwn.call(obj, key);
-		};
-	
-		/* jQuery */
-		$.each = function(obj, callback, args) {
-			var value,
-					i = 0,
-					length = obj.length,
-					isArray = isArraylike(obj);
-	
-			if (args) {
-				if (isArray) {
-					for (; i < length; i++) {
-						value = callback.apply(obj[i], args);
-	
-						if (value === false) {
-							break;
-						}
-					}
-				} else {
-					for (i in obj) {
-						if (!obj.hasOwnProperty(i)) {
-							continue;
-						}
-						value = callback.apply(obj[i], args);
-	
-						if (value === false) {
-							break;
-						}
-					}
-				}
-	
-			} else {
-				if (isArray) {
-					for (; i < length; i++) {
-						value = callback.call(obj[i], i, obj[i]);
-	
-						if (value === false) {
-							break;
-						}
-					}
-				} else {
-					for (i in obj) {
-						if (!obj.hasOwnProperty(i)) {
-							continue;
-						}
-						value = callback.call(obj[i], i, obj[i]);
-	
-						if (value === false) {
-							break;
-						}
-					}
-				}
-			}
-	
-			return obj;
-		};
-	
-		/* Custom */
-		$.data = function(node, key, value) {
-			/* $.getData() */
-			if (value === undefined) {
-				var getId = node[$.expando],
-						store = getId && cache[getId];
-	
-				if (key === undefined) {
-					return store;
-				} else if (store) {
-					if (key in store) {
-						return store[key];
-					}
-				}
-				/* $.setData() */
-			} else if (key !== undefined) {
-				var setId = node[$.expando] || (node[$.expando] = ++$.uuid);
-	
-				cache[setId] = cache[setId] || {};
-				cache[setId][key] = value;
-	
-				return value;
-			}
-		};
-	
-		/* Custom */
-		$.removeData = function(node, keys) {
-			var id = node[$.expando],
-					store = id && cache[id];
-	
-			if (store) {
-				// Cleanup the entire store if no keys are provided.
-				if (!keys) {
-					delete cache[id];
-				} else {
-					$.each(keys, function(_, key) {
-						delete store[key];
-					});
-				}
-			}
-		};
-	
-		/* jQuery */
-		$.extend = function() {
-			var src, copyIsArray, copy, name, options, clone,
-					target = arguments[0] || {},
-					i = 1,
-					length = arguments.length,
-					deep = false;
-	
-			if (typeof target === "boolean") {
-				deep = target;
-	
-				target = arguments[i] || {};
-				i++;
-			}
-	
-			if (typeof target !== "object" && $.type(target) !== "function") {
-				target = {};
-			}
-	
-			if (i === length) {
-				target = this;
-				i--;
-			}
-	
-			for (; i < length; i++) {
-				if ((options = arguments[i])) {
-					for (name in options) {
-						if (!options.hasOwnProperty(name)) {
-							continue;
-						}
-						src = target[name];
-						copy = options[name];
-	
-						if (target === copy) {
-							continue;
-						}
-	
-						if (deep && copy && ($.isPlainObject(copy) || (copyIsArray = $.isArray(copy)))) {
-							if (copyIsArray) {
-								copyIsArray = false;
-								clone = src && $.isArray(src) ? src : [];
-	
-							} else {
-								clone = src && $.isPlainObject(src) ? src : {};
-							}
-	
-							target[name] = $.extend(deep, clone, copy);
-	
-						} else if (copy !== undefined) {
-							target[name] = copy;
-						}
-					}
-				}
-			}
-	
-			return target;
-		};
-	
-		/* jQuery 1.4.3 */
-		$.queue = function(elem, type, data) {
-			function $makeArray(arr, results) {
-				var ret = results || [];
-	
-				if (arr) {
-					if (isArraylike(Object(arr))) {
-						/* $.merge */
-						(function(first, second) {
-							var len = +second.length,
-									j = 0,
-									i = first.length;
-	
-							while (j < len) {
-								first[i++] = second[j++];
-							}
-	
-							if (len !== len) {
-								while (second[j] !== undefined) {
-									first[i++] = second[j++];
-								}
-							}
-	
-							first.length = i;
-	
-							return first;
-						})(ret, typeof arr === "string" ? [arr] : arr);
-					} else {
-						[].push.call(ret, arr);
-					}
-				}
-	
-				return ret;
-			}
-	
-			if (!elem) {
-				return;
-			}
-	
-			type = (type || "fx") + "queue";
-	
-			var q = $.data(elem, type);
-	
-			if (!data) {
-				return q || [];
-			}
-	
-			if (!q || $.isArray(data)) {
-				q = $.data(elem, type, $makeArray(data));
-			} else {
-				q.push(data);
-			}
-	
-			return q;
-		};
-	
-		/* jQuery 1.4.3 */
-		$.dequeue = function(elems, type) {
-			/* Custom: Embed element iteration. */
-			$.each(elems.nodeType ? [elems] : elems, function(i, elem) {
-				type = type || "fx";
-	
-				var queue = $.queue(elem, type),
-						fn = queue.shift();
-	
-				if (fn === "inprogress") {
-					fn = queue.shift();
-				}
-	
-				if (fn) {
-					if (type === "fx") {
-						queue.unshift("inprogress");
-					}
-	
-					fn.call(elem, function() {
-						$.dequeue(elem, type);
-					});
-				}
-			});
-		};
-	
-		/******************
-		 $.fn Methods
-		 ******************/
-	
-		/* jQuery */
-		$.fn = $.prototype = {
-			init: function(selector) {
-				/* Just return the element wrapped inside an array; don't proceed with the actual jQuery node wrapping process. */
-				if (selector.nodeType) {
-					this[0] = selector;
-	
-					return this;
-				} else {
-					throw new Error("Not a DOM node.");
-				}
-			},
-			offset: function() {
-				/* jQuery altered code: Dropped disconnected DOM node checking. */
-				var box = this[0].getBoundingClientRect ? this[0].getBoundingClientRect() : {top: 0, left: 0};
-	
-				return {
-					top: box.top + (window.pageYOffset || document.scrollTop || 0) - (document.clientTop || 0),
-					left: box.left + (window.pageXOffset || document.scrollLeft || 0) - (document.clientLeft || 0)
-				};
-			},
-			position: function() {
-				/* jQuery */
-				function offsetParentFn(elem) {
-					var offsetParent = elem.offsetParent;
-	
-					while (offsetParent && offsetParent.nodeName.toLowerCase() !== "html" && offsetParent.style && offsetParent.style.position === "static") {
-						offsetParent = offsetParent.offsetParent;
-					}
-	
-					return offsetParent || document;
-				}
-	
-				/* Zepto */
-				var elem = this[0],
-						offsetParent = offsetParentFn(elem),
-						offset = this.offset(),
-						parentOffset = /^(?:body|html)$/i.test(offsetParent.nodeName) ? {top: 0, left: 0} : $(offsetParent).offset();
-	
-				offset.top -= parseFloat(elem.style.marginTop) || 0;
-				offset.left -= parseFloat(elem.style.marginLeft) || 0;
-	
-				if (offsetParent.style) {
-					parentOffset.top += parseFloat(offsetParent.style.borderTopWidth) || 0;
-					parentOffset.left += parseFloat(offsetParent.style.borderLeftWidth) || 0;
-				}
-	
-				return {
-					top: offset.top - parentOffset.top,
-					left: offset.left - parentOffset.left
-				};
-			}
-		};
-	
-		/**********************
-		 Private Variables
-		 **********************/
-	
-		/* For $.data() */
-		var cache = {};
-		$.expando = "velocity" + (new Date().getTime());
-		$.uuid = 0;
-	
-		/* For $.queue() */
-		var class2type = {},
-				hasOwn = class2type.hasOwnProperty,
-				toString = class2type.toString;
-	
-		var types = "Boolean Number String Function Array Date RegExp Object Error".split(" ");
-		for (var i = 0; i < types.length; i++) {
-			class2type["[object " + types[i] + "]"] = types[i].toLowerCase();
-		}
-	
-		/* Makes $(node) possible, without having to call init. */
-		$.fn.init.prototype = $.fn;
-	
-		/* Globalize Velocity onto the window, and assign its Utilities property. */
-		window.Velocity = {Utilities: $};
+	;(function (window) {
+	    /***************
+	         Setup
+	    ***************/
+	
+	    /* If jQuery is already loaded, there's no point in loading this shim. */
+	    if (window.jQuery) {
+	        return;
+	    }
+	
+	    /* jQuery base. */
+	    var $ = function (selector, context) {
+	        return new $.fn.init(selector, context);
+	    };
+	
+	    /********************
+	       Private Methods
+	    ********************/
+	
+	    /* jQuery */
+	    $.isWindow = function (obj) {
+	        /* jshint eqeqeq: false */
+	        return obj != null && obj == obj.window;
+	    };
+	
+	    /* jQuery */
+	    $.type = function (obj) {
+	        if (obj == null) {
+	            return obj + "";
+	        }
+	
+	        return typeof obj === "object" || typeof obj === "function" ?
+	            class2type[toString.call(obj)] || "object" :
+	            typeof obj;
+	    };
+	
+	    /* jQuery */
+	    $.isArray = Array.isArray || function (obj) {
+	        return $.type(obj) === "array";
+	    };
+	
+	    /* jQuery */
+	    function isArraylike (obj) {
+	        var length = obj.length,
+	            type = $.type(obj);
+	
+	        if (type === "function" || $.isWindow(obj)) {
+	            return false;
+	        }
+	
+	        if (obj.nodeType === 1 && length) {
+	            return true;
+	        }
+	
+	        return type === "array" || length === 0 || typeof length === "number" && length > 0 && (length - 1) in obj;
+	    }
+	
+	    /***************
+	       $ Methods
+	    ***************/
+	
+	    /* jQuery: Support removed for IE<9. */
+	    $.isPlainObject = function (obj) {
+	        var key;
+	
+	        if (!obj || $.type(obj) !== "object" || obj.nodeType || $.isWindow(obj)) {
+	            return false;
+	        }
+	
+	        try {
+	            if (obj.constructor &&
+	                !hasOwn.call(obj, "constructor") &&
+	                !hasOwn.call(obj.constructor.prototype, "isPrototypeOf")) {
+	                return false;
+	            }
+	        } catch (e) {
+	            return false;
+	        }
+	
+	        for (key in obj) {}
+	
+	        return key === undefined || hasOwn.call(obj, key);
+	    };
+	
+	    /* jQuery */
+	    $.each = function(obj, callback, args) {
+	        var value,
+	            i = 0,
+	            length = obj.length,
+	            isArray = isArraylike(obj);
+	
+	        if (args) {
+	            if (isArray) {
+	                for (; i < length; i++) {
+	                    value = callback.apply(obj[i], args);
+	
+	                    if (value === false) {
+	                        break;
+	                    }
+	                }
+	            } else {
+	                for (i in obj) {
+	                    value = callback.apply(obj[i], args);
+	
+	                    if (value === false) {
+	                        break;
+	                    }
+	                }
+	            }
+	
+	        } else {
+	            if (isArray) {
+	                for (; i < length; i++) {
+	                    value = callback.call(obj[i], i, obj[i]);
+	
+	                    if (value === false) {
+	                        break;
+	                    }
+	                }
+	            } else {
+	                for (i in obj) {
+	                    value = callback.call(obj[i], i, obj[i]);
+	
+	                    if (value === false) {
+	                        break;
+	                    }
+	                }
+	            }
+	        }
+	
+	        return obj;
+	    };
+	
+	    /* Custom */
+	    $.data = function (node, key, value) {
+	        /* $.getData() */
+	        if (value === undefined) {
+	            var id = node[$.expando],
+	                store = id && cache[id];
+	
+	            if (key === undefined) {
+	                return store;
+	            } else if (store) {
+	                if (key in store) {
+	                    return store[key];
+	                }
+	            }
+	        /* $.setData() */
+	        } else if (key !== undefined) {
+	            var id = node[$.expando] || (node[$.expando] = ++$.uuid);
+	
+	            cache[id] = cache[id] || {};
+	            cache[id][key] = value;
+	
+	            return value;
+	        }
+	    };
+	
+	    /* Custom */
+	    $.removeData = function (node, keys) {
+	        var id = node[$.expando],
+	            store = id && cache[id];
+	
+	        if (store) {
+	            $.each(keys, function(_, key) {
+	                delete store[key];
+	            });
+	        }
+	    };
+	
+	    /* jQuery */
+	    $.extend = function () {
+	        var src, copyIsArray, copy, name, options, clone,
+	            target = arguments[0] || {},
+	            i = 1,
+	            length = arguments.length,
+	            deep = false;
+	
+	        if (typeof target === "boolean") {
+	            deep = target;
+	
+	            target = arguments[i] || {};
+	            i++;
+	        }
+	
+	        if (typeof target !== "object" && $.type(target) !== "function") {
+	            target = {};
+	        }
+	
+	        if (i === length) {
+	            target = this;
+	            i--;
+	        }
+	
+	        for (; i < length; i++) {
+	            if ((options = arguments[i]) != null) {
+	                for (name in options) {
+	                    src = target[name];
+	                    copy = options[name];
+	
+	                    if (target === copy) {
+	                        continue;
+	                    }
+	
+	                    if (deep && copy && ($.isPlainObject(copy) || (copyIsArray = $.isArray(copy)))) {
+	                        if (copyIsArray) {
+	                            copyIsArray = false;
+	                            clone = src && $.isArray(src) ? src : [];
+	
+	                        } else {
+	                            clone = src && $.isPlainObject(src) ? src : {};
+	                        }
+	
+	                        target[name] = $.extend(deep, clone, copy);
+	
+	                    } else if (copy !== undefined) {
+	                        target[name] = copy;
+	                    }
+	                }
+	            }
+	        }
+	
+	        return target;
+	    };
+	
+	    /* jQuery 1.4.3 */
+	    $.queue = function (elem, type, data) {
+	        function $makeArray (arr, results) {
+	            var ret = results || [];
+	
+	            if (arr != null) {
+	                if (isArraylike(Object(arr))) {
+	                    /* $.merge */
+	                    (function(first, second) {
+	                        var len = +second.length,
+	                            j = 0,
+	                            i = first.length;
+	
+	                        while (j < len) {
+	                            first[i++] = second[j++];
+	                        }
+	
+	                        if (len !== len) {
+	                            while (second[j] !== undefined) {
+	                                first[i++] = second[j++];
+	                            }
+	                        }
+	
+	                        first.length = i;
+	
+	                        return first;
+	                    })(ret, typeof arr === "string" ? [arr] : arr);
+	                } else {
+	                    [].push.call(ret, arr);
+	                }
+	            }
+	
+	            return ret;
+	        }
+	
+	        if (!elem) {
+	            return;
+	        }
+	
+	        type = (type || "fx") + "queue";
+	
+	        var q = $.data(elem, type);
+	
+	        if (!data) {
+	            return q || [];
+	        }
+	
+	        if (!q || $.isArray(data)) {
+	            q = $.data(elem, type, $makeArray(data));
+	        } else {
+	            q.push(data);
+	        }
+	
+	        return q;
+	    };
+	
+	    /* jQuery 1.4.3 */
+	    $.dequeue = function (elems, type) {
+	        /* Custom: Embed element iteration. */
+	        $.each(elems.nodeType ? [ elems ] : elems, function(i, elem) {
+	            type = type || "fx";
+	
+	            var queue = $.queue(elem, type),
+	                fn = queue.shift();
+	
+	            if (fn === "inprogress") {
+	                fn = queue.shift();
+	            }
+	
+	            if (fn) {
+	                if (type === "fx") {
+	                    queue.unshift("inprogress");
+	                }
+	
+	                fn.call(elem, function() {
+	                    $.dequeue(elem, type);
+	                });
+	            }
+	        });
+	    };
+	
+	    /******************
+	       $.fn Methods
+	    ******************/
+	
+	    /* jQuery */
+	    $.fn = $.prototype = {
+	        init: function (selector) {
+	            /* Just return the element wrapped inside an array; don't proceed with the actual jQuery node wrapping process. */
+	            if (selector.nodeType) {
+	                this[0] = selector;
+	
+	                return this;
+	            } else {
+	                throw new Error("Not a DOM node.");
+	            }
+	        },
+	
+	        offset: function () {
+	            /* jQuery altered code: Dropped disconnected DOM node checking. */
+	            var box = this[0].getBoundingClientRect ? this[0].getBoundingClientRect() : { top: 0, left: 0 };
+	
+	            return {
+	                top: box.top + (window.pageYOffset || document.scrollTop  || 0)  - (document.clientTop  || 0),
+	                left: box.left + (window.pageXOffset || document.scrollLeft  || 0) - (document.clientLeft || 0)
+	            };
+	        },
+	
+	        position: function () {
+	            /* jQuery */
+	            function offsetParent() {
+	                var offsetParent = this.offsetParent || document;
+	
+	                while (offsetParent && (!offsetParent.nodeType.toLowerCase === "html" && offsetParent.style.position === "static")) {
+	                    offsetParent = offsetParent.offsetParent;
+	                }
+	
+	                return offsetParent || document;
+	            }
+	
+	            /* Zepto */
+	            var elem = this[0],
+	                offsetParent = offsetParent.apply(elem),
+	                offset = this.offset(),
+	                parentOffset = /^(?:body|html)$/i.test(offsetParent.nodeName) ? { top: 0, left: 0 } : $(offsetParent).offset()
+	
+	            offset.top -= parseFloat(elem.style.marginTop) || 0;
+	            offset.left -= parseFloat(elem.style.marginLeft) || 0;
+	
+	            if (offsetParent.style) {
+	                parentOffset.top += parseFloat(offsetParent.style.borderTopWidth) || 0
+	                parentOffset.left += parseFloat(offsetParent.style.borderLeftWidth) || 0
+	            }
+	
+	            return {
+	                top: offset.top - parentOffset.top,
+	                left: offset.left - parentOffset.left
+	            };
+	        }
+	    };
+	
+	    /**********************
+	       Private Variables
+	    **********************/
+	
+	    /* For $.data() */
+	    var cache = {};
+	    $.expando = "velocity" + (new Date().getTime());
+	    $.uuid = 0;
+	
+	    /* For $.queue() */
+	    var class2type = {},
+	        hasOwn = class2type.hasOwnProperty,
+	        toString = class2type.toString;
+	
+	    var types = "Boolean Number String Function Array Date RegExp Object Error".split(" ");
+	    for (var i = 0; i < types.length; i++) {
+	        class2type["[object " + types[i] + "]"] = types[i].toLowerCase();
+	    }
+	
+	    /* Makes $(node) possible, without having to call init. */
+	    $.fn.init.prototype = $.fn;
+	
+	    /* Globalize Velocity onto the window, and assign its Utilities property. */
+	    window.Velocity = { Utilities: $ };
 	})(window);
 	
 	/******************
-	 Velocity.js
-	 ******************/
+	    Velocity.js
+	******************/
 	
-	(function(factory) {
-		"use strict";
-		/* CommonJS module. */
-		if (typeof module === "object" && typeof module.exports === "object") {
-			module.exports = factory();
-			/* AMD module. */
-		} else if (true) {
-			!(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-			/* Browser globals. */
-		} else {
-			factory();
-		}
+	;(function (factory) {
+	    /* CommonJS module. */
+	    if (typeof module === "object" && typeof module.exports === "object") {
+	        module.exports = factory();
+	    /* AMD module. */
+	    } else if (true) {
+	        !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    /* Browser globals. */
+	    } else {
+	        factory();
+	    }
 	}(function() {
-		"use strict";
-		return function(global, window, document, undefined) {
-	
-			/***************
-			 Summary
-			 ***************/
-	
-			/*
-			 - CSS: CSS stack that works independently from the rest of Velocity.
-			 - animate(): Core animation method that iterates over the targeted elements and queues the incoming call onto each element individually.
-			 - Pre-Queueing: Prepare the element for animation by instantiating its data cache and processing the call's options.
-			 - Queueing: The logic that runs once the call has reached its point of execution in the element's $.queue() stack.
-			 Most logic is placed here to avoid risking it becoming stale (if the element's properties have changed).
-			 - Pushing: Consolidation of the tween data followed by its push onto the global in-progress calls container.
-			 - tick(): The single requestAnimationFrame loop responsible for tweening all in-progress calls.
-			 - completeCall(): Handles the cleanup process for each Velocity call.
-			 */
-	
-			/*********************
-			 Helper Functions
-			 *********************/
-	
-			/* IE detection. Gist: https://gist.github.com/julianshapiro/9098609 */
-			var IE = (function() {
-				if (document.documentMode) {
-					return document.documentMode;
-				} else {
-					for (var i = 7; i > 4; i--) {
-						var div = document.createElement("div");
-	
-						div.innerHTML = "<!--[if IE " + i + "]><span></span><![endif]-->";
-	
-						if (div.getElementsByTagName("span").length) {
-							div = null;
-	
-							return i;
-						}
-					}
-				}
-	
-				return undefined;
-			})();
-	
-			/* rAF shim. Gist: https://gist.github.com/julianshapiro/9497513 */
-			var rAFShim = (function() {
-				var timeLast = 0;
-	
-				return window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function(callback) {
-					var timeCurrent = (new Date()).getTime(),
-							timeDelta;
-	
-					/* Dynamically set delay on a per-tick basis to match 60fps. */
-					/* Technique by Erik Moller. MIT license: https://gist.github.com/paulirish/1579671 */
-					timeDelta = Math.max(0, 16 - (timeCurrent - timeLast));
-					timeLast = timeCurrent + timeDelta;
-	
-					return setTimeout(function() {
-						callback(timeCurrent + timeDelta);
-					}, timeDelta);
-				};
-			})();
-	
-			var performance = (function() {
-				var perf = window.performance || {};
-	
-				if (!perf.hasOwnProperty("now")) {
-					var nowOffset = perf.timing && perf.timing.domComplete ? perf.timing.domComplete : (new Date()).getTime();
-	
-					perf.now = function() {
-						return (new Date()).getTime() - nowOffset;
-					};
-				}
-				return perf;
-			})();
-	
-			/* Array compacting. Copyright Lo-Dash. MIT License: https://github.com/lodash/lodash/blob/master/LICENSE.txt */
-			function compactSparseArray(array) {
-				var index = -1,
-						length = array ? array.length : 0,
-						result = [];
-	
-				while (++index < length) {
-					var value = array[index];
-	
-					if (value) {
-						result.push(value);
-					}
-				}
-	
-				return result;
-			}
-	
-			function sanitizeElements(elements) {
-				/* Unwrap jQuery/Zepto objects. */
-				if (Type.isWrapped(elements)) {
-					elements = [].slice.call(elements);
-					/* Wrap a single element in an array so that $.each() can iterate with the element instead of its node's children. */
-				} else if (Type.isNode(elements)) {
-					elements = [elements];
-				}
-	
-				return elements;
-			}
-	
-			var Type = {
-				isNumber: function(variable) {
-					return (typeof variable === "number");
-				},
-				isString: function(variable) {
-					return (typeof variable === "string");
-				},
-				isArray: Array.isArray || function(variable) {
-					return Object.prototype.toString.call(variable) === "[object Array]";
-				},
-				isFunction: function(variable) {
-					return Object.prototype.toString.call(variable) === "[object Function]";
-				},
-				isNode: function(variable) {
-					return variable && variable.nodeType;
-				},
-				/* Copyright Martin Bohm. MIT License: https://gist.github.com/Tomalak/818a78a226a0738eaade */
-				isNodeList: function(variable) {
-					return typeof variable === "object" &&
-							/^\[object (HTMLCollection|NodeList|Object)\]$/.test(Object.prototype.toString.call(variable)) &&
-							variable.length !== undefined &&
-							(variable.length === 0 || (typeof variable[0] === "object" && variable[0].nodeType > 0));
-				},
-				/* Determine if variable is an array-like wrapped jQuery, Zepto or similar element. */
-				isWrapped: function(variable) {
-					return variable && (Type.isArray(variable) || (Type.isNumber(variable.length) && !Type.isString(variable) && !Type.isFunction(variable)));
-				},
-				isSVG: function(variable) {
-					return window.SVGElement && (variable instanceof window.SVGElement);
-				},
-				isEmptyObject: function(variable) {
-					for (var name in variable) {
-						if (variable.hasOwnProperty(name)) {
-							return false;
-						}
-					}
-	
-					return true;
-				}
-			};
-	
-			/*****************
-			 Dependencies
-			 *****************/
-	
-			var $,
-					isJQuery = false;
-	
-			if (global.fn && global.fn.jquery) {
-				$ = global;
-				isJQuery = true;
-			} else {
-				$ = window.Velocity.Utilities;
-			}
-	
-			if (IE <= 8 && !isJQuery) {
-				throw new Error("Velocity: IE8 and below require jQuery to be loaded before Velocity.");
-			} else if (IE <= 7) {
-				/* Revert to jQuery's $.animate(), and lose Velocity's extra features. */
-				jQuery.fn.velocity = jQuery.fn.animate;
-	
-				/* Now that $.fn.velocity is aliased, abort this Velocity declaration. */
-				return;
-			}
-	
-			/*****************
-			 Constants
-			 *****************/
-	
-			var DURATION_DEFAULT = 400,
-					EASING_DEFAULT = "swing";
-	
-			/*************
-			 State
-			 *************/
-	
-			var Velocity = {
-				/* Container for page-wide Velocity state data. */
-				State: {
-					/* Detect mobile devices to determine if mobileHA should be turned on. */
-					isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-					/* The mobileHA option's behavior changes on older Android devices (Gingerbread, versions 2.3.3-2.3.7). */
-					isAndroid: /Android/i.test(navigator.userAgent),
-					isGingerbread: /Android 2\.3\.[3-7]/i.test(navigator.userAgent),
-					isChrome: window.chrome,
-					isFirefox: /Firefox/i.test(navigator.userAgent),
-					/* Create a cached element for re-use when checking for CSS property prefixes. */
-					prefixElement: document.createElement("div"),
-					/* Cache every prefix match to avoid repeating lookups. */
-					prefixMatches: {},
-					/* Cache the anchor used for animating window scrolling. */
-					scrollAnchor: null,
-					/* Cache the browser-specific property names associated with the scroll anchor. */
-					scrollPropertyLeft: null,
-					scrollPropertyTop: null,
-					/* Keep track of whether our RAF tick is running. */
-					isTicking: false,
-					/* Container for every in-progress call to Velocity. */
-					calls: [],
-					delayedElements: {
-						count: 0
-					}
-				},
-				/* Velocity's custom CSS stack. Made global for unit testing. */
-				CSS: {/* Defined below. */},
-				/* A shim of the jQuery utility functions used by Velocity -- provided by Velocity's optional jQuery shim. */
-				Utilities: $,
-				/* Container for the user's custom animation redirects that are referenced by name in place of the properties map argument. */
-				Redirects: {/* Manually registered by the user. */},
-				Easings: {/* Defined below. */},
-				/* Attempt to use ES6 Promises by default. Users can override this with a third-party promises library. */
-				Promise: window.Promise,
-				/* Velocity option defaults, which can be overriden by the user. */
-				defaults: {
-					queue: "",
-					duration: DURATION_DEFAULT,
-					easing: EASING_DEFAULT,
-					begin: undefined,
-					complete: undefined,
-					progress: undefined,
-					display: undefined,
-					visibility: undefined,
-					loop: false,
-					delay: false,
-					mobileHA: true,
-					/* Advanced: Set to false to prevent property values from being cached between consecutive Velocity-initiated chain calls. */
-					_cacheValues: true,
-					/* Advanced: Set to false if the promise should always resolve on empty element lists. */
-					promiseRejectEmpty: true
-				},
-				/* A design goal of Velocity is to cache data wherever possible in order to avoid DOM requerying. Accordingly, each element has a data cache. */
-				init: function(element) {
-					$.data(element, "velocity", {
-						/* Store whether this is an SVG element, since its properties are retrieved and updated differently than standard HTML elements. */
-						isSVG: Type.isSVG(element),
-						/* Keep track of whether the element is currently being animated by Velocity.
-						 This is used to ensure that property values are not transferred between non-consecutive (stale) calls. */
-						isAnimating: false,
-						/* A reference to the element's live computedStyle object. Learn more here: https://developer.mozilla.org/en/docs/Web/API/window.getComputedStyle */
-						computedStyle: null,
-						/* Tween data is cached for each animation on the element so that data can be passed across calls --
-						 in particular, end values are used as subsequent start values in consecutive Velocity calls. */
-						tweensContainer: null,
-						/* The full root property values of each CSS hook being animated on this element are cached so that:
-						 1) Concurrently-animating hooks sharing the same root can have their root values' merged into one while tweening.
-						 2) Post-hook-injection root values can be transferred over to consecutively chained Velocity calls as starting root values. */
-						rootPropertyValueCache: {},
-						/* A cache for transform updates, which must be manually flushed via CSS.flushTransformCache(). */
-						transformCache: {}
-					});
-				},
-				/* A parallel to jQuery's $.css(), used for getting/setting Velocity's hooked CSS properties. */
-				hook: null, /* Defined below. */
-				/* Velocity-wide animation time remapping for testing purposes. */
-				mock: false,
-				version: {major: 1, minor: 4, patch: 0},
-				/* Set to 1 or 2 (most verbose) to output debug info to console. */
-				debug: false,
-				/* Use rAF high resolution timestamp when available */
-				timestamp: true,
-				/* Pause all animations */
-				pauseAll: function(queueName) {
-					var currentTime = (new Date()).getTime();
-	
-					$.each(Velocity.State.calls, function(i, activeCall) {
-	
-						if (activeCall) {
-	
-							/* If we have a queueName and this call is not on that queue, skip */
-							if (queueName !== undefined && ((activeCall[2].queue !== queueName) || (activeCall[2].queue === false))) {
-								return true;
-							}
-	
-							/* Set call to paused */
-							activeCall[5] = {
-								resume: false
-							};
-						}
-					});
-	
-					/* Pause timers on any currently delayed calls */
-					$.each(Velocity.State.delayedElements, function(k, element) {
-						if (!element) {
-							return;
-						}
-						pauseDelayOnElement(element, currentTime);
-					});
-				},
-				/* Resume all animations */
-				resumeAll: function(queueName) {
-					var currentTime = (new Date()).getTime();
-	
-					$.each(Velocity.State.calls, function(i, activeCall) {
-	
-						if (activeCall) {
-	
-							/* If we have a queueName and this call is not on that queue, skip */
-							if (queueName !== undefined && ((activeCall[2].queue !== queueName) || (activeCall[2].queue === false))) {
-								return true;
-							}
-	
-							/* Set call to resumed if it was paused */
-							if (activeCall[5]) {
-								activeCall[5].resume = true;
-							}
-						}
-					});
-					/* Resume timers on any currently delayed calls */
-					$.each(Velocity.State.delayedElements, function(k, element) {
-						if (!element) {
-							return;
-						}
-						resumeDelayOnElement(element, currentTime);
-					});
-				}
-			};
-	
-			/* Retrieve the appropriate scroll anchor and property name for the browser: https://developer.mozilla.org/en-US/docs/Web/API/Window.scrollY */
-			if (window.pageYOffset !== undefined) {
-				Velocity.State.scrollAnchor = window;
-				Velocity.State.scrollPropertyLeft = "pageXOffset";
-				Velocity.State.scrollPropertyTop = "pageYOffset";
-			} else {
-				Velocity.State.scrollAnchor = document.documentElement || document.body.parentNode || document.body;
-				Velocity.State.scrollPropertyLeft = "scrollLeft";
-				Velocity.State.scrollPropertyTop = "scrollTop";
-			}
-	
-			/* Shorthand alias for jQuery's $.data() utility. */
-			function Data(element) {
-				/* Hardcode a reference to the plugin name. */
-				var response = $.data(element, "velocity");
-	
-				/* jQuery <=1.4.2 returns null instead of undefined when no match is found. We normalize this behavior. */
-				return response === null ? undefined : response;
-			}
-	
-			/**************
-			 Delay Timer
-			 **************/
-	
-			function pauseDelayOnElement(element, currentTime) {
-				/* Check for any delay timers, and pause the set timeouts (while preserving time data)
-				 to be resumed when the "resume" command is issued */
-				var data = Data(element);
-				if (data && data.delayTimer && !data.delayPaused) {
-					data.delayRemaining = data.delay - currentTime + data.delayBegin;
-					data.delayPaused = true;
-					clearTimeout(data.delayTimer.setTimeout);
-				}
-			}
-	
-			function resumeDelayOnElement(element, currentTime) {
-				/* Check for any paused timers and resume */
-				var data = Data(element);
-				if (data && data.delayTimer && data.delayPaused) {
-					/* If the element was mid-delay, re initiate the timeout with the remaining delay */
-					data.delayPaused = false;
-					data.delayTimer.setTimeout = setTimeout(data.delayTimer.next, data.delayRemaining);
-				}
-			}
-	
-	
-	
-			/**************
-			 Easing
-			 **************/
-	
-			/* Step easing generator. */
-			function generateStep(steps) {
-				return function(p) {
-					return Math.round(p * steps) * (1 / steps);
-				};
-			}
-	
-			/* Bezier curve function generator. Copyright Gaetan Renaudeau. MIT License: http://en.wikipedia.org/wiki/MIT_License */
-			function generateBezier(mX1, mY1, mX2, mY2) {
-				var NEWTON_ITERATIONS = 4,
-						NEWTON_MIN_SLOPE = 0.001,
-						SUBDIVISION_PRECISION = 0.0000001,
-						SUBDIVISION_MAX_ITERATIONS = 10,
-						kSplineTableSize = 11,
-						kSampleStepSize = 1.0 / (kSplineTableSize - 1.0),
-						float32ArraySupported = "Float32Array" in window;
-	
-				/* Must contain four arguments. */
-				if (arguments.length !== 4) {
-					return false;
-				}
-	
-				/* Arguments must be numbers. */
-				for (var i = 0; i < 4; ++i) {
-					if (typeof arguments[i] !== "number" || isNaN(arguments[i]) || !isFinite(arguments[i])) {
-						return false;
-					}
-				}
-	
-				/* X values must be in the [0, 1] range. */
-				mX1 = Math.min(mX1, 1);
-				mX2 = Math.min(mX2, 1);
-				mX1 = Math.max(mX1, 0);
-				mX2 = Math.max(mX2, 0);
-	
-				var mSampleValues = float32ArraySupported ? new Float32Array(kSplineTableSize) : new Array(kSplineTableSize);
-	
-				function A(aA1, aA2) {
-					return 1.0 - 3.0 * aA2 + 3.0 * aA1;
-				}
-				function B(aA1, aA2) {
-					return 3.0 * aA2 - 6.0 * aA1;
-				}
-				function C(aA1) {
-					return 3.0 * aA1;
-				}
-	
-				function calcBezier(aT, aA1, aA2) {
-					return ((A(aA1, aA2) * aT + B(aA1, aA2)) * aT + C(aA1)) * aT;
-				}
-	
-				function getSlope(aT, aA1, aA2) {
-					return 3.0 * A(aA1, aA2) * aT * aT + 2.0 * B(aA1, aA2) * aT + C(aA1);
-				}
-	
-				function newtonRaphsonIterate(aX, aGuessT) {
-					for (var i = 0; i < NEWTON_ITERATIONS; ++i) {
-						var currentSlope = getSlope(aGuessT, mX1, mX2);
-	
-						if (currentSlope === 0.0) {
-							return aGuessT;
-						}
-	
-						var currentX = calcBezier(aGuessT, mX1, mX2) - aX;
-						aGuessT -= currentX / currentSlope;
-					}
-	
-					return aGuessT;
-				}
-	
-				function calcSampleValues() {
-					for (var i = 0; i < kSplineTableSize; ++i) {
-						mSampleValues[i] = calcBezier(i * kSampleStepSize, mX1, mX2);
-					}
-				}
-	
-				function binarySubdivide(aX, aA, aB) {
-					var currentX, currentT, i = 0;
-	
-					do {
-						currentT = aA + (aB - aA) / 2.0;
-						currentX = calcBezier(currentT, mX1, mX2) - aX;
-						if (currentX > 0.0) {
-							aB = currentT;
-						} else {
-							aA = currentT;
-						}
-					} while (Math.abs(currentX) > SUBDIVISION_PRECISION && ++i < SUBDIVISION_MAX_ITERATIONS);
-	
-					return currentT;
-				}
-	
-				function getTForX(aX) {
-					var intervalStart = 0.0,
-							currentSample = 1,
-							lastSample = kSplineTableSize - 1;
-	
-					for (; currentSample !== lastSample && mSampleValues[currentSample] <= aX; ++currentSample) {
-						intervalStart += kSampleStepSize;
-					}
-	
-					--currentSample;
-	
-					var dist = (aX - mSampleValues[currentSample]) / (mSampleValues[currentSample + 1] - mSampleValues[currentSample]),
-							guessForT = intervalStart + dist * kSampleStepSize,
-							initialSlope = getSlope(guessForT, mX1, mX2);
-	
-					if (initialSlope >= NEWTON_MIN_SLOPE) {
-						return newtonRaphsonIterate(aX, guessForT);
-					} else if (initialSlope === 0.0) {
-						return guessForT;
-					} else {
-						return binarySubdivide(aX, intervalStart, intervalStart + kSampleStepSize);
-					}
-				}
-	
-				var _precomputed = false;
-	
-				function precompute() {
-					_precomputed = true;
-					if (mX1 !== mY1 || mX2 !== mY2) {
-						calcSampleValues();
-					}
-				}
-	
-				var f = function(aX) {
-					if (!_precomputed) {
-						precompute();
-					}
-					if (mX1 === mY1 && mX2 === mY2) {
-						return aX;
-					}
-					if (aX === 0) {
-						return 0;
-					}
-					if (aX === 1) {
-						return 1;
-					}
-	
-					return calcBezier(getTForX(aX), mY1, mY2);
-				};
-	
-				f.getControlPoints = function() {
-					return [{x: mX1, y: mY1}, {x: mX2, y: mY2}];
-				};
-	
-				var str = "generateBezier(" + [mX1, mY1, mX2, mY2] + ")";
-				f.toString = function() {
-					return str;
-				};
-	
-				return f;
-			}
-	
-			/* Runge-Kutta spring physics function generator. Adapted from Framer.js, copyright Koen Bok. MIT License: http://en.wikipedia.org/wiki/MIT_License */
-			/* Given a tension, friction, and duration, a simulation at 60FPS will first run without a defined duration in order to calculate the full path. A second pass
-			 then adjusts the time delta -- using the relation between actual time and duration -- to calculate the path for the duration-constrained animation. */
-			var generateSpringRK4 = (function() {
-				function springAccelerationForState(state) {
-					return (-state.tension * state.x) - (state.friction * state.v);
-				}
-	
-				function springEvaluateStateWithDerivative(initialState, dt, derivative) {
-					var state = {
-						x: initialState.x + derivative.dx * dt,
-						v: initialState.v + derivative.dv * dt,
-						tension: initialState.tension,
-						friction: initialState.friction
-					};
-	
-					return {dx: state.v, dv: springAccelerationForState(state)};
-				}
-	
-				function springIntegrateState(state, dt) {
-					var a = {
-						dx: state.v,
-						dv: springAccelerationForState(state)
-					},
-							b = springEvaluateStateWithDerivative(state, dt * 0.5, a),
-							c = springEvaluateStateWithDerivative(state, dt * 0.5, b),
-							d = springEvaluateStateWithDerivative(state, dt, c),
-							dxdt = 1.0 / 6.0 * (a.dx + 2.0 * (b.dx + c.dx) + d.dx),
-							dvdt = 1.0 / 6.0 * (a.dv + 2.0 * (b.dv + c.dv) + d.dv);
-	
-					state.x = state.x + dxdt * dt;
-					state.v = state.v + dvdt * dt;
-	
-					return state;
-				}
-	
-				return function springRK4Factory(tension, friction, duration) {
-	
-					var initState = {
-						x: -1,
-						v: 0,
-						tension: null,
-						friction: null
-					},
-							path = [0],
-							time_lapsed = 0,
-							tolerance = 1 / 10000,
-							DT = 16 / 1000,
-							have_duration, dt, last_state;
-	
-					tension = parseFloat(tension) || 500;
-					friction = parseFloat(friction) || 20;
-					duration = duration || null;
-	
-					initState.tension = tension;
-					initState.friction = friction;
-	
-					have_duration = duration !== null;
-	
-					/* Calculate the actual time it takes for this animation to complete with the provided conditions. */
-					if (have_duration) {
-						/* Run the simulation without a duration. */
-						time_lapsed = springRK4Factory(tension, friction);
-						/* Compute the adjusted time delta. */
-						dt = time_lapsed / duration * DT;
-					} else {
-						dt = DT;
-					}
-	
-					while (true) {
-						/* Next/step function .*/
-						last_state = springIntegrateState(last_state || initState, dt);
-						/* Store the position. */
-						path.push(1 + last_state.x);
-						time_lapsed += 16;
-						/* If the change threshold is reached, break. */
-						if (!(Math.abs(last_state.x) > tolerance && Math.abs(last_state.v) > tolerance)) {
-							break;
-						}
-					}
-	
-					/* If duration is not defined, return the actual time required for completing this animation. Otherwise, return a closure that holds the
-					 computed path and returns a snapshot of the position according to a given percentComplete. */
-					return !have_duration ? time_lapsed : function(percentComplete) {
-						return path[ (percentComplete * (path.length - 1)) | 0 ];
-					};
-				};
-			}());
-	
-			/* jQuery easings. */
-			Velocity.Easings = {
-				linear: function(p) {
-					return p;
-				},
-				swing: function(p) {
-					return 0.5 - Math.cos(p * Math.PI) / 2;
-				},
-				/* Bonus "spring" easing, which is a less exaggerated version of easeInOutElastic. */
-				spring: function(p) {
-					return 1 - (Math.cos(p * 4.5 * Math.PI) * Math.exp(-p * 6));
-				}
-			};
-	
-			/* CSS3 and Robert Penner easings. */
-			$.each(
-					[
-						["ease", [0.25, 0.1, 0.25, 1.0]],
-						["ease-in", [0.42, 0.0, 1.00, 1.0]],
-						["ease-out", [0.00, 0.0, 0.58, 1.0]],
-						["ease-in-out", [0.42, 0.0, 0.58, 1.0]],
-						["easeInSine", [0.47, 0, 0.745, 0.715]],
-						["easeOutSine", [0.39, 0.575, 0.565, 1]],
-						["easeInOutSine", [0.445, 0.05, 0.55, 0.95]],
-						["easeInQuad", [0.55, 0.085, 0.68, 0.53]],
-						["easeOutQuad", [0.25, 0.46, 0.45, 0.94]],
-						["easeInOutQuad", [0.455, 0.03, 0.515, 0.955]],
-						["easeInCubic", [0.55, 0.055, 0.675, 0.19]],
-						["easeOutCubic", [0.215, 0.61, 0.355, 1]],
-						["easeInOutCubic", [0.645, 0.045, 0.355, 1]],
-						["easeInQuart", [0.895, 0.03, 0.685, 0.22]],
-						["easeOutQuart", [0.165, 0.84, 0.44, 1]],
-						["easeInOutQuart", [0.77, 0, 0.175, 1]],
-						["easeInQuint", [0.755, 0.05, 0.855, 0.06]],
-						["easeOutQuint", [0.23, 1, 0.32, 1]],
-						["easeInOutQuint", [0.86, 0, 0.07, 1]],
-						["easeInExpo", [0.95, 0.05, 0.795, 0.035]],
-						["easeOutExpo", [0.19, 1, 0.22, 1]],
-						["easeInOutExpo", [1, 0, 0, 1]],
-						["easeInCirc", [0.6, 0.04, 0.98, 0.335]],
-						["easeOutCirc", [0.075, 0.82, 0.165, 1]],
-						["easeInOutCirc", [0.785, 0.135, 0.15, 0.86]]
-					], function(i, easingArray) {
-				Velocity.Easings[easingArray[0]] = generateBezier.apply(null, easingArray[1]);
-			});
-	
-			/* Determine the appropriate easing type given an easing input. */
-			function getEasing(value, duration) {
-				var easing = value;
-	
-				/* The easing option can either be a string that references a pre-registered easing,
-				 or it can be a two-/four-item array of integers to be converted into a bezier/spring function. */
-				if (Type.isString(value)) {
-					/* Ensure that the easing has been assigned to jQuery's Velocity.Easings object. */
-					if (!Velocity.Easings[value]) {
-						easing = false;
-					}
-				} else if (Type.isArray(value) && value.length === 1) {
-					easing = generateStep.apply(null, value);
-				} else if (Type.isArray(value) && value.length === 2) {
-					/* springRK4 must be passed the animation's duration. */
-					/* Note: If the springRK4 array contains non-numbers, generateSpringRK4() returns an easing
-					 function generated with default tension and friction values. */
-					easing = generateSpringRK4.apply(null, value.concat([duration]));
-				} else if (Type.isArray(value) && value.length === 4) {
-					/* Note: If the bezier array contains non-numbers, generateBezier() returns false. */
-					easing = generateBezier.apply(null, value);
-				} else {
-					easing = false;
-				}
-	
-				/* Revert to the Velocity-wide default easing type, or fall back to "swing" (which is also jQuery's default)
-				 if the Velocity-wide default has been incorrectly modified. */
-				if (easing === false) {
-					if (Velocity.Easings[Velocity.defaults.easing]) {
-						easing = Velocity.defaults.easing;
-					} else {
-						easing = EASING_DEFAULT;
-					}
-				}
-	
-				return easing;
-			}
-	
-			/*****************
-			 CSS Stack
-			 *****************/
-	
-			/* The CSS object is a highly condensed and performant CSS stack that fully replaces jQuery's.
-			 It handles the validation, getting, and setting of both standard CSS properties and CSS property hooks. */
-			/* Note: A "CSS" shorthand is aliased so that our code is easier to read. */
-			var CSS = Velocity.CSS = {
-				/*************
-				 RegEx
-				 *************/
-	
-				RegEx: {
-					isHex: /^#([A-f\d]{3}){1,2}$/i,
-					/* Unwrap a property value's surrounding text, e.g. "rgba(4, 3, 2, 1)" ==> "4, 3, 2, 1" and "rect(4px 3px 2px 1px)" ==> "4px 3px 2px 1px". */
-					valueUnwrap: /^[A-z]+\((.*)\)$/i,
-					wrappedValueAlreadyExtracted: /[0-9.]+ [0-9.]+ [0-9.]+( [0-9.]+)?/,
-					/* Split a multi-value property into an array of subvalues, e.g. "rgba(4, 3, 2, 1) 4px 3px 2px 1px" ==> [ "rgba(4, 3, 2, 1)", "4px", "3px", "2px", "1px" ]. */
-					valueSplit: /([A-z]+\(.+\))|(([A-z0-9#-.]+?)(?=\s|$))/ig
-				},
-				/************
-				 Lists
-				 ************/
-	
-				Lists: {
-					colors: ["fill", "stroke", "stopColor", "color", "backgroundColor", "borderColor", "borderTopColor", "borderRightColor", "borderBottomColor", "borderLeftColor", "outlineColor"],
-					transformsBase: ["translateX", "translateY", "scale", "scaleX", "scaleY", "skewX", "skewY", "rotateZ"],
-					transforms3D: ["transformPerspective", "translateZ", "scaleZ", "rotateX", "rotateY"],
-					units: [
-						"%", // relative
-						"em", "ex", "ch", "rem", // font relative
-						"vw", "vh", "vmin", "vmax", // viewport relative
-						"cm", "mm", "Q", "in", "pc", "pt", "px", // absolute lengths
-						"deg", "grad", "rad", "turn", // angles
-						"s", "ms" // time
-					],
-					colorNames: {
-						"aliceblue": "240,248,255",
-						"antiquewhite": "250,235,215",
-						"aquamarine": "127,255,212",
-						"aqua": "0,255,255",
-						"azure": "240,255,255",
-						"beige": "245,245,220",
-						"bisque": "255,228,196",
-						"black": "0,0,0",
-						"blanchedalmond": "255,235,205",
-						"blueviolet": "138,43,226",
-						"blue": "0,0,255",
-						"brown": "165,42,42",
-						"burlywood": "222,184,135",
-						"cadetblue": "95,158,160",
-						"chartreuse": "127,255,0",
-						"chocolate": "210,105,30",
-						"coral": "255,127,80",
-						"cornflowerblue": "100,149,237",
-						"cornsilk": "255,248,220",
-						"crimson": "220,20,60",
-						"cyan": "0,255,255",
-						"darkblue": "0,0,139",
-						"darkcyan": "0,139,139",
-						"darkgoldenrod": "184,134,11",
-						"darkgray": "169,169,169",
-						"darkgrey": "169,169,169",
-						"darkgreen": "0,100,0",
-						"darkkhaki": "189,183,107",
-						"darkmagenta": "139,0,139",
-						"darkolivegreen": "85,107,47",
-						"darkorange": "255,140,0",
-						"darkorchid": "153,50,204",
-						"darkred": "139,0,0",
-						"darksalmon": "233,150,122",
-						"darkseagreen": "143,188,143",
-						"darkslateblue": "72,61,139",
-						"darkslategray": "47,79,79",
-						"darkturquoise": "0,206,209",
-						"darkviolet": "148,0,211",
-						"deeppink": "255,20,147",
-						"deepskyblue": "0,191,255",
-						"dimgray": "105,105,105",
-						"dimgrey": "105,105,105",
-						"dodgerblue": "30,144,255",
-						"firebrick": "178,34,34",
-						"floralwhite": "255,250,240",
-						"forestgreen": "34,139,34",
-						"fuchsia": "255,0,255",
-						"gainsboro": "220,220,220",
-						"ghostwhite": "248,248,255",
-						"gold": "255,215,0",
-						"goldenrod": "218,165,32",
-						"gray": "128,128,128",
-						"grey": "128,128,128",
-						"greenyellow": "173,255,47",
-						"green": "0,128,0",
-						"honeydew": "240,255,240",
-						"hotpink": "255,105,180",
-						"indianred": "205,92,92",
-						"indigo": "75,0,130",
-						"ivory": "255,255,240",
-						"khaki": "240,230,140",
-						"lavenderblush": "255,240,245",
-						"lavender": "230,230,250",
-						"lawngreen": "124,252,0",
-						"lemonchiffon": "255,250,205",
-						"lightblue": "173,216,230",
-						"lightcoral": "240,128,128",
-						"lightcyan": "224,255,255",
-						"lightgoldenrodyellow": "250,250,210",
-						"lightgray": "211,211,211",
-						"lightgrey": "211,211,211",
-						"lightgreen": "144,238,144",
-						"lightpink": "255,182,193",
-						"lightsalmon": "255,160,122",
-						"lightseagreen": "32,178,170",
-						"lightskyblue": "135,206,250",
-						"lightslategray": "119,136,153",
-						"lightsteelblue": "176,196,222",
-						"lightyellow": "255,255,224",
-						"limegreen": "50,205,50",
-						"lime": "0,255,0",
-						"linen": "250,240,230",
-						"magenta": "255,0,255",
-						"maroon": "128,0,0",
-						"mediumaquamarine": "102,205,170",
-						"mediumblue": "0,0,205",
-						"mediumorchid": "186,85,211",
-						"mediumpurple": "147,112,219",
-						"mediumseagreen": "60,179,113",
-						"mediumslateblue": "123,104,238",
-						"mediumspringgreen": "0,250,154",
-						"mediumturquoise": "72,209,204",
-						"mediumvioletred": "199,21,133",
-						"midnightblue": "25,25,112",
-						"mintcream": "245,255,250",
-						"mistyrose": "255,228,225",
-						"moccasin": "255,228,181",
-						"navajowhite": "255,222,173",
-						"navy": "0,0,128",
-						"oldlace": "253,245,230",
-						"olivedrab": "107,142,35",
-						"olive": "128,128,0",
-						"orangered": "255,69,0",
-						"orange": "255,165,0",
-						"orchid": "218,112,214",
-						"palegoldenrod": "238,232,170",
-						"palegreen": "152,251,152",
-						"paleturquoise": "175,238,238",
-						"palevioletred": "219,112,147",
-						"papayawhip": "255,239,213",
-						"peachpuff": "255,218,185",
-						"peru": "205,133,63",
-						"pink": "255,192,203",
-						"plum": "221,160,221",
-						"powderblue": "176,224,230",
-						"purple": "128,0,128",
-						"red": "255,0,0",
-						"rosybrown": "188,143,143",
-						"royalblue": "65,105,225",
-						"saddlebrown": "139,69,19",
-						"salmon": "250,128,114",
-						"sandybrown": "244,164,96",
-						"seagreen": "46,139,87",
-						"seashell": "255,245,238",
-						"sienna": "160,82,45",
-						"silver": "192,192,192",
-						"skyblue": "135,206,235",
-						"slateblue": "106,90,205",
-						"slategray": "112,128,144",
-						"snow": "255,250,250",
-						"springgreen": "0,255,127",
-						"steelblue": "70,130,180",
-						"tan": "210,180,140",
-						"teal": "0,128,128",
-						"thistle": "216,191,216",
-						"tomato": "255,99,71",
-						"turquoise": "64,224,208",
-						"violet": "238,130,238",
-						"wheat": "245,222,179",
-						"whitesmoke": "245,245,245",
-						"white": "255,255,255",
-						"yellowgreen": "154,205,50",
-						"yellow": "255,255,0"
-					}
-				},
-				/************
-				 Hooks
-				 ************/
-	
-				/* Hooks allow a subproperty (e.g. "boxShadowBlur") of a compound-value CSS property
-				 (e.g. "boxShadow: X Y Blur Spread Color") to be animated as if it were a discrete property. */
-				/* Note: Beyond enabling fine-grained property animation, hooking is necessary since Velocity only
-				 tweens properties with single numeric values; unlike CSS transitions, Velocity does not interpolate compound-values. */
-				Hooks: {
-					/********************
-					 Registration
-					 ********************/
-	
-					/* Templates are a concise way of indicating which subproperties must be individually registered for each compound-value CSS property. */
-					/* Each template consists of the compound-value's base name, its constituent subproperty names, and those subproperties' default values. */
-					templates: {
-						"textShadow": ["Color X Y Blur", "black 0px 0px 0px"],
-						"boxShadow": ["Color X Y Blur Spread", "black 0px 0px 0px 0px"],
-						"clip": ["Top Right Bottom Left", "0px 0px 0px 0px"],
-						"backgroundPosition": ["X Y", "0% 0%"],
-						"transformOrigin": ["X Y Z", "50% 50% 0px"],
-						"perspectiveOrigin": ["X Y", "50% 50%"]
-					},
-					/* A "registered" hook is one that has been converted from its template form into a live,
-					 tweenable property. It contains data to associate it with its root property. */
-					registered: {
-						/* Note: A registered hook looks like this ==> textShadowBlur: [ "textShadow", 3 ],
-						 which consists of the subproperty's name, the associated root property's name,
-						 and the subproperty's position in the root's value. */
-					},
-					/* Convert the templates into individual hooks then append them to the registered object above. */
-					register: function() {
-						/* Color hooks registration: Colors are defaulted to white -- as opposed to black -- since colors that are
-						 currently set to "transparent" default to their respective template below when color-animated,
-						 and white is typically a closer match to transparent than black is. An exception is made for text ("color"),
-						 which is almost always set closer to black than white. */
-						for (var i = 0; i < CSS.Lists.colors.length; i++) {
-							var rgbComponents = (CSS.Lists.colors[i] === "color") ? "0 0 0 1" : "255 255 255 1";
-							CSS.Hooks.templates[CSS.Lists.colors[i]] = ["Red Green Blue Alpha", rgbComponents];
-						}
-	
-						var rootProperty,
-								hookTemplate,
-								hookNames;
-	
-						/* In IE, color values inside compound-value properties are positioned at the end the value instead of at the beginning.
-						 Thus, we re-arrange the templates accordingly. */
-						if (IE) {
-							for (rootProperty in CSS.Hooks.templates) {
-								if (!CSS.Hooks.templates.hasOwnProperty(rootProperty)) {
-									continue;
-								}
-								hookTemplate = CSS.Hooks.templates[rootProperty];
-								hookNames = hookTemplate[0].split(" ");
-	
-								var defaultValues = hookTemplate[1].match(CSS.RegEx.valueSplit);
-	
-								if (hookNames[0] === "Color") {
-									/* Reposition both the hook's name and its default value to the end of their respective strings. */
-									hookNames.push(hookNames.shift());
-									defaultValues.push(defaultValues.shift());
-	
-									/* Replace the existing template for the hook's root property. */
-									CSS.Hooks.templates[rootProperty] = [hookNames.join(" "), defaultValues.join(" ")];
-								}
-							}
-						}
-	
-						/* Hook registration. */
-						for (rootProperty in CSS.Hooks.templates) {
-							if (!CSS.Hooks.templates.hasOwnProperty(rootProperty)) {
-								continue;
-							}
-							hookTemplate = CSS.Hooks.templates[rootProperty];
-							hookNames = hookTemplate[0].split(" ");
-	
-							for (var j in hookNames) {
-								if (!hookNames.hasOwnProperty(j)) {
-									continue;
-								}
-								var fullHookName = rootProperty + hookNames[j],
-										hookPosition = j;
-	
-								/* For each hook, register its full name (e.g. textShadowBlur) with its root property (e.g. textShadow)
-								 and the hook's position in its template's default value string. */
-								CSS.Hooks.registered[fullHookName] = [rootProperty, hookPosition];
-							}
-						}
-					},
-					/*****************************
-					 Injection and Extraction
-					 *****************************/
-	
-					/* Look up the root property associated with the hook (e.g. return "textShadow" for "textShadowBlur"). */
-					/* Since a hook cannot be set directly (the browser won't recognize it), style updating for hooks is routed through the hook's root property. */
-					getRoot: function(property) {
-						var hookData = CSS.Hooks.registered[property];
-	
-						if (hookData) {
-							return hookData[0];
-						} else {
-							/* If there was no hook match, return the property name untouched. */
-							return property;
-						}
-					},
-					getUnit: function(str, start) {
-						var unit = (str.substr(start || 0, 5).match(/^[a-z%]+/) || [])[0] || "";
-	
-						if (unit && CSS.Lists.units.indexOf(unit) >= 0) {
-							return unit;
-						}
-						return "";
-					},
-					fixColors: function(str) {
-						return str.replace(/(rgba?\(\s*)?(\b[a-z]+\b)/g, function($0, $1, $2) {
-							if (CSS.Lists.colorNames.hasOwnProperty($2)) {
-								return ($1 ? $1 : "rgba(") + CSS.Lists.colorNames[$2] + ($1 ? "" : ",1)");
-							}
-							return $1 + $2;
-						});
-					},
-					/* Convert any rootPropertyValue, null or otherwise, into a space-delimited list of hook values so that
-					 the targeted hook can be injected or extracted at its standard position. */
-					cleanRootPropertyValue: function(rootProperty, rootPropertyValue) {
-						/* If the rootPropertyValue is wrapped with "rgb()", "clip()", etc., remove the wrapping to normalize the value before manipulation. */
-						if (CSS.RegEx.valueUnwrap.test(rootPropertyValue)) {
-							rootPropertyValue = rootPropertyValue.match(CSS.RegEx.valueUnwrap)[1];
-						}
-	
-						/* If rootPropertyValue is a CSS null-value (from which there's inherently no hook value to extract),
-						 default to the root's default value as defined in CSS.Hooks.templates. */
-						/* Note: CSS null-values include "none", "auto", and "transparent". They must be converted into their
-						 zero-values (e.g. textShadow: "none" ==> textShadow: "0px 0px 0px black") for hook manipulation to proceed. */
-						if (CSS.Values.isCSSNullValue(rootPropertyValue)) {
-							rootPropertyValue = CSS.Hooks.templates[rootProperty][1];
-						}
-	
-						return rootPropertyValue;
-					},
-					/* Extracted the hook's value from its root property's value. This is used to get the starting value of an animating hook. */
-					extractValue: function(fullHookName, rootPropertyValue) {
-						var hookData = CSS.Hooks.registered[fullHookName];
-	
-						if (hookData) {
-							var hookRoot = hookData[0],
-									hookPosition = hookData[1];
-	
-							rootPropertyValue = CSS.Hooks.cleanRootPropertyValue(hookRoot, rootPropertyValue);
-	
-							/* Split rootPropertyValue into its constituent hook values then grab the desired hook at its standard position. */
-							return rootPropertyValue.toString().match(CSS.RegEx.valueSplit)[hookPosition];
-						} else {
-							/* If the provided fullHookName isn't a registered hook, return the rootPropertyValue that was passed in. */
-							return rootPropertyValue;
-						}
-					},
-					/* Inject the hook's value into its root property's value. This is used to piece back together the root property
-					 once Velocity has updated one of its individually hooked values through tweening. */
-					injectValue: function(fullHookName, hookValue, rootPropertyValue) {
-						var hookData = CSS.Hooks.registered[fullHookName];
-	
-						if (hookData) {
-							var hookRoot = hookData[0],
-									hookPosition = hookData[1],
-									rootPropertyValueParts,
-									rootPropertyValueUpdated;
-	
-							rootPropertyValue = CSS.Hooks.cleanRootPropertyValue(hookRoot, rootPropertyValue);
-	
-							/* Split rootPropertyValue into its individual hook values, replace the targeted value with hookValue,
-							 then reconstruct the rootPropertyValue string. */
-							rootPropertyValueParts = rootPropertyValue.toString().match(CSS.RegEx.valueSplit);
-							rootPropertyValueParts[hookPosition] = hookValue;
-							rootPropertyValueUpdated = rootPropertyValueParts.join(" ");
-	
-							return rootPropertyValueUpdated;
-						} else {
-							/* If the provided fullHookName isn't a registered hook, return the rootPropertyValue that was passed in. */
-							return rootPropertyValue;
-						}
-					}
-				},
-				/*******************
-				 Normalizations
-				 *******************/
-	
-				/* Normalizations standardize CSS property manipulation by pollyfilling browser-specific implementations (e.g. opacity)
-				 and reformatting special properties (e.g. clip, rgba) to look like standard ones. */
-				Normalizations: {
-					/* Normalizations are passed a normalization target (either the property's name, its extracted value, or its injected value),
-					 the targeted element (which may need to be queried), and the targeted property value. */
-					registered: {
-						clip: function(type, element, propertyValue) {
-							switch (type) {
-								case "name":
-									return "clip";
-									/* Clip needs to be unwrapped and stripped of its commas during extraction. */
-								case "extract":
-									var extracted;
-	
-									/* If Velocity also extracted this value, skip extraction. */
-									if (CSS.RegEx.wrappedValueAlreadyExtracted.test(propertyValue)) {
-										extracted = propertyValue;
-									} else {
-										/* Remove the "rect()" wrapper. */
-										extracted = propertyValue.toString().match(CSS.RegEx.valueUnwrap);
-	
-										/* Strip off commas. */
-										extracted = extracted ? extracted[1].replace(/,(\s+)?/g, " ") : propertyValue;
-									}
-	
-									return extracted;
-									/* Clip needs to be re-wrapped during injection. */
-								case "inject":
-									return "rect(" + propertyValue + ")";
-							}
-						},
-						blur: function(type, element, propertyValue) {
-							switch (type) {
-								case "name":
-									return Velocity.State.isFirefox ? "filter" : "-webkit-filter";
-								case "extract":
-									var extracted = parseFloat(propertyValue);
-	
-									/* If extracted is NaN, meaning the value isn't already extracted. */
-									if (!(extracted || extracted === 0)) {
-										var blurComponent = propertyValue.toString().match(/blur\(([0-9]+[A-z]+)\)/i);
-	
-										/* If the filter string had a blur component, return just the blur value and unit type. */
-										if (blurComponent) {
-											extracted = blurComponent[1];
-											/* If the component doesn't exist, default blur to 0. */
-										} else {
-											extracted = 0;
-										}
-									}
-	
-									return extracted;
-									/* Blur needs to be re-wrapped during injection. */
-								case "inject":
-									/* For the blur effect to be fully de-applied, it needs to be set to "none" instead of 0. */
-									if (!parseFloat(propertyValue)) {
-										return "none";
-									} else {
-										return "blur(" + propertyValue + ")";
-									}
-							}
-						},
-						/* <=IE8 do not support the standard opacity property. They use filter:alpha(opacity=INT) instead. */
-						opacity: function(type, element, propertyValue) {
-							if (IE <= 8) {
-								switch (type) {
-									case "name":
-										return "filter";
-									case "extract":
-										/* <=IE8 return a "filter" value of "alpha(opacity=\d{1,3})".
-										 Extract the value and convert it to a decimal value to match the standard CSS opacity property's formatting. */
-										var extracted = propertyValue.toString().match(/alpha\(opacity=(.*)\)/i);
-	
-										if (extracted) {
-											/* Convert to decimal value. */
-											propertyValue = extracted[1] / 100;
-										} else {
-											/* When extracting opacity, default to 1 since a null value means opacity hasn't been set. */
-											propertyValue = 1;
-										}
-	
-										return propertyValue;
-									case "inject":
-										/* Opacified elements are required to have their zoom property set to a non-zero value. */
-										element.style.zoom = 1;
-	
-										/* Setting the filter property on elements with certain font property combinations can result in a
-										 highly unappealing ultra-bolding effect. There's no way to remedy this throughout a tween, but dropping the
-										 value altogether (when opacity hits 1) at leasts ensures that the glitch is gone post-tweening. */
-										if (parseFloat(propertyValue) >= 1) {
-											return "";
-										} else {
-											/* As per the filter property's spec, convert the decimal value to a whole number and wrap the value. */
-											return "alpha(opacity=" + parseInt(parseFloat(propertyValue) * 100, 10) + ")";
-										}
-								}
-								/* With all other browsers, normalization is not required; return the same values that were passed in. */
-							} else {
-								switch (type) {
-									case "name":
-										return "opacity";
-									case "extract":
-										return propertyValue;
-									case "inject":
-										return propertyValue;
-								}
-							}
-						}
-					},
-					/*****************************
-					 Batched Registrations
-					 *****************************/
-	
-					/* Note: Batched normalizations extend the CSS.Normalizations.registered object. */
-					register: function() {
-	
-						/*****************
-						 Transforms
-						 *****************/
-	
-						/* Transforms are the subproperties contained by the CSS "transform" property. Transforms must undergo normalization
-						 so that they can be referenced in a properties map by their individual names. */
-						/* Note: When transforms are "set", they are actually assigned to a per-element transformCache. When all transform
-						 setting is complete complete, CSS.flushTransformCache() must be manually called to flush the values to the DOM.
-						 Transform setting is batched in this way to improve performance: the transform style only needs to be updated
-						 once when multiple transform subproperties are being animated simultaneously. */
-						/* Note: IE9 and Android Gingerbread have support for 2D -- but not 3D -- transforms. Since animating unsupported
-						 transform properties results in the browser ignoring the *entire* transform string, we prevent these 3D values
-						 from being normalized for these browsers so that tweening skips these properties altogether
-						 (since it will ignore them as being unsupported by the browser.) */
-						if ((!IE || IE > 9) && !Velocity.State.isGingerbread) {
-							/* Note: Since the standalone CSS "perspective" property and the CSS transform "perspective" subproperty
-							 share the same name, the latter is given a unique token within Velocity: "transformPerspective". */
-							CSS.Lists.transformsBase = CSS.Lists.transformsBase.concat(CSS.Lists.transforms3D);
-						}
-	
-						for (var i = 0; i < CSS.Lists.transformsBase.length; i++) {
-							/* Wrap the dynamically generated normalization function in a new scope so that transformName's value is
-							 paired with its respective function. (Otherwise, all functions would take the final for loop's transformName.) */
-							(function() {
-								var transformName = CSS.Lists.transformsBase[i];
-	
-								CSS.Normalizations.registered[transformName] = function(type, element, propertyValue) {
-									switch (type) {
-										/* The normalized property name is the parent "transform" property -- the property that is actually set in CSS. */
-										case "name":
-											return "transform";
-											/* Transform values are cached onto a per-element transformCache object. */
-										case "extract":
-											/* If this transform has yet to be assigned a value, return its null value. */
-											if (Data(element) === undefined || Data(element).transformCache[transformName] === undefined) {
-												/* Scale CSS.Lists.transformsBase default to 1 whereas all other transform properties default to 0. */
-												return /^scale/i.test(transformName) ? 1 : 0;
-												/* When transform values are set, they are wrapped in parentheses as per the CSS spec.
-												 Thus, when extracting their values (for tween calculations), we strip off the parentheses. */
-											}
-											return Data(element).transformCache[transformName].replace(/[()]/g, "");
-										case "inject":
-											var invalid = false;
-	
-											/* If an individual transform property contains an unsupported unit type, the browser ignores the *entire* transform property.
-											 Thus, protect users from themselves by skipping setting for transform values supplied with invalid unit types. */
-											/* Switch on the base transform type; ignore the axis by removing the last letter from the transform's name. */
-											switch (transformName.substr(0, transformName.length - 1)) {
-												/* Whitelist unit types for each transform. */
-												case "translate":
-													invalid = !/(%|px|em|rem|vw|vh|\d)$/i.test(propertyValue);
-													break;
-													/* Since an axis-free "scale" property is supported as well, a little hack is used here to detect it by chopping off its last letter. */
-												case "scal":
-												case "scale":
-													/* Chrome on Android has a bug in which scaled elements blur if their initial scale
-													 value is below 1 (which can happen with forcefeeding). Thus, we detect a yet-unset scale property
-													 and ensure that its first value is always 1. More info: http://stackoverflow.com/questions/10417890/css3-animations-with-transform-causes-blurred-elements-on-webkit/10417962#10417962 */
-													if (Velocity.State.isAndroid && Data(element).transformCache[transformName] === undefined && propertyValue < 1) {
-														propertyValue = 1;
-													}
-	
-													invalid = !/(\d)$/i.test(propertyValue);
-													break;
-												case "skew":
-													invalid = !/(deg|\d)$/i.test(propertyValue);
-													break;
-												case "rotate":
-													invalid = !/(deg|\d)$/i.test(propertyValue);
-													break;
-											}
-	
-											if (!invalid) {
-												/* As per the CSS spec, wrap the value in parentheses. */
-												Data(element).transformCache[transformName] = "(" + propertyValue + ")";
-											}
-	
-											/* Although the value is set on the transformCache object, return the newly-updated value for the calling code to process as normal. */
-											return Data(element).transformCache[transformName];
-									}
-								};
-							})();
-						}
-	
-						/*************
-						 Colors
-						 *************/
-	
-						/* Since Velocity only animates a single numeric value per property, color animation is achieved by hooking the individual RGBA components of CSS color properties.
-						 Accordingly, color values must be normalized (e.g. "#ff0000", "red", and "rgb(255, 0, 0)" ==> "255 0 0 1") so that their components can be injected/extracted by CSS.Hooks logic. */
-						for (var j = 0; j < CSS.Lists.colors.length; j++) {
-							/* Wrap the dynamically generated normalization function in a new scope so that colorName's value is paired with its respective function.
-							 (Otherwise, all functions would take the final for loop's colorName.) */
-							(function() {
-								var colorName = CSS.Lists.colors[j];
-	
-								/* Note: In IE<=8, which support rgb but not rgba, color properties are reverted to rgb by stripping off the alpha component. */
-								CSS.Normalizations.registered[colorName] = function(type, element, propertyValue) {
-									switch (type) {
-										case "name":
-											return colorName;
-											/* Convert all color values into the rgb format. (Old IE can return hex values and color names instead of rgb/rgba.) */
-										case "extract":
-											var extracted;
-	
-											/* If the color is already in its hookable form (e.g. "255 255 255 1") due to having been previously extracted, skip extraction. */
-											if (CSS.RegEx.wrappedValueAlreadyExtracted.test(propertyValue)) {
-												extracted = propertyValue;
-											} else {
-												var converted,
-														colorNames = {
-															black: "rgb(0, 0, 0)",
-															blue: "rgb(0, 0, 255)",
-															gray: "rgb(128, 128, 128)",
-															green: "rgb(0, 128, 0)",
-															red: "rgb(255, 0, 0)",
-															white: "rgb(255, 255, 255)"
-														};
-	
-												/* Convert color names to rgb. */
-												if (/^[A-z]+$/i.test(propertyValue)) {
-													if (colorNames[propertyValue] !== undefined) {
-														converted = colorNames[propertyValue];
-													} else {
-														/* If an unmatched color name is provided, default to black. */
-														converted = colorNames.black;
-													}
-													/* Convert hex values to rgb. */
-												} else if (CSS.RegEx.isHex.test(propertyValue)) {
-													converted = "rgb(" + CSS.Values.hexToRgb(propertyValue).join(" ") + ")";
-													/* If the provided color doesn't match any of the accepted color formats, default to black. */
-												} else if (!(/^rgba?\(/i.test(propertyValue))) {
-													converted = colorNames.black;
-												}
-	
-												/* Remove the surrounding "rgb/rgba()" string then replace commas with spaces and strip
-												 repeated spaces (in case the value included spaces to begin with). */
-												extracted = (converted || propertyValue).toString().match(CSS.RegEx.valueUnwrap)[1].replace(/,(\s+)?/g, " ");
-											}
-	
-											/* So long as this isn't <=IE8, add a fourth (alpha) component if it's missing and default it to 1 (visible). */
-											if ((!IE || IE > 8) && extracted.split(" ").length === 3) {
-												extracted += " 1";
-											}
-	
-											return extracted;
-										case "inject":
-											/* If we have a pattern then it might already have the right values */
-											if (/^rgb/.test(propertyValue)) {
-												return propertyValue;
-											}
-	
-											/* If this is IE<=8 and an alpha component exists, strip it off. */
-											if (IE <= 8) {
-												if (propertyValue.split(" ").length === 4) {
-													propertyValue = propertyValue.split(/\s+/).slice(0, 3).join(" ");
-												}
-												/* Otherwise, add a fourth (alpha) component if it's missing and default it to 1 (visible). */
-											} else if (propertyValue.split(" ").length === 3) {
-												propertyValue += " 1";
-											}
-	
-											/* Re-insert the browser-appropriate wrapper("rgb/rgba()"), insert commas, and strip off decimal units
-											 on all values but the fourth (R, G, and B only accept whole numbers). */
-											return (IE <= 8 ? "rgb" : "rgba") + "(" + propertyValue.replace(/\s+/g, ",").replace(/\.(\d)+(?=,)/g, "") + ")";
-									}
-								};
-							})();
-						}
-	
-						/**************
-						 Dimensions
-						 **************/
-						function augmentDimension(name, element, wantInner) {
-							var isBorderBox = CSS.getPropertyValue(element, "boxSizing").toString().toLowerCase() === "border-box";
-	
-							if (isBorderBox === (wantInner || false)) {
-								/* in box-sizing mode, the CSS width / height accessors already give the outerWidth / outerHeight. */
-								var i,
-										value,
-										augment = 0,
-										sides = name === "width" ? ["Left", "Right"] : ["Top", "Bottom"],
-										fields = ["padding" + sides[0], "padding" + sides[1], "border" + sides[0] + "Width", "border" + sides[1] + "Width"];
-	
-								for (i = 0; i < fields.length; i++) {
-									value = parseFloat(CSS.getPropertyValue(element, fields[i]));
-									if (!isNaN(value)) {
-										augment += value;
-									}
-								}
-								return wantInner ? -augment : augment;
-							}
-							return 0;
-						}
-						function getDimension(name, wantInner) {
-							return function(type, element, propertyValue) {
-								switch (type) {
-									case "name":
-										return name;
-									case "extract":
-										return parseFloat(propertyValue) + augmentDimension(name, element, wantInner);
-									case "inject":
-										return (parseFloat(propertyValue) - augmentDimension(name, element, wantInner)) + "px";
-								}
-							};
-						}
-						CSS.Normalizations.registered.innerWidth = getDimension("width", true);
-						CSS.Normalizations.registered.innerHeight = getDimension("height", true);
-						CSS.Normalizations.registered.outerWidth = getDimension("width");
-						CSS.Normalizations.registered.outerHeight = getDimension("height");
-					}
-				},
-				/************************
-				 CSS Property Names
-				 ************************/
-	
-				Names: {
-					/* Camelcase a property name into its JavaScript notation (e.g. "background-color" ==> "backgroundColor").
-					 Camelcasing is used to normalize property names between and across calls. */
-					camelCase: function(property) {
-						return property.replace(/-(\w)/g, function(match, subMatch) {
-							return subMatch.toUpperCase();
-						});
-					},
-					/* For SVG elements, some properties (namely, dimensional ones) are GET/SET via the element's HTML attributes (instead of via CSS styles). */
-					SVGAttribute: function(property) {
-						var SVGAttributes = "width|height|x|y|cx|cy|r|rx|ry|x1|x2|y1|y2";
-	
-						/* Certain browsers require an SVG transform to be applied as an attribute. (Otherwise, application via CSS is preferable due to 3D support.) */
-						if (IE || (Velocity.State.isAndroid && !Velocity.State.isChrome)) {
-							SVGAttributes += "|transform";
-						}
-	
-						return new RegExp("^(" + SVGAttributes + ")$", "i").test(property);
-					},
-					/* Determine whether a property should be set with a vendor prefix. */
-					/* If a prefixed version of the property exists, return it. Otherwise, return the original property name.
-					 If the property is not at all supported by the browser, return a false flag. */
-					prefixCheck: function(property) {
-						/* If this property has already been checked, return the cached value. */
-						if (Velocity.State.prefixMatches[property]) {
-							return [Velocity.State.prefixMatches[property], true];
-						} else {
-							var vendors = ["", "Webkit", "Moz", "ms", "O"];
-	
-							for (var i = 0, vendorsLength = vendors.length; i < vendorsLength; i++) {
-								var propertyPrefixed;
-	
-								if (i === 0) {
-									propertyPrefixed = property;
-								} else {
-									/* Capitalize the first letter of the property to conform to JavaScript vendor prefix notation (e.g. webkitFilter). */
-									propertyPrefixed = vendors[i] + property.replace(/^\w/, function(match) {
-										return match.toUpperCase();
-									});
-								}
-	
-								/* Check if the browser supports this property as prefixed. */
-								if (Type.isString(Velocity.State.prefixElement.style[propertyPrefixed])) {
-									/* Cache the match. */
-									Velocity.State.prefixMatches[property] = propertyPrefixed;
-	
-									return [propertyPrefixed, true];
-								}
-							}
-	
-							/* If the browser doesn't support this property in any form, include a false flag so that the caller can decide how to proceed. */
-							return [property, false];
-						}
-					}
-				},
-				/************************
-				 CSS Property Values
-				 ************************/
-	
-				Values: {
-					/* Hex to RGB conversion. Copyright Tim Down: http://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb */
-					hexToRgb: function(hex) {
-						var shortformRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i,
-								longformRegex = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i,
-								rgbParts;
-	
-						hex = hex.replace(shortformRegex, function(m, r, g, b) {
-							return r + r + g + g + b + b;
-						});
-	
-						rgbParts = longformRegex.exec(hex);
-	
-						return rgbParts ? [parseInt(rgbParts[1], 16), parseInt(rgbParts[2], 16), parseInt(rgbParts[3], 16)] : [0, 0, 0];
-					},
-					isCSSNullValue: function(value) {
-						/* The browser defaults CSS values that have not been set to either 0 or one of several possible null-value strings.
-						 Thus, we check for both falsiness and these special strings. */
-						/* Null-value checking is performed to default the special strings to 0 (for the sake of tweening) or their hook
-						 templates as defined as CSS.Hooks (for the sake of hook injection/extraction). */
-						/* Note: Chrome returns "rgba(0, 0, 0, 0)" for an undefined color whereas IE returns "transparent". */
-						return (!value || /^(none|auto|transparent|(rgba\(0, ?0, ?0, ?0\)))$/i.test(value));
-					},
-					/* Retrieve a property's default unit type. Used for assigning a unit type when one is not supplied by the user. */
-					getUnitType: function(property) {
-						if (/^(rotate|skew)/i.test(property)) {
-							return "deg";
-						} else if (/(^(scale|scaleX|scaleY|scaleZ|alpha|flexGrow|flexHeight|zIndex|fontWeight)$)|((opacity|red|green|blue|alpha)$)/i.test(property)) {
-							/* The above properties are unitless. */
-							return "";
-						} else {
-							/* Default to px for all other properties. */
-							return "px";
-						}
-					},
-					/* HTML elements default to an associated display type when they're not set to display:none. */
-					/* Note: This function is used for correctly setting the non-"none" display value in certain Velocity redirects, such as fadeIn/Out. */
-					getDisplayType: function(element) {
-						var tagName = element && element.tagName.toString().toLowerCase();
-	
-						if (/^(b|big|i|small|tt|abbr|acronym|cite|code|dfn|em|kbd|strong|samp|var|a|bdo|br|img|map|object|q|script|span|sub|sup|button|input|label|select|textarea)$/i.test(tagName)) {
-							return "inline";
-						} else if (/^(li)$/i.test(tagName)) {
-							return "list-item";
-						} else if (/^(tr)$/i.test(tagName)) {
-							return "table-row";
-						} else if (/^(table)$/i.test(tagName)) {
-							return "table";
-						} else if (/^(tbody)$/i.test(tagName)) {
-							return "table-row-group";
-							/* Default to "block" when no match is found. */
-						} else {
-							return "block";
-						}
-					},
-					/* The class add/remove functions are used to temporarily apply a "velocity-animating" class to elements while they're animating. */
-					addClass: function(element, className) {
-						if (element) {
-							if (element.classList) {
-								element.classList.add(className);
-							} else if (Type.isString(element.className)) {
-								// Element.className is around 15% faster then set/getAttribute
-								element.className += (element.className.length ? " " : "") + className;
-							} else {
-								// Work around for IE strict mode animating SVG - and anything else that doesn't behave correctly - the same way jQuery does it
-								var currentClass = element.getAttribute(IE <= 7 ? "className" : "class") || "";
-	
-								element.setAttribute("class", currentClass + (currentClass ? " " : "") + className);
-							}
-						}
-					},
-					removeClass: function(element, className) {
-						if (element) {
-							if (element.classList) {
-								element.classList.remove(className);
-							} else if (Type.isString(element.className)) {
-								// Element.className is around 15% faster then set/getAttribute
-								// TODO: Need some jsperf tests on performance - can we get rid of the regex and maybe use split / array manipulation?
-								element.className = element.className.toString().replace(new RegExp("(^|\\s)" + className.split(" ").join("|") + "(\\s|$)", "gi"), " ");
-							} else {
-								// Work around for IE strict mode animating SVG - and anything else that doesn't behave correctly - the same way jQuery does it
-								var currentClass = element.getAttribute(IE <= 7 ? "className" : "class") || "";
-	
-								element.setAttribute("class", currentClass.replace(new RegExp("(^|\s)" + className.split(" ").join("|") + "(\s|$)", "gi"), " "));
-							}
-						}
-					}
-				},
-				/****************************
-				 Style Getting & Setting
-				 ****************************/
-	
-				/* The singular getPropertyValue, which routes the logic for all normalizations, hooks, and standard CSS properties. */
-				getPropertyValue: function(element, property, rootPropertyValue, forceStyleLookup) {
-					/* Get an element's computed property value. */
-					/* Note: Retrieving the value of a CSS property cannot simply be performed by checking an element's
-					 style attribute (which only reflects user-defined values). Instead, the browser must be queried for a property's
-					 *computed* value. You can read more about getComputedStyle here: https://developer.mozilla.org/en/docs/Web/API/window.getComputedStyle */
-					function computePropertyValue(element, property) {
-						/* When box-sizing isn't set to border-box, height and width style values are incorrectly computed when an
-						 element's scrollbars are visible (which expands the element's dimensions). Thus, we defer to the more accurate
-						 offsetHeight/Width property, which includes the total dimensions for interior, border, padding, and scrollbar.
-						 We subtract border and padding to get the sum of interior + scrollbar. */
-						var computedValue = 0;
-	
-						/* IE<=8 doesn't support window.getComputedStyle, thus we defer to jQuery, which has an extensive array
-						 of hacks to accurately retrieve IE8 property values. Re-implementing that logic here is not worth bloating the
-						 codebase for a dying browser. The performance repercussions of using jQuery here are minimal since
-						 Velocity is optimized to rarely (and sometimes never) query the DOM. Further, the $.css() codepath isn't that slow. */
-						if (IE <= 8) {
-							computedValue = $.css(element, property); /* GET */
-							/* All other browsers support getComputedStyle. The returned live object reference is cached onto its
-							 associated element so that it does not need to be refetched upon every GET. */
-						} else {
-							/* Browsers do not return height and width values for elements that are set to display:"none". Thus, we temporarily
-							 toggle display to the element type's default value. */
-							var toggleDisplay = false;
-	
-							if (/^(width|height)$/.test(property) && CSS.getPropertyValue(element, "display") === 0) {
-								toggleDisplay = true;
-								CSS.setPropertyValue(element, "display", CSS.Values.getDisplayType(element));
-							}
-	
-							var revertDisplay = function() {
-								if (toggleDisplay) {
-									CSS.setPropertyValue(element, "display", "none");
-								}
-							};
-	
-							if (!forceStyleLookup) {
-								if (property === "height" && CSS.getPropertyValue(element, "boxSizing").toString().toLowerCase() !== "border-box") {
-									var contentBoxHeight = element.offsetHeight - (parseFloat(CSS.getPropertyValue(element, "borderTopWidth")) || 0) - (parseFloat(CSS.getPropertyValue(element, "borderBottomWidth")) || 0) - (parseFloat(CSS.getPropertyValue(element, "paddingTop")) || 0) - (parseFloat(CSS.getPropertyValue(element, "paddingBottom")) || 0);
-									revertDisplay();
-	
-									return contentBoxHeight;
-								} else if (property === "width" && CSS.getPropertyValue(element, "boxSizing").toString().toLowerCase() !== "border-box") {
-									var contentBoxWidth = element.offsetWidth - (parseFloat(CSS.getPropertyValue(element, "borderLeftWidth")) || 0) - (parseFloat(CSS.getPropertyValue(element, "borderRightWidth")) || 0) - (parseFloat(CSS.getPropertyValue(element, "paddingLeft")) || 0) - (parseFloat(CSS.getPropertyValue(element, "paddingRight")) || 0);
-									revertDisplay();
-	
-									return contentBoxWidth;
-								}
-							}
-	
-							var computedStyle;
-	
-							/* For elements that Velocity hasn't been called on directly (e.g. when Velocity queries the DOM on behalf
-							 of a parent of an element its animating), perform a direct getComputedStyle lookup since the object isn't cached. */
-							if (Data(element) === undefined) {
-								computedStyle = window.getComputedStyle(element, null); /* GET */
-								/* If the computedStyle object has yet to be cached, do so now. */
-							} else if (!Data(element).computedStyle) {
-								computedStyle = Data(element).computedStyle = window.getComputedStyle(element, null); /* GET */
-								/* If computedStyle is cached, use it. */
-							} else {
-								computedStyle = Data(element).computedStyle;
-							}
-	
-							/* IE and Firefox do not return a value for the generic borderColor -- they only return individual values for each border side's color.
-							 Also, in all browsers, when border colors aren't all the same, a compound value is returned that Velocity isn't setup to parse.
-							 So, as a polyfill for querying individual border side colors, we just return the top border's color and animate all borders from that value. */
-							if (property === "borderColor") {
-								property = "borderTopColor";
-							}
-	
-							/* IE9 has a bug in which the "filter" property must be accessed from computedStyle using the getPropertyValue method
-							 instead of a direct property lookup. The getPropertyValue method is slower than a direct lookup, which is why we avoid it by default. */
-							if (IE === 9 && property === "filter") {
-								computedValue = computedStyle.getPropertyValue(property); /* GET */
-							} else {
-								computedValue = computedStyle[property];
-							}
-	
-							/* Fall back to the property's style value (if defined) when computedValue returns nothing,
-							 which can happen when the element hasn't been painted. */
-							if (computedValue === "" || computedValue === null) {
-								computedValue = element.style[property];
-							}
-	
-							revertDisplay();
-						}
-	
-						/* For top, right, bottom, and left (TRBL) values that are set to "auto" on elements of "fixed" or "absolute" position,
-						 defer to jQuery for converting "auto" to a numeric value. (For elements with a "static" or "relative" position, "auto" has the same
-						 effect as being set to 0, so no conversion is necessary.) */
-						/* An example of why numeric conversion is necessary: When an element with "position:absolute" has an untouched "left"
-						 property, which reverts to "auto", left's value is 0 relative to its parent element, but is often non-zero relative
-						 to its *containing* (not parent) element, which is the nearest "position:relative" ancestor or the viewport (and always the viewport in the case of "position:fixed"). */
-						if (computedValue === "auto" && /^(top|right|bottom|left)$/i.test(property)) {
-							var position = computePropertyValue(element, "position"); /* GET */
-	
-							/* For absolute positioning, jQuery's $.position() only returns values for top and left;
-							 right and bottom will have their "auto" value reverted to 0. */
-							/* Note: A jQuery object must be created here since jQuery doesn't have a low-level alias for $.position().
-							 Not a big deal since we're currently in a GET batch anyway. */
-							if (position === "fixed" || (position === "absolute" && /top|left/i.test(property))) {
-								/* Note: jQuery strips the pixel unit from its returned values; we re-add it here to conform with computePropertyValue's behavior. */
-								computedValue = $(element).position()[property] + "px"; /* GET */
-							}
-						}
-	
-						return computedValue;
-					}
-	
-					var propertyValue;
-	
-					/* If this is a hooked property (e.g. "clipLeft" instead of the root property of "clip"),
-					 extract the hook's value from a normalized rootPropertyValue using CSS.Hooks.extractValue(). */
-					if (CSS.Hooks.registered[property]) {
-						var hook = property,
-								hookRoot = CSS.Hooks.getRoot(hook);
-	
-						/* If a cached rootPropertyValue wasn't passed in (which Velocity always attempts to do in order to avoid requerying the DOM),
-						 query the DOM for the root property's value. */
-						if (rootPropertyValue === undefined) {
-							/* Since the browser is now being directly queried, use the official post-prefixing property name for this lookup. */
-							rootPropertyValue = CSS.getPropertyValue(element, CSS.Names.prefixCheck(hookRoot)[0]); /* GET */
-						}
-	
-						/* If this root has a normalization registered, peform the associated normalization extraction. */
-						if (CSS.Normalizations.registered[hookRoot]) {
-							rootPropertyValue = CSS.Normalizations.registered[hookRoot]("extract", element, rootPropertyValue);
-						}
-	
-						/* Extract the hook's value. */
-						propertyValue = CSS.Hooks.extractValue(hook, rootPropertyValue);
-	
-						/* If this is a normalized property (e.g. "opacity" becomes "filter" in <=IE8) or "translateX" becomes "transform"),
-						 normalize the property's name and value, and handle the special case of transforms. */
-						/* Note: Normalizing a property is mutually exclusive from hooking a property since hook-extracted values are strictly
-						 numerical and therefore do not require normalization extraction. */
-					} else if (CSS.Normalizations.registered[property]) {
-						var normalizedPropertyName,
-								normalizedPropertyValue;
-	
-						normalizedPropertyName = CSS.Normalizations.registered[property]("name", element);
-	
-						/* Transform values are calculated via normalization extraction (see below), which checks against the element's transformCache.
-						 At no point do transform GETs ever actually query the DOM; initial stylesheet values are never processed.
-						 This is because parsing 3D transform matrices is not always accurate and would bloat our codebase;
-						 thus, normalization extraction defaults initial transform values to their zero-values (e.g. 1 for scaleX and 0 for translateX). */
-						if (normalizedPropertyName !== "transform") {
-							normalizedPropertyValue = computePropertyValue(element, CSS.Names.prefixCheck(normalizedPropertyName)[0]); /* GET */
-	
-							/* If the value is a CSS null-value and this property has a hook template, use that zero-value template so that hooks can be extracted from it. */
-							if (CSS.Values.isCSSNullValue(normalizedPropertyValue) && CSS.Hooks.templates[property]) {
-								normalizedPropertyValue = CSS.Hooks.templates[property][1];
-							}
-						}
-	
-						propertyValue = CSS.Normalizations.registered[property]("extract", element, normalizedPropertyValue);
-					}
-	
-					/* If a (numeric) value wasn't produced via hook extraction or normalization, query the DOM. */
-					if (!/^[\d-]/.test(propertyValue)) {
-						/* For SVG elements, dimensional properties (which SVGAttribute() detects) are tweened via
-						 their HTML attribute values instead of their CSS style values. */
-						var data = Data(element);
-	
-						if (data && data.isSVG && CSS.Names.SVGAttribute(property)) {
-							/* Since the height/width attribute values must be set manually, they don't reflect computed values.
-							 Thus, we use use getBBox() to ensure we always get values for elements with undefined height/width attributes. */
-							if (/^(height|width)$/i.test(property)) {
-								/* Firefox throws an error if .getBBox() is called on an SVG that isn't attached to the DOM. */
-								try {
-									propertyValue = element.getBBox()[property];
-								} catch (error) {
-									propertyValue = 0;
-								}
-								/* Otherwise, access the attribute value directly. */
-							} else {
-								propertyValue = element.getAttribute(property);
-							}
-						} else {
-							propertyValue = computePropertyValue(element, CSS.Names.prefixCheck(property)[0]); /* GET */
-						}
-					}
-	
-					/* Since property lookups are for animation purposes (which entails computing the numeric delta between start and end values),
-					 convert CSS null-values to an integer of value 0. */
-					if (CSS.Values.isCSSNullValue(propertyValue)) {
-						propertyValue = 0;
-					}
-	
-					if (Velocity.debug >= 2) {
-						console.log("Get " + property + ": " + propertyValue);
-					}
-	
-					return propertyValue;
-				},
-				/* The singular setPropertyValue, which routes the logic for all normalizations, hooks, and standard CSS properties. */
-				setPropertyValue: function(element, property, propertyValue, rootPropertyValue, scrollData) {
-					var propertyName = property;
-	
-					/* In order to be subjected to call options and element queueing, scroll animation is routed through Velocity as if it were a standard CSS property. */
-					if (property === "scroll") {
-						/* If a container option is present, scroll the container instead of the browser window. */
-						if (scrollData.container) {
-							scrollData.container["scroll" + scrollData.direction] = propertyValue;
-							/* Otherwise, Velocity defaults to scrolling the browser window. */
-						} else {
-							if (scrollData.direction === "Left") {
-								window.scrollTo(propertyValue, scrollData.alternateValue);
-							} else {
-								window.scrollTo(scrollData.alternateValue, propertyValue);
-							}
-						}
-					} else {
-						/* Transforms (translateX, rotateZ, etc.) are applied to a per-element transformCache object, which is manually flushed via flushTransformCache().
-						 Thus, for now, we merely cache transforms being SET. */
-						if (CSS.Normalizations.registered[property] && CSS.Normalizations.registered[property]("name", element) === "transform") {
-							/* Perform a normalization injection. */
-							/* Note: The normalization logic handles the transformCache updating. */
-							CSS.Normalizations.registered[property]("inject", element, propertyValue);
-	
-							propertyName = "transform";
-							propertyValue = Data(element).transformCache[property];
-						} else {
-							/* Inject hooks. */
-							if (CSS.Hooks.registered[property]) {
-								var hookName = property,
-										hookRoot = CSS.Hooks.getRoot(property);
-	
-								/* If a cached rootPropertyValue was not provided, query the DOM for the hookRoot's current value. */
-								rootPropertyValue = rootPropertyValue || CSS.getPropertyValue(element, hookRoot); /* GET */
-	
-								propertyValue = CSS.Hooks.injectValue(hookName, propertyValue, rootPropertyValue);
-								property = hookRoot;
-							}
-	
-							/* Normalize names and values. */
-							if (CSS.Normalizations.registered[property]) {
-								propertyValue = CSS.Normalizations.registered[property]("inject", element, propertyValue);
-								property = CSS.Normalizations.registered[property]("name", element);
-							}
-	
-							/* Assign the appropriate vendor prefix before performing an official style update. */
-							propertyName = CSS.Names.prefixCheck(property)[0];
-	
-							/* A try/catch is used for IE<=8, which throws an error when "invalid" CSS values are set, e.g. a negative width.
-							 Try/catch is avoided for other browsers since it incurs a performance overhead. */
-							if (IE <= 8) {
-								try {
-									element.style[propertyName] = propertyValue;
-								} catch (error) {
-									if (Velocity.debug) {
-										console.log("Browser does not support [" + propertyValue + "] for [" + propertyName + "]");
-									}
-								}
-								/* SVG elements have their dimensional properties (width, height, x, y, cx, etc.) applied directly as attributes instead of as styles. */
-								/* Note: IE8 does not support SVG elements, so it's okay that we skip it for SVG animation. */
-							} else {
-								var data = Data(element);
-	
-								if (data && data.isSVG && CSS.Names.SVGAttribute(property)) {
-									/* Note: For SVG attributes, vendor-prefixed property names are never used. */
-									/* Note: Not all CSS properties can be animated via attributes, but the browser won't throw an error for unsupported properties. */
-									element.setAttribute(property, propertyValue);
-								} else {
-									element.style[propertyName] = propertyValue;
-								}
-							}
-	
-							if (Velocity.debug >= 2) {
-								console.log("Set " + property + " (" + propertyName + "): " + propertyValue);
-							}
-						}
-					}
-	
-					/* Return the normalized property name and value in case the caller wants to know how these values were modified before being applied to the DOM. */
-					return [propertyName, propertyValue];
-				},
-				/* To increase performance by batching transform updates into a single SET, transforms are not directly applied to an element until flushTransformCache() is called. */
-				/* Note: Velocity applies transform properties in the same order that they are chronogically introduced to the element's CSS styles. */
-				flushTransformCache: function(element) {
-					var transformString = "",
-							data = Data(element);
-	
-					/* Certain browsers require that SVG transforms be applied as an attribute. However, the SVG transform attribute takes a modified version of CSS's transform string
-					 (units are dropped and, except for skewX/Y, subproperties are merged into their master property -- e.g. scaleX and scaleY are merged into scale(X Y). */
-					if ((IE || (Velocity.State.isAndroid && !Velocity.State.isChrome)) && data && data.isSVG) {
-						/* Since transform values are stored in their parentheses-wrapped form, we use a helper function to strip out their numeric values.
-						 Further, SVG transform properties only take unitless (representing pixels) values, so it's okay that parseFloat() strips the unit suffixed to the float value. */
-						var getTransformFloat = function(transformProperty) {
-							return parseFloat(CSS.getPropertyValue(element, transformProperty));
-						};
-	
-						/* Create an object to organize all the transforms that we'll apply to the SVG element. To keep the logic simple,
-						 we process *all* transform properties -- even those that may not be explicitly applied (since they default to their zero-values anyway). */
-						var SVGTransforms = {
-							translate: [getTransformFloat("translateX"), getTransformFloat("translateY")],
-							skewX: [getTransformFloat("skewX")], skewY: [getTransformFloat("skewY")],
-							/* If the scale property is set (non-1), use that value for the scaleX and scaleY values
-							 (this behavior mimics the result of animating all these properties at once on HTML elements). */
-							scale: getTransformFloat("scale") !== 1 ? [getTransformFloat("scale"), getTransformFloat("scale")] : [getTransformFloat("scaleX"), getTransformFloat("scaleY")],
-							/* Note: SVG's rotate transform takes three values: rotation degrees followed by the X and Y values
-							 defining the rotation's origin point. We ignore the origin values (default them to 0). */
-							rotate: [getTransformFloat("rotateZ"), 0, 0]
-						};
-	
-						/* Iterate through the transform properties in the user-defined property map order.
-						 (This mimics the behavior of non-SVG transform animation.) */
-						$.each(Data(element).transformCache, function(transformName) {
-							/* Except for with skewX/Y, revert the axis-specific transform subproperties to their axis-free master
-							 properties so that they match up with SVG's accepted transform properties. */
-							if (/^translate/i.test(transformName)) {
-								transformName = "translate";
-							} else if (/^scale/i.test(transformName)) {
-								transformName = "scale";
-							} else if (/^rotate/i.test(transformName)) {
-								transformName = "rotate";
-							}
-	
-							/* Check that we haven't yet deleted the property from the SVGTransforms container. */
-							if (SVGTransforms[transformName]) {
-								/* Append the transform property in the SVG-supported transform format. As per the spec, surround the space-delimited values in parentheses. */
-								transformString += transformName + "(" + SVGTransforms[transformName].join(" ") + ")" + " ";
-	
-								/* After processing an SVG transform property, delete it from the SVGTransforms container so we don't
-								 re-insert the same master property if we encounter another one of its axis-specific properties. */
-								delete SVGTransforms[transformName];
-							}
-						});
-					} else {
-						var transformValue,
-								perspective;
-	
-						/* Transform properties are stored as members of the transformCache object. Concatenate all the members into a string. */
-						$.each(Data(element).transformCache, function(transformName) {
-							transformValue = Data(element).transformCache[transformName];
-	
-							/* Transform's perspective subproperty must be set first in order to take effect. Store it temporarily. */
-							if (transformName === "transformPerspective") {
-								perspective = transformValue;
-								return true;
-							}
-	
-							/* IE9 only supports one rotation type, rotateZ, which it refers to as "rotate". */
-							if (IE === 9 && transformName === "rotateZ") {
-								transformName = "rotate";
-							}
-	
-							transformString += transformName + transformValue + " ";
-						});
-	
-						/* If present, set the perspective subproperty first. */
-						if (perspective) {
-							transformString = "perspective" + perspective + " " + transformString;
-						}
-					}
-	
-					CSS.setPropertyValue(element, "transform", transformString);
-				}
-			};
-	
-			/* Register hooks and normalizations. */
-			CSS.Hooks.register();
-			CSS.Normalizations.register();
-	
-			/* Allow hook setting in the same fashion as jQuery's $.css(). */
-			Velocity.hook = function(elements, arg2, arg3) {
-				var value;
-	
-				elements = sanitizeElements(elements);
-	
-				$.each(elements, function(i, element) {
-					/* Initialize Velocity's per-element data cache if this element hasn't previously been animated. */
-					if (Data(element) === undefined) {
-						Velocity.init(element);
-					}
-	
-					/* Get property value. If an element set was passed in, only return the value for the first element. */
-					if (arg3 === undefined) {
-						if (value === undefined) {
-							value = CSS.getPropertyValue(element, arg2);
-						}
-						/* Set property value. */
-					} else {
-						/* sPV returns an array of the normalized propertyName/propertyValue pair used to update the DOM. */
-						var adjustedSet = CSS.setPropertyValue(element, arg2, arg3);
-	
-						/* Transform properties don't automatically set. They have to be flushed to the DOM. */
-						if (adjustedSet[0] === "transform") {
-							Velocity.CSS.flushTransformCache(element);
-						}
-	
-						value = adjustedSet;
-					}
-				});
-	
-				return value;
-			};
-	
-			/*****************
-			 Animation
-			 *****************/
-	
-			var animate = function() {
-				var opts;
-	
-				/******************
-				 Call Chain
-				 ******************/
-	
-				/* Logic for determining what to return to the call stack when exiting out of Velocity. */
-				function getChain() {
-					/* If we are using the utility function, attempt to return this call's promise. If no promise library was detected,
-					 default to null instead of returning the targeted elements so that utility function's return value is standardized. */
-					if (isUtility) {
-						return promiseData.promise || null;
-						/* Otherwise, if we're using $.fn, return the jQuery-/Zepto-wrapped element set. */
-					} else {
-						return elementsWrapped;
-					}
-				}
-	
-				/*************************
-				 Arguments Assignment
-				 *************************/
-	
-				/* To allow for expressive CoffeeScript code, Velocity supports an alternative syntax in which "elements" (or "e"), "properties" (or "p"), and "options" (or "o")
-				 objects are defined on a container object that's passed in as Velocity's sole argument. */
-				/* Note: Some browsers automatically populate arguments with a "properties" object. We detect it by checking for its default "names" property. */
-				var syntacticSugar = (arguments[0] && (arguments[0].p || (($.isPlainObject(arguments[0].properties) && !arguments[0].properties.names) || Type.isString(arguments[0].properties)))),
-						/* Whether Velocity was called via the utility function (as opposed to on a jQuery/Zepto object). */
-						isUtility,
-						/* When Velocity is called via the utility function ($.Velocity()/Velocity()), elements are explicitly
-						 passed in as the first parameter. Thus, argument positioning varies. We normalize them here. */
-						elementsWrapped,
-						argumentIndex;
-	
-				var elements,
-						propertiesMap,
-						options;
-	
-				/* Detect jQuery/Zepto elements being animated via the $.fn method. */
-				if (Type.isWrapped(this)) {
-					isUtility = false;
-	
-					argumentIndex = 0;
-					elements = this;
-					elementsWrapped = this;
-					/* Otherwise, raw elements are being animated via the utility function. */
-				} else {
-					isUtility = true;
-	
-					argumentIndex = 1;
-					elements = syntacticSugar ? (arguments[0].elements || arguments[0].e) : arguments[0];
-				}
-	
-				/***************
-				 Promises
-				 ***************/
-	
-				var promiseData = {
-					promise: null,
-					resolver: null,
-					rejecter: null
-				};
-	
-				/* If this call was made via the utility function (which is the default method of invocation when jQuery/Zepto are not being used), and if
-				 promise support was detected, create a promise object for this call and store references to its resolver and rejecter methods. The resolve
-				 method is used when a call completes naturally or is prematurely stopped by the user. In both cases, completeCall() handles the associated
-				 call cleanup and promise resolving logic. The reject method is used when an invalid set of arguments is passed into a Velocity call. */
-				/* Note: Velocity employs a call-based queueing architecture, which means that stopping an animating element actually stops the full call that
-				 triggered it -- not that one element exclusively. Similarly, there is one promise per call, and all elements targeted by a Velocity call are
-				 grouped together for the purposes of resolving and rejecting a promise. */
-				if (isUtility && Velocity.Promise) {
-					promiseData.promise = new Velocity.Promise(function(resolve, reject) {
-						promiseData.resolver = resolve;
-						promiseData.rejecter = reject;
-					});
-				}
-	
-				if (syntacticSugar) {
-					propertiesMap = arguments[0].properties || arguments[0].p;
-					options = arguments[0].options || arguments[0].o;
-				} else {
-					propertiesMap = arguments[argumentIndex];
-					options = arguments[argumentIndex + 1];
-				}
-	
-				elements = sanitizeElements(elements);
-	
-				if (!elements) {
-					if (promiseData.promise) {
-						if (!propertiesMap || !options || options.promiseRejectEmpty !== false) {
-							promiseData.rejecter();
-						} else {
-							promiseData.resolver();
-						}
-					}
-					return;
-				}
-	
-				/* The length of the element set (in the form of a nodeList or an array of elements) is defaulted to 1 in case a
-				 single raw DOM element is passed in (which doesn't contain a length property). */
-				var elementsLength = elements.length,
-						elementsIndex = 0;
-	
-				/***************************
-				 Argument Overloading
-				 ***************************/
-	
-				/* Support is included for jQuery's argument overloading: $.animate(propertyMap [, duration] [, easing] [, complete]).
-				 Overloading is detected by checking for the absence of an object being passed into options. */
-				/* Note: The stop/finish/pause/resume actions do not accept animation options, and are therefore excluded from this check. */
-				if (!/^(stop|finish|finishAll|pause|resume)$/i.test(propertiesMap) && !$.isPlainObject(options)) {
-					/* The utility function shifts all arguments one position to the right, so we adjust for that offset. */
-					var startingArgumentPosition = argumentIndex + 1;
-	
-					options = {};
-	
-					/* Iterate through all options arguments */
-					for (var i = startingArgumentPosition; i < arguments.length; i++) {
-						/* Treat a number as a duration. Parse it out. */
-						/* Note: The following RegEx will return true if passed an array with a number as its first item.
-						 Thus, arrays are skipped from this check. */
-						if (!Type.isArray(arguments[i]) && (/^(fast|normal|slow)$/i.test(arguments[i]) || /^\d/.test(arguments[i]))) {
-							options.duration = arguments[i];
-							/* Treat strings and arrays as easings. */
-						} else if (Type.isString(arguments[i]) || Type.isArray(arguments[i])) {
-							options.easing = arguments[i];
-							/* Treat a function as a complete callback. */
-						} else if (Type.isFunction(arguments[i])) {
-							options.complete = arguments[i];
-						}
-					}
-				}
-	
-				/*********************
-				 Action Detection
-				 *********************/
-	
-				/* Velocity's behavior is categorized into "actions": Elements can either be specially scrolled into view,
-				 or they can be started, stopped, paused, resumed, or reversed . If a literal or referenced properties map is passed in as Velocity's
-				 first argument, the associated action is "start". Alternatively, "scroll", "reverse", "pause", "resume" or "stop" can be passed in 
-				 instead of a properties map. */
-				var action;
-	
-				switch (propertiesMap) {
-					case "scroll":
-						action = "scroll";
-						break;
-	
-					case "reverse":
-						action = "reverse";
-						break;
-	
-					case "pause":
-	
-						/*******************
-						 Action: Pause
-						 *******************/
-	
-						var currentTime = (new Date()).getTime();
-	
-						/* Handle delay timers */
-						$.each(elements, function(i, element) {
-							pauseDelayOnElement(element, currentTime);
-						});
-	
-						/* Pause and Resume are call-wide (not on a per element basis). Thus, calling pause or resume on a 
-						 single element will cause any calls that containt tweens for that element to be paused/resumed
-						 as well. */
-	
-						/* Iterate through all calls and pause any that contain any of our elements */
-						$.each(Velocity.State.calls, function(i, activeCall) {
-	
-							var found = false;
-							/* Inactive calls are set to false by the logic inside completeCall(). Skip them. */
-							if (activeCall) {
-								/* Iterate through the active call's targeted elements. */
-								$.each(activeCall[1], function(k, activeElement) {
-									var queueName = (options === undefined) ? "" : options;
-	
-									if (queueName !== true && (activeCall[2].queue !== queueName) && !(options === undefined && activeCall[2].queue === false)) {
-										return true;
-									}
-	
-									/* Iterate through the calls targeted by the stop command. */
-									$.each(elements, function(l, element) {
-										/* Check that this call was applied to the target element. */
-										if (element === activeElement) {
-	
-											/* Set call to paused */
-											activeCall[5] = {
-												resume: false
-											};
-	
-											/* Once we match an element, we can bounce out to the next call entirely */
-											found = true;
-											return false;
-										}
-									});
-	
-									/* Proceed to check next call if we have already matched */
-									if (found) {
-										return false;
-									}
-								});
-							}
-	
-						});
-	
-						/* Since pause creates no new tweens, exit out of Velocity. */
-						return getChain();
-	
-					case "resume":
-	
-						/*******************
-						 Action: Resume
-						 *******************/
-	
-						/* Handle delay timers */
-						$.each(elements, function(i, element) {
-							resumeDelayOnElement(element, currentTime);
-						});
-	
-						/* Pause and Resume are call-wide (not on a per elemnt basis). Thus, calling pause or resume on a 
-						 single element will cause any calls that containt tweens for that element to be paused/resumed
-						 as well. */
-	
-						/* Iterate through all calls and pause any that contain any of our elements */
-						$.each(Velocity.State.calls, function(i, activeCall) {
-							var found = false;
-							/* Inactive calls are set to false by the logic inside completeCall(). Skip them. */
-							if (activeCall) {
-								/* Iterate through the active call's targeted elements. */
-								$.each(activeCall[1], function(k, activeElement) {
-									var queueName = (options === undefined) ? "" : options;
-	
-									if (queueName !== true && (activeCall[2].queue !== queueName) && !(options === undefined && activeCall[2].queue === false)) {
-										return true;
-									}
-	
-									/* Skip any calls that have never been paused */
-									if (!activeCall[5]) {
-										return true;
-									}
-	
-									/* Iterate through the calls targeted by the stop command. */
-									$.each(elements, function(l, element) {
-										/* Check that this call was applied to the target element. */
-										if (element === activeElement) {
-	
-											/* Flag a pause object to be resumed, which will occur during the next tick. In
-											 addition, the pause object will at that time be deleted */
-											activeCall[5].resume = true;
-	
-											/* Once we match an element, we can bounce out to the next call entirely */
-											found = true;
-											return false;
-										}
-									});
-	
-									/* Proceed to check next call if we have already matched */
-									if (found) {
-										return false;
-									}
-								});
-							}
-	
-						});
-	
-						/* Since resume creates no new tweens, exit out of Velocity. */
-						return getChain();
-	
-					case "finish":
-					case "finishAll":
-					case "stop":
-						/*******************
-						 Action: Stop
-						 *******************/
-	
-						/* Clear the currently-active delay on each targeted element. */
-						$.each(elements, function(i, element) {
-							if (Data(element) && Data(element).delayTimer) {
-								/* Stop the timer from triggering its cached next() function. */
-								clearTimeout(Data(element).delayTimer.setTimeout);
-	
-								/* Manually call the next() function so that the subsequent queue items can progress. */
-								if (Data(element).delayTimer.next) {
-									Data(element).delayTimer.next();
-								}
-	
-								delete Data(element).delayTimer;
-							}
-	
-							/* If we want to finish everything in the queue, we have to iterate through it
-							 and call each function. This will make them active calls below, which will
-							 cause them to be applied via the duration setting. */
-							if (propertiesMap === "finishAll" && (options === true || Type.isString(options))) {
-								/* Iterate through the items in the element's queue. */
-								$.each($.queue(element, Type.isString(options) ? options : ""), function(_, item) {
-									/* The queue array can contain an "inprogress" string, which we skip. */
-									if (Type.isFunction(item)) {
-										item();
-									}
-								});
-	
-								/* Clearing the $.queue() array is achieved by resetting it to []. */
-								$.queue(element, Type.isString(options) ? options : "", []);
-							}
-						});
-	
-						var callsToStop = [];
-	
-						/* When the stop action is triggered, the elements' currently active call is immediately stopped. The active call might have
-						 been applied to multiple elements, in which case all of the call's elements will be stopped. When an element
-						 is stopped, the next item in its animation queue is immediately triggered. */
-						/* An additional argument may be passed in to clear an element's remaining queued calls. Either true (which defaults to the "fx" queue)
-						 or a custom queue string can be passed in. */
-						/* Note: The stop command runs prior to Velocity's Queueing phase since its behavior is intended to take effect *immediately*,
-						 regardless of the element's current queue state. */
-	
-						/* Iterate through every active call. */
-						$.each(Velocity.State.calls, function(i, activeCall) {
-							/* Inactive calls are set to false by the logic inside completeCall(). Skip them. */
-							if (activeCall) {
-								/* Iterate through the active call's targeted elements. */
-								$.each(activeCall[1], function(k, activeElement) {
-									/* If true was passed in as a secondary argument, clear absolutely all calls on this element. Otherwise, only
-									 clear calls associated with the relevant queue. */
-									/* Call stopping logic works as follows:
-									 - options === true --> stop current default queue calls (and queue:false calls), including remaining queued ones.
-									 - options === undefined --> stop current queue:"" call and all queue:false calls.
-									 - options === false --> stop only queue:false calls.
-									 - options === "custom" --> stop current queue:"custom" call, including remaining queued ones (there is no functionality to only clear the currently-running queue:"custom" call). */
-									var queueName = (options === undefined) ? "" : options;
-	
-									if (queueName !== true && (activeCall[2].queue !== queueName) && !(options === undefined && activeCall[2].queue === false)) {
-										return true;
-									}
-	
-									/* Iterate through the calls targeted by the stop command. */
-									$.each(elements, function(l, element) {
-										/* Check that this call was applied to the target element. */
-										if (element === activeElement) {
-											/* Optionally clear the remaining queued calls. If we're doing "finishAll" this won't find anything,
-											 due to the queue-clearing above. */
-											if (options === true || Type.isString(options)) {
-												/* Iterate through the items in the element's queue. */
-												$.each($.queue(element, Type.isString(options) ? options : ""), function(_, item) {
-													/* The queue array can contain an "inprogress" string, which we skip. */
-													if (Type.isFunction(item)) {
-														/* Pass the item's callback a flag indicating that we want to abort from the queue call.
-														 (Specifically, the queue will resolve the call's associated promise then abort.)  */
-														item(null, true);
-													}
-												});
-	
-												/* Clearing the $.queue() array is achieved by resetting it to []. */
-												$.queue(element, Type.isString(options) ? options : "", []);
-											}
-	
-											if (propertiesMap === "stop") {
-												/* Since "reverse" uses cached start values (the previous call's endValues), these values must be
-												 changed to reflect the final value that the elements were actually tweened to. */
-												/* Note: If only queue:false animations are currently running on an element, it won't have a tweensContainer
-												 object. Also, queue:false animations can't be reversed. */
-												var data = Data(element);
-												if (data && data.tweensContainer && queueName !== false) {
-													$.each(data.tweensContainer, function(m, activeTween) {
-														activeTween.endValue = activeTween.currentValue;
-													});
-												}
-	
-												callsToStop.push(i);
-											} else if (propertiesMap === "finish" || propertiesMap === "finishAll") {
-												/* To get active tweens to finish immediately, we forcefully shorten their durations to 1ms so that
-												 they finish upon the next rAf tick then proceed with normal call completion logic. */
-												activeCall[2].duration = 1;
-											}
-										}
-									});
-								});
-							}
-						});
-	
-						/* Prematurely call completeCall() on each matched active call. Pass an additional flag for "stop" to indicate
-						 that the complete callback and display:none setting should be skipped since we're completing prematurely. */
-						if (propertiesMap === "stop") {
-							$.each(callsToStop, function(i, j) {
-								completeCall(j, true);
-							});
-	
-							if (promiseData.promise) {
-								/* Immediately resolve the promise associated with this stop call since stop runs synchronously. */
-								promiseData.resolver(elements);
-							}
-						}
-	
-						/* Since we're stopping, and not proceeding with queueing, exit out of Velocity. */
-						return getChain();
-	
-					default:
-						/* Treat a non-empty plain object as a literal properties map. */
-						if ($.isPlainObject(propertiesMap) && !Type.isEmptyObject(propertiesMap)) {
-							action = "start";
-	
-							/****************
-							 Redirects
-							 ****************/
-	
-							/* Check if a string matches a registered redirect (see Redirects above). */
-						} else if (Type.isString(propertiesMap) && Velocity.Redirects[propertiesMap]) {
-							opts = $.extend({}, options);
-	
-							var durationOriginal = opts.duration,
-									delayOriginal = opts.delay || 0;
-	
-							/* If the backwards option was passed in, reverse the element set so that elements animate from the last to the first. */
-							if (opts.backwards === true) {
-								elements = $.extend(true, [], elements).reverse();
-							}
-	
-							/* Individually trigger the redirect for each element in the set to prevent users from having to handle iteration logic in their redirect. */
-							$.each(elements, function(elementIndex, element) {
-								/* If the stagger option was passed in, successively delay each element by the stagger value (in ms). Retain the original delay value. */
-								if (parseFloat(opts.stagger)) {
-									opts.delay = delayOriginal + (parseFloat(opts.stagger) * elementIndex);
-								} else if (Type.isFunction(opts.stagger)) {
-									opts.delay = delayOriginal + opts.stagger.call(element, elementIndex, elementsLength);
-								}
-	
-								/* If the drag option was passed in, successively increase/decrease (depending on the presense of opts.backwards)
-								 the duration of each element's animation, using floors to prevent producing very short durations. */
-								if (opts.drag) {
-									/* Default the duration of UI pack effects (callouts and transitions) to 1000ms instead of the usual default duration of 400ms. */
-									opts.duration = parseFloat(durationOriginal) || (/^(callout|transition)/.test(propertiesMap) ? 1000 : DURATION_DEFAULT);
-	
-									/* For each element, take the greater duration of: A) animation completion percentage relative to the original duration,
-									 B) 75% of the original duration, or C) a 200ms fallback (in case duration is already set to a low value).
-									 The end result is a baseline of 75% of the redirect's duration that increases/decreases as the end of the element set is approached. */
-									opts.duration = Math.max(opts.duration * (opts.backwards ? 1 - elementIndex / elementsLength : (elementIndex + 1) / elementsLength), opts.duration * 0.75, 200);
-								}
-	
-								/* Pass in the call's opts object so that the redirect can optionally extend it. It defaults to an empty object instead of null to
-								 reduce the opts checking logic required inside the redirect. */
-								Velocity.Redirects[propertiesMap].call(element, element, opts || {}, elementIndex, elementsLength, elements, promiseData.promise ? promiseData : undefined);
-							});
-	
-							/* Since the animation logic resides within the redirect's own code, abort the remainder of this call.
-							 (The performance overhead up to this point is virtually non-existant.) */
-							/* Note: The jQuery call chain is kept intact by returning the complete element set. */
-							return getChain();
-						} else {
-							var abortError = "Velocity: First argument (" + propertiesMap + ") was not a property map, a known action, or a registered redirect. Aborting.";
-	
-							if (promiseData.promise) {
-								promiseData.rejecter(new Error(abortError));
-							} else {
-								console.log(abortError);
-							}
-	
-							return getChain();
-						}
-				}
-	
-				/**************************
-				 Call-Wide Variables
-				 **************************/
-	
-				/* A container for CSS unit conversion ratios (e.g. %, rem, and em ==> px) that is used to cache ratios across all elements
-				 being animated in a single Velocity call. Calculating unit ratios necessitates DOM querying and updating, and is therefore
-				 avoided (via caching) wherever possible. This container is call-wide instead of page-wide to avoid the risk of using stale
-				 conversion metrics across Velocity animations that are not immediately consecutively chained. */
-				var callUnitConversionData = {
-					lastParent: null,
-					lastPosition: null,
-					lastFontSize: null,
-					lastPercentToPxWidth: null,
-					lastPercentToPxHeight: null,
-					lastEmToPx: null,
-					remToPx: null,
-					vwToPx: null,
-					vhToPx: null
-				};
-	
-				/* A container for all the ensuing tween data and metadata associated with this call. This container gets pushed to the page-wide
-				 Velocity.State.calls array that is processed during animation ticking. */
-				var call = [];
-	
-				/************************
-				 Element Processing
-				 ************************/
-	
-				/* Element processing consists of three parts -- data processing that cannot go stale and data processing that *can* go stale (i.e. third-party style modifications):
-				 1) Pre-Queueing: Element-wide variables, including the element's data storage, are instantiated. Call options are prepared. If triggered, the Stop action is executed.
-				 2) Queueing: The logic that runs once this call has reached its point of execution in the element's $.queue() stack. Most logic is placed here to avoid risking it becoming stale.
-				 3) Pushing: Consolidation of the tween data followed by its push onto the global in-progress calls container.
-				 `elementArrayIndex` allows passing index of the element in the original array to value functions.
-				 If `elementsIndex` were used instead the index would be determined by the elements' per-element queue.
-				 */
-				function processElement(element, elementArrayIndex) {
-	
-					/*************************
-					 Part I: Pre-Queueing
-					 *************************/
-	
-					/***************************
-					 Element-Wide Variables
-					 ***************************/
-	
-					var /* The runtime opts object is the extension of the current call's options and Velocity's page-wide option defaults. */
-							opts = $.extend({}, Velocity.defaults, options),
-							/* A container for the processed data associated with each property in the propertyMap.
-							 (Each property in the map produces its own "tween".) */
-							tweensContainer = {},
-							elementUnitConversionData;
-	
-					/******************
-					 Element Init
-					 ******************/
-	
-					if (Data(element) === undefined) {
-						Velocity.init(element);
-					}
-	
-					/******************
-					 Option: Delay
-					 ******************/
-	
-					/* Since queue:false doesn't respect the item's existing queue, we avoid injecting its delay here (it's set later on). */
-					/* Note: Velocity rolls its own delay function since jQuery doesn't have a utility alias for $.fn.delay()
-					 (and thus requires jQuery element creation, which we avoid since its overhead includes DOM querying). */
-					if (parseFloat(opts.delay) && opts.queue !== false) {
-						$.queue(element, opts.queue, function(next) {
-							/* This is a flag used to indicate to the upcoming completeCall() function that this queue entry was initiated by Velocity. See completeCall() for further details. */
-							Velocity.velocityQueueEntryFlag = true;
-	
-							/* The ensuing queue item (which is assigned to the "next" argument that $.queue() automatically passes in) will be triggered after a setTimeout delay.
-							 The setTimeout is stored so that it can be subjected to clearTimeout() if this animation is prematurely stopped via Velocity's "stop" command, and
-							 delayBegin/delayTime is used to ensure we can "pause" and "resume" a tween that is still mid-delay. */
-	
-							/* Temporarily store delayed elements to facilite access for global pause/resume */
-							var callIndex = Velocity.State.delayedElements.count++;
-							Velocity.State.delayedElements[callIndex] = element;
-	
-							var delayComplete = (function(index) {
-								return function() {
-									/* Clear the temporary element */
-									Velocity.State.delayedElements[index] = false;
-	
-									/* Finally, issue the call */
-									next();
-								};
-							})(callIndex);
-	
-	
-							Data(element).delayBegin = (new Date()).getTime();
-							Data(element).delay = parseFloat(opts.delay);
-							Data(element).delayTimer = {
-								setTimeout: setTimeout(next, parseFloat(opts.delay)),
-								next: delayComplete
-							};
-						});
-					}
-	
-					/*********************
-					 Option: Duration
-					 *********************/
-	
-					/* Support for jQuery's named durations. */
-					switch (opts.duration.toString().toLowerCase()) {
-						case "fast":
-							opts.duration = 200;
-							break;
-	
-						case "normal":
-							opts.duration = DURATION_DEFAULT;
-							break;
-	
-						case "slow":
-							opts.duration = 600;
-							break;
-	
-						default:
-							/* Remove the potential "ms" suffix and default to 1 if the user is attempting to set a duration of 0 (in order to produce an immediate style change). */
-							opts.duration = parseFloat(opts.duration) || 1;
-					}
-	
-					/************************
-					 Global Option: Mock
-					 ************************/
-	
-					if (Velocity.mock !== false) {
-						/* In mock mode, all animations are forced to 1ms so that they occur immediately upon the next rAF tick.
-						 Alternatively, a multiplier can be passed in to time remap all delays and durations. */
-						if (Velocity.mock === true) {
-							opts.duration = opts.delay = 1;
-						} else {
-							opts.duration *= parseFloat(Velocity.mock) || 1;
-							opts.delay *= parseFloat(Velocity.mock) || 1;
-						}
-					}
-	
-					/*******************
-					 Option: Easing
-					 *******************/
-	
-					opts.easing = getEasing(opts.easing, opts.duration);
-	
-					/**********************
-					 Option: Callbacks
-					 **********************/
-	
-					/* Callbacks must functions. Otherwise, default to null. */
-					if (opts.begin && !Type.isFunction(opts.begin)) {
-						opts.begin = null;
-					}
-	
-					if (opts.progress && !Type.isFunction(opts.progress)) {
-						opts.progress = null;
-					}
-	
-					if (opts.complete && !Type.isFunction(opts.complete)) {
-						opts.complete = null;
-					}
-	
-					/*********************************
-					 Option: Display & Visibility
-					 *********************************/
-	
-					/* Refer to Velocity's documentation (VelocityJS.org/#displayAndVisibility) for a description of the display and visibility options' behavior. */
-					/* Note: We strictly check for undefined instead of falsiness because display accepts an empty string value. */
-					if (opts.display !== undefined && opts.display !== null) {
-						opts.display = opts.display.toString().toLowerCase();
-	
-						/* Users can pass in a special "auto" value to instruct Velocity to set the element to its default display value. */
-						if (opts.display === "auto") {
-							opts.display = Velocity.CSS.Values.getDisplayType(element);
-						}
-					}
-	
-					if (opts.visibility !== undefined && opts.visibility !== null) {
-						opts.visibility = opts.visibility.toString().toLowerCase();
-					}
-	
-					/**********************
-					 Option: mobileHA
-					 **********************/
-	
-					/* When set to true, and if this is a mobile device, mobileHA automatically enables hardware acceleration (via a null transform hack)
-					 on animating elements. HA is removed from the element at the completion of its animation. */
-					/* Note: Android Gingerbread doesn't support HA. If a null transform hack (mobileHA) is in fact set, it will prevent other tranform subproperties from taking effect. */
-					/* Note: You can read more about the use of mobileHA in Velocity's documentation: VelocityJS.org/#mobileHA. */
-					opts.mobileHA = (opts.mobileHA && Velocity.State.isMobile && !Velocity.State.isGingerbread);
-	
-					/***********************
-					 Part II: Queueing
-					 ***********************/
-	
-					/* When a set of elements is targeted by a Velocity call, the set is broken up and each element has the current Velocity call individually queued onto it.
-					 In this way, each element's existing queue is respected; some elements may already be animating and accordingly should not have this current Velocity call triggered immediately. */
-					/* In each queue, tween data is processed for each animating property then pushed onto the call-wide calls array. When the last element in the set has had its tweens processed,
-					 the call array is pushed to Velocity.State.calls for live processing by the requestAnimationFrame tick. */
-					function buildQueue(next) {
-						var data, lastTweensContainer;
-	
-						/*******************
-						 Option: Begin
-						 *******************/
-	
-						/* The begin callback is fired once per call -- not once per elemenet -- and is passed the full raw DOM element set as both its context and its first argument. */
-						if (opts.begin && elementsIndex === 0) {
-							/* We throw callbacks in a setTimeout so that thrown errors don't halt the execution of Velocity itself. */
-							try {
-								opts.begin.call(elements, elements);
-							} catch (error) {
-								setTimeout(function() {
-									throw error;
-								}, 1);
-							}
-						}
-	
-						/*****************************************
-						 Tween Data Construction (for Scroll)
-						 *****************************************/
-	
-						/* Note: In order to be subjected to chaining and animation options, scroll's tweening is routed through Velocity as if it were a standard CSS property animation. */
-						if (action === "scroll") {
-							/* The scroll action uniquely takes an optional "offset" option -- specified in pixels -- that offsets the targeted scroll position. */
-							var scrollDirection = (/^x$/i.test(opts.axis) ? "Left" : "Top"),
-									scrollOffset = parseFloat(opts.offset) || 0,
-									scrollPositionCurrent,
-									scrollPositionCurrentAlternate,
-									scrollPositionEnd;
-	
-							/* Scroll also uniquely takes an optional "container" option, which indicates the parent element that should be scrolled --
-							 as opposed to the browser window itself. This is useful for scrolling toward an element that's inside an overflowing parent element. */
-							if (opts.container) {
-								/* Ensure that either a jQuery object or a raw DOM element was passed in. */
-								if (Type.isWrapped(opts.container) || Type.isNode(opts.container)) {
-									/* Extract the raw DOM element from the jQuery wrapper. */
-									opts.container = opts.container[0] || opts.container;
-									/* Note: Unlike other properties in Velocity, the browser's scroll position is never cached since it so frequently changes
-									 (due to the user's natural interaction with the page). */
-									scrollPositionCurrent = opts.container["scroll" + scrollDirection]; /* GET */
-	
-									/* $.position() values are relative to the container's currently viewable area (without taking into account the container's true dimensions
-									 -- say, for example, if the container was not overflowing). Thus, the scroll end value is the sum of the child element's position *and*
-									 the scroll container's current scroll position. */
-									scrollPositionEnd = (scrollPositionCurrent + $(element).position()[scrollDirection.toLowerCase()]) + scrollOffset; /* GET */
-									/* If a value other than a jQuery object or a raw DOM element was passed in, default to null so that this option is ignored. */
-								} else {
-									opts.container = null;
-								}
-							} else {
-								/* If the window itself is being scrolled -- not a containing element -- perform a live scroll position lookup using
-								 the appropriate cached property names (which differ based on browser type). */
-								scrollPositionCurrent = Velocity.State.scrollAnchor[Velocity.State["scrollProperty" + scrollDirection]]; /* GET */
-								/* When scrolling the browser window, cache the alternate axis's current value since window.scrollTo() doesn't let us change only one value at a time. */
-								scrollPositionCurrentAlternate = Velocity.State.scrollAnchor[Velocity.State["scrollProperty" + (scrollDirection === "Left" ? "Top" : "Left")]]; /* GET */
-	
-								/* Unlike $.position(), $.offset() values are relative to the browser window's true dimensions -- not merely its currently viewable area --
-								 and therefore end values do not need to be compounded onto current values. */
-								scrollPositionEnd = $(element).offset()[scrollDirection.toLowerCase()] + scrollOffset; /* GET */
-							}
-	
-							/* Since there's only one format that scroll's associated tweensContainer can take, we create it manually. */
-							tweensContainer = {
-								scroll: {
-									rootPropertyValue: false,
-									startValue: scrollPositionCurrent,
-									currentValue: scrollPositionCurrent,
-									endValue: scrollPositionEnd,
-									unitType: "",
-									easing: opts.easing,
-									scrollData: {
-										container: opts.container,
-										direction: scrollDirection,
-										alternateValue: scrollPositionCurrentAlternate
-									}
-								},
-								element: element
-							};
-	
-							if (Velocity.debug) {
-								console.log("tweensContainer (scroll): ", tweensContainer.scroll, element);
-							}
-	
-							/******************************************
-							 Tween Data Construction (for Reverse)
-							 ******************************************/
-	
-							/* Reverse acts like a "start" action in that a property map is animated toward. The only difference is
-							 that the property map used for reverse is the inverse of the map used in the previous call. Thus, we manipulate
-							 the previous call to construct our new map: use the previous map's end values as our new map's start values. Copy over all other data. */
-							/* Note: Reverse can be directly called via the "reverse" parameter, or it can be indirectly triggered via the loop option. (Loops are composed of multiple reverses.) */
-							/* Note: Reverse calls do not need to be consecutively chained onto a currently-animating element in order to operate on cached values;
-							 there is no harm to reverse being called on a potentially stale data cache since reverse's behavior is simply defined
-							 as reverting to the element's values as they were prior to the previous *Velocity* call. */
-						} else if (action === "reverse") {
-							data = Data(element);
-	
-							/* Abort if there is no prior animation data to reverse to. */
-							if (!data) {
-								return;
-							}
-	
-							if (!data.tweensContainer) {
-								/* Dequeue the element so that this queue entry releases itself immediately, allowing subsequent queue entries to run. */
-								$.dequeue(element, opts.queue);
-	
-								return;
-							} else {
-								/*********************
-								 Options Parsing
-								 *********************/
-	
-								/* If the element was hidden via the display option in the previous call,
-								 revert display to "auto" prior to reversal so that the element is visible again. */
-								if (data.opts.display === "none") {
-									data.opts.display = "auto";
-								}
-	
-								if (data.opts.visibility === "hidden") {
-									data.opts.visibility = "visible";
-								}
-	
-								/* If the loop option was set in the previous call, disable it so that "reverse" calls aren't recursively generated.
-								 Further, remove the previous call's callback options; typically, users do not want these to be refired. */
-								data.opts.loop = false;
-								data.opts.begin = null;
-								data.opts.complete = null;
-	
-								/* Since we're extending an opts object that has already been extended with the defaults options object,
-								 we remove non-explicitly-defined properties that are auto-assigned values. */
-								if (!options.easing) {
-									delete opts.easing;
-								}
-	
-								if (!options.duration) {
-									delete opts.duration;
-								}
-	
-								/* The opts object used for reversal is an extension of the options object optionally passed into this
-								 reverse call plus the options used in the previous Velocity call. */
-								opts = $.extend({}, data.opts, opts);
-	
-								/*************************************
-								 Tweens Container Reconstruction
-								 *************************************/
-	
-								/* Create a deepy copy (indicated via the true flag) of the previous call's tweensContainer. */
-								lastTweensContainer = $.extend(true, {}, data ? data.tweensContainer : null);
-	
-								/* Manipulate the previous tweensContainer by replacing its end values and currentValues with its start values. */
-								for (var lastTween in lastTweensContainer) {
-									/* In addition to tween data, tweensContainers contain an element property that we ignore here. */
-									if (lastTweensContainer.hasOwnProperty(lastTween) && lastTween !== "element") {
-										var lastStartValue = lastTweensContainer[lastTween].startValue;
-	
-										lastTweensContainer[lastTween].startValue = lastTweensContainer[lastTween].currentValue = lastTweensContainer[lastTween].endValue;
-										lastTweensContainer[lastTween].endValue = lastStartValue;
-	
-										/* Easing is the only option that embeds into the individual tween data (since it can be defined on a per-property basis).
-										 Accordingly, every property's easing value must be updated when an options object is passed in with a reverse call.
-										 The side effect of this extensibility is that all per-property easing values are forcefully reset to the new value. */
-										if (!Type.isEmptyObject(options)) {
-											lastTweensContainer[lastTween].easing = opts.easing;
-										}
-	
-										if (Velocity.debug) {
-											console.log("reverse tweensContainer (" + lastTween + "): " + JSON.stringify(lastTweensContainer[lastTween]), element);
-										}
-									}
-								}
-	
-								tweensContainer = lastTweensContainer;
-							}
-	
-							/*****************************************
-							 Tween Data Construction (for Start)
-							 *****************************************/
-	
-						} else if (action === "start") {
-	
-							/*************************
-							 Value Transferring
-							 *************************/
-	
-							/* If this queue entry follows a previous Velocity-initiated queue entry *and* if this entry was created
-							 while the element was in the process of being animated by Velocity, then this current call is safe to use
-							 the end values from the prior call as its start values. Velocity attempts to perform this value transfer
-							 process whenever possible in order to avoid requerying the DOM. */
-							/* If values aren't transferred from a prior call and start values were not forcefed by the user (more on this below),
-							 then the DOM is queried for the element's current values as a last resort. */
-							/* Note: Conversely, animation reversal (and looping) *always* perform inter-call value transfers; they never requery the DOM. */
-	
-							data = Data(element);
-	
-							/* The per-element isAnimating flag is used to indicate whether it's safe (i.e. the data isn't stale)
-							 to transfer over end values to use as start values. If it's set to true and there is a previous
-							 Velocity call to pull values from, do so. */
-							if (data && data.tweensContainer && data.isAnimating === true) {
-								lastTweensContainer = data.tweensContainer;
-							}
-	
-							/***************************
-							 Tween Data Calculation
-							 ***************************/
-	
-							/* This function parses property data and defaults endValue, easing, and startValue as appropriate. */
-							/* Property map values can either take the form of 1) a single value representing the end value,
-							 or 2) an array in the form of [ endValue, [, easing] [, startValue] ].
-							 The optional third parameter is a forcefed startValue to be used instead of querying the DOM for
-							 the element's current value. Read Velocity's docmentation to learn more about forcefeeding: VelocityJS.org/#forcefeeding */
-							var parsePropertyValue = function(valueData, skipResolvingEasing) {
-								var endValue, easing, startValue;
-	
-								/* If we have a function as the main argument then resolve it first, in case it returns an array that needs to be split */
-								if (Type.isFunction(valueData)) {
-									valueData = valueData.call(element, elementArrayIndex, elementsLength);
-								}
-	
-								/* Handle the array format, which can be structured as one of three potential overloads:
-								 A) [ endValue, easing, startValue ], B) [ endValue, easing ], or C) [ endValue, startValue ] */
-								if (Type.isArray(valueData)) {
-									/* endValue is always the first item in the array. Don't bother validating endValue's value now
-									 since the ensuing property cycling logic does that. */
-									endValue = valueData[0];
-	
-									/* Two-item array format: If the second item is a number, function, or hex string, treat it as a
-									 start value since easings can only be non-hex strings or arrays. */
-									if ((!Type.isArray(valueData[1]) && /^[\d-]/.test(valueData[1])) || Type.isFunction(valueData[1]) || CSS.RegEx.isHex.test(valueData[1])) {
-										startValue = valueData[1];
-										/* Two or three-item array: If the second item is a non-hex string easing name or an array, treat it as an easing. */
-									} else if ((Type.isString(valueData[1]) && !CSS.RegEx.isHex.test(valueData[1]) && Velocity.Easings[valueData[1]]) || Type.isArray(valueData[1])) {
-										easing = skipResolvingEasing ? valueData[1] : getEasing(valueData[1], opts.duration);
-	
-										/* Don't bother validating startValue's value now since the ensuing property cycling logic inherently does that. */
-										startValue = valueData[2];
-									} else {
-										startValue = valueData[1] || valueData[2];
-									}
-									/* Handle the single-value format. */
-								} else {
-									endValue = valueData;
-								}
-	
-								/* Default to the call's easing if a per-property easing type was not defined. */
-								if (!skipResolvingEasing) {
-									easing = easing || opts.easing;
-								}
-	
-								/* If functions were passed in as values, pass the function the current element as its context,
-								 plus the element's index and the element set's size as arguments. Then, assign the returned value. */
-								if (Type.isFunction(endValue)) {
-									endValue = endValue.call(element, elementArrayIndex, elementsLength);
-								}
-	
-								if (Type.isFunction(startValue)) {
-									startValue = startValue.call(element, elementArrayIndex, elementsLength);
-								}
-	
-								/* Allow startValue to be left as undefined to indicate to the ensuing code that its value was not forcefed. */
-								return [endValue || 0, easing, startValue];
-							};
-	
-							var fixPropertyValue = function(property, valueData) {
-								/* In case this property is a hook, there are circumstances where we will intend to work on the hook's root property and not the hooked subproperty. */
-								var rootProperty = CSS.Hooks.getRoot(property),
-										rootPropertyValue = false,
-										/* Parse out endValue, easing, and startValue from the property's data. */
-										endValue = valueData[0],
-										easing = valueData[1],
-										startValue = valueData[2],
-										pattern;
-	
-								/**************************
-								 Start Value Sourcing
-								 **************************/
-	
-								/* Other than for the dummy tween property, properties that are not supported by the browser (and do not have an associated normalization) will
-								 inherently produce no style changes when set, so they are skipped in order to decrease animation tick overhead.
-								 Property support is determined via prefixCheck(), which returns a false flag when no supported is detected. */
-								/* Note: Since SVG elements have some of their properties directly applied as HTML attributes,
-								 there is no way to check for their explicit browser support, and so we skip skip this check for them. */
-								if ((!data || !data.isSVG) && rootProperty !== "tween" && CSS.Names.prefixCheck(rootProperty)[1] === false && CSS.Normalizations.registered[rootProperty] === undefined) {
-									if (Velocity.debug) {
-										console.log("Skipping [" + rootProperty + "] due to a lack of browser support.");
-									}
-									return;
-								}
-	
-								/* If the display option is being set to a non-"none" (e.g. "block") and opacity (filter on IE<=8) is being
-								 animated to an endValue of non-zero, the user's intention is to fade in from invisible, thus we forcefeed opacity
-								 a startValue of 0 if its startValue hasn't already been sourced by value transferring or prior forcefeeding. */
-								if (((opts.display !== undefined && opts.display !== null && opts.display !== "none") || (opts.visibility !== undefined && opts.visibility !== "hidden")) && /opacity|filter/.test(property) && !startValue && endValue !== 0) {
-									startValue = 0;
-								}
-	
-								/* If values have been transferred from the previous Velocity call, extract the endValue and rootPropertyValue
-								 for all of the current call's properties that were *also* animated in the previous call. */
-								/* Note: Value transferring can optionally be disabled by the user via the _cacheValues option. */
-								if (opts._cacheValues && lastTweensContainer && lastTweensContainer[property]) {
-									if (startValue === undefined) {
-										startValue = lastTweensContainer[property].endValue + lastTweensContainer[property].unitType;
-									}
-	
-									/* The previous call's rootPropertyValue is extracted from the element's data cache since that's the
-									 instance of rootPropertyValue that gets freshly updated by the tweening process, whereas the rootPropertyValue
-									 attached to the incoming lastTweensContainer is equal to the root property's value prior to any tweening. */
-									rootPropertyValue = data.rootPropertyValueCache[rootProperty];
-									/* If values were not transferred from a previous Velocity call, query the DOM as needed. */
-								} else {
-									/* Handle hooked properties. */
-									if (CSS.Hooks.registered[property]) {
-										if (startValue === undefined) {
-											rootPropertyValue = CSS.getPropertyValue(element, rootProperty); /* GET */
-											/* Note: The following getPropertyValue() call does not actually trigger a DOM query;
-											 getPropertyValue() will extract the hook from rootPropertyValue. */
-											startValue = CSS.getPropertyValue(element, property, rootPropertyValue);
-											/* If startValue is already defined via forcefeeding, do not query the DOM for the root property's value;
-											 just grab rootProperty's zero-value template from CSS.Hooks. This overwrites the element's actual
-											 root property value (if one is set), but this is acceptable since the primary reason users forcefeed is
-											 to avoid DOM queries, and thus we likewise avoid querying the DOM for the root property's value. */
-										} else {
-											/* Grab this hook's zero-value template, e.g. "0px 0px 0px black". */
-											rootPropertyValue = CSS.Hooks.templates[rootProperty][1];
-										}
-										/* Handle non-hooked properties that haven't already been defined via forcefeeding. */
-									} else if (startValue === undefined) {
-										startValue = CSS.getPropertyValue(element, property); /* GET */
-									}
-								}
-	
-								/**************************
-								 Value Data Extraction
-								 **************************/
-	
-								var separatedValue,
-										endValueUnitType,
-										startValueUnitType,
-										operator = false;
-	
-								/* Separates a property value into its numeric value and its unit type. */
-								var separateValue = function(property, value) {
-									var unitType,
-											numericValue;
-	
-									numericValue = (value || "0")
-											.toString()
-											.toLowerCase()
-											/* Match the unit type at the end of the value. */
-											.replace(/[%A-z]+$/, function(match) {
-												/* Grab the unit type. */
-												unitType = match;
-	
-												/* Strip the unit type off of value. */
-												return "";
-											});
-	
-									/* If no unit type was supplied, assign one that is appropriate for this property (e.g. "deg" for rotateZ or "px" for width). */
-									if (!unitType) {
-										unitType = CSS.Values.getUnitType(property);
-									}
-	
-									return [numericValue, unitType];
-								};
-	
-								if (startValue !== endValue && Type.isString(startValue) && Type.isString(endValue)) {
-									pattern = "";
-									var iStart = 0, // index in startValue
-											iEnd = 0, // index in endValue
-											aStart = [], // array of startValue numbers
-											aEnd = [], // array of endValue numbers
-											inCalc = 0, // Keep track of being inside a "calc()" so we don't duplicate it
-											inRGB = 0, // Keep track of being inside an RGB as we can't use fractional values
-											inRGBA = 0; // Keep track of being inside an RGBA as we must pass fractional for the alpha channel
-	
-									startValue = CSS.Hooks.fixColors(startValue);
-									endValue = CSS.Hooks.fixColors(endValue);
-									while (iStart < startValue.length && iEnd < endValue.length) {
-										var cStart = startValue[iStart],
-												cEnd = endValue[iEnd];
-	
-										if (/[\d\.]/.test(cStart) && /[\d\.]/.test(cEnd)) {
-											var tStart = cStart, // temporary character buffer
-													tEnd = cEnd, // temporary character buffer
-													dotStart = ".", // Make sure we can only ever match a single dot in a decimal
-													dotEnd = "."; // Make sure we can only ever match a single dot in a decimal
-	
-											while (++iStart < startValue.length) {
-												cStart = startValue[iStart];
-												if (cStart === dotStart) {
-													dotStart = ".."; // Can never match two characters
-												} else if (!/\d/.test(cStart)) {
-													break;
-												}
-												tStart += cStart;
-											}
-											while (++iEnd < endValue.length) {
-												cEnd = endValue[iEnd];
-												if (cEnd === dotEnd) {
-													dotEnd = ".."; // Can never match two characters
-												} else if (!/\d/.test(cEnd)) {
-													break;
-												}
-												tEnd += cEnd;
-											}
-											var uStart = CSS.Hooks.getUnit(startValue, iStart), // temporary unit type
-													uEnd = CSS.Hooks.getUnit(endValue, iEnd); // temporary unit type
-	
-											iStart += uStart.length;
-											iEnd += uEnd.length;
-											if (uStart === uEnd) {
-												// Same units
-												if (tStart === tEnd) {
-													// Same numbers, so just copy over
-													pattern += tStart + uStart;
-												} else {
-													// Different numbers, so store them
-													pattern += "{" + aStart.length + (inRGB ? "!" : "") + "}" + uStart;
-													aStart.push(parseFloat(tStart));
-													aEnd.push(parseFloat(tEnd));
-												}
-											} else {
-												// Different units, so put into a "calc(from + to)" and animate each side to/from zero
-												var nStart = parseFloat(tStart),
-														nEnd = parseFloat(tEnd);
-	
-												pattern += (inCalc < 5 ? "calc" : "") + "("
-														+ (nStart ? "{" + aStart.length + (inRGB ? "!" : "") + "}" : "0") + uStart
-														+ " + "
-														+ (nEnd ? "{" + (aStart.length + 1) + (inRGB ? "!" : "") + "}" : "0") + uEnd
-														+ ")";
-												if (nStart) {
-													aStart.push(parseFloat(tStart));
-													aStart.push(parseFloat(0));
-												}
-												if (nEnd) {
-													aEnd.push(parseFloat(0));
-													aEnd.push(parseFloat(tEnd));
-												}
-											}
-										} else if (cStart === cEnd) {
-											pattern += cStart;
-											iStart++;
-											iEnd++;
-											// Keep track of being inside a calc()
-											if (inCalc === 0 && cStart === "c"
-													|| inCalc === 1 && cStart === "a"
-													|| inCalc === 2 && cStart === "l"
-													|| inCalc === 3 && cStart === "c"
-													|| inCalc >= 4 && cStart === "("
-													) {
-												inCalc++;
-											} else if ((inCalc && inCalc < 5)
-													|| inCalc >= 4 && cStart === ")" && --inCalc < 5) {
-												inCalc = 0;
-											}
-											// Keep track of being inside an rgb() / rgba()
-											if (inRGB === 0 && cStart === "r"
-													|| inRGB === 1 && cStart === "g"
-													|| inRGB === 2 && cStart === "b"
-													|| inRGB === 3 && cStart === "a"
-													|| inRGB >= 3 && cStart === "("
-													) {
-												if (inRGB === 3 && cStart === "a") {
-													inRGBA = 1;
-												}
-												inRGB++;
-											} else if (inRGBA && cStart === ",") {
-												if (++inRGBA > 3) {
-													inRGB = inRGBA = 0;
-												}
-											} else if ((inRGBA && inRGB < (inRGBA ? 5 : 4))
-													|| inRGB >= (inRGBA ? 4 : 3) && cStart === ")" && --inRGB < (inRGBA ? 5 : 4)) {
-												inRGB = inRGBA = 0;
-											}
-										} else {
-											inCalc = 0;
-											// TODO: changing units, fixing colours
-											break;
-										}
-									}
-									if (iStart !== startValue.length || iEnd !== endValue.length) {
-										if (Velocity.debug) {
-											console.error("Trying to pattern match mis-matched strings [\"" + endValue + "\", \"" + startValue + "\"]");
-										}
-										pattern = undefined;
-									}
-									if (pattern) {
-										if (aStart.length) {
-											if (Velocity.debug) {
-												console.log("Pattern found \"" + pattern + "\" -> ", aStart, aEnd, "[" + startValue + "," + endValue + "]");
-											}
-											startValue = aStart;
-											endValue = aEnd;
-											endValueUnitType = startValueUnitType = "";
-										} else {
-											pattern = undefined;
-										}
-									}
-								}
-	
-								if (!pattern) {
-									/* Separate startValue. */
-									separatedValue = separateValue(property, startValue);
-									startValue = separatedValue[0];
-									startValueUnitType = separatedValue[1];
-	
-									/* Separate endValue, and extract a value operator (e.g. "+=", "-=") if one exists. */
-									separatedValue = separateValue(property, endValue);
-									endValue = separatedValue[0].replace(/^([+-\/*])=/, function(match, subMatch) {
-										operator = subMatch;
-	
-										/* Strip the operator off of the value. */
-										return "";
-									});
-									endValueUnitType = separatedValue[1];
-	
-									/* Parse float values from endValue and startValue. Default to 0 if NaN is returned. */
-									startValue = parseFloat(startValue) || 0;
-									endValue = parseFloat(endValue) || 0;
-	
-									/***************************************
-									 Property-Specific Value Conversion
-									 ***************************************/
-	
-									/* Custom support for properties that don't actually accept the % unit type, but where pollyfilling is trivial and relatively foolproof. */
-									if (endValueUnitType === "%") {
-										/* A %-value fontSize/lineHeight is relative to the parent's fontSize (as opposed to the parent's dimensions),
-										 which is identical to the em unit's behavior, so we piggyback off of that. */
-										if (/^(fontSize|lineHeight)$/.test(property)) {
-											/* Convert % into an em decimal value. */
-											endValue = endValue / 100;
-											endValueUnitType = "em";
-											/* For scaleX and scaleY, convert the value into its decimal format and strip off the unit type. */
-										} else if (/^scale/.test(property)) {
-											endValue = endValue / 100;
-											endValueUnitType = "";
-											/* For RGB components, take the defined percentage of 255 and strip off the unit type. */
-										} else if (/(Red|Green|Blue)$/i.test(property)) {
-											endValue = (endValue / 100) * 255;
-											endValueUnitType = "";
-										}
-									}
-								}
-	
-								/***************************
-								 Unit Ratio Calculation
-								 ***************************/
-	
-								/* When queried, the browser returns (most) CSS property values in pixels. Therefore, if an endValue with a unit type of
-								 %, em, or rem is animated toward, startValue must be converted from pixels into the same unit type as endValue in order
-								 for value manipulation logic (increment/decrement) to proceed. Further, if the startValue was forcefed or transferred
-								 from a previous call, startValue may also not be in pixels. Unit conversion logic therefore consists of two steps:
-								 1) Calculating the ratio of %/em/rem/vh/vw relative to pixels
-								 2) Converting startValue into the same unit of measurement as endValue based on these ratios. */
-								/* Unit conversion ratios are calculated by inserting a sibling node next to the target node, copying over its position property,
-								 setting values with the target unit type then comparing the returned pixel value. */
-								/* Note: Even if only one of these unit types is being animated, all unit ratios are calculated at once since the overhead
-								 of batching the SETs and GETs together upfront outweights the potential overhead
-								 of layout thrashing caused by re-querying for uncalculated ratios for subsequently-processed properties. */
-								/* Todo: Shift this logic into the calls' first tick instance so that it's synced with RAF. */
-								var calculateUnitRatios = function() {
-	
-									/************************
-									 Same Ratio Checks
-									 ************************/
-	
-									/* The properties below are used to determine whether the element differs sufficiently from this call's
-									 previously iterated element to also differ in its unit conversion ratios. If the properties match up with those
-									 of the prior element, the prior element's conversion ratios are used. Like most optimizations in Velocity,
-									 this is done to minimize DOM querying. */
-									var sameRatioIndicators = {
-										myParent: element.parentNode || document.body, /* GET */
-										position: CSS.getPropertyValue(element, "position"), /* GET */
-										fontSize: CSS.getPropertyValue(element, "fontSize") /* GET */
-									},
-											/* Determine if the same % ratio can be used. % is based on the element's position value and its parent's width and height dimensions. */
-											samePercentRatio = ((sameRatioIndicators.position === callUnitConversionData.lastPosition) && (sameRatioIndicators.myParent === callUnitConversionData.lastParent)),
-											/* Determine if the same em ratio can be used. em is relative to the element's fontSize. */
-											sameEmRatio = (sameRatioIndicators.fontSize === callUnitConversionData.lastFontSize);
-	
-									/* Store these ratio indicators call-wide for the next element to compare against. */
-									callUnitConversionData.lastParent = sameRatioIndicators.myParent;
-									callUnitConversionData.lastPosition = sameRatioIndicators.position;
-									callUnitConversionData.lastFontSize = sameRatioIndicators.fontSize;
-	
-									/***************************
-									 Element-Specific Units
-									 ***************************/
-	
-									/* Note: IE8 rounds to the nearest pixel when returning CSS values, thus we perform conversions using a measurement
-									 of 100 (instead of 1) to give our ratios a precision of at least 2 decimal values. */
-									var measurement = 100,
-											unitRatios = {};
-	
-									if (!sameEmRatio || !samePercentRatio) {
-										var dummy = data && data.isSVG ? document.createElementNS("http://www.w3.org/2000/svg", "rect") : document.createElement("div");
-	
-										Velocity.init(dummy);
-										sameRatioIndicators.myParent.appendChild(dummy);
-	
-										/* To accurately and consistently calculate conversion ratios, the element's cascaded overflow and box-sizing are stripped.
-										 Similarly, since width/height can be artificially constrained by their min-/max- equivalents, these are controlled for as well. */
-										/* Note: Overflow must be also be controlled for per-axis since the overflow property overwrites its per-axis values. */
-										$.each(["overflow", "overflowX", "overflowY"], function(i, property) {
-											Velocity.CSS.setPropertyValue(dummy, property, "hidden");
-										});
-										Velocity.CSS.setPropertyValue(dummy, "position", sameRatioIndicators.position);
-										Velocity.CSS.setPropertyValue(dummy, "fontSize", sameRatioIndicators.fontSize);
-										Velocity.CSS.setPropertyValue(dummy, "boxSizing", "content-box");
-	
-										/* width and height act as our proxy properties for measuring the horizontal and vertical % ratios. */
-										$.each(["minWidth", "maxWidth", "width", "minHeight", "maxHeight", "height"], function(i, property) {
-											Velocity.CSS.setPropertyValue(dummy, property, measurement + "%");
-										});
-										/* paddingLeft arbitrarily acts as our proxy property for the em ratio. */
-										Velocity.CSS.setPropertyValue(dummy, "paddingLeft", measurement + "em");
-	
-										/* Divide the returned value by the measurement to get the ratio between 1% and 1px. Default to 1 since working with 0 can produce Infinite. */
-										unitRatios.percentToPxWidth = callUnitConversionData.lastPercentToPxWidth = (parseFloat(CSS.getPropertyValue(dummy, "width", null, true)) || 1) / measurement; /* GET */
-										unitRatios.percentToPxHeight = callUnitConversionData.lastPercentToPxHeight = (parseFloat(CSS.getPropertyValue(dummy, "height", null, true)) || 1) / measurement; /* GET */
-										unitRatios.emToPx = callUnitConversionData.lastEmToPx = (parseFloat(CSS.getPropertyValue(dummy, "paddingLeft")) || 1) / measurement; /* GET */
-	
-										sameRatioIndicators.myParent.removeChild(dummy);
-									} else {
-										unitRatios.emToPx = callUnitConversionData.lastEmToPx;
-										unitRatios.percentToPxWidth = callUnitConversionData.lastPercentToPxWidth;
-										unitRatios.percentToPxHeight = callUnitConversionData.lastPercentToPxHeight;
-									}
-	
-									/***************************
-									 Element-Agnostic Units
-									 ***************************/
-	
-									/* Whereas % and em ratios are determined on a per-element basis, the rem unit only needs to be checked
-									 once per call since it's exclusively dependant upon document.body's fontSize. If this is the first time
-									 that calculateUnitRatios() is being run during this call, remToPx will still be set to its default value of null,
-									 so we calculate it now. */
-									if (callUnitConversionData.remToPx === null) {
-										/* Default to browsers' default fontSize of 16px in the case of 0. */
-										callUnitConversionData.remToPx = parseFloat(CSS.getPropertyValue(document.body, "fontSize")) || 16; /* GET */
-									}
-	
-									/* Similarly, viewport units are %-relative to the window's inner dimensions. */
-									if (callUnitConversionData.vwToPx === null) {
-										callUnitConversionData.vwToPx = parseFloat(window.innerWidth) / 100; /* GET */
-										callUnitConversionData.vhToPx = parseFloat(window.innerHeight) / 100; /* GET */
-									}
-	
-									unitRatios.remToPx = callUnitConversionData.remToPx;
-									unitRatios.vwToPx = callUnitConversionData.vwToPx;
-									unitRatios.vhToPx = callUnitConversionData.vhToPx;
-	
-									if (Velocity.debug >= 1) {
-										console.log("Unit ratios: " + JSON.stringify(unitRatios), element);
-									}
-									return unitRatios;
-								};
-	
-								/********************
-								 Unit Conversion
-								 ********************/
-	
-								/* The * and / operators, which are not passed in with an associated unit, inherently use startValue's unit. Skip value and unit conversion. */
-								if (/[\/*]/.test(operator)) {
-									endValueUnitType = startValueUnitType;
-									/* If startValue and endValue differ in unit type, convert startValue into the same unit type as endValue so that if endValueUnitType
-									 is a relative unit (%, em, rem), the values set during tweening will continue to be accurately relative even if the metrics they depend
-									 on are dynamically changing during the course of the animation. Conversely, if we always normalized into px and used px for setting values, the px ratio
-									 would become stale if the original unit being animated toward was relative and the underlying metrics change during the animation. */
-									/* Since 0 is 0 in any unit type, no conversion is necessary when startValue is 0 -- we just start at 0 with endValueUnitType. */
-								} else if ((startValueUnitType !== endValueUnitType) && startValue !== 0) {
-									/* Unit conversion is also skipped when endValue is 0, but *startValueUnitType* must be used for tween values to remain accurate. */
-									/* Note: Skipping unit conversion here means that if endValueUnitType was originally a relative unit, the animation won't relatively
-									 match the underlying metrics if they change, but this is acceptable since we're animating toward invisibility instead of toward visibility,
-									 which remains past the point of the animation's completion. */
-									if (endValue === 0) {
-										endValueUnitType = startValueUnitType;
-									} else {
-										/* By this point, we cannot avoid unit conversion (it's undesirable since it causes layout thrashing).
-										 If we haven't already, we trigger calculateUnitRatios(), which runs once per element per call. */
-										elementUnitConversionData = elementUnitConversionData || calculateUnitRatios();
-	
-										/* The following RegEx matches CSS properties that have their % values measured relative to the x-axis. */
-										/* Note: W3C spec mandates that all of margin and padding's properties (even top and bottom) are %-relative to the *width* of the parent element. */
-										var axis = (/margin|padding|left|right|width|text|word|letter/i.test(property) || /X$/.test(property) || property === "x") ? "x" : "y";
-	
-										/* In order to avoid generating n^2 bespoke conversion functions, unit conversion is a two-step process:
-										 1) Convert startValue into pixels. 2) Convert this new pixel value into endValue's unit type. */
-										switch (startValueUnitType) {
-											case "%":
-												/* Note: translateX and translateY are the only properties that are %-relative to an element's own dimensions -- not its parent's dimensions.
-												 Velocity does not include a special conversion process to account for this behavior. Therefore, animating translateX/Y from a % value
-												 to a non-% value will produce an incorrect start value. Fortunately, this sort of cross-unit conversion is rarely done by users in practice. */
-												startValue *= (axis === "x" ? elementUnitConversionData.percentToPxWidth : elementUnitConversionData.percentToPxHeight);
-												break;
-	
-											case "px":
-												/* px acts as our midpoint in the unit conversion process; do nothing. */
-												break;
-	
-											default:
-												startValue *= elementUnitConversionData[startValueUnitType + "ToPx"];
-										}
-	
-										/* Invert the px ratios to convert into to the target unit. */
-										switch (endValueUnitType) {
-											case "%":
-												startValue *= 1 / (axis === "x" ? elementUnitConversionData.percentToPxWidth : elementUnitConversionData.percentToPxHeight);
-												break;
-	
-											case "px":
-												/* startValue is already in px, do nothing; we're done. */
-												break;
-	
-											default:
-												startValue *= 1 / elementUnitConversionData[endValueUnitType + "ToPx"];
-										}
-									}
-								}
-	
-								/*********************
-								 Relative Values
-								 *********************/
-	
-								/* Operator logic must be performed last since it requires unit-normalized start and end values. */
-								/* Note: Relative *percent values* do not behave how most people think; while one would expect "+=50%"
-								 to increase the property 1.5x its current value, it in fact increases the percent units in absolute terms:
-								 50 points is added on top of the current % value. */
-								switch (operator) {
-									case "+":
-										endValue = startValue + endValue;
-										break;
-	
-									case "-":
-										endValue = startValue - endValue;
-										break;
-	
-									case "*":
-										endValue = startValue * endValue;
-										break;
-	
-									case "/":
-										endValue = startValue / endValue;
-										break;
-								}
-	
-								/**************************
-								 tweensContainer Push
-								 **************************/
-	
-								/* Construct the per-property tween object, and push it to the element's tweensContainer. */
-								tweensContainer[property] = {
-									rootPropertyValue: rootPropertyValue,
-									startValue: startValue,
-									currentValue: startValue,
-									endValue: endValue,
-									unitType: endValueUnitType,
-									easing: easing
-								};
-								if (pattern) {
-									tweensContainer[property].pattern = pattern;
-								}
-	
-								if (Velocity.debug) {
-									console.log("tweensContainer (" + property + "): " + JSON.stringify(tweensContainer[property]), element);
-								}
-							};
-	
-							/* Create a tween out of each property, and append its associated data to tweensContainer. */
-							for (var property in propertiesMap) {
-	
-								if (!propertiesMap.hasOwnProperty(property)) {
-									continue;
-								}
-								/* The original property name's format must be used for the parsePropertyValue() lookup,
-								 but we then use its camelCase styling to normalize it for manipulation. */
-								var propertyName = CSS.Names.camelCase(property),
-										valueData = parsePropertyValue(propertiesMap[property]);
-	
-								/* Find shorthand color properties that have been passed a hex string. */
-								/* Would be quicker to use CSS.Lists.colors.includes() if possible */
-								if (CSS.Lists.colors.indexOf(propertyName) >= 0) {
-									/* Parse the value data for each shorthand. */
-									var endValue = valueData[0],
-											easing = valueData[1],
-											startValue = valueData[2];
-	
-									if (CSS.RegEx.isHex.test(endValue)) {
-										/* Convert the hex strings into their RGB component arrays. */
-										var colorComponents = ["Red", "Green", "Blue"],
-												endValueRGB = CSS.Values.hexToRgb(endValue),
-												startValueRGB = startValue ? CSS.Values.hexToRgb(startValue) : undefined;
-	
-										/* Inject the RGB component tweens into propertiesMap. */
-										for (var i = 0; i < colorComponents.length; i++) {
-											var dataArray = [endValueRGB[i]];
-	
-											if (easing) {
-												dataArray.push(easing);
-											}
-	
-											if (startValueRGB !== undefined) {
-												dataArray.push(startValueRGB[i]);
-											}
-	
-											fixPropertyValue(propertyName + colorComponents[i], dataArray);
-										}
-										/* If we have replaced a shortcut color value then don't update the standard property name */
-										continue;
-									}
-								}
-								fixPropertyValue(propertyName, valueData);
-							}
-	
-							/* Along with its property data, store a reference to the element itself onto tweensContainer. */
-							tweensContainer.element = element;
-						}
-	
-						/*****************
-						 Call Push
-						 *****************/
-	
-						/* Note: tweensContainer can be empty if all of the properties in this call's property map were skipped due to not
-						 being supported by the browser. The element property is used for checking that the tweensContainer has been appended to. */
-						if (tweensContainer.element) {
-							/* Apply the "velocity-animating" indicator class. */
-							CSS.Values.addClass(element, "velocity-animating");
-	
-							/* The call array houses the tweensContainers for each element being animated in the current call. */
-							call.push(tweensContainer);
-	
-							data = Data(element);
-	
-							if (data) {
-								/* Store the tweensContainer and options if we're working on the default effects queue, so that they can be used by the reverse command. */
-								if (opts.queue === "") {
-	
-									data.tweensContainer = tweensContainer;
-									data.opts = opts;
-								}
-	
-								/* Switch on the element's animating flag. */
-								data.isAnimating = true;
-							}
-	
-							/* Once the final element in this call's element set has been processed, push the call array onto
-							 Velocity.State.calls for the animation tick to immediately begin processing. */
-							if (elementsIndex === elementsLength - 1) {
-								/* Add the current call plus its associated metadata (the element set and the call's options) onto the global call container.
-								 Anything on this call container is subjected to tick() processing. */
-								Velocity.State.calls.push([call, elements, opts, null, promiseData.resolver, null, 0]);
-	
-								/* If the animation tick isn't running, start it. (Velocity shuts it off when there are no active calls to process.) */
-								if (Velocity.State.isTicking === false) {
-									Velocity.State.isTicking = true;
-	
-									/* Start the tick loop. */
-									tick();
-								}
-							} else {
-								elementsIndex++;
-							}
-						}
-					}
-	
-					/* When the queue option is set to false, the call skips the element's queue and fires immediately. */
-					if (opts.queue === false) {
-						/* Since this buildQueue call doesn't respect the element's existing queue (which is where a delay option would have been appended),
-						 we manually inject the delay property here with an explicit setTimeout. */
-						if (opts.delay) {
-	
-							/* Temporarily store delayed elements to facilitate access for global pause/resume */
-							var callIndex = Velocity.State.delayedElements.count++;
-							Velocity.State.delayedElements[callIndex] = element;
-	
-							var delayComplete = (function(index) {
-								return function() {
-									/* Clear the temporary element */
-									Velocity.State.delayedElements[index] = false;
-	
-									/* Finally, issue the call */
-									buildQueue();
-								};
-							})(callIndex);
-	
-							Data(element).delayBegin = (new Date()).getTime();
-							Data(element).delay = parseFloat(opts.delay);
-							Data(element).delayTimer = {
-								setTimeout: setTimeout(buildQueue, parseFloat(opts.delay)),
-								next: delayComplete
-							};
-						} else {
-							buildQueue();
-						}
-						/* Otherwise, the call undergoes element queueing as normal. */
-						/* Note: To interoperate with jQuery, Velocity uses jQuery's own $.queue() stack for queuing logic. */
-					} else {
-						$.queue(element, opts.queue, function(next, clearQueue) {
-							/* If the clearQueue flag was passed in by the stop command, resolve this call's promise. (Promises can only be resolved once,
-							 so it's fine if this is repeatedly triggered for each element in the associated call.) */
-							if (clearQueue === true) {
-								if (promiseData.promise) {
-									promiseData.resolver(elements);
-								}
-	
-								/* Do not continue with animation queueing. */
-								return true;
-							}
-	
-							/* This flag indicates to the upcoming completeCall() function that this queue entry was initiated by Velocity.
-							 See completeCall() for further details. */
-							Velocity.velocityQueueEntryFlag = true;
-	
-							buildQueue(next);
-						});
-					}
-	
-					/*********************
-					 Auto-Dequeuing
-					 *********************/
-	
-					/* As per jQuery's $.queue() behavior, to fire the first non-custom-queue entry on an element, the element
-					 must be dequeued if its queue stack consists *solely* of the current call. (This can be determined by checking
-					 for the "inprogress" item that jQuery prepends to active queue stack arrays.) Regardless, whenever the element's
-					 queue is further appended with additional items -- including $.delay()'s or even $.animate() calls, the queue's
-					 first entry is automatically fired. This behavior contrasts that of custom queues, which never auto-fire. */
-					/* Note: When an element set is being subjected to a non-parallel Velocity call, the animation will not begin until
-					 each one of the elements in the set has reached the end of its individually pre-existing queue chain. */
-					/* Note: Unfortunately, most people don't fully grasp jQuery's powerful, yet quirky, $.queue() function.
-					 Lean more here: http://stackoverflow.com/questions/1058158/can-somebody-explain-jquery-queue-to-me */
-					if ((opts.queue === "" || opts.queue === "fx") && $.queue(element)[0] !== "inprogress") {
-						$.dequeue(element);
-					}
-				}
-	
-				/**************************
-				 Element Set Iteration
-				 **************************/
-	
-				/* If the "nodeType" property exists on the elements variable, we're animating a single element.
-				 Place it in an array so that $.each() can iterate over it. */
-				$.each(elements, function(i, element) {
-					/* Ensure each element in a set has a nodeType (is a real element) to avoid throwing errors. */
-					if (Type.isNode(element)) {
-						processElement(element, i);
-					}
-				});
-	
-				/******************
-				 Option: Loop
-				 ******************/
-	
-				/* The loop option accepts an integer indicating how many times the element should loop between the values in the
-				 current call's properties map and the element's property values prior to this call. */
-				/* Note: The loop option's logic is performed here -- after element processing -- because the current call needs
-				 to undergo its queue insertion prior to the loop option generating its series of constituent "reverse" calls,
-				 which chain after the current call. Two reverse calls (two "alternations") constitute one loop. */
-				opts = $.extend({}, Velocity.defaults, options);
-				opts.loop = parseInt(opts.loop, 10);
-				var reverseCallsCount = (opts.loop * 2) - 1;
-	
-				if (opts.loop) {
-					/* Double the loop count to convert it into its appropriate number of "reverse" calls.
-					 Subtract 1 from the resulting value since the current call is included in the total alternation count. */
-					for (var x = 0; x < reverseCallsCount; x++) {
-						/* Since the logic for the reverse action occurs inside Queueing and therefore this call's options object
-						 isn't parsed until then as well, the current call's delay option must be explicitly passed into the reverse
-						 call so that the delay logic that occurs inside *Pre-Queueing* can process it. */
-						var reverseOptions = {
-							delay: opts.delay,
-							progress: opts.progress
-						};
-	
-						/* If a complete callback was passed into this call, transfer it to the loop redirect's final "reverse" call
-						 so that it's triggered when the entire redirect is complete (and not when the very first animation is complete). */
-						if (x === reverseCallsCount - 1) {
-							reverseOptions.display = opts.display;
-							reverseOptions.visibility = opts.visibility;
-							reverseOptions.complete = opts.complete;
-						}
-	
-						animate(elements, "reverse", reverseOptions);
-					}
-				}
-	
-				/***************
-				 Chaining
-				 ***************/
-	
-				/* Return the elements back to the call chain, with wrapped elements taking precedence in case Velocity was called via the $.fn. extension. */
-				return getChain();
-			};
-	
-			/* Turn Velocity into the animation function, extended with the pre-existing Velocity object. */
-			Velocity = $.extend(animate, Velocity);
-			/* For legacy support, also expose the literal animate method. */
-			Velocity.animate = animate;
-	
-			/**************
-			 Timing
-			 **************/
-	
-			/* Ticker function. */
-			var ticker = window.requestAnimationFrame || rAFShim;
-	
-			/* Inactive browser tabs pause rAF, which results in all active animations immediately sprinting to their completion states when the tab refocuses.
-			 To get around this, we dynamically switch rAF to setTimeout (which the browser *doesn't* pause) when the tab loses focus. We skip this for mobile
-			 devices to avoid wasting battery power on inactive tabs. */
-			/* Note: Tab focus detection doesn't work on older versions of IE, but that's okay since they don't support rAF to begin with. */
-			if (!Velocity.State.isMobile && document.hidden !== undefined) {
-				var updateTicker = function() {
-					/* Reassign the rAF function (which the global tick() function uses) based on the tab's focus state. */
-					if (document.hidden) {
-						ticker = function(callback) {
-							/* The tick function needs a truthy first argument in order to pass its internal timestamp check. */
-							return setTimeout(function() {
-								callback(true);
-							}, 16);
-						};
-	
-						/* The rAF loop has been paused by the browser, so we manually restart the tick. */
-						tick();
-					} else {
-						ticker = window.requestAnimationFrame || rAFShim;
-					}
-				};
-	
-				/* Page could be sitting in the background at this time (i.e. opened as new tab) so making sure we use correct ticker from the start */
-				updateTicker();
-	
-				/* And then run check again every time visibility changes */
-				document.addEventListener("visibilitychange", updateTicker);
-			}
-	
-			/************
-			 Tick
-			 ************/
-	
-			/* Note: All calls to Velocity are pushed to the Velocity.State.calls array, which is fully iterated through upon each tick. */
-			function tick(timestamp) {
-				/* An empty timestamp argument indicates that this is the first tick occurence since ticking was turned on.
-				 We leverage this metadata to fully ignore the first tick pass since RAF's initial pass is fired whenever
-				 the browser's next tick sync time occurs, which results in the first elements subjected to Velocity
-				 calls being animated out of sync with any elements animated immediately thereafter. In short, we ignore
-				 the first RAF tick pass so that elements being immediately consecutively animated -- instead of simultaneously animated
-				 by the same Velocity call -- are properly batched into the same initial RAF tick and consequently remain in sync thereafter. */
-				if (timestamp) {
-					/* We normally use RAF's high resolution timestamp but as it can be significantly offset when the browser is
-					 under high stress we give the option for choppiness over allowing the browser to drop huge chunks of frames.
-					 We use performance.now() and shim it if it doesn't exist for when the tab is hidden. */
-					var timeCurrent = Velocity.timestamp && timestamp !== true ? timestamp : performance.now();
-	
-					/********************
-					 Call Iteration
-					 ********************/
-	
-					var callsLength = Velocity.State.calls.length;
-	
-					/* To speed up iterating over this array, it is compacted (falsey items -- calls that have completed -- are removed)
-					 when its length has ballooned to a point that can impact tick performance. This only becomes necessary when animation
-					 has been continuous with many elements over a long period of time; whenever all active calls are completed, completeCall() clears Velocity.State.calls. */
-					if (callsLength > 10000) {
-						Velocity.State.calls = compactSparseArray(Velocity.State.calls);
-						callsLength = Velocity.State.calls.length;
-					}
-	
-					/* Iterate through each active call. */
-					for (var i = 0; i < callsLength; i++) {
-						/* When a Velocity call is completed, its Velocity.State.calls entry is set to false. Continue on to the next call. */
-						if (!Velocity.State.calls[i]) {
-							continue;
-						}
-	
-						/************************
-						 Call-Wide Variables
-						 ************************/
-	
-						var callContainer = Velocity.State.calls[i],
-								call = callContainer[0],
-								opts = callContainer[2],
-								timeStart = callContainer[3],
-								firstTick = !!timeStart,
-								tweenDummyValue = null,
-								pauseObject = callContainer[5],
-								millisecondsEllapsed = callContainer[6];
-	
-	
-	
-						/* If timeStart is undefined, then this is the first time that this call has been processed by tick().
-						 We assign timeStart now so that its value is as close to the real animation start time as possible.
-						 (Conversely, had timeStart been defined when this call was added to Velocity.State.calls, the delay
-						 between that time and now would cause the first few frames of the tween to be skipped since
-						 percentComplete is calculated relative to timeStart.) */
-						/* Further, subtract 16ms (the approximate resolution of RAF) from the current time value so that the
-						 first tick iteration isn't wasted by animating at 0% tween completion, which would produce the
-						 same style value as the element's current value. */
-						if (!timeStart) {
-							timeStart = Velocity.State.calls[i][3] = timeCurrent - 16;
-						}
-	
-						/* If a pause object is present, skip processing unless it has been set to resume */
-						if (pauseObject) {
-							if (pauseObject.resume === true) {
-								/* Update the time start to accomodate the paused completion amount */
-								timeStart = callContainer[3] = Math.round(timeCurrent - millisecondsEllapsed - 16);
-	
-								/* Remove pause object after processing */
-								callContainer[5] = null;
-							} else {
-								continue;
-							}
-						}
-	
-						millisecondsEllapsed = callContainer[6] = timeCurrent - timeStart;
-	
-						/* The tween's completion percentage is relative to the tween's start time, not the tween's start value
-						 (which would result in unpredictable tween durations since JavaScript's timers are not particularly accurate).
-						 Accordingly, we ensure that percentComplete does not exceed 1. */
-						var percentComplete = Math.min((millisecondsEllapsed) / opts.duration, 1);
-	
-						/**********************
-						 Element Iteration
-						 **********************/
-	
-						/* For every call, iterate through each of the elements in its set. */
-						for (var j = 0, callLength = call.length; j < callLength; j++) {
-							var tweensContainer = call[j],
-									element = tweensContainer.element;
-	
-							/* Check to see if this element has been deleted midway through the animation by checking for the
-							 continued existence of its data cache. If it's gone, or the element is currently paused, skip animating this element. */
-							if (!Data(element)) {
-								continue;
-							}
-	
-							var transformPropertyExists = false;
-	
-							/**********************************
-							 Display & Visibility Toggling
-							 **********************************/
-	
-							/* If the display option is set to non-"none", set it upfront so that the element can become visible before tweening begins.
-							 (Otherwise, display's "none" value is set in completeCall() once the animation has completed.) */
-							if (opts.display !== undefined && opts.display !== null && opts.display !== "none") {
-								if (opts.display === "flex") {
-									var flexValues = ["-webkit-box", "-moz-box", "-ms-flexbox", "-webkit-flex"];
-	
-									$.each(flexValues, function(i, flexValue) {
-										CSS.setPropertyValue(element, "display", flexValue);
-									});
-								}
-	
-								CSS.setPropertyValue(element, "display", opts.display);
-							}
-	
-							/* Same goes with the visibility option, but its "none" equivalent is "hidden". */
-							if (opts.visibility !== undefined && opts.visibility !== "hidden") {
-								CSS.setPropertyValue(element, "visibility", opts.visibility);
-							}
-	
-							/************************
-							 Property Iteration
-							 ************************/
-	
-							/* For every element, iterate through each property. */
-							for (var property in tweensContainer) {
-								/* Note: In addition to property tween data, tweensContainer contains a reference to its associated element. */
-								if (tweensContainer.hasOwnProperty(property) && property !== "element") {
-									var tween = tweensContainer[property],
-											currentValue,
-											/* Easing can either be a pre-genereated function or a string that references a pre-registered easing
-											 on the Velocity.Easings object. In either case, return the appropriate easing *function*. */
-											easing = Type.isString(tween.easing) ? Velocity.Easings[tween.easing] : tween.easing;
-	
-									/******************************
-									 Current Value Calculation
-									 ******************************/
-	
-									if (Type.isString(tween.pattern)) {
-										var patternReplace = percentComplete === 1 ?
-												function($0, index, round) {
-													var result = tween.endValue[index];
-	
-													return round ? Math.round(result) : result;
-												} :
-												function($0, index, round) {
-													var startValue = tween.startValue[index],
-															tweenDelta = tween.endValue[index] - startValue,
-															result = startValue + (tweenDelta * easing(percentComplete, opts, tweenDelta));
-	
-													return round ? Math.round(result) : result;
-												};
-	
-										currentValue = tween.pattern.replace(/{(\d+)(!)?}/g, patternReplace);
-									} else if (percentComplete === 1) {
-										/* If this is the last tick pass (if we've reached 100% completion for this tween),
-										 ensure that currentValue is explicitly set to its target endValue so that it's not subjected to any rounding. */
-										currentValue = tween.endValue;
-									} else {
-										/* Otherwise, calculate currentValue based on the current delta from startValue. */
-										var tweenDelta = tween.endValue - tween.startValue;
-	
-										currentValue = tween.startValue + (tweenDelta * easing(percentComplete, opts, tweenDelta));
-										/* If no value change is occurring, don't proceed with DOM updating. */
-									}
-									if (!firstTick && (currentValue === tween.currentValue)) {
-										continue;
-									}
-	
-									tween.currentValue = currentValue;
-	
-									/* If we're tweening a fake 'tween' property in order to log transition values, update the one-per-call variable so that
-									 it can be passed into the progress callback. */
-									if (property === "tween") {
-										tweenDummyValue = currentValue;
-									} else {
-										/******************
-										 Hooks: Part I
-										 ******************/
-										var hookRoot;
-	
-										/* For hooked properties, the newly-updated rootPropertyValueCache is cached onto the element so that it can be used
-										 for subsequent hooks in this call that are associated with the same root property. If we didn't cache the updated
-										 rootPropertyValue, each subsequent update to the root property in this tick pass would reset the previous hook's
-										 updates to rootPropertyValue prior to injection. A nice performance byproduct of rootPropertyValue caching is that
-										 subsequently chained animations using the same hookRoot but a different hook can use this cached rootPropertyValue. */
-										if (CSS.Hooks.registered[property]) {
-											hookRoot = CSS.Hooks.getRoot(property);
-	
-											var rootPropertyValueCache = Data(element).rootPropertyValueCache[hookRoot];
-	
-											if (rootPropertyValueCache) {
-												tween.rootPropertyValue = rootPropertyValueCache;
-											}
-										}
-	
-										/*****************
-										 DOM Update
-										 *****************/
-	
-										/* setPropertyValue() returns an array of the property name and property value post any normalization that may have been performed. */
-										/* Note: To solve an IE<=8 positioning bug, the unit type is dropped when setting a property value of 0. */
-										var adjustedSetData = CSS.setPropertyValue(element, /* SET */
-												property,
-												tween.currentValue + (IE < 9 && parseFloat(currentValue) === 0 ? "" : tween.unitType),
-												tween.rootPropertyValue,
-												tween.scrollData);
-	
-										/*******************
-										 Hooks: Part II
-										 *******************/
-	
-										/* Now that we have the hook's updated rootPropertyValue (the post-processed value provided by adjustedSetData), cache it onto the element. */
-										if (CSS.Hooks.registered[property]) {
-											/* Since adjustedSetData contains normalized data ready for DOM updating, the rootPropertyValue needs to be re-extracted from its normalized form. ?? */
-											if (CSS.Normalizations.registered[hookRoot]) {
-												Data(element).rootPropertyValueCache[hookRoot] = CSS.Normalizations.registered[hookRoot]("extract", null, adjustedSetData[1]);
-											} else {
-												Data(element).rootPropertyValueCache[hookRoot] = adjustedSetData[1];
-											}
-										}
-	
-										/***************
-										 Transforms
-										 ***************/
-	
-										/* Flag whether a transform property is being animated so that flushTransformCache() can be triggered once this tick pass is complete. */
-										if (adjustedSetData[0] === "transform") {
-											transformPropertyExists = true;
-										}
-	
-									}
-								}
-							}
-	
-							/****************
-							 mobileHA
-							 ****************/
-	
-							/* If mobileHA is enabled, set the translate3d transform to null to force hardware acceleration.
-							 It's safe to override this property since Velocity doesn't actually support its animation (hooks are used in its place). */
-							if (opts.mobileHA) {
-								/* Don't set the null transform hack if we've already done so. */
-								if (Data(element).transformCache.translate3d === undefined) {
-									/* All entries on the transformCache object are later concatenated into a single transform string via flushTransformCache(). */
-									Data(element).transformCache.translate3d = "(0px, 0px, 0px)";
-	
-									transformPropertyExists = true;
-								}
-							}
-	
-							if (transformPropertyExists) {
-								CSS.flushTransformCache(element);
-							}
-						}
-	
-						/* The non-"none" display value is only applied to an element once -- when its associated call is first ticked through.
-						 Accordingly, it's set to false so that it isn't re-processed by this call in the next tick. */
-						if (opts.display !== undefined && opts.display !== "none") {
-							Velocity.State.calls[i][2].display = false;
-						}
-						if (opts.visibility !== undefined && opts.visibility !== "hidden") {
-							Velocity.State.calls[i][2].visibility = false;
-						}
-	
-						/* Pass the elements and the timing data (percentComplete, msRemaining, timeStart, tweenDummyValue) into the progress callback. */
-						if (opts.progress) {
-							opts.progress.call(callContainer[1],
-									callContainer[1],
-									percentComplete,
-									Math.max(0, (timeStart + opts.duration) - timeCurrent),
-									timeStart,
-									tweenDummyValue);
-						}
-	
-						/* If this call has finished tweening, pass its index to completeCall() to handle call cleanup. */
-						if (percentComplete === 1) {
-							completeCall(i);
-						}
-					}
-				}
-	
-				/* Note: completeCall() sets the isTicking flag to false when the last call on Velocity.State.calls has completed. */
-				if (Velocity.State.isTicking) {
-					ticker(tick);
-				}
-			}
-	
-			/**********************
-			 Call Completion
-			 **********************/
-	
-			/* Note: Unlike tick(), which processes all active calls at once, call completion is handled on a per-call basis. */
-			function completeCall(callIndex, isStopped) {
-				/* Ensure the call exists. */
-				if (!Velocity.State.calls[callIndex]) {
-					return false;
-				}
-	
-				/* Pull the metadata from the call. */
-				var call = Velocity.State.calls[callIndex][0],
-						elements = Velocity.State.calls[callIndex][1],
-						opts = Velocity.State.calls[callIndex][2],
-						resolver = Velocity.State.calls[callIndex][4];
-	
-				var remainingCallsExist = false;
-	
-				/*************************
-				 Element Finalization
-				 *************************/
-	
-				for (var i = 0, callLength = call.length; i < callLength; i++) {
-					var element = call[i].element;
-	
-					/* If the user set display to "none" (intending to hide the element), set it now that the animation has completed. */
-					/* Note: display:none isn't set when calls are manually stopped (via Velocity("stop"). */
-					/* Note: Display gets ignored with "reverse" calls and infinite loops, since this behavior would be undesirable. */
-					if (!isStopped && !opts.loop) {
-						if (opts.display === "none") {
-							CSS.setPropertyValue(element, "display", opts.display);
-						}
-	
-						if (opts.visibility === "hidden") {
-							CSS.setPropertyValue(element, "visibility", opts.visibility);
-						}
-					}
-	
-					/* If the element's queue is empty (if only the "inprogress" item is left at position 0) or if its queue is about to run
-					 a non-Velocity-initiated entry, turn off the isAnimating flag. A non-Velocity-initiatied queue entry's logic might alter
-					 an element's CSS values and thereby cause Velocity's cached value data to go stale. To detect if a queue entry was initiated by Velocity,
-					 we check for the existence of our special Velocity.queueEntryFlag declaration, which minifiers won't rename since the flag
-					 is assigned to jQuery's global $ object and thus exists out of Velocity's own scope. */
-					var data = Data(element);
-	
-					if (opts.loop !== true && ($.queue(element)[1] === undefined || !/\.velocityQueueEntryFlag/i.test($.queue(element)[1]))) {
-						/* The element may have been deleted. Ensure that its data cache still exists before acting on it. */
-						if (data) {
-							data.isAnimating = false;
-							/* Clear the element's rootPropertyValueCache, which will become stale. */
-							data.rootPropertyValueCache = {};
-	
-							var transformHAPropertyExists = false;
-							/* If any 3D transform subproperty is at its default value (regardless of unit type), remove it. */
-							$.each(CSS.Lists.transforms3D, function(i, transformName) {
-								var defaultValue = /^scale/.test(transformName) ? 1 : 0,
-										currentValue = data.transformCache[transformName];
-	
-								if (data.transformCache[transformName] !== undefined && new RegExp("^\\(" + defaultValue + "[^.]").test(currentValue)) {
-									transformHAPropertyExists = true;
-	
-									delete data.transformCache[transformName];
-								}
-							});
-	
-							/* Mobile devices have hardware acceleration removed at the end of the animation in order to avoid hogging the GPU's memory. */
-							if (opts.mobileHA) {
-								transformHAPropertyExists = true;
-								delete data.transformCache.translate3d;
-							}
-	
-							/* Flush the subproperty removals to the DOM. */
-							if (transformHAPropertyExists) {
-								CSS.flushTransformCache(element);
-							}
-	
-							/* Remove the "velocity-animating" indicator class. */
-							CSS.Values.removeClass(element, "velocity-animating");
-						}
-					}
-	
-					/*********************
-					 Option: Complete
-					 *********************/
-	
-					/* Complete is fired once per call (not once per element) and is passed the full raw DOM element set as both its context and its first argument. */
-					/* Note: Callbacks aren't fired when calls are manually stopped (via Velocity("stop"). */
-					if (!isStopped && opts.complete && !opts.loop && (i === callLength - 1)) {
-						/* We throw callbacks in a setTimeout so that thrown errors don't halt the execution of Velocity itself. */
-						try {
-							opts.complete.call(elements, elements);
-						} catch (error) {
-							setTimeout(function() {
-								throw error;
-							}, 1);
-						}
-					}
-	
-					/**********************
-					 Promise Resolving
-					 **********************/
-	
-					/* Note: Infinite loops don't return promises. */
-					if (resolver && opts.loop !== true) {
-						resolver(elements);
-					}
-	
-					/****************************
-					 Option: Loop (Infinite)
-					 ****************************/
-	
-					if (data && opts.loop === true && !isStopped) {
-						/* If a rotateX/Y/Z property is being animated by 360 deg with loop:true, swap tween start/end values to enable
-						 continuous iterative rotation looping. (Otherise, the element would just rotate back and forth.) */
-						$.each(data.tweensContainer, function(propertyName, tweenContainer) {
-							if (/^rotate/.test(propertyName) && ((parseFloat(tweenContainer.startValue) - parseFloat(tweenContainer.endValue)) % 360 === 0)) {
-								var oldStartValue = tweenContainer.startValue;
-	
-								tweenContainer.startValue = tweenContainer.endValue;
-								tweenContainer.endValue = oldStartValue;
-							}
-	
-							if (/^backgroundPosition/.test(propertyName) && parseFloat(tweenContainer.endValue) === 100 && tweenContainer.unitType === "%") {
-								tweenContainer.endValue = 0;
-								tweenContainer.startValue = 100;
-							}
-						});
-	
-						Velocity(element, "reverse", {loop: true, delay: opts.delay});
-					}
-	
-					/***************
-					 Dequeueing
-					 ***************/
-	
-					/* Fire the next call in the queue so long as this call's queue wasn't set to false (to trigger a parallel animation),
-					 which would have already caused the next call to fire. Note: Even if the end of the animation queue has been reached,
-					 $.dequeue() must still be called in order to completely clear jQuery's animation queue. */
-					if (opts.queue !== false) {
-						$.dequeue(element, opts.queue);
-					}
-				}
-	
-				/************************
-				 Calls Array Cleanup
-				 ************************/
-	
-				/* Since this call is complete, set it to false so that the rAF tick skips it. This array is later compacted via compactSparseArray().
-				 (For performance reasons, the call is set to false instead of being deleted from the array: http://www.html5rocks.com/en/tutorials/speed/v8/) */
-				Velocity.State.calls[callIndex] = false;
-	
-				/* Iterate through the calls array to determine if this was the final in-progress animation.
-				 If so, set a flag to end ticking and clear the calls array. */
-				for (var j = 0, callsLength = Velocity.State.calls.length; j < callsLength; j++) {
-					if (Velocity.State.calls[j] !== false) {
-						remainingCallsExist = true;
-	
-						break;
-					}
-				}
-	
-				if (remainingCallsExist === false) {
-					/* tick() will detect this flag upon its next iteration and subsequently turn itself off. */
-					Velocity.State.isTicking = false;
-	
-					/* Clear the calls array so that its length is reset. */
-					delete Velocity.State.calls;
-					Velocity.State.calls = [];
-				}
-			}
-	
-			/******************
-			 Frameworks
-			 ******************/
-	
-			/* Both jQuery and Zepto allow their $.fn object to be extended to allow wrapped elements to be subjected to plugin calls.
-			 If either framework is loaded, register a "velocity" extension pointing to Velocity's core animate() method.  Velocity
-			 also registers itself onto a global container (window.jQuery || window.Zepto || window) so that certain features are
-			 accessible beyond just a per-element scope. This master object contains an .animate() method, which is later assigned to $.fn
-			 (if jQuery or Zepto are present). Accordingly, Velocity can both act on wrapped DOM elements and stand alone for targeting raw DOM elements. */
-			global.Velocity = Velocity;
-	
-			if (global !== window) {
-				/* Assign the element function to Velocity's core animate() method. */
-				global.fn.velocity = animate;
-				/* Assign the object function's defaults to Velocity's global defaults object. */
-				global.fn.velocity.defaults = Velocity.defaults;
-			}
-	
-			/***********************
-			 Packaged Redirects
-			 ***********************/
-	
-			/* slideUp, slideDown */
-			$.each(["Down", "Up"], function(i, direction) {
-				Velocity.Redirects["slide" + direction] = function(element, options, elementsIndex, elementsSize, elements, promiseData) {
-					var opts = $.extend({}, options),
-							begin = opts.begin,
-							complete = opts.complete,
-							inlineValues = {},
-							computedValues = {height: "", marginTop: "", marginBottom: "", paddingTop: "", paddingBottom: ""};
-	
-					if (opts.display === undefined) {
-						/* Show the element before slideDown begins and hide the element after slideUp completes. */
-						/* Note: Inline elements cannot have dimensions animated, so they're reverted to inline-block. */
-						opts.display = (direction === "Down" ? (Velocity.CSS.Values.getDisplayType(element) === "inline" ? "inline-block" : "block") : "none");
-					}
-	
-					opts.begin = function() {
-						/* If the user passed in a begin callback, fire it now. */
-						if (elementsIndex === 0 && begin) {
-							begin.call(elements, elements);
-						}
-	
-						/* Cache the elements' original vertical dimensional property values so that we can animate back to them. */
-						for (var property in computedValues) {
-							if (!computedValues.hasOwnProperty(property)) {
-								continue;
-							}
-							inlineValues[property] = element.style[property];
-	
-							/* For slideDown, use forcefeeding to animate all vertical properties from 0. For slideUp,
-							 use forcefeeding to start from computed values and animate down to 0. */
-							var propertyValue = CSS.getPropertyValue(element, property);
-							computedValues[property] = (direction === "Down") ? [propertyValue, 0] : [0, propertyValue];
-						}
-	
-						/* Force vertical overflow content to clip so that sliding works as expected. */
-						inlineValues.overflow = element.style.overflow;
-						element.style.overflow = "hidden";
-					};
-	
-					opts.complete = function() {
-						/* Reset element to its pre-slide inline values once its slide animation is complete. */
-						for (var property in inlineValues) {
-							if (inlineValues.hasOwnProperty(property)) {
-								element.style[property] = inlineValues[property];
-							}
-						}
-	
-						/* If the user passed in a complete callback, fire it now. */
-						if (elementsIndex === elementsSize - 1) {
-							if (complete) {
-								complete.call(elements, elements);
-							}
-							if (promiseData) {
-								promiseData.resolver(elements);
-							}
-						}
-					};
-	
-					Velocity(element, computedValues, opts);
-				};
-			});
-	
-			/* fadeIn, fadeOut */
-			$.each(["In", "Out"], function(i, direction) {
-				Velocity.Redirects["fade" + direction] = function(element, options, elementsIndex, elementsSize, elements, promiseData) {
-					var opts = $.extend({}, options),
-							complete = opts.complete,
-							propertiesMap = {opacity: (direction === "In") ? 1 : 0};
-	
-					/* Since redirects are triggered individually for each element in the animated set, avoid repeatedly triggering
-					 callbacks by firing them only when the final element has been reached. */
-					if (elementsIndex !== 0) {
-						opts.begin = null;
-					}
-					if (elementsIndex !== elementsSize - 1) {
-						opts.complete = null;
-					} else {
-						opts.complete = function() {
-							if (complete) {
-								complete.call(elements, elements);
-							}
-							if (promiseData) {
-								promiseData.resolver(elements);
-							}
-						};
-					}
-	
-					/* If a display was passed in, use it. Otherwise, default to "none" for fadeOut or the element-specific default for fadeIn. */
-					/* Note: We allow users to pass in "null" to skip display setting altogether. */
-					if (opts.display === undefined) {
-						opts.display = (direction === "In" ? "auto" : "none");
-					}
-	
-					Velocity(this, propertiesMap, opts);
-				};
-			});
-	
-			return Velocity;
-		}((window.jQuery || window.Zepto || window), window, (window ? window.document : undefined));
+	return function (global, window, document, undefined) {
+	
+	    /***************
+	        Summary
+	    ***************/
+	
+	    /*
+	    - CSS: CSS stack that works independently from the rest of Velocity.
+	    - animate(): Core animation method that iterates over the targeted elements and queues the incoming call onto each element individually.
+	      - Pre-Queueing: Prepare the element for animation by instantiating its data cache and processing the call's options.
+	      - Queueing: The logic that runs once the call has reached its point of execution in the element's $.queue() stack.
+	                  Most logic is placed here to avoid risking it becoming stale (if the element's properties have changed).
+	      - Pushing: Consolidation of the tween data followed by its push onto the global in-progress calls container.
+	    - tick(): The single requestAnimationFrame loop responsible for tweening all in-progress calls.
+	    - completeCall(): Handles the cleanup process for each Velocity call.
+	    */
+	
+	    /*********************
+	       Helper Functions
+	    *********************/
+	
+	    /* IE detection. Gist: https://gist.github.com/julianshapiro/9098609 */
+	    var IE = (function() {
+	        if (document.documentMode) {
+	            return document.documentMode;
+	        } else {
+	            for (var i = 7; i > 4; i--) {
+	                var div = document.createElement("div");
+	
+	                div.innerHTML = "<!--[if IE " + i + "]><span></span><![endif]-->";
+	
+	                if (div.getElementsByTagName("span").length) {
+	                    div = null;
+	
+	                    return i;
+	                }
+	            }
+	        }
+	
+	        return undefined;
+	    })();
+	
+	    /* rAF shim. Gist: https://gist.github.com/julianshapiro/9497513 */
+	    var rAFShim = (function() {
+	        var timeLast = 0;
+	
+	        return window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function(callback) {
+	            var timeCurrent = (new Date()).getTime(),
+	                timeDelta;
+	
+	            /* Dynamically set delay on a per-tick basis to match 60fps. */
+	            /* Technique by Erik Moller. MIT license: https://gist.github.com/paulirish/1579671 */
+	            timeDelta = Math.max(0, 16 - (timeCurrent - timeLast));
+	            timeLast = timeCurrent + timeDelta;
+	
+	            return setTimeout(function() { callback(timeCurrent + timeDelta); }, timeDelta);
+	        };
+	    })();
+	
+	    /* Array compacting. Copyright Lo-Dash. MIT License: https://github.com/lodash/lodash/blob/master/LICENSE.txt */
+	    function compactSparseArray (array) {
+	        var index = -1,
+	            length = array ? array.length : 0,
+	            result = [];
+	
+	        while (++index < length) {
+	            var value = array[index];
+	
+	            if (value) {
+	                result.push(value);
+	            }
+	        }
+	
+	        return result;
+	    }
+	
+	    function sanitizeElements (elements) {
+	        /* Unwrap jQuery/Zepto objects. */
+	        if (Type.isWrapped(elements)) {
+	            elements = [].slice.call(elements);
+	        /* Wrap a single element in an array so that $.each() can iterate with the element instead of its node's children. */
+	        } else if (Type.isNode(elements)) {
+	            elements = [ elements ];
+	        }
+	
+	        return elements;
+	    }
+	
+	    var Type = {
+	        isString: function (variable) {
+	            return (typeof variable === "string");
+	        },
+	        isArray: Array.isArray || function (variable) {
+	            return Object.prototype.toString.call(variable) === "[object Array]";
+	        },
+	        isFunction: function (variable) {
+	            return Object.prototype.toString.call(variable) === "[object Function]";
+	        },
+	        isNode: function (variable) {
+	            return variable && variable.nodeType;
+	        },
+	        /* Copyright Martin Bohm. MIT License: https://gist.github.com/Tomalak/818a78a226a0738eaade */
+	        isNodeList: function (variable) {
+	            return typeof variable === "object" &&
+	                /^\[object (HTMLCollection|NodeList|Object)\]$/.test(Object.prototype.toString.call(variable)) &&
+	                variable.length !== undefined &&
+	                (variable.length === 0 || (typeof variable[0] === "object" && variable[0].nodeType > 0));
+	        },
+	        /* Determine if variable is a wrapped jQuery or Zepto element. */
+	        isWrapped: function (variable) {
+	            return variable && (variable.jquery || (window.Zepto && window.Zepto.zepto.isZ(variable)));
+	        },
+	        isSVG: function (variable) {
+	            return window.SVGElement && (variable instanceof window.SVGElement);
+	        },
+	        isEmptyObject: function (variable) {
+	            for (var name in variable) {
+	                return false;
+	            }
+	
+	            return true;
+	        }
+	    };
+	
+	    /*****************
+	       Dependencies
+	    *****************/
+	
+	    var $,
+	        isJQuery = false;
+	
+	    if (global.fn && global.fn.jquery) {
+	        $ = global;
+	        isJQuery = true;
+	    } else {
+	        $ = window.Velocity.Utilities;
+	    }
+	
+	    if (IE <= 8 && !isJQuery) {
+	        throw new Error("Velocity: IE8 and below require jQuery to be loaded before Velocity.");
+	    } else if (IE <= 7) {
+	        /* Revert to jQuery's $.animate(), and lose Velocity's extra features. */
+	        jQuery.fn.velocity = jQuery.fn.animate;
+	
+	        /* Now that $.fn.velocity is aliased, abort this Velocity declaration. */
+	        return;
+	    }
+	
+	    /*****************
+	        Constants
+	    *****************/
+	
+	    var DURATION_DEFAULT = 400,
+	        EASING_DEFAULT = "swing";
+	
+	    /*************
+	        State
+	    *************/
+	
+	    var Velocity = {
+	        /* Container for page-wide Velocity state data. */
+	        State: {
+	            /* Detect mobile devices to determine if mobileHA should be turned on. */
+	            isMobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+	            /* The mobileHA option's behavior changes on older Android devices (Gingerbread, versions 2.3.3-2.3.7). */
+	            isAndroid: /Android/i.test(navigator.userAgent),
+	            isGingerbread: /Android 2\.3\.[3-7]/i.test(navigator.userAgent),
+	            isChrome: window.chrome,
+	            isFirefox: /Firefox/i.test(navigator.userAgent),
+	            /* Create a cached element for re-use when checking for CSS property prefixes. */
+	            prefixElement: document.createElement("div"),
+	            /* Cache every prefix match to avoid repeating lookups. */
+	            prefixMatches: {},
+	            /* Cache the anchor used for animating window scrolling. */
+	            scrollAnchor: null,
+	            /* Cache the browser-specific property names associated with the scroll anchor. */
+	            scrollPropertyLeft: null,
+	            scrollPropertyTop: null,
+	            /* Keep track of whether our RAF tick is running. */
+	            isTicking: false,
+	            /* Container for every in-progress call to Velocity. */
+	            calls: []
+	        },
+	        /* Velocity's custom CSS stack. Made global for unit testing. */
+	        CSS: { /* Defined below. */ },
+	        /* A shim of the jQuery utility functions used by Velocity -- provided by Velocity's optional jQuery shim. */
+	        Utilities: $,
+	        /* Container for the user's custom animation redirects that are referenced by name in place of the properties map argument. */
+	        Redirects: { /* Manually registered by the user. */ },
+	        Easings: { /* Defined below. */ },
+	        /* Attempt to use ES6 Promises by default. Users can override this with a third-party promises library. */
+	        Promise: window.Promise,
+	        /* Velocity option defaults, which can be overriden by the user. */
+	        defaults: {
+	            queue: "",
+	            duration: DURATION_DEFAULT,
+	            easing: EASING_DEFAULT,
+	            begin: undefined,
+	            complete: undefined,
+	            progress: undefined,
+	            display: undefined,
+	            visibility: undefined,
+	            loop: false,
+	            delay: false,
+	            mobileHA: true,
+	            /* Advanced: Set to false to prevent property values from being cached between consecutive Velocity-initiated chain calls. */
+	            _cacheValues: true
+	        },
+	        /* A design goal of Velocity is to cache data wherever possible in order to avoid DOM requerying. Accordingly, each element has a data cache. */
+	        init: function (element) {
+	            $.data(element, "velocity", {
+	                /* Store whether this is an SVG element, since its properties are retrieved and updated differently than standard HTML elements. */
+	                isSVG: Type.isSVG(element),
+	                /* Keep track of whether the element is currently being animated by Velocity.
+	                   This is used to ensure that property values are not transferred between non-consecutive (stale) calls. */
+	                isAnimating: false,
+	                /* A reference to the element's live computedStyle object. Learn more here: https://developer.mozilla.org/en/docs/Web/API/window.getComputedStyle */
+	                computedStyle: null,
+	                /* Tween data is cached for each animation on the element so that data can be passed across calls --
+	                   in particular, end values are used as subsequent start values in consecutive Velocity calls. */
+	                tweensContainer: null,
+	                /* The full root property values of each CSS hook being animated on this element are cached so that:
+	                   1) Concurrently-animating hooks sharing the same root can have their root values' merged into one while tweening.
+	                   2) Post-hook-injection root values can be transferred over to consecutively chained Velocity calls as starting root values. */
+	                rootPropertyValueCache: {},
+	                /* A cache for transform updates, which must be manually flushed via CSS.flushTransformCache(). */
+	                transformCache: {}
+	            });
+	        },
+	        /* A parallel to jQuery's $.css(), used for getting/setting Velocity's hooked CSS properties. */
+	        hook: null, /* Defined below. */
+	        /* Velocity-wide animation time remapping for testing purposes. */
+	        mock: false,
+	        version: { major: 1, minor: 2, patch: 2 },
+	        /* Set to 1 or 2 (most verbose) to output debug info to console. */
+	        debug: false
+	    };
+	
+	    /* Retrieve the appropriate scroll anchor and property name for the browser: https://developer.mozilla.org/en-US/docs/Web/API/Window.scrollY */
+	    if (window.pageYOffset !== undefined) {
+	        Velocity.State.scrollAnchor = window;
+	        Velocity.State.scrollPropertyLeft = "pageXOffset";
+	        Velocity.State.scrollPropertyTop = "pageYOffset";
+	    } else {
+	        Velocity.State.scrollAnchor = document.documentElement || document.body.parentNode || document.body;
+	        Velocity.State.scrollPropertyLeft = "scrollLeft";
+	        Velocity.State.scrollPropertyTop = "scrollTop";
+	    }
+	
+	    /* Shorthand alias for jQuery's $.data() utility. */
+	    function Data (element) {
+	        /* Hardcode a reference to the plugin name. */
+	        var response = $.data(element, "velocity");
+	
+	        /* jQuery <=1.4.2 returns null instead of undefined when no match is found. We normalize this behavior. */
+	        return response === null ? undefined : response;
+	    };
+	
+	    /**************
+	        Easing
+	    **************/
+	
+	    /* Step easing generator. */
+	    function generateStep (steps) {
+	        return function (p) {
+	            return Math.round(p * steps) * (1 / steps);
+	        };
+	    }
+	
+	    /* Bezier curve function generator. Copyright Gaetan Renaudeau. MIT License: http://en.wikipedia.org/wiki/MIT_License */
+	    function generateBezier (mX1, mY1, mX2, mY2) {
+	        var NEWTON_ITERATIONS = 4,
+	            NEWTON_MIN_SLOPE = 0.001,
+	            SUBDIVISION_PRECISION = 0.0000001,
+	            SUBDIVISION_MAX_ITERATIONS = 10,
+	            kSplineTableSize = 11,
+	            kSampleStepSize = 1.0 / (kSplineTableSize - 1.0),
+	            float32ArraySupported = "Float32Array" in window;
+	
+	        /* Must contain four arguments. */
+	        if (arguments.length !== 4) {
+	            return false;
+	        }
+	
+	        /* Arguments must be numbers. */
+	        for (var i = 0; i < 4; ++i) {
+	            if (typeof arguments[i] !== "number" || isNaN(arguments[i]) || !isFinite(arguments[i])) {
+	                return false;
+	            }
+	        }
+	
+	        /* X values must be in the [0, 1] range. */
+	        mX1 = Math.min(mX1, 1);
+	        mX2 = Math.min(mX2, 1);
+	        mX1 = Math.max(mX1, 0);
+	        mX2 = Math.max(mX2, 0);
+	
+	        var mSampleValues = float32ArraySupported ? new Float32Array(kSplineTableSize) : new Array(kSplineTableSize);
+	
+	        function A (aA1, aA2) { return 1.0 - 3.0 * aA2 + 3.0 * aA1; }
+	        function B (aA1, aA2) { return 3.0 * aA2 - 6.0 * aA1; }
+	        function C (aA1)      { return 3.0 * aA1; }
+	
+	        function calcBezier (aT, aA1, aA2) {
+	            return ((A(aA1, aA2)*aT + B(aA1, aA2))*aT + C(aA1))*aT;
+	        }
+	
+	        function getSlope (aT, aA1, aA2) {
+	            return 3.0 * A(aA1, aA2)*aT*aT + 2.0 * B(aA1, aA2) * aT + C(aA1);
+	        }
+	
+	        function newtonRaphsonIterate (aX, aGuessT) {
+	            for (var i = 0; i < NEWTON_ITERATIONS; ++i) {
+	                var currentSlope = getSlope(aGuessT, mX1, mX2);
+	
+	                if (currentSlope === 0.0) return aGuessT;
+	
+	                var currentX = calcBezier(aGuessT, mX1, mX2) - aX;
+	                aGuessT -= currentX / currentSlope;
+	            }
+	
+	            return aGuessT;
+	        }
+	
+	        function calcSampleValues () {
+	            for (var i = 0; i < kSplineTableSize; ++i) {
+	                mSampleValues[i] = calcBezier(i * kSampleStepSize, mX1, mX2);
+	            }
+	        }
+	
+	        function binarySubdivide (aX, aA, aB) {
+	            var currentX, currentT, i = 0;
+	
+	            do {
+	                currentT = aA + (aB - aA) / 2.0;
+	                currentX = calcBezier(currentT, mX1, mX2) - aX;
+	                if (currentX > 0.0) {
+	                  aB = currentT;
+	                } else {
+	                  aA = currentT;
+	                }
+	            } while (Math.abs(currentX) > SUBDIVISION_PRECISION && ++i < SUBDIVISION_MAX_ITERATIONS);
+	
+	            return currentT;
+	        }
+	
+	        function getTForX (aX) {
+	            var intervalStart = 0.0,
+	                currentSample = 1,
+	                lastSample = kSplineTableSize - 1;
+	
+	            for (; currentSample != lastSample && mSampleValues[currentSample] <= aX; ++currentSample) {
+	                intervalStart += kSampleStepSize;
+	            }
+	
+	            --currentSample;
+	
+	            var dist = (aX - mSampleValues[currentSample]) / (mSampleValues[currentSample+1] - mSampleValues[currentSample]),
+	                guessForT = intervalStart + dist * kSampleStepSize,
+	                initialSlope = getSlope(guessForT, mX1, mX2);
+	
+	            if (initialSlope >= NEWTON_MIN_SLOPE) {
+	                return newtonRaphsonIterate(aX, guessForT);
+	            } else if (initialSlope == 0.0) {
+	                return guessForT;
+	            } else {
+	                return binarySubdivide(aX, intervalStart, intervalStart + kSampleStepSize);
+	            }
+	        }
+	
+	        var _precomputed = false;
+	
+	        function precompute() {
+	            _precomputed = true;
+	            if (mX1 != mY1 || mX2 != mY2) calcSampleValues();
+	        }
+	
+	        var f = function (aX) {
+	            if (!_precomputed) precompute();
+	            if (mX1 === mY1 && mX2 === mY2) return aX;
+	            if (aX === 0) return 0;
+	            if (aX === 1) return 1;
+	
+	            return calcBezier(getTForX(aX), mY1, mY2);
+	        };
+	
+	        f.getControlPoints = function() { return [{ x: mX1, y: mY1 }, { x: mX2, y: mY2 }]; };
+	
+	        var str = "generateBezier(" + [mX1, mY1, mX2, mY2] + ")";
+	        f.toString = function () { return str; };
+	
+	        return f;
+	    }
+	
+	    /* Runge-Kutta spring physics function generator. Adapted from Framer.js, copyright Koen Bok. MIT License: http://en.wikipedia.org/wiki/MIT_License */
+	    /* Given a tension, friction, and duration, a simulation at 60FPS will first run without a defined duration in order to calculate the full path. A second pass
+	       then adjusts the time delta -- using the relation between actual time and duration -- to calculate the path for the duration-constrained animation. */
+	    var generateSpringRK4 = (function () {
+	        function springAccelerationForState (state) {
+	            return (-state.tension * state.x) - (state.friction * state.v);
+	        }
+	
+	        function springEvaluateStateWithDerivative (initialState, dt, derivative) {
+	            var state = {
+	                x: initialState.x + derivative.dx * dt,
+	                v: initialState.v + derivative.dv * dt,
+	                tension: initialState.tension,
+	                friction: initialState.friction
+	            };
+	
+	            return { dx: state.v, dv: springAccelerationForState(state) };
+	        }
+	
+	        function springIntegrateState (state, dt) {
+	            var a = {
+	                    dx: state.v,
+	                    dv: springAccelerationForState(state)
+	                },
+	                b = springEvaluateStateWithDerivative(state, dt * 0.5, a),
+	                c = springEvaluateStateWithDerivative(state, dt * 0.5, b),
+	                d = springEvaluateStateWithDerivative(state, dt, c),
+	                dxdt = 1.0 / 6.0 * (a.dx + 2.0 * (b.dx + c.dx) + d.dx),
+	                dvdt = 1.0 / 6.0 * (a.dv + 2.0 * (b.dv + c.dv) + d.dv);
+	
+	            state.x = state.x + dxdt * dt;
+	            state.v = state.v + dvdt * dt;
+	
+	            return state;
+	        }
+	
+	        return function springRK4Factory (tension, friction, duration) {
+	
+	            var initState = {
+	                    x: -1,
+	                    v: 0,
+	                    tension: null,
+	                    friction: null
+	                },
+	                path = [0],
+	                time_lapsed = 0,
+	                tolerance = 1 / 10000,
+	                DT = 16 / 1000,
+	                have_duration, dt, last_state;
+	
+	            tension = parseFloat(tension) || 500;
+	            friction = parseFloat(friction) || 20;
+	            duration = duration || null;
+	
+	            initState.tension = tension;
+	            initState.friction = friction;
+	
+	            have_duration = duration !== null;
+	
+	            /* Calculate the actual time it takes for this animation to complete with the provided conditions. */
+	            if (have_duration) {
+	                /* Run the simulation without a duration. */
+	                time_lapsed = springRK4Factory(tension, friction);
+	                /* Compute the adjusted time delta. */
+	                dt = time_lapsed / duration * DT;
+	            } else {
+	                dt = DT;
+	            }
+	
+	            while (true) {
+	                /* Next/step function .*/
+	                last_state = springIntegrateState(last_state || initState, dt);
+	                /* Store the position. */
+	                path.push(1 + last_state.x);
+	                time_lapsed += 16;
+	                /* If the change threshold is reached, break. */
+	                if (!(Math.abs(last_state.x) > tolerance && Math.abs(last_state.v) > tolerance)) {
+	                    break;
+	                }
+	            }
+	
+	            /* If duration is not defined, return the actual time required for completing this animation. Otherwise, return a closure that holds the
+	               computed path and returns a snapshot of the position according to a given percentComplete. */
+	            return !have_duration ? time_lapsed : function(percentComplete) { return path[ (percentComplete * (path.length - 1)) | 0 ]; };
+	        };
+	    }());
+	
+	    /* jQuery easings. */
+	    Velocity.Easings = {
+	        linear: function(p) { return p; },
+	        swing: function(p) { return 0.5 - Math.cos( p * Math.PI ) / 2 },
+	        /* Bonus "spring" easing, which is a less exaggerated version of easeInOutElastic. */
+	        spring: function(p) { return 1 - (Math.cos(p * 4.5 * Math.PI) * Math.exp(-p * 6)); }
+	    };
+	
+	    /* CSS3 and Robert Penner easings. */
+	    $.each(
+	        [
+	            [ "ease", [ 0.25, 0.1, 0.25, 1.0 ] ],
+	            [ "ease-in", [ 0.42, 0.0, 1.00, 1.0 ] ],
+	            [ "ease-out", [ 0.00, 0.0, 0.58, 1.0 ] ],
+	            [ "ease-in-out", [ 0.42, 0.0, 0.58, 1.0 ] ],
+	            [ "easeInSine", [ 0.47, 0, 0.745, 0.715 ] ],
+	            [ "easeOutSine", [ 0.39, 0.575, 0.565, 1 ] ],
+	            [ "easeInOutSine", [ 0.445, 0.05, 0.55, 0.95 ] ],
+	            [ "easeInQuad", [ 0.55, 0.085, 0.68, 0.53 ] ],
+	            [ "easeOutQuad", [ 0.25, 0.46, 0.45, 0.94 ] ],
+	            [ "easeInOutQuad", [ 0.455, 0.03, 0.515, 0.955 ] ],
+	            [ "easeInCubic", [ 0.55, 0.055, 0.675, 0.19 ] ],
+	            [ "easeOutCubic", [ 0.215, 0.61, 0.355, 1 ] ],
+	            [ "easeInOutCubic", [ 0.645, 0.045, 0.355, 1 ] ],
+	            [ "easeInQuart", [ 0.895, 0.03, 0.685, 0.22 ] ],
+	            [ "easeOutQuart", [ 0.165, 0.84, 0.44, 1 ] ],
+	            [ "easeInOutQuart", [ 0.77, 0, 0.175, 1 ] ],
+	            [ "easeInQuint", [ 0.755, 0.05, 0.855, 0.06 ] ],
+	            [ "easeOutQuint", [ 0.23, 1, 0.32, 1 ] ],
+	            [ "easeInOutQuint", [ 0.86, 0, 0.07, 1 ] ],
+	            [ "easeInExpo", [ 0.95, 0.05, 0.795, 0.035 ] ],
+	            [ "easeOutExpo", [ 0.19, 1, 0.22, 1 ] ],
+	            [ "easeInOutExpo", [ 1, 0, 0, 1 ] ],
+	            [ "easeInCirc", [ 0.6, 0.04, 0.98, 0.335 ] ],
+	            [ "easeOutCirc", [ 0.075, 0.82, 0.165, 1 ] ],
+	            [ "easeInOutCirc", [ 0.785, 0.135, 0.15, 0.86 ] ]
+	        ], function(i, easingArray) {
+	            Velocity.Easings[easingArray[0]] = generateBezier.apply(null, easingArray[1]);
+	        });
+	
+	    /* Determine the appropriate easing type given an easing input. */
+	    function getEasing(value, duration) {
+	        var easing = value;
+	
+	        /* The easing option can either be a string that references a pre-registered easing,
+	           or it can be a two-/four-item array of integers to be converted into a bezier/spring function. */
+	        if (Type.isString(value)) {
+	            /* Ensure that the easing has been assigned to jQuery's Velocity.Easings object. */
+	            if (!Velocity.Easings[value]) {
+	                easing = false;
+	            }
+	        } else if (Type.isArray(value) && value.length === 1) {
+	            easing = generateStep.apply(null, value);
+	        } else if (Type.isArray(value) && value.length === 2) {
+	            /* springRK4 must be passed the animation's duration. */
+	            /* Note: If the springRK4 array contains non-numbers, generateSpringRK4() returns an easing
+	               function generated with default tension and friction values. */
+	            easing = generateSpringRK4.apply(null, value.concat([ duration ]));
+	        } else if (Type.isArray(value) && value.length === 4) {
+	            /* Note: If the bezier array contains non-numbers, generateBezier() returns false. */
+	            easing = generateBezier.apply(null, value);
+	        } else {
+	            easing = false;
+	        }
+	
+	        /* Revert to the Velocity-wide default easing type, or fall back to "swing" (which is also jQuery's default)
+	           if the Velocity-wide default has been incorrectly modified. */
+	        if (easing === false) {
+	            if (Velocity.Easings[Velocity.defaults.easing]) {
+	                easing = Velocity.defaults.easing;
+	            } else {
+	                easing = EASING_DEFAULT;
+	            }
+	        }
+	
+	        return easing;
+	    }
+	
+	    /*****************
+	        CSS Stack
+	    *****************/
+	
+	    /* The CSS object is a highly condensed and performant CSS stack that fully replaces jQuery's.
+	       It handles the validation, getting, and setting of both standard CSS properties and CSS property hooks. */
+	    /* Note: A "CSS" shorthand is aliased so that our code is easier to read. */
+	    var CSS = Velocity.CSS = {
+	
+	        /*************
+	            RegEx
+	        *************/
+	
+	        RegEx: {
+	            isHex: /^#([A-f\d]{3}){1,2}$/i,
+	            /* Unwrap a property value's surrounding text, e.g. "rgba(4, 3, 2, 1)" ==> "4, 3, 2, 1" and "rect(4px 3px 2px 1px)" ==> "4px 3px 2px 1px". */
+	            valueUnwrap: /^[A-z]+\((.*)\)$/i,
+	            wrappedValueAlreadyExtracted: /[0-9.]+ [0-9.]+ [0-9.]+( [0-9.]+)?/,
+	            /* Split a multi-value property into an array of subvalues, e.g. "rgba(4, 3, 2, 1) 4px 3px 2px 1px" ==> [ "rgba(4, 3, 2, 1)", "4px", "3px", "2px", "1px" ]. */
+	            valueSplit: /([A-z]+\(.+\))|(([A-z0-9#-.]+?)(?=\s|$))/ig
+	        },
+	
+	        /************
+	            Lists
+	        ************/
+	
+	        Lists: {
+	            colors: [ "fill", "stroke", "stopColor", "color", "backgroundColor", "borderColor", "borderTopColor", "borderRightColor", "borderBottomColor", "borderLeftColor", "outlineColor" ],
+	            transformsBase: [ "translateX", "translateY", "scale", "scaleX", "scaleY", "skewX", "skewY", "rotateZ" ],
+	            transforms3D: [ "transformPerspective", "translateZ", "scaleZ", "rotateX", "rotateY" ]
+	        },
+	
+	        /************
+	            Hooks
+	        ************/
+	
+	        /* Hooks allow a subproperty (e.g. "boxShadowBlur") of a compound-value CSS property
+	           (e.g. "boxShadow: X Y Blur Spread Color") to be animated as if it were a discrete property. */
+	        /* Note: Beyond enabling fine-grained property animation, hooking is necessary since Velocity only
+	           tweens properties with single numeric values; unlike CSS transitions, Velocity does not interpolate compound-values. */
+	        Hooks: {
+	            /********************
+	                Registration
+	            ********************/
+	
+	            /* Templates are a concise way of indicating which subproperties must be individually registered for each compound-value CSS property. */
+	            /* Each template consists of the compound-value's base name, its constituent subproperty names, and those subproperties' default values. */
+	            templates: {
+	                "textShadow": [ "Color X Y Blur", "black 0px 0px 0px" ],
+	                "boxShadow": [ "Color X Y Blur Spread", "black 0px 0px 0px 0px" ],
+	                "clip": [ "Top Right Bottom Left", "0px 0px 0px 0px" ],
+	                "backgroundPosition": [ "X Y", "0% 0%" ],
+	                "transformOrigin": [ "X Y Z", "50% 50% 0px" ],
+	                "perspectiveOrigin": [ "X Y", "50% 50%" ]
+	            },
+	
+	            /* A "registered" hook is one that has been converted from its template form into a live,
+	               tweenable property. It contains data to associate it with its root property. */
+	            registered: {
+	                /* Note: A registered hook looks like this ==> textShadowBlur: [ "textShadow", 3 ],
+	                   which consists of the subproperty's name, the associated root property's name,
+	                   and the subproperty's position in the root's value. */
+	            },
+	            /* Convert the templates into individual hooks then append them to the registered object above. */
+	            register: function () {
+	                /* Color hooks registration: Colors are defaulted to white -- as opposed to black -- since colors that are
+	                   currently set to "transparent" default to their respective template below when color-animated,
+	                   and white is typically a closer match to transparent than black is. An exception is made for text ("color"),
+	                   which is almost always set closer to black than white. */
+	                for (var i = 0; i < CSS.Lists.colors.length; i++) {
+	                    var rgbComponents = (CSS.Lists.colors[i] === "color") ? "0 0 0 1" : "255 255 255 1";
+	                    CSS.Hooks.templates[CSS.Lists.colors[i]] = [ "Red Green Blue Alpha", rgbComponents ];
+	                }
+	
+	                var rootProperty,
+	                    hookTemplate,
+	                    hookNames;
+	
+	                /* In IE, color values inside compound-value properties are positioned at the end the value instead of at the beginning.
+	                   Thus, we re-arrange the templates accordingly. */
+	                if (IE) {
+	                    for (rootProperty in CSS.Hooks.templates) {
+	                        hookTemplate = CSS.Hooks.templates[rootProperty];
+	                        hookNames = hookTemplate[0].split(" ");
+	
+	                        var defaultValues = hookTemplate[1].match(CSS.RegEx.valueSplit);
+	
+	                        if (hookNames[0] === "Color") {
+	                            /* Reposition both the hook's name and its default value to the end of their respective strings. */
+	                            hookNames.push(hookNames.shift());
+	                            defaultValues.push(defaultValues.shift());
+	
+	                            /* Replace the existing template for the hook's root property. */
+	                            CSS.Hooks.templates[rootProperty] = [ hookNames.join(" "), defaultValues.join(" ") ];
+	                        }
+	                    }
+	                }
+	
+	                /* Hook registration. */
+	                for (rootProperty in CSS.Hooks.templates) {
+	                    hookTemplate = CSS.Hooks.templates[rootProperty];
+	                    hookNames = hookTemplate[0].split(" ");
+	
+	                    for (var i in hookNames) {
+	                        var fullHookName = rootProperty + hookNames[i],
+	                            hookPosition = i;
+	
+	                        /* For each hook, register its full name (e.g. textShadowBlur) with its root property (e.g. textShadow)
+	                           and the hook's position in its template's default value string. */
+	                        CSS.Hooks.registered[fullHookName] = [ rootProperty, hookPosition ];
+	                    }
+	                }
+	            },
+	
+	            /*****************************
+	               Injection and Extraction
+	            *****************************/
+	
+	            /* Look up the root property associated with the hook (e.g. return "textShadow" for "textShadowBlur"). */
+	            /* Since a hook cannot be set directly (the browser won't recognize it), style updating for hooks is routed through the hook's root property. */
+	            getRoot: function (property) {
+	                var hookData = CSS.Hooks.registered[property];
+	
+	                if (hookData) {
+	                    return hookData[0];
+	                } else {
+	                    /* If there was no hook match, return the property name untouched. */
+	                    return property;
+	                }
+	            },
+	            /* Convert any rootPropertyValue, null or otherwise, into a space-delimited list of hook values so that
+	               the targeted hook can be injected or extracted at its standard position. */
+	            cleanRootPropertyValue: function(rootProperty, rootPropertyValue) {
+	                /* If the rootPropertyValue is wrapped with "rgb()", "clip()", etc., remove the wrapping to normalize the value before manipulation. */
+	                if (CSS.RegEx.valueUnwrap.test(rootPropertyValue)) {
+	                    rootPropertyValue = rootPropertyValue.match(CSS.RegEx.valueUnwrap)[1];
+	                }
+	
+	                /* If rootPropertyValue is a CSS null-value (from which there's inherently no hook value to extract),
+	                   default to the root's default value as defined in CSS.Hooks.templates. */
+	                /* Note: CSS null-values include "none", "auto", and "transparent". They must be converted into their
+	                   zero-values (e.g. textShadow: "none" ==> textShadow: "0px 0px 0px black") for hook manipulation to proceed. */
+	                if (CSS.Values.isCSSNullValue(rootPropertyValue)) {
+	                    rootPropertyValue = CSS.Hooks.templates[rootProperty][1];
+	                }
+	
+	                return rootPropertyValue;
+	            },
+	            /* Extracted the hook's value from its root property's value. This is used to get the starting value of an animating hook. */
+	            extractValue: function (fullHookName, rootPropertyValue) {
+	                var hookData = CSS.Hooks.registered[fullHookName];
+	
+	                if (hookData) {
+	                    var hookRoot = hookData[0],
+	                        hookPosition = hookData[1];
+	
+	                    rootPropertyValue = CSS.Hooks.cleanRootPropertyValue(hookRoot, rootPropertyValue);
+	
+	                    /* Split rootPropertyValue into its constituent hook values then grab the desired hook at its standard position. */
+	                    return rootPropertyValue.toString().match(CSS.RegEx.valueSplit)[hookPosition];
+	                } else {
+	                    /* If the provided fullHookName isn't a registered hook, return the rootPropertyValue that was passed in. */
+	                    return rootPropertyValue;
+	                }
+	            },
+	            /* Inject the hook's value into its root property's value. This is used to piece back together the root property
+	               once Velocity has updated one of its individually hooked values through tweening. */
+	            injectValue: function (fullHookName, hookValue, rootPropertyValue) {
+	                var hookData = CSS.Hooks.registered[fullHookName];
+	
+	                if (hookData) {
+	                    var hookRoot = hookData[0],
+	                        hookPosition = hookData[1],
+	                        rootPropertyValueParts,
+	                        rootPropertyValueUpdated;
+	
+	                    rootPropertyValue = CSS.Hooks.cleanRootPropertyValue(hookRoot, rootPropertyValue);
+	
+	                    /* Split rootPropertyValue into its individual hook values, replace the targeted value with hookValue,
+	                       then reconstruct the rootPropertyValue string. */
+	                    rootPropertyValueParts = rootPropertyValue.toString().match(CSS.RegEx.valueSplit);
+	                    rootPropertyValueParts[hookPosition] = hookValue;
+	                    rootPropertyValueUpdated = rootPropertyValueParts.join(" ");
+	
+	                    return rootPropertyValueUpdated;
+	                } else {
+	                    /* If the provided fullHookName isn't a registered hook, return the rootPropertyValue that was passed in. */
+	                    return rootPropertyValue;
+	                }
+	            }
+	        },
+	
+	        /*******************
+	           Normalizations
+	        *******************/
+	
+	        /* Normalizations standardize CSS property manipulation by pollyfilling browser-specific implementations (e.g. opacity)
+	           and reformatting special properties (e.g. clip, rgba) to look like standard ones. */
+	        Normalizations: {
+	            /* Normalizations are passed a normalization target (either the property's name, its extracted value, or its injected value),
+	               the targeted element (which may need to be queried), and the targeted property value. */
+	            registered: {
+	                clip: function (type, element, propertyValue) {
+	                    switch (type) {
+	                        case "name":
+	                            return "clip";
+	                        /* Clip needs to be unwrapped and stripped of its commas during extraction. */
+	                        case "extract":
+	                            var extracted;
+	
+	                            /* If Velocity also extracted this value, skip extraction. */
+	                            if (CSS.RegEx.wrappedValueAlreadyExtracted.test(propertyValue)) {
+	                                extracted = propertyValue;
+	                            } else {
+	                                /* Remove the "rect()" wrapper. */
+	                                extracted = propertyValue.toString().match(CSS.RegEx.valueUnwrap);
+	
+	                                /* Strip off commas. */
+	                                extracted = extracted ? extracted[1].replace(/,(\s+)?/g, " ") : propertyValue;
+	                            }
+	
+	                            return extracted;
+	                        /* Clip needs to be re-wrapped during injection. */
+	                        case "inject":
+	                            return "rect(" + propertyValue + ")";
+	                    }
+	                },
+	
+	                blur: function(type, element, propertyValue) {
+	                    switch (type) {
+	                        case "name":
+	                            return Velocity.State.isFirefox ? "filter" : "-webkit-filter";
+	                        case "extract":
+	                            var extracted = parseFloat(propertyValue);
+	
+	                            /* If extracted is NaN, meaning the value isn't already extracted. */
+	                            if (!(extracted || extracted === 0)) {
+	                                var blurComponent = propertyValue.toString().match(/blur\(([0-9]+[A-z]+)\)/i);
+	
+	                                /* If the filter string had a blur component, return just the blur value and unit type. */
+	                                if (blurComponent) {
+	                                    extracted = blurComponent[1];
+	                                /* If the component doesn't exist, default blur to 0. */
+	                                } else {
+	                                    extracted = 0;
+	                                }
+	                            }
+	
+	                            return extracted;
+	                        /* Blur needs to be re-wrapped during injection. */
+	                        case "inject":
+	                            /* For the blur effect to be fully de-applied, it needs to be set to "none" instead of 0. */
+	                            if (!parseFloat(propertyValue)) {
+	                                return "none";
+	                            } else {
+	                                return "blur(" + propertyValue + ")";
+	                            }
+	                    }
+	                },
+	
+	                /* <=IE8 do not support the standard opacity property. They use filter:alpha(opacity=INT) instead. */
+	                opacity: function (type, element, propertyValue) {
+	                    if (IE <= 8) {
+	                        switch (type) {
+	                            case "name":
+	                                return "filter";
+	                            case "extract":
+	                                /* <=IE8 return a "filter" value of "alpha(opacity=\d{1,3})".
+	                                   Extract the value and convert it to a decimal value to match the standard CSS opacity property's formatting. */
+	                                var extracted = propertyValue.toString().match(/alpha\(opacity=(.*)\)/i);
+	
+	                                if (extracted) {
+	                                    /* Convert to decimal value. */
+	                                    propertyValue = extracted[1] / 100;
+	                                } else {
+	                                    /* When extracting opacity, default to 1 since a null value means opacity hasn't been set. */
+	                                    propertyValue = 1;
+	                                }
+	
+	                                return propertyValue;
+	                            case "inject":
+	                                /* Opacified elements are required to have their zoom property set to a non-zero value. */
+	                                element.style.zoom = 1;
+	
+	                                /* Setting the filter property on elements with certain font property combinations can result in a
+	                                   highly unappealing ultra-bolding effect. There's no way to remedy this throughout a tween, but dropping the
+	                                   value altogether (when opacity hits 1) at leasts ensures that the glitch is gone post-tweening. */
+	                                if (parseFloat(propertyValue) >= 1) {
+	                                    return "";
+	                                } else {
+	                                  /* As per the filter property's spec, convert the decimal value to a whole number and wrap the value. */
+	                                  return "alpha(opacity=" + parseInt(parseFloat(propertyValue) * 100, 10) + ")";
+	                                }
+	                        }
+	                    /* With all other browsers, normalization is not required; return the same values that were passed in. */
+	                    } else {
+	                        switch (type) {
+	                            case "name":
+	                                return "opacity";
+	                            case "extract":
+	                                return propertyValue;
+	                            case "inject":
+	                                return propertyValue;
+	                        }
+	                    }
+	                }
+	            },
+	
+	            /*****************************
+	                Batched Registrations
+	            *****************************/
+	
+	            /* Note: Batched normalizations extend the CSS.Normalizations.registered object. */
+	            register: function () {
+	
+	                /*****************
+	                    Transforms
+	                *****************/
+	
+	                /* Transforms are the subproperties contained by the CSS "transform" property. Transforms must undergo normalization
+	                   so that they can be referenced in a properties map by their individual names. */
+	                /* Note: When transforms are "set", they are actually assigned to a per-element transformCache. When all transform
+	                   setting is complete complete, CSS.flushTransformCache() must be manually called to flush the values to the DOM.
+	                   Transform setting is batched in this way to improve performance: the transform style only needs to be updated
+	                   once when multiple transform subproperties are being animated simultaneously. */
+	                /* Note: IE9 and Android Gingerbread have support for 2D -- but not 3D -- transforms. Since animating unsupported
+	                   transform properties results in the browser ignoring the *entire* transform string, we prevent these 3D values
+	                   from being normalized for these browsers so that tweening skips these properties altogether
+	                   (since it will ignore them as being unsupported by the browser.) */
+	                if (!(IE <= 9) && !Velocity.State.isGingerbread) {
+	                    /* Note: Since the standalone CSS "perspective" property and the CSS transform "perspective" subproperty
+	                    share the same name, the latter is given a unique token within Velocity: "transformPerspective". */
+	                    CSS.Lists.transformsBase = CSS.Lists.transformsBase.concat(CSS.Lists.transforms3D);
+	                }
+	
+	                for (var i = 0; i < CSS.Lists.transformsBase.length; i++) {
+	                    /* Wrap the dynamically generated normalization function in a new scope so that transformName's value is
+	                    paired with its respective function. (Otherwise, all functions would take the final for loop's transformName.) */
+	                    (function() {
+	                        var transformName = CSS.Lists.transformsBase[i];
+	
+	                        CSS.Normalizations.registered[transformName] = function (type, element, propertyValue) {
+	                            switch (type) {
+	                                /* The normalized property name is the parent "transform" property -- the property that is actually set in CSS. */
+	                                case "name":
+	                                    return "transform";
+	                                /* Transform values are cached onto a per-element transformCache object. */
+	                                case "extract":
+	                                    /* If this transform has yet to be assigned a value, return its null value. */
+	                                    if (Data(element) === undefined || Data(element).transformCache[transformName] === undefined) {
+	                                        /* Scale CSS.Lists.transformsBase default to 1 whereas all other transform properties default to 0. */
+	                                        return /^scale/i.test(transformName) ? 1 : 0;
+	                                    /* When transform values are set, they are wrapped in parentheses as per the CSS spec.
+	                                       Thus, when extracting their values (for tween calculations), we strip off the parentheses. */
+	                                    } else {
+	                                        return Data(element).transformCache[transformName].replace(/[()]/g, "");
+	                                    }
+	                                case "inject":
+	                                    var invalid = false;
+	
+	                                    /* If an individual transform property contains an unsupported unit type, the browser ignores the *entire* transform property.
+	                                       Thus, protect users from themselves by skipping setting for transform values supplied with invalid unit types. */
+	                                    /* Switch on the base transform type; ignore the axis by removing the last letter from the transform's name. */
+	                                    switch (transformName.substr(0, transformName.length - 1)) {
+	                                        /* Whitelist unit types for each transform. */
+	                                        case "translate":
+	                                            invalid = !/(%|px|em|rem|vw|vh|\d)$/i.test(propertyValue);
+	                                            break;
+	                                        /* Since an axis-free "scale" property is supported as well, a little hack is used here to detect it by chopping off its last letter. */
+	                                        case "scal":
+	                                        case "scale":
+	                                            /* Chrome on Android has a bug in which scaled elements blur if their initial scale
+	                                               value is below 1 (which can happen with forcefeeding). Thus, we detect a yet-unset scale property
+	                                               and ensure that its first value is always 1. More info: http://stackoverflow.com/questions/10417890/css3-animations-with-transform-causes-blurred-elements-on-webkit/10417962#10417962 */
+	                                            if (Velocity.State.isAndroid && Data(element).transformCache[transformName] === undefined && propertyValue < 1) {
+	                                                propertyValue = 1;
+	                                            }
+	
+	                                            invalid = !/(\d)$/i.test(propertyValue);
+	                                            break;
+	                                        case "skew":
+	                                            invalid = !/(deg|\d)$/i.test(propertyValue);
+	                                            break;
+	                                        case "rotate":
+	                                            invalid = !/(deg|\d)$/i.test(propertyValue);
+	                                            break;
+	                                    }
+	
+	                                    if (!invalid) {
+	                                        /* As per the CSS spec, wrap the value in parentheses. */
+	                                        Data(element).transformCache[transformName] = "(" + propertyValue + ")";
+	                                    }
+	
+	                                    /* Although the value is set on the transformCache object, return the newly-updated value for the calling code to process as normal. */
+	                                    return Data(element).transformCache[transformName];
+	                            }
+	                        };
+	                    })();
+	                }
+	
+	                /*************
+	                    Colors
+	                *************/
+	
+	                /* Since Velocity only animates a single numeric value per property, color animation is achieved by hooking the individual RGBA components of CSS color properties.
+	                   Accordingly, color values must be normalized (e.g. "#ff0000", "red", and "rgb(255, 0, 0)" ==> "255 0 0 1") so that their components can be injected/extracted by CSS.Hooks logic. */
+	                for (var i = 0; i < CSS.Lists.colors.length; i++) {
+	                    /* Wrap the dynamically generated normalization function in a new scope so that colorName's value is paired with its respective function.
+	                       (Otherwise, all functions would take the final for loop's colorName.) */
+	                    (function () {
+	                        var colorName = CSS.Lists.colors[i];
+	
+	                        /* Note: In IE<=8, which support rgb but not rgba, color properties are reverted to rgb by stripping off the alpha component. */
+	                        CSS.Normalizations.registered[colorName] = function(type, element, propertyValue) {
+	                            switch (type) {
+	                                case "name":
+	                                    return colorName;
+	                                /* Convert all color values into the rgb format. (Old IE can return hex values and color names instead of rgb/rgba.) */
+	                                case "extract":
+	                                    var extracted;
+	
+	                                    /* If the color is already in its hookable form (e.g. "255 255 255 1") due to having been previously extracted, skip extraction. */
+	                                    if (CSS.RegEx.wrappedValueAlreadyExtracted.test(propertyValue)) {
+	                                        extracted = propertyValue;
+	                                    } else {
+	                                        var converted,
+	                                            colorNames = {
+	                                                black: "rgb(0, 0, 0)",
+	                                                blue: "rgb(0, 0, 255)",
+	                                                gray: "rgb(128, 128, 128)",
+	                                                green: "rgb(0, 128, 0)",
+	                                                red: "rgb(255, 0, 0)",
+	                                                white: "rgb(255, 255, 255)"
+	                                            };
+	
+	                                        /* Convert color names to rgb. */
+	                                        if (/^[A-z]+$/i.test(propertyValue)) {
+	                                            if (colorNames[propertyValue] !== undefined) {
+	                                                converted = colorNames[propertyValue]
+	                                            } else {
+	                                                /* If an unmatched color name is provided, default to black. */
+	                                                converted = colorNames.black;
+	                                            }
+	                                        /* Convert hex values to rgb. */
+	                                        } else if (CSS.RegEx.isHex.test(propertyValue)) {
+	                                            converted = "rgb(" + CSS.Values.hexToRgb(propertyValue).join(" ") + ")";
+	                                        /* If the provided color doesn't match any of the accepted color formats, default to black. */
+	                                        } else if (!(/^rgba?\(/i.test(propertyValue))) {
+	                                            converted = colorNames.black;
+	                                        }
+	
+	                                        /* Remove the surrounding "rgb/rgba()" string then replace commas with spaces and strip
+	                                           repeated spaces (in case the value included spaces to begin with). */
+	                                        extracted = (converted || propertyValue).toString().match(CSS.RegEx.valueUnwrap)[1].replace(/,(\s+)?/g, " ");
+	                                    }
+	
+	                                    /* So long as this isn't <=IE8, add a fourth (alpha) component if it's missing and default it to 1 (visible). */
+	                                    if (!(IE <= 8) && extracted.split(" ").length === 3) {
+	                                        extracted += " 1";
+	                                    }
+	
+	                                    return extracted;
+	                                case "inject":
+	                                    /* If this is IE<=8 and an alpha component exists, strip it off. */
+	                                    if (IE <= 8) {
+	                                        if (propertyValue.split(" ").length === 4) {
+	                                            propertyValue = propertyValue.split(/\s+/).slice(0, 3).join(" ");
+	                                        }
+	                                    /* Otherwise, add a fourth (alpha) component if it's missing and default it to 1 (visible). */
+	                                    } else if (propertyValue.split(" ").length === 3) {
+	                                        propertyValue += " 1";
+	                                    }
+	
+	                                    /* Re-insert the browser-appropriate wrapper("rgb/rgba()"), insert commas, and strip off decimal units
+	                                       on all values but the fourth (R, G, and B only accept whole numbers). */
+	                                    return (IE <= 8 ? "rgb" : "rgba") + "(" + propertyValue.replace(/\s+/g, ",").replace(/\.(\d)+(?=,)/g, "") + ")";
+	                            }
+	                        };
+	                    })();
+	                }
+	            }
+	        },
+	
+	        /************************
+	           CSS Property Names
+	        ************************/
+	
+	        Names: {
+	            /* Camelcase a property name into its JavaScript notation (e.g. "background-color" ==> "backgroundColor").
+	               Camelcasing is used to normalize property names between and across calls. */
+	            camelCase: function (property) {
+	                return property.replace(/-(\w)/g, function (match, subMatch) {
+	                    return subMatch.toUpperCase();
+	                });
+	            },
+	
+	            /* For SVG elements, some properties (namely, dimensional ones) are GET/SET via the element's HTML attributes (instead of via CSS styles). */
+	            SVGAttribute: function (property) {
+	                var SVGAttributes = "width|height|x|y|cx|cy|r|rx|ry|x1|x2|y1|y2";
+	
+	                /* Certain browsers require an SVG transform to be applied as an attribute. (Otherwise, application via CSS is preferable due to 3D support.) */
+	                if (IE || (Velocity.State.isAndroid && !Velocity.State.isChrome)) {
+	                    SVGAttributes += "|transform";
+	                }
+	
+	                return new RegExp("^(" + SVGAttributes + ")$", "i").test(property);
+	            },
+	
+	            /* Determine whether a property should be set with a vendor prefix. */
+	            /* If a prefixed version of the property exists, return it. Otherwise, return the original property name.
+	               If the property is not at all supported by the browser, return a false flag. */
+	            prefixCheck: function (property) {
+	                /* If this property has already been checked, return the cached value. */
+	                if (Velocity.State.prefixMatches[property]) {
+	                    return [ Velocity.State.prefixMatches[property], true ];
+	                } else {
+	                    var vendors = [ "", "Webkit", "Moz", "ms", "O" ];
+	
+	                    for (var i = 0, vendorsLength = vendors.length; i < vendorsLength; i++) {
+	                        var propertyPrefixed;
+	
+	                        if (i === 0) {
+	                            propertyPrefixed = property;
+	                        } else {
+	                            /* Capitalize the first letter of the property to conform to JavaScript vendor prefix notation (e.g. webkitFilter). */
+	                            propertyPrefixed = vendors[i] + property.replace(/^\w/, function(match) { return match.toUpperCase(); });
+	                        }
+	
+	                        /* Check if the browser supports this property as prefixed. */
+	                        if (Type.isString(Velocity.State.prefixElement.style[propertyPrefixed])) {
+	                            /* Cache the match. */
+	                            Velocity.State.prefixMatches[property] = propertyPrefixed;
+	
+	                            return [ propertyPrefixed, true ];
+	                        }
+	                    }
+	
+	                    /* If the browser doesn't support this property in any form, include a false flag so that the caller can decide how to proceed. */
+	                    return [ property, false ];
+	                }
+	            }
+	        },
+	
+	        /************************
+	           CSS Property Values
+	        ************************/
+	
+	        Values: {
+	            /* Hex to RGB conversion. Copyright Tim Down: http://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb */
+	            hexToRgb: function (hex) {
+	                var shortformRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i,
+	                    longformRegex = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i,
+	                    rgbParts;
+	
+	                hex = hex.replace(shortformRegex, function (m, r, g, b) {
+	                    return r + r + g + g + b + b;
+	                });
+	
+	                rgbParts = longformRegex.exec(hex);
+	
+	                return rgbParts ? [ parseInt(rgbParts[1], 16), parseInt(rgbParts[2], 16), parseInt(rgbParts[3], 16) ] : [ 0, 0, 0 ];
+	            },
+	
+	            isCSSNullValue: function (value) {
+	                /* The browser defaults CSS values that have not been set to either 0 or one of several possible null-value strings.
+	                   Thus, we check for both falsiness and these special strings. */
+	                /* Null-value checking is performed to default the special strings to 0 (for the sake of tweening) or their hook
+	                   templates as defined as CSS.Hooks (for the sake of hook injection/extraction). */
+	                /* Note: Chrome returns "rgba(0, 0, 0, 0)" for an undefined color whereas IE returns "transparent". */
+	                return (value == 0 || /^(none|auto|transparent|(rgba\(0, ?0, ?0, ?0\)))$/i.test(value));
+	            },
+	
+	            /* Retrieve a property's default unit type. Used for assigning a unit type when one is not supplied by the user. */
+	            getUnitType: function (property) {
+	                if (/^(rotate|skew)/i.test(property)) {
+	                    return "deg";
+	                } else if (/(^(scale|scaleX|scaleY|scaleZ|alpha|flexGrow|flexHeight|zIndex|fontWeight)$)|((opacity|red|green|blue|alpha)$)/i.test(property)) {
+	                    /* The above properties are unitless. */
+	                    return "";
+	                } else {
+	                    /* Default to px for all other properties. */
+	                    return "px";
+	                }
+	            },
+	
+	            /* HTML elements default to an associated display type when they're not set to display:none. */
+	            /* Note: This function is used for correctly setting the non-"none" display value in certain Velocity redirects, such as fadeIn/Out. */
+	            getDisplayType: function (element) {
+	                var tagName = element && element.tagName.toString().toLowerCase();
+	
+	                if (/^(b|big|i|small|tt|abbr|acronym|cite|code|dfn|em|kbd|strong|samp|var|a|bdo|br|img|map|object|q|script|span|sub|sup|button|input|label|select|textarea)$/i.test(tagName)) {
+	                    return "inline";
+	                } else if (/^(li)$/i.test(tagName)) {
+	                    return "list-item";
+	                } else if (/^(tr)$/i.test(tagName)) {
+	                    return "table-row";
+	                } else if (/^(table)$/i.test(tagName)) {
+	                    return "table";
+	                } else if (/^(tbody)$/i.test(tagName)) {
+	                    return "table-row-group";
+	                /* Default to "block" when no match is found. */
+	                } else {
+	                    return "block";
+	                }
+	            },
+	
+	            /* The class add/remove functions are used to temporarily apply a "velocity-animating" class to elements while they're animating. */
+	            addClass: function (element, className) {
+	                if (element.classList) {
+	                    element.classList.add(className);
+	                } else {
+	                    element.className += (element.className.length ? " " : "") + className;
+	                }
+	            },
+	
+	            removeClass: function (element, className) {
+	                if (element.classList) {
+	                    element.classList.remove(className);
+	                } else {
+	                    element.className = element.className.toString().replace(new RegExp("(^|\\s)" + className.split(" ").join("|") + "(\\s|$)", "gi"), " ");
+	                }
+	            }
+	        },
+	
+	        /****************************
+	           Style Getting & Setting
+	        ****************************/
+	
+	        /* The singular getPropertyValue, which routes the logic for all normalizations, hooks, and standard CSS properties. */
+	        getPropertyValue: function (element, property, rootPropertyValue, forceStyleLookup) {
+	            /* Get an element's computed property value. */
+	            /* Note: Retrieving the value of a CSS property cannot simply be performed by checking an element's
+	               style attribute (which only reflects user-defined values). Instead, the browser must be queried for a property's
+	               *computed* value. You can read more about getComputedStyle here: https://developer.mozilla.org/en/docs/Web/API/window.getComputedStyle */
+	            function computePropertyValue (element, property) {
+	                /* When box-sizing isn't set to border-box, height and width style values are incorrectly computed when an
+	                   element's scrollbars are visible (which expands the element's dimensions). Thus, we defer to the more accurate
+	                   offsetHeight/Width property, which includes the total dimensions for interior, border, padding, and scrollbar.
+	                   We subtract border and padding to get the sum of interior + scrollbar. */
+	                var computedValue = 0;
+	
+	                /* IE<=8 doesn't support window.getComputedStyle, thus we defer to jQuery, which has an extensive array
+	                   of hacks to accurately retrieve IE8 property values. Re-implementing that logic here is not worth bloating the
+	                   codebase for a dying browser. The performance repercussions of using jQuery here are minimal since
+	                   Velocity is optimized to rarely (and sometimes never) query the DOM. Further, the $.css() codepath isn't that slow. */
+	                if (IE <= 8) {
+	                    computedValue = $.css(element, property); /* GET */
+	                /* All other browsers support getComputedStyle. The returned live object reference is cached onto its
+	                   associated element so that it does not need to be refetched upon every GET. */
+	                } else {
+	                    /* Browsers do not return height and width values for elements that are set to display:"none". Thus, we temporarily
+	                       toggle display to the element type's default value. */
+	                    var toggleDisplay = false;
+	
+	                    if (/^(width|height)$/.test(property) && CSS.getPropertyValue(element, "display") === 0) {
+	                        toggleDisplay = true;
+	                        CSS.setPropertyValue(element, "display", CSS.Values.getDisplayType(element));
+	                    }
+	
+	                    function revertDisplay () {
+	                        if (toggleDisplay) {
+	                            CSS.setPropertyValue(element, "display", "none");
+	                        }
+	                    }
+	
+	                    if (!forceStyleLookup) {
+	                        if (property === "height" && CSS.getPropertyValue(element, "boxSizing").toString().toLowerCase() !== "border-box") {
+	                            var contentBoxHeight = element.offsetHeight - (parseFloat(CSS.getPropertyValue(element, "borderTopWidth")) || 0) - (parseFloat(CSS.getPropertyValue(element, "borderBottomWidth")) || 0) - (parseFloat(CSS.getPropertyValue(element, "paddingTop")) || 0) - (parseFloat(CSS.getPropertyValue(element, "paddingBottom")) || 0);
+	                            revertDisplay();
+	
+	                            return contentBoxHeight;
+	                        } else if (property === "width" && CSS.getPropertyValue(element, "boxSizing").toString().toLowerCase() !== "border-box") {
+	                            var contentBoxWidth = element.offsetWidth - (parseFloat(CSS.getPropertyValue(element, "borderLeftWidth")) || 0) - (parseFloat(CSS.getPropertyValue(element, "borderRightWidth")) || 0) - (parseFloat(CSS.getPropertyValue(element, "paddingLeft")) || 0) - (parseFloat(CSS.getPropertyValue(element, "paddingRight")) || 0);
+	                            revertDisplay();
+	
+	                            return contentBoxWidth;
+	                        }
+	                    }
+	
+	                    var computedStyle;
+	
+	                    /* For elements that Velocity hasn't been called on directly (e.g. when Velocity queries the DOM on behalf
+	                       of a parent of an element its animating), perform a direct getComputedStyle lookup since the object isn't cached. */
+	                    if (Data(element) === undefined) {
+	                        computedStyle = window.getComputedStyle(element, null); /* GET */
+	                    /* If the computedStyle object has yet to be cached, do so now. */
+	                    } else if (!Data(element).computedStyle) {
+	                        computedStyle = Data(element).computedStyle = window.getComputedStyle(element, null); /* GET */
+	                    /* If computedStyle is cached, use it. */
+	                    } else {
+	                        computedStyle = Data(element).computedStyle;
+	                    }
+	
+	                    /* IE and Firefox do not return a value for the generic borderColor -- they only return individual values for each border side's color.
+	                       Also, in all browsers, when border colors aren't all the same, a compound value is returned that Velocity isn't setup to parse.
+	                       So, as a polyfill for querying individual border side colors, we just return the top border's color and animate all borders from that value. */
+	                    if (property === "borderColor") {
+	                        property = "borderTopColor";
+	                    }
+	
+	                    /* IE9 has a bug in which the "filter" property must be accessed from computedStyle using the getPropertyValue method
+	                       instead of a direct property lookup. The getPropertyValue method is slower than a direct lookup, which is why we avoid it by default. */
+	                    if (IE === 9 && property === "filter") {
+	                        computedValue = computedStyle.getPropertyValue(property); /* GET */
+	                    } else {
+	                        computedValue = computedStyle[property];
+	                    }
+	
+	                    /* Fall back to the property's style value (if defined) when computedValue returns nothing,
+	                       which can happen when the element hasn't been painted. */
+	                    if (computedValue === "" || computedValue === null) {
+	                        computedValue = element.style[property];
+	                    }
+	
+	                    revertDisplay();
+	                }
+	
+	                /* For top, right, bottom, and left (TRBL) values that are set to "auto" on elements of "fixed" or "absolute" position,
+	                   defer to jQuery for converting "auto" to a numeric value. (For elements with a "static" or "relative" position, "auto" has the same
+	                   effect as being set to 0, so no conversion is necessary.) */
+	                /* An example of why numeric conversion is necessary: When an element with "position:absolute" has an untouched "left"
+	                   property, which reverts to "auto", left's value is 0 relative to its parent element, but is often non-zero relative
+	                   to its *containing* (not parent) element, which is the nearest "position:relative" ancestor or the viewport (and always the viewport in the case of "position:fixed"). */
+	                if (computedValue === "auto" && /^(top|right|bottom|left)$/i.test(property)) {
+	                    var position = computePropertyValue(element, "position"); /* GET */
+	
+	                    /* For absolute positioning, jQuery's $.position() only returns values for top and left;
+	                       right and bottom will have their "auto" value reverted to 0. */
+	                    /* Note: A jQuery object must be created here since jQuery doesn't have a low-level alias for $.position().
+	                       Not a big deal since we're currently in a GET batch anyway. */
+	                    if (position === "fixed" || (position === "absolute" && /top|left/i.test(property))) {
+	                        /* Note: jQuery strips the pixel unit from its returned values; we re-add it here to conform with computePropertyValue's behavior. */
+	                        computedValue = $(element).position()[property] + "px"; /* GET */
+	                    }
+	                }
+	
+	                return computedValue;
+	            }
+	
+	            var propertyValue;
+	
+	            /* If this is a hooked property (e.g. "clipLeft" instead of the root property of "clip"),
+	               extract the hook's value from a normalized rootPropertyValue using CSS.Hooks.extractValue(). */
+	            if (CSS.Hooks.registered[property]) {
+	                var hook = property,
+	                    hookRoot = CSS.Hooks.getRoot(hook);
+	
+	                /* If a cached rootPropertyValue wasn't passed in (which Velocity always attempts to do in order to avoid requerying the DOM),
+	                   query the DOM for the root property's value. */
+	                if (rootPropertyValue === undefined) {
+	                    /* Since the browser is now being directly queried, use the official post-prefixing property name for this lookup. */
+	                    rootPropertyValue = CSS.getPropertyValue(element, CSS.Names.prefixCheck(hookRoot)[0]); /* GET */
+	                }
+	
+	                /* If this root has a normalization registered, peform the associated normalization extraction. */
+	                if (CSS.Normalizations.registered[hookRoot]) {
+	                    rootPropertyValue = CSS.Normalizations.registered[hookRoot]("extract", element, rootPropertyValue);
+	                }
+	
+	                /* Extract the hook's value. */
+	                propertyValue = CSS.Hooks.extractValue(hook, rootPropertyValue);
+	
+	            /* If this is a normalized property (e.g. "opacity" becomes "filter" in <=IE8) or "translateX" becomes "transform"),
+	               normalize the property's name and value, and handle the special case of transforms. */
+	            /* Note: Normalizing a property is mutually exclusive from hooking a property since hook-extracted values are strictly
+	               numerical and therefore do not require normalization extraction. */
+	            } else if (CSS.Normalizations.registered[property]) {
+	                var normalizedPropertyName,
+	                    normalizedPropertyValue;
+	
+	                normalizedPropertyName = CSS.Normalizations.registered[property]("name", element);
+	
+	                /* Transform values are calculated via normalization extraction (see below), which checks against the element's transformCache.
+	                   At no point do transform GETs ever actually query the DOM; initial stylesheet values are never processed.
+	                   This is because parsing 3D transform matrices is not always accurate and would bloat our codebase;
+	                   thus, normalization extraction defaults initial transform values to their zero-values (e.g. 1 for scaleX and 0 for translateX). */
+	                if (normalizedPropertyName !== "transform") {
+	                    normalizedPropertyValue = computePropertyValue(element, CSS.Names.prefixCheck(normalizedPropertyName)[0]); /* GET */
+	
+	                    /* If the value is a CSS null-value and this property has a hook template, use that zero-value template so that hooks can be extracted from it. */
+	                    if (CSS.Values.isCSSNullValue(normalizedPropertyValue) && CSS.Hooks.templates[property]) {
+	                        normalizedPropertyValue = CSS.Hooks.templates[property][1];
+	                    }
+	                }
+	
+	                propertyValue = CSS.Normalizations.registered[property]("extract", element, normalizedPropertyValue);
+	            }
+	
+	            /* If a (numeric) value wasn't produced via hook extraction or normalization, query the DOM. */
+	            if (!/^[\d-]/.test(propertyValue)) {
+	                /* For SVG elements, dimensional properties (which SVGAttribute() detects) are tweened via
+	                   their HTML attribute values instead of their CSS style values. */
+	                if (Data(element) && Data(element).isSVG && CSS.Names.SVGAttribute(property)) {
+	                    /* Since the height/width attribute values must be set manually, they don't reflect computed values.
+	                       Thus, we use use getBBox() to ensure we always get values for elements with undefined height/width attributes. */
+	                    if (/^(height|width)$/i.test(property)) {
+	                        /* Firefox throws an error if .getBBox() is called on an SVG that isn't attached to the DOM. */
+	                        try {
+	                            propertyValue = element.getBBox()[property];
+	                        } catch (error) {
+	                            propertyValue = 0;
+	                        }
+	                    /* Otherwise, access the attribute value directly. */
+	                    } else {
+	                        propertyValue = element.getAttribute(property);
+	                    }
+	                } else {
+	                    propertyValue = computePropertyValue(element, CSS.Names.prefixCheck(property)[0]); /* GET */
+	                }
+	            }
+	
+	            /* Since property lookups are for animation purposes (which entails computing the numeric delta between start and end values),
+	               convert CSS null-values to an integer of value 0. */
+	            if (CSS.Values.isCSSNullValue(propertyValue)) {
+	                propertyValue = 0;
+	            }
+	
+	            if (Velocity.debug >= 2) console.log("Get " + property + ": " + propertyValue);
+	
+	            return propertyValue;
+	        },
+	
+	        /* The singular setPropertyValue, which routes the logic for all normalizations, hooks, and standard CSS properties. */
+	        setPropertyValue: function(element, property, propertyValue, rootPropertyValue, scrollData) {
+	            var propertyName = property;
+	
+	            /* In order to be subjected to call options and element queueing, scroll animation is routed through Velocity as if it were a standard CSS property. */
+	            if (property === "scroll") {
+	                /* If a container option is present, scroll the container instead of the browser window. */
+	                if (scrollData.container) {
+	                    scrollData.container["scroll" + scrollData.direction] = propertyValue;
+	                /* Otherwise, Velocity defaults to scrolling the browser window. */
+	                } else {
+	                    if (scrollData.direction === "Left") {
+	                        window.scrollTo(propertyValue, scrollData.alternateValue);
+	                    } else {
+	                        window.scrollTo(scrollData.alternateValue, propertyValue);
+	                    }
+	                }
+	            } else {
+	                /* Transforms (translateX, rotateZ, etc.) are applied to a per-element transformCache object, which is manually flushed via flushTransformCache().
+	                   Thus, for now, we merely cache transforms being SET. */
+	                if (CSS.Normalizations.registered[property] && CSS.Normalizations.registered[property]("name", element) === "transform") {
+	                    /* Perform a normalization injection. */
+	                    /* Note: The normalization logic handles the transformCache updating. */
+	                    CSS.Normalizations.registered[property]("inject", element, propertyValue);
+	
+	                    propertyName = "transform";
+	                    propertyValue = Data(element).transformCache[property];
+	                } else {
+	                    /* Inject hooks. */
+	                    if (CSS.Hooks.registered[property]) {
+	                        var hookName = property,
+	                            hookRoot = CSS.Hooks.getRoot(property);
+	
+	                        /* If a cached rootPropertyValue was not provided, query the DOM for the hookRoot's current value. */
+	                        rootPropertyValue = rootPropertyValue || CSS.getPropertyValue(element, hookRoot); /* GET */
+	
+	                        propertyValue = CSS.Hooks.injectValue(hookName, propertyValue, rootPropertyValue);
+	                        property = hookRoot;
+	                    }
+	
+	                    /* Normalize names and values. */
+	                    if (CSS.Normalizations.registered[property]) {
+	                        propertyValue = CSS.Normalizations.registered[property]("inject", element, propertyValue);
+	                        property = CSS.Normalizations.registered[property]("name", element);
+	                    }
+	
+	                    /* Assign the appropriate vendor prefix before performing an official style update. */
+	                    propertyName = CSS.Names.prefixCheck(property)[0];
+	
+	                    /* A try/catch is used for IE<=8, which throws an error when "invalid" CSS values are set, e.g. a negative width.
+	                       Try/catch is avoided for other browsers since it incurs a performance overhead. */
+	                    if (IE <= 8) {
+	                        try {
+	                            element.style[propertyName] = propertyValue;
+	                        } catch (error) { if (Velocity.debug) console.log("Browser does not support [" + propertyValue + "] for [" + propertyName + "]"); }
+	                    /* SVG elements have their dimensional properties (width, height, x, y, cx, etc.) applied directly as attributes instead of as styles. */
+	                    /* Note: IE8 does not support SVG elements, so it's okay that we skip it for SVG animation. */
+	                    } else if (Data(element) && Data(element).isSVG && CSS.Names.SVGAttribute(property)) {
+	                        /* Note: For SVG attributes, vendor-prefixed property names are never used. */
+	                        /* Note: Not all CSS properties can be animated via attributes, but the browser won't throw an error for unsupported properties. */
+	                        element.setAttribute(property, propertyValue);
+	                    } else {
+	                        element.style[propertyName] = propertyValue;
+	                    }
+	
+	                    if (Velocity.debug >= 2) console.log("Set " + property + " (" + propertyName + "): " + propertyValue);
+	                }
+	            }
+	
+	            /* Return the normalized property name and value in case the caller wants to know how these values were modified before being applied to the DOM. */
+	            return [ propertyName, propertyValue ];
+	        },
+	
+	        /* To increase performance by batching transform updates into a single SET, transforms are not directly applied to an element until flushTransformCache() is called. */
+	        /* Note: Velocity applies transform properties in the same order that they are chronogically introduced to the element's CSS styles. */
+	        flushTransformCache: function(element) {
+	            var transformString = "";
+	
+	            /* Certain browsers require that SVG transforms be applied as an attribute. However, the SVG transform attribute takes a modified version of CSS's transform string
+	               (units are dropped and, except for skewX/Y, subproperties are merged into their master property -- e.g. scaleX and scaleY are merged into scale(X Y). */
+	            if ((IE || (Velocity.State.isAndroid && !Velocity.State.isChrome)) && Data(element).isSVG) {
+	                /* Since transform values are stored in their parentheses-wrapped form, we use a helper function to strip out their numeric values.
+	                   Further, SVG transform properties only take unitless (representing pixels) values, so it's okay that parseFloat() strips the unit suffixed to the float value. */
+	                function getTransformFloat (transformProperty) {
+	                    return parseFloat(CSS.getPropertyValue(element, transformProperty));
+	                }
+	
+	                /* Create an object to organize all the transforms that we'll apply to the SVG element. To keep the logic simple,
+	                   we process *all* transform properties -- even those that may not be explicitly applied (since they default to their zero-values anyway). */
+	                var SVGTransforms = {
+	                    translate: [ getTransformFloat("translateX"), getTransformFloat("translateY") ],
+	                    skewX: [ getTransformFloat("skewX") ], skewY: [ getTransformFloat("skewY") ],
+	                    /* If the scale property is set (non-1), use that value for the scaleX and scaleY values
+	                       (this behavior mimics the result of animating all these properties at once on HTML elements). */
+	                    scale: getTransformFloat("scale") !== 1 ? [ getTransformFloat("scale"), getTransformFloat("scale") ] : [ getTransformFloat("scaleX"), getTransformFloat("scaleY") ],
+	                    /* Note: SVG's rotate transform takes three values: rotation degrees followed by the X and Y values
+	                       defining the rotation's origin point. We ignore the origin values (default them to 0). */
+	                    rotate: [ getTransformFloat("rotateZ"), 0, 0 ]
+	                };
+	
+	                /* Iterate through the transform properties in the user-defined property map order.
+	                   (This mimics the behavior of non-SVG transform animation.) */
+	                $.each(Data(element).transformCache, function(transformName) {
+	                    /* Except for with skewX/Y, revert the axis-specific transform subproperties to their axis-free master
+	                       properties so that they match up with SVG's accepted transform properties. */
+	                    if (/^translate/i.test(transformName)) {
+	                        transformName = "translate";
+	                    } else if (/^scale/i.test(transformName)) {
+	                        transformName = "scale";
+	                    } else if (/^rotate/i.test(transformName)) {
+	                        transformName = "rotate";
+	                    }
+	
+	                    /* Check that we haven't yet deleted the property from the SVGTransforms container. */
+	                    if (SVGTransforms[transformName]) {
+	                        /* Append the transform property in the SVG-supported transform format. As per the spec, surround the space-delimited values in parentheses. */
+	                        transformString += transformName + "(" + SVGTransforms[transformName].join(" ") + ")" + " ";
+	
+	                        /* After processing an SVG transform property, delete it from the SVGTransforms container so we don't
+	                           re-insert the same master property if we encounter another one of its axis-specific properties. */
+	                        delete SVGTransforms[transformName];
+	                    }
+	                });
+	            } else {
+	                var transformValue,
+	                    perspective;
+	
+	                /* Transform properties are stored as members of the transformCache object. Concatenate all the members into a string. */
+	                $.each(Data(element).transformCache, function(transformName) {
+	                    transformValue = Data(element).transformCache[transformName];
+	
+	                    /* Transform's perspective subproperty must be set first in order to take effect. Store it temporarily. */
+	                    if (transformName === "transformPerspective") {
+	                        perspective = transformValue;
+	                        return true;
+	                    }
+	
+	                    /* IE9 only supports one rotation type, rotateZ, which it refers to as "rotate". */
+	                    if (IE === 9 && transformName === "rotateZ") {
+	                        transformName = "rotate";
+	                    }
+	
+	                    transformString += transformName + transformValue + " ";
+	                });
+	
+	                /* If present, set the perspective subproperty first. */
+	                if (perspective) {
+	                    transformString = "perspective" + perspective + " " + transformString;
+	                }
+	            }
+	
+	            CSS.setPropertyValue(element, "transform", transformString);
+	        }
+	    };
+	
+	    /* Register hooks and normalizations. */
+	    CSS.Hooks.register();
+	    CSS.Normalizations.register();
+	
+	    /* Allow hook setting in the same fashion as jQuery's $.css(). */
+	    Velocity.hook = function (elements, arg2, arg3) {
+	        var value = undefined;
+	
+	        elements = sanitizeElements(elements);
+	
+	        $.each(elements, function(i, element) {
+	            /* Initialize Velocity's per-element data cache if this element hasn't previously been animated. */
+	            if (Data(element) === undefined) {
+	                Velocity.init(element);
+	            }
+	
+	            /* Get property value. If an element set was passed in, only return the value for the first element. */
+	            if (arg3 === undefined) {
+	                if (value === undefined) {
+	                    value = Velocity.CSS.getPropertyValue(element, arg2);
+	                }
+	            /* Set property value. */
+	            } else {
+	                /* sPV returns an array of the normalized propertyName/propertyValue pair used to update the DOM. */
+	                var adjustedSet = Velocity.CSS.setPropertyValue(element, arg2, arg3);
+	
+	                /* Transform properties don't automatically set. They have to be flushed to the DOM. */
+	                if (adjustedSet[0] === "transform") {
+	                    Velocity.CSS.flushTransformCache(element);
+	                }
+	
+	                value = adjustedSet;
+	            }
+	        });
+	
+	        return value;
+	    };
+	
+	    /*****************
+	        Animation
+	    *****************/
+	
+	    var animate = function() {
+	
+	        /******************
+	            Call Chain
+	        ******************/
+	
+	        /* Logic for determining what to return to the call stack when exiting out of Velocity. */
+	        function getChain () {
+	            /* If we are using the utility function, attempt to return this call's promise. If no promise library was detected,
+	               default to null instead of returning the targeted elements so that utility function's return value is standardized. */
+	            if (isUtility) {
+	                return promiseData.promise || null;
+	            /* Otherwise, if we're using $.fn, return the jQuery-/Zepto-wrapped element set. */
+	            } else {
+	                return elementsWrapped;
+	            }
+	        }
+	
+	        /*************************
+	           Arguments Assignment
+	        *************************/
+	
+	        /* To allow for expressive CoffeeScript code, Velocity supports an alternative syntax in which "elements" (or "e"), "properties" (or "p"), and "options" (or "o")
+	           objects are defined on a container object that's passed in as Velocity's sole argument. */
+	        /* Note: Some browsers automatically populate arguments with a "properties" object. We detect it by checking for its default "names" property. */
+	        var syntacticSugar = (arguments[0] && (arguments[0].p || (($.isPlainObject(arguments[0].properties) && !arguments[0].properties.names) || Type.isString(arguments[0].properties)))),
+	            /* Whether Velocity was called via the utility function (as opposed to on a jQuery/Zepto object). */
+	            isUtility,
+	            /* When Velocity is called via the utility function ($.Velocity()/Velocity()), elements are explicitly
+	               passed in as the first parameter. Thus, argument positioning varies. We normalize them here. */
+	            elementsWrapped,
+	            argumentIndex;
+	
+	        var elements,
+	            propertiesMap,
+	            options;
+	
+	        /* Detect jQuery/Zepto elements being animated via the $.fn method. */
+	        if (Type.isWrapped(this)) {
+	            isUtility = false;
+	
+	            argumentIndex = 0;
+	            elements = this;
+	            elementsWrapped = this;
+	        /* Otherwise, raw elements are being animated via the utility function. */
+	        } else {
+	            isUtility = true;
+	
+	            argumentIndex = 1;
+	            elements = syntacticSugar ? (arguments[0].elements || arguments[0].e) : arguments[0];
+	        }
+	
+	        elements = sanitizeElements(elements);
+	
+	        if (!elements) {
+	            return;
+	        }
+	
+	        if (syntacticSugar) {
+	            propertiesMap = arguments[0].properties || arguments[0].p;
+	            options = arguments[0].options || arguments[0].o;
+	        } else {
+	            propertiesMap = arguments[argumentIndex];
+	            options = arguments[argumentIndex + 1];
+	        }
+	
+	        /* The length of the element set (in the form of a nodeList or an array of elements) is defaulted to 1 in case a
+	           single raw DOM element is passed in (which doesn't contain a length property). */
+	        var elementsLength = elements.length,
+	            elementsIndex = 0;
+	
+	        /***************************
+	            Argument Overloading
+	        ***************************/
+	
+	        /* Support is included for jQuery's argument overloading: $.animate(propertyMap [, duration] [, easing] [, complete]).
+	           Overloading is detected by checking for the absence of an object being passed into options. */
+	        /* Note: The stop and finish actions do not accept animation options, and are therefore excluded from this check. */
+	        if (!/^(stop|finish|finishAll)$/i.test(propertiesMap) && !$.isPlainObject(options)) {
+	            /* The utility function shifts all arguments one position to the right, so we adjust for that offset. */
+	            var startingArgumentPosition = argumentIndex + 1;
+	
+	            options = {};
+	
+	            /* Iterate through all options arguments */
+	            for (var i = startingArgumentPosition; i < arguments.length; i++) {
+	                /* Treat a number as a duration. Parse it out. */
+	                /* Note: The following RegEx will return true if passed an array with a number as its first item.
+	                   Thus, arrays are skipped from this check. */
+	                if (!Type.isArray(arguments[i]) && (/^(fast|normal|slow)$/i.test(arguments[i]) || /^\d/.test(arguments[i]))) {
+	                    options.duration = arguments[i];
+	                /* Treat strings and arrays as easings. */
+	                } else if (Type.isString(arguments[i]) || Type.isArray(arguments[i])) {
+	                    options.easing = arguments[i];
+	                /* Treat a function as a complete callback. */
+	                } else if (Type.isFunction(arguments[i])) {
+	                    options.complete = arguments[i];
+	                }
+	            }
+	        }
+	
+	        /***************
+	            Promises
+	        ***************/
+	
+	        var promiseData = {
+	                promise: null,
+	                resolver: null,
+	                rejecter: null
+	            };
+	
+	        /* If this call was made via the utility function (which is the default method of invocation when jQuery/Zepto are not being used), and if
+	           promise support was detected, create a promise object for this call and store references to its resolver and rejecter methods. The resolve
+	           method is used when a call completes naturally or is prematurely stopped by the user. In both cases, completeCall() handles the associated
+	           call cleanup and promise resolving logic. The reject method is used when an invalid set of arguments is passed into a Velocity call. */
+	        /* Note: Velocity employs a call-based queueing architecture, which means that stopping an animating element actually stops the full call that
+	           triggered it -- not that one element exclusively. Similarly, there is one promise per call, and all elements targeted by a Velocity call are
+	           grouped together for the purposes of resolving and rejecting a promise. */
+	        if (isUtility && Velocity.Promise) {
+	            promiseData.promise = new Velocity.Promise(function (resolve, reject) {
+	                promiseData.resolver = resolve;
+	                promiseData.rejecter = reject;
+	            });
+	        }
+	
+	        /*********************
+	           Action Detection
+	        *********************/
+	
+	        /* Velocity's behavior is categorized into "actions": Elements can either be specially scrolled into view,
+	           or they can be started, stopped, or reversed. If a literal or referenced properties map is passed in as Velocity's
+	           first argument, the associated action is "start". Alternatively, "scroll", "reverse", or "stop" can be passed in instead of a properties map. */
+	        var action;
+	
+	        switch (propertiesMap) {
+	            case "scroll":
+	                action = "scroll";
+	                break;
+	
+	            case "reverse":
+	                action = "reverse";
+	                break;
+	
+	            case "finish":
+	            case "finishAll":
+	            case "stop":
+	                /*******************
+	                    Action: Stop
+	                *******************/
+	
+	                /* Clear the currently-active delay on each targeted element. */
+	                $.each(elements, function(i, element) {
+	                    if (Data(element) && Data(element).delayTimer) {
+	                        /* Stop the timer from triggering its cached next() function. */
+	                        clearTimeout(Data(element).delayTimer.setTimeout);
+	
+	                        /* Manually call the next() function so that the subsequent queue items can progress. */
+	                        if (Data(element).delayTimer.next) {
+	                            Data(element).delayTimer.next();
+	                        }
+	
+	                        delete Data(element).delayTimer;
+	                    }
+	
+	                    /* If we want to finish everything in the queue, we have to iterate through it
+	                       and call each function. This will make them active calls below, which will
+	                       cause them to be applied via the duration setting. */
+	                    if (propertiesMap === "finishAll" && (options === true || Type.isString(options))) {
+	                        /* Iterate through the items in the element's queue. */
+	                        $.each($.queue(element, Type.isString(options) ? options : ""), function(_, item) {
+	                            /* The queue array can contain an "inprogress" string, which we skip. */
+	                            if (Type.isFunction(item)) {
+	                                item();
+	                            }
+	                        });
+	
+	                        /* Clearing the $.queue() array is achieved by resetting it to []. */
+	                        $.queue(element, Type.isString(options) ? options : "", []);
+	                    }
+	                });
+	
+	                var callsToStop = [];
+	
+	                /* When the stop action is triggered, the elements' currently active call is immediately stopped. The active call might have
+	                   been applied to multiple elements, in which case all of the call's elements will be stopped. When an element
+	                   is stopped, the next item in its animation queue is immediately triggered. */
+	                /* An additional argument may be passed in to clear an element's remaining queued calls. Either true (which defaults to the "fx" queue)
+	                   or a custom queue string can be passed in. */
+	                /* Note: The stop command runs prior to Velocity's Queueing phase since its behavior is intended to take effect *immediately*,
+	                   regardless of the element's current queue state. */
+	
+	                /* Iterate through every active call. */
+	                $.each(Velocity.State.calls, function(i, activeCall) {
+	                    /* Inactive calls are set to false by the logic inside completeCall(). Skip them. */
+	                    if (activeCall) {
+	                        /* Iterate through the active call's targeted elements. */
+	                        $.each(activeCall[1], function(k, activeElement) {
+	                            /* If true was passed in as a secondary argument, clear absolutely all calls on this element. Otherwise, only
+	                               clear calls associated with the relevant queue. */
+	                            /* Call stopping logic works as follows:
+	                               - options === true --> stop current default queue calls (and queue:false calls), including remaining queued ones.
+	                               - options === undefined --> stop current queue:"" call and all queue:false calls.
+	                               - options === false --> stop only queue:false calls.
+	                               - options === "custom" --> stop current queue:"custom" call, including remaining queued ones (there is no functionality to only clear the currently-running queue:"custom" call). */
+	                            var queueName = (options === undefined) ? "" : options;
+	
+	                            if (queueName !== true && (activeCall[2].queue !== queueName) && !(options === undefined && activeCall[2].queue === false)) {
+	                                return true;
+	                            }
+	
+	                            /* Iterate through the calls targeted by the stop command. */
+	                            $.each(elements, function(l, element) {
+	                                /* Check that this call was applied to the target element. */
+	                                if (element === activeElement) {
+	                                    /* Optionally clear the remaining queued calls. If we're doing "finishAll" this won't find anything,
+	                                       due to the queue-clearing above. */
+	                                    if (options === true || Type.isString(options)) {
+	                                        /* Iterate through the items in the element's queue. */
+	                                        $.each($.queue(element, Type.isString(options) ? options : ""), function(_, item) {
+	                                            /* The queue array can contain an "inprogress" string, which we skip. */
+	                                            if (Type.isFunction(item)) {
+	                                                /* Pass the item's callback a flag indicating that we want to abort from the queue call.
+	                                                   (Specifically, the queue will resolve the call's associated promise then abort.)  */
+	                                                item(null, true);
+	                                            }
+	                                        });
+	
+	                                        /* Clearing the $.queue() array is achieved by resetting it to []. */
+	                                        $.queue(element, Type.isString(options) ? options : "", []);
+	                                    }
+	
+	                                    if (propertiesMap === "stop") {
+	                                        /* Since "reverse" uses cached start values (the previous call's endValues), these values must be
+	                                           changed to reflect the final value that the elements were actually tweened to. */
+	                                        /* Note: If only queue:false animations are currently running on an element, it won't have a tweensContainer
+	                                           object. Also, queue:false animations can't be reversed. */
+	                                        if (Data(element) && Data(element).tweensContainer && queueName !== false) {
+	                                            $.each(Data(element).tweensContainer, function(m, activeTween) {
+	                                                activeTween.endValue = activeTween.currentValue;
+	                                            });
+	                                        }
+	
+	                                        callsToStop.push(i);
+	                                    } else if (propertiesMap === "finish" || propertiesMap === "finishAll") {
+	                                        /* To get active tweens to finish immediately, we forcefully shorten their durations to 1ms so that
+	                                        they finish upon the next rAf tick then proceed with normal call completion logic. */
+	                                        activeCall[2].duration = 1;
+	                                    }
+	                                }
+	                            });
+	                        });
+	                    }
+	                });
+	
+	                /* Prematurely call completeCall() on each matched active call. Pass an additional flag for "stop" to indicate
+	                   that the complete callback and display:none setting should be skipped since we're completing prematurely. */
+	                if (propertiesMap === "stop") {
+	                    $.each(callsToStop, function(i, j) {
+	                        completeCall(j, true);
+	                    });
+	
+	                    if (promiseData.promise) {
+	                        /* Immediately resolve the promise associated with this stop call since stop runs synchronously. */
+	                        promiseData.resolver(elements);
+	                    }
+	                }
+	
+	                /* Since we're stopping, and not proceeding with queueing, exit out of Velocity. */
+	                return getChain();
+	
+	            default:
+	                /* Treat a non-empty plain object as a literal properties map. */
+	                if ($.isPlainObject(propertiesMap) && !Type.isEmptyObject(propertiesMap)) {
+	                    action = "start";
+	
+	                /****************
+	                    Redirects
+	                ****************/
+	
+	                /* Check if a string matches a registered redirect (see Redirects above). */
+	                } else if (Type.isString(propertiesMap) && Velocity.Redirects[propertiesMap]) {
+	                    var opts = $.extend({}, options),
+	                        durationOriginal = opts.duration,
+	                        delayOriginal = opts.delay || 0;
+	
+	                    /* If the backwards option was passed in, reverse the element set so that elements animate from the last to the first. */
+	                    if (opts.backwards === true) {
+	                        elements = $.extend(true, [], elements).reverse();
+	                    }
+	
+	                    /* Individually trigger the redirect for each element in the set to prevent users from having to handle iteration logic in their redirect. */
+	                    $.each(elements, function(elementIndex, element) {
+	                        /* If the stagger option was passed in, successively delay each element by the stagger value (in ms). Retain the original delay value. */
+	                        if (parseFloat(opts.stagger)) {
+	                            opts.delay = delayOriginal + (parseFloat(opts.stagger) * elementIndex);
+	                        } else if (Type.isFunction(opts.stagger)) {
+	                            opts.delay = delayOriginal + opts.stagger.call(element, elementIndex, elementsLength);
+	                        }
+	
+	                        /* If the drag option was passed in, successively increase/decrease (depending on the presense of opts.backwards)
+	                           the duration of each element's animation, using floors to prevent producing very short durations. */
+	                        if (opts.drag) {
+	                            /* Default the duration of UI pack effects (callouts and transitions) to 1000ms instead of the usual default duration of 400ms. */
+	                            opts.duration = parseFloat(durationOriginal) || (/^(callout|transition)/.test(propertiesMap) ? 1000 : DURATION_DEFAULT);
+	
+	                            /* For each element, take the greater duration of: A) animation completion percentage relative to the original duration,
+	                               B) 75% of the original duration, or C) a 200ms fallback (in case duration is already set to a low value).
+	                               The end result is a baseline of 75% of the redirect's duration that increases/decreases as the end of the element set is approached. */
+	                            opts.duration = Math.max(opts.duration * (opts.backwards ? 1 - elementIndex/elementsLength : (elementIndex + 1) / elementsLength), opts.duration * 0.75, 200);
+	                        }
+	
+	                        /* Pass in the call's opts object so that the redirect can optionally extend it. It defaults to an empty object instead of null to
+	                           reduce the opts checking logic required inside the redirect. */
+	                        Velocity.Redirects[propertiesMap].call(element, element, opts || {}, elementIndex, elementsLength, elements, promiseData.promise ? promiseData : undefined);
+	                    });
+	
+	                    /* Since the animation logic resides within the redirect's own code, abort the remainder of this call.
+	                       (The performance overhead up to this point is virtually non-existant.) */
+	                    /* Note: The jQuery call chain is kept intact by returning the complete element set. */
+	                    return getChain();
+	                } else {
+	                    var abortError = "Velocity: First argument (" + propertiesMap + ") was not a property map, a known action, or a registered redirect. Aborting.";
+	
+	                    if (promiseData.promise) {
+	                        promiseData.rejecter(new Error(abortError));
+	                    } else {
+	                        console.log(abortError);
+	                    }
+	
+	                    return getChain();
+	                }
+	        }
+	
+	        /**************************
+	            Call-Wide Variables
+	        **************************/
+	
+	        /* A container for CSS unit conversion ratios (e.g. %, rem, and em ==> px) that is used to cache ratios across all elements
+	           being animated in a single Velocity call. Calculating unit ratios necessitates DOM querying and updating, and is therefore
+	           avoided (via caching) wherever possible. This container is call-wide instead of page-wide to avoid the risk of using stale
+	           conversion metrics across Velocity animations that are not immediately consecutively chained. */
+	        var callUnitConversionData = {
+	                lastParent: null,
+	                lastPosition: null,
+	                lastFontSize: null,
+	                lastPercentToPxWidth: null,
+	                lastPercentToPxHeight: null,
+	                lastEmToPx: null,
+	                remToPx: null,
+	                vwToPx: null,
+	                vhToPx: null
+	            };
+	
+	        /* A container for all the ensuing tween data and metadata associated with this call. This container gets pushed to the page-wide
+	           Velocity.State.calls array that is processed during animation ticking. */
+	        var call = [];
+	
+	        /************************
+	           Element Processing
+	        ************************/
+	
+	        /* Element processing consists of three parts -- data processing that cannot go stale and data processing that *can* go stale (i.e. third-party style modifications):
+	           1) Pre-Queueing: Element-wide variables, including the element's data storage, are instantiated. Call options are prepared. If triggered, the Stop action is executed.
+	           2) Queueing: The logic that runs once this call has reached its point of execution in the element's $.queue() stack. Most logic is placed here to avoid risking it becoming stale.
+	           3) Pushing: Consolidation of the tween data followed by its push onto the global in-progress calls container.
+	        */
+	
+	        function processElement () {
+	
+	            /*************************
+	               Part I: Pre-Queueing
+	            *************************/
+	
+	            /***************************
+	               Element-Wide Variables
+	            ***************************/
+	
+	            var element = this,
+	                /* The runtime opts object is the extension of the current call's options and Velocity's page-wide option defaults. */
+	                opts = $.extend({}, Velocity.defaults, options),
+	                /* A container for the processed data associated with each property in the propertyMap.
+	                   (Each property in the map produces its own "tween".) */
+	                tweensContainer = {},
+	                elementUnitConversionData;
+	
+	            /******************
+	               Element Init
+	            ******************/
+	
+	            if (Data(element) === undefined) {
+	                Velocity.init(element);
+	            }
+	
+	            /******************
+	               Option: Delay
+	            ******************/
+	
+	            /* Since queue:false doesn't respect the item's existing queue, we avoid injecting its delay here (it's set later on). */
+	            /* Note: Velocity rolls its own delay function since jQuery doesn't have a utility alias for $.fn.delay()
+	               (and thus requires jQuery element creation, which we avoid since its overhead includes DOM querying). */
+	            if (parseFloat(opts.delay) && opts.queue !== false) {
+	                $.queue(element, opts.queue, function(next) {
+	                    /* This is a flag used to indicate to the upcoming completeCall() function that this queue entry was initiated by Velocity. See completeCall() for further details. */
+	                    Velocity.velocityQueueEntryFlag = true;
+	
+	                    /* The ensuing queue item (which is assigned to the "next" argument that $.queue() automatically passes in) will be triggered after a setTimeout delay.
+	                       The setTimeout is stored so that it can be subjected to clearTimeout() if this animation is prematurely stopped via Velocity's "stop" command. */
+	                    Data(element).delayTimer = {
+	                        setTimeout: setTimeout(next, parseFloat(opts.delay)),
+	                        next: next
+	                    };
+	                });
+	            }
+	
+	            /*********************
+	               Option: Duration
+	            *********************/
+	
+	            /* Support for jQuery's named durations. */
+	            switch (opts.duration.toString().toLowerCase()) {
+	                case "fast":
+	                    opts.duration = 200;
+	                    break;
+	
+	                case "normal":
+	                    opts.duration = DURATION_DEFAULT;
+	                    break;
+	
+	                case "slow":
+	                    opts.duration = 600;
+	                    break;
+	
+	                default:
+	                    /* Remove the potential "ms" suffix and default to 1 if the user is attempting to set a duration of 0 (in order to produce an immediate style change). */
+	                    opts.duration = parseFloat(opts.duration) || 1;
+	            }
+	
+	            /************************
+	               Global Option: Mock
+	            ************************/
+	
+	            if (Velocity.mock !== false) {
+	                /* In mock mode, all animations are forced to 1ms so that they occur immediately upon the next rAF tick.
+	                   Alternatively, a multiplier can be passed in to time remap all delays and durations. */
+	                if (Velocity.mock === true) {
+	                    opts.duration = opts.delay = 1;
+	                } else {
+	                    opts.duration *= parseFloat(Velocity.mock) || 1;
+	                    opts.delay *= parseFloat(Velocity.mock) || 1;
+	                }
+	            }
+	
+	            /*******************
+	               Option: Easing
+	            *******************/
+	
+	            opts.easing = getEasing(opts.easing, opts.duration);
+	
+	            /**********************
+	               Option: Callbacks
+	            **********************/
+	
+	            /* Callbacks must functions. Otherwise, default to null. */
+	            if (opts.begin && !Type.isFunction(opts.begin)) {
+	                opts.begin = null;
+	            }
+	
+	            if (opts.progress && !Type.isFunction(opts.progress)) {
+	                opts.progress = null;
+	            }
+	
+	            if (opts.complete && !Type.isFunction(opts.complete)) {
+	                opts.complete = null;
+	            }
+	
+	            /*********************************
+	               Option: Display & Visibility
+	            *********************************/
+	
+	            /* Refer to Velocity's documentation (VelocityJS.org/#displayAndVisibility) for a description of the display and visibility options' behavior. */
+	            /* Note: We strictly check for undefined instead of falsiness because display accepts an empty string value. */
+	            if (opts.display !== undefined && opts.display !== null) {
+	                opts.display = opts.display.toString().toLowerCase();
+	
+	                /* Users can pass in a special "auto" value to instruct Velocity to set the element to its default display value. */
+	                if (opts.display === "auto") {
+	                    opts.display = Velocity.CSS.Values.getDisplayType(element);
+	                }
+	            }
+	
+	            if (opts.visibility !== undefined && opts.visibility !== null) {
+	                opts.visibility = opts.visibility.toString().toLowerCase();
+	            }
+	
+	            /**********************
+	               Option: mobileHA
+	            **********************/
+	
+	            /* When set to true, and if this is a mobile device, mobileHA automatically enables hardware acceleration (via a null transform hack)
+	               on animating elements. HA is removed from the element at the completion of its animation. */
+	            /* Note: Android Gingerbread doesn't support HA. If a null transform hack (mobileHA) is in fact set, it will prevent other tranform subproperties from taking effect. */
+	            /* Note: You can read more about the use of mobileHA in Velocity's documentation: VelocityJS.org/#mobileHA. */
+	            opts.mobileHA = (opts.mobileHA && Velocity.State.isMobile && !Velocity.State.isGingerbread);
+	
+	            /***********************
+	               Part II: Queueing
+	            ***********************/
+	
+	            /* When a set of elements is targeted by a Velocity call, the set is broken up and each element has the current Velocity call individually queued onto it.
+	               In this way, each element's existing queue is respected; some elements may already be animating and accordingly should not have this current Velocity call triggered immediately. */
+	            /* In each queue, tween data is processed for each animating property then pushed onto the call-wide calls array. When the last element in the set has had its tweens processed,
+	               the call array is pushed to Velocity.State.calls for live processing by the requestAnimationFrame tick. */
+	            function buildQueue (next) {
+	
+	                /*******************
+	                   Option: Begin
+	                *******************/
+	
+	                /* The begin callback is fired once per call -- not once per elemenet -- and is passed the full raw DOM element set as both its context and its first argument. */
+	                if (opts.begin && elementsIndex === 0) {
+	                    /* We throw callbacks in a setTimeout so that thrown errors don't halt the execution of Velocity itself. */
+	                    try {
+	                        opts.begin.call(elements, elements);
+	                    } catch (error) {
+	                        setTimeout(function() { throw error; }, 1);
+	                    }
+	                }
+	
+	                /*****************************************
+	                   Tween Data Construction (for Scroll)
+	                *****************************************/
+	
+	                /* Note: In order to be subjected to chaining and animation options, scroll's tweening is routed through Velocity as if it were a standard CSS property animation. */
+	                if (action === "scroll") {
+	                    /* The scroll action uniquely takes an optional "offset" option -- specified in pixels -- that offsets the targeted scroll position. */
+	                    var scrollDirection = (/^x$/i.test(opts.axis) ? "Left" : "Top"),
+	                        scrollOffset = parseFloat(opts.offset) || 0,
+	                        scrollPositionCurrent,
+	                        scrollPositionCurrentAlternate,
+	                        scrollPositionEnd;
+	
+	                    /* Scroll also uniquely takes an optional "container" option, which indicates the parent element that should be scrolled --
+	                       as opposed to the browser window itself. This is useful for scrolling toward an element that's inside an overflowing parent element. */
+	                    if (opts.container) {
+	                        /* Ensure that either a jQuery object or a raw DOM element was passed in. */
+	                        if (Type.isWrapped(opts.container) || Type.isNode(opts.container)) {
+	                            /* Extract the raw DOM element from the jQuery wrapper. */
+	                            opts.container = opts.container[0] || opts.container;
+	                            /* Note: Unlike other properties in Velocity, the browser's scroll position is never cached since it so frequently changes
+	                               (due to the user's natural interaction with the page). */
+	                            scrollPositionCurrent = opts.container["scroll" + scrollDirection]; /* GET */
+	
+	                            /* $.position() values are relative to the container's currently viewable area (without taking into account the container's true dimensions
+	                               -- say, for example, if the container was not overflowing). Thus, the scroll end value is the sum of the child element's position *and*
+	                               the scroll container's current scroll position. */
+	                            scrollPositionEnd = (scrollPositionCurrent + $(element).position()[scrollDirection.toLowerCase()]) + scrollOffset; /* GET */
+	                        /* If a value other than a jQuery object or a raw DOM element was passed in, default to null so that this option is ignored. */
+	                        } else {
+	                            opts.container = null;
+	                        }
+	                    } else {
+	                        /* If the window itself is being scrolled -- not a containing element -- perform a live scroll position lookup using
+	                           the appropriate cached property names (which differ based on browser type). */
+	                        scrollPositionCurrent = Velocity.State.scrollAnchor[Velocity.State["scrollProperty" + scrollDirection]]; /* GET */
+	                        /* When scrolling the browser window, cache the alternate axis's current value since window.scrollTo() doesn't let us change only one value at a time. */
+	                        scrollPositionCurrentAlternate = Velocity.State.scrollAnchor[Velocity.State["scrollProperty" + (scrollDirection === "Left" ? "Top" : "Left")]]; /* GET */
+	
+	                        /* Unlike $.position(), $.offset() values are relative to the browser window's true dimensions -- not merely its currently viewable area --
+	                           and therefore end values do not need to be compounded onto current values. */
+	                        scrollPositionEnd = $(element).offset()[scrollDirection.toLowerCase()] + scrollOffset; /* GET */
+	                    }
+	
+	                    /* Since there's only one format that scroll's associated tweensContainer can take, we create it manually. */
+	                    tweensContainer = {
+	                        scroll: {
+	                            rootPropertyValue: false,
+	                            startValue: scrollPositionCurrent,
+	                            currentValue: scrollPositionCurrent,
+	                            endValue: scrollPositionEnd,
+	                            unitType: "",
+	                            easing: opts.easing,
+	                            scrollData: {
+	                                container: opts.container,
+	                                direction: scrollDirection,
+	                                alternateValue: scrollPositionCurrentAlternate
+	                            }
+	                        },
+	                        element: element
+	                    };
+	
+	                    if (Velocity.debug) console.log("tweensContainer (scroll): ", tweensContainer.scroll, element);
+	
+	                /******************************************
+	                   Tween Data Construction (for Reverse)
+	                ******************************************/
+	
+	                /* Reverse acts like a "start" action in that a property map is animated toward. The only difference is
+	                   that the property map used for reverse is the inverse of the map used in the previous call. Thus, we manipulate
+	                   the previous call to construct our new map: use the previous map's end values as our new map's start values. Copy over all other data. */
+	                /* Note: Reverse can be directly called via the "reverse" parameter, or it can be indirectly triggered via the loop option. (Loops are composed of multiple reverses.) */
+	                /* Note: Reverse calls do not need to be consecutively chained onto a currently-animating element in order to operate on cached values;
+	                   there is no harm to reverse being called on a potentially stale data cache since reverse's behavior is simply defined
+	                   as reverting to the element's values as they were prior to the previous *Velocity* call. */
+	                } else if (action === "reverse") {
+	                    /* Abort if there is no prior animation data to reverse to. */
+	                    if (!Data(element).tweensContainer) {
+	                        /* Dequeue the element so that this queue entry releases itself immediately, allowing subsequent queue entries to run. */
+	                        $.dequeue(element, opts.queue);
+	
+	                        return;
+	                    } else {
+	                        /*********************
+	                           Options Parsing
+	                        *********************/
+	
+	                        /* If the element was hidden via the display option in the previous call,
+	                           revert display to "auto" prior to reversal so that the element is visible again. */
+	                        if (Data(element).opts.display === "none") {
+	                            Data(element).opts.display = "auto";
+	                        }
+	
+	                        if (Data(element).opts.visibility === "hidden") {
+	                            Data(element).opts.visibility = "visible";
+	                        }
+	
+	                        /* If the loop option was set in the previous call, disable it so that "reverse" calls aren't recursively generated.
+	                           Further, remove the previous call's callback options; typically, users do not want these to be refired. */
+	                        Data(element).opts.loop = false;
+	                        Data(element).opts.begin = null;
+	                        Data(element).opts.complete = null;
+	
+	                        /* Since we're extending an opts object that has already been extended with the defaults options object,
+	                           we remove non-explicitly-defined properties that are auto-assigned values. */
+	                        if (!options.easing) {
+	                            delete opts.easing;
+	                        }
+	
+	                        if (!options.duration) {
+	                            delete opts.duration;
+	                        }
+	
+	                        /* The opts object used for reversal is an extension of the options object optionally passed into this
+	                           reverse call plus the options used in the previous Velocity call. */
+	                        opts = $.extend({}, Data(element).opts, opts);
+	
+	                        /*************************************
+	                           Tweens Container Reconstruction
+	                        *************************************/
+	
+	                        /* Create a deepy copy (indicated via the true flag) of the previous call's tweensContainer. */
+	                        var lastTweensContainer = $.extend(true, {}, Data(element).tweensContainer);
+	
+	                        /* Manipulate the previous tweensContainer by replacing its end values and currentValues with its start values. */
+	                        for (var lastTween in lastTweensContainer) {
+	                            /* In addition to tween data, tweensContainers contain an element property that we ignore here. */
+	                            if (lastTween !== "element") {
+	                                var lastStartValue = lastTweensContainer[lastTween].startValue;
+	
+	                                lastTweensContainer[lastTween].startValue = lastTweensContainer[lastTween].currentValue = lastTweensContainer[lastTween].endValue;
+	                                lastTweensContainer[lastTween].endValue = lastStartValue;
+	
+	                                /* Easing is the only option that embeds into the individual tween data (since it can be defined on a per-property basis).
+	                                   Accordingly, every property's easing value must be updated when an options object is passed in with a reverse call.
+	                                   The side effect of this extensibility is that all per-property easing values are forcefully reset to the new value. */
+	                                if (!Type.isEmptyObject(options)) {
+	                                    lastTweensContainer[lastTween].easing = opts.easing;
+	                                }
+	
+	                                if (Velocity.debug) console.log("reverse tweensContainer (" + lastTween + "): " + JSON.stringify(lastTweensContainer[lastTween]), element);
+	                            }
+	                        }
+	
+	                        tweensContainer = lastTweensContainer;
+	                    }
+	
+	                /*****************************************
+	                   Tween Data Construction (for Start)
+	                *****************************************/
+	
+	                } else if (action === "start") {
+	
+	                    /*************************
+	                        Value Transferring
+	                    *************************/
+	
+	                    /* If this queue entry follows a previous Velocity-initiated queue entry *and* if this entry was created
+	                       while the element was in the process of being animated by Velocity, then this current call is safe to use
+	                       the end values from the prior call as its start values. Velocity attempts to perform this value transfer
+	                       process whenever possible in order to avoid requerying the DOM. */
+	                    /* If values aren't transferred from a prior call and start values were not forcefed by the user (more on this below),
+	                       then the DOM is queried for the element's current values as a last resort. */
+	                    /* Note: Conversely, animation reversal (and looping) *always* perform inter-call value transfers; they never requery the DOM. */
+	                    var lastTweensContainer;
+	
+	                    /* The per-element isAnimating flag is used to indicate whether it's safe (i.e. the data isn't stale)
+	                       to transfer over end values to use as start values. If it's set to true and there is a previous
+	                       Velocity call to pull values from, do so. */
+	                    if (Data(element).tweensContainer && Data(element).isAnimating === true) {
+	                        lastTweensContainer = Data(element).tweensContainer;
+	                    }
+	
+	                    /***************************
+	                       Tween Data Calculation
+	                    ***************************/
+	
+	                    /* This function parses property data and defaults endValue, easing, and startValue as appropriate. */
+	                    /* Property map values can either take the form of 1) a single value representing the end value,
+	                       or 2) an array in the form of [ endValue, [, easing] [, startValue] ].
+	                       The optional third parameter is a forcefed startValue to be used instead of querying the DOM for
+	                       the element's current value. Read Velocity's docmentation to learn more about forcefeeding: VelocityJS.org/#forcefeeding */
+	                    function parsePropertyValue (valueData, skipResolvingEasing) {
+	                        var endValue = undefined,
+	                            easing = undefined,
+	                            startValue = undefined;
+	
+	                        /* Handle the array format, which can be structured as one of three potential overloads:
+	                           A) [ endValue, easing, startValue ], B) [ endValue, easing ], or C) [ endValue, startValue ] */
+	                        if (Type.isArray(valueData)) {
+	                            /* endValue is always the first item in the array. Don't bother validating endValue's value now
+	                               since the ensuing property cycling logic does that. */
+	                            endValue = valueData[0];
+	
+	                            /* Two-item array format: If the second item is a number, function, or hex string, treat it as a
+	                               start value since easings can only be non-hex strings or arrays. */
+	                            if ((!Type.isArray(valueData[1]) && /^[\d-]/.test(valueData[1])) || Type.isFunction(valueData[1]) || CSS.RegEx.isHex.test(valueData[1])) {
+	                                startValue = valueData[1];
+	                            /* Two or three-item array: If the second item is a non-hex string or an array, treat it as an easing. */
+	                            } else if ((Type.isString(valueData[1]) && !CSS.RegEx.isHex.test(valueData[1])) || Type.isArray(valueData[1])) {
+	                                easing = skipResolvingEasing ? valueData[1] : getEasing(valueData[1], opts.duration);
+	
+	                                /* Don't bother validating startValue's value now since the ensuing property cycling logic inherently does that. */
+	                                if (valueData[2] !== undefined) {
+	                                    startValue = valueData[2];
+	                                }
+	                            }
+	                        /* Handle the single-value format. */
+	                        } else {
+	                            endValue = valueData;
+	                        }
+	
+	                        /* Default to the call's easing if a per-property easing type was not defined. */
+	                        if (!skipResolvingEasing) {
+	                            easing = easing || opts.easing;
+	                        }
+	
+	                        /* If functions were passed in as values, pass the function the current element as its context,
+	                           plus the element's index and the element set's size as arguments. Then, assign the returned value. */
+	                        if (Type.isFunction(endValue)) {
+	                            endValue = endValue.call(element, elementsIndex, elementsLength);
+	                        }
+	
+	                        if (Type.isFunction(startValue)) {
+	                            startValue = startValue.call(element, elementsIndex, elementsLength);
+	                        }
+	
+	                        /* Allow startValue to be left as undefined to indicate to the ensuing code that its value was not forcefed. */
+	                        return [ endValue || 0, easing, startValue ];
+	                    }
+	
+	                    /* Cycle through each property in the map, looking for shorthand color properties (e.g. "color" as opposed to "colorRed"). Inject the corresponding
+	                       colorRed, colorGreen, and colorBlue RGB component tweens into the propertiesMap (which Velocity understands) and remove the shorthand property. */
+	                    $.each(propertiesMap, function(property, value) {
+	                        /* Find shorthand color properties that have been passed a hex string. */
+	                        if (RegExp("^" + CSS.Lists.colors.join("$|^") + "$").test(property)) {
+	                            /* Parse the value data for each shorthand. */
+	                            var valueData = parsePropertyValue(value, true),
+	                                endValue = valueData[0],
+	                                easing = valueData[1],
+	                                startValue = valueData[2];
+	
+	                            if (CSS.RegEx.isHex.test(endValue)) {
+	                                /* Convert the hex strings into their RGB component arrays. */
+	                                var colorComponents = [ "Red", "Green", "Blue" ],
+	                                    endValueRGB = CSS.Values.hexToRgb(endValue),
+	                                    startValueRGB = startValue ? CSS.Values.hexToRgb(startValue) : undefined;
+	
+	                                /* Inject the RGB component tweens into propertiesMap. */
+	                                for (var i = 0; i < colorComponents.length; i++) {
+	                                    var dataArray = [ endValueRGB[i] ];
+	
+	                                    if (easing) {
+	                                        dataArray.push(easing);
+	                                    }
+	
+	                                    if (startValueRGB !== undefined) {
+	                                        dataArray.push(startValueRGB[i]);
+	                                    }
+	
+	                                    propertiesMap[property + colorComponents[i]] = dataArray;
+	                                }
+	
+	                                /* Remove the intermediary shorthand property entry now that we've processed it. */
+	                                delete propertiesMap[property];
+	                            }
+	                        }
+	                    });
+	
+	                    /* Create a tween out of each property, and append its associated data to tweensContainer. */
+	                    for (var property in propertiesMap) {
+	
+	                        /**************************
+	                           Start Value Sourcing
+	                        **************************/
+	
+	                        /* Parse out endValue, easing, and startValue from the property's data. */
+	                        var valueData = parsePropertyValue(propertiesMap[property]),
+	                            endValue = valueData[0],
+	                            easing = valueData[1],
+	                            startValue = valueData[2];
+	
+	                        /* Now that the original property name's format has been used for the parsePropertyValue() lookup above,
+	                           we force the property to its camelCase styling to normalize it for manipulation. */
+	                        property = CSS.Names.camelCase(property);
+	
+	                        /* In case this property is a hook, there are circumstances where we will intend to work on the hook's root property and not the hooked subproperty. */
+	                        var rootProperty = CSS.Hooks.getRoot(property),
+	                            rootPropertyValue = false;
+	
+	                        /* Other than for the dummy tween property, properties that are not supported by the browser (and do not have an associated normalization) will
+	                           inherently produce no style changes when set, so they are skipped in order to decrease animation tick overhead.
+	                           Property support is determined via prefixCheck(), which returns a false flag when no supported is detected. */
+	                        /* Note: Since SVG elements have some of their properties directly applied as HTML attributes,
+	                           there is no way to check for their explicit browser support, and so we skip skip this check for them. */
+	                        if (!Data(element).isSVG && rootProperty !== "tween" && CSS.Names.prefixCheck(rootProperty)[1] === false && CSS.Normalizations.registered[rootProperty] === undefined) {
+	                            if (Velocity.debug) console.log("Skipping [" + rootProperty + "] due to a lack of browser support.");
+	
+	                            continue;
+	                        }
+	
+	                        /* If the display option is being set to a non-"none" (e.g. "block") and opacity (filter on IE<=8) is being
+	                           animated to an endValue of non-zero, the user's intention is to fade in from invisible, thus we forcefeed opacity
+	                           a startValue of 0 if its startValue hasn't already been sourced by value transferring or prior forcefeeding. */
+	                        if (((opts.display !== undefined && opts.display !== null && opts.display !== "none") || (opts.visibility !== undefined && opts.visibility !== "hidden")) && /opacity|filter/.test(property) && !startValue && endValue !== 0) {
+	                            startValue = 0;
+	                        }
+	
+	                        /* If values have been transferred from the previous Velocity call, extract the endValue and rootPropertyValue
+	                           for all of the current call's properties that were *also* animated in the previous call. */
+	                        /* Note: Value transferring can optionally be disabled by the user via the _cacheValues option. */
+	                        if (opts._cacheValues && lastTweensContainer && lastTweensContainer[property]) {
+	                            if (startValue === undefined) {
+	                                startValue = lastTweensContainer[property].endValue + lastTweensContainer[property].unitType;
+	                            }
+	
+	                            /* The previous call's rootPropertyValue is extracted from the element's data cache since that's the
+	                               instance of rootPropertyValue that gets freshly updated by the tweening process, whereas the rootPropertyValue
+	                               attached to the incoming lastTweensContainer is equal to the root property's value prior to any tweening. */
+	                            rootPropertyValue = Data(element).rootPropertyValueCache[rootProperty];
+	                        /* If values were not transferred from a previous Velocity call, query the DOM as needed. */
+	                        } else {
+	                            /* Handle hooked properties. */
+	                            if (CSS.Hooks.registered[property]) {
+	                               if (startValue === undefined) {
+	                                    rootPropertyValue = CSS.getPropertyValue(element, rootProperty); /* GET */
+	                                    /* Note: The following getPropertyValue() call does not actually trigger a DOM query;
+	                                       getPropertyValue() will extract the hook from rootPropertyValue. */
+	                                    startValue = CSS.getPropertyValue(element, property, rootPropertyValue);
+	                                /* If startValue is already defined via forcefeeding, do not query the DOM for the root property's value;
+	                                   just grab rootProperty's zero-value template from CSS.Hooks. This overwrites the element's actual
+	                                   root property value (if one is set), but this is acceptable since the primary reason users forcefeed is
+	                                   to avoid DOM queries, and thus we likewise avoid querying the DOM for the root property's value. */
+	                                } else {
+	                                    /* Grab this hook's zero-value template, e.g. "0px 0px 0px black". */
+	                                    rootPropertyValue = CSS.Hooks.templates[rootProperty][1];
+	                                }
+	                            /* Handle non-hooked properties that haven't already been defined via forcefeeding. */
+	                            } else if (startValue === undefined) {
+	                                startValue = CSS.getPropertyValue(element, property); /* GET */
+	                            }
+	                        }
+	
+	                        /**************************
+	                           Value Data Extraction
+	                        **************************/
+	
+	                        var separatedValue,
+	                            endValueUnitType,
+	                            startValueUnitType,
+	                            operator = false;
+	
+	                        /* Separates a property value into its numeric value and its unit type. */
+	                        function separateValue (property, value) {
+	                            var unitType,
+	                                numericValue;
+	
+	                            numericValue = (value || "0")
+	                                .toString()
+	                                .toLowerCase()
+	                                /* Match the unit type at the end of the value. */
+	                                .replace(/[%A-z]+$/, function(match) {
+	                                    /* Grab the unit type. */
+	                                    unitType = match;
+	
+	                                    /* Strip the unit type off of value. */
+	                                    return "";
+	                                });
+	
+	                            /* If no unit type was supplied, assign one that is appropriate for this property (e.g. "deg" for rotateZ or "px" for width). */
+	                            if (!unitType) {
+	                                unitType = CSS.Values.getUnitType(property);
+	                            }
+	
+	                            return [ numericValue, unitType ];
+	                        }
+	
+	                        /* Separate startValue. */
+	                        separatedValue = separateValue(property, startValue);
+	                        startValue = separatedValue[0];
+	                        startValueUnitType = separatedValue[1];
+	
+	                        /* Separate endValue, and extract a value operator (e.g. "+=", "-=") if one exists. */
+	                        separatedValue = separateValue(property, endValue);
+	                        endValue = separatedValue[0].replace(/^([+-\/*])=/, function(match, subMatch) {
+	                            operator = subMatch;
+	
+	                            /* Strip the operator off of the value. */
+	                            return "";
+	                        });
+	                        endValueUnitType = separatedValue[1];
+	
+	                        /* Parse float values from endValue and startValue. Default to 0 if NaN is returned. */
+	                        startValue = parseFloat(startValue) || 0;
+	                        endValue = parseFloat(endValue) || 0;
+	
+	                        /***************************************
+	                           Property-Specific Value Conversion
+	                        ***************************************/
+	
+	                        /* Custom support for properties that don't actually accept the % unit type, but where pollyfilling is trivial and relatively foolproof. */
+	                        if (endValueUnitType === "%") {
+	                            /* A %-value fontSize/lineHeight is relative to the parent's fontSize (as opposed to the parent's dimensions),
+	                               which is identical to the em unit's behavior, so we piggyback off of that. */
+	                            if (/^(fontSize|lineHeight)$/.test(property)) {
+	                                /* Convert % into an em decimal value. */
+	                                endValue = endValue / 100;
+	                                endValueUnitType = "em";
+	                            /* For scaleX and scaleY, convert the value into its decimal format and strip off the unit type. */
+	                            } else if (/^scale/.test(property)) {
+	                                endValue = endValue / 100;
+	                                endValueUnitType = "";
+	                            /* For RGB components, take the defined percentage of 255 and strip off the unit type. */
+	                            } else if (/(Red|Green|Blue)$/i.test(property)) {
+	                                endValue = (endValue / 100) * 255;
+	                                endValueUnitType = "";
+	                            }
+	                        }
+	
+	                        /***************************
+	                           Unit Ratio Calculation
+	                        ***************************/
+	
+	                        /* When queried, the browser returns (most) CSS property values in pixels. Therefore, if an endValue with a unit type of
+	                           %, em, or rem is animated toward, startValue must be converted from pixels into the same unit type as endValue in order
+	                           for value manipulation logic (increment/decrement) to proceed. Further, if the startValue was forcefed or transferred
+	                           from a previous call, startValue may also not be in pixels. Unit conversion logic therefore consists of two steps:
+	                           1) Calculating the ratio of %/em/rem/vh/vw relative to pixels
+	                           2) Converting startValue into the same unit of measurement as endValue based on these ratios. */
+	                        /* Unit conversion ratios are calculated by inserting a sibling node next to the target node, copying over its position property,
+	                           setting values with the target unit type then comparing the returned pixel value. */
+	                        /* Note: Even if only one of these unit types is being animated, all unit ratios are calculated at once since the overhead
+	                           of batching the SETs and GETs together upfront outweights the potential overhead
+	                           of layout thrashing caused by re-querying for uncalculated ratios for subsequently-processed properties. */
+	                        /* Todo: Shift this logic into the calls' first tick instance so that it's synced with RAF. */
+	                        function calculateUnitRatios () {
+	
+	                            /************************
+	                                Same Ratio Checks
+	                            ************************/
+	
+	                            /* The properties below are used to determine whether the element differs sufficiently from this call's
+	                               previously iterated element to also differ in its unit conversion ratios. If the properties match up with those
+	                               of the prior element, the prior element's conversion ratios are used. Like most optimizations in Velocity,
+	                               this is done to minimize DOM querying. */
+	                            var sameRatioIndicators = {
+	                                    myParent: element.parentNode || document.body, /* GET */
+	                                    position: CSS.getPropertyValue(element, "position"), /* GET */
+	                                    fontSize: CSS.getPropertyValue(element, "fontSize") /* GET */
+	                                },
+	                                /* Determine if the same % ratio can be used. % is based on the element's position value and its parent's width and height dimensions. */
+	                                samePercentRatio = ((sameRatioIndicators.position === callUnitConversionData.lastPosition) && (sameRatioIndicators.myParent === callUnitConversionData.lastParent)),
+	                                /* Determine if the same em ratio can be used. em is relative to the element's fontSize. */
+	                                sameEmRatio = (sameRatioIndicators.fontSize === callUnitConversionData.lastFontSize);
+	
+	                            /* Store these ratio indicators call-wide for the next element to compare against. */
+	                            callUnitConversionData.lastParent = sameRatioIndicators.myParent;
+	                            callUnitConversionData.lastPosition = sameRatioIndicators.position;
+	                            callUnitConversionData.lastFontSize = sameRatioIndicators.fontSize;
+	
+	                            /***************************
+	                               Element-Specific Units
+	                            ***************************/
+	
+	                            /* Note: IE8 rounds to the nearest pixel when returning CSS values, thus we perform conversions using a measurement
+	                               of 100 (instead of 1) to give our ratios a precision of at least 2 decimal values. */
+	                            var measurement = 100,
+	                                unitRatios = {};
+	
+	                            if (!sameEmRatio || !samePercentRatio) {
+	                                var dummy = Data(element).isSVG ? document.createElementNS("http://www.w3.org/2000/svg", "rect") : document.createElement("div");
+	
+	                                Velocity.init(dummy);
+	                                sameRatioIndicators.myParent.appendChild(dummy);
+	
+	                                /* To accurately and consistently calculate conversion ratios, the element's cascaded overflow and box-sizing are stripped.
+	                                   Similarly, since width/height can be artificially constrained by their min-/max- equivalents, these are controlled for as well. */
+	                                /* Note: Overflow must be also be controlled for per-axis since the overflow property overwrites its per-axis values. */
+	                                $.each([ "overflow", "overflowX", "overflowY" ], function(i, property) {
+	                                    Velocity.CSS.setPropertyValue(dummy, property, "hidden");
+	                                });
+	                                Velocity.CSS.setPropertyValue(dummy, "position", sameRatioIndicators.position);
+	                                Velocity.CSS.setPropertyValue(dummy, "fontSize", sameRatioIndicators.fontSize);
+	                                Velocity.CSS.setPropertyValue(dummy, "boxSizing", "content-box");
+	
+	                                /* width and height act as our proxy properties for measuring the horizontal and vertical % ratios. */
+	                                $.each([ "minWidth", "maxWidth", "width", "minHeight", "maxHeight", "height" ], function(i, property) {
+	                                    Velocity.CSS.setPropertyValue(dummy, property, measurement + "%");
+	                                });
+	                                /* paddingLeft arbitrarily acts as our proxy property for the em ratio. */
+	                                Velocity.CSS.setPropertyValue(dummy, "paddingLeft", measurement + "em");
+	
+	                                /* Divide the returned value by the measurement to get the ratio between 1% and 1px. Default to 1 since working with 0 can produce Infinite. */
+	                                unitRatios.percentToPxWidth = callUnitConversionData.lastPercentToPxWidth = (parseFloat(CSS.getPropertyValue(dummy, "width", null, true)) || 1) / measurement; /* GET */
+	                                unitRatios.percentToPxHeight = callUnitConversionData.lastPercentToPxHeight = (parseFloat(CSS.getPropertyValue(dummy, "height", null, true)) || 1) / measurement; /* GET */
+	                                unitRatios.emToPx = callUnitConversionData.lastEmToPx = (parseFloat(CSS.getPropertyValue(dummy, "paddingLeft")) || 1) / measurement; /* GET */
+	
+	                                sameRatioIndicators.myParent.removeChild(dummy);
+	                            } else {
+	                                unitRatios.emToPx = callUnitConversionData.lastEmToPx;
+	                                unitRatios.percentToPxWidth = callUnitConversionData.lastPercentToPxWidth;
+	                                unitRatios.percentToPxHeight = callUnitConversionData.lastPercentToPxHeight;
+	                            }
+	
+	                            /***************************
+	                               Element-Agnostic Units
+	                            ***************************/
+	
+	                            /* Whereas % and em ratios are determined on a per-element basis, the rem unit only needs to be checked
+	                               once per call since it's exclusively dependant upon document.body's fontSize. If this is the first time
+	                               that calculateUnitRatios() is being run during this call, remToPx will still be set to its default value of null,
+	                               so we calculate it now. */
+	                            if (callUnitConversionData.remToPx === null) {
+	                                /* Default to browsers' default fontSize of 16px in the case of 0. */
+	                                callUnitConversionData.remToPx = parseFloat(CSS.getPropertyValue(document.body, "fontSize")) || 16; /* GET */
+	                            }
+	
+	                            /* Similarly, viewport units are %-relative to the window's inner dimensions. */
+	                            if (callUnitConversionData.vwToPx === null) {
+	                                callUnitConversionData.vwToPx = parseFloat(window.innerWidth) / 100; /* GET */
+	                                callUnitConversionData.vhToPx = parseFloat(window.innerHeight) / 100; /* GET */
+	                            }
+	
+	                            unitRatios.remToPx = callUnitConversionData.remToPx;
+	                            unitRatios.vwToPx = callUnitConversionData.vwToPx;
+	                            unitRatios.vhToPx = callUnitConversionData.vhToPx;
+	
+	                            if (Velocity.debug >= 1) console.log("Unit ratios: " + JSON.stringify(unitRatios), element);
+	
+	                            return unitRatios;
+	                        }
+	
+	                        /********************
+	                           Unit Conversion
+	                        ********************/
+	
+	                        /* The * and / operators, which are not passed in with an associated unit, inherently use startValue's unit. Skip value and unit conversion. */
+	                        if (/[\/*]/.test(operator)) {
+	                            endValueUnitType = startValueUnitType;
+	                        /* If startValue and endValue differ in unit type, convert startValue into the same unit type as endValue so that if endValueUnitType
+	                           is a relative unit (%, em, rem), the values set during tweening will continue to be accurately relative even if the metrics they depend
+	                           on are dynamically changing during the course of the animation. Conversely, if we always normalized into px and used px for setting values, the px ratio
+	                           would become stale if the original unit being animated toward was relative and the underlying metrics change during the animation. */
+	                        /* Since 0 is 0 in any unit type, no conversion is necessary when startValue is 0 -- we just start at 0 with endValueUnitType. */
+	                        } else if ((startValueUnitType !== endValueUnitType) && startValue !== 0) {
+	                            /* Unit conversion is also skipped when endValue is 0, but *startValueUnitType* must be used for tween values to remain accurate. */
+	                            /* Note: Skipping unit conversion here means that if endValueUnitType was originally a relative unit, the animation won't relatively
+	                               match the underlying metrics if they change, but this is acceptable since we're animating toward invisibility instead of toward visibility,
+	                               which remains past the point of the animation's completion. */
+	                            if (endValue === 0) {
+	                                endValueUnitType = startValueUnitType;
+	                            } else {
+	                                /* By this point, we cannot avoid unit conversion (it's undesirable since it causes layout thrashing).
+	                                   If we haven't already, we trigger calculateUnitRatios(), which runs once per element per call. */
+	                                elementUnitConversionData = elementUnitConversionData || calculateUnitRatios();
+	
+	                                /* The following RegEx matches CSS properties that have their % values measured relative to the x-axis. */
+	                                /* Note: W3C spec mandates that all of margin and padding's properties (even top and bottom) are %-relative to the *width* of the parent element. */
+	                                var axis = (/margin|padding|left|right|width|text|word|letter/i.test(property) || /X$/.test(property) || property === "x") ? "x" : "y";
+	
+	                                /* In order to avoid generating n^2 bespoke conversion functions, unit conversion is a two-step process:
+	                                   1) Convert startValue into pixels. 2) Convert this new pixel value into endValue's unit type. */
+	                                switch (startValueUnitType) {
+	                                    case "%":
+	                                        /* Note: translateX and translateY are the only properties that are %-relative to an element's own dimensions -- not its parent's dimensions.
+	                                           Velocity does not include a special conversion process to account for this behavior. Therefore, animating translateX/Y from a % value
+	                                           to a non-% value will produce an incorrect start value. Fortunately, this sort of cross-unit conversion is rarely done by users in practice. */
+	                                        startValue *= (axis === "x" ? elementUnitConversionData.percentToPxWidth : elementUnitConversionData.percentToPxHeight);
+	                                        break;
+	
+	                                    case "px":
+	                                        /* px acts as our midpoint in the unit conversion process; do nothing. */
+	                                        break;
+	
+	                                    default:
+	                                        startValue *= elementUnitConversionData[startValueUnitType + "ToPx"];
+	                                }
+	
+	                                /* Invert the px ratios to convert into to the target unit. */
+	                                switch (endValueUnitType) {
+	                                    case "%":
+	                                        startValue *= 1 / (axis === "x" ? elementUnitConversionData.percentToPxWidth : elementUnitConversionData.percentToPxHeight);
+	                                        break;
+	
+	                                    case "px":
+	                                        /* startValue is already in px, do nothing; we're done. */
+	                                        break;
+	
+	                                    default:
+	                                        startValue *= 1 / elementUnitConversionData[endValueUnitType + "ToPx"];
+	                                }
+	                            }
+	                        }
+	
+	                        /*********************
+	                           Relative Values
+	                        *********************/
+	
+	                        /* Operator logic must be performed last since it requires unit-normalized start and end values. */
+	                        /* Note: Relative *percent values* do not behave how most people think; while one would expect "+=50%"
+	                           to increase the property 1.5x its current value, it in fact increases the percent units in absolute terms:
+	                           50 points is added on top of the current % value. */
+	                        switch (operator) {
+	                            case "+":
+	                                endValue = startValue + endValue;
+	                                break;
+	
+	                            case "-":
+	                                endValue = startValue - endValue;
+	                                break;
+	
+	                            case "*":
+	                                endValue = startValue * endValue;
+	                                break;
+	
+	                            case "/":
+	                                endValue = startValue / endValue;
+	                                break;
+	                        }
+	
+	                        /**************************
+	                           tweensContainer Push
+	                        **************************/
+	
+	                        /* Construct the per-property tween object, and push it to the element's tweensContainer. */
+	                        tweensContainer[property] = {
+	                            rootPropertyValue: rootPropertyValue,
+	                            startValue: startValue,
+	                            currentValue: startValue,
+	                            endValue: endValue,
+	                            unitType: endValueUnitType,
+	                            easing: easing
+	                        };
+	
+	                        if (Velocity.debug) console.log("tweensContainer (" + property + "): " + JSON.stringify(tweensContainer[property]), element);
+	                    }
+	
+	                    /* Along with its property data, store a reference to the element itself onto tweensContainer. */
+	                    tweensContainer.element = element;
+	                }
+	
+	                /*****************
+	                    Call Push
+	                *****************/
+	
+	                /* Note: tweensContainer can be empty if all of the properties in this call's property map were skipped due to not
+	                   being supported by the browser. The element property is used for checking that the tweensContainer has been appended to. */
+	                if (tweensContainer.element) {
+	                    /* Apply the "velocity-animating" indicator class. */
+	                    CSS.Values.addClass(element, "velocity-animating");
+	
+	                    /* The call array houses the tweensContainers for each element being animated in the current call. */
+	                    call.push(tweensContainer);
+	
+	                    /* Store the tweensContainer and options if we're working on the default effects queue, so that they can be used by the reverse command. */
+	                    if (opts.queue === "") {
+	                        Data(element).tweensContainer = tweensContainer;
+	                        Data(element).opts = opts;
+	                    }
+	
+	                    /* Switch on the element's animating flag. */
+	                    Data(element).isAnimating = true;
+	
+	                    /* Once the final element in this call's element set has been processed, push the call array onto
+	                       Velocity.State.calls for the animation tick to immediately begin processing. */
+	                    if (elementsIndex === elementsLength - 1) {
+	                        /* Add the current call plus its associated metadata (the element set and the call's options) onto the global call container.
+	                           Anything on this call container is subjected to tick() processing. */
+	                        Velocity.State.calls.push([ call, elements, opts, null, promiseData.resolver ]);
+	
+	                        /* If the animation tick isn't running, start it. (Velocity shuts it off when there are no active calls to process.) */
+	                        if (Velocity.State.isTicking === false) {
+	                            Velocity.State.isTicking = true;
+	
+	                            /* Start the tick loop. */
+	                            tick();
+	                        }
+	                    } else {
+	                        elementsIndex++;
+	                    }
+	                }
+	            }
+	
+	            /* When the queue option is set to false, the call skips the element's queue and fires immediately. */
+	            if (opts.queue === false) {
+	                /* Since this buildQueue call doesn't respect the element's existing queue (which is where a delay option would have been appended),
+	                   we manually inject the delay property here with an explicit setTimeout. */
+	                if (opts.delay) {
+	                    setTimeout(buildQueue, opts.delay);
+	                } else {
+	                    buildQueue();
+	                }
+	            /* Otherwise, the call undergoes element queueing as normal. */
+	            /* Note: To interoperate with jQuery, Velocity uses jQuery's own $.queue() stack for queuing logic. */
+	            } else {
+	                $.queue(element, opts.queue, function(next, clearQueue) {
+	                    /* If the clearQueue flag was passed in by the stop command, resolve this call's promise. (Promises can only be resolved once,
+	                       so it's fine if this is repeatedly triggered for each element in the associated call.) */
+	                    if (clearQueue === true) {
+	                        if (promiseData.promise) {
+	                            promiseData.resolver(elements);
+	                        }
+	
+	                        /* Do not continue with animation queueing. */
+	                        return true;
+	                    }
+	
+	                    /* This flag indicates to the upcoming completeCall() function that this queue entry was initiated by Velocity.
+	                       See completeCall() for further details. */
+	                    Velocity.velocityQueueEntryFlag = true;
+	
+	                    buildQueue(next);
+	                });
+	            }
+	
+	            /*********************
+	                Auto-Dequeuing
+	            *********************/
+	
+	            /* As per jQuery's $.queue() behavior, to fire the first non-custom-queue entry on an element, the element
+	               must be dequeued if its queue stack consists *solely* of the current call. (This can be determined by checking
+	               for the "inprogress" item that jQuery prepends to active queue stack arrays.) Regardless, whenever the element's
+	               queue is further appended with additional items -- including $.delay()'s or even $.animate() calls, the queue's
+	               first entry is automatically fired. This behavior contrasts that of custom queues, which never auto-fire. */
+	            /* Note: When an element set is being subjected to a non-parallel Velocity call, the animation will not begin until
+	               each one of the elements in the set has reached the end of its individually pre-existing queue chain. */
+	            /* Note: Unfortunately, most people don't fully grasp jQuery's powerful, yet quirky, $.queue() function.
+	               Lean more here: http://stackoverflow.com/questions/1058158/can-somebody-explain-jquery-queue-to-me */
+	            if ((opts.queue === "" || opts.queue === "fx") && $.queue(element)[0] !== "inprogress") {
+	                $.dequeue(element);
+	            }
+	        }
+	
+	        /**************************
+	           Element Set Iteration
+	        **************************/
+	
+	        /* If the "nodeType" property exists on the elements variable, we're animating a single element.
+	           Place it in an array so that $.each() can iterate over it. */
+	        $.each(elements, function(i, element) {
+	            /* Ensure each element in a set has a nodeType (is a real element) to avoid throwing errors. */
+	            if (Type.isNode(element)) {
+	                processElement.call(element);
+	            }
+	        });
+	
+	        /******************
+	           Option: Loop
+	        ******************/
+	
+	        /* The loop option accepts an integer indicating how many times the element should loop between the values in the
+	           current call's properties map and the element's property values prior to this call. */
+	        /* Note: The loop option's logic is performed here -- after element processing -- because the current call needs
+	           to undergo its queue insertion prior to the loop option generating its series of constituent "reverse" calls,
+	           which chain after the current call. Two reverse calls (two "alternations") constitute one loop. */
+	        var opts = $.extend({}, Velocity.defaults, options),
+	            reverseCallsCount;
+	
+	        opts.loop = parseInt(opts.loop);
+	        reverseCallsCount = (opts.loop * 2) - 1;
+	
+	        if (opts.loop) {
+	            /* Double the loop count to convert it into its appropriate number of "reverse" calls.
+	               Subtract 1 from the resulting value since the current call is included in the total alternation count. */
+	            for (var x = 0; x < reverseCallsCount; x++) {
+	                /* Since the logic for the reverse action occurs inside Queueing and therefore this call's options object
+	                   isn't parsed until then as well, the current call's delay option must be explicitly passed into the reverse
+	                   call so that the delay logic that occurs inside *Pre-Queueing* can process it. */
+	                var reverseOptions = {
+	                    delay: opts.delay,
+	                    progress: opts.progress
+	                };
+	
+	                /* If a complete callback was passed into this call, transfer it to the loop redirect's final "reverse" call
+	                   so that it's triggered when the entire redirect is complete (and not when the very first animation is complete). */
+	                if (x === reverseCallsCount - 1) {
+	                    reverseOptions.display = opts.display;
+	                    reverseOptions.visibility = opts.visibility;
+	                    reverseOptions.complete = opts.complete;
+	                }
+	
+	                animate(elements, "reverse", reverseOptions);
+	            }
+	        }
+	
+	        /***************
+	            Chaining
+	        ***************/
+	
+	        /* Return the elements back to the call chain, with wrapped elements taking precedence in case Velocity was called via the $.fn. extension. */
+	        return getChain();
+	    };
+	
+	    /* Turn Velocity into the animation function, extended with the pre-existing Velocity object. */
+	    Velocity = $.extend(animate, Velocity);
+	    /* For legacy support, also expose the literal animate method. */
+	    Velocity.animate = animate;
+	
+	    /**************
+	        Timing
+	    **************/
+	
+	    /* Ticker function. */
+	    var ticker = window.requestAnimationFrame || rAFShim;
+	
+	    /* Inactive browser tabs pause rAF, which results in all active animations immediately sprinting to their completion states when the tab refocuses.
+	       To get around this, we dynamically switch rAF to setTimeout (which the browser *doesn't* pause) when the tab loses focus. We skip this for mobile
+	       devices to avoid wasting battery power on inactive tabs. */
+	    /* Note: Tab focus detection doesn't work on older versions of IE, but that's okay since they don't support rAF to begin with. */
+	    if (!Velocity.State.isMobile && document.hidden !== undefined) {
+	        document.addEventListener("visibilitychange", function() {
+	            /* Reassign the rAF function (which the global tick() function uses) based on the tab's focus state. */
+	            if (document.hidden) {
+	                ticker = function(callback) {
+	                    /* The tick function needs a truthy first argument in order to pass its internal timestamp check. */
+	                    return setTimeout(function() { callback(true) }, 16);
+	                };
+	
+	                /* The rAF loop has been paused by the browser, so we manually restart the tick. */
+	                tick();
+	            } else {
+	                ticker = window.requestAnimationFrame || rAFShim;
+	            }
+	        });
+	    }
+	
+	    /************
+	        Tick
+	    ************/
+	
+	    /* Note: All calls to Velocity are pushed to the Velocity.State.calls array, which is fully iterated through upon each tick. */
+	    function tick (timestamp) {
+	        /* An empty timestamp argument indicates that this is the first tick occurence since ticking was turned on.
+	           We leverage this metadata to fully ignore the first tick pass since RAF's initial pass is fired whenever
+	           the browser's next tick sync time occurs, which results in the first elements subjected to Velocity
+	           calls being animated out of sync with any elements animated immediately thereafter. In short, we ignore
+	           the first RAF tick pass so that elements being immediately consecutively animated -- instead of simultaneously animated
+	           by the same Velocity call -- are properly batched into the same initial RAF tick and consequently remain in sync thereafter. */
+	        if (timestamp) {
+	            /* We ignore RAF's high resolution timestamp since it can be significantly offset when the browser is
+	               under high stress; we opt for choppiness over allowing the browser to drop huge chunks of frames. */
+	            var timeCurrent = (new Date).getTime();
+	
+	            /********************
+	               Call Iteration
+	            ********************/
+	
+	            var callsLength = Velocity.State.calls.length;
+	
+	            /* To speed up iterating over this array, it is compacted (falsey items -- calls that have completed -- are removed)
+	               when its length has ballooned to a point that can impact tick performance. This only becomes necessary when animation
+	               has been continuous with many elements over a long period of time; whenever all active calls are completed, completeCall() clears Velocity.State.calls. */
+	            if (callsLength > 10000) {
+	                Velocity.State.calls = compactSparseArray(Velocity.State.calls);
+	            }
+	
+	            /* Iterate through each active call. */
+	            for (var i = 0; i < callsLength; i++) {
+	                /* When a Velocity call is completed, its Velocity.State.calls entry is set to false. Continue on to the next call. */
+	                if (!Velocity.State.calls[i]) {
+	                    continue;
+	                }
+	
+	                /************************
+	                   Call-Wide Variables
+	                ************************/
+	
+	                var callContainer = Velocity.State.calls[i],
+	                    call = callContainer[0],
+	                    opts = callContainer[2],
+	                    timeStart = callContainer[3],
+	                    firstTick = !!timeStart,
+	                    tweenDummyValue = null;
+	
+	                /* If timeStart is undefined, then this is the first time that this call has been processed by tick().
+	                   We assign timeStart now so that its value is as close to the real animation start time as possible.
+	                   (Conversely, had timeStart been defined when this call was added to Velocity.State.calls, the delay
+	                   between that time and now would cause the first few frames of the tween to be skipped since
+	                   percentComplete is calculated relative to timeStart.) */
+	                /* Further, subtract 16ms (the approximate resolution of RAF) from the current time value so that the
+	                   first tick iteration isn't wasted by animating at 0% tween completion, which would produce the
+	                   same style value as the element's current value. */
+	                if (!timeStart) {
+	                    timeStart = Velocity.State.calls[i][3] = timeCurrent - 16;
+	                }
+	
+	                /* The tween's completion percentage is relative to the tween's start time, not the tween's start value
+	                   (which would result in unpredictable tween durations since JavaScript's timers are not particularly accurate).
+	                   Accordingly, we ensure that percentComplete does not exceed 1. */
+	                var percentComplete = Math.min((timeCurrent - timeStart) / opts.duration, 1);
+	
+	                /**********************
+	                   Element Iteration
+	                **********************/
+	
+	                /* For every call, iterate through each of the elements in its set. */
+	                for (var j = 0, callLength = call.length; j < callLength; j++) {
+	                    var tweensContainer = call[j],
+	                        element = tweensContainer.element;
+	
+	                    /* Check to see if this element has been deleted midway through the animation by checking for the
+	                       continued existence of its data cache. If it's gone, skip animating this element. */
+	                    if (!Data(element)) {
+	                        continue;
+	                    }
+	
+	                    var transformPropertyExists = false;
+	
+	                    /**********************************
+	                       Display & Visibility Toggling
+	                    **********************************/
+	
+	                    /* If the display option is set to non-"none", set it upfront so that the element can become visible before tweening begins.
+	                       (Otherwise, display's "none" value is set in completeCall() once the animation has completed.) */
+	                    if (opts.display !== undefined && opts.display !== null && opts.display !== "none") {
+	                        if (opts.display === "flex") {
+	                            var flexValues = [ "-webkit-box", "-moz-box", "-ms-flexbox", "-webkit-flex" ];
+	
+	                            $.each(flexValues, function(i, flexValue) {
+	                                CSS.setPropertyValue(element, "display", flexValue);
+	                            });
+	                        }
+	
+	                        CSS.setPropertyValue(element, "display", opts.display);
+	                    }
+	
+	                    /* Same goes with the visibility option, but its "none" equivalent is "hidden". */
+	                    if (opts.visibility !== undefined && opts.visibility !== "hidden") {
+	                        CSS.setPropertyValue(element, "visibility", opts.visibility);
+	                    }
+	
+	                    /************************
+	                       Property Iteration
+	                    ************************/
+	
+	                    /* For every element, iterate through each property. */
+	                    for (var property in tweensContainer) {
+	                        /* Note: In addition to property tween data, tweensContainer contains a reference to its associated element. */
+	                        if (property !== "element") {
+	                            var tween = tweensContainer[property],
+	                                currentValue,
+	                                /* Easing can either be a pre-genereated function or a string that references a pre-registered easing
+	                                   on the Velocity.Easings object. In either case, return the appropriate easing *function*. */
+	                                easing = Type.isString(tween.easing) ? Velocity.Easings[tween.easing] : tween.easing;
+	
+	                            /******************************
+	                               Current Value Calculation
+	                            ******************************/
+	
+	                            /* If this is the last tick pass (if we've reached 100% completion for this tween),
+	                               ensure that currentValue is explicitly set to its target endValue so that it's not subjected to any rounding. */
+	                            if (percentComplete === 1) {
+	                                currentValue = tween.endValue;
+	                            /* Otherwise, calculate currentValue based on the current delta from startValue. */
+	                            } else {
+	                                var tweenDelta = tween.endValue - tween.startValue;
+	                                currentValue = tween.startValue + (tweenDelta * easing(percentComplete, opts, tweenDelta));
+	
+	                                /* If no value change is occurring, don't proceed with DOM updating. */
+	                                if (!firstTick && (currentValue === tween.currentValue)) {
+	                                    continue;
+	                                }
+	                            }
+	
+	                            tween.currentValue = currentValue;
+	
+	                            /* If we're tweening a fake 'tween' property in order to log transition values, update the one-per-call variable so that
+	                               it can be passed into the progress callback. */
+	                            if (property === "tween") {
+	                                tweenDummyValue = currentValue;
+	                            } else {
+	                                /******************
+	                                   Hooks: Part I
+	                                ******************/
+	
+	                                /* For hooked properties, the newly-updated rootPropertyValueCache is cached onto the element so that it can be used
+	                                   for subsequent hooks in this call that are associated with the same root property. If we didn't cache the updated
+	                                   rootPropertyValue, each subsequent update to the root property in this tick pass would reset the previous hook's
+	                                   updates to rootPropertyValue prior to injection. A nice performance byproduct of rootPropertyValue caching is that
+	                                   subsequently chained animations using the same hookRoot but a different hook can use this cached rootPropertyValue. */
+	                                if (CSS.Hooks.registered[property]) {
+	                                    var hookRoot = CSS.Hooks.getRoot(property),
+	                                        rootPropertyValueCache = Data(element).rootPropertyValueCache[hookRoot];
+	
+	                                    if (rootPropertyValueCache) {
+	                                        tween.rootPropertyValue = rootPropertyValueCache;
+	                                    }
+	                                }
+	
+	                                /*****************
+	                                    DOM Update
+	                                *****************/
+	
+	                                /* setPropertyValue() returns an array of the property name and property value post any normalization that may have been performed. */
+	                                /* Note: To solve an IE<=8 positioning bug, the unit type is dropped when setting a property value of 0. */
+	                                var adjustedSetData = CSS.setPropertyValue(element, /* SET */
+	                                                                           property,
+	                                                                           tween.currentValue + (parseFloat(currentValue) === 0 ? "" : tween.unitType),
+	                                                                           tween.rootPropertyValue,
+	                                                                           tween.scrollData);
+	
+	                                /*******************
+	                                   Hooks: Part II
+	                                *******************/
+	
+	                                /* Now that we have the hook's updated rootPropertyValue (the post-processed value provided by adjustedSetData), cache it onto the element. */
+	                                if (CSS.Hooks.registered[property]) {
+	                                    /* Since adjustedSetData contains normalized data ready for DOM updating, the rootPropertyValue needs to be re-extracted from its normalized form. ?? */
+	                                    if (CSS.Normalizations.registered[hookRoot]) {
+	                                        Data(element).rootPropertyValueCache[hookRoot] = CSS.Normalizations.registered[hookRoot]("extract", null, adjustedSetData[1]);
+	                                    } else {
+	                                        Data(element).rootPropertyValueCache[hookRoot] = adjustedSetData[1];
+	                                    }
+	                                }
+	
+	                                /***************
+	                                   Transforms
+	                                ***************/
+	
+	                                /* Flag whether a transform property is being animated so that flushTransformCache() can be triggered once this tick pass is complete. */
+	                                if (adjustedSetData[0] === "transform") {
+	                                    transformPropertyExists = true;
+	                                }
+	
+	                            }
+	                        }
+	                    }
+	
+	                    /****************
+	                        mobileHA
+	                    ****************/
+	
+	                    /* If mobileHA is enabled, set the translate3d transform to null to force hardware acceleration.
+	                       It's safe to override this property since Velocity doesn't actually support its animation (hooks are used in its place). */
+	                    if (opts.mobileHA) {
+	                        /* Don't set the null transform hack if we've already done so. */
+	                        if (Data(element).transformCache.translate3d === undefined) {
+	                            /* All entries on the transformCache object are later concatenated into a single transform string via flushTransformCache(). */
+	                            Data(element).transformCache.translate3d = "(0px, 0px, 0px)";
+	
+	                            transformPropertyExists = true;
+	                        }
+	                    }
+	
+	                    if (transformPropertyExists) {
+	                        CSS.flushTransformCache(element);
+	                    }
+	                }
+	
+	                /* The non-"none" display value is only applied to an element once -- when its associated call is first ticked through.
+	                   Accordingly, it's set to false so that it isn't re-processed by this call in the next tick. */
+	                if (opts.display !== undefined && opts.display !== "none") {
+	                    Velocity.State.calls[i][2].display = false;
+	                }
+	                if (opts.visibility !== undefined && opts.visibility !== "hidden") {
+	                    Velocity.State.calls[i][2].visibility = false;
+	                }
+	
+	                /* Pass the elements and the timing data (percentComplete, msRemaining, timeStart, tweenDummyValue) into the progress callback. */
+	                if (opts.progress) {
+	                    opts.progress.call(callContainer[1],
+	                                       callContainer[1],
+	                                       percentComplete,
+	                                       Math.max(0, (timeStart + opts.duration) - timeCurrent),
+	                                       timeStart,
+	                                       tweenDummyValue);
+	                }
+	
+	                /* If this call has finished tweening, pass its index to completeCall() to handle call cleanup. */
+	                if (percentComplete === 1) {
+	                    completeCall(i);
+	                }
+	            }
+	        }
+	
+	        /* Note: completeCall() sets the isTicking flag to false when the last call on Velocity.State.calls has completed. */
+	        if (Velocity.State.isTicking) {
+	            ticker(tick);
+	        }
+	    }
+	
+	    /**********************
+	        Call Completion
+	    **********************/
+	
+	    /* Note: Unlike tick(), which processes all active calls at once, call completion is handled on a per-call basis. */
+	    function completeCall (callIndex, isStopped) {
+	        /* Ensure the call exists. */
+	        if (!Velocity.State.calls[callIndex]) {
+	            return false;
+	        }
+	
+	        /* Pull the metadata from the call. */
+	        var call = Velocity.State.calls[callIndex][0],
+	            elements = Velocity.State.calls[callIndex][1],
+	            opts = Velocity.State.calls[callIndex][2],
+	            resolver = Velocity.State.calls[callIndex][4];
+	
+	        var remainingCallsExist = false;
+	
+	        /*************************
+	           Element Finalization
+	        *************************/
+	
+	        for (var i = 0, callLength = call.length; i < callLength; i++) {
+	            var element = call[i].element;
+	
+	            /* If the user set display to "none" (intending to hide the element), set it now that the animation has completed. */
+	            /* Note: display:none isn't set when calls are manually stopped (via Velocity("stop"). */
+	            /* Note: Display gets ignored with "reverse" calls and infinite loops, since this behavior would be undesirable. */
+	            if (!isStopped && !opts.loop) {
+	                if (opts.display === "none") {
+	                    CSS.setPropertyValue(element, "display", opts.display);
+	                }
+	
+	                if (opts.visibility === "hidden") {
+	                    CSS.setPropertyValue(element, "visibility", opts.visibility);
+	                }
+	            }
+	
+	            /* If the element's queue is empty (if only the "inprogress" item is left at position 0) or if its queue is about to run
+	               a non-Velocity-initiated entry, turn off the isAnimating flag. A non-Velocity-initiatied queue entry's logic might alter
+	               an element's CSS values and thereby cause Velocity's cached value data to go stale. To detect if a queue entry was initiated by Velocity,
+	               we check for the existence of our special Velocity.queueEntryFlag declaration, which minifiers won't rename since the flag
+	               is assigned to jQuery's global $ object and thus exists out of Velocity's own scope. */
+	            if (opts.loop !== true && ($.queue(element)[1] === undefined || !/\.velocityQueueEntryFlag/i.test($.queue(element)[1]))) {
+	                /* The element may have been deleted. Ensure that its data cache still exists before acting on it. */
+	                if (Data(element)) {
+	                    Data(element).isAnimating = false;
+	                    /* Clear the element's rootPropertyValueCache, which will become stale. */
+	                    Data(element).rootPropertyValueCache = {};
+	
+	                    var transformHAPropertyExists = false;
+	                    /* If any 3D transform subproperty is at its default value (regardless of unit type), remove it. */
+	                    $.each(CSS.Lists.transforms3D, function(i, transformName) {
+	                        var defaultValue = /^scale/.test(transformName) ? 1 : 0,
+	                            currentValue = Data(element).transformCache[transformName];
+	
+	                        if (Data(element).transformCache[transformName] !== undefined && new RegExp("^\\(" + defaultValue + "[^.]").test(currentValue)) {
+	                            transformHAPropertyExists = true;
+	
+	                            delete Data(element).transformCache[transformName];
+	                        }
+	                    });
+	
+	                    /* Mobile devices have hardware acceleration removed at the end of the animation in order to avoid hogging the GPU's memory. */
+	                    if (opts.mobileHA) {
+	                        transformHAPropertyExists = true;
+	                        delete Data(element).transformCache.translate3d;
+	                    }
+	
+	                    /* Flush the subproperty removals to the DOM. */
+	                    if (transformHAPropertyExists) {
+	                        CSS.flushTransformCache(element);
+	                    }
+	
+	                    /* Remove the "velocity-animating" indicator class. */
+	                    CSS.Values.removeClass(element, "velocity-animating");
+	                }
+	            }
+	
+	            /*********************
+	               Option: Complete
+	            *********************/
+	
+	            /* Complete is fired once per call (not once per element) and is passed the full raw DOM element set as both its context and its first argument. */
+	            /* Note: Callbacks aren't fired when calls are manually stopped (via Velocity("stop"). */
+	            if (!isStopped && opts.complete && !opts.loop && (i === callLength - 1)) {
+	                /* We throw callbacks in a setTimeout so that thrown errors don't halt the execution of Velocity itself. */
+	                try {
+	                    opts.complete.call(elements, elements);
+	                } catch (error) {
+	                    setTimeout(function() { throw error; }, 1);
+	                }
+	            }
+	
+	            /**********************
+	               Promise Resolving
+	            **********************/
+	
+	            /* Note: Infinite loops don't return promises. */
+	            if (resolver && opts.loop !== true) {
+	                resolver(elements);
+	            }
+	
+	            /****************************
+	               Option: Loop (Infinite)
+	            ****************************/
+	
+	            if (Data(element) && opts.loop === true && !isStopped) {
+	                /* If a rotateX/Y/Z property is being animated to 360 deg with loop:true, swap tween start/end values to enable
+	                   continuous iterative rotation looping. (Otherise, the element would just rotate back and forth.) */
+	                $.each(Data(element).tweensContainer, function(propertyName, tweenContainer) {
+	                    if (/^rotate/.test(propertyName) && parseFloat(tweenContainer.endValue) === 360) {
+	                        tweenContainer.endValue = 0;
+	                        tweenContainer.startValue = 360;
+	                    }
+	
+	                    if (/^backgroundPosition/.test(propertyName) && parseFloat(tweenContainer.endValue) === 100 && tweenContainer.unitType === "%") {
+	                        tweenContainer.endValue = 0;
+	                        tweenContainer.startValue = 100;
+	                    }
+	                });
+	
+	                Velocity(element, "reverse", { loop: true, delay: opts.delay });
+	            }
+	
+	            /***************
+	               Dequeueing
+	            ***************/
+	
+	            /* Fire the next call in the queue so long as this call's queue wasn't set to false (to trigger a parallel animation),
+	               which would have already caused the next call to fire. Note: Even if the end of the animation queue has been reached,
+	               $.dequeue() must still be called in order to completely clear jQuery's animation queue. */
+	            if (opts.queue !== false) {
+	                $.dequeue(element, opts.queue);
+	            }
+	        }
+	
+	        /************************
+	           Calls Array Cleanup
+	        ************************/
+	
+	        /* Since this call is complete, set it to false so that the rAF tick skips it. This array is later compacted via compactSparseArray().
+	          (For performance reasons, the call is set to false instead of being deleted from the array: http://www.html5rocks.com/en/tutorials/speed/v8/) */
+	        Velocity.State.calls[callIndex] = false;
+	
+	        /* Iterate through the calls array to determine if this was the final in-progress animation.
+	           If so, set a flag to end ticking and clear the calls array. */
+	        for (var j = 0, callsLength = Velocity.State.calls.length; j < callsLength; j++) {
+	            if (Velocity.State.calls[j] !== false) {
+	                remainingCallsExist = true;
+	
+	                break;
+	            }
+	        }
+	
+	        if (remainingCallsExist === false) {
+	            /* tick() will detect this flag upon its next iteration and subsequently turn itself off. */
+	            Velocity.State.isTicking = false;
+	
+	            /* Clear the calls array so that its length is reset. */
+	            delete Velocity.State.calls;
+	            Velocity.State.calls = [];
+	        }
+	    }
+	
+	    /******************
+	        Frameworks
+	    ******************/
+	
+	    /* Both jQuery and Zepto allow their $.fn object to be extended to allow wrapped elements to be subjected to plugin calls.
+	       If either framework is loaded, register a "velocity" extension pointing to Velocity's core animate() method.  Velocity
+	       also registers itself onto a global container (window.jQuery || window.Zepto || window) so that certain features are
+	       accessible beyond just a per-element scope. This master object contains an .animate() method, which is later assigned to $.fn
+	       (if jQuery or Zepto are present). Accordingly, Velocity can both act on wrapped DOM elements and stand alone for targeting raw DOM elements. */
+	    global.Velocity = Velocity;
+	
+	    if (global !== window) {
+	        /* Assign the element function to Velocity's core animate() method. */
+	        global.fn.velocity = animate;
+	        /* Assign the object function's defaults to Velocity's global defaults object. */
+	        global.fn.velocity.defaults = Velocity.defaults;
+	    }
+	
+	    /***********************
+	       Packaged Redirects
+	    ***********************/
+	
+	    /* slideUp, slideDown */
+	    $.each([ "Down", "Up" ], function(i, direction) {
+	        Velocity.Redirects["slide" + direction] = function (element, options, elementsIndex, elementsSize, elements, promiseData) {
+	            var opts = $.extend({}, options),
+	                begin = opts.begin,
+	                complete = opts.complete,
+	                computedValues = { height: "", marginTop: "", marginBottom: "", paddingTop: "", paddingBottom: "" },
+	                inlineValues = {};
+	
+	            if (opts.display === undefined) {
+	                /* Show the element before slideDown begins and hide the element after slideUp completes. */
+	                /* Note: Inline elements cannot have dimensions animated, so they're reverted to inline-block. */
+	                opts.display = (direction === "Down" ? (Velocity.CSS.Values.getDisplayType(element) === "inline" ? "inline-block" : "block") : "none");
+	            }
+	
+	            opts.begin = function() {
+	                /* If the user passed in a begin callback, fire it now. */
+	                begin && begin.call(elements, elements);
+	
+	                /* Cache the elements' original vertical dimensional property values so that we can animate back to them. */
+	                for (var property in computedValues) {
+	                    inlineValues[property] = element.style[property];
+	
+	                    /* For slideDown, use forcefeeding to animate all vertical properties from 0. For slideUp,
+	                       use forcefeeding to start from computed values and animate down to 0. */
+	                    var propertyValue = Velocity.CSS.getPropertyValue(element, property);
+	                    computedValues[property] = (direction === "Down") ? [ propertyValue, 0 ] : [ 0, propertyValue ];
+	                }
+	
+	                /* Force vertical overflow content to clip so that sliding works as expected. */
+	                inlineValues.overflow = element.style.overflow;
+	                element.style.overflow = "hidden";
+	            }
+	
+	            opts.complete = function() {
+	                /* Reset element to its pre-slide inline values once its slide animation is complete. */
+	                for (var property in inlineValues) {
+	                    element.style[property] = inlineValues[property];
+	                }
+	
+	                /* If the user passed in a complete callback, fire it now. */
+	                complete && complete.call(elements, elements);
+	                promiseData && promiseData.resolver(elements);
+	            };
+	
+	            Velocity(element, computedValues, opts);
+	        };
+	    });
+	
+	    /* fadeIn, fadeOut */
+	    $.each([ "In", "Out" ], function(i, direction) {
+	        Velocity.Redirects["fade" + direction] = function (element, options, elementsIndex, elementsSize, elements, promiseData) {
+	            var opts = $.extend({}, options),
+	                propertiesMap = { opacity: (direction === "In") ? 1 : 0 },
+	                originalComplete = opts.complete;
+	
+	            /* Since redirects are triggered individually for each element in the animated set, avoid repeatedly triggering
+	               callbacks by firing them only when the final element has been reached. */
+	            if (elementsIndex !== elementsSize - 1) {
+	                opts.complete = opts.begin = null;
+	            } else {
+	                opts.complete = function() {
+	                    if (originalComplete) {
+	                        originalComplete.call(elements, elements);
+	                    }
+	
+	                    promiseData && promiseData.resolver(elements);
+	                }
+	            }
+	
+	            /* If a display was passed in, use it. Otherwise, default to "none" for fadeOut or the element-specific default for fadeIn. */
+	            /* Note: We allow users to pass in "null" to skip display setting altogether. */
+	            if (opts.display === undefined) {
+	                opts.display = (direction === "In" ? "auto" : "none");
+	            }
+	
+	            Velocity(this, propertiesMap, opts);
+	        };
+	    });
+	
+	    return Velocity;
+	}((window.jQuery || window.Zepto || window), window, document);
 	}));
 	
 	/******************
-	 Known Issues
-	 ******************/
+	   Known Issues
+	******************/
 	
 	/* The CSS spec mandates that the translateX/Y/Z transforms are %-relative to the element itself -- not its parent.
-	 Velocity, however, doesn't make this distinction. Thus, converting to or from the % unit with these subproperties
-	 will produce an inaccurate conversion value. The same issue exists with the cx/cy attributes of SVG circles and ellipses. */
-
+	Velocity, however, doesn't make this distinction. Thus, converting to or from the % unit with these subproperties
+	will produce an inaccurate conversion value. The same issue exists with the cx/cy attributes of SVG circles and ellipses. */
 
 /***/ },
 /* 740 */
 /***/ function(module, exports) {
 
-	module.exports = "<transition\r\n    name=\"n3CollapseTransition\"\r\n    @enter=\"enter\"\r\n    @leave=\"leave\"\r\n  >\r\n    <slot></slot>\r\n  </transition>";
+	module.exports = "<transition\n    name=\"n3CollapseTransition\"\n    @enter=\"enter\"\n    @leave=\"leave\"\n  >\n    <slot></slot>\n  </transition>";
 
 /***/ },
 /* 741 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-dropdown-con`\">   \r\n    <span ref=\"trigger\"> \r\n      <slot name=\"trigger\" ></slot>\r\n    </span>\r\n\r\n    <transition :name=\"effect\" v-if=\"effect!='collapse'\">\r\n      <ul v-n3-position=\"isShow\" :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"isShow\" >\r\n          <slot></slot>\r\n      </ul>\r\n    </transition>\r\n    <n3-collapse-transition v-if=\"effect=='collapse'\">\r\n      <ul :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"isShow\" >\r\n          <slot></slot>\r\n      </ul>\r\n    </n3-collapse-transition>\r\n\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-dropdown-con`\">   \n    <span ref=\"trigger\"> \n      <slot name=\"trigger\" ></slot>\n    </span>\n\n    <transition :name=\"effect\" v-if=\"effect!='collapse'\">\n      <ul v-n3-position=\"isShow\" :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"isShow\" >\n          <slot></slot>\n      </ul>\n    </transition>\n    <n3-collapse-transition v-if=\"effect=='collapse'\">\n      <ul :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"isShow\" >\n          <slot></slot>\n      </ul>\n    </n3-collapse-transition>\n\n  </div>";
 
 /***/ },
 /* 742 */
@@ -38112,12 +36400,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Modal.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Modal.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Modal.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Modal.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38152,55 +36440,31 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div :class="classObj">
-	
 	//     <div :class="`${prefixCls}-modal-dialog`" 
-	
 	//       :style="{'width': width}">
-	
 	//       <div :class="`${prefixCls}-modal-content`">
-	
 	//         <slot name="header">
-	
 	//           <div :class="`${prefixCls}-modal-header`">
-	
 	//             <button type="button" :class="`${prefixCls}-close`" @click="close"><span>&times;</span></button>
-	
 	//             <h4 :class="`${prefixCls}-modal-title`" >{{title}}</h4>
-	
 	//           </div>
-	
 	//         </slot>
-	
 	
 	//         <div :class="`${prefixCls}-modal-body`">
-	
 	//           <slot name="body"></slot>
-	
 	//         </div>
 	
-	
 	//         <slot name="footer">
-	
 	//           <div :class="`${prefixCls}-modal-footer`">
-	
 	//             <n3-button  @click.native="close">取消</n3-button>
-	
 	//             <n3-button type="primary" @click.native="confirm">确定</n3-button>
-	
 	//           </div>
-	
 	//         </slot>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -38236,8 +36500,8 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          effect = this.effect;
+	      var prefixCls = this.prefixCls;
+	      var effect = this.effect;
 	
 	      var klass = {};
 	
@@ -38312,7 +36576,7 @@
 /* 744 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\">\r\n    <div :class=\"`${prefixCls}-modal-dialog`\" \r\n      :style=\"{'width': width}\">\r\n      <div :class=\"`${prefixCls}-modal-content`\">\r\n        <slot name=\"header\">\r\n          <div :class=\"`${prefixCls}-modal-header`\">\r\n            <button type=\"button\" :class=\"`${prefixCls}-close`\" @click=\"close\"><span>&times;</span></button>\r\n            <h4 :class=\"`${prefixCls}-modal-title`\" >{{title}}</h4>\r\n          </div>\r\n        </slot>\r\n        \r\n        <div :class=\"`${prefixCls}-modal-body`\">\r\n          <slot name=\"body\"></slot>\r\n        </div>\r\n      \r\n        <slot name=\"footer\">\r\n          <div :class=\"`${prefixCls}-modal-footer`\">\r\n            <n3-button  @click.native=\"close\">取消</n3-button>\r\n            <n3-button type=\"primary\" @click.native=\"confirm\">确定</n3-button>\r\n          </div>\r\n        </slot>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div :class=\"classObj\">\n    <div :class=\"`${prefixCls}-modal-dialog`\" \n      :style=\"{'width': width}\">\n      <div :class=\"`${prefixCls}-modal-content`\">\n        <slot name=\"header\">\n          <div :class=\"`${prefixCls}-modal-header`\">\n            <button type=\"button\" :class=\"`${prefixCls}-close`\" @click=\"close\"><span>&times;</span></button>\n            <h4 :class=\"`${prefixCls}-modal-title`\" >{{title}}</h4>\n          </div>\n        </slot>\n        \n        <div :class=\"`${prefixCls}-modal-body`\">\n          <slot name=\"body\"></slot>\n        </div>\n      \n        <slot name=\"footer\">\n          <div :class=\"`${prefixCls}-modal-footer`\">\n            <n3-button  @click.native=\"close\">取消</n3-button>\n            <n3-button type=\"primary\" @click.native=\"confirm\">确定</n3-button>\n          </div>\n        </slot>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 745 */
@@ -38327,12 +36591,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Option.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Option.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Option.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Option.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38348,15 +36612,10 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div :value="value" :class="`${prefixCls}-option`">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -38377,7 +36636,7 @@
 /* 747 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :value=\"value\" :class=\"`${prefixCls}-option`\">\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div :value=\"value\" :class=\"`${prefixCls}-option`\">\n    <slot></slot>\n  </div>";
 
 /***/ },
 /* 748 */
@@ -38392,12 +36651,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Panel.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Panel.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Panel.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Panel.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38424,49 +36683,27 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div :class="`${prefixCls}-panel ${prefixCls}-panel-default`">
-	
 	//     <div :class="`${prefixCls}-panel-heading`">
-	
 	//       <h4 :class="`${prefixCls}-panel-title`">
-	
 	//         <a @click="toggleIsOpen()">
-	
 	//            <slot name="header">
-	
 	//             {{header}}
-	
 	//            </slot>
-	
 	//         </a>
-	
 	//       </h4>
-	
 	//     </div>
-	
 	//     <n3-collapse-transition>
-	
 	//       <div
-	
 	//         :class="`${prefixCls}-panel-collapse`"
-	
 	//         v-if="open">
-	
 	//         <div :class="`${prefixCls}-panel-body`">
-	
 	//           <slot></slot>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//     <n3-collapse-transition>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -38521,7 +36758,7 @@
 /* 750 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-panel ${prefixCls}-panel-default`\">\r\n    <div :class=\"`${prefixCls}-panel-heading`\">\r\n      <h4 :class=\"`${prefixCls}-panel-title`\">\r\n        <a @click=\"toggleIsOpen()\">\r\n           <slot name=\"header\">\r\n            {{header}}\r\n           </slot>\r\n        </a>\r\n      </h4>\r\n    </div>\r\n    <n3-collapse-transition>\r\n      <div\r\n        :class=\"`${prefixCls}-panel-collapse`\"\r\n        v-if=\"open\">\r\n        <div :class=\"`${prefixCls}-panel-body`\">\r\n          <slot></slot>\r\n        </div>\r\n      </div>\r\n    <n3-collapse-transition>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-panel ${prefixCls}-panel-default`\">\n    <div :class=\"`${prefixCls}-panel-heading`\">\n      <h4 :class=\"`${prefixCls}-panel-title`\">\n        <a @click=\"toggleIsOpen()\">\n           <slot name=\"header\">\n            {{header}}\n           </slot>\n        </a>\n      </h4>\n    </div>\n    <n3-collapse-transition>\n      <div\n        :class=\"`${prefixCls}-panel-collapse`\"\n        v-if=\"open\">\n        <div :class=\"`${prefixCls}-panel-body`\">\n          <slot></slot>\n        </div>\n      </div>\n    <n3-collapse-transition>\n  </div>";
 
 /***/ },
 /* 751 */
@@ -38536,12 +36773,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Popover.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Popover.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Popover.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Popover.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38574,8 +36811,8 @@
 	  mixins: [_popoverMixins2.default],
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          placement = this.placement;
+	      var prefixCls = this.prefixCls;
+	      var placement = this.placement;
 	
 	      var klass = {};
 	
@@ -38591,47 +36828,26 @@
 	};
 	// </script>
 	// <template>
-	
 	// <span >
-	
 	//     <span ref="trigger">
-	
 	//       <slot>
-	
 	//       </slot>
-	
 	//     </span>
-	
 	//     <transition :name="effect">
-	
 	//       <div 
-	
 	//         style="max-width:none"
-	
 	//         :class="classObj"
-	
 	//         ref="popover"
-	
 	//         v-show="isShow">
-	
 	//           <div :class="`${prefixCls}-popover-arrow`"></div>
-	
 	//           <h3 :class="`${prefixCls}-popover-title`" v-show="header">{{title}}</h3>
-	
 	//           <div :class="`${prefixCls}-popover-content`" ref="content">
-	
 	//            <slot name="content"></slot>
-	
 	//           </div>
-	
 	//       </div>
-	
 	//     </transition>
-	
 	// </span>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -38639,7 +36855,7 @@
 /* 753 */
 /***/ function(module, exports) {
 
-	module.exports = "<span >\r\n    <span ref=\"trigger\">\r\n      <slot>\r\n      </slot>\r\n    </span>\r\n    <transition :name=\"effect\">\r\n      <div \r\n        style=\"max-width:none\"\r\n        :class=\"classObj\"\r\n        ref=\"popover\"\r\n        v-show=\"isShow\">\r\n          <div :class=\"`${prefixCls}-popover-arrow`\"></div>\r\n          <h3 :class=\"`${prefixCls}-popover-title`\" v-show=\"header\">{{title}}</h3>\r\n          <div :class=\"`${prefixCls}-popover-content`\" ref=\"content\">\r\n           <slot name=\"content\"></slot>\r\n          </div>\r\n      </div>\r\n    </transition>\r\n</span>";
+	module.exports = "<span >\n    <span ref=\"trigger\">\n      <slot>\n      </slot>\n    </span>\n    <transition :name=\"effect\">\n      <div \n        style=\"max-width:none\"\n        :class=\"classObj\"\n        ref=\"popover\"\n        v-show=\"isShow\">\n          <div :class=\"`${prefixCls}-popover-arrow`\"></div>\n          <h3 :class=\"`${prefixCls}-popover-title`\" v-show=\"header\">{{title}}</h3>\n          <div :class=\"`${prefixCls}-popover-content`\" ref=\"content\">\n           <slot name=\"content\"></slot>\n          </div>\n      </div>\n    </transition>\n</span>";
 
 /***/ },
 /* 754 */
@@ -38654,12 +36870,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PopConfirm.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopConfirm.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PopConfirm.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopConfirm.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38751,39 +36967,22 @@
 	};
 	// </script>
 	// <template>
-	
 	// 	<n3-popover
-	
 	//     ref="popover" 
-	
 	//     :effect="effect"
-	
 	//     :header="false" 
-	
 	//     :placement="placement" 
-	
 	//     trigger="click">
-	
 	//     <div slot="content">
-	
 	//         <p>{{content}}</p>
-	
 	//         <div style="float:right; margin:10px;">
-	
 	//           <n3-button size="sm" @click.native="$refs.popover.isShow = false">{{cancelText}}</n3-button>
-	
 	//           <n3-button size="sm" type="primary" @click.native="confirm">{{okText}}</n3-button>
-	
 	//         </div>
-	
 	//     </div> 
-	
 	//     <slot></slot>
-	
 	//   </n3-popover>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -38791,7 +36990,7 @@
 /* 756 */
 /***/ function(module, exports) {
 
-	module.exports = "<n3-popover\r\n    ref=\"popover\" \r\n    :effect=\"effect\"\r\n    :header=\"false\" \r\n    :placement=\"placement\" \r\n    trigger=\"click\">\r\n    <div slot=\"content\">\r\n        <p>{{content}}</p>\r\n        <div style=\"float:right; margin:10px;\">\r\n          <n3-button size=\"sm\" @click.native=\"$refs.popover.isShow = false\">{{cancelText}}</n3-button>\r\n          <n3-button size=\"sm\" type=\"primary\" @click.native=\"confirm\">{{okText}}</n3-button>\r\n        </div>\r\n    </div> \r\n    <slot></slot>\r\n  </n3-popover>";
+	module.exports = "<n3-popover\n    ref=\"popover\" \n    :effect=\"effect\"\n    :header=\"false\" \n    :placement=\"placement\" \n    trigger=\"click\">\n    <div slot=\"content\">\n        <p>{{content}}</p>\n        <div style=\"float:right; margin:10px;\">\n          <n3-button size=\"sm\" @click.native=\"$refs.popover.isShow = false\">{{cancelText}}</n3-button>\n          <n3-button size=\"sm\" type=\"primary\" @click.native=\"confirm\">{{okText}}</n3-button>\n        </div>\n    </div> \n    <slot></slot>\n  </n3-popover>";
 
 /***/ },
 /* 757 */
@@ -38806,12 +37005,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Progressbar.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progressbar.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Progressbar.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progressbar.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38827,19 +37026,12 @@
 	  value: true
 	});
 	// <template>
-	
 	// 	<div 
-	
 	// 	  :class="classObj"
-	
 	// 	  :style="{width: now + '%',height: height}">
-	
 	// 	  {{label ? now + '%':'' }}
-	
 	// 	</div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -38875,10 +37067,10 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          type = this.type,
-	          striped = this.striped,
-	          animated = this.animated;
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
+	      var striped = this.striped;
+	      var animated = this.animated;
 	
 	      var klass = {};
 	
@@ -38897,7 +37089,7 @@
 /* 759 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \r\n\t  :class=\"classObj\"\r\n\t  :style=\"{width: now + '%',height: height}\">\r\n\t  {{label ? now + '%':'' }}\r\n\t</div>";
+	module.exports = "<div \n\t  :class=\"classObj\"\n\t  :style=\"{width: now + '%',height: height}\">\n\t  {{label ? now + '%':'' }}\n\t</div>";
 
 /***/ },
 /* 760 */
@@ -38912,12 +37104,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Progress.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progress.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Progress.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progress.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38933,15 +37125,10 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div :class="`${prefixCls}-progress`">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Progress',
@@ -38958,7 +37145,7 @@
 /* 762 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-progress`\">\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-progress`\">\n    <slot></slot>\n  </div>";
 
 /***/ },
 /* 763 */
@@ -38973,12 +37160,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Radio.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Radio.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Radio.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Radio.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39051,9 +37238,9 @@
 	  computed: {
 	    wrapClasses: function wrapClasses() {
 	      var klass = {};
-	      var prefixCls = this.prefixCls,
-	          currentChecked = this.currentChecked,
-	          disabled = this.disabled;
+	      var prefixCls = this.prefixCls;
+	      var currentChecked = this.currentChecked;
+	      var disabled = this.disabled;
 	
 	
 	      klass[prefixCls + '-radio-span'] = true;
@@ -39093,45 +37280,25 @@
 	};
 	// </script>
 	// <template>
-	
 	// <label :class="`${prefixCls}-radio-con`">
-	
 	//   <span :class="wrapClasses">
-	
 	//     <span :class="`${prefixCls}-radio-inner`"></span> 
-	
 	//     <input 
-	
 	//     type="radio" 
-	
 	//     :disabled="disabled"
-	
 	//     :checked="currentChecked"
-	
 	//     :class="`${prefixCls}-radio-input`" 
-	
 	//     @click.prevent="handleClick" >
-	
 	//   </span>
-	
 	//   <span><slot></slot></span>
-	
 	//   <validate
-	
 	//     :name="name"
-	
 	//     :rules="rules"
-	
 	//     :custom-validate="customValidate" 
-	
 	//     :current="checked">
-	
 	//   </validate>
-	
 	// </label>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -39139,7 +37306,7 @@
 /* 765 */
 /***/ function(module, exports) {
 
-	module.exports = "<label :class=\"`${prefixCls}-radio-con`\">\r\n  <span :class=\"wrapClasses\">\r\n    <span :class=\"`${prefixCls}-radio-inner`\"></span> \r\n    <input \r\n    type=\"radio\" \r\n    :disabled=\"disabled\"\r\n    :checked=\"currentChecked\"\r\n    :class=\"`${prefixCls}-radio-input`\" \r\n    @click.prevent=\"handleClick\" >\r\n  </span>\r\n  <span><slot></slot></span>\r\n  <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :current=\"checked\">\r\n  </validate>\r\n</label>";
+	module.exports = "<label :class=\"`${prefixCls}-radio-con`\">\n  <span :class=\"wrapClasses\">\n    <span :class=\"`${prefixCls}-radio-inner`\"></span> \n    <input \n    type=\"radio\" \n    :disabled=\"disabled\"\n    :checked=\"currentChecked\"\n    :class=\"`${prefixCls}-radio-input`\" \n    @click.prevent=\"handleClick\" >\n  </span>\n  <span><slot></slot></span>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"checked\">\n  </validate>\n</label>";
 
 /***/ },
 /* 766 */
@@ -39154,12 +37321,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioBtn.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioBtn.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioBtn.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioBtn.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39269,23 +37436,14 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <n3-button 
-	
 	//     @click.prevent.native="handleClick"
-	
 	//     :class="classObj" 
-	
 	//     :disabled="disabled"
-	
 	//     :type="currentChecked ? 'primary' : 'default'">
-	
 	//     <slot></slot>
-	
 	//   </n3-button>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -39293,7 +37451,7 @@
 /* 768 */
 /***/ function(module, exports) {
 
-	module.exports = "<n3-button \r\n    @click.prevent.native=\"handleClick\"\r\n    :class=\"classObj\" \r\n    :disabled=\"disabled\"\r\n    :type=\"currentChecked ? 'primary' : 'default'\">\r\n    <slot></slot>\r\n  </n3-button>";
+	module.exports = "<n3-button \n    @click.prevent.native=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :type=\"currentChecked ? 'primary' : 'default'\">\n    <slot></slot>\n  </n3-button>";
 
 /***/ },
 /* 769 */
@@ -39308,12 +37466,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioGroup.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioGroup.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioGroup.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioGroup.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39356,29 +37514,18 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div :class="`${prefixCls}-btn-group ${prefixCls}-radio-group`">
-	
 	//     <slot></slot>
 	
-	
 	//     <validate
-	
 	//       :name="name"
-	
 	//       :rules="rules"
-	
 	//       :custom-validate="customValidate" 
-	
 	//       :current="value">
-	
 	//     </validate>
 	
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -39459,7 +37606,7 @@
 /* 771 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-radio-group`\">\r\n    <slot></slot>\r\n\r\n    <validate\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :custom-validate=\"customValidate\" \r\n      :current=\"value\">\r\n    </validate>\r\n\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-radio-group`\">\n    <slot></slot>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"value\">\n    </validate>\n\n  </div>";
 
 /***/ },
 /* 772 */
@@ -39474,12 +37621,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Select.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Select.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Select.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Select.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39828,144 +37975,75 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div :class="`${prefixCls}-btn-group ${prefixCls}-select-group`" >
-	
 	//     <n3-button
-	
 	//       :style="{width:width}"
-	
 	//       :disabled="disabled"
-	
 	//       :size="size"
-	
 	//       :class="[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,showselected&&multiple&&value.length ? `${prefixCls}-select-multiple` : '']"
-	
 	//       @click.native="toggleDropdown">
-	
 	//         <span  v-if="showPlaceholder || !showselected">{{placeholder}}</span>
-	
 	//         <span  v-if="showselected" >
-	
 	//           <template v-for="item in selectedItems" v-if="multiple">
-	
 	//             <render 
-	
 	//               @click.native.prevent.stop="del(item)"
-	
 	//               :class="`${prefixCls}-selected-tag`" 
-	
 	//               :context="context || $parent._self"
-	
 	//               :template="format(item)">
-	
 	//             </render>
-	
 	//           </template>
-	
 	//           <template v-else>
-	
 	//             <render :context="context || $parent._self" :template="format(selectedItems[0])"></render>
-	
 	//           </template>
-	
 	//         </span>
-	
 	//       <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
-	
 	//     </n3-button>
-	
 	//     <transition name="fadeDown">
-	
 	//       <ul 
-	
 	//         :style="{maxHeight:menuMaxHeight,width:menuWidth}" 
-	
 	//         :class="`${prefixCls}-dropdown-menu`" 
-	
 	//         ref="menu" 
-	
 	//         v-n3-position="show"
-	
 	//         v-show="show">
-	
 	//           <li v-if="search">
-	
 	//             <n3-input
-	
 	//               :class="`${prefixCls}-select-search`"
-	
 	//               :placeholder="inputPlaceholder"
-	
 	//               v-model="searchText"
-	
 	//               @keydown.native.enter="addExtra"
-	
 	//             ></n3-input>
-	
 	//             <n3-icon type="plus-square-o" v-if="extra" @click.native="addExtra"></n3-icon>
-	
 	//           </li>
-	
 	//           <li v-if="multiple" :class="`${prefixCls}-select-all`">
-	
 	//             <a @click.prevent="selectAll">
-	
 	//               全选
-	
 	//              <n3-icon type="check" v-show="allSelected"></n3-icon>
-	
 	//             </a>
-	
 	//           </li>
-	
 	
 	//           <template v-if="currentOptions.length">
-	
 	//             <li v-for="option in filterOptions" 
-	
 	//                 :value="option.value" 
-	
 	//                 style="position:relative">
-	
 	//               <a @click.prevent="select(option)" >
-	
 	//                 <span v-html="option.label"></span>
-	
 	//                 <n3-icon type="check" v-show="findIndex(option.value) !== -1"></n3-icon>
-	
 	//               </a>
-	
 	//             </li>
-	
 	//           </template>
-	
 	//           <slot v-else ></slot>
-	
 	//         <div :class="`${prefixCls}-notify`" v-show="showNotify" transition="fade">最多选择 {{limit}} 项</div>
-	
 	//       </ul>
-	
 	//     </transition>
-	
 	//     <div class="clearfix"></div>
-	
 	//     <validate
-	
 	//       :name="name"
-	
 	//       :rules="rules"
-	
 	//       :custom-validate="customValidate" 
-	
 	//       :current="value">
-	
 	//     </validate>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -39981,10 +38059,10 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./render.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./render.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./render.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./render.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
 	var newTemplate = null
 	hotAPI.update(id, newOptions, newTemplate)
@@ -40030,7 +38108,7 @@
 /* 776 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-select-group`\" >\r\n    <n3-button\r\n      :style=\"{width:width}\"\r\n      :disabled=\"disabled\"\r\n      :size=\"size\"\r\n      :class=\"[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,showselected&&multiple&&value.length ? `${prefixCls}-select-multiple` : '']\"\r\n      @click.native=\"toggleDropdown\">\r\n        <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\r\n        <span  v-if=\"showselected\" >\r\n          <template v-for=\"item in selectedItems\" v-if=\"multiple\">\r\n            <render \r\n              @click.native.prevent.stop=\"del(item)\"\r\n              :class=\"`${prefixCls}-selected-tag`\" \r\n              :context=\"context || $parent._self\"\r\n              :template=\"format(item)\">\r\n            </render>\r\n          </template>\r\n          <template v-else>\r\n            <render :context=\"context || $parent._self\" :template=\"format(selectedItems[0])\"></render>\r\n          </template>\r\n        </span>\r\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\r\n    </n3-button>\r\n    <transition name=\"fadeDown\">\r\n      <ul \r\n        :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \r\n        :class=\"`${prefixCls}-dropdown-menu`\" \r\n        ref=\"menu\" \r\n        v-n3-position=\"show\"\r\n        v-show=\"show\">\r\n          <li v-if=\"search\">\r\n            <n3-input\r\n              :class=\"`${prefixCls}-select-search`\"\r\n              :placeholder=\"inputPlaceholder\"\r\n              v-model=\"searchText\"\r\n              @keydown.native.enter=\"addExtra\"\r\n            ></n3-input>\r\n            <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click.native=\"addExtra\"></n3-icon>\r\n          </li>\r\n          <li v-if=\"multiple\" :class=\"`${prefixCls}-select-all`\">\r\n            <a @click.prevent=\"selectAll\">\r\n              全选\r\n             <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\r\n            </a>\r\n          </li>\r\n\r\n          <template v-if=\"currentOptions.length\">\r\n            <li v-for=\"option in filterOptions\" \r\n                :value=\"option.value\" \r\n                style=\"position:relative\">\r\n              <a @click.prevent=\"select(option)\" >\r\n                <span v-html=\"option.label\"></span>\r\n                <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\r\n              </a>\r\n            </li>\r\n          </template>\r\n          <slot v-else ></slot>\r\n        <div :class=\"`${prefixCls}-notify`\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\r\n      </ul>\r\n    </transition>\r\n    <div class=\"clearfix\"></div>\r\n    <validate\r\n      :name=\"name\"\r\n      :rules=\"rules\"\r\n      :custom-validate=\"customValidate\" \r\n      :current=\"value\">\r\n    </validate>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-btn-group ${prefixCls}-select-group`\" >\n    <n3-button\n      :style=\"{width:width}\"\n      :disabled=\"disabled\"\n      :size=\"size\"\n      :class=\"[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,showselected&&multiple&&value.length ? `${prefixCls}-select-multiple` : '']\"\n      @click.native=\"toggleDropdown\">\n        <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n        <span  v-if=\"showselected\" >\n          <template v-for=\"item in selectedItems\" v-if=\"multiple\">\n            <render \n              @click.native.prevent.stop=\"del(item)\"\n              :class=\"`${prefixCls}-selected-tag`\" \n              :context=\"context || $parent._self\"\n              :template=\"format(item)\">\n            </render>\n          </template>\n          <template v-else>\n            <render :context=\"context || $parent._self\" :template=\"format(selectedItems[0])\"></render>\n          </template>\n        </span>\n      <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n    </n3-button>\n    <transition name=\"fadeDown\">\n      <ul \n        :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n        :class=\"`${prefixCls}-dropdown-menu`\" \n        ref=\"menu\" \n        v-n3-position=\"show\"\n        v-show=\"show\">\n          <li v-if=\"search\">\n            <n3-input\n              :class=\"`${prefixCls}-select-search`\"\n              :placeholder=\"inputPlaceholder\"\n              v-model=\"searchText\"\n              @keydown.native.enter=\"addExtra\"\n            ></n3-input>\n            <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click.native=\"addExtra\"></n3-icon>\n          </li>\n          <li v-if=\"multiple\" :class=\"`${prefixCls}-select-all`\">\n            <a @click.prevent=\"selectAll\">\n              全选\n             <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n            </a>\n          </li>\n\n          <template v-if=\"currentOptions.length\">\n            <li v-for=\"option in filterOptions\" \n                :value=\"option.value\" \n                style=\"position:relative\">\n              <a @click.prevent=\"select(option)\" >\n                <span v-html=\"option.label\"></span>\n                <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n              </a>\n            </li>\n          </template>\n          <slot v-else ></slot>\n        <div :class=\"`${prefixCls}-notify`\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n      </ul>\n    </transition>\n    <div class=\"clearfix\"></div>\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"value\">\n    </validate>\n  </div>";
 
 /***/ },
 /* 777 */
@@ -40045,12 +38123,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tab.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tab.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tab.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tab.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40066,19 +38144,12 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div 
-	
 	//     :class="classObj"
-	
 	//     v-show="show">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -40107,8 +38178,8 @@
 	
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          show = this.show;
+	      var prefixCls = this.prefixCls;
+	      var show = this.show;
 	
 	      var klass = {};
 	
@@ -40149,7 +38220,7 @@
 /* 779 */
 /***/ function(module, exports) {
 
-	module.exports = "<div \r\n    :class=\"classObj\"\r\n    v-show=\"show\">\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div \n    :class=\"classObj\"\n    v-show=\"show\">\n    <slot></slot>\n  </div>";
 
 /***/ },
 /* 780 */
@@ -40164,12 +38235,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tabs.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tabs.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tabs.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tabs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40231,11 +38302,11 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          pills = this.pills,
-	          stacked = this.stacked,
-	          primary = this.primary,
-	          justified = this.justified;
+	      var prefixCls = this.prefixCls;
+	      var pills = this.pills;
+	      var stacked = this.stacked;
+	      var primary = this.primary;
+	      var justified = this.justified;
 	
 	      var klass = {};
 	
@@ -40263,8 +38334,8 @@
 	  },
 	  methods: {
 	    liclassObj: function liclassObj(index, r) {
-	      var prefixCls = this.prefixCls,
-	          activeIndex = this.activeIndex;
+	      var prefixCls = this.prefixCls;
+	      var activeIndex = this.activeIndex;
 	
 	      var klass = {};
 	
@@ -40285,49 +38356,27 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div>
-	
 	//     <ul :class="classObj" >
-	
 	//       <li
-	
 	//           v-for="(r,index) in renderData"
-	
 	//           :class="liclassObj(index,r)"
-	
 	//           @click.prevent="handleTabListClick(index, r)"
-	
 	//           :disabled="r.disabled">
-	
 	//           <a href="#">
-	
 	//             {{r.header}}
-	
 	//             <n3-badge v-if="r.badge">{{r.badge}}</n3-badge>
-	
 	//           </a>
-	
 	//       </li>
-	
 	//     </ul>
-	
 	//     <div :class="`${prefixCls}-tab-content`">
-	
 	//       <div v-if="list">
-	
 	//           <span v-html='renderData[activeIndex].content'></span>
-	
 	//       </div>
-	
 	//       <slot v-else></slot>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -40335,7 +38384,7 @@
 /* 782 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\r\n    <ul :class=\"classObj\" >\r\n      <li\r\n          v-for=\"(r,index) in renderData\"\r\n          :class=\"liclassObj(index,r)\"\r\n          @click.prevent=\"handleTabListClick(index, r)\"\r\n          :disabled=\"r.disabled\">\r\n          <a href=\"#\">\r\n            {{r.header}}\r\n            <n3-badge v-if=\"r.badge\">{{r.badge}}</n3-badge>\r\n          </a>\r\n      </li>\r\n    </ul>\r\n    <div :class=\"`${prefixCls}-tab-content`\">\r\n      <div v-if=\"list\">\r\n          <span v-html='renderData[activeIndex].content'></span>\r\n      </div>\r\n      <slot v-else></slot>\r\n    </div>\r\n  </div>";
+	module.exports = "<div>\n    <ul :class=\"classObj\" >\n      <li\n          v-for=\"(r,index) in renderData\"\n          :class=\"liclassObj(index,r)\"\n          @click.prevent=\"handleTabListClick(index, r)\"\n          :disabled=\"r.disabled\">\n          <a href=\"#\">\n            {{r.header}}\n            <n3-badge v-if=\"r.badge\">{{r.badge}}</n3-badge>\n          </a>\n      </li>\n    </ul>\n    <div :class=\"`${prefixCls}-tab-content`\">\n      <div v-if=\"list\">\n          <span v-html='renderData[activeIndex].content'></span>\n      </div>\n      <slot v-else></slot>\n    </div>\n  </div>";
 
 /***/ },
 /* 783 */
@@ -40350,12 +38399,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonGroup.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonGroup.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonGroup.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonGroup.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40371,15 +38420,10 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div :class="`${prefixCls}-btn-group`">
-	
 	//     <slot></slot>  
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -40397,7 +38441,7 @@
 /* 785 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-btn-group`\">\r\n    <slot></slot>  \r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-btn-group`\">\n    <slot></slot>  \n  </div>";
 
 /***/ },
 /* 786 */
@@ -40412,12 +38456,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Container.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Container.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Container.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Container.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40433,15 +38477,10 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div :class="classObj" >
-	
 	//   	<slot></slot>		
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Container',
@@ -40456,8 +38495,8 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          fluid = this.fluid;
+	      var prefixCls = this.prefixCls;
+	      var fluid = this.fluid;
 	
 	      var klass = {};
 	
@@ -40475,7 +38514,7 @@
 /* 788 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\r\n  \t<slot></slot>\t\t\r\n  </div>";
+	module.exports = "<div :class=\"classObj\" >\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
 /* 789 */
@@ -40490,12 +38529,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Row.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Row.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Row.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Row.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40511,15 +38550,10 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div :class="`${prefixCls}-row`">
-	
 	//   	<slot></slot>		
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Row',
@@ -40536,7 +38570,7 @@
 /* 791 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-row`\">\r\n  \t<slot></slot>\t\t\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-row`\">\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
 /* 792 */
@@ -40551,12 +38585,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Nav.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Nav.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Nav.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Nav.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40572,19 +38606,12 @@
 	  value: true
 	});
 	// <template>
-	
 	// 	<nav :class="`${prefixCls}-collapse ${prefixCls}-navbar-collapse ${prefixCls}-navbar-${theme} ${prefixCls}-navbar-${type} clearfix`">
-	
 	// 		<ul :class="`${prefixCls}-nav ${prefixCls}-navbar-nav`">
-	
 	// 			<slot></slot>	
-	
 	// 		</ul>
-	
 	// 	</nav>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Nav',
@@ -40609,7 +38636,7 @@
 /* 794 */
 /***/ function(module, exports) {
 
-	module.exports = "<nav :class=\"`${prefixCls}-collapse ${prefixCls}-navbar-collapse ${prefixCls}-navbar-${theme} ${prefixCls}-navbar-${type} clearfix`\">\r\n\t\t<ul :class=\"`${prefixCls}-nav ${prefixCls}-navbar-nav`\">\r\n\t\t\t<slot></slot>\t\r\n\t\t</ul>\r\n\t</nav>";
+	module.exports = "<nav :class=\"`${prefixCls}-collapse ${prefixCls}-navbar-collapse ${prefixCls}-navbar-${theme} ${prefixCls}-navbar-${type} clearfix`\">\n\t\t<ul :class=\"`${prefixCls}-nav ${prefixCls}-navbar-nav`\">\n\t\t\t<slot></slot>\t\n\t\t</ul>\n\t</nav>";
 
 /***/ },
 /* 795 */
@@ -40624,12 +38651,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SubNav.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SubNav.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SubNav.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SubNav.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40656,27 +38683,16 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <span>
-	
 	//   <n3-dropdown :trigger="trigger" :show="show" :click-close="true" effect="collapse" @show="$emit('show')" @hide="$emit('hide')" @toggle="$emit('toggle')">
-	
 	//     <div slot="trigger" :class="`${prefixCls}-sub-nav-trigger`" >
-	
 	//       <slot name="title"></slot>
-	
 	//       <n3-icon :class="`${prefixCls}-sub-nav-fa`" :type="show ? 'angle-up' : 'angle-down'"></n3-icon>
-	
 	//     </div>
-	
 	//     <slot></slot>
-	
 	//   </n3-dropdown>
-	
 	// </span>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3SubNav',
@@ -40705,7 +38721,7 @@
 /* 797 */
 /***/ function(module, exports) {
 
-	module.exports = "<span>\r\n  <n3-dropdown :trigger=\"trigger\" :show=\"show\" :click-close=\"true\" effect=\"collapse\" @show=\"$emit('show')\" @hide=\"$emit('hide')\" @toggle=\"$emit('toggle')\">\r\n    <div slot=\"trigger\" :class=\"`${prefixCls}-sub-nav-trigger`\" >\r\n      <slot name=\"title\"></slot>\r\n      <n3-icon :class=\"`${prefixCls}-sub-nav-fa`\" :type=\"show ? 'angle-up' : 'angle-down'\"></n3-icon>\r\n    </div>\r\n    <slot></slot>\r\n  </n3-dropdown>\r\n</span>";
+	module.exports = "<span>\n  <n3-dropdown :trigger=\"trigger\" :show=\"show\" :click-close=\"true\" effect=\"collapse\" @show=\"$emit('show')\" @hide=\"$emit('hide')\" @toggle=\"$emit('toggle')\">\n    <div slot=\"trigger\" :class=\"`${prefixCls}-sub-nav-trigger`\" >\n      <slot name=\"title\"></slot>\n      <n3-icon :class=\"`${prefixCls}-sub-nav-fa`\" :type=\"show ? 'angle-up' : 'angle-down'\"></n3-icon>\n    </div>\n    <slot></slot>\n  </n3-dropdown>\n</span>";
 
 /***/ },
 /* 798 */
@@ -40720,12 +38736,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3NavItem.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavItem.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3NavItem.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavItem.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40741,15 +38757,10 @@
 	  value: true
 	});
 	// <template>
-	
 	// 	<li :class="classObj">
-	
 	// 		<slot></slot>
-	
 	// 	</li>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3NavItem',
@@ -40767,9 +38778,9 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          active = this.active,
-	          disabled = this.disabled;
+	      var prefixCls = this.prefixCls;
+	      var active = this.active;
+	      var disabled = this.disabled;
 	
 	      var klass = {};
 	
@@ -40786,7 +38797,7 @@
 /* 800 */
 /***/ function(module, exports) {
 
-	module.exports = "<li :class=\"classObj\">\r\n\t\t<slot></slot>\r\n\t</li>";
+	module.exports = "<li :class=\"classObj\">\n\t\t<slot></slot>\n\t</li>";
 
 /***/ },
 /* 801 */
@@ -40801,12 +38812,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Column.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Column.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Column.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Column.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40822,15 +38833,10 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div :class="classObj" >
-	
 	//   	<slot></slot>		
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Column',
@@ -40852,10 +38858,10 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          mode = this.mode,
-	          offset = this.offset,
-	          col = this.col;
+	      var prefixCls = this.prefixCls;
+	      var mode = this.mode;
+	      var offset = this.offset;
+	      var col = this.col;
 	
 	      var klass = {};
 	
@@ -40872,7 +38878,7 @@
 /* 803 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\r\n  \t<slot></slot>\t\t\r\n  </div>";
+	module.exports = "<div :class=\"classObj\" >\n  \t<slot></slot>\t\t\n  </div>";
 
 /***/ },
 /* 804 */
@@ -40887,12 +38893,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Switch.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Switch.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Switch.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Switch.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40919,47 +38925,26 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div class="inline">
-	
 	//   <input 
-	
 	//     v-show="false"
-	
 	//     type="checkbox"
-	
 	//     v-model="currentValue"/>   
-	
 	//   <div  :class="classObj" @click="toggle">
-	
 	//     <div :class="`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`">
-	
 	//       <span :class="`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`" >{{ontext}}</span>
-	
 	//       <span :class="`${prefixCls}-switch-label`" >&nbsp;</span>
-	
 	//       <span :class="`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`" >{{offtext}}</span>
-	
 	//     </div>
-	
 	//   </div>
-	
 	//   <validate
-	
 	//     :name="name"
-	
 	//     :rules="rules"
-	
 	//     :custom-validate="customValidate" 
-	
 	//     :current="value">
-	
 	//   </validate>
-	
 	// <div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -40998,9 +38983,9 @@
 	
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          value = this.value,
-	          disabled = this.disabled;
+	      var prefixCls = this.prefixCls;
+	      var value = this.value;
+	      var disabled = this.disabled;
 	
 	      var klass = {};
 	
@@ -41031,7 +39016,7 @@
 /* 806 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\r\n  <input \r\n    v-show=\"false\"\r\n    type=\"checkbox\"\r\n    v-model=\"currentValue\"/>   \r\n  <div  :class=\"classObj\" @click=\"toggle\">\r\n    <div :class=\"`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`\">\r\n      <span :class=\"`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`\" >{{ontext}}</span>\r\n      <span :class=\"`${prefixCls}-switch-label`\" >&nbsp;</span>\r\n      <span :class=\"`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`\" >{{offtext}}</span>\r\n    </div>\r\n  </div>\r\n  <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :current=\"value\">\r\n  </validate>\r\n<div>\r\n</template>";
+	module.exports = "<div class=\"inline\">\n  <input \n    v-show=\"false\"\n    type=\"checkbox\"\n    v-model=\"currentValue\"/>   \n  <div  :class=\"classObj\" @click=\"toggle\">\n    <div :class=\"`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`\">\n      <span :class=\"`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`\" >{{ontext}}</span>\n      <span :class=\"`${prefixCls}-switch-label`\" >&nbsp;</span>\n      <span :class=\"`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`\" >{{offtext}}</span>\n    </div>\n  </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n<div>\n</template>";
 
 /***/ },
 /* 807 */
@@ -41046,12 +39031,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInput.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInput.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInput.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInput.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -41094,154 +39079,80 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div class="inline" >
-	
 	//   <div :class="classObj" :style="{width:width,height:height}" @click="focus">
-	
 	//     <template v-for="(item, index) in currentValue">
-	
 	//         <template v-if="index == currentPosition">
-	
 	//             <n3-typeahead
-	
 	//               ref="typeahead"
-	
 	//               :placeholder="placeholder"
-	
 	//               :async="async"
-	
 	//               @focus="_onFocus"
-	
 	//               @blur="_onBlur"
-	
 	//               :style="{margin:'0px 5px'}"
-	
 	//               v-model="currentQuery" 
-	
 	//               :width='inputWidth'
-	
 	//               :items="citems"
-	
 	//               @change="_onInputchange"
-	
 	//               :dropdown-width="dropdownWidth"
-	
 	//               :dropdown-height="dropdownHeight"
-	
 	//               :on-hit="add"
-	
 	//               :match-case="matchCase"
-	
 	//               :limit="limit"
-	
 	//               :render="render"
-	
 	//               :data="data"
-	
 	//               @keydown.delete.native="del" 
-	
 	//               @keydown.left.native="left" 
-	
 	//               @keydown.right.native="right" 
-	
 	//               @keydown.enter.native="add">
-	
 	//             </n3-typeahead>
-	
 	//         </template>
-	
 	//          <template v-else>
-	
 	//             <span :class="`${prefixCls}-multiple-input-space`"  @click="setIndex(index)"></span>
-	
 	//         </template>
-	
 	//         <span :class="`${prefixCls}-multiple-input-m-tag`" >
-	
 	//         <render class="inline" :context="context || $parent._self" :template="format(item, index)"></render>
-	
 	//         <n3-icon type="times" :class="`${prefixCls}-multiple-close`" @click.native="clickDel(index)"></n3-icon>
-	
 	//         </span>
-	
 	//     </template>
-	
 	
 	//     <template v-if="currentValue && currentValue.length == currentPosition">
-	
 	//       <n3-typeahead
-	
 	//         ref="typeahead"
-	
 	//         :placeholder="placeholder"
-	
 	//         :async="async"
-	
 	//         @focus="_onFocus"
-	
 	//         @blur="_onBlur"
-	
 	//         :style="{margin:'0px 5px'}"
-	
 	//         v-model="currentQuery" 
-	
 	//         :width='inputWidth'
-	
 	//         :items="citems"
-	
 	//         @change="_onInputchange"
-	
 	//         :dropdown-width="dropdownWidth"
-	
 	//         :dropdown-height="dropdownHeight"
-	
 	//         :on-hit="add"
-	
 	//         :match-case="matchCase"
-	
 	//         :limit="limit"
-	
 	//         :render="render"
-	
 	//         :data="data"
-	
 	//         @keydown.delete.native="del" 
-	
 	//         @keydown.left.native="left" 
-	
 	//         @keydown.right.native="right" 
-	
 	//         @keydown.enter.native="add">
-	
 	//       </n3-typeahead>
-	
 	//     </template>
-	
 	//     <template v-else>
-	
 	//       <span :class="`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`"  @click="setIndex(currentValue.length)"></span>
-	
 	//     </template>
-	
 	//   </div>
-	
 	//    <validate
-	
 	//     :name="name"
-	
 	//     :rules="rules"
-	
 	//     :custom-validate="customValidate" 
-	
 	//     :current="value">
-	
 	//   </validate>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -41474,12 +39385,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Typeahead.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Typeahead.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Typeahead.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Typeahead.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -41667,67 +39578,36 @@
 	};
 	// </script>
 	// <template>
-	
 	// <div style="position: relative;display:inline-block"
-	
 	//      :class="[show ? prefixCls +'-open' : '']">
-	
 	//   <n3-input
-	
 	//     ref="input"
-	
 	//     :width="width"
-	
 	//     :name="name" 
-	
 	//     :rules="rules" 
-	
 	//     :placeholder="placeholder"
-	
 	//     :custom-validate="customValidate"
-	
 	//     :readonly="readonly"
-	
 	//     :disabled="disabled"
-	
 	//     v-model="query"
-	
 	//     @focus="_onFocus"
-	
 	//     @blur="_onBlur"
-	
 	//     @input.native="update"
-	
 	//     @keydown.native.up="up"
-	
 	//     @keydown.native.down="down"
-	
 	//     @keydown.native.enter= "hit(null)"
-	
 	//     @keydown.native.esc="reset"
-	
 	//   ></n3-input>
-	
 	//   <ul :class="`${prefixCls}-dropdown-menu`" :style="{width: dropdownWidth, maxHeight: dropdownHeight}">
-	
 	//     <li v-for="(item,index) in citems" :class="isActive(index)" >
-	
 	//       <a @mousedown.prevent="hit(index)" >
-	
 	//         <render :context="context || $parent._self" :template="render(item)">
-	
 	//         </render>
-	
 	//       </a>
-	
 	//     </li> 
-	
 	//   </ul>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -41735,13 +39615,13 @@
 /* 811 */
 /***/ function(module, exports) {
 
-	module.exports = "<div style=\"position: relative;display:inline-block\"\r\n     :class=\"[show ? prefixCls +'-open' : '']\">\r\n  <n3-input\r\n    ref=\"input\"\r\n    :width=\"width\"\r\n    :name=\"name\" \r\n    :rules=\"rules\" \r\n    :placeholder=\"placeholder\"\r\n    :custom-validate=\"customValidate\"\r\n    :readonly=\"readonly\"\r\n    :disabled=\"disabled\"\r\n    v-model=\"query\"\r\n    @focus=\"_onFocus\"\r\n    @blur=\"_onBlur\"\r\n    @input.native=\"update\"\r\n    @keydown.native.up=\"up\"\r\n    @keydown.native.down=\"down\"\r\n    @keydown.native.enter= \"hit(null)\"\r\n    @keydown.native.esc=\"reset\"\r\n  ></n3-input>\r\n  <ul :class=\"`${prefixCls}-dropdown-menu`\" :style=\"{width: dropdownWidth, maxHeight: dropdownHeight}\">\r\n    <li v-for=\"(item,index) in citems\" :class=\"isActive(index)\" >\r\n      <a @mousedown.prevent=\"hit(index)\" >\r\n        <render :context=\"context || $parent._self\" :template=\"render(item)\">\r\n        </render>\r\n      </a>\r\n    </li> \r\n  </ul>\r\n</div>";
+	module.exports = "<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    ref=\"input\"\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    v-model=\"query\"\n    @focus=\"_onFocus\"\n    @blur=\"_onBlur\"\n    @input.native=\"update\"\n    @keydown.native.up=\"up\"\n    @keydown.native.down=\"down\"\n    @keydown.native.enter= \"hit(null)\"\n    @keydown.native.esc=\"reset\"\n  ></n3-input>\n  <ul :class=\"`${prefixCls}-dropdown-menu`\" :style=\"{width: dropdownWidth, maxHeight: dropdownHeight}\">\n    <li v-for=\"(item,index) in citems\" :class=\"isActive(index)\" >\n      <a @mousedown.prevent=\"hit(index)\" >\n        <render :context=\"context || $parent._self\" :template=\"render(item)\">\n        </render>\n      </a>\n    </li> \n  </ul>\n</div>";
 
 /***/ },
 /* 812 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\" >\r\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\r\n    <template v-for=\"(item, index) in currentValue\">\r\n        <template v-if=\"index == currentPosition\">\r\n            <n3-typeahead\r\n              ref=\"typeahead\"\r\n              :placeholder=\"placeholder\"\r\n              :async=\"async\"\r\n              @focus=\"_onFocus\"\r\n              @blur=\"_onBlur\"\r\n              :style=\"{margin:'0px 5px'}\"\r\n              v-model=\"currentQuery\" \r\n              :width='inputWidth'\r\n              :items=\"citems\"\r\n              @change=\"_onInputchange\"\r\n              :dropdown-width=\"dropdownWidth\"\r\n              :dropdown-height=\"dropdownHeight\"\r\n              :on-hit=\"add\"\r\n              :match-case=\"matchCase\"\r\n              :limit=\"limit\"\r\n              :render=\"render\"\r\n              :data=\"data\"\r\n              @keydown.delete.native=\"del\" \r\n              @keydown.left.native=\"left\" \r\n              @keydown.right.native=\"right\" \r\n              @keydown.enter.native=\"add\">\r\n            </n3-typeahead>\r\n        </template>\r\n         <template v-else>\r\n            <span :class=\"`${prefixCls}-multiple-input-space`\"  @click=\"setIndex(index)\"></span>\r\n        </template>\r\n        <span :class=\"`${prefixCls}-multiple-input-m-tag`\" >\r\n        <render class=\"inline\" :context=\"context || $parent._self\" :template=\"format(item, index)\"></render>\r\n        <n3-icon type=\"times\" :class=\"`${prefixCls}-multiple-close`\" @click.native=\"clickDel(index)\"></n3-icon>\r\n        </span>\r\n    </template>\r\n\r\n    <template v-if=\"currentValue && currentValue.length == currentPosition\">\r\n      <n3-typeahead\r\n        ref=\"typeahead\"\r\n        :placeholder=\"placeholder\"\r\n        :async=\"async\"\r\n        @focus=\"_onFocus\"\r\n        @blur=\"_onBlur\"\r\n        :style=\"{margin:'0px 5px'}\"\r\n        v-model=\"currentQuery\" \r\n        :width='inputWidth'\r\n        :items=\"citems\"\r\n        @change=\"_onInputchange\"\r\n        :dropdown-width=\"dropdownWidth\"\r\n        :dropdown-height=\"dropdownHeight\"\r\n        :on-hit=\"add\"\r\n        :match-case=\"matchCase\"\r\n        :limit=\"limit\"\r\n        :render=\"render\"\r\n        :data=\"data\"\r\n        @keydown.delete.native=\"del\" \r\n        @keydown.left.native=\"left\" \r\n        @keydown.right.native=\"right\" \r\n        @keydown.enter.native=\"add\">\r\n      </n3-typeahead>\r\n    </template>\r\n    <template v-else>\r\n      <span :class=\"`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`\"  @click=\"setIndex(currentValue.length)\"></span>\r\n    </template>\r\n  </div>\r\n   <validate\r\n    :name=\"name\"\r\n    :rules=\"rules\"\r\n    :custom-validate=\"customValidate\" \r\n    :current=\"value\">\r\n  </validate>\r\n</div>";
+	module.exports = "<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(item, index) in currentValue\">\n        <template v-if=\"index == currentPosition\">\n            <n3-typeahead\n              ref=\"typeahead\"\n              :placeholder=\"placeholder\"\n              :async=\"async\"\n              @focus=\"_onFocus\"\n              @blur=\"_onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              v-model=\"currentQuery\" \n              :width='inputWidth'\n              :items=\"citems\"\n              @change=\"_onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :data=\"data\"\n              @keydown.delete.native=\"del\" \n              @keydown.left.native=\"left\" \n              @keydown.right.native=\"right\" \n              @keydown.enter.native=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span :class=\"`${prefixCls}-multiple-input-space`\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span :class=\"`${prefixCls}-multiple-input-m-tag`\" >\n        <render class=\"inline\" :context=\"context || $parent._self\" :template=\"format(item, index)\"></render>\n        <n3-icon type=\"times\" :class=\"`${prefixCls}-multiple-close`\" @click.native=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"currentValue && currentValue.length == currentPosition\">\n      <n3-typeahead\n        ref=\"typeahead\"\n        :placeholder=\"placeholder\"\n        :async=\"async\"\n        @focus=\"_onFocus\"\n        @blur=\"_onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        v-model=\"currentQuery\" \n        :width='inputWidth'\n        :items=\"citems\"\n        @change=\"_onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :data=\"data\"\n        @keydown.delete.native=\"del\" \n        @keydown.left.native=\"left\" \n        @keydown.right.native=\"right\" \n        @keydown.enter.native=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span :class=\"`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`\"  @click=\"setIndex(currentValue.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>";
 
 /***/ },
 /* 813 */
@@ -41756,12 +39636,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Page.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Page.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Page.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Page.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -41796,139 +39676,72 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; } // <template>
-	
 	//   <div class="inline">
-	
 	//     <ul :class="simpleWrapClasses" v-if="simple">
-	
 	//       <li
-	
 	//         title="上一页"
-	
 	//         :class="prevClasses"
-	
 	//         @click="prev">
-	
 	//         <n3-icon type="angle-left"></n3-icon>
-	
 	//       </li>
-	
 	//       <div :class="simplePagerClasses" :title="currentPage + '/' + allPages">
-	
 	//         <n3-input
-	
 	//           width="50px"
-	
 	//           @keyup.native.enter="goPage" 
-	
 	//           v-model="currentPage">
-	
 	//         </n3-input>  
-	
 	//         <span>/</span>
-	
 	//         {{ allPages }}
-	
 	//       </div>
-	
 	//       <li
-	
 	//         title="下一页"
-	
 	//         :class="nextClasses"
-	
 	//         @click="next">
-	
 	//         <n3-icon type="angle-right"></n3-icon>
-	
 	//       </li>
-	
 	//     </ul>
-	
 	//     <ul :class="wrapClasses" v-else>
-	
 	//       <span :class="[prefixCls + '-page-total']" v-if="showTotal">
-	
 	//           <slot>共 {{ total }} 条</slot>
-	
 	//       </span>
-	
 	//       <li
-	
 	//           title="上一页"
-	
 	//           :class="prevClasses"
-	
 	//           @click="prev">
-	
 	//           <n3-icon type="angle-left"></n3-icon>
-	
 	//       </li>
-	
 	//       <li title="第一页" :class="firstPageClasses" @click="changePage(1)"><a>1</a></li>
-	
 	//       <li title="向前 5 页" v-if="currentPage - 3 > 1" :class="[prefixCls + '-page-item-jump-prev']" @click="fastPrev"><a><n3-icon type="ellipsis-h" @mouseenter.native="preventer" @mouseleave.native="leave" ></n3-icon></a></li>
-	
 	//       <li :title="currentPage - 2" v-if="currentPage - 2 > 1" :class="[prefixCls + '-page-item']" @click="changePage(currentPage - 2)"><a>{{ currentPage - 2 }}</a></li>
-	
 	//       <li :title="currentPage - 1" v-if="currentPage - 1 > 1" :class="[prefixCls + '-page-item']" @click="changePage(currentPage - 1)"><a>{{ currentPage - 1 }}</a></li>
-	
 	//       <li :title="currentPage" v-if="currentPage != 1 && currentPage != allPages" :class="[prefixCls + '-page-item',prefixCls + '-page-item-active']"><a>{{ currentPage }}</a></li>
-	
 	//       <li :title="currentPage + 1" v-if="currentPage + 1 < allPages" :class="[prefixCls + '-page-item']" @click="changePage(currentPage + 1)"><a>{{ currentPage + 1 }}</a></li>
-	
 	//       <li :title="currentPage + 2" v-if="currentPage + 2 < allPages" :class="[prefixCls + '-page-item']" @click="changePage(currentPage + 2)"><a>{{ currentPage + 2 }}</a></li>
-	
 	//       <li title="向后 5 页" v-if="currentPage + 3 < allPages" :class="[prefixCls + '-page-item-jump-next']" @click="fastNext"><a><n3-icon type="ellipsis-h" @mouseenter.native="nextenter" @mouseleave.native="leave" ></n3-icon></a></li>
-	
 	//       <li :title="'最后一页:' + allPages" v-if="allPages > 1" :class="lastPageClasses" @click="changePage(allPages)"><a>{{ allPages }}</a></li>
-	
 	//       <li
-	
 	//           title="下一页"
-	
 	//           :class="nextClasses"
-	
 	//           @click="next">
-	
 	//           <n3-icon type="angle-right"></n3-icon>
-	
 	//       </li>
-	
 	//       <n3-select
-	
 	//         v-if="showSizer"
-	
 	//         v-model="currentPagesize"
-	
 	//         :options="pagesizeOptsCom"
-	
 	//         @change="onSize">
-	
 	//       </n3-select>
-	
 	//       <div class="inline" v-if="showElevator">
-	
 	//         <n3-input
-	
 	//           width="50px"
-	
 	//           @keyup.native.enter="goPage" 
-	
 	//           v-model="currentPage">
-	
 	//         </n3-input>
-	
 	//         <n3-button @click.native="goPage">跳转</n3-button>
-	
 	//       </div>
-	
 	//     </ul>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	
 	
@@ -42122,7 +39935,7 @@
 /* 815 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"inline\">\r\n    <ul :class=\"simpleWrapClasses\" v-if=\"simple\">\r\n      <li\r\n        title=\"上一页\"\r\n        :class=\"prevClasses\"\r\n        @click=\"prev\">\r\n        <n3-icon type=\"angle-left\"></n3-icon>\r\n      </li>\r\n      <div :class=\"simplePagerClasses\" :title=\"currentPage + '/' + allPages\">\r\n        <n3-input\r\n          width=\"50px\"\r\n          @keyup.native.enter=\"goPage\" \r\n          v-model=\"currentPage\">\r\n        </n3-input>  \r\n        <span>/</span>\r\n        {{ allPages }}\r\n      </div>\r\n      <li\r\n        title=\"下一页\"\r\n        :class=\"nextClasses\"\r\n        @click=\"next\">\r\n        <n3-icon type=\"angle-right\"></n3-icon>\r\n      </li>\r\n    </ul>\r\n    <ul :class=\"wrapClasses\" v-else>\r\n      <span :class=\"[prefixCls + '-page-total']\" v-if=\"showTotal\">\r\n          <slot>共 {{ total }} 条</slot>\r\n      </span>\r\n      <li\r\n          title=\"上一页\"\r\n          :class=\"prevClasses\"\r\n          @click=\"prev\">\r\n          <n3-icon type=\"angle-left\"></n3-icon>\r\n      </li>\r\n      <li title=\"第一页\" :class=\"firstPageClasses\" @click=\"changePage(1)\"><a>1</a></li>\r\n      <li title=\"向前 5 页\" v-if=\"currentPage - 3 > 1\" :class=\"[prefixCls + '-page-item-jump-prev']\" @click=\"fastPrev\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"preventer\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\r\n      <li :title=\"currentPage - 2\" v-if=\"currentPage - 2 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 2)\"><a>{{ currentPage - 2 }}</a></li>\r\n      <li :title=\"currentPage - 1\" v-if=\"currentPage - 1 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 1)\"><a>{{ currentPage - 1 }}</a></li>\r\n      <li :title=\"currentPage\" v-if=\"currentPage != 1 && currentPage != allPages\" :class=\"[prefixCls + '-page-item',prefixCls + '-page-item-active']\"><a>{{ currentPage }}</a></li>\r\n      <li :title=\"currentPage + 1\" v-if=\"currentPage + 1 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 1)\"><a>{{ currentPage + 1 }}</a></li>\r\n      <li :title=\"currentPage + 2\" v-if=\"currentPage + 2 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 2)\"><a>{{ currentPage + 2 }}</a></li>\r\n      <li title=\"向后 5 页\" v-if=\"currentPage + 3 < allPages\" :class=\"[prefixCls + '-page-item-jump-next']\" @click=\"fastNext\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"nextenter\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\r\n      <li :title=\"'最后一页:' + allPages\" v-if=\"allPages > 1\" :class=\"lastPageClasses\" @click=\"changePage(allPages)\"><a>{{ allPages }}</a></li>\r\n      <li\r\n          title=\"下一页\"\r\n          :class=\"nextClasses\"\r\n          @click=\"next\">\r\n          <n3-icon type=\"angle-right\"></n3-icon>\r\n      </li>\r\n      <n3-select\r\n        v-if=\"showSizer\"\r\n        v-model=\"currentPagesize\"\r\n        :options=\"pagesizeOptsCom\"\r\n        @change=\"onSize\">\r\n      </n3-select>\r\n      <div class=\"inline\" v-if=\"showElevator\">\r\n        <n3-input\r\n          width=\"50px\"\r\n          @keyup.native.enter=\"goPage\" \r\n          v-model=\"currentPage\">\r\n        </n3-input>\r\n        <n3-button @click.native=\"goPage\">跳转</n3-button>\r\n      </div>\r\n    </ul>\r\n  </div>";
+	module.exports = "<div class=\"inline\">\n    <ul :class=\"simpleWrapClasses\" v-if=\"simple\">\n      <li\n        title=\"上一页\"\n        :class=\"prevClasses\"\n        @click=\"prev\">\n        <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <div :class=\"simplePagerClasses\" :title=\"currentPage + '/' + allPages\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>  \n        <span>/</span>\n        {{ allPages }}\n      </div>\n      <li\n        title=\"下一页\"\n        :class=\"nextClasses\"\n        @click=\"next\">\n        <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n    </ul>\n    <ul :class=\"wrapClasses\" v-else>\n      <span :class=\"[prefixCls + '-page-total']\" v-if=\"showTotal\">\n          <slot>共 {{ total }} 条</slot>\n      </span>\n      <li\n          title=\"上一页\"\n          :class=\"prevClasses\"\n          @click=\"prev\">\n          <n3-icon type=\"angle-left\"></n3-icon>\n      </li>\n      <li title=\"第一页\" :class=\"firstPageClasses\" @click=\"changePage(1)\"><a>1</a></li>\n      <li title=\"向前 5 页\" v-if=\"currentPage - 3 > 1\" :class=\"[prefixCls + '-page-item-jump-prev']\" @click=\"fastPrev\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"preventer\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"currentPage - 2\" v-if=\"currentPage - 2 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 2)\"><a>{{ currentPage - 2 }}</a></li>\n      <li :title=\"currentPage - 1\" v-if=\"currentPage - 1 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 1)\"><a>{{ currentPage - 1 }}</a></li>\n      <li :title=\"currentPage\" v-if=\"currentPage != 1 && currentPage != allPages\" :class=\"[prefixCls + '-page-item',prefixCls + '-page-item-active']\"><a>{{ currentPage }}</a></li>\n      <li :title=\"currentPage + 1\" v-if=\"currentPage + 1 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 1)\"><a>{{ currentPage + 1 }}</a></li>\n      <li :title=\"currentPage + 2\" v-if=\"currentPage + 2 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 2)\"><a>{{ currentPage + 2 }}</a></li>\n      <li title=\"向后 5 页\" v-if=\"currentPage + 3 < allPages\" :class=\"[prefixCls + '-page-item-jump-next']\" @click=\"fastNext\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"nextenter\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n      <li :title=\"'最后一页:' + allPages\" v-if=\"allPages > 1\" :class=\"lastPageClasses\" @click=\"changePage(allPages)\"><a>{{ allPages }}</a></li>\n      <li\n          title=\"下一页\"\n          :class=\"nextClasses\"\n          @click=\"next\">\n          <n3-icon type=\"angle-right\"></n3-icon>\n      </li>\n      <n3-select\n        v-if=\"showSizer\"\n        v-model=\"currentPagesize\"\n        :options=\"pagesizeOptsCom\"\n        @change=\"onSize\">\n      </n3-select>\n      <div class=\"inline\" v-if=\"showElevator\">\n        <n3-input\n          width=\"50px\"\n          @keyup.native.enter=\"goPage\" \n          v-model=\"currentPage\">\n        </n3-input>\n        <n3-button @click.native=\"goPage\">跳转</n3-button>\n      </div>\n    </ul>\n  </div>";
 
 /***/ },
 /* 816 */
@@ -42137,12 +39950,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Step.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Step.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Step.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Step.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -42158,62 +39971,34 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <ul v-if="round" :class="`${prefixCls}-steps-round-con`">
-	
 	//     <template v-for="(label,index) in labels">
-	
 	//       <li :class="[getClassFromIndex(index)]">
-	
 	//         <div :class="`${prefixCls}-steps-wrap`">
-	
 	//           <div :class="`${prefixCls}-steps-round`">{{index + 1}}</div>
-	
 	//         </div>
-	
 	//         <label>{{label}}</label>
-	
 	//       </li>
-	
 	//     </template>
-	
 	//   </ul>
 	
-	
 	//   <div v-else :class="`${prefixCls}-steps clearfix`">
-	
 	//     <template v-for="(label,index) in labels">
-	
 	//       <div :class="`${prefixCls}-steps-wrap`">
-	
 	//         <div :class="getClassFromIndex(index)">
-	
 	//           <label>
-	
 	//               <span :class="`${prefixCls}-steps-round`">{{index + 1}}</span>
-	
 	//               <span>{{label}}</span>
-	
 	//             </label>
-	
 	//           <template v-if="index < labels.length - 1">
-	
 	//             <i :class="`${prefixCls}-steps-triangle-right-bg`"></i>
-	
 	//             <i :class="`${prefixCls}-steps-triangle-right`"></i>
-	
 	//           </template>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//     </template>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -42256,7 +40041,7 @@
 /* 818 */
 /***/ function(module, exports) {
 
-	module.exports = "<ul v-if=\"round\" :class=\"`${prefixCls}-steps-round-con`\">\r\n    <template v-for=\"(label,index) in labels\">\r\n      <li :class=\"[getClassFromIndex(index)]\">\r\n        <div :class=\"`${prefixCls}-steps-wrap`\">\r\n          <div :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</div>\r\n        </div>\r\n        <label>{{label}}</label>\r\n      </li>\r\n    </template>\r\n  </ul>\r\n\r\n  <div v-else :class=\"`${prefixCls}-steps clearfix`\">\r\n    <template v-for=\"(label,index) in labels\">\r\n      <div :class=\"`${prefixCls}-steps-wrap`\">\r\n        <div :class=\"getClassFromIndex(index)\">\r\n          <label>\r\n              <span :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</span>\r\n              <span>{{label}}</span>\r\n            </label>\r\n          <template v-if=\"index < labels.length - 1\">\r\n            <i :class=\"`${prefixCls}-steps-triangle-right-bg`\"></i>\r\n            <i :class=\"`${prefixCls}-steps-triangle-right`\"></i>\r\n          </template>\r\n        </div>\r\n      </div>\r\n    </template>\r\n  </div>";
+	module.exports = "<ul v-if=\"round\" :class=\"`${prefixCls}-steps-round-con`\">\n    <template v-for=\"(label,index) in labels\">\n      <li :class=\"[getClassFromIndex(index)]\">\n        <div :class=\"`${prefixCls}-steps-wrap`\">\n          <div :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</div>\n        </div>\n        <label>{{label}}</label>\n      </li>\n    </template>\n  </ul>\n\n  <div v-else :class=\"`${prefixCls}-steps clearfix`\">\n    <template v-for=\"(label,index) in labels\">\n      <div :class=\"`${prefixCls}-steps-wrap`\">\n        <div :class=\"getClassFromIndex(index)\">\n          <label>\n              <span :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</span>\n              <span>{{label}}</span>\n            </label>\n          <template v-if=\"index < labels.length - 1\">\n            <i :class=\"`${prefixCls}-steps-triangle-right-bg`\"></i>\n            <i :class=\"`${prefixCls}-steps-triangle-right`\"></i>\n          </template>\n        </div>\n      </div>\n    </template>\n  </div>";
 
 /***/ },
 /* 819 */
@@ -42271,12 +40056,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTable.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTable.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTable.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTable.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -42327,257 +40112,131 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div :class="`${prefixCls}-data-table`">
-	
 	//   <div :class="`${prefixCls}-data-table-bar clearfix`">
-	
 	//     <n3-select 
-	
 	//       class='pull-left'
-	
 	//       style="margin-right:10px;"
-	
 	//       multiple
-	
 	//       :showselected="false"
-	
 	//       v-if="selectCol"
-	
 	//       placeholder = "显示的列"
-	
 	//       :options="selectOptions" 
-	
 	//       v-model="selectdCols">
-	
 	//     </n3-select>
-	
 	//     <div v-if="filter && filterArr.length" :class="`pull-left ${prefixCls}-btn-group`">
-	
 	//       <template v-for="item in filterArr">
-	
 	//         <n3-select 
-	
 	//           :multiple = "item.multiple === undefined?true:!!item.multiple"
-	
 	//           :search = "item.search === undefined?true:!!item.search"
-	
 	//           :extra = "item.extra === undefined?true:!!item.extra"
-	
 	//           :showselected="false"
-	
 	//           :placeholder = "item.title"
-	
 	//           :options="item.options" 
-	
 	//           v-model="item.value">
-	
 	//         </n3-select>
-	
 	//       </template>  
-	
 	//       <n3-button
-	
 	//         :class="`${prefixCls}-data-table-inner-btn`"
-	
 	//         @click.native="resetFilter" 
-	
 	//         type="primary">
-	
 	//         <n3-icon type="reply"></n3-icon>
-	
 	//       </n3-button>
-	
 	//        <n3-button
-	
 	//         :class="`${prefixCls}-data-table-inner-btn`"
-	
 	//         @click.native="goFilter" 
-	
 	//         type="primary">
-	
 	//         <n3-icon type="filter"></n3-icon>
-	
 	//       </n3-button>
-	
 	//     </div>
-	
 	//       <n3-button
-	
 	//         :class="`${prefixCls}-data-table-inner-btn`" 
-	
 	//         style="margin-left:10px;"
-	
 	//         @click.native="refresh"
-	
 	//         v-if="refresh"  
-	
 	//         type="primary">
-	
 	//         <n3-icon type="refresh"></n3-icon>
-	
 	//       </n3-button>
-	
 	//     <n3-input
-	
 	//       class="pull-right" 
-	
 	//       placeholder="搜索"
-	
 	//       v-model="query"
-	
 	//       @keydown.native.enter="gosearch"
-	
 	//       v-if="search">
-	
 	//     </n3-input>
-	
 	//   </div>
-	
 	//   <div>
-	
 	//     <n3-loading center size="lg" v-if="loading"></n3-loading>
-	
 	//     <div :class="[loading ? prefixCls + '-data-table-loading':'']">
-	
 	//       <table :class="classObj" >
-	
 	//           <thead>
-	
 	//             <tr>
-	
 	//               <th v-if="selection" :class="`${prefixCls}-data-table-row-select`">
-	
 	//                   <input v-if="list && list.length" 
-	
 	//                     type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
-	
 	//                     @change="onCheckAll"/>
-	
 	//               </th>
-	
 	//               <th v-for="col in showColumns" 
-	
 	//                   :style="{width: col.width}" 
-	
 	//                   :class="{'pointer': col.sort}" 
-	
 	//                   @click="sort(col, col.sort)" 
-	
 	//                   :colspan="col.colspan === undefined ? 1 : col.colspan"> 
-	
 	//                     <span>{{col.title}} </span> 
-	
 	//                     <div :class="`${prefixCls}-data-table-sort pull-right`" v-if="col.sort" >
-	
 	//                       <n3-icon
-	
 	//                         @click.native.stop="sort(col,col.sort,'ASC')"
-	
 	//                         :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
-	
 	//                         type="caret-up">
-	
 	//                       </n3-icon>
-	
 	//                       <n3-icon
-	
 	//                         @click.native.stop="sort(col,col.sort,'DESC')"
-	
 	//                         :style="{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}"
-	
 	//                         type="caret-down">
-	
 	//                       </n3-icon>
-	
 	//                     </div>
-	
 	//               </th>
-	
 	//             </tr>
-	
 	//           </thead>
-	
 	//           <tbody>
-	
 	//             <tr v-for="(data,index) in list" track-by="n3Key">
-	
 	//                 <td v-if="selection" :class="`${prefixCls}-row-select`">
-	
 	//                    <input type="checkbox" 
-	
 	//                     v-model="checkedValues"  
-	
 	//                     :value="stringify(data)" @change.stop="onCheckOne($event,data)" 
-	
 	//                     v-bind="selection.getCheckboxProps && selection.getCheckboxProps(data)"/>
-	
 	//                 </td>
-	
 	//                 <td v-for="col in showColumns"
-	
 	//                   :colspan="colspan(col,data)"
-	
 	//                   :rowspan="rowspan(col,data)">
-	
 	//                   <template v-if="col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0">
-	
 	//                     <template v-if="col.render">
-	
 	//                       <render :context="context || $parent._self" :template="col.render(data[col.dataIndex],data,index)"></render>
-	
 	//                     </template>
-	
 	//                     <template v-else>
-	
 	//                       <span v-html="col.dataIndex ? data[col.dataIndex] : ''"></span>
-	
 	//                     </template>
-	
 	//                   </template>
-	
 	//                 </td>
-	
 	//             </tr>
-	
 	//           </tbody>
-	
 	//       </table>
-	
 	//     </div>
-	
 	//   </div>
-	
 	//   <div :class="`${prefixCls}-data-table-bar ${prefixCls}-data-table-page`" v-if="page" >
-	
 	//     <n3-page
-	
 	//       v-if="page" 
-	
 	//       :total="cpage.total" 
-	
 	//       :current="cpage.current" 
-	
 	//       :pagesize="cpage.pagesize" 
-	
 	//       @change="pageChange"
-	
 	//       :show-sizer="true"
-	
 	//       :show-total="true"
-	
 	//       :pagesize-opts="cpage.pagesizeOpts">
-	
 	//     </n3-page>
-	
 	//     </div>
-	
 	//   </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3DataTable',
@@ -42738,11 +40397,11 @@
 	      }
 	    },
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          striped = this.striped,
-	          bordered = this.bordered,
-	          hover = this.hover,
-	          responsive = this.responsive;
+	      var prefixCls = this.prefixCls;
+	      var striped = this.striped;
+	      var bordered = this.bordered;
+	      var hover = this.hover;
+	      var responsive = this.responsive;
 	
 	      var klass = {};
 	      klass[prefixCls + '-table'] = true;
@@ -43130,7 +40789,7 @@
 /* 821 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-data-table`\">\r\n  <div :class=\"`${prefixCls}-data-table-bar clearfix`\">\r\n    <n3-select \r\n      class='pull-left'\r\n      style=\"margin-right:10px;\"\r\n      multiple\r\n      :showselected=\"false\"\r\n      v-if=\"selectCol\"\r\n      placeholder = \"显示的列\"\r\n      :options=\"selectOptions\" \r\n      v-model=\"selectdCols\">\r\n    </n3-select>\r\n    <div v-if=\"filter && filterArr.length\" :class=\"`pull-left ${prefixCls}-btn-group`\">\r\n      <template v-for=\"item in filterArr\">\r\n        <n3-select \r\n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\r\n          :search = \"item.search === undefined?true:!!item.search\"\r\n          :extra = \"item.extra === undefined?true:!!item.extra\"\r\n          :showselected=\"false\"\r\n          :placeholder = \"item.title\"\r\n          :options=\"item.options\" \r\n          v-model=\"item.value\">\r\n        </n3-select>\r\n      </template>  \r\n      <n3-button\r\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\r\n        @click.native=\"resetFilter\" \r\n        type=\"primary\">\r\n        <n3-icon type=\"reply\"></n3-icon>\r\n      </n3-button>\r\n       <n3-button\r\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\r\n        @click.native=\"goFilter\" \r\n        type=\"primary\">\r\n        <n3-icon type=\"filter\"></n3-icon>\r\n      </n3-button>\r\n    </div>\r\n      <n3-button\r\n        :class=\"`${prefixCls}-data-table-inner-btn`\" \r\n        style=\"margin-left:10px;\"\r\n        @click.native=\"refresh\"\r\n        v-if=\"refresh\"  \r\n        type=\"primary\">\r\n        <n3-icon type=\"refresh\"></n3-icon>\r\n      </n3-button>\r\n    <n3-input\r\n      class=\"pull-right\" \r\n      placeholder=\"搜索\"\r\n      v-model=\"query\"\r\n      @keydown.native.enter=\"gosearch\"\r\n      v-if=\"search\">\r\n    </n3-input>\r\n  </div>\r\n  <div>\r\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\r\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\r\n      <table :class=\"classObj\" >\r\n          <thead>\r\n            <tr>\r\n              <th v-if=\"selection\" :class=\"`${prefixCls}-data-table-row-select`\">\r\n                  <input v-if=\"list && list.length\" \r\n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \r\n                    @change=\"onCheckAll\"/>\r\n              </th>\r\n              <th v-for=\"col in showColumns\" \r\n                  :style=\"{width: col.width}\" \r\n                  :class=\"{'pointer': col.sort}\" \r\n                  @click=\"sort(col, col.sort)\" \r\n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \r\n                    <span>{{col.title}} </span> \r\n                    <div :class=\"`${prefixCls}-data-table-sort pull-right`\" v-if=\"col.sort\" >\r\n                      <n3-icon\r\n                        @click.native.stop=\"sort(col,col.sort,'ASC')\"\r\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \r\n                        type=\"caret-up\">\r\n                      </n3-icon>\r\n                      <n3-icon\r\n                        @click.native.stop=\"sort(col,col.sort,'DESC')\"\r\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\r\n                        type=\"caret-down\">\r\n                      </n3-icon>\r\n                    </div>\r\n              </th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr v-for=\"(data,index) in list\" track-by=\"n3Key\">\r\n                <td v-if=\"selection\" :class=\"`${prefixCls}-row-select`\">\r\n                   <input type=\"checkbox\" \r\n                    v-model=\"checkedValues\"  \r\n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \r\n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\r\n                </td>\r\n                <td v-for=\"col in showColumns\"\r\n                  :colspan=\"colspan(col,data)\"\r\n                  :rowspan=\"rowspan(col,data)\">\r\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\r\n                    <template v-if=\"col.render\">\r\n                      <render :context=\"context || $parent._self\" :template=\"col.render(data[col.dataIndex],data,index)\"></render>\r\n                    </template>\r\n                    <template v-else>\r\n                      <span v-html=\"col.dataIndex ? data[col.dataIndex] : ''\"></span>\r\n                    </template>\r\n                  </template>\r\n                </td>\r\n            </tr>\r\n          </tbody>\r\n      </table>\r\n    </div>\r\n  </div>\r\n  <div :class=\"`${prefixCls}-data-table-bar ${prefixCls}-data-table-page`\" v-if=\"page\" >\r\n    <n3-page\r\n      v-if=\"page\" \r\n      :total=\"cpage.total\" \r\n      :current=\"cpage.current\" \r\n      :pagesize=\"cpage.pagesize\" \r\n      @change=\"pageChange\"\r\n      :show-sizer=\"true\"\r\n      :show-total=\"true\"\r\n      :pagesize-opts=\"cpage.pagesizeOpts\">\r\n    </n3-page>\r\n    </div>\r\n  </div>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-data-table`\">\n  <div :class=\"`${prefixCls}-data-table-bar clearfix`\">\n    <n3-select \n      class='pull-left'\n      style=\"margin-right:10px;\"\n      multiple\n      :showselected=\"false\"\n      v-if=\"selectCol\"\n      placeholder = \"显示的列\"\n      :options=\"selectOptions\" \n      v-model=\"selectdCols\">\n    </n3-select>\n    <div v-if=\"filter && filterArr.length\" :class=\"`pull-left ${prefixCls}-btn-group`\">\n      <template v-for=\"item in filterArr\">\n        <n3-select \n          :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n          :search = \"item.search === undefined?true:!!item.search\"\n          :extra = \"item.extra === undefined?true:!!item.extra\"\n          :showselected=\"false\"\n          :placeholder = \"item.title\"\n          :options=\"item.options\" \n          v-model=\"item.value\">\n        </n3-select>\n      </template>  \n      <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\n        @click.native=\"resetFilter\" \n        type=\"primary\">\n        <n3-icon type=\"reply\"></n3-icon>\n      </n3-button>\n       <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\"\n        @click.native=\"goFilter\" \n        type=\"primary\">\n        <n3-icon type=\"filter\"></n3-icon>\n      </n3-button>\n    </div>\n      <n3-button\n        :class=\"`${prefixCls}-data-table-inner-btn`\" \n        style=\"margin-left:10px;\"\n        @click.native=\"refresh\"\n        v-if=\"refresh\"  \n        type=\"primary\">\n        <n3-icon type=\"refresh\"></n3-icon>\n      </n3-button>\n    <n3-input\n      class=\"pull-right\" \n      placeholder=\"搜索\"\n      v-model=\"query\"\n      @keydown.native.enter=\"gosearch\"\n      v-if=\"search\">\n    </n3-input>\n  </div>\n  <div>\n    <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n    <div :class=\"[loading ? prefixCls + '-data-table-loading':'']\">\n      <table :class=\"classObj\" >\n          <thead>\n            <tr>\n              <th v-if=\"selection\" :class=\"`${prefixCls}-data-table-row-select`\">\n                  <input v-if=\"list && list.length\" \n                    type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                    @change=\"onCheckAll\"/>\n              </th>\n              <th v-for=\"col in showColumns\" \n                  :style=\"{width: col.width}\" \n                  :class=\"{'pointer': col.sort}\" \n                  @click=\"sort(col, col.sort)\" \n                  :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                    <span>{{col.title}} </span> \n                    <div :class=\"`${prefixCls}-data-table-sort pull-right`\" v-if=\"col.sort\" >\n                      <n3-icon\n                        @click.native.stop=\"sort(col,col.sort,'ASC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                        type=\"caret-up\">\n                      </n3-icon>\n                      <n3-icon\n                        @click.native.stop=\"sort(col,col.sort,'DESC')\"\n                        :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                        type=\"caret-down\">\n                      </n3-icon>\n                    </div>\n              </th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr v-for=\"(data,index) in list\" track-by=\"n3Key\">\n                <td v-if=\"selection\" :class=\"`${prefixCls}-row-select`\">\n                   <input type=\"checkbox\" \n                    v-model=\"checkedValues\"  \n                    :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                    v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n                </td>\n                <td v-for=\"col in showColumns\"\n                  :colspan=\"colspan(col,data)\"\n                  :rowspan=\"rowspan(col,data)\">\n                  <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                    <template v-if=\"col.render\">\n                      <render :context=\"context || $parent._self\" :template=\"col.render(data[col.dataIndex],data,index)\"></render>\n                    </template>\n                    <template v-else>\n                      <span v-html=\"col.dataIndex ? data[col.dataIndex] : ''\"></span>\n                    </template>\n                  </template>\n                </td>\n            </tr>\n          </tbody>\n      </table>\n    </div>\n  </div>\n  <div :class=\"`${prefixCls}-data-table-bar ${prefixCls}-data-table-page`\" v-if=\"page\" >\n    <n3-page\n      v-if=\"page\" \n      :total=\"cpage.total\" \n      :current=\"cpage.current\" \n      :pagesize=\"cpage.pagesize\" \n      @change=\"pageChange\"\n      :show-sizer=\"true\"\n      :show-total=\"true\"\n      :pagesize-opts=\"cpage.pagesizeOpts\">\n    </n3-page>\n    </div>\n  </div>\n  </div>";
 
 /***/ },
 /* 822 */
@@ -43145,12 +40804,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Timeline.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timeline.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Timeline.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timeline.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -43177,29 +40836,17 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//  	<ul :class="`${prefixCls}-timeline-con`">
-	
 	//  		<template v-if="value">
-	
 	//  			<n3-timeline-item v-for="i in value" :color="i.color" :icon="i.icon" >
-	
 	//  				<render :context="context || $parent._self" :template="i.content"></render>
-	
 	//  			</n3-timeline-item>
-	
 	//  		</template>
-	
 	//  		<template v-else>
-	
 	//  			<slot></slot>
-	
 	//  		</template>
-	
 	//  	</ul>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3Timeline',
@@ -43233,12 +40880,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineItem.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineItem.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineItem.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineItem.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -43254,23 +40901,14 @@
 	  value: true
 	});
 	// <template>
-	
 	//  	<li :class="`${prefixCls}-timeline-item`">
-	
 	//  		<div :class="`${prefixCls}-timeline-item-tail`"></div>
-	
 	//  		<div :class="[prefixCls+'-timeline-item-head',icon?prefixCls+'-fa '+prefixCls+'-fa-'+icon:'']" :style="style"></div>
-	
 	//  		<div :class="`${prefixCls}-timeline-item-content`">
-	
 	// 	 		<slot></slot>
-	
 	//  		</div>
-	
 	//  	</li>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3TimelineItem',
@@ -43303,13 +40941,13 @@
 /* 826 */
 /***/ function(module, exports) {
 
-	module.exports = "<li :class=\"`${prefixCls}-timeline-item`\">\r\n \t\t<div :class=\"`${prefixCls}-timeline-item-tail`\"></div>\r\n \t\t<div :class=\"[prefixCls+'-timeline-item-head',icon?prefixCls+'-fa '+prefixCls+'-fa-'+icon:'']\" :style=\"style\"></div>\r\n \t\t<div :class=\"`${prefixCls}-timeline-item-content`\">\r\n\t \t\t<slot></slot>\r\n \t\t</div>\r\n \t</li>";
+	module.exports = "<li :class=\"`${prefixCls}-timeline-item`\">\n \t\t<div :class=\"`${prefixCls}-timeline-item-tail`\"></div>\n \t\t<div :class=\"[prefixCls+'-timeline-item-head',icon?prefixCls+'-fa '+prefixCls+'-fa-'+icon:'']\" :style=\"style\"></div>\n \t\t<div :class=\"`${prefixCls}-timeline-item-content`\">\n\t \t\t<slot></slot>\n \t\t</div>\n \t</li>";
 
 /***/ },
 /* 827 */
 /***/ function(module, exports) {
 
-	module.exports = "<ul :class=\"`${prefixCls}-timeline-con`\">\r\n \t\t<template v-if=\"value\">\r\n \t\t\t<n3-timeline-item v-for=\"i in value\" :color=\"i.color\" :icon=\"i.icon\" >\r\n \t\t\t\t<render :context=\"context || $parent._self\" :template=\"i.content\"></render>\r\n \t\t\t</n3-timeline-item>\r\n \t\t</template>\r\n \t\t<template v-else>\r\n \t\t\t<slot></slot>\r\n \t\t</template>\r\n \t</ul>";
+	module.exports = "<ul :class=\"`${prefixCls}-timeline-con`\">\n \t\t<template v-if=\"value\">\n \t\t\t<n3-timeline-item v-for=\"i in value\" :color=\"i.color\" :icon=\"i.icon\" >\n \t\t\t\t<render :context=\"context || $parent._self\" :template=\"i.content\"></render>\n \t\t\t</n3-timeline-item>\n \t\t</template>\n \t\t<template v-else>\n \t\t\t<slot></slot>\n \t\t</template>\n \t</ul>";
 
 /***/ },
 /* 828 */
@@ -43324,12 +40962,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tags.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tags.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tags.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tags.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -43390,9 +41028,9 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          size = this.size,
-	          type = this.type;
+	      var prefixCls = this.prefixCls;
+	      var size = this.size;
+	      var type = this.type;
 	
 	      var klass = {};
 	
@@ -43439,21 +41077,13 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div :class="classObj">
-	
 	//     <label v-for="i in currentValue" :class="tagClass(i)">
-	
 	// 	 {{i.label}}
-	
 	// 	<a name="remove" v-if="removable" @click="del(i)"><n3-icon type="times"></n3-icon></a>
-	
 	// 	</label>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -43461,7 +41091,7 @@
 /* 830 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\">\r\n    <label v-for=\"i in currentValue\" :class=\"tagClass(i)\">\r\n\t {{i.label}}\r\n\t<a name=\"remove\" v-if=\"removable\" @click=\"del(i)\"><n3-icon type=\"times\"></n3-icon></a>\r\n\t</label>\r\n  </div>";
+	module.exports = "<div :class=\"classObj\">\n    <label v-for=\"i in currentValue\" :class=\"tagClass(i)\">\n\t {{i.label}}\n\t<a name=\"remove\" v-if=\"removable\" @click=\"del(i)\"><n3-icon type=\"times\"></n3-icon></a>\n\t</label>\n  </div>";
 
 /***/ },
 /* 831 */
@@ -43476,12 +41106,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Breadcrumb.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Breadcrumb.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Breadcrumb.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Breadcrumb.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -43497,15 +41127,10 @@
 		value: true
 	});
 	// <template>
-	
 	// 	<ol :class="`${prefixCls}-breadcrumb`">
-	
 	// 		<slot></slot>
-	
 	// 	</ol>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 		name: 'n3Breadcrumb',
@@ -43522,7 +41147,7 @@
 /* 833 */
 /***/ function(module, exports) {
 
-	module.exports = "<ol :class=\"`${prefixCls}-breadcrumb`\">\r\n\t\t<slot></slot>\r\n\t</ol>";
+	module.exports = "<ol :class=\"`${prefixCls}-breadcrumb`\">\n\t\t<slot></slot>\n\t</ol>";
 
 /***/ },
 /* 834 */
@@ -43537,12 +41162,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbItem.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbItem.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbItem.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbItem.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -43558,25 +41183,15 @@
 	  value: true
 	});
 	// <template>
-	
 	//  	<li :class="[active ? prefixCls + '-breadcrumb-active' : '']">
-	
 	// 		<a v-if='href' :href="href" >
-	
 	//     	<slot></slot>
-	
 	//   	</a>
-	
 	//   	<span v-else>
-	
 	//     	<slot></slot>
-	
 	//   	</span>
-	
 	//   	</li>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  name: 'n3BreadcrumbItem',
@@ -43599,7 +41214,7 @@
 /* 836 */
 /***/ function(module, exports) {
 
-	module.exports = "<li :class=\"[active ? prefixCls + '-breadcrumb-active' : '']\">\r\n\t\t<a v-if='href' :href=\"href\" >\r\n    \t<slot></slot>\r\n  \t</a>\r\n  \t<span v-else>\r\n    \t<slot></slot>\r\n  \t</span>\r\n  \t</li>";
+	module.exports = "<li :class=\"[active ? prefixCls + '-breadcrumb-active' : '']\">\n\t\t<a v-if='href' :href=\"href\" >\n    \t<slot></slot>\n  \t</a>\n  \t<span v-else>\n    \t<slot></slot>\n  \t</span>\n  \t</li>";
 
 /***/ },
 /* 837 */
@@ -43614,12 +41229,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Form.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Form.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Form.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Form.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -43646,15 +41261,10 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <form :class="classObj"  @submit.prevent="noop">
-	
 	//       <slot></slot>
-	
 	//   </form>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -43711,8 +41321,8 @@
 	
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          type = this.type;
+	      var prefixCls = this.prefixCls;
+	      var type = this.type;
 	
 	      var klass = {};
 	
@@ -43773,7 +41383,7 @@
 /* 839 */
 /***/ function(module, exports) {
 
-	module.exports = "<form :class=\"classObj\"  @submit.prevent=\"noop\">\r\n      <slot></slot>\r\n  </form>";
+	module.exports = "<form :class=\"classObj\"  @submit.prevent=\"noop\">\n      <slot></slot>\n  </form>";
 
 /***/ },
 /* 840 */
@@ -43788,12 +41398,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormItem.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormItem.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormItem.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormItem.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -43809,27 +41419,16 @@
 	  value: true
 	});
 	// <template>
-	
 	//   <div :class="classObj" >
-	
 	//     <label :class="`${prefixCls}-col-sm-${label_col} ${prefixCls}-control-label`">
-	
 	//       <em :class="`${prefixCls}-form-need`" v-if="need" >*</em>
-	
 	//       {{label}}
-	
 	//       </label>
-	
 	//     <div :class="`${prefixCls}-col-sm-${col} inline`">
-	
 	//       <slot></slot>
-	
 	//     </div>  
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -43877,8 +41476,8 @@
 	      return wrapCol - this.label_col;
 	    },
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          wrapCol = this.wrapCol;
+	      var prefixCls = this.prefixCls;
+	      var wrapCol = this.wrapCol;
 	
 	      var klass = {};
 	      var defaultCol = this.inline ? wrapCol || 0 : 12;
@@ -43897,7 +41496,7 @@
 /* 842 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\" >\r\n    <label :class=\"`${prefixCls}-col-sm-${label_col} ${prefixCls}-control-label`\">\r\n      <em :class=\"`${prefixCls}-form-need`\" v-if=\"need\" >*</em>\r\n      {{label}}\r\n      </label>\r\n    <div :class=\"`${prefixCls}-col-sm-${col} inline`\">\r\n      <slot></slot>\r\n    </div>  \r\n  </div>";
+	module.exports = "<div :class=\"classObj\" >\n    <label :class=\"`${prefixCls}-col-sm-${label_col} ${prefixCls}-control-label`\">\n      <em :class=\"`${prefixCls}-form-need`\" v-if=\"need\" >*</em>\n      {{label}}\n      </label>\n    <div :class=\"`${prefixCls}-col-sm-${col} inline`\">\n      <slot></slot>\n    </div>  \n  </div>";
 
 /***/ },
 /* 843 */
@@ -43912,12 +41511,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Slide.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slide.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Slide.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slide.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -43972,15 +41571,10 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div :class="`${prefixCls}-carousel-item`">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -43988,7 +41582,7 @@
 /* 845 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-carousel-item`\">\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-carousel-item`\">\n    <slot></slot>\n  </div>";
 
 /***/ },
 /* 846 */
@@ -44003,12 +41597,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue"
+	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue","-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue")
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue"], function () {
+	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -44031,33 +41625,19 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var emptyText = 'Empty Content.'; // <template>
-	
 	//   <div class="n3-tree">
-	
 	//     <n3-tree-node
-	
 	//       v-for="child in root.childNodes"
-	
 	//       :node="child"
-	
 	//       :props="props"
-	
 	//       :key="getNodeKey(child)"
-	
 	//       :render-content="renderContent">
-	
 	//     </n3-tree-node>
-	
 	//     <div v-if="!root.childNodes || root.childNodes.length === 0">
-	
 	//       <span>{{ emptyText }}</span>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -44238,7 +41818,7 @@
 	  value: true
 	});
 	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
@@ -44478,7 +42058,7 @@
 	  }, {
 	    key: 'setCheckedNodes',
 	    value: function setCheckedNodes(array) {
-	      var leafOnly = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+	      var leafOnly = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
 	
 	      var key = this.key;
 	      var checkedKeys = {};
@@ -44491,7 +42071,7 @@
 	  }, {
 	    key: 'setCheckedKeys',
 	    value: function setCheckedKeys(keys) {
-	      var leafOnly = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+	      var leafOnly = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
 	
 	      this.defaultCheckedKeys = keys;
 	      var key = this.key;
@@ -44801,7 +42381,7 @@
 	    value: function doCreateChildren(array) {
 	      var _this2 = this;
 	
-	      var defaultProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	      var defaultProps = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 	
 	      array.forEach(function (item) {
 	        _this2.insertChild(objectAssign({ data: item }, defaultProps));
@@ -44912,8 +42492,8 @@
 	      });
 	
 	      newNodes.forEach(function (_ref) {
-	        var index = _ref.index,
-	            data = _ref.data;
+	        var index = _ref.index;
+	        var data = _ref.data;
 	
 	        _this4.insertChild({ data: data }, index);
 	      });
@@ -44925,7 +42505,7 @@
 	    value: function loadData(callback) {
 	      var _this5 = this;
 	
-	      var defaultProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	      var defaultProps = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 	
 	      if (this.store.lazy === true && this.store.load && !this.loaded && !this.loading) {
 	        this.loading = true;
@@ -45013,12 +42593,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue"
+	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue","-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeNode.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue")
+	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TreeNode.vue"], function () {
+	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeNode.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeNode.vue")
+	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TreeNode.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -45045,105 +42625,55 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div :class="`${prefixCls}-tree-node`">
-	
 	//     <div 
-	
 	//       @click.stop="handleClick"
-	
 	//       v-show="node.visible"
-	
 	//       :class="[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']">
-	
 	//       <div :class="`${prefixCls}-tree-node__content`"
-	
 	//         :style="{ 'padding-left': (node.level - 1) * 20 + 'px' }">
-	
 	//         <span @click.stop="handleExpandIconClick">
-	
 	//           <n3-icon
-	
 	//             v-show="!node.isLeaf"
-	
 	//             :class="`${prefixCls}-tree-select-icon`"
-	
 	//             :type="(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon"
-	
 	//           >
-	
 	//           </n3-icon>
-	
 	//         </span>
-	
 	//         <span @click.stop="handleUserClick">
-	
 	//           <n3-checkbox
-	
 	//             v-if="showCheckbox"
-	
 	//             :checked="node.checked"
-	
 	//             @change="handleCheckChange"
-	
 	//           >
-	
 	//           </n3-checkbox>
-	
 	//         </span>
-	
 	//         <span
-	
 	//           :class="`${prefixCls}-tree-loading-box`"
-	
 	//           v-if="node.loading"
-	
 	//         >
-	
 	//           <n3-loading color="primary" size="xs"></n3-loading>
-	
 	//         </span>
-	
 	//         <n3-icon :type="node.isLeaf ? tree.leafIcon : tree.childIcon"></n3-icon>
-	
 	//         <node-content :node="node"></node-content>
-	
 	//       </div>
-	
 	//       <template v-show="expanded">
-	
 	//         <n3-collapse-transition>
-	
 	//           <div
-	
 	//             :class="`${prefixCls}-tree-children`"
-	
 	//             >
-	
 	//             <n3-tree-node
-	
 	//               :render-content="renderContent"
-	
 	//               v-for="child in node.childNodes"
-	
 	//               :key="getNodeKey(child)"
-	
 	//               :node="child">
-	
 	//             </n3-tree-node>
-	
 	//           </div>
-	
 	//         </n3-collapse-transition>
-	
 	//       </template>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script type="text/jsx">
 	exports.default = {
@@ -45296,13 +42826,13 @@
 /* 853 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-tree-node`\">\r\n    <div \r\n      @click.stop=\"handleClick\"\r\n      v-show=\"node.visible\"\r\n      :class=\"[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']\">\r\n      <div :class=\"`${prefixCls}-tree-node__content`\"\r\n        :style=\"{ 'padding-left': (node.level - 1) * 20 + 'px' }\">\r\n        <span @click.stop=\"handleExpandIconClick\">\r\n          <n3-icon\r\n            v-show=\"!node.isLeaf\"\r\n            :class=\"`${prefixCls}-tree-select-icon`\"\r\n            :type=\"(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon\"\r\n          >\r\n          </n3-icon>\r\n        </span>\r\n        <span @click.stop=\"handleUserClick\">\r\n          <n3-checkbox\r\n            v-if=\"showCheckbox\"\r\n            :checked=\"node.checked\"\r\n            @change=\"handleCheckChange\"\r\n          >\r\n          </n3-checkbox>\r\n        </span>\r\n        <span\r\n          :class=\"`${prefixCls}-tree-loading-box`\"\r\n          v-if=\"node.loading\"\r\n        >\r\n          <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\r\n        </span>\r\n        <n3-icon :type=\"node.isLeaf ? tree.leafIcon : tree.childIcon\"></n3-icon>\r\n        <node-content :node=\"node\"></node-content>\r\n      </div>\r\n      <template v-show=\"expanded\">\r\n        <n3-collapse-transition>\r\n          <div\r\n            :class=\"`${prefixCls}-tree-children`\"\r\n            >\r\n            <n3-tree-node\r\n              :render-content=\"renderContent\"\r\n              v-for=\"child in node.childNodes\"\r\n              :key=\"getNodeKey(child)\"\r\n              :node=\"child\">\r\n            </n3-tree-node>\r\n          </div>\r\n        </n3-collapse-transition>\r\n      </template>\r\n    </div>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-tree-node`\">\n    <div \n      @click.stop=\"handleClick\"\n      v-show=\"node.visible\"\n      :class=\"[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']\">\n      <div :class=\"`${prefixCls}-tree-node__content`\"\n        :style=\"{ 'padding-left': (node.level - 1) * 20 + 'px' }\">\n        <span @click.stop=\"handleExpandIconClick\">\n          <n3-icon\n            v-show=\"!node.isLeaf\"\n            :class=\"`${prefixCls}-tree-select-icon`\"\n            :type=\"(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon\"\n          >\n          </n3-icon>\n        </span>\n        <span @click.stop=\"handleUserClick\">\n          <n3-checkbox\n            v-if=\"showCheckbox\"\n            :checked=\"node.checked\"\n            @change=\"handleCheckChange\"\n          >\n          </n3-checkbox>\n        </span>\n        <span\n          :class=\"`${prefixCls}-tree-loading-box`\"\n          v-if=\"node.loading\"\n        >\n          <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n        </span>\n        <n3-icon :type=\"node.isLeaf ? tree.leafIcon : tree.childIcon\"></n3-icon>\n        <node-content :node=\"node\"></node-content>\n      </div>\n      <template v-show=\"expanded\">\n        <n3-collapse-transition>\n          <div\n            :class=\"`${prefixCls}-tree-children`\"\n            >\n            <n3-tree-node\n              :render-content=\"renderContent\"\n              v-for=\"child in node.childNodes\"\n              :key=\"getNodeKey(child)\"\n              :node=\"child\">\n            </n3-tree-node>\n          </div>\n        </n3-collapse-transition>\n      </template>\n    </div>\n  </div>";
 
 /***/ },
 /* 854 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"n3-tree\">\r\n    <n3-tree-node\r\n      v-for=\"child in root.childNodes\"\r\n      :node=\"child\"\r\n      :props=\"props\"\r\n      :key=\"getNodeKey(child)\"\r\n      :render-content=\"renderContent\">\r\n    </n3-tree-node>\r\n    <div v-if=\"!root.childNodes || root.childNodes.length === 0\">\r\n      <span>{{ emptyText }}</span>\r\n    </div>\r\n  </div>";
+	module.exports = "<div class=\"n3-tree\">\n    <n3-tree-node\n      v-for=\"child in root.childNodes\"\n      :node=\"child\"\n      :props=\"props\"\n      :key=\"getNodeKey(child)\"\n      :render-content=\"renderContent\">\n    </n3-tree-node>\n    <div v-if=\"!root.childNodes || root.childNodes.length === 0\">\n      <span>{{ emptyText }}</span>\n    </div>\n  </div>";
 
 /***/ },
 /* 855 */
@@ -45317,12 +42847,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Card.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Card.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Card.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Card.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -45338,15 +42868,10 @@
 	  value: true
 	});
 	// <template>
-	
 	// 	<div :class="classObj">
-	
 	// 		<slot></slot>
-	
 	// 	</div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -45363,8 +42888,8 @@
 	  },
 	  computed: {
 	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          hover = this.hover;
+	      var prefixCls = this.prefixCls;
+	      var hover = this.hover;
 	
 	      var klass = {};
 	
@@ -45381,7 +42906,7 @@
 /* 857 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"classObj\">\r\n\t\t<slot></slot>\r\n\t</div>";
+	module.exports = "<div :class=\"classObj\">\n\t\t<slot></slot>\n\t</div>";
 
 /***/ },
 /* 858 */
@@ -45396,12 +42921,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Rate.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Rate.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Rate.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Rate.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Rate.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Rate.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Rate.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Rate.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Rate.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Rate.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -45671,55 +43196,31 @@
 	};
 	// </script>
 	// <template>
-	
 	//   <div :class="`${prefixCls}-rate`">
-	
 	//     <span
-	
 	//       v-for="item in max"
-	
 	//       :class="`${prefixCls}-rate-item`"
-	
 	//       @mousemove="setCurrentValue(item, $event)"
-	
 	//       @mouseleave="resetCurrentValue"
-	
 	//       @click="selectValue(item)"
-	
 	//       :style="{ cursor: disabled ? 'auto' : 'pointer' }">
 	
-	
 	//       <n3-icon
-	
 	//         :type="classes[item - 1]"
-	
 	//         :class="[{ 'hover': hoverIndex === item }, `${prefixCls}-rate-icon`]"
-	
 	//         :style="getIconStyle(item)">
-	
 	//         <n3-icon
-	
 	//           :type="decimalIconClass"
-	
 	//           v-if="showDecimalIcon(item)"
-	
 	//           :class="`${prefixCls}-rate-decimal`"
-	
 	//           :style="decimalStyle">
-	
 	//         </n3-icon>
-	
 	//       </n3-icon>
 	
-	
 	//     </span>
-	
 	//     <span v-if="showText" :class="`${prefixCls}-rate-text`" :style="{ color: textColor }">{{ text }}</span>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -45727,7 +43228,7 @@
 /* 860 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-rate`\">\r\n    <span\r\n      v-for=\"item in max\"\r\n      :class=\"`${prefixCls}-rate-item`\"\r\n      @mousemove=\"setCurrentValue(item, $event)\"\r\n      @mouseleave=\"resetCurrentValue\"\r\n      @click=\"selectValue(item)\"\r\n      :style=\"{ cursor: disabled ? 'auto' : 'pointer' }\">\r\n      \r\n      <n3-icon\r\n        :type=\"classes[item - 1]\"\r\n        :class=\"[{ 'hover': hoverIndex === item }, `${prefixCls}-rate-icon`]\"\r\n        :style=\"getIconStyle(item)\">\r\n        <n3-icon\r\n          :type=\"decimalIconClass\"\r\n          v-if=\"showDecimalIcon(item)\"\r\n          :class=\"`${prefixCls}-rate-decimal`\"\r\n          :style=\"decimalStyle\">\r\n        </n3-icon>\r\n      </n3-icon>\r\n\r\n    </span>\r\n    <span v-if=\"showText\" :class=\"`${prefixCls}-rate-text`\" :style=\"{ color: textColor }\">{{ text }}</span>\r\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-rate`\">\n    <span\n      v-for=\"item in max\"\n      :class=\"`${prefixCls}-rate-item`\"\n      @mousemove=\"setCurrentValue(item, $event)\"\n      @mouseleave=\"resetCurrentValue\"\n      @click=\"selectValue(item)\"\n      :style=\"{ cursor: disabled ? 'auto' : 'pointer' }\">\n      \n      <n3-icon\n        :type=\"classes[item - 1]\"\n        :class=\"[{ 'hover': hoverIndex === item }, `${prefixCls}-rate-icon`]\"\n        :style=\"getIconStyle(item)\">\n        <n3-icon\n          :type=\"decimalIconClass\"\n          v-if=\"showDecimalIcon(item)\"\n          :class=\"`${prefixCls}-rate-decimal`\"\n          :style=\"decimalStyle\">\n        </n3-icon>\n      </n3-icon>\n\n    </span>\n    <span v-if=\"showText\" :class=\"`${prefixCls}-rate-text`\" :style=\"{ color: textColor }\">{{ text }}</span>\n  </div>";
 
 /***/ },
 /* 861 */
@@ -45742,12 +43243,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue"
+	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue","-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue")
+	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue"], function () {
+	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue")
+	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -45763,170 +43264,88 @@
 	  value: true
 	});
 	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; // <template>
-	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; }; // <template>
 	//   <div :class="[prefixCls + '-upload']" :id="`upload-${uploadId}`">
-	
 	//     <div v-if="type === 'click'">
-	
 	//       <label>
-	
 	//         <input
-	
 	//           type="file"
-	
 	//           :name="name"
-	
 	//           :accept="accept"
-	
 	//           :id="uploadId"
-	
 	//           :multiple="multiple"
-	
 	//           @change="onChange($event)" />
-	
 	//         <slot>
-	
 	//           <n3-button>
-	
 	//             <n3-icon type="cloud-upload"></n3-icon>
-	
 	//             点击上传
-	
 	//           </n3-button>
-	
 	//         </slot>
-	
 	//       </label>
-	
 	//       <div :class="[prefixCls + '-upload-list']" v-if="showList">
-	
 	//         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
-	
 	//           <div :class="[prefixCls + '-upload-item-info']">
-	
 	//             <n3-icon type="file-text-o"
-	
 	//               :class="[prefixCls + '-upload-file-icon']">
-	
 	//             </n3-icon>
-	
 	//             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
-	
 	//             <n3-icon type="times"
-	
 	//               :class="[prefixCls + '-upload-del-info']"
-	
 	//               @click.native="delFile($index)">
-	
 	//             </n3-icon>
-	
 	//           </div>
-	
 	//           <n3-progress style="padding:0px 4px">
-	
 	//             <n3-progressbar
-	
 	//               type="success"
-	
 	//               height='3px'
-	
 	//               :now="progress[$index]"
-	
 	//             ></n3-progressbar>
-	
 	//           </n3-progress>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//     <div v-if="type === 'drag'"
-	
 	//          :class="[prefixCls + '-upload-drag']">
-	
 	//       <div 
-	
 	//         :class="[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]"
-	
 	//         :style="{width:dragWidth,height:dragHeight}">
-	
 	//         <input type="file"
-	
 	//           :name="name"
-	
 	//           :id="uploadId"
-	
 	//           :accept="accept"
-	
 	//           :multiple="multiple"
-	
 	//           @change="onChange($event)" />
-	
 	//         <label :for="uploadId"
-	
 	//             :class="[prefixCls + '-upload-drag-area']">
-	
 	//         <n3-icon type="cloud-upload" :class="[prefixCls + '-upload-drag-icon']"></n3-icon>
-	
 	//         <span v-if="advanceDrag">点击或将文件拖拽到此区域上传</span>
-	
 	//         <span v-if="!advanceDrag">当前环境不支持拖拽上传，请点此上传</span>
-	
 	//       </label>
-	
 	//       </div>
-	
 	//       <div :class="[prefixCls + '-upload-list']" v-if="showList">
-	
 	//         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
-	
 	//           <div :class="[prefixCls + '-upload-item-info']">
-	
 	//             <n3-icon type="file-text-o"
-	
 	//               :class="[prefixCls + '-upload-file-icon']">
-	
 	//             </n3-icon>
-	
 	//             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
-	
 	//             <n3-icon type="times"
-	
 	//               :class="[prefixCls + '-upload-del-info']"
-	
 	//               @click="delFile($index)">
-	
 	//             </n3-icon>
-	
 	//           </div>
-	
 	//           <n3-progress style="padding:0px 4px">
-	
 	//             <n3-progressbar
-	
 	//               type="success"
-	
 	//               height='3px'
-	
 	//               :now="progress[$index]"
-	
 	//             ></n3-progressbar>
-	
 	//           </n3-progress>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	
 	
@@ -46263,7 +43682,7 @@
 /* 863 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"[prefixCls + '-upload']\" :id=\"`upload-${uploadId}`\">\r\n    <div v-if=\"type === 'click'\">\r\n      <label>\r\n        <input\r\n          type=\"file\"\r\n          :name=\"name\"\r\n          :accept=\"accept\"\r\n          :id=\"uploadId\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\" />\r\n        <slot>\r\n          <n3-button>\r\n            <n3-icon type=\"cloud-upload\"></n3-icon>\r\n            点击上传\r\n          </n3-button>\r\n        </slot>\r\n      </label>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click.native=\"delFile($index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[$index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div v-if=\"type === 'drag'\"\r\n         :class=\"[prefixCls + '-upload-drag']\">\r\n      <div \r\n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\r\n        :style=\"{width:dragWidth,height:dragHeight}\">\r\n        <input type=\"file\"\r\n          :name=\"name\"\r\n          :id=\"uploadId\"\r\n          :accept=\"accept\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\" />\r\n        <label :for=\"uploadId\"\r\n            :class=\"[prefixCls + '-upload-drag-area']\">\r\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\r\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\r\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\r\n      </label>\r\n      </div>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click=\"delFile($index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[$index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div :class=\"[prefixCls + '-upload']\" :id=\"`upload-${uploadId}`\">\n    <div v-if=\"type === 'click'\">\n      <label>\n        <input\n          type=\"file\"\n          :name=\"name\"\n          :accept=\"accept\"\n          :id=\"uploadId\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <slot>\n          <n3-button>\n            <n3-icon type=\"cloud-upload\"></n3-icon>\n            点击上传\n          </n3-button>\n        </slot>\n      </label>\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click.native=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n    <div v-if=\"type === 'drag'\"\n         :class=\"[prefixCls + '-upload-drag']\">\n      <div \n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\n        :style=\"{width:dragWidth,height:dragHeight}\">\n        <input type=\"file\"\n          :name=\"name\"\n          :id=\"uploadId\"\n          :accept=\"accept\"\n          :multiple=\"multiple\"\n          @change=\"onChange($event)\" />\n        <label :for=\"uploadId\"\n            :class=\"[prefixCls + '-upload-drag-area']\">\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\n      </label>\n      </div>\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"file in uploadList\">\n          <div :class=\"[prefixCls + '-upload-item-info']\">\n            <n3-icon type=\"file-text-o\"\n              :class=\"[prefixCls + '-upload-file-icon']\">\n            </n3-icon>\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n            <n3-icon type=\"times\"\n              :class=\"[prefixCls + '-upload-del-info']\"\n              @click=\"delFile($index)\">\n            </n3-icon>\n          </div>\n          <n3-progress style=\"padding:0px 4px\">\n            <n3-progressbar\n              type=\"success\"\n              height='3px'\n              :now=\"progress[$index]\"\n            ></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n    </div>\n  </div>";
 
 /***/ },
 /* 864 */
@@ -46352,8 +43771,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/.0.21.0@css-loader/index.js!./../../node_modules/.1.2.2@postcss-loader/index.js!./../../node_modules/.2.2.3@less-loader/index.js!./default.less", function() {
-				var newContent = require("!!./../../node_modules/.0.21.0@css-loader/index.js!./../../node_modules/.1.2.2@postcss-loader/index.js!./../../node_modules/.2.2.3@less-loader/index.js!./default.less");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/less-loader/index.js!./default.less", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/postcss-loader/index.js!./../../node_modules/less-loader/index.js!./default.less");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
