@@ -1,6 +1,6 @@
 <template>
 
-## 气泡框
+### 气泡框
 
 <div class="bs-docs-section" id="气泡框"  >
 <div class="bs-example">

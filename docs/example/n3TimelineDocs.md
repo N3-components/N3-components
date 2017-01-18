@@ -1,6 +1,6 @@
 <template>
 
-## 时间轴
+### 时间轴
 
 <div class="bs-docs-section" id="时间轴" >
 

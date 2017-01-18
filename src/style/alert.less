@@ -1,9 +1,11 @@
 .@{prefix-cls}-alert {
   padding: 15px;
   border: 1px solid transparent;
+  box-shadow: 1px 1px 10px @lightColor;
   border-radius: 4px;
   overflow: hidden;
   z-index: 1200;
+  background-color: @whiteColor;
 
   h4 {
     margin-top: 0;
@@ -24,8 +26,7 @@
 
   &-default {
     color: @alertFontColor;
-    background-color: @alertDefaultColor;
-    border:@alertDefaultBorder;
+    border-left:@alertDefaultBorder;
     .@{prefix-cls}-close {
       color:@whiteColor;
     }
@@ -33,8 +34,7 @@
 
   &-success {
     color: @alertFontColor;
-    background-color: @alertSuccessColor;
-    border:@alertSuccessBorder;
+    border-left:@alertSuccessBorder;
     .@{prefix-cls}-alert-icon{
       color:@alertSuccessIcon;
     }
@@ -42,8 +42,7 @@
 
   &-info {
     color: @alertFontColor;
-    background-color: @alertInfoColor;
-    border:@alertInfoBorder;
+    border-left:@alertInfoBorder;
     .@{prefix-cls}-alert-icon{
       color:@alertInfoIcon;
     }
@@ -52,8 +51,7 @@
 
   &-warning {
     color: @alertFontColor;
-    background-color: @alertWarningColor;
-    border:@alertWarningBorder;
+    border-left:@alertWarningBorder;
     .@{prefix-cls}-alert-icon{
       color:@alertWarningIcon;
     }
@@ -61,8 +59,7 @@
 
   &-danger {
     color: @alertFontColor;
-    background-color: @alertDangerColor;
-    border:@alertDangerBorder;
+    border-left:@alertDangerBorder;
     .@{prefix-cls}-alert-icon{
       color:@alertDangerIcon;
     }

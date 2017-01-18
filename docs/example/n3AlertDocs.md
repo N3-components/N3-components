@@ -1,6 +1,6 @@
 <template>
 
-## 提示消息
+### 提示消息
 
 <div class="bs-docs-section" id="提示消息"  >
 <div class="bs-example" >
@@ -203,7 +203,7 @@ export default {
 | width | `String`例如"700px" |  |  |
 | small | `Boolean` |  | 缩小 |
 | placement | `String`. 如: `top`, `top-right`,`top-left`, `bottom`,`bottom-left`, `bottom-right` |  | 组件位置 |
-| description | `Boolean` | false | 警告提示 |
+| description | `Boolean` | `false` | 警告提示 |
 | message | `String` |  | 在设置description时有效 |
 
 ### Events

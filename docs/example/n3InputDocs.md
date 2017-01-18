@@ -1,6 +1,6 @@
 <template>
 
-## 输入框
+### 输入框
 
 <div class="bs-docs-section" >
 <div class="bs-example">
@@ -17,7 +17,7 @@
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| password          | boolean     |    false        |     密码输入框     |
+| password          | `boolean`     |    `false`        |     密码输入框     |
 
 ### Events
 

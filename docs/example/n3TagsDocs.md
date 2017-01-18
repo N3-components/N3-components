@@ -1,6 +1,6 @@
 <template>
 
-## 标签
+### 标签
 
 <div class="bs-docs-section" id="标签"  >
 

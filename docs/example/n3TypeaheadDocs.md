@@ -1,11 +1,11 @@
 <template>
 
-## 自动补全
+### 自动补全
 
 <div class="bs-docs-section" id="自动补全"  >
 <div class="bs-example">
 
-#### 本地数据
+> 本地数据
 
 <n3-typeahead 
     v-model="value"
@@ -25,7 +25,7 @@
 
 <hr>
 
-#### 异步获取
+> 异步获取
 
 <n3-typeahead 
   async
@@ -48,7 +48,7 @@
 ```
 <hr>
 
-#### 内容模版
+> 内容模版
 
 <n3-typeahead
   async 
@@ -76,14 +76,14 @@
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| data          | Array     |    -        |     本地数组     |
-| limit          | Number     |    8       |     显示的条数     |
-| items          | Array     |    []        |     列表数组，用于异步请求     |
-| async          | Boolean     |    false       |     异步     |
-| render          | Function     |    -       |     渲染函数     |
-| add-format          | Function     |    -       |     获取需要的值     |
-| dropdow-width          | String     |    220px       |     下拉宽度     |
-| dropdown-height          | String     |    300px       |     下拉框最大高度     |
+| data          | `Array`     |    -        |     本地数组     |
+| limit          | `Number`     |    `8`       |     显示的条数     |
+| items          | `Array`     |    `[]`        |     列表数组，用于异步请求     |
+| async          | `Boolean`     |    `false`       |     异步     |
+| render          | `Function`     |    -       |     渲染函数     |
+| add-format          | `Function`     |    -       |     获取需要的值     |
+| dropdow-width          | `String`     |    `220px`       |     下拉宽度     |
+| dropdown-height          | `String`     |    `300px`       |     下拉框最大高度     |
 
 
 ### 事件

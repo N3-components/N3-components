@@ -6,9 +6,9 @@
       v-show="show">
       <div :class="`${prefixCls}-aside-dialog`">
         <div :class="`${prefixCls}-aside-content`">
-          <div :class="`${prefixCls}-aside-header`">
+          <div :class="`${prefixCls}-aside-header`" v-if="header">
             <button type="button" :class="`${prefixCls}-close`" @click='close'><span>&times;</span></button>
-            <h4 :class="`${prefixCls}-aside-title`">{{header}}</h4>
+            <h4 :class="`${prefixCls}-aside-title`">{{title}}</h4>
           </div>
           <div :class="`${prefixCls}-aside-body`">
             <slot></slot>
@@ -31,18 +31,16 @@ export default {
       type: String,
       default: 'right'
     },
-    header: {
+    title: {
       type: String
+    },
+    header: {
+      type: Boolean,
+      default: true
     },
     width: {
       type: String,
       default: '320px'
-    },
-    onShow: {
-      type: Function
-    },
-    onHide: {
-      type: Function
     },
     prefixCls: {
       type: String,

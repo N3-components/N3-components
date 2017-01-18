@@ -1,6 +1,6 @@
 <template>
 
-## 按钮
+### 按钮
 
 <div class="bs-docs-section" id="按钮"  >
 <div class="bs-example">
@@ -62,9 +62,9 @@
 | size | `String` |  | `lg` `sm` `xs` |
 | loading | `Boolean` |  | `加载状态` |
 | disabled | `Boolean` |  | 禁用状态 |
-| active | `Boolean` | false | 激活状态 |
+| active | `Boolean` | `false` | 激活状态 |
 | badge | `String` `Number` |  | 徽标 |
-| block | `Boolean` | false | 是否块级元素 |
+| block | `Boolean` | `false` | 是否块级元素 |
 | type | `String`, 如: `default` `primary` `danger` `info` `warning` `success` | `default` |  |
 
 </div>

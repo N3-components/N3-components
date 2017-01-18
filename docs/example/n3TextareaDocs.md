@@ -14,10 +14,10 @@
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| resize          | boolean     |    false        |     是否支持拖动     |
-| max-length| Number | - |字符数限制 |
-| max-height| String | - |最大高度 |
-| min-height| String | - |最小高度 |
+| resize          | `boolean`     |    `false`        |     是否支持拖动     |
+| max-length| `Number` | - |字符数限制 |
+| max-height| `String` | - |最大高度 |
+| min-height| `String` | - |最小高度 |
 
 ### 事件
 

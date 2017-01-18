@@ -28,26 +28,16 @@
   </nav>
 </n3-affix>
 ```
- <h2>参数</h2>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>参数名</th>
-          <th>类型</th>
-          <th>默认值</th>
-          <th>说明</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>offset</td>
-          <td><code>Number</code></td>
-          <td><code>0</code></td>
-          <td>离屏幕顶部的像素值</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+
+
+
+### 参数
+
+| 参数名 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| offset | `Number` | `0` | 离屏幕顶部的像素值 |
+
+</div>
 </template>
 
 <script>

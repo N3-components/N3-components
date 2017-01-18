@@ -1,6 +1,6 @@
 <template>
 
-## 表单
+### 表单
 
 <div class="bs-docs-section" >
 <div class="bs-example">
@@ -339,23 +339,23 @@
 ### n3-from-item参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| label          | String     |    －        |     表单项说明   |
-| label-col          | Number     |    2       |   表单项说明所占栅格数     |
-| wrap-col         | Number     |    12        |   表单项所占栅格数     |
-| form-col        | Number     |    10       |     表单元素所占栅格数     |
-| need       | Boolean     |    false       |     必填标示红点     |
+| label          | `String`     |    －        |     表单项说明   |
+| label-col          | `Number`     |    `2`       |   表单项说明所占栅格数     |
+| wrap-col         | `Number`     |    `12`        |   表单项所占栅格数     |
+| form-col        | `Number`     |    `10`       |     表单元素所占栅格数     |
+| need       | `Boolean`     |    `false`       |     必填标示红点     |
 
 ### 待验证组件参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| name          | String     |    －        |     标示输入项，与结果内的值对应   |
-| readonly          | Boolean     |    false        |   只读    |
-| disabled          | Boolean     |    false       |    禁止改变值    |
-| width          | String     |    220px        |   宽度    |
-| placeholder          | String     |    －        |  placeholder      |
-| custom－validate          | Function     |     |  自定义校验器     |
-| name           | String     |    －        |        |
-| rules          | Array     |    －        |   验证规则,如 ``` [{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }] ```  |
+| name          | `String`     |    －        |     标示输入项，与结果内的值对应   |
+| readonly          | `Boolean`     |    `false`        |   只读    |
+| disabled          | `Boolean`     |    `false`       |    禁止改变值    |
+| width          | `String`     |    `220px`        |   宽度    |
+| placeholder          | `String`   |    －        |  placeholder      |
+| custom－validate          | Function`     |     |  自定义校验器     |
+| name           | `String`     |    －        |        |
+| rules          | `Array`     |    －        |   验证规则,如 ``` [{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }] ```  |
       
 </div>
 </template>

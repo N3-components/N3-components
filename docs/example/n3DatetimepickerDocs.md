@@ -1,6 +1,6 @@
 <template>
 
-## 日期时间选择器
+### 日期时间选择器
 
 <div class="bs-docs-section"  >
 <div class="bs-example">
@@ -15,8 +15,8 @@
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| width          | String     |    200px        |     输入框宽度     |
-| format          | String     |    yyyy-MM-dd hh:mm:ss       |     日期格式   |
+| width          | `String`     |    `200px`        |     输入框宽度     |
+| format          | `String`     |    `yyyy-MM-dd hh:mm:ss`       |     日期格式   |
 
 ### 事件
 

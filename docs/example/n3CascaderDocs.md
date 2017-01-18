@@ -1,6 +1,6 @@
 <template>
 
-## 级联选择
+### 级联选择
 
 <div class="bs-docs-section" >
   <div class="bs-example">
@@ -42,11 +42,11 @@
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | options          | Array     |    -        |       |
-| width | String| 200px |宽度 |
-| disabled | Boolean| false | 禁用 |
-| placeholder | String| - | |
-| display-render |Function | - | |
-| select-change  | Boolean | - | 选择值就改变 |
+| width | `String`| `200px` |宽度 |
+| disabled | `Boolean`| `false` | 禁用 |
+| placeholder | `String`| - | |
+| display-render |`Function` | - | |
+| select-change  | `Boolean` | - | 选择值就改变 |
 
 
 ### Events

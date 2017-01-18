@@ -1,6 +1,6 @@
 <template>
 
-## 多选框
+### 多选框
 
 <div class="bs-docs-section" >
 <div class="bs-example">
@@ -44,9 +44,9 @@
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| options          | Array     |    -        |     选项     |
-| type          | String     |    radio       |     `radio,button` 使用options时起作用     |
-| options          | Array     |    -        |     选项     |
+| options          | `Array`     |    -        |     选项     |
+| type          | `String`     |    `radio`       |     `radio,button` 使用options时起作用     |
+| options          | `Array`     |    -        |     选项     |
 
 ### Group Events
 
@@ -58,8 +58,8 @@
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| disabled          | Boolean     |    false       |     禁用     |
-| checked          | Boolean     |    false       |   选中     |
+| disabled          | `Boolean`     |    false       |     禁用     |
+| checked          | `Boolean`     |    false       |   选中     |
 
 ### Checkbox Events
 

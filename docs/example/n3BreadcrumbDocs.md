@@ -1,6 +1,6 @@
 <template>
 
-## 面包屑
+### 面包屑
 
 <div class="bs-docs-section" id="面包屑"  >
 <div class="bs-example">

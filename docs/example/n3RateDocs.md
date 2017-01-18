@@ -1,6 +1,6 @@
 <template>
 
-## 评分
+### 评分
 
 <div class="bs-docs-section" id="评分">
 <div class="bs-example">

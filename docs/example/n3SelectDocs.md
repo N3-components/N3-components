@@ -1,10 +1,12 @@
 <template>
 
-## 选择框
+### 选择框
 
 <div class="bs-docs-section" id="选择框"  >
 <div class="bs-example">
-  <h4>单选</h4>
+
+> 单选
+
   <p>
     <pre>
 Select data : {{single}}
@@ -18,7 +20,9 @@ Select data : {{single}}
     <n3-option value="Grape">Grape</n3-option>
   </n3-select>
   <hr>
-  <h4>多选</h4>
+
+> 多选
+  
   <p>
     <pre>
 Select data : {{multiple.join(', ')}}
@@ -32,7 +36,9 @@ Select data : {{multiple.join(', ')}}
     <n3-option value="Grape">Grape</n3-option>
   </n3-select>
   <hr>
-  <h4>多选限制</h4>
+
+> 多选限制
+
   <p>
     <pre>
 Select data : {{multipleLimit.join(', ')}}
@@ -46,7 +52,9 @@ Select data : {{multipleLimit.join(', ')}}
     <n3-option value="Grape">Grape</n3-option>
   </n3-select>
   <hr>
-  <h4>自定义内容</h4>
+
+> 自定义内容
+
   <p>
     <pre>
 Select data : {{custom.join(', ')}}
@@ -59,7 +67,9 @@ Select data : {{custom.join(', ')}}
     <n3-option value="Inbox"><span class="n3-fa n3-fa-inbox"></span> Inbox</n3-option>
   </n3-select>
   <hr />
-  <h4>传递数组，支持搜索</h4>
+
+> 传递数组，支持搜索
+
   <p>
     支持只传递接json数组，可以支持搜索
     <pre>
