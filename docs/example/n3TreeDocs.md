@@ -1,6 +1,6 @@
 <template>
 
-## 树形视图
+### 树形视图
 
 <div class="bs-docs-section" id="树形视图">
 

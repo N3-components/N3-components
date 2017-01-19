@@ -1,6 +1,6 @@
 <template>
 
-## 单选框
+### 单选框
 
 <div class="bs-docs-section" >
   <div class="bs-example">
@@ -40,9 +40,9 @@
 ### group 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| options          | Array     |    -        |     选项     |
-| type          | String     |    radio       |     <code>radio,button</code> 使用options时起作用     |
-| options          | Array     |    -        |     选项     |
+| options          | `Array`     |    -        |     选项     |
+| type          | `String`     |    `radio`       |     `radio`,`button` 使用`options`时起作用     |
+| options          | `Array`     |    -        |     选项     |
 
 ### 事件
 
@@ -53,8 +53,8 @@
 ### radio 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| disabled          | Boolean     |    false       |     禁用     |
-| checked          | Boolean     |    false       |   选中     |
+| disabled          | `Boolean`     |    `false`       |     禁用     |
+| checked          | `Boolean`     |    `false`       |   选中     |
 
 ### 事件
 

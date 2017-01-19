@@ -1,6 +1,6 @@
 <template>
 
-## 开关
+### 开关
 
 <div class="bs-docs-section" id="开关"  >
 <div class="bs-example">
@@ -25,10 +25,10 @@
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| disabled          | boolean     |    false        |     禁用     |
-| ontext          | String     |    ON        |     开文案     |
-| offtext          | String     |    OFF        |     关文案     |
-| disabled          | boolean     |    false        |     禁用     |
+| disabled          | `boolean`     |    `false`        |     禁用     |
+| ontext          | `String`     |    `ON`        |     开文案     |
+| offtext          | `String`     |    `OFF`        |     关文案     |
+| disabled          | `boolean`     |    `false`        |     禁用     |
 
 
 ### Events

@@ -66,10 +66,8 @@ export default {
       klass[prefixCls + '-switch-wrapper'] = true
       klass[prefixCls + '-switch-on'] = value
       klass[prefixCls + '-switch-off'] = !value
-      klass[prefixCls + '-switch-id-switch-check-on'] = value && disabled
-      klass[prefixCls + '-switch-id-switch-check-off'] = !(value && disabled)
       klass[prefixCls + '-switch-animate'] = true
-      klass[prefixCls + '-switch-id-switch-check-disabled'] = disabled
+      klass[prefixCls + '-switch-disabled'] = disabled
 
       return klass
     }

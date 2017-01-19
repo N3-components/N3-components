@@ -1,6 +1,6 @@
 <template>
 
-## 数据表格
+### 数据表格
 
 <div class="bs-docs-section" id="数据表格"  >
 <div class="bs-example">
@@ -116,19 +116,19 @@ function(pagination,query,sort,filter){
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| async  | Boolean | false | 异步加载，配合change事件来请求服务端数据    |
-| merge-rule | Object | - | 合并规则    |
-| columns  | Array | - | 头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等     |
-| selection| Object| - | <code style="color:red">使用getCheckboxProps来初始化状态</code>|
-| sort-column |Object|-|默认全局排序字段|
-| source   | Array  |  -  |表格数组 |
-| page  |  Boolean |  true |是否分页 | 
-| search |  Boolean | true  |是否支持搜索 | 
-| filter |  Boolean | true  | 是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器|
-| filter-list | Array |  - |自定义过滤器|
-| select-col |  Boolean |  true |  是否支持选择显示列  |      
-| pagination  |  Object |  - |  设置分页|     
-| loading |  Boolean |  false |  设置表格的加载中状态 |      
+| async  | `Boolean` | `false` | 异步加载，配合change事件来请求服务端数据    |
+| merge-rule | `Object` | - | 合并规则    |
+| columns  | `Array` | - | 头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等     |
+| selection| `Object`| - | <code style="color:red">使用getCheckboxProps来初始化状态</code>|
+| sort-column |`Object`|-|默认全局排序字段|
+| source   | `Array`  |  -  |表格数组 |
+| page  |  `Boolean` |  `true` |是否分页 | 
+| search |  `Boolean` | `true`  |是否支持搜索 | 
+| filter |  `Boolean` | `true`  | 是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器|
+| filter-list | `Array` |  - |自定义过滤器|
+| select-col |  `Boolean` |  `true` |  是否支持选择显示列  |      
+| pagination  |  `Object` |  - |  设置分页|     
+| loading |  `Boolean` |  `false` |  设置表格的加载中状态 |      
         
 ### Events
 

@@ -1,6 +1,6 @@
 <template>
 
-## 滑块
+### 滑块
 
 <div class="bs-docs-section" id="滑块"  >
 <div class="bs-example">
@@ -35,16 +35,16 @@ export default {
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| min          | Number     |    0        |     最小值    |
-| max          | Number     |    0        |     最大值    |
-| step          | Number     |    1       |     单步增量    |
-| orientation          | String     |    horizontal      |     horizontal(水平) vertical(垂直)    |
-| range          | Boolean     |    false       |     是否范围选择    |
-| tooltip          | String     |    show       |     tooltip显示参数 'show' 'hide' 'always'    |
-| disabled          | Boolean     |    false       |     是否禁用    |
-| formatter          | Function     |    -       |     格式化tooltip显示内容    |
-| width          | String     |    220px      |     水平显示的宽度    |
-| height          | String     |    220px      |     水平显示的宽度    |
+| min          | `Number`    |    `0`        |     最小值    |
+| max          | `Number`     |    `0`        |     最大值    |
+| step          | `Number`     |    `1`       |     单步增量    |
+| orientation          | String`     |    `horizontal`      |     `horizontal`(水平) `vertical`(垂直)    |
+| range          | `Boolean`     |    `false`       |     是否范围选择    |
+| tooltip          | `String`     |    `show`      |     tooltip显示参数 'show' 'hide' 'always'    |
+| disabled          | `Boolean`     |    `false`       |     是否禁用    |
+| formatter          | `Function`     |    -       |     格式化tooltip显示内容    |
+| width          | `String`     |   `220px`      |     水平显示的宽度    |
+| height          | `String`     |    `220px`      |     水平显示的宽度    |
 
 ### Events
 

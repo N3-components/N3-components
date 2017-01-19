@@ -1,6 +1,6 @@
 <template>
 
-## 加载提示
+### 加载提示
 
 <div class="bs-docs-section" id="加载提示"  >
 <div class="bs-example">

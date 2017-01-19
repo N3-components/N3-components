@@ -79,7 +79,7 @@ export default {
 | 参数名 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | one-at-time | `Boolean` | `false` | 控制当一个面板被打开时，其他面板是否关闭 |
-| effect | `String` | collapse | 切换动画 |
+| effect | `String` | `collapse` | 切换动画 |
 
 ### According Events
 

@@ -1,6 +1,6 @@
 <template>
 
-## 布局
+### 布局
 
 <div class="bs-docs-section" >
 <div class="bs-example">
@@ -109,16 +109,16 @@
 
 | 参数          | 类型            |    默认值          | 说明   |
 |-------------  |---------------- |----------------  |-------- |
-| fluid          | Boolean     |    false           |    是否流式布局    |
+| fluid          | `Boolean`     |    `false `          |    是否流式布局    |
 
 
 ### n3-column参数
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| col          | Number     |    -         |     占的列数     |
-| mode          | String     |    md          |     布局模式 xs(手机) sm(平板) md(桌面) lg(大屏幕)    |
-| offset          | Number     |    -          |     偏移值    |
+| col          | `Number`    |    -         |     占的列数     |
+| mode          | `String`     |    `md`          |     布局模式 `xs`(手机) `sm`(平板) `md`(桌面) `lg`(大屏幕)    |
+| offset          | `Number`     |    -          |     偏移值    |
 
 </div>
 </template>
@@ -127,9 +127,11 @@
   .context{
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #eee;
-    border: 1px solid #ddd;
+    background-color: rgb(101, 212, 204);
+    border: 1px solid #fff;
     text-align: center;
-    font-size:14
+    font-size: 14;
+    color: #fff;
+    font-weight: bold;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
 
-## 步骤条
+### 步骤条
 
 <div class="bs-docs-section" id="步骤条" >
 

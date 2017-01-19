@@ -1,6 +1,6 @@
 <template>
 
-## 日期选择器
+### 日期选择器
 
 <div class="bs-docs-section" >
 <div class="bs-example">
@@ -36,8 +36,8 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| width          | String     |    200px        |     输入框宽度     |
-| format          | String     |    yyyy-MM-dd        |     日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.     |
+| width          | `String`     |    `200px`        |     输入框宽度     |
+| format          | `String`     |    `yyyy-MM-dd`        |     日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.     |
 
 ### 事件
 

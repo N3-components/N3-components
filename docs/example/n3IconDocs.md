@@ -1,6 +1,6 @@
 <template>
 
-## 图标
+### 图标
 
 <div class="bs-docs-section" id="图标"  >
 <div class="bs-example">

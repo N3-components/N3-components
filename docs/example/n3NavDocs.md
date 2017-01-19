@@ -1,6 +1,6 @@
 <template>
 
-## 导航
+### 导航
 
 <div class="bs-docs-section"  >
 <div class="bs-example">
@@ -111,24 +111,24 @@
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| type          | String     |    horizontal        |     水平,垂直     |
-| theme          | String     |    default        |     颜色   <code>default</code><code>dark</code>  |
+| type          | `String`     |    `horizontal`        |     水平,垂直     |
+| theme          | `String`     |    `default`       |     颜色   <code>default</code><code>dark</code>  |
 
 
 ### n3-sub-nav参数
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| trigger          | String     |    click        |     展开方式   <code>click</code><code>hover</code>  |
-| show          | Boolean     |    false        |    是否展开  |
+| trigger          | `String`     |    `click`        |     展开方式   <code>click</code><code>hover</code>  |
+| show          | `Boolean`     |    `false`        |    是否展开  |
 
 
 ### n3-nav-item参数
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| active          | Boolean     |    false        |     是否激活 |
-| disabled          | Boolean     |    false        |    是否不可用  |
+| active          | `Boolean`     |    `false`        |     是否激活 |
+| disabled          | `Boolean`     |    `false`        |    是否不可用  |
 
 </div>
 </template>

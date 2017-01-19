@@ -1,6 +1,6 @@
 <template>
 
-## 浮出提示
+### 浮出提示
 
 <div class="bs-docs-section" id="浮出提示"  >
 <div class="bs-example">

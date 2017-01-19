@@ -1,6 +1,6 @@
 <template>
 
-## 分页
+### 分页
 
 <div class="bs-docs-section" id="分页"  >
 <div class="bs-example">

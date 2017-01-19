@@ -1,6 +1,6 @@
 <template>
 
-## 弹出框
+### 弹出框
 
 <div class="bs-docs-section" id="弹出框"  >
 <div class="bs-example">

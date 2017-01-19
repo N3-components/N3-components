@@ -1,6 +1,6 @@
 <template>
 
-## 文件上传
+### 文件上传
 
 <div class="bs-docs-section" id="文件上传"  >
 <div class="bs-example">

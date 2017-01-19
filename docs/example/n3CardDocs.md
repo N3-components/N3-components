@@ -1,6 +1,6 @@
 <template>
 
-## 卡片
+### 卡片
 
 <div class="bs-docs-section" id="卡片"  >
 

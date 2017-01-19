@@ -1,6 +1,6 @@
 <template>
   
-## 幻灯片
+### 幻灯片
 
 <div class="bs-docs-section" id="幻灯片"  >
 <div class="bs-example">

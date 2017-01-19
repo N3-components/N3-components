@@ -5,7 +5,7 @@
 <div class="bs-docs-section" >
 <div class="bs-example">
 
-#### 使用list
+> 使用list
 
 <n3-tabs @change="change" :list="list"></n3-tabs>
 
@@ -31,7 +31,7 @@ data () {
 
 ---
 
-#### 使用tab
+> 使用tab
 
 <n3-tabs @change="change" :value="1">
   <n3-tab header="one" badge="1">
@@ -69,7 +69,7 @@ data () {
 
 ---
 
-#### 胶囊样式 pills
+> 胶囊样式 pills
 
 <n3-tabs pills>
   <n3-tab header="one">
@@ -80,7 +80,7 @@ data () {
 
 ---
 
-#### 垂直样式 stacked
+> 垂直样式 stacked
 
 <n3-tabs pills stacked style="max-width: 300px;" @change="change">
   <n3-tab header="one" >
@@ -91,7 +91,7 @@ data () {
 
 ---
 
-#### 垂直样式 stacked
+> 垂直样式 stacked
 
 <n3-tabs primary pills stacked style="max-width: 300px;">
   <n3-tab header="one">
@@ -102,7 +102,7 @@ data () {
 
 ---
 
-#### 自适应 justified
+> 自适应 justified
 
 <n3-tabs pills justified>
   <n3-tab header="one">

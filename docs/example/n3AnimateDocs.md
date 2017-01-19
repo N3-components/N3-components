@@ -1,6 +1,6 @@
 <template>
 
-## 动画
+### 动画
 
 <div class="bs-docs-section">
 <div class="bs-example" >

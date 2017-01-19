@@ -1,6 +1,6 @@
 <template>
 
-## 数字输入框
+### 数字输入框
 
 <div class="bs-docs-section">
 <div class="bs-example">
@@ -15,9 +15,9 @@
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| max          | Number     |    -        |     最大值     |
-| min          | Number     |    -        |     最小值     |
-| step          | Number     |    1        |     增减量值     |
+| max          | `Number`     |    -        |     最大值     |
+| min          | `Number`     |    -        |     最小值     |
+| step          | `Number`     |    `1`       |     增减量值     |
 
 ### 事件
 
