@@ -12,7 +12,7 @@
         <span>&times;</span>
       </button>
 
-      <div v-if="description" :class="`${prefixCls}prefixCls}}-alert-content`">
+      <div v-if="description" :class="`${prefixCls}-alert-content`">
         <h4>{{message}}</h4>
         <p><slot></slot></p>
       </div>
