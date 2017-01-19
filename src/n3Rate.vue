@@ -7,7 +7,7 @@
       @mouseleave="resetCurrentValue"
       @click="selectValue(item)"
       :style="{ cursor: disabled ? 'auto' : 'pointer' }">
-      
+
       <n3-icon
         :type="classes[item - 1]"
         :class="[{ 'hover': hoverIndex === item }, `${prefixCls}-rate-icon`]"
@@ -19,7 +19,6 @@
           :style="decimalStyle">
         </n3-icon>
       </n3-icon>
-
     </span>
     <span v-if="showText" :class="`${prefixCls}-rate-text`" :style="{ color: textColor }">{{ text }}</span>
   </div>
