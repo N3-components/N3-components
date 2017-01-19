@@ -111,6 +111,7 @@ export default {
           element.removeClass(body, this.prefixCls + '-modal-open')
           element.removeClass(body, this.prefixCls + '-modal-hide-y')
           body.style.paddingRight = '0'
+          this.$emit('closed')
         }, 300)
       }
     }

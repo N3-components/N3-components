@@ -13844,10 +13844,10 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3AffixDocs-11.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3AffixDocs-7.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-bc33b27c"
+	__vue_options__._scopeId = "data-v-16115805"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -13856,12 +13856,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-bc33b27c", __vue_options__)
+	    hotAPI.createRecord("data-v-16115805", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-bc33b27c", __vue_options__)
+	    hotAPI.reload("data-v-16115805", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3AffixDocs-11.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3AffixDocs-7.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -13882,8 +13882,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-bc33b27c&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AffixDocs-11.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-bc33b27c&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AffixDocs-11.vue");
+			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-16115805&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AffixDocs-7.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-16115805&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AffixDocs-7.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -13901,7 +13901,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n.sidebar[data-v-bc33b27c]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][data-v-bc33b27c]{\n  position: static;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3AffixDocs-11.vue?9762867e"],"names":[],"mappings":";AAmDA;EACA,uBAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;CACA","file":"n3AffixDocs-11.vue","sourcesContent":["<template><section><template>\n<h3>固钉</h3>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <h3>\n      <n3-affix :offset=\"0\">\n        <nav class=\"sidebar\">\n          <ul>\n            <li>...</li>\n            <li>...</li>\n            <li>...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-affix</span> <span class=\"hljs-attr\">:offset</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">nav</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">nav</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.sidebar{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-']{\n  position: static;\n}\n</style>\n<script>\nexport default {\n\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.sidebar[data-v-16115805]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][data-v-16115805]{\n  position: static;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3AffixDocs-7.vue?061176be"],"names":[],"mappings":";AAmDA;EACA,uBAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;CACA","file":"n3AffixDocs-7.vue","sourcesContent":["<template><section><template>\n<h3>固钉</h3>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <h3>\n      <n3-affix :offset=\"0\">\n        <nav class=\"sidebar\">\n          <ul>\n            <li>...</li>\n            <li>...</li>\n            <li>...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-affix</span> <span class=\"hljs-attr\">:offset</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">nav</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">nav</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.sidebar{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-']{\n  position: static;\n}\n</style>\n<script>\nexport default {\n\n}\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -14064,7 +14064,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-bc33b27c", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-16115805", module.exports)
 	  }
 	}
 
@@ -14520,10 +14520,10 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3CarouselDocs-7.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3CarouselDocs-9.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-7ef47a36"
+	__vue_options__._scopeId = "data-v-7ebc1c32"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -14532,12 +14532,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-7ef47a36", __vue_options__)
+	    hotAPI.createRecord("data-v-7ebc1c32", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-7ef47a36", __vue_options__)
+	    hotAPI.reload("data-v-7ebc1c32", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3CarouselDocs-7.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3CarouselDocs-9.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -14558,8 +14558,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-7ef47a36&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3CarouselDocs-7.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-7ef47a36&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3CarouselDocs-7.vue");
+			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-7ebc1c32&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3CarouselDocs-9.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-7ebc1c32&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3CarouselDocs-9.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -14577,7 +14577,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n.slide-img[data-v-7ef47a36]{\n  height:400px!important;\n}\n.carousel-caption[data-v-7ef47a36] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n.carousel-caption[data-v-7ef47a36] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n}\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3CarouselDocs-7.vue?69779f26"],"names":[],"mappings":";AAuFA;EACA,uBAAA;CACA;AACA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,UAAA;EACA,YAAA;EACA,kBAAA;EACA,qBAAA;EACA,YAAA;EACA,mBAAA;EACA,yCAAA;CACA;AACA;AACA;IACA,WAAA;IACA,UAAA;IACA,qBAAA;CACA;CACA","file":"n3CarouselDocs-7.vue","sourcesContent":["<template><section><template>\n<h3>幻灯片</h3>\n<div class=\"bs-docs-section\" id=\"幻灯片\">\n<div class=\"bs-example\">\n  <n3-carousel>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #1</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #2</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #3</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>indicators</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示控制点</td>\n</tr>\n<tr>\n<td>controls</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示箭头</td>\n</tr>\n<tr>\n<td>interval</td>\n<td><code>Number</code></td>\n<td><code>5000</code></td>\n<td>自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section></template>\n<style scoped>\n.slide-img{\n  height:400px!important;\n}\n.carousel-caption {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.slide-img[data-v-7ebc1c32]{\n  height:400px!important;\n}\n.carousel-caption[data-v-7ebc1c32] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n.carousel-caption[data-v-7ebc1c32] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n}\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3CarouselDocs-9.vue?313569a8"],"names":[],"mappings":";AAuFA;EACA,uBAAA;CACA;AACA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,UAAA;EACA,YAAA;EACA,kBAAA;EACA,qBAAA;EACA,YAAA;EACA,mBAAA;EACA,yCAAA;CACA;AACA;AACA;IACA,WAAA;IACA,UAAA;IACA,qBAAA;CACA;CACA","file":"n3CarouselDocs-9.vue","sourcesContent":["<template><section><template>\n<h3>幻灯片</h3>\n<div class=\"bs-docs-section\" id=\"幻灯片\">\n<div class=\"bs-example\">\n  <n3-carousel>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #1</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #2</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #3</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>indicators</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示控制点</td>\n</tr>\n<tr>\n<td>controls</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示箭头</td>\n</tr>\n<tr>\n<td>interval</td>\n<td><code>Number</code></td>\n<td><code>5000</code></td>\n<td>自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section></template>\n<style scoped>\n.slide-img{\n  height:400px!important;\n}\n.carousel-caption {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -14781,7 +14781,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7ef47a36", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7ebc1c32", module.exports)
 	  }
 	}
 
@@ -14811,7 +14811,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3ButtonsDocs-9.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3ButtonsDocs-10.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -14822,12 +14822,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-d3781510", __vue_options__)
+	    hotAPI.createRecord("data-v-248f6ef0", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-d3781510", __vue_options__)
+	    hotAPI.reload("data-v-248f6ef0", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3ButtonsDocs-9.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3ButtonsDocs-10.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -15121,7 +15121,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-d3781510", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-248f6ef0", module.exports)
 	  }
 	}
 
@@ -15154,7 +15154,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3ToastDocs-10.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3ToastDocs-11.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -15165,12 +15165,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-5164fe8a", __vue_options__)
+	    hotAPI.createRecord("data-v-5173160b", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-5164fe8a", __vue_options__)
+	    hotAPI.reload("data-v-5173160b", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3ToastDocs-10.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3ToastDocs-11.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -15323,7 +15323,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5164fe8a", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5173160b", module.exports)
 	  }
 	}
 
@@ -16380,7 +16380,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3ModalDocs-18.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3ModalDocs-16.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -16391,178 +16391,27 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-6ca33368", __vue_options__)
+	    hotAPI.createRecord("data-v-6cdb916c", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-6ca33368", __vue_options__)
+	    hotAPI.reload("data-v-6cdb916c", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3ModalDocs-18.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3ModalDocs-16.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
 
 /***/ },
 /* 441 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
 	
+	var _Modal = __webpack_require__(442);
 	
 	exports.default = {
 	  data: function data() {
@@ -16585,14 +16434,317 @@
 	    show: function show() {
 	      console.log('show');
 	    },
-	    confirm: function confirm() {
-	      console.log('confirm');
+	    showConfirm: function showConfirm() {
+	      (0, _Modal.confirm)({
+	        title: 'Confirm Modal',
+	        message: 'What\'s in a name? That which we call a rose\nBy any other name would smell as sweet.',
+	        onShow: function onShow() {
+	          console.log('show');
+	        },
+	        onHide: function onHide() {
+	          console.log('hide');
+	        },
+	        onConfirm: function onConfirm() {
+	          console.log('confirm');
+	        }
+	      });
+	    },
+	    showAlert: function showAlert() {
+	      (0, _Modal.alert)({
+	        title: 'Alert Modal',
+	        message: 'What\'s in a name? That which we call a rose\nBy any other name would smell as sweet.',
+	        onShow: function onShow() {
+	          console.log('show');
+	        },
+	        onHide: function onHide() {
+	          console.log('hide');
+	        }
+	      });
 	    }
 	  }
+	}; //
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+/***/ },
+/* 442 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.alert = exports.confirm = undefined;
+	
+	var _vue = __webpack_require__(443);
+	
+	var _vue2 = _interopRequireDefault(_vue);
+	
+	var _n3Modal = __webpack_require__(444);
+	
+	var _n3Modal2 = _interopRequireDefault(_n3Modal);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var $body = document.querySelector('body');
+	
+	var createNode = function createNode() {
+	  var $node = document.createElement('div');
+	  $body.appendChild($node);
+	  return $node;
+	};
+	
+	var removeNode = function removeNode($node) {
+	  $body.removeChild($node);
+	};
+	
+	var confirm = exports.confirm = function confirm(options) {
+	  var title = options.title,
+	      message = options.message,
+	      effect = options.effect,
+	      onConfirm = options.onConfirm,
+	      onHide = options.onHide,
+	      onShow = options.onShow;
+	
+	  var confirm = new _vue2.default({
+	    el: createNode(),
+	    data: function data() {
+	      return {
+	        show: false
+	      };
+	    },
+	
+	    components: {
+	      Modal: _n3Modal2.default
+	    },
+	    template: '<Modal ref="modal" title="' + title + '"\n      effect="' + (effect || 'fade') + '"\n      :backdrop="false"\n      @confirm="handleConfirm"\n      @hide="handleHide"\n      @show="handleShow"\n      @closed="destroy">\n      <div slot="header" v-if="' + !title + '"></div>\n      <div slot="body">\n        ' + options.message + '\n      </div>\n    </Modal>',
+	    mounted: function mounted() {
+	      var _this = this;
+	
+	      this.$nextTick(function () {
+	        _this.$refs.modal.open();
+	      });
+	    },
+	    destroyed: function destroyed() {
+	      removeNode(this.$el);
+	    },
+	
+	    methods: {
+	      handleShow: function handleShow() {
+	        onShow();
+	      },
+	      handleConfirm: function handleConfirm() {
+	        onConfirm();
+	        this.$refs.modal.close();
+	      },
+	      handleHide: function handleHide() {
+	        onHide();
+	      },
+	      destroy: function destroy() {
+	        this.$destroy();
+	      }
+	    }
+	  });
+	};
+	
+	var alert = exports.alert = function alert(options) {
+	  var title = options.title,
+	      message = options.message,
+	      effect = options.effect,
+	      onConfirm = options.onConfirm,
+	      onHide = options.onHide,
+	      onShow = options.onShow;
+	
+	  var alert = new _vue2.default({
+	    el: createNode(),
+	    data: function data() {
+	      return {
+	        show: false
+	      };
+	    },
+	
+	    components: {
+	      Modal: _n3Modal2.default
+	    },
+	    template: '<Modal title="' + title + '"\n      effect="' + (effect || 'fade') + '"\n      ref="modal"\n      :backdrop="false"\n      @hide="handleHide"\n      @show="handleShow"\n      @closed="destroy">\n      <div slot="body">\n        ' + message + '\n      </div>\n      <div slot="header" v-if="' + !title + '"></div>\n      <div slot="footer" class="n3-modal-footer">\n        <n3-button @click.native="$refs.modal.close">\u786E\u5B9A</n3-button>\n      </div>\n    </Modal>',
+	    mounted: function mounted() {
+	      var _this2 = this;
+	
+	      this.$nextTick(function () {
+	        _this2.$refs.modal.open();
+	      });
+	    },
+	    destroyed: function destroyed() {
+	      removeNode(this.$el);
+	    },
+	
+	    methods: {
+	      handleShow: function handleShow() {
+	        onShow();
+	      },
+	      handleHide: function handleHide() {
+	        onHide();
+	      },
+	      destroy: function destroy() {
+	        this.$destroy();
+	      }
+	    }
+	  });
 	};
 
 /***/ },
-/* 442 */,
 /* 443 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -25352,6 +25504,7 @@
 	          _element2.default.removeClass(body, _this.prefixCls + '-modal-open');
 	          _element2.default.removeClass(body, _this.prefixCls + '-modal-hide-y');
 	          body.style.paddingRight = '0';
+	          _this.$emit('closed');
 	        }, 300);
 	      }
 	    }
@@ -25682,7 +25835,19 @@
 	      slot: "body"
 	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")]), _vm._v(" "), _c('div', {
 	      slot: "footer"
-	    })])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("用法说明")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('p', [_vm._v("但是如果你需要自己定制弹出框内容，你可以实现")]), _vm._v(" "), _vm._m(4)])]
+	    })]), _vm._v(" "), _c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.showConfirm($event)
+	        }
+	      }
+	    }, [_vm._v("Show confirm")]), _vm._v(" "), _c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.showAlert($event)
+	        }
+	      }
+	    }, [_vm._v("Show alert")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("用法说明")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('p', [_vm._v("但是如果你需要自己定制弹出框内容，你可以实现")]), _vm._v(" "), _vm._m(4)])]
 	  ], 2)
 	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('pre', [_c('code', {
@@ -25959,7 +26124,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6ca33368", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6cdb916c", module.exports)
 	  }
 	}
 
@@ -25992,7 +26157,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3InputDocs-16.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3InputDocs-17.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -26003,12 +26168,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-5f9e760d", __vue_options__)
+	    hotAPI.createRecord("data-v-5fac8d8e", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-5f9e760d", __vue_options__)
+	    hotAPI.reload("data-v-5fac8d8e", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3InputDocs-16.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3InputDocs-17.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -26170,7 +26335,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5f9e760d", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5fac8d8e", module.exports)
 	  }
 	}
 
@@ -26203,7 +26368,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3InputNumberDocs-17.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3InputNumberDocs-18.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -26214,12 +26379,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-9b0fa7f6", __vue_options__)
+	    hotAPI.createRecord("data-v-9af378f4", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-9b0fa7f6", __vue_options__)
+	    hotAPI.reload("data-v-9af378f4", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3InputNumberDocs-17.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3InputNumberDocs-18.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -26369,7 +26534,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-9b0fa7f6", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-9af378f4", module.exports)
 	  }
 	}
 
@@ -26402,7 +26567,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TextareaDocs-20.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TextareaDocs-19.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -26413,12 +26578,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-126e36e6", __vue_options__)
+	    hotAPI.createRecord("data-v-113831d0", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-126e36e6", __vue_options__)
+	    hotAPI.reload("data-v-113831d0", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3TextareaDocs-20.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3TextareaDocs-19.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -26574,7 +26739,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-126e36e6", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-113831d0", module.exports)
 	  }
 	}
 
@@ -26607,7 +26772,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3NavDocs-19.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3NavDocs-20.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -26618,12 +26783,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-b1f698d2", __vue_options__)
+	    hotAPI.createRecord("data-v-af8a8ea6", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-b1f698d2", __vue_options__)
+	    hotAPI.reload("data-v-af8a8ea6", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3NavDocs-19.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3NavDocs-20.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -27181,7 +27346,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b1f698d2", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-af8a8ea6", module.exports)
 	  }
 	}
 
@@ -31682,7 +31847,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TypeaheadDocs-33.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TypeaheadDocs-28.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -31693,12 +31858,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-72df79ab", __vue_options__)
+	    hotAPI.createRecord("data-v-71711691", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-72df79ab", __vue_options__)
+	    hotAPI.reload("data-v-71711691", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3TypeaheadDocs-33.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3TypeaheadDocs-28.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -32064,7 +32229,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-72df79ab", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-71711691", module.exports)
 	  }
 	}
 
@@ -32094,7 +32259,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3StepDocs-28.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3StepDocs-29.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -32105,12 +32270,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-214c7fc8", __vue_options__)
+	    hotAPI.createRecord("data-v-213050c6", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-214c7fc8", __vue_options__)
+	    hotAPI.reload("data-v-213050c6", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3StepDocs-28.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3StepDocs-29.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -32187,7 +32352,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-214c7fc8", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-213050c6", module.exports)
 	  }
 	}
 
@@ -32220,7 +32385,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3SliderDocs-29.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3SliderDocs-30.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -32231,12 +32396,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-b4d83f30", __vue_options__)
+	    hotAPI.createRecord("data-v-b26c3504", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-b4d83f30", __vue_options__)
+	    hotAPI.reload("data-v-b26c3504", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3SliderDocs-29.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3SliderDocs-30.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -32515,7 +32680,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b4d83f30", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b26c3504", module.exports)
 	  }
 	}
 
@@ -32737,7 +32902,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3PageDocs-30.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3PageDocs-32.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -32748,12 +32913,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-b00ccde0", __vue_options__)
+	    hotAPI.createRecord("data-v-afd46fdc", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-b00ccde0", __vue_options__)
+	    hotAPI.reload("data-v-afd46fdc", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3PageDocs-30.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3PageDocs-32.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -32975,7 +33140,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b00ccde0", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-afd46fdc", module.exports)
 	  }
 	}
 
@@ -33008,7 +33173,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3DataTableDocs-32.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3DataTableDocs-33.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -33019,12 +33184,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-38ac468d", __vue_options__)
+	    hotAPI.createRecord("data-v-38ba5e0e", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-38ac468d", __vue_options__)
+	    hotAPI.reload("data-v-38ba5e0e", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3DataTableDocs-32.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3DataTableDocs-33.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -33621,7 +33786,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-38ac468d", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-38ba5e0e", module.exports)
 	  }
 	}
 
@@ -37300,7 +37465,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3RadioDocs-43.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3RadioDocs-41.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -37311,12 +37476,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-50e5b6d4", __vue_options__)
+	    hotAPI.createRecord("data-v-511e14d8", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-50e5b6d4", __vue_options__)
+	    hotAPI.reload("data-v-511e14d8", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3RadioDocs-43.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3RadioDocs-41.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -37676,7 +37841,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-50e5b6d4", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-511e14d8", module.exports)
 	  }
 	}
 
@@ -37709,7 +37874,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3CardDocs-41.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3CardDocs-42.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -37720,12 +37885,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-5187c60f", __vue_options__)
+	    hotAPI.createRecord("data-v-5195dd90", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-5187c60f", __vue_options__)
+	    hotAPI.reload("data-v-5195dd90", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3CardDocs-41.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3CardDocs-42.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -37851,7 +38016,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5187c60f", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5195dd90", module.exports)
 	  }
 	}
 
@@ -37887,10 +38052,10 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3AnimateDocs-42.vue"
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3AnimateDocs-43.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-48ee4f22"
+	__vue_options__._scopeId = "data-v-48d22020"
 	
 	/* hot reload */
 	if (false) {(function () {
@@ -37899,12 +38064,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-48ee4f22", __vue_options__)
+	    hotAPI.createRecord("data-v-48d22020", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-48ee4f22", __vue_options__)
+	    hotAPI.reload("data-v-48d22020", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3AnimateDocs-42.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3AnimateDocs-43.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 	
 	module.exports = __vue_exports__
 
@@ -37925,8 +38090,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-48ee4f22&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AnimateDocs-42.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-48ee4f22&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AnimateDocs-42.vue");
+			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-48d22020&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AnimateDocs-43.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-48d22020&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AnimateDocs-43.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -37944,7 +38109,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n.content[data-v-48ee4f22] {\n  box-shadow: 1px 1px 10px #ddd;\n  padding:10px;\n  margin-top: 10px;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3AnimateDocs-42.vue?d424b62a"],"names":[],"mappings":";AAkDA;EACA,8BAAA;EACA,aAAA;EACA,iBAAA;CACA","file":"n3AnimateDocs-42.vue","sourcesContent":["<template><section><template>\n<h3>动画</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"show=!show\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\">\n    <div v-if=\"show\" class=\"content\">\n        <h4>Title</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n    </div>\n  </transition>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">transition</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">v-if</span>=<span class=\"hljs-string\">\"show\"</span>  <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Title<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">transition</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td>String</td>\n<td>-</td>\n<td><code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .content {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }\n</style>\n<script>\n  export default {\n    data () {\n      return {\n        show: false\n      }\n    }\n  }\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.content[data-v-48d22020] {\n  box-shadow: 1px 1px 10px #ddd;\n  padding:10px;\n  margin-top: 10px;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3AnimateDocs-43.vue?f6115e6c"],"names":[],"mappings":";AAkDA;EACA,8BAAA;EACA,aAAA;EACA,iBAAA;CACA","file":"n3AnimateDocs-43.vue","sourcesContent":["<template><section><template>\n<h3>动画</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"show=!show\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\">\n    <div v-if=\"show\" class=\"content\">\n        <h4>Title</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n    </div>\n  </transition>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">transition</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">v-if</span>=<span class=\"hljs-string\">\"show\"</span>  <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Title<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">transition</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td>String</td>\n<td>-</td>\n<td><code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .content {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }\n</style>\n<script>\n  export default {\n    data () {\n      return {\n        show: false\n      }\n    }\n  }\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -38132,7 +38297,7 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-48ee4f22", module.exports)
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-48d22020", module.exports)
 	  }
 	}
 

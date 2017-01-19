@@ -36,6 +36,8 @@
     <div slot="footer">
     </div>
   </n3-modal>
+  <n3-button @click.native="showConfirm">Show confirm</n3-button>
+  <n3-button @click.native="showAlert">Show alert</n3-button>
 </div>
 
 ```html
@@ -107,6 +109,7 @@
 </template>
 
 <script>
+import {alert, confirm} from 'src/Modal.js'
 
 export default {
   data () {
@@ -129,8 +132,34 @@ export default {
     show () {
       console.log('show')
     },
-    confirm () {
-      console.log('confirm')
+    showConfirm () {
+      confirm ({
+        title: 'Confirm Modal',
+        message: `What's in a name? That which we call a rose
+By any other name would smell as sweet.`,
+        onShow () {
+          console.log('show')
+        },
+        onHide () {
+          console.log('hide')
+        },
+        onConfirm () {
+          console.log('confirm')
+        }
+      })
+    },
+    showAlert () {
+      alert({
+        title: 'Alert Modal',
+        message: `What's in a name? That which we call a rose
+By any other name would smell as sweet.`,
+        onShow () {
+          console.log('show')
+        },
+        onHide () {
+          console.log('hide')
+        }
+      })
     }
   }
 }
