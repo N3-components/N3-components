@@ -17,6 +17,7 @@ import n3Timepicker from './n3Timepicker'
 import n3Datetimepicker from './n3Datetimepicker'
 import n3Dropdown from './n3Dropdown'
 import n3Modal from './n3Modal'
+import n3ModalMethod from './n3ModalMethod'
 import n3Option from './n3Option'
 import n3Panel from './n3Panel'
 import n3Popover from './n3Popover'
@@ -132,7 +133,7 @@ const install = function (Vue) {
   }
 
   Vue.directive('n3Position', position)
-
+  Vue.prototype.n3Modal = n3ModalMethod
   Vue.mixin({
     methods: {
       n3Toast: n3ToastMethod

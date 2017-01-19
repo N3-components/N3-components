@@ -75,15 +75,66 @@
 </n3-modal>
 ```
 
+```javascript
+export default {
+  methods: {
+    showAlert () {
+      this.n3Modal.alert({
+        title: '消息框'
+        message: '这是一个消息框。',
+        effect: 'fade',
+        type: 'info',
+        onShow () {
+          console.log('打开对话框时触发')
+        },
+        onHide () {
+          console.log('关闭对话框时触发')
+        }
+      })
+    },
+    showConfirm () {
+      this.n3Modal.confirm({
+        title: '对话框',
+        message: '这是一个提供选择的对话框。',
+        effect: 'zoom',
+        type: 'success',
+        onShow () {
+          console.log('打开对话框时触发')
+        },
+        onConfirm () {
+          console.log('点击确定按钮时触发')
+        },
+        onHide () {
+          console.log('关闭对话框时触发')
+        }
+      })
+    }
+  }
+}
+```
+
 ### 参数
+
+#### 组件参数
 
 | 参数名 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | title | `String` |  | 弹出框标题 |
-| show | `Boolean` |  | 是否显示,需要`.sync` |
 | effect | `String` | 'fade' | `fade``zoom` |
 | width | `String` | `600px` |  |
 | backdrop | `Boolean` | `true` | 点击遮罩层是否关闭弹出框 |
+
+#### 函数参数
+
+| 参数名 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| title | `String` |  | 弹出框标题，如果为空则不渲染 header|
+| effect | `String` | 'fade' | `fade``zoom` |
+| type | `String` | `600px` | 弹出框类型，用于决定弹出框提示图标。 |
+| width | `String` | `600px` | 弹出框宽度 |
+| onShow | `Function` || 打开弹出框时的回调函数 |
+| onHide | `Function` || 关闭弹出框时的回调函数 |
+| onConfirm | `Function` || 点击弹出框确定按钮时的回调函数 |
 
 ### Events
 
@@ -95,6 +146,8 @@
 
 ### 用法说明
 
+#### 组件驱动
+
 如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer.
 
 但是如果你需要自己定制弹出框内容，你可以实现
@@ -105,12 +158,32 @@
 <div slot="footer">...</div>
 ```
 
+#### 函数驱动
+
+N3 提供函数驱动的一次性模态框，通过实例属性 n3Modal.alert 及 n3Modal.confirm 调用，它会在使用时动态绑定到 DOM 树中，并在关闭后自动销毁。
+
+为了还原原生对话框操作体验，函数驱动的弹出框将不能通过点击背景进行关闭。
+
+```javascript
+const options = {...}
+
+export default {
+  methods: {
+    showAlert () {
+      this.n3Modal.alert(options)
+    },
+    showConfirm () {
+      this.n3Modal.confirm(options)
+    }
+  }
+}
+
+```
+
 </div>
 </template>
 
 <script>
-import {alert, confirm} from 'src/Modal.js'
-
 export default {
   data () {
     return {
@@ -133,31 +206,33 @@ export default {
       console.log('show')
     },
     showConfirm () {
-      confirm ({
-        title: 'Confirm Modal',
-        message: `What's in a name? That which we call a rose
-By any other name would smell as sweet.`,
+      this.n3Modal.confirm({
+        title: '对话框',
+        message: '这是一个提供选择的对话框。',
+        effect: 'zoom',
+        type: 'info',
         onShow () {
-          console.log('show')
-        },
-        onHide () {
-          console.log('hide')
+          console.log('打开对话框时触发')
         },
         onConfirm () {
-          console.log('confirm')
+          console.log('点击确定按钮时触发')
+        },
+        onHide () {
+          console.log('关闭对话框时触发')
         }
       })
     },
     showAlert () {
-      alert({
-        title: 'Alert Modal',
-        message: `What's in a name? That which we call a rose
-By any other name would smell as sweet.`,
+      this.n3Modal.alert({
+        title: '消息框',
+        message: '这是一个消息框。',
+        effect: 'fade',
+        type: 'success',
         onShow () {
-          console.log('show')
+          console.log('打开对话框时触发')
         },
         onHide () {
-          console.log('hide')
+          console.log('关闭对话框时触发')
         }
       })
     }

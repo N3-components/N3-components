@@ -8250,11 +8250,11 @@
 	
 	var _headerDocs2 = _interopRequireDefault(_headerDocs);
 	
-	var _vue = __webpack_require__(443);
+	var _vue = __webpack_require__(554);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
-	var _index = __webpack_require__(562);
+	var _index = __webpack_require__(555);
 	
 	var _index2 = _interopRequireDefault(_index);
 	
@@ -8287,7 +8287,7 @@
 	__vue_exports__ = __webpack_require__(352)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(561)
+	var __vue_template__ = __webpack_require__(553)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -8720,111 +8720,111 @@
 	
 	var _n3ModalDocs2 = _interopRequireDefault(_n3ModalDocs);
 	
-	var _n3InputDocs = __webpack_require__(451);
+	var _n3InputDocs = __webpack_require__(443);
 	
 	var _n3InputDocs2 = _interopRequireDefault(_n3InputDocs);
 	
-	var _n3InputNumberDocs = __webpack_require__(455);
+	var _n3InputNumberDocs = __webpack_require__(447);
 	
 	var _n3InputNumberDocs2 = _interopRequireDefault(_n3InputNumberDocs);
 	
-	var _n3TextareaDocs = __webpack_require__(459);
+	var _n3TextareaDocs = __webpack_require__(451);
 	
 	var _n3TextareaDocs2 = _interopRequireDefault(_n3TextareaDocs);
 	
-	var _n3NavDocs = __webpack_require__(463);
+	var _n3NavDocs = __webpack_require__(455);
 	
 	var _n3NavDocs2 = _interopRequireDefault(_n3NavDocs);
 	
-	var _n3PopoverDocs = __webpack_require__(467);
+	var _n3PopoverDocs = __webpack_require__(459);
 	
 	var _n3PopoverDocs2 = _interopRequireDefault(_n3PopoverDocs);
 	
-	var _n3ProgressbarDocs = __webpack_require__(471);
+	var _n3ProgressbarDocs = __webpack_require__(463);
 	
 	var _n3ProgressbarDocs2 = _interopRequireDefault(_n3ProgressbarDocs);
 	
-	var _n3SelectDocs = __webpack_require__(477);
+	var _n3SelectDocs = __webpack_require__(469);
 	
 	var _n3SelectDocs2 = _interopRequireDefault(_n3SelectDocs);
 	
-	var _n3SwitchDocs = __webpack_require__(481);
+	var _n3SwitchDocs = __webpack_require__(473);
 	
 	var _n3SwitchDocs2 = _interopRequireDefault(_n3SwitchDocs);
 	
-	var _n3TimelineDocs = __webpack_require__(485);
+	var _n3TimelineDocs = __webpack_require__(477);
 	
 	var _n3TimelineDocs2 = _interopRequireDefault(_n3TimelineDocs);
 	
-	var _n3TabsDocs = __webpack_require__(489);
+	var _n3TabsDocs = __webpack_require__(481);
 	
 	var _n3TabsDocs2 = _interopRequireDefault(_n3TabsDocs);
 	
-	var _n3TooltipDocs = __webpack_require__(493);
+	var _n3TooltipDocs = __webpack_require__(485);
 	
 	var _n3TooltipDocs2 = _interopRequireDefault(_n3TooltipDocs);
 	
-	var _n3TypeaheadDocs = __webpack_require__(497);
+	var _n3TypeaheadDocs = __webpack_require__(489);
 	
 	var _n3TypeaheadDocs2 = _interopRequireDefault(_n3TypeaheadDocs);
 	
-	var _n3StepDocs = __webpack_require__(501);
+	var _n3StepDocs = __webpack_require__(493);
 	
 	var _n3StepDocs2 = _interopRequireDefault(_n3StepDocs);
 	
-	var _n3SliderDocs = __webpack_require__(504);
+	var _n3SliderDocs = __webpack_require__(496);
 	
 	var _n3SliderDocs2 = _interopRequireDefault(_n3SliderDocs);
 	
-	var _n3LoadingDocs = __webpack_require__(508);
+	var _n3LoadingDocs = __webpack_require__(500);
 	
 	var _n3LoadingDocs2 = _interopRequireDefault(_n3LoadingDocs);
 	
-	var _n3PageDocs = __webpack_require__(511);
+	var _n3PageDocs = __webpack_require__(503);
 	
 	var _n3PageDocs2 = _interopRequireDefault(_n3PageDocs);
 	
-	var _n3DataTableDocs = __webpack_require__(515);
+	var _n3DataTableDocs = __webpack_require__(507);
 	
 	var _n3DataTableDocs2 = _interopRequireDefault(_n3DataTableDocs);
 	
-	var _n3BreadcrumbDocs = __webpack_require__(519);
+	var _n3BreadcrumbDocs = __webpack_require__(511);
 	
 	var _n3BreadcrumbDocs2 = _interopRequireDefault(_n3BreadcrumbDocs);
 	
-	var _n3MultipleInputDocs = __webpack_require__(522);
+	var _n3MultipleInputDocs = __webpack_require__(514);
 	
 	var _n3MultipleInputDocs2 = _interopRequireDefault(_n3MultipleInputDocs);
 	
-	var _n3TreeDocs = __webpack_require__(526);
+	var _n3TreeDocs = __webpack_require__(518);
 	
 	var _n3TreeDocs2 = _interopRequireDefault(_n3TreeDocs);
 	
-	var _n3RateDocs = __webpack_require__(530);
+	var _n3RateDocs = __webpack_require__(522);
 	
 	var _n3RateDocs2 = _interopRequireDefault(_n3RateDocs);
 	
-	var _n3UploaderDocs = __webpack_require__(534);
+	var _n3UploaderDocs = __webpack_require__(526);
 	
 	var _n3UploaderDocs2 = _interopRequireDefault(_n3UploaderDocs);
 	
-	var _n3FormDocs = __webpack_require__(538);
+	var _n3FormDocs = __webpack_require__(530);
 	
 	var _n3FormDocs2 = _interopRequireDefault(_n3FormDocs);
 	
-	var _n3CheckboxDocs = __webpack_require__(542);
+	var _n3CheckboxDocs = __webpack_require__(534);
 	
 	var _n3CheckboxDocs2 = _interopRequireDefault(_n3CheckboxDocs);
 	
-	var _n3RadioDocs = __webpack_require__(546);
+	var _n3RadioDocs = __webpack_require__(538);
 	
 	var _n3RadioDocs2 = _interopRequireDefault(_n3RadioDocs);
 	
-	var _n3CardDocs = __webpack_require__(550);
+	var _n3CardDocs = __webpack_require__(542);
 	
 	var _n3CardDocs2 = _interopRequireDefault(_n3CardDocs);
 	
-	var _n3AnimateDocs = __webpack_require__(554);
+	var _n3AnimateDocs = __webpack_require__(546);
 	
 	var _n3AnimateDocs2 = _interopRequireDefault(_n3AnimateDocs);
 	
@@ -8871,7 +8871,7 @@
 	//
 	//
 	
-	__webpack_require__(560);
+	__webpack_require__(552);
 	
 	exports.default = {
 	  props: {
@@ -12059,7 +12059,7 @@
 	      "click": _vm.handleClose
 	    }
 	  }, [_c('span', [_vm._v("×")])]) : _vm._e(), _vm._v(" "), (_vm.description) ? _c('div', {
-	    class: (_vm.prefixCls + "prefixCls}}-alert-content")
+	    class: (_vm.prefixCls + "-alert-content")
 	  }, [_c('h4', [_vm._v(_vm._s(_vm.message))]), _vm._v(" "), _c('p', [_vm._t("default")], 2)]) : _c('span', [_vm._t("default")], 2)], 1)])
 	},staticRenderFns: []}
 	module.exports.render._withStripped = true
@@ -16368,7 +16368,7 @@
 	__vue_exports__ = __webpack_require__(441)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(450)
+	var __vue_template__ = __webpack_require__(442)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -16403,15 +16403,270 @@
 
 /***/ },
 /* 441 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	
-	var _Modal = __webpack_require__(442);
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 	
 	exports.default = {
 	  data: function data() {
@@ -16435,317 +16690,12791 @@
 	      console.log('show');
 	    },
 	    showConfirm: function showConfirm() {
-	      (0, _Modal.confirm)({
-	        title: 'Confirm Modal',
-	        message: 'What\'s in a name? That which we call a rose\nBy any other name would smell as sweet.',
+	      this.n3Modal.confirm({
+	        title: '对话框',
+	        message: '这是一个提供选择的对话框。',
+	        effect: 'zoom',
+	        type: 'info',
 	        onShow: function onShow() {
-	          console.log('show');
-	        },
-	        onHide: function onHide() {
-	          console.log('hide');
+	          console.log('打开对话框时触发');
 	        },
 	        onConfirm: function onConfirm() {
-	          console.log('confirm');
+	          console.log('点击确定按钮时触发');
+	        },
+	        onHide: function onHide() {
+	          console.log('关闭对话框时触发');
 	        }
 	      });
 	    },
 	    showAlert: function showAlert() {
-	      (0, _Modal.alert)({
-	        title: 'Alert Modal',
-	        message: 'What\'s in a name? That which we call a rose\nBy any other name would smell as sweet.',
+	      this.n3Modal.alert({
+	        title: '消息框',
+	        message: '这是一个消息框。',
+	        effect: 'fade',
+	        type: 'success',
 	        onShow: function onShow() {
-	          console.log('show');
+	          console.log('打开对话框时触发');
 	        },
 	        onHide: function onHide() {
-	          console.log('hide');
+	          console.log('关闭对话框时触发');
 	        }
 	      });
 	    }
 	  }
-	}; //
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
+	};
 
 /***/ },
 /* 442 */
 /***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("弹出框")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "弹出框"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.showModal($event)
+	        }
+	      }
+	    }, [_vm._v("Show modal")]), _vm._v(" "), _c('n3-modal', {
+	      ref: "modal",
+	      attrs: {
+	        "title": "Modal title",
+	        "effect": "fade",
+	        "width": "400px"
+	      }
+	    }, [_c('div', {
+	      slot: "body"
+	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")])]), _vm._v(" "), _c('n3-button', {
+	      staticClass: "btn btn-success",
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.showBigModal($event)
+	        }
+	      }
+	    }, [_vm._v("Big modal")]), _vm._v(" "), _c('n3-modal', {
+	      ref: "bigModal",
+	      attrs: {
+	        "title": "Big Modal",
+	        "effect": "fade",
+	        "width": "800px"
+	      }
+	    }, [_c('div', {
+	      slot: "body"
+	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")])]), _vm._v(" "), _c('n3-button', {
+	      staticClass: "btn btn-primary",
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.showZoomModal($event)
+	        }
+	      }
+	    }, [_vm._v("Zoom modal")]), _vm._v(" "), _c('n3-modal', {
+	      ref: "zoomModal",
+	      attrs: {
+	        "title": "Zoom Modal",
+	        "effect": "zoom",
+	        "width": "400px"
+	      }
+	    }, [_c('div', {
+	      slot: "body"
+	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")])]), _vm._v(" "), _c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.showCustomModal($event)
+	        }
+	      }
+	    }, [_vm._v("Show custom modal")]), _vm._v(" "), _c('n3-modal', {
+	      ref: "customModal",
+	      attrs: {
+	        "effect": "fade",
+	        "width": "400px"
+	      }
+	    }, [_c('div', {
+	      slot: "header"
+	    }), _vm._v(" "), _c('div', {
+	      slot: "body"
+	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")]), _vm._v(" "), _c('div', {
+	      slot: "footer"
+	    })]), _vm._v(" "), _c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.showConfirm($event)
+	        }
+	      }
+	    }, [_vm._v("Show confirm")]), _vm._v(" "), _c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.showAlert($event)
+	        }
+	      }
+	    }, [_vm._v("Show alert")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _c('h4', [_vm._v("组件参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h4', [_vm._v("函数参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("用法说明")]), _vm._v(" "), _c('h4', [_vm._v("组件驱动")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('p', [_vm._v("但是如果你需要自己定制弹出框内容，你可以实现")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('h4', [_vm._v("函数驱动")]), _vm._v(" "), _c('p', [_vm._v("N3 提供函数驱动的一次性模态框，通过实例属性 n3Modal.alert 及 n3Modal.confirm 调用，它会在使用时动态绑定到 DOM 树中，并在关闭后自动销毁。")]), _vm._v(" "), _c('p', [_vm._v("为了还原原生对话框操作体验，函数驱动的弹出框将不能通过点击背景进行关闭。")]), _vm._v(" "), _vm._m(7)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"showModal\"")]), _vm._v(">")]), _vm._v("Show modal"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-modal")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Modal title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"400px\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"modal\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-modal")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"btn btn-success\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"showBigModal\"")]), _vm._v(">")]), _vm._v("Big modal"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-modal")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Big Modal\"")]), _vm._v("  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"800px\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"bigModal\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-modal")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"btn btn-primary\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"showZoomModal\"")]), _vm._v(">")]), _vm._v("Zoom modal"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-modal")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Zoom Modal\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"zoom\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"400px\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"zoomModal\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-modal")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"showCustomModal\"")]), _vm._v(">")]), _vm._v("Show custom modal"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-modal")]), _vm._v("  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"400px\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"customModal\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"header\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"footer\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-modal")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    showAlert () {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".n3Modal.alert({\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'消息框'")]), _vm._v("\n        message: "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'这是一个消息框。'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'fade'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'info'")]), _vm._v(",\n        onShow () {\n          "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log("), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'打开对话框时触发'")]), _vm._v(")\n        },\n        onHide () {\n          "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log("), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'关闭对话框时触发'")]), _vm._v(")\n        }\n      })\n    },\n    showConfirm () {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".n3Modal.confirm({\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'对话框'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("message")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'这是一个提供选择的对话框。'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'zoom'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'success'")]), _vm._v(",\n        onShow () {\n          "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log("), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'打开对话框时触发'")]), _vm._v(")\n        },\n        onConfirm () {\n          "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log("), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'点击确定按钮时触发'")]), _vm._v(")\n        },\n        onHide () {\n          "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log("), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'关闭对话框时触发'")]), _vm._v(")\n        }\n      })\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("title")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("弹出框标题")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("'fade'")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("fade``zoom")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("600px")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("backdrop")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("点击遮罩层是否关闭弹出框")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("title")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("弹出框标题，如果为空则不渲染 header")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("'fade'")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("fade``zoom")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("600px")])]), _vm._v(" "), _c('td', [_vm._v("弹出框类型，用于决定弹出框提示图标。")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("600px")])]), _vm._v(" "), _c('td', [_vm._v("弹出框宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("onShow")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("打开弹出框时的回调函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("onHide")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("关闭弹出框时的回调函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("onConfirm")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("点击弹出框确定按钮时的回调函数")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("show")]), _vm._v(" "), _c('td', [_vm._v("显示模态框时")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("hide")]), _vm._v(" "), _c('td', [_vm._v("隐藏模态框时")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("confirm")]), _vm._v(" "), _c('td', [_vm._v("按下确认时")]), _vm._v(" "), _c('td')])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("如果你只需要一个简单的弹出框 ，你只需要传递 "), _c('code', [_vm._v("title")]), _vm._v(" 参数 ，将默认带上footer.")])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"header\"")]), _vm._v(">")]), _vm._v("..."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("..."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"footer\"")]), _vm._v(">")]), _vm._v("..."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("const")]), _vm._v(" options = {...}\n\n"), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    showAlert () {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".n3Modal.alert(options)\n    },\n    showConfirm () {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".n3Modal.confirm(options)\n    }\n  }\n}\n\n")])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6cdb916c", module.exports)
+	  }
+	}
+
+/***/ },
+/* 443 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(444);
+
+/***/ },
+/* 444 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(445)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(446)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3InputDocs-17.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-5fac8d8e", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-5fac8d8e", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3InputDocs-17.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 445 */
+/***/ function(module, exports) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.alert = exports.confirm = undefined;
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 	
-	var _vue = __webpack_require__(443);
-	
-	var _vue2 = _interopRequireDefault(_vue);
-	
-	var _n3Modal = __webpack_require__(444);
-	
-	var _n3Modal2 = _interopRequireDefault(_n3Modal);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var $body = document.querySelector('body');
-	
-	var createNode = function createNode() {
-	  var $node = document.createElement('div');
-	  $body.appendChild($node);
-	  return $node;
-	};
-	
-	var removeNode = function removeNode($node) {
-	  $body.removeChild($node);
-	};
-	
-	var confirm = exports.confirm = function confirm(options) {
-	  var title = options.title,
-	      message = options.message,
-	      effect = options.effect,
-	      onConfirm = options.onConfirm,
-	      onHide = options.onHide,
-	      onShow = options.onShow;
-	
-	  var confirm = new _vue2.default({
-	    el: createNode(),
-	    data: function data() {
-	      return {
-	        show: false
-	      };
-	    },
-	
-	    components: {
-	      Modal: _n3Modal2.default
-	    },
-	    template: '<Modal ref="modal" title="' + title + '"\n      effect="' + (effect || 'fade') + '"\n      :backdrop="false"\n      @confirm="handleConfirm"\n      @hide="handleHide"\n      @show="handleShow"\n      @closed="destroy">\n      <div slot="header" v-if="' + !title + '"></div>\n      <div slot="body">\n        ' + options.message + '\n      </div>\n    </Modal>',
-	    mounted: function mounted() {
-	      var _this = this;
-	
-	      this.$nextTick(function () {
-	        _this.$refs.modal.open();
-	      });
-	    },
-	    destroyed: function destroyed() {
-	      removeNode(this.$el);
-	    },
-	
-	    methods: {
-	      handleShow: function handleShow() {
-	        onShow();
-	      },
-	      handleConfirm: function handleConfirm() {
-	        onConfirm();
-	        this.$refs.modal.close();
-	      },
-	      handleHide: function handleHide() {
-	        onHide();
-	      },
-	      destroy: function destroy() {
-	        this.$destroy();
-	      }
-	    }
-	  });
-	};
-	
-	var alert = exports.alert = function alert(options) {
-	  var title = options.title,
-	      message = options.message,
-	      effect = options.effect,
-	      onConfirm = options.onConfirm,
-	      onHide = options.onHide,
-	      onShow = options.onShow;
-	
-	  var alert = new _vue2.default({
-	    el: createNode(),
-	    data: function data() {
-	      return {
-	        show: false
-	      };
-	    },
-	
-	    components: {
-	      Modal: _n3Modal2.default
-	    },
-	    template: '<Modal title="' + title + '"\n      effect="' + (effect || 'fade') + '"\n      ref="modal"\n      :backdrop="false"\n      @hide="handleHide"\n      @show="handleShow"\n      @closed="destroy">\n      <div slot="body">\n        ' + message + '\n      </div>\n      <div slot="header" v-if="' + !title + '"></div>\n      <div slot="footer" class="n3-modal-footer">\n        <n3-button @click.native="$refs.modal.close">\u786E\u5B9A</n3-button>\n      </div>\n    </Modal>',
-	    mounted: function mounted() {
-	      var _this2 = this;
-	
-	      this.$nextTick(function () {
-	        _this2.$refs.modal.open();
-	      });
-	    },
-	    destroyed: function destroyed() {
-	      removeNode(this.$el);
-	    },
-	
-	    methods: {
-	      handleShow: function handleShow() {
-	        onShow();
-	      },
-	      handleHide: function handleHide() {
-	        onHide();
-	      },
-	      destroy: function destroy() {
-	        this.$destroy();
-	      }
-	    }
-	  });
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: 'ds'
+	    };
+	  }
 	};
 
 /***/ },
-/* 443 */
+/* 446 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("输入框")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-input', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value),
+	        expression: "value"
+	      }],
+	      ref: "input",
+	      domProps: {
+	        "value": (_vm.value)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.value = $event
+	        }
+	      }
+	    }), _vm._v(" "), _c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.$refs.input.focus()
+	        }
+	      }
+	    }, [_vm._v("聚焦")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"input\"")]), _vm._v(" >")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"$refs.input.focus()\"")]), _vm._v(">")]), _vm._v("聚焦"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("password")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("密码输入框")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5fac8d8e", module.exports)
+	  }
+	}
+
+/***/ },
+/* 447 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(448);
+
+/***/ },
+/* 448 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(449)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(450)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3InputNumberDocs-18.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-9af378f4", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-9af378f4", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3InputNumberDocs-18.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 449 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: ''
+	    };
+	  }
+	};
+
+/***/ },
+/* 450 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("数字输入框")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-input-number', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value),
+	        expression: "value"
+	      }],
+	      domProps: {
+	        "value": (_vm.value)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.value = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input-number")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input-number")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("max")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("最大值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("min")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("最小值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("step")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("1")])]), _vm._v(" "), _c('td', [_vm._v("增减量值")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-9af378f4", module.exports)
+	  }
+	}
+
+/***/ },
+/* 451 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(452);
+
+/***/ },
+/* 452 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(453)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(454)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TextareaDocs-19.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-113831d0", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-113831d0", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3TextareaDocs-19.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 453 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: ''
+	    };
+	  }
+	};
+
+/***/ },
+/* 454 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h2', [_vm._v("文本框")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-textarea', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value),
+	        expression: "value"
+	      }],
+	      domProps: {
+	        "value": (_vm.value)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.value = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-textarea")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v(" >")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-textarea")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("resize")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否支持拖动")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("max-length")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("字符数限制")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("max-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("最大高度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("min-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("最小高度")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-113831d0", module.exports)
+	  }
+	}
+
+/***/ },
+/* 455 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(456);
+
+/***/ },
+/* 456 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(457)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(458)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3NavDocs-20.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-af8a8ea6", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-af8a8ea6", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3NavDocs-20.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 457 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      show1: false,
+	      show2: false
+	    };
+	  }
+	};
+
+/***/ },
+/* 458 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("导航")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-nav', {
+	      attrs: {
+	        "theme": "default"
+	      }
+	    }, [_c('n3-nav-item', {
+	      attrs: {
+	        "active": ""
+	      }
+	    }, [_c('a', [_vm._v("导航一")])]), _vm._v(" "), _c('n3-nav-item', {
+	      attrs: {
+	        "disabled": ""
+	      }
+	    }, [_c('a', [_vm._v("导航二")])]), _vm._v(" "), _c('n3-nav-item', [_c('n3-sub-nav', {
+	      attrs: {
+	        "trigger": "hover",
+	        "show": _vm.show1
+	      },
+	      on: {
+	        "show": function($event) {
+	          _vm.show1 = true
+	        },
+	        "hide": function($event) {
+	          _vm.show1 = false
+	        }
+	      }
+	    }, [_c('a', {
+	      slot: "title"
+	    }, [_vm._v("导航三")]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航一")])]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航二")])]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航三")])])], 1)], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('n3-nav', {
+	      staticStyle: {
+	        "width": "300px"
+	      },
+	      attrs: {
+	        "theme": "dark",
+	        "type": "vertical"
+	      }
+	    }, [_c('n3-nav-item', {
+	      attrs: {
+	        "active": ""
+	      }
+	    }, [_c('a', [_vm._v("导航一")])]), _vm._v(" "), _c('n3-nav-item', {
+	      attrs: {
+	        "disabled": ""
+	      }
+	    }, [_c('a', [_vm._v("导航二")])]), _vm._v(" "), _c('n3-nav-item', [_c('n3-sub-nav', {
+	      attrs: {
+	        "show": _vm.show2
+	      },
+	      on: {
+	        "toggle": function($event) {
+	          _vm.show2 = !_vm.show2
+	        }
+	      }
+	    }, [_c('a', {
+	      slot: "title"
+	    }, [_vm._v("导航三")]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航一")])]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航二")])]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航三")])])], 1)], 1), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("导航四")])])], 1), _vm._v(" "), _vm._m(1)], 1), _vm._v(" "), _c('h3', [_vm._v("n3-nav参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("n3-sub-nav参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("n3-nav-item参数")]), _vm._v(" "), _vm._m(4)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("theme")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"default\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("active")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("导航一"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("导航二"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-sub-nav")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"title\"")]), _vm._v(">")]), _vm._v("导航三"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("子导航一"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("子导航二"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("子导航三"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-sub-nav")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("theme")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"dark\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"vertical\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("active")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("导航一"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("导航二"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-sub-nav")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"title\"")]), _vm._v(">")]), _vm._v("导航三"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("子导航一"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("子导航二"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("子导航三"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-sub-nav")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("导航四"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-nav")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("horizontal")])]), _vm._v(" "), _c('td', [_vm._v("水平,垂直")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("theme")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("default")])]), _vm._v(" "), _c('td', [_vm._v("颜色   "), _c('code', [_vm._v("default")]), _c('code', [_vm._v("dark")])])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("trigger")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("click")])]), _vm._v(" "), _c('td', [_vm._v("展开方式   "), _c('code', [_vm._v("click")]), _c('code', [_vm._v("hover")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否展开")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("active")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否激活")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否不可用")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-af8a8ea6", module.exports)
+	  }
+	}
+
+/***/ },
+/* 459 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(460);
+
+/***/ },
+/* 460 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(461)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(462)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3PopoverDocs-21.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-7d84a16c", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-7d84a16c", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3PopoverDocs-21.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 461 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      title: 'Title',
+	      text: 'Lorem ipsum dolor sit amet',
+	      item: '1'
+	    };
+	  },
+	
+	  methods: {
+	    del: function del(item) {
+	      return function () {
+	        return new Promise(function (resolve, reject) {
+	          setTimeout(function () {
+	            alert('删除了' + item);
+	            resolve();
+	          }, 500);
+	        });
+	      };
+	    }
+	  }
+	};
+
+/***/ },
+/* 462 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("气泡框")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "气泡框"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-popover', {
+	      attrs: {
+	        "effect": "fade",
+	        "header": true,
+	        "title": "Title",
+	        "placement": "top"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        从前有座山\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on top")])], 1), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "fade",
+	        "header": true,
+	        "title": "Title",
+	        "placement": "left"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        山里有座庙\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on left")])], 1), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "fade",
+	        "header": true,
+	        "title": "Title",
+	        "placement": "right"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        庙里有个老和尚\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on right")])], 1), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "fade",
+	        "placement": "bottom",
+	        "header": true,
+	        "title": "Title"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        老和尚说从前有座山\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on bottom")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', [_vm._v("No title")]), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "fade",
+	        "header": false,
+	        "title": "Title",
+	        "placement": "top"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        山里有座庙\n      ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on top")])], 1), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "fade",
+	        "header": false,
+	        "title": "Title",
+	        "placement": "left"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        庙里有个老和尚\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on left")])], 1), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "fade",
+	        "header": false,
+	        "title": "Title",
+	        "placement": "right"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        老和尚说从前有座山\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on right")])], 1), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "fade",
+	        "header": false,
+	        "placement": "bottom",
+	        "title": "Title"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        山里有座庙\n      ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on bottom")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', [_vm._v("Triger")]), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "scale",
+	        "title": "Title",
+	        "placement": "top",
+	        "trigger": "hover"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n          庙里有个老和尚\n        ")]), _vm._v(" "), _c('n3-button', [_vm._v("Mouseenter")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', [_vm._v("Focus")]), _vm._v(" "), _c('n3-popover', {
+	      attrs: {
+	        "effect": "scale",
+	        "title": "Title",
+	        "placement": "bottom",
+	        "trigger": "focus"
+	      }
+	    }, [_c('div', {
+	      slot: "content"
+	    }, [_vm._v("\n        老和尚很无聊\n    ")]), _vm._v(" "), _c('n3-input', {
+	      attrs: {
+	        "placeholder": "Focus"
+	      }
+	    })], 1), _vm._v(" "), _c('h4', [_vm._v("气泡确认")]), _vm._v(" "), _c('n3-pop-confirm', {
+	      attrs: {
+	        "content": "确定删除么？",
+	        "on-confirm": _vm.del(_vm.item)
+	      }
+	    }, [_c('n3-button', [_vm._v("删除")])], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("popover参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("popconfirm参数")]), _vm._v(" "), _vm._m(3)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":header")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"top\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(" >")]), _vm._v("\n     从前有座山\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on top"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":header")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"left\"")]), _vm._v(">")]), _vm._v("\n   "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      山里有座庙\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on left"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":header")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("\n   "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      庙里有个老和尚\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on right"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":header")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" >")]), _vm._v("\n   "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(" >")]), _vm._v("\n      老和尚说从前有座山\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on bottom"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- No title  -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":header")]), _vm._v(" ="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"false\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"top\"")]), _vm._v(">")]), _vm._v("\n   "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      山里有座庙\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on top"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":header")]), _vm._v(" ="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"false\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"left\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      庙里有个老和尚\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on left"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":header")]), _vm._v(" ="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"false\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      老和尚说从前有座山\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on right"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":header")]), _vm._v(" ="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"false\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      山里有座庙\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on bottom"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- Trigger  -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"scale\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"top\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n    庙里有个老和尚\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("Mouseenter"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- Focus  -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"scale\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"focus\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      老和尚很无聊\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Focus\"")]), _vm._v(" >")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- 气泡确认  -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-pop-confirm")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"确定删除么？\"")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":on-confirm")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"del(item)\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("删除"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-pop-confirm")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("del(item){\n  "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("new")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("Promise")]), _vm._v("("), _c('span', {
+	    staticClass: "hljs-function"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("function")]), _vm._v("("), _c('span', {
+	    staticClass: "hljs-params"
+	  }, [_vm._v("resolve, reject")]), _vm._v(") ")]), _vm._v("{\n    setTimeout("), _c('span', {
+	    staticClass: "hljs-function"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("function")]), _vm._v("("), _c('span', {
+	    staticClass: "hljs-params"
+	  }), _vm._v(") ")]), _vm._v("{\n      alert("), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'删除了'")]), _vm._v(" +  item)\n      resolve()\n    },"), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("500")]), _vm._v(");\n  });\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("trigger")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("click")]), _vm._v(" "), _c('code', [_vm._v("focus")]), _vm._v(" "), _c('code', [_vm._v("hover")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("click")])]), _vm._v(" "), _c('td', [_vm._v("触发方式")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("scale")]), _vm._v(" "), _c('code', [_vm._v("fade")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("scale")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("title")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("header")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否显示头部")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placement")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("top")]), _vm._v(" "), _c('code', [_vm._v("left")]), _vm._v(" "), _c('code', [_vm._v("right")]), _vm._v(" "), _c('code', [_vm._v("bottom")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("定位")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("scale")]), _vm._v(" "), _c('code', [_vm._v("fade")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("fade")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("content")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placement")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("top")]), _vm._v(" "), _c('code', [_vm._v("left")]), _vm._v(" "), _c('code', [_vm._v("right")]), _vm._v(" "), _c('code', [_vm._v("bottom")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("定位")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("on-confirm")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("点击确定的回调函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("ok-text")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("确定")]), _vm._v(" "), _c('td', [_vm._v("确定按钮的文案")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("cancel-text")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("取消按钮的文案")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7d84a16c", module.exports)
+	  }
+	}
+
+/***/ },
+/* 463 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(464);
+
+/***/ },
+/* 464 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* styles */
+	__webpack_require__(465)
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(467)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(468)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3ProgressbarDocs-22.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	__vue_options__._scopeId = "data-v-7dd9b3a8"
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-7dd9b3a8", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-7dd9b3a8", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3ProgressbarDocs-22.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 465 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(466);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(351)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-7dd9b3a8&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3ProgressbarDocs-22.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-7dd9b3a8&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3ProgressbarDocs-22.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 466 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(350)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n.margin[data-v-7dd9b3a8]{\n  margin-bottom:20px;\n}\n\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3ProgressbarDocs-22.vue?d05f425c"],"names":[],"mappings":";AAoKA;EACA,mBAAA;CACA","file":"n3ProgressbarDocs-22.vue","sourcesContent":["<template><section><template>\n<h3>进度条</h3>\n<div class=\"bs-docs-section\" id=\"进度条\">\n<blockquote>\n<p>高度</p>\n</blockquote>\n<div class=\"bs-example\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"40\" type=\"success\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"20\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">height</span>=<span class=\"hljs-string\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"40\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>动态变化 <n3-button @click.native=\"dynamicClick\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress>\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">dynamicData</span>: [<span class=\"hljs-number\">5</span>, <span class=\"hljs-number\">15</span>, <span class=\"hljs-number\">25</span>, <span class=\"hljs-number\">35</span>, <span class=\"hljs-number\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\">this</span>.dynamicData = <span class=\"hljs-keyword\">this</span>.dynamicData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * <span class=\"hljs-number\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote>\n<p>叠加 <n3-button @click.native=\"stackedClick\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress>\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[0]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[1]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[2]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[3]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">striped</span> &gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">stackedData</span>: [<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">20</span>, <span class=\"hljs-number\">30</span>, <span class=\"hljs-number\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">100</span>\n      <span class=\"hljs-keyword\">this</span>.stackedData = <span class=\"hljs-keyword\">this</span>.stackedData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">const</span> random = <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>now</td>\n<td><code>Number</code></td>\n<td></td>\n<td>当前进度</td>\n</tr>\n<tr>\n<td>height</td>\n<td><code>String</code></td>\n<td>20px</td>\n<td>高度</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>样式</td>\n</tr>\n<tr>\n<td>label</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示进度提示</td>\n</tr>\n<tr>\n<td>striped</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示条纹</td>\n</tr>\n<tr>\n<td>animated</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.margin{\n  margin-bottom:20px;\n}\n\n</style>\n<script>\nexport default {\n  data () {\n    return {\n      dynamicData: [5, 15, 25, 35, 45],\n      stackedData: [10, 20, 30, 40]\n    }\n  },\n  methods: {\n    dynamicClick () {\n      this.dynamicData = this.dynamicData.map(() => {\n        return Math.floor(Math.random() * 50)\n      })\n    },\n    stackedClick () {\n      let i = 100\n      this.stackedData = this.stackedData.map(() => {\n        const random = Math.floor(Math.random() * i)\n        i = i - random\n        return random\n      })\n    }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 467 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      dynamicData: [5, 15, 25, 35, 45],
+	      stackedData: [10, 20, 30, 40]
+	    };
+	  },
+	
+	  methods: {
+	    dynamicClick: function dynamicClick() {
+	      this.dynamicData = this.dynamicData.map(function () {
+	        return Math.floor(Math.random() * 50);
+	      });
+	    },
+	    stackedClick: function stackedClick() {
+	      var i = 100;
+	      this.stackedData = this.stackedData.map(function () {
+	        var random = Math.floor(Math.random() * i);
+	        i = i - random;
+	        return random;
+	      });
+	    }
+	  }
+	};
+
+/***/ },
+/* 468 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("进度条")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "进度条"
+	      }
+	    }, [_c('blockquote', [_c('p', [_vm._v("高度")])]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('div', {
+	      staticClass: "row"
+	    }, [_c('div', {
+	      staticClass: "col-md-4"
+	    }, [_c('n3-progress', {
+	      staticClass: "margin"
+	    }, [_c('n3-progressbar', {
+	      attrs: {
+	        "now": 20,
+	        "type": "success",
+	        "height": "10px"
+	      }
+	    })], 1)], 1), _vm._v(" "), _c('div', {
+	      staticClass: "col-md-4"
+	    }, [_c('n3-progress', {
+	      staticClass: "margin"
+	    }, [_c('n3-progressbar', {
+	      attrs: {
+	        "now": 40,
+	        "type": "success"
+	      }
+	    })], 1)], 1)])]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("动态变化 "), _c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.dynamicClick($event)
+	        }
+	      }
+	    }, [_vm._v("随机变化")])], 1)]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-progress', {
+	      staticClass: "margin"
+	    }, [_c('n3-progressbar', {
+	      attrs: {
+	        "now": _vm.dynamicData[0] * 2,
+	        "type": "info"
+	      }
+	    })], 1), _vm._v(" "), _c('n3-progress', {
+	      staticClass: "margin"
+	    }, [_c('n3-progressbar', {
+	      attrs: {
+	        "now": _vm.dynamicData[1] * 2,
+	        "type": "warning"
+	      }
+	    })], 1), _vm._v(" "), _c('n3-progress', {
+	      staticClass: "margin"
+	    }, [_c('n3-progressbar', {
+	      attrs: {
+	        "now": _vm.dynamicData[2] * 2,
+	        "type": "danger"
+	      }
+	    })], 1), _vm._v(" "), _c('n3-progress', [_c('n3-progressbar', {
+	      attrs: {
+	        "now": _vm.dynamicData[3] * 2,
+	        "type": "success",
+	        "striped": ""
+	      }
+	    })], 1)], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("叠加 "), _c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.stackedClick($event)
+	        }
+	      }
+	    }, [_vm._v("随机变化")])], 1)]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-progress', [_c('n3-progressbar', {
+	      attrs: {
+	        "now": _vm.stackedData[0],
+	        "label": "",
+	        "type": "warning",
+	        "striped": ""
+	      }
+	    }), _vm._v(" "), _c('n3-progressbar', {
+	      attrs: {
+	        "now": _vm.stackedData[1],
+	        "label": "",
+	        "type": "success"
+	      }
+	    }), _vm._v(" "), _c('n3-progressbar', {
+	      attrs: {
+	        "now": _vm.stackedData[2],
+	        "label": "",
+	        "type": "danger"
+	      }
+	    }), _vm._v(" "), _c('n3-progressbar', {
+	      attrs: {
+	        "now": _vm.stackedData[3],
+	        "label": "",
+	        "type": "primary",
+	        "striped": ""
+	      }
+	    })], 1)], 1), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(5)], 1)]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"20\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"success\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("height")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"10px\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"40\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"success\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"margin\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"dynamicData[0] * 2\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"info\"")]), _vm._v(" >")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"dynamicData[1] * 2\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"warning\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"dynamicData[2] * 2\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"danger\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"dynamicData[3] * 2\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"success\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("striped")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("dynamicData")]), _vm._v(": ["), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("5")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("15")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("25")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("35")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("45")]), _vm._v("]\n    }\n  },\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    dynamicClick () {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".dynamicData = "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".dynamicData.map("), _c('span', {
+	    staticClass: "hljs-function"
+	  }, [_c('span', {
+	    staticClass: "hljs-params"
+	  }, [_vm._v("()")]), _vm._v(" =>")]), _vm._v(" {\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("Math")]), _vm._v(".floor("), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("Math")]), _vm._v(".random() * "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("50")]), _vm._v(")\n      })\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"stackedData[0]\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"warning\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("striped")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"stackedData[1]\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"success\"")]), _vm._v(" >")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"stackedData[2]\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"danger\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"stackedData[3]\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"primary\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("striped")]), _vm._v(" >")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("stackedData")]), _vm._v(": ["), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("10")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("20")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("30")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("40")]), _vm._v("]\n    }\n  },\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    stackedClick () {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("let")]), _vm._v(" i = "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("100")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".stackedData = "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".stackedData.map("), _c('span', {
+	    staticClass: "hljs-function"
+	  }, [_c('span', {
+	    staticClass: "hljs-params"
+	  }, [_vm._v("()")]), _vm._v(" =>")]), _vm._v(" {\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("const")]), _vm._v(" random = "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("Math")]), _vm._v(".floor("), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("Math")]), _vm._v(".random() * i)\n        i = i - random\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" random\n      })\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("now")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("当前进度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("20px")]), _vm._v(" "), _c('td', [_vm._v("高度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("样式")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("label")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否显示进度提示")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("striped")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否显示条纹")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("animated")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("动画效果")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7dd9b3a8", module.exports)
+	  }
+	}
+
+/***/ },
+/* 469 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(470);
+
+/***/ },
+/* 470 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(471)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(472)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3SelectDocs-23.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-c7e0ef32", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-c7e0ef32", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3SelectDocs-23.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 471 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      fruitOptions: [{ value: 'apple', label: 'Apple' }, { value: 'banana', label: 'Banana' }, { value: 'cherry', label: 'Cherry' }, { value: 'orange', label: 'Orange' }, { value: 'grape', label: 'Grape' }],
+	      arr: ['apple', 'banana'],
+	      single: 'Apple',
+	      multiple: [],
+	      multipleLimit: [],
+	      custom: []
+	    };
+	  }
+	};
+
+/***/ },
+/* 472 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("选择框")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "选择框"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('blockquote', [_c('p', [_vm._v("单选")])]), _vm._v(" "), _c('p', [_c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.single) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.single),
+	        expression: "single"
+	      }],
+	      attrs: {
+	        "badge": 5
+	      },
+	      domProps: {
+	        "value": (_vm.single)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.single = $event
+	        }
+	      }
+	    }, [_c('n3-option', {
+	      attrs: {
+	        "value": "Apple"
+	      }
+	    }, [_vm._v("Apple")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Banana"
+	      }
+	    }, [_vm._v("Banana")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Cherry"
+	      }
+	    }, [_vm._v("Cherry")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Orange"
+	      }
+	    }, [_vm._v("Orange")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Grape"
+	      }
+	    }, [_vm._v("Grape")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("多选")])]), _vm._v(" "), _c('p', [_c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.multiple.join(', ')) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.multiple),
+	        expression: "multiple"
+	      }],
+	      attrs: {
+	        "multiple": "",
+	        "search": ""
+	      },
+	      domProps: {
+	        "value": (_vm.multiple)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.multiple = $event
+	        }
+	      }
+	    }, [_c('n3-option', {
+	      attrs: {
+	        "value": "Apple"
+	      }
+	    }, [_vm._v("Apple")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Banana"
+	      }
+	    }, [_vm._v("Banana")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Cherry"
+	      }
+	    }, [_vm._v("Cherry")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Orange"
+	      }
+	    }, [_vm._v("Orange")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Grape"
+	      }
+	    }, [_vm._v("Grape")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("多选限制")])]), _vm._v(" "), _c('p', [_c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.multipleLimit.join(', ')) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.multipleLimit),
+	        expression: "multipleLimit"
+	      }],
+	      attrs: {
+	        "multiple": "",
+	        "limit": 2,
+	        "search": "",
+	        "extra": ""
+	      },
+	      domProps: {
+	        "value": (_vm.multipleLimit)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.multipleLimit = $event
+	        }
+	      }
+	    }, [_c('n3-option', {
+	      attrs: {
+	        "value": "Apple"
+	      }
+	    }, [_vm._v("Apple")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Banana"
+	      }
+	    }, [_vm._v("Banana")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Cherry"
+	      }
+	    }, [_vm._v("Cherry")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Orange"
+	      }
+	    }, [_vm._v("Orange")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Grape"
+	      }
+	    }, [_vm._v("Grape")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("自定义内容")])]), _vm._v(" "), _c('p', [_c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.custom.join(', ')) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.custom),
+	        expression: "custom"
+	      }],
+	      attrs: {
+	        "multiple": ""
+	      },
+	      domProps: {
+	        "value": (_vm.custom)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.custom = $event
+	        }
+	      }
+	    }, [_c('n3-option', {
+	      attrs: {
+	        "value": "Star"
+	      }
+	    }, [_c('span', {
+	      staticClass: "n3-fa n3-fa-star"
+	    }), _vm._v(" Star")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Heart"
+	      }
+	    }, [_c('span', {
+	      staticClass: "n3-fa n3-fa-heart"
+	    }), _vm._v(" Heart")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Film"
+	      }
+	    }, [_c('span', {
+	      staticClass: "n3-fa n3-fa-film"
+	    }), _vm._v(" Film")]), _vm._v(" "), _c('n3-option', {
+	      attrs: {
+	        "value": "Inbox"
+	      }
+	    }, [_c('span', {
+	      staticClass: "n3-fa n3-fa-inbox"
+	    }), _vm._v(" Inbox")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("传递数组，支持搜索")])]), _vm._v(" "), _c('p', [_vm._v("\n    支持只传递接json数组，可以支持搜索\n    "), _c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.arr) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.arr),
+	        expression: "arr"
+	      }],
+	      attrs: {
+	        "options": _vm.fruitOptions,
+	        "search": true,
+	        "multiple": "",
+	        "extra": "",
+	        "width": "200px"
+	      },
+	      domProps: {
+	        "value": (_vm.arr)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.arr = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- 单选框 -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"single\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":badge")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"5\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Apple\"")]), _vm._v(">")]), _vm._v("Apple"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Banana\"")]), _vm._v(">")]), _vm._v("Banana"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Cherry\"")]), _vm._v(">")]), _vm._v("Cherry"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Orange\"")]), _vm._v(">")]), _vm._v("Orange"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Grape\"")]), _vm._v(">")]), _vm._v("Grape"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- 多选框 -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("multiple")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"multiple\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("search")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Apple\"")]), _vm._v(">")]), _vm._v("Apple"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Banana\"")]), _vm._v(">")]), _vm._v("Banana"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Cherry\"")]), _vm._v(">")]), _vm._v("Cherry"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Orange\"")]), _vm._v(">")]), _vm._v("Orange"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Grape\"")]), _vm._v(">")]), _vm._v("Grape"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- 多选限制 -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("multiple")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":limit")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"2\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"multipleLimit\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("search")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("extra")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Apple\"")]), _vm._v(">")]), _vm._v("Apple"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Banana\"")]), _vm._v(">")]), _vm._v("Banana"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Cherry\"")]), _vm._v(">")]), _vm._v("Cherry"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Orange\"")]), _vm._v(">")]), _vm._v("Orange"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Grape\"")]), _vm._v(">")]), _vm._v("Grape"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- 自定义内容 -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("multiple")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"custom\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Star\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("span")]), _vm._v("  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"n3-fa n3-fa-star\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("span")]), _vm._v(">")]), _vm._v(" Star"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Heart\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("span")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"n3-fa n3-fa-heart\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("span")]), _vm._v(">")]), _vm._v(" Heart"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Film\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("span")]), _vm._v("  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"n3-fa n3-fa-film\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("span")]), _vm._v(">")]), _vm._v(" Film"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Inbox\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("span")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"n3-fa n3-fa-inbox\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("span")]), _vm._v(">")]), _vm._v(" Inbox"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- 传递数组，支持搜索 -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"arr\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":options")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fruitOptions\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":search")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("multiple")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("extra")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"400px\"")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("fruitOptions")]), _vm._v(": [\n        {"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'apple'")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'Apple'")]), _vm._v("},\n        {"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'banana'")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'Banana'")]), _vm._v("},\n        {"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'cherry'")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'Cherry'")]), _vm._v("},\n        {"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'orange'")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'Orange'")]), _vm._v("},\n        {"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'grape'")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'Grape'")]), _vm._v("}\n      ],\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("arr")]), _vm._v(": ["), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'apple'")]), _vm._v(", "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'banana'")]), _vm._v("],\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("single")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'Apple'")]), _vm._v(",\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("multiple")]), _vm._v(": [],\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("multipleLimit")]), _vm._v(": [],\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("custom")]), _vm._v(": []\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("样式的参数和 "), _c('a', {
+	    attrs: {
+	      "href": "#n3ButtonsDocs"
+	    }
+	  }, [_vm._v("按钮")]), _vm._v(" 相同")])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("value")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("多选为数组，单选为单个数字或者字符串")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placeholder")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("'请选择'")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("multiple")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("支持多选")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("limit")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("1024")])]), _vm._v(" "), _c('td', [_vm._v("多选限制")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("search")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否支持搜索")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("extra")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("可支持在输入款内添加新的选项(需要search支持)")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("input-placeholder")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("请输入")])]), _vm._v(" "), _c('td', [_vm._v("输入框的placeholder")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("选择框大小")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("menu-max-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("300px")]), _vm._v(" "), _c('td', [_vm._v("下拉框最大高度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("menu-width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("下拉框宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("format")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("function(item){ return item.label }")])]), _vm._v(" "), _c('td', [_vm._v("选中内容的格式化显示")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("on-change")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("value改变回调函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("readonly")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("badge")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String``Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("徽标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("cancelled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("单选时，是否可撤销")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-c7e0ef32", module.exports)
+	  }
+	}
+
+/***/ },
+/* 473 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(474);
+
+/***/ },
+/* 474 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(475)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(476)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3SwitchDocs-24.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-4a780ab0", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-4a780ab0", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3SwitchDocs-24.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 475 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: false
+	    };
+	  },
+	
+	  methods: {
+	    toggle: function toggle(state) {
+	      console.log(state);
+	    }
+	  }
+	};
+
+/***/ },
+/* 476 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("开关")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "开关"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('p'), _c('h3', [_c('n3-switch', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value),
+	        expression: "value"
+	      }],
+	      domProps: {
+	        "value": (_vm.value)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.value = $event
+	        }
+	      }
+	    })], 1), _c('p'), _vm._v(" "), _c('p'), _c('h3', [_c('n3-switch', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value),
+	        expression: "value"
+	      }],
+	      attrs: {
+	        "ontext": "开",
+	        "offtext": "关"
+	      },
+	      domProps: {
+	        "value": (_vm.value)
+	      },
+	      on: {
+	        "change": _vm.toggle,
+	        "input": function($event) {
+	          _vm.value = $event
+	        }
+	      }
+	    })], 1), _c('p'), _vm._v(" "), _c('p'), _c('h3', [_c('n3-switch', {
+	      attrs: {
+	        "ontext": "开",
+	        "offtext": "关",
+	        "disabled": true
+	      },
+	      on: {
+	        "change": _vm.toggle
+	      }
+	    })], 1), _c('p')]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-switch")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-switch")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-switch")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("ontext")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"开\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("offtext")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"关\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"toggle\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-switch")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-switch")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("ontext")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"开\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("offtext")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"关\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"toggle\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":disabled")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-switch")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("禁用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("ontext")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("ON")])]), _vm._v(" "), _c('td', [_vm._v("开文案")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("offtext")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("OFF")])]), _vm._v(" "), _c('td', [_vm._v("关文案")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("禁用")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4a780ab0", module.exports)
+	  }
+	}
+
+/***/ },
+/* 477 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(478);
+
+/***/ },
+/* 478 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(479)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(480)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TimelineDocs-25.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-39b215f8", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-39b215f8", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3TimelineDocs-25.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 479 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: [{
+	        icon: 'check-circle-o',
+	        color: 'green',
+	        content: '<a @click="del">\u521B\u5EFA\u6210\u529F</a>'
+	      }, {
+	        content: '<span>通过审核</span>'
+	      }, {
+	        content: '<span>出现异常</span>'
+	      }]
+	    };
+	  },
+	
+	  methods: {
+	    del: function del() {
+	      alert(2);
+	    }
+	  }
+	};
+
+/***/ },
+/* 480 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("时间轴")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "时间轴"
+	      }
+	    }, [_c('blockquote', [_c('p', [_vm._v("时间轴（静态）")])]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-timeline', [_c('n3-timeline-item', {
+	      attrs: {
+	        "color": "#2ecc71",
+	        "icon": "check-circle-o"
+	      }
+	    }, [_vm._v("创建成功")]), _vm._v(" "), _c('n3-timeline-item', {
+	      attrs: {
+	        "color": "#3498db"
+	      }
+	    }, [_vm._v("通过审核")]), _vm._v(" "), _c('n3-timeline-item', {
+	      attrs: {
+	        "color": "#e74c3c",
+	        "icon": "times-circle-o"
+	      }
+	    }, [_vm._v("出现异常")])], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("时间轴（数据绑定）")])]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-timeline', {
+	      attrs: {
+	        "value": _vm.value
+	      }
+	    })], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Timeline参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("TimelineItem参数")]), _vm._v(" "), _vm._m(4)], 1)]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("color")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'#2ecc71'")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("icon")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"check-circle-o\"")]), _vm._v(">")]), _vm._v("创建成功"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("color")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'#3498db'")]), _vm._v(">")]), _vm._v("通过审核"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("color")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'#e74c3c'")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("icon")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"times-circle-o\"")]), _vm._v(">")]), _vm._v("出现异常"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-timeline")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(": [{\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("icon")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'check-circle-o'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("color")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'green'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("`<a @click=\"del\">创建成功</a>`")]), _vm._v("\n      }, {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'<span>通过审核</span>'")]), _vm._v("\n      }, {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'<span>出现异常</span>'")]), _vm._v("\n      }]\n    }\n  },\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    del () {\n      alert("), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("2")]), _vm._v(")\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("value")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("内容数组")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("color")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("#2db7f5")]), _vm._v(" "), _c('td', [_vm._v("颜色")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("content")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("内容")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("自定义图标")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-39b215f8", module.exports)
+	  }
+	}
+
+/***/ },
+/* 481 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(482);
+
+/***/ },
+/* 482 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(483)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(484)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TabsDocs-26.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-5da23db0", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-5da23db0", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3TabsDocs-26.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 483 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      list: [{
+	        header: 'first',
+	        badge: 12,
+	        content: 'first的内容'
+	      }, {
+	        header: 'seacond',
+	        badge: 12,
+	        content: 'seacond的内容'
+	      }]
+	    };
+	  },
+	
+	  methods: {
+	    change: function change(index, el) {
+	      console.log(index, el);
+	    }
+	  }
+	};
+
+/***/ },
+/* 484 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("标签页")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('blockquote', [_c('p', [_vm._v("使用list")])]), _vm._v(" "), _c('p', [_c('n3-tabs', {
+	      attrs: {
+	        "list": _vm.list
+	      },
+	      on: {
+	        "change": _vm.change
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("使用tab")])]), _vm._v(" "), _c('n3-tabs', {
+	      attrs: {
+	        "value": 1
+	      },
+	      on: {
+	        "change": _vm.change
+	      }
+	    }, [_c('n3-tab', {
+	      attrs: {
+	        "header": "one",
+	        "badge": "1"
+	      }
+	    }, [_c('p', [_vm._v(".......")]), _vm._v(" "), _c('p', [_vm._v(".......")]), _vm._v(" "), _c('p', [_vm._v(".......")])]), _vm._v(" "), _c('n3-tab', {
+	      attrs: {
+	        "header": "two"
+	      }
+	    }, [_c('p', [_vm._v("*********")]), _vm._v(" "), _c('p', [_vm._v("*********")]), _vm._v(" "), _c('p', [_vm._v("*********")])]), _vm._v(" "), _c('n3-tab', {
+	      attrs: {
+	        "header": "three",
+	        "disabled": ""
+	      }
+	    }, [_vm._v("\n    ...\n  ")])], 1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("胶囊样式 pills")])]), _vm._v(" "), _c('n3-tabs', {
+	      attrs: {
+	        "pills": ""
+	      }
+	    }, [_c('n3-tab', {
+	      attrs: {
+	        "header": "one"
+	      }
+	    }), _vm._v(" "), _c('n3-tab', {
+	      attrs: {
+	        "header": "two"
+	      }
+	    })], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("垂直样式 stacked")])]), _vm._v(" "), _c('n3-tabs', {
+	      staticStyle: {
+	        "max-width": "300px"
+	      },
+	      attrs: {
+	        "pills": "",
+	        "stacked": ""
+	      },
+	      on: {
+	        "change": _vm.change
+	      }
+	    }, [_c('n3-tab', {
+	      attrs: {
+	        "header": "one"
+	      }
+	    }), _vm._v(" "), _c('n3-tab', {
+	      attrs: {
+	        "header": "two"
+	      }
+	    })], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("垂直样式 stacked")])]), _vm._v(" "), _c('n3-tabs', {
+	      staticStyle: {
+	        "max-width": "300px"
+	      },
+	      attrs: {
+	        "primary": "",
+	        "pills": "",
+	        "stacked": ""
+	      }
+	    }, [_c('n3-tab', {
+	      attrs: {
+	        "header": "one"
+	      }
+	    }), _vm._v(" "), _c('n3-tab', {
+	      attrs: {
+	        "header": "two"
+	      }
+	    })], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("自适应 justified")])]), _vm._v(" "), _c('n3-tabs', {
+	      attrs: {
+	        "pills": "",
+	        "justified": ""
+	      }
+	    }, [_c('n3-tab', {
+	      attrs: {
+	        "header": "one"
+	      }
+	    }), _vm._v(" "), _c('n3-tab', {
+	      attrs: {
+	        "header": "two"
+	      }
+	    })], 1)], 1), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("Tabs参数")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("Tabs Events")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("tab 参数")]), _vm._v(" "), _vm._m(6)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tabs")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"change\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":list")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"list\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tabs")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("data () {\n  "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("list")]), _vm._v(": [{\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("header")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'first'")]), _vm._v(",\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("badge")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("12")]), _vm._v(",\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'first的内容'")]), _vm._v("\n    }, {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("header")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'seacond'")]), _vm._v(",\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("badge")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("12")]), _vm._v(",\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'seacond的内容'")]), _vm._v("\n    }]\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tabs")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"change\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"1\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tab")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("header")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"one\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("badge")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"1\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("......."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("......."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("......."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tab")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tab")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("header")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"two\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("*********"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("*********"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("*********"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tab")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tab")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("header")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"three\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("\n    ...\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tab")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tabs")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("list")]), _vm._v(": [{\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("header")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'first'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("badge")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("12")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'first的内容'")]), _vm._v("\n      }, {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("header")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'seacond'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("badge")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("12")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'seacond的内容'")]), _vm._v("\n      }]\n    }\n  },\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    change (index, el) {\n      "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log(index, el)\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("active-index")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("list")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("pills")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("胶囊样式")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("stacked")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("竖直状态")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("primary")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("justified")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("是否自适应")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("size")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("尺寸")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("切换tab时")]), _vm._v(" "), _c('td')])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("header")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("标签头文字")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("badge")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String``Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("徽标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("是否能被激活")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5da23db0", module.exports)
+	  }
+	}
+
+/***/ },
+/* 485 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(486);
+
+/***/ },
+/* 486 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(487)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(488)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TooltipDocs-27.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-f02c5358", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-f02c5358", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3TooltipDocs-27.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 487 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      title: 'Title',
+	      text: 'Lorem ipsum dolor sit amet'
+	    };
+	  }
+	};
+
+/***/ },
+/* 488 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("浮出提示")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "浮出提示"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-tooltip', {
+	      attrs: {
+	        "content": "tooltip on top",
+	        "placement": "top",
+	        "trigger": "hover"
+	      }
+	    }, [_c('n3-button', [_vm._v("tooltip on top")])], 1), _vm._v(" "), _c('n3-tooltip', {
+	      attrs: {
+	        "content": "tooltip on left",
+	        "placement": "left",
+	        "trigger": "hover"
+	      }
+	    }, [_c('n3-button', [_vm._v("tooltip on left")])], 1), _vm._v(" "), _c('n3-tooltip', {
+	      attrs: {
+	        "content": "tooltip on right",
+	        "placement": "right",
+	        "trigger": "hover"
+	      }
+	    }, [_c('n3-button', [_vm._v("tooltip on right")])], 1), _vm._v(" "), _c('n3-tooltip', {
+	      attrs: {
+	        "content": "tooltip on bottom",
+	        "placement": "bottom",
+	        "trigger": "hover"
+	      }
+	    }, [_c('n3-button', [_vm._v("tooltip on bottom")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', [_vm._v("Triger")]), _vm._v(" "), _c('p', [_c('n3-tooltip', {
+	      attrs: {
+	        "trigger": "click",
+	        "effect": "scale",
+	        "content": "Lorem ipsum dolor sit amet",
+	        "placement": "top"
+	      }
+	    }, [_c('n3-button', [_vm._v("Click")])], 1)], 1), _vm._v(" "), _c('n3-tooltip', {
+	      attrs: {
+	        "effect": "scale",
+	        "content": "Lorem ipsum dolor sit amet",
+	        "placement": "bottom",
+	        "trigger": "focus"
+	      }
+	    }, [_c('n3-input', {
+	      attrs: {
+	        "placeholder": "Focus"
+	      }
+	    })], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数名")]), _vm._v(" "), _vm._m(2)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"tooltip on top\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"top\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("tooltip on top"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"tooltip on left\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("tooltip on left"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"tooltip on right\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"right\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("tooltip on right"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"tooltip on bottom\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("tooltip on bottom"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("hr")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("h4")]), _vm._v(">")]), _vm._v("Triger"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("h4")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"click\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"scale\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Lorem ipsum dolor sit amet\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"top\"")]), _vm._v(" >")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("Click"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"scale\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Lorem ipsum dolor sit amet\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"focus\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v("  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Focus\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'Title'")]), _vm._v(",\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("text")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'Lorem ipsum dolor sit amet'")]), _vm._v("\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("trigger")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("hover")]), _vm._v(" "), _c('code', [_vm._v("focus")]), _vm._v(" "), _c('code', [_vm._v("hover")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("click")])]), _vm._v(" "), _c('td', [_vm._v("触发方式")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("scale")]), _vm._v(" "), _c('code', [_vm._v("fade")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("scale")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("content")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placement")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("top")]), _vm._v(" "), _c('code', [_vm._v("left")]), _vm._v(" "), _c('code', [_vm._v("right")]), _vm._v(" "), _c('code', [_vm._v("bottom")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("定位方式")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-f02c5358", module.exports)
+	  }
+	}
+
+/***/ },
+/* 489 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(490);
+
+/***/ },
+/* 490 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(491)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(492)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TypeaheadDocs-28.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-71711691", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-71711691", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3TypeaheadDocs-28.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 491 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      items: [],
+	      gitItems: [],
+	      value: 'Alabama',
+	      USstate: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
+	    };
+	  },
+	
+	  methods: {
+	    render: function render(item) {
+	      return item.formatted_address;
+	    },
+	    getResult: function getResult(query) {
+	      var self = this;
+	      $.ajax({
+	        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
+	        success: function success(ret) {
+	          self.items = ret.results;
+	        }
+	      });
+	    },
+	    getGitresults: function getGitresults(query) {
+	      var self = this;
+	      $.ajax({
+	        url: 'https://api.github.com/search/users?q=' + query,
+	        success: function success(ret) {
+	          self.gitItems = ret.items;
+	        }
+	      });
+	    },
+	    rendergit: function rendergit(item) {
+	      return '<div><img width="18px" height="18px" src="' + item.avatar_url + '"/> <span>' + item.login + '</span></div>';
+	    },
+	    googleCallback: function googleCallback(item) {
+	      return item.formatted_address;
+	    },
+	    githubCallback: function githubCallback(item) {
+	      return item.login;
+	    }
+	  }
+	};
+
+/***/ },
+/* 492 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("自动补全")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "自动补全"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('blockquote', [_c('p', [_vm._v("本地数据")])]), _vm._v(" "), _c('p', [_c('n3-typeahead', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value),
+	        expression: "value"
+	      }],
+	      attrs: {
+	        "data": _vm.USstate,
+	        "placeholder": " 发到"
+	      },
+	      domProps: {
+	        "value": (_vm.value)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.value = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("异步获取")])]), _vm._v(" "), _c('p', [_c('n3-typeahead', {
+	      attrs: {
+	        "async": "",
+	        "placeholder": "CCCAddress, async via maps.googleapis.com",
+	        "render": _vm.render,
+	        "items": _vm.items,
+	        "add-format": _vm.googleCallback
+	      },
+	      on: {
+	        "change": _vm.getResult
+	      }
+	    })], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("内容模版")])]), _vm._v(" "), _c('p', [_c('n3-typeahead', {
+	      attrs: {
+	        "async": "",
+	        "context": _vm._self,
+	        "placeholder": "Github users, async via api.github.com",
+	        "items": _vm.gitItems,
+	        "render": _vm.rendergit,
+	        "add-format": _vm.githubCallback
+	      },
+	      on: {
+	        "change": _vm.getGitresults
+	      }
+	    })], 1), _vm._v(" "), _vm._m(2)], 1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-typeahead")]), _vm._v(" \n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":data")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"USstate\"")]), _vm._v(" \n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\" 发到\"")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-typeahead")]), _vm._v(">")]), _vm._v("\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-typeahead")]), _vm._v(" \n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("async")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"CCCAddress, async via maps.googleapis.com\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"getResult\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":render")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"render\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":items")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"items\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":add-format")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"googleCallback\"")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-typeahead")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-typeahead")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("async")]), _vm._v(" \n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":context")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"_self\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"Github users, async via api.github.com\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"getGitresults\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":items")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"gitItems\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":render")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"rendergit\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":add-format")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"githubCallback\"")]), _vm._v(" >")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-typeahead")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("data")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("本地数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("limit")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("8")])]), _vm._v(" "), _c('td', [_vm._v("显示的条数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("items")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td', [_vm._v("列表数组，用于异步请求")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("async")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("异步")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("render")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("渲染函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("add-format")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("获取需要的值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("dropdow-width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("下拉宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("dropdown-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("300px")])]), _vm._v(" "), _c('td', [_vm._v("下拉框最大高度")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-71711691", module.exports)
+	  }
+	}
+
+/***/ },
+/* 493 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(494);
+
+/***/ },
+/* 494 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(495)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3StepDocs-29.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-213050c6", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-213050c6", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3StepDocs-29.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 495 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("步骤条")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "步骤条"
+	      }
+	    }, [_c('blockquote', [_c('p', [_vm._v("普通步骤条")])]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-step', {
+	      attrs: {
+	        "labels": ['第一步 我的文案比较长', '第二步', '第三步']
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("前台步骤条")])]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-step', {
+	      attrs: {
+	        "round": "",
+	        "labels": ['第一步 我的文案比较长', '第二步', '第三步'],
+	        "current": 2
+	      }
+	    })], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2)], 1)]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-step")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":labels")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"['第一步 我的文案比较长','第二步','第三步']\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-step")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-step")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("round")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":labels")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"['第一步 我的文案比较长','第二步','第三步']\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":current")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"2\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-step")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("labels")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("文案数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("current")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("1")])]), _vm._v(" "), _c('td', [_vm._v("当前步数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("round")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否为前台步骤条")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-213050c6", module.exports)
+	  }
+	}
+
+/***/ },
+/* 496 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(497);
+
+/***/ },
+/* 497 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(498)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(499)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3SliderDocs-30.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-b26c3504", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-b26c3504", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3SliderDocs-30.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 498 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: 1,
+	      value1: [1, 2]
+	    };
+	  },
+	
+	  methods: {
+	    change: function change(val) {
+	      console.log(val);
+	    }
+	  }
+	};
+
+/***/ },
+/* 499 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("滑块")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "滑块"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-slider', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value),
+	        expression: "value"
+	      }],
+	      attrs: {
+	        "orientation": "vertical"
+	      },
+	      domProps: {
+	        "value": (_vm.value)
+	      },
+	      on: {
+	        "change": _vm.change,
+	        "input": function($event) {
+	          _vm.value = $event
+	        }
+	      }
+	    }), _vm._v(" "), _c('p', [_vm._v("滑块的值: " + _vm._s(_vm.value))]), _vm._v(" "), _c('p', [_c('n3-slider', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value1),
+	        expression: "value1"
+	      }],
+	      attrs: {
+	        "range": true
+	      },
+	      domProps: {
+	        "value": (_vm.value1)
+	      },
+	      on: {
+	        "change": _vm.change,
+	        "input": function($event) {
+	          _vm.value1 = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('p', [_vm._v("滑块的值: " + _vm._s(_vm.value1))])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-slider")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"change\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("orientation")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"vertical\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-slider")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-slider")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value1\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"change\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":range")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-slider")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("2")]), _vm._v("\n    }\n  },\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    change (val) {\n      "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log(val)\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("min")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("0")])]), _vm._v(" "), _c('td', [_vm._v("最小值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("max")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("0")])]), _vm._v(" "), _c('td', [_vm._v("最大值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("step")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("1")])]), _vm._v(" "), _c('td', [_vm._v("单步增量")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("orientation")]), _vm._v(" "), _c('td', [_vm._v("String"), _c('code', [_vm._v("|")]), _vm._v("horizontal"), _c('code', [_vm._v("|")]), _vm._v("horizontal"), _c('code', [_vm._v("(水平)")]), _vm._v("vertical`(垂直)")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("range")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否范围选择")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("tooltip")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("show")])]), _vm._v(" "), _c('td', [_vm._v("tooltip显示参数 'show' 'hide' 'always'")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否禁用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("formatter")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("格式化tooltip显示内容")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("水平显示的宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("水平显示的宽度")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b26c3504", module.exports)
+	  }
+	}
+
+/***/ },
+/* 500 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(501);
+
+/***/ },
+/* 501 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(502)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3LoadingDocs-31.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-22a379d8", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-22a379d8", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3LoadingDocs-31.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 502 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("加载提示")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "加载提示"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('p', [_vm._v("大图标："), _c('n3-loading', {
+	      attrs: {
+	        "size": "lg"
+	      }
+	    })], 1), _vm._v(" "), _c('p', [_vm._v("默认图标："), _c('n3-loading')], 1), _vm._v(" "), _c('p', [_vm._v("刷新图标："), _c('n3-loading', {
+	      attrs: {
+	        "type": "refresh"
+	      }
+	    })], 1), _vm._v(" "), _c('p', [_vm._v("颜色："), _c('n3-loading', {
+	      attrs: {
+	        "color": "primary"
+	      }
+	    })], 1)]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('p', [_vm._v("居中："), _c('n3-loading', {
+	      attrs: {
+	        "center": ""
+	      }
+	    })], 1)]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("大图标："), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("size")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"lg\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("默认图标："), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(" >")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("刷新图标："), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"refresh\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("颜色："), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("color")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"primary\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("居中："), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("center")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("size")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("图标大小"), _c('code', [_vm._v("lg")]), _vm._v(" "), _c('code', [_vm._v("sm")]), _vm._v(" "), _c('code', [_vm._v("xs")]), _vm._v(" 和默认")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("图标类型 "), _c('code', [_vm._v("refresh")]), _vm._v(" 和默认菊花")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("center")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("居中")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("color")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("颜色")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-22a379d8", module.exports)
+	  }
+	}
+
+/***/ },
+/* 503 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(504);
+
+/***/ },
+/* 504 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(505)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(506)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3PageDocs-32.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-afd46fdc", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-afd46fdc", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3PageDocs-32.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 505 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  methods: {
+	    pagechange: function pagechange(page) {
+	      console.log(page);
+	    }
+	  }
+	};
+
+/***/ },
+/* 506 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("分页")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "分页"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-page', {
+	      attrs: {
+	        "total": 100,
+	        "show-total": true,
+	        "show-sizer": true,
+	        "show-elevator": true
+	      },
+	      on: {
+	        "change": _vm.pagechange
+	      }
+	    }), _vm._v(" "), _c('hr'), _vm._v(" "), _c('n3-page', {
+	      attrs: {
+	        "total": 100,
+	        "simple": ""
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(3)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-page")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":total")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"100\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"pagechange\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":show-total")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":show-sizer")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":show-elevator")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-page")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-page")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":total")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"100\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("simple")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-page")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    pagechange (page) {\n      "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log(page)\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("total")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("总条数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("current")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("当前页数,需要"), _c('code', [_vm._v(".sync")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("pagesize")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("每页条数,需要"), _c('code', [_vm._v(".sync")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("pagesize-opts")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[10, 20, 30, 40]")])]), _vm._v(" "), _c('td', [_vm._v("每页条数选项")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("simple")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("简单分页")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show-total")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("显示全部")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show-elevator")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("显示跳转")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show-sizer")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("显示分页选项")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化时")]), _vm._v(" "), _c('td', [_vm._v("(page, currentPagesize)")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-afd46fdc", module.exports)
+	  }
+	}
+
+/***/ },
+/* 507 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(508);
+
+/***/ },
+/* 508 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(509)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(510)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3DataTableDocs-33.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-38ba5e0e", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-38ba5e0e", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3DataTableDocs-33.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 509 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  methods: {
+	    change: function change(p, q, s, f) {
+	      console.log(p, q, s, f);
+	    },
+	    refresh: function refresh() {
+	      this.source = [{
+	        key: '小白',
+	        name: '小白',
+	        age: 25,
+	        department: '技术1'
+	      }, {
+	        key: '2',
+	        name: '33',
+	        age: 33,
+	        department: '技术2'
+	      }, {
+	        key: '3',
+	        name: '44',
+	        age: 12,
+	        department: '技术3'
+	      }, {
+	        key: '4',
+	        name: '55',
+	        age: 25,
+	        department: '技术1'
+	      }, {
+	        key: '5',
+	        name: 'l66黑',
+	        age: 33,
+	        department: '技术2'
+	      }, {
+	        key: '61',
+	        name: 'i红6',
+	        age: 122,
+	        department: '技术3'
+	      }, {
+	        key: '73',
+	        name: 'yd白',
+	        age: 2,
+	        department: '技术1'
+	      }, {
+	        key: '81',
+	        name: 'b黑',
+	        age: 332,
+	        department: '技术2'
+	      }];
+	    },
+	    del: function del(key) {
+	      for (var i in this.source) {
+	        if (key === this.source[i]['key']) {
+	          this.source.splice(i, 1);
+	        }
+	      }
+	    }
+	  },
+	
+	  data: function data() {
+	    return {
+	      selection: {
+	        checkRows: [],
+	        onSelect: function onSelect(record, checked, checkRows) {},
+	        onSelectAll: function onSelectAll(checked, checkRows, changeRows) {},
+	        getCheckboxProps: function getCheckboxProps(record) {
+	          if (record.key == 2) {
+	            return {
+	              checked: true,
+	              disabled: true
+	            };
+	          } else {
+	            return {
+	              disabled: false
+	            };
+	          }
+	        }
+	      },
+	      loading: false,
+	      pagination: {
+	        current: 1,
+	        total: 10,
+	        pagesize: 10
+	      },
+	      filterList: [{
+	        title: '姓名',
+	        dataIndex: 'name',
+	        options: [{ value: 'v白', label: 'v白' }, { value: 't红', label: 't红' }]
+	      }],
+	      columns: [{
+	        title: '姓名',
+	        dataIndex: 'name',
+	        sort: true,
+	        width: '100px',
+	        filter: true
+	      }, {
+	        title: '年龄',
+	        dataIndex: 'age',
+	        sort: true,
+	        sortType: 'DESC',
+	        sortMethod: function sortMethod(x, y) {
+	          return x.age - y.age;
+	        },
+	
+	        filter: true,
+	        render: function render(text, record) {
+	          return '<a href="javascript:;">' + text + '</a>';
+	        }
+	      }, {
+	        title: '部门',
+	        dataIndex: 'department'
+	      }, {
+	        title: '操作',
+	        dataIndex: '',
+	        render: function render(text, record, index) {
+	          return '<span class="item">\n                    <a href="javascript:;" @click="del(\'' + record.key + '\',\'' + index + '\')">\u5220\u9664</a>\n                  </span>';
+	        }
+	      }],
+	      source: [{
+	        key: '1',
+	        name: '小白',
+	        age: 25,
+	        department: '技术1'
+	      }, {
+	        key: '2',
+	        name: '小黑',
+	        age: 33,
+	        department: '技术2'
+	      }, {
+	        key: '3',
+	        name: '小红',
+	        age: 12,
+	        department: '技术3'
+	      }, {
+	        key: '4',
+	        name: 'v白',
+	        age: 25,
+	        department: '技术1'
+	      }, {
+	        key: '5',
+	        name: 'l黑',
+	        age: 33,
+	        department: '技术2'
+	      }, {
+	        key: '6',
+	        name: 'i红',
+	        age: 122,
+	        department: '技术3'
+	      }, {
+	        key: '7',
+	        name: 'y白',
+	        age: 2,
+	        department: '技术1'
+	      }, {
+	        key: '8',
+	        name: 'b黑',
+	        age: 332,
+	        department: '技术2'
+	      }, {
+	        key: '9',
+	        name: 't红',
+	        age: 124,
+	        department: '技术3'
+	      }, {
+	        key: '10',
+	        name: 'f白',
+	        age: 253,
+	        department: '技术1'
+	      }, {
+	        key: '11',
+	        name: 'a黑',
+	        age: 31,
+	        department: '技术2'
+	      }, {
+	        key: '12',
+	        name: 'd红',
+	        age: 31,
+	        department: '技术3'
+	      }]
+	    };
+	  }
+	};
+
+/***/ },
+/* 510 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("数据表格")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "数据表格"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('h4', [_vm._v("Table")]), _vm._v(" "), _c('p', [_c('n3-data-table', {
+	      attrs: {
+	        "selection": _vm.selection,
+	        "source": _vm.source,
+	        "columns": _vm.columns,
+	        "refresh": _vm.refresh
+	      }
+	    })], 1)]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h4', [_vm._v("selection")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h4', [_vm._v("filter-list")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h4', [_vm._v("merge-rule")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h4', [_vm._v("pagination")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h4', [_vm._v("@change")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(7)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-data-table")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":selection")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"selection\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":source")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"source\"")]), _vm._v(" \n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":columns")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"columns\"")]), _vm._v(" \n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":refresh")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"refresh\"")]), _vm._v("\n>")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-data-table")]), _vm._v(">")]), _vm._v("\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("{\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("checkRows")]), _vm._v(":[],\n  onSelect (record, checked, checkRows) {},\n  onSelectAll (checked, checkRows, changeRows) {},\n  getCheckboxProps(record){\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("if")]), _vm._v("(record.key == "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("2")]), _vm._v("){\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("checked")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-literal"
+	  }, [_vm._v("true")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-literal"
+	  }, [_vm._v("true")]), _vm._v("\n      }\n    }"), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("else")]), _vm._v("{\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-literal"
+	  }, [_vm._v("false")]), _vm._v("\n      }\n    }\n  }\n}\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("\n[{\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("title")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'姓名'")]), _vm._v(",\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("dataIndex")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'name'")]), _vm._v(",\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("options")]), _vm._v(":[{"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"v白\"")]), _vm._v(","), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"v白\"")]), _vm._v("},{"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"t红\"")]), _vm._v(","), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"t红\"")]), _vm._v("}],\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v(":[],\n  "), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("// multiple,search,extra")]), _vm._v("\n}]\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("\n{\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v(":{\n    "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'小白'")]), _vm._v(": {"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("rowspan")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("2")]), _vm._v("},\n    "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'v白'")]), _vm._v(": {"), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("rowspan")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("0")]), _vm._v("}\n  }\n}\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("\n{\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("current")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("5")]), _vm._v(",\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("total")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("10")]), _vm._v(",\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("pagesize")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("10")]), _vm._v("\n}\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("\n"), _c('span', {
+	    staticClass: "hljs-function"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("function")]), _vm._v("("), _c('span', {
+	    staticClass: "hljs-params"
+	  }, [_vm._v("pagination,query,sort,filter")]), _vm._v(")")]), _vm._v("{\n  "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("var")]), _vm._v(" data = {\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("start")]), _vm._v(":(pagination.current - "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("1")]), _vm._v(") * pagination.pagesize,\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("limit")]), _vm._v(":pagination.pagesize\n  },\n  self = "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(";\n\n  "), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("//根据需要添加其他参数")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".loading = "), _c('span', {
+	    staticClass: "hljs-literal"
+	  }, [_vm._v("true")]), _vm._v("\n  $.ajax({\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("url")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("''")]), _vm._v(",\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("data")]), _vm._v(":data,\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("success")]), _vm._v(":"), _c('span', {
+	    staticClass: "hljs-function"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("function")]), _vm._v("("), _c('span', {
+	    staticClass: "hljs-params"
+	  }, [_vm._v("result")]), _vm._v(")")]), _vm._v("{\n        self.loading = "), _c('span', {
+	    staticClass: "hljs-literal"
+	  }, [_vm._v("false")]), _vm._v("\n        self.source = result.list\n        self.pagination.total = result.total\n    }\n  })\n}\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("async")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("异步加载，配合change事件来请求服务端数据")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("merge-rule")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("合并规则")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("columns")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("selection")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_c('code', {
+	    staticStyle: {
+	      "color": "red"
+	    }
+	  }, [_vm._v("使用getCheckboxProps来初始化状态")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("sort-column")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("默认全局排序字段")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("source")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("表格数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("page")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否分页")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("search")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否支持搜索")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("filter")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("filter-list")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("自定义过滤器")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("select-col")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否支持选择显示列")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("pagination")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("设置分页")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("loading")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("设置表格的加载中状态")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-38ba5e0e", module.exports)
+	  }
+	}
+
+/***/ },
+/* 511 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(512);
+
+/***/ },
+/* 512 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(513)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3BreadcrumbDocs-34.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-2871f720", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-2871f720", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3BreadcrumbDocs-34.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 513 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("面包屑")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "面包屑"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-breadcrumb', [_c('n3-breadcrumb-item', {
+	      attrs: {
+	        "href": "#"
+	      }
+	    }, [_vm._v("Home")]), _vm._v(" "), _c('n3-breadcrumb-item', {
+	      attrs: {
+	        "href": "#"
+	      }
+	    }, [_vm._v("Library")]), _vm._v(" "), _c('n3-breadcrumb-item', {
+	      attrs: {
+	        "active": ""
+	      }
+	    }, [_vm._v("Data")])], 1)], 1)]), _vm._v(" "), _vm._m(0)]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-breadcrumb")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("href")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"#\"")]), _vm._v(">")]), _vm._v("Home"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("href")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"#\"")]), _vm._v(">")]), _vm._v("Library"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("active")]), _vm._v(">")]), _vm._v("Data"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-breadcrumb")]), _vm._v(">")]), _vm._v("\n")])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2871f720", module.exports)
+	  }
+	}
+
+/***/ },
+/* 514 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(515);
+
+/***/ },
+/* 515 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(516)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(517)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3MultipleInputDocs-35.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-08d031fa", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-08d031fa", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3MultipleInputDocs-35.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 516 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      query: '',
+	      items: [],
+	      a: { list: [] }
+	    };
+	  },
+	
+	  methods: {
+	    focus: function focus() {
+	      console.log(1);
+	    },
+	    render: function render(item) {
+	      return item.formatted_address;
+	    },
+	    getResult: function getResult(query) {
+	      console.log(query, 1);
+	      var self = this;
+	      $.ajax({
+	        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
+	        success: function success(ret) {
+	          self.items = ret.results;
+	        }
+	      });
+	    },
+	    format: function format(item, index) {
+	      var content = typeof item === 'string' ? item : item.formatted_address;
+	      return content;
+	    }
+	  }
+	};
+
+/***/ },
+/* 517 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("自定义输入")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-multiple-input', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.a.list),
+	        expression: "a.list"
+	      }],
+	      attrs: {
+	        "async": true,
+	        "format": _vm.format,
+	        "render": _vm.render,
+	        "items": _vm.items
+	      },
+	      domProps: {
+	        "value": (_vm.a.list)
+	      },
+	      on: {
+	        "focus": _vm.focus,
+	        "inputChange": _vm.getResult,
+	        "input": function($event) {
+	          _vm.a.list = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-multiple-input")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@focus")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"focus\"")]), _vm._v(" \n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@inputChange")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"getResult\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"a.list\"")]), _vm._v(" \n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":format")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"format\"")]), _vm._v(" \n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":render")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"render\"")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":items")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"items\"")]), _vm._v(" >")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-multiple-input")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("methods: {\n  focus () {\n    "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log("), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("1")]), _vm._v(")\n  },\n  render (item) {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" item.formatted_address\n  },\n  getResult (query) {\n    "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log(query, "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("1")]), _vm._v(")\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("let")]), _vm._v(" self = "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v("\n    $.ajax({\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("url")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'https://maps.googleapis.com/maps/api/geocode/json?address='")]), _vm._v(" + query,\n      success (ret) {\n        self.items = ret.results\n      }\n    })\n  },\n  format (item, index) {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("let")]), _vm._v(" content = item.formatted_address\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" content\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("data")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("本地数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("format")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("显示格式化函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("limit")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("8")])]), _vm._v(" "), _c('td', [_vm._v("显示的条数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("items")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td', [_vm._v("列表数组，用于异步请求")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("positionMove")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("输入框位置是否能控制移动")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("async")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("异步")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("render")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("渲染函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("add-format")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("获取需要的值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("dropdow-width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("下拉宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("dropdown-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("300px")])]), _vm._v(" "), _c('td', [_vm._v("下拉框最大高度")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("positionChange")]), _vm._v(" "), _c('td', [_vm._v("位置变化")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("inputChange")]), _vm._v(" "), _c('td', [_vm._v("输入值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-08d031fa", module.exports)
+	  }
+	}
+
+/***/ },
+/* 518 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(519);
+
+/***/ },
+/* 519 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(520)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(521)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TreeDocs-36.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-327025a7", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-327025a7", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3TreeDocs-36.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 520 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      data: [{
+	        label: '新建文件夹1',
+	        children: [{
+	          label: '我的文档1'
+	        }]
+	      }, {
+	        label: '新建文件夹2',
+	        children: [{
+	          label: '我的文档2'
+	        }, {
+	          label: '我的文档3'
+	        }]
+	      }, {
+	        label: '新建文件夹3',
+	        children: [{
+	          label: '新建文件夹4',
+	          children: [{
+	            label: '我的文档6'
+	          }]
+	        }, {
+	          label: '我的文档4'
+	        }, {
+	          label: '我的文档5'
+	        }]
+	      }],
+	      defaultProps: {
+	        children: 'children',
+	        label: 'label'
+	      },
+	      regions: [{
+	        'name': '/root'
+	      }, {
+	        'name': '/home'
+	      }],
+	      props: {
+	        label: 'name',
+	        children: 'zones'
+	      },
+	      count: 1
+	    };
+	  },
+	
+	  methods: {
+	    handleCheckChange: function handleCheckChange(data, checked, indeterminate) {
+	      console.log(data, checked, indeterminate);
+	    },
+	    handleNodeClick: function handleNodeClick(data) {
+	      console.log(data);
+	    },
+	    loadNode: function loadNode(node, resolve) {
+	      var _this = this;
+	
+	      if (node.level === 0) {
+	        return resolve([{ name: '/root' }, { name: '/home' }]);
+	      }
+	      if (node.level > 3) return resolve([]);
+	
+	      var hasChild;
+	      if (node.data.name === '/root') {
+	        hasChild = true;
+	      } else if (node.data.name === '/home') {
+	        hasChild = false;
+	      } else {
+	        hasChild = Math.random() > 0.5;
+	      }
+	
+	      setTimeout(function () {
+	        var data;
+	        if (hasChild) {
+	          data = [{
+	            name: '新建文件夹' + _this.count++
+	          }, {
+	            name: '新建文件夹' + _this.count++
+	          }];
+	        } else {
+	          data = [];
+	        }
+	
+	        resolve(data);
+	      }, 500);
+	    }
+	  }
+	};
+
+/***/ },
+/* 521 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("树形视图")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "树形视图"
+	      }
+	    }, [_c('blockquote', [_c('p', [_vm._v("树形视图（普通）")])]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-tree', {
+	      attrs: {
+	        "data": _vm.data,
+	        "props": _vm.defaultProps
+	      },
+	      on: {
+	        "node-click": _vm.handleNodeClick
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("树形视图（可选中、动态加载）")])]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-tree', {
+	      attrs: {
+	        "data": _vm.regions,
+	        "props": _vm.props,
+	        "load": _vm.loadNode,
+	        "lazy": "",
+	        "show-checkbox": ""
+	      },
+	      on: {
+	        "check-change": _vm.handleCheckChange
+	      }
+	    })], 1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("数据属性props")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("Methods")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(7)], 1)]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tree")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":data")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"data\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":props")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"defaultProps\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@node-click")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"handleNodeClick\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tree")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n  data() {\n    "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("data")]), _vm._v(": [{\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'新建文件夹1'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("children")]), _vm._v(": [{\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'我的文档1'")]), _vm._v("\n        }]\n      }, {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'新建文件夹2'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("children")]), _vm._v(": [{\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'我的文档2'")]), _vm._v("\n        }, {\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'我的文档3'")]), _vm._v("\n        }]\n      }, {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'新建文件夹3'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("children")]), _vm._v(": [{\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'新建文件夹4'")]), _vm._v(",\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("children")]), _vm._v(": [{\n            "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'我的文档6'")]), _vm._v("\n          }]\n        }, {\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'我的文档4'")]), _vm._v("\n        }, {\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'我的文档5'")]), _vm._v("\n        }]\n      }],\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("defaultProps")]), _vm._v(": {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("children")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'children'")]), _vm._v(",\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'label'")]), _vm._v("\n      }\n    }\n  },\n  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n    handleNodeClick(data) {\n      "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log(data)\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tree")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":data")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"regions\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":props")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"props\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":load")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"loadNode\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("lazy")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("show-checkbox")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@check-change")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"handleCheckChange\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-tree")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("default")]), _vm._v(" {\n    data() {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("defaultProps")]), _vm._v(": {\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("children")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'children'")]), _vm._v(",\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'label'")]), _vm._v("\n        },\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("regions")]), _vm._v(": [{\n          "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'name'")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'/root'")]), _vm._v("\n        }, {\n          "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'name'")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'/home'")]), _vm._v("\n        }],\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("props")]), _vm._v(": {\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'name'")]), _vm._v(",\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("children")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'zones'")]), _vm._v("\n        },\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("count")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("1")]), _vm._v("\n      }\n    },\n    "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("methods")]), _vm._v(": {\n      handleCheckChange(data, checked, indeterminate) {\n        "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log(data, checked, indeterminate)\n      },\n      loadNode(node, resolve) {\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("if")]), _vm._v(" (node.level === "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("0")]), _vm._v(") {\n          "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" resolve([{ "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'/root'")]), _vm._v(" }, { "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'/home'")]), _vm._v(" }])\n        }\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("if")]), _vm._v(" (node.level > "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("3")]), _vm._v(") "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" resolve([])\n\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("var")]), _vm._v(" hasChild\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("if")]), _vm._v(" (node.data.name === "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'/root'")]), _vm._v(") {\n          hasChild = "), _c('span', {
+	    staticClass: "hljs-literal"
+	  }, [_vm._v("true")]), _vm._v("\n        } "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("else")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("if")]), _vm._v(" (node.data.name === "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'/home'")]), _vm._v(") {\n          hasChild = "), _c('span', {
+	    staticClass: "hljs-literal"
+	  }, [_vm._v("false")]), _vm._v("\n        } "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("else")]), _vm._v(" {\n          hasChild = "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("Math")]), _vm._v(".random() > "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("0.5")]), _vm._v("\n        }\n\n        setTimeout("), _c('span', {
+	    staticClass: "hljs-function"
+	  }, [_c('span', {
+	    staticClass: "hljs-params"
+	  }, [_vm._v("()")]), _vm._v(" =>")]), _vm._v(" {\n          "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("var")]), _vm._v(" data\n          "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("if")]), _vm._v(" (hasChild) {\n            data = [{\n              "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'新建文件夹'")]), _vm._v(" + "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".count++\n            }, {\n              "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'新建文件夹'")]), _vm._v(" + "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".count++\n            }]\n          } "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("else")]), _vm._v(" {\n            data = []\n          }\n\n          resolve(data)\n        }, "), _c('span', {
+	    staticClass: "hljs-number"
+	  }, [_vm._v("500")]), _vm._v(")\n      }\n    }\n  }\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("data")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td', [_vm._v("展示数据")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("empty-text")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("Empty Content.")]), _vm._v(" "), _c('td', [_vm._v("展示数据为空时展示的文本")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("node-key")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("—")]), _vm._v(" "), _c('td', [_vm._v("每个树节点用来作为唯一标识的属性，整颗树应该是唯一的")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("props")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("—")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("leaf-icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("file")]), _vm._v(" "), _c('td', [_vm._v("叶子节点图标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("child-icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("folder")]), _vm._v(" "), _c('td', [_vm._v("子节点图标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("closed-icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("angle-right")]), _vm._v(" "), _c('td', [_vm._v("关闭时箭头图标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("opened-icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("angle-down")]), _vm._v(" "), _c('td', [_vm._v("打开时箭头图标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("load")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("function(node, resolve) {}")]), _vm._v(" "), _c('td', [_vm._v("加载子树数据的方法")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("render-content")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("function(h, { node }) {}")]), _vm._v(" "), _c('td', [_vm._v("树节点的内容区的渲染方法")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("highlight-current")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否高亮当前选中节点")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("current-node-key")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String, Number")])]), _vm._v(" "), _c('td', [_vm._v("—")]), _vm._v(" "), _c('td', [_vm._v("当前选中节点的 key ，只写属性")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("default-expand-all")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否默认展开所有节点")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("expand-on-click-node")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否在点击节点的时候展开或者收缩节点(如果不则则只有点箭头图标的时候才会展开或者收缩节点。)")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("auto-expand-parent")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("default-expanded-keys")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("—")]), _vm._v(" "), _c('td', [_vm._v("默认展开的节点的 key 的数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show-checkbox")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("节点是否可被勾选")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("check-strictly")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("在显示复选框的情况下，是否严格的遵循父子不互相关联的做法")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("default-checked-keys")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td', [_vm._v("默认勾选的节点的 key 的数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("filter-node-method")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("function(value, data, node)")]), _vm._v(" "), _c('td', [_vm._v("对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示, 反之则为隐藏")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("label")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("label")]), _vm._v(" "), _c('td', [_vm._v("指定节点标签为节点对象的某个属性值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("children")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("children")]), _vm._v(" "), _c('td', [_vm._v("指定子树为节点对象的某个属性值")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("方法名")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("filter")]), _vm._v(" "), _c('td', [_vm._v("对树节点进行筛选操作")]), _vm._v(" "), _c('td', [_vm._v("接收一个任意类型的参数，该参数会在 filter-node-method 中作为第一个参数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("getCheckedNodes")]), _vm._v(" "), _c('td', [_vm._v("若节点可被选择（即 "), _c('code', [_vm._v("show-checkbox")]), _vm._v(" 为 "), _c('code', [_vm._v("true")]), _vm._v("），则返回目前被选中的节点所组成的数组")]), _vm._v(" "), _c('td', [_vm._v("(leafOnly) 接收一个 boolean 类型的参数，若为 "), _c('code', [_vm._v("true")]), _vm._v(" 则仅返回被选中的叶子节点，默认值为 "), _c('code', [_vm._v("false")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("setCheckedNodes")]), _vm._v(" "), _c('td', [_vm._v("设置目前勾选的节点，使用此方法必须设置 node-key 属性")]), _vm._v(" "), _c('td', [_vm._v("(nodes) 接收勾选节点数据的数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("getCheckedKeys")]), _vm._v(" "), _c('td', [_vm._v("若节点可被选择（即 "), _c('code', [_vm._v("show-checkbox")]), _vm._v(" 为 "), _c('code', [_vm._v("true")]), _vm._v("），则返回目前被选中的节点所组成的数组")]), _vm._v(" "), _c('td', [_vm._v("(leafOnly) 接收一个 boolean 类型的参数，若为 "), _c('code', [_vm._v("true")]), _vm._v(" 则仅返回被选中的叶子节点的 keys，默认值为 "), _c('code', [_vm._v("true")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("setCheckedKeys")]), _vm._v(" "), _c('td', [_vm._v("通过 keys 设置目前勾选的节点，使用此方法必须设置 node-key 属性")]), _vm._v(" "), _c('td', [_vm._v("(keys, leafOnly) 接收两个参数，1. 勾选节点的 key 的数组 2. boolean 类型的参数，若为 "), _c('code', [_vm._v("true")]), _vm._v(" 则仅设置叶子节点的选中状态，默认值为 "), _c('code', [_vm._v("true")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("setChecked")]), _vm._v(" "), _c('td', [_vm._v("通过 key / data 设置某个节点的勾选状态，使用此方法必须设置 node-key 属性")]), _vm._v(" "), _c('td', [_vm._v("(key/data, checked, deep) 接收三个参数，1. 勾选节点的 key 或者 data 2. boolean 类型，节点是否选中  3. boolean 类型，是否设置子节点 ，默认为 false")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("node-click")]), _vm._v(" "), _c('td', [_vm._v("节点被点击时的回调")]), _vm._v(" "), _c('td', [_vm._v("共三个参数，依次为：传递给 "), _c('code', [_vm._v("data")]), _vm._v(" 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("check-change")]), _vm._v(" "), _c('td', [_vm._v("节点选中状态发生变化时的回调")]), _vm._v(" "), _c('td', [_vm._v("共三个参数，依次为：传递给 "), _c('code', [_vm._v("data")]), _vm._v(" 属性的数组中该节点所对应的对象、节点本身是否被选中、节点的子树中是否有被选中的节点")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("current-change")]), _vm._v(" "), _c('td', [_vm._v("当前选中节点变化时触发的事件")]), _vm._v(" "), _c('td', [_vm._v("共两个参数，依次为：当前节点的数据，当前节点的 Node 对象")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-327025a7", module.exports)
+	  }
+	}
+
+/***/ },
+/* 522 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(523);
+
+/***/ },
+/* 523 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(524)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(525)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3RateDocs-37.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-78ba66a6", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-78ba66a6", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3RateDocs-37.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 524 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      value: 3
+	    };
+	  }
+	};
+
+/***/ },
+/* 525 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("评分")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "评分"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-rate', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.value),
+	        expression: "value"
+	      }],
+	      attrs: {
+	        "allow-half": true
+	      },
+	      domProps: {
+	        "value": (_vm.value)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.value = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-rate")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"value\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":allow-half")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"true\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-rate")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody')])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-78ba66a6", module.exports)
+	  }
+	}
+
+/***/ },
+/* 526 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(527);
+
+/***/ },
+/* 527 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(528)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(529)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3UploaderDocs-38.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-4d5e1bd9", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-4d5e1bd9", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3UploaderDocs-38.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 528 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	
+	exports.default = {
+	  data: function data() {
+	    return {};
+	  }
+	};
+
+/***/ },
+/* 529 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("文件上传")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "文件上传"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('h4', [_vm._v("点击")]), _vm._v(" "), _c('n3-uploader', {
+	      attrs: {
+	        "url": ""
+	      }
+	    }), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p'), _c('h4', [_vm._v("拖拽")]), _vm._v(" "), _c('n3-uploader', {
+	      attrs: {
+	        "type": "drag"
+	      }
+	    }), _c('p')], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- 点击上传 -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-uploader")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("url")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"\"")]), _vm._v(">")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-uploader")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!-- 拖拽上传 -->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-uploader")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"drag\"")]), _vm._v(" >")]), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-uploader")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("name")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("files")]), _vm._v(" "), _c('td', [_vm._v("文件对象的name")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v("："), _c('code', [_vm._v("click")]), _vm._v(" 或 "), _c('code', [_vm._v("drag")])]), _vm._v(" "), _c('td', [_vm._v("click")]), _vm._v(" "), _c('td', [_vm._v("拖拽或者点击")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("accept")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("'' (全支持)")]), _vm._v(" "), _c('td', [_vm._v("支持的文件类型 例如: "), _c('code', [_vm._v("'image/jpeg'")]), _vm._v(" 或者 "), _c('code', [_vm._v("'image'")]), _vm._v("支持所有图片格式,多个如 "), _c('code', [_vm._v("'txt|image|mp3'")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("url")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("上传地址")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("params")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("上传参数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("multiple")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("true")]), _vm._v(" "), _c('td', [_vm._v("支持多文件上传")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("drag-width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("300px")]), _vm._v(" "), _c('td', [_vm._v("拖拽框宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("drag-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("200px")]), _vm._v(" "), _c('td', [_vm._v("拖拽框高度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("max-length")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_vm._v("10")]), _vm._v(" "), _c('td', [_vm._v("上传文件个数限制")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("success")]), _vm._v(" "), _c('td', [_vm._v("成功上传回调时")]), _vm._v(" "), _c('td', [_vm._v("({response, file})")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("finish")]), _vm._v(" "), _c('td', [_vm._v("完成所有上传任务时")]), _vm._v(" "), _c('td', [_vm._v("()")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("delete")]), _vm._v(" "), _c('td', [_vm._v("删除一个上传的项目时")]), _vm._v(" "), _c('td', [_vm._v("(uploadItem)")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("error")]), _vm._v(" "), _c('td', [_vm._v("发生错误时")]), _vm._v(" "), _c('td', [_vm._v("({message, file})")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4d5e1bd9", module.exports)
+	  }
+	}
+
+/***/ },
+/* 530 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(531);
+
+/***/ },
+/* 531 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(532)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(533)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3FormDocs-39.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-05948178", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-05948178", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3FormDocs-39.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 532 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      profession: [{
+	        value: '学生',
+	        label: '学生'
+	      }, {
+	        value: '工程师',
+	        label: '工程师'
+	      }, {
+	        value: '医生',
+	        label: '医生'
+	      }],
+	      model: {
+	        name: '',
+	        age: '',
+	        address: [],
+	        birthday: '',
+	        sex: '',
+	        school: '',
+	        hobby: [],
+	        profession: '',
+	        state: false,
+	        star: [],
+	        suggestion: ''
+	      },
+	      schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],
+	      sexOptions: [{
+	        value: '1',
+	        label: '男'
+	      }, {
+	        value: '0',
+	        label: '女'
+	      }],
+	      options: [{
+	        value: 'zhejiang',
+	        label: '浙江',
+	        children: [{
+	          value: 'hangzhou',
+	          label: '杭州',
+	          children: [{
+	            value: 'xihu',
+	            label: '西湖'
+	          }]
+	        }]
+	      }, {
+	        value: 'jiangsu',
+	        label: '江苏',
+	        children: [{
+	          value: 'nanjing',
+	          label: '南京',
+	          children: [{
+	            value: 'zhonghuamen',
+	            label: '中华门'
+	          }]
+	        }]
+	      }],
+	      validate: false,
+	      result: {}
+	    };
+	  },
+	
+	  methods: {
+	    nameValidate: function nameValidate(val) {
+	      if (/[\u4E00-\u9FA5\uF900-\uFA2D]/.test(val)) {
+	        return {
+	          validStatus: 'success'
+	        };
+	      } else {
+	        return {
+	          validStatus: 'error',
+	          tips: '请输入中文名'
+	        };
+	      }
+	    },
+	    submit: function submit() {
+	      this.$refs.form.validateFields(function (result) {
+	        console.log(result);
+	      });
+	    }
+	  }
+	};
+
+/***/ },
+/* 533 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("表单")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-form', {
+	      ref: "form"
+	    }, [_c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "姓名",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-input', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.name),
+	        expression: "model.name"
+	      }],
+	      attrs: {
+	        "name": "name",
+	        "rules": [{
+	          type: 'required'
+	        }],
+	        "custom-validate": _vm.nameValidate
+	      },
+	      domProps: {
+	        "value": (_vm.model.name)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.name = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "年龄",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-input-number', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.age),
+	        expression: "model.age"
+	      }],
+	      attrs: {
+	        "name": "age",
+	        "rules": [{
+	          type: 'number'
+	        }, {
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.age)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.age = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "地址",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-cascader', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.address),
+	        expression: "model.address"
+	      }],
+	      attrs: {
+	        "name": "address",
+	        "options": _vm.options,
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.address)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.address = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "生日",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-datepicker', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.birthday),
+	        expression: "model.birthday"
+	      }],
+	      attrs: {
+	        "name": "birthday",
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.birthday)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.birthday = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "学校",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-typeahead', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.school),
+	        expression: "model.school"
+	      }],
+	      attrs: {
+	        "name": "学校",
+	        "data": _vm.schoolData,
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.school)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.school = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "爱好",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-checkbox-group', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.hobby),
+	        expression: "model.hobby"
+	      }],
+	      attrs: {
+	        "name": "hobby",
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.hobby)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.hobby = $event
+	        }
+	      }
+	    }, [_c('n3-checkbox', {
+	      attrs: {
+	        "label": "0"
+	      }
+	    }, [_vm._v("看书")]), _vm._v(" "), _c('n3-checkbox', {
+	      attrs: {
+	        "label": "1"
+	      }
+	    }, [_vm._v("运动")]), _vm._v(" "), _c('n3-checkbox', {
+	      attrs: {
+	        "value": "2"
+	      }
+	    }, [_vm._v("旅行")])], 1)], 1)], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "性别",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-radio-group', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.sex),
+	        expression: "model.sex"
+	      }],
+	      attrs: {
+	        "name": "sex",
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.sex)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.sex = $event
+	        }
+	      }
+	    }, [_c('n3-radio', {
+	      attrs: {
+	        "label": "0"
+	      }
+	    }, [_vm._v("男")]), _vm._v(" "), _c('n3-radio', {
+	      attrs: {
+	        "label": "1"
+	      }
+	    }, [_vm._v("女")])], 1)], 1)], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "专业",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-select', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.profession),
+	        expression: "model.profession"
+	      }],
+	      attrs: {
+	        "name": "sex",
+	        "options": _vm.profession,
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.profession)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.profession = $event
+	        }
+	      }
+	    })], 1)], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "级别",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-slider', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.level),
+	        expression: "model.level"
+	      }],
+	      attrs: {
+	        "name": "level",
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.level)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.level = $event
+	        }
+	      }
+	    })], 1)], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "开启状态",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-switch', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.state),
+	        expression: "model.state"
+	      }],
+	      attrs: {
+	        "name": "state",
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.state)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.state = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "喜欢的明星",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-multiple-input', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.star),
+	        expression: "model.star"
+	      }],
+	      attrs: {
+	        "name": "star",
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.star)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.star = $event
+	        }
+	      }
+	    })], 1), _vm._v(" "), _c('n3-form-item', {
+	      attrs: {
+	        "need": "",
+	        "label": "想说的话",
+	        "label-col": 3
+	      }
+	    }, [_c('n3-textarea', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.model.suggestion),
+	        expression: "model.suggestion"
+	      }],
+	      attrs: {
+	        "name": "suggestion",
+	        "rules": [{
+	          type: 'required'
+	        }]
+	      },
+	      domProps: {
+	        "value": (_vm.model.suggestion)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.model.suggestion = $event
+	        }
+	      }
+	    })], 1)], 1), _vm._v(" "), _c('n3-form-item', [_c('n3-button', {
+	      attrs: {
+	        "type": "primary"
+	      },
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.submit($event)
+	        }
+	      }
+	    }, [_vm._v("提交")])], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("n3-from参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("方法")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("n3-from-item参数")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("待验证组件参数")]), _vm._v(" "), _vm._m(6)], 1)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'form'")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"姓名\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"name\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.name\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":custom-validate")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"nameValidate\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"年龄\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input-number")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"age\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.age\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'number'},{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input-number")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"地址\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-cascader")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"address\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":options")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"options\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.address\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-cascader")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"生日\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-datepicker")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"birthday\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.birthday\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-datepicker")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"学校\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-typeahead")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"学校\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.school\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":data")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"schoolData\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-typeahead")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"爱好\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-group")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"hobby\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.hobby\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"0\"")]), _vm._v(">")]), _vm._v("看书"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"1\"")]), _vm._v(">")]), _vm._v("运动"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"2\"")]), _vm._v(">")]), _vm._v("旅行"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-group")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"性别\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-group")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"sex\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.sex\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"0\"")]), _vm._v(">")]), _vm._v("男"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"1\"")]), _vm._v(">")]), _vm._v("女"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-group")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"专业\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"sex\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":options")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'profession'")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.profession\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"级别\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-slider")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"level\"")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.level\"")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-slider")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"开启状态\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-switch")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"state\"")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.state\"")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-switch")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"喜欢的明星\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-multiple-input")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"star\"")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.star\"")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-multiple-input")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"想说的话\"")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-textarea")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"suggestion\"")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"model.suggestion\"")]), _vm._v("\n        "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-textarea")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n   "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n       "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"primary\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"submit\"")]), _vm._v(" >")]), _vm._v("提交"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-form")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-javascript"
+	  }, [_vm._v("  methods: {\n    nameValidate (val) {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("if")]), _vm._v(" ("), _c('span', {
+	    staticClass: "hljs-regexp"
+	  }, [_vm._v("/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/")]), _vm._v(".test(val)) {\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("validStatus")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'success'")]), _vm._v("\n        }\n      } "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("else")]), _vm._v(" {\n        "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("return")]), _vm._v(" {\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("validStatus")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'error'")]), _vm._v(",\n          "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("tips")]), _vm._v(": "), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("'请输入中文名'")]), _vm._v("\n        }\n      }\n    },\n    submit () {\n      "), _c('span', {
+	    staticClass: "hljs-keyword"
+	  }, [_vm._v("this")]), _vm._v(".$refs.form.validateFields("), _c('span', {
+	    staticClass: "hljs-function"
+	  }, [_c('span', {
+	    staticClass: "hljs-params"
+	  }, [_vm._v("result")]), _vm._v(" =>")]), _vm._v(" {\n        "), _c('span', {
+	    staticClass: "hljs-built_in"
+	  }, [_vm._v("console")]), _vm._v(".log(result)\n     })\n    }\n  }\n}\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_vm._v("String")]), _vm._v(" "), _c('td', [_vm._v("horizontal")]), _vm._v(" "), _c('td', [_vm._v("布局方式  horizontal,inline")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("validate")]), _vm._v(" "), _c('td', [_vm._v("Boolean")]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("是否打开验证")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("validateChange")]), _vm._v(" "), _c('td', [_vm._v("校验结果变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("validateFields")]), _vm._v(" "), _c('td', [_vm._v("校验")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("label")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td', [_vm._v("表单项说明")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("label-col")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("2")])]), _vm._v(" "), _c('td', [_vm._v("表单项说明所占栅格数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("wrap-col")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("12")])]), _vm._v(" "), _c('td', [_vm._v("表单项所占栅格数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("form-col")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("10")])]), _vm._v(" "), _c('td', [_vm._v("表单元素所占栅格数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("need")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("必填标示红点")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("name")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td', [_vm._v("标示输入项，与结果内的值对应")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("readonly")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("只读")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("禁止改变值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placeholder")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td', [_vm._v("placeholder")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("custom－validate")]), _vm._v(" "), _c('td', [_vm._v("Function`")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("自定义校验器")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("name")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("rules")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td', [_vm._v("验证规则,如 "), _c('code', [_vm._v("[{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]")])])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-05948178", module.exports)
+	  }
+	}
+
+/***/ },
+/* 534 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(535);
+
+/***/ },
+/* 535 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(536)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(537)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3CheckboxDocs-40.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-2abb83fb", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-2abb83fb", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3CheckboxDocs-40.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 536 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      single: false,
+	      checkboxValue: []
+	    };
+	  }
+	};
+
+/***/ },
+/* 537 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("多选框")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('h4', [_vm._v("Checkbox")]), _vm._v(" "), _c('n3-checkbox', {
+	      attrs: {
+	        "label": "single"
+	      }
+	    }, [_vm._v("single")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('hr'), _vm._v(" "), _c('n3-checkbox-group', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.checkboxValue),
+	        expression: "checkboxValue"
+	      }],
+	      domProps: {
+	        "value": (_vm.checkboxValue)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.checkboxValue = $event
+	        }
+	      }
+	    }, [_c('n3-checkbox-btn', {
+	      attrs: {
+	        "label": "left",
+	        "disabled": ""
+	      }
+	    }, [_vm._v("Left")]), _vm._v(" "), _c('n3-checkbox-btn', {
+	      attrs: {
+	        "label": "middle",
+	        "checked": ""
+	      }
+	    }, [_vm._v("Middle")]), _vm._v(" "), _c('n3-checkbox-btn', {
+	      attrs: {
+	        "label": "right"
+	      }
+	    }, [_vm._v("Right")])], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('n3-checkbox-group', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.checkboxValue),
+	        expression: "checkboxValue"
+	      }],
+	      domProps: {
+	        "value": (_vm.checkboxValue)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.checkboxValue = $event
+	        }
+	      }
+	    }, [_c('n3-checkbox', {
+	      attrs: {
+	        "label": "left",
+	        "disabled": ""
+	      }
+	    }, [_vm._v("Left")]), _vm._v(" "), _c('n3-checkbox', {
+	      attrs: {
+	        "label": "middle",
+	        "checked": ""
+	      }
+	    }, [_vm._v("Middle")]), _vm._v(" "), _c('n3-checkbox', {
+	      attrs: {
+	        "label": "right"
+	      }
+	    }, [_vm._v("Right")])], 1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Group 参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("Group Events")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("Checkbox 参数")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("Checkbox Events")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)], 1)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"single\"")]), _vm._v(">")]), _vm._v("single"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-group")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"checkboxValue\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("Left"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"middle\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("checked")]), _vm._v(">")]), _vm._v("Middle"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("Right"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-group")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-group")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"checkboxValue\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("Left"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"middle\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("checked")]), _vm._v(">")]), _vm._v("Middle"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("Right"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-checkbox-group")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("选项")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("radio")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("radio,button")]), _vm._v(" 使用options时起作用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("选项")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")]), _vm._v(" "), _c('td', [_vm._v("(currentValue)")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("禁用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("checked")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("选中")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")]), _vm._v(" "), _c('td', [_vm._v("(currentValue)")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2abb83fb", module.exports)
+	  }
+	}
+
+/***/ },
+/* 538 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(539);
+
+/***/ },
+/* 539 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(540)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(541)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3RadioDocs-41.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-511e14d8", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-511e14d8", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3RadioDocs-41.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 540 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      radioValue: ''
+	    };
+	  }
+	};
+
+/***/ },
+/* 541 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("单选框")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('h4', [_vm._v("Radio")]), _vm._v(" "), _c('n3-radio-group', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.radioValue),
+	        expression: "radioValue"
+	      }],
+	      attrs: {
+	        "type": "primary"
+	      },
+	      domProps: {
+	        "value": (_vm.radioValue)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.radioValue = $event
+	        }
+	      }
+	    }, [_c('n3-radio', {
+	      attrs: {
+	        "label": "left",
+	        "disabled": ""
+	      }
+	    }, [_vm._v("Left")]), _vm._v(" "), _c('n3-radio', {
+	      attrs: {
+	        "label": "middle",
+	        "checked": ""
+	      }
+	    }, [_vm._v("Middle")]), _vm._v(" "), _c('n3-radio', {
+	      attrs: {
+	        "label": "right"
+	      }
+	    }, [_vm._v("Right")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('n3-radio-group', {
+	      directives: [{
+	        name: "model",
+	        rawName: "v-model",
+	        value: (_vm.radioValue),
+	        expression: "radioValue"
+	      }],
+	      attrs: {
+	        "type": "primary"
+	      },
+	      domProps: {
+	        "value": (_vm.radioValue)
+	      },
+	      on: {
+	        "input": function($event) {
+	          _vm.radioValue = $event
+	        }
+	      }
+	    }, [_c('n3-radio-btn', {
+	      attrs: {
+	        "label": "left",
+	        "disabled": ""
+	      }
+	    }, [_vm._v("Left")]), _vm._v(" "), _c('n3-radio-btn', {
+	      attrs: {
+	        "label": "middle",
+	        "checked": ""
+	      }
+	    }, [_vm._v("Middle")]), _vm._v(" "), _c('n3-radio-btn', {
+	      attrs: {
+	        "label": "right"
+	      }
+	    }, [_vm._v("Right")])], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("group 参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("radio 参数")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(6)], 1)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-group")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"radioValue\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"primary\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("Left"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"middle\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("checked")]), _vm._v(">")]), _vm._v("Middle"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("Right"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-group")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-group")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"radioValue\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"primary\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-btn")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("Left"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-btn")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-btn")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"middle\"")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("checked")]), _vm._v(">")]), _vm._v("Middle"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-btn")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-btn")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("Right"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-btn")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-radio-group")]), _vm._v(">")]), _vm._v("\n\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("选项")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("radio")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("radio")]), _vm._v(","), _c('code', [_vm._v("button")]), _vm._v(" 使用"), _c('code', [_vm._v("options")]), _vm._v("时起作用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("选项")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("禁用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("checked")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("选中")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
+	    attrs: {
+	      "href": "#n3FormDocs"
+	    }
+	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-511e14d8", module.exports)
+	  }
+	}
+
+/***/ },
+/* 542 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(543);
+
+/***/ },
+/* 543 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(544)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(545)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3CardDocs-42.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-5195dd90", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-5195dd90", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3CardDocs-42.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 544 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {};
+	  }
+	};
+
+/***/ },
+/* 545 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("卡片")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section",
+	      attrs: {
+	        "id": "卡片"
+	      }
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-card', {
+	      staticStyle: {
+	        "padding": "20px"
+	      }
+	    }, [_c('p', [_vm._v("xxxxx")]), _vm._v(" "), _c('p', [_vm._v("xxxxx")]), _vm._v(" "), _c('p', [_vm._v("xxxxx")])])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-card")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("style")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"padding:20px\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("xxxxx"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("xxxxx"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("xxxxx"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-card")]), _vm._v(">")]), _vm._v(" \n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("hover")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否hover效果")])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5195dd90", module.exports)
+	  }
+	}
+
+/***/ },
+/* 546 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(547);
+
+/***/ },
+/* 547 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* styles */
+	__webpack_require__(548)
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(550)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(551)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3AnimateDocs-43.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	__vue_options__._scopeId = "data-v-48d22020"
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-48d22020", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-48d22020", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3AnimateDocs-43.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 548 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(549);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(351)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-48d22020&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AnimateDocs-43.vue", function() {
+				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-48d22020&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AnimateDocs-43.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 549 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(350)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n.content[data-v-48d22020] {\n  box-shadow: 1px 1px 10px #ddd;\n  padding:10px;\n  margin-top: 10px;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3AnimateDocs-43.vue?f6115e6c"],"names":[],"mappings":";AAkDA;EACA,8BAAA;EACA,aAAA;EACA,iBAAA;CACA","file":"n3AnimateDocs-43.vue","sourcesContent":["<template><section><template>\n<h3>动画</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"show=!show\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\">\n    <div v-if=\"show\" class=\"content\">\n        <h4>Title</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n    </div>\n  </transition>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">transition</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">v-if</span>=<span class=\"hljs-string\">\"show\"</span>  <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Title<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">transition</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td>String</td>\n<td>-</td>\n<td><code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .content {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }\n</style>\n<script>\n  export default {\n    data () {\n      return {\n        show: false\n      }\n    }\n  }\n</script>"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 550 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  data: function data() {
+	    return {
+	      show: false
+	    };
+	  }
+	};
+
+/***/ },
+/* 551 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('section', [
+	    [_c('h3', [_vm._v("动画")]), _vm._v(" "), _c('div', {
+	      staticClass: "bs-docs-section"
+	    }, [_c('div', {
+	      staticClass: "bs-example"
+	    }, [_c('n3-button', {
+	      nativeOn: {
+	        "click": function($event) {
+	          _vm.show = !_vm.show
+	        }
+	      }
+	    }, [_vm._v("fadeLeft")]), _vm._v(" "), _c('transition', {
+	      attrs: {
+	        "name": "fadeLeft"
+	      }
+	    }, [(_vm.show) ? _c('div', {
+	      staticClass: "content"
+	    }, [_c('h4', [_vm._v("Title")]), _vm._v(" "), _c('p', [_vm._v("...")]), _vm._v(" "), _c('p', [_vm._v("...")]), _vm._v(" "), _c('p', [_vm._v("...")])]) : _vm._e()])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1)])]
+	  ], 2)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('pre', [_c('code', {
+	    staticClass: "language-html"
+	  }, [_c('span', {
+	    staticClass: "hljs-comment"
+	  }, [_vm._v("<!--作用于( v-if , v-show , v-for) 等元素-->")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v("  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"show=!show\"")]), _vm._v(">")]), _vm._v("fadeLeft"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("transition")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"fadeLeft\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("v-if")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"show\"")]), _vm._v("  "), _c('span', {
+	    staticClass: "hljs-attr"
+	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
+	    staticClass: "hljs-string"
+	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("h4")]), _vm._v(">")]), _vm._v("Title"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("h4")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("..."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("..."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("<"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("..."), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
+	    staticClass: "hljs-tag"
+	  }, [_vm._v("</"), _c('span', {
+	    staticClass: "hljs-name"
+	  }, [_vm._v("transition")]), _vm._v(">")]), _vm._v("\n")])])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("name")]), _vm._v(" "), _c('td', [_vm._v("String")]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("fade")]), _vm._v(" "), _c('code', [_vm._v("fadeLeft")]), _c('code', [_vm._v("fadeDown")]), _c('code', [_vm._v("bounce")]), _c('code', [_vm._v("scale")])])])])])
+	}]}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-48d22020", module.exports)
+	  }
+	}
+
+/***/ },
+/* 552 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	(function () {
+	
+		if (typeof self === 'undefined' || !self.Prism || !self.document) {
+			return;
+		}
+	
+		// The languages map is built automatically with gulp
+		var Languages = /*languages_placeholder[*/{ "css": "CSS", "clike": "C-like", "javascript": "JavaScript", "abap": "ABAP", "actionscript": "ActionScript", "apacheconf": "Apache Configuration", "apl": "APL", "applescript": "AppleScript", "aspnet": "ASP.NET (C#)", "autoit": "AutoIt", "autohotkey": "AutoHotkey", "basic": "BASIC", "csharp": "C#", "cpp": "C++", "coffeescript": "CoffeeScript", "css-extras": "CSS Extras", "fsharp": "F#", "glsl": "GLSL", "http": "HTTP", "inform7": "Inform 7", "latex": "LaTeX", "lolcode": "LOLCODE", "matlab": "MATLAB", "mel": "MEL", "nasm": "NASM", "nginx": "nginx", "nsis": "NSIS", "objectivec": "Objective-C", "ocaml": "OCaml", "php": "PHP", "php-extras": "PHP Extras", "powershell": "PowerShell", "jsx": "React JSX", "rest": "reST (reStructuredText)", "sas": "SAS", "sass": "Sass (Sass)", "scss": "Sass (Scss)", "sql": "SQL", "typescript": "TypeScript", "vhdl": "VHDL", "vim": "vim", "wiki": "Wiki markup", "yaml": "YAML" } /*]*/;
+		Prism.hooks.add('before-highlight', function (env) {
+			var pre = env.element.parentNode;
+			if (!pre || !/pre/i.test(pre.nodeName)) {
+				return;
+			}
+			var language = Languages[env.language] || env.language.substring(0, 1).toUpperCase() + env.language.substring(1);
+			pre.setAttribute('data-language', language);
+		});
+	})();
+
+/***/ },
+/* 553 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', [_c('div', [_c('header-docs', {
+	    staticClass: "freeze",
+	    attrs: {
+	      "active": _vm.type
+	    }
+	  }), _vm._v(" "), (_vm.type === 'base') ? _c('n3-container', {
+	    staticClass: "bs-docs-container"
+	  }, [_c('n3-row', [_c('n3-column', {
+	    attrs: {
+	      "col": 2
+	    }
+	  }, [_c('input', {
+	    directives: [{
+	      name: "model",
+	      rawName: "v-model",
+	      value: (_vm.search),
+	      expression: "search"
+	    }],
+	    staticClass: "searchCom",
+	    attrs: {
+	      "placeholder": "搜索"
+	    },
+	    domProps: {
+	      "value": _vm._s(_vm.search)
+	    },
+	    on: {
+	      "input": function($event) {
+	        if ($event.target.composing) { return; }
+	        _vm.search = $event.target.value
+	      }
+	    }
+	  }), _vm._v(" "), _c('n3-nav', {
+	    attrs: {
+	      "type": "vertical"
+	    }
+	  }, _vm._l((_vm.list), function(item, index) {
+	    return _c('n3-nav-item', [_c('n3-sub-nav', {
+	      attrs: {
+	        "show": item.show
+	      },
+	      on: {
+	        "toggle": function($event) {
+	          _vm.handleToggle(item)
+	        }
+	      }
+	    }, [_c('a', {
+	      staticStyle: {
+	        "color": "#333"
+	      },
+	      domProps: {
+	        "textContent": _vm._s(index)
+	      },
+	      slot: "title"
+	    }), _vm._v(" "), _vm._l((item.list), function(i) {
+	      return _c('n3-nav-item', {
+	        attrs: {
+	          "active": _vm.component == i.value
+	        },
+	        nativeOn: {
+	          "click": function($event) {
+	            _vm.change(i.value)
+	          }
+	        }
+	      }, [_c('a', {
+	        domProps: {
+	          "textContent": _vm._s(i.label)
+	        }
+	      })])
+	    })], 2)], 1)
+	  }))], 1), _vm._v(" "), _c('n3-column', {
+	    attrs: {
+	      "col": 10
+	    }
+	  }, [_c(_vm.component, {
+	    tag: "component"
+	  })], 1), _vm._v(" "), _c('n3-row')], 1)], 1) : [_vm._t("default")]], 2), _vm._v(" "), _c('footer', {
+	    staticClass: "bs-docs-footer"
+	  }, [_c('n3-container', [_c('ul', [_c('li', [_c('span', [_vm._v("Email:")]), _vm._v("zhangking520@gmail.com")]), _vm._v(" "), _c('li', [_c('span', [_vm._v("Github:")]), _c('a', {
+	    attrs: {
+	      "href": "https://github.com/N3-components/N3-components"
+	    }
+	  }, [_vm._v("Repository")])]), _vm._v(" "), _c('li', [_c('span', [_vm._v("QQ Group:")]), _vm._v("556286036")]), _vm._v(" "), _c('li', [_c('span', [_vm._v("gitter:")]), _c('a', {
+	    attrs: {
+	      "href": "https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link"
+	    }
+	  }, [_vm._v("gitter link")])])])])], 1)])
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-60264382", module.exports)
+	  }
+	}
+
+/***/ },
+/* 554 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -25318,13120 +38047,12 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 444 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(445)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(449)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/src/n3Modal.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-466d2d7a", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-466d2d7a", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3Modal.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 445 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _getScrollBarWidth = __webpack_require__(446);
-	
-	var _getScrollBarWidth2 = _interopRequireDefault(_getScrollBarWidth);
-	
-	var _EventListener = __webpack_require__(447);
-	
-	var _EventListener2 = _interopRequireDefault(_EventListener);
-	
-	var _n3Button = __webpack_require__(383);
-	
-	var _n3Button2 = _interopRequireDefault(_n3Button);
-	
-	var _element = __webpack_require__(448);
-	
-	var _element2 = _interopRequireDefault(_element);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  name: 'n3Modal',
-	  props: {
-	    title: {
-	      type: String,
-	      default: ''
-	    },
-	    show: {
-	      type: Boolean,
-	      default: false
-	    },
-	    width: {
-	      type: String,
-	      default: '600px'
-	    },
-	    effect: {
-	      type: String,
-	      default: 'fade'
-	    },
-	    backdrop: {
-	      type: Boolean,
-	      default: true
-	    },
-	    prefixCls: {
-	      type: String,
-	      default: 'n3'
-	    }
-	  },
-	  components: {
-	    n3Button: _n3Button2.default
-	  },
-	  computed: {
-	    classObj: function classObj() {
-	      var prefixCls = this.prefixCls,
-	          effect = this.effect;
-	
-	      var klass = {};
-	
-	      klass[prefixCls + '-modal'] = true;
-	      klass[prefixCls + '-modal-' + effect] = true;
-	
-	      return klass;
-	    }
-	  },
-	  data: function data() {
-	    var show = this.show;
-	    return {
-	      isShow: show
-	    };
-	  },
-	
-	  watch: {
-	    isShow: function isShow(val) {
-	      var _this = this;
-	
-	      if (val) {
-	        this.$emit('show');
-	      } else {
-	        this.$emit('hide');
-	      }
-	
-	      var el = this.$el;
-	      var body = document.body;
-	      var scrollBarWidth = (0, _getScrollBarWidth2.default)();
-	      if (val) {
-	        el.querySelector('.' + this.prefixCls + '-modal-content').focus();
-	        el.style.display = 'block';
-	        setTimeout(function () {
-	          return _element2.default.addClass(el, _this.prefixCls + '-modal-in');
-	        }, 0);
-	        _element2.default.addClass(body, this.prefixCls + '-modal-open');
-	        if (!scrollBarWidth) {
-	          _element2.default.addClass(body, this.prefixCls + '-modal-hide-y');
-	        }
-	        if (this.backdrop) {
-	          this._blurModalContentEvent = _EventListener2.default.listen(this.$el, 'click', function (e) {
-	            if (e.target === el) _this.isShow = false;
-	          });
-	        }
-	      } else {
-	        if (this._blurModalContentEvent) this._blurModalContentEvent.remove();
-	        _element2.default.removeClass(el, this.prefixCls + '-modal-in');
-	        setTimeout(function () {
-	          el.style.display = 'none';
-	          _element2.default.removeClass(body, _this.prefixCls + '-modal-open');
-	          _element2.default.removeClass(body, _this.prefixCls + '-modal-hide-y');
-	          body.style.paddingRight = '0';
-	          _this.$emit('closed');
-	        }, 300);
-	      }
-	    }
-	  },
-	  methods: {
-	    close: function close() {
-	      this.isShow = false;
-	    },
-	    open: function open() {
-	      this.isShow = true;
-	    },
-	    confirm: function confirm() {
-	      this.$emit('confirm');
-	    }
-	  }
-	};
-
-/***/ },
-/* 446 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	exports.default = function () {
-	  var inner = document.createElement('p');
-	  inner.style.width = '100%';
-	  inner.style.height = '200px';
-	
-	  var outer = document.createElement('div');
-	  outer.style.position = 'absolute';
-	  outer.style.top = '0px';
-	  outer.style.left = '0px';
-	  outer.style.visibility = 'hidden';
-	  outer.style.width = '200px';
-	  outer.style.height = '150px';
-	  outer.style.overflow = 'hidden';
-	  outer.appendChild(inner);
-	
-	  document.body.appendChild(outer);
-	  var w1 = inner.offsetWidth;
-	  outer.style.overflow = 'scroll';
-	  var w2 = inner.offsetWidth;
-	  if (w1 === w2) w2 = outer.clientWidth;
-	
-	  document.body.removeChild(outer);
-	
-	  return w1 - w2;
-	};
-
-/***/ },
-/* 447 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var EventListener = {
-	  /**
-	   * Listen to DOM events during the bubble phase.
-	   *
-	   * @param {DOMEventTarget} target DOM element to register listener on.
-	   * @param {string} eventType Event type, e.g. 'click' or 'mouseover'.
-	   * @param {function} callback Callback function.
-	   * @return {object} Object with a `remove` method.
-	   */
-	  listen: function listen(target, eventType, callback) {
-	    if (target.addEventListener) {
-	      target.addEventListener(eventType, callback, false);
-	      return {
-	        remove: function remove() {
-	          target.removeEventListener(eventType, callback, false);
-	        }
-	      };
-	    } else if (target.attachEvent) {
-	      target.attachEvent('on' + eventType, callback);
-	      return {
-	        remove: function remove() {
-	          target.detachEvent('on' + eventType, callback);
-	        }
-	      };
-	    }
-	  }
-	};
-	
-	exports.default = EventListener;
-
-/***/ },
-/* 448 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-	
-	// Browser environment sniffing
-	var inBrowser = typeof window !== 'undefined' && Object.prototype.toString.call(window) !== '[object Object]';
-	
-	// UA sniffing for working around browser-specific quirks
-	var UA = inBrowser && window.navigator.userAgent.toLowerCase();
-	var isIE9 = UA && UA.indexOf('msie 9.0') > 0;
-	
-	/**
-	 * For IE9 compat: when both class and :class are present
-	 * getAttribute('class') returns wrong value...
-	 *
-	 * @param {Element} el
-	 * @return {String}
-	 */
-	
-	function getClass(el) {
-	  var classname = el.className;
-	  if ((typeof classname === 'undefined' ? 'undefined' : _typeof(classname)) === 'object') {
-	    classname = classname.baseVal || '';
-	  }
-	  return classname;
-	}
-	
-	/**
-	 * In IE9, setAttribute('class') will result in empty class
-	 * if the element also has the :class attribute; However in
-	 * PhantomJS, setting `className` does not work on SVG elements...
-	 * So we have to do a conditional check here.
-	 *
-	 * @param {Element} el
-	 * @param {String} cls
-	 */
-	
-	function setClass(el, cls) {
-	  /* istanbul ignore if */
-	  if (isIE9 && !/svg$/.test(el.namespaceURI)) {
-	    el.className = cls;
-	  } else {
-	    el.setAttribute('class', cls);
-	  }
-	}
-	
-	/**
-	 * Add class with compatibility for IE & SVG
-	 *
-	 * @param {Element} el
-	 * @param {String} cls
-	 */
-	
-	function addClass(el, cls) {
-	  if (el.classList) {
-	    el.classList.add(cls);
-	  } else {
-	    var cur = ' ' + getClass(el) + ' ';
-	    if (cur.indexOf(' ' + cls + ' ') < 0) {
-	      setClass(el, (cur + cls).trim());
-	    }
-	  }
-	}
-	
-	/**
-	 * Remove class with compatibility for IE & SVG
-	 *
-	 * @param {Element} el
-	 * @param {String} cls
-	 */
-	
-	function removeClass(el, cls) {
-	  if (el.classList) {
-	    el.classList.remove(cls);
-	  } else {
-	    var cur = ' ' + getClass(el) + ' ';
-	    var tar = ' ' + cls + ' ';
-	    while (cur.indexOf(tar) >= 0) {
-	      cur = cur.replace(tar, ' ');
-	    }
-	    setClass(el, cur.trim());
-	  }
-	  if (!el.className) {
-	    el.removeAttribute('class');
-	  }
-	}
-	
-	exports.default = {
-	  getClass: getClass,
-	  removeClass: removeClass,
-	  addClass: addClass,
-	  setClass: setClass,
-	  inBrowser: inBrowser,
-	  UA: UA,
-	  isIE9: isIE9
-	};
-
-/***/ },
-/* 449 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', {
-	    class: _vm.classObj
-	  }, [_c('div', {
-	    class: (_vm.prefixCls + "-modal-dialog"),
-	    style: ({
-	      'width': _vm.width
-	    })
-	  }, [_c('div', {
-	    class: (_vm.prefixCls + "-modal-content")
-	  }, [_vm._t("header", [_c('div', {
-	    class: (_vm.prefixCls + "-modal-header")
-	  }, [_c('button', {
-	    class: (_vm.prefixCls + "-close"),
-	    attrs: {
-	      "type": "button"
-	    },
-	    on: {
-	      "click": _vm.close
-	    }
-	  }, [_c('span', [_vm._v("×")])]), _vm._v(" "), _c('h4', {
-	    class: (_vm.prefixCls + "-modal-title")
-	  }, [_vm._v(_vm._s(_vm.title))])])]), _vm._v(" "), _c('div', {
-	    class: (_vm.prefixCls + "-modal-body")
-	  }, [_vm._t("body")], 2), _vm._v(" "), _vm._t("footer", [_c('div', {
-	    class: (_vm.prefixCls + "-modal-footer")
-	  }, [_c('n3-button', {
-	    nativeOn: {
-	      "click": function($event) {
-	        _vm.close($event)
-	      }
-	    }
-	  }, [_vm._v("取消")]), _vm._v(" "), _c('n3-button', {
-	    attrs: {
-	      "type": "primary"
-	    },
-	    nativeOn: {
-	      "click": function($event) {
-	        _vm.confirm($event)
-	      }
-	    }
-	  }, [_vm._v("确定")])], 1)])], 2)])])
-	},staticRenderFns: []}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-466d2d7a", module.exports)
-	  }
-	}
-
-/***/ },
-/* 450 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("弹出框")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "弹出框"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-button', {
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.showModal($event)
-	        }
-	      }
-	    }, [_vm._v("Show modal")]), _vm._v(" "), _c('n3-modal', {
-	      ref: "modal",
-	      attrs: {
-	        "title": "Modal title",
-	        "effect": "fade",
-	        "width": "400px"
-	      }
-	    }, [_c('div', {
-	      slot: "body"
-	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")])]), _vm._v(" "), _c('n3-button', {
-	      staticClass: "btn btn-success",
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.showBigModal($event)
-	        }
-	      }
-	    }, [_vm._v("Big modal")]), _vm._v(" "), _c('n3-modal', {
-	      ref: "bigModal",
-	      attrs: {
-	        "title": "Big Modal",
-	        "effect": "fade",
-	        "width": "800px"
-	      }
-	    }, [_c('div', {
-	      slot: "body"
-	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")])]), _vm._v(" "), _c('n3-button', {
-	      staticClass: "btn btn-primary",
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.showZoomModal($event)
-	        }
-	      }
-	    }, [_vm._v("Zoom modal")]), _vm._v(" "), _c('n3-modal', {
-	      ref: "zoomModal",
-	      attrs: {
-	        "title": "Zoom Modal",
-	        "effect": "zoom",
-	        "width": "400px"
-	      }
-	    }, [_c('div', {
-	      slot: "body"
-	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")])]), _vm._v(" "), _c('n3-button', {
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.showCustomModal($event)
-	        }
-	      }
-	    }, [_vm._v("Show custom modal")]), _vm._v(" "), _c('n3-modal', {
-	      ref: "customModal",
-	      attrs: {
-	        "effect": "fade",
-	        "width": "400px"
-	      }
-	    }, [_c('div', {
-	      slot: "header"
-	    }), _vm._v(" "), _c('div', {
-	      slot: "body"
-	    }, [_vm._v("\n      What's in a name? That which we call a rose\n      By any other name would smell as sweet.\n    ")]), _vm._v(" "), _c('div', {
-	      slot: "footer"
-	    })]), _vm._v(" "), _c('n3-button', {
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.showConfirm($event)
-	        }
-	      }
-	    }, [_vm._v("Show confirm")]), _vm._v(" "), _c('n3-button', {
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.showAlert($event)
-	        }
-	      }
-	    }, [_vm._v("Show alert")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("用法说明")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('p', [_vm._v("但是如果你需要自己定制弹出框内容，你可以实现")]), _vm._v(" "), _vm._m(4)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"showModal\"")]), _vm._v(">")]), _vm._v("Show modal"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-modal")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Modal title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"400px\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"modal\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-modal")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"btn btn-success\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"showBigModal\"")]), _vm._v(">")]), _vm._v("Big modal"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-modal")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Big Modal\"")]), _vm._v("  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"800px\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"bigModal\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-modal")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"btn btn-primary\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"showZoomModal\"")]), _vm._v(">")]), _vm._v("Zoom modal"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-modal")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Zoom Modal\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"zoom\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"400px\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"zoomModal\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-modal")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"showCustomModal\"")]), _vm._v(">")]), _vm._v("Show custom modal"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-modal")]), _vm._v("  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"400px\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"customModal\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"header\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"footer\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-modal")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("title")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("弹出框标题")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("是否显示,需要"), _c('code', [_vm._v(".sync")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("'fade'")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("fade``zoom")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("600px")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("backdrop")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("点击遮罩层是否关闭弹出框")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("show")]), _vm._v(" "), _c('td', [_vm._v("显示模态框时")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("hide")]), _vm._v(" "), _c('td', [_vm._v("隐藏模态框时")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("confirm")]), _vm._v(" "), _c('td', [_vm._v("按下确认时")]), _vm._v(" "), _c('td')])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("如果你只需要一个简单的弹出框 ，你只需要传递 "), _c('code', [_vm._v("title")]), _vm._v(" 参数 ，将默认带上footer.")])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"header\"")]), _vm._v(">")]), _vm._v("..."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"body\"")]), _vm._v(">")]), _vm._v("..."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"footer\"")]), _vm._v(">")]), _vm._v("..."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n")])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-6cdb916c", module.exports)
-	  }
-	}
-
-/***/ },
-/* 451 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(452);
-
-/***/ },
-/* 452 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(453)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(454)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3InputDocs-17.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-5fac8d8e", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-5fac8d8e", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3InputDocs-17.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 453 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      value: 'ds'
-	    };
-	  }
-	};
-
-/***/ },
-/* 454 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("输入框")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-input', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value),
-	        expression: "value"
-	      }],
-	      ref: "input",
-	      domProps: {
-	        "value": (_vm.value)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.value = $event
-	        }
-	      }
-	    }), _vm._v(" "), _c('n3-button', {
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.$refs.input.focus()
-	        }
-	      }
-	    }, [_vm._v("聚焦")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"input\"")]), _vm._v(" >")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"$refs.input.focus()\"")]), _vm._v(">")]), _vm._v("聚焦"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("password")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("密码输入框")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5fac8d8e", module.exports)
-	  }
-	}
-
-/***/ },
-/* 455 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(456);
-
-/***/ },
-/* 456 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(457)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(458)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3InputNumberDocs-18.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-9af378f4", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-9af378f4", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3InputNumberDocs-18.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 457 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      value: ''
-	    };
-	  }
-	};
-
-/***/ },
-/* 458 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("数字输入框")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-input-number', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value),
-	        expression: "value"
-	      }],
-	      domProps: {
-	        "value": (_vm.value)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.value = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input-number")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input-number")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("max")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("最大值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("min")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("最小值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("step")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("1")])]), _vm._v(" "), _c('td', [_vm._v("增减量值")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-9af378f4", module.exports)
-	  }
-	}
-
-/***/ },
-/* 459 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(460);
-
-/***/ },
-/* 460 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(461)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(462)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TextareaDocs-19.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-113831d0", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-113831d0", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3TextareaDocs-19.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 461 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      value: ''
-	    };
-	  }
-	};
-
-/***/ },
-/* 462 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h2', [_vm._v("文本框")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-textarea', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value),
-	        expression: "value"
-	      }],
-	      domProps: {
-	        "value": (_vm.value)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.value = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-textarea")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v(" >")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-textarea")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("resize")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否支持拖动")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("max-length")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("字符数限制")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("max-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("最大高度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("min-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("最小高度")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-113831d0", module.exports)
-	  }
-	}
-
-/***/ },
-/* 463 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(464);
-
-/***/ },
-/* 464 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(465)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(466)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3NavDocs-20.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-af8a8ea6", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-af8a8ea6", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3NavDocs-20.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 465 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      show1: false,
-	      show2: false
-	    };
-	  }
-	};
-
-/***/ },
-/* 466 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("导航")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-nav', {
-	      attrs: {
-	        "theme": "default"
-	      }
-	    }, [_c('n3-nav-item', {
-	      attrs: {
-	        "active": ""
-	      }
-	    }, [_c('a', [_vm._v("导航一")])]), _vm._v(" "), _c('n3-nav-item', {
-	      attrs: {
-	        "disabled": ""
-	      }
-	    }, [_c('a', [_vm._v("导航二")])]), _vm._v(" "), _c('n3-nav-item', [_c('n3-sub-nav', {
-	      attrs: {
-	        "trigger": "hover",
-	        "show": _vm.show1
-	      },
-	      on: {
-	        "show": function($event) {
-	          _vm.show1 = true
-	        },
-	        "hide": function($event) {
-	          _vm.show1 = false
-	        }
-	      }
-	    }, [_c('a', {
-	      slot: "title"
-	    }, [_vm._v("导航三")]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航一")])]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航二")])]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航三")])])], 1)], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('n3-nav', {
-	      staticStyle: {
-	        "width": "300px"
-	      },
-	      attrs: {
-	        "theme": "dark",
-	        "type": "vertical"
-	      }
-	    }, [_c('n3-nav-item', {
-	      attrs: {
-	        "active": ""
-	      }
-	    }, [_c('a', [_vm._v("导航一")])]), _vm._v(" "), _c('n3-nav-item', {
-	      attrs: {
-	        "disabled": ""
-	      }
-	    }, [_c('a', [_vm._v("导航二")])]), _vm._v(" "), _c('n3-nav-item', [_c('n3-sub-nav', {
-	      attrs: {
-	        "show": _vm.show2
-	      },
-	      on: {
-	        "toggle": function($event) {
-	          _vm.show2 = !_vm.show2
-	        }
-	      }
-	    }, [_c('a', {
-	      slot: "title"
-	    }, [_vm._v("导航三")]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航一")])]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航二")])]), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("子导航三")])])], 1)], 1), _vm._v(" "), _c('n3-nav-item', [_c('a', [_vm._v("导航四")])])], 1), _vm._v(" "), _vm._m(1)], 1), _vm._v(" "), _c('h3', [_vm._v("n3-nav参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("n3-sub-nav参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("n3-nav-item参数")]), _vm._v(" "), _vm._m(4)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("theme")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"default\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("active")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("导航一"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("导航二"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-sub-nav")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"title\"")]), _vm._v(">")]), _vm._v("导航三"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("子导航一"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("子导航二"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("子导航三"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-sub-nav")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("theme")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"dark\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"vertical\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("active")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("导航一"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("导航二"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-sub-nav")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"title\"")]), _vm._v(">")]), _vm._v("导航三"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("子导航一"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("子导航二"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(" >")]), _vm._v("子导航三"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-sub-nav")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(" >")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("导航四"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("a")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-nav")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("horizontal")])]), _vm._v(" "), _c('td', [_vm._v("水平,垂直")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("theme")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("default")])]), _vm._v(" "), _c('td', [_vm._v("颜色   "), _c('code', [_vm._v("default")]), _c('code', [_vm._v("dark")])])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("trigger")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("click")])]), _vm._v(" "), _c('td', [_vm._v("展开方式   "), _c('code', [_vm._v("click")]), _c('code', [_vm._v("hover")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否展开")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("active")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否激活")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否不可用")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-af8a8ea6", module.exports)
-	  }
-	}
-
-/***/ },
-/* 467 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(468);
-
-/***/ },
-/* 468 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(469)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(470)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3PopoverDocs-21.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-7d84a16c", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-7d84a16c", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3PopoverDocs-21.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 469 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      title: 'Title',
-	      text: 'Lorem ipsum dolor sit amet',
-	      item: '1'
-	    };
-	  },
-	
-	  methods: {
-	    del: function del(item) {
-	      return function () {
-	        return new Promise(function (resolve, reject) {
-	          setTimeout(function () {
-	            alert('删除了' + item);
-	            resolve();
-	          }, 500);
-	        });
-	      };
-	    }
-	  }
-	};
-
-/***/ },
-/* 470 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("气泡框")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "气泡框"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-popover', {
-	      attrs: {
-	        "effect": "fade",
-	        "header": true,
-	        "title": "Title",
-	        "placement": "top"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        从前有座山\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on top")])], 1), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "fade",
-	        "header": true,
-	        "title": "Title",
-	        "placement": "left"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        山里有座庙\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on left")])], 1), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "fade",
-	        "header": true,
-	        "title": "Title",
-	        "placement": "right"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        庙里有个老和尚\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on right")])], 1), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "fade",
-	        "placement": "bottom",
-	        "header": true,
-	        "title": "Title"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        老和尚说从前有座山\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on bottom")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', [_vm._v("No title")]), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "fade",
-	        "header": false,
-	        "title": "Title",
-	        "placement": "top"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        山里有座庙\n      ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on top")])], 1), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "fade",
-	        "header": false,
-	        "title": "Title",
-	        "placement": "left"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        庙里有个老和尚\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on left")])], 1), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "fade",
-	        "header": false,
-	        "title": "Title",
-	        "placement": "right"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        老和尚说从前有座山\n    ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on right")])], 1), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "fade",
-	        "header": false,
-	        "placement": "bottom",
-	        "title": "Title"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        山里有座庙\n      ")]), _vm._v(" "), _c('n3-button', [_vm._v("Popover on bottom")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', [_vm._v("Triger")]), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "scale",
-	        "title": "Title",
-	        "placement": "top",
-	        "trigger": "hover"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n          庙里有个老和尚\n        ")]), _vm._v(" "), _c('n3-button', [_vm._v("Mouseenter")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', [_vm._v("Focus")]), _vm._v(" "), _c('n3-popover', {
-	      attrs: {
-	        "effect": "scale",
-	        "title": "Title",
-	        "placement": "bottom",
-	        "trigger": "focus"
-	      }
-	    }, [_c('div', {
-	      slot: "content"
-	    }, [_vm._v("\n        老和尚很无聊\n    ")]), _vm._v(" "), _c('n3-input', {
-	      attrs: {
-	        "placeholder": "Focus"
-	      }
-	    })], 1), _vm._v(" "), _c('h4', [_vm._v("气泡确认")]), _vm._v(" "), _c('n3-pop-confirm', {
-	      attrs: {
-	        "content": "确定删除么？",
-	        "on-confirm": _vm.del(_vm.item)
-	      }
-	    }, [_c('n3-button', [_vm._v("删除")])], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("popover参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("popconfirm参数")]), _vm._v(" "), _vm._m(3)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":header")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"top\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(" >")]), _vm._v("\n     从前有座山\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on top"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":header")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"left\"")]), _vm._v(">")]), _vm._v("\n   "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      山里有座庙\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on left"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":header")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("\n   "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      庙里有个老和尚\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on right"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":header")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" >")]), _vm._v("\n   "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(" >")]), _vm._v("\n      老和尚说从前有座山\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on bottom"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- No title  -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":header")]), _vm._v(" ="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"false\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"top\"")]), _vm._v(">")]), _vm._v("\n   "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      山里有座庙\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on top"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":header")]), _vm._v(" ="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"false\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"left\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      庙里有个老和尚\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on left"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":header")]), _vm._v(" ="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"false\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      老和尚说从前有座山\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on right"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fade\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":header")]), _vm._v(" ="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"false\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      山里有座庙\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("Popover on bottom"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- Trigger  -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"scale\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"top\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n    庙里有个老和尚\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("Mouseenter"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- Focus  -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"scale\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Title\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"focus\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("slot")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      老和尚很无聊\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Focus\"")]), _vm._v(" >")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-popover")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- 气泡确认  -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-pop-confirm")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"确定删除么？\"")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":on-confirm")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"del(item)\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("删除"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-pop-confirm")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("del(item){\n  "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("new")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("Promise")]), _vm._v("("), _c('span', {
-	    staticClass: "hljs-function"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("function")]), _vm._v("("), _c('span', {
-	    staticClass: "hljs-params"
-	  }, [_vm._v("resolve, reject")]), _vm._v(") ")]), _vm._v("{\n    setTimeout("), _c('span', {
-	    staticClass: "hljs-function"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("function")]), _vm._v("("), _c('span', {
-	    staticClass: "hljs-params"
-	  }), _vm._v(") ")]), _vm._v("{\n      alert("), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'删除了'")]), _vm._v(" +  item)\n      resolve()\n    },"), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("500")]), _vm._v(");\n  });\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("trigger")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("click")]), _vm._v(" "), _c('code', [_vm._v("focus")]), _vm._v(" "), _c('code', [_vm._v("hover")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("click")])]), _vm._v(" "), _c('td', [_vm._v("触发方式")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("scale")]), _vm._v(" "), _c('code', [_vm._v("fade")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("scale")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("title")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("header")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否显示头部")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placement")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("top")]), _vm._v(" "), _c('code', [_vm._v("left")]), _vm._v(" "), _c('code', [_vm._v("right")]), _vm._v(" "), _c('code', [_vm._v("bottom")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("定位")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("scale")]), _vm._v(" "), _c('code', [_vm._v("fade")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("fade")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("content")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placement")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("top")]), _vm._v(" "), _c('code', [_vm._v("left")]), _vm._v(" "), _c('code', [_vm._v("right")]), _vm._v(" "), _c('code', [_vm._v("bottom")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("定位")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("on-confirm")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("点击确定的回调函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("ok-text")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("确定")]), _vm._v(" "), _c('td', [_vm._v("确定按钮的文案")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("cancel-text")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("取消按钮的文案")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7d84a16c", module.exports)
-	  }
-	}
-
-/***/ },
-/* 471 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(472);
-
-/***/ },
-/* 472 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* styles */
-	__webpack_require__(473)
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(475)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(476)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3ProgressbarDocs-22.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-7dd9b3a8"
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-7dd9b3a8", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-7dd9b3a8", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3ProgressbarDocs-22.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 473 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(474);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(351)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-7dd9b3a8&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3ProgressbarDocs-22.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-7dd9b3a8&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3ProgressbarDocs-22.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 474 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(350)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "\n.margin[data-v-7dd9b3a8]{\n  margin-bottom:20px;\n}\n\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3ProgressbarDocs-22.vue?d05f425c"],"names":[],"mappings":";AAoKA;EACA,mBAAA;CACA","file":"n3ProgressbarDocs-22.vue","sourcesContent":["<template><section><template>\n<h3>进度条</h3>\n<div class=\"bs-docs-section\" id=\"进度条\">\n<blockquote>\n<p>高度</p>\n</blockquote>\n<div class=\"bs-example\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"40\" type=\"success\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"20\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">height</span>=<span class=\"hljs-string\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"40\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>动态变化 <n3-button @click.native=\"dynamicClick\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress>\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">dynamicData</span>: [<span class=\"hljs-number\">5</span>, <span class=\"hljs-number\">15</span>, <span class=\"hljs-number\">25</span>, <span class=\"hljs-number\">35</span>, <span class=\"hljs-number\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\">this</span>.dynamicData = <span class=\"hljs-keyword\">this</span>.dynamicData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * <span class=\"hljs-number\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote>\n<p>叠加 <n3-button @click.native=\"stackedClick\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress>\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[0]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[1]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[2]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[3]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">striped</span> &gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">stackedData</span>: [<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">20</span>, <span class=\"hljs-number\">30</span>, <span class=\"hljs-number\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">100</span>\n      <span class=\"hljs-keyword\">this</span>.stackedData = <span class=\"hljs-keyword\">this</span>.stackedData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">const</span> random = <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>now</td>\n<td><code>Number</code></td>\n<td></td>\n<td>当前进度</td>\n</tr>\n<tr>\n<td>height</td>\n<td><code>String</code></td>\n<td>20px</td>\n<td>高度</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>样式</td>\n</tr>\n<tr>\n<td>label</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示进度提示</td>\n</tr>\n<tr>\n<td>striped</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示条纹</td>\n</tr>\n<tr>\n<td>animated</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.margin{\n  margin-bottom:20px;\n}\n\n</style>\n<script>\nexport default {\n  data () {\n    return {\n      dynamicData: [5, 15, 25, 35, 45],\n      stackedData: [10, 20, 30, 40]\n    }\n  },\n  methods: {\n    dynamicClick () {\n      this.dynamicData = this.dynamicData.map(() => {\n        return Math.floor(Math.random() * 50)\n      })\n    },\n    stackedClick () {\n      let i = 100\n      this.stackedData = this.stackedData.map(() => {\n        const random = Math.floor(Math.random() * i)\n        i = i - random\n        return random\n      })\n    }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 475 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      dynamicData: [5, 15, 25, 35, 45],
-	      stackedData: [10, 20, 30, 40]
-	    };
-	  },
-	
-	  methods: {
-	    dynamicClick: function dynamicClick() {
-	      this.dynamicData = this.dynamicData.map(function () {
-	        return Math.floor(Math.random() * 50);
-	      });
-	    },
-	    stackedClick: function stackedClick() {
-	      var i = 100;
-	      this.stackedData = this.stackedData.map(function () {
-	        var random = Math.floor(Math.random() * i);
-	        i = i - random;
-	        return random;
-	      });
-	    }
-	  }
-	};
-
-/***/ },
-/* 476 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("进度条")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "进度条"
-	      }
-	    }, [_c('blockquote', [_c('p', [_vm._v("高度")])]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('div', {
-	      staticClass: "row"
-	    }, [_c('div', {
-	      staticClass: "col-md-4"
-	    }, [_c('n3-progress', {
-	      staticClass: "margin"
-	    }, [_c('n3-progressbar', {
-	      attrs: {
-	        "now": 20,
-	        "type": "success",
-	        "height": "10px"
-	      }
-	    })], 1)], 1), _vm._v(" "), _c('div', {
-	      staticClass: "col-md-4"
-	    }, [_c('n3-progress', {
-	      staticClass: "margin"
-	    }, [_c('n3-progressbar', {
-	      attrs: {
-	        "now": 40,
-	        "type": "success"
-	      }
-	    })], 1)], 1)])]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("动态变化 "), _c('n3-button', {
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.dynamicClick($event)
-	        }
-	      }
-	    }, [_vm._v("随机变化")])], 1)]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-progress', {
-	      staticClass: "margin"
-	    }, [_c('n3-progressbar', {
-	      attrs: {
-	        "now": _vm.dynamicData[0] * 2,
-	        "type": "info"
-	      }
-	    })], 1), _vm._v(" "), _c('n3-progress', {
-	      staticClass: "margin"
-	    }, [_c('n3-progressbar', {
-	      attrs: {
-	        "now": _vm.dynamicData[1] * 2,
-	        "type": "warning"
-	      }
-	    })], 1), _vm._v(" "), _c('n3-progress', {
-	      staticClass: "margin"
-	    }, [_c('n3-progressbar', {
-	      attrs: {
-	        "now": _vm.dynamicData[2] * 2,
-	        "type": "danger"
-	      }
-	    })], 1), _vm._v(" "), _c('n3-progress', [_c('n3-progressbar', {
-	      attrs: {
-	        "now": _vm.dynamicData[3] * 2,
-	        "type": "success",
-	        "striped": ""
-	      }
-	    })], 1)], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("叠加 "), _c('n3-button', {
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.stackedClick($event)
-	        }
-	      }
-	    }, [_vm._v("随机变化")])], 1)]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-progress', [_c('n3-progressbar', {
-	      attrs: {
-	        "now": _vm.stackedData[0],
-	        "label": "",
-	        "type": "warning",
-	        "striped": ""
-	      }
-	    }), _vm._v(" "), _c('n3-progressbar', {
-	      attrs: {
-	        "now": _vm.stackedData[1],
-	        "label": "",
-	        "type": "success"
-	      }
-	    }), _vm._v(" "), _c('n3-progressbar', {
-	      attrs: {
-	        "now": _vm.stackedData[2],
-	        "label": "",
-	        "type": "danger"
-	      }
-	    }), _vm._v(" "), _c('n3-progressbar', {
-	      attrs: {
-	        "now": _vm.stackedData[3],
-	        "label": "",
-	        "type": "primary",
-	        "striped": ""
-	      }
-	    })], 1)], 1), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(5)], 1)]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"20\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"success\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("height")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"10px\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"40\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"success\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"margin\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"dynamicData[0] * 2\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"info\"")]), _vm._v(" >")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"dynamicData[1] * 2\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"warning\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"dynamicData[2] * 2\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"danger\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"margin\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"dynamicData[3] * 2\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"success\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("striped")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("dynamicData")]), _vm._v(": ["), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("5")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("15")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("25")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("35")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("45")]), _vm._v("]\n    }\n  },\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("methods")]), _vm._v(": {\n    dynamicClick () {\n      "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(".dynamicData = "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(".dynamicData.map("), _c('span', {
-	    staticClass: "hljs-function"
-	  }, [_c('span', {
-	    staticClass: "hljs-params"
-	  }, [_vm._v("()")]), _vm._v(" =>")]), _vm._v(" {\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("Math")]), _vm._v(".floor("), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("Math")]), _vm._v(".random() * "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("50")]), _vm._v(")\n      })\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progress")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"stackedData[0]\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"warning\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("striped")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"stackedData[1]\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"success\"")]), _vm._v(" >")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"stackedData[2]\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"danger\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":now")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"stackedData[3]\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"primary\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("striped")]), _vm._v(" >")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-progressbar")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("stackedData")]), _vm._v(": ["), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("10")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("20")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("30")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("40")]), _vm._v("]\n    }\n  },\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("methods")]), _vm._v(": {\n    stackedClick () {\n      "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("let")]), _vm._v(" i = "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("100")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(".stackedData = "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(".stackedData.map("), _c('span', {
-	    staticClass: "hljs-function"
-	  }, [_c('span', {
-	    staticClass: "hljs-params"
-	  }, [_vm._v("()")]), _vm._v(" =>")]), _vm._v(" {\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("const")]), _vm._v(" random = "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("Math")]), _vm._v(".floor("), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("Math")]), _vm._v(".random() * i)\n        i = i - random\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" random\n      })\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("now")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("当前进度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("20px")]), _vm._v(" "), _c('td', [_vm._v("高度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("样式")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("label")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否显示进度提示")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("striped")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否显示条纹")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("animated")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("动画效果")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-7dd9b3a8", module.exports)
-	  }
-	}
-
-/***/ },
-/* 477 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(478);
-
-/***/ },
-/* 478 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(479)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(480)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3SelectDocs-23.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-c7e0ef32", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-c7e0ef32", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3SelectDocs-23.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 479 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      fruitOptions: [{ value: 'apple', label: 'Apple' }, { value: 'banana', label: 'Banana' }, { value: 'cherry', label: 'Cherry' }, { value: 'orange', label: 'Orange' }, { value: 'grape', label: 'Grape' }],
-	      arr: ['apple', 'banana'],
-	      single: 'Apple',
-	      multiple: [],
-	      multipleLimit: [],
-	      custom: []
-	    };
-	  }
-	};
-
-/***/ },
-/* 480 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("选择框")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "选择框"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('blockquote', [_c('p', [_vm._v("单选")])]), _vm._v(" "), _c('p', [_c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.single) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.single),
-	        expression: "single"
-	      }],
-	      attrs: {
-	        "badge": 5
-	      },
-	      domProps: {
-	        "value": (_vm.single)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.single = $event
-	        }
-	      }
-	    }, [_c('n3-option', {
-	      attrs: {
-	        "value": "Apple"
-	      }
-	    }, [_vm._v("Apple")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Banana"
-	      }
-	    }, [_vm._v("Banana")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Cherry"
-	      }
-	    }, [_vm._v("Cherry")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Orange"
-	      }
-	    }, [_vm._v("Orange")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Grape"
-	      }
-	    }, [_vm._v("Grape")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("多选")])]), _vm._v(" "), _c('p', [_c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.multiple.join(', ')) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.multiple),
-	        expression: "multiple"
-	      }],
-	      attrs: {
-	        "multiple": "",
-	        "search": ""
-	      },
-	      domProps: {
-	        "value": (_vm.multiple)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.multiple = $event
-	        }
-	      }
-	    }, [_c('n3-option', {
-	      attrs: {
-	        "value": "Apple"
-	      }
-	    }, [_vm._v("Apple")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Banana"
-	      }
-	    }, [_vm._v("Banana")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Cherry"
-	      }
-	    }, [_vm._v("Cherry")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Orange"
-	      }
-	    }, [_vm._v("Orange")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Grape"
-	      }
-	    }, [_vm._v("Grape")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("多选限制")])]), _vm._v(" "), _c('p', [_c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.multipleLimit.join(', ')) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.multipleLimit),
-	        expression: "multipleLimit"
-	      }],
-	      attrs: {
-	        "multiple": "",
-	        "limit": 2,
-	        "search": "",
-	        "extra": ""
-	      },
-	      domProps: {
-	        "value": (_vm.multipleLimit)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.multipleLimit = $event
-	        }
-	      }
-	    }, [_c('n3-option', {
-	      attrs: {
-	        "value": "Apple"
-	      }
-	    }, [_vm._v("Apple")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Banana"
-	      }
-	    }, [_vm._v("Banana")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Cherry"
-	      }
-	    }, [_vm._v("Cherry")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Orange"
-	      }
-	    }, [_vm._v("Orange")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Grape"
-	      }
-	    }, [_vm._v("Grape")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("自定义内容")])]), _vm._v(" "), _c('p', [_c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.custom.join(', ')) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.custom),
-	        expression: "custom"
-	      }],
-	      attrs: {
-	        "multiple": ""
-	      },
-	      domProps: {
-	        "value": (_vm.custom)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.custom = $event
-	        }
-	      }
-	    }, [_c('n3-option', {
-	      attrs: {
-	        "value": "Star"
-	      }
-	    }, [_c('span', {
-	      staticClass: "n3-fa n3-fa-star"
-	    }), _vm._v(" Star")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Heart"
-	      }
-	    }, [_c('span', {
-	      staticClass: "n3-fa n3-fa-heart"
-	    }), _vm._v(" Heart")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Film"
-	      }
-	    }, [_c('span', {
-	      staticClass: "n3-fa n3-fa-film"
-	    }), _vm._v(" Film")]), _vm._v(" "), _c('n3-option', {
-	      attrs: {
-	        "value": "Inbox"
-	      }
-	    }, [_c('span', {
-	      staticClass: "n3-fa n3-fa-inbox"
-	    }), _vm._v(" Inbox")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("传递数组，支持搜索")])]), _vm._v(" "), _c('p', [_vm._v("\n    支持只传递接json数组，可以支持搜索\n    "), _c('pre', [_vm._v("\nSelect data : " + _vm._s(_vm.arr) + "\n    ")])]), _vm._v(" "), _c('n3-select', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.arr),
-	        expression: "arr"
-	      }],
-	      attrs: {
-	        "options": _vm.fruitOptions,
-	        "search": true,
-	        "multiple": "",
-	        "extra": "",
-	        "width": "200px"
-	      },
-	      domProps: {
-	        "value": (_vm.arr)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.arr = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- 单选框 -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"single\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":badge")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"5\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Apple\"")]), _vm._v(">")]), _vm._v("Apple"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Banana\"")]), _vm._v(">")]), _vm._v("Banana"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Cherry\"")]), _vm._v(">")]), _vm._v("Cherry"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Orange\"")]), _vm._v(">")]), _vm._v("Orange"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Grape\"")]), _vm._v(">")]), _vm._v("Grape"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- 多选框 -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("multiple")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"multiple\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("search")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Apple\"")]), _vm._v(">")]), _vm._v("Apple"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Banana\"")]), _vm._v(">")]), _vm._v("Banana"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Cherry\"")]), _vm._v(">")]), _vm._v("Cherry"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Orange\"")]), _vm._v(">")]), _vm._v("Orange"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Grape\"")]), _vm._v(">")]), _vm._v("Grape"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- 多选限制 -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("multiple")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":limit")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"2\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"multipleLimit\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("search")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("extra")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Apple\"")]), _vm._v(">")]), _vm._v("Apple"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Banana\"")]), _vm._v(">")]), _vm._v("Banana"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Cherry\"")]), _vm._v(">")]), _vm._v("Cherry"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Orange\"")]), _vm._v(">")]), _vm._v("Orange"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Grape\"")]), _vm._v(">")]), _vm._v("Grape"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- 自定义内容 -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("multiple")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"custom\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Star\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("span")]), _vm._v("  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"n3-fa n3-fa-star\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("span")]), _vm._v(">")]), _vm._v(" Star"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Heart\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("span")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"n3-fa n3-fa-heart\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("span")]), _vm._v(">")]), _vm._v(" Heart"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Film\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("span")]), _vm._v("  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"n3-fa n3-fa-film\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("span")]), _vm._v(">")]), _vm._v(" Film"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Inbox\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("span")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"n3-fa n3-fa-inbox\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("span")]), _vm._v(">")]), _vm._v(" Inbox"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-option")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- 传递数组，支持搜索 -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"arr\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":options")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fruitOptions\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":search")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("multiple")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("extra")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("width")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"400px\"")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("fruitOptions")]), _vm._v(": [\n        {"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'apple'")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'Apple'")]), _vm._v("},\n        {"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'banana'")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'Banana'")]), _vm._v("},\n        {"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'cherry'")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'Cherry'")]), _vm._v("},\n        {"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'orange'")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'Orange'")]), _vm._v("},\n        {"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'grape'")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'Grape'")]), _vm._v("}\n      ],\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("arr")]), _vm._v(": ["), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'apple'")]), _vm._v(", "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'banana'")]), _vm._v("],\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("single")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'Apple'")]), _vm._v(",\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("multiple")]), _vm._v(": [],\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("multipleLimit")]), _vm._v(": [],\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("custom")]), _vm._v(": []\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("样式的参数和 "), _c('a', {
-	    attrs: {
-	      "href": "#n3ButtonsDocs"
-	    }
-	  }, [_vm._v("按钮")]), _vm._v(" 相同")])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("value")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("多选为数组，单选为单个数字或者字符串")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placeholder")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("'请选择'")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("multiple")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("支持多选")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("limit")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("1024")])]), _vm._v(" "), _c('td', [_vm._v("多选限制")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("search")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否支持搜索")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("extra")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("可支持在输入款内添加新的选项(需要search支持)")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("input-placeholder")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("请输入")])]), _vm._v(" "), _c('td', [_vm._v("输入框的placeholder")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("选择框大小")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("menu-max-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("300px")]), _vm._v(" "), _c('td', [_vm._v("下拉框最大高度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("menu-width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("下拉框宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("format")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("function(item){ return item.label }")])]), _vm._v(" "), _c('td', [_vm._v("选中内容的格式化显示")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("on-change")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("value改变回调函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("readonly")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("badge")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String``Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("徽标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("cancelled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("单选时，是否可撤销")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-c7e0ef32", module.exports)
-	  }
-	}
-
-/***/ },
-/* 481 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(482);
-
-/***/ },
-/* 482 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(483)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(484)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3SwitchDocs-24.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-4a780ab0", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-4a780ab0", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3SwitchDocs-24.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 483 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      value: false
-	    };
-	  },
-	
-	  methods: {
-	    toggle: function toggle(state) {
-	      console.log(state);
-	    }
-	  }
-	};
-
-/***/ },
-/* 484 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("开关")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "开关"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('p'), _c('h3', [_c('n3-switch', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value),
-	        expression: "value"
-	      }],
-	      domProps: {
-	        "value": (_vm.value)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.value = $event
-	        }
-	      }
-	    })], 1), _c('p'), _vm._v(" "), _c('p'), _c('h3', [_c('n3-switch', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value),
-	        expression: "value"
-	      }],
-	      attrs: {
-	        "ontext": "开",
-	        "offtext": "关"
-	      },
-	      domProps: {
-	        "value": (_vm.value)
-	      },
-	      on: {
-	        "change": _vm.toggle,
-	        "input": function($event) {
-	          _vm.value = $event
-	        }
-	      }
-	    })], 1), _c('p'), _vm._v(" "), _c('p'), _c('h3', [_c('n3-switch', {
-	      attrs: {
-	        "ontext": "开",
-	        "offtext": "关",
-	        "disabled": true
-	      },
-	      on: {
-	        "change": _vm.toggle
-	      }
-	    })], 1), _c('p')]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-switch")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-switch")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-switch")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("ontext")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"开\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("offtext")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"关\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"toggle\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-switch")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-switch")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("ontext")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"开\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("offtext")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"关\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"toggle\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":disabled")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-switch")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("禁用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("ontext")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("ON")])]), _vm._v(" "), _c('td', [_vm._v("开文案")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("offtext")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("OFF")])]), _vm._v(" "), _c('td', [_vm._v("关文案")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("禁用")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4a780ab0", module.exports)
-	  }
-	}
-
-/***/ },
-/* 485 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(486);
-
-/***/ },
-/* 486 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(487)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(488)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TimelineDocs-25.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-39b215f8", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-39b215f8", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3TimelineDocs-25.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 487 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      value: [{
-	        icon: 'check-circle-o',
-	        color: 'green',
-	        content: '<a @click="del">\u521B\u5EFA\u6210\u529F</a>'
-	      }, {
-	        content: '<span>通过审核</span>'
-	      }, {
-	        content: '<span>出现异常</span>'
-	      }]
-	    };
-	  },
-	
-	  methods: {
-	    del: function del() {
-	      alert(2);
-	    }
-	  }
-	};
-
-/***/ },
-/* 488 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("时间轴")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "时间轴"
-	      }
-	    }, [_c('blockquote', [_c('p', [_vm._v("时间轴（静态）")])]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-timeline', [_c('n3-timeline-item', {
-	      attrs: {
-	        "color": "#2ecc71",
-	        "icon": "check-circle-o"
-	      }
-	    }, [_vm._v("创建成功")]), _vm._v(" "), _c('n3-timeline-item', {
-	      attrs: {
-	        "color": "#3498db"
-	      }
-	    }, [_vm._v("通过审核")]), _vm._v(" "), _c('n3-timeline-item', {
-	      attrs: {
-	        "color": "#e74c3c",
-	        "icon": "times-circle-o"
-	      }
-	    }, [_vm._v("出现异常")])], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("时间轴（数据绑定）")])]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-timeline', {
-	      attrs: {
-	        "value": _vm.value
-	      }
-	    })], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Timeline参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("TimelineItem参数")]), _vm._v(" "), _vm._m(4)], 1)]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("color")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'#2ecc71'")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("icon")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"check-circle-o\"")]), _vm._v(">")]), _vm._v("创建成功"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("color")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'#3498db'")]), _vm._v(">")]), _vm._v("通过审核"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("color")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'#e74c3c'")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("icon")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"times-circle-o\"")]), _vm._v(">")]), _vm._v("出现异常"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-timeline")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(": [{\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("icon")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'check-circle-o'")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("color")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'green'")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("`<a @click=\"del\">创建成功</a>`")]), _vm._v("\n      }, {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'<span>通过审核</span>'")]), _vm._v("\n      }, {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'<span>出现异常</span>'")]), _vm._v("\n      }]\n    }\n  },\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("methods")]), _vm._v(": {\n    del () {\n      alert("), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("2")]), _vm._v(")\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("value")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("内容数组")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("color")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("#2db7f5")]), _vm._v(" "), _c('td', [_vm._v("颜色")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("content")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("内容")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("自定义图标")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-39b215f8", module.exports)
-	  }
-	}
-
-/***/ },
-/* 489 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(490);
-
-/***/ },
-/* 490 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(491)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(492)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TabsDocs-26.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-5da23db0", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-5da23db0", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3TabsDocs-26.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 491 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      list: [{
-	        header: 'first',
-	        badge: 12,
-	        content: 'first的内容'
-	      }, {
-	        header: 'seacond',
-	        badge: 12,
-	        content: 'seacond的内容'
-	      }]
-	    };
-	  },
-	
-	  methods: {
-	    change: function change(index, el) {
-	      console.log(index, el);
-	    }
-	  }
-	};
-
-/***/ },
-/* 492 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("标签页")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('blockquote', [_c('p', [_vm._v("使用list")])]), _vm._v(" "), _c('p', [_c('n3-tabs', {
-	      attrs: {
-	        "list": _vm.list
-	      },
-	      on: {
-	        "change": _vm.change
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("使用tab")])]), _vm._v(" "), _c('n3-tabs', {
-	      attrs: {
-	        "value": 1
-	      },
-	      on: {
-	        "change": _vm.change
-	      }
-	    }, [_c('n3-tab', {
-	      attrs: {
-	        "header": "one",
-	        "badge": "1"
-	      }
-	    }, [_c('p', [_vm._v(".......")]), _vm._v(" "), _c('p', [_vm._v(".......")]), _vm._v(" "), _c('p', [_vm._v(".......")])]), _vm._v(" "), _c('n3-tab', {
-	      attrs: {
-	        "header": "two"
-	      }
-	    }, [_c('p', [_vm._v("*********")]), _vm._v(" "), _c('p', [_vm._v("*********")]), _vm._v(" "), _c('p', [_vm._v("*********")])]), _vm._v(" "), _c('n3-tab', {
-	      attrs: {
-	        "header": "three",
-	        "disabled": ""
-	      }
-	    }, [_vm._v("\n    ...\n  ")])], 1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("胶囊样式 pills")])]), _vm._v(" "), _c('n3-tabs', {
-	      attrs: {
-	        "pills": ""
-	      }
-	    }, [_c('n3-tab', {
-	      attrs: {
-	        "header": "one"
-	      }
-	    }), _vm._v(" "), _c('n3-tab', {
-	      attrs: {
-	        "header": "two"
-	      }
-	    })], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("垂直样式 stacked")])]), _vm._v(" "), _c('n3-tabs', {
-	      staticStyle: {
-	        "max-width": "300px"
-	      },
-	      attrs: {
-	        "pills": "",
-	        "stacked": ""
-	      },
-	      on: {
-	        "change": _vm.change
-	      }
-	    }, [_c('n3-tab', {
-	      attrs: {
-	        "header": "one"
-	      }
-	    }), _vm._v(" "), _c('n3-tab', {
-	      attrs: {
-	        "header": "two"
-	      }
-	    })], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("垂直样式 stacked")])]), _vm._v(" "), _c('n3-tabs', {
-	      staticStyle: {
-	        "max-width": "300px"
-	      },
-	      attrs: {
-	        "primary": "",
-	        "pills": "",
-	        "stacked": ""
-	      }
-	    }, [_c('n3-tab', {
-	      attrs: {
-	        "header": "one"
-	      }
-	    }), _vm._v(" "), _c('n3-tab', {
-	      attrs: {
-	        "header": "two"
-	      }
-	    })], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("自适应 justified")])]), _vm._v(" "), _c('n3-tabs', {
-	      attrs: {
-	        "pills": "",
-	        "justified": ""
-	      }
-	    }, [_c('n3-tab', {
-	      attrs: {
-	        "header": "one"
-	      }
-	    }), _vm._v(" "), _c('n3-tab', {
-	      attrs: {
-	        "header": "two"
-	      }
-	    })], 1)], 1), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("Tabs参数")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("Tabs Events")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("tab 参数")]), _vm._v(" "), _vm._m(6)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tabs")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"change\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":list")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"list\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tabs")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("data () {\n  "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("list")]), _vm._v(": [{\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("header")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'first'")]), _vm._v(",\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("badge")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("12")]), _vm._v(",\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'first的内容'")]), _vm._v("\n    }, {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("header")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'seacond'")]), _vm._v(",\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("badge")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("12")]), _vm._v(",\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'seacond的内容'")]), _vm._v("\n    }]\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tabs")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"change\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"1\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tab")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("header")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"one\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("badge")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"1\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("......."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("......."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("......."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tab")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tab")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("header")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"two\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("*********"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("*********"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("*********"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tab")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tab")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("header")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"three\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("\n    ...\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tab")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tabs")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("list")]), _vm._v(": [{\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("header")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'first'")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("badge")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("12")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'first的内容'")]), _vm._v("\n      }, {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("header")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'seacond'")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("badge")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("12")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'seacond的内容'")]), _vm._v("\n      }]\n    }\n  },\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("methods")]), _vm._v(": {\n    change (index, el) {\n      "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("console")]), _vm._v(".log(index, el)\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("active-index")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("list")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("pills")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("胶囊样式")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("stacked")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("竖直状态")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("primary")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("justified")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("是否自适应")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("size")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("尺寸")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("切换tab时")]), _vm._v(" "), _c('td')])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("header")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("标签头文字")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("badge")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String``Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("徽标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("是否能被激活")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5da23db0", module.exports)
-	  }
-	}
-
-/***/ },
-/* 493 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(494);
-
-/***/ },
-/* 494 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(495)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(496)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TooltipDocs-27.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-f02c5358", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-f02c5358", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3TooltipDocs-27.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 495 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      title: 'Title',
-	      text: 'Lorem ipsum dolor sit amet'
-	    };
-	  }
-	};
-
-/***/ },
-/* 496 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("浮出提示")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "浮出提示"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-tooltip', {
-	      attrs: {
-	        "content": "tooltip on top",
-	        "placement": "top",
-	        "trigger": "hover"
-	      }
-	    }, [_c('n3-button', [_vm._v("tooltip on top")])], 1), _vm._v(" "), _c('n3-tooltip', {
-	      attrs: {
-	        "content": "tooltip on left",
-	        "placement": "left",
-	        "trigger": "hover"
-	      }
-	    }, [_c('n3-button', [_vm._v("tooltip on left")])], 1), _vm._v(" "), _c('n3-tooltip', {
-	      attrs: {
-	        "content": "tooltip on right",
-	        "placement": "right",
-	        "trigger": "hover"
-	      }
-	    }, [_c('n3-button', [_vm._v("tooltip on right")])], 1), _vm._v(" "), _c('n3-tooltip', {
-	      attrs: {
-	        "content": "tooltip on bottom",
-	        "placement": "bottom",
-	        "trigger": "hover"
-	      }
-	    }, [_c('n3-button', [_vm._v("tooltip on bottom")])], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('h4', [_vm._v("Triger")]), _vm._v(" "), _c('p', [_c('n3-tooltip', {
-	      attrs: {
-	        "trigger": "click",
-	        "effect": "scale",
-	        "content": "Lorem ipsum dolor sit amet",
-	        "placement": "top"
-	      }
-	    }, [_c('n3-button', [_vm._v("Click")])], 1)], 1), _vm._v(" "), _c('n3-tooltip', {
-	      attrs: {
-	        "effect": "scale",
-	        "content": "Lorem ipsum dolor sit amet",
-	        "placement": "bottom",
-	        "trigger": "focus"
-	      }
-	    }, [_c('n3-input', {
-	      attrs: {
-	        "placeholder": "Focus"
-	      }
-	    })], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数名")]), _vm._v(" "), _vm._m(2)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"tooltip on top\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"top\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("tooltip on top"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"tooltip on left\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("tooltip on left"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"tooltip on right\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"right\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("tooltip on right"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"tooltip on bottom\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"hover\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("tooltip on bottom"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("hr")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("h4")]), _vm._v(">")]), _vm._v("Triger"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("h4")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"click\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"scale\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Lorem ipsum dolor sit amet\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"top\"")]), _vm._v(" >")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" >")]), _vm._v("Click"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("effect")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"scale\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("content")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Lorem ipsum dolor sit amet\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placement")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"bottom\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("trigger")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"focus\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v("  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Focus\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tooltip")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'Title'")]), _vm._v(",\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("text")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'Lorem ipsum dolor sit amet'")]), _vm._v("\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("trigger")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("hover")]), _vm._v(" "), _c('code', [_vm._v("focus")]), _vm._v(" "), _c('code', [_vm._v("hover")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("click")])]), _vm._v(" "), _c('td', [_vm._v("触发方式")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("effect")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("scale")]), _vm._v(" "), _c('code', [_vm._v("fade")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("scale")])]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("content")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placement")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v(", 如: "), _c('code', [_vm._v("top")]), _vm._v(" "), _c('code', [_vm._v("left")]), _vm._v(" "), _c('code', [_vm._v("right")]), _vm._v(" "), _c('code', [_vm._v("bottom")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("定位方式")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-f02c5358", module.exports)
-	  }
-	}
-
-/***/ },
-/* 497 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(498);
-
-/***/ },
-/* 498 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(499)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(500)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TypeaheadDocs-28.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-71711691", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-71711691", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3TypeaheadDocs-28.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 499 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      items: [],
-	      gitItems: [],
-	      value: 'Alabama',
-	      USstate: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']
-	    };
-	  },
-	
-	  methods: {
-	    render: function render(item) {
-	      return item.formatted_address;
-	    },
-	    getResult: function getResult(query) {
-	      var self = this;
-	      $.ajax({
-	        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
-	        success: function success(ret) {
-	          self.items = ret.results;
-	        }
-	      });
-	    },
-	    getGitresults: function getGitresults(query) {
-	      var self = this;
-	      $.ajax({
-	        url: 'https://api.github.com/search/users?q=' + query,
-	        success: function success(ret) {
-	          self.gitItems = ret.items;
-	        }
-	      });
-	    },
-	    rendergit: function rendergit(item) {
-	      return '<div><img width="18px" height="18px" src="' + item.avatar_url + '"/> <span>' + item.login + '</span></div>';
-	    },
-	    googleCallback: function googleCallback(item) {
-	      return item.formatted_address;
-	    },
-	    githubCallback: function githubCallback(item) {
-	      return item.login;
-	    }
-	  }
-	};
-
-/***/ },
-/* 500 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("自动补全")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "自动补全"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('blockquote', [_c('p', [_vm._v("本地数据")])]), _vm._v(" "), _c('p', [_c('n3-typeahead', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value),
-	        expression: "value"
-	      }],
-	      attrs: {
-	        "data": _vm.USstate,
-	        "placeholder": " 发到"
-	      },
-	      domProps: {
-	        "value": (_vm.value)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.value = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("异步获取")])]), _vm._v(" "), _c('p', [_c('n3-typeahead', {
-	      attrs: {
-	        "async": "",
-	        "placeholder": "CCCAddress, async via maps.googleapis.com",
-	        "render": _vm.render,
-	        "items": _vm.items,
-	        "add-format": _vm.googleCallback
-	      },
-	      on: {
-	        "change": _vm.getResult
-	      }
-	    })], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('hr'), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("内容模版")])]), _vm._v(" "), _c('p', [_c('n3-typeahead', {
-	      attrs: {
-	        "async": "",
-	        "context": _vm._self,
-	        "placeholder": "Github users, async via api.github.com",
-	        "items": _vm.gitItems,
-	        "render": _vm.rendergit,
-	        "add-format": _vm.githubCallback
-	      },
-	      on: {
-	        "change": _vm.getGitresults
-	      }
-	    })], 1), _vm._v(" "), _vm._m(2)], 1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _vm._m(5)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-typeahead")]), _vm._v(" \n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":data")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"USstate\"")]), _vm._v(" \n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\" 发到\"")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-typeahead")]), _vm._v(">")]), _vm._v("\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-typeahead")]), _vm._v(" \n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("async")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"CCCAddress, async via maps.googleapis.com\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"getResult\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":render")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"render\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":items")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"items\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":add-format")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"googleCallback\"")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-typeahead")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-typeahead")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("async")]), _vm._v(" \n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":context")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"_self\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("placeholder")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"Github users, async via api.github.com\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"getGitresults\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":items")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"gitItems\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":render")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"rendergit\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":add-format")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"githubCallback\"")]), _vm._v(" >")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-typeahead")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("data")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("本地数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("limit")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("8")])]), _vm._v(" "), _c('td', [_vm._v("显示的条数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("items")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td', [_vm._v("列表数组，用于异步请求")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("async")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("异步")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("render")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("渲染函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("add-format")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("获取需要的值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("dropdow-width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("下拉宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("dropdown-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("300px")])]), _vm._v(" "), _c('td', [_vm._v("下拉框最大高度")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-71711691", module.exports)
-	  }
-	}
-
-/***/ },
-/* 501 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(502);
-
-/***/ },
-/* 502 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(503)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3StepDocs-29.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-213050c6", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-213050c6", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3StepDocs-29.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 503 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("步骤条")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "步骤条"
-	      }
-	    }, [_c('blockquote', [_c('p', [_vm._v("普通步骤条")])]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-step', {
-	      attrs: {
-	        "labels": ['第一步 我的文案比较长', '第二步', '第三步']
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("前台步骤条")])]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-step', {
-	      attrs: {
-	        "round": "",
-	        "labels": ['第一步 我的文案比较长', '第二步', '第三步'],
-	        "current": 2
-	      }
-	    })], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2)], 1)]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-step")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":labels")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"['第一步 我的文案比较长','第二步','第三步']\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-step")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-step")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("round")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":labels")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"['第一步 我的文案比较长','第二步','第三步']\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":current")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"2\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-step")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("labels")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("文案数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("current")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("1")])]), _vm._v(" "), _c('td', [_vm._v("当前步数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("round")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否为前台步骤条")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-213050c6", module.exports)
-	  }
-	}
-
-/***/ },
-/* 504 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(505);
-
-/***/ },
-/* 505 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(506)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(507)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3SliderDocs-30.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-b26c3504", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-b26c3504", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3SliderDocs-30.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 506 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      value: 1,
-	      value1: [1, 2]
-	    };
-	  },
-	
-	  methods: {
-	    change: function change(val) {
-	      console.log(val);
-	    }
-	  }
-	};
-
-/***/ },
-/* 507 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("滑块")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "滑块"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-slider', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value),
-	        expression: "value"
-	      }],
-	      attrs: {
-	        "orientation": "vertical"
-	      },
-	      domProps: {
-	        "value": (_vm.value)
-	      },
-	      on: {
-	        "change": _vm.change,
-	        "input": function($event) {
-	          _vm.value = $event
-	        }
-	      }
-	    }), _vm._v(" "), _c('p', [_vm._v("滑块的值: " + _vm._s(_vm.value))]), _vm._v(" "), _c('p', [_c('n3-slider', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value1),
-	        expression: "value1"
-	      }],
-	      attrs: {
-	        "range": true
-	      },
-	      domProps: {
-	        "value": (_vm.value1)
-	      },
-	      on: {
-	        "change": _vm.change,
-	        "input": function($event) {
-	          _vm.value1 = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('p', [_vm._v("滑块的值: " + _vm._s(_vm.value1))])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-slider")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"change\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("orientation")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"vertical\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-slider")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-slider")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value1\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"change\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":range")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-slider")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  data () {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("2")]), _vm._v("\n    }\n  },\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("methods")]), _vm._v(": {\n    change (val) {\n      "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("console")]), _vm._v(".log(val)\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("min")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("0")])]), _vm._v(" "), _c('td', [_vm._v("最小值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("max")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("0")])]), _vm._v(" "), _c('td', [_vm._v("最大值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("step")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("1")])]), _vm._v(" "), _c('td', [_vm._v("单步增量")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("orientation")]), _vm._v(" "), _c('td', [_vm._v("String"), _c('code', [_vm._v("|")]), _vm._v("horizontal"), _c('code', [_vm._v("|")]), _vm._v("horizontal"), _c('code', [_vm._v("(水平)")]), _vm._v("vertical`(垂直)")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("range")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否范围选择")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("tooltip")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("show")])]), _vm._v(" "), _c('td', [_vm._v("tooltip显示参数 'show' 'hide' 'always'")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否禁用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("formatter")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("格式化tooltip显示内容")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("水平显示的宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("水平显示的宽度")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-b26c3504", module.exports)
-	  }
-	}
-
-/***/ },
-/* 508 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(509);
-
-/***/ },
-/* 509 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(510)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3LoadingDocs-31.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-22a379d8", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-22a379d8", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3LoadingDocs-31.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 510 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("加载提示")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "加载提示"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('p', [_vm._v("大图标："), _c('n3-loading', {
-	      attrs: {
-	        "size": "lg"
-	      }
-	    })], 1), _vm._v(" "), _c('p', [_vm._v("默认图标："), _c('n3-loading')], 1), _vm._v(" "), _c('p', [_vm._v("刷新图标："), _c('n3-loading', {
-	      attrs: {
-	        "type": "refresh"
-	      }
-	    })], 1), _vm._v(" "), _c('p', [_vm._v("颜色："), _c('n3-loading', {
-	      attrs: {
-	        "color": "primary"
-	      }
-	    })], 1)]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('p', [_vm._v("居中："), _c('n3-loading', {
-	      attrs: {
-	        "center": ""
-	      }
-	    })], 1)]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("大图标："), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("size")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"lg\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("默认图标："), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(" >")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("刷新图标："), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"refresh\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("颜色："), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("color")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"primary\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("居中："), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("center")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-loading")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("size")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("图标大小"), _c('code', [_vm._v("lg")]), _vm._v(" "), _c('code', [_vm._v("sm")]), _vm._v(" "), _c('code', [_vm._v("xs")]), _vm._v(" 和默认")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("图标类型 "), _c('code', [_vm._v("refresh")]), _vm._v(" 和默认菊花")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("center")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("居中")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("color")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("颜色")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-22a379d8", module.exports)
-	  }
-	}
-
-/***/ },
-/* 511 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(512);
-
-/***/ },
-/* 512 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(513)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(514)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3PageDocs-32.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-afd46fdc", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-afd46fdc", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3PageDocs-32.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 513 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  methods: {
-	    pagechange: function pagechange(page) {
-	      console.log(page);
-	    }
-	  }
-	};
-
-/***/ },
-/* 514 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("分页")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "分页"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-page', {
-	      attrs: {
-	        "total": 100,
-	        "show-total": true,
-	        "show-sizer": true,
-	        "show-elevator": true
-	      },
-	      on: {
-	        "change": _vm.pagechange
-	      }
-	    }), _vm._v(" "), _c('hr'), _vm._v(" "), _c('n3-page', {
-	      attrs: {
-	        "total": 100,
-	        "simple": ""
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(3)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-page")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":total")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"100\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"pagechange\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":show-total")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":show-sizer")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":show-elevator")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-page")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-page")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":total")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"100\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("simple")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-page")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("methods")]), _vm._v(": {\n    pagechange (page) {\n      "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("console")]), _vm._v(".log(page)\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("total")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("总条数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("current")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("当前页数,需要"), _c('code', [_vm._v(".sync")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("pagesize")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("每页条数,需要"), _c('code', [_vm._v(".sync")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("pagesize-opts")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[10, 20, 30, 40]")])]), _vm._v(" "), _c('td', [_vm._v("每页条数选项")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("simple")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("简单分页")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show-total")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("显示全部")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show-elevator")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("显示跳转")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show-sizer")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("显示分页选项")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化时")]), _vm._v(" "), _c('td', [_vm._v("(page, currentPagesize)")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-afd46fdc", module.exports)
-	  }
-	}
-
-/***/ },
-/* 515 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(516);
-
-/***/ },
-/* 516 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(517)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(518)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3DataTableDocs-33.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-38ba5e0e", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-38ba5e0e", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3DataTableDocs-33.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 517 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  methods: {
-	    change: function change(p, q, s, f) {
-	      console.log(p, q, s, f);
-	    },
-	    refresh: function refresh() {
-	      this.source = [{
-	        key: '小白',
-	        name: '小白',
-	        age: 25,
-	        department: '技术1'
-	      }, {
-	        key: '2',
-	        name: '33',
-	        age: 33,
-	        department: '技术2'
-	      }, {
-	        key: '3',
-	        name: '44',
-	        age: 12,
-	        department: '技术3'
-	      }, {
-	        key: '4',
-	        name: '55',
-	        age: 25,
-	        department: '技术1'
-	      }, {
-	        key: '5',
-	        name: 'l66黑',
-	        age: 33,
-	        department: '技术2'
-	      }, {
-	        key: '61',
-	        name: 'i红6',
-	        age: 122,
-	        department: '技术3'
-	      }, {
-	        key: '73',
-	        name: 'yd白',
-	        age: 2,
-	        department: '技术1'
-	      }, {
-	        key: '81',
-	        name: 'b黑',
-	        age: 332,
-	        department: '技术2'
-	      }];
-	    },
-	    del: function del(key) {
-	      for (var i in this.source) {
-	        if (key === this.source[i]['key']) {
-	          this.source.splice(i, 1);
-	        }
-	      }
-	    }
-	  },
-	
-	  data: function data() {
-	    return {
-	      selection: {
-	        checkRows: [],
-	        onSelect: function onSelect(record, checked, checkRows) {},
-	        onSelectAll: function onSelectAll(checked, checkRows, changeRows) {},
-	        getCheckboxProps: function getCheckboxProps(record) {
-	          if (record.key == 2) {
-	            return {
-	              checked: true,
-	              disabled: true
-	            };
-	          } else {
-	            return {
-	              disabled: false
-	            };
-	          }
-	        }
-	      },
-	      loading: false,
-	      pagination: {
-	        current: 1,
-	        total: 10,
-	        pagesize: 10
-	      },
-	      filterList: [{
-	        title: '姓名',
-	        dataIndex: 'name',
-	        options: [{ value: 'v白', label: 'v白' }, { value: 't红', label: 't红' }]
-	      }],
-	      columns: [{
-	        title: '姓名',
-	        dataIndex: 'name',
-	        sort: true,
-	        width: '100px',
-	        filter: true
-	      }, {
-	        title: '年龄',
-	        dataIndex: 'age',
-	        sort: true,
-	        sortType: 'DESC',
-	        sortMethod: function sortMethod(x, y) {
-	          return x.age - y.age;
-	        },
-	
-	        filter: true,
-	        render: function render(text, record) {
-	          return '<a href="javascript:;">' + text + '</a>';
-	        }
-	      }, {
-	        title: '部门',
-	        dataIndex: 'department'
-	      }, {
-	        title: '操作',
-	        dataIndex: '',
-	        render: function render(text, record, index) {
-	          return '<span class="item">\n                    <a href="javascript:;" @click="del(\'' + record.key + '\',\'' + index + '\')">\u5220\u9664</a>\n                  </span>';
-	        }
-	      }],
-	      source: [{
-	        key: '1',
-	        name: '小白',
-	        age: 25,
-	        department: '技术1'
-	      }, {
-	        key: '2',
-	        name: '小黑',
-	        age: 33,
-	        department: '技术2'
-	      }, {
-	        key: '3',
-	        name: '小红',
-	        age: 12,
-	        department: '技术3'
-	      }, {
-	        key: '4',
-	        name: 'v白',
-	        age: 25,
-	        department: '技术1'
-	      }, {
-	        key: '5',
-	        name: 'l黑',
-	        age: 33,
-	        department: '技术2'
-	      }, {
-	        key: '6',
-	        name: 'i红',
-	        age: 122,
-	        department: '技术3'
-	      }, {
-	        key: '7',
-	        name: 'y白',
-	        age: 2,
-	        department: '技术1'
-	      }, {
-	        key: '8',
-	        name: 'b黑',
-	        age: 332,
-	        department: '技术2'
-	      }, {
-	        key: '9',
-	        name: 't红',
-	        age: 124,
-	        department: '技术3'
-	      }, {
-	        key: '10',
-	        name: 'f白',
-	        age: 253,
-	        department: '技术1'
-	      }, {
-	        key: '11',
-	        name: 'a黑',
-	        age: 31,
-	        department: '技术2'
-	      }, {
-	        key: '12',
-	        name: 'd红',
-	        age: 31,
-	        department: '技术3'
-	      }]
-	    };
-	  }
-	};
-
-/***/ },
-/* 518 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("数据表格")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "数据表格"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('h4', [_vm._v("Table")]), _vm._v(" "), _c('p', [_c('n3-data-table', {
-	      attrs: {
-	        "selection": _vm.selection,
-	        "source": _vm.source,
-	        "columns": _vm.columns,
-	        "refresh": _vm.refresh
-	      }
-	    })], 1)]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h4', [_vm._v("selection")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h4', [_vm._v("filter-list")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h4', [_vm._v("merge-rule")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h4', [_vm._v("pagination")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h4', [_vm._v("@change")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(7)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-data-table")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":selection")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"selection\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":source")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"source\"")]), _vm._v(" \n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":columns")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"columns\"")]), _vm._v(" \n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":refresh")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"refresh\"")]), _vm._v("\n>")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-data-table")]), _vm._v(">")]), _vm._v("\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("{\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("checkRows")]), _vm._v(":[],\n  onSelect (record, checked, checkRows) {},\n  onSelectAll (checked, checkRows, changeRows) {},\n  getCheckboxProps(record){\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("if")]), _vm._v("(record.key == "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("2")]), _vm._v("){\n      "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("checked")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-literal"
-	  }, [_vm._v("true")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-literal"
-	  }, [_vm._v("true")]), _vm._v("\n      }\n    }"), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("else")]), _vm._v("{\n      "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-literal"
-	  }, [_vm._v("false")]), _vm._v("\n      }\n    }\n  }\n}\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("\n[{\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("title")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'姓名'")]), _vm._v(",\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("dataIndex")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'name'")]), _vm._v(",\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("options")]), _vm._v(":[{"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"v白\"")]), _vm._v(","), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"v白\"")]), _vm._v("},{"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"t红\"")]), _vm._v(","), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"t红\"")]), _vm._v("}],\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v(":[],\n  "), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("// multiple,search,extra")]), _vm._v("\n}]\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("\n{\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v(":{\n    "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'小白'")]), _vm._v(": {"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("rowspan")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("2")]), _vm._v("},\n    "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'v白'")]), _vm._v(": {"), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("rowspan")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("0")]), _vm._v("}\n  }\n}\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("\n{\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("current")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("5")]), _vm._v(",\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("total")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("10")]), _vm._v(",\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("pagesize")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("10")]), _vm._v("\n}\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("\n"), _c('span', {
-	    staticClass: "hljs-function"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("function")]), _vm._v("("), _c('span', {
-	    staticClass: "hljs-params"
-	  }, [_vm._v("pagination,query,sort,filter")]), _vm._v(")")]), _vm._v("{\n  "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("var")]), _vm._v(" data = {\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("start")]), _vm._v(":(pagination.current - "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("1")]), _vm._v(") * pagination.pagesize,\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("limit")]), _vm._v(":pagination.pagesize\n  },\n  self = "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(";\n\n  "), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("//根据需要添加其他参数")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(".loading = "), _c('span', {
-	    staticClass: "hljs-literal"
-	  }, [_vm._v("true")]), _vm._v("\n  $.ajax({\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("url")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("''")]), _vm._v(",\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("data")]), _vm._v(":data,\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("success")]), _vm._v(":"), _c('span', {
-	    staticClass: "hljs-function"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("function")]), _vm._v("("), _c('span', {
-	    staticClass: "hljs-params"
-	  }, [_vm._v("result")]), _vm._v(")")]), _vm._v("{\n        self.loading = "), _c('span', {
-	    staticClass: "hljs-literal"
-	  }, [_vm._v("false")]), _vm._v("\n        self.source = result.list\n        self.pagination.total = result.total\n    }\n  })\n}\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("async")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("异步加载，配合change事件来请求服务端数据")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("merge-rule")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("合并规则")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("columns")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("selection")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_c('code', {
-	    staticStyle: {
-	      "color": "red"
-	    }
-	  }, [_vm._v("使用getCheckboxProps来初始化状态")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("sort-column")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("默认全局排序字段")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("source")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("表格数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("page")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否分页")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("search")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否支持搜索")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("filter")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("filter-list")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("自定义过滤器")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("select-col")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否支持选择显示列")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("pagination")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("设置分页")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("loading")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("设置表格的加载中状态")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-38ba5e0e", module.exports)
-	  }
-	}
-
-/***/ },
-/* 519 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(520);
-
-/***/ },
-/* 520 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(521)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3BreadcrumbDocs-34.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2871f720", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-2871f720", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3BreadcrumbDocs-34.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 521 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("面包屑")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "面包屑"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-breadcrumb', [_c('n3-breadcrumb-item', {
-	      attrs: {
-	        "href": "#"
-	      }
-	    }, [_vm._v("Home")]), _vm._v(" "), _c('n3-breadcrumb-item', {
-	      attrs: {
-	        "href": "#"
-	      }
-	    }, [_vm._v("Library")]), _vm._v(" "), _c('n3-breadcrumb-item', {
-	      attrs: {
-	        "active": ""
-	      }
-	    }, [_vm._v("Data")])], 1)], 1)]), _vm._v(" "), _vm._m(0)]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-breadcrumb")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("href")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"#\"")]), _vm._v(">")]), _vm._v("Home"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("href")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"#\"")]), _vm._v(">")]), _vm._v("Library"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("active")]), _vm._v(">")]), _vm._v("Data"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-breadcrumb-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-breadcrumb")]), _vm._v(">")]), _vm._v("\n")])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2871f720", module.exports)
-	  }
-	}
-
-/***/ },
-/* 522 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(523);
-
-/***/ },
-/* 523 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(524)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(525)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3MultipleInputDocs-35.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-08d031fa", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-08d031fa", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3MultipleInputDocs-35.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 524 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      query: '',
-	      items: [],
-	      a: { list: [] }
-	    };
-	  },
-	
-	  methods: {
-	    focus: function focus() {
-	      console.log(1);
-	    },
-	    render: function render(item) {
-	      return item.formatted_address;
-	    },
-	    getResult: function getResult(query) {
-	      console.log(query, 1);
-	      var self = this;
-	      $.ajax({
-	        url: 'https://maps.googleapis.com/maps/api/geocode/json?address=' + query,
-	        success: function success(ret) {
-	          self.items = ret.results;
-	        }
-	      });
-	    },
-	    format: function format(item, index) {
-	      var content = typeof item === 'string' ? item : item.formatted_address;
-	      return content;
-	    }
-	  }
-	};
-
-/***/ },
-/* 525 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("自定义输入")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-multiple-input', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.a.list),
-	        expression: "a.list"
-	      }],
-	      attrs: {
-	        "async": true,
-	        "format": _vm.format,
-	        "render": _vm.render,
-	        "items": _vm.items
-	      },
-	      domProps: {
-	        "value": (_vm.a.list)
-	      },
-	      on: {
-	        "focus": _vm.focus,
-	        "inputChange": _vm.getResult,
-	        "input": function($event) {
-	          _vm.a.list = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-multiple-input")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@focus")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"focus\"")]), _vm._v(" \n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@inputChange")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"getResult\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"a.list\"")]), _vm._v(" \n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":format")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"format\"")]), _vm._v(" \n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":render")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"render\"")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":items")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"items\"")]), _vm._v(" >")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-multiple-input")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("methods: {\n  focus () {\n    "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("console")]), _vm._v(".log("), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("1")]), _vm._v(")\n  },\n  render (item) {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" item.formatted_address\n  },\n  getResult (query) {\n    "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("console")]), _vm._v(".log(query, "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("1")]), _vm._v(")\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("let")]), _vm._v(" self = "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v("\n    $.ajax({\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("url")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'https://maps.googleapis.com/maps/api/geocode/json?address='")]), _vm._v(" + query,\n      success (ret) {\n        self.items = ret.results\n      }\n    })\n  },\n  format (item, index) {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("let")]), _vm._v(" content = item.formatted_address\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" content\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("data")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("本地数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("format")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("显示格式化函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("limit")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("8")])]), _vm._v(" "), _c('td', [_vm._v("显示的条数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("items")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td', [_vm._v("列表数组，用于异步请求")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("positionMove")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("输入框位置是否能控制移动")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("async")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("异步")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("render")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("渲染函数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("add-format")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("获取需要的值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("dropdow-width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("下拉宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("dropdown-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("300px")])]), _vm._v(" "), _c('td', [_vm._v("下拉框最大高度")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("blur")]), _vm._v(" "), _c('td', [_vm._v("失焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("focus")]), _vm._v(" "), _c('td', [_vm._v("聚焦")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("positionChange")]), _vm._v(" "), _c('td', [_vm._v("位置变化")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("inputChange")]), _vm._v(" "), _c('td', [_vm._v("输入值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-08d031fa", module.exports)
-	  }
-	}
-
-/***/ },
-/* 526 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(527);
-
-/***/ },
-/* 527 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(528)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(529)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3TreeDocs-36.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-327025a7", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-327025a7", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3TreeDocs-36.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 528 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      data: [{
-	        label: '新建文件夹1',
-	        children: [{
-	          label: '我的文档1'
-	        }]
-	      }, {
-	        label: '新建文件夹2',
-	        children: [{
-	          label: '我的文档2'
-	        }, {
-	          label: '我的文档3'
-	        }]
-	      }, {
-	        label: '新建文件夹3',
-	        children: [{
-	          label: '新建文件夹4',
-	          children: [{
-	            label: '我的文档6'
-	          }]
-	        }, {
-	          label: '我的文档4'
-	        }, {
-	          label: '我的文档5'
-	        }]
-	      }],
-	      defaultProps: {
-	        children: 'children',
-	        label: 'label'
-	      },
-	      regions: [{
-	        'name': '/root'
-	      }, {
-	        'name': '/home'
-	      }],
-	      props: {
-	        label: 'name',
-	        children: 'zones'
-	      },
-	      count: 1
-	    };
-	  },
-	
-	  methods: {
-	    handleCheckChange: function handleCheckChange(data, checked, indeterminate) {
-	      console.log(data, checked, indeterminate);
-	    },
-	    handleNodeClick: function handleNodeClick(data) {
-	      console.log(data);
-	    },
-	    loadNode: function loadNode(node, resolve) {
-	      var _this = this;
-	
-	      if (node.level === 0) {
-	        return resolve([{ name: '/root' }, { name: '/home' }]);
-	      }
-	      if (node.level > 3) return resolve([]);
-	
-	      var hasChild;
-	      if (node.data.name === '/root') {
-	        hasChild = true;
-	      } else if (node.data.name === '/home') {
-	        hasChild = false;
-	      } else {
-	        hasChild = Math.random() > 0.5;
-	      }
-	
-	      setTimeout(function () {
-	        var data;
-	        if (hasChild) {
-	          data = [{
-	            name: '新建文件夹' + _this.count++
-	          }, {
-	            name: '新建文件夹' + _this.count++
-	          }];
-	        } else {
-	          data = [];
-	        }
-	
-	        resolve(data);
-	      }, 500);
-	    }
-	  }
-	};
-
-/***/ },
-/* 529 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("树形视图")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "树形视图"
-	      }
-	    }, [_c('blockquote', [_c('p', [_vm._v("树形视图（普通）")])]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-tree', {
-	      attrs: {
-	        "data": _vm.data,
-	        "props": _vm.defaultProps
-	      },
-	      on: {
-	        "node-click": _vm.handleNodeClick
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('blockquote', [_c('p', [_vm._v("树形视图（可选中、动态加载）")])]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-tree', {
-	      attrs: {
-	        "data": _vm.regions,
-	        "props": _vm.props,
-	        "load": _vm.loadNode,
-	        "lazy": "",
-	        "show-checkbox": ""
-	      },
-	      on: {
-	        "check-change": _vm.handleCheckChange
-	      }
-	    })], 1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("数据属性props")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("Methods")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(7)], 1)]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tree")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":data")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"data\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":props")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"defaultProps\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@node-click")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"handleNodeClick\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tree")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n  data() {\n    "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("data")]), _vm._v(": [{\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'新建文件夹1'")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("children")]), _vm._v(": [{\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'我的文档1'")]), _vm._v("\n        }]\n      }, {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'新建文件夹2'")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("children")]), _vm._v(": [{\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'我的文档2'")]), _vm._v("\n        }, {\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'我的文档3'")]), _vm._v("\n        }]\n      }, {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'新建文件夹3'")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("children")]), _vm._v(": [{\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'新建文件夹4'")]), _vm._v(",\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("children")]), _vm._v(": [{\n            "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'我的文档6'")]), _vm._v("\n          }]\n        }, {\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'我的文档4'")]), _vm._v("\n        }, {\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'我的文档5'")]), _vm._v("\n        }]\n      }],\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("defaultProps")]), _vm._v(": {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("children")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'children'")]), _vm._v(",\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'label'")]), _vm._v("\n      }\n    }\n  },\n  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("methods")]), _vm._v(": {\n    handleNodeClick(data) {\n      "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("console")]), _vm._v(".log(data)\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tree")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":data")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"regions\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":props")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"props\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":load")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"loadNode\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("lazy")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("show-checkbox")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@check-change")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"handleCheckChange\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-tree")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("export")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("default")]), _vm._v(" {\n    data() {\n      "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("defaultProps")]), _vm._v(": {\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("children")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'children'")]), _vm._v(",\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'label'")]), _vm._v("\n        },\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("regions")]), _vm._v(": [{\n          "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'name'")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'/root'")]), _vm._v("\n        }, {\n          "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'name'")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'/home'")]), _vm._v("\n        }],\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("props")]), _vm._v(": {\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'name'")]), _vm._v(",\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("children")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'zones'")]), _vm._v("\n        },\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("count")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("1")]), _vm._v("\n      }\n    },\n    "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("methods")]), _vm._v(": {\n      handleCheckChange(data, checked, indeterminate) {\n        "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("console")]), _vm._v(".log(data, checked, indeterminate)\n      },\n      loadNode(node, resolve) {\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("if")]), _vm._v(" (node.level === "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("0")]), _vm._v(") {\n          "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" resolve([{ "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'/root'")]), _vm._v(" }, { "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'/home'")]), _vm._v(" }])\n        }\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("if")]), _vm._v(" (node.level > "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("3")]), _vm._v(") "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" resolve([])\n\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("var")]), _vm._v(" hasChild\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("if")]), _vm._v(" (node.data.name === "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'/root'")]), _vm._v(") {\n          hasChild = "), _c('span', {
-	    staticClass: "hljs-literal"
-	  }, [_vm._v("true")]), _vm._v("\n        } "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("else")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("if")]), _vm._v(" (node.data.name === "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'/home'")]), _vm._v(") {\n          hasChild = "), _c('span', {
-	    staticClass: "hljs-literal"
-	  }, [_vm._v("false")]), _vm._v("\n        } "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("else")]), _vm._v(" {\n          hasChild = "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("Math")]), _vm._v(".random() > "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("0.5")]), _vm._v("\n        }\n\n        setTimeout("), _c('span', {
-	    staticClass: "hljs-function"
-	  }, [_c('span', {
-	    staticClass: "hljs-params"
-	  }, [_vm._v("()")]), _vm._v(" =>")]), _vm._v(" {\n          "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("var")]), _vm._v(" data\n          "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("if")]), _vm._v(" (hasChild) {\n            data = [{\n              "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'新建文件夹'")]), _vm._v(" + "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(".count++\n            }, {\n              "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'新建文件夹'")]), _vm._v(" + "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(".count++\n            }]\n          } "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("else")]), _vm._v(" {\n            data = []\n          }\n\n          resolve(data)\n        }, "), _c('span', {
-	    staticClass: "hljs-number"
-	  }, [_vm._v("500")]), _vm._v(")\n      }\n    }\n  }\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("data")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td', [_vm._v("展示数据")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("empty-text")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("Empty Content.")]), _vm._v(" "), _c('td', [_vm._v("展示数据为空时展示的文本")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("node-key")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("—")]), _vm._v(" "), _c('td', [_vm._v("每个树节点用来作为唯一标识的属性，整颗树应该是唯一的")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("props")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td', [_vm._v("—")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("leaf-icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("file")]), _vm._v(" "), _c('td', [_vm._v("叶子节点图标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("child-icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("folder")]), _vm._v(" "), _c('td', [_vm._v("子节点图标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("closed-icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("angle-right")]), _vm._v(" "), _c('td', [_vm._v("关闭时箭头图标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("opened-icon")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("angle-down")]), _vm._v(" "), _c('td', [_vm._v("打开时箭头图标")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("load")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("function(node, resolve) {}")]), _vm._v(" "), _c('td', [_vm._v("加载子树数据的方法")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("render-content")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("function(h, { node }) {}")]), _vm._v(" "), _c('td', [_vm._v("树节点的内容区的渲染方法")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("highlight-current")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否高亮当前选中节点")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("current-node-key")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String, Number")])]), _vm._v(" "), _c('td', [_vm._v("—")]), _vm._v(" "), _c('td', [_vm._v("当前选中节点的 key ，只写属性")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("default-expand-all")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("是否默认展开所有节点")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("expand-on-click-node")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否在点击节点的时候展开或者收缩节点(如果不则则只有点箭头图标的时候才会展开或者收缩节点。)")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("auto-expand-parent")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("default-expanded-keys")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("—")]), _vm._v(" "), _c('td', [_vm._v("默认展开的节点的 key 的数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("show-checkbox")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("节点是否可被勾选")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("check-strictly")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("在显示复选框的情况下，是否严格的遵循父子不互相关联的做法")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("default-checked-keys")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("[]")])]), _vm._v(" "), _c('td', [_vm._v("默认勾选的节点的 key 的数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("filter-node-method")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Function")])]), _vm._v(" "), _c('td', [_vm._v("function(value, data, node)")]), _vm._v(" "), _c('td', [_vm._v("对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示, 反之则为隐藏")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("label")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("label")]), _vm._v(" "), _c('td', [_vm._v("指定节点标签为节点对象的某个属性值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("children")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("children")]), _vm._v(" "), _c('td', [_vm._v("指定子树为节点对象的某个属性值")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("方法名")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("filter")]), _vm._v(" "), _c('td', [_vm._v("对树节点进行筛选操作")]), _vm._v(" "), _c('td', [_vm._v("接收一个任意类型的参数，该参数会在 filter-node-method 中作为第一个参数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("getCheckedNodes")]), _vm._v(" "), _c('td', [_vm._v("若节点可被选择（即 "), _c('code', [_vm._v("show-checkbox")]), _vm._v(" 为 "), _c('code', [_vm._v("true")]), _vm._v("），则返回目前被选中的节点所组成的数组")]), _vm._v(" "), _c('td', [_vm._v("(leafOnly) 接收一个 boolean 类型的参数，若为 "), _c('code', [_vm._v("true")]), _vm._v(" 则仅返回被选中的叶子节点，默认值为 "), _c('code', [_vm._v("false")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("setCheckedNodes")]), _vm._v(" "), _c('td', [_vm._v("设置目前勾选的节点，使用此方法必须设置 node-key 属性")]), _vm._v(" "), _c('td', [_vm._v("(nodes) 接收勾选节点数据的数组")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("getCheckedKeys")]), _vm._v(" "), _c('td', [_vm._v("若节点可被选择（即 "), _c('code', [_vm._v("show-checkbox")]), _vm._v(" 为 "), _c('code', [_vm._v("true")]), _vm._v("），则返回目前被选中的节点所组成的数组")]), _vm._v(" "), _c('td', [_vm._v("(leafOnly) 接收一个 boolean 类型的参数，若为 "), _c('code', [_vm._v("true")]), _vm._v(" 则仅返回被选中的叶子节点的 keys，默认值为 "), _c('code', [_vm._v("true")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("setCheckedKeys")]), _vm._v(" "), _c('td', [_vm._v("通过 keys 设置目前勾选的节点，使用此方法必须设置 node-key 属性")]), _vm._v(" "), _c('td', [_vm._v("(keys, leafOnly) 接收两个参数，1. 勾选节点的 key 的数组 2. boolean 类型的参数，若为 "), _c('code', [_vm._v("true")]), _vm._v(" 则仅设置叶子节点的选中状态，默认值为 "), _c('code', [_vm._v("true")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("setChecked")]), _vm._v(" "), _c('td', [_vm._v("通过 key / data 设置某个节点的勾选状态，使用此方法必须设置 node-key 属性")]), _vm._v(" "), _c('td', [_vm._v("(key/data, checked, deep) 接收三个参数，1. 勾选节点的 key 或者 data 2. boolean 类型，节点是否选中  3. boolean 类型，是否设置子节点 ，默认为 false")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("node-click")]), _vm._v(" "), _c('td', [_vm._v("节点被点击时的回调")]), _vm._v(" "), _c('td', [_vm._v("共三个参数，依次为：传递给 "), _c('code', [_vm._v("data")]), _vm._v(" 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("check-change")]), _vm._v(" "), _c('td', [_vm._v("节点选中状态发生变化时的回调")]), _vm._v(" "), _c('td', [_vm._v("共三个参数，依次为：传递给 "), _c('code', [_vm._v("data")]), _vm._v(" 属性的数组中该节点所对应的对象、节点本身是否被选中、节点的子树中是否有被选中的节点")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("current-change")]), _vm._v(" "), _c('td', [_vm._v("当前选中节点变化时触发的事件")]), _vm._v(" "), _c('td', [_vm._v("共两个参数，依次为：当前节点的数据，当前节点的 Node 对象")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-327025a7", module.exports)
-	  }
-	}
-
-/***/ },
-/* 530 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(531);
-
-/***/ },
-/* 531 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(532)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(533)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3RateDocs-37.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-78ba66a6", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-78ba66a6", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3RateDocs-37.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 532 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      value: 3
-	    };
-	  }
-	};
-
-/***/ },
-/* 533 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("评分")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "评分"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-rate', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.value),
-	        expression: "value"
-	      }],
-	      attrs: {
-	        "allow-half": true
-	      },
-	      domProps: {
-	        "value": (_vm.value)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.value = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-rate")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"value\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":allow-half")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"true\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-rate")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody')])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-78ba66a6", module.exports)
-	  }
-	}
-
-/***/ },
-/* 534 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(535);
-
-/***/ },
-/* 535 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(536)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(537)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3UploaderDocs-38.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-4d5e1bd9", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-4d5e1bd9", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3UploaderDocs-38.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 536 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	
-	exports.default = {
-	  data: function data() {
-	    return {};
-	  }
-	};
-
-/***/ },
-/* 537 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("文件上传")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "文件上传"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('h4', [_vm._v("点击")]), _vm._v(" "), _c('n3-uploader', {
-	      attrs: {
-	        "url": ""
-	      }
-	    }), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p'), _c('h4', [_vm._v("拖拽")]), _vm._v(" "), _c('n3-uploader', {
-	      attrs: {
-	        "type": "drag"
-	      }
-	    }), _c('p')], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("Events")]), _vm._v(" "), _vm._m(2)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- 点击上传 -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-uploader")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("url")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"\"")]), _vm._v(">")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-uploader")]), _vm._v(">")]), _vm._v("\n\n"), _c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!-- 拖拽上传 -->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-uploader")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"drag\"")]), _vm._v(" >")]), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-uploader")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("name")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("files")]), _vm._v(" "), _c('td', [_vm._v("文件对象的name")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")]), _vm._v("："), _c('code', [_vm._v("click")]), _vm._v(" 或 "), _c('code', [_vm._v("drag")])]), _vm._v(" "), _c('td', [_vm._v("click")]), _vm._v(" "), _c('td', [_vm._v("拖拽或者点击")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("accept")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("'' (全支持)")]), _vm._v(" "), _c('td', [_vm._v("支持的文件类型 例如: "), _c('code', [_vm._v("'image/jpeg'")]), _vm._v(" 或者 "), _c('code', [_vm._v("'image'")]), _vm._v("支持所有图片格式,多个如 "), _c('code', [_vm._v("'txt|image|mp3'")])])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("url")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("上传地址")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("params")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Object")])]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("上传参数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("multiple")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("true")]), _vm._v(" "), _c('td', [_vm._v("支持多文件上传")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("drag-width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("300px")]), _vm._v(" "), _c('td', [_vm._v("拖拽框宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("drag-height")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("200px")]), _vm._v(" "), _c('td', [_vm._v("拖拽框高度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("max-length")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_vm._v("10")]), _vm._v(" "), _c('td', [_vm._v("上传文件个数限制")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("success")]), _vm._v(" "), _c('td', [_vm._v("成功上传回调时")]), _vm._v(" "), _c('td', [_vm._v("({response, file})")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("finish")]), _vm._v(" "), _c('td', [_vm._v("完成所有上传任务时")]), _vm._v(" "), _c('td', [_vm._v("()")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("delete")]), _vm._v(" "), _c('td', [_vm._v("删除一个上传的项目时")]), _vm._v(" "), _c('td', [_vm._v("(uploadItem)")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("error")]), _vm._v(" "), _c('td', [_vm._v("发生错误时")]), _vm._v(" "), _c('td', [_vm._v("({message, file})")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4d5e1bd9", module.exports)
-	  }
-	}
-
-/***/ },
-/* 538 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(539);
-
-/***/ },
-/* 539 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(540)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(541)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3FormDocs-39.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-05948178", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-05948178", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3FormDocs-39.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 540 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      profession: [{
-	        value: '学生',
-	        label: '学生'
-	      }, {
-	        value: '工程师',
-	        label: '工程师'
-	      }, {
-	        value: '医生',
-	        label: '医生'
-	      }],
-	      model: {
-	        name: '',
-	        age: '',
-	        address: [],
-	        birthday: '',
-	        sex: '',
-	        school: '',
-	        hobby: [],
-	        profession: '',
-	        state: false,
-	        star: [],
-	        suggestion: ''
-	      },
-	      schoolData: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Dakota', 'North Carolina', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],
-	      sexOptions: [{
-	        value: '1',
-	        label: '男'
-	      }, {
-	        value: '0',
-	        label: '女'
-	      }],
-	      options: [{
-	        value: 'zhejiang',
-	        label: '浙江',
-	        children: [{
-	          value: 'hangzhou',
-	          label: '杭州',
-	          children: [{
-	            value: 'xihu',
-	            label: '西湖'
-	          }]
-	        }]
-	      }, {
-	        value: 'jiangsu',
-	        label: '江苏',
-	        children: [{
-	          value: 'nanjing',
-	          label: '南京',
-	          children: [{
-	            value: 'zhonghuamen',
-	            label: '中华门'
-	          }]
-	        }]
-	      }],
-	      validate: false,
-	      result: {}
-	    };
-	  },
-	
-	  methods: {
-	    nameValidate: function nameValidate(val) {
-	      if (/[\u4E00-\u9FA5\uF900-\uFA2D]/.test(val)) {
-	        return {
-	          validStatus: 'success'
-	        };
-	      } else {
-	        return {
-	          validStatus: 'error',
-	          tips: '请输入中文名'
-	        };
-	      }
-	    },
-	    submit: function submit() {
-	      this.$refs.form.validateFields(function (result) {
-	        console.log(result);
-	      });
-	    }
-	  }
-	};
-
-/***/ },
-/* 541 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("表单")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-form', {
-	      ref: "form"
-	    }, [_c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "姓名",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-input', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.name),
-	        expression: "model.name"
-	      }],
-	      attrs: {
-	        "name": "name",
-	        "rules": [{
-	          type: 'required'
-	        }],
-	        "custom-validate": _vm.nameValidate
-	      },
-	      domProps: {
-	        "value": (_vm.model.name)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.name = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "年龄",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-input-number', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.age),
-	        expression: "model.age"
-	      }],
-	      attrs: {
-	        "name": "age",
-	        "rules": [{
-	          type: 'number'
-	        }, {
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.age)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.age = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "地址",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-cascader', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.address),
-	        expression: "model.address"
-	      }],
-	      attrs: {
-	        "name": "address",
-	        "options": _vm.options,
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.address)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.address = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "生日",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-datepicker', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.birthday),
-	        expression: "model.birthday"
-	      }],
-	      attrs: {
-	        "name": "birthday",
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.birthday)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.birthday = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "学校",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-typeahead', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.school),
-	        expression: "model.school"
-	      }],
-	      attrs: {
-	        "name": "学校",
-	        "data": _vm.schoolData,
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.school)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.school = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "爱好",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-checkbox-group', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.hobby),
-	        expression: "model.hobby"
-	      }],
-	      attrs: {
-	        "name": "hobby",
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.hobby)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.hobby = $event
-	        }
-	      }
-	    }, [_c('n3-checkbox', {
-	      attrs: {
-	        "label": "0"
-	      }
-	    }, [_vm._v("看书")]), _vm._v(" "), _c('n3-checkbox', {
-	      attrs: {
-	        "label": "1"
-	      }
-	    }, [_vm._v("运动")]), _vm._v(" "), _c('n3-checkbox', {
-	      attrs: {
-	        "value": "2"
-	      }
-	    }, [_vm._v("旅行")])], 1)], 1)], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "性别",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-radio-group', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.sex),
-	        expression: "model.sex"
-	      }],
-	      attrs: {
-	        "name": "sex",
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.sex)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.sex = $event
-	        }
-	      }
-	    }, [_c('n3-radio', {
-	      attrs: {
-	        "label": "0"
-	      }
-	    }, [_vm._v("男")]), _vm._v(" "), _c('n3-radio', {
-	      attrs: {
-	        "label": "1"
-	      }
-	    }, [_vm._v("女")])], 1)], 1)], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "专业",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-select', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.profession),
-	        expression: "model.profession"
-	      }],
-	      attrs: {
-	        "name": "sex",
-	        "options": _vm.profession,
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.profession)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.profession = $event
-	        }
-	      }
-	    })], 1)], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "级别",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-slider', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.level),
-	        expression: "model.level"
-	      }],
-	      attrs: {
-	        "name": "level",
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.level)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.level = $event
-	        }
-	      }
-	    })], 1)], 1), _vm._v(" "), _c('p', [_c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "开启状态",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-switch', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.state),
-	        expression: "model.state"
-	      }],
-	      attrs: {
-	        "name": "state",
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.state)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.state = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "喜欢的明星",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-multiple-input', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.star),
-	        expression: "model.star"
-	      }],
-	      attrs: {
-	        "name": "star",
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.star)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.star = $event
-	        }
-	      }
-	    })], 1), _vm._v(" "), _c('n3-form-item', {
-	      attrs: {
-	        "need": "",
-	        "label": "想说的话",
-	        "label-col": 3
-	      }
-	    }, [_c('n3-textarea', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.model.suggestion),
-	        expression: "model.suggestion"
-	      }],
-	      attrs: {
-	        "name": "suggestion",
-	        "rules": [{
-	          type: 'required'
-	        }]
-	      },
-	      domProps: {
-	        "value": (_vm.model.suggestion)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.model.suggestion = $event
-	        }
-	      }
-	    })], 1)], 1), _vm._v(" "), _c('n3-form-item', [_c('n3-button', {
-	      attrs: {
-	        "type": "primary"
-	      },
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.submit($event)
-	        }
-	      }
-	    }, [_vm._v("提交")])], 1)], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("n3-from参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("方法")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("n3-from-item参数")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("待验证组件参数")]), _vm._v(" "), _vm._m(6)], 1)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("ref")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'form'")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"姓名\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"name\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.name\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":custom-validate")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"nameValidate\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"年龄\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input-number")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"age\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.age\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'number'},{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input-number")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-input")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"地址\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-cascader")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"address\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":options")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"options\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.address\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-cascader")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"生日\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-datepicker")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"birthday\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.birthday\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-datepicker")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"学校\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-typeahead")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"学校\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.school\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":data")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"schoolData\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-typeahead")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"爱好\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-group")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"hobby\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.hobby\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"0\"")]), _vm._v(">")]), _vm._v("看书"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"1\"")]), _vm._v(">")]), _vm._v("运动"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("value")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"2\"")]), _vm._v(">")]), _vm._v("旅行"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-group")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"性别\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-group")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"sex\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.sex\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"0\"")]), _vm._v(">")]), _vm._v("男"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"1\"")]), _vm._v(">")]), _vm._v("女"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-group")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"专业\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"sex\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":options")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'profession'")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.profession\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-select")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"级别\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-slider")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"level\"")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.level\"")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-slider")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"开启状态\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-switch")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"state\"")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.state\"")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-switch")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"喜欢的明星\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-multiple-input")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"star\"")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.star\"")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-multiple-input")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("need")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"想说的话\"")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":label-col")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"3\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-textarea")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"suggestion\"")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v(" = "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"model.suggestion\"")]), _vm._v("\n        "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v(":rules")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"[{type:'required'}]\"")]), _vm._v(">")]), _vm._v("\n    "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-textarea")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n\n   "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n       "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"primary\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"submit\"")]), _vm._v(" >")]), _vm._v("提交"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form-item")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-form")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-javascript"
-	  }, [_vm._v("  methods: {\n    nameValidate (val) {\n      "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("if")]), _vm._v(" ("), _c('span', {
-	    staticClass: "hljs-regexp"
-	  }, [_vm._v("/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/")]), _vm._v(".test(val)) {\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("validStatus")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'success'")]), _vm._v("\n        }\n      } "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("else")]), _vm._v(" {\n        "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("return")]), _vm._v(" {\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("validStatus")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'error'")]), _vm._v(",\n          "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("tips")]), _vm._v(": "), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("'请输入中文名'")]), _vm._v("\n        }\n      }\n    },\n    submit () {\n      "), _c('span', {
-	    staticClass: "hljs-keyword"
-	  }, [_vm._v("this")]), _vm._v(".$refs.form.validateFields("), _c('span', {
-	    staticClass: "hljs-function"
-	  }, [_c('span', {
-	    staticClass: "hljs-params"
-	  }, [_vm._v("result")]), _vm._v(" =>")]), _vm._v(" {\n        "), _c('span', {
-	    staticClass: "hljs-built_in"
-	  }, [_vm._v("console")]), _vm._v(".log(result)\n     })\n    }\n  }\n}\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_vm._v("String")]), _vm._v(" "), _c('td', [_vm._v("horizontal")]), _vm._v(" "), _c('td', [_vm._v("布局方式  horizontal,inline")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("validate")]), _vm._v(" "), _c('td', [_vm._v("Boolean")]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("是否打开验证")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("validateChange")]), _vm._v(" "), _c('td', [_vm._v("校验结果变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("validateFields")]), _vm._v(" "), _c('td', [_vm._v("校验")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("label")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td', [_vm._v("表单项说明")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("label-col")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("2")])]), _vm._v(" "), _c('td', [_vm._v("表单项说明所占栅格数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("wrap-col")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("12")])]), _vm._v(" "), _c('td', [_vm._v("表单项所占栅格数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("form-col")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Number")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("10")])]), _vm._v(" "), _c('td', [_vm._v("表单元素所占栅格数")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("need")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("必填标示红点")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("name")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td', [_vm._v("标示输入项，与结果内的值对应")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("readonly")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("只读")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("禁止改变值")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("width")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("220px")])]), _vm._v(" "), _c('td', [_vm._v("宽度")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("placeholder")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td', [_vm._v("placeholder")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("custom－validate")]), _vm._v(" "), _c('td', [_vm._v("Function`")]), _vm._v(" "), _c('td'), _vm._v(" "), _c('td', [_vm._v("自定义校验器")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("name")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td')]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("rules")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("－")]), _vm._v(" "), _c('td', [_vm._v("验证规则,如 "), _c('code', [_vm._v("[{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]")])])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-05948178", module.exports)
-	  }
-	}
-
-/***/ },
-/* 542 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(543);
-
-/***/ },
-/* 543 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(544)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(545)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3CheckboxDocs-40.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-2abb83fb", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-2abb83fb", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3CheckboxDocs-40.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 544 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      single: false,
-	      checkboxValue: []
-	    };
-	  }
-	};
-
-/***/ },
-/* 545 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("多选框")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('h4', [_vm._v("Checkbox")]), _vm._v(" "), _c('n3-checkbox', {
-	      attrs: {
-	        "label": "single"
-	      }
-	    }, [_vm._v("single")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('hr'), _vm._v(" "), _c('n3-checkbox-group', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.checkboxValue),
-	        expression: "checkboxValue"
-	      }],
-	      domProps: {
-	        "value": (_vm.checkboxValue)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.checkboxValue = $event
-	        }
-	      }
-	    }, [_c('n3-checkbox-btn', {
-	      attrs: {
-	        "label": "left",
-	        "disabled": ""
-	      }
-	    }, [_vm._v("Left")]), _vm._v(" "), _c('n3-checkbox-btn', {
-	      attrs: {
-	        "label": "middle",
-	        "checked": ""
-	      }
-	    }, [_vm._v("Middle")]), _vm._v(" "), _c('n3-checkbox-btn', {
-	      attrs: {
-	        "label": "right"
-	      }
-	    }, [_vm._v("Right")])], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('n3-checkbox-group', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.checkboxValue),
-	        expression: "checkboxValue"
-	      }],
-	      domProps: {
-	        "value": (_vm.checkboxValue)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.checkboxValue = $event
-	        }
-	      }
-	    }, [_c('n3-checkbox', {
-	      attrs: {
-	        "label": "left",
-	        "disabled": ""
-	      }
-	    }, [_vm._v("Left")]), _vm._v(" "), _c('n3-checkbox', {
-	      attrs: {
-	        "label": "middle",
-	        "checked": ""
-	      }
-	    }, [_vm._v("Middle")]), _vm._v(" "), _c('n3-checkbox', {
-	      attrs: {
-	        "label": "right"
-	      }
-	    }, [_vm._v("Right")])], 1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("Group 参数")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("Group Events")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("Checkbox 参数")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('h3', [_vm._v("Checkbox Events")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)], 1)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"single\"")]), _vm._v(">")]), _vm._v("single"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-group")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"checkboxValue\"")]), _vm._v(" >")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("Left"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"middle\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("checked")]), _vm._v(">")]), _vm._v("Middle"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("Right"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-btn")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-group")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-group")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"checkboxValue\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("Left"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"middle\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("checked")]), _vm._v(">")]), _vm._v("Middle"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("Right"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-checkbox-group")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("选项")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("radio")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("radio,button")]), _vm._v(" 使用options时起作用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("选项")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")]), _vm._v(" "), _c('td', [_vm._v("(currentValue)")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("禁用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("checked")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_vm._v("false")]), _vm._v(" "), _c('td', [_vm._v("选中")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("事件名称")]), _vm._v(" "), _c('th', [_vm._v("说明")]), _vm._v(" "), _c('th', [_vm._v("回调参数")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")]), _vm._v(" "), _c('td', [_vm._v("(currentValue)")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2abb83fb", module.exports)
-	  }
-	}
-
-/***/ },
-/* 546 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(547);
-
-/***/ },
-/* 547 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(548)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(549)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3RadioDocs-41.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-511e14d8", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-511e14d8", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3RadioDocs-41.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 548 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      radioValue: ''
-	    };
-	  }
-	};
-
-/***/ },
-/* 549 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("单选框")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('h4', [_vm._v("Radio")]), _vm._v(" "), _c('n3-radio-group', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.radioValue),
-	        expression: "radioValue"
-	      }],
-	      attrs: {
-	        "type": "primary"
-	      },
-	      domProps: {
-	        "value": (_vm.radioValue)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.radioValue = $event
-	        }
-	      }
-	    }, [_c('n3-radio', {
-	      attrs: {
-	        "label": "left",
-	        "disabled": ""
-	      }
-	    }, [_vm._v("Left")]), _vm._v(" "), _c('n3-radio', {
-	      attrs: {
-	        "label": "middle",
-	        "checked": ""
-	      }
-	    }, [_vm._v("Middle")]), _vm._v(" "), _c('n3-radio', {
-	      attrs: {
-	        "label": "right"
-	      }
-	    }, [_vm._v("Right")])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('n3-radio-group', {
-	      directives: [{
-	        name: "model",
-	        rawName: "v-model",
-	        value: (_vm.radioValue),
-	        expression: "radioValue"
-	      }],
-	      attrs: {
-	        "type": "primary"
-	      },
-	      domProps: {
-	        "value": (_vm.radioValue)
-	      },
-	      on: {
-	        "input": function($event) {
-	          _vm.radioValue = $event
-	        }
-	      }
-	    }, [_c('n3-radio-btn', {
-	      attrs: {
-	        "label": "left",
-	        "disabled": ""
-	      }
-	    }, [_vm._v("Left")]), _vm._v(" "), _c('n3-radio-btn', {
-	      attrs: {
-	        "label": "middle",
-	        "checked": ""
-	      }
-	    }, [_vm._v("Middle")]), _vm._v(" "), _c('n3-radio-btn', {
-	      attrs: {
-	        "label": "right"
-	      }
-	    }, [_vm._v("Right")])], 1), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('h3', [_vm._v("group 参数")]), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('h3', [_vm._v("radio 参数")]), _vm._v(" "), _vm._m(4), _vm._v(" "), _c('h3', [_vm._v("事件")]), _vm._v(" "), _vm._m(5), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(6)], 1)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-group")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"radioValue\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"primary\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("Left"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"middle\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("checked")]), _vm._v(">")]), _vm._v("Middle"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("Right"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-group")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-group")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-model")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"radioValue\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("type")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"primary\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-btn")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"left\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("disabled")]), _vm._v(">")]), _vm._v("Left"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-btn")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-btn")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"middle\"")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("checked")]), _vm._v(">")]), _vm._v("Middle"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-btn")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-btn")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("label")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"right\"")]), _vm._v(">")]), _vm._v("Right"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-btn")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-radio-group")]), _vm._v(">")]), _vm._v("\n\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("选项")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("type")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("String")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("radio")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("radio")]), _vm._v(","), _c('code', [_vm._v("button")]), _vm._v(" 使用"), _c('code', [_vm._v("options")]), _vm._v("时起作用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("options")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Array")])]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_vm._v("选项")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("disabled")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("禁用")])]), _vm._v(" "), _c('tr', [_c('td', [_vm._v("checked")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("false")])]), _vm._v(" "), _c('td', [_vm._v("选中")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("名称")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("change")]), _vm._v(" "), _c('td', [_vm._v("值变化")])])])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('p', [_vm._v("其他表单相关参数，请移步 "), _c('a', {
-	    attrs: {
-	      "href": "#n3FormDocs"
-	    }
-	  }, [_vm._v("表单验证")]), _vm._v(" 待验证组件参数")])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-511e14d8", module.exports)
-	  }
-	}
-
-/***/ },
-/* 550 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(551);
-
-/***/ },
-/* 551 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(552)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(553)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3CardDocs-42.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-5195dd90", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-5195dd90", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3CardDocs-42.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 552 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {};
-	  }
-	};
-
-/***/ },
-/* 553 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("卡片")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section",
-	      attrs: {
-	        "id": "卡片"
-	      }
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-card', {
-	      staticStyle: {
-	        "padding": "20px"
-	      }
-	    }, [_c('p', [_vm._v("xxxxx")]), _vm._v(" "), _c('p', [_vm._v("xxxxx")]), _vm._v(" "), _c('p', [_vm._v("xxxxx")])])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-card")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("style")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"padding:20px\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("xxxxx"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("xxxxx"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("xxxxx"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-card")]), _vm._v(">")]), _vm._v(" \n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数名")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("hover")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("Boolean")])]), _vm._v(" "), _c('td', [_c('code', [_vm._v("true")])]), _vm._v(" "), _c('td', [_vm._v("是否hover效果")])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-5195dd90", module.exports)
-	  }
-	}
-
-/***/ },
-/* 554 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(555);
-
-/***/ },
 /* 555 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __vue_exports__, __vue_options__
-	var __vue_styles__ = {}
-	
-	/* styles */
-	__webpack_require__(556)
-	
-	/* script */
-	__vue_exports__ = __webpack_require__(558)
-	
-	/* template */
-	var __vue_template__ = __webpack_require__(559)
-	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-	if (
-	  typeof __vue_exports__.default === "object" ||
-	  typeof __vue_exports__.default === "function"
-	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-	__vue_options__ = __vue_exports__ = __vue_exports__.default
-	}
-	if (typeof __vue_options__ === "function") {
-	  __vue_options__ = __vue_options__.options
-	}
-	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/node_modules/vue-markdown-loader/.cache/n3AnimateDocs-43.vue"
-	__vue_options__.render = __vue_template__.render
-	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-	__vue_options__._scopeId = "data-v-48d22020"
-	
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-48d22020", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-48d22020", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] n3AnimateDocs-43.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-	
-	module.exports = __vue_exports__
-
-
-/***/ },
-/* 556 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(557);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(351)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-48d22020&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AnimateDocs-43.vue", function() {
-				var newContent = require("!!./../../css-loader/index.js?sourceMap!./../../vue-loader/lib/style-rewriter.js?id=data-v-48d22020&scoped=true!./../../vue-loader/lib/selector.js?type=styles&index=0!./n3AnimateDocs-43.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 557 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(350)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "\n.content[data-v-48d22020] {\n  box-shadow: 1px 1px 10px #ddd;\n  padding:10px;\n  margin-top: 10px;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/.cache/n3AnimateDocs-43.vue?f6115e6c"],"names":[],"mappings":";AAkDA;EACA,8BAAA;EACA,aAAA;EACA,iBAAA;CACA","file":"n3AnimateDocs-43.vue","sourcesContent":["<template><section><template>\n<h3>动画</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"show=!show\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\">\n    <div v-if=\"show\" class=\"content\">\n        <h4>Title</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n    </div>\n  </transition>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">transition</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">v-if</span>=<span class=\"hljs-string\">\"show\"</span>  <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Title<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">transition</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td>String</td>\n<td>-</td>\n<td><code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .content {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }\n</style>\n<script>\n  export default {\n    data () {\n      return {\n        show: false\n      }\n    }\n  }\n</script>"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 558 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	//
-	
-	exports.default = {
-	  data: function data() {
-	    return {
-	      show: false
-	    };
-	  }
-	};
-
-/***/ },
-/* 559 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('section', [
-	    [_c('h3', [_vm._v("动画")]), _vm._v(" "), _c('div', {
-	      staticClass: "bs-docs-section"
-	    }, [_c('div', {
-	      staticClass: "bs-example"
-	    }, [_c('n3-button', {
-	      nativeOn: {
-	        "click": function($event) {
-	          _vm.show = !_vm.show
-	        }
-	      }
-	    }, [_vm._v("fadeLeft")]), _vm._v(" "), _c('transition', {
-	      attrs: {
-	        "name": "fadeLeft"
-	      }
-	    }, [(_vm.show) ? _c('div', {
-	      staticClass: "content"
-	    }, [_c('h4', [_vm._v("Title")]), _vm._v(" "), _c('p', [_vm._v("...")]), _vm._v(" "), _c('p', [_vm._v("...")]), _vm._v(" "), _c('p', [_vm._v("...")])]) : _vm._e()])], 1), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('h3', [_vm._v("参数")]), _vm._v(" "), _vm._m(1)])]
-	  ], 2)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('pre', [_c('code', {
-	    staticClass: "language-html"
-	  }, [_c('span', {
-	    staticClass: "hljs-comment"
-	  }, [_vm._v("<!--作用于( v-if , v-show , v-for) 等元素-->")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v("  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("@click.native")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"show=!show\"")]), _vm._v(">")]), _vm._v("fadeLeft"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("n3-button")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("transition")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("name")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"fadeLeft\"")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(" "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("v-if")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"show\"")]), _vm._v("  "), _c('span', {
-	    staticClass: "hljs-attr"
-	  }, [_vm._v("class")]), _vm._v("="), _c('span', {
-	    staticClass: "hljs-string"
-	  }, [_vm._v("\"content\"")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("h4")]), _vm._v(">")]), _vm._v("Title"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("h4")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("..."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("..."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n      "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("<"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("..."), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("p")]), _vm._v(">")]), _vm._v("\n  "), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("div")]), _vm._v(">")]), _vm._v("\n"), _c('span', {
-	    staticClass: "hljs-tag"
-	  }, [_vm._v("</"), _c('span', {
-	    staticClass: "hljs-name"
-	  }, [_vm._v("transition")]), _vm._v(">")]), _vm._v("\n")])])
-	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('table', [_c('thead', [_c('tr', [_c('th', [_vm._v("参数")]), _vm._v(" "), _c('th', [_vm._v("类型")]), _vm._v(" "), _c('th', [_vm._v("默认值")]), _vm._v(" "), _c('th', [_vm._v("说明")])])]), _vm._v(" "), _c('tbody', [_c('tr', [_c('td', [_vm._v("name")]), _vm._v(" "), _c('td', [_vm._v("String")]), _vm._v(" "), _c('td', [_vm._v("-")]), _vm._v(" "), _c('td', [_c('code', [_vm._v("fade")]), _vm._v(" "), _c('code', [_vm._v("fadeLeft")]), _c('code', [_vm._v("fadeDown")]), _c('code', [_vm._v("bounce")]), _c('code', [_vm._v("scale")])])])])])
-	}]}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-48d22020", module.exports)
-	  }
-	}
-
-/***/ },
-/* 560 */
-/***/ function(module, exports) {
-
-	"use strict";
-	
-	(function () {
-	
-		if (typeof self === 'undefined' || !self.Prism || !self.document) {
-			return;
-		}
-	
-		// The languages map is built automatically with gulp
-		var Languages = /*languages_placeholder[*/{ "css": "CSS", "clike": "C-like", "javascript": "JavaScript", "abap": "ABAP", "actionscript": "ActionScript", "apacheconf": "Apache Configuration", "apl": "APL", "applescript": "AppleScript", "aspnet": "ASP.NET (C#)", "autoit": "AutoIt", "autohotkey": "AutoHotkey", "basic": "BASIC", "csharp": "C#", "cpp": "C++", "coffeescript": "CoffeeScript", "css-extras": "CSS Extras", "fsharp": "F#", "glsl": "GLSL", "http": "HTTP", "inform7": "Inform 7", "latex": "LaTeX", "lolcode": "LOLCODE", "matlab": "MATLAB", "mel": "MEL", "nasm": "NASM", "nginx": "nginx", "nsis": "NSIS", "objectivec": "Objective-C", "ocaml": "OCaml", "php": "PHP", "php-extras": "PHP Extras", "powershell": "PowerShell", "jsx": "React JSX", "rest": "reST (reStructuredText)", "sas": "SAS", "sass": "Sass (Sass)", "scss": "Sass (Scss)", "sql": "SQL", "typescript": "TypeScript", "vhdl": "VHDL", "vim": "vim", "wiki": "Wiki markup", "yaml": "YAML" } /*]*/;
-		Prism.hooks.add('before-highlight', function (env) {
-			var pre = env.element.parentNode;
-			if (!pre || !/pre/i.test(pre.nodeName)) {
-				return;
-			}
-			var language = Languages[env.language] || env.language.substring(0, 1).toUpperCase() + env.language.substring(1);
-			pre.setAttribute('data-language', language);
-		});
-	})();
-
-/***/ },
-/* 561 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', [_c('div', [_c('header-docs', {
-	    staticClass: "freeze",
-	    attrs: {
-	      "active": _vm.type
-	    }
-	  }), _vm._v(" "), (_vm.type === 'base') ? _c('n3-container', {
-	    staticClass: "bs-docs-container"
-	  }, [_c('n3-row', [_c('n3-column', {
-	    attrs: {
-	      "col": 2
-	    }
-	  }, [_c('input', {
-	    directives: [{
-	      name: "model",
-	      rawName: "v-model",
-	      value: (_vm.search),
-	      expression: "search"
-	    }],
-	    staticClass: "searchCom",
-	    attrs: {
-	      "placeholder": "搜索"
-	    },
-	    domProps: {
-	      "value": _vm._s(_vm.search)
-	    },
-	    on: {
-	      "input": function($event) {
-	        if ($event.target.composing) { return; }
-	        _vm.search = $event.target.value
-	      }
-	    }
-	  }), _vm._v(" "), _c('n3-nav', {
-	    attrs: {
-	      "type": "vertical"
-	    }
-	  }, _vm._l((_vm.list), function(item, index) {
-	    return _c('n3-nav-item', [_c('n3-sub-nav', {
-	      attrs: {
-	        "show": item.show
-	      },
-	      on: {
-	        "toggle": function($event) {
-	          _vm.handleToggle(item)
-	        }
-	      }
-	    }, [_c('a', {
-	      staticStyle: {
-	        "color": "#333"
-	      },
-	      domProps: {
-	        "textContent": _vm._s(index)
-	      },
-	      slot: "title"
-	    }), _vm._v(" "), _vm._l((item.list), function(i) {
-	      return _c('n3-nav-item', {
-	        attrs: {
-	          "active": _vm.component == i.value
-	        },
-	        nativeOn: {
-	          "click": function($event) {
-	            _vm.change(i.value)
-	          }
-	        }
-	      }, [_c('a', {
-	        domProps: {
-	          "textContent": _vm._s(i.label)
-	        }
-	      })])
-	    })], 2)], 1)
-	  }))], 1), _vm._v(" "), _c('n3-column', {
-	    attrs: {
-	      "col": 10
-	    }
-	  }, [_c(_vm.component, {
-	    tag: "component"
-	  })], 1), _vm._v(" "), _c('n3-row')], 1)], 1) : [_vm._t("default")]], 2), _vm._v(" "), _c('footer', {
-	    staticClass: "bs-docs-footer"
-	  }, [_c('n3-container', [_c('ul', [_c('li', [_c('span', [_vm._v("Email:")]), _vm._v("zhangking520@gmail.com")]), _vm._v(" "), _c('li', [_c('span', [_vm._v("Github:")]), _c('a', {
-	    attrs: {
-	      "href": "https://github.com/N3-components/N3-components"
-	    }
-	  }, [_vm._v("Repository")])]), _vm._v(" "), _c('li', [_c('span', [_vm._v("QQ Group:")]), _vm._v("556286036")]), _vm._v(" "), _c('li', [_c('span', [_vm._v("gitter:")]), _c('a', {
-	    attrs: {
-	      "href": "https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link"
-	    }
-	  }, [_vm._v("gitter link")])])])])], 1)])
-	},staticRenderFns: []}
-	module.exports.render._withStripped = true
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-60264382", module.exports)
-	  }
-	}
-
-/***/ },
-/* 562 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 	
-	var _components = __webpack_require__(563);
+	var _components = __webpack_require__(556);
 	
 	var _components2 = _interopRequireDefault(_components);
 	
@@ -38442,7 +38063,7 @@
 	module.exports = _components2.default;
 
 /***/ },
-/* 563 */
+/* 556 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38451,77 +38072,81 @@
 	
 	var _n3Alert2 = _interopRequireDefault(_n3Alert);
 	
-	var _n3Carousel = __webpack_require__(564);
+	var _n3Carousel = __webpack_require__(557);
 	
 	var _n3Carousel2 = _interopRequireDefault(_n3Carousel);
 	
-	var _n3Accordion = __webpack_require__(567);
+	var _n3Accordion = __webpack_require__(562);
 	
 	var _n3Accordion2 = _interopRequireDefault(_n3Accordion);
 	
-	var _n3Affix = __webpack_require__(570);
+	var _n3Affix = __webpack_require__(565);
 	
 	var _n3Affix2 = _interopRequireDefault(_n3Affix);
 	
-	var _n3Aside = __webpack_require__(573);
+	var _n3Aside = __webpack_require__(568);
 	
 	var _n3Aside2 = _interopRequireDefault(_n3Aside);
 	
-	var _n3CheckboxGroup = __webpack_require__(576);
+	var _n3CheckboxGroup = __webpack_require__(572);
 	
 	var _n3CheckboxGroup2 = _interopRequireDefault(_n3CheckboxGroup);
 	
-	var _n3Checkbox = __webpack_require__(585);
+	var _n3Checkbox = __webpack_require__(581);
 	
 	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
 	
-	var _n3CheckboxBtn = __webpack_require__(588);
+	var _n3CheckboxBtn = __webpack_require__(584);
 	
 	var _n3CheckboxBtn2 = _interopRequireDefault(_n3CheckboxBtn);
 	
-	var _n3Cascader = __webpack_require__(591);
+	var _n3Cascader = __webpack_require__(587);
 	
 	var _n3Cascader2 = _interopRequireDefault(_n3Cascader);
 	
-	var _n3ToastMethod = __webpack_require__(599);
+	var _n3ToastMethod = __webpack_require__(595);
 	
 	var _n3ToastMethod2 = _interopRequireDefault(_n3ToastMethod);
 	
-	var _n3Label = __webpack_require__(603);
+	var _n3Label = __webpack_require__(599);
 	
 	var _n3Label2 = _interopRequireDefault(_n3Label);
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _n3InputNumber = __webpack_require__(606);
+	var _n3InputNumber = __webpack_require__(602);
 	
 	var _n3InputNumber2 = _interopRequireDefault(_n3InputNumber);
 	
-	var _n3Textarea = __webpack_require__(609);
+	var _n3Textarea = __webpack_require__(605);
 	
 	var _n3Textarea2 = _interopRequireDefault(_n3Textarea);
 	
-	var _n3Datepicker = __webpack_require__(612);
+	var _n3Datepicker = __webpack_require__(608);
 	
 	var _n3Datepicker2 = _interopRequireDefault(_n3Datepicker);
 	
-	var _n3Timepicker = __webpack_require__(615);
+	var _n3Timepicker = __webpack_require__(611);
 	
 	var _n3Timepicker2 = _interopRequireDefault(_n3Timepicker);
 	
-	var _n3Datetimepicker = __webpack_require__(625);
+	var _n3Datetimepicker = __webpack_require__(621);
 	
 	var _n3Datetimepicker2 = _interopRequireDefault(_n3Datetimepicker);
 	
-	var _n3Dropdown = __webpack_require__(628);
+	var _n3Dropdown = __webpack_require__(624);
 	
 	var _n3Dropdown2 = _interopRequireDefault(_n3Dropdown);
 	
-	var _n3Modal = __webpack_require__(444);
+	var _n3Modal = __webpack_require__(631);
 	
 	var _n3Modal2 = _interopRequireDefault(_n3Modal);
+	
+	var _n3ModalMethod = __webpack_require__(634);
+	
+	var _n3ModalMethod2 = _interopRequireDefault(_n3ModalMethod);
 	
 	var _n3Option = __webpack_require__(635);
 	
@@ -38571,7 +38196,7 @@
 	
 	var _n3Tabs2 = _interopRequireDefault(_n3Tabs);
 	
-	var _n3Tooltip = __webpack_require__(619);
+	var _n3Tooltip = __webpack_require__(615);
 	
 	var _n3Tooltip2 = _interopRequireDefault(_n3Tooltip);
 	
@@ -38667,7 +38292,7 @@
 	
 	var _n3FormItem2 = _interopRequireDefault(_n3FormItem);
 	
-	var _n3Slider = __webpack_require__(617);
+	var _n3Slider = __webpack_require__(613);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
@@ -38691,7 +38316,7 @@
 	
 	var _n3Uploader2 = _interopRequireDefault(_n3Uploader);
 	
-	var _n3CollapseTransition = __webpack_require__(630);
+	var _n3CollapseTransition = __webpack_require__(626);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -38771,7 +38396,7 @@
 	  }
 	
 	  Vue.directive('n3Position', _position2.default);
-	
+	  Vue.prototype.n3Modal = _n3ModalMethod2.default;
 	  Vue.mixin({
 	    methods: {
 	      n3Toast: _n3ToastMethod2.default
@@ -38788,17 +38413,17 @@
 	module.exports = Components;
 
 /***/ },
-/* 564 */
+/* 557 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(565)
+	__vue_exports__ = __webpack_require__(558)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(566)
+	var __vue_template__ = __webpack_require__(561)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -38832,7 +38457,7 @@
 
 
 /***/ },
-/* 565 */
+/* 558 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38841,7 +38466,7 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
@@ -38849,7 +38474,7 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _element = __webpack_require__(448);
+	var _element = __webpack_require__(560);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -38993,7 +38618,151 @@
 	};
 
 /***/ },
-/* 566 */
+/* 559 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var EventListener = {
+	  /**
+	   * Listen to DOM events during the bubble phase.
+	   *
+	   * @param {DOMEventTarget} target DOM element to register listener on.
+	   * @param {string} eventType Event type, e.g. 'click' or 'mouseover'.
+	   * @param {function} callback Callback function.
+	   * @return {object} Object with a `remove` method.
+	   */
+	  listen: function listen(target, eventType, callback) {
+	    if (target.addEventListener) {
+	      target.addEventListener(eventType, callback, false);
+	      return {
+	        remove: function remove() {
+	          target.removeEventListener(eventType, callback, false);
+	        }
+	      };
+	    } else if (target.attachEvent) {
+	      target.attachEvent('on' + eventType, callback);
+	      return {
+	        remove: function remove() {
+	          target.detachEvent('on' + eventType, callback);
+	        }
+	      };
+	    }
+	  }
+	};
+	
+	exports.default = EventListener;
+
+/***/ },
+/* 560 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
+	// Browser environment sniffing
+	var inBrowser = typeof window !== 'undefined' && Object.prototype.toString.call(window) !== '[object Object]';
+	
+	// UA sniffing for working around browser-specific quirks
+	var UA = inBrowser && window.navigator.userAgent.toLowerCase();
+	var isIE9 = UA && UA.indexOf('msie 9.0') > 0;
+	
+	/**
+	 * For IE9 compat: when both class and :class are present
+	 * getAttribute('class') returns wrong value...
+	 *
+	 * @param {Element} el
+	 * @return {String}
+	 */
+	
+	function getClass(el) {
+	  var classname = el.className;
+	  if ((typeof classname === 'undefined' ? 'undefined' : _typeof(classname)) === 'object') {
+	    classname = classname.baseVal || '';
+	  }
+	  return classname;
+	}
+	
+	/**
+	 * In IE9, setAttribute('class') will result in empty class
+	 * if the element also has the :class attribute; However in
+	 * PhantomJS, setting `className` does not work on SVG elements...
+	 * So we have to do a conditional check here.
+	 *
+	 * @param {Element} el
+	 * @param {String} cls
+	 */
+	
+	function setClass(el, cls) {
+	  /* istanbul ignore if */
+	  if (isIE9 && !/svg$/.test(el.namespaceURI)) {
+	    el.className = cls;
+	  } else {
+	    el.setAttribute('class', cls);
+	  }
+	}
+	
+	/**
+	 * Add class with compatibility for IE & SVG
+	 *
+	 * @param {Element} el
+	 * @param {String} cls
+	 */
+	
+	function addClass(el, cls) {
+	  if (el.classList) {
+	    el.classList.add(cls);
+	  } else {
+	    var cur = ' ' + getClass(el) + ' ';
+	    if (cur.indexOf(' ' + cls + ' ') < 0) {
+	      setClass(el, (cur + cls).trim());
+	    }
+	  }
+	}
+	
+	/**
+	 * Remove class with compatibility for IE & SVG
+	 *
+	 * @param {Element} el
+	 * @param {String} cls
+	 */
+	
+	function removeClass(el, cls) {
+	  if (el.classList) {
+	    el.classList.remove(cls);
+	  } else {
+	    var cur = ' ' + getClass(el) + ' ';
+	    var tar = ' ' + cls + ' ';
+	    while (cur.indexOf(tar) >= 0) {
+	      cur = cur.replace(tar, ' ');
+	    }
+	    setClass(el, cur.trim());
+	  }
+	  if (!el.className) {
+	    el.removeAttribute('class');
+	  }
+	}
+	
+	exports.default = {
+	  getClass: getClass,
+	  removeClass: removeClass,
+	  addClass: addClass,
+	  setClass: setClass,
+	  inBrowser: inBrowser,
+	  UA: UA,
+	  isIE9: isIE9
+	};
+
+/***/ },
+/* 561 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -39064,17 +38833,17 @@
 	}
 
 /***/ },
-/* 567 */
+/* 562 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(568)
+	__vue_exports__ = __webpack_require__(563)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(569)
+	var __vue_template__ = __webpack_require__(564)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -39108,7 +38877,7 @@
 
 
 /***/ },
-/* 568 */
+/* 563 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39166,7 +38935,7 @@
 	};
 
 /***/ },
-/* 569 */
+/* 564 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -39183,17 +38952,17 @@
 	}
 
 /***/ },
-/* 570 */
+/* 565 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(571)
+	__vue_exports__ = __webpack_require__(566)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(572)
+	var __vue_template__ = __webpack_require__(567)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -39227,7 +38996,7 @@
 
 
 /***/ },
-/* 571 */
+/* 566 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39236,7 +39005,7 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
@@ -39325,7 +39094,7 @@
 	//
 
 /***/ },
-/* 572 */
+/* 567 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -39342,17 +39111,17 @@
 	}
 
 /***/ },
-/* 573 */
+/* 568 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(574)
+	__vue_exports__ = __webpack_require__(569)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(575)
+	var __vue_template__ = __webpack_require__(571)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -39386,7 +39155,7 @@
 
 
 /***/ },
-/* 574 */
+/* 569 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39395,15 +39164,15 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _getScrollBarWidth = __webpack_require__(446);
+	var _getScrollBarWidth = __webpack_require__(570);
 	
 	var _getScrollBarWidth2 = _interopRequireDefault(_getScrollBarWidth);
 	
-	var _element = __webpack_require__(448);
+	var _element = __webpack_require__(560);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -39512,7 +39281,43 @@
 	//
 
 /***/ },
-/* 575 */
+/* 570 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	exports.default = function () {
+	  var inner = document.createElement('p');
+	  inner.style.width = '100%';
+	  inner.style.height = '200px';
+	
+	  var outer = document.createElement('div');
+	  outer.style.position = 'absolute';
+	  outer.style.top = '0px';
+	  outer.style.left = '0px';
+	  outer.style.visibility = 'hidden';
+	  outer.style.width = '200px';
+	  outer.style.height = '150px';
+	  outer.style.overflow = 'hidden';
+	  outer.appendChild(inner);
+	
+	  document.body.appendChild(outer);
+	  var w1 = inner.offsetWidth;
+	  outer.style.overflow = 'scroll';
+	  var w2 = inner.offsetWidth;
+	  if (w1 === w2) w2 = outer.clientWidth;
+	
+	  document.body.removeChild(outer);
+	
+	  return w1 - w2;
+	};
+
+/***/ },
+/* 571 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -39560,17 +39365,17 @@
 	}
 
 /***/ },
-/* 576 */
+/* 572 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(577)
+	__vue_exports__ = __webpack_require__(573)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(584)
+	var __vue_template__ = __webpack_require__(580)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -39604,7 +39409,7 @@
 
 
 /***/ },
-/* 577 */
+/* 573 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39613,15 +39418,15 @@
 	  value: true
 	});
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _events = __webpack_require__(582);
+	var _events = __webpack_require__(578);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
@@ -39711,7 +39516,7 @@
 	//
 
 /***/ },
-/* 578 */
+/* 574 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -39734,17 +39539,17 @@
 	};
 
 /***/ },
-/* 579 */
+/* 575 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(580)
+	__vue_exports__ = __webpack_require__(576)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(583)
+	var __vue_template__ = __webpack_require__(579)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -39778,7 +39583,7 @@
 
 
 /***/ },
-/* 580 */
+/* 576 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39787,11 +39592,11 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _events = __webpack_require__(582);
+	var _events = __webpack_require__(578);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
@@ -40106,7 +39911,7 @@
 	};
 
 /***/ },
-/* 581 */
+/* 577 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40221,7 +40026,7 @@
 	exports.isPromise = isPromise;
 
 /***/ },
-/* 582 */
+/* 578 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40264,7 +40069,7 @@
 	};
 
 /***/ },
-/* 583 */
+/* 579 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40281,7 +40086,7 @@
 	}
 
 /***/ },
-/* 584 */
+/* 580 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40305,17 +40110,17 @@
 	}
 
 /***/ },
-/* 585 */
+/* 581 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(586)
+	__vue_exports__ = __webpack_require__(582)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(587)
+	var __vue_template__ = __webpack_require__(583)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -40349,7 +40154,7 @@
 
 
 /***/ },
-/* 586 */
+/* 582 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40362,15 +40167,15 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _events = __webpack_require__(582);
+	var _events = __webpack_require__(578);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -40484,7 +40289,7 @@
 	};
 
 /***/ },
-/* 587 */
+/* 583 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40528,17 +40333,17 @@
 	}
 
 /***/ },
-/* 588 */
+/* 584 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(589)
+	__vue_exports__ = __webpack_require__(585)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(590)
+	var __vue_template__ = __webpack_require__(586)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -40572,7 +40377,7 @@
 
 
 /***/ },
-/* 589 */
+/* 585 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40585,15 +40390,15 @@
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _events = __webpack_require__(582);
+	var _events = __webpack_require__(578);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -40697,7 +40502,7 @@
 	};
 
 /***/ },
-/* 590 */
+/* 586 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -40724,17 +40529,17 @@
 	}
 
 /***/ },
-/* 591 */
+/* 587 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(592)
+	__vue_exports__ = __webpack_require__(588)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(598)
+	var __vue_template__ = __webpack_require__(594)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -40768,7 +40573,7 @@
 
 
 /***/ },
-/* 592 */
+/* 588 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -40777,15 +40582,15 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(595);
+	var _inputMixin = __webpack_require__(591);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -41007,17 +40812,17 @@
 	//
 
 /***/ },
-/* 593 */
+/* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(594)
+	__vue_exports__ = __webpack_require__(590)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(597)
+	var __vue_template__ = __webpack_require__(593)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -41051,7 +40856,7 @@
 
 
 /***/ },
-/* 594 */
+/* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41064,15 +40869,15 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _inputMixin = __webpack_require__(595);
+	var _inputMixin = __webpack_require__(591);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _vueFocus = __webpack_require__(596);
+	var _vueFocus = __webpack_require__(592);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -41186,7 +40991,7 @@
 	};
 
 /***/ },
-/* 595 */
+/* 591 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -41229,12 +41034,12 @@
 	};
 
 /***/ },
-/* 596 */
+/* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var Vue = __webpack_require__(443);
+	var Vue = __webpack_require__(554);
 	Vue = 'default' in Vue ? Vue['default'] : Vue;
 	
 	var version = '2.1.0';
@@ -41273,7 +41078,7 @@
 	exports.mixin = mixin;
 
 /***/ },
-/* 597 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41354,7 +41159,7 @@
 	}
 
 /***/ },
-/* 598 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41433,7 +41238,7 @@
 	}
 
 /***/ },
-/* 599 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41468,26 +41273,26 @@
 	  }
 	};
 	
-	var _vue = __webpack_require__(443);
+	var _vue = __webpack_require__(554);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var n3Toast = _vue2.default.extend(__webpack_require__(600));
+	var n3Toast = _vue2.default.extend(__webpack_require__(596));
 
 /***/ },
-/* 600 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(601)
+	__vue_exports__ = __webpack_require__(597)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(602)
+	var __vue_template__ = __webpack_require__(598)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -41521,7 +41326,7 @@
 
 
 /***/ },
-/* 601 */
+/* 597 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -41636,7 +41441,7 @@
 	};
 
 /***/ },
-/* 602 */
+/* 598 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41665,17 +41470,17 @@
 	}
 
 /***/ },
-/* 603 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(604)
+	__vue_exports__ = __webpack_require__(600)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(605)
+	var __vue_template__ = __webpack_require__(601)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -41709,7 +41514,7 @@
 
 
 /***/ },
-/* 604 */
+/* 600 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -41758,7 +41563,7 @@
 	};
 
 /***/ },
-/* 605 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -41775,17 +41580,17 @@
 	}
 
 /***/ },
-/* 606 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(607)
+	__vue_exports__ = __webpack_require__(603)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(608)
+	var __vue_template__ = __webpack_require__(604)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -41819,7 +41624,7 @@
 
 
 /***/ },
-/* 607 */
+/* 603 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41828,7 +41633,7 @@
 	  value: true
 	});
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
@@ -41836,7 +41641,7 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _inputMixin = __webpack_require__(595);
+	var _inputMixin = __webpack_require__(591);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -42079,7 +41884,7 @@
 	};
 
 /***/ },
-/* 608 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -42169,17 +41974,17 @@
 	}
 
 /***/ },
-/* 609 */
+/* 605 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(610)
+	__vue_exports__ = __webpack_require__(606)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(611)
+	var __vue_template__ = __webpack_require__(607)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -42213,7 +42018,7 @@
 
 
 /***/ },
-/* 610 */
+/* 606 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42222,11 +42027,11 @@
 	  value: true
 	});
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
@@ -42343,7 +42148,7 @@
 	};
 
 /***/ },
-/* 611 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -42390,17 +42195,17 @@
 	}
 
 /***/ },
-/* 612 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(613)
+	__vue_exports__ = __webpack_require__(609)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(614)
+	var __vue_template__ = __webpack_require__(610)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -42434,7 +42239,7 @@
 
 
 /***/ },
-/* 613 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42443,15 +42248,15 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(595);
+	var _inputMixin = __webpack_require__(591);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -42838,7 +42643,7 @@
 	//
 
 /***/ },
-/* 614 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -43024,17 +42829,17 @@
 	}
 
 /***/ },
-/* 615 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(616)
+	__vue_exports__ = __webpack_require__(612)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(624)
+	var __vue_template__ = __webpack_require__(620)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -43068,7 +42873,7 @@
 
 
 /***/ },
-/* 616 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43077,19 +42882,19 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Slider = __webpack_require__(617);
+	var _n3Slider = __webpack_require__(613);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(595);
+	var _inputMixin = __webpack_require__(591);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -43298,17 +43103,17 @@
 	};
 
 /***/ },
-/* 617 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(618)
+	__vue_exports__ = __webpack_require__(614)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(623)
+	var __vue_template__ = __webpack_require__(619)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -43342,7 +43147,7 @@
 
 
 /***/ },
-/* 618 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43351,27 +43156,27 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Tooltip = __webpack_require__(619);
+	var _n3Tooltip = __webpack_require__(615);
 	
 	var _n3Tooltip2 = _interopRequireDefault(_n3Tooltip);
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _element = __webpack_require__(448);
+	var _element = __webpack_require__(560);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -43706,17 +43511,17 @@
 	};
 
 /***/ },
-/* 619 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(620)
+	__vue_exports__ = __webpack_require__(616)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(622)
+	var __vue_template__ = __webpack_require__(618)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -43750,7 +43555,7 @@
 
 
 /***/ },
-/* 620 */
+/* 616 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43759,7 +43564,7 @@
 	  value: true
 	});
 	
-	var _popoverMixins = __webpack_require__(621);
+	var _popoverMixins = __webpack_require__(617);
 	
 	var _popoverMixins2 = _interopRequireDefault(_popoverMixins);
 	
@@ -43811,7 +43616,7 @@
 	//
 
 /***/ },
-/* 621 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43820,11 +43625,11 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -43990,7 +43795,7 @@
 	exports.default = PopoverMixin;
 
 /***/ },
-/* 622 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -44028,7 +43833,7 @@
 	}
 
 /***/ },
-/* 623 */
+/* 619 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -44078,7 +43883,7 @@
 	}
 
 /***/ },
-/* 624 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -44220,17 +44025,17 @@
 	}
 
 /***/ },
-/* 625 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(626)
+	__vue_exports__ = __webpack_require__(622)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(627)
+	var __vue_template__ = __webpack_require__(623)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -44264,7 +44069,7 @@
 
 
 /***/ },
-/* 626 */
+/* 622 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44273,19 +44078,19 @@
 	  value: true
 	});
 	
-	var _n3Slider = __webpack_require__(617);
+	var _n3Slider = __webpack_require__(613);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(595);
+	var _inputMixin = __webpack_require__(591);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
@@ -44859,7 +44664,7 @@
 	};
 
 /***/ },
-/* 627 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -45130,17 +44935,17 @@
 	}
 
 /***/ },
-/* 628 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(629)
+	__vue_exports__ = __webpack_require__(625)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(634)
+	var __vue_template__ = __webpack_require__(630)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -45174,7 +44979,7 @@
 
 
 /***/ },
-/* 629 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45183,11 +44988,11 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3CollapseTransition = __webpack_require__(630);
+	var _n3CollapseTransition = __webpack_require__(626);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -45292,17 +45097,17 @@
 	};
 
 /***/ },
-/* 630 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 	
 	/* script */
-	__vue_exports__ = __webpack_require__(631)
+	__vue_exports__ = __webpack_require__(627)
 	
 	/* template */
-	var __vue_template__ = __webpack_require__(633)
+	var __vue_template__ = __webpack_require__(629)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -45336,7 +45141,7 @@
 
 
 /***/ },
-/* 631 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45345,7 +45150,7 @@
 	  value: true
 	});
 	
-	var _velocityAnimate = __webpack_require__(632);
+	var _velocityAnimate = __webpack_require__(628);
 	
 	var _velocityAnimate2 = _interopRequireDefault(_velocityAnimate);
 	
@@ -45395,7 +45200,7 @@
 	};
 
 /***/ },
-/* 632 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.4.0). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
@@ -50084,7 +49889,7 @@
 
 
 /***/ },
-/* 633 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -50107,7 +49912,7 @@
 	}
 
 /***/ },
-/* 634 */
+/* 630 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -50149,6 +49954,434 @@
 	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0bb0b2eb", module.exports)
 	  }
 	}
+
+/***/ },
+/* 631 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+	
+	/* script */
+	__vue_exports__ = __webpack_require__(632)
+	
+	/* template */
+	var __vue_template__ = __webpack_require__(633)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/baidu/Documents/Github/N3-components/src/n3Modal.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+	
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-466d2d7a", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-466d2d7a", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] n3Modal.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 632 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _getScrollBarWidth = __webpack_require__(570);
+	
+	var _getScrollBarWidth2 = _interopRequireDefault(_getScrollBarWidth);
+	
+	var _EventListener = __webpack_require__(559);
+	
+	var _EventListener2 = _interopRequireDefault(_EventListener);
+	
+	var _n3Button = __webpack_require__(383);
+	
+	var _n3Button2 = _interopRequireDefault(_n3Button);
+	
+	var _element = __webpack_require__(560);
+	
+	var _element2 = _interopRequireDefault(_element);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	
+	exports.default = {
+	  name: 'n3Modal',
+	  props: {
+	    title: {
+	      type: String,
+	      default: ''
+	    },
+	    show: {
+	      type: Boolean,
+	      default: false
+	    },
+	    width: {
+	      type: String,
+	      default: '600px'
+	    },
+	    effect: {
+	      type: String,
+	      default: 'fade'
+	    },
+	    backdrop: {
+	      type: Boolean,
+	      default: true
+	    },
+	    prefixCls: {
+	      type: String,
+	      default: 'n3'
+	    }
+	  },
+	  components: {
+	    n3Button: _n3Button2.default
+	  },
+	  computed: {
+	    classObj: function classObj() {
+	      var prefixCls = this.prefixCls,
+	          effect = this.effect;
+	
+	      var klass = {};
+	
+	      klass[prefixCls + '-modal'] = true;
+	      klass[prefixCls + '-modal-' + effect] = true;
+	
+	      return klass;
+	    }
+	  },
+	  data: function data() {
+	    var show = this.show;
+	    return {
+	      isShow: show
+	    };
+	  },
+	
+	  watch: {
+	    isShow: function isShow(val) {
+	      var _this = this;
+	
+	      if (val) {
+	        this.$emit('show');
+	      } else {
+	        this.$emit('hide');
+	      }
+	
+	      var el = this.$el;
+	      var body = document.body;
+	      var scrollBarWidth = (0, _getScrollBarWidth2.default)();
+	      if (val) {
+	        el.querySelector('.' + this.prefixCls + '-modal-content').focus();
+	        el.style.display = 'block';
+	        setTimeout(function () {
+	          return _element2.default.addClass(el, _this.prefixCls + '-modal-in');
+	        }, 0);
+	        _element2.default.addClass(body, this.prefixCls + '-modal-open');
+	        if (!scrollBarWidth) {
+	          _element2.default.addClass(body, this.prefixCls + '-modal-hide-y');
+	        }
+	        if (this.backdrop) {
+	          this._blurModalContentEvent = _EventListener2.default.listen(this.$el, 'click', function (e) {
+	            if (e.target === el) _this.isShow = false;
+	          });
+	        }
+	      } else {
+	        if (this._blurModalContentEvent) this._blurModalContentEvent.remove();
+	        _element2.default.removeClass(el, this.prefixCls + '-modal-in');
+	        setTimeout(function () {
+	          el.style.display = 'none';
+	          _element2.default.removeClass(body, _this.prefixCls + '-modal-open');
+	          _element2.default.removeClass(body, _this.prefixCls + '-modal-hide-y');
+	          body.style.paddingRight = '0';
+	          _this.$emit('closed');
+	        }, 300);
+	      }
+	    }
+	  },
+	  methods: {
+	    close: function close() {
+	      this.isShow = false;
+	    },
+	    open: function open() {
+	      this.isShow = true;
+	    },
+	    confirm: function confirm() {
+	      this.$emit('confirm');
+	    }
+	  }
+	};
+
+/***/ },
+/* 633 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', {
+	    class: _vm.classObj
+	  }, [_c('div', {
+	    class: (_vm.prefixCls + "-modal-dialog"),
+	    style: ({
+	      'width': _vm.width
+	    })
+	  }, [_c('div', {
+	    class: (_vm.prefixCls + "-modal-content")
+	  }, [_vm._t("header", [_c('div', {
+	    class: (_vm.prefixCls + "-modal-header")
+	  }, [_c('button', {
+	    class: (_vm.prefixCls + "-close"),
+	    attrs: {
+	      "type": "button"
+	    },
+	    on: {
+	      "click": _vm.close
+	    }
+	  }, [_c('span', [_vm._v("×")])]), _vm._v(" "), _c('h4', {
+	    class: (_vm.prefixCls + "-modal-title")
+	  }, [_vm._v(_vm._s(_vm.title))])])]), _vm._v(" "), _c('div', {
+	    class: (_vm.prefixCls + "-modal-body")
+	  }, [_vm._t("body")], 2), _vm._v(" "), _vm._t("footer", [_c('div', {
+	    class: (_vm.prefixCls + "-modal-footer")
+	  }, [_c('n3-button', {
+	    nativeOn: {
+	      "click": function($event) {
+	        _vm.close($event)
+	      }
+	    }
+	  }, [_vm._v("取消")]), _vm._v(" "), _c('n3-button', {
+	    attrs: {
+	      "type": "primary"
+	    },
+	    nativeOn: {
+	      "click": function($event) {
+	        _vm.confirm($event)
+	      }
+	    }
+	  }, [_vm._v("确定")])], 1)])], 2)])])
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-466d2d7a", module.exports)
+	  }
+	}
+
+/***/ },
+/* 634 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _vue = __webpack_require__(554);
+	
+	var _vue2 = _interopRequireDefault(_vue);
+	
+	var _n3Modal = __webpack_require__(631);
+	
+	var _n3Modal2 = _interopRequireDefault(_n3Modal);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var $body = document.querySelector('body');
+	
+	var createNode = function createNode() {
+	  var $node = document.createElement('div');
+	  $body.appendChild($node);
+	  return $node;
+	};
+	
+	var removeNode = function removeNode($node) {
+	  $body.removeChild($node);
+	};
+	
+	var typeMap = {
+	  success: {
+	    name: 'check-circle-o',
+	    color: '#19d567'
+	  },
+	  danger: {
+	    name: 'times-circle-o',
+	    color: '#f50'
+	  },
+	  warning: {
+	    name: 'exclamation-circle',
+	    color: '#fa0'
+	  },
+	  info: {
+	    name: 'info-circle',
+	    color: '#2db7f5'
+	  }
+	};
+	
+	var confirm = function confirm(options) {
+	  var title = options.title,
+	      message = options.message,
+	      effect = options.effect,
+	      type = options.type,
+	      width = options.width,
+	      onConfirm = options.onConfirm,
+	      onHide = options.onHide,
+	      onShow = options.onShow;
+	
+	  var confirm = new _vue2.default({
+	    el: createNode(),
+	    data: function data() {
+	      return {
+	        show: false
+	      };
+	    },
+	
+	    components: {
+	      Modal: _n3Modal2.default
+	    },
+	    template: '<Modal ref="modal" title="' + title + '"\n      effect="' + (effect || 'fade') + '"\n      ' + (width ? 'width="' + width + '"' : '') + '\n      :backdrop="false"\n      @confirm="handleConfirm"\n      @hide="handleHide"\n      @show="handleShow"\n      @closed="destroy">\n      <div slot="header" v-if="' + !title + '"></div>\n      <div slot="body">\n        <n3-icon :style="{color: iconType.color}" :type="iconType.name"></n3-icon>\n        ' + options.message + '\n      </div>\n    </Modal>',
+	    mounted: function mounted() {
+	      var _this = this;
+	
+	      this.$nextTick(function () {
+	        _this.$refs.modal.open();
+	      });
+	    },
+	    destroyed: function destroyed() {
+	      removeNode(this.$el);
+	    },
+	
+	    computed: {
+	      iconType: function iconType() {
+	        return typeMap[type];
+	      }
+	    },
+	    methods: {
+	      handleShow: function handleShow() {
+	        onShow && onShow();
+	      },
+	      handleConfirm: function handleConfirm() {
+	        onConfirm && onConfirm();
+	        this.$refs.modal.close();
+	      },
+	      handleHide: function handleHide() {
+	        onHide && onHide();
+	      },
+	      destroy: function destroy() {
+	        this.$destroy();
+	      }
+	    }
+	  });
+	};
+	
+	var alert = function alert(options) {
+	  var title = options.title,
+	      message = options.message,
+	      effect = options.effect,
+	      type = options.type,
+	      width = options.width,
+	      onConfirm = options.onConfirm,
+	      onHide = options.onHide,
+	      onShow = options.onShow;
+	
+	  var alert = new _vue2.default({
+	    el: createNode(),
+	    data: function data() {
+	      return {
+	        show: false
+	      };
+	    },
+	
+	    components: {
+	      Modal: _n3Modal2.default
+	    },
+	    template: '<Modal title="' + title + '"\n      effect="' + (effect || 'fade') + '"\n      ref="modal"\n      ' + (width ? 'width="' + width + '"' : '') + '\n      :backdrop="false"\n      @hide="handleHide"\n      @show="handleShow"\n      @closed="destroy">\n      <div slot="body">\n        <n3-icon :style="{color: iconType.color}" :type="iconType.name"></n3-icon>\n        ' + message + '\n      </div>\n      <div slot="header" v-if="' + !title + '"></div>\n      <div slot="footer" class="n3-modal-footer">\n        <n3-button @click.native="handleConfirm">\u786E\u5B9A</n3-button>\n      </div>\n    </Modal>',
+	    mounted: function mounted() {
+	      var _this2 = this;
+	
+	      this.$nextTick(function () {
+	        _this2.$refs.modal.open();
+	      });
+	    },
+	    destroyed: function destroyed() {
+	      removeNode(this.$el);
+	    },
+	
+	    computed: {
+	      iconType: function iconType() {
+	        return typeMap[type];
+	      }
+	    },
+	    methods: {
+	      handleShow: function handleShow() {
+	        onShow && onShow();
+	      },
+	      handleConfirm: function handleConfirm() {
+	        onConfirm && onConfirm();
+	        this.$refs.modal.close();
+	      },
+	      handleHide: function handleHide() {
+	        onHide && onHide();
+	      },
+	      destroy: function destroy() {
+	        this.$destroy();
+	      }
+	    }
+	  });
+	};
+	
+	exports.default = {
+	  alert: alert,
+	  confirm: confirm
+	};
 
 /***/ },
 /* 635 */
@@ -50297,11 +50530,11 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _n3CollapseTransition = __webpack_require__(630);
+	var _n3CollapseTransition = __webpack_require__(626);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -50463,7 +50696,7 @@
 	  value: true
 	});
 	
-	var _popoverMixins = __webpack_require__(621);
+	var _popoverMixins = __webpack_require__(617);
 	
 	var _popoverMixins2 = _interopRequireDefault(_popoverMixins);
 	
@@ -50625,7 +50858,7 @@
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -51031,15 +51264,15 @@
 	  value: true
 	});
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _events = __webpack_require__(582);
+	var _events = __webpack_require__(578);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -51250,11 +51483,11 @@
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _events = __webpack_require__(582);
+	var _events = __webpack_require__(578);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
@@ -51437,19 +51670,19 @@
 	
 	var _n3RadioBtn2 = _interopRequireDefault(_n3RadioBtn);
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _events = __webpack_require__(582);
+	var _events = __webpack_require__(578);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -51621,7 +51854,7 @@
 	  value: true
 	});
 	
-	var _EventListener = __webpack_require__(447);
+	var _EventListener = __webpack_require__(559);
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
@@ -51637,11 +51870,11 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
@@ -51649,11 +51882,11 @@
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -52072,7 +52305,7 @@
 		value: true
 	});
 	
-	var _vue = __webpack_require__(443);
+	var _vue = __webpack_require__(554);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
@@ -53065,7 +53298,7 @@
 	  value: true
 	});
 	
-	var _n3Dropdown = __webpack_require__(628);
+	var _n3Dropdown = __webpack_require__(624);
 	
 	var _n3Dropdown2 = _interopRequireDefault(_n3Dropdown);
 	
@@ -53421,11 +53654,11 @@
 	  value: true
 	});
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -53643,7 +53876,7 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -53659,11 +53892,11 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _valMixin = __webpack_require__(578);
+	var _valMixin = __webpack_require__(574);
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _validate = __webpack_require__(579);
+	var _validate = __webpack_require__(575);
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
@@ -54016,7 +54249,7 @@
 	  value: true
 	});
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
@@ -54024,7 +54257,7 @@
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _inputMixin = __webpack_require__(595);
+	var _inputMixin = __webpack_require__(591);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -54536,11 +54769,11 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
@@ -55287,7 +55520,7 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(593);
+	var _n3Input = __webpack_require__(589);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
@@ -55295,7 +55528,7 @@
 	
 	var _n3Loading2 = _interopRequireDefault(_n3Loading);
 	
-	var _type2 = __webpack_require__(581);
+	var _type2 = __webpack_require__(577);
 	
 	var _type3 = _interopRequireDefault(_type2);
 	
@@ -56922,11 +57155,11 @@
 	  value: true
 	});
 	
-	var _type = __webpack_require__(581);
+	var _type = __webpack_require__(577);
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _events = __webpack_require__(582);
+	var _events = __webpack_require__(578);
 	
 	var _events2 = _interopRequireDefault(_events);
 	
@@ -57276,7 +57509,7 @@
 	  value: true
 	});
 	
-	var _element = __webpack_require__(448);
+	var _element = __webpack_require__(560);
 	
 	var _element2 = _interopRequireDefault(_element);
 	
@@ -58405,11 +58638,11 @@
 	  value: true
 	});
 	
-	var _n3CollapseTransition = __webpack_require__(630);
+	var _n3CollapseTransition = __webpack_require__(626);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
-	var _n3Checkbox = __webpack_require__(585);
+	var _n3Checkbox = __webpack_require__(581);
 	
 	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
 	
@@ -59833,7 +60066,7 @@
 		value: true
 	});
 	
-	var _vue = __webpack_require__(443);
+	var _vue = __webpack_require__(554);
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	

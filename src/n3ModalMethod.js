@@ -13,8 +13,27 @@ const removeNode = $node => {
   $body.removeChild($node)
 }
 
-export const confirm = (options) => {
-  const {title, message, effect, onConfirm, onHide, onShow} = options
+const typeMap = {
+  success: {
+    name: 'check-circle-o',
+    color: '#19d567'
+  },
+  danger: {
+    name: 'times-circle-o',
+    color: '#f50'
+  },
+  warning: {
+    name: 'exclamation-circle',
+    color: '#fa0'
+  },
+  info: {
+    name: 'info-circle',
+    color: '#2db7f5'
+  }
+}
+
+const confirm = (options) => {
+  const {title, message, effect, type, width, onConfirm, onHide, onShow} = options
   const confirm = new Vue({
     el: createNode(),
     data () {
@@ -27,6 +46,7 @@ export const confirm = (options) => {
     },
     template: `<Modal ref="modal" title="${title}"
       effect="${effect || 'fade'}"
+      ${width ? 'width="' + width + '"' : ''}
       :backdrop="false"
       @confirm="handleConfirm"
       @hide="handleHide"
@@ -34,6 +54,7 @@ export const confirm = (options) => {
       @closed="destroy">
       <div slot="header" v-if="${!title}"></div>
       <div slot="body">
+        <n3-icon :style="{color: iconType.color}" :type="iconType.name"></n3-icon>
         ${options.message}
       </div>
     </Modal>`,
@@ -45,16 +66,21 @@ export const confirm = (options) => {
     destroyed () {
       removeNode(this.$el)
     },
+    computed: {
+      iconType () {
+        return typeMap[type]
+      },
+    },
     methods: {
       handleShow () {
-        onShow()
+        onShow && onShow()
       },
       handleConfirm () {
-        onConfirm()
+        onConfirm && onConfirm()
         this.$refs.modal.close()
       },
       handleHide () {
-        onHide()
+        onHide && onHide()
       },
       destroy () {
         this.$destroy()
@@ -63,8 +89,8 @@ export const confirm = (options) => {
   })
 }
 
-export const alert = (options) => {
-  const {title, message, effect, onConfirm, onHide, onShow} = options
+const alert = (options) => {
+  const {title, message, effect, type, width, onConfirm, onHide, onShow} = options
   const alert = new Vue({
     el: createNode(),
     data () {
@@ -78,16 +104,18 @@ export const alert = (options) => {
     template: `<Modal title="${title}"
       effect="${effect || 'fade'}"
       ref="modal"
+      ${width ? 'width="' + width + '"' : ''}
       :backdrop="false"
       @hide="handleHide"
       @show="handleShow"
       @closed="destroy">
       <div slot="body">
+        <n3-icon :style="{color: iconType.color}" :type="iconType.name"></n3-icon>
         ${message}
       </div>
       <div slot="header" v-if="${!title}"></div>
       <div slot="footer" class="n3-modal-footer">
-        <n3-button @click.native="$refs.modal.close">确定</n3-button>
+        <n3-button @click.native="handleConfirm">确定</n3-button>
       </div>
     </Modal>`,
     mounted () {
@@ -98,16 +126,30 @@ export const alert = (options) => {
     destroyed () {
       removeNode(this.$el)
     },
+    computed: {
+      iconType () {
+        return typeMap[type]
+      },
+    },
     methods: {
       handleShow () {
-        onShow()
+        onShow && onShow()
+      },
+      handleConfirm () {
+        onConfirm && onConfirm()
+        this.$refs.modal.close()
       },
       handleHide () {
-        onHide()
+        onHide && onHide()
       },
       destroy () {
         this.$destroy()
       }
     }
   })
+}
+
+export default {
+  alert,
+  confirm
 }
