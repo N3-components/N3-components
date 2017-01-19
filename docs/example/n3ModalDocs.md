@@ -129,6 +129,7 @@ export default {
 | 参数名 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | title | `String` |  | 弹出框标题，如果为空则不渲染 header|
+| message | `String` |  | 弹出框内容|
 | effect | `String` | 'fade' | `fade``zoom` |
 | type | `String` | `600px` | 弹出框类型，用于决定弹出框提示图标。 |
 | width | `String` | `600px` | 弹出框宽度 |

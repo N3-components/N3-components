@@ -54,7 +54,7 @@ const confirm = (options) => {
       @closed="destroy">
       <div slot="header" v-if="${!title}"></div>
       <div slot="body">
-        <n3-icon :style="{color: iconType.color}" :type="iconType.name"></n3-icon>
+        <n3-icon :style="{color: iconType.color,fontSize:'40px',marginRight:'20px'}" :type="iconType.name"></n3-icon>
         ${options.message}
       </div>
     </Modal>`,
@@ -110,7 +110,7 @@ const alert = (options) => {
       @show="handleShow"
       @closed="destroy">
       <div slot="body">
-        <n3-icon :style="{color: iconType.color}" :type="iconType.name"></n3-icon>
+        <n3-icon :style="{color: iconType.color,fontSize:'40px',marginRight:'20px'}" :type="iconType.name"></n3-icon>
         ${message}
       </div>
       <div slot="header" v-if="${!title}"></div>
