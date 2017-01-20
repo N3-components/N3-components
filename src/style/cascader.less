@@ -13,7 +13,7 @@
     font-size: 12px;
     background: @whiteColor;
     position: absolute;
-    border: 1px solid @lightGrayColor;
+    border: 1px solid @lightColor;
     box-shadow: @cascaderShadow;
     white-space: nowrap
   }
@@ -43,6 +43,7 @@
       transition: all .3s ease;
       &-selected,&-selected:hover{
         background: @cascaderColor!important;
+        font-weight: bold;
       }
       &-disabled {
         cursor: not-allowed;

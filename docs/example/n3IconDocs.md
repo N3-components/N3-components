@@ -1,99 +1,83 @@
 <template>
-  <div class="bs-docs-section" id="图标"  >
-    <h1 class="page-header"><a href="#图标" class="anchor">图标</a><span class="author"> </span></h1>
-    <div class="bs-example">
-    <h3>FontAwesome 4.0 图标列表</h3>
-    <h4>11 New Icons in 4.0</h4>
-    <hr></hr>
-    <n3-container>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in newfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-        <br>
-      <h4>Web Application Icons</h4>
-      <hr></hr>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in webfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-      <h4>Form Control Icons</h4>
-      <hr></hr>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in formfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-      <br>
-      <h4>Currency Icons</h4>
-      <hr></hr>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in currencyfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-      <br>
-      <h4>Text Edit Icons</h4>
-      <hr></hr>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in textfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-      <br>
-      <h4>Directional Icons</h4>
-      <hr></hr>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in directionalfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-      <br>
-      <h4>Video Player Icons</h4>
-      <hr></hr>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in videofont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-      <br>
-      <h4>Brand Icons</h4>
-      <hr></hr>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in brandfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-      <br>
-      <h4>Medical Icons</h4>
-      <hr></hr>
-      <n3-row class="row-ex clearfix">
-        <n3-column v-for="font in medicalfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
-      </n3-row>
-    </n3-container>
-    </div>
+
+## 图标
+
+<div class="bs-docs-section" id="图标"  >
+<div class="bs-example">
+
+### FontAwesome 4.0 图标列表
+
+#### 11 New Icons in 4.0
+
+<hr></hr>
+
+<n3-container>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in newfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+    <br>
+  <h4>Web Application Icons</h4>
+  <hr></hr>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in webfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+  <h4>Form Control Icons</h4>
+  <hr></hr>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in formfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+  <br>
+  <h4>Currency Icons</h4>
+  <hr></hr>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in currencyfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+  <br>
+  <h4>Text Edit Icons</h4>
+  <hr></hr>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in textfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+  <br>
+  <h4>Directional Icons</h4>
+  <hr></hr>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in directionalfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+  <br>
+  <h4>Video Player Icons</h4>
+  <hr></hr>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in videofont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+  <br>
+  <h4>Brand Icons</h4>
+  <hr></hr>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in brandfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+  <br>
+  <h4>Medical Icons</h4>
+  <hr></hr>
+  <n3-row class="row-ex clearfix">
+    <n3-column v-for="font in medicalfont" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+  </n3-row>
+</n3-container>
+</div>
 
 ```html
 <n3-icon type="rub"></n3-icon>
 ```
-  <h2>参数</h2>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>参数名</th>
-        <th>类型</th>
-        <th>默认值</th>
-        <th>说明</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>type</td>
-        <td><code>String</code></td>
-        <td><code></code></td>
-        <td>图标类型名</td>
-      </tr>
-      <tr>
-        <td>size</td>
-        <td><code>String</code></td>
-        <td><code></code></td>
-        <td>图标尺寸</td>
-      </tr>
-      <tr>
-        <td>color</td>
-        <td><code>String</code></td>
-        <td><code></code></td>
-        <td>颜色</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+
+### 参数
+
+| 参数名 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| type | `String` |  | 图标类型名 |
+| size | `String` |  | 图标尺寸 |
+| color | `String` |  | 颜色 |
+
+</div>
 </template>
 
 <script>

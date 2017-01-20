@@ -60,6 +60,7 @@ import n3Card from './n3Card'
 import n3Rate from './n3Rate'
 import n3Uploader from './n3Uploader'
 import n3CollapseTransition from './n3CollapseTransition'
+import position from './position.js'
 
 const Components = {
   n3FormItem,
@@ -129,6 +130,8 @@ const install = function (Vue) {
   for (let i in Components) {
     Vue.component(i, Components[i])
   }
+
+  Vue.directive('n3Position', position)
 
   Vue.mixin({
     methods: {

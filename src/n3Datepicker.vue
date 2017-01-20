@@ -4,15 +4,17 @@
       :width="width"
       :name="name"
       :rules="rules"
-      :has-feedback="hasFeedback"
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :disabled="disabled"
+      :readonly="true"
+      :show-clean="true"
       @click.native="inputClick"
-      :value="currentValue">
+      v-model="currentValue">
     </n3-input>
+
       <transition name="fadeDown">
-        <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" >
+        <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" v-n3-position="displayDayView">
           <div :class="`${prefixCls}-datepicker-inner`">
             <div :class="`${prefixCls}-datepicker-body`">
               <div :class="`${prefixCls}-datepicker-ctrl`">
@@ -66,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayYearView" >
+      <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayYearView">
         <div :class="`${prefixCls}-datepicker-inner`">
           <div :class="`${prefixCls}-datepicker-body`">
             <div :class="`${prefixCls}-datepicker-ctrl`">
@@ -109,12 +111,6 @@ export default {
     },
     format: {
       default: 'yyyy-MM-dd'
-    },
-    disabledDaysOfWeek: {
-      type: Array,
-      default () {
-        return []
-      }
     },
     prefixCls: {
       type: String,
@@ -339,9 +335,6 @@ export default {
         const date = new Date(time.year, time.month, i)
         const week = date.getDay()
         let sclass = ''
-        this.disabledDaysOfWeek.forEach((el) => {
-          if (week === parseInt(el, 10)) sclass = this.prefixCls + '-datepicker-item-disable'
-        })
 
         if (i === time.day) {
           if (this.currentValue) {

@@ -30,7 +30,7 @@
       },
       emptyText: {
         type: String,
-        default() {
+        default () {
           return emptyText
         }
       },

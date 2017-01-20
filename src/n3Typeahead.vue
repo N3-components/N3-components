@@ -6,7 +6,6 @@
     :width="width"
     :name="name" 
     :rules="rules" 
-    :has-feedback="hasFeedback"
     :placeholder="placeholder"
     :custom-validate="customValidate"
     :readonly="readonly"
@@ -43,9 +42,6 @@ export default {
   },
   mixins: [inputMixin],
   props: {
-    readonly: {
-      type: Boolean
-    },
     value: {
       type: String,
       default: ''

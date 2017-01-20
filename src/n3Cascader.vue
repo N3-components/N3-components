@@ -5,17 +5,17 @@
         :width="width"
         :name="name" 
         :rules="rules" 
-        :has-feedback="hasFeedback"
         :placeholder="placeholder"
         :custom-validate="customValidate"
-        :value="displayValue"
+        v-model="displayValue"
         :readonly="true"
+        :show-clean="true"
         :disabled="disabled"
         @click.native="toggleMenus">
       </n3-input>
     </span>
     <transition name="fadeDown">
-      <div :class="`${prefixCls}-cascader-menus`" v-show="show" >
+      <div :class="`${prefixCls}-cascader-menus`" v-show="show" v-n3-position="show">
         <ul :class="`${prefixCls}-cascader-menu`" v-for="(menu, index) in menus">
           <li :class="itemClass(index,option)" 
             v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
@@ -109,6 +109,14 @@ export default {
   watch: {
     options () {
       this.setMenu()
+    },
+    displayValue (val) {
+      if (val === '') {
+        this.$emit('input', [])
+        this.$nextTick(() => {
+          this.setMenu()
+        })
+      }
     },
     value (val) {
       this.currentValue = val

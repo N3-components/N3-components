@@ -15,19 +15,11 @@
     v-focus="focused" 
     :value="value" />
 
-  <n3-icon
-    type="check" :class="`${prefixCls}-form-control-feedback`"
-    v-if='validStatus=="success" && hasFeedback'>
-  </n3-icon>
-
-  <n3-icon
-    type="warning" :class="`${prefixCls}-form-control-feedback`"
-    v-if='validStatus=="warning" && hasFeedback'>
-  </n3-icon>
-
-  <n3-icon
-    type="times" :class="`${prefixCls}-form-control-feedback`"
-    v-if='validStatus=="error" && hasFeedback'>
+  <n3-icon 
+    type="times-circle" 
+    v-if="showClean"  
+    :class="`${prefixCls}-input-show-clean`" 
+    @click.native.stop="clean">
   </n3-icon>
 
   <validate
@@ -53,9 +45,6 @@ export default {
     value: {
       type: [String, Number]
     },
-    readonly: {
-      type: Boolean
-    },
     onChange: {
       type: Function
     },
@@ -66,6 +55,10 @@ export default {
     type: {
       type: String,
       default: 'text'
+    },
+    showClean: {
+      type: Boolean,
+      default: false
     }
   },
   components: {
@@ -82,14 +75,14 @@ export default {
   },
   computed: {
     classObj () {
-      let {prefixCls, validStatus, hasFeedback} = this
+      let {prefixCls, validStatus, showClean} = this
       let klass = {}
 
       klass[prefixCls + '-has-error'] = validStatus === 'error'
       klass[prefixCls + '-has-success'] = validStatus === 'success'
       klass[prefixCls + '-has-warn'] = validStatus === 'warn'
-      klass[prefixCls + '-has-feedback'] = validStatus && hasFeedback
       klass[prefixCls + '-input-con'] = true
+      klass[prefixCls + '-show-clean'] = showClean
       klass['inline'] = true
 
       return klass
@@ -97,6 +90,9 @@ export default {
   },
 
   methods: {
+    clean () {
+      this.$emit('input', '')
+    },
     update (val) {
       this.$emit('input', val)
       this.$emit('change', val)

@@ -4,16 +4,17 @@
       :width="width"
       :name="name"
       :rules="rules"
-      :has-feedback="hasFeedback"
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :disabled="disabled"
-      :readonly="manual"
+      :readonly="true"
       @click.native="inputClick"
-      :value="currentValue">
+      :show-clean="true"
+      v-model="currentValue">
     </n3-input>
       <transition name="fadeDown">
         <div
+          v-n3-position="displayDayView"
           :class="`${prefixCls}-datepicker-popup`"
           v-show="displayDayView"
           :style="{width:popWidth}">
@@ -169,10 +170,6 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
-    },
-    manual: {
-      type: Boolean,
-      default: false
     }
   },
   data () {
@@ -206,6 +203,7 @@ export default {
     },
     currentValue (val) {
       this.$emit('input', val)
+      this.$emit('change', val)
     },
     displayMouthView () {
       this.dispatchHide()

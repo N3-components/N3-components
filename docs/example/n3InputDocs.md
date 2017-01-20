@@ -3,10 +3,10 @@
 ## 输入框
 
 <div class="bs-docs-section" >
-  <div class="bs-example">
-    <n3-input v-model="value" ref="input"></n3-input>
-    <n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
-  </div>
+<div class="bs-example">
+  <n3-input v-model="value" ref="input"></n3-input>
+  <n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
+</div>
 
 ```html
 <n3-input v-model="value" ref="input" ></n3-input>
@@ -19,8 +19,7 @@
 |-------------  |---------------- |----------------  |-------- |
 | password          | boolean     |    false        |     密码输入框     |
 
-
-### 事件
+### Events
 
 | 名称          |   说明          |        
 |-------------  |---------------- |

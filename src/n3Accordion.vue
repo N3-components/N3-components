@@ -1,6 +1,6 @@
 <template>
   <div :class="`${prefixCls}-panel-group`">
-      <slot></slot>
+    <slot></slot>
   </div>
 </template>
 
@@ -42,7 +42,7 @@ export default {
           })
         }
       })
-      this.$emit('change')
+      this.$emit('change', ret)
     }
   }
 }

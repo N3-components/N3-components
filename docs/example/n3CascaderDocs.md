@@ -10,6 +10,7 @@
 ```html
 <n3-cascader :options="options" @change="selectChange" v-model="value" :select-change="true"></n3-cascader>
 ```
+
 ```javascript
   [{
     value: 'zhejiang',
@@ -41,21 +42,22 @@
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | options          | Array     |    -        |       |
-|width | String| 200px |宽度 |
-|disabled | Boolean| false | 禁用 |
+| width | String| 200px |宽度 |
+| disabled | Boolean| false | 禁用 |
 | placeholder | String| - | |
 | display-render |Function | - | |
-|select-change  | Boolean | - | 选择值就改变 |
+| select-change  | Boolean | - | 选择值就改变 |
 
 
-### 事件
+### Events
 
-| 名称          |   说明          |        
-|-------------  |---------------- |
-| change | 值变化 |
+| 事件名称      | 说明    | 回调参数      |
+|---------- |-------- |---------- |
+| change | 值变化时 | (currentValue) |
 
     
-<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
+
 </div>
 </template>
 
@@ -101,7 +103,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

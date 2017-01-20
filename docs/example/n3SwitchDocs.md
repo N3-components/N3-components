@@ -13,18 +13,16 @@
 
 </div>
 
-
 ```html
-
 <n3-switch v-model="value"></n3-switch>
 
 <n3-switch ontext="开" offtext="关" @change="toggle" v-model="value"></n3-switch>
 
 <n3-switch ontext="开" offtext="关" @change="toggle" :disabled="true"></n3-switch>
-
 ```
 
 ### 参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | disabled          | boolean     |    false        |     禁用     |
@@ -33,13 +31,14 @@
 | disabled          | boolean     |    false        |     禁用     |
 
 
-### 事件
+### Events
 
 | 名称          |   说明          |        
 |-------------  |---------------- |
 | change | 值变化 |
 
-<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
+
 </div>
 </template>
 

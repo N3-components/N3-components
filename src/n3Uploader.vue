@@ -121,9 +121,12 @@
         type: Boolean,
         default: true
       },
-      maxlength: {
+      maxLength: {
         type: Number,
         default: 10
+      },
+      params: {
+        type: Object
       },
       prefixCls: {
         type: String,
@@ -171,6 +174,13 @@
     methods: {
       onChange (e) {
         let files = e.target.files
+
+        if (this.maxLength && this.uploadList.length === this.maxLength) {
+          this._input.value = ''
+          this.setError('超过上传数量限制，请先删除再进行上传')
+          return
+        }
+
         if (files) {
           for (let i in files) {
             if (typeof (files[i]) === 'object' && files[i].name) {
@@ -183,13 +193,7 @@
           this.uploadList = [{name: this._input.value.replace(/^.*\\/, '')}]
         }
 
-        if (this.maxlength && this.uploadList.length > this.maxlength) {
-          this._input.value = ''
-          this.uploadList = []
-          this.setError('超过上传数量限制，请先删除再进行上传')
-        } else {
-          this.submitForm()
-        }
+        this.submitForm()
       },
 
       submitForm () {
@@ -217,6 +221,12 @@
             if (file.type.match(self.accept)) {
               data = new window.FormData()
               data.append(self.name, file, file.name)
+
+              if (self.params) {
+                for (let name in self.params) {
+                  data.append(name, self.params[name])
+                }
+              }
               // 跨域时 添加身份凭证信息
               let xhr = new window.XMLHttpRequest()
               xhr.withCredentials = true
@@ -252,6 +262,7 @@
 
       iframeUpload () {
         let i = 0
+        let self = this
         let len = this.uploadList.length
         if (this.testSameOrigin(this.url)) {
           for (i = 0; i < len; i++) {
@@ -272,6 +283,15 @@
             document.body.appendChild(form)
             form.appendChild(iframe)
             form.appendChild(input)
+
+            if (self.params) {
+              for (let name in self.params) {
+                let input = document.createElement('input')
+                input.setAttribute('type', 'text')
+                input.setAttribute('name', name)
+                input.setAttribute('value', self.params[name])
+              }
+            }
 
             iframe.addEventListener('load', () => {
               this.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'))

@@ -57,7 +57,7 @@ export default {
     },
     range: {
       type: Boolean,
-      default: false
+      default: true
     },
     disabled: {
       type: Boolean,
@@ -137,7 +137,7 @@ export default {
       this.setTempValue()
       this.setPosition()
       this.$emit('input', val)
-      this.$emit('change')
+      this.$emit('change', val)
     }
   },
   methods: {
