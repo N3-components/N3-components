@@ -4,7 +4,7 @@
 
 <div class="bs-docs-section"  >
 <div class="bs-example">
-<n3-datetimepicker v-model="value" format="yyyy-MM-dd hh:mm"></n3-datetimepicker>
+<n3-datetimepicker v-model="value" format="yyyy-MM-dd hh:mm:ss"></n3-datetimepicker>
 </div>
 
 
@@ -20,10 +20,10 @@
 
 ### 事件
 
-| 名称          |   说明          |        
-|-------------  |---------------- |
-| hide | 隐藏 |
-| change | 改变 |
+| 名称          |   说明          |      回调参数      |  
+|-------------  |---------------- |---------- |
+| hide | 隐藏 | (currentValue) |
+| change | 改变 |(currentValue) |
 
 
 <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>

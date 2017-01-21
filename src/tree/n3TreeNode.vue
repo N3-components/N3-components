@@ -31,7 +31,7 @@
         <n3-icon :type="node.isLeaf ? tree.leafIcon : tree.childIcon"></n3-icon>
         <node-content :node="node"></node-content>
       </div>
-      <template v-show="expanded">
+      <div v-show="expanded">
         <n3-collapse-transition>
           <div
             :class="`${prefixCls}-tree-children`"
@@ -44,7 +44,7 @@
             </n3-tree-node>
           </div>
         </n3-collapse-transition>
-      </template>
+      </div>
     </div>
   </div>
 </template>

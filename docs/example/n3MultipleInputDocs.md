@@ -69,13 +69,13 @@ methods: {
 
 ### Events
 
-| 名称          |   说明          |        
-|-------------  |---------------- |
-| blur          | 失焦     |  
-| focus          | 聚焦     |  
-| change | 值变化 |
-| positionChange | 位置变化 |
-| inputChange | 输入值变化 |
+| 名称          |   说明          |    参数 |  
+|-------------  |---------------- | ------- |
+| blur          | 失焦     | -  |
+| focus          | 聚焦     | - |
+| change | 值变化 |  (currentValue) | |
+| positionChange | 位置变化 | (currentPosition)  |
+| inputChange | 输入值变化 |  (query) |
 
 
 <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>

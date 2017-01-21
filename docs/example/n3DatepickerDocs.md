@@ -41,9 +41,9 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 
 ### 事件
 
-| 名称          |   说明          |        
-|-------------  |---------------- |
-| change | 值变化 |
+| 名称          |   说明          |     参数   
+|-------------  |---------------- |---|
+| change | 值变化 |(currentValue) |
 
 <p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
 </div>
