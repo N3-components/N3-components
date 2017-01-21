@@ -3,7 +3,7 @@
   "version": "1.3.1",
   "description": "N3 built with Vue.js",
   "main": "dist/N3Components.min.js",
-  "homepage": "https://n3-components.github.io/N3-components/index.html",
+  "homepage": "http:/n3ui.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/N3-components/N3-components"
