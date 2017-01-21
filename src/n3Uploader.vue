@@ -135,7 +135,7 @@
       onDelete: {
         type: Function
       },
-      maxlength: {
+      maxLength: {
         type: Number,
         default: 10
       },
@@ -196,6 +196,13 @@
     methods: {
       onChange (e) {
         let files = e.target.files
+
+        if (this.maxLength && this.uploadList.length === this.maxLength) {
+          this._input.value = ''
+          this.setError('超过上传数量限制，请先删除再进行上传')
+          return
+        }
+
         if (files) {
           for (let i in files) {
             if (typeof (files[i]) === 'object' && files[i].name) {
@@ -208,13 +215,7 @@
           this.uploadList = [{name: this._input.value.replace(/^.*\\/, '')}]
         }
 
-        if (this.maxlength && this.uploadList.length > this.maxlength) {
-          this._input.value = ''
-          this.uploadList = []
-          this.setError('超过上传数量限制，请先删除再进行上传')
-        } else {
-          this.submitForm()
-        }
+        this.submitForm()
       },
 
       submitForm () {
@@ -255,7 +256,7 @@
               xhr.open('post', self.url, true)
 
               xhr.onload = () => {
-                self.parseResponse(xhr.responseText, i)
+                //self.parseResponse(xhr.responseText, i)
               }
 
               xhr.upload.onprogress = (e) => {

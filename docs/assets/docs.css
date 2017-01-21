@@ -53,24 +53,21 @@ body {
   background: #fff;
   width:92%!important;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #ddd;
+  box-shadow: 1px 1px 10px #f9f9f9;
   margin: 20px auto;
-  padding-bottom:20px;
+  padding-bottom:20px; 
 }
 .bs-docs-header .n3-container h1 {
   font-size:70px;
   animation: fade 1s;
 }
 .bs-docs-header .n3-container p{
-  font-size:40px;
-  margin:20px 0px;
   animation: fade 1s;
-
 }
 
 .btn-outline {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #fff inset !important;
+  border: 1px solid #fff !important;
 }
 
 .btn-outline:hover{
@@ -83,6 +80,10 @@ body {
 
 .bs-docs-header .n3-container a{
   animation: fade 1s;
+  background: transparent;
+  border: 1px solid #41cac0;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 @keyframes fade {
@@ -129,6 +130,7 @@ body {
   width: 100%;
   max-width: 100%;
   margin-bottom: 18px;
+  font-size: 14px;
 }
 
 .table > thead > tr > th,
@@ -140,11 +142,11 @@ body {
   padding: 6px 8px;
   line-height: 1.5;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #f9f9f9;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #f9f9f9;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -155,14 +157,14 @@ body {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #f9f9f9;
 }
 
 .table-bordered {
-  border: 1px solid #ddd;
+  border: 1px solid #f9f9f9;
   border-collapse: separate;
   border-radius: 2px;
-  border-left: none;
+  border-left: none;  
 }
 
 .table-bordered > thead > tr > th,
@@ -170,12 +172,12 @@ body {
 .table-bordered > tfoot > tr > th,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
- border-left: 1px solid #ddd;
+ border-left: 1px solid #f9f9f9;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
   border-bottom-width: 1px;
-  background: #f4f4f4;
+  background: #f9f9f9;
 }
 
 .table-bordered > thead > tr:first-child > th,
@@ -231,11 +233,20 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   margin-top: 20px;
-  color: #fff;
+  color: #ddd;
   border-top: 4px solid #36d4d0;
-  background-color: #333;
+  background-color: #000;
   text-align: center;
 }
+.bs-docs-footer span{
+  color:gray;
+  display: inline-block;
+  width: 100px;
+}
+.bs-docs-footer a {
+  color:#ddd;
+}
+
 .bs-docs-footer-links {
   padding-left: 0;
   margin-top: 20px;
@@ -304,14 +315,15 @@ body {
   color: #cdbfe3;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background-color: #6f5499;
+
+ /* background-color: #6f5499;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#AFDDDF), to(#009190));
   background-image: -webkit-linear-gradient(top, #AFDDDF 0%, #009190 100%);
   background-image:      -o-linear-gradient(top, #AFDDDF 0%, #009190 100%);
   background-image:         linear-gradient(to bottom, #AFDDDF 0%, #009190 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AFDDDF', endColorstr='#009190', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AFDDDF', endColorstr='#009190', GradientType=0);*/
+  
   background-repeat: repeat-x;
-  box-shadow: 0px 5px 16px gray;
   overflow: hidden;
   height: 100%;
 }
@@ -400,7 +412,7 @@ body {
   position: relative;
   height: 400px;
   z-index: 10;
-  top:100px;
+  top:20%;
 }
 
 @media (min-width: 768px) {
@@ -415,14 +427,6 @@ body {
     line-height: 1;
   }
 }
-
-@media (min-width: 992px) {
-  .bs-docs-header h1,
-  .bs-docs-header p {
-    margin-right: 380px;
-  }
-}
-
 
 /*
  * Carbon ads
@@ -955,13 +959,8 @@ h1[id] {
 
 .bs-example {
   position: relative;
-  padding: 45px 15px 15px;
+  padding: 45px 0px 15px;
   margin: 0 -15px 15px;
-  border-color: #e5e5e5 #eee #eee;
-  border-style: solid;
-  border-width: 1px 0;
-  -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
-          box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
 }
 /* Echo out a label for the example */
 .bs-example:after {
@@ -989,11 +988,6 @@ h1[id] {
     margin-right: 0;
     margin-left: 0;
     background-color: #fff;
-    border-color: #ddd;
-    border-width: 1px;
-    border-radius: 4px 4px 0 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
   }
   .bs-example + .highlight {
     margin-top: -16px;
@@ -1624,6 +1618,7 @@ h1[id] {
   width: 100%;
   height: 100%;
   z-index: 0;
+  background: url(./img/bg.jpg);
 }
 .bg-bubbles li {
   position: absolute;
@@ -1631,22 +1626,25 @@ h1[id] {
   display: block;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.15);
   bottom: -160px;
   animation: square 25s infinite;
   transition-timing-function: linear;
+  border-radius: 4px;
 }
 .bg-bubbles li:nth-child(1) {
   left: 10%;
+  background: rgba(135, 208, 104, 0.53);
 }
 .bg-bubbles li:nth-child(2) {
   left: 20%;
   width: 80px;
   height: 80px;
   animation-duration: 15s;
+  background: rgba(91, 192, 222, 0.5);
 }
 .bg-bubbles li:nth-child(3) {
   left: 25%;
+  background: rgba(238, 238, 238, 0.81);
 }
 
 .bg-bubbles li:nth-child(4) {
@@ -1654,42 +1652,86 @@ h1[id] {
   width: 60px;
   height: 60px;
   animation-duration: 20s;
-  background-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 170, 0, 0.7);
 }
-.bg-bubbles li:nth-child(5) {
-  left: 70%;
-}
-.bg-bubbles li:nth-child(6) {
-  left: 80%;
-  width: 120px;
-  height: 120px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
+
 .bg-bubbles li:nth-child(7) {
   left: 32%;
   width: 160px;
   height: 160px;
+  animation-delay: 3s;
+  background: #afdddf;
 }
+
+.bg-bubbles li:nth-child(9) {
+  left: 25%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  background: rgba(239, 22, 15, 0.67);
+}
+
+.bg-bubbles li:nth-child(11) {
+  left: 22%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 3s;
+  background: rgba(239, 22, 15, 0.5);
+}
+
+.bg-bubbles li:nth-child(12) {
+  left: 5%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 3s;
+  animation-duration: 10s;
+  background: rgba(245, 183, 59, 0.76);
+}
+
+.bg-bubbles li:nth-child(5) {
+  left: 70%;
+  background: rgba(255, 170, 0, 0.8);
+}
+
+.bg-bubbles li:nth-child(6) {
+  left: 80%;
+  width: 120px;
+  height: 120px;
+  background: rgba(245, 183, 59, 0.76);
+}
+
 .bg-bubbles li:nth-child(8) {
   left: 55%;
   width: 20px;
   height: 20px;
   animation-delay: 2s;
-  animation-duration: 20s;
+  animation-duration: 10s;
+  background: rgba(135, 208, 104, 0.7);
 }
-.bg-bubbles li:nth-child(9) {
-  left: 25%;
-  width: 10px;
-  height: 10px;
-  animation-delay: 1s;
-  animation-duration: 30s;
-  background-color: rgba(255, 255, 255, 0.3);
-}
+
 .bg-bubbles li:nth-child(10) {
   left: 90%;
   width: 160px;
   height: 160px;
   animation-delay: 3s;
+  background: rgba(238, 238, 238, 0.5);
+}
+
+.bg-bubbles li:nth-child(13) {
+  left: 85%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 5s;
+  animation-duration: 10s;
+  background: rgba(239, 22, 15, 0.6);
+}
+.bg-bubbles li:nth-child(14) {
+  left: 70%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 6s;
+  background: #afdddf;
 }
 
 @keyframes square {

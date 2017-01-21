@@ -131,14 +131,14 @@ export default {
   methods: {
     blur () {
       this.show = false
-      if(type.isFunction(this.onBlur)){
+      if (type.isFunction(this.onBlur)) {
         this.onBlur()
       }
     },
     update () {
       let self = this
       if (this.readonly || this.disabled) return
-      setTimeout(()=>{
+      setTimeout(() => {
         if (!self.query) {
           self.reset()
           return false
@@ -149,7 +149,7 @@ export default {
         } else if (self.data) {
           self.items = self.primitiveData
         }
-      },100)
+      }, 100)
     },
     reset () {
       this.items = []

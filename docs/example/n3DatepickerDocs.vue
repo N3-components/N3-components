@@ -7,7 +7,7 @@
           Selected date is: {{new Date(value).toString().slice(0, -23)}}
         </pre>
       </p>
-      <n3-datepicker v-ref:dp :value.sync="value" :disabled-days-of-Week="disabled"
+      <n3-datepicker  v-ref:dp :value.sync="value" :disabled-days-of-Week="disabled"
       :format="format.toString()" ></n3-datepicker>
       <h4>一周内无法选择的日期</h4>
 

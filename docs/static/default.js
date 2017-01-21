@@ -8942,7 +8942,12 @@
 	//   </div>
 	//   <footer class="bs-docs-footer">
 	//     <n3-container >
-	//       <p>联系邮箱 zhangking520@gmail.com</p>
+	//        <ul>
+	//         <li><span>Email:</span>zhangking520@gmail.com</li>
+	//         <li><span>Github:</span><a href="https://github.com/N3-components/N3-components">Repository</a></li>
+	//         <li><span>QQ Group:</span>556286036</li>
+	//         <li><span>gitter:</span><a href="https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link">gitter link</li>
+	//       </ul>
 	//     </n3-container>
 	//   </footer>
 	// </div>
@@ -12752,7 +12757,7 @@
 	//           Selected date is: {{new Date(value).toString().slice(0, -23)}}
 	//         </pre>
 	//       </p>
-	//       <n3-datepicker v-ref:dp :value.sync="value" :disabled-days-of-Week="disabled"
+	//       <n3-datepicker  v-ref:dp :value.sync="value" :disabled-days-of-Week="disabled"
 	//       :format="format.toString()" ></n3-datepicker>
 	//       <h4>一周内无法选择的日期</h4>
 	
@@ -12875,7 +12880,7 @@
 /* 531 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"日期选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#日期选择器\" class=\"anchor\">日期选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\n          Selected date is: {{new Date(value).toString().slice(0, -23)}}\n        </pre>\n      </p>\n      <n3-datepicker v-ref:dp :value.sync=\"value\" :disabled-days-of-Week=\"disabled\"\n      :format=\"format.toString()\" ></n3-datepicker>\n      <h4>一周内无法选择的日期</h4>\n\n      <n3-select multiple :value.sync=\"disabled\">\n        <n3-option value=\"0\">0</n3-option>\n        <n3-option value=\"1\">1</n3-option>\n        <n3-option value=\"2\">2</n3-option>\n        <n3-option value=\"3\">3</n3-option>\n        <n3-option value=\"4\">4</n3-option>\n        <n3-option value=\"5\">5</n3-option>\n        <n3-option value=\"6\">6</n3-option>\n      </n3-select>\n\n      <h4>Format</h4>\n      <n3-select :value.sync=\"format\" >\n        <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n        <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n        <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n        <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n        <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-datepicker\n  :value.sync=\"value\"\n  :disabled-days-of-Week=\"disabled\"\n  :format=\"format\">\n</n3-datepicker>\n\n<n3-select multiple :value.sync=\"disabled\" size=5>\n  <n3-option value=\"0\">0</n3-option>\n  <n3-option value=\"1\">1</n3-option>\n  <n3-option value=\"2\">2</n3-option>\n  <n3-option value=\"3\">3</n3-option>\n  <n3-option value=\"4\">4</n3-option>\n  <n3-option value=\"5\">5</n3-option>\n  <n3-option value=\"6\">6</n3-option>\n</n3-select>\n<n3-select  :value.sync=\"format\">\n  <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n  <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n  <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n  <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n  <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n</n3-select>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>日期值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td>200px</td>\n          <td>输入框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td><code>yyyy-MM-dd</code></td>\n          <td>日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.</td>\n        </tr>\n        <tr>\n          <td>disabled-days-of-week</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>一周内无法选择的日期</td>\n        </tr>\n         <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"日期选择器\"  >\n    <h1 class=\"page-header\"><a href=\"#日期选择器\" class=\"anchor\">日期选择器</a><span class=\"author\"> </span></h1>\n    <div class=\"bs-example\">\n      <p>\n        <pre>\n          Selected date is: {{new Date(value).toString().slice(0, -23)}}\n        </pre>\n      </p>\n      <n3-datepicker  v-ref:dp :value.sync=\"value\" :disabled-days-of-Week=\"disabled\"\n      :format=\"format.toString()\" ></n3-datepicker>\n      <h4>一周内无法选择的日期</h4>\n\n      <n3-select multiple :value.sync=\"disabled\">\n        <n3-option value=\"0\">0</n3-option>\n        <n3-option value=\"1\">1</n3-option>\n        <n3-option value=\"2\">2</n3-option>\n        <n3-option value=\"3\">3</n3-option>\n        <n3-option value=\"4\">4</n3-option>\n        <n3-option value=\"5\">5</n3-option>\n        <n3-option value=\"6\">6</n3-option>\n      </n3-select>\n\n      <h4>Format</h4>\n      <n3-select :value.sync=\"format\" >\n        <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n        <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n        <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n        <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n        <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n      </n3-select>\n    </div>\n    <pre><code class=\"language-markup\"><script type=\"language-mark-up\">\n<n3-datepicker\n  :value.sync=\"value\"\n  :disabled-days-of-Week=\"disabled\"\n  :format=\"format\">\n</n3-datepicker>\n\n<n3-select multiple :value.sync=\"disabled\" size=5>\n  <n3-option value=\"0\">0</n3-option>\n  <n3-option value=\"1\">1</n3-option>\n  <n3-option value=\"2\">2</n3-option>\n  <n3-option value=\"3\">3</n3-option>\n  <n3-option value=\"4\">4</n3-option>\n  <n3-option value=\"5\">5</n3-option>\n  <n3-option value=\"6\">6</n3-option>\n</n3-select>\n<n3-select  :value.sync=\"format\">\n  <n3-option value=\"yyyy,MM,dd\">yyyy,MM,dd</n3-option>\n  <n3-option value=\"yyyy-MM-dd\">yyyy-MM-dd</n3-option>\n  <n3-option value=\"yyyy.MM.dd\">yyyy.MM.dd</n3-option>\n  <n3-option value=\"MMM/dd/yyyy\">MMM/dd/yyyy</n3-option>\n  <n3-option value=\"MMMM/dd/yyyy\">MMMM/dd/yyyy</n3-option>\n</n3-select>\n    </script></code></pre>\n    <h2>参数</h2>\n    <table class=\"table table-bordered\">\n      <thead>\n        <tr>\n          <th>参数名</th>\n          <th>类型</th>\n          <th>默认值</th>\n          <th>说明</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>value</td>\n          <td><code>String</code></td>\n          <td></td>\n          <td>日期值,需要<code>.sync</code></td>\n        </tr>\n        <tr>\n          <td>width</td>\n          <td><code>String</code></td>\n          <td>200px</td>\n          <td>输入框宽度</td>\n        </tr>\n        <tr>\n          <td>format</td>\n          <td><code>String</code></td>\n          <td><code>yyyy-MM-dd</code></td>\n          <td>日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.</td>\n        </tr>\n        <tr>\n          <td>disabled-days-of-week</td>\n          <td><code>Array</code></td>\n          <td></td>\n          <td>一周内无法选择的日期</td>\n        </tr>\n         <tr>\n          <td>on-change</td>\n          <td><code>Function</code></td>\n          <td></td>\n          <td>值变化触发</td>\n        </tr>\n      </tbody>\n    </table>\n    <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\" >表单验证</a> 待验证组件参数</p>\n  </div>";
 
 /***/ },
 /* 532 */
@@ -19365,7 +19370,7 @@
 /* 629 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base' || type === 'ant'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(index,item) in list\">\n              <n3-sub-nav  :show.sync=\"item.show\" >\n                <a slot=\"title\" style=\"color:#333\">{{index}}</a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a>{{i.label}}</a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <p>联系邮箱 zhangking520@gmail.com</p>\n    </n3-container>\n  </footer>\n</div>";
+	module.exports = "<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base' || type === 'ant'\">\n      <n3-row >\n        <n3-column :col=\"2\">\n          <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n          <n3-nav type=\"vertical\" >\n             <n3-nav-item v-for=\"(index,item) in list\">\n              <n3-sub-nav  :show.sync=\"item.show\" >\n                <a slot=\"title\" style=\"color:#333\">{{index}}</a>\n                <n3-nav-item v-for=\"i in item.list\" :active=\"component == i.value\" @click=\"change(i.value)\">\n                  <a>{{i.label}}</a>\n                </n3-nav-item>\n              </n3-sub-nav>\n            </n3-nav-item>\n          </n3-nav>\n        </n3-column>\n        \n        <n3-column :col=\"10\">\n          <component :is=\"component\" ></component>\n        </n3-column>\n      <n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n       <ul>\n        <li><span>Email:</span>zhangking520@gmail.com</li>\n        <li><span>Github:</span><a href=\"https://github.com/N3-components/N3-components\">Repository</a></li>\n        <li><span>QQ Group:</span>556286036</li>\n        <li><span>gitter:</span><a href=\"https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link\">gitter link</li>\n      </ul>\n    </n3-container>\n  </footer>\n</div>\n</template>";
 
 /***/ },
 /* 630 */
@@ -36298,6 +36303,10 @@
 	      type: Boolean,
 	      default: false
 	    },
+	    readonly: {
+	      type: Boolean,
+	      default: false
+	    },
 	    showselected: {
 	      type: Boolean,
 	      default: true
@@ -40940,7 +40949,7 @@
 	    onDelete: {
 	      type: Function
 	    },
-	    maxlength: {
+	    maxLength: {
 	      type: Number,
 	      default: 10
 	    },
@@ -41007,6 +41016,13 @@
 	  methods: {
 	    onChange: function onChange(e) {
 	      var files = e.target.files;
+	
+	      if (this.maxLength && this.uploadList.length === this.maxLength) {
+	        this._input.value = '';
+	        this.setError('超过上传数量限制，请先删除再进行上传');
+	        return;
+	      }
+	
 	      if (files) {
 	        for (var i in files) {
 	          if (_typeof(files[i]) === 'object' && files[i].name) {
@@ -41019,13 +41035,7 @@
 	        this.uploadList = [{ name: this._input.value.replace(/^.*\\/, '') }];
 	      }
 	
-	      if (this.maxlength && this.uploadList.length > this.maxlength) {
-	        this._input.value = '';
-	        this.uploadList = [];
-	        this.setError('超过上传数量限制，请先删除再进行上传');
-	      } else {
-	        this.submitForm();
-	      }
+	      this.submitForm();
 	    },
 	    submitForm: function submitForm() {
 	      if (this.uploadList.length > 0) {
@@ -41049,43 +41059,41 @@
 	        }
 	        (function (i, file) {
 	          if (file.type.match(self.accept)) {
-	            (function () {
-	              data = new window.FormData();
-	              data.append(self.name, file, file.name);
+	            data = new window.FormData();
+	            data.append(self.name, file, file.name);
 	
-	              if (self.params) {
-	                for (var name in self.params) {
-	                  data.append(name, self.params[name]);
-	                }
+	            if (self.params) {
+	              for (var name in self.params) {
+	                data.append(name, self.params[name]);
 	              }
+	            }
 	
-	              // 跨域时 添加身份凭证信息
-	              var xhr = new window.XMLHttpRequest();
-	              xhr.withCredentials = true;
-	              xhr.open('post', self.url, true);
+	            // 跨域时 添加身份凭证信息
+	            var xhr = new window.XMLHttpRequest();
+	            xhr.withCredentials = true;
+	            xhr.open('post', self.url, true);
 	
-	              xhr.onload = function () {
-	                self.parseResponse(xhr.responseText, i);
-	              };
+	            xhr.onload = function () {
+	              //self.parseResponse(xhr.responseText, i)
+	            };
 	
-	              xhr.upload.onprogress = function (e) {
-	                var loaded = e.loaded ? e.loaded : 0;
-	                var total = e.total ? e.total : 1;
+	            xhr.upload.onprogress = function (e) {
+	              var loaded = e.loaded ? e.loaded : 0;
+	              var total = e.total ? e.total : 1;
 	
-	                self.$set('progress[' + i + ']', parseInt(loaded / total * 100, 10));
-	              };
+	              self.$set('progress[' + i + ']', parseInt(loaded / total * 100, 10));
+	            };
 	
-	              xhr.onerror = function () {
-	                self.states[i] = false;
-	                self.setError('上传失败了！');
-	              };
+	            xhr.onerror = function () {
+	              self.states[i] = false;
+	              self.setError('上传失败了！');
+	            };
 	
-	              try {
-	                xhr.send(data);
-	              } catch (e) {
-	                self.setError('上传失败了！');
-	              }
-	            })();
+	            try {
+	              xhr.send(data);
+	            } catch (e) {
+	              self.setError('上传失败了！');
+	            }
 	          } else {
 	            self.setError('不支持该文件类型');
 	          }

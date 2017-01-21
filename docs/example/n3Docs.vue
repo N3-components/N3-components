@@ -29,7 +29,12 @@
   </div>
   <footer class="bs-docs-footer">
     <n3-container >
-      <p>联系邮箱 zhangking520@gmail.com</p>
+       <ul>
+        <li><span>Email:</span>zhangking520@gmail.com</li>
+        <li><span>Github:</span><a href="https://github.com/N3-components/N3-components">Repository</a></li>
+        <li><span>QQ Group:</span>556286036</li>
+        <li><span>gitter:</span><a href="https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link">gitter link</li>
+      </ul>
     </n3-container>
   </footer>
 </div>

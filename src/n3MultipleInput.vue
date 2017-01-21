@@ -129,7 +129,7 @@ export default {
     },
     placeholder: {
       type: String
-    },  
+    },
     positionMove: {
       type: Boolean,
       default: true
