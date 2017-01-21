@@ -9,7 +9,7 @@ N3-components - Powerful Vue Library.
 
 N3 components library is built with Vue.js, is a powerful library for frontend or full-stack engineers to build web pages quickly.
 
-[Home Page](https://n3-components.github.io/N3-components/) | [中文说明](https://github.com/N3-components/N3-components/blob/master/README-zh.md) | [Documents](https://n3-components.github.io/N3-components/component.html)
+[Home Page](http:/n3ui.org) | [中文说明](https://github.com/N3-components/N3-components/blob/master/README-zh.md) | [Documents](http:/n3ui.org)
 
 Introduction
 ------------

@@ -9993,11 +9993,11 @@
 	//         <n3-nav-item >
 	//           <a href="./index.html" >N3</a>
 	//         </n3-nav-item>
-	//         <n3-nav-item :active="active==='base'">
-	//           <a href="./component.html" >经典</a>
+	//         <n3-nav-item >
+	//           <a href="./v1.html" >v1</a>
 	//         </n3-nav-item>
-	//          <n3-nav-item :active="active==='ant'">
-	//           <a href="./component_blue.html" >ant</a>
+	//          <n3-nav-item >
+	//           <a href="./v2.html" >v2</a>
 	//         </n3-nav-item>
 	//         <!--  <n3-nav-item :active="active==='usage'">
 	//           <a href="./usage.html" >使用</a>
@@ -10020,7 +10020,7 @@
 /* 465 */
 /***/ function(module, exports) {
 
-	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\n    <n3-container fluid style=\"width:92%\">\n      <n3-nav>\n        <n3-nav-item >\n          <a href=\"./index.html\" >N3</a>\n        </n3-nav-item>\n        <n3-nav-item :active=\"active==='base'\">\n          <a href=\"./component.html\" >经典</a>\n        </n3-nav-item>\n         <n3-nav-item :active=\"active==='ant'\">\n          <a href=\"./component_blue.html\" >ant</a>\n        </n3-nav-item>\n        <!--  <n3-nav-item :active=\"active==='usage'\">\n          <a href=\"./usage.html\" >使用</a>\n        </n3-nav-item> -->\n      </n3-nav>\n    </n3-container>\n  </header>";
+	module.exports = "<header class=\"bs-docs-nav\" id=\"top\" >\n    <n3-container fluid style=\"width:92%\">\n      <n3-nav>\n        <n3-nav-item >\n          <a href=\"./index.html\" >N3</a>\n        </n3-nav-item>\n        <n3-nav-item >\n          <a href=\"./v1.html\" >v1</a>\n        </n3-nav-item>\n         <n3-nav-item >\n          <a href=\"./v2.html\" >v2</a>\n        </n3-nav-item>\n        <!--  <n3-nav-item :active=\"active==='usage'\">\n          <a href=\"./usage.html\" >使用</a>\n        </n3-nav-item> -->\n      </n3-nav>\n    </n3-container>\n  </header>";
 
 /***/ },
 /* 466 */
