@@ -1,8 +1,9 @@
 <template>
 <div>
-<div :style="styles">
-  <slot></slot>
-</div>
+  <div v-if="affixed" :style="style"></div>
+  <div :style="styles" v-el:el>
+    <slot></slot>
+  </div>
 </div>
 </template>
 <script>
@@ -24,6 +25,14 @@ export default {
     return {
       affixed: false,
       styles: {}
+    }
+  },
+  computed: {
+    style () {
+      return {
+        width: this.$el.offsetWidth + 'px',
+        height: this.$el.offsetHeight + 'px'    
+      }
     }
   },
   methods: {
