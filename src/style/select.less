@@ -24,8 +24,10 @@
     color:@fontColor!important;
   }
 
-  .@{prefix-cls}-select-search input{
+  .@{prefix-cls}-select-search{
     border: 0px;
+    outline: none;
+    padding: @selectPadding;
     border-bottom: 1px solid @lightGrayColor;
   }
 
@@ -48,16 +50,17 @@
     .@{prefix-cls}-fa-check {
       position: absolute;
       display: inline-block;
-      right: 15px;
-      margin-top: 3px;
+      right: 10px;
+      top: 10px;
     }
     .@{prefix-cls}-fa-plus-square-o {
       font-size: 20px;
       position: absolute;
-      top: 11px;
-      right: 15px;
+      top: 7px;
+      right: 10px;
     }
     .@{prefix-cls}-select-all{
+      position: relative;
       border-bottom: 1px solid @lightGrayColor;
       a {
         cursor: pointer;

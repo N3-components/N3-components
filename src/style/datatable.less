@@ -2,12 +2,20 @@
   .@{prefix-cls}-page-loading{
     z-index: 1;
   }
+  &-fixed-columns{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    table {
+      margin:0px;
+    }
+  }
   &-bar{
     margin-bottom: 10px;
   }
   &-page{
     text-align: right;
-    margin-top: -10px;
+    margin-top: 10px;
   }
   &-inner-btn{
     height: @inputHeight;

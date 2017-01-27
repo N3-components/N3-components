@@ -1,4 +1,5 @@
 import n3Alert from './n3Alert'
+import n3AlertMethod from './n3AlertMethod'
 import n3Carousel from './n3Carousel'
 import n3Accordion from './n3Accordion'
 import n3Affix from './n3Affix'
@@ -134,11 +135,8 @@ const install = function (Vue) {
 
   Vue.directive('n3Position', position)
   Vue.prototype.n3Modal = n3ModalMethod
-  Vue.mixin({
-    methods: {
-      n3Toast: n3ToastMethod
-    }
-  })
+  Vue.prototype.n3Alert = n3AlertMethod
+  Vue.prototype.n3Toast = n3ToastMethod
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

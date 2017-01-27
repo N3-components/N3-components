@@ -1,6 +1,6 @@
 .@{prefix-cls}-input-con{
   position: relative;
-  .@{prefix-cls}-input-show-clean{
+  .@{prefix-cls}-input-show-clean,.@{prefix-cls}-input-show-icon{
     font-size: @cleanSize;
     position: absolute;
     top: @cleanTop;
@@ -10,13 +10,22 @@
     cursor: pointer;
     color:@grayColor;
   }
-  &.@{prefix-cls}-show-clean input{
+  .@{prefix-cls}-input-show-icon{
+    opacity: 1;
+  }
+
+
+  &.@{prefix-cls}-show-clean input,&.@{prefix-cls}-show-icon input{
     padding-right: @inputCleanRight;
+  }
+  &.@{prefix-cls}-show-clean:hover .@{prefix-cls}-input-show-icon{
+    display:none;
   }
 
   &:hover .@{prefix-cls}-input-show-clean{
     opacity: 1;
   }
+
   .@{prefix-cls}-form-control[readonly]{
     background-color: @whiteColor;
   }

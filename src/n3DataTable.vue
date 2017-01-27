@@ -54,8 +54,41 @@
   </div>
   <div>
     <n3-loading center size="lg" v-if="loading"></n3-loading>
-    <div :class="[loading ? prefixCls + '-data-table-loading':'']">
-      <table :class="classObj" >
+    <div v-if="fixedColumns" :class="`${prefixCls}-data-table-fixed-columns`">
+      <table :class="classObj">
+        <thead>
+            <tr>
+              <th v-if="selection" :class="`${prefixCls}-data-table-row-select`">
+                  <input v-if="list && list.length" 
+                    type="checkbox" v-bind="{checked:isCheckedAll,disabled:isDisabledAll}" 
+                    @change="onCheckAll"/>
+              </th>
+              <th v-for="col in showColumns" 
+                  :style="{width: col.width}" 
+                  :class="{'pointer': col.sort}" 
+                  @click="sort(col, col.sort)" 
+                  :colspan="col.colspan === undefined ? 1 : col.colspan"> 
+                    <span>{{col.title}} </span> 
+                    <div :class="`${prefixCls}-data-table-sort pull-right`" v-if="col.sort" >
+                      <n3-icon
+                        @click.native.stop="sort(col,col.sort,'ASC')"
+                        :style="{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}" 
+                        type="caret-up">
+                      </n3-icon>
+                      <n3-icon
+                        @click.native.stop="sort(col,col.sort,'DESC')"
+                        :style="{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}"
+                        type="caret-down">
+                      </n3-icon>
+                    </div>
+              </th>
+            </tr>
+          </thead>
+      </table>
+    </div>
+    <div  :class="[loading ? prefixCls + '-data-table-loading':'']" 
+          :style="styleCon">
+      <table :class="classObj" :style="styleTable">
           <thead>
             <tr>
               <th v-if="selection" :class="`${prefixCls}-data-table-row-select`">
@@ -109,6 +142,7 @@
       </table>
     </div>
   </div>
+
   <div :class="`${prefixCls}-data-table-bar ${prefixCls}-data-table-page`" v-if="page" >
     <n3-page
       v-if="page" 
@@ -185,6 +219,15 @@ export default {
     },
     async: {
       boolean: false
+    },
+    fixedColumns: {
+      type: Boolean
+    },
+    height: {
+      type: String
+    },
+    width: {
+      type: String
     },
     pagination: {
       type: Object,
@@ -278,6 +321,25 @@ export default {
         return i.show && i.colspan != 0
       })
     },
+    styleCon () {
+      let style = {
+        overflow: 'auto'
+      }
+      if (this.fixedColumns && this.height) {
+        style.height = this.height
+      }
+      return style
+    },
+    styleTable () {
+      let style = {
+        overflow: 'auto'
+      }
+      if (this.width) {
+        style.width = this.width
+      } 
+
+      return style
+    },
     checkedRows: {
       get () {
         return this.selection.checkRows
@@ -302,8 +364,11 @@ export default {
     isCheckedAll () {
       let self = this
       let rows = this.checkebleRows.filter((record) => {
-        return self.checkedValues.indexOf(JSON.stringify(record)) > -1
+        let item = Object.assign({}, record)
+        delete item.n3Key
+        return self.checkedValues.indexOf(JSON.stringify(item)) > -1
       })
+
       return this.checkebleRows.length === rows.length
     },
     filters () {
@@ -318,9 +383,15 @@ export default {
     },
     checkedValues () {
       let self = this
-      let checkedKeys = self.checkedRows.map((record) => {
+      let rows = self.checkedRows.filter((record) => {
+        if (self.selection) {
+          return !self.selection.getCheckboxProps || !self.selection.getCheckboxProps(record).disabled
+        }
+      })
+      let checkedKeys = rows.map((record) => {
         return JSON.stringify(record)
       })
+
       return checkedKeys
     },
     checkebleRows () {

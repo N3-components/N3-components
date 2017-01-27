@@ -1,7 +1,7 @@
 <template>
 <div>
   <div v-if="affixed" :style="style"></div>
-  <div :style="styles" v-el:el>
+  <div :style="styles" >
     <slot></slot>
   </div>
 </div>

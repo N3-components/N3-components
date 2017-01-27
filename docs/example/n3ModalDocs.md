@@ -4,6 +4,9 @@
 
 <div class="bs-docs-section" id="弹出框"  >
 <div class="bs-example">
+
+> 组件调用
+
   <n3-button @click.native="showModal">Show modal</n3-button>
   <n3-modal title="Modal title" effect="fade" width="400px" ref="modal">
     <div slot="body">
@@ -74,6 +77,8 @@
   </div>
 </n3-modal>
 ```
+
+> 函数调用 
 
 ```javascript
 export default {

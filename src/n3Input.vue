@@ -22,6 +22,11 @@
     @click.native.stop="clean">
   </n3-icon>
 
+  <n3-icon
+    :class="`${prefixCls}-input-show-icon`"  
+    :type="icon">
+  </n3-icon>
+
   <validate
     :name="name"
     v-model="validStatus"
@@ -56,6 +61,9 @@ export default {
       type: String,
       default: 'text'
     },
+    icon: {
+      type: String
+    },
     showClean: {
       type: Boolean,
       default: false
@@ -75,7 +83,7 @@ export default {
   },
   computed: {
     classObj () {
-      let {prefixCls, validStatus, showClean} = this
+      let {prefixCls, validStatus, showClean,icon} = this
       let klass = {}
 
       klass[prefixCls + '-has-error'] = validStatus === 'error'
@@ -83,6 +91,7 @@ export default {
       klass[prefixCls + '-has-warn'] = validStatus === 'warn'
       klass[prefixCls + '-input-con'] = true
       klass[prefixCls + '-show-clean'] = showClean
+      klass[prefixCls + '-show-icon'] = icon ? true : false
       klass['inline'] = true
 
       return klass

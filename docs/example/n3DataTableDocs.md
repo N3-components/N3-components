@@ -7,6 +7,8 @@
 <h4>Table</h4>
 
 <n3-data-table
+  fixed-columns
+  height="400px"
   :selection="selection"
   :source="source" 
   :columns="columns" 
@@ -18,11 +20,13 @@
 ```html
 
 <n3-data-table
+  fixed-columns
+  height="400px"
   :selection="selection"
   :source="source" 
   :columns="columns" 
-  :refresh="refresh"
-></n3-data-table>
+  :refresh="refresh">
+</n3-data-table>
 
 ```
 
@@ -116,6 +120,9 @@ function(pagination,query,sort,filter){
 
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
+| fixed-columns | `Boolean` | - | 固定表头,记得为列设置宽度    |
+| height| `String` | - | 高度，配合固定表头使用   |
+| width| `String` | - | 宽度 不要和fixed-columns共用   |
 | async  | `Boolean` | `false` | 异步加载，配合change事件来请求服务端数据    |
 | merge-rule | `Object` | - | 合并规则    |
 | columns  | `Array` | - | 头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等     |
@@ -240,18 +247,20 @@ export default {
         sortType: 'DESC',
         sortMethod (x, y) { return x.age - y.age },
         filter: true,
+        width: '150px',
         render: (text, record) => {
           return `<a href="javascript:;">${text}</a>`
         }
       }, {
         title: '部门',
-        dataIndex: 'department'
+        dataIndex: 'department',
+        width: '250px'
       }, {
         title: '操作',
         dataIndex: '',
         render: (text, record, index) => {
           return `<span class="item">
-                    <a href="javascript:;" @click="del('${record.key}','${index}')">删除</a>
+                    <a href="javascript:;" @click="del('${record.key}','${index}')" style="color:#41cac0">删除</a>
                   </span>`
         }
       }],

@@ -4,6 +4,9 @@
 
 <div class="bs-docs-section" id="提示消息"  >
 <div class="bs-example" >
+
+> 组件调用 
+
   <n3-button type='success'
     @click.native="openRight">
     点击出现在右边
@@ -13,7 +16,7 @@
     点击出现在顶部
   </n3-button>
   <hr>
-  <n3-alert dismissable :show="true">
+  <n3-alert dismissable :show="true" icon="smile-o">
     <strong>default style</strong>
     This is the default style.
   </n3-alert>
@@ -99,7 +102,7 @@
  点击出现在顶部
 </n3-button>
 
-<n3-alert dismissable :show="true">
+<n3-alert dismissable :show="true" icon="smile-o">
   <strong>default style</strong>
   This is the default style.
 </n3-alert>
@@ -197,6 +200,7 @@ export default {
 | 参数名 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | show | `Boolean` | `false` | 是否显示 |
+| icon | `String` | - | 自定义图标 |
 | dismissable | `Boolean` | `false` | 是否显示关闭按钮 |
 | type | `String`, 如: `default` `success` `info` `warning` `danger` | `success` | 组件样式 |
 | duration | `Number` | `0` | 自动关闭延时,设置 `0` 或者负数，表示不会自动关闭 |
@@ -211,6 +215,34 @@ export default {
 | 事件名称      | 说明    | 回调参数      |
 |---------- |-------- |---------- |
 | close  | 点击关闭按钮时触发 |  |
+| show  | 出现时触发 |  |
+| hide  | 消失时触发 |  |
+
+
+> 函数调用
+
+
+<n3-button type='success'
+  @click.native="open">
+  函数调用 
+</n3-button>
+
+
+```javascript
+export default {
+  methods: {
+    showAlert () {
+      this.n3Alert({
+        content: 'success',
+        type: 'success',
+        duration: 2000
+      })
+    },
+  }
+}
+```
+
+
 
 </div>
 </template>
@@ -229,6 +261,13 @@ export default {
       },
       close () {
         console.log('你点击了关闭按钮')
+      },
+      open () {
+        this.n3Alert({
+          content: 'success',
+          type: 'success',
+          duration: 2000
+        })
       }
     },
     components: {

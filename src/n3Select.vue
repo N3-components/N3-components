@@ -30,12 +30,12 @@
         v-n3-position="show"
         v-show="show">
           <li v-if="search">
-            <n3-input
+            <input
               :class="`${prefixCls}-select-search`"
               :placeholder="inputPlaceholder"
               v-model="searchText"
               @keydown.native.enter="addExtra"
-            ></n3-input>
+            ></input>
             <n3-icon type="plus-square-o" v-if="extra" @click.native="addExtra"></n3-icon>
           </li>
           <li v-if="multiple" :class="`${prefixCls}-select-all`">
@@ -72,9 +72,7 @@
 <script>
 import EventListener from './utils/EventListener'
 import n3Button from './n3Button'
-import n3Badge from './n3Badge'
 import n3Icon from './n3Icon'
-import n3Input from './n3Input'
 import valMixin from './valMixin'
 import render from './render'
 import validate from './validate'
@@ -186,9 +184,7 @@ export default {
   },
   components: {
     n3Button,
-    n3Badge,
     n3Icon,
-    n3Input,
     render,
     validate
   },

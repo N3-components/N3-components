@@ -12,7 +12,7 @@
 Select data : {{single}}
     </pre>
   </p>
-  <n3-select v-model="single" :badge="5">
+  <n3-select v-model="single" >
     <n3-option value="Apple">Apple</n3-option>
     <n3-option value="Banana">Banana</n3-option>
     <n3-option value="Cherry">Cherry</n3-option>
@@ -82,7 +82,7 @@ Select data : {{arr}}
 
 ```html
 <!-- 单选框 -->
-<n3-select v-model="single" :badge="5">
+<n3-select v-model="single">
   <n3-option value="Apple">Apple</n3-option>
   <n3-option value="Banana">Banana</n3-option>
   <n3-option value="Cherry">Cherry</n3-option>
@@ -164,7 +164,6 @@ export default {
 | on-change | `Function` |  | value改变回调函数 |
 | disabled | `Boolean` | `false` |  |
 | readonly | `Boolean` | `false` |  |
-| badge | `String``Number` |  | 徽标 |
 | cancelled | `Boolean` |  | 单选时，是否可撤销 |
 
 其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数

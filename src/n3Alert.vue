@@ -63,6 +63,9 @@ export default {
       type: Boolean,
       default: false
     },
+    icon: {
+      type: String
+    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -77,9 +80,11 @@ export default {
   methods: {
     open () {
       this.isShow = true
+      this.$emit('show')
     },
     close () {
       this.isShow = false
+      this.$emit('hide')
     },
     handleClose (e) {
       this.isShow = false
@@ -115,6 +120,9 @@ export default {
         danger: 'times-circle-o',
         warning: 'exclamation-circle',
         info: 'info-circle'
+      }
+      if (this.icon) {
+        return this.icon
       }
       return map[type]
     },

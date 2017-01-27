@@ -9,6 +9,7 @@
       :disabled="disabled"
       :readonly="true"
       @click.native="inputClick"
+      icon="calendar"
       :show-clean="true"
       v-model="currentValue">
     </n3-input>

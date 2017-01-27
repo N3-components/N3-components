@@ -10,6 +10,7 @@
       :readonly="true"
       @click.native="inputClick"
       :show-clean="true"
+      icon="clock-o"
       v-model="currentValue">
     </n3-input>
     <transition name="fadeDown">

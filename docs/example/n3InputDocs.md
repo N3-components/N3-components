@@ -4,12 +4,12 @@
 
 <div class="bs-docs-section" >
 <div class="bs-example">
-  <n3-input v-model="value" ref="input"></n3-input>
+  <n3-input v-model="value" ref="input" ></n3-input>
   <n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
 </div>
 
 ```html
-<n3-input v-model="value" ref="input" ></n3-input>
+<n3-input v-model="value" ref="input" icon="archive"></n3-input>
 <n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
 ```
 
@@ -17,7 +17,8 @@
 ### 参数
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| password          | `boolean`     |    `false`        |     密码输入框     |
+| password          | `Boolean`     |    `false`        |     密码输入框     |
+| icon          | `String`     |    -        |     icon     |
 
 ### Events
 

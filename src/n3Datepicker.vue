@@ -9,91 +9,92 @@
       :disabled="disabled"
       :readonly="true"
       :show-clean="true"
+      icon="calendar"
       @click.native="inputClick"
       v-model="currentValue">
     </n3-input>
 
-      <transition name="fadeDown">
-        <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" v-n3-position="displayDayView">
-          <div :class="`${prefixCls}-datepicker-inner`">
-            <div :class="`${prefixCls}-datepicker-body`">
-              <div :class="`${prefixCls}-datepicker-ctrl`">
-                <span
-                  :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-                  @click="preNextMonthClick(0)">&lt;</span>
-                <span
-                  :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-                  @click="preNextMonthClick(1)">&gt;</span>
-                <p @click="switchMouthView">
-                {{stringifyDayHeader(currDate)}}
-                </p>
-              </div>
-              <div :class="`${prefixCls}-datepicker-weekRange`">
-                <span v-for="w in weekRange">{{w}}</span>
-              </div>
-              <div :class="`${prefixCls}-datepicker-dateRange`">
-                <span
-                  v-for="d in dateRange" :class="d.sclass"
-                  @click="daySelect(d.date,d.sclass)">
-                  {{d.text}}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </transition>
-      <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayMouthView" >
+    <transition name="fadeDown">
+      <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayDayView" v-n3-position="displayDayView">
         <div :class="`${prefixCls}-datepicker-inner`">
           <div :class="`${prefixCls}-datepicker-body`">
             <div :class="`${prefixCls}-datepicker-ctrl`">
               <span
                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-                @click="preNextYearClick(0)">&lt;</span>
+                @click="preNextMonthClick(0)">&lt;</span>
               <span
                 :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-                @click="preNextYearClick(1)">&gt;</span>
-              <p @click="switchDecadeView">
-              {{stringifyYearHeader(currDate)}}
+                @click="preNextMonthClick(1)">&gt;</span>
+              <p @click="switchMouthView">
+              {{stringifyDayHeader(currDate)}}
               </p>
             </div>
-            <div :class="`${prefixCls}-datepicker-mouthRange`">
-            	<template v-for="(m, index) in mouthNames">
-                <span
-                  :class="monthClassObj(m)"
-                  @click="mouthSelect(index)">
-                  {{m.substr(0,3)}}
-                </span>
-              </template>
+            <div :class="`${prefixCls}-datepicker-weekRange`">
+              <span v-for="w in weekRange">{{w}}</span>
+            </div>
+            <div :class="`${prefixCls}-datepicker-dateRange`">
+              <span
+                v-for="d in dateRange" :class="d.sclass"
+                @click="daySelect(d.date,d.sclass)">
+                {{d.text}}
+              </span>
             </div>
           </div>
         </div>
       </div>
-      <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayYearView">
-        <div :class="`${prefixCls}-datepicker-inner`">
-          <div :class="`${prefixCls}-datepicker-body`">
-            <div :class="`${prefixCls}-datepicker-ctrl`">
+    </transition>
+    <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayMouthView" >
+      <div :class="`${prefixCls}-datepicker-inner`">
+        <div :class="`${prefixCls}-datepicker-body`">
+          <div :class="`${prefixCls}-datepicker-ctrl`">
+            <span
+              :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
+              @click="preNextYearClick(0)">&lt;</span>
+            <span
+              :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
+              @click="preNextYearClick(1)">&gt;</span>
+            <p @click="switchDecadeView">
+            {{stringifyYearHeader(currDate)}}
+            </p>
+          </div>
+          <div :class="`${prefixCls}-datepicker-mouthRange`">
+          	<template v-for="(m, index) in mouthNames">
               <span
-                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
-                @click="preNextDecadeClick(0)">&lt;</span>
-              <span
-                :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
-                @click="preNextDecadeClick(1)">&gt;</span>
-              <p>
-              {{stringifyDecadeHeader(currDate)}}
-              </p>
-            </div>
-            <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
-            	<template v-for="decade in decadeRange">
-            		<span
-                  :class="yearClassObj(decade)"
-                  @click.stop="yearSelect(decade.text)">
-                  {{decade.text}}
-               	</span>
-			        </template>
-            </div>
+                :class="monthClassObj(m)"
+                @click="mouthSelect(index)">
+                {{m.substr(0,3)}}
+              </span>
+            </template>
           </div>
         </div>
       </div>
+    </div>
+    <div :class="`${prefixCls}-datepicker-popup`" v-show ="displayYearView">
+      <div :class="`${prefixCls}-datepicker-inner`">
+        <div :class="`${prefixCls}-datepicker-body`">
+          <div :class="`${prefixCls}-datepicker-ctrl`">
+            <span
+              :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
+              @click="preNextDecadeClick(0)">&lt;</span>
+            <span
+              :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
+              @click="preNextDecadeClick(1)">&gt;</span>
+            <p>
+            {{stringifyDecadeHeader(currDate)}}
+            </p>
+          </div>
+          <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
+          	<template v-for="decade in decadeRange">
+          		<span
+                :class="yearClassObj(decade)"
+                @click.stop="yearSelect(decade.text)">
+                {{decade.text}}
+             	</span>
+		        </template>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 </template>
 
