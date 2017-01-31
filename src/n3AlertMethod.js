@@ -10,13 +10,25 @@ const createNode = () => {
 }
 
 const removeNode = $node => {
-  $body.removeChild($node)
+  $node.parentNode.removeChild($node)
 }
 
 const alert = (options) => {
   const {description, type, dismissable, duration, width, small, placement, message, content, icon} = options
+  let containerClass = 'n3-alert-container-' + (placement || 'top')
+  let container = document.querySelector('.' + containerClass)
+
+  if (!container) {
+    container = createNode()
+    container.classList.add(containerClass)
+    container.classList.add('n3-alert-' + (placement || 'top'))
+  }
+
+  let dom = document.createElement('div')
+  container.appendChild(dom)
+
   const instance = new Vue({
-    el: createNode(),
+    el: dom,
     data () {
       return {
         show: false
@@ -25,15 +37,18 @@ const alert = (options) => {
     components: {
       Alert
     },
-    template: `<alert ref="alert" 
-      icon="${icon}"
+    template: `<alert 
+      ref="alert" 
+      :method="true"
+      ${icon ? 'icon="' + icon + '"' : ''}
       :description="${description || false}"
       ${width ? 'width="' + width + '"' : ''}
       type="${type || 'default'}"
       :dismissable="${dismissable || true}"
       :duration="${duration}"
       :small="${small || false}"
-      placement="${placement || 'top'}"
+      ${placement ? 'placement="' + placement + '"' : 'top'}
+      ${message ? 'message="' + message + '"' : 'top'}
       message="${message}"
       @hide="destroy"
       @close="destroy">

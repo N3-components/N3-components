@@ -66,6 +66,10 @@ export default {
     icon: {
       type: String
     },
+    method: {
+      type: Boolean,
+      default: false
+    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -95,11 +99,25 @@ export default {
     isShow (val) {
       if (val) {
         this.$nextTick(() => {
-          if (this.placement === 'top' || this.placement === 'bottom') {
-            this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
-          } else if (this.placement === 'center') {
-            this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
-            this.$el.style.marginTop = -1 * (this.$el.offsetHeight / 2) + 'px'
+          if (this.method) {
+            let parent = this.$el.parentNode
+            parent.style.position = 'fixed'
+            parent.style.zIndex = 1200
+            this.$el.style.position = 'relative'
+            this.$el.style.marginBottom = '20px'
+            if (this.placement === 'top' || this.placement === 'bottom') {
+              parent.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
+            } else if (this.placement === 'center') {
+              parent.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
+              parent.style.marginTop = -1 * (this.$el.offsetHeight / 2) + 'px'
+            }
+          } else {
+            if (this.placement === 'top' || this.placement === 'bottom') {
+              this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
+            } else if (this.placement === 'center') {
+              this.$el.style.marginLeft = -1 * (this.$el.offsetWidth / 2) + 'px'
+              this.$el.style.marginTop = -1 * (this.$el.offsetHeight / 2) + 'px'
+            }
           }
 
           if (this._timeout) clearTimeout(this._timeout)
@@ -133,7 +151,7 @@ export default {
       klass[prefixCls + '-alert-small'] = small
       klass[prefixCls + '-alert'] = true
       klass[prefixCls + '-alert-' + type] = true
-      klass[prefixCls + '-' + placement] = true
+      klass[prefixCls + '-alert-' + placement] = !this.method
 
       return klass
     }

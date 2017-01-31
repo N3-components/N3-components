@@ -229,13 +229,16 @@ export default {
 
 
 ```javascript
+
 export default {
   methods: {
     showAlert () {
       this.n3Alert({
         content: 'success',
-        type: 'success',
-        duration: 2000
+          type: 'success',
+          placement: 'top-right',
+          duration: 2000,
+          width:'200px' // 内容不确定，建议设置width
       })
     },
   }
@@ -266,7 +269,9 @@ export default {
         this.n3Alert({
           content: 'success',
           type: 'success',
-          duration: 2000
+          placement: 'top-right',
+          duration: 2000,
+          width:'200px'
         })
       }
     },

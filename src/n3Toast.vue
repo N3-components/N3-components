@@ -60,7 +60,7 @@ export default {
 
       klass[prefixCls + '-toast'] = true
       klass[prefixCls + '-toast-' + type] = true
-      klass[prefixCls + '-' + placement] = true
+      klass[prefixCls + '-toast-' + placement] = true
 
       return klass
     }

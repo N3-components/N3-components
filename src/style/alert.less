@@ -24,6 +24,10 @@
     border-top-color: @alertHrColor;
   }
 
+  .@{prefix-cls}-close {
+    margin-left: 10px;
+  }
+
   &-default {
     color: @alertFontColor;
     border-left:@alertDefaultBorder;
@@ -80,51 +84,6 @@
     }
   }
 
-  &.@{prefix-cls}-center {
-    position: fixed;
-    margin: 0 auto;
-    left: 50%;
-    top: 50%;
-  }
-
-  &.@{prefix-cls}-top {
-    position: fixed;
-    top: @alertTop;
-    margin: 0 auto;
-    left: 50%;
-  }
-
-  &.@{prefix-cls}-bottom {
-    position: fixed;
-    bottom: @alertBottom;
-    margin: 0 auto;
-    left: 50%;
-  }
-
-  &.@{prefix-cls}-top-right {
-    position: fixed;
-    top: @alertTop;
-    right: @alertRight;
-  }
-
-  &.@{prefix-cls}-top-left {
-    position: fixed;
-    top: @alertTop;
-    left: @alertLeft;
-  }
-
-  &.@{prefix-cls}-bottom-right {
-    position: fixed;
-    bottom: @alertBottom;
-    right: @alertRight;
-  }
-
-  &.@{prefix-cls}-bottom-left {
-    position: fixed;
-    bottom: @alertBottom;
-    left: @alertLeft;
-  }
-
   &-dismissable,
   &-dismissible {
     padding-right: 35px;
@@ -139,6 +98,49 @@
   }
 }
 
+.@{prefix-cls}-alert-center {
+  position: fixed;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+}
 
+.@{prefix-cls}-alert-top {
+  position: fixed;
+  top: @alertTop;
+  margin: 0 auto;
+  left: 50%;
+}
+
+.@{prefix-cls}-alert-bottom {
+  position: fixed;
+  bottom: @alertBottom;
+  margin: 0 auto;
+  left: 50%;
+}
+
+.@{prefix-cls}-alert-top-right {
+  position: fixed;
+  top: @alertTop;
+  right: @alertRight;
+}
+
+.@{prefix-cls}-alert-top-left {
+  position: fixed;
+  top: @alertTop;
+  left: @alertLeft;
+}
+
+.@{prefix-cls}-alert-bottom-right {
+  position: fixed;
+  bottom: @alertBottom;
+  right: @alertRight;
+}
+
+.@{prefix-cls}-alert-bottom-left {
+  position: fixed;
+  bottom: @alertBottom;
+  left: @alertLeft;
+}
 
 
