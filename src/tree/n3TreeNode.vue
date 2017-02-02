@@ -31,20 +31,20 @@
         <n3-icon :type="node.isLeaf ? tree.leafIcon : tree.childIcon"></n3-icon>
         <node-content :node="node"></node-content>
       </div>
-      <div v-show="expanded">
-        <n3-collapse-transition>
-          <div
-            :class="`${prefixCls}-tree-children`"
-            >
-            <n3-tree-node
-              :render-content="renderContent"
-              v-for="child in node.childNodes"
-              :key="getNodeKey(child)"
-              :node="child">
-            </n3-tree-node>
-          </div>
-        </n3-collapse-transition>
-      </div>
+      <n3-collapse-transition>
+        <div v-show="expanded">
+            <div
+              :class="`${prefixCls}-tree-children`"
+              >
+              <n3-tree-node
+                :render-content="renderContent"
+                v-for="child in node.childNodes"
+                :key="getNodeKey(child)"
+                :node="child">
+              </n3-tree-node>
+            </div>
+        </div>
+      </n3-collapse-transition>
     </div>
   </div>
 </template>

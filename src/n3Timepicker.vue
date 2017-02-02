@@ -8,6 +8,7 @@
       :custom-validate="customValidate"
       :disabled="disabled"
       :readonly="true"
+      @clean="clean"
       @click.native="inputClick"
       :show-clean="true"
       icon="clock-o"
@@ -137,6 +138,16 @@ export default {
     }
   },
   methods: {
+    clean () {
+      this.time = {
+        hour: 0,
+        minute: 0,
+        second: 0
+      }
+      this.$nextTick(() => {
+        this.currentValue = ''
+      })
+    },
     close () {
       this.show = false
     },

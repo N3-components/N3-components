@@ -101,6 +101,7 @@ export default {
   methods: {
     clean () {
       this.$emit('input', '')
+      this.$emit('clean')
     },
     update (val) {
       this.$emit('input', val)

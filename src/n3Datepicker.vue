@@ -10,6 +10,7 @@
       :readonly="true"
       :show-clean="true"
       icon="calendar"
+      @clean="clean"
       @click.native="inputClick"
       v-model="currentValue">
     </n3-input>
@@ -149,6 +150,9 @@ export default {
     }
   },
   methods: {
+    clean () {
+      this.currDate = new Date()
+    },
     monthClassObj (m) {
       let {prefixCls, currentValue, mouthNames, parse, currDate} = this
       let klass = {}

@@ -8,6 +8,7 @@
       :custom-validate="customValidate"
       :disabled="disabled"
       :readonly="true"
+      @clean="clean"
       @click.native="inputClick"
       icon="calendar"
       :show-clean="true"
@@ -261,6 +262,17 @@ export default {
     }
   },
   methods: {
+    clean () {
+      this.currDate = new Date
+      this.time = {
+        hour: 0,
+        minute: 0,
+        second: 0
+      }
+      this.$nextTick(() => {
+        this.currentValue = ''
+      })
+    },
     monthClassobj (m) {
       let {prefixCls, date, mouthNames, parse, currDate} = this
       let klass = {}

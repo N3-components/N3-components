@@ -11697,6 +11697,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  methods: {
 	    clean: function clean() {
 	      this.$emit('input', '');
+	      this.$emit('clean');
 	    },
 	    update: function update(val) {
 	      this.$emit('input', val);
@@ -12630,6 +12631,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  methods: {
+	    clean: function clean() {
+	      this.currDate = new Date();
+	    },
 	    monthClassObj: function monthClassObj(m) {
 	      var prefixCls = this.prefixCls;
 	      var currentValue = this.currentValue;
@@ -12880,6 +12884,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//       :readonly="true"
 	//       :show-clean="true"
 	//       icon="calendar"
+	//       @clean="clean"
 	//       @click.native="inputClick"
 	//       v-model="currentValue">
 	//     </n3-input>
@@ -12974,7 +12979,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 186 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-datepicker`\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      :show-clean=\"true\"\n      icon=\"calendar\"\n      @click.native=\"inputClick\"\n      v-model=\"currentValue\">\n    </n3-input>\n\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayDayView\" v-n3-position=\"displayDayView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n          <div :class=\"`${prefixCls}-datepicker-body`\">\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                @click=\"preNextMonthClick(0)\">&lt;</span>\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                @click=\"preNextMonthClick(1)\">&gt;</span>\n              <p @click=\"switchMouthView\">\n              {{stringifyDayHeader(currDate)}}\n              </p>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n              <span v-for=\"w in weekRange\">{{w}}</span>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n              <span\n                v-for=\"d in dateRange\" :class=\"d.sclass\"\n                @click=\"daySelect(d.date,d.sclass)\">\n                {{d.text}}\n              </span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </transition>\n    <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayMouthView\" >\n      <div :class=\"`${prefixCls}-datepicker-inner`\">\n        <div :class=\"`${prefixCls}-datepicker-body`\">\n          <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n              @click=\"preNextYearClick(0)\">&lt;</span>\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n              @click=\"preNextYearClick(1)\">&gt;</span>\n            <p @click=\"switchDecadeView\">\n            {{stringifyYearHeader(currDate)}}\n            </p>\n          </div>\n          <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n          \t<template v-for=\"(m, index) in mouthNames\">\n              <span\n                :class=\"monthClassObj(m)\"\n                @click=\"mouthSelect(index)\">\n                {{m.substr(0,3)}}\n              </span>\n            </template>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayYearView\">\n      <div :class=\"`${prefixCls}-datepicker-inner`\">\n        <div :class=\"`${prefixCls}-datepicker-body`\">\n          <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n              @click=\"preNextDecadeClick(0)\">&lt;</span>\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n              @click=\"preNextDecadeClick(1)\">&gt;</span>\n            <p>\n            {{stringifyDecadeHeader(currDate)}}\n            </p>\n          </div>\n          <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n          \t<template v-for=\"decade in decadeRange\">\n          \t\t<span\n                :class=\"yearClassObj(decade)\"\n                @click.stop=\"yearSelect(decade.text)\">\n                {{decade.text}}\n             \t</span>\n\t\t        </template>\n          </div>\n        </div>\n      </div>\n    </div>\n</div>";
+	module.exports = "<div :class=\"`${prefixCls}-datepicker`\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      :show-clean=\"true\"\n      icon=\"calendar\"\n      @clean=\"clean\"\n      @click.native=\"inputClick\"\n      v-model=\"currentValue\">\n    </n3-input>\n\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayDayView\" v-n3-position=\"displayDayView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n          <div :class=\"`${prefixCls}-datepicker-body`\">\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                @click=\"preNextMonthClick(0)\">&lt;</span>\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                @click=\"preNextMonthClick(1)\">&gt;</span>\n              <p @click=\"switchMouthView\">\n              {{stringifyDayHeader(currDate)}}\n              </p>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n              <span v-for=\"w in weekRange\">{{w}}</span>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n              <span\n                v-for=\"d in dateRange\" :class=\"d.sclass\"\n                @click=\"daySelect(d.date,d.sclass)\">\n                {{d.text}}\n              </span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </transition>\n    <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayMouthView\" >\n      <div :class=\"`${prefixCls}-datepicker-inner`\">\n        <div :class=\"`${prefixCls}-datepicker-body`\">\n          <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n              @click=\"preNextYearClick(0)\">&lt;</span>\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n              @click=\"preNextYearClick(1)\">&gt;</span>\n            <p @click=\"switchDecadeView\">\n            {{stringifyYearHeader(currDate)}}\n            </p>\n          </div>\n          <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n          \t<template v-for=\"(m, index) in mouthNames\">\n              <span\n                :class=\"monthClassObj(m)\"\n                @click=\"mouthSelect(index)\">\n                {{m.substr(0,3)}}\n              </span>\n            </template>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayYearView\">\n      <div :class=\"`${prefixCls}-datepicker-inner`\">\n        <div :class=\"`${prefixCls}-datepicker-body`\">\n          <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n              @click=\"preNextDecadeClick(0)\">&lt;</span>\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n              @click=\"preNextDecadeClick(1)\">&gt;</span>\n            <p>\n            {{stringifyDecadeHeader(currDate)}}\n            </p>\n          </div>\n          <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n          \t<template v-for=\"decade in decadeRange\">\n          \t\t<span\n                :class=\"yearClassObj(decade)\"\n                @click.stop=\"yearSelect(decade.text)\">\n                {{decade.text}}\n             \t</span>\n\t\t        </template>\n          </div>\n        </div>\n      </div>\n    </div>\n</div>";
 
 /***/ },
 /* 187 */
@@ -13038,6 +13043,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//       :custom-validate="customValidate"
 	//       :disabled="disabled"
 	//       :readonly="true"
+	//       @clean="clean"
 	//       @click.native="inputClick"
 	//       :show-clean="true"
 	//       icon="clock-o"
@@ -13163,6 +13169,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  methods: {
+	    clean: function clean() {
+	      var _this = this;
+	
+	      this.time = {
+	        hour: 0,
+	        minute: 0,
+	        second: 0
+	      };
+	      this.$nextTick(function () {
+	        _this.currentValue = '';
+	      });
+	    },
 	    close: function close() {
 	      this.show = false;
 	    },
@@ -13215,10 +13233,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    this._format(this.currentValue);
 	  },
 	  mounted: function mounted() {
-	    var _this = this;
+	    var _this2 = this;
 	
 	    this._closeEvent = _EventListener2.default.listen(window, 'click', function (e) {
-	      if (!_this.$el.contains(e.target)) _this.close();
+	      if (!_this2.$el.contains(e.target)) _this2.close();
 	    });
 	  },
 	  beforeDestroy: function beforeDestroy() {
@@ -13904,7 +13922,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 196 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-timepicker`\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      @click.native=\"inputClick\"\n      :show-clean=\"true\"\n      icon=\"clock-o\"\n      v-model=\"currentValue\">\n    </n3-input>\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-timepicker-popup`\" v-show=\"show\"  v-n3-position=\"show\">\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n          <n3-slider\n            v-model=\"time.hour\"\n            orientation=\"vertical\"\n            :max=\"hourRange[1]\" :min=\"hourRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n          <n3-slider\n            v-model=\"time.minute\"\n            orientation=\"vertical\"\n            :max=\"minuteRange[1]\"\n            :min=\"minuteRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n          <n3-slider\n            v-model=\"time.second\"\n            orientation=\"vertical\"\n            :max=\"secondRange[1]\"\n            :min=\"secondRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n      </div>\n    </transition>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-timepicker`\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      @clean=\"clean\"\n      @click.native=\"inputClick\"\n      :show-clean=\"true\"\n      icon=\"clock-o\"\n      v-model=\"currentValue\">\n    </n3-input>\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-timepicker-popup`\" v-show=\"show\"  v-n3-position=\"show\">\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n          <n3-slider\n            v-model=\"time.hour\"\n            orientation=\"vertical\"\n            :max=\"hourRange[1]\" :min=\"hourRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n          <n3-slider\n            v-model=\"time.minute\"\n            orientation=\"vertical\"\n            :max=\"minuteRange[1]\"\n            :min=\"minuteRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n        <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n          <n3-slider\n            v-model=\"time.second\"\n            orientation=\"vertical\"\n            :max=\"secondRange[1]\"\n            :min=\"secondRange[0]\"\n            :class=\"`${prefixCls}-timepicker-slider`\">\n          </n3-slider>\n        </div>\n      </div>\n    </transition>\n  </div>";
 
 /***/ },
 /* 197 */
@@ -13968,6 +13986,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	//       :custom-validate="customValidate"
 	//       :disabled="disabled"
 	//       :readonly="true"
+	//       @clean="clean"
 	//       @click.native="inputClick"
 	//       icon="calendar"
 	//       :show-clean="true"
@@ -14215,6 +14234,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  methods: {
+	    clean: function clean() {
+	      var _this2 = this;
+	
+	      this.currDate = new Date();
+	      this.time = {
+	        hour: 0,
+	        minute: 0,
+	        second: 0
+	      };
+	      this.$nextTick(function () {
+	        _this2.currentValue = '';
+	      });
+	    },
 	    monthClassobj: function monthClassobj(m) {
 	      var prefixCls = this.prefixCls;
 	      var date = this.date;
@@ -14409,7 +14441,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return dict[month];
 	    },
 	    getDateRange: function getDateRange() {
-	      var _this2 = this;
+	      var _this3 = this;
 	
 	      this.dateRange = [];
 	      this.decadeRange = [];
@@ -14449,21 +14481,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var date = new Date(time.year, time.month, _i2);
 	        var week = date.getDay();
 	        var sclass = '';
-	        _this2.disabledDaysOfWeek.forEach(function (el) {
-	          if (week === parseInt(el, 10)) sclass = _this2.prefixCls + '-datepicker-item-disable';
+	        _this3.disabledDaysOfWeek.forEach(function (el) {
+	          if (week === parseInt(el, 10)) sclass = _this3.prefixCls + '-datepicker-item-disable';
 	        });
 	
 	        if (_i2 === time.day) {
-	          if (_this2.date) {
-	            var valueDate = _this2.parse(_this2.date);
+	          if (_this3.date) {
+	            var valueDate = _this3.parse(_this3.date);
 	            if (valueDate) {
 	              if (valueDate.getFullYear() === time.year && valueDate.getMonth() === time.month) {
-	                sclass = _this2.prefixCls + '-datepicker-dateRange-item-active';
+	                sclass = _this3.prefixCls + '-datepicker-dateRange-item-active';
 	              }
 	            }
 	          }
 	        }
-	        _this2.dateRange.push({
+	        _this3.dateRange.push({
 	          text: _i2,
 	          date: date,
 	          sclass: sclass
@@ -14494,7 +14526,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  mounted: function mounted() {
-	    var _this3 = this;
+	    var _this4 = this;
 	
 	    var self = this;
 	    this.currDate = this.parse(this.date) || this.parse(new Date());
@@ -14502,7 +14534,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (!self.displayDayView && !self.displayMouthView && !self.displayMouthView) {
 	        return;
 	      }
-	      var check = e.target.className.indexOf(_this3.prefixCls + '-datetimepicker-date-span') > -1;
+	      var check = e.target.className.indexOf(_this4.prefixCls + '-datetimepicker-date-span') > -1;
 	      if (!self.$el.contains(e.target) && !check) self.close();
 	    });
 	  },
@@ -14531,7 +14563,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 199 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`\" ref=\"datetimepicker\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      @click.native=\"inputClick\"\n      icon=\"calendar\"\n      :show-clean=\"true\"\n      v-model=\"currentValue\">\n    </n3-input>\n      <transition name=\"fadeDown\">\n        <div\n          v-n3-position=\"displayDayView\"\n          :class=\"`${prefixCls}-datepicker-popup`\"\n          v-show=\"displayDayView\"\n          :style=\"{width:popWidth}\">\n            <div :class=\"`${prefixCls}-datepicker-inner`\" ref=\"datepicker\">\n                <div :class=\"`${prefixCls}-datepicker-body`\">\n                    <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                        <span\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                          @click=\"preNextMonthClick(0)\">&lt;</span>\n                        <span\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                          @click=\"preNextMonthClick(1)\">&gt;</span>\n                        <p @click=\"switchMouthView\">\n                        {{stringifyDayHeader(currDate)}}\n                        </p>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                        <span v-for=\"w in weekRange\">{{w}}</span>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                        <span v-for=\"d in dateRange\"\n                        :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\"\n                        @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                    </div>\n                </div>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-con`\">\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.hour\"\n                  orientation=\"vertical\"\n                  :max=\"hourRange[1]\"\n                  :min=\"hourRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.minute\"\n                  orientation=\"vertical\"\n                  :max=\"minuteRange[1]\"\n                  :min=\"minuteRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.second\"\n                  orientation=\"vertical\"\n                  :max=\"secondRange[1]\"\n                  :min=\"secondRange[0]\" >\n                </n3-slider>\n              </div>\n            </div>\n        </div>\n      </transition>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayMouthView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n                \t<template v-for=\"(m,index) in mouthNames\">\n\t                    <span\n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect(index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayYearView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
+	module.exports = "<div :class=\"`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`\" ref=\"datetimepicker\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      @clean=\"clean\"\n      @click.native=\"inputClick\"\n      icon=\"calendar\"\n      :show-clean=\"true\"\n      v-model=\"currentValue\">\n    </n3-input>\n      <transition name=\"fadeDown\">\n        <div\n          v-n3-position=\"displayDayView\"\n          :class=\"`${prefixCls}-datepicker-popup`\"\n          v-show=\"displayDayView\"\n          :style=\"{width:popWidth}\">\n            <div :class=\"`${prefixCls}-datepicker-inner`\" ref=\"datepicker\">\n                <div :class=\"`${prefixCls}-datepicker-body`\">\n                    <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                        <span\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                          @click=\"preNextMonthClick(0)\">&lt;</span>\n                        <span\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                          @click=\"preNextMonthClick(1)\">&gt;</span>\n                        <p @click=\"switchMouthView\">\n                        {{stringifyDayHeader(currDate)}}\n                        </p>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                        <span v-for=\"w in weekRange\">{{w}}</span>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                        <span v-for=\"d in dateRange\"\n                        :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\"\n                        @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                    </div>\n                </div>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-con`\">\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.hour\"\n                  orientation=\"vertical\"\n                  :max=\"hourRange[1]\"\n                  :min=\"hourRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.minute\"\n                  orientation=\"vertical\"\n                  :max=\"minuteRange[1]\"\n                  :min=\"minuteRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.second\"\n                  orientation=\"vertical\"\n                  :max=\"secondRange[1]\"\n                  :min=\"secondRange[0]\" >\n                </n3-slider>\n              </div>\n            </div>\n        </div>\n      </transition>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayMouthView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n                \t<template v-for=\"(m,index) in mouthNames\">\n\t                    <span\n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect(index)\">\n\t                      {{m.substr(0,3)}}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayYearView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>";
 
 /***/ },
 /* 200 */
@@ -20527,13 +20559,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	    template: {}
 	  },
 	  render: function render(h) {
+	    var _this = this;
+	
 	    var template = '<div class="inline">' + this.template + '</div>';
-	    var render = _vue2.default.compile(template).staticRenderFns[0];
-	    if (!render) {
-	      render = _vue2.default.compile(template).render;
+	    var compile = _vue2.default.compile(template);
+	    var l = compile.staticRenderFns.length;
+	    var ret = [];
+	
+	    if (l) {
+	      compile.staticRenderFns.forEach(function (i) {
+	        ret.push(i.call(_this.context, h));
+	      });
+	    } else {
+	      ret = [compile.render.call(this.context, h)];
 	    }
-	    var ret = render.call(this.context, h);
-	    return h('div', [ret]);
+	
+	    return h('div', ret);
 	  }
 	};
 	// </script>
@@ -25161,20 +25202,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	//         <n3-icon :type="node.isLeaf ? tree.leafIcon : tree.childIcon"></n3-icon>
 	//         <node-content :node="node"></node-content>
 	//       </div>
-	//       <div v-show="expanded">
-	//         <n3-collapse-transition>
-	//           <div
-	//             :class="`${prefixCls}-tree-children`"
-	//             >
-	//             <n3-tree-node
-	//               :render-content="renderContent"
-	//               v-for="child in node.childNodes"
-	//               :key="getNodeKey(child)"
-	//               :node="child">
-	//             </n3-tree-node>
-	//           </div>
-	//         </n3-collapse-transition>
-	//       </div>
+	//       <n3-collapse-transition>
+	//         <div v-show="expanded">
+	//             <div
+	//               :class="`${prefixCls}-tree-children`"
+	//               >
+	//               <n3-tree-node
+	//                 :render-content="renderContent"
+	//                 v-for="child in node.childNodes"
+	//                 :key="getNodeKey(child)"
+	//                 :node="child">
+	//               </n3-tree-node>
+	//             </div>
+	//         </div>
+	//       </n3-collapse-transition>
 	//     </div>
 	//   </div>
 	// </template>
@@ -25330,7 +25371,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 319 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"`${prefixCls}-tree-node`\">\n    <div \n      @click.stop=\"handleClick\"\n      v-show=\"node.visible\"\n      :class=\"[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']\">\n      <div :class=\"`${prefixCls}-tree-node__content`\"\n        :style=\"{ 'padding-left': (node.level - 1) * 20 + 'px' }\">\n        <span @click.stop=\"handleExpandIconClick\">\n          <n3-icon\n            v-show=\"!node.isLeaf\"\n            :class=\"`${prefixCls}-tree-select-icon`\"\n            :type=\"(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon\"\n          >\n          </n3-icon>\n        </span>\n        <span @click.stop=\"handleUserClick\">\n          <n3-checkbox\n            v-if=\"showCheckbox\"\n            :checked=\"node.checked\"\n            @change=\"handleCheckChange\"\n          >\n          </n3-checkbox>\n        </span>\n        <span\n          :class=\"`${prefixCls}-tree-loading-box`\"\n          v-if=\"node.loading\"\n        >\n          <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n        </span>\n        <n3-icon :type=\"node.isLeaf ? tree.leafIcon : tree.childIcon\"></n3-icon>\n        <node-content :node=\"node\"></node-content>\n      </div>\n      <div v-show=\"expanded\">\n        <n3-collapse-transition>\n          <div\n            :class=\"`${prefixCls}-tree-children`\"\n            >\n            <n3-tree-node\n              :render-content=\"renderContent\"\n              v-for=\"child in node.childNodes\"\n              :key=\"getNodeKey(child)\"\n              :node=\"child\">\n            </n3-tree-node>\n          </div>\n        </n3-collapse-transition>\n      </div>\n    </div>\n  </div>";
+	module.exports = "<div :class=\"`${prefixCls}-tree-node`\">\n    <div \n      @click.stop=\"handleClick\"\n      v-show=\"node.visible\"\n      :class=\"[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']\">\n      <div :class=\"`${prefixCls}-tree-node__content`\"\n        :style=\"{ 'padding-left': (node.level - 1) * 20 + 'px' }\">\n        <span @click.stop=\"handleExpandIconClick\">\n          <n3-icon\n            v-show=\"!node.isLeaf\"\n            :class=\"`${prefixCls}-tree-select-icon`\"\n            :type=\"(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon\"\n          >\n          </n3-icon>\n        </span>\n        <span @click.stop=\"handleUserClick\">\n          <n3-checkbox\n            v-if=\"showCheckbox\"\n            :checked=\"node.checked\"\n            @change=\"handleCheckChange\"\n          >\n          </n3-checkbox>\n        </span>\n        <span\n          :class=\"`${prefixCls}-tree-loading-box`\"\n          v-if=\"node.loading\"\n        >\n          <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n        </span>\n        <n3-icon :type=\"node.isLeaf ? tree.leafIcon : tree.childIcon\"></n3-icon>\n        <node-content :node=\"node\"></node-content>\n      </div>\n      <n3-collapse-transition>\n        <div v-show=\"expanded\">\n            <div\n              :class=\"`${prefixCls}-tree-children`\"\n              >\n              <n3-tree-node\n                :render-content=\"renderContent\"\n                v-for=\"child in node.childNodes\"\n                :key=\"getNodeKey(child)\"\n                :node=\"child\">\n              </n3-tree-node>\n            </div>\n        </div>\n      </n3-collapse-transition>\n    </div>\n  </div>";
 
 /***/ },
 /* 320 */

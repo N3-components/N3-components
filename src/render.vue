@@ -8,12 +8,19 @@
  	},
  	render (h) {
  		let template = '<div class="inline">' + this.template + '</div>'
- 		let render = Vue.compile(template).staticRenderFns[0]
- 		if (!render) {
- 			render = Vue.compile(template).render
+ 		let compile = Vue.compile(template)
+ 		let l = compile.staticRenderFns.length
+ 		let ret = []
+
+ 		if (l) {
+ 			compile.staticRenderFns.forEach((i) => {
+ 				ret.push(i.call(this.context, h))
+ 			})
+ 		} else {
+ 			ret = [compile.render.call(this.context, h)]
  		}
- 		let ret = render.call(this.context, h)
- 		return h('div', [ret])
+ 		
+ 		return h('div', ret)
  	}
  }
  </script>
