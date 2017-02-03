@@ -4,7 +4,7 @@
 
 <div class="bs-docs-section" >
 <div class="bs-example">
-  <n3-input v-model="value" ref="input" ></n3-input>
+  <n3-input v-model="value" ref="input" show-clean></n3-input>
   <n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
 </div>
 
@@ -19,6 +19,7 @@
 |-------------  |---------------- |----------------  |-------- |
 | password          | `Boolean`     |    `false`        |     密码输入框     |
 | icon          | `String`     |    -        |     icon     |
+| show-clean          | `Boolean`     |    `false`       |     显示清除icon     |
 
 ### Events
 

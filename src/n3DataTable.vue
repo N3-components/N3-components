@@ -44,6 +44,7 @@
         type="primary">
         <n3-icon type="refresh"></n3-icon>
       </n3-button>
+      <slot ></slot>
     <n3-input
       class="pull-right" 
       placeholder="搜索"
@@ -296,11 +297,14 @@ export default {
     filterList () {
       this.handlerFilter()
     },
-    pagination (val) {
-      this.cpage.current = val.current
-      this.cpage.pagesize = val.pagesize
-      this.cpage.total = val.total
-      this.cpage.pagesizeOpts = val.pagesizeOpts
+    pagination: {
+      handler (val) {
+        this.cpage.current = val.current
+        this.cpage.pagesize = val.pagesize
+        this.cpage.total = val.total
+        this.cpage.pagesizeOpts = val.pagesizeOpts
+      },
+      deep: true 
     }
   },
   mounted () {

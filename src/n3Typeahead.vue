@@ -11,6 +11,7 @@
     :readonly="readonly"
     :disabled="disabled"
     v-model="query"
+    :show-clean="showClean"
     @focus="_onFocus"
     @blur="_onBlur"
     @input.native="update"
@@ -77,6 +78,10 @@ export default {
         this.reset()
         this.query = this.addFormat(item)
       }
+    },
+    showClean: {
+      type: Boolean,
+      default: false
     },
     dropdownWidth: {
       type: String,

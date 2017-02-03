@@ -10,6 +10,7 @@
     label="姓名"
     :label-col="3">
 <n3-input
+    show-clean
     name="name"
     v-model="model.name"
     :rules="[{type:'required'}]"
@@ -54,6 +55,7 @@
     label="学校"
     :label-col="3">
 <n3-typeahead
+    show-clean
     name="学校"
     v-model = "model.school"
     :data="schoolData"
