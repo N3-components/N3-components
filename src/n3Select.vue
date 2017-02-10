@@ -43,7 +43,7 @@
               :value="option.value" 
               style="position:relative">
             <a @click.prevent="select(option)" >
-              {{{ option.label }}} 
+              <span>{{{ option.label }}}</span> 
               <n3-icon type="check" v-show="findIndex(option.value) !== -1"></n3-icon>
             </a>
           </li>
