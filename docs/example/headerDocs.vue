@@ -5,15 +5,12 @@
         <n3-nav-item >
           <a href="./index.html" >N3</a>
         </n3-nav-item>
-        <!-- <n3-nav-item >
-          <a href="./v1.html" >v1</a>
+        <n3-nav-item >
+          <a href="./v1.html" >V1</a>
         </n3-nav-item>
          <n3-nav-item >
-          <a href="./v2.html" >v2</a>
-        </n3-nav-item> -->
-        <!--  <n3-nav-item :active="active==='usage'">
-          <a href="./usage.html" >使用</a>
-        </n3-nav-item> -->
+          <a href="./v2.html" >V2</a>
+        </n3-nav-item>
       </n3-nav>
     </n3-container>
   </header>

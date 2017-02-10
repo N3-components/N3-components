@@ -50,10 +50,10 @@ Select data : {{custom.join(', ')}}
         </pre>
       </p>
       <n3-select multiple :value.sync="custom" >
-        <n3-option value="Star"><span  class="fa fa-star"></span> Star</n3-option>
-        <n3-option value="Heart"><span class="fa fa-heart"></span> Heart</n3-option>
-        <n3-option value="Film"><span  class="fa fa-film"></span> Film</n3-option>
-        <n3-option value="Inbox"><span class="fa fa-inbox"></span> Inbox</n3-option>
+        <n3-option value="Star"><n3-icon type="star"></n3-icon> Star</n3-option>
+        <n3-option value="Heart"><n3-icon type="heart"></n3-icon> Heart</n3-option>
+        <n3-option value="Film"><n3-icon type="film"></n3-icon> Film</n3-option>
+        <n3-option value="Inbox"><n3-icon type="inbox"></n3-icon> Inbox</n3-option>
       </n3-select>
       <hr />
       <h4>传递数组，支持搜索</h4>
@@ -92,10 +92,10 @@ Select data : {{arr}}
 </n3-select>
 <hr>
 <n3-select multiple>
-  <n3-option value="Star"><span slot="span" class="fa fa-star"></span> Star</n3-option>
-  <n3-option value="Heart"><span slot="span" class="fa fa-heart"></span> Heart</n3-option>
-  <n3-option value="Film"><span slot="span" class="fa fa-film"></span> Film</n3-option>
-  <n3-option value="Inbox"><span slot="span" class="fa fa-inbox"></span> Inbox</n3-option>
+  <n3-option value="Star"><n3-icon type="star"></n3-icon> Star</n3-option>
+  <n3-option value="Heart"><n3-icon type="heart"></n3-icon> Heart</n3-option>
+  <n3-option value="Film"><n3-icon type="film"></n3-icon> Film</n3-option>
+  <n3-option value="Inbox"><n3-icon type="inbox"></n3-icon> Inbox</n3-option>
 </n3-select>
 
 <n3-select :value.sync="arr" :options="fruitOptions" :search="true" >

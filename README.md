@@ -55,8 +55,7 @@ You can also import single component when needed.
 
 ```javascript
 import Vue from 'vue'
-import N3Components from 'N3-components'
-import {n3Alert} from N3Components
+import {n3Alert} from 'N3-components'
 ```
 
 Requirements

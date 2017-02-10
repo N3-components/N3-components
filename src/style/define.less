@@ -13,13 +13,13 @@
 @lightColor: #f9f9f9; 
 
 /*font color*/
-@fontColor: #333;
+@fontColor: #555;
 
 
 /*theme color*/
 @primaryColor: #41cac0;
 @primaryColorhover: #39b2a9;
-@hoverColor:rgba(65, 202, 192, 0.1);
+@hoverColor:rgba(65, 202, 192, 0.05);
 
 
 /*extend color*/
@@ -55,24 +55,24 @@
 
 
 /*cascader color*/
-@cascaderColor:rgba(65, 202, 192, 0.3);
+@cascaderColor:@lightColor;
 
 /*popover */
-@popoverShadow:0 3px 10px rgba(0, 0, 0, 0.2);
-@popoverBorder:1px solid rgba(0, 0, 0, 0.2);
+@popoverShadow:0 1px 6px rgba(0,0,0,.2);
+@popoverBorder:0px;
 
 /*cascader*/
-@cascaderShadow: 0 0 4px rgba(0,0,0,0.17);
+@cascaderShadow:0 1px 6px rgba(0,0,0,.2);
 
 /*datepicker shadow*/
-@dateShadow:0 6px 12px rgba(0,0,0,0.175);
-@dateBorder:1px solid @grayColor;
+@dateShadow:0 1px 6px rgba(0,0,0,.1);
+@dateBorder:0px;
 /*panel*/
 @panelHeadingColor:transparent;
 
 /*modal*/
-@modalHeaderColor: @primaryColor;
-@modalHeaderFontColor: @whiteColor;
+@modalHeaderColor: @whiteColor;
+@modalHeaderFontColor: @fontColor;
 
 
 /*----------size-----------*/
@@ -139,11 +139,11 @@
 @checkboxCheckOffset:0px;
 
 /*dropdown*/
-@dropdownMinWidth:160px;
-@dropdownLiPadding:5px 20px;
+@dropdownMinWidth:100px;
+@dropdownLiPadding:7px 25px 7px 20px;
 @dropdownLineHeight:1.42857143;
-@dropBorder:1px solid rgba(0, 0, 0, 0.15);
-@dropShadow:0 6px 12px rgba(0, 0, 0, 0.175);
+@dropBorder:0px;
+@dropShadow:0 1px 6px rgba(0,0,0,.2);
 
 /*slider*/
 @sliderHeight:4px;
@@ -162,11 +162,11 @@
 @sliderHorizontalTipLeft:-8px;
 
 /*datepicker*/
-@datepickerWidth:268px;
-@datepickerSpanSize:38px;
-@datepickerSpanRadius:38px;
-@datepicerCtrlHeight:38px;
-@datepickerRangeSize:42px;
+@datepickerWidth:250px;
+@datepickerSpanSize:35px;
+@datepickerSpanRadius:35px;
+@datepicerCtrlHeight:35px;
+@datepickerRangeSize:40px;
 
 /*timepicker*/	
 @timepickerPadding:10px 0px 0px;
@@ -175,7 +175,7 @@
 @timepickerSlierPadding:0px 0px 0px 2px;
 
 /*datetimepicker*/
-@datetimepickerWidth:268px;
+@datetimepickerWidth:250px;
 
 /*switch*/
 @switchWidth:65px;
@@ -200,15 +200,15 @@
 @panelBodyPadding:15px;
 
 /*table*/
-@tableTdPadding: 6px 8px;
+@tableTdPadding: 10px 10px;
 @tableTdLineHeight: 1.5;
-@tableTdBorderLeft: 1px solid @lightGrayColor;
-@tableBorder:1px solid @lightGrayColor;
+@tableTdBorderLeft: 0px;
+@tableBorder:0px;
 
 /*modal*/
 @modalMargin:30px auto;
 @modalPadding:15px;
-@modalFooterBorderTop:1px solid @lightGrayColor;
+@modalFooterBorderTop:0px;
 
 /*label*/
 @labelPadding: 0.5em 0.8em;
