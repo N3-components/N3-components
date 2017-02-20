@@ -40,7 +40,7 @@
     </div>
     <div v-if="type === 'drag'"
          :class="[prefixCls + '-upload-drag']">
-      <div 
+      <div
         :class="[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]"
         :style="{width:dragWidth,height:dragHeight}">
         <input type="file"
@@ -256,7 +256,7 @@
               xhr.open('post', self.url, true)
 
               xhr.onload = () => {
-                //self.parseResponse(xhr.responseText, i)
+                self.parseResponse(xhr.responseText, i)
               }
 
               xhr.upload.onprogress = (e) => {
