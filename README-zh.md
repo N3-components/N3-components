@@ -9,16 +9,16 @@ N3-components - 强大的Vue组件库。
 
 N3组件库是基于Vue.js构建的，让前端工程师和全栈工程师能快速构建页面和应用。
 
-[官方主页](https://n3-components.github.io/N3-components/) | [English Introduction](https://github.com/N3-components/N3-components) | [文档](https://n3-components.github.io/N3-components/component.html)
+[官方主页](http://n3ui.org/) | [English Introduction](https://github.com/N3-components/N3-components/blob/1.x/README.md) | [文档](http://www.n3ui.org/v1.html)
 
 相关介绍
 ------------
 
-![logo](https://raw.githubusercontent.com/N3-components/N3-components/master/docs/static/img/logo.png)
+![logo](https://raw.githubusercontent.com/N3-components/N3-components/1.x/docs/static/img/logo.png)
 
 N3组件库致力于构建良好的Vue开发者生态圈，提供良好的开发体验。下面是其中的一些特色：
 
-* 超过60个组件 [组件列表](https://github.com/N3-components/N3-components/tree/master/src)
+* 超过60个组件 [组件列表](https://github.com/N3-components/N3-components/tree/1.x/src)
 
 * 自定义样式
 
@@ -31,8 +31,22 @@ NPM
 链接：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
 
 ```bash
-npm install N3-components
+npm install N3-components --save-dev
 ```
+
+CNPM
+------------
+
+链接：[https://npm.taobao.org/package/N3-components](https://npm.taobao.org/package/N3-components)
+
+```bash
+cnpm install N3-components --save-dev
+```
+
+CDN
+------------
+
+链接：https://unpkg.com/N3-components@version/dist/N3Components.js (注意填写版本号)
 
 快速上手
 ------------
@@ -41,14 +55,14 @@ npm install N3-components
 
 ```javascript
 import Vue from 'vue'
+
 // default css style
 import N3Components from 'N3-components'
-// ant design css style
-// import N3Components from 'N3-components/dist/blue.min.js' 
 
-N3Components.install(Vue)
-// or
-// Vue.use(N3Components)
+// ant design css style
+import N3Components from 'N3-components/dist/blue.min.js' 
+
+Vue.use(N3Components)
 ```
 
 也可以在需要的时候引入该组件，示例代码如下：
@@ -83,9 +97,9 @@ TODO 列表
 提交贡献
 ---------
 
-[Contribute](https://github.com/N3-components/N3-components/blob/master/contribute.md)
+[Contribute](https://github.com/N3-components/N3-components/blob/1.x/contribute.md)
 
 更新日志
 ---------
 
-[Change Log](https://github.com/N3-components/N3-components/blob/master/log.md)
+[Change Log](https://github.com/N3-components/N3-components/blob/1.x/log.md)

@@ -9,7 +9,7 @@ N3-components - Powerful Vue Library.
 
 N3 components library is built with Vue.js, is a powerful library for frontend or full-stack engineers to build web pages quickly.
 
-[Home Page](http:/n3ui.org) | [中文说明](https://github.com/N3-components/N3-components/blob/master/README-zh.md) | [Documents](http:/n3ui.org)
+[Home Page](http:/n3ui.org) | [中文说明](https://github.com/N3-components/N3-components/blob/1.x/README-zh.md) | [Documents](http:/n3ui.org/v1.html)
 
 Introduction
 ------------
@@ -18,7 +18,7 @@ Introduction
 
 N3 components applys oneself to structure a great ecological circle of developers using Vue.js. Supporting as follows:
 
-* More than 60 components. [See Here](https://github.com/N3-components/N3-components/tree/master/src)
+* More than 60 components. [See Here](https://github.com/N3-components/N3-components/tree/1.x/src)
 
 * Personality Of Style.
 
@@ -28,11 +28,25 @@ N3 components applys oneself to structure a great ecological circle of developer
 
 NPM
 ------------
-Link：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
+链接：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
 
 ```bash
-npm install N3-components
+npm install N3-components --save-dev
 ```
+
+CNPM
+------------
+
+链接：[https://npm.taobao.org/package/N3-components](https://npm.taobao.org/package/N3-components)
+
+```bash
+cnpm install N3-components --save-dev
+```
+
+CDN
+------------
+
+链接：https://unpkg.com/N3-components@version/dist/N3Components.js (注意填写版本号)
 
 Quick Start
 ------------
@@ -41,14 +55,14 @@ You can install components for your global environment.
 
 ```javascript
 import Vue from 'vue'
+
 // default css style
 import N3Components from 'N3-components'
-// ant design css style
-// import N3Components from 'N3-components/dist/blue.min.js' 
 
-N3Components.install(Vue)
-// or
-// Vue.use(N3Components)
+// ant design css style
+import N3Components from 'N3-components/dist/blue.min.js' 
+
+Vue.use(N3Components)
 ```
 
 You can also import single component when needed.
@@ -83,9 +97,9 @@ Discussing
 Contribute
 ---------
 
-[Contribute](https://github.com/N3-components/N3-components/blob/master/contribute.md)
+[Contribute](https://github.com/N3-components/N3-components/blob/1.x/contribute.md)
 
 Change log
 --------
 
-[Change Log](https://github.com/N3-components/N3-components/blob/master/log.md)
+[Change Log](https://github.com/N3-components/N3-components/blob/1.x/log.md)
