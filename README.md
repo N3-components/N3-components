@@ -28,7 +28,7 @@ N3 components applys oneself to structure a great ecological circle of developer
 
 NPM
 ------------
-链接：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
+Link：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
 
 ```bash
 npm install N3-components --save-dev
@@ -37,7 +37,7 @@ npm install N3-components --save-dev
 CNPM
 ------------
 
-链接：[https://npm.taobao.org/package/N3-components](https://npm.taobao.org/package/N3-components)
+Link：[https://npm.taobao.org/package/N3-components](https://npm.taobao.org/package/N3-components)
 
 ```bash
 cnpm install N3-components --save-dev
@@ -46,7 +46,7 @@ cnpm install N3-components --save-dev
 CDN
 ------------
 
-链接：https://unpkg.com/N3-components@version/dist/N3Components.js (注意填写版本号)
+Link：https://unpkg.com/N3-components@version/dist/N3Components.js (Notice the version)
 
 Quick Start
 ------------
