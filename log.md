@@ -25,7 +25,6 @@ v1.2.x
 
 + datatable排序bug修复
 
-
 #### v1.2.6
 
 + slider 样式问题
@@ -41,6 +40,9 @@ v1.2.x
 + exports transition
 
 #### v1.2.9
+
+v1.3.x
+--------
 #### v1.3.0
 
 + datatable bug fix
