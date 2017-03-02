@@ -1,15 +1,37 @@
 .@{prefix-cls}-input-con{
-  .@{prefix-cls}-has-feedback .@{prefix-cls}-form-control-feedback {
-      right: 0px;
-      line-height: 34px;
+  position: relative;
+  .@{prefix-cls}-input-show-clean,.@{prefix-cls}-input-show-icon{
+    font-size: @cleanSize;
+    position: absolute;
+    top: @cleanTop;
+    right: @cleanRight;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+    cursor: pointer;
+    color:@grayColor;
   }
+  .@{prefix-cls}-input-show-icon{
+    opacity: 1;
+  }
+
+
+  &.@{prefix-cls}-show-clean input,&.@{prefix-cls}-show-icon input{
+    padding-right: @inputCleanRight;
+  }
+  &.@{prefix-cls}-show-clean:hover .@{prefix-cls}-input-show-icon{
+    display:none;
+  }
+
+  &:hover .@{prefix-cls}-input-show-clean{
+    opacity: 1;
+  }
+
   .@{prefix-cls}-form-control[readonly]{
     background-color: @whiteColor;
   }
   .@{prefix-cls}-form-control[disabled]{
     background-color: @lightColor;
   }
-
   .@{prefix-cls}-form-control[readonly]{
     cursor: pointer;
     &:hover{

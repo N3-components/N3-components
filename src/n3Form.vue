@@ -6,23 +6,15 @@
 
 <script>
 import type from './utils/type'
+import events from './utils/events'
 
 export default {
+  name: 'n3Form',
+  mixins: [events],
   props: {
     type: {
       type: String,
       default: 'horizontal'
-    },
-    validate: {
-      type: Boolean,
-      default: false
-    },
-    result: {
-      type: Object,
-      twoWay: true
-    },
-    onValidateChange: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -35,7 +27,7 @@ export default {
     },
     validateFields (cb) {
       this.validate = true
-      this.$nextTick(()=>{
+      this.$nextTick(() => {
         if (type.isFunction(cb)) {
           cb(this.result)
         }
@@ -45,7 +37,7 @@ export default {
 
   watch: {
     validate (val) {
-      this.$broadcast('n3@openValidate', val)
+      this.broadcast('n3Validate', 'n3@openValidate', val)
       if (val) {
         this.result = this._result
       } else {
@@ -53,17 +45,17 @@ export default {
       }
     },
     result (val) {
-      if (this.validate && type.isFunction(this.onValidateChange)) {
-        this.onValidateChange(val)
+      if (this.validate) {
+        this.$emit('change', val)
       }
     }
   },
 
-  ready () {
+  mounted () {
     if (!this.validate) {
       this.result = {results: {}, isvaild: true}
     }
-    this.$broadcast('n3@openValidate', this.validate)
+    this.broadcast('n3Validate', 'n3@openValidate', this.validate)
   },
 
   computed: {
@@ -79,8 +71,16 @@ export default {
     }
   },
 
-  events: {
-    'n3@validateChange' (val) {
+  created () {
+    this.$on('openValidate', () => {
+      this.validate = true
+    })
+
+    this.$on('closeValidate', () => {
+      this.validate = false
+    })
+
+    this.$on('n3@validateChange', (val) => {
       let name = val.name
       let validateResult = Object.assign({}, this._result)
 
@@ -100,13 +100,16 @@ export default {
 
       if (this.validate) {
         this.result = this._result
+        this.$emit('validateChange', this.result)
       }
-    }
+    })
   },
 
   data () {
     return {
-      _result: {results: {}, isvaild: true}
+      _result: {results: {}, isvaild: true},
+      result: {results: {}, isvaild: true},
+      validate: false
     }
   }
 }

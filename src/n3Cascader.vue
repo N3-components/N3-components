@@ -1,36 +1,37 @@
 <template>
-  <div class="{{prefixCls}}-cascader">
-    <span class="{{prefixCls}}-cascader-picker">
+  <div :class="`${prefixCls}-cascader`">
+    <span :class="`${prefixCls}-cascader-picker`">
       <n3-input 
         :width="width"
         :name="name" 
         :rules="rules" 
-        :validate="validate" 
-        :has-feedback="hasFeedback"
         :placeholder="placeholder"
         :custom-validate="customValidate"
-        :value.sync="displayValue"
-        :readonly="readonly"
+        v-model="displayValue"
+        :readonly="true"
+        :show-clean="true"
         :disabled="disabled"
-        @click="toggleMenus">
+        @click.native="toggleMenus">
       </n3-input>
     </span>
-    <div class="{{prefixCls}}-cascader-menus" v-show="show" transition="fadeDown">
-      <ul class="{{prefixCls}}-cascader-menu" v-for="(index, menu) in menus">
-        <li :class="itemClass(index,option)" 
-          v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
-        </li>
-      </ul>
-    </div>
+    <transition name="fadeDown">
+      <div :class="`${prefixCls}-cascader-menus`" v-show="show" v-n3-position="show">
+        <ul :class="`${prefixCls}-cascader-menu`" v-for="(menu, index) in menus">
+          <li :class="itemClass(index,option)" 
+            v-for="option in menu" @click="changeOption(index,option)">{{option.label}}
+          </li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 <script>
 import EventListener from './utils/EventListener'
 import n3Input from './n3Input'
 import inputMixin from './inputMixin'
-import type from './utils/type'
 
 export default {
+  name: 'n3Cascader',
   mixins: [inputMixin],
   props: {
     options: {
@@ -49,8 +50,7 @@ export default {
       default: 'click'
     },
     value: {
-      type: Array,
-      twoWay: true
+      type: Array
     },
     onChange: {
       type: Function
@@ -74,7 +74,8 @@ export default {
       displayValue: '',
       show: false,
       init: true,
-      inner: false
+      inner: false,
+      currentValue: this.value
     }
   },
   computed: {
@@ -94,20 +95,33 @@ export default {
   created () {
     this.setMenu()
   },
-  ready () {
-    const el = this.$el
-    let self = this
-    self._closeEvent = EventListener.listen(window, 'click', (e) => {
-      if (!el.contains(e.target)) {
-        self.show = false
-      }
+  mounted () {
+    this.$nextTick(() => {
+      let el = this.$el
+      let self = this
+      self._closeEvent = EventListener.listen(window, 'click', (e) => {
+        if (!el.contains(e.target)) {
+          self.show = false
+        }
+      })
     })
   },
   watch: {
     options () {
       this.setMenu()
     },
-    value () {
+    displayValue (val) {
+      if (val === '') {
+        this.$emit('input', [])
+        this.$nextTick(() => {
+          this.setMenu()
+        })
+      }
+    },
+    value (val) {
+      this.currentValue = val
+    },
+    currentValue (val) {
       if (this.inner) {
         this.inner = false
         return
@@ -132,8 +146,8 @@ export default {
       self.displayValue = ''
       self.selectedOptions = []
 
-      if (self.value) {
-        self.value.forEach((value, i) => {
+      if (self.currentValue) {
+        self.currentValue.forEach((value, i) => {
           if (self.menus[i] && self.menus[i].length) {
             let option = self.menus[i].filter((option) => {
               return option.value === value
@@ -180,9 +194,10 @@ export default {
       if (this.selectChange || !option.children) {
         self.displayValue = self.displayRender(self.selectedLabel)
         self.inner = true
-        self.value = self.selectedValue
-        if (type.isFunction(self.onChange) && !this.init) {
-          self.onChange(self.value)
+        self.currentValue = self.selectedValue
+        this.$emit('input', self.currentValue)
+        if (!this.init) {
+          self.$emit('change', self.currentValue)
         }
       }
 

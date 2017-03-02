@@ -6,6 +6,7 @@
 
 <script>
 export default{
+  name: 'n3Label',
   props: {
     type: {
       type: String,

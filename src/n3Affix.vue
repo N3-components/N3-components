@@ -1,7 +1,7 @@
 <template>
 <div>
   <div v-if="affixed" :style="style"></div>
-  <div :style="styles">
+  <div :style="styles" >
     <slot></slot>
   </div>
 </div>
@@ -10,6 +10,7 @@
 import EventListener from './utils/EventListener'
 
 export default {
+  name: 'n3Affix',
   props: {
     offset: {
       type: Number,
@@ -30,7 +31,7 @@ export default {
     style () {
       return {
         width: this.$el.offsetWidth + 'px',
-        height: this.$el.offsetHeight + 'px'
+        height: this.$el.offsetHeight + 'px'    
       }
     }
   },
@@ -77,7 +78,7 @@ export default {
       }
     }
   },
-  ready () {
+  mounted () {
     this._scrollEvent = EventListener.listen(window, 'scroll', this.scrolling)
     this._resizeEvent = EventListener.listen(window, 'resize', this.scrolling)
   },

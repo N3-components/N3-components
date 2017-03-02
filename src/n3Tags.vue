@@ -1,26 +1,24 @@
 <template>
-<div :class="classObj">
-	<label 
-  	v-for="i in value" 
-	  :class="tagClass(i)">
+  <div :class="classObj">
+    <label v-for="i in currentValue" :class="tagClass(i)">
 	 {{i.label}}
 	<a name="remove" v-if="removable" @click="del(i)"><n3-icon type="times"></n3-icon></a>
 	</label>
-</div>
+  </div>
 </template>
 
 <script>
 import n3Icon from './n3Icon'
 
 export default{
+  name: 'n3Tags',
   props: {
     type: {
       type: String,
       default: 'default'
     },
     value: {
-      type: Array,
-      twoway: true
+      type: Array
     },
     size: {
       type: String,
@@ -37,6 +35,16 @@ export default{
   },
   components: {
     n3Icon
+  },
+  data () {
+    return {
+      currentValue: this.value
+    }
+  },
+  watch: {
+    currentValue (val) {
+      this.$emit('input', val)
+    }
   },
   computed: {
     classObj () {
@@ -74,10 +82,11 @@ export default{
     },
     del (i) {
       if (i.disabled) return
-      let index = this.find(i, this.value)
+      let index = this.find(i, this.currentValue)
 
       if (index > -1) {
-        this.value.splice(index, 1)
+        this.currentValue.splice(index, 1)
+        this.$emit('remove')
       }
     }
   }

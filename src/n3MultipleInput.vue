@@ -1,75 +1,75 @@
 <template>
 <div class="inline" >
   <div :class="classObj" :style="{width:width,height:height}" @click="focus">
-    <template v-for="(index,item) in value" track-by="$index">
-        <template v-if="index == position">
+    <template v-for="(item, index) in currentValue">
+        <template v-if="index == currentPosition">
             <n3-typeahead
+              ref="typeahead"
               :placeholder="placeholder"
-              :on-focus="onFocus"
-              :on-blur="onBlur"
+              :async="async"
+              @focus="_onFocus"
+              @blur="_onBlur"
               :style="{margin:'0px 5px'}"
-              :query.sync="query" 
+              v-model="currentQuery" 
               :width='inputWidth'
-              :items="items"
-              :on-change="onInputchange"
+              :items="citems"
+              @change="_onInputchange"
               :dropdown-width="dropdownWidth"
               :dropdown-height="dropdownHeight"
               :on-hit="add"
               :match-case="matchCase"
               :limit="limit"
               :render="render"
-              :focused.sync="focused"
               :data="data"
-              @keydown.delete="del" 
-              @keydown.left="left" 
-              @keydown.right="right" 
-              @keydown.enter="add">
+              @keydown.delete.native="del" 
+              @keydown.left.native="left" 
+              @keydown.right.native="right" 
+              @keydown.enter.native="add">
             </n3-typeahead>
         </template>
          <template v-else>
-            <span class="{{prefixCls}}-multiple-input-space"  @click="setIndex(index)"></span>
+            <span :class="`${prefixCls}-multiple-input-space`"  @click="setIndex(index)"></span>
         </template>
-        <span class="{{prefixCls}}-multiple-input-m-tag" >
-        {{{format.call(this._context,item,index)}}}
-        <n3-icon type="times" class="{{prefixCls}}-multiple-close" @click="clickDel(index)"></n3-icon>
+        <span :class="`${prefixCls}-multiple-input-m-tag`" >
+        <render class="inline" :context="context || $parent._self" :template="format(item, index)"></render>
+        <n3-icon type="times" :class="`${prefixCls}-multiple-close`" @click.native="clickDel(index)"></n3-icon>
         </span>
     </template>
 
-    <template v-if="value && value.length == position">
+    <template v-if="currentValue && currentValue.length == currentPosition">
       <n3-typeahead
+        ref="typeahead"
         :placeholder="placeholder"
-        :on-focus="onFocus"
-        :on-blur="onBlur"
+        :async="async"
+        @focus="_onFocus"
+        @blur="_onBlur"
         :style="{margin:'0px 5px'}"
-        :query.sync="query" 
+        v-model="currentQuery" 
         :width='inputWidth'
-        :items="items"
-        :on-change="onInputchange"
+        :items="citems"
+        @change="_onInputchange"
         :dropdown-width="dropdownWidth"
         :dropdown-height="dropdownHeight"
         :on-hit="add"
         :match-case="matchCase"
         :limit="limit"
         :render="render"
-        :focused.sync="focused"
         :data="data"
-        @keydown.delete="del" 
-        @keydown.left="left" 
-        @keydown.right="right" 
-        @keydown.enter="add">
+        @keydown.delete.native="del" 
+        @keydown.left.native="left" 
+        @keydown.right.native="right" 
+        @keydown.enter.native="add">
       </n3-typeahead>
     </template>
     <template v-else>
-      <span class="{{prefixCls}}-multiple-input-space {{prefixCls}}-multiple-input-long"  @click="setIndex(value.length)"></span>
+      <span :class="`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`"  @click="setIndex(currentValue.length)"></span>
     </template>
   </div>
    <validate
     :name="name"
     :rules="rules"
-    :valid-status.sync="validStatus"
     :custom-validate="customValidate" 
-    :value="value"
-    :results.sync="validateResults">
+    :current="value">
   </validate>
 </div>
 </template>
@@ -77,21 +77,21 @@
 <script>
 import type from './utils/type'
 import n3Typeahead from './n3Typeahead'
+import render from './render'
 import n3Icon from './n3Icon'
 import valMixin from './valMixin'
 import validate from './validate'
 
 export default {
+  name: 'n3MultipleInput',
   mixins: [valMixin],
   props: {
     value: {
-      type: Array,
-      twoWay: true
+      type: Array
     },
-    position: {
-      type: Number,
-      twoWay: true,
-      default: 0
+    async: {
+      type: Boolean,
+      default: false
     },
     format: {
       type: Function,
@@ -117,15 +117,13 @@ export default {
         return item
       }
     },
-    onChange: {
-      type: Function
-    },
     query: {
       type: String,
-      twoway: true,
       default () {
         return ''
       }
+    },
+    context: {
     },
     placeholder: {
       type: String
@@ -151,12 +149,6 @@ export default {
       type: Boolean,
       default: false
     },
-    onHit: {
-      type: Function
-    },
-    onEnter: {
-      type: Function
-    },
     dropdownWidth: {
       type: String,
       default: '220px'
@@ -165,50 +157,42 @@ export default {
       type: String,
       default: '300px'
     },
-    onInputchange: {
-      type: Function
-    },
     items: {
       type: Array
     },
     prefixCls: {
       type: String,
       default: 'n3'
-    },
-    onFocus: {
-      type: Function
-    },
-    onBlur: {
-      type: Function
     }
   },
   data () {
     return {
-      focused: false,
       empty: true,
-      stopSecond: false
+      stopSecond: false,
+      currentValue: this.value,
+      currentPosition: 0,
+      currentQuery: this.query,
+      citems: this.items
     }
   },
-  ready () {
-    this.$nextTick(function () {
-      this._context.$compile(this.$el)
-    })
-  },
   watch: {
-    query (val) {
+    items (val) {
+      this.citems = val
+    },
+    currentQuery (val) {
       if (val !== '') {
         this.empty = false
       } else {
-        this.items = []
+        this.citems = []
       }
     },
-    position () {
+    currentPosition (val) {
+      this.$emit('positionChange', val)
       this.focus()
     },
-    value (val) {
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+    currentValue (val) {
+      this.$emit('input', val)
+      this.$emit('change', val)
       this.focus()
     }
   },
@@ -226,32 +210,39 @@ export default {
   components: {
     n3Icon,
     n3Typeahead,
-    validate
+    validate,
+    render
   },
   methods: {
+    _onInputchange (query) {
+      this.$emit('inputChange', query)
+    },
+    _onFocus () {
+      this.$emit('focus')
+    },
+    _onBlur () {
+      this.$emit('blur')
+    },
     focus () {
-      let self = this
-      self.focused = false
-      setTimeout(() => {
-        if (!self.focused) {
-          self.focused = true
-        }
-      }, 100)
+      this.$nextTick(() => {
+        let typeahead = type.isArray(this.$refs.typeahead) ? this.$refs.typeahead[0] : this.$refs.typeahead
+        typeahead.focusInput()
+      })
     },
     setIndex (index) {
       if (!this.positionMove) return
-      if (this.query) {
+      if (this.currentQuery) {
         this.addquery()
       }
-      this.position = index
+      this.currentPosition = index
     },
     addquery (item, that) {
-      let content = that ? item : this.query
-      let value = this.value.slice(0)
+      let content = that ? item : this.currentQuery
+      let value = this.currentValue.slice(0)
 
-      value.splice(this.position, 0, this.addFormat(content))
-      this.value = value
-      this.query = ''
+      value.splice(this.currentPosition, 0, this.addFormat(content))
+      this.currentValue = value
+      this.currentQuery = ''
       this.empty = true
     },
     add (item, that) {
@@ -260,41 +251,41 @@ export default {
       if (that && that.show) {
         this.stopSecond = true
         this.addquery(item, that)
-        this.position++
+        this.currentPosition++
         that.reset()
         setTimeout(() => { this.stopSecond = false })
       } else {
-        if (this.query) {
+        if (this.currentQuery) {
           this.addquery()
-          this.position++
+          this.currentPosition++
         }
       }
     },
     clickDel (index) {
-      let value = this.value.slice(0)
+      let value = this.currentValue.slice(0)
       value.splice(index, 1)
-      this.value = value
+      this.currentValue = value
     },
     del () {
-      if (this.empty && this.position > 0) {
-        let value = this.value.slice(0)
-        value.splice(this.position - 1, 1)
-        this.value = value
-        this.position--
+      if (this.empty && this.currentPosition > 0) {
+        let value = this.currentValue.slice(0)
+        value.splice(this.currentPosition - 1, 1)
+        this.currentValue = value
+        this.currentPosition--
         this.focus()
       }
-      this.empty = this.query === ''
+      this.empty = this.currentQuery === ''
     },
     left () {
       if (!this.positionMove) return
-      if (this.position > 0 && this.query === '') {
-        this.position--
+      if (this.currentPosition > 0 && this.currentQuery === '') {
+        this.currentPosition--
       }
     },
     right () {
       if (!this.positionMove) return
-      if (this.value && this.position < this.value.length && this.query === '') {
-        this.position++
+      if (this.currentValue && this.currentPosition < this.value.length && this.currentQuery === '') {
+        this.currentPosition++
       }
     }
   }

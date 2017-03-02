@@ -1,95 +1,98 @@
 <template>
-  <div class="{{prefixCls}}-datepicker {{prefixCls}}-timepicker {{prefixCls}}-datetimepicker" v-el:datetimepicker>
+  <div :class="`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`" ref="datetimepicker">
     <n3-input
       :width="width"
-      :name="name" 
-      :rules="rules" 
-      :validate="validate" 
-      :has-feedback="hasFeedback"
+      :name="name"
+      :rules="rules"
       :placeholder="placeholder"
       :custom-validate="customValidate"
-      :readonly="readonly"
       :disabled="disabled"
-      @click="inputClick"
-      :value.sync="value">
+      :readonly="true"
+      @clean="clean"
+      @click.native="inputClick"
+      icon="calendar"
+      :show-clean="true"
+      v-model="currentValue">
     </n3-input>
-      <div 
-        class="{{prefixCls}}-datepicker-popup" 
-        v-show="displayDayView" 
-        :style="{width:popWidth}" 
-        transition="fadeDown">
-          <div class="{{prefixCls}}-datepicker-inner" v-el:datepicker>
-              <div class="{{prefixCls}}-datepicker-body">
-                  <div class="{{prefixCls}}-datepicker-ctrl">
-                      <span 
-                        class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
-                        @click="preNextMonthClick(0)">&lt;</span>
-                      <span 
-                        class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
-                        @click="preNextMonthClick(1)">&gt;</span>
-                      <p @click="switchMouthView">
-                      {{stringifyDayHeader(currDate)}}
-                      </p>
-                  </div>
-                  <div class="{{prefixCls}}-datepicker-weekRange">
-                      <span v-for="w in weekRange">{{w}}</span>
-                  </div>
-                  <div class="{{prefixCls}}-datepicker-dateRange">
-                      <span v-for="d in dateRange" 
-                      :class="[d.sclass,prefixCls + '-datetimepicker-date-span']" 
-                      @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
-                  </div>
+      <transition name="fadeDown">
+        <div
+          v-n3-position="displayDayView"
+          :class="`${prefixCls}-datepicker-popup`"
+          v-show="displayDayView"
+          :style="{width:popWidth}">
+            <div :class="`${prefixCls}-datepicker-inner`" ref="datepicker">
+                <div :class="`${prefixCls}-datepicker-body`">
+                    <div :class="`${prefixCls}-datepicker-ctrl`">
+                        <span
+                          :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
+                          @click="preNextMonthClick(0)">&lt;</span>
+                        <span
+                          :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
+                          @click="preNextMonthClick(1)">&gt;</span>
+                        <p @click="switchMouthView">
+                        {{stringifyDayHeader(currDate)}}
+                        </p>
+                    </div>
+                    <div :class="`${prefixCls}-datepicker-weekRange`">
+                        <span v-for="w in weekRange">{{w}}</span>
+                    </div>
+                    <div :class="`${prefixCls}-datepicker-dateRange`">
+                        <span v-for="d in dateRange"
+                        :class="[d.sclass,prefixCls + '-datetimepicker-date-span']"
+                        @click="daySelect(d.date,d.sclass)">{{d.text}}</span>
+                    </div>
+                </div>
+            </div>
+            <div :class="`${prefixCls}-timepicker-con`">
+              <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
+                <n3-slider
+                  :class="`${prefixCls}-timepicker-slider`"
+                  v-model="time.hour"
+                  orientation="vertical"
+                  :max="hourRange[1]"
+                  :min="hourRange[0]" >
+                </n3-slider>
               </div>
-          </div>
-          <div class="{{prefixCls}}-timepicker-con">
-            <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
-              <n3-slider 
-                class="{{prefixCls}}-timepicker-slider"
-                :value.sync="time.hour" 
-                orientation="vertical" 
-                :max="hourRange[1]" 
-                :min="hourRange[0]" >
-              </n3-slider>
+              <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
+                <n3-slider
+                  :class="`${prefixCls}-timepicker-slider`"
+                  v-model="time.minute"
+                  orientation="vertical"
+                  :max="minuteRange[1]"
+                  :min="minuteRange[0]" >
+                </n3-slider>
+              </div>
+              <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
+                <n3-slider
+                  :class="`${prefixCls}-timepicker-slider`"
+                  v-model="time.second"
+                  orientation="vertical"
+                  :max="secondRange[1]"
+                  :min="secondRange[0]" >
+                </n3-slider>
+              </div>
             </div>
-            <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
-              <n3-slider
-                class="{{prefixCls}}-timepicker-slider" 
-                :value.sync="time.minute" 
-                orientation="vertical" 
-                :max="minuteRange[1]" 
-                :min="minuteRange[0]" >
-              </n3-slider>
-            </div>
-            <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
-              <n3-slider 
-                class="{{prefixCls}}-timepicker-slider"
-                :value.sync="time.second" 
-                orientation="vertical" 
-                :max="secondRange[1]" 
-                :min="secondRange[0]" >
-              </n3-slider>
-            </div>
-          </div>
-      </div>
-      <div class="{{prefixCls}}-datepicker-popup" v-show="displayMouthView">
-        <div class="{{prefixCls}}-datepicker-inner">
-            <div class="{{prefixCls}}-datepicker-body">
-                <div class="{{prefixCls}}-datepicker-ctrl">
-                    <span 
-                      class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn" 
+        </div>
+      </transition>
+      <div :class="`${prefixCls}-datepicker-popup`" v-show="displayMouthView">
+        <div :class="`${prefixCls}-datepicker-inner`">
+            <div :class="`${prefixCls}-datepicker-body`">
+                <div :class="`${prefixCls}-datepicker-ctrl`">
+                    <span
+                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
                       @click="preNextYearClick(0)">&lt;</span>
-                    <span 
-                      class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+                    <span
+                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
                       @click="preNextYearClick(1)">&gt;</span>
                     <p @click="switchDecadeView">
                     {{stringifyYearHeader(currDate)}}
                     </p>
                 </div>
-                <div class="{{prefixCls}}-datepicker-mouthRange">
-                	<template v-for="m in mouthNames">
-	                    <span 
+                <div :class="`${prefixCls}-datepicker-mouthRange`">
+                	<template v-for="(m,index) in mouthNames">
+	                    <span
                         :class="monthClassobj(m)"
-                        @click="mouthSelect($index)">
+                        @click="mouthSelect(index)">
 	                      {{m.substr(0,3)}}
 	                    </span>
                     </template>
@@ -97,21 +100,21 @@
             </div>
         </div>
       </div>
-      <div class="{{prefixCls}}-datepicker-popup" v-show="displayYearView">
-        <div class="{{prefixCls}}-datepicker-inner">
-            <div class="{{prefixCls}}-datepicker-body">
-                <div class="{{prefixCls}}-datepicker-ctrl">
-                    <span 
-                      class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-preBtn"
+      <div :class="`${prefixCls}-datepicker-popup`" v-show="displayYearView">
+        <div :class="`${prefixCls}-datepicker-inner`">
+            <div :class="`${prefixCls}-datepicker-body`">
+                <div :class="`${prefixCls}-datepicker-ctrl`">
+                    <span
+                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`"
                       @click="preNextDecadeClick(0)">&lt;</span>
-                    <span 
-                      class="{{prefixCls}}-month-btn {{prefixCls}}-datepicker-nextBtn" 
+                    <span
+                      :class="`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`"
                       @click="preNextDecadeClick(1)">&gt;</span>
                     <p>
                     {{stringifyDecadeHeader(currDate)}}
                     </p>
                 </div>
-                <div class="{{prefixCls}}-datepicker-mouthRange {{prefixCls}}-datepicker-decadeRange">
+                <div :class="`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`">
                 	<template v-for="decade in decadeRange">
                 		<span
                       :class="yearClassobj(decade)"
@@ -131,14 +134,13 @@ import n3Slider from './n3Slider'
 import n3Input from './n3Input'
 import inputMixin from './inputMixin'
 import EventListener from './utils/EventListener'
-import type from './utils/type'
 
 export default {
+  name: 'n3Datetimepicker',
   mixins: [inputMixin],
   props: {
     value: {
-      type: String,
-      twoWay: true
+      type: String
     },
     format: {
       default: 'yyyy-MM-dd hh:mm:ss'
@@ -167,9 +169,6 @@ export default {
         return [0, 59]
       }
     },
-    onHide: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -189,8 +188,9 @@ export default {
         minute: 0,
         second: 0
       },
-      popWidth:'',
+      popWidth: '',
       date: '',
+      currentValue: this.value,
       mouthNames: [
         '一月', '二月', '三月',
         '四月', '五月', '六月',
@@ -200,6 +200,13 @@ export default {
     }
   },
   watch: {
+    value (val) {
+      this.currentValue = val
+    },
+    currentValue (val) {
+      this.$emit('input', val)
+      this.$emit('change', val)
+    },
     displayMouthView () {
       this.dispatchHide()
     },
@@ -210,24 +217,24 @@ export default {
       this.getDateRange()
     },
     displayDayView (val) {
+      this.dispatchHide()
       if (val) {
         this.$nextTick(() => {
-          let width = this.$els.datepicker.offsetWidth * 1 + 30
+          let width = this.$refs.datepicker.offsetWidth * 1 + 30
           this.hour ? width += 42 : 0
           this.minute ? width += 42 : 0
           this.second ? width += 42 : 0
           this.popWidth = width + 'px'
         })
       }
-      this.dispatchHide()
     },
     date () {
-      this.value = this.date + ' ' + this.handTime()
+      this.currentValue = this.date + ' ' + this.handTime()
     },
     time: {
       deep: true,
       handler (val) {
-        this.value = this.date + ' ' + this.handTime()
+        this.currentValue = this.date + ' ' + this.handTime()
       }
     }
   },
@@ -255,6 +262,17 @@ export default {
     }
   },
   methods: {
+    clean () {
+      this.currDate = new Date
+      this.time = {
+        hour: 0,
+        minute: 0,
+        second: 0
+      }
+      this.$nextTick(() => {
+        this.currentValue = ''
+      })
+    },
     monthClassobj (m) {
       let {prefixCls, date, mouthNames, parse, currDate} = this
       let klass = {}
@@ -274,11 +292,9 @@ export default {
       return klass
     },
     dispatchHide () {
-      var show = this.displayDayView || this.displayMouthView || this.displayYearView
+      let show = this.displayDayView || this.displayMouthView || this.displayYearView
       if (!show) {
-        if (type.isFunction(this.onHide)) {
-          this.onHide()
-        }
+        this.$emit('hide', this.value)
       }
     },
     close () {
@@ -529,7 +545,7 @@ export default {
       this.time = this.stringifyTime(new Date(this.value))
     }
   },
-  ready () {
+  mounted () {
     var self = this
     this.currDate = this.parse(this.date) || this.parse(new Date())
     this._closeEvent = EventListener.listen(window, 'click', (e) => {

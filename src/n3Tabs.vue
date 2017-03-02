@@ -2,9 +2,9 @@
   <div>
     <ul :class="classObj" >
       <li
-          v-for="r in renderData"
-          :class="liclassObj($index,r)"
-          @click.prevent="handleTabListClick($index, r)"
+          v-for="(r,index) in renderData"
+          :class="liclassObj(index,r)"
+          @click.prevent="handleTabListClick(index, r)"
           :disabled="r.disabled">
           <a href="#">
             {{r.header}}
@@ -12,9 +12,9 @@
           </a>
       </li>
     </ul>
-    <div class="{{prefixCls}}-tab-content">
+    <div :class="`${prefixCls}-tab-content`">
       <div v-if="list">
-          {{{renderData[activeIndex].content}}}
+          <span v-html='renderData[activeIndex].content'></span>
       </div>
       <slot v-else></slot>
     </div>
@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import type from './utils/type'
 import n3Badge from './n3Badge'
 
 export default {
+  name: 'n3Tabs',
   props: {
     pills: {
       type: Boolean
@@ -39,15 +39,9 @@ export default {
     justified: {
       type: Boolean
     },
-    size: {
-      type: String
-    },
-    activeIndex: {
+    value: {
       type: Number,
       default: 0
-    },
-    onChange: {
-      type: Function
     },
     list: {
       type: Array
@@ -58,8 +52,10 @@ export default {
     }
   },
   data () {
+    let activeIndex = this.value
     return {
-      renderData: []
+      renderData: [],
+      activeIndex: activeIndex
     }
   },
   components: {
@@ -82,7 +78,7 @@ export default {
     }
   },
   watch: {
-    list:{
+    list: {
       handler () {
         if (this.list) {
           this.renderData = this.list
@@ -107,9 +103,7 @@ export default {
       } else {
         return
       }
-      if (type.isFunction(this.onChange)) {
-        this.onChange(index, el)
-      }
+      this.$emit('change', el)
     }
   }
 }

@@ -5,6 +5,7 @@
 </template>
 <script>
 export default{
+  name: 'n3Container',
   props: {
     fluid: {
       type: Boolean

@@ -6,6 +6,7 @@
 </template>
 <script>
 export default{
+  name: 'n3Loading',
   props: {
     type: {
       type: String

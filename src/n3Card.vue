@@ -6,6 +6,7 @@
 
 <script>
 export default{
+  name: 'n3Card',
   props: {
     prefixCls: {
       type: String,

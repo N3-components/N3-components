@@ -1,5 +1,5 @@
 <template>
-  <div class="{{prefixCls}}-carousel-item">
+  <div :class="`${prefixCls}-carousel-item`">
     <slot></slot>
   </div>
 </template>
@@ -8,6 +8,7 @@
 import element from './utils/element'
 
 export default {
+  name: 'n3Slide',
   props: {
     prefixCls: {
       type: String,
@@ -19,17 +20,20 @@ export default {
       index: 0
     }
   },
-  ready () {
-    for (let c in this.$parent.$children) {
-      if (this.$parent.$children[c].$el == this.$el) {
-        this.index = c
-        break
+  mounted () {
+    this.$nextTick(() => {
+      for (let c in this.$parent.$children) {
+        if (this.$parent.$children[c].$el == this.$el) {
+          this.index = c
+          break
+        }
       }
-    }
-    this.$parent.indicator.push(this.index)
-    if (this.index == 0) {
-      element.addClass(this.$el, this.prefixCls + '-carousel-active')
-    }
+
+      this.$parent.indicator.push(this.index)
+      if (this.index == 1) {
+        element.addClass(this.$el, this.prefixCls + '-carousel-active')
+      }
+    })
   }
 }
 </script>

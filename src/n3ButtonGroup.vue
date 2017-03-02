@@ -1,11 +1,12 @@
 <template>
-  <div class="{{prefixCls}}-btn-group">
+  <div :class="`${prefixCls}-btn-group`">
     <slot></slot>  
   </div>
 </template>
 
 <script>
-export default{
+export default {
+  name: 'n3ButtonGroup',
   props: {
     prefixCls: {
       type: String,

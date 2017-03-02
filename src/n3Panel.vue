@@ -1,7 +1,7 @@
 <template>
-<div class="{{prefixCls}}-panel {{prefixCls}}-panel-default">
-    <div class="{{prefixCls}}-panel-heading">
-      <h4 class="{{prefixCls}}-panel-title">
+<div :class="`${prefixCls}-panel ${prefixCls}-panel-default`">
+    <div :class="`${prefixCls}-panel-heading`">
+      <h4 :class="`${prefixCls}-panel-title`">
         <a @click="toggleIsOpen()">
            <slot name="header">
             {{header}}
@@ -9,22 +9,24 @@
         </a>
       </h4>
     </div>
-    <div
-      class="{{prefixCls}}-panel-collapse"
-      v-el:panel
-      v-show="isOpen"
-      :transition="$parent.effect">
-      <div class="{{prefixCls}}-panel-body">
-        <slot></slot>
+    <n3-collapse-transition>
+      <div
+        :class="`${prefixCls}-panel-collapse`"
+        v-if="open">
+        <div :class="`${prefixCls}-panel-body`">
+          <slot></slot>
+        </div>
       </div>
-    </div>
+    <n3-collapse-transition>
   </div>
 </template>
 
 <script>
 import type from './utils/type'
+import n3CollapseTransition from './n3CollapseTransition'
 
 export default {
+  name: 'n3Panel',
   props: {
     isOpen: {
       type: Boolean,
@@ -35,37 +37,38 @@ export default {
     },
     index: {
     },
-    onChange: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
     }
   },
   data () {
+    let open = this.isOpen
     return {
-      height: 0
+      height: 0,
+      open: open
+    }
+  },
+  watch: {
+    isOpen (val) {
+      this.open = this.isOpen
     }
   },
   methods: {
     toggleIsOpen () {
-      this.isOpen = !this.isOpen
-      this.$dispatch('n3@paneltoggle', this)
-
-      if (type.isFunction(this.onChange)) {
-        this.onChange({
-          index: this.index,
-          header: this.header,
-          isOpen: this.isOpen
-        })
+      this.open = !this.open
+      let item = {
+        index: this.index,
+        header: this.header,
+        isOpen: this.open
       }
+
+      this.$parent.change(this)
+      this.$emit('change', item)
     }
   },
-  ready () {
-    const panel = this.$els.panel
-    panel.style.display = 'block'
-    if (!this.isOpen) panel.style.display = 'none'
+  components: {
+    n3CollapseTransition
   }
 }
 </script>

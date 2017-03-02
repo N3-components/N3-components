@@ -1,56 +1,55 @@
 <template>
-  <div 
-    :style="{width:width}"
-    :class="classObj"
-    v-show="show"
-    :transition="(this.placement === 'left') ? 'slideleft' : 'slideright'">
-    <div class="{{prefixCls}}-aside-dialog">
-      <div class="{{prefixCls}}-aside-content">
-        <div class="{{prefixCls}}-aside-header">
-          <button type="button" class="{{prefixCls}}-close" @click='close'><span>&times;</span></button>
-          <h4 class="{{prefixCls}}-aside-title">{{header}}</h4>
-        </div>
-        <div class="{{prefixCls}}-aside-body">
-          <slot></slot>
+  <transition :name="(this.placement === 'left') ? 'slideleft' : 'slideright'">
+    <div 
+      :style="{width:width}"
+      :class="classObj"
+      v-show="show">
+      <div :class="`${prefixCls}-aside-dialog`">
+        <div :class="`${prefixCls}-aside-content`">
+          <div :class="`${prefixCls}-aside-header`" v-if="header">
+            <button type="button" :class="`${prefixCls}-close`" @click='close'><span>&times;</span></button>
+            <h4 :class="`${prefixCls}-aside-title`">{{title}}</h4>
+          </div>
+          <div :class="`${prefixCls}-aside-body`">
+            <slot></slot>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
 import EventListener from './utils/EventListener'
 import getScrollBarWidth from './utils/getScrollBarWidth'
-import type from './utils/type'
 import element from './utils/element'
 
 export default {
+  name: 'n3Aside',
   props: {
-    show: {
-      type: Boolean,
-      require: true,
-      twoWay: true
-    },
     placement: {
       type: String,
       default: 'right'
     },
-    header: {
+    title: {
       type: String
+    },
+    header: {
+      type: Boolean,
+      default: true
     },
     width: {
       type: String,
       default: '320px'
     },
-    onShow: {
-      type: Function
-    },
-    onHide: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
+    }
+  },
+  data () {
+    return {
+      show: false
     }
   },
   computed: {
@@ -80,9 +79,7 @@ export default {
         }
         backdrop.className += ' ' + prefixCls + '-aside-in'
         this._clickEvent = EventListener.listen(backdrop, 'click', this.close)
-        if (type.isFunction(this.onShow)) {
-          this.onShow()
-        }
+        this.$emit('show')
       } else {
         if (this._clickEvent) this._clickEvent.remove()
         backdrop = document.querySelector('.' + prefixCls + '-aside-backdrop')
@@ -92,13 +89,14 @@ export default {
           body.style.paddingRight = '0'
           body.removeChild(backdrop)
         }, 300)
-        if (type.isFunction(this.onHide)) {
-          this.onHide()
-        }
+        this.$emit('hide')
       }
     }
   },
   methods: {
+    open () {
+      this.show = true
+    },
     close () {
       this.show = false
     }

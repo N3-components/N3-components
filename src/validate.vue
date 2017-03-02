@@ -1,12 +1,16 @@
 <template>
-	<div class="{{prefixCls}}-err-tip" v-if="validate && tips" >{{tips}}</div>
+	<div :class="`${prefixCls}-err-tip`" v-if="validate && tips" >{{tips}}</div>
 </template>
 
 <script>
 import type from './utils/type'
+import events from './utils/events'
 export default {
+  name: 'n3Validate',
+  mixins: [events],
   props: {
     value: {
+      type: String
     },
     customValidate: {
       type: Function
@@ -17,13 +21,7 @@ export default {
     name: {
       type: String
     },
-    validStatus: {
-      type: String,
-      twoWay: true
-    },
-    results: {
-      type: Object,
-      twoWay: true
+    current: {
     },
     prefixCls: {
       type: String,
@@ -35,14 +33,24 @@ export default {
       tips: '',
       validate: false,
       status: '',
+      vStatus: this.value,
+      results: {}
     }
   },
+
+  created () {
+    this.$on('n3@openValidate', (val) => {
+      this.validate = val
+      val ? this.vStatus = this.status : this.vStatus = ''
+    })
+  },
+
   computed: {
     _results: {
       get () {
         return this.results
       },
-      set (val,oldVal) {
+      set (val, oldVal) {
         let self = this
         let tips = ''
         let status = ''
@@ -62,7 +70,7 @@ export default {
         self.status = status
 
         if (self.validate) {
-          self.validStatus = self.status
+          self.vStatus = self.status
         }
 
         let isvalid = true
@@ -76,16 +84,16 @@ export default {
           }
         }
 
-        let newVal = Object.assign({},val)
+        let newVal = Object.assign({}, val)
         newVal.isvalid = isvalid
-          
-        if (this.isEqual(newVal,this.results)) {
+
+        if (this.isEqual(newVal, this.results)) {
           return
         }
 
         this.results = newVal
 
-        self.$dispatch('n3@validateChange', {
+        self.dispatch('n3Form', 'n3@validateChange', {
           name: self.name,
           result: self.results
         })
@@ -93,40 +101,37 @@ export default {
     }
   },
   watch: {
-    value: {
+    current: {
       handler (newVal, oldVal) {
         this.valid(newVal)
       },
       immediate: true
-    }
-  },
-  events: {
-    'n3@openValidate' (val) {
-      this.validate = val
-      val ? this.validStatus = this.status : this.validStatus = ''
+    },
+    vStatus (val) {
+      this.$emit('input', val)
     }
   },
   methods: {
-    isEqual (a,b) {
+    isEqual (a, b) {
       let e = true
       let propsA = Object.keys(a)
       let propsB = Object.keys(b)
-      
-      if(propsA.length != propsB.length){  
-        return false
-      } 
 
-      propsA.forEach(i=>{
-        if(a[i]['validStatus']!=b[i]['validStatus']){
+      if (propsA.length !== propsB.length) {
+        return false
+      }
+
+      propsA.forEach(i => {
+        if (a[i]['validStatus'] !== b[i]['validStatus']) {
           e = false
           return false
         }
       })
-       
-      return e 
+
+      return e
     },
-    setResult (key,value) {
-      let o = Object.assign({},this.results)
+    setResult (key, value) {
+      let o = Object.assign({}, this.results)
       o[key] = value
       this._results = o
     },
@@ -170,7 +175,7 @@ export default {
     },
 
     customValid (val) {
-      this.setResult('customValidate',this.customValidate(val))
+      this.setResult('customValidate', this.customValidate(val))
     },
 
     requiredValid (val, tip) {

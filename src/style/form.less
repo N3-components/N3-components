@@ -59,28 +59,6 @@
   line-height: @formGroupMinHeight;
 }
 
-
-.@{prefix-cls}-has-feedback {
-  position: relative;
-
-  .@{prefix-cls}-form-control {
-    padding-right: 42.5px;
-  }
-}
-
-.@{prefix-cls}-form-control-feedback {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: @inputHeight;
-  height: @inputHeight;
-  line-height: @inputHeight;
-  text-align: center;
-  pointer-events: none;
-}
-
 .@{prefix-cls}-has-success {
   .@{prefix-cls}-control-label{
     color: @successColor;
@@ -90,9 +68,6 @@
   }
   .@{prefix-cls}-form-control:focus {
     border-color: @successColorhover;
-  }
-  .@{prefix-cls}-form-control-feedback {
-    color: @successColor;
   }
 }
 
@@ -106,9 +81,6 @@
   .@{prefix-cls}-form-control:focus {
     border-color: @warningColorhover;
   }
-  .@{prefix-cls}-form-control-feedback {
-    color: @warningColor;
-  }
 }
 
 .@{prefix-cls}-has-error {
@@ -121,14 +93,8 @@
   .@{prefix-cls}-form-control:focus {
     border-color: @dangerColorhover;
   }
-  .@{prefix-cls}-form-control-feedback {
-    color:@dangerColor;
-  }
 }
 
-.@{prefix-cls}-has-feedback label ~ .@{prefix-cls}-form-control-feedback {
-  top: 31px;
-}
 
 .@{prefix-cls}-form-need{
     color: red;
@@ -159,9 +125,6 @@
     .@{prefix-cls}-control-label {
       margin-bottom: 0;
       vertical-align: top;
-    }
-    .@{prefix-cls}-has-feedback .@{prefix-cls}-form-control-feedback {
-      top: 0;
     }
   }
 }

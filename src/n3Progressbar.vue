@@ -8,6 +8,7 @@
 
 <script>
   export default {
+    name: 'n3Progressbar',
     props: {
       height: {
         type: String,

@@ -1,42 +1,48 @@
 <template>
   <n3-button 
-    @click.prevent="handleClick"
+    @click.prevent.native="handleClick"
     :class="classObj" 
     :disabled="disabled"
-    :type="checked ? 'primary' : 'default'">
+    :type="currentChecked ? 'primary' : 'default'">
     <slot></slot>
   </n3-button>
+<!--   <validate
+    :name="name"
+    :rules="rules"
+    :valid-status.sync="validStatus"
+    :custom-validate="customValidate" 
+    :value="currentChecked"
+    :results.sync="validateResults">
+  </validate> -->
 </template>
 
 <script>
 import n3Button from './n3Button'
-import type from './utils/type'
+import events from './utils/events'
+import valMixin from './valMixin'
+import validate from './validate'
 
 export default {
+  name: 'n3CheckboxBtn',
+  mixins: [valMixin, events],
   props: {
     value: {
       type: String
     },
+    label: {
+      type: [String, Number]
+    },
     checked: {
       type: Boolean,
-      default: false,
-      twoway: true
+      default: false
     },
     disabled: {
       type: Boolean,
       default: false
     },
-    onChange: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
-    }
-  },
-  events: {
-    'n3@checkboxgroupChange' (val) {
-      this.checked = val.indexOf(this.value) > -1
     }
   },
   computed: {
@@ -48,17 +54,44 @@ export default {
       return klass
     }
   },
-  methods: {
-    handleClick () {
-      this.checked = !this.checked
-      this.$dispatch('n3@checkboxChange', this)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.checked)
-      }
+  watch: {
+    value (val) {
+      this.currentChecked = val
+    },
+    checked (val) {
+      this.currentChecked = val
+    },
+    currentChecked (val) {
+      this.$emit('input', val)
     }
   },
+  data () {
+    let checked = this.checked
+    if (checked !== undefined) {
+      this.$emit('input', checked)
+    } else {
+      checked = !!this.value
+    }
+
+    return {
+      currentChecked: checked
+    }
+  },
+  methods: {
+    handleClick () {
+      this.currentChecked = !this.currentChecked
+      this.dispatch('n3CheckboxGroup', 'n3@checkboxChange', this)
+      this.$emit('change', this.currentChecked)
+    }
+  },
+  created () {
+    this.$on('n3@checkboxgroupChange', (val) => {
+      this.currentChecked = val.indexOf(this.label) > -1
+    })
+  },
   components: {
-    n3Button
+    n3Button,
+    validate
   }
 }
 </script>

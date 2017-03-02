@@ -1,62 +1,64 @@
 <template>
-  <div class="{{prefixCls}}-timepicker">
-    <n3-input 
+  <div :class="`${prefixCls}-timepicker`">
+    <n3-input
       :width="width"
-      :name="name" 
-      :rules="rules" 
-      :validate="validate" 
-      :has-feedback="hasFeedback"
+      :name="name"
+      :rules="rules"
       :placeholder="placeholder"
       :custom-validate="customValidate"
-      :readonly="readonly"
       :disabled="disabled"
-      @click="inputClick"
-      :value.sync="value">
+      :readonly="true"
+      @clean="clean"
+      @click.native="inputClick"
+      :show-clean="true"
+      icon="clock-o"
+      v-model="currentValue">
     </n3-input>
-    <div class="{{prefixCls}}-timepicker-popup" v-show="show" transition="fadeDown">
-      <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="hour" data-role="hour">
-        <n3-slider 
-          :value.sync="time.hour" 
-          orientation="vertical" 
-          :max="hourRange[1]" :min="hourRange[0]"  
-          class="{{prefixCls}}-timepicker-slider">
-        </n3-slider>
+    <transition name="fadeDown">
+      <div :class="`${prefixCls}-timepicker-popup`" v-show="show"  v-n3-position="show">
+        <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
+          <n3-slider
+            v-model="time.hour"
+            orientation="vertical"
+            :max="hourRange[1]" :min="hourRange[0]"
+            :class="`${prefixCls}-timepicker-slider`">
+          </n3-slider>
+        </div>
+        <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
+          <n3-slider
+            v-model="time.minute"
+            orientation="vertical"
+            :max="minuteRange[1]"
+            :min="minuteRange[0]"
+            :class="`${prefixCls}-timepicker-slider`">
+          </n3-slider>
+        </div>
+        <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
+          <n3-slider
+            v-model="time.second"
+            orientation="vertical"
+            :max="secondRange[1]"
+            :min="secondRange[0]"
+            :class="`${prefixCls}-timepicker-slider`">
+          </n3-slider>
+        </div>
       </div>
-      <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="minute" data-role="minute">
-        <n3-slider 
-          :value.sync="time.minute" 
-          orientation="vertical" 
-          :max="minuteRange[1]" 
-          :min="minuteRange[0]"  
-          class="{{prefixCls}}-timepicker-slider">
-        </n3-slider>
-      </div>
-      <div class="{{prefixCls}}-timepicker-slider-sin-wrap" v-if="second" data-role="second">
-        <n3-slider 
-          :value.sync="time.second" 
-          orientation="vertical" 
-          :max="secondRange[1]" 
-          :min="secondRange[0]" 
-          class="{{prefixCls}}-timepicker-slider">
-        </n3-slider>
-      </div>
-    </div>
+    </transition>
   </div>
 </template>
 
 <script>
-import type from './utils/type'
 import EventListener from './utils/EventListener'
 import n3Slider from './n3Slider'
 import n3Input from './n3Input'
 import inputMixin from './inputMixin'
 
 export default {
+  name: 'n3Timepicker',
   mixins: [inputMixin],
   props: {
     value: {
-      type: String,
-      twoWay: true
+      type: String
     },
     format: {
       type: String,
@@ -80,9 +82,6 @@ export default {
         return [0, 59]
       }
     },
-    onHide: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -100,7 +99,14 @@ export default {
   },
   watch: {
     show (val) {
-      if (!val && type.isFunction(this.onHide)) this.onHide(this.value)
+      if (!val) this.$emit('hide', this.currentValue)
+    },
+    value (val) {
+      this.currentValue = val
+    },
+    currentValue (val) {
+      this.$emit('input', val)
+      this.$emit('change', val)
     },
     time: {
       deep: true,
@@ -127,11 +133,21 @@ export default {
 
         ret = ret.substr(0, ret.length - 1)
 
-        this.value = ret
+        this.currentValue = ret
       }
     }
   },
   methods: {
+    clean () {
+      this.time = {
+        hour: 0,
+        minute: 0,
+        second: 0
+      }
+      this.$nextTick(() => {
+        this.currentValue = ''
+      })
+    },
     close () {
       this.show = false
     },
@@ -176,13 +192,14 @@ export default {
         hour: 0,
         minute: 0,
         second: 0
-      }
+      },
+      currentValue: this.value
     }
   },
   created () {
-    this._format(this.value)
+    this._format(this.currentValue)
   },
-  ready () {
+  mounted () {
     this._closeEvent = EventListener.listen(window, 'click', (e) => {
       if (!this.$el.contains(e.target)) this.close()
     })

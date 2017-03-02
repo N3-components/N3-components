@@ -1,4 +1,5 @@
 import n3Alert from './n3Alert'
+import n3AlertMethod from './n3AlertMethod'
 import n3Carousel from './n3Carousel'
 import n3Accordion from './n3Accordion'
 import n3Affix from './n3Affix'
@@ -17,6 +18,7 @@ import n3Timepicker from './n3Timepicker'
 import n3Datetimepicker from './n3Datetimepicker'
 import n3Dropdown from './n3Dropdown'
 import n3Modal from './n3Modal'
+import n3ModalMethod from './n3ModalMethod'
 import n3Option from './n3Option'
 import n3Panel from './n3Panel'
 import n3Popover from './n3Popover'
@@ -40,7 +42,6 @@ import n3NavItem from './n3NavItem'
 import n3Column from './n3Column'
 import n3Switch from './n3Switch'
 import n3MultipleInput from './n3MultipleInput'
-import n3SimplePagination from './n3SimplePagination'
 import n3Page from './n3Page'
 import n3Step from './n3Step'
 import n3DataTable from './n3DataTable'
@@ -56,10 +57,12 @@ import n3Form from './n3Form'
 import n3FormItem from './n3FormItem'
 import n3Slider from './n3Slider'
 import n3Slide from './n3Slide'
-import n3Tree from './n3Tree'
+import n3Tree from './tree/n3Tree'
 import n3Card from './n3Card'
+import n3Rate from './n3Rate'
 import n3Uploader from './n3Uploader'
-import transition from './transition'
+import n3CollapseTransition from './n3CollapseTransition'
+import position from './position.js'
 
 const Components = {
   n3FormItem,
@@ -85,8 +88,8 @@ const Components = {
   n3Datetimepicker,
   n3Uploader,
   n3Cascader,
-  n3Page,
   n3Label,
+  n3Rate,
   n3Input,
   n3Textarea,
   n3Dropdown,
@@ -116,13 +119,13 @@ const Components = {
   n3Tabs,
   n3Tooltip,
   n3Typeahead,
-  n3SimplePagination,
+  n3Page,
   n3Step,
   n3Tags,
   n3DataTable,
   n3Breadcrumb,
   n3BreadcrumbItem,
-  transition
+  n3CollapseTransition
 }
 
 const install = function (Vue) {
@@ -130,15 +133,10 @@ const install = function (Vue) {
     Vue.component(i, Components[i])
   }
 
-  for (let i in transition) {
-    Vue.transition(i, transition[i])
-  }
-
-  Vue.mixin({
-    methods: {
-      n3Toast: n3ToastMethod
-    }
-  })
+  Vue.directive('n3Position', position)
+  Vue.prototype.n3Modal = n3ModalMethod
+  Vue.prototype.n3Alert = n3AlertMethod
+  Vue.prototype.n3Toast = n3ToastMethod
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
