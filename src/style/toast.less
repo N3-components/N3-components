@@ -14,49 +14,6 @@
   cursor: default;
   z-index: 1500;
 
-  &.@{prefix-cls}-center {
-    margin: 0 auto;
-    left: 50%;
-    top: 50%;
-  }
-
-  &.@{prefix-cls}-top {
-    top: @toastTop;
-    margin: 0 auto;
-    left: 50%;
-  }
-
-  &.@{prefix-cls}-bottom {
-    bottom: @toastBottom;
-    margin: 0 auto;
-    left: 50%;
-    top:initial;
-  }
-
-  &.@{prefix-cls}-top-right {
-    top: @toastTop;
-    right: @toastRight;
-    left: initial;
-  }
-
-  &.@{prefix-cls}-top-left {
-    top: @toastTop;
-    left: @toastLeft;
-  }
-
-  &.@{prefix-cls}-bottom-right {
-    bottom: @toastBottom;
-    right: @toastRight;
-    left: initial;
-    top:initial;
-  }
-
-  &.@{prefix-cls}-bottom-left {
-    top: initial;
-    bottom: @toastBottom;
-    left: @toastLeft;
-  }
-
   &-default {
     background: @alertDefaultColor;
   }
@@ -77,3 +34,45 @@
   }
 }
 
+.@{prefix-cls}-toast-center {
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+}
+
+.@{prefix-cls}-toast-top {
+  top: @toastTop;
+  margin: 0 auto;
+  left: 50%;
+}
+
+.@{prefix-cls}-toast-bottom {
+  bottom: @toastBottom;
+  margin: 0 auto;
+  left: 50%;
+  top:initial;
+}
+
+.@{prefix-cls}-toast-top-right {
+  top: @toastTop;
+  right: @toastRight;
+  left: initial;
+}
+
+.@{prefix-cls}-toast-top-left {
+  top: @toastTop;
+  left: @toastLeft;
+}
+
+.@{prefix-cls}-toast-bottom-right {
+  bottom: @toastBottom;
+  right: @toastRight;
+  left: initial;
+  top:initial;
+}
+
+.@{prefix-cls}-toast-bottom-left {
+  top: initial;
+  bottom: @toastBottom;
+  left: @toastLeft;
+}

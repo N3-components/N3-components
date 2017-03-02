@@ -1,8 +1,9 @@
 <template>
 <div :class="classObj"  :style="{'width':width}">
   <input
+    ref="input"
     autoComplete="off"
-    class="{{prefixCls}}-form-control"
+    :class="`${prefixCls}-form-control`"
     :style="{'width':width}"
     :readonly="readonly"
     :disabled="disabled"
@@ -10,47 +11,44 @@
 		:type="type"
     @blur="blur"
     @focus="focus"
-    v-focus-model="focused"
-    v-model="value"  />
-  <n3-icon
-    type="check" class="{{prefixCls}}-form-control-feedback"
-    v-if='validStatus=="success" && hasFeedback'>
+    @input="update($event.target.value)"
+    v-focus="focused" 
+    :value="value" />
+
+  <n3-icon 
+    type="times-circle" 
+    v-if="showClean"  
+    :class="`${prefixCls}-input-show-clean`" 
+    @click.native.stop="clean">
   </n3-icon>
 
   <n3-icon
-    type="warning" class="{{prefixCls}}-form-control-feedback"
-    v-if='validStatus=="warning" && hasFeedback'>
-  </n3-icon>
-
-  <n3-icon
-    type="times" class="{{prefixCls}}-form-control-feedback"
-    v-if='validStatus=="error" && hasFeedback'>
+    :class="`${prefixCls}-input-show-icon`"  
+    :type="icon">
   </n3-icon>
 
   <validate
     :name="name"
-    :valid-status.sync="validStatus"
+    v-model="validStatus"
     :rules="rules"
     :custom-validate="customValidate"
-    :value="value"
-    :results.sync="validateResults">
+    :current="value">
   </validate>
 
 </div>
 </template>
 <script>
-import type from './utils/type'
 import n3Icon from './n3Icon'
 import inputMixin from './inputMixin'
 import validate from './validate'
-import { focusModel } from 'vue-focus'
+import { focus } from 'vue-focus'
 
 export default {
+  name: 'n3Input',
   mixins: [inputMixin],
   props: {
     value: {
-      type: [String, Number],
-      twoway: true
+      type: [String, Number]
     },
     onChange: {
       type: Function
@@ -62,6 +60,13 @@ export default {
     type: {
       type: String,
       default: 'text'
+    },
+    icon: {
+      type: String
+    },
+    showClean: {
+      type: Boolean,
+      default: false
     }
   },
   components: {
@@ -69,30 +74,24 @@ export default {
     validate
   },
   directives: {
-    focusModel: focusModel
+    focus: focus
   },
   data () {
     return {
-      validateResults: {}
-    }
-  },
-  watch: {
-    value (val) {
-      if (type.isFunction(this.onChange)) {
-        this.onChange(val)
-      }
+      focused: false
     }
   },
   computed: {
     classObj () {
-      let {prefixCls, validStatus, hasFeedback} = this
+      let {prefixCls, validStatus, showClean,icon} = this
       let klass = {}
 
       klass[prefixCls + '-has-error'] = validStatus === 'error'
       klass[prefixCls + '-has-success'] = validStatus === 'success'
       klass[prefixCls + '-has-warn'] = validStatus === 'warn'
-      klass[prefixCls + '-has-feedback'] = validStatus && hasFeedback
       klass[prefixCls + '-input-con'] = true
+      klass[prefixCls + '-show-clean'] = showClean
+      klass[prefixCls + '-show-icon'] = icon ? true : false
       klass['inline'] = true
 
       return klass
@@ -100,15 +99,21 @@ export default {
   },
 
   methods: {
+    clean () {
+      this.$emit('input', '')
+      this.$emit('clean')
+    },
+    update (val) {
+      this.$emit('input', val)
+      this.$emit('change', val)
+    },
     blur () {
-      if (type.isFunction(this.onBlur)) {
-        this.onBlur(this.value)
-      }
+      this.focused = false
+      this.$emit('blur', this.value)
     },
     focus () {
-      if (type.isFunction(this.onFocus)) {
-        this.onFocus(this.value)
-      }
+      this.focused = true
+      this.$emit('focus', this.value)
     }
   }
 }

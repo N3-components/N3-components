@@ -1,23 +1,23 @@
 <template>
   <div :class="classObj">
-    <div class="{{prefixCls}}-modal-dialog" 
+    <div :class="`${prefixCls}-modal-dialog`" 
       :style="{'width': width}">
-      <div class="{{prefixCls}}-modal-content">
+      <div :class="`${prefixCls}-modal-content`">
         <slot name="header">
-          <div class="{{prefixCls}}-modal-header">
-            <button type="button" class="{{prefixCls}}-close" @click="close"><span>&times;</span></button>
-            <h4 class="{{prefixCls}}-modal-title" >{{title}}</h4>
+          <div :class="`${prefixCls}-modal-header`">
+            <button type="button" :class="`${prefixCls}-close`" @click="close"><span>&times;</span></button>
+            <h4 :class="`${prefixCls}-modal-title`" >{{title}}</h4>
           </div>
         </slot>
         
-        <div class="{{prefixCls}}-modal-body">
+        <div :class="`${prefixCls}-modal-body`">
           <slot name="body"></slot>
         </div>
       
         <slot name="footer">
-          <div class="{{prefixCls}}-modal-footer">
-            <n3-button  @click="close">取消</n3-button>
-            <n3-button type="primary" @click="confirm">确定</n3-button>
+          <div :class="`${prefixCls}-modal-footer`">
+            <n3-button  @click.native="close">取消</n3-button>
+            <n3-button type="primary" @click.native="confirm">确定</n3-button>
           </div>
         </slot>
       </div>
@@ -29,19 +29,18 @@
 import getScrollBarWidth from './utils/getScrollBarWidth'
 import EventListener from './utils/EventListener'
 import n3Button from './n3Button'
-import type from './utils/type'
 import element from './utils/element'
 
 export default {
+  name: 'n3Modal',
   props: {
     title: {
       type: String,
       default: ''
     },
     show: {
-      require: true,
       type: Boolean,
-      twoWay: true
+      default: false
     },
     width: {
       type: String,
@@ -54,15 +53,6 @@ export default {
     backdrop: {
       type: Boolean,
       default: true
-    },
-    onShow: {
-      type: Function
-    },
-    onHide: {
-      type: Function
-    },
-    onConfirm: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -83,16 +73,18 @@ export default {
       return klass
     }
   },
+  data () {
+    let show = this.show
+    return {
+      isShow: show
+    }
+  },
   watch: {
-    show (val) {
+    isShow (val) {
       if (val) {
-        if (type.isFunction(this.onShow)) {
-          this.onShow()
-        }
+        this.$emit('show')
       } else {
-        if (type.isFunction(this.onHide)) {
-          this.onHide()
-        }
+        this.$emit('hide')
       }
 
       const el = this.$el
@@ -108,7 +100,7 @@ export default {
         }
         if (this.backdrop) {
           this._blurModalContentEvent = EventListener.listen(this.$el, 'click', (e) => {
-            if (e.target === el) this.show = false
+            if (e.target === el) this.isShow = false
           })
         }
       } else {
@@ -119,18 +111,20 @@ export default {
           element.removeClass(body, this.prefixCls + '-modal-open')
           element.removeClass(body, this.prefixCls + '-modal-hide-y')
           body.style.paddingRight = '0'
+          this.$emit('closed')
         }, 300)
       }
     }
   },
   methods: {
     close () {
-      this.show = false
+      this.isShow = false
+    },
+    open () {
+      this.isShow = true
     },
     confirm () {
-      if (type.isFunction(this.onConfirm)) {
-        this.onConfirm()
-      }
+      this.$emit('confirm')
     }
   }
 }

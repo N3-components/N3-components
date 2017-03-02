@@ -1,24 +1,26 @@
 <template>
-<span >
-  <span v-el:trigger >
+<span>
+  <span ref="trigger">
     <slot>
     </slot>
   </span>
-  <div :class="classObj"
-    v-el:popover
-    v-show="show"
-    :transition="effect">
-    <div class="{{prefixCls}}-tooltip-arrow"></div>
-    <div class="{{prefixCls}}-tooltip-inner">
-      {{{content}}}
+  <transition :name="effect">
+    <div :class="classObj"
+      ref="popover"
+      v-show="isShow">
+      <div :class="`${prefixCls}-tooltip-arrow`"></div>
+      <div :class="`${prefixCls}-tooltip-inner`">
+        <span v-html="content"></span>
+      </div>
     </div>
-  </div>
+  </transition>
 </span>
 </template>
 
 <script>
 import PopoverMixin from './popoverMixins'
 export default {
+  name: 'n3Tooltip',
   props: {
     prefixCls: {
       type: String,

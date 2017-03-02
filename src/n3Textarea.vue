@@ -1,23 +1,24 @@
 <template>
 <div :class="classObj" :style="{width:width}">
   <textarea
-    class="{{prefixCls}}-form-control"  
+    :class="`${prefixCls}-form-control`"  
     :disabled="disabled"
     :readonly="readonly"
     :maxlength="maxLength"
     :style="styleObj"
     :name="name"
+    @input="update($event.target.value)"
+    @focus="_onFocus"
+    @blur="_onBlur"
     :placeholder="placeholder"
-    v-model="value">
+    :value="value">
   </textarea>
 
   <validate
     :name="name"
-    :valid-status.sync="validStatus"
     :rules="rules"
     :custom-validate="customValidate" 
-    :value="value"
-    :results.sync="validateResults">
+    :current="value">
   </validate>
 
 </div>
@@ -25,13 +26,16 @@
 
 <script>
   import validate from './validate'
+  import valMixin from './valMixin'
 
   export default {
+    name: 'n3Textarea',
+    mixins: [valMixin],
     props: {
-      name: {
-        type: String
-      },
       disabled: {
+        type: Boolean
+      },
+      readonly: {
         type: Boolean
       },
       placeholder: {
@@ -56,32 +60,27 @@
         type: String
       },
       value: {
-        type: String,
-        twoway: true
-      },
-      validStatus: {
-        type: String,
-        twoway: true,
-        default: ''
-      },
-      customValidate: {
-        type: Function
-      },
-      rules: {
-        type: Array
+        type: String
       },
       prefixCls: {
         type: String,
         default: 'n3'
       }
     },
-    data () {
-      return {
-        validateResults: {}
-      }
-    },
     components: {
       validate
+    },
+    methods: {
+      update (val) {
+        this.$emit('input', val)
+        this.$emit('change', val)
+      },
+      _onFocus () {
+        this.$emit('focus')
+      },
+      _onBlur () {
+        this.$emit('blur')
+      }
     },
     computed: {
       styleObj () {
@@ -97,12 +96,8 @@
         return style
       },
       classObj () {
-        let {prefixCls, validStatus} = this
+        let {prefixCls} = this
         let klass = {}
-
-        klass[prefixCls + '-has-error'] = validStatus === 'error'
-        klass[prefixCls + '-has-success'] = validStatus === 'success'
-        klass[prefixCls + '-has-warn'] = validStatus === 'warn'
 
         klass[prefixCls + '-textarea-con'] = true
         klass['inline'] = true

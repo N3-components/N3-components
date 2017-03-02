@@ -1,19 +1,21 @@
 <template>
-<div class="{{prefixCls}}-carousel {{prefixCls}}-slide">
-  <ol class="{{prefixCls}}-carousel-indicators" v-show="indicators">
-    <li v-for="i in indicator" 
-      transition="fade"
-      @click="handleIndicatorClick($index)" 
-      :class="[$index === activeIndex ? prefixCls + '-carousel-active'  : '']">
+<div :class="`${prefixCls}-carousel ${prefixCls}-slide`">
+  <ol :class="`${prefixCls}-carousel-indicators`" v-show="indicators">
+    <transition-group name="fade">
+    <li v-for="(i,index) in indicator" 
+      :key="index"
+      @click="handleIndicatorClick(index)" 
+      :class="[index === activeIndex ? prefixCls + '-carousel-active'  : '']">
     </li>
+    </transition-group>
   </ol>
-  <div class="{{prefixCls}}-carousel-inner">
+  <div :class="`${prefixCls}-carousel-inner`">
     <slot></slot>
   </div>
-  <a v-show="controls" class="{{prefixCls}}-carousel-left {{prefixCls}}-carousel-control" @click="prevClick">
+  <a v-show="controls" :class="`${prefixCls}-carousel-left ${prefixCls}-carousel-control`" @click="prevClick">
     <n3-icon type="chevron-left"></n3-icon>
   </a>
-  <a v-show="controls" class="{{prefixCls}}-carousel-right {{prefixCls}}-carousel-control" @click="nextClick">
+  <a v-show="controls" :class="`${prefixCls}-carousel-right ${prefixCls}-carousel-control`" @click="nextClick">
     <n3-icon type="chevron-right"></n3-icon>
   </a>
 </div>
@@ -25,6 +27,7 @@ import n3Icon from './n3Icon'
 import element from './utils/element'
 
 export default {
+  name: 'n3Carousel',
   props: {
     indicators: {
       type: Boolean,
@@ -108,18 +111,19 @@ export default {
       this.activeIndex === 0 ? this.activeIndex = this.slider.length - 1 : this.activeIndex -= 1
     }
   },
-  ready () {
-    let el = this.$el
-    let self = this
-
-    function intervalManager (flag, func, time) {
-      flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID)
-    }
-    if (this.interval) {
-      intervalManager(true, this.nextClick, this.interval)
-      el.addEventListener('mouseenter', () => intervalManager(false))
-      el.addEventListener('mouseleave', () => intervalManager(true, this.nextClick, this.interval))
-    }
+  mounted () {
+    this.$nextTick(() => {
+      let el = this.$el
+      let self = this
+      function intervalManager (flag, func, time) {
+        flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID)
+      }
+      if (this.interval > 0) {
+        intervalManager(true, this.nextClick, this.interval)
+        el.addEventListener('mouseenter', () => intervalManager(false))
+        el.addEventListener('mouseleave', () => intervalManager(true, this.nextClick, this.interval))
+      }
+    })
   },
   beforeDestroy () {
     if (this.intervalID) clearInterval(this.intervalID)

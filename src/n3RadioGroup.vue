@@ -1,36 +1,12 @@
 <template>
-<div class="{{prefixCls}}-btn-group {{prefixCls}}-radio-group">
-    <template v-if="options">
-        <n3-radio 
-          v-if="type==='checkbox'" 
-          v-for="item in options"
-          :value="item.value"
-          :checked="item.checked"
-          :disabled="item.disabled">
-          {{item.label}}
-        </n3-radio>
-
-         <n3-radio-btn 
-         v-if="type==='button'" 
-         v-for="item in options"
-         :value="item.value"
-         :checked="item.checked"
-         :disabled="item.disabled">
-         {{item.label}}
-        </n3-radio-btn>
-
-    </template>
-    <template v-else>
+<div :class="`${prefixCls}-btn-group ${prefixCls}-radio-group`">
     <slot></slot>
-    </template>
 
     <validate
       :name="name"
       :rules="rules"
-      :valid-status.sync="validStatus"
       :custom-validate="customValidate" 
-      :value="value"
-      :results.sync="validateResults">
+      :current="value">
     </validate>
 
   </div>
@@ -40,11 +16,13 @@
 import n3Radio from './n3Radio'
 import n3RadioBtn from './n3RadioBtn'
 import valMixin from './valMixin'
+import events from './utils/events'
 import validate from './validate'
 import type from './utils/type'
 
 export default {
-  mixins: [valMixin],
+  name: 'n3RadioGroup',
+  mixins: [valMixin, events],
   props: {
     value: {
       type: String,
@@ -54,51 +32,53 @@ export default {
       type: String,
       default: 'checkbox'
     },
-    options: {
-      type: Array
-    },
-    onChange: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
     }
   },
+  data () {
+    return {
+      currentValue: this.value
+    }
+  },
   methods: {
     init (val) {
       if (!type.isUndefined(val)) {
-        this.value = val
+        this.currentValue = val
       } else {
         let children = this.$children
         let ret
         children.forEach((item) => {
-          item.checked ? ret = item.value : ''
+          item.currentChecked ? ret = item.label : ''
         })
-        this.value = ret
+        this.currentValue = ret
       }
-    }
-  },
-  events: {
-    'n3@radioChange' (val) {
-      this.init(val)
     }
   },
 
   watch: {
-    value () {
-      this.$broadcast('n3@radiogroupChange', this.value)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.value)
-      }
+    value (val) {
+      this.currentValue = val
     },
-    options () {
-      this.init()
+    currentValue (val) {
+      this.broadcast('n3Radio', 'n3@radiogroupChange', val)
+      this.broadcast('n3RadioBtn', 'n3@radiogroupChange', val)
+      this.$emit('input', val)
+      this.$emit('change', val)
     }
   },
 
-  ready () {
-    this.init()
+  created () {
+    this.$on('n3@radioChange', (val) => {
+      this.init(val)
+    })
+  },
+
+  mounted () {
+    this.$nextTick(() => {
+      this.init()
+    })
   },
 
   components: {

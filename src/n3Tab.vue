@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  name: 'n3Tab',
   props: {
     header: {
       type: String
@@ -26,8 +27,7 @@ export default {
   },
   data () {
     return {
-      index: 0,
-      show: false
+      index: 0
     }
   },
   computed: {
@@ -53,13 +53,15 @@ export default {
       })
     }
   },
-  ready () {
-    for (var c in this.$parent.$children) {
-      if (this.$parent.$children[c].$el == this.$el) {
-        this.index = c
-        break
+  mounted () {
+    this.$nextTick(() => {
+      for (var c in this.$parent.$children) {
+        if (this.$parent.$children[c].$el == this.$el) {
+          this.index = c
+          break
+        }
       }
-    }
+    })
   }
 }
 </script>

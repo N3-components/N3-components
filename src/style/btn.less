@@ -10,7 +10,7 @@
   user-select: none;
   background-image: none;
   border: 1px solid transparent;
-  transition:all 0.2s ease;
+  transition:background 0.2s ease,box-shadow 0.2s ease;
 
   &:focus,
   &:active:focus,
@@ -42,8 +42,8 @@
     color: @fontColor;
     background-clip: padding-box;
     background-color: @whiteColor;
-    border-color: @grayColor;
-    
+    border-color: rgba(150, 160, 180, 0.3);
+
     &:hover,
     &:focus,
     &:active,

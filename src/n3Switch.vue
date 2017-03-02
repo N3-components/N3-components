@@ -1,29 +1,31 @@
 <template>
 <div class="inline">
+  <input 
+    v-show="false"
+    type="checkbox"
+    v-model="currentValue"/>   
   <div  :class="classObj" @click="toggle">
-    <div class="{{prefixCls}}-switch-container {{prefixCls}}-switch-on-primary {{prefixCls}}-switch-off-default">
-      <span class="{{prefixCls}}-switch-handle-on {{prefixCls}}-switch-primary" >{{ontext}}</span>
-      <span class="{{prefixCls}}-switch-label" >&nbsp;</span>
-      <span class="{{prefixCls}}-switch-handle-off {{prefixCls}}-switch-default" >{{offtext}}</span>
+    <div :class="`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`">
+      <span :class="`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`" >{{ontext}}</span>
+      <span :class="`${prefixCls}-switch-label`" >&nbsp;</span>
+      <span :class="`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`" >{{offtext}}</span>
     </div>
   </div>
   <validate
     :name="name"
     :rules="rules"
-    :valid-status.sync="validStatus"
     :custom-validate="customValidate" 
-    :value="value"
-    :results.sync="validateResults">
+    :current="value">
   </validate>
 <div>
 </template>
 
 <script>
-import type from './utils/type'
 import valMixin from './valMixin'
 import validate from './validate'
 
 export default {
+  name: 'n3Switch',
   mixins: [valMixin],
   props: {
     value: {
@@ -42,9 +44,6 @@ export default {
       type: String,
       default: 'OFF'
     },
-    onChange: {
-      type: Function
-    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -52,6 +51,11 @@ export default {
   },
   components: {
     validate
+  },
+  data () {
+    return {
+      currentValue: this.value
+    }
   },
   computed: {
     classObj () {
@@ -62,10 +66,8 @@ export default {
       klass[prefixCls + '-switch-wrapper'] = true
       klass[prefixCls + '-switch-on'] = value
       klass[prefixCls + '-switch-off'] = !value
-      klass[prefixCls + '-switch-id-switch-check-on'] = value && disabled
-      klass[prefixCls + '-switch-id-switch-check-off'] = !(value && disabled)
       klass[prefixCls + '-switch-animate'] = true
-      klass[prefixCls + '-switch-id-switch-check-disabled'] = disabled
+      klass[prefixCls + '-switch-disabled'] = disabled
 
       return klass
     }
@@ -73,10 +75,9 @@ export default {
   methods: {
     toggle () {
       if (this.disabled) return
-      this.value = !this.value
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.value)
-      }
+      this.currentValue = !this.currentValue
+      this.$emit('input', this.currentValue)
+      this.$emit('change', this.currentValue)
     }
   }
 }

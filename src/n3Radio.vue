@@ -1,33 +1,32 @@
 <template>
-<label class="{{prefixCls}}-radio-con">
+<label :class="`${prefixCls}-radio-con`">
   <span :class="wrapClasses">
-    <span class="{{prefixCls}}-radio-inner"></span> 
+    <span :class="`${prefixCls}-radio-inner`"></span> 
     <input 
     type="radio" 
     :disabled="disabled"
-    :checked="checked"
-    class="{{prefixCls}}-radio-input" 
+    :checked="currentChecked"
+    :class="`${prefixCls}-radio-input`" 
     @click.prevent="handleClick" >
   </span>
   <span><slot></slot></span>
   <validate
     :name="name"
     :rules="rules"
-    :valid-status.sync="validStatus"
     :custom-validate="customValidate" 
-    :value="checked"
-    :results.sync="validateResults">
+    :current="checked">
   </validate>
 </label>
 </template>
 
 <script>
-import type from './utils/type'
 import valMixin from './valMixin'
+import events from './utils/events'
 import validate from './validate'
 
 export default {
-  mixins: [valMixin],
+  name: 'n3Radio',
+  mixins: [valMixin, events],
   props: {
     value: {
       type: String
@@ -37,12 +36,12 @@ export default {
       default: false,
       twoway: true
     },
+    label: {
+      type: [String, Number]
+    },
     disabled: {
       type: Boolean,
       default: false
-    },
-    onChange: {
-      type: Function
     },
     prefixCls: {
       type: String,
@@ -52,31 +51,52 @@ export default {
   components: {
     validate
   },
-  events: {
-    'n3@radiogroupChange' (val) {
-      this.checked = val === this.value
+  data () {
+    let checked = this.checked
+    if (checked !== undefined) {
+      this.$emit('input', checked)
+    } else {
+      checked = !!this.value
+    }
+
+    return {
+      currentChecked: checked
     }
   },
   computed: {
     wrapClasses () {
       let klass = {}
-      let {prefixCls, checked, disabled} = this
+      let {prefixCls, currentChecked, disabled} = this
 
       klass[prefixCls + '-radio-span'] = true
-      klass[prefixCls + '-radio-checked'] = checked
+      klass[prefixCls + '-radio-checked'] = currentChecked
       klass[prefixCls + '-radio-disabled'] = disabled
 
       return klass
     }
   },
+  watch: {
+    value (val) {
+      this.currentChecked = val
+    },
+    checked (val) {
+      this.currentChecked = val
+    },
+    currentChecked (val) {
+      this.$emit('input', val)
+    }
+  },
+  created () {
+    this.$on('n3@radiogroupChange', (val) => {
+      this.currentChecked = val === this.label
+    })
+  },
   methods: {
     handleClick () {
-      if (this.checked) return
-      this.checked = true
-      this.$dispatch('n3@radioChange', this.value)
-      if (type.isFunction(this.onChange)) {
-        this.onChange(this.checked)
-      }
+      if (this.currentChecked) return
+      this.currentChecked = true
+      this.dispatch('n3RadioGroup', 'n3@radioChange', this.label)
+      this.$emit('change', this.currentChecked)
     }
   }
 }

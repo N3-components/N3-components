@@ -1,11 +1,11 @@
 <template>
 <span>
-  <n3-dropdown :trigger="trigger" :show.sync="show" :click-close="true" effect="collapse">
-    <div slot="trigger"   class="{{prefixCls}}-sub-nav-trigger" >
+  <n3-dropdown :trigger="trigger" :show="show" :click-close="true" effect="collapse" @show="$emit('show')" @hide="$emit('hide')" @toggle="$emit('toggle')">
+    <div slot="trigger" :class="`${prefixCls}-sub-nav-trigger`" >
       <slot name="title"></slot>
-      <n3-icon class="{{prefixCls}}-sub-nav-fa" :type="show ? 'angle-up' : 'angle-down'" ></n3-icon>
+      <n3-icon :class="`${prefixCls}-sub-nav-fa`" :type="show ? 'angle-up' : 'angle-down'"></n3-icon>
     </div>
-    <slot></slot>  
+    <slot></slot>
   </n3-dropdown>
 </span>
 </template>
@@ -14,6 +14,7 @@ import n3Dropdown from './n3Dropdown'
 import n3Icon from './n3Icon'
 
 export default{
+  name: 'n3SubNav',
   props: {
     trigger: {
       type: String,
@@ -21,7 +22,6 @@ export default{
     },
     show: {
       type: Boolean,
-      twoWay: true,
       default: false
     },
     prefixCls: {

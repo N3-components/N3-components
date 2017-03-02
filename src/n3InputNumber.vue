@@ -1,13 +1,13 @@
 <template>
 <div :class="classObj" :style="{width: width}">
-  <div class="{{prefixCls}}-input-number-handler-wrap">
+  <div :class="`${prefixCls}-input-number-handler-wrap`">
     <a unselectable="unselectable"
       ref="up"
       @click="_up"
       @mouse.down="preventDefault"
       :class="[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]">
         <n3-icon
-          class="{{prefixCls}}-input-number-handler-up-inner" 
+          :class="`${prefixCls}-input-number-handler-up-inner`" 
           type="angle-up" 
           @click="preventDefault" 
           unselectable="unselectable">
@@ -19,7 +19,7 @@
        @click="_down"
        :class="[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]">
        <n3-icon
-          class="{{prefixCls}}-input-number-handler-down-inner" 
+          :class="`${prefixCls}-input-number-handler-down-inner`" 
           type="angle-down" 
           @click="preventDefault" 
           unselectable="unselectable">
@@ -28,20 +28,18 @@
   </div>
   <div :class="prefixCls + '-input-number-input-wrap'">
     <n3-input
-      :on-focus="onFocus"
-      :on-blur="onBlur" 
+      @focus="_onFocus"
       :width="width"
       :rules="rules" 
-      :validate="validate"
       :placeholder="placeholder"
       :custom-validate="customValidate"
-      :on-blur="_onBlur"
-      @keydown.stop="_onKeyDown"
-      :on-change="_onChange"
+      @blur="_onBlur"
+      @keydown.native.stop="_onKeyDown"
+      @change="_onChange"
       :readonly="readonly"
       :disabled="disabled"
       :name="name"
-      :value.sync="value">
+      :value="currentValue">
     </n3-input> 
   </div>
 </div>
@@ -51,7 +49,6 @@
 import n3Input from './n3Input'
 import n3Icon from './n3Icon'
 import inputMixin from './inputMixin'
-import type from './utils/type'
 
 function isValueNumber (value) {
   return !isNaN(Number(value))
@@ -84,6 +81,7 @@ function preventDefault (e) {
 }
 
 export default {
+  name: 'n3InputNumber',
   mixins: [inputMixin],
   props: {
     prefixCls: {
@@ -97,8 +95,7 @@ export default {
       type: Number
     },
     value: {
-      type: [Number, String],
-      twoway: true
+      type: [Number, String]
     },
     step: {
       type: Number,
@@ -106,15 +103,30 @@ export default {
     },
     onChange: {
       type: Function
+    },
+    readonly: {
+      type: Boolean,
+      default: false
     }
   },
 
   data () {
+    let value = this.value
+    if (value < this.min) {
+      this.$emit('input', this.min)
+      value = this.min
+    }
+    if (value > this.max) {
+      this.$emit('input', this.max)
+      value = this.max
+    }
+
     return {
       noop: () => {},
       preventDefault: preventDefault,
       upDisabledClass: '',
-      downDisabledClass: ''
+      downDisabledClass: '',
+      currentValue: value
     }
   },
 
@@ -138,6 +150,9 @@ export default {
   },
 
   watch: {
+    currentValue (val) {
+      this.$emit('input', val)
+    },
     value (val) {
       if (isValueNumber(val)) {
         val = Number(val)
@@ -158,10 +173,8 @@ export default {
 
   methods: {
     _setValue (value) {
-      this.value = value
-      if (type.isFunction(this.onChange)) {
-        this.onChange(value)
-      }
+      this.currentValue = value
+      this.$emit('change', value)
     },
 
     _onChange (value) {
@@ -176,7 +189,7 @@ export default {
         this._setValue(val)
       } else if (val === '-') {
         if (this.min >= 0) return
-        this.value = val
+        this.currentValue = val
       }
     },
 
@@ -188,10 +201,15 @@ export default {
       }
     },
 
+    _onFocus () {
+      this.$emit('focus')
+    },
+
     _onBlur () {
       if (this.value === '-') {
         this._setValue('')
       }
+      this.$emit('blur')
     },
 
     _step (type, e) {
@@ -206,9 +224,7 @@ export default {
 
       if (value > this.max || value < this.min) return
 
-      this._setValue(value, () => {
-        this.focused = true
-      })
+      this._setValue(value)
     },
 
     _down (e) {

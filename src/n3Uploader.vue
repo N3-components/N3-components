@@ -1,5 +1,5 @@
 <template>
-  <div :class="[prefixCls + '-upload']" id="upload-{{uploadId}}">
+  <div :class="[prefixCls + '-upload']" :id="`upload-${uploadId}`">
     <div v-if="type === 'click'">
       <label>
         <input
@@ -16,7 +16,7 @@
           </n3-button>
         </slot>
       </label>
-      <div :class="[prefixCls + '-upload-list']"  v-if="showList">
+      <div :class="[prefixCls + '-upload-list']" v-if="showList">
         <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
           <div :class="[prefixCls + '-upload-item-info']">
             <n3-icon type="file-text-o"
@@ -25,7 +25,7 @@
             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
             <n3-icon type="times"
               :class="[prefixCls + '-upload-del-info']"
-              @click="delFile($index)">
+              @click.native="delFile($index)">
             </n3-icon>
           </div>
           <n3-progress style="padding:0px 4px">
@@ -40,7 +40,7 @@
     </div>
     <div v-if="type === 'drag'"
          :class="[prefixCls + '-upload-drag']">
-      <div
+      <div 
         :class="[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]"
         :style="{width:dragWidth,height:dragHeight}">
         <input type="file"
@@ -85,10 +85,9 @@
   import n3Button from './n3Button'
   import n3Progress from './n3Progress'
   import n3Progressbar from './n3Progressbar'
-  import n3Toast from './n3ToastMethod'
-  import type from './utils/type'
 
   export default {
+    name: 'n3Uploader',
     props: {
       name: {
         type: String,
@@ -118,37 +117,13 @@
         type: String,
         default: '200px'
       },
-      onError: {
-        type: Function,
-        default (data) {
-          n3Toast({
-            text: data.message
-          })
-        }
-      },
-      onSuccess: {
-        type: Function
-      },
-      onFinish: {
-        type: Function
-      },
-      onDelete: {
-        type: Function
+      showList: {
+        type: Boolean,
+        default: true
       },
       maxLength: {
         type: Number,
         default: 10
-      },
-      showList: {
-        type: Boolean,
-        default: false
-      },
-      uploadList: {
-        type: Array,
-        twoway: true,
-        default () {
-          return []
-        }
       },
       params: {
         type: Object
@@ -164,6 +139,7 @@
         uploadId: 'upload' + Date.now() + Math.floor(Math.random() * 100),
         percent: 0,
         xhr: 'FormData' in window,
+        uploadList: [],
         progress: [],
         dragover: false,
         states: []
@@ -181,11 +157,13 @@
       n3Progressbar,
       n3Progress
     },
-    ready () {
-      this._input = document.querySelector('#' + this.uploadId)
-      this.$el = document.querySelector('#upload-' + this.uploadId)
+    mounted () {
+      this.$nextTick(() => {
+        this._input = document.querySelector('#' + this.uploadId)
+        this.$el = document.querySelector('#upload-' + this.uploadId)
 
-      this.advanceDrag && this.addDragEvt()
+        this.advanceDrag && this.addDragEvt()
+      })
     },
     beforeDestroy () {
       let events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter']
@@ -249,7 +227,6 @@
                   data.append(name, self.params[name])
                 }
               }
-
               // 跨域时 添加身份凭证信息
               let xhr = new window.XMLHttpRequest()
               xhr.withCredentials = true
@@ -285,8 +262,8 @@
 
       iframeUpload () {
         let i = 0
-        let len = this.uploadList.length
         let self = this
+        let len = this.uploadList.length
         if (this.testSameOrigin(this.url)) {
           for (i = 0; i < len; i++) {
             let iframeName = 'uploadiframe-' + i + '-' + new Date().getTime()
@@ -349,34 +326,28 @@
           }
           if (data) {
             this.states[index] = true
-            if (type.isFunction(this.onSuccess)) {
-              this.onSuccess({
-                response: data,
-                file: this.uploadList[index]
-              })
-            }
+            this.$emit('success', {
+              response: data,
+              file: this.uploadList[index]
+            })
           }
         }
-        if (Object.keys(this.states).length === len && type.isFunction(this.onFinish)) {
-          this.onFinish()
+        if (Object.keys(this.states).length === len) {
+          this.$emit('finish')
         }
       },
 
       setError (message, index) {
-        if (type.isFunction(this.onError)) {
-          this.onError({
-            message: message,
-            file: index && this.uploadList[index] || null
-          })
-        }
+        this.$emit('error', {
+          message: message,
+          file: index && this.uploadList[index] || null
+        })
         this.states[index] = false
         index > -1 && this.uploadList.splice(index, 1)
       },
 
       delFile (index) {
-        if (type.isFunction(this.onDelete)) {
-          this.onDelete(this.uploadList[index])
-        }
+        this.$emit('delete', this.uploadList[index])
         this.uploadList.splice(index, 1)
         this.states.splice(index, 1)
         this.progress.splice(index, 1)

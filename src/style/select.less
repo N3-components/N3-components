@@ -1,11 +1,35 @@
 .@{prefix-cls}-select-group{
 
-  .@{prefix-cls}-select-search input{
-    border: 0px;
-    border-bottom: 1px solid @lightGrayColor;
+  .@{prefix-cls}-selected-tag {
+    background: @lightColor;
+    padding: @selectTag;
+    margin-right: 5px;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    transition: all .24s ease;
+    &:hover{
+      background: @lightGrayColor;
+    }
+    &:after{
+      content: "\F00D";
+      font: normal normal normal 14px/1 FontAwesome;
+      margin-left: 5px;
+      color: @grayColor;
+    }
+  }
+  .@{prefix-cls}-select-multiple {
+    padding: @selectMultiple!important;
+  }
+  .@{prefix-cls}-select-btn:hover {
+    color:@fontColor!important;
   }
 
-
+  .@{prefix-cls}-select-search{
+    border: 0px;
+    outline: none;
+    padding: @selectPadding;
+    border-bottom: 1px solid @lightGrayColor;
+  }
 
   .@{prefix-cls}-dropdown-menu{
     display: block;
@@ -32,10 +56,11 @@
     .@{prefix-cls}-fa-plus-square-o {
       font-size: 20px;
       position: absolute;
-      top: 11px;
-      right: 15px;
+      top: 7px;
+      right: 10px;
     }
     .@{prefix-cls}-select-all{
+      position: relative;
       border-bottom: 1px solid @lightGrayColor;
       a {
         cursor: pointer;
@@ -44,10 +69,21 @@
   }
 
   .@{prefix-cls}-dropdown-toggle{
-    overflow: hidden;
-    word-break: break-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: @selectPadding; 
+    & > i {
+      position: absolute;
+      right: @selectArrowLeft;
+      top: 50%;
+      margin-top: -7px;
+    }
+    & > span{
+      display: flex; 
+      flex-wrap: wrap; 
+      align-items: flex-start; 
+    }
   }
   
 }

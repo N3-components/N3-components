@@ -2,22 +2,21 @@
 <div>
   <div>
     <header-docs class="freeze" :active="type"></header-docs>
-    <n3-container class="bs-docs-container" v-if="type === 'base' || type === 'ant'">
+    <n3-container class="bs-docs-container" v-if="type === 'base'">
       <n3-row >
         <n3-column :col="2">
           <input placeholder="搜索" v-model="search" class="searchCom" ></input>
           <n3-nav type="vertical" >
-             <n3-nav-item v-for="(index,item) in list">
-              <n3-sub-nav  :show.sync="item.show" >
-                <a slot="title" style="color:#333">{{index}}</a>
-                <n3-nav-item v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
-                  <a>{{i.label}}</a>
+             <n3-nav-item v-for="(item, index) in list">
+              <n3-sub-nav :show="item.show" @toggle="handleToggle(item)">
+                <a slot="title" style="color:#333" v-text="index"></a>
+                <n3-nav-item v-for="i in item.list" :active="component == i.value" @click.native="change(i.value)">
+                  <a v-text="i.label"></a>
                 </n3-nav-item>
               </n3-sub-nav>
             </n3-nav-item>
           </n3-nav>
         </n3-column>
-        
         <n3-column :col="10">
           <component :is="component" ></component>
         </n3-column>
@@ -29,7 +28,7 @@
   </div>
   <footer class="bs-docs-footer">
     <n3-container >
-       <ul>
+      <ul>
         <li><span>Email:</span>zhangking520@gmail.com</li>
         <li><span>Github:</span><a href="https://github.com/N3-components/N3-components">Repository</a></li>
         <li><span>QQ Group:</span>556286036</li>
@@ -44,49 +43,49 @@ require('../js/showLanguage')
 
 import prismjs from 'prismjs'
 import headerDocs from './headerDocs.vue'
-import n3LayoutDocs from './n3LayoutDocs.vue'
-import n3IconDocs from './n3IconDocs.vue'
-import n3TagsDocs from './n3TagsDocs.vue'
-import n3AlertDocs from './n3AlertDocs.vue'
-import n3AccordionDocs from './n3AccordionDocs.vue'
-import n3CascaderDocs from './n3CascaderDocs.vue'
-import n3AffixDocs from './n3AffixDocs.vue'
-import n3AsideDocs from './n3AsideDocs.vue'
-import n3CarouselDocs from './n3CarouselDocs.vue'
-import n3ButtonsDocs from './n3ButtonsDocs.vue'
-import n3ToastDocs from './n3ToastDocs.vue'
-import n3DatepickerDocs from './n3DatepickerDocs.vue'
-import n3TimepickerDocs from './n3TimepickerDocs.vue'
-import n3DatetimepickerDocs from './n3DatetimepickerDocs.vue'
-import n3DropdownDocs from './n3DropdownDocs.vue'
-import n3ModalDocs from './n3ModalDocs.vue'
-import n3InputDocs from './n3InputDocs.vue'
-import n3InputNumberDocs from './n3InputNumberDocs.vue'
-import n3TextareaDocs from './n3TextareaDocs.vue'
-import n3NavDocs from './n3NavDocs.vue'
-import n3PopoverDocs from './n3PopoverDocs.vue'
-import n3ProgressbarDocs from './n3ProgressbarDocs.vue'
-import n3SelectDocs from './n3SelectDocs.vue'
-import n3SwitchDocs from './n3SwitchDocs.vue'
-import n3TimelineDocs from './n3TimelineDocs.vue'
-import n3TabsDocs from './n3TabsDocs.vue'
-import n3TooltipDocs from './n3TooltipDocs.vue'
-import n3TypeaheadDocs from './n3TypeaheadDocs.vue'
-import n3StepDocs from './n3StepDocs.vue'
-import n3SliderDocs from './n3SliderDocs.vue'
-import n3LoadingDocs from './n3LoadingDocs.vue'
-import n3SimplePaginationDocs from './n3SimplePaginationDocs.vue'
-import n3PageDocs from './n3PageDocs.vue'
-import n3DataTableDocs from './n3DataTableDocs.vue'
-import n3BreadcrumbDocs from './n3BreadcrumbDocs.vue'
-import n3MultipleInputDocs from './n3MultipleInputDocs.vue'
-import n3TreeDocs from './n3TreeDocs.vue'
-import n3UploaderDocs from './n3UploaderDocs.vue'
-import n3FormDocs from './n3FormDocs.vue'
-import n3CheckboxDocs from './n3CheckboxDocs.vue'
-import n3RadioDocs from './n3RadioDocs.vue'
-import n3CardDocs from './n3CardDocs.vue'
-import n3AnimateDocs from './n3AnimateDocs.vue'
+import n3LayoutDocs from './n3LayoutDocs.md'
+import n3IconDocs from './n3IconDocs.md'
+import n3TagsDocs from './n3TagsDocs.md'
+import n3AlertDocs from './n3AlertDocs.md'
+import n3AccordionDocs from './n3AccordionDocs.md'
+import n3CascaderDocs from './n3CascaderDocs.md'
+import n3AffixDocs from './n3AffixDocs.md'
+import n3AsideDocs from './n3AsideDocs.md'
+import n3CarouselDocs from './n3CarouselDocs.md'
+import n3ButtonsDocs from './n3ButtonsDocs.md'
+import n3ToastDocs from './n3ToastDocs.md'
+import n3DatepickerDocs from './n3DatepickerDocs.md'
+import n3TimepickerDocs from './n3TimepickerDocs.md'
+import n3DatetimepickerDocs from './n3DatetimepickerDocs.md'
+import n3DropdownDocs from './n3DropdownDocs.md'
+import n3ModalDocs from './n3ModalDocs.md'
+import n3InputDocs from './n3InputDocs.md'
+import n3InputNumberDocs from './n3InputNumberDocs.md'
+import n3TextareaDocs from './n3TextareaDocs.md'
+import n3NavDocs from './n3NavDocs.md'
+import n3PopoverDocs from './n3PopoverDocs.md'
+import n3ProgressbarDocs from './n3ProgressbarDocs.md'
+import n3SelectDocs from './n3SelectDocs.md'
+import n3SwitchDocs from './n3SwitchDocs.md'
+import n3TimelineDocs from './n3TimelineDocs.md'
+import n3TabsDocs from './n3TabsDocs.md'
+import n3TooltipDocs from './n3TooltipDocs.md'
+import n3TypeaheadDocs from './n3TypeaheadDocs.md'
+import n3StepDocs from './n3StepDocs.md'
+import n3SliderDocs from './n3SliderDocs.md'
+import n3LoadingDocs from './n3LoadingDocs.md'
+import n3PageDocs from './n3PageDocs.md'
+import n3DataTableDocs from './n3DataTableDocs.md'
+import n3BreadcrumbDocs from './n3BreadcrumbDocs.md'
+import n3MultipleInputDocs from './n3MultipleInputDocs.md'
+import n3TreeDocs from './n3TreeDocs.md'
+import n3RateDocs from './n3RateDocs.md'
+import n3UploaderDocs from './n3UploaderDocs.md'
+import n3FormDocs from './n3FormDocs.md'
+import n3CheckboxDocs from './n3CheckboxDocs.md'
+import n3RadioDocs from './n3RadioDocs.md'
+import n3CardDocs from './n3CardDocs.md'
+import n3AnimateDocs from './n3AnimateDocs.md'
 
 export default{
   props: {
@@ -97,7 +96,7 @@ export default{
   data () {
     var map, component
 
-    if (this.type === 'base' || this.type === 'ant') {
+    if (this.type === 'base') {
       map = {
         '基本': {show: true,
                 list: [{label: '布局', value: 'n3LayoutDocs'},
@@ -137,6 +136,7 @@ export default{
                  {label: '幻灯片', value: 'n3CarouselDocs'},
                  {label: '数据表格', value: 'n3DataTableDocs'},
                  {label: '下拉框', value: 'n3DropdownDocs'},
+                 {label: '评分', value: 'n3RateDocs'},
                  {label: '弹出框', value: 'n3ModalDocs'},
                  {label: '进度条', value: 'n3ProgressbarDocs'},
                  {label: '标签', value: 'n3TagsDocs'},
@@ -147,7 +147,6 @@ export default{
         '导航': {show: true,
                 list: [{label: '导航', value: 'n3NavDocs'},
                  {label: '面包屑', value: 'n3BreadcrumbDocs'},
-                 {label: '简易分页', value: 'n3SimplePaginationDocs'},
                  {label: '分页', value: 'n3PageDocs'},
                  {label: '标签页', value: 'n3TabsDocs'}]},
 
@@ -169,19 +168,15 @@ export default{
     search (val) {
       let ret = {}
       let map = this.map
-
       for (let i in map) {
         let show = map[i].show
         let list = map[i].list
-
         let t = list.filter((i) => {
           let v = val.toLowerCase()
           let label = i.label
           let value = i.value.toLowerCase().replace('Docs', '').replace('n3', '')
-
           return label.indexOf(v) > -1 || value.indexOf(v) > -1
         })
-
         if (t.length) {
           ret[i] = {
             show: show,
@@ -189,30 +184,42 @@ export default{
           }
         }
       }
-
       this.list = ret
     }
   },
   methods: {
+    handleToggle (item) {
+      item.show = !item.show
+    },
     change (value) {
       this.component = value
       window.location.hash = value
     },
-    init () {
+    init () {      
       var hash = window.location.hash
       hash = hash.substr(1, hash.length)
       if (hash) {
         this.component = hash
-        this.$nextTick(() => {
+        setTimeout(() => {
           prismjs.highlightAll()
+          document.querySelectorAll('table').forEach(i => {
+            i.classList.add('table', 'table-bordered')
+          })
         })
       }
     }
   },
-  ready () {
+  mounted () {
     this.list = this.map
     this.init()
     window.onhashchange = this.init
+
+    setTimeout(() => {
+      prismjs.highlightAll()
+      document.querySelectorAll('table').forEach(i => {
+        i.classList.add('table', 'table-bordered')
+      })
+    })
   },
   components: {
     headerDocs,
@@ -230,6 +237,7 @@ export default{
     n3ButtonsDocs,
     n3DatepickerDocs,
     n3TimepickerDocs,
+    n3RateDocs,
     n3DatetimepickerDocs,
     n3InputNumberDocs,
     n3UploaderDocs,
@@ -249,7 +257,6 @@ export default{
     n3ProgressbarDocs,
     n3TimelineDocs,
     n3LoadingDocs,
-    n3SimplePaginationDocs,
     n3PageDocs,
     n3SliderDocs,
     n3CascaderDocs,
@@ -275,10 +282,11 @@ export default{
   .searchCom{
     width: 100%;
     border: 0px;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #f9f9f9;
     padding: 5px 10px;
     margin-top: 10px;
     outline: none;
+    border-radius: 20px;
   }
 
 </style>

@@ -1,10 +1,11 @@
 <template>
-	<ol class="{{prefixCls}}-breadcrumb">
+	<ol :class="`${prefixCls}-breadcrumb`">
 		<slot></slot>
 	</ol>
 </template>
 <script>
-	export default{
+	export default {
+		name: 'n3Breadcrumb',
 	  props: {
 	    prefixCls: {
 	      type: String,

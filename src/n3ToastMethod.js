@@ -2,8 +2,10 @@ import Vue from 'vue'
 const n3Toast = Vue.extend(require('./n3Toast'))
 
 export default function (obj) {
+  const domNode = document.createElement('div')
+  document.body.appendChild(domNode)
   let instance = new n3Toast({
-    el: document.createElement('div')
+    el: domNode
   })
 
   instance.placement = obj.placement || 'center'
@@ -13,14 +15,15 @@ export default function (obj) {
   instance.width = obj.width
   instance.text = obj.text
 
-  Vue.nextTick(() => {
-    instance.$appendTo(document.body)
-    instance.show = true
-    if (instance.duration > 0) {
-      setTimeout(() => {
-        instance.$remove()
-      }, instance.duration)
-    }
-  })
+  instance.show = true
+
+  if (instance.duration > 0) {
+    setTimeout(() => {
+      instance.show = false
+      Vue.nextTick(() => {
+        instance.$destroy()
+      })
+    }, instance.duration)
+  }
 }
 

@@ -1,7 +1,7 @@
 N3-components - Powerful Vue Library.
 =========================
 
-[![Shippable branch](https://img.shields.io/shippable/5444c5ecb904a4b21567b0ff/master.svg?maxAge=2592000)]()
+[![Shippable branch](https://img.shields.io/shippable/5444c5ecb904a4b21567b0ff/dev.svg?maxAge=2592000)]()
 [![Test Coverage](https://codeclimate.com/github/N3-components/N3-components/badges/coverage.svg)](https://codeclimate.com/github/N3-components/N3-components/coverage)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
 [![Code Climate](https://codeclimate.com/github/N3-components/N3-components/badges/gpa.svg)](https://codeclimate.com/github/N3-components/N3-components)
@@ -9,7 +9,7 @@ N3-components - Powerful Vue Library.
 
 N3 components library is built with Vue.js, is a powerful library for frontend or full-stack engineers to build web pages quickly.
 
-[Home Page](http:/n3ui.org) | [中文说明](https://github.com/N3-components/N3-components/blob/master/README-zh.md) | [Documents](http:/n3ui.org)
+[Home Page](http:/n3ui.org/) | [中文说明](https://github.com/N3-components/N3-components/blob/dev/README-zh.md) | [Documents](http:/n3ui.org/v2.html)
 
 Introduction
 ------------
@@ -18,7 +18,7 @@ Introduction
 
 N3 components applys oneself to structure a great ecological circle of developers using Vue.js. Supporting as follows:
 
-* More than 60 components. [See Here](https://github.com/N3-components/N3-components/tree/master/src)
+* More than 60 components. [See Here](https://github.com/N3-components/N3-components/tree/dev/src)
 
 * Personality Of Style.
 
@@ -31,8 +31,22 @@ NPM
 Link：[https://www.npmjs.com/package/N3-components](https://www.npmjs.com/package/N3-components)
 
 ```bash
-npm install N3-components
+npm install N3-components --save-dev
 ```
+
+CNPM
+------------
+
+Link：[https://npm.taobao.org/package/N3-components](https://npm.taobao.org/package/N3-components)
+
+```bash
+cnpm install N3-components --save-dev
+```
+
+CDN
+------------
+
+Link：https://unpkg.com/N3-components@version/dist/N3Components.js (Notice the version)
 
 Quick Start
 ------------
@@ -41,21 +55,22 @@ You can install components for your global environment.
 
 ```javascript
 import Vue from 'vue'
+
 // default css style
 import N3Components from 'N3-components'
-// ant design css style
-// import N3Components from 'N3-components/dist/blue.min.js' 
 
-N3Components.install(Vue)
-// or
-// Vue.use(N3Components)
+// ant design css style
+import N3Components from 'N3-components/dist/blue.min.js' 
+
+Vue.use(N3Components)
 ```
 
 You can also import single component when needed.
 
 ```javascript
 import Vue from 'vue'
-import {n3Alert} from 'N3-components'
+import N3Components from 'N3-components'
+import {n3Alert} from N3Components
 ```
 
 Requirements
@@ -64,11 +79,6 @@ Requirements
 * vue
 * vue-focus
 * velocity-animate
-
-To Do List
-----------
-
-- Drawer Menu
 
 Discussing
 ----------
@@ -83,9 +93,9 @@ Discussing
 Contribute
 ---------
 
-[Contribute](https://github.com/N3-components/N3-components/blob/master/contribute.md)
+[Contribute](https://github.com/N3-components/N3-components/blob/dev/contribute.md)
 
-Change log
+Change logo
 --------
 
-[Change Log](https://github.com/N3-components/N3-components/blob/master/log.md)
+[Change Log](https://github.com/N3-components/N3-components/blob/dev/log.md)

@@ -1,8 +1,11 @@
 <template>
-  <i :class="[prefixCls + '-fa',prefixCls +'-fa-'+type]" :style="{fontSize:size,color:color}"></i>
+  <i :class="[prefixCls + '-fa',prefixCls +'-fa-'+type]" :style="{fontSize:size,color:color}">
+    <slot></slot>
+  </i>
 </template>
 <script>
 export default{
+  name: 'n3Icon',
   props: {
     type: {
       type: String
