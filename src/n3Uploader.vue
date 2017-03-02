@@ -17,7 +17,7 @@
         </slot>
       </label>
       <div :class="[prefixCls + '-upload-list']" v-if="showList">
-        <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
+        <div :class="[prefixCls + '-upload-item']" v-for="(file, index) in uploadList">
           <div :class="[prefixCls + '-upload-item-info']">
             <n3-icon type="file-text-o"
               :class="[prefixCls + '-upload-file-icon']">
@@ -25,14 +25,14 @@
             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
             <n3-icon type="times"
               :class="[prefixCls + '-upload-del-info']"
-              @click.native="delFile($index)">
+              @click.native="delFile(index)">
             </n3-icon>
           </div>
           <n3-progress style="padding:0px 4px">
             <n3-progressbar
               type="success"
               height='3px'
-              :now="progress[$index]"
+              :now="progress[index]"
             ></n3-progressbar>
           </n3-progress>
         </div>
@@ -57,7 +57,7 @@
       </label>
       </div>
       <div :class="[prefixCls + '-upload-list']" v-if="showList">
-        <div :class="[prefixCls + '-upload-item']" v-for="file in uploadList">
+        <div :class="[prefixCls + '-upload-item']" v-for="(file, index) in uploadList">
           <div :class="[prefixCls + '-upload-item-info']">
             <n3-icon type="file-text-o"
               :class="[prefixCls + '-upload-file-icon']">
@@ -65,14 +65,14 @@
             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
             <n3-icon type="times"
               :class="[prefixCls + '-upload-del-info']"
-              @click="delFile($index)">
+              @click="delFile(index)">
             </n3-icon>
           </div>
           <n3-progress style="padding:0px 4px">
             <n3-progressbar
               type="success"
               height='3px'
-              :now="progress[$index]"
+              :now="progress[index]"
             ></n3-progressbar>
           </n3-progress>
         </div>
