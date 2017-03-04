@@ -28321,7 +28321,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; // <template>
 	
-	//   <div :class="[prefixCls + '-upload']" :id="`upload-${uploadId}`">
+	//   <div :class="[prefixCls + '-upload']" ref="uploader">
 	
 	//     <div v-if="type === 'click'">
 	
@@ -28339,7 +28339,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	//           :multiple="multiple"
 	
-	//           @change="onChange($event)" />
+	//           @change="onChange($event)"
+	
+	//           ref="input"
+	
+	//         />
 	
 	//         <slot>
 	
@@ -28419,7 +28423,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	//           :multiple="multiple"
 	
-	//           @change="onChange($event)" />
+	//           @change="onChange($event)"
+	
+	//           ref="input"
+	
+	//         />
 	
 	//         <label :for="uploadId"
 	
@@ -28453,7 +28461,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	//               :class="[prefixCls + '-upload-del-info']"
 	
-	//               @click="delFile(index)">
+	//               @click.native="delFile(index)">
 	
 	//             </n3-icon>
 	
@@ -28483,6 +28491,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	// </template>
 	
+	
 	// <script>
 	
 	
@@ -28505,7 +28514,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = {
-	  name: 'n3Uploader',
+	  name: 'Uploader',
 	  props: {
 	    name: {
 	      type: String,
@@ -28515,13 +28524,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	      type: String,
 	      default: 'click'
 	    },
+	    withCredentials: {
+	      type: Boolean,
+	      default: false
+	    },
 	    accept: {
 	      type: String,
 	      default: ''
 	    },
 	    url: {
 	      type: String,
-	      default: ''
+	      required: true
 	    },
 	    multiple: {
 	      type: Boolean,
@@ -28576,163 +28589,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	    n3Progressbar: _n3Progressbar2.default,
 	    n3Progress: _n3Progress2.default
 	  },
-	  mounted: function mounted() {
-	    var _this = this;
-	
-	    this.$nextTick(function () {
-	      _this._input = document.querySelector('#' + _this.uploadId);
-	      _this.$el = document.querySelector('#upload-' + _this.uploadId);
-	
-	      _this.advanceDrag && _this.addDragEvt();
-	    });
-	  },
-	  beforeDestroy: function beforeDestroy() {
-	    var _this2 = this;
-	
-	    var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
-	    events.forEach(function (event) {
-	      _this2.$el.removeEventListener(event, function () {
-	        return _this2._eventHandler();
-	      });
-	    });
-	  },
-	
 	  methods: {
-	    onChange: function onChange(e) {
-	      var files = e.target.files;
-	
-	      if (this.maxLength && this.uploadList.length === this.maxLength) {
-	        this._input.value = '';
-	        this.setError('超过上传数量限制，请先删除再进行上传');
-	        return;
-	      }
-	
-	      if (files) {
-	        for (var i in files) {
-	          if (_typeof(files[i]) === 'object' && files[i].name) {
-	            this.progress.push(0);
-	            this.uploadList.push(files[i]);
-	          }
-	        }
-	      } else {
-	        this.progress = [0];
-	        this.uploadList = [{ name: this._input.value.replace(/^.*\\/, '') }];
-	      }
-	
-	      this.submitForm();
-	    },
-	    submitForm: function submitForm() {
-	      if (this.uploadList.length > 0) {
-	        if (this.url) {
-	          if (this.xhr) {
-	            this.xhrUpload();
-	          } else {
-	            this.iframeUpload();
-	          }
-	        }
-	      }
-	    },
-	    xhrUpload: function xhrUpload() {
-	      var self = this;
-	      var i = 0;
-	      var len = this.uploadList.length;
-	      var data = void 0;
-	      for (i = 0; i < len; i++) {
-	        if (this.states[i]) {
-	          continue;
-	        }
-	        (function (i, file) {
-	          if (file.type.match(self.accept)) {
-	            (function () {
-	              data = new window.FormData();
-	              data.append(self.name, file, file.name);
-	
-	              if (self.params) {
-	                for (var name in self.params) {
-	                  data.append(name, self.params[name]);
-	                }
-	              }
-	              // 跨域时 添加身份凭证信息
-	              var xhr = new window.XMLHttpRequest();
-	              xhr.withCredentials = true;
-	              xhr.open('post', self.url, true);
-	
-	              xhr.onload = function () {
-	                self.parseResponse(xhr.responseText, i);
-	              };
-	
-	              xhr.upload.onprogress = function (e) {
-	                var loaded = e.loaded ? e.loaded : 0;
-	                var total = e.total ? e.total : 1;
-	
-	                self.$set('progress[' + i + ']', parseInt(loaded / total * 100, 10));
-	              };
-	
-	              xhr.onerror = function () {
-	                self.states[i] = false;
-	                self.setError('上传失败了！');
-	              };
-	
-	              try {
-	                xhr.send(data);
-	              } catch (e) {
-	                self.setError('上传失败了！');
-	              }
-	            })();
-	          } else {
-	            self.setError('不支持该文件类型');
-	          }
-	        })(i, this.uploadList[i]);
-	      }
-	    },
-	    iframeUpload: function iframeUpload() {
-	      var _this3 = this;
-	
-	      var i = 0;
-	      var self = this;
-	      var len = this.uploadList.length;
-	      if (this.testSameOrigin(this.url)) {
-	        var _loop = function _loop() {
-	          var iframeName = 'uploadiframe-' + i + '-' + new Date().getTime();
-	          var iframe = document.createElement('iframe');
-	          var form = document.createElement('form');
-	          var input = document.createElement('input');
-	
-	          input.setAttribute('type', 'file');
-	          input.setAttribute('value', _this3.uploadList[i].name);
-	          iframe.setAttribute('name', iframeName);
-	          iframe.style.display = 'none';
-	          form.setAttribute('method', 'post');
-	          form.setAttribute('action', _this3.url);
-	          form.setAttribute('target', iframeName);
-	          form.setAttribute('data-index', i);
-	
-	          document.body.appendChild(form);
-	          form.appendChild(iframe);
-	          form.appendChild(input);
-	
-	          if (self.params) {
-	            for (var name in self.params) {
-	              var _input = document.createElement('input');
-	              _input.setAttribute('type', 'text');
-	              _input.setAttribute('name', name);
-	              _input.setAttribute('value', self.params[name]);
-	            }
-	          }
-	
-	          iframe.addEventListener('load', function () {
-	            _this3.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));
-	            document.body.removeChild(form);
-	          });
-	          form.submit();
-	        };
-	
-	        for (i = 0; i < len; i++) {
-	          _loop();
-	        }
-	      } else {
-	        this.setError('iframe不支持跨域请求');
-	      }
+	    setError: function setError(message, index) {
+	      this.$emit('error', {
+	        message: message,
+	        file: index && this.uploadList[index] || null
+	      });
+	      this.states[index] = false;
+	      index > -1 && this.uploadList.splice(index, 1);
 	    },
 	    testSameOrigin: function testSameOrigin(url) {
 	      var loc = window.location;
@@ -28763,13 +28627,142 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.$emit('finish');
 	      }
 	    },
-	    setError: function setError(message, index) {
-	      this.$emit('error', {
-	        message: message,
-	        file: index && this.uploadList[index] || null
-	      });
-	      this.states[index] = false;
-	      index > -1 && this.uploadList.splice(index, 1);
+	    onChange: function onChange(e) {
+	      var files = e.target.files;
+	
+	      if (this.maxLength && this.uploadList.length === this.maxLength) {
+	        this.$refs.input.value = null;
+	        this.setError('超过上传数量限制，请先删除再进行上传');
+	        return;
+	      }
+	
+	      if (files) {
+	        for (var i in files) {
+	          if (_typeof(files[i]) === 'object' && files[i].name) {
+	            this.progress.push(0);
+	            this.uploadList.push(files[i]);
+	          }
+	        }
+	      } else {
+	        this.progress = [0];
+	        this.uploadList = [{ name: this.$refs.input.value.replace(/^.*\\/, '') }];
+	      }
+	
+	      this.$refs.input.value = null;
+	      this.submitForm();
+	    },
+	    submitForm: function submitForm() {
+	      if (!this.uploadList.length) {
+	        return;
+	      }
+	      if (this.xhr) {
+	        this.xhrUpload();
+	      } else {
+	        this.iframeUpload();
+	      }
+	    },
+	    xhrUpload: function xhrUpload() {
+	      var self = this;
+	      var i = 0;
+	      var len = this.uploadList.length;
+	      var data = void 0;
+	      for (i = 0; i < len; i++) {
+	        if (this.states[i]) {
+	          continue;
+	        }
+	        (function (i, file) {
+	          if (file.type.match(self.accept)) {
+	            (function () {
+	              data = new window.FormData();
+	              data.append(self.name, file, file.name);
+	
+	              if (self.params) {
+	                for (var name in self.params) {
+	                  data.append(name, self.params[name]);
+	                }
+	              }
+	
+	              var xhr = new window.XMLHttpRequest();
+	              // 是否带跨域的cookies
+	              xhr.withCredentials = !!self.withCredentials;
+	              xhr.open('post', self.url, true);
+	
+	              xhr.onload = function () {
+	                self.parseResponse(xhr.responseText, i);
+	              };
+	
+	              xhr.upload.onprogress = function (e) {
+	                var loaded = e.loaded ? e.loaded : 0;
+	                var total = e.total ? e.total : 1;
+	                var progressVal = parseInt(loaded / total * 100, 10);
+	                self.progress.splice(i, 1, progressVal);
+	              };
+	
+	              xhr.onerror = function () {
+	                self.states[i] = false;
+	                self.setError('上传失败了！');
+	              };
+	
+	              try {
+	                xhr.send(data);
+	              } catch (e) {
+	                self.setError('上传失败了！');
+	              }
+	            })();
+	          } else {
+	            self.setError('不支持该文件类型');
+	          }
+	        })(i, this.uploadList[i]);
+	      }
+	    },
+	    iframeUpload: function iframeUpload() {
+	      var _this = this;
+	
+	      var i = 0;
+	      var self = this;
+	      var len = this.uploadList.length;
+	      if (this.testSameOrigin(this.url)) {
+	        var _loop = function _loop() {
+	          var iframeName = 'uploadiframe-' + i + '-' + new Date().getTime();
+	          var iframe = document.createElement('iframe');
+	          var form = document.createElement('form');
+	          var input = document.createElement('input');
+	
+	          input.setAttribute('type', 'file');
+	          input.setAttribute('value', _this.uploadList[i].name);
+	          iframe.setAttribute('name', iframeName);
+	          iframe.style.display = 'none';
+	          form.setAttribute('method', 'post');
+	          form.setAttribute('action', _this.url);
+	          form.setAttribute('target', iframeName);
+	          form.setAttribute('data-index', i);
+	
+	          document.body.appendChild(form);
+	          form.appendChild(iframe);
+	          form.appendChild(input);
+	
+	          if (self.params) {
+	            for (var name in self.params) {
+	              var _input = document.createElement('input');
+	              _input.setAttribute('type', 'text');
+	              _input.setAttribute('name', name);
+	              _input.setAttribute('value', self.params[name]);
+	            }
+	          }
+	
+	          iframe.addEventListener('load', function () {
+	            _this.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));
+	            document.body.removeChild(form);
+	          });
+	          form.submit();
+	        };
+	
+	        for (i = 0; i < len; i++) {
+	          _loop();
+	        }
+	      } else {
+	        this.setError('iframe不支持跨域请求');
+	      }
 	    },
 	    delFile: function delFile(index) {
 	      this.$emit('delete', this.uploadList[index]);
@@ -28778,13 +28771,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.progress.splice(index, 1);
 	    },
 	    addDragEvt: function addDragEvt() {
-	      var _this4 = this;
+	      var _this2 = this;
 	
 	      var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
 	
 	      events.forEach(function (event) {
-	        _this4.$el.addEventListener(event, function (e) {
-	          return _this4.dragHandler(e);
+	        _this2.$refs.uploader.addEventListener(event, function (e) {
+	          return _this2.dragHandler(e);
 	        });
 	      });
 	    },
@@ -28811,6 +28804,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	      }
 	    }
+	  },
+	  mounted: function mounted() {
+	    var _this3 = this;
+	
+	    this.$nextTick(function () {
+	      _this3.advanceDrag && _this3.addDragEvt();
+	    });
+	  },
+	  beforeDestroy: function beforeDestroy() {
+	    var _this4 = this;
+	
+	    var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
+	    events.forEach(function (event) {
+	      _this4.$refs.uploader.removeEventListener(event, function () {
+	        return _this4._eventHandler();
+	      });
+	    });
 	  }
 	};
 	// </script>
@@ -28819,7 +28829,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 329 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"[prefixCls + '-upload']\" :id=\"`upload-${uploadId}`\">\r\n    <div v-if=\"type === 'click'\">\r\n      <label>\r\n        <input\r\n          type=\"file\"\r\n          :name=\"name\"\r\n          :accept=\"accept\"\r\n          :id=\"uploadId\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\" />\r\n        <slot>\r\n          <n3-button>\r\n            <n3-icon type=\"cloud-upload\"></n3-icon>\r\n            点击上传\r\n          </n3-button>\r\n        </slot>\r\n      </label>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click.native=\"delFile(index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div v-if=\"type === 'drag'\"\r\n         :class=\"[prefixCls + '-upload-drag']\">\r\n      <div \r\n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\r\n        :style=\"{width:dragWidth,height:dragHeight}\">\r\n        <input type=\"file\"\r\n          :name=\"name\"\r\n          :id=\"uploadId\"\r\n          :accept=\"accept\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\" />\r\n        <label :for=\"uploadId\"\r\n            :class=\"[prefixCls + '-upload-drag-area']\">\r\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\r\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\r\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\r\n      </label>\r\n      </div>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click=\"delFile(index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div :class=\"[prefixCls + '-upload']\" ref=\"uploader\">\r\n    <div v-if=\"type === 'click'\">\r\n      <label>\r\n        <input\r\n          type=\"file\"\r\n          :name=\"name\"\r\n          :accept=\"accept\"\r\n          :id=\"uploadId\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\"\r\n          ref=\"input\"\r\n        />\r\n        <slot>\r\n          <n3-button>\r\n            <n3-icon type=\"cloud-upload\"></n3-icon>\r\n            点击上传\r\n          </n3-button>\r\n        </slot>\r\n      </label>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click.native=\"delFile(index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div v-if=\"type === 'drag'\"\r\n         :class=\"[prefixCls + '-upload-drag']\">\r\n      <div \r\n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\r\n        :style=\"{width:dragWidth,height:dragHeight}\">\r\n        <input type=\"file\"\r\n          :name=\"name\"\r\n          :id=\"uploadId\"\r\n          :accept=\"accept\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\"\r\n          ref=\"input\"\r\n        />\r\n        <label :for=\"uploadId\"\r\n            :class=\"[prefixCls + '-upload-drag-area']\">\r\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\r\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\r\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\r\n      </label>\r\n      </div>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click.native=\"delFile(index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 330 */

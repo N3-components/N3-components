@@ -1,5 +1,5 @@
 <template>
-  <div :class="[prefixCls + '-upload']" :id="`upload-${uploadId}`">
+  <div :class="[prefixCls + '-upload']" ref="uploader">
     <div v-if="type === 'click'">
       <label>
         <input
@@ -8,7 +8,9 @@
           :accept="accept"
           :id="uploadId"
           :multiple="multiple"
-          @change="onChange($event)" />
+          @change="onChange($event)"
+          ref="input"
+        />
         <slot>
           <n3-button>
             <n3-icon type="cloud-upload"></n3-icon>
@@ -48,7 +50,9 @@
           :id="uploadId"
           :accept="accept"
           :multiple="multiple"
-          @change="onChange($event)" />
+          @change="onChange($event)"
+          ref="input"
+        />
         <label :for="uploadId"
             :class="[prefixCls + '-upload-drag-area']">
         <n3-icon type="cloud-upload" :class="[prefixCls + '-upload-drag-icon']"></n3-icon>
@@ -65,7 +69,7 @@
             <span :class="[prefixCls + '-upload-file-name']">{{file.name}}</span>
             <n3-icon type="times"
               :class="[prefixCls + '-upload-del-info']"
-              @click="delFile(index)">
+              @click.native="delFile(index)">
             </n3-icon>
           </div>
           <n3-progress style="padding:0px 4px">
@@ -80,6 +84,7 @@
     </div>
   </div>
 </template>
+
 <script>
   import n3Icon from './n3Icon'
   import n3Button from './n3Button'
@@ -87,7 +92,7 @@
   import n3Progressbar from './n3Progressbar'
 
   export default {
-    name: 'n3Uploader',
+    name: 'Uploader',
     props: {
       name: {
         type: String,
@@ -97,13 +102,17 @@
         type: String,
         default: 'click'
       },
+      withCredentials: {
+        type: Boolean,
+        default: false
+      },
       accept: {
         type: String,
         default: ''
       },
       url: {
         type: String,
-        default: ''
+        required: true
       },
       multiple: {
         type: Boolean,
@@ -157,26 +166,53 @@
       n3Progressbar,
       n3Progress
     },
-    mounted () {
-      this.$nextTick(() => {
-        this._input = document.querySelector('#' + this.uploadId)
-        this.$el = document.querySelector('#upload-' + this.uploadId)
-
-        this.advanceDrag && this.addDragEvt()
-      })
-    },
-    beforeDestroy () {
-      let events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter']
-      events.forEach((event) => {
-        this.$el.removeEventListener(event, () => this._eventHandler())
-      })
-    },
     methods: {
+      setError (message, index) {
+        this.$emit('error', {
+          message: message,
+          file: index && this.uploadList[index] || null
+        })
+        this.states[index] = false
+        index > -1 && this.uploadList.splice(index, 1)
+      },
+
+      testSameOrigin (url) {
+        const loc = window.location
+        const a = document.createElement('a')
+        a.href = url
+        return a.hostname === loc.hostname &&
+               a.port === loc.port &&
+               a.protocol === loc.protocol
+      },
+
+      parseResponse (response, index) {
+        let data = null
+        let len = this.uploadList.length
+        if (!response) {
+          this.setError('服务器没有响应', index)
+        } else {
+          try {
+            data = JSON.parse(response)
+          } catch (e) {
+            this.setError('服务器响应数据格式有问题', index)
+          }
+          if (data) {
+            this.states[index] = true
+            this.$emit('success', {
+              response: data,
+              file: this.uploadList[index]
+            })
+          }
+        }
+        if (Object.keys(this.states).length === len) {
+          this.$emit('finish')
+        }
+      },
       onChange (e) {
         let files = e.target.files
-
+        
         if (this.maxLength && this.uploadList.length === this.maxLength) {
-          this._input.value = ''
+          this.$refs.input.value = null
           this.setError('超过上传数量限制，请先删除再进行上传')
           return
         }
@@ -190,21 +226,21 @@
           }
         } else {
           this.progress = [0]
-          this.uploadList = [{name: this._input.value.replace(/^.*\\/, '')}]
+          this.uploadList = [{name: this.$refs.input.value.replace(/^.*\\/, '')}]
         }
 
+        this.$refs.input.value = null
         this.submitForm()
       },
 
       submitForm () {
-        if (this.uploadList.length > 0) {
-          if (this.url) {
-            if (this.xhr) {
-              this.xhrUpload()
-            } else {
-              this.iframeUpload()
-            }
-          }
+        if (!this.uploadList.length) {
+          return
+        }
+        if (this.xhr) {
+          this.xhrUpload()
+        } else {
+          this.iframeUpload()
         }
       },
 
@@ -227,9 +263,10 @@
                   data.append(name, self.params[name])
                 }
               }
-              // 跨域时 添加身份凭证信息
+
               let xhr = new window.XMLHttpRequest()
-              xhr.withCredentials = true
+              // 是否带跨域的cookies
+              xhr.withCredentials = !!self.withCredentials
               xhr.open('post', self.url, true)
 
               xhr.onload = () => {
@@ -239,8 +276,8 @@
               xhr.upload.onprogress = (e) => {
                 const loaded = e.loaded ? e.loaded : 0
                 const total = e.total ? e.total : 1
-
-                self.$set('progress[' + i + ']', parseInt((loaded / total) * 100, 10))
+                let progressVal = parseInt((loaded / total) * 100, 10)
+                self.progress.splice(i, 1, progressVal)
               }
 
               xhr.onerror = () => {
@@ -304,48 +341,6 @@
         }
       },
 
-      testSameOrigin (url) {
-        const loc = window.location
-        const a = document.createElement('a')
-        a.href = url
-        return a.hostname === loc.hostname &&
-               a.port === loc.port &&
-               a.protocol === loc.protocol
-      },
-
-      parseResponse (response, index) {
-        let data = null
-        let len = this.uploadList.length
-        if (!response) {
-          this.setError('服务器没有响应', index)
-        } else {
-          try {
-            data = JSON.parse(response)
-          } catch (e) {
-            this.setError('服务器响应数据格式有问题', index)
-          }
-          if (data) {
-            this.states[index] = true
-            this.$emit('success', {
-              response: data,
-              file: this.uploadList[index]
-            })
-          }
-        }
-        if (Object.keys(this.states).length === len) {
-          this.$emit('finish')
-        }
-      },
-
-      setError (message, index) {
-        this.$emit('error', {
-          message: message,
-          file: index && this.uploadList[index] || null
-        })
-        this.states[index] = false
-        index > -1 && this.uploadList.splice(index, 1)
-      },
-
       delFile (index) {
         this.$emit('delete', this.uploadList[index])
         this.uploadList.splice(index, 1)
@@ -357,7 +352,7 @@
         let events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter']
 
         events.forEach((event) => {
-          this.$el.addEventListener(event, (e) => this.dragHandler(e))
+          this.$refs.uploader.addEventListener(event, (e) => this.dragHandler(e))
         })
       },
 
@@ -384,6 +379,17 @@
           }
         }
       }
+    },
+    mounted () {
+      this.$nextTick(() => {
+        this.advanceDrag && this.addDragEvt()
+      })
+    },
+    beforeDestroy () {
+      let events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter']
+      events.forEach((event) => {
+        this.$refs.uploader.removeEventListener(event, () => this._eventHandler())
+      })
     }
   }
   </script>

@@ -10199,12 +10199,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-4.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-14.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-4.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-a4faba18&file=n3IconDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-4.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-4.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-14.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-0431ebda&file=n3IconDocs-14.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-14.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-14.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-a4faba18&file=n3IconDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-4.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-0431ebda&file=n3IconDocs-14.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-14.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10226,8 +10226,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-a4faba18&file=n3IconDocs-4.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-4.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-a4faba18&file=n3IconDocs-4.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-4.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-0431ebda&file=n3IconDocs-14.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-14.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-0431ebda&file=n3IconDocs-14.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-14.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10245,7 +10245,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".row-ex div[_v-a4faba18] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-a4faba18] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-a4faba18] {\n    color:gray;\n  }", ""]);
+	exports.push([module.id, ".row-ex div[_v-0431ebda] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-0431ebda] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-0431ebda] {\n    color:gray;\n  }", ""]);
 	
 	// exports
 
@@ -10391,7 +10391,7 @@
 /* 478 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-a4faba18=\"\"><template _v-a4faba18=\"\">\n<h3 _v-a4faba18=\"\">图标</h3>\n<div class=\"bs-docs-section\" id=\"图标\" _v-a4faba18=\"\">\n<div class=\"bs-example\" _v-a4faba18=\"\">\n<h3 _v-a4faba18=\"\">FontAwesome 4.0 图标列表</h3>\n<h4 _v-a4faba18=\"\">11 New Icons in 4.0</h4>\n<hr _v-a4faba18=\"\">\n<n3-container _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-a4faba18=\"\">\n  <h4 _v-a4faba18=\"\">Web Application Icons</h4>\n  <hr _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-a4faba18=\"\">Form Control Icons</h4>\n  <hr _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4faba18=\"\">\n  <h4 _v-a4faba18=\"\">Currency Icons</h4>\n  <hr _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4faba18=\"\">\n  <h4 _v-a4faba18=\"\">Text Edit Icons</h4>\n  <hr _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4faba18=\"\">\n  <h4 _v-a4faba18=\"\">Directional Icons</h4>\n  <hr _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4faba18=\"\">\n  <h4 _v-a4faba18=\"\">Video Player Icons</h4>\n  <hr _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4faba18=\"\">\n  <h4 _v-a4faba18=\"\">Brand Icons</h4>\n  <hr _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4faba18=\"\">\n  <h4 _v-a4faba18=\"\">Medical Icons</h4>\n  <hr _v-a4faba18=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4faba18=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-a4faba18=\"\"><n3-icon :type=\"font\" _v-a4faba18=\"\"></n3-icon><span _v-a4faba18=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-a4faba18=\"\"><code class=\"language-html\" _v-a4faba18=\"\"><span class=\"hljs-tag\" _v-a4faba18=\"\">&lt;<span class=\"hljs-name\" _v-a4faba18=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-a4faba18=\"\">type</span>=<span class=\"hljs-string\" _v-a4faba18=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-a4faba18=\"\">&lt;/<span class=\"hljs-name\" _v-a4faba18=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-a4faba18=\"\">参数</h3>\n<table _v-a4faba18=\"\">\n<thead _v-a4faba18=\"\">\n<tr _v-a4faba18=\"\">\n<th _v-a4faba18=\"\">参数名</th>\n<th _v-a4faba18=\"\">类型</th>\n<th _v-a4faba18=\"\">默认值</th>\n<th _v-a4faba18=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-a4faba18=\"\">\n<tr _v-a4faba18=\"\">\n<td _v-a4faba18=\"\">type</td>\n<td _v-a4faba18=\"\"><code _v-a4faba18=\"\">String</code></td>\n<td _v-a4faba18=\"\"></td>\n<td _v-a4faba18=\"\">图标类型名</td>\n</tr>\n<tr _v-a4faba18=\"\">\n<td _v-a4faba18=\"\">size</td>\n<td _v-a4faba18=\"\"><code _v-a4faba18=\"\">String</code></td>\n<td _v-a4faba18=\"\"></td>\n<td _v-a4faba18=\"\">图标尺寸</td>\n</tr>\n<tr _v-a4faba18=\"\">\n<td _v-a4faba18=\"\">color</td>\n<td _v-a4faba18=\"\"><code _v-a4faba18=\"\">String</code></td>\n<td _v-a4faba18=\"\"></td>\n<td _v-a4faba18=\"\">颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-0431ebda=\"\"><template _v-0431ebda=\"\">\n<h3 _v-0431ebda=\"\">图标</h3>\n<div class=\"bs-docs-section\" id=\"图标\" _v-0431ebda=\"\">\n<div class=\"bs-example\" _v-0431ebda=\"\">\n<h3 _v-0431ebda=\"\">FontAwesome 4.0 图标列表</h3>\n<h4 _v-0431ebda=\"\">11 New Icons in 4.0</h4>\n<hr _v-0431ebda=\"\">\n<n3-container _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-0431ebda=\"\">\n  <h4 _v-0431ebda=\"\">Web Application Icons</h4>\n  <hr _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-0431ebda=\"\">Form Control Icons</h4>\n  <hr _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0431ebda=\"\">\n  <h4 _v-0431ebda=\"\">Currency Icons</h4>\n  <hr _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0431ebda=\"\">\n  <h4 _v-0431ebda=\"\">Text Edit Icons</h4>\n  <hr _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0431ebda=\"\">\n  <h4 _v-0431ebda=\"\">Directional Icons</h4>\n  <hr _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0431ebda=\"\">\n  <h4 _v-0431ebda=\"\">Video Player Icons</h4>\n  <hr _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0431ebda=\"\">\n  <h4 _v-0431ebda=\"\">Brand Icons</h4>\n  <hr _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0431ebda=\"\">\n  <h4 _v-0431ebda=\"\">Medical Icons</h4>\n  <hr _v-0431ebda=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0431ebda=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-0431ebda=\"\"><n3-icon :type=\"font\" _v-0431ebda=\"\"></n3-icon><span _v-0431ebda=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-0431ebda=\"\"><code class=\"language-html\" _v-0431ebda=\"\"><span class=\"hljs-tag\" _v-0431ebda=\"\">&lt;<span class=\"hljs-name\" _v-0431ebda=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-0431ebda=\"\">type</span>=<span class=\"hljs-string\" _v-0431ebda=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-0431ebda=\"\">&lt;/<span class=\"hljs-name\" _v-0431ebda=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-0431ebda=\"\">参数</h3>\n<table _v-0431ebda=\"\">\n<thead _v-0431ebda=\"\">\n<tr _v-0431ebda=\"\">\n<th _v-0431ebda=\"\">参数名</th>\n<th _v-0431ebda=\"\">类型</th>\n<th _v-0431ebda=\"\">默认值</th>\n<th _v-0431ebda=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-0431ebda=\"\">\n<tr _v-0431ebda=\"\">\n<td _v-0431ebda=\"\">type</td>\n<td _v-0431ebda=\"\"><code _v-0431ebda=\"\">String</code></td>\n<td _v-0431ebda=\"\"></td>\n<td _v-0431ebda=\"\">图标类型名</td>\n</tr>\n<tr _v-0431ebda=\"\">\n<td _v-0431ebda=\"\">size</td>\n<td _v-0431ebda=\"\"><code _v-0431ebda=\"\">String</code></td>\n<td _v-0431ebda=\"\"></td>\n<td _v-0431ebda=\"\">图标尺寸</td>\n</tr>\n<tr _v-0431ebda=\"\">\n<td _v-0431ebda=\"\">color</td>\n<td _v-0431ebda=\"\"><code _v-0431ebda=\"\">String</code></td>\n<td _v-0431ebda=\"\"></td>\n<td _v-0431ebda=\"\">颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 479 */
@@ -10412,12 +10412,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-2.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-3.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-2.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-2.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-2.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-3.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-3.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-3.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-2.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-3.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10608,12 +10608,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-5.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-5.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-5.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-5.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-4.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-5.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-4.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10635,8 +10635,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-95461414&file=n3AlertDocs-5.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-5.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-95461414&file=n3AlertDocs-5.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-5.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-95624316&file=n3AlertDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-4.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-95624316&file=n3AlertDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-4.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11625,12 +11625,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-9.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-2.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-9.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-9.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-9.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-2.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-2.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-2.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-9.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-2.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11844,12 +11844,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-3.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-6.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-3.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-6.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12039,12 +12039,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-8.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-5.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-8.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-672b83ed&file=n3AffixDocs-8.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-8.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-8.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-5.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-67013d6a&file=n3AffixDocs-5.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-5.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-5.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-672b83ed&file=n3AffixDocs-8.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-8.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-67013d6a&file=n3AffixDocs-5.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-5.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12066,8 +12066,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-672b83ed&file=n3AffixDocs-8.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-8.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-672b83ed&file=n3AffixDocs-8.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-8.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-67013d6a&file=n3AffixDocs-5.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-5.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-67013d6a&file=n3AffixDocs-5.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-5.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12085,7 +12085,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".sidebar[_v-672b83ed]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-672b83ed]{\n  position: static;\n}", ""]);
+	exports.push([module.id, ".sidebar[_v-67013d6a]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-67013d6a]{\n  position: static;\n}", ""]);
 	
 	// exports
 
@@ -12168,7 +12168,7 @@
 /* 517 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-672b83ed=\"\"><template _v-672b83ed=\"\">\n<h3 _v-672b83ed=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-672b83ed=\"\">\n  <div class=\"bs-example\" _v-672b83ed=\"\">\n    <h3 _v-672b83ed=\"\">\n      <n3-affix :offset=\"0\" _v-672b83ed=\"\">\n        <nav class=\"sidebar\" _v-672b83ed=\"\">\n          <ul _v-672b83ed=\"\">\n            <li _v-672b83ed=\"\">...</li>\n            <li _v-672b83ed=\"\">...</li>\n            <li _v-672b83ed=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-672b83ed=\"\"><code class=\"language-html\" _v-672b83ed=\"\"><span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;<span class=\"hljs-name\" _v-672b83ed=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-672b83ed=\"\">:offset</span>=<span class=\"hljs-string\" _v-672b83ed=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;<span class=\"hljs-name\" _v-672b83ed=\"\">nav</span> <span class=\"hljs-attr\" _v-672b83ed=\"\">class</span>=<span class=\"hljs-string\" _v-672b83ed=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;<span class=\"hljs-name\" _v-672b83ed=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;<span class=\"hljs-name\" _v-672b83ed=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;/<span class=\"hljs-name\" _v-672b83ed=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;<span class=\"hljs-name\" _v-672b83ed=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;/<span class=\"hljs-name\" _v-672b83ed=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;<span class=\"hljs-name\" _v-672b83ed=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;/<span class=\"hljs-name\" _v-672b83ed=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;/<span class=\"hljs-name\" _v-672b83ed=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;/<span class=\"hljs-name\" _v-672b83ed=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-672b83ed=\"\">&lt;/<span class=\"hljs-name\" _v-672b83ed=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3 _v-672b83ed=\"\">参数</h3>\n<table _v-672b83ed=\"\">\n<thead _v-672b83ed=\"\">\n<tr _v-672b83ed=\"\">\n<th _v-672b83ed=\"\">参数名</th>\n<th _v-672b83ed=\"\">类型</th>\n<th _v-672b83ed=\"\">默认值</th>\n<th _v-672b83ed=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-672b83ed=\"\">\n<tr _v-672b83ed=\"\">\n<td _v-672b83ed=\"\">offset</td>\n<td _v-672b83ed=\"\"><code _v-672b83ed=\"\">Number</code></td>\n<td _v-672b83ed=\"\"><code _v-672b83ed=\"\">0</code></td>\n<td _v-672b83ed=\"\">离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-67013d6a=\"\"><template _v-67013d6a=\"\">\n<h3 _v-67013d6a=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-67013d6a=\"\">\n  <div class=\"bs-example\" _v-67013d6a=\"\">\n    <h3 _v-67013d6a=\"\">\n      <n3-affix :offset=\"0\" _v-67013d6a=\"\">\n        <nav class=\"sidebar\" _v-67013d6a=\"\">\n          <ul _v-67013d6a=\"\">\n            <li _v-67013d6a=\"\">...</li>\n            <li _v-67013d6a=\"\">...</li>\n            <li _v-67013d6a=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-67013d6a=\"\"><code class=\"language-html\" _v-67013d6a=\"\"><span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;<span class=\"hljs-name\" _v-67013d6a=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-67013d6a=\"\">:offset</span>=<span class=\"hljs-string\" _v-67013d6a=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;<span class=\"hljs-name\" _v-67013d6a=\"\">nav</span> <span class=\"hljs-attr\" _v-67013d6a=\"\">class</span>=<span class=\"hljs-string\" _v-67013d6a=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;<span class=\"hljs-name\" _v-67013d6a=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;<span class=\"hljs-name\" _v-67013d6a=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;/<span class=\"hljs-name\" _v-67013d6a=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;<span class=\"hljs-name\" _v-67013d6a=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;/<span class=\"hljs-name\" _v-67013d6a=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;<span class=\"hljs-name\" _v-67013d6a=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;/<span class=\"hljs-name\" _v-67013d6a=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;/<span class=\"hljs-name\" _v-67013d6a=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;/<span class=\"hljs-name\" _v-67013d6a=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-67013d6a=\"\">&lt;/<span class=\"hljs-name\" _v-67013d6a=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3 _v-67013d6a=\"\">参数</h3>\n<table _v-67013d6a=\"\">\n<thead _v-67013d6a=\"\">\n<tr _v-67013d6a=\"\">\n<th _v-67013d6a=\"\">参数名</th>\n<th _v-67013d6a=\"\">类型</th>\n<th _v-67013d6a=\"\">默认值</th>\n<th _v-67013d6a=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-67013d6a=\"\">\n<tr _v-67013d6a=\"\">\n<td _v-67013d6a=\"\">offset</td>\n<td _v-67013d6a=\"\"><code _v-67013d6a=\"\">Number</code></td>\n<td _v-67013d6a=\"\"><code _v-67013d6a=\"\">0</code></td>\n<td _v-67013d6a=\"\">离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 518 */
@@ -12189,12 +12189,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-11.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-9.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-11.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-11.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-11.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-9.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-9.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-9.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-11.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-9.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12367,12 +12367,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d31e99d&file=n3CarouselDocs-6.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-6.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d4e189f&file=n3CarouselDocs-8.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-8.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d31e99d&file=n3CarouselDocs-6.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-6.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d4e189f&file=n3CarouselDocs-8.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-8.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d31e99d&file=n3CarouselDocs-6.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-6.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d4e189f&file=n3CarouselDocs-8.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-8.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12394,8 +12394,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-4d31e99d&file=n3CarouselDocs-6.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-6.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-4d31e99d&file=n3CarouselDocs-6.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-6.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-4d4e189f&file=n3CarouselDocs-8.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-8.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-4d4e189f&file=n3CarouselDocs-8.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-8.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12413,7 +12413,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".slide-img[_v-4d31e99d]{\n  height:400px!important;\n}\n.carousel-caption[_v-4d31e99d] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-4d31e99d] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
+	exports.push([module.id, ".slide-img[_v-4d4e189f]{\n  height:400px!important;\n}\n.carousel-caption[_v-4d4e189f] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-4d4e189f] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
 	
 	// exports
 
@@ -12422,7 +12422,7 @@
 /* 526 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-4d31e99d=\"\"><template _v-4d31e99d=\"\">\n<h3 _v-4d31e99d=\"\">幻灯片</h3>\n<div class=\"bs-docs-section\" id=\"幻灯片\" _v-4d31e99d=\"\">\n<div class=\"bs-example\" _v-4d31e99d=\"\">\n  <n3-carousel _v-4d31e99d=\"\">\n    <n3-slide _v-4d31e99d=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d31e99d=\"\">\n      <div class=\"carousel-caption\" _v-4d31e99d=\"\">\n        <h3 _v-4d31e99d=\"\">Slide #1</h3>\n        <p _v-4d31e99d=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-4d31e99d=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d31e99d=\"\">\n      <div class=\"carousel-caption\" _v-4d31e99d=\"\">\n        <h3 _v-4d31e99d=\"\">Slide #2</h3>\n        <p _v-4d31e99d=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-4d31e99d=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d31e99d=\"\">\n      <div class=\"carousel-caption\" _v-4d31e99d=\"\">\n        <h3 _v-4d31e99d=\"\">Slide #3</h3>\n        <p _v-4d31e99d=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-4d31e99d=\"\"><code class=\"language-html\" _v-4d31e99d=\"\"><span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">img</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">class</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">src</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">div</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">class</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">img</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">class</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">src</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">div</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">class</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">img</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">class</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">src</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">div</span> <span class=\"hljs-attr\" _v-4d31e99d=\"\">class</span>=<span class=\"hljs-string\" _v-4d31e99d=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;<span class=\"hljs-name\" _v-4d31e99d=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-4d31e99d=\"\">&lt;/<span class=\"hljs-name\" _v-4d31e99d=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-4d31e99d=\"\">参数</h3>\n<table _v-4d31e99d=\"\">\n<thead _v-4d31e99d=\"\">\n<tr _v-4d31e99d=\"\">\n<th _v-4d31e99d=\"\">参数名</th>\n<th _v-4d31e99d=\"\">类型</th>\n<th _v-4d31e99d=\"\">默认值</th>\n<th _v-4d31e99d=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-4d31e99d=\"\">\n<tr _v-4d31e99d=\"\">\n<td _v-4d31e99d=\"\">indicators</td>\n<td _v-4d31e99d=\"\"><code _v-4d31e99d=\"\">Boolean</code></td>\n<td _v-4d31e99d=\"\"><code _v-4d31e99d=\"\">true</code></td>\n<td _v-4d31e99d=\"\">是否显示控制点</td>\n</tr>\n<tr _v-4d31e99d=\"\">\n<td _v-4d31e99d=\"\">controls</td>\n<td _v-4d31e99d=\"\"><code _v-4d31e99d=\"\">Boolean</code></td>\n<td _v-4d31e99d=\"\"><code _v-4d31e99d=\"\">true</code></td>\n<td _v-4d31e99d=\"\">是否显示箭头</td>\n</tr>\n<tr _v-4d31e99d=\"\">\n<td _v-4d31e99d=\"\">interval</td>\n<td _v-4d31e99d=\"\"><code _v-4d31e99d=\"\">Number</code></td>\n<td _v-4d31e99d=\"\"><code _v-4d31e99d=\"\">5000</code></td>\n<td _v-4d31e99d=\"\">自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
+	module.exports = "<section _v-4d4e189f=\"\"><template _v-4d4e189f=\"\">\n<h3 _v-4d4e189f=\"\">幻灯片</h3>\n<div class=\"bs-docs-section\" id=\"幻灯片\" _v-4d4e189f=\"\">\n<div class=\"bs-example\" _v-4d4e189f=\"\">\n  <n3-carousel _v-4d4e189f=\"\">\n    <n3-slide _v-4d4e189f=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d4e189f=\"\">\n      <div class=\"carousel-caption\" _v-4d4e189f=\"\">\n        <h3 _v-4d4e189f=\"\">Slide #1</h3>\n        <p _v-4d4e189f=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-4d4e189f=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d4e189f=\"\">\n      <div class=\"carousel-caption\" _v-4d4e189f=\"\">\n        <h3 _v-4d4e189f=\"\">Slide #2</h3>\n        <p _v-4d4e189f=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-4d4e189f=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d4e189f=\"\">\n      <div class=\"carousel-caption\" _v-4d4e189f=\"\">\n        <h3 _v-4d4e189f=\"\">Slide #3</h3>\n        <p _v-4d4e189f=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-4d4e189f=\"\"><code class=\"language-html\" _v-4d4e189f=\"\"><span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">img</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">class</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">src</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">div</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">class</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">img</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">class</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">src</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">div</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">class</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">img</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">class</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">src</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">div</span> <span class=\"hljs-attr\" _v-4d4e189f=\"\">class</span>=<span class=\"hljs-string\" _v-4d4e189f=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;<span class=\"hljs-name\" _v-4d4e189f=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-4d4e189f=\"\">&lt;/<span class=\"hljs-name\" _v-4d4e189f=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-4d4e189f=\"\">参数</h3>\n<table _v-4d4e189f=\"\">\n<thead _v-4d4e189f=\"\">\n<tr _v-4d4e189f=\"\">\n<th _v-4d4e189f=\"\">参数名</th>\n<th _v-4d4e189f=\"\">类型</th>\n<th _v-4d4e189f=\"\">默认值</th>\n<th _v-4d4e189f=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-4d4e189f=\"\">\n<tr _v-4d4e189f=\"\">\n<td _v-4d4e189f=\"\">indicators</td>\n<td _v-4d4e189f=\"\"><code _v-4d4e189f=\"\">Boolean</code></td>\n<td _v-4d4e189f=\"\"><code _v-4d4e189f=\"\">true</code></td>\n<td _v-4d4e189f=\"\">是否显示控制点</td>\n</tr>\n<tr _v-4d4e189f=\"\">\n<td _v-4d4e189f=\"\">controls</td>\n<td _v-4d4e189f=\"\"><code _v-4d4e189f=\"\">Boolean</code></td>\n<td _v-4d4e189f=\"\"><code _v-4d4e189f=\"\">true</code></td>\n<td _v-4d4e189f=\"\">是否显示箭头</td>\n</tr>\n<tr _v-4d4e189f=\"\">\n<td _v-4d4e189f=\"\">interval</td>\n<td _v-4d4e189f=\"\"><code _v-4d4e189f=\"\">Number</code></td>\n<td _v-4d4e189f=\"\"><code _v-4d4e189f=\"\">5000</code></td>\n<td _v-4d4e189f=\"\">自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
 /* 527 */
@@ -12476,12 +12476,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-12.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-12.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-10.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-12.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-10.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12597,12 +12597,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-14.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-14.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-14.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-14.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-12.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs-12.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-14.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs-12.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12732,12 +12732,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-10.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-11.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-10.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-10.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-10.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-11.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-11.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-11.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-10.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-11.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12866,12 +12866,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-13.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-19.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-13.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-13.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-13.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-19.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-19.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-19.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-13.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-19.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12989,12 +12989,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-13.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-13.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-13.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-13.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-13.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13116,12 +13116,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-17.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-17.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-17.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-17.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-16.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-17.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-16.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13487,12 +13487,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-18.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-15.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-18.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-18.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-18.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-15.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-15.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-15.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-18.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-15.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13616,12 +13616,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-16.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-16.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-16.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-16.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-18.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-16.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-18.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13744,12 +13744,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-19.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-19.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-19.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-19.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-17.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs-17.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-19.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs-17.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14111,12 +14111,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-21.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-21.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-21.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-21.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-23.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs-23.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-21.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs-23.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14443,12 +14443,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-21.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-64a09134&file=n3ProgressbarDocs-23.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-23.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-23.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-21.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-64d8ef38&file=n3ProgressbarDocs-21.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-21.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs-21.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-64a09134&file=n3ProgressbarDocs-23.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-23.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-64d8ef38&file=n3ProgressbarDocs-21.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs-21.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14470,8 +14470,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-64a09134&file=n3ProgressbarDocs-23.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-23.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-64a09134&file=n3ProgressbarDocs-23.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-23.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-64d8ef38&file=n3ProgressbarDocs-21.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-21.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-64d8ef38&file=n3ProgressbarDocs-21.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-21.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -14489,7 +14489,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".margin[_v-64a09134]{\n  margin-bottom:20px;\n}", ""]);
+	exports.push([module.id, ".margin[_v-64d8ef38]{\n  margin-bottom:20px;\n}", ""]);
 	
 	// exports
 
@@ -14703,7 +14703,7 @@
 /* 579 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-64a09134=\"\"><template _v-64a09134=\"\">\n<h3 _v-64a09134=\"\">进度条</h3>\n<div class=\"bs-docs-section\" id=\"进度条\" _v-64a09134=\"\">\n<blockquote _v-64a09134=\"\">\n<p _v-64a09134=\"\">高度</p>\n</blockquote>\n<div class=\"bs-example\" _v-64a09134=\"\">\n  <div class=\"row\" _v-64a09134=\"\">\n    <div class=\"col-md-4\" _v-64a09134=\"\">\n      <n3-progress class=\"margin\" _v-64a09134=\"\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-64a09134=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\" _v-64a09134=\"\">\n      <n3-progress class=\"margin\" _v-64a09134=\"\">\n        <n3-progressbar :now=\"40\" type=\"success\" _v-64a09134=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre _v-64a09134=\"\"><code class=\"language-html\" _v-64a09134=\"\"><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64a09134=\"\">class</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"20\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">height</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64a09134=\"\">class</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"40\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"success\"</span>&gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote _v-64a09134=\"\">\n<p _v-64a09134=\"\">动态变化 <n3-button @click.native=\"dynamicClick\" _v-64a09134=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-64a09134=\"\">\n  <n3-progress class=\"margin\" _v-64a09134=\"\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-64a09134=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-64a09134=\"\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-64a09134=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-64a09134=\"\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-64a09134=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress _v-64a09134=\"\">\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-64a09134=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre _v-64a09134=\"\"><code class=\"language-html\" _v-64a09134=\"\"><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64a09134=\"\">class</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"info\"</span> &gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64a09134=\"\">class</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64a09134=\"\">class</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64a09134=\"\">class</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre _v-64a09134=\"\"><code class=\"language-javascript\" _v-64a09134=\"\"><span class=\"hljs-keyword\" _v-64a09134=\"\">export</span> <span class=\"hljs-keyword\" _v-64a09134=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-64a09134=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-64a09134=\"\">dynamicData</span>: [<span class=\"hljs-number\" _v-64a09134=\"\">5</span>, <span class=\"hljs-number\" _v-64a09134=\"\">15</span>, <span class=\"hljs-number\" _v-64a09134=\"\">25</span>, <span class=\"hljs-number\" _v-64a09134=\"\">35</span>, <span class=\"hljs-number\" _v-64a09134=\"\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-64a09134=\"\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\" _v-64a09134=\"\">this</span>.dynamicData = <span class=\"hljs-keyword\" _v-64a09134=\"\">this</span>.dynamicData.map(<span class=\"hljs-function\" _v-64a09134=\"\"><span class=\"hljs-params\" _v-64a09134=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-64a09134=\"\">return</span> <span class=\"hljs-built_in\" _v-64a09134=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-64a09134=\"\">Math</span>.random() * <span class=\"hljs-number\" _v-64a09134=\"\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote _v-64a09134=\"\">\n<p _v-64a09134=\"\">叠加 <n3-button @click.native=\"stackedClick\" _v-64a09134=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-64a09134=\"\">\n  <n3-progress _v-64a09134=\"\">\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-64a09134=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-64a09134=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-64a09134=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-64a09134=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre _v-64a09134=\"\"><code class=\"language-html\" _v-64a09134=\"\"><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"stackedData[0]\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">label</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"warning\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"stackedData[1]\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">label</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"success\"</span> &gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"stackedData[2]\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">label</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64a09134=\"\">&lt;<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64a09134=\"\">:now</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"stackedData[3]\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">label</span> <span class=\"hljs-attr\" _v-64a09134=\"\">type</span>=<span class=\"hljs-string\" _v-64a09134=\"\">\"primary\"</span> <span class=\"hljs-attr\" _v-64a09134=\"\">striped</span> &gt;</span>\n<span class=\"hljs-tag\" _v-64a09134=\"\">&lt;/<span class=\"hljs-name\" _v-64a09134=\"\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre _v-64a09134=\"\"><code class=\"language-javascript\" _v-64a09134=\"\"><span class=\"hljs-keyword\" _v-64a09134=\"\">export</span> <span class=\"hljs-keyword\" _v-64a09134=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-64a09134=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-64a09134=\"\">stackedData</span>: [<span class=\"hljs-number\" _v-64a09134=\"\">10</span>, <span class=\"hljs-number\" _v-64a09134=\"\">20</span>, <span class=\"hljs-number\" _v-64a09134=\"\">30</span>, <span class=\"hljs-number\" _v-64a09134=\"\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-64a09134=\"\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\" _v-64a09134=\"\">let</span> i = <span class=\"hljs-number\" _v-64a09134=\"\">100</span>\n      <span class=\"hljs-keyword\" _v-64a09134=\"\">this</span>.stackedData = <span class=\"hljs-keyword\" _v-64a09134=\"\">this</span>.stackedData.map(<span class=\"hljs-function\" _v-64a09134=\"\"><span class=\"hljs-params\" _v-64a09134=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-64a09134=\"\">const</span> random = <span class=\"hljs-built_in\" _v-64a09134=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-64a09134=\"\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\" _v-64a09134=\"\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3 _v-64a09134=\"\">参数</h3>\n<table _v-64a09134=\"\">\n<thead _v-64a09134=\"\">\n<tr _v-64a09134=\"\">\n<th _v-64a09134=\"\">参数名</th>\n<th _v-64a09134=\"\">类型</th>\n<th _v-64a09134=\"\">默认值</th>\n<th _v-64a09134=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-64a09134=\"\">\n<tr _v-64a09134=\"\">\n<td _v-64a09134=\"\">now</td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">Number</code></td>\n<td _v-64a09134=\"\"></td>\n<td _v-64a09134=\"\">当前进度</td>\n</tr>\n<tr _v-64a09134=\"\">\n<td _v-64a09134=\"\">height</td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">String</code></td>\n<td _v-64a09134=\"\">20px</td>\n<td _v-64a09134=\"\">高度</td>\n</tr>\n<tr _v-64a09134=\"\">\n<td _v-64a09134=\"\">type</td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">String</code></td>\n<td _v-64a09134=\"\"></td>\n<td _v-64a09134=\"\">样式</td>\n</tr>\n<tr _v-64a09134=\"\">\n<td _v-64a09134=\"\">label</td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">Boolean</code></td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">false</code></td>\n<td _v-64a09134=\"\">是否显示进度提示</td>\n</tr>\n<tr _v-64a09134=\"\">\n<td _v-64a09134=\"\">striped</td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">Boolean</code></td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">false</code></td>\n<td _v-64a09134=\"\">是否显示条纹</td>\n</tr>\n<tr _v-64a09134=\"\">\n<td _v-64a09134=\"\">animated</td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">Boolean</code></td>\n<td _v-64a09134=\"\"><code _v-64a09134=\"\">false</code></td>\n<td _v-64a09134=\"\">动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-64d8ef38=\"\"><template _v-64d8ef38=\"\">\n<h3 _v-64d8ef38=\"\">进度条</h3>\n<div class=\"bs-docs-section\" id=\"进度条\" _v-64d8ef38=\"\">\n<blockquote _v-64d8ef38=\"\">\n<p _v-64d8ef38=\"\">高度</p>\n</blockquote>\n<div class=\"bs-example\" _v-64d8ef38=\"\">\n  <div class=\"row\" _v-64d8ef38=\"\">\n    <div class=\"col-md-4\" _v-64d8ef38=\"\">\n      <n3-progress class=\"margin\" _v-64d8ef38=\"\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-64d8ef38=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\" _v-64d8ef38=\"\">\n      <n3-progress class=\"margin\" _v-64d8ef38=\"\">\n        <n3-progressbar :now=\"40\" type=\"success\" _v-64d8ef38=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre _v-64d8ef38=\"\"><code class=\"language-html\" _v-64d8ef38=\"\"><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">class</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"20\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">height</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">class</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"40\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"success\"</span>&gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote _v-64d8ef38=\"\">\n<p _v-64d8ef38=\"\">动态变化 <n3-button @click.native=\"dynamicClick\" _v-64d8ef38=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-64d8ef38=\"\">\n  <n3-progress class=\"margin\" _v-64d8ef38=\"\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-64d8ef38=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-64d8ef38=\"\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-64d8ef38=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-64d8ef38=\"\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-64d8ef38=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress _v-64d8ef38=\"\">\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-64d8ef38=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre _v-64d8ef38=\"\"><code class=\"language-html\" _v-64d8ef38=\"\"><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">class</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"info\"</span> &gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">class</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">class</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">class</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre _v-64d8ef38=\"\"><code class=\"language-javascript\" _v-64d8ef38=\"\"><span class=\"hljs-keyword\" _v-64d8ef38=\"\">export</span> <span class=\"hljs-keyword\" _v-64d8ef38=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-64d8ef38=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-64d8ef38=\"\">dynamicData</span>: [<span class=\"hljs-number\" _v-64d8ef38=\"\">5</span>, <span class=\"hljs-number\" _v-64d8ef38=\"\">15</span>, <span class=\"hljs-number\" _v-64d8ef38=\"\">25</span>, <span class=\"hljs-number\" _v-64d8ef38=\"\">35</span>, <span class=\"hljs-number\" _v-64d8ef38=\"\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-64d8ef38=\"\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\" _v-64d8ef38=\"\">this</span>.dynamicData = <span class=\"hljs-keyword\" _v-64d8ef38=\"\">this</span>.dynamicData.map(<span class=\"hljs-function\" _v-64d8ef38=\"\"><span class=\"hljs-params\" _v-64d8ef38=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-64d8ef38=\"\">return</span> <span class=\"hljs-built_in\" _v-64d8ef38=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-64d8ef38=\"\">Math</span>.random() * <span class=\"hljs-number\" _v-64d8ef38=\"\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote _v-64d8ef38=\"\">\n<p _v-64d8ef38=\"\">叠加 <n3-button @click.native=\"stackedClick\" _v-64d8ef38=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-64d8ef38=\"\">\n  <n3-progress _v-64d8ef38=\"\">\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-64d8ef38=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-64d8ef38=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-64d8ef38=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-64d8ef38=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre _v-64d8ef38=\"\"><code class=\"language-html\" _v-64d8ef38=\"\"><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"stackedData[0]\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">label</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"warning\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"stackedData[1]\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">label</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"success\"</span> &gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"stackedData[2]\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">label</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">:now</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"stackedData[3]\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">label</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">type</span>=<span class=\"hljs-string\" _v-64d8ef38=\"\">\"primary\"</span> <span class=\"hljs-attr\" _v-64d8ef38=\"\">striped</span> &gt;</span>\n<span class=\"hljs-tag\" _v-64d8ef38=\"\">&lt;/<span class=\"hljs-name\" _v-64d8ef38=\"\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre _v-64d8ef38=\"\"><code class=\"language-javascript\" _v-64d8ef38=\"\"><span class=\"hljs-keyword\" _v-64d8ef38=\"\">export</span> <span class=\"hljs-keyword\" _v-64d8ef38=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-64d8ef38=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-64d8ef38=\"\">stackedData</span>: [<span class=\"hljs-number\" _v-64d8ef38=\"\">10</span>, <span class=\"hljs-number\" _v-64d8ef38=\"\">20</span>, <span class=\"hljs-number\" _v-64d8ef38=\"\">30</span>, <span class=\"hljs-number\" _v-64d8ef38=\"\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-64d8ef38=\"\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\" _v-64d8ef38=\"\">let</span> i = <span class=\"hljs-number\" _v-64d8ef38=\"\">100</span>\n      <span class=\"hljs-keyword\" _v-64d8ef38=\"\">this</span>.stackedData = <span class=\"hljs-keyword\" _v-64d8ef38=\"\">this</span>.stackedData.map(<span class=\"hljs-function\" _v-64d8ef38=\"\"><span class=\"hljs-params\" _v-64d8ef38=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-64d8ef38=\"\">const</span> random = <span class=\"hljs-built_in\" _v-64d8ef38=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-64d8ef38=\"\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\" _v-64d8ef38=\"\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3 _v-64d8ef38=\"\">参数</h3>\n<table _v-64d8ef38=\"\">\n<thead _v-64d8ef38=\"\">\n<tr _v-64d8ef38=\"\">\n<th _v-64d8ef38=\"\">参数名</th>\n<th _v-64d8ef38=\"\">类型</th>\n<th _v-64d8ef38=\"\">默认值</th>\n<th _v-64d8ef38=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-64d8ef38=\"\">\n<tr _v-64d8ef38=\"\">\n<td _v-64d8ef38=\"\">now</td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">Number</code></td>\n<td _v-64d8ef38=\"\"></td>\n<td _v-64d8ef38=\"\">当前进度</td>\n</tr>\n<tr _v-64d8ef38=\"\">\n<td _v-64d8ef38=\"\">height</td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">String</code></td>\n<td _v-64d8ef38=\"\">20px</td>\n<td _v-64d8ef38=\"\">高度</td>\n</tr>\n<tr _v-64d8ef38=\"\">\n<td _v-64d8ef38=\"\">type</td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">String</code></td>\n<td _v-64d8ef38=\"\"></td>\n<td _v-64d8ef38=\"\">样式</td>\n</tr>\n<tr _v-64d8ef38=\"\">\n<td _v-64d8ef38=\"\">label</td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">Boolean</code></td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">false</code></td>\n<td _v-64d8ef38=\"\">是否显示进度提示</td>\n</tr>\n<tr _v-64d8ef38=\"\">\n<td _v-64d8ef38=\"\">striped</td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">Boolean</code></td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">false</code></td>\n<td _v-64d8ef38=\"\">是否显示条纹</td>\n</tr>\n<tr _v-64d8ef38=\"\">\n<td _v-64d8ef38=\"\">animated</td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">Boolean</code></td>\n<td _v-64d8ef38=\"\"><code _v-64d8ef38=\"\">false</code></td>\n<td _v-64d8ef38=\"\">动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 580 */
@@ -15171,12 +15171,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-27.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-27.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-27.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-27.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-25.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-27.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-25.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15346,12 +15346,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-25.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-28.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-25.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-25.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-25.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-28.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-28.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-28.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-25.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-28.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15644,12 +15644,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-32.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-32.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-32.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-32.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-27.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-32.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-27.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15802,12 +15802,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-30.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-28.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-30.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-30.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-30.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-28.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-30.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16069,12 +16069,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-34.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-31.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-34.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-34.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-34.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-31.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-31.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-31.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-34.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-31.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16283,12 +16283,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-31.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-31.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-31.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-31.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-32.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-31.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-32.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16440,12 +16440,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-36.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-33.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-36.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-36.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-36.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-33.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-36.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16887,12 +16887,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-30.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-33.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-30.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-33.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-30.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-33.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16923,12 +16923,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-37.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-34.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-37.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-37.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-37.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-34.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-34.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-34.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-37.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-34.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17158,12 +17158,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-38.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-38.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-38.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-38.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-37.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-38.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-37.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17639,12 +17639,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-35.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-38.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-35.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-35.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-35.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-38.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-38.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-38.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-35.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-38.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17800,12 +17800,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-36.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-36.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-36.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-36.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-35.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-35.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-36.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-35.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17825,16 +17825,16 @@
 	// <div class="bs-docs-section" id="文件上传">
 	// <div class="bs-example">
 	//   <h4>点击</h4>
-	//   <n3-uploader url=""></n3-uploader>
+	//   <n3-uploader url="http://test.com/"></n3-uploader>
 	//   <hr>
 	// <p></p><h4>拖拽</h4>
-	// <n3-uploader type="drag"></n3-uploader><p></p>
+	// <n3-uploader type="drag" url="http://test.com/"></n3-uploader><p></p>
 	// </div>
 	// <pre><code class="language-html"><span class="hljs-comment">&lt;!-- 点击上传 --&gt;</span>
-	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-uploader</span> <span class="hljs-attr">url</span>=<span class="hljs-string">""</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-uploader</span>&gt;</span>
+	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-uploader</span> <span class="hljs-attr">url</span>=<span class="hljs-string">"http://test.com/"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-uploader</span>&gt;</span>
 	
 	// <span class="hljs-comment">&lt;!-- 拖拽上传 --&gt;</span>
-	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-uploader</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"drag"</span> &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-uploader</span>&gt;</span>
+	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-uploader</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"drag"</span> <span class="hljs-attr">url</span>=<span class="hljs-string">"http://test.com/"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-uploader</span>&gt;</span>
 	// </code></pre>
 	// <h3>参数</h3>
 	// <table>
@@ -17901,6 +17901,12 @@
 	// <td>10</td>
 	// <td>上传文件个数限制</td>
 	// </tr>
+	// <tr>
+	// <td>with-credentials</td>
+	// <td><code>Boolean</code></td>
+	// <td>false</td>
+	// <td>跨域时带cookies</td>
+	// </tr>
 	// </tbody>
 	// </table>
 	// <h3>Events</h3>
@@ -17953,7 +17959,7 @@
 /* 640 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n<h3>文件上传</h3>\n<div class=\"bs-docs-section\" id=\"文件上传\">\n<div class=\"bs-example\">\n  <h4>点击</h4>\n  <n3-uploader url=\"\"></n3-uploader>\n  <hr>\n<p></p><h4>拖拽</h4>\n<n3-uploader type=\"drag\"></n3-uploader><p></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- 点击上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">url</span>=<span class=\"hljs-string\">\"\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 拖拽上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"drag\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>files</td>\n<td>文件对象的name</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code>：<code>click</code> 或 <code>drag</code></td>\n<td>click</td>\n<td>拖拽或者点击</td>\n</tr>\n<tr>\n<td>accept</td>\n<td><code>String</code></td>\n<td>'' (全支持)</td>\n<td>支持的文件类型 例如: <code>'image/jpeg'</code> 或者 <code>'image'</code>支持所有图片格式,多个如 <code>'txt|image|mp3'</code></td>\n</tr>\n<tr>\n<td>url</td>\n<td><code>String</code></td>\n<td></td>\n<td>上传地址</td>\n</tr>\n<tr>\n<td>params</td>\n<td><code>Object</code></td>\n<td></td>\n<td>上传参数</td>\n</tr>\n<tr>\n<td>multiple</td>\n<td><code>Boolean</code></td>\n<td>true</td>\n<td>支持多文件上传</td>\n</tr>\n<tr>\n<td>drag-width</td>\n<td><code>String</code></td>\n<td>300px</td>\n<td>拖拽框宽度</td>\n</tr>\n<tr>\n<td>drag-height</td>\n<td><code>String</code></td>\n<td>200px</td>\n<td>拖拽框高度</td>\n</tr>\n<tr>\n<td>max-length</td>\n<td><code>Number</code></td>\n<td>10</td>\n<td>上传文件个数限制</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>success</td>\n<td>成功上传回调时</td>\n<td>({response, file})</td>\n</tr>\n<tr>\n<td>finish</td>\n<td>完成所有上传任务时</td>\n<td>()</td>\n</tr>\n<tr>\n<td>delete</td>\n<td>删除一个上传的项目时</td>\n<td>(uploadItem)</td>\n</tr>\n<tr>\n<td>error</td>\n<td>发生错误时</td>\n<td>({message, file})</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
+	module.exports = "<section><template>\n<h3>文件上传</h3>\n<div class=\"bs-docs-section\" id=\"文件上传\">\n<div class=\"bs-example\">\n  <h4>点击</h4>\n  <n3-uploader url=\"http://test.com/\"></n3-uploader>\n  <hr>\n<p></p><h4>拖拽</h4>\n<n3-uploader type=\"drag\" url=\"http://test.com/\"></n3-uploader><p></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- 点击上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">url</span>=<span class=\"hljs-string\">\"http://test.com/\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 拖拽上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"drag\"</span> <span class=\"hljs-attr\">url</span>=<span class=\"hljs-string\">\"http://test.com/\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>files</td>\n<td>文件对象的name</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code>：<code>click</code> 或 <code>drag</code></td>\n<td>click</td>\n<td>拖拽或者点击</td>\n</tr>\n<tr>\n<td>accept</td>\n<td><code>String</code></td>\n<td>'' (全支持)</td>\n<td>支持的文件类型 例如: <code>'image/jpeg'</code> 或者 <code>'image'</code>支持所有图片格式,多个如 <code>'txt|image|mp3'</code></td>\n</tr>\n<tr>\n<td>url</td>\n<td><code>String</code></td>\n<td></td>\n<td>上传地址</td>\n</tr>\n<tr>\n<td>params</td>\n<td><code>Object</code></td>\n<td></td>\n<td>上传参数</td>\n</tr>\n<tr>\n<td>multiple</td>\n<td><code>Boolean</code></td>\n<td>true</td>\n<td>支持多文件上传</td>\n</tr>\n<tr>\n<td>drag-width</td>\n<td><code>String</code></td>\n<td>300px</td>\n<td>拖拽框宽度</td>\n</tr>\n<tr>\n<td>drag-height</td>\n<td><code>String</code></td>\n<td>200px</td>\n<td>拖拽框高度</td>\n</tr>\n<tr>\n<td>max-length</td>\n<td><code>Number</code></td>\n<td>10</td>\n<td>上传文件个数限制</td>\n</tr>\n<tr>\n<td>with-credentials</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>跨域时带cookies</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>success</td>\n<td>成功上传回调时</td>\n<td>({response, file})</td>\n</tr>\n<tr>\n<td>finish</td>\n<td>完成所有上传任务时</td>\n<td>()</td>\n</tr>\n<tr>\n<td>delete</td>\n<td>删除一个上传的项目时</td>\n<td>(uploadItem)</td>\n</tr>\n<tr>\n<td>error</td>\n<td>发生错误时</td>\n<td>({message, file})</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
 /* 641 */
@@ -17974,12 +17980,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-41.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-40.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-41.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-41.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-41.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-40.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-40.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-40.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-41.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-40.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18496,12 +18502,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-40.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-40.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-40.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-40.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-39.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs-39.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-40.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs-39.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18679,12 +18685,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-39.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-39.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-39.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-39.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-42.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-39.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-42.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18953,12 +18959,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-42.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-41.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-42.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-684316a8&file=n3AnimateDocs-42.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-42.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-42.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-41.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-6834ff27&file=n3AnimateDocs-41.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-41.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-41.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-684316a8&file=n3AnimateDocs-42.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-42.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-6834ff27&file=n3AnimateDocs-41.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-41.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18980,8 +18986,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-684316a8&file=n3AnimateDocs-42.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-42.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-684316a8&file=n3AnimateDocs-42.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-42.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-6834ff27&file=n3AnimateDocs-41.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-41.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-6834ff27&file=n3AnimateDocs-41.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-41.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -18999,7 +19005,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".content[_v-684316a8] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }", ""]);
+	exports.push([module.id, ".content[_v-6834ff27] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }", ""]);
 	
 	// exports
 
@@ -19083,7 +19089,7 @@
 /* 662 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-684316a8=\"\"><template _v-684316a8=\"\">\n<h3 _v-684316a8=\"\">动画</h3>\n<div class=\"bs-docs-section\" _v-684316a8=\"\">\n<div class=\"bs-example\" _v-684316a8=\"\">\n  <n3-button @click.native=\"show=!show\" _v-684316a8=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-684316a8=\"\">\n    <div v-if=\"show\" class=\"content\" _v-684316a8=\"\">\n        <h4 _v-684316a8=\"\">Title</h4>\n        <p _v-684316a8=\"\">...</p>\n        <p _v-684316a8=\"\">...</p>\n        <p _v-684316a8=\"\">...</p>\n    </div>\n  </transition>\n</div>\n<pre _v-684316a8=\"\"><code class=\"language-html\" _v-684316a8=\"\"><span class=\"hljs-comment\" _v-684316a8=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-684316a8=\"\">&lt;<span class=\"hljs-name\" _v-684316a8=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-684316a8=\"\">@click.native</span>=<span class=\"hljs-string\" _v-684316a8=\"\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-684316a8=\"\">&lt;/<span class=\"hljs-name\" _v-684316a8=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-684316a8=\"\">&lt;<span class=\"hljs-name\" _v-684316a8=\"\">transition</span> <span class=\"hljs-attr\" _v-684316a8=\"\">name</span>=<span class=\"hljs-string\" _v-684316a8=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-684316a8=\"\">&lt;<span class=\"hljs-name\" _v-684316a8=\"\">div</span> <span class=\"hljs-attr\" _v-684316a8=\"\">v-if</span>=<span class=\"hljs-string\" _v-684316a8=\"\">\"show\"</span>  <span class=\"hljs-attr\" _v-684316a8=\"\">class</span>=<span class=\"hljs-string\" _v-684316a8=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-684316a8=\"\">&lt;<span class=\"hljs-name\" _v-684316a8=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-684316a8=\"\">&lt;/<span class=\"hljs-name\" _v-684316a8=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-684316a8=\"\">&lt;<span class=\"hljs-name\" _v-684316a8=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-684316a8=\"\">&lt;/<span class=\"hljs-name\" _v-684316a8=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-684316a8=\"\">&lt;<span class=\"hljs-name\" _v-684316a8=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-684316a8=\"\">&lt;/<span class=\"hljs-name\" _v-684316a8=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-684316a8=\"\">&lt;<span class=\"hljs-name\" _v-684316a8=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-684316a8=\"\">&lt;/<span class=\"hljs-name\" _v-684316a8=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-684316a8=\"\">&lt;/<span class=\"hljs-name\" _v-684316a8=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-684316a8=\"\">&lt;/<span class=\"hljs-name\" _v-684316a8=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-684316a8=\"\">参数</h3>\n<table _v-684316a8=\"\">\n<thead _v-684316a8=\"\">\n<tr _v-684316a8=\"\">\n<th _v-684316a8=\"\">参数</th>\n<th _v-684316a8=\"\">类型</th>\n<th _v-684316a8=\"\">默认值</th>\n<th _v-684316a8=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-684316a8=\"\">\n<tr _v-684316a8=\"\">\n<td _v-684316a8=\"\">name</td>\n<td _v-684316a8=\"\">String</td>\n<td _v-684316a8=\"\">-</td>\n<td _v-684316a8=\"\"><code _v-684316a8=\"\">fade</code> <code _v-684316a8=\"\">fadeLeft</code><code _v-684316a8=\"\">fadeDown</code><code _v-684316a8=\"\">bounce</code><code _v-684316a8=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-6834ff27=\"\"><template _v-6834ff27=\"\">\n<h3 _v-6834ff27=\"\">动画</h3>\n<div class=\"bs-docs-section\" _v-6834ff27=\"\">\n<div class=\"bs-example\" _v-6834ff27=\"\">\n  <n3-button @click.native=\"show=!show\" _v-6834ff27=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-6834ff27=\"\">\n    <div v-if=\"show\" class=\"content\" _v-6834ff27=\"\">\n        <h4 _v-6834ff27=\"\">Title</h4>\n        <p _v-6834ff27=\"\">...</p>\n        <p _v-6834ff27=\"\">...</p>\n        <p _v-6834ff27=\"\">...</p>\n    </div>\n  </transition>\n</div>\n<pre _v-6834ff27=\"\"><code class=\"language-html\" _v-6834ff27=\"\"><span class=\"hljs-comment\" _v-6834ff27=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-6834ff27=\"\">@click.native</span>=<span class=\"hljs-string\" _v-6834ff27=\"\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">transition</span> <span class=\"hljs-attr\" _v-6834ff27=\"\">name</span>=<span class=\"hljs-string\" _v-6834ff27=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">div</span> <span class=\"hljs-attr\" _v-6834ff27=\"\">v-if</span>=<span class=\"hljs-string\" _v-6834ff27=\"\">\"show\"</span>  <span class=\"hljs-attr\" _v-6834ff27=\"\">class</span>=<span class=\"hljs-string\" _v-6834ff27=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-6834ff27=\"\">参数</h3>\n<table _v-6834ff27=\"\">\n<thead _v-6834ff27=\"\">\n<tr _v-6834ff27=\"\">\n<th _v-6834ff27=\"\">参数</th>\n<th _v-6834ff27=\"\">类型</th>\n<th _v-6834ff27=\"\">默认值</th>\n<th _v-6834ff27=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-6834ff27=\"\">\n<tr _v-6834ff27=\"\">\n<td _v-6834ff27=\"\">name</td>\n<td _v-6834ff27=\"\">String</td>\n<td _v-6834ff27=\"\">-</td>\n<td _v-6834ff27=\"\"><code _v-6834ff27=\"\">fade</code> <code _v-6834ff27=\"\">fadeLeft</code><code _v-6834ff27=\"\">fadeDown</code><code _v-6834ff27=\"\">bounce</code><code _v-6834ff27=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 663 */
@@ -46667,7 +46673,7 @@
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; // <template>
 	
-	//   <div :class="[prefixCls + '-upload']" :id="`upload-${uploadId}`">
+	//   <div :class="[prefixCls + '-upload']" ref="uploader">
 	
 	//     <div v-if="type === 'click'">
 	
@@ -46685,7 +46691,11 @@
 	
 	//           :multiple="multiple"
 	
-	//           @change="onChange($event)" />
+	//           @change="onChange($event)"
+	
+	//           ref="input"
+	
+	//         />
 	
 	//         <slot>
 	
@@ -46765,7 +46775,11 @@
 	
 	//           :multiple="multiple"
 	
-	//           @change="onChange($event)" />
+	//           @change="onChange($event)"
+	
+	//           ref="input"
+	
+	//         />
 	
 	//         <label :for="uploadId"
 	
@@ -46799,7 +46813,7 @@
 	
 	//               :class="[prefixCls + '-upload-del-info']"
 	
-	//               @click="delFile(index)">
+	//               @click.native="delFile(index)">
 	
 	//             </n3-icon>
 	
@@ -46829,6 +46843,7 @@
 	
 	// </template>
 	
+	
 	// <script>
 	
 	
@@ -46851,7 +46866,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = {
-	  name: 'n3Uploader',
+	  name: 'Uploader',
 	  props: {
 	    name: {
 	      type: String,
@@ -46861,13 +46876,17 @@
 	      type: String,
 	      default: 'click'
 	    },
+	    withCredentials: {
+	      type: Boolean,
+	      default: false
+	    },
 	    accept: {
 	      type: String,
 	      default: ''
 	    },
 	    url: {
 	      type: String,
-	      default: ''
+	      required: true
 	    },
 	    multiple: {
 	      type: Boolean,
@@ -46922,163 +46941,14 @@
 	    n3Progressbar: _n3Progressbar2.default,
 	    n3Progress: _n3Progress2.default
 	  },
-	  mounted: function mounted() {
-	    var _this = this;
-	
-	    this.$nextTick(function () {
-	      _this._input = document.querySelector('#' + _this.uploadId);
-	      _this.$el = document.querySelector('#upload-' + _this.uploadId);
-	
-	      _this.advanceDrag && _this.addDragEvt();
-	    });
-	  },
-	  beforeDestroy: function beforeDestroy() {
-	    var _this2 = this;
-	
-	    var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
-	    events.forEach(function (event) {
-	      _this2.$el.removeEventListener(event, function () {
-	        return _this2._eventHandler();
-	      });
-	    });
-	  },
-	
 	  methods: {
-	    onChange: function onChange(e) {
-	      var files = e.target.files;
-	
-	      if (this.maxLength && this.uploadList.length === this.maxLength) {
-	        this._input.value = '';
-	        this.setError('超过上传数量限制，请先删除再进行上传');
-	        return;
-	      }
-	
-	      if (files) {
-	        for (var i in files) {
-	          if (_typeof(files[i]) === 'object' && files[i].name) {
-	            this.progress.push(0);
-	            this.uploadList.push(files[i]);
-	          }
-	        }
-	      } else {
-	        this.progress = [0];
-	        this.uploadList = [{ name: this._input.value.replace(/^.*\\/, '') }];
-	      }
-	
-	      this.submitForm();
-	    },
-	    submitForm: function submitForm() {
-	      if (this.uploadList.length > 0) {
-	        if (this.url) {
-	          if (this.xhr) {
-	            this.xhrUpload();
-	          } else {
-	            this.iframeUpload();
-	          }
-	        }
-	      }
-	    },
-	    xhrUpload: function xhrUpload() {
-	      var self = this;
-	      var i = 0;
-	      var len = this.uploadList.length;
-	      var data = void 0;
-	      for (i = 0; i < len; i++) {
-	        if (this.states[i]) {
-	          continue;
-	        }
-	        (function (i, file) {
-	          if (file.type.match(self.accept)) {
-	            (function () {
-	              data = new window.FormData();
-	              data.append(self.name, file, file.name);
-	
-	              if (self.params) {
-	                for (var name in self.params) {
-	                  data.append(name, self.params[name]);
-	                }
-	              }
-	              // 跨域时 添加身份凭证信息
-	              var xhr = new window.XMLHttpRequest();
-	              xhr.withCredentials = true;
-	              xhr.open('post', self.url, true);
-	
-	              xhr.onload = function () {
-	                self.parseResponse(xhr.responseText, i);
-	              };
-	
-	              xhr.upload.onprogress = function (e) {
-	                var loaded = e.loaded ? e.loaded : 0;
-	                var total = e.total ? e.total : 1;
-	
-	                self.$set('progress[' + i + ']', parseInt(loaded / total * 100, 10));
-	              };
-	
-	              xhr.onerror = function () {
-	                self.states[i] = false;
-	                self.setError('上传失败了！');
-	              };
-	
-	              try {
-	                xhr.send(data);
-	              } catch (e) {
-	                self.setError('上传失败了！');
-	              }
-	            })();
-	          } else {
-	            self.setError('不支持该文件类型');
-	          }
-	        })(i, this.uploadList[i]);
-	      }
-	    },
-	    iframeUpload: function iframeUpload() {
-	      var _this3 = this;
-	
-	      var i = 0;
-	      var self = this;
-	      var len = this.uploadList.length;
-	      if (this.testSameOrigin(this.url)) {
-	        var _loop = function _loop() {
-	          var iframeName = 'uploadiframe-' + i + '-' + new Date().getTime();
-	          var iframe = document.createElement('iframe');
-	          var form = document.createElement('form');
-	          var input = document.createElement('input');
-	
-	          input.setAttribute('type', 'file');
-	          input.setAttribute('value', _this3.uploadList[i].name);
-	          iframe.setAttribute('name', iframeName);
-	          iframe.style.display = 'none';
-	          form.setAttribute('method', 'post');
-	          form.setAttribute('action', _this3.url);
-	          form.setAttribute('target', iframeName);
-	          form.setAttribute('data-index', i);
-	
-	          document.body.appendChild(form);
-	          form.appendChild(iframe);
-	          form.appendChild(input);
-	
-	          if (self.params) {
-	            for (var name in self.params) {
-	              var _input = document.createElement('input');
-	              _input.setAttribute('type', 'text');
-	              _input.setAttribute('name', name);
-	              _input.setAttribute('value', self.params[name]);
-	            }
-	          }
-	
-	          iframe.addEventListener('load', function () {
-	            _this3.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));
-	            document.body.removeChild(form);
-	          });
-	          form.submit();
-	        };
-	
-	        for (i = 0; i < len; i++) {
-	          _loop();
-	        }
-	      } else {
-	        this.setError('iframe不支持跨域请求');
-	      }
+	    setError: function setError(message, index) {
+	      this.$emit('error', {
+	        message: message,
+	        file: index && this.uploadList[index] || null
+	      });
+	      this.states[index] = false;
+	      index > -1 && this.uploadList.splice(index, 1);
 	    },
 	    testSameOrigin: function testSameOrigin(url) {
 	      var loc = window.location;
@@ -47109,13 +46979,142 @@
 	        this.$emit('finish');
 	      }
 	    },
-	    setError: function setError(message, index) {
-	      this.$emit('error', {
-	        message: message,
-	        file: index && this.uploadList[index] || null
-	      });
-	      this.states[index] = false;
-	      index > -1 && this.uploadList.splice(index, 1);
+	    onChange: function onChange(e) {
+	      var files = e.target.files;
+	
+	      if (this.maxLength && this.uploadList.length === this.maxLength) {
+	        this.$refs.input.value = null;
+	        this.setError('超过上传数量限制，请先删除再进行上传');
+	        return;
+	      }
+	
+	      if (files) {
+	        for (var i in files) {
+	          if (_typeof(files[i]) === 'object' && files[i].name) {
+	            this.progress.push(0);
+	            this.uploadList.push(files[i]);
+	          }
+	        }
+	      } else {
+	        this.progress = [0];
+	        this.uploadList = [{ name: this.$refs.input.value.replace(/^.*\\/, '') }];
+	      }
+	
+	      this.$refs.input.value = null;
+	      this.submitForm();
+	    },
+	    submitForm: function submitForm() {
+	      if (!this.uploadList.length) {
+	        return;
+	      }
+	      if (this.xhr) {
+	        this.xhrUpload();
+	      } else {
+	        this.iframeUpload();
+	      }
+	    },
+	    xhrUpload: function xhrUpload() {
+	      var self = this;
+	      var i = 0;
+	      var len = this.uploadList.length;
+	      var data = void 0;
+	      for (i = 0; i < len; i++) {
+	        if (this.states[i]) {
+	          continue;
+	        }
+	        (function (i, file) {
+	          if (file.type.match(self.accept)) {
+	            (function () {
+	              data = new window.FormData();
+	              data.append(self.name, file, file.name);
+	
+	              if (self.params) {
+	                for (var name in self.params) {
+	                  data.append(name, self.params[name]);
+	                }
+	              }
+	
+	              var xhr = new window.XMLHttpRequest();
+	              // 是否带跨域的cookies
+	              xhr.withCredentials = !!self.withCredentials;
+	              xhr.open('post', self.url, true);
+	
+	              xhr.onload = function () {
+	                self.parseResponse(xhr.responseText, i);
+	              };
+	
+	              xhr.upload.onprogress = function (e) {
+	                var loaded = e.loaded ? e.loaded : 0;
+	                var total = e.total ? e.total : 1;
+	                var progressVal = parseInt(loaded / total * 100, 10);
+	                self.progress.splice(i, 1, progressVal);
+	              };
+	
+	              xhr.onerror = function () {
+	                self.states[i] = false;
+	                self.setError('上传失败了！');
+	              };
+	
+	              try {
+	                xhr.send(data);
+	              } catch (e) {
+	                self.setError('上传失败了！');
+	              }
+	            })();
+	          } else {
+	            self.setError('不支持该文件类型');
+	          }
+	        })(i, this.uploadList[i]);
+	      }
+	    },
+	    iframeUpload: function iframeUpload() {
+	      var _this = this;
+	
+	      var i = 0;
+	      var self = this;
+	      var len = this.uploadList.length;
+	      if (this.testSameOrigin(this.url)) {
+	        var _loop = function _loop() {
+	          var iframeName = 'uploadiframe-' + i + '-' + new Date().getTime();
+	          var iframe = document.createElement('iframe');
+	          var form = document.createElement('form');
+	          var input = document.createElement('input');
+	
+	          input.setAttribute('type', 'file');
+	          input.setAttribute('value', _this.uploadList[i].name);
+	          iframe.setAttribute('name', iframeName);
+	          iframe.style.display = 'none';
+	          form.setAttribute('method', 'post');
+	          form.setAttribute('action', _this.url);
+	          form.setAttribute('target', iframeName);
+	          form.setAttribute('data-index', i);
+	
+	          document.body.appendChild(form);
+	          form.appendChild(iframe);
+	          form.appendChild(input);
+	
+	          if (self.params) {
+	            for (var name in self.params) {
+	              var _input = document.createElement('input');
+	              _input.setAttribute('type', 'text');
+	              _input.setAttribute('name', name);
+	              _input.setAttribute('value', self.params[name]);
+	            }
+	          }
+	
+	          iframe.addEventListener('load', function () {
+	            _this.parseResponse(iframe.contentDocument.body.innerHTML, form.getAttribute('data-id'));
+	            document.body.removeChild(form);
+	          });
+	          form.submit();
+	        };
+	
+	        for (i = 0; i < len; i++) {
+	          _loop();
+	        }
+	      } else {
+	        this.setError('iframe不支持跨域请求');
+	      }
 	    },
 	    delFile: function delFile(index) {
 	      this.$emit('delete', this.uploadList[index]);
@@ -47124,13 +47123,13 @@
 	      this.progress.splice(index, 1);
 	    },
 	    addDragEvt: function addDragEvt() {
-	      var _this4 = this;
+	      var _this2 = this;
 	
 	      var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
 	
 	      events.forEach(function (event) {
-	        _this4.$el.addEventListener(event, function (e) {
-	          return _this4.dragHandler(e);
+	        _this2.$refs.uploader.addEventListener(event, function (e) {
+	          return _this2.dragHandler(e);
 	        });
 	      });
 	    },
@@ -47157,6 +47156,23 @@
 	        }
 	      }
 	    }
+	  },
+	  mounted: function mounted() {
+	    var _this3 = this;
+	
+	    this.$nextTick(function () {
+	      _this3.advanceDrag && _this3.addDragEvt();
+	    });
+	  },
+	  beforeDestroy: function beforeDestroy() {
+	    var _this4 = this;
+	
+	    var events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter'];
+	    events.forEach(function (event) {
+	      _this4.$refs.uploader.removeEventListener(event, function () {
+	        return _this4._eventHandler();
+	      });
+	    });
 	  }
 	};
 	// </script>
@@ -47165,7 +47181,7 @@
 /* 865 */
 /***/ function(module, exports) {
 
-	module.exports = "<div :class=\"[prefixCls + '-upload']\" :id=\"`upload-${uploadId}`\">\r\n    <div v-if=\"type === 'click'\">\r\n      <label>\r\n        <input\r\n          type=\"file\"\r\n          :name=\"name\"\r\n          :accept=\"accept\"\r\n          :id=\"uploadId\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\" />\r\n        <slot>\r\n          <n3-button>\r\n            <n3-icon type=\"cloud-upload\"></n3-icon>\r\n            点击上传\r\n          </n3-button>\r\n        </slot>\r\n      </label>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click.native=\"delFile(index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div v-if=\"type === 'drag'\"\r\n         :class=\"[prefixCls + '-upload-drag']\">\r\n      <div \r\n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\r\n        :style=\"{width:dragWidth,height:dragHeight}\">\r\n        <input type=\"file\"\r\n          :name=\"name\"\r\n          :id=\"uploadId\"\r\n          :accept=\"accept\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\" />\r\n        <label :for=\"uploadId\"\r\n            :class=\"[prefixCls + '-upload-drag-area']\">\r\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\r\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\r\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\r\n      </label>\r\n      </div>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click=\"delFile(index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div :class=\"[prefixCls + '-upload']\" ref=\"uploader\">\r\n    <div v-if=\"type === 'click'\">\r\n      <label>\r\n        <input\r\n          type=\"file\"\r\n          :name=\"name\"\r\n          :accept=\"accept\"\r\n          :id=\"uploadId\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\"\r\n          ref=\"input\"\r\n        />\r\n        <slot>\r\n          <n3-button>\r\n            <n3-icon type=\"cloud-upload\"></n3-icon>\r\n            点击上传\r\n          </n3-button>\r\n        </slot>\r\n      </label>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click.native=\"delFile(index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div v-if=\"type === 'drag'\"\r\n         :class=\"[prefixCls + '-upload-drag']\">\r\n      <div \r\n        :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\r\n        :style=\"{width:dragWidth,height:dragHeight}\">\r\n        <input type=\"file\"\r\n          :name=\"name\"\r\n          :id=\"uploadId\"\r\n          :accept=\"accept\"\r\n          :multiple=\"multiple\"\r\n          @change=\"onChange($event)\"\r\n          ref=\"input\"\r\n        />\r\n        <label :for=\"uploadId\"\r\n            :class=\"[prefixCls + '-upload-drag-area']\">\r\n        <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\r\n        <span v-if=\"advanceDrag\">点击或将文件拖拽到此区域上传</span>\r\n        <span v-if=\"!advanceDrag\">当前环境不支持拖拽上传，请点此上传</span>\r\n      </label>\r\n      </div>\r\n      <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\r\n        <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\r\n          <div :class=\"[prefixCls + '-upload-item-info']\">\r\n            <n3-icon type=\"file-text-o\"\r\n              :class=\"[prefixCls + '-upload-file-icon']\">\r\n            </n3-icon>\r\n            <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\r\n            <n3-icon type=\"times\"\r\n              :class=\"[prefixCls + '-upload-del-info']\"\r\n              @click.native=\"delFile(index)\">\r\n            </n3-icon>\r\n          </div>\r\n          <n3-progress style=\"padding:0px 4px\">\r\n            <n3-progressbar\r\n              type=\"success\"\r\n              height='3px'\r\n              :now=\"progress[index]\"\r\n            ></n3-progressbar>\r\n          </n3-progress>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
 
 /***/ },
 /* 866 */
