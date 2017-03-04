@@ -8436,12 +8436,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Docs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Docs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Docs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Docs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Docs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -8463,8 +8463,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-860bdb2c&file=n3Docs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-860bdb2c&file=n3Docs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-ca7e1e28&file=n3Docs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-ca7e1e28&file=n3Docs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3Docs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -8560,7 +8560,7 @@
 			};
 		},
 		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+			return /msie [6-9]\b/.test(self.navigator.userAgent.toLowerCase());
 		}),
 		getHeadElement = memoize(function () {
 			return document.head || document.getElementsByTagName("head")[0];
@@ -10006,12 +10006,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./headerDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./headerDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./headerDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./headerDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./headerDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10073,12 +10073,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LayoutDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LayoutDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LayoutDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LayoutDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LayoutDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LayoutDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3LayoutDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10100,8 +10100,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-fef88b18&file=n3LayoutDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-fef88b18&file=n3LayoutDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13d3a114&file=n3LayoutDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13d3a114&file=n3LayoutDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10325,12 +10325,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6af672fa&file=n3IconDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d656d7f6&file=n3IconDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6af672fa&file=n3IconDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d656d7f6&file=n3IconDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10352,8 +10352,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6af672fa&file=n3IconDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6af672fa&file=n3IconDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d656d7f6&file=n3IconDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d656d7f6&file=n3IconDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10371,7 +10371,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".row-ex div[_v-6af672fa] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-6af672fa] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-6af672fa] {\n    color:gray;\n  }", ""]);
+	exports.push([module.id, ".row-ex div[_v-d656d7f6] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-d656d7f6] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-d656d7f6] {\n    color:gray;\n  }", ""]);
 	
 	// exports
 
@@ -10517,7 +10517,7 @@
 /* 475 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"图标\" _v-6af672fa=\"\">\n    <h1 class=\"page-header\" _v-6af672fa=\"\"><a href=\"#图标\" class=\"anchor\" _v-6af672fa=\"\">图标</a><span class=\"author\" _v-6af672fa=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-6af672fa=\"\">\n    <h3 _v-6af672fa=\"\">FontAwesome 4.0 图标列表</h3>  \n    <h4 _v-6af672fa=\"\">11 New Icons in 4.0</h4>\n    <hr _v-6af672fa=\"\">\n    <n3-container _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in newfont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n        <br _v-6af672fa=\"\">\n      <h4 _v-6af672fa=\"\">Web Application Icons</h4>\n      <hr _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in webfont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <h4 _v-6af672fa=\"\">Form Control Icons</h4>\n      <hr _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in formfont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-6af672fa=\"\">\n      <h4 _v-6af672fa=\"\">Currency Icons</h4>\n      <hr _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-6af672fa=\"\">\n      <h4 _v-6af672fa=\"\">Text Edit Icons</h4>\n      <hr _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in textfont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-6af672fa=\"\">\n      <h4 _v-6af672fa=\"\">Directional Icons</h4>\n      <hr _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-6af672fa=\"\">\n      <h4 _v-6af672fa=\"\">Video Player Icons</h4>\n      <hr _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in videofont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-6af672fa=\"\">\n      <h4 _v-6af672fa=\"\">Brand Icons</h4>\n      <hr _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-6af672fa=\"\">\n      <h4 _v-6af672fa=\"\">Medical Icons</h4>\n      <hr _v-6af672fa=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-6af672fa=\"\">\n        <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-6af672fa=\"\"><n3-icon :type=\"font\" _v-6af672fa=\"\"></n3-icon><span _v-6af672fa=\"\">{{font}}</span></n3-column>\n      </n3-row>\n    </n3-container> \n    </div>\n    <pre _v-6af672fa=\"\"><code class=\"language-markup\" _v-6af672fa=\"\"><script type=\"language-mark-up\" _v-6af672fa=\"\">\n<n3-icon type=\"rub\"></n3-icon>\n    </script></code></pre>\n\n  <h2 _v-6af672fa=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-6af672fa=\"\">\n    <thead _v-6af672fa=\"\">\n      <tr _v-6af672fa=\"\">\n        <th _v-6af672fa=\"\">参数名</th>\n        <th _v-6af672fa=\"\">类型</th>\n        <th _v-6af672fa=\"\">默认值</th>\n        <th _v-6af672fa=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-6af672fa=\"\">\n      <tr _v-6af672fa=\"\">\n        <td _v-6af672fa=\"\">type</td>\n        <td _v-6af672fa=\"\"><code _v-6af672fa=\"\">String</code></td>\n        <td _v-6af672fa=\"\"><code _v-6af672fa=\"\"></code></td>\n        <td _v-6af672fa=\"\">图标类型名</td>\n      </tr>\n      <tr _v-6af672fa=\"\">\n        <td _v-6af672fa=\"\">size</td>\n        <td _v-6af672fa=\"\"><code _v-6af672fa=\"\">String</code></td>\n        <td _v-6af672fa=\"\"><code _v-6af672fa=\"\"></code></td>\n        <td _v-6af672fa=\"\">图标尺寸</td>\n      </tr>\n      <tr _v-6af672fa=\"\">\n        <td _v-6af672fa=\"\">color</td>\n        <td _v-6af672fa=\"\"><code _v-6af672fa=\"\">String</code></td>\n        <td _v-6af672fa=\"\"><code _v-6af672fa=\"\"></code></td>\n        <td _v-6af672fa=\"\">颜色</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"图标\" _v-d656d7f6=\"\">\n    <h1 class=\"page-header\" _v-d656d7f6=\"\"><a href=\"#图标\" class=\"anchor\" _v-d656d7f6=\"\">图标</a><span class=\"author\" _v-d656d7f6=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-d656d7f6=\"\">\n    <h3 _v-d656d7f6=\"\">FontAwesome 4.0 图标列表</h3>  \n    <h4 _v-d656d7f6=\"\">11 New Icons in 4.0</h4>\n    <hr _v-d656d7f6=\"\">\n    <n3-container _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in newfont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n        <br _v-d656d7f6=\"\">\n      <h4 _v-d656d7f6=\"\">Web Application Icons</h4>\n      <hr _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in webfont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <h4 _v-d656d7f6=\"\">Form Control Icons</h4>\n      <hr _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in formfont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-d656d7f6=\"\">\n      <h4 _v-d656d7f6=\"\">Currency Icons</h4>\n      <hr _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-d656d7f6=\"\">\n      <h4 _v-d656d7f6=\"\">Text Edit Icons</h4>\n      <hr _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in textfont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-d656d7f6=\"\">\n      <h4 _v-d656d7f6=\"\">Directional Icons</h4>\n      <hr _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-d656d7f6=\"\">\n      <h4 _v-d656d7f6=\"\">Video Player Icons</h4>\n      <hr _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in videofont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-d656d7f6=\"\">\n      <h4 _v-d656d7f6=\"\">Brand Icons</h4>\n      <hr _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n      <br _v-d656d7f6=\"\">\n      <h4 _v-d656d7f6=\"\">Medical Icons</h4>\n      <hr _v-d656d7f6=\"\">\n      <n3-row class=\"row-ex clearfix\" _v-d656d7f6=\"\">\n        <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-d656d7f6=\"\"><n3-icon :type=\"font\" _v-d656d7f6=\"\"></n3-icon><span _v-d656d7f6=\"\">{{font}}</span></n3-column>\n      </n3-row>\n    </n3-container> \n    </div>\n    <pre _v-d656d7f6=\"\"><code class=\"language-markup\" _v-d656d7f6=\"\"><script type=\"language-mark-up\" _v-d656d7f6=\"\">\n<n3-icon type=\"rub\"></n3-icon>\n    </script></code></pre>\n\n  <h2 _v-d656d7f6=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-d656d7f6=\"\">\n    <thead _v-d656d7f6=\"\">\n      <tr _v-d656d7f6=\"\">\n        <th _v-d656d7f6=\"\">参数名</th>\n        <th _v-d656d7f6=\"\">类型</th>\n        <th _v-d656d7f6=\"\">默认值</th>\n        <th _v-d656d7f6=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-d656d7f6=\"\">\n      <tr _v-d656d7f6=\"\">\n        <td _v-d656d7f6=\"\">type</td>\n        <td _v-d656d7f6=\"\"><code _v-d656d7f6=\"\">String</code></td>\n        <td _v-d656d7f6=\"\"><code _v-d656d7f6=\"\"></code></td>\n        <td _v-d656d7f6=\"\">图标类型名</td>\n      </tr>\n      <tr _v-d656d7f6=\"\">\n        <td _v-d656d7f6=\"\">size</td>\n        <td _v-d656d7f6=\"\"><code _v-d656d7f6=\"\">String</code></td>\n        <td _v-d656d7f6=\"\"><code _v-d656d7f6=\"\"></code></td>\n        <td _v-d656d7f6=\"\">图标尺寸</td>\n      </tr>\n      <tr _v-d656d7f6=\"\">\n        <td _v-d656d7f6=\"\">color</td>\n        <td _v-d656d7f6=\"\"><code _v-d656d7f6=\"\">String</code></td>\n        <td _v-d656d7f6=\"\"><code _v-d656d7f6=\"\"></code></td>\n        <td _v-d656d7f6=\"\">颜色</td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
 /* 476 */
@@ -10532,12 +10532,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10724,12 +10724,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10751,8 +10751,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-149c9418&file=n3AlertDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-149c9418&file=n3AlertDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d7731254&file=n3AlertDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d7731254&file=n3AlertDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11089,12 +11089,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Alert.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Alert.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11381,12 +11381,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Icon.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Icon.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11449,12 +11449,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Button.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Button.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11562,12 +11562,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Loading.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Loading.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11665,12 +11665,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Badge.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Badge.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11732,12 +11732,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11911,12 +11911,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11938,8 +11938,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4b6921c8&file=n3CascaderDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-4b6921c8&file=n3CascaderDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b39b436c&file=n3CascaderDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b39b436c&file=n3CascaderDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CascaderDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12144,12 +12144,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-35d4288c&file=n3AffixDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-9503e96c&file=n3AffixDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-35d4288c&file=n3AffixDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-9503e96c&file=n3AffixDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12171,8 +12171,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-35d4288c&file=n3AffixDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-35d4288c&file=n3AffixDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-9503e96c&file=n3AffixDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-9503e96c&file=n3AffixDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12190,7 +12190,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".sidebar[_v-35d4288c]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px; \n}\npre[class*='language-'][_v-35d4288c]{\n  position: static;\n}", ""]);
+	exports.push([module.id, ".sidebar[_v-9503e96c]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px; \n}\npre[class*='language-'][_v-9503e96c]{\n  position: static;\n}", ""]);
 	
 	// exports
 
@@ -12274,7 +12274,7 @@
 /* 512 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"固钉\" _v-35d4288c=\"\">\n    <h1 class=\"page-header\" _v-35d4288c=\"\"><a href=\"#固钉\" class=\"anchor\" _v-35d4288c=\"\">固钉</a><span class=\"author\" _v-35d4288c=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-35d4288c=\"\">\n      <h3 _v-35d4288c=\"\">\n        <n3-affix :offset=\"0\" _v-35d4288c=\"\">\n          <nav class=\"sidebar\" _v-35d4288c=\"\">\n            <ul _v-35d4288c=\"\">\n              <li _v-35d4288c=\"\">...</li>\n              <li _v-35d4288c=\"\">...</li>\n              <li _v-35d4288c=\"\">...</li>\n            </ul>\n          </nav>\n        </n3-affix>\n        \n      </h3>\n    </div>\n    <pre _v-35d4288c=\"\"><code class=\"language-markup\" _v-35d4288c=\"\"><script type=\"language-mark-up\" _v-35d4288c=\"\">\n<n3-affix :offset=\"0\">\n  <nav class=\"sidebar\">\n    <ul>\n      <li>...</li>\n      <li>...</li>\n      <li>...</li>\n    </ul>\n  </nav>\n</n3-affix>\n    </script></code></pre>\n    <h2 _v-35d4288c=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-35d4288c=\"\">\n      <thead _v-35d4288c=\"\">\n        <tr _v-35d4288c=\"\">\n          <th _v-35d4288c=\"\">参数名</th>\n          <th _v-35d4288c=\"\">类型</th>\n          <th _v-35d4288c=\"\">默认值</th>\n          <th _v-35d4288c=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-35d4288c=\"\">\n        <tr _v-35d4288c=\"\">\n          <td _v-35d4288c=\"\">offset</td>\n          <td _v-35d4288c=\"\"><code _v-35d4288c=\"\">Number</code></td>\n          <td _v-35d4288c=\"\"><code _v-35d4288c=\"\">0</code></td>\n          <td _v-35d4288c=\"\">离屏幕顶部的像素值</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"固钉\" _v-9503e96c=\"\">\n    <h1 class=\"page-header\" _v-9503e96c=\"\"><a href=\"#固钉\" class=\"anchor\" _v-9503e96c=\"\">固钉</a><span class=\"author\" _v-9503e96c=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-9503e96c=\"\">\n      <h3 _v-9503e96c=\"\">\n        <n3-affix :offset=\"0\" _v-9503e96c=\"\">\n          <nav class=\"sidebar\" _v-9503e96c=\"\">\n            <ul _v-9503e96c=\"\">\n              <li _v-9503e96c=\"\">...</li>\n              <li _v-9503e96c=\"\">...</li>\n              <li _v-9503e96c=\"\">...</li>\n            </ul>\n          </nav>\n        </n3-affix>\n        \n      </h3>\n    </div>\n    <pre _v-9503e96c=\"\"><code class=\"language-markup\" _v-9503e96c=\"\"><script type=\"language-mark-up\" _v-9503e96c=\"\">\n<n3-affix :offset=\"0\">\n  <nav class=\"sidebar\">\n    <ul>\n      <li>...</li>\n      <li>...</li>\n      <li>...</li>\n    </ul>\n  </nav>\n</n3-affix>\n    </script></code></pre>\n    <h2 _v-9503e96c=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-9503e96c=\"\">\n      <thead _v-9503e96c=\"\">\n        <tr _v-9503e96c=\"\">\n          <th _v-9503e96c=\"\">参数名</th>\n          <th _v-9503e96c=\"\">类型</th>\n          <th _v-9503e96c=\"\">默认值</th>\n          <th _v-9503e96c=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-9503e96c=\"\">\n        <tr _v-9503e96c=\"\">\n          <td _v-9503e96c=\"\">offset</td>\n          <td _v-9503e96c=\"\"><code _v-9503e96c=\"\">Number</code></td>\n          <td _v-9503e96c=\"\"><code _v-9503e96c=\"\">0</code></td>\n          <td _v-9503e96c=\"\">离屏幕顶部的像素值</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 513 */
@@ -12289,12 +12289,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12442,12 +12442,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-715c70ea&file=n3CarouselDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-67b4a528&file=n3CarouselDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CarouselDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-715c70ea&file=n3CarouselDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-67b4a528&file=n3CarouselDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12469,8 +12469,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-715c70ea&file=n3CarouselDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-715c70ea&file=n3CarouselDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-67b4a528&file=n3CarouselDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-67b4a528&file=n3CarouselDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12488,7 +12488,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".slide-img[_v-715c70ea]{\n  height:400px!important;\n}\n.carousel-caption[_v-715c70ea] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-715c70ea] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
+	exports.push([module.id, ".slide-img[_v-67b4a528]{\n  height:400px!important;\n}\n.carousel-caption[_v-67b4a528] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-67b4a528] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
 	
 	// exports
 
@@ -12623,7 +12623,7 @@
 /* 520 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"幻灯片\" _v-715c70ea=\"\">\n    <h1 class=\"page-header\" _v-715c70ea=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-715c70ea=\"\">幻灯片</a><span class=\"author\" _v-715c70ea=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-715c70ea=\"\">\n      <n3-carousel _v-715c70ea=\"\">\n        <n3-slide _v-715c70ea=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(521) + "\" _v-715c70ea=\"\">\n          <div class=\"carousel-caption\" _v-715c70ea=\"\">\n           <h3 _v-715c70ea=\"\">Slide #1</h3>\n           <p _v-715c70ea=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-715c70ea=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(522) + "\" _v-715c70ea=\"\">\n          <div class=\"carousel-caption\" _v-715c70ea=\"\">\n           <h3 _v-715c70ea=\"\">Slide #2</h3>\n           <p _v-715c70ea=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-715c70ea=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(523) + "\" _v-715c70ea=\"\">\n          <div class=\"carousel-caption\" _v-715c70ea=\"\">\n           <h3 _v-715c70ea=\"\">Slide #3</h3>\n           <p _v-715c70ea=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n    <pre _v-715c70ea=\"\"><code class=\"language-markup\" _v-715c70ea=\"\"><script type=\"language-mark-up\" _v-715c70ea=\"\">\n<n3-carousel>\n  <n3-slide>\n    <img class=\"slide-img\" src=\"/docs/assets/img/1.jpg\">\n    <div class=\"carousel-caption\">\n     <h3>Slide #1</h3>\n     <p>xxxxxxxxxxxx</p>\n   </div>\n  </n3-slide>\n  <n3-slide>\n    <img class=\"slide-img\" src=\"/docs/assets/img/2.jpg\">\n    <div class=\"carousel-caption\">\n     <h3>Slide #2</h3>\n     <p>xxxxxxxxxxxx</p>\n   </div>\n  </n3-slide>\n  <n3-slide>\n    <img class=\"slide-img\" src=\"/docs/assets/img/3.png\">\n    <div class=\"carousel-caption\">\n     <h3>Slide #3</h3>\n     <p>xxxxxxxxxxxx</p>\n   </div>\n  </n3-slide>\n</n3-carousel>\n    </script></code></pre>\n\n  <h2 _v-715c70ea=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-715c70ea=\"\">\n    <thead _v-715c70ea=\"\">\n      <tr _v-715c70ea=\"\">\n        <th _v-715c70ea=\"\">参数名</th>\n        <th _v-715c70ea=\"\">类型</th>\n        <th _v-715c70ea=\"\">默认值</th>\n        <th _v-715c70ea=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-715c70ea=\"\">\n      <tr _v-715c70ea=\"\">\n        <td _v-715c70ea=\"\">indicators</td>\n        <td _v-715c70ea=\"\"><code _v-715c70ea=\"\">Boolean</code></td>\n        <td _v-715c70ea=\"\"><code _v-715c70ea=\"\">true</code></td>\n        <td _v-715c70ea=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-715c70ea=\"\">\n        <td _v-715c70ea=\"\">controls</td>\n        <td _v-715c70ea=\"\"><code _v-715c70ea=\"\">Boolean</code></td>\n        <td _v-715c70ea=\"\"><code _v-715c70ea=\"\">true</code></td>\n        <td _v-715c70ea=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-715c70ea=\"\">\n        <td _v-715c70ea=\"\">interval</td>\n        <td _v-715c70ea=\"\"><code _v-715c70ea=\"\">Number</code></td>\n        <td _v-715c70ea=\"\"><code _v-715c70ea=\"\">5000</code></td>\n        <td _v-715c70ea=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"幻灯片\" _v-67b4a528=\"\">\n    <h1 class=\"page-header\" _v-67b4a528=\"\"><a href=\"#幻灯片\" class=\"anchor\" _v-67b4a528=\"\">幻灯片</a><span class=\"author\" _v-67b4a528=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-67b4a528=\"\">\n      <n3-carousel _v-67b4a528=\"\">\n        <n3-slide _v-67b4a528=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(521) + "\" _v-67b4a528=\"\">\n          <div class=\"carousel-caption\" _v-67b4a528=\"\">\n           <h3 _v-67b4a528=\"\">Slide #1</h3>\n           <p _v-67b4a528=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-67b4a528=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(522) + "\" _v-67b4a528=\"\">\n          <div class=\"carousel-caption\" _v-67b4a528=\"\">\n           <h3 _v-67b4a528=\"\">Slide #2</h3>\n           <p _v-67b4a528=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n        <n3-slide _v-67b4a528=\"\">\n          <img class=\"slide-img\" src=\"" + __webpack_require__(523) + "\" _v-67b4a528=\"\">\n          <div class=\"carousel-caption\" _v-67b4a528=\"\">\n           <h3 _v-67b4a528=\"\">Slide #3</h3>\n           <p _v-67b4a528=\"\">xxxxxxxxxxxx</p>\n         </div>\n        </n3-slide>\n      </n3-carousel>\n    </div>\n    <pre _v-67b4a528=\"\"><code class=\"language-markup\" _v-67b4a528=\"\"><script type=\"language-mark-up\" _v-67b4a528=\"\">\n<n3-carousel>\n  <n3-slide>\n    <img class=\"slide-img\" src=\"/docs/assets/img/1.jpg\">\n    <div class=\"carousel-caption\">\n     <h3>Slide #1</h3>\n     <p>xxxxxxxxxxxx</p>\n   </div>\n  </n3-slide>\n  <n3-slide>\n    <img class=\"slide-img\" src=\"/docs/assets/img/2.jpg\">\n    <div class=\"carousel-caption\">\n     <h3>Slide #2</h3>\n     <p>xxxxxxxxxxxx</p>\n   </div>\n  </n3-slide>\n  <n3-slide>\n    <img class=\"slide-img\" src=\"/docs/assets/img/3.png\">\n    <div class=\"carousel-caption\">\n     <h3>Slide #3</h3>\n     <p>xxxxxxxxxxxx</p>\n   </div>\n  </n3-slide>\n</n3-carousel>\n    </script></code></pre>\n\n  <h2 _v-67b4a528=\"\">参数</h2>\n  <table class=\"table table-bordered\" _v-67b4a528=\"\">\n    <thead _v-67b4a528=\"\">\n      <tr _v-67b4a528=\"\">\n        <th _v-67b4a528=\"\">参数名</th>\n        <th _v-67b4a528=\"\">类型</th>\n        <th _v-67b4a528=\"\">默认值</th>\n        <th _v-67b4a528=\"\">说明</th>\n      </tr>\n    </thead>\n    <tbody _v-67b4a528=\"\">\n      <tr _v-67b4a528=\"\">\n        <td _v-67b4a528=\"\">indicators</td>\n        <td _v-67b4a528=\"\"><code _v-67b4a528=\"\">Boolean</code></td>\n        <td _v-67b4a528=\"\"><code _v-67b4a528=\"\">true</code></td>\n        <td _v-67b4a528=\"\">是否显示控制点</td>\n      </tr>\n      <tr _v-67b4a528=\"\">\n        <td _v-67b4a528=\"\">controls</td>\n        <td _v-67b4a528=\"\"><code _v-67b4a528=\"\">Boolean</code></td>\n        <td _v-67b4a528=\"\"><code _v-67b4a528=\"\">true</code></td>\n        <td _v-67b4a528=\"\">是否显示箭头</td>\n      </tr>\n      <tr _v-67b4a528=\"\">\n        <td _v-67b4a528=\"\">interval</td>\n        <td _v-67b4a528=\"\"><code _v-67b4a528=\"\">Number</code></td>\n        <td _v-67b4a528=\"\"><code _v-67b4a528=\"\">5000</code></td>\n        <td _v-67b4a528=\"\">自动切换时间\n        </td>\n      </tr>\n    </tbody>\n  </table>\n  </div>";
 
 /***/ },
 /* 521 */
@@ -12653,12 +12653,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs.vue"
+	var id = "-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12683,12 +12683,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12801,12 +12801,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatepickerDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DatepickerDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12968,12 +12968,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13089,12 +13089,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13223,12 +13223,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13336,12 +13336,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13540,12 +13540,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13655,12 +13655,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13763,12 +13763,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TextareaDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TextareaDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13867,12 +13867,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14091,12 +14091,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopoverDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopoverDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14425,12 +14425,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-50de94c2&file=n3ProgressbarDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-30f6f100&file=n3ProgressbarDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ProgressbarDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-50de94c2&file=n3ProgressbarDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-30f6f100&file=n3ProgressbarDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ProgressbarDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14452,8 +14452,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-50de94c2&file=n3ProgressbarDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-50de94c2&file=n3ProgressbarDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-30f6f100&file=n3ProgressbarDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-30f6f100&file=n3ProgressbarDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -14471,7 +14471,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".margin[_v-50de94c2]{\n  margin-bottom:20px;\n}", ""]);
+	exports.push([module.id, ".margin[_v-30f6f100]{\n  margin-bottom:20px;\n}", ""]);
 	
 	// exports
 
@@ -14675,7 +14675,7 @@
 /* 563 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"进度条\" _v-50de94c2=\"\">\n    <h1 class=\"page-header\" _v-50de94c2=\"\"><a href=\"#进度条\" class=\"anchor\" _v-50de94c2=\"\">进度条</a><span class=\"author\" _v-50de94c2=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-50de94c2=\"\">\n      <h4 _v-50de94c2=\"\">高度</h4>\n      <div class=\"row\" _v-50de94c2=\"\">\n        <div class=\"col-md-4\" _v-50de94c2=\"\">\n          <n3-progress class=\"margin\" _v-50de94c2=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-50de94c2=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-50de94c2=\"\">\n          <n3-progress class=\"margin\" _v-50de94c2=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-50de94c2=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n\n      <hr _v-50de94c2=\"\">\n\n      <h4 _v-50de94c2=\"\">\n        动态\n        <n3-button @click=\"dynamicClick\" _v-50de94c2=\"\">随机变化</n3-button>\n      </h4>\n      <n3-progress class=\"margin\" _v-50de94c2=\"\">\n        <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-50de94c2=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-50de94c2=\"\">\n        <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-50de94c2=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-50de94c2=\"\">\n        <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-50de94c2=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress _v-50de94c2=\"\">\n        <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-50de94c2=\"\"></n3-progressbar>\n      </n3-progress>\n\n      <hr _v-50de94c2=\"\">\n\n      <h4 _v-50de94c2=\"\">\n        叠加\n        <n3-button @click=\"stackedClick\" _v-50de94c2=\"\">随机变化</n3-button>\n      </h4>\n\n      <n3-progress _v-50de94c2=\"\">\n        <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-50de94c2=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-50de94c2=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-50de94c2=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-50de94c2=\"\"></n3-progressbar>\n      </n3-progress></div>\n\n    </div>\n    <pre _v-50de94c2=\"\"><code class=\"language-markup\" _v-50de94c2=\"\"><script type=\"language-mark-up\" _v-50de94c2=\"\">\n<h4>静态</h4>\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <n3-progress>\n      <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n    </n3-progress>\n  </div>\n  <div class=\"col-md-4\">\n    <n3-progress>\n      <n3-progressbar :now=\"40\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n  </div>\n</div>\n\n<hr>\n\n<h4>\n  动态\n  <n3-button  @click=\"dynamicClick\">随机变化</n3-button>\n</h4>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" ></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped></n3-progressbar>\n</n3-progress>\n\n<hr>\n\n<h4>\n  叠加\n  <n3-button  @click=\"stackedClick\">随机变化</n3-button>\n</h4>\n\n<n3-progress>\n  <n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[1]\" label type=\"success\" ></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped ></n3-progressbar>\n</div>\n    </script></code></pre>\n\n    <h2 _v-50de94c2=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-50de94c2=\"\">\n      <thead _v-50de94c2=\"\">\n        <tr _v-50de94c2=\"\">\n         <th _v-50de94c2=\"\">参数名</th>\n          <th _v-50de94c2=\"\">类型</th>\n          <th _v-50de94c2=\"\">默认值</th>\n          <th _v-50de94c2=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-50de94c2=\"\">\n        <tr _v-50de94c2=\"\">\n          <td _v-50de94c2=\"\">now</td>\n          <td _v-50de94c2=\"\"><code _v-50de94c2=\"\">Number</code></td>\n          <td _v-50de94c2=\"\"></td>\n          <td _v-50de94c2=\"\">当前进度</td>\n        </tr>\n         <tr _v-50de94c2=\"\">\n          <td _v-50de94c2=\"\">height</td>\n          <td _v-50de94c2=\"\"><code _v-50de94c2=\"\">String</code></td>\n          <td _v-50de94c2=\"\">20px</td>\n          <td _v-50de94c2=\"\">高度</td>\n        </tr>\n        <tr _v-50de94c2=\"\">\n          <td _v-50de94c2=\"\">type</td>\n          <td _v-50de94c2=\"\"><code _v-50de94c2=\"\">String</code></td>\n          <td _v-50de94c2=\"\"></td>\n          <td _v-50de94c2=\"\">样式 </td>\n        </tr>\n        <tr _v-50de94c2=\"\">\n          <td _v-50de94c2=\"\">label</td>\n          <td _v-50de94c2=\"\"><code _v-50de94c2=\"\">Boolean</code></td>\n          <td _v-50de94c2=\"\">false</td>\n          <td _v-50de94c2=\"\">是否显示进度提示</td>\n        </tr>\n        <tr _v-50de94c2=\"\">\n          <td _v-50de94c2=\"\">striped</td>\n          <td _v-50de94c2=\"\"><code _v-50de94c2=\"\">Boolean</code></td>\n          <td _v-50de94c2=\"\"><code _v-50de94c2=\"\">false</code></td>\n          <td _v-50de94c2=\"\">是否显示条纹</td>\n        </tr>\n        <tr _v-50de94c2=\"\">\n          <td _v-50de94c2=\"\">animated</td>\n          <td _v-50de94c2=\"\"><code _v-50de94c2=\"\">Boolean</code></td>\n          <td _v-50de94c2=\"\"><code _v-50de94c2=\"\">false</code></td>\n          <td _v-50de94c2=\"\">动画效果</td>\n        </tr>\n      </tbody>\n    </table>\n  ";
+	module.exports = "<div class=\"bs-docs-section\" id=\"进度条\" _v-30f6f100=\"\">\n    <h1 class=\"page-header\" _v-30f6f100=\"\"><a href=\"#进度条\" class=\"anchor\" _v-30f6f100=\"\">进度条</a><span class=\"author\" _v-30f6f100=\"\"> </span></h1>\n    <div class=\"bs-example\" _v-30f6f100=\"\">\n      <h4 _v-30f6f100=\"\">高度</h4>\n      <div class=\"row\" _v-30f6f100=\"\">\n        <div class=\"col-md-4\" _v-30f6f100=\"\">\n          <n3-progress class=\"margin\" _v-30f6f100=\"\">\n            <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-30f6f100=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n        <div class=\"col-md-4\" _v-30f6f100=\"\">\n          <n3-progress class=\"margin\" _v-30f6f100=\"\">\n            <n3-progressbar :now=\"40\" type=\"success\" _v-30f6f100=\"\"></n3-progressbar>\n          </n3-progress>\n        </div>\n      </div>\n\n      <hr _v-30f6f100=\"\">\n\n      <h4 _v-30f6f100=\"\">\n        动态\n        <n3-button @click=\"dynamicClick\" _v-30f6f100=\"\">随机变化</n3-button>\n      </h4>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress class=\"margin\" _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n      <n3-progress _v-30f6f100=\"\">\n        <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress>\n\n      <hr _v-30f6f100=\"\">\n\n      <h4 _v-30f6f100=\"\">\n        叠加\n        <n3-button @click=\"stackedClick\" _v-30f6f100=\"\">随机变化</n3-button>\n      </h4>\n\n      <n3-progress _v-30f6f100=\"\">\n        <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-30f6f100=\"\"></n3-progressbar>\n        <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-30f6f100=\"\"></n3-progressbar>\n      </n3-progress></div>\n\n    </div>\n    <pre _v-30f6f100=\"\"><code class=\"language-markup\" _v-30f6f100=\"\"><script type=\"language-mark-up\" _v-30f6f100=\"\">\n<h4>静态</h4>\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <n3-progress>\n      <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n    </n3-progress>\n  </div>\n  <div class=\"col-md-4\">\n    <n3-progress>\n      <n3-progressbar :now=\"40\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n  </div>\n</div>\n\n<hr>\n\n<h4>\n  动态\n  <n3-button  @click=\"dynamicClick\">随机变化</n3-button>\n</h4>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" ></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n</n3-progress>\n<n3-progress>\n  <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped></n3-progressbar>\n</n3-progress>\n\n<hr>\n\n<h4>\n  叠加\n  <n3-button  @click=\"stackedClick\">随机变化</n3-button>\n</h4>\n\n<n3-progress>\n  <n3-progressbar :now=\"stackedData[0]\" label type=\"warning\" striped></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[1]\" label type=\"success\" ></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[2]\" label type=\"danger\"></n3-progressbar>\n  <n3-progressbar :now=\"stackedData[3]\" label type=\"primary\" striped ></n3-progressbar>\n</div>\n    </script></code></pre>\n\n    <h2 _v-30f6f100=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-30f6f100=\"\">\n      <thead _v-30f6f100=\"\">\n        <tr _v-30f6f100=\"\">\n         <th _v-30f6f100=\"\">参数名</th>\n          <th _v-30f6f100=\"\">类型</th>\n          <th _v-30f6f100=\"\">默认值</th>\n          <th _v-30f6f100=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-30f6f100=\"\">\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">now</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Number</code></td>\n          <td _v-30f6f100=\"\"></td>\n          <td _v-30f6f100=\"\">当前进度</td>\n        </tr>\n         <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">height</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">String</code></td>\n          <td _v-30f6f100=\"\">20px</td>\n          <td _v-30f6f100=\"\">高度</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">type</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">String</code></td>\n          <td _v-30f6f100=\"\"></td>\n          <td _v-30f6f100=\"\">样式 </td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">label</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\">false</td>\n          <td _v-30f6f100=\"\">是否显示进度提示</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">striped</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">false</code></td>\n          <td _v-30f6f100=\"\">是否显示条纹</td>\n        </tr>\n        <tr _v-30f6f100=\"\">\n          <td _v-30f6f100=\"\">animated</td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">Boolean</code></td>\n          <td _v-30f6f100=\"\"><code _v-30f6f100=\"\">false</code></td>\n          <td _v-30f6f100=\"\">动画效果</td>\n        </tr>\n      </tbody>\n    </table>\n  ";
 
 /***/ },
 /* 564 */
@@ -14690,12 +14690,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -14978,12 +14978,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15092,12 +15092,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15255,12 +15255,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15509,12 +15509,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15656,12 +15656,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15927,12 +15927,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3StepDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16018,12 +16018,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16179,12 +16179,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3LoadingDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16283,12 +16283,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePaginationDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePaginationDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePaginationDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SimplePaginationDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePaginationDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePaginationDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SimplePaginationDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePaginationDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SimplePaginationDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SimplePaginationDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16382,12 +16382,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16514,12 +16514,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17038,12 +17038,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs.vue"
+	var id = "-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17068,12 +17068,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17300,12 +17300,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17691,12 +17691,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17882,12 +17882,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18830,12 +18830,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -19005,12 +19005,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -19172,12 +19172,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -19262,12 +19262,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue"
+	var id = "-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue","-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-c0ff8b46&file=n3AnimateDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs.vue"], function () {
-	var newOptions = require("-!babel!./../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue")
+	module.hot.accept(["-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue","-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-478734ca&file=n3AnimateDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs.vue"], function () {
+	var newOptions = require("-!babel!../../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-c0ff8b46&file=n3AnimateDocs.vue!./../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs.vue")
+	var newTemplate = require("-!vue-html-loader!../../node_modules/vue-loader/lib/template-rewriter.js?id=_v-478734ca&file=n3AnimateDocs.vue!../../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -19289,8 +19289,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-c0ff8b46&file=n3AnimateDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-c0ff8b46&file=n3AnimateDocs.vue&scoped=true!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs.vue");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-478734ca&file=n3AnimateDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs.vue", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/vue-loader/lib/style-rewriter.js?id=_v-478734ca&file=n3AnimateDocs.vue&scoped=true!../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -19308,7 +19308,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".content[_v-c0ff8b46] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px; \n  }", ""]);
+	exports.push([module.id, ".content[_v-478734ca] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px; \n  }", ""]);
 	
 	// exports
 
@@ -19413,7 +19413,7 @@
 /* 627 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"bs-docs-section\" id=\"动画\" _v-c0ff8b46=\"\">\n    <h1 class=\"page-header\" _v-c0ff8b46=\"\">\n      <a href=\"#动画\" class=\"anchor\" _v-c0ff8b46=\"\">动画</a><span class=\"author\" _v-c0ff8b46=\"\"> </span>\n    </h1>\n    <div class=\"bs-example\" _v-c0ff8b46=\"\">\n        <n3-button @click=\"show1=!show1\" _v-c0ff8b46=\"\">fadeLeft</n3-button>\n        <div v-if=\"show1\" transition=\"fadeLeft\" class=\"content\" _v-c0ff8b46=\"\">\n            <h4 _v-c0ff8b46=\"\">Title</h4>\n            <p _v-c0ff8b46=\"\">...</p>\n            <p _v-c0ff8b46=\"\">...</p>\n            <p _v-c0ff8b46=\"\">...</p>\n        </div>\n        <br _v-c0ff8b46=\"\">\n        <br _v-c0ff8b46=\"\">\n         <n3-button @click=\"show2=!show2\" _v-c0ff8b46=\"\">fadeDown</n3-button>\n        <div v-if=\"show2\" transition=\"fadeDown\" class=\"content\" _v-c0ff8b46=\"\">\n            <h4 _v-c0ff8b46=\"\">Title</h4>\n            <p _v-c0ff8b46=\"\">...</p>\n            <p _v-c0ff8b46=\"\">...</p>\n            <p _v-c0ff8b46=\"\">...</p>\n        </div>\n        <br _v-c0ff8b46=\"\">\n        <br _v-c0ff8b46=\"\">\n        <n3-button @click=\"show3=!show3\" _v-c0ff8b46=\"\">bounce</n3-button>\n        <div v-if=\"show3\" transition=\"bounce\" style=\"width:100px\" _v-c0ff8b46=\"\">\n            <p _v-c0ff8b46=\"\">提示:作用于尺寸比较小的元素</p>\n        </div>\n    </div>\n\n<pre _v-c0ff8b46=\"\"><code class=\"language-markup\" _v-c0ff8b46=\"\"><script type=\"language-mark-up\" _v-c0ff8b46=\"\">\n<!--作用于( v-if , v-show , v-for) 等元素-->\n<n3-button  @click=\"show=!show\">切换</n3-button>\n<div v-if=\"show\" transition=\"fadeLeft\" >\n    <h4>Title</h4>\n    <p>...</p>\n    <p>...</p>\n    <p>...</p>\n</div>\n</script></code></pre>\n    <h2 _v-c0ff8b46=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-c0ff8b46=\"\">\n      <thead _v-c0ff8b46=\"\">\n        <tr _v-c0ff8b46=\"\">\n          <th _v-c0ff8b46=\"\">参数名</th>\n          <th _v-c0ff8b46=\"\">类型</th>\n          <th _v-c0ff8b46=\"\">默认值</th>\n          <th _v-c0ff8b46=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-c0ff8b46=\"\">\n        <tr _v-c0ff8b46=\"\">\n          <td _v-c0ff8b46=\"\">transition</td>\n          <td _v-c0ff8b46=\"\"><code _v-c0ff8b46=\"\">String</code></td>\n          <td _v-c0ff8b46=\"\"><code _v-c0ff8b46=\"\"></code></td>\n          <td _v-c0ff8b46=\"\"><code _v-c0ff8b46=\"\">fade</code> \n              <code _v-c0ff8b46=\"\">fadeLeft</code>\n              <code _v-c0ff8b46=\"\">fadeDown</code>\n              <code _v-c0ff8b46=\"\">bounce</code>\n              <code _v-c0ff8b46=\"\">collapse</code>\n              <code _v-c0ff8b46=\"\">scale</code>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
+	module.exports = "<div class=\"bs-docs-section\" id=\"动画\" _v-478734ca=\"\">\n    <h1 class=\"page-header\" _v-478734ca=\"\">\n      <a href=\"#动画\" class=\"anchor\" _v-478734ca=\"\">动画</a><span class=\"author\" _v-478734ca=\"\"> </span>\n    </h1>\n    <div class=\"bs-example\" _v-478734ca=\"\">\n        <n3-button @click=\"show1=!show1\" _v-478734ca=\"\">fadeLeft</n3-button>\n        <div v-if=\"show1\" transition=\"fadeLeft\" class=\"content\" _v-478734ca=\"\">\n            <h4 _v-478734ca=\"\">Title</h4>\n            <p _v-478734ca=\"\">...</p>\n            <p _v-478734ca=\"\">...</p>\n            <p _v-478734ca=\"\">...</p>\n        </div>\n        <br _v-478734ca=\"\">\n        <br _v-478734ca=\"\">\n         <n3-button @click=\"show2=!show2\" _v-478734ca=\"\">fadeDown</n3-button>\n        <div v-if=\"show2\" transition=\"fadeDown\" class=\"content\" _v-478734ca=\"\">\n            <h4 _v-478734ca=\"\">Title</h4>\n            <p _v-478734ca=\"\">...</p>\n            <p _v-478734ca=\"\">...</p>\n            <p _v-478734ca=\"\">...</p>\n        </div>\n        <br _v-478734ca=\"\">\n        <br _v-478734ca=\"\">\n        <n3-button @click=\"show3=!show3\" _v-478734ca=\"\">bounce</n3-button>\n        <div v-if=\"show3\" transition=\"bounce\" style=\"width:100px\" _v-478734ca=\"\">\n            <p _v-478734ca=\"\">提示:作用于尺寸比较小的元素</p>\n        </div>\n    </div>\n\n<pre _v-478734ca=\"\"><code class=\"language-markup\" _v-478734ca=\"\"><script type=\"language-mark-up\" _v-478734ca=\"\">\n<!--作用于( v-if , v-show , v-for) 等元素-->\n<n3-button  @click=\"show=!show\">切换</n3-button>\n<div v-if=\"show\" transition=\"fadeLeft\" >\n    <h4>Title</h4>\n    <p>...</p>\n    <p>...</p>\n    <p>...</p>\n</div>\n</script></code></pre>\n    <h2 _v-478734ca=\"\">参数</h2>\n    <table class=\"table table-bordered\" _v-478734ca=\"\">\n      <thead _v-478734ca=\"\">\n        <tr _v-478734ca=\"\">\n          <th _v-478734ca=\"\">参数名</th>\n          <th _v-478734ca=\"\">类型</th>\n          <th _v-478734ca=\"\">默认值</th>\n          <th _v-478734ca=\"\">说明</th>\n        </tr>\n      </thead>\n      <tbody _v-478734ca=\"\">\n        <tr _v-478734ca=\"\">\n          <td _v-478734ca=\"\">transition</td>\n          <td _v-478734ca=\"\"><code _v-478734ca=\"\">String</code></td>\n          <td _v-478734ca=\"\"><code _v-478734ca=\"\"></code></td>\n          <td _v-478734ca=\"\"><code _v-478734ca=\"\">fade</code> \n              <code _v-478734ca=\"\">fadeLeft</code>\n              <code _v-478734ca=\"\">fadeDown</code>\n              <code _v-478734ca=\"\">bounce</code>\n              <code _v-478734ca=\"\">collapse</code>\n              <code _v-478734ca=\"\">scale</code>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>";
 
 /***/ },
 /* 628 */
@@ -30062,12 +30062,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Carousel.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Carousel.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Carousel.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Carousel.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Carousel.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30396,12 +30396,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Accordion.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Accordion.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Accordion.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Accordion.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Accordion.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30497,12 +30497,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Affix.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Affix.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Affix.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Affix.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Affix.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30636,12 +30636,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Aside.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Aside.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Aside.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Aside.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Aside.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30835,12 +30835,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxGroup.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxGroup.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxGroup.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxGroup.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxGroup.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30996,12 +30996,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Checkbox.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Checkbox.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Checkbox.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Checkbox.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Checkbox.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31166,12 +31166,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./validate.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./validate.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./validate.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./validate.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./validate.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31522,12 +31522,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxBtn.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxBtn.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3CheckboxBtn.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxBtn.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3CheckboxBtn.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31641,12 +31641,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Cascader.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Cascader.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Cascader.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Cascader.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Cascader.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31891,12 +31891,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Input.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Input.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Input.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Input.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Input.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -32303,12 +32303,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Toast.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Toast.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Toast.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Toast.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Toast.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -32452,12 +32452,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Label.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Label.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Label.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Label.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Label.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -32531,12 +32531,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumber.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumber.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3InputNumber.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumber.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3InputNumber.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -32815,12 +32815,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Textarea.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Textarea.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -32980,12 +32980,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datepicker.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datepicker.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datepicker.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datepicker.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datepicker.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -33430,12 +33430,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timepicker.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timepicker.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timepicker.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timepicker.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timepicker.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -33683,12 +33683,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slider.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slider.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slider.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slider.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slider.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -34071,12 +34071,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tooltip.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tooltip.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tooltip.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tooltip.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tooltip.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -34350,12 +34350,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datetimepicker.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datetimepicker.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Datetimepicker.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datetimepicker.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Datetimepicker.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -34976,12 +34976,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Dropdown.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Dropdown.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Dropdown.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Dropdown.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Dropdown.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35089,12 +35089,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Modal.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Modal.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Modal.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Modal.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Modal.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35289,12 +35289,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Option.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Option.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Option.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Option.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Option.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35348,12 +35348,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Panel.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Panel.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Panel.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Panel.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Panel.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35464,12 +35464,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Popover.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Popover.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Popover.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Popover.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Popover.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35559,12 +35559,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopConfirm.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopConfirm.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3PopConfirm.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopConfirm.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3PopConfirm.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35699,12 +35699,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progressbar.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progressbar.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progressbar.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progressbar.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progressbar.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35797,12 +35797,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progress.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progress.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Progress.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progress.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Progress.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35853,12 +35853,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Radio.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Radio.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Radio.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Radio.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Radio.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -35990,12 +35990,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioBtn.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioBtn.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioBtn.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioBtn.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioBtn.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -36104,12 +36104,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioGroup.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioGroup.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3RadioGroup.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioGroup.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3RadioGroup.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -36272,12 +36272,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Select.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Select.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Select.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Select.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Select.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -36700,12 +36700,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tab.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tab.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tab.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tab.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tab.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -36808,12 +36808,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tabs.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tabs.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tabs.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tabs.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tabs.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -36981,12 +36981,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonGroup.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonGroup.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3ButtonGroup.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonGroup.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3ButtonGroup.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37037,12 +37037,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Container.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Container.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Container.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Container.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Container.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37109,12 +37109,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Row.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Row.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Row.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Row.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Row.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37164,12 +37164,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Nav.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Nav.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Nav.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Nav.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Nav.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37229,12 +37229,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SubNav.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SubNav.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SubNav.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SubNav.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SubNav.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37314,12 +37314,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavItem.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavItem.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3NavItem.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavItem.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3NavItem.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37335,7 +37335,7 @@
 	  value: true
 	});
 	// <template>
-	// 	<li :class="classObj">
+	// 	<li :class="classObj" @click="_click">
 	// 		<slot></slot>
 	// 	</li>
 	// </template>
@@ -37354,6 +37354,9 @@
 	    }
 	  },
 	  computed: {
+	    _click: function _click() {
+	      this.active = true;
+	    },
 	    classObj: function classObj() {
 	      var prefixCls = this.prefixCls,
 	          active = this.active,
@@ -37374,7 +37377,7 @@
 /* 757 */
 /***/ function(module, exports) {
 
-	module.exports = "<li :class=\"classObj\">\n\t\t<slot></slot>\n\t</li>";
+	module.exports = "<li :class=\"classObj\" @click=\"_click\">\n\t\t<slot></slot>\n\t</li>";
 
 /***/ },
 /* 758 */
@@ -37389,12 +37392,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Column.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Column.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Column.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Column.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Column.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37469,12 +37472,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Switch.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Switch.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Switch.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Switch.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Switch.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37606,12 +37609,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInput.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInput.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInput.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInput.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInput.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -37965,12 +37968,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Typeahead.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Typeahead.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Typeahead.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Typeahead.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Typeahead.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38204,12 +38207,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePagination.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePagination.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePagination.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SimplePagination.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePagination.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePagination.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SimplePagination.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3SimplePagination.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SimplePagination.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3SimplePagination.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38373,12 +38376,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Page.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Page.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Page.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Page.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Page.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38684,12 +38687,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Step.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Step.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Step.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Step.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Step.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -38788,12 +38791,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTable.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTable.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3DataTable.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTable.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3DataTable.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39558,12 +39561,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timeline.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timeline.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Timeline.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timeline.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Timeline.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39646,12 +39649,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineItem.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineItem.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3TimelineItem.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineItem.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3TimelineItem.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39727,12 +39730,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tags.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tags.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tags.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tags.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tags.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39861,12 +39864,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Breadcrumb.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Breadcrumb.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Breadcrumb.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Breadcrumb.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Breadcrumb.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39916,12 +39919,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbItem.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbItem.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3BreadcrumbItem.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbItem.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbItem.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -39982,12 +39985,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Form.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Form.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Form.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Form.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Form.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40144,12 +40147,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormItem.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormItem.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3FormItem.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormItem.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3FormItem.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40256,12 +40259,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slide.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slide.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Slide.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slide.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Slide.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40336,12 +40339,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Tree.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Tree.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40790,12 +40793,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Card.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Card.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Card.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Card.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Card.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -40863,12 +40866,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue"
+	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue","-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue"], function () {
-	var newOptions = require("-!babel!./../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue")
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue","-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue"], function () {
+	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./n3Uploader.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./n3Uploader.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -41392,7 +41395,7 @@
 /* 816 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.4.2). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.4.3). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 	
 	/*************************
 	 Velocity jQuery Shim
@@ -41937,7 +41940,7 @@
 						while (--i > 0) {
 							clone[i] = this[i];
 						}
-						return cloned;
+						return clone;
 					};
 				}
 				return slice;
@@ -42109,7 +42112,7 @@
 				hook: null, /* Defined below. */
 				/* Velocity-wide animation time remapping for testing purposes. */
 				mock: false,
-				version: {major: 1, minor: 4, patch: 2},
+				version: {major: 1, minor: 4, patch: 3},
 				/* Set to 1 or 2 (most verbose) to output debug info to console. */
 				debug: false,
 				/* Use rAF high resolution timestamp when available */
@@ -44848,7 +44851,7 @@
 										var cStart = startValue[iStart],
 												cEnd = endValue[iEnd];
 	
-										if (/[\d\.]/.test(cStart) && /[\d\.]/.test(cEnd)) {
+										if (/[\d\.-]/.test(cStart) && /[\d\.-]/.test(cEnd)) {
 											var tStart = cStart, // temporary character buffer
 													tEnd = cEnd, // temporary character buffer
 													dotStart = ".", // Make sure we can only ever match a single dot in a decimal
@@ -46116,8 +46119,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./blue.less", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./../../node_modules/autoprefixer-loader/index.js!./blue.less");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/less-loader/index.js!../../node_modules/autoprefixer-loader/index.js!./blue.less", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/less-loader/index.js!../../node_modules/autoprefixer-loader/index.js!./blue.less");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
