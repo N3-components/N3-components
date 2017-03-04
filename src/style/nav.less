@@ -28,7 +28,12 @@
   .@{prefix-cls}-navbar-nav > li > a,.@{prefix-cls}-navbar-nav .@{prefix-cls}-sub-nav-trigger {
     padding: @navVerticalPadding;
   }
-
+  
+  &.@{prefix-cls}-navbar-dark {
+    .@{prefix-cls}-navbar-nav > li > a,.@{prefix-cls}-navbar-nav .@{prefix-cls}-sub-nav-trigger{
+      color:@whiteColor;
+    }
+  }
 
   .@{prefix-cls}-navbar-nav {
     float: none;
@@ -79,6 +84,11 @@
   }
 }
 .@{prefix-cls}-navbar-horizontal {
+  .@{prefix-cls}-dropdown-menu{
+    margin-top: -1px;
+  }
+}
+.@{prefix-cls}-navbar-horizontal {
   .@{prefix-cls}-navbar-nav {
     float: left;
     >li{
@@ -89,12 +99,18 @@
     background-color: @hoverColor;
   }
 
-  .@{prefix-cls}-navbar-active  a,
-  .@{prefix-cls}-navbar-active  a:hover,
-  .@{prefix-cls}-navbar-active  a:focus {
+  .@{prefix-cls}-navbar-active  > a {
     color: @primaryColor;
     border-bottom:2px solid @primaryColor;
   }
+
+   .@{prefix-cls}-dropdown-menu{
+     .@{prefix-cls}-navbar-active > a{
+      border-bottom:2px solid @primaryColor;
+      background:@primaryColor;
+      color:#fff;
+     }
+   }
 
 }
 
@@ -124,6 +140,20 @@
 .@{prefix-cls}-navbar-dark {
   background-color: @lightBlackColor;
 
+  .@{prefix-cls}-navbar-nav .@{prefix-cls}-sub-nav-trigger{
+    color:@whiteColor;
+  }
+  
+  .@{prefix-cls}-navbar-nav .@{prefix-cls}-navbar-active  > a {
+    color:@primaryColor;
+  }
+
+  &.@{prefix-cls}-navbar-horizontal {
+    .@{prefix-cls}-dropdown-menu .@{prefix-cls}-navbar-active > li > a{
+      color:@whiteColor;
+    }
+  }
+
   .@{prefix-cls}-navbar-nav {
     > li .@{prefix-cls}-sub-nav-fa {
       color: @whiteColor;
@@ -139,7 +169,11 @@
 
     .@{prefix-cls}-dropdown-menu{
       background-color: @lightBlackColor;
+      li > a {
+        color:@whiteColor;
+      }
     }
+    
 
      .@{prefix-cls}-navbar-disabled  a,
      .@{prefix-cls}-navbar-disabled  a:hover,

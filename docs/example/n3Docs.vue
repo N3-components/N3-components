@@ -6,15 +6,13 @@
       <n3-row >
         <n3-column :col="2">
           <input placeholder="搜索" v-model="search" class="searchCom" ></input>
-          <n3-nav type="vertical" >
-             <n3-nav-item v-for="(index,item) in list">
-              <n3-sub-nav  :show.sync="item.show" >
+          <n3-nav type="vertical" :open-keys="[0,1,2,3,4,5]" v-ref:nav>
+              <n3-sub-nav :key="$index" v-for="(index,item) in list">
                 <a slot="title" style="color:#333">{{index}}</a>
-                <n3-nav-item v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
+                <n3-nav-item :key="i.value" v-for="i in item.list" :active="component == i.value" @click="change(i.value)">
                   <a>{{i.label}}</a>
                 </n3-nav-item>
               </n3-sub-nav>
-            </n3-nav-item>
           </n3-nav>
         </n3-column>
         
@@ -75,7 +73,6 @@ import n3TypeaheadDocs from './n3TypeaheadDocs.vue'
 import n3StepDocs from './n3StepDocs.vue'
 import n3SliderDocs from './n3SliderDocs.vue'
 import n3LoadingDocs from './n3LoadingDocs.vue'
-import n3SimplePaginationDocs from './n3SimplePaginationDocs.vue'
 import n3PageDocs from './n3PageDocs.vue'
 import n3DataTableDocs from './n3DataTableDocs.vue'
 import n3BreadcrumbDocs from './n3BreadcrumbDocs.vue'
@@ -195,6 +192,7 @@ export default{
   },
   methods: {
     change (value) {
+      $(window).scrollTop(0)
       this.component = value
       window.location.hash = value
     },
@@ -249,7 +247,6 @@ export default{
     n3ProgressbarDocs,
     n3TimelineDocs,
     n3LoadingDocs,
-    n3SimplePaginationDocs,
     n3PageDocs,
     n3SliderDocs,
     n3CascaderDocs,
@@ -275,10 +272,11 @@ export default{
   .searchCom{
     width: 100%;
     border: 0px;
-    border-bottom: 1px solid #ddd;
+    border: 1px solid #f9f9f9;
     padding: 5px 10px;
     margin-top: 10px;
     outline: none;
+    border-radius: 20px;
   }
 
 </style>
