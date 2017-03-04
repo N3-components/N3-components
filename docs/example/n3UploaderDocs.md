@@ -5,19 +5,19 @@
 <div class="bs-docs-section" id="文件上传"  >
 <div class="bs-example">
   <h4>点击</h4>
-  <n3-uploader url=""></n3-uploader>
+  <n3-uploader url="http://test.com/"></n3-uploader>
   <hr>
 
   <h4>拖拽</h4>
-  <n3-uploader type="drag" ></n3-uploader>
+  <n3-uploader type="drag" url="http://test.com/"></n3-uploader>
 </div>
 
 ```html
 <!-- 点击上传 -->
-<n3-uploader url=""></n3-uploader>
+<n3-uploader url="http://test.com/"></n3-uploader>
 
 <!-- 拖拽上传 -->
-<n3-uploader type="drag" ></n3-uploader>
+<n3-uploader type="drag" url="http://test.com/"></n3-uploader>
 ```
 
 ### 参数
@@ -33,6 +33,7 @@
 | drag-width | `String` | 300px | 拖拽框宽度 |
 | drag-height | `String` | 200px | 拖拽框高度 |
 | max-length | `Number` | 10 | 上传文件个数限制 |
+| with-credentials | `Boolean` | false | 跨域时带cookies |
 
 ### Events
 
