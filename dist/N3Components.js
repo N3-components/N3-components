@@ -10205,9 +10205,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (val) {
 	        body.appendChild(backdrop);
 	        _element2.default.addClass(body, prefixCls + '-modal-open');
-	        if (scrollBarWidth !== 0) {
-	          body.style.paddingRight = scrollBarWidth + 'px';
-	        }
 	        backdrop.className += ' ' + prefixCls + '-aside-in';
 	        this._clickEvent = _EventListener2.default.listen(backdrop, 'click', this.close);
 	        this.$emit('show');

@@ -9,7 +9,7 @@
 
   <n3-aside  placement="left" title="Title" width="350px" ref="asideLeft">
     <h4>左侧侧边栏</h4>
-    <p>...</p>
+    <p height="10000px">...</p>
     <p>...</p>
     <p>...</p>
     <n3-button @click.native="closeLeft">关闭</n3-button>
