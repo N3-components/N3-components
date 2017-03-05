@@ -75,9 +75,6 @@ export default {
       if (val) {
         body.appendChild(backdrop)
         element.addClass(body, prefixCls + '-modal-open')
-        if (scrollBarWidth !== 0) {
-          body.style.paddingRight = scrollBarWidth + 'px'
-        }
         backdrop.className += ' ' + prefixCls + '-aside-in'
         this._clickEvent = EventListener.listen(backdrop, 'click', this.close)
         if (type.isFunction(this.onShow)) {
