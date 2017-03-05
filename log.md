@@ -62,3 +62,13 @@ v1.3.x
 #### v1.3.2
 
 + 样式bug fix
+
+#### v1.3.3
+
++ 整理项目结构，移除ANT风格
+
+#### v1.3.4
+
++ 修复aside抖动（给body添加paddingRight）
+
++ 添加uploader props: withCredentials

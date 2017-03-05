@@ -3,10 +3,10 @@
     <h1 class="page-header"><a href="#文件上传" class="anchor">文件上传</a><span class="author"> </span></h1>
     <div class="bs-example">
       <h4>点击</h4>
-      <n3-uploader url="/" :show-list="true" ></n3-uploader>
+      <n3-uploader  url="/upload" :show-list="true" ></n3-uploader>
       <hr>
        <h4>拖拽</h4>
-      <n3-uploader type="drag" ></n3-uploader>
+      <n3-uploader url="/upload" type="drag" ></n3-uploader>
     </div>
     <pre><code class="language-markup"><script type="language-mark-up">
 
