@@ -104,7 +104,7 @@
       },
       url: {
         type: String,
-        default: ''
+        required: true
       },
       multiple: {
         type: Boolean,
@@ -117,6 +117,10 @@
       dragHeight: {
         type: String,
         default: '200px'
+      },
+      withCredentials: {
+        type: Boolean,
+        default: false
       },
       onError: {
         type: Function,
@@ -181,18 +185,6 @@
       n3Progressbar,
       n3Progress
     },
-    ready () {
-      this._input = document.querySelector('#' + this.uploadId)
-      this.$el = document.querySelector('#upload-' + this.uploadId)
-
-      this.advanceDrag && this.addDragEvt()
-    },
-    beforeDestroy () {
-      let events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter']
-      events.forEach((event) => {
-        this.$el.removeEventListener(event, () => this._eventHandler())
-      })
-    },
     methods: {
       onChange (e) {
         let files = e.target.files
@@ -215,7 +207,45 @@
           this.uploadList = [{name: this._input.value.replace(/^.*\\/, '')}]
         }
 
+        this._input.value = ''
         this.submitForm()
+      },
+
+      parseResponse (response, index) {
+        let data = null
+        let len = this.uploadList.length
+        if (!response) {
+          this.setError('服务器没有响应', index)
+        } else {
+          try {
+            data = JSON.parse(response)
+          } catch (e) {
+            this.setError('服务器响应数据格式有问题', index)
+          }
+          if (data) {
+            this.states[index] = true
+            if (type.isFunction(this.onSuccess)) {
+              this.onSuccess({
+                response: data,
+                file: this.uploadList[index]
+              })
+            }
+          }
+        }
+        if (Object.keys(this.states).length === len && type.isFunction(this.onFinish)) {
+          this.onFinish()
+        }
+      },
+
+      setError (message, index) {
+        if (type.isFunction(this.onError)) {
+          this.onError({
+            message: message,
+            file: index && this.uploadList[index] || null
+          })
+        }
+        this.states[index] = false
+        index > -1 && this.uploadList.splice(index, 1)
       },
 
       submitForm () {
@@ -250,9 +280,9 @@
                 }
               }
 
-              // 跨域时 添加身份凭证信息
               let xhr = new window.XMLHttpRequest()
-              xhr.withCredentials = true
+              // 跨域时 添加身份凭证信息
+              xhr.withCredentials = !!self.withCredentials
               xhr.open('post', self.url, true)
 
               xhr.onload = () => {
@@ -336,43 +366,6 @@
                a.protocol === loc.protocol
       },
 
-      parseResponse (response, index) {
-        let data = null
-        let len = this.uploadList.length
-        if (!response) {
-          this.setError('服务器没有响应', index)
-        } else {
-          try {
-            data = JSON.parse(response)
-          } catch (e) {
-            this.setError('服务器响应数据格式有问题', index)
-          }
-          if (data) {
-            this.states[index] = true
-            if (type.isFunction(this.onSuccess)) {
-              this.onSuccess({
-                response: data,
-                file: this.uploadList[index]
-              })
-            }
-          }
-        }
-        if (Object.keys(this.states).length === len && type.isFunction(this.onFinish)) {
-          this.onFinish()
-        }
-      },
-
-      setError (message, index) {
-        if (type.isFunction(this.onError)) {
-          this.onError({
-            message: message,
-            file: index && this.uploadList[index] || null
-          })
-        }
-        this.states[index] = false
-        index > -1 && this.uploadList.splice(index, 1)
-      },
-
       delFile (index) {
         if (type.isFunction(this.onDelete)) {
           this.onDelete(this.uploadList[index])
@@ -413,6 +406,18 @@
           }
         }
       }
+    },
+    ready () {
+      this._input = document.querySelector('#' + this.uploadId)
+      this.$el = document.querySelector('#upload-' + this.uploadId)
+
+      this.advanceDrag && this.addDragEvt()
+    },
+    beforeDestroy () {
+      let events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter']
+      events.forEach((event) => {
+        this.$el.removeEventListener(event, () => this._eventHandler())
+      })
     }
   }
   </script>
