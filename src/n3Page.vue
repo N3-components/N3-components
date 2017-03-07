@@ -82,6 +82,9 @@
         type: Number,
         default: 1
       },
+      value: {
+        type: Number
+      },
       total: {
         type: Number,
         default: 0
@@ -119,11 +122,14 @@
       },
       pagesize (val) {
         this.currentPagesize = val
+      },
+      currentPage (val) {
+        this.$emit('input', val)
       }
     },
     data () {
       return {
-        currentPage: this.current,
+        currentPage: this.value || this.current,
         currentPagesize: this.pagesize
       }
     },
