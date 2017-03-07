@@ -1,43 +1,44 @@
 <template>
-<div>
   <div>
-    <header-docs class="freeze" :active="type"></header-docs>
-    <n3-container class="bs-docs-container" v-if="type === 'base'">
-      <n3-row >
-        <n3-column :col="2">
-          <input placeholder="搜索" v-model="search" class="searchCom" ></input>
-          <n3-nav type="vertical" >
-             <n3-nav-item v-for="(item, index) in list">
-              <n3-sub-nav :show="item.show" @toggle="handleToggle(item)">
-                <a slot="title" style="color:#333" v-text="index"></a>
-                <n3-nav-item v-for="i in item.list" :active="component == i.value" @click.native="change(i.value)">
-                  <a v-text="i.label"></a>
+    <div>
+      <header-docs class="freeze" :active="type"></header-docs>
+      <n3-container class="bs-docs-container" v-if="type === 'base'">
+          <n3-row >
+            <n3-column :col="2">
+              <input placeholder="搜索" v-model="search" class="searchCom" ></input>
+              <n3-nav type="vertical" >
+                <n3-nav-item v-for="(item, index) in list">
+                  <n3-sub-nav :show="item.show" @toggle="handleToggle(item)">
+                    <a slot="title" style="color:#333" v-text="index"></a>
+                    <n3-nav-item v-for="i in item.list" :active="component == i.value" @click.native="change(i.value)">
+                      <a v-text="i.label"></a>
+                    </n3-nav-item>
+                  </n3-sub-nav>
                 </n3-nav-item>
-              </n3-sub-nav>
-            </n3-nav-item>
-          </n3-nav>
-        </n3-column>
-        <n3-column :col="10">
-          <component :is="component" ></component>
-        </n3-column>
-      <n3-row>
-    </n3-container>
-    <template v-else>
-      <slot></slot>
-    </template>
+              </n3-nav>
+            </n3-column>
+            <n3-column :col="10">
+              <component :is="component" ></component>
+            </n3-column>
+          </n3-row>
+      </n3-container>
+      <template v-else>
+        <slot></slot>
+      </template>
+    </div>
+    <footer class="bs-docs-footer">
+      <n3-container >
+        <ul>
+          <li><span>Email:</span>zhangking520@gmail.com</li>
+          <li><span>Github:</span><a href="https://github.com/N3-components/N3-components">Repository</a></li>
+          <li><span>QQ Group:</span>556286036</li>
+          <li><span>gitter:</span><a href="https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link">gitter link </a></li>
+        </ul>
+      </n3-container>
+    </footer>
   </div>
-  <footer class="bs-docs-footer">
-    <n3-container >
-      <ul>
-        <li><span>Email:</span>zhangking520@gmail.com</li>
-        <li><span>Github:</span><a href="https://github.com/N3-components/N3-components">Repository</a></li>
-        <li><span>QQ Group:</span>556286036</li>
-        <li><span>gitter:</span><a href="https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link">gitter link</li>
-      </ul>
-    </n3-container>
-  </footer>
-</div>
 </template>
+
 <script>
 require('../js/showLanguage')
 
