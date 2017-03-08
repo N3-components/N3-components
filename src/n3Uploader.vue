@@ -91,6 +91,15 @@
   import n3Progress from './n3Progress'
   import n3Progressbar from './n3Progressbar'
 
+  const ERRORS = {
+    SERVER_FAIL: '服务器没有响应',
+    REQUEST_ERROR: '请求失败',
+    RESPONSE_NOT_JSON: '服务器响应数据格式有问题',
+    TASK_OVER_LENGTH: '超过上传数量限制，请先删除再进行上传',
+    TASK_OVER_SIZE: '超过单个文件上传大小',
+    TASK_UNSUPPORTED_TYPE: '不支持该文件类型',
+    IFRAME_UNSUPPORTED_CROSS: 'iframe不支持跨域请求',
+  }
   export default {
     name: 'Uploader',
     props: {
@@ -134,6 +143,10 @@
         type: Number,
         default: 10
       },
+      maxSize: {
+        type: Number,
+        default: 10
+      },
       params: {
         type: Object
       },
@@ -158,6 +171,10 @@
       advanceDrag () {
         const div = document.createElement('div')
         return (('draggable' in div) || ('ondragstart' in div && 'ondrop' in div)) && 'FormData' in window && 'FileReader' in window
+      },
+      // MB换算成B
+      maxSizeB () {
+        return this.maxSize * 1024 * 1024
       }
     },
     components: {
@@ -167,6 +184,12 @@
       n3Progress
     },
     methods: {
+      delFile (index) {
+        this.$emit('delete', this.uploadList[index])
+        this.uploadList.splice(index, 1)
+        this.states.splice(index, 1)
+        this.progress.splice(index, 1)
+      },
       setError (message, index) {
         this.$emit('error', {
           message: message,
@@ -175,7 +198,44 @@
         this.states[index] = false
         index > -1 && this.uploadList.splice(index, 1)
       },
+      submitForm () {
+        if (!this.uploadList.length) {
+          return
+        }
+        if (this.xhr) {
+          this.xhrUpload()
+        } else {
+          this.iframeUpload()
+        }
+      },
+      onChange (e) {
+        let files = e.target.files
+        if (this.maxLength && this.uploadList.length === this.maxLength) {
+          this.$refs.input.value = null
+          this.setError(ERRORS.TASK_OVER_LENGTH)
+          return
+        }
+        if (files) {
+          // files 属性还包括item length
+          for (let i in Object.keys(files)) {
+            if (typeof (files[i]) !== 'object' || !files[i].name) {
+              continue
+            }
+            if (files[i].size > this.maxSizeB) {
+              this.setError(ERRORS.TASK_OVER_SIZE)
+              continue
+            }
+            this.progress.push(0)
+            this.uploadList.push(files[i])
+          }
+        } else {
+          this.progress = [0]
+          this.uploadList = [{name: this.$refs.input.value.replace(/^.*\\/, '')}]
+        }
 
+        this.$refs.input.value = null
+        this.submitForm()
+      },
       testSameOrigin (url) {
         const loc = window.location
         const a = document.createElement('a')
@@ -184,17 +244,16 @@
                a.port === loc.port &&
                a.protocol === loc.protocol
       },
-
       parseResponse (response, index) {
         let data = null
         let len = this.uploadList.length
         if (!response) {
-          this.setError('服务器没有响应', index)
+          this.setError(ERRORS.SERVER_FAIL, index)
         } else {
           try {
             data = JSON.parse(response)
           } catch (e) {
-            this.setError('服务器响应数据格式有问题', index)
+            this.setError(ERRORS.RESPONSE_NOT_JSON, index)
           }
           if (data) {
             this.states[index] = true
@@ -208,42 +267,6 @@
           this.$emit('finish')
         }
       },
-      onChange (e) {
-        let files = e.target.files
-        
-        if (this.maxLength && this.uploadList.length === this.maxLength) {
-          this.$refs.input.value = null
-          this.setError('超过上传数量限制，请先删除再进行上传')
-          return
-        }
-
-        if (files) {
-          for (let i in files) {
-            if (typeof (files[i]) === 'object' && files[i].name) {
-              this.progress.push(0)
-              this.uploadList.push(files[i])
-            }
-          }
-        } else {
-          this.progress = [0]
-          this.uploadList = [{name: this.$refs.input.value.replace(/^.*\\/, '')}]
-        }
-
-        this.$refs.input.value = null
-        this.submitForm()
-      },
-
-      submitForm () {
-        if (!this.uploadList.length) {
-          return
-        }
-        if (this.xhr) {
-          this.xhrUpload()
-        } else {
-          this.iframeUpload()
-        }
-      },
-
       xhrUpload () {
         let self = this
         let i = 0
@@ -282,21 +305,20 @@
 
               xhr.onerror = () => {
                 self.states[i] = false
-                self.setError('上传失败了！')
+                self.setError(ERRORS.REQUEST_ERROR)
               }
 
               try {
                 xhr.send(data)
               } catch (e) {
-                self.setError('上传失败了！')
+                self.setError(ERRORS.REQUEST_ERROR)
               }
             } else {
-              self.setError('不支持该文件类型')
+              self.setError(ERRORS.IFRAME_UNSUPPORTED_CROSS)
             }
           })(i, this.uploadList[i])
         }
       },
-
       iframeUpload () {
         let i = 0
         let self = this
@@ -337,17 +359,9 @@
             form.submit()
           }
         } else {
-          this.setError('iframe不支持跨域请求')
+          this.setError(ERRORS.IFRAME_UNSUPPORTED_CROSS)
         }
       },
-
-      delFile (index) {
-        this.$emit('delete', this.uploadList[index])
-        this.uploadList.splice(index, 1)
-        this.states.splice(index, 1)
-        this.progress.splice(index, 1)
-      },
-
       addDragEvt () {
         let events = ['drag', 'dragstart', 'dragend', 'dragleave', 'drop', 'dragover', 'dragenter']
 
@@ -355,7 +369,6 @@
           this.$refs.uploader.addEventListener(event, (e) => this.dragHandler(e))
         })
       },
-
       dragHandler (e) {
         let self = this
         e.preventDefault()
