@@ -4,20 +4,34 @@
 
 <div class="bs-docs-section" id="文件上传"  >
 <div class="bs-example">
-  <h4>点击</h4>
-  <n3-uploader url="http://test.com/"></n3-uploader>
-  <hr>
 
-  <h4>拖拽</h4>
-  <n3-uploader type="drag" url="http://test.com/"></n3-uploader>
+#### 单个文件上传
+
+<n3-uploader url="http://test.com/" :multiple="false" @error="onError" :max-size="0.5"></n3-uploader>
+
+---
+
+#### 点击上传
+
+<n3-uploader url="http://test.com/" @error="onError"></n3-uploader>
+
+---
+
+#### 支持拖拽
+
+<n3-uploader type="drag" url="http://test.com/" @error="onError"></n3-uploader>
+
 </div>
 
 ```html
+<!-- 单个上传 -->
+<n3-uploader url="http://test.com/" :multiple="false" @error="onError" :max-size="0.5"></n3-uploader>
+
 <!-- 点击上传 -->
-<n3-uploader url="http://test.com/"></n3-uploader>
+<n3-uploader url="http://test.com/" @error="onError"></n3-uploader>
 
 <!-- 拖拽上传 -->
-<n3-uploader type="drag" url="http://test.com/"></n3-uploader>
+<n3-uploader type="drag" url="http://test.com/" @error="onError"></n3-uploader>
 ```
 
 ### 参数
@@ -34,6 +48,7 @@
 | drag-height | `String` | 200px | 拖拽框高度 |
 | max-length | `Number` | 10 | 上传文件个数限制 |
 | with-credentials | `Boolean` | false | 跨域时带cookies |
+| max-size | `Number` | 10 | 单个文件的size限制（MB）
 
 ### Events
 
@@ -52,6 +67,11 @@
 export default {
   data () {
     return {
+    }
+  },
+  methods: {
+    onError ({ message, file }) {
+      console.error(message, file)
     }
   }
 }
