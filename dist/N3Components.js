@@ -29144,6 +29144,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var ERRORS = {
+	  SERVER_FAIL: '服务器没有响应',
+	  REQUEST_ERROR: '请求失败',
+	  RESPONSE_NOT_JSON: '服务器响应数据格式有问题',
+	  TASK_OVER_LENGTH: '超过上传数量限制，请先删除再进行上传',
+	  TASK_OVER_SIZE: '超过单个文件上传大小',
+	  TASK_UNSUPPORTED_TYPE: '不支持该文件类型',
+	  IFRAME_UNSUPPORTED_CROSS: 'iframe不支持跨域请求'
+	};
 	exports.default = {
 	  name: 'Uploader',
 	  props: {
@@ -29187,6 +29196,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      type: Number,
 	      default: 10
 	    },
+	    maxSize: {
+	      type: Number,
+	      default: 10
+	    },
 	    params: {
 	      type: Object
 	    },
@@ -29212,6 +29225,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    advanceDrag: function advanceDrag() {
 	      var div = document.createElement('div');
 	      return ('draggable' in div || 'ondragstart' in div && 'ondrop' in div) && 'FormData' in window && 'FileReader' in window;
+	    },
+	
+	    // MB换算成B
+	    maxSizeB: function maxSizeB() {
+	      return this.maxSize * 1024 * 1024;
 	    }
 	  },
 	  components: {
@@ -29221,6 +29239,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	    n3Progress: _n3Progress2.default
 	  },
 	  methods: {
+	    delFile: function delFile(index) {
+	      this.$emit('delete', this.uploadList[index]);
+	      this.uploadList.splice(index, 1);
+	      this.states.splice(index, 1);
+	      this.progress.splice(index, 1);
+	    },
 	    setError: function setError(message, index) {
 	      this.$emit('error', {
 	        message: message,
@@ -29228,6 +29252,44 @@ return /******/ (function(modules) { // webpackBootstrap
 	      });
 	      this.states[index] = false;
 	      index > -1 && this.uploadList.splice(index, 1);
+	    },
+	    submitForm: function submitForm() {
+	      if (!this.uploadList.length) {
+	        return;
+	      }
+	      if (this.xhr) {
+	        this.xhrUpload();
+	      } else {
+	        this.iframeUpload();
+	      }
+	    },
+	    onChange: function onChange(e) {
+	      var files = e.target.files;
+	      if (this.maxLength && this.uploadList.length === this.maxLength) {
+	        this.$refs.input.value = null;
+	        this.setError(ERRORS.TASK_OVER_LENGTH);
+	        return;
+	      }
+	      if (files) {
+	        // files 属性还包括item length
+	        for (var i in Object.keys(files)) {
+	          if (_typeof(files[i]) !== 'object' || !files[i].name) {
+	            continue;
+	          }
+	          if (files[i].size > this.maxSizeB) {
+	            this.setError(ERRORS.TASK_OVER_SIZE);
+	            continue;
+	          }
+	          this.progress.push(0);
+	          this.uploadList.push(files[i]);
+	        }
+	      } else {
+	        this.progress = [0];
+	        this.uploadList = [{ name: this.$refs.input.value.replace(/^.*\\/, '') }];
+	      }
+	
+	      this.$refs.input.value = null;
+	      this.submitForm();
 	    },
 	    testSameOrigin: function testSameOrigin(url) {
 	      var loc = window.location;
@@ -29239,12 +29301,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var data = null;
 	      var len = this.uploadList.length;
 	      if (!response) {
-	        this.setError('服务器没有响应', index);
+	        this.setError(ERRORS.SERVER_FAIL, index);
 	      } else {
 	        try {
 	          data = JSON.parse(response);
 	        } catch (e) {
-	          this.setError('服务器响应数据格式有问题', index);
+	          this.setError(ERRORS.RESPONSE_NOT_JSON, index);
 	        }
 	        if (data) {
 	          this.states[index] = true;
@@ -29256,40 +29318,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	      if (Object.keys(this.states).length === len) {
 	        this.$emit('finish');
-	      }
-	    },
-	    onChange: function onChange(e) {
-	      var files = e.target.files;
-	
-	      if (this.maxLength && this.uploadList.length === this.maxLength) {
-	        this.$refs.input.value = null;
-	        this.setError('超过上传数量限制，请先删除再进行上传');
-	        return;
-	      }
-	
-	      if (files) {
-	        for (var i in files) {
-	          if (_typeof(files[i]) === 'object' && files[i].name) {
-	            this.progress.push(0);
-	            this.uploadList.push(files[i]);
-	          }
-	        }
-	      } else {
-	        this.progress = [0];
-	        this.uploadList = [{ name: this.$refs.input.value.replace(/^.*\\/, '') }];
-	      }
-	
-	      this.$refs.input.value = null;
-	      this.submitForm();
-	    },
-	    submitForm: function submitForm() {
-	      if (!this.uploadList.length) {
-	        return;
-	      }
-	      if (this.xhr) {
-	        this.xhrUpload();
-	      } else {
-	        this.iframeUpload();
 	      }
 	    },
 	    xhrUpload: function xhrUpload() {
@@ -29331,17 +29359,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	              xhr.onerror = function () {
 	                self.states[i] = false;
-	                self.setError('上传失败了！');
+	                self.setError(ERRORS.REQUEST_ERROR);
 	              };
 	
 	              try {
 	                xhr.send(data);
 	              } catch (e) {
-	                self.setError('上传失败了！');
+	                self.setError(ERRORS.REQUEST_ERROR);
 	              }
 	            })();
 	          } else {
-	            self.setError('不支持该文件类型');
+	            self.setError(ERRORS.IFRAME_UNSUPPORTED_CROSS);
 	          }
 	        })(i, this.uploadList[i]);
 	      }
@@ -29392,14 +29420,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _loop();
 	        }
 	      } else {
-	        this.setError('iframe不支持跨域请求');
+	        this.setError(ERRORS.IFRAME_UNSUPPORTED_CROSS);
 	      }
-	    },
-	    delFile: function delFile(index) {
-	      this.$emit('delete', this.uploadList[index]);
-	      this.uploadList.splice(index, 1);
-	      this.states.splice(index, 1);
-	      this.progress.splice(index, 1);
 	    },
 	    addDragEvt: function addDragEvt() {
 	      var _this2 = this;
