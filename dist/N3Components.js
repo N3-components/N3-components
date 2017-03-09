@@ -13357,10 +13357,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    onChange: {
 	      type: Function
-	    },
-	    readonly: {
-	      type: Boolean,
-	      default: false
 	    }
 	  },
 	
