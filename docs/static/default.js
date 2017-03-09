@@ -10200,12 +10200,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-1.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-5.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-1.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-a54f471e&file=n3IconDocs-1.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-1.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-1.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-5.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-a4de8b16&file=n3IconDocs-5.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-5.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3IconDocs-5.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-a54f471e&file=n3IconDocs-1.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-1.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-a4de8b16&file=n3IconDocs-5.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3IconDocs-5.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10227,8 +10227,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-a54f471e&file=n3IconDocs-1.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-1.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-a54f471e&file=n3IconDocs-1.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-1.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-a4de8b16&file=n3IconDocs-5.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-5.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-a4de8b16&file=n3IconDocs-5.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-5.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10246,7 +10246,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".row-ex div[_v-a54f471e] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-a54f471e] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-a54f471e] {\n    color:gray;\n  }", ""]);
+	exports.push([module.id, ".row-ex div[_v-a4de8b16] {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i[_v-a4de8b16] {\n    margin-right: 10px;\n  }\n  .row-ex span[_v-a4de8b16] {\n    color:gray;\n  }", ""]);
 	
 	// exports
 
@@ -10392,7 +10392,7 @@
 /* 478 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-a54f471e=\"\"><template _v-a54f471e=\"\">\n<h3 _v-a54f471e=\"\">图标</h3>\n<div class=\"bs-docs-section\" id=\"图标\" _v-a54f471e=\"\">\n<div class=\"bs-example\" _v-a54f471e=\"\">\n<h3 _v-a54f471e=\"\">FontAwesome 4.0 图标列表</h3>\n<h4 _v-a54f471e=\"\">11 New Icons in 4.0</h4>\n<hr _v-a54f471e=\"\">\n<n3-container _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-a54f471e=\"\">\n  <h4 _v-a54f471e=\"\">Web Application Icons</h4>\n  <hr _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-a54f471e=\"\">Form Control Icons</h4>\n  <hr _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a54f471e=\"\">\n  <h4 _v-a54f471e=\"\">Currency Icons</h4>\n  <hr _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a54f471e=\"\">\n  <h4 _v-a54f471e=\"\">Text Edit Icons</h4>\n  <hr _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a54f471e=\"\">\n  <h4 _v-a54f471e=\"\">Directional Icons</h4>\n  <hr _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a54f471e=\"\">\n  <h4 _v-a54f471e=\"\">Video Player Icons</h4>\n  <hr _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a54f471e=\"\">\n  <h4 _v-a54f471e=\"\">Brand Icons</h4>\n  <hr _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a54f471e=\"\">\n  <h4 _v-a54f471e=\"\">Medical Icons</h4>\n  <hr _v-a54f471e=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a54f471e=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-a54f471e=\"\"><n3-icon :type=\"font\" _v-a54f471e=\"\"></n3-icon><span _v-a54f471e=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-a54f471e=\"\"><code class=\"language-html\" _v-a54f471e=\"\"><span class=\"hljs-tag\" _v-a54f471e=\"\">&lt;<span class=\"hljs-name\" _v-a54f471e=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-a54f471e=\"\">type</span>=<span class=\"hljs-string\" _v-a54f471e=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-a54f471e=\"\">&lt;/<span class=\"hljs-name\" _v-a54f471e=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-a54f471e=\"\">参数</h3>\n<table _v-a54f471e=\"\">\n<thead _v-a54f471e=\"\">\n<tr _v-a54f471e=\"\">\n<th _v-a54f471e=\"\">参数名</th>\n<th _v-a54f471e=\"\">类型</th>\n<th _v-a54f471e=\"\">默认值</th>\n<th _v-a54f471e=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-a54f471e=\"\">\n<tr _v-a54f471e=\"\">\n<td _v-a54f471e=\"\">type</td>\n<td _v-a54f471e=\"\"><code _v-a54f471e=\"\">String</code></td>\n<td _v-a54f471e=\"\"></td>\n<td _v-a54f471e=\"\">图标类型名</td>\n</tr>\n<tr _v-a54f471e=\"\">\n<td _v-a54f471e=\"\">size</td>\n<td _v-a54f471e=\"\"><code _v-a54f471e=\"\">String</code></td>\n<td _v-a54f471e=\"\"></td>\n<td _v-a54f471e=\"\">图标尺寸</td>\n</tr>\n<tr _v-a54f471e=\"\">\n<td _v-a54f471e=\"\">color</td>\n<td _v-a54f471e=\"\"><code _v-a54f471e=\"\">String</code></td>\n<td _v-a54f471e=\"\"></td>\n<td _v-a54f471e=\"\">颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-a4de8b16=\"\"><template _v-a4de8b16=\"\">\n<h3 _v-a4de8b16=\"\">图标</h3>\n<div class=\"bs-docs-section\" id=\"图标\" _v-a4de8b16=\"\">\n<div class=\"bs-example\" _v-a4de8b16=\"\">\n<h3 _v-a4de8b16=\"\">FontAwesome 4.0 图标列表</h3>\n<h4 _v-a4de8b16=\"\">11 New Icons in 4.0</h4>\n<hr _v-a4de8b16=\"\">\n<n3-container _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-a4de8b16=\"\">\n  <h4 _v-a4de8b16=\"\">Web Application Icons</h4>\n  <hr _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-a4de8b16=\"\">Form Control Icons</h4>\n  <hr _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4de8b16=\"\">\n  <h4 _v-a4de8b16=\"\">Currency Icons</h4>\n  <hr _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4de8b16=\"\">\n  <h4 _v-a4de8b16=\"\">Text Edit Icons</h4>\n  <hr _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4de8b16=\"\">\n  <h4 _v-a4de8b16=\"\">Directional Icons</h4>\n  <hr _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4de8b16=\"\">\n  <h4 _v-a4de8b16=\"\">Video Player Icons</h4>\n  <hr _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4de8b16=\"\">\n  <h4 _v-a4de8b16=\"\">Brand Icons</h4>\n  <hr _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-a4de8b16=\"\">\n  <h4 _v-a4de8b16=\"\">Medical Icons</h4>\n  <hr _v-a4de8b16=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-a4de8b16=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-a4de8b16=\"\"><n3-icon :type=\"font\" _v-a4de8b16=\"\"></n3-icon><span _v-a4de8b16=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-a4de8b16=\"\"><code class=\"language-html\" _v-a4de8b16=\"\"><span class=\"hljs-tag\" _v-a4de8b16=\"\">&lt;<span class=\"hljs-name\" _v-a4de8b16=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-a4de8b16=\"\">type</span>=<span class=\"hljs-string\" _v-a4de8b16=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-a4de8b16=\"\">&lt;/<span class=\"hljs-name\" _v-a4de8b16=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-a4de8b16=\"\">参数</h3>\n<table _v-a4de8b16=\"\">\n<thead _v-a4de8b16=\"\">\n<tr _v-a4de8b16=\"\">\n<th _v-a4de8b16=\"\">参数名</th>\n<th _v-a4de8b16=\"\">类型</th>\n<th _v-a4de8b16=\"\">默认值</th>\n<th _v-a4de8b16=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-a4de8b16=\"\">\n<tr _v-a4de8b16=\"\">\n<td _v-a4de8b16=\"\">type</td>\n<td _v-a4de8b16=\"\"><code _v-a4de8b16=\"\">String</code></td>\n<td _v-a4de8b16=\"\"></td>\n<td _v-a4de8b16=\"\">图标类型名</td>\n</tr>\n<tr _v-a4de8b16=\"\">\n<td _v-a4de8b16=\"\">size</td>\n<td _v-a4de8b16=\"\"><code _v-a4de8b16=\"\">String</code></td>\n<td _v-a4de8b16=\"\"></td>\n<td _v-a4de8b16=\"\">图标尺寸</td>\n</tr>\n<tr _v-a4de8b16=\"\">\n<td _v-a4de8b16=\"\">color</td>\n<td _v-a4de8b16=\"\"><code _v-a4de8b16=\"\">String</code></td>\n<td _v-a4de8b16=\"\"></td>\n<td _v-a4de8b16=\"\">颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 479 */
@@ -10413,12 +10413,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-3.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-1.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-3.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-3.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-3.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-1.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-1.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TagsDocs-1.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-3.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TagsDocs-1.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10609,12 +10609,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-6.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-4.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-4.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-6.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-6.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AlertDocs-6.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-4.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AlertDocs-6.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -10636,8 +10636,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-95624316&file=n3AlertDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-4.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-95624316&file=n3AlertDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-4.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-9529e512&file=n3AlertDocs-6.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-6.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-9529e512&file=n3AlertDocs-6.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-6.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -11626,12 +11626,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-5.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-7.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-5.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-5.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-5.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-7.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-7.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AccordionDocs-7.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-5.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AccordionDocs-7.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -11845,12 +11845,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-6.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-6.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-3.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CascaderDocs-3.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-6.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CascaderDocs-3.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12040,12 +12040,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-4.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-671d6c6c&file=n3AffixDocs-7.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-7.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-7.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-4.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-66f325e9&file=n3AffixDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-4.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AffixDocs-4.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-671d6c6c&file=n3AffixDocs-7.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-7.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-66f325e9&file=n3AffixDocs-4.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AffixDocs-4.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12067,8 +12067,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-671d6c6c&file=n3AffixDocs-7.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-671d6c6c&file=n3AffixDocs-7.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-66f325e9&file=n3AffixDocs-4.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-4.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-66f325e9&file=n3AffixDocs-4.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-4.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12086,7 +12086,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".sidebar[_v-671d6c6c]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-671d6c6c]{\n  position: static;\n}", ""]);
+	exports.push([module.id, ".sidebar[_v-66f325e9]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-66f325e9]{\n  position: static;\n}", ""]);
 	
 	// exports
 
@@ -12169,7 +12169,7 @@
 /* 517 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-671d6c6c=\"\"><template _v-671d6c6c=\"\">\n<h3 _v-671d6c6c=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-671d6c6c=\"\">\n  <div class=\"bs-example\" _v-671d6c6c=\"\">\n    <h3 _v-671d6c6c=\"\">\n      <n3-affix :offset=\"0\" _v-671d6c6c=\"\">\n        <nav class=\"sidebar\" _v-671d6c6c=\"\">\n          <ul _v-671d6c6c=\"\">\n            <li _v-671d6c6c=\"\">...</li>\n            <li _v-671d6c6c=\"\">...</li>\n            <li _v-671d6c6c=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-671d6c6c=\"\"><code class=\"language-html\" _v-671d6c6c=\"\"><span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;<span class=\"hljs-name\" _v-671d6c6c=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-671d6c6c=\"\">:offset</span>=<span class=\"hljs-string\" _v-671d6c6c=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;<span class=\"hljs-name\" _v-671d6c6c=\"\">nav</span> <span class=\"hljs-attr\" _v-671d6c6c=\"\">class</span>=<span class=\"hljs-string\" _v-671d6c6c=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;<span class=\"hljs-name\" _v-671d6c6c=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;<span class=\"hljs-name\" _v-671d6c6c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;/<span class=\"hljs-name\" _v-671d6c6c=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;<span class=\"hljs-name\" _v-671d6c6c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;/<span class=\"hljs-name\" _v-671d6c6c=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;<span class=\"hljs-name\" _v-671d6c6c=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;/<span class=\"hljs-name\" _v-671d6c6c=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;/<span class=\"hljs-name\" _v-671d6c6c=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;/<span class=\"hljs-name\" _v-671d6c6c=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-671d6c6c=\"\">&lt;/<span class=\"hljs-name\" _v-671d6c6c=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3 _v-671d6c6c=\"\">参数</h3>\n<table _v-671d6c6c=\"\">\n<thead _v-671d6c6c=\"\">\n<tr _v-671d6c6c=\"\">\n<th _v-671d6c6c=\"\">参数名</th>\n<th _v-671d6c6c=\"\">类型</th>\n<th _v-671d6c6c=\"\">默认值</th>\n<th _v-671d6c6c=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-671d6c6c=\"\">\n<tr _v-671d6c6c=\"\">\n<td _v-671d6c6c=\"\">offset</td>\n<td _v-671d6c6c=\"\"><code _v-671d6c6c=\"\">Number</code></td>\n<td _v-671d6c6c=\"\"><code _v-671d6c6c=\"\">0</code></td>\n<td _v-671d6c6c=\"\">离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-66f325e9=\"\"><template _v-66f325e9=\"\">\n<h3 _v-66f325e9=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-66f325e9=\"\">\n  <div class=\"bs-example\" _v-66f325e9=\"\">\n    <h3 _v-66f325e9=\"\">\n      <n3-affix :offset=\"0\" _v-66f325e9=\"\">\n        <nav class=\"sidebar\" _v-66f325e9=\"\">\n          <ul _v-66f325e9=\"\">\n            <li _v-66f325e9=\"\">...</li>\n            <li _v-66f325e9=\"\">...</li>\n            <li _v-66f325e9=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-66f325e9=\"\"><code class=\"language-html\" _v-66f325e9=\"\"><span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;<span class=\"hljs-name\" _v-66f325e9=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-66f325e9=\"\">:offset</span>=<span class=\"hljs-string\" _v-66f325e9=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;<span class=\"hljs-name\" _v-66f325e9=\"\">nav</span> <span class=\"hljs-attr\" _v-66f325e9=\"\">class</span>=<span class=\"hljs-string\" _v-66f325e9=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;<span class=\"hljs-name\" _v-66f325e9=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;<span class=\"hljs-name\" _v-66f325e9=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;/<span class=\"hljs-name\" _v-66f325e9=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;<span class=\"hljs-name\" _v-66f325e9=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;/<span class=\"hljs-name\" _v-66f325e9=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;<span class=\"hljs-name\" _v-66f325e9=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;/<span class=\"hljs-name\" _v-66f325e9=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;/<span class=\"hljs-name\" _v-66f325e9=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;/<span class=\"hljs-name\" _v-66f325e9=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-66f325e9=\"\">&lt;/<span class=\"hljs-name\" _v-66f325e9=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3 _v-66f325e9=\"\">参数</h3>\n<table _v-66f325e9=\"\">\n<thead _v-66f325e9=\"\">\n<tr _v-66f325e9=\"\">\n<th _v-66f325e9=\"\">参数名</th>\n<th _v-66f325e9=\"\">类型</th>\n<th _v-66f325e9=\"\">默认值</th>\n<th _v-66f325e9=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-66f325e9=\"\">\n<tr _v-66f325e9=\"\">\n<td _v-66f325e9=\"\">offset</td>\n<td _v-66f325e9=\"\"><code _v-66f325e9=\"\">Number</code></td>\n<td _v-66f325e9=\"\"><code _v-66f325e9=\"\">0</code></td>\n<td _v-66f325e9=\"\">离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 518 */
@@ -12190,12 +12190,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-9.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-8.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-8.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-9.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-9.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AsideDocs-9.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-8.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AsideDocs-9.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12368,12 +12368,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-508ca0c9&file=n3CarouselDocs-11.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-11.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-508ca0c9&file=n3CarouselDocs-11.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-11.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-9.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-508ca0c9&file=n3CarouselDocs-11.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CarouselDocs-11.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12395,8 +12395,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-4d5c3020&file=n3CarouselDocs-9.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-508ca0c9&file=n3CarouselDocs-11.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-11.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-508ca0c9&file=n3CarouselDocs-11.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-11.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12414,7 +12414,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".slide-img[_v-4d5c3020]{\n  height:400px!important;\n}\n.carousel-caption[_v-4d5c3020] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-4d5c3020] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
+	exports.push([module.id, ".slide-img[_v-508ca0c9]{\n  height:400px!important;\n}\n.carousel-caption[_v-508ca0c9] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-508ca0c9] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}", ""]);
 	
 	// exports
 
@@ -12423,7 +12423,7 @@
 /* 526 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-4d5c3020=\"\"><template _v-4d5c3020=\"\">\n<h3 _v-4d5c3020=\"\">幻灯片</h3>\n<div class=\"bs-docs-section\" id=\"幻灯片\" _v-4d5c3020=\"\">\n<div class=\"bs-example\" _v-4d5c3020=\"\">\n  <n3-carousel _v-4d5c3020=\"\">\n    <n3-slide _v-4d5c3020=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d5c3020=\"\">\n      <div class=\"carousel-caption\" _v-4d5c3020=\"\">\n        <h3 _v-4d5c3020=\"\">Slide #1</h3>\n        <p _v-4d5c3020=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-4d5c3020=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d5c3020=\"\">\n      <div class=\"carousel-caption\" _v-4d5c3020=\"\">\n        <h3 _v-4d5c3020=\"\">Slide #2</h3>\n        <p _v-4d5c3020=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-4d5c3020=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-4d5c3020=\"\">\n      <div class=\"carousel-caption\" _v-4d5c3020=\"\">\n        <h3 _v-4d5c3020=\"\">Slide #3</h3>\n        <p _v-4d5c3020=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-4d5c3020=\"\"><code class=\"language-html\" _v-4d5c3020=\"\"><span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">img</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">class</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">src</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">div</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">class</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">img</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">class</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">src</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">div</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">class</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">img</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">class</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">src</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">div</span> <span class=\"hljs-attr\" _v-4d5c3020=\"\">class</span>=<span class=\"hljs-string\" _v-4d5c3020=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;<span class=\"hljs-name\" _v-4d5c3020=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-4d5c3020=\"\">&lt;/<span class=\"hljs-name\" _v-4d5c3020=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-4d5c3020=\"\">参数</h3>\n<table _v-4d5c3020=\"\">\n<thead _v-4d5c3020=\"\">\n<tr _v-4d5c3020=\"\">\n<th _v-4d5c3020=\"\">参数名</th>\n<th _v-4d5c3020=\"\">类型</th>\n<th _v-4d5c3020=\"\">默认值</th>\n<th _v-4d5c3020=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-4d5c3020=\"\">\n<tr _v-4d5c3020=\"\">\n<td _v-4d5c3020=\"\">indicators</td>\n<td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">Boolean</code></td>\n<td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">true</code></td>\n<td _v-4d5c3020=\"\">是否显示控制点</td>\n</tr>\n<tr _v-4d5c3020=\"\">\n<td _v-4d5c3020=\"\">controls</td>\n<td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">Boolean</code></td>\n<td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">true</code></td>\n<td _v-4d5c3020=\"\">是否显示箭头</td>\n</tr>\n<tr _v-4d5c3020=\"\">\n<td _v-4d5c3020=\"\">interval</td>\n<td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">Number</code></td>\n<td _v-4d5c3020=\"\"><code _v-4d5c3020=\"\">5000</code></td>\n<td _v-4d5c3020=\"\">自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
+	module.exports = "<section _v-508ca0c9=\"\"><template _v-508ca0c9=\"\">\n<h3 _v-508ca0c9=\"\">幻灯片</h3>\n<div class=\"bs-docs-section\" id=\"幻灯片\" _v-508ca0c9=\"\">\n<div class=\"bs-example\" _v-508ca0c9=\"\">\n  <n3-carousel _v-508ca0c9=\"\">\n    <n3-slide _v-508ca0c9=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-508ca0c9=\"\">\n      <div class=\"carousel-caption\" _v-508ca0c9=\"\">\n        <h3 _v-508ca0c9=\"\">Slide #1</h3>\n        <p _v-508ca0c9=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-508ca0c9=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-508ca0c9=\"\">\n      <div class=\"carousel-caption\" _v-508ca0c9=\"\">\n        <h3 _v-508ca0c9=\"\">Slide #2</h3>\n        <p _v-508ca0c9=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-508ca0c9=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-508ca0c9=\"\">\n      <div class=\"carousel-caption\" _v-508ca0c9=\"\">\n        <h3 _v-508ca0c9=\"\">Slide #3</h3>\n        <p _v-508ca0c9=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-508ca0c9=\"\"><code class=\"language-html\" _v-508ca0c9=\"\"><span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">img</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">class</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">src</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">div</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">class</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">img</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">class</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">src</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">div</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">class</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">img</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">class</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">src</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">div</span> <span class=\"hljs-attr\" _v-508ca0c9=\"\">class</span>=<span class=\"hljs-string\" _v-508ca0c9=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;<span class=\"hljs-name\" _v-508ca0c9=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-508ca0c9=\"\">&lt;/<span class=\"hljs-name\" _v-508ca0c9=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-508ca0c9=\"\">参数</h3>\n<table _v-508ca0c9=\"\">\n<thead _v-508ca0c9=\"\">\n<tr _v-508ca0c9=\"\">\n<th _v-508ca0c9=\"\">参数名</th>\n<th _v-508ca0c9=\"\">类型</th>\n<th _v-508ca0c9=\"\">默认值</th>\n<th _v-508ca0c9=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-508ca0c9=\"\">\n<tr _v-508ca0c9=\"\">\n<td _v-508ca0c9=\"\">indicators</td>\n<td _v-508ca0c9=\"\"><code _v-508ca0c9=\"\">Boolean</code></td>\n<td _v-508ca0c9=\"\"><code _v-508ca0c9=\"\">true</code></td>\n<td _v-508ca0c9=\"\">是否显示控制点</td>\n</tr>\n<tr _v-508ca0c9=\"\">\n<td _v-508ca0c9=\"\">controls</td>\n<td _v-508ca0c9=\"\"><code _v-508ca0c9=\"\">Boolean</code></td>\n<td _v-508ca0c9=\"\"><code _v-508ca0c9=\"\">true</code></td>\n<td _v-508ca0c9=\"\">是否显示箭头</td>\n</tr>\n<tr _v-508ca0c9=\"\">\n<td _v-508ca0c9=\"\">interval</td>\n<td _v-508ca0c9=\"\"><code _v-508ca0c9=\"\">Number</code></td>\n<td _v-508ca0c9=\"\"><code _v-508ca0c9=\"\">5000</code></td>\n<td _v-508ca0c9=\"\">自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
 /* 527 */
@@ -12441,12 +12441,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-8.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-8.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-10.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ButtonsDocs-8.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12477,12 +12477,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-11.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-11.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-10.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ToastDocs-10.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-11.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ToastDocs-10.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12733,12 +12733,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-16.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-13.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-13.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-16.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-16.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimepickerDocs-16.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-13.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimepickerDocs-16.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12867,12 +12867,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-14.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-15.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-14.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-14.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-14.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-15.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-15.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DatetimepickerDocs-15.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-14.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DatetimepickerDocs-15.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -12990,12 +12990,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-14.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-15.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-14.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-14.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DropdownDocs-14.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-15.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DropdownDocs-14.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13117,12 +13117,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-16.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-16.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-13.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3ModalDocs-13.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-16.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3ModalDocs-13.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13145,40 +13145,41 @@
 	// <p>组件调用</p>
 	// </blockquote>
 	// <p><n3-button @click.native="showModal">Show modal</n3-button>
-	// <n3-modal title="Modal title" effect="fade" width="400px" ref="modal">
-	// <div slot="body">
-	// What's in a name? That which we call a rose
-	// By any other name would smell as sweet.
-	// </div>
-	// </n3-modal>
+	// <n3-modal title="Modal title" effect="fade" width="400px" ref="modal"></n3-modal></p>
+	//   <div slot="body">
+	//     What's in a name? That which we call a rose
+	//     By any other name would smell as sweet.
+	//   </div>
+	
 	// <n3-button class="btn btn-success" @click.native="showBigModal">Big modal</n3-button>
 	// <n3-modal title="Big Modal" effect="fade" width="800px" ref="bigModal">
-	// <div slot="body">
-	// What's in a name? That which we call a rose
-	// By any other name would smell as sweet.
-	// </div>
+	//   <div slot="body">
+	//     What's in a name? That which we call a rose
+	//     By any other name would smell as sweet.
+	//   </div>
 	// </n3-modal>
 	// <n3-button class="btn btn-primary" @click.native="showZoomModal">Zoom modal</n3-button>
 	// <n3-modal title="Zoom Modal" effect="zoom" width="400px" ref="zoomModal">
-	// <div slot="body">
-	// What's in a name? That which we call a rose
-	// By any other name would smell as sweet.
-	// </div>
+	//   <div slot="body">
+	//     What's in a name? That which we call a rose
+	//     By any other name would smell as sweet.
+	//   </div>
 	// </n3-modal>
 	// <n3-button @click.native="showCustomModal">Show custom modal</n3-button>
 	// <n3-modal effect="fade" width="400px" ref="customModal">
-	// <div slot="header">
-	// </div>
-	// <div slot="body">
-	// What's in a name? That which we call a rose
-	// By any other name would smell as sweet.
-	// </div>
-	// <div slot="footer">
-	// </div>
+	//   <div slot="header">
+	//   </div>
+	//   <div slot="body">
+	//     What's in a name? That which we call a rose
+	//     By any other name would smell as sweet.
+	//   </div>
+	//   <div slot="footer">
+	//   </div>
 	// </n3-modal>
 	// <n3-button @click.native="showConfirm">Show confirm</n3-button>
-	// <n3-button @click.native="showAlert">Show alert</n3-button></p>
+	// <n3-button @click.native="showAlert">Show alert</n3-button>
 	// </div>
+	// <hr>
 	// <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">n3-button</span> <span class="hljs-attr">@click.native</span>=<span class="hljs-string">"showModal"</span>&gt;</span>Show modal<span class="hljs-tag">&lt;/<span class="hljs-name">n3-button</span>&gt;</span>
 	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-modal</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Modal title"</span> <span class="hljs-attr">effect</span>=<span class="hljs-string">"fade"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400px"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"modal"</span>&gt;</span>
 	//   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">slot</span>=<span class="hljs-string">"body"</span>&gt;</span>
@@ -13212,6 +13213,28 @@
 	//   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 	// <span class="hljs-tag">&lt;/<span class="hljs-name">n3-modal</span>&gt;</span>
 	// </code></pre>
+	// <pre><code class="language-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+	//   data () {
+	//     <span class="hljs-keyword">return</span> {
+	//     }
+	//   },
+	//   <span class="hljs-attr">methods</span>: {
+	//     showModal () {
+	//       <span class="hljs-keyword">this</span>.$refs.modal.open()
+	//     },
+	//     showBigModal () {
+	//       <span class="hljs-keyword">this</span>.$refs.bigModal.open()
+	//     },
+	//     showZoomModal () {
+	//       <span class="hljs-keyword">this</span>.$refs.zoomModal.open()
+	//     },
+	//     showCustomModal () {
+	//       <span class="hljs-keyword">this</span>.$refs.customModal.open()
+	//     }
+	//   }
+	// }
+	// </code></pre>
+	// <hr>
 	// <blockquote>
 	// <p>函数调用</p>
 	// </blockquote>
@@ -13251,7 +13274,8 @@
 	//   }
 	// }
 	// </code></pre>
-	// <h3>参数</h3>
+	// <hr>
+	// <h3>组件调用</h3>
 	// <h4>组件参数</h4>
 	// <table>
 	// <thead>
@@ -13289,6 +13313,65 @@
 	// </tr>
 	// </tbody>
 	// </table>
+	// <h4>Events</h4>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>事件名称</th>
+	// <th>说明</th>
+	// <th>回调参数</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>show</td>
+	// <td>显示模态框时</td>
+	// <td></td>
+	// </tr>
+	// <tr>
+	// <td>hide</td>
+	// <td>隐藏模态框时</td>
+	// <td></td>
+	// </tr>
+	// <tr>
+	// <td>confirm</td>
+	// <td>按下确认时</td>
+	// <td></td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// <h4>组件方法</h4>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>方法名称</th>
+	// <th>说明</th>
+	// <th>备注</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>open</td>
+	// <td>显示模态框</td>
+	// <td></td>
+	// </tr>
+	// <tr>
+	// <td>close</td>
+	// <td>隐藏模态框</td>
+	// <td></td>
+	// </tr>
+	// <tr>
+	// <td>confirm</td>
+	// <td>触发确认事件</td>
+	// <td></td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// <hr>
+	// <h3>函数调用</h3>
+	// <blockquote>
+	// <p>直接在实例中调用this.n3Mode进行modal的创建和操作</p>
+	// </blockquote>
 	// <h4>函数参数</h4>
 	// <table>
 	// <thead>
@@ -13347,33 +13430,6 @@
 	// <td><code>Function</code></td>
 	// <td></td>
 	// <td>点击弹出框确定按钮时的回调函数</td>
-	// </tr>
-	// </tbody>
-	// </table>
-	// <h3>Events</h3>
-	// <table>
-	// <thead>
-	// <tr>
-	// <th>事件名称</th>
-	// <th>说明</th>
-	// <th>回调参数</th>
-	// </tr>
-	// </thead>
-	// <tbody>
-	// <tr>
-	// <td>show</td>
-	// <td>显示模态框时</td>
-	// <td></td>
-	// </tr>
-	// <tr>
-	// <td>hide</td>
-	// <td>隐藏模态框时</td>
-	// <td></td>
-	// </tr>
-	// <tr>
-	// <td>confirm</td>
-	// <td>按下确认时</td>
-	// <td></td>
 	// </tr>
 	// </tbody>
 	// </table>
@@ -13467,7 +13523,7 @@
 /* 553 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n<h3>弹出框</h3>\n<div class=\"bs-docs-section\" id=\"弹出框\">\n<div class=\"bs-example\">\n<blockquote>\n<p>组件调用</p>\n</blockquote>\n<p><n3-button @click.native=\"showModal\">Show modal</n3-button>\n<n3-modal title=\"Modal title\" effect=\"fade\" width=\"400px\" ref=\"modal\">\n<div slot=\"body\">\nWhat's in a name? That which we call a rose\nBy any other name would smell as sweet.\n</div>\n</n3-modal>\n<n3-button class=\"btn btn-success\" @click.native=\"showBigModal\">Big modal</n3-button>\n<n3-modal title=\"Big Modal\" effect=\"fade\" width=\"800px\" ref=\"bigModal\">\n<div slot=\"body\">\nWhat's in a name? That which we call a rose\nBy any other name would smell as sweet.\n</div>\n</n3-modal>\n<n3-button class=\"btn btn-primary\" @click.native=\"showZoomModal\">Zoom modal</n3-button>\n<n3-modal title=\"Zoom Modal\" effect=\"zoom\" width=\"400px\" ref=\"zoomModal\">\n<div slot=\"body\">\nWhat's in a name? That which we call a rose\nBy any other name would smell as sweet.\n</div>\n</n3-modal>\n<n3-button @click.native=\"showCustomModal\">Show custom modal</n3-button>\n<n3-modal effect=\"fade\" width=\"400px\" ref=\"customModal\">\n<div slot=\"header\">\n</div>\n<div slot=\"body\">\nWhat's in a name? That which we call a rose\nBy any other name would smell as sweet.\n</div>\n<div slot=\"footer\">\n</div>\n</n3-modal>\n<n3-button @click.native=\"showConfirm\">Show confirm</n3-button>\n<n3-button @click.native=\"showAlert\">Show alert</n3-button></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showModal\"</span>&gt;</span>Show modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Modal title\"</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"modal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"btn btn-success\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showBigModal\"</span>&gt;</span>Big modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Big Modal\"</span>  <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"800px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"bigModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"btn btn-primary\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showZoomModal\"</span>&gt;</span>Zoom modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Zoom Modal\"</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"zoom\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"zoomModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showCustomModal\"</span>&gt;</span>Show custom modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span>  <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"customModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"header\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"footer\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>函数调用</p>\n</blockquote>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.alert({\n        <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\">'消息框'</span>\n        message: <span class=\"hljs-string\">'这是一个消息框。'</span>,\n        <span class=\"hljs-attr\">effect</span>: <span class=\"hljs-string\">'fade'</span>,\n        <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'info'</span>,\n        onShow () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'打开对话框时触发'</span>)\n        },\n        onHide () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'关闭对话框时触发'</span>)\n        }\n      })\n    },\n    showConfirm () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.confirm({\n        <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\">'对话框'</span>,\n        <span class=\"hljs-attr\">message</span>: <span class=\"hljs-string\">'这是一个提供选择的对话框。'</span>,\n        <span class=\"hljs-attr\">effect</span>: <span class=\"hljs-string\">'zoom'</span>,\n        <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'success'</span>,\n        onShow () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'打开对话框时触发'</span>)\n        },\n        onConfirm () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'点击确定按钮时触发'</span>)\n        },\n        onHide () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'关闭对话框时触发'</span>)\n        }\n      })\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<h4>组件参数</h4>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框标题</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code></td>\n<td>'fade'</td>\n<td><code>fade``zoom</code></td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td></td>\n</tr>\n<tr>\n<td>backdrop</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>点击遮罩层是否关闭弹出框</td>\n</tr>\n</tbody>\n</table>\n<h4>函数参数</h4>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框标题，如果为空则不渲染 header</td>\n</tr>\n<tr>\n<td>message</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框内容</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code></td>\n<td>'fade'</td>\n<td><code>fade``zoom</code></td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td>弹出框类型，用于决定弹出框提示图标。</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td>弹出框宽度</td>\n</tr>\n<tr>\n<td>onShow</td>\n<td><code>Function</code></td>\n<td></td>\n<td>打开弹出框时的回调函数</td>\n</tr>\n<tr>\n<td>onHide</td>\n<td><code>Function</code></td>\n<td></td>\n<td>关闭弹出框时的回调函数</td>\n</tr>\n<tr>\n<td>onConfirm</td>\n<td><code>Function</code></td>\n<td></td>\n<td>点击弹出框确定按钮时的回调函数</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td>显示模态框时</td>\n<td></td>\n</tr>\n<tr>\n<td>hide</td>\n<td>隐藏模态框时</td>\n<td></td>\n</tr>\n<tr>\n<td>confirm</td>\n<td>按下确认时</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>用法说明</h3>\n<h4>组件驱动</h4>\n<p>如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer.</p>\n<p>但是如果你需要自己定制弹出框内容，你可以实现</p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"header\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"footer\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n</code></pre>\n<h4>函数驱动</h4>\n<p>N3 提供函数驱动的一次性模态框，通过实例属性 n3Modal.alert 及 n3Modal.confirm 调用，它会在使用时动态绑定到 DOM 树中，并在关闭后自动销毁。</p>\n<p>为了还原原生对话框操作体验，函数驱动的弹出框将不能通过点击背景进行关闭。</p>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">const</span> options = {...}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.alert(options)\n    },\n    showConfirm () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.confirm(options)\n    }\n  }\n}\n\n</code></pre>\n</div>\n</template>\n</section>";
+	module.exports = "<section><template>\n<h3>弹出框</h3>\n<div class=\"bs-docs-section\" id=\"弹出框\">\n<div class=\"bs-example\">\n<blockquote>\n<p>组件调用</p>\n</blockquote>\n<p><n3-button @click.native=\"showModal\">Show modal</n3-button>\n<n3-modal title=\"Modal title\" effect=\"fade\" width=\"400px\" ref=\"modal\"></n3-modal></p>\n  <div slot=\"body\">\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  </div>\n\n<n3-button class=\"btn btn-success\" @click.native=\"showBigModal\">Big modal</n3-button>\n<n3-modal title=\"Big Modal\" effect=\"fade\" width=\"800px\" ref=\"bigModal\">\n  <div slot=\"body\">\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  </div>\n</n3-modal>\n<n3-button class=\"btn btn-primary\" @click.native=\"showZoomModal\">Zoom modal</n3-button>\n<n3-modal title=\"Zoom Modal\" effect=\"zoom\" width=\"400px\" ref=\"zoomModal\">\n  <div slot=\"body\">\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  </div>\n</n3-modal>\n<n3-button @click.native=\"showCustomModal\">Show custom modal</n3-button>\n<n3-modal effect=\"fade\" width=\"400px\" ref=\"customModal\">\n  <div slot=\"header\">\n  </div>\n  <div slot=\"body\">\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  </div>\n  <div slot=\"footer\">\n  </div>\n</n3-modal>\n<n3-button @click.native=\"showConfirm\">Show confirm</n3-button>\n<n3-button @click.native=\"showAlert\">Show alert</n3-button>\n</div>\n<hr>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showModal\"</span>&gt;</span>Show modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Modal title\"</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"modal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"btn btn-success\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showBigModal\"</span>&gt;</span>Big modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Big Modal\"</span>  <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"800px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"bigModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"btn btn-primary\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showZoomModal\"</span>&gt;</span>Zoom modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Zoom Modal\"</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"zoom\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"zoomModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showCustomModal\"</span>&gt;</span>Show custom modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span>  <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"customModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"header\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"footer\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    showModal () {\n      <span class=\"hljs-keyword\">this</span>.$refs.modal.open()\n    },\n    showBigModal () {\n      <span class=\"hljs-keyword\">this</span>.$refs.bigModal.open()\n    },\n    showZoomModal () {\n      <span class=\"hljs-keyword\">this</span>.$refs.zoomModal.open()\n    },\n    showCustomModal () {\n      <span class=\"hljs-keyword\">this</span>.$refs.customModal.open()\n    }\n  }\n}\n</code></pre>\n<hr>\n<blockquote>\n<p>函数调用</p>\n</blockquote>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.alert({\n        <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\">'消息框'</span>\n        message: <span class=\"hljs-string\">'这是一个消息框。'</span>,\n        <span class=\"hljs-attr\">effect</span>: <span class=\"hljs-string\">'fade'</span>,\n        <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'info'</span>,\n        onShow () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'打开对话框时触发'</span>)\n        },\n        onHide () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'关闭对话框时触发'</span>)\n        }\n      })\n    },\n    showConfirm () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.confirm({\n        <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\">'对话框'</span>,\n        <span class=\"hljs-attr\">message</span>: <span class=\"hljs-string\">'这是一个提供选择的对话框。'</span>,\n        <span class=\"hljs-attr\">effect</span>: <span class=\"hljs-string\">'zoom'</span>,\n        <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'success'</span>,\n        onShow () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'打开对话框时触发'</span>)\n        },\n        onConfirm () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'点击确定按钮时触发'</span>)\n        },\n        onHide () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'关闭对话框时触发'</span>)\n        }\n      })\n    }\n  }\n}\n</code></pre>\n<hr>\n<h3>组件调用</h3>\n<h4>组件参数</h4>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框标题</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code></td>\n<td>'fade'</td>\n<td><code>fade``zoom</code></td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td></td>\n</tr>\n<tr>\n<td>backdrop</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>点击遮罩层是否关闭弹出框</td>\n</tr>\n</tbody>\n</table>\n<h4>Events</h4>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td>显示模态框时</td>\n<td></td>\n</tr>\n<tr>\n<td>hide</td>\n<td>隐藏模态框时</td>\n<td></td>\n</tr>\n<tr>\n<td>confirm</td>\n<td>按下确认时</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h4>组件方法</h4>\n<table>\n<thead>\n<tr>\n<th>方法名称</th>\n<th>说明</th>\n<th>备注</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>open</td>\n<td>显示模态框</td>\n<td></td>\n</tr>\n<tr>\n<td>close</td>\n<td>隐藏模态框</td>\n<td></td>\n</tr>\n<tr>\n<td>confirm</td>\n<td>触发确认事件</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h3>函数调用</h3>\n<blockquote>\n<p>直接在实例中调用this.n3Mode进行modal的创建和操作</p>\n</blockquote>\n<h4>函数参数</h4>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框标题，如果为空则不渲染 header</td>\n</tr>\n<tr>\n<td>message</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框内容</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code></td>\n<td>'fade'</td>\n<td><code>fade``zoom</code></td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td>弹出框类型，用于决定弹出框提示图标。</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td>弹出框宽度</td>\n</tr>\n<tr>\n<td>onShow</td>\n<td><code>Function</code></td>\n<td></td>\n<td>打开弹出框时的回调函数</td>\n</tr>\n<tr>\n<td>onHide</td>\n<td><code>Function</code></td>\n<td></td>\n<td>关闭弹出框时的回调函数</td>\n</tr>\n<tr>\n<td>onConfirm</td>\n<td><code>Function</code></td>\n<td></td>\n<td>点击弹出框确定按钮时的回调函数</td>\n</tr>\n</tbody>\n</table>\n<h3>用法说明</h3>\n<h4>组件驱动</h4>\n<p>如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer.</p>\n<p>但是如果你需要自己定制弹出框内容，你可以实现</p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"header\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"footer\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n</code></pre>\n<h4>函数驱动</h4>\n<p>N3 提供函数驱动的一次性模态框，通过实例属性 n3Modal.alert 及 n3Modal.confirm 调用，它会在使用时动态绑定到 DOM 树中，并在关闭后自动销毁。</p>\n<p>为了还原原生对话框操作体验，函数驱动的弹出框将不能通过点击背景进行关闭。</p>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">const</span> options = {...}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.alert(options)\n    },\n    showConfirm () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.confirm(options)\n    }\n  }\n}\n\n</code></pre>\n</div>\n</template>\n</section>";
 
 /***/ },
 /* 554 */
@@ -13488,12 +13544,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-17.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-18.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-17.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-17.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-17.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-18.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-18.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputDocs-18.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-17.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputDocs-18.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13509,14 +13565,20 @@
 	  value: true
 	});
 	// <template><section><template>
-	// <h3>输入框</h3>
+	// <h3>普通输入框</h3>
 	// <div class="bs-docs-section">
 	// <div class="bs-example">
-	//   <n3-input v-model="value" ref="input" show-clean=""></n3-input>
-	//   <n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
+	// <p><n3-input v-model="value" ref="input" show-clean=""></n3-input>
+	// <n3-button @click.native="$refs.input.focus()">聚焦</n3-button></p>
 	// </div>
 	// <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">n3-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"value"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"input"</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"archive"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-input</span>&gt;</span>
 	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-button</span> <span class="hljs-attr">@click.native</span>=<span class="hljs-string">"$refs.input.focus()"</span>&gt;</span>聚焦<span class="hljs-tag">&lt;/<span class="hljs-name">n3-button</span>&gt;</span>
+	// </code></pre>
+	// <h3>密码输入框</h3>
+	// <p><n3-input v-model="value2" type="password" ref="input2" show-clean=""></n3-input>
+	// <n3-button @click.native="$refs.input2.focus()">聚焦</n3-button></p>
+	// <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">n3-input</span> <span class="hljs-attr">v-model</span>=<span class="hljs-string">"value2"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"password"</span> <span class="hljs-attr">icon</span>=<span class="hljs-string">"archive"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">n3-input</span>&gt;</span>
+	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-button</span> <span class="hljs-attr">@click.native</span>=<span class="hljs-string">"$refs.input2.focus()"</span>&gt;</span>聚焦<span class="hljs-tag">&lt;/<span class="hljs-name">n3-button</span>&gt;</span>
 	// </code></pre>
 	// <h3>参数</h3>
 	// <table>
@@ -13530,10 +13592,40 @@
 	// </thead>
 	// <tbody>
 	// <tr>
-	// <td>password</td>
+	// <td>name</td>
+	// <td><code>String</code></td>
+	// <td>－</td>
+	// <td></td>
+	// </tr>
+	// <tr>
+	// <td>readonly</td>
 	// <td><code>Boolean</code></td>
 	// <td><code>false</code></td>
-	// <td>密码输入框</td>
+	// <td>只读</td>
+	// </tr>
+	// <tr>
+	// <td>disabled</td>
+	// <td><code>Boolean</code></td>
+	// <td><code>false</code></td>
+	// <td>禁止改变值</td>
+	// </tr>
+	// <tr>
+	// <td>width</td>
+	// <td><code>String</code></td>
+	// <td><code>220px</code></td>
+	// <td>宽度</td>
+	// </tr>
+	// <tr>
+	// <td>placeholder</td>
+	// <td><code>String</code></td>
+	// <td>－</td>
+	// <td>placeholder</td>
+	// </tr>
+	// <tr>
+	// <td>type</td>
+	// <td><code>String</code></td>
+	// <td><code>text</code></td>
+	// <td>输入框类型</td>
 	// </tr>
 	// <tr>
 	// <td>icon</td>
@@ -13546,6 +13638,33 @@
 	// <td><code>Boolean</code></td>
 	// <td><code>false</code></td>
 	// <td>显示清除icon</td>
+	// </tr>
+	// </tbody>
+	// </table>
+	// <h3>组件方法</h3>
+	// <table>
+	// <thead>
+	// <tr>
+	// <th>方法名称</th>
+	// <th>说明</th>
+	// <th>备注</th>
+	// </tr>
+	// </thead>
+	// <tbody>
+	// <tr>
+	// <td>clean</td>
+	// <td>清空内容</td>
+	// <td></td>
+	// </tr>
+	// <tr>
+	// <td>focus</td>
+	// <td>聚焦</td>
+	// <td></td>
+	// </tr>
+	// <tr>
+	// <td>blur</td>
+	// <td>失焦</td>
+	// <td></td>
 	// </tr>
 	// </tbody>
 	// </table>
@@ -13586,8 +13705,12 @@
 	exports.default = {
 	  data: function data() {
 	    return {
-	      value: ''
+	      value: '',
+	      value2: ''
 	    };
+	  },
+	  mounted: function mounted() {
+	    this.value = 100;
 	  }
 	};
 	// </script>
@@ -13596,7 +13719,7 @@
 /* 557 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n<h3>输入框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-input v-model=\"value\" ref=\"input\" show-clean=\"\"></n3-input>\n  <n3-button @click.native=\"$refs.input.focus()\">聚焦</n3-button>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"input\"</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"archive\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"$refs.input.focus()\"</span>&gt;</span>聚焦<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>password</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>密码输入框</td>\n</tr>\n<tr>\n<td>icon</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>icon</td>\n</tr>\n<tr>\n<td>show-clean</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>显示清除icon</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
+	module.exports = "<section><template>\n<h3>普通输入框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<p><n3-input v-model=\"value\" ref=\"input\" show-clean=\"\"></n3-input>\n<n3-button @click.native=\"$refs.input.focus()\">聚焦</n3-button></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"input\"</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"archive\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"$refs.input.focus()\"</span>&gt;</span>聚焦<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<h3>密码输入框</h3>\n<p><n3-input v-model=\"value2\" type=\"password\" ref=\"input2\" show-clean=\"\"></n3-input>\n<n3-button @click.native=\"$refs.input2.focus()\">聚焦</n3-button></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value2\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"password\"</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"archive\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"$refs.input2.focus()\"</span>&gt;</span>聚焦<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>－</td>\n<td></td>\n</tr>\n<tr>\n<td>readonly</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>只读</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>禁止改变值</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>宽度</td>\n</tr>\n<tr>\n<td>placeholder</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>placeholder</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>text</code></td>\n<td>输入框类型</td>\n</tr>\n<tr>\n<td>icon</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>icon</td>\n</tr>\n<tr>\n<td>show-clean</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>显示清除icon</td>\n</tr>\n</tbody>\n</table>\n<h3>组件方法</h3>\n<table>\n<thead>\n<tr>\n<th>方法名称</th>\n<th>说明</th>\n<th>备注</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>clean</td>\n<td>清空内容</td>\n<td></td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td></td>\n</tr>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
 /* 558 */
@@ -13617,12 +13740,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-17.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-18.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-18.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-17.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-17.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3InputNumberDocs-17.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-18.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3InputNumberDocs-17.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -13656,6 +13779,36 @@
 	// </tr>
 	// </thead>
 	// <tbody>
+	// <tr>
+	// <td>name</td>
+	// <td><code>String</code></td>
+	// <td>－</td>
+	// <td></td>
+	// </tr>
+	// <tr>
+	// <td>readonly</td>
+	// <td><code>Boolean</code></td>
+	// <td><code>false</code></td>
+	// <td>只读</td>
+	// </tr>
+	// <tr>
+	// <td>disabled</td>
+	// <td><code>Boolean</code></td>
+	// <td><code>false</code></td>
+	// <td>禁止改变值</td>
+	// </tr>
+	// <tr>
+	// <td>width</td>
+	// <td><code>String</code></td>
+	// <td><code>220px</code></td>
+	// <td>宽度</td>
+	// </tr>
+	// <tr>
+	// <td>placeholder</td>
+	// <td><code>String</code></td>
+	// <td>－</td>
+	// <td>placeholder</td>
+	// </tr>
 	// <tr>
 	// <td>max</td>
 	// <td><code>Number</code></td>
@@ -13724,7 +13877,7 @@
 /* 561 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n<h3>数字输入框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-input-number v-model=\"value\"></n3-input-number>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input-number</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input-number</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>max</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>最大值</td>\n</tr>\n<tr>\n<td>min</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>最小值</td>\n</tr>\n<tr>\n<td>step</td>\n<td><code>Number</code></td>\n<td><code>1</code></td>\n<td>增减量值</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
+	module.exports = "<section><template>\n<h3>数字输入框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-input-number v-model=\"value\"></n3-input-number>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input-number</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input-number</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>－</td>\n<td></td>\n</tr>\n<tr>\n<td>readonly</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>只读</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>禁止改变值</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>宽度</td>\n</tr>\n<tr>\n<td>placeholder</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>placeholder</td>\n</tr>\n<tr>\n<td>max</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>最大值</td>\n</tr>\n<tr>\n<td>min</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>最小值</td>\n</tr>\n<tr>\n<td>step</td>\n<td><code>Number</code></td>\n<td><code>1</code></td>\n<td>增减量值</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
 /* 562 */
@@ -14725,12 +14878,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-33.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-23.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-23.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-33.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-33.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SelectDocs-33.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-23.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SelectDocs-33.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15039,12 +15192,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-24.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-23.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-24.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-24.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-24.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-23.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-23.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SwitchDocs-23.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-24.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SwitchDocs-23.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15172,12 +15325,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-24.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-25.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-25.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-24.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-24.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TimelineDocs-24.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-25.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TimelineDocs-24.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15347,12 +15500,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-26.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-30.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-26.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-26.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-26.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-30.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-30.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TabsDocs-30.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-26.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TabsDocs-30.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15645,12 +15798,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-25.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-27.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-27.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-25.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-25.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TooltipDocs-25.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-27.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TooltipDocs-25.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -15803,12 +15956,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-27.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-28.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-28.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-27.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-27.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TypeaheadDocs-27.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-28.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TypeaheadDocs-27.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16034,12 +16187,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-29.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-26.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-29.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-26.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-29.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3StepDocs-26.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16070,12 +16223,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-28.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-30.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-28.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-28.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3SliderDocs-28.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-30.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3SliderDocs-28.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16248,12 +16401,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-32.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-32.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-31.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3LoadingDocs-32.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16284,12 +16437,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-31.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-32.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-32.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-31.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-31.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3PageDocs-31.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-32.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3PageDocs-31.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16458,12 +16611,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-34.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-33.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-33.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-34.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-34.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3DataTableDocs-34.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-33.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3DataTableDocs-34.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16905,12 +17058,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"
+	var id = "-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-29.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue"], function () {
+	module.hot.accept(["-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-29.vue"], function () {
 	var newOptions = null
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-34.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3BreadcrumbDocs-29.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -16941,12 +17094,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-35.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-35.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-35.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-35.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-36.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3MultipleInputDocs-36.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-35.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3MultipleInputDocs-36.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17176,12 +17329,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-36.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-36.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-36.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-36.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-37.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3TreeDocs-37.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-36.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3TreeDocs-37.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17657,12 +17810,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-37.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-35.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-37.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-37.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-37.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-35.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-35.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RateDocs-35.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-37.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RateDocs-35.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -17818,12 +17971,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-39.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-38.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-38.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-39.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-39.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3UploaderDocs-39.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-38.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3UploaderDocs-39.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18019,12 +18172,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-39.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-42.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-39.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-39.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-39.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-42.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-42.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3FormDocs-42.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-39.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3FormDocs-42.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18377,46 +18530,10 @@
 	// </thead>
 	// <tbody>
 	// <tr>
-	// <td>name</td>
-	// <td><code>String</code></td>
-	// <td>－</td>
-	// <td>标示输入项，与结果内的值对应</td>
-	// </tr>
-	// <tr>
-	// <td>readonly</td>
-	// <td><code>Boolean</code></td>
-	// <td><code>false</code></td>
-	// <td>只读</td>
-	// </tr>
-	// <tr>
-	// <td>disabled</td>
-	// <td><code>Boolean</code></td>
-	// <td><code>false</code></td>
-	// <td>禁止改变值</td>
-	// </tr>
-	// <tr>
-	// <td>width</td>
-	// <td><code>String</code></td>
-	// <td><code>220px</code></td>
-	// <td>宽度</td>
-	// </tr>
-	// <tr>
-	// <td>placeholder</td>
-	// <td><code>String</code></td>
-	// <td>－</td>
-	// <td>placeholder</td>
-	// </tr>
-	// <tr>
 	// <td>custom－validate</td>
 	// <td>Function`</td>
 	// <td></td>
 	// <td>自定义校验器</td>
-	// </tr>
-	// <tr>
-	// <td>name</td>
-	// <td><code>String</code></td>
-	// <td>－</td>
-	// <td></td>
 	// </tr>
 	// <tr>
 	// <td>rules</td>
@@ -18520,7 +18637,7 @@
 /* 644 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n<h3>表单</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-form ref=\"form\">\n<n3-form-item need=\"\" label=\"姓名\" :label-col=\"3\">\n<n3-input show-clean=\"\" name=\"name\" v-model=\"model.name\" :rules=\"[{type:'required'}]\" :custom-validate=\"nameValidate\">\n</n3-input>\n</n3-form-item>\n<p><n3-form-item need=\"\" label=\"年龄\" :label-col=\"3\">\n<n3-input-number name=\"age\" v-model=\"model.age\" :rules=\"[{type:'number'},{type:'required'}]\">\n</n3-input-number>\n\n</n3-form-item>\n<n3-form-item need=\"\" label=\"地址\" :label-col=\"3\">\n<n3-cascader name=\"address\" :options=\"options\" v-model=\"model.address\" :rules=\"[{type:'required'}]\">\n</n3-cascader>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"生日\" :label-col=\"3\">\n<n3-datepicker name=\"birthday\" v-model=\"model.birthday\" :rules=\"[{type:'required'}]\">\n</n3-datepicker>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"学校\" :label-col=\"3\">\n<n3-typeahead show-clean=\"\" name=\"学校\" v-model=\"model.school\" :data=\"schoolData\" :rules=\"[{type:'required'}]\">\n</n3-typeahead>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"爱好\" :label-col=\"3\">\n<n3-checkbox-group name=\"hobby\" v-model=\"model.hobby\" :rules=\"[{type:'required'}]\">\n<n3-checkbox label=\"0\">看书</n3-checkbox>\n<n3-checkbox label=\"1\">运动</n3-checkbox>\n<n3-checkbox value=\"2\">旅行</n3-checkbox>\n</n3-checkbox-group>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"性别\" :label-col=\"3\">\n<n3-radio-group name=\"sex\" v-model=\"model.sex\" :rules=\"[{type:'required'}]\">\n<n3-radio label=\"0\">男</n3-radio>\n<n3-radio label=\"1\">女</n3-radio>\n</n3-radio-group>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"专业\" :label-col=\"3\">\n<n3-select name=\"sex\" :options=\"profession\" v-model=\"model.profession\" :rules=\"[{type:'required'}]\">\n</n3-select>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"级别\" :label-col=\"3\">\n<n3-slider name=\"level\" v-model=\"model.level\" :rules=\"[{type:'required'}]\">\n</n3-slider>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"开启状态\" :label-col=\"3\">\n<n3-switch name=\"state\" v-model=\"model.state\" :rules=\"[{type:'required'}]\">\n</n3-switch>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"喜欢的明星\" :label-col=\"3\">\n<n3-multiple-input name=\"star\" v-model=\"model.star\" :rules=\"[{type:'required'}]\">\n</n3-multiple-input>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"想说的话\" :label-col=\"3\">\n<n3-textarea name=\"suggestion\" v-model=\"model.suggestion\" :rules=\"[{type:'required'}]\">\n</n3-textarea>\n</n3-form-item></p>\n <n3-form-item>\n     <n3-button type=\"primary\" @click.native=\"submit\">提交</n3-button>\n</n3-form-item>\n</n3-form>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">'form'</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"姓名\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"name\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.name\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>\n      <span class=\"hljs-attr\">:custom-validate</span>=<span class=\"hljs-string\">\"nameValidate\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"年龄\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input-number</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"age\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.age\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'number'},{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input-number</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"地址\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-cascader</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"address\"</span>\n      <span class=\"hljs-attr\">:options</span>=<span class=\"hljs-string\">\"options\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.address\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-cascader</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"生日\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-datepicker</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"birthday\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.birthday\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-datepicker</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"学校\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-typeahead</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"学校\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.school\"</span>\n      <span class=\"hljs-attr\">:data</span>=<span class=\"hljs-string\">\"schoolData\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-typeahead</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"爱好\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-group</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"hobby\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.hobby\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>看书<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>运动<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span>旅行<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-group</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"性别\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio-group</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"sex\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.sex\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>男<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>女<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio-group</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"专业\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"sex\"</span>\n      <span class=\"hljs-attr\">:options</span>=<span class=\"hljs-string\">'profession'</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.profession\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"级别\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slider</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"level\"</span>\n        <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.level\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slider</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"开启状态\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-switch</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"state\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.state\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-switch</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"喜欢的明星\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-multiple-input</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"star\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.star\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-multiple-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"想说的话\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-textarea</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"suggestion\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.suggestion\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-textarea</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n       <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"submit\"</span> &gt;</span>提交<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">  methods: {\n    nameValidate (val) {\n      <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-regexp\">/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/</span>.test(val)) {\n        <span class=\"hljs-keyword\">return</span> {\n          <span class=\"hljs-attr\">validStatus</span>: <span class=\"hljs-string\">'success'</span>\n        }\n      } <span class=\"hljs-keyword\">else</span> {\n        <span class=\"hljs-keyword\">return</span> {\n          <span class=\"hljs-attr\">validStatus</span>: <span class=\"hljs-string\">'error'</span>,\n          <span class=\"hljs-attr\">tips</span>: <span class=\"hljs-string\">'请输入中文名'</span>\n        }\n      }\n    },\n    submit () {\n      <span class=\"hljs-keyword\">this</span>.$refs.form.validateFields(<span class=\"hljs-function\"><span class=\"hljs-params\">result</span> =&gt;</span> {\n        <span class=\"hljs-built_in\">console</span>.log(result)\n     })\n    }\n  }\n}\n</code></pre>\n<h3>n3-from参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td>String</td>\n<td>horizontal</td>\n<td>布局方式  horizontal,inline</td>\n</tr>\n<tr>\n<td>validate</td>\n<td>Boolean</td>\n<td>false</td>\n<td>是否打开验证</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>validateChange</td>\n<td>校验结果变化</td>\n<td>(validateResults)</td>\n</tr>\n</tbody>\n</table>\n<h3>方法</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>validateFields</td>\n<td>校验</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-from-item参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>label</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>表单项说明</td>\n</tr>\n<tr>\n<td>label-col</td>\n<td><code>Number</code></td>\n<td><code>2</code></td>\n<td>表单项说明所占栅格数</td>\n</tr>\n<tr>\n<td>wrap-col</td>\n<td><code>Number</code></td>\n<td><code>12</code></td>\n<td>表单项所占栅格数</td>\n</tr>\n<tr>\n<td>form-col</td>\n<td><code>Number</code></td>\n<td><code>10</code></td>\n<td>表单元素所占栅格数</td>\n</tr>\n<tr>\n<td>need</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>必填标示红点</td>\n</tr>\n</tbody>\n</table>\n<h3>待验证组件参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>标示输入项，与结果内的值对应</td>\n</tr>\n<tr>\n<td>readonly</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>只读</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>禁止改变值</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>宽度</td>\n</tr>\n<tr>\n<td>placeholder</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>placeholder</td>\n</tr>\n<tr>\n<td>custom－validate</td>\n<td>Function`</td>\n<td></td>\n<td>自定义校验器</td>\n</tr>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>－</td>\n<td></td>\n</tr>\n<tr>\n<td>rules</td>\n<td><code>Array</code></td>\n<td>－</td>\n<td>验证规则,如 <code>[{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</div></template>\n\n</section>";
+	module.exports = "<section><template>\n<h3>表单</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-form ref=\"form\">\n<n3-form-item need=\"\" label=\"姓名\" :label-col=\"3\">\n<n3-input show-clean=\"\" name=\"name\" v-model=\"model.name\" :rules=\"[{type:'required'}]\" :custom-validate=\"nameValidate\">\n</n3-input>\n</n3-form-item>\n<p><n3-form-item need=\"\" label=\"年龄\" :label-col=\"3\">\n<n3-input-number name=\"age\" v-model=\"model.age\" :rules=\"[{type:'number'},{type:'required'}]\">\n</n3-input-number>\n\n</n3-form-item>\n<n3-form-item need=\"\" label=\"地址\" :label-col=\"3\">\n<n3-cascader name=\"address\" :options=\"options\" v-model=\"model.address\" :rules=\"[{type:'required'}]\">\n</n3-cascader>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"生日\" :label-col=\"3\">\n<n3-datepicker name=\"birthday\" v-model=\"model.birthday\" :rules=\"[{type:'required'}]\">\n</n3-datepicker>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"学校\" :label-col=\"3\">\n<n3-typeahead show-clean=\"\" name=\"学校\" v-model=\"model.school\" :data=\"schoolData\" :rules=\"[{type:'required'}]\">\n</n3-typeahead>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"爱好\" :label-col=\"3\">\n<n3-checkbox-group name=\"hobby\" v-model=\"model.hobby\" :rules=\"[{type:'required'}]\">\n<n3-checkbox label=\"0\">看书</n3-checkbox>\n<n3-checkbox label=\"1\">运动</n3-checkbox>\n<n3-checkbox value=\"2\">旅行</n3-checkbox>\n</n3-checkbox-group>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"性别\" :label-col=\"3\">\n<n3-radio-group name=\"sex\" v-model=\"model.sex\" :rules=\"[{type:'required'}]\">\n<n3-radio label=\"0\">男</n3-radio>\n<n3-radio label=\"1\">女</n3-radio>\n</n3-radio-group>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"专业\" :label-col=\"3\">\n<n3-select name=\"sex\" :options=\"profession\" v-model=\"model.profession\" :rules=\"[{type:'required'}]\">\n</n3-select>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"级别\" :label-col=\"3\">\n<n3-slider name=\"level\" v-model=\"model.level\" :rules=\"[{type:'required'}]\">\n</n3-slider>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"开启状态\" :label-col=\"3\">\n<n3-switch name=\"state\" v-model=\"model.state\" :rules=\"[{type:'required'}]\">\n</n3-switch>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"喜欢的明星\" :label-col=\"3\">\n<n3-multiple-input name=\"star\" v-model=\"model.star\" :rules=\"[{type:'required'}]\">\n</n3-multiple-input>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"想说的话\" :label-col=\"3\">\n<n3-textarea name=\"suggestion\" v-model=\"model.suggestion\" :rules=\"[{type:'required'}]\">\n</n3-textarea>\n</n3-form-item></p>\n <n3-form-item>\n     <n3-button type=\"primary\" @click.native=\"submit\">提交</n3-button>\n</n3-form-item>\n</n3-form>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">'form'</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"姓名\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"name\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.name\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>\n      <span class=\"hljs-attr\">:custom-validate</span>=<span class=\"hljs-string\">\"nameValidate\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"年龄\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input-number</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"age\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.age\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'number'},{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input-number</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"地址\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-cascader</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"address\"</span>\n      <span class=\"hljs-attr\">:options</span>=<span class=\"hljs-string\">\"options\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.address\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-cascader</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"生日\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-datepicker</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"birthday\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.birthday\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-datepicker</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"学校\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-typeahead</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"学校\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.school\"</span>\n      <span class=\"hljs-attr\">:data</span>=<span class=\"hljs-string\">\"schoolData\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-typeahead</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"爱好\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-group</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"hobby\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.hobby\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>看书<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>运动<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span>旅行<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-group</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"性别\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio-group</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"sex\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.sex\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>男<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>女<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio-group</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"专业\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"sex\"</span>\n      <span class=\"hljs-attr\">:options</span>=<span class=\"hljs-string\">'profession'</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.profession\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"级别\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slider</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"level\"</span>\n        <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.level\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slider</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"开启状态\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-switch</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"state\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.state\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-switch</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"喜欢的明星\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-multiple-input</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"star\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.star\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-multiple-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"想说的话\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-textarea</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"suggestion\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.suggestion\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-textarea</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n       <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"submit\"</span> &gt;</span>提交<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">  methods: {\n    nameValidate (val) {\n      <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-regexp\">/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/</span>.test(val)) {\n        <span class=\"hljs-keyword\">return</span> {\n          <span class=\"hljs-attr\">validStatus</span>: <span class=\"hljs-string\">'success'</span>\n        }\n      } <span class=\"hljs-keyword\">else</span> {\n        <span class=\"hljs-keyword\">return</span> {\n          <span class=\"hljs-attr\">validStatus</span>: <span class=\"hljs-string\">'error'</span>,\n          <span class=\"hljs-attr\">tips</span>: <span class=\"hljs-string\">'请输入中文名'</span>\n        }\n      }\n    },\n    submit () {\n      <span class=\"hljs-keyword\">this</span>.$refs.form.validateFields(<span class=\"hljs-function\"><span class=\"hljs-params\">result</span> =&gt;</span> {\n        <span class=\"hljs-built_in\">console</span>.log(result)\n     })\n    }\n  }\n}\n</code></pre>\n<h3>n3-from参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td>String</td>\n<td>horizontal</td>\n<td>布局方式  horizontal,inline</td>\n</tr>\n<tr>\n<td>validate</td>\n<td>Boolean</td>\n<td>false</td>\n<td>是否打开验证</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>validateChange</td>\n<td>校验结果变化</td>\n<td>(validateResults)</td>\n</tr>\n</tbody>\n</table>\n<h3>方法</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>validateFields</td>\n<td>校验</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-from-item参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>label</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>表单项说明</td>\n</tr>\n<tr>\n<td>label-col</td>\n<td><code>Number</code></td>\n<td><code>2</code></td>\n<td>表单项说明所占栅格数</td>\n</tr>\n<tr>\n<td>wrap-col</td>\n<td><code>Number</code></td>\n<td><code>12</code></td>\n<td>表单项所占栅格数</td>\n</tr>\n<tr>\n<td>form-col</td>\n<td><code>Number</code></td>\n<td><code>10</code></td>\n<td>表单元素所占栅格数</td>\n</tr>\n<tr>\n<td>need</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>必填标示红点</td>\n</tr>\n</tbody>\n</table>\n<h3>待验证组件参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>custom－validate</td>\n<td>Function`</td>\n<td></td>\n<td>自定义校验器</td>\n</tr>\n<tr>\n<td>rules</td>\n<td><code>Array</code></td>\n<td>－</td>\n<td>验证规则,如 <code>[{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</div></template>\n\n</section>";
 
 /***/ },
 /* 645 */
@@ -18724,12 +18841,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-38.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-42.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-42.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-38.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-38.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3RadioDocs-38.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-42.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3RadioDocs-38.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18905,12 +19022,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-41.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-43.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-41.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-41.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-41.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-43.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-43.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3CardDocs-43.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-41.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3CardDocs-43.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -18998,12 +19115,12 @@
 	var hotAPI = require("vue-hot-reload-api")
 	hotAPI.install(require("vue"))
 	if (!hotAPI.compatible) return
-	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue"
+	var id = "-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-41.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-68512e29&file=n3AnimateDocs-43.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-43.vue"], function () {
-	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-43.vue")
+	module.hot.accept(["-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-41.vue","-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-6834ff27&file=n3AnimateDocs-41.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-41.vue"], function () {
+	var newOptions = require("-!babel!./../../.7.1.7@vue-loader/lib/selector.js?type=script&index=0!./n3AnimateDocs-41.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-68512e29&file=n3AnimateDocs-43.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-43.vue")
+	var newTemplate = require("-!vue-html-loader!./../../.7.1.7@vue-loader/lib/template-rewriter.js?id=_v-6834ff27&file=n3AnimateDocs-41.vue!./../../.7.1.7@vue-loader/lib/selector.js?type=template&index=0!./n3AnimateDocs-41.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -19025,8 +19142,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-68512e29&file=n3AnimateDocs-43.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-43.vue", function() {
-				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-68512e29&file=n3AnimateDocs-43.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-43.vue");
+			module.hot.accept("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-6834ff27&file=n3AnimateDocs-41.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-41.vue", function() {
+				var newContent = require("!!./../../.0.21.0@css-loader/index.js!./../../.7.1.7@vue-loader/lib/style-rewriter.js?id=_v-6834ff27&file=n3AnimateDocs-41.vue&scoped=true!./../../.7.1.7@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-41.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -19044,7 +19161,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".content[_v-68512e29] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }", ""]);
+	exports.push([module.id, ".content[_v-6834ff27] {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }", ""]);
 	
 	// exports
 
@@ -19128,7 +19245,7 @@
 /* 662 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-68512e29=\"\"><template _v-68512e29=\"\">\n<h3 _v-68512e29=\"\">动画</h3>\n<div class=\"bs-docs-section\" _v-68512e29=\"\">\n<div class=\"bs-example\" _v-68512e29=\"\">\n  <n3-button @click.native=\"show=!show\" _v-68512e29=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-68512e29=\"\">\n    <div v-if=\"show\" class=\"content\" _v-68512e29=\"\">\n        <h4 _v-68512e29=\"\">Title</h4>\n        <p _v-68512e29=\"\">...</p>\n        <p _v-68512e29=\"\">...</p>\n        <p _v-68512e29=\"\">...</p>\n    </div>\n  </transition>\n</div>\n<pre _v-68512e29=\"\"><code class=\"language-html\" _v-68512e29=\"\"><span class=\"hljs-comment\" _v-68512e29=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-68512e29=\"\">&lt;<span class=\"hljs-name\" _v-68512e29=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-68512e29=\"\">@click.native</span>=<span class=\"hljs-string\" _v-68512e29=\"\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-68512e29=\"\">&lt;/<span class=\"hljs-name\" _v-68512e29=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-68512e29=\"\">&lt;<span class=\"hljs-name\" _v-68512e29=\"\">transition</span> <span class=\"hljs-attr\" _v-68512e29=\"\">name</span>=<span class=\"hljs-string\" _v-68512e29=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-68512e29=\"\">&lt;<span class=\"hljs-name\" _v-68512e29=\"\">div</span> <span class=\"hljs-attr\" _v-68512e29=\"\">v-if</span>=<span class=\"hljs-string\" _v-68512e29=\"\">\"show\"</span>  <span class=\"hljs-attr\" _v-68512e29=\"\">class</span>=<span class=\"hljs-string\" _v-68512e29=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-68512e29=\"\">&lt;<span class=\"hljs-name\" _v-68512e29=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-68512e29=\"\">&lt;/<span class=\"hljs-name\" _v-68512e29=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-68512e29=\"\">&lt;<span class=\"hljs-name\" _v-68512e29=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-68512e29=\"\">&lt;/<span class=\"hljs-name\" _v-68512e29=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-68512e29=\"\">&lt;<span class=\"hljs-name\" _v-68512e29=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-68512e29=\"\">&lt;/<span class=\"hljs-name\" _v-68512e29=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-68512e29=\"\">&lt;<span class=\"hljs-name\" _v-68512e29=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-68512e29=\"\">&lt;/<span class=\"hljs-name\" _v-68512e29=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-68512e29=\"\">&lt;/<span class=\"hljs-name\" _v-68512e29=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-68512e29=\"\">&lt;/<span class=\"hljs-name\" _v-68512e29=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-68512e29=\"\">参数</h3>\n<table _v-68512e29=\"\">\n<thead _v-68512e29=\"\">\n<tr _v-68512e29=\"\">\n<th _v-68512e29=\"\">参数</th>\n<th _v-68512e29=\"\">类型</th>\n<th _v-68512e29=\"\">默认值</th>\n<th _v-68512e29=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-68512e29=\"\">\n<tr _v-68512e29=\"\">\n<td _v-68512e29=\"\">name</td>\n<td _v-68512e29=\"\">String</td>\n<td _v-68512e29=\"\">-</td>\n<td _v-68512e29=\"\"><code _v-68512e29=\"\">fade</code> <code _v-68512e29=\"\">fadeLeft</code><code _v-68512e29=\"\">fadeDown</code><code _v-68512e29=\"\">bounce</code><code _v-68512e29=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-6834ff27=\"\"><template _v-6834ff27=\"\">\n<h3 _v-6834ff27=\"\">动画</h3>\n<div class=\"bs-docs-section\" _v-6834ff27=\"\">\n<div class=\"bs-example\" _v-6834ff27=\"\">\n  <n3-button @click.native=\"show=!show\" _v-6834ff27=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-6834ff27=\"\">\n    <div v-if=\"show\" class=\"content\" _v-6834ff27=\"\">\n        <h4 _v-6834ff27=\"\">Title</h4>\n        <p _v-6834ff27=\"\">...</p>\n        <p _v-6834ff27=\"\">...</p>\n        <p _v-6834ff27=\"\">...</p>\n    </div>\n  </transition>\n</div>\n<pre _v-6834ff27=\"\"><code class=\"language-html\" _v-6834ff27=\"\"><span class=\"hljs-comment\" _v-6834ff27=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-6834ff27=\"\">@click.native</span>=<span class=\"hljs-string\" _v-6834ff27=\"\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">transition</span> <span class=\"hljs-attr\" _v-6834ff27=\"\">name</span>=<span class=\"hljs-string\" _v-6834ff27=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">div</span> <span class=\"hljs-attr\" _v-6834ff27=\"\">v-if</span>=<span class=\"hljs-string\" _v-6834ff27=\"\">\"show\"</span>  <span class=\"hljs-attr\" _v-6834ff27=\"\">class</span>=<span class=\"hljs-string\" _v-6834ff27=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-6834ff27=\"\">&lt;/<span class=\"hljs-name\" _v-6834ff27=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-6834ff27=\"\">参数</h3>\n<table _v-6834ff27=\"\">\n<thead _v-6834ff27=\"\">\n<tr _v-6834ff27=\"\">\n<th _v-6834ff27=\"\">参数</th>\n<th _v-6834ff27=\"\">类型</th>\n<th _v-6834ff27=\"\">默认值</th>\n<th _v-6834ff27=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-6834ff27=\"\">\n<tr _v-6834ff27=\"\">\n<td _v-6834ff27=\"\">name</td>\n<td _v-6834ff27=\"\">String</td>\n<td _v-6834ff27=\"\">-</td>\n<td _v-6834ff27=\"\"><code _v-6834ff27=\"\">fade</code> <code _v-6834ff27=\"\">fadeLeft</code><code _v-6834ff27=\"\">fadeDown</code><code _v-6834ff27=\"\">bounce</code><code _v-6834ff27=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 663 */
@@ -31748,10 +31865,6 @@
 	    },
 	    onChange: {
 	      type: Function
-	    },
-	    readonly: {
-	      type: Boolean,
-	      default: false
 	    }
 	  },
 	
