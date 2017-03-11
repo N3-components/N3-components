@@ -103,10 +103,6 @@ export default {
     },
     onChange: {
       type: Function
-    },
-    readonly: {
-      type: Boolean,
-      default: false
     }
   },
 
