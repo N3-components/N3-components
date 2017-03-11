@@ -103,7 +103,7 @@ export default {
       } else {
         return
       }
-      this.$emit('change', el)
+      this.$emit('change', index, el)
     }
   }
 }
