@@ -7,41 +7,44 @@
 
 > 组件调用
 
-  <n3-button @click.native="showModal">Show modal</n3-button>
-  <n3-modal title="Modal title" effect="fade" width="400px" ref="modal">
-    <div slot="body">
-      What's in a name? That which we call a rose
-      By any other name would smell as sweet.
-    </div>
-  </n3-modal>
-  <n3-button class="btn btn-success" @click.native="showBigModal">Big modal</n3-button>
-  <n3-modal title="Big Modal"  effect="fade" width="800px" ref="bigModal">
-    <div slot="body">
-      What's in a name? That which we call a rose
-      By any other name would smell as sweet.
-    </div>
-  </n3-modal>
-  <n3-button class="btn btn-primary" @click.native="showZoomModal">Zoom modal</n3-button>
-  <n3-modal title="Zoom Modal" effect="zoom" width="400px" ref="zoomModal">
-    <div slot="body">
-      What's in a name? That which we call a rose
-      By any other name would smell as sweet.
-    </div>
-  </n3-modal>
-  <n3-button @click.native="showCustomModal">Show custom modal</n3-button>
-  <n3-modal  effect="fade" width="400px" ref="customModal">
-    <div slot="header">
-    </div>
-    <div slot="body">
-      What's in a name? That which we call a rose
-      By any other name would smell as sweet.
-    </div>
-    <div slot="footer">
-    </div>
-  </n3-modal>
-  <n3-button @click.native="showConfirm">Show confirm</n3-button>
-  <n3-button @click.native="showAlert">Show alert</n3-button>
+<n3-button @click.native="showModal">Show modal</n3-button>
+<n3-modal title="Modal title" effect="fade" width="400px" ref="modal">
+  <div slot="body">
+    What's in a name? That which we call a rose
+    By any other name would smell as sweet.
+  </div>
+</n3-modal>
+<n3-button class="btn btn-success" @click.native="showBigModal">Big modal</n3-button>
+<n3-modal title="Big Modal"  effect="fade" width="800px" ref="bigModal">
+  <div slot="body">
+    What's in a name? That which we call a rose
+    By any other name would smell as sweet.
+  </div>
+</n3-modal>
+<n3-button class="btn btn-primary" @click.native="showZoomModal">Zoom modal</n3-button>
+<n3-modal title="Zoom Modal" effect="zoom" width="400px" ref="zoomModal">
+  <div slot="body">
+    What's in a name? That which we call a rose
+    By any other name would smell as sweet.
+  </div>
+</n3-modal>
+<n3-button @click.native="showCustomModal">Show custom modal</n3-button>
+<n3-modal  effect="fade" width="400px" ref="customModal">
+  <div slot="header">
+  </div>
+  <div slot="body">
+    What's in a name? That which we call a rose
+    By any other name would smell as sweet.
+  </div>
+  <div slot="footer">
+  </div>
+</n3-modal>
+<n3-button @click.native="showConfirm">Show confirm</n3-button>
+<n3-button @click.native="showAlert">Show alert</n3-button>
+
 </div>
+
+---
 
 ```html
 <n3-button @click.native="showModal">Show modal</n3-button>
@@ -77,6 +80,31 @@
   </div>
 </n3-modal>
 ```
+
+```javascript
+export default {
+  data () {
+    return {
+    }
+  },
+  methods: {
+    showModal () {
+      this.$refs.modal.open()
+    },
+    showBigModal () {
+      this.$refs.bigModal.open()
+    },
+    showZoomModal () {
+      this.$refs.zoomModal.open()
+    },
+    showCustomModal () {
+      this.$refs.customModal.open()
+    }
+  }
+}
+```
+
+---
 
 > 函数调用 
 
@@ -118,7 +146,9 @@ export default {
 }
 ```
 
-### 参数
+---
+
+### 组件调用
 
 #### 组件参数
 
@@ -128,6 +158,29 @@ export default {
 | effect | `String` | 'fade' | `fade``zoom` |
 | width | `String` | `600px` |  |
 | backdrop | `Boolean` | `true` | 点击遮罩层是否关闭弹出框 |
+
+#### Events
+
+| 事件名称      | 说明    | 回调参数      |
+|---------- |-------- |---------- |
+| show  | 显示模态框时 |  |
+| hide  | 隐藏模态框时 |  |
+| confirm  | 按下确认时 |  |
+
+
+#### 组件方法
+
+| 方法名称      | 说明    | 备注      |
+|---------- |-------- |---------- |
+| open  | 显示模态框 |  |
+| close  | 隐藏模态框 |  |
+| confirm  | 触发确认事件 |  |
+
+---
+
+### 函数调用
+
+> 直接在实例中调用this.n3Mode进行modal的创建和操作
 
 #### 函数参数
 
@@ -142,13 +195,6 @@ export default {
 | onHide | `Function` || 关闭弹出框时的回调函数 |
 | onConfirm | `Function` || 点击弹出框确定按钮时的回调函数 |
 
-### Events
-
-| 事件名称      | 说明    | 回调参数      |
-|---------- |-------- |---------- |
-| show  | 显示模态框时 |  |
-| hide  | 隐藏模态框时 |  |
-| confirm  | 按下确认时 |  |
 
 ### 用法说明
 

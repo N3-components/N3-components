@@ -1,11 +1,13 @@
 <template>
 
-### 输入框
+### 普通输入框
 
 <div class="bs-docs-section" >
 <div class="bs-example">
-  <n3-input v-model="value" ref="input" show-clean></n3-input>
-  <n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
+
+<n3-input v-model="value" ref="input" show-clean></n3-input>
+<n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
+
 </div>
 
 ```html
@@ -13,13 +15,36 @@
 <n3-button @click.native="$refs.input.focus()">聚焦</n3-button>
 ```
 
+### 密码输入框
+
+<n3-input v-model="value2" type="password" ref="input2" show-clean></n3-input>
+<n3-button @click.native="$refs.input2.focus()">聚焦</n3-button>
+
+```html
+<n3-input v-model="value2" ref="password" icon="archive"></n3-input>
+<n3-button @click.native="$refs.input2.focus()">聚焦</n3-button>
+```
 
 ### 参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
-| password          | `Boolean`     |    `false`        |     密码输入框     |
+| name           | `String`     |    －        |        |
+| readonly          | `Boolean`     |    `false`        |   只读    |
+| disabled          | `Boolean`     |    `false`       |    禁止改变值    |
+| width          | `String`     |    `220px`        |   宽度    |
+| placeholder          | `String`   |    －        |  placeholder      |
+| type          | `String`     |    `text`        |     输入框类型     |
 | icon          | `String`     |    -        |     icon     |
 | show-clean          | `Boolean`     |    `false`       |     显示清除icon     |
+
+### 组件方法
+
+| 方法名称      | 说明    | 备注      |
+|---------- |-------- |---------- |
+| clean  | 清空内容 |  |
+| focus  | 聚焦 |  |
+| blur  | 失焦 |  |
 
 ### Events
 
@@ -38,8 +63,12 @@
 export default {
   data () {
     return {
-      value: ''
+      value: '',
+      value2: ''
     }
+  },
+  mounted () {
+    this.value = 100
   }
 }
 </script>
