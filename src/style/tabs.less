@@ -1,39 +1,3 @@
-.@{prefix-cls}-nav {
-  padding-left: 0;
-  margin: 0;
-  list-style: none;
-
-  li {
-    position: relative;
-    display: block;
-  }
-  > li > a {
-    position: relative;
-    display: block;
-    padding: @tabPadding;
-    transition: all .3s ease;
-  }
-  > li > a:hover,
-  > li > a:focus {
-    color:@fontColor;
-    text-decoration: none;
-    background: @hoverColor;
-  }
-  & > li&-disabled > a {
-    color: @weightGrayColor;
-  }
-  & > li&-tabs-disabled > a:hover,
-  & > li&-tabs-disabled > a:focus {
-    color: @weightGrayColor;
-    text-decoration: none;
-    cursor: not-allowed;
-    background-color: transparent;
-  }
-  > li > a > img {
-    max-width: none;
-  }
-}
-
 .@{prefix-cls}-nav-tabs {
   border-bottom: 1px solid @lightGrayColor;
 

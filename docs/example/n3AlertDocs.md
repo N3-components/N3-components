@@ -251,8 +251,8 @@ export default {
 </template>
 
 <script >
-  import n3Alert from 'src/n3Alert.vue'
-  import n3Button from 'src/n3Button.vue'
+  import n3Alert from 'src/Alert/n3Alert.vue'
+  import n3Button from 'src/Button/n3Button.vue'
 
   export default {
     methods: {

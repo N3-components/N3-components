@@ -6,15 +6,13 @@
           <n3-row >
             <n3-column :col="2">
               <input placeholder="搜索" v-model="search" class="searchCom" ></input>
-              <n3-nav type="vertical" >
-                <n3-nav-item v-for="(item, index) in list">
-                  <n3-sub-nav :show="item.show" @toggle="handleToggle(item)">
-                    <a slot="title" style="color:#333" v-text="index"></a>
-                    <n3-nav-item v-for="i in item.list" :active="component == i.value" @click.native="change(i.value)">
+              <n3-nav type="vertical" :default-openeds="['基本','提示','表单','展示','导航','其他']">
+                  <n3-sub-nav v-for="(item, index) in list"  :index="index">
+                    <template slot="title">{{index}}</template>
+                    <n3-nav-item v-for="(i,index1) in item.list" :index="index1" :key="index1" :active="component == i.value" @click.native="change(i.value)">
                       <a v-text="i.label"></a>
                     </n3-nav-item>
                   </n3-sub-nav>
-                </n3-nav-item>
               </n3-nav>
             </n3-column>
             <n3-column :col="10">

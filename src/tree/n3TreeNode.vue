@@ -51,7 +51,7 @@
 
 <script type="text/jsx">
   import n3CollapseTransition from '../n3CollapseTransition'
-  import n3Checkbox from '../n3Checkbox'
+  import n3Checkbox from '../Checkbox/n3Checkbox'
 
   export default {
     name: 'n3TreeNode',
