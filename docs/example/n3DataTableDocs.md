@@ -129,7 +129,7 @@ function(pagination,query,sort,filter){
 | selection| `Object`| - | <code style="color:red">使用getCheckboxProps来初始化状态</code>|
 | sort-column |`Object`|-|默认全局排序字段|
 | source   | `Array`  |  -  |表格数组 |
-| page  |  `Boolean` |  `true` |是否分页 | 
+| page  |  `Boolean` |  `true` |是否分页，需要开启async| 
 | search |  `Boolean` | `true`  |是否支持搜索 | 
 | filter |  `Boolean` | `true`  | 是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器|
 | filter-list | `Array` |  - |自定义过滤器|
