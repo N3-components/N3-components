@@ -1,7 +1,7 @@
 <template>
 <div :class="classObj"  :style="{'width':width}">
   <input
-    autoComplete="off"
+    auto-complete="off"
     class="{{prefixCls}}-form-control"
     :style="{'width':width}"
     :readonly="readonly"

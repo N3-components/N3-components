@@ -1,6 +1,6 @@
 {
   "name": "N3-components",
-  "version": "1.3.4",
+  "version": "1.4.0",
   "description": "N3 built with Vue.js",
   "main": "dist/N3Components.min.js",
   "homepage": "http:/n3ui.org",
@@ -54,6 +54,7 @@
     "ghooks": "^1.3.2",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
+    "postcss-loader": "^1.3.3",
     "prismjs": "^1.3.0",
     "style-loader": "^0.13.0",
     "url-loader": "~0.5.7",
