@@ -1,5 +1,5 @@
-import n3Docs from './example/n3Docs'
-import headerDocs from './example/headerDocs'
+import n3Docs from './example_zh/n3Docs'
+import headerDocs from './example_zh/headerDocs'
 import Vue from 'vue'
 import N3Components from '../src/index.js'
 

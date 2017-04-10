@@ -1,0 +1,50 @@
+<template>
+
+### 数字输入框
+
+<div class="bs-docs-section">
+<div class="bs-example">
+  <n3-input-number v-model="value" ></n3-input-number>
+</div>
+
+```html
+<n3-input-number v-model="value"></n3-input-number>
+```
+
+
+### 参数
+
+| 参数          | 类型            |   默认值         |   说明   |
+|-------------  |---------------- |----------------  |-------- |
+| name           | `String`     |    －        |        |
+| readonly          | `Boolean`     |    `false`        |   只读    |
+| disabled          | `Boolean`     |    `false`       |    禁止改变值    |
+| width          | `String`     |    `220px`        |   宽度    |
+| placeholder          | `String`   |    －        |  placeholder      |
+| max          | `Number`     |    -        |     最大值     |
+| min          | `Number`     |    -        |     最小值     |
+| step          | `Number`     |    `1`       |     增减量值     |
+
+### 事件
+
+| 名称          |   说明          |  参数  |      
+|-------------  |---------------- | -----|
+| blur          | 失焦     | - |
+| focus          | 聚焦     | - |
+| change | 值变化 |  (currentValue) |
+
+其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
+
+</div>
+</template>
+
+<script>
+
+export default {
+  data () {
+    return {
+      value: ''
+    }
+  }
+}
+</script>

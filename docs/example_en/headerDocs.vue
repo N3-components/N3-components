@@ -3,13 +3,10 @@
     <n3-container fluid style="width:92%">
       <n3-nav mode="horizontal">
         <n3-nav-item index="1">
-          <a href="./index.html" >N3</a>
+          <a class="link" href="./index.html" >N3</a>
         </n3-nav-item>
-        <n3-nav-item >
-          <a href="./v1.html" >V1</a>
-        </n3-nav-item>
-         <n3-nav-item >
-          <a href="./v2.html" >V2</a>
+         <n3-nav-item index="2">
+          <a class="link" href="./component.html">EN</a>
         </n3-nav-item>
       </n3-nav>
     </n3-container>

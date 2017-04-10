@@ -4,7 +4,8 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    default: ['babel-polyfill', './docs/index.js']
+    zh: ['babel-polyfill', './docs/zh.js'],
+    en: ['babel-polyfill', './docs/en.js']
   },
   output: {
     path: './docs/static',
