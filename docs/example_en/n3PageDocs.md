@@ -1,16 +1,16 @@
 <template>
 
-### 分页
+### Page
 
-<div class="bs-docs-section" id="分页"  >
+<div class="bs-docs-section" id="Page"  >
 <div class="bs-example">
-  <n3-page :total="100" @change="pagechange" v-model="current" :show-total="true" :show-sizer="true" :show-elevator="true"></n3-page>
+  <n3-page :total="100" @change="pagechange" v-model="current"  :show-sizer="true" :show-elevator="true"></n3-page>
   <hr></hr>
   <n3-page :total="100"  simple></n3-page>
 </div>
 
 ```html
-<n3-page :total="100" @change="pagechange" v-model="current" :show-total="true" :show-sizer="true" :show-elevator="true"></n3-page>
+<n3-page :total="100" @change="pagechange" v-model="current"  :show-sizer="true" :show-elevator="true"></n3-page>
 <n3-page :total="100" simple></n3-page>
 ```
 
@@ -31,23 +31,23 @@ export default {
 
 ### 参数
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| total | `Number` |  | 总条数 |
-| current | `Number` | 1 | 当前页数 |
+| total | `Number` |  | total page |
+| current | `Number` | 1 | current page |
 | value | `Number` |  |  |
-| pagesize | `Number` | 10 | 每页条数 |
-| pagesize-opts | `Array` | `[10, 20, 30, 40]` | 每页条数选项 |
-| simple | `Boolean` | `false` | 简单分页 |
-| show-total | `Boolean` | `false` | 显示全部 |
-| show-elevator | `Boolean` | `false` | 显示跳转 |
-| show-sizer | `Boolean` | `false` | 显示分页选项 |
+| pagesize | `Number` | 10 | pagesize |
+| pagesize-opts | `Array` | `[10, 20, 30, 40]` | pagesize options |
+| simple | `Boolean` | `false` | simple type |
+| show-total | `Boolean` | `false` | show total |
+| show-elevator | `Boolean` | `false` | show elevator |
+| show-sizer | `Boolean` | `false` | show sizer |
 
 ### Events
 
-| 事件名称      | 说明    | 回调参数      |
+| name      | description    | params      |
 |---------- |-------- |---------- |
-| change  | 值变化时 | (page, currentPagesize) |
+| change  | change | `page`, `currentPagesize` |
 
 </div>
 </template>

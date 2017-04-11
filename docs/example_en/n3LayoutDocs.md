@@ -105,14 +105,14 @@
 </n3-container>
 ```
 
-### n3-container params
+### n3-container Params
 
 | name          | type            |    default          | Description   |
 |-------------  |---------------- |----------------  |-------- |
 | fluid          | `Boolean`     |    `false `          |    fluid layout    |
 
 
-### n3-column params
+### n3-column Params
 
 | name          | type            |    default          | Description   |
 |-------------  |---------------- |----------------  |-------- |

@@ -18,7 +18,8 @@ export default {
       this.n3Toast({
         text: '成功',
         type: 'success',
-        placement: 'top'
+        placement: 'top',
+        closeOnClick : true
       })
     }
   }
@@ -32,7 +33,7 @@ export default {
 | placement | `String` | `String`. 如: `top`, `top-right`,`top-left`, `bottom`,`bottom-left`, `bottom-right`默认在页面中间 | 位置 |
 | type | `String` | default | 颜色 |
 | duration | `Number` | `3000` | `0`为不消失 |
-| close-on-click | `Boolean` | `true` | 点击消失 |
+| closeOnClick | `Boolean` | `true` | 点击消失 |
 
 </div>
 </template>
@@ -44,7 +45,8 @@ export default {
       this.n3Toast({
         text: '成功',
         type: 'success',
-        placement: 'top'
+        placement: 'top',
+        closeOnClick : true
       })
     }
   }

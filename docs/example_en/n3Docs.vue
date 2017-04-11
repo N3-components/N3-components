@@ -138,7 +138,7 @@ export default{
                  {label: 'Rate', value: 'n3RateDocs'},
                  {label: 'Modal', value: 'n3ModalDocs'},
                  {label: 'Progressbar', value: 'n3ProgressbarDocs'},
-                 {label: 'Tags标签', value: 'n3TagsDocs'},
+                 {label: 'Tags', value: 'n3TagsDocs'},
                  {label: 'Timeline', value: 'n3TimelineDocs'},
                  {label: 'Tree', value: 'n3TreeDocs'},
                  {label: 'Step', value: 'n3StepDocs'}]},
