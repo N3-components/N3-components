@@ -190,8 +190,8 @@ del(item){
 | content | `String` |  |  |
 | placement | `String`, 如: `top` `left` `right` `bottom` |  | 定位 |
 | on-confirm | `Function` |  | 点击确定的回调函数 |
-| ok-text | `String` | 确定 | 确定按钮的文案 |
-| cancel-text | `String` |  | 取消按钮的文案 |
+| ok-text | `String` | ok | 确定按钮的文案 |
+| cancel-text | `String` | cancel | 取消按钮的文案 |
 
 </div>
 </template>

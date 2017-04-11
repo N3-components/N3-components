@@ -5,26 +5,26 @@
 <div class="bs-docs-section"  >
 <div class="bs-example">
 <n3-nav  :default-active="activeIndex"  mode="horizontal" @select="handleSelect">
-<n3-nav-item index="1">处理中心</n3-nav-item>
+<n3-nav-item index="1">导航一</n3-nav-item>
 <n3-sub-nav index="2">
-<template slot="title">我的工作台</template>
+<template slot="title">导航二</template>
 <n3-nav-item index="2-1">选项1</n3-nav-item>
 <n3-nav-item index="2-2">选项2</n3-nav-item>
 <n3-nav-item index="2-3">选项3</n3-nav-item>
 </n3-sub-nav>
-<n3-nav-item index="3"><a href="#" target="_blank">订单管理</a></n3-nav-item>
+<n3-nav-item index="3"><a href="#" target="_blank">导航三</a></n3-nav-item>
 </n3-nav>
 
 ```html
 <n3-nav  :default-active="activeIndex"  mode="horizontal" @select="handleSelect">
-<n3-nav-item index="1">处理中心</n3-nav-item>
+<n3-nav-item index="1">导航一</n3-nav-item>
 <n3-sub-nav index="2">
-<template slot="title">我的工作台</template>
+<template slot="title">导航二</template>
 <n3-nav-item index="2-1">选项1</n3-nav-item>
 <n3-nav-item index="2-2">选项2</n3-nav-item>
 <n3-nav-item index="2-3">选项3</n3-nav-item>
 </n3-sub-nav>
-<n3-nav-item index="3"><a href="#" target="_blank">订单管理</a></n3-nav-item>
+<n3-nav-item index="3"><a href="#" target="_blank">导航三</a></n3-nav-item>
 </n3-nav>
 ```
 

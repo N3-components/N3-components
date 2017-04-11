@@ -40,11 +40,11 @@ export default {
     },
     okText: {
       type: String,
-      default: '确定'
+      default: 'ok'
     },
     cancelText: {
       type: String,
-      default: '取消'
+      default: 'cancel'
     }
   },
 

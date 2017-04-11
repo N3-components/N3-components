@@ -1,11 +1,11 @@
 <template>
 
-### 标签页
+### Tabs
 
 <div class="bs-docs-section" >
 <div class="bs-example">
 
-> 使用list
+> list
 
 <n3-tabs @change="change" :list="list"></n3-tabs>
 
@@ -31,7 +31,7 @@ data () {
 
 ---
 
-> 使用tab
+> tab
 
 <n3-tabs @change="change" :value="1">
   <n3-tab header="one" badge="1">
@@ -69,7 +69,7 @@ data () {
 
 ---
 
-> 胶囊样式 pills
+>  pills
 
 <n3-tabs pills>
   <n3-tab header="one">
@@ -80,7 +80,7 @@ data () {
 
 ---
 
-> 垂直样式 stacked
+>  stacked
 
 <n3-tabs pills stacked style="max-width: 300px;" @change="change">
   <n3-tab header="one" >
@@ -91,7 +91,7 @@ data () {
 
 ---
 
-> 垂直样式 stacked
+>  stacked
 
 <n3-tabs primary pills stacked style="max-width: 300px;">
   <n3-tab header="one">
@@ -102,7 +102,7 @@ data () {
 
 ---
 
-> 自适应 justified
+>  justified
 
 <n3-tabs pills justified>
   <n3-tab header="one">
@@ -119,11 +119,11 @@ export default {
       list: [{
         header: 'first',
         badge: 12,
-        content: 'first的内容'
+        content: 'first'
       }, {
         header: 'seacond',
         badge: 12,
-        content: 'seacond的内容'
+        content: 'seacond'
       }]
     }
   },
@@ -135,32 +135,32 @@ export default {
 }
 ```
 
-### Tabs参数
+### Tabs params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
 | active-index | `Number` |  |  |
 | list | `Array` |  | |
-| pills | `Boolean` |  | 胶囊样式 |
-| stacked | `Boolean` | false | 竖直状态 |
+| pills | `Boolean` |  | pills |
+| stacked | `Boolean` | false | stacked |
 | primary | `Boolean` | false |  |
-| justified | `Boolean` | false | 是否自适应 |
-| size | `String` |  | 尺寸 |
+| justified | `Boolean` | false | justified |
+| size | `String` |  | size |
 
 ### Tabs Events
 
-| 事件名称      | 说明    | 回调参数      |
+| name      | description    | params      |
 |---------- |-------- |---------- |
-| change  | 切换tab时 |  |
+| change  | tab change |  |
 
 
-### tab 参数
+### tab params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| header | `String` |  | 标签头文字 |
-| badge | `String``Number` |  | 徽标 |
-| disabled | `Boolean` | false | 是否能被激活 |
+| header | `String` |  | header |
+| badge | `String``Number` |  | badge |
+| disabled | `Boolean` | false | disabled |
 
 </div>
 </template>
@@ -172,11 +172,11 @@ export default {
       list: [{
         header: 'first',
         badge: 12,
-        content: 'first的内容'
+        content: 'first'
       }, {
         header: 'seacond',
         badge: 12,
-        content: 'seacond的内容'
+        content: 'seacond'
       }]
     }
   },

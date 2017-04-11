@@ -1,14 +1,14 @@
 <template>
 
-### 页面提示
+### Toast
 
-<div class="bs-docs-section" id="页面提示"  >
+<div class="bs-docs-section" id="Toast"  >
 <div class="bs-example">
-  <n3-button @click.native="showToast">点击</n3-button>
+  <n3-button @click.native="showToast">Click</n3-button>
 <div>
 
 ```html
-<n3-button @click.native="showToast">点击</n3-button>
+<n3-button @click.native="showToast">Click</n3-button>
 ```
 
 ```javascript
@@ -16,23 +16,24 @@ export default {
   methods: {
     showToast () {
       this.n3Toast({
-        text: '成功',
+        text: 'success',
         type: 'success',
-        placement: 'top'
+        placement: 'top',
+        closeOnClick : true
       })
     }
   }
 }
 ```
 
-### 参数
+### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| placement | `String` | `String`. 如: `top`, `top-right`,`top-left`, `bottom`,`bottom-left`, `bottom-right`默认在页面中间 | 位置 |
-| type | `String` | default | 颜色 |
-| duration | `Number` | `3000` | `0`为不消失 |
-| close-on-click | `Boolean` | `true` | 点击消失 |
+| placement | `String`  one of  `top`, `top-right`,`top-left`, `bottom`,`bottom-left`, `bottom-right` | `center`.| placement |
+| type | `String` | `default` | color |
+| duration | `Number` | `3000` | duration setting ,you can set it as `0` to prevent Alert to be closed |
+| closeOnClick | `Boolean` | `true` | it will hide when click |
 
 </div>
 </template>
@@ -42,9 +43,10 @@ export default {
   methods: {
     showToast () {
       this.n3Toast({
-        text: '成功',
+        text: 'success',
         type: 'success',
-        placement: 'top'
+        placement: 'top',
+        closeOnClick : true
       })
     }
   }

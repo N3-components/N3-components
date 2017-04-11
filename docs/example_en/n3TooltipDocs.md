@@ -1,8 +1,8 @@
 <template>
 
-### 浮出提示
+### Tooltip
 
-<div class="bs-docs-section" id="浮出提示"  >
+<div class="bs-docs-section" id="Tooltip"  >
 <div class="bs-example">
   <n3-tooltip content="tooltip on top" placement="top" trigger="hover">
     <n3-button>tooltip on top</n3-button>
@@ -66,14 +66,14 @@ export default {
 }
 ```
 
-### 参数名
+### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| trigger | `String`, 如: `hover` `focus` `hover` | `click` | 触发方式 |
-| effect | `String`, 如: `scale` `fade` | `scale` |  |
+| trigger | `String`, one of  `hover` `focus` `hover` | `click` | trigger type |
+| effect | `String`, one of `scale` `fade` | `scale` |  |
 | content | `String` |  |  |
-| placement | `String`, 如: `top` `left` `right` `bottom` |  | 定位方式 |
+| placement | `String`, 如: `top` `left` `right` `bottom` |  | placement |
 
 </div>
 </template>
