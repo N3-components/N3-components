@@ -22,7 +22,8 @@ const PopoverMixin = {
       default: true
     },
     placement: {
-      type: String
+      type: String,
+      default: 'top'
     },
     noresize: {
       type: Boolean,
@@ -65,7 +66,7 @@ const PopoverMixin = {
       let triger = this.$refs.trigger.children[0]
       popover.style.display = 'block'
       triger.style.position = 'relative'
-
+      
       switch (this.placement) {
         case 'top' :
           this.position.left = triger.offsetLeft - popover.offsetWidth / 2 + triger.offsetWidth / 2
