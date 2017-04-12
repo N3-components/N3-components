@@ -121,7 +121,7 @@ export default{
                 {label: 'Slider', value: 'n3SliderDocs'},
                 {label: 'Datepicker', value: 'n3DatepickerDocs'},
                 {label: 'Timepicker', value: 'n3TimepickerDocs'},
-                {label: 'Datetimepicke', value: 'n3DatetimepickerDocs'},
+                {label: 'Datetimepicker', value: 'n3DatetimepickerDocs'},
                 {label: 'Switch', value: 'n3SwitchDocs'},
                 {label: 'Uploader', value: 'n3UploaderDocs'},
                 {label: 'Typeahead', value: 'n3TypeaheadDocs'},

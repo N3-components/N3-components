@@ -1,6 +1,6 @@
 <template>
 
-### 日期选择器
+### Datepicker
 
 <div class="bs-docs-section" >
 <div class="bs-example">
@@ -10,6 +10,7 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 </pre>
 </p>
 <n3-datepicker
+  locale="en"
   v-model="value"
   format="yyyy-MM-dd" >
 </n3-datepicker>
@@ -18,6 +19,7 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 
 ```html
 <n3-datepicker
+  locale="en"
   v-model="value"
   format="yyyy-MM-dd">
 </n3-datepicker>
@@ -33,19 +35,19 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 </n3-select>
 ```
 
-### 参数
-| 参数          | 类型            |   默认值         |   说明   |
+### Params
+| name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
-| width          | `String`     |    `200px`        |     输入框宽度     |
-| format          | `String`     |    `yyyy-MM-dd`        |     日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.     |
+| width          | `String`     |    `200px`        |     width of input     |
+| format          | `String`     |    `yyyy-MM-dd`        |     format value (d, dd, M, MM ,MMM , MMMM, yyyy. )   |
 
-### 事件
+### Events
 
-| 名称          |   说明          |     参数   
+| name          |   description          |     params   
 |-------------  |---------------- |---|
-| change | 值变化 |(currentValue) |
+| change | value change |(currentValue) |
 
-<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+<p>params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 </div>
 </template>
 
