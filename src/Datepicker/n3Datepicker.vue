@@ -378,6 +378,11 @@ export default {
   created () {
     this.today = this.stringify(new Date())
   },
+  watch: {
+    'value': function (val) {
+      this.currentValue = val
+    }
+  },
   mounted () {
     this.currDate = this.parse(this.currentValue) || this.parse(new Date())
     this._closeEvent = EventListener.listen(window, 'click', (e) => {
