@@ -2,7 +2,7 @@
 
 ### 弹出框
 
-<div class="bs-docs-section" id="弹出框"  >
+<div class="bs-docs-section"  >
 <div class="bs-example">
 
 > 组件调用

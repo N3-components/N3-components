@@ -7,7 +7,7 @@
       multiple
       :showselected="false"
       v-if="selectCol"
-      placeholder = "显示的列"
+      :placeholder = "getL('selectCol')"
       :options="selectOptions" 
       v-model="selectdCols">
     </n3-select>
@@ -47,7 +47,7 @@
       <slot ></slot>
     <n3-input
       class="pull-right" 
-      placeholder="搜索"
+      :placeholder="getL('search')"
       v-model="query"
       @keydown.native.enter="gosearch"
       v-if="search">
@@ -168,8 +168,12 @@ import n3Icon from '../Icon/n3Icon'
 import n3Input from '../Input/n3Input'
 import n3Loading from '../Loading/n3Loading'
 import type from '../utils/type'
+import localeMixin from '../Mixin/localeMixin'
+
+
 export default {
   name: 'n3DataTable',
+  mixins: [localeMixin('n3DataTable')],
   props: {
     context: {
     },

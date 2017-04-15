@@ -2,7 +2,7 @@
 
 ### 加载提示
 
-<div class="bs-docs-section" id="加载提示"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
   <p>大图标：<n3-loading size="lg"></n3-loading></p>
   <p>默认图标：<n3-loading ></n3-loading></p>

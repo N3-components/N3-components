@@ -2,7 +2,7 @@
 
 ### 数据表格
 
-<div class="bs-docs-section" id="数据表格"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 <h4>Table</h4>
 

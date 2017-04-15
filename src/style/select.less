@@ -20,8 +20,11 @@
   .@{prefix-cls}-select-multiple {
     padding: @selectMultiple!important;
   }
-  .@{prefix-cls}-select-btn:hover {
-    color:@fontColor!important;
+  .@{prefix-cls}-select-btn {
+    min-height:@selectMinHeight;
+    &:hover{
+      color:@fontColor!important;
+    }
   }
 
   .@{prefix-cls}-select-search{

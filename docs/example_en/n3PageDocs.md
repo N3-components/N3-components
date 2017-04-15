@@ -4,7 +4,7 @@
 
 <div class="bs-docs-section" id="Page"  >
 <div class="bs-example">
-  <n3-page :total="100" @change="pagechange" v-model="current"  :show-sizer="true" :show-elevator="true"></n3-page>
+  <n3-page :total="100" @change="pagechange" v-model="current"  :show-sizer="true" :show-elevator="true" :show-total="true"></n3-page>
   <hr></hr>
   <n3-page :total="100"  simple></n3-page>
 </div>

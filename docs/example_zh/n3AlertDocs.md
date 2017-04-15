@@ -2,7 +2,7 @@
 
 ### 提示消息
 
-<div class="bs-docs-section" id="提示消息"  >
+<div class="bs-docs-section" >
 <div class="bs-example" >
 
 > 组件调用 

@@ -2,7 +2,7 @@
 
 ### 步骤条
 
-<div class="bs-docs-section" id="步骤条" >
+<div class="bs-docs-section" >
 
 > 普通步骤条
 

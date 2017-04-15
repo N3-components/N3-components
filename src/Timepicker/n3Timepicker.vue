@@ -86,9 +86,6 @@ export default {
         return [0, 59]
       }
     },
-    locale: {
-      type: String
-    },
     prefixCls: {
       type: String,
       default: 'n3'

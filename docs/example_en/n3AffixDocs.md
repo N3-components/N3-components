@@ -1,6 +1,6 @@
 <template>
 
-### 固钉
+### Affix
 
 <div class="bs-docs-section" >
   <div class="bs-example">
@@ -31,11 +31,10 @@
 
 
 
-### 参数
-
-| 参数名 | 类型 | 默认值 | 说明 |
+### Params
+| name | type | default | description |
 | --- | --- | --- | --- |
-| offset | `Number` | `0` | 离屏幕顶部的像素值 |
+| offset | `Number` | `0` | The pixel value from the top of the screen |
 
 </div>
 </template>

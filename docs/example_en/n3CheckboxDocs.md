@@ -1,6 +1,6 @@
 <template>
 
-### 多选框
+### Checkbox
 
 <div class="bs-docs-section" >
 <div class="bs-example">
@@ -40,35 +40,32 @@
 </n3-checkbox-group>
 ```
 
-### Group 参数
-
-| 参数          | 类型            |   默认值         |   说明   |
+### Group Params
+| name | type | default | description 
 |-------------  |---------------- |----------------  |-------- |
-| options          | `Array`     |    -        |     选项     |
-| type          | `String`     |    `radio`       |     `radio,button` 使用options时起作用     |
-| options          | `Array`     |    -        |     选项     |
+| options          | `Array`     |    -        |     options     |
+| type          | `String`     |    `radio`       |     `radio`,`button` work with `options`     |
 
 ### Group Events
 
-| 事件名称      | 说明    | 回调参数      |
+| name      | description    | params      |
 |---------- |-------- |---------- |
-| change | 值变化 | (currentValue) |
+| change | change | (currentValue) |
 
-### Checkbox 参数
+### Checkbox Params
 
-| 参数          | 类型            |   默认值         |   说明   |
+| name | type | default | description 
 |-------------  |---------------- |----------------  |-------- |
-| disabled          | `Boolean`     |    false       |     禁用     |
-| checked          | `Boolean`     |    false       |   选中     |
+| disabled          | `Boolean`     |    false       |     disabled     |
+| checked          | `Boolean`     |    false       |   checked     |
 
 ### Checkbox Events
 
-| 事件名称      | 说明    | 回调参数      |
+| name      | description    | params      |
 |---------- |-------- |---------- |
-| change | 值变化 | (currentValue) |
+| change | change | (currentValue) |
 
-    
-其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
+<p>PS: params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 
 </div>
 </template>

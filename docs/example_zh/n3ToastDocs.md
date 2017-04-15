@@ -2,7 +2,7 @@
 
 ### 页面提示
 
-<div class="bs-docs-section" id="页面提示"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
   <n3-button @click.native="showToast">点击</n3-button>
 <div>

@@ -2,7 +2,7 @@
 
 ### 气泡框
 
-<div class="bs-docs-section" id="气泡框"  >
+<div class="bs-docs-section"  >
 <div class="bs-example">
   <n3-popover effect="fade" :header="true" title="Title"  placement="top">
     <div slot="content" >

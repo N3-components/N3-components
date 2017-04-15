@@ -1,10 +1,10 @@
 <template>
 
-### 树形视图
+### Tree
 
-<div class="bs-docs-section" id="树形视图">
+<div class="bs-docs-section">
 
-> 树形视图（普通）
+> Tree (base)
 
 <div class="bs-example">
   <n3-tree :data="data" :props="defaultProps" @node-click="handleNodeClick"></n3-tree>
@@ -19,28 +19,28 @@ export default {
   data() {
     return {
       data: [{
-        label: '新建文件夹1',
+        label: 'folder1',
         children: [{
-          label: '我的文档1'
+          label: 'file1'
         }]
       }, {
-        label: '新建文件夹2',
+        label: 'folder2',
         children: [{
-          label: '我的文档2'
+          label: 'file2'
         }, {
-          label: '我的文档3'
+          label: 'file3'
         }]
       }, {
-        label: '新建文件夹3',
+        label: 'folder3',
         children: [{
-          label: '新建文件夹4',
+          label: 'folder4',
           children: [{
-            label: '我的文档6'
+            label: 'file6'
           }]
         }, {
-          label: '我的文档4'
+          label: 'file4'
         }, {
-          label: '我的文档5'
+          label: 'file5'
         }]
       }],
       defaultProps: {
@@ -57,7 +57,7 @@ export default {
 }
 ```
 
-> 树形视图（可选中、动态加载）
+> Tree (checked, selected)
 
 <div class="bs-example">
   <n3-tree :data="regions" :props="props" :load="loadNode" lazy show-checkbox @check-change="handleCheckChange"></n3-tree>
@@ -125,56 +125,55 @@ export default {
   }
 ```
 
-### 参数
+### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| data     | `Array` | `[]` | 展示数据 |
-| empty-text | `String` | Empty Content. | 展示数据为空时展示的文本 |
-| node-key | `String` | — | 每个树节点用来作为唯一标识的属性，整颗树应该是唯一的 |
-| props |  | `Object` | — | 具体查看：数据属性props |
-| leaf-icon | `String` | file | 叶子节点图标 |
-| child-icon | `String` | folder | 子节点图标 |
-| closed-icon | `String` | angle-right | 关闭时箭头图标 |
-| opened-icon | `String` | angle-down | 打开时箭头图标 |
-| load | `Function` | function(node, resolve) {} | 加载子树数据的方法 |
-| render-content | `Function` | function(h, { node }) {} | 树节点的内容区的渲染方法 |
-| highlight-current | `Boolean` | `false` | 是否高亮当前选中节点 |
-| current-node-key |  `String, Number` | — | 当前选中节点的 key ，只写属性 |
-| default-expand-all | `Boolean` | `false` | 是否默认展开所有节点 |
-| expand-on-click-node | `Boolean` | `true` | 是否在点击节点的时候展开或者收缩节点(如果不则则只有点箭头图标的时候才会展开或者收缩节点。) |
-| auto-expand-parent |  | `Boolean` | `true` | 展开子节点的时候是否自动展开父节点 |
-| default-expanded-keys | `Array` | — | 默认展开的节点的 key 的数组 |
-| show-checkbox | `Boolean` | `false` | 节点是否可被勾选 |
-| check-strictly | `Boolean` | `false` | 在显示复选框的情况下，是否严格的遵循父子不互相关联的做法 |
-| default-checked-keys | `Array` | `[]` | 默认勾选的节点的 key 的数组 |
-| filter-node-method | `Function` | function(value, data, node) | 对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示, 反之则为隐藏 |
+| data     | `Array` | `[]` | data |
+| empty-text | `String` | Empty Content. | Show text when the data is empty |
+| node-key | `String` | — | Each tree node is used as a unique attribute, and the whole tree should be unique |
+| props |  | `Object` | — | props |
+| leaf-icon | `String` | file | leaf icon |
+| child-icon | `String` | folder | child icon |
+| closed-icon | `String` | angle-right | closed icon |
+| opened-icon | `String` | angle-down | open icon |
+| load | `Function` | function(node, resolve) {} | Methods for loading subtree data |
+| render-content | `Function` | function(h, { node }) {} | render function |
+| highlight-current | `Boolean` | `false` | Whether to highlight the currently selected node |
+| current-node-key |  `String, Number` | — | Currently select the node's key, write only attribute |
+| default-expand-all | `Boolean` | `false` | Whether to expand all nodes by default |
+| expand-on-click-node | `Boolean` | `true` | Whether to expand or shrink the node when the node is clicked (if it is only then the arrow icon will only start or shrink the node.)|
+| auto-expand-parent |  | `Boolean` | `true` | Whether to start the parent node automatically when the child node is expanded |
+| default-expanded-keys | `Array` | — | The array of the default expanded node's key |
+| show-checkbox | `Boolean` | `false` | Whether the node can be checked |
+| check-strictly | `Boolean` | `false` | In the case of the check box, whether to strictly follow the father and son are not associated with each other |
+| default-checked-keys | `Array` | `[]` | The default check of the node's key array |
+| filter-node-method | `Function` | function(value, data, node) | The method that is executed when the tree node is filtered, true returns that the node can be displayed and vice versa |
 
-### 数据属性props
-
-| 参数名 | 类型 | 默认值 | 说明 |
+### props
+| name | type | default | description |
 | --- | --- | --- | --- |
-| label | `String` | label | 指定节点标签为节点对象的某个属性值 |
-| children | `String` | children | 指定子树为节点对象的某个属性值 |
+| label | `String` | label | Specifies that the node tag is a property value for the node object |
+| children | `String` | children | Specifies that the subtree is a property value for the node object |
 
 ### Methods
 
-| 方法名 | 说明 | 参数 |
+| name | description | params |
 |------|--------|------|
-| filter | 对树节点进行筛选操作 | 接收一个任意类型的参数，该参数会在 filter-node-method 中作为第一个参数 |
-| getCheckedNodes | 若节点可被选择（即 `show-checkbox` 为 `true`），则返回目前被选中的节点所组成的数组 | (leafOnly) 接收一个 boolean 类型的参数，若为 `true` 则仅返回被选中的叶子节点，默认值为 `false` |
-| setCheckedNodes | 设置目前勾选的节点，使用此方法必须设置 node-key 属性 | (nodes) 接收勾选节点数据的数组 |
-| getCheckedKeys | 若节点可被选择（即 `show-checkbox` 为 `true`），则返回目前被选中的节点所组成的数组 | (leafOnly) 接收一个 boolean 类型的参数，若为 `true` 则仅返回被选中的叶子节点的 keys，默认值为 `true` |
-| setCheckedKeys | 通过 keys 设置目前勾选的节点，使用此方法必须设置 node-key 属性 | (keys, leafOnly) 接收两个参数，1. 勾选节点的 key 的数组 2. boolean 类型的参数，若为 `true` 则仅设置叶子节点的选中状态，默认值为 `true` |
-| setChecked | 通过 key / data 设置某个节点的勾选状态，使用此方法必须设置 node-key 属性 | (key/data, checked, deep) 接收三个参数，1. 勾选节点的 key 或者 data 2. boolean 类型，节点是否选中  3. boolean 类型，是否设置子节点 ，默认为 false |
+| filter | Filter the tree nodes | Receive an arbitrary type of parameter, this parameter will be in the filter-node-method as the first parameter |
+| getCheckedNodes | If the node can be selected (ie `show-checkbox` is` true`), the array of the currently selected nodes is returned | LeafOnly) to receive a boolean type of parameters, if the `true` only return to the selected leaf node, the default value is` false` |
+| setCheckedNodes | Set the currently checked node, use this method must set the node-key attribute | (Nodes) Receive an array of checked node data |
+| getCheckedKeys |If the node can be selected (ie `show-checkbox` is` true`), the array of the currently selected nodes is returned | (LeafOnly) to receive a boolean type of parameters, if the `true` only return the selected leaves node keys, the default value is` true` |
+| setCheckedKeys | Use the keys to set the currently checked node, and use this method to set the node-key attribute | (Keys, leafOnly) to receive two parameters, 1. check the node's key array 2. boolean type of parameters, if the `true` only set the leaves node selected state, the default value is` true` |
+| setChecked | Through the key / data set a node check the state, use this method must set the node-key attribute | (key/data, checked, deep)Receive three parameters, 1. check the node's key or data 2. boolean type, the node is selected 3. boolean type, whether to set the child node, the default is false |
 
 ### Events
 
-| 事件名称      | 说明    | 回调参数      |
+| name      | description    | params      |
 |---------- |-------- |---------- |
-| node-click  | 节点被点击时的回调 | 共三个参数，依次为：传递给 `data` 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。 |
-| check-change  | 节点选中状态发生变化时的回调 | 共三个参数，依次为：传递给 `data` 属性的数组中该节点所对应的对象、节点本身是否被选中、节点的子树中是否有被选中的节点 |
-| current-change | 当前选中节点变化时触发的事件 | 共两个参数，依次为：当前节点的数据，当前节点的 Node 对象 |
+| node-click  | The callback when the node is clicked | A total of three parameters, as follows: `data` array to the object attribute corresponding to the node, the corresponding node Node, node assembly itself. |
+| check-change  | The node selects the callback when the state changes | A total of three parameters, as follows: `data` array to the object attribute corresponding to the node, whether the node itself is checked, whether there is the selected node in the subtree node |
+| current-change | The event that was triggered when the node was currently selected | A total of two parameters, followed by: the current node data, the current node Node object |
 
 </div>
 </template>
@@ -184,28 +183,28 @@ export default {
     data() {
       return {
         data: [{
-          label: '新建文件夹1',
+          label: 'folder1',
           children: [{
-            label: '我的文档1'
+            label: 'file1'
           }]
         }, {
-          label: '新建文件夹2',
+          label: 'folder2',
           children: [{
-            label: '我的文档2'
+            label: 'file2'
           }, {
-            label: '我的文档3'
+            label: 'file3'
           }]
         }, {
-          label: '新建文件夹3',
+          label: 'folder3',
           children: [{
-            label: '新建文件夹4',
+            label: 'folder4',
             children: [{
-              label: '我的文档6'
+              label: 'file6'
             }]
           }, {
-            label: '我的文档4'
+            label: 'file4'
           }, {
-            label: '我的文档5'
+            label: 'file5'
           }]
         }],
         defaultProps: {
@@ -250,9 +249,9 @@ export default {
           var data
           if (hasChild) {
             data = [{
-              name: '新建文件夹' + this.count++
+              name: 'folder' + this.count++
             }, {
-              name: '新建文件夹' + this.count++
+              name: 'folder' + this.count++
             }]
           } else {
             data = []

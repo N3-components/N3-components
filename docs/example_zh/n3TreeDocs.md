@@ -2,7 +2,7 @@
 
 ### 树形视图
 
-<div class="bs-docs-section" id="树形视图">
+<div class="bs-docs-section" >
 
 > 树形视图（普通）
 

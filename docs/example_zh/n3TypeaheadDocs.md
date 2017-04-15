@@ -2,7 +2,7 @@
 
 ### 自动补全
 
-<div class="bs-docs-section" id="自动补全"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 
 > 本地数据

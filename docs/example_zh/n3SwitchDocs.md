@@ -2,7 +2,7 @@
 
 ### 开关
 
-<div class="bs-docs-section" id="开关"  >
+<div class="bs-docs-section"  >
 <div class="bs-example">
 
 <h3><n3-switch v-model="value"></n3-switch></h3>

@@ -1,10 +1,10 @@
 <template>
 
-### 标签
+### Tags
 
-<div class="bs-docs-section" id="标签"  >
+<div class="bs-docs-section"  >
 
-> 标签
+> label
 
 <div class="bs-example">
   <n3-label>Default</n3-label>
@@ -24,14 +24,14 @@
 <n3-label type="warning">warning</n3-label>
 ```
 
-### label参数
+### label Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| type | `String` | `default` | 颜色 |
+| type | `String` | `default` | color |
 | hover | `Boolean` | `true` |  |    
 
-> 标签组
+> Tags
 
 <div class="bs-example">
   <n3-tags v-model="list" ></n3-tags>
@@ -74,14 +74,14 @@ export default {
 }
 ```
 
-### tags参数
+### tags Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| type | `String` | `default` | 颜色 |
-| value | `Array` | `[]` | 内容数组 |
-| size | `String` |  | 大小 sm,lg,xl |
-| removable | `Boolean` | `false` | 是否可删除 |
+| type | `String` | `default` | color |
+| value | `Array` | `[]` | value |
+| size | `String` |  |size  `sm`,`lg`,`xl` |
+| removable | `Boolean` | `false` | Whether it can be deleted |
    
 </div>
 </template>

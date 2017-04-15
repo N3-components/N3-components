@@ -146,9 +146,6 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
-    },
-    locale: {
-      type: String
     }
   },
   data () {

@@ -2,7 +2,7 @@
 
 ### 评分
 
-<div class="bs-docs-section" id="评分">
+<div class="bs-docs-section" >
 <div class="bs-example">
 <n3-rate v-model="value"></n3-rate>
 
@@ -44,7 +44,7 @@
 | icons | `Array` | `['star', 'star', 'star']` | 选中图标 |
 | show-text | `Boolean` | `false` | 是否显示文本解释 |
 | text-color | `string` | `#1f2d3d` | 文本颜色 |
-| texts | `Array` | `['极差', '失望', '一般', '满意', '惊喜']` | 文本 |
+| texts | `Array` | `[]` | 文本 |
 
 </div>
 </template>

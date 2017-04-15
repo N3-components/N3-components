@@ -42,7 +42,6 @@
 |-------------  |---------------- |----------------  |-------- |
 | options          | `Array`     |    -        |     选项     |
 | type          | `String`     |    `radio`       |     `radio`,`button` 使用`options`时起作用     |
-| options          | `Array`     |    -        |     选项     |
 
 ### 事件
 

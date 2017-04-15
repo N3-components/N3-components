@@ -1,6 +1,6 @@
 <template>
 
-### 卡片
+### Card
 
 <div class="bs-docs-section" id="卡片"  >
 
@@ -20,11 +20,10 @@
 </n3-card> 
 ```
 
-### 参数
-
-| 参数名 | 类型 | 默认值 | 说明 |
+### Params
+| name | type | default | description |
 | --- | --- | --- | --- |
-| hover | `Boolean` | `true` | 是否hover效果 |
+| hover | `Boolean` | `true` | hover style |
     
 </div>
 </template>
