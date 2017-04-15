@@ -10,7 +10,6 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 </pre>
 </p>
 <n3-datepicker
-  locale="en"
   v-model="value"
   format="yyyy-MM-dd" >
 </n3-datepicker>
@@ -19,7 +18,6 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 
 ```html
 <n3-datepicker
-  locale="en"
   v-model="value"
   format="yyyy-MM-dd">
 </n3-datepicker>
@@ -47,7 +45,7 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 |-------------  |---------------- |---|
 | change | value change |(currentValue) |
 
-<p>params of form components，look <a href="#n3FormDocs" >Form</a> </p>
+<p>PS: params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 </div>
 </template>
 

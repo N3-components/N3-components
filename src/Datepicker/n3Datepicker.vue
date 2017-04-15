@@ -120,8 +120,7 @@ export default {
       default: 'n3'
     },
     locale: {
-      type: String,
-      default: 'zh'
+      type: String
     },
     manual: {
       type: Boolean,
@@ -149,7 +148,15 @@ export default {
     currDate () {
       this.getDateRange()
     },
+    value (val) {
+      this.inner = true
+      this.currentValue = val
+    },
     currentValue (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.$emit('input', val)
       this.$emit('change', this.currentValue)
     }

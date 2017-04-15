@@ -1,6 +1,6 @@
 {
   "name": "N3-components",
-  "version": "2.2.0",
+  "version": "2.1.2",
   "description": "N3 built with Vue.js",
   "main": "dist/N3Components.min.js",
   "homepage": "https://n3-components.github.io/N3-components/index.html",

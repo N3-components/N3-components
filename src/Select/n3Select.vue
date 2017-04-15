@@ -172,12 +172,17 @@ export default {
   },
   watch: {
     value (val) {
+      this.inner = true
       this.currentValue = val
     },
     options (val) {
       this.currentOptions = val
     },
     currentValue (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.$emit('input', val)
       this.$emit('change', val)
     }

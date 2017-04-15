@@ -4,8 +4,7 @@ export default (name) => {
     return {
         methods: {
             getL(key) {
-                console.log(locale[name][key])
-                return locale[name][key][this.locale]
+                return locale[name][key][this.locale || this.n3Locale || window.n3Locale || 'zh']
             }   
         }
     }

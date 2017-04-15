@@ -1,43 +1,42 @@
 <template>
 
-### 开关
+### Switch
 
-<div class="bs-docs-section" id="开关"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 
 <h3><n3-switch v-model="value"></n3-switch></h3>
 
-<h3><n3-switch ontext="开" offtext="关" @change="toggle" v-model="value"></n3-switch></h3>
+<h3><n3-switch ontext="ON" offtext="OFF" @change="toggle" v-model="value"></n3-switch></h3>
 
-<h3><n3-switch ontext="开" offtext="关" @change="toggle" :disabled="true"></n3-switch></h3>
+<h3><n3-switch ontext="NO" offtext="OFF" @change="toggle" :disabled="true"></n3-switch></h3>
 
 </div>
 
 ```html
 <n3-switch v-model="value"></n3-switch>
 
-<n3-switch ontext="开" offtext="关" @change="toggle" v-model="value"></n3-switch>
+<n3-switch ontext="ON" offtext="OFF" @change="toggle" v-model="value"></n3-switch>
 
-<n3-switch ontext="开" offtext="关" @change="toggle" :disabled="true"></n3-switch>
+<n3-switch ontext="ON" offtext="OFF" @change="toggle" :disabled="true"></n3-switch>
 ```
 
-### 参数
+### Params
 
-| 参数          | 类型            |   默认值         |   说明   |
+| name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
-| disabled          | `boolean`     |    `false`        |     禁用     |
-| ontext          | `String`     |    `ON`        |     开文案     |
-| offtext          | `String`     |    `OFF`        |     关文案     |
-| disabled          | `boolean`     |    `false`        |     禁用     |
+| disabled          | `boolean`     |    `false`        |     disabled     |
+| ontext          | `String`     |    `ON`        |     text of NO     |
+| offtext          | `String`     |    `OFF`        |     text of OFF     |
 
 
 ### Events
 
-| 名称          |   说明          |        
+| name          |   description          |        
 |-------------  |---------------- |
-| change | 值变化 |
+| change | change |
 
-其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
+<p>PS: params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 
 </div>
 </template>

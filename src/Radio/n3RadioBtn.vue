@@ -26,7 +26,6 @@ export default {
     checked: {
       type: Boolean,
       default: false,
-      twoway: true
     },
     disabled: {
       type: Boolean,

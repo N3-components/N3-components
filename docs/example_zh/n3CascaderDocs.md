@@ -100,6 +100,11 @@ export default {
     selectChange (selectedValue) {
       console.log(this.value)
     }
+  },
+  mounted() {
+    setTimeout(()=>{
+      this.value = ['zhejiang']
+    },1000)
   }
 }
 </script>

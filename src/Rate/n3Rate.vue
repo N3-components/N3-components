@@ -185,7 +185,6 @@
 
     watch: {
       value (val) {
-        this.$emit('change', val)
         this.currentValue = val
       }
     },
@@ -222,11 +221,9 @@
         if (this.disabled) {
           return
         }
-        if (this.allowHalf && this.pointerAtLeftHalf) {
-          this.$emit('input', this.currentValue)
-        } else {
-          this.$emit('input', value)
-        }
+        const val = this.allowHalf && this.pointerAtLeftHalf ? this.currentValue : value
+        this.$emit('input', val)
+        this.$emit('change', val)
       },
 
       setCurrentValue (value, event) {

@@ -34,7 +34,6 @@ export default {
     checked: {
       type: Boolean,
       default: false,
-      twoway: true
     },
     label: {
       type: [String, Number]
