@@ -2,7 +2,7 @@
   
 ### 幻灯片
 
-<div class="bs-docs-section" id="幻灯片"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
   <n3-carousel>
     <n3-slide>

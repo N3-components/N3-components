@@ -45,8 +45,7 @@
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | options          | `Array`     |    -        |     选项     |
-| type          | `String`     |    `radio`       |     `radio,button` 使用options时起作用     |
-| options          | `Array`     |    -        |     选项     |
+| type          | `String`     |    `radio`       |     `radio`,`button` 使用options时起作用     |
 
 ### Group Events
 

@@ -119,9 +119,6 @@ export default {
       type: String,
       default: 'n3'
     },
-    locale: {
-      type: String
-    },
     manual: {
       type: Boolean,
       default: false

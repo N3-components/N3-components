@@ -25,7 +25,7 @@
     </ul>
     <ul :class="wrapClasses" v-else>
       <span :class="[prefixCls + '-page-total']" v-if="showTotal">
-          <slot> {{ total }} </slot>
+          <slot> {{getL('total')}} {{ total }} </slot>
       </span>
       <li
           title="prev"
@@ -60,7 +60,7 @@
           @keyup.native.enter="goPage" 
           v-model="currentPage">
         </n3-input>
-        <n3-button @click.native="goPage">Go</n3-button>
+        <n3-button @click.native="goPage">{{getL('go')}}</n3-button>
       </div>
     </ul>
   </div>
@@ -70,9 +70,12 @@
   import n3Icon from '../Icon/n3Icon.vue'
   import n3Input from '../Input/n3Input.vue'
   import type from '../utils/type'
+  import localeMixin from '../Mixin/localeMixin'
+
   export default {
     name: 'n3Page',
     components: {n3Select, n3Icon, n3Input},
+    mixins: [localeMixin('n3Page')],
     props: {
       prefixCls: {
         type: String,
@@ -146,7 +149,7 @@
         return this.pagesizeOpts.map(i => {
           return {
             value: i,
-            label: i + ' / page'
+            label: i + ' / ' + this.getL('page')
           }
         })
       },

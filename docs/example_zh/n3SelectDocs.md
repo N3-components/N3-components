@@ -2,7 +2,7 @@
 
 ### 选择框
 
-<div class="bs-docs-section" id="选择框"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 
 > 单选
@@ -151,20 +151,26 @@ export default {
 | --- | --- | --- | --- |
 | value |  |  | 多选为数组，单选为单个数字或者字符串 |
 | options | `Array` | `[]` |  |
-| placeholder | `String` | '请选择' |  |
+| placeholder | `String` | '' |  |
 | multiple | `Boolean` | `false` | 支持多选 |
 | limit | `Number` | `1024` | 多选限制 |
 | search | `Boolean` | `false` | 是否支持搜索 |
 | extra | `Boolean` | `false` | 可支持在输入款内添加新的选项(需要search支持) |
-| input-placeholder | `String` | `请输入` | 输入框的placeholder |
+| input-placeholder | `String` | `` | 输入框的placeholder |
 | width | `String` |  | 选择框大小 |
 | menu-max-height | `String` | 300px | 下拉框最大高度 |
 | menu-width | `String` |  | 下拉框宽度 |
 | format | `Function` | `function(item){ return item.label }` | 选中内容的格式化显示 |
-| on-change | `Function` |  | value改变回调函数 |
 | disabled | `Boolean` | `false` |  |
 | readonly | `Boolean` | `false` |  |
 | cancelled | `Boolean` |  | 单选时，是否可撤销 |
+
+
+### 事件
+
+| 名称          |   说明          |     参数   
+|-------------  |---------------- |---|
+| change | 值变化 |(currentValue) |
 
 其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
 

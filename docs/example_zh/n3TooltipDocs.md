@@ -2,7 +2,7 @@
 
 ### 浮出提示
 
-<div class="bs-docs-section" id="浮出提示"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
   <n3-tooltip content="tooltip on top" placement="top" trigger="hover">
     <n3-button>tooltip on top</n3-button>

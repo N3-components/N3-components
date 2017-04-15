@@ -2,7 +2,7 @@
 
 ### 卡片
 
-<div class="bs-docs-section" id="卡片"  >
+<div class="bs-docs-section"  >
 
 <div class="bs-example">
   <n3-card style="padding:20px">

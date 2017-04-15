@@ -1,10 +1,10 @@
 <template>
 
-### 进度条
+### ProgressBar
 
-<div class="bs-docs-section" id="进度条"  >
+<div class="bs-docs-section"  >
 
-> 高度
+> Height
 
 <div class="bs-example">
   <div class="row">
@@ -31,7 +31,7 @@
 </n3-progress>
 ```
 
-> 动态变化 <n3-button @click.native="dynamicClick">随机变化</n3-button>
+> Dynamic <n3-button @click.native="dynamicClick">Random change</n3-button>
 
 <div class="bs-example">
   <n3-progress class="margin" >
@@ -80,7 +80,7 @@ export default {
 }
 ```
 
-> 叠加 <n3-button @click.native="stackedClick">随机变化</n3-button>
+> Superimposed <n3-button @click.native="stackedClick">Random change</n3-button>
 
 <div class="bs-example">
   <n3-progress>
@@ -120,16 +120,16 @@ export default {
 }
 ```
 
-### 参数
+### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| now | `Number` |  | 当前进度 |
-| height | `String` | 20px | 高度 |
-| type | `String` |  | 样式 |
-| label | `Boolean` | `false` | 是否显示进度提示 |
-| striped | `Boolean` | `false` | 是否显示条纹 |
-| animated | `Boolean` | `false` | 动画效果 |
+| now | `Number` |  | current value |
+| height | `String` | 20px | height |
+| type | `String` |  | color |
+| label | `Boolean` | `false` | label tip |
+| striped | `Boolean` | `false` | striped |
+| animated | `Boolean` | `false` | animated style |
     
 </div>
 </template>

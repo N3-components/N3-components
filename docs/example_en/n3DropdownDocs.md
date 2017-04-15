@@ -1,13 +1,13 @@
 <template>
 
-### 下拉框
+### Dropdown
 
-<div class="bs-docs-section" id="下拉框"  >
+<div class="bs-docs-section"  >
 <div class="bs-example">
   <n3-dropdown>
     <div slot="trigger">
       <n3-button>
-        点击
+        click
         <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
       </n3-button>
     </div>
@@ -22,7 +22,7 @@
 <n3-dropdown>
   <div slot="trigger">
     <n3-button>
-      点击
+      click
       <n3-icon :type="show?'angle-up' : 'angle-down'" ></n3-icon>
     </n3-button>
   </div>
@@ -42,13 +42,13 @@ export default {
 }
 ```
 
-### 参数
+### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| show | `Boolean` | `false` | 是否显示 |
-| trigger | `String` 如: `click``hover` | click | 触发方式 |
-| click-close | `Boolean` | `false` | 点击关闭 |
+| show | `Boolean` | `false` | show |
+| trigger | `String` 如: `click``hover` | click | trigger type |
+| click-close | `Boolean` | `false` | click close |
 
 </div>
 </template>

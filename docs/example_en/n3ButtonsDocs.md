@@ -1,8 +1,8 @@
 <template>
 
-### 按钮
+### Button
 
-<div class="bs-docs-section" id="按钮"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 
 <n3-button loading >default</n3-button>
@@ -55,17 +55,16 @@
 
 </div>
 
-### Button参数
-
-| 参数名 | 类型 | 默认值 | 说明 |
+### Params
+| name | type | default | description |
 | --- | --- | --- | --- |
 | size | `String` |  | `lg` `sm` `xs` |
-| loading | `Boolean` |  | `加载状态` |
-| disabled | `Boolean` |  | 禁用状态 |
-| active | `Boolean` | `false` | 激活状态 |
-| badge | `String` `Number` |  | 徽标 |
-| block | `Boolean` | `false` | 是否块级元素 |
-| type | `String`, 如: `default` `primary` `danger` `info` `warning` `success` | `default` |  |
+| loading | `Boolean` |  | loading |
+| disabled | `Boolean` |  | disabled |
+| active | `Boolean` | `false` | active |
+| badge | `String` `Number` |  | badge content |
+| block | `Boolean` | `false` | whether is block element or not  |
+| type | `String`, one of `default` `primary` `danger` `info` `warning` `success` | `default` |  |
 
 </div>
 </template>

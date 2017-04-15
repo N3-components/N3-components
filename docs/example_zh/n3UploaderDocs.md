@@ -2,7 +2,7 @@
 
 ### 文件上传
 
-<div class="bs-docs-section" id="文件上传"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 
 #### 单个文件上传

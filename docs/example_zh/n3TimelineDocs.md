@@ -2,7 +2,7 @@
 
 ### 时间轴
 
-<div class="bs-docs-section" id="时间轴" >
+<div class="bs-docs-section" >
 
 > 时间轴（静态）
 

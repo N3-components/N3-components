@@ -1,8 +1,8 @@
 <template>
   
-### 幻灯片
+### Carousel
 
-<div class="bs-docs-section" id="幻灯片"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
   <n3-carousel>
     <n3-slide>
@@ -55,13 +55,13 @@
 </n3-carousel>
 ```
 
-### 参数
+### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| indicators | `Boolean` | `true` | 是否显示控制点 |
-| controls | `Boolean` | `true` | 是否显示箭头 |
-| interval | `Number` | `5000` | 自动切换时间(小于等于0时不自动切换) |
+| indicators | `Boolean` | `true` | Whether to display the control point |
+| controls | `Boolean` | `true` | Whether to show arrows |
+| interval | `Number` | `5000` | Automatic switching time (less than or equal to 0 does not automatically switch) |
 
 </div>
 </template>

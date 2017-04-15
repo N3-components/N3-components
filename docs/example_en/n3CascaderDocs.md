@@ -1,6 +1,6 @@
 <template>
 
-### 级联选择
+### Cascader
 
 <div class="bs-docs-section" >
   <div class="bs-example">
@@ -14,49 +14,48 @@
 ```javascript
   [{
     value: 'zhejiang',
-    label: '浙江',
+    label: 'zhejiang',
     children: [{
       value: 'hangzhou',
-      label: '杭州',
+      label: 'hangzhou',
       children: [{
         value: 'xihu',
-        label: '西湖',
+        label: 'xihu',
       }],
     }],
   }, {
     value: 'jiangsu',
-    label: '江苏',
+    label: 'jiangsu',
     disabled:true,
     children: [{
       value: 'nanjing',
-      label: '南京',
+      label: 'nanjing',
       children: [{
         value: 'zhonghuamen',
-        label: '中华门',
+        label: 'zhonghuamen',
       }],
     }],
   }]
 ```   
 
-### 参数
-| 参数          | 类型            |   默认值         |   说明   |
+### Params
+| name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
 | options          | Array     |    -        |       |
-| width | `String`| `200px` |宽度 |
-| disabled | `Boolean`| `false` | 禁用 |
+| width | `String`| `200px` | width |
+| disabled | `Boolean`| `false` | disabled |
 | placeholder | `String`| - | |
 | display-render |`Function` | - | |
-| select-change  | `Boolean` | - | 选择值就改变 |
+| select-change  | `Boolean` | - | Whether to select to change |
 
 
 ### Events
 
-| 事件名称      | 说明    | 回调参数      |
+| name      | description    | params      |
 |---------- |-------- |---------- |
-| change | 值变化时 | (currentValue) |
+| change | change | (currentValue) |
 
-    
-其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
+<p>PS: params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 
 </div>
 </template>
@@ -64,25 +63,25 @@
 <script>
 const options = [{
   value: 'zhejiang',
-  label: '浙江',
+  label: 'zhejiang',
   children: [{
     value: 'hangzhou',
-    label: '杭州',
+    label: 'hangzhou',
     children: [{
       value: 'xihu',
-      label: '西湖'
+      label: 'xihu'
     }]
   }]
 }, {
   value: 'jiangsu',
-  label: '江苏',
+  label: 'jiangsu',
   disabled: true,
   children: [{
     value: 'nanjing',
-    label: '南京',
+    label: 'nanjing',
     children: [{
       value: 'zhonghuamen',
-      label: '中华门'
+      label: 'zhonghuamen'
     }]
   }]
 }]

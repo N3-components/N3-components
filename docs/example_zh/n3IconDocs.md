@@ -2,7 +2,7 @@
 
 ### 图标
 
-<div class="bs-docs-section" id="图标"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 
 ### FontAwesome 4.0 图标列表

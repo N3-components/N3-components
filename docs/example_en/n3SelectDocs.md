@@ -1,11 +1,11 @@
 <template>
 
-### 选择框
+### Select
 
-<div class="bs-docs-section" id="选择框"  >
+<div class="bs-docs-section">
 <div class="bs-example">
 
-> 单选
+> Single
 
   <p>
     <pre>
@@ -21,14 +21,14 @@ Select data : {{single}}
   </n3-select>
   <hr>
 
-> 多选
+> Multiple
   
   <p>
     <pre>
 Select data : {{multiple.join(', ')}}
     </pre>
   </p>
-  <n3-select multiple v-model="multiple" search>
+  <n3-select multiple v-model="multiple" search >
     <n3-option value="Apple">Apple</n3-option>
     <n3-option value="Banana">Banana</n3-option>
     <n3-option value="Cherry">Cherry</n3-option>
@@ -37,14 +37,14 @@ Select data : {{multiple.join(', ')}}
   </n3-select>
   <hr>
 
-> 多选限制
+> Multiple limit
 
   <p>
     <pre>
 Select data : {{multipleLimit.join(', ')}}
     </pre>
   </p>
-  <n3-select multiple :limit="2" v-model="multipleLimit" search extra>
+  <n3-select multiple :limit="2" v-model="multipleLimit" search extra >
     <n3-option value="Apple">Apple</n3-option>
     <n3-option value="Banana">Banana</n3-option>
     <n3-option value="Cherry">Cherry</n3-option>
@@ -53,7 +53,7 @@ Select data : {{multipleLimit.join(', ')}}
   </n3-select>
   <hr>
 
-> 自定义内容
+> Custom content
 
   <p>
     <pre>
@@ -68,10 +68,9 @@ Select data : {{custom.join(', ')}}
   </n3-select>
   <hr />
 
-> 传递数组，支持搜索
+> Search
 
   <p>
-    支持只传递接json数组，可以支持搜索
     <pre>
 Select data : {{arr}}
     </pre>
@@ -81,7 +80,7 @@ Select data : {{arr}}
 </div>
 
 ```html
-<!-- 单选框 -->
+<!-- single -->
 <n3-select v-model="single">
   <n3-option value="Apple">Apple</n3-option>
   <n3-option value="Banana">Banana</n3-option>
@@ -90,8 +89,8 @@ Select data : {{arr}}
   <n3-option value="Grape">Grape</n3-option>
 </n3-select>
 
-<!-- 多选框 -->
-<n3-select multiple v-model="multiple" search>
+<!-- multiple -->
+<n3-select multiple v-model="multiple" search >
   <n3-option value="Apple">Apple</n3-option>
   <n3-option value="Banana">Banana</n3-option>
   <n3-option value="Cherry">Cherry</n3-option>
@@ -99,7 +98,7 @@ Select data : {{arr}}
   <n3-option value="Grape">Grape</n3-option>
 </n3-select>
 
-<!-- 多选限制 -->
+<!-- limit -->
 <n3-select multiple :limit="2" v-model="multipleLimit" search extra>
   <n3-option value="Apple">Apple</n3-option>
   <n3-option value="Banana">Banana</n3-option>
@@ -108,7 +107,7 @@ Select data : {{arr}}
   <n3-option value="Grape">Grape</n3-option>
 </n3-select>
 
-<!-- 自定义内容 -->
+<!-- Custom content -->
 <n3-select multiple v-model="custom" >
   <n3-option value="Star"><span  class="n3-fa n3-fa-star"></span> Star</n3-option>
   <n3-option value="Heart"><span class="n3-fa n3-fa-heart"></span> Heart</n3-option>
@@ -116,7 +115,7 @@ Select data : {{arr}}
   <n3-option value="Inbox"><span class="n3-fa n3-fa-inbox"></span> Inbox</n3-option>
 </n3-select>
 
-<!-- 传递数组，支持搜索 -->
+<!-- search -->
 <n3-select v-model="arr" :options="fruitOptions" :search="true" multiple extra width="400px">
 </n3-select>
 
@@ -143,30 +142,33 @@ export default {
 }
 ```
 
-### 参数
-
-样式的参数和 <a href="#n3ButtonsDocs">按钮</a> 相同
-    
-| 参数名 | 类型 | 默认值 | 说明 |
+### Params
+| name | type | default | description |
 | --- | --- | --- | --- |
-| value |  |  | 多选为数组，单选为单个数字或者字符串 |
+| value | `Array`(multiple) `Number`,`String` | - | Selected value |
 | options | `Array` | `[]` |  |
-| placeholder | `String` | '请选择' |  |
-| multiple | `Boolean` | `false` | 支持多选 |
-| limit | `Number` | `1024` | 多选限制 |
-| search | `Boolean` | `false` | 是否支持搜索 |
-| extra | `Boolean` | `false` | 可支持在输入款内添加新的选项(需要search支持) |
-| input-placeholder | `String` | `请输入` | 输入框的placeholder |
-| width | `String` |  | 选择框大小 |
-| menu-max-height | `String` | 300px | 下拉框最大高度 |
-| menu-width | `String` |  | 下拉框宽度 |
-| format | `Function` | `function(item){ return item.label }` | 选中内容的格式化显示 |
-| on-change | `Function` |  | value改变回调函数 |
-| disabled | `Boolean` | `false` |  |
-| readonly | `Boolean` | `false` |  |
-| cancelled | `Boolean` |  | 单选时，是否可撤销 |
+| placeholder | `String` | '' |  |
+| multiple | `Boolean` | `false` | multiple |
+| limit | `Number` | `1024` | Multiple choice limit |
+| search | `Boolean` | `false` | search  |
+| extra | `Boolean` | `false` |show add new option icon (work width `search`) |
+| input-placeholder | `String` | '' | search input placeholder |
+| width | `String` |  | width |
+| menu-max-height | `String` | `300px` | max height of dropdown |
+| menu-width | `String` |  | width of dropdown |
+| format | `Function` | `function(item){ return item.label }` | format function |
+| disabled | `Boolean` | `false` | disabled  |
+| readonly | `Boolean` | `false` | readonly  |
+| cancelled | `Boolean` |  | Whether it can be cancelled when you are radio |
 
-其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
+### Events
+
+| name          |   description          |     params   
+|-------------  |---------------- |---|
+| change | value change |(currentValue) |
+
+
+<p>PS: params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 
 </div>
 </template>

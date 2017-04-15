@@ -2,7 +2,7 @@
 
 ### 面包屑
 
-<div class="bs-docs-section" id="面包屑"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
   <n3-breadcrumb>
     <n3-breadcrumb-item href="#">Home</n3-breadcrumb-item>

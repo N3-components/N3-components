@@ -2,7 +2,7 @@
 
 ### 按钮
 
-<div class="bs-docs-section" id="按钮"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 
 <n3-button loading >default</n3-button>

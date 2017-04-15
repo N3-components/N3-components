@@ -6,7 +6,7 @@
           <n3-row >
             <n3-column :col="2">
               <input placeholder="搜索" v-model="search" class="searchCom" ></input>
-              <n3-nav type="vertical" :default-openeds="['基本','提示','表单','展示','导航','其他']">
+              <n3-nav type="vertical" :default-openeds="['基本','提示','表单','展示','导航','其他']" @select="select">
                   <n3-sub-nav v-for="(item, index) in list"  :index="index">
                     <template slot="title">{{index}}</template>
                     <n3-nav-item v-for="(i,index1) in item.list" :index="index1" :key="index1" :active="component == i.value" @click.native="change(i.value)">
@@ -187,6 +187,9 @@ export default{
     }
   },
   methods: {
+    select() {
+      $(window).scrollTop(0)
+    },
     handleToggle (item) {
       item.show = !item.show
     },
@@ -212,8 +215,8 @@ export default{
     this.list = this.map
     this.init()
     window.onhashchange = this.init
-
     setTimeout(() => {
+      $(window).scrollTop(0)
       prismjs.highlightAll()
       document.querySelectorAll('table').forEach(i => {
         i.classList.add('table', 'table-bordered')

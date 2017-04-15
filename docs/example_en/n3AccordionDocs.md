@@ -1,12 +1,12 @@
 <template>
 
-### 折叠面板
+### Accordion
 
 <div class="bs-docs-section">
 <div class="bs-example">
   <p>
     <input type="checkbox" v-model="checked">
-    一次只打开一个
+    open one panel
   </p>
   <n3-accordion :one-at-time="checked" @change="change">
     <n3-panel :is-open="true" index="1" @change="change">
@@ -74,31 +74,31 @@ export default {
 }
 ```
 
-### According参数
+### According Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| one-at-time | `Boolean` | `false` | 控制当一个面板被打开时，其他面板是否关闭 |
-| effect | `String` | `collapse` | 切换动画 |
+| one-at-time | `Boolean` | `false` | Controls whether other panels are closed when a panel is opened |
+| effect | `String` | `collapse` | animation |
 
-### According Events
+### Events
 
-| 事件名称      | 说明    | 回调参数      |
-|---------- |-------- |---------- |
-| change  | 改变时的回调函数,参数为panel的状态数组 |  |
+| name          |   description          |     params   
+|-------------  |---------------- |---|
+| change | value change |(panelOpens) |
 
-### Panel参数
+### Panel Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| is-open | `Boolean` | `false` | 面板打开还是关闭 |
-| header | `String` |  | 面板头部显示的内容，点击该内容进行面板的打开收缩 |
+| is-open | `Boolean` | `false` | Whether the panel is open or closed |
+| header | `String` |  | Panel display of the contents of the head, click on the contents of the panel to open the panel |
 
 ### Panel Events
 
-| 事件名称      | 说明    | 回调参数      |
-|---------- |-------- |---------- |
-| change  | 改变时的回调函数,参数为panel的状态 |  |
+| name          |   description          |     params   
+|-------------  |---------------- |---|
+| change | open change |(panelOpen) |
 
 </div>
 </template>

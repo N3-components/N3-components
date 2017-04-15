@@ -62,7 +62,10 @@ import N3Components from 'N3-components'
 // ant design css style
 import N3Components from 'N3-components/dist/blue.min.js' 
 
-Vue.use(N3Components)
+N3Components.install(Vue)
+// for English  (default chinese)
+// N3Components.install(Vue, 'en') 
+// version 2.2.0 or later
 ```
 
 也可以在需要的时候引入该组件，示例代码如下：
@@ -71,6 +74,11 @@ Vue.use(N3Components)
 import Vue from 'vue'
 import N3Components from 'N3-components'
 import {n3Alert} from N3Components
+
+// set language  
+// window.n3Locale = 'en'
+//
+
 ```
 
 依赖的项目

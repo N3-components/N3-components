@@ -1,11 +1,11 @@
 <template>
 
-### 弹出框
+### Modal
 
-<div class="bs-docs-section" id="弹出框"  >
+<div class="bs-docs-section">
 <div class="bs-example">
 
-> 组件调用
+> component
 
 <n3-button @click.native="showModal">Show modal</n3-button>
 <n3-modal title="Modal title" effect="fade" width="400px" ref="modal">
@@ -106,39 +106,39 @@ export default {
 
 ---
 
-> 函数调用 
+> methods 
 
 ```javascript
 export default {
   methods: {
     showAlert () {
       this.n3Modal.alert({
-        title: '消息框'
-        message: '这是一个消息框。',
+        title: 'Title'
+        message: 'This is a  Modal。',
         effect: 'fade',
         type: 'info',
         onShow () {
-          console.log('打开对话框时触发')
+          console.log('open')
         },
         onHide () {
-          console.log('关闭对话框时触发')
+          console.log('close')
         }
       })
     },
     showConfirm () {
       this.n3Modal.confirm({
-        title: '对话框',
-        message: '这是一个提供选择的对话框。',
+        title: 'Title',
+        message: 'This is a Modal。',
         effect: 'zoom',
         type: 'success',
         onShow () {
-          console.log('打开对话框时触发')
+          console.log('open')
         },
         onConfirm () {
-          console.log('点击确定按钮时触发')
+          console.log('confirm')
         },
         onHide () {
-          console.log('关闭对话框时触发')
+          console.log('hide')
         }
       })
     }
@@ -148,61 +148,59 @@ export default {
 
 ---
 
-### 组件调用
+### components
 
-#### 组件参数
+#### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| title | `String` |  | 弹出框标题 |
+| title | `String` |  | title |
 | effect | `String` | 'fade' | `fade``zoom` |
 | width | `String` | `600px` |  |
-| backdrop | `Boolean` | `true` | 点击遮罩层是否关闭弹出框 |
+| backdrop | `Boolean` | `true` | Click whether the mask layer closes the pop-up box |
 
 #### Events
 
-| 事件名称      | 说明    | 回调参数      |
-|---------- |-------- |---------- |
-| show  | 显示模态框时 |  |
-| hide  | 隐藏模态框时 |  |
-| confirm  | 按下确认时 |  |
+| name      | description    | 
+|---------- |-------- |
+| show  | show |  
+| hide  | hide |  
+| confirm  | confirm |  
 
 
-#### 组件方法
+#### Methods
 
-| 方法名称      | 说明    | 备注      |
-|---------- |-------- |---------- |
-| open  | 显示模态框 |  |
-| close  | 隐藏模态框 |  |
-| confirm  | 触发确认事件 |  |
+| name      | description    | 
+|---------- |-------- |
+| open  | open  Modal |  |
+| close  | close  Modal|  |
+| confirm  | emit confirm event |  
 
 ---
 
-### 函数调用
+### Methods
 
-> 直接在实例中调用this.n3Mode进行modal的创建和操作
+> Directly in the instance call `this.n3Model` modal creation and operation
 
-#### 函数参数
+#### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| title | `String` |  | 弹出框标题，如果为空则不渲染 header|
-| message | `String` |  | 弹出框内容|
+| title | `String` |  | title|
+| message | `String` |  | message|
 | effect | `String` | 'fade' | `fade``zoom` |
-| type | `String` | `600px` | 弹出框类型，用于决定弹出框提示图标。 |
-| width | `String` | `600px` | 弹出框宽度 |
-| onShow | `Function` || 打开弹出框时的回调函数 |
-| onHide | `Function` || 关闭弹出框时的回调函数 |
-| onConfirm | `Function` || 点击弹出框确定按钮时的回调函数 |
+| type | `String` | `600px` | Modal type, used to determine Modal prompt icon. |
+| width | `String` | `600px` | width |
+| onShow | `Function` || The callback function when the Modal is opened |
+| onHide | `Function` || The callback function when the Modal is opened |
+| onConfirm | `Function` || Click the callback function when the Modal determines the button |
 
 
-### 用法说明
+### Usage
 
-#### 组件驱动
+#### component
 
-如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer.
-
-但是如果你需要自己定制弹出框内容，你可以实现
+If you need to customize the contents of the Modal, you can achieve it
 
 ```html
 <div slot="header">...</div>
@@ -210,11 +208,11 @@ export default {
 <div slot="footer">...</div>
 ```
 
-#### 函数驱动
+#### Methods
 
-N3 提供函数驱动的一次性模态框，通过实例属性 n3Modal.alert 及 n3Modal.confirm 调用，它会在使用时动态绑定到 DOM 树中，并在关闭后自动销毁。
+N3 provides a function-driven one-time modal, invoked by the instance attributes n3Modal.alert and n3Modal.confirm, which are dynamically bound to the DOM tree when used and automatically destroyed after shutdown.
 
-为了还原原生对话框操作体验，函数驱动的弹出框将不能通过点击背景进行关闭。
+In order to restore the native dialog operation experience, the function-driven Modal will not be closed by clicking on the background.
 
 ```javascript
 const options = {...}
@@ -259,32 +257,32 @@ export default {
     },
     showConfirm () {
       this.n3Modal.confirm({
-        title: '对话框',
-        message: '这是一个提供选择的对话框。',
+        title: 'Title',
+        message: 'This is a Modal',
         effect: 'zoom',
         type: 'info',
         onShow () {
-          console.log('打开对话框时触发')
+          console.log('open')
         },
         onConfirm () {
-          console.log('点击确定按钮时触发')
+          console.log('confirm')
         },
         onHide () {
-          console.log('关闭对话框时触发')
+          console.log('hide')
         }
       })
     },
     showAlert () {
       this.n3Modal.alert({
-        title: '消息框',
-        message: '这是一个消息框。',
+        title: 'title',
+        message: 'This is a Modal',
         effect: 'fade',
         type: 'success',
         onShow () {
-          console.log('打开对话框时触发')
+          console.log('open')
         },
         onHide () {
-          console.log('关闭对话框时触发')
+          console.log('hide')
         }
       })
     }

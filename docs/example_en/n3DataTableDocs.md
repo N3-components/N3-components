@@ -1,8 +1,8 @@
 <template>
 
-### 数据表格
+### DataTable
 
-<div class="bs-docs-section" id="数据表格"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 <h4>Table</h4>
 
@@ -58,9 +58,9 @@
 ```javascript
 
 [{
-  title:'姓名',
+  title:'name',
   dataIndex: 'name',
-  options:[{value:"v白",label:"v白"},{value:"t红",label:"t红"}],
+  options:[{value:"Jack",label:"Jack"},{value:"Tom",label:"Tom"}],
   value:[],
   // multiple,search,extra
 }]
@@ -73,8 +73,8 @@
 
 {
   name:{
-    '小白': {rowspan: 2},
-    'v白': {rowspan: 0}
+    'Jack': {rowspan: 2},
+    'Tom': {rowspan: 0}
   }
 }
 
@@ -101,7 +101,6 @@ function(pagination,query,sort,filter){
   },
   self = this;
 
-  //根据需要添加其他参数
   this.loading = true
   $.ajax({
     url:'',
@@ -116,32 +115,32 @@ function(pagination,query,sort,filter){
 
 ```
 
-### 参数
+### Params
 
-| 参数          | 类型            |   默认值         |   说明   |
+| name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
-| fixed-columns | `Boolean` | - | 固定表头,记得为列设置宽度    |
-| height| `String` | - | 高度，配合固定表头使用   |
-| width| `String` | - | 宽度 不要和fixed-columns共用   |
-| async  | `Boolean` | `false` | 异步加载，配合change事件来请求服务端数据    |
-| merge-rule | `Object` | - | 合并规则    |
-| columns  | `Array` | - | 头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等     |
-| selection| `Object`| - | <code style="color:red">使用getCheckboxProps来初始化状态</code>|
-| sort-column |`Object`|-|默认全局排序字段|
-| source   | `Array`  |  -  |表格数组 |
-| page  |  `Boolean` |  `true` |是否分页，需要开启async| 
-| search |  `Boolean` | `true`  |是否支持搜索 | 
-| filter |  `Boolean` | `true`  | 是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器|
-| filter-list | `Array` |  - |自定义过滤器|
-| select-col |  `Boolean` |  `true` |  是否支持选择显示列  |      
-| pagination  |  `Object` |  - |  设置分页|     
-| loading |  `Boolean` |  `false` |  设置表格的加载中状态 |      
+| fixed-columns | `Boolean` | - | fix table header    |
+| height| `String` | - | height，work width `fixed-columns`   |
+| width| `String` | - | width， conflict with  `fixed-columns`   |
+| async  | `Boolean` | `false` | Asynchronous loading, with the change event to request server data    |
+| merge-rule | `Object` | - | Merge rules    |
+| columns  | `Array` | - | Header array, set field name, description, support sort, display, render, etc.    |
+| selection| `Object`| - | <code style="color:red">Use `getCheckboxProps` to initialize the state</code>|
+| sort-column |`Object`|-|default global sort field|
+| source   | `Array`  |  -  |table source |
+| page  |  `Boolean` |  `true` |page | 
+| search |  `Boolean` | `true`  |search | 
+| filter |  `Boolean` | `true`  | Whether to support field filtering, columns for the object to add fiiter to specify its filter|
+| filter-list | `Array` |  - |Customize the filter|
+| select-col |  `Boolean` |  `true` |  Whether to support the selection of the display column  |      
+| pagination  |  `Object` |  - |  page params |     
+| loading |  `Boolean` |  `false` |  loading |      
         
 ### Events
 
-| 名称          |   说明          |        
+| name          |   description          |        
 |-------------  |---------------- |
-| change          |    当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作 | 
+| change          |    When the page, search, filter sorting and other conditions change when the callback function for the server operation | 
 
 </div>
 </template>
@@ -154,45 +153,45 @@ export default {
     },
     refresh () {
       this.source = [{
-        key: '小白',
-        name: '小白',
+        key: 'Jack',
+        name: 'Jack',
         age: 25,
-        department: '技术1'
+        department: 'IT'
       }, {
-        key: '2',
-        name: '33',
+        key: 'Tom',
+        name: 'Tom',
         age: 33,
-        department: '技术2'
+        department: 'IT'
       }, {
-        key: '3',
-        name: '44',
+        key: 'Eric',
+        name: 'Eric',
         age: 12,
-        department: '技术3'
+        department: 'Sales'
       }, {
-        key: '4',
-        name: '55',
+        key: 'Kate',
+        name: 'Kate',
         age: 25,
-        department: '技术1'
+        department: 'Finance'
       }, {
-        key: '5',
-        name: 'l66黑',
+        key: 'Tim',
+        name: 'Tim',
         age: 33,
-        department: '技术2'
+        department: 'Sales'
       }, {
-        key: '61',
-        name: 'i红6',
-        age: 122,
-        department: '技术3'
+        key: 'Li',
+        name: 'Li',
+        age: 22,
+        department: 'Finance'
       }, {
-        key: '73',
-        name: 'yd白',
-        age: 2,
-        department: '技术1'
+        key: 'King',
+        name: 'King',
+        age: 20,
+        department: 'Product'
       }, {
-        key: '81',
-        name: 'b黑',
-        age: 332,
-        department: '技术2'
+        key: 'Lucy',
+        name: 'Lucy',
+        age: 32,
+        department: 'Product'
       }]
     },
     del (key) {
@@ -230,18 +229,18 @@ export default {
         pagesize: 10
       },
       filterList: [{
-        title: '姓名',
+        title: 'name',
         dataIndex: 'name',
-        options: [{value: 'v白', label: 'v白'}, {value: 't红', label: 't红'}],
+        options: [{value: 'Tom', label: 'Tom'}, {value: 'Jack', label: 'Jack'}],
       }],
       columns: [{
-        title: '姓名',
+        title: 'name',
         dataIndex: 'name',
         sort: true,
         width: '100px',
         filter: true
       }, {
-        title: '年龄',
+        title: 'age',
         dataIndex: 'age',
         sort: true,
         sortType: 'DESC',
@@ -252,78 +251,58 @@ export default {
           return `<a href="javascript:;">${text}</a>`
         }
       }, {
-        title: '部门',
+        title: 'department',
         dataIndex: 'department',
         width: '250px'
       }, {
-        title: '操作',
+        title: 'operating',
         dataIndex: '',
         render: (text, record, index) => {
           return `<span class="item">
-                    <a href="javascript:;" @click="del('${record.key}','${index}')" style="color:#41cac0">删除</a>
+                    <a href="javascript:;" @click="del('${record.key}','${index}')" style="color:#41cac0">delete</a>
                   </span>`
         }
       }],
       source: [{
-        key: '1',
-        name: '小白',
+        key: 'Jack',
+        name: 'Jack',
         age: 25,
-        department: '技术1'
+        department: 'IT'
       }, {
-        key: '2',
-        name: '小黑',
+        key: 'Tom',
+        name: 'Tom',
         age: 33,
-        department: '技术2'
+        department: 'IT'
       }, {
-        key: '3',
-        name: '小红',
+        key: 'Eric',
+        name: 'Eric',
         age: 12,
-        department: '技术3'
+        department: 'Sales'
       }, {
-        key: '4',
-        name: 'v白',
+        key: 'Kate',
+        name: 'Kate',
         age: 25,
-        department: '技术1'
+        department: 'Finance'
       }, {
-        key: '5',
-        name: 'l黑',
+        key: 'Tim',
+        name: 'Tim',
         age: 33,
-        department: '技术2'
+        department: 'Sales'
       }, {
-        key: '6',
-        name: 'i红',
-        age: 122,
-        department: '技术3'
+        key: 'Li',
+        name: 'Li',
+        age: 22,
+        department: 'Finance'
       }, {
-        key: '7',
-        name: 'y白',
-        age: 2,
-        department: '技术1'
+        key: 'King',
+        name: 'King',
+        age: 20,
+        department: 'Product'
       }, {
-        key: '8',
-        name: 'b黑',
-        age: 332,
-        department: '技术2'
-      }, {
-        key: '9',
-        name: 't红',
-        age: 124,
-        department: '技术3'
-      }, {
-        key: '10',
-        name: 'f白',
-        age: 253,
-        department: '技术1'
-      }, {
-        key: '11',
-        name: 'a黑',
-        age: 31,
-        department: '技术2'
-      }, {
-        key: '12',
-        name: 'd红',
-        age: 31,
-        department: '技术3'
+        key: 'Lucy',
+        name: 'Lucy',
+        age: 32,
+        department: 'Product'
       }]
     }
   }

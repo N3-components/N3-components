@@ -1,13 +1,11 @@
 <template>
 
-### 图标
+### Icon
 
-<div class="bs-docs-section" id="图标"  >
+<div class="bs-docs-section"  >
 <div class="bs-example">
 
-### FontAwesome 4.0 图标列表
-
-#### 11 New Icons in 4.0
+### FontAwesome 4.0 Icons
 
 <hr></hr>
 
@@ -69,13 +67,12 @@
 <n3-icon type="rub"></n3-icon>
 ```
 
-### 参数
-
-| 参数名 | 类型 | 默认值 | 说明 |
+### Params
+| name | type | default | description |
 | --- | --- | --- | --- |
-| type | `String` |  | 图标类型名 |
-| size | `String` |  | 图标尺寸 |
-| color | `String` |  | 颜色 |
+| type | `String` |  | type |
+| size | `String` |  | size |
+| color | `String` |  | color |
 
 </div>
 </template>

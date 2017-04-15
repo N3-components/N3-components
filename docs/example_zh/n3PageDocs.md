@@ -2,7 +2,7 @@
 
 ### 分页
 
-<div class="bs-docs-section" id="分页"  >
+<div class="bs-docs-section"  >
 <div class="bs-example">
   <n3-page :total="100" @change="pagechange" v-model="current"  :show-sizer="true" :show-elevator="true"></n3-page>
   <hr></hr>

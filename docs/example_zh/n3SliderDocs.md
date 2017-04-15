@@ -2,7 +2,7 @@
 
 ### 滑块
 
-<div class="bs-docs-section" id="滑块"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 <n3-slider v-model="value" @change="change" orientation="vertical" ></n3-slider>
 <p>滑块的值: {{value}}</p> 
@@ -12,7 +12,7 @@
 </div>
 
 ```html
-<n3-slider v-model="value" :@change="change" orientation="vertical"></n3-slider>
+<n3-slider v-model="value" @change="change" orientation="vertical"></n3-slider>
 <n3-slider v-model="value1" @change="change" :range="true"></n3-slider>
 ```
 
@@ -46,11 +46,11 @@ export default {
 | width          | `String`     |   `220px`      |     水平显示的宽度    |
 | height          | `String`     |    `220px`      |     水平显示的宽度    |
 
-### Events
+### 事件
 
-| 名称          |   说明          |        
-|-------------  |---------------- |
-| change | 值变化 |
+| 名称          |   说明          |     参数   
+|-------------  |---------------- |---|
+| change | 值变化 |(currentValue) |
 
 其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数
 

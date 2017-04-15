@@ -2,7 +2,7 @@
 
 ### 下拉框
 
-<div class="bs-docs-section" id="下拉框"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
   <n3-dropdown>
     <div slot="trigger">

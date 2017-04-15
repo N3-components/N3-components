@@ -81,7 +81,7 @@ export default {
 | one-at-time | `Boolean` | `false` | 控制当一个面板被打开时，其他面板是否关闭 |
 | effect | `String` | `collapse` | 切换动画 |
 
-### According Events
+### According 事件
 
 | 事件名称      | 说明    | 回调参数      |
 |---------- |-------- |---------- |
