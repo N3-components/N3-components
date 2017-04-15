@@ -1,6 +1,6 @@
 <template>
 
-### 自定义输入
+### MultipleInput
 
 <div class="bs-docs-section" >
 <div class="bs-example">
@@ -51,34 +51,33 @@ methods: {
 }
 ```
 
-### 参数
+### Params
 
-| 参数          | 类型            |   默认值         |   说明   |
+| name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
-| data          | `Array`     |    -        |     本地数组     |
-| format          | `Function`     |    -        |     显示格式化函数     |
-| limit          | `Number`     |    `8`      |     显示的条数     |
-| items          | `Array`     |    `[]`        |     列表数组，用于异步请求     |
-| positionMove          | `Boolean`     |    `true`        |     输入框位置是否能控制移动     |
-| async          | `Boolean`     |    `false`       |     异步     |
-| render          | `Function`     |    -       |     渲染函数     |
-| add-format          | `Function`     |    -       |     获取需要的值     |
-| dropdow-width          | `String`     |    `220px`       |     下拉宽度     |
-| dropdown-height          | `String`     |    `300px`       |     下拉框最大高度     |
+| data          | `Array`     |    -        |     locale data     |
+| format          | `Function`     |    -        |     format function     |
+| limit          | `Number`     |    `8`      |     the limited number of items       |
+| items          | `Array`     |    `[]`        |     suggestion items，for asyc     |
+| positionMove          | `Boolean`     |    `true`        |     whether the position of cursor can be moved or not     |
+| async          | `Boolean`     |    `false`       |     whether is async or not     |
+| render          | `Function`     |    -       |     render function     |
+| add-format          | `Function`     |    -       |     format function to get right data     |
+| dropdown-width          | `String`     |    `220px`       |     width of dropdown      |
+| dropdown-height          | `String`     |    `300px`       |     max height of dropdown      |
 
 
 ### Events
 
-| 名称          |   说明          |    参数 |  
+| name          |   description          |     params   
 |-------------  |---------------- | ------- |
-| blur          | 失焦     | -  |
-| focus          | 聚焦     | - |
-| change | 值变化 |  (currentValue) | |
-| positionChange | 位置变化 | (currentPosition)  |
-| inputChange | 输入值变化 |  (query) |
+| blur          |blur     | -  |
+| focus          | focus     | - |
+| change | change |  (currentValue) | |
+| positionChange | the position of cursor change | (currentPosition)  |
+| inputChange | input value change |  (query) |
 
-
-<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+<p>PS: params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 </div>
 </template>
 

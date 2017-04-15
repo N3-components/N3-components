@@ -17,6 +17,7 @@
     <transition name="fadeDown">
       <div :class="`${prefixCls}-timepicker-popup`" v-show="show"  v-n3-position="show">
         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
+          <span>{{getL('hour')}}</span>
           <n3-slider
             v-model="time.hour"
             orientation="vertical"
@@ -25,6 +26,7 @@
           </n3-slider>
         </div>
         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
+          <span>{{getL('minute')}}</span>
           <n3-slider
             v-model="time.minute"
             orientation="vertical"
@@ -34,6 +36,7 @@
           </n3-slider>
         </div>
         <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
+          <span>{{getL('second')}}</span>
           <n3-slider
             v-model="time.second"
             orientation="vertical"
@@ -52,10 +55,11 @@ import EventListener from '../utils/EventListener'
 import n3Slider from '../Slider/n3Slider'
 import n3Input from '../Input/n3Input'
 import inputMixin from '../Mixin/inputMixin'
+import localeMixin from '../Mixin/localeMixin'
 
 export default {
   name: 'n3Timepicker',
-  mixins: [inputMixin],
+  mixins: [inputMixin,localeMixin('n3Timepicker')],
   props: {
     value: {
       type: String
@@ -82,6 +86,9 @@ export default {
         return [0, 59]
       }
     },
+    locale: {
+      type: String
+    },
     prefixCls: {
       type: String,
       default: 'n3'
@@ -102,9 +109,14 @@ export default {
       if (!val) this.$emit('hide', this.currentValue)
     },
     value (val) {
+      this.inner=true
       this.currentValue = val
     },
     currentValue (val) {
+      if (this.inner){
+        this.inner = false
+        return
+      }
       this.$emit('input', val)
       this.$emit('change', val)
     },

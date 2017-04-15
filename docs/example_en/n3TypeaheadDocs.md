@@ -1,16 +1,16 @@
 <template>
 
-### 自动补全
+### Typeahead
 
-<div class="bs-docs-section" id="自动补全"  >
+<div class="bs-docs-section" >
 <div class="bs-example">
 
-> 本地数据
+> Loale data
 
 <n3-typeahead 
     v-model="value"
     :data="USstate" 
-    placeholder=" 发到">
+    placeholder="input">
 </n3-typeahead>
 <hr>
 
@@ -18,14 +18,14 @@
 <n3-typeahead 
     v-model="value"
     :data="USstate" 
-    placeholder=" 发到">
+    placeholder="input">
 </n3-typeahead>
 
 ```
 
 <hr>
 
-> 异步获取
+> async
 
 <n3-typeahead 
   async
@@ -73,28 +73,29 @@
 ```
 </div>
 
-### 参数
-| 参数          | 类型            |   默认值         |   说明   |
+### Params
+
+| name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
-| data          | `Array`     |    -        |     本地数组     |
-| limit          | `Number`     |    `8`       |     显示的条数     |
-| items          | `Array`     |    `[]`        |     列表数组，用于异步请求     |
-| async          | `Boolean`     |    `false`       |     异步     |
-| render          | `Function`     |    -       |     渲染函数     |
-| add-format          | `Function`     |    -       |     获取需要的值     |
-| dropdow-width          | `String`     |    `220px`       |     下拉宽度     |
-| dropdown-height          | `String`     |    `300px`       |     下拉框最大高度     |
+| data          | `Array`     |    -        |     locale data     |
+| limit          | `Number`     |    `8`       |     the limited number of items      |
+| items          | `Array`     |    `[]`        |    suggestion items，for asyc     |
+| async          | `Boolean`     |    `false`       |     whether is async or not     |
+| render          | `Function`     |    -       |     render function     |
+| add-format          | `Function`     |    -       |     format function to get right data    |
+| dropdown-width          | `String`     |    `220px`       |     width of dropdown     |
+| dropdown-height          | `String`     |    `300px`       |     max height of dropdown     |
 
 
-### 事件
+### Events
 
-| 名称          |   说明          |    参数  |    
+| name          |   description          |     params     
 |-------------  |---------------- |  ------|
-| blur          | 失焦     |  - |
-| focus          | 聚焦     |  - |
-| change | 值变化 |(currentValue) |
+| blur          | blur     |  - |
+| focus          | focus     |  - |
+| change | change |(currentValue) |
 
-<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+<p>PS: params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 </div>
 </template>
 

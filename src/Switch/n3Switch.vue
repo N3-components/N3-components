@@ -17,7 +17,7 @@
     :custom-validate="customValidate" 
     :current="value">
   </validate>
-<div>
+</div>
 </template>
 
 <script>
@@ -29,8 +29,7 @@ export default {
   mixins: [valMixin],
   props: {
     value: {
-      type: Boolean,
-      twoway: true
+      type: Boolean
     },
     disabled: {
       type: Boolean,

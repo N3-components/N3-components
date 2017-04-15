@@ -1,6 +1,6 @@
 <template>
 
-### 动画
+### Animate
 
 <div class="bs-docs-section">
 <div class="bs-example" >
@@ -16,7 +16,7 @@
 </div>
 
 ```html
-<!--作用于( v-if , v-show , v-for) 等元素-->
+<!--work width ( v-if , v-show , v-for)-->
 <n3-button  @click.native="show=!show">fadeLeft</n3-button>
 <transition name="fadeLeft">
   <div v-if="show"  class="content">
@@ -28,8 +28,8 @@
 </transition>
 ```
 
-### 参数
-| 参数          | 类型            |   默认值         |   说明   |
+### Params
+| name | type | default | description
 |-------------  |---------------- |----------------  |-------- |
 | name          | String     |    -         |   <code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code>    |
 

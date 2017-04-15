@@ -57,6 +57,9 @@
         value1: 2.5,
         value2: 4
       }
+    },
+    mounted() {
+      this.value =1
     }
   }
 </script>

@@ -63,7 +63,7 @@ methods: {
 | async          | `Boolean`     |    `false`       |     异步     |
 | render          | `Function`     |    -       |     渲染函数     |
 | add-format          | `Function`     |    -       |     获取需要的值     |
-| dropdow-width          | `String`     |    `220px`       |     下拉宽度     |
+| dropdown-width          | `String`     |    `220px`       |     下拉宽度     |
 | dropdown-height          | `String`     |    `300px`       |     下拉框最大高度     |
 
 

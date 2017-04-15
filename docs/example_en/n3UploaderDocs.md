@@ -1,63 +1,63 @@
 <template>
 
-### 文件上传
+### Uploader
 
-<div class="bs-docs-section" id="文件上传"  >
+<div class="bs-docs-section"   >
 <div class="bs-example">
 
-#### 单个文件上传
+#### simplie file
 
-<n3-uploader url="http://test.com/" :multiple="false" @error="onError" :max-size="0.5"></n3-uploader>
+<n3-uploader  url="http://test.com/" :multiple="false" @error="onError" :max-size="0.5"></n3-uploader>
 
 ---
 
-#### 点击上传
+#### click
 
 <n3-uploader url="http://test.com/" @error="onError"></n3-uploader>
 
 ---
 
-#### 支持拖拽
+#### drag
 
 <n3-uploader type="drag" url="http://test.com/" @error="onError"></n3-uploader>
 
 </div>
 
 ```html
-<!-- 单个上传 -->
+<!-- single file -->
 <n3-uploader url="http://test.com/" :multiple="false" @error="onError" :max-size="0.5"></n3-uploader>
 
-<!-- 点击上传 -->
+<!-- click -->
 <n3-uploader url="http://test.com/" @error="onError"></n3-uploader>
 
-<!-- 拖拽上传 -->
+<!-- drag -->
 <n3-uploader type="drag" url="http://test.com/" @error="onError"></n3-uploader>
 ```
 
-### 参数
+### Params
 
-| 参数名 | 类型 | 默认值 | 说明 |
+| name | type | default | description |
 | --- | --- | --- | --- |
-| name | `String` | files | 文件对象的name |
-| type | `String`：`click` 或 `drag` | click | 拖拽或者点击 |
-| accept | `String` | '' (全支持) | 支持的文件类型 例如: `'image/jpeg'` 或者 `'image'`支持所有图片格式,多个如 `'txt|image|mp3'` |
-| url | `String` |  | 上传地址 |
-| params | `Object` |  | 上传参数 |
-| multiple | `Boolean` | true | 支持多文件上传 |
-| drag-width | `String` | 300px | 拖拽框宽度 |
-| drag-height | `String` | 200px | 拖拽框高度 |
-| max-length | `Number` | 10 | 上传文件个数限制 |
-| with-credentials | `Boolean` | false | 跨域时带cookies |
-| max-size | `Number` | 10 | 单个文件的size限制（MB）
+| name | `String` | files | file name |
+| type | `String`：`click` 或 `drag` | click | type |
+| accept | `String` | '' (accept all) | file type example: `'image/jpeg'` or `'image'`, `'txt|image|mp3'` |
+| url | `String` |  | target url |
+| params | `Object` |  | params |
+| multiple | `Boolean` | true | accept multiple files |
+| drag-width | `String` | 300px | width |
+| drag-height | `String` | 200px | height |
+| max-length | `Number` | 10 | number limit for files |
+| with-credentials | `Boolean` | false | cookies support |
+| max-size | `Number` | 10 | size limit of file（MB）
 
 ### Events
 
-| 事件名称      | 说明    | 回调参数      |
+| name          |   description          |     params   
 |---------- |-------- |---------- |
-| success | 成功上传回调时 | ({response, file}) |
-| finish | 完成所有上传任务时 | () |
-| delete | 删除一个上传的项目时 | (uploadItem) |
-| error | 发生错误时 | ({message, file}) |
+| success | when uploaded mask is done successfully | ({response, file}) |
+| finish | when  all masks are finished | () |
+| delete | when mask is deleted | (uploadItem) |
+| error | when error occurs | ({message, file}) |
 
 </div>
 </template>

@@ -59,6 +59,7 @@ export default {
   },
   methods: {
     change (val) {
+      console.log(value)
     }
   }
 }

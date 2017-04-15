@@ -1,32 +1,31 @@
 <template>
 
-### 日期时间选择器
+### Datetimepicker
 
 <div class="bs-docs-section"  >
 <div class="bs-example">
-<n3-datetimepicker v-model="value" format="yyyy-MM-dd hh:mm:ss"></n3-datetimepicker>
+<n3-datetimepicker v-model="value" format="yyyy-MM-dd hh:mm:ss" ></n3-datetimepicker>
 </div>
 
 
 ```html
-<n3-datetimepicker v-model="value" format="yyyy-MM-dd hh:mm"></n3-datetimepicker>
+<n3-datetimepicker v-model="value" format="yyyy-MM-dd hh:mm" ></n3-datetimepicker>
 ```
 
-### 参数
-| 参数          | 类型            |   默认值         |   说明   |
+### Params
+| name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
-| width          | `String`     |    `200px`        |     输入框宽度     |
-| format          | `String`     |    `yyyy-MM-dd hh:mm:ss`       |     日期格式   |
+| width          | `String`     |    `200px`        |     width      |
+| format          | `String`     |    `yyyy-MM-dd hh:mm:ss`       |     format   |
 
-### 事件
+### Events
 
-| 名称          |   说明          |      回调参数      |  
+| name          |   description          |     params   
 |-------------  |---------------- |---------- |
-| hide | 隐藏 | (currentValue) |
-| change | 改变 |(currentValue) |
+| hide | hide | (currentValue) |
+| change |change |(currentValue) |
 
-
-<p>其他表单相关参数，请移步 <a href="#n3FormDocs" >表单验证</a> 待验证组件参数</p>
+<p>PS: params of form components，look <a href="#n3FormDocs" >Form</a> </p>
 </div>
 </template>
 

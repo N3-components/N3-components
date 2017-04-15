@@ -124,7 +124,15 @@
         this.currentPagesize = val
       },
       currentPage (val) {
+        if(this.inner) {
+          this.inner = false
+          return
+        }
         this.$emit('input', val)
+      },
+      value(val) {
+        this.inner = true
+        this.currentPage = val
       }
     },
     data () {
@@ -263,7 +271,6 @@
         }
       },
       onSize (pagesize) {
-        console.log(pagesize, 1)
         this.currentPagesize = pagesize * 1
         this.changePage(1, true)
       },

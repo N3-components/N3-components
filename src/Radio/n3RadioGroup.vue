@@ -25,8 +25,7 @@ export default {
   mixins: [valMixin, events],
   props: {
     value: {
-      type: String,
-      twoWay: true
+      type: String
     },
     type: {
       type: String,

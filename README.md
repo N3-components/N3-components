@@ -59,10 +59,10 @@ import Vue from 'vue'
 // default css style
 import N3Components from 'N3-components'
 
-// ant design css style
-import N3Components from 'N3-components/dist/blue.min.js' 
-
-Vue.use(N3Components)
+N3Components.install(Vue)
+// for English  (default chinese)
+// N3Components.install(Vue, 'en') 
+// version 2.2.0 or later
 ```
 
 You can also import single component when needed.
@@ -71,6 +71,10 @@ You can also import single component when needed.
 import Vue from 'vue'
 import N3Components from 'N3-components'
 import {n3Alert} from N3Components
+
+// set language  
+// window.n3Locale = 'en'
+//
 ```
 
 Requirements
