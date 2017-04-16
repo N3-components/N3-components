@@ -191,9 +191,17 @@ export default {
       this.focus()
     },
     currentValue (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.$emit('input', val)
       this.$emit('change', val)
       this.focus()
+    },
+    value (val) {
+      this.inner = true
+      this.currentValue = val
     }
   },
   computed: {

@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>N3 - N3 components built with Vue.js</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <link rel="stylesheet" type="text/css" href="./assets/prism-coy.css">
+  <link rel="stylesheet" type="text/css" href="./assets/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/docs.css">
+  <!-- <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon"> -->
+  <script type="text/javascript" src="./assets/jquery.js" ></script>
+</head>
+<body>
+	<div></div>
+</body>
+<template id="template">
+	<n3-docs type="base" ></n3-docs>
+</template>
+<script>
+window.requestAnimationFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
+</script>
+<script src="./static/en.js"  id="lang"></script>
+<!-- </html> -->

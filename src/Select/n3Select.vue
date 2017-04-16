@@ -40,7 +40,7 @@
           </li>
           <li v-if="multiple" :class="`${prefixCls}-select-all`">
             <a @click.prevent="selectAll">
-              全选
+              {{getL('all')}}
              <n3-icon type="check" v-show="allSelected"></n3-icon>
             </a>
           </li>
@@ -77,10 +77,11 @@ import valMixin from '../Mixin/valMixin'
 import render from '../render'
 import validate from '../validate'
 import type from '../utils/type'
+import localeMixin from '../Mixin/localeMixin'
 
 export default {
   name: 'n3Select',
-  mixins: [valMixin],
+  mixins: [valMixin,localeMixin('n3Select')],
   props: {
     readonly: {
       type: Boolean,
@@ -96,7 +97,7 @@ export default {
     },
     inputPlaceholder: {
       type: String,
-      default: '输入...'
+      default: ''
     },
     size: {
       type: String
@@ -118,7 +119,7 @@ export default {
     },
     placeholder: {
       type: String,
-      default: '请选择'
+      default: ''
     },
     multiple: {
       type: Boolean,
@@ -172,12 +173,17 @@ export default {
   },
   watch: {
     value (val) {
+      this.inner = true
       this.currentValue = val
     },
     options (val) {
       this.currentOptions = val
     },
     currentValue (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.$emit('input', val)
       this.$emit('change', val)
     }

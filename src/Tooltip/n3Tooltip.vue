@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import PopoverMixin from '../Mixin/popoverMixins'
+import PopoverMixin from '../Mixin/popoverMixin'
 export default {
   name: 'n3Tooltip',
   props: {

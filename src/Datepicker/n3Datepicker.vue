@@ -63,7 +63,7 @@
               <span
                 :class="monthClassObj(m)"
                 @click="mouthSelect(index)">
-                {{m.substr(0,3)}}
+                {{m}}
               </span>
             </template>
           </div>
@@ -103,10 +103,11 @@
 import EventListener from '../utils/EventListener'
 import n3Input from '../Input/n3Input'
 import inputMixin from '../Mixin/inputMixin'
+import localeMixin from '../Mixin/localeMixin'
 
 export default {
   name: 'n3Datepicker',
-  mixins: [inputMixin],
+  mixins: [inputMixin,localeMixin('n3Datepicker')],
   props: {
     value: {
       type: String
@@ -127,24 +128,32 @@ export default {
     return {
       currentValue: this.value,
       today: '',
-      weekRange: ['日', '一', '二', '三', '四', '五', '六'],
+      weekRange: [this.getL('sun'), this.getL('mon'),this.getL('tues'),this.getL('wednes'),this.getL('thurs'),this.getL('fri'),this.getL('satur')],
       dateRange: [],
       decadeRange: [],
       currDate: new Date(),
       displayDayView: false,
       displayMouthView: false,
       displayYearView: false,
-      mouthNames: [ '一月', '二月', '三月',
-                    '四月', '五月', '六月',
-                    '七月', '八月', '九月',
-                    '十月', '十一月', '十二月']
+      mouthNames: [ this.getL('jan'),this.getL('feb'),this.getL('mar'),
+                    this.getL('apr'),this.getL('may'),this.getL('jun'),
+                    this.getL('jul'),this.getL('aug'),this.getL('sep'),
+                    this.getL('oct'),this.getL('nov'),this.getL('dec'),]
     }
   },
   watch: {
     currDate () {
       this.getDateRange()
     },
+    value (val) {
+      this.inner = true
+      this.currentValue = val
+    },
     currentValue (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.$emit('input', val)
       this.$emit('change', this.currentValue)
     }
