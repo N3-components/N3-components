@@ -151,9 +151,15 @@ export default {
         this.inner = false
         return
       }
+      this.inner = true
       this.$emit('input', val)
     },
     value (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
+      this.inner = true
       if (isValueNumber(val)) {
         val = Number(val)
         if (val >= this.max) {
@@ -164,7 +170,6 @@ export default {
           this.upDisabledClass = ''
           this.downDisabledClass = ''
         }
-        this.inner = true
         this.currentValue = val
       } else {
         this.upDisabledClass = `${this.prefixCls}-input-number-handler-up-disabled`

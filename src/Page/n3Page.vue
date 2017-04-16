@@ -131,9 +131,14 @@
           this.inner = false
           return
         }
+        this.inner = true
         this.$emit('input', val)
       },
       value(val) {
+        if(this.inner) {
+          this.inner = false
+          return
+        }
         this.inner = true
         this.currentPage = val
       }

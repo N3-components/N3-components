@@ -5,6 +5,7 @@ import n3Uploader from './n3Uploader'
 import n3Select from './n3Select'
 import n3DataTable from './n3DataTable'
 import n3Page from './n3Page'
+import n3Validate from './n3Validate'
 
 module.exports = {
     n3Datepicker,
@@ -13,5 +14,6 @@ module.exports = {
     n3Uploader,
     n3Select,
     n3DataTable,
-    n3Page
+    n3Page,
+    n3Validate
 }

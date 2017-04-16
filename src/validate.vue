@@ -5,9 +5,11 @@
 <script>
 import type from './utils/type'
 import events from './utils/events'
+import localeMixin from './Mixin/localeMixin'
+
 export default {
   name: 'n3Validate',
-  mixins: [events],
+  mixins: [events,localeMixin('n3Validate')],
   props: {
     value: {
       type: String
@@ -186,7 +188,7 @@ export default {
       if (type.isNullOrUndefined(val) || val.length === 0) {
         self.setResult('requiredValid', {
           validStatus: 'error',
-          tips: tip || '不能为空'
+          tips: tip || self.getL('required')
         })
       } else {
         self.setResult('requiredValid', {
@@ -206,7 +208,7 @@ export default {
         if (val.length > maxlength) {
           self.setResult('maxlengthValid', {
             validStatus: 'error',
-            tips: tip || '输入字符数不能大于' + maxlength
+            tips: tip || self.getL('maxLength') + maxlength
           })
         } else {
           self.setResult('maxlengthValid', {
@@ -227,7 +229,7 @@ export default {
         if (val.length < minlength) {
           self.setResult('minlengthValid', {
             validStatus: 'error',
-            tips: tip || '输入字符数不能小于' + minlength
+            tips: tip || self.getL('minLength') + minlength
           })
         } else {
           self.setResult('minlengthValid', {
@@ -261,7 +263,7 @@ export default {
       } else {
         this.setResult('isPhoneValid', {
           validStatus: 'error',
-          tips: tip || '请输入正确的手机号码'
+          tips: tip || this.getL('phone')
         })
       }
     },
@@ -277,7 +279,7 @@ export default {
       } else {
         this.setResult('isNumberValid', {
           validStatus: 'error',
-          tips: tip || '请输入数字'
+          tips: tip || this.getL('number')
         })
       }
     },
@@ -293,7 +295,7 @@ export default {
       } else {
         this.setResult('isTelValid', {
           validStatus: 'error',
-          tips: tip || '输入固话格式错误，固话请用-'
+          tips: tip || this.getL('telephone')
         })
       }
     },
@@ -309,7 +311,7 @@ export default {
       } else {
         this.setResult('isEmailValid', {
           validStatus: 'error',
-          tips: tip || '请输入正确的email'
+          tips: tip || this.getL('email')
         })
       }
     }
