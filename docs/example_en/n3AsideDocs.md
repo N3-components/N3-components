@@ -36,7 +36,7 @@
 
 <!-- right -->
 <n3-aside  placement="right" title="Title" width="350px" ref="asideRight" :header="false">
-  <h4>右侧侧边栏</h4>
+  <h4>On the right side of the sidebar</h4>
   <p>...</p>
   <p>...</p>
   <p>...</p>

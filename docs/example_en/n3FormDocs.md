@@ -304,7 +304,7 @@
       } else {
         return {
           validStatus: 'error',
-          tips: '请输入中文名'
+          tips: 'chinese name please'
         }
       }
     },
