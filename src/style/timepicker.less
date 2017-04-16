@@ -25,32 +25,13 @@
     position: relative;
 
 
-    &:before {
+    & > span {
       padding-left: 2px;
       font-size: 16px;
       font-weight: 700;
-    }
-    &[data-role="hour"] {
-      z-index: 10;
-    }
-    &[data-role="hour"]:before {
-      content: "\65f6";
       display: block;
     }
-    &[data-role="minute"] {
-      z-index: 9;
-    }
-    &[data-role="minute"]:before {
-      content: "\5206";
-      display: block;
-    }
-    &[data-role="second"] {
-      z-index: 8;
-    }
-    &[data-role="second"]:before {
-      content: "\79d2";
-      display: block;
-    }
+
     &:after {
       content: ":";
       position: absolute;

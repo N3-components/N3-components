@@ -9,7 +9,7 @@ N3-components - 强大的Vue组件库。
 
 N3组件库是基于Vue.js构建的，让前端工程师和全栈工程师能快速构建页面和应用。
 
-[官方主页](http:/n3ui.org/) | [English Introduction](https://github.com/N3-components/N3-components/blob/dev/README.md) | [文档](http:/n3ui.org/v2.html)
+[官方主页](https://n3-components.github.io/N3-components/) | [English Introduction](https://github.com/N3-components/N3-components/blob/dev/README.md) | [文档](https://n3-components.github.io/N3-components/)
 
 相关介绍
 ------------
@@ -62,7 +62,10 @@ import N3Components from 'N3-components'
 // ant design css style
 import N3Components from 'N3-components/dist/blue.min.js' 
 
-Vue.use(N3Components)
+N3Components.install(Vue)
+// for English  (default chinese)
+// N3Components.install(Vue, 'en') 
+// version 2.2.0 or later
 ```
 
 也可以在需要的时候引入该组件，示例代码如下：
@@ -71,6 +74,11 @@ Vue.use(N3Components)
 import Vue from 'vue'
 import N3Components from 'N3-components'
 import {n3Alert} from N3Components
+
+// set language  
+// window.n3Locale = 'en'
+//
+
 ```
 
 依赖的项目

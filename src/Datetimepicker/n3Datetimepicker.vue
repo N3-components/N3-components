@@ -45,6 +45,7 @@
             </div>
             <div :class="`${prefixCls}-timepicker-con`">
               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="hour" data-role="hour">
+                <span>{{getL('hour')}}</span>
                 <n3-slider
                   :class="`${prefixCls}-timepicker-slider`"
                   v-model="time.hour"
@@ -54,6 +55,7 @@
                 </n3-slider>
               </div>
               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="minute" data-role="minute">
+                <span>{{getL('minute')}}</span>
                 <n3-slider
                   :class="`${prefixCls}-timepicker-slider`"
                   v-model="time.minute"
@@ -63,6 +65,7 @@
                 </n3-slider>
               </div>
               <div :class="`${prefixCls}-timepicker-slider-sin-wrap`" v-if="second" data-role="second">
+                <span>{{getL('second')}}</span>
                 <n3-slider
                   :class="`${prefixCls}-timepicker-slider`"
                   v-model="time.second"
@@ -93,7 +96,7 @@
 	                    <span
                         :class="monthClassobj(m)"
                         @click="mouthSelect(index)">
-	                      {{m.substr(0,3)}}
+	                      {m}
 	                    </span>
                     </template>
                 </div>
@@ -134,10 +137,11 @@ import n3Slider from '../Slider/n3Slider'
 import n3Input from '../Input/n3Input'
 import inputMixin from '../Mixin/inputMixin'
 import EventListener from '../utils/EventListener'
+import localeMixin from '../Mixin/localeMixin'
 
 export default {
   name: 'n3Datetimepicker',
-  mixins: [inputMixin],
+  mixins: [inputMixin,localeMixin('n3Datetimepicker')],
   props: {
     value: {
       type: String
@@ -176,7 +180,7 @@ export default {
   },
   data () {
     return {
-      weekRange: ['日', '一', '二', '三', '四', '五', '六'],
+      weekRange: [this.getL('sun'), this.getL('mon'),this.getL('tues'),this.getL('wednes'),this.getL('thurs'),this.getL('fri'),this.getL('satur')],
       dateRange: [],
       decadeRange: [],
       currDate: new Date(),
@@ -191,19 +195,22 @@ export default {
       popWidth: '',
       date: '',
       currentValue: this.value,
-      mouthNames: [
-        '一月', '二月', '三月',
-        '四月', '五月', '六月',
-        '七月', '八月', '九月',
-        '十月', '十一月', '十二月'
-      ]
+      mouthNames:  [ this.getL('jan'),this.getL('feb'),this.getL('mar'),
+                    this.getL('apr'),this.getL('may'),this.getL('jun'),
+                    this.getL('jul'),this.getL('aug'),this.getL('sep'),
+                    this.getL('oct'),this.getL('nov'),this.getL('dec'),]
     }
   },
   watch: {
     value (val) {
+      this.inner = true
       this.currentValue = val
     },
     currentValue (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.$emit('input', val)
       this.$emit('change', val)
     },

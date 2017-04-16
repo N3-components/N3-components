@@ -1,5 +1,5 @@
 .@{prefix-cls}-nav-tabs {
-  border-bottom: 1px solid @lightGrayColor;
+  border-bottom: 1px solid @grayColor;
 
   > li {
     float: left;
@@ -10,6 +10,10 @@
     line-height: 1.42857143;
     border: 1px solid transparent;
     border-radius: 4px 4px 0 0;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    transition: all .3s ease;
   }
   > li > a:hover {
     border-color: @lightColor @lightColor @lightGrayColor;
@@ -20,7 +24,7 @@
     color: @fontColor;
     cursor: default;
     background-color: @whiteColor;
-    border: 1px solid @lightGrayColor;
+    border: 1px solid @grayColor;
     border-bottom-color: transparent;
   }
 
@@ -60,14 +64,14 @@
     > li > a {
       margin-bottom: 0;
       margin-right: 0;
-      border-bottom: 1px solid @lightGrayColor;
+      border-bottom: 1px solid @grayColor;
       border-radius: 4px 4px 0 0;
     }
    
     > .@{prefix-cls}-nav-tabs-active > a,
     > .@{prefix-cls}-nav-tabs-active > a:hover,
     > .@{prefix-cls}-nav-tabs-active > a:focus {
-      border: 1px solid @lightGrayColor;
+      border: 1px solid @grayColor;
       border-bottom-color: @whiteColor;
     }
   }
@@ -80,6 +84,8 @@
   }
   > li > a {
     border-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
   > li + li {
     margin-left: 2px;

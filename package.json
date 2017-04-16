@@ -1,6 +1,6 @@
 {
   "name": "N3-components",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "N3 built with Vue.js",
   "main": "dist/N3Components.min.js",
   "homepage": "https://n3-components.github.io/N3-components/index.html",
@@ -42,6 +42,7 @@
     "babel-plugin-transform-vue-jsx": "^3.3.0",
     "babel-polyfill": "^6.13.0",
     "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.21.0",
     "eslint-config-standard": "^5.1.0",
     "eslint-friendly-formatter": "^1.2.2",

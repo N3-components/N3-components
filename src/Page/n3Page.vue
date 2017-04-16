@@ -2,7 +2,7 @@
   <div class="inline">
     <ul :class="simpleWrapClasses" v-if="simple">
       <li
-        title="上一页"
+        title="prev"
         :class="prevClasses"
         @click="prev">
         <n3-icon type="angle-left"></n3-icon>
@@ -17,7 +17,7 @@
         {{ allPages }}
       </div>
       <li
-        title="下一页"
+        title="next"
         :class="nextClasses"
         @click="next">
         <n3-icon type="angle-right"></n3-icon>
@@ -25,25 +25,25 @@
     </ul>
     <ul :class="wrapClasses" v-else>
       <span :class="[prefixCls + '-page-total']" v-if="showTotal">
-          <slot>共 {{ total }} 条</slot>
+          <slot> {{getL('total')}} {{ total }} </slot>
       </span>
       <li
-          title="上一页"
+          title="prev"
           :class="prevClasses"
           @click="prev">
           <n3-icon type="angle-left"></n3-icon>
       </li>
-      <li title="第一页" :class="firstPageClasses" @click="changePage(1)"><a>1</a></li>
-      <li title="向前 5 页" v-if="currentPage - 3 > 1" :class="[prefixCls + '-page-item-jump-prev']" @click="fastPrev"><a><n3-icon type="ellipsis-h" @mouseenter.native="preventer" @mouseleave.native="leave" ></n3-icon></a></li>
+      <li title="first" :class="firstPageClasses" @click="changePage(1)"><a>1</a></li>
+      <li title="prev 5 " v-if="currentPage - 3 > 1" :class="[prefixCls + '-page-item-jump-prev']" @click="fastPrev"><a><n3-icon type="ellipsis-h" @mouseenter.native="preventer" @mouseleave.native="leave" ></n3-icon></a></li>
       <li :title="currentPage - 2" v-if="currentPage - 2 > 1" :class="[prefixCls + '-page-item']" @click="changePage(currentPage - 2)"><a>{{ currentPage - 2 }}</a></li>
       <li :title="currentPage - 1" v-if="currentPage - 1 > 1" :class="[prefixCls + '-page-item']" @click="changePage(currentPage - 1)"><a>{{ currentPage - 1 }}</a></li>
       <li :title="currentPage" v-if="currentPage != 1 && currentPage != allPages" :class="[prefixCls + '-page-item',prefixCls + '-page-item-active']"><a>{{ currentPage }}</a></li>
       <li :title="currentPage + 1" v-if="currentPage + 1 < allPages" :class="[prefixCls + '-page-item']" @click="changePage(currentPage + 1)"><a>{{ currentPage + 1 }}</a></li>
       <li :title="currentPage + 2" v-if="currentPage + 2 < allPages" :class="[prefixCls + '-page-item']" @click="changePage(currentPage + 2)"><a>{{ currentPage + 2 }}</a></li>
-      <li title="向后 5 页" v-if="currentPage + 3 < allPages" :class="[prefixCls + '-page-item-jump-next']" @click="fastNext"><a><n3-icon type="ellipsis-h" @mouseenter.native="nextenter" @mouseleave.native="leave" ></n3-icon></a></li>
-      <li :title="'最后一页:' + allPages" v-if="allPages > 1" :class="lastPageClasses" @click="changePage(allPages)"><a>{{ allPages }}</a></li>
+      <li title="next 5 " v-if="currentPage + 3 < allPages" :class="[prefixCls + '-page-item-jump-next']" @click="fastNext"><a><n3-icon type="ellipsis-h" @mouseenter.native="nextenter" @mouseleave.native="leave" ></n3-icon></a></li>
+      <li :title="'last:' + allPages" v-if="allPages > 1" :class="lastPageClasses" @click="changePage(allPages)"><a>{{ allPages }}</a></li>
       <li
-          title="下一页"
+          title="next"
           :class="nextClasses"
           @click="next">
           <n3-icon type="angle-right"></n3-icon>
@@ -60,7 +60,7 @@
           @keyup.native.enter="goPage" 
           v-model="currentPage">
         </n3-input>
-        <n3-button @click.native="goPage">跳转</n3-button>
+        <n3-button @click.native="goPage">{{getL('go')}}</n3-button>
       </div>
     </ul>
   </div>
@@ -70,9 +70,12 @@
   import n3Icon from '../Icon/n3Icon.vue'
   import n3Input from '../Input/n3Input.vue'
   import type from '../utils/type'
+  import localeMixin from '../Mixin/localeMixin'
+
   export default {
     name: 'n3Page',
     components: {n3Select, n3Icon, n3Input},
+    mixins: [localeMixin('n3Page')],
     props: {
       prefixCls: {
         type: String,
@@ -124,7 +127,15 @@
         this.currentPagesize = val
       },
       currentPage (val) {
+        if(this.inner) {
+          this.inner = false
+          return
+        }
         this.$emit('input', val)
+      },
+      value(val) {
+        this.inner = true
+        this.currentPage = val
       }
     },
     data () {
@@ -138,7 +149,7 @@
         return this.pagesizeOpts.map(i => {
           return {
             value: i,
-            label: i + '条/页'
+            label: i + ' / ' + this.getL('page')
           }
         })
       },
@@ -263,7 +274,6 @@
         }
       },
       onSize (pagesize) {
-        console.log(pagesize, 1)
         this.currentPagesize = pagesize * 1
         this.changePage(1, true)
       },

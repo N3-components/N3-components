@@ -28,6 +28,7 @@
   </div>
   <div :class="prefixCls + '-input-number-input-wrap'">
     <n3-input
+      type="number"
       @focus="_onFocus"
       :width="width"
       :rules="rules" 
@@ -56,7 +57,6 @@ function isValueNumber (value) {
 
 function calNum (num1, num2, symb) {
   let sq1, sq2, m
-
   try {
     sq1 = num1.toString().split('.')[1].length
   } catch (e) {
@@ -68,7 +68,7 @@ function calNum (num1, num2, symb) {
     sq2 = 0
   }
   m = Math.pow(10, Math.max(sq1, sq2))
-
+  
   if (symb === '+') {
     return (num1 * m + num2 * m) / m
   } else if (symb === '-') {
@@ -147,6 +147,10 @@ export default {
 
   watch: {
     currentValue (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.$emit('input', val)
     },
     value (val) {
@@ -160,6 +164,8 @@ export default {
           this.upDisabledClass = ''
           this.downDisabledClass = ''
         }
+        this.inner = true
+        this.currentValue = val
       } else {
         this.upDisabledClass = `${this.prefixCls}-input-number-handler-up-disabled`
         this.downDisabledClass = `${this.prefixCls}-input-number-handler-down-disabled`
@@ -170,6 +176,7 @@ export default {
   methods: {
     _setValue (value) {
       this.currentValue = value
+      this.$emit('input', value)
       this.$emit('change', value)
     },
 

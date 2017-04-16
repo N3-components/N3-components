@@ -130,7 +130,7 @@ const Components = {
   n3CollapseTransition
 }
 
-const install = function (Vue) {
+const install = function (Vue,locale) {
   for (let i in Components) {
     Vue.component(i, Components[i])
   }
@@ -139,6 +139,8 @@ const install = function (Vue) {
   Vue.prototype.n3Modal = n3ModalMethod
   Vue.prototype.n3Alert = n3AlertMethod
   Vue.prototype.n3Toast = n3ToastMethod
+  Vue.prototype.n3Locale = locale || 'zh'
+  window.n3Locale = locale || 'zh'
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
