@@ -146,6 +146,10 @@ export default {
       this.getDateRange()
     },
     value (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.inner = true
       this.currentValue = val
     },
@@ -154,6 +158,7 @@ export default {
         this.inner = false
         return
       }
+      this.inner = true
       this.$emit('input', val)
       this.$emit('change', this.currentValue)
     }

@@ -131,16 +131,21 @@ export default {
   },
   watch: {
     value (val) {
-      this.inner = true
+      if(this.inner) {
+          this.inner = false
+          return
+        }
+        this.inner = true
       this.currentValue = val
     },
     currentValue (val) {
       this.setTempValue()
       this.setPosition()
-      if (this.inner) {
-        this.inner = false
-        return
-      }
+      if(this.inner) {
+          this.inner = false
+          return
+        }
+        this.inner = true
       this.$emit('input', val)
       this.$emit('change', val)
     }

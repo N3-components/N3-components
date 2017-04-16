@@ -12196,7 +12196,7 @@
 	//
 	// <span class="hljs-comment">&lt;!-- right --&gt;</span>
 	// <span class="hljs-tag">&lt;<span class="hljs-name">n3-aside</span>  <span class="hljs-attr">placement</span>=<span class="hljs-string">"right"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Title"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"350px"</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">"asideRight"</span> <span class="hljs-attr">:header</span>=<span class="hljs-string">"false"</span>&gt;</span>
-	//   <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>右侧侧边栏<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+	//   <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>right<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
 	//   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 	//   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 	//   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -12304,7 +12304,7 @@
 /* 411 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n<h3>Aside</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"openLeft\">left</n3-button>\n  <n3-button @click.native=\"openRight\">right</n3-button>\n  <n3-aside placement=\"left\" title=\"Title\" width=\"350px\" ref=\"asideLeft\">\n    <h4>left</h4>\n    <p height=\"10000px\">...</p>\n    <p>...</p>\n    <p>...</p>\n    <n3-button @click.native=\"closeLeft\">close</n3-button>\n  </n3-aside>\n  <n3-aside placement=\"right\" title=\"Title\" width=\"350px\" ref=\"asideRight\" :header=\"false\">\n    <h4>right</h4>\n    <p>...</p>\n    <p>...</p>\n    <p>...</p>\n    <n3-button @click.native=\"closeRight\">close</n3-button>\n  </n3-aside>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- left --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-aside</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"350px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"asideLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"closeLeft\"</span>&gt;</span>close<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-aside</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- right --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-aside</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"350px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"asideRight\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"false\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>右侧侧边栏<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"closeRight\"</span>&gt;</span>close<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-aside</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    openLeft () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideLeft.open()\n    },\n    openRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideRight.open()\n    },\n    closeLeft () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideLeft.close()\n    },\n    closeRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideRight.close()\n    }\n  }\n}\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>placement</td>\n<td><code>String</code>, 如: <code>left</code>, <code>right</code></td>\n<td><code>right</code></td>\n<td>placement</td>\n</tr>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>title</td>\n</tr>\n<tr>\n<td>header</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>Whether the head is needed</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td>show</td>\n</tr>\n<tr>\n<td>hide</td>\n<td>hide</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
+	module.exports = "<section><template>\n<h3>Aside</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"openLeft\">left</n3-button>\n  <n3-button @click.native=\"openRight\">right</n3-button>\n  <n3-aside placement=\"left\" title=\"Title\" width=\"350px\" ref=\"asideLeft\">\n    <h4>left</h4>\n    <p height=\"10000px\">...</p>\n    <p>...</p>\n    <p>...</p>\n    <n3-button @click.native=\"closeLeft\">close</n3-button>\n  </n3-aside>\n  <n3-aside placement=\"right\" title=\"Title\" width=\"350px\" ref=\"asideRight\" :header=\"false\">\n    <h4>right</h4>\n    <p>...</p>\n    <p>...</p>\n    <p>...</p>\n    <n3-button @click.native=\"closeRight\">close</n3-button>\n  </n3-aside>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- left --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-aside</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"350px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"asideLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"closeLeft\"</span>&gt;</span>close<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-aside</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- right --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-aside</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"350px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"asideRight\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"false\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"closeRight\"</span>&gt;</span>close<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-aside</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    openLeft () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideLeft.open()\n    },\n    openRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideRight.open()\n    },\n    closeLeft () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideLeft.close()\n    },\n    closeRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideRight.close()\n    }\n  }\n}\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>placement</td>\n<td><code>String</code>, 如: <code>left</code>, <code>right</code></td>\n<td><code>right</code></td>\n<td>placement</td>\n</tr>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>title</td>\n</tr>\n<tr>\n<td>header</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>Whether the head is needed</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td>show</td>\n</tr>\n<tr>\n<td>hide</td>\n<td>hide</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
 /* 412 */
@@ -14679,7 +14679,7 @@
 	__webpack_require__(466)
 	__vue_script__ = __webpack_require__(468)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3ProgressbarDocs-65.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3ProgressbarDocs-66.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(469)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -14696,7 +14696,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-674a6bc6/n3ProgressbarDocs-65.vue"
+	  var id = "_v-672e3cc4/n3ProgressbarDocs-66.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -14715,13 +14715,13 @@
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(351)("5feb9f66", content, false);
+	var update = __webpack_require__(351)("e57f28c6", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-674a6bc6&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-65.vue", function() {
-	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-674a6bc6&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-65.vue");
+	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-672e3cc4&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-66.vue", function() {
+	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-672e3cc4&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-66.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -14739,7 +14739,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.margin[_v-674a6bc6]{\n  margin-bottom:20px;\n}\n\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3ProgressbarDocs-65.vue?3c81fece"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAoKA;EACA,mBAAA;CACA","file":"n3ProgressbarDocs-65.vue","sourcesContent":["<template><section><template>\n<h3>ProgressBar</h3>\n<div class=\"bs-docs-section\">\n<blockquote>\n<p>Height</p>\n</blockquote>\n<div class=\"bs-example\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"40\" type=\"success\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"20\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">height</span>=<span class=\"hljs-string\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"40\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>Dynamic <n3-button @click.native=\"dynamicClick\">Random change</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress>\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">dynamicData</span>: [<span class=\"hljs-number\">5</span>, <span class=\"hljs-number\">15</span>, <span class=\"hljs-number\">25</span>, <span class=\"hljs-number\">35</span>, <span class=\"hljs-number\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\">this</span>.dynamicData = <span class=\"hljs-keyword\">this</span>.dynamicData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * <span class=\"hljs-number\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote>\n<p>Superimposed <n3-button @click.native=\"stackedClick\">Random change</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress>\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[0]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[1]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[2]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[3]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">striped</span> &gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">stackedData</span>: [<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">20</span>, <span class=\"hljs-number\">30</span>, <span class=\"hljs-number\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">100</span>\n      <span class=\"hljs-keyword\">this</span>.stackedData = <span class=\"hljs-keyword\">this</span>.stackedData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">const</span> random = <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>now</td>\n<td><code>Number</code></td>\n<td></td>\n<td>current value</td>\n</tr>\n<tr>\n<td>height</td>\n<td><code>String</code></td>\n<td>20px</td>\n<td>height</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>color</td>\n</tr>\n<tr>\n<td>label</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>label tip</td>\n</tr>\n<tr>\n<td>striped</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>striped</td>\n</tr>\n<tr>\n<td>animated</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>animated style</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.margin{\n  margin-bottom:20px;\n}\n\n</style>\n<script>\nexport default {\n  data () {\n    return {\n      dynamicData: [5, 15, 25, 35, 45],\n      stackedData: [10, 20, 30, 40]\n    }\n  },\n  methods: {\n    dynamicClick () {\n      this.dynamicData = this.dynamicData.map(() => {\n        return Math.floor(Math.random() * 50)\n      })\n    },\n    stackedClick () {\n      let i = 100\n      this.stackedData = this.stackedData.map(() => {\n        const random = Math.floor(Math.random() * i)\n        i = i - random\n        return random\n      })\n    }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.margin[_v-672e3cc4]{\n  margin-bottom:20px;\n}\n\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3ProgressbarDocs-66.vue?12a654cf"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAoKA;EACA,mBAAA;CACA","file":"n3ProgressbarDocs-66.vue","sourcesContent":["<template><section><template>\n<h3>ProgressBar</h3>\n<div class=\"bs-docs-section\">\n<blockquote>\n<p>Height</p>\n</blockquote>\n<div class=\"bs-example\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"40\" type=\"success\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"20\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">height</span>=<span class=\"hljs-string\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"40\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>Dynamic <n3-button @click.native=\"dynamicClick\">Random change</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress>\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">dynamicData</span>: [<span class=\"hljs-number\">5</span>, <span class=\"hljs-number\">15</span>, <span class=\"hljs-number\">25</span>, <span class=\"hljs-number\">35</span>, <span class=\"hljs-number\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\">this</span>.dynamicData = <span class=\"hljs-keyword\">this</span>.dynamicData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * <span class=\"hljs-number\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote>\n<p>Superimposed <n3-button @click.native=\"stackedClick\">Random change</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress>\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[0]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[1]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[2]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[3]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">striped</span> &gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">stackedData</span>: [<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">20</span>, <span class=\"hljs-number\">30</span>, <span class=\"hljs-number\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">100</span>\n      <span class=\"hljs-keyword\">this</span>.stackedData = <span class=\"hljs-keyword\">this</span>.stackedData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">const</span> random = <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>now</td>\n<td><code>Number</code></td>\n<td></td>\n<td>current value</td>\n</tr>\n<tr>\n<td>height</td>\n<td><code>String</code></td>\n<td>20px</td>\n<td>height</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>color</td>\n</tr>\n<tr>\n<td>label</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>label tip</td>\n</tr>\n<tr>\n<td>striped</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>striped</td>\n</tr>\n<tr>\n<td>animated</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>animated style</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.margin{\n  margin-bottom:20px;\n}\n\n</style>\n<script>\nexport default {\n  data () {\n    return {\n      dynamicData: [5, 15, 25, 35, 45],\n      stackedData: [10, 20, 30, 40]\n    }\n  },\n  methods: {\n    dynamicClick () {\n      this.dynamicData = this.dynamicData.map(() => {\n        return Math.floor(Math.random() * 50)\n      })\n    },\n    stackedClick () {\n      let i = 100\n      this.stackedData = this.stackedData.map(() => {\n        const random = Math.floor(Math.random() * i)\n        i = i - random\n        return random\n      })\n    }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -14954,7 +14954,7 @@
 /* 469 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-674a6bc6=\"\"><template>\n<h3 _v-674a6bc6=\"\">ProgressBar</h3>\n<div class=\"bs-docs-section\" _v-674a6bc6=\"\">\n<blockquote _v-674a6bc6=\"\">\n<p _v-674a6bc6=\"\">Height</p>\n</blockquote>\n<div class=\"bs-example\" _v-674a6bc6=\"\">\n  <div class=\"row\" _v-674a6bc6=\"\">\n    <div class=\"col-md-4\" _v-674a6bc6=\"\">\n      <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-674a6bc6=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\" _v-674a6bc6=\"\">\n      <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n        <n3-progressbar :now=\"40\" type=\"success\" _v-674a6bc6=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre _v-674a6bc6=\"\"><code class=\"language-html\" _v-674a6bc6=\"\"><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"20\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">height</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"40\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"success\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote _v-674a6bc6=\"\">\n<p _v-674a6bc6=\"\">Dynamic <n3-button @click.native=\"dynamicClick\" _v-674a6bc6=\"\">Random change</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-674a6bc6=\"\">\n  <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-674a6bc6=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-674a6bc6=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-674a6bc6=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-674a6bc6=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre _v-674a6bc6=\"\"><code class=\"language-html\" _v-674a6bc6=\"\"><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"info\"</span> &gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre _v-674a6bc6=\"\"><code class=\"language-javascript\" _v-674a6bc6=\"\"><span class=\"hljs-keyword\" _v-674a6bc6=\"\">export</span> <span class=\"hljs-keyword\" _v-674a6bc6=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-674a6bc6=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-674a6bc6=\"\">dynamicData</span>: [<span class=\"hljs-number\" _v-674a6bc6=\"\">5</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">15</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">25</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">35</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-674a6bc6=\"\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\" _v-674a6bc6=\"\">this</span>.dynamicData = <span class=\"hljs-keyword\" _v-674a6bc6=\"\">this</span>.dynamicData.map(<span class=\"hljs-function\" _v-674a6bc6=\"\"><span class=\"hljs-params\" _v-674a6bc6=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-674a6bc6=\"\">return</span> <span class=\"hljs-built_in\" _v-674a6bc6=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-674a6bc6=\"\">Math</span>.random() * <span class=\"hljs-number\" _v-674a6bc6=\"\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote _v-674a6bc6=\"\">\n<p _v-674a6bc6=\"\">Superimposed <n3-button @click.native=\"stackedClick\" _v-674a6bc6=\"\">Random change</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-674a6bc6=\"\">\n  <n3-progress _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-674a6bc6=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-674a6bc6=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-674a6bc6=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-674a6bc6=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre _v-674a6bc6=\"\"><code class=\"language-html\" _v-674a6bc6=\"\"><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"stackedData[0]\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">label</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"warning\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"stackedData[1]\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">label</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"success\"</span> &gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"stackedData[2]\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">label</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"stackedData[3]\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">label</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"primary\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">striped</span> &gt;</span>\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre _v-674a6bc6=\"\"><code class=\"language-javascript\" _v-674a6bc6=\"\"><span class=\"hljs-keyword\" _v-674a6bc6=\"\">export</span> <span class=\"hljs-keyword\" _v-674a6bc6=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-674a6bc6=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-674a6bc6=\"\">stackedData</span>: [<span class=\"hljs-number\" _v-674a6bc6=\"\">10</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">20</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">30</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-674a6bc6=\"\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\" _v-674a6bc6=\"\">let</span> i = <span class=\"hljs-number\" _v-674a6bc6=\"\">100</span>\n      <span class=\"hljs-keyword\" _v-674a6bc6=\"\">this</span>.stackedData = <span class=\"hljs-keyword\" _v-674a6bc6=\"\">this</span>.stackedData.map(<span class=\"hljs-function\" _v-674a6bc6=\"\"><span class=\"hljs-params\" _v-674a6bc6=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-674a6bc6=\"\">const</span> random = <span class=\"hljs-built_in\" _v-674a6bc6=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-674a6bc6=\"\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\" _v-674a6bc6=\"\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3 _v-674a6bc6=\"\">Params</h3>\n<table _v-674a6bc6=\"\">\n<thead _v-674a6bc6=\"\">\n<tr _v-674a6bc6=\"\">\n<th _v-674a6bc6=\"\">name</th>\n<th _v-674a6bc6=\"\">type</th>\n<th _v-674a6bc6=\"\">default</th>\n<th _v-674a6bc6=\"\">description</th>\n</tr>\n</thead>\n<tbody _v-674a6bc6=\"\">\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">now</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">Number</code></td>\n<td _v-674a6bc6=\"\"></td>\n<td _v-674a6bc6=\"\">current value</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">height</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">String</code></td>\n<td _v-674a6bc6=\"\">20px</td>\n<td _v-674a6bc6=\"\">height</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">type</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">String</code></td>\n<td _v-674a6bc6=\"\"></td>\n<td _v-674a6bc6=\"\">color</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">label</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">Boolean</code></td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">false</code></td>\n<td _v-674a6bc6=\"\">label tip</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">striped</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">Boolean</code></td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">false</code></td>\n<td _v-674a6bc6=\"\">striped</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">animated</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">Boolean</code></td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">false</code></td>\n<td _v-674a6bc6=\"\">animated style</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-672e3cc4=\"\"><template>\n<h3 _v-672e3cc4=\"\">ProgressBar</h3>\n<div class=\"bs-docs-section\" _v-672e3cc4=\"\">\n<blockquote _v-672e3cc4=\"\">\n<p _v-672e3cc4=\"\">Height</p>\n</blockquote>\n<div class=\"bs-example\" _v-672e3cc4=\"\">\n  <div class=\"row\" _v-672e3cc4=\"\">\n    <div class=\"col-md-4\" _v-672e3cc4=\"\">\n      <n3-progress class=\"margin\" _v-672e3cc4=\"\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-672e3cc4=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\" _v-672e3cc4=\"\">\n      <n3-progress class=\"margin\" _v-672e3cc4=\"\">\n        <n3-progressbar :now=\"40\" type=\"success\" _v-672e3cc4=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre _v-672e3cc4=\"\"><code class=\"language-html\" _v-672e3cc4=\"\"><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">class</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"20\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">height</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">class</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"40\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"success\"</span>&gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote _v-672e3cc4=\"\">\n<p _v-672e3cc4=\"\">Dynamic <n3-button @click.native=\"dynamicClick\" _v-672e3cc4=\"\">Random change</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-672e3cc4=\"\">\n  <n3-progress class=\"margin\" _v-672e3cc4=\"\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-672e3cc4=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-672e3cc4=\"\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-672e3cc4=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-672e3cc4=\"\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-672e3cc4=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress _v-672e3cc4=\"\">\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-672e3cc4=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre _v-672e3cc4=\"\"><code class=\"language-html\" _v-672e3cc4=\"\"><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">class</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"info\"</span> &gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">class</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">class</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">class</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre _v-672e3cc4=\"\"><code class=\"language-javascript\" _v-672e3cc4=\"\"><span class=\"hljs-keyword\" _v-672e3cc4=\"\">export</span> <span class=\"hljs-keyword\" _v-672e3cc4=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-672e3cc4=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-672e3cc4=\"\">dynamicData</span>: [<span class=\"hljs-number\" _v-672e3cc4=\"\">5</span>, <span class=\"hljs-number\" _v-672e3cc4=\"\">15</span>, <span class=\"hljs-number\" _v-672e3cc4=\"\">25</span>, <span class=\"hljs-number\" _v-672e3cc4=\"\">35</span>, <span class=\"hljs-number\" _v-672e3cc4=\"\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-672e3cc4=\"\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\" _v-672e3cc4=\"\">this</span>.dynamicData = <span class=\"hljs-keyword\" _v-672e3cc4=\"\">this</span>.dynamicData.map(<span class=\"hljs-function\" _v-672e3cc4=\"\"><span class=\"hljs-params\" _v-672e3cc4=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-672e3cc4=\"\">return</span> <span class=\"hljs-built_in\" _v-672e3cc4=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-672e3cc4=\"\">Math</span>.random() * <span class=\"hljs-number\" _v-672e3cc4=\"\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote _v-672e3cc4=\"\">\n<p _v-672e3cc4=\"\">Superimposed <n3-button @click.native=\"stackedClick\" _v-672e3cc4=\"\">Random change</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-672e3cc4=\"\">\n  <n3-progress _v-672e3cc4=\"\">\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-672e3cc4=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-672e3cc4=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-672e3cc4=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-672e3cc4=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre _v-672e3cc4=\"\"><code class=\"language-html\" _v-672e3cc4=\"\"><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"stackedData[0]\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">label</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"warning\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"stackedData[1]\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">label</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"success\"</span> &gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"stackedData[2]\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">label</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">:now</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"stackedData[3]\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">label</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">type</span>=<span class=\"hljs-string\" _v-672e3cc4=\"\">\"primary\"</span> <span class=\"hljs-attr\" _v-672e3cc4=\"\">striped</span> &gt;</span>\n<span class=\"hljs-tag\" _v-672e3cc4=\"\">&lt;/<span class=\"hljs-name\" _v-672e3cc4=\"\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre _v-672e3cc4=\"\"><code class=\"language-javascript\" _v-672e3cc4=\"\"><span class=\"hljs-keyword\" _v-672e3cc4=\"\">export</span> <span class=\"hljs-keyword\" _v-672e3cc4=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-672e3cc4=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-672e3cc4=\"\">stackedData</span>: [<span class=\"hljs-number\" _v-672e3cc4=\"\">10</span>, <span class=\"hljs-number\" _v-672e3cc4=\"\">20</span>, <span class=\"hljs-number\" _v-672e3cc4=\"\">30</span>, <span class=\"hljs-number\" _v-672e3cc4=\"\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-672e3cc4=\"\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\" _v-672e3cc4=\"\">let</span> i = <span class=\"hljs-number\" _v-672e3cc4=\"\">100</span>\n      <span class=\"hljs-keyword\" _v-672e3cc4=\"\">this</span>.stackedData = <span class=\"hljs-keyword\" _v-672e3cc4=\"\">this</span>.stackedData.map(<span class=\"hljs-function\" _v-672e3cc4=\"\"><span class=\"hljs-params\" _v-672e3cc4=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-672e3cc4=\"\">const</span> random = <span class=\"hljs-built_in\" _v-672e3cc4=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-672e3cc4=\"\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\" _v-672e3cc4=\"\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3 _v-672e3cc4=\"\">Params</h3>\n<table _v-672e3cc4=\"\">\n<thead _v-672e3cc4=\"\">\n<tr _v-672e3cc4=\"\">\n<th _v-672e3cc4=\"\">name</th>\n<th _v-672e3cc4=\"\">type</th>\n<th _v-672e3cc4=\"\">default</th>\n<th _v-672e3cc4=\"\">description</th>\n</tr>\n</thead>\n<tbody _v-672e3cc4=\"\">\n<tr _v-672e3cc4=\"\">\n<td _v-672e3cc4=\"\">now</td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">Number</code></td>\n<td _v-672e3cc4=\"\"></td>\n<td _v-672e3cc4=\"\">current value</td>\n</tr>\n<tr _v-672e3cc4=\"\">\n<td _v-672e3cc4=\"\">height</td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">String</code></td>\n<td _v-672e3cc4=\"\">20px</td>\n<td _v-672e3cc4=\"\">height</td>\n</tr>\n<tr _v-672e3cc4=\"\">\n<td _v-672e3cc4=\"\">type</td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">String</code></td>\n<td _v-672e3cc4=\"\"></td>\n<td _v-672e3cc4=\"\">color</td>\n</tr>\n<tr _v-672e3cc4=\"\">\n<td _v-672e3cc4=\"\">label</td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">Boolean</code></td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">false</code></td>\n<td _v-672e3cc4=\"\">label tip</td>\n</tr>\n<tr _v-672e3cc4=\"\">\n<td _v-672e3cc4=\"\">striped</td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">Boolean</code></td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">false</code></td>\n<td _v-672e3cc4=\"\">striped</td>\n</tr>\n<tr _v-672e3cc4=\"\">\n<td _v-672e3cc4=\"\">animated</td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">Boolean</code></td>\n<td _v-672e3cc4=\"\"><code _v-672e3cc4=\"\">false</code></td>\n<td _v-672e3cc4=\"\">animated style</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 470 */
@@ -14970,7 +14970,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(472)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SelectDocs-67.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SelectDocs-65.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(473)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -14987,7 +14987,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-510e8296/n3SelectDocs-67.vue"
+	  var id = "_v-5146e09a/n3SelectDocs-65.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15303,7 +15303,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(476)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SwitchDocs-66.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SwitchDocs-67.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(477)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -15320,7 +15320,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-f475dc08/n3SwitchDocs-66.vue"
+	  var id = "_v-f459ad06/n3SwitchDocs-67.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -30360,16 +30360,15 @@
 	
 	var _events2 = _interopRequireDefault(_events);
 	
+	var _localeMixin = __webpack_require__(612);
+	
+	var _localeMixin2 = _interopRequireDefault(_localeMixin);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <template>
-	// 	<div :class="`${prefixCls}-err-tip`" v-if="validate && tips" >{{tips}}</div>
-	// </template>
-	//
-	// <script>
 	exports.default = {
 	  name: 'n3Validate',
-	  mixins: [_events2.default],
+	  mixins: [_events2.default, (0, _localeMixin2.default)('n3Validate')],
 	  props: {
 	    value: {
 	      type: String
@@ -30547,7 +30546,7 @@
 	      if (_type2.default.isNullOrUndefined(val) || val.length === 0) {
 	        self.setResult('requiredValid', {
 	          validStatus: 'error',
-	          tips: tip || '不能为空'
+	          tips: tip || self.getL('required')
 	        });
 	      } else {
 	        self.setResult('requiredValid', {
@@ -30566,7 +30565,7 @@
 	        if (val.length > maxlength) {
 	          self.setResult('maxlengthValid', {
 	            validStatus: 'error',
-	            tips: tip || '输入字符数不能大于' + maxlength
+	            tips: tip || self.getL('maxLength') + maxlength
 	          });
 	        } else {
 	          self.setResult('maxlengthValid', {
@@ -30586,7 +30585,7 @@
 	        if (val.length < minlength) {
 	          self.setResult('minlengthValid', {
 	            validStatus: 'error',
-	            tips: tip || '输入字符数不能小于' + minlength
+	            tips: tip || self.getL('minLength') + minlength
 	          });
 	        } else {
 	          self.setResult('minlengthValid', {
@@ -30618,7 +30617,7 @@
 	      } else {
 	        this.setResult('isPhoneValid', {
 	          validStatus: 'error',
-	          tips: tip || '请输入正确的手机号码'
+	          tips: tip || this.getL('phone')
 	        });
 	      }
 	    },
@@ -30633,7 +30632,7 @@
 	      } else {
 	        this.setResult('isNumberValid', {
 	          validStatus: 'error',
-	          tips: tip || '请输入数字'
+	          tips: tip || this.getL('number')
 	        });
 	      }
 	    },
@@ -30648,7 +30647,7 @@
 	      } else {
 	        this.setResult('isTelValid', {
 	          validStatus: 'error',
-	          tips: tip || '输入固话格式错误，固话请用-'
+	          tips: tip || this.getL('telephone')
 	        });
 	      }
 	    },
@@ -30663,7 +30662,7 @@
 	      } else {
 	        this.setResult('isEmailValid', {
 	          validStatus: 'error',
-	          tips: tip || '请输入正确的email'
+	          tips: tip || this.getL('email')
 	        });
 	      }
 	    }
@@ -30671,6 +30670,11 @@
 	};
 	// </script>
 	/* generated by vue-loader */
+	// <template>
+	// 	<div :class="`${prefixCls}-err-tip`" v-if="validate && tips" >{{tips}}</div>
+	// </template>
+	//
+	// <script>
 
 /***/ },
 /* 579 */
@@ -32244,9 +32248,15 @@
 	        this.inner = false;
 	        return;
 	      }
+	      this.inner = true;
 	      this.$emit('input', val);
 	    },
 	    value: function value(val) {
+	      if (this.inner) {
+	        this.inner = false;
+	        return;
+	      }
+	      this.inner = true;
 	      if (isValueNumber(val)) {
 	        val = Number(val);
 	        if (val >= this.max) {
@@ -32257,7 +32267,6 @@
 	          this.upDisabledClass = '';
 	          this.downDisabledClass = '';
 	        }
-	        this.inner = true;
 	        this.currentValue = val;
 	      } else {
 	        this.upDisabledClass = this.prefixCls + '-input-number-handler-up-disabled';
@@ -32715,6 +32724,10 @@
 	      this.getDateRange();
 	    },
 	    value: function value(val) {
+	      if (this.inner) {
+	        this.inner = false;
+	        return;
+	      }
 	      this.inner = true;
 	      this.currentValue = val;
 	    },
@@ -32723,6 +32736,7 @@
 	        this.inner = false;
 	        return;
 	      }
+	      this.inner = true;
 	      this.$emit('input', val);
 	      this.$emit('change', this.currentValue);
 	    }
@@ -33032,6 +33046,10 @@
 	
 	var _n3Page2 = _interopRequireDefault(_n3Page);
 	
+	var _n3Validate = __webpack_require__(964);
+	
+	var _n3Validate2 = _interopRequireDefault(_n3Validate);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	module.exports = {
@@ -33041,7 +33059,8 @@
 	    n3Uploader: _n3Uploader2.default,
 	    n3Select: _n3Select2.default,
 	    n3DataTable: _n3DataTable2.default,
-	    n3Page: _n3Page2.default
+	    n3Page: _n3Page2.default,
+	    n3Validate: _n3Validate2.default
 	};
 
 /***/ },
@@ -33388,6 +33407,10 @@
 	      if (!val) this.$emit('hide', this.currentValue);
 	    },
 	    value: function value(val) {
+	      if (this.inner) {
+	        this.inner = false;
+	        return;
+	      }
 	      this.inner = true;
 	      this.currentValue = val;
 	    },
@@ -33396,6 +33419,7 @@
 	        this.inner = false;
 	        return;
 	      }
+	      this.inner = true;
 	      this.$emit('input', val);
 	      this.$emit('change', val);
 	    },
@@ -33765,6 +33789,10 @@
 	  },
 	  watch: {
 	    value: function value(val) {
+	      if (this.inner) {
+	        this.inner = false;
+	        return;
+	      }
 	      this.inner = true;
 	      this.currentValue = val;
 	    },
@@ -33775,6 +33803,7 @@
 	        this.inner = false;
 	        return;
 	      }
+	      this.inner = true;
 	      this.$emit('input', val);
 	      this.$emit('change', val);
 	    }
@@ -41697,6 +41726,10 @@
 	
 	  watch: {
 	    value: function value(val) {
+	      if (this.inner) {
+	        this.inner = false;
+	        return;
+	      }
 	      this.inner = true;
 	      this.currentValue = val;
 	    },
@@ -41708,6 +41741,7 @@
 	        this.inner = false;
 	        return;
 	      }
+	      this.inner = true;
 	      this.$emit('input', val);
 	      this.$emit('change', val);
 	    }
@@ -43753,11 +43787,16 @@
 	        this.inner = false;
 	        return;
 	      }
+	      this.inner = true;
 	      this.$emit('input', val);
 	      this.$emit('change', val);
 	      this.focus();
 	    },
 	    value: function value(val) {
+	      if (this.inner) {
+	        this.inner = false;
+	        return;
+	      }
 	      this.inner = true;
 	      this.currentValue = val;
 	    }
@@ -44327,9 +44366,14 @@
 	        this.inner = false;
 	        return;
 	      }
+	      this.inner = true;
 	      this.$emit('input', val);
 	    },
 	    value: function value(val) {
+	      if (this.inner) {
+	        this.inner = false;
+	        return;
+	      }
 	      this.inner = true;
 	      this.currentPage = val;
 	    }
@@ -48847,6 +48891,233 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 774 */,
+/* 775 */,
+/* 776 */,
+/* 777 */,
+/* 778 */,
+/* 779 */,
+/* 780 */,
+/* 781 */,
+/* 782 */,
+/* 783 */,
+/* 784 */,
+/* 785 */,
+/* 786 */,
+/* 787 */,
+/* 788 */,
+/* 789 */,
+/* 790 */,
+/* 791 */,
+/* 792 */,
+/* 793 */,
+/* 794 */,
+/* 795 */,
+/* 796 */,
+/* 797 */,
+/* 798 */,
+/* 799 */,
+/* 800 */,
+/* 801 */,
+/* 802 */,
+/* 803 */,
+/* 804 */,
+/* 805 */,
+/* 806 */,
+/* 807 */,
+/* 808 */,
+/* 809 */,
+/* 810 */,
+/* 811 */,
+/* 812 */,
+/* 813 */,
+/* 814 */,
+/* 815 */,
+/* 816 */,
+/* 817 */,
+/* 818 */,
+/* 819 */,
+/* 820 */,
+/* 821 */,
+/* 822 */,
+/* 823 */,
+/* 824 */,
+/* 825 */,
+/* 826 */,
+/* 827 */,
+/* 828 */,
+/* 829 */,
+/* 830 */,
+/* 831 */,
+/* 832 */,
+/* 833 */,
+/* 834 */,
+/* 835 */,
+/* 836 */,
+/* 837 */,
+/* 838 */,
+/* 839 */,
+/* 840 */,
+/* 841 */,
+/* 842 */,
+/* 843 */,
+/* 844 */,
+/* 845 */,
+/* 846 */,
+/* 847 */,
+/* 848 */,
+/* 849 */,
+/* 850 */,
+/* 851 */,
+/* 852 */,
+/* 853 */,
+/* 854 */,
+/* 855 */,
+/* 856 */,
+/* 857 */,
+/* 858 */,
+/* 859 */,
+/* 860 */,
+/* 861 */,
+/* 862 */,
+/* 863 */,
+/* 864 */,
+/* 865 */,
+/* 866 */,
+/* 867 */,
+/* 868 */,
+/* 869 */,
+/* 870 */,
+/* 871 */,
+/* 872 */,
+/* 873 */,
+/* 874 */,
+/* 875 */,
+/* 876 */,
+/* 877 */,
+/* 878 */,
+/* 879 */,
+/* 880 */,
+/* 881 */,
+/* 882 */,
+/* 883 */,
+/* 884 */,
+/* 885 */,
+/* 886 */,
+/* 887 */,
+/* 888 */,
+/* 889 */,
+/* 890 */,
+/* 891 */,
+/* 892 */,
+/* 893 */,
+/* 894 */,
+/* 895 */,
+/* 896 */,
+/* 897 */,
+/* 898 */,
+/* 899 */,
+/* 900 */,
+/* 901 */,
+/* 902 */,
+/* 903 */,
+/* 904 */,
+/* 905 */,
+/* 906 */,
+/* 907 */,
+/* 908 */,
+/* 909 */,
+/* 910 */,
+/* 911 */,
+/* 912 */,
+/* 913 */,
+/* 914 */,
+/* 915 */,
+/* 916 */,
+/* 917 */,
+/* 918 */,
+/* 919 */,
+/* 920 */,
+/* 921 */,
+/* 922 */,
+/* 923 */,
+/* 924 */,
+/* 925 */,
+/* 926 */,
+/* 927 */,
+/* 928 */,
+/* 929 */,
+/* 930 */,
+/* 931 */,
+/* 932 */,
+/* 933 */,
+/* 934 */,
+/* 935 */,
+/* 936 */,
+/* 937 */,
+/* 938 */,
+/* 939 */,
+/* 940 */,
+/* 941 */,
+/* 942 */,
+/* 943 */,
+/* 944 */,
+/* 945 */,
+/* 946 */,
+/* 947 */,
+/* 948 */,
+/* 949 */,
+/* 950 */,
+/* 951 */,
+/* 952 */,
+/* 953 */,
+/* 954 */,
+/* 955 */,
+/* 956 */,
+/* 957 */,
+/* 958 */,
+/* 959 */,
+/* 960 */,
+/* 961 */,
+/* 962 */,
+/* 963 */,
+/* 964 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	     'required': {
+	          'zh': '不能为空',
+	          'en': 'Can not be empty'
+	     },
+	     'maxLength': {
+	          'zh': '输入字符数不能大于',
+	          'en': "The input can't be more than"
+	     },
+	     'minLength': {
+	          'zh': '输入字符数不能小于',
+	          'en': "The input can't be less than"
+	     },
+	     'phone': {
+	          'zh': '请输入正确的手机号码',
+	          'en': "the correct phone number please"
+	     },
+	     'number': {
+	          'zh': '请输入数字',
+	          'en': "number please"
+	     },
+	     'telephone': {
+	          'zh': '输入固话格式错误，固话请用-',
+	          'en': "format is wrong, please use -"
+	     },
+	     'email': {
+	          'zh': '请输入正确的email',
+	          'en': "Please enter the correct email"
+	     }
+	};
 
 /***/ }
 /******/ ]);
