@@ -33,3 +33,4 @@ v2.x.x
 ### v2.2.2
  
 + tab bug fix
++ datetimepicker bug fix
