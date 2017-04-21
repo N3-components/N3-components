@@ -29,3 +29,7 @@ v2.x.x
 ### v2.2.1
  
 + 国际化bug fix
+
+### v2.2.2
+ 
++ tab bug fix

@@ -139,7 +139,7 @@ export default {
 
 | 参数名 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| active-index | `Number` |  |  |
+| value| `Number` |  |  |
 | list | `Array` |  | |
 | pills | `Boolean` |  | 胶囊样式 |
 | stacked | `Boolean` | false | 竖直状态 |
@@ -169,6 +169,7 @@ export default {
 export default {
   data () {
     return {
+      index:0,
       list: [{
         header: 'first',
         badge: 12,

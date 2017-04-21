@@ -139,7 +139,7 @@ export default {
 
 | name | type | default | description |
 | --- | --- | --- | --- |
-| active-index | `Number` |  |  |
+| value | `Number` |  |  |
 | list | `Array` |  | |
 | pills | `Boolean` |  | pills |
 | stacked | `Boolean` | false | stacked |
