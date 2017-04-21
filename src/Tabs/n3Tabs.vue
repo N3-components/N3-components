@@ -85,6 +85,9 @@ export default {
         }
       },
       immediate: true
+    },
+    value(val){
+      this.activeIndex = val
     }
   },
   methods: {

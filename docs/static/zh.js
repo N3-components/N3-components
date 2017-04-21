@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(49);
-	module.exports = __webpack_require__(774);
+	module.exports = __webpack_require__(775);
 
 
 /***/ },
@@ -19545,7 +19545,7 @@
 	
 	var _components2 = _interopRequireDefault(_components);
 	
-	__webpack_require__(771);
+	__webpack_require__(772);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -19585,111 +19585,111 @@
 	
 	var _n3CheckboxGroup2 = _interopRequireDefault(_n3CheckboxGroup);
 	
-	var _n3Checkbox = __webpack_require__(583);
+	var _n3Checkbox = __webpack_require__(593);
 	
 	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
 	
-	var _n3CheckboxBtn = __webpack_require__(586);
+	var _n3CheckboxBtn = __webpack_require__(596);
 	
 	var _n3CheckboxBtn2 = _interopRequireDefault(_n3CheckboxBtn);
 	
-	var _n3Cascader = __webpack_require__(589);
+	var _n3Cascader = __webpack_require__(599);
 	
 	var _n3Cascader2 = _interopRequireDefault(_n3Cascader);
 	
-	var _n3ToastMethod = __webpack_require__(597);
+	var _n3ToastMethod = __webpack_require__(607);
 	
 	var _n3ToastMethod2 = _interopRequireDefault(_n3ToastMethod);
 	
-	var _n3Label = __webpack_require__(601);
+	var _n3Label = __webpack_require__(611);
 	
 	var _n3Label2 = _interopRequireDefault(_n3Label);
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _n3InputNumber = __webpack_require__(604);
+	var _n3InputNumber = __webpack_require__(614);
 	
 	var _n3InputNumber2 = _interopRequireDefault(_n3InputNumber);
 	
-	var _n3Textarea = __webpack_require__(607);
+	var _n3Textarea = __webpack_require__(617);
 	
 	var _n3Textarea2 = _interopRequireDefault(_n3Textarea);
 	
-	var _n3Datepicker = __webpack_require__(610);
+	var _n3Datepicker = __webpack_require__(620);
 	
 	var _n3Datepicker2 = _interopRequireDefault(_n3Datepicker);
 	
-	var _n3Timepicker = __webpack_require__(622);
+	var _n3Timepicker = __webpack_require__(623);
 	
 	var _n3Timepicker2 = _interopRequireDefault(_n3Timepicker);
 	
-	var _n3Datetimepicker = __webpack_require__(632);
+	var _n3Datetimepicker = __webpack_require__(633);
 	
 	var _n3Datetimepicker2 = _interopRequireDefault(_n3Datetimepicker);
 	
-	var _n3Dropdown = __webpack_require__(635);
+	var _n3Dropdown = __webpack_require__(636);
 	
 	var _n3Dropdown2 = _interopRequireDefault(_n3Dropdown);
 	
-	var _n3Modal = __webpack_require__(642);
+	var _n3Modal = __webpack_require__(643);
 	
 	var _n3Modal2 = _interopRequireDefault(_n3Modal);
 	
-	var _n3ModalMethod = __webpack_require__(645);
+	var _n3ModalMethod = __webpack_require__(646);
 	
 	var _n3ModalMethod2 = _interopRequireDefault(_n3ModalMethod);
 	
-	var _n3Option = __webpack_require__(646);
+	var _n3Option = __webpack_require__(647);
 	
 	var _n3Option2 = _interopRequireDefault(_n3Option);
 	
-	var _n3Panel = __webpack_require__(649);
+	var _n3Panel = __webpack_require__(650);
 	
 	var _n3Panel2 = _interopRequireDefault(_n3Panel);
 	
-	var _n3Popover = __webpack_require__(652);
+	var _n3Popover = __webpack_require__(653);
 	
 	var _n3Popover2 = _interopRequireDefault(_n3Popover);
 	
-	var _n3PopConfirm = __webpack_require__(655);
+	var _n3PopConfirm = __webpack_require__(656);
 	
 	var _n3PopConfirm2 = _interopRequireDefault(_n3PopConfirm);
 	
-	var _n3Progressbar = __webpack_require__(658);
+	var _n3Progressbar = __webpack_require__(659);
 	
 	var _n3Progressbar2 = _interopRequireDefault(_n3Progressbar);
 	
-	var _n3Progress = __webpack_require__(661);
+	var _n3Progress = __webpack_require__(662);
 	
 	var _n3Progress2 = _interopRequireDefault(_n3Progress);
 	
-	var _n3Radio = __webpack_require__(664);
+	var _n3Radio = __webpack_require__(665);
 	
 	var _n3Radio2 = _interopRequireDefault(_n3Radio);
 	
-	var _n3RadioBtn = __webpack_require__(667);
+	var _n3RadioBtn = __webpack_require__(668);
 	
 	var _n3RadioBtn2 = _interopRequireDefault(_n3RadioBtn);
 	
-	var _n3RadioGroup = __webpack_require__(670);
+	var _n3RadioGroup = __webpack_require__(671);
 	
 	var _n3RadioGroup2 = _interopRequireDefault(_n3RadioGroup);
 	
-	var _n3Select = __webpack_require__(673);
+	var _n3Select = __webpack_require__(674);
 	
 	var _n3Select2 = _interopRequireDefault(_n3Select);
 	
-	var _n3Tab = __webpack_require__(678);
+	var _n3Tab = __webpack_require__(679);
 	
 	var _n3Tab2 = _interopRequireDefault(_n3Tab);
 	
-	var _n3Tabs = __webpack_require__(681);
+	var _n3Tabs = __webpack_require__(682);
 	
 	var _n3Tabs2 = _interopRequireDefault(_n3Tabs);
 	
-	var _n3Tooltip = __webpack_require__(626);
+	var _n3Tooltip = __webpack_require__(627);
 	
 	var _n3Tooltip2 = _interopRequireDefault(_n3Tooltip);
 	
@@ -19697,55 +19697,55 @@
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3ButtonGroup = __webpack_require__(684);
+	var _n3ButtonGroup = __webpack_require__(685);
 	
 	var _n3ButtonGroup2 = _interopRequireDefault(_n3ButtonGroup);
 	
-	var _n3Container = __webpack_require__(687);
+	var _n3Container = __webpack_require__(688);
 	
 	var _n3Container2 = _interopRequireDefault(_n3Container);
 	
-	var _n3Row = __webpack_require__(690);
+	var _n3Row = __webpack_require__(691);
 	
 	var _n3Row2 = _interopRequireDefault(_n3Row);
 	
-	var _n3Nav = __webpack_require__(693);
+	var _n3Nav = __webpack_require__(694);
 	
 	var _n3Nav2 = _interopRequireDefault(_n3Nav);
 	
-	var _n3SubNav = __webpack_require__(697);
+	var _n3SubNav = __webpack_require__(698);
 	
 	var _n3SubNav2 = _interopRequireDefault(_n3SubNav);
 	
-	var _n3NavItem = __webpack_require__(701);
+	var _n3NavItem = __webpack_require__(702);
 	
 	var _n3NavItem2 = _interopRequireDefault(_n3NavItem);
 	
-	var _n3NavGroup = __webpack_require__(704);
+	var _n3NavGroup = __webpack_require__(705);
 	
 	var _n3NavGroup2 = _interopRequireDefault(_n3NavGroup);
 	
-	var _n3Column = __webpack_require__(707);
+	var _n3Column = __webpack_require__(708);
 	
 	var _n3Column2 = _interopRequireDefault(_n3Column);
 	
-	var _n3Switch = __webpack_require__(710);
+	var _n3Switch = __webpack_require__(711);
 	
 	var _n3Switch2 = _interopRequireDefault(_n3Switch);
 	
-	var _n3MultipleInput = __webpack_require__(713);
+	var _n3MultipleInput = __webpack_require__(714);
 	
 	var _n3MultipleInput2 = _interopRequireDefault(_n3MultipleInput);
 	
-	var _n3Page = __webpack_require__(719);
+	var _n3Page = __webpack_require__(720);
 	
 	var _n3Page2 = _interopRequireDefault(_n3Page);
 	
-	var _n3Step = __webpack_require__(722);
+	var _n3Step = __webpack_require__(723);
 	
 	var _n3Step2 = _interopRequireDefault(_n3Step);
 	
-	var _n3DataTable = __webpack_require__(725);
+	var _n3DataTable = __webpack_require__(726);
 	
 	var _n3DataTable2 = _interopRequireDefault(_n3DataTable);
 	
@@ -19753,15 +19753,15 @@
 	
 	var _n3Loading2 = _interopRequireDefault(_n3Loading);
 	
-	var _n3Timeline = __webpack_require__(728);
+	var _n3Timeline = __webpack_require__(729);
 	
 	var _n3Timeline2 = _interopRequireDefault(_n3Timeline);
 	
-	var _n3TimelineItem = __webpack_require__(730);
+	var _n3TimelineItem = __webpack_require__(731);
 	
 	var _n3TimelineItem2 = _interopRequireDefault(_n3TimelineItem);
 	
-	var _n3Typeahead = __webpack_require__(715);
+	var _n3Typeahead = __webpack_require__(716);
 	
 	var _n3Typeahead2 = _interopRequireDefault(_n3Typeahead);
 	
@@ -19769,55 +19769,55 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Tags = __webpack_require__(734);
+	var _n3Tags = __webpack_require__(735);
 	
 	var _n3Tags2 = _interopRequireDefault(_n3Tags);
 	
-	var _n3Breadcrumb = __webpack_require__(737);
+	var _n3Breadcrumb = __webpack_require__(738);
 	
 	var _n3Breadcrumb2 = _interopRequireDefault(_n3Breadcrumb);
 	
-	var _n3BreadcrumbItem = __webpack_require__(740);
+	var _n3BreadcrumbItem = __webpack_require__(741);
 	
 	var _n3BreadcrumbItem2 = _interopRequireDefault(_n3BreadcrumbItem);
 	
-	var _n3Form = __webpack_require__(743);
+	var _n3Form = __webpack_require__(744);
 	
 	var _n3Form2 = _interopRequireDefault(_n3Form);
 	
-	var _n3FormItem = __webpack_require__(746);
+	var _n3FormItem = __webpack_require__(747);
 	
 	var _n3FormItem2 = _interopRequireDefault(_n3FormItem);
 	
-	var _n3Slider = __webpack_require__(624);
+	var _n3Slider = __webpack_require__(625);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Slide = __webpack_require__(749);
+	var _n3Slide = __webpack_require__(750);
 	
 	var _n3Slide2 = _interopRequireDefault(_n3Slide);
 	
-	var _n3Tree = __webpack_require__(752);
+	var _n3Tree = __webpack_require__(753);
 	
 	var _n3Tree2 = _interopRequireDefault(_n3Tree);
 	
-	var _n3Card = __webpack_require__(761);
+	var _n3Card = __webpack_require__(762);
 	
 	var _n3Card2 = _interopRequireDefault(_n3Card);
 	
-	var _n3Rate = __webpack_require__(764);
+	var _n3Rate = __webpack_require__(765);
 	
 	var _n3Rate2 = _interopRequireDefault(_n3Rate);
 	
-	var _n3Uploader = __webpack_require__(767);
+	var _n3Uploader = __webpack_require__(768);
 	
 	var _n3Uploader2 = _interopRequireDefault(_n3Uploader);
 	
-	var _n3CollapseTransition = __webpack_require__(637);
+	var _n3CollapseTransition = __webpack_require__(638);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
-	var _position = __webpack_require__(770);
+	var _position = __webpack_require__(771);
 	
 	var _position2 = _interopRequireDefault(_position);
 	
@@ -20808,7 +20808,7 @@
 	__vue_script__ = __webpack_require__(575)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Checkbox/n3CheckboxGroup.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(582)
+	__vue_template__ = __webpack_require__(592)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -20975,7 +20975,7 @@
 	__vue_script__ = __webpack_require__(578)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/validate.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(581)
+	__vue_template__ = __webpack_require__(591)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -21017,7 +21017,7 @@
 	
 	var _events2 = _interopRequireDefault(_events);
 	
-	var _localeMixin = __webpack_require__(612);
+	var _localeMixin = __webpack_require__(581);
 	
 	var _localeMixin2 = _interopRequireDefault(_localeMixin);
 	
@@ -21493,26 +21493,364 @@
 
 /***/ },
 /* 581 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _index = __webpack_require__(582);
+	
+	var _index2 = _interopRequireDefault(_index);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (name) {
+	    return {
+	        methods: {
+	            getL: function getL(key) {
+	                return _index2.default[name][key][this.n3Locale || window.n3Locale || 'zh'];
+	            }
+	        }
+	    };
+	};
+
+/***/ },
+/* 582 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _n3Datepicker = __webpack_require__(583);
+	
+	var _n3Datepicker2 = _interopRequireDefault(_n3Datepicker);
+	
+	var _n3Datetimepicker = __webpack_require__(584);
+	
+	var _n3Datetimepicker2 = _interopRequireDefault(_n3Datetimepicker);
+	
+	var _n3Timepicker = __webpack_require__(585);
+	
+	var _n3Timepicker2 = _interopRequireDefault(_n3Timepicker);
+	
+	var _n3Uploader = __webpack_require__(586);
+	
+	var _n3Uploader2 = _interopRequireDefault(_n3Uploader);
+	
+	var _n3Select = __webpack_require__(587);
+	
+	var _n3Select2 = _interopRequireDefault(_n3Select);
+	
+	var _n3DataTable = __webpack_require__(588);
+	
+	var _n3DataTable2 = _interopRequireDefault(_n3DataTable);
+	
+	var _n3Page = __webpack_require__(589);
+	
+	var _n3Page2 = _interopRequireDefault(_n3Page);
+	
+	var _n3Validate = __webpack_require__(590);
+	
+	var _n3Validate2 = _interopRequireDefault(_n3Validate);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	module.exports = {
+	    n3Datepicker: _n3Datepicker2.default,
+	    n3Datetimepicker: _n3Datetimepicker2.default,
+	    n3Timepicker: _n3Timepicker2.default,
+	    n3Uploader: _n3Uploader2.default,
+	    n3Select: _n3Select2.default,
+	    n3DataTable: _n3DataTable2.default,
+	    n3Page: _n3Page2.default,
+	    n3Validate: _n3Validate2.default
+	};
+
+/***/ },
+/* 583 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	     'sun': {
+	          'zh': '日',
+	          'en': 'Su'
+	     },
+	     'mon': {
+	          'zh': '一',
+	          'en': 'Mo'
+	     },
+	     'tues': {
+	          'zh': '二',
+	          'en': 'Tu'
+	     },
+	     'wednes': {
+	          'zh': '三',
+	          'en': 'We'
+	     },
+	     'thurs': {
+	          'zh': '四',
+	          'en': 'Th'
+	     },
+	     'fri': {
+	          'zh': '五',
+	          'en': 'Fr'
+	     },
+	     'satur': {
+	          'zh': '六',
+	          'en': 'Sa'
+	     },
+	     'jan': {
+	          'zh': '一月',
+	          'en': 'Jan'
+	     },
+	     'feb': {
+	          'zh': '二月',
+	          'en': 'Feb'
+	     },
+	     'mar': {
+	          'zh': '三月',
+	          'en': 'Mar'
+	     },
+	     'apr': {
+	          'zh': '四月',
+	          'en': 'Apr'
+	     },
+	     'may': {
+	          'zh': '五月',
+	          'en': 'May'
+	     },
+	     'jun': {
+	          'zh': '六月',
+	          'en': 'Jun'
+	     },
+	     'jul': {
+	          'zh': '七月',
+	          'en': 'Jul'
+	     },
+	     'aug': {
+	          'zh': '八月',
+	          'en': 'Aug'
+	     },
+	     'sep': {
+	          'zh': '九月',
+	          'en': 'Sep'
+	     },
+	     'oct': {
+	          'zh': '十月',
+	          'en': 'Oct'
+	     },
+	     'nov': {
+	          'zh': '十一月',
+	          'en': 'Nov'
+	     },
+	     'dec': {
+	          'zh': '十二月',
+	          'en': 'Dec'
+	     }
+	};
+
+/***/ },
+/* 584 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _n3Datepicker = __webpack_require__(583);
+	
+	var _n3Datepicker2 = _interopRequireDefault(_n3Datepicker);
+	
+	var _n3Timepicker = __webpack_require__(585);
+	
+	var _n3Timepicker2 = _interopRequireDefault(_n3Timepicker);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	module.exports = Object.assign({}, _n3Datepicker2.default, _n3Timepicker2.default);
+
+/***/ },
+/* 585 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	     'hour': {
+	          'zh': '时',
+	          'en': 'H'
+	     },
+	     'minute': {
+	          'zh': '分',
+	          'en': 'M'
+	     },
+	     'second': {
+	          'zh': '秒',
+	          'en': 'S'
+	     }
+	};
+
+/***/ },
+/* 586 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	    'click': {
+	        'zh': '点击上传',
+	        'en': 'Upload'
+	    },
+	    'drag': {
+	        'zh': '点击或将文件拖拽到此区域上传',
+	        'en': 'Click or drag file to this area to upload'
+	    },
+	    'nodrag': {
+	        'zh': '当前环境不支持拖拽上传，请点此上传',
+	        'en': 'not support to drag to upload'
+	    },
+	    'SERVER_FAIL': {
+	        'zh': '服务器没有响应',
+	        'en': 'Server not responding'
+	    },
+	    'REQUEST_ERROR': {
+	        'zh': '请求失败',
+	        'en': 'Request failed'
+	    },
+	    'RESPONSE_NOT_JSON': {
+	        'zh': '服务器响应数据格式有问题',
+	        'en': 'The server has a problem with the data format'
+	    },
+	    'TASK_OVER_LENGTH': {
+	        'zh': '超过上传数量限制，请先删除再进行上传',
+	        'en': 'Exceeding the upload limit, please delete and then upload'
+	    },
+	    'TASK_OVER_SIZE': {
+	        'zh': '超过单个文件上传大小',
+	        'en': 'More than a single file upload size'
+	    },
+	    'TASK_UNSUPPORTED_TYPE': {
+	        'zh': '不支持该文件类型',
+	        'en': 'The file type is not supported'
+	    },
+	    'IFRAME_UNSUPPORTED_CROSS': {
+	        'zh': 'iframe不支持跨域请求',
+	        'en': 'Iframe does not support cross-domain requests'
+	    }
+	};
+
+/***/ },
+/* 587 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	     'all': {
+	          'zh': '全选',
+	          'en': 'All'
+	     }
+	};
+
+/***/ },
+/* 588 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	     'selectCol': {
+	          'zh': '显示的列',
+	          'en': 'show col'
+	     },
+	     'search': {
+	          'zh': '搜索',
+	          'en': 'search'
+	     }
+	};
+
+/***/ },
+/* 589 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	     'page': {
+	          'zh': '页',
+	          'en': 'page'
+	     },
+	     'total': {
+	          'zh': '总共',
+	          'en': 'Total'
+	     },
+	     'go': {
+	          'zh': '跳转',
+	          'en': 'Go'
+	     }
+	};
+
+/***/ },
+/* 590 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	     'required': {
+	          'zh': '不能为空',
+	          'en': 'Can not be empty'
+	     },
+	     'maxLength': {
+	          'zh': '输入字符数不能大于',
+	          'en': "The input can't be more than"
+	     },
+	     'minLength': {
+	          'zh': '输入字符数不能小于',
+	          'en': "The input can't be less than"
+	     },
+	     'phone': {
+	          'zh': '请输入正确的手机号码',
+	          'en': "the correct phone number please"
+	     },
+	     'number': {
+	          'zh': '请输入数字',
+	          'en': "number please"
+	     },
+	     'telephone': {
+	          'zh': '输入固话格式错误，固话请用-',
+	          'en': "format is wrong, please use -"
+	     },
+	     'email': {
+	          'zh': '请输入正确的email',
+	          'en': "Please enter the correct email"
+	     }
+	};
+
+/***/ },
+/* 591 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-err-tip`\" v-if=\"validate && tips\" >{{tips}}</div>\n";
 
 /***/ },
-/* 582 */
+/* 592 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-btn-group ${prefixCls}-checkbox-group`\">\n  <slot></slot>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"currentValue\">\n  </validate>\n</div>\n";
 
 /***/ },
-/* 583 */
+/* 593 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(584)
+	__vue_script__ = __webpack_require__(594)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Checkbox/n3Checkbox.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(585)
+	__vue_template__ = __webpack_require__(595)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -21537,7 +21875,7 @@
 	})()}
 
 /***/ },
-/* 584 */
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21674,21 +22012,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 585 */
+/* 595 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<label :class=\"wrapClass\">\n<span>\n  <span :class=\"`${prefixCls}-checkbox-inner`\">\n    <n3-icon type=\"check\" color=\"#fff\" :class=\"`${prefixCls}-checkbox-inner-check`\"></n3-icon>\n  </span>\n  <input\n    type=\"checkbox\"\n    :class=\"`${prefixCls}-checkbox-input`\"\n    :disabled=\"disabled\"\n    :checked=\"currentChecked\"\n    @click=\"handleClick\"/>\n</span>\n<span><slot></slot></span>  \n<validate\n  :name=\"name\"\n  :rules=\"rules\"\n  :custom-validate=\"customValidate\" \n  :current=\"currentChecked\">\n</validate>\n</label>\n";
 
 /***/ },
-/* 586 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(587)
+	__vue_script__ = __webpack_require__(597)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Checkbox/n3CheckboxBtn.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(588)
+	__vue_template__ = __webpack_require__(598)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -21713,7 +22051,7 @@
 	})()}
 
 /***/ },
-/* 587 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21841,21 +22179,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 588 */
+/* 598 */
 /***/ function(module, exports) {
 
 	module.exports = "\n  <n3-button \n    @click.prevent.native=\"handleClick\"\n    :class=\"classObj\" \n    :disabled=\"disabled\"\n    :type=\"currentChecked ? 'primary' : 'default'\">\n    <slot></slot>\n  </n3-button>\n<!--   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :valid-status.sync=\"validStatus\"\n    :custom-validate=\"customValidate\" \n    :value=\"currentChecked\"\n    :results.sync=\"validateResults\">\n  </validate> -->\n";
 
 /***/ },
-/* 589 */
+/* 599 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(590)
+	__vue_script__ = __webpack_require__(600)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Cascader/n3Cascader.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(596)
+	__vue_template__ = __webpack_require__(606)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -21880,7 +22218,7 @@
 	})()}
 
 /***/ },
-/* 590 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21893,11 +22231,11 @@
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(593);
+	var _inputMixin = __webpack_require__(603);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -22123,15 +22461,15 @@
 	// <script>
 
 /***/ },
-/* 591 */
+/* 601 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(592)
+	__vue_script__ = __webpack_require__(602)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Input/n3Input.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(595)
+	__vue_template__ = __webpack_require__(605)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -22156,7 +22494,7 @@
 	})()}
 
 /***/ },
-/* 592 */
+/* 602 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22169,7 +22507,7 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _inputMixin = __webpack_require__(593);
+	var _inputMixin = __webpack_require__(603);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -22177,7 +22515,7 @@
 	
 	var _validate2 = _interopRequireDefault(_validate);
 	
-	var _vueFocus = __webpack_require__(594);
+	var _vueFocus = __webpack_require__(604);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22305,7 +22643,7 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 593 */
+/* 603 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22348,7 +22686,7 @@
 	};
 
 /***/ },
-/* 594 */
+/* 604 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22392,19 +22730,19 @@
 	exports.mixin = mixin;
 
 /***/ },
-/* 595 */
+/* 605 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"classObj\"  :style=\"{'width':width}\">\n  <input\n    ref=\"input\"\n    auto-complete=\"off\"\n    :class=\"`${prefixCls}-form-control`\"\n    :style=\"{'width':width}\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    :placeholder=\"placeholder\"\n\t\t:type=\"type\"\n    @blur=\"blur\"\n    @focus=\"focus\"\n    @input=\"update($event.target.value)\"\n    v-focus=\"focused\" \n    :value=\"value\" />\n\n  <n3-icon \n    type=\"times-circle\" \n    v-if=\"showClean\"  \n    :class=\"`${prefixCls}-input-show-clean`\" \n    @click.native.stop=\"clean\">\n  </n3-icon>\n\n  <n3-icon\n    :class=\"`${prefixCls}-input-show-icon`\"  \n    :type=\"icon\">\n  </n3-icon>\n\n  <validate\n    :name=\"name\"\n    v-model=\"validStatus\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\"\n    :current=\"value\">\n  </validate>\n\n</div>\n";
 
 /***/ },
-/* 596 */
+/* 606 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-cascader`\">\n  <span :class=\"`${prefixCls}-cascader-picker`\">\n    <n3-input \n      :width=\"width\"\n      :name=\"name\" \n      :rules=\"rules\" \n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      v-model=\"displayValue\"\n      :readonly=\"true\"\n      :show-clean=\"true\"\n      :disabled=\"disabled\"\n      @click.native=\"toggleMenus\">\n    </n3-input>\n  </span>\n  <transition name=\"fadeDown\">\n    <div :class=\"`${prefixCls}-cascader-menus`\" v-show=\"show\" v-n3-position=\"show\">\n      <ul :class=\"`${prefixCls}-cascader-menu`\" v-for=\"(menu, index) in menus\">\n        <li :class=\"itemClass(index,option)\" \n          v-for=\"option in menu\" @click=\"changeOption(index,option)\">{{option.label}}\n        </li>\n      </ul>\n    </div>\n  </transition>\n</div>\n";
 
 /***/ },
-/* 597 */
+/* 607 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22445,18 +22783,18 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var n3Toast = _vue2.default.extend(__webpack_require__(598));
+	var n3Toast = _vue2.default.extend(__webpack_require__(608));
 
 /***/ },
-/* 598 */
+/* 608 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(599)
+	__vue_script__ = __webpack_require__(609)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Toast/n3Toast.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(600)
+	__vue_template__ = __webpack_require__(610)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -22481,7 +22819,7 @@
 	})()}
 
 /***/ },
-/* 599 */
+/* 609 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22599,21 +22937,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 600 */
+/* 610 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<transition name=\"fade\">\n\t<div \n    ref=\"dom\"\n    :class=\"classObj\"\n\t\t@click=\"handleClick\"\n\t\tv-if=\"show\">\n\t\t<h5 v-text=\"text\"></h5>\n\t</div>\n</transition>\n";
 
 /***/ },
-/* 601 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(602)
+	__vue_script__ = __webpack_require__(612)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Label/n3Label.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(603)
+	__vue_template__ = __webpack_require__(613)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -22638,7 +22976,7 @@
 	})()}
 
 /***/ },
-/* 602 */
+/* 612 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -22689,21 +23027,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 603 */
+/* 613 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<span :class=\"classObj\">\n\t<slot></slot>\n</span>\n";
 
 /***/ },
-/* 604 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(605)
+	__vue_script__ = __webpack_require__(615)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/InputNumber/n3InputNumber.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(606)
+	__vue_template__ = __webpack_require__(616)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -22728,7 +23066,7 @@
 	})()}
 
 /***/ },
-/* 605 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -22737,7 +23075,7 @@
 	  value: true
 	});
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
@@ -22745,7 +23083,7 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _inputMixin = __webpack_require__(593);
+	var _inputMixin = __webpack_require__(603);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -23002,21 +23340,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 606 */
+/* 616 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"classObj\" :style=\"{width: width}\">\n  <div :class=\"`${prefixCls}-input-number-handler-wrap`\">\n    <a unselectable=\"unselectable\"\n      ref=\"up\"\n      @click=\"_up\"\n      @mouse.down=\"preventDefault\"\n      :class=\"[prefixCls + '-input-number-handler',prefixCls + '-input-number-handler-up',upDisabledClass]\">\n        <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-up-inner`\" \n          type=\"angle-up\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n    <a unselectable=\"unselectable\"\n       ref=\"down\"\n       @mouse.down=\"preventDefault\"\n       @click=\"_down\"\n       :class=\"[prefixCls + '-input-number-handler', prefixCls + '-input-number-handler-down', downDisabledClass]\">\n       <n3-icon\n          :class=\"`${prefixCls}-input-number-handler-down-inner`\" \n          type=\"angle-down\" \n          @click=\"preventDefault\" \n          unselectable=\"unselectable\">\n        </n3-icon>\n    </a>\n  </div>\n  <div :class=\"prefixCls + '-input-number-input-wrap'\">\n    <n3-input\n      type=\"number\"\n      @focus=\"_onFocus\"\n      :width=\"width\"\n      :rules=\"rules\" \n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      @blur=\"_onBlur\"\n      @keydown.native.stop=\"_onKeyDown\"\n      @change=\"_onChange\"\n      :readonly=\"readonly\"\n      :disabled=\"disabled\"\n      :name=\"name\"\n      :value=\"currentValue\">\n    </n3-input> \n  </div>\n</div>\n";
 
 /***/ },
-/* 607 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(608)
+	__vue_script__ = __webpack_require__(618)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Textarea/n3Textarea.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(609)
+	__vue_template__ = __webpack_require__(619)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -23041,7 +23379,7 @@
 	})()}
 
 /***/ },
-/* 608 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23174,21 +23512,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 609 */
+/* 619 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"classObj\" :style=\"{width:width}\">\n  <textarea\n    :class=\"`${prefixCls}-form-control`\"  \n    :disabled=\"disabled\"\n    :readonly=\"readonly\"\n    :maxlength=\"maxLength\"\n    :style=\"styleObj\"\n    :name=\"name\"\n    @input=\"update($event.target.value)\"\n    @focus=\"_onFocus\"\n    @blur=\"_onBlur\"\n    :placeholder=\"placeholder\"\n    :value=\"value\">\n  </textarea>\n\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n\n</div>\n";
 
 /***/ },
-/* 610 */
+/* 620 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(611)
+	__vue_script__ = __webpack_require__(621)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Datepicker/n3Datepicker.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(621)
+	__vue_template__ = __webpack_require__(622)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -23213,7 +23551,7 @@
 	})()}
 
 /***/ },
-/* 611 */
+/* 621 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23226,15 +23564,15 @@
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(593);
+	var _inputMixin = __webpack_require__(603);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _localeMixin = __webpack_require__(612);
+	var _localeMixin = __webpack_require__(581);
 	
 	var _localeMixin2 = _interopRequireDefault(_localeMixin);
 	
@@ -23644,322 +23982,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 612 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _index = __webpack_require__(613);
-	
-	var _index2 = _interopRequireDefault(_index);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (name) {
-	    return {
-	        methods: {
-	            getL: function getL(key) {
-	                return _index2.default[name][key][this.n3Locale || window.n3Locale || 'zh'];
-	            }
-	        }
-	    };
-	};
-
-/***/ },
-/* 613 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _n3Datepicker = __webpack_require__(614);
-	
-	var _n3Datepicker2 = _interopRequireDefault(_n3Datepicker);
-	
-	var _n3Datetimepicker = __webpack_require__(615);
-	
-	var _n3Datetimepicker2 = _interopRequireDefault(_n3Datetimepicker);
-	
-	var _n3Timepicker = __webpack_require__(616);
-	
-	var _n3Timepicker2 = _interopRequireDefault(_n3Timepicker);
-	
-	var _n3Uploader = __webpack_require__(617);
-	
-	var _n3Uploader2 = _interopRequireDefault(_n3Uploader);
-	
-	var _n3Select = __webpack_require__(618);
-	
-	var _n3Select2 = _interopRequireDefault(_n3Select);
-	
-	var _n3DataTable = __webpack_require__(619);
-	
-	var _n3DataTable2 = _interopRequireDefault(_n3DataTable);
-	
-	var _n3Page = __webpack_require__(620);
-	
-	var _n3Page2 = _interopRequireDefault(_n3Page);
-	
-	var _n3Validate = __webpack_require__(964);
-	
-	var _n3Validate2 = _interopRequireDefault(_n3Validate);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	module.exports = {
-	    n3Datepicker: _n3Datepicker2.default,
-	    n3Datetimepicker: _n3Datetimepicker2.default,
-	    n3Timepicker: _n3Timepicker2.default,
-	    n3Uploader: _n3Uploader2.default,
-	    n3Select: _n3Select2.default,
-	    n3DataTable: _n3DataTable2.default,
-	    n3Page: _n3Page2.default,
-	    n3Validate: _n3Validate2.default
-	};
-
-/***/ },
-/* 614 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	     'sun': {
-	          'zh': '日',
-	          'en': 'Su'
-	     },
-	     'mon': {
-	          'zh': '一',
-	          'en': 'Mo'
-	     },
-	     'tues': {
-	          'zh': '二',
-	          'en': 'Tu'
-	     },
-	     'wednes': {
-	          'zh': '三',
-	          'en': 'We'
-	     },
-	     'thurs': {
-	          'zh': '四',
-	          'en': 'Th'
-	     },
-	     'fri': {
-	          'zh': '五',
-	          'en': 'Fr'
-	     },
-	     'satur': {
-	          'zh': '六',
-	          'en': 'Sa'
-	     },
-	     'jan': {
-	          'zh': '一月',
-	          'en': 'Jan'
-	     },
-	     'feb': {
-	          'zh': '二月',
-	          'en': 'Feb'
-	     },
-	     'mar': {
-	          'zh': '三月',
-	          'en': 'Mar'
-	     },
-	     'apr': {
-	          'zh': '四月',
-	          'en': 'Apr'
-	     },
-	     'may': {
-	          'zh': '五月',
-	          'en': 'May'
-	     },
-	     'jun': {
-	          'zh': '六月',
-	          'en': 'Jun'
-	     },
-	     'jul': {
-	          'zh': '七月',
-	          'en': 'Jul'
-	     },
-	     'aug': {
-	          'zh': '八月',
-	          'en': 'Aug'
-	     },
-	     'sep': {
-	          'zh': '九月',
-	          'en': 'Sep'
-	     },
-	     'oct': {
-	          'zh': '十月',
-	          'en': 'Oct'
-	     },
-	     'nov': {
-	          'zh': '十一月',
-	          'en': 'Nov'
-	     },
-	     'dec': {
-	          'zh': '十二月',
-	          'en': 'Dec'
-	     }
-	};
-
-/***/ },
-/* 615 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _n3Datepicker = __webpack_require__(614);
-	
-	var _n3Datepicker2 = _interopRequireDefault(_n3Datepicker);
-	
-	var _n3Timepicker = __webpack_require__(616);
-	
-	var _n3Timepicker2 = _interopRequireDefault(_n3Timepicker);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	module.exports = Object.assign({}, _n3Datepicker2.default, _n3Timepicker2.default);
-
-/***/ },
-/* 616 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	     'hour': {
-	          'zh': '时',
-	          'en': 'H'
-	     },
-	     'minute': {
-	          'zh': '分',
-	          'en': 'M'
-	     },
-	     'second': {
-	          'zh': '秒',
-	          'en': 'S'
-	     }
-	};
-
-/***/ },
-/* 617 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	    'click': {
-	        'zh': '点击上传',
-	        'en': 'Upload'
-	    },
-	    'drag': {
-	        'zh': '点击或将文件拖拽到此区域上传',
-	        'en': 'Click or drag file to this area to upload'
-	    },
-	    'nodrag': {
-	        'zh': '当前环境不支持拖拽上传，请点此上传',
-	        'en': 'not support to drag to upload'
-	    },
-	    'SERVER_FAIL': {
-	        'zh': '服务器没有响应',
-	        'en': 'Server not responding'
-	    },
-	    'REQUEST_ERROR': {
-	        'zh': '请求失败',
-	        'en': 'Request failed'
-	    },
-	    'RESPONSE_NOT_JSON': {
-	        'zh': '服务器响应数据格式有问题',
-	        'en': 'The server has a problem with the data format'
-	    },
-	    'TASK_OVER_LENGTH': {
-	        'zh': '超过上传数量限制，请先删除再进行上传',
-	        'en': 'Exceeding the upload limit, please delete and then upload'
-	    },
-	    'TASK_OVER_SIZE': {
-	        'zh': '超过单个文件上传大小',
-	        'en': 'More than a single file upload size'
-	    },
-	    'TASK_UNSUPPORTED_TYPE': {
-	        'zh': '不支持该文件类型',
-	        'en': 'The file type is not supported'
-	    },
-	    'IFRAME_UNSUPPORTED_CROSS': {
-	        'zh': 'iframe不支持跨域请求',
-	        'en': 'Iframe does not support cross-domain requests'
-	    }
-	};
-
-/***/ },
-/* 618 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	     'all': {
-	          'zh': '全选',
-	          'en': 'All'
-	     }
-	};
-
-/***/ },
-/* 619 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	     'selectCol': {
-	          'zh': '显示的列',
-	          'en': 'show col'
-	     },
-	     'search': {
-	          'zh': '搜索',
-	          'en': 'search'
-	     }
-	};
-
-/***/ },
-/* 620 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	     'page': {
-	          'zh': '页',
-	          'en': 'page'
-	     },
-	     'total': {
-	          'zh': '总共',
-	          'en': 'Total'
-	     },
-	     'go': {
-	          'zh': '跳转',
-	          'en': 'Go'
-	     }
-	};
-
-/***/ },
-/* 621 */
+/* 622 */
 /***/ function(module, exports) {
 
 	module.exports = "\n  <div :class=\"`${prefixCls}-datepicker`\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      :show-clean=\"true\"\n      icon=\"calendar\"\n      @clean=\"clean\"\n      @click.native=\"inputClick\"\n      v-model=\"currentValue\">\n    </n3-input>\n\n    <transition name=\"fadeDown\">\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayDayView\" v-n3-position=\"displayDayView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n          <div :class=\"`${prefixCls}-datepicker-body`\">\n            <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                @click=\"preNextMonthClick(0)\">&lt;</span>\n              <span\n                :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                @click=\"preNextMonthClick(1)\">&gt;</span>\n              <p @click=\"switchMouthView\">\n              {{stringifyDayHeader(currDate)}}\n              </p>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n              <span v-for=\"w in weekRange\">{{w}}</span>\n            </div>\n            <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n              <span\n                v-for=\"d in dateRange\" :class=\"d.sclass\"\n                @click=\"daySelect(d.date,d.sclass)\">\n                {{d.text}}\n              </span>\n            </div>\n          </div>\n        </div>\n      </div>\n    </transition>\n    <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayMouthView\" >\n      <div :class=\"`${prefixCls}-datepicker-inner`\">\n        <div :class=\"`${prefixCls}-datepicker-body`\">\n          <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n              @click=\"preNextYearClick(0)\">&lt;</span>\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n              @click=\"preNextYearClick(1)\">&gt;</span>\n            <p @click=\"switchDecadeView\">\n            {{stringifyYearHeader(currDate)}}\n            </p>\n          </div>\n          <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n          \t<template v-for=\"(m, index) in mouthNames\">\n              <span\n                :class=\"monthClassObj(m)\"\n                @click=\"mouthSelect(index)\">\n                {{m}}\n              </span>\n            </template>\n          </div>\n        </div>\n      </div>\n    </div>\n    <div :class=\"`${prefixCls}-datepicker-popup`\" v-show =\"displayYearView\">\n      <div :class=\"`${prefixCls}-datepicker-inner`\">\n        <div :class=\"`${prefixCls}-datepicker-body`\">\n          <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n              @click=\"preNextDecadeClick(0)\">&lt;</span>\n            <span\n              :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n              @click=\"preNextDecadeClick(1)\">&gt;</span>\n            <p>\n            {{stringifyDecadeHeader(currDate)}}\n            </p>\n          </div>\n          <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n          \t<template v-for=\"decade in decadeRange\">\n          \t\t<span\n                :class=\"yearClassObj(decade)\"\n                @click.stop=\"yearSelect(decade.text)\">\n                {{decade.text}}\n             \t</span>\n\t\t        </template>\n          </div>\n        </div>\n      </div>\n    </div>\n</div>\n";
 
 /***/ },
-/* 622 */
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(623)
+	__vue_script__ = __webpack_require__(624)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Timepicker/n3Timepicker.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(631)
+	__vue_template__ = __webpack_require__(632)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -23984,7 +24021,7 @@
 	})()}
 
 /***/ },
-/* 623 */
+/* 624 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23997,19 +24034,19 @@
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Slider = __webpack_require__(624);
+	var _n3Slider = __webpack_require__(625);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(593);
+	var _inputMixin = __webpack_require__(603);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
-	var _localeMixin = __webpack_require__(612);
+	var _localeMixin = __webpack_require__(581);
 	
 	var _localeMixin2 = _interopRequireDefault(_localeMixin);
 	
@@ -24248,15 +24285,15 @@
 	// <script>
 
 /***/ },
-/* 624 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(625)
+	__vue_script__ = __webpack_require__(626)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Slider/n3Slider.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(630)
+	__vue_template__ = __webpack_require__(631)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -24281,7 +24318,7 @@
 	})()}
 
 /***/ },
-/* 625 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24294,7 +24331,7 @@
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3Tooltip = __webpack_require__(626);
+	var _n3Tooltip = __webpack_require__(627);
 	
 	var _n3Tooltip2 = _interopRequireDefault(_n3Tooltip);
 	
@@ -24658,15 +24695,15 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 626 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(627)
+	__vue_script__ = __webpack_require__(628)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Tooltip/n3Tooltip.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(629)
+	__vue_template__ = __webpack_require__(630)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -24691,7 +24728,7 @@
 	})()}
 
 /***/ },
-/* 627 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24700,7 +24737,7 @@
 	  value: true
 	});
 	
-	var _popoverMixin = __webpack_require__(628);
+	var _popoverMixin = __webpack_require__(629);
 	
 	var _popoverMixin2 = _interopRequireDefault(_popoverMixin);
 	
@@ -24757,7 +24794,7 @@
 	// <script>
 
 /***/ },
-/* 628 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24937,33 +24974,33 @@
 	exports.default = PopoverMixin;
 
 /***/ },
-/* 629 */
+/* 630 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<span>\n  <span ref=\"trigger\">\n    <slot>\n    </slot>\n  </span>\n  <transition :name=\"effect\">\n    <div :class=\"classObj\"\n      ref=\"popover\"\n      v-show=\"isShow\">\n      <div :class=\"`${prefixCls}-tooltip-arrow`\"></div>\n      <div :class=\"`${prefixCls}-tooltip-inner`\">\n        <span v-html=\"content\"></span>\n      </div>\n    </div>\n  </transition>\n</span>\n";
 
 /***/ },
-/* 630 */
+/* 631 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"inline\">\n    <div :class=\"classObj\" ref=\"slider\" :style=\"styleObj\">\n      <n3-tooltip  :placement=\"orientation === 'horizontal' ? 'top' : 'right'\" :noresize=\"true\" trigger=\"mouse\">\n        <div :class=\"`${prefixCls}-slider-track`\">\n          <div :class=\"`${prefixCls}-slider-track-low`\"></div>\n          <div :class=\"`${prefixCls}-slider-selection`\" ref=\"selection\"></div>\n          <div :class=\"`${prefixCls}-slider-track-high`\" ref=\"noSelection\"></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-min-slider-handle ${prefixCls}-slider-round`\" ref=\"minSlider\"></div>\n          <div :class=\"`${prefixCls}-slider-handle ${prefixCls}-slider-max-slider-handle ${prefixCls}-slider-round`\" ref=\"maxSlider\"></div>\n        </div>\n      </n3-tooltip>\n    </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>\n";
 
 /***/ },
-/* 631 */
+/* 632 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-timepicker`\">\n  <n3-input\n    :width=\"width\"\n    :name=\"name\"\n    :rules=\"rules\"\n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :disabled=\"disabled\"\n    :readonly=\"true\"\n    @clean=\"clean\"\n    @click.native=\"inputClick\"\n    :show-clean=\"true\"\n    icon=\"clock-o\"\n    v-model=\"currentValue\">\n  </n3-input>\n  <transition name=\"fadeDown\">\n    <div :class=\"`${prefixCls}-timepicker-popup`\" v-show=\"show\"  v-n3-position=\"show\">\n      <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n        <span>{{getL('hour')}}</span>\n        <n3-slider\n          v-model=\"time.hour\"\n          orientation=\"vertical\"\n          :max=\"hourRange[1]\" :min=\"hourRange[0]\"\n          :class=\"`${prefixCls}-timepicker-slider`\">\n        </n3-slider>\n      </div>\n      <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n        <span>{{getL('minute')}}</span>\n        <n3-slider\n          v-model=\"time.minute\"\n          orientation=\"vertical\"\n          :max=\"minuteRange[1]\"\n          :min=\"minuteRange[0]\"\n          :class=\"`${prefixCls}-timepicker-slider`\">\n        </n3-slider>\n      </div>\n      <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n        <span>{{getL('second')}}</span>\n        <n3-slider\n          v-model=\"time.second\"\n          orientation=\"vertical\"\n          :max=\"secondRange[1]\"\n          :min=\"secondRange[0]\"\n          :class=\"`${prefixCls}-timepicker-slider`\">\n        </n3-slider>\n      </div>\n    </div>\n  </transition>\n</div>\n";
 
 /***/ },
-/* 632 */
+/* 633 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(633)
+	__vue_script__ = __webpack_require__(634)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Datetimepicker/n3Datetimepicker.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(634)
+	__vue_template__ = __webpack_require__(635)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -24988,7 +25025,7 @@
 	})()}
 
 /***/ },
-/* 633 */
+/* 634 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24997,15 +25034,15 @@
 	  value: true
 	});
 	
-	var _n3Slider = __webpack_require__(624);
+	var _n3Slider = __webpack_require__(625);
 	
 	var _n3Slider2 = _interopRequireDefault(_n3Slider);
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _inputMixin = __webpack_require__(593);
+	var _inputMixin = __webpack_require__(603);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -25013,7 +25050,7 @@
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _localeMixin = __webpack_require__(612);
+	var _localeMixin = __webpack_require__(581);
 	
 	var _localeMixin2 = _interopRequireDefault(_localeMixin);
 	
@@ -25613,21 +25650,21 @@
 	// <script>
 
 /***/ },
-/* 634 */
+/* 635 */
 /***/ function(module, exports) {
 
 	module.exports = "\n  <div :class=\"`${prefixCls}-datepicker ${prefixCls}-timepicker ${prefixCls}-datetimepicker`\" ref=\"datetimepicker\">\n    <n3-input\n      :width=\"width\"\n      :name=\"name\"\n      :rules=\"rules\"\n      :placeholder=\"placeholder\"\n      :custom-validate=\"customValidate\"\n      :disabled=\"disabled\"\n      :readonly=\"true\"\n      @clean=\"clean\"\n      @click.native=\"inputClick\"\n      icon=\"calendar\"\n      :show-clean=\"true\"\n      v-model=\"currentValue\">\n    </n3-input>\n      <transition name=\"fadeDown\">\n        <div\n          v-n3-position=\"displayDayView\"\n          :class=\"`${prefixCls}-datepicker-popup`\"\n          v-show=\"displayDayView\"\n          :style=\"{width:popWidth}\">\n            <div :class=\"`${prefixCls}-datepicker-inner`\" ref=\"datepicker\">\n                <div :class=\"`${prefixCls}-datepicker-body`\">\n                    <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                        <span\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                          @click=\"preNextMonthClick(0)\">&lt;</span>\n                        <span\n                          :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                          @click=\"preNextMonthClick(1)\">&gt;</span>\n                        <p @click=\"switchMouthView\">\n                        {{stringifyDayHeader(currDate)}}\n                        </p>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-weekRange`\">\n                        <span v-for=\"w in weekRange\">{{w}}</span>\n                    </div>\n                    <div :class=\"`${prefixCls}-datepicker-dateRange`\">\n                        <span v-for=\"d in dateRange\"\n                        :class=\"[d.sclass,prefixCls + '-datetimepicker-date-span']\"\n                        @click=\"daySelect(d.date,d.sclass)\">{{d.text}}</span>\n                    </div>\n                </div>\n            </div>\n            <div :class=\"`${prefixCls}-timepicker-con`\">\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"hour\" data-role=\"hour\">\n                <span>{{getL('hour')}}</span>\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.hour\"\n                  orientation=\"vertical\"\n                  :max=\"hourRange[1]\"\n                  :min=\"hourRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"minute\" data-role=\"minute\">\n                <span>{{getL('minute')}}</span>\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.minute\"\n                  orientation=\"vertical\"\n                  :max=\"minuteRange[1]\"\n                  :min=\"minuteRange[0]\" >\n                </n3-slider>\n              </div>\n              <div :class=\"`${prefixCls}-timepicker-slider-sin-wrap`\" v-if=\"second\" data-role=\"second\">\n                <span>{{getL('second')}}</span>\n                <n3-slider\n                  :class=\"`${prefixCls}-timepicker-slider`\"\n                  v-model=\"time.second\"\n                  orientation=\"vertical\"\n                  :max=\"secondRange[1]\"\n                  :min=\"secondRange[0]\" >\n                </n3-slider>\n              </div>\n            </div>\n        </div>\n      </transition>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayMouthView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextYearClick(0)\">&lt;</span>\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                      @click=\"preNextYearClick(1)\">&gt;</span>\n                    <p @click=\"switchDecadeView\">\n                    {{stringifyYearHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange`\">\n                \t<template v-for=\"(m,index) in mouthNames\">\n\t                    <span\n                        :class=\"monthClassobj(m)\"\n                        @click=\"mouthSelect(index)\">\n\t                      {m}\n\t                    </span>\n                    </template>\n                </div>\n            </div>\n        </div>\n      </div>\n      <div :class=\"`${prefixCls}-datepicker-popup`\" v-show=\"displayYearView\">\n        <div :class=\"`${prefixCls}-datepicker-inner`\">\n            <div :class=\"`${prefixCls}-datepicker-body`\">\n                <div :class=\"`${prefixCls}-datepicker-ctrl`\">\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-preBtn`\"\n                      @click=\"preNextDecadeClick(0)\">&lt;</span>\n                    <span\n                      :class=\"`${prefixCls}-month-btn ${prefixCls}-datepicker-nextBtn`\"\n                      @click=\"preNextDecadeClick(1)\">&gt;</span>\n                    <p>\n                    {{stringifyDecadeHeader(currDate)}}\n                    </p>\n                </div>\n                <div :class=\"`${prefixCls}-datepicker-mouthRange ${prefixCls}-datepicker-decadeRange`\">\n                \t<template v-for=\"decade in decadeRange\">\n                \t\t<span\n                      :class=\"yearClassobj(decade)\"\n\t                    @click.stop=\"yearSelect(decade.text)\">\n\t                      {{decade.text}}\n\t                  </span>\n\t\t\t\t\t        </template>\n                </div>\n            </div>\n        </div>\n      </div>\n</div>\n";
 
 /***/ },
-/* 635 */
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(636)
+	__vue_script__ = __webpack_require__(637)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Dropdown/n3Dropdown.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(641)
+	__vue_template__ = __webpack_require__(642)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -25652,7 +25689,7 @@
 	})()}
 
 /***/ },
-/* 636 */
+/* 637 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25665,7 +25702,7 @@
 	
 	var _EventListener2 = _interopRequireDefault(_EventListener);
 	
-	var _n3CollapseTransition = __webpack_require__(637);
+	var _n3CollapseTransition = __webpack_require__(638);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -25772,15 +25809,15 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 637 */
+/* 638 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(638)
+	__vue_script__ = __webpack_require__(639)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/n3CollapseTransition.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(640)
+	__vue_template__ = __webpack_require__(641)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -25805,7 +25842,7 @@
 	})()}
 
 /***/ },
-/* 638 */
+/* 639 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25814,7 +25851,7 @@
 	  value: true
 	});
 	
-	var _velocityAnimate = __webpack_require__(639);
+	var _velocityAnimate = __webpack_require__(640);
 	
 	var _velocityAnimate2 = _interopRequireDefault(_velocityAnimate);
 	
@@ -25868,7 +25905,7 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 639 */
+/* 640 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! VelocityJS.org (1.5.0). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
@@ -30642,27 +30679,27 @@
 
 
 /***/ },
-/* 640 */
+/* 641 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<transition\n  name=\"n3CollapseTransition\"\n  @enter=\"enter\"\n  @leave=\"leave\"\n>\n  <slot></slot>\n</transition>\n";
 
 /***/ },
-/* 641 */
+/* 642 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-dropdown-con`\">   \n  <span ref=\"trigger\"> \n    <slot name=\"trigger\" ></slot>\n  </span>\n\n  <transition :name=\"effect\" v-if=\"effect!='collapse'\">\n    <ul v-n3-position=\"isShow\" :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"isShow\" >\n        <slot></slot>\n    </ul>\n  </transition>\n  <n3-collapse-transition v-if=\"effect=='collapse'\">\n    <ul :class=\"`${prefixCls}-dropdown-menu`\" v-show=\"isShow\" >\n        <slot></slot>\n    </ul>\n  </n3-collapse-transition>\n\n</div>\n";
 
 /***/ },
-/* 642 */
+/* 643 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(643)
+	__vue_script__ = __webpack_require__(644)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Modal/n3Modal.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(644)
+	__vue_template__ = __webpack_require__(645)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -30687,7 +30724,7 @@
 	})()}
 
 /***/ },
-/* 643 */
+/* 644 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30850,13 +30887,13 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 644 */
+/* 645 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"classObj\">\n  <div :class=\"`${prefixCls}-modal-dialog`\" \n    :style=\"{'width': width}\">\n    <div :class=\"`${prefixCls}-modal-content`\">\n      <slot name=\"header\">\n        <div :class=\"`${prefixCls}-modal-header`\">\n          <button type=\"button\" :class=\"`${prefixCls}-close`\" @click=\"close\"><span>&times;</span></button>\n          <h4 :class=\"`${prefixCls}-modal-title`\" >{{title}}</h4>\n        </div>\n      </slot>\n      \n      <div :class=\"`${prefixCls}-modal-body`\">\n        <slot name=\"body\"></slot>\n      </div>\n    \n      <slot name=\"footer\">\n        <div :class=\"`${prefixCls}-modal-footer`\">\n          <n3-button  @click.native=\"close\">取消</n3-button>\n          <n3-button type=\"primary\" @click.native=\"confirm\">确定</n3-button>\n        </div>\n      </slot>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 645 */
+/* 646 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30869,7 +30906,7 @@
 	
 	var _vue2 = _interopRequireDefault(_vue);
 	
-	var _n3Modal = __webpack_require__(642);
+	var _n3Modal = __webpack_require__(643);
 	
 	var _n3Modal2 = _interopRequireDefault(_n3Modal);
 	
@@ -31024,15 +31061,15 @@
 	};
 
 /***/ },
-/* 646 */
+/* 647 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(647)
+	__vue_script__ = __webpack_require__(648)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Select/n3Option.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(648)
+	__vue_template__ = __webpack_require__(649)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -31057,7 +31094,7 @@
 	})()}
 
 /***/ },
-/* 647 */
+/* 648 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31088,21 +31125,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 648 */
+/* 649 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :value=\"value\" :class=\"`${prefixCls}-option`\">\n  <slot></slot>\n</div>\n";
 
 /***/ },
-/* 649 */
+/* 650 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(650)
+	__vue_script__ = __webpack_require__(651)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Accordion/n3Panel.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(651)
+	__vue_template__ = __webpack_require__(652)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -31127,7 +31164,7 @@
 	})()}
 
 /***/ },
-/* 650 */
+/* 651 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31140,7 +31177,7 @@
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _n3CollapseTransition = __webpack_require__(637);
+	var _n3CollapseTransition = __webpack_require__(638);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -31221,21 +31258,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 651 */
+/* 652 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-panel ${prefixCls}-panel-default`\">\n    <div :class=\"`${prefixCls}-panel-heading`\">\n      <h4 :class=\"`${prefixCls}-panel-title`\">\n        <a @click=\"toggleIsOpen()\">\n           <slot name=\"header\">\n            {{header}}\n           </slot>\n        </a>\n      </h4>\n    </div>\n    <n3-collapse-transition>\n      <div\n        :class=\"`${prefixCls}-panel-collapse`\"\n        v-if=\"open\">\n        <div :class=\"`${prefixCls}-panel-body`\">\n          <slot></slot>\n        </div>\n      </div>\n    <n3-collapse-transition>\n  </div>\n";
 
 /***/ },
-/* 652 */
+/* 653 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(653)
+	__vue_script__ = __webpack_require__(654)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Popover/n3Popover.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(654)
+	__vue_template__ = __webpack_require__(655)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -31260,7 +31297,7 @@
 	})()}
 
 /***/ },
-/* 653 */
+/* 654 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31269,7 +31306,7 @@
 	  value: true
 	});
 	
-	var _popoverMixin = __webpack_require__(628);
+	var _popoverMixin = __webpack_require__(629);
 	
 	var _popoverMixin2 = _interopRequireDefault(_popoverMixin);
 	
@@ -31328,21 +31365,21 @@
 	// <script>
 
 /***/ },
-/* 654 */
+/* 655 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<span >\n    <span ref=\"trigger\">\n      <slot>\n      </slot>\n    </span>\n    <transition :name=\"effect\">\n      <div \n        style=\"max-width:none\"\n        :class=\"classObj\"\n        ref=\"popover\"\n        v-show=\"isShow\">\n          <div :class=\"`${prefixCls}-popover-arrow`\"></div>\n          <h3 :class=\"`${prefixCls}-popover-title`\" v-show=\"header\">{{title}}</h3>\n          <div :class=\"`${prefixCls}-popover-content`\" ref=\"content\">\n           <slot name=\"content\"></slot>\n          </div>\n      </div>\n    </transition>\n</span>\n";
 
 /***/ },
-/* 655 */
+/* 656 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(656)
+	__vue_script__ = __webpack_require__(657)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Popover/n3PopConfirm.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(657)
+	__vue_template__ = __webpack_require__(658)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -31367,7 +31404,7 @@
 	})()}
 
 /***/ },
-/* 656 */
+/* 657 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31376,7 +31413,7 @@
 	  value: true
 	});
 	
-	var _n3Popover = __webpack_require__(652);
+	var _n3Popover = __webpack_require__(653);
 	
 	var _n3Popover2 = _interopRequireDefault(_n3Popover);
 	
@@ -31473,21 +31510,21 @@
 	// <script>
 
 /***/ },
-/* 657 */
+/* 658 */
 /***/ function(module, exports) {
 
 	module.exports = "\n\t<n3-popover\n    ref=\"popover\" \n    :effect=\"effect\"\n    :header=\"false\" \n    :placement=\"placement\" \n    trigger=\"click\">\n    <div slot=\"content\">\n        <p>{{content}}</p>\n        <div style=\"float:right; margin:10px;\">\n          <n3-button size=\"sm\" @click.native=\"$refs.popover.isShow = false\">{{cancelText}}</n3-button>\n          <n3-button size=\"sm\" type=\"primary\" @click.native=\"confirm\">{{okText}}</n3-button>\n        </div>\n    </div> \n    <slot></slot>\n  </n3-popover>\n";
 
 /***/ },
-/* 658 */
+/* 659 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(659)
+	__vue_script__ = __webpack_require__(660)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Progress/n3Progressbar.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(660)
+	__vue_template__ = __webpack_require__(661)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -31512,7 +31549,7 @@
 	})()}
 
 /***/ },
-/* 659 */
+/* 660 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31582,21 +31619,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 660 */
+/* 661 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div \n  :class=\"classObj\"\n  :style=\"{width: now + '%',height: height}\">\n  {{label ? now + '%':'' }}\n</div>\n";
 
 /***/ },
-/* 661 */
+/* 662 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(662)
+	__vue_script__ = __webpack_require__(663)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Progress/n3Progress.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(663)
+	__vue_template__ = __webpack_require__(664)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -31621,7 +31658,7 @@
 	})()}
 
 /***/ },
-/* 662 */
+/* 663 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -31648,21 +31685,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 663 */
+/* 664 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-progress`\">\n  <slot></slot>\n</div>\n";
 
 /***/ },
-/* 664 */
+/* 665 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(665)
+	__vue_script__ = __webpack_require__(666)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Radio/n3Radio.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(666)
+	__vue_template__ = __webpack_require__(667)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -31687,7 +31724,7 @@
 	})()}
 
 /***/ },
-/* 665 */
+/* 666 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31818,21 +31855,21 @@
 	// <script>
 
 /***/ },
-/* 666 */
+/* 667 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<label :class=\"`${prefixCls}-radio-con`\">\n  <span :class=\"wrapClasses\">\n    <span :class=\"`${prefixCls}-radio-inner`\"></span> \n    <input \n    type=\"radio\" \n    :disabled=\"disabled\"\n    :checked=\"currentChecked\"\n    :class=\"`${prefixCls}-radio-input`\" \n    @click.prevent=\"handleClick\" >\n  </span>\n  <span><slot></slot></span>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"checked\">\n  </validate>\n</label>\n";
 
 /***/ },
-/* 667 */
+/* 668 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(668)
+	__vue_script__ = __webpack_require__(669)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Radio/n3RadioBtn.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(669)
+	__vue_template__ = __webpack_require__(670)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -31857,7 +31894,7 @@
 	})()}
 
 /***/ },
-/* 668 */
+/* 669 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31972,21 +32009,21 @@
 	// <script>
 
 /***/ },
-/* 669 */
+/* 670 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<n3-button \n  @click.prevent.native=\"handleClick\"\n  :class=\"classObj\" \n  :disabled=\"disabled\"\n  :type=\"currentChecked ? 'primary' : 'default'\">\n  <slot></slot>\n</n3-button>\n";
 
 /***/ },
-/* 670 */
+/* 671 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(671)
+	__vue_script__ = __webpack_require__(672)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Radio/n3RadioGroup.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(672)
+	__vue_template__ = __webpack_require__(673)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -32011,7 +32048,7 @@
 	})()}
 
 /***/ },
-/* 671 */
+/* 672 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32020,11 +32057,11 @@
 	  value: true
 	});
 	
-	var _n3Radio = __webpack_require__(664);
+	var _n3Radio = __webpack_require__(665);
 	
 	var _n3Radio2 = _interopRequireDefault(_n3Radio);
 	
-	var _n3RadioBtn = __webpack_require__(667);
+	var _n3RadioBtn = __webpack_require__(668);
 	
 	var _n3RadioBtn2 = _interopRequireDefault(_n3RadioBtn);
 	
@@ -32137,21 +32174,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 672 */
+/* 673 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-btn-group ${prefixCls}-radio-group`\">\n    <slot></slot>\n\n    <validate\n      :name=\"name\"\n      :rules=\"rules\"\n      :custom-validate=\"customValidate\" \n      :current=\"value\">\n    </validate>\n\n  </div>\n";
 
 /***/ },
-/* 673 */
+/* 674 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(674)
+	__vue_script__ = __webpack_require__(675)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Select/n3Select.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(677)
+	__vue_template__ = __webpack_require__(678)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -32176,7 +32213,7 @@
 	})()}
 
 /***/ },
-/* 674 */
+/* 675 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32201,7 +32238,7 @@
 	
 	var _valMixin2 = _interopRequireDefault(_valMixin);
 	
-	var _render = __webpack_require__(675);
+	var _render = __webpack_require__(676);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
@@ -32213,7 +32250,7 @@
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _localeMixin = __webpack_require__(612);
+	var _localeMixin = __webpack_require__(581);
 	
 	var _localeMixin2 = _interopRequireDefault(_localeMixin);
 	
@@ -32596,12 +32633,12 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 675 */
+/* 676 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(676)
+	__vue_script__ = __webpack_require__(677)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/render.vue: named exports in *.vue files are ignored.")}
 	module.exports = __vue_script__ || {}
@@ -32628,7 +32665,7 @@
 	})()}
 
 /***/ },
-/* 676 */
+/* 677 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32672,21 +32709,21 @@
 	// <script>
 
 /***/ },
-/* 677 */
+/* 678 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-btn-group ${prefixCls}-select-group`\" >\n  <n3-button\n    :style=\"{width:width}\"\n    :disabled=\"disabled\"\n    :size=\"size\"\n    :class=\"[`${prefixCls}-dropdown-toggle`,`${prefixCls}-select-btn`,showselected&&multiple&&value.length ? `${prefixCls}-select-multiple` : '']\"\n    @click.native=\"toggleDropdown\">\n      <span  v-if=\"showPlaceholder || !showselected\">{{placeholder}}</span>\n      <span  v-if=\"showselected\" >\n        <template v-for=\"item in selectedItems\" v-if=\"multiple\">\n          <render \n            @click.native.prevent.stop=\"del(item)\"\n            :class=\"`${prefixCls}-selected-tag`\" \n            :context=\"context || $parent._self\"\n            :template=\"format(item)\">\n          </render>\n        </template>\n        <template v-else>\n          <render :context=\"context || $parent._self\" :template=\"format(selectedItems[0])\"></render>\n        </template>\n      </span>\n    <n3-icon :type=\"show?'angle-up' : 'angle-down'\" ></n3-icon>\n  </n3-button>\n  <transition name=\"fadeDown\">\n    <ul \n      :style=\"{maxHeight:menuMaxHeight,width:menuWidth}\" \n      :class=\"`${prefixCls}-dropdown-menu`\" \n      ref=\"menu\" \n      v-n3-position=\"show\"\n      v-show=\"show\">\n        <li v-if=\"search\">\n          <input\n            :class=\"`${prefixCls}-select-search`\"\n            :placeholder=\"inputPlaceholder\"\n            v-model=\"searchText\"\n            @keydown.native.enter=\"addExtra\"\n          ></input>\n          <n3-icon type=\"plus-square-o\" v-if=\"extra\" @click.native=\"addExtra\"></n3-icon>\n        </li>\n        <li v-if=\"multiple\" :class=\"`${prefixCls}-select-all`\">\n          <a @click.prevent=\"selectAll\">\n            {{getL('all')}}\n           <n3-icon type=\"check\" v-show=\"allSelected\"></n3-icon>\n          </a>\n        </li>\n\n        <template v-if=\"currentOptions.length\">\n          <li v-for=\"option in filterOptions\" \n              :value=\"option.value\" \n              style=\"position:relative\">\n            <a @click.prevent=\"select(option)\" >\n              <span v-html=\"option.label\"></span>\n              <n3-icon type=\"check\" v-show=\"findIndex(option.value) !== -1\"></n3-icon>\n            </a>\n          </li>\n        </template>\n        <slot v-else ></slot>\n      <div :class=\"`${prefixCls}-notify`\" v-show=\"showNotify\" transition=\"fade\">最多选择 {{limit}} 项</div>\n    </ul>\n  </transition>\n  <div class=\"clearfix\"></div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>\n";
 
 /***/ },
-/* 678 */
+/* 679 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(679)
+	__vue_script__ = __webpack_require__(680)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Tabs/n3Tab.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(680)
+	__vue_template__ = __webpack_require__(681)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -32711,7 +32748,7 @@
 	})()}
 
 /***/ },
-/* 679 */
+/* 680 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -32795,21 +32832,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 680 */
+/* 681 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div \n  :class=\"classObj\"\n  v-show=\"show\">\n  <slot></slot>\n</div>\n";
 
 /***/ },
-/* 681 */
+/* 682 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(682)
+	__vue_script__ = __webpack_require__(683)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Tabs/n3Tabs.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(683)
+	__vue_template__ = __webpack_require__(684)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -32834,7 +32871,7 @@
 	})()}
 
 /***/ },
-/* 682 */
+/* 683 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32917,6 +32954,9 @@
 	      },
 	
 	      immediate: true
+	    },
+	    value: function value(val) {
+	      this.activeIndex = val;
 	    }
 	  },
 	  methods: {
@@ -32969,21 +33009,21 @@
 	// <script>
 
 /***/ },
-/* 683 */
+/* 684 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div>\n  <ul :class=\"classObj\" >\n    <li\n        v-for=\"(r,index) in renderData\"\n        :class=\"liclassObj(index,r)\"\n        @click.prevent=\"handleTabListClick(index, r)\"\n        :disabled=\"r.disabled\">\n        <a href=\"#\">\n          {{r.header}}\n          <n3-badge v-if=\"r.badge\">{{r.badge}}</n3-badge>\n        </a>\n    </li>\n  </ul>\n  <div :class=\"`${prefixCls}-tab-content`\">\n    <div v-if=\"list\">\n        <span v-html='renderData[activeIndex].content'></span>\n    </div>\n    <slot v-else></slot>\n  </div>\n</div>\n";
 
 /***/ },
-/* 684 */
+/* 685 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(685)
+	__vue_script__ = __webpack_require__(686)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Button/n3ButtonGroup.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(686)
+	__vue_template__ = __webpack_require__(687)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -33008,7 +33048,7 @@
 	})()}
 
 /***/ },
-/* 685 */
+/* 686 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33037,21 +33077,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 686 */
+/* 687 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-btn-group`\">\n  <slot></slot>  \n</div>\n";
 
 /***/ },
-/* 687 */
+/* 688 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(688)
+	__vue_script__ = __webpack_require__(689)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Layout/n3Container.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(689)
+	__vue_template__ = __webpack_require__(690)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -33076,7 +33116,7 @@
 	})()}
 
 /***/ },
-/* 688 */
+/* 689 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33120,21 +33160,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 689 */
+/* 690 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"classObj\" >\n\t<slot></slot>\t\t\n</div>\n";
 
 /***/ },
-/* 690 */
+/* 691 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(691)
+	__vue_script__ = __webpack_require__(692)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Layout/n3Row.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(692)
+	__vue_template__ = __webpack_require__(693)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -33159,7 +33199,7 @@
 	})()}
 
 /***/ },
-/* 691 */
+/* 692 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33187,21 +33227,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 692 */
+/* 693 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-row`\">\n\t<slot></slot>\t\t\n</div>\n";
 
 /***/ },
-/* 693 */
+/* 694 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(694)
+	__vue_script__ = __webpack_require__(695)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Nav/n3Nav.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(696)
+	__vue_template__ = __webpack_require__(697)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -33226,7 +33266,7 @@
 	})()}
 
 /***/ },
-/* 694 */
+/* 695 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33235,7 +33275,7 @@
 	  value: true
 	});
 	
-	var _eventMixin = __webpack_require__(695);
+	var _eventMixin = __webpack_require__(696);
 	
 	var _eventMixin2 = _interopRequireDefault(_eventMixin);
 	
@@ -33403,7 +33443,7 @@
 	// <script>
 
 /***/ },
-/* 695 */
+/* 696 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -33446,21 +33486,21 @@
 	};
 
 /***/ },
-/* 696 */
+/* 697 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<ul :class=\"classObj\">\n  <slot></slot>\n</ul>\n";
 
 /***/ },
-/* 697 */
+/* 698 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(698)
+	__vue_script__ = __webpack_require__(699)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Nav/n3SubNav.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(700)
+	__vue_template__ = __webpack_require__(701)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -33485,7 +33525,7 @@
 	})()}
 
 /***/ },
-/* 698 */
+/* 699 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33498,15 +33538,15 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _navMixin = __webpack_require__(699);
+	var _navMixin = __webpack_require__(700);
 	
 	var _navMixin2 = _interopRequireDefault(_navMixin);
 	
-	var _eventMixin = __webpack_require__(695);
+	var _eventMixin = __webpack_require__(696);
 	
 	var _eventMixin2 = _interopRequireDefault(_eventMixin);
 	
-	var _n3CollapseTransition = __webpack_require__(637);
+	var _n3CollapseTransition = __webpack_require__(638);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
@@ -33670,7 +33710,7 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 699 */
+/* 700 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33722,21 +33762,21 @@
 	};
 
 /***/ },
-/* 700 */
+/* 701 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<li :class=\"liClass\">\n  <div  ref=\"subnav-title\" :style=\"paddingStyle\" :class=\"`${prefixCls}-subnav__title`\">\n    <slot name=\"title\"></slot>\n    <n3-icon type=\"angle-right\" :class=\"iClass\"></n3-icon>\n  </div>\n  <template v-if=\"rootMenu.mode === 'horizontal'\">\n    <transition name=\"fadeDown\">\n      <ul class=\"n3-nav\" v-show=\"opened\"><slot></slot></ul>\n    </transition>\n  </template>\n  <n3-collapse-transition v-else group>\n    <ul :class=\"`${prefixCls}-nav`\" v-show=\"opened\"><slot></slot></ul>\n  </n3-collapse-transition>\n</li>\n";
 
 /***/ },
-/* 701 */
+/* 702 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(702)
+	__vue_script__ = __webpack_require__(703)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Nav/n3NavItem.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(703)
+	__vue_template__ = __webpack_require__(704)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -33761,7 +33801,7 @@
 	})()}
 
 /***/ },
-/* 702 */
+/* 703 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33770,11 +33810,11 @@
 	  value: true
 	});
 	
-	var _navMixin = __webpack_require__(699);
+	var _navMixin = __webpack_require__(700);
 	
 	var _navMixin2 = _interopRequireDefault(_navMixin);
 	
-	var _eventMixin = __webpack_require__(695);
+	var _eventMixin = __webpack_require__(696);
 	
 	var _eventMixin2 = _interopRequireDefault(_eventMixin);
 	
@@ -33847,21 +33887,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 703 */
+/* 704 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<li\n  :key=\"index\"\n  :style=\"paddingStyle\"\n  @click=\"handleClick\"\n  :class=\"classObJ\">\n  <slot></slot>\n</li>\n";
 
 /***/ },
-/* 704 */
+/* 705 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(705)
+	__vue_script__ = __webpack_require__(706)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Nav/n3NavGroup.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(706)
+	__vue_template__ = __webpack_require__(707)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -33886,7 +33926,7 @@
 	})()}
 
 /***/ },
-/* 705 */
+/* 706 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -33943,21 +33983,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 706 */
+/* 707 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<li :class=\"`${prefixCls}-nav-item-group`\">\n  <div :class=\"`${prefixCls}-nav-item-group__title`\" :style=\"{paddingLeft: levelPadding + 'px'}\">\n    <template v-if=\"!$slots.title\">{{title}}</template>\n    <slot v-else name=\"title\"></slot>\n  </div>\n  <ul>\n    <slot></slot>\n  </ul>\n</li>\n";
 
 /***/ },
-/* 707 */
+/* 708 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(708)
+	__vue_script__ = __webpack_require__(709)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Layout/n3Column.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(709)
+	__vue_template__ = __webpack_require__(710)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -33982,7 +34022,7 @@
 	})()}
 
 /***/ },
-/* 708 */
+/* 709 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -34035,21 +34075,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 709 */
+/* 710 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"classObj\" >\n\t<slot></slot>\t\t\n</div>\n";
 
 /***/ },
-/* 710 */
+/* 711 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(711)
+	__vue_script__ = __webpack_require__(712)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Switch/n3Switch.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(712)
+	__vue_template__ = __webpack_require__(713)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -34074,7 +34114,7 @@
 	})()}
 
 /***/ },
-/* 711 */
+/* 712 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34180,21 +34220,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 712 */
+/* 713 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"inline\">\n  <input \n    v-show=\"false\"\n    type=\"checkbox\"\n    v-model=\"currentValue\"/>   \n  <div  :class=\"classObj\" @click=\"toggle\">\n    <div :class=\"`${prefixCls}-switch-container ${prefixCls}-switch-on-primary ${prefixCls}-switch-off-default`\">\n      <span :class=\"`${prefixCls}-switch-handle-on ${prefixCls}-switch-primary`\" >{{ontext}}</span>\n      <span :class=\"`${prefixCls}-switch-label`\" >&nbsp;</span>\n      <span :class=\"`${prefixCls}-switch-handle-off ${prefixCls}-switch-default`\" >{{offtext}}</span>\n    </div>\n  </div>\n  <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>\n";
 
 /***/ },
-/* 713 */
+/* 714 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(714)
+	__vue_script__ = __webpack_require__(715)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/MultipleInput/n3MultipleInput.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(718)
+	__vue_template__ = __webpack_require__(719)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -34219,7 +34259,7 @@
 	})()}
 
 /***/ },
-/* 714 */
+/* 715 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34232,11 +34272,11 @@
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _n3Typeahead = __webpack_require__(715);
+	var _n3Typeahead = __webpack_require__(716);
 	
 	var _n3Typeahead2 = _interopRequireDefault(_n3Typeahead);
 	
-	var _render = __webpack_require__(675);
+	var _render = __webpack_require__(676);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
@@ -34563,15 +34603,15 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 715 */
+/* 716 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(716)
+	__vue_script__ = __webpack_require__(717)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Typeahead/n3Typeahead.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(717)
+	__vue_template__ = __webpack_require__(718)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -34596,7 +34636,7 @@
 	})()}
 
 /***/ },
-/* 716 */
+/* 717 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34605,15 +34645,15 @@
 	  value: true
 	});
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
-	var _render = __webpack_require__(675);
+	var _render = __webpack_require__(676);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _inputMixin = __webpack_require__(593);
+	var _inputMixin = __webpack_require__(603);
 	
 	var _inputMixin2 = _interopRequireDefault(_inputMixin);
 	
@@ -34818,27 +34858,27 @@
 	// <script>
 
 /***/ },
-/* 717 */
+/* 718 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div style=\"position: relative;display:inline-block\"\n     :class=\"[show ? prefixCls +'-open' : '']\">\n  <n3-input\n    ref=\"input\"\n    :width=\"width\"\n    :name=\"name\" \n    :rules=\"rules\" \n    :placeholder=\"placeholder\"\n    :custom-validate=\"customValidate\"\n    :readonly=\"readonly\"\n    :disabled=\"disabled\"\n    v-model=\"query\"\n    :show-clean=\"showClean\"\n    @focus=\"_onFocus\"\n    @blur=\"_onBlur\"\n    @input.native=\"update\"\n    @keydown.native.up=\"up\"\n    @keydown.native.down=\"down\"\n    @keydown.native.enter= \"hit(null)\"\n    @keydown.native.esc=\"reset\"\n  ></n3-input>\n  <ul :class=\"`${prefixCls}-dropdown-menu`\" :style=\"{width: dropdownWidth, maxHeight: dropdownHeight}\">\n    <li v-for=\"(item,index) in citems\" :class=\"isActive(index)\" >\n      <a @mousedown.prevent=\"hit(index)\" >\n        <render :context=\"context || $parent._self\" :template=\"render(item)\">\n        </render>\n      </a>\n    </li> \n  </ul>\n</div>\n";
 
 /***/ },
-/* 718 */
+/* 719 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"inline\" >\n  <div :class=\"classObj\" :style=\"{width:width,height:height}\" @click=\"focus\">\n    <template v-for=\"(item, index) in currentValue\">\n        <template v-if=\"index == currentPosition\">\n            <n3-typeahead\n              ref=\"typeahead\"\n              :placeholder=\"placeholder\"\n              :async=\"async\"\n              @focus=\"_onFocus\"\n              @blur=\"_onBlur\"\n              :style=\"{margin:'0px 5px'}\"\n              v-model=\"currentQuery\" \n              :width='inputWidth'\n              :items=\"citems\"\n              @change=\"_onInputchange\"\n              :dropdown-width=\"dropdownWidth\"\n              :dropdown-height=\"dropdownHeight\"\n              :on-hit=\"add\"\n              :match-case=\"matchCase\"\n              :limit=\"limit\"\n              :render=\"render\"\n              :data=\"data\"\n              @keydown.delete.native=\"del\" \n              @keydown.left.native=\"left\" \n              @keydown.right.native=\"right\" \n              @keydown.enter.native=\"add\">\n            </n3-typeahead>\n        </template>\n         <template v-else>\n            <span :class=\"`${prefixCls}-multiple-input-space`\"  @click=\"setIndex(index)\"></span>\n        </template>\n        <span :class=\"`${prefixCls}-multiple-input-m-tag`\" >\n        <render class=\"inline\" :context=\"context || $parent._self\" :template=\"format(item, index)\"></render>\n        <n3-icon type=\"times\" :class=\"`${prefixCls}-multiple-close`\" @click.native=\"clickDel(index)\"></n3-icon>\n        </span>\n    </template>\n\n    <template v-if=\"currentValue && currentValue.length == currentPosition\">\n      <n3-typeahead\n        ref=\"typeahead\"\n        :placeholder=\"placeholder\"\n        :async=\"async\"\n        @focus=\"_onFocus\"\n        @blur=\"_onBlur\"\n        :style=\"{margin:'0px 5px'}\"\n        v-model=\"currentQuery\" \n        :width='inputWidth'\n        :items=\"citems\"\n        @change=\"_onInputchange\"\n        :dropdown-width=\"dropdownWidth\"\n        :dropdown-height=\"dropdownHeight\"\n        :on-hit=\"add\"\n        :match-case=\"matchCase\"\n        :limit=\"limit\"\n        :render=\"render\"\n        :data=\"data\"\n        @keydown.delete.native=\"del\" \n        @keydown.left.native=\"left\" \n        @keydown.right.native=\"right\" \n        @keydown.enter.native=\"add\">\n      </n3-typeahead>\n    </template>\n    <template v-else>\n      <span :class=\"`${prefixCls}-multiple-input-space ${prefixCls}-multiple-input-long`\"  @click=\"setIndex(currentValue.length)\"></span>\n    </template>\n  </div>\n   <validate\n    :name=\"name\"\n    :rules=\"rules\"\n    :custom-validate=\"customValidate\" \n    :current=\"value\">\n  </validate>\n</div>\n";
 
 /***/ },
-/* 719 */
+/* 720 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(720)
+	__vue_script__ = __webpack_require__(721)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Page/n3Page.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(721)
+	__vue_template__ = __webpack_require__(722)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -34863,7 +34903,7 @@
 	})()}
 
 /***/ },
-/* 720 */
+/* 721 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34872,7 +34912,7 @@
 	  value: true
 	});
 	
-	var _n3Select = __webpack_require__(673);
+	var _n3Select = __webpack_require__(674);
 	
 	var _n3Select2 = _interopRequireDefault(_n3Select);
 	
@@ -34880,7 +34920,7 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
@@ -34888,7 +34928,7 @@
 	
 	var _type2 = _interopRequireDefault(_type);
 	
-	var _localeMixin = __webpack_require__(612);
+	var _localeMixin = __webpack_require__(581);
 	
 	var _localeMixin2 = _interopRequireDefault(_localeMixin);
 	
@@ -35173,21 +35213,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 721 */
+/* 722 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"inline\">\n  <ul :class=\"simpleWrapClasses\" v-if=\"simple\">\n    <li\n      title=\"prev\"\n      :class=\"prevClasses\"\n      @click=\"prev\">\n      <n3-icon type=\"angle-left\"></n3-icon>\n    </li>\n    <div :class=\"simplePagerClasses\" :title=\"currentPage + '/' + allPages\">\n      <n3-input\n        width=\"50px\"\n        @keyup.native.enter=\"goPage\" \n        v-model=\"currentPage\">\n      </n3-input>  \n      <span>/</span>\n      {{ allPages }}\n    </div>\n    <li\n      title=\"next\"\n      :class=\"nextClasses\"\n      @click=\"next\">\n      <n3-icon type=\"angle-right\"></n3-icon>\n    </li>\n  </ul>\n  <ul :class=\"wrapClasses\" v-else>\n    <span :class=\"[prefixCls + '-page-total']\" v-if=\"showTotal\">\n        <slot> {{getL('total')}} {{ total }} </slot>\n    </span>\n    <li\n        title=\"prev\"\n        :class=\"prevClasses\"\n        @click=\"prev\">\n        <n3-icon type=\"angle-left\"></n3-icon>\n    </li>\n    <li title=\"first\" :class=\"firstPageClasses\" @click=\"changePage(1)\"><a>1</a></li>\n    <li title=\"prev 5 \" v-if=\"currentPage - 3 > 1\" :class=\"[prefixCls + '-page-item-jump-prev']\" @click=\"fastPrev\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"preventer\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n    <li :title=\"currentPage - 2\" v-if=\"currentPage - 2 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 2)\"><a>{{ currentPage - 2 }}</a></li>\n    <li :title=\"currentPage - 1\" v-if=\"currentPage - 1 > 1\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage - 1)\"><a>{{ currentPage - 1 }}</a></li>\n    <li :title=\"currentPage\" v-if=\"currentPage != 1 && currentPage != allPages\" :class=\"[prefixCls + '-page-item',prefixCls + '-page-item-active']\"><a>{{ currentPage }}</a></li>\n    <li :title=\"currentPage + 1\" v-if=\"currentPage + 1 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 1)\"><a>{{ currentPage + 1 }}</a></li>\n    <li :title=\"currentPage + 2\" v-if=\"currentPage + 2 < allPages\" :class=\"[prefixCls + '-page-item']\" @click=\"changePage(currentPage + 2)\"><a>{{ currentPage + 2 }}</a></li>\n    <li title=\"next 5 \" v-if=\"currentPage + 3 < allPages\" :class=\"[prefixCls + '-page-item-jump-next']\" @click=\"fastNext\"><a><n3-icon type=\"ellipsis-h\" @mouseenter.native=\"nextenter\" @mouseleave.native=\"leave\" ></n3-icon></a></li>\n    <li :title=\"'last:' + allPages\" v-if=\"allPages > 1\" :class=\"lastPageClasses\" @click=\"changePage(allPages)\"><a>{{ allPages }}</a></li>\n    <li\n        title=\"next\"\n        :class=\"nextClasses\"\n        @click=\"next\">\n        <n3-icon type=\"angle-right\"></n3-icon>\n    </li>\n    <n3-select\n      v-if=\"showSizer\"\n      v-model=\"currentPagesize\"\n      :options=\"pagesizeOptsCom\"\n      @change=\"onSize\">\n    </n3-select>\n    <div class=\"inline\" v-if=\"showElevator\">\n      <n3-input\n        width=\"50px\"\n        @keyup.native.enter=\"goPage\" \n        v-model=\"currentPage\">\n      </n3-input>\n      <n3-button @click.native=\"goPage\">{{getL('go')}}</n3-button>\n    </div>\n  </ul>\n</div>\n";
 
 /***/ },
-/* 722 */
+/* 723 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(723)
+	__vue_script__ = __webpack_require__(724)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Step/n3Step.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(724)
+	__vue_template__ = __webpack_require__(725)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -35212,7 +35252,7 @@
 	})()}
 
 /***/ },
-/* 723 */
+/* 724 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -35289,21 +35329,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 724 */
+/* 725 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<ul v-if=\"round\" :class=\"`${prefixCls}-steps-round-con`\">\n  <template v-for=\"(label,index) in labels\">\n    <li :class=\"[getClassFromIndex(index)]\">\n      <div :class=\"`${prefixCls}-steps-wrap`\">\n        <div :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</div>\n      </div>\n      <label>{{label}}</label>\n    </li>\n  </template>\n</ul>\n\n<div v-else :class=\"`${prefixCls}-steps clearfix`\">\n  <template v-for=\"(label,index) in labels\">\n    <div :class=\"`${prefixCls}-steps-wrap`\">\n      <div :class=\"getClassFromIndex(index)\">\n        <label>\n            <span :class=\"`${prefixCls}-steps-round`\">{{index + 1}}</span>\n            <span>{{label}}</span>\n          </label>\n        <template v-if=\"index < labels.length - 1\">\n          <i :class=\"`${prefixCls}-steps-triangle-right-bg`\"></i>\n          <i :class=\"`${prefixCls}-steps-triangle-right`\"></i>\n        </template>\n      </div>\n    </div>\n  </template>\n</div>\n";
 
 /***/ },
-/* 725 */
+/* 726 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(726)
+	__vue_script__ = __webpack_require__(727)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/DataTable/n3DataTable.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(727)
+	__vue_template__ = __webpack_require__(728)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -35328,7 +35368,7 @@
 	})()}
 
 /***/ },
-/* 726 */
+/* 727 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -35337,15 +35377,15 @@
 	  value: true
 	});
 	
-	var _render = __webpack_require__(675);
+	var _render = __webpack_require__(676);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
-	var _n3Page = __webpack_require__(719);
+	var _n3Page = __webpack_require__(720);
 	
 	var _n3Page2 = _interopRequireDefault(_n3Page);
 	
-	var _n3Select = __webpack_require__(673);
+	var _n3Select = __webpack_require__(674);
 	
 	var _n3Select2 = _interopRequireDefault(_n3Select);
 	
@@ -35357,7 +35397,7 @@
 	
 	var _n3Icon2 = _interopRequireDefault(_n3Icon);
 	
-	var _n3Input = __webpack_require__(591);
+	var _n3Input = __webpack_require__(601);
 	
 	var _n3Input2 = _interopRequireDefault(_n3Input);
 	
@@ -35369,7 +35409,7 @@
 	
 	var _type3 = _interopRequireDefault(_type2);
 	
-	var _localeMixin = __webpack_require__(612);
+	var _localeMixin = __webpack_require__(581);
 	
 	var _localeMixin2 = _interopRequireDefault(_localeMixin);
 	
@@ -36125,21 +36165,21 @@
 	// <script>
 
 /***/ },
-/* 727 */
+/* 728 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-data-table`\">\n<div :class=\"`${prefixCls}-data-table-bar clearfix`\">\n  <n3-select \n    class='pull-left'\n    style=\"margin-right:10px;\"\n    multiple\n    :showselected=\"false\"\n    v-if=\"selectCol\"\n    :placeholder = \"getL('selectCol')\"\n    :options=\"selectOptions\" \n    v-model=\"selectdCols\">\n  </n3-select>\n  <div v-if=\"filter && filterArr.length\" :class=\"`pull-left ${prefixCls}-btn-group`\">\n    <template v-for=\"item in filterArr\">\n      <n3-select \n        :multiple = \"item.multiple === undefined?true:!!item.multiple\"\n        :search = \"item.search === undefined?true:!!item.search\"\n        :extra = \"item.extra === undefined?true:!!item.extra\"\n        :showselected=\"false\"\n        :placeholder = \"item.title\"\n        :options=\"item.options\" \n        v-model=\"item.value\">\n      </n3-select>\n    </template>  \n    <n3-button\n      :class=\"`${prefixCls}-data-table-inner-btn`\"\n      @click.native=\"resetFilter\" \n      type=\"primary\">\n      <n3-icon type=\"reply\"></n3-icon>\n    </n3-button>\n     <n3-button\n      :class=\"`${prefixCls}-data-table-inner-btn`\"\n      @click.native=\"goFilter\" \n      type=\"primary\">\n      <n3-icon type=\"filter\"></n3-icon>\n    </n3-button>\n  </div>\n    <n3-button\n      :class=\"`${prefixCls}-data-table-inner-btn`\" \n      style=\"margin-left:10px;\"\n      @click.native=\"refresh\"\n      v-if=\"refresh\"  \n      type=\"primary\">\n      <n3-icon type=\"refresh\"></n3-icon>\n    </n3-button>\n    <slot ></slot>\n  <n3-input\n    class=\"pull-right\" \n    :placeholder=\"getL('search')\"\n    v-model=\"query\"\n    @keydown.native.enter=\"gosearch\"\n    v-if=\"search\">\n  </n3-input>\n</div>\n<div>\n  <n3-loading center size=\"lg\" v-if=\"loading\"></n3-loading>\n  <div v-if=\"fixedColumns\" :class=\"`${prefixCls}-data-table-fixed-columns`\">\n    <table :class=\"classObj\">\n      <thead>\n          <tr>\n            <th v-if=\"selection\" :class=\"`${prefixCls}-data-table-row-select`\">\n                <input v-if=\"list && list.length\" \n                  type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                  @change=\"onCheckAll\"/>\n            </th>\n            <th v-for=\"col in showColumns\" \n                :style=\"{width: col.width}\" \n                :class=\"{'pointer': col.sort}\" \n                @click=\"sort(col, col.sort)\" \n                :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                  <span>{{col.title}} </span> \n                  <div :class=\"`${prefixCls}-data-table-sort pull-right`\" v-if=\"col.sort\" >\n                    <n3-icon\n                      @click.native.stop=\"sort(col,col.sort,'ASC')\"\n                      :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                      type=\"caret-up\">\n                    </n3-icon>\n                    <n3-icon\n                      @click.native.stop=\"sort(col,col.sort,'DESC')\"\n                      :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                      type=\"caret-down\">\n                    </n3-icon>\n                  </div>\n            </th>\n          </tr>\n        </thead>\n    </table>\n  </div>\n  <div  :class=\"[loading ? prefixCls + '-data-table-loading':'']\" \n        :style=\"styleCon\">\n    <table :class=\"classObj\" :style=\"styleTable\">\n        <thead>\n          <tr>\n            <th v-if=\"selection\" :class=\"`${prefixCls}-data-table-row-select`\">\n                <input v-if=\"list && list.length\" \n                  type=\"checkbox\" v-bind=\"{checked:isCheckedAll,disabled:isDisabledAll}\" \n                  @change=\"onCheckAll\"/>\n            </th>\n            <th v-for=\"col in showColumns\" \n                :style=\"{width: col.width}\" \n                :class=\"{'pointer': col.sort}\" \n                @click=\"sort(col, col.sort)\" \n                :colspan=\"col.colspan === undefined ? 1 : col.colspan\"> \n                  <span>{{col.title}} </span> \n                  <div :class=\"`${prefixCls}-data-table-sort pull-right`\" v-if=\"col.sort\" >\n                    <n3-icon\n                      @click.native.stop=\"sort(col,col.sort,'ASC')\"\n                      :style=\"{color: sortStatus(col.dataIndex,'ASC') ? 'gray' : '#ddd'}\" \n                      type=\"caret-up\">\n                    </n3-icon>\n                    <n3-icon\n                      @click.native.stop=\"sort(col,col.sort,'DESC')\"\n                      :style=\"{color: sortStatus(col.dataIndex,'DESC')? 'gray' : '#ddd'}\"\n                      type=\"caret-down\">\n                    </n3-icon>\n                  </div>\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr v-for=\"(data,index) in list\" track-by=\"n3Key\">\n              <td v-if=\"selection\" :class=\"`${prefixCls}-row-select`\">\n                 <input type=\"checkbox\" \n                  v-model=\"checkedValues\"  \n                  :value=\"stringify(data)\" @change.stop=\"onCheckOne($event,data)\" \n                  v-bind=\"selection.getCheckboxProps && selection.getCheckboxProps(data)\"/>\n              </td>\n              <td v-for=\"col in showColumns\"\n                :colspan=\"colspan(col,data)\"\n                :rowspan=\"rowspan(col,data)\">\n                <template v-if=\"col.show!=false && colspan(col,data) != 0 && rowspan(col,data) !=0\">\n                  <template v-if=\"col.render\">\n                    <render :context=\"context || $parent._self\" :template=\"col.render(data[col.dataIndex],data,index)\"></render>\n                  </template>\n                  <template v-else>\n                    <span v-html=\"col.dataIndex ? data[col.dataIndex] : ''\"></span>\n                  </template>\n                </template>\n              </td>\n          </tr>\n        </tbody>\n    </table>\n  </div>\n</div>\n\n<div :class=\"`${prefixCls}-data-table-bar ${prefixCls}-data-table-page`\" v-if=\"page\" >\n  <n3-page\n    v-if=\"page\" \n    :total=\"cpage.total\" \n    :current=\"cpage.current\" \n    :pagesize=\"cpage.pagesize\" \n    @change=\"pageChange\"\n    :show-sizer=\"true\"\n    :show-total=\"true\"\n    :pagesize-opts=\"cpage.pagesizeOpts\">\n  </n3-page>\n  </div>\n</div>\n</div>\n";
 
 /***/ },
-/* 728 */
+/* 729 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(729)
+	__vue_script__ = __webpack_require__(730)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Timeline/n3Timeline.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(733)
+	__vue_template__ = __webpack_require__(734)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -36164,7 +36204,7 @@
 	})()}
 
 /***/ },
-/* 729 */
+/* 730 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36173,11 +36213,11 @@
 	  value: true
 	});
 	
-	var _n3TimelineItem = __webpack_require__(730);
+	var _n3TimelineItem = __webpack_require__(731);
 	
 	var _n3TimelineItem2 = _interopRequireDefault(_n3TimelineItem);
 	
-	var _render = __webpack_require__(675);
+	var _render = __webpack_require__(676);
 	
 	var _render2 = _interopRequireDefault(_render);
 	
@@ -36217,15 +36257,15 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 730 */
+/* 731 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(731)
+	__vue_script__ = __webpack_require__(732)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Timeline/n3TimelineItem.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(732)
+	__vue_template__ = __webpack_require__(733)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -36250,7 +36290,7 @@
 	})()}
 
 /***/ },
-/* 731 */
+/* 732 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36297,27 +36337,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 732 */
+/* 733 */
 /***/ function(module, exports) {
 
 	module.exports = "\n \t<li :class=\"`${prefixCls}-timeline-item`\">\n \t\t<div :class=\"`${prefixCls}-timeline-item-tail`\"></div>\n \t\t<div :class=\"[prefixCls+'-timeline-item-head',icon?prefixCls+'-fa '+prefixCls+'-fa-'+icon:'']\" :style=\"style\"></div>\n \t\t<div :class=\"`${prefixCls}-timeline-item-content`\">\n\t \t\t<slot></slot>\n \t\t</div>\n \t</li>\n";
 
 /***/ },
-/* 733 */
+/* 734 */
 /***/ function(module, exports) {
 
 	module.exports = "\n\t<ul :class=\"`${prefixCls}-timeline-con`\">\n\t\t<template v-if=\"value\">\n\t\t\t<n3-timeline-item v-for=\"i in value\" :color=\"i.color\" :icon=\"i.icon\" >\n\t\t\t\t<render :context=\"context || $parent._self\" :template=\"i.content\"></render>\n\t\t\t</n3-timeline-item>\n\t\t</template>\n\t\t<template v-else>\n\t\t\t<slot></slot>\n\t\t</template>\n\t</ul>\n";
 
 /***/ },
-/* 734 */
+/* 735 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(735)
+	__vue_script__ = __webpack_require__(736)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Tags/n3Tags.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(736)
+	__vue_template__ = __webpack_require__(737)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -36342,7 +36382,7 @@
 	})()}
 
 /***/ },
-/* 735 */
+/* 736 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36457,21 +36497,21 @@
 	// <script>
 
 /***/ },
-/* 736 */
+/* 737 */
 /***/ function(module, exports) {
 
 	module.exports = "\n  <div :class=\"classObj\">\n    <label v-for=\"i in currentValue\" :class=\"tagClass(i)\">\n\t {{i.label}}\n\t<a name=\"remove\" v-if=\"removable\" @click=\"del(i)\"><n3-icon type=\"times\"></n3-icon></a>\n\t</label>\n  </div>\n";
 
 /***/ },
-/* 737 */
+/* 738 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(738)
+	__vue_script__ = __webpack_require__(739)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Breadcrumb/n3Breadcrumb.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(739)
+	__vue_template__ = __webpack_require__(740)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -36496,7 +36536,7 @@
 	})()}
 
 /***/ },
-/* 738 */
+/* 739 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36523,21 +36563,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 739 */
+/* 740 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<ol :class=\"`${prefixCls}-breadcrumb`\">\n\t<slot></slot>\n</ol>\n";
 
 /***/ },
-/* 740 */
+/* 741 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(741)
+	__vue_script__ = __webpack_require__(742)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Breadcrumb/n3BreadcrumbItem.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(742)
+	__vue_template__ = __webpack_require__(743)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -36562,7 +36602,7 @@
 	})()}
 
 /***/ },
-/* 741 */
+/* 742 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36600,21 +36640,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 742 */
+/* 743 */
 /***/ function(module, exports) {
 
 	module.exports = "\n \t<li :class=\"[active ? prefixCls + '-breadcrumb-active' : '']\">\n\t\t<a v-if='href' :href=\"href\" >\n    \t<slot></slot>\n  \t</a>\n  \t<span v-else>\n    \t<slot></slot>\n  \t</span>\n  \t</li>\n";
 
 /***/ },
-/* 743 */
+/* 744 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(744)
+	__vue_script__ = __webpack_require__(745)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Form/n3Form.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(745)
+	__vue_template__ = __webpack_require__(746)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -36639,7 +36679,7 @@
 	})()}
 
 /***/ },
-/* 744 */
+/* 745 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -36780,21 +36820,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 745 */
+/* 746 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<form :class=\"classObj\"  @submit.prevent=\"noop\">\n    <slot></slot>\n</form>\n";
 
 /***/ },
-/* 746 */
+/* 747 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(747)
+	__vue_script__ = __webpack_require__(748)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Form/n3FormItem.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(748)
+	__vue_template__ = __webpack_require__(749)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -36819,7 +36859,7 @@
 	})()}
 
 /***/ },
-/* 747 */
+/* 748 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -36903,21 +36943,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 748 */
+/* 749 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"classObj\" >\n  <label :class=\"`${prefixCls}-col-sm-${label_col} ${prefixCls}-control-label`\">\n    <em :class=\"`${prefixCls}-form-need`\" v-if=\"need\" >*</em>\n    {{label}}\n    </label>\n  <div :class=\"`${prefixCls}-col-sm-${col} inline`\">\n    <slot></slot>\n  </div>  \n</div>\n";
 
 /***/ },
-/* 749 */
+/* 750 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(750)
+	__vue_script__ = __webpack_require__(751)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Carousel/n3Slide.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(751)
+	__vue_template__ = __webpack_require__(752)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -36942,7 +36982,7 @@
 	})()}
 
 /***/ },
-/* 750 */
+/* 751 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37000,21 +37040,21 @@
 	// <script>
 
 /***/ },
-/* 751 */
+/* 752 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-carousel-item`\">\n  <slot></slot>\n</div>\n";
 
 /***/ },
-/* 752 */
+/* 753 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(753)
+	__vue_script__ = __webpack_require__(754)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Tree/n3Tree.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(760)
+	__vue_template__ = __webpack_require__(761)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -37039,7 +37079,7 @@
 	})()}
 
 /***/ },
-/* 753 */
+/* 754 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37048,7 +37088,7 @@
 	  value: true
 	});
 	
-	var _store = __webpack_require__(754);
+	var _store = __webpack_require__(755);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
@@ -37174,7 +37214,7 @@
 	
 	
 	  components: {
-	    n3TreeNode: __webpack_require__(757)
+	    n3TreeNode: __webpack_require__(758)
 	  },
 	
 	  computed: {
@@ -37241,7 +37281,7 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 754 */
+/* 755 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37254,11 +37294,11 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _node = __webpack_require__(755);
+	var _node = __webpack_require__(756);
 	
 	var _node2 = _interopRequireDefault(_node);
 	
-	var _util = __webpack_require__(756);
+	var _util = __webpack_require__(757);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -37562,7 +37602,7 @@
 	exports.default = Store;
 
 /***/ },
-/* 755 */
+/* 756 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37573,7 +37613,7 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _util = __webpack_require__(756);
+	var _util = __webpack_require__(757);
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -37987,7 +38027,7 @@
 	exports.default = Node;
 
 /***/ },
-/* 756 */
+/* 757 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38013,15 +38053,15 @@
 	};
 
 /***/ },
-/* 757 */
+/* 758 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(758)
+	__vue_script__ = __webpack_require__(759)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Tree/n3TreeNode.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(759)
+	__vue_template__ = __webpack_require__(760)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -38046,7 +38086,7 @@
 	})()}
 
 /***/ },
-/* 758 */
+/* 759 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38055,11 +38095,11 @@
 	  value: true
 	});
 	
-	var _n3CollapseTransition = __webpack_require__(637);
+	var _n3CollapseTransition = __webpack_require__(638);
 	
 	var _n3CollapseTransition2 = _interopRequireDefault(_n3CollapseTransition);
 	
-	var _n3Checkbox = __webpack_require__(583);
+	var _n3Checkbox = __webpack_require__(593);
 	
 	var _n3Checkbox2 = _interopRequireDefault(_n3Checkbox);
 	
@@ -38266,27 +38306,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 759 */
+/* 760 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-tree-node`\">\n  <div \n    @click.stop=\"handleClick\"\n    v-show=\"node.visible\"\n    :class=\"[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']\">\n    <div :class=\"`${prefixCls}-tree-node__content`\"\n      :style=\"{ 'padding-left': (node.level - 1) * 20 + 'px' }\">\n      <span @click.stop=\"handleExpandIconClick\">\n        <n3-icon\n          v-show=\"!node.isLeaf\"\n          :class=\"`${prefixCls}-tree-select-icon`\"\n          :type=\"(!node.isLeaf && expanded) ? tree.openedIcon : tree.closedIcon\"\n        >\n        </n3-icon>\n      </span>\n      <span @click.stop=\"handleUserClick\">\n        <n3-checkbox\n          v-if=\"showCheckbox\"\n          :checked=\"node.checked\"\n          @change=\"handleCheckChange\"\n        >\n        </n3-checkbox>\n      </span>\n      <span\n        :class=\"`${prefixCls}-tree-loading-box`\"\n        v-if=\"node.loading\"\n      >\n        <n3-loading color=\"primary\" size=\"xs\"></n3-loading>\n      </span>\n      <n3-icon :type=\"node.isLeaf ? tree.leafIcon : tree.childIcon\"></n3-icon>\n      <node-content :node=\"node\"></node-content>\n    </div>\n    <n3-collapse-transition>\n      <div v-show=\"expanded\">\n          <div\n            :class=\"`${prefixCls}-tree-children`\"\n            >\n            <n3-tree-node\n              :render-content=\"renderContent\"\n              v-for=\"child in node.childNodes\"\n              :key=\"getNodeKey(child)\"\n              :node=\"child\">\n            </n3-tree-node>\n          </div>\n      </div>\n    </n3-collapse-transition>\n  </div>\n</div>\n";
 
 /***/ },
-/* 760 */
+/* 761 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"n3-tree\">\n  <n3-tree-node\n    v-for=\"child in root.childNodes\"\n    :node=\"child\"\n    :props=\"props\"\n    :key=\"getNodeKey(child)\"\n    :render-content=\"renderContent\">\n  </n3-tree-node>\n  <div v-if=\"!root.childNodes || root.childNodes.length === 0\">\n    <span>{{ emptyText }}</span>\n  </div>\n</div>\n";
 
 /***/ },
-/* 761 */
+/* 762 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(762)
+	__vue_script__ = __webpack_require__(763)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Card/n3Card.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(763)
+	__vue_template__ = __webpack_require__(764)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -38311,7 +38351,7 @@
 	})()}
 
 /***/ },
-/* 762 */
+/* 763 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38356,21 +38396,21 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 763 */
+/* 764 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"classObj\">\n\t<slot></slot>\n</div>\n";
 
 /***/ },
-/* 764 */
+/* 765 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(765)
+	__vue_script__ = __webpack_require__(766)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Rate/n3Rate.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(766)
+	__vue_template__ = __webpack_require__(767)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -38395,7 +38435,7 @@
 	})()}
 
 /***/ },
-/* 765 */
+/* 766 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38685,21 +38725,21 @@
 	// <script>
 
 /***/ },
-/* 766 */
+/* 767 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"`${prefixCls}-rate`\">\n  <span\n    v-for=\"item in max\"\n    :class=\"`${prefixCls}-rate-item`\"\n    @mousemove=\"setCurrentValue(item, $event)\"\n    @mouseleave=\"resetCurrentValue\"\n    @click=\"selectValue(item)\"\n    :style=\"{ cursor: disabled ? 'auto' : 'pointer' }\">\n\n    <n3-icon\n      :type=\"classes[item - 1]\"\n      :class=\"[{ 'hover': hoverIndex === item }, `${prefixCls}-rate-icon`]\"\n      :style=\"getIconStyle(item)\">\n      <n3-icon\n        :type=\"decimalIconClass\"\n        v-if=\"showDecimalIcon(item)\"\n        :class=\"`${prefixCls}-rate-decimal`\"\n        :style=\"decimalStyle\">\n      </n3-icon>\n    </n3-icon>\n  </span>\n  <span v-if=\"showText\" :class=\"`${prefixCls}-rate-text`\" :style=\"{ color: textColor }\">{{ text }}</span>\n</div>\n";
 
 /***/ },
-/* 767 */
+/* 768 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(768)
+	__vue_script__ = __webpack_require__(769)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] src/Uploader/n3Uploader.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(769)
+	__vue_template__ = __webpack_require__(770)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -38724,7 +38764,7 @@
 	})()}
 
 /***/ },
-/* 768 */
+/* 769 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38831,15 +38871,15 @@
 	
 	var _n3Button2 = _interopRequireDefault(_n3Button);
 	
-	var _n3Progress = __webpack_require__(661);
+	var _n3Progress = __webpack_require__(662);
 	
 	var _n3Progress2 = _interopRequireDefault(_n3Progress);
 	
-	var _n3Progressbar = __webpack_require__(658);
+	var _n3Progressbar = __webpack_require__(659);
 	
 	var _n3Progressbar2 = _interopRequireDefault(_n3Progressbar);
 	
-	var _localeMixin = __webpack_require__(612);
+	var _localeMixin = __webpack_require__(581);
 	
 	var _localeMixin2 = _interopRequireDefault(_localeMixin);
 	
@@ -39181,13 +39221,13 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 769 */
+/* 770 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div :class=\"[prefixCls + '-upload']\" ref=\"uploader\">\n  <div v-if=\"type === 'click'\">\n    <label>\n      <input\n        type=\"file\"\n        :name=\"name\"\n        :accept=\"accept\"\n        :id=\"uploadId\"\n        :multiple=\"multiple\"\n        @change=\"onChange($event)\"\n        ref=\"input\"\n      />\n      <slot>\n        <n3-button>\n          <n3-icon type=\"cloud-upload\"></n3-icon>\n          {{getL('click')}}\n        </n3-button>\n      </slot>\n    </label>\n    <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n      <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\n        <div :class=\"[prefixCls + '-upload-item-info']\">\n          <n3-icon type=\"file-text-o\"\n            :class=\"[prefixCls + '-upload-file-icon']\">\n          </n3-icon>\n          <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n          <n3-icon type=\"times\"\n            :class=\"[prefixCls + '-upload-del-info']\"\n            @click.native=\"delFile(index)\">\n          </n3-icon>\n        </div>\n        <n3-progress style=\"padding:0px 4px\">\n          <n3-progressbar\n            type=\"success\"\n            height='3px'\n            :now=\"progress[index]\"\n          ></n3-progressbar>\n        </n3-progress>\n      </div>\n    </div>\n  </div>\n  <div v-if=\"type === 'drag'\"\n       :class=\"[prefixCls + '-upload-drag']\">\n    <div \n      :class=\"[prefixCls + '-upload-drag-container', dragover && (prefixCls + '-upload-is-dragover')]\"\n      :style=\"{width:dragWidth,height:dragHeight}\">\n      <input type=\"file\"\n        :name=\"name\"\n        :id=\"uploadId\"\n        :accept=\"accept\"\n        :multiple=\"multiple\"\n        @change=\"onChange($event)\"\n        ref=\"input\"\n      />\n      <label :for=\"uploadId\"\n          :class=\"[prefixCls + '-upload-drag-area']\">\n      <n3-icon type=\"cloud-upload\" :class=\"[prefixCls + '-upload-drag-icon']\"></n3-icon>\n      <span v-if=\"advanceDrag\">{{getL('drag')}}</span>\n      <span v-if=\"!advanceDrag\">{{getL('nodrag')}}</span>\n    </label>\n    </div>\n    <div :class=\"[prefixCls + '-upload-list']\" v-if=\"showList\">\n      <div :class=\"[prefixCls + '-upload-item']\" v-for=\"(file, index) in uploadList\">\n        <div :class=\"[prefixCls + '-upload-item-info']\">\n          <n3-icon type=\"file-text-o\"\n            :class=\"[prefixCls + '-upload-file-icon']\">\n          </n3-icon>\n          <span :class=\"[prefixCls + '-upload-file-name']\">{{file.name}}</span>\n          <n3-icon type=\"times\"\n            :class=\"[prefixCls + '-upload-del-info']\"\n            @click.native=\"delFile(index)\">\n          </n3-icon>\n        </div>\n        <n3-progress style=\"padding:0px 4px\">\n          <n3-progressbar\n            type=\"success\"\n            height='3px'\n            :now=\"progress[index]\"\n          ></n3-progressbar>\n        </n3-progress>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ },
-/* 770 */
+/* 771 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39258,16 +39298,16 @@
 	};
 
 /***/ },
-/* 771 */
+/* 772 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(772);
+	var content = __webpack_require__(773);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(773)(content, {});
+	var update = __webpack_require__(774)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -39284,7 +39324,7 @@
 	}
 
 /***/ },
-/* 772 */
+/* 773 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(350)();
@@ -39298,7 +39338,7 @@
 
 
 /***/ },
-/* 773 */
+/* 774 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -39550,16 +39590,16 @@
 
 
 /***/ },
-/* 774 */
+/* 775 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _n3Docs = __webpack_require__(775);
+	var _n3Docs = __webpack_require__(776);
 	
 	var _n3Docs2 = _interopRequireDefault(_n3Docs);
 	
-	var _headerDocs = __webpack_require__(779);
+	var _headerDocs = __webpack_require__(780);
 	
 	var _headerDocs2 = _interopRequireDefault(_headerDocs);
 	
@@ -39587,16 +39627,16 @@
 	});
 
 /***/ },
-/* 775 */
+/* 776 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__webpack_require__(776)
-	__vue_script__ = __webpack_require__(778)
+	__webpack_require__(777)
+	__vue_script__ = __webpack_require__(779)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] docs/example_zh/n3Docs.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(962)
+	__vue_template__ = __webpack_require__(963)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -39621,13 +39661,13 @@
 	})()}
 
 /***/ },
-/* 776 */
+/* 777 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(777);
+	var content = __webpack_require__(778);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
@@ -39647,7 +39687,7 @@
 	}
 
 /***/ },
-/* 777 */
+/* 778 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(350)();
@@ -39661,7 +39701,7 @@
 
 
 /***/ },
-/* 778 */
+/* 779 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39674,179 +39714,179 @@
 	
 	var _prismjs2 = _interopRequireDefault(_prismjs);
 	
-	var _headerDocs = __webpack_require__(779);
+	var _headerDocs = __webpack_require__(780);
 	
 	var _headerDocs2 = _interopRequireDefault(_headerDocs);
 	
-	var _n3LayoutDocs = __webpack_require__(782);
+	var _n3LayoutDocs = __webpack_require__(783);
 	
 	var _n3LayoutDocs2 = _interopRequireDefault(_n3LayoutDocs);
 	
-	var _n3IconDocs = __webpack_require__(787);
+	var _n3IconDocs = __webpack_require__(788);
 	
 	var _n3IconDocs2 = _interopRequireDefault(_n3IconDocs);
 	
-	var _n3TagsDocs = __webpack_require__(793);
+	var _n3TagsDocs = __webpack_require__(794);
 	
 	var _n3TagsDocs2 = _interopRequireDefault(_n3TagsDocs);
 	
-	var _n3AlertDocs = __webpack_require__(797);
+	var _n3AlertDocs = __webpack_require__(798);
 	
 	var _n3AlertDocs2 = _interopRequireDefault(_n3AlertDocs);
 	
-	var _n3AccordionDocs = __webpack_require__(803);
+	var _n3AccordionDocs = __webpack_require__(804);
 	
 	var _n3AccordionDocs2 = _interopRequireDefault(_n3AccordionDocs);
 	
-	var _n3CascaderDocs = __webpack_require__(807);
+	var _n3CascaderDocs = __webpack_require__(808);
 	
 	var _n3CascaderDocs2 = _interopRequireDefault(_n3CascaderDocs);
 	
-	var _n3AffixDocs = __webpack_require__(811);
+	var _n3AffixDocs = __webpack_require__(812);
 	
 	var _n3AffixDocs2 = _interopRequireDefault(_n3AffixDocs);
 	
-	var _n3AsideDocs = __webpack_require__(817);
+	var _n3AsideDocs = __webpack_require__(818);
 	
 	var _n3AsideDocs2 = _interopRequireDefault(_n3AsideDocs);
 	
-	var _n3CarouselDocs = __webpack_require__(821);
+	var _n3CarouselDocs = __webpack_require__(822);
 	
 	var _n3CarouselDocs2 = _interopRequireDefault(_n3CarouselDocs);
 	
-	var _n3ButtonsDocs = __webpack_require__(826);
+	var _n3ButtonsDocs = __webpack_require__(827);
 	
 	var _n3ButtonsDocs2 = _interopRequireDefault(_n3ButtonsDocs);
 	
-	var _n3ToastDocs = __webpack_require__(829);
+	var _n3ToastDocs = __webpack_require__(830);
 	
 	var _n3ToastDocs2 = _interopRequireDefault(_n3ToastDocs);
 	
-	var _n3DatepickerDocs = __webpack_require__(833);
+	var _n3DatepickerDocs = __webpack_require__(834);
 	
 	var _n3DatepickerDocs2 = _interopRequireDefault(_n3DatepickerDocs);
 	
-	var _n3TimepickerDocs = __webpack_require__(837);
+	var _n3TimepickerDocs = __webpack_require__(838);
 	
 	var _n3TimepickerDocs2 = _interopRequireDefault(_n3TimepickerDocs);
 	
-	var _n3DatetimepickerDocs = __webpack_require__(841);
+	var _n3DatetimepickerDocs = __webpack_require__(842);
 	
 	var _n3DatetimepickerDocs2 = _interopRequireDefault(_n3DatetimepickerDocs);
 	
-	var _n3DropdownDocs = __webpack_require__(845);
+	var _n3DropdownDocs = __webpack_require__(846);
 	
 	var _n3DropdownDocs2 = _interopRequireDefault(_n3DropdownDocs);
 	
-	var _n3ModalDocs = __webpack_require__(849);
+	var _n3ModalDocs = __webpack_require__(850);
 	
 	var _n3ModalDocs2 = _interopRequireDefault(_n3ModalDocs);
 	
-	var _n3InputDocs = __webpack_require__(853);
+	var _n3InputDocs = __webpack_require__(854);
 	
 	var _n3InputDocs2 = _interopRequireDefault(_n3InputDocs);
 	
-	var _n3InputNumberDocs = __webpack_require__(857);
+	var _n3InputNumberDocs = __webpack_require__(858);
 	
 	var _n3InputNumberDocs2 = _interopRequireDefault(_n3InputNumberDocs);
 	
-	var _n3TextareaDocs = __webpack_require__(861);
+	var _n3TextareaDocs = __webpack_require__(862);
 	
 	var _n3TextareaDocs2 = _interopRequireDefault(_n3TextareaDocs);
 	
-	var _n3NavDocs = __webpack_require__(865);
+	var _n3NavDocs = __webpack_require__(866);
 	
 	var _n3NavDocs2 = _interopRequireDefault(_n3NavDocs);
 	
-	var _n3PopoverDocs = __webpack_require__(869);
+	var _n3PopoverDocs = __webpack_require__(870);
 	
 	var _n3PopoverDocs2 = _interopRequireDefault(_n3PopoverDocs);
 	
-	var _n3ProgressbarDocs = __webpack_require__(873);
+	var _n3ProgressbarDocs = __webpack_require__(874);
 	
 	var _n3ProgressbarDocs2 = _interopRequireDefault(_n3ProgressbarDocs);
 	
-	var _n3SelectDocs = __webpack_require__(879);
+	var _n3SelectDocs = __webpack_require__(880);
 	
 	var _n3SelectDocs2 = _interopRequireDefault(_n3SelectDocs);
 	
-	var _n3SwitchDocs = __webpack_require__(883);
+	var _n3SwitchDocs = __webpack_require__(884);
 	
 	var _n3SwitchDocs2 = _interopRequireDefault(_n3SwitchDocs);
 	
-	var _n3TimelineDocs = __webpack_require__(887);
+	var _n3TimelineDocs = __webpack_require__(888);
 	
 	var _n3TimelineDocs2 = _interopRequireDefault(_n3TimelineDocs);
 	
-	var _n3TabsDocs = __webpack_require__(891);
+	var _n3TabsDocs = __webpack_require__(892);
 	
 	var _n3TabsDocs2 = _interopRequireDefault(_n3TabsDocs);
 	
-	var _n3TooltipDocs = __webpack_require__(895);
+	var _n3TooltipDocs = __webpack_require__(896);
 	
 	var _n3TooltipDocs2 = _interopRequireDefault(_n3TooltipDocs);
 	
-	var _n3TypeaheadDocs = __webpack_require__(899);
+	var _n3TypeaheadDocs = __webpack_require__(900);
 	
 	var _n3TypeaheadDocs2 = _interopRequireDefault(_n3TypeaheadDocs);
 	
-	var _n3StepDocs = __webpack_require__(903);
+	var _n3StepDocs = __webpack_require__(904);
 	
 	var _n3StepDocs2 = _interopRequireDefault(_n3StepDocs);
 	
-	var _n3SliderDocs = __webpack_require__(906);
+	var _n3SliderDocs = __webpack_require__(907);
 	
 	var _n3SliderDocs2 = _interopRequireDefault(_n3SliderDocs);
 	
-	var _n3LoadingDocs = __webpack_require__(910);
+	var _n3LoadingDocs = __webpack_require__(911);
 	
 	var _n3LoadingDocs2 = _interopRequireDefault(_n3LoadingDocs);
 	
-	var _n3PageDocs = __webpack_require__(913);
+	var _n3PageDocs = __webpack_require__(914);
 	
 	var _n3PageDocs2 = _interopRequireDefault(_n3PageDocs);
 	
-	var _n3DataTableDocs = __webpack_require__(917);
+	var _n3DataTableDocs = __webpack_require__(918);
 	
 	var _n3DataTableDocs2 = _interopRequireDefault(_n3DataTableDocs);
 	
-	var _n3BreadcrumbDocs = __webpack_require__(921);
+	var _n3BreadcrumbDocs = __webpack_require__(922);
 	
 	var _n3BreadcrumbDocs2 = _interopRequireDefault(_n3BreadcrumbDocs);
 	
-	var _n3MultipleInputDocs = __webpack_require__(924);
+	var _n3MultipleInputDocs = __webpack_require__(925);
 	
 	var _n3MultipleInputDocs2 = _interopRequireDefault(_n3MultipleInputDocs);
 	
-	var _n3TreeDocs = __webpack_require__(928);
+	var _n3TreeDocs = __webpack_require__(929);
 	
 	var _n3TreeDocs2 = _interopRequireDefault(_n3TreeDocs);
 	
-	var _n3RateDocs = __webpack_require__(932);
+	var _n3RateDocs = __webpack_require__(933);
 	
 	var _n3RateDocs2 = _interopRequireDefault(_n3RateDocs);
 	
-	var _n3UploaderDocs = __webpack_require__(936);
+	var _n3UploaderDocs = __webpack_require__(937);
 	
 	var _n3UploaderDocs2 = _interopRequireDefault(_n3UploaderDocs);
 	
-	var _n3FormDocs = __webpack_require__(940);
+	var _n3FormDocs = __webpack_require__(941);
 	
 	var _n3FormDocs2 = _interopRequireDefault(_n3FormDocs);
 	
-	var _n3CheckboxDocs = __webpack_require__(944);
+	var _n3CheckboxDocs = __webpack_require__(945);
 	
 	var _n3CheckboxDocs2 = _interopRequireDefault(_n3CheckboxDocs);
 	
-	var _n3RadioDocs = __webpack_require__(948);
+	var _n3RadioDocs = __webpack_require__(949);
 	
 	var _n3RadioDocs2 = _interopRequireDefault(_n3RadioDocs);
 	
-	var _n3CardDocs = __webpack_require__(952);
+	var _n3CardDocs = __webpack_require__(953);
 	
 	var _n3CardDocs2 = _interopRequireDefault(_n3CardDocs);
 	
-	var _n3AnimateDocs = __webpack_require__(956);
+	var _n3AnimateDocs = __webpack_require__(957);
 	
 	var _n3AnimateDocs2 = _interopRequireDefault(_n3AnimateDocs);
 	
@@ -40068,15 +40108,15 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 779 */
+/* 780 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(780)
+	__vue_script__ = __webpack_require__(781)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
 	  console.warn("[vue-loader] docs/example_zh/headerDocs.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(781)
+	__vue_template__ = __webpack_require__(782)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -40101,7 +40141,7 @@
 	})()}
 
 /***/ },
-/* 780 */
+/* 781 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40136,111 +40176,25 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 781 */
+/* 782 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<header class=\"bs-docs-nav\" id=\"top\" >\n  <n3-container fluid style=\"width:92%\">\n    <n3-nav mode=\"horizontal\">\n      <n3-nav-item index=\"1\">\n        <a class=\"link\" href=\"./index.html\" >N3</a>\n      </n3-nav-item>\n       <n3-nav-item index=\"2\">\n        <a class=\"link\" href=\"./component_en.html\">中文</a>\n      </n3-nav-item>\n    </n3-nav>\n  </n3-container>\n</header>\n";
 
 /***/ },
-/* 782 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(783);
-
-/***/ },
 /* 783 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __vue_script__, __vue_template__
-	var __vue_styles__ = {}
-	__webpack_require__(784)
-	__vue_template__ = __webpack_require__(786)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
-	if (__vue_template__) {
-	__vue_options__.template = __vue_template__
-	}
-	if (!__vue_options__.computed) __vue_options__.computed = {}
-	Object.keys(__vue_styles__).forEach(function (key) {
-	var module = __vue_styles__[key]
-	__vue_options__.computed[key] = function () { return module }
-	})
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  var id = "_v-33791d9b/n3LayoutDocs-1.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
+	module.exports = __webpack_require__(784);
 
 /***/ },
 /* 784 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(785);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	if(content.locals) module.exports = content.locals;
-	// add the styles to the DOM
-	var update = __webpack_require__(351)("f989c192", content, false);
-	// Hot Module Replacement
-	if(false) {
-	 // When the styles change, update the <style> tags
-	 if(!content.locals) {
-	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-33791d9b&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-1.vue", function() {
-	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-33791d9b&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-1.vue");
-	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-	     update(newContent);
-	   });
-	 }
-	 // When the module is disposed, remove the <style> tags
-	 module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 785 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(350)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.context[_v-33791d9b]{\n  padding-top: 10px;\n  padding-bottom: 10px;\n  background-color: rgb(101, 212, 204);\n  border: 1px solid #fff;\n  text-align: center;\n  font-size: 14;\n  color: #fff;\n  font-weight: bold;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3LayoutDocs-1.vue?1676b34e"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA6JA;EACA,kBAAA;EACA,qBAAA;EACA,qCAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;CACA","file":"n3LayoutDocs-1.vue","sourcesContent":["<template><section><template>\n<h3>布局</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-container fluid=\"\">\n    <n3-row>\n        <n3-column :col=\"8\" class=\"context\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-container</span> <span class=\"hljs-attr\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"8\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"4\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-container</span>&gt;</span>\n</code></pre>\n<h3>n3-container参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>fluid</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否流式布局</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-column参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>col</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>占的列数</td>\n</tr>\n<tr>\n<td>mode</td>\n<td><code>String</code></td>\n<td><code>md</code></td>\n<td>布局模式 <code>xs</code>(手机) <code>sm</code>(平板) <code>md</code>(桌面) <code>lg</code>(大屏幕)</td>\n</tr>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>偏移值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section></template>\n<style scoped>\n  .context{\n    padding-top: 10px;\n    padding-bottom: 10px;\n    background-color: rgb(101, 212, 204);\n    border: 1px solid #fff;\n    text-align: center;\n    font-size: 14;\n    color: #fff;\n    font-weight: bold;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 786 */
-/***/ function(module, exports) {
-
-	module.exports = "<section _v-33791d9b=\"\"><template>\n<h3 _v-33791d9b=\"\">布局</h3>\n<div class=\"bs-docs-section\" _v-33791d9b=\"\">\n<div class=\"bs-example\" _v-33791d9b=\"\">\n  <n3-container fluid=\"\" _v-33791d9b=\"\">\n    <n3-row _v-33791d9b=\"\">\n        <n3-column :col=\"8\" class=\"context\" _v-33791d9b=\"\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\" _v-33791d9b=\"\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row _v-33791d9b=\"\">\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-33791d9b=\"\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre _v-33791d9b=\"\"><code class=\"language-html\" _v-33791d9b=\"\"><span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-container</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"8\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"4\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">:col</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-33791d9b=\"\">class</span>=<span class=\"hljs-string\" _v-33791d9b=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\" _v-33791d9b=\"\">&lt;/<span class=\"hljs-name\" _v-33791d9b=\"\">n3-container</span>&gt;</span>\n</code></pre>\n<h3 _v-33791d9b=\"\">n3-container参数</h3>\n<table _v-33791d9b=\"\">\n<thead _v-33791d9b=\"\">\n<tr _v-33791d9b=\"\">\n<th _v-33791d9b=\"\">参数</th>\n<th _v-33791d9b=\"\">类型</th>\n<th _v-33791d9b=\"\">默认值</th>\n<th _v-33791d9b=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-33791d9b=\"\">\n<tr _v-33791d9b=\"\">\n<td _v-33791d9b=\"\">fluid</td>\n<td _v-33791d9b=\"\"><code _v-33791d9b=\"\">Boolean</code></td>\n<td _v-33791d9b=\"\"><code _v-33791d9b=\"\">false</code></td>\n<td _v-33791d9b=\"\">是否流式布局</td>\n</tr>\n</tbody>\n</table>\n<h3 _v-33791d9b=\"\">n3-column参数</h3>\n<table _v-33791d9b=\"\">\n<thead _v-33791d9b=\"\">\n<tr _v-33791d9b=\"\">\n<th _v-33791d9b=\"\">参数</th>\n<th _v-33791d9b=\"\">类型</th>\n<th _v-33791d9b=\"\">默认值</th>\n<th _v-33791d9b=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-33791d9b=\"\">\n<tr _v-33791d9b=\"\">\n<td _v-33791d9b=\"\">col</td>\n<td _v-33791d9b=\"\"><code _v-33791d9b=\"\">Number</code></td>\n<td _v-33791d9b=\"\">-</td>\n<td _v-33791d9b=\"\">占的列数</td>\n</tr>\n<tr _v-33791d9b=\"\">\n<td _v-33791d9b=\"\">mode</td>\n<td _v-33791d9b=\"\"><code _v-33791d9b=\"\">String</code></td>\n<td _v-33791d9b=\"\"><code _v-33791d9b=\"\">md</code></td>\n<td _v-33791d9b=\"\">布局模式 <code _v-33791d9b=\"\">xs</code>(手机) <code _v-33791d9b=\"\">sm</code>(平板) <code _v-33791d9b=\"\">md</code>(桌面) <code _v-33791d9b=\"\">lg</code>(大屏幕)</td>\n</tr>\n<tr _v-33791d9b=\"\">\n<td _v-33791d9b=\"\">offset</td>\n<td _v-33791d9b=\"\"><code _v-33791d9b=\"\">Number</code></td>\n<td _v-33791d9b=\"\">-</td>\n<td _v-33791d9b=\"\">偏移值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
-
-/***/ },
-/* 787 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(788);
-
-/***/ },
-/* 788 */
-/***/ function(module, exports, __webpack_require__) {
-
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__webpack_require__(789)
-	__vue_script__ = __webpack_require__(791)
-	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3IconDocs-2.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(792)
+	__webpack_require__(785)
+	__vue_template__ = __webpack_require__(787)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -40256,7 +40210,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-0a4f3e2b/n3IconDocs-2.vue"
+	  var id = "_v-40eee085/n3LayoutDocs-43.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -40265,23 +40219,23 @@
 	})()}
 
 /***/ },
-/* 789 */
+/* 785 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(790);
+	var content = __webpack_require__(786);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(351)("1bf3ddc0", content, false);
+	var update = __webpack_require__(351)("f4ffe7da", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-0a4f3e2b&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-2.vue", function() {
-	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-0a4f3e2b&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-2.vue");
+	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-40eee085&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-43.vue", function() {
+	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-40eee085&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-43.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -40291,7 +40245,7 @@
 	}
 
 /***/ },
-/* 790 */
+/* 786 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(350)();
@@ -40299,13 +40253,99 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.row-ex div[_v-0a4f3e2b] {\n  text-align: left;\n  margin-top: 10px;\n}\n.row-ex i[_v-0a4f3e2b] {\n  margin-right: 10px;\n}\n.row-ex span[_v-0a4f3e2b] {\n  color:gray;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3IconDocs-2.vue?79365283"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmGA;EACA,iBAAA;EACA,iBAAA;CACA;AACA;EACA,mBAAA;CACA;AACA;EACA,WAAA;CACA","file":"n3IconDocs-2.vue","sourcesContent":["<template><section><template>\n<h3>图标</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h3>FontAwesome 4.0 图标列表</h3>\n<h4>11 New Icons in 4.0</h4>\n<hr>\n<n3-container>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n    <br>\n  <h4>Web Application Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <h4>Form Control Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Currency Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Text Edit Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Directional Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Video Player Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Brand Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Medical Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-icon</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>图标类型名</td>\n</tr>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td>图标尺寸</td>\n</tr>\n<tr>\n<td>color</td>\n<td><code>String</code></td>\n<td></td>\n<td>颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .row-ex div {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i {\n    margin-right: 10px;\n  }\n  .row-ex span {\n    color:gray;\n  }\n</style>\n<script>\nexport default {\n  data () {\n    return {\n    newfont:['rub','ruble','rouble','pagelines','stack-exchange','arrow-circle-o-right','arrow-circle-o-left','caret-square-o-left','toggle-left','dot-circle-o','wheelchair','vimeo-square','try','turkish-lira','plus-square-o'],\n    webfont:['adjust','anchor','archive','arrows','arrows-h','arrows-v','asterisk','ban','bar-chart-o','barcode','bars','beer','bell','bell-o','bolt','book','bookmark','bookmark-o','briefcase','bug','building-o','bullhorn','bullseye','calendar','calendar-o','camera','camera-retro','caret-square-o-down','caret-square-o-left','caret-square-o-right','caret-square-o-up','certificate','check','check-circle','check-circle-o','check-square','check-square-o','circle','circle-o','clock-o','cloud','cloud-download','cloud-upload','code','code-fork','coffee','cog','cogs','comment','comment-o','comments','comments-o','compass','credit-card','crop','crosshairs','cutlery','dashboard','desktop','dot-circle-o','download','edit','ellipsis-h','ellipsis-v','envelope','envelope-o','eraser','exchange','exclamation','exclamation-circle','exclamation-triangle','external-link','external-link-square','eye','eye-slash','female','fighter-jet','film','filter','fire','fire-extinguisher','flag','flag-checkered','flag-o','flash','flask','folder','folder-o','folder-open','folder-open-o','frown-o','gamepad','gavel','gear','gears','gift','glass','globe','group','hdd-o','headphones','heart','heart-o','home','inbox','info','info-circle','key','keyboard-o','laptop','leaf','legal','lemon-o','level-down','level-up','lightbulb-o','location-arrow','lock','magic','magnet','mail-forward','mail-reply','mail-reply-all','male','map-marker','meh-o','microphone','microphone-slash','minus','minus-circle','minus-square','minus-square-o','mobile','mobile-phone','money','moon-o','music','pencil','pencil-square','pencil-square-o','phone','phone-square','picture-o','plane','plus','plus-circle','plus-square','plus-square-o','power-off','print','puzzle-piece','qrcode','question','question-circle','quote-left','quote-right','random','refresh','reply','reply-all','retweet','road','rocket','rss','rss-square','search','search-minus','search-plus','share','share-square','share-square-o','shield','shopping-cart','sign-in','sign-out','signal','sitemap','smile-o','sort','sort-alpha-asc','sort-alpha-desc','sort-amount-asc','sort-amount-desc','sort-asc','sort-desc','sort-down','sort-numeric-asc','sort-numeric-desc','sort-up','spinner','square','square-o','star','star-half','star-half-empty','star-half-full','star-half-o','star-o','subscript','suitcase','sun-o','superscript','tablet','tachometer','tag','tags','tasks','terminal','thumb-tack','thumbs-down','thumbs-o-down','thumbs-o-up','thumbs-up','ticket','times','times-circle','times-circle-o','tint','toggle-down','toggle-left','toggle-right','toggle-up','trash-o','trophy','truck','umbrella','unlock','unlock-alt','unsorted','upload','user','users','video-camera','volume-down','volume-off','volume-up','warning','wheelchair','wrench'],\n      formfont:['check-square','check-square-o','circle','circle-o','dot-circle-o','minus-square','minus-square-o','plus-square','plus-square-o','square','square-o'],\n      currencyfont:['bitcoin','btc','cny','dollar','eur','euro','gbp','inr','jpy','krw','money','rmb','rouble','rub','ruble','rupee','try','turkish-lira','usd','won','yen' ],\n      textfont:['align-center','align-justify','align-left','align-right','bold','chain','chain-broken','clipboard','columns','copy','cut','dedent','eraser','file','file-o','file-text','file-text-o','files-o','floppy-o','font','indent','italic','link','list','list-alt','list-ol','list-ul','outdent','paperclip','paste','repeat','rotate-left','rotate-right','save','scissors','strikethrough','table','text-height','text-width','th','th-large','th-list','underline','undo','unlink'],\n      directionalfont:['angle-double-down','angle-double-left','angle-double-right','angle-double-up','angle-down','angle-left','angle-right','angle-up','arrow-circle-down','arrow-circle-left','arrow-circle-o-down','arrow-circle-o-left','arrow-circle-o-right','arrow-circle-o-up','arrow-circle-right','arrow-circle-up','arrow-down','arrow-left','arrow-right','arrow-up','arrows','arrows-alt','arrows-h','arrows-v','caret-down','caret-left','caret-right','caret-square-o-down','caret-square-o-left','caret-square-o-right','caret-square-o-up','caret-up','chevron-circle-down','chevron-circle-left','chevron-circle-right','chevron-circle-up','chevron-down','chevron-left','chevron-right','chevron-up','hand-o-down','hand-o-left','hand-o-right','hand-o-up','long-arrow-down','long-arrow-left','long-arrow-right','long-arrow-up','toggle-down','toggle-left','toggle-right','toggle-up'],\n      videofont:['arrows-alt','backward','compress','eject','expand','fast-backward','fast-forward','forward','pause','play','play-circle','play-circle-o','step-backward','step-forward','stop','youtube-play'],\n      brandfont:['adn','android','apple','bitbucket','bitbucket-square','bitcoin','btc','css3','dribbble','dropbox','facebook','facebook-square','flickr','foursquare','github','github-alt','github-square','gittip','google-plus','google-plus-square','html5','instagram','linkedin','linkedin-square','linux','maxcdn','pagelines','pinterest','pinterest-square','renren','skype','stack-exchange','stack-overflow','trello','tumblr','tumblr-square','twitter','twitter-square','vimeo-square','vk','weibo','windows','xing','xing-square','youtube','youtube-play','youtube-square'],\n      medicalfont:['ambulance','h-square','hospital-o','medkit','plus-square','stethoscope','user-md','wheelchair']\n      }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.context[_v-40eee085]{\n  padding-top: 10px;\n  padding-bottom: 10px;\n  background-color: rgb(101, 212, 204);\n  border: 1px solid #fff;\n  text-align: center;\n  font-size: 14;\n  color: #fff;\n  font-weight: bold;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3LayoutDocs-43.vue?060d2a61"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA6JA;EACA,kBAAA;EACA,qBAAA;EACA,qCAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;CACA","file":"n3LayoutDocs-43.vue","sourcesContent":["<template><section><template>\n<h3>布局</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-container fluid=\"\">\n    <n3-row>\n        <n3-column :col=\"8\" class=\"context\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-container</span> <span class=\"hljs-attr\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"8\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"4\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-container</span>&gt;</span>\n</code></pre>\n<h3>n3-container参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>fluid</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否流式布局</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-column参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>col</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>占的列数</td>\n</tr>\n<tr>\n<td>mode</td>\n<td><code>String</code></td>\n<td><code>md</code></td>\n<td>布局模式 <code>xs</code>(手机) <code>sm</code>(平板) <code>md</code>(桌面) <code>lg</code>(大屏幕)</td>\n</tr>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>偏移值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section></template>\n<style scoped>\n  .context{\n    padding-top: 10px;\n    padding-bottom: 10px;\n    background-color: rgb(101, 212, 204);\n    border: 1px solid #fff;\n    text-align: center;\n    font-size: 14;\n    color: #fff;\n    font-weight: bold;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
+/* 787 */
+/***/ function(module, exports) {
+
+	module.exports = "<section _v-40eee085=\"\"><template>\n<h3 _v-40eee085=\"\">布局</h3>\n<div class=\"bs-docs-section\" _v-40eee085=\"\">\n<div class=\"bs-example\" _v-40eee085=\"\">\n  <n3-container fluid=\"\" _v-40eee085=\"\">\n    <n3-row _v-40eee085=\"\">\n        <n3-column :col=\"8\" class=\"context\" _v-40eee085=\"\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\" _v-40eee085=\"\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row _v-40eee085=\"\">\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-40eee085=\"\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre _v-40eee085=\"\"><code class=\"language-html\" _v-40eee085=\"\"><span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-container</span> <span class=\"hljs-attr\" _v-40eee085=\"\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"8\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"4\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span> <span class=\"hljs-attr\" _v-40eee085=\"\">:col</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-40eee085=\"\">class</span>=<span class=\"hljs-string\" _v-40eee085=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\" _v-40eee085=\"\">&lt;/<span class=\"hljs-name\" _v-40eee085=\"\">n3-container</span>&gt;</span>\n</code></pre>\n<h3 _v-40eee085=\"\">n3-container参数</h3>\n<table _v-40eee085=\"\">\n<thead _v-40eee085=\"\">\n<tr _v-40eee085=\"\">\n<th _v-40eee085=\"\">参数</th>\n<th _v-40eee085=\"\">类型</th>\n<th _v-40eee085=\"\">默认值</th>\n<th _v-40eee085=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-40eee085=\"\">\n<tr _v-40eee085=\"\">\n<td _v-40eee085=\"\">fluid</td>\n<td _v-40eee085=\"\"><code _v-40eee085=\"\">Boolean</code></td>\n<td _v-40eee085=\"\"><code _v-40eee085=\"\">false</code></td>\n<td _v-40eee085=\"\">是否流式布局</td>\n</tr>\n</tbody>\n</table>\n<h3 _v-40eee085=\"\">n3-column参数</h3>\n<table _v-40eee085=\"\">\n<thead _v-40eee085=\"\">\n<tr _v-40eee085=\"\">\n<th _v-40eee085=\"\">参数</th>\n<th _v-40eee085=\"\">类型</th>\n<th _v-40eee085=\"\">默认值</th>\n<th _v-40eee085=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-40eee085=\"\">\n<tr _v-40eee085=\"\">\n<td _v-40eee085=\"\">col</td>\n<td _v-40eee085=\"\"><code _v-40eee085=\"\">Number</code></td>\n<td _v-40eee085=\"\">-</td>\n<td _v-40eee085=\"\">占的列数</td>\n</tr>\n<tr _v-40eee085=\"\">\n<td _v-40eee085=\"\">mode</td>\n<td _v-40eee085=\"\"><code _v-40eee085=\"\">String</code></td>\n<td _v-40eee085=\"\"><code _v-40eee085=\"\">md</code></td>\n<td _v-40eee085=\"\">布局模式 <code _v-40eee085=\"\">xs</code>(手机) <code _v-40eee085=\"\">sm</code>(平板) <code _v-40eee085=\"\">md</code>(桌面) <code _v-40eee085=\"\">lg</code>(大屏幕)</td>\n</tr>\n<tr _v-40eee085=\"\">\n<td _v-40eee085=\"\">offset</td>\n<td _v-40eee085=\"\"><code _v-40eee085=\"\">Number</code></td>\n<td _v-40eee085=\"\">-</td>\n<td _v-40eee085=\"\">偏移值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
+
+/***/ },
+/* 788 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(789);
+
+/***/ },
+/* 789 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	var __vue_styles__ = {}
+	__webpack_require__(790)
+	__vue_script__ = __webpack_require__(792)
+	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3IconDocs-46.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(793)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
+	if (__vue_template__) {
+	__vue_options__.template = __vue_template__
+	}
+	if (!__vue_options__.computed) __vue_options__.computed = {}
+	Object.keys(__vue_styles__).forEach(function (key) {
+	var module = __vue_styles__[key]
+	__vue_options__.computed[key] = function () { return module }
+	})
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "_v-43523fd9/n3IconDocs-46.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 790 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(791);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	if(content.locals) module.exports = content.locals;
+	// add the styles to the DOM
+	var update = __webpack_require__(351)("3c196f7f", content, false);
+	// Hot Module Replacement
+	if(false) {
+	 // When the styles change, update the <style> tags
+	 if(!content.locals) {
+	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-43523fd9&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-46.vue", function() {
+	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-43523fd9&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-46.vue");
+	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+	     update(newContent);
+	   });
+	 }
+	 // When the module is disposed, remove the <style> tags
+	 module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
 /* 791 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(350)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.row-ex div[_v-43523fd9] {\n  text-align: left;\n  margin-top: 10px;\n}\n.row-ex i[_v-43523fd9] {\n  margin-right: 10px;\n}\n.row-ex span[_v-43523fd9] {\n  color:gray;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3IconDocs-46.vue?fc21ba92"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmGA;EACA,iBAAA;EACA,iBAAA;CACA;AACA;EACA,mBAAA;CACA;AACA;EACA,WAAA;CACA","file":"n3IconDocs-46.vue","sourcesContent":["<template><section><template>\n<h3>图标</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h3>FontAwesome 4.0 图标列表</h3>\n<h4>11 New Icons in 4.0</h4>\n<hr>\n<n3-container>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n    <br>\n  <h4>Web Application Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <h4>Form Control Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Currency Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Text Edit Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Directional Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Video Player Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Brand Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Medical Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-icon</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>图标类型名</td>\n</tr>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td>图标尺寸</td>\n</tr>\n<tr>\n<td>color</td>\n<td><code>String</code></td>\n<td></td>\n<td>颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .row-ex div {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i {\n    margin-right: 10px;\n  }\n  .row-ex span {\n    color:gray;\n  }\n</style>\n<script>\nexport default {\n  data () {\n    return {\n    newfont:['rub','ruble','rouble','pagelines','stack-exchange','arrow-circle-o-right','arrow-circle-o-left','caret-square-o-left','toggle-left','dot-circle-o','wheelchair','vimeo-square','try','turkish-lira','plus-square-o'],\n    webfont:['adjust','anchor','archive','arrows','arrows-h','arrows-v','asterisk','ban','bar-chart-o','barcode','bars','beer','bell','bell-o','bolt','book','bookmark','bookmark-o','briefcase','bug','building-o','bullhorn','bullseye','calendar','calendar-o','camera','camera-retro','caret-square-o-down','caret-square-o-left','caret-square-o-right','caret-square-o-up','certificate','check','check-circle','check-circle-o','check-square','check-square-o','circle','circle-o','clock-o','cloud','cloud-download','cloud-upload','code','code-fork','coffee','cog','cogs','comment','comment-o','comments','comments-o','compass','credit-card','crop','crosshairs','cutlery','dashboard','desktop','dot-circle-o','download','edit','ellipsis-h','ellipsis-v','envelope','envelope-o','eraser','exchange','exclamation','exclamation-circle','exclamation-triangle','external-link','external-link-square','eye','eye-slash','female','fighter-jet','film','filter','fire','fire-extinguisher','flag','flag-checkered','flag-o','flash','flask','folder','folder-o','folder-open','folder-open-o','frown-o','gamepad','gavel','gear','gears','gift','glass','globe','group','hdd-o','headphones','heart','heart-o','home','inbox','info','info-circle','key','keyboard-o','laptop','leaf','legal','lemon-o','level-down','level-up','lightbulb-o','location-arrow','lock','magic','magnet','mail-forward','mail-reply','mail-reply-all','male','map-marker','meh-o','microphone','microphone-slash','minus','minus-circle','minus-square','minus-square-o','mobile','mobile-phone','money','moon-o','music','pencil','pencil-square','pencil-square-o','phone','phone-square','picture-o','plane','plus','plus-circle','plus-square','plus-square-o','power-off','print','puzzle-piece','qrcode','question','question-circle','quote-left','quote-right','random','refresh','reply','reply-all','retweet','road','rocket','rss','rss-square','search','search-minus','search-plus','share','share-square','share-square-o','shield','shopping-cart','sign-in','sign-out','signal','sitemap','smile-o','sort','sort-alpha-asc','sort-alpha-desc','sort-amount-asc','sort-amount-desc','sort-asc','sort-desc','sort-down','sort-numeric-asc','sort-numeric-desc','sort-up','spinner','square','square-o','star','star-half','star-half-empty','star-half-full','star-half-o','star-o','subscript','suitcase','sun-o','superscript','tablet','tachometer','tag','tags','tasks','terminal','thumb-tack','thumbs-down','thumbs-o-down','thumbs-o-up','thumbs-up','ticket','times','times-circle','times-circle-o','tint','toggle-down','toggle-left','toggle-right','toggle-up','trash-o','trophy','truck','umbrella','unlock','unlock-alt','unsorted','upload','user','users','video-camera','volume-down','volume-off','volume-up','warning','wheelchair','wrench'],\n      formfont:['check-square','check-square-o','circle','circle-o','dot-circle-o','minus-square','minus-square-o','plus-square','plus-square-o','square','square-o'],\n      currencyfont:['bitcoin','btc','cny','dollar','eur','euro','gbp','inr','jpy','krw','money','rmb','rouble','rub','ruble','rupee','try','turkish-lira','usd','won','yen' ],\n      textfont:['align-center','align-justify','align-left','align-right','bold','chain','chain-broken','clipboard','columns','copy','cut','dedent','eraser','file','file-o','file-text','file-text-o','files-o','floppy-o','font','indent','italic','link','list','list-alt','list-ol','list-ul','outdent','paperclip','paste','repeat','rotate-left','rotate-right','save','scissors','strikethrough','table','text-height','text-width','th','th-large','th-list','underline','undo','unlink'],\n      directionalfont:['angle-double-down','angle-double-left','angle-double-right','angle-double-up','angle-down','angle-left','angle-right','angle-up','arrow-circle-down','arrow-circle-left','arrow-circle-o-down','arrow-circle-o-left','arrow-circle-o-right','arrow-circle-o-up','arrow-circle-right','arrow-circle-up','arrow-down','arrow-left','arrow-right','arrow-up','arrows','arrows-alt','arrows-h','arrows-v','caret-down','caret-left','caret-right','caret-square-o-down','caret-square-o-left','caret-square-o-right','caret-square-o-up','caret-up','chevron-circle-down','chevron-circle-left','chevron-circle-right','chevron-circle-up','chevron-down','chevron-left','chevron-right','chevron-up','hand-o-down','hand-o-left','hand-o-right','hand-o-up','long-arrow-down','long-arrow-left','long-arrow-right','long-arrow-up','toggle-down','toggle-left','toggle-right','toggle-up'],\n      videofont:['arrows-alt','backward','compress','eject','expand','fast-backward','fast-forward','forward','pause','play','play-circle','play-circle-o','step-backward','step-forward','stop','youtube-play'],\n      brandfont:['adn','android','apple','bitbucket','bitbucket-square','bitcoin','btc','css3','dribbble','dropbox','facebook','facebook-square','flickr','foursquare','github','github-alt','github-square','gittip','google-plus','google-plus-square','html5','instagram','linkedin','linkedin-square','linux','maxcdn','pagelines','pinterest','pinterest-square','renren','skype','stack-exchange','stack-overflow','trello','tumblr','tumblr-square','twitter','twitter-square','vimeo-square','vk','weibo','windows','xing','xing-square','youtube','youtube-play','youtube-square'],\n      medicalfont:['ambulance','h-square','hospital-o','medkit','plus-square','stethoscope','user-md','wheelchair']\n      }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 792 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40443,27 +40483,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 792 */
+/* 793 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-0a4f3e2b=\"\"><template>\n<h3 _v-0a4f3e2b=\"\">图标</h3>\n<div class=\"bs-docs-section\" _v-0a4f3e2b=\"\">\n<div class=\"bs-example\" _v-0a4f3e2b=\"\">\n<h3 _v-0a4f3e2b=\"\">FontAwesome 4.0 图标列表</h3>\n<h4 _v-0a4f3e2b=\"\">11 New Icons in 4.0</h4>\n<hr _v-0a4f3e2b=\"\">\n<n3-container _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-0a4f3e2b=\"\">\n  <h4 _v-0a4f3e2b=\"\">Web Application Icons</h4>\n  <hr _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-0a4f3e2b=\"\">Form Control Icons</h4>\n  <hr _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0a4f3e2b=\"\">\n  <h4 _v-0a4f3e2b=\"\">Currency Icons</h4>\n  <hr _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0a4f3e2b=\"\">\n  <h4 _v-0a4f3e2b=\"\">Text Edit Icons</h4>\n  <hr _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0a4f3e2b=\"\">\n  <h4 _v-0a4f3e2b=\"\">Directional Icons</h4>\n  <hr _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0a4f3e2b=\"\">\n  <h4 _v-0a4f3e2b=\"\">Video Player Icons</h4>\n  <hr _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0a4f3e2b=\"\">\n  <h4 _v-0a4f3e2b=\"\">Brand Icons</h4>\n  <hr _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-0a4f3e2b=\"\">\n  <h4 _v-0a4f3e2b=\"\">Medical Icons</h4>\n  <hr _v-0a4f3e2b=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-0a4f3e2b=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-0a4f3e2b=\"\"><n3-icon :type=\"font\" _v-0a4f3e2b=\"\"></n3-icon><span _v-0a4f3e2b=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-0a4f3e2b=\"\"><code class=\"language-html\" _v-0a4f3e2b=\"\"><span class=\"hljs-tag\" _v-0a4f3e2b=\"\">&lt;<span class=\"hljs-name\" _v-0a4f3e2b=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-0a4f3e2b=\"\">type</span>=<span class=\"hljs-string\" _v-0a4f3e2b=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-0a4f3e2b=\"\">&lt;/<span class=\"hljs-name\" _v-0a4f3e2b=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-0a4f3e2b=\"\">参数</h3>\n<table _v-0a4f3e2b=\"\">\n<thead _v-0a4f3e2b=\"\">\n<tr _v-0a4f3e2b=\"\">\n<th _v-0a4f3e2b=\"\">参数名</th>\n<th _v-0a4f3e2b=\"\">类型</th>\n<th _v-0a4f3e2b=\"\">默认值</th>\n<th _v-0a4f3e2b=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-0a4f3e2b=\"\">\n<tr _v-0a4f3e2b=\"\">\n<td _v-0a4f3e2b=\"\">type</td>\n<td _v-0a4f3e2b=\"\"><code _v-0a4f3e2b=\"\">String</code></td>\n<td _v-0a4f3e2b=\"\"></td>\n<td _v-0a4f3e2b=\"\">图标类型名</td>\n</tr>\n<tr _v-0a4f3e2b=\"\">\n<td _v-0a4f3e2b=\"\">size</td>\n<td _v-0a4f3e2b=\"\"><code _v-0a4f3e2b=\"\">String</code></td>\n<td _v-0a4f3e2b=\"\"></td>\n<td _v-0a4f3e2b=\"\">图标尺寸</td>\n</tr>\n<tr _v-0a4f3e2b=\"\">\n<td _v-0a4f3e2b=\"\">color</td>\n<td _v-0a4f3e2b=\"\"><code _v-0a4f3e2b=\"\">String</code></td>\n<td _v-0a4f3e2b=\"\"></td>\n<td _v-0a4f3e2b=\"\">颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
-
-/***/ },
-/* 793 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(794);
+	module.exports = "<section _v-43523fd9=\"\"><template>\n<h3 _v-43523fd9=\"\">图标</h3>\n<div class=\"bs-docs-section\" _v-43523fd9=\"\">\n<div class=\"bs-example\" _v-43523fd9=\"\">\n<h3 _v-43523fd9=\"\">FontAwesome 4.0 图标列表</h3>\n<h4 _v-43523fd9=\"\">11 New Icons in 4.0</h4>\n<hr _v-43523fd9=\"\">\n<n3-container _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-43523fd9=\"\">\n  <h4 _v-43523fd9=\"\">Web Application Icons</h4>\n  <hr _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-43523fd9=\"\">Form Control Icons</h4>\n  <hr _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-43523fd9=\"\">\n  <h4 _v-43523fd9=\"\">Currency Icons</h4>\n  <hr _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-43523fd9=\"\">\n  <h4 _v-43523fd9=\"\">Text Edit Icons</h4>\n  <hr _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-43523fd9=\"\">\n  <h4 _v-43523fd9=\"\">Directional Icons</h4>\n  <hr _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-43523fd9=\"\">\n  <h4 _v-43523fd9=\"\">Video Player Icons</h4>\n  <hr _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-43523fd9=\"\">\n  <h4 _v-43523fd9=\"\">Brand Icons</h4>\n  <hr _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-43523fd9=\"\">\n  <h4 _v-43523fd9=\"\">Medical Icons</h4>\n  <hr _v-43523fd9=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-43523fd9=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-43523fd9=\"\"><n3-icon :type=\"font\" _v-43523fd9=\"\"></n3-icon><span _v-43523fd9=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-43523fd9=\"\"><code class=\"language-html\" _v-43523fd9=\"\"><span class=\"hljs-tag\" _v-43523fd9=\"\">&lt;<span class=\"hljs-name\" _v-43523fd9=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-43523fd9=\"\">type</span>=<span class=\"hljs-string\" _v-43523fd9=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-43523fd9=\"\">&lt;/<span class=\"hljs-name\" _v-43523fd9=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-43523fd9=\"\">参数</h3>\n<table _v-43523fd9=\"\">\n<thead _v-43523fd9=\"\">\n<tr _v-43523fd9=\"\">\n<th _v-43523fd9=\"\">参数名</th>\n<th _v-43523fd9=\"\">类型</th>\n<th _v-43523fd9=\"\">默认值</th>\n<th _v-43523fd9=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-43523fd9=\"\">\n<tr _v-43523fd9=\"\">\n<td _v-43523fd9=\"\">type</td>\n<td _v-43523fd9=\"\"><code _v-43523fd9=\"\">String</code></td>\n<td _v-43523fd9=\"\"></td>\n<td _v-43523fd9=\"\">图标类型名</td>\n</tr>\n<tr _v-43523fd9=\"\">\n<td _v-43523fd9=\"\">size</td>\n<td _v-43523fd9=\"\"><code _v-43523fd9=\"\">String</code></td>\n<td _v-43523fd9=\"\"></td>\n<td _v-43523fd9=\"\">图标尺寸</td>\n</tr>\n<tr _v-43523fd9=\"\">\n<td _v-43523fd9=\"\">color</td>\n<td _v-43523fd9=\"\"><code _v-43523fd9=\"\">String</code></td>\n<td _v-43523fd9=\"\"></td>\n<td _v-43523fd9=\"\">颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 794 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(795);
+
+/***/ },
+/* 795 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(795)
+	__vue_script__ = __webpack_require__(796)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TagsDocs-3.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(796)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TagsDocs-45.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(797)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -40479,7 +40519,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-e66d7568/n3TagsDocs-3.vue"
+	  var id = "_v-0e562cb8/n3TagsDocs-45.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -40488,7 +40528,7 @@
 	})()}
 
 /***/ },
-/* 795 */
+/* 796 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -40648,28 +40688,28 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 796 */
+/* 797 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>标签</h3>\n<div class=\"bs-docs-section\" id=\"标签\">\n<blockquote>\n<p>标签</p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-label>Default</n3-label>\n  <n3-label type=\"primary\">primary</n3-label>\n  <n3-label type=\"danger\">danger</n3-label>\n  <n3-label type=\"success\">success</n3-label>\n  <n3-label type=\"info\">info</n3-label>\n  <n3-label type=\"warning\">warning</n3-label>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-label</span>&gt;</span>Default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-label</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span>primary<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-label</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span>danger<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-label</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span>success<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-label</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span>&gt;</span>info<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-label</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span>warning<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-label</span>&gt;</span>\n</code></pre>\n<h3>label参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>default</code></td>\n<td>颜色</td>\n</tr>\n<tr>\n<td>hover</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>标签组</p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-tags v-model=\"list\"></n3-tags>\n  <n3-tags v-model=\"list\" type=\"primary\"></n3-tags>\n  <n3-tags v-model=\"list\" type=\"success\"></n3-tags>\n  <n3-tags v-model=\"list\" type=\"danger\"></n3-tags>\n  <n3-tags v-model=\"list\" type=\"warning\"></n3-tags>\n  <n3-tags v-model=\"list\" removable=\"\" type=\"primary\"></n3-tags>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tags</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"list\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tags</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tags</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"list\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tags</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tags</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"list\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tags</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tags</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"list\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tags</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tags</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"list\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tags</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tags</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"list\"</span> <span class=\"hljs-attr\">removable</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tags</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">list</span>: [{\n        <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'1'</span>,\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'1'</span>\n      }, {\n        <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'2'</span>,\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'2'</span>\n      }, {\n        <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'3'</span>,\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'3'</span>\n      }, {\n        <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'4'</span>,\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'4'</span>,\n        <span class=\"hljs-attr\">disabled</span>: <span class=\"hljs-literal\">true</span>\n      }]\n    }\n  }\n}\n</code></pre>\n<h3>tags参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>default</code></td>\n<td>颜色</td>\n</tr>\n<tr>\n<td>value</td>\n<td><code>Array</code></td>\n<td><code>[]</code></td>\n<td>内容数组</td>\n</tr>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td>大小 sm,lg,xl</td>\n</tr>\n<tr>\n<td>removable</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否可删除</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 797 */
+/* 798 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(798);
+	module.exports = __webpack_require__(799);
 
 /***/ },
-/* 798 */
+/* 799 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__webpack_require__(799)
-	__vue_script__ = __webpack_require__(801)
+	__webpack_require__(800)
+	__vue_script__ = __webpack_require__(802)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AlertDocs-4.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(802)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AlertDocs-48.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(803)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -40685,7 +40725,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-15014948/n3AlertDocs-4.vue"
+	  var id = "_v-8a4f72e8/n3AlertDocs-48.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -40694,23 +40734,23 @@
 	})()}
 
 /***/ },
-/* 799 */
+/* 800 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(800);
+	var content = __webpack_require__(801);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(351)("0ab87de4", content, false);
+	var update = __webpack_require__(351)("5971d138", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-4.vue", function() {
-	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-4.vue");
+	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-48.vue", function() {
+	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AlertDocs-48.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -40720,7 +40760,7 @@
 	}
 
 /***/ },
-/* 800 */
+/* 801 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(350)();
@@ -40728,13 +40768,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.alert-icon-float-left {\n  font-size:32px;float:left;margin-right:5px;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3AlertDocs-4.vue?2150b3a2"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA2RA;EACA,eAAA,WAAA,iBAAA;CACA","file":"n3AlertDocs-4.vue","sourcesContent":["<template><section><template>\n<h3>提示消息</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<blockquote>\n<p>组件调用</p>\n</blockquote>\n<p><n3-button type=\"success\" @click.native=\"openRight\">\n点击出现在右边\n</n3-button>\n<n3-button type=\"danger\" @click.native=\"openTop\">\n点击出现在顶部\n</n3-button></p>\n  <hr>\n  <n3-alert dismissable=\"\" :show=\"true\" icon=\"smile-o\">\n    <strong>default style</strong>\n    This is the default style.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"success\" :show=\"true\">\n    <strong>Well Done!</strong>\n    You successfully read this important alert message.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"info\" :show=\"true\">\n    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"danger\" dismissable=\"\" :show=\"true\">\n    <strong>Oh snap!</strong> Change a few things up and try submitting again.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"warning\" dismissable=\"\" :show=\"true\">\n    <strong>Warning!</strong> Better check yourself, you're not looking too good.\n    <hr>\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"success\" width=\"700px\" message=\"信息提示\" description=\"\">\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"danger\" width=\"700px\" message=\"错误提示\" description=\"\" dismissable=\"\">\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"info\" width=\"700px\" message=\"错误提示\" :on-close=\"close\" description=\"\" dismissable=\"\">\n    点击关闭按钮的回调函数,打开控制台看看:)\n  </n3-alert>\n  <n3-alert ref=\"alertRight\" type=\"success\" width=\"700px\" placement=\"top-right\" message=\"信息提示\" description=\"\" dismissable=\"\">\n    <p>You successfully read this important alert message.</p>\n  </n3-alert>\n  <n3-alert ref=\"alertTop\" :duration=\"3000\" type=\"danger\" placement=\"top\" message=\"警告\" description=\"\" dismissable=\"\">\n    <strong>Heads up!</strong>\n    <p>This alert needs your attention.</p>\n  </n3-alert>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'success'</span>\n  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openRight\"</span>&gt;</span>\n  点击出现在右边\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'danger'</span>\n  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openTop\"</span>&gt;</span>\n 点击出现在顶部\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"smile-o\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>default style<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  This is the default style.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Well Done!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  You successfully read this important alert message.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> This alert needs your attention, but it's not super important.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Oh snap!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Change a few things up and try submitting again.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Warning!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Better check yourself, you're not looking too good.\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n  <span class=\"hljs-attr\">description</span>&gt;</span>\n  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n  <span class=\"hljs-attr\">:on-close</span>=<span class=\"hljs-string\">\"close\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  点击关闭按钮的回调函数,打开控制台看看:)\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertRight\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top-right\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>You successfully read this important alert message.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertTop\"</span>\n  <span class=\"hljs-attr\">:duration</span>=<span class=\"hljs-string\">\"3000\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"警告\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>This alert needs your attention.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    openRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.alertRight.open()\n    },\n    openTop () {\n      <span class=\"hljs-keyword\">this</span>.$refs.alertTop.open()\n    },\n    close () {\n      <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'你点击了关闭按钮'</span>)\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示</td>\n</tr>\n<tr>\n<td>icon</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>自定义图标</td>\n</tr>\n<tr>\n<td>dismissable</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示关闭按钮</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code>, 如: <code>default</code> <code>success</code> <code>info</code> <code>warning</code> <code>danger</code></td>\n<td><code>success</code></td>\n<td>组件样式</td>\n</tr>\n<tr>\n<td>duration</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>自动关闭延时,设置 <code>0</code> 或者负数，表示不会自动关闭</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code>例如&quot;700px&quot;</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>small</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>缩小</td>\n</tr>\n<tr>\n<td>placement</td>\n<td><code>String</code>. 如: <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>\n<td></td>\n<td>组件位置</td>\n</tr>\n<tr>\n<td>description</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>警告提示</td>\n</tr>\n<tr>\n<td>message</td>\n<td><code>String</code></td>\n<td></td>\n<td>在设置description时有效</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>close</td>\n<td>点击关闭按钮时触发</td>\n<td></td>\n</tr>\n<tr>\n<td>show</td>\n<td>出现时触发</td>\n<td></td>\n</tr>\n<tr>\n<td>hide</td>\n<td>消失时触发</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>函数调用</p>\n</blockquote>\n<p><n3-button type=\"success\" @click.native=\"open\">\n函数调用\n</n3-button></p>\n<pre><code class=\"language-javascript\">\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Alert({\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'success'</span>,\n          <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'success'</span>,\n          <span class=\"hljs-attr\">placement</span>: <span class=\"hljs-string\">'top-right'</span>,\n          <span class=\"hljs-attr\">duration</span>: <span class=\"hljs-number\">2000</span>,\n          <span class=\"hljs-attr\">width</span>:<span class=\"hljs-string\">'200px'</span> <span class=\"hljs-comment\">// 内容不确定，建议设置width</span>\n      })\n    },\n  }\n}\n</code></pre>\n</div>\n</template>\n\n\n</section></template>\n<style>\n.alert-icon-float-left {\n  font-size:32px;float:left;margin-right:5px;\n}\n</style>\n<script>\n  import n3Alert from 'src/Alert/n3Alert.vue'\n  import n3Button from 'src/Button/n3Button.vue'\n\n  export default {\n    methods: {\n      openRight () {\n        this.$refs.alertRight.open()\n      },\n      openTop () {\n        this.$refs.alertTop.open()\n      },\n      close () {\n        console.log('你点击了关闭按钮')\n      },\n      open () {\n        this.n3Alert({\n          content: 'success',\n          type: 'success',\n          placement: 'top-right',\n          duration: 2000,\n          width:'200px'\n        })\n      }\n    },\n    components: {\n      n3Alert,\n      n3Button\n    }\n  }\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.alert-icon-float-left {\n  font-size:32px;float:left;margin-right:5px;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3AlertDocs-48.vue?cfbae6fe"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA2RA;EACA,eAAA,WAAA,iBAAA;CACA","file":"n3AlertDocs-48.vue","sourcesContent":["<template><section><template>\n<h3>提示消息</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<blockquote>\n<p>组件调用</p>\n</blockquote>\n<p><n3-button type=\"success\" @click.native=\"openRight\">\n点击出现在右边\n</n3-button>\n<n3-button type=\"danger\" @click.native=\"openTop\">\n点击出现在顶部\n</n3-button></p>\n  <hr>\n  <n3-alert dismissable=\"\" :show=\"true\" icon=\"smile-o\">\n    <strong>default style</strong>\n    This is the default style.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"success\" :show=\"true\">\n    <strong>Well Done!</strong>\n    You successfully read this important alert message.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"info\" :show=\"true\">\n    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"danger\" dismissable=\"\" :show=\"true\">\n    <strong>Oh snap!</strong> Change a few things up and try submitting again.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"warning\" dismissable=\"\" :show=\"true\">\n    <strong>Warning!</strong> Better check yourself, you're not looking too good.\n    <hr>\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"success\" width=\"700px\" message=\"信息提示\" description=\"\">\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"danger\" width=\"700px\" message=\"错误提示\" description=\"\" dismissable=\"\">\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"info\" width=\"700px\" message=\"错误提示\" :on-close=\"close\" description=\"\" dismissable=\"\">\n    点击关闭按钮的回调函数,打开控制台看看:)\n  </n3-alert>\n  <n3-alert ref=\"alertRight\" type=\"success\" width=\"700px\" placement=\"top-right\" message=\"信息提示\" description=\"\" dismissable=\"\">\n    <p>You successfully read this important alert message.</p>\n  </n3-alert>\n  <n3-alert ref=\"alertTop\" :duration=\"3000\" type=\"danger\" placement=\"top\" message=\"警告\" description=\"\" dismissable=\"\">\n    <strong>Heads up!</strong>\n    <p>This alert needs your attention.</p>\n  </n3-alert>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'success'</span>\n  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openRight\"</span>&gt;</span>\n  点击出现在右边\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'danger'</span>\n  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openTop\"</span>&gt;</span>\n 点击出现在顶部\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"smile-o\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>default style<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  This is the default style.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Well Done!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  You successfully read this important alert message.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> This alert needs your attention, but it's not super important.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Oh snap!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Change a few things up and try submitting again.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Warning!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Better check yourself, you're not looking too good.\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n  <span class=\"hljs-attr\">description</span>&gt;</span>\n  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n  <span class=\"hljs-attr\">:on-close</span>=<span class=\"hljs-string\">\"close\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  点击关闭按钮的回调函数,打开控制台看看:)\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertRight\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top-right\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>You successfully read this important alert message.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertTop\"</span>\n  <span class=\"hljs-attr\">:duration</span>=<span class=\"hljs-string\">\"3000\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"警告\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>This alert needs your attention.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    openRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.alertRight.open()\n    },\n    openTop () {\n      <span class=\"hljs-keyword\">this</span>.$refs.alertTop.open()\n    },\n    close () {\n      <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'你点击了关闭按钮'</span>)\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示</td>\n</tr>\n<tr>\n<td>icon</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>自定义图标</td>\n</tr>\n<tr>\n<td>dismissable</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示关闭按钮</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code>, 如: <code>default</code> <code>success</code> <code>info</code> <code>warning</code> <code>danger</code></td>\n<td><code>success</code></td>\n<td>组件样式</td>\n</tr>\n<tr>\n<td>duration</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>自动关闭延时,设置 <code>0</code> 或者负数，表示不会自动关闭</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code>例如&quot;700px&quot;</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>small</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>缩小</td>\n</tr>\n<tr>\n<td>placement</td>\n<td><code>String</code>. 如: <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>\n<td></td>\n<td>组件位置</td>\n</tr>\n<tr>\n<td>description</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>警告提示</td>\n</tr>\n<tr>\n<td>message</td>\n<td><code>String</code></td>\n<td></td>\n<td>在设置description时有效</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>close</td>\n<td>点击关闭按钮时触发</td>\n<td></td>\n</tr>\n<tr>\n<td>show</td>\n<td>出现时触发</td>\n<td></td>\n</tr>\n<tr>\n<td>hide</td>\n<td>消失时触发</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>函数调用</p>\n</blockquote>\n<p><n3-button type=\"success\" @click.native=\"open\">\n函数调用\n</n3-button></p>\n<pre><code class=\"language-javascript\">\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Alert({\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'success'</span>,\n          <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'success'</span>,\n          <span class=\"hljs-attr\">placement</span>: <span class=\"hljs-string\">'top-right'</span>,\n          <span class=\"hljs-attr\">duration</span>: <span class=\"hljs-number\">2000</span>,\n          <span class=\"hljs-attr\">width</span>:<span class=\"hljs-string\">'200px'</span> <span class=\"hljs-comment\">// 内容不确定，建议设置width</span>\n      })\n    },\n  }\n}\n</code></pre>\n</div>\n</template>\n\n\n</section></template>\n<style>\n.alert-icon-float-left {\n  font-size:32px;float:left;margin-right:5px;\n}\n</style>\n<script>\n  import n3Alert from 'src/Alert/n3Alert.vue'\n  import n3Button from 'src/Button/n3Button.vue'\n\n  export default {\n    methods: {\n      openRight () {\n        this.$refs.alertRight.open()\n      },\n      openTop () {\n        this.$refs.alertTop.open()\n      },\n      close () {\n        console.log('你点击了关闭按钮')\n      },\n      open () {\n        this.n3Alert({\n          content: 'success',\n          type: 'success',\n          placement: 'top-right',\n          duration: 2000,\n          width:'200px'\n        })\n      }\n    },\n    components: {\n      n3Alert,\n      n3Button\n    }\n  }\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 801 */
+/* 802 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -41071,27 +41111,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 802 */
+/* 803 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>提示消息</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<blockquote>\n<p>组件调用</p>\n</blockquote>\n<p><n3-button type=\"success\" @click.native=\"openRight\">\n点击出现在右边\n</n3-button>\n<n3-button type=\"danger\" @click.native=\"openTop\">\n点击出现在顶部\n</n3-button></p>\n  <hr>\n  <n3-alert dismissable=\"\" :show=\"true\" icon=\"smile-o\">\n    <strong>default style</strong>\n    This is the default style.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"success\" :show=\"true\">\n    <strong>Well Done!</strong>\n    You successfully read this important alert message.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"info\" :show=\"true\">\n    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"danger\" dismissable=\"\" :show=\"true\">\n    <strong>Oh snap!</strong> Change a few things up and try submitting again.\n  </n3-alert>\n  <br>\n  <n3-alert type=\"warning\" dismissable=\"\" :show=\"true\">\n    <strong>Warning!</strong> Better check yourself, you're not looking too good.\n    <hr>\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"success\" width=\"700px\" message=\"信息提示\" description=\"\">\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"danger\" width=\"700px\" message=\"错误提示\" description=\"\" dismissable=\"\">\n    这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n  </n3-alert>\n  <br>\n  <n3-alert :show=\"true\" type=\"info\" width=\"700px\" message=\"错误提示\" :on-close=\"close\" description=\"\" dismissable=\"\">\n    点击关闭按钮的回调函数,打开控制台看看:)\n  </n3-alert>\n  <n3-alert ref=\"alertRight\" type=\"success\" width=\"700px\" placement=\"top-right\" message=\"信息提示\" description=\"\" dismissable=\"\">\n    <p>You successfully read this important alert message.</p>\n  </n3-alert>\n  <n3-alert ref=\"alertTop\" :duration=\"3000\" type=\"danger\" placement=\"top\" message=\"警告\" description=\"\" dismissable=\"\">\n    <strong>Heads up!</strong>\n    <p>This alert needs your attention.</p>\n  </n3-alert>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'success'</span>\n  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openRight\"</span>&gt;</span>\n  点击出现在右边\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">'danger'</span>\n  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"openTop\"</span>&gt;</span>\n 点击出现在顶部\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"smile-o\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>default style<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  This is the default style.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Well Done!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  You successfully read this important alert message.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> This alert needs your attention, but it's not super important.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Oh snap!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Change a few things up and try submitting again.\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">dismissable</span> <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Warning!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span> Better check yourself, you're not looking too good.\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n  <span class=\"hljs-attr\">description</span>&gt;</span>\n  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">:show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示，这里是信息提示这里是信息提示这里是信息提示这里是信息提示\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">show</span>=<span class=\"hljs-string\">\"true\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"错误提示\"</span>\n  <span class=\"hljs-attr\">:on-close</span>=<span class=\"hljs-string\">\"close\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  点击关闭按钮的回调函数,打开控制台看看:)\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertRight\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>\n  <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"700px\"</span>\n  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top-right\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"信息提示\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>You successfully read this important alert message.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-alert</span>\n  <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"alertTop\"</span>\n  <span class=\"hljs-attr\">:duration</span>=<span class=\"hljs-string\">\"3000\"</span>\n  <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>\n  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>\n  <span class=\"hljs-attr\">message</span>=<span class=\"hljs-string\">\"警告\"</span>\n  <span class=\"hljs-attr\">description</span>\n  <span class=\"hljs-attr\">dismissable</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">strong</span>&gt;</span>Heads up!<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">strong</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>This alert needs your attention.<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-alert</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    openRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.alertRight.open()\n    },\n    openTop () {\n      <span class=\"hljs-keyword\">this</span>.$refs.alertTop.open()\n    },\n    close () {\n      <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'你点击了关闭按钮'</span>)\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示</td>\n</tr>\n<tr>\n<td>icon</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>自定义图标</td>\n</tr>\n<tr>\n<td>dismissable</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示关闭按钮</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code>, 如: <code>default</code> <code>success</code> <code>info</code> <code>warning</code> <code>danger</code></td>\n<td><code>success</code></td>\n<td>组件样式</td>\n</tr>\n<tr>\n<td>duration</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>自动关闭延时,设置 <code>0</code> 或者负数，表示不会自动关闭</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code>例如&quot;700px&quot;</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>small</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>缩小</td>\n</tr>\n<tr>\n<td>placement</td>\n<td><code>String</code>. 如: <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code></td>\n<td></td>\n<td>组件位置</td>\n</tr>\n<tr>\n<td>description</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>警告提示</td>\n</tr>\n<tr>\n<td>message</td>\n<td><code>String</code></td>\n<td></td>\n<td>在设置description时有效</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>close</td>\n<td>点击关闭按钮时触发</td>\n<td></td>\n</tr>\n<tr>\n<td>show</td>\n<td>出现时触发</td>\n<td></td>\n</tr>\n<tr>\n<td>hide</td>\n<td>消失时触发</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<blockquote>\n<p>函数调用</p>\n</blockquote>\n<p><n3-button type=\"success\" @click.native=\"open\">\n函数调用\n</n3-button></p>\n<pre><code class=\"language-javascript\">\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Alert({\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'success'</span>,\n          <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'success'</span>,\n          <span class=\"hljs-attr\">placement</span>: <span class=\"hljs-string\">'top-right'</span>,\n          <span class=\"hljs-attr\">duration</span>: <span class=\"hljs-number\">2000</span>,\n          <span class=\"hljs-attr\">width</span>:<span class=\"hljs-string\">'200px'</span> <span class=\"hljs-comment\">// 内容不确定，建议设置width</span>\n      })\n    },\n  }\n}\n</code></pre>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
-/* 803 */
+/* 804 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(804);
+	module.exports = __webpack_require__(805);
 
 /***/ },
-/* 804 */
+/* 805 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(805)
+	__vue_script__ = __webpack_require__(806)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AccordionDocs-5.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(806)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AccordionDocs-47.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(807)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -41107,7 +41147,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-4227966e/n3AccordionDocs-5.vue"
+	  var id = "_v-0578aac2/n3AccordionDocs-47.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -41116,7 +41156,7 @@
 	})()}
 
 /***/ },
-/* 805 */
+/* 806 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -41300,27 +41340,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 806 */
+/* 807 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>折叠面板</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <p>\n    <input type=\"checkbox\" v-model=\"checked\">\n    一次只打开一个\n  </p>\n  <n3-accordion :one-at-time=\"checked\" @change=\"change\">\n    <n3-panel :is-open=\"true\" index=\"1\" @change=\"change\">\n      <div slot=\"header\">Panel #1</div>\n      <p>...</p>\n      <p>...</p>\n      <p>...</p>\n    </n3-panel>\n    <n3-panel header=\"Panel #2\" index=\"2\">\n      <p>...</p>\n      <p>...</p>\n      <p>...</p>\n      </n3-panel>\n    <n3-panel header=\"Panel #3\" index=\"3\">\n      <p>...</p>\n      <p>...</p>\n      <p>...</p>\n    </n3-panel>\n    <n3-panel header=\"Panel #4\" index=\"4\">\n      <p>...</p>\n      <p>...</p>\n      <p>...</p>\n    </n3-panel>\n  </n3-accordion>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-accordion</span> <span class=\"hljs-attr\">:one-at-time</span>=<span class=\"hljs-string\">\"checked\"</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"change\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-panel</span> <span class=\"hljs-attr\">:is-open</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"change\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"header\"</span>&gt;</span>Panel #1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-panel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-panel</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Panel #2\"</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-panel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-panel</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Panel #3\"</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-panel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-panel</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"Panel #4\"</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"4\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-panel</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-accordion</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">checked</span>: <span class=\"hljs-literal\">true</span>\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    change (show) {\n      <span class=\"hljs-built_in\">console</span>.log(show)\n    }\n  }\n}\n</code></pre>\n<h3>According参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>one-at-time</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>控制当一个面板被打开时，其他面板是否关闭</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code></td>\n<td><code>collapse</code></td>\n<td>切换动画</td>\n</tr>\n</tbody>\n</table>\n<h3>According 事件</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>改变时的回调函数,参数为panel的状态数组</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Panel参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>is-open</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>面板打开还是关闭</td>\n</tr>\n<tr>\n<td>header</td>\n<td><code>String</code></td>\n<td></td>\n<td>面板头部显示的内容，点击该内容进行面板的打开收缩</td>\n</tr>\n</tbody>\n</table>\n<h3>Panel Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>改变时的回调函数,参数为panel的状态</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 807 */
+/* 808 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(808);
+	module.exports = __webpack_require__(809);
 
 /***/ },
-/* 808 */
+/* 809 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(809)
+	__vue_script__ = __webpack_require__(810)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3CascaderDocs-6.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(810)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3CascaderDocs-49.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(811)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -41336,7 +41376,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-bd263e98/n3CascaderDocs-6.vue"
+	  var id = "_v-ed805b12/n3CascaderDocs-49.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -41345,7 +41385,7 @@
 	})()}
 
 /***/ },
-/* 809 */
+/* 810 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -41511,28 +41551,28 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 810 */
+/* 811 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>级联选择</h3>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <n3-cascader :options=\"options\" :on-change=\"selectChange\" v-model=\"value\" :select-change=\"true\"></n3-cascader>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-cascader</span> <span class=\"hljs-attr\">:options</span>=<span class=\"hljs-string\">\"options\"</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"selectChange\"</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span> <span class=\"hljs-attr\">:select-change</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-cascader</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">  [{\n    <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'zhejiang'</span>,\n    <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'浙江'</span>,\n    <span class=\"hljs-attr\">children</span>: [{\n      <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'hangzhou'</span>,\n      <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'杭州'</span>,\n      <span class=\"hljs-attr\">children</span>: [{\n        <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'xihu'</span>,\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'西湖'</span>,\n      }],\n    }],\n  }, {\n    <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'jiangsu'</span>,\n    <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'江苏'</span>,\n    <span class=\"hljs-attr\">disabled</span>:<span class=\"hljs-literal\">true</span>,\n    <span class=\"hljs-attr\">children</span>: [{\n      <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'nanjing'</span>,\n      <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'南京'</span>,\n      <span class=\"hljs-attr\">children</span>: [{\n        <span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'zhonghuamen'</span>,\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'中华门'</span>,\n      }],\n    }],\n  }]\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>options</td>\n<td>Array</td>\n<td>-</td>\n<td></td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>200px</code></td>\n<td>宽度</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>禁用</td>\n</tr>\n<tr>\n<td>placeholder</td>\n<td><code>String</code></td>\n<td>-</td>\n<td></td>\n</tr>\n<tr>\n<td>display-render</td>\n<td><code>Function</code></td>\n<td>-</td>\n<td></td>\n</tr>\n<tr>\n<td>select-change</td>\n<td><code>Boolean</code></td>\n<td>-</td>\n<td>选择值就改变</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化时</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 811 */
+/* 812 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(812);
+	module.exports = __webpack_require__(813);
 
 /***/ },
-/* 812 */
+/* 813 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__webpack_require__(813)
-	__vue_script__ = __webpack_require__(815)
+	__webpack_require__(814)
+	__vue_script__ = __webpack_require__(816)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AffixDocs-7.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(816)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AffixDocs-50.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(817)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -41548,7 +41588,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-b1642d5a/n3AffixDocs-7.vue"
+	  var id = "_v-3f010a2f/n3AffixDocs-50.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -41557,23 +41597,23 @@
 	})()}
 
 /***/ },
-/* 813 */
+/* 814 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(814);
+	var content = __webpack_require__(815);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(351)("111506e8", content, false);
+	var update = __webpack_require__(351)("1ffc9c30", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-b1642d5a&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue", function() {
-	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-b1642d5a&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-7.vue");
+	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-3f010a2f&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-50.vue", function() {
+	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-3f010a2f&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-50.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -41583,7 +41623,7 @@
 	}
 
 /***/ },
-/* 814 */
+/* 815 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(350)();
@@ -41591,13 +41631,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.sidebar[_v-b1642d5a]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-b1642d5a]{\n  position: static;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3AffixDocs-7.vue?061176be"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmDA;EACA,uBAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;CACA","file":"n3AffixDocs-7.vue","sourcesContent":["<template><section><template>\n<h3>固钉</h3>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <h3>\n      <n3-affix :offset=\"0\">\n        <nav class=\"sidebar\">\n          <ul>\n            <li>...</li>\n            <li>...</li>\n            <li>...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-affix</span> <span class=\"hljs-attr\">:offset</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">nav</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">nav</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.sidebar{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-']{\n  position: static;\n}\n</style>\n<script>\nexport default {\n\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.sidebar[_v-3f010a2f]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-3f010a2f]{\n  position: static;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3AffixDocs-50.vue?29528cbc"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmDA;EACA,uBAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;CACA","file":"n3AffixDocs-50.vue","sourcesContent":["<template><section><template>\n<h3>固钉</h3>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <h3>\n      <n3-affix :offset=\"0\">\n        <nav class=\"sidebar\">\n          <ul>\n            <li>...</li>\n            <li>...</li>\n            <li>...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-affix</span> <span class=\"hljs-attr\">:offset</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">nav</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">nav</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.sidebar{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-']{\n  position: static;\n}\n</style>\n<script>\nexport default {\n\n}\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 815 */
+/* 816 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -41672,27 +41712,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 816 */
+/* 817 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-b1642d5a=\"\"><template>\n<h3 _v-b1642d5a=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-b1642d5a=\"\">\n  <div class=\"bs-example\" _v-b1642d5a=\"\">\n    <h3 _v-b1642d5a=\"\">\n      <n3-affix :offset=\"0\" _v-b1642d5a=\"\">\n        <nav class=\"sidebar\" _v-b1642d5a=\"\">\n          <ul _v-b1642d5a=\"\">\n            <li _v-b1642d5a=\"\">...</li>\n            <li _v-b1642d5a=\"\">...</li>\n            <li _v-b1642d5a=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-b1642d5a=\"\"><code class=\"language-html\" _v-b1642d5a=\"\"><span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;<span class=\"hljs-name\" _v-b1642d5a=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-b1642d5a=\"\">:offset</span>=<span class=\"hljs-string\" _v-b1642d5a=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;<span class=\"hljs-name\" _v-b1642d5a=\"\">nav</span> <span class=\"hljs-attr\" _v-b1642d5a=\"\">class</span>=<span class=\"hljs-string\" _v-b1642d5a=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;<span class=\"hljs-name\" _v-b1642d5a=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;<span class=\"hljs-name\" _v-b1642d5a=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;/<span class=\"hljs-name\" _v-b1642d5a=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;<span class=\"hljs-name\" _v-b1642d5a=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;/<span class=\"hljs-name\" _v-b1642d5a=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;<span class=\"hljs-name\" _v-b1642d5a=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;/<span class=\"hljs-name\" _v-b1642d5a=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;/<span class=\"hljs-name\" _v-b1642d5a=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;/<span class=\"hljs-name\" _v-b1642d5a=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-b1642d5a=\"\">&lt;/<span class=\"hljs-name\" _v-b1642d5a=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3 _v-b1642d5a=\"\">参数</h3>\n<table _v-b1642d5a=\"\">\n<thead _v-b1642d5a=\"\">\n<tr _v-b1642d5a=\"\">\n<th _v-b1642d5a=\"\">参数名</th>\n<th _v-b1642d5a=\"\">类型</th>\n<th _v-b1642d5a=\"\">默认值</th>\n<th _v-b1642d5a=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-b1642d5a=\"\">\n<tr _v-b1642d5a=\"\">\n<td _v-b1642d5a=\"\">offset</td>\n<td _v-b1642d5a=\"\"><code _v-b1642d5a=\"\">Number</code></td>\n<td _v-b1642d5a=\"\"><code _v-b1642d5a=\"\">0</code></td>\n<td _v-b1642d5a=\"\">离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
-
-/***/ },
-/* 817 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(818);
+	module.exports = "<section _v-3f010a2f=\"\"><template>\n<h3 _v-3f010a2f=\"\">固钉</h3>\n<div class=\"bs-docs-section\" _v-3f010a2f=\"\">\n  <div class=\"bs-example\" _v-3f010a2f=\"\">\n    <h3 _v-3f010a2f=\"\">\n      <n3-affix :offset=\"0\" _v-3f010a2f=\"\">\n        <nav class=\"sidebar\" _v-3f010a2f=\"\">\n          <ul _v-3f010a2f=\"\">\n            <li _v-3f010a2f=\"\">...</li>\n            <li _v-3f010a2f=\"\">...</li>\n            <li _v-3f010a2f=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-3f010a2f=\"\"><code class=\"language-html\" _v-3f010a2f=\"\"><span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;<span class=\"hljs-name\" _v-3f010a2f=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-3f010a2f=\"\">:offset</span>=<span class=\"hljs-string\" _v-3f010a2f=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;<span class=\"hljs-name\" _v-3f010a2f=\"\">nav</span> <span class=\"hljs-attr\" _v-3f010a2f=\"\">class</span>=<span class=\"hljs-string\" _v-3f010a2f=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;<span class=\"hljs-name\" _v-3f010a2f=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;<span class=\"hljs-name\" _v-3f010a2f=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;/<span class=\"hljs-name\" _v-3f010a2f=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;<span class=\"hljs-name\" _v-3f010a2f=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;/<span class=\"hljs-name\" _v-3f010a2f=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;<span class=\"hljs-name\" _v-3f010a2f=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;/<span class=\"hljs-name\" _v-3f010a2f=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;/<span class=\"hljs-name\" _v-3f010a2f=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;/<span class=\"hljs-name\" _v-3f010a2f=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-3f010a2f=\"\">&lt;/<span class=\"hljs-name\" _v-3f010a2f=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3 _v-3f010a2f=\"\">参数</h3>\n<table _v-3f010a2f=\"\">\n<thead _v-3f010a2f=\"\">\n<tr _v-3f010a2f=\"\">\n<th _v-3f010a2f=\"\">参数名</th>\n<th _v-3f010a2f=\"\">类型</th>\n<th _v-3f010a2f=\"\">默认值</th>\n<th _v-3f010a2f=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-3f010a2f=\"\">\n<tr _v-3f010a2f=\"\">\n<td _v-3f010a2f=\"\">offset</td>\n<td _v-3f010a2f=\"\"><code _v-3f010a2f=\"\">Number</code></td>\n<td _v-3f010a2f=\"\"><code _v-3f010a2f=\"\">0</code></td>\n<td _v-3f010a2f=\"\">离屏幕顶部的像素值</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 818 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(819);
+
+/***/ },
+/* 819 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(819)
+	__vue_script__ = __webpack_require__(820)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AsideDocs-8.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(820)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AsideDocs-54.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(821)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -41708,7 +41748,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-90925b88/n3AsideDocs-8.vue"
+	  var id = "_v-3a38c3cb/n3AsideDocs-54.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -41717,7 +41757,7 @@
 	})()}
 
 /***/ },
-/* 819 */
+/* 820 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -41862,25 +41902,25 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 820 */
+/* 821 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>侧边栏</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"openLeft\">左侧栏</n3-button>\n  <n3-button @click.native=\"openRight\">右侧栏</n3-button>\n  <n3-aside placement=\"left\" title=\"Title\" width=\"350px\" ref=\"asideLeft\">\n    <h4>左侧侧边栏</h4>\n    <p height=\"10000px\">...</p>\n    <p>...</p>\n    <p>...</p>\n    <n3-button @click.native=\"closeLeft\">关闭</n3-button>\n  </n3-aside>\n  <n3-aside placement=\"right\" title=\"Title\" width=\"350px\" ref=\"asideRight\" :header=\"false\">\n    <h4>右侧侧边栏</h4>\n    <p>...</p>\n    <p>...</p>\n    <p>...</p>\n    <n3-button @click.native=\"closeRight\">关闭</n3-button>\n  </n3-aside>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- 左侧栏 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-aside</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"350px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"asideLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>左侧侧边栏<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"closeLeft\"</span>&gt;</span>关闭<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-aside</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 右侧栏 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-aside</span>  <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"350px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"asideRight\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"false\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>右侧侧边栏<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"closeRight\"</span>&gt;</span>关闭<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-aside</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    openLeft () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideLeft.open()\n    },\n    openRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideRight.open()\n    },\n    closeLeft () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideLeft.close()\n    },\n    closeRight () {\n      <span class=\"hljs-keyword\">this</span>.$refs.asideRight.close()\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>placement</td>\n<td><code>String</code>, 如: <code>left</code>, <code>right</code></td>\n<td><code>right</code></td>\n<td>组件位置</td>\n</tr>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>组件头部文本</td>\n</tr>\n<tr>\n<td>header</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>是否需要头部</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td>显示</td>\n</tr>\n<tr>\n<td>hide</td>\n<td>隐藏</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
-/* 821 */
+/* 822 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(822);
+	module.exports = __webpack_require__(823);
 
 /***/ },
-/* 822 */
+/* 823 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__webpack_require__(823)
-	__vue_template__ = __webpack_require__(825)
+	__webpack_require__(824)
+	__vue_template__ = __webpack_require__(826)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -41896,7 +41936,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-17f335d9/n3CarouselDocs-9.vue"
+	  var id = "_v-407438a4/n3CarouselDocs-53.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -41905,23 +41945,23 @@
 	})()}
 
 /***/ },
-/* 823 */
+/* 824 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(824);
+	var content = __webpack_require__(825);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(351)("31898f26", content, false);
+	var update = __webpack_require__(351)("7d5df0b7", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-17f335d9&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue", function() {
-	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-17f335d9&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-9.vue");
+	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-407438a4&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-53.vue", function() {
+	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-407438a4&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-53.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -41931,7 +41971,7 @@
 	}
 
 /***/ },
-/* 824 */
+/* 825 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(350)();
@@ -41939,30 +41979,30 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.slide-img[_v-17f335d9]{\n  height:400px!important;\n}\n.carousel-caption[_v-17f335d9] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-17f335d9] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3CarouselDocs-9.vue?6d11fc5e"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuFA;EACA,uBAAA;CACA;AACA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,UAAA;EACA,YAAA;EACA,kBAAA;EACA,qBAAA;EACA,YAAA;EACA,mBAAA;EACA,yCAAA;CACA;AACA;EACA;IACA,WAAA;IACA,UAAA;IACA,qBAAA;GACA;CACA","file":"n3CarouselDocs-9.vue","sourcesContent":["<template><section><template>\n<h3>幻灯片</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-carousel>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #1</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #2</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #3</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>indicators</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示控制点</td>\n</tr>\n<tr>\n<td>controls</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示箭头</td>\n</tr>\n<tr>\n<td>interval</td>\n<td><code>Number</code></td>\n<td><code>5000</code></td>\n<td>自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section></template>\n<style scoped>\n.slide-img{\n  height:400px!important;\n}\n.carousel-caption {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.slide-img[_v-407438a4]{\n  height:400px!important;\n}\n.carousel-caption[_v-407438a4] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-407438a4] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3CarouselDocs-53.vue?fed08084"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuFA;EACA,uBAAA;CACA;AACA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,UAAA;EACA,YAAA;EACA,kBAAA;EACA,qBAAA;EACA,YAAA;EACA,mBAAA;EACA,yCAAA;CACA;AACA;EACA;IACA,WAAA;IACA,UAAA;IACA,qBAAA;GACA;CACA","file":"n3CarouselDocs-53.vue","sourcesContent":["<template><section><template>\n<h3>幻灯片</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-carousel>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #1</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #2</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #3</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>indicators</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示控制点</td>\n</tr>\n<tr>\n<td>controls</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示箭头</td>\n</tr>\n<tr>\n<td>interval</td>\n<td><code>Number</code></td>\n<td><code>5000</code></td>\n<td>自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section></template>\n<style scoped>\n.slide-img{\n  height:400px!important;\n}\n.carousel-caption {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 825 */
+/* 826 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-17f335d9=\"\"><template>\n<h3 _v-17f335d9=\"\">幻灯片</h3>\n<div class=\"bs-docs-section\" _v-17f335d9=\"\">\n<div class=\"bs-example\" _v-17f335d9=\"\">\n  <n3-carousel _v-17f335d9=\"\">\n    <n3-slide _v-17f335d9=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-17f335d9=\"\">\n      <div class=\"carousel-caption\" _v-17f335d9=\"\">\n        <h3 _v-17f335d9=\"\">Slide #1</h3>\n        <p _v-17f335d9=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-17f335d9=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-17f335d9=\"\">\n      <div class=\"carousel-caption\" _v-17f335d9=\"\">\n        <h3 _v-17f335d9=\"\">Slide #2</h3>\n        <p _v-17f335d9=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-17f335d9=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-17f335d9=\"\">\n      <div class=\"carousel-caption\" _v-17f335d9=\"\">\n        <h3 _v-17f335d9=\"\">Slide #3</h3>\n        <p _v-17f335d9=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-17f335d9=\"\"><code class=\"language-html\" _v-17f335d9=\"\"><span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">img</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">class</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">src</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">div</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">class</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">img</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">class</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">src</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">div</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">class</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">img</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">class</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">src</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">div</span> <span class=\"hljs-attr\" _v-17f335d9=\"\">class</span>=<span class=\"hljs-string\" _v-17f335d9=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;<span class=\"hljs-name\" _v-17f335d9=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-17f335d9=\"\">&lt;/<span class=\"hljs-name\" _v-17f335d9=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-17f335d9=\"\">参数</h3>\n<table _v-17f335d9=\"\">\n<thead _v-17f335d9=\"\">\n<tr _v-17f335d9=\"\">\n<th _v-17f335d9=\"\">参数名</th>\n<th _v-17f335d9=\"\">类型</th>\n<th _v-17f335d9=\"\">默认值</th>\n<th _v-17f335d9=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-17f335d9=\"\">\n<tr _v-17f335d9=\"\">\n<td _v-17f335d9=\"\">indicators</td>\n<td _v-17f335d9=\"\"><code _v-17f335d9=\"\">Boolean</code></td>\n<td _v-17f335d9=\"\"><code _v-17f335d9=\"\">true</code></td>\n<td _v-17f335d9=\"\">是否显示控制点</td>\n</tr>\n<tr _v-17f335d9=\"\">\n<td _v-17f335d9=\"\">controls</td>\n<td _v-17f335d9=\"\"><code _v-17f335d9=\"\">Boolean</code></td>\n<td _v-17f335d9=\"\"><code _v-17f335d9=\"\">true</code></td>\n<td _v-17f335d9=\"\">是否显示箭头</td>\n</tr>\n<tr _v-17f335d9=\"\">\n<td _v-17f335d9=\"\">interval</td>\n<td _v-17f335d9=\"\"><code _v-17f335d9=\"\">Number</code></td>\n<td _v-17f335d9=\"\"><code _v-17f335d9=\"\">5000</code></td>\n<td _v-17f335d9=\"\">自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
-
-/***/ },
-/* 826 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(827);
+	module.exports = "<section _v-407438a4=\"\"><template>\n<h3 _v-407438a4=\"\">幻灯片</h3>\n<div class=\"bs-docs-section\" _v-407438a4=\"\">\n<div class=\"bs-example\" _v-407438a4=\"\">\n  <n3-carousel _v-407438a4=\"\">\n    <n3-slide _v-407438a4=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-407438a4=\"\">\n      <div class=\"carousel-caption\" _v-407438a4=\"\">\n        <h3 _v-407438a4=\"\">Slide #1</h3>\n        <p _v-407438a4=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-407438a4=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-407438a4=\"\">\n      <div class=\"carousel-caption\" _v-407438a4=\"\">\n        <h3 _v-407438a4=\"\">Slide #2</h3>\n        <p _v-407438a4=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-407438a4=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-407438a4=\"\">\n      <div class=\"carousel-caption\" _v-407438a4=\"\">\n        <h3 _v-407438a4=\"\">Slide #3</h3>\n        <p _v-407438a4=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-407438a4=\"\"><code class=\"language-html\" _v-407438a4=\"\"><span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">img</span> <span class=\"hljs-attr\" _v-407438a4=\"\">class</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-407438a4=\"\">src</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">div</span> <span class=\"hljs-attr\" _v-407438a4=\"\">class</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">img</span> <span class=\"hljs-attr\" _v-407438a4=\"\">class</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-407438a4=\"\">src</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">div</span> <span class=\"hljs-attr\" _v-407438a4=\"\">class</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">img</span> <span class=\"hljs-attr\" _v-407438a4=\"\">class</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-407438a4=\"\">src</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">div</span> <span class=\"hljs-attr\" _v-407438a4=\"\">class</span>=<span class=\"hljs-string\" _v-407438a4=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;<span class=\"hljs-name\" _v-407438a4=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-407438a4=\"\">&lt;/<span class=\"hljs-name\" _v-407438a4=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-407438a4=\"\">参数</h3>\n<table _v-407438a4=\"\">\n<thead _v-407438a4=\"\">\n<tr _v-407438a4=\"\">\n<th _v-407438a4=\"\">参数名</th>\n<th _v-407438a4=\"\">类型</th>\n<th _v-407438a4=\"\">默认值</th>\n<th _v-407438a4=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-407438a4=\"\">\n<tr _v-407438a4=\"\">\n<td _v-407438a4=\"\">indicators</td>\n<td _v-407438a4=\"\"><code _v-407438a4=\"\">Boolean</code></td>\n<td _v-407438a4=\"\"><code _v-407438a4=\"\">true</code></td>\n<td _v-407438a4=\"\">是否显示控制点</td>\n</tr>\n<tr _v-407438a4=\"\">\n<td _v-407438a4=\"\">controls</td>\n<td _v-407438a4=\"\"><code _v-407438a4=\"\">Boolean</code></td>\n<td _v-407438a4=\"\"><code _v-407438a4=\"\">true</code></td>\n<td _v-407438a4=\"\">是否显示箭头</td>\n</tr>\n<tr _v-407438a4=\"\">\n<td _v-407438a4=\"\">interval</td>\n<td _v-407438a4=\"\"><code _v-407438a4=\"\">Number</code></td>\n<td _v-407438a4=\"\"><code _v-407438a4=\"\">5000</code></td>\n<td _v-407438a4=\"\">自动切换时间(小于等于0时不自动切换)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
 /* 827 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(828);
+
+/***/ },
+/* 828 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_template__ = __webpack_require__(828)
+	__vue_template__ = __webpack_require__(829)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -41978,7 +42018,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-7be0b2e2/n3ButtonsDocs-10.vue"
+	  var id = "_v-fa5f7740/n3ButtonsDocs-52.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -41987,27 +42027,27 @@
 	})()}
 
 /***/ },
-/* 828 */
+/* 829 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>按钮</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<p><n3-button loading=\"\">default</n3-button>\n<n3-button badge=\"2\">badge</n3-button>\n<n3-button disabled>default</n3-button>\n<n3-button active=\"\" type=\"primary\" loading=\"\">primary</n3-button>\n<n3-button type=\"success\">success</n3-button>\n<n3-button type=\"info\">info</n3-button>\n<n3-button type=\"warning\">warning</n3-button>\n<n3-button type=\"danger\">danger</n3-button></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">loading</span> &gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">badge</span>=<span class=\"hljs-string\">\"2\"</span> &gt;</span>badge<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">loading</span>&gt;</span>primary<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span>success<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span>&gt;</span>info<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span>warning<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span>danger<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<p><n3-button type=\"primary\" size=\"lg\">primary lg</n3-button>\n<n3-button type=\"primary\">primary default</n3-button>\n<n3-button type=\"primary\" size=\"sm\">primary sm</n3-button>\n<n3-button type=\"primary\" size=\"xs\">primary xs</n3-button></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">size</span>=<span class=\"hljs-string\">\"lg\"</span>&gt;</span>lg<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">size</span>=<span class=\"hljs-string\">\"sm\"</span>&gt;</span>sm<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">size</span>=<span class=\"hljs-string\">\"xs\"</span>&gt;</span>xs<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<n3-button-group>\n  <n3-button>default</n3-button>\n  <n3-button>default</n3-button>\n  <n3-button type=\"primary\">primary</n3-button>\n  <n3-button>default</n3-button>\n</n3-button-group>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button-group</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span>primary<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>default<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button-group</span>&gt;</span>\n</code></pre>\n</div>\n<h3>Button参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td><code>lg</code> <code>sm</code> <code>xs</code></td>\n</tr>\n<tr>\n<td>loading</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td><code>加载状态</code></td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>禁用状态</td>\n</tr>\n<tr>\n<td>active</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>激活状态</td>\n</tr>\n<tr>\n<td>badge</td>\n<td><code>String</code> <code>Number</code></td>\n<td></td>\n<td>徽标</td>\n</tr>\n<tr>\n<td>block</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否块级元素</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code>, 如: <code>default</code> <code>primary</code> <code>danger</code> <code>info</code> <code>warning</code> <code>success</code></td>\n<td><code>default</code></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
-/* 829 */
+/* 830 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(830);
+	module.exports = __webpack_require__(831);
 
 /***/ },
-/* 830 */
+/* 831 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(831)
+	__vue_script__ = __webpack_require__(832)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3ToastDocs-11.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(832)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3ToastDocs-51.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(833)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -42023,7 +42063,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-306ea306/n3ToastDocs-11.vue"
+	  var id = "_v-22c7de0e/n3ToastDocs-51.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42032,7 +42072,7 @@
 	})()}
 
 /***/ },
-/* 831 */
+/* 832 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -42120,27 +42160,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 832 */
+/* 833 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>页面提示</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"showToast\">点击</n3-button>\n<div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showToast\"</span>&gt;</span>点击<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showToast () {\n      <span class=\"hljs-keyword\">this</span>.n3Toast({\n        <span class=\"hljs-attr\">text</span>: <span class=\"hljs-string\">'成功'</span>,\n        <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'success'</span>,\n        <span class=\"hljs-attr\">placement</span>: <span class=\"hljs-string\">'top'</span>,\n        <span class=\"hljs-attr\">closeOnClick</span> : <span class=\"hljs-literal\">true</span>\n      })\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>placement</td>\n<td><code>String</code></td>\n<td><code>String</code>. 如: <code>top</code>, <code>top-right</code>,<code>top-left</code>, <code>bottom</code>,<code>bottom-left</code>, <code>bottom-right</code>默认在页面中间</td>\n<td>位置</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td>default</td>\n<td>颜色</td>\n</tr>\n<tr>\n<td>duration</td>\n<td><code>Number</code></td>\n<td><code>3000</code></td>\n<td><code>0</code>为不消失</td>\n</tr>\n<tr>\n<td>closeOnClick</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>点击消失</td>\n</tr>\n</tbody>\n</table>\n</div>\n</div></div></template>\n\n</section>";
 
 /***/ },
-/* 833 */
+/* 834 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(834);
+	module.exports = __webpack_require__(835);
 
 /***/ },
-/* 834 */
+/* 835 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(835)
+	__vue_script__ = __webpack_require__(836)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3DatepickerDocs-12.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(836)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3DatepickerDocs-58.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(837)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -42156,7 +42196,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-37728a55/n3DatepickerDocs-12.vue"
+	  var id = "_v-3e9a79d7/n3DatepickerDocs-58.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42165,7 +42205,7 @@
 	})()}
 
 /***/ },
-/* 835 */
+/* 836 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -42267,27 +42307,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 836 */
+/* 837 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>日期选择器</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<p>\n<pre>\nSelected date is: {{new Date(value).toString().slice(0, -23)}}\n</pre>\n</p>\n<n3-datepicker v-model=\"value\" format=\"yyyy-MM-dd\">\n</n3-datepicker>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-datepicker</span>\n  <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>\n  <span class=\"hljs-attr\">format</span>=<span class=\"hljs-string\">\"yyyy-MM-dd\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-datepicker</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span> <span class=\"hljs-attr\">multiple</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"disabled\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>0<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span>2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"4\"</span>&gt;</span>4<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"5\"</span>&gt;</span>5<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"6\"</span>&gt;</span>6<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>200px</code></td>\n<td>输入框宽度</td>\n</tr>\n<tr>\n<td>format</td>\n<td><code>String</code></td>\n<td><code>yyyy-MM-dd</code></td>\n<td>日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 837 */
+/* 838 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(838);
+	module.exports = __webpack_require__(839);
 
 /***/ },
-/* 838 */
+/* 839 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(839)
+	__vue_script__ = __webpack_require__(840)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TimepickerDocs-13.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(840)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TimepickerDocs-55.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(841)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -42303,7 +42343,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-c313fed2/n3TimepickerDocs-13.vue"
+	  var id = "_v-b534dbd6/n3TimepickerDocs-55.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42312,7 +42352,7 @@
 	})()}
 
 /***/ },
-/* 839 */
+/* 840 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -42411,27 +42451,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 840 */
+/* 841 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>时间选择器</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-timepicker v-model=\"value\" format=\"hh:mm:ss\"></n3-timepicker>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-timepicker</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>  <span class=\"hljs-attr\">format</span>=<span class=\"hljs-string\">\"hh:mm:ss\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-timepicker</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>format</td>\n<td><code>String</code></td>\n<td><code>hh:mm:ss</code></td>\n<td>格式</td>\n</tr>\n<tr>\n<td>hour-range</td>\n<td><code>String</code></td>\n<td><code>[0,60]</code></td>\n<td>小时范围</td>\n</tr>\n<tr>\n<td>minute-range</td>\n<td><code>String</code></td>\n<td><code>[0,60]</code></td>\n<td>分钟范围</td>\n</tr>\n<tr>\n<td>second-range</td>\n<td><code>String</code></td>\n<td><code>[0,60]</code></td>\n<td>秒范围</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>hide</td>\n<td>隐藏</td>\n<td>(currentValue)</td>\n</tr>\n<tr>\n<td>change</td>\n<td>改变</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 841 */
+/* 842 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(842);
+	module.exports = __webpack_require__(843);
 
 /***/ },
-/* 842 */
+/* 843 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(843)
+	__vue_script__ = __webpack_require__(844)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3DatetimepickerDocs-14.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(844)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3DatetimepickerDocs-56.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(845)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -42447,7 +42487,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-fa4bc3ac/n3DatetimepickerDocs-14.vue"
+	  var id = "_v-ec6ca0b0/n3DatetimepickerDocs-56.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42456,7 +42496,7 @@
 	})()}
 
 /***/ },
-/* 843 */
+/* 844 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -42544,27 +42584,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 844 */
+/* 845 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>日期时间选择器</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-datetimepicker v-model=\"value\" format=\"yyyy-MM-dd hh:mm:ss\"></n3-datetimepicker>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-datetimepicker</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span> <span class=\"hljs-attr\">format</span>=<span class=\"hljs-string\">\"yyyy-MM-dd hh:mm\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-datetimepicker</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>200px</code></td>\n<td>输入框宽度</td>\n</tr>\n<tr>\n<td>format</td>\n<td><code>String</code></td>\n<td><code>yyyy-MM-dd hh:mm:ss</code></td>\n<td>日期格式</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>hide</td>\n<td>隐藏</td>\n<td>(currentValue)</td>\n</tr>\n<tr>\n<td>change</td>\n<td>改变</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 845 */
+/* 846 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(846);
+	module.exports = __webpack_require__(847);
 
 /***/ },
-/* 846 */
+/* 847 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(847)
+	__vue_script__ = __webpack_require__(848)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3DropdownDocs-15.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(848)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3DropdownDocs-57.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(849)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -42580,7 +42620,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-0ce4363a/n3DropdownDocs-15.vue"
+	  var id = "_v-007d7661/n3DropdownDocs-57.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42589,7 +42629,7 @@
 	})()}
 
 /***/ },
-/* 847 */
+/* 848 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -42681,27 +42721,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 848 */
+/* 849 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>下拉框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-dropdown>\n    <div slot=\"trigger\">\n      <n3-button>\n        点击\n        <n3-icon :type=\"show?'angle-up' : 'angle-down'\"></n3-icon>\n      </n3-button>\n    </div>\n    <li><a href=\"#\">Action</a></li>\n    <li><a href=\"#\">Another action</a></li>\n    <li><a href=\"#\">Something else here</a></li>\n  </n3-dropdown>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-dropdown</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"trigger\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>\n      点击\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-icon</span> <span class=\"hljs-attr\">:type</span>=<span class=\"hljs-string\">\"show?'angle-up' : 'angle-down'\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-icon</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">a</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">\"#\"</span>&gt;</span>Action<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">a</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">a</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">\"#\"</span>&gt;</span>Another action<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">a</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">a</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">\"#\"</span>&gt;</span>Something else here<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">a</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-dropdown</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">show</span>: <span class=\"hljs-literal\">false</span>\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示</td>\n</tr>\n<tr>\n<td>trigger</td>\n<td><code>String</code> 如: <code>click``hover</code></td>\n<td>click</td>\n<td>触发方式</td>\n</tr>\n<tr>\n<td>click-close</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>点击关闭</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 849 */
+/* 850 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(850);
+	module.exports = __webpack_require__(851);
 
 /***/ },
-/* 850 */
+/* 851 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(851)
+	__vue_script__ = __webpack_require__(852)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3ModalDocs-16.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(852)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3ModalDocs-60.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(853)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -42717,7 +42757,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-5fe7cfbc/n3ModalDocs-16.vue"
+	  var id = "_v-681b7dd1/n3ModalDocs-60.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -42726,7 +42766,7 @@
 	})()}
 
 /***/ },
-/* 851 */
+/* 852 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -43118,27 +43158,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 852 */
+/* 853 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>弹出框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<blockquote>\n<p>组件调用</p>\n</blockquote>\n<p><n3-button @click.native=\"showModal\">Show modal</n3-button>\n<n3-modal title=\"Modal title\" effect=\"fade\" width=\"400px\" ref=\"modal\"></n3-modal></p>\n  <div slot=\"body\">\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  </div>\n\n<n3-button class=\"btn btn-success\" @click.native=\"showBigModal\">Big modal</n3-button>\n<n3-modal title=\"Big Modal\" effect=\"fade\" width=\"800px\" ref=\"bigModal\">\n  <div slot=\"body\">\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  </div>\n</n3-modal>\n<n3-button class=\"btn btn-primary\" @click.native=\"showZoomModal\">Zoom modal</n3-button>\n<n3-modal title=\"Zoom Modal\" effect=\"zoom\" width=\"400px\" ref=\"zoomModal\">\n  <div slot=\"body\">\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  </div>\n</n3-modal>\n<n3-button @click.native=\"showCustomModal\">Show custom modal</n3-button>\n<n3-modal effect=\"fade\" width=\"400px\" ref=\"customModal\">\n  <div slot=\"header\">\n  </div>\n  <div slot=\"body\">\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  </div>\n  <div slot=\"footer\">\n  </div>\n</n3-modal>\n<n3-button @click.native=\"showConfirm\">Show confirm</n3-button>\n<n3-button @click.native=\"showAlert\">Show alert</n3-button>\n</div>\n<hr>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showModal\"</span>&gt;</span>Show modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Modal title\"</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"modal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"btn btn-success\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showBigModal\"</span>&gt;</span>Big modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Big Modal\"</span>  <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"800px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"bigModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"btn btn-primary\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showZoomModal\"</span>&gt;</span>Zoom modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Zoom Modal\"</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"zoom\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"zoomModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"showCustomModal\"</span>&gt;</span>Show custom modal<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-modal</span>  <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"customModal\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"header\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>\n    What's in a name? That which we call a rose\n    By any other name would smell as sweet.\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"footer\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-modal</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    showModal () {\n      <span class=\"hljs-keyword\">this</span>.$refs.modal.open()\n    },\n    showBigModal () {\n      <span class=\"hljs-keyword\">this</span>.$refs.bigModal.open()\n    },\n    showZoomModal () {\n      <span class=\"hljs-keyword\">this</span>.$refs.zoomModal.open()\n    },\n    showCustomModal () {\n      <span class=\"hljs-keyword\">this</span>.$refs.customModal.open()\n    }\n  }\n}\n</code></pre>\n<hr>\n<blockquote>\n<p>函数调用</p>\n</blockquote>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.alert({\n        <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\">'消息框'</span>\n        message: <span class=\"hljs-string\">'这是一个消息框。'</span>,\n        <span class=\"hljs-attr\">effect</span>: <span class=\"hljs-string\">'fade'</span>,\n        <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'info'</span>,\n        onShow () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'打开对话框时触发'</span>)\n        },\n        onHide () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'关闭对话框时触发'</span>)\n        }\n      })\n    },\n    showConfirm () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.confirm({\n        <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\">'对话框'</span>,\n        <span class=\"hljs-attr\">message</span>: <span class=\"hljs-string\">'这是一个提供选择的对话框。'</span>,\n        <span class=\"hljs-attr\">effect</span>: <span class=\"hljs-string\">'zoom'</span>,\n        <span class=\"hljs-attr\">type</span>: <span class=\"hljs-string\">'success'</span>,\n        onShow () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'打开对话框时触发'</span>)\n        },\n        onConfirm () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'点击确定按钮时触发'</span>)\n        },\n        onHide () {\n          <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-string\">'关闭对话框时触发'</span>)\n        }\n      })\n    }\n  }\n}\n</code></pre>\n<hr>\n<h3>组件调用</h3>\n<h4>组件参数</h4>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框标题</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code></td>\n<td>'fade'</td>\n<td><code>fade``zoom</code></td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td></td>\n</tr>\n<tr>\n<td>backdrop</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>点击遮罩层是否关闭弹出框</td>\n</tr>\n</tbody>\n</table>\n<h4>Events</h4>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>show</td>\n<td>显示模态框时</td>\n<td></td>\n</tr>\n<tr>\n<td>hide</td>\n<td>隐藏模态框时</td>\n<td></td>\n</tr>\n<tr>\n<td>confirm</td>\n<td>按下确认时</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h4>组件方法</h4>\n<table>\n<thead>\n<tr>\n<th>方法名称</th>\n<th>说明</th>\n<th>备注</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>open</td>\n<td>显示模态框</td>\n<td></td>\n</tr>\n<tr>\n<td>close</td>\n<td>隐藏模态框</td>\n<td></td>\n</tr>\n<tr>\n<td>confirm</td>\n<td>触发确认事件</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h3>函数调用</h3>\n<blockquote>\n<p>直接在实例中调用this.n3Mode进行modal的创建和操作</p>\n</blockquote>\n<h4>函数参数</h4>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框标题，如果为空则不渲染 header</td>\n</tr>\n<tr>\n<td>message</td>\n<td><code>String</code></td>\n<td></td>\n<td>弹出框内容</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code></td>\n<td>'fade'</td>\n<td><code>fade``zoom</code></td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td>弹出框类型，用于决定弹出框提示图标。</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>600px</code></td>\n<td>弹出框宽度</td>\n</tr>\n<tr>\n<td>onShow</td>\n<td><code>Function</code></td>\n<td></td>\n<td>打开弹出框时的回调函数</td>\n</tr>\n<tr>\n<td>onHide</td>\n<td><code>Function</code></td>\n<td></td>\n<td>关闭弹出框时的回调函数</td>\n</tr>\n<tr>\n<td>onConfirm</td>\n<td><code>Function</code></td>\n<td></td>\n<td>点击弹出框确定按钮时的回调函数</td>\n</tr>\n</tbody>\n</table>\n<h3>用法说明</h3>\n<h4>组件驱动</h4>\n<p>如果你只需要一个简单的弹出框 ，你只需要传递 <code>title</code> 参数 ，将默认带上footer.</p>\n<p>但是如果你需要自己定制弹出框内容，你可以实现</p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"header\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"body\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"footer\"</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n</code></pre>\n<h4>函数驱动</h4>\n<p>N3 提供函数驱动的一次性模态框，通过实例属性 n3Modal.alert 及 n3Modal.confirm 调用，它会在使用时动态绑定到 DOM 树中，并在关闭后自动销毁。</p>\n<p>为了还原原生对话框操作体验，函数驱动的弹出框将不能通过点击背景进行关闭。</p>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">const</span> options = {...}\n\n<span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  <span class=\"hljs-attr\">methods</span>: {\n    showAlert () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.alert(options)\n    },\n    showConfirm () {\n      <span class=\"hljs-keyword\">this</span>.n3Modal.confirm(options)\n    }\n  }\n}\n\n</code></pre>\n</div>\n</template>\n</section>";
 
 /***/ },
-/* 853 */
+/* 854 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(854);
+	module.exports = __webpack_require__(855);
 
 /***/ },
-/* 854 */
+/* 855 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(855)
+	__vue_script__ = __webpack_require__(856)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3InputDocs-17.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(856)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3InputDocs-59.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(857)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -43154,7 +43194,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-13fbb400/n3InputDocs-17.vue"
+	  var id = "_v-061c9104/n3InputDocs-59.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -43163,7 +43203,7 @@
 	})()}
 
 /***/ },
-/* 855 */
+/* 856 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -43324,27 +43364,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 856 */
+/* 857 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>普通输入框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<p><n3-input v-model=\"value\" ref=\"input\" show-clean=\"\"></n3-input>\n<n3-button @click.native=\"$refs.input.focus()\">聚焦</n3-button></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"input\"</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"archive\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"$refs.input.focus()\"</span>&gt;</span>聚焦<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<h3>密码输入框</h3>\n<p><n3-input v-model=\"value2\" type=\"password\" ref=\"input2\" show-clean=\"\"></n3-input>\n<n3-button @click.native=\"$refs.input2.focus()\">聚焦</n3-button></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value2\"</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">\"password\"</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"archive\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"$refs.input2.focus()\"</span>&gt;</span>聚焦<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>－</td>\n<td></td>\n</tr>\n<tr>\n<td>readonly</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>只读</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>禁止改变值</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>宽度</td>\n</tr>\n<tr>\n<td>placeholder</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>placeholder</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>text</code></td>\n<td>输入框类型</td>\n</tr>\n<tr>\n<td>icon</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>icon</td>\n</tr>\n<tr>\n<td>show-clean</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>显示清除icon</td>\n</tr>\n</tbody>\n</table>\n<h3>组件方法</h3>\n<table>\n<thead>\n<tr>\n<th>方法名称</th>\n<th>说明</th>\n<th>备注</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>clean</td>\n<td>清空内容</td>\n<td></td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td></td>\n</tr>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n <p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 857 */
+/* 858 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(858);
+	module.exports = __webpack_require__(859);
 
 /***/ },
-/* 858 */
+/* 859 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(859)
+	__vue_script__ = __webpack_require__(860)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3InputNumberDocs-18.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(860)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3InputNumberDocs-62.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(861)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -43360,7 +43400,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-925f8310/n3InputNumberDocs-18.vue"
+	  var id = "_v-81f826e6/n3InputNumberDocs-62.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -43369,7 +43409,7 @@
 	})()}
 
 /***/ },
-/* 859 */
+/* 860 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -43492,27 +43532,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 860 */
+/* 861 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>数字输入框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-input-number v-model=\"value\"></n3-input-number>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input-number</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input-number</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>－</td>\n<td></td>\n</tr>\n<tr>\n<td>readonly</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>只读</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>禁止改变值</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>宽度</td>\n</tr>\n<tr>\n<td>placeholder</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>placeholder</td>\n</tr>\n<tr>\n<td>max</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>最大值</td>\n</tr>\n<tr>\n<td>min</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>最小值</td>\n</tr>\n<tr>\n<td>step</td>\n<td><code>Number</code></td>\n<td><code>1</code></td>\n<td>增减量值</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 861 */
+/* 862 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(862);
+	module.exports = __webpack_require__(863);
 
 /***/ },
-/* 862 */
+/* 863 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(863)
+	__vue_script__ = __webpack_require__(864)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TextareaDocs-19.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(864)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TextareaDocs-61.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(865)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -43528,7 +43568,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-b7e127c4/n3TextareaDocs-19.vue"
+	  var id = "_v-a7b2299e/n3TextareaDocs-61.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -43537,7 +43577,7 @@
 	})()}
 
 /***/ },
-/* 863 */
+/* 864 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -43632,27 +43672,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 864 */
+/* 865 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h2>文本框</h2>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n   <n3-textarea v-model=\"value\"></n3-textarea>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-textarea</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-textarea</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>resize</td>\n<td><code>boolean</code></td>\n<td><code>false</code></td>\n<td>是否支持拖动</td>\n</tr>\n<tr>\n<td>max-length</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>字符数限制</td>\n</tr>\n<tr>\n<td>max-height</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>最大高度</td>\n</tr>\n<tr>\n<td>min-height</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>最小高度</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 865 */
+/* 866 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(866);
+	module.exports = __webpack_require__(867);
 
 /***/ },
-/* 866 */
+/* 867 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(867)
+	__vue_script__ = __webpack_require__(868)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3NavDocs-20.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(868)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3NavDocs-64.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(869)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -43668,7 +43708,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-f8c074c2/n3NavDocs-20.vue"
+	  var id = "_v-eaa8f3c2/n3NavDocs-64.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -43677,7 +43717,7 @@
 	})()}
 
 /***/ },
-/* 867 */
+/* 868 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -43899,27 +43939,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 868 */
+/* 869 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>导航</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-nav :default-active=\"activeIndex\" mode=\"horizontal\" @select=\"handleSelect\">\n<n3-nav-item index=\"1\">导航一</n3-nav-item>\n<n3-sub-nav index=\"2\">\n<template slot=\"title\">导航二</template>\n<n3-nav-item index=\"2-1\">选项1</n3-nav-item>\n<n3-nav-item index=\"2-2\">选项2</n3-nav-item>\n<n3-nav-item index=\"2-3\">选项3</n3-nav-item>\n</n3-sub-nav>\n<n3-nav-item index=\"3\"><a href=\"#\" target=\"_blank\">导航三</a></n3-nav-item>\n</n3-nav>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-nav</span>  <span class=\"hljs-attr\">:default-active</span>=<span class=\"hljs-string\">\"activeIndex\"</span>  <span class=\"hljs-attr\">mode</span>=<span class=\"hljs-string\">\"horizontal\"</span> <span class=\"hljs-attr\">@select</span>=<span class=\"hljs-string\">\"handleSelect\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-nav-item</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>导航一<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-nav-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-sub-nav</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">template</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"title\"</span>&gt;</span>导航二<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">template</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-nav-item</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"2-1\"</span>&gt;</span>选项1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-nav-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-nav-item</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"2-2\"</span>&gt;</span>选项2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-nav-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-nav-item</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"2-3\"</span>&gt;</span>选项3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-nav-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-sub-nav</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-nav-item</span> <span class=\"hljs-attr\">index</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">a</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">\"#\"</span> <span class=\"hljs-attr\">target</span>=<span class=\"hljs-string\">\"_blank\"</span>&gt;</span>导航三<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">a</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-nav-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-nav</span>&gt;</span>\n</code></pre>\n<n3-nav default-active=\"2\" theme=\"dark\" @open=\"handleOpen\" @close=\"handleClose\" :style=\"{width:'180px'}\">\n<n3-sub-nav index=\"1\">\n<template slot=\"title\"><n3-icon type=\"bars\"></n3-icon>导航一</template>\n<n3-nav-group key=\"1\">\n<template slot=\"title\">分组一</template>\n<n3-nav-item index=\"1-1\" key=\"1-1\">选项1</n3-nav-item>\n<n3-nav-item index=\"1-2\" key=\"1-2\">选项2</n3-nav-item>\n</n3-nav-group>\n<n3-nav-group title=\"分组2\" key=\"2\">\n<n3-nav-item index=\"1-3\" key=\"1-2\">选项3</n3-nav-item>\n</n3-nav-group>\n<n3-sub-nav index=\"1-4\">\n<template slot=\"title\">选项4</template>\n<n3-nav-item index=\"1-4-1\">选项1</n3-nav-item>\n</n3-sub-nav>\n</n3-sub-nav>\n<n3-nav-item index=\"2\"><n3-icon type=\"eye\"></n3-icon>导航二</n3-nav-item>\n<n3-nav-item index=\"3\"><n3-icon type=\"cloud\"></n3-icon>导航三</n3-nav-item>\n</n3-nav>\n</div>\n<h3>n3-nav参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>mode</td>\n<td>String</td>\n<td>horizontal,vertical</td>\n<td>vertical</td>\n</tr>\n<tr>\n<td>theme</td>\n<td>String</td>\n<td>light,dark</td>\n<td>light</td>\n</tr>\n<tr>\n<td>default-active</td>\n<td>String</td>\n<td>-</td>\n<td>当前激活菜单的index</td>\n</tr>\n<tr>\n<td>default-openeds</td>\n<td>Array</td>\n<td>—</td>\n<td>当前打开的submenu的 key 数组\tArray</td>\n</tr>\n<tr>\n<td>unique-opened</td>\n<td>Boolean</td>\n<td>—</td>\n<td>false</td>\n</tr>\n<tr>\n<td>menu-trigger</td>\n<td>String</td>\n<td>hover</td>\n<td>子菜单打开的触发方式(只在 mode 为 horizontal 时有效)</td>\n</tr>\n<tr>\n<td>router</td>\n<td>Boolean</td>\n<td>false</td>\n<td>vue-router 的模式，启用该模式会在激活导航时以 index 作为 path 进行路由跳转</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件</th>\n<th>说明类</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>select</td>\n<td>菜单激活回调\tindex: 选中菜单项的</td>\n<td>indexPath: 选中菜单项的 index path</td>\n</tr>\n<tr>\n<td>open</td>\n<td>SubMenu 展开的回调</td>\n<td>index: 打开的 subMenu 的 index， indexPath: 打开的 subMenu 的 index path</td>\n</tr>\n<tr>\n<td>close</td>\n<td>SubMenu 收起的回调</td>\n<td>index: 收起的 subMenu 的 index， indexPath: 收起的 subMenu 的 index path</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-sub-nav参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>index</td>\n<td>String</td>\n<td>-</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>n3-nav-item参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>index</td>\n<td>String</td>\n<td>-</td>\n<td></td>\n</tr>\n<tr>\n<td>route</td>\n<td>Object</td>\n<td>-</td>\n<td>Vue Router 路径对象</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-nav-group参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>title</td>\n<td>String</td>\n<td>-</td>\n<td>分组</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 869 */
+/* 870 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(870);
+	module.exports = __webpack_require__(871);
 
 /***/ },
-/* 870 */
+/* 871 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(871)
+	__vue_script__ = __webpack_require__(872)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3PopoverDocs-21.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(872)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3PopoverDocs-66.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(873)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -43935,7 +43975,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-56543544/n3PopoverDocs-21.vue"
+	  var id = "_v-48208542/n3PopoverDocs-66.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -43944,7 +43984,7 @@
 	})()}
 
 /***/ },
-/* 871 */
+/* 872 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -44240,28 +44280,28 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 872 */
+/* 873 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>气泡框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\" placement=\"top\">\n    <div slot=\"content\">\n        从前有座山\n    </div>\n    <n3-button>Popover on top</n3-button>\n  </n3-popover>\n  <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\" placement=\"left\">\n      <div slot=\"content\">\n        山里有座庙\n    </div>\n    <n3-button>Popover on left</n3-button>\n  </n3-popover>\n  <n3-popover effect=\"fade\" :header=\"true\" title=\"Title\" placement=\"right\">\n      <div slot=\"content\">\n        庙里有个老和尚\n    </div>\n    <n3-button>Popover on right</n3-button>\n  </n3-popover>\n  <n3-popover effect=\"fade\" placement=\"bottom\" :header=\"true\" title=\"Title\">\n      <div slot=\"content\">\n        老和尚说从前有座山\n    </div>\n    <n3-button>Popover on bottom</n3-button>\n  </n3-popover>\n  <hr>\n  <h4>No title</h4>\n  <n3-popover effect=\"fade\" :header=\"false\" title=\"Title\" placement=\"top\">\n      <div slot=\"content\">\n        山里有座庙\n      </div>\n      <n3-button>Popover on top</n3-button>\n  </n3-popover>\n  <n3-popover effect=\"fade\" :header=\"false\" title=\"Title\" placement=\"left\">\n    <div slot=\"content\">\n        庙里有个老和尚\n    </div>\n    <n3-button>Popover on left</n3-button>\n  </n3-popover>\n  <n3-popover effect=\"fade\" :header=\"false\" title=\"Title\" placement=\"right\">\n    <div slot=\"content\">\n        老和尚说从前有座山\n    </div>\n    <n3-button>Popover on right</n3-button>\n  </n3-popover>\n  <n3-popover effect=\"fade\" :header=\"false\" placement=\"bottom\" title=\"Title\">\n    <div slot=\"content\">\n        山里有座庙\n      </div>\n    <n3-button>Popover on bottom</n3-button>\n  </n3-popover>\n  <hr>\n  <h4>Triger</h4>\n    <n3-popover effect=\"scale\" title=\"Title\" placement=\"top\" trigger=\"hover\">\n        <div slot=\"content\">\n          庙里有个老和尚\n        </div>\n        <n3-button>Mouseenter</n3-button>\n    </n3-popover>\n    <hr>\n  <h4>Focus</h4>\n  <n3-popover effect=\"scale\" title=\"Title\" placement=\"bottom\" trigger=\"focus\">\n    <div slot=\"content\">\n        老和尚很无聊\n    </div>\n    <n3-input placeholder=\"Focus\"></n3-input>\n  </n3-popover>\n  <h4>气泡确认</h4>\n  <n3-pop-confirm content=\"确定删除么？\" :on-confirm=\"del(item)\">\n      <n3-button>删除</n3-button>\n  </n3-pop-confirm>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span> &gt;</span>\n     从前有座山\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on top<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span>&gt;</span>\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      山里有座庙\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      庙里有个老和尚\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"bottom\"</span> <span class=\"hljs-attr\">:header</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> &gt;</span>\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span> &gt;</span>\n      老和尚说从前有座山\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on bottom<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- No title  --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span> =<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span>&gt;</span>\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      山里有座庙\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on top<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span> =<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      庙里有个老和尚\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span> =<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      老和尚说从前有座山\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"fade\"</span> <span class=\"hljs-attr\">:header</span> =<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"bottom\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      山里有座庙\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>Popover on bottom<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- Trigger  --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"scale\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"hover\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n    庙里有个老和尚\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>Mouseenter<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- Focus  --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-popover</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"scale\"</span> <span class=\"hljs-attr\">title</span>=<span class=\"hljs-string\">\"Title\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"bottom\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"focus\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">slot</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      老和尚很无聊\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span> <span class=\"hljs-attr\">placeholder</span>=<span class=\"hljs-string\">\"Focus\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-popover</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 气泡确认  --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-pop-confirm</span>\n    <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">\"确定删除么？\"</span>\n    <span class=\"hljs-attr\">:on-confirm</span>=<span class=\"hljs-string\">\"del(item)\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>删除<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-pop-confirm</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">del(item){\n  <span class=\"hljs-keyword\">return</span> <span class=\"hljs-keyword\">new</span> <span class=\"hljs-built_in\">Promise</span>(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">resolve, reject</span>) </span>{\n    setTimeout(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\"></span>) </span>{\n      alert(<span class=\"hljs-string\">'删除了'</span> +  item)\n      resolve()\n    },<span class=\"hljs-number\">500</span>);\n  });\n}\n</code></pre>\n<h3>popover参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>trigger</td>\n<td><code>String</code>, 如: <code>click</code> <code>focus</code> <code>hover</code></td>\n<td><code>click</code></td>\n<td>触发方式</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code>, 如: <code>scale</code> <code>fade</code></td>\n<td><code>scale</code></td>\n<td></td>\n</tr>\n<tr>\n<td>title</td>\n<td><code>String</code></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>header</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否显示头部</td>\n</tr>\n<tr>\n<td>placement</td>\n<td><code>String</code>, 如: <code>top</code> <code>left</code> <code>right</code> <code>bottom</code></td>\n<td></td>\n<td>定位</td>\n</tr>\n</tbody>\n</table>\n<h3>popconfirm参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>effect</td>\n<td><code>String</code>, 如: <code>scale</code> <code>fade</code></td>\n<td><code>fade</code></td>\n<td></td>\n</tr>\n<tr>\n<td>content</td>\n<td><code>String</code></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>placement</td>\n<td><code>String</code>, 如: <code>top</code> <code>left</code> <code>right</code> <code>bottom</code></td>\n<td></td>\n<td>定位</td>\n</tr>\n<tr>\n<td>on-confirm</td>\n<td><code>Function</code></td>\n<td></td>\n<td>点击确定的回调函数</td>\n</tr>\n<tr>\n<td>ok-text</td>\n<td><code>String</code></td>\n<td>ok</td>\n<td>确定按钮的文案</td>\n</tr>\n<tr>\n<td>cancel-text</td>\n<td><code>String</code></td>\n<td>cancel</td>\n<td>取消按钮的文案</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 873 */
+/* 874 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(874);
+	module.exports = __webpack_require__(875);
 
 /***/ },
-/* 874 */
+/* 875 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__webpack_require__(875)
-	__vue_script__ = __webpack_require__(877)
+	__webpack_require__(876)
+	__vue_script__ = __webpack_require__(878)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3ProgressbarDocs-22.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(878)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3ProgressbarDocs-65.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(879)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -44277,7 +44317,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-7545bdc4/n3ProgressbarDocs-22.vue"
+	  var id = "_v-674a6bc6/n3ProgressbarDocs-65.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -44286,23 +44326,23 @@
 	})()}
 
 /***/ },
-/* 875 */
+/* 876 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(876);
+	var content = __webpack_require__(877);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(351)("f80a9340", content, false);
+	var update = __webpack_require__(351)("5feb9f66", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-7545bdc4&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-22.vue", function() {
-	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-7545bdc4&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-22.vue");
+	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-674a6bc6&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-65.vue", function() {
+	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-674a6bc6&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3ProgressbarDocs-65.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -44312,7 +44352,7 @@
 	}
 
 /***/ },
-/* 876 */
+/* 877 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(350)();
@@ -44320,13 +44360,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.margin[_v-7545bdc4]{\n  margin-bottom:20px;\n}\n\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3ProgressbarDocs-22.vue?225db43a"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAoKA;EACA,mBAAA;CACA","file":"n3ProgressbarDocs-22.vue","sourcesContent":["<template><section><template>\n<h3>进度条</h3>\n<div class=\"bs-docs-section\">\n<blockquote>\n<p>高度</p>\n</blockquote>\n<div class=\"bs-example\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"40\" type=\"success\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"20\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">height</span>=<span class=\"hljs-string\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"40\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>动态变化 <n3-button @click.native=\"dynamicClick\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress>\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">dynamicData</span>: [<span class=\"hljs-number\">5</span>, <span class=\"hljs-number\">15</span>, <span class=\"hljs-number\">25</span>, <span class=\"hljs-number\">35</span>, <span class=\"hljs-number\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\">this</span>.dynamicData = <span class=\"hljs-keyword\">this</span>.dynamicData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * <span class=\"hljs-number\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote>\n<p>叠加 <n3-button @click.native=\"stackedClick\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress>\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[0]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[1]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[2]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[3]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">striped</span> &gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">stackedData</span>: [<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">20</span>, <span class=\"hljs-number\">30</span>, <span class=\"hljs-number\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">100</span>\n      <span class=\"hljs-keyword\">this</span>.stackedData = <span class=\"hljs-keyword\">this</span>.stackedData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">const</span> random = <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>now</td>\n<td><code>Number</code></td>\n<td></td>\n<td>当前进度</td>\n</tr>\n<tr>\n<td>height</td>\n<td><code>String</code></td>\n<td>20px</td>\n<td>高度</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>样式</td>\n</tr>\n<tr>\n<td>label</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示进度提示</td>\n</tr>\n<tr>\n<td>striped</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示条纹</td>\n</tr>\n<tr>\n<td>animated</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.margin{\n  margin-bottom:20px;\n}\n\n</style>\n<script>\nexport default {\n  data () {\n    return {\n      dynamicData: [5, 15, 25, 35, 45],\n      stackedData: [10, 20, 30, 40]\n    }\n  },\n  methods: {\n    dynamicClick () {\n      this.dynamicData = this.dynamicData.map(() => {\n        return Math.floor(Math.random() * 50)\n      })\n    },\n    stackedClick () {\n      let i = 100\n      this.stackedData = this.stackedData.map(() => {\n        const random = Math.floor(Math.random() * i)\n        i = i - random\n        return random\n      })\n    }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.margin[_v-674a6bc6]{\n  margin-bottom:20px;\n}\n\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3ProgressbarDocs-65.vue?6e77e5ca"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAoKA;EACA,mBAAA;CACA","file":"n3ProgressbarDocs-65.vue","sourcesContent":["<template><section><template>\n<h3>进度条</h3>\n<div class=\"bs-docs-section\">\n<blockquote>\n<p>高度</p>\n</blockquote>\n<div class=\"bs-example\">\n  <div class=\"row\">\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\">\n      <n3-progress class=\"margin\">\n        <n3-progressbar :now=\"40\" type=\"success\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"20\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">height</span>=<span class=\"hljs-string\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"40\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>动态变化 <n3-button @click.native=\"dynamicClick\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress>\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"info\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">dynamicData</span>: [<span class=\"hljs-number\">5</span>, <span class=\"hljs-number\">15</span>, <span class=\"hljs-number\">25</span>, <span class=\"hljs-number\">35</span>, <span class=\"hljs-number\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\">this</span>.dynamicData = <span class=\"hljs-keyword\">this</span>.dynamicData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">return</span> <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * <span class=\"hljs-number\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote>\n<p>叠加 <n3-button @click.native=\"stackedClick\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-progress>\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[0]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"warning\"</span> <span class=\"hljs-attr\">striped</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[1]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"success\"</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[2]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-progressbar</span> <span class=\"hljs-attr\">:now</span>=<span class=\"hljs-string\">\"stackedData[3]\"</span> <span class=\"hljs-attr\">label</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">striped</span> &gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">stackedData</span>: [<span class=\"hljs-number\">10</span>, <span class=\"hljs-number\">20</span>, <span class=\"hljs-number\">30</span>, <span class=\"hljs-number\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\">let</span> i = <span class=\"hljs-number\">100</span>\n      <span class=\"hljs-keyword\">this</span>.stackedData = <span class=\"hljs-keyword\">this</span>.stackedData.map(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\">const</span> random = <span class=\"hljs-built_in\">Math</span>.floor(<span class=\"hljs-built_in\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>now</td>\n<td><code>Number</code></td>\n<td></td>\n<td>当前进度</td>\n</tr>\n<tr>\n<td>height</td>\n<td><code>String</code></td>\n<td>20px</td>\n<td>高度</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>样式</td>\n</tr>\n<tr>\n<td>label</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示进度提示</td>\n</tr>\n<tr>\n<td>striped</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示条纹</td>\n</tr>\n<tr>\n<td>animated</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.margin{\n  margin-bottom:20px;\n}\n\n</style>\n<script>\nexport default {\n  data () {\n    return {\n      dynamicData: [5, 15, 25, 35, 45],\n      stackedData: [10, 20, 30, 40]\n    }\n  },\n  methods: {\n    dynamicClick () {\n      this.dynamicData = this.dynamicData.map(() => {\n        return Math.floor(Math.random() * 50)\n      })\n    },\n    stackedClick () {\n      let i = 100\n      this.stackedData = this.stackedData.map(() => {\n        const random = Math.floor(Math.random() * i)\n        i = i - random\n        return random\n      })\n    }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 877 */
+/* 878 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -44532,27 +44572,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 878 */
+/* 879 */
 /***/ function(module, exports) {
 
-	module.exports = "<section _v-7545bdc4=\"\"><template>\n<h3 _v-7545bdc4=\"\">进度条</h3>\n<div class=\"bs-docs-section\" _v-7545bdc4=\"\">\n<blockquote _v-7545bdc4=\"\">\n<p _v-7545bdc4=\"\">高度</p>\n</blockquote>\n<div class=\"bs-example\" _v-7545bdc4=\"\">\n  <div class=\"row\" _v-7545bdc4=\"\">\n    <div class=\"col-md-4\" _v-7545bdc4=\"\">\n      <n3-progress class=\"margin\" _v-7545bdc4=\"\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-7545bdc4=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\" _v-7545bdc4=\"\">\n      <n3-progress class=\"margin\" _v-7545bdc4=\"\">\n        <n3-progressbar :now=\"40\" type=\"success\" _v-7545bdc4=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre _v-7545bdc4=\"\"><code class=\"language-html\" _v-7545bdc4=\"\"><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">class</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"20\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">height</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">class</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"40\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"success\"</span>&gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote _v-7545bdc4=\"\">\n<p _v-7545bdc4=\"\">动态变化 <n3-button @click.native=\"dynamicClick\" _v-7545bdc4=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-7545bdc4=\"\">\n  <n3-progress class=\"margin\" _v-7545bdc4=\"\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-7545bdc4=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-7545bdc4=\"\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-7545bdc4=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-7545bdc4=\"\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-7545bdc4=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress _v-7545bdc4=\"\">\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-7545bdc4=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre _v-7545bdc4=\"\"><code class=\"language-html\" _v-7545bdc4=\"\"><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">class</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"info\"</span> &gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">class</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">class</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">class</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre _v-7545bdc4=\"\"><code class=\"language-javascript\" _v-7545bdc4=\"\"><span class=\"hljs-keyword\" _v-7545bdc4=\"\">export</span> <span class=\"hljs-keyword\" _v-7545bdc4=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-7545bdc4=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-7545bdc4=\"\">dynamicData</span>: [<span class=\"hljs-number\" _v-7545bdc4=\"\">5</span>, <span class=\"hljs-number\" _v-7545bdc4=\"\">15</span>, <span class=\"hljs-number\" _v-7545bdc4=\"\">25</span>, <span class=\"hljs-number\" _v-7545bdc4=\"\">35</span>, <span class=\"hljs-number\" _v-7545bdc4=\"\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-7545bdc4=\"\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\" _v-7545bdc4=\"\">this</span>.dynamicData = <span class=\"hljs-keyword\" _v-7545bdc4=\"\">this</span>.dynamicData.map(<span class=\"hljs-function\" _v-7545bdc4=\"\"><span class=\"hljs-params\" _v-7545bdc4=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-7545bdc4=\"\">return</span> <span class=\"hljs-built_in\" _v-7545bdc4=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-7545bdc4=\"\">Math</span>.random() * <span class=\"hljs-number\" _v-7545bdc4=\"\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote _v-7545bdc4=\"\">\n<p _v-7545bdc4=\"\">叠加 <n3-button @click.native=\"stackedClick\" _v-7545bdc4=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-7545bdc4=\"\">\n  <n3-progress _v-7545bdc4=\"\">\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-7545bdc4=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-7545bdc4=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-7545bdc4=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-7545bdc4=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre _v-7545bdc4=\"\"><code class=\"language-html\" _v-7545bdc4=\"\"><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"stackedData[0]\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">label</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"warning\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"stackedData[1]\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">label</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"success\"</span> &gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"stackedData[2]\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">label</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">:now</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"stackedData[3]\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">label</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">type</span>=<span class=\"hljs-string\" _v-7545bdc4=\"\">\"primary\"</span> <span class=\"hljs-attr\" _v-7545bdc4=\"\">striped</span> &gt;</span>\n<span class=\"hljs-tag\" _v-7545bdc4=\"\">&lt;/<span class=\"hljs-name\" _v-7545bdc4=\"\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre _v-7545bdc4=\"\"><code class=\"language-javascript\" _v-7545bdc4=\"\"><span class=\"hljs-keyword\" _v-7545bdc4=\"\">export</span> <span class=\"hljs-keyword\" _v-7545bdc4=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-7545bdc4=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-7545bdc4=\"\">stackedData</span>: [<span class=\"hljs-number\" _v-7545bdc4=\"\">10</span>, <span class=\"hljs-number\" _v-7545bdc4=\"\">20</span>, <span class=\"hljs-number\" _v-7545bdc4=\"\">30</span>, <span class=\"hljs-number\" _v-7545bdc4=\"\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-7545bdc4=\"\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\" _v-7545bdc4=\"\">let</span> i = <span class=\"hljs-number\" _v-7545bdc4=\"\">100</span>\n      <span class=\"hljs-keyword\" _v-7545bdc4=\"\">this</span>.stackedData = <span class=\"hljs-keyword\" _v-7545bdc4=\"\">this</span>.stackedData.map(<span class=\"hljs-function\" _v-7545bdc4=\"\"><span class=\"hljs-params\" _v-7545bdc4=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-7545bdc4=\"\">const</span> random = <span class=\"hljs-built_in\" _v-7545bdc4=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-7545bdc4=\"\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\" _v-7545bdc4=\"\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3 _v-7545bdc4=\"\">参数</h3>\n<table _v-7545bdc4=\"\">\n<thead _v-7545bdc4=\"\">\n<tr _v-7545bdc4=\"\">\n<th _v-7545bdc4=\"\">参数名</th>\n<th _v-7545bdc4=\"\">类型</th>\n<th _v-7545bdc4=\"\">默认值</th>\n<th _v-7545bdc4=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-7545bdc4=\"\">\n<tr _v-7545bdc4=\"\">\n<td _v-7545bdc4=\"\">now</td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">Number</code></td>\n<td _v-7545bdc4=\"\"></td>\n<td _v-7545bdc4=\"\">当前进度</td>\n</tr>\n<tr _v-7545bdc4=\"\">\n<td _v-7545bdc4=\"\">height</td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">String</code></td>\n<td _v-7545bdc4=\"\">20px</td>\n<td _v-7545bdc4=\"\">高度</td>\n</tr>\n<tr _v-7545bdc4=\"\">\n<td _v-7545bdc4=\"\">type</td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">String</code></td>\n<td _v-7545bdc4=\"\"></td>\n<td _v-7545bdc4=\"\">样式</td>\n</tr>\n<tr _v-7545bdc4=\"\">\n<td _v-7545bdc4=\"\">label</td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">Boolean</code></td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">false</code></td>\n<td _v-7545bdc4=\"\">是否显示进度提示</td>\n</tr>\n<tr _v-7545bdc4=\"\">\n<td _v-7545bdc4=\"\">striped</td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">Boolean</code></td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">false</code></td>\n<td _v-7545bdc4=\"\">是否显示条纹</td>\n</tr>\n<tr _v-7545bdc4=\"\">\n<td _v-7545bdc4=\"\">animated</td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">Boolean</code></td>\n<td _v-7545bdc4=\"\"><code _v-7545bdc4=\"\">false</code></td>\n<td _v-7545bdc4=\"\">动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
-
-/***/ },
-/* 879 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(880);
+	module.exports = "<section _v-674a6bc6=\"\"><template>\n<h3 _v-674a6bc6=\"\">进度条</h3>\n<div class=\"bs-docs-section\" _v-674a6bc6=\"\">\n<blockquote _v-674a6bc6=\"\">\n<p _v-674a6bc6=\"\">高度</p>\n</blockquote>\n<div class=\"bs-example\" _v-674a6bc6=\"\">\n  <div class=\"row\" _v-674a6bc6=\"\">\n    <div class=\"col-md-4\" _v-674a6bc6=\"\">\n      <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n        <n3-progressbar :now=\"20\" type=\"success\" height=\"10px\" _v-674a6bc6=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n    <div class=\"col-md-4\" _v-674a6bc6=\"\">\n      <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n        <n3-progressbar :now=\"40\" type=\"success\" _v-674a6bc6=\"\"></n3-progressbar>\n      </n3-progress>\n    </div>\n  </div>\n</div>\n<pre _v-674a6bc6=\"\"><code class=\"language-html\" _v-674a6bc6=\"\"><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"20\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">height</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"10px\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"40\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"success\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<blockquote _v-674a6bc6=\"\">\n<p _v-674a6bc6=\"\">动态变化 <n3-button @click.native=\"dynamicClick\" _v-674a6bc6=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-674a6bc6=\"\">\n  <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"dynamicData[0] * 2\" type=\"info\" _v-674a6bc6=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"dynamicData[1] * 2\" type=\"warning\" _v-674a6bc6=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress class=\"margin\" _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"dynamicData[2] * 2\" type=\"danger\" _v-674a6bc6=\"\"></n3-progressbar>\n    </n3-progress>\n    <n3-progress _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"dynamicData[3] * 2\" type=\"success\" striped=\"\" _v-674a6bc6=\"\"></n3-progressbar>\n  </n3-progress>\n</div>\n<pre _v-674a6bc6=\"\"><code class=\"language-html\" _v-674a6bc6=\"\"><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span> &gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"dynamicData[0] * 2\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"info\"</span> &gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"dynamicData[1] * 2\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"warning\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"dynamicData[2] * 2\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">class</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"margin\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"dynamicData[3] * 2\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"success\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n</code></pre>\n<pre _v-674a6bc6=\"\"><code class=\"language-javascript\" _v-674a6bc6=\"\"><span class=\"hljs-keyword\" _v-674a6bc6=\"\">export</span> <span class=\"hljs-keyword\" _v-674a6bc6=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-674a6bc6=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-674a6bc6=\"\">dynamicData</span>: [<span class=\"hljs-number\" _v-674a6bc6=\"\">5</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">15</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">25</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">35</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">45</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-674a6bc6=\"\">methods</span>: {\n    dynamicClick () {\n      <span class=\"hljs-keyword\" _v-674a6bc6=\"\">this</span>.dynamicData = <span class=\"hljs-keyword\" _v-674a6bc6=\"\">this</span>.dynamicData.map(<span class=\"hljs-function\" _v-674a6bc6=\"\"><span class=\"hljs-params\" _v-674a6bc6=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-674a6bc6=\"\">return</span> <span class=\"hljs-built_in\" _v-674a6bc6=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-674a6bc6=\"\">Math</span>.random() * <span class=\"hljs-number\" _v-674a6bc6=\"\">50</span>)\n      })\n    }\n  }\n}\n</code></pre>\n<blockquote _v-674a6bc6=\"\">\n<p _v-674a6bc6=\"\">叠加 <n3-button @click.native=\"stackedClick\" _v-674a6bc6=\"\">随机变化</n3-button></p>\n</blockquote>\n<div class=\"bs-example\" _v-674a6bc6=\"\">\n  <n3-progress _v-674a6bc6=\"\">\n    <n3-progressbar :now=\"stackedData[0]\" label=\"\" type=\"warning\" striped=\"\" _v-674a6bc6=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[1]\" label=\"\" type=\"success\" _v-674a6bc6=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[2]\" label=\"\" type=\"danger\" _v-674a6bc6=\"\"></n3-progressbar>\n    <n3-progressbar :now=\"stackedData[3]\" label=\"\" type=\"primary\" striped=\"\" _v-674a6bc6=\"\">\n  </n3-progressbar>\n</n3-progress></div>\n<pre _v-674a6bc6=\"\"><code class=\"language-html\" _v-674a6bc6=\"\"><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progress</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"stackedData[0]\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">label</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"warning\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">striped</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"stackedData[1]\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">label</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"success\"</span> &gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"stackedData[2]\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">label</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"danger\"</span>&gt;</span><span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">:now</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"stackedData[3]\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">label</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">type</span>=<span class=\"hljs-string\" _v-674a6bc6=\"\">\"primary\"</span> <span class=\"hljs-attr\" _v-674a6bc6=\"\">striped</span> &gt;</span>\n<span class=\"hljs-tag\" _v-674a6bc6=\"\">&lt;/<span class=\"hljs-name\" _v-674a6bc6=\"\">n3-progressbar</span>&gt;</span>\n</code></pre>\n<pre _v-674a6bc6=\"\"><code class=\"language-javascript\" _v-674a6bc6=\"\"><span class=\"hljs-keyword\" _v-674a6bc6=\"\">export</span> <span class=\"hljs-keyword\" _v-674a6bc6=\"\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\" _v-674a6bc6=\"\">return</span> {\n      <span class=\"hljs-attr\" _v-674a6bc6=\"\">stackedData</span>: [<span class=\"hljs-number\" _v-674a6bc6=\"\">10</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">20</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">30</span>, <span class=\"hljs-number\" _v-674a6bc6=\"\">40</span>]\n    }\n  },\n  <span class=\"hljs-attr\" _v-674a6bc6=\"\">methods</span>: {\n    stackedClick () {\n      <span class=\"hljs-keyword\" _v-674a6bc6=\"\">let</span> i = <span class=\"hljs-number\" _v-674a6bc6=\"\">100</span>\n      <span class=\"hljs-keyword\" _v-674a6bc6=\"\">this</span>.stackedData = <span class=\"hljs-keyword\" _v-674a6bc6=\"\">this</span>.stackedData.map(<span class=\"hljs-function\" _v-674a6bc6=\"\"><span class=\"hljs-params\" _v-674a6bc6=\"\">()</span> =&gt;</span> {\n        <span class=\"hljs-keyword\" _v-674a6bc6=\"\">const</span> random = <span class=\"hljs-built_in\" _v-674a6bc6=\"\">Math</span>.floor(<span class=\"hljs-built_in\" _v-674a6bc6=\"\">Math</span>.random() * i)\n        i = i - random\n        <span class=\"hljs-keyword\" _v-674a6bc6=\"\">return</span> random\n      })\n    }\n  }\n}\n</code></pre>\n<h3 _v-674a6bc6=\"\">参数</h3>\n<table _v-674a6bc6=\"\">\n<thead _v-674a6bc6=\"\">\n<tr _v-674a6bc6=\"\">\n<th _v-674a6bc6=\"\">参数名</th>\n<th _v-674a6bc6=\"\">类型</th>\n<th _v-674a6bc6=\"\">默认值</th>\n<th _v-674a6bc6=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-674a6bc6=\"\">\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">now</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">Number</code></td>\n<td _v-674a6bc6=\"\"></td>\n<td _v-674a6bc6=\"\">当前进度</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">height</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">String</code></td>\n<td _v-674a6bc6=\"\">20px</td>\n<td _v-674a6bc6=\"\">高度</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">type</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">String</code></td>\n<td _v-674a6bc6=\"\"></td>\n<td _v-674a6bc6=\"\">样式</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">label</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">Boolean</code></td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">false</code></td>\n<td _v-674a6bc6=\"\">是否显示进度提示</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">striped</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">Boolean</code></td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">false</code></td>\n<td _v-674a6bc6=\"\">是否显示条纹</td>\n</tr>\n<tr _v-674a6bc6=\"\">\n<td _v-674a6bc6=\"\">animated</td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">Boolean</code></td>\n<td _v-674a6bc6=\"\"><code _v-674a6bc6=\"\">false</code></td>\n<td _v-674a6bc6=\"\">动画效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
 /* 880 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(881);
+
+/***/ },
+/* 881 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(881)
+	__vue_script__ = __webpack_require__(882)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SelectDocs-23.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(882)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SelectDocs-63.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(883)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -44568,7 +44608,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-5f260396/n3SelectDocs-23.vue"
+	  var id = "_v-517f3e9e/n3SelectDocs-63.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -44577,7 +44617,7 @@
 	})()}
 
 /***/ },
-/* 881 */
+/* 882 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -44867,27 +44907,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 882 */
+/* 883 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>选择框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<blockquote>\n<p>单选</p>\n</blockquote>\n  <p>\n    <pre>\nSelect data : {{single}}\n    </pre>\n  </p>\n  <n3-select v-model=\"single\">\n    <n3-option value=\"Apple\">Apple</n3-option>\n    <n3-option value=\"Banana\">Banana</n3-option>\n    <n3-option value=\"Cherry\">Cherry</n3-option>\n    <n3-option value=\"Orange\">Orange</n3-option>\n    <n3-option value=\"Grape\">Grape</n3-option>\n  </n3-select>\n  <hr>\n<blockquote>\n<p>多选</p>\n</blockquote>\n  <p>\n    <pre>\nSelect data : {{multiple.join(', ')}}\n    </pre>\n  </p>\n  <n3-select multiple v-model=\"multiple\" search=\"\">\n    <n3-option value=\"Apple\">Apple</n3-option>\n    <n3-option value=\"Banana\">Banana</n3-option>\n    <n3-option value=\"Cherry\">Cherry</n3-option>\n    <n3-option value=\"Orange\">Orange</n3-option>\n    <n3-option value=\"Grape\">Grape</n3-option>\n  </n3-select>\n  <hr>\n<blockquote>\n<p>多选限制</p>\n</blockquote>\n  <p>\n    <pre>\nSelect data : {{multipleLimit.join(', ')}}\n    </pre>\n  </p>\n  <n3-select multiple :limit=\"2\" v-model=\"multipleLimit\" search=\"\" extra=\"\">\n    <n3-option value=\"Apple\">Apple</n3-option>\n    <n3-option value=\"Banana\">Banana</n3-option>\n    <n3-option value=\"Cherry\">Cherry</n3-option>\n    <n3-option value=\"Orange\">Orange</n3-option>\n    <n3-option value=\"Grape\">Grape</n3-option>\n  </n3-select>\n  <hr>\n<blockquote>\n<p>自定义内容</p>\n</blockquote>\n  <p>\n    <pre>\nSelect data : {{custom.join(', ')}}\n    </pre>\n  </p>\n  <n3-select multiple v-model=\"custom\">\n    <n3-option value=\"Star\"><span class=\"n3-fa n3-fa-star\"></span> Star</n3-option>\n    <n3-option value=\"Heart\"><span class=\"n3-fa n3-fa-heart\"></span> Heart</n3-option>\n    <n3-option value=\"Film\"><span class=\"n3-fa n3-fa-film\"></span> Film</n3-option>\n    <n3-option value=\"Inbox\"><span class=\"n3-fa n3-fa-inbox\"></span> Inbox</n3-option>\n  </n3-select>\n  <hr>\n<blockquote>\n<p>传递数组，支持搜索</p>\n</blockquote>\n  <p>\n    支持只传递接json数组，可以支持搜索\n    <pre>\nSelect data : {{arr}}\n    </pre>\n  </p>\n  <n3-select v-model=\"arr\" :options=\"fruitOptions\" :search=\"true\" multiple extra=\"\" width=\"200px\">\n  </n3-select>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- 单选框 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"single\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Apple\"</span>&gt;</span>Apple<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Banana\"</span>&gt;</span>Banana<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Cherry\"</span>&gt;</span>Cherry<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Orange\"</span>&gt;</span>Orange<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Grape\"</span>&gt;</span>Grape<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 多选框 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span> <span class=\"hljs-attr\">multiple</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"multiple\"</span> <span class=\"hljs-attr\">search</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Apple\"</span>&gt;</span>Apple<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Banana\"</span>&gt;</span>Banana<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Cherry\"</span>&gt;</span>Cherry<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Orange\"</span>&gt;</span>Orange<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Grape\"</span>&gt;</span>Grape<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 多选限制 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span> <span class=\"hljs-attr\">multiple</span> <span class=\"hljs-attr\">:limit</span>=<span class=\"hljs-string\">\"2\"</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"multipleLimit\"</span> <span class=\"hljs-attr\">search</span> <span class=\"hljs-attr\">extra</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Apple\"</span>&gt;</span>Apple<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Banana\"</span>&gt;</span>Banana<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Cherry\"</span>&gt;</span>Cherry<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Orange\"</span>&gt;</span>Orange<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Grape\"</span>&gt;</span>Grape<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 自定义内容 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span> <span class=\"hljs-attr\">multiple</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"custom\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Star\"</span>&gt;</span><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">span</span>  <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"n3-fa n3-fa-star\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">span</span>&gt;</span> Star<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Heart\"</span>&gt;</span><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">span</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"n3-fa n3-fa-heart\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">span</span>&gt;</span> Heart<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Film\"</span>&gt;</span><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">span</span>  <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"n3-fa n3-fa-film\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">span</span>&gt;</span> Film<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-option</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"Inbox\"</span>&gt;</span><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">span</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"n3-fa n3-fa-inbox\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">span</span>&gt;</span> Inbox<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-option</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 传递数组，支持搜索 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"arr\"</span> <span class=\"hljs-attr\">:options</span>=<span class=\"hljs-string\">\"fruitOptions\"</span> <span class=\"hljs-attr\">:search</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">multiple</span> <span class=\"hljs-attr\">extra</span> <span class=\"hljs-attr\">width</span>=<span class=\"hljs-string\">\"400px\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">fruitOptions</span>: [\n        {<span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'apple'</span>, <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'Apple'</span>},\n        {<span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'banana'</span>, <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'Banana'</span>},\n        {<span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'cherry'</span>, <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'Cherry'</span>},\n        {<span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'orange'</span>, <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'Orange'</span>},\n        {<span class=\"hljs-attr\">value</span>: <span class=\"hljs-string\">'grape'</span>, <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'Grape'</span>}\n      ],\n      <span class=\"hljs-attr\">arr</span>: [<span class=\"hljs-string\">'apple'</span>, <span class=\"hljs-string\">'banana'</span>],\n      <span class=\"hljs-attr\">single</span>: <span class=\"hljs-string\">'Apple'</span>,\n      <span class=\"hljs-attr\">multiple</span>: [],\n      <span class=\"hljs-attr\">multipleLimit</span>: [],\n      <span class=\"hljs-attr\">custom</span>: []\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<p>样式的参数和 <a href=\"#n3ButtonsDocs\">按钮</a> 相同</p>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>value</td>\n<td></td>\n<td></td>\n<td>多选为数组，单选为单个数字或者字符串</td>\n</tr>\n<tr>\n<td>options</td>\n<td><code>Array</code></td>\n<td><code>[]</code></td>\n<td></td>\n</tr>\n<tr>\n<td>placeholder</td>\n<td><code>String</code></td>\n<td>''</td>\n<td></td>\n</tr>\n<tr>\n<td>multiple</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>支持多选</td>\n</tr>\n<tr>\n<td>limit</td>\n<td><code>Number</code></td>\n<td><code>1024</code></td>\n<td>多选限制</td>\n</tr>\n<tr>\n<td>search</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否支持搜索</td>\n</tr>\n<tr>\n<td>extra</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>可支持在输入款内添加新的选项(需要search支持)</td>\n</tr>\n<tr>\n<td>input-placeholder</td>\n<td><code>String</code></td>\n<td>``</td>\n<td>输入框的placeholder</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td></td>\n<td>选择框大小</td>\n</tr>\n<tr>\n<td>menu-max-height</td>\n<td><code>String</code></td>\n<td>300px</td>\n<td>下拉框最大高度</td>\n</tr>\n<tr>\n<td>menu-width</td>\n<td><code>String</code></td>\n<td></td>\n<td>下拉框宽度</td>\n</tr>\n<tr>\n<td>format</td>\n<td><code>Function</code></td>\n<td><code>function(item){ return item.label }</code></td>\n<td>选中内容的格式化显示</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td></td>\n</tr>\n<tr>\n<td>readonly</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td></td>\n</tr>\n<tr>\n<td>cancelled</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>单选时，是否可撤销</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 883 */
+/* 884 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(884);
+	module.exports = __webpack_require__(885);
 
 /***/ },
-/* 884 */
+/* 885 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(885)
+	__vue_script__ = __webpack_require__(886)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SwitchDocs-24.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(886)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SwitchDocs-67.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(887)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -44903,7 +44943,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-7ed5807e/n3SwitchDocs-24.vue"
+	  var id = "_v-f459ad06/n3SwitchDocs-67.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -44912,7 +44952,7 @@
 	})()}
 
 /***/ },
-/* 885 */
+/* 886 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -45010,27 +45050,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 886 */
+/* 887 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>开关</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<p></p><h3><n3-switch v-model=\"value\"></n3-switch></h3><p></p>\n<p></p><h3><n3-switch ontext=\"开\" offtext=\"关\" @change=\"toggle\" v-model=\"value\"></n3-switch></h3><p></p>\n<p></p><h3><n3-switch ontext=\"开\" offtext=\"关\" @change=\"toggle\" :disabled=\"true\"></n3-switch></h3><p></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-switch</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-switch</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-switch</span> <span class=\"hljs-attr\">ontext</span>=<span class=\"hljs-string\">\"开\"</span> <span class=\"hljs-attr\">offtext</span>=<span class=\"hljs-string\">\"关\"</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"toggle\"</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-switch</span>&gt;</span>\n\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-switch</span> <span class=\"hljs-attr\">ontext</span>=<span class=\"hljs-string\">\"开\"</span> <span class=\"hljs-attr\">offtext</span>=<span class=\"hljs-string\">\"关\"</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"toggle\"</span> <span class=\"hljs-attr\">:disabled</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-switch</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>disabled</td>\n<td><code>boolean</code></td>\n<td><code>false</code></td>\n<td>禁用</td>\n</tr>\n<tr>\n<td>ontext</td>\n<td><code>String</code></td>\n<td><code>ON</code></td>\n<td>开文案</td>\n</tr>\n<tr>\n<td>offtext</td>\n<td><code>String</code></td>\n<td><code>OFF</code></td>\n<td>关文案</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>boolean</code></td>\n<td><code>false</code></td>\n<td>禁用</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 887 */
+/* 888 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(888);
+	module.exports = __webpack_require__(889);
 
 /***/ },
-/* 888 */
+/* 889 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(889)
+	__vue_script__ = __webpack_require__(890)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TimelineDocs-25.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(890)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TimelineDocs-68.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(891)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -45046,7 +45086,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-75fe2f52/n3TimelineDocs-25.vue"
+	  var id = "_v-7cfbd851/n3TimelineDocs-68.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -45055,7 +45095,7 @@
 	})()}
 
 /***/ },
-/* 889 */
+/* 890 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -45195,27 +45235,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 890 */
+/* 891 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>时间轴</h3>\n<div class=\"bs-docs-section\">\n<blockquote>\n<p>时间轴（静态）</p>\n</blockquote>\n<div class=\"bs-example\">\n<n3-timeline>\n<n3-timeline-item color=\"#2ecc71\" icon=\"check-circle-o\">创建成功</n3-timeline-item>\n<n3-timeline-item color=\"#3498db\">通过审核</n3-timeline-item>\n<n3-timeline-item color=\"#e74c3c\" icon=\"times-circle-o\">出现异常</n3-timeline-item>\n</n3-timeline>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-timeline</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-timeline-item</span> <span class=\"hljs-attr\">color</span>=<span class=\"hljs-string\">'#2ecc71'</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"check-circle-o\"</span>&gt;</span>创建成功<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-timeline-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-timeline-item</span> <span class=\"hljs-attr\">color</span>=<span class=\"hljs-string\">'#3498db'</span>&gt;</span>通过审核<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-timeline-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-timeline-item</span> <span class=\"hljs-attr\">color</span>=<span class=\"hljs-string\">'#e74c3c'</span> <span class=\"hljs-attr\">icon</span>=<span class=\"hljs-string\">\"times-circle-o\"</span>&gt;</span>出现异常<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-timeline-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-timeline</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>时间轴（数据绑定）</p>\n</blockquote>\n<div class=\"bs-example\">\n<n3-timeline :value=\"value\">\n</n3-timeline>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-timeline</span>\n  <span class=\"hljs-attr\">:value</span>=<span class=\"hljs-string\">\"value\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-timeline</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">value</span>: [{\n        <span class=\"hljs-attr\">icon</span>: <span class=\"hljs-string\">'check-circle-o'</span>,\n        <span class=\"hljs-attr\">color</span>: <span class=\"hljs-string\">'green'</span>,\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">`&lt;a @click=\"del\"&gt;创建成功&lt;/a&gt;`</span>\n      }, {\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'&lt;span&gt;通过审核&lt;/span&gt;'</span>\n      }, {\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'&lt;span&gt;出现异常&lt;/span&gt;'</span>\n      }]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    del () {\n      alert(<span class=\"hljs-number\">2</span>)\n    }\n  }\n}\n</code></pre>\n<h3>Timeline参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>value</td>\n<td><code>Array</code></td>\n<td></td>\n<td>内容数组</td>\n</tr>\n</tbody>\n</table>\n<h3>TimelineItem参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>color</td>\n<td><code>String</code></td>\n<td>#2db7f5</td>\n<td>颜色</td>\n</tr>\n<tr>\n<td>content</td>\n<td><code>String</code></td>\n<td></td>\n<td>内容</td>\n</tr>\n<tr>\n<td>icon</td>\n<td><code>String</code></td>\n<td></td>\n<td>自定义图标</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 891 */
+/* 892 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(892);
+	module.exports = __webpack_require__(893);
 
 /***/ },
-/* 892 */
+/* 893 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(893)
+	__vue_script__ = __webpack_require__(894)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TabsDocs-26.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(894)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TabsDocs-72.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(895)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -45231,7 +45271,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-626b7276/n3TabsDocs-26.vue"
+	  var id = "_v-6abb4f8d/n3TabsDocs-72.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -45240,7 +45280,7 @@
 	})()}
 
 /***/ },
-/* 893 */
+/* 894 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -45381,7 +45421,7 @@
 	// </thead>
 	// <tbody>
 	// <tr>
-	// <td>active-index</td>
+	// <td>value</td>
 	// <td><code>Number</code></td>
 	// <td></td>
 	// <td></td>
@@ -45481,6 +45521,7 @@
 	exports.default = {
 	  data: function data() {
 	    return {
+	      index: 0,
 	      list: [{
 	        header: 'first',
 	        badge: 12,
@@ -45503,27 +45544,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 894 */
+/* 895 */
 /***/ function(module, exports) {
 
-	module.exports = "<section><template>\n<h3>标签页</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<blockquote>\n<p>使用list</p>\n</blockquote>\n<p><n3-tabs @change=\"change\" :list=\"list\"></n3-tabs></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:list</span>=<span class=\"hljs-string\">\"list\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">data () {\n  <span class=\"hljs-keyword\">return</span> {\n    <span class=\"hljs-attr\">list</span>: [{\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'first'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'first的内容'</span>\n    }, {\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'seacond'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'seacond的内容'</span>\n    }]\n  }\n}\n</code></pre>\n<hr>\n<blockquote>\n<p>使用tab</p>\n</blockquote>\n<n3-tabs @change=\"change\" :value=\"1\">\n  <n3-tab header=\"one\" badge=\"1\">\n    <p>.......</p>\n    <p>.......</p>\n    <p>.......</p>\n  </n3-tab>\n  <n3-tab header=\"two\">\n    <p>*********</p>\n    <p>*********</p>\n    <p>*********</p>\n  </n3-tab>\n  <n3-tab header=\"three\" disabled>\n    ...\n  </n3-tab>\n</n3-tabs>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:value</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"one\"</span> <span class=\"hljs-attr\">badge</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"two\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"three\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>\n    ...\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<hr>\n<blockquote>\n<p>胶囊样式 pills</p>\n</blockquote>\n<n3-tabs pills=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<blockquote>\n<p>垂直样式 stacked</p>\n</blockquote>\n<n3-tabs pills=\"\" stacked=\"\" style=\"max-width: 300px;\" @change=\"change\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<blockquote>\n<p>垂直样式 stacked</p>\n</blockquote>\n<n3-tabs primary=\"\" pills=\"\" stacked=\"\" style=\"max-width: 300px;\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<blockquote>\n<p>自适应 justified</p>\n</blockquote>\n<n3-tabs pills=\"\" justified=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n</div>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">list</span>: [{\n        <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'first'</span>,\n        <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'first的内容'</span>\n      }, {\n        <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'seacond'</span>,\n        <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'seacond的内容'</span>\n      }]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    change (index, el) {\n      <span class=\"hljs-built_in\">console</span>.log(index, el)\n    }\n  }\n}\n</code></pre>\n<h3>Tabs参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>active-index</td>\n<td><code>Number</code></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>list</td>\n<td><code>Array</code></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>pills</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>胶囊样式</td>\n</tr>\n<tr>\n<td>stacked</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>竖直状态</td>\n</tr>\n<tr>\n<td>primary</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td></td>\n</tr>\n<tr>\n<td>justified</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>是否自适应</td>\n</tr>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td>尺寸</td>\n</tr>\n</tbody>\n</table>\n<h3>Tabs Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>切换tab时</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>tab 参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>header</td>\n<td><code>String</code></td>\n<td></td>\n<td>标签头文字</td>\n</tr>\n<tr>\n<td>badge</td>\n<td><code>String``Number</code></td>\n<td></td>\n<td>徽标</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>是否能被激活</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
-
-/***/ },
-/* 895 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(896);
+	module.exports = "<section><template>\n<h3>标签页</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<blockquote>\n<p>使用list</p>\n</blockquote>\n<p><n3-tabs @change=\"change\" :list=\"list\"></n3-tabs></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:list</span>=<span class=\"hljs-string\">\"list\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">data () {\n  <span class=\"hljs-keyword\">return</span> {\n    <span class=\"hljs-attr\">list</span>: [{\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'first'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'first的内容'</span>\n    }, {\n      <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'seacond'</span>,\n      <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n      <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'seacond的内容'</span>\n    }]\n  }\n}\n</code></pre>\n<hr>\n<blockquote>\n<p>使用tab</p>\n</blockquote>\n<n3-tabs @change=\"change\" :value=\"1\">\n  <n3-tab header=\"one\" badge=\"1\">\n    <p>.......</p>\n    <p>.......</p>\n    <p>.......</p>\n  </n3-tab>\n  <n3-tab header=\"two\">\n    <p>*********</p>\n    <p>*********</p>\n    <p>*********</p>\n  </n3-tab>\n  <n3-tab header=\"three\" disabled>\n    ...\n  </n3-tab>\n</n3-tabs>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tabs</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:value</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"one\"</span> <span class=\"hljs-attr\">badge</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>.......<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"two\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>*********<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tab</span> <span class=\"hljs-attr\">header</span>=<span class=\"hljs-string\">\"three\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>\n    ...\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tab</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tabs</span>&gt;</span>\n</code></pre>\n<hr>\n<blockquote>\n<p>胶囊样式 pills</p>\n</blockquote>\n<n3-tabs pills=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<blockquote>\n<p>垂直样式 stacked</p>\n</blockquote>\n<n3-tabs pills=\"\" stacked=\"\" style=\"max-width: 300px;\" @change=\"change\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<blockquote>\n<p>垂直样式 stacked</p>\n</blockquote>\n<n3-tabs primary=\"\" pills=\"\" stacked=\"\" style=\"max-width: 300px;\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n<hr>\n<blockquote>\n<p>自适应 justified</p>\n</blockquote>\n<n3-tabs pills=\"\" justified=\"\">\n  <n3-tab header=\"one\">\n  </n3-tab>\n  <n3-tab header=\"two\">\n  </n3-tab>\n</n3-tabs>\n</div>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">list</span>: [{\n        <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'first'</span>,\n        <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'first的内容'</span>\n      }, {\n        <span class=\"hljs-attr\">header</span>: <span class=\"hljs-string\">'seacond'</span>,\n        <span class=\"hljs-attr\">badge</span>: <span class=\"hljs-number\">12</span>,\n        <span class=\"hljs-attr\">content</span>: <span class=\"hljs-string\">'seacond的内容'</span>\n      }]\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    change (index, el) {\n      <span class=\"hljs-built_in\">console</span>.log(index, el)\n    }\n  }\n}\n</code></pre>\n<h3>Tabs参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>value</td>\n<td><code>Number</code></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>list</td>\n<td><code>Array</code></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>pills</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>胶囊样式</td>\n</tr>\n<tr>\n<td>stacked</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>竖直状态</td>\n</tr>\n<tr>\n<td>primary</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td></td>\n</tr>\n<tr>\n<td>justified</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>是否自适应</td>\n</tr>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td>尺寸</td>\n</tr>\n</tbody>\n</table>\n<h3>Tabs Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>切换tab时</td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<h3>tab 参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>header</td>\n<td><code>String</code></td>\n<td></td>\n<td>标签头文字</td>\n</tr>\n<tr>\n<td>badge</td>\n<td><code>String``Number</code></td>\n<td></td>\n<td>徽标</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>是否能被激活</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
 /* 896 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__(897);
+
+/***/ },
+/* 897 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(897)
+	__vue_script__ = __webpack_require__(898)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TooltipDocs-27.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(898)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TooltipDocs-69.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(899)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -45539,7 +45580,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-4189cb74/n3TooltipDocs-27.vue"
+	  var id = "_v-33aaa878/n3TooltipDocs-69.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -45548,7 +45589,7 @@
 	})()}
 
 /***/ },
-/* 897 */
+/* 898 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -45671,27 +45712,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 898 */
+/* 899 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>浮出提示</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-tooltip content=\"tooltip on top\" placement=\"top\" trigger=\"hover\">\n    <n3-button>tooltip on top</n3-button>\n  </n3-tooltip>\n  <n3-tooltip content=\"tooltip on left\" placement=\"left\" trigger=\"hover\">\n    <n3-button>tooltip on left</n3-button>\n  </n3-tooltip>\n  <n3-tooltip content=\"tooltip on right\" placement=\"right\" trigger=\"hover\">\n    <n3-button>tooltip on right</n3-button>\n  </n3-tooltip>\n  <n3-tooltip content=\"tooltip on bottom\" placement=\"bottom\" trigger=\"hover\">\n    <n3-button>tooltip on bottom</n3-button>\n  </n3-tooltip>\n  <hr>\n  <h4>Triger</h4>\n  <p>\n    <n3-tooltip trigger=\"click\" effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"top\">\n      <n3-button>Click</n3-button>\n    </n3-tooltip>\n  </p>\n  <n3-tooltip effect=\"scale\" content=\"Lorem ipsum dolor sit amet\" placement=\"bottom\" trigger=\"focus\">\n    <n3-input placeholder=\"Focus\"></n3-input>\n  </n3-tooltip>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tooltip</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">\"tooltip on top\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"hover\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>&gt;</span>tooltip on top<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tooltip</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tooltip</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">\"tooltip on left\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"hover\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>tooltip on left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tooltip</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tooltip</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">\"tooltip on right\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"right\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"hover\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>tooltip on right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tooltip</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tooltip</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">\"tooltip on bottom\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"bottom\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"hover\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>tooltip on bottom<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tooltip</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">hr</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Triger<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tooltip</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"click\"</span>\n  <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"scale\"</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">\"Lorem ipsum dolor sit amet\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"top\"</span> &gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> &gt;</span>Click<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tooltip</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tooltip</span> <span class=\"hljs-attr\">effect</span>=<span class=\"hljs-string\">\"scale\"</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">\"Lorem ipsum dolor sit amet\"</span> <span class=\"hljs-attr\">placement</span>=<span class=\"hljs-string\">\"bottom\"</span> <span class=\"hljs-attr\">trigger</span>=<span class=\"hljs-string\">\"focus\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span>  <span class=\"hljs-attr\">placeholder</span>=<span class=\"hljs-string\">\"Focus\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tooltip</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">title</span>: <span class=\"hljs-string\">'Title'</span>,\n      <span class=\"hljs-attr\">text</span>: <span class=\"hljs-string\">'Lorem ipsum dolor sit amet'</span>\n    }\n  }\n}\n</code></pre>\n<h3>参数名</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>trigger</td>\n<td><code>String</code>, 如: <code>hover</code> <code>focus</code> <code>hover</code></td>\n<td><code>click</code></td>\n<td>触发方式</td>\n</tr>\n<tr>\n<td>effect</td>\n<td><code>String</code>, 如: <code>scale</code> <code>fade</code></td>\n<td><code>scale</code></td>\n<td></td>\n</tr>\n<tr>\n<td>content</td>\n<td><code>String</code></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>placement</td>\n<td><code>String</code>, 如: <code>top</code> <code>left</code> <code>right</code> <code>bottom</code></td>\n<td></td>\n<td>定位方式</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 899 */
+/* 900 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(900);
+	module.exports = __webpack_require__(901);
 
 /***/ },
-/* 900 */
+/* 901 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(901)
+	__vue_script__ = __webpack_require__(902)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TypeaheadDocs-28.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(902)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TypeaheadDocs-71.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(903)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -45707,7 +45748,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-39812603/n3TypeaheadDocs-28.vue"
+	  var id = "_v-41a6bc97/n3TypeaheadDocs-71.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -45716,7 +45757,7 @@
 	})()}
 
 /***/ },
-/* 901 */
+/* 902 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -45915,24 +45956,24 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 902 */
+/* 903 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>自动补全</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<blockquote>\n<p>本地数据</p>\n</blockquote>\n<p><n3-typeahead v-model=\"value\" :data=\"USstate\" placeholder=\" 发到\">\n</n3-typeahead></p>\n<hr>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-typeahead</span> \n    <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>\n    <span class=\"hljs-attr\">:data</span>=<span class=\"hljs-string\">\"USstate\"</span> \n    <span class=\"hljs-attr\">placeholder</span>=<span class=\"hljs-string\">\" 发到\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-typeahead</span>&gt;</span>\n\n</code></pre>\n<hr>\n<blockquote>\n<p>异步获取</p>\n</blockquote>\n<p><n3-typeahead async placeholder=\"CCCAddress, async via maps.googleapis.com\" @change=\"getResult\" :render=\"render\" :items=\"items\" :add-format=\"googleCallback\">\n</n3-typeahead></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-typeahead</span> \n  <span class=\"hljs-attr\">async</span>\n  <span class=\"hljs-attr\">placeholder</span>=<span class=\"hljs-string\">\"CCCAddress, async via maps.googleapis.com\"</span>\n  <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"getResult\"</span>\n  <span class=\"hljs-attr\">:render</span>=<span class=\"hljs-string\">\"render\"</span>\n  <span class=\"hljs-attr\">:items</span>=<span class=\"hljs-string\">\"items\"</span>\n  <span class=\"hljs-attr\">:add-format</span>=<span class=\"hljs-string\">\"googleCallback\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-typeahead</span>&gt;</span>\n</code></pre>\n<hr>\n<blockquote>\n<p>内容模版</p>\n</blockquote>\n<p><n3-typeahead async :context=\"_self\" placeholder=\"Github users, async via api.github.com\" @change=\"getGitresults\" :items=\"gitItems\" :render=\"rendergit\" :add-format=\"githubCallback\">\n</n3-typeahead></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-typeahead</span>\n  <span class=\"hljs-attr\">async</span> \n  <span class=\"hljs-attr\">:context</span>=<span class=\"hljs-string\">\"_self\"</span>\n  <span class=\"hljs-attr\">placeholder</span>=<span class=\"hljs-string\">\"Github users, async via api.github.com\"</span>\n  <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"getGitresults\"</span>\n  <span class=\"hljs-attr\">:items</span>=<span class=\"hljs-string\">\"gitItems\"</span>\n  <span class=\"hljs-attr\">:render</span>=<span class=\"hljs-string\">\"rendergit\"</span>\n  <span class=\"hljs-attr\">:add-format</span>=<span class=\"hljs-string\">\"githubCallback\"</span> &gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-typeahead</span>&gt;</span>\n</code></pre>\n</div>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>data</td>\n<td><code>Array</code></td>\n<td>-</td>\n<td>本地数组</td>\n</tr>\n<tr>\n<td>limit</td>\n<td><code>Number</code></td>\n<td><code>8</code></td>\n<td>显示的条数</td>\n</tr>\n<tr>\n<td>items</td>\n<td><code>Array</code></td>\n<td><code>[]</code></td>\n<td>列表数组，用于异步请求</td>\n</tr>\n<tr>\n<td>async</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>异步</td>\n</tr>\n<tr>\n<td>render</td>\n<td><code>Function</code></td>\n<td>-</td>\n<td>渲染函数</td>\n</tr>\n<tr>\n<td>add-format</td>\n<td><code>Function</code></td>\n<td>-</td>\n<td>获取需要的值</td>\n</tr>\n<tr>\n<td>dropdown-width</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>下拉宽度</td>\n</tr>\n<tr>\n<td>dropdown-height</td>\n<td><code>String</code></td>\n<td><code>300px</code></td>\n<td>下拉框最大高度</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 903 */
+/* 904 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(904);
+	module.exports = __webpack_require__(905);
 
 /***/ },
-/* 904 */
+/* 905 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_template__ = __webpack_require__(905)
+	__vue_template__ = __webpack_require__(906)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -45948,7 +45989,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-feb72e2a/n3StepDocs-29.vue"
+	  var id = "_v-eea45f06/n3StepDocs-70.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -45957,27 +45998,27 @@
 	})()}
 
 /***/ },
-/* 905 */
+/* 906 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>步骤条</h3>\n<div class=\"bs-docs-section\">\n<blockquote>\n<p>普通步骤条</p>\n</blockquote>\n<div class=\"bs-example\">\n<n3-step :labels=\"['第一步 我的文案比较长','第二步','第三步']\"></n3-step>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-step</span> <span class=\"hljs-attr\">:labels</span>=<span class=\"hljs-string\">\"['第一步 我的文案比较长','第二步','第三步']\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-step</span>&gt;</span>\n</code></pre>\n<blockquote>\n<p>前台步骤条</p>\n</blockquote>\n<div class=\"bs-example\">\n<n3-step round=\"\" :labels=\"['第一步 我的文案比较长','第二步','第三步']\" :current=\"2\"></n3-step>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-step</span> <span class=\"hljs-attr\">round</span> <span class=\"hljs-attr\">:labels</span>=<span class=\"hljs-string\">\"['第一步 我的文案比较长','第二步','第三步']\"</span> <span class=\"hljs-attr\">:current</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-step</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>labels</td>\n<td><code>Array</code></td>\n<td></td>\n<td>文案数组</td>\n</tr>\n<tr>\n<td>current</td>\n<td><code>Number</code></td>\n<td><code>1</code></td>\n<td>当前步数</td>\n</tr>\n<tr>\n<td>round</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否为前台步骤条</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
-/* 906 */
+/* 907 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(907);
+	module.exports = __webpack_require__(908);
 
 /***/ },
-/* 907 */
+/* 908 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(908)
+	__vue_script__ = __webpack_require__(909)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SliderDocs-30.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(909)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3SliderDocs-73.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(910)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -45993,7 +46034,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-49b14968/n3SliderDocs-30.vue"
+	  var id = "_v-3bb5f76a/n3SliderDocs-73.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -46002,7 +46043,7 @@
 	})()}
 
 /***/ },
-/* 908 */
+/* 909 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -46150,24 +46191,24 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 909 */
+/* 910 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>滑块</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-slider v-model=\"value\" @change=\"change\" orientation=\"vertical\"></n3-slider>\n<p>滑块的值: {{value}}</p> \n<p><n3-slider v-model=\"value1\" @change=\"change\" :range=\"true\"></n3-slider></p>\n<p>滑块的值: {{value1}}</p> \n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slider</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">orientation</span>=<span class=\"hljs-string\">\"vertical\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slider</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slider</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value1\"</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"change\"</span> <span class=\"hljs-attr\">:range</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slider</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">value</span>: <span class=\"hljs-number\">2</span>\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    change (val) {\n      <span class=\"hljs-built_in\">console</span>.log(val)\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>min</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>最小值</td>\n</tr>\n<tr>\n<td>max</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>最大值</td>\n</tr>\n<tr>\n<td>step</td>\n<td><code>Number</code></td>\n<td><code>1</code></td>\n<td>单步增量</td>\n</tr>\n<tr>\n<td>orientation</td>\n<td>String<code>|</code>horizontal<code>|</code>horizontal<code>(水平)</code>vertical`(垂直)</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>range</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否范围选择</td>\n</tr>\n<tr>\n<td>tooltip</td>\n<td><code>String</code></td>\n<td><code>show</code></td>\n<td>tooltip显示参数 'show' 'hide' 'always'</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否禁用</td>\n</tr>\n<tr>\n<td>formatter</td>\n<td><code>Function</code></td>\n<td>-</td>\n<td>格式化tooltip显示内容</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>水平显示的宽度</td>\n</tr>\n<tr>\n<td>height</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>水平显示的宽度</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 910 */
+/* 911 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(911);
+	module.exports = __webpack_require__(912);
 
 /***/ },
-/* 911 */
+/* 912 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_template__ = __webpack_require__(912)
+	__vue_template__ = __webpack_require__(913)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -46183,7 +46224,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-45ff8706/n3LoadingDocs-31.vue"
+	  var id = "_v-4cfd3005/n3LoadingDocs-74.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -46192,27 +46233,27 @@
 	})()}
 
 /***/ },
-/* 912 */
+/* 913 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>加载提示</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <p>大图标：<n3-loading size=\"lg\"></n3-loading></p>\n  <p>默认图标：<n3-loading></n3-loading></p>\n  <p>刷新图标：<n3-loading type=\"refresh\"></n3-loading></p>\n  <p>颜色：<n3-loading color=\"primary\"></n3-loading></p>\n</div>\n<div class=\"bs-example\">\n  <p>居中：<n3-loading center=\"\"></n3-loading></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>大图标：<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-loading</span> <span class=\"hljs-attr\">size</span>=<span class=\"hljs-string\">\"lg\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-loading</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>默认图标：<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-loading</span> &gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-loading</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>刷新图标：<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-loading</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"refresh\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-loading</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>颜色：<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-loading</span> <span class=\"hljs-attr\">color</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-loading</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>居中：<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-loading</span> <span class=\"hljs-attr\">center</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-loading</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td>图标大小<code>lg</code> <code>sm</code> <code>xs</code> 和默认</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>图标类型 <code>refresh</code> 和默认菊花</td>\n</tr>\n<tr>\n<td>center</td>\n<td><code>Boolean</code></td>\n<td></td>\n<td>居中</td>\n</tr>\n<tr>\n<td>color</td>\n<td><code>String</code></td>\n<td></td>\n<td>颜色</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
-/* 913 */
+/* 914 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(914);
+	module.exports = __webpack_require__(915);
 
 /***/ },
-/* 914 */
+/* 915 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(915)
+	__vue_script__ = __webpack_require__(916)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3PageDocs-32.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(916)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3PageDocs-76.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(917)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -46228,7 +46269,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-39525960/n3PageDocs-32.vue"
+	  var id = "_v-405e19e0/n3PageDocs-76.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -46237,7 +46278,7 @@
 	})()}
 
 /***/ },
-/* 915 */
+/* 916 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -46376,27 +46417,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 916 */
+/* 917 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>分页</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-page :total=\"100\" @change=\"pagechange\" v-model=\"current\" :show-sizer=\"true\" :show-elevator=\"true\"></n3-page>\n  <hr>\n  <n3-page :total=\"100\" simple=\"\"></n3-page>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-page</span> <span class=\"hljs-attr\">:total</span>=<span class=\"hljs-string\">\"100\"</span> <span class=\"hljs-attr\">@change</span>=<span class=\"hljs-string\">\"pagechange\"</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"current\"</span>  <span class=\"hljs-attr\">:show-sizer</span>=<span class=\"hljs-string\">\"true\"</span> <span class=\"hljs-attr\">:show-elevator</span>=<span class=\"hljs-string\">\"true\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-page</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-page</span> <span class=\"hljs-attr\">:total</span>=<span class=\"hljs-string\">\"100\"</span> <span class=\"hljs-attr\">simple</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-page</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data () {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">current</span>: <span class=\"hljs-number\">1</span>\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    pagechange (page) {\n      <span class=\"hljs-built_in\">console</span>.log(page)\n    }\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>total</td>\n<td><code>Number</code></td>\n<td></td>\n<td>总条数</td>\n</tr>\n<tr>\n<td>current</td>\n<td><code>Number</code></td>\n<td>1</td>\n<td>当前页数</td>\n</tr>\n<tr>\n<td>value</td>\n<td><code>Number</code></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>pagesize</td>\n<td><code>Number</code></td>\n<td>10</td>\n<td>每页条数</td>\n</tr>\n<tr>\n<td>pagesize-opts</td>\n<td><code>Array</code></td>\n<td><code>[10, 20, 30, 40]</code></td>\n<td>每页条数选项</td>\n</tr>\n<tr>\n<td>simple</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>简单分页</td>\n</tr>\n<tr>\n<td>show-total</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>显示全部</td>\n</tr>\n<tr>\n<td>show-elevator</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>显示跳转</td>\n</tr>\n<tr>\n<td>show-sizer</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>显示分页选项</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化时</td>\n<td>(page, currentPagesize)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 917 */
+/* 918 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(918);
+	module.exports = __webpack_require__(919);
 
 /***/ },
-/* 918 */
+/* 919 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(919)
+	__vue_script__ = __webpack_require__(920)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3DataTableDocs-33.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(920)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3DataTableDocs-77.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(921)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -46412,7 +46453,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-00ca6d80/n3DataTableDocs-33.vue"
+	  var id = "_v-07d62e00/n3DataTableDocs-77.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -46421,7 +46462,7 @@
 	})()}
 
 /***/ },
-/* 919 */
+/* 920 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -46836,24 +46877,24 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 920 */
+/* 921 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>数据表格</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h4>Table</h4>\n<p><n3-data-table fixed-columns=\"\" height=\"400px\" :selection=\"selection\" :source=\"source\" :columns=\"columns\" :refresh=\"refresh\">\n</n3-data-table></p>\n</div>\n<pre><code class=\"language-html\">\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-data-table</span>\n  <span class=\"hljs-attr\">fixed-columns</span>\n  <span class=\"hljs-attr\">height</span>=<span class=\"hljs-string\">\"400px\"</span>\n  <span class=\"hljs-attr\">:selection</span>=<span class=\"hljs-string\">\"selection\"</span>\n  <span class=\"hljs-attr\">:source</span>=<span class=\"hljs-string\">\"source\"</span> \n  <span class=\"hljs-attr\">:columns</span>=<span class=\"hljs-string\">\"columns\"</span> \n  <span class=\"hljs-attr\">:refresh</span>=<span class=\"hljs-string\">\"refresh\"</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-data-table</span>&gt;</span>\n\n</code></pre>\n<h4>selection</h4>\n<pre><code class=\"language-javascript\">{\n  <span class=\"hljs-attr\">checkRows</span>:[],\n  onSelect (record, checked, checkRows) {},\n  onSelectAll (checked, checkRows, changeRows) {},\n  getCheckboxProps(record){\n    <span class=\"hljs-keyword\">if</span>(record.key == <span class=\"hljs-number\">2</span>){\n      <span class=\"hljs-keyword\">return</span> {\n        <span class=\"hljs-attr\">checked</span>: <span class=\"hljs-literal\">true</span>,\n        <span class=\"hljs-attr\">disabled</span>:<span class=\"hljs-literal\">true</span>\n      }\n    }<span class=\"hljs-keyword\">else</span>{\n      <span class=\"hljs-keyword\">return</span> {\n        <span class=\"hljs-attr\">disabled</span>:<span class=\"hljs-literal\">false</span>\n      }\n    }\n  }\n}\n\n</code></pre>\n<h4>filter-list</h4>\n<pre><code class=\"language-javascript\">\n[{\n  <span class=\"hljs-attr\">title</span>:<span class=\"hljs-string\">'姓名'</span>,\n  <span class=\"hljs-attr\">dataIndex</span>: <span class=\"hljs-string\">'name'</span>,\n  <span class=\"hljs-attr\">options</span>:[{<span class=\"hljs-attr\">value</span>:<span class=\"hljs-string\">\"v白\"</span>,<span class=\"hljs-attr\">label</span>:<span class=\"hljs-string\">\"v白\"</span>},{<span class=\"hljs-attr\">value</span>:<span class=\"hljs-string\">\"t红\"</span>,<span class=\"hljs-attr\">label</span>:<span class=\"hljs-string\">\"t红\"</span>}],\n  <span class=\"hljs-attr\">value</span>:[],\n  <span class=\"hljs-comment\">// multiple,search,extra</span>\n}]\n\n</code></pre>\n<h4>merge-rule</h4>\n<pre><code class=\"language-javascript\">\n{\n  <span class=\"hljs-attr\">name</span>:{\n    <span class=\"hljs-string\">'小白'</span>: {<span class=\"hljs-attr\">rowspan</span>: <span class=\"hljs-number\">2</span>},\n    <span class=\"hljs-string\">'v白'</span>: {<span class=\"hljs-attr\">rowspan</span>: <span class=\"hljs-number\">0</span>}\n  }\n}\n\n</code></pre>\n<h4>pagination</h4>\n<pre><code class=\"language-javascript\">\n{\n  <span class=\"hljs-attr\">current</span>:<span class=\"hljs-number\">5</span>,\n  <span class=\"hljs-attr\">total</span>:<span class=\"hljs-number\">10</span>,\n  <span class=\"hljs-attr\">pagesize</span>:<span class=\"hljs-number\">10</span>\n}\n\n</code></pre>\n<h4>@change</h4>\n<pre><code class=\"language-javascript\">\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">pagination,query,sort,filter</span>)</span>{\n  <span class=\"hljs-keyword\">var</span> data = {\n    <span class=\"hljs-attr\">start</span>:(pagination.current - <span class=\"hljs-number\">1</span>) * pagination.pagesize,\n    <span class=\"hljs-attr\">limit</span>:pagination.pagesize\n  },\n  self = <span class=\"hljs-keyword\">this</span>;\n\n  <span class=\"hljs-comment\">//根据需要添加其他参数</span>\n  <span class=\"hljs-keyword\">this</span>.loading = <span class=\"hljs-literal\">true</span>\n  $.ajax({\n    <span class=\"hljs-attr\">url</span>:<span class=\"hljs-string\">''</span>,\n    <span class=\"hljs-attr\">data</span>:data,\n    <span class=\"hljs-attr\">success</span>:<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">result</span>)</span>{\n        self.loading = <span class=\"hljs-literal\">false</span>\n        self.source = result.list\n        self.pagination.total = result.total\n    }\n  })\n}\n\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>fixed-columns</td>\n<td><code>Boolean</code></td>\n<td>-</td>\n<td>固定表头,记得为列设置宽度</td>\n</tr>\n<tr>\n<td>height</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>高度，配合固定表头使用</td>\n</tr>\n<tr>\n<td>width</td>\n<td><code>String</code></td>\n<td>-</td>\n<td>宽度 不要和fixed-columns共用</td>\n</tr>\n<tr>\n<td>async</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>异步加载，配合change事件来请求服务端数据</td>\n</tr>\n<tr>\n<td>merge-rule</td>\n<td><code>Object</code></td>\n<td>-</td>\n<td>合并规则</td>\n</tr>\n<tr>\n<td>columns</td>\n<td><code>Array</code></td>\n<td>-</td>\n<td>头部数组,设置字段名，描述，是否支持排序，是否显示，渲染方式等</td>\n</tr>\n<tr>\n<td>selection</td>\n<td><code>Object</code></td>\n<td>-</td>\n<td><code style=\"color:red\">使用getCheckboxProps来初始化状态</code></td>\n</tr>\n<tr>\n<td>sort-column</td>\n<td><code>Object</code></td>\n<td>-</td>\n<td>默认全局排序字段</td>\n</tr>\n<tr>\n<td>source</td>\n<td><code>Array</code></td>\n<td>-</td>\n<td>表格数组</td>\n</tr>\n<tr>\n<td>page</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否分页，需要开启async</td>\n</tr>\n<tr>\n<td>search</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否支持搜索</td>\n</tr>\n<tr>\n<td>filter</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否支持字段过滤,columns中为对象添加fiiter来指定其过滤器</td>\n</tr>\n<tr>\n<td>filter-list</td>\n<td><code>Array</code></td>\n<td>-</td>\n<td>自定义过滤器</td>\n</tr>\n<tr>\n<td>select-col</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否支持选择显示列</td>\n</tr>\n<tr>\n<td>pagination</td>\n<td><code>Object</code></td>\n<td>-</td>\n<td>设置分页</td>\n</tr>\n<tr>\n<td>loading</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>设置表格的加载中状态</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>当分页，搜索，过滤排序等条件发生变化时的回调函数，用于服务端操作</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
-/* 921 */
+/* 922 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(922);
+	module.exports = __webpack_require__(923);
 
 /***/ },
-/* 922 */
+/* 923 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_template__ = __webpack_require__(923)
+	__vue_template__ = __webpack_require__(924)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -46869,7 +46910,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-6263d5ee/n3BreadcrumbDocs-34.vue"
+	  var id = "_v-69454feb/n3BreadcrumbDocs-75.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -46878,27 +46919,27 @@
 	})()}
 
 /***/ },
-/* 923 */
+/* 924 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>面包屑</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-breadcrumb>\n    <n3-breadcrumb-item href=\"#\">Home</n3-breadcrumb-item>\n    <n3-breadcrumb-item href=\"#\">Library</n3-breadcrumb-item>\n    <n3-breadcrumb-item active=\"\">Data</n3-breadcrumb-item>\n\t</n3-breadcrumb>\n</div>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-breadcrumb</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-breadcrumb-item</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">\"#\"</span>&gt;</span>Home<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-breadcrumb-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-breadcrumb-item</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">\"#\"</span>&gt;</span>Library<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-breadcrumb-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-breadcrumb-item</span> <span class=\"hljs-attr\">active</span>&gt;</span>Data<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-breadcrumb-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-breadcrumb</span>&gt;</span>\n</code></pre>\n\n</template>\n</section>";
 
 /***/ },
-/* 924 */
+/* 925 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(925);
+	module.exports = __webpack_require__(926);
 
 /***/ },
-/* 925 */
+/* 926 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(926)
+	__vue_script__ = __webpack_require__(927)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3MultipleInputDocs-35.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(927)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3MultipleInputDocs-78.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(928)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -46914,7 +46955,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-2287386c/n3MultipleInputDocs-35.vue"
+	  var id = "_v-2984e16b/n3MultipleInputDocs-78.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -46923,7 +46964,7 @@
 	})()}
 
 /***/ },
-/* 926 */
+/* 927 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -47123,27 +47164,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 927 */
+/* 928 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>自定义输入</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-multiple-input @focus=\"focus\" @inputChange=\"getResult\" :async=\"true\" v-model=\"a.list\" :format=\"format\" :render=\"render\" :items=\"items\">\n</n3-multiple-input>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-multiple-input</span>\n  <span class=\"hljs-attr\">@focus</span>=<span class=\"hljs-string\">\"focus\"</span> \n  <span class=\"hljs-attr\">@inputChange</span>=<span class=\"hljs-string\">\"getResult\"</span>\n  <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"a.list\"</span> \n  <span class=\"hljs-attr\">:format</span>=<span class=\"hljs-string\">\"format\"</span> \n  <span class=\"hljs-attr\">:render</span>=<span class=\"hljs-string\">\"render\"</span>\n  <span class=\"hljs-attr\">:items</span>=<span class=\"hljs-string\">\"items\"</span> &gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-multiple-input</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">methods: {\n  focus () {\n    <span class=\"hljs-built_in\">console</span>.log(<span class=\"hljs-number\">1</span>)\n  },\n  render (item) {\n    <span class=\"hljs-keyword\">return</span> item.formatted_address\n  },\n  getResult (query) {\n    <span class=\"hljs-built_in\">console</span>.log(query, <span class=\"hljs-number\">1</span>)\n    <span class=\"hljs-keyword\">let</span> self = <span class=\"hljs-keyword\">this</span>\n    $.ajax({\n      <span class=\"hljs-attr\">url</span>: <span class=\"hljs-string\">'https://maps.googleapis.com/maps/api/geocode/json?address='</span> + query,\n      success (ret) {\n        self.items = ret.results\n      }\n    })\n  },\n  format (item, index) {\n    <span class=\"hljs-keyword\">let</span> content = item.formatted_address\n    <span class=\"hljs-keyword\">return</span> content\n  }\n}\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>data</td>\n<td><code>Array</code></td>\n<td>-</td>\n<td>本地数组</td>\n</tr>\n<tr>\n<td>format</td>\n<td><code>Function</code></td>\n<td>-</td>\n<td>显示格式化函数</td>\n</tr>\n<tr>\n<td>limit</td>\n<td><code>Number</code></td>\n<td><code>8</code></td>\n<td>显示的条数</td>\n</tr>\n<tr>\n<td>items</td>\n<td><code>Array</code></td>\n<td><code>[]</code></td>\n<td>列表数组，用于异步请求</td>\n</tr>\n<tr>\n<td>positionMove</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>输入框位置是否能控制移动</td>\n</tr>\n<tr>\n<td>async</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>异步</td>\n</tr>\n<tr>\n<td>render</td>\n<td><code>Function</code></td>\n<td>-</td>\n<td>渲染函数</td>\n</tr>\n<tr>\n<td>add-format</td>\n<td><code>Function</code></td>\n<td>-</td>\n<td>获取需要的值</td>\n</tr>\n<tr>\n<td>dropdown-width</td>\n<td><code>String</code></td>\n<td><code>220px</code></td>\n<td>下拉宽度</td>\n</tr>\n<tr>\n<td>dropdown-height</td>\n<td><code>String</code></td>\n<td><code>300px</code></td>\n<td>下拉框最大高度</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>blur</td>\n<td>失焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>focus</td>\n<td>聚焦</td>\n<td>-</td>\n</tr>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n<tr>\n<td>positionChange</td>\n<td>位置变化</td>\n<td>(currentPosition)</td>\n</tr>\n<tr>\n<td>inputChange</td>\n<td>输入值变化</td>\n<td>(query)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 928 */
+/* 929 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(929);
+	module.exports = __webpack_require__(930);
 
 /***/ },
-/* 929 */
+/* 930 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(930)
+	__vue_script__ = __webpack_require__(931)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TreeDocs-36.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(931)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3TreeDocs-81.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(932)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -47159,7 +47200,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-78a69216/n3TreeDocs-36.vue"
+	  var id = "_v-682306ea/n3TreeDocs-81.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -47168,7 +47209,7 @@
 	})()}
 
 /***/ },
-/* 930 */
+/* 931 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -47614,27 +47655,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 931 */
+/* 932 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>树形视图</h3>\n<div class=\"bs-docs-section\">\n<blockquote>\n<p>树形视图（普通）</p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-tree :data=\"data\" :props=\"defaultProps\" @node-click=\"handleNodeClick\"></n3-tree>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tree</span> <span class=\"hljs-attr\">:data</span>=<span class=\"hljs-string\">\"data\"</span> <span class=\"hljs-attr\">:props</span>=<span class=\"hljs-string\">\"defaultProps\"</span> <span class=\"hljs-attr\">@node-click</span>=<span class=\"hljs-string\">\"handleNodeClick\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tree</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n  data() {\n    <span class=\"hljs-keyword\">return</span> {\n      <span class=\"hljs-attr\">data</span>: [{\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'新建文件夹1'</span>,\n        <span class=\"hljs-attr\">children</span>: [{\n          <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'我的文档1'</span>\n        }]\n      }, {\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'新建文件夹2'</span>,\n        <span class=\"hljs-attr\">children</span>: [{\n          <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'我的文档2'</span>\n        }, {\n          <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'我的文档3'</span>\n        }]\n      }, {\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'新建文件夹3'</span>,\n        <span class=\"hljs-attr\">children</span>: [{\n          <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'新建文件夹4'</span>,\n          <span class=\"hljs-attr\">children</span>: [{\n            <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'我的文档6'</span>\n          }]\n        }, {\n          <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'我的文档4'</span>\n        }, {\n          <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'我的文档5'</span>\n        }]\n      }],\n      <span class=\"hljs-attr\">defaultProps</span>: {\n        <span class=\"hljs-attr\">children</span>: <span class=\"hljs-string\">'children'</span>,\n        <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'label'</span>\n      }\n    }\n  },\n  <span class=\"hljs-attr\">methods</span>: {\n    handleNodeClick(data) {\n      <span class=\"hljs-built_in\">console</span>.log(data)\n    }\n  }\n}\n</code></pre>\n<blockquote>\n<p>树形视图（可选中、动态加载）</p>\n</blockquote>\n<div class=\"bs-example\">\n  <n3-tree :data=\"regions\" :props=\"props\" :load=\"loadNode\" lazy=\"\" show-checkbox=\"\" @check-change=\"handleCheckChange\"></n3-tree>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-tree</span> <span class=\"hljs-attr\">:data</span>=<span class=\"hljs-string\">\"regions\"</span> <span class=\"hljs-attr\">:props</span>=<span class=\"hljs-string\">\"props\"</span> <span class=\"hljs-attr\">:load</span>=<span class=\"hljs-string\">\"loadNode\"</span> <span class=\"hljs-attr\">lazy</span> <span class=\"hljs-attr\">show-checkbox</span> <span class=\"hljs-attr\">@check-change</span>=<span class=\"hljs-string\">\"handleCheckChange\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-tree</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\"><span class=\"hljs-keyword\">export</span> <span class=\"hljs-keyword\">default</span> {\n    data() {\n      <span class=\"hljs-keyword\">return</span> {\n        <span class=\"hljs-attr\">defaultProps</span>: {\n          <span class=\"hljs-attr\">children</span>: <span class=\"hljs-string\">'children'</span>,\n          <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'label'</span>\n        },\n        <span class=\"hljs-attr\">regions</span>: [{\n          <span class=\"hljs-string\">'name'</span>: <span class=\"hljs-string\">'/root'</span>\n        }, {\n          <span class=\"hljs-string\">'name'</span>: <span class=\"hljs-string\">'/home'</span>\n        }],\n        <span class=\"hljs-attr\">props</span>: {\n          <span class=\"hljs-attr\">label</span>: <span class=\"hljs-string\">'name'</span>,\n          <span class=\"hljs-attr\">children</span>: <span class=\"hljs-string\">'zones'</span>\n        },\n        <span class=\"hljs-attr\">count</span>: <span class=\"hljs-number\">1</span>\n      }\n    },\n    <span class=\"hljs-attr\">methods</span>: {\n      handleCheckChange(data, checked, indeterminate) {\n        <span class=\"hljs-built_in\">console</span>.log(data, checked, indeterminate)\n      },\n      loadNode(node, resolve) {\n        <span class=\"hljs-keyword\">if</span> (node.level === <span class=\"hljs-number\">0</span>) {\n          <span class=\"hljs-keyword\">return</span> resolve([{ <span class=\"hljs-attr\">name</span>: <span class=\"hljs-string\">'/root'</span> }, { <span class=\"hljs-attr\">name</span>: <span class=\"hljs-string\">'/home'</span> }])\n        }\n        <span class=\"hljs-keyword\">if</span> (node.level &gt; <span class=\"hljs-number\">3</span>) <span class=\"hljs-keyword\">return</span> resolve([])\n\n        <span class=\"hljs-keyword\">var</span> hasChild\n        <span class=\"hljs-keyword\">if</span> (node.data.name === <span class=\"hljs-string\">'/root'</span>) {\n          hasChild = <span class=\"hljs-literal\">true</span>\n        } <span class=\"hljs-keyword\">else</span> <span class=\"hljs-keyword\">if</span> (node.data.name === <span class=\"hljs-string\">'/home'</span>) {\n          hasChild = <span class=\"hljs-literal\">false</span>\n        } <span class=\"hljs-keyword\">else</span> {\n          hasChild = <span class=\"hljs-built_in\">Math</span>.random() &gt; <span class=\"hljs-number\">0.5</span>\n        }\n\n        setTimeout(<span class=\"hljs-function\"><span class=\"hljs-params\">()</span> =&gt;</span> {\n          <span class=\"hljs-keyword\">var</span> data\n          <span class=\"hljs-keyword\">if</span> (hasChild) {\n            data = [{\n              <span class=\"hljs-attr\">name</span>: <span class=\"hljs-string\">'新建文件夹'</span> + <span class=\"hljs-keyword\">this</span>.count++\n            }, {\n              <span class=\"hljs-attr\">name</span>: <span class=\"hljs-string\">'新建文件夹'</span> + <span class=\"hljs-keyword\">this</span>.count++\n            }]\n          } <span class=\"hljs-keyword\">else</span> {\n            data = []\n          }\n\n          resolve(data)\n        }, <span class=\"hljs-number\">500</span>)\n      }\n    }\n  }\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>data</td>\n<td><code>Array</code></td>\n<td><code>[]</code></td>\n<td>展示数据</td>\n</tr>\n<tr>\n<td>empty-text</td>\n<td><code>String</code></td>\n<td>Empty Content.</td>\n<td>展示数据为空时展示的文本</td>\n</tr>\n<tr>\n<td>node-key</td>\n<td><code>String</code></td>\n<td>—</td>\n<td>每个树节点用来作为唯一标识的属性，整颗树应该是唯一的</td>\n</tr>\n<tr>\n<td>props</td>\n<td></td>\n<td><code>Object</code></td>\n<td>—</td>\n</tr>\n<tr>\n<td>leaf-icon</td>\n<td><code>String</code></td>\n<td>file</td>\n<td>叶子节点图标</td>\n</tr>\n<tr>\n<td>child-icon</td>\n<td><code>String</code></td>\n<td>folder</td>\n<td>子节点图标</td>\n</tr>\n<tr>\n<td>closed-icon</td>\n<td><code>String</code></td>\n<td>angle-right</td>\n<td>关闭时箭头图标</td>\n</tr>\n<tr>\n<td>opened-icon</td>\n<td><code>String</code></td>\n<td>angle-down</td>\n<td>打开时箭头图标</td>\n</tr>\n<tr>\n<td>load</td>\n<td><code>Function</code></td>\n<td>function(node, resolve) {}</td>\n<td>加载子树数据的方法</td>\n</tr>\n<tr>\n<td>render-content</td>\n<td><code>Function</code></td>\n<td>function(h, { node }) {}</td>\n<td>树节点的内容区的渲染方法</td>\n</tr>\n<tr>\n<td>highlight-current</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否高亮当前选中节点</td>\n</tr>\n<tr>\n<td>current-node-key</td>\n<td><code>String, Number</code></td>\n<td>—</td>\n<td>当前选中节点的 key ，只写属性</td>\n</tr>\n<tr>\n<td>default-expand-all</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否默认展开所有节点</td>\n</tr>\n<tr>\n<td>expand-on-click-node</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否在点击节点的时候展开或者收缩节点(如果不则则只有点箭头图标的时候才会展开或者收缩节点。)</td>\n</tr>\n<tr>\n<td>auto-expand-parent</td>\n<td></td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n</tr>\n<tr>\n<td>default-expanded-keys</td>\n<td><code>Array</code></td>\n<td>—</td>\n<td>默认展开的节点的 key 的数组</td>\n</tr>\n<tr>\n<td>show-checkbox</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>节点是否可被勾选</td>\n</tr>\n<tr>\n<td>check-strictly</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>在显示复选框的情况下，是否严格的遵循父子不互相关联的做法</td>\n</tr>\n<tr>\n<td>default-checked-keys</td>\n<td><code>Array</code></td>\n<td><code>[]</code></td>\n<td>默认勾选的节点的 key 的数组</td>\n</tr>\n<tr>\n<td>filter-node-method</td>\n<td><code>Function</code></td>\n<td>function(value, data, node)</td>\n<td>对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示, 反之则为隐藏</td>\n</tr>\n</tbody>\n</table>\n<h3>数据属性props</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>label</td>\n<td><code>String</code></td>\n<td>label</td>\n<td>指定节点标签为节点对象的某个属性值</td>\n</tr>\n<tr>\n<td>children</td>\n<td><code>String</code></td>\n<td>children</td>\n<td>指定子树为节点对象的某个属性值</td>\n</tr>\n</tbody>\n</table>\n<h3>Methods</h3>\n<table>\n<thead>\n<tr>\n<th>方法名</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>filter</td>\n<td>对树节点进行筛选操作</td>\n<td>接收一个任意类型的参数，该参数会在 filter-node-method 中作为第一个参数</td>\n</tr>\n<tr>\n<td>getCheckedNodes</td>\n<td>若节点可被选择（即 <code>show-checkbox</code> 为 <code>true</code>），则返回目前被选中的节点所组成的数组</td>\n<td>(leafOnly) 接收一个 boolean 类型的参数，若为 <code>true</code> 则仅返回被选中的叶子节点，默认值为 <code>false</code></td>\n</tr>\n<tr>\n<td>setCheckedNodes</td>\n<td>设置目前勾选的节点，使用此方法必须设置 node-key 属性</td>\n<td>(nodes) 接收勾选节点数据的数组</td>\n</tr>\n<tr>\n<td>getCheckedKeys</td>\n<td>若节点可被选择（即 <code>show-checkbox</code> 为 <code>true</code>），则返回目前被选中的节点所组成的数组</td>\n<td>(leafOnly) 接收一个 boolean 类型的参数，若为 <code>true</code> 则仅返回被选中的叶子节点的 keys，默认值为 <code>true</code></td>\n</tr>\n<tr>\n<td>setCheckedKeys</td>\n<td>通过 keys 设置目前勾选的节点，使用此方法必须设置 node-key 属性</td>\n<td>(keys, leafOnly) 接收两个参数，1. 勾选节点的 key 的数组 2. boolean 类型的参数，若为 <code>true</code> 则仅设置叶子节点的选中状态，默认值为 <code>true</code></td>\n</tr>\n<tr>\n<td>setChecked</td>\n<td>通过 key / data 设置某个节点的勾选状态，使用此方法必须设置 node-key 属性</td>\n<td>(key/data, checked, deep) 接收三个参数，1. 勾选节点的 key 或者 data 2. boolean 类型，节点是否选中  3. boolean 类型，是否设置子节点 ，默认为 false</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>node-click</td>\n<td>节点被点击时的回调</td>\n<td>共三个参数，依次为：传递给 <code>data</code> 属性的数组中该节点所对应的对象、节点对应的 Node、节点组件本身。</td>\n</tr>\n<tr>\n<td>check-change</td>\n<td>节点选中状态发生变化时的回调</td>\n<td>共三个参数，依次为：传递给 <code>data</code> 属性的数组中该节点所对应的对象、节点本身是否被选中、节点的子树中是否有被选中的节点</td>\n</tr>\n<tr>\n<td>current-change</td>\n<td>当前选中节点变化时触发的事件</td>\n<td>共两个参数，依次为：当前节点的数据，当前节点的 Node 对象</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
-/* 932 */
+/* 933 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(933);
+	module.exports = __webpack_require__(934);
 
 /***/ },
-/* 933 */
+/* 934 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(934)
+	__vue_script__ = __webpack_require__(935)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3RateDocs-37.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(935)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3RateDocs-80.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(936)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -47650,7 +47691,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-09f6f7f4/n3RateDocs-37.vue"
+	  var id = "_v-121c8e88/n3RateDocs-80.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -47659,7 +47700,7 @@
 	})()}
 
 /***/ },
-/* 934 */
+/* 935 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -47788,27 +47829,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 935 */
+/* 936 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>评分</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-rate v-model=\"value\"></n3-rate>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-rate</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-rate</span>&gt;</span>\n</code></pre>\n<p><n3-rate v-model=\"value1\" allow-half=\"\"></n3-rate></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-rate</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value1\"</span> <span class=\"hljs-attr\">allow-half</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-rate</span>&gt;</span>\n</code></pre>\n<p><n3-rate v-model=\"value2\" show-text=\"\" :colors=\"['#ffeb3b','#ff9800','#f44336']\"></n3-rate></p>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-rate</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"value2\"</span> <span class=\"hljs-attr\">show-text</span> <span class=\"hljs-attr\">:colors</span>=<span class=\"hljs-string\">\"['#ffeb3b','#ff9800','#f44336']\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-rate</span>&gt;</span>\n</code></pre>\n</div>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>max</td>\n<td><code>Number</code></td>\n<td><code>5</code></td>\n<td>最大个数</td>\n</tr>\n<tr>\n<td>allow-half</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否支持半数</td>\n</tr>\n<tr>\n<td>colors</td>\n<td><code>Array</code></td>\n<td><code>['#F7BA2A', '#F7BA2A', '#F7BA2A']</code></td>\n<td>颜色</td>\n</tr>\n<tr>\n<td>voidColor</td>\n<td><code>String</code></td>\n<td><code>#C6D1DE</code></td>\n<td>未选中颜色</td>\n</tr>\n<tr>\n<td>disabledVoidColor</td>\n<td><code>String</code></td>\n<td><code>#EFF2F7</code></td>\n<td>禁止情况下为选中颜色</td>\n</tr>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>禁止操作</td>\n</tr>\n<tr>\n<td>disabled-void-icon</td>\n<td><code>String</code></td>\n<td><code>star</code></td>\n<td>禁止操作的图标</td>\n</tr>\n<tr>\n<td>void-icon</td>\n<td><code>String</code></td>\n<td><code>star-o</code></td>\n<td>未选中图标</td>\n</tr>\n<tr>\n<td>icons</td>\n<td><code>Array</code></td>\n<td><code>['star', 'star', 'star']</code></td>\n<td>选中图标</td>\n</tr>\n<tr>\n<td>show-text</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>是否显示文本解释</td>\n</tr>\n<tr>\n<td>text-color</td>\n<td><code>string</code></td>\n<td><code>#1f2d3d</code></td>\n<td>文本颜色</td>\n</tr>\n<tr>\n<td>texts</td>\n<td><code>Array</code></td>\n<td><code>[]</code></td>\n<td>文本</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 936 */
+/* 937 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(937);
+	module.exports = __webpack_require__(938);
 
 /***/ },
-/* 937 */
+/* 938 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(938)
+	__vue_script__ = __webpack_require__(939)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3UploaderDocs-38.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(939)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3UploaderDocs-79.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(940)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -47824,7 +47865,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-3f9553b2/n3UploaderDocs-38.vue"
+	  var id = "_v-31d25fb8/n3UploaderDocs-79.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -47833,7 +47874,7 @@
 	})()}
 
 /***/ },
-/* 938 */
+/* 939 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -47999,27 +48040,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 939 */
+/* 940 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>文件上传</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h4>单个文件上传</h4>\n<p><n3-uploader url=\"http://test.com/\" :multiple=\"false\" @error=\"onError\" :max-size=\"0.5\"></n3-uploader></p>\n<hr>\n<h4>点击上传</h4>\n<p><n3-uploader url=\"http://test.com/\" @error=\"onError\"></n3-uploader></p>\n<hr>\n<h4>支持拖拽</h4>\n<p><n3-uploader type=\"drag\" url=\"http://test.com/\" @error=\"onError\"></n3-uploader></p>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!-- 单个上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">url</span>=<span class=\"hljs-string\">\"http://test.com/\"</span> <span class=\"hljs-attr\">:multiple</span>=<span class=\"hljs-string\">\"false\"</span> <span class=\"hljs-attr\">@error</span>=<span class=\"hljs-string\">\"onError\"</span> <span class=\"hljs-attr\">:max-size</span>=<span class=\"hljs-string\">\"0.5\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 点击上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">url</span>=<span class=\"hljs-string\">\"http://test.com/\"</span> <span class=\"hljs-attr\">@error</span>=<span class=\"hljs-string\">\"onError\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n\n<span class=\"hljs-comment\">&lt;!-- 拖拽上传 --&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-uploader</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"drag\"</span> <span class=\"hljs-attr\">url</span>=<span class=\"hljs-string\">\"http://test.com/\"</span> <span class=\"hljs-attr\">@error</span>=<span class=\"hljs-string\">\"onError\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-uploader</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td><code>String</code></td>\n<td>files</td>\n<td>文件对象的name</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code>：<code>click</code> 或 <code>drag</code></td>\n<td>click</td>\n<td>拖拽或者点击</td>\n</tr>\n<tr>\n<td>accept</td>\n<td><code>String</code></td>\n<td>'' (全支持)</td>\n<td>支持的文件类型 例如: <code>'image/jpeg'</code> 或者 <code>'image'</code>支持所有图片格式,多个如 <code>'txt|image|mp3'</code></td>\n</tr>\n<tr>\n<td>url</td>\n<td><code>String</code></td>\n<td></td>\n<td>上传地址</td>\n</tr>\n<tr>\n<td>params</td>\n<td><code>Object</code></td>\n<td></td>\n<td>上传参数</td>\n</tr>\n<tr>\n<td>multiple</td>\n<td><code>Boolean</code></td>\n<td>true</td>\n<td>支持多文件上传</td>\n</tr>\n<tr>\n<td>drag-width</td>\n<td><code>String</code></td>\n<td>300px</td>\n<td>拖拽框宽度</td>\n</tr>\n<tr>\n<td>drag-height</td>\n<td><code>String</code></td>\n<td>200px</td>\n<td>拖拽框高度</td>\n</tr>\n<tr>\n<td>max-length</td>\n<td><code>Number</code></td>\n<td>10</td>\n<td>上传文件个数限制</td>\n</tr>\n<tr>\n<td>with-credentials</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>跨域时带cookies</td>\n</tr>\n<tr>\n<td>max-size</td>\n<td><code>Number</code></td>\n<td>10</td>\n<td>单个文件的size限制（MB）</td>\n</tr>\n</tbody>\n</table>\n<h3>Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>success</td>\n<td>成功上传回调时</td>\n<td>({response, file})</td>\n</tr>\n<tr>\n<td>finish</td>\n<td>完成所有上传任务时</td>\n<td>()</td>\n</tr>\n<tr>\n<td>delete</td>\n<td>删除一个上传的项目时</td>\n<td>(uploadItem)</td>\n</tr>\n<tr>\n<td>error</td>\n<td>发生错误时</td>\n<td>({message, file})</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ },
-/* 940 */
+/* 941 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(941);
+	module.exports = __webpack_require__(942);
 
 /***/ },
-/* 941 */
+/* 942 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(942)
+	__vue_script__ = __webpack_require__(943)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3FormDocs-39.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(943)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3FormDocs-82.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(944)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -48035,7 +48076,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-e31b5edc/n3FormDocs-39.vue"
+	  var id = "_v-d2d031b4/n3FormDocs-82.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -48044,7 +48085,7 @@
 	})()}
 
 /***/ },
-/* 942 */
+/* 943 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -48495,27 +48536,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 943 */
+/* 944 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>表单</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<n3-form ref=\"form\">\n<n3-form-item need=\"\" label=\"姓名\" :label-col=\"3\">\n<n3-input show-clean=\"\" name=\"name\" v-model=\"model.name\" :rules=\"[{type:'required'}]\" :custom-validate=\"nameValidate\">\n</n3-input>\n</n3-form-item>\n<p><n3-form-item need=\"\" label=\"年龄\" :label-col=\"3\">\n<n3-input-number name=\"age\" v-model=\"model.age\" :rules=\"[{type:'number'},{type:'required'}]\">\n</n3-input-number>\n\n</n3-form-item>\n<n3-form-item need=\"\" label=\"地址\" :label-col=\"3\">\n<n3-cascader name=\"address\" :options=\"options\" v-model=\"model.address\" :rules=\"[{type:'required'}]\">\n</n3-cascader>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"生日\" :label-col=\"3\">\n<n3-datepicker name=\"birthday\" v-model=\"model.birthday\" :rules=\"[{type:'required'}]\">\n</n3-datepicker>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"学校\" :label-col=\"3\">\n<n3-typeahead show-clean=\"\" name=\"学校\" v-model=\"model.school\" :data=\"schoolData\" :rules=\"[{type:'required'}]\">\n</n3-typeahead>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"爱好\" :label-col=\"3\">\n<n3-checkbox-group name=\"hobby\" v-model=\"model.hobby\" :rules=\"[{type:'required'}]\">\n<n3-checkbox label=\"0\">看书</n3-checkbox>\n<n3-checkbox label=\"1\">运动</n3-checkbox>\n<n3-checkbox value=\"2\">旅行</n3-checkbox>\n</n3-checkbox-group>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"性别\" :label-col=\"3\">\n<n3-radio-group name=\"sex\" v-model=\"model.sex\" :rules=\"[{type:'required'}]\">\n<n3-radio label=\"0\">男</n3-radio>\n<n3-radio label=\"1\">女</n3-radio>\n</n3-radio-group>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"专业\" :label-col=\"3\">\n<n3-select name=\"sex\" :options=\"profession\" v-model=\"model.profession\" :rules=\"[{type:'required'}]\">\n</n3-select>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"级别\" :label-col=\"3\">\n<n3-slider name=\"level\" v-model=\"model.level\" :rules=\"[{type:'required'}]\">\n</n3-slider>\n</n3-form-item></p>\n<p><n3-form-item need=\"\" label=\"开启状态\" :label-col=\"3\">\n<n3-switch name=\"state\" v-model=\"model.state\" :rules=\"[{type:'required'}]\">\n</n3-switch>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"喜欢的明星\" :label-col=\"3\">\n<n3-multiple-input name=\"star\" v-model=\"model.star\" :rules=\"[{type:'required'}]\">\n</n3-multiple-input>\n</n3-form-item>\n<n3-form-item need=\"\" label=\"想说的话\" :label-col=\"3\">\n<n3-textarea name=\"suggestion\" v-model=\"model.suggestion\" :rules=\"[{type:'required'}]\">\n</n3-textarea>\n</n3-form-item></p>\n <n3-form-item>\n     <n3-button type=\"primary\" @click.native=\"submit\">提交</n3-button>\n</n3-form-item>\n</n3-form>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form</span> <span class=\"hljs-attr\">ref</span>=<span class=\"hljs-string\">'form'</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"姓名\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"name\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.name\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>\n      <span class=\"hljs-attr\">:custom-validate</span>=<span class=\"hljs-string\">\"nameValidate\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"年龄\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-input-number</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"age\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.age\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'number'},{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input-number</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"地址\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-cascader</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"address\"</span>\n      <span class=\"hljs-attr\">:options</span>=<span class=\"hljs-string\">\"options\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.address\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-cascader</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"生日\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-datepicker</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"birthday\"</span>\n      <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.birthday\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-datepicker</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"学校\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-typeahead</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"学校\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.school\"</span>\n      <span class=\"hljs-attr\">:data</span>=<span class=\"hljs-string\">\"schoolData\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-typeahead</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"爱好\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-group</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"hobby\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.hobby\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>看书<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>运动<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">value</span>=<span class=\"hljs-string\">\"2\"</span>&gt;</span>旅行<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-group</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"性别\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio-group</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"sex\"</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.sex\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>男<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"1\"</span>&gt;</span>女<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio-group</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"专业\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-select</span>\n      <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"sex\"</span>\n      <span class=\"hljs-attr\">:options</span>=<span class=\"hljs-string\">'profession'</span>\n      <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.profession\"</span>\n      <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-select</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"级别\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slider</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"level\"</span>\n        <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"model.level\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slider</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"开启状态\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-switch</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"state\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.state\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-switch</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"喜欢的明星\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-multiple-input</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"star\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.star\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-multiple-input</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>\n      <span class=\"hljs-attr\">need</span>\n      <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"想说的话\"</span>\n      <span class=\"hljs-attr\">:label-col</span>=<span class=\"hljs-string\">\"3\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-textarea</span>\n        <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"suggestion\"</span>\n        <span class=\"hljs-attr\">v-model</span> = <span class=\"hljs-string\">\"model.suggestion\"</span>\n        <span class=\"hljs-attr\">:rules</span>=<span class=\"hljs-string\">\"[{type:'required'}]\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-textarea</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n\n   <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n       <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span> <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"submit\"</span> &gt;</span>提交<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form-item</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-form</span>&gt;</span>\n</code></pre>\n<pre><code class=\"language-javascript\">  methods: {\n    nameValidate (val) {\n      <span class=\"hljs-keyword\">if</span> (<span class=\"hljs-regexp\">/[\\u4E00-\\u9FA5\\uF900-\\uFA2D]/</span>.test(val)) {\n        <span class=\"hljs-keyword\">return</span> {\n          <span class=\"hljs-attr\">validStatus</span>: <span class=\"hljs-string\">'success'</span>\n        }\n      } <span class=\"hljs-keyword\">else</span> {\n        <span class=\"hljs-keyword\">return</span> {\n          <span class=\"hljs-attr\">validStatus</span>: <span class=\"hljs-string\">'error'</span>,\n          <span class=\"hljs-attr\">tips</span>: <span class=\"hljs-string\">'请输入中文名'</span>\n        }\n      }\n    },\n    submit () {\n      <span class=\"hljs-keyword\">this</span>.$refs.form.validateFields(<span class=\"hljs-function\"><span class=\"hljs-params\">result</span> =&gt;</span> {\n        <span class=\"hljs-built_in\">console</span>.log(result)\n     })\n    }\n  }\n}\n</code></pre>\n<h3>n3-from参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td>String</td>\n<td>horizontal</td>\n<td>布局方式  horizontal,inline</td>\n</tr>\n<tr>\n<td>validate</td>\n<td>Boolean</td>\n<td>false</td>\n<td>是否打开验证</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>validateChange</td>\n<td>校验结果变化</td>\n<td>(validateResults)</td>\n</tr>\n</tbody>\n</table>\n<h3>方法</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>validateFields</td>\n<td>校验</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-from-item参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>label</td>\n<td><code>String</code></td>\n<td>－</td>\n<td>表单项说明</td>\n</tr>\n<tr>\n<td>label-col</td>\n<td><code>Number</code></td>\n<td><code>2</code></td>\n<td>表单项说明所占栅格数</td>\n</tr>\n<tr>\n<td>wrap-col</td>\n<td><code>Number</code></td>\n<td><code>12</code></td>\n<td>表单项所占栅格数</td>\n</tr>\n<tr>\n<td>form-col</td>\n<td><code>Number</code></td>\n<td><code>10</code></td>\n<td>表单元素所占栅格数</td>\n</tr>\n<tr>\n<td>need</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>必填标示红点</td>\n</tr>\n</tbody>\n</table>\n<h3>待验证组件参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>custom－validate</td>\n<td>Function`</td>\n<td></td>\n<td>自定义校验器</td>\n</tr>\n<tr>\n<td>rules</td>\n<td><code>Array</code></td>\n<td>－</td>\n<td>验证规则,如 <code>[{type: 'required' }, {type: 'maxlength=6' }, {type:'minlength=3'}, {type: 'phone' }, {type: 'number' }, {type: 'telephone' }, {type: 'email' }]</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 944 */
+/* 945 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(945);
+	module.exports = __webpack_require__(946);
 
 /***/ },
-/* 945 */
+/* 946 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(946)
+	__vue_script__ = __webpack_require__(947)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3CheckboxDocs-40.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(947)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3CheckboxDocs-83.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(948)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -48531,7 +48572,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-84da836e/n3CheckboxDocs-40.vue"
+	  var id = "_v-76df3170/n3CheckboxDocs-83.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -48540,7 +48581,7 @@
 	})()}
 
 /***/ },
-/* 946 */
+/* 947 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -48682,27 +48723,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 947 */
+/* 948 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>多选框</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h4>Checkbox</h4>\n<n3-checkbox label=\"single\">single</n3-checkbox>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"single\"</span>&gt;</span>single<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n</code></pre>\n<hr>\n<n3-checkbox-group v-model=\"checkboxValue\">\n  <n3-checkbox-btn label=\"left\" disabled>Left</n3-checkbox-btn>\n  <n3-checkbox-btn label=\"middle\" checked>Middle</n3-checkbox-btn>\n  <n3-checkbox-btn label=\"right\">Right</n3-checkbox-btn>\n</n3-checkbox-group>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-group</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"checkboxValue\"</span> &gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-btn</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>Left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-btn</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-btn</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"middle\"</span> <span class=\"hljs-attr\">checked</span>&gt;</span>Middle<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-btn</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-btn</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>Right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-btn</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-group</span>&gt;</span>\n</code></pre>\n<n3-checkbox-group v-model=\"checkboxValue\">\n  <n3-checkbox label=\"left\" disabled>Left</n3-checkbox>\n  <n3-checkbox label=\"middle\" checked>Middle</n3-checkbox>\n  <n3-checkbox label=\"right\">Right</n3-checkbox>\n</n3-checkbox-group>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox-group</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"checkboxValue\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>Left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"middle\"</span> <span class=\"hljs-attr\">checked</span>&gt;</span>Middle<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-checkbox</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>Right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-checkbox-group</span>&gt;</span>\n</code></pre>\n<h3>Group 参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>options</td>\n<td><code>Array</code></td>\n<td>-</td>\n<td>选项</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>radio</code></td>\n<td><code>radio</code>,<code>button</code> 使用options时起作用</td>\n</tr>\n</tbody>\n</table>\n<h3>Group Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<h3>Checkbox 参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>禁用</td>\n</tr>\n<tr>\n<td>checked</td>\n<td><code>Boolean</code></td>\n<td>false</td>\n<td>选中</td>\n</tr>\n</tbody>\n</table>\n<h3>Checkbox Events</h3>\n<table>\n<thead>\n<tr>\n<th>事件名称</th>\n<th>说明</th>\n<th>回调参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 948 */
+/* 949 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(949);
+	module.exports = __webpack_require__(950);
 
 /***/ },
-/* 949 */
+/* 950 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(950)
+	__vue_script__ = __webpack_require__(951)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3RadioDocs-41.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(951)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3RadioDocs-85.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(952)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -48718,7 +48759,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-6dc68e06/n3RadioDocs-41.vue"
+	  var id = "_v-74d24e86/n3RadioDocs-85.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -48727,7 +48768,7 @@
 	})()}
 
 /***/ },
-/* 950 */
+/* 951 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -48867,27 +48908,27 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 951 */
+/* 952 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>单选框</h3>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <h4>Radio</h4>\n<n3-radio-group v-model=\"radioValue\" type=\"primary\">\n  <n3-radio label=\"left\" disabled>Left</n3-radio>\n  <n3-radio label=\"middle\" checked>Middle</n3-radio>\n  <n3-radio label=\"right\">Right</n3-radio>\n</n3-radio-group>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio-group</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"radioValue\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>Left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"middle\"</span> <span class=\"hljs-attr\">checked</span>&gt;</span>Middle<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>Right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio-group</span>&gt;</span>\n</code></pre>\n<n3-radio-group v-model=\"radioValue\" type=\"primary\">\n  <n3-radio-btn label=\"left\" disabled>Left</n3-radio-btn>\n  <n3-radio-btn label=\"middle\" checked>Middle</n3-radio-btn>\n  <n3-radio-btn label=\"right\">Right</n3-radio-btn>\n</n3-radio-group>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio-group</span> <span class=\"hljs-attr\">v-model</span>=<span class=\"hljs-string\">\"radioValue\"</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"primary\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio-btn</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"left\"</span> <span class=\"hljs-attr\">disabled</span>&gt;</span>Left<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio-btn</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio-btn</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"middle\"</span> <span class=\"hljs-attr\">checked</span>&gt;</span>Middle<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio-btn</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-radio-btn</span> <span class=\"hljs-attr\">label</span>=<span class=\"hljs-string\">\"right\"</span>&gt;</span>Right<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio-btn</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-radio-group</span>&gt;</span>\n\n</code></pre>\n<h3>group 参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>options</td>\n<td><code>Array</code></td>\n<td>-</td>\n<td>选项</td>\n</tr>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td><code>radio</code></td>\n<td><code>radio</code>,<code>button</code> 使用<code>options</code>时起作用</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<h3>radio 参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>disabled</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>禁用</td>\n</tr>\n<tr>\n<td>checked</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>选中</td>\n</tr>\n</tbody>\n</table>\n<h3>事件</h3>\n<table>\n<thead>\n<tr>\n<th>名称</th>\n<th>说明</th>\n<th>参数</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>change</td>\n<td>值变化</td>\n<td>(currentValue)</td>\n</tr>\n</tbody>\n</table>\n<hr>\n<p>其他表单相关参数，请移步 <a href=\"#n3FormDocs\">表单验证</a> 待验证组件参数</p>\n</div>\n</div></template>\n\n</section>";
 
 /***/ },
-/* 952 */
+/* 953 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(953);
+	module.exports = __webpack_require__(954);
 
 /***/ },
-/* 953 */
+/* 954 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__vue_script__ = __webpack_require__(954)
+	__vue_script__ = __webpack_require__(955)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3CardDocs-42.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(955)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3CardDocs-84.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(956)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -48903,7 +48944,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-3a5b2244/n3CardDocs-42.vue"
+	  var id = "_v-2c7bff48/n3CardDocs-84.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -48912,7 +48953,7 @@
 	})()}
 
 /***/ },
-/* 954 */
+/* 955 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -48969,28 +49010,28 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 955 */
+/* 956 */
 /***/ function(module, exports) {
 
 	module.exports = "<section><template>\n<h3>卡片</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-card style=\"padding:20px\">\n    <p>xxxxx</p>\n    <p>xxxxx</p>\n    <p>xxxxx</p>\n  </n3-card> \n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-card</span> <span class=\"hljs-attr\">style</span>=<span class=\"hljs-string\">\"padding:20px\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-card</span>&gt;</span> \n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数名</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>hover</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>是否hover效果</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ },
-/* 956 */
+/* 957 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(957);
+	module.exports = __webpack_require__(958);
 
 /***/ },
-/* 957 */
+/* 958 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
 	var __vue_styles__ = {}
-	__webpack_require__(958)
-	__vue_script__ = __webpack_require__(960)
+	__webpack_require__(959)
+	__vue_script__ = __webpack_require__(961)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AnimateDocs-43.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(961)
+	  console.warn("[vue-loader] node_modules/.0.6.2@vue-markdown-loader/_cache/n3AnimateDocs-86.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(962)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	var __vue_options__ = typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports
@@ -49006,7 +49047,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-32e833e2/n3AnimateDocs-43.vue"
+	  var id = "_v-39e5dce1/n3AnimateDocs-86.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -49015,23 +49056,23 @@
 	})()}
 
 /***/ },
-/* 958 */
+/* 959 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(959);
+	var content = __webpack_require__(960);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(351)("f1468422", content, false);
+	var update = __webpack_require__(351)("0b021dee", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-32e833e2&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-43.vue", function() {
-	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-32e833e2&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-43.vue");
+	   module.hot.accept("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-39e5dce1&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-86.vue", function() {
+	     var newContent = require("!!../../.0.21.0@css-loader/index.js?sourceMap!../../.8.7.0@vue-loader/lib/style-rewriter.js?id=_v-39e5dce1&scoped=true!../../.8.7.0@vue-loader/lib/selector.js?type=style&index=0!./n3AnimateDocs-86.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -49041,7 +49082,7 @@
 	}
 
 /***/ },
-/* 959 */
+/* 960 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(350)();
@@ -49049,13 +49090,13 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.content[_v-32e833e2] {\n  box-shadow: 1px 1px 10px #ddd;\n  padding:10px;\n  margin-top: 10px;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3AnimateDocs-43.vue?f6115e6c"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkDA;EACA,8BAAA;EACA,aAAA;EACA,iBAAA;CACA","file":"n3AnimateDocs-43.vue","sourcesContent":["<template><section><template>\n<h3>动画</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"show=!show\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\">\n    <div v-if=\"show\" class=\"content\">\n        <h4>Title</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n    </div>\n  </transition>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">transition</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">v-if</span>=<span class=\"hljs-string\">\"show\"</span>  <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Title<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">transition</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td>String</td>\n<td>-</td>\n<td><code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .content {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }\n</style>\n<script>\n  export default {\n    data () {\n      return {\n        show: false\n      }\n    }\n  }\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.content[_v-39e5dce1] {\n  box-shadow: 1px 1px 10px #ddd;\n  padding:10px;\n  margin-top: 10px;\n}\n", "", {"version":3,"sources":["/./node_modules/.0.6.2@vue-markdown-loader/_cache/n3AnimateDocs-86.vue?1ac3946b"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkDA;EACA,8BAAA;EACA,aAAA;EACA,iBAAA;CACA","file":"n3AnimateDocs-86.vue","sourcesContent":["<template><section><template>\n<h3>动画</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-button @click.native=\"show=!show\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\">\n    <div v-if=\"show\" class=\"content\">\n        <h4>Title</h4>\n        <p>...</p>\n        <p>...</p>\n        <p>...</p>\n    </div>\n  </transition>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-comment\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-button</span>  <span class=\"hljs-attr\">@click.native</span>=<span class=\"hljs-string\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">transition</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">v-if</span>=<span class=\"hljs-string\">\"show\"</span>  <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h4</span>&gt;</span>Title<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">transition</span>&gt;</span>\n</code></pre>\n<h3>参数</h3>\n<table>\n<thead>\n<tr>\n<th>参数</th>\n<th>类型</th>\n<th>默认值</th>\n<th>说明</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>name</td>\n<td>String</td>\n<td>-</td>\n<td><code>fade</code> <code>fadeLeft</code><code>fadeDown</code><code>bounce</code><code>scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .content {\n    box-shadow: 1px 1px 10px #ddd;\n    padding:10px;\n    margin-top: 10px;\n  }\n</style>\n<script>\n  export default {\n    data () {\n      return {\n        show: false\n      }\n    }\n  }\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
-/* 960 */
+/* 961 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -49131,54 +49172,16 @@
 	/* generated by vue-loader */
 
 /***/ },
-/* 961 */
-/***/ function(module, exports) {
-
-	module.exports = "<section _v-32e833e2=\"\"><template>\n<h3 _v-32e833e2=\"\">动画</h3>\n<div class=\"bs-docs-section\" _v-32e833e2=\"\">\n<div class=\"bs-example\" _v-32e833e2=\"\">\n  <n3-button @click.native=\"show=!show\" _v-32e833e2=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-32e833e2=\"\">\n    <div v-if=\"show\" class=\"content\" _v-32e833e2=\"\">\n        <h4 _v-32e833e2=\"\">Title</h4>\n        <p _v-32e833e2=\"\">...</p>\n        <p _v-32e833e2=\"\">...</p>\n        <p _v-32e833e2=\"\">...</p>\n    </div>\n  </transition>\n</div>\n<pre _v-32e833e2=\"\"><code class=\"language-html\" _v-32e833e2=\"\"><span class=\"hljs-comment\" _v-32e833e2=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;<span class=\"hljs-name\" _v-32e833e2=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-32e833e2=\"\">@click.native</span>=<span class=\"hljs-string\" _v-32e833e2=\"\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;/<span class=\"hljs-name\" _v-32e833e2=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;<span class=\"hljs-name\" _v-32e833e2=\"\">transition</span> <span class=\"hljs-attr\" _v-32e833e2=\"\">name</span>=<span class=\"hljs-string\" _v-32e833e2=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;<span class=\"hljs-name\" _v-32e833e2=\"\">div</span> <span class=\"hljs-attr\" _v-32e833e2=\"\">v-if</span>=<span class=\"hljs-string\" _v-32e833e2=\"\">\"show\"</span>  <span class=\"hljs-attr\" _v-32e833e2=\"\">class</span>=<span class=\"hljs-string\" _v-32e833e2=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;<span class=\"hljs-name\" _v-32e833e2=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;/<span class=\"hljs-name\" _v-32e833e2=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;<span class=\"hljs-name\" _v-32e833e2=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;/<span class=\"hljs-name\" _v-32e833e2=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;<span class=\"hljs-name\" _v-32e833e2=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;/<span class=\"hljs-name\" _v-32e833e2=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;<span class=\"hljs-name\" _v-32e833e2=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;/<span class=\"hljs-name\" _v-32e833e2=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;/<span class=\"hljs-name\" _v-32e833e2=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-32e833e2=\"\">&lt;/<span class=\"hljs-name\" _v-32e833e2=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-32e833e2=\"\">参数</h3>\n<table _v-32e833e2=\"\">\n<thead _v-32e833e2=\"\">\n<tr _v-32e833e2=\"\">\n<th _v-32e833e2=\"\">参数</th>\n<th _v-32e833e2=\"\">类型</th>\n<th _v-32e833e2=\"\">默认值</th>\n<th _v-32e833e2=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-32e833e2=\"\">\n<tr _v-32e833e2=\"\">\n<td _v-32e833e2=\"\">name</td>\n<td _v-32e833e2=\"\">String</td>\n<td _v-32e833e2=\"\">-</td>\n<td _v-32e833e2=\"\"><code _v-32e833e2=\"\">fade</code> <code _v-32e833e2=\"\">fadeLeft</code><code _v-32e833e2=\"\">fadeDown</code><code _v-32e833e2=\"\">bounce</code><code _v-32e833e2=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
-
-/***/ },
 /* 962 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n        <n3-row >\n          <n3-column :col=\"2\">\n            <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n            <n3-nav type=\"vertical\" :default-openeds=\"['基本','提示','表单','展示','导航','其他']\" @select=\"select\">\n                <n3-sub-nav v-for=\"(item, index) in list\"  :index=\"index\">\n                  <template slot=\"title\">{{index}}</template>\n                  <n3-nav-item v-for=\"(i,index1) in item.list\" :index=\"index1\" :key=\"index1\" :active=\"component == i.value\" @click.native=\"change(i.value)\">\n                    <a v-text=\"i.label\"></a>\n                  </n3-nav-item>\n                </n3-sub-nav>\n            </n3-nav>\n          </n3-column>\n          <n3-column :col=\"10\">\n            <component :is=\"component\" ></component>\n          </n3-column>\n        </n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <ul>\n        <li><span>Email:</span>zhangking520@gmail.com</li>\n        <li><span>Github:</span><a href=\"https://github.com/N3-components/N3-components\">Repository</a></li>\n        <li><span>QQ Group:</span>556286036</li>\n        <li><span>gitter:</span><a href=\"https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link\">gitter link </a></li>\n      </ul>\n    </n3-container>\n  </footer>\n</div>\n";
+	module.exports = "<section _v-39e5dce1=\"\"><template>\n<h3 _v-39e5dce1=\"\">动画</h3>\n<div class=\"bs-docs-section\" _v-39e5dce1=\"\">\n<div class=\"bs-example\" _v-39e5dce1=\"\">\n  <n3-button @click.native=\"show=!show\" _v-39e5dce1=\"\">fadeLeft</n3-button>\n  <transition name=\"fadeLeft\" _v-39e5dce1=\"\">\n    <div v-if=\"show\" class=\"content\" _v-39e5dce1=\"\">\n        <h4 _v-39e5dce1=\"\">Title</h4>\n        <p _v-39e5dce1=\"\">...</p>\n        <p _v-39e5dce1=\"\">...</p>\n        <p _v-39e5dce1=\"\">...</p>\n    </div>\n  </transition>\n</div>\n<pre _v-39e5dce1=\"\"><code class=\"language-html\" _v-39e5dce1=\"\"><span class=\"hljs-comment\" _v-39e5dce1=\"\">&lt;!--作用于( v-if , v-show , v-for) 等元素--&gt;</span>\n<span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;<span class=\"hljs-name\" _v-39e5dce1=\"\">n3-button</span>  <span class=\"hljs-attr\" _v-39e5dce1=\"\">@click.native</span>=<span class=\"hljs-string\" _v-39e5dce1=\"\">\"show=!show\"</span>&gt;</span>fadeLeft<span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;/<span class=\"hljs-name\" _v-39e5dce1=\"\">n3-button</span>&gt;</span>\n<span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;<span class=\"hljs-name\" _v-39e5dce1=\"\">transition</span> <span class=\"hljs-attr\" _v-39e5dce1=\"\">name</span>=<span class=\"hljs-string\" _v-39e5dce1=\"\">\"fadeLeft\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;<span class=\"hljs-name\" _v-39e5dce1=\"\">div</span> <span class=\"hljs-attr\" _v-39e5dce1=\"\">v-if</span>=<span class=\"hljs-string\" _v-39e5dce1=\"\">\"show\"</span>  <span class=\"hljs-attr\" _v-39e5dce1=\"\">class</span>=<span class=\"hljs-string\" _v-39e5dce1=\"\">\"content\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;<span class=\"hljs-name\" _v-39e5dce1=\"\">h4</span>&gt;</span>Title<span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;/<span class=\"hljs-name\" _v-39e5dce1=\"\">h4</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;<span class=\"hljs-name\" _v-39e5dce1=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;/<span class=\"hljs-name\" _v-39e5dce1=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;<span class=\"hljs-name\" _v-39e5dce1=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;/<span class=\"hljs-name\" _v-39e5dce1=\"\">p</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;<span class=\"hljs-name\" _v-39e5dce1=\"\">p</span>&gt;</span>...<span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;/<span class=\"hljs-name\" _v-39e5dce1=\"\">p</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;/<span class=\"hljs-name\" _v-39e5dce1=\"\">div</span>&gt;</span>\n<span class=\"hljs-tag\" _v-39e5dce1=\"\">&lt;/<span class=\"hljs-name\" _v-39e5dce1=\"\">transition</span>&gt;</span>\n</code></pre>\n<h3 _v-39e5dce1=\"\">参数</h3>\n<table _v-39e5dce1=\"\">\n<thead _v-39e5dce1=\"\">\n<tr _v-39e5dce1=\"\">\n<th _v-39e5dce1=\"\">参数</th>\n<th _v-39e5dce1=\"\">类型</th>\n<th _v-39e5dce1=\"\">默认值</th>\n<th _v-39e5dce1=\"\">说明</th>\n</tr>\n</thead>\n<tbody _v-39e5dce1=\"\">\n<tr _v-39e5dce1=\"\">\n<td _v-39e5dce1=\"\">name</td>\n<td _v-39e5dce1=\"\">String</td>\n<td _v-39e5dce1=\"\">-</td>\n<td _v-39e5dce1=\"\"><code _v-39e5dce1=\"\">fade</code> <code _v-39e5dce1=\"\">fadeLeft</code><code _v-39e5dce1=\"\">fadeDown</code><code _v-39e5dce1=\"\">bounce</code><code _v-39e5dce1=\"\">scale</code></td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ },
-/* 963 */,
-/* 964 */
+/* 963 */
 /***/ function(module, exports) {
 
-	'use strict';
-	
-	module.exports = {
-	     'required': {
-	          'zh': '不能为空',
-	          'en': 'Can not be empty'
-	     },
-	     'maxLength': {
-	          'zh': '输入字符数不能大于',
-	          'en': "The input can't be more than"
-	     },
-	     'minLength': {
-	          'zh': '输入字符数不能小于',
-	          'en': "The input can't be less than"
-	     },
-	     'phone': {
-	          'zh': '请输入正确的手机号码',
-	          'en': "the correct phone number please"
-	     },
-	     'number': {
-	          'zh': '请输入数字',
-	          'en': "number please"
-	     },
-	     'telephone': {
-	          'zh': '输入固话格式错误，固话请用-',
-	          'en': "format is wrong, please use -"
-	     },
-	     'email': {
-	          'zh': '请输入正确的email',
-	          'en': "Please enter the correct email"
-	     }
-	};
+	module.exports = "\n<div>\n  <div>\n    <header-docs class=\"freeze\" :active=\"type\"></header-docs>\n    <n3-container class=\"bs-docs-container\" v-if=\"type === 'base'\">\n        <n3-row >\n          <n3-column :col=\"2\">\n            <input placeholder=\"搜索\" v-model=\"search\" class=\"searchCom\" ></input>\n            <n3-nav type=\"vertical\" :default-openeds=\"['基本','提示','表单','展示','导航','其他']\" @select=\"select\">\n                <n3-sub-nav v-for=\"(item, index) in list\"  :index=\"index\">\n                  <template slot=\"title\">{{index}}</template>\n                  <n3-nav-item v-for=\"(i,index1) in item.list\" :index=\"index1\" :key=\"index1\" :active=\"component == i.value\" @click.native=\"change(i.value)\">\n                    <a v-text=\"i.label\"></a>\n                  </n3-nav-item>\n                </n3-sub-nav>\n            </n3-nav>\n          </n3-column>\n          <n3-column :col=\"10\">\n            <component :is=\"component\" ></component>\n          </n3-column>\n        </n3-row>\n    </n3-container>\n    <template v-else>\n      <slot></slot>\n    </template>\n  </div>\n  <footer class=\"bs-docs-footer\">\n    <n3-container >\n      <ul>\n        <li><span>Email:</span>zhangking520@gmail.com</li>\n        <li><span>Github:</span><a href=\"https://github.com/N3-components/N3-components\">Repository</a></li>\n        <li><span>QQ Group:</span>556286036</li>\n        <li><span>gitter:</span><a href=\"https://gitter.im/N3-components/english?utm_source=share-link&utm_medium=link&utm_campaign=share-link\">gitter link </a></li>\n      </ul>\n    </n3-container>\n  </footer>\n</div>\n";
 
 /***/ }
 /******/ ]);

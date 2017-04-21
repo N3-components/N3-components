@@ -23451,6 +23451,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      },
 	
 	      immediate: true
+	    },
+	    value: function value(val) {
+	      this.activeIndex = val;
 	    }
 	  },
 	  methods: {
