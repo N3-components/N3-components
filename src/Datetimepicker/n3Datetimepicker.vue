@@ -96,7 +96,7 @@
 	                    <span
                         :class="monthClassobj(m)"
                         @click="mouthSelect(index)">
-	                      {m}
+	                      {{m}}
 	                    </span>
                     </template>
                 </div>
