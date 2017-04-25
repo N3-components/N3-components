@@ -17,6 +17,7 @@
 |-------------  |---------------- |----------------  |-------- |
 | width          | `String`     |    `200px`        |     输入框宽度     |
 | format          | `String`     |    `yyyy-MM-dd hh:mm:ss`       |     日期格式   |
+| readonly | `Boolean` | `true`| |
 
 ### 事件
 

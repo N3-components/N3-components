@@ -18,6 +18,7 @@
 | max-length| `Number` | - |字符数限制 |
 | max-height| `String` | - |最大高度 |
 | min-height| `String` | - |最小高度 |
+| readonly | `Boolean` | `false`| |
 
 ### 事件
 

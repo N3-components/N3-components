@@ -8,7 +8,7 @@
         :placeholder="placeholder"
         :custom-validate="customValidate"
         v-model="displayValue"
-        :readonly="true"
+        :readonly="readonly"
         :show-clean="true"
         :disabled="disabled"
         @click.native="toggleMenus">
@@ -62,6 +62,10 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    readonly: {
+      type: Boolean,
+      default: true
     }
   },
   components: {

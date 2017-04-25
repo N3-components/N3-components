@@ -7,7 +7,7 @@
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :disabled="disabled"
-      :readonly="true"
+      :readonly="readonly"
       @clean="clean"
       @click.native="inputClick"
       icon="calendar"
@@ -172,6 +172,10 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    readonly: {
+      type: Boolean,
+      default: true
     }
   },
   data () {

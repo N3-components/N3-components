@@ -149,6 +149,7 @@ export default {
 | check-strictly | `Boolean` | `false` | 在显示复选框的情况下，是否严格的遵循父子不互相关联的做法 |
 | default-checked-keys | `Array` | `[]` | 默认勾选的节点的 key 的数组 |
 | filter-node-method | `Function` | function(value, data, node) | 对树节点进行筛选时执行的方法，返回 true 表示这个节点可以显示, 反之则为隐藏 |
+| readonly | `Boolean` | `false`| |
 
 ### 数据属性props
 

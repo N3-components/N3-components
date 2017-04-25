@@ -11,7 +11,7 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 </p>
 <n3-datepicker
   v-model="value"
-  format="yyyy-MM-dd" >
+  format="yyyy-MM-dd">
 </n3-datepicker>
 
 </div>
@@ -38,6 +38,7 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 |-------------  |---------------- |----------------  |-------- |
 | width          | `String`     |    `200px`        |     输入框宽度     |
 | format          | `String`     |    `yyyy-MM-dd`        |     日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.     |
+| readonly | `Boolean` | `true`| |
 
 ### 事件
 
@@ -54,7 +55,8 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 export default {
   data () {
     return {
-      value: '2016-03-25'
+      value: '2016-03-25',
+      dd: false
     }
   },
   methods: {

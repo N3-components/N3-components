@@ -47,6 +47,7 @@
 | placeholder | `String`| - | |
 | display-render |`Function` | - | |
 | select-change  | `Boolean` | - | 选择值就改变 |
+| readonly | `Boolean` | `true`| |
 
 
 ### Events

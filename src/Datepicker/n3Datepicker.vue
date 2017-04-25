@@ -7,7 +7,7 @@
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :disabled="disabled"
-      :readonly="true"
+      :readonly="readonly"
       :show-clean="true"
       icon="calendar"
       @clean="clean"
@@ -121,6 +121,10 @@ export default {
     manual: {
       type: Boolean,
       default: false
+    },
+    readonly: {
+      type: Boolean,
+      default: true
     }
   },
   data () {

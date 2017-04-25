@@ -7,7 +7,7 @@
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :disabled="disabled"
-      :readonly="true"
+      :readonly="readonly"
       @clean="clean"
       @click.native="inputClick"
       :show-clean="true"

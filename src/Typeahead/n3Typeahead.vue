@@ -100,6 +100,10 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    readonly: {
+      type: Boolean,
+      default: false
     }
   },
   watch: {
