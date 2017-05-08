@@ -61,7 +61,18 @@ export default {
   },
   watch: {
     activeIndex (newVal, oldVal) {
+      console.log(newVal, oldVal)
       newVal > oldVal ? this.slide('left', newVal, oldVal) : this.slide('right', newVal, oldVal)
+    },
+
+    indicator (val) {
+      if (val.length > 0) {
+        if (this.intervalID) clearInterval(this.intervalID)
+        this.isAnimating = false
+        this.activeIndex = 0
+        element.addClass(this.slider[0], this.prefixCls + '-carousel-active')
+        this.resetInterval()
+      }
     }
   },
   components: {
@@ -80,6 +91,7 @@ export default {
       let prevSelectedEl = this.slider[prev]
       let selectedEl = this.slider[selected]
       let transitionendFn = () => {
+        console.log([...this.slider]);
         [...this.slider].forEach(el => {
           element.setClass(el, this.prefixCls + '-carousel-item')
         })
@@ -109,21 +121,24 @@ export default {
       if (this.isAnimating) return false
       this.isAnimating = true
       this.activeIndex === 0 ? this.activeIndex = this.slider.length - 1 : this.activeIndex -= 1
+    },
+    resetInterval () {
+      this.$nextTick(() => {
+        let el = this.$el
+        let self = this
+        function intervalManager (flag, func, time) {
+          flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID)
+        }
+        if (this.interval > 0 && this.indicator.length > 0) {
+          intervalManager(true, this.nextClick, this.interval)
+          el.addEventListener('mouseenter', () => intervalManager(false))
+          el.addEventListener('mouseleave', () => intervalManager(true, this.nextClick, this.interval))
+        }
+      })
     }
   },
   mounted () {
-    this.$nextTick(() => {
-      let el = this.$el
-      let self = this
-      function intervalManager (flag, func, time) {
-        flag ? self.intervalID = setInterval(func, time) : clearInterval(self.intervalID)
-      }
-      if (this.interval > 0) {
-        intervalManager(true, this.nextClick, this.interval)
-        el.addEventListener('mouseenter', () => intervalManager(false))
-        el.addEventListener('mouseleave', () => intervalManager(true, this.nextClick, this.interval))
-      }
-    })
+    this.resetInterval()
   },
   beforeDestroy () {
     if (this.intervalID) clearInterval(this.intervalID)
