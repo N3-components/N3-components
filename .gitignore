@@ -3,3 +3,4 @@ node_modules
 npm-debug.log
 .idea/
 npm-debug*
+yarn-error.log
