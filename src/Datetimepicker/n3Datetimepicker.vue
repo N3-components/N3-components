@@ -14,6 +14,7 @@
       :show-clean="true"
       v-model="currentValue">
     </n3-input>
+    {{currentValue}}
       <transition name="fadeDown">
         <div
           v-n3-position="displayDayView"
@@ -203,14 +204,9 @@ export default {
   },
   watch: {
     value (val) {
-      this.inner = true
       this.currentValue = val
     },
     currentValue (val) {
-      if (this.inner) {
-        this.inner = false
-        return
-      }
       this.$emit('input', val)
       this.$emit('change', val)
     },
