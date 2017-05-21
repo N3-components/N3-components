@@ -9836,7 +9836,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-543d432d/n3LayoutDocs-44.vue"
+	  var id = "_v-5412fcaa/n3LayoutDocs-41.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -9855,13 +9855,13 @@
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(350)("96d3d2d0", content, false);
+	var update = __webpack_require__(350)("3d26f582", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-543d432d&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-44.vue", function() {
-	     var newContent = require("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-543d432d&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-44.vue");
+	   module.hot.accept("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-5412fcaa&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-41.vue", function() {
+	     var newContent = require("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-5412fcaa&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3LayoutDocs-41.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -9879,7 +9879,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.context[_v-543d432d]{\n  padding-top: 10px;\n  padding-bottom: 10px;\n  background-color: rgb(101, 212, 204);\n  border: 1px solid #fff;\n  text-align: center;\n  font-size: 14;\n  color: #fff;\n  font-weight: bold;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/_cache/n3LayoutDocs-44.vue?77f6ab0a"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA6JA;EACA,kBAAA;EACA,qBAAA;EACA,qCAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;CACA","file":"n3LayoutDocs-44.vue","sourcesContent":["<template><section><template>\n<h3>Layout</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-container fluid=\"\">\n    <n3-row>\n        <n3-column :col=\"8\" class=\"context\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-container</span> <span class=\"hljs-attr\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"8\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"4\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-container</span>&gt;</span>\n</code></pre>\n<h3>n3-container Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>fluid</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>fluid layout</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-column Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>col</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>number of col</td>\n</tr>\n<tr>\n<td>mode</td>\n<td><code>String</code></td>\n<td><code>md</code></td>\n<td>mode <code>xs</code>(phone) <code>sm</code>(pad) <code>md</code>(desktop) <code>lg</code>(big size screen)</td>\n</tr>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>offset</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section></template>\n<style scoped>\n  .context{\n    padding-top: 10px;\n    padding-bottom: 10px;\n    background-color: rgb(101, 212, 204);\n    border: 1px solid #fff;\n    text-align: center;\n    font-size: 14;\n    color: #fff;\n    font-weight: bold;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.context[_v-5412fcaa]{\n  padding-top: 10px;\n  padding-bottom: 10px;\n  background-color: rgb(101, 212, 204);\n  border: 1px solid #fff;\n  text-align: center;\n  font-size: 14;\n  color: #fff;\n  font-weight: bold;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/_cache/n3LayoutDocs-41.vue?8daf0b44"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AA6JA;EACA,kBAAA;EACA,qBAAA;EACA,qCAAA;EACA,uBAAA;EACA,mBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;CACA","file":"n3LayoutDocs-41.vue","sourcesContent":["<template><section><template>\n<h3>Layout</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-container fluid=\"\">\n    <n3-row>\n        <n3-column :col=\"8\" class=\"context\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-container</span> <span class=\"hljs-attr\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"8\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"4\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-column</span> <span class=\"hljs-attr\">:col</span>=<span class=\"hljs-string\">\"1\"</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-container</span>&gt;</span>\n</code></pre>\n<h3>n3-container Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>fluid</td>\n<td><code>Boolean</code></td>\n<td><code>false</code></td>\n<td>fluid layout</td>\n</tr>\n</tbody>\n</table>\n<h3>n3-column Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>col</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>number of col</td>\n</tr>\n<tr>\n<td>mode</td>\n<td><code>String</code></td>\n<td><code>md</code></td>\n<td>mode <code>xs</code>(phone) <code>sm</code>(pad) <code>md</code>(desktop) <code>lg</code>(big size screen)</td>\n</tr>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td>-</td>\n<td>offset</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section></template>\n<style scoped>\n  .context{\n    padding-top: 10px;\n    padding-bottom: 10px;\n    background-color: rgb(101, 212, 204);\n    border: 1px solid #fff;\n    text-align: center;\n    font-size: 14;\n    color: #fff;\n    font-weight: bold;\n  }\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -9888,7 +9888,7 @@
 /* 361 */
 /***/ (function(module, exports) {
 
-	module.exports = "<section _v-543d432d=\"\"><template>\n<h3 _v-543d432d=\"\">Layout</h3>\n<div class=\"bs-docs-section\" _v-543d432d=\"\">\n<div class=\"bs-example\" _v-543d432d=\"\">\n  <n3-container fluid=\"\" _v-543d432d=\"\">\n    <n3-row _v-543d432d=\"\">\n        <n3-column :col=\"8\" class=\"context\" _v-543d432d=\"\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\" _v-543d432d=\"\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row _v-543d432d=\"\">\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-543d432d=\"\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre _v-543d432d=\"\"><code class=\"language-html\" _v-543d432d=\"\"><span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-container</span> <span class=\"hljs-attr\" _v-543d432d=\"\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"8\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"4\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span> <span class=\"hljs-attr\" _v-543d432d=\"\">:col</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-543d432d=\"\">class</span>=<span class=\"hljs-string\" _v-543d432d=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\" _v-543d432d=\"\">&lt;/<span class=\"hljs-name\" _v-543d432d=\"\">n3-container</span>&gt;</span>\n</code></pre>\n<h3 _v-543d432d=\"\">n3-container Params</h3>\n<table _v-543d432d=\"\">\n<thead _v-543d432d=\"\">\n<tr _v-543d432d=\"\">\n<th _v-543d432d=\"\">name</th>\n<th _v-543d432d=\"\">type</th>\n<th _v-543d432d=\"\">default</th>\n<th _v-543d432d=\"\">Description</th>\n</tr>\n</thead>\n<tbody _v-543d432d=\"\">\n<tr _v-543d432d=\"\">\n<td _v-543d432d=\"\">fluid</td>\n<td _v-543d432d=\"\"><code _v-543d432d=\"\">Boolean</code></td>\n<td _v-543d432d=\"\"><code _v-543d432d=\"\">false</code></td>\n<td _v-543d432d=\"\">fluid layout</td>\n</tr>\n</tbody>\n</table>\n<h3 _v-543d432d=\"\">n3-column Params</h3>\n<table _v-543d432d=\"\">\n<thead _v-543d432d=\"\">\n<tr _v-543d432d=\"\">\n<th _v-543d432d=\"\">name</th>\n<th _v-543d432d=\"\">type</th>\n<th _v-543d432d=\"\">default</th>\n<th _v-543d432d=\"\">Description</th>\n</tr>\n</thead>\n<tbody _v-543d432d=\"\">\n<tr _v-543d432d=\"\">\n<td _v-543d432d=\"\">col</td>\n<td _v-543d432d=\"\"><code _v-543d432d=\"\">Number</code></td>\n<td _v-543d432d=\"\">-</td>\n<td _v-543d432d=\"\">number of col</td>\n</tr>\n<tr _v-543d432d=\"\">\n<td _v-543d432d=\"\">mode</td>\n<td _v-543d432d=\"\"><code _v-543d432d=\"\">String</code></td>\n<td _v-543d432d=\"\"><code _v-543d432d=\"\">md</code></td>\n<td _v-543d432d=\"\">mode <code _v-543d432d=\"\">xs</code>(phone) <code _v-543d432d=\"\">sm</code>(pad) <code _v-543d432d=\"\">md</code>(desktop) <code _v-543d432d=\"\">lg</code>(big size screen)</td>\n</tr>\n<tr _v-543d432d=\"\">\n<td _v-543d432d=\"\">offset</td>\n<td _v-543d432d=\"\"><code _v-543d432d=\"\">Number</code></td>\n<td _v-543d432d=\"\">-</td>\n<td _v-543d432d=\"\">offset</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
+	module.exports = "<section _v-5412fcaa=\"\"><template>\n<h3 _v-5412fcaa=\"\">Layout</h3>\n<div class=\"bs-docs-section\" _v-5412fcaa=\"\">\n<div class=\"bs-example\" _v-5412fcaa=\"\">\n  <n3-container fluid=\"\" _v-5412fcaa=\"\">\n    <n3-row _v-5412fcaa=\"\">\n        <n3-column :col=\"8\" class=\"context\" _v-5412fcaa=\"\">\n            :col=\"8\"\n        </n3-column>\n        <n3-column :col=\"4\" class=\"context\" _v-5412fcaa=\"\">\n            :col=\"4\"\n        </n3-column>\n    </n3-row>\n    <n3-row _v-5412fcaa=\"\">\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n        <n3-column :col=\"1\" class=\"context\" _v-5412fcaa=\"\">\n            1\n        </n3-column>\n    </n3-row>\n  </n3-container>\n</div>\n<pre _v-5412fcaa=\"\"><code class=\"language-html\" _v-5412fcaa=\"\"><span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-container</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">fluid</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"8\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          :col=\"8\"\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"4\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          :col=\"4\"\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-row</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-row</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">:col</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"1\"</span> <span class=\"hljs-attr\" _v-5412fcaa=\"\">class</span>=<span class=\"hljs-string\" _v-5412fcaa=\"\">\"context\"</span>&gt;</span>\n          1\n      <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-column</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-row</span>&gt;</span>\n<span class=\"hljs-tag\" _v-5412fcaa=\"\">&lt;/<span class=\"hljs-name\" _v-5412fcaa=\"\">n3-container</span>&gt;</span>\n</code></pre>\n<h3 _v-5412fcaa=\"\">n3-container Params</h3>\n<table _v-5412fcaa=\"\">\n<thead _v-5412fcaa=\"\">\n<tr _v-5412fcaa=\"\">\n<th _v-5412fcaa=\"\">name</th>\n<th _v-5412fcaa=\"\">type</th>\n<th _v-5412fcaa=\"\">default</th>\n<th _v-5412fcaa=\"\">Description</th>\n</tr>\n</thead>\n<tbody _v-5412fcaa=\"\">\n<tr _v-5412fcaa=\"\">\n<td _v-5412fcaa=\"\">fluid</td>\n<td _v-5412fcaa=\"\"><code _v-5412fcaa=\"\">Boolean</code></td>\n<td _v-5412fcaa=\"\"><code _v-5412fcaa=\"\">false</code></td>\n<td _v-5412fcaa=\"\">fluid layout</td>\n</tr>\n</tbody>\n</table>\n<h3 _v-5412fcaa=\"\">n3-column Params</h3>\n<table _v-5412fcaa=\"\">\n<thead _v-5412fcaa=\"\">\n<tr _v-5412fcaa=\"\">\n<th _v-5412fcaa=\"\">name</th>\n<th _v-5412fcaa=\"\">type</th>\n<th _v-5412fcaa=\"\">default</th>\n<th _v-5412fcaa=\"\">Description</th>\n</tr>\n</thead>\n<tbody _v-5412fcaa=\"\">\n<tr _v-5412fcaa=\"\">\n<td _v-5412fcaa=\"\">col</td>\n<td _v-5412fcaa=\"\"><code _v-5412fcaa=\"\">Number</code></td>\n<td _v-5412fcaa=\"\">-</td>\n<td _v-5412fcaa=\"\">number of col</td>\n</tr>\n<tr _v-5412fcaa=\"\">\n<td _v-5412fcaa=\"\">mode</td>\n<td _v-5412fcaa=\"\"><code _v-5412fcaa=\"\">String</code></td>\n<td _v-5412fcaa=\"\"><code _v-5412fcaa=\"\">md</code></td>\n<td _v-5412fcaa=\"\">mode <code _v-5412fcaa=\"\">xs</code>(phone) <code _v-5412fcaa=\"\">sm</code>(pad) <code _v-5412fcaa=\"\">md</code>(desktop) <code _v-5412fcaa=\"\">lg</code>(big size screen)</td>\n</tr>\n<tr _v-5412fcaa=\"\">\n<td _v-5412fcaa=\"\">offset</td>\n<td _v-5412fcaa=\"\"><code _v-5412fcaa=\"\">Number</code></td>\n<td _v-5412fcaa=\"\">-</td>\n<td _v-5412fcaa=\"\">offset</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n</section>";
 
 /***/ }),
 /* 362 */
@@ -9905,7 +9905,7 @@
 	__webpack_require__(364)
 	__vue_script__ = __webpack_require__(366)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3IconDocs-47.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3IconDocs-45.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(367)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -9922,7 +9922,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-50b74041/n3IconDocs-47.vue"
+	  var id = "_v-509b113f/n3IconDocs-45.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -9941,13 +9941,13 @@
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(350)("ed8c5b08", content, false);
+	var update = __webpack_require__(350)("5cd6ebe0", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-50b74041&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-47.vue", function() {
-	     var newContent = require("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-50b74041&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-47.vue");
+	   module.hot.accept("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-509b113f&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-45.vue", function() {
+	     var newContent = require("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-509b113f&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3IconDocs-45.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -9965,7 +9965,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.row-ex div[_v-50b74041] {\n  text-align: left;\n  margin-top: 10px;\n}\n.row-ex i[_v-50b74041] {\n  margin-right: 10px;\n}\n.row-ex span[_v-50b74041] {\n  color:gray;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/_cache/n3IconDocs-47.vue?3e67b27c"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkGA;EACA,iBAAA;EACA,iBAAA;CACA;AACA;EACA,mBAAA;CACA;AACA;EACA,WAAA;CACA","file":"n3IconDocs-47.vue","sourcesContent":["<template><section><template>\n<h3>Icon</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h3>FontAwesome 4.0 Icons</h3>\n<hr>\n<n3-container>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n    <br>\n  <h4>Web Application Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <h4>Form Control Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Currency Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Text Edit Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Directional Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Video Player Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Brand Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Medical Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-icon</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>type</td>\n</tr>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td>size</td>\n</tr>\n<tr>\n<td>color</td>\n<td><code>String</code></td>\n<td></td>\n<td>color</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .row-ex div {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i {\n    margin-right: 10px;\n  }\n  .row-ex span {\n    color:gray;\n  }\n</style>\n<script>\nexport default {\n  data () {\n    return {\n    newfont:['rub','ruble','rouble','pagelines','stack-exchange','arrow-circle-o-right','arrow-circle-o-left','caret-square-o-left','toggle-left','dot-circle-o','wheelchair','vimeo-square','try','turkish-lira','plus-square-o'],\n    webfont:['adjust','anchor','archive','arrows','arrows-h','arrows-v','asterisk','ban','bar-chart-o','barcode','bars','beer','bell','bell-o','bolt','book','bookmark','bookmark-o','briefcase','bug','building-o','bullhorn','bullseye','calendar','calendar-o','camera','camera-retro','caret-square-o-down','caret-square-o-left','caret-square-o-right','caret-square-o-up','certificate','check','check-circle','check-circle-o','check-square','check-square-o','circle','circle-o','clock-o','cloud','cloud-download','cloud-upload','code','code-fork','coffee','cog','cogs','comment','comment-o','comments','comments-o','compass','credit-card','crop','crosshairs','cutlery','dashboard','desktop','dot-circle-o','download','edit','ellipsis-h','ellipsis-v','envelope','envelope-o','eraser','exchange','exclamation','exclamation-circle','exclamation-triangle','external-link','external-link-square','eye','eye-slash','female','fighter-jet','film','filter','fire','fire-extinguisher','flag','flag-checkered','flag-o','flash','flask','folder','folder-o','folder-open','folder-open-o','frown-o','gamepad','gavel','gear','gears','gift','glass','globe','group','hdd-o','headphones','heart','heart-o','home','inbox','info','info-circle','key','keyboard-o','laptop','leaf','legal','lemon-o','level-down','level-up','lightbulb-o','location-arrow','lock','magic','magnet','mail-forward','mail-reply','mail-reply-all','male','map-marker','meh-o','microphone','microphone-slash','minus','minus-circle','minus-square','minus-square-o','mobile','mobile-phone','money','moon-o','music','pencil','pencil-square','pencil-square-o','phone','phone-square','picture-o','plane','plus','plus-circle','plus-square','plus-square-o','power-off','print','puzzle-piece','qrcode','question','question-circle','quote-left','quote-right','random','refresh','reply','reply-all','retweet','road','rocket','rss','rss-square','search','search-minus','search-plus','share','share-square','share-square-o','shield','shopping-cart','sign-in','sign-out','signal','sitemap','smile-o','sort','sort-alpha-asc','sort-alpha-desc','sort-amount-asc','sort-amount-desc','sort-asc','sort-desc','sort-down','sort-numeric-asc','sort-numeric-desc','sort-up','spinner','square','square-o','star','star-half','star-half-empty','star-half-full','star-half-o','star-o','subscript','suitcase','sun-o','superscript','tablet','tachometer','tag','tags','tasks','terminal','thumb-tack','thumbs-down','thumbs-o-down','thumbs-o-up','thumbs-up','ticket','times','times-circle','times-circle-o','tint','toggle-down','toggle-left','toggle-right','toggle-up','trash-o','trophy','truck','umbrella','unlock','unlock-alt','unsorted','upload','user','users','video-camera','volume-down','volume-off','volume-up','warning','wheelchair','wrench'],\n      formfont:['check-square','check-square-o','circle','circle-o','dot-circle-o','minus-square','minus-square-o','plus-square','plus-square-o','square','square-o'],\n      currencyfont:['bitcoin','btc','cny','dollar','eur','euro','gbp','inr','jpy','krw','money','rmb','rouble','rub','ruble','rupee','try','turkish-lira','usd','won','yen' ],\n      textfont:['align-center','align-justify','align-left','align-right','bold','chain','chain-broken','clipboard','columns','copy','cut','dedent','eraser','file','file-o','file-text','file-text-o','files-o','floppy-o','font','indent','italic','link','list','list-alt','list-ol','list-ul','outdent','paperclip','paste','repeat','rotate-left','rotate-right','save','scissors','strikethrough','table','text-height','text-width','th','th-large','th-list','underline','undo','unlink'],\n      directionalfont:['angle-double-down','angle-double-left','angle-double-right','angle-double-up','angle-down','angle-left','angle-right','angle-up','arrow-circle-down','arrow-circle-left','arrow-circle-o-down','arrow-circle-o-left','arrow-circle-o-right','arrow-circle-o-up','arrow-circle-right','arrow-circle-up','arrow-down','arrow-left','arrow-right','arrow-up','arrows','arrows-alt','arrows-h','arrows-v','caret-down','caret-left','caret-right','caret-square-o-down','caret-square-o-left','caret-square-o-right','caret-square-o-up','caret-up','chevron-circle-down','chevron-circle-left','chevron-circle-right','chevron-circle-up','chevron-down','chevron-left','chevron-right','chevron-up','hand-o-down','hand-o-left','hand-o-right','hand-o-up','long-arrow-down','long-arrow-left','long-arrow-right','long-arrow-up','toggle-down','toggle-left','toggle-right','toggle-up'],\n      videofont:['arrows-alt','backward','compress','eject','expand','fast-backward','fast-forward','forward','pause','play','play-circle','play-circle-o','step-backward','step-forward','stop','youtube-play'],\n      brandfont:['adn','android','apple','bitbucket','bitbucket-square','bitcoin','btc','css3','dribbble','dropbox','facebook','facebook-square','flickr','foursquare','github','github-alt','github-square','gittip','google-plus','google-plus-square','html5','instagram','linkedin','linkedin-square','linux','maxcdn','pagelines','pinterest','pinterest-square','renren','skype','stack-exchange','stack-overflow','trello','tumblr','tumblr-square','twitter','twitter-square','vimeo-square','vk','weibo','windows','xing','xing-square','youtube','youtube-play','youtube-square'],\n      medicalfont:['ambulance','h-square','hospital-o','medkit','plus-square','stethoscope','user-md','wheelchair']\n      }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.row-ex div[_v-509b113f] {\n  text-align: left;\n  margin-top: 10px;\n}\n.row-ex i[_v-509b113f] {\n  margin-right: 10px;\n}\n.row-ex span[_v-509b113f] {\n  color:gray;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/_cache/n3IconDocs-45.vue?61fe08be"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAkGA;EACA,iBAAA;EACA,iBAAA;CACA;AACA;EACA,mBAAA;CACA;AACA;EACA,WAAA;CACA","file":"n3IconDocs-45.vue","sourcesContent":["<template><section><template>\n<h3>Icon</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n<h3>FontAwesome 4.0 Icons</h3>\n<hr>\n<n3-container>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n    <br>\n  <h4>Web Application Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <h4>Form Control Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Currency Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Text Edit Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Directional Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Video Player Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Brand Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n  <br>\n  <h4>Medical Icons</h4>\n  <hr>\n  <n3-row class=\"row-ex clearfix\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\"><n3-icon :type=\"font\"></n3-icon><span>{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-icon</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>type</td>\n<td><code>String</code></td>\n<td></td>\n<td>type</td>\n</tr>\n<tr>\n<td>size</td>\n<td><code>String</code></td>\n<td></td>\n<td>size</td>\n</tr>\n<tr>\n<td>color</td>\n<td><code>String</code></td>\n<td></td>\n<td>color</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n  .row-ex div {\n    text-align: left;\n    margin-top: 10px;\n  }\n  .row-ex i {\n    margin-right: 10px;\n  }\n  .row-ex span {\n    color:gray;\n  }\n</style>\n<script>\nexport default {\n  data () {\n    return {\n    newfont:['rub','ruble','rouble','pagelines','stack-exchange','arrow-circle-o-right','arrow-circle-o-left','caret-square-o-left','toggle-left','dot-circle-o','wheelchair','vimeo-square','try','turkish-lira','plus-square-o'],\n    webfont:['adjust','anchor','archive','arrows','arrows-h','arrows-v','asterisk','ban','bar-chart-o','barcode','bars','beer','bell','bell-o','bolt','book','bookmark','bookmark-o','briefcase','bug','building-o','bullhorn','bullseye','calendar','calendar-o','camera','camera-retro','caret-square-o-down','caret-square-o-left','caret-square-o-right','caret-square-o-up','certificate','check','check-circle','check-circle-o','check-square','check-square-o','circle','circle-o','clock-o','cloud','cloud-download','cloud-upload','code','code-fork','coffee','cog','cogs','comment','comment-o','comments','comments-o','compass','credit-card','crop','crosshairs','cutlery','dashboard','desktop','dot-circle-o','download','edit','ellipsis-h','ellipsis-v','envelope','envelope-o','eraser','exchange','exclamation','exclamation-circle','exclamation-triangle','external-link','external-link-square','eye','eye-slash','female','fighter-jet','film','filter','fire','fire-extinguisher','flag','flag-checkered','flag-o','flash','flask','folder','folder-o','folder-open','folder-open-o','frown-o','gamepad','gavel','gear','gears','gift','glass','globe','group','hdd-o','headphones','heart','heart-o','home','inbox','info','info-circle','key','keyboard-o','laptop','leaf','legal','lemon-o','level-down','level-up','lightbulb-o','location-arrow','lock','magic','magnet','mail-forward','mail-reply','mail-reply-all','male','map-marker','meh-o','microphone','microphone-slash','minus','minus-circle','minus-square','minus-square-o','mobile','mobile-phone','money','moon-o','music','pencil','pencil-square','pencil-square-o','phone','phone-square','picture-o','plane','plus','plus-circle','plus-square','plus-square-o','power-off','print','puzzle-piece','qrcode','question','question-circle','quote-left','quote-right','random','refresh','reply','reply-all','retweet','road','rocket','rss','rss-square','search','search-minus','search-plus','share','share-square','share-square-o','shield','shopping-cart','sign-in','sign-out','signal','sitemap','smile-o','sort','sort-alpha-asc','sort-alpha-desc','sort-amount-asc','sort-amount-desc','sort-asc','sort-desc','sort-down','sort-numeric-asc','sort-numeric-desc','sort-up','spinner','square','square-o','star','star-half','star-half-empty','star-half-full','star-half-o','star-o','subscript','suitcase','sun-o','superscript','tablet','tachometer','tag','tags','tasks','terminal','thumb-tack','thumbs-down','thumbs-o-down','thumbs-o-up','thumbs-up','ticket','times','times-circle','times-circle-o','tint','toggle-down','toggle-left','toggle-right','toggle-up','trash-o','trophy','truck','umbrella','unlock','unlock-alt','unsorted','upload','user','users','video-camera','volume-down','volume-off','volume-up','warning','wheelchair','wrench'],\n      formfont:['check-square','check-square-o','circle','circle-o','dot-circle-o','minus-square','minus-square-o','plus-square','plus-square-o','square','square-o'],\n      currencyfont:['bitcoin','btc','cny','dollar','eur','euro','gbp','inr','jpy','krw','money','rmb','rouble','rub','ruble','rupee','try','turkish-lira','usd','won','yen' ],\n      textfont:['align-center','align-justify','align-left','align-right','bold','chain','chain-broken','clipboard','columns','copy','cut','dedent','eraser','file','file-o','file-text','file-text-o','files-o','floppy-o','font','indent','italic','link','list','list-alt','list-ol','list-ul','outdent','paperclip','paste','repeat','rotate-left','rotate-right','save','scissors','strikethrough','table','text-height','text-width','th','th-large','th-list','underline','undo','unlink'],\n      directionalfont:['angle-double-down','angle-double-left','angle-double-right','angle-double-up','angle-down','angle-left','angle-right','angle-up','arrow-circle-down','arrow-circle-left','arrow-circle-o-down','arrow-circle-o-left','arrow-circle-o-right','arrow-circle-o-up','arrow-circle-right','arrow-circle-up','arrow-down','arrow-left','arrow-right','arrow-up','arrows','arrows-alt','arrows-h','arrows-v','caret-down','caret-left','caret-right','caret-square-o-down','caret-square-o-left','caret-square-o-right','caret-square-o-up','caret-up','chevron-circle-down','chevron-circle-left','chevron-circle-right','chevron-circle-up','chevron-down','chevron-left','chevron-right','chevron-up','hand-o-down','hand-o-left','hand-o-right','hand-o-up','long-arrow-down','long-arrow-left','long-arrow-right','long-arrow-up','toggle-down','toggle-left','toggle-right','toggle-up'],\n      videofont:['arrows-alt','backward','compress','eject','expand','fast-backward','fast-forward','forward','pause','play','play-circle','play-circle-o','step-backward','step-forward','stop','youtube-play'],\n      brandfont:['adn','android','apple','bitbucket','bitbucket-square','bitcoin','btc','css3','dribbble','dropbox','facebook','facebook-square','flickr','foursquare','github','github-alt','github-square','gittip','google-plus','google-plus-square','html5','instagram','linkedin','linkedin-square','linux','maxcdn','pagelines','pinterest','pinterest-square','renren','skype','stack-exchange','stack-overflow','trello','tumblr','tumblr-square','twitter','twitter-square','vimeo-square','vk','weibo','windows','xing','xing-square','youtube','youtube-play','youtube-square'],\n      medicalfont:['ambulance','h-square','hospital-o','medkit','plus-square','stethoscope','user-md','wheelchair']\n      }\n  }\n}\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -10111,7 +10111,7 @@
 /* 367 */
 /***/ (function(module, exports) {
 
-	module.exports = "<section _v-50b74041=\"\"><template>\n<h3 _v-50b74041=\"\">Icon</h3>\n<div class=\"bs-docs-section\" _v-50b74041=\"\">\n<div class=\"bs-example\" _v-50b74041=\"\">\n<h3 _v-50b74041=\"\">FontAwesome 4.0 Icons</h3>\n<hr _v-50b74041=\"\">\n<n3-container _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-50b74041=\"\">\n  <h4 _v-50b74041=\"\">Web Application Icons</h4>\n  <hr _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-50b74041=\"\">Form Control Icons</h4>\n  <hr _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-50b74041=\"\">\n  <h4 _v-50b74041=\"\">Currency Icons</h4>\n  <hr _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-50b74041=\"\">\n  <h4 _v-50b74041=\"\">Text Edit Icons</h4>\n  <hr _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-50b74041=\"\">\n  <h4 _v-50b74041=\"\">Directional Icons</h4>\n  <hr _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-50b74041=\"\">\n  <h4 _v-50b74041=\"\">Video Player Icons</h4>\n  <hr _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-50b74041=\"\">\n  <h4 _v-50b74041=\"\">Brand Icons</h4>\n  <hr _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-50b74041=\"\">\n  <h4 _v-50b74041=\"\">Medical Icons</h4>\n  <hr _v-50b74041=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-50b74041=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-50b74041=\"\"><n3-icon :type=\"font\" _v-50b74041=\"\"></n3-icon><span _v-50b74041=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-50b74041=\"\"><code class=\"language-html\" _v-50b74041=\"\"><span class=\"hljs-tag\" _v-50b74041=\"\">&lt;<span class=\"hljs-name\" _v-50b74041=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-50b74041=\"\">type</span>=<span class=\"hljs-string\" _v-50b74041=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-50b74041=\"\">&lt;/<span class=\"hljs-name\" _v-50b74041=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-50b74041=\"\">Params</h3>\n<table _v-50b74041=\"\">\n<thead _v-50b74041=\"\">\n<tr _v-50b74041=\"\">\n<th _v-50b74041=\"\">name</th>\n<th _v-50b74041=\"\">type</th>\n<th _v-50b74041=\"\">default</th>\n<th _v-50b74041=\"\">description</th>\n</tr>\n</thead>\n<tbody _v-50b74041=\"\">\n<tr _v-50b74041=\"\">\n<td _v-50b74041=\"\">type</td>\n<td _v-50b74041=\"\"><code _v-50b74041=\"\">String</code></td>\n<td _v-50b74041=\"\"></td>\n<td _v-50b74041=\"\">type</td>\n</tr>\n<tr _v-50b74041=\"\">\n<td _v-50b74041=\"\">size</td>\n<td _v-50b74041=\"\"><code _v-50b74041=\"\">String</code></td>\n<td _v-50b74041=\"\"></td>\n<td _v-50b74041=\"\">size</td>\n</tr>\n<tr _v-50b74041=\"\">\n<td _v-50b74041=\"\">color</td>\n<td _v-50b74041=\"\"><code _v-50b74041=\"\">String</code></td>\n<td _v-50b74041=\"\"></td>\n<td _v-50b74041=\"\">color</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-509b113f=\"\"><template>\n<h3 _v-509b113f=\"\">Icon</h3>\n<div class=\"bs-docs-section\" _v-509b113f=\"\">\n<div class=\"bs-example\" _v-509b113f=\"\">\n<h3 _v-509b113f=\"\">FontAwesome 4.0 Icons</h3>\n<hr _v-509b113f=\"\">\n<n3-container _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in newfont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n    <br _v-509b113f=\"\">\n  <h4 _v-509b113f=\"\">Web Application Icons</h4>\n  <hr _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in webfont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <h4 _v-509b113f=\"\">Form Control Icons</h4>\n  <hr _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in formfont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-509b113f=\"\">\n  <h4 _v-509b113f=\"\">Currency Icons</h4>\n  <hr _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in currencyfont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-509b113f=\"\">\n  <h4 _v-509b113f=\"\">Text Edit Icons</h4>\n  <hr _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in textfont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-509b113f=\"\">\n  <h4 _v-509b113f=\"\">Directional Icons</h4>\n  <hr _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in directionalfont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-509b113f=\"\">\n  <h4 _v-509b113f=\"\">Video Player Icons</h4>\n  <hr _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in videofont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-509b113f=\"\">\n  <h4 _v-509b113f=\"\">Brand Icons</h4>\n  <hr _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in brandfont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n  <br _v-509b113f=\"\">\n  <h4 _v-509b113f=\"\">Medical Icons</h4>\n  <hr _v-509b113f=\"\">\n  <n3-row class=\"row-ex clearfix\" _v-509b113f=\"\">\n    <n3-column v-for=\"font in medicalfont\" :col=\"3\" _v-509b113f=\"\"><n3-icon :type=\"font\" _v-509b113f=\"\"></n3-icon><span _v-509b113f=\"\">{{font}}</span></n3-column>\n  </n3-row>\n</n3-container>\n</div>\n<pre _v-509b113f=\"\"><code class=\"language-html\" _v-509b113f=\"\"><span class=\"hljs-tag\" _v-509b113f=\"\">&lt;<span class=\"hljs-name\" _v-509b113f=\"\">n3-icon</span> <span class=\"hljs-attr\" _v-509b113f=\"\">type</span>=<span class=\"hljs-string\" _v-509b113f=\"\">\"rub\"</span>&gt;</span><span class=\"hljs-tag\" _v-509b113f=\"\">&lt;/<span class=\"hljs-name\" _v-509b113f=\"\">n3-icon</span>&gt;</span>\n</code></pre>\n<h3 _v-509b113f=\"\">Params</h3>\n<table _v-509b113f=\"\">\n<thead _v-509b113f=\"\">\n<tr _v-509b113f=\"\">\n<th _v-509b113f=\"\">name</th>\n<th _v-509b113f=\"\">type</th>\n<th _v-509b113f=\"\">default</th>\n<th _v-509b113f=\"\">description</th>\n</tr>\n</thead>\n<tbody _v-509b113f=\"\">\n<tr _v-509b113f=\"\">\n<td _v-509b113f=\"\">type</td>\n<td _v-509b113f=\"\"><code _v-509b113f=\"\">String</code></td>\n<td _v-509b113f=\"\"></td>\n<td _v-509b113f=\"\">type</td>\n</tr>\n<tr _v-509b113f=\"\">\n<td _v-509b113f=\"\">size</td>\n<td _v-509b113f=\"\"><code _v-509b113f=\"\">String</code></td>\n<td _v-509b113f=\"\"></td>\n<td _v-509b113f=\"\">size</td>\n</tr>\n<tr _v-509b113f=\"\">\n<td _v-509b113f=\"\">color</td>\n<td _v-509b113f=\"\"><code _v-509b113f=\"\">String</code></td>\n<td _v-509b113f=\"\"></td>\n<td _v-509b113f=\"\">color</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ }),
 /* 368 */
@@ -10127,7 +10127,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(370)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TagsDocs-45.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TagsDocs-46.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(371)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -10144,7 +10144,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-1bad159f/n3TagsDocs-45.vue"
+	  var id = "_v-1bbb2d20/n3TagsDocs-46.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -11363,7 +11363,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(395)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3AccordionDocs-46.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3AccordionDocs-47.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(396)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -11380,7 +11380,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-441f2297/n3AccordionDocs-46.vue"
+	  var id = "_v-442d3a18/n3AccordionDocs-47.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -11592,7 +11592,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(399)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3CascaderDocs-51.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3CascaderDocs-49.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(400)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -11609,7 +11609,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-6243e716/n3CascaderDocs-51.vue"
+	  var id = "_v-64cc2044/n3CascaderDocs-49.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -11797,7 +11797,7 @@
 	__webpack_require__(403)
 	__vue_script__ = __webpack_require__(405)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3AffixDocs-52.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3AffixDocs-50.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(406)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -11814,7 +11814,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-46b925ac/n3AffixDocs-52.vue"
+	  var id = "_v-46f183b0/n3AffixDocs-50.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -11833,13 +11833,13 @@
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(350)("72250cb2", content, false);
+	var update = __webpack_require__(350)("1509928c", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-46b925ac&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-52.vue", function() {
-	     var newContent = require("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-46b925ac&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-52.vue");
+	   module.hot.accept("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-46f183b0&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-50.vue", function() {
+	     var newContent = require("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-46f183b0&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3AffixDocs-50.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -11857,7 +11857,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.sidebar[_v-46b925ac]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-46b925ac]{\n  position: static;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/_cache/n3AffixDocs-52.vue?0c2002f8"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmDA;EACA,uBAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;CACA","file":"n3AffixDocs-52.vue","sourcesContent":["<template><section><template>\n<h3>Affix</h3>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <h3>\n      <n3-affix :offset=\"0\">\n        <nav class=\"sidebar\">\n          <ul>\n            <li>...</li>\n            <li>...</li>\n            <li>...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-affix</span> <span class=\"hljs-attr\">:offset</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">nav</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">nav</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>The pixel value from the top of the screen</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.sidebar{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-']{\n  position: static;\n}\n</style>\n<script>\nexport default {\n\n}\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.sidebar[_v-46f183b0]{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-'][_v-46f183b0]{\n  position: static;\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/_cache/n3AffixDocs-50.vue?652cc3f6"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAmDA;EACA,uBAAA;EACA,8BAAA;EACA,eAAA;EACA,aAAA;CACA;AACA;EACA,iBAAA;CACA","file":"n3AffixDocs-50.vue","sourcesContent":["<template><section><template>\n<h3>Affix</h3>\n<div class=\"bs-docs-section\">\n  <div class=\"bs-example\">\n    <h3>\n      <n3-affix :offset=\"0\">\n        <nav class=\"sidebar\">\n          <ul>\n            <li>...</li>\n            <li>...</li>\n            <li>...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-affix</span> <span class=\"hljs-attr\">:offset</span>=<span class=\"hljs-string\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">nav</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">li</span>&gt;</span>...<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">li</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">nav</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>offset</td>\n<td><code>Number</code></td>\n<td><code>0</code></td>\n<td>The pixel value from the top of the screen</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section></template>\n<style scoped>\n.sidebar{\n  background-color: #fff;\n  box-shadow: 1px 1px 10px #ddd;\n  z-index: 10000;\n  padding:10px;\n}\npre[class*='language-']{\n  position: static;\n}\n</style>\n<script>\nexport default {\n\n}\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -11941,7 +11941,7 @@
 /* 406 */
 /***/ (function(module, exports) {
 
-	module.exports = "<section _v-46b925ac=\"\"><template>\n<h3 _v-46b925ac=\"\">Affix</h3>\n<div class=\"bs-docs-section\" _v-46b925ac=\"\">\n  <div class=\"bs-example\" _v-46b925ac=\"\">\n    <h3 _v-46b925ac=\"\">\n      <n3-affix :offset=\"0\" _v-46b925ac=\"\">\n        <nav class=\"sidebar\" _v-46b925ac=\"\">\n          <ul _v-46b925ac=\"\">\n            <li _v-46b925ac=\"\">...</li>\n            <li _v-46b925ac=\"\">...</li>\n            <li _v-46b925ac=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-46b925ac=\"\"><code class=\"language-html\" _v-46b925ac=\"\"><span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;<span class=\"hljs-name\" _v-46b925ac=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-46b925ac=\"\">:offset</span>=<span class=\"hljs-string\" _v-46b925ac=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;<span class=\"hljs-name\" _v-46b925ac=\"\">nav</span> <span class=\"hljs-attr\" _v-46b925ac=\"\">class</span>=<span class=\"hljs-string\" _v-46b925ac=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;<span class=\"hljs-name\" _v-46b925ac=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;<span class=\"hljs-name\" _v-46b925ac=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;/<span class=\"hljs-name\" _v-46b925ac=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;<span class=\"hljs-name\" _v-46b925ac=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;/<span class=\"hljs-name\" _v-46b925ac=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;<span class=\"hljs-name\" _v-46b925ac=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;/<span class=\"hljs-name\" _v-46b925ac=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;/<span class=\"hljs-name\" _v-46b925ac=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;/<span class=\"hljs-name\" _v-46b925ac=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-46b925ac=\"\">&lt;/<span class=\"hljs-name\" _v-46b925ac=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3 _v-46b925ac=\"\">Params</h3>\n<table _v-46b925ac=\"\">\n<thead _v-46b925ac=\"\">\n<tr _v-46b925ac=\"\">\n<th _v-46b925ac=\"\">name</th>\n<th _v-46b925ac=\"\">type</th>\n<th _v-46b925ac=\"\">default</th>\n<th _v-46b925ac=\"\">description</th>\n</tr>\n</thead>\n<tbody _v-46b925ac=\"\">\n<tr _v-46b925ac=\"\">\n<td _v-46b925ac=\"\">offset</td>\n<td _v-46b925ac=\"\"><code _v-46b925ac=\"\">Number</code></td>\n<td _v-46b925ac=\"\"><code _v-46b925ac=\"\">0</code></td>\n<td _v-46b925ac=\"\">The pixel value from the top of the screen</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
+	module.exports = "<section _v-46f183b0=\"\"><template>\n<h3 _v-46f183b0=\"\">Affix</h3>\n<div class=\"bs-docs-section\" _v-46f183b0=\"\">\n  <div class=\"bs-example\" _v-46f183b0=\"\">\n    <h3 _v-46f183b0=\"\">\n      <n3-affix :offset=\"0\" _v-46f183b0=\"\">\n        <nav class=\"sidebar\" _v-46f183b0=\"\">\n          <ul _v-46f183b0=\"\">\n            <li _v-46f183b0=\"\">...</li>\n            <li _v-46f183b0=\"\">...</li>\n            <li _v-46f183b0=\"\">...</li>\n          </ul>\n        </nav>\n      </n3-affix>\n    </h3>\n  </div>\n<pre _v-46f183b0=\"\"><code class=\"language-html\" _v-46f183b0=\"\"><span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;<span class=\"hljs-name\" _v-46f183b0=\"\">n3-affix</span> <span class=\"hljs-attr\" _v-46f183b0=\"\">:offset</span>=<span class=\"hljs-string\" _v-46f183b0=\"\">\"0\"</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;<span class=\"hljs-name\" _v-46f183b0=\"\">nav</span> <span class=\"hljs-attr\" _v-46f183b0=\"\">class</span>=<span class=\"hljs-string\" _v-46f183b0=\"\">\"sidebar\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;<span class=\"hljs-name\" _v-46f183b0=\"\">ul</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;<span class=\"hljs-name\" _v-46f183b0=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;/<span class=\"hljs-name\" _v-46f183b0=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;<span class=\"hljs-name\" _v-46f183b0=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;/<span class=\"hljs-name\" _v-46f183b0=\"\">li</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;<span class=\"hljs-name\" _v-46f183b0=\"\">li</span>&gt;</span>...<span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;/<span class=\"hljs-name\" _v-46f183b0=\"\">li</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;/<span class=\"hljs-name\" _v-46f183b0=\"\">ul</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;/<span class=\"hljs-name\" _v-46f183b0=\"\">nav</span>&gt;</span>\n<span class=\"hljs-tag\" _v-46f183b0=\"\">&lt;/<span class=\"hljs-name\" _v-46f183b0=\"\">n3-affix</span>&gt;</span>\n</code></pre>\n<h3 _v-46f183b0=\"\">Params</h3>\n<table _v-46f183b0=\"\">\n<thead _v-46f183b0=\"\">\n<tr _v-46f183b0=\"\">\n<th _v-46f183b0=\"\">name</th>\n<th _v-46f183b0=\"\">type</th>\n<th _v-46f183b0=\"\">default</th>\n<th _v-46f183b0=\"\">description</th>\n</tr>\n</thead>\n<tbody _v-46f183b0=\"\">\n<tr _v-46f183b0=\"\">\n<td _v-46f183b0=\"\">offset</td>\n<td _v-46f183b0=\"\"><code _v-46f183b0=\"\">Number</code></td>\n<td _v-46f183b0=\"\"><code _v-46f183b0=\"\">0</code></td>\n<td _v-46f183b0=\"\">The pixel value from the top of the screen</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n\n\n</section>";
 
 /***/ }),
 /* 407 */
@@ -11957,7 +11957,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(409)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3AsideDocs-49.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3AsideDocs-52.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(410)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -11974,7 +11974,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-535ed6ac/n3AsideDocs-49.vue"
+	  var id = "_v-50ba6e7c/n3AsideDocs-52.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -12162,7 +12162,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-23f5ba92/n3CarouselDocs-50.vue"
+	  var id = "_v-2403d213/n3CarouselDocs-51.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -12181,13 +12181,13 @@
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	if(content.locals) module.exports = content.locals;
 	// add the styles to the DOM
-	var update = __webpack_require__(350)("4ae4d96c", content, false);
+	var update = __webpack_require__(350)("08a8809e", content, false);
 	// Hot Module Replacement
 	if(false) {
 	 // When the styles change, update the <style> tags
 	 if(!content.locals) {
-	   module.hot.accept("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-23f5ba92&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-50.vue", function() {
-	     var newContent = require("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-23f5ba92&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-50.vue");
+	   module.hot.accept("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-2403d213&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-51.vue", function() {
+	     var newContent = require("!!../../css-loader/index.js?sourceMap!../../vue-loader/lib/style-rewriter.js?id=_v-2403d213&scoped=true!../../vue-loader/lib/selector.js?type=style&index=0!./n3CarouselDocs-51.vue");
 	     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 	     update(newContent);
 	   });
@@ -12205,7 +12205,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.slide-img[_v-23f5ba92]{\n  height:400px!important;\n}\n.carousel-caption[_v-23f5ba92] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-23f5ba92] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/_cache/n3CarouselDocs-50.vue?1db38289"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuFA;EACA,uBAAA;CACA;AACA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,UAAA;EACA,YAAA;EACA,kBAAA;EACA,qBAAA;EACA,YAAA;EACA,mBAAA;EACA,yCAAA;CACA;AACA;EACA;IACA,WAAA;IACA,UAAA;IACA,qBAAA;GACA;CACA","file":"n3CarouselDocs-50.vue","sourcesContent":["<template><section><template>\n<h3>Carousel</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-carousel>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #1</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #2</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #3</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>indicators</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>Whether to display the control point</td>\n</tr>\n<tr>\n<td>controls</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>Whether to show arrows</td>\n</tr>\n<tr>\n<td>interval</td>\n<td><code>Number</code></td>\n<td><code>5000</code></td>\n<td>Automatic switching time (less than or equal to 0 does not automatically switch)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section></template>\n<style scoped>\n.slide-img{\n  height:400px!important;\n}\n.carousel-caption {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.slide-img[_v-2403d213]{\n  height:400px!important;\n}\n.carousel-caption[_v-2403d213] {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption[_v-2403d213] {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n", "", {"version":3,"sources":["/./node_modules/vue-markdown-loader/_cache/n3CarouselDocs-51.vue?2e129c8a"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAuFA;EACA,uBAAA;CACA;AACA;EACA,mBAAA;EACA,WAAA;EACA,aAAA;EACA,UAAA;EACA,YAAA;EACA,kBAAA;EACA,qBAAA;EACA,YAAA;EACA,mBAAA;EACA,yCAAA;CACA;AACA;EACA;IACA,WAAA;IACA,UAAA;IACA,qBAAA;GACA;CACA","file":"n3CarouselDocs-51.vue","sourcesContent":["<template><section><template>\n<h3>Carousel</h3>\n<div class=\"bs-docs-section\">\n<div class=\"bs-example\">\n  <n3-carousel>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #1</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #2</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide>\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\">\n      <div class=\"carousel-caption\">\n        <h3>Slide #3</h3>\n        <p>xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre><code class=\"language-html\"><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">img</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"slide-img\"</span> <span class=\"hljs-attr\">src</span>=<span class=\"hljs-string\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">p</span>&gt;</span>\n    <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n  <span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3>Params</h3>\n<table>\n<thead>\n<tr>\n<th>name</th>\n<th>type</th>\n<th>default</th>\n<th>description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>indicators</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>Whether to display the control point</td>\n</tr>\n<tr>\n<td>controls</td>\n<td><code>Boolean</code></td>\n<td><code>true</code></td>\n<td>Whether to show arrows</td>\n</tr>\n<tr>\n<td>interval</td>\n<td><code>Number</code></td>\n<td><code>5000</code></td>\n<td>Automatic switching time (less than or equal to 0 does not automatically switch)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section></template>\n<style scoped>\n.slide-img{\n  height:400px!important;\n}\n.carousel-caption {\n  position: absolute;\n  right: 15%;\n  bottom: 20px;\n  left: 15%;\n  z-index: 10;\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #fff;\n  text-align: center;\n  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);\n}\n@media screen and (min-width: 768px) {\n  .carousel-caption {\n    right: 20%;\n    left: 20%;\n    padding-bottom: 30px;\n  }\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -12214,7 +12214,7 @@
 /* 415 */
 /***/ (function(module, exports) {
 
-	module.exports = "<section _v-23f5ba92=\"\"><template>\n<h3 _v-23f5ba92=\"\">Carousel</h3>\n<div class=\"bs-docs-section\" _v-23f5ba92=\"\">\n<div class=\"bs-example\" _v-23f5ba92=\"\">\n  <n3-carousel _v-23f5ba92=\"\">\n    <n3-slide _v-23f5ba92=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-23f5ba92=\"\">\n      <div class=\"carousel-caption\" _v-23f5ba92=\"\">\n        <h3 _v-23f5ba92=\"\">Slide #1</h3>\n        <p _v-23f5ba92=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-23f5ba92=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-23f5ba92=\"\">\n      <div class=\"carousel-caption\" _v-23f5ba92=\"\">\n        <h3 _v-23f5ba92=\"\">Slide #2</h3>\n        <p _v-23f5ba92=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-23f5ba92=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-23f5ba92=\"\">\n      <div class=\"carousel-caption\" _v-23f5ba92=\"\">\n        <h3 _v-23f5ba92=\"\">Slide #3</h3>\n        <p _v-23f5ba92=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-23f5ba92=\"\"><code class=\"language-html\" _v-23f5ba92=\"\"><span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">img</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">class</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">src</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">div</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">class</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">img</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">class</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">src</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">div</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">class</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">img</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">class</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">src</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">div</span> <span class=\"hljs-attr\" _v-23f5ba92=\"\">class</span>=<span class=\"hljs-string\" _v-23f5ba92=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;<span class=\"hljs-name\" _v-23f5ba92=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-23f5ba92=\"\">&lt;/<span class=\"hljs-name\" _v-23f5ba92=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-23f5ba92=\"\">Params</h3>\n<table _v-23f5ba92=\"\">\n<thead _v-23f5ba92=\"\">\n<tr _v-23f5ba92=\"\">\n<th _v-23f5ba92=\"\">name</th>\n<th _v-23f5ba92=\"\">type</th>\n<th _v-23f5ba92=\"\">default</th>\n<th _v-23f5ba92=\"\">description</th>\n</tr>\n</thead>\n<tbody _v-23f5ba92=\"\">\n<tr _v-23f5ba92=\"\">\n<td _v-23f5ba92=\"\">indicators</td>\n<td _v-23f5ba92=\"\"><code _v-23f5ba92=\"\">Boolean</code></td>\n<td _v-23f5ba92=\"\"><code _v-23f5ba92=\"\">true</code></td>\n<td _v-23f5ba92=\"\">Whether to display the control point</td>\n</tr>\n<tr _v-23f5ba92=\"\">\n<td _v-23f5ba92=\"\">controls</td>\n<td _v-23f5ba92=\"\"><code _v-23f5ba92=\"\">Boolean</code></td>\n<td _v-23f5ba92=\"\"><code _v-23f5ba92=\"\">true</code></td>\n<td _v-23f5ba92=\"\">Whether to show arrows</td>\n</tr>\n<tr _v-23f5ba92=\"\">\n<td _v-23f5ba92=\"\">interval</td>\n<td _v-23f5ba92=\"\"><code _v-23f5ba92=\"\">Number</code></td>\n<td _v-23f5ba92=\"\"><code _v-23f5ba92=\"\">5000</code></td>\n<td _v-23f5ba92=\"\">Automatic switching time (less than or equal to 0 does not automatically switch)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
+	module.exports = "<section _v-2403d213=\"\"><template>\n<h3 _v-2403d213=\"\">Carousel</h3>\n<div class=\"bs-docs-section\" _v-2403d213=\"\">\n<div class=\"bs-example\" _v-2403d213=\"\">\n  <n3-carousel _v-2403d213=\"\">\n    <n3-slide _v-2403d213=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-2403d213=\"\">\n      <div class=\"carousel-caption\" _v-2403d213=\"\">\n        <h3 _v-2403d213=\"\">Slide #1</h3>\n        <p _v-2403d213=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-2403d213=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-2403d213=\"\">\n      <div class=\"carousel-caption\" _v-2403d213=\"\">\n        <h3 _v-2403d213=\"\">Slide #2</h3>\n        <p _v-2403d213=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n    <n3-slide _v-2403d213=\"\">\n      <img class=\"slide-img\" src=\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\" _v-2403d213=\"\">\n      <div class=\"carousel-caption\" _v-2403d213=\"\">\n        <h3 _v-2403d213=\"\">Slide #3</h3>\n        <p _v-2403d213=\"\">xxxxxxxxxxxx</p>\n      </div>\n    </n3-slide>\n  </n3-carousel>\n</div>\n<pre _v-2403d213=\"\"><code class=\"language-html\" _v-2403d213=\"\"><span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">n3-carousel</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">img</span> <span class=\"hljs-attr\" _v-2403d213=\"\">class</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-2403d213=\"\">src</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">div</span> <span class=\"hljs-attr\" _v-2403d213=\"\">class</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">h3</span>&gt;</span>Slide #1<span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">img</span> <span class=\"hljs-attr\" _v-2403d213=\"\">class</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-2403d213=\"\">src</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">div</span> <span class=\"hljs-attr\" _v-2403d213=\"\">class</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">h3</span>&gt;</span>Slide #2<span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">n3-slide</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">n3-slide</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">img</span> <span class=\"hljs-attr\" _v-2403d213=\"\">class</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"slide-img\"</span> <span class=\"hljs-attr\" _v-2403d213=\"\">src</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg\"</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">div</span> <span class=\"hljs-attr\" _v-2403d213=\"\">class</span>=<span class=\"hljs-string\" _v-2403d213=\"\">\"carousel-caption\"</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">h3</span>&gt;</span>Slide #3<span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">h3</span>&gt;</span>\n      <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;<span class=\"hljs-name\" _v-2403d213=\"\">p</span>&gt;</span>xxxxxxxxxxxx<span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">p</span>&gt;</span>\n    <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">div</span>&gt;</span>\n  <span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">n3-slide</span>&gt;</span>\n<span class=\"hljs-tag\" _v-2403d213=\"\">&lt;/<span class=\"hljs-name\" _v-2403d213=\"\">n3-carousel</span>&gt;</span>\n</code></pre>\n<h3 _v-2403d213=\"\">Params</h3>\n<table _v-2403d213=\"\">\n<thead _v-2403d213=\"\">\n<tr _v-2403d213=\"\">\n<th _v-2403d213=\"\">name</th>\n<th _v-2403d213=\"\">type</th>\n<th _v-2403d213=\"\">default</th>\n<th _v-2403d213=\"\">description</th>\n</tr>\n</thead>\n<tbody _v-2403d213=\"\">\n<tr _v-2403d213=\"\">\n<td _v-2403d213=\"\">indicators</td>\n<td _v-2403d213=\"\"><code _v-2403d213=\"\">Boolean</code></td>\n<td _v-2403d213=\"\"><code _v-2403d213=\"\">true</code></td>\n<td _v-2403d213=\"\">Whether to display the control point</td>\n</tr>\n<tr _v-2403d213=\"\">\n<td _v-2403d213=\"\">controls</td>\n<td _v-2403d213=\"\"><code _v-2403d213=\"\">Boolean</code></td>\n<td _v-2403d213=\"\"><code _v-2403d213=\"\">true</code></td>\n<td _v-2403d213=\"\">Whether to show arrows</td>\n</tr>\n<tr _v-2403d213=\"\">\n<td _v-2403d213=\"\">interval</td>\n<td _v-2403d213=\"\"><code _v-2403d213=\"\">Number</code></td>\n<td _v-2403d213=\"\"><code _v-2403d213=\"\">5000</code></td>\n<td _v-2403d213=\"\">Automatic switching time (less than or equal to 0 does not automatically switch)</td>\n</tr>\n</tbody>\n</table>\n</div>\n</template>\n</section>";
 
 /***/ }),
 /* 416 */
@@ -12244,7 +12244,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-5094e5ca/n3ButtonsDocs-54.vue"
+	  var id = "_v-50b114cc/n3ButtonsDocs-53.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -12272,7 +12272,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(421)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3ToastDocs-53.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3ToastDocs-56.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(422)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -12289,7 +12289,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-e7831818/n3ToastDocs-53.vue"
+	  var id = "_v-e72e8b12/n3ToastDocs-56.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -12405,7 +12405,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(425)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3DatepickerDocs-56.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3DatepickerDocs-55.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(426)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -12422,7 +12422,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-5672ab08/n3DatepickerDocs-56.vue"
+	  var id = "_v-568eda0a/n3DatepickerDocs-55.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -12550,7 +12550,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(429)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TimepickerDocs-55.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TimepickerDocs-54.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(430)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -12567,7 +12567,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-3badf1bc/n3TimepickerDocs-55.vue"
+	  var id = "_v-3b9fda3b/n3TimepickerDocs-54.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -13903,7 +13903,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(457)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3NavDocs-62.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3NavDocs-64.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(458)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -13920,7 +13920,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-34579554/n3NavDocs-62.vue"
+	  var id = "_v-341f3750/n3NavDocs-64.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -14170,7 +14170,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(461)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3PopoverDocs-64.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3PopoverDocs-62.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(462)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -14187,7 +14187,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-309ca816/n3PopoverDocs-64.vue"
+	  var id = "_v-30807914/n3PopoverDocs-62.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -14797,7 +14797,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(471)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3SelectDocs-66.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3SelectDocs-68.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(472)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -14814,7 +14814,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-2aaa1b4a/n3SelectDocs-66.vue"
+	  var id = "_v-2a71bd46/n3SelectDocs-68.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15130,7 +15130,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(475)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3SwitchDocs-68.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3SwitchDocs-67.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(476)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -15147,7 +15147,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-cdbce7b6/n3SwitchDocs-68.vue"
+	  var id = "_v-cdd916b8/n3SwitchDocs-67.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15267,7 +15267,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(479)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TimelineDocs-67.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TimelineDocs-66.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(480)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -15284,7 +15284,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-7d704392/n3TimelineDocs-67.vue"
+	  var id = "_v-7d8c7294/n3TimelineDocs-66.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15452,7 +15452,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(483)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TabsDocs-69.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TabsDocs-70.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(484)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -15469,7 +15469,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-76c0045c/n3TabsDocs-69.vue"
+	  var id = "_v-77f60972/n3TabsDocs-70.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15760,7 +15760,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(487)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TooltipDocs-72.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TooltipDocs-69.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(488)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -15777,7 +15777,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-3c45f995/n3TooltipDocs-72.vue"
+	  var id = "_v-3af3c57d/n3TooltipDocs-69.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -15928,7 +15928,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(491)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TypeaheadDocs-70.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TypeaheadDocs-71.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(492)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -15945,7 +15945,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-eefb96e2/n3TypeaheadDocs-70.vue"
+	  var id = "_v-eedf67e0/n3TypeaheadDocs-71.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -16186,7 +16186,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-d3da5e36/n3StepDocs-71.vue"
+	  var id = "_v-d3be2f34/n3StepDocs-72.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -16214,7 +16214,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(498)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3SliderDocs-73.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3SliderDocs-75.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(499)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -16231,7 +16231,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-1535611c/n3SliderDocs-73.vue"
+	  var id = "_v-14fd0318/n3SliderDocs-75.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -16449,7 +16449,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(505)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3PageDocs-75.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3PageDocs-73.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(506)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -16466,7 +16466,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-4da6eb46/n3PageDocs-75.vue"
+	  var id = "_v-4d8abc44/n3PageDocs-73.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -16633,7 +16633,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(509)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3DataTableDocs-77.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3DataTableDocs-76.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(510)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -16650,7 +16650,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-4ebfbd79/n3DataTableDocs-77.vue"
+	  var id = "_v-4eb1a5f8/n3DataTableDocs-76.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -17086,7 +17086,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-00c871da/n3BreadcrumbDocs-76.vue"
+	  var id = "_v-00ac42d8/n3BreadcrumbDocs-77.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -17114,7 +17114,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(516)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3MultipleInputDocs-80.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3MultipleInputDocs-78.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(517)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -17131,7 +17131,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-8a07ae0a/n3MultipleInputDocs-80.vue"
+	  var id = "_v-8c8fe738/n3MultipleInputDocs-78.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -17359,7 +17359,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(520)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TreeDocs-78.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3TreeDocs-80.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(521)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -17376,7 +17376,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-50199d4c/n3TreeDocs-78.vue"
+	  var id = "_v-4d91641e/n3TreeDocs-80.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -17850,7 +17850,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(524)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3RateDocs-81.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3RateDocs-79.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(525)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -17867,7 +17867,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-1f818ef0/n3RateDocs-81.vue"
+	  var id = "_v-1e3d7259/n3RateDocs-79.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -18021,7 +18021,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(528)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3UploaderDocs-79.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3UploaderDocs-82.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(529)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -18038,7 +18038,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-2b70ed8b/n3UploaderDocs-79.vue"
+	  var id = "_v-2cc321a3/n3UploaderDocs-82.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -18232,7 +18232,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(532)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3FormDocs-82.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3FormDocs-83.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(533)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -18249,7 +18249,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-b8225fe6/n3FormDocs-82.vue"
+	  var id = "_v-b80630e4/n3FormDocs-83.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -18730,7 +18730,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(536)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3CheckboxDocs-85.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3CheckboxDocs-81.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(537)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -18747,7 +18747,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-0906b3b1/n3CheckboxDocs-85.vue"
+	  var id = "_v-08ce55ad/n3CheckboxDocs-81.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -18917,7 +18917,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(540)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3RadioDocs-83.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3RadioDocs-84.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(541)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -18934,7 +18934,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-123c537d/n3RadioDocs-83.vue"
+	  var id = "_v-124a6afe/n3RadioDocs-84.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -19102,7 +19102,7 @@
 	var __vue_styles__ = {}
 	__vue_script__ = __webpack_require__(544)
 	if (Object.keys(__vue_script__).some(function (key) { return key !== "default" && key !== "__esModule" })) {
-	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3CardDocs-84.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] node_modules/vue-markdown-loader/_cache/n3CardDocs-85.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(545)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -19119,7 +19119,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-11ce2d7a/n3CardDocs-84.vue"
+	  var id = "_v-11b1fe78/n3CardDocs-85.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -50632,6 +50632,12 @@
 	    }
 	  },
 	  data: function data() {
+	    var date = this.value ? this.stringify(new Date(this.value)) : '';
+	    var time = this.value ? this.stringifyTime(new Date(this.value)) : {
+	      hour: 0,
+	      minute: 0,
+	      second: 0
+	    };
 	    return {
 	      weekRange: [this.getL('sun'), this.getL('mon'), this.getL('tues'), this.getL('wednes'), this.getL('thurs'), this.getL('fri'), this.getL('satur')],
 	      dateRange: [],
@@ -50640,13 +50646,9 @@
 	      displayDayView: false,
 	      displayMouthView: false,
 	      displayYearView: false,
-	      time: {
-	        hour: 0,
-	        minute: 0,
-	        second: 0
-	      },
+	      time: time,
 	      popWidth: '',
-	      date: '',
+	      date: date,
 	      currentValue: this.value,
 	      mouthNames: [this.getL('jan'), this.getL('feb'), this.getL('mar'), this.getL('apr'), this.getL('may'), this.getL('jun'), this.getL('jul'), this.getL('aug'), this.getL('sep'), this.getL('oct'), this.getL('nov'), this.getL('dec')]
 	    };
@@ -50654,6 +50656,10 @@
 	
 	  watch: {
 	    value: function value(val) {
+	      if (this.inner) {
+	        this.inner = false;
+	        return;
+	      }
 	      this.inner = true;
 	      this.currentValue = val;
 	    },
@@ -50662,6 +50668,7 @@
 	        this.inner = false;
 	        return;
 	      }
+	      this.inner = true;
 	      this.$emit('input', val);
 	      this.$emit('change', val);
 	    },
@@ -51006,12 +51013,6 @@
 	          });
 	        }
 	      }
-	    }
-	  },
-	  created: function created() {
-	    if (this.value) {
-	      this.date = this.stringify(new Date(this.value));
-	      this.time = this.stringifyTime(new Date(this.value));
 	    }
 	  },
 	  mounted: function mounted() {
