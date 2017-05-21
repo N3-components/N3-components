@@ -180,6 +180,12 @@ export default {
     }
   },
   data () {
+    const date = this.value ? this.stringify(new Date(this.value)) : ''
+    const time = this.value ? this.stringifyTime(new Date(this.value)) : {
+        hour: 0,
+        minute: 0,
+        second: 0
+      }
     return {
       weekRange: [this.getL('sun'), this.getL('mon'),this.getL('tues'),this.getL('wednes'),this.getL('thurs'),this.getL('fri'),this.getL('satur')],
       dateRange: [],
@@ -188,13 +194,9 @@ export default {
       displayDayView: false,
       displayMouthView: false,
       displayYearView: false,
-      time: {
-        hour: 0,
-        minute: 0,
-        second: 0
-      },
+      time: time,
       popWidth: '',
-      date: '',
+      date: date,
       currentValue: this.value,
       mouthNames:  [ this.getL('jan'),this.getL('feb'),this.getL('mar'),
                     this.getL('apr'),this.getL('may'),this.getL('jun'),
@@ -204,6 +206,10 @@ export default {
   },
   watch: {
     value (val) {
+      if (this.inner) {
+        this.inner = false
+        return
+      }
       this.inner = true
       this.currentValue = val
     },
@@ -212,6 +218,7 @@ export default {
         this.inner = false
         return
       }
+      this.inner = true
       this.$emit('input', val)
       this.$emit('change', val)
     },
@@ -545,12 +552,6 @@ export default {
           })
         }
       }
-    }
-  },
-  created () {
-    if (this.value) {
-      this.date = this.stringify(new Date(this.value))
-      this.time = this.stringifyTime(new Date(this.value))
     }
   },
   mounted () {
