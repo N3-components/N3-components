@@ -138,6 +138,7 @@ import n3Input from '../Input/n3Input'
 import inputMixin from '../Mixin/inputMixin'
 import EventListener from '../utils/EventListener'
 import localeMixin from '../Mixin/localeMixin'
+import format from '../utils/format.js'
 
 export default {
   name: 'n3Datetimepicker',
@@ -458,7 +459,7 @@ export default {
         .replace(/d/g, day)
     },
     parse (str) {
-      const date = new Date(str)
+      const date = new Date(format.dateParse(str,this.format))
       return isNaN(date.getFullYear()) ? null : date
     },
     getDayCount (year, month) {

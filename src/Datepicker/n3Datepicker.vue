@@ -104,6 +104,7 @@ import EventListener from '../utils/EventListener'
 import n3Input from '../Input/n3Input'
 import inputMixin from '../Mixin/inputMixin'
 import localeMixin from '../Mixin/localeMixin'
+import format from '../utils/format.js'
 
 export default {
   name: 'n3Datepicker',
@@ -170,10 +171,8 @@ export default {
     monthClassObj (m) {
       let {prefixCls, currentValue, mouthNames, parse, currDate} = this
       let klass = {}
-
       klass[prefixCls + '-datepicker-dateRange-item-active'] =
       currentValue && parse(currentValue) && mouthNames[parse(currentValue).getMonth()] === m && currDate.getFullYear() === parse(currentValue).getFullYear()
-
       return klass
     },
     yearClassObj (decade) {
@@ -240,6 +239,7 @@ export default {
       if (klass.indexOf(this.prefixCls + '-datepicker-item-disable') > -1) {
         return false
       } else {
+        
         this.currDate = date
         this.currentValue = this.stringify(this.currDate)
         this.displayDayView = false
@@ -300,7 +300,7 @@ export default {
         .replace(/d/g, day)
     },
     parse (str) {
-      const date = new Date(str)
+      const date = new Date(format.dateParse(str,this.format))
       return isNaN(date.getFullYear()) ? null : date
     },
     getDayCount (year, month) {
@@ -358,6 +358,7 @@ export default {
         if (i === time.day) {
           if (this.currentValue) {
             const valueDate = this.parse(this.currentValue)
+
             if (valueDate) {
               if (valueDate.getFullYear() === time.year && valueDate.getMonth() === time.month) {
                 sclass = this.prefixCls + '-datepicker-dateRange-item-active'
