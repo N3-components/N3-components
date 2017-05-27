@@ -17,7 +17,7 @@
           <slot></slot>
         </div>
       </div>
-    <n3-collapse-transition>
+    </n3-collapse-transition>
   </div>
 </template>
 
