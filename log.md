@@ -38,3 +38,7 @@ v2.x.x
 ### v2.2.3
 
 + datepicker bug fix
+
+### v2.2.4
+
++ panel bug fix
