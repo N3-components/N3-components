@@ -1,4 +1,4 @@
-module.exports = {
+export default {
    'page': {
         'zh':'页',
         'en':'page'

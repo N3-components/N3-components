@@ -7,7 +7,7 @@ import n3DataTable from './n3DataTable'
 import n3Page from './n3Page'
 import n3Validate from './n3Validate'
 
-module.exports = {
+export default {
     n3Datepicker,
     n3Datetimepicker,
     n3Timepicker,

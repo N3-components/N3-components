@@ -42,3 +42,7 @@ v2.x.x
 ### v2.2.4
 
 + panel bug fix
+
+### v2.2.5
+
++ module.exports -> export dafault

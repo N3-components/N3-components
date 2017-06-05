@@ -1,4 +1,4 @@
-module.exports = {
+export default {
    'hour': {
         'zh':'时',
         'en':'H'

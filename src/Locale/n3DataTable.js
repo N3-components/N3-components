@@ -1,4 +1,4 @@
-module.exports = {
+export default {
    'selectCol': {
         'zh':'显示的列',
         'en':'show col'

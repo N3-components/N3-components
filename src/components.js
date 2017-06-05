@@ -149,4 +149,4 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 Components.install = install
 
-module.exports = Components
+export default Components

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
    'sun': {
         'zh':'日',
         'en':'Su'
