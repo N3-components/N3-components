@@ -1,4 +1,4 @@
-module.exports = {
+export default {
    'click': {
         'zh':'点击上传',
         'en':'Upload'

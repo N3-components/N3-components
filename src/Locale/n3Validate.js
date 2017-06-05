@@ -1,4 +1,4 @@
-module.exports = {
+export default {
    'required': {
         'zh':'不能为空',
         'en':'Can not be empty'
