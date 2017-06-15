@@ -55,6 +55,78 @@
 </n3-carousel>
 ```
 
+<div class="bs-example">
+  <n3-carousel>
+  <n3-slide v-for="item in list">
+    <img class="slide-img" :src="item.img">
+    <div class="carousel-caption">
+      <h3>{{item.title}}</h3>
+      <p>{{item.content}}</p>
+    </div>
+  </n3-slide>
+  </n3-carousel>
+</div>
+
+
+```html
+<n3-carousel>
+  <n3-slide v-for="item in list">
+    <img class="slide-img" :src="item.img">
+    <div class="carousel-caption">
+      <h3>{{item.title}}</h3>
+      <p>{{item.content}}</p>
+    </div>
+  </n3-slide>
+</n3-carousel>
+```
+
+```javascript
+const list = [
+  {
+    id: "7",
+    title: "TEST0",
+    img: "http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg",
+    create_at: "2017-05-05"
+  },
+  {
+    id: "8",
+    title: "TEST1",
+    img: "http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg",
+    create_at: "2017-05-05"
+  },
+  {
+    id: "7",
+    title: "TEST2",
+    img: "http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg",
+    create_at: "2017-05-05"
+  },
+  {
+    id: "8",
+    title: "TEST3",
+    img: "http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg",
+    create_at: "2017-05-05"
+  }
+]
+
+export default {
+  data () {
+    return {
+      list: []
+    }
+  },
+  methods: {
+    updateList () {
+      setTimeout(() => {
+        this.list.push.apply(this.list, list)
+      })
+    }
+  },
+  mounted () {
+    this.updateList()
+  }
+}
+```
+
 ### Params
 
 | name | type | default | description |
@@ -65,6 +137,53 @@
 
 </div>
 </template>
+
+<script>
+  const list = [
+    {
+      id: "7",
+      title: "TEST0",
+      img: "http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg",
+      create_at: "2017-05-05"
+    },
+    {
+      id: "8",
+      title: "TEST1",
+      img: "http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg",
+      create_at: "2017-05-05"
+    },
+    {
+      id: "7",
+      title: "TEST2",
+      img: "http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg",
+      create_at: "2017-05-05"
+    },
+    {
+      id: "8",
+      title: "TEST3",
+      img: "http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg",
+      create_at: "2017-05-05"
+    }
+  ]
+
+  export default {
+    data () {
+      return {
+        list: []
+      }
+    },
+    methods: {
+      updateList () {
+        setTimeout(() => {
+          this.list.push.apply(this.list, list)
+        })
+      }
+    },
+    mounted () {
+      this.updateList()
+    }
+  }
+</script>
 
 <style scoped>
 .slide-img{
