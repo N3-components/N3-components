@@ -1,6 +1,6 @@
 {
   "name": "N3-components",
-  "version": "2.2.5",
+  "version": "2.3.1",
   "description": "N3 built with Vue.js",
   "main": "dist/N3Components.min.js",
   "homepage": "https://n3-components.github.io/N3-components/index.html",
@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "velocity-animate": "^1.2.3",
-    "vue-focus": "^2.1.0"
+    "vue-focus": "^2.1.0",
+    "vue-template-compiler": "^2.3.4"
   },
   "files": [
     "LICENSE",
@@ -61,10 +62,10 @@
     "style-loader": "^0.13.0",
     "url-loader": "~0.5.7",
     "validate-commit-msg": "^2.8.2",
-    "vue": "^2.1.6",
+    "vue": "^2.3.6",
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.0.0",
-    "vue-loader": "^8.0.0",
+    "vue-loader": "^10.0.0",
     "vue-markdown-loader": "^0.6.2",
     "vue-style-loader": "^2.0.4",
     "webpack": "^1.12.2",
@@ -80,7 +81,7 @@
   "scripts": {
     "dev": "webpack --watch & npm run docs",
     "docs": "browser-sync start --server --files ./docs --startPath ./docs",
-    "build": "webpack --progress --hide-modules --config  webpack.build.min.js && webpack --progress --hide-modules --config  webpack.build.js",
+    "build": "webpack --progress --hide-modules --config webpack.build.min.js && webpack --progress --hide-modules --config webpack.build.js",
     "lint": "eslint --ext .js,.vue src || exit 0"
   },
   "author": "zhangking",
