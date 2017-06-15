@@ -55,17 +55,14 @@ CDN
 
 ```javascript
 import Vue from 'vue'
-
-// default css style
 import N3Components from 'N3-components'
 
-// ant design css style
-import N3Components from 'N3-components/dist/blue.min.js' 
+// install N3
+Vue.use(N3Components)
 
-N3Components.install(Vue)
 // for English  (default chinese)
-// N3Components.install(Vue, 'en') 
 // version 2.2.0 or later
+Vue.use(N3Components, 'en')
 ```
 
 也可以在需要的时候引入该组件，示例代码如下：
