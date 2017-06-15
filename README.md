@@ -55,14 +55,14 @@ You can install components for your global environment.
 
 ```javascript
 import Vue from 'vue'
-
-// default css style
 import N3Components from 'N3-components'
 
-N3Components.install(Vue)
+// install N3
+Vue.use(N3Components)
+
 // for English  (default chinese)
-// N3Components.install(Vue, 'en') 
 // version 2.2.0 or later
+Vue.use(N3Components, 'en')
 ```
 
 You can also import single component when needed.

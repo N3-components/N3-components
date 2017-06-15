@@ -46,3 +46,7 @@ v2.x.x
 ### v2.2.5
 
 + module.exports -> export dafault
+
+### v2.3.1
+
++ Add template compiler
