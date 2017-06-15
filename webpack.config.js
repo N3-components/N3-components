@@ -16,7 +16,7 @@ module.exports = {
     extensions: ['', '.js', '.vue', '.css', '.jsx'],
     root: path.resolve('./'),
     alias: {
-      vue: 'vue/dist/vue.js',
+      vue$: 'vue/dist/vue.common.js',
       src: __dirname + '/src'
     }
   },

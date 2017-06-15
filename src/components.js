@@ -130,7 +130,8 @@ const Components = {
   n3CollapseTransition
 }
 
-const install = function (Vue,locale) {
+const install = function (Vue, locale) {
+  console.log(locale)
   for (let i in Components) {
     Vue.component(i, Components[i])
   }

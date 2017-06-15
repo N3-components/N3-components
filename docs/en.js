@@ -3,8 +3,7 @@ import headerDocs from './example_en/headerDocs'
 import Vue from 'vue'
 import N3Components from '../src/index.js'
 
- N3Components.install(Vue,'en')
-
+Vue.use(N3Components, 'en')
 Vue.config.debug = true
 
 new Vue({
