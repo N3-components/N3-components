@@ -103,3 +103,8 @@ import {n3Alert} from N3Components
 ---------
 
 [Change Log](https://github.com/N3-components/N3-components/blob/dev/log.md)
+
+License
+------------
+
+MIT
