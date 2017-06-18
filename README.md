@@ -103,3 +103,9 @@ Change logo
 --------
 
 [Change Log](https://github.com/N3-components/N3-components/blob/dev/log.md)
+
+
+License
+------------
+
+MIT
