@@ -4,16 +4,21 @@ const n3Toast = Vue.extend(require('./n3Toast'))
 export default function (obj) {
   const domNode = document.createElement('div')
   document.body.appendChild(domNode)
-  let instance = new n3Toast({
-    el: domNode
-  })
 
-  instance.placement = obj.placement || 'center'
-  instance.type = obj.type || 'default'
-  instance.closeOnClick = obj.closeOnClick
-  instance.duration = obj.duration === undefined ? 3000 : obj.duration
-  instance.width = obj.width
-  instance.text = obj.text
+  const options = {
+    el: domNode,
+    propsData: {},
+  };
+
+  const allowedProps = ['text', 'placement', 'type', 'duration', 'closeOnClick'];
+
+  allowedProps.forEach((prop) => {
+    if (Object.keys(obj).includes(prop)) {
+      options.propsData[prop] = obj[prop];
+    }
+  });
+
+  const instance = new n3Toast(options);
 
   instance.show = true
 

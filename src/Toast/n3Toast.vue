@@ -1,12 +1,12 @@
 <template>
   <transition name="fade">
-  	<div 
+    <div
       ref="dom"
       :class="classObj"
-  		@click="handleClick"
-  		v-if="show">
-  		<h5 v-text="text"></h5>
-  	</div>
+      @click="handleClick"
+      v-if="show">
+      <h5 v-text="text"></h5>
+    </div>
   </transition>
 </template>
 
@@ -14,17 +14,33 @@
 export default {
   name: 'n3Toast',
   props: {
-    top: {
-      type: Boolean,
-      default: false
-    },
     placement: {
       type: String,
-      default: 'center'
+      default: 'center',
+      validator(v) {
+        return [
+          'bottom-right',
+          'top',
+          'top-right',
+          'top-left',
+          'bottom',
+          'bottom-left',
+        ].includes(v);
+      },
     },
     type: {
       type: String,
-      default: 'default'
+      default: 'default',
+      validator(v) {
+        return [
+          'default',
+          'success',
+          'primary',
+          'info',
+          'warning',
+          'danger',
+        ].includes(v);
+      },
     },
     duration: {
       type: Number,
@@ -35,10 +51,8 @@ export default {
       default: true
     },
     text: {
-      type: String
-    },
-    width: {
-      type: String
+      type: String,
+      required: true
     },
     prefixCls: {
       type: String,
@@ -48,7 +62,6 @@ export default {
 
   data () {
     return {
-      setT: '',
       show: false
     }
   },
@@ -71,30 +84,6 @@ export default {
       if (this.closeOnClick) {
         this.show = false
       }
-    }
-  },
-
-  watch: {
-    show: {
-      handler (val, newVal) {
-        this.setT = window.clearTimeout(this.setT)
-        if (val) {
-          this.$nextTick(function () {
-            if (this.placement === 'top' || this.placement === 'bottom') {
-              this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px'
-            } else if (this.placement === 'center') {
-              this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px'
-              this.$refs.dom.style.marginTop = -1 * this.$refs.dom.offsetHeight / 2 + 'px'
-            }
-          })
-        }
-      /* if (val && this.duration) {
-        this.setT = window.setTimeout(() => {
-          self.show = false
-        }, this.duration)
-      } */
-      },
-      immediate: true
     }
   }
 }
