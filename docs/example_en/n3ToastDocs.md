@@ -30,8 +30,9 @@ export default {
 
 | name | type | default | description |
 | --- | --- | --- | --- |
+| text | `String` | - | text to show on toast |
 | placement | `String`  one of  `top`, `top-right`,`top-left`, `bottom`,`bottom-left`, `bottom-right` | `center`.| placement |
-| type | `String` | `default` | color |
+| type | `String` one of  `default`, `primary`, `success`, `info`, `warning`, `danger` | `default` | color |
 | duration | `Number` | `3000` | duration setting ,you can set it as `0` to prevent Alert to be closed |
 | closeOnClick | `Boolean` | `true` | it will hide when click |
 

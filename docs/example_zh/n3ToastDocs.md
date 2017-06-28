@@ -30,8 +30,9 @@ export default {
 
 | 参数名 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
+| text | `String` | - |文字显示 |
 | placement | `String` | `String`. 如: `top`, `top-right`,`top-left`, `bottom`,`bottom-left`, `bottom-right`默认在页面中间 | 位置 |
-| type | `String` | default | 颜色 |
+| type | `String`. 如: `default`, `primary`, `success`, `info`, `warning`, `danger` | `default` | 颜色 |
 | duration | `Number` | `3000` | `0`为不消失 |
 | closeOnClick | `Boolean` | `true` | 点击消失 |
 
