@@ -9,7 +9,7 @@ N3-components - Powerful Vue Library.
 
 N3 components library is built with Vue.js, is a powerful library for frontend or full-stack engineers to build web pages quickly.
 
-[Home Page](https://n3-components.github.io/N3-components/) | [中文说明](https://github.com/N3-components/N3-components/blob/dev/README-zh.md) | [Documents](https://n3-components.github.io/N3-components/)
+[Home Page](https://n3-components.github.io/N3-components/) | [中文说明](https://github.com/N3-components/N3-components/blob/master/README-zh.md) | [Documents](https://n3-components.github.io/N3-components/)
 
 Introduction
 ------------
@@ -18,7 +18,7 @@ Introduction
 
 N3 components applys oneself to structure a great ecological circle of developers using Vue.js. Supporting as follows:
 
-* More than 60 components. [See Here](https://github.com/N3-components/N3-components/tree/dev/src)
+* More than 60 components. [See Here](https://github.com/N3-components/N3-components/tree/master/src)
 
 * Personality Of Style.
 
@@ -97,12 +97,12 @@ Discussing
 Contribute
 ---------
 
-[Contribute](https://github.com/N3-components/N3-components/blob/dev/contribute.md)
+[Contribute](https://github.com/N3-components/N3-components/blob/master/contribute.md)
 
-Change logo
+Change log
 --------
 
-[Change Log](https://github.com/N3-components/N3-components/blob/dev/log.md)
+[Change Log](https://github.com/N3-components/N3-components/blob/master/log.md)
 
 
 License
