@@ -5,6 +5,7 @@ import n3Uploader from './n3Uploader'
 import n3Select from './n3Select'
 import n3DataTable from './n3DataTable'
 import n3Page from './n3Page'
+import n3Modal from './n3Modal'
 import n3Validate from './n3Validate'
 
 export default {
@@ -15,5 +16,6 @@ export default {
     n3Select,
     n3DataTable,
     n3Page,
+    n3Modal,
     n3Validate
 }

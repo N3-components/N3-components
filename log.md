@@ -50,3 +50,7 @@ v2.x.x
 ### v2.3.1
 
 + Add template compiler
+
+### v2.3.2
+
++ fix modal i18n
