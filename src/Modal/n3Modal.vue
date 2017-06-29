@@ -16,8 +16,8 @@
       
         <slot name="footer">
           <div :class="`${prefixCls}-modal-footer`">
-            <n3-button  @click.native="close">取消</n3-button>
-            <n3-button type="primary" @click.native="confirm">确定</n3-button>
+            <n3-button  @click.native="close">{{getL('cancel')}}</n3-button>
+            <n3-button type="primary" @click.native="confirm">{{getL('confirm')}}</n3-button>
           </div>
         </slot>
       </div>
@@ -30,9 +30,11 @@ import getScrollBarWidth from '../utils/getScrollBarWidth'
 import EventListener from '../utils/EventListener'
 import n3Button from '../Button/n3Button'
 import element from '../utils/element'
+import localeMixin from '../Mixin/localeMixin'
 
 export default {
   name: 'n3Modal',
+  mixins: [localeMixin('n3Modal')],
   props: {
     title: {
       type: String,

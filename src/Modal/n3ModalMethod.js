@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Modal from './n3Modal.vue'
+import localeMixin from '../Mixin/localeMixin'
 
 const $body = document.querySelector('body')
 
@@ -93,6 +94,7 @@ const alert = (options) => {
   const {title, message, effect, type, width, onConfirm, onHide, onShow} = options
   const alert = new Vue({
     el: createNode(),
+    mixins: [localeMixin('n3Modal')],
     data () {
       return {
         show: false
@@ -115,7 +117,7 @@ const alert = (options) => {
       </div>
       <div slot="header" v-if="${!title}"></div>
       <div slot="footer" class="n3-modal-footer">
-        <n3-button @click.native="handleConfirm">确定</n3-button>
+        <n3-button @click.native="handleConfirm">{{getL('confirm')}}</n3-button>
       </div>
     </Modal>`,
     mounted () {
