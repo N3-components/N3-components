@@ -8,15 +8,15 @@ export default function (obj) {
   const options = {
     el: domNode,
     propsData: {},
-  };
+  }
 
-  const allowedProps = ['text', 'placement', 'type', 'duration', 'closeOnClick'];
+  const allowedProps = ['text', 'placement', 'type', 'duration', 'closeOnClick']
 
   allowedProps.forEach((prop) => {
     if (Object.keys(obj).includes(prop)) {
-      options.propsData[prop] = obj[prop];
+      options.propsData[prop] = obj[prop]
     }
-  });
+  })
 
   const instance = new n3Toast(options);
 
