@@ -85,6 +85,31 @@ export default {
         this.show = false
       }
     }
+  },
+
+  watch: {
+    show: {
+      handler (val, newVal) {
+        this.setT = window.clearTimeout(this.setT)
+        if (val) {
+          this.$nextTick(() => {
+            // recompute position
+            if (this.placement === 'top' || this.placement === 'bottom') {
+              this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px'
+            } else if (this.placement === 'center') {
+              this.$refs.dom.style.marginLeft = -1 * this.$refs.dom.offsetWidth / 2 + 'px'
+              this.$refs.dom.style.marginTop = -1 * this.$refs.dom.offsetHeight / 2 + 'px'
+            }
+          })
+        }
+      /* if (val && this.duration) {
+        this.setT = window.setTimeout(() => {
+          self.show = false
+        }, this.duration)
+      } */
+      },
+      immediate: true
+    }
   }
 }
 </script>
