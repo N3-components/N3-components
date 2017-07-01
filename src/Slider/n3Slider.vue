@@ -205,78 +205,97 @@ export default {
     },
     startDrag (bar, maxBar, rangeSlider) {
       var self = this
-
-      if (!self.disabled) {
-        element.removeClass(rangeSlider, this.prefixCls + '-slider-disabled')
-        this._mousedownEvent = EventListener.listen(rangeSlider, 'mousedown', (event) => {
-          self.flag = true
-          if (!event) {
-            event = window.event
-            bar.onselectstart = function () {
-              return false
-            }
+      const dragStartHandler = event => {
+        self.flag = true
+        if (!event) {
+          event = window.event
+          bar.onselectstart = function () {
+            return false
           }
-          var e = event || window.event
-          var mousedownPositionPercent
+        }
 
+        var e = event || window.event
+        var mousedownPositionPercent
+
+        e.changedTouches && e.preventDefault()
+        const clientX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX
+        const clientY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY
+        
+        if (self.orientation === 'horizontal') {
+          mousedownPositionPercent = self.setRange(clientX - rangeSlider.getBoundingClientRect().left, rangeSlider.offsetWidth) * 100 / rangeSlider.offsetWidth
+        } else if (self.orientation === 'vertical') {
+          mousedownPositionPercent = self.setRange(clientY - rangeSlider.getBoundingClientRect().top, rangeSlider.offsetHeight) * 100 / rangeSlider.offsetHeight
+        }
+        var value = self.setStep(mousedownPositionPercent * (self.max - self.min) / 100 + self.min)
+
+        if (value * 2 > (self.tempValue[0] + self.tempValue[1])) {
+          if (self.tempValue[1] > self.tempValue[0]) {
+            self.tempValue[1] = value
+            self.btnValue = self.tempValue[0]
+            self.tempFlag = 2
+          } else {
+            self.tempValue[0] = value
+            self.btnValue = self.tempValue[1]
+            self.tempFlag = 1
+          }
+        } else {
+          if (self.tempValue[1] > self.tempValue[0]) {
+            self.tempValue[0] = value
+            self.btnValue = self.tempValue[1]
+            self.tempFlag = 1
+          } else {
+            self.tempValue[1] = value
+            self.btnValue = self.tempValue[0]
+            self.tempFlag = 2
+          }
+        }
+        self.eValue = value
+      }
+
+      const dragHandler = event => {
+        var e = event || window.event
+
+        const clientX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX
+        const clientY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY
+
+        if (self.flag) {
+          var mousedownPositionPercent
           if (self.orientation === 'horizontal') {
-            mousedownPositionPercent = self.setRange(e.clientX - rangeSlider.getBoundingClientRect().left, rangeSlider.offsetWidth) * 100 / rangeSlider.offsetWidth
+            mousedownPositionPercent = self.setRange(clientX - rangeSlider.getBoundingClientRect().left, rangeSlider.offsetWidth) * 100 / rangeSlider.offsetWidth
           } else if (self.orientation === 'vertical') {
-            mousedownPositionPercent = self.setRange(e.clientY - rangeSlider.getBoundingClientRect().top, rangeSlider.offsetHeight) * 100 / rangeSlider.offsetHeight
+            mousedownPositionPercent = self.setRange(clientY - rangeSlider.getBoundingClientRect().top, rangeSlider.offsetHeight) * 100 / rangeSlider.offsetHeight
           }
           var value = self.setStep(mousedownPositionPercent * (self.max - self.min) / 100 + self.min)
 
-          if (value * 2 > (self.tempValue[0] + self.tempValue[1])) {
-            if (self.tempValue[1] > self.tempValue[0]) {
-              self.tempValue[1] = value
-              self.btnValue = self.tempValue[0]
-              self.tempFlag = 2
-            } else {
-              self.tempValue[0] = value
-              self.btnValue = self.tempValue[1]
-              self.tempFlag = 1
-            }
-          } else {
-            if (self.tempValue[1] > self.tempValue[0]) {
-              self.tempValue[0] = value
-              self.btnValue = self.tempValue[1]
-              self.tempFlag = 1
-            } else {
-              self.tempValue[1] = value
-              self.btnValue = self.tempValue[0]
-              self.tempFlag = 2
-            }
+          if (self.tempValue[0] > value && self.tempValue[1] > value) {
+            self.tempFlag = 1
           }
+          if (self.tempValue[0] < value && self.tempValue[1] < value) {
+            self.tempFlag = 2
+          }
+          self.tempValue[(self.tempFlag - 1)] = value
+          self.tempValue[(self.tempFlag === 1 ? 1 : 0)] = self.btnValue
           self.eValue = value
-        })
+        }
+      }
 
-        this._mousemoveEvent = EventListener.listen(document, 'mousemove', (event) => {
-          var e = event || window.event
-          if (self.flag) {
-            var mousedownPositionPercent
-            if (self.orientation === 'horizontal') {
-              mousedownPositionPercent = self.setRange(e.clientX - rangeSlider.getBoundingClientRect().left, rangeSlider.offsetWidth) * 100 / rangeSlider.offsetWidth
-            } else if (self.orientation === 'vertical') {
-              mousedownPositionPercent = self.setRange(e.clientY - rangeSlider.getBoundingClientRect().top, rangeSlider.offsetHeight) * 100 / rangeSlider.offsetHeight
-            }
-            var value = self.setStep(mousedownPositionPercent * (self.max - self.min) / 100 + self.min)
+      const dragEndHandler = e => {
+        self.flag = false
+        self.tempFlag = 0
+      }
 
-            if (self.tempValue[0] > value && self.tempValue[1] > value) {
-              self.tempFlag = 1
-            }
-            if (self.tempValue[0] < value && self.tempValue[1] < value) {
-              self.tempFlag = 2
-            }
-            self.tempValue[(self.tempFlag - 1)] = value
-            self.tempValue[(self.tempFlag === 1 ? 1 : 0)] = self.btnValue
-            self.eValue = value
-          }
-        })
+      if (!self.disabled) {
+        element.removeClass(rangeSlider, this.prefixCls + '-slider-disabled')
 
-        this._mouseupEvent = EventListener.listen(document, 'mouseup', (e) => {
-          self.flag = false
-          self.tempFlag = 0
-        })
+        // PC
+        this._mousedownEvent = EventListener.listen(rangeSlider, 'mousedown', dragStartHandler)
+        this._mousemoveEvent = EventListener.listen(document, 'mousemove', dragHandler)
+        this._mouseupEvent = EventListener.listen(document, 'mouseup', dragEndHandler)
+
+        // Mobile
+        this._mousedownEvent = EventListener.listen(rangeSlider, 'touchstart', dragStartHandler)
+        this._mousemoveEvent = EventListener.listen(document, 'touchmove', dragHandler)
+        this._mouseupEvent = EventListener.listen(document, 'touchend', dragEndHandler)
       } else {
         element.addClass(rangeSlider, this.prefixCls + '-slider-disabled')
       }
