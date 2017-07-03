@@ -147,6 +147,9 @@ export default {
     menuWidth: {
       type: String
     },
+    matchCase: {
+      type: Boolean
+    },
     format: {
       type: Function,
       default (item) {
@@ -296,7 +299,15 @@ export default {
       if (search === '') return value
       var ret = []
       for (var i = 0, l = value.length; i < l; i++) {
-        if (value[i] && String(value[i].label).replace(/<.*?>/g, '').indexOf(search) > -1) {
+        var v = value[i] && String(value[i].label).replace(/<.*?>/g, '')
+        var s = search
+
+        if (this.matchCase) {
+          v = v.toLocaleLowerCase()
+          s = s.toLocaleLowerCase()
+        }
+
+        if (v !='' && v.indexOf(s) > -1) {
           ret.push(value[i])
         }
       }

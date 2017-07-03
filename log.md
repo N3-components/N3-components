@@ -54,3 +54,11 @@ v2.x.x
 ### v2.3.2
 
 + fix modal i18n
+
+### v2.4.0
+
++ separate css file 
++ support to customize theme color 
++ add case-insensitive control prop `match-case` for select component 
++ ssr supprt
++ mobile support for slider component

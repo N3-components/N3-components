@@ -164,6 +164,8 @@ export default {
 | disabled | `Boolean` | `false` |  |
 | readonly | `Boolean` | `false` |  |
 | cancelled | `Boolean` |  | 单选时，是否可撤销 |
+| match-case | `Boolean` |  | 搜索过滤，大小写敏感控制 |
+
 
 
 ### 事件
