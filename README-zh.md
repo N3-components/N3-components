@@ -56,6 +56,7 @@ CDN
 ```javascript
 import Vue from 'vue'
 import N3Components from 'N3-components'
+import 'N3-components/dist/style.css'
 
 // install N3
 Vue.use(N3Components)
@@ -77,6 +78,57 @@ import {n3Alert} from N3Components
 //
 
 ```
+
+主题定制
+
+```
+// default 
+import 'N3-components/src/style/theme.less' 
+import 'N3-components/src/style/common.less' 
+
+// theme customization
+import 'your-theme.less' 
+import 'N3-components/src/style/common.less' 
+
+```
+
+theme.less
+
+```
+/*-------color ------*/
+
+/*base color*/
+@whiteColor: #fff;
+@blackColor: #000;
+@lightBlackColor: #333;
+@grayColor: #ccc;
+@weightGrayColor: #999;
+@lightGrayColor: #eee; 
+@lightColor: #f9f9f9; 
+
+/*font color*/
+@fontColor: #555;
+
+/*theme color*/
+@primaryColor: #41cac0;
+@primaryColorhover: #39b2a9;
+@hoverColor:rgba(65, 202, 192, 0.05);
+
+/*extend color*/
+@successColor: #19d567;
+@successColorhover: #30d073;
+
+@infoColor: #2db7f5;
+@infoColorhover: #43bcf3;
+
+@dangerColor: #f50;
+@dangerColorhover: #f9702b;
+
+@warningColor: #fa0;
+@warningColorhover: #f5b73b;
+
+```
+
 
 依赖的项目
 ------------

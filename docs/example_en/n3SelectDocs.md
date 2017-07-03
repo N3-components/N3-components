@@ -28,7 +28,7 @@ Select data : {{single}}
 Select data : {{multiple.join(', ')}}
     </pre>
   </p>
-  <n3-select multiple v-model="multiple" search >
+  <n3-select  multiple v-model="multiple" search >
     <n3-option value="Apple">Apple</n3-option>
     <n3-option value="Banana">Banana</n3-option>
     <n3-option value="Cherry">Cherry</n3-option>
@@ -160,6 +160,7 @@ export default {
 | disabled | `Boolean` | `false` | disabled  |
 | readonly | `Boolean` | `false` | readonly  |
 | cancelled | `Boolean` |  | Whether it can be cancelled when you are radio |
+| match-case | `Boolean` | false | provide case-insensitive search |
 
 ### Events
 

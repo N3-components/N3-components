@@ -1,6 +1,8 @@
 var webpack = require('webpack')
 var autoprefixer = require('autoprefixer')
 var path = require('path')
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var cssnano = require('cssnano');
 
 module.exports = {
   entry: {
@@ -38,7 +40,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        loader: 'style-loader!css-loader!postcss!less-loader'
+        loader: ExtractTextPlugin.extract('style', 'css!postcss!less')
       },
       {
         test: /\.css$/,
@@ -50,8 +52,12 @@ module.exports = {
     presets: ['es2015','stage-0'],
     plugins: ['transform-vue-jsx']
   },
-  postcss: [autoprefixer],
-  devtool: 'source-map'
+  postcss: [cssnano,autoprefixer],
+  devtool: 'source-map',
+  plugins:[
+    new ExtractTextPlugin('style.css', {
+      allChunks: true
+    })]
 }
 
 if (process.env.NODE_ENV === 'production') {
