@@ -19,6 +19,12 @@
 </n3-radio-group>
 ```
 
+```js
+{
+  radioValue: 'middle'
+}
+```
+
 <n3-radio-group v-model="radioValue" type="primary">
   <n3-radio-btn label="left" disabled>Left</n3-radio-btn>
   <n3-radio-btn label="middle">Middle</n3-radio-btn>
@@ -33,8 +39,14 @@
 </n3-radio-group>
 ```
 
+```js
+{
+  radioValue: 'middle'
+}
+```
 
 ### group 参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | options          | `Array`     |    -        |     选项     |
@@ -47,6 +59,7 @@
 | change | 值变化 |(currentValue) |
 
 ### radio 参数
+
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | disabled          | `Boolean`     |    `false`       |     禁用     |

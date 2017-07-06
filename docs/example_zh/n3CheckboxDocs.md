@@ -25,8 +25,11 @@
   <n3-checkbox-btn label="right">Right</n3-checkbox-btn>
 </n3-checkbox-group>
 ```
+
 ``` js
-checkboxValue: ['middle']
+{
+  checkboxValue: ['middle']
+}
 ```
 
 <n3-checkbox-group v-model="checkboxValue">
@@ -42,8 +45,11 @@ checkboxValue: ['middle']
   <n3-checkbox label="right">Right</n3-checkbox>
 </n3-checkbox-group>
 ```
+
 ``` js
-checkboxValue: ['middle']
+{
+  checkboxValue: ['middle']
+}
 ```
 
 ### Group 参数
