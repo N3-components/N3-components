@@ -54,3 +54,7 @@ v2.x.x
 ### v2.3.2
 
 + fix modal i18n
+
+### v2.3.3
+
++ fix model for checkbox and radio
