@@ -14,30 +14,36 @@
 
 <n3-checkbox-group v-model="checkboxValue" >
   <n3-checkbox-btn label="left" disabled>Left</n3-checkbox-btn>
-  <n3-checkbox-btn label="middle" checked>Middle</n3-checkbox-btn>
+  <n3-checkbox-btn label="middle">Middle</n3-checkbox-btn>
   <n3-checkbox-btn label="right">Right</n3-checkbox-btn>
 </n3-checkbox-group>
 
 ```html
 <n3-checkbox-group v-model="checkboxValue" >
   <n3-checkbox-btn label="left" disabled>Left</n3-checkbox-btn>
-  <n3-checkbox-btn label="middle" checked>Middle</n3-checkbox-btn>
+  <n3-checkbox-btn label="middle">Middle</n3-checkbox-btn>
   <n3-checkbox-btn label="right">Right</n3-checkbox-btn>
 </n3-checkbox-group>
+```
+``` js
+checkboxValue: ['middle']
 ```
 
 <n3-checkbox-group v-model="checkboxValue">
   <n3-checkbox label="left" disabled>Left</n3-checkbox>
-  <n3-checkbox label="middle" checked>Middle</n3-checkbox>
+  <n3-checkbox label="middle">Middle</n3-checkbox>
   <n3-checkbox label="right">Right</n3-checkbox>
 </n3-checkbox-group>
 
 ```html
 <n3-checkbox-group v-model="checkboxValue">
   <n3-checkbox label="left" disabled>Left</n3-checkbox>
-  <n3-checkbox label="middle" checked>Middle</n3-checkbox>
+  <n3-checkbox label="middle">Middle</n3-checkbox>
   <n3-checkbox label="right">Right</n3-checkbox>
 </n3-checkbox-group>
+```
+``` js
+checkboxValue: ['middle']
 ```
 
 ### Group 参数
@@ -58,7 +64,6 @@
 | 参数          | 类型            |   默认值         |   说明   |
 |-------------  |---------------- |----------------  |-------- |
 | disabled          | `Boolean`     |    false       |     禁用     |
-| checked          | `Boolean`     |    false       |   选中     |
 
 ### Checkbox Events
 
@@ -77,7 +82,7 @@ export default {
   data () {
     return {
       single: false,
-      checkboxValue: []
+      checkboxValue: ['middle']
     }
   }
 }
