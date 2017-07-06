@@ -38,7 +38,7 @@ export default {
   },
   data () {
     return {
-      currentValue: this.value
+      currentValue: ''
     }
   },
   methods: {
@@ -75,6 +75,7 @@ export default {
   },
 
   mounted () {
+    this.currentValue = this.value
     this.$nextTick(() => {
       this.init()
     })
