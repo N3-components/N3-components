@@ -46,8 +46,8 @@ cnpm install N3-components --save-dev
 CDN
 ------------
 
-js Link：https://unpkg.com/N3-components@version/dist/index.min.js (Notice the version)
-css Link：https://unpkg.com/N3-components@version/dist/index.min.css (Notice the version)
+* js Link：https://unpkg.com/N3-components@version/dist/index.min.js (Notice the version)
+* css Link：https://unpkg.com/N3-components@version/dist/index.min.css (Notice the version)
 
 Quick Start
 ------------

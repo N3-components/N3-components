@@ -46,8 +46,8 @@ cnpm install N3-components --save-dev
 CDN
 ------------
 
-js链接：https://unpkg.com/N3-components@version/dist/index.min.js (注意填写版本号)
-css链接 https://unpkg.com/N3-components@version/dist/index.min.css (注意填写版本号)
+* js链接：https://unpkg.com/N3-components@version/dist/index.min.js (注意填写版本号)
+* css链接 https://unpkg.com/N3-components@version/dist/index.min.css (注意填写版本号)
 
 快速上手
 ------------
