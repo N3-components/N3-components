@@ -10,7 +10,7 @@
   :async="true"
   v-model="a.list" 
   :format="format" 
-  :render="render"
+  :item-render="itemRender"
   :items="items" >
 </n3-multiple-input>
 </div>
@@ -21,7 +21,7 @@
   @inputChange="getResult"
   v-model="a.list" 
   :format="format" 
-  :render="render"
+  :item-render="itemRender"
   :items="items" >
 </n3-multiple-input>
 ```
@@ -31,7 +31,7 @@ methods: {
   focus () {
     console.log(1)
   },
-  render (item) {
+  itemRender (item) {
     return item.formatted_address
   },
   getResult (query) {
@@ -61,7 +61,7 @@ methods: {
 | items          | `Array`     |    `[]`        |     suggestion items，for asyc     |
 | positionMove          | `Boolean`     |    `true`        |     whether the position of cursor can be moved or not     |
 | async          | `Boolean`     |    `false`       |     whether is async or not     |
-| render          | `Function`     |    -       |     render function     |
+| item-render          | `Function`     |    -       |     itemRender function     |
 | add-format          | `Function`     |    -       |     format function to get right data     |
 | dropdown-width          | `String`     |    `220px`       |     width of dropdown      |
 | dropdown-height          | `String`     |    `300px`       |     max height of dropdown      |
@@ -94,7 +94,7 @@ export default {
     focus () {
       console.log(1)
     },
-    render (item) {
+    itemRender (item) {
       return item.formatted_address
     },
     getResult (query) {

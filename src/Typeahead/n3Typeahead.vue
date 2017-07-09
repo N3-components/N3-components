@@ -23,8 +23,8 @@
   <ul :class="`${prefixCls}-dropdown-menu`" :style="{width: dropdownWidth, maxHeight: dropdownHeight}">
     <li v-for="(item,index) in citems" :class="isActive(index)" >
       <a @mousedown.prevent="hit(index)" >
-        <render :context="context || $parent._self" :template="render(item)">
-        </render>
+        <n3-render :context="context || $parent._self" :template="itemRender(item)">
+        </n3-render>
       </a>
     </li> 
   </ul>
@@ -33,7 +33,7 @@
 
 <script>
 import n3Input from '../Input/n3Input'
-import render from '../render'
+import n3Render from '../render'
 import inputMixin from '../Mixin/inputMixin'
 
 export default {
@@ -52,7 +52,7 @@ export default {
     },
     context: {
     },
-    render: {
+    itemRender: {
       type: Function,
       default (item) {
         return item
@@ -140,7 +140,7 @@ export default {
   },
   components: {
     n3Input,
-    render
+    n3Render
   },
   methods: {
     focusInput () {

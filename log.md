@@ -61,3 +61,4 @@ v2.x.x
 + support to customize theme color 
 + add case-insensitive control prop `match-case` for select component 
 + mobile support for slider component
++ typeahead multipleinput props change : `render` -> `itemRender`

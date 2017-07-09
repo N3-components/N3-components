@@ -78,7 +78,7 @@ export default {
       return klass
     }
   },
-
+ 
   methods: {
     handleClick () {
       if (this.closeOnClick) {

@@ -22,6 +22,7 @@ module.exports = {
       src: __dirname + '/src'
     }
   },
+
   module: {
     rules: [
       { test: /\.vue$/, loader: 'vue-loader' },

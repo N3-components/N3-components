@@ -61,7 +61,6 @@ export default {
   },
   watch: {
     activeIndex (newVal, oldVal) {
-      console.log(newVal, oldVal)
       newVal > oldVal ? this.slide('left', newVal, oldVal) : this.slide('right', newVal, oldVal)
     },
 
@@ -91,7 +90,6 @@ export default {
       let prevSelectedEl = this.slider[prev]
       let selectedEl = this.slider[selected]
       let transitionendFn = () => {
-        console.log([...this.slider]);
         [...this.slider].forEach(el => {
           element.setClass(el, this.prefixCls + '-carousel-item')
         })

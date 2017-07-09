@@ -31,7 +31,7 @@
   async
   placeholder="CCCAddress, async via maps.googleapis.com"
   @change="getResult"
-  :render="render"
+  :item-render="itemRender"
   :items="items"
   :add-format="googleCallback">
 </n3-typeahead>
@@ -41,7 +41,7 @@
   async
   placeholder="CCCAddress, async via maps.googleapis.com"
   @change="getResult"
-  :render="render"
+  :item-render="itemRender"
   :items="items"
   :add-format="googleCallback">
 </n3-typeahead>
@@ -56,7 +56,7 @@
   placeholder="Github users, async via api.github.com"
   @change="getGitresults"
   :items="gitItems"
-  :render="rendergit"
+  :item-render="itemRendergit"
   :add-format="githubCallback" >
 </n3-typeahead>
 
@@ -67,7 +67,7 @@
   placeholder="Github users, async via api.github.com"
   @change="getGitresults"
   :items="gitItems"
-  :render="rendergit"
+  :item-render="itemRendergit"
   :add-format="githubCallback" >
 </n3-typeahead>
 ```
@@ -81,7 +81,7 @@
 | limit          | `Number`     |    `8`       |     the limited number of items      |
 | items          | `Array`     |    `[]`        |    suggestion items，for asyc     |
 | async          | `Boolean`     |    `false`       |     whether is async or not     |
-| render          | `Function`     |    -       |     render function     |
+| item-render          | `Function`     |    -       |     itemRender function     |
 | add-format          | `Function`     |    -       |     format function to get right data    |
 | dropdown-width          | `String`     |    `220px`       |     width of dropdown     |
 | dropdown-height          | `String`     |    `300px`       |     max height of dropdown     |
@@ -110,7 +110,7 @@ export default {
     }
   },
   methods: {
-    render (item) {
+    itemRender (item) {
       return item.formatted_address
     },
     getResult (query) {
@@ -131,7 +131,7 @@ export default {
         }
       })
     },
-    rendergit (item) {
+    itemRendergit (item) {
       return `<div><img width="18px" height="18px" src="${item.avatar_url}"/> <span>${item.login}</span></div>`
     },
     googleCallback (item) {

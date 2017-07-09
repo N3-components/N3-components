@@ -19,7 +19,7 @@
               :on-hit="add"
               :match-case="matchCase"
               :limit="limit"
-              :render="render"
+              :itemRender="itemRender"
               :data="data"
               @keydown.delete.native="del" 
               @keydown.left.native="left" 
@@ -53,7 +53,7 @@
         :on-hit="add"
         :match-case="matchCase"
         :limit="limit"
-        :render="render"
+        :itemRender="itemRender"
         :data="data"
         @keydown.delete.native="del" 
         @keydown.left.native="left" 
@@ -135,7 +135,7 @@ export default {
     data: {
       type: Array
     },
-    render: {
+    itemRender: {
       type: Function,
       default (item) {
         return item

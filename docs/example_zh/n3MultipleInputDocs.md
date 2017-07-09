@@ -10,7 +10,7 @@
   :async="true"
   v-model="a.list" 
   :format="format" 
-  :render="render"
+  :item-render="itemRender"
   :items="items" >
 </n3-multiple-input>
 </div>
@@ -21,7 +21,7 @@
   @inputChange="getResult"
   v-model="a.list" 
   :format="format" 
-  :render="render"
+  :item-render="itemRender"
   :items="items" >
 </n3-multiple-input>
 ```
@@ -31,7 +31,7 @@ methods: {
   focus () {
     console.log(1)
   },
-  render (item) {
+  itemRender (item) {
     return item.formatted_address
   },
   getResult (query) {
@@ -61,7 +61,7 @@ methods: {
 | items          | `Array`     |    `[]`        |     列表数组，用于异步请求     |
 | positionMove          | `Boolean`     |    `true`        |     输入框位置是否能控制移动     |
 | async          | `Boolean`     |    `false`       |     异步     |
-| render          | `Function`     |    -       |     渲染函数     |
+| item-render          | `Function`     |    -       |     渲染函数     |
 | add-format          | `Function`     |    -       |     获取需要的值     |
 | dropdown-width          | `String`     |    `220px`       |     下拉宽度     |
 | dropdown-height          | `String`     |    `300px`       |     下拉框最大高度     |
@@ -95,7 +95,7 @@ export default {
     focus () {
       console.log(1)
     },
-    render (item) {
+    itemRender (item) {
       return item.formatted_address
     },
     getResult (query) {
