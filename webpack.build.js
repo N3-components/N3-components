@@ -1,11 +1,12 @@
 var config = require('./webpack.config.js')
+var path = require('path');
 
 config.entry = {
   'N3Components': './src/index.js'
 }
 
 config.output = {
-  path: './dist',
+  path: path.resolve('./','./dist'),
   filename: '[name].js',
   libraryTarget: 'umd'
 }

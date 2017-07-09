@@ -5,21 +5,21 @@
 <div class="bs-docs-section" >
 <div class="bs-example">
   <n3-carousel>
-    <n3-slide>
+    <n3-slide key="1">
       <img class="slide-img" src="http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg">
       <div class="carousel-caption">
         <h3>Slide #1</h3>
         <p>xxxxxxxxxxxx</p>
       </div>
     </n3-slide>
-    <n3-slide>
+    <n3-slide key="2">
       <img class="slide-img" src="http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg">
       <div class="carousel-caption">
         <h3>Slide #2</h3>
         <p>xxxxxxxxxxxx</p>
       </div>
     </n3-slide>
-    <n3-slide>
+    <n3-slide key="3">
       <img class="slide-img" src="http://www.photops.com/Photo/UpPhoto2010/201106/2011060409214653.jpg">
       <div class="carousel-caption">
         <h3>Slide #3</h3>
@@ -57,7 +57,7 @@
 
 <div class="bs-example">
   <n3-carousel>
-  <n3-slide v-for="item in list">
+  <n3-slide v-for="item in list" :key="index">
     <img class="slide-img" :src="item.img">
     <div class="carousel-caption">
       <h3>{{item.title}}</h3>
