@@ -37,7 +37,7 @@ export default {
 
   data () {
     return {
-      currentValue: this.value
+      currentValue: []
     }
   },
 
@@ -57,10 +57,11 @@ export default {
       this.currentValue = val
     },
     currentValue (val) {
-      this.broadcast('n3Checkbox', 'n3@checkboxgroupChange', val)
-      this.broadcast('n3CheckboxBtn', 'n3@checkboxgroupChange', val)
-      this.$emit('input', val)
-      this.$emit('change', val)
+      let value = val || this.value
+      this.broadcast('n3Checkbox', 'n3@checkboxgroupChange', value)
+      this.broadcast('n3CheckboxBtn', 'n3@checkboxgroupChange', value)
+      this.$emit('input', value)
+      this.$emit('change', value)
     }
   },
 
@@ -71,6 +72,7 @@ export default {
   },
 
   mounted () {
+    this.currentValue = this.value
     this.$nextTick(() => {
       this.init()
     })

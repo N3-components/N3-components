@@ -7,7 +7,7 @@ v2.x.x
 
 ### v2.0.5
 
-+ fix n3Uploader vue 1.x 迁移遗留问题： v-for - $index
++ fix n3Uploader vue 1.x bug fix： v-for - $index
 
 ### v2.0.6
 
@@ -54,6 +54,10 @@ v2.x.x
 ### v2.3.2
 
 + fix modal i18n
+
+### v2.3.3
+
++ fix model for checkbox and radio
 
 ### v2.4.0
 
