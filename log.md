@@ -3,28 +3,28 @@ v2.x.x
 
 ### v2.0.0
 
-+ 适配vue 2.x
++ support vue 2.x
 
 ### v2.0.5
 
-+ 修复n3Uploader vue 1.x 迁移遗留问题： v-for - $index
++ fix n3Uploader vue 1.x 迁移遗留问题： v-for - $index
 
 ### v2.0.6
 
-+ 解决n3Aside 抖动问题
++ fix n3Aside bug
 
 ### v2.0.8
 
-+ n3Page 支持 v-model
++ n3Page support for v-model
 
 ### v2.1.0
  
-+ 升级nav组件
-+ 文件目录变化
++ upgrade nav
++ change 
 
 ### v2.2.0
  
-+ 国际化
++ support for i18n
 
 ### v2.2.1
  
@@ -60,5 +60,4 @@ v2.x.x
 + separate css file 
 + support to customize theme color 
 + add case-insensitive control prop `match-case` for select component 
-+ ssr supprt
 + mobile support for slider component

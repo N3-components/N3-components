@@ -46,7 +46,8 @@ cnpm install N3-components --save-dev
 CDN
 ------------
 
-Link：https://unpkg.com/N3-components@version/dist/N3Components.js (Notice the version)
+js Link：https://unpkg.com/N3-components@version/dist/index.min.js (Notice the version)
+css Link：https://unpkg.com/N3-components@version/dist/index.min.css (Notice the version)
 
 Quick Start
 ------------
@@ -82,19 +83,17 @@ theme customization
 
 ```
 // default 
-import 'N3-components/src/style/theme.less' 
-import 'N3-components/src/style/common.less' 
+import 'N3-components/src/style/default.less' 
 
 // theme customization
 import 'your-theme.less' 
-import 'N3-components/src/style/common.less' 
 
 ```
 
-theme.less
+your-theme.less
 
 ```
-/*-------color ------*/
+@import 'N3-components/src/style/common.less' 
 
 /*base color*/
 @whiteColor: #fff;
