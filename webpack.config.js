@@ -3,6 +3,7 @@ var autoprefixer = require('autoprefixer')
 var path = require('path')
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var cssnano = require('cssnano');
+var path = require('path');
 
 module.exports = {
   entry: {
@@ -10,54 +11,57 @@ module.exports = {
     en: ['babel-polyfill', './docs/en.js']
   },
   output: {
-    path: './docs/static',
+    path: path.resolve('./','./docs/static'),
     publicPath: './docs/static/',
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.js', '.vue', '.css', '.jsx'],
-    root: path.resolve('./'),
+    extensions: ['.js', '.vue', '.css', '.jsx'],
     alias: {
       vue$: 'vue/dist/vue.common.js',
       src: __dirname + '/src'
     }
   },
   module: {
-    loaders: [
-      { test: /\.vue$/, loader: 'vue' },
+    rules: [
+      { test: /\.vue$/, loader: 'vue-loader' },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader'
+        use: 'url-loader'
       },
       {
         test: /\.md/,
-        loader: 'vue-markdown-loader'
+        use: 'vue-markdown-loader'
       },
       {
         test: /\.js$/,
         exclude: /node_modules|vue\/src|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
-        loader: 'babel'
+        use: 'babel-loader'
       },
       {
         test: /\.less$/,
-        loader: ExtractTextPlugin.extract('style', 'css!postcss!less')
-      },
-      {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader!postcss'
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use:[
+            'css-loader',
+            {
+              loader:'postcss-loader',
+              options:{
+                plugins:[
+                  require('autoprefixer')(),
+                  require('cssnano')()
+                ]
+              }
+            },
+            'less-loader']
+        })
       }
     ]
   },
-  babel: {
-    presets: ['es2015','stage-0'],
-    plugins: ['transform-vue-jsx']
-  },
-  postcss: [cssnano,autoprefixer],
   devtool: 'source-map',
   plugins:[
-    new ExtractTextPlugin('style.css', {
-      allChunks: true
-    })]
+    new ExtractTextPlugin('style.css')
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
