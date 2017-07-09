@@ -11,54 +11,54 @@
 
 <n3-container>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in newfont"  :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in newfont"  :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
     <br>
   <h4>Web Application Icons</h4>
   <hr></hr>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in webfont" :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in webfont" :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
   <h4>Form Control Icons</h4>
   <hr></hr>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in formfont" :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in formfont" :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
   <br>
   <h4>Currency Icons</h4>
   <hr></hr>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in currencyfont" :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in currencyfont" :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
   <br>
   <h4>Text Edit Icons</h4>
   <hr></hr>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in textfont" :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in textfont" :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
   <br>
   <h4>Directional Icons</h4>
   <hr></hr>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in directionalfont" :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in directionalfont" :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
   <br>
   <h4>Video Player Icons</h4>
   <hr></hr>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in videofont" :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in videofont" :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
   <br>
   <h4>Brand Icons</h4>
   <hr></hr>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in brandfont" :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in brandfont" :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
   <br>
   <h4>Medical Icons</h4>
   <hr></hr>
   <n3-row class="row-ex clearfix">
-    <n3-column v-for="font in medicalfont" :key="index" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
+    <n3-column v-for="font in medicalfont" :key="font" :col="3"><n3-icon :type="font"></n3-icon><span>{{font}}</span></n3-column>
   </n3-row>
 </n3-container>
 </div>

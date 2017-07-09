@@ -1,5 +1,7 @@
 import Vue from 'vue'
-const n3Toast = Vue.extend(require('./n3Toast'))
+import n3ToastComponent from './n3Toast'
+
+const n3Toast = Vue.extend(n3ToastComponent)
 
 export default function (obj) {
   const domNode = document.createElement('div')

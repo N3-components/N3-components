@@ -19,7 +19,6 @@
  		} else {
  			ret = [compile.render.call(this.context, h)]
  		}
- 		
  		return h('div', ret)
  	}
  }

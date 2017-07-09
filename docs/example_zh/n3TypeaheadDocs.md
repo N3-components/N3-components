@@ -31,7 +31,7 @@
   async
   placeholder="CCCAddress, async via maps.googleapis.com"
   @change="getResult"
-  :render="render"
+  :item-render="itemRender"
   :items="items"
   :add-format="googleCallback">
 </n3-typeahead>
@@ -41,7 +41,7 @@
   async
   placeholder="CCCAddress, async via maps.googleapis.com"
   @change="getResult"
-  :render="render"
+  :item-render="itemRender"
   :items="items"
   :add-format="googleCallback">
 </n3-typeahead>
@@ -56,7 +56,7 @@
   placeholder="Github users, async via api.github.com"
   @change="getGitresults"
   :items="gitItems"
-  :render="rendergit"
+  :item-render="itemRendergit"
   :add-format="githubCallback" >
 </n3-typeahead>
 
@@ -67,7 +67,7 @@
   placeholder="Github users, async via api.github.com"
   @change="getGitresults"
   :items="gitItems"
-  :render="rendergit"
+  :item-render="itemRendergit"
   :add-format="githubCallback" >
 </n3-typeahead>
 ```
@@ -80,7 +80,7 @@
 | limit          | `Number`     |    `8`       |     显示的条数     |
 | items          | `Array`     |    `[]`        |     列表数组，用于异步请求     |
 | async          | `Boolean`     |    `false`       |     异步     |
-| render          | `Function`     |    -       |     渲染函数     |
+| item-render          | `Function`     |    -       |     渲染函数     |
 | add-format          | `Function`     |    -       |     获取需要的值     |
 | dropdown-width          | `String`     |    `220px`       |     下拉宽度     |
 | dropdown-height          | `String`     |    `300px`       |     下拉框最大高度     |
@@ -109,7 +109,7 @@ export default {
     }
   },
   methods: {
-    render (item) {
+    itemRender (item) {
       return item.formatted_address
     },
     getResult (query) {
@@ -130,7 +130,7 @@ export default {
         }
       })
     },
-    rendergit (item) {
+    itemRendergit (item) {
       return `<div><img width="18px" height="18px" src="${item.avatar_url}"/> <span>${item.login}</span></div>`
     },
     googleCallback (item) {

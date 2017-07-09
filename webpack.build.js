@@ -13,4 +13,13 @@ config.output = {
   libraryTarget: 'umd'
 }
 
+config.externals = [{
+    vue: {
+        root: 'Vue',
+        commonjs2: 'vue',
+        commonjs: 'vue',
+        amd: 'vue'
+    }
+}]
+
 module.exports = config

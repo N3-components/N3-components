@@ -131,7 +131,6 @@ const Components = {
 }
 
 const install = function (Vue, locale) {
-  console.log(locale)
   for (let i in Components) {
     Vue.component(i, Components[i])
   }
