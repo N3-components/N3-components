@@ -19695,7 +19695,7 @@ exports.default = {
 
   data: function data() {
     return {
-      currentValue: this.value
+      currentValue: []
     };
   },
 
@@ -19716,10 +19716,11 @@ exports.default = {
       this.currentValue = val;
     },
     currentValue: function currentValue(val) {
-      this.broadcast('n3Checkbox', 'n3@checkboxgroupChange', val);
-      this.broadcast('n3CheckboxBtn', 'n3@checkboxgroupChange', val);
-      this.$emit('input', val);
-      this.$emit('change', val);
+      var value = val || this.value;
+      this.broadcast('n3Checkbox', 'n3@checkboxgroupChange', value);
+      this.broadcast('n3CheckboxBtn', 'n3@checkboxgroupChange', value);
+      this.$emit('input', value);
+      this.$emit('change', value);
     }
   },
 
@@ -19733,6 +19734,7 @@ exports.default = {
   mounted: function mounted() {
     var _this2 = this;
 
+    this.currentValue = this.value;
     this.$nextTick(function () {
       _this2.init();
     });
@@ -24532,7 +24534,7 @@ exports.default = {
   },
   data: function data() {
     return {
-      currentValue: this.value
+      currentValue: ''
     };
   },
 
@@ -24573,6 +24575,7 @@ exports.default = {
   mounted: function mounted() {
     var _this2 = this;
 
+    this.currentValue = this.value;
     this.$nextTick(function () {
       _this2.init();
     });
