@@ -46,7 +46,8 @@ cnpm install N3-components --save-dev
 CDN
 ------------
 
-链接：https://unpkg.com/N3-components@version/dist/N3Components.js (注意填写版本号)
+js链接：https://unpkg.com/N3-components@version/dist/index.min.js (注意填写版本号)
+css链接 https://unpkg.com/N3-components@version/dist/index.min.css (注意填写版本号)
 
 快速上手
 ------------
@@ -83,19 +84,17 @@ import {n3Alert} from N3Components
 
 ```
 // default 
-import 'N3-components/src/style/theme.less' 
-import 'N3-components/src/style/common.less' 
+import 'N3-components/src/style/default.less' 
 
 // theme customization
 import 'your-theme.less' 
-import 'N3-components/src/style/common.less' 
 
 ```
 
-theme.less
+your-theme.less
 
 ```
-/*-------color ------*/
+@import 'N3-components/src/style/common.less' 
 
 /*base color*/
 @whiteColor: #fff;
@@ -126,6 +125,7 @@ theme.less
 
 @warningColor: #fa0;
 @warningColorhover: #f5b73b;
+
 
 ```
 

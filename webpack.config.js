@@ -61,7 +61,7 @@ module.exports = {
   devtool: 'source-map',
   plugins:[
     new ExtractTextPlugin({
-      filename:'index.css',
+      filename:'index.min.css',
       allChunks:true
     })
   ]
