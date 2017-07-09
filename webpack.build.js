@@ -1,8 +1,10 @@
 var config = require('./webpack.config.js')
 var path = require('path');
 
+delete config.devtool
+
 config.entry = {
-  'N3Components': './src/index.js'
+  'index': './src/index.js'
 }
 
 config.output = {
