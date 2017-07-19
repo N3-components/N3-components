@@ -66,3 +66,7 @@ v2.x.x
 + add case-insensitive control prop `match-case` for select component 
 + mobile support for slider component
 + typeahead multipleinput props change : `render` -> `itemRender`
+
+### v2.4.1
+
++ fix: template or render function not defined in `tree`. (caused by migration of vue-loader)
