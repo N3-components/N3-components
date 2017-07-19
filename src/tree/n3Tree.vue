@@ -15,11 +15,11 @@
 
 <script>
   import Store from './model/store'
+  import n3TreeNode from './n3TreeNode'
   const emptyText = 'Empty Content.'
 
   export default {
     name: 'n3Tree',
-
     props: {
       data: {
         type: Array
@@ -121,7 +121,7 @@
     },
 
     components: {
-      n3TreeNode: require('./n3TreeNode')
+      n3TreeNode
     },
 
     computed: {

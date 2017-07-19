@@ -1,11 +1,7 @@
 <template>
   <div :class="`${prefixCls}-tree-node`">
-    <div 
-      @click.stop="handleClick"
-      v-show="node.visible"
-      :class="[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']">
-      <div :class="`${prefixCls}-tree-node__content`"
-        :style="{ 'padding-left': (node.level - 1) * 20 + 'px' }">
+    <div @click.stop="handleClick" v-show="node.visible" :class="[ `${prefixCls}-tree-data`, tree.store.currentNode === node ? `${prefixCls}-tree-active` : '']">
+      <div :class="`${prefixCls}-tree-node__content`" :style="{ 'padding-left': (node.level - 1) * 20 + 'px' }">
         <span @click.stop="handleExpandIconClick">
           <n3-icon
             v-show="!node.isLeaf"
@@ -22,10 +18,7 @@
           >
           </n3-checkbox>
         </span>
-        <span
-          :class="`${prefixCls}-tree-loading-box`"
-          v-if="node.loading"
-        >
+        <span :class="`${prefixCls}-tree-loading-box`" v-if="node.loading">
           <n3-loading color="primary" size="xs"></n3-loading>
         </span>
         <n3-icon :type="node.isLeaf ? tree.leafIcon : tree.childIcon"></n3-icon>
@@ -33,29 +26,22 @@
       </div>
       <n3-collapse-transition>
         <div v-show="expanded">
-            <div
-              :class="`${prefixCls}-tree-children`"
-              >
-              <n3-tree-node
-                :render-content="renderContent"
-                v-for="child in node.childNodes"
-                :key="getNodeKey(child)"
-                :node="child">
-              </n3-tree-node>
-            </div>
+          <div :class="`${prefixCls}-tree-children`">
+            <n3-tree-node :render-content="renderContent" v-for="child in node.childNodes" :key="getNodeKey(child)" :node="child">
+            </n3-tree-node>
+          </div>
         </div>
       </n3-collapse-transition>
     </div>
   </div>
 </template>
 
-<script type="text/jsx">
+<script>
   import n3CollapseTransition from '../n3CollapseTransition'
   import n3Checkbox from '../Checkbox/n3Checkbox'
 
   export default {
     name: 'n3TreeNode',
-
     props: {
       node: {
         default() {
@@ -69,7 +55,6 @@
       props: {},
       renderContent: Function
     },
-
     components: {
       n3Checkbox,
       n3CollapseTransition,
@@ -87,7 +72,7 @@
           return (
             parent.renderContent
               ? parent.renderContent.call(parent._renderProxy, h, { _self: parent.tree.$vnode.context, node, data, store })
-              : <span>{ this.node.label }</span>
+              : h('span', this.node.label)
           )
         }
       }
