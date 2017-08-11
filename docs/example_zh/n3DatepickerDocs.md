@@ -11,6 +11,7 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 </p>
 <n3-datepicker
   v-model="value"
+  :readonly="readonly"
   format="yyyy-MM-dd" >
 </n3-datepicker>
 
@@ -38,6 +39,8 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 |-------------  |---------------- |----------------  |-------- |
 | width          | `String`     |    `200px`        |     输入框宽度     |
 | format          | `String`     |    `yyyy-MM-dd`        |     日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.     |
+| readonly          | `Boolean`     |    `true`        | 是否只读 |
+| disabled          | `Boolean`     |    `false`        | 是否可用 |
 
 ### 事件
 

@@ -19,6 +19,8 @@
 | hour-range          | `String`     |    `[0,60]`      |     range of hour     |
 | minute-range          | `String`     |    `[0,60]`      |     range of minute     |
 | second-range          | `String`     |    `[0,60]`       |     range of second     |
+| readonly          | `Boolean`     |    `true`        | readonly |
+| disabled          | `Boolean`     |    `false`        | disabled |
 
 ### Events
 

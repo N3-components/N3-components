@@ -38,6 +38,8 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 |-------------  |---------------- |----------------  |-------- |
 | width          | `String`     |    `200px`        |     width of input     |
 | format          | `String`     |    `yyyy-MM-dd`        |     format value (d, dd, M, MM ,MMM , MMMM, yyyy. )   |
+| readonly          | `Boolean`     |    `true`        | readonly |
+| disabled          | `Boolean`     |    `false`        | disabled |
 
 ### Events
 

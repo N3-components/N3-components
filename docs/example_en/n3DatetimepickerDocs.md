@@ -17,6 +17,8 @@
 |-------------  |---------------- |----------------  |-------- |
 | width          | `String`     |    `200px`        |     width      |
 | format          | `String`     |    `yyyy-MM-dd hh:mm:ss`       |     format   |
+| readonly          | `Boolean`     |    `true`        | readonly |
+| disabled          | `Boolean`     |    `false`        | disabled |
 
 ### Events
 
