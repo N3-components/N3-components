@@ -78389,7 +78389,6 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       staticClass: "bs-example"
     }, [_c('p', [_c('pre', [_vm._v("\nSelected date is: " + _vm._s(new Date(_vm.value).toString().slice(0, -23)) + "\n")])]), _vm._v(" "), _c('n3-datepicker', {
       attrs: {
-        "readonly": _vm.readonly,
         "format": "yyyy-MM-dd"
       },
       model: {
