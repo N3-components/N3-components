@@ -11,7 +11,6 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 </p>
 <n3-datepicker
   v-model="value"
-  :readonly="readonly"
   format="yyyy-MM-dd" >
 </n3-datepicker>
 
