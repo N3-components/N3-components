@@ -38,6 +38,8 @@ Selected date is: {{new Date(value).toString().slice(0, -23)}}
 |-------------  |---------------- |----------------  |-------- |
 | width          | `String`     |    `200px`        |     输入框宽度     |
 | format          | `String`     |    `yyyy-MM-dd`        |     日期格式, 如 d, dd, M, MM ,MMM , MMMM, yyyy.     |
+| readonly          | `Boolean`     |    `true`        | 是否只读 |
+| disabled          | `Boolean`     |    `false`        | 是否可用 |
 
 ### 事件
 

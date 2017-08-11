@@ -7,7 +7,7 @@
       :placeholder="placeholder"
       :custom-validate="customValidate"
       :disabled="disabled"
-      :readonly="true"
+      :readonly="readonly"
       @clean="clean"
       @click.native="inputClick"
       :show-clean="true"
@@ -89,6 +89,14 @@ export default {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    readonly: {
+      type: Boolean,
+      default: true
+    },
+    disabled: {
+      type: Boolean,
+      default: false
     }
   },
   filters: {
