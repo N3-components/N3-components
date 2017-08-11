@@ -19,6 +19,8 @@
 | hour-range          | `String`     |    `[0,60]`      |     小时范围     |
 | minute-range          | `String`     |    `[0,60]`      |     分钟范围     |
 | second-range          | `String`     |    `[0,60]`       |     秒范围     |
+| readonly          | `Boolean`     |    `true`        | 是否只读 |
+| disabled          | `Boolean`     |    `false`        | 是否可用 |
 
 ### 事件
 
