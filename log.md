@@ -70,3 +70,7 @@ v2.x.x
 ### v2.4.1
 
 + fix: template or render function not defined in `tree`. (caused by migration of vue-loader)
+
+### v2.4.2
+
++ Datepicker, Timepicker and Datetimepicker support keyboard input
