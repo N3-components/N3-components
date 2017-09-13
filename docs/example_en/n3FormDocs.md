@@ -317,7 +317,7 @@
 }
 ```
 
-### n3-from Params
+### n3-form Params
 | name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
 | type          | `String`     |    `horizontal`        |     form type,  `horizontal`,`inline`   |
@@ -338,7 +338,7 @@
 | validateFields    | validate method     |  
 
 
-### n3-from-item Params
+### n3-form-item Params
 
 | name | type | default | description |
 |-------------  |---------------- |----------------  |-------- |
