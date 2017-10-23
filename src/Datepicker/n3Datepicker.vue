@@ -134,8 +134,13 @@ export default {
     }
   },
   data () {
+    let currentValue = this.value
+    if (typeof currentValue === 'undefined') {
+      this.$emit('input', null)
+      currentValue = null
+    }
     return {
-      currentValue: this.value,
+      currentValue,
       today: '',
       weekRange: [this.getL('sun'), this.getL('mon'),this.getL('tues'),this.getL('wednes'),this.getL('thurs'),this.getL('fri'),this.getL('satur')],
       dateRange: [],
@@ -160,7 +165,7 @@ export default {
         return
       }
       this.inner = true
-      this.currentValue = val
+      this.currentValue = val || null
     },
     currentValue (val) {
       if (this.inner) {
@@ -186,7 +191,6 @@ export default {
     yearClassObj (decade) {
       let {prefixCls, currentValue, parse} = this
       let klass = {}
-
       klass[prefixCls + '-datepicker-dateRange-item-active'] =
       currentValue && parse(currentValue) && parse(currentValue).getFullYear() === decade.text
 
