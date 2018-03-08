@@ -18740,12 +18740,17 @@ Object.defineProperty(exports, "__esModule", {
 //
 //
 //
+//
+//
+//
+
 
 exports.default = {
   name: 'n3BreadcrumbItem',
   props: {
     href: {
-      type: String
+      type: String,
+      default: ''
     },
     active: {
       type: Boolean
@@ -18753,7 +18758,28 @@ exports.default = {
     prefixCls: {
       type: String,
       default: 'n3'
+    },
+    router: {
+      type: Boolean,
+      default: false
+    },
+    route: {
+      type: String
+    },
+    show: {
+      type: Boolean,
+      default: true
     }
+  },
+  data: function data() {
+    return {
+      router_: this.router,
+      href_: true
+    };
+  },
+  created: function created() {
+    this.href_ = this.active ? false : this.href || !this.router;
+    this.router_ = this.active ? false : !this.href && this.router;
   }
 };
 
@@ -20613,8 +20639,13 @@ exports.default = {
     }
   },
   data: function data() {
+    var currentValue = this.value;
+    if (typeof currentValue === 'undefined') {
+      this.$emit('input', null);
+      currentValue = null;
+    }
     return {
-      currentValue: this.value,
+      currentValue: currentValue,
       today: '',
       weekRange: [this.getL('sun'), this.getL('mon'), this.getL('tues'), this.getL('wednes'), this.getL('thurs'), this.getL('fri'), this.getL('satur')],
       dateRange: [],
@@ -20637,7 +20668,7 @@ exports.default = {
         return;
       }
       this.inner = true;
-      this.currentValue = val;
+      this.currentValue = val || null;
     },
     currentValue: function currentValue(val) {
       if (this.inner) {
@@ -20670,7 +20701,6 @@ exports.default = {
           parse = this.parse;
 
       var klass = {};
-
       klass[prefixCls + '-datepicker-dateRange-item-active'] = currentValue && parse(currentValue) && parse(currentValue).getFullYear() === decade.text;
 
       return klass;
@@ -39593,13 +39623,17 @@ if (false) {
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('li', {
+  return (_vm.show) ? _c('li', {
     class: [_vm.active ? _vm.prefixCls + '-breadcrumb-active' : '']
-  }, [(_vm.href) ? _c('a', {
+  }, [(_vm.href_) ? _c('a', {
     attrs: {
       "href": _vm.href
     }
-  }, [_vm._t("default")], 2) : _c('span', [_vm._t("default")], 2)])
+  }, [_vm._t("default")], 2) : _vm._e(), _vm._v(" "), (!_vm.href_ && !_vm.router_) ? _c('span', [_vm._t("default")], 2) : _vm._e(), _vm._v(" "), (_vm.router_) ? _c('router-link', {
+    attrs: {
+      "to": ("" + _vm.route)
+    }
+  }, [_vm._t("default")], 2) : _vm._e()], 1) : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
