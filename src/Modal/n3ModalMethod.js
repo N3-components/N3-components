@@ -116,7 +116,7 @@ const alert = (options) => {
         ${message}
       </div>
       <div slot="header" v-if="${!title}"></div>
-      <div slot="footer" class="n3-modal-footer">
+      <div slot="footer">
         <n3-button @click.native="handleConfirm">{{getL('confirm')}}</n3-button>
       </div>
     </Modal>`,
