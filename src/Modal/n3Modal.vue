@@ -14,12 +14,12 @@
           <slot name="body"></slot>
         </div>
       
-        <slot name="footer">
-          <div :class="`${prefixCls}-modal-footer`">
-            <n3-button  @click.native="close">{{getL('cancel')}}</n3-button>
-            <n3-button type="primary" @click.native="confirm">{{getL('confirm')}}</n3-button>
-          </div>
-        </slot>
+        <div :class="`${prefixCls}-modal-footer`">
+          <slot name="footer">
+              <n3-button  @click.native="close">{{getL('cancel')}}</n3-button>
+              <n3-button type="primary" @click.native="confirm">{{getL('confirm')}}</n3-button>
+          </slot>
+        </div>
       </div>
     </div>
   </div>
