@@ -56,7 +56,7 @@ const confirm = (options) => {
       <div slot="header" v-if="${!title}"></div>
       <div slot="body">
         <n3-icon :style="{color: iconType.color,fontSize:'40px',marginRight:'20px'}" :type="iconType.name"></n3-icon>
-        ${options.message}
+        ${message}
       </div>
     </Modal>`,
     mounted () {
