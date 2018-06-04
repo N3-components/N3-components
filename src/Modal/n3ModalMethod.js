@@ -56,7 +56,7 @@ const confirm = (options) => {
       <div slot="header" v-if="${!title}"></div>
       <div slot="body">
         <n3-icon :style="{color: iconType.color,fontSize:'40px',marginRight:'20px'}" :type="iconType.name"></n3-icon>
-        ${options.message}
+        ${message}
       </div>
     </Modal>`,
     mounted () {
@@ -116,7 +116,7 @@ const alert = (options) => {
         ${message}
       </div>
       <div slot="header" v-if="${!title}"></div>
-      <div slot="footer" class="n3-modal-footer">
+      <div slot="footer">
         <n3-button @click.native="handleConfirm">{{getL('confirm')}}</n3-button>
       </div>
     </Modal>`,
