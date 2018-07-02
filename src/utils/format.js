@@ -1,10 +1,10 @@
-import moment from 'moment'
+import dayjs from 'dayjs'
 
 export default {
   dateParse(str, format) {
     if (typeof str != 'string') {
       return str
     }
-    return moment(str,format).toString()
+    return dayjs(str,format).toString()
   }
 }
