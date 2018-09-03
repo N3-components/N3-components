@@ -85,6 +85,9 @@
     "build": "webpack --progress --hide-modules --config webpack.build.min.js && webpack --progress --hide-modules --config webpack.build.js",
     "lint": "eslint --ext .js,.vue src || exit 0"
   },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
   "author": "zhangking",
   "license": "MIT"
 }
