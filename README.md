@@ -57,7 +57,7 @@ You can install components for your global environment.
 ```javascript
 import Vue from 'vue'
 import N3Components from 'N3-components'
-import 'N3-components/dist/index.css'
+import 'N3-components/dist/index.min.css'
 
 // install N3
 Vue.use(N3Components)
